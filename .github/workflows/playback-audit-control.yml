@@ -9,10 +9,12 @@ on:
       - 'scripts/record_playback_audit.py'
       - 'scripts/audit_gate.py'
       - 'scripts/playback_queue.py'
+      - 'scripts/next_task.py'
       - 'data/live_segments/**'
       - 'data/playback_audits/**'
       - 'coordination/ready/collection/**'
       - 'coordination/ready/alignment/**'
+      - 'coordination/completed/P9-PLAYBACK-GATE.json'
       - 'coordination/WORK_QUEUE.jsonl'
       - '.github/workflows/playback-audit-control.yml'
   pull_request:
@@ -23,10 +25,12 @@ on:
       - 'scripts/record_playback_audit.py'
       - 'scripts/audit_gate.py'
       - 'scripts/playback_queue.py'
+      - 'scripts/next_task.py'
       - 'data/live_segments/**'
       - 'data/playback_audits/**'
       - 'coordination/ready/collection/**'
       - 'coordination/ready/alignment/**'
+      - 'coordination/completed/P9-PLAYBACK-GATE.json'
       - 'coordination/WORK_QUEUE.jsonl'
       - '.github/workflows/playback-audit-control.yml'
 
@@ -50,7 +54,8 @@ jobs:
             scripts/playback_validation.py \
             scripts/record_playback_audit.py \
             scripts/audit_gate.py \
-            scripts/playback_queue.py
+            scripts/playback_queue.py \
+            scripts/next_task.py
 
       - name: Validate audit gate output contract
         shell: bash
@@ -82,3 +87,14 @@ jobs:
 
       - name: Validate playback queue can inspect repository state
         run: python scripts/playback_queue.py --list
+
+      - name: Assert P9 cannot be claimed before playback gate
+        shell: bash
+        run: |
+          python scripts/next_task.py --list > /tmp/eligible_tasks.txt
+          cat /tmp/eligible_tasks.txt
+          if [[ ! -f coordination/completed/P9-PLAYBACK-GATE.json ]] && \
+             grep -q '^P9-AUDIT-60 ' /tmp/eligible_tasks.txt; then
+            echo 'P9-AUDIT-60 became eligible before P9-PLAYBACK-GATE was sealed.'
+            exit 1
+          fi
