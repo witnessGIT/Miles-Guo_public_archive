@@ -1,6 +1,11 @@
 {
   "project": "Miles-Guo_public_archive",
   "workflow_version": "continuous-worker-v2",
+  "external_prompt_contract": "repository_url_plus_start_work_only",
+  "minimal_external_prompt_example": "进入这个项目并开始工作：https://github.com/witnessGIT/Miles-Guo_public_archive",
+  "bootstrap_entrypoint": "START_HERE.md",
+  "repository_is_authoritative_execution_context": true,
+  "ask_user_to_repeat_repository_requirements": false,
   "effective_for_new_claims": true,
   "grandfather_existing_claims": true,
   "default_continue_after_finish": true,
@@ -10,6 +15,8 @@
   "notes": [
     "Existing valid claims remain owned by their current agents and are not migrated mid-task.",
     "New claims must continue to the next eligible task unless a documented stop condition applies.",
+    "External prompts should not duplicate project requirements; Agents must load them from the repository.",
+    "A minimal prompt containing only the repository address and an instruction to start work is sufficient.",
     "Git provides durable coordination and resume state; it cannot revive a host-suspended ChatGPT/Work/Codex session."
   ]
 }
