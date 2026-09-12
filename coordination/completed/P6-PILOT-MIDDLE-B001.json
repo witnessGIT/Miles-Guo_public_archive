@@ -1,0 +1,15 @@
+{
+  "task_id": "P6-PILOT-MIDDLE-B001",
+  "agent_id": "agent-20260912T155300Z-gpt56sol",
+  "completed_at": "2026-09-12T16:18:00Z",
+  "result_commit": "fece9ac54fae06d6e2fefe7f6e21102542177ff6",
+  "outputs": [
+    "data/live_videos/middle/pilot_middle_b001.jsonl",
+    "data/sources/ghot/pilot_middle_b001.jsonl",
+    "data/sources/gwins/pilot_middle_b001.jsonl",
+    "data/source_match_candidates/pilot_middle_b001.jsonl",
+    "reports/PILOT_MIDDLE_B001.md"
+  ],
+  "validation": "Collected 9 canonical middle Pilot livestream records (2020-2021), 9 verified GHOT sources, 3 conservative GWINS per-item candidates, and 3 needs_review identity candidates. Isolated current-schema load produced 9 live_videos / 12 live_sources / 3 source_match_candidates, PRAGMA foreign_key_check returned no violations, PRAGMA integrity_check returned ok, and all metadata_json/evidence_json values parsed successfully.",
+  "notes": "Preserved GHOT slug/title ordinal mismatches, same-day multiplicity, severe ASR noise, and current GWINS re-fetch failures instead of forcing auto-merges. Segment alignment/playback verification remains P7 scope."
+}
