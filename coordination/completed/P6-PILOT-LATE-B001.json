@@ -1,0 +1,15 @@
+{
+  "task_id": "P6-PILOT-LATE-B001",
+  "agent_id": "agent-20260912T155500Z-gpt56sol-late",
+  "completed_at": "2026-09-12T16:04:00Z",
+  "result_commit": "ecbfb3d66a3c7f529fcce1e2d716b28094505a22",
+  "outputs": [
+    "data/live_videos/late/pilot_late_b001.jsonl",
+    "data/sources/ghot/pilot_late_b001.jsonl",
+    "data/sources/gwins/pilot_late_b001.jsonl",
+    "data/source_match_candidates/pilot_late_b001.jsonl",
+    "reports/PILOT_LATE_B001.md"
+  ],
+  "validation": "Collected 9 canonical late Pilot livestream records (2022-2023), 8 verified GHOT archive sources, 4 verified GWINS archive sources, and 3 identity-v1 high-confidence cross-source matches (two shared-platform score 1.00; one direct-cross-reference score 0.98). Isolated current-schema load produced 9 live_videos / 12 live_sources / 3 match candidates, PRAGMA foreign_key_check returned no violations, PRAGMA integrity_check returned ok, and all metadata_json/evidence_json values parsed successfully.",
+  "notes": "Critical correction preserved: GHOT 2022-05-29-6 has title-side 2022.05.29-2 for the 避风港(53) program, while GWINS 20220529_1 is the matching program and GWINS 20220529_2 is a different 七哥乱聊直播 record. The plausible GWINS candidate was not merged without stronger Tier-A evidence. No source-absence or playback-verification claims were invented; alignment remains P7 scope."
+}
