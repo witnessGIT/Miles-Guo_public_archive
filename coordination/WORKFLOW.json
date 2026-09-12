@@ -3,6 +3,11 @@
   "workflow_version": "continuous-worker-v2",
   "claim_protocol_version": "claim-protocol-v2",
   "agent_permissions_version": "agent-permissions-v1",
+  "media_audit_contract_version": "playback-audit-evidence-v1",
+  "pilot60_evidence_root": "data/playback_audits",
+  "pilot60_recorder": "scripts/record_playback_audit.py",
+  "pilot60_gate": "scripts/audit_gate.py",
+  "legacy_audit_readiness_counts_as_playback": false,
   "admin_github_logins": ["witnessGIT"],
   "default_role_when_identity_unknown": "worker",
   "worker_may_fix_bugs": false,
@@ -35,6 +40,9 @@
     "Only classify GITHUB_WRITE_ERROR when the exact claim remains absent after fresh bounded retries and no race/staleness explanation applies.",
     "External prompts should not duplicate project requirements; Agents must load them from the repository.",
     "A minimal prompt containing only the repository address and an instruction to start work is sufficient.",
-    "Git provides durable coordination and resume state; it cannot revive a host-suspended ChatGPT/Work/Codex session."
+    "Git provides durable coordination and resume state; it cannot revive a host-suspended ChatGPT/Work/Codex session.",
+    "An S-AUDIT completion or coordination/ready/audit marker does not by itself contribute a Pilot-60 playback check.",
+    "Pilot-60 counts only durable data/playback_audits records created after successful real-media decode plus actual content inspection with observed position and timing error.",
+    "Missing shell/media execution or inability to inspect generated clips is HOST_STOP/runtime capability limitation; SAFETY_OR_ACCESS_BLOCK is reserved for access that would require bypassing login, CAPTCHA, paywall, DRM, or other controls."
   ]
 }
