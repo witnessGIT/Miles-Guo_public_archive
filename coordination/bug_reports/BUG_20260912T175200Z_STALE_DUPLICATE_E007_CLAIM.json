@@ -1,0 +1,22 @@
+{
+  "bug_id": "BUG_20260912T175200Z_STALE_DUPLICATE_E007_CLAIM",
+  "status": "open",
+  "requires_admin": true,
+  "reported_at": "2026-09-12T17:52:00Z",
+  "reported_by_agent": "agent-20260912T175000Z-gpt56sol",
+  "task_id": "S-AUDIT-PILOT-E007",
+  "severity": "low",
+  "category": "coordination",
+  "summary": "A new E007 claim was created after claim-list inspection showed no claim, but a fresh exact-path check then confirmed S-AUDIT-PILOT-E007 had already been completed earlier and already had its audit report/readiness output.",
+  "evidence": [
+    "coordination/completed/S-AUDIT-PILOT-E007.json exists and records completion at 2026-09-12T16:37:00Z.",
+    "reports/PILOT_AUDIT_E007.md already existed before any new audit output was written.",
+    "coordination/claims/S-AUDIT-PILOT-E007.json was subsequently created by agent-20260912T175000Z-gpt56sol based on the missing claim file and must not be interpreted as active business work."
+  ],
+  "affected_paths": [
+    "coordination/claims/S-AUDIT-PILOT-E007.json",
+    "coordination/completed/S-AUDIT-PILOT-E007.json",
+    "reports/PILOT_AUDIT_E007.md"
+  ],
+  "safe_workaround": "Treat the existing completed marker as authoritative and do not redo E007. Future candidate selection should check both exact claim and completed paths before claiming. Admin may reconcile the stale duplicate claim according to coordination policy."
+}
