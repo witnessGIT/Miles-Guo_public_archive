@@ -7,6 +7,8 @@ import json
 from datetime import datetime, timezone
 from pathlib import Path
 
+from playback_validation import canonical_segment_index, pilot_case_live_map
+
 ROOT = Path(__file__).resolve().parents[1]
 OUTPUT_ROOT = ROOT / "data" / "playback_audits"
 
@@ -44,25 +46,13 @@ def main() -> int:
     parser.add_argument("--observed-position", required=True, type=float)
     parser.add_argument("--media-url", required=True)
     parser.add_argument("--reviewer", required=True)
-    parser.add_argument(
-        "--observation-mode",
-        required=True,
-        choices=["audio", "video", "both"],
-    )
-    parser.add_argument(
-        "--content-observation",
-        required=True,
-        help="Concise description of the phrase/event actually observed in decoded media.",
-    )
-    parser.add_argument(
-        "--decode-evidence-json",
-        required=True,
-        help="JSON emitted by scripts/audit_media.py under cache/audit_media/.",
-    )
+    parser.add_argument("--observation-mode", required=True, choices=["audio", "video", "both"])
+    parser.add_argument("--content-observation", required=True)
+    parser.add_argument("--decode-evidence-json", required=True)
     parser.add_argument(
         "--content-match",
         action="store_true",
-        help="Required for a qualifying check; assert only after inspecting decoded content.",
+        help="Required only after decoded content has actually been inspected and matched.",
     )
     args = parser.parse_args()
 
@@ -74,39 +64,71 @@ def main() -> int:
             "until decoded content has actually been inspected and matched."
         )
 
+    segments, segment_problems = canonical_segment_index()
+    if segment_problems:
+        parser.error("canonical segment index is ambiguous: " + "; ".join(segment_problems[:5]))
+    segment = segments.get(args.segment_id)
+    if segment is None:
+        parser.error(f"segment does not exist in data/live_segments: {args.segment_id}")
+    if str(segment.get("live_id")) != args.live_id:
+        parser.error(
+            f"segment {args.segment_id} belongs to {segment.get('live_id')}, not {args.live_id}"
+        )
+    if segment.get("start_sec") is None:
+        parser.error(f"segment has no canonical start_sec: {args.segment_id}")
+    canonical_start = float(segment["start_sec"])
+    if abs(canonical_start - args.expected_start) > 0.001:
+        parser.error(
+            f"--expected-start {args.expected_start} does not match canonical segment "
+            f"start_sec {canonical_start}"
+        )
+
+    case_live, case_problems = pilot_case_live_map()
+    if case_problems:
+        parser.error("Pilot case/live mapping is ambiguous: " + "; ".join(case_problems[:5]))
+    mapped_live = case_live.get(args.case_id)
+    if mapped_live is None:
+        parser.error(f"no collection/alignment mapping found for case {args.case_id}")
+    if mapped_live != args.live_id:
+        parser.error(f"case {args.case_id} maps to {mapped_live}, not {args.live_id}")
+
     evidence_path = Path(args.decode_evidence_json)
     if not evidence_path.is_absolute():
         evidence_path = ROOT / evidence_path
     if not evidence_path.exists():
         parser.error(f"decode evidence JSON not found: {evidence_path}")
-
     try:
         decode = json.loads(evidence_path.read_text(encoding="utf-8"))
     except (OSError, json.JSONDecodeError) as exc:
         parser.error(f"invalid decode evidence JSON: {exc}")
 
     if not decode.get("ok") or not decode.get("playback_decode_verified"):
+        parser.error("decode evidence does not prove successful real-media decoding")
+    try:
+        decode_start = float(decode.get("requested_start_sec"))
+    except (TypeError, ValueError):
+        parser.error("decode evidence lacks numeric requested_start_sec")
+    if abs(decode_start - args.expected_start) > 0.001:
         parser.error(
-            "decode evidence does not prove successful real-media decoding; "
-            "run scripts/audit_media.py first"
+            "decode evidence requested_start_sec does not match the canonical expected start"
         )
+    if str(decode.get("media_source")) != args.media_url:
+        parser.error("--media-url must exactly match decode evidence media_source")
 
     clip_hash = None
     frame_hash = None
-    clip_path = decode.get("clip_path")
-    frame_path = decode.get("frame_path")
-    if clip_path:
-        candidate = Path(clip_path)
+    for key, target in (("clip_path", "clip"), ("frame_path", "frame")):
+        raw = decode.get(key)
+        if not raw:
+            continue
+        candidate = Path(raw)
         if not candidate.is_absolute():
             candidate = ROOT / candidate
         if candidate.exists():
-            clip_hash = sha256_file(candidate)
-    if frame_path:
-        candidate = Path(frame_path)
-        if not candidate.is_absolute():
-            candidate = ROOT / candidate
-        if candidate.exists():
-            frame_hash = sha256_file(candidate)
+            if target == "clip":
+                clip_hash = sha256_file(candidate)
+            else:
+                frame_hash = sha256_file(candidate)
 
     signed_error = args.observed_position - args.expected_start
     record = {
@@ -116,6 +138,7 @@ def main() -> int:
         "live_id": args.live_id,
         "segment_id": args.segment_id,
         "expected_start_sec": args.expected_start,
+        "canonical_segment_start_sec": canonical_start,
         "observed_position_sec": args.observed_position,
         "timing_error_sec": signed_error,
         "absolute_timing_error_sec": abs(signed_error),
@@ -127,16 +150,17 @@ def main() -> int:
         "content_timing_verified": True,
         "reviewer": args.reviewer,
         "reviewed_at": utc_now(),
-        "decode_request_start_sec": decode.get("requested_start_sec"),
+        "decode_request_start_sec": decode_start,
         "decode_window_sec": decode.get("decode_window_sec"),
         "decode_resolver": (decode.get("resolution") or {}).get("resolver"),
         "decode_media_source": decode.get("media_source"),
+        "decode_evidence_sha256": sha256_file(evidence_path),
         "clip_sha256": clip_hash,
         "frame_sha256": frame_hash,
         "decode_evidence_ref": durable_path_reference(evidence_path),
         "note": (
-            "The media/clip itself remains temporary under cache/. This durable record "
-            "stores the source, observed position, timing error and hashes where available."
+            "Temporary decoded media remains under cache/. This durable record is bound "
+            "to the canonical segment start and stores source, observed position and hashes."
         ),
     }
 
@@ -148,11 +172,7 @@ def main() -> int:
             f"Playback record already exists: {out_path.relative_to(ROOT)}. "
             "Do not silently overwrite historical audit evidence."
         )
-
-    out_path.write_text(
-        json.dumps(record, ensure_ascii=False, indent=2) + "\n",
-        encoding="utf-8",
-    )
+    out_path.write_text(json.dumps(record, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(f"Created qualifying playback check: {out_path.relative_to(ROOT)}")
     print(f"timing_error_sec={signed_error:+.3f} absolute={abs(signed_error):.3f}")
     return 0
