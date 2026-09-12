@@ -1,0 +1,13 @@
+{
+  "task_id": "S-AUDIT-PILOT-E007",
+  "agent_id": "agent-20260913T013300Z-gpt56sol",
+  "claimed_at": "2026-09-12T16:33:30Z",
+  "base_commit": "e281252a4b5f660a95d420fccabef7cc65e8cc19",
+  "status": "in_progress",
+  "workflow_mode": "continuous-worker-v2",
+  "continue_after_finish": true,
+  "stage": "audit",
+  "case_id": "PILOT-E007",
+  "live_id": "LIVE_20190530_001",
+  "scope": "Audit real public playback availability and the aligned anchors for PILOT-E007; record actual timing error only if playback is genuinely available, otherwise preserve playback_verified=0 and document the access limitation."
+}
