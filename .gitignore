@@ -1,0 +1,47 @@
+# Miles-Guo_public_archive
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Temporary archive/media work
+cache/
+tmp/
+temp/
+*.mp4
+*.mkv
+*.mov
+*.webm
+*.mp3
+*.wav
+*.m4a
+*.flac
+*.aac
+*.srt
+*.vtt
+
+# Models / large intermediates
+models/
+*.pt
+*.pth
+*.onnx
+*.bin
+
+# SQLite temporary files (the official build artifact itself is allowed)
+database/*.sqlite3-wal
+database/*.sqlite3-shm
+database/*.sqlite3-journal
+
+# Local logs / scratch
+*.log
+*.tmp
+*.bak
