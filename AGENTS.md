@@ -2,45 +2,55 @@
 
 ## Mandatory reading before work
 
-Every agent working in this repository MUST read this file and the following documents before planning, editing, collecting data, or committing:
+Every agent working in this repository MUST read these files before planning, editing, collecting data, or committing:
 
-1. `docs/CURRENT_TASK.md` — the current executable work queue. If no newer explicit user instruction exists, this is the default task source.
-2. `docs/PROJECT_REQUIREMENTS.md` — complete user requirements, source analysis, schema, Pilot coverage, quality gates, and acceptance queries.
-3. `docs/NAMING_AND_WORKFLOW.md` — authoritative naming rules, repository boundaries, and working procedure.
-4. `README.md` and any existing relevant `docs/`, `schema/`, `reports/`, `data/`, and `tests/` files.
+1. `coordination/README.md` — mandatory multi-Agent coordination and atomic task-claim protocol.
+2. `coordination/WORK_QUEUE.jsonl` — machine-readable executable work queue.
+3. `docs/CURRENT_TASK.md` — current phase, objectives, work-unit details and quality gates.
+4. `docs/PROJECT_REQUIREMENTS.md` — complete user requirements.
+5. `docs/NAMING_AND_WORKFLOW.md` — authoritative naming and repository boundaries.
+6. `README.md` and relevant existing `docs/`, `schema/`, `reports/`, `data/`, `coordination/`, and `tests/` files.
 
-Do not rely on a previous chat, cached summary, or another agent's recollection instead of reading these files. This applies to primary and delegated agents. A delegating agent must pass on these requirements.
+Do not rely on a previous chat, cached summary, or another agent's recollection instead of reading these files. This applies to primary and delegated agents.
 
-If required files are missing, do not invent their contents. Create only the missing project scaffolding that is explicitly specified by the repository requirements, record what was missing, and continue with the parts that can be done safely.
+If required files are missing, do not invent their contents. Create only missing project scaffolding explicitly required by repository rules, record what was missing, and continue with safe work.
 
 ## Immediate-start rule
 
 Reading the repository is preparation, not completion.
 
-After mandatory reading, an agent MUST immediately begin a real, currently unfinished archive task unless the user explicitly asked only for analysis or review.
+After mandatory reading, an agent MUST immediately begin a real unfinished task unless the user explicitly asked only for analysis/review.
 
-Default behavior:
+Mandatory startup sequence:
 
 ```text
 Read requirements
 ↓
 Inspect current repository state
 ↓
-Read CURRENT_TASK.md
+Read WORK_QUEUE.jsonl
 ↓
-Identify one unfinished work unit
+Read coordination/completed/
 ↓
-Claim it in the work log/task file if the mechanism exists
+Read coordination/claims/
 ↓
-Analyze real public source data
+Filter to tasks whose dependencies are completed
 ↓
-Write structured source data / analysis / validation output
+Remove completed or actively claimed tasks
 ↓
-Run required checks
+Choose highest-priority safe task
 ↓
-Commit the completed unit
+CREATE coordination/claims/<TASK_ID>.json
 ↓
-Update progress and continue with the next unfinished unit when safe
+Only after claim creation succeeds: execute the task
+↓
+Validate durable output
+↓
+Commit results
+↓
+CREATE coordination/completed/<TASK_ID>.json
+↓
+Continue with next available task when safe
 ```
 
 Do NOT stop after saying:
@@ -52,67 +62,95 @@ Do NOT stop after saying:
 
 If the next safe action can be executed, execute it.
 
+## Atomic claim rule — mandatory
+
+No Agent may start a queued work unit before successfully creating:
+
+```text
+coordination/claims/<TASK_ID>.json
+```
+
+This file creation is the coordination lock.
+
+If creation fails because the file already exists:
+
+1. do not overwrite it;
+2. refresh `claims/` and `completed/`;
+3. choose the next eligible task.
+
+Do not coordinate ownership by editing a single shared status field. Do not assume a task is free merely because `docs/CURRENT_TASK.md` says OPEN.
+
+A task is considered unavailable when:
+
+- `coordination/completed/<TASK_ID>.json` exists; or
+- a valid claim exists and has not been properly declared stale/taken over.
+
+Detailed stale/takeover rules are in `coordination/README.md`.
+
 ## Scope and precedence
 
 - Only modify `witnessGIT/Miles-Guo_public_archive`. Default branch: `main`.
 - Never modify `witnessGIT/movie_production` or any other repository for this task.
 - Official project name: `Miles-Guo_public_archive`.
 - Only official database path: `database/Miles-Guo_public_archive.sqlite3`.
-- Current explicit user instructions take precedence. Among saved requirements, later naming rules override older examples, especially the six-digit segment suffix.
+- Current explicit user instructions take precedence. Later saved rules override older examples.
 - Archive First, Application Second. This is a searchable public digital archive, not a video production project.
 - Zero-cost-first: the core archive must remain usable without paid APIs, paid cloud databases, or paid object storage.
 
 ## Current default mission
 
-Unless superseded by a newer explicit user instruction, agents are currently working on the `SITE_ANALYSIS` + `PILOT` phase for these public sources:
+Unless superseded by a newer explicit user instruction, agents are working on `SITE_ANALYSIS + PILOT` for:
 
 - `gwins` — https://www.gwins.org/
 - `ghot` — https://ghot.ai/
 - `gettrsearch` — https://gettrsearch.com/
 
-The mission is to turn real records from these sources into a unified, traceable archive model where one livestream can have multiple source records, high-quality text, a reliable time axis, and a route back to the source media.
+The mission is to turn real public records into a unified, traceable archive where one livestream can have multiple sources, high-quality text, a reliable time axis, and a route back to source media.
 
-Agents should prefer unfinished items listed in `docs/CURRENT_TASK.md` over inventing new work.
+Use `coordination/WORK_QUEUE.jsonl` as the executable task source. Use `docs/CURRENT_TASK.md` for task details and quality gates.
 
 ## Required work discipline
 
-- Inspect remote URL, branch, main history, existing files, and applicable instructions before changes. Preserve unrelated work.
-- Before writing a new record, search existing `data/`, reports, and source IDs to avoid duplicate work.
-- Analyze the three public source sites before broad collection. Limit Pilot to 20–30 real livestreams across years, including all required coverage cases.
-- One livestream has one internal live ID and multiple source records. Preserve curated text and ASR separately, with complete provenance.
-- Use seconds as the primary locator. Never invent timestamps, FPS, matches, source availability, publication times, or verification results.
-- Keep JSON/JSONL under `data/` as the Git source of truth. Rebuild SQLite and FTS5 entirely from `data/` and `schema/`.
-- Every collected datum must retain provenance: source site, source URL, retrieval time where applicable, third-party source ID where available, and source/verification status.
-- Randomly audit at least 60 segments before Pilot approval. Actual playback checks are required for time accuracy; checking that a URL contains a timestamp is insufficient. Mark unperformed checks as unverified.
-- Do not recommend full collection unless evidence meets the user's quality gates. Stop expansion after Pilot and report the result.
-- Only access normally public content, at low concurrency with request spacing and caching. Do not bypass login, CAPTCHA, paywalls, access controls, or DRM.
-- Never commit full video, large audio, models, or cache. Remove temporary downloaded media after analysis.
-- Make clear stage-based commits. Run checks appropriate to each stage; report actual results and unresolved failures.
-- Distinguish SITE_ANALYSIS, PILOT, FULL_ARCHIVE, and MAINTENANCE. Do not describe partial work as completed.
-- Update saved requirements and `CURRENT_TASK.md` when the user changes project policy so later agents inherit the current contract.
+- Inspect branch/history/current files before changes and preserve unrelated work.
+- Before writing a new record, search existing data, source URLs, platform IDs and `live_id` values.
+- Analyze the three public source sites before broad collection. Pilot remains 20–30 real livestreams until quality gates pass.
+- One livestream has one canonical internal live ID and may have multiple source records.
+- Preserve curated text and ASR separately with provenance.
+- Use seconds as the primary locator. Never invent timestamps, FPS, matches, availability, publication times, IDs or verification results.
+- Keep JSON/JSONL under `data/` as Git source of truth. SQLite/FTS5 must rebuild from `data/` + `schema/`.
+- Every datum must retain source site, source URL, retrieval/verification state and third-party ID when available.
+- Randomly audit at least 60 segments before Pilot approval; playback-position checks must be real, not inferred from URL parameters.
+- Do not begin FULL_ARCHIVE merely because collection is technically possible. Pilot evidence must pass first.
+- Publicly accessible content only. Low request rate, caching, no bypass of login/CAPTCHA/paywall/access control/DRM.
+- Never commit full video, large audio, model weights, cache or FFmpeg intermediates.
+- Make stage-based commits and report actual checks/failures.
+- Distinguish SITE_ANALYSIS, PILOT, FULL_ARCHIVE and MAINTENANCE.
+- When user policy changes, update durable repo rules so later Agents inherit it.
 
 ## Data-work rules for multiple agents
 
-Multiple agents may work in parallel. To reduce collisions:
+Multiple agents are expected to work in parallel.
 
-- Prefer dividing Pilot work by source/year/sample batch rather than editing the same JSONL file simultaneously.
-- Check whether another agent has already created the same `live_id`, platform source ID, or source URL before adding a record.
-- Never silently overwrite another agent's curated text, provenance, alignment result, or review status.
-- When sources disagree, preserve both claims with provenance and mark the conflict for review rather than choosing silently.
-- If a record needs correction, make the correction auditable in Git and explain the evidence in the commit/report.
-- Do not claim exclusive ownership of broad ranges unless the work queue explicitly assigns them.
+- Work ownership is per task ID, never by vague area such as "I am doing GWINS".
+- Prefer source/year/batch partitioning for collection.
+- Avoid multiple Agents editing the same large JSONL file. Use independent batch files where possible.
+- Never silently overwrite another Agent's curated text, provenance, alignment result or review status.
+- Preserve conflicting claims and record them in `coordination/conflicts/`.
+- Collector work should preserve source candidates; canonical cross-source identity merges belong to identity/matching tasks unless the queue explicitly says otherwise.
+- If a task is completed, validate it and move to another task rather than redoing it.
+- If a claim appears stale, follow the takeover procedure in `coordination/README.md`; never simply overwrite the claim.
 
 ## Definition of useful progress
 
 A useful Agent run should normally leave at least one durable artifact, for example:
 
-- a verified site-structure finding in `docs/SITE_ANALYSIS.md`;
-- a real livestream metadata JSON record;
-- a real `live_sources` record;
-- curated/ASR segment JSONL with provenance;
-- a schema/build/validation improvement required by real data;
+- a verified site-structure finding;
+- a real livestream/source record;
+- real curated/ASR segment data with provenance;
+- schema/build/validation work required by real data;
+- a cross-source identity decision with evidence;
 - an audit result with playback evidence;
-- a documented source conflict or missing-source finding with search scope;
-- a Pilot progress update.
+- a documented conflict or missing-source finding with search scope;
+- a completed-task record pointing to the result commit.
 
-Pure planning with no durable output is not considered completion when real work was possible.
+Pure planning with no durable output is not completion when real work was possible.
