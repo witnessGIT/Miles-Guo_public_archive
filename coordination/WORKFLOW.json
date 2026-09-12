@@ -4,11 +4,16 @@
   "claim_protocol_version": "claim-protocol-v2",
   "agent_permissions_version": "agent-permissions-v1",
   "media_audit_contract_version": "playback-audit-evidence-v1",
+  "playback_claim_contract_version": "playback-claim-capability-v1",
   "pilot60_evidence_root": "data/playback_audits",
   "pilot60_recorder": "scripts/record_playback_audit.py",
   "pilot60_gate": "scripts/audit_gate.py",
   "pilot60_playback_queue": "scripts/playback_queue.py",
   "pilot60_gate_sentinel": "coordination/completed/P9-PLAYBACK-GATE.json",
+  "pilot60_claim_requires_ffmpeg": true,
+  "pilot60_claim_requires_ffprobe": true,
+  "pilot60_claim_requires_content_inspection_declaration": true,
+  "pilot60_claim_flag": "--content-inspection-capable",
   "legacy_audit_readiness_counts_as_playback": false,
   "p9_claimable_before_playback_gate_sentinel": false,
   "admin_github_logins": ["witnessGIT"],
@@ -49,8 +54,10 @@
     "Git provides durable coordination and resume state; it cannot revive a host-suspended ChatGPT/Work/Codex session.",
     "An S-AUDIT completion or coordination/ready/audit marker does not by itself contribute a Pilot-60 playback check.",
     "Real playback work is retryable and independent through scripts/playback_queue.py; blocked runtime attempts release the case for later retry instead of converting transcript checks into playback evidence.",
+    "A playback claim now requires ffmpeg, ffprobe, and an explicit --content-inspection-capable declaration; a runtime that can run commands but cannot inspect decoded content must not claim a playback case.",
     "Pilot-60 counts only canonical-crosschecked data/playback_audits records created after successful real-media decode plus actual content inspection with observed position and timing error.",
     "P9-AUDIT-60 remains blocked until scripts/audit_gate.py passes and scripts/playback_queue.py --seal-gate creates P9-PLAYBACK-GATE.",
+    "If ordinary work is empty but playback work remains, repository-wide NO_ELIGIBLE_WORK is false; a non-media runtime may only classify its own session as HOST_STOP/runtime capability limitation.",
     "Missing shell/media execution or inability to inspect generated clips is HOST_STOP/runtime capability limitation; SAFETY_OR_ACCESS_BLOCK is reserved for access that would require bypassing login, CAPTCHA, paywall, DRM, or other controls."
   ]
 }
