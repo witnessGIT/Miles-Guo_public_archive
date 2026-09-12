@@ -1,0 +1,84 @@
+name: Playback Audit Control
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/audit_media.py'
+      - 'scripts/playback_validation.py'
+      - 'scripts/record_playback_audit.py'
+      - 'scripts/audit_gate.py'
+      - 'scripts/playback_queue.py'
+      - 'data/live_segments/**'
+      - 'data/playback_audits/**'
+      - 'coordination/ready/collection/**'
+      - 'coordination/ready/alignment/**'
+      - 'coordination/WORK_QUEUE.jsonl'
+      - '.github/workflows/playback-audit-control.yml'
+  pull_request:
+    branches: [main]
+    paths:
+      - 'scripts/audit_media.py'
+      - 'scripts/playback_validation.py'
+      - 'scripts/record_playback_audit.py'
+      - 'scripts/audit_gate.py'
+      - 'scripts/playback_queue.py'
+      - 'data/live_segments/**'
+      - 'data/playback_audits/**'
+      - 'coordination/ready/collection/**'
+      - 'coordination/ready/alignment/**'
+      - 'coordination/WORK_QUEUE.jsonl'
+      - '.github/workflows/playback-audit-control.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  validate-playback-control:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Compile playback control scripts
+        run: |
+          python -m py_compile \
+            scripts/audit_media.py \
+            scripts/playback_validation.py \
+            scripts/record_playback_audit.py \
+            scripts/audit_gate.py \
+            scripts/playback_queue.py
+
+      - name: Validate audit gate output contract
+        shell: bash
+        run: |
+          set +e
+          python scripts/audit_gate.py --json > /tmp/pilot60.json
+          rc=$?
+          set -e
+          if [[ "$rc" != "0" && "$rc" != "1" ]]; then
+            echo "audit_gate.py returned unexpected exit code: $rc"
+            exit "$rc"
+          fi
+          python - <<'PY'
+          import json
+          data = json.load(open('/tmp/pilot60.json', encoding='utf-8'))
+          required = {
+              'gate', 'qualifying_checks', 'required_checks',
+              'invalid_records', 'pilot60_pass', 'canonical_crosscheck'
+          }
+          missing = sorted(required - set(data))
+          if missing:
+              raise SystemExit(f'missing audit gate keys: {missing}')
+          if data['gate'] != 'P9-AUDIT-60':
+              raise SystemExit('unexpected gate id')
+          if data['canonical_crosscheck'] is not True:
+              raise SystemExit('canonical crosscheck must be enabled')
+          print(json.dumps(data, ensure_ascii=False, indent=2))
+          PY
+
+      - name: Validate playback queue can inspect repository state
+        run: python scripts/playback_queue.py --list
