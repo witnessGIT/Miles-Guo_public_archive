@@ -1,0 +1,142 @@
+name: Playback Evidence Service
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'coordination/playback_requests/**/*.json'
+      - 'coordination/playback_acceptances/**/*.json'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: miles-guo-playback-evidence-writer
+  cancel-in-progress: false
+
+env:
+  WHISPER_CPP_REF: v1.9.4
+  WHISPER_MODEL_NAME: small
+
+jobs:
+  process-playback-evidence:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install free media tools
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg tesseract-ocr tesseract-ocr-chi-sim
+          python -m pip install --upgrade pip
+          python -m pip install yt-dlp
+
+      - name: Cache whisper.cpp build and model
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/miles-guo-playback
+          key: playback-${{ runner.os }}-whisper-${{ env.WHISPER_CPP_REF }}-${{ env.WHISPER_MODEL_NAME }}
+
+      - name: Prepare whisper.cpp
+        shell: bash
+        run: |
+          set -euo pipefail
+          root="$HOME/.cache/miles-guo-playback"
+          tool="$root/whisper.cpp-${WHISPER_CPP_REF}"
+          mkdir -p "$root"
+          if [[ ! -x "$tool/build/bin/whisper-cli" ]]; then
+            rm -rf "$tool"
+            git clone --depth 1 --branch "$WHISPER_CPP_REF" https://github.com/ggml-org/whisper.cpp.git "$tool"
+            cmake -S "$tool" -B "$tool/build" -DWHISPER_BUILD_TESTS=OFF -DWHISPER_BUILD_EXAMPLES=ON
+            cmake --build "$tool/build" --config Release -j 4
+          fi
+          model="$tool/models/ggml-${WHISPER_MODEL_NAME}.bin"
+          if [[ ! -f "$model" ]]; then
+            bash "$tool/models/download-ggml-model.sh" "$WHISPER_MODEL_NAME"
+          fi
+          echo "WHISPER_CLI=$tool/build/bin/whisper-cli" >> "$GITHUB_ENV"
+          echo "WHISPER_MODEL=$model" >> "$GITHUB_ENV"
+
+      - name: Detect optional SmolVLM2 requests
+        id: visual
+        shell: bash
+        run: |
+          python - <<'PY' >> "$GITHUB_OUTPUT"
+          import json
+          from pathlib import Path
+          need = False
+          for path in Path('coordination/playback_requests').rglob('*.json') if Path('coordination/playback_requests').exists() else []:
+              try:
+                  row = json.loads(path.read_text(encoding='utf-8'))
+              except Exception:
+                  continue
+              evidence = Path('data/playback_evidence') / str(row.get('case_id')) / str(row.get('segment_id')) / 'evidence.json'
+              if row.get('visual_mode') == 'smolvlm2_optional' and not evidence.exists():
+                  need = True
+                  break
+          print(f"need_smolvlm={'true' if need else 'false'}")
+          PY
+
+      - name: Install optional free SmolVLM2 runtime
+        if: steps.visual.outputs.need_smolvlm == 'true'
+        run: |
+          python -m pip install 'transformers>=4.49,<6' accelerate av
+          python -m pip install torch --index-url https://download.pytorch.org/whl/cpu
+          echo "ENABLE_SMOLVLM=1" >> "$GITHUB_ENV"
+
+      - name: Process pending playback requests
+        continue-on-error: true
+        run: python scripts/process_playback_request.py --pending
+
+      - name: Process pending worker acceptances
+        continue-on-error: true
+        run: python scripts/accept_playback_evidence.py --pending
+
+      - name: Validate durable playback records
+        shell: bash
+        run: |
+          set +e
+          python scripts/audit_gate.py --json > /tmp/pilot60.json
+          rc=$?
+          set -e
+          if [[ "$rc" != "0" && "$rc" != "1" ]]; then
+            cat /tmp/pilot60.json || true
+            exit "$rc"
+          fi
+          cat /tmp/pilot60.json
+          python - <<'PY'
+          import json
+          row = json.load(open('/tmp/pilot60.json', encoding='utf-8'))
+          if row.get('invalid_records'):
+              raise SystemExit('Playback evidence service produced/observed invalid durable records')
+          PY
+
+      - name: Commit durable evidence outputs
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/playback_evidence data/playback_audits 2>/dev/null || true
+          if git diff --cached --quiet; then
+            echo 'No durable playback evidence changes to commit.'
+            exit 0
+          fi
+          git commit -m 'data: publish repository playback evidence'
+          for attempt in 1 2 3 4 5; do
+            if git pull --rebase origin main && git push origin HEAD:main; then
+              exit 0
+            fi
+            echo "Playback evidence push race, retry $attempt/5"
+            sleep $((attempt * 2))
+          done
+          echo 'Failed to publish playback evidence after bounded race retries.'
+          exit 1
