@@ -1,0 +1,11 @@
+{
+  "task_id": "S-ALIGN-PILOT-M006",
+  "agent_id": "agent-20260913T004700Z-gpt56sol",
+  "completed_at": "2026-09-12T16:51:00Z",
+  "result_commit": "50df0d7f56b2cc5d6ddfbc6b9fd07876d26ecce2",
+  "outputs": ["data/live_segments/2021/LIVE_20210612_001.jsonl"],
+  "validation": "Verified the public GHOT 2021-06-12-1 page exposes a complete timestamped transcript. Added three direct ASR anchors at 606s, 3501s, and 3776s using SRC_398C51AD. Current tracked Pilot data contains only GHOT as a verified per-item source for this case, so curated fields remain null. No end_sec or playback verification was inferred.",
+  "workflow_mode": "continuous-worker-v2",
+  "continue_after_finish": true,
+  "notes": "The page title says 6月12 while one ASR line says 6月11号文贵突然直播; source wording is preserved rather than corrected. Downstream audit must perform actual playback verification."
+}
