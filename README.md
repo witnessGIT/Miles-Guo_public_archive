@@ -14,19 +14,32 @@ Official database: `database/Miles-Guo_public_archive.sqlite3`
 
 ## Agent：进入仓库后立即做什么
 
-任何 Agent 进入本仓库后，不要停留在“阅读规范”阶段。必须按以下顺序立即开始工作：
+任何 Agent 进入本仓库后，不要停留在“阅读规范”阶段，也不要自行挑一个大方向就开始重复工作。
+
+必须按以下顺序：
 
 1. 阅读 `AGENTS.md`。
-2. 阅读 `docs/PROJECT_REQUIREMENTS.md`、`docs/NAMING_AND_WORKFLOW.md`。
-3. 阅读 `docs/CURRENT_TASK.md`，确认当前阶段和待处理工作。
-4. 检查仓库现状，避免覆盖其他 Agent 已完成的数据。
-5. 从当前任务队列领取一个尚未完成的数据整理任务。
-6. 对 `gwins`、`ghot`、`gettrsearch` 的真实公开数据进行分析或 Pilot 整理。
-7. 将结果写入 Git 友好的 JSON / JSONL 源数据，并更新来源、质量和进度记录。
-8. 按规范验证后提交清晰 commit。
-9. 如果 Pilot 尚未通过，不得擅自进入全量采集。
+2. 阅读 `coordination/README.md` 和 `coordination/WORK_QUEUE.jsonl`。
+3. 检查 `coordination/completed/` 和 `coordination/claims/`。
+4. 阅读 `docs/CURRENT_TASK.md`、`docs/PROJECT_REQUIREMENTS.md`、`docs/NAMING_AND_WORKFLOW.md`。
+5. 选择“依赖已完成 + 尚未完成 + 尚未被认领”的最高优先级任务。
+6. 通过创建 `coordination/claims/<TASK_ID>.json` 原子认领任务。
+7. 只有 claim 创建成功后才开始实际工作。
+8. 完成真实数据分析/整理、验证并提交结果。
+9. 创建 `coordination/completed/<TASK_ID>.json` 记录结果 commit、输出和验证结果。
+10. 如果还有可安全执行任务，继续领取下一项。
 
-如果没有更具体的用户指令，`docs/CURRENT_TASK.md` 就是 Agent 的默认工作入口。
+如果两个 Agent 同时抢同一个任务，只有第一个成功创建 claim 文件的 Agent 获得任务；另一个不得覆盖 claim，必须刷新仓库后改领其它任务。
+
+本项目因此不依赖 Agent 之间互相聊天，Git 本身就是协作状态源。
+
+本地 clone 后可辅助运行：
+
+```bash
+python scripts/next_task.py
+```
+
+它会列出当前依赖已经满足、未完成、未被 claim 的任务。真正开工前仍必须按 `coordination/README.md` 创建 claim。
 
 ## Current mission
 
@@ -85,6 +98,45 @@ Official database: `database/Miles-Guo_public_archive.sqlite3`
 - `MAINTENANCE`: not started
 
 Pilot 仅用于验证统一模型和跨站来源关系，不代表整个历史档案已经完成。只有 Pilot 数据质量达到标准后，才考虑进入全量历史采集。
+
+## Multi-Agent coordination
+
+协作状态统一放在：
+
+```text
+coordination/
+├── README.md
+├── WORK_QUEUE.jsonl
+├── claims/
+├── completed/
+└── conflicts/
+```
+
+核心规则：
+
+```text
+WORK_QUEUE
+↓
+过滤已完成任务
+↓
+过滤有效 claim
+↓
+检查 depends_on
+↓
+选最高优先级任务
+↓
+创建 claim
+↓
+执行 + 验证 + commit
+↓
+创建 completed 记录
+```
+
+任务所有权按 `TASK_ID` 划分，不允许使用“我负责整个 GWINS”这种模糊占用。
+
+采集工作进一步按“来源 + 年份/范围 + batch”拆分，尽量避免多个 Agent 同时修改一个大 JSONL 文件。
+
+发生来源冲突、重复身份、时间轴冲突、stale claim 接管等情况时，必须写入 `coordination/conflicts/`，不得静默覆盖。
 
 ## Zero-cost-first policy
 
@@ -145,6 +197,12 @@ Miles-Guo_public_archive/
 ├── README.md
 ├── LICENSE
 ├── .gitignore
+├── coordination/
+│   ├── README.md
+│   ├── WORK_QUEUE.jsonl
+│   ├── claims/
+│   ├── completed/
+│   └── conflicts/
 ├── docs/
 │   ├── PROJECT_REQUIREMENTS.md
 │   ├── NAMING_AND_WORKFLOW.md
@@ -167,6 +225,7 @@ Miles-Guo_public_archive/
 ├── database/
 │   └── Miles-Guo_public_archive.sqlite3
 ├── scripts/
+│   ├── next_task.py
 │   ├── analyze_sources.py
 │   ├── collect_pilot.py
 │   ├── build_db.py
@@ -227,8 +286,10 @@ Git 仓库不保存完整直播视频、大音频、模型权重、Whisper 模�
 所有 Agent 必须先阅读：
 
 1. [AGENTS.md](AGENTS.md)
-2. [当前工作任务](docs/CURRENT_TASK.md)
-3. [完整项目要求](docs/PROJECT_REQUIREMENTS.md)
-4. [统一命名与工作规范](docs/NAMING_AND_WORKFLOW.md)
+2. [多 Agent 协作协议](coordination/README.md)
+3. [任务队列](coordination/WORK_QUEUE.jsonl)
+4. [当前工作任务](docs/CURRENT_TASK.md)
+5. [完整项目要求](docs/PROJECT_REQUIREMENTS.md)
+6. [统一命名与工作规范](docs/NAMING_AND_WORKFLOW.md)
 
-当前明确用户要求优先；后续命名规范优先于早期示例。阅读完成后应立即按 `CURRENT_TASK.md` 开始实际数据整理，不要仅汇报“已阅读”。
+当前明确用户要求优先；后续命名规范优先于早期示例。阅读完成后应立即走 claim 流程并开始实际整理，不要仅汇报“已阅读”。
