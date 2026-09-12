@@ -1,14 +1,10 @@
 # Miles-Guo_public_archive Continuous Worker v2
 
-Project: `Miles-Guo_public_archive`
-
-Policy: `continuous-worker-v2`
-
+Project: `Miles-Guo_public_archive`  
+Policy: `continuous-worker-v2`  
 Claim protocol: `claim-protocol-v2`
 
 ## Goal
-
-New Agent work in this repository uses a continuous self-service worker model:
 
 ```text
 ENTER REPOSITORY
@@ -22,23 +18,17 @@ ENTER REPOSITORY
   -> REPEAT
 ```
 
-A worker does not intentionally stop after one successful batch while other safe eligible work exists. Losing one claim race is also not a stop condition.
+A worker does not intentionally stop after one successful task while other safe eligible work exists. Losing one claim race is not a stop condition.
 
-## Important platform limitation
+## Platform limitation
 
-Git/GitHub can coordinate work and make the next task discoverable, but the repository cannot force a suspended ChatGPT/Work/Codex session to wake itself after the host platform has stopped or suspended that session.
-
-Therefore `continuous-worker-v2` guarantees **continuous behavior while the Agent session is running**, plus durable resume/takeover state in Git. It does not claim that Git can resurrect a terminated or suspended Agent process.
-
-For local/CLI workers whose host permits a long-running process, `scripts/next_task.py --watch` can wait for new eligible work. Host suspension, account sleep, network termination, tool-budget exhaustion, or platform lifecycle rules can still stop that process.
+Git/GitHub provides coordination, execution services and durable resume state, but cannot resurrect a host-suspended ChatGPT/Work/Codex session. Continuous behavior applies while the Agent session remains active.
 
 ## Effective scope / grandfather rule
 
-This policy applies to **new task claims**.
+The current policy applies to new claims. Existing valid claims remain owned by their current Agent and are not stolen or duplicated merely because workflow rules changed.
 
-Existing valid claims created under a previous workflow remain valid and must not be interrupted, renamed, reassigned, or duplicated merely to migrate them.
-
-A claim without a `workflow_mode` field is treated as a grandfathered legacy claim. A new claim contains:
+New claims contain:
 
 ```json
 {
@@ -48,120 +38,116 @@ A claim without a `workflow_mode` field is treated as a grandfathered legacy cla
 }
 ```
 
-## Default stop conditions
+Finish-time prerequisite checks may still enforce newer safety/quality gates on an older claim. A grandfathered claim never authorizes bypassing a newly required acceptance dependency.
 
-A v2 Agent continues claiming tasks until one of these conditions is true:
+## Stop conditions
 
-1. **PROJECT_COMPLETE** — the currently authorized project phase has passed its final gate and no authorized work remains.
-2. **USER_RECALL** — the user explicitly asks the Agent to stop, return, pause, or change mission.
-3. **NO_ELIGIBLE_WORK** — all unfinished work is currently owned, blocked by unresolved prerequisites, or requires unavailable external state.
-4. **HUMAN_DECISION_REQUIRED** — proceeding would require guessing on identity, provenance, schema migration, access policy, destructive conflict resolution, or another decision explicitly reserved for the user/reviewer.
-5. **SAFETY_OR_ACCESS_BLOCK** — work would require bypassing login, CAPTCHA, paywall, access control, DRM, or another prohibited action.
-6. **GITHUB_WRITE_ERROR** — only after `coordination/CLAIM_PROTOCOL_V2.md` has ruled out a normal claim race and bounded fresh retries still fail.
-7. **HOST_STOP** — the execution platform stops/suspends the Agent, tool context is exhausted, or the runtime cannot continue. This is not a project-level completion state.
+A v2 Agent stops only for a documented reason:
 
-Finishing one task, finishing one batch, or losing one claim race is **not** a stop condition.
+1. `PROJECT_COMPLETE`
+2. `USER_RECALL`
+3. genuine `NO_ELIGIBLE_WORK`
+4. `HUMAN_DECISION_REQUIRED`
+5. `SAFETY_OR_ACCESS_BLOCK`
+6. verified `GITHUB_WRITE_ERROR`
+7. true `HOST_STOP`
 
-`CLAIM_RACE_LOST` must be followed by refresh + another eligible claim attempt.
+Finishing one task or losing one claim race is not a stop condition.
 
-## Claim-race recovery is mandatory
+Because the repository now exposes a Playback Evidence Service, lack of **local** ffmpeg/player/media inspection is not by itself `HOST_STOP`. If unclaimed `P9-PLAYBACK-*` work exists and `.github/workflows/playback-evidence-service.yml` is available, ordinary workers can continue through repository requests/evidence/acceptances.
 
-Read `coordination/CLAIM_PROTOCOL_V2.md` before creating new claims.
+`HOST_STOP` for Playback is appropriate only when neither the repository service nor a valid local fallback is available to the current session.
 
-For GitHub API Agents, HTTP `422` from `create_file` is not automatically a repository write outage.
+## Claim-race recovery
 
-The Agent must first fetch the exact attempted path:
+Read `coordination/CLAIM_PROTOCOL_V2.md` before new claims. HTTP `422` or `409` from an atomic claim must be classified against fresh repository state.
 
 ```text
-coordination/claims/<TASK_ID>.json
+exact claim exists -> CLAIM_RACE_LOST -> refresh -> try another task
+exact claim absent -> refresh/backoff -> bounded retry
 ```
 
-If the file exists, another Agent won the atomic race. Classify `CLAIM_RACE_LOST`, refresh repository state, and try another eligible task.
-
-If the file does not exist, refresh repository state and use bounded retries. Only after the exact path remains absent and fresh retries continue to fail may the Agent classify `GITHUB_WRITE_ERROR`.
-
-A single 422 may never be used as the sole reason to say the execution chain must stop at the claim boundary.
+Only repeated fresh failure with no race/staleness explanation becomes `GITHUB_WRITE_ERROR`.
 
 ## No-sleep rule
 
-After a successful `--finish`, a v2 Agent must immediately refresh repository state and attempt another claim:
+After completion, refresh and claim the next compatible task. If another Agent wins a claim race, choose another eligible candidate. If no task is eligible, report the exact repository state instead of inventing work.
+
+## Ordinary and Playback work
+
+Ordinary/static queue:
 
 ```bash
-python scripts/next_task.py --claim --agent-id <same-agent-id>
+python scripts/next_task.py --list
 ```
 
-If the preferred task is claimed concurrently, the worker must try another eligible candidate instead of waiting for that task owner.
-
-`scripts/next_task.py` disperses Agents across same-priority candidates using a stable `agent_id` hash and can try multiple local candidates in one claim cycle.
-
-If no task is eligible after refresh, the Agent should report the concrete blocking reason from repository state. It must not invent work just to stay active.
-
-## Optional watch mode
-
-For a runtime that can remain alive safely:
+Playback queue:
 
 ```bash
-python scripts/next_task.py \
-  --watch \
-  --claim \
-  --agent-id agent-<UTC>-<random> \
-  --poll-seconds 60
+python scripts/playback_queue.py --list
 ```
 
-Behavior:
+Preferred Playback path for ordinary Agents:
 
-- re-scan Git-backed queue state periodically;
-- when a task becomes eligible, claim it and exit the watcher so the Agent can execute the task;
-- `Ctrl+C` or host termination recalls/stops the waiting process;
-- never bypass an existing claim;
-- never convert a blocked task into an eligible one by assumption.
+```text
+claim P9-PLAYBACK-*
+ -> write coordination/playback_requests/<CASE>/<SEGMENT>.json
+ -> repository GitHub Action decodes real media + offline ASR/OCR
+ -> read data/playback_evidence/<CASE>/<SEGMENT>/evidence.{json,md}
+ -> if evidence really matches, write coordination/playback_acceptances/<CASE>/<SEGMENT>.json
+ -> service creates qualifying playback audit record
+ -> finish case when all current timed segments qualify
+```
 
-Watch mode is an availability aid, not a promise that the hosting platform will keep a process alive forever.
+Workers use this service but must not modify the service implementation. Bugs in it are reported to `coordination/bug_reports/` for an admin Agent.
 
-## Streaming work instead of global barriers
+## Streaming work
 
-New work should normally be decomposed by one livestream / Pilot case or a very small non-overlapping micro-batch.
-
-Preferred progression:
+Preferred progression by case:
 
 ```text
 COLLECT + IDENTITY
-        -> collection readiness marker
+  -> collection readiness
 ALIGN
-        -> alignment readiness marker
-AUDIT
-        -> audit readiness marker
+  -> alignment readiness
+SOURCE / PROVENANCE AUDIT
+  -> audit readiness
+REAL PLAYBACK AUDIT
+  -> repository playback evidence + acceptance + qualifying record
 ```
 
-Each case advances independently. Aggregate tasks are gates/reports, not prerequisites that unnecessarily serialize unrelated case work.
+Different cases advance independently. Aggregate tasks remain gates/reports rather than unnecessary global barriers.
 
-## Existing Agents remain safe
+## Durable resume state
 
-Migration rules are deliberately non-destructive:
-
-- do not delete or rewrite existing claims;
-- do not create streaming collection tasks that overlap a valid legacy batch claim;
-- completed legacy records remain authoritative history;
-- v2 applies at the **next claim boundary**, not retroactively inside work already in progress.
-
-## Resume and takeover
-
-Because a host can suspend an Agent, durable state must always be in Git:
+Important state lives in Git:
 
 ```text
 coordination/claims/
 coordination/completed/
 coordination/ready/
+coordination/playback_requests/
+coordination/playback_acceptances/
+coordination/playback_attempts/
+data/playback_evidence/
+data/playback_audits/
 data/
 reports/
 ```
 
-A new Agent can resume the project without chat memory by reading repository state and running `scripts/next_task.py --list`.
+Temporary videos/audio/frames/models/caches do not belong in Git.
 
-If an old claim appears stale, use the documented stale-claim checks in `coordination/README.md`. Never steal a claim merely because its Agent is not visible in chat.
+## Current Pilot end behavior
 
-## Project-end behavior
+Historical `P9-AUDIT-60` and `P10-PILOT-DECISION` are superseded audit history only.
 
-`continuous-worker-v2` does not authorize work beyond the current phase.
+Current acceptance chain:
 
-For the current Pilot, `P10-PILOT-DECISION` remains the whole-Pilot decision gate. A worker must not silently begin `FULL_ARCHIVE` unless the repository/user explicitly authorizes it after the Pilot evidence supports that transition.
+```text
+valid real Playback evidence
+ -> P9-PLAYBACK-GATE
+ -> P9-AUDIT-60-R2
+ -> P10-PILOT-DECISION-R2
+```
+
+A worker must not begin `FULL_ARCHIVE` unless current `P10-PILOT-DECISION-R2` explicitly records `full_archive_decision=YES` after all required quality gates pass.
