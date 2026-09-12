@@ -1,0 +1,10 @@
+{
+  "task_id": "S-AUDIT-PILOT-L003",
+  "agent_id": "agent-20260913T002000Z-gpt56sol",
+  "claimed_at": "2026-09-12T16:20:30Z",
+  "base_commit": "d10b2ca3b941947e57f4f1aed9a7b0c185c02234",
+  "status": "in_progress",
+  "workflow_mode": "continuous-worker-v2",
+  "continue_after_finish": true,
+  "notes": "Audit the existing source-backed aligned segment for PILOT-L003 / LIVE_20220511_001 using real public playback where accessible; record unverified if playback cannot be performed."
+}
