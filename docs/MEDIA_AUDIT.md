@@ -94,6 +94,64 @@ or:
 ffmpeg decode succeeded but nobody inspected the content
 ```
 
+## Durable Pilot-60 evidence
+
+An `S-AUDIT-*` completion file or `coordination/ready/audit/*.json` marker is evidence that an audit task ran. **Its existence is not a Pilot-60 count.**
+
+After a reviewer has actually inspected decoded media and located the expected phrase/event, create one durable playback record per checked segment:
+
+```bash
+python scripts/record_playback_audit.py \
+  --case-id PILOT-E002 \
+  --live-id LIVE_20170610_001 \
+  --segment-id LIVE_20170610_001_SEG_000001 \
+  --expected-start 353 \
+  --observed-position 357 \
+  --media-url '<public-media-url>' \
+  --reviewer '<agent-or-reviewer-id>' \
+  --observation-mode audio \
+  --content-observation 'observed the expected HNA sentence beginning' \
+  --decode-evidence-json cache/audit_media/PILOT-E002_SEG_000001_353.000.json \
+  --content-match
+```
+
+The recorder refuses to create a qualifying check unless the referenced `audit_media.py` evidence says real media decoding succeeded and the caller explicitly confirms the content match. The durable record is written under:
+
+```text
+data/playback_audits/<CASE_ID>/<SEGMENT_ID>.json
+```
+
+Temporary clips/frames remain under `cache/` and are never committed. Where available, their SHA-256 hashes are copied into the durable record so later reviewers can correlate the temporary artifact used during review.
+
+## Pilot-60 gate
+
+Use:
+
+```bash
+python scripts/audit_gate.py
+```
+
+or machine-readable output:
+
+```bash
+python scripts/audit_gate.py --json
+```
+
+The gate counts **only** valid `data/playback_audits/**/*.json` records. It intentionally gives zero automatic credit to legacy/current `coordination/ready/audit` markers unless a real playback check was separately recorded.
+
+The gate verifies:
+
+- unique segment IDs;
+- real-media decode verification;
+- explicit content/timing verification;
+- expected and observed positions;
+- internally consistent timing error;
+- at least 60 qualifying segment checks;
+- at least 90% within 3 seconds;
+- at least 98% within 8 seconds.
+
+This removes the ambiguity where an audit task can be operationally complete while contributing zero checks to Pilot-60.
+
 ## Capability classification
 
 Do not automatically classify the absence of a graphical browser player as `SAFETY_OR_ACCESS_BLOCK`.
