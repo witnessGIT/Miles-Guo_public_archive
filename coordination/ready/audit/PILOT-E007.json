@@ -1,0 +1,15 @@
+{
+  "project": "Miles-Guo_public_archive",
+  "workflow_mode": "continuous-worker-v2",
+  "case_id": "PILOT-E007",
+  "live_id": "LIVE_20190530_001",
+  "stage": "audit",
+  "ready_at": "2026-09-12T16:37:30Z",
+  "task_id": "S-AUDIT-PILOT-E007",
+  "agent_id": "agent-20260913T013300Z-gpt56sol",
+  "result_commit": "f0385b67f51125a15eae15308a8d745f40e1edb3",
+  "outputs": [
+    "reports/PILOT_AUDIT_E007.md"
+  ],
+  "validation": "Audit attempt completed with GHOT/GWINS source identity and timestamped transcript evidence supported but playback unavailable in the current environment. The three segments remain playback_verified=0, no timing error was measured, and this readiness marker records 0 qualifying real playback checks for Pilot-60."
+}
