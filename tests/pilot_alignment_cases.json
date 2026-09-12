@@ -1,0 +1,52 @@
+[
+  {
+    "id": "L003_OPENING",
+    "live_id": "LIVE_20220511_001",
+    "text_curated": "你是挨板砖出去揍你呀。我这讲话讲得我，从早上……",
+    "text_asr": "你是要摆招出去揍你，IcoMayo你好，我说讲话讲得我，你好。",
+    "start_sec": 0,
+    "end_sec": 18,
+    "expected_score": 0.5106382978723404,
+    "expected_review": "needs_review"
+  },
+  {
+    "id": "L007_OPENING",
+    "live_id": "LIVE_20230310_001",
+    "text_curated": "尊敬的战友们好，3月10号，你们健身了吗？",
+    "text_asr": "尊敬的战友们好，3月10号，尊敬的战友们好，你们见谁了吗",
+    "start_sec": 0,
+    "end_sec": 17,
+    "expected_score": 0.7441860465116279,
+    "expected_review": "aligned_unverified_playback"
+  },
+  {
+    "id": "L007_TWO_SESSIONS",
+    "live_id": "LIVE_20230310_001",
+    "text_curated": "共产党的两会又选出了…习近平当了共产党的所谓的党魁，习家军真正的头把交椅。",
+    "text_asr": "共产党的两会又选出了伟大的宇宙中最强大的习死黄同志，习近平当了共产党的所谓的党魁，习家军的真正的头把交椅啊。",
+    "start_sec": 17,
+    "end_sec": 44,
+    "expected_score": 0.8,
+    "expected_review": "aligned_unverified_playback"
+  },
+  {
+    "id": "L009_OPENING",
+    "live_id": "LIVE_20230314_001",
+    "text_curated": "尊敬的战友们好，你们健身了吗？",
+    "text_asr": "尊敬的战友们好,你们坚持了吗?",
+    "start_sec": 0,
+    "end_sec": 30,
+    "expected_score": 0.8461538461538461,
+    "expected_review": "aligned_unverified_playback"
+  },
+  {
+    "id": "L009_HAIRCUT",
+    "live_id": "LIVE_20230314_001",
+    "text_curated": "现在我这个理发成政治事件了。很多投资人说，Miles，你不能理发！",
+    "text_asr": "现在我这个理化成政治事件了，咱们呢，很多投资人说，在这儿看，说。哎呀，Miles你不能理吧！",
+    "start_sec": 30,
+    "end_sec": 50,
+    "expected_score": 0.7941176470588235,
+    "expected_review": "aligned_unverified_playback"
+  }
+]
