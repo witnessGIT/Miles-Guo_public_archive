@@ -13,12 +13,44 @@ COMPLETED = ROOT / "coordination" / "completed"
 CLAIMS = ROOT / "coordination" / "claims"
 
 
+def completed_path(task_id: str) -> Path:
+    return COMPLETED / f"{task_id}.json"
+
+
 def exists_completed(task_id: str) -> bool:
-    return (COMPLETED / f"{task_id}.json").exists()
+    return completed_path(task_id).exists()
+
+
+def load_completed(task_id: str) -> dict | None:
+    path = completed_path(task_id)
+    if not path.exists():
+        return None
+    try:
+        payload = json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return None
+    return payload if isinstance(payload, dict) else None
 
 
 def exists_claim(task_id: str) -> bool:
     return (CLAIMS / f"{task_id}.json").exists()
+
+
+def normalize_full_archive_decision(record: dict | None) -> str | None:
+    """Return YES/NO only for an explicit machine-readable Pilot decision.
+
+    Completing P10 is not itself authorization. Missing, malformed, or differently named
+    fields intentionally resolve to None so FULL_ARCHIVE stays locked by default.
+    """
+    if not record:
+        return None
+    value = record.get("full_archive_decision")
+    if isinstance(value, bool):
+        return "YES" if value else "NO"
+    if not isinstance(value, str):
+        return None
+    normalized = value.strip().upper()
+    return normalized if normalized in {"YES", "NO"} else None
 
 
 def build_status(content_inspection_capable: bool) -> dict:
@@ -40,8 +72,11 @@ def build_status(content_inspection_capable: bool) -> dict:
 
     p9_playback_gate_completed = exists_completed("P9-PLAYBACK-GATE")
     p9_completed = exists_completed("P9-AUDIT-60")
-    p10_completed = exists_completed("P10-PILOT-DECISION")
+    p10_record = load_completed("P10-PILOT-DECISION")
+    p10_completed = p10_record is not None
     p10_claimed = exists_claim("P10-PILOT-DECISION")
+    full_archive_decision = normalize_full_archive_decision(p10_record)
+    full_archive_authorized = bool(p10_completed and full_archive_decision == "YES")
 
     repository_has_work = bool(ordinary or playback_open)
     host_stop = bool(
@@ -52,8 +87,12 @@ def build_status(content_inspection_capable: bool) -> dict:
     )
     repository_no_eligible_work = bool(not ordinary and not playback_open)
 
-    if p10_completed:
-        state = "PILOT_DECISION_COMPLETED"
+    if p10_completed and full_archive_decision == "YES":
+        state = "PILOT_DECISION_COMPLETED_FULL_ARCHIVE_YES"
+    elif p10_completed and full_archive_decision == "NO":
+        state = "PILOT_DECISION_COMPLETED_FULL_ARCHIVE_NO"
+    elif p10_completed:
+        state = "PILOT_DECISION_COMPLETED_DECISION_UNRECORDED"
     elif p9_completed:
         state = "P10_READY_OR_IN_PROGRESS"
     elif p9_playback_gate_completed:
@@ -99,7 +138,8 @@ def build_status(content_inspection_capable: bool) -> dict:
             "P9_AUDIT_60_completed": p9_completed,
             "P10_PILOT_DECISION_claimed": p10_claimed,
             "P10_PILOT_DECISION_completed": p10_completed,
-            "full_archive_authorized": p10_completed,
+            "P10_full_archive_decision": full_archive_decision,
+            "full_archive_authorized": full_archive_authorized,
         },
         "classification": (
             "HOST_STOP"
@@ -112,6 +152,8 @@ def build_status(content_inspection_capable: bool) -> dict:
             "legacy_audit_markers_count_toward_pilot60": False,
             "decode_without_content_inspection_counts_toward_pilot60": False,
             "p10_may_start_before_p9_complete": False,
+            "p10_completion_alone_authorizes_full_archive": False,
+            "full_archive_requires_explicit_p10_yes": True,
             "full_archive_may_start_before_p10_decision": False,
         },
     }
@@ -151,6 +193,7 @@ def print_human(status: dict) -> None:
         f"P9-PLAYBACK-GATE={gates['P9_PLAYBACK_GATE_completed']} "
         f"P9-AUDIT-60={gates['P9_AUDIT_60_completed']} "
         f"P10={gates['P10_PILOT_DECISION_completed']} "
+        f"P10_DECISION={gates['P10_full_archive_decision'] or 'UNRECORDED'} "
         f"FULL_ARCHIVE_AUTHORIZED={gates['full_archive_authorized']}"
     )
     if status["host_stop_for_this_runtime"]:
@@ -158,6 +201,11 @@ def print_human(status: dict) -> None:
             "HOST_STOP: repository work still exists, but this runtime cannot honestly "
             "claim the remaining real-playback work. Do not report repository-wide "
             "NO_ELIGIBLE_WORK."
+        )
+    if gates["P10_PILOT_DECISION_completed"] and gates["P10_full_archive_decision"] is None:
+        print(
+            "FULL_ARCHIVE remains locked: P10 completion exists but no explicit "
+            "full_archive_decision=YES|NO was recorded."
         )
 
 
