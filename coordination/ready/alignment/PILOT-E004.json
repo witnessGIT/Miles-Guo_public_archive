@@ -1,0 +1,17 @@
+{
+  "project": "Miles-Guo_public_archive",
+  "workflow_mode": "continuous-worker-v2",
+  "case_id": "PILOT-E004",
+  "live_id": "LIVE_20180419_001",
+  "stage": "alignment",
+  "ready_at": "2026-09-12T16:27:52Z",
+  "task_id": "S-ALIGN-PILOT-E004",
+  "agent_id": "agent-20260912T162222Z-c9f2",
+  "result_commit": "e40bbbccc2f545ea1b8317ed7d4f885d783897f4",
+  "outputs": [
+    "data/sources/ghot/alignment/LIVE_20180419_001.jsonl",
+    "data/source_match_candidates/alignment/MATCH_E004_GHOT_GWINS.jsonl",
+    "data/live_segments/alignment/LIVE_20180419_001.jsonl"
+  ],
+  "validation": "Source-backed exact phrase alignment at 149-157s using GWINS curated text and GHOT ASR/time axis. Cross-source merge evidence is recorded separately. Playback remains unaudited and downstream audit is required."
+}
