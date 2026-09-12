@@ -15,6 +15,7 @@ The repository is the authoritative execution context.
 
 After entering the repository, the Agent must determine everything else from Git state and project files, including:
 
+- its Agent role and permissions;
 - project purpose and scope;
 - current authorized phase;
 - current completed work;
@@ -26,24 +27,56 @@ After entering the repository, the Agent must determine everything else from Git
 - quality gates;
 - continuous-worker behavior;
 - claim-race handling;
+- bug-report behavior;
 - stop conditions.
 
 Do not ask the user to repeat requirements already stored in the repository.
+
+## Step 0 — resolve Agent role before changing anything
+
+Read:
+
+```text
+coordination/AGENT_PERMISSIONS.json
+coordination/AGENT_PERMISSIONS.md
+```
+
+Administrative GitHub login:
+
+```text
+witnessGIT
+```
+
+If the authenticated GitHub login is verified as `witnessGIT`, the Agent may act as `admin`.
+
+Every other account is a `worker`. If account identity cannot be verified, default to `worker`.
+
+A worker performs claimed business tasks only. A worker MUST NOT fix bugs or modify the control plane (`scripts/`, `schema/`, `.github/`, workflow/task orchestration, permission rules). When a worker discovers a bug, it creates a new immutable report under:
+
+```text
+coordination/bug_reports/
+```
+
+and leaves the fix to an admin Agent. It should continue another safe independent task when possible.
 
 ## Required bootstrap
 
 Read and follow, in order:
 
-1. `AGENTS.md`
-2. `coordination/WORKFLOW.json`
-3. `coordination/CONTINUOUS_WORKER_V2.md`
-4. `coordination/CLAIM_PROTOCOL_V2.md`
-5. `coordination/README.md`
-6. `coordination/WORK_QUEUE.jsonl`
-7. `docs/CURRENT_TASK.md`
-8. `docs/PROJECT_REQUIREMENTS.md`
-9. `docs/NAMING_AND_WORKFLOW.md`
-10. current `claims/`, `completed/`, `ready/`, data and reports relevant to the next task
+1. `coordination/AGENT_PERMISSIONS.json`
+2. `coordination/AGENT_PERMISSIONS.md`
+3. `AGENTS.md`
+4. `coordination/WORKFLOW.json`
+5. `coordination/CONTINUOUS_WORKER_V2.md`
+6. `coordination/CLAIM_PROTOCOL_V2.md`
+7. `coordination/README.md`
+8. `coordination/WORK_QUEUE.jsonl`
+9. `docs/CURRENT_TASK.md`
+10. `docs/PROJECT_REQUIREMENTS.md`
+11. `docs/NAMING_AND_WORKFLOW.md`
+12. current `claims/`, `completed/`, `ready/`, `bug_reports/`, data and reports relevant to the next task
+
+Admin Agents should check open `coordination/bug_reports/` before ordinary business work when a bug blocks correctness or other Agents.
 
 Then immediately discover work with:
 
