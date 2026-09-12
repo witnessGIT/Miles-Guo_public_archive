@@ -1,0 +1,48 @@
+{
+  "project": "Miles-Guo_public_archive",
+  "policy_version": "agent-permissions-v1",
+  "admin_github_logins": ["witnessGIT"],
+  "default_role_when_identity_unknown": "worker",
+  "roles": {
+    "admin": {
+      "may_fix_bugs": true,
+      "may_modify_control_plane": true,
+      "may_modify_schema_and_build_system": true,
+      "may_modify_workflow_and_ci": true,
+      "may_resolve_bug_reports": true,
+      "may_execute_business_tasks": true
+    },
+    "worker": {
+      "may_fix_bugs": false,
+      "may_modify_control_plane": false,
+      "may_modify_schema_and_build_system": false,
+      "may_modify_workflow_and_ci": false,
+      "may_resolve_bug_reports": false,
+      "may_execute_business_tasks": true,
+      "may_submit_bug_reports": true
+    }
+  },
+  "protected_control_plane_paths": [
+    "AGENTS.md",
+    "START_HERE.md",
+    "coordination/AGENT_PERMISSIONS.json",
+    "coordination/AGENT_PERMISSIONS.md",
+    "coordination/CONTINUOUS_WORKER_V2.md",
+    "coordination/CLAIM_PROTOCOL_V2.md",
+    "coordination/WORKFLOW.json",
+    "coordination/WORK_QUEUE.jsonl",
+    "coordination/README.md",
+    "scripts/",
+    "schema/",
+    ".github/"
+  ],
+  "worker_bug_report_path": "coordination/bug_reports/",
+  "worker_bug_rule": "report_only_do_not_fix",
+  "notes": [
+    "An Agent is admin only when the authenticated GitHub login is verified as witnessGIT or the repository owner explicitly grants an admin exception in the current interaction.",
+    "If account identity cannot be verified, act as worker.",
+    "Worker Agents may modify business-task outputs that belong to a valid claimed task, plus their own coordination claim/completion/readiness records and new immutable bug reports.",
+    "Worker Agents must not patch scripts, schema, CI, task orchestration, workflow policy, or other control-plane files when they encounter a bug.",
+    "Bugs are fixed by admin Agents operating under the witnessGIT management account."
+  ]
+}
