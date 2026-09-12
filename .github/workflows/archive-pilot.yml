@@ -3,6 +3,7 @@ name: archive-pilot
 on:
   push:
     branches:
+      - main
       - archive/pilot-001
     paths:
       - '.github/workflows/archive-pilot.yml'
@@ -24,7 +25,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          ref: archive/pilot-001
+          ref: ${{ github.ref_name }}
           fetch-depth: 0
 
       - name: Setup Python
@@ -45,6 +46,8 @@ jobs:
         run: python scripts/validate_db.py
 
       - name: Commit generated archive data
+        env:
+          TARGET_BRANCH: ${{ github.ref_name }}
         run: |
           git config user.name "Miles-Guo_public_archive bot"
           git config user.email "actions@users.noreply.github.com"
@@ -55,5 +58,5 @@ jobs:
             echo "No generated changes"
           else
             git commit -m "data: refresh GWINS inventory and archive database"
-            git push origin HEAD:archive/pilot-001
+            git push origin "HEAD:${TARGET_BRANCH}"
           fi
