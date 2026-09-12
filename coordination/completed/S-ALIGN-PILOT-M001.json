@@ -1,0 +1,12 @@
+{
+  "task_id": "S-ALIGN-PILOT-M001",
+  "agent_id": "agent-20260913T000000Z-sol-e001",
+  "completed_at": "2026-09-13T00:24:00Z",
+  "result_commit": "cd8abc552c5901ed8b9512196a9f2415b0d1b4b7",
+  "outputs": [
+    "data/live_segments/alignment/LIVE_20200323_001.jsonl",
+    "coordination/ready/alignment/PILOT-M001.json"
+  ],
+  "validation": "Three source-backed GHOT public ASR/time anchors were preserved for the canonical live ID. GWINS was not promoted beyond list-level corroboration; no curated source, invented end time, score, FPS/frame value or playback verification was asserted.",
+  "notes": "Incremental alignment complete; playback audit is a separate downstream task."
+}
