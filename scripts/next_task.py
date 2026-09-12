@@ -309,6 +309,8 @@ def claim_task(task: dict, agent_id: str) -> Path:
         "stage": task.get("stage"),
         "case_id": task.get("case_id"),
         "live_id": task.get("live_id"),
+        "kind": task.get("kind"),
+        "depends_on_at_claim": list(task.get("depends_on", [])),
         "scope": task.get("scope", ""),
     }
     with path.open("x", encoding="utf-8") as fh:
@@ -426,12 +428,62 @@ def mark_ready_from_legacy(
     )
 
 
+def static_task_record(task_id: str) -> dict | None:
+    for task in load_queue():
+        if task.get("id") == task_id:
+            return task
+    return None
+
+
+def validate_finish_prerequisites(task_id: str) -> dict | None:
+    """Re-check the latest queue contract at finish time.
+
+    A claim that was valid when created does not grandfather the task past dependencies
+    that were added later. This prevents stale claims from bypassing newly introduced
+    safety/quality gates.
+    """
+    task = static_task_record(task_id)
+    if task is None:
+        return None
+
+    done = completed_ids()
+    missing = [dep for dep in task.get("depends_on", []) if dep not in done]
+    if missing:
+        raise SystemExit(
+            f"Cannot finish {task_id}: latest queue prerequisites are incomplete: "
+            + ", ".join(missing)
+            + ". Refresh main and re-evaluate the task. Existing claims do not bypass "
+              "newer finish-time dependencies."
+        )
+
+    if task_id == "P9-AUDIT-60":
+        sentinel_path = COMPLETED / "P9-PLAYBACK-GATE.json"
+        if not sentinel_path.exists():
+            raise SystemExit(
+                "Cannot finish P9-AUDIT-60: P9-PLAYBACK-GATE is not sealed."
+            )
+        try:
+            sentinel = json.loads(sentinel_path.read_text(encoding="utf-8"))
+        except (OSError, json.JSONDecodeError) as exc:
+            raise SystemExit(f"Cannot finish P9-AUDIT-60: invalid playback gate sentinel: {exc}")
+        validation = sentinel.get("validation") or {}
+        if validation.get("pilot60_pass") is not True:
+            raise SystemExit(
+                "Cannot finish P9-AUDIT-60: playback gate sentinel does not prove "
+                "pilot60_pass=true."
+            )
+        return sentinel
+
+    return None
+
+
 def finish_task(
     task_id: str,
     agent_id: str,
     outputs: list[str],
     validation: str,
     live_id: str | None,
+    full_archive_decision: str | None,
 ) -> tuple[Path, Path | None]:
     claim_path = CLAIMS / f"{task_id}.json"
     if not claim_path.exists():
@@ -440,6 +492,19 @@ def finish_task(
     if claim.get("agent_id") != agent_id:
         raise SystemExit(
             f"Cannot finish {task_id}: claim belongs to {claim.get('agent_id')!r}."
+        )
+
+    gate_sentinel = validate_finish_prerequisites(task_id)
+
+    if task_id == "P10-PILOT-DECISION":
+        if full_archive_decision not in {"YES", "NO"}:
+            raise SystemExit(
+                "Finishing P10-PILOT-DECISION requires "
+                "--full-archive-decision YES|NO."
+            )
+    elif full_archive_decision is not None:
+        raise SystemExit(
+            "--full-archive-decision is valid only when finishing P10-PILOT-DECISION."
         )
 
     COMPLETED.mkdir(parents=True, exist_ok=True)
@@ -454,11 +519,23 @@ def finish_task(
         "workflow_mode": claim.get("workflow_mode", "legacy-grandfathered"),
         "claim_protocol": claim.get("claim_protocol", "legacy"),
         "continue_after_finish": claim.get("workflow_mode") == WORKFLOW_MODE,
+        "finish_prerequisites_revalidated": True,
         "notes": (
-            "Task completed. Under continuous-worker-v2, refresh repository state and "
-            "claim the next eligible task unless a documented stop condition applies."
+            "Task completed only after re-checking the latest repository dependency "
+            "contract. Under continuous-worker-v2, refresh repository state and claim "
+            "the next eligible task unless a documented stop condition applies."
         ),
     }
+
+    if task_id == "P9-AUDIT-60":
+        payload["gate_outcome"] = "pass"
+        payload["playback_gate_task"] = "P9-PLAYBACK-GATE"
+        payload["playback_gate_validation"] = (gate_sentinel or {}).get("validation")
+
+    if task_id == "P10-PILOT-DECISION":
+        payload["full_archive_decision"] = full_archive_decision
+        payload["full_archive_authorized"] = full_archive_decision == "YES"
+
     with completed_path.open("x", encoding="utf-8") as fh:
         json.dump(payload, fh, ensure_ascii=False, indent=2)
         fh.write("\n")
@@ -548,6 +625,14 @@ def main() -> None:
     parser.add_argument("--validation", help="What was actually validated.")
     parser.add_argument("--live-id", help="Canonical live ID, required for collection readiness.")
     parser.add_argument(
+        "--full-archive-decision",
+        choices=["YES", "NO"],
+        help=(
+            "Required when finishing P10-PILOT-DECISION. Records the authoritative "
+            "machine-readable FULL_ARCHIVE decision."
+        ),
+    )
+    parser.add_argument(
         "--mark-ready",
         choices=["collection", "alignment", "audit"],
         help="Publish per-case readiness from a grandfathered legacy collector.",
@@ -606,6 +691,7 @@ def main() -> None:
             outputs=args.outputs,
             validation=args.validation,
             live_id=args.live_id,
+            full_archive_decision=args.full_archive_decision,
         )
         print(f"Created completion record: {completed_path.relative_to(ROOT)}")
         if marker_path:
@@ -673,15 +759,16 @@ def main() -> None:
         "If it now exists, classify CLAIM_RACE_LOST, refresh main, and claim another task."
     )
     print(
-        "For GitHub API create_file: HTTP 422 is not automatically a write outage. "
-        "Fetch coordination/claims/<TASK_ID>.json first; if it exists, another Agent won. "
+        "For GitHub API create_file: HTTP 422/409 are not automatically write outages. "
+        "Fetch coordination/claims/<TASK_ID>.json first and classify against fresh main. "
         "Only call it GITHUB_WRITE_ERROR after the exact path remains absent across fresh, "
         "bounded retries as documented in coordination/CLAIM_PROTOCOL_V2.md."
     )
     print(
         "After the claim is visible on main: execute the task, validate real outputs, "
-        "commit/push outputs, then run --finish. After finishing, refresh and claim the "
-        "next task. Stop only for a documented continuous-worker-v2 stop condition."
+        "commit/push outputs, then run --finish. Finish revalidates the latest queue "
+        "dependencies, so an older claim cannot bypass a newer gate. After finishing, "
+        "refresh and claim the next task."
     )
 
 
