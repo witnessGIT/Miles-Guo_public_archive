@@ -18,8 +18,8 @@ on:
       - 'coordination/ready/collection/**'
       - 'coordination/ready/alignment/**'
       - 'coordination/completed/P9-PLAYBACK-GATE.json'
-      - 'coordination/completed/P9-AUDIT-60.json'
-      - 'coordination/completed/P10-PILOT-DECISION.json'
+      - 'coordination/completed/P9-AUDIT-60-R2.json'
+      - 'coordination/completed/P10-PILOT-DECISION-R2.json'
       - 'coordination/WORK_QUEUE.jsonl'
       - 'coordination/WORKFLOW.json'
       - 'START_HERE.md'
@@ -41,8 +41,8 @@ on:
       - 'coordination/ready/collection/**'
       - 'coordination/ready/alignment/**'
       - 'coordination/completed/P9-PLAYBACK-GATE.json'
-      - 'coordination/completed/P9-AUDIT-60.json'
-      - 'coordination/completed/P10-PILOT-DECISION.json'
+      - 'coordination/completed/P9-AUDIT-60-R2.json'
+      - 'coordination/completed/P10-PILOT-DECISION-R2.json'
       - 'coordination/WORK_QUEUE.jsonl'
       - 'coordination/WORKFLOW.json'
       - 'START_HERE.md'
@@ -94,7 +94,7 @@ jobs:
           if missing:
               raise SystemExit(f'missing audit gate keys: {missing}')
           if data['gate'] != 'P9-AUDIT-60':
-              raise SystemExit('unexpected gate id')
+              raise SystemExit('unexpected logical audit gate id')
           if data['canonical_crosscheck'] is not True:
               raise SystemExit('canonical crosscheck must be enabled')
           print(json.dumps(data, ensure_ascii=False, indent=2))
@@ -118,7 +118,11 @@ jobs:
               raise SystemExit('default project status role must be worker')
           if admin.get('role') != 'admin':
               raise SystemExit('--role admin was not honored')
-          print('project status role/task-type contract OK')
+          if worker.get('gates', {}).get('current_P9_task_id') != 'P9-AUDIT-60-R2':
+              raise SystemExit('status classifier is not using current P9 R2 identity')
+          if worker.get('gates', {}).get('current_P10_task_id') != 'P10-PILOT-DECISION-R2':
+              raise SystemExit('status classifier is not using current P10 R2 identity')
+          print('project status role/task-type/R2 contract OK')
           PY
 
       - name: Regression test gate-pass must outrank leftover playback work
@@ -198,27 +202,86 @@ jobs:
           print('admin-role regression OK')
           PY
 
-      - name: Regression test stale claims cannot bypass newer finish dependencies
+      - name: Regression test superseded legacy gates are never eligible
+        run: |
+          PYTHONPATH=scripts python - <<'PY'
+          import next_task as nt
+
+          done = nt.completed_ids()
+          tasks = nt.static_tasks(done)
+          ids = {row['id'] for row in tasks}
+          forbidden = {'P9-AUDIT-60', 'P10-PILOT-DECISION'} & ids
+          if forbidden:
+              raise SystemExit(f'superseded legacy tasks became eligible: {sorted(forbidden)}')
+          print('superseded gate suppression OK')
+          PY
+
+      - name: Regression test stale claims cannot bypass R2 finish dependencies
         run: |
           PYTHONPATH=scripts python - <<'PY'
           import next_task as nt
 
           nt.load_queue = lambda: [{
-              'id': 'P9-AUDIT-60',
+              'id': 'P9-AUDIT-60-R2',
+              'kind': 'qa_gate',
               'depends_on': ['P9-PLAYBACK-GATE'],
           }]
           nt.completed_ids = lambda: set()
           try:
-              nt.validate_finish_prerequisites('P9-AUDIT-60')
+              nt.validate_finish_prerequisites('P9-AUDIT-60-R2')
           except SystemExit as exc:
               if 'latest queue prerequisites are incomplete' not in str(exc):
                   raise
           else:
-              raise SystemExit('finish guard failed to block stale P9 claim')
-          print('finish-time dependency regression OK')
+              raise SystemExit('finish guard failed to block stale R2 P9 claim')
+          print('R2 finish-time dependency regression OK')
           PY
 
-      - name: Assert authoritative P9 and P10 completion integrity
+      - name: Regression test current P10 requires explicit decision
+        run: |
+          PYTHONPATH=scripts python - <<'PY'
+          import next_task as nt
+          from pathlib import Path
+          import tempfile
+          import json
+
+          with tempfile.TemporaryDirectory() as td:
+              root = Path(td)
+              claims = root / 'claims'
+              completed = root / 'completed'
+              claims.mkdir()
+              completed.mkdir()
+              nt.CLAIMS = claims
+              nt.COMPLETED = completed
+              nt.load_queue = lambda: [{
+                  'id': nt.CURRENT_P10,
+                  'kind': 'report',
+                  'depends_on': [nt.CURRENT_P9],
+              }]
+              nt.completed_ids = lambda: {nt.CURRENT_P9}
+              (claims / f'{nt.CURRENT_P10}.json').write_text(json.dumps({
+                  'task_id': nt.CURRENT_P10,
+                  'agent_id': 'agent-test',
+                  'workflow_mode': nt.WORKFLOW_MODE,
+              }), encoding='utf-8')
+              try:
+                  nt.finish_task(
+                      nt.CURRENT_P10,
+                      'agent-test',
+                      [],
+                      'test',
+                      None,
+                      None,
+                  )
+              except SystemExit as exc:
+                  if '--full-archive-decision YES|NO' not in str(exc):
+                      raise
+              else:
+                  raise SystemExit('current P10 accepted completion without YES/NO decision')
+          print('R2 P10 decision-field regression OK')
+          PY
+
+      - name: Assert authoritative R2 P9 and P10 completion integrity
         run: |
           python - <<'PY'
           import json
@@ -226,38 +289,43 @@ jobs:
 
           completed = Path('coordination/completed')
           sentinel = completed / 'P9-PLAYBACK-GATE.json'
-          p9 = completed / 'P9-AUDIT-60.json'
-          p10 = completed / 'P10-PILOT-DECISION.json'
+          p9 = completed / 'P9-AUDIT-60-R2.json'
+          p10 = completed / 'P10-PILOT-DECISION-R2.json'
 
           if p9.exists():
               if not sentinel.exists():
-                  raise SystemExit('authoritative P9 completion exists without P9-PLAYBACK-GATE')
+                  raise SystemExit('authoritative R2 P9 exists without P9-PLAYBACK-GATE')
               s = json.loads(sentinel.read_text(encoding='utf-8'))
               if (s.get('validation') or {}).get('pilot60_pass') is not True:
                   raise SystemExit('P9-PLAYBACK-GATE does not prove pilot60_pass=true')
               row = json.loads(p9.read_text(encoding='utf-8'))
               if row.get('finish_prerequisites_revalidated') is not True:
-                  raise SystemExit('P9 completion lacks finish-time prerequisite revalidation')
+                  raise SystemExit('R2 P9 lacks finish-time prerequisite revalidation')
 
           if p10.exists():
               if not p9.exists():
-                  raise SystemExit('authoritative P10 completion exists without authoritative P9')
+                  raise SystemExit('authoritative R2 P10 exists without authoritative R2 P9')
               row = json.loads(p10.read_text(encoding='utf-8'))
               if row.get('full_archive_decision') not in {'YES', 'NO'}:
-                  raise SystemExit('P10 completion lacks full_archive_decision=YES|NO')
+                  raise SystemExit('R2 P10 lacks full_archive_decision=YES|NO')
               if row.get('finish_prerequisites_revalidated') is not True:
-                  raise SystemExit('P10 completion lacks finish-time prerequisite revalidation')
+                  raise SystemExit('R2 P10 lacks finish-time prerequisite revalidation')
 
-          print('authoritative P9/P10 integrity OK')
+          print('authoritative R2 P9/P10 integrity OK')
           PY
 
-      - name: Assert P9 cannot be claimed before playback gate
+      - name: Assert current P9 cannot be claimed before playback gate
         shell: bash
         run: |
           python scripts/next_task.py --list > /tmp/eligible_tasks.txt
           cat /tmp/eligible_tasks.txt
+          if grep -q '^P9-AUDIT-60 ' /tmp/eligible_tasks.txt || \
+             grep -q '^P10-PILOT-DECISION ' /tmp/eligible_tasks.txt; then
+            echo 'Superseded legacy P9/P10 identity appeared in eligible task list.'
+            exit 1
+          fi
           if [[ ! -f coordination/completed/P9-PLAYBACK-GATE.json ]] && \
-             grep -q '^P9-AUDIT-60 ' /tmp/eligible_tasks.txt; then
-            echo 'P9-AUDIT-60 became eligible before P9-PLAYBACK-GATE was sealed.'
+             grep -q '^P9-AUDIT-60-R2 ' /tmp/eligible_tasks.txt; then
+            echo 'P9-AUDIT-60-R2 became eligible before P9-PLAYBACK-GATE was sealed.'
             exit 1
           fi
