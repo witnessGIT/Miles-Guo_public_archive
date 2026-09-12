@@ -1,42 +1,85 @@
 # Miles-Guo_public_archive
 
-## Mandatory Agent operating mode
+## Step 0 — resolve permissions before doing anything
 
-This repository uses `continuous-worker-v2` and `claim-protocol-v2` for **new task claims**.
+This repository uses three machine-readable policies:
 
-Any Agent entering the repository must be able to discover work, claim it, execute it, validate it, finish it, and immediately continue to the next eligible task without waiting for an unrelated batch.
+```text
+continuous-worker-v2
+claim-protocol-v2
+agent-permissions-v1
+```
 
-Read first:
+Read first, in this order:
 
-1. `AGENTS.md`
-2. `coordination/CONTINUOUS_WORKER_V2.md`
-3. `coordination/WORKFLOW.json`
-4. `coordination/CLAIM_PROTOCOL_V2.md`
-5. `coordination/README.md`
-6. `coordination/WORK_QUEUE.jsonl`
-7. `docs/CURRENT_TASK.md`
-8. `docs/PROJECT_REQUIREMENTS.md`
-9. `docs/NAMING_AND_WORKFLOW.md`
-10. relevant current `data/`, `docs/`, `reports/`, `schema/`, `tests/`, `coordination/claims/`, `coordination/completed/`, and `coordination/ready/`
+1. `coordination/AGENT_PERMISSIONS.json`
+2. `coordination/AGENT_PERMISSIONS.md`
+3. `AGENTS.md`
+4. `coordination/WORKFLOW.json`
+5. `coordination/CONTINUOUS_WORKER_V2.md`
+6. `coordination/CLAIM_PROTOCOL_V2.md`
+7. `coordination/README.md`
+8. `coordination/WORK_QUEUE.jsonl`
+9. `docs/CURRENT_TASK.md`
+10. `docs/PROJECT_REQUIREMENTS.md`
+11. `docs/NAMING_AND_WORKFLOW.md`
+12. relevant current `data/`, `docs/`, `reports/`, `schema/`, `tests/`, `coordination/claims/`, `coordination/completed/`, `coordination/ready/`, and `coordination/bug_reports/`
 
 Do not rely on chat history, memory, or another Agent's summary instead of Git state.
 
-## Existing claims are grandfathered
+### Admin vs worker
 
-Do **not** interrupt, rename, steal, duplicate, or repartition a valid task that was already claimed before the current workflow became active.
-
-A claim without:
-
-```json
-"workflow_mode": "continuous-worker-v2"
-```
-
-is treated as a grandfathered legacy claim. Existing owners finish their current claim normally; their next claim uses the new mode.
-
-## Default continuous loop
+Administrative GitHub login:
 
 ```text
-read repository rules
+witnessGIT
+```
+
+An Agent may act as `admin` only when its authenticated GitHub login is verified as exactly `witnessGIT`, or when the repository owner explicitly grants an admin exception in the current interaction.
+
+Every other account is a `worker`. If identity cannot be verified, default to `worker`.
+
+A worker may execute valid claimed business tasks and write the task's own durable business outputs plus its own claim/completion/readiness records.
+
+A worker MUST NOT fix repository bugs or modify the protected control plane, including:
+
+```text
+AGENTS.md
+START_HERE.md
+coordination/AGENT_PERMISSIONS.json
+coordination/AGENT_PERMISSIONS.md
+coordination/CONTINUOUS_WORKER_V2.md
+coordination/CLAIM_PROTOCOL_V2.md
+coordination/WORKFLOW.json
+coordination/WORK_QUEUE.jsonl
+coordination/README.md
+scripts/
+schema/
+.github/
+```
+
+When a worker discovers a bug, schema mismatch, CI failure, workflow defect, claim-system defect, or control-plane inconsistency, it must create a NEW immutable bug report under:
+
+```text
+coordination/bug_reports/
+```
+
+and must not repair the protected files itself. The worker should preserve evidence, avoid unsafe writes for the affected task, and continue another independent eligible business task when possible.
+
+Only an admin Agent may investigate/modify/resolve those bug reports and repair project machinery.
+
+## Mandatory continuous operating mode
+
+Any Agent entering the repository must discover work, claim it, execute it, validate it, finish it, and immediately continue to the next eligible task without waiting for an unrelated batch.
+
+Existing valid claims are grandfathered: do not interrupt, rename, steal, duplicate, or repartition a task merely because workflow rules changed. Existing owners finish current work under the valid claim; subsequent claims follow current policy.
+
+Default loop:
+
+```text
+resolve role
+↓
+read repository state
 ↓
 python scripts/next_task.py --list
 ↓
@@ -44,7 +87,7 @@ claim one eligible task
 ↓
 push the claim immediately
 ↓
-execute real work
+execute real work allowed by the Agent role
 ↓
 validate and commit outputs
 ↓
@@ -59,37 +102,25 @@ claim the next eligible task
 repeat
 ```
 
-Finishing one task, one livestream, one micro-batch, or losing one claim race is **not** a stop condition.
+Finishing one task, one livestream, one micro-batch, or losing one claim race is not a stop condition.
 
-## When an Agent may stop
+A worker encountering a bug reports it instead of fixing it; reporting one bug is also not automatically a stop condition when other independent business tasks remain.
 
-A v2 Agent stops only for a documented reason:
+## Stop conditions
+
+A continuous worker stops only for a documented reason:
 
 - `PROJECT_COMPLETE` — no authorized work remains in the current phase;
 - `USER_RECALL` — the user explicitly pauses/recalls/redirects the Agent;
 - `NO_ELIGIBLE_WORK` — every unfinished task is currently claimed or genuinely blocked;
-- `HUMAN_DECISION_REQUIRED` — continuing would require an unsupported guess or destructive decision;
-- `SAFETY_OR_ACCESS_BLOCK` — continuing would require bypassing access controls or prohibited actions;
-- `GITHUB_WRITE_ERROR` — only after the bounded verification in `coordination/CLAIM_PROTOCOL_V2.md` proves the failure is not a normal claim race;
+- `HUMAN_DECISION_REQUIRED` — continuing requires an unsupported guess or destructive decision;
+- `SAFETY_OR_ACCESS_BLOCK` — continuing requires bypassing access controls or prohibited actions;
+- `GITHUB_WRITE_ERROR` — only after bounded verification proves the failure is not a normal claim race;
 - `HOST_STOP` — the execution platform suspends/terminates the Agent or runtime/tool budget ends.
 
-`CLAIM_RACE_LOST` is explicitly **not** a stop condition.
+`CLAIM_RACE_LOST` is explicitly not a stop condition.
 
-## Important limitation: Git cannot wake a suspended Agent
-
-The repository can enforce durable coordination and continuous behavior **while the Agent session is alive**. It cannot force ChatGPT/Work/Codex or another host platform to wake a session after the host has suspended or terminated it.
-
-For a host/runtime that supports a long-running process:
-
-```bash
-python scripts/next_task.py \
-  --watch \
-  --claim \
-  --agent-id agent-<UTC>-<random> \
-  --poll-seconds 60
-```
-
-## Immediate task discovery
+## Task discovery and claiming
 
 Run:
 
@@ -97,7 +128,7 @@ Run:
 python scripts/next_task.py --list
 ```
 
-The script combines global/legacy tasks, dynamic per-Pilot-case tasks, `claims/`, `completed/`, and `ready/`.
+The task runner combines global/legacy tasks, dynamic per-Pilot-case tasks, `claims/`, `completed/`, and `ready/`.
 
 Streaming IDs use:
 
@@ -109,43 +140,23 @@ S-AUDIT-PILOT-E001
 
 Each case progresses independently.
 
-## Claiming work
-
-Choose a unique Agent ID, for example:
-
-```text
-agent-20260913T001500Z-a17f
-```
-
-Claim an eligible task:
+Choose a unique Agent ID and claim an eligible task:
 
 ```bash
 python scripts/next_task.py \
   --claim \
-  --agent-id agent-20260913T001500Z-a17f
+  --agent-id agent-<UTC>-<random>
 ```
 
-The task runner preserves priority bands but disperses Agents across same-priority candidates using a stable hash of `agent_id`. If one local candidate is already claimed, it automatically tries another candidate instead of stopping after the first collision.
+The runner preserves priority bands while dispersing Agents across same-priority candidates using `agent_id`. A new claim records the current workflow and claim protocol.
 
-A new claim records:
-
-```json
-{
-  "workflow_mode": "continuous-worker-v2",
-  "claim_protocol": "claim-protocol-v2",
-  "continue_after_finish": true
-}
-```
-
-The claim is globally effective only when visible on `main`. Commit/push it immediately before doing expensive work.
+A claim is globally effective only when visible on `main`. Commit/push it before doing expensive work.
 
 ## Mandatory GitHub API 422 classification
 
 Agents using GitHub `create_file` directly MUST follow `coordination/CLAIM_PROTOCOL_V2.md`.
 
-A `create_file` HTTP `422` is **not automatically a GitHub write outage**.
-
-Required sequence:
+A `create_file` HTTP `422` is not automatically a GitHub write outage.
 
 ```text
 create coordination/claims/<TASK_ID>.json
@@ -162,35 +173,23 @@ create coordination/claims/<TASK_ID>.json
                                       --> only then GITHUB_WRITE_ERROR
 ```
 
-If the exact claim path exists after the failure, another Agent won the atomic race. Do not overwrite it, do not touch that task's business data, and do not stop. Refresh and claim another eligible task.
-
-Only after the exact path remains absent across fresh bounded retries may an Agent report a real GitHub write failure.
-
-A message equivalent to "422, therefore the execution chain must stop at the claim boundary" violates this repository protocol.
+If another Agent won the claim race, do not overwrite its claim and do not touch that task's business data. Refresh and claim another task.
 
 ## Finish and immediately continue
 
-First commit/push the real outputs. Then create completion/readiness metadata:
+First commit/push the real outputs. Then finish the task with real validation evidence:
 
 ```bash
 python scripts/next_task.py \
-  --finish S-ALIGN-PILOT-E001 \
-  --agent-id agent-20260913T001500Z-a17f \
-  --outputs data/live_segments/2017/LIVE_20170523_001.jsonl \
-  --validation "verified provenance, monotonic alignment, no invented end times"
+  --finish <TASK_ID> \
+  --agent-id <same-agent-id> \
+  --outputs <paths...> \
+  --validation "what was actually verified"
 ```
 
-For streaming collection tasks, also provide the canonical live ID.
+For streaming collection tasks, also provide the canonical live ID when supported by evidence.
 
-After pushing completion/readiness files, immediately refresh and claim the next task:
-
-```bash
-python scripts/next_task.py --claim --agent-id <same-agent-id>
-```
-
-## Existing legacy batch Agents: early downstream unlock
-
-Grandfathered legacy batch owners may unlock downstream work case-by-case while continuing the batch by using `--mark-ready collection`. Existing valid claims must not be interrupted merely to migrate workflow versions.
+After pushing completion/readiness metadata, refresh and claim the next task.
 
 ## Streaming pipeline
 
@@ -207,81 +206,60 @@ alignment readiness
         ↓
 AUDIT
         ↓
-audit readiness
+audit evidence
 ```
 
-Readiness files are independent per case under `coordination/ready/`. Do not force one case to wait for unrelated cases.
-
-## Stage requirements
+Different cases should not wait for unrelated cases.
 
 ### COLLECT + IDENTITY
 
-Preserve real public evidence only. Never invent source absence, IDs, timestamps, duration, FPS, or merge decisions. Prefer per-live/per-case files so Agents do not append to the same large JSONL.
+Preserve real public evidence only. Never invent source absence, IDs, timestamps, duration, FPS, or merge decisions. One livestream uses one canonical internal `live_id` and may have multiple source records.
 
 ### ALIGN
 
-Start as soon as that case is collection-ready. Priority:
+Priority:
 
 1. explicit curated/source timestamp;
 2. GHOT public ASR/time axis + monotonic fuzzy alignment;
 3. local ASR only when public timing is inadequate;
 4. manual playback review for unresolved/high-value segments.
 
-Do not invent `end_sec`, FPS, frame numbers, or playback verification.
+Preserve curated text and ASR separately. Do not invent `end_sec`, FPS, frame numbers, playback verification, or timing accuracy.
 
 ### AUDIT
 
-Audit begins incrementally after each case is aligned. Do not wait for all 27 cases. The Pilot still requires at least 60 real segment audits in aggregate.
+Audit begins incrementally after alignment. The Pilot still requires at least 60 **real playback-checked** segments in aggregate. An audit attempt with unavailable playback may be recorded as durable evidence, but it contributes zero qualifying checks and must never be counted as a timing pass.
 
 ## Database behavior
 
 `data/` JSON/JSONL is the Git source of truth.
 
-`database/Miles-Guo_public_archive.sqlite3` is a rebuildable artifact. Do not serialize collection/alignment work behind SQLite.
-
-When safe after meaningful data changes:
+`database/Miles-Guo_public_archive.sqlite3` is a rebuildable artifact. When safe after meaningful data changes:
 
 ```bash
 python scripts/build_db.py
 python scripts/validate_db.py
 ```
 
-## Atomic claim and stale takeover
+Workers may run these commands for validation, but if they reveal a bug or contract mismatch the worker reports it; workers do not patch build scripts/schema/CI to make the failure disappear.
 
-No Agent may start a new queued work unit before a successful claim exists.
+## Scope and core archive discipline
 
-If the desired claim is lost to another Agent:
-
-1. do not overwrite it;
-2. classify `CLAIM_RACE_LOST` after verifying the exact path;
-3. refresh repository state;
-4. choose another eligible task;
-5. keep working rather than waiting.
-
-Stale-claim takeover rules are in `coordination/README.md`. Do not steal an active claim just because its Agent is not visible in the UI.
-
-## Scope and naming
-
-- Only modify `witnessGIT/Miles-Guo_public_archive`.
-- Never modify `witnessGIT/movie_production` or another repository for this task.
+- Only modify `witnessGIT/Miles-Guo_public_archive` for this project.
 - Official project name: `Miles-Guo_public_archive`.
 - Official database path: `database/Miles-Guo_public_archive.sqlite3`.
 - Archive First, Application Second.
-- Core operation must remain usable with zero-cost/local/open tooling; paid APIs/services cannot be mandatory.
-
-## Core archive discipline
-
-- One livestream has one canonical internal `live_id` and may have many source records.
 - Preserve provenance and conflicts; never silently overwrite them.
-- Preserve curated text and ASR separately.
 - Seconds are the primary media locator; frames are auxiliary only.
 - Every datum must remain traceable to source site, URL, retrieval/verification state, and third-party ID where available.
-- Publicly accessible content only; low request rates and caching; no bypass of login/CAPTCHA/paywall/access control/DRM.
+- Publicly accessible content only; no bypass of login/CAPTCHA/paywall/access control/DRM.
 - Never commit full videos, large audio, model weights, cache, or FFmpeg intermediates.
 - Do not begin `FULL_ARCHIVE` merely because collection works. `P10-PILOT-DECISION` remains the final Pilot decision gate.
 
 ## Definition of useful progress
 
-A useful Agent run leaves durable source-backed output, such as one completed source collection case, one alignment result, one playback audit set, one conflict record, one required schema/build fix, or one readiness/completion record that unlocks downstream work.
+For a worker, useful progress is source-backed business output: collection, alignment, audit evidence, conflict evidence, readiness/completion metadata, or a properly filed bug report when a bug blocks a task.
+
+For an admin, useful progress additionally includes reviewing/resolving bug reports and repairing repository machinery with validation.
 
 Pure planning is not completion when eligible executable work exists.
