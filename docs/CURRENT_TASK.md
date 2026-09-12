@@ -7,9 +7,13 @@ Full archive collection: **NOT STARTED / NOT AUTHORIZED UNTIL PILOT PASSES**
 
 ## Purpose of this file
 
-This file tells every Agent entering the repository what to do **now**.
+This file explains what the current phase is trying to accomplish and what each work unit means.
 
-If the user gives a newer explicit instruction, follow that instruction first and update this file afterward. Otherwise, do not wait for a new prompt: take the next unfinished safe task below and begin working.
+**Executable task ownership is controlled by `coordination/WORK_QUEUE.jsonl` + `coordination/claims/` + `coordination/completed/`.**
+
+Do not start a work unit merely because this document says `OPEN`. First follow the atomic claim procedure in `coordination/README.md`.
+
+If the user gives a newer explicit instruction, follow it first and update durable repository rules afterward. Otherwise, do not wait for a new prompt: claim the next eligible task and begin.
 
 ## Current objective
 
@@ -35,191 +39,194 @@ The Pilot is not a demo with invented data. Use real public records only.
 
 ## Start here on every Agent run
 
-1. Read `AGENTS.md`, `README.md`, `docs/PROJECT_REQUIREMENTS.md`, and `docs/NAMING_AND_WORKFLOW.md`.
-2. Inspect current repository contents and recent commits.
-3. Search existing data/docs before creating a duplicate record.
-4. Pick one unfinished work unit below.
-5. Produce durable output in the repository.
-6. Validate it.
-7. Commit it with a clear stage-based commit message.
-8. Update this file or the appropriate Pilot report when the work unit changes project status.
+1. Read `AGENTS.md`.
+2. Read `coordination/README.md` and `coordination/WORK_QUEUE.jsonl`.
+3. Read `coordination/completed/` and `coordination/claims/`.
+4. Read `README.md`, `docs/PROJECT_REQUIREMENTS.md`, `docs/NAMING_AND_WORKFLOW.md`, and relevant current files.
+5. Inspect recent commits and current repository contents.
+6. Select the highest-priority task whose `depends_on` items are all completed and which has neither a completed record nor an active claim.
+7. Atomically claim it by creating `coordination/claims/<TASK_ID>.json`.
+8. Only after claim succeeds, execute the task.
+9. Produce and validate durable repository output.
+10. Commit results.
+11. Create `coordination/completed/<TASK_ID>.json` pointing to the result commit and outputs.
+12. Continue with the next eligible task when safe.
 
-## Work queue
+## Work queue details
 
-### P0 — Repository scaffold required for real data work
+The task IDs below correspond to the machine-readable queue in `coordination/WORK_QUEUE.jsonl`.
 
-Status: **OPEN until verified complete**
+### P0-SCHEMA — Core schema
 
-Required artifacts:
+Create `schema/schema.sql` for the Pilot archive while preserving future extensibility to non-livestream archive items.
 
-- `schema/schema.sql`
-- `schema/migrations/`
-- `data/live_videos/`
-- `data/live_segments/`
-- `data/sources/`
-- `database/`
-- `scripts/build_db.py`
-- `scripts/validate_db.py`
-- `reports/pilot_report.md`
-- `.gitignore` covering cache/media/database temporary files as appropriate
+Must support, at minimum, the current requirements around livestreams, multiple sources, segments, provenance, curated/ASR text separation, timestamps, quality/review state, and FTS5 build needs.
 
-Rules:
+### P0-SCAFFOLD — Repository scaffold
 
-- Do not create empty directories just for appearance; add `.gitkeep` only when needed by workflow.
-- Schema must follow project requirements and remain future-extensible.
-- SQLite must be rebuildable from Git-tracked structured source data.
+Create only the real scaffolding needed for data work, including required paths/files such as `.gitignore`, report/template locations and source-data layout.
 
-### P1 — GWINS site analysis
+Do not create fake data or mark a planned directory as completed merely because its name exists in documentation.
 
-Status: **OPEN unless `docs/SITE_ANALYSIS.md` proves otherwise**
+### P1-GWINS-STRUCTURE — GWINS structural analysis
 
-Analyze real pages and document:
+Analyze real public pages and document:
 
 - list/archive entry points;
-- detail page URL pattern;
+- detail-page URL patterns;
 - pagination/navigation;
 - stable page/source IDs;
-- livestream date/title fields;
-- curated transcript structure;
-- transcript timestamps;
-- people/organization/country/topic metadata;
-- GETTR/Rumble/YouTube or other media links;
+- date/title fields;
+- media/source links;
 - duplicate-content behavior;
 - failure/edge cases.
 
-Write findings to `docs/SITE_ANALYSIS.md` with real example URLs and retrieval date.
+Write verified findings into `docs/SITE_ANALYSIS.md`, including real example URLs and retrieval date.
 
-### P2 — GHOT site analysis
+### P1-GWINS-TRANSCRIPT — GWINS transcript analysis
 
-Status: **OPEN unless `docs/SITE_ANALYSIS.md` proves otherwise**
+Depends on `P1-GWINS-STRUCTURE`.
 
-Analyze real pages and document:
+Analyze:
 
-- video archive/list structure;
-- detail page URL/ID rules;
+- curated transcript structure;
+- transcript timestamps;
+- people/organization/country/topic metadata;
+- transcript edge cases;
+- how curated text should map into archive fields without replacing source wording.
+
+### P2-GHOT-ARCHIVE — GHOT structural analysis
+
+Analyze real public pages and document:
+
+- archive/list/detail structure;
+- stable IDs;
 - dates/titles/duration;
+- original source links/platform IDs;
+- duplicate-content behavior;
+- static HTML vs dynamic/API-backed data where observable.
+
+### P2-GHOT-TIMELINE — GHOT time-axis analysis
+
+Depends on `P2-GHOT-ARCHIVE`.
+
+Analyze:
+
 - transcript/ASR structure;
 - timestamp granularity;
-- source video links/IDs;
-- selected clip data if present;
-- static HTML vs dynamic/API-backed data;
+- selected-clip ranges if present;
 - ASR quality limitations;
-- duplicate-content behavior.
+- whether GHOT can reliably provide a time axis for curated text from another source.
 
-Special goal: determine whether GHOT can serve as a reliable time-axis source for curated transcripts from other sites.
+### P3-GETTRSEARCH-STRUCTURE — GettrSearch analysis
 
-### P3 — GettrSearch site analysis
-
-Status: **OPEN unless `docs/SITE_ANALYSIS.md` proves otherwise**
-
-Analyze real pages and document:
+Analyze:
 
 - search entry points;
 - year filters;
-- long/short video separation;
-- detail/playvideo URL patterns;
-- GETTR IDs or original GETTR links;
-- dates/titles/text availability;
-- whether it is best treated as primary source, secondary source, or discovery/backfill source.
+- long/short separation;
+- detail/playvideo patterns;
+- GETTR IDs/original links where exposed;
+- date/title/text availability;
+- whether it should be primary, secondary or discovery/backfill source.
 
-### P4 — Cross-source identity matching
+### P0-BUILD-DB — Build script
 
-Status: **OPEN**
+Depends on `P0-SCHEMA`.
 
-Build and test a deduplication/matching strategy for records that may represent the same livestream.
+Create `scripts/build_db.py` so `database/Miles-Guo_public_archive.sqlite3` can be rebuilt from Git-tracked source data and schema.
 
-Evidence candidates:
+SQLite is a build product, not the sole source of truth.
+
+### P0-VALIDATE-DB — Validation script
+
+Depends on `P0-SCHEMA` and `P0-BUILD-DB`.
+
+Create `scripts/validate_db.py` to surface schema, FK, FTS and source-data integrity problems. It must report failures rather than hide them.
+
+### P4-IDENTITY-RULES — Cross-source identity matching
+
+Depends on the three structural site-analysis tasks.
+
+Build and test a reproducible strategy for determining whether records from different sources represent the same livestream.
+
+Evidence may include:
 
 - exact platform video ID;
 - date;
 - title similarity;
 - duration similarity;
 - transcript opening/content similarity;
-- shared GETTR/Rumble/YouTube link.
+- shared GETTR/Rumble/YouTube source.
 
-Do not merge two records solely because titles look similar.
+Do not merge solely because titles look similar. Preserve score/reason/conflicts.
 
-Every automatic merge must preserve evidence and a reproducible score/reason.
+### P5-PILOT-SELECTION — Select Pilot sample
 
-### P5 — Pilot sample selection
-
-Status: **OPEN**
+Depends on site transcript/time-axis analysis and identity rules.
 
 Select 20–30 real livestreams across early/middle/late years where possible.
 
-The sample should attempt to include:
+Attempt to cover:
 
-- records present in GWINS + GHOT;
-- GWINS-only case if actually found;
-- GHOT-only case if actually found;
-- GettrSearch discovery/backfill case if actually found;
+- GWINS + GHOT overlap;
+- GWINS-only case if actually demonstrated by documented search scope;
+- GHOT-only case if actually demonstrated;
+- GettrSearch discovery/backfill case;
 - multiple media-source case;
 - transcript with timestamps;
 - transcript without precise timestamps.
 
-Important: "only in one source" must mean the other relevant sources were actually searched within a documented scope. Do not turn "not yet found" into "does not exist".
+`not yet found` is not the same as `does not exist`.
 
-### P6 — First real structured records
+### P6-PILOT-EARLY-B001 / MIDDLE-B001 / LATE-B001 — Data collection batches
 
-Status: **OPEN**
+These are intentionally non-overlapping collection tasks for multiple Agents.
 
-For selected Pilot items, create Git-friendly source records.
-
-Target patterns:
-
-- one JSON record per livestream under `data/live_videos/<year>/`;
-- source records under `data/sources/` or the schema-approved equivalent;
-- segment JSONL under `data/live_segments/<year>/` or the schema-approved equivalent.
+For each assigned batch create Git-friendly source records. Prefer independent batch files to a single shared JSONL file.
 
 At minimum preserve:
 
-- internal ID;
+- internal/candidate identity;
 - title/date;
 - source-site provenance;
 - source URL;
-- third-party source ID where available;
-- curated text separately from ASR;
-- start/end seconds when actually known;
-- retrieval/verification status.
+- third-party ID where available;
+- curated text separate from ASR;
+- start/end seconds only when actually known;
+- retrieval/verification state.
 
-Never invent missing timestamps, FPS, frames, or source IDs.
+Do not invent timestamps, FPS, frames, IDs or source availability.
 
-### P7 — Transcript/time-axis alignment
+### P7-ALIGNMENT-B001 — Transcript/time-axis alignment
 
-Status: **OPEN**
+For overlapping Pilot records, test curated GWINS text against public time-axis data.
 
-For overlapping GWINS/GHOT Pilot records, test whether curated GWINS text can be aligned to GHOT timestamps.
-
-Priority order:
+Priority:
 
 1. existing curated timestamps;
-2. GHOT time-axis + fuzzy text alignment;
-3. local ASR only when existing public timing is inadequate;
+2. GHOT time axis + fuzzy text alignment;
+3. local ASR only when public timing is inadequate;
 4. manual review for unresolved high-value segments.
 
-Record `alignment_method`, `alignment_quality`, and whether actual playback verification was performed.
+Record `alignment_method`, `alignment_quality` and whether playback verification was actually performed.
 
-### P8 — Build searchable SQLite
+### P8-SQLITE-PILOT — Build searchable Pilot DB
 
-Status: **OPEN**
-
-Build `database/Miles-Guo_public_archive.sqlite3` from Git-tracked source data.
+Build and validate `database/Miles-Guo_public_archive.sqlite3` from tracked source data.
 
 Requirements:
 
-- SQLite is a build product, not the sole truth source;
-- FTS5 search over applicable transcript/search text;
+- FTS5 over applicable transcript/search fields;
 - foreign-key/integrity checks;
 - rebuild from `data/` + `schema/`;
-- validation script reports failures instead of hiding them.
+- failures remain visible.
 
-### P9 — Pilot audit
-
-Status: **BLOCKED until enough real segments exist**
+### P9-AUDIT-60 — Pilot audit
 
 Randomly audit at least 60 real segments.
 
-For each audited segment verify as applicable:
+For each applicable sample verify:
 
 - correct livestream;
 - correct date;
@@ -231,42 +238,45 @@ For each audited segment verify as applicable:
 
 Target gates:
 
-- livestream false-merge rate: approximately 0;
+- false-merge rate approximately 0;
 - >= 90% of locatable audited segments within 3 seconds;
 - >= 98% within 8 seconds.
 
 Unperformed playback checks are `unverified`, not passes.
 
-### P10 — Pilot decision
+### P10-PILOT-DECISION — Pilot decision
 
-Status: **BLOCKED until P9 is complete**
-
-Update `reports/pilot_report.md` with:
+Update `reports/pilot_report.md` with actual evidence:
 
 - site-analysis findings;
 - coverage;
 - cross-source matches/conflicts;
 - segment counts;
 - curated/ASR coverage;
-- alignment-quality distribution;
-- playback audit results;
+- alignment distribution;
+- playback audit;
 - broken/duplicate sources;
 - database/source-data sizes;
-- unresolved problems;
-- recommendation `FULL_ARCHIVE: YES/NO`.
+- unresolved issues;
+- `FULL_ARCHIVE: YES/NO` recommendation.
 
-Do not begin FULL_ARCHIVE before this decision is supported by evidence.
+Do not begin FULL_ARCHIVE before this gate is supported by evidence.
 
-## Multi-Agent coordination
+## Multi-Agent coordination rules
 
-When multiple agents enter at the same time:
+The authoritative protocol is `coordination/README.md`.
 
-- Prefer different work units or different non-overlapping Pilot samples.
-- Before adding data, search existing source URLs, source IDs, and `live_id` values.
-- Preserve conflicting source claims instead of overwriting them.
-- Keep changes small enough to review in Git.
-- Record completed work durably; do not rely on chat memory.
-- If another agent has already completed a queue item, validate it and move to the next incomplete item instead of redoing it.
+Summary:
+
+- ownership is per task ID;
+- claim via creation of `coordination/claims/<TASK_ID>.json`;
+- never overwrite an existing claim;
+- dependencies are satisfied only by `coordination/completed/<TASK_ID>.json` records;
+- completed work should not be redone unless explicitly assigned as verification/fix work;
+- collection work is split by non-overlapping batch;
+- avoid concurrent edits to one large JSONL file;
+- preserve source conflicts instead of overwriting them;
+- stale claims require documented takeover procedure.
 
 ## Data-source and access rules
 
@@ -274,44 +284,37 @@ When multiple agents enter at the same time:
 - Respect low request rates and caching.
 - Do not bypass login, CAPTCHA, paywalls, access controls, or DRM.
 - Do not commit full video/audio or large temporary files.
-- Temporary downloads belong under ignored cache paths and should be removed when no longer needed.
+- Temporary downloads belong in ignored cache paths and should be removed when no longer needed.
 
 ## Zero-cost rule
 
-The core workflow should remain usable with:
+The core workflow should remain usable with GitHub, Python, SQLite/FTS5, local open-source tooling, public source pages and local temporary cache.
 
-- GitHub;
-- Python;
-- SQLite / FTS5;
-- local open-source tooling;
-- public source pages;
-- local temporary cache.
-
-Do not make paid APIs, commercial vector databases, paid object storage, or paid AI services mandatory for building or reading the archive.
+Do not make paid APIs, commercial vector databases, paid object storage or paid AI services mandatory.
 
 ## Historical-recovery future queue
 
-Do not let this distract from the current livestream Pilot, but preserve schema compatibility for future work on:
+Preserve schema compatibility for future work on:
 
 - deleted/moved livestreams;
 - Twitter/X historical posts;
 - GETTR historical posts;
 - public web archives;
 - mirrors/reposts;
-- historical citations and screenshots.
+- historical citations/screenshots.
 
-Recovered content must preserve provenance and confidence/source level. A repost or screenshot is not an original publication.
+A repost or screenshot is not an original publication. Recovery evidence must retain provenance and confidence/source level.
 
 ## Stop / escalation conditions
 
-Stop the affected work unit and document the issue rather than guessing when:
+Document the issue rather than guessing when:
 
 - source identity cannot be established;
-- dates conflict materially;
+- dates materially conflict;
 - timestamps cannot be verified;
 - two records may be different livestreams;
-- a source requires bypassing access control;
-- a schema change could invalidate already-collected data;
-- another agent's concurrent edits create an unresolved collision.
+- access requires bypassing controls;
+- schema changes could invalidate existing data;
+- concurrent edits create unresolved collisions.
 
-Continue with other safe queue items whenever possible.
+Continue with another safe eligible task whenever possible.
