@@ -14,13 +14,11 @@ coordination/ready/
     PILOT-E001.json
 ```
 
-A marker means that **this individual case**, not an entire era/batch, has completed the named stage well enough for the next stage to start.
+A marker means that this individual case reached the named workflow stage. **For audit markers, marker existence does not mean the Pilot timing gate passed.**
 
 ## Why this exists
 
-The original Pilot queue used large era batches. That caused unrelated livestreams to block downstream work.
-
-Readiness markers remove that bottleneck:
+Readiness markers remove large-batch waiting:
 
 ```text
 one case collected
@@ -32,19 +30,62 @@ Other cases may remain unfinished.
 
 ## Streaming task creation
 
-Preferred path for new `continuous-worker-v2` tasks:
+Preferred path:
 
 ```bash
 python scripts/next_task.py --finish <STREAM_TASK_ID> ...
 ```
 
-The task runner creates the appropriate readiness marker automatically.
+The task runner creates the stage marker. If an audit runner does not yet emit the audit qualification fields below, the task owner must add them to its own marker before treating it as final audit evidence.
+
+## Required common evidence
+
+Every readiness marker must point to durable output and real validation. Typical common fields:
+
+```json
+{
+  "project": "Miles-Guo_public_archive",
+  "workflow_mode": "continuous-worker-v2",
+  "case_id": "PILOT-E001",
+  "live_id": "LIVE_20170523_001",
+  "stage": "alignment",
+  "ready_at": "ISO-8601 timestamp",
+  "task_id": "S-ALIGN-PILOT-E001",
+  "agent_id": "agent-...",
+  "result_commit": "commit sha",
+  "outputs": ["data/..."],
+  "validation": "what was actually checked"
+}
+```
+
+## Mandatory audit qualification fields
+
+Every NEW `stage = audit` marker must also contain:
+
+```json
+{
+  "audit_outcome": "verified|partial|blocked_no_playback|unverified",
+  "qualifying_playback_checks": 0,
+  "counts_toward_pilot_60": false,
+  "timing_accuracy_measured": false
+}
+```
+
+Rules:
+
+- `qualifying_playback_checks` counts only segments whose actual media playback position was independently observed;
+- transcript-anchor agreement alone is not a qualifying playback check;
+- source identity/provenance verification alone is not a qualifying playback check;
+- `counts_toward_pilot_60` may be true only when `qualifying_playback_checks > 0`;
+- `timing_accuracy_measured` may be true only when observed playback position was compared with the stored candidate timestamp;
+- blocked playback may be recorded as useful audit evidence but contributes zero to Pilot-60;
+- P9/P10 must never count marker existence or an `S-AUDIT-*` completed record as a timing pass without the underlying qualifying checks.
+
+Legacy audit markers without these machine-readable fields count as **zero** toward Pilot-60 until reviewed or backed by explicit real playback evidence.
 
 ## Grandfathered legacy batch collectors
 
-Existing legacy Middle/Late batch Agents keep their original claims. They do not need to abandon or repartition those tasks.
-
-As soon as one individual case inside the batch is genuinely complete, the legacy owner can publish a collection marker without ending the batch:
+Existing legacy batch owners keep their valid claims. As soon as one individual collection case is genuinely complete, the owner may publish collection readiness without ending the batch:
 
 ```bash
 python scripts/next_task.py \
@@ -56,40 +97,10 @@ python scripts/next_task.py \
   --validation "source identity and provenance verified"
 ```
 
-That immediately unlocks:
-
-```text
-S-ALIGN-PILOT-M001
-```
-
-for another Agent, while the original Middle batch Agent continues M002/M003/etc.
-
-`--mark-ready` verifies that the supplied `agent-id` owns the corresponding active legacy batch claim. It must not be used by another Agent to bypass task ownership.
-
-## Required evidence
-
-A readiness marker must point to durable output and real validation. It must not be used to bypass missing data or quality checks.
-
-Typical fields:
-
-```json
-{
-  "project": "Miles-Guo_public_archive",
-  "workflow_mode": "continuous-worker-v2",
-  "case_id": "PILOT-E001",
-  "live_id": "LIVE_20170523_001",
-  "stage": "collection",
-  "ready_at": "ISO-8601 timestamp",
-  "task_id": "S-COLLECT-PILOT-E001",
-  "agent_id": "agent-...",
-  "result_commit": "commit sha",
-  "outputs": ["data/..."],
-  "validation": "what was actually checked"
-}
-```
+This unlocks per-case downstream work while the original batch continues.
 
 ## No shared mutable progress file
 
-Do not edit one shared status file for all cases. Keep readiness per case so parallel Agents do not collide.
+Do not maintain one shared status JSONL for all cases. Keep readiness per case so parallel Agents do not collide.
 
-The machine-readable task runner derives next-stage eligibility from these markers plus claims/completed state.
+The task runner derives workflow eligibility from readiness plus claims/completed state. Pilot acceptance uses the stricter quality-gate evidence above.
