@@ -1,0 +1,34 @@
+# Miles-Guo_public_archive
+
+# Temporary downloads / media
+cache/
+*.mp4
+*.mov
+*.mkv
+*.webm
+*.mp3
+*.wav
+*.m4a
+
+# Models / large generated artifacts
+*.bin
+*.pt
+*.pth
+*.onnx
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+
+# Local scratch
+.DS_Store
+*.tmp
+*.log
+
+# SQLite transient files (the canonical DB itself may be committed)
+database/*.sqlite3-shm
+database/*.sqlite3-wal
+database/*.sqlite3-journal
