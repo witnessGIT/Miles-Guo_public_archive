@@ -1,0 +1,16 @@
+{
+  "project": "Miles-Guo_public_archive",
+  "pilot_case_id": "PILOT-E002",
+  "live_id": "LIVE_20170610_001",
+  "stage": "alignment",
+  "ready": true,
+  "agent_id": "agent-20260912T160700Z-gpt56sol-e002",
+  "marked_at": "2026-09-12T16:15:00Z",
+  "result_commit": "3114c7cafc0a61ebfbc5bb4de97de6ab28db6665",
+  "outputs": [
+    "data/live_segments/alignment/LIVE_20170610_001.jsonl",
+    "data/sources/other/LIVE_20170610_001_transcript_copy.json"
+  ],
+  "validation": "Matched three monotonic transcript anchors against GHOT second-level timestamps; preserved end_sec as null; playback verification remains false; secondary transcript witness is explicitly marked S4 and does not replace GWINS/GHOT provenance.",
+  "notes": "Readiness metadata backfilled from the existing completed S-ALIGN-PILOT-E002 record because the alignment output and completion already existed but the per-case readiness marker was missing. No alignment data was changed."
+}
