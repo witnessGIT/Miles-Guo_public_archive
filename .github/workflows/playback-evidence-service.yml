@@ -95,15 +95,48 @@ jobs:
           python -m pip install torch --index-url https://download.pytorch.org/whl/cpu
           echo "ENABLE_SMOLVLM=1" >> "$GITHUB_ENV"
 
-      - name: Process pending playback requests
+      - name: Process truly pending playback requests
         id: requests
         continue-on-error: true
-        run: python scripts/process_playback_request.py --pending
+        shell: bash
+        run: |
+          set -uo pipefail
+          python scripts/playback_service_state.py --prepare-pending-requests > /tmp/playback-requests.txt
+          state_rc=$?
+          cat /tmp/playback-requests.txt
+          if [[ "$state_rc" != "0" ]]; then
+            exit "$state_rc"
+          fi
+          failed=0
+          while IFS= read -r request; do
+            [[ -z "$request" ]] && continue
+            python scripts/process_playback_request.py --request "$request" || failed=1
+          done < /tmp/playback-requests.txt
+          exit "$failed"
 
-      - name: Process pending worker acceptances
+      - name: Finalize repository evidence metadata
+        id: finalize
+        continue-on-error: true
+        run: python scripts/playback_service_state.py --finalize-evidence
+
+      - name: Process truly pending worker acceptances
         id: acceptances
         continue-on-error: true
-        run: python scripts/accept_playback_evidence.py --pending
+        shell: bash
+        run: |
+          set -uo pipefail
+          python scripts/playback_service_state.py --pending-acceptances > /tmp/playback-acceptances.txt
+          state_rc=$?
+          cat /tmp/playback-acceptances.txt
+          if [[ "$state_rc" != "0" ]]; then
+            exit "$state_rc"
+          fi
+          failed=0
+          while IFS= read -r acceptance; do
+            [[ -z "$acceptance" ]] && continue
+            python scripts/accept_playback_evidence.py --acceptance "$acceptance" || failed=1
+          done < /tmp/playback-acceptances.txt
+          exit "$failed"
 
       - name: Validate durable playback records
         shell: bash
@@ -154,15 +187,16 @@ jobs:
             fi
           fi
 
-      - name: Surface request or acceptance processing failures
+      - name: Surface request, finalization, or acceptance failures
         if: always()
         shell: bash
         run: |
           set -euo pipefail
           request_outcome='${{ steps.requests.outcome }}'
+          finalize_outcome='${{ steps.finalize.outcome }}'
           acceptance_outcome='${{ steps.acceptances.outcome }}'
-          if [[ "$request_outcome" != "success" || "$acceptance_outcome" != "success" ]]; then
-            echo "Playback processing had failures: requests=$request_outcome acceptances=$acceptance_outcome"
+          if [[ "$request_outcome" != "success" || "$finalize_outcome" != "success" || "$acceptance_outcome" != "success" ]]; then
+            echo "Playback processing had failures: requests=$request_outcome finalize=$finalize_outcome acceptances=$acceptance_outcome"
             echo 'Durable successful/blocked evidence was published first when available.'
             exit 1
           fi
