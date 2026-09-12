@@ -33,7 +33,9 @@ jobs:
           python-version: '3.12'
 
       - name: Install free media tools
+        shell: bash
         run: |
+          set -euo pipefail
           sudo apt-get update
           sudo apt-get install -y ffmpeg tesseract-ocr tesseract-ocr-chi-sim
           python -m pip install --upgrade pip
@@ -73,7 +75,8 @@ jobs:
           import json
           from pathlib import Path
           need = False
-          for path in Path('coordination/playback_requests').rglob('*.json') if Path('coordination/playback_requests').exists() else []:
+          root = Path('coordination/playback_requests')
+          for path in root.rglob('*.json') if root.exists() else []:
               try:
                   row = json.loads(path.read_text(encoding='utf-8'))
               except Exception:
@@ -93,10 +96,12 @@ jobs:
           echo "ENABLE_SMOLVLM=1" >> "$GITHUB_ENV"
 
       - name: Process pending playback requests
+        id: requests
         continue-on-error: true
         run: python scripts/process_playback_request.py --pending
 
       - name: Process pending worker acceptances
+        id: acceptances
         continue-on-error: true
         run: python scripts/accept_playback_evidence.py --pending
 
@@ -125,18 +130,39 @@ jobs:
           set -euo pipefail
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add data/playback_evidence data/playback_audits 2>/dev/null || true
+          for path in data/playback_evidence data/playback_audits; do
+            if [[ -e "$path" ]]; then
+              git add -f -- "$path"
+            fi
+          done
           if git diff --cached --quiet; then
             echo 'No durable playback evidence changes to commit.'
-            exit 0
-          fi
-          git commit -m 'data: publish repository playback evidence'
-          for attempt in 1 2 3 4 5; do
-            if git pull --rebase origin main && git push origin HEAD:main; then
-              exit 0
+          else
+            git commit -m 'data: publish repository playback evidence'
+            published=false
+            for attempt in 1 2 3 4 5; do
+              if git pull --rebase origin main && git push origin HEAD:main; then
+                published=true
+                break
+              fi
+              echo "Playback evidence push race, retry $attempt/5"
+              sleep $((attempt * 2))
+            done
+            if [[ "$published" != "true" ]]; then
+              echo 'Failed to publish playback evidence after bounded race retries.'
+              exit 1
             fi
-            echo "Playback evidence push race, retry $attempt/5"
-            sleep $((attempt * 2))
-          done
-          echo 'Failed to publish playback evidence after bounded race retries.'
-          exit 1
+          fi
+
+      - name: Surface request or acceptance processing failures
+        if: always()
+        shell: bash
+        run: |
+          set -euo pipefail
+          request_outcome='${{ steps.requests.outcome }}'
+          acceptance_outcome='${{ steps.acceptances.outcome }}'
+          if [[ "$request_outcome" != "success" || "$acceptance_outcome" != "success" ]]; then
+            echo "Playback processing had failures: requests=$request_outcome acceptances=$acceptance_outcome"
+            echo 'Durable successful/blocked evidence was published first when available.'
+            exit 1
+          fi
