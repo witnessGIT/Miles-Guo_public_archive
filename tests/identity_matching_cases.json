@@ -1,0 +1,84 @@
+[
+  {
+    "id": "verified-shared-platform-2022-05-11",
+    "left": {
+      "source_site": "ghot",
+      "url": "https://ghot.ai/archive/videos/2022-05-11-2",
+      "live_date": "2022-05-11",
+      "external_urls": [
+        "https://gettr.com/streaming/p19cmxu5e7b",
+        "https://rumble.com/v5af5v1-20220511-2.html",
+        "https://gwins.org/cn/milesguo/23878.html"
+      ]
+    },
+    "right": {
+      "source_site": "gwins",
+      "url": "https://gwins.org/cn/milesguo/23878.html",
+      "live_date": "2022-05-11",
+      "external_urls": [
+        "https://gettr.com/streaming/p19cmxu5e7b",
+        "https://rumble.com/v5af5v1-20220511-2.html"
+      ]
+    },
+    "expected_decision": "auto_merge"
+  },
+  {
+    "id": "verified-direct-cross-reference-2023-03-14",
+    "left": {
+      "source_site": "ghot",
+      "url": "https://ghot.ai/archive/videos/2023-03-14-1",
+      "live_date": "2023-03-14",
+      "external_urls": ["https://gwins.org/cn/milesguo/24264.html"]
+    },
+    "right": {
+      "source_site": "gwins",
+      "url": "https://gwins.org/cn/milesguo/24264.html",
+      "live_date": "2023-03-14"
+    },
+    "expected_decision": "auto_merge"
+  },
+  {
+    "id": "same-date-is-not-identity",
+    "left": {
+      "source_site": "ghot",
+      "url": "https://ghot.ai/archive/videos/2023-03-12-1",
+      "live_date": "2023-03-12"
+    },
+    "right": {
+      "source_site": "ghot",
+      "url": "https://ghot.ai/archive/videos/2023-03-12-2",
+      "live_date": "2023-03-12"
+    },
+    "expected_decision": "do_not_merge"
+  },
+  {
+    "id": "gettrsearch-opaque-token-is-not-gettr-id",
+    "left": {
+      "source_site": "gettrsearch",
+      "url": "https://gettrsearch.com/playvideo/SCHoW40Bx4I_j1sv3RIs"
+    },
+    "right": {
+      "source_site": "gettr",
+      "url": "https://gettr.com/streaming/SCHoW40Bx4I_j1sv3RIs"
+    },
+    "expected_decision": "do_not_merge"
+  },
+  {
+    "id": "fallback-strong-text-date-duration",
+    "left": {
+      "url": "https://example.org/a",
+      "live_date": "2022-01-01",
+      "title": "七哥与战友直播",
+      "duration_sec": 7200,
+      "text_sample": "大家好今天我们继续谈这件事情以及相关的新闻背景"
+    },
+    "right": {
+      "url": "https://example.net/b",
+      "live_date": "2022-01-01",
+      "title": "七哥与战友们直播",
+      "duration_sec": 7210,
+      "text_sample": "大家好，今天我们继续谈这件事情，以及相关的新闻背景。"
+    },
+    "expected_decision": "auto_merge"
+  }
+]
