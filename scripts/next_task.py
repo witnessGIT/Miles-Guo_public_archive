@@ -3,6 +3,7 @@ from __future__ import annotations
 import argparse
 import json
 import subprocess
+import time
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -12,6 +13,8 @@ CLAIMS = ROOT / "coordination" / "claims"
 COMPLETED = ROOT / "coordination" / "completed"
 READY = ROOT / "coordination" / "ready"
 PILOT_SELECTION = ROOT / "reports" / "pilot_selection.json"
+
+WORKFLOW_MODE = "continuous-worker-v2"
 
 LEGACY_BATCH_TASKS = {
     "early": "P6-PILOT-EARLY-B001",
@@ -24,6 +27,10 @@ STREAM_PRIORITIES = {
     "align": 72,
     "audit": 52,
 }
+
+
+def utc_now() -> str:
+    return datetime.now(timezone.utc).isoformat()
 
 
 def load_queue() -> list[dict]:
@@ -41,6 +48,15 @@ def load_pilot_selection() -> dict:
     if not PILOT_SELECTION.exists():
         return {"groups": {}}
     return json.loads(PILOT_SELECTION.read_text(encoding="utf-8"))
+
+
+def pilot_case_index() -> dict[str, dict]:
+    index: dict[str, dict] = {}
+    selection = load_pilot_selection()
+    for group_name, cases in selection.get("groups", {}).items():
+        for case in cases:
+            index[case["pilot_case_id"]] = {**case, "group": group_name}
+    return index
 
 
 def has_record(directory: Path, task_id: str) -> bool:
@@ -82,7 +98,10 @@ def scan_live_ids_for_date(date_hint: str | None) -> list[str]:
     if not date_hint:
         return []
     found: list[str] = []
-    for path in (ROOT / "data" / "live_videos").rglob("*.jsonl"):
+    live_root = ROOT / "data" / "live_videos"
+    if not live_root.exists():
+        return []
+    for path in live_root.rglob("*.jsonl"):
         for raw in path.read_text(encoding="utf-8").splitlines():
             raw = raw.strip()
             if not raw:
@@ -93,6 +112,13 @@ def scan_live_ids_for_date(date_hint: str | None) -> list[str]:
                 continue
             if row.get("live_date") == date_hint and row.get("id"):
                 found.append(str(row["id"]))
+    for path in live_root.rglob("*.json"):
+        try:
+            row = json.loads(path.read_text(encoding="utf-8"))
+        except (json.JSONDecodeError, OSError):
+            continue
+        if isinstance(row, dict) and row.get("live_date") == date_hint and row.get("id"):
+            found.append(str(row["id"]))
     return sorted(set(found))
 
 
@@ -153,9 +179,9 @@ def stream_tasks(done: set[str]) -> list[dict]:
             }
 
             if not collection_ready:
-                # Do not duplicate a currently active legacy batch collector.
-                # A legacy collector can unlock this case early by writing
-                # coordination/ready/collection/<CASE_ID>.json.
+                # Grandfather existing legacy batch claims. Never duplicate their
+                # collection work. Their owners may unlock individual cases early
+                # with --mark-ready collection.
                 if legacy_active:
                     continue
                 tasks.append(
@@ -236,9 +262,7 @@ def eligible_tasks() -> list[dict]:
         if has_record(CLAIMS, task_id):
             continue
         filtered.append(task)
-    filtered.sort(
-        key=lambda item: (-int(item.get("priority", 0)), item["id"])
-    )
+    filtered.sort(key=lambda item: (-int(item.get("priority", 0)), item["id"]))
     return filtered
 
 
@@ -248,9 +272,11 @@ def claim_task(task: dict, agent_id: str) -> Path:
     payload = {
         "task_id": task["id"],
         "agent_id": agent_id,
-        "claimed_at": datetime.now(timezone.utc).isoformat(),
+        "claimed_at": utc_now(),
         "base_commit": current_commit(),
         "status": "in_progress",
+        "workflow_mode": WORKFLOW_MODE,
+        "continue_after_finish": True,
         "stage": task.get("stage"),
         "case_id": task.get("case_id"),
         "live_id": task.get("live_id"),
@@ -260,6 +286,85 @@ def claim_task(task: dict, agent_id: str) -> Path:
         json.dump(payload, fh, ensure_ascii=False, indent=2)
         fh.write("\n")
     return path
+
+
+def create_ready_marker(
+    stage: str,
+    case_id: str,
+    agent_id: str,
+    task_id: str,
+    outputs: list[str],
+    validation: str,
+    live_id: str | None,
+) -> Path:
+    if stage == "collection" and not live_id:
+        raise SystemExit("Collection readiness requires --live-id LIVE_YYYYMMDD_NNN.")
+    marker_path = ready_path(stage, case_id)
+    marker_path.parent.mkdir(parents=True, exist_ok=True)
+    marker = {
+        "project": "Miles-Guo_public_archive",
+        "workflow_mode": WORKFLOW_MODE,
+        "case_id": case_id,
+        "live_id": live_id,
+        "stage": stage,
+        "ready_at": utc_now(),
+        "task_id": task_id,
+        "agent_id": agent_id,
+        "result_commit": current_commit(),
+        "outputs": outputs,
+        "validation": validation,
+    }
+    with marker_path.open("x", encoding="utf-8") as fh:
+        json.dump(marker, fh, ensure_ascii=False, indent=2)
+        fh.write("\n")
+    return marker_path
+
+
+def legacy_task_for_case(case_id: str) -> str | None:
+    case = pilot_case_index().get(case_id)
+    if not case:
+        return None
+    return LEGACY_BATCH_TASKS.get(case.get("group"))
+
+
+def mark_ready_from_legacy(
+    stage: str,
+    case_id: str,
+    agent_id: str,
+    outputs: list[str],
+    validation: str,
+    live_id: str | None,
+) -> Path:
+    if stage != "collection":
+        raise SystemExit(
+            "--mark-ready is intended for grandfathered legacy collectors and currently "
+            "supports only stage=collection. Streaming align/audit tasks should use --finish."
+        )
+    if case_id not in pilot_case_index():
+        raise SystemExit(f"Unknown Pilot case: {case_id}")
+    legacy_task = legacy_task_for_case(case_id)
+    if not legacy_task:
+        raise SystemExit(f"No legacy batch mapping for {case_id}.")
+    claim_path = CLAIMS / f"{legacy_task}.json"
+    if not claim_path.exists():
+        raise SystemExit(
+            f"Cannot publish legacy readiness: active claim {legacy_task} not found."
+        )
+    claim = json.loads(claim_path.read_text(encoding="utf-8"))
+    if claim.get("agent_id") != agent_id:
+        raise SystemExit(
+            f"Cannot publish readiness for {case_id}: legacy claim belongs to "
+            f"{claim.get('agent_id')!r}."
+        )
+    return create_ready_marker(
+        stage="collection",
+        case_id=case_id,
+        agent_id=agent_id,
+        task_id=legacy_task,
+        outputs=outputs,
+        validation=validation,
+        live_id=live_id,
+    )
 
 
 def finish_task(
@@ -283,11 +388,16 @@ def finish_task(
     payload = {
         "task_id": task_id,
         "agent_id": agent_id,
-        "completed_at": datetime.now(timezone.utc).isoformat(),
+        "completed_at": utc_now(),
         "result_commit": current_commit(),
         "outputs": outputs,
         "validation": validation,
-        "notes": "Streaming task completed; continue by claiming the next eligible task.",
+        "workflow_mode": claim.get("workflow_mode", "legacy-grandfathered"),
+        "continue_after_finish": claim.get("workflow_mode") == WORKFLOW_MODE,
+        "notes": (
+            "Task completed. Under continuous-worker-v2, refresh repository state and "
+            "claim the next eligible task unless a documented stop condition applies."
+        ),
     }
     with completed_path.open("x", encoding="utf-8") as fh:
         json.dump(payload, fh, ensure_ascii=False, indent=2)
@@ -310,23 +420,15 @@ def finish_task(
             raise SystemExit(
                 "Collection completion requires --live-id LIVE_YYYYMMDD_NNN."
             )
-        marker_path = ready_path(marker_stage, case_id)
-        marker_path.parent.mkdir(parents=True, exist_ok=True)
-        marker = {
-            "project": "Miles-Guo_public_archive",
-            "case_id": case_id,
-            "live_id": resolved_live_id,
-            "stage": marker_stage,
-            "ready_at": datetime.now(timezone.utc).isoformat(),
-            "task_id": task_id,
-            "agent_id": agent_id,
-            "result_commit": current_commit(),
-            "outputs": outputs,
-            "validation": validation,
-        }
-        with marker_path.open("x", encoding="utf-8") as fh:
-            json.dump(marker, fh, ensure_ascii=False, indent=2)
-            fh.write("\n")
+        marker_path = create_ready_marker(
+            stage=marker_stage,
+            case_id=case_id,
+            agent_id=agent_id,
+            task_id=task_id,
+            outputs=outputs,
+            validation=validation,
+            live_id=resolved_live_id,
+        )
 
     return completed_path, marker_path
 
@@ -342,19 +444,87 @@ def print_task(task: dict) -> None:
         )
 
 
+def choose_task(eligible: list[dict], task_id: str | None) -> dict:
+    if not eligible:
+        raise SystemExit("No currently eligible unclaimed task.")
+    if not task_id:
+        return eligible[0]
+    matches = [task for task in eligible if task["id"] == task_id]
+    if not matches:
+        raise SystemExit(f"Task {task_id!r} is not currently eligible.")
+    return matches[0]
+
+
+def watch_for_task(
+    poll_seconds: int,
+    requested_task: str | None,
+) -> list[dict]:
+    if poll_seconds < 10:
+        raise SystemExit("--poll-seconds must be at least 10 to avoid aggressive polling.")
+    print(
+        f"Watch mode active ({WORKFLOW_MODE}); polling every {poll_seconds}s. "
+        "This process can still be stopped by the host platform or Ctrl+C."
+    )
+    while True:
+        eligible = eligible_tasks()
+        if requested_task:
+            eligible = [task for task in eligible if task["id"] == requested_task]
+        if eligible:
+            return eligible
+        print(f"[{utc_now()}] no eligible task yet; continuing watch")
+        time.sleep(poll_seconds)
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(
-        description="Find, claim, and finish the next Miles-Guo_public_archive task."
+        description="Discover, claim, finish, and stream Miles-Guo_public_archive tasks."
     )
     parser.add_argument("--list", action="store_true", help="List eligible tasks.")
     parser.add_argument("--claim", action="store_true", help="Claim an eligible task.")
-    parser.add_argument("--task", help="Specific eligible task ID to claim.")
-    parser.add_argument("--agent-id", help="Unique agent ID for claim/finish.")
+    parser.add_argument("--task", help="Specific eligible task ID to claim/watch for.")
+    parser.add_argument("--agent-id", help="Unique agent ID for claim/finish/readiness.")
     parser.add_argument("--finish", metavar="TASK_ID", help="Finish a claimed task.")
     parser.add_argument("--outputs", nargs="*", default=[], help="Durable output paths.")
     parser.add_argument("--validation", help="What was actually validated.")
-    parser.add_argument("--live-id", help="Canonical live ID, required when finishing collection.")
+    parser.add_argument("--live-id", help="Canonical live ID, required for collection readiness.")
+    parser.add_argument(
+        "--mark-ready",
+        choices=["collection", "alignment", "audit"],
+        help="Publish per-case readiness from a grandfathered legacy collector.",
+    )
+    parser.add_argument("--case-id", help="Pilot case ID for --mark-ready.")
+    parser.add_argument(
+        "--watch",
+        action="store_true",
+        help="Keep scanning until eligible work appears; host suspension can still stop it.",
+    )
+    parser.add_argument(
+        "--poll-seconds",
+        type=int,
+        default=60,
+        help="Watch polling interval; minimum 10 seconds, default 60.",
+    )
     args = parser.parse_args()
+
+    if args.mark_ready:
+        if not args.agent_id or not args.case_id or not args.validation:
+            raise SystemExit(
+                "--mark-ready requires --agent-id, --case-id, and --validation."
+            )
+        marker = mark_ready_from_legacy(
+            stage=args.mark_ready,
+            case_id=args.case_id,
+            agent_id=args.agent_id,
+            outputs=args.outputs,
+            validation=args.validation,
+            live_id=args.live_id,
+        )
+        print(f"Created readiness marker: {marker.relative_to(ROOT)}")
+        print(
+            "Commit/push this marker now. It unlocks downstream work for this case "
+            "without ending the active legacy batch claim."
+        )
+        return
 
     if args.finish:
         if not args.agent_id:
@@ -372,64 +542,63 @@ def main() -> None:
         if marker_path:
             print(f"Created readiness marker: {marker_path.relative_to(ROOT)}")
         print(
-            "Commit and push these coordination records, then immediately run "
-            "`python scripts/next_task.py --claim --agent-id <same-or-new-id>` "
-            "to continue."
+            "Commit and push these coordination records, refresh repository state, then "
+            "immediately claim the next eligible task. Finishing one task is not a stop "
+            "condition under continuous-worker-v2."
         )
         return
 
-    eligible = eligible_tasks()
+    if args.watch:
+        eligible = watch_for_task(args.poll_seconds, args.task)
+    else:
+        eligible = eligible_tasks()
+
     if not eligible:
         print("No currently eligible unclaimed task.")
         print(
-            "Check active claims for genuine progress/staleness. Do not wait on chat; "
-            "if a claim is stale, follow coordination/README.md takeover rules."
+            "Do not invent work. Check active claims for progress/staleness and follow "
+            "coordination/README.md. A repository cannot wake a suspended host session."
         )
         return
 
-    if args.list or not args.claim:
+    if args.list or (not args.claim and not args.watch):
         print("Eligible tasks (highest priority first):")
         for task in eligible:
             print_task(task)
 
     if not args.claim:
         print("\nRecommended next task:")
-        print_task(eligible[0])
+        print_task(choose_task(eligible, args.task))
         print(
             "\nClaim it with:\n"
-            "python scripts/next_task.py --claim --agent-id "
-            "agent-<UTC>-<random>"
+            "python scripts/next_task.py --claim --agent-id agent-<UTC>-<random>"
         )
         return
 
     if not args.agent_id:
         raise SystemExit("--claim requires --agent-id.")
 
-    chosen = eligible[0]
-    if args.task:
-        matches = [task for task in eligible if task["id"] == args.task]
-        if not matches:
-            raise SystemExit(f"Task {args.task!r} is not currently eligible.")
-        chosen = matches[0]
+    chosen = choose_task(eligible, args.task)
 
     try:
         path = claim_task(chosen, args.agent_id)
     except FileExistsError:
         raise SystemExit(
             f"Claim lost: {chosen['id']} was claimed concurrently. "
-            "Pull latest state and run the command again."
+            "Pull latest state and claim another task instead of waiting."
         )
 
     print(f"Claim created locally: {path.relative_to(ROOT)}")
     print_task(chosen)
+    print(f"  workflow_mode={WORKFLOW_MODE} continue_after_finish=true")
     print(
         "\nIMPORTANT: immediately commit and push the claim before doing the work. "
         "If push loses a race, remove the local claim, pull, and claim another task."
     )
     print(
         "After the claim is visible on main: execute the task, validate real outputs, "
-        "commit/push the outputs, then run --finish. After finishing, claim the next task "
-        "instead of stopping."
+        "commit/push outputs, then run --finish. After finishing, refresh and claim the "
+        "next task. Stop only for a documented continuous-worker-v2 stop condition."
     )
 
 
