@@ -1,0 +1,15 @@
+{
+  "project": "Miles-Guo_public_archive",
+  "workflow_mode": "continuous-worker-v2-migration",
+  "case_id": "PILOT-L009",
+  "live_id": "LIVE_20230314_001",
+  "stage": "alignment",
+  "ready_at": "2026-09-12T16:15:00Z",
+  "task_id": "P7-ALIGNMENT-B001",
+  "agent_id": "agent-20260912T160500Z-gpt56sol-alignment",
+  "result_commit": "2c8e78082def73bf3a0105ee4a3f604cd35ac42d",
+  "outputs": ["data/live_segments/alignment/pilot_alignment_b001.jsonl"],
+  "validation": "Legacy P7 produced two real source-backed fuzzy-aligned segments for LIVE_20230314_001. They remain playback-unverified; migrate readiness to avoid duplicate alignment and allow direct audit.",
+  "coverage": "legacy_p7_sample",
+  "playback_verified": false
+}
