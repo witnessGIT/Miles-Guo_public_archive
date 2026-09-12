@@ -27,7 +27,10 @@ def load_jsonl(pattern: str):
 
 def insert_named(conn: sqlite3.Connection, table: str, record: dict):
     cols = list(record.keys())
-    sql = f"INSERT INTO {table} ({','.join(cols)}) VALUES ({','.join('?' for _ in cols)})"
+    # Files are loaded in deterministic filename order. Inventory files are
+    # intentionally named before pilot/enriched files, so richer verified
+    # records can replace lightweight discovery rows with the same id.
+    sql = f"INSERT OR REPLACE INTO {table} ({','.join(cols)}) VALUES ({','.join('?' for _ in cols)})"
     conn.execute(sql, [record[c] for c in cols])
 
 
