@@ -1,0 +1,18 @@
+{
+  "project": "Miles-Guo_public_archive",
+  "workflow_mode": "continuous-worker-v2",
+  "case_id": "PILOT-E008",
+  "live_id": "LIVE_20190920_001",
+  "stage": "audit",
+  "ready_at": "2026-09-13T01:00:00Z",
+  "task_id": "S-AUDIT-PILOT-E008",
+  "agent_id": "agent-20260913-sol-continuation",
+  "result_commit": "d2533e221232be64c4a60d0f451525c8a1a28c9e",
+  "outputs": ["reports/PILOT_AUDIT_E008.md"],
+  "audit_outcome": "blocked_no_playback",
+  "candidate_anchors_inspected": 3,
+  "qualifying_playback_checks": 0,
+  "counts_toward_pilot_60": false,
+  "timing_accuracy_measured": false,
+  "validation": "Three source-backed aligned anchors were inspected at the data/provenance level. Actual media playback is unavailable in this worker environment, so playback_verified remains 0 and no timing error was measured."
+}
