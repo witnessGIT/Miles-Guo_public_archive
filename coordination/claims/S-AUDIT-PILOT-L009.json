@@ -1,0 +1,12 @@
+{
+  "task_id": "S-AUDIT-PILOT-L009",
+  "agent_id": "agent-20260912T162332Z-gpt56sol",
+  "claimed_at": "2026-09-12T16:23:32Z",
+  "base_commit": "4ccc7ae864b7a4e2a743a9040cc439a8c7851351",
+  "status": "in_progress",
+  "workflow_mode": "continuous-worker-v2",
+  "continue_after_finish": true,
+  "stage": "audit",
+  "case_id": "PILOT-L009",
+  "scope": "Playback-audit real aligned segments for PILOT-L009; preserve provenance and do not count unperformed playback as verified."
+}
