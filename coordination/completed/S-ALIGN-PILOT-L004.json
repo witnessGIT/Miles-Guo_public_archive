@@ -1,0 +1,14 @@
+{
+  "task_id": "S-ALIGN-PILOT-L004",
+  "agent_id": "agent-20260912T165600Z-gpt56sol",
+  "completed_at": "2026-09-12T16:59:00Z",
+  "result_commit": "33ebf89e9f345fe994e79e07b01b1b4d92eb752d",
+  "outputs": [
+    "data/live_segments/alignment/LIVE_20220529_001.jsonl",
+    "coordination/ready/alignment/PILOT-L004.json"
+  ],
+  "validation": "Preserved three direct GHOT public ASR timing anchors for LIVE_20220529_001. No curated GWINS provenance was asserted because the Pilot source record explicitly withholds the GWINS candidate pending stronger Tier-A identity evidence. No end times, FPS/frame values, alignment offset, or playback verification were invented.",
+  "workflow_mode": "continuous-worker-v2",
+  "continue_after_finish": true,
+  "notes": "Task completed; continue to the next eligible streaming task."
+}
