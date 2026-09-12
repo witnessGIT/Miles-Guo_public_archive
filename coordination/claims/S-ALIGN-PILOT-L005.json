@@ -1,0 +1,13 @@
+{
+  "task_id": "S-ALIGN-PILOT-L005",
+  "agent_id": "agent-20260912T162222Z-c9f2",
+  "claimed_at": "2026-09-12T16:29:55Z",
+  "base_commit": "54f87fc259a13dc6daf9c132c5536648145e4cf8",
+  "status": "in_progress",
+  "workflow_mode": "continuous-worker-v2",
+  "continue_after_finish": true,
+  "stage": "align",
+  "case_id": "PILOT-L005",
+  "live_id": "LIVE_20221024_001",
+  "scope": "Align curated/ASR text and public time anchors for PILOT-L005; write independent per-live segment data."
+}
