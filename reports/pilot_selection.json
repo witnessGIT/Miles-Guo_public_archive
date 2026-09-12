@@ -1,0 +1,305 @@
+{
+  "project": "Miles-Guo_public_archive",
+  "phase": "PILOT_SELECTION",
+  "selection_version": "pilot-v1",
+  "verified_at": "2026-09-13",
+  "canonical_live_ids_assigned": false,
+  "notes": [
+    "These are source-backed Pilot candidates, not yet canonical live_videos rows.",
+    "Canonical LIVE_YYYYMMDD_NNN IDs are assigned only after collection and identity matching.",
+    "Do not infer source absence: source-only status requires a documented bounded search.",
+    "GettrSearch item-level metadata remains unresolved from public static HTML, so no candidate is falsely labeled GettrSearch-only."
+  ],
+  "groups": {
+    "early": [
+      {
+        "pilot_case_id": "PILOT-E001",
+        "date_hint": "2017-05-23",
+        "seed_source_site": "ghot",
+        "seed_source_page_id": "2017-05-23-1",
+        "seed_url": "https://ghot.ai/archive/videos/2017-05-23-1",
+        "title_hint": "郭文贵5月23日报平安直播视频",
+        "reasons": ["early-era livestream", "second-level transcript anchors"]
+      },
+      {
+        "pilot_case_id": "PILOT-E002",
+        "date_hint": "2017-06-10",
+        "seed_source_site": "ghot",
+        "seed_source_page_id": "2017-06-10-1",
+        "seed_url": "https://ghot.ai/archive/videos/2017-06-10-1",
+        "title_hint": "6月10日郭文贵有关海南航空的公告的回复",
+        "reasons": ["early-era livestream", "dense transcript timeline"]
+      },
+      {
+        "pilot_case_id": "PILOT-E003",
+        "date_hint": "2017-10-04",
+        "seed_source_site": "ghot",
+        "seed_source_page_id": "2017-10-04-1",
+        "seed_url": "https://ghot.ai/archive/videos/2017-10-04-1",
+        "title_hint": "郭文贵10月4日华盛顿直播",
+        "reasons": ["early-era livestream", "verified duration and dense transcript anchors"]
+      },
+      {
+        "pilot_case_id": "PILOT-E004",
+        "date_hint": "2018-04-19",
+        "seed_source_site": "gwins",
+        "seed_source_page_id": "21780",
+        "seed_url": "https://gwins.org/cn/milesguo/21780.html",
+        "title_hint": "郭文贵2018年4月19日第三次直播 20180419_3",
+        "reasons": ["GWINS-first early-era case", "human text-organizer metadata", "rich entity metadata"]
+      },
+      {
+        "pilot_case_id": "PILOT-E005",
+        "date_hint": "2018-06-16",
+        "seed_source_site": "gwins",
+        "seed_source_page_id": "21799",
+        "seed_url": "https://gwins.org/cn/milesguo/21799.html",
+        "title_hint": "郭文贵2018年6月16日直播 20180616_1",
+        "known_external_urls": [
+          "https://youtu.be/ySNFfgMbjd4",
+          "https://rumble.com/v578glm-20180616-1.html"
+        ],
+        "reasons": ["GWINS-first early-era case", "multiple external media sources", "cross-platform identity test"]
+      },
+      {
+        "pilot_case_id": "PILOT-E006",
+        "date_hint": "2018-08-15",
+        "seed_source_site": "gwins",
+        "seed_source_page_id": "21826",
+        "seed_url": "https://gwins.org/cn/milesguo/21826.html",
+        "title_hint": "郭文贵2018年8月15日直播 20180815_1",
+        "reasons": ["GWINS-first early-era case", "source-provided people/organization/region metadata"]
+      },
+      {
+        "pilot_case_id": "PILOT-E007",
+        "date_hint": "2019-05-30",
+        "seed_source_site": "ghot",
+        "seed_source_page_id": "2019-05-30-2",
+        "seed_url": "https://ghot.ai/archive/videos/2019-05-30-2",
+        "title_hint": "郭文贵先生和战友们聊天",
+        "reasons": ["mid-early livestream", "36-minute transcript", "irregular segment spacing"]
+      },
+      {
+        "pilot_case_id": "PILOT-E008",
+        "date_hint": "2019-09-20",
+        "seed_source_site": "ghot",
+        "seed_source_page_id": "2019-09-20-1",
+        "seed_url": "https://ghot.ai/archive/videos/2019-09-20-1",
+        "title_hint": "郭文贵先生直播：感谢战友们的担心",
+        "reasons": ["explicit livestream", "35-minute transcript", "clean date/title evidence"]
+      },
+      {
+        "pilot_case_id": "PILOT-E009",
+        "date_hint": "2019-10-29",
+        "seed_source_site": "ghot",
+        "seed_source_page_id": "2019-10-29-1",
+        "seed_url": "https://ghot.ai/archive/videos/2019-10-29-1",
+        "title_hint": "2019.10.29-1 华为、区块链与郭媒体相关直播",
+        "reasons": ["late-2019 case", "GHOT transcript/source-link coverage"]
+      }
+    ],
+    "middle": [
+      {
+        "pilot_case_id": "PILOT-M001",
+        "date_hint": "2020-03-23",
+        "seed_source_site": "ghot",
+        "seed_source_page_id": "2020-03-23-1",
+        "seed_url": "https://ghot.ai/archive/videos/2020-03-23-1",
+        "title_hint": "郭文贵先生直播警示好好活着",
+        "reasons": ["2020 livestream", "pandemic-era source coverage"]
+      },
+      {
+        "pilot_case_id": "PILOT-M002",
+        "date_hint": "2020-04-18",
+        "seed_source_site": "ghot",
+        "seed_source_page_id": "2020-04-18-3",
+        "seed_url": "https://ghot.ai/archive/videos/2020-04-18-3",
+        "title_hint": "2020.04.18-2 今天距419三周年还有24小时",
+        "reasons": ["verified GHOT slug/title ordinal mismatch", "19m50s transcript", "identity stress case"]
+      },
+      {
+        "pilot_case_id": "PILOT-M003",
+        "date_hint": "2020-06-06",
+        "seed_source_site": "ghot",
+        "seed_source_page_id": "2020-06-06-1",
+        "seed_url": "https://ghot.ai/archive/videos/2020-06-06-1",
+        "title_hint": "新中国联邦对世界和中国人民的三大影响和正道主义的未来设想",
+        "reasons": ["long-form livestream", "about 1h22m", "timeline alignment"]
+      },
+      {
+        "pilot_case_id": "PILOT-M004",
+        "date_hint": "2020-10-01",
+        "seed_source_site": "ghot",
+        "seed_source_page_id": "2020-10-01-3",
+        "seed_url": "https://ghot.ai/archive/videos/2020-10-01-3",
+        "title_hint": "2020.10.01-2 10.1的直播_X264",
+        "reasons": ["verified slug/title ordinal mismatch", "severely noisy ASR", "must not trust transcript text blindly"]
+      },
+      {
+        "pilot_case_id": "PILOT-M005",
+        "date_hint": "2020-11-20",
+        "seed_source_site": "ghot",
+        "seed_source_page_id": "2020-11-20-4",
+        "seed_url": "https://ghot.ai/archive/videos/2020-11-20-4",
+        "title_hint": "文贵直播 王建之死 两周年_X264",
+        "reasons": ["about 2h59m", "GHOT selected clip with explicit bounded range", "clip-to-full-video provenance test"]
+      },
+      {
+        "pilot_case_id": "PILOT-M006",
+        "date_hint": "2021-06-12",
+        "seed_source_site": "ghot",
+        "seed_source_page_id": "2021-06-12-1",
+        "seed_url": "https://ghot.ai/archive/videos/2021-06-12-1",
+        "title_hint": "文贵直播：新盖特、盖特Pay及爆料革命",
+        "reasons": ["about 1h19m", "long-form GHOT timing case"]
+      },
+      {
+        "pilot_case_id": "PILOT-M007",
+        "date_hint": "2021-09-02",
+        "seed_source_site": "ghot",
+        "seed_source_page_id": "2021-09-02-2",
+        "seed_url": "https://ghot.ai/archive/videos/2021-09-02-2",
+        "title_hint": "9月2号一次大直播",
+        "reasons": ["9m47s", "dense second-level anchors", "good alignment scaffold"]
+      },
+      {
+        "pilot_case_id": "PILOT-M008",
+        "date_hint": "2021-10-29",
+        "seed_source_site": "ghot",
+        "seed_source_page_id": "2021-10-29-1",
+        "seed_url": "https://ghot.ai/archive/videos/2021-10-29-1",
+        "title_hint": "文贵大直播：格芯、数字货币及房地产",
+        "reasons": ["about 4h22m", "very long livestream", "known poor/noisy transcript sections"]
+      },
+      {
+        "pilot_case_id": "PILOT-M009",
+        "date_hint": "2021-11-24",
+        "seed_source_site": "ghot",
+        "seed_source_page_id": "2021-11-24-1",
+        "seed_url": "https://ghot.ai/archive/videos/2021-11-24-1",
+        "title_hint": "20211124_1 北京深圳香港交易所等主题",
+        "reasons": ["about 5h50m", "very long livestream", "original-video link observed as Odysee"]
+      }
+    ],
+    "late": [
+      {
+        "pilot_case_id": "PILOT-L001",
+        "date_hint": "2022-01-26",
+        "seed_source_site": "ghot",
+        "seed_source_page_id": "2022-01-26-2",
+        "seed_url": "https://ghot.ai/archive/videos/2022-01-26-2",
+        "title_hint": "爆料革命五周年相关视频",
+        "reasons": ["2022 sample", "10-minute dense transcript anchors"]
+      },
+      {
+        "pilot_case_id": "PILOT-L002",
+        "date_hint": "2022-05-06",
+        "seed_source_site": "ghot",
+        "seed_source_page_id": "2022-05-06-1",
+        "seed_url": "https://ghot.ai/archive/videos/2022-05-06-1",
+        "title_hint": "2022.05.06-2 文贵大直播：世界经济危机与俄乌战争",
+        "reasons": ["about 3h42m", "GHOT slug/title ordinal mismatch", "original GETTR link observed"]
+      },
+      {
+        "pilot_case_id": "PILOT-L003",
+        "date_hint": "2022-05-11",
+        "seed_source_site": "ghot",
+        "seed_source_page_id": "2022-05-11-2",
+        "seed_url": "https://ghot.ai/archive/videos/2022-05-11-2",
+        "known_external_urls": [
+          "https://gettr.com/streaming/p19cmxu5e7b",
+          "https://rumble.com/v5af5v1-20220511-2.html",
+          "https://gwins.org/cn/milesguo/23878.html"
+        ],
+        "reasons": ["verified GHOT/GWINS/platform overlap", "multiple media identities", "about 2h35m"]
+      },
+      {
+        "pilot_case_id": "PILOT-L004",
+        "date_hint": "2022-05-29",
+        "seed_source_site": "ghot",
+        "seed_source_page_id": "2022-05-29-6",
+        "seed_url": "https://ghot.ai/archive/videos/2022-05-29-6",
+        "title_hint": "2022.05.29-2 文贵大直播《避风港》(53)专场",
+        "reasons": ["GHOT slug/title ordinal mismatch", "long-form program"]
+      },
+      {
+        "pilot_case_id": "PILOT-L005",
+        "date_hint": "2022-10-24",
+        "seed_source_site": "ghot",
+        "seed_source_page_id": "2022-10-24-1",
+        "seed_url": "https://ghot.ai/archive/videos/2022-10-24-1",
+        "title_hint": "尊敬的战友们好：胡锦涛事件相关视频",
+        "reasons": ["late-2022 sample", "cross-source links exposed by GHOT"]
+      },
+      {
+        "pilot_case_id": "PILOT-L006",
+        "date_hint": "2023-01-22",
+        "seed_source_site": "ghot",
+        "seed_source_page_id": "2023-01-22-2",
+        "seed_url": "https://ghot.ai/archive/videos/2023-01-22-2",
+        "title_hint": "大年初一文贵春节大直播《希望2023》下半场",
+        "reasons": ["long special livestream", "dense time-coded transcript", "multi-speaker behavior"]
+      },
+      {
+        "pilot_case_id": "PILOT-L007",
+        "date_hint": "2023-03-10",
+        "seed_source_site": "ghot",
+        "seed_source_page_id": "2023-03-10-1",
+        "seed_url": "https://ghot.ai/archive/videos/2023-03-10-1",
+        "known_external_urls": [
+          "https://gwins.org/cn/milesguo/24261.html",
+          "https://gettr.com/post/p2b18ew21e7",
+          "https://rumble.com/v5b2sws-20230310-1.html"
+        ],
+        "reasons": ["verified GHOT/GWINS/platform overlap", "GETTR post form", "Rumble identity"]
+      },
+      {
+        "pilot_case_id": "PILOT-L008",
+        "date_hint": "2023-03-12",
+        "seed_source_site": "gwins",
+        "seed_source_page_id": "24266",
+        "seed_url": "https://www.gwins.org/cn/milesguo/24266.html",
+        "known_external_urls": [
+          "https://gettr.com/streaming/p2b7kcm569c",
+          "https://rumble.com/v5b2z4t-20230312-1.html"
+        ],
+        "title_hint": "郭文贵2023年3月12日直播 20230312_1",
+        "reasons": ["GWINS clean explicit HH:MM:SS timeline", "GETTR streaming form", "Rumble identity", "same-day neighboring source record stress"]
+      },
+      {
+        "pilot_case_id": "PILOT-L009",
+        "date_hint": "2023-03-14",
+        "seed_source_site": "ghot",
+        "seed_source_page_id": "2023-03-14-1",
+        "seed_url": "https://ghot.ai/archive/videos/2023-03-14-1",
+        "known_external_urls": [
+          "https://gwins.org/cn/milesguo/24264.html",
+          "https://gettr.com/post/p2bexmi7ac8"
+        ],
+        "reasons": ["verified GHOT/GWINS overlap", "GETTR post form", "9m17s dense GHOT timing"]
+      }
+    ]
+  },
+  "stress_probes_not_counted_in_27": [
+    {
+      "id": "PROBE-NO-TRANSCRIPT",
+      "url": "https://ghot.ai/archive/videos/2018-11-25-3",
+      "reason": "one-minute real archive item explicitly reports that no transcript is required; tests missing-transcript handling"
+    },
+    {
+      "id": "PROBE-GWINS-MIXED-TIME",
+      "url": "https://www.gwins.org/cn/milesguo/547.html",
+      "reason": "verified mixed timestamp typography and robot-transcription markers; tests provenance-aware parsing"
+    },
+    {
+      "id": "PROBE-GETTRSEARCH-OPAQUE",
+      "url": "https://gettrsearch.com/playvideo/SCHoW40Bx4I_j1sv3RIs",
+      "reason": "tests that a GettrSearch opaque route ID is not promoted to a GETTR platform ID"
+    }
+  ],
+  "coverage_gaps_to_resolve_during_collection": [
+    "At least one demonstrable GettrSearch-discovered item that is missing from a bounded GWINS/GHOT search. Current static GettrSearch payload does not support this claim yet.",
+    "Any claim of GWINS-only or GHOT-only coverage requires a documented search scope and evidence; 'not found yet' is not 'does not exist'.",
+    "Canonical live IDs and exact cross-source merge groups remain pending identity-v1 execution on collected metadata."
+  ]
+}
