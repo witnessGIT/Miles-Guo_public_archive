@@ -26,6 +26,24 @@ GATE_OR_REPORT_KINDS = {
 }
 CLOSED_BUG_STATUSES = {"resolved", "closed", "dismissed", "fixed"}
 
+TASK_TYPES = {
+    "ordinary_business": (
+        "collection/alignment/source/transcript/data tasks that do not require real "
+        "decoded-media inspection unless explicitly stated"
+    ),
+    "real_playback": (
+        "P9-PLAYBACK-* timing checks requiring ffmpeg+ffprobe plus actual inspection "
+        "of decoded clip/frame/audio and an observed content position"
+    ),
+    "gate_or_report": (
+        "current aggregate gates/reports including P9-AUDIT-60-R2 and "
+        "P10-PILOT-DECISION-R2; no media replay is required once prerequisites pass"
+    ),
+    "admin_control": (
+        "bug repair/control-plane/schema/CI/workflow maintenance; authorized admin only"
+    ),
+}
+
 
 def completed_path(task_id: str) -> Path:
     return COMPLETED / f"{task_id}.json"
@@ -51,12 +69,10 @@ def exists_claim(task_id: str) -> bool:
 
 
 def normalize_full_archive_decision(record: dict | None) -> str | None:
-    """Return YES/NO only for an explicit machine-readable current Pilot decision."""
+    """Return YES/NO only for the explicit current R2 decision field."""
     if not record:
         return None
     value = record.get("full_archive_decision")
-    if value is None:
-        value = record.get("full_archive")
     if isinstance(value, bool):
         return "YES" if value else "NO"
     if not isinstance(value, str):
@@ -250,6 +266,7 @@ def build_status(content_inspection_capable: bool, role: str = "worker") -> dict
         "repository_no_eligible_work": repository_no_eligible_work,
         "session_work_available": session_work_available,
         "host_stop_for_this_runtime": host_stop,
+        "task_types": TASK_TYPES,
         "runtime": {
             "ffmpeg": bool(tools.get("ffmpeg")),
             "ffprobe": bool(tools.get("ffprobe")),
@@ -305,8 +322,10 @@ def build_status(content_inspection_capable: bool, role: str = "worker") -> dict
             "legacy_audit_markers_count_toward_pilot60": False,
             "decode_without_content_inspection_counts_toward_pilot60": False,
             "legacy_P9_P10_completions_count_as_current": False,
+            "superseded_legacy_gate_tasks_claimable": False,
             "current_p9_requires_playback_gate": True,
             "current_p10_requires_current_p9": True,
+            "current_p10_requires_full_archive_decision_field": True,
             "playback_inability_blocks_ordinary_or_gate_tasks": False,
             "playback_inability_blocks_admin_bug_work": False,
             "pilot60_pass_makes_gate_seal_non_media_work_available": True,
@@ -334,6 +353,12 @@ def print_human(status: dict) -> None:
         f"{status['playback_queue']['open_case_count']} open "
         f"({status['playback_queue']['unclaimed_case_count']} unclaimed, "
         f"{status['playback_queue']['claimed_case_count']} claimed)"
+    )
+    print(
+        "Admin queue: "
+        f"{status['admin_queue']['open_bug_count']} open bugs, "
+        f"{status['admin_queue']['invalid_bug_report_count']} invalid reports, "
+        f"actionable-for-role={status['admin_queue']['actionable_for_this_role']}"
     )
     print(
         "Pilot-60: "
@@ -371,13 +396,18 @@ def print_human(status: dict) -> None:
             "perform decoded-media content inspection. This is not repository-wide "
             "NO_ELIGIBLE_WORK."
         )
+    if gates["P9_PLAYBACK_GATE_ready_to_seal"]:
+        print(
+            "Pilot-60 already passes. Remaining optional playback cases do not block the "
+            "R2 acceptance path; seal P9-PLAYBACK-GATE and continue to current P9/P10."
+        )
 
 
 def main() -> int:
     parser = argparse.ArgumentParser(
         description=(
             "Classify Miles-Guo_public_archive work by current acceptance revision, "
-            "Agent role, runtime capability, and Pilot gate state."
+            "task type, Agent role, runtime capability, and Pilot gate state."
         )
     )
     parser.add_argument("--json", action="store_true")
