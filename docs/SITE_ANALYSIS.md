@@ -2,7 +2,7 @@
 
 Project: `Miles-Guo_public_archive`  
 Phase: `SITE_ANALYSIS + PILOT`  
-Last verified: `2026-09-12`
+Last verified: `2026-09-13`
 
 This document records only findings checked against real public pages. Missing findings remain unresolved rather than guessed.
 
@@ -174,7 +174,180 @@ Do not infer missing source-side sequence numbers.
 
 ## GHOT
 
-Status: `not yet analyzed under the current claimed-task protocol`.
+Status: `P2-GHOT-ARCHIVE verified; transcript/time-axis quality remains a separate task (P2-GHOT-TIMELINE).`
+
+Verified on public pages on `2026-09-13`.
+
+### Archive/list entry point
+
+Primary video archive URL:
+
+```text
+https://ghot.ai/archive/videos
+```
+
+The archive page exposes:
+
+- full-text/search input labeled for `ID / 日期 / codec / language`;
+- archive-date controls for year, month and day;
+- duration filters: `全部`, `短`, `中`, `长`, `超长`;
+- newest-first result ordering;
+- an initial result list plus a `加载更多` control.
+
+The visible archive count is not treated as a stable source identifier. Different indexed/cached page observations showed different totals, so collectors must not embed a global count as an integrity invariant.
+
+### Detail URL and GHOT source-page ID
+
+Observed detail pattern:
+
+```text
+https://ghot.ai/archive/videos/YYYY-MM-DD-N
+```
+
+Verified examples:
+
+```text
+https://ghot.ai/archive/videos/2018-11-25-3
+https://ghot.ai/archive/videos/2019-05-30-2
+https://ghot.ai/archive/videos/2022-05-11-2
+https://ghot.ai/archive/videos/2023-03-14-1
+```
+
+The final slug is a strong GHOT `source_page_id` candidate and should be preserved exactly as third-party source identity. It must not become the canonical internal `live_id`.
+
+Important edge case: GHOT path suffix and source-side/title numbering are not guaranteed to be identical. A verified page at:
+
+```text
+https://ghot.ai/archive/videos/2020-10-01-3
+```
+
+is titled:
+
+```text
+2020.10.01-2 10.1的直播_X264
+```
+
+Therefore collectors must store both the GHOT slug and the published/source-side label separately and must never rewrite one from the other.
+
+### Detail metadata observed
+
+Depending on the record and rendering state, detail/indexed pages expose:
+
+- published/display date;
+- source title;
+- language (`zh` observed);
+- duration;
+- video dimensions/resolution when known;
+- archive/transcription status indicators;
+- original-video platform/link where available;
+- external GETTR / Rumble / GWINS links;
+- transcript section and fallback text excerpt.
+
+Metadata completeness varies by record. Verified examples include:
+
+```text
+2018-11-25-3 -> 640×480, 1m 00s
+2023-01-26-1 -> 1920×1080, 9m 58s
+2022-05-11-2 -> resolution shown as unknown/— in one indexed view, duration about 2h 35m
+```
+
+Unknown resolution must remain null/unknown; it must not be inferred from another mirror.
+
+### Verified cross-source/original links
+
+Example:
+
+```text
+GHOT:   https://ghot.ai/archive/videos/2022-05-11-2
+GETTR:  https://gettr.com/streaming/p19cmxu5e7b
+Rumble: https://rumble.com/v5af5v1-20220511-2.html
+GWINS:  https://gwins.org/cn/milesguo/23878.html
+```
+
+The GETTR page title confirms the linked streaming item is `七哥与战友们连线直播`.
+
+Another verified example:
+
+```text
+GHOT:  https://ghot.ai/archive/videos/2023-03-14-1
+GETTR: https://gettr.com/post/p2bexmi7ac8
+GWINS: https://gwins.org/cn/milesguo/24264.html
+```
+
+The GETTR target may be a `/streaming/<id>` URL or a `/post/<id>` URL. Preserve the complete target URL and extract the third-party ID only after identifying the actual platform URL type.
+
+### Link-label normalization risk
+
+Do not normalize platform from GHOT's visible link label alone.
+
+A verified older page:
+
+```text
+https://ghot.ai/archive/videos/2018-11-25-3
+```
+
+renders a first external link under the generic visible label `GETTR`, while that target resolves to `youtu.be` in the indexed page data. This means collectors should preserve:
+
+```text
+displayed_link_label
+actual_target_url
+normalized_platform_from_target_hostname
+```
+
+and flag disagreement for review rather than silently rewriting provenance.
+
+### Static HTML vs dynamic/API-backed behavior
+
+Observed behavior is consistent with a mixed/hybrid page rather than a purely static document:
+
+- the archive page presents an initial result set and a `加载更多` control;
+- transcript areas visibly show `正在加载转写…` before/alongside available indexed text;
+- some direct detail fetches expose a page shell saying `未找到该视频条目` while the same response/indexed representation still contains fallback title/date/transcript excerpts and source links.
+
+This strongly indicates client-side hydration and/or dynamic data loading for at least part of the page state. An exact public API endpoint was **not** verified in this task and must not be invented. Future collector code should first prefer documented/stable page data or a separately verified endpoint and should cache responses at low request rates.
+
+### Duplicate and identity behavior
+
+GHOT cannot be treated as one date = one livestream:
+
+- the list contains multiple same-day records such as `2023-03-12-1` / `2023-03-12-2` and `2023-03-07-1` / `2023-03-07-2`;
+- the GHOT slug suffix can differ from a source-side ordinal embedded in the published title;
+- one GHOT detail can expose several external representations of the same underlying material (GETTR, Rumble, GWINS, and in older cases YouTube/Odysee links).
+
+No exact-content duplicate pair was conclusively proven during this structural task, so duplicate equivalence must remain unresolved unless stronger evidence exists. Cross-source identity belongs to `P4-IDENTITY-RULES` and should use exact external platform IDs first, then date/title/duration/text evidence.
+
+### Structural extraction recommendation
+
+For each GHOT record preserve at minimum:
+
+```text
+source_site = ghot
+source_page_id = exact YYYY-MM-DD-N slug
+url = full GHOT detail URL
+source_title = exact published title
+display_date
+language
+duration_sec when explicitly available
+width / height when explicitly available
+archive_status / transcript_status when exposed
+original_video_url when exposed
+external_links[] = {displayed_label, url, normalized_platform, source_video_id}
+retrieved_at
+verification_status
+```
+
+Do not derive canonical `live_id` from the GHOT slug. Do not infer dimensions, source platform, or source ordinal from title/labels when the actual target contradicts them.
+
+### Known structural risks / edge cases
+
+1. GHOT slug suffix may not match source/title ordinal.
+2. Same date can contain multiple distinct records.
+3. Resolution metadata can be missing even when duration/text exists.
+4. External visible labels can disagree with the actual target hostname.
+5. GETTR targets occur in both `/streaming/<id>` and `/post/<id>` forms.
+6. Page state is at least partly dynamic; fallback/indexed content and live UI state can differ.
+7. Search/index snapshots may report different aggregate archive counts; counts are not stable identity data.
+8. Transcript/time-axis granularity and ASR accuracy are intentionally deferred to `P2-GHOT-TIMELINE`.
 
 ## GettrSearch
 
