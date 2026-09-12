@@ -93,13 +93,16 @@ Real decoded-media playback verification is a separate retryable queue:
 python scripts/playback_queue.py --list
 ```
 
-If the runtime has `ffmpeg` + `ffprobe` and can inspect generated clip/frame/audio evidence, playback-capable Agents should claim missing playback work with:
+If the runtime has `ffmpeg` + `ffprobe` **and can actually inspect generated clip/frame/audio evidence**, playback-capable Agents may claim missing playback work only with the explicit capability declaration:
 
 ```bash
-python scripts/playback_queue.py --claim --agent-id agent-<UTC>-<random>
+python scripts/playback_queue.py \
+  --claim \
+  --content-inspection-capable \
+  --agent-id agent-<UTC>-<random>
 ```
 
-Do **not** claim real playback work when the runtime cannot execute media tools or inspect the generated evidence. Transcript/source-page timestamp checking is not a substitute.
+The flag is an auditable assertion, not a bypass. Do **not** pass it when the runtime can execute media commands but cannot inspect decoded content and determine the observed content position. Transcript/source-page timestamp checking is not a substitute.
 
 An ordinary `S-AUDIT-*` task may finish with zero qualifying playback checks; that preserves useful source/timeline evidence but does not make the case complete for Pilot-60. Later playback-capable work adds durable records under `data/playback_audits/` without rewriting that history.
 
@@ -117,7 +120,9 @@ python scripts/playback_queue.py --seal-gate --agent-id <agent-id>
 
 Therefore 60 audit markers, 60 webpage timestamps, or 60 successful ffmpeg decodes without content inspection cannot unlock P9.
 
-Claim an eligible task, execute it, validate it, commit/push it, finish it, then claim the next eligible task.
+If ordinary work is empty but playback work remains, that is **not repository-wide `NO_ELIGIBLE_WORK`**. A runtime that lacks media execution or content-inspection capability may classify only its own session as `HOST_STOP` / runtime capability limitation. `SAFETY_OR_ACCESS_BLOCK` is reserved for cases where progress would require bypassing login, CAPTCHA, paywall, DRM, or another access control.
+
+Claim an eligible task, execute it, validate it, commit/push it, finish it, then refresh **both** queues and continue.
 
 Under `continuous-worker-v2`, completing one task or batch is not a stop condition. Continue until a documented stop condition in the repository applies.
 
