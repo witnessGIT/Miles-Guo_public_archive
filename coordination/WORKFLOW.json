@@ -5,6 +5,8 @@
   "agent_permissions_version": "agent-permissions-v1",
   "media_audit_contract_version": "playback-audit-evidence-v1",
   "playback_claim_contract_version": "playback-claim-capability-v1",
+  "project_status_contract_version": "project-status-v1",
+  "project_status_classifier": "scripts/project_status.py",
   "pilot60_evidence_root": "data/playback_audits",
   "pilot60_recorder": "scripts/record_playback_audit.py",
   "pilot60_gate": "scripts/audit_gate.py",
@@ -15,8 +17,16 @@
   "pilot60_claim_requires_content_inspection_declaration": true,
   "pilot60_claim_flag": "--content-inspection-capable",
   "legacy_audit_readiness_counts_as_playback": false,
+  "decode_without_content_inspection_counts_as_playback": false,
   "p9_claimable_before_playback_gate_sentinel": false,
-  "admin_github_logins": ["witnessGIT"],
+  "p10_claimable_before_p9_complete": false,
+  "full_archive_authorized_before_p10_decision": false,
+  "ordinary_queue_empty_plus_playback_open_means_repository_no_work": false,
+  "runtime_without_playback_capability_when_only_playback_remains": "HOST_STOP",
+  "backlog_docs_or_export_tools_unlock_p9": false,
+  "admin_github_logins": [
+    "witnessGIT"
+  ],
   "default_role_when_identity_unknown": "worker",
   "worker_may_fix_bugs": false,
   "worker_bug_action": "create_new_immutable_report_in_coordination_bug_reports",
@@ -51,13 +61,17 @@
     "Only classify GITHUB_WRITE_ERROR when the exact claim remains absent after fresh bounded retries and no race/staleness/moving-main explanation applies.",
     "External prompts should not duplicate project requirements; Agents must load them from the repository.",
     "A minimal prompt containing only the repository address and an instruction to start work is sufficient.",
+    "Run scripts/project_status.py before classifying WORK_AVAILABLE, HOST_STOP, or NO_ELIGIBLE_WORK so ordinary and playback queues are evaluated together.",
     "Git provides durable coordination and resume state; it cannot revive a host-suspended ChatGPT/Work/Codex session.",
     "An S-AUDIT completion or coordination/ready/audit marker does not by itself contribute a Pilot-60 playback check.",
     "Real playback work is retryable and independent through scripts/playback_queue.py; blocked runtime attempts release the case for later retry instead of converting transcript checks into playback evidence.",
-    "A playback claim now requires ffmpeg, ffprobe, and an explicit --content-inspection-capable declaration; a runtime that can run commands but cannot inspect decoded content must not claim a playback case.",
+    "A playback claim requires ffmpeg, ffprobe, and an explicit --content-inspection-capable declaration; a runtime that can run commands but cannot inspect decoded content must not claim a playback case.",
     "Pilot-60 counts only canonical-crosschecked data/playback_audits records created after successful real-media decode plus actual content inspection with observed position and timing error.",
+    "Successful decode without content inspection contributes zero qualifying playback checks.",
     "P9-AUDIT-60 remains blocked until scripts/audit_gate.py passes and scripts/playback_queue.py --seal-gate creates P9-PLAYBACK-GATE.",
+    "P10-PILOT-DECISION remains blocked until P9-AUDIT-60 completes, and FULL_ARCHIVE remains unauthorized until P10 explicitly decides YES.",
     "If ordinary work is empty but playback work remains, repository-wide NO_ELIGIBLE_WORK is false; a non-media runtime may only classify its own session as HOST_STOP/runtime capability limitation.",
-    "Missing shell/media execution or inability to inspect generated clips is HOST_STOP/runtime capability limitation; SAFETY_OR_ACCESS_BLOCK is reserved for access that would require bypassing login, CAPTCHA, paywall, DRM, or other controls."
+    "Missing shell/media execution or inability to inspect generated clips is HOST_STOP/runtime capability limitation; SAFETY_OR_ACCESS_BLOCK is reserved for access that would require bypassing login, CAPTCHA, paywall, DRM, or other controls.",
+    "Backlog documentation or collection/export tooling may be completed when independently claimable, but cannot substitute for playback evidence and cannot unlock P9/P10/FULL_ARCHIVE."
   ]
 }
