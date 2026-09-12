@@ -51,8 +51,6 @@ Admin rule:
 admin = may execute project tasks + review/fix bug reports + modify protected control plane
 ```
 
-Admin Agents should review open bug reports before ordinary work when a bug blocks correctness or other Agents.
-
 ## Required bootstrap
 
 Read and follow, in order:
@@ -69,9 +67,10 @@ Read and follow, in order:
 10. `docs/PROJECT_REQUIREMENTS.md`
 11. `docs/NAMING_AND_WORKFLOW.md`
 12. `docs/MEDIA_AUDIT.md`
-13. current `claims/`, `completed/`, `ready/`, `bug_reports/`, `playback_attempts/`, data and reports relevant to the next task
+13. `docs/P10-LEGACY-MIGRATION.md`
+14. current `claims/`, `completed/`, `ready/`, `bug_reports/`, `playback_attempts/`, data and reports relevant to the next task
 
-## First command — classify by role, task type and runtime capability
+## First command — classify current state
 
 Worker / unknown identity:
 
@@ -93,16 +92,55 @@ If the runtime can genuinely inspect decoded clip/frame/audio content and determ
 
 Do **not** pass that flag merely because shell commands or ffmpeg can execute.
 
-The classifier separates four task types:
+## Current acceptance revision
+
+The old task identities:
+
+```text
+P9-AUDIT-60
+P10-PILOT-DECISION
+```
+
+already have historical completion records from the pre-playback-gate workflow. Those files are immutable audit history only and MUST NOT be interpreted as current Pilot completion or FULL_ARCHIVE authorization.
+
+The current acceptance tasks are:
+
+```text
+P9-AUDIT-60-R2
+P10-PILOT-DECISION-R2
+```
+
+Current chain:
+
+```text
+P9-PLAYBACK-PILOT-* real playback work
+        ↓
+data/playback_audits/
+        ↓
+scripts/audit_gate.py => pilot60_pass=true
+        ↓
+P9-PLAYBACK-GATE
+        ↓
+P9-AUDIT-60-R2
+        ↓
+P10-PILOT-DECISION-R2
+        ↓
+FULL_ARCHIVE YES / NO
+```
+
+Never delete or rewrite the historical P9/P10 records simply to make the new chain work. The R2 task IDs exist specifically so the current workflow can be completed without destroying history.
+
+## Task types
 
 | Task type | Examples | Media playback required? | Who may do it? |
 |---|---|---:|---|
 | `ordinary_business` | collection, alignment, source/transcript audit, data validation | No, unless explicitly stated | worker/admin |
 | `real_playback` | `P9-PLAYBACK-*` decoded-media timing checks | **Yes**: ffmpeg + ffprobe + actual content inspection | playback-capable worker/admin |
-| `gate_or_report` | `P9-AUDIT-60`, `P10-PILOT-DECISION`, aggregate gates/reports | No replay required once prerequisites pass | worker/admin |
+| `gate_or_report` | `P9-AUDIT-60-R2`, `P10-PILOT-DECISION-R2`, aggregate gates/reports | No replay required once prerequisites pass | worker/admin |
 | `admin_control` | bug fixes, scripts/schema/CI/workflow/control-plane repair | No playback requirement by default | **admin only** |
+| `legacy_record` | old P9/P10 task identities | Not executable | nobody; audit history only |
 
-This distinction is mandatory. Lack of Playback capability does **not** block ordinary, gate/report, or admin-compatible work.
+Lack of playback capability does **not** block ordinary, gate/report, or admin-compatible work.
 
 ## Status meanings
 
@@ -120,17 +158,15 @@ NO_ELIGIBLE_WORK
 Interpret them narrowly:
 
 - `WORK_AVAILABLE`: this session has at least one compatible task now.
-- `HOST_STOP`: the remaining **unclaimed** work that this session could otherwise take is real Playback, Pilot-60 has not passed, and this runtime cannot honestly perform decoded-media inspection. This is a **session capability limit**, not repository-wide no-work.
+- `HOST_STOP`: the remaining unclaimed work this session could otherwise take is real playback, Pilot-60 has not passed, and this runtime cannot honestly inspect decoded media. This is a session capability limit, not repository-wide no-work.
 - `ROLE_STOP`: project work remains but it is admin-only and this session is a worker.
-- `WAIT_FOR_ACTIVE_CLAIMS`: work exists but all relevant work is currently held by other Agents.
+- `WAIT_FOR_ACTIVE_CLAIMS`: work exists but relevant work is currently held by other Agents.
 - `WAIT_FOR_DEPENDENCY`: project work exists but this session has no currently executable compatible task.
-- `NO_ELIGIBLE_WORK`: no currently relevant project work remains across ordinary, playback, gate transition, or open admin bug queues.
-
-An admin Agent MUST NOT report `HOST_STOP` merely because Playback is unavailable while open admin bug reports or other compatible non-media work remain.
+- `NO_ELIGIBLE_WORK`: no currently relevant work remains across ordinary, playback, gate transition, or admin bug queues.
 
 ## Critical Pilot-60 transition rule
 
-`P9-AUDIT-60` is blocked by `P9-PLAYBACK-GATE` until real qualifying playback evidence satisfies the acceptance thresholds.
+`P9-AUDIT-60-R2` is blocked by `P9-PLAYBACK-GATE` until real qualifying playback evidence satisfies the acceptance thresholds.
 
 Run:
 
@@ -138,18 +174,18 @@ Run:
 python scripts/audit_gate.py --json
 ```
 
-Only canonical-crosschecked durable records under `data/playback_audits/` count. Transcript timestamps, source-page timestamps, ASR anchors, ordinary `S-AUDIT-*` completion markers, and successful ffmpeg decoding without content inspection do not count.
+Only canonical-crosschecked durable records under `data/playback_audits/` count. Transcript timestamps, source-page timestamps, ASR anchors, ordinary `S-AUDIT-*` completion markers, written audit reports, and successful ffmpeg decoding without actual content inspection do not count.
 
-When `pilot60_pass=true`, the acceptance path changes immediately:
+When `pilot60_pass=true`:
 
 ```text
 Pilot-60 passed
     ↓
 seal P9-PLAYBACK-GATE
     ↓
-P9-AUDIT-60
+P9-AUDIT-60-R2
     ↓
-P10-PILOT-DECISION
+P10-PILOT-DECISION-R2
 ```
 
 Seal with:
@@ -158,11 +194,9 @@ Seal with:
 python scripts/playback_queue.py --seal-gate --agent-id <agent-id>
 ```
 
-**Important:** once Pilot-60 has passed, extra unreviewed playback cases do not keep the acceptance path in `HOST_STOP`. Sealing the gate and executing P9/P10 are non-playback tasks. A session without media capability may continue through those stages when they become eligible.
+Once Pilot-60 has passed, extra unreviewed playback cases do not keep the acceptance path in `HOST_STOP`. Sealing the gate and executing current P9/P10 are non-playback tasks.
 
 ## Ordinary queue
-
-Discover ordinary business and gate/report tasks with:
 
 ```bash
 python scripts/next_task.py --list
@@ -171,8 +205,6 @@ python scripts/next_task.py --list
 Claim, execute, validate, commit/push, finish, refresh state, and continue.
 
 ## Real Playback queue
-
-Real decoded-media verification is separate and retryable:
 
 ```bash
 python scripts/playback_queue.py --list
@@ -187,35 +219,21 @@ python scripts/playback_queue.py \
   --agent-id agent-<UTC>-<random>
 ```
 
-The flag is an auditable assertion, not a bypass. If the runtime can decode but cannot inspect clip/frame/audio content and determine the observed position, it must not claim Playback work.
+The flag is an auditable assertion, not a bypass. If the runtime can decode but cannot inspect clip/frame/audio content and determine the observed position, it must not claim playback work.
 
-A blocked Playback attempt must preserve `counts_toward_pilot_60=false`, release the claim, and allow a later capable Agent to retry.
+A blocked playback attempt must preserve `counts_toward_pilot_60=false`, release the claim, and allow a later capable Agent to retry.
 
-## Admin bug queue
+## Current P9 / P10 capability rule
 
-Workers report bugs under:
+`P9-AUDIT-60-R2` and `P10-PILOT-DECISION-R2` are gate/report tasks. They do **not** require the executing Agent to personally replay media once real playback prerequisites have passed and durable evidence exists.
 
-```text
-coordination/bug_reports/
-```
-
-Workers do not repair them.
-
-Verified `witnessGIT` admin Agents treat unresolved or malformed bug reports as actionable admin work. Open admin bugs therefore count as project work and prevent an admin session from incorrectly declaring `HOST_STOP` or repository-wide `NO_ELIGIBLE_WORK` when it can still perform the repair.
-
-## P9 / P10 capability rule
-
-`P9-AUDIT-60` and `P10-PILOT-DECISION` are `gate_or_report` tasks.
-
-They do **not** require the executing Agent to personally replay media once the real Playback prerequisites have already passed and durable evidence exists. They may still require repository reads, validation, report generation, and normal task claiming.
-
-`P10-PILOT-DECISION` remains blocked until P9 completes. FULL_ARCHIVE remains locked unless P10 records an explicit machine-readable:
+`P10-PILOT-DECISION-R2` remains blocked until current P9 completes. FULL_ARCHIVE remains locked unless current P10 records an explicit machine-readable:
 
 ```text
 full_archive_decision=YES
 ```
 
-`NO`, missing, or invalid decision values do not authorize FULL_ARCHIVE.
+`NO`, missing, or invalid decision values do not authorize FULL_ARCHIVE. Historical `P10-PILOT-DECISION` never authorizes the current chain.
 
 ## Mandatory claim-race behavior
 
@@ -234,8 +252,6 @@ success
 ```
 
 A single `422` or `409` MUST NOT stop the worker. `409` often means `main` moved between read and write. Never force-overwrite concurrent work.
-
-See `coordination/CLAIM_PROTOCOL_V2.md` for the authoritative procedure.
 
 ## Repository authority
 
