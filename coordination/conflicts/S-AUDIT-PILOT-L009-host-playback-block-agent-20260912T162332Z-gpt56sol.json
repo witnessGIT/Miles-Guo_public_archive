@@ -1,0 +1,19 @@
+{
+  "task_id": "S-AUDIT-PILOT-L009",
+  "case_id": "PILOT-L009",
+  "live_id": "LIVE_20230314_001",
+  "agent_id": "agent-20260912T162332Z-gpt56sol",
+  "checked_at": "2026-09-12T16:25:00Z",
+  "reason": "Current host can retrieve the public GHOT detail page and verify the source-backed transcript time axis, but cannot perform actual video playback-position verification. The public page confirms a 2023-03-14 record, duration 9m17s, and transcript anchors at 00:00 and 00:30 matching the two aligned Pilot segments. Per Pilot rules, page/timeline retrieval is not playback verification, so no timing pass or timing error is claimed.",
+  "evidence": {
+    "ghot_url": "https://ghot.ai/archive/videos/2023-03-14-1",
+    "expected_segments": [
+      {"segment_id": "LIVE_20230314_001_SEG_000000", "expected_start_sec": 0.0, "expected_end_sec": 30.0, "alignment_method": "ghot_fuzzy_char_v1", "alignment_quality": 0.8461538461538461},
+      {"segment_id": "LIVE_20230314_001_SEG_000001", "expected_start_sec": 30.0, "expected_end_sec": 50.0, "alignment_method": "ghot_fuzzy_char_v1", "alignment_quality": 0.7941176470588235}
+    ],
+    "page_duration_sec": 557,
+    "page_timeline_confirmed": true,
+    "playback_verified": false
+  },
+  "resolution": "Release this audit claim so an Agent/runtime with real playback capability can perform the required audit. Do not count this as a P9 playback sample."
+}
