@@ -1,9 +1,11 @@
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
 import subprocess
 import time
+from collections import defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -15,6 +17,7 @@ READY = ROOT / "coordination" / "ready"
 PILOT_SELECTION = ROOT / "reports" / "pilot_selection.json"
 
 WORKFLOW_MODE = "continuous-worker-v2"
+CLAIM_PROTOCOL = "claim-protocol-v2"
 
 LEGACY_BATCH_TASKS = {
     "early": "P6-PILOT-EARLY-B001",
@@ -179,9 +182,6 @@ def stream_tasks(done: set[str]) -> list[dict]:
             }
 
             if not collection_ready:
-                # Grandfather existing legacy batch claims. Never duplicate their
-                # collection work. Their owners may unlock individual cases early
-                # with --mark-ready collection.
                 if legacy_active:
                     continue
                 tasks.append(
@@ -266,6 +266,34 @@ def eligible_tasks() -> list[dict]:
     return filtered
 
 
+def candidate_order(
+    eligible: list[dict],
+    agent_id: str,
+    requested_task: str | None,
+) -> list[dict]:
+    """Preserve priority bands while spreading Agents across same-priority tasks."""
+    if requested_task:
+        matches = [task for task in eligible if task["id"] == requested_task]
+        if not matches:
+            raise SystemExit(f"Task {requested_task!r} is not currently eligible.")
+        return matches
+
+    if not eligible:
+        return []
+
+    seed = int(hashlib.sha256(agent_id.encode("utf-8")).hexdigest(), 16)
+    bands: dict[int, list[dict]] = defaultdict(list)
+    for task in eligible:
+        bands[int(task.get("priority", 0))].append(task)
+
+    ordered: list[dict] = []
+    for band_index, priority in enumerate(sorted(bands, reverse=True)):
+        band = sorted(bands[priority], key=lambda item: item["id"])
+        offset = (seed + band_index) % len(band)
+        ordered.extend(band[offset:] + band[:offset])
+    return ordered
+
+
 def claim_task(task: dict, agent_id: str) -> Path:
     CLAIMS.mkdir(parents=True, exist_ok=True)
     path = CLAIMS / f"{task['id']}.json"
@@ -276,6 +304,7 @@ def claim_task(task: dict, agent_id: str) -> Path:
         "base_commit": current_commit(),
         "status": "in_progress",
         "workflow_mode": WORKFLOW_MODE,
+        "claim_protocol": CLAIM_PROTOCOL,
         "continue_after_finish": True,
         "stage": task.get("stage"),
         "case_id": task.get("case_id"),
@@ -286,6 +315,36 @@ def claim_task(task: dict, agent_id: str) -> Path:
         json.dump(payload, fh, ensure_ascii=False, indent=2)
         fh.write("\n")
     return path
+
+
+def claim_from_candidates(
+    eligible: list[dict],
+    agent_id: str,
+    requested_task: str | None,
+    max_attempts: int,
+) -> tuple[dict, Path] | None:
+    ordered = candidate_order(eligible, agent_id, requested_task)
+    if not ordered:
+        return None
+
+    attempt_limit = min(len(ordered), max(1, max_attempts))
+    for attempt, task in enumerate(ordered[:attempt_limit], start=1):
+        try:
+            path = claim_task(task, agent_id)
+            if attempt > 1:
+                print(
+                    f"CLAIM_SUCCESS after {attempt} attempts: {task['id']} "
+                    f"({attempt - 1} local claim races skipped)."
+                )
+            return task, path
+        except FileExistsError:
+            print(
+                f"CLAIM_RACE_LOST: {task['id']} already has a claim locally; "
+                "trying another eligible task."
+            )
+            continue
+
+    return None
 
 
 def create_ready_marker(
@@ -393,6 +452,7 @@ def finish_task(
         "outputs": outputs,
         "validation": validation,
         "workflow_mode": claim.get("workflow_mode", "legacy-grandfathered"),
+        "claim_protocol": claim.get("claim_protocol", "legacy"),
         "continue_after_finish": claim.get("workflow_mode") == WORKFLOW_MODE,
         "notes": (
             "Task completed. Under continuous-worker-v2, refresh repository state and "
@@ -504,6 +564,15 @@ def main() -> None:
         default=60,
         help="Watch polling interval; minimum 10 seconds, default 60.",
     )
+    parser.add_argument(
+        "--max-claim-attempts",
+        type=int,
+        default=10,
+        help=(
+            "Maximum eligible candidates tried in one local claim cycle after claim races; "
+            "default 10."
+        ),
+    )
     args = parser.parse_args()
 
     if args.mark_ready:
@@ -578,22 +647,36 @@ def main() -> None:
     if not args.agent_id:
         raise SystemExit("--claim requires --agent-id.")
 
-    chosen = choose_task(eligible, args.task)
-
-    try:
-        path = claim_task(chosen, args.agent_id)
-    except FileExistsError:
+    claimed = claim_from_candidates(
+        eligible=eligible,
+        agent_id=args.agent_id,
+        requested_task=args.task,
+        max_attempts=args.max_claim_attempts,
+    )
+    if not claimed:
         raise SystemExit(
-            f"Claim lost: {chosen['id']} was claimed concurrently. "
-            "Pull latest state and claim another task instead of waiting."
+            "CLAIM_RACE_LOST: all attempted local candidates became unavailable. "
+            "Refresh/pull repository state and run --claim again. This is not a "
+            "GITHUB_WRITE_ERROR and not a reason to stop the continuous worker."
         )
 
+    chosen, path = claimed
     print(f"Claim created locally: {path.relative_to(ROOT)}")
     print_task(chosen)
-    print(f"  workflow_mode={WORKFLOW_MODE} continue_after_finish=true")
+    print(
+        f"  workflow_mode={WORKFLOW_MODE} claim_protocol={CLAIM_PROTOCOL} "
+        "continue_after_finish=true"
+    )
     print(
         "\nIMPORTANT: immediately commit and push the claim before doing the work. "
-        "If push loses a race, remove the local claim, pull, and claim another task."
+        "If the remote push/create loses a race, verify the exact remote claim path. "
+        "If it now exists, classify CLAIM_RACE_LOST, refresh main, and claim another task."
+    )
+    print(
+        "For GitHub API create_file: HTTP 422 is not automatically a write outage. "
+        "Fetch coordination/claims/<TASK_ID>.json first; if it exists, another Agent won. "
+        "Only call it GITHUB_WRITE_ERROR after the exact path remains absent across fresh, "
+        "bounded retries as documented in coordination/CLAIM_PROTOCOL_V2.md."
     )
     print(
         "After the claim is visible on main: execute the task, validate real outputs, "
