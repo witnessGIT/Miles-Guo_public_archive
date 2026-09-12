@@ -36,7 +36,8 @@ def main() -> int:
     parser = argparse.ArgumentParser(
         description=(
             "Record one qualifying real playback timing check after audit_media.py "
-            "has decoded the media and a reviewer has inspected the content."
+            "has decoded media on both sides of the canonical timestamp and a reviewer "
+            "has inspected the content."
         )
     )
     parser.add_argument("--case-id", required=True)
@@ -104,13 +105,28 @@ def main() -> int:
 
     if not decode.get("ok") or not decode.get("playback_decode_verified"):
         parser.error("decode evidence does not prove successful real-media decoding")
+
     try:
-        decode_start = float(decode.get("requested_start_sec"))
+        decode_expected = float(
+            decode.get("expected_start_sec", decode.get("requested_start_sec"))
+        )
+        decode_start = float(decode.get("decode_start_sec", decode_expected))
+        decode_window = float(decode.get("decode_window_sec"))
     except (TypeError, ValueError):
-        parser.error("decode evidence lacks numeric requested_start_sec")
-    if abs(decode_start - args.expected_start) > 0.001:
         parser.error(
-            "decode evidence requested_start_sec does not match the canonical expected start"
+            "decode evidence must contain numeric expected/requested start, decode start, "
+            "and decode window"
+        )
+    decode_end = decode_start + decode_window
+
+    if abs(decode_expected - args.expected_start) > 0.001:
+        parser.error("decode evidence expected_start_sec does not match canonical expected start")
+    if decode_start > args.expected_start + 0.001 or decode_end < args.expected_start - 0.001:
+        parser.error("decoded media window does not contain the canonical expected position")
+    if args.observed_position < decode_start - 0.001 or args.observed_position > decode_end + 0.001:
+        parser.error(
+            f"observed position {args.observed_position} is outside decoded media window "
+            f"[{decode_start}, {decode_end}]"
         )
     if str(decode.get("media_source")) != args.media_url:
         parser.error("--media-url must exactly match decode evidence media_source")
@@ -150,8 +166,12 @@ def main() -> int:
         "content_timing_verified": True,
         "reviewer": args.reviewer,
         "reviewed_at": utc_now(),
-        "decode_request_start_sec": decode_start,
-        "decode_window_sec": decode.get("decode_window_sec"),
+        # Compatibility name retained: this is the expected canonical position used to
+        # request the audit, not necessarily the ffmpeg seek point.
+        "decode_request_start_sec": decode_expected,
+        "decode_start_sec": decode_start,
+        "decode_end_sec": decode_end,
+        "decode_window_sec": decode_window,
         "decode_resolver": (decode.get("resolution") or {}).get("resolver"),
         "decode_media_source": decode.get("media_source"),
         "decode_evidence_sha256": sha256_file(evidence_path),
@@ -159,8 +179,9 @@ def main() -> int:
         "frame_sha256": frame_hash,
         "decode_evidence_ref": durable_path_reference(evidence_path),
         "note": (
-            "Temporary decoded media remains under cache/. This durable record is bound "
-            "to the canonical segment start and stores source, observed position and hashes."
+            "Temporary decoded media remains under cache/. The decoded window may begin "
+            "before the canonical timestamp so both negative and positive timing errors can "
+            "be measured. This durable record is bound to the canonical segment start."
         ),
     }
 
