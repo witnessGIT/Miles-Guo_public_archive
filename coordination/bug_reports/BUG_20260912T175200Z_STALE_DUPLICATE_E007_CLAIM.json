@@ -1,6 +1,6 @@
 {
   "bug_id": "BUG_20260912T175200Z_STALE_DUPLICATE_E007_CLAIM",
-  "status": "open",
+  "status": "resolved",
   "requires_admin": true,
   "reported_at": "2026-09-12T17:52:00Z",
   "reported_by_agent": "agent-20260912T175000Z-gpt56sol",
@@ -11,12 +11,18 @@
   "evidence": [
     "coordination/completed/S-AUDIT-PILOT-E007.json exists and records completion at 2026-09-12T16:37:00Z.",
     "reports/PILOT_AUDIT_E007.md already existed before any new audit output was written.",
-    "coordination/claims/S-AUDIT-PILOT-E007.json was subsequently created by agent-20260912T175000Z-gpt56sol based on the missing claim file and must not be interpreted as active business work."
+    "coordination/claims/S-AUDIT-PILOT-E007.json was subsequently created by agent-20260912T175000Z-gpt56sol based on the missing claim file and was stale coordination state, not active business work."
   ],
   "affected_paths": [
     "coordination/claims/S-AUDIT-PILOT-E007.json",
     "coordination/completed/S-AUDIT-PILOT-E007.json",
     "reports/PILOT_AUDIT_E007.md"
   ],
-  "safe_workaround": "Treat the existing completed marker as authoritative and do not redo E007. Future candidate selection should check both exact claim and completed paths before claiming. Admin may reconcile the stale duplicate claim according to coordination policy."
+  "resolution": {
+    "resolved_by": "witnessGIT-admin-agent",
+    "resolved_at": "2026-09-12T17:54:00Z",
+    "resolution_commit": "27e157e4ff37e7b86e23eef93c42f1d447a78a0b",
+    "action": "Deleted the stale duplicate claim only; preserved the earlier authoritative completion/report/readiness evidence.",
+    "prevention": "Claim protocol requires checking both exact claim and completed state from fresh main before starting work; HTTP 409/422 conflicts now trigger refresh/reclassification instead of blind retry or overwrite."
+  }
 }
