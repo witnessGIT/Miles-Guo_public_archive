@@ -2,216 +2,317 @@
 
 Project: `Miles-Guo_public_archive`
 
-Purpose: distinguish transcript/source timestamp corroboration from **real decoded-media timing verification** and make Pilot-60 evidence reproducible.
+Purpose: prove timing against **real decoded media** while allowing ordinary GitHub-connected Agents to complete Playback Audit without local media tools.
 
-## Required distinction
+## Non-negotiable distinction
 
-The project has two verification states and they MUST NOT be conflated:
+These states MUST NOT be conflated:
 
 1. `playback_decode_verified=true`
-   - real media bytes were resolved and decoded around the expected timestamp;
-   - this proves the media is technically accessible and seekable in the runtime;
-   - by itself it does **not** count toward Pilot-60.
+   - real media bytes were resolved and decoded around the canonical timestamp;
+   - decode success alone contributes **zero** Pilot-60 checks.
 
 2. `content_timing_verified=true`
-   - a reviewer actually inspected decoded clip/frame/audio content;
-   - the expected phrase/event was located in the decoded media;
+   - decoded-media evidence located the canonical target content;
    - an observed media position and signed timing error were recorded;
+   - the evidence was independently accepted under an allowed review path;
    - only this state may contribute a qualifying playback check.
 
-Transcript anchors, HTML timestamps, source-page timestamps and search snippets are not playback verification.
+Transcript anchors, source-page timestamps, HTML timestamps, ASR copied from third-party pages, and ordinary `S-AUDIT-*` records are not Playback Audit evidence.
 
-## Real playback task queue
+## Preferred path: Repository Playback Evidence Service
 
-Ordinary `S-AUDIT-*` tasks may finish with zero qualifying playback checks. Those results remain useful provenance/timeline evidence, but they do not close real playback work.
+Ordinary Agents do **not** need local `ffmpeg`, `ffprobe`, `yt-dlp`, Whisper or a graphical video player.
 
-Real playback work is independently retryable:
+The preferred chain is:
+
+```text
+worker claims P9-PLAYBACK-*
+  -> worker writes playback request
+  -> GitHub Actions validates canonical identity and media provenance
+  -> ffprobe/ffmpeg decode real media around expected timestamp
+  -> whisper.cpp re-transcribes decoded audio with local timestamps
+  -> canonical segment text is fuzzy-matched against the new decoded-audio ASR
+  -> frames around the expected point are extracted and OCRed
+  -> optional free SmolVLM2 adds visual description
+  -> durable evidence.json/evidence.md is committed
+  -> worker reads that evidence
+  -> worker explicitly accepts only if the evidence matches the canonical content
+  -> service creates canonical-crosschecked playback-audit v2 record
+```
+
+Implementation:
+
+```text
+.github/workflows/playback-evidence-service.yml
+scripts/process_playback_request.py
+scripts/accept_playback_evidence.py
+scripts/playback_validation.py
+```
+
+Default free stack:
+
+```text
+GitHub public-repository standard runner
+ffmpeg / ffprobe
+yt-dlp
+whisper.cpp
+Tesseract OCR
+optional SmolVLM2-256M-Video-Instruct
+```
+
+The audio path is primary because Pilot segments are mostly speech/text anchors. Visual analysis is supporting evidence and a fallback for ambiguity, not the sole timing oracle.
+
+## Claiming Playback work
 
 ```bash
 python scripts/playback_queue.py --list
+python scripts/playback_queue.py --claim --agent-id agent-<UTC>-<random>
 ```
 
-A runtime may claim playback work only when it has `ffmpeg`, `ffprobe`, **and can actually inspect the generated media content**:
+When the repository service exists, the claim does not require local ffmpeg or `--content-inspection-capable`.
+
+`--content-inspection-capable` remains an optional declaration for the older/local-manual fallback path only.
+
+## Playback request contract
+
+For each missing canonical timed segment, use a **public media URL already preserved in repository provenance for that live**.
+
+Preferred path:
+
+```text
+coordination/playback_requests/<CASE_ID>/<SEGMENT_ID>.json
+```
+
+Example:
+
+```json
+{
+  "request_version": "playback-request-v1",
+  "task_id": "P9-PLAYBACK-PILOT-L003",
+  "case_id": "PILOT-L003",
+  "live_id": "LIVE_20220511_001",
+  "segment_id": "LIVE_20220511_001_SEG_000000",
+  "media_url": "https://public-media-url-already-preserved-in-provenance",
+  "requested_by": "agent-...",
+  "requested_at": "ISO-8601 UTC",
+  "pre_roll_sec": 10.0,
+  "decode_window_sec": 24.0,
+  "language": "zh",
+  "visual_mode": "frames_ocr"
+}
+```
+
+CLI helper when shell is available:
 
 ```bash
 python scripts/playback_queue.py \
-  --claim \
-  --agent-id agent-<UTC>-<random> \
-  --content-inspection-capable
+  --request <SEGMENT_ID> \
+  --case-id <CASE_ID> \
+  --media-url '<PUBLIC_URL_ALREADY_IN_REPO_PROVENANCE>' \
+  --agent-id <agent-id>
 ```
 
-Do not use `--content-inspection-capable` when the runtime can run commands but cannot view/listen to the decoded evidence and determine the observed content position.
+The service rejects arbitrary URLs not tied to the canonical live in existing repository source provenance. It must never become a generic download proxy.
 
-If a claimed case is blocked by media/runtime capability, preserve the attempt and release it for a later capable runtime:
+## Decode window
 
-```bash
-python scripts/playback_queue.py \
-  --block PILOT-E002 \
-  --agent-id <agent-id> \
-  --reason '<specific factual reason>'
+The expected canonical position is not necessarily the ffmpeg seek point.
+
+Default:
+
+```text
+pre-roll: 10 seconds
+window:   24 seconds
+coverage: approximately expected-10s through expected+14s
 ```
 
-Blocked attempts never count toward Pilot-60.
+This is deliberate: timing error is signed. Content may begin before or after the stored timestamp. A system that begins decoding only at the expected timestamp cannot reliably measure negative timing error.
 
-## Decode tool
-
-Use:
-
-```bash
-python scripts/audit_media.py \
-  --media '<public-media-url>' \
-  --start 353 \
-  --pre-roll 10 \
-  --window 24 \
-  --label PILOT-E002_SEG_000001
-```
-
-Requirements:
-
-- `ffmpeg`
-- `ffprobe`
-- optional `yt-dlp` for public video pages that are not direct media URLs
-
-`--start` is the canonical **expected content position**. It is not necessarily the ffmpeg seek point.
-
-The helper defaults to decoding from up to 10 seconds **before** the expected position and continues beyond it. This is mandatory in principle because timing error is signed: the real content may occur before or after the stored timestamp. A tool that starts decoding only at the expected timestamp cannot reliably detect negative timing errors.
-
-The helper records separately:
+Durable evidence keeps separate:
 
 ```text
 expected_start_sec
-requested_start_sec        # compatibility alias for expected position
-decode_start_sec           # actual ffmpeg window start
+decode_request_start_sec
+decode_start_sec
 decode_end_sec
 decode_window_sec
-pre_roll_sec
+candidate_observed_position_sec
+candidate_timing_error_sec
 ```
 
-The default 24-second window with 10-second pre-roll covers at least approximately `expected-10s` through `expected+14s` away from media start, which is sufficient to test both sides of the project’s <=8 second acceptance threshold. If a case requires a wider search, increase `--window` while keeping the expected canonical timestamp unchanged.
+## Repository evidence
 
-The helper:
-
-1. resolves the public media URL when possible;
-2. probes stream metadata;
-3. starts decoding before the expected timestamp when possible;
-4. actually decodes a short media window spanning the expected position;
-5. extracts a reference frame at the expected timestamp when video is present;
-6. writes temporary evidence under `cache/audit_media/`.
-
-`cache/` is gitignored. Full videos, clips, screenshots, audio, resolver caches and other temporary media MUST NOT be committed.
-
-## Audit procedure
-
-For every candidate segment:
-
-1. Read the canonical segment and its official `start_sec`.
-2. Prefer an original/public platform media URL already preserved in repository provenance.
-3. Run `scripts/audit_media.py` with `--start` equal to the canonical `start_sec`.
-4. Inspect the generated clip/frame/audio across the entire decoded window, including the pre-roll before the expected point.
-5. Locate where the expected phrase/event is actually observed.
-6. Record:
-   - expected canonical position;
-   - actual observed position;
-   - signed and absolute timing error;
-   - public media/source URL used;
-   - observation mode (`audio`, `video`, or `both`);
-   - reviewer/runtime;
-   - concise content observation;
-   - any ambiguity.
-7. Only then create durable qualifying playback evidence.
-
-A negative timing error is valid and important. Example:
+The service writes:
 
 ```text
-expected = 353.0s
-observed = 349.5s
-timing_error = -3.5s
+data/playback_evidence/<CASE_ID>/<SEGMENT_ID>/evidence.json
+data/playback_evidence/<CASE_ID>/<SEGMENT_ID>/evidence.md
 ```
 
-Do not clamp negative errors to zero or ignore content found in pre-roll.
+The evidence contains, when available:
 
-## Durable Pilot-60 evidence
+- canonical case/live/segment identity;
+- public media URL and resolver;
+- real decode window;
+- hashes binding the temporary decoded media/evidence;
+- target segment text;
+- new Whisper transcript from decoded audio with absolute media positions;
+- best text-match score and candidate observed position;
+- sampled frame timestamps and hashes;
+- OCR from sampled frames;
+- optional SmolVLM2 visual summary;
+- an immutable `bundle_id` used by worker acceptance.
 
-Create one durable record per actually inspected segment:
+Full video, clip, audio, model caches and raw temporary images remain in runner/cache storage and are not committed to Git.
+
+Evidence generation alone has:
+
+```text
+counts_toward_pilot_60=false
+agent_acceptance_required=true
+```
+
+## Worker acceptance
+
+A worker MUST read the durable evidence before accepting it.
+
+If the decoded-media evidence really matches the canonical target content, create:
+
+```text
+coordination/playback_acceptances/<CASE_ID>/<SEGMENT_ID>.json
+```
+
+Example:
+
+```json
+{
+  "acceptance_version": "playback-acceptance-v1",
+  "case_id": "PILOT-L003",
+  "live_id": "LIVE_20220511_001",
+  "segment_id": "LIVE_20220511_001_SEG_000000",
+  "evidence_ref": "data/playback_evidence/PILOT-L003/LIVE_20220511_001_SEG_000000/evidence.json",
+  "bundle_id": "copy-exactly-from-evidence",
+  "accepted": true,
+  "accepted_by": "agent-...",
+  "accepted_at": "ISO-8601 UTC",
+  "content_observation": "concise factual explanation of why the decoded evidence matches"
+}
+```
+
+CLI helper:
 
 ```bash
-python scripts/record_playback_audit.py \
-  --case-id PILOT-E002 \
-  --live-id LIVE_20170610_001 \
-  --segment-id LIVE_20170610_001_SEG_000001 \
-  --expected-start 353 \
-  --observed-position 349.5 \
-  --media-url '<public-media-url>' \
-  --reviewer '<agent-or-reviewer-id>' \
-  --observation-mode audio \
-  --content-observation 'observed the expected HNA sentence beginning' \
-  --decode-evidence-json cache/audit_media/PILOT-E002_SEG_000001_expected_353.000.json \
-  --content-match
+python scripts/playback_queue.py \
+  --accept <SEGMENT_ID> \
+  --case-id <CASE_ID> \
+  --content-observation '<why the decoded evidence matches>' \
+  --agent-id <agent-id>
 ```
 
-The recorder refuses qualifying evidence unless:
+The acceptance service refuses qualification unless:
 
-- the canonical segment exists;
-- case/live/segment identity is consistent;
-- `expected_start` equals the canonical segment `start_sec`;
-- real-media decoding succeeded;
-- the decode evidence refers to the same expected position and public media URL;
-- both expected and observed positions fall inside the decoded window;
-- the caller explicitly confirms the decoded content match.
+- evidence is `ready_for_agent_review`;
+- real-media decode succeeded;
+- repository content inspection ran;
+- audio match meets the configured minimum review score;
+- exact evidence `bundle_id` matches;
+- case/live/segment/media/timing fields match canonical records;
+- the worker explicitly accepted the evidence.
 
-The durable record is written under:
+A worker must not manufacture service evidence or accept evidence it has not read.
+
+## Durable qualifying evidence types
+
+`data/playback_audits/<CASE_ID>/<SEGMENT_ID>.json` supports two legitimate paths:
+
+### v1 — local/manual
 
 ```text
-data/playback_audits/<CASE_ID>/<SEGMENT_ID>.json
+qualifying_playback_timing_check_v1
 ```
 
-Temporary clips/frames remain under `cache/`. Hashes are preserved where available.
+A capable reviewer directly decodes and inspects media locally using `audit_media.py` + `record_playback_audit.py`.
+
+### v2 — repository evidence service
+
+```text
+qualifying_playback_timing_check_v2
+```
+
+GitHub Actions performs real-media decode and offline content extraction; a worker reads and accepts the resulting durable evidence; the service then writes the v2 record.
+
+Both are independently revalidated by `scripts/playback_validation.py` and `scripts/audit_gate.py`.
+
+## Low-confidence / blocked evidence
+
+If the decoded audio cannot confidently match the target, the service writes a non-qualifying status such as:
+
+```text
+needs_manual_or_wider_review
+blocked_media_decode
+```
+
+It does not invent an observed position and does not count toward Pilot-60.
+
+A worker may widen/retry through a new authorized request if appropriate, or record a blocked attempt and release the claim. Login/CAPTCHA/paywall/DRM must never be bypassed.
+
+## Optional SmolVLM2
+
+`visual_mode=smolvlm2_optional` requests an open-source visual-summary stage when enabled on the runner. It is supplemental because:
+
+- speech/ASR usually provides the best timing anchor for this archive;
+- the small model may be slower or less precise than audio matching;
+- failure of the optional model must not corrupt the evidence service.
+
+Default `frames_ocr` remains the lightweight path.
 
 ## Pilot-60 gate
 
-Use:
-
-```bash
-python scripts/audit_gate.py
-```
-
-or:
+Run:
 
 ```bash
 python scripts/audit_gate.py --json
 ```
 
-The gate counts **only** valid `data/playback_audits/**/*.json` records and independently cross-checks them against canonical segment and case/live data. `coordination/ready/audit/*.json` markers do not automatically count.
+Only valid `data/playback_audits/**/*.json` records count. The gate verifies unique canonical segment IDs, case/live/segment identity, canonical expected start, real decode verification, explicit content/timing verification, observed position within decoded window, internally consistent timing error, and—on v2—binding to repository evidence plus explicit worker acceptance.
 
-The gate verifies:
+Acceptance criteria remain unchanged:
 
-- unique canonical segment IDs;
-- case/live/segment identity consistency;
-- expected position equals canonical `start_sec`;
-- real-media decode verification;
-- explicit content/timing verification;
-- observed position lies inside the decoded window;
-- internally consistent signed/absolute timing error;
-- at least 60 qualifying segment checks;
-- at least 90% within 3 seconds;
-- at least 98% within 8 seconds.
+```text
+at least 60 qualifying real playback checks
+>= 90% within 3 seconds
+>= 98% within 8 seconds
+false merge rate approximately 0
+```
 
-`P9-AUDIT-60` cannot become eligible merely because source-audit tasks are complete. It depends on the `P9-PLAYBACK-GATE` sentinel, which can be created only after the machine gate passes:
+When `pilot60_pass=true`, seal:
 
 ```bash
 python scripts/playback_queue.py --seal-gate --agent-id <agent-id>
 ```
 
+Then the current acceptance chain continues:
+
+```text
+P9-PLAYBACK-GATE
+  -> P9-AUDIT-60-R2
+  -> P10-PILOT-DECISION-R2
+```
+
 ## Capability classification
 
-Do not classify the absence of a graphical browser player as `SAFETY_OR_ACCESS_BLOCK` by default.
+Because the repository now supplies the preferred media execution environment, absence of local media tools is normally **not HOST_STOP**.
 
-If a runtime has shell/media tools but cannot lawfully retrieve the public media or cannot inspect generated content, preserve a blocked playback attempt and release the case for another runtime.
+`HOST_STOP` is appropriate only when remaining playback work exists and neither:
 
-Use `SAFETY_OR_ACCESS_BLOCK` only when continuing would require bypassing login, CAPTCHA, paywall, DRM or another access control.
+- the repository Playback Evidence Service, nor
+- a valid local manual path
 
-Use `HOST_STOP` / runtime capability language when the host genuinely cannot execute or inspect the required media evidence. That is a host limitation, not evidence that the project lacks a playback path.
+is available to the current session.
 
-## Existing zero-check audit files
+`SAFETY_OR_ACCESS_BLOCK` is reserved for cases that would require bypassing login, CAPTCHA, paywall, DRM or another access control.
 
-Older `S-AUDIT-*` reports/readiness markers that explicitly say `0 qualifying real playback checks` remain historically valid evidence of transcript/provenance review. They MUST NOT be retroactively counted as playback checks and MUST NOT suppress later `P9-PLAYBACK-*` work for the same case.
+## Historical zero-check audits
+
+Older `S-AUDIT-*` reports/readiness markers with zero qualifying checks remain valid historical provenance review. They never count as Playback Audit and never suppress current `P9-PLAYBACK-*` work.
