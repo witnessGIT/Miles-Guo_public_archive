@@ -1,0 +1,59 @@
+name: archive-pilot
+
+on:
+  push:
+    branches:
+      - archive/pilot-001
+    paths:
+      - '.github/workflows/archive-pilot.yml'
+      - 'scripts/**'
+      - 'schema/**'
+      - 'requirements.txt'
+      - 'data/live_videos/pilot.jsonl'
+      - 'data/sources/pilot.jsonl'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  collect-build-validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: archive/pilot-001
+          fetch-depth: 0
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: python -m pip install -r requirements.txt
+
+      - name: Collect GWINS lightweight inventory
+        run: python scripts/collect_gwins_inventory.py --max-pages 200 --sleep 0.25
+
+      - name: Rebuild SQLite
+        run: python scripts/build_db.py
+
+      - name: Validate SQLite
+        run: python scripts/validate_db.py
+
+      - name: Commit generated archive data
+        run: |
+          git config user.name "Miles-Guo_public_archive bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/live_videos/gwins_inventory.jsonl
+          git add data/sources/gwins_inventory.jsonl
+          git add database/Miles-Guo_public_archive.sqlite3
+          if git diff --cached --quiet; then
+            echo "No generated changes"
+          else
+            git commit -m "data: refresh GWINS inventory and archive database"
+            git push origin HEAD:archive/pilot-001
+          fi
