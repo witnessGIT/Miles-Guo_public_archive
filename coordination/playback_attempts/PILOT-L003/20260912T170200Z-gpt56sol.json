@@ -1,0 +1,12 @@
+{
+  "task_id": "P9-PLAYBACK-PILOT-L003",
+  "agent_id": "agent-20260913T010100Z-gpt56sol",
+  "blocked_at": "2026-09-12T17:02:00Z",
+  "case_id": "PILOT-L003",
+  "live_id": "LIVE_20220511_001",
+  "segment_id": "LIVE_20220511_001_SEG_000000",
+  "reason": "Runtime has ffmpeg/ffprobe but cannot obtain public media bytes for the preserved GETTR or Rumble sources. Web fetch of https://gettr.com/streaming/p19cmxu5e7b and https://rumble.com/v5af5v1-20220511-2.html returned cache-miss/fetch failure, and direct download attempts for both URLs failed. No transcript-only evidence was counted as playback.",
+  "runtime_tools": {"ffmpeg": true, "ffprobe": true, "yt_dlp": false},
+  "counts_toward_pilot_60": false,
+  "note": "Blocked attempt preserved; release the claim for a later playback-capable retry."
+}
