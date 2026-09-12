@@ -1,0 +1,8 @@
+{
+  "task_id": "P0-VALIDATE-DB",
+  "agent_id": "agent-20260912T152100Z-gpt56sol",
+  "claimed_at": "2026-09-12T15:46:00Z",
+  "base_commit": "0c69417d4ef2b5bd9c7d2d8978de0adcd45319e2",
+  "status": "in_progress",
+  "notes": "Implement scripts/validate_db.py for schema presence, SQLite integrity, foreign keys, FTS row consistency, canonical ID patterns, source traceability, timing constraints and duplicate source checks."
+}
