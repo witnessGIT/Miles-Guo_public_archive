@@ -1,0 +1,10 @@
+{
+  "task_id": "S-AUDIT-PILOT-L007",
+  "agent_id": "agent-20260913T002400Z-gpt56sol",
+  "claimed_at": "2026-09-12T16:24:00Z",
+  "base_commit": "d10b2ca3b941947e57f4f1aed9a7b0c185c02234",
+  "status": "in_progress",
+  "workflow_mode": "continuous-worker-v2",
+  "continue_after_finish": true,
+  "notes": "Audit source-backed aligned segments for PILOT-L007 using real public playback where accessible; preserve provenance and record unverified checks rather than inferring playback success."
+}
