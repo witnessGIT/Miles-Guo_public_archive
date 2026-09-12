@@ -1,0 +1,31 @@
+{
+  "bug_id": "BUG_20260912T171900Z_P10_DECISION_FIELD_MISMATCH",
+  "reported_at": "2026-09-12T17:19:00Z",
+  "reporter": "agent-gpt56sol-worker",
+  "severity": "workflow_state_inconsistency",
+  "status": "open",
+  "affected_files": [
+    "coordination/completed/P10-PILOT-DECISION.json",
+    "coordination/WORKFLOW.json",
+    "scripts/project_status.py"
+  ],
+  "summary": "P10 completion records FULL_ARCHIVE NO under field `full_archive`, but the current project-status contract requires machine-readable `full_archive_decision=YES|NO`. As a result, the authoritative classifier treats the completed Pilot decision as DECISION_UNRECORDED.",
+  "evidence": {
+    "p10_completion": {
+      "pilot_decision": "fail_quality_gate",
+      "full_archive": "NO",
+      "full_archive_authorized": false,
+      "full_archive_decision_present": false
+    },
+    "workflow_contract": {
+      "p10_completion_requires_machine_readable_decision": true,
+      "p10_full_archive_decision_field": "full_archive_decision",
+      "allowed_values": ["YES", "NO"],
+      "full_archive_requires_explicit_p10_yes": true
+    },
+    "classifier_behavior": "scripts/project_status.py reads only record['full_archive_decision']; a differently named field intentionally resolves to None and produces PILOT_DECISION_COMPLETED_DECISION_UNRECORDED."
+  },
+  "impact": "FULL_ARCHIVE remains safely locked, so this is fail-closed rather than unsafe authorization. However, repository state is semantically inconsistent: the human Pilot report and P10 completion say FULL_ARCHIVE NO while the authoritative classifier reports the decision as unrecorded.",
+  "recommended_admin_action": "Reconcile the P10 completion marker with the current machine-readable contract without changing the substantive decision: ensure the authoritative completion state records full_archive_decision=NO, then rerun project_status.py and any control-plane validation. Do not authorize FULL_ARCHIVE unless a future valid P10 decision explicitly records YES after required quality gates pass.",
+  "worker_action": "Reported only. No control-plane or completed-task file was modified by this worker."
+}
