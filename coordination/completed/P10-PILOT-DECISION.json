@@ -1,0 +1,14 @@
+{
+  "task_id": "P10-PILOT-DECISION",
+  "agent_id": "agent-20260913T011300Z-gpt56sol-p10",
+  "completed_at": "2026-09-12T17:18:00Z",
+  "result_commit": "bb2ee789b937294315c0434ec90d82d9e192f1c1",
+  "outputs": ["reports/pilot_report.md"],
+  "validation": "Published the whole-Pilot decision from completed site analysis, 27-case collection, alignment evidence, validated P8 SQLite snapshot, and P9 aggregate audit. The mandatory playback audit is 0/60, so timing accuracy thresholds are not certified. Decision: FULL_ARCHIVE NO. The report also records that later streaming alignment JSONL postdates the P8 SQLite artifact and requires a fresh rebuild before any future re-evaluation.",
+  "workflow_mode": "continuous-worker-v2",
+  "claim_protocol": "claim-protocol-v2",
+  "continue_after_finish": true,
+  "pilot_decision": "fail_quality_gate",
+  "full_archive": "NO",
+  "full_archive_authorized": false
+}
