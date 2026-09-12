@@ -46,15 +46,16 @@ jobs:
           echo "Changed files:"
           printf '%s\n' "$changed"
 
-          protected_re='^(AGENTS\.md|START_HERE\.md|coordination/(AGENT_PERMISSIONS\.json|AGENT_PERMISSIONS\.md|CONTINUOUS_WORKER_V2\.md|CLAIM_PROTOCOL_V2\.md|WORKFLOW\.json|WORK_QUEUE\.jsonl|README\.md)|scripts/|schema/|\.github/)'
+          protected_re='^(AGENTS\.md|START_HERE\.md|coordination/(AGENT_PERMISSIONS\.json|AGENT_PERMISSIONS\.md|CONTINUOUS_WORKER_V2\.md|CLAIM_PROTOCOL_V2\.md|WORKFLOW\.json|WORK_QUEUE\.jsonl|README\.md)|scripts/|schema/|\.github/|data/playback_evidence/|data/playback_audits/)'
           violations="$(printf '%s\n' "$changed" | grep -E "$protected_re" || true)"
 
           if [[ -n "$violations" ]]; then
-            echo "::error::Worker account '$actor' modified admin-only control-plane paths."
+            echo "::error::Worker account '$actor' modified admin/system-only protected paths."
             echo "Protected-path violations:"
             printf '%s\n' "$violations"
+            echo "Workers may submit playback requests/acceptances, but service-generated playback evidence/audits are written only by github-actions[bot] or admin."
             echo "Workers must file bugs under coordination/bug_reports/ instead of fixing project machinery."
             exit 1
           fi
 
-          echo "No protected control-plane changes by worker actor."
+          echo "No protected control-plane/service-output changes by worker actor."
