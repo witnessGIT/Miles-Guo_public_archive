@@ -1,0 +1,11 @@
+{
+  "task_id": "S-ALIGN-PILOT-L001",
+  "agent_id": "agent-20260912T162222Z-c9f2",
+  "completed_at": "2026-09-12T16:29:10Z",
+  "result_commit": "f9bc06391d7a56d5eb284dc0e0d617abe0bdcf36",
+  "outputs": ["data/live_segments/alignment/LIVE_20220126_001.jsonl"],
+  "validation": "Tracked GHOT source SRC_AB4C8660 already records a verified second-level timeline for LIVE_20220126_001. Public GHOT page confirms the 00:00 ASR anchor and 10m00s item duration. Added one direct 0-5s ASR/time segment, read it back after commit, and checked referenced source/live identifiers against tracked data. No playback audit was performed; playback_verified remains 0.",
+  "workflow_mode": "continuous-worker-v2",
+  "continue_after_finish": true,
+  "notes": "Task completed. Under continuous-worker-v2, refresh repository state and claim the next eligible task unless a documented stop condition applies."
+}
