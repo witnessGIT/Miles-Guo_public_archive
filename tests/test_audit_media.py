@@ -13,7 +13,7 @@ AUDIT_SCRIPT = REPO_ROOT / "scripts" / "audit_media.py"
 
 @unittest.skipUnless(shutil.which("ffmpeg") and shutil.which("ffprobe"), "ffmpeg/ffprobe required")
 class AuditMediaSmokeTest(unittest.TestCase):
-    def test_synthetic_media_is_really_decoded(self):
+    def test_synthetic_media_is_really_decoded_on_both_sides_of_expected_position(self):
         with tempfile.TemporaryDirectory() as tmp:
             tmp_path = Path(tmp)
             source = tmp_path / "input.mp4"
@@ -34,7 +34,7 @@ class AuditMediaSmokeTest(unittest.TestCase):
                     "-i",
                     "sine=frequency=440",
                     "-t",
-                    "5",
+                    "20",
                     "-c:v",
                     "libx264",
                     "-c:a",
@@ -44,6 +44,7 @@ class AuditMediaSmokeTest(unittest.TestCase):
                 check=True,
             )
 
+            expected = 10.0
             result = subprocess.run(
                 [
                     sys.executable,
@@ -51,9 +52,11 @@ class AuditMediaSmokeTest(unittest.TestCase):
                     "--media",
                     str(source),
                     "--start",
-                    "2",
+                    str(expected),
+                    "--pre-roll",
+                    "5",
                     "--window",
-                    "1",
+                    "15",
                     "--output-dir",
                     str(output_dir),
                     "--label",
@@ -69,6 +72,9 @@ class AuditMediaSmokeTest(unittest.TestCase):
             self.assertTrue(payload["ok"])
             self.assertTrue(payload["playback_decode_verified"])
             self.assertFalse(payload["content_timing_verified"])
+            self.assertLess(payload["decode_start_sec"], expected)
+            self.assertGreaterEqual(payload["decode_end_sec"], expected + 8.0)
+            self.assertEqual(payload["expected_start_sec"], expected)
             self.assertTrue(Path(payload["clip_path"]).exists())
             self.assertTrue(Path(payload["frame_path"]).exists())
 
