@@ -2,33 +2,41 @@
 
 This protocol is mandatory for every **new** task claim under `continuous-worker-v2`.
 
-Its purpose is to prevent a normal multi-Agent claim race from being misreported as a repository-wide GitHub write failure.
+Its purpose is to prevent normal multi-Agent contention on a rapidly changing `main` branch from being misreported as a repository-wide GitHub write failure.
 
 ## Core rule
 
 A failed claim attempt is **not** a stop condition by itself.
 
-In particular, a GitHub Contents API `create_file` response of HTTP `422` MUST NOT immediately be classified as `GITHUB_WRITE_ERROR`.
+For GitHub Contents API `create_file`, both of these are normally retryable classification events rather than immediate outages:
 
-For claim creation, first classify the failure:
+- HTTP `422` — often an already-exists / atomic claim race;
+- HTTP `409` — often a branch/update conflict because `main` moved between read and write.
+
+Neither status alone is sufficient to classify `GITHUB_WRITE_ERROR`.
+
+For claim creation, classify the result as follows:
 
 ```text
 create coordination/claims/<TASK_ID>.json
         |
-        +-- success --> CLAIM_SUCCESS --> do the task
+        +-- success --> fetch exact claim --> owner matches --> CLAIM_SUCCESS
         |
-        +-- 422 / already-exists-like failure
+        +-- 422 / 409 / already-exists-or-branch-race-like failure
                 |
-                +-- fetch exact claim path
+                +-- fetch exact claim path from fresh main
                         |
                         +-- file exists --> CLAIM_RACE_LOST
                         |                  --> refresh queue
                         |                  --> try another eligible task
                         |
-                        +-- file absent --> refresh repository state
+                        +-- file absent --> refresh main / task state
+                                           --> short backoff
                                            --> retry with bounded attempts
-                                           --> only then classify write failure
+                                           --> only then consider write failure
 ```
+
+A `409` with an absent target path usually means the branch changed during the write attempt. Refreshing and retrying against the latest `main` is the correct response; force-writing or overwriting concurrent work is prohibited.
 
 ## Error classes
 
@@ -58,19 +66,36 @@ Required behavior:
 
 `CLAIM_RACE_LOST` is **never** a reason to put the worker to sleep.
 
+### `BRANCH_RACE_RETRY`
+
+Use this transient classification when:
+
+- the claim write returned `409` (or an equivalent moving-branch conflict);
+- the exact target claim path is still absent;
+- `main` has advanced or repository state changed since the read used to prepare the write.
+
+Required behavior:
+
+1. refresh `main` and the eligible-task state;
+2. confirm the task is still eligible;
+3. use a short backoff;
+4. retry the create against fresh state;
+5. do not force-push or overwrite unrelated concurrent commits.
+
+This is **not** a stop condition.
+
 ### `GITHUB_WRITE_ERROR`
 
 This classification is allowed only after all of the following are true:
 
 1. the attempted create failed;
 2. the exact target claim path does **not** exist after refresh;
-3. repository state was refreshed again;
-4. a bounded retry still fails;
-5. the failure cannot be explained by another Agent winning the claim race, a stale local checkout, or the task becoming completed/claimed between reads.
+3. repository and task state were refreshed again;
+4. the task is still eligible;
+5. up to 3 bounded retries with fresh state and short backoff still fail;
+6. the failure cannot be explained by another Agent winning the claim race, a moving `main`, a stale local checkout, or the task becoming completed/claimed between reads.
 
-Recommended bound: 3 retries with fresh repository state between retries.
-
-Do not retry aggressively; use a short backoff.
+Do not retry aggressively.
 
 ## GitHub API Agent procedure
 
@@ -79,17 +104,18 @@ For Agents using GitHub `create_file` directly:
 1. compute the eligible task set from current Git state;
 2. distribute the starting candidate using the Agent ID when possible instead of always picking the first task;
 3. attempt to create `coordination/claims/<TASK_ID>.json`;
-4. if creation succeeds, fetch the new claim once and verify ownership;
-5. if creation returns `422`, immediately fetch that exact claim path;
+4. if creation succeeds, fetch the exact new claim and verify ownership;
+5. if creation returns `422` **or `409`**, immediately fetch that exact claim path from fresh `main`;
 6. if it exists, classify `CLAIM_RACE_LOST` and move to another candidate;
-7. if it does not exist, refresh repository state and retry at most 3 times;
-8. only after the bounded checks fail may the Agent report `GITHUB_WRITE_ERROR`.
+7. if it does not exist, refresh `main`, `completed/`, `ready/`, and task eligibility;
+8. if the task is still eligible, short-backoff and retry at most 3 times;
+9. only after those bounded checks fail may the Agent report `GITHUB_WRITE_ERROR`.
 
-A single `422` MUST NOT produce a message such as "the execution chain must stop at the claim boundary".
+A single `422` or `409` MUST NOT produce a message such as "the execution chain must stop at the claim boundary".
 
 ## Local git / filesystem Agent procedure
 
-`scripts/next_task.py --claim` uses exclusive local file creation and now rotates across multiple eligible candidates.
+`scripts/next_task.py --claim` uses exclusive local file creation and rotates across multiple eligible candidates.
 
 If local creation raises `FileExistsError`, the script treats it as `CLAIM_RACE_LOST` and tries the next candidate instead of exiting after the first collision.
 
@@ -97,8 +123,9 @@ After local claim creation, the Agent must still commit and push immediately. If
 
 1. remove only the losing local claim file;
 2. refresh/pull `main`;
-3. run the claim command again;
-4. do not touch the winning Agent's claim.
+3. re-evaluate task eligibility;
+4. run the claim command again;
+5. do not touch the winning Agent's claim or force-push unrelated work.
 
 ## Candidate dispersion
 
@@ -119,7 +146,7 @@ A worker may stop at the claim boundary only when one of these is true:
 - a true `GITHUB_WRITE_ERROR` has been established using the checks above;
 - the host platform terminates the session.
 
-A lost claim race is not on this list.
+A lost claim race or moving-branch `409` is not on this list.
 
 ## Compatibility
 
