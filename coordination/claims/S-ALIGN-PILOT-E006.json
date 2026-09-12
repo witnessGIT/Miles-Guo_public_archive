@@ -1,0 +1,14 @@
+{
+  "task_id": "S-ALIGN-PILOT-E006",
+  "agent_id": "agent-20260912T163100Z-gpt56sol-restart",
+  "claimed_at": "2026-09-12T16:31:00Z",
+  "base_commit": "165d884d7fb897be10c5ff828573e62488cb6a2a",
+  "status": "in_progress",
+  "workflow_mode": "continuous-worker-v2",
+  "claim_protocol": "claim-protocol-v2",
+  "continue_after_finish": true,
+  "stage": "align",
+  "case_id": "PILOT-E006",
+  "live_id": null,
+  "scope": "Align curated/ASR text and public time anchors for PILOT-E006; write independent per-live segment data."
+}
