@@ -109,3 +109,7 @@ The long-term archive records metadata and locators such as source URLs, platfor
 ## Downstream use
 
 Future applications such as `movie_production` should consume this archive through the SQLite database or a future stable API. They should not create a second independent livestream archive.
+
+## Agent 开工前必读
+
+所有 agent 在本仓库工作前，必须先阅读 [AGENTS.md](AGENTS.md)、[完整项目要求](docs/PROJECT_REQUIREMENTS.md) 和 [统一命名与工作规范](docs/NAMING_AND_WORKFLOW.md)。后续命名规范优先于早期示例。
