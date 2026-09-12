@@ -1,10 +1,51 @@
 # Miles-Guo_public_archive
 
-## Agent start rule
+## Mandatory Agent operating mode
 
-This repository uses a self-service streaming workflow. Any Agent entering the repository must be able to discover work, claim it, execute it, finish it, and immediately continue to the next task without waiting for another Agent to finish an unrelated batch.
+This repository uses `continuous-worker-v2` for **new task claims**.
 
-The default loop is:
+Any Agent entering the repository must be able to discover work, claim it, execute it, validate it, finish it, and immediately continue to the next eligible task without waiting for an unrelated batch.
+
+Read first:
+
+1. `AGENTS.md`
+2. `coordination/CONTINUOUS_WORKER_V2.md`
+3. `coordination/WORKFLOW.json`
+4. `coordination/README.md`
+5. `coordination/WORK_QUEUE.jsonl`
+6. `docs/CURRENT_TASK.md`
+7. `docs/PROJECT_REQUIREMENTS.md`
+8. `docs/NAMING_AND_WORKFLOW.md`
+9. relevant current `data/`, `docs/`, `reports/`, `schema/`, `tests/`, `coordination/claims/`, `coordination/completed/`, and `coordination/ready/`
+
+Do not rely on chat history, memory, or another Agent's summary instead of Git state.
+
+## Existing claims are grandfathered
+
+Do **not** interrupt, rename, steal, duplicate, or repartition a valid task that was already claimed before `continuous-worker-v2` became active.
+
+A claim without:
+
+```json
+"workflow_mode": "continuous-worker-v2"
+```
+
+is treated as a grandfathered legacy claim.
+
+Current legacy owners finish their already-claimed work normally. Their **next** claim uses the new mode.
+
+In particular, valid claims such as:
+
+```text
+P6-PILOT-MIDDLE-B001
+P6-PILOT-LATE-B001
+```
+
+remain owned by their current Agents until completed or legitimately taken over under the stale-claim procedure.
+
+## Default continuous loop
+
+For a new v2 Agent run:
 
 ```text
 read repository rules
@@ -19,45 +60,65 @@ execute real work
 ↓
 validate and commit outputs
 ↓
-finish the task / create readiness marker
+finish / publish readiness
 ↓
 push completion metadata
+↓
+refresh repository state
 ↓
 claim the next eligible task
 ↓
 repeat
 ```
 
-Do not stop merely because one historical batch-level task is still in progress. Per-case streaming tasks may already be available.
+Finishing one task, one livestream, or one micro-batch is **not** a stop condition.
 
-## Mandatory reading before work
+## When an Agent may stop
 
-Every Agent MUST read, in this order:
+A v2 Agent stops only for a documented reason:
 
-1. `AGENTS.md`
-2. `coordination/README.md`
-3. `coordination/WORK_QUEUE.jsonl`
-4. `docs/CURRENT_TASK.md`
-5. `docs/PROJECT_REQUIREMENTS.md`
-6. `docs/NAMING_AND_WORKFLOW.md`
-7. relevant existing `docs/`, `reports/`, `data/`, `schema/`, `tests/`, `coordination/claims/`, and `coordination/completed/`
+- `PROJECT_COMPLETE` — no authorized work remains in the current phase;
+- `USER_RECALL` — the user explicitly pauses/recalls/redirects the Agent;
+- `NO_ELIGIBLE_WORK` — every unfinished task is currently claimed or genuinely blocked;
+- `HUMAN_DECISION_REQUIRED` — continuing would require an unsupported guess or destructive decision;
+- `SAFETY_OR_ACCESS_BLOCK` — continuing would require bypassing access controls or prohibited actions;
+- `HOST_STOP` — the execution platform suspends/terminates the Agent or runtime/tool budget ends.
 
-Do not rely on chat history or another Agent's summary instead of repository state.
+Do not invent work merely to avoid a legitimate stop condition.
+
+## Important limitation: Git cannot wake a suspended Agent
+
+The repository can enforce durable coordination and continuous behavior **while the Agent session is alive**. It cannot force ChatGPT/Work/Codex or another host platform to wake a session after the host has suspended or terminated it.
+
+For a host/runtime that supports a long-running process, optional waiting mode is:
+
+```bash
+python scripts/next_task.py \
+  --watch \
+  --claim \
+  --agent-id agent-<UTC>-<random> \
+  --poll-seconds 60
+```
+
+This waits for eligible work, but host suspension can still terminate the process. Durable Git state makes the project resumable by the next Agent.
 
 ## Immediate task discovery
 
-After mandatory reading, run:
+Run:
 
 ```bash
 python scripts/next_task.py --list
 ```
 
-The script combines two task sources:
+The script combines:
 
-1. legacy/global tasks in `coordination/WORK_QUEUE.jsonl`;
-2. dynamically generated per-Pilot-case streaming tasks.
+1. global/legacy tasks from `coordination/WORK_QUEUE.jsonl`;
+2. dynamic per-Pilot-case streaming tasks generated from `reports/pilot_selection.json`;
+3. `coordination/claims/`;
+4. `coordination/completed/`;
+5. `coordination/ready/`.
 
-Streaming task IDs use:
+Streaming IDs use:
 
 ```text
 S-COLLECT-PILOT-E001
@@ -65,9 +126,9 @@ S-ALIGN-PILOT-E001
 S-AUDIT-PILOT-E001
 ```
 
-A single Pilot case can advance independently from the other 26 cases.
+Each case progresses independently.
 
-### Claim the recommended task
+## Claiming work
 
 Choose a unique Agent ID, for example:
 
@@ -75,13 +136,15 @@ Choose a unique Agent ID, for example:
 agent-20260913T001500Z-a17f
 ```
 
-Then run:
+Claim the highest-priority eligible task:
 
 ```bash
-python scripts/next_task.py --claim --agent-id agent-20260913T001500Z-a17f
+python scripts/next_task.py \
+  --claim \
+  --agent-id agent-20260913T001500Z-a17f
 ```
 
-or claim a specific currently eligible task:
+Or claim a specific eligible task:
 
 ```bash
 python scripts/next_task.py \
@@ -90,13 +153,22 @@ python scripts/next_task.py \
   --agent-id agent-20260913T001500Z-a17f
 ```
 
-The claim file is only a local candidate lock until it is committed and pushed. Push it immediately before doing the work. If another Agent wins the Git race, remove the losing local claim, pull latest `main`, and claim another task.
+A v2 claim records:
 
-Agents that use the GitHub API directly should atomically create the same `coordination/claims/<TASK_ID>.json` file and treat an already-existing file as a lost claim.
+```json
+{
+  "workflow_mode": "continuous-worker-v2",
+  "continue_after_finish": true
+}
+```
 
-## Finish and continue
+The claim is globally effective only when visible on `main`. Commit/push it immediately before doing expensive work. If another Agent wins the race, remove the losing local claim, refresh `main`, and claim another task instead of waiting.
 
-First commit and push the durable work outputs. Then create the completion/readiness records with:
+Agents using the GitHub API directly should atomically create `coordination/claims/<TASK_ID>.json`; an existing file means the claim was lost.
+
+## Finish and immediately continue
+
+First commit/push the real outputs. Then create completion/readiness metadata:
 
 ```bash
 python scripts/next_task.py \
@@ -106,7 +178,7 @@ python scripts/next_task.py \
   --validation "verified provenance, monotonic alignment, no invented end times"
 ```
 
-For a streaming collection task, also provide the canonical live ID:
+For streaming collection tasks, also provide the canonical live ID:
 
 ```bash
 python scripts/next_task.py \
@@ -117,23 +189,57 @@ python scripts/next_task.py \
   --validation "..."
 ```
 
-Commit and push the generated coordination files, then immediately run another `--claim` command. A normal Agent run should continue through multiple safe tasks when time/tool budget allows.
+After pushing completion/readiness files, immediately refresh and claim the next task:
+
+```bash
+python scripts/next_task.py --claim --agent-id <same-agent-id>
+```
+
+## Existing legacy batch Agents: early downstream unlock
+
+Grandfathered legacy batch owners do not have to abandon their batch. They may unlock downstream work case-by-case while continuing the batch.
+
+After one case inside a legacy batch is genuinely complete:
+
+```bash
+python scripts/next_task.py \
+  --mark-ready collection \
+  --case-id PILOT-M001 \
+  --agent-id <legacy-claim-owner> \
+  --live-id LIVE_20200323_001 \
+  --outputs ... \
+  --validation "source identity and provenance verified"
+```
+
+This creates:
+
+```text
+coordination/ready/collection/PILOT-M001.json
+```
+
+and immediately allows another Agent to claim `S-ALIGN-PILOT-M001`, while the original Middle batch Agent continues its remaining cases.
+
+This preserves existing work and removes downstream waiting.
 
 ## Streaming pipeline
 
-The preferred unit of work is one livestream/Pilot case, not a whole era.
+Preferred unit: one livestream/Pilot case, or a very small non-overlapping micro-batch.
 
 ```text
 COLLECT + IDENTITY
         ↓
+collection readiness
+        ↓
 ALIGN
         ↓
+alignment readiness
+        ↓
 AUDIT
+        ↓
+audit readiness
 ```
 
-A case that completes one stage must immediately become available to the next stage even if other cases are unfinished.
-
-Readiness is represented by independent files under:
+Readiness files are independent per case:
 
 ```text
 coordination/ready/collection/<PILOT_CASE_ID>.json
@@ -141,141 +247,130 @@ coordination/ready/alignment/<PILOT_CASE_ID>.json
 coordination/ready/audit/<PILOT_CASE_ID>.json
 ```
 
-This avoids one shared mutable status file and lets Agents work in parallel with minimal Git conflicts.
+Do not force one case to wait for unrelated cases.
 
-### Compatibility with currently active legacy batches
+## Stage requirements
 
-Existing active claims for:
+### COLLECT + IDENTITY
 
-```text
-P6-PILOT-MIDDLE-B001
-P6-PILOT-LATE-B001
-```
+Preserve real public evidence only:
 
-must not be duplicated while those claims are valid.
-
-A legacy batch collector SHOULD publish a `coordination/ready/collection/<CASE>.json` marker as soon as an individual case inside the batch is actually complete. That immediately unlocks alignment for that case without waiting for the rest of the batch.
-
-Once legacy Pilot batches finish, future collection work should use per-case streaming tasks instead of new 9-case blockers.
-
-## Stage-specific requirements
-
-### COLLECT
-
-A collection task must preserve real public source evidence only. It should establish or preserve:
-
-- canonical `LIVE_YYYYMMDD_NNN` only after identity evidence supports it;
-- source URLs and source-site IDs;
-- source platform/video/post IDs when actually known;
-- date/title/duration only when supported;
-- GWINS curated/mixed transcript provenance separately from GHOT ASR;
-- cross-source match evidence and conflicts;
+- canonical `LIVE_YYYYMMDD_NNN` only when identity evidence supports it;
+- source URLs and source-side page/video/post IDs;
+- platform IDs only when actually known;
+- title/date/duration only when supported;
+- curated / ASR / mixed transcript provenance separately;
+- cross-source identity evidence and conflicts;
 - retrieval/verification timestamps.
 
-Do not invent source absence, IDs, timestamps, duration, FPS, or merge decisions.
+Never invent source absence, IDs, timestamps, duration, FPS, or merge decisions.
 
-Prefer independent per-live/per-case files. Do not append many Agents into one shared large JSONL file.
+Prefer per-live/per-case files so Agents do not append to the same large JSONL.
 
 ### ALIGN
 
-An alignment task may start as soon as its own case is collection-ready.
+Start as soon as that case is collection-ready.
 
-Priority order:
+Priority:
 
-1. explicit source timestamps already attached to curated text;
-2. GHOT public ASR/time-axis + monotonic fuzzy alignment;
-3. local ASR only where public timing is inadequate;
+1. explicit curated/source timestamp;
+2. GHOT public ASR/time axis + monotonic fuzzy alignment;
+3. local ASR only when public timing is inadequate;
 4. manual playback review for unresolved/high-value segments.
 
-Store curated text and ASR separately. `start_sec`/`end_sec` are primary locators; never invent an end time. Preserve `alignment_method`, `alignment_quality`, source IDs, review state, and whether playback was actually verified.
-
-Write per-live segment files whenever possible, e.g.:
+Preserve:
 
 ```text
-data/live_segments/2017/LIVE_20170523_001.jsonl
+text_curated
+text_asr
+start_sec
+end_sec
+curated_source_id
+asr_source_id
+time_source_id
+alignment_method
+alignment_quality
+playback_verified
+review_status
 ```
+
+Do not invent `end_sec`, FPS, frame numbers, or playback verification.
 
 ### AUDIT
 
-Audit work begins incrementally after a case is aligned. Do not wait for all 27 cases.
+Audit begins incrementally after each case is aligned. Do not wait for all 27 cases.
 
-Audit real playback positions and record at minimum:
+Real playback audit should record at minimum:
 
 - `segment_id`;
 - `live_id`;
 - source URL used for playback;
 - expected `start_sec`;
-- observed/verified position;
-- timing error in seconds;
+- observed position;
+- timing error seconds;
 - correct livestream/date/text provenance;
 - merge correctness;
 - verifier timestamp and notes.
 
-The Pilot still requires at least 60 real segment audits in aggregate before final approval.
+The Pilot still requires at least 60 real segment audits in aggregate.
 
 ## Database behavior
 
 `data/` JSON/JSONL is the Git source of truth.
 
-`database/Miles-Guo_public_archive.sqlite3` is a rebuildable artifact. Agents should not block collection/alignment work just because another Agent is rebuilding SQLite.
+`database/Miles-Guo_public_archive.sqlite3` is a rebuildable artifact. Do not serialize collection/alignment work behind SQLite.
 
-After meaningful data changes, run when safe:
+When safe after meaningful data changes:
 
 ```bash
 python scripts/build_db.py
 python scripts/validate_db.py
 ```
 
-Do not make concurrent Agents edit the SQLite binary as a shared source of truth. The final Pilot SQLite gate is an aggregate validation step, not a reason to serialize all earlier work.
+The final SQLite/FTS gate is aggregate validation, not a blocker for per-case work.
 
-## Atomic claim rule
+## Atomic claim and stale takeover
 
-No Agent may start a queued work unit before successfully creating:
+No Agent may start a new queued work unit before a successful claim exists.
 
-```text
-coordination/claims/<TASK_ID>.json
-```
-
-If the claim already exists:
+If the desired claim already exists:
 
 1. do not overwrite it;
-2. refresh/pull repository state;
+2. refresh repository state;
 3. choose another eligible task;
-4. keep working instead of waiting.
+4. keep working rather than waiting.
 
-A task is unavailable when a valid claim exists or `coordination/completed/<TASK_ID>.json` already exists.
-
-Stale-claim takeover rules remain in `coordination/README.md`.
+Stale-claim takeover rules are in `coordination/README.md`. Do not steal an active claim just because its Agent is not visible in the UI.
 
 ## Scope and naming
 
 - Only modify `witnessGIT/Miles-Guo_public_archive`.
-- Never modify `witnessGIT/movie_production` or another repository for this archive task.
+- Never modify `witnessGIT/movie_production` or another repository for this task.
 - Official project name: `Miles-Guo_public_archive`.
 - Official database path: `database/Miles-Guo_public_archive.sqlite3`.
 - Archive First, Application Second.
-- The archive must remain usable with zero-cost/local/open tooling; paid APIs/services cannot be mandatory.
+- Core operation must remain usable with zero-cost/local/open tooling; paid APIs/services cannot be mandatory.
 
 ## Core archive discipline
 
 - One livestream has one canonical internal `live_id` and may have many source records.
-- Preserve source provenance and conflicts; never silently overwrite them.
+- Preserve provenance and conflicts; never silently overwrite them.
 - Preserve curated text and ASR separately.
 - Seconds are the primary media locator; frames are auxiliary only.
 - Every datum must remain traceable to source site, URL, retrieval/verification state, and third-party ID where available.
 - Publicly accessible content only; low request rates and caching; no bypass of login/CAPTCHA/paywall/access control/DRM.
 - Never commit full videos, large audio, model weights, cache, or FFmpeg intermediates.
-- Do not declare `FULL_ARCHIVE` merely because collection works. Final Pilot approval still requires the global quality gates, including the 60-segment real playback audit and approximately zero false merges.
+- Do not begin `FULL_ARCHIVE` merely because collection works. `P10-PILOT-DECISION` remains the final Pilot decision gate.
 
 ## Definition of useful progress
 
-A useful Agent run should leave durable, source-backed output such as:
+A useful Agent run leaves durable source-backed output, such as:
 
 - one completed source collection case;
 - one per-live alignment result;
-- one real playback audit batch;
+- one real playback audit set;
 - one conflict record;
 - one schema/build/validation fix required by real data;
-- one completed/readiness record that immediately unlocks downstream work.
+- one readiness/completion record that immediately unlocks downstream work.
 
-Pure planning is not completion when an eligible executable task exists.
+Pure planning is not completion when eligible executable work exists.
