@@ -18,6 +18,9 @@ PILOT_SELECTION = ROOT / "reports" / "pilot_selection.json"
 
 WORKFLOW_MODE = "continuous-worker-v2"
 CLAIM_PROTOCOL = "claim-protocol-v2"
+CURRENT_P9 = "P9-AUDIT-60-R2"
+CURRENT_P10 = "P10-PILOT-DECISION-R2"
+LEGACY_GATE_TASKS = {"P9-AUDIT-60", "P10-PILOT-DECISION"}
 
 LEGACY_BATCH_TASKS = {
     "early": "P6-PILOT-EARLY-B001",
@@ -233,10 +236,20 @@ def stream_tasks(done: set[str]) -> list[dict]:
     return tasks
 
 
+def task_is_superseded(task: dict) -> bool:
+    return bool(
+        task.get("kind") == "legacy_record"
+        or str(task.get("status_hint") or "").lower() == "superseded"
+        or task.get("id") in LEGACY_GATE_TASKS
+    )
+
+
 def static_tasks(done: set[str]) -> list[dict]:
     eligible: list[dict] = []
     for task in load_queue():
         task_id = task["id"]
+        if task_is_superseded(task):
+            continue
         if task_id in done or has_record(COMPLETED, task_id):
             continue
         if has_record(CLAIMS, task_id):
@@ -254,6 +267,8 @@ def eligible_tasks() -> list[dict]:
     seen: set[str] = set()
     for task in tasks:
         task_id = task["id"]
+        if task_is_superseded(task):
+            continue
         if task_id in seen:
             continue
         seen.add(task_id)
@@ -295,6 +310,8 @@ def candidate_order(
 
 
 def claim_task(task: dict, agent_id: str) -> Path:
+    if task_is_superseded(task):
+        raise SystemExit(f"Task {task.get('id')} is superseded and cannot be claimed.")
     CLAIMS.mkdir(parents=True, exist_ok=True)
     path = CLAIMS / f"{task['id']}.json"
     payload = {
@@ -439,12 +456,17 @@ def validate_finish_prerequisites(task_id: str) -> dict | None:
     """Re-check the latest queue contract at finish time.
 
     A claim that was valid when created does not grandfather the task past dependencies
-    that were added later. This prevents stale claims from bypassing newly introduced
-    safety/quality gates.
+    that were added later. Superseded legacy gate identities can never be finished as
+    current work.
     """
     task = static_task_record(task_id)
     if task is None:
         return None
+    if task_is_superseded(task):
+        raise SystemExit(
+            f"Cannot finish {task_id}: this task identity is superseded/legacy and no "
+            "longer belongs to the current acceptance chain."
+        )
 
     done = completed_ids()
     missing = [dep for dep in task.get("depends_on", []) if dep not in done]
@@ -456,20 +478,22 @@ def validate_finish_prerequisites(task_id: str) -> dict | None:
               "newer finish-time dependencies."
         )
 
-    if task_id == "P9-AUDIT-60":
+    if task_id == CURRENT_P9:
         sentinel_path = COMPLETED / "P9-PLAYBACK-GATE.json"
         if not sentinel_path.exists():
             raise SystemExit(
-                "Cannot finish P9-AUDIT-60: P9-PLAYBACK-GATE is not sealed."
+                f"Cannot finish {CURRENT_P9}: P9-PLAYBACK-GATE is not sealed."
             )
         try:
             sentinel = json.loads(sentinel_path.read_text(encoding="utf-8"))
         except (OSError, json.JSONDecodeError) as exc:
-            raise SystemExit(f"Cannot finish P9-AUDIT-60: invalid playback gate sentinel: {exc}")
+            raise SystemExit(
+                f"Cannot finish {CURRENT_P9}: invalid playback gate sentinel: {exc}"
+            )
         validation = sentinel.get("validation") or {}
         if validation.get("pilot60_pass") is not True:
             raise SystemExit(
-                "Cannot finish P9-AUDIT-60: playback gate sentinel does not prove "
+                f"Cannot finish {CURRENT_P9}: playback gate sentinel does not prove "
                 "pilot60_pass=true."
             )
         return sentinel
@@ -496,15 +520,14 @@ def finish_task(
 
     gate_sentinel = validate_finish_prerequisites(task_id)
 
-    if task_id == "P10-PILOT-DECISION":
+    if task_id == CURRENT_P10:
         if full_archive_decision not in {"YES", "NO"}:
             raise SystemExit(
-                "Finishing P10-PILOT-DECISION requires "
-                "--full-archive-decision YES|NO."
+                f"Finishing {CURRENT_P10} requires --full-archive-decision YES|NO."
             )
     elif full_archive_decision is not None:
         raise SystemExit(
-            "--full-archive-decision is valid only when finishing P10-PILOT-DECISION."
+            f"--full-archive-decision is valid only when finishing {CURRENT_P10}."
         )
 
     COMPLETED.mkdir(parents=True, exist_ok=True)
@@ -527,12 +550,12 @@ def finish_task(
         ),
     }
 
-    if task_id == "P9-AUDIT-60":
+    if task_id == CURRENT_P9:
         payload["gate_outcome"] = "pass"
         payload["playback_gate_task"] = "P9-PLAYBACK-GATE"
         payload["playback_gate_validation"] = (gate_sentinel or {}).get("validation")
 
-    if task_id == "P10-PILOT-DECISION":
+    if task_id == CURRENT_P10:
         payload["full_archive_decision"] = full_archive_decision
         payload["full_archive_authorized"] = full_archive_decision == "YES"
 
@@ -628,7 +651,7 @@ def main() -> None:
         "--full-archive-decision",
         choices=["YES", "NO"],
         help=(
-            "Required when finishing P10-PILOT-DECISION. Records the authoritative "
+            f"Required when finishing {CURRENT_P10}. Records the authoritative "
             "machine-readable FULL_ARCHIVE decision."
         ),
     )
@@ -767,8 +790,8 @@ def main() -> None:
     print(
         "After the claim is visible on main: execute the task, validate real outputs, "
         "commit/push outputs, then run --finish. Finish revalidates the latest queue "
-        "dependencies, so an older claim cannot bypass a newer gate. After finishing, "
-        "refresh and claim the next task."
+        "dependencies, so an older claim cannot bypass a newer gate. Superseded legacy "
+        "P9/P10 identities can never be reclaimed or finished as current work."
     )
 
 
