@@ -1,0 +1,15 @@
+{
+  "project": "Miles-Guo_public_archive",
+  "workflow_mode": "continuous-worker-v2",
+  "case_id": "PILOT-M008",
+  "live_id": "LIVE_20211029_001",
+  "stage": "alignment",
+  "ready_at": "2026-09-12T16:38:00Z",
+  "task_id": "S-ALIGN-PILOT-M008",
+  "agent_id": "agent-20260913T003800Z-gpt56sol-m008",
+  "result_commit": "737be819e233416d193eb211f6c996ab3deb7c4e",
+  "outputs": [
+    "data/live_segments/alignment/LIVE_20211029_001.jsonl"
+  ],
+  "validation": "Verified tracked canonical live/source identity and the current GHOT public timeline for 2021-10-29-1; wrote three clear direct ASR time anchors at 1433, 1771, and 2442 seconds. Preserved noisy-ASR provenance; no curated source, end times, alignment score, FPS/frame values, or playback verification were invented."
+}
