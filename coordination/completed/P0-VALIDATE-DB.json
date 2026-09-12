@@ -1,0 +1,9 @@
+{
+  "task_id": "P0-VALIDATE-DB",
+  "agent_id": "agent-20260912T152100Z-gpt56sol",
+  "completed_at": "2026-09-12T15:49:00Z",
+  "result_commit": "4efb4a581881abf0199a10b36c46cfb157de6428",
+  "outputs": ["scripts/validate_db.py"],
+  "validation": "Ran validate_db.py against a clean database produced by the current build_db.py/schema combination. Validator exited 0 with validation: OK, source/database counts all zero as expected, FTS count matched, integrity/FK checks passed.",
+  "notes": "Validator additionally enforces canonical live/segment/source IDs, source traceability, timing/FPS provenance, curated/ASR/time source IDs, FTS membership, and exposes unverified timed segments/duplicate platform IDs as visible warnings."
+}
