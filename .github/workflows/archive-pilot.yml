@@ -10,17 +10,16 @@ on:
       - 'scripts/**'
       - 'schema/**'
       - 'requirements.txt'
-      - 'data/live_videos/pilot.jsonl'
-      - 'data/sources/pilot.jsonl'
+      - 'data/**'
   workflow_dispatch:
 
 permissions:
   contents: write
 
 jobs:
-  collect-build-validate:
+  build-validate-pilot:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 15
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -36,29 +35,23 @@ jobs:
       - name: Install dependencies
         run: python -m pip install -r requirements.txt
 
-      - name: Collect GWINS lightweight inventory
-        run: python scripts/collect_gwins_inventory.py --max-pages 200 --sleep 0.25
-
-      - name: Rebuild SQLite
+      - name: Rebuild Pilot SQLite from Git-tracked source data
         run: python scripts/build_db.py
 
-      - name: Validate SQLite
+      - name: Validate Pilot SQLite
         run: python scripts/validate_db.py
 
-      - name: Commit generated archive data
+      - name: Commit rebuilt Pilot database
         env:
           TARGET_BRANCH: ${{ github.ref_name }}
         run: |
           git config user.name "Miles-Guo_public_archive bot"
           git config user.email "actions@users.noreply.github.com"
-          git add data/live_videos/gwins_inventory.jsonl
-          git add data/sources/gwins_inventory.jsonl
-          git add data/archive_items/gwins_unresolved.jsonl
           git add database/Miles-Guo_public_archive.sqlite3
           if git diff --cached --quiet; then
-            echo "No generated changes"
+            echo "No generated database changes"
           else
-            git commit -m "data: refresh GWINS inventory and archive database"
+            git commit -m "data: rebuild Pilot archive database"
             git fetch origin "${TARGET_BRANCH}"
             git rebase "origin/${TARGET_BRANCH}"
             git push origin "HEAD:${TARGET_BRANCH}"
