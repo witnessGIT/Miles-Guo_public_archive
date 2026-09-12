@@ -112,6 +112,7 @@ def validate_playback_record(
         "observation_mode",
         "content_observation",
         "decode_request_start_sec",
+        "decode_window_sec",
         "decode_media_source",
     ]
     missing = [key for key in required if row.get(key) is None or row.get(key) == ""]
@@ -158,22 +159,29 @@ def validate_playback_record(
         observed = float(row["observed_position_sec"])
         signed = float(row["timing_error_sec"])
         absolute = float(row["absolute_timing_error_sec"])
-        decode_start = float(row["decode_request_start_sec"])
+        decode_expected = float(row["decode_request_start_sec"])
+        decode_window = float(row["decode_window_sec"])
+        decode_start = float(row.get("decode_start_sec", decode_expected))
     except (TypeError, ValueError):
         problems.append(f"{source_label}: non-numeric timing field")
         return None, problems
 
-    if expected < 0 or observed < 0 or decode_start < 0:
-        problems.append(f"{source_label}: negative media position")
+    decode_end = decode_start + decode_window
+    if expected < 0 or observed < 0 or decode_start < 0 or decode_window <= 0:
+        problems.append(f"{source_label}: invalid media position/window")
     recomputed = observed - expected
     if abs(recomputed - signed) > 0.001:
         problems.append(f"{source_label}: timing_error_sec inconsistent with observed-expected")
     if abs(abs(signed) - absolute) > 0.001:
         problems.append(f"{source_label}: absolute_timing_error_sec inconsistent")
-    if abs(decode_start - expected) > 0.001:
+    if abs(decode_expected - expected) > 0.001:
         problems.append(
             f"{source_label}: decode_request_start_sec does not match expected_start_sec"
         )
+    if decode_start > expected + 0.001 or decode_end < expected - 0.001:
+        problems.append(f"{source_label}: decoded window does not contain expected_start_sec")
+    if observed < decode_start - 0.001 or observed > decode_end + 0.001:
+        problems.append(f"{source_label}: observed position lies outside decoded media window")
     if str(row.get("decode_media_source")) != str(row.get("media_url")):
         problems.append(f"{source_label}: decode_media_source does not match media_url")
 
