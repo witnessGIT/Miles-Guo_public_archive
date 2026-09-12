@@ -1,0 +1,13 @@
+{
+  "task_id": "S-ALIGN-PILOT-E006",
+  "agent_id": "agent-20260913T003400Z-gpt56sol-e006",
+  "claimed_at": "2026-09-12T16:34:00Z",
+  "base_commit": "677507b35d0e14e11e28eee1982653488ec17f57",
+  "status": "in_progress",
+  "workflow_mode": "continuous-worker-v2",
+  "continue_after_finish": true,
+  "stage": "align",
+  "case_id": "PILOT-E006",
+  "live_id": "LIVE_20180815_001",
+  "scope": "Align source-backed public time anchors for PILOT-E006 / LIVE_20180815_001; preserve provenance and do not invent timing, end times, scores or playback verification."
+}
