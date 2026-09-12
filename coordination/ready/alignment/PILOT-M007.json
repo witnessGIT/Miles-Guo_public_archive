@@ -1,0 +1,15 @@
+{
+  "project": "Miles-Guo_public_archive",
+  "workflow_mode": "continuous-worker-v2",
+  "case_id": "PILOT-M007",
+  "live_id": "LIVE_20210902_001",
+  "stage": "alignment",
+  "ready_at": "2026-09-12T16:50:00Z",
+  "task_id": "S-ALIGN-PILOT-M007",
+  "agent_id": "agent-20260912T164800Z-gpt56sol",
+  "result_commit": "d62ff63acc527e4ccf58a12d14a7d2e49c91ea05",
+  "outputs": [
+    "data/live_segments/alignment/LIVE_20210902_001.jsonl"
+  ],
+  "validation": "Three monotonic public GHOT ASR/time anchors at 0s, 355s, and 446s were preserved for LIVE_20210902_001. The tracked source is ASR; no curated provenance, invented end time, alignment score, FPS/frame value, or playback verification was asserted."
+}
