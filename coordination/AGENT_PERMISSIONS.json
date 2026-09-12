@@ -1,6 +1,6 @@
 {
   "project": "Miles-Guo_public_archive",
-  "policy_version": "agent-permissions-v1",
+  "policy_version": "agent-permissions-v2",
   "admin_github_logins": ["witnessGIT"],
   "default_role_when_identity_unknown": "worker",
   "roles": {
@@ -10,7 +10,9 @@
       "may_modify_schema_and_build_system": true,
       "may_modify_workflow_and_ci": true,
       "may_resolve_bug_reports": true,
-      "may_execute_business_tasks": true
+      "may_execute_business_tasks": true,
+      "may_submit_playback_requests": true,
+      "may_submit_playback_acceptances": true
     },
     "worker": {
       "may_fix_bugs": false,
@@ -19,7 +21,9 @@
       "may_modify_workflow_and_ci": false,
       "may_resolve_bug_reports": false,
       "may_execute_business_tasks": true,
-      "may_submit_bug_reports": true
+      "may_submit_bug_reports": true,
+      "may_submit_playback_requests": true,
+      "may_submit_playback_acceptances": true
     }
   },
   "protected_control_plane_paths": [
@@ -36,12 +40,24 @@
     "schema/",
     ".github/"
   ],
+  "worker_business_paths": [
+    "coordination/claims/",
+    "coordination/completed/",
+    "coordination/ready/",
+    "coordination/playback_requests/",
+    "coordination/playback_acceptances/",
+    "coordination/playback_attempts/",
+    "data/",
+    "reports/"
+  ],
   "worker_bug_report_path": "coordination/bug_reports/",
   "worker_bug_rule": "report_only_do_not_fix",
+  "playback_worker_rule": "workers may request repository-generated decoded-media evidence and accept evidence for their own claimed playback task; workers must not modify the evidence service implementation",
   "notes": [
     "An Agent is admin only when the authenticated GitHub login is verified as witnessGIT or the repository owner explicitly grants an admin exception in the current interaction.",
     "If account identity cannot be verified, act as worker.",
-    "Worker Agents may modify business-task outputs that belong to a valid claimed task, plus their own coordination claim/completion/readiness records and new immutable bug reports.",
+    "Worker Agents may modify business-task outputs that belong to a valid claimed task, plus their own coordination claim/completion/readiness records, playback requests/acceptances, and new immutable bug reports.",
+    "Playback requests and acceptances are business coordination records, not control-plane edits. The GitHub Actions service, scripts, schemas and workflow definitions remain admin-only.",
     "Worker Agents must not patch scripts, schema, CI, task orchestration, workflow policy, or other control-plane files when they encounter a bug.",
     "Bugs are fixed by admin Agents operating under the witnessGIT management account."
   ]
