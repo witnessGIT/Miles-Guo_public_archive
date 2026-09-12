@@ -44,6 +44,7 @@ def collect(max_pages: int, sleep_s: float):
     seen_urls: set[str] = set()
     lives: dict[str, dict] = {}
     sources: dict[str, dict] = {}
+    unresolved: dict[str, dict] = {}
     fetched_at = datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z")
 
     empty_pages = 0
@@ -51,26 +52,45 @@ def collect(max_pages: int, sleep_s: float):
         url = page_url(page)
         response = session.get(url, timeout=30)
         if response.status_code == 404:
+            print(f"page {page}: 404, inventory end")
             break
         response.raise_for_status()
         response.encoding = response.apparent_encoding or response.encoding
         soup = BeautifulSoup(response.text, "html.parser")
 
-        page_items = 0
+        raw_items = 0
+        resolved_items = 0
+        unresolved_items = 0
         for a in soup.find_all("a", href=True):
             href = urljoin(url, a["href"])
             m_item = ITEM_RE.search(href)
             if not m_item or href in seen_urls:
                 continue
 
-            text = " ".join(a.stripped_strings)
+            # A numeric Miles Guo article URL is itself a discovery fact. Keep it
+            # even when the list-page label does not expose a parseable date/id.
+            seen_urls.add(href)
+            raw_items += 1
+            article_id = m_item.group(1)
+            text = " ".join(a.stripped_strings).strip()
             m_id = ARCHIVE_ID_RE.search(text)
+
             if not m_id:
+                unresolved_items += 1
+                unresolved[f"GWINS_UNRESOLVED_{article_id}"] = {
+                    "discovery_id": f"GWINS_UNRESOLVED_{article_id}",
+                    "source_site": "gwins",
+                    "third_party_id": article_id,
+                    "source_url": href,
+                    "list_page": page,
+                    "source_title": text,
+                    "fetched_at": fetched_at,
+                    "resolution_status": "unresolved",
+                    "resolution_reason": "missing_standard_YYYYMMDD_sequence_in_list_label",
+                }
                 continue
 
-            seen_urls.add(href)
-            page_items += 1
-            article_id = m_item.group(1)
+            resolved_items += 1
             yyyymmdd, seq_text = m_id.groups()
             seq = int(seq_text)
             archive_id = f"{yyyymmdd}_{seq_text}"
@@ -105,8 +125,11 @@ def collect(max_pages: int, sleep_s: float):
                 "metadata_json": json.dumps({"gwins_item_id": archive_id, "list_page": page}, ensure_ascii=False),
             }
 
-        print(f"page {page}: {page_items} new items")
-        if page_items == 0:
+        print(
+            f"page {page}: {raw_items} raw, "
+            f"{resolved_items} resolved, {unresolved_items} unresolved"
+        )
+        if raw_items == 0:
             empty_pages += 1
             if empty_pages >= 2:
                 break
@@ -115,7 +138,7 @@ def collect(max_pages: int, sleep_s: float):
         if sleep_s:
             time.sleep(sleep_s)
 
-    return lives, sources
+    return lives, sources, unresolved
 
 
 def write_jsonl(path: Path, records):
@@ -131,13 +154,22 @@ def main():
     parser.add_argument("--sleep", type=float, default=0.25)
     args = parser.parse_args()
 
-    lives, sources = collect(args.max_pages, args.sleep)
-    if not lives:
+    lives, sources, unresolved = collect(args.max_pages, args.sleep)
+    if not lives and not unresolved:
         raise SystemExit("No GWINS items collected")
 
     write_jsonl(ROOT / "data/live_videos/gwins_inventory.jsonl", [lives[k] for k in sorted(lives)])
     write_jsonl(ROOT / "data/sources/gwins_inventory.jsonl", [sources[k] for k in sorted(sources)])
-    print(f"GWINS inventory complete: {len(lives)} live records, {len(sources)} sources")
+    write_jsonl(
+        ROOT / "data/archive_items/gwins_unresolved.jsonl",
+        [unresolved[k] for k in sorted(unresolved)],
+    )
+    print(
+        "GWINS inventory complete: "
+        f"{len(lives)} resolved live records, {len(sources)} resolved sources, "
+        f"{len(unresolved)} unresolved discovery records, "
+        f"{len(lives) + len(unresolved)} total discovered items"
+    )
 
 
 if __name__ == "__main__":
