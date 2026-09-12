@@ -1,0 +1,13 @@
+{
+  "project": "Miles-Guo_public_archive",
+  "pilot_case_id": "PILOT-E005",
+  "live_id": "LIVE_20180616_001",
+  "stage": "alignment",
+  "ready": true,
+  "agent_id": "agent-20260913T000000Z-sol-e001",
+  "marked_at": "2026-09-13T00:12:00Z",
+  "result_commit": "0c7c29cdbbf1348dd329ef0c41a218b2415b3315",
+  "outputs": ["data/live_segments/alignment/LIVE_20180616_001.jsonl"],
+  "validation": "Used three explicit GWINS source timestamps (00:00, 01:59, 04:55) as direct curated anchors. No GHOT timing source was asserted for this case. end_sec and playback verification remain unset/unverified.",
+  "notes": "Direct source timestamps provide locator anchors; real playback audit remains required."
+}
