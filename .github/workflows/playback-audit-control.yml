@@ -14,9 +14,12 @@ on:
       - 'data/live_segments/**'
       - 'data/playback_audits/**'
       - 'coordination/bug_reports/**'
+      - 'coordination/invalidated/**'
       - 'coordination/ready/collection/**'
       - 'coordination/ready/alignment/**'
       - 'coordination/completed/P9-PLAYBACK-GATE.json'
+      - 'coordination/completed/P9-AUDIT-60.json'
+      - 'coordination/completed/P10-PILOT-DECISION.json'
       - 'coordination/WORK_QUEUE.jsonl'
       - 'coordination/WORKFLOW.json'
       - 'START_HERE.md'
@@ -34,9 +37,12 @@ on:
       - 'data/live_segments/**'
       - 'data/playback_audits/**'
       - 'coordination/bug_reports/**'
+      - 'coordination/invalidated/**'
       - 'coordination/ready/collection/**'
       - 'coordination/ready/alignment/**'
       - 'coordination/completed/P9-PLAYBACK-GATE.json'
+      - 'coordination/completed/P9-AUDIT-60.json'
+      - 'coordination/completed/P10-PILOT-DECISION.json'
       - 'coordination/WORK_QUEUE.jsonl'
       - 'coordination/WORKFLOW.json'
       - 'START_HERE.md'
@@ -190,6 +196,59 @@ jobs:
           assert worker['classification'] == 'HOST_STOP', worker
           assert worker['admin_queue']['actionable_for_this_role'] is False, worker
           print('admin-role regression OK')
+          PY
+
+      - name: Regression test stale claims cannot bypass newer finish dependencies
+        run: |
+          PYTHONPATH=scripts python - <<'PY'
+          import next_task as nt
+
+          nt.load_queue = lambda: [{
+              'id': 'P9-AUDIT-60',
+              'depends_on': ['P9-PLAYBACK-GATE'],
+          }]
+          nt.completed_ids = lambda: set()
+          try:
+              nt.validate_finish_prerequisites('P9-AUDIT-60')
+          except SystemExit as exc:
+              if 'latest queue prerequisites are incomplete' not in str(exc):
+                  raise
+          else:
+              raise SystemExit('finish guard failed to block stale P9 claim')
+          print('finish-time dependency regression OK')
+          PY
+
+      - name: Assert authoritative P9 and P10 completion integrity
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          completed = Path('coordination/completed')
+          sentinel = completed / 'P9-PLAYBACK-GATE.json'
+          p9 = completed / 'P9-AUDIT-60.json'
+          p10 = completed / 'P10-PILOT-DECISION.json'
+
+          if p9.exists():
+              if not sentinel.exists():
+                  raise SystemExit('authoritative P9 completion exists without P9-PLAYBACK-GATE')
+              s = json.loads(sentinel.read_text(encoding='utf-8'))
+              if (s.get('validation') or {}).get('pilot60_pass') is not True:
+                  raise SystemExit('P9-PLAYBACK-GATE does not prove pilot60_pass=true')
+              row = json.loads(p9.read_text(encoding='utf-8'))
+              if row.get('finish_prerequisites_revalidated') is not True:
+                  raise SystemExit('P9 completion lacks finish-time prerequisite revalidation')
+
+          if p10.exists():
+              if not p9.exists():
+                  raise SystemExit('authoritative P10 completion exists without authoritative P9')
+              row = json.loads(p10.read_text(encoding='utf-8'))
+              if row.get('full_archive_decision') not in {'YES', 'NO'}:
+                  raise SystemExit('P10 completion lacks full_archive_decision=YES|NO')
+              if row.get('finish_prerequisites_revalidated') is not True:
+                  raise SystemExit('P10 completion lacks finish-time prerequisite revalidation')
+
+          print('authoritative P9/P10 integrity OK')
           PY
 
       - name: Assert P9 cannot be claimed before playback gate
