@@ -1,0 +1,12 @@
+{
+  "task_id": "S-ALIGN-PILOT-M004",
+  "agent_id": "agent-20260913T000000Z-sol-e001",
+  "completed_at": "2026-09-13T00:34:00Z",
+  "result_commit": "211fbf7921da4b3b61185c46601aab5aa1e49d8c",
+  "outputs": [
+    "data/live_segments/alignment/LIVE_20201001_001.jsonl",
+    "coordination/ready/alignment/PILOT-M004.json"
+  ],
+  "validation": "Preserved only comparatively intelligible direct GHOT timing anchors from a source explicitly documented as severely noisy ASR; records remain needs_review and no unsupported curated provenance, end time, score, FPS/frame or playback verification was asserted.",
+  "notes": "Alignment scaffold complete; manual playback audit is especially important for this case."
+}
