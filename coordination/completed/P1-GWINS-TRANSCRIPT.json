@@ -1,0 +1,9 @@
+{
+  "task_id": "P1-GWINS-TRANSCRIPT",
+  "agent_id": "agent-20260912T152100Z-gpt56sol",
+  "completed_at": "2026-09-12T15:40:00Z",
+  "result_commit": "c9cafdc56b1264e9f7672e381ca49827073d2eb7",
+  "outputs": ["docs/site_analysis/GWINS_TRANSCRIPT.md"],
+  "validation": "Verified modern timestamped GWINS transcript material on detail page 24248 and historical mixed transcript/robot-transcription markers on page 547, plus page-level entity/organization/region/glossary/editor metadata on page 21730.",
+  "notes": "GWINS cannot be classified wholesale as purely curated human text. The Pilot must preserve human/ASR/mixed provenance separately, normalize only explicit contextual timestamps, and leave playback verification for later audit/alignment tasks."
+}
