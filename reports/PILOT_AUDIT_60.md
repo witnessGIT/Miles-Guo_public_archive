@@ -1,79 +1,38 @@
-# Pilot Aggregate Audit Gate — P9-AUDIT-60
+# P9-AUDIT-60 — Current Status
 
 Project: `Miles-Guo_public_archive`  
-Phase: `PILOT`  
-Task: `P9-AUDIT-60`  
-Workflow: `continuous-worker-v2`
+Phase: `PILOT`
 
-## Result
+## Authoritative state
 
-**AUDIT GATE: FAIL**
+`P9-AUDIT-60` is **NOT completed** under the current workflow.
 
-The Pilot requirement is at least **60 real playback-checked segments**. The 27 per-case audit readiness records were reviewed across Early (E001–E009), Middle (M001–M009), and Late (L001–L009).
-
-Aggregate qualifying real playback checks:
+The earlier aggregate report was produced from a grandfathered claim that predated the mandatory `P9-PLAYBACK-GATE` dependency. That completion has been invalidated and preserved for history at:
 
 ```text
-Early:   0
-Middle:  0
-Late:    0
-Total:   0 / 60
+reports/history/PILOT_AUDIT_60_PREMATURE_20260912.md
+coordination/invalidated/P9-AUDIT-60__premature_20260912T171200Z.json
 ```
 
-No transcript timestamp, GHOT time-axis row, GWINS chapter timestamp, URL seek parameter, selected-clip boundary, or cross-source text match was counted as real playback verification.
-
-## Accuracy gates
-
-Required Pilot quality gates:
+Its substantive observation remains useful:
 
 ```text
-false livestream merge rate approximately 0
->= 90% of locatable audited segments within 3 seconds
->= 98% within 8 seconds
+qualifying real playback checks at that snapshot: 0 / 60
 ```
 
-Observed state:
+But a failed 0/60 review is not a valid completion of the current P9 gate.
 
-- qualifying playback sample size: **0**;
-- measured playback timing errors: **0**;
-- <=3 second rate: **not measurable / gate not satisfied**;
-- <=8 second rate: **not measurable / gate not satisfied**;
-- false-merge review evidence exists in case/source work, including preservation of known identity/ordinal conflicts, but the required playback audit sample is absent and the Pilot cannot pass on source/timeline corroboration alone.
+## Current gate chain
 
-## Per-era evidence summary
-
-### Early — E001 to E009
-
-All nine audit records explicitly state that actual media playback was not independently observed or decoded. Each contributes zero qualifying checks. Some cases strongly corroborate stored starts against public GHOT/GWINS timestamps, but those are source-timeline checks rather than playback checks.
-
-### Middle — M001 to M009
-
-All nine audit records contribute zero qualifying checks. GHOT public timestamps corroborate many stored anchors; noisy-ASR and pre-roll caveats are preserved where applicable. No timing error was independently measured from decoded media.
-
-### Late — L001 to L009
-
-All nine audit records contribute zero qualifying checks. Several readiness records provide explicit machine-readable fields:
+P9 may be newly claimed and completed only after:
 
 ```text
-qualifying_playback_checks = 0
-counts_toward_pilot_60 = false
-timing_accuracy_measured = false
+real decoded-media playback checks
+-> scripts/audit_gate.py reports pilot60_pass=true
+-> scripts/playback_queue.py --seal-gate creates P9-PLAYBACK-GATE
+-> P9-AUDIT-60 becomes eligible
 ```
 
-The 2022-05-29 ordinal/source mismatch remains preserved rather than being forced into a false merge.
+Only canonical-crosschecked records under `data/playback_audits/` count toward Pilot-60. Transcript timestamps, source-page timestamps, ASR anchors, ordinary `S-AUDIT-*` markers, and decode-only evidence without content inspection do not count.
 
-## Gate interpretation
-
-The project requirements state that if the Pilot quality target is not reached, the project must **not enter full collection**. P9 is therefore complete as an evidence-based failed gate: the aggregate evidence was evaluated, the required 60 real playback checks are absent, and the timing-accuracy thresholds cannot be certified.
-
-This result does **not** authorize `FULL_ARCHIVE`.
-
-## Required next decision
-
-`P10-PILOT-DECISION` should publish the whole-Pilot report and recommend:
-
-```text
-FULL_ARCHIVE: NO
-```
-
-unless new real playback audit evidence is added and P9 is rerun/reopened under an authorized workflow.
+FULL_ARCHIVE remains unauthorized.
