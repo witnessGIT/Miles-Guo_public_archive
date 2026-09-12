@@ -4,11 +4,11 @@ Project: `Miles-Guo_public_archive`
 Repository: `witnessGIT/Miles-Guo_public_archive`  
 Current phase: `SITE_ANALYSIS + PILOT`  
 Workflow: `continuous-worker-v2`  
-Full archive collection: **NOT STARTED / NOT AUTHORIZED UNTIL PILOT PASSES**
+Full archive collection: **NOT STARTED / NOT AUTHORIZED UNTIL CURRENT PILOT PASSES**
 
 ## Start here
 
-Every Agent must read the repository control files, then classify current state with:
+Classify current repository/session state with:
 
 ```bash
 python scripts/project_status.py
@@ -20,7 +20,27 @@ If and only if the runtime can genuinely inspect decoded clip/frame/audio conten
 python scripts/project_status.py --content-inspection-capable
 ```
 
-Do not infer project state from stale chat summaries. The repository is authoritative.
+Do not infer state from stale chats or from historical completion files alone. The current repository control plane is authoritative.
+
+## Current acceptance revision
+
+The repository contains historical completed records named:
+
+```text
+P9-AUDIT-60
+P10-PILOT-DECISION
+```
+
+Those records were produced before the current playback-gated acceptance chain existed. They remain preserved as audit history and MUST NOT count as current Pilot completion or FULL_ARCHIVE authorization.
+
+The current gate/report task identities are:
+
+```text
+P9-AUDIT-60-R2
+P10-PILOT-DECISION-R2
+```
+
+Do not delete, rewrite, or reuse the old P9/P10 files. The R2 tasks exist so the current acceptance cycle can complete without destroying historical evidence.
 
 ## Current objective
 
@@ -45,9 +65,9 @@ Use real public records only. Do not invent Pilot data.
 
 The Pilot contains 27 selected source-backed cases.
 
-Foundation/site analysis, aggregate alignment, and Pilot SQLite validation have already advanced far enough that the **acceptance-critical blocker is now real playback-position auditing**.
+Foundation/site analysis, aggregate alignment, and Pilot SQLite validation have advanced far enough that the **acceptance-critical blocker is real playback-position auditing**.
 
-The acceptance chain is:
+The authoritative chain is:
 
 ```text
 P9-PLAYBACK-PILOT-* real playback work
@@ -58,20 +78,22 @@ scripts/audit_gate.py reports pilot60_pass=true
         ↓
 coordination/completed/P9-PLAYBACK-GATE.json
         ↓
-P9-AUDIT-60
+P9-AUDIT-60-R2
         ↓
-P10-PILOT-DECISION
+P10-PILOT-DECISION-R2
         ↓
 FULL_ARCHIVE YES / NO decision
 ```
 
-`P10-PILOT-DECISION` MUST NOT begin before `P9-AUDIT-60` is completed.
+`P9-AUDIT-60-R2` MUST NOT begin before `P9-PLAYBACK-GATE` exists.
 
-`FULL_ARCHIVE` MUST NOT begin before the P10 decision explicitly authorizes it.
+`P10-PILOT-DECISION-R2` MUST NOT begin before `P9-AUDIT-60-R2` completes.
+
+`FULL_ARCHIVE` MUST NOT begin unless the **current R2 P10** explicitly authorizes it.
 
 ## Two work queues
 
-Ordinary collection/alignment/source-audit work:
+Ordinary business/gate work:
 
 ```bash
 python scripts/next_task.py --list
@@ -91,7 +113,7 @@ If ordinary work is empty but playback work remains:
 repository-wide NO_ELIGIBLE_WORK = false
 ```
 
-A runtime without the required media/content-inspection capability may classify only its own session as:
+A runtime without required media/content-inspection capability may classify only its own session as:
 
 ```text
 HOST_STOP
@@ -118,7 +140,7 @@ python scripts/playback_queue.py \
 
 The flag is an auditable capability assertion, not a bypass.
 
-A runtime that can execute ffmpeg but cannot actually inspect the generated content and determine the observed content position MUST NOT pass the flag and MUST NOT claim playback work.
+A runtime that can execute ffmpeg but cannot inspect generated content and determine the observed content position MUST NOT pass the flag and MUST NOT claim playback work.
 
 ## What counts toward Pilot-60
 
@@ -130,16 +152,18 @@ data/playback_audits/
 
 may count.
 
-A qualifying record requires the real chain:
+A qualifying record requires:
 
 ```text
 public media access
 → actual seek/decode
 → actual content inspection
 → observed content position
-→ timing error
+→ signed timing error
 → scripts/record_playback_audit.py
 ```
+
+Playback decode windows must include time before and after the expected timestamp so negative and positive timing error can both be measured.
 
 The following do **not** count by themselves:
 
@@ -151,13 +175,14 @@ source-page timestamps
 ASR time-axis checks
 successful ffmpeg decode without content inspection
 written audit reports without real playback
+historical P9/P10 completion files
 ```
 
-Therefore generating more transcript/timeline audit reports cannot substitute for the 60 real playback checks.
+Generating more transcript/timeline audit reports cannot substitute for the 60 real playback checks.
 
 ## Pilot-60 acceptance thresholds
 
-Pilot approval still requires at least 60 qualifying real playback checks in aggregate, with:
+Pilot approval requires at least 60 qualifying real playback checks in aggregate, with:
 
 ```text
 false livestream merge rate approximately 0
@@ -167,23 +192,52 @@ false livestream merge rate approximately 0
 
 Unperformed playback checks remain `unverified`.
 
+## Gate transition after Pilot-60 passes
+
+When:
+
+```bash
+python scripts/audit_gate.py --json
+```
+
+reports:
+
+```text
+pilot60_pass=true
+```
+
+seal the gate:
+
+```bash
+python scripts/playback_queue.py --seal-gate --agent-id <agent-id>
+```
+
+Then the non-playback acceptance work may continue:
+
+```text
+P9-AUDIT-60-R2
+→ P10-PILOT-DECISION-R2
+```
+
+Once Pilot-60 has passed, extra optional playback cases do not keep the acceptance path in HOST_STOP.
+
 ## HOST_STOP versus SAFETY_OR_ACCESS_BLOCK
 
-Use `HOST_STOP` when the current runtime cannot execute the required media tooling or cannot inspect generated media evidence.
+Use `HOST_STOP` when the current runtime cannot execute required media tooling or cannot inspect generated media evidence.
 
 Use `SAFETY_OR_ACCESS_BLOCK` only when progress would require bypassing login, CAPTCHA, paywall, DRM, or another access control.
 
-Do not misclassify a runtime limitation as a project-wide lack of work.
+Do not misclassify a runtime limitation as repository-wide lack of work.
 
 ## Backlog is not a Pilot acceptance substitute
 
 Documentation or future tooling such as data-model, data-quality, source-policy, architecture, collection, or export work may remain unfinished or independently claimable.
 
-Those items may be useful backlog, but they are not permission to bypass playback-position auditing and they do not unlock:
+Those items may be useful backlog, but they cannot bypass playback-position auditing and do not unlock:
 
 ```text
-P9-AUDIT-60
-P10-PILOT-DECISION
+P9-AUDIT-60-R2
+P10-PILOT-DECISION-R2
 FULL_ARCHIVE
 ```
 
@@ -223,8 +277,6 @@ claim
 → claim next eligible task
 ```
 
-Completing one task is not a stop condition.
-
 Valid stop conditions remain:
 
 ```text
@@ -240,15 +292,24 @@ Use `scripts/project_status.py` to avoid confusing repository-wide `NO_ELIGIBLE_
 
 ## Final decision boundary
 
-Do not start `FULL_ARCHIVE` merely because scraping, alignment, database build, transcript auditing, or report generation is possible.
+Do not start `FULL_ARCHIVE` merely because scraping, alignment, database build, transcript auditing, old P9/P10 records, or report generation exists.
 
-`P10-PILOT-DECISION` must be supported by real evidence covering the Pilot, including at least 60 qualifying playback audits and the required timing thresholds.
+`P10-PILOT-DECISION-R2` must be supported by the current Pilot evidence, including at least 60 qualifying playback audits and required timing thresholds.
 
-Until then:
+Only an explicit current R2 decision:
+
+```text
+full_archive_decision=YES
+```
+
+authorizes FULL_ARCHIVE.
+
+Until the current chain reaches that point:
 
 ```text
 PILOT = NOT PASSED
-P10 = BLOCKED
+CURRENT P9 = BLOCKED
+CURRENT P10 = BLOCKED
 FULL_ARCHIVE = NOT AUTHORIZED
 ```
 
