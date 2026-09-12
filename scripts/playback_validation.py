@@ -8,6 +8,11 @@ from urllib.parse import urlparse
 ROOT = Path(__file__).resolve().parents[1]
 SEGMENT_ROOT = ROOT / "data" / "live_segments"
 READY_ROOT = ROOT / "coordination" / "ready"
+EVIDENCE_ROOT = ROOT / "data" / "playback_evidence"
+
+MANUAL_EVIDENCE = "qualifying_playback_timing_check_v1"
+REPOSITORY_EVIDENCE = "qualifying_playback_timing_check_v2"
+SUPPORTED_EVIDENCE = {MANUAL_EVIDENCE, REPOSITORY_EVIDENCE}
 
 
 def _iter_records(root: Path):
@@ -91,6 +96,90 @@ def is_public_http_url(value: object) -> bool:
     return parsed.scheme in {"http", "https"} and bool(parsed.netloc)
 
 
+def _safe_evidence_path(raw: object) -> Path | None:
+    if not isinstance(raw, str) or not raw.strip():
+        return None
+    path = Path(raw)
+    if not path.is_absolute():
+        path = ROOT / path
+    try:
+        resolved = path.resolve()
+        root = EVIDENCE_ROOT.resolve()
+    except OSError:
+        return None
+    if resolved != root and root not in resolved.parents:
+        return None
+    return resolved
+
+
+def _validate_repository_evidence(row: dict, source_label: str) -> list[str]:
+    problems: list[str] = []
+    if row.get("inspection_method") != "repository_decoded_evidence_service_v1":
+        problems.append(f"{source_label}: invalid repository inspection_method")
+    if row.get("agent_evidence_acceptance") is not True:
+        problems.append(f"{source_label}: repository evidence lacks explicit Agent acceptance")
+    path = _safe_evidence_path(row.get("repository_evidence_ref"))
+    if path is None:
+        problems.append(f"{source_label}: invalid repository_evidence_ref")
+        return problems
+    if not path.exists():
+        problems.append(f"{source_label}: repository evidence file does not exist")
+        return problems
+    try:
+        evidence = json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError) as exc:
+        problems.append(f"{source_label}: invalid repository evidence JSON: {exc}")
+        return problems
+    if not isinstance(evidence, dict):
+        problems.append(f"{source_label}: repository evidence top level must be an object")
+        return problems
+    if evidence.get("evidence_version") != "repository-playback-evidence-v1":
+        problems.append(f"{source_label}: unsupported repository evidence version")
+    if evidence.get("status") != "ready_for_agent_review":
+        problems.append(f"{source_label}: repository evidence is not ready_for_agent_review")
+    if evidence.get("playback_decode_verified") is not True:
+        problems.append(f"{source_label}: repository evidence does not prove media decoding")
+    if evidence.get("repository_content_inspection") is not True:
+        problems.append(f"{source_label}: repository evidence inspection did not run")
+    if evidence.get("candidate_content_match") is not True:
+        problems.append(f"{source_label}: repository evidence candidate did not match content")
+    if str(evidence.get("bundle_id") or "") != str(row.get("repository_evidence_bundle_id") or ""):
+        problems.append(f"{source_label}: repository evidence bundle_id mismatch")
+    for key in ("case_id", "live_id", "segment_id", "media_url"):
+        if str(evidence.get(key) or "") != str(row.get(key) or ""):
+            problems.append(f"{source_label}: repository evidence {key} mismatch")
+    try:
+        e_expected = float(evidence["expected_start_sec"])
+        e_observed = float(evidence["candidate_observed_position_sec"])
+        e_decode_start = float(evidence["decode_start_sec"])
+        e_decode_window = float(evidence["decode_window_sec"])
+        r_expected = float(row["expected_start_sec"])
+        r_observed = float(row["observed_position_sec"])
+        r_decode_start = float(row.get("decode_start_sec", row["decode_request_start_sec"]))
+        r_decode_window = float(row["decode_window_sec"])
+        score = float(((evidence.get("audio_asr") or {}).get("best_match") or {}).get("score") or 0.0)
+        minimum = float(evidence.get("minimum_agent_review_score") or 1.0)
+    except (KeyError, TypeError, ValueError):
+        problems.append(f"{source_label}: repository evidence contains non-numeric timing/score fields")
+        return problems
+    if abs(e_expected - r_expected) > 0.001:
+        problems.append(f"{source_label}: repository evidence expected position mismatch")
+    if abs(e_observed - r_observed) > 0.001:
+        problems.append(f"{source_label}: repository evidence observed position mismatch")
+    if abs(e_decode_start - r_decode_start) > 0.001 or abs(e_decode_window - r_decode_window) > 0.001:
+        problems.append(f"{source_label}: repository evidence decode window mismatch")
+    if score < minimum:
+        problems.append(f"{source_label}: repository evidence ASR score below review threshold")
+    try:
+        row_score = float(row.get("repository_asr_match_score"))
+    except (TypeError, ValueError):
+        problems.append(f"{source_label}: invalid repository_asr_match_score")
+    else:
+        if abs(row_score - score) > 0.000001:
+            problems.append(f"{source_label}: repository_asr_match_score mismatch")
+    return problems
+
+
 def validate_playback_record(
     row: dict,
     *,
@@ -120,7 +209,8 @@ def validate_playback_record(
         problems.append(f"{source_label}: missing required fields: {', '.join(missing)}")
         return None, problems
 
-    if row.get("evidence_type") != "qualifying_playback_timing_check_v1":
+    evidence_type = row.get("evidence_type")
+    if evidence_type not in SUPPORTED_EVIDENCE:
         problems.append(f"{source_label}: unsupported evidence_type")
     if row.get("playback_decode_verified") is not True:
         problems.append(f"{source_label}: playback_decode_verified is not true")
@@ -192,6 +282,9 @@ def validate_playback_record(
                 f"{source_label}: expected_start_sec {expected} does not match canonical "
                 f"segment start_sec {canonical_start}"
             )
+
+    if evidence_type == REPOSITORY_EVIDENCE:
+        problems.extend(_validate_repository_evidence(row, source_label))
 
     if problems:
         return None, problems
