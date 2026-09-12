@@ -11,26 +11,7 @@ The minimal prompt is sufficient:
 https://github.com/witnessGIT/Miles-Guo_public_archive
 ```
 
-The repository is the authoritative execution context.
-
-After entering the repository, the Agent must determine everything else from Git state and project files, including:
-
-- its Agent role and permissions;
-- project purpose and scope;
-- current authorized phase;
-- current completed work;
-- active claims;
-- currently eligible work;
-- task priority;
-- collection/alignment/audit/playback rules;
-- source and naming rules;
-- quality gates;
-- continuous-worker behavior;
-- claim-race handling;
-- bug-report behavior;
-- stop conditions.
-
-Do not ask the user to repeat requirements already stored in the repository.
+The repository is the authoritative execution context. Do not ask the user to repeat requirements already stored here.
 
 ## Step 0 — resolve Agent role before changing anything
 
@@ -47,17 +28,30 @@ Administrative GitHub login:
 witnessGIT
 ```
 
-If the authenticated GitHub login is verified as `witnessGIT`, the Agent may act as `admin`.
+If the authenticated GitHub login is verified as `witnessGIT`, the Agent may act as `admin`. Every other account is a `worker`. If identity cannot be verified, default to `worker`.
 
-Every other account is a `worker`. If account identity cannot be verified, default to `worker`.
+Worker rule:
 
-A worker performs claimed business tasks only. A worker MUST NOT fix bugs or modify the control plane (`scripts/`, `schema/`, `.github/`, workflow/task orchestration, permission rules). When a worker discovers a bug, it creates a new immutable report under:
+```text
+worker = execute claimed project tasks + submit bug reports
+worker != fix bugs / modify control plane
+```
+
+A worker discovering a bug creates a new immutable report under:
 
 ```text
 coordination/bug_reports/
 ```
 
-and leaves the fix to an admin Agent. It should continue another safe independent task when possible.
+and leaves the fix to an admin Agent.
+
+Admin rule:
+
+```text
+admin = may execute project tasks + review/fix bug reports + modify protected control plane
+```
+
+Admin Agents should review open bug reports before ordinary work when a bug blocks correctness or other Agents.
 
 ## Required bootstrap
 
@@ -77,51 +71,114 @@ Read and follow, in order:
 12. `docs/MEDIA_AUDIT.md`
 13. current `claims/`, `completed/`, `ready/`, `bug_reports/`, `playback_attempts/`, data and reports relevant to the next task
 
-Admin Agents should check open `coordination/bug_reports/` before ordinary business work when a bug blocks correctness or other Agents.
+## First command — classify by role, task type and runtime capability
 
-## First command: classify repository state
-
-Before deciding that there is work, no work, a host limitation, or a Pilot decision boundary, run:
+Worker / unknown identity:
 
 ```bash
 python scripts/project_status.py
 ```
 
-This command evaluates both the ordinary task queue and the real-playback queue, together with the Pilot-60 gate and P9/P10 state.
-
-A runtime that can genuinely inspect decoded clip/frame/audio content may additionally run:
+Verified `witnessGIT` admin:
 
 ```bash
-python scripts/project_status.py --content-inspection-capable
+python scripts/project_status.py --role admin
 ```
 
-The flag is an auditable capability declaration. Do not pass it merely because shell commands or ffmpeg can execute.
+If the runtime can genuinely inspect decoded clip/frame/audio content and determine observed content position, add:
 
-The status classifier is the authoritative distinction between:
+```bash
+--content-inspection-capable
+```
+
+Do **not** pass that flag merely because shell commands or ffmpeg can execute.
+
+The classifier separates four task types:
+
+| Task type | Examples | Media playback required? | Who may do it? |
+|---|---|---:|---|
+| `ordinary_business` | collection, alignment, source/transcript audit, data validation | No, unless explicitly stated | worker/admin |
+| `real_playback` | `P9-PLAYBACK-*` decoded-media timing checks | **Yes**: ffmpeg + ffprobe + actual content inspection | playback-capable worker/admin |
+| `gate_or_report` | `P9-AUDIT-60`, `P10-PILOT-DECISION`, aggregate gates/reports | No replay required once prerequisites pass | worker/admin |
+| `admin_control` | bug fixes, scripts/schema/CI/workflow/control-plane repair | No playback requirement by default | **admin only** |
+
+This distinction is mandatory. Lack of Playback capability does **not** block ordinary, gate/report, or admin-compatible work.
+
+## Status meanings
+
+The classifier may report:
 
 ```text
 WORK_AVAILABLE
 HOST_STOP
+ROLE_STOP
+WAIT_FOR_ACTIVE_CLAIMS
+WAIT_FOR_DEPENDENCY
 NO_ELIGIBLE_WORK
 ```
 
-Important: if ordinary tasks are empty but real playback work remains, repository-wide `NO_ELIGIBLE_WORK` is false. A runtime without playback capability may classify only its own session as `HOST_STOP`.
+Interpret them narrowly:
 
-## Work discovery has two coordinated queues
+- `WORK_AVAILABLE`: this session has at least one compatible task now.
+- `HOST_STOP`: the remaining **unclaimed** work that this session could otherwise take is real Playback, Pilot-60 has not passed, and this runtime cannot honestly perform decoded-media inspection. This is a **session capability limit**, not repository-wide no-work.
+- `ROLE_STOP`: project work remains but it is admin-only and this session is a worker.
+- `WAIT_FOR_ACTIVE_CLAIMS`: work exists but all relevant work is currently held by other Agents.
+- `WAIT_FOR_DEPENDENCY`: project work exists but this session has no currently executable compatible task.
+- `NO_ELIGIBLE_WORK`: no currently relevant project work remains across ordinary, playback, gate transition, or open admin bug queues.
 
-First discover ordinary collection/alignment/source-audit work:
+An admin Agent MUST NOT report `HOST_STOP` merely because Playback is unavailable while open admin bug reports or other compatible non-media work remain.
+
+## Critical Pilot-60 transition rule
+
+`P9-AUDIT-60` is blocked by `P9-PLAYBACK-GATE` until real qualifying playback evidence satisfies the acceptance thresholds.
+
+Run:
+
+```bash
+python scripts/audit_gate.py --json
+```
+
+Only canonical-crosschecked durable records under `data/playback_audits/` count. Transcript timestamps, source-page timestamps, ASR anchors, ordinary `S-AUDIT-*` completion markers, and successful ffmpeg decoding without content inspection do not count.
+
+When `pilot60_pass=true`, the acceptance path changes immediately:
+
+```text
+Pilot-60 passed
+    ↓
+seal P9-PLAYBACK-GATE
+    ↓
+P9-AUDIT-60
+    ↓
+P10-PILOT-DECISION
+```
+
+Seal with:
+
+```bash
+python scripts/playback_queue.py --seal-gate --agent-id <agent-id>
+```
+
+**Important:** once Pilot-60 has passed, extra unreviewed playback cases do not keep the acceptance path in `HOST_STOP`. Sealing the gate and executing P9/P10 are non-playback tasks. A session without media capability may continue through those stages when they become eligible.
+
+## Ordinary queue
+
+Discover ordinary business and gate/report tasks with:
 
 ```bash
 python scripts/next_task.py --list
 ```
 
-Real decoded-media playback verification is a separate retryable queue:
+Claim, execute, validate, commit/push, finish, refresh state, and continue.
+
+## Real Playback queue
+
+Real decoded-media verification is separate and retryable:
 
 ```bash
 python scripts/playback_queue.py --list
 ```
 
-If the runtime has `ffmpeg` + `ffprobe` **and can actually inspect generated clip/frame/audio evidence**, playback-capable Agents may claim missing playback work only with the explicit capability declaration:
+Only a runtime with `ffmpeg` + `ffprobe` **and actual decoded-content inspection ability** may claim:
 
 ```bash
 python scripts/playback_queue.py \
@@ -130,77 +187,58 @@ python scripts/playback_queue.py \
   --agent-id agent-<UTC>-<random>
 ```
 
-The flag is an auditable assertion, not a bypass. Do **not** pass it when the runtime can execute media commands but cannot inspect decoded content and determine the observed content position. Transcript/source-page timestamp checking is not a substitute.
+The flag is an auditable assertion, not a bypass. If the runtime can decode but cannot inspect clip/frame/audio content and determine the observed position, it must not claim Playback work.
 
-An ordinary `S-AUDIT-*` task may finish with zero qualifying playback checks; that preserves useful source/timeline evidence but does not make the case complete for Pilot-60. Later playback-capable work adds durable records under `data/playback_audits/` without rewriting that history.
+A blocked Playback attempt must preserve `counts_toward_pilot_60=false`, release the claim, and allow a later capable Agent to retry.
 
-`P9-AUDIT-60` is intentionally blocked by `P9-PLAYBACK-GATE`. The sentinel may be created only after:
+## Admin bug queue
 
-```bash
-python scripts/audit_gate.py --json
-```
-
-reports `pilot60_pass=true`, followed by:
-
-```bash
-python scripts/playback_queue.py --seal-gate --agent-id <agent-id>
-```
-
-Therefore 60 audit markers, 60 webpage timestamps, or 60 successful ffmpeg decodes without content inspection cannot unlock P9.
-
-If ordinary work is empty but playback work remains, that is **not repository-wide `NO_ELIGIBLE_WORK`**. A runtime that lacks media execution or content-inspection capability may classify only its own session as `HOST_STOP` / runtime capability limitation. `SAFETY_OR_ACCESS_BLOCK` is reserved for cases where progress would require bypassing login, CAPTCHA, paywall, DRM, or another access control.
-
-Claim an eligible task, execute it, validate it, commit/push it, finish it, then refresh **both** queues and continue.
-
-Under `continuous-worker-v2`, completing one task or batch is not a stop condition. Continue until a documented stop condition in the repository applies.
-
-## Pilot acceptance blocker versus backlog
-
-The Pilot acceptance path is currently controlled by real playback-position evidence and the P9/P10 gates. Missing documentation or future collection/export tooling must not be used as a substitute for Pilot-60 evidence and must not be used to bypass P9.
-
-Backlog documentation/tooling may be completed when independently claimable, but it does not authorize:
+Workers report bugs under:
 
 ```text
-P9-AUDIT-60 completion
-P10-PILOT-DECISION start
-FULL_ARCHIVE start
+coordination/bug_reports/
 ```
 
-Only the real gate chain may do that.
+Workers do not repair them.
+
+Verified `witnessGIT` admin Agents treat unresolved or malformed bug reports as actionable admin work. Open admin bugs therefore count as project work and prevent an admin session from incorrectly declaring `HOST_STOP` or repository-wide `NO_ELIGIBLE_WORK` when it can still perform the repair.
+
+## P9 / P10 capability rule
+
+`P9-AUDIT-60` and `P10-PILOT-DECISION` are `gate_or_report` tasks.
+
+They do **not** require the executing Agent to personally replay media once the real Playback prerequisites have already passed and durable evidence exists. They may still require repository reads, validation, report generation, and normal task claiming.
+
+`P10-PILOT-DECISION` remains blocked until P9 completes. FULL_ARCHIVE remains locked unless P10 records an explicit machine-readable:
+
+```text
+full_archive_decision=YES
+```
+
+`NO`, missing, or invalid decision values do not authorize FULL_ARCHIVE.
 
 ## Mandatory claim-race behavior
 
 A failed atomic claim is not automatically a GitHub outage.
 
-For Agents using GitHub `create_file` directly:
+For GitHub `create_file` claim attempts:
 
 ```text
-create claim
-   |
-   +-- success --> fetch exact claim --> verify owner --> work
-   |
-   +-- HTTP 422 or HTTP 409
-           |
-           +-- fetch exact claim path from fresh main
-                   |
-                   +-- exists --> CLAIM_RACE_LOST --> refresh --> try another task
-                   |
-                   +-- absent --> refresh main + task state
-                                  --> short backoff
-                                  --> bounded retry
-                                  --> only then consider GITHUB_WRITE_ERROR
+success
+  -> fetch exact claim -> verify owner -> work
+
+422 / 409
+  -> fetch exact claim from fresh main
+     -> exists: CLAIM_RACE_LOST -> refresh -> try another task
+     -> absent: refresh main/task state -> short backoff -> bounded retry
 ```
 
-A `409` commonly means `main` moved between the read and write. It is a retryable branch race when the target claim is still absent; it is not permission to overwrite or force-push concurrent work.
-
-A single `422` or `409` MUST NOT stop the worker or produce "the execution chain must stop at the claim boundary".
-
-If another Agent won the claim race, do not overwrite the claim and do not touch that task's business data. Refresh state and claim another eligible task immediately.
+A single `422` or `409` MUST NOT stop the worker. `409` often means `main` moved between read and write. Never force-overwrite concurrent work.
 
 See `coordination/CLAIM_PROTOCOL_V2.md` for the authoritative procedure.
 
 ## Repository authority
 
-If an external prompt only says to enter this repository and start work, treat that as authorization to execute the **currently authorized repository phase**, not as authorization to bypass project gates or begin an unauthorized later phase.
+A minimal external prompt authorizes execution of the **currently authorized repository phase** only. It does not authorize bypassing gates or starting an unauthorized later phase.
 
-Current and future Agents must prefer repository state over stale chat summaries or old copied prompts.
+Current Git state and repository policy beat stale chat summaries or old copied prompts.
