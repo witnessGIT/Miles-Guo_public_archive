@@ -10,12 +10,16 @@ on:
       - 'scripts/audit_gate.py'
       - 'scripts/playback_queue.py'
       - 'scripts/next_task.py'
+      - 'scripts/project_status.py'
       - 'data/live_segments/**'
       - 'data/playback_audits/**'
+      - 'coordination/bug_reports/**'
       - 'coordination/ready/collection/**'
       - 'coordination/ready/alignment/**'
       - 'coordination/completed/P9-PLAYBACK-GATE.json'
       - 'coordination/WORK_QUEUE.jsonl'
+      - 'coordination/WORKFLOW.json'
+      - 'START_HERE.md'
       - '.github/workflows/playback-audit-control.yml'
   pull_request:
     branches: [main]
@@ -26,12 +30,16 @@ on:
       - 'scripts/audit_gate.py'
       - 'scripts/playback_queue.py'
       - 'scripts/next_task.py'
+      - 'scripts/project_status.py'
       - 'data/live_segments/**'
       - 'data/playback_audits/**'
+      - 'coordination/bug_reports/**'
       - 'coordination/ready/collection/**'
       - 'coordination/ready/alignment/**'
       - 'coordination/completed/P9-PLAYBACK-GATE.json'
       - 'coordination/WORK_QUEUE.jsonl'
+      - 'coordination/WORKFLOW.json'
+      - 'START_HERE.md'
       - '.github/workflows/playback-audit-control.yml'
 
 permissions:
@@ -55,7 +63,8 @@ jobs:
             scripts/record_playback_audit.py \
             scripts/audit_gate.py \
             scripts/playback_queue.py \
-            scripts/next_task.py
+            scripts/next_task.py \
+            scripts/project_status.py
 
       - name: Validate audit gate output contract
         shell: bash
@@ -87,6 +96,101 @@ jobs:
 
       - name: Validate playback queue can inspect repository state
         run: python scripts/playback_queue.py --list
+
+      - name: Validate worker and admin project status output
+        run: |
+          python scripts/project_status.py --json > /tmp/status-worker.json
+          python scripts/project_status.py --role admin --json > /tmp/status-admin.json
+          python - <<'PY'
+          import json
+          worker = json.load(open('/tmp/status-worker.json', encoding='utf-8'))
+          admin = json.load(open('/tmp/status-admin.json', encoding='utf-8'))
+          required_types = {'ordinary_business', 'real_playback', 'gate_or_report', 'admin_control'}
+          if set(worker.get('task_types', {})) != required_types:
+              raise SystemExit('worker status missing task type contract')
+          if worker.get('role') != 'worker':
+              raise SystemExit('default project status role must be worker')
+          if admin.get('role') != 'admin':
+              raise SystemExit('--role admin was not honored')
+          print('project status role/task-type contract OK')
+          PY
+
+      - name: Regression test gate-pass must outrank leftover playback work
+        run: |
+          PYTHONPATH=scripts python - <<'PY'
+          import project_status as ps
+
+          ps.next_task.eligible_tasks = lambda: []
+          ps.playback_queue.case_statuses = lambda: [{
+              'task_id': 'P9-PLAYBACK-PILOT-X001',
+              'case_id': 'PILOT-X001',
+              'live_id': 'LIVE_20000101_001',
+              'missing_segment_ids': ['LIVE_20000101_001_SEG_000001'],
+              'claim_exists': False,
+              'completed': False,
+          }]
+          ps.playback_queue.gate_summary = lambda: {
+              'pilot60_pass': True,
+              'qualifying_checks': 60,
+              'required_checks': 60,
+              'invalid_records': [],
+          }
+          ps.playback_queue.capability_status = lambda: {
+              'ffmpeg': False, 'ffprobe': False, 'yt_dlp': False,
+          }
+          ps.load_admin_bug_queue = lambda: ([], [])
+          ps.exists_completed = lambda task_id: False
+          ps.exists_claim = lambda task_id: False
+          ps.load_completed = lambda task_id: None
+
+          status = ps.build_status(False, 'worker')
+          assert status['state'] == 'PLAYBACK_GATE_READY_TO_SEAL', status
+          assert status['classification'] == 'WORK_AVAILABLE', status
+          assert status['recommended_action'] == 'SEAL_P9_PLAYBACK_GATE', status
+          assert status['host_stop_for_this_runtime'] is False, status
+          print('gate-pass precedence regression OK')
+          PY
+
+      - name: Regression test admin bug work must outrank playback HOST_STOP
+        run: |
+          PYTHONPATH=scripts python - <<'PY'
+          import project_status as ps
+
+          ps.next_task.eligible_tasks = lambda: []
+          ps.playback_queue.case_statuses = lambda: [{
+              'task_id': 'P9-PLAYBACK-PILOT-X001',
+              'case_id': 'PILOT-X001',
+              'live_id': 'LIVE_20000101_001',
+              'missing_segment_ids': ['LIVE_20000101_001_SEG_000001'],
+              'claim_exists': False,
+              'completed': False,
+          }]
+          ps.playback_queue.gate_summary = lambda: {
+              'pilot60_pass': False,
+              'qualifying_checks': 0,
+              'required_checks': 60,
+              'invalid_records': [],
+          }
+          ps.playback_queue.capability_status = lambda: {
+              'ffmpeg': False, 'ffprobe': False, 'yt_dlp': False,
+          }
+          ps.load_admin_bug_queue = lambda: ([{
+              'bug_id': 'BUG_TEST', 'status': 'open', 'requires_admin': True,
+          }], [])
+          ps.exists_completed = lambda task_id: False
+          ps.exists_claim = lambda task_id: False
+          ps.load_completed = lambda task_id: None
+
+          admin = ps.build_status(False, 'admin')
+          assert admin['classification'] == 'WORK_AVAILABLE', admin
+          assert admin['recommended_action'] == 'ADMIN_REVIEW_BUG_QUEUE', admin
+          assert admin['host_stop_for_this_runtime'] is False, admin
+
+          worker = ps.build_status(False, 'worker')
+          assert worker['classification'] == 'HOST_STOP', worker
+          assert worker['admin_queue']['actionable_for_this_role'] is False, worker
+          print('admin-role regression OK')
+          PY
 
       - name: Assert P9 cannot be claimed before playback gate
         shell: bash
