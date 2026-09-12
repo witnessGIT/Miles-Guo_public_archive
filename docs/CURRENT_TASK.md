@@ -8,32 +8,23 @@ Full archive collection: **NOT STARTED / NOT AUTHORIZED UNTIL PILOT PASSES**
 
 ## Start here
 
-Every Agent must follow, in order:
-
-```text
-AGENTS.md
-coordination/CONTINUOUS_WORKER_V2.md
-coordination/WORKFLOW.json
-coordination/README.md
-coordination/WORK_QUEUE.jsonl
-this file
-```
-
-Then run:
+Every Agent must read the repository control files, then classify current state with:
 
 ```bash
-python scripts/next_task.py --list
+python scripts/project_status.py
 ```
 
-Do not choose work from this prose file by guess. `scripts/next_task.py` + Git coordination files determine what is actually claimable now.
+If and only if the runtime can genuinely inspect decoded clip/frame/audio content and determine observed content position, it may declare:
+
+```bash
+python scripts/project_status.py --content-inspection-capable
+```
+
+Do not infer project state from stale chat summaries. The repository is authoritative.
 
 ## Current objective
 
-Build and validate the first real searchable archive model from these public sources:
-
-1. `gwins` — https://www.gwins.org/
-2. `ghot` — https://ghot.ai/
-3. `gettrsearch` — https://gettrsearch.com/
+Build and validate the first real searchable Pilot archive from public GWINS, GHOT, GettrSearch and linked public media sources.
 
 The Pilot must prove:
 
@@ -45,83 +36,181 @@ one livestream
 + reliable timestamps
 + source traceability
 + searchable structured data
++ real playback-position validation
 ```
 
 Use real public records only. Do not invent Pilot data.
 
-## Current project status
+## Current Pilot boundary
 
-Completed foundation/site-analysis work already exists in Git. The current Pilot contains 27 selected source-backed cases:
+The Pilot contains 27 selected source-backed cases.
 
-```text
-early   9 cases  2017-2019
-middle  9 cases  2020-2021
-late    9 cases  2022-2023
-```
+Foundation/site analysis, aggregate alignment, and Pilot SQLite validation have already advanced far enough that the **acceptance-critical blocker is now real playback-position auditing**.
 
-The early legacy batch has durable source records. Middle and late legacy batch claims were already active before `continuous-worker-v2`; they are grandfathered and must not be duplicated or disrupted.
-
-## New default: per-case streaming
-
-The project no longer waits for an entire era/batch before downstream work starts.
-
-Each Pilot case advances independently:
+The acceptance chain is:
 
 ```text
-COLLECT + IDENTITY
+P9-PLAYBACK-PILOT-* real playback work
         ↓
-coordination/ready/collection/<CASE>.json
+data/playback_audits/<CASE>/<SEGMENT>.json
         ↓
-ALIGN
+scripts/audit_gate.py reports pilot60_pass=true
         ↓
-coordination/ready/alignment/<CASE>.json
+coordination/completed/P9-PLAYBACK-GATE.json
         ↓
-AUDIT
+P9-AUDIT-60
         ↓
-coordination/ready/audit/<CASE>.json
+P10-PILOT-DECISION
+        ↓
+FULL_ARCHIVE YES / NO decision
 ```
 
-Example task IDs:
+`P10-PILOT-DECISION` MUST NOT begin before `P9-AUDIT-60` is completed.
 
-```text
-S-COLLECT-PILOT-E001
-S-ALIGN-PILOT-E001
-S-AUDIT-PILOT-E001
-```
+`FULL_ARCHIVE` MUST NOT begin before the P10 decision explicitly authorizes it.
 
-If one case is ready, another Agent may start its next stage immediately even while unrelated cases remain unfinished.
+## Two work queues
 
-## Existing legacy claims are protected
-
-Do not rewrite or steal valid existing claims simply to migrate them.
-
-A claim without:
-
-```json
-"workflow_mode": "continuous-worker-v2"
-```
-
-is a grandfathered legacy claim.
-
-Its owner finishes the current task normally. The next new claim uses v2.
-
-Legacy Middle/Late collectors can unlock downstream work case-by-case without ending their batch:
+Ordinary collection/alignment/source-audit work:
 
 ```bash
-python scripts/next_task.py \
-  --mark-ready collection \
-  --case-id PILOT-M001 \
-  --agent-id <legacy-owner> \
-  --live-id LIVE_20200323_001 \
-  --outputs ... \
-  --validation "source identity and provenance verified"
+python scripts/next_task.py --list
 ```
 
-This allows another Agent to immediately claim `S-ALIGN-PILOT-M001`.
+Real playback-position work:
+
+```bash
+python scripts/playback_queue.py --list
+```
+
+These queues must both be considered before classifying the repository as having no work.
+
+If ordinary work is empty but playback work remains:
+
+```text
+repository-wide NO_ELIGIBLE_WORK = false
+```
+
+A runtime without the required media/content-inspection capability may classify only its own session as:
+
+```text
+HOST_STOP
+```
+
+## Real playback claim requirements
+
+A playback worker must have:
+
+```text
+ffmpeg
+ffprobe
+actual ability to inspect decoded media content
+```
+
+It must claim with:
+
+```bash
+python scripts/playback_queue.py \
+  --claim \
+  --content-inspection-capable \
+  --agent-id agent-<UTC>-<random>
+```
+
+The flag is an auditable capability assertion, not a bypass.
+
+A runtime that can execute ffmpeg but cannot actually inspect the generated content and determine the observed content position MUST NOT pass the flag and MUST NOT claim playback work.
+
+## What counts toward Pilot-60
+
+Only durable real playback records under:
+
+```text
+data/playback_audits/
+```
+
+may count.
+
+A qualifying record requires the real chain:
+
+```text
+public media access
+→ actual seek/decode
+→ actual content inspection
+→ observed content position
+→ timing error
+→ scripts/record_playback_audit.py
+```
+
+The following do **not** count by themselves:
+
+```text
+S-AUDIT-* completion
+coordination/ready/audit/*.json
+transcript checks
+source-page timestamps
+ASR time-axis checks
+successful ffmpeg decode without content inspection
+written audit reports without real playback
+```
+
+Therefore generating more transcript/timeline audit reports cannot substitute for the 60 real playback checks.
+
+## Pilot-60 acceptance thresholds
+
+Pilot approval still requires at least 60 qualifying real playback checks in aggregate, with:
+
+```text
+false livestream merge rate approximately 0
+>= 90% of locatable audited segments within 3 seconds
+>= 98% within 8 seconds
+```
+
+Unperformed playback checks remain `unverified`.
+
+## HOST_STOP versus SAFETY_OR_ACCESS_BLOCK
+
+Use `HOST_STOP` when the current runtime cannot execute the required media tooling or cannot inspect generated media evidence.
+
+Use `SAFETY_OR_ACCESS_BLOCK` only when progress would require bypassing login, CAPTCHA, paywall, DRM, or another access control.
+
+Do not misclassify a runtime limitation as a project-wide lack of work.
+
+## Backlog is not a Pilot acceptance substitute
+
+Documentation or future tooling such as data-model, data-quality, source-policy, architecture, collection, or export work may remain unfinished or independently claimable.
+
+Those items may be useful backlog, but they are not permission to bypass playback-position auditing and they do not unlock:
+
+```text
+P9-AUDIT-60
+P10-PILOT-DECISION
+FULL_ARCHIVE
+```
+
+When independently claimable, they may be completed in parallel. When they are not in the active queue, do not invent ad-hoc work merely to avoid a legitimate playback HOST_STOP.
+
+## SQLite behavior
+
+Git-tracked JSON/JSONL under `data/` remains the long-term source of truth.
+
+Official database artifact:
+
+```text
+database/Miles-Guo_public_archive.sqlite3
+```
+
+It must remain rebuildable with:
+
+```bash
+python scripts/build_db.py
+python scripts/validate_db.py
+```
+
+SQLite success does not imply timestamp accuracy or playback verification.
 
 ## Continuous-worker-v2 behavior
 
-For every **new claim**, the default behavior is:
+For each new claim:
 
 ```text
 claim
@@ -129,14 +218,14 @@ claim
 → validate
 → commit/push
 → finish / publish readiness
-→ refresh
+→ refresh repository state
+→ classify again
 → claim next eligible task
-→ repeat
 ```
 
-Completing one task is not a reason to stop.
+Completing one task is not a stop condition.
 
-A worker stops only for a documented condition:
+Valid stop conditions remain:
 
 ```text
 PROJECT_COMPLETE
@@ -147,176 +236,27 @@ SAFETY_OR_ACCESS_BLOCK
 HOST_STOP
 ```
 
-Git cannot wake a host-suspended Agent. It can only preserve durable state so a running worker can continue or a new worker can resume immediately.
-
-For runtimes that support long-lived processes:
-
-```bash
-python scripts/next_task.py \
-  --watch \
-  --claim \
-  --agent-id agent-<UTC>-<random> \
-  --poll-seconds 60
-```
-
-may wait for work, but host/platform suspension can still terminate the process.
-
-## Task ownership
-
-Before any new task begins, an Agent must create:
-
-```text
-coordination/claims/<TASK_ID>.json
-```
-
-The claim must become visible on `main` before expensive work begins.
-
-If a claim already exists, do not wait for it and do not overwrite it. Refresh and claim another eligible task.
-
-After real outputs are committed, finish using:
-
-```bash
-python scripts/next_task.py \
-  --finish <TASK_ID> \
-  --agent-id <agent-id> \
-  --outputs <paths...> \
-  --validation "what was actually checked"
-```
-
-Then immediately claim another eligible task.
-
-## Collection requirements
-
-Per-case collection must preserve at least:
-
-- internal/candidate identity;
-- title/date;
-- source-site provenance;
-- source URL;
-- third-party ID where available;
-- curated text separate from ASR;
-- start/end seconds only when actually known;
-- retrieval/verification state;
-- cross-source identity evidence/conflicts.
-
-Never invent timestamps, FPS, frames, source IDs, source absence, or merge certainty.
-
-Prefer independent per-case/per-live files instead of concurrent appends to one large JSONL.
-
-## Alignment requirements
-
-For overlapping records, timing priority is:
-
-1. existing curated/source timestamps;
-2. GHOT public ASR/time axis + monotonic fuzzy alignment;
-3. local ASR only when public timing is inadequate;
-4. manual playback review for unresolved/high-value segments.
-
-Preserve:
-
-```text
-text_curated
-text_asr
-start_sec / end_sec
-curated_source_id
-asr_source_id
-time_source_id
-alignment_method
-alignment_quality
-playback_verified
-review_status
-```
-
-Do not derive `end_sec` silently and do not mark playback verified unless playback was actually checked.
-
-## Audit requirements
-
-Audit starts incrementally after each case is aligned; it does not wait for all 27 cases.
-
-Pilot approval still requires at least 60 real segment playback checks in aggregate.
-
-Quality gates:
-
-```text
-false livestream merge rate approximately 0
->= 90% of locatable audited segments within 3 seconds
->= 98% within 8 seconds
-```
-
-Unperformed playback checks remain `unverified`.
-
-## SQLite behavior
-
-Git-tracked JSON/JSONL under `data/` is the long-term source of truth.
-
-Official database artifact:
-
-```text
-database/Miles-Guo_public_archive.sqlite3
-```
-
-It must remain rebuildable from `data/` + `schema/`:
-
-```bash
-python scripts/build_db.py
-python scripts/validate_db.py
-```
-
-SQLite build/rebuild is not a global lock. Collection/alignment/audit may continue while another Agent handles aggregate database validation.
-
-## Aggregate legacy gates
-
-`coordination/WORK_QUEUE.jsonl` still contains historical/aggregate task IDs for compatibility:
-
-```text
-P6-PILOT-EARLY-B001
-P6-PILOT-MIDDLE-B001
-P6-PILOT-LATE-B001
-P7-ALIGNMENT-B001
-P8-SQLITE-PILOT
-P9-AUDIT-60
-P10-PILOT-DECISION
-```
-
-Interpretation under v2:
-
-- P6 tasks: legacy collection batches already created before streaming mode;
-- P7: aggregate alignment gate / gap cleanup, not permission to begin per-case alignment;
-- P8: aggregate SQLite/FTS validation gate, not permission to begin database rebuilds;
-- P9: aggregate audit gate that checks accumulated per-case audit evidence reaches the 60-segment requirement;
-- P10: final whole-Pilot decision.
-
-Only P10 is intentionally a whole-Pilot waiting point.
+Use `scripts/project_status.py` to avoid confusing repository-wide `NO_ELIGIBLE_WORK` with a host-specific inability to claim playback work.
 
 ## Final decision boundary
 
-Do not start `FULL_ARCHIVE` merely because scraping or collection is possible.
+Do not start `FULL_ARCHIVE` merely because scraping, alignment, database build, transcript auditing, or report generation is possible.
 
-`P10-PILOT-DECISION` must be supported by real evidence covering:
+`P10-PILOT-DECISION` must be supported by real evidence covering the Pilot, including at least 60 qualifying playback audits and the required timing thresholds.
 
-- all required site findings;
-- Pilot source coverage;
-- cross-source matches/conflicts;
-- segment counts;
-- curated/ASR coverage;
-- alignment quality;
-- at least 60 real playback audits;
-- false-merge findings;
-- broken/duplicate URLs;
-- SQLite/FTS validation;
-- unresolved problems;
-- recommendation `FULL_ARCHIVE: YES` or `FULL_ARCHIVE: NO`.
+Until then:
 
-## Access rules
+```text
+PILOT = NOT PASSED
+P10 = BLOCKED
+FULL_ARCHIVE = NOT AUTHORIZED
+```
+
+## Access and cost rules
 
 - Publicly accessible content only.
 - Low request rate and caching.
 - No bypass of login, CAPTCHA, paywall, access control, or DRM.
 - No full video/audio/model/cache/FFmpeg intermediates committed to Git.
 - Record evidence and uncertainty instead of guessing.
-
-## Zero-cost rule
-
-The core workflow must remain usable with GitHub, Python, SQLite/FTS5, local open-source tooling, public source pages, and local temporary cache.
-
-Paid APIs, commercial vector databases, paid object storage, or paid AI services must not become mandatory infrastructure.
+- Core workflow must remain usable with GitHub, Python, SQLite/FTS5, local open-source tooling, public source pages, and local temporary cache.
