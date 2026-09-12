@@ -1,6 +1,6 @@
 # Miles-Guo_public_archive Streaming Readiness
 
-This directory contains per-Pilot-case readiness markers for the self-service Agent pipeline.
+This directory contains per-Pilot-case readiness markers for the `continuous-worker-v2` pipeline.
 
 ## Layout
 
@@ -18,7 +18,9 @@ A marker means that **this individual case**, not an entire era/batch, has compl
 
 ## Why this exists
 
-The original Pilot queue used large era batches. That caused unrelated livestreams to block downstream work. Readiness markers remove that bottleneck:
+The original Pilot queue used large era batches. That caused unrelated livestreams to block downstream work.
+
+Readiness markers remove that bottleneck:
 
 ```text
 one case collected
@@ -28,17 +30,41 @@ one case collected
 
 Other cases may remain unfinished.
 
-## Creation
+## Streaming task creation
 
-Preferred method:
+Preferred path for new `continuous-worker-v2` tasks:
 
 ```bash
 python scripts/next_task.py --finish <STREAM_TASK_ID> ...
 ```
 
-The task runner creates the correct marker for streaming tasks.
+The task runner creates the appropriate readiness marker automatically.
 
-Legacy batch collectors may create `collection/<CASE_ID>.json` manually as soon as an individual case is genuinely complete, even before the full legacy batch is done.
+## Grandfathered legacy batch collectors
+
+Existing legacy Middle/Late batch Agents keep their original claims. They do not need to abandon or repartition those tasks.
+
+As soon as one individual case inside the batch is genuinely complete, the legacy owner can publish a collection marker without ending the batch:
+
+```bash
+python scripts/next_task.py \
+  --mark-ready collection \
+  --case-id PILOT-M001 \
+  --agent-id <legacy-claim-owner> \
+  --live-id LIVE_20200323_001 \
+  --outputs ... \
+  --validation "source identity and provenance verified"
+```
+
+That immediately unlocks:
+
+```text
+S-ALIGN-PILOT-M001
+```
+
+for another Agent, while the original Middle batch Agent continues M002/M003/etc.
+
+`--mark-ready` verifies that the supplied `agent-id` owns the corresponding active legacy batch claim. It must not be used by another Agent to bypass task ownership.
 
 ## Required evidence
 
@@ -49,6 +75,7 @@ Typical fields:
 ```json
 {
   "project": "Miles-Guo_public_archive",
+  "workflow_mode": "continuous-worker-v2",
   "case_id": "PILOT-E001",
   "live_id": "LIVE_20170523_001",
   "stage": "collection",
@@ -61,4 +88,8 @@ Typical fields:
 }
 ```
 
+## No shared mutable progress file
+
 Do not edit one shared status file for all cases. Keep readiness per case so parallel Agents do not collide.
+
+The machine-readable task runner derives next-stage eligibility from these markers plus claims/completed state.
