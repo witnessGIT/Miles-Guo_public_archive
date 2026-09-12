@@ -1,0 +1,60 @@
+name: Agent Permission Guard
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  protect-control-plane:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Check protected paths
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          actor="${GITHUB_ACTOR}"
+          if [[ "$actor" == "witnessGIT" || "$actor" == "github-actions[bot]" ]]; then
+            echo "Admin/system actor: $actor"
+            exit 0
+          fi
+
+          if [[ "${{ github.event_name }}" == "pull_request" ]]; then
+            base="${{ github.event.pull_request.base.sha }}"
+            head="${{ github.event.pull_request.head.sha }}"
+          else
+            before="${{ github.event.before }}"
+            head="${{ github.sha }}"
+            if [[ -z "$before" || "$before" =~ ^0+$ ]]; then
+              base="${head}^"
+            else
+              base="$before"
+            fi
+          fi
+
+          changed="$(git diff --name-only "$base" "$head" || true)"
+          echo "Actor: $actor"
+          echo "Changed files:"
+          printf '%s\n' "$changed"
+
+          protected_re='^(AGENTS\.md|START_HERE\.md|coordination/(AGENT_PERMISSIONS\.json|AGENT_PERMISSIONS\.md|CONTINUOUS_WORKER_V2\.md|CLAIM_PROTOCOL_V2\.md|WORKFLOW\.json|WORK_QUEUE\.jsonl|README\.md)|scripts/|schema/|\.github/)'
+          violations="$(printf '%s\n' "$changed" | grep -E "$protected_re" || true)"
+
+          if [[ -n "$violations" ]]; then
+            echo "::error::Worker account '$actor' modified admin-only control-plane paths."
+            echo "Protected-path violations:"
+            printf '%s\n' "$violations"
+            echo "Workers must file bugs under coordination/bug_reports/ instead of fixing project machinery."
+            exit 1
+          fi
+
+          echo "No protected control-plane changes by worker actor."
