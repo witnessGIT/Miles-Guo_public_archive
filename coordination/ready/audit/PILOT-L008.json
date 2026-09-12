@@ -1,0 +1,17 @@
+{
+  "project": "Miles-Guo_public_archive",
+  "workflow_mode": "continuous-worker-v2",
+  "case_id": "PILOT-L008",
+  "live_id": "LIVE_20230312_001",
+  "stage": "audit",
+  "ready_at": "2026-09-12T17:43:30Z",
+  "task_id": "S-AUDIT-PILOT-L008",
+  "agent_id": "agent-20260913T002400Z-gpt56sol",
+  "result_commit": "dc83616ea605298ce17abcba742b00c379afeb60",
+  "outputs": ["reports/PILOT_AUDIT_L008.md"],
+  "audit_outcome": "blocked_no_playback",
+  "qualifying_playback_checks": 0,
+  "counts_toward_pilot_60": false,
+  "timing_accuracy_measured": false,
+  "validation": "GWINS explicit HH:MM:SS boundaries exactly corroborate 0–158s and 158–341s curated intervals, but decoded media content was not independently inspected. playback_verified remains 0."
+}
