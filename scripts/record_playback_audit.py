@@ -23,6 +23,13 @@ def sha256_file(path: Path) -> str:
     return digest.hexdigest()
 
 
+def durable_path_reference(path: Path) -> str:
+    try:
+        return str(path.resolve().relative_to(ROOT.resolve()))
+    except ValueError:
+        return path.name
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(
         description=(
@@ -126,7 +133,7 @@ def main() -> int:
         "decode_media_source": decode.get("media_source"),
         "clip_sha256": clip_hash,
         "frame_sha256": frame_hash,
-        "decode_evidence_json_local": str(evidence_path),
+        "decode_evidence_ref": durable_path_reference(evidence_path),
         "note": (
             "The media/clip itself remains temporary under cache/. This durable record "
             "stores the source, observed position, timing error and hashes where available."
