@@ -1,0 +1,15 @@
+{
+  "project": "Miles-Guo_public_archive",
+  "workflow_version": "continuous-worker-v2",
+  "effective_for_new_claims": true,
+  "grandfather_existing_claims": true,
+  "default_continue_after_finish": true,
+  "streaming_unit": "pilot_case_or_single_live",
+  "global_wait_gate": "P10-PILOT-DECISION",
+  "repository_can_wake_suspended_agent": false,
+  "notes": [
+    "Existing valid claims remain owned by their current agents and are not migrated mid-task.",
+    "New claims must continue to the next eligible task unless a documented stop condition applies.",
+    "Git provides durable coordination and resume state; it cannot revive a host-suspended ChatGPT/Work/Codex session."
+  ]
+}
