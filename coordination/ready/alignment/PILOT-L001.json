@@ -1,0 +1,13 @@
+{
+  "project": "Miles-Guo_public_archive",
+  "workflow_mode": "continuous-worker-v2",
+  "case_id": "PILOT-L001",
+  "live_id": "LIVE_20220126_001",
+  "stage": "alignment",
+  "ready_at": "2026-09-12T16:29:10Z",
+  "task_id": "S-ALIGN-PILOT-L001",
+  "agent_id": "agent-20260912T162222Z-c9f2",
+  "result_commit": "f9bc06391d7a56d5eb284dc0e0d617abe0bdcf36",
+  "outputs": ["data/live_segments/alignment/LIVE_20220126_001.jsonl"],
+  "validation": "Direct GHOT second-level ASR/time anchor at 0-5s. No curated source was available in tracked Pilot sources for this case; fields remain separate and playback remains unaudited."
+}
