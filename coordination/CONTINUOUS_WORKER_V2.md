@@ -4,6 +4,8 @@ Project: `Miles-Guo_public_archive`
 
 Policy: `continuous-worker-v2`
 
+Claim protocol: `claim-protocol-v2`
+
 ## Goal
 
 New Agent work in this repository uses a continuous self-service worker model:
@@ -20,7 +22,7 @@ ENTER REPOSITORY
   -> REPEAT
 ```
 
-A worker does not intentionally stop after one successful batch while other safe eligible work exists.
+A worker does not intentionally stop after one successful batch while other safe eligible work exists. Losing one claim race is also not a stop condition.
 
 ## Important platform limitation
 
@@ -32,24 +34,16 @@ For local/CLI workers whose host permits a long-running process, `scripts/next_t
 
 ## Effective scope / grandfather rule
 
-This policy applies to **new task claims created after this policy is present on `main`**.
+This policy applies to **new task claims**.
 
-Existing valid claims created under the previous workflow remain valid and must not be interrupted, renamed, reassigned, or duplicated merely to migrate them.
+Existing valid claims created under a previous workflow remain valid and must not be interrupted, renamed, reassigned, or duplicated merely to migrate them.
 
-In particular, currently active legacy claims such as:
-
-```text
-P6-PILOT-MIDDLE-B001
-P6-PILOT-LATE-B001
-```
-
-are grandfathered. Their owners finish those already-claimed tasks under their existing ownership. When those Agents next claim work, the new claim follows `continuous-worker-v2`.
-
-A claim without a `workflow_mode` field is treated as a grandfathered legacy claim. A new v2 claim contains:
+A claim without a `workflow_mode` field is treated as a grandfathered legacy claim. A new claim contains:
 
 ```json
 {
   "workflow_mode": "continuous-worker-v2",
+  "claim_protocol": "claim-protocol-v2",
   "continue_after_finish": true
 }
 ```
@@ -63,9 +57,30 @@ A v2 Agent continues claiming tasks until one of these conditions is true:
 3. **NO_ELIGIBLE_WORK** — all unfinished work is currently owned, blocked by unresolved prerequisites, or requires unavailable external state.
 4. **HUMAN_DECISION_REQUIRED** — proceeding would require guessing on identity, provenance, schema migration, access policy, destructive conflict resolution, or another decision explicitly reserved for the user/reviewer.
 5. **SAFETY_OR_ACCESS_BLOCK** — work would require bypassing login, CAPTCHA, paywall, access control, DRM, or another prohibited action.
-6. **HOST_STOP** — the execution platform stops/suspends the Agent, tool context is exhausted, or the runtime cannot continue. This is not a project-level completion state.
+6. **GITHUB_WRITE_ERROR** — only after `coordination/CLAIM_PROTOCOL_V2.md` has ruled out a normal claim race and bounded fresh retries still fail.
+7. **HOST_STOP** — the execution platform stops/suspends the Agent, tool context is exhausted, or the runtime cannot continue. This is not a project-level completion state.
 
-Finishing one task or one batch is **not** a stop condition.
+Finishing one task, finishing one batch, or losing one claim race is **not** a stop condition.
+
+`CLAIM_RACE_LOST` must be followed by refresh + another eligible claim attempt.
+
+## Claim-race recovery is mandatory
+
+Read `coordination/CLAIM_PROTOCOL_V2.md` before creating new claims.
+
+For GitHub API Agents, HTTP `422` from `create_file` is not automatically a repository write outage.
+
+The Agent must first fetch the exact attempted path:
+
+```text
+coordination/claims/<TASK_ID>.json
+```
+
+If the file exists, another Agent won the atomic race. Classify `CLAIM_RACE_LOST`, refresh repository state, and try another eligible task.
+
+If the file does not exist, refresh repository state and use bounded retries. Only after the exact path remains absent and fresh retries continue to fail may the Agent classify `GITHUB_WRITE_ERROR`.
+
+A single 422 may never be used as the sole reason to say the execution chain must stop at the claim boundary.
 
 ## No-sleep rule
 
@@ -75,9 +90,11 @@ After a successful `--finish`, a v2 Agent must immediately refresh repository st
 python scripts/next_task.py --claim --agent-id <same-agent-id>
 ```
 
-If the preferred task is claimed concurrently, refresh and claim another eligible task. Do not wait for that particular task owner.
+If the preferred task is claimed concurrently, the worker must try another eligible candidate instead of waiting for that task owner.
 
-If no task is eligible, the Agent should report the concrete blocking reason from repository state. It must not invent work just to stay active.
+`scripts/next_task.py` disperses Agents across same-priority candidates using a stable `agent_id` hash and can try multiple local candidates in one claim cycle.
+
+If no task is eligible after refresh, the Agent should report the concrete blocking reason from repository state. It must not invent work just to stay active.
 
 ## Optional watch mode
 
@@ -124,7 +141,6 @@ Migration rules are deliberately non-destructive:
 
 - do not delete or rewrite existing claims;
 - do not create streaming collection tasks that overlap a valid legacy batch claim;
-- legacy batch owners may publish per-case readiness markers early, but are not required to abandon their batch;
 - completed legacy records remain authoritative history;
 - v2 applies at the **next claim boundary**, not retroactively inside work already in progress.
 
