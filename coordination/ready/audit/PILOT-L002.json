@@ -1,0 +1,17 @@
+{
+  "project": "Miles-Guo_public_archive",
+  "workflow_mode": "continuous-worker-v2",
+  "case_id": "PILOT-L002",
+  "live_id": "LIVE_20220506_001",
+  "stage": "audit",
+  "ready_at": "2026-09-12T17:02:30Z",
+  "task_id": "S-AUDIT-PILOT-L002",
+  "agent_id": "agent-20260912T170030Z-gpt56sol",
+  "result_commit": "af50c41705855c262d64ea147b35eac8e7fcc04a",
+  "outputs": ["reports/PILOT_AUDIT_L002.md"],
+  "audit_outcome": "timeline_partially_recorroborated_playback_unverified",
+  "qualifying_playback_checks": 0,
+  "counts_toward_pilot_60": false,
+  "timing_accuracy_measured": false,
+  "validation": "Current GHOT public result independently corroborates the first tracked anchor at 13:42 = 822s. Later exact anchors were not freshly re-observed in the bounded lookup. No audiovisual playback/decode was performed; playback_verified remains 0 and timing error is unmeasured."
+}
