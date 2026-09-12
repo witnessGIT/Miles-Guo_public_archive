@@ -1,0 +1,13 @@
+{
+  "task_id": "P9-PLAYBACK-PILOT-L003",
+  "agent_id": "agent-20260913T010100Z-gpt56sol",
+  "claimed_at": "2026-09-12T17:01:00Z",
+  "base_commit": "12da45d15021452e9f6a2fd381be968cd6c7143b",
+  "status": "in_progress",
+  "kind": "real_playback_audit",
+  "case_id": "PILOT-L003",
+  "live_id": "LIVE_20220511_001",
+  "missing_segment_ids": ["LIVE_20220511_001_SEG_000000"],
+  "runtime_tools": {"ffmpeg": true, "ffprobe": true, "yt_dlp": false},
+  "instructions": "Use audit_media.py + actual decoded-content inspection + record_playback_audit.py. Transcript/source timestamps alone do not count."
+}
