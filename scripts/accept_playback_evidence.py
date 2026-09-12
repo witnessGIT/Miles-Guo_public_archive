@@ -10,6 +10,7 @@ from pathlib import Path
 from playback_validation import canonical_segment_index, pilot_case_live_map
 
 ROOT = Path(__file__).resolve().parents[1]
+CLAIMS = ROOT / "coordination" / "claims"
 ACCEPTANCE_ROOT = ROOT / "coordination" / "playback_acceptances"
 EVIDENCE_ROOT = ROOT / "data" / "playback_evidence"
 OUTPUT_ROOT = ROOT / "data" / "playback_audits"
@@ -34,6 +35,27 @@ def safe_repo_path(raw: str, expected_root: Path) -> Path:
     return resolved
 
 
+def load_owned_claim(case_id: str, live_id: str, accepted_by: str, segment_id: str) -> dict:
+    task_id = f"P9-PLAYBACK-{case_id}"
+    claim_path = CLAIMS / f"{task_id}.json"
+    if not claim_path.exists():
+        raise ValueError(f"active playback claim does not exist: {task_id}")
+    try:
+        claim = json.loads(claim_path.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError) as exc:
+        raise ValueError(f"invalid playback claim JSON: {exc}") from exc
+    if str(claim.get("agent_id") or "") != accepted_by:
+        raise ValueError(
+            f"acceptance says {accepted_by}, but active playback claim belongs to "
+            f"{claim.get('agent_id')!r}"
+        )
+    if str(claim.get("case_id") or "") != case_id or str(claim.get("live_id") or "") != live_id:
+        raise ValueError("active playback claim case/live identity does not match acceptance")
+    if segment_id not in set(str(x) for x in (claim.get("missing_segment_ids") or [])):
+        raise ValueError("segment is not part of the active playback claim's missing segment set")
+    return claim
+
+
 def process_acceptance(path: Path) -> Path:
     acceptance = json.loads(path.read_text(encoding="utf-8"))
     if not isinstance(acceptance, dict):
@@ -49,6 +71,12 @@ def process_acceptance(path: Path) -> Path:
         raise ValueError("missing acceptance fields: " + ", ".join(missing))
     if acceptance.get("accepted") is not True:
         raise ValueError("accepted must be true; a rejection is not a qualifying playback record")
+
+    case_id = str(acceptance["case_id"])
+    live_id = str(acceptance["live_id"])
+    segment_id = str(acceptance["segment_id"])
+    accepted_by = str(acceptance["accepted_by"])
+    load_owned_claim(case_id, live_id, accepted_by, segment_id)
 
     evidence_path = safe_repo_path(str(acceptance["evidence_ref"]), EVIDENCE_ROOT)
     if not evidence_path.exists():
@@ -69,9 +97,6 @@ def process_acceptance(path: Path) -> Path:
     if evidence.get("candidate_content_match") is not True:
         raise ValueError("repository evidence did not produce a qualifying content candidate")
 
-    case_id = str(acceptance["case_id"])
-    live_id = str(acceptance["live_id"])
-    segment_id = str(acceptance["segment_id"])
     for key, expected in (("case_id", case_id), ("live_id", live_id), ("segment_id", segment_id)):
         if str(evidence.get(key) or "") != expected:
             raise ValueError(f"acceptance {key} does not match evidence")
@@ -132,7 +157,7 @@ def process_acceptance(path: Path) -> Path:
         "content_observation": str(acceptance["content_observation"]),
         "playback_decode_verified": True,
         "content_timing_verified": True,
-        "reviewer": str(acceptance["accepted_by"]),
+        "reviewer": accepted_by,
         "reviewed_at": utc_now(),
         "inspection_method": "repository_decoded_evidence_service_v1",
         "repository_evidence_ref": str(evidence_path.relative_to(ROOT)),
@@ -153,8 +178,8 @@ def process_acceptance(path: Path) -> Path:
         "note": (
             "Qualifying v2 record produced only after GitHub Actions decoded real media, "
             "offline Whisper located the target inside the decoded window, durable textual/visual "
-            "evidence was written to Git, and a worker explicitly reviewed and accepted that "
-            "evidence. The worker does not need local ffmpeg or a graphical player."
+            "evidence was written to Git, and the active playback claim owner explicitly reviewed "
+            "and accepted that exact evidence bundle."
         ),
     }
 
@@ -175,7 +200,7 @@ def process_acceptance(path: Path) -> Path:
 
 def main() -> int:
     parser = argparse.ArgumentParser(
-        description="Turn worker playback evidence acceptances into durable qualifying v2 records."
+        description="Turn active-claim-owner playback evidence acceptances into durable qualifying v2 records."
     )
     parser.add_argument("--acceptance")
     parser.add_argument("--pending", action="store_true")
