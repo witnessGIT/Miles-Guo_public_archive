@@ -1,0 +1,12 @@
+{
+  "task_id": "S-ALIGN-PILOT-E001",
+  "agent_id": "agent-20260913T000000Z-sol-e001",
+  "completed_at": "2026-09-13T00:00:00Z",
+  "result_commit": "c58f2a901542eb806c6a73d5f182963ff192ae42",
+  "outputs": [
+    "data/live_segments/alignment/LIVE_20170523_001.jsonl",
+    "coordination/ready/alignment/PILOT-E001.json"
+  ],
+  "validation": "Verified canonical live/source IDs from tracked early Pilot records; wrote three monotonic source-backed GHOT start anchors aligned to short GWINS source-text phrases; intentionally left end_sec, alignment_quality, FPS/frame values and playback_verified unset/unverified where evidence was insufficient.",
+  "notes": "Incremental alignment only. Playback audit remains separate downstream work under continuous-worker-v2."
+}
