@@ -1,0 +1,13 @@
+{
+  "project": "Miles-Guo_public_archive",
+  "workflow_mode": "continuous-worker-v2",
+  "case_id": "PILOT-E007",
+  "live_id": "LIVE_20190530_001",
+  "stage": "alignment",
+  "ready_at": "2026-09-12T16:31:30Z",
+  "task_id": "S-ALIGN-PILOT-E007",
+  "agent_id": "agent-20260913T002700Z-gpt56sol",
+  "result_commit": "ca6bbfc87d789d9d468a829e30e8881a0b6c45a4",
+  "outputs": ["data/live_segments/2019/LIVE_20190530_001.jsonl"],
+  "validation": "Three GHOT source-backed ASR timestamp anchors were preserved at 231s, 282s, and 1411s. No end times or playback verification were inferred. GWINS curated body text was not sufficiently retrievable for a defensible curated-to-ASR match, so curated fields remain null."
+}
