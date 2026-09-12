@@ -196,12 +196,23 @@ def choose_case(agent_id: str, requested_case: str | None) -> dict:
     return candidates[seed % len(candidates)]
 
 
-def claim_case(agent_id: str, requested_case: str | None) -> Path:
+def claim_case(
+    agent_id: str,
+    requested_case: str | None,
+    content_inspection_capable: bool,
+) -> Path:
     tools = capability_status()
     if not tools["ffmpeg"] or not tools["ffprobe"]:
         raise SystemExit(
             "This runtime cannot claim real playback work: ffmpeg and ffprobe are required. "
             "Do not replace playback with transcript-only checking."
+        )
+    if not content_inspection_capable:
+        raise SystemExit(
+            "This runtime cannot claim real playback work without an explicit declaration "
+            "that it can inspect the generated decoded media content. Re-run with "
+            "--content-inspection-capable only when the Agent can actually inspect clip/frame/audio "
+            "evidence and determine an observed content position."
         )
     chosen = choose_case(agent_id, requested_case)
     CLAIMS.mkdir(parents=True, exist_ok=True)
@@ -216,6 +227,7 @@ def claim_case(agent_id: str, requested_case: str | None) -> Path:
         "live_id": chosen["live_id"],
         "missing_segment_ids": chosen["missing_segment_ids"],
         "runtime_tools": tools,
+        "content_inspection_capable": True,
         "instructions": (
             "Use audit_media.py + actual decoded-content inspection + "
             "record_playback_audit.py. Transcript/source timestamps alone do not count."
@@ -239,6 +251,11 @@ def finish_case(agent_id: str, case_id: str) -> Path:
     claim = json.loads(claim_path.read_text(encoding="utf-8"))
     if claim.get("agent_id") != agent_id:
         raise SystemExit(f"Claim belongs to {claim.get('agent_id')!r}, not {agent_id!r}")
+    if claim.get("content_inspection_capable") is not True:
+        raise SystemExit(
+            f"Cannot finish {task_id}: claim lacks content_inspection_capable=true. "
+            "Release/reclaim with the current playback capability contract."
+        )
     status = next((row for row in case_statuses() if row["case_id"] == case_id), None)
     if status is None:
         raise SystemExit(f"Unknown or unaligned Pilot case: {case_id}")
@@ -262,6 +279,7 @@ def finish_case(agent_id: str, case_id: str) -> Path:
         "live_id": status["live_id"],
         "qualifying_playback_checks": status["qualifying_segments"],
         "timed_segments": status["timed_segments"],
+        "content_inspection_capable_claim": True,
         "validation": "All currently tracked timed segments for this case have canonical-crosschecked qualifying playback records.",
     }
     with out.open("x", encoding="utf-8") as fh:
@@ -333,6 +351,14 @@ def main() -> int:
     parser.add_argument("--seal-gate", action="store_true")
     parser.add_argument("--case-id")
     parser.add_argument("--agent-id")
+    parser.add_argument(
+        "--content-inspection-capable",
+        action="store_true",
+        help=(
+            "Required for --claim. Assert only when this runtime can actually inspect "
+            "decoded clip/frame/audio evidence and determine observed content positions."
+        ),
+    )
     args = parser.parse_args()
 
     if args.seal_gate:
@@ -353,7 +379,11 @@ def main() -> int:
     if args.claim:
         if not args.agent_id:
             raise SystemExit("--claim requires --agent-id")
-        claim_case(args.agent_id, args.case_id)
+        claim_case(
+            args.agent_id,
+            args.case_id,
+            args.content_inspection_capable,
+        )
         return 0
     print_status()
     return 0
