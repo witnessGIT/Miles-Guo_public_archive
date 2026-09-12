@@ -1,0 +1,26 @@
+{
+  "bug_id": "BUG_20260912T164400Z_AUDIT_READINESS_SEMANTICS",
+  "status": "resolved",
+  "requires_admin": true,
+  "reported_at": "2026-09-12T16:44:00Z",
+  "reported_by_agent": "admin-audit-current-account",
+  "reported_by_github_login": "witnessGIT",
+  "task_id": "S-AUDIT-PILOT-L007",
+  "severity": "high",
+  "category": "workflow",
+  "summary": "An audit readiness marker existed even though the audit produced zero qualifying playback checks, making the machine state too easy to misread as an audit pass.",
+  "evidence": [
+    "S-AUDIT-PILOT-L007 completion explicitly states playback_verified=0 for both segments and 0 real playback checks toward Pilot-60.",
+    "The previous readiness marker encoded only stage=audit plus free-text validation and had no machine-readable pass/count fields."
+  ],
+  "affected_paths": [
+    "coordination/ready/audit/PILOT-L007.json",
+    "coordination/completed/S-AUDIT-PILOT-L007.json",
+    "reports/PILOT_AUDIT_L007.md"
+  ],
+  "safe_workaround": "Pilot-60 accounting must count only explicit qualifying real playback checks, never the existence of an audit readiness marker.",
+  "resolved_at": "2026-09-12T16:45:00Z",
+  "resolved_by": "witnessGIT admin agent",
+  "resolution_commit": "fd638f4f580e64dd0afd1d71fc82f7da35fb8e3a",
+  "resolution_notes": "The existing L007 marker now explicitly records audit_outcome=blocked_no_playback, qualifying_playback_checks=0, counts_toward_pilot_60=false and timing_accuracy_measured=false. Future audit accounting must use explicit evidence/counts rather than marker existence."
+}
