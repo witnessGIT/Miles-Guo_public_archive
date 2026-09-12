@@ -79,6 +79,34 @@ Read and follow, in order:
 
 Admin Agents should check open `coordination/bug_reports/` before ordinary business work when a bug blocks correctness or other Agents.
 
+## First command: classify repository state
+
+Before deciding that there is work, no work, a host limitation, or a Pilot decision boundary, run:
+
+```bash
+python scripts/project_status.py
+```
+
+This command evaluates both the ordinary task queue and the real-playback queue, together with the Pilot-60 gate and P9/P10 state.
+
+A runtime that can genuinely inspect decoded clip/frame/audio content may additionally run:
+
+```bash
+python scripts/project_status.py --content-inspection-capable
+```
+
+The flag is an auditable capability declaration. Do not pass it merely because shell commands or ffmpeg can execute.
+
+The status classifier is the authoritative distinction between:
+
+```text
+WORK_AVAILABLE
+HOST_STOP
+NO_ELIGIBLE_WORK
+```
+
+Important: if ordinary tasks are empty but real playback work remains, repository-wide `NO_ELIGIBLE_WORK` is false. A runtime without playback capability may classify only its own session as `HOST_STOP`.
+
 ## Work discovery has two coordinated queues
 
 First discover ordinary collection/alignment/source-audit work:
@@ -125,6 +153,20 @@ If ordinary work is empty but playback work remains, that is **not repository-wi
 Claim an eligible task, execute it, validate it, commit/push it, finish it, then refresh **both** queues and continue.
 
 Under `continuous-worker-v2`, completing one task or batch is not a stop condition. Continue until a documented stop condition in the repository applies.
+
+## Pilot acceptance blocker versus backlog
+
+The Pilot acceptance path is currently controlled by real playback-position evidence and the P9/P10 gates. Missing documentation or future collection/export tooling must not be used as a substitute for Pilot-60 evidence and must not be used to bypass P9.
+
+Backlog documentation/tooling may be completed when independently claimable, but it does not authorize:
+
+```text
+P9-AUDIT-60 completion
+P10-PILOT-DECISION start
+FULL_ARCHIVE start
+```
+
+Only the real gate chain may do that.
 
 ## Mandatory claim-race behavior
 
