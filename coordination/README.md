@@ -2,56 +2,197 @@
 
 本目录是 `Miles-Guo_public_archive` 的 Git 原生多 Agent 协作协议。
 
-目标不是让 Agent 排队等整批任务结束，而是建立持续流水线：**任何 Agent 进入仓库，都能立即发现当前可做任务，原子认领，完成后解锁下一阶段，并继续领取下一项。**
+当前工作流版本：
 
-## 1. Git 是协调事实源
+```text
+continuous-worker-v2
+```
 
-不要依赖聊天记忆判断谁正在做什么。
+机器可读版本见：
+
+```text
+coordination/WORKFLOW.json
+```
+
+详细运行策略见：
+
+```text
+coordination/CONTINUOUS_WORKER_V2.md
+```
+
+目标不是让 Agent 排队等待整批任务结束，而是让任何新 Agent 进入仓库后可以：
+
+```text
+发现可做任务
+→ 原子领取
+→ 执行
+→ 验证
+→ 提交
+→ 发布完成/ready
+→ 立即领取下一项
+→ 持续循环
+```
+
+## 1. Git 是唯一协调事实源
+
+不要通过聊天记忆判断“谁正在做什么”。
 
 协调状态只看：
 
 ```text
+coordination/WORKFLOW.json
 coordination/claims/
 coordination/completed/
 coordination/ready/
+coordination/conflicts/
 coordination/WORK_QUEUE.jsonl
 reports/pilot_selection.json
 ```
 
-`claims/` = 谁正在做。
+含义：
 
-`completed/` = 哪个任务已经完成。
+- `claims/`：谁已经领取任务；
+- `completed/`：哪个任务已经完成；
+- `ready/`：某个 Pilot case 已完成哪一阶段，可以被下游立即处理；
+- `conflicts/`：并发、身份、来源、时间轴、stale takeover 等冲突证据；
+- `WORKFLOW.json`：当前工作流版本与迁移规则。
 
-`ready/` = 某个 Pilot case 已经完成哪一阶段，可以被下游立即处理。
+## 2. 新 Agent 固定启动动作
 
-## 2. 每个 Agent 的固定启动动作
+必须先读：
+
+```text
+AGENTS.md
+coordination/CONTINUOUS_WORKER_V2.md
+coordination/WORKFLOW.json
+coordination/README.md
+coordination/WORK_QUEUE.jsonl
+docs/CURRENT_TASK.md
+```
+
+然后运行：
 
 ```bash
 python scripts/next_task.py --list
 ```
 
-不要自己猜下一步，也不要因为看到某个旧批次 `in_progress` 就等待。
+不要自己猜下一步，也不要因为看到旧批次 `in_progress` 就等待。
 
-`scripts/next_task.py` 会同时读取：
+`scripts/next_task.py` 会读取：
 
-- `WORK_QUEUE.jsonl` 中的全局/兼容任务；
-- `reports/pilot_selection.json` 中的 Pilot case；
+- 全局/兼容任务；
+- Pilot case；
 - claims / completed；
-- per-case readiness marker；
-- 已完成的 legacy Pilot batch。
+- per-case readiness；
+- legacy batch 完成状态；
 
-然后生成当前真正可执行的任务。
+并生成当前真正可执行的任务。
 
-## 3. 流水线任务是默认模式
+## 3. 新任务默认连续工作
+
+从 `continuous-worker-v2` 开始，新 claim 默认包含：
+
+```json
+{
+  "workflow_mode": "continuous-worker-v2",
+  "continue_after_finish": true
+}
+```
+
+完成一项任务后，只要还有安全、合法、可执行的任务，Agent 必须刷新 Git 状态并继续领取下一项。
+
+完成一场直播、一个 batch 或一个 commit 都不是停止理由。
+
+### 合法停止条件
+
+仅以下情况可以停止：
+
+```text
+PROJECT_COMPLETE
+USER_RECALL
+NO_ELIGIBLE_WORK
+HUMAN_DECISION_REQUIRED
+SAFETY_OR_ACCESS_BLOCK
+HOST_STOP
+```
+
+定义见 `coordination/CONTINUOUS_WORKER_V2.md`。
+
+## 4. 重要现实限制：Git 不能主动唤醒被平台挂起的 Agent
+
+仓库可以保证：
+
+- 新 Agent 进来立即知道做什么；
+- 运行中的 Agent 完成后继续领任务；
+- 所有状态永久保存在 Git；
+- 任意新 Agent 都能无聊天记忆接续项目；
+- stale claim 可以审计并接管。
+
+但 Git/GitHub 本身不能强制 ChatGPT/Work/Codex 在宿主平台已经暂停或结束会话后自行“复活”。
+
+如果运行环境允许长驻进程，可使用：
+
+```bash
+python scripts/next_task.py \
+  --watch \
+  --claim \
+  --agent-id agent-<UTC>-<random> \
+  --poll-seconds 60
+```
+
+它会持续检查新任务，直到出现可执行任务后领取。但宿主平台仍可能终止该进程。
+
+因此本项目采用：
+
+```text
+运行中持续工作
++
+Git 永久可恢复状态
++
+新 Agent 自动接续
+```
+
+而不是虚假假设“Git 能唤醒已终止会话”。
+
+## 5. 已有任务完全兼容，不中断
+
+`continuous-worker-v2` **只从新 claim 开始生效**。
+
+已有有效 claim 不重命名、不删除、不抢占、不重新拆分。
+
+没有 `workflow_mode` 字段的旧 claim 视为：
+
+```text
+legacy-grandfathered
+```
+
+例如当前已领取的：
+
+```text
+P6-PILOT-MIDDLE-B001
+P6-PILOT-LATE-B001
+```
+
+继续由原 Agent 完成。
+
+原 Agent 完成当前任务后，下一次 claim 自动进入 `continuous-worker-v2`。
+
+## 6. 流水线任务是未来默认模式
 
 Pilot case 独立流转：
 
 ```text
 COLLECT + IDENTITY
         ↓
+collection ready
+        ↓
 ALIGN
         ↓
+alignment ready
+        ↓
 AUDIT
+        ↓
+audit ready
 ```
 
 任务 ID：
@@ -64,11 +205,9 @@ S-AUDIT-PILOT-E001
 
 不同 case 互不等待。
 
-例如 `PILOT-E001` 已采集完成后，它的 ALIGN 可以立即开始，即使 `PILOT-M009` 还完全没有采集。
+例如 `PILOT-E001` 已采集完成，它的 ALIGN 可以立即开始，即使 `PILOT-M009` 尚未采集。
 
-## 4. Readiness marker：下游解锁机制
-
-不要靠一个共享 status JSONL 判断进度。
+## 7. Readiness marker 是下游解锁机制
 
 每个 case、每个阶段使用独立文件：
 
@@ -78,39 +217,25 @@ coordination/ready/alignment/PILOT-E001.json
 coordination/ready/audit/PILOT-E001.json
 ```
 
-独立文件的好处：
+不要通过一个共享 status JSONL 管理全部直播。
 
-- 不同 Agent 不需要同时编辑一个状态表；
-- Git 冲突小；
-- 某一场一完成即可解锁下一阶段；
-- readiness 本身可审计。
+优点：
 
-推荐 marker 字段：
+- Git 冲突低；
+- 单场完成即可解锁；
+- 多 Agent 可并行；
+- 状态可审计；
+- 新 Agent 可准确恢复。
 
-```json
-{
-  "project": "Miles-Guo_public_archive",
-  "case_id": "PILOT-E001",
-  "live_id": "LIVE_20170523_001",
-  "stage": "alignment",
-  "ready_at": "ISO-8601 timestamp",
-  "task_id": "S-ALIGN-PILOT-E001",
-  "agent_id": "agent-...",
-  "result_commit": "commit sha",
-  "outputs": ["data/live_segments/2017/LIVE_20170523_001.jsonl"],
-  "validation": "what was really checked"
-}
-```
+## 8. 原子领取规则
 
-## 5. 任务认领：原子锁
-
-领取前必须创建：
+领取任务前必须创建：
 
 ```text
 coordination/claims/<TASK_ID>.json
 ```
 
-本地工作环境推荐：
+本地工作环境：
 
 ```bash
 python scripts/next_task.py \
@@ -118,7 +243,7 @@ python scripts/next_task.py \
   --agent-id agent-<UTC>-<random>
 ```
 
-或：
+或指定任务：
 
 ```bash
 python scripts/next_task.py \
@@ -127,27 +252,21 @@ python scripts/next_task.py \
   --agent-id agent-<UTC>-<random>
 ```
 
-### 关键并发规则
+claim 本地创建后，必须立刻 commit + push。
 
-脚本在本地创建 claim 后，**必须马上 commit + push**，然后才能开始耗时工作。
-
-真正的全局锁是 main 上可见的 claim 文件。
-
-如果 push 失败，因为另一个 Agent 已经抢先提交同一 claim：
+如果 push 时发现别人已抢先：
 
 1. 不覆盖；
 2. 删除自己失败的本地 claim；
-3. pull 最新 main；
-4. 再运行 `next_task.py --claim`；
-5. 领取另一个任务继续做。
+3. pull 最新 `main`；
+4. 再次运行 `next_task.py --claim`；
+5. 领取另一项继续工作。
 
-通过 GitHub API 工作的 Agent，直接用“创建新文件”作为原子锁；文件已存在即认领失败。
+GitHub API Agent 直接通过创建新文件实现同样的原子锁；文件已存在即认领失败。
 
-## 6. 完成任务后不要停
+## 9. 完成任务后立即继续
 
-先提交并 push 真正的数据/代码/报告输出。
-
-然后运行：
+先提交并 push 真正的输出，再运行：
 
 ```bash
 python scripts/next_task.py \
@@ -157,7 +276,7 @@ python scripts/next_task.py \
   --validation "真实执行过的验证"
 ```
 
-如果是 collection streaming task，还必须提供：
+streaming collection 还要传：
 
 ```bash
 --live-id LIVE_YYYYMMDD_NNN
@@ -169,49 +288,49 @@ python scripts/next_task.py \
 coordination/completed/<TASK_ID>.json
 ```
 
-并对 streaming task 创建相应 readiness marker。
+并在需要时创建 readiness marker。
 
-提交并 push 这些 coordination 文件后：
+push 后马上继续：
 
 ```bash
-python scripts/next_task.py --claim --agent-id <agent-id>
+python scripts/next_task.py --claim --agent-id <same-agent-id>
 ```
 
-继续下一项。
+## 10. Legacy Middle/Late Agent 如何在不中断现有任务的情况下解锁新流水线
 
-**正常 Agent 不应该完成一场就自动退出。只要还有安全可执行任务，就继续领。**
+已有大批次 Agent 不需要放弃当前 P6 claim。
 
-## 7. Legacy 大批次兼容规则
+只要其中某一场已经真实整理完成，就可以执行：
 
-仓库早期采用过：
+```bash
+python scripts/next_task.py \
+  --mark-ready collection \
+  --case-id PILOT-M001 \
+  --agent-id <legacy-claim-owner> \
+  --live-id LIVE_20200323_001 \
+  --outputs ... \
+  --validation "source identity and provenance verified"
+```
+
+这不会结束整个 Middle batch，只会创建：
 
 ```text
-P6-PILOT-EARLY-B001
-P6-PILOT-MIDDLE-B001
-P6-PILOT-LATE-B001
+coordination/ready/collection/PILOT-M001.json
 ```
 
-每个任务一次处理 9 场。这种模式会导致下游等待，因此不再作为未来默认方式。
-
-当前已经存在的有效 Middle/Late claim 不应被新 streaming collector 重复采集。
-
-`next_task.py` 会在有效 legacy batch claim 存在期间抑制对应组的 `S-COLLECT-*` 任务。
-
-但 legacy collector 不需要等 9 场全部结束。每完成其中一场，就应该立即写：
+于是另一个 Agent 可马上领取：
 
 ```text
-coordination/ready/collection/<PILOT_CASE_ID>.json
+S-ALIGN-PILOT-M001
 ```
 
-这样其他 Agent 立刻可以领取该 case 的 ALIGN。
+而原 Middle Agent 继续做 M002、M003……
 
-Legacy batch 全部完成后，即使没有逐场 marker，`next_task.py` 也会把对应组视为 collection-ready，并生成 per-case ALIGN 工作。
+这正是“现有工作不受影响，新任务开始采用新模式”的兼容桥梁。
 
-## 8. 数据文件拆分规则
+## 11. 数据拆分规则
 
-长期默认：**一场直播 / 一个 case 一组独立文件。**
-
-推荐：
+未来默认一场直播一组独立文件：
 
 ```text
 data/live_videos/2022/LIVE_20220511_001.json
@@ -223,22 +342,18 @@ data/sources/ghot/LIVE_20220511_001.json
 data/sources/gettrsearch/LIVE_20220511_001.json
 ```
 
-当前已有 batch JSONL 可以保留兼容，不要求破坏性重写。
+已有 batch JSONL 可以保留兼容，不强制破坏性迁移。
 
-新的并行工作不要让多个 Agent 同时 append 同一个大 JSONL。
+新的并行任务不要让多个 Agent 同时 append 一个大 JSONL。
 
-汇总、SQLite build、导出由脚本读取所有独立文件完成。
+## 12. COLLECT 完成标准
 
-## 9. COLLECT 阶段完成标准
-
-Collection case 不是“页面打开过”就完成。
-
-至少应保存：
+至少保留：
 
 - seed/source page；
 - source site/page/video/post ID；
-- title/date/duration 等实际存在字段；
-- GWINS/GHOT/平台来源关系；
+- title/date/duration 等真实字段；
+- GWINS/GHOT/原平台关系；
 - curated / ASR / mixed provenance；
 - identity evidence；
 - canonical live ID 或明确 unresolved；
@@ -248,9 +363,9 @@ Collection case 不是“页面打开过”就完成。
 
 不得仅按日期或标题相似合并直播。
 
-## 10. ALIGN 阶段完成标准
+## 13. ALIGN 完成标准
 
-单 case collection-ready 后即可做，不等其它 case。
+单 case collection-ready 后即可开始。
 
 优先：
 
@@ -280,15 +395,15 @@ playback_verified
 review_status
 ```
 
-不要伪造 `end_sec`、FPS、frame 或 playback verification。
+禁止伪造 `end_sec`、FPS、frame 或 playback verification。
 
-## 11. AUDIT 阶段增量进行
+## 14. AUDIT 增量进行
 
-Audit 不再等所有 Alignment 完成。
+Audit 不再等待全部 Alignment。
 
-每个已对齐 case 都可以立刻被抽查。
+每个已对齐 case 都可以立刻抽查。
 
-Pilot 总门槛仍然是至少 60 个真实 segment 的 playback audit，并满足：
+Pilot 总门槛仍为至少 60 个真实 segment 的 playback audit，并满足：
 
 ```text
 false merge ≈ 0
@@ -296,9 +411,9 @@ false merge ≈ 0
 >=98% locatable audited segments: error <= 8 sec
 ```
 
-未实际播放检查的 segment = `unverified`，不能算 pass。
+未实际播放检查 = `unverified`，不能算 pass。
 
-## 12. SQLite 不作为流水线锁
+## 15. SQLite 不是流水线锁
 
 `data/` 是 Git 真源。
 
@@ -310,27 +425,27 @@ database/Miles-Guo_public_archive.sqlite3
 
 可重建查询产物。
 
-任何 Agent 采集/对齐时都不需要等待 SQLite Agent。
+采集/对齐 Agent 不需要等待 SQLite Agent。
 
-安全时可以周期性运行：
+安全时周期性执行：
 
 ```bash
 python scripts/build_db.py
 python scripts/validate_db.py
 ```
 
-最终 P8/P10 负责 aggregate gate；它们不能成为前面 case 工作的全局锁。
+最终 aggregate SQLite/FTS gate 不应阻塞前面的 per-case 工作。
 
-## 13. Stale claim / 接管
+## 16. Stale claim / 接管
 
-默认 stale 观察阈值仍为 2 小时，但时间超过 2 小时并不自动等于失活。
+默认 stale 观察阈值仍为 2 小时，但超过时间不等于自动失活。
 
-接管前检查：
+接管前必须检查：
 
 - claim 后有没有新 commit；
-- 对应输出有没有持续形成；
-- completed 是否已经出现；
-- 是否能判断原 Agent 仍在推进。
+- 输出是否持续形成；
+- completed 是否已出现；
+- 是否有证据表明原 Agent 仍在推进。
 
 确认失活后创建：
 
@@ -340,30 +455,30 @@ coordination/conflicts/<TASK_ID>-takeover-<agent-id>.json
 
 记录旧 Agent、原因、检查时间，再继续。
 
-不得抢占有效 claim。
+不得仅因为 Agent 在 UI 中看似“沉睡”就抢任务。
 
-## 14. 最终唯一全局等待点
+## 17. 最终唯一全局等待点
 
-前面的 COLLECT / ALIGN / AUDIT / DB rebuild 都应尽可能流水并行。
+COLLECT / ALIGN / AUDIT / DB rebuild 尽量并行。
 
-真正需要等待整个 Pilot 的只有最终决策：
+真正需要等整个 Pilot 的只有：
 
 ```text
 P10-PILOT-DECISION
 ```
 
-只有在 Pilot 样本、SQLite、FTS、60-segment audit、false-merge 和时间误差门槛都有真实证据后，才允许决定：
+只有 Pilot 样本、SQLite、FTS、60-segment audit、false-merge 和时间误差门槛都有真实证据后，才允许决定：
 
 ```text
 FULL_ARCHIVE: YES / NO
 ```
 
-## 15. Agent ID
+## 18. Agent ID
 
-每次独立运行使用足够唯一的 ID：
+每次独立 Agent 运行使用唯一 ID：
 
 ```text
 agent-20260913T001500Z-a17f
 ```
 
-Agent ID 只是协作审计标识，不是档案数据主键。
+Agent ID 只用于协作审计，不是档案数据主键。
