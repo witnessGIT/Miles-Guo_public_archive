@@ -2,9 +2,7 @@
 
 ## External prompt contract
 
-An external Agent does **not** need a copied task specification.
-
-The minimal prompt is sufficient:
+A minimal external prompt is sufficient:
 
 ```text
 进入这个项目并开始工作：
@@ -13,47 +11,9 @@ https://github.com/witnessGIT/Miles-Guo_public_archive
 
 The repository is the authoritative execution context. Do not ask the user to repeat requirements already stored here.
 
-## Step 0 — resolve Agent role before changing anything
+## Step 0 — resolve role
 
-Read:
-
-```text
-coordination/AGENT_PERMISSIONS.json
-coordination/AGENT_PERMISSIONS.md
-```
-
-Administrative GitHub login:
-
-```text
-witnessGIT
-```
-
-If the authenticated GitHub login is verified as `witnessGIT`, the Agent may act as `admin`. Every other account is a `worker`. If identity cannot be verified, default to `worker`.
-
-Worker rule:
-
-```text
-worker = execute claimed project tasks + submit bug reports
-worker != fix bugs / modify control plane
-```
-
-A worker discovering a bug creates a new immutable report under:
-
-```text
-coordination/bug_reports/
-```
-
-and leaves the fix to an admin Agent.
-
-Admin rule:
-
-```text
-admin = may execute project tasks + review/fix bug reports + modify protected control plane
-```
-
-## Required bootstrap
-
-Read and follow, in order:
+Read first:
 
 1. `coordination/AGENT_PERMISSIONS.json`
 2. `coordination/AGENT_PERMISSIONS.md`
@@ -63,14 +23,21 @@ Read and follow, in order:
 6. `coordination/CLAIM_PROTOCOL_V2.md`
 7. `coordination/README.md`
 8. `coordination/WORK_QUEUE.jsonl`
-9. `docs/CURRENT_TASK.md`
-10. `docs/PROJECT_REQUIREMENTS.md`
-11. `docs/NAMING_AND_WORKFLOW.md`
-12. `docs/MEDIA_AUDIT.md`
-13. `docs/P10-LEGACY-MIGRATION.md`
-14. current `claims/`, `completed/`, `ready/`, `bug_reports/`, `playback_attempts/`, data and reports relevant to the next task
+9. `docs/PROJECT_REQUIREMENTS.md`
+10. `docs/NAMING_AND_WORKFLOW.md`
+11. `docs/MEDIA_AUDIT.md`
+12. current claims/completions/readiness/bug reports/playback requests/evidence relevant to the next task
 
-## First command — classify current state
+Administrative GitHub login: `witnessGIT`. Verified `witnessGIT` Agents are `admin`; every other/unknown identity is a `worker`.
+
+```text
+worker = execute claimed project tasks + use repository services + report bugs
+admin  = worker capabilities + repair/maintain project machinery
+```
+
+Workers MUST NOT modify `scripts/`, `schema/`, `.github/`, workflow policy, permissions or other protected control-plane files. Bugs go to `coordination/bug_reports/` for an admin Agent.
+
+## First status command
 
 Worker / unknown identity:
 
@@ -78,44 +45,30 @@ Worker / unknown identity:
 python scripts/project_status.py
 ```
 
-Verified `witnessGIT` admin:
+Verified admin:
 
 ```bash
 python scripts/project_status.py --role admin
 ```
 
-If the runtime can genuinely inspect decoded clip/frame/audio content and determine observed content position, add:
+Local `--content-inspection-capable` is now only an optional fallback. **Ordinary Agents do not need local ffmpeg, ffprobe, yt-dlp, Whisper, or a graphical video player when the repository Playback Evidence Service is present.**
 
-```bash
---content-inspection-capable
-```
+## Current Pilot acceptance chain
 
-Do **not** pass that flag merely because shell commands or ffmpeg can execute.
-
-## Current acceptance revision
-
-The old task identities:
-
-```text
-P9-AUDIT-60
-P10-PILOT-DECISION
-```
-
-already have historical completion records from the pre-playback-gate workflow. Those files are immutable audit history only and MUST NOT be interpreted as current Pilot completion or FULL_ARCHIVE authorization.
-
-The current acceptance tasks are:
-
-```text
-P9-AUDIT-60-R2
-P10-PILOT-DECISION-R2
-```
+Historical task identities `P9-AUDIT-60` and `P10-PILOT-DECISION` are legacy/superseded audit history only.
 
 Current chain:
 
 ```text
-P9-PLAYBACK-PILOT-* real playback work
+P9-PLAYBACK-PILOT-*
         ↓
-data/playback_audits/
+repository Playback Evidence Service
+        ↓
+data/playback_evidence/<CASE>/<SEGMENT>/evidence.{json,md}
+        ↓
+worker reads evidence and submits acceptance
+        ↓
+data/playback_audits/<CASE>/<SEGMENT>.json
         ↓
 scripts/audit_gate.py => pilot60_pass=true
         ↓
@@ -128,133 +81,139 @@ P10-PILOT-DECISION-R2
 FULL_ARCHIVE YES / NO
 ```
 
-Never delete or rewrite the historical P9/P10 records simply to make the new chain work. The R2 task IDs exist specifically so the current workflow can be completed without destroying history.
+FULL_ARCHIVE remains locked unless current `P10-PILOT-DECISION-R2` records an explicit machine-readable `full_archive_decision=YES` after all prerequisites pass.
 
 ## Task types
 
-| Task type | Examples | Media playback required? | Who may do it? |
-|---|---|---:|---|
-| `ordinary_business` | collection, alignment, source/transcript audit, data validation | No, unless explicitly stated | worker/admin |
-| `real_playback` | `P9-PLAYBACK-*` decoded-media timing checks | **Yes**: ffmpeg + ffprobe + actual content inspection | playback-capable worker/admin |
-| `gate_or_report` | `P9-AUDIT-60-R2`, `P10-PILOT-DECISION-R2`, aggregate gates/reports | No replay required once prerequisites pass | worker/admin |
-| `admin_control` | bug fixes, scripts/schema/CI/workflow/control-plane repair | No playback requirement by default | **admin only** |
-| `legacy_record` | old P9/P10 task identities | Not executable | nobody; audit history only |
+| Type | Examples | Who can execute? |
+|---|---|---|
+| `ordinary_business` | collection, alignment, source/transcript work | worker/admin |
+| `real_playback` | `P9-PLAYBACK-*` | worker/admin through repository service; local manual fallback optional |
+| `gate_or_report` | P9/P10 R2 aggregate gates/reports | worker/admin once dependencies pass |
+| `admin_control` | bug fixes, scripts/schema/CI/workflow | admin only |
+| `legacy_record` | old P9/P10 | nobody; history only |
 
-Lack of playback capability does **not** block ordinary, gate/report, or admin-compatible work.
+## Real Playback — preferred ordinary-Agent path
 
-## Status meanings
-
-The classifier may report:
-
-```text
-WORK_AVAILABLE
-HOST_STOP
-ROLE_STOP
-WAIT_FOR_ACTIVE_CLAIMS
-WAIT_FOR_DEPENDENCY
-NO_ELIGIBLE_WORK
-```
-
-Interpret them narrowly:
-
-- `WORK_AVAILABLE`: this session has at least one compatible task now.
-- `HOST_STOP`: the remaining unclaimed work this session could otherwise take is real playback, Pilot-60 has not passed, and this runtime cannot honestly inspect decoded media. This is a session capability limit, not repository-wide no-work.
-- `ROLE_STOP`: project work remains but it is admin-only and this session is a worker.
-- `WAIT_FOR_ACTIVE_CLAIMS`: work exists but relevant work is currently held by other Agents.
-- `WAIT_FOR_DEPENDENCY`: project work exists but this session has no currently executable compatible task.
-- `NO_ELIGIBLE_WORK`: no currently relevant work remains across ordinary, playback, gate transition, or admin bug queues.
-
-## Critical Pilot-60 transition rule
-
-`P9-AUDIT-60-R2` is blocked by `P9-PLAYBACK-GATE` until real qualifying playback evidence satisfies the acceptance thresholds.
-
-Run:
-
-```bash
-python scripts/audit_gate.py --json
-```
-
-Only canonical-crosschecked durable records under `data/playback_audits/` count. Transcript timestamps, source-page timestamps, ASR anchors, ordinary `S-AUDIT-*` completion markers, written audit reports, and successful ffmpeg decoding without actual content inspection do not count.
-
-When `pilot60_pass=true`:
-
-```text
-Pilot-60 passed
-    ↓
-seal P9-PLAYBACK-GATE
-    ↓
-P9-AUDIT-60-R2
-    ↓
-P10-PILOT-DECISION-R2
-```
-
-Seal with:
-
-```bash
-python scripts/playback_queue.py --seal-gate --agent-id <agent-id>
-```
-
-Once Pilot-60 has passed, extra unreviewed playback cases do not keep the acceptance path in `HOST_STOP`. Sealing the gate and executing current P9/P10 are non-playback tasks.
-
-## Ordinary queue
-
-```bash
-python scripts/next_task.py --list
-```
-
-Claim, execute, validate, commit/push, finish, refresh state, and continue.
-
-## Real Playback queue
+List/claim:
 
 ```bash
 python scripts/playback_queue.py --list
+python scripts/playback_queue.py --claim --agent-id agent-<UTC>-<random>
 ```
 
-Only a runtime with `ffmpeg` + `ffprobe` **and actual decoded-content inspection ability** may claim:
+A worker with no shell may create the equivalent claim atomically through GitHub according to the claim protocol.
+
+For each missing segment, choose a **public media URL already preserved in repository provenance** and submit:
+
+```text
+coordination/playback_requests/<CASE_ID>/<SEGMENT_ID>.json
+```
+
+Contract:
+
+```json
+{
+  "request_version": "playback-request-v1",
+  "task_id": "P9-PLAYBACK-PILOT-E002",
+  "case_id": "PILOT-E002",
+  "live_id": "LIVE_20170610_001",
+  "segment_id": "LIVE_20170610_001_SEG_000001",
+  "media_url": "https://public-media-url-already-in-repository-provenance",
+  "requested_by": "agent-...",
+  "requested_at": "ISO-8601 UTC",
+  "pre_roll_sec": 10.0,
+  "decode_window_sec": 24.0,
+  "language": "zh",
+  "visual_mode": "frames_ocr"
+}
+```
+
+Optional visual mode `smolvlm2_optional` asks the free open-source SmolVLM2 stage to run when the service environment enables it. Audio timing remains primary.
+
+The GitHub Action `.github/workflows/playback-evidence-service.yml` then:
+
+1. verifies case/live/segment identity;
+2. refuses arbitrary URLs not present in repository provenance for that live;
+3. resolves/probes/decodes real media with `yt-dlp` + `ffprobe` + `ffmpeg`;
+4. decodes a window before and after the canonical timestamp;
+5. runs offline `whisper.cpp` on decoded audio;
+6. fuzzy-matches the canonical target text to the new decoded-audio ASR;
+7. samples video frames and runs local OCR;
+8. optionally runs free SmolVLM2 visual description;
+9. writes durable Agent-readable `evidence.json` and `evidence.md` to Git.
+
+**Evidence generation alone never counts toward Pilot-60.**
+
+After the evidence appears, the worker MUST read `evidence.md`/`evidence.json`. If the decoded-media evidence really matches the canonical content, submit:
+
+```text
+coordination/playback_acceptances/<CASE_ID>/<SEGMENT_ID>.json
+```
+
+Contract:
+
+```json
+{
+  "acceptance_version": "playback-acceptance-v1",
+  "case_id": "PILOT-E002",
+  "live_id": "LIVE_20170610_001",
+  "segment_id": "LIVE_20170610_001_SEG_000001",
+  "evidence_ref": "data/playback_evidence/PILOT-E002/LIVE_20170610_001_SEG_000001/evidence.json",
+  "bundle_id": "copy-exactly-from-evidence",
+  "accepted": true,
+  "accepted_by": "agent-...",
+  "accepted_at": "ISO-8601 UTC",
+  "content_observation": "brief factual explanation of why the decoded-media evidence matches"
+}
+```
+
+The service cross-checks the acceptance against the evidence and canonical segment, then creates `qualifying_playback_timing_check_v2` under `data/playback_audits/`. A worker must never manufacture service evidence or accept evidence it has not read.
+
+CLI helpers exist when shell is available:
 
 ```bash
-python scripts/playback_queue.py \
-  --claim \
-  --content-inspection-capable \
-  --agent-id agent-<UTC>-<random>
+python scripts/playback_queue.py --request <SEGMENT_ID> --case-id <CASE_ID> --media-url '<URL>' --agent-id <agent-id>
+python scripts/playback_queue.py --accept <SEGMENT_ID> --case-id <CASE_ID> --content-observation '<why it matches>' --agent-id <agent-id>
 ```
 
-The flag is an auditable assertion, not a bypass. If the runtime can decode but cannot inspect clip/frame/audio content and determine the observed position, it must not claim playback work.
+## Free-service design
 
-A blocked playback attempt must preserve `counts_toward_pilot_60=false`, release the claim, and allow a later capable Agent to retry.
-
-## Current P9 / P10 capability rule
-
-`P9-AUDIT-60-R2` and `P10-PILOT-DECISION-R2` are gate/report tasks. They do **not** require the executing Agent to personally replay media once real playback prerequisites have passed and durable evidence exists.
-
-`P10-PILOT-DECISION-R2` remains blocked until current P9 completes. FULL_ARCHIVE remains locked unless current P10 records an explicit machine-readable:
+The default service uses only repository/public infrastructure and open-source tools:
 
 ```text
-full_archive_decision=YES
+GitHub standard public-repo runner
++ ffmpeg / ffprobe
++ yt-dlp
++ whisper.cpp (pinned release, cached model/build)
++ Tesseract OCR
++ optional SmolVLM2-256M
 ```
 
-`NO`, missing, or invalid decision values do not authorize FULL_ARCHIVE. Historical `P10-PILOT-DECISION` never authorizes the current chain.
+Full videos/clips are temporary runner/cache data and are not committed. Durable Git evidence is compact JSON/Markdown plus hashes/provenance.
 
-## Mandatory claim-race behavior
+## Pilot-60 quality rule
 
-A failed atomic claim is not automatically a GitHub outage.
+Only valid `data/playback_audits/**/*.json` records count. The validator supports:
 
-For GitHub `create_file` claim attempts:
+- v1: legacy/manual real decoded-media inspection;
+- v2: repository-decoded evidence + explicit worker evidence acceptance.
+
+Both must cross-check canonical case/live/segment identity, expected/observed timing and media provenance. Source-page timestamps, transcript timestamps, ordinary `S-AUDIT-*` markers, or ffmpeg decode success without content evidence do not count.
+
+When `scripts/audit_gate.py --json` reports `pilot60_pass=true`, seal `P9-PLAYBACK-GATE`, then proceed to P9/P10 R2. Extra unreviewed cases do not block the gate after the statistical threshold has passed.
+
+## Stop-state rule
+
+Because the repository now supplies the preferred Playback execution environment, lack of local ffmpeg/player is normally **not** `HOST_STOP` anymore. `HOST_STOP` applies only when neither the repository evidence service nor a valid local fallback is available for remaining playback work.
+
+## Claim races
+
+A failed atomic claim is not automatically a GitHub outage. For `422`/`409`, fetch the exact claim path from fresh `main`:
 
 ```text
-success
-  -> fetch exact claim -> verify owner -> work
-
-422 / 409
-  -> fetch exact claim from fresh main
-     -> exists: CLAIM_RACE_LOST -> refresh -> try another task
-     -> absent: refresh main/task state -> short backoff -> bounded retry
+claim exists -> CLAIM_RACE_LOST -> refresh -> try another
+claim absent -> refresh/backoff -> bounded retry
 ```
 
-A single `422` or `409` MUST NOT stop the worker. `409` often means `main` moved between read and write. Never force-overwrite concurrent work.
-
-## Repository authority
-
-A minimal external prompt authorizes execution of the **currently authorized repository phase** only. It does not authorize bypassing gates or starting an unauthorized later phase.
-
-Current Git state and repository policy beat stale chat summaries or old copied prompts.
+Never force-overwrite concurrent work. Current Git state and repository policy beat stale chat summaries or copied prompts.
