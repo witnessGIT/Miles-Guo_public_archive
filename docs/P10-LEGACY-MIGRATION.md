@@ -1,14 +1,21 @@
-# P10 Legacy Decision Migration Rule
+# Legacy P9/P10 Migration Rule
 
 ## Purpose
 
-The repository previously contained historical `P10-PILOT-DECISION` records created before the final playback acceptance chain was enforced.
+The repository contains historical completed records for:
+
+```text
+P9-AUDIT-60
+P10-PILOT-DECISION
+```
+
+They were created before the current real-playback acceptance chain was enforced.
 
 Historical records are preserved and must not be deleted or rewritten.
 
 ## Current authoritative acceptance chain
 
-```
+```text
 P9-PLAYBACK-PILOT-*
     ↓
 data/playback_audits/
@@ -17,41 +24,59 @@ audit_gate.py pilot60_pass=true
     ↓
 P9-PLAYBACK-GATE
     ↓
-P9-AUDIT-60
+P9-AUDIT-60-R2
     ↓
-P10-PILOT-DECISION
+P10-PILOT-DECISION-R2
     ↓
 FULL_ARCHIVE decision
 ```
 
-## Legacy P10 handling
+## Why R2 task IDs exist
 
-A historical P10 completion record does not unlock FULL_ARCHIVE if it was created before qualifying playback evidence existed.
+The original P9/P10 completion files must remain immutable audit evidence. Reusing the same task IDs would either make the task engine believe the new work was already complete or require overwriting historical records.
 
-Historical records remain immutable evidence of the previous decision process.
+Therefore the current acceptance cycle uses new task identities:
 
-They are treated as superseded state when:
+```text
+P9-AUDIT-60-R2
+P10-PILOT-DECISION-R2
+```
 
-- Pilot-60 qualifying playback evidence is below the required threshold;
-- P9-PLAYBACK-GATE has not been sealed;
-- P9-AUDIT-60 has not completed under the current contract.
+This is a workflow revision, not deletion of history.
+
+## Legacy handling
+
+The old P9/P10 records:
+
+- remain visible under `coordination/completed/`;
+- are audit history only;
+- do not satisfy the current playback-gated acceptance chain;
+- do not unlock current P9/P10 dependencies;
+- do not authorize FULL_ARCHIVE;
+- must never be claimed again.
+
+The current task engine and `scripts/project_status.py` use the R2 identities for active acceptance state.
 
 ## Required behavior
 
 Agents must not:
 
-- delete old P10 records;
+- delete old P9/P10 records;
 - modify historical decisions;
-- start FULL_ARCHIVE from a legacy P10 record;
-- treat old NO decisions as a substitute for the current acceptance chain.
+- use old completion records as current dependencies;
+- start FULL_ARCHIVE from the historical P10 decision;
+- treat old `FULL_ARCHIVE NO` as a substitute for the current acceptance cycle;
+- create transcript/source-audit work merely to simulate progress toward Pilot-60.
 
-The current operational state remains:
+## Current blocking semantics
 
-```
+Until qualifying playback evidence reaches the current thresholds and `P9-PLAYBACK-GATE` is sealed:
+
+```text
 PILOT = BLOCKED_PENDING_PLAYBACK_EVIDENCE
-P9 = BLOCKED
-P10 = BLOCKED
+P9-AUDIT-60-R2 = BLOCKED
+P10-PILOT-DECISION-R2 = BLOCKED
 FULL_ARCHIVE = NOT_AUTHORIZED
 ```
 
-until the current playback evidence requirements are satisfied.
+A session without real decoded-media inspection capability may report `HOST_STOP` only for itself when no compatible non-playback work remains. This does not mean the repository has no work.
