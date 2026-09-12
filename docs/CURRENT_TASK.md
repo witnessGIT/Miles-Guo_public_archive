@@ -3,27 +3,39 @@
 Project: `Miles-Guo_public_archive`  
 Repository: `witnessGIT/Miles-Guo_public_archive`  
 Current phase: `SITE_ANALYSIS + PILOT`  
+Workflow: `continuous-worker-v2`  
 Full archive collection: **NOT STARTED / NOT AUTHORIZED UNTIL PILOT PASSES**
 
-## Purpose of this file
+## Start here
 
-This file explains what the current phase is trying to accomplish and what each work unit means.
+Every Agent must follow, in order:
 
-**Executable task ownership is controlled by `coordination/WORK_QUEUE.jsonl` + `coordination/claims/` + `coordination/completed/`.**
+```text
+AGENTS.md
+coordination/CONTINUOUS_WORKER_V2.md
+coordination/WORKFLOW.json
+coordination/README.md
+coordination/WORK_QUEUE.jsonl
+this file
+```
 
-Do not start a work unit merely because this document says `OPEN`. First follow the atomic claim procedure in `coordination/README.md`.
+Then run:
 
-If the user gives a newer explicit instruction, follow it first and update durable repository rules afterward. Otherwise, do not wait for a new prompt: claim the next eligible task and begin.
+```bash
+python scripts/next_task.py --list
+```
+
+Do not choose work from this prose file by guess. `scripts/next_task.py` + Git coordination files determine what is actually claimable now.
 
 ## Current objective
 
-Build and validate the first real searchable archive model from these three public sources:
+Build and validate the first real searchable archive model from these public sources:
 
 1. `gwins` — https://www.gwins.org/
 2. `ghot` — https://ghot.ai/
 3. `gettrsearch` — https://gettrsearch.com/
 
-The Pilot must prove that the archive can represent:
+The Pilot must prove:
 
 ```text
 one livestream
@@ -35,157 +47,147 @@ one livestream
 + searchable structured data
 ```
 
-The Pilot is not a demo with invented data. Use real public records only.
+Use real public records only. Do not invent Pilot data.
 
-## Start here on every Agent run
+## Current project status
 
-1. Read `AGENTS.md`.
-2. Read `coordination/README.md` and `coordination/WORK_QUEUE.jsonl`.
-3. Read `coordination/completed/` and `coordination/claims/`.
-4. Read `README.md`, `docs/PROJECT_REQUIREMENTS.md`, `docs/NAMING_AND_WORKFLOW.md`, and relevant current files.
-5. Inspect recent commits and current repository contents.
-6. Select the highest-priority task whose `depends_on` items are all completed and which has neither a completed record nor an active claim.
-7. Atomically claim it by creating `coordination/claims/<TASK_ID>.json`.
-8. Only after claim succeeds, execute the task.
-9. Produce and validate durable repository output.
-10. Commit results.
-11. Create `coordination/completed/<TASK_ID>.json` pointing to the result commit and outputs.
-12. Continue with the next eligible task when safe.
+Completed foundation/site-analysis work already exists in Git. The current Pilot contains 27 selected source-backed cases:
 
-## Work queue details
+```text
+early   9 cases  2017-2019
+middle  9 cases  2020-2021
+late    9 cases  2022-2023
+```
 
-The task IDs below correspond to the machine-readable queue in `coordination/WORK_QUEUE.jsonl`.
+The early legacy batch has durable source records. Middle and late legacy batch claims were already active before `continuous-worker-v2`; they are grandfathered and must not be duplicated or disrupted.
 
-### P0-SCHEMA — Core schema
+## New default: per-case streaming
 
-Create `schema/schema.sql` for the Pilot archive while preserving future extensibility to non-livestream archive items.
+The project no longer waits for an entire era/batch before downstream work starts.
 
-Must support, at minimum, the current requirements around livestreams, multiple sources, segments, provenance, curated/ASR text separation, timestamps, quality/review state, and FTS5 build needs.
+Each Pilot case advances independently:
 
-### P0-SCAFFOLD — Repository scaffold
+```text
+COLLECT + IDENTITY
+        ↓
+coordination/ready/collection/<CASE>.json
+        ↓
+ALIGN
+        ↓
+coordination/ready/alignment/<CASE>.json
+        ↓
+AUDIT
+        ↓
+coordination/ready/audit/<CASE>.json
+```
 
-Create only the real scaffolding needed for data work, including required paths/files such as `.gitignore`, report/template locations and source-data layout.
+Example task IDs:
 
-Do not create fake data or mark a planned directory as completed merely because its name exists in documentation.
+```text
+S-COLLECT-PILOT-E001
+S-ALIGN-PILOT-E001
+S-AUDIT-PILOT-E001
+```
 
-### P1-GWINS-STRUCTURE — GWINS structural analysis
+If one case is ready, another Agent may start its next stage immediately even while unrelated cases remain unfinished.
 
-Analyze real public pages and document:
+## Existing legacy claims are protected
 
-- list/archive entry points;
-- detail-page URL patterns;
-- pagination/navigation;
-- stable page/source IDs;
-- date/title fields;
-- media/source links;
-- duplicate-content behavior;
-- failure/edge cases.
+Do not rewrite or steal valid existing claims simply to migrate them.
 
-Write verified findings into `docs/SITE_ANALYSIS.md`, including real example URLs and retrieval date.
+A claim without:
 
-### P1-GWINS-TRANSCRIPT — GWINS transcript analysis
+```json
+"workflow_mode": "continuous-worker-v2"
+```
 
-Depends on `P1-GWINS-STRUCTURE`.
+is a grandfathered legacy claim.
 
-Analyze:
+Its owner finishes the current task normally. The next new claim uses v2.
 
-- curated transcript structure;
-- transcript timestamps;
-- people/organization/country/topic metadata;
-- transcript edge cases;
-- how curated text should map into archive fields without replacing source wording.
+Legacy Middle/Late collectors can unlock downstream work case-by-case without ending their batch:
 
-### P2-GHOT-ARCHIVE — GHOT structural analysis
+```bash
+python scripts/next_task.py \
+  --mark-ready collection \
+  --case-id PILOT-M001 \
+  --agent-id <legacy-owner> \
+  --live-id LIVE_20200323_001 \
+  --outputs ... \
+  --validation "source identity and provenance verified"
+```
 
-Analyze real public pages and document:
+This allows another Agent to immediately claim `S-ALIGN-PILOT-M001`.
 
-- archive/list/detail structure;
-- stable IDs;
-- dates/titles/duration;
-- original source links/platform IDs;
-- duplicate-content behavior;
-- static HTML vs dynamic/API-backed data where observable.
+## Continuous-worker-v2 behavior
 
-### P2-GHOT-TIMELINE — GHOT time-axis analysis
+For every **new claim**, the default behavior is:
 
-Depends on `P2-GHOT-ARCHIVE`.
+```text
+claim
+→ work
+→ validate
+→ commit/push
+→ finish / publish readiness
+→ refresh
+→ claim next eligible task
+→ repeat
+```
 
-Analyze:
+Completing one task is not a reason to stop.
 
-- transcript/ASR structure;
-- timestamp granularity;
-- selected-clip ranges if present;
-- ASR quality limitations;
-- whether GHOT can reliably provide a time axis for curated text from another source.
+A worker stops only for a documented condition:
 
-### P3-GETTRSEARCH-STRUCTURE — GettrSearch analysis
+```text
+PROJECT_COMPLETE
+USER_RECALL
+NO_ELIGIBLE_WORK
+HUMAN_DECISION_REQUIRED
+SAFETY_OR_ACCESS_BLOCK
+HOST_STOP
+```
 
-Analyze:
+Git cannot wake a host-suspended Agent. It can only preserve durable state so a running worker can continue or a new worker can resume immediately.
 
-- search entry points;
-- year filters;
-- long/short separation;
-- detail/playvideo patterns;
-- GETTR IDs/original links where exposed;
-- date/title/text availability;
-- whether it should be primary, secondary or discovery/backfill source.
+For runtimes that support long-lived processes:
 
-### P0-BUILD-DB — Build script
+```bash
+python scripts/next_task.py \
+  --watch \
+  --claim \
+  --agent-id agent-<UTC>-<random> \
+  --poll-seconds 60
+```
 
-Depends on `P0-SCHEMA`.
+may wait for work, but host/platform suspension can still terminate the process.
 
-Create `scripts/build_db.py` so `database/Miles-Guo_public_archive.sqlite3` can be rebuilt from Git-tracked source data and schema.
+## Task ownership
 
-SQLite is a build product, not the sole source of truth.
+Before any new task begins, an Agent must create:
 
-### P0-VALIDATE-DB — Validation script
+```text
+coordination/claims/<TASK_ID>.json
+```
 
-Depends on `P0-SCHEMA` and `P0-BUILD-DB`.
+The claim must become visible on `main` before expensive work begins.
 
-Create `scripts/validate_db.py` to surface schema, FK, FTS and source-data integrity problems. It must report failures rather than hide them.
+If a claim already exists, do not wait for it and do not overwrite it. Refresh and claim another eligible task.
 
-### P4-IDENTITY-RULES — Cross-source identity matching
+After real outputs are committed, finish using:
 
-Depends on the three structural site-analysis tasks.
+```bash
+python scripts/next_task.py \
+  --finish <TASK_ID> \
+  --agent-id <agent-id> \
+  --outputs <paths...> \
+  --validation "what was actually checked"
+```
 
-Build and test a reproducible strategy for determining whether records from different sources represent the same livestream.
+Then immediately claim another eligible task.
 
-Evidence may include:
+## Collection requirements
 
-- exact platform video ID;
-- date;
-- title similarity;
-- duration similarity;
-- transcript opening/content similarity;
-- shared GETTR/Rumble/YouTube source.
-
-Do not merge solely because titles look similar. Preserve score/reason/conflicts.
-
-### P5-PILOT-SELECTION — Select Pilot sample
-
-Depends on site transcript/time-axis analysis and identity rules.
-
-Select 20–30 real livestreams across early/middle/late years where possible.
-
-Attempt to cover:
-
-- GWINS + GHOT overlap;
-- GWINS-only case if actually demonstrated by documented search scope;
-- GHOT-only case if actually demonstrated;
-- GettrSearch discovery/backfill case;
-- multiple media-source case;
-- transcript with timestamps;
-- transcript without precise timestamps.
-
-`not yet found` is not the same as `does not exist`.
-
-### P6-PILOT-EARLY-B001 / MIDDLE-B001 / LATE-B001 — Data collection batches
-
-These are intentionally non-overlapping collection tasks for multiple Agents.
-
-For each assigned batch create Git-friendly source records. Prefer independent batch files to a single shared JSONL file.
-
-At minimum preserve:
+Per-case collection must preserve at least:
 
 - internal/candidate identity;
 - title/date;
@@ -194,127 +196,127 @@ At minimum preserve:
 - third-party ID where available;
 - curated text separate from ASR;
 - start/end seconds only when actually known;
-- retrieval/verification state.
+- retrieval/verification state;
+- cross-source identity evidence/conflicts.
 
-Do not invent timestamps, FPS, frames, IDs or source availability.
+Never invent timestamps, FPS, frames, source IDs, source absence, or merge certainty.
 
-### P7-ALIGNMENT-B001 — Transcript/time-axis alignment
+Prefer independent per-case/per-live files instead of concurrent appends to one large JSONL.
 
-For overlapping Pilot records, test curated GWINS text against public time-axis data.
+## Alignment requirements
 
-Priority:
+For overlapping records, timing priority is:
 
-1. existing curated timestamps;
-2. GHOT time axis + fuzzy text alignment;
+1. existing curated/source timestamps;
+2. GHOT public ASR/time axis + monotonic fuzzy alignment;
 3. local ASR only when public timing is inadequate;
-4. manual review for unresolved high-value segments.
+4. manual playback review for unresolved/high-value segments.
 
-Record `alignment_method`, `alignment_quality` and whether playback verification was actually performed.
+Preserve:
 
-### P8-SQLITE-PILOT — Build searchable Pilot DB
+```text
+text_curated
+text_asr
+start_sec / end_sec
+curated_source_id
+asr_source_id
+time_source_id
+alignment_method
+alignment_quality
+playback_verified
+review_status
+```
 
-Build and validate `database/Miles-Guo_public_archive.sqlite3` from tracked source data.
+Do not derive `end_sec` silently and do not mark playback verified unless playback was actually checked.
 
-Requirements:
+## Audit requirements
 
-- FTS5 over applicable transcript/search fields;
-- foreign-key/integrity checks;
-- rebuild from `data/` + `schema/`;
-- failures remain visible.
+Audit starts incrementally after each case is aligned; it does not wait for all 27 cases.
 
-### P9-AUDIT-60 — Pilot audit
+Pilot approval still requires at least 60 real segment playback checks in aggregate.
 
-Randomly audit at least 60 real segments.
+Quality gates:
 
-For each applicable sample verify:
+```text
+false livestream merge rate approximately 0
+>= 90% of locatable audited segments within 3 seconds
+>= 98% within 8 seconds
+```
 
-- correct livestream;
-- correct date;
-- source traceability;
-- text/source consistency;
-- actual playback position;
-- timestamp error;
-- no incorrect cross-source merge.
+Unperformed playback checks remain `unverified`.
 
-Target gates:
+## SQLite behavior
 
-- false-merge rate approximately 0;
-- >= 90% of locatable audited segments within 3 seconds;
-- >= 98% within 8 seconds.
+Git-tracked JSON/JSONL under `data/` is the long-term source of truth.
 
-Unperformed playback checks are `unverified`, not passes.
+Official database artifact:
 
-### P10-PILOT-DECISION — Pilot decision
+```text
+database/Miles-Guo_public_archive.sqlite3
+```
 
-Update `reports/pilot_report.md` with actual evidence:
+It must remain rebuildable from `data/` + `schema/`:
 
-- site-analysis findings;
-- coverage;
+```bash
+python scripts/build_db.py
+python scripts/validate_db.py
+```
+
+SQLite build/rebuild is not a global lock. Collection/alignment/audit may continue while another Agent handles aggregate database validation.
+
+## Aggregate legacy gates
+
+`coordination/WORK_QUEUE.jsonl` still contains historical/aggregate task IDs for compatibility:
+
+```text
+P6-PILOT-EARLY-B001
+P6-PILOT-MIDDLE-B001
+P6-PILOT-LATE-B001
+P7-ALIGNMENT-B001
+P8-SQLITE-PILOT
+P9-AUDIT-60
+P10-PILOT-DECISION
+```
+
+Interpretation under v2:
+
+- P6 tasks: legacy collection batches already created before streaming mode;
+- P7: aggregate alignment gate / gap cleanup, not permission to begin per-case alignment;
+- P8: aggregate SQLite/FTS validation gate, not permission to begin database rebuilds;
+- P9: aggregate audit gate that checks accumulated per-case audit evidence reaches the 60-segment requirement;
+- P10: final whole-Pilot decision.
+
+Only P10 is intentionally a whole-Pilot waiting point.
+
+## Final decision boundary
+
+Do not start `FULL_ARCHIVE` merely because scraping or collection is possible.
+
+`P10-PILOT-DECISION` must be supported by real evidence covering:
+
+- all required site findings;
+- Pilot source coverage;
 - cross-source matches/conflicts;
 - segment counts;
 - curated/ASR coverage;
-- alignment distribution;
-- playback audit;
-- broken/duplicate sources;
-- database/source-data sizes;
-- unresolved issues;
-- `FULL_ARCHIVE: YES/NO` recommendation.
+- alignment quality;
+- at least 60 real playback audits;
+- false-merge findings;
+- broken/duplicate URLs;
+- SQLite/FTS validation;
+- unresolved problems;
+- recommendation `FULL_ARCHIVE: YES` or `FULL_ARCHIVE: NO`.
 
-Do not begin FULL_ARCHIVE before this gate is supported by evidence.
-
-## Multi-Agent coordination rules
-
-The authoritative protocol is `coordination/README.md`.
-
-Summary:
-
-- ownership is per task ID;
-- claim via creation of `coordination/claims/<TASK_ID>.json`;
-- never overwrite an existing claim;
-- dependencies are satisfied only by `coordination/completed/<TASK_ID>.json` records;
-- completed work should not be redone unless explicitly assigned as verification/fix work;
-- collection work is split by non-overlapping batch;
-- avoid concurrent edits to one large JSONL file;
-- preserve source conflicts instead of overwriting them;
-- stale claims require documented takeover procedure.
-
-## Data-source and access rules
+## Access rules
 
 - Publicly accessible content only.
-- Respect low request rates and caching.
-- Do not bypass login, CAPTCHA, paywalls, access controls, or DRM.
-- Do not commit full video/audio or large temporary files.
-- Temporary downloads belong in ignored cache paths and should be removed when no longer needed.
+- Low request rate and caching.
+- No bypass of login, CAPTCHA, paywall, access control, or DRM.
+- No full video/audio/model/cache/FFmpeg intermediates committed to Git.
+- Record evidence and uncertainty instead of guessing.
 
 ## Zero-cost rule
 
-The core workflow should remain usable with GitHub, Python, SQLite/FTS5, local open-source tooling, public source pages and local temporary cache.
+The core workflow must remain usable with GitHub, Python, SQLite/FTS5, local open-source tooling, public source pages, and local temporary cache.
 
-Do not make paid APIs, commercial vector databases, paid object storage or paid AI services mandatory.
-
-## Historical-recovery future queue
-
-Preserve schema compatibility for future work on:
-
-- deleted/moved livestreams;
-- Twitter/X historical posts;
-- GETTR historical posts;
-- public web archives;
-- mirrors/reposts;
-- historical citations/screenshots.
-
-A repost or screenshot is not an original publication. Recovery evidence must retain provenance and confidence/source level.
-
-## Stop / escalation conditions
-
-Document the issue rather than guessing when:
-
-- source identity cannot be established;
-- dates materially conflict;
-- timestamps cannot be verified;
-- two records may be different livestreams;
-- access requires bypassing controls;
-- schema changes could invalidate existing data;
-- concurrent edits create unresolved collisions.
-
-Continue with another safe eligible task whenever possible.
+Paid APIs, commercial vector databases, paid object storage, or paid AI services must not become mandatory infrastructure.
