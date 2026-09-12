@@ -1,0 +1,15 @@
+{
+  "task_id": "P6-PILOT-EARLY-B001",
+  "agent_id": "agent-20260912T152400Z-gpt56sol",
+  "completed_at": "2026-09-12T16:08:00Z",
+  "result_commit": "9b908a5574e3f582630b84e494333ef6788f25e7",
+  "outputs": [
+    "data/live_videos/early/pilot_early_b001.jsonl",
+    "data/sources/gwins/pilot_early_b001.jsonl",
+    "data/sources/ghot/pilot_early_b001.jsonl",
+    "data/source_match_candidates/pilot_early_b001.jsonl",
+    "reports/PILOT_EARLY_B001.md"
+  ],
+  "validation": "Collected 9 canonical early Pilot livestream records (2017-2019), 9 verified GWINS archive sources, 6 verified GHOT archive sources, and 6 direct GHOT->GWINS identity-v1 matches at score 0.98. Isolated current-schema load produced 9 live_videos / 15 live_sources / 6 match candidates, PRAGMA foreign_key_check returned no violations, PRAGMA integrity_check returned ok, and all metadata_json/evidence_json values parsed successfully.",
+  "notes": "Critical correction preserved: GHOT 2019-05-30-2 directly links GWINS 22012 / 20190530_2, not same-day 22011 / 20190530_1. E004-E006 retain confirmed GWINS only for this batch without making unsupported source-absence claims. Segment alignment/playback verification remains P7 scope."
+}
