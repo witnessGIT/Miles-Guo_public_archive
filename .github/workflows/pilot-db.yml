@@ -1,0 +1,47 @@
+name: Build Pilot SQLite
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'data/**'
+      - 'schema/**'
+      - 'scripts/build_db.py'
+      - 'scripts/validate_db.py'
+      - '.github/workflows/pilot-db.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-pilot-db:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Build SQLite from Git-tracked source data
+        run: python scripts/build_db.py
+
+      - name: Validate SQLite
+        run: python scripts/validate_db.py
+
+      - name: Commit rebuilt Pilot database
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add database/Miles-Guo_public_archive.sqlite3
+          if git diff --cached --quiet; then
+            echo "Pilot SQLite is already current."
+          else
+            git commit -m "build: refresh Pilot SQLite database"
+            git push
+          fi
