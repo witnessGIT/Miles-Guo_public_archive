@@ -1,68 +1,234 @@
 # Miles-Guo_public_archive
 
-## Mandatory reading before work
+## Agent start rule
 
-Every agent working in this repository MUST read these files before planning, editing, collecting data, or committing:
+This repository uses a self-service streaming workflow. Any Agent entering the repository must be able to discover work, claim it, execute it, finish it, and immediately continue to the next task without waiting for another Agent to finish an unrelated batch.
 
-1. `coordination/README.md` — mandatory multi-Agent coordination and atomic task-claim protocol.
-2. `coordination/WORK_QUEUE.jsonl` — machine-readable executable work queue.
-3. `docs/CURRENT_TASK.md` — current phase, objectives, work-unit details and quality gates.
-4. `docs/PROJECT_REQUIREMENTS.md` — complete user requirements.
-5. `docs/NAMING_AND_WORKFLOW.md` — authoritative naming and repository boundaries.
-6. `README.md` and relevant existing `docs/`, `schema/`, `reports/`, `data/`, `coordination/`, and `tests/` files.
-
-Do not rely on a previous chat, cached summary, or another agent's recollection instead of reading these files. This applies to primary and delegated agents.
-
-If required files are missing, do not invent their contents. Create only missing project scaffolding explicitly required by repository rules, record what was missing, and continue with safe work.
-
-## Immediate-start rule
-
-Reading the repository is preparation, not completion.
-
-After mandatory reading, an agent MUST immediately begin a real unfinished task unless the user explicitly asked only for analysis/review.
-
-Mandatory startup sequence:
+The default loop is:
 
 ```text
-Read requirements
+read repository rules
 ↓
-Inspect current repository state
+python scripts/next_task.py --list
 ↓
-Read WORK_QUEUE.jsonl
+claim one eligible task
 ↓
-Read coordination/completed/
+push the claim immediately
 ↓
-Read coordination/claims/
+execute real work
 ↓
-Filter to tasks whose dependencies are completed
+validate and commit outputs
 ↓
-Remove completed or actively claimed tasks
+finish the task / create readiness marker
 ↓
-Choose highest-priority safe task
+push completion metadata
 ↓
-CREATE coordination/claims/<TASK_ID>.json
+claim the next eligible task
 ↓
-Only after claim creation succeeds: execute the task
-↓
-Validate durable output
-↓
-Commit results
-↓
-CREATE coordination/completed/<TASK_ID>.json
-↓
-Continue with next available task when safe
+repeat
 ```
 
-Do NOT stop after saying:
+Do not stop merely because one historical batch-level task is still in progress. Per-case streaming tasks may already be available.
 
-- "I read the requirements";
-- "I understand the project";
-- "the next step is to collect data";
-- "someone should analyze the sites".
+## Mandatory reading before work
 
-If the next safe action can be executed, execute it.
+Every Agent MUST read, in this order:
 
-## Atomic claim rule — mandatory
+1. `AGENTS.md`
+2. `coordination/README.md`
+3. `coordination/WORK_QUEUE.jsonl`
+4. `docs/CURRENT_TASK.md`
+5. `docs/PROJECT_REQUIREMENTS.md`
+6. `docs/NAMING_AND_WORKFLOW.md`
+7. relevant existing `docs/`, `reports/`, `data/`, `schema/`, `tests/`, `coordination/claims/`, and `coordination/completed/`
+
+Do not rely on chat history or another Agent's summary instead of repository state.
+
+## Immediate task discovery
+
+After mandatory reading, run:
+
+```bash
+python scripts/next_task.py --list
+```
+
+The script combines two task sources:
+
+1. legacy/global tasks in `coordination/WORK_QUEUE.jsonl`;
+2. dynamically generated per-Pilot-case streaming tasks.
+
+Streaming task IDs use:
+
+```text
+S-COLLECT-PILOT-E001
+S-ALIGN-PILOT-E001
+S-AUDIT-PILOT-E001
+```
+
+A single Pilot case can advance independently from the other 26 cases.
+
+### Claim the recommended task
+
+Choose a unique Agent ID, for example:
+
+```text
+agent-20260913T001500Z-a17f
+```
+
+Then run:
+
+```bash
+python scripts/next_task.py --claim --agent-id agent-20260913T001500Z-a17f
+```
+
+or claim a specific currently eligible task:
+
+```bash
+python scripts/next_task.py \
+  --claim \
+  --task S-ALIGN-PILOT-E001 \
+  --agent-id agent-20260913T001500Z-a17f
+```
+
+The claim file is only a local candidate lock until it is committed and pushed. Push it immediately before doing the work. If another Agent wins the Git race, remove the losing local claim, pull latest `main`, and claim another task.
+
+Agents that use the GitHub API directly should atomically create the same `coordination/claims/<TASK_ID>.json` file and treat an already-existing file as a lost claim.
+
+## Finish and continue
+
+First commit and push the durable work outputs. Then create the completion/readiness records with:
+
+```bash
+python scripts/next_task.py \
+  --finish S-ALIGN-PILOT-E001 \
+  --agent-id agent-20260913T001500Z-a17f \
+  --outputs data/live_segments/2017/LIVE_20170523_001.jsonl \
+  --validation "verified provenance, monotonic alignment, no invented end times"
+```
+
+For a streaming collection task, also provide the canonical live ID:
+
+```bash
+python scripts/next_task.py \
+  --finish S-COLLECT-PILOT-M001 \
+  --agent-id agent-... \
+  --live-id LIVE_20200323_001 \
+  --outputs ... \
+  --validation "..."
+```
+
+Commit and push the generated coordination files, then immediately run another `--claim` command. A normal Agent run should continue through multiple safe tasks when time/tool budget allows.
+
+## Streaming pipeline
+
+The preferred unit of work is one livestream/Pilot case, not a whole era.
+
+```text
+COLLECT + IDENTITY
+        ↓
+ALIGN
+        ↓
+AUDIT
+```
+
+A case that completes one stage must immediately become available to the next stage even if other cases are unfinished.
+
+Readiness is represented by independent files under:
+
+```text
+coordination/ready/collection/<PILOT_CASE_ID>.json
+coordination/ready/alignment/<PILOT_CASE_ID>.json
+coordination/ready/audit/<PILOT_CASE_ID>.json
+```
+
+This avoids one shared mutable status file and lets Agents work in parallel with minimal Git conflicts.
+
+### Compatibility with currently active legacy batches
+
+Existing active claims for:
+
+```text
+P6-PILOT-MIDDLE-B001
+P6-PILOT-LATE-B001
+```
+
+must not be duplicated while those claims are valid.
+
+A legacy batch collector SHOULD publish a `coordination/ready/collection/<CASE>.json` marker as soon as an individual case inside the batch is actually complete. That immediately unlocks alignment for that case without waiting for the rest of the batch.
+
+Once legacy Pilot batches finish, future collection work should use per-case streaming tasks instead of new 9-case blockers.
+
+## Stage-specific requirements
+
+### COLLECT
+
+A collection task must preserve real public source evidence only. It should establish or preserve:
+
+- canonical `LIVE_YYYYMMDD_NNN` only after identity evidence supports it;
+- source URLs and source-site IDs;
+- source platform/video/post IDs when actually known;
+- date/title/duration only when supported;
+- GWINS curated/mixed transcript provenance separately from GHOT ASR;
+- cross-source match evidence and conflicts;
+- retrieval/verification timestamps.
+
+Do not invent source absence, IDs, timestamps, duration, FPS, or merge decisions.
+
+Prefer independent per-live/per-case files. Do not append many Agents into one shared large JSONL file.
+
+### ALIGN
+
+An alignment task may start as soon as its own case is collection-ready.
+
+Priority order:
+
+1. explicit source timestamps already attached to curated text;
+2. GHOT public ASR/time-axis + monotonic fuzzy alignment;
+3. local ASR only where public timing is inadequate;
+4. manual playback review for unresolved/high-value segments.
+
+Store curated text and ASR separately. `start_sec`/`end_sec` are primary locators; never invent an end time. Preserve `alignment_method`, `alignment_quality`, source IDs, review state, and whether playback was actually verified.
+
+Write per-live segment files whenever possible, e.g.:
+
+```text
+data/live_segments/2017/LIVE_20170523_001.jsonl
+```
+
+### AUDIT
+
+Audit work begins incrementally after a case is aligned. Do not wait for all 27 cases.
+
+Audit real playback positions and record at minimum:
+
+- `segment_id`;
+- `live_id`;
+- source URL used for playback;
+- expected `start_sec`;
+- observed/verified position;
+- timing error in seconds;
+- correct livestream/date/text provenance;
+- merge correctness;
+- verifier timestamp and notes.
+
+The Pilot still requires at least 60 real segment audits in aggregate before final approval.
+
+## Database behavior
+
+`data/` JSON/JSONL is the Git source of truth.
+
+`database/Miles-Guo_public_archive.sqlite3` is a rebuildable artifact. Agents should not block collection/alignment work just because another Agent is rebuilding SQLite.
+
+After meaningful data changes, run when safe:
+
+```bash
+python scripts/build_db.py
+python scripts/validate_db.py
+```
+
+Do not make concurrent Agents edit the SQLite binary as a shared source of truth. The final Pilot SQLite gate is an aggregate validation step, not a reason to serialize all earlier work.
+
+## Atomic claim rule
 
 No Agent may start a queued work unit before successfully creating:
 
@@ -70,87 +236,46 @@ No Agent may start a queued work unit before successfully creating:
 coordination/claims/<TASK_ID>.json
 ```
 
-This file creation is the coordination lock.
-
-If creation fails because the file already exists:
+If the claim already exists:
 
 1. do not overwrite it;
-2. refresh `claims/` and `completed/`;
-3. choose the next eligible task.
+2. refresh/pull repository state;
+3. choose another eligible task;
+4. keep working instead of waiting.
 
-Do not coordinate ownership by editing a single shared status field. Do not assume a task is free merely because `docs/CURRENT_TASK.md` says OPEN.
+A task is unavailable when a valid claim exists or `coordination/completed/<TASK_ID>.json` already exists.
 
-A task is considered unavailable when:
+Stale-claim takeover rules remain in `coordination/README.md`.
 
-- `coordination/completed/<TASK_ID>.json` exists; or
-- a valid claim exists and has not been properly declared stale/taken over.
+## Scope and naming
 
-Detailed stale/takeover rules are in `coordination/README.md`.
-
-## Scope and precedence
-
-- Only modify `witnessGIT/Miles-Guo_public_archive`. Default branch: `main`.
-- Never modify `witnessGIT/movie_production` or any other repository for this task.
+- Only modify `witnessGIT/Miles-Guo_public_archive`.
+- Never modify `witnessGIT/movie_production` or another repository for this archive task.
 - Official project name: `Miles-Guo_public_archive`.
-- Only official database path: `database/Miles-Guo_public_archive.sqlite3`.
-- Current explicit user instructions take precedence. Later saved rules override older examples.
-- Archive First, Application Second. This is a searchable public digital archive, not a video production project.
-- Zero-cost-first: the core archive must remain usable without paid APIs, paid cloud databases, or paid object storage.
+- Official database path: `database/Miles-Guo_public_archive.sqlite3`.
+- Archive First, Application Second.
+- The archive must remain usable with zero-cost/local/open tooling; paid APIs/services cannot be mandatory.
 
-## Current default mission
+## Core archive discipline
 
-Unless superseded by a newer explicit user instruction, agents are working on `SITE_ANALYSIS + PILOT` for:
-
-- `gwins` — https://www.gwins.org/
-- `ghot` — https://ghot.ai/
-- `gettrsearch` — https://gettrsearch.com/
-
-The mission is to turn real public records into a unified, traceable archive where one livestream can have multiple sources, high-quality text, a reliable time axis, and a route back to source media.
-
-Use `coordination/WORK_QUEUE.jsonl` as the executable task source. Use `docs/CURRENT_TASK.md` for task details and quality gates.
-
-## Required work discipline
-
-- Inspect branch/history/current files before changes and preserve unrelated work.
-- Before writing a new record, search existing data, source URLs, platform IDs and `live_id` values.
-- Analyze the three public source sites before broad collection. Pilot remains 20–30 real livestreams until quality gates pass.
-- One livestream has one canonical internal live ID and may have multiple source records.
-- Preserve curated text and ASR separately with provenance.
-- Use seconds as the primary locator. Never invent timestamps, FPS, matches, availability, publication times, IDs or verification results.
-- Keep JSON/JSONL under `data/` as Git source of truth. SQLite/FTS5 must rebuild from `data/` + `schema/`.
-- Every datum must retain source site, source URL, retrieval/verification state and third-party ID when available.
-- Randomly audit at least 60 segments before Pilot approval; playback-position checks must be real, not inferred from URL parameters.
-- Do not begin FULL_ARCHIVE merely because collection is technically possible. Pilot evidence must pass first.
-- Publicly accessible content only. Low request rate, caching, no bypass of login/CAPTCHA/paywall/access control/DRM.
-- Never commit full video, large audio, model weights, cache or FFmpeg intermediates.
-- Make stage-based commits and report actual checks/failures.
-- Distinguish SITE_ANALYSIS, PILOT, FULL_ARCHIVE and MAINTENANCE.
-- When user policy changes, update durable repo rules so later Agents inherit it.
-
-## Data-work rules for multiple agents
-
-Multiple agents are expected to work in parallel.
-
-- Work ownership is per task ID, never by vague area such as "I am doing GWINS".
-- Prefer source/year/batch partitioning for collection.
-- Avoid multiple Agents editing the same large JSONL file. Use independent batch files where possible.
-- Never silently overwrite another Agent's curated text, provenance, alignment result or review status.
-- Preserve conflicting claims and record them in `coordination/conflicts/`.
-- Collector work should preserve source candidates; canonical cross-source identity merges belong to identity/matching tasks unless the queue explicitly says otherwise.
-- If a task is completed, validate it and move to another task rather than redoing it.
-- If a claim appears stale, follow the takeover procedure in `coordination/README.md`; never simply overwrite the claim.
+- One livestream has one canonical internal `live_id` and may have many source records.
+- Preserve source provenance and conflicts; never silently overwrite them.
+- Preserve curated text and ASR separately.
+- Seconds are the primary media locator; frames are auxiliary only.
+- Every datum must remain traceable to source site, URL, retrieval/verification state, and third-party ID where available.
+- Publicly accessible content only; low request rates and caching; no bypass of login/CAPTCHA/paywall/access control/DRM.
+- Never commit full videos, large audio, model weights, cache, or FFmpeg intermediates.
+- Do not declare `FULL_ARCHIVE` merely because collection works. Final Pilot approval still requires the global quality gates, including the 60-segment real playback audit and approximately zero false merges.
 
 ## Definition of useful progress
 
-A useful Agent run should normally leave at least one durable artifact, for example:
+A useful Agent run should leave durable, source-backed output such as:
 
-- a verified site-structure finding;
-- a real livestream/source record;
-- real curated/ASR segment data with provenance;
-- schema/build/validation work required by real data;
-- a cross-source identity decision with evidence;
-- an audit result with playback evidence;
-- a documented conflict or missing-source finding with search scope;
-- a completed-task record pointing to the result commit.
+- one completed source collection case;
+- one per-live alignment result;
+- one real playback audit batch;
+- one conflict record;
+- one schema/build/validation fix required by real data;
+- one completed/readiness record that immediately unlocks downstream work.
 
-Pure planning with no durable output is not completion when real work was possible.
+Pure planning is not completion when an eligible executable task exists.
