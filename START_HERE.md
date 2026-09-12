@@ -22,7 +22,7 @@ After entering the repository, the Agent must determine everything else from Git
 - active claims;
 - currently eligible work;
 - task priority;
-- collection/alignment/audit rules;
+- collection/alignment/audit/playback rules;
 - source and naming rules;
 - quality gates;
 - continuous-worker behavior;
@@ -74,15 +74,48 @@ Read and follow, in order:
 9. `docs/CURRENT_TASK.md`
 10. `docs/PROJECT_REQUIREMENTS.md`
 11. `docs/NAMING_AND_WORKFLOW.md`
-12. current `claims/`, `completed/`, `ready/`, `bug_reports/`, data and reports relevant to the next task
+12. `docs/MEDIA_AUDIT.md`
+13. current `claims/`, `completed/`, `ready/`, `bug_reports/`, `playback_attempts/`, data and reports relevant to the next task
 
 Admin Agents should check open `coordination/bug_reports/` before ordinary business work when a bug blocks correctness or other Agents.
 
-Then immediately discover work with:
+## Work discovery has two coordinated queues
+
+First discover ordinary collection/alignment/source-audit work:
 
 ```bash
 python scripts/next_task.py --list
 ```
+
+Real decoded-media playback verification is a separate retryable queue:
+
+```bash
+python scripts/playback_queue.py --list
+```
+
+If the runtime has `ffmpeg` + `ffprobe` and can inspect generated clip/frame/audio evidence, playback-capable Agents should claim missing playback work with:
+
+```bash
+python scripts/playback_queue.py --claim --agent-id agent-<UTC>-<random>
+```
+
+Do **not** claim real playback work when the runtime cannot execute media tools or inspect the generated evidence. Transcript/source-page timestamp checking is not a substitute.
+
+An ordinary `S-AUDIT-*` task may finish with zero qualifying playback checks; that preserves useful source/timeline evidence but does not make the case complete for Pilot-60. Later playback-capable work adds durable records under `data/playback_audits/` without rewriting that history.
+
+`P9-AUDIT-60` is intentionally blocked by `P9-PLAYBACK-GATE`. The sentinel may be created only after:
+
+```bash
+python scripts/audit_gate.py --json
+```
+
+reports `pilot60_pass=true`, followed by:
+
+```bash
+python scripts/playback_queue.py --seal-gate --agent-id <agent-id>
+```
+
+Therefore 60 audit markers, 60 webpage timestamps, or 60 successful ffmpeg decodes without content inspection cannot unlock P9.
 
 Claim an eligible task, execute it, validate it, commit/push it, finish it, then claim the next eligible task.
 
@@ -97,16 +130,23 @@ For Agents using GitHub `create_file` directly:
 ```text
 create claim
    |
-   +-- success --> work
+   +-- success --> fetch exact claim --> verify owner --> work
    |
-   +-- HTTP 422 --> fetch exact claim path
-                       |
-                       +-- exists --> CLAIM_RACE_LOST --> refresh --> try another task
-                       |
-                       +-- absent --> fresh bounded retry --> only then consider GITHUB_WRITE_ERROR
+   +-- HTTP 422 or HTTP 409
+           |
+           +-- fetch exact claim path from fresh main
+                   |
+                   +-- exists --> CLAIM_RACE_LOST --> refresh --> try another task
+                   |
+                   +-- absent --> refresh main + task state
+                                  --> short backoff
+                                  --> bounded retry
+                                  --> only then consider GITHUB_WRITE_ERROR
 ```
 
-A single `422` MUST NOT stop the worker or produce "the execution chain must stop at the claim boundary".
+A `409` commonly means `main` moved between the read and write. It is a retryable branch race when the target claim is still absent; it is not permission to overwrite or force-push concurrent work.
+
+A single `422` or `409` MUST NOT stop the worker or produce "the execution chain must stop at the claim boundary".
 
 If another Agent won the claim race, do not overwrite the claim and do not touch that task's business data. Refresh state and claim another eligible task immediately.
 
