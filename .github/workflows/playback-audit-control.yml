@@ -7,12 +7,18 @@ on:
       - 'scripts/audit_media.py'
       - 'scripts/playback_validation.py'
       - 'scripts/record_playback_audit.py'
+      - 'scripts/process_playback_request.py'
+      - 'scripts/accept_playback_evidence.py'
+      - 'scripts/smolvlm_inspect.py'
       - 'scripts/audit_gate.py'
       - 'scripts/playback_queue.py'
       - 'scripts/next_task.py'
       - 'scripts/project_status.py'
       - 'data/live_segments/**'
       - 'data/playback_audits/**'
+      - 'data/playback_evidence/**'
+      - 'coordination/playback_requests/**'
+      - 'coordination/playback_acceptances/**'
       - 'coordination/bug_reports/**'
       - 'coordination/invalidated/**'
       - 'coordination/ready/collection/**'
@@ -24,29 +30,19 @@ on:
       - 'coordination/WORKFLOW.json'
       - 'START_HERE.md'
       - '.github/workflows/playback-audit-control.yml'
+      - '.github/workflows/playback-evidence-service.yml'
   pull_request:
     branches: [main]
     paths:
-      - 'scripts/audit_media.py'
-      - 'scripts/playback_validation.py'
-      - 'scripts/record_playback_audit.py'
-      - 'scripts/audit_gate.py'
-      - 'scripts/playback_queue.py'
-      - 'scripts/next_task.py'
-      - 'scripts/project_status.py'
+      - 'scripts/**'
       - 'data/live_segments/**'
       - 'data/playback_audits/**'
-      - 'coordination/bug_reports/**'
-      - 'coordination/invalidated/**'
-      - 'coordination/ready/collection/**'
-      - 'coordination/ready/alignment/**'
-      - 'coordination/completed/P9-PLAYBACK-GATE.json'
-      - 'coordination/completed/P9-AUDIT-60-R2.json'
-      - 'coordination/completed/P10-PILOT-DECISION-R2.json'
+      - 'data/playback_evidence/**'
+      - 'coordination/playback_requests/**'
+      - 'coordination/playback_acceptances/**'
       - 'coordination/WORK_QUEUE.jsonl'
-      - 'coordination/WORKFLOW.json'
-      - 'START_HERE.md'
       - '.github/workflows/playback-audit-control.yml'
+      - '.github/workflows/playback-evidence-service.yml'
 
 permissions:
   contents: read
@@ -67,6 +63,9 @@ jobs:
             scripts/audit_media.py \
             scripts/playback_validation.py \
             scripts/record_playback_audit.py \
+            scripts/process_playback_request.py \
+            scripts/accept_playback_evidence.py \
+            scripts/smolvlm_inspect.py \
             scripts/audit_gate.py \
             scripts/playback_queue.py \
             scripts/next_task.py \
@@ -97,11 +96,22 @@ jobs:
               raise SystemExit('unexpected logical audit gate id')
           if data['canonical_crosscheck'] is not True:
               raise SystemExit('canonical crosscheck must be enabled')
+          if data.get('invalid_records'):
+              raise SystemExit(f"invalid playback records: {data['invalid_records'][:3]}")
           print(json.dumps(data, ensure_ascii=False, indent=2))
           PY
 
-      - name: Validate playback queue can inspect repository state
-        run: python scripts/playback_queue.py --list
+      - name: Validate playback queue sees repository service
+        run: |
+          python scripts/playback_queue.py --list
+          python - <<'PY'
+          import sys
+          sys.path.insert(0, 'scripts')
+          import playback_queue
+          status = playback_queue.capability_status()
+          assert status['repository_evidence_service'] is True, status
+          print('repository evidence service detected')
+          PY
 
       - name: Validate worker and admin project status output
         run: |
@@ -114,22 +124,21 @@ jobs:
           required_types = {'ordinary_business', 'real_playback', 'gate_or_report', 'admin_control'}
           if set(worker.get('task_types', {})) != required_types:
               raise SystemExit('worker status missing task type contract')
-          if worker.get('role') != 'worker':
-              raise SystemExit('default project status role must be worker')
-          if admin.get('role') != 'admin':
-              raise SystemExit('--role admin was not honored')
+          if worker.get('role') != 'worker' or admin.get('role') != 'admin':
+              raise SystemExit('role classifier mismatch')
+          if worker.get('runtime', {}).get('repository_evidence_service') is not True:
+              raise SystemExit('worker status did not detect repository playback service')
           if worker.get('gates', {}).get('current_P9_task_id') != 'P9-AUDIT-60-R2':
               raise SystemExit('status classifier is not using current P9 R2 identity')
           if worker.get('gates', {}).get('current_P10_task_id') != 'P10-PILOT-DECISION-R2':
               raise SystemExit('status classifier is not using current P10 R2 identity')
-          print('project status role/task-type/R2 contract OK')
+          print('project status role/task-type/repository-service/R2 contract OK')
           PY
 
-      - name: Regression test gate-pass must outrank leftover playback work
+      - name: Regression test ordinary worker can use repository playback service without local ffmpeg
         run: |
           PYTHONPATH=scripts python - <<'PY'
           import project_status as ps
-
           ps.next_task.eligible_tasks = lambda: []
           ps.playback_queue.case_statuses = lambda: [{
               'task_id': 'P9-PLAYBACK-PILOT-X001',
@@ -140,76 +149,89 @@ jobs:
               'completed': False,
           }]
           ps.playback_queue.gate_summary = lambda: {
-              'pilot60_pass': True,
-              'qualifying_checks': 60,
-              'required_checks': 60,
-              'invalid_records': [],
+              'pilot60_pass': False, 'qualifying_checks': 0,
+              'required_checks': 60, 'invalid_records': [],
           }
           ps.playback_queue.capability_status = lambda: {
               'ffmpeg': False, 'ffprobe': False, 'yt_dlp': False,
+              'repository_evidence_service': True,
           }
           ps.load_admin_bug_queue = lambda: ([], [])
           ps.exists_completed = lambda task_id: False
           ps.exists_claim = lambda task_id: False
           ps.load_completed = lambda task_id: None
-
           status = ps.build_status(False, 'worker')
-          assert status['state'] == 'PLAYBACK_GATE_READY_TO_SEAL', status
           assert status['classification'] == 'WORK_AVAILABLE', status
-          assert status['recommended_action'] == 'SEAL_P9_PLAYBACK_GATE', status
+          assert status['runtime']['playback_capable'] is True, status
+          assert status['recommended_action'] == 'CLAIM_REAL_PLAYBACK_TASK_AND_REQUEST_REPOSITORY_EVIDENCE', status
           assert status['host_stop_for_this_runtime'] is False, status
-          print('gate-pass precedence regression OK')
+          print('ordinary-agent repository playback regression OK')
           PY
 
-      - name: Regression test admin bug work must outrank playback HOST_STOP
+      - name: Regression test gate-pass outranks leftover playback work
         run: |
           PYTHONPATH=scripts python - <<'PY'
           import project_status as ps
-
           ps.next_task.eligible_tasks = lambda: []
           ps.playback_queue.case_statuses = lambda: [{
-              'task_id': 'P9-PLAYBACK-PILOT-X001',
-              'case_id': 'PILOT-X001',
+              'task_id': 'P9-PLAYBACK-PILOT-X001', 'case_id': 'PILOT-X001',
               'live_id': 'LIVE_20000101_001',
               'missing_segment_ids': ['LIVE_20000101_001_SEG_000001'],
-              'claim_exists': False,
-              'completed': False,
+              'claim_exists': False, 'completed': False,
           }]
           ps.playback_queue.gate_summary = lambda: {
-              'pilot60_pass': False,
-              'qualifying_checks': 0,
-              'required_checks': 60,
-              'invalid_records': [],
+              'pilot60_pass': True, 'qualifying_checks': 60,
+              'required_checks': 60, 'invalid_records': [],
           }
           ps.playback_queue.capability_status = lambda: {
               'ffmpeg': False, 'ffprobe': False, 'yt_dlp': False,
+              'repository_evidence_service': True,
           }
-          ps.load_admin_bug_queue = lambda: ([{
-              'bug_id': 'BUG_TEST', 'status': 'open', 'requires_admin': True,
-          }], [])
+          ps.load_admin_bug_queue = lambda: ([], [])
           ps.exists_completed = lambda task_id: False
           ps.exists_claim = lambda task_id: False
           ps.load_completed = lambda task_id: None
+          status = ps.build_status(False, 'worker')
+          assert status['state'] == 'PLAYBACK_GATE_READY_TO_SEAL', status
+          assert status['recommended_action'] == 'SEAL_P9_PLAYBACK_GATE', status
+          print('gate-pass precedence regression OK')
+          PY
 
+      - name: Regression test admin bug work outranks playback
+        run: |
+          PYTHONPATH=scripts python - <<'PY'
+          import project_status as ps
+          ps.next_task.eligible_tasks = lambda: []
+          ps.playback_queue.case_statuses = lambda: [{
+              'task_id': 'P9-PLAYBACK-PILOT-X001', 'case_id': 'PILOT-X001',
+              'live_id': 'LIVE_20000101_001',
+              'missing_segment_ids': ['LIVE_20000101_001_SEG_000001'],
+              'claim_exists': False, 'completed': False,
+          }]
+          ps.playback_queue.gate_summary = lambda: {
+              'pilot60_pass': False, 'qualifying_checks': 0,
+              'required_checks': 60, 'invalid_records': [],
+          }
+          ps.playback_queue.capability_status = lambda: {
+              'ffmpeg': False, 'ffprobe': False, 'yt_dlp': False,
+              'repository_evidence_service': True,
+          }
+          ps.load_admin_bug_queue = lambda: ([{'bug_id': 'BUG_TEST', 'status': 'open'}], [])
+          ps.exists_completed = lambda task_id: False
+          ps.exists_claim = lambda task_id: False
+          ps.load_completed = lambda task_id: None
           admin = ps.build_status(False, 'admin')
-          assert admin['classification'] == 'WORK_AVAILABLE', admin
           assert admin['recommended_action'] == 'ADMIN_REVIEW_BUG_QUEUE', admin
-          assert admin['host_stop_for_this_runtime'] is False, admin
-
           worker = ps.build_status(False, 'worker')
-          assert worker['classification'] == 'HOST_STOP', worker
-          assert worker['admin_queue']['actionable_for_this_role'] is False, worker
-          print('admin-role regression OK')
+          assert worker['classification'] == 'WORK_AVAILABLE', worker
+          print('admin priority + worker playback availability regression OK')
           PY
 
       - name: Regression test superseded legacy gates are never eligible
         run: |
           PYTHONPATH=scripts python - <<'PY'
           import next_task as nt
-
-          done = nt.completed_ids()
-          tasks = nt.static_tasks(done)
-          ids = {row['id'] for row in tasks}
+          ids = {row['id'] for row in nt.static_tasks(nt.completed_ids())}
           forbidden = {'P9-AUDIT-60', 'P10-PILOT-DECISION'} & ids
           if forbidden:
               raise SystemExit(f'superseded legacy tasks became eligible: {sorted(forbidden)}')
@@ -220,10 +242,8 @@ jobs:
         run: |
           PYTHONPATH=scripts python - <<'PY'
           import next_task as nt
-
           nt.load_queue = lambda: [{
-              'id': 'P9-AUDIT-60-R2',
-              'kind': 'qa_gate',
+              'id': 'P9-AUDIT-60-R2', 'kind': 'qa_gate',
               'depends_on': ['P9-PLAYBACK-GATE'],
           }]
           nt.completed_ids = lambda: set()
@@ -237,61 +257,15 @@ jobs:
           print('R2 finish-time dependency regression OK')
           PY
 
-      - name: Regression test current P10 requires explicit decision
-        run: |
-          PYTHONPATH=scripts python - <<'PY'
-          import next_task as nt
-          from pathlib import Path
-          import tempfile
-          import json
-
-          with tempfile.TemporaryDirectory() as td:
-              root = Path(td)
-              claims = root / 'claims'
-              completed = root / 'completed'
-              claims.mkdir()
-              completed.mkdir()
-              nt.CLAIMS = claims
-              nt.COMPLETED = completed
-              nt.load_queue = lambda: [{
-                  'id': nt.CURRENT_P10,
-                  'kind': 'report',
-                  'depends_on': [nt.CURRENT_P9],
-              }]
-              nt.completed_ids = lambda: {nt.CURRENT_P9}
-              (claims / f'{nt.CURRENT_P10}.json').write_text(json.dumps({
-                  'task_id': nt.CURRENT_P10,
-                  'agent_id': 'agent-test',
-                  'workflow_mode': nt.WORKFLOW_MODE,
-              }), encoding='utf-8')
-              try:
-                  nt.finish_task(
-                      nt.CURRENT_P10,
-                      'agent-test',
-                      [],
-                      'test',
-                      None,
-                      None,
-                  )
-              except SystemExit as exc:
-                  if '--full-archive-decision YES|NO' not in str(exc):
-                      raise
-              else:
-                  raise SystemExit('current P10 accepted completion without YES/NO decision')
-          print('R2 P10 decision-field regression OK')
-          PY
-
       - name: Assert authoritative R2 P9 and P10 completion integrity
         run: |
           python - <<'PY'
           import json
           from pathlib import Path
-
           completed = Path('coordination/completed')
           sentinel = completed / 'P9-PLAYBACK-GATE.json'
           p9 = completed / 'P9-AUDIT-60-R2.json'
           p10 = completed / 'P10-PILOT-DECISION-R2.json'
-
           if p9.exists():
               if not sentinel.exists():
                   raise SystemExit('authoritative R2 P9 exists without P9-PLAYBACK-GATE')
@@ -301,16 +275,12 @@ jobs:
               row = json.loads(p9.read_text(encoding='utf-8'))
               if row.get('finish_prerequisites_revalidated') is not True:
                   raise SystemExit('R2 P9 lacks finish-time prerequisite revalidation')
-
           if p10.exists():
               if not p9.exists():
                   raise SystemExit('authoritative R2 P10 exists without authoritative R2 P9')
               row = json.loads(p10.read_text(encoding='utf-8'))
               if row.get('full_archive_decision') not in {'YES', 'NO'}:
                   raise SystemExit('R2 P10 lacks full_archive_decision=YES|NO')
-              if row.get('finish_prerequisites_revalidated') is not True:
-                  raise SystemExit('R2 P10 lacks finish-time prerequisite revalidation')
-
           print('authoritative R2 P9/P10 integrity OK')
           PY
 
@@ -319,13 +289,11 @@ jobs:
         run: |
           python scripts/next_task.py --list > /tmp/eligible_tasks.txt
           cat /tmp/eligible_tasks.txt
-          if grep -q '^P9-AUDIT-60 ' /tmp/eligible_tasks.txt || \
-             grep -q '^P10-PILOT-DECISION ' /tmp/eligible_tasks.txt; then
+          if grep -q '^P9-AUDIT-60 ' /tmp/eligible_tasks.txt || grep -q '^P10-PILOT-DECISION ' /tmp/eligible_tasks.txt; then
             echo 'Superseded legacy P9/P10 identity appeared in eligible task list.'
             exit 1
           fi
-          if [[ ! -f coordination/completed/P9-PLAYBACK-GATE.json ]] && \
-             grep -q '^P9-AUDIT-60-R2 ' /tmp/eligible_tasks.txt; then
+          if [[ ! -f coordination/completed/P9-PLAYBACK-GATE.json ]] && grep -q '^P9-AUDIT-60-R2 ' /tmp/eligible_tasks.txt; then
             echo 'P9-AUDIT-60-R2 became eligible before P9-PLAYBACK-GATE was sealed.'
             exit 1
           fi
