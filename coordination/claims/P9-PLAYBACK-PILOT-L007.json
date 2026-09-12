@@ -1,0 +1,20 @@
+{
+  "task_id": "P9-PLAYBACK-PILOT-L007",
+  "agent_id": "agent-20260913-admin-playback-smoke",
+  "claimed_at": "2026-09-12T17:55:00Z",
+  "status": "in_progress",
+  "kind": "real_playback_audit",
+  "case_id": "PILOT-L007",
+  "live_id": "LIVE_20230310_001",
+  "missing_segment_ids": [
+    "LIVE_20230310_001_SEG_000000",
+    "LIVE_20230310_001_SEG_000001"
+  ],
+  "execution_mode": "repository_evidence_service_v1",
+  "repository_evidence_service": true,
+  "local_content_inspection_capable": false,
+  "workflow_mode": "continuous-worker-v2",
+  "claim_protocol": "claim-protocol-v2",
+  "continue_after_finish": true,
+  "scope": "Smoke-test the ordinary-Agent repository Playback Evidence Service on the first canonical timed segment, without treating service failure as qualifying evidence."
+}
