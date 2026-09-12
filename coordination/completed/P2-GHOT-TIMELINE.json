@@ -1,0 +1,9 @@
+{
+  "task_id": "P2-GHOT-TIMELINE",
+  "agent_id": "agent-20260912T152400Z-gpt56sol",
+  "completed_at": "2026-09-12T15:31:00Z",
+  "result_commit": "e5318b970f39b193311c097d9ec837e58fa9e66d",
+  "outputs": ["docs/GHOT_TIMELINE_ANALYSIS.md"],
+  "validation": "Checked multiple real GHOT transcript pages from 2017-2023 plus a known noisy 2020 edge case; verified whole-second variable transcript anchors, clickable timing semantics, selected-clips page with original-video time anchors, missing/no-transcript states, and material ASR-quality variation. No sub-second or unobserved end times were invented.",
+  "notes": "GHOT passes for Pilot use as a candidate timing scaffold, not as automatically trusted final timing; actual playback accuracy remains for P9 audit."
+}
