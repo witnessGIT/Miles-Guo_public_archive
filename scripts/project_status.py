@@ -18,26 +18,20 @@ CURRENT_P10 = "P10-PILOT-DECISION-R2"
 LEGACY_P9 = "P9-AUDIT-60"
 LEGACY_P10 = "P10-PILOT-DECISION"
 
-GATE_OR_REPORT_KINDS = {
-    "alignment_gate",
-    "database_gate",
-    "qa_gate",
-    "report",
-}
+GATE_OR_REPORT_KINDS = {"alignment_gate", "database_gate", "qa_gate", "report"}
 CLOSED_BUG_STATUSES = {"resolved", "closed", "dismissed", "fixed"}
 
 TASK_TYPES = {
     "ordinary_business": (
-        "collection/alignment/source/transcript/data tasks that do not require real "
-        "decoded-media inspection unless explicitly stated"
+        "collection/alignment/source/transcript/data tasks that do not require real decoded-media inspection"
     ),
     "real_playback": (
-        "P9-PLAYBACK-* timing checks requiring ffmpeg+ffprobe plus actual inspection "
-        "of decoded clip/frame/audio and an observed content position"
+        "P9-PLAYBACK-* tasks. Preferred path uses the repository Playback Evidence Service: "
+        "GitHub Actions performs ffmpeg/ffprobe decoding, offline Whisper ASR and frame OCR, "
+        "then the worker reads durable evidence and submits acceptance. Local media tools are optional."
     ),
     "gate_or_report": (
-        "current aggregate gates/reports including P9-AUDIT-60-R2 and "
-        "P10-PILOT-DECISION-R2; no media replay is required once prerequisites pass"
+        "current aggregate gates/reports including P9-AUDIT-60-R2 and P10-PILOT-DECISION-R2"
     ),
     "admin_control": (
         "bug repair/control-plane/schema/CI/workflow maintenance; authorized admin only"
@@ -69,7 +63,6 @@ def exists_claim(task_id: str) -> bool:
 
 
 def normalize_full_archive_decision(record: dict | None) -> str | None:
-    """Return YES/NO only for the explicit current R2 decision field."""
     if not record:
         return None
     value = record.get("full_archive_decision")
@@ -94,7 +87,6 @@ def load_admin_bug_queue() -> tuple[list[dict], list[str]]:
     invalid: list[str] = []
     if not BUG_REPORTS.exists():
         return open_reports, invalid
-
     for path in sorted(BUG_REPORTS.glob("*.json")):
         try:
             row = json.loads(path.read_text(encoding="utf-8"))
@@ -107,17 +99,15 @@ def load_admin_bug_queue() -> tuple[list[dict], list[str]]:
         status = str(row.get("status") or "open").strip().lower()
         if status in CLOSED_BUG_STATUSES:
             continue
-        open_reports.append(
-            {
-                "bug_id": str(row.get("bug_id") or path.stem),
-                "status": status,
-                "severity": row.get("severity"),
-                "category": row.get("category"),
-                "summary": row.get("summary"),
-                "requires_admin": row.get("requires_admin", True) is not False,
-                "path": str(path.relative_to(ROOT)),
-            }
-        )
+        open_reports.append({
+            "bug_id": str(row.get("bug_id") or path.stem),
+            "status": status,
+            "severity": row.get("severity"),
+            "category": row.get("category"),
+            "summary": row.get("summary"),
+            "requires_admin": row.get("requires_admin", True) is not False,
+            "path": str(path.relative_to(ROOT)),
+        })
     return open_reports, invalid
 
 
@@ -133,12 +123,7 @@ def build_status(content_inspection_capable: bool, role: str = "worker") -> dict
     playback_rows = playback_queue.case_statuses()
     gate = playback_queue.gate_summary()
     tools = playback_queue.capability_status()
-
-    playback_open = [
-        row
-        for row in playback_rows
-        if row.get("missing_segment_ids") and not row.get("completed")
-    ]
+    playback_open = [row for row in playback_rows if row.get("missing_segment_ids") and not row.get("completed")]
     playback_unclaimed = [row for row in playback_open if not row.get("claim_exists")]
     playback_claimed = [row for row in playback_open if row.get("claim_exists")]
 
@@ -146,8 +131,10 @@ def build_status(content_inspection_capable: bool, role: str = "worker") -> dict
     admin_queue_has_work = bool(open_bug_reports or invalid_bug_reports)
     admin_work_available = bool(role == "admin" and admin_queue_has_work)
 
-    runtime_media_tools = bool(tools.get("ffmpeg") and tools.get("ffprobe"))
-    runtime_playback_capable = bool(runtime_media_tools and content_inspection_capable)
+    local_media_tools = bool(tools.get("ffmpeg") and tools.get("ffprobe"))
+    local_playback_capable = bool(local_media_tools and content_inspection_capable)
+    repository_playback_service = bool(tools.get("repository_evidence_service"))
+    playback_execution_available = bool(repository_playback_service or local_playback_capable)
 
     playback_gate_completed = exists_completed("P9-PLAYBACK-GATE")
     current_p9_record = load_completed(CURRENT_P9)
@@ -155,42 +142,25 @@ def build_status(content_inspection_capable: bool, role: str = "worker") -> dict
     current_p9_completed = current_p9_record is not None
     current_p10_completed = current_p10_record is not None
     current_p10_claimed = exists_claim(CURRENT_P10)
-
     legacy_p9_present = exists_completed(LEGACY_P9)
     legacy_p10_present = exists_completed(LEGACY_P10)
-
     full_archive_decision = normalize_full_archive_decision(current_p10_record)
-    full_archive_authorized = bool(
-        current_p10_completed and full_archive_decision == "YES"
-    )
+    full_archive_authorized = bool(current_p10_completed and full_archive_decision == "YES")
 
     pilot60_pass = bool(gate.get("pilot60_pass"))
-    playback_gate_action_available = bool(
-        pilot60_pass and not playback_gate_completed
-    )
+    playback_gate_action_available = bool(pilot60_pass and not playback_gate_completed)
 
-    session_non_playback_work = bool(
-        ordinary or admin_work_available or playback_gate_action_available
-    )
-    session_playback_work = bool(
-        runtime_playback_capable and playback_unclaimed
-    )
-    session_work_available = bool(
-        session_non_playback_work or session_playback_work
-    )
+    session_non_playback_work = bool(ordinary or admin_work_available or playback_gate_action_available)
+    session_playback_work = bool(playback_execution_available and playback_unclaimed)
+    session_work_available = bool(session_non_playback_work or session_playback_work)
 
-    repository_has_work = bool(
-        ordinary
-        or playback_open
-        or admin_queue_has_work
-        or playback_gate_action_available
-    )
+    repository_has_work = bool(ordinary or playback_open or admin_queue_has_work or playback_gate_action_available)
     repository_no_eligible_work = not repository_has_work
 
     host_stop = bool(
         not session_work_available
         and playback_unclaimed
-        and not runtime_playback_capable
+        and not playback_execution_available
         and not pilot60_pass
         and not playback_gate_completed
     )
@@ -245,8 +215,10 @@ def build_status(content_inspection_capable: bool, role: str = "worker") -> dict
         recommended_action = "CLAIM_GATE_OR_REPORT_TASK"
     elif ordinary_business:
         recommended_action = "CLAIM_ORDINARY_BUSINESS_TASK"
+    elif session_playback_work and repository_playback_service:
+        recommended_action = "CLAIM_REAL_PLAYBACK_TASK_AND_REQUEST_REPOSITORY_EVIDENCE"
     elif session_playback_work:
-        recommended_action = "CLAIM_REAL_PLAYBACK_TASK"
+        recommended_action = "CLAIM_REAL_PLAYBACK_TASK_LOCAL_FALLBACK"
     elif host_stop:
         recommended_action = "HOST_STOP_FOR_THIS_RUNTIME_ONLY"
     elif role_stop:
@@ -272,7 +244,9 @@ def build_status(content_inspection_capable: bool, role: str = "worker") -> dict
             "ffprobe": bool(tools.get("ffprobe")),
             "yt_dlp": bool(tools.get("yt_dlp")),
             "content_inspection_capable_declared": content_inspection_capable,
-            "playback_capable": runtime_playback_capable,
+            "local_playback_capable": local_playback_capable,
+            "repository_evidence_service": repository_playback_service,
+            "playback_capable": playback_execution_available,
         },
         "ordinary_queue": {
             "eligible_count": len(ordinary),
@@ -287,9 +261,8 @@ def build_status(content_inspection_capable: bool, role: str = "worker") -> dict
             "unclaimed_case_count": len(playback_unclaimed),
             "claimed_case_count": len(playback_claimed),
             "open_task_ids": [row.get("task_id") for row in playback_open],
-            "claimable_by_this_runtime": bool(
-                runtime_playback_capable and playback_unclaimed
-            ),
+            "claimable_by_this_runtime": bool(playback_execution_available and playback_unclaimed),
+            "preferred_execution_mode": "repository_evidence_service_v1" if repository_playback_service else "local_manual_v1",
         },
         "admin_queue": {
             "open_bug_count": len(open_bug_reports),
@@ -321,6 +294,9 @@ def build_status(content_inspection_capable: bool, role: str = "worker") -> dict
         "rules": {
             "legacy_audit_markers_count_toward_pilot60": False,
             "decode_without_content_inspection_counts_toward_pilot60": False,
+            "repository_decoded_evidence_plus_worker_acceptance_can_count": True,
+            "ordinary_agent_local_ffmpeg_required": False,
+            "repository_playback_service_preferred": True,
             "legacy_P9_P10_completions_count_as_current": False,
             "superseded_legacy_gate_tasks_claimable": False,
             "current_p9_requires_playback_gate": True,
@@ -341,91 +317,69 @@ def print_human(status: dict) -> None:
     print(f"State: {status['state']}")
     print(f"Classification: {status['classification']}")
     print(f"Recommended action: {status['recommended_action']}")
-
     ordinary = status["ordinary_queue"]
     print(
         f"Ordinary queue: {ordinary['eligible_count']} eligible "
-        f"({ordinary['business_eligible_count']} business, "
-        f"{ordinary['gate_or_report_eligible_count']} gate/report)"
+        f"({ordinary['business_eligible_count']} business, {ordinary['gate_or_report_eligible_count']} gate/report)"
+    )
+    playback = status["playback_queue"]
+    print(
+        f"Playback queue: {playback['open_case_count']} open "
+        f"({playback['unclaimed_case_count']} unclaimed, {playback['claimed_case_count']} claimed), "
+        f"mode={playback['preferred_execution_mode']}"
     )
     print(
-        "Playback queue: "
-        f"{status['playback_queue']['open_case_count']} open "
-        f"({status['playback_queue']['unclaimed_case_count']} unclaimed, "
-        f"{status['playback_queue']['claimed_case_count']} claimed)"
-    )
-    print(
-        "Admin queue: "
-        f"{status['admin_queue']['open_bug_count']} open bugs, "
+        f"Admin queue: {status['admin_queue']['open_bug_count']} open bugs, "
         f"{status['admin_queue']['invalid_bug_report_count']} invalid reports, "
         f"actionable-for-role={status['admin_queue']['actionable_for_this_role']}"
     )
     print(
-        "Pilot-60: "
-        f"{status['pilot60']['qualifying_checks']}/"
-        f"{status['pilot60']['required_checks']} "
+        f"Pilot-60: {status['pilot60']['qualifying_checks']}/{status['pilot60']['required_checks']} "
         f"pass={status['pilot60']['pilot60_pass']}"
     )
-
     runtime = status["runtime"]
     print(
-        "Runtime: "
-        f"ffmpeg={runtime['ffmpeg']} ffprobe={runtime['ffprobe']} "
-        f"yt-dlp={runtime['yt_dlp']} "
-        f"content-inspection-declared={runtime['content_inspection_capable_declared']} "
-        f"playback-capable={runtime['playback_capable']}"
+        "Playback capability: "
+        f"repository-service={runtime['repository_evidence_service']} "
+        f"local-ffmpeg={runtime['ffmpeg']} local-ffprobe={runtime['ffprobe']} "
+        f"local-inspection-declared={runtime['content_inspection_capable_declared']} "
+        f"effective-playback-capable={runtime['playback_capable']}"
     )
-
     gates = status["gates"]
     print(
         "Gates: "
         f"P9-PLAYBACK-GATE={gates['P9_PLAYBACK_GATE_completed']} "
-        f"CURRENT_P9={gates['current_P9_completed']} "
-        f"CURRENT_P10={gates['current_P10_completed']} "
+        f"CURRENT_P9={gates['current_P9_completed']} CURRENT_P10={gates['current_P10_completed']} "
         f"CURRENT_P10_DECISION={gates['current_P10_full_archive_decision'] or 'UNRECORDED'} "
         f"FULL_ARCHIVE_AUTHORIZED={gates['full_archive_authorized']}"
     )
     if gates["legacy_P9_record_present"] or gates["legacy_P10_record_present"]:
-        print(
-            "Legacy P9/P10 completion records are present for audit history only; "
-            "they do not satisfy the current R2 acceptance chain."
-        )
+        print("Legacy P9/P10 records are audit history only; they do not satisfy the R2 chain.")
     if status["host_stop_for_this_runtime"]:
         print(
-            "HOST_STOP: project playback work remains, but this runtime cannot honestly "
-            "perform decoded-media content inspection. This is not repository-wide "
-            "NO_ELIGIBLE_WORK."
-        )
-    if gates["P9_PLAYBACK_GATE_ready_to_seal"]:
-        print(
-            "Pilot-60 already passes. Remaining optional playback cases do not block the "
-            "R2 acceptance path; seal P9-PLAYBACK-GATE and continue to current P9/P10."
+            "HOST_STOP: playback work remains but neither the repository evidence service nor "
+            "a valid local decoded-content path is available."
         )
 
 
 def main() -> int:
     parser = argparse.ArgumentParser(
         description=(
-            "Classify Miles-Guo_public_archive work by current acceptance revision, "
-            "task type, Agent role, runtime capability, and Pilot gate state."
+            "Classify Miles-Guo_public_archive work by acceptance revision, Agent role, "
+            "repository services, runtime capability, and Pilot gate state."
         )
     )
     parser.add_argument("--json", action="store_true")
-    parser.add_argument(
-        "--role",
-        choices=["worker", "admin"],
-        default="worker",
-    )
+    parser.add_argument("--role", choices=["worker", "admin"], default="worker")
     parser.add_argument(
         "--content-inspection-capable",
         action="store_true",
         help=(
-            "Declare that this runtime can actually inspect decoded clip/frame/audio "
-            "content and determine observed content position."
+            "Optional local-manual fallback declaration. Ordinary Agents do not need this "
+            "when the repository Playback Evidence Service is available."
         ),
     )
     args = parser.parse_args()
-
     status = build_status(args.content_inspection_capable, args.role)
     if args.json:
         print(json.dumps(status, ensure_ascii=False, indent=2))
