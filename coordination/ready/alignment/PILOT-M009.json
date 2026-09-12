@@ -1,0 +1,13 @@
+{
+  "project": "Miles-Guo_public_archive",
+  "pilot_case_id": "PILOT-M009",
+  "live_id": "LIVE_20211124_001",
+  "stage": "alignment",
+  "ready": true,
+  "agent_id": "agent-20260913T000000Z-sol-e001",
+  "marked_at": "2026-09-13T00:55:00Z",
+  "result_commit": "4f4118edc0b04062e798e70c4350ca6566b46bce",
+  "outputs": ["data/live_segments/alignment/LIVE_20211124_001.jsonl"],
+  "validation": "The tracked source warns of noisy pre-roll before the livestream greeting around 18:13. Preserved only the post-pre-roll public GHOT anchors at 18:13, 18:23 and 18:26; no global/canonical offset was inferred. GWINS per-item identity remains unresolved in tracked data, so curated provenance was not asserted. end_sec, scores, FPS/frame data and playback verification remain unset/unverified.",
+  "notes": "Post-pre-roll ASR timing scaffold; downstream real playback audit remains required."
+}
