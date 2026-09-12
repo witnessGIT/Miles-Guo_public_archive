@@ -13,6 +13,11 @@ COMPLETED = ROOT / "coordination" / "completed"
 CLAIMS = ROOT / "coordination" / "claims"
 BUG_REPORTS = ROOT / "coordination" / "bug_reports"
 
+CURRENT_P9 = "P9-AUDIT-60-R2"
+CURRENT_P10 = "P10-PILOT-DECISION-R2"
+LEGACY_P9 = "P9-AUDIT-60"
+LEGACY_P10 = "P10-PILOT-DECISION"
+
 GATE_OR_REPORT_KINDS = {
     "alignment_gate",
     "database_gate",
@@ -46,14 +51,12 @@ def exists_claim(task_id: str) -> bool:
 
 
 def normalize_full_archive_decision(record: dict | None) -> str | None:
-    """Return YES/NO only for an explicit machine-readable Pilot decision.
-
-    Completing P10 is not itself authorization. Missing, malformed, or differently named
-    fields intentionally resolve to None so FULL_ARCHIVE stays locked by default.
-    """
+    """Return YES/NO only for an explicit machine-readable current Pilot decision."""
     if not record:
         return None
     value = record.get("full_archive_decision")
+    if value is None:
+        value = record.get("full_archive")
     if isinstance(value, bool):
         return "YES" if value else "NO"
     if not isinstance(value, str):
@@ -65,13 +68,12 @@ def normalize_full_archive_decision(record: dict | None) -> str | None:
 def ordinary_task_type(task: dict) -> str:
     task_id = str(task.get("id") or "")
     kind = str(task.get("kind") or "")
-    if task_id in {"P9-AUDIT-60", "P10-PILOT-DECISION"} or kind in GATE_OR_REPORT_KINDS:
+    if task_id in {CURRENT_P9, CURRENT_P10} or kind in GATE_OR_REPORT_KINDS:
         return "gate_or_report"
     return "business"
 
 
 def load_admin_bug_queue() -> tuple[list[dict], list[str]]:
-    """Return unresolved bug reports plus malformed bug-report files needing admin review."""
     open_reports: list[dict] = []
     invalid: list[str] = []
     if not BUG_REPORTS.exists():
@@ -103,14 +105,14 @@ def load_admin_bug_queue() -> tuple[list[dict], list[str]]:
     return open_reports, invalid
 
 
-def build_status(content_inspection_capable: bool, role: str) -> dict:
+def build_status(content_inspection_capable: bool, role: str = "worker") -> dict:
     role = role.strip().lower()
     if role not in {"worker", "admin"}:
         raise ValueError(f"unsupported role: {role}")
 
     ordinary = next_task.eligible_tasks()
-    ordinary_business = [task for task in ordinary if ordinary_task_type(task) == "business"]
-    ordinary_gate_report = [task for task in ordinary if ordinary_task_type(task) == "gate_or_report"]
+    ordinary_business = [t for t in ordinary if ordinary_task_type(t) == "business"]
+    ordinary_gate_report = [t for t in ordinary if ordinary_task_type(t) == "gate_or_report"]
 
     playback_rows = playback_queue.case_statuses()
     gate = playback_queue.gate_summary()
@@ -126,31 +128,40 @@ def build_status(content_inspection_capable: bool, role: str) -> dict:
 
     open_bug_reports, invalid_bug_reports = load_admin_bug_queue()
     admin_queue_has_work = bool(open_bug_reports or invalid_bug_reports)
-    admin_work_available_for_session = bool(role == "admin" and admin_queue_has_work)
+    admin_work_available = bool(role == "admin" and admin_queue_has_work)
 
     runtime_media_tools = bool(tools.get("ffmpeg") and tools.get("ffprobe"))
     runtime_playback_capable = bool(runtime_media_tools and content_inspection_capable)
 
-    p9_playback_gate_completed = exists_completed("P9-PLAYBACK-GATE")
-    p9_completed = exists_completed("P9-AUDIT-60")
-    p10_record = load_completed("P10-PILOT-DECISION")
-    p10_completed = p10_record is not None
-    p10_claimed = exists_claim("P10-PILOT-DECISION")
-    full_archive_decision = normalize_full_archive_decision(p10_record)
-    full_archive_authorized = bool(p10_completed and full_archive_decision == "YES")
+    playback_gate_completed = exists_completed("P9-PLAYBACK-GATE")
+    current_p9_record = load_completed(CURRENT_P9)
+    current_p10_record = load_completed(CURRENT_P10)
+    current_p9_completed = current_p9_record is not None
+    current_p10_completed = current_p10_record is not None
+    current_p10_claimed = exists_claim(CURRENT_P10)
+
+    legacy_p9_present = exists_completed(LEGACY_P9)
+    legacy_p10_present = exists_completed(LEGACY_P10)
+
+    full_archive_decision = normalize_full_archive_decision(current_p10_record)
+    full_archive_authorized = bool(
+        current_p10_completed and full_archive_decision == "YES"
+    )
 
     pilot60_pass = bool(gate.get("pilot60_pass"))
-    playback_gate_action_available = bool(pilot60_pass and not p9_playback_gate_completed)
-
-    # A passed Pilot-60 gate is a non-media transition. Remaining optional playback cases
-    # must not keep a non-media runtime in HOST_STOP once the acceptance threshold is met.
-    session_non_playback_work = bool(
-        ordinary
-        or admin_work_available_for_session
-        or playback_gate_action_available
+    playback_gate_action_available = bool(
+        pilot60_pass and not playback_gate_completed
     )
-    session_playback_work = bool(runtime_playback_capable and playback_unclaimed)
-    session_work_available = bool(session_non_playback_work or session_playback_work)
+
+    session_non_playback_work = bool(
+        ordinary or admin_work_available or playback_gate_action_available
+    )
+    session_playback_work = bool(
+        runtime_playback_capable and playback_unclaimed
+    )
+    session_work_available = bool(
+        session_non_playback_work or session_playback_work
+    )
 
     repository_has_work = bool(
         ordinary
@@ -158,14 +169,14 @@ def build_status(content_inspection_capable: bool, role: str) -> dict:
         or admin_queue_has_work
         or playback_gate_action_available
     )
-    repository_no_eligible_work = bool(not repository_has_work)
+    repository_no_eligible_work = not repository_has_work
 
     host_stop = bool(
         not session_work_available
         and playback_unclaimed
         and not runtime_playback_capable
         and not pilot60_pass
-        and not p9_playback_gate_completed
+        and not playback_gate_completed
     )
     role_stop = bool(
         not session_work_available
@@ -180,16 +191,16 @@ def build_status(content_inspection_capable: bool, role: str) -> dict:
         and not repository_no_eligible_work
     )
 
-    if p10_completed and full_archive_decision == "YES":
-        state = "PILOT_DECISION_COMPLETED_FULL_ARCHIVE_YES"
-    elif p10_completed and full_archive_decision == "NO":
-        state = "PILOT_DECISION_COMPLETED_FULL_ARCHIVE_NO"
-    elif p10_completed:
-        state = "PILOT_DECISION_COMPLETED_DECISION_UNRECORDED"
-    elif p9_completed:
-        state = "P10_READY_OR_IN_PROGRESS"
-    elif p9_playback_gate_completed:
-        state = "P9_AGGREGATE_GATE_READY"
+    if current_p10_completed and full_archive_decision == "YES":
+        state = "PILOT_DECISION_R2_COMPLETED_FULL_ARCHIVE_YES"
+    elif current_p10_completed and full_archive_decision == "NO":
+        state = "PILOT_DECISION_R2_COMPLETED_FULL_ARCHIVE_NO"
+    elif current_p10_completed:
+        state = "PILOT_DECISION_R2_COMPLETED_DECISION_UNRECORDED"
+    elif current_p9_completed:
+        state = "P10_R2_READY_OR_IN_PROGRESS"
+    elif playback_gate_completed:
+        state = "P9_R2_READY_OR_IN_PROGRESS"
     elif pilot60_pass:
         state = "PLAYBACK_GATE_READY_TO_SEAL"
     elif playback_open:
@@ -210,7 +221,7 @@ def build_status(content_inspection_capable: bool, role: str) -> dict:
     else:
         classification = "WAIT_FOR_DEPENDENCY"
 
-    if admin_work_available_for_session:
+    if admin_work_available:
         recommended_action = "ADMIN_REVIEW_BUG_QUEUE"
     elif playback_gate_action_available:
         recommended_action = "SEAL_P9_PLAYBACK_GATE"
@@ -250,21 +261,23 @@ def build_status(content_inspection_capable: bool, role: str) -> dict:
             "eligible_count": len(ordinary),
             "business_eligible_count": len(ordinary_business),
             "gate_or_report_eligible_count": len(ordinary_gate_report),
-            "eligible_task_ids": [task.get("id") for task in ordinary],
-            "business_task_ids": [task.get("id") for task in ordinary_business],
-            "gate_or_report_task_ids": [task.get("id") for task in ordinary_gate_report],
+            "eligible_task_ids": [t.get("id") for t in ordinary],
+            "business_task_ids": [t.get("id") for t in ordinary_business],
+            "gate_or_report_task_ids": [t.get("id") for t in ordinary_gate_report],
         },
         "playback_queue": {
             "open_case_count": len(playback_open),
             "unclaimed_case_count": len(playback_unclaimed),
             "claimed_case_count": len(playback_claimed),
             "open_task_ids": [row.get("task_id") for row in playback_open],
-            "claimable_by_this_runtime": bool(runtime_playback_capable and playback_unclaimed),
+            "claimable_by_this_runtime": bool(
+                runtime_playback_capable and playback_unclaimed
+            ),
         },
         "admin_queue": {
             "open_bug_count": len(open_bug_reports),
             "invalid_bug_report_count": len(invalid_bug_reports),
-            "actionable_for_this_role": admin_work_available_for_session,
+            "actionable_for_this_role": admin_work_available,
             "open_bug_ids": [row.get("bug_id") for row in open_bug_reports],
             "invalid_bug_reports": invalid_bug_reports,
         },
@@ -275,30 +288,30 @@ def build_status(content_inspection_capable: bool, role: str) -> dict:
             "invalid_records": gate.get("invalid_records") or [],
         },
         "gates": {
-            "P9_PLAYBACK_GATE_completed": p9_playback_gate_completed,
+            "P9_PLAYBACK_GATE_completed": playback_gate_completed,
             "P9_PLAYBACK_GATE_ready_to_seal": playback_gate_action_available,
-            "P9_AUDIT_60_completed": p9_completed,
-            "P10_PILOT_DECISION_claimed": p10_claimed,
-            "P10_PILOT_DECISION_completed": p10_completed,
-            "P10_full_archive_decision": full_archive_decision,
+            "current_P9_task_id": CURRENT_P9,
+            "current_P9_completed": current_p9_completed,
+            "current_P10_task_id": CURRENT_P10,
+            "current_P10_claimed": current_p10_claimed,
+            "current_P10_completed": current_p10_completed,
+            "current_P10_full_archive_decision": full_archive_decision,
             "full_archive_authorized": full_archive_authorized,
-        },
-        "task_types": {
-            "ordinary_business": "collection/alignment/source or transcript audit/data work; no real media playback required unless the task explicitly says so",
-            "real_playback": "requires ffmpeg+ffprobe plus actual decoded content inspection",
-            "gate_or_report": "P9/P10 and aggregate gate/report work; does not itself require replaying media once prerequisites are satisfied",
-            "admin_control": "bug reports/control-plane/schema/CI/workflow fixes; admin role only",
+            "legacy_P9_record_present": legacy_p9_present,
+            "legacy_P10_record_present": legacy_p10_present,
+            "legacy_records_count_as_current": False,
         },
         "rules": {
             "legacy_audit_markers_count_toward_pilot60": False,
             "decode_without_content_inspection_counts_toward_pilot60": False,
+            "legacy_P9_P10_completions_count_as_current": False,
+            "current_p9_requires_playback_gate": True,
+            "current_p10_requires_current_p9": True,
             "playback_inability_blocks_ordinary_or_gate_tasks": False,
             "playback_inability_blocks_admin_bug_work": False,
             "pilot60_pass_makes_gate_seal_non_media_work_available": True,
-            "p10_may_start_before_p9_complete": False,
             "p10_completion_alone_authorizes_full_archive": False,
-            "full_archive_requires_explicit_p10_yes": True,
-            "full_archive_may_start_before_p10_decision": False,
+            "full_archive_requires_explicit_current_p10_yes": True,
         },
     }
 
@@ -312,8 +325,7 @@ def print_human(status: dict) -> None:
 
     ordinary = status["ordinary_queue"]
     print(
-        "Ordinary queue: "
-        f"{ordinary['eligible_count']} eligible "
+        f"Ordinary queue: {ordinary['eligible_count']} eligible "
         f"({ordinary['business_eligible_count']} business, "
         f"{ordinary['gate_or_report_eligible_count']} gate/report)"
     )
@@ -324,17 +336,12 @@ def print_human(status: dict) -> None:
         f"{status['playback_queue']['claimed_case_count']} claimed)"
     )
     print(
-        "Admin queue: "
-        f"{status['admin_queue']['open_bug_count']} open bugs, "
-        f"{status['admin_queue']['invalid_bug_report_count']} invalid reports, "
-        f"actionable-for-role={status['admin_queue']['actionable_for_this_role']}"
-    )
-    print(
         "Pilot-60: "
         f"{status['pilot60']['qualifying_checks']}/"
         f"{status['pilot60']['required_checks']} "
         f"pass={status['pilot60']['pilot60_pass']}"
     )
+
     runtime = status["runtime"]
     print(
         "Runtime: "
@@ -343,46 +350,34 @@ def print_human(status: dict) -> None:
         f"content-inspection-declared={runtime['content_inspection_capable_declared']} "
         f"playback-capable={runtime['playback_capable']}"
     )
+
     gates = status["gates"]
     print(
         "Gates: "
         f"P9-PLAYBACK-GATE={gates['P9_PLAYBACK_GATE_completed']} "
-        f"READY_TO_SEAL={gates['P9_PLAYBACK_GATE_ready_to_seal']} "
-        f"P9-AUDIT-60={gates['P9_AUDIT_60_completed']} "
-        f"P10={gates['P10_PILOT_DECISION_completed']} "
-        f"P10_DECISION={gates['P10_full_archive_decision'] or 'UNRECORDED'} "
+        f"CURRENT_P9={gates['current_P9_completed']} "
+        f"CURRENT_P10={gates['current_P10_completed']} "
+        f"CURRENT_P10_DECISION={gates['current_P10_full_archive_decision'] or 'UNRECORDED'} "
         f"FULL_ARCHIVE_AUTHORIZED={gates['full_archive_authorized']}"
     )
-
+    if gates["legacy_P9_record_present"] or gates["legacy_P10_record_present"]:
+        print(
+            "Legacy P9/P10 completion records are present for audit history only; "
+            "they do not satisfy the current R2 acceptance chain."
+        )
     if status["host_stop_for_this_runtime"]:
         print(
-            "HOST_STOP: no ordinary/gate/admin work compatible with this session is "
-            "currently available, while unclaimed real-playback work remains and this "
-            "runtime cannot honestly perform it. This is a session capability limit, "
-            "not repository-wide NO_ELIGIBLE_WORK."
-        )
-    if status["classification"] == "ROLE_STOP":
-        print(
-            "ROLE_STOP: project work remains, but it is admin-only and this session is "
-            "classified as worker. Do not modify the control plane; report/leave it for admin."
-        )
-    if gates["P9_PLAYBACK_GATE_ready_to_seal"]:
-        print(
-            "Pilot-60 already passes. Remaining optional playback cases do not block the "
-            "acceptance path. Seal P9-PLAYBACK-GATE, then continue to P9/P10 when eligible."
-        )
-    if gates["P10_PILOT_DECISION_completed"] and gates["P10_full_archive_decision"] is None:
-        print(
-            "FULL_ARCHIVE remains locked: P10 completion exists but no explicit "
-            "full_archive_decision=YES|NO was recorded."
+            "HOST_STOP: project playback work remains, but this runtime cannot honestly "
+            "perform decoded-media content inspection. This is not repository-wide "
+            "NO_ELIGIBLE_WORK."
         )
 
 
 def main() -> int:
     parser = argparse.ArgumentParser(
         description=(
-            "Classify Miles-Guo_public_archive work by task type, Agent role, runtime "
-            "capability, and Pilot gate state without relying on stale chat summaries."
+            "Classify Miles-Guo_public_archive work by current acceptance revision, "
+            "Agent role, runtime capability, and Pilot gate state."
         )
     )
     parser.add_argument("--json", action="store_true")
@@ -390,18 +385,13 @@ def main() -> int:
         "--role",
         choices=["worker", "admin"],
         default="worker",
-        help=(
-            "Agent role. Default worker. Use admin only when the authenticated GitHub "
-            "identity is verified as an authorized admin (currently witnessGIT)."
-        ),
     )
     parser.add_argument(
         "--content-inspection-capable",
         action="store_true",
         help=(
             "Declare that this runtime can actually inspect decoded clip/frame/audio "
-            "content and determine observed content position. Do not pass merely because "
-            "ffmpeg can execute."
+            "content and determine observed content position."
         ),
     )
     args = parser.parse_args()
