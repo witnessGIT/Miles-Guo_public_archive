@@ -1,0 +1,15 @@
+{
+  "project": "Miles-Guo_public_archive",
+  "pilot_case_id": "PILOT-E001",
+  "live_id": "LIVE_20170523_001",
+  "stage": "alignment",
+  "ready": true,
+  "agent_id": "agent-20260913T000000Z-sol-e001",
+  "marked_at": "2026-09-13T00:00:00Z",
+  "result_commit": "c58f2a901542eb806c6a73d5f182963ff192ae42",
+  "outputs": [
+    "data/live_segments/alignment/LIVE_20170523_001.jsonl"
+  ],
+  "validation": "Three monotonic public GHOT start anchors (6s, 16s, 24s) matched against short GWINS source-text phrases. Source IDs exist in tracked source records. end_sec, alignment_quality, FPS/frame values and playback verification were deliberately left unasserted where not independently verified.",
+  "notes": "Ready for incremental playback audit; these are anchor-level alignment records, not a full transcript alignment."
+}
