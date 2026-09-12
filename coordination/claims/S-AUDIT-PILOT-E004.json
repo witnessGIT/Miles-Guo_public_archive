@@ -1,0 +1,13 @@
+{
+  "task_id": "S-AUDIT-PILOT-E004",
+  "agent_id": "agent-20260913T002400Z-gpt56sol",
+  "claimed_at": "2026-09-12T17:14:00Z",
+  "base_commit": "9662941ec7ce4339e03cc53531ed5cf156af9d58",
+  "status": "in_progress",
+  "workflow_mode": "continuous-worker-v2",
+  "claim_protocol": "claim-protocol-v2",
+  "continue_after_finish": true,
+  "stage": "audit",
+  "case_id": "PILOT-E004",
+  "scope": "Playback-audit the alignment-ready PILOT-E004 case; record only observable media timing and preserve curated-source provenance without inference."
+}
