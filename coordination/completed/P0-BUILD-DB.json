@@ -1,0 +1,9 @@
+{
+  "task_id": "P0-BUILD-DB",
+  "agent_id": "agent-20260912T152100Z-gpt56sol",
+  "completed_at": "2026-09-12T15:45:00Z",
+  "result_commit": "12652547621407815f1b8c07531d45e6614f7446",
+  "outputs": ["scripts/build_db.py"],
+  "validation": "Executed the builder against the current schema in a clean temporary repository with empty data. It created database/Miles-Guo_public_archive.sqlite3 successfully; PRAGMA integrity_check returned ok, foreign_key_check returned no errors, and the FTS5 table was created/rebuilt with zero rows as expected.",
+  "notes": "Builder recursively supports independent JSON/JSONL batches, rejects unknown columns and insertion errors, rebuilds FTS5, and atomically replaces the official database only after integrity/FK checks pass."
+}
