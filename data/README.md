@@ -34,3 +34,16 @@ Rules:
 - never invent FPS, frame positions, source availability or cross-source identity;
 - prefer independent batch files so multiple Agents do not edit the same large JSONL file;
 - canonical cross-source merges belong to identity/matching work, not individual collectors.
+
+## SQLite build
+
+The formal database remains a rebuildable artifact at `database/Miles-Guo_public_archive.sqlite3`.
+
+Run locally with:
+
+```bash
+python scripts/build_db.py
+python scripts/validate_db.py
+```
+
+The repository workflow `.github/workflows/pilot-db.yml` performs the same build + validation when tracked source data, schema, or the database build/validation scripts change. The workflow commits the rebuilt Pilot SQLite artifact only after validation succeeds.
