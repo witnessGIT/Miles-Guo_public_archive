@@ -1,0 +1,11 @@
+{
+  "task_id": "S-ALIGN-PILOT-L002",
+  "agent_id": "agent-20260913T005500Z-gpt56sol",
+  "completed_at": "2026-09-12T16:59:00Z",
+  "result_commit": "54f87fc259a13dc6daf9c132c5536648145e4cf8",
+  "outputs": ["data/live_segments/2022/LIVE_20220506_001.jsonl"],
+  "validation": "Verified the public GHOT page at slug 2022-05-06-1 displays title-side label 2022.05.06-2 and a complete timestamped transcript. Added three direct ASR anchors at 822s, 3736s, and 10363s using SRC_CCF49DCA. The slug/title ordinal mismatch remains explicit. No verified curated per-item source was used, and no end_sec or playback verification was inferred.",
+  "workflow_mode": "continuous-worker-v2",
+  "continue_after_finish": true,
+  "notes": "Downstream audit must perform real playback verification; this task does not assert timestamp error bounds."
+}
