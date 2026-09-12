@@ -5,6 +5,12 @@ import argparse
 import json
 from pathlib import Path
 
+from playback_validation import (
+    canonical_segment_index,
+    pilot_case_live_map,
+    validate_playback_record,
+)
+
 ROOT = Path(__file__).resolve().parents[1]
 PLAYBACK_ROOT = ROOT / "data" / "playback_audits"
 
@@ -12,6 +18,11 @@ PLAYBACK_ROOT = ROOT / "data" / "playback_audits"
 def load_checks() -> tuple[list[dict], list[str]]:
     checks: list[dict] = []
     problems: list[str] = []
+    segments, segment_problems = canonical_segment_index()
+    case_live, case_problems = pilot_case_live_map()
+    problems.extend(segment_problems)
+    problems.extend(case_problems)
+
     if not PLAYBACK_ROOT.exists():
         return checks, problems
 
@@ -23,56 +34,27 @@ def load_checks() -> tuple[list[dict], list[str]]:
         except (OSError, json.JSONDecodeError) as exc:
             problems.append(f"{rel}: invalid JSON: {exc}")
             continue
-
-        required = [
-            "case_id",
-            "live_id",
-            "segment_id",
-            "expected_start_sec",
-            "observed_position_sec",
-            "timing_error_sec",
-            "absolute_timing_error_sec",
-            "media_url",
-            "reviewer",
-        ]
-        missing = [key for key in required if row.get(key) is None or row.get(key) == ""]
-        if missing:
-            problems.append(f"{rel}: missing required fields: {', '.join(missing)}")
-            continue
-        if row.get("evidence_type") != "qualifying_playback_timing_check_v1":
-            problems.append(f"{rel}: unsupported evidence_type")
-            continue
-        if row.get("playback_decode_verified") is not True:
-            problems.append(f"{rel}: playback_decode_verified is not true")
-            continue
-        if row.get("content_timing_verified") is not True or row.get("content_match") is not True:
-            problems.append(f"{rel}: content timing/content match not verified")
+        if not isinstance(row, dict):
+            problems.append(f"{rel}: top-level JSON must be an object")
             continue
 
-        segment_id = str(row["segment_id"])
+        validated, row_problems = validate_playback_record(
+            row,
+            source_label=rel,
+            segments=segments,
+            case_live=case_live,
+        )
+        if row_problems:
+            problems.extend(row_problems)
+            continue
+        assert validated is not None
+
+        segment_id = str(validated["segment_id"])
         if segment_id in seen_segments:
             problems.append(f"{rel}: duplicate qualifying segment_id {segment_id}")
             continue
         seen_segments.add(segment_id)
-
-        try:
-            expected = float(row["expected_start_sec"])
-            observed = float(row["observed_position_sec"])
-            signed = float(row["timing_error_sec"])
-            absolute = float(row["absolute_timing_error_sec"])
-        except (TypeError, ValueError):
-            problems.append(f"{rel}: non-numeric timing field")
-            continue
-
-        recomputed = observed - expected
-        if abs(recomputed - signed) > 0.001:
-            problems.append(f"{rel}: timing_error_sec inconsistent with observed-expected")
-            continue
-        if abs(abs(signed) - absolute) > 0.001:
-            problems.append(f"{rel}: absolute_timing_error_sec inconsistent")
-            continue
-
-        checks.append({**row, "_path": rel})
+        checks.append({k: v for k, v in validated.items() if k != "_canonical_segment"} | {"_path": rel})
 
     return checks, problems
 
@@ -81,7 +63,7 @@ def main() -> int:
     parser = argparse.ArgumentParser(
         description=(
             "Evaluate the Pilot-60 gate from durable qualifying playback checks only. "
-            "Legacy coordination/ready/audit markers never count by themselves."
+            "Every counted record is cross-checked against canonical segment/case data."
         )
     )
     parser.add_argument("--json", action="store_true", help="Emit machine-readable JSON.")
@@ -100,6 +82,7 @@ def main() -> int:
         "project": "Miles-Guo_public_archive",
         "gate": "P9-AUDIT-60",
         "evidence_source": "data/playback_audits/**/*.json",
+        "canonical_crosscheck": True,
         "legacy_audit_readiness_counts_automatically": False,
         "qualifying_checks": total,
         "required_checks": args.require,
@@ -135,7 +118,7 @@ def main() -> int:
         if total == 0:
             print(
                 "  Note: coordination/ready/audit files are intentionally not counted; "
-                "only durable content-timing playback checks count."
+                "only canonical-crosschecked content-timing playback checks count."
             )
 
     return 0 if summary["pilot60_pass"] else 1
