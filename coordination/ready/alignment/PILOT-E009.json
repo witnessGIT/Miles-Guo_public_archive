@@ -1,0 +1,15 @@
+{
+  "project": "Miles-Guo_public_archive",
+  "workflow_mode": "continuous-worker-v2",
+  "case_id": "PILOT-E009",
+  "live_id": "LIVE_20191029_001",
+  "stage": "alignment",
+  "ready_at": "2026-09-12T16:35:00Z",
+  "task_id": "S-ALIGN-PILOT-E009",
+  "agent_id": "agent-20260912T163100Z-gpt56sol",
+  "result_commit": "aef304298046f0043c4f29d31499f6b83d514f2a",
+  "outputs": [
+    "data/live_segments/alignment/LIVE_20191029_001.jsonl"
+  ],
+  "validation": "Three monotonic GHOT public start anchors were matched to source-backed GWINS title phrases. end_sec and playback verification remain explicitly unasserted."
+}
