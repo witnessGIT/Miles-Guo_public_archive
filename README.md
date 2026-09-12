@@ -14,32 +14,111 @@ Official database: `database/Miles-Guo_public_archive.sqlite3`
 
 ## Agent：进入仓库后立即做什么
 
-任何 Agent 进入本仓库后，不要停留在“阅读规范”阶段，也不要自行挑一个大方向就开始重复工作。
+当前 Agent 工作流：
 
-必须按以下顺序：
-
-1. 阅读 `AGENTS.md`。
-2. 阅读 `coordination/README.md` 和 `coordination/WORK_QUEUE.jsonl`。
-3. 检查 `coordination/completed/` 和 `coordination/claims/`。
-4. 阅读 `docs/CURRENT_TASK.md`、`docs/PROJECT_REQUIREMENTS.md`、`docs/NAMING_AND_WORKFLOW.md`。
-5. 选择“依赖已完成 + 尚未完成 + 尚未被认领”的最高优先级任务。
-6. 通过创建 `coordination/claims/<TASK_ID>.json` 原子认领任务。
-7. 只有 claim 创建成功后才开始实际工作。
-8. 完成真实数据分析/整理、验证并提交结果。
-9. 创建 `coordination/completed/<TASK_ID>.json` 记录结果 commit、输出和验证结果。
-10. 如果还有可安全执行任务，继续领取下一项。
-
-如果两个 Agent 同时抢同一个任务，只有第一个成功创建 claim 文件的 Agent 获得任务；另一个不得覆盖 claim，必须刷新仓库后改领其它任务。
-
-本项目因此不依赖 Agent 之间互相聊天，Git 本身就是协作状态源。
-
-本地 clone 后可辅助运行：
-
-```bash
-python scripts/next_task.py
+```text
+continuous-worker-v2
 ```
 
-它会列出当前依赖已经满足、未完成、未被 claim 的任务。真正开工前仍必须按 `coordination/README.md` 创建 claim。
+任何新 Agent 进入本仓库后，不要停留在“阅读规范”阶段，也不要等待其它不相关批次完成。
+
+先按顺序阅读：
+
+1. `AGENTS.md`
+2. `coordination/CONTINUOUS_WORKER_V2.md`
+3. `coordination/WORKFLOW.json`
+4. `coordination/README.md`
+5. `coordination/WORK_QUEUE.jsonl`
+6. `docs/CURRENT_TASK.md`
+7. `docs/PROJECT_REQUIREMENTS.md`
+8. `docs/NAMING_AND_WORKFLOW.md`
+
+然后执行：
+
+```bash
+python scripts/next_task.py --list
+```
+
+领取当前最高优先级可执行任务：
+
+```bash
+python scripts/next_task.py \
+  --claim \
+  --agent-id agent-<UTC>-<random>
+```
+
+新 claim 会明确记录：
+
+```json
+{
+  "workflow_mode": "continuous-worker-v2",
+  "continue_after_finish": true
+}
+```
+
+Agent 的默认循环是：
+
+```text
+发现任务
+↓
+原子 claim
+↓
+执行真实工作
+↓
+验证
+↓
+commit / push
+↓
+finish / 发布 readiness
+↓
+刷新仓库
+↓
+继续 claim 下一项
+↓
+重复
+```
+
+**完成一场直播、一个 batch 或一个 commit 都不是停止条件。**
+
+只有项目当前阶段完成、用户召回、没有任何可执行任务、需要人工决策、安全/访问限制，或宿主平台主动终止运行时，Agent 才停止。
+
+### 重要限制
+
+Git/GitHub 可以保存任务状态、让运行中的 Agent 持续领任务、让下一个 Agent 无聊天记忆接续，但 **Git 不能主动唤醒已经被 ChatGPT/Work/Codex 宿主平台挂起或终止的 Agent 会话**。
+
+如果宿主运行环境允许长时间保持进程，可使用：
+
+```bash
+python scripts/next_task.py \
+  --watch \
+  --claim \
+  --agent-id agent-<UTC>-<random> \
+  --poll-seconds 60
+```
+
+等待新任务。宿主平台仍可能终止该进程。
+
+### 已经在做的旧任务不受影响
+
+`continuous-worker-v2` 只对**新 claim** 生效。
+
+已有有效 claim 不重命名、不删除、不抢占、不强制拆分。旧 Agent 完成当前任务后，下一次领任务自动使用 v2。
+
+旧的大批次 Agent 还可以在不结束原任务的情况下，按单场提前解锁下游：
+
+```bash
+python scripts/next_task.py \
+  --mark-ready collection \
+  --case-id PILOT-M001 \
+  --agent-id <legacy-claim-owner> \
+  --live-id LIVE_20200323_001 \
+  --outputs ... \
+  --validation "source identity and provenance verified"
+```
+
+这样另一个 Agent 可以马上开始该场 Alignment，而旧 Agent 继续做自己的剩余批次。
+
+本项目因此不依赖 Agent 之间互相聊天，Git 本身就是协作状态源。
 
 ## Current mission
 
@@ -92,9 +171,9 @@ python scripts/next_task.py
 
 ## Current phase
 
-- `SITE_ANALYSIS`: in progress
+- `SITE_ANALYSIS`: source analysis completed enough to support the current Pilot; unresolved dynamic details remain documented
 - `PILOT`: in progress
-- `FULL_ARCHIVE`: not started
+- `FULL_ARCHIVE`: not authorized
 - `MAINTENANCE`: not started
 
 Pilot 仅用于验证统一模型和跨站来源关系，不代表整个历史档案已经完成。只有 Pilot 数据质量达到标准后，才考虑进入全量历史采集。
@@ -105,36 +184,49 @@ Pilot 仅用于验证统一模型和跨站来源关系，不代表整个历史�
 
 ```text
 coordination/
+├── CONTINUOUS_WORKER_V2.md
+├── WORKFLOW.json
 ├── README.md
 ├── WORK_QUEUE.jsonl
 ├── claims/
 ├── completed/
+├── ready/
 └── conflicts/
 ```
 
 核心规则：
 
 ```text
-WORK_QUEUE
+next_task.py
 ↓
-过滤已完成任务
+读取静态队列 + Pilot cases + completed + claims + ready
 ↓
-过滤有效 claim
+生成当前可执行任务
 ↓
-检查 depends_on
-↓
-选最高优先级任务
-↓
-创建 claim
+创建原子 claim
 ↓
 执行 + 验证 + commit
 ↓
-创建 completed 记录
+创建 completed / ready
+↓
+继续领取下一项
 ```
 
-任务所有权按 `TASK_ID` 划分，不允许使用“我负责整个 GWINS”这种模糊占用。
+未来默认按单场直播/Pilot case 或非常小的非重叠 micro-batch 分工，不再用“大批全部完成后才允许下一阶段”的方式串行阻塞。
 
-采集工作进一步按“来源 + 年份/范围 + batch”拆分，尽量避免多个 Agent 同时修改一个大 JSONL 文件。
+流水线：
+
+```text
+COLLECT + IDENTITY
+        ↓
+ALIGN
+        ↓
+AUDIT
+```
+
+每场独立推进。Aggregate P7/P8/P9 只承担汇总/验证/gate 职责；真正需要等待整个 Pilot 的最终决策是 `P10-PILOT-DECISION`。
+
+如果两个 Agent 同时抢同一个任务，只有第一个成功创建并 push claim 文件的 Agent 获得任务；另一个不得覆盖，必须刷新仓库后改领其它任务。
 
 发生来源冲突、重复身份、时间轴冲突、stale claim 接管等情况时，必须写入 `coordination/conflicts/`，不得静默覆盖。
 
@@ -189,7 +281,7 @@ GettrSearch ───┘
 
 ## Repository layout
 
-规范目标结构：
+当前规范结构：
 
 ```text
 Miles-Guo_public_archive/
@@ -198,10 +290,13 @@ Miles-Guo_public_archive/
 ├── LICENSE
 ├── .gitignore
 ├── coordination/
+│   ├── CONTINUOUS_WORKER_V2.md
+│   ├── WORKFLOW.json
 │   ├── README.md
 │   ├── WORK_QUEUE.jsonl
 │   ├── claims/
 │   ├── completed/
+│   ├── ready/
 │   └── conflicts/
 ├── docs/
 │   ├── PROJECT_REQUIREMENTS.md
@@ -241,7 +336,7 @@ Miles-Guo_public_archive/
 
 ## Rebuild contract
 
-SQLite 不是唯一事实源。未来完整实现后必须可以执行：
+SQLite 不是唯一事实源。必须可以执行：
 
 ```bash
 rm -f database/Miles-Guo_public_archive.sqlite3
@@ -253,7 +348,7 @@ python scripts/validate_db.py
 
 ## Search contract
 
-基础检索链必须最终支持：
+基础检索链最终必须支持：
 
 ```text
 关键词 / 人物 / 机构 / 主题
@@ -286,10 +381,12 @@ Git 仓库不保存完整直播视频、大音频、模型权重、Whisper 模�
 所有 Agent 必须先阅读：
 
 1. [AGENTS.md](AGENTS.md)
-2. [多 Agent 协作协议](coordination/README.md)
-3. [任务队列](coordination/WORK_QUEUE.jsonl)
-4. [当前工作任务](docs/CURRENT_TASK.md)
-5. [完整项目要求](docs/PROJECT_REQUIREMENTS.md)
-6. [统一命名与工作规范](docs/NAMING_AND_WORKFLOW.md)
+2. [Continuous Worker v2](coordination/CONTINUOUS_WORKER_V2.md)
+3. [Workflow state](coordination/WORKFLOW.json)
+4. [多 Agent 协作协议](coordination/README.md)
+5. [任务队列](coordination/WORK_QUEUE.jsonl)
+6. [当前工作任务](docs/CURRENT_TASK.md)
+7. [完整项目要求](docs/PROJECT_REQUIREMENTS.md)
+8. [统一命名与工作规范](docs/NAMING_AND_WORKFLOW.md)
 
 当前明确用户要求优先；后续命名规范优先于早期示例。阅读完成后应立即走 claim 流程并开始实际整理，不要仅汇报“已阅读”。
