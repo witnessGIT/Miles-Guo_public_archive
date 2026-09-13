@@ -1,0 +1,21 @@
+{
+  "project": "Miles-Guo_public_archive",
+  "evidence_version": "repository-playback-evidence-v1",
+  "status": "blocked_media_decode",
+  "case_id": "PILOT-E005",
+  "live_id": "LIVE_20180616_001",
+  "segment_id": "LIVE_20180616_001_SEG_000001",
+  "request_ref": "coordination/playback_requests/PILOT-E005/LIVE_20180616_001_SEG_000001.json",
+  "requested_by": "agent-20260913T051200Z-gpt56sol-playback-e005",
+  "media_url": "https://youtu.be/ySNFfgMbjd4",
+  "expected_start_sec": 119.0,
+  "decode_start_sec": 119.0,
+  "decode_end_sec": 119.0,
+  "playback_decode_verified": false,
+  "counts_toward_pilot_60": false,
+  "stderr": "https://youtu.be/ySNFfgMbjd4: Invalid data found when processing input\n",
+  "generated_at": "2026-09-13T05:23:03.049480+00:00",
+  "bundle_id": "90744b8c112e9c4d44eaab17af9dd5ea28d10f01acf4a674e922bcc910cdfa85",
+  "request_revision": 1,
+  "request_sha256": "4a91e88e56f6a2992a74087ff669429e300af37562d62552a1dce118989257c2"
+}
