@@ -57,6 +57,13 @@ def audit_path_for(acceptance: dict) -> Path:
 
 
 def pending_requests(*, prepare_retries: bool) -> tuple[list[Path], list[str]]:
+    """Return requests that genuinely need processing.
+
+    Newer retry requests are queued only when the existing evidence status is retryable.
+    Crucially, this scan NEVER deletes the existing evidence. Request/provenance validation
+    happens inside process_playback_request.py before --force is allowed to replace a
+    retryable bundle, so a malformed/unauthorized retry cannot destroy prior evidence.
+    """
     pending: list[Path] = []
     problems: list[str] = []
     if not REQUEST_ROOT.exists():
@@ -85,16 +92,10 @@ def pending_requests(*, prepare_retries: bool) -> tuple[list[Path], list[str]]:
                 )
                 continue
             if prepare_retries:
-                evidence_dir = evidence_path.parent
-                for child in (evidence_dir / "evidence.json", evidence_dir / "evidence.md"):
-                    child.unlink(missing_ok=True)
-                try:
-                    evidence_dir.rmdir()
-                except OSError:
-                    pass
                 print(
-                    f"Prepared retry {path.relative_to(ROOT)} revision {revision} "
-                    f"over prior {status} revision {evidence_revision}",
+                    f"Prepared non-destructive retry {path.relative_to(ROOT)} revision {revision} "
+                    f"over prior {status} revision {evidence_revision}; prior evidence is preserved "
+                    "until the retry passes request/provenance validation",
                     file=sys.stderr,
                 )
             pending.append(path)
