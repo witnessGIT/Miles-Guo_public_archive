@@ -7,15 +7,15 @@
   "segment_id": "LIVE_20200418_001_SEG_000000",
   "request_ref": "coordination/playback_requests/PILOT-M002/LIVE_20200418_001_SEG_000000.json",
   "requested_by": "agent-20260914-gpt56sol-generation2",
-  "media_url": "https://ghot.ai/archive/videos/2020-04-18-3",
+  "media_url": "https://odysee.com/@laxi:4/20200418:b",
   "expected_start_sec": 123.0,
   "decode_start_sec": 123.0,
   "decode_end_sec": 123.0,
   "playback_decode_verified": false,
   "counts_toward_pilot_60": false,
-  "stderr": "Trusted archive resolver failed for https://ghot.ai/archive/videos/2020-04-18-3: ValueError: trusted archive page exposed no supported public media URL\nyt-dlp resolver failed for https://ghot.ai/archive/videos/2020-04-18-3 with rc=1:\nWARNING: [generic] Falling back on generic information extractor\nERROR: Unsupported URL: https://ghot.ai/archive/videos/2020-04-18-3\n\n",
-  "generated_at": "2026-09-13T22:26:31.648574+00:00",
-  "bundle_id": "a5d6518e5e1b294d59bc162f7efe662965cc27cab1627cb0d0c890af57a1fdad",
-  "request_revision": 1,
-  "request_sha256": "33f28166c7164ddeb1c9a2fd4578d9279c13805adcf94622abface235a6daf90"
+  "stderr": "yt-dlp resolver failed for https://odysee.com/@laxi:4/20200418:b with rc=1:\nWARNING: [lbry] @laxi#4/20200418#b: Unable to download webpage: HTTP Error 429: Too Many Requests\nERROR: [lbry] b332e129630a78e507f83ca3eda79d4570af0fd4: No video formats found!; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you are on the latest version using  yt-dlp -U\n\n",
+  "generated_at": "2026-09-13T22:29:03.471369+00:00",
+  "bundle_id": "1b2937a65b8add078997b1bed3cb54c7ea5f5edc0f4780e7960d39b05046e00a",
+  "request_revision": 2,
+  "request_sha256": "85b1146ca798bac3b0795793edc79cd7797667b3d12249be209ff096933e7e06"
 }

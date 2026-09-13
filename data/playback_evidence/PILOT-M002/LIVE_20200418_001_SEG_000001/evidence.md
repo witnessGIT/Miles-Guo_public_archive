@@ -2,12 +2,12 @@
 
 - Case: `PILOT-M002`
 - Live: `LIVE_20200418_001`
-- Media: https://ghot.ai/archive/videos/2020-04-18-3
+- Media: https://odysee.com/@laxi:4/20200418:b
 - Expected start: `186.000s`
 - Decode window: `186.000s` → `186.000s`
 - Real media decoded: `false`
 - Evidence status: `blocked_media_decode`
-- Bundle ID: `83adef27b302b1a5a7534b5d66b6606b178acf5ffddd9d71e3aa94f52073619e`
+- Bundle ID: `226443d4bb59bf6707d4211fd2c1c656874799b5219b7d219da325a2372f84fa`
 
 ## Target text
 

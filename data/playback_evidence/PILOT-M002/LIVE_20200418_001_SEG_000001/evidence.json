@@ -7,15 +7,15 @@
   "segment_id": "LIVE_20200418_001_SEG_000001",
   "request_ref": "coordination/playback_requests/PILOT-M002/LIVE_20200418_001_SEG_000001.json",
   "requested_by": "agent-20260914-gpt56sol-generation2",
-  "media_url": "https://ghot.ai/archive/videos/2020-04-18-3",
+  "media_url": "https://odysee.com/@laxi:4/20200418:b",
   "expected_start_sec": 186.0,
   "decode_start_sec": 186.0,
   "decode_end_sec": 186.0,
   "playback_decode_verified": false,
   "counts_toward_pilot_60": false,
-  "stderr": "Trusted archive resolver failed for https://ghot.ai/archive/videos/2020-04-18-3: ValueError: trusted archive page exposed no supported public media URL\nyt-dlp resolver failed for https://ghot.ai/archive/videos/2020-04-18-3 with rc=1:\nWARNING: [generic] Falling back on generic information extractor\nERROR: Unsupported URL: https://ghot.ai/archive/videos/2020-04-18-3\n\n",
-  "generated_at": "2026-09-13T22:26:33.634655+00:00",
-  "bundle_id": "83adef27b302b1a5a7534b5d66b6606b178acf5ffddd9d71e3aa94f52073619e",
-  "request_revision": 1,
-  "request_sha256": "5f4d9ef72fd3ea26857fa86335b2ed7ecb397bd48ea3782e9a9c476169d1da6d"
+  "stderr": "yt-dlp resolver failed for https://odysee.com/@laxi:4/20200418:b with rc=124:\ncommand timed out after 45s: yt-dlp -g --no-playlist\n",
+  "generated_at": "2026-09-13T22:29:48.964251+00:00",
+  "bundle_id": "226443d4bb59bf6707d4211fd2c1c656874799b5219b7d219da325a2372f84fa",
+  "request_revision": 2,
+  "request_sha256": "c2b4437ad0500640371d5920e309f12df6373bc067b543d82d5a3fcbfd4924b0"
 }
