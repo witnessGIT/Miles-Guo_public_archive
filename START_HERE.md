@@ -13,33 +13,66 @@ The repository is the authoritative execution context. Do not ask the user to re
 
 ## Repository-owner standing directive
 
-The owner has already authorized all Agents that actually have GitHub write capability to work continuously on this archive.
+The owner authorizes continuous multi-Agent execution through two contribution modes:
 
 ```text
-READ CURRENT GIT STATE
-→ CLAIM ONE ELIGIBLE TASK
-→ PUSH CLAIM DIRECTLY
-→ EXECUTE REAL ARCHIVE WORK
-→ VALIDATE
-→ PUSH CLAIMED OUTPUTS DIRECTLY TO main
-→ COMPLETE / PUBLISH READINESS
-→ REFRESH
-→ CLAIM NEXT ELIGIBLE TASK
-→ REPEAT
+A. Agent has direct repository write permission
+   -> claim on main
+   -> execute
+   -> validate
+   -> push claimed outputs directly to main
+   -> finish
+   -> claim next task
+
+B. Agent does NOT have direct repository write permission
+   -> refresh main + inspect open PRs
+   -> choose an eligible unreserved task
+   -> fork or use an available personal branch
+   -> open a task PR containing TASK_ID + agent_id
+   -> keep pushing task work to that same PR branch
+   -> validate and make the PR merge-ready
+   -> after merge, refresh and reserve the next task the same way
 ```
 
-For valid claimed business/video-archive work:
+For valid business/video-archive work:
 
-- no PR is required;
 - no repeated per-task approval from the owner is required;
-- do not stop after one task, one livestream, one case, or one micro-batch;
-- a lost claim race means refresh and choose another task;
-- a non-blocking control-plane bug means file a bug report and continue other eligible work;
-- continue while the Agent session remains active until a real repository stop condition applies.
+- direct-write Agents do not need a PR;
+- no-write Agents are explicitly authorized to contribute through PRs;
+- an open valid task PR is a soft reservation and other Agents should avoid duplicating that task;
+- only merged PR work becomes authoritative main-branch completion state;
+- do not stop after one task, livestream, case, or micro-batch;
+- a lost claim/reservation race means refresh and choose another task;
+- preserve all quality gates and never fabricate evidence merely to accelerate completion.
 
-The final owner intent is **not merely to finish the Pilot**. Preserve the Pilot quality gates, and after they pass continue into `FULL_ARCHIVE` until all eligible public video archive work is complete. Do not lower or bypass playback/quality requirements to reach that goal.
+The final owner intent is **not merely to finish the Pilot**. Preserve the Pilot quality gates, and after they pass continue into `FULL_ARCHIVE` until all eligible public video archive work is complete.
 
-Repository policy cannot grant GitHub access to an account that does not actually have write permission. GitHub authentication/authorization still applies.
+## No-write Agent PR protocol
+
+Before starting work, a no-write Agent must check both:
+
+1. current `main` claims/completions/readiness for the intended `TASK_ID`;
+2. currently open pull requests for an existing reservation of the same `TASK_ID`.
+
+A no-write Agent must not duplicate a task already claimed on `main` or already reserved by an earlier valid open PR.
+
+The PR must identify at minimum:
+
+```text
+TASK_ID: <repository task id>
+agent_id: <stable agent id>
+mode: external-pr-worker
+```
+
+Recommended PR title:
+
+```text
+[TASK <TASK_ID>] <short task description> — <agent_id>
+```
+
+The Agent should open the PR early, then continue committing the actual task outputs to the same PR branch. The PR itself is the external soft reservation. If the PR closes without merge, the reservation is released. If merged, `main` becomes authoritative and the Agent must refresh before taking another task.
+
+A no-write Agent must still obey worker boundaries: it may contribute ordinary claimed business/archive outputs, but must not use a PR to bypass protected control-plane restrictions or manufacture service-generated playback evidence/audits.
 
 ## Step 0 — resolve role
 
@@ -61,11 +94,11 @@ Read first:
 Administrative GitHub login: `witnessGIT`. Verified `witnessGIT` Agents are `admin`; every other/unknown identity is a `worker`.
 
 ```text
-worker = directly execute claimed project tasks + use repository services + report bugs + continue
+worker = execute claimed/reserved project tasks + use repository services + report bugs + continue
 admin  = worker capabilities + repair/maintain project machinery
 ```
 
-Workers MUST NOT modify `scripts/`, `schema/`, `.github/`, workflow policy, permissions or other protected control-plane files. Bugs go to `coordination/bug_reports/` for an admin Agent. This restriction protects shared machinery; it does not require workers to wait for approval before ordinary claimed archive work.
+Workers MUST NOT modify `scripts/`, `schema/`, `.github/`, workflow policy, permissions or other protected control-plane files. Bugs go to `coordination/bug_reports/` for an admin Agent. This restriction protects shared machinery; it does not require workers to wait for approval before ordinary archive work.
 
 ## First status command
 
@@ -119,8 +152,8 @@ The owner has stated the standing intent to continue into FULL_ARCHIVE after req
 
 | Type | Examples | Who can execute? |
 |---|---|---|
-| `ordinary_business` | collection, alignment, source/transcript work | worker/admin |
-| `real_playback` | `P9-PLAYBACK-*` | worker/admin through repository service; local manual fallback optional |
+| `ordinary_business` | collection, alignment, source/transcript work | worker/admin; direct push or PR depending on GitHub permission |
+| `real_playback` | `P9-PLAYBACK-*` | worker/admin through repository service; direct write is required for request/acceptance to reach main, or PR must be merged first |
 | `gate_or_report` | P9/P10 R2 aggregate gates/reports | worker/admin once dependencies pass |
 | `admin_control` | bug fixes, scripts/schema/CI/workflow | admin only |
 | `legacy_record` | old P9/P10 | nobody; history only |
@@ -134,23 +167,9 @@ python scripts/playback_queue.py --list
 python scripts/playback_queue.py --claim --agent-id agent-<UTC>-<random>
 ```
 
-A worker with no shell may create the equivalent claim atomically through GitHub according to the claim protocol.
+For each missing segment, choose a **public media URL already preserved in repository provenance** and submit the corresponding playback request. The GitHub Action `.github/workflows/playback-evidence-service.yml` validates identity/provenance, decodes real media, runs offline ASR/OCR and writes durable evidence. Evidence generation alone never counts toward Pilot-60.
 
-For each missing segment, choose a **public media URL already preserved in repository provenance** and submit:
-
-```text
-coordination/playback_requests/<CASE_ID>/<SEGMENT_ID>.json
-```
-
-The GitHub Action `.github/workflows/playback-evidence-service.yml` validates identity/provenance, decodes real media, runs offline ASR/OCR and writes durable evidence. Evidence generation alone never counts toward Pilot-60.
-
-After evidence appears, the worker MUST read `evidence.md`/`evidence.json`. If the decoded-media evidence really matches the canonical content, submit the corresponding acceptance under:
-
-```text
-coordination/playback_acceptances/<CASE_ID>/<SEGMENT_ID>.json
-```
-
-The service cross-checks that acceptance against the evidence and canonical segment, then creates a qualifying playback audit record. A worker must never manufacture service evidence or accept evidence it has not read.
+After evidence appears, the worker MUST read it and only submit an acceptance if the decoded-media evidence really matches the canonical content. A worker must never manufacture service evidence or accept evidence it has not read.
 
 ## Pilot-60 quality rule
 
@@ -160,17 +179,12 @@ When `scripts/audit_gate.py --json` reports `pilot60_pass=true`, seal `P9-PLAYBA
 
 ## Stop-state rule
 
-Because the repository supplies the preferred Playback execution environment, lack of local ffmpeg/player is normally **not** `HOST_STOP`. `HOST_STOP` applies only when neither the repository evidence service nor a valid local fallback is available for all remaining playback work, or when the host actually terminates the Agent session.
+Because the repository supplies the preferred Playback execution environment, lack of local ffmpeg/player is normally **not** `HOST_STOP`. Lack of direct write permission is also **not** a project stop condition when the Agent can use the authorized PR path.
 
-Valid stop states are limited to genuine `PROJECT_COMPLETE`, `USER_RECALL`, true `NO_ELIGIBLE_WORK`, unavoidable `HUMAN_DECISION_REQUIRED`, `SAFETY_OR_ACCESS_BLOCK`, verified `GITHUB_WRITE_ERROR`, or true `HOST_STOP`.
+Valid stop states are limited to genuine `PROJECT_COMPLETE`, `USER_RECALL`, true `NO_ELIGIBLE_WORK`, unavoidable `HUMAN_DECISION_REQUIRED`, `SAFETY_OR_ACCESS_BLOCK`, verified inability to contribute through either direct-write or PR path, or true `HOST_STOP`.
 
-## Claim races
+## Claim / reservation races
 
-A failed atomic claim is not automatically a GitHub outage. For `422`/`409`, fetch the exact claim path from fresh `main`:
+Direct-write Agents use the atomic claim protocol. No-write Agents use the PR soft-reservation protocol. Before starting any task, check both main claims and open task PRs.
 
-```text
-claim exists -> CLAIM_RACE_LOST -> refresh -> try another
-claim absent -> refresh/backoff -> bounded retry
-```
-
-Never force-overwrite concurrent work. Current Git state and repository policy beat stale chat summaries or copied prompts.
+Never force-overwrite concurrent work. Current Git state and open PR state beat stale chat summaries or copied prompts.
