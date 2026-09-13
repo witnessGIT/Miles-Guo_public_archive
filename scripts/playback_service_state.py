@@ -57,13 +57,7 @@ def audit_path_for(acceptance: dict) -> Path:
 
 
 def pending_requests(*, prepare_retries: bool) -> tuple[list[Path], list[str]]:
-    """Return requests that genuinely need processing.
-
-    Newer retry requests are queued only when the existing evidence status is retryable.
-    Crucially, this scan NEVER deletes the existing evidence. Request/provenance validation
-    happens inside process_playback_request.py before --force is allowed to replace a
-    retryable bundle, so a malformed/unauthorized retry cannot destroy prior evidence.
-    """
+    """Return requests that genuinely need processing without deleting prior evidence."""
     pending: list[Path] = []
     problems: list[str] = []
     if not REQUEST_ROOT.exists():
@@ -95,7 +89,7 @@ def pending_requests(*, prepare_retries: bool) -> tuple[list[Path], list[str]]:
                 print(
                     f"Prepared non-destructive retry {path.relative_to(ROOT)} revision {revision} "
                     f"over prior {status} revision {evidence_revision}; prior evidence is preserved "
-                    "until the retry passes request/provenance validation",
+                    "until successful request processing stamps the new revision",
                     file=sys.stderr,
                 )
             pending.append(path)
@@ -122,28 +116,23 @@ def pending_acceptances() -> tuple[list[Path], list[str]]:
 
 
 def finalize_evidence() -> list[str]:
+    """Finalize presentation only; request revision binding is done by stamp helper.
+
+    This function intentionally does NOT modify request_revision. Otherwise a failed newer
+    request could relabel an older evidence bundle as if the newer request had succeeded.
+    """
     problems: list[str] = []
     if not REQUEST_ROOT.exists():
         return problems
     for request_path in sorted(REQUEST_ROOT.rglob("*.json")):
         try:
             request = load_object(request_path)
-            revision = request_revision(request)
             evidence_path = evidence_path_for(request)
             if not evidence_path.exists():
                 continue
             evidence = load_object(evidence_path)
             if str(evidence.get("request_ref") or "") != str(request_path.relative_to(ROOT)):
                 continue
-            changed = False
-            if evidence.get("request_revision") != revision:
-                evidence["request_revision"] = revision
-                changed = True
-            if changed:
-                evidence_path.write_text(
-                    json.dumps(evidence, ensure_ascii=False, indent=2) + "\n",
-                    encoding="utf-8",
-                )
 
             md_path = evidence_path.parent / "evidence.md"
             if md_path.exists() and evidence.get("playback_decode_verified") is not True:
