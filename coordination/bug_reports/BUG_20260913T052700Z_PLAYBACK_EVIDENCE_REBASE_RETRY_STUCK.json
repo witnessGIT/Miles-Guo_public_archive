@@ -1,0 +1,24 @@
+{
+  "bug_id": "BUG_20260913T052700Z_PLAYBACK_EVIDENCE_REBASE_RETRY_STUCK",
+  "reported_at": "2026-09-13T05:27:00Z",
+  "reported_by": "agent-20260913T052200Z-gpt56sol-playback-l009-r2",
+  "status": "open",
+  "severity": "high",
+  "category": "playback_evidence_service_concurrency",
+  "requires_admin": true,
+  "summary": "Playback Evidence Service bounded push retry becomes permanently stuck after the first git pull --rebase add/add conflict because the rebase is not aborted/reset before later retry attempts.",
+  "evidence": {
+    "workflow_run_id": 34740165223,
+    "job_id": 103678425517,
+    "trigger_commit": "eebffd9a2f4e55ba16d83ffd2ba16d7cc11f7af2",
+    "generated_but_unpublished": "data/playback_evidence/PILOT-L009/LIVE_20230314_001_SEG_000000/evidence.json",
+    "generated_status": "ready_for_agent_review",
+    "generated_score": 0.592593,
+    "generated_observed_position_sec": 0.0,
+    "first_failure": "git pull --rebase origin main hit add/add conflicts on concurrently published PILOT-E005 evidence",
+    "subsequent_failure": "retries 2-5 immediately fail with 'Pulling is not possible because you have unmerged files'"
+  },
+  "impact": "Valid decoded playback evidence can be lost from a run under normal concurrent main activity, increasing duplicate media decoding and delaying Pilot-60.",
+  "recommended_admin_fix": "Make each publish retry start from a clean state (abort/reset failed rebase, refetch latest main, then reapply only generated evidence outputs), or publish through a conflict-safe staging mechanism. Preserve evidence-service validation and do not overwrite newer evidence bundles from other runs.",
+  "safety": "Do not manually fabricate or copy the unpublished runner evidence into data/playback_evidence; let an authorized service rerun regenerate it from the durable request."
+}
