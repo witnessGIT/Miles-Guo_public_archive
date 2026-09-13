@@ -8,6 +8,9 @@ on:
       - 'schema/**'
       - 'scripts/build_db.py'
       - 'scripts/validate_db.py'
+      - 'scripts/audit_media.py'
+      - 'scripts/project_status.py'
+      - 'tests/**'
       - '.github/workflows/pilot-db.yml'
   workflow_dispatch:
 
@@ -27,6 +30,14 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+
+      - name: Install media test dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg
+
+      - name: Run repository unit tests
+        run: python -m unittest discover -s tests -p 'test_*.py' -v
 
       - name: Build SQLite from Git-tracked source data
         run: python scripts/build_db.py
