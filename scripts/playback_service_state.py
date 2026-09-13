@@ -104,7 +104,12 @@ def request_has_active_claim(request: dict) -> bool:
 
 
 def pending_requests(*, prepare_retries: bool) -> tuple[list[Path], list[str]]:
-    """Return requests that genuinely need processing without deleting prior evidence."""
+    """Return requests that genuinely need processing without deleting prior evidence.
+
+    A newer request must never overwrite reviewable evidence. That condition is a protected
+    segment state, not a service-wide error: skip that one segment and continue scanning the
+    rest of the durable queue. Malformed JSON or other state errors remain fatal problems.
+    """
     pending: list[Path] = []
     problems: list[str] = []
     if not REQUEST_ROOT.exists():
@@ -128,11 +133,14 @@ def pending_requests(*, prepare_retries: bool) -> tuple[list[Path], list[str]]:
                 continue
             status = str(evidence.get("status") or "")
             if status not in RETRYABLE_EVIDENCE_STATUSES:
-                problems.append(
-                    f"{path.relative_to(ROOT)}: request_revision {revision} is newer than "
-                    f"reviewable evidence revision {evidence_revision} with status={status!r}; "
-                    "do not overwrite reviewable evidence"
-                )
+                if prepare_retries:
+                    print(
+                        f"Skipped protected reviewable evidence {path.relative_to(ROOT)}: "
+                        f"request revision {revision} is newer than evidence revision "
+                        f"{evidence_revision} with status={status!r}; accept/reject the durable "
+                        "evidence before any replacement retry",
+                        file=sys.stderr,
+                    )
                 continue
             if prepare_retries:
                 print(
