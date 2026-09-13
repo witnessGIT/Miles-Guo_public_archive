@@ -2,12 +2,12 @@
 
 - Case: `PILOT-L006`
 - Live: `LIVE_20230122_001`
-- Media: https://ghot.ai/archive/videos/2023-01-22-2
+- Media: https://gettr.com/streaming/p25xe03e97d
 - Expected start: `215.000s`
 - Decode window: `215.000s` → `215.000s`
 - Real media decoded: `false`
 - Evidence status: `blocked_media_decode`
-- Bundle ID: `41a32b0ad78b4f7cac7cec3c0fd5b1bffae442b5adc06cc8607ad3970184ca45`
+- Bundle ID: `9aac413c0f6abc2a6bac946e061ea80d9ae64b6f21c6b2a67ad81c1bb0cee8fa`
 
 ## Target text
 

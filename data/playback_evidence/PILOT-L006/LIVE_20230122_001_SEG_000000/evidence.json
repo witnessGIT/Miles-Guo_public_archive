@@ -7,15 +7,15 @@
   "segment_id": "LIVE_20230122_001_SEG_000000",
   "request_ref": "coordination/playback_requests/PILOT-L006/LIVE_20230122_001_SEG_000000.json",
   "requested_by": "agent-20260914-gpt56sol-fulltest4",
-  "media_url": "https://ghot.ai/archive/videos/2023-01-22-2",
+  "media_url": "https://gettr.com/streaming/p25xe03e97d",
   "expected_start_sec": 184.0,
   "decode_start_sec": 184.0,
   "decode_end_sec": 184.0,
   "playback_decode_verified": false,
   "counts_toward_pilot_60": false,
-  "stderr": "yt-dlp resolver failed for https://ghot.ai/archive/videos/2023-01-22-2 with rc=1:\nWARNING: [generic] Falling back on generic information extractor\nERROR: Unsupported URL: https://ghot.ai/archive/videos/2023-01-22-2\n\n",
-  "generated_at": "2026-09-13T17:35:23.222156+00:00",
-  "bundle_id": "9780ad22f785e3773da668c814e10dd94d68f707ee3574607fb50ce661d288f1",
-  "request_revision": 1,
-  "request_sha256": "d1211be58299c837d7db6eebd58f2b8fece3e2938048f88ed42715d2c9caad88"
+  "stderr": "yt-dlp resolver failed for https://gettr.com/streaming/p25xe03e97d with rc=1:\nERROR: data must be bytes, iterable of bytes, or a file-like object\n\n",
+  "generated_at": "2026-09-13T20:22:58.724054+00:00",
+  "bundle_id": "024ca83fc1a754fddeb9b9b4f27cc5c8a30bfe5124cc2cbf4cd2643dfc55663c",
+  "request_revision": 2,
+  "request_sha256": "12c2404ab7437f3a42874367d1341ba5b42cc33b2d023c9eacb269e8fa494e82"
 }
