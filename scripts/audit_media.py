@@ -6,20 +6,48 @@ import subprocess
 import sys
 from pathlib import Path
 
+RESOLVE_TIMEOUT_SEC = 45
+PROBE_TIMEOUT_SEC = 60
+DECODE_TIMEOUT_SEC = 180
+FRAME_TIMEOUT_SEC = 60
+TIMEOUT_RETURN_CODE = 124
 
-def run(cmd):
-    process = subprocess.run(
-        cmd,
-        stdout=subprocess.PIPE,
-        stderr=subprocess.PIPE,
-        text=True,
-    )
-    return process.returncode, process.stdout, process.stderr
+
+def _as_text(value):
+    if value is None:
+        return ""
+    if isinstance(value, bytes):
+        return value.decode("utf-8", errors="replace")
+    return str(value)
+
+
+def run(cmd, *, timeout_sec):
+    try:
+        process = subprocess.run(
+            cmd,
+            stdout=subprocess.PIPE,
+            stderr=subprocess.PIPE,
+            text=True,
+            timeout=timeout_sec,
+        )
+        return process.returncode, process.stdout, process.stderr
+    except subprocess.TimeoutExpired as exc:
+        stdout = _as_text(exc.stdout)
+        stderr = _as_text(exc.stderr)
+        timeout_note = f"command timed out after {timeout_sec}s: {' '.join(map(str, cmd[:3]))}"
+        if stderr:
+            stderr = stderr.rstrip() + "\n" + timeout_note
+        else:
+            stderr = timeout_note
+        return TIMEOUT_RETURN_CODE, stdout, stderr
 
 
 def resolve_media(source):
     if source.startswith(("http://", "https://")) and shutil.which("yt-dlp"):
-        rc, out, err = run(["yt-dlp", "-g", "--no-playlist", source])
+        rc, out, err = run(
+            ["yt-dlp", "-g", "--no-playlist", source],
+            timeout_sec=RESOLVE_TIMEOUT_SEC,
+        )
         if rc == 0 and out.strip():
             return out.strip().splitlines()[0], {
                 "resolver": "yt-dlp",
@@ -36,6 +64,7 @@ def resolve_media(source):
             "source": source,
             "yt_dlp_returncode": rc,
             "yt_dlp_stderr": diag,
+            "resolver_timeout_sec": RESOLVE_TIMEOUT_SEC,
         }
     return source, {"resolver": "direct", "source": source}
 
@@ -67,21 +96,72 @@ def main():
     clip_path = output_dir / f"{safe_label}_expected_{args.start:.3f}_from_{decode_start:.3f}_window_{args.window:.3f}.mp4"
     frame_path = output_dir / f"{safe_label}_expected_{args.start:.3f}.jpg"
     evidence_path = output_dir / f"{safe_label}_expected_{args.start:.3f}.json"
-    probe_rc, probe_out, probe_err = run(["ffprobe","-v","error","-show_entries","format=duration:stream=index,codec_type,codec_name,width,height,r_frame_rate","-of","json",resolved])
+    probe_rc, probe_out, probe_err = run(
+        ["ffprobe", "-v", "error", "-show_entries", "format=duration:stream=index,codec_type,codec_name,width,height,r_frame_rate", "-of", "json", resolved],
+        timeout_sec=PROBE_TIMEOUT_SEC,
+    )
     if probe_rc != 0:
-        payload = {"ok":False,"stage":"probe","resolution":resolution,"media_source":args.media,"expected_start_sec":args.start,"decode_start_sec":decode_start,"decode_window_sec":args.window,"stderr":probe_err[-4000:]}
+        payload = {
+            "ok": False,
+            "stage": "probe",
+            "resolution": resolution,
+            "media_source": args.media,
+            "expected_start_sec": args.start,
+            "decode_start_sec": decode_start,
+            "decode_window_sec": args.window,
+            "stderr": probe_err[-4000:],
+            "timed_out": probe_rc == TIMEOUT_RETURN_CODE,
+            "timeout_sec": PROBE_TIMEOUT_SEC if probe_rc == TIMEOUT_RETURN_CODE else None,
+        }
         evidence_path.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
-        print(json.dumps(payload, ensure_ascii=False, indent=2)); return 3
+        print(json.dumps(payload, ensure_ascii=False, indent=2))
+        return 3
     probe = json.loads(probe_out or "{}")
-    decode_rc, _, decode_err = run(["ffmpeg","-y","-v","error","-ss",f"{decode_start:.3f}","-i",resolved,"-t",f"{args.window:.3f}","-c:v","libx264","-preset","ultrafast","-c:a","aac",str(clip_path)])
+    decode_rc, _, decode_err = run(
+        ["ffmpeg", "-y", "-v", "error", "-ss", f"{decode_start:.3f}", "-i", resolved, "-t", f"{args.window:.3f}", "-c:v", "libx264", "-preset", "ultrafast", "-c:a", "aac", str(clip_path)],
+        timeout_sec=DECODE_TIMEOUT_SEC,
+    )
     if decode_rc != 0:
-        payload = {"ok":False,"stage":"decode","resolution":resolution,"media_source":args.media,"expected_start_sec":args.start,"decode_start_sec":decode_start,"decode_window_sec":args.window,"probe":probe,"stderr":decode_err[-4000:]}
+        payload = {
+            "ok": False,
+            "stage": "decode",
+            "resolution": resolution,
+            "media_source": args.media,
+            "expected_start_sec": args.start,
+            "decode_start_sec": decode_start,
+            "decode_window_sec": args.window,
+            "probe": probe,
+            "stderr": decode_err[-4000:],
+            "timed_out": decode_rc == TIMEOUT_RETURN_CODE,
+            "timeout_sec": DECODE_TIMEOUT_SEC if decode_rc == TIMEOUT_RETURN_CODE else None,
+        }
         evidence_path.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
-        print(json.dumps(payload, ensure_ascii=False, indent=2)); return 4
-    frame_rc, _, _ = run(["ffmpeg","-y","-v","error","-ss",f"{args.start:.3f}","-i",resolved,"-frames:v","1",str(frame_path)])
-    payload = {"ok":True,"media_source":args.media,"resolution":resolution,"expected_start_sec":args.start,"requested_start_sec":args.start,"decode_start_sec":decode_start,"decode_end_sec":decode_end,"pre_roll_sec":actual_pre_roll,"decode_window_sec":args.window,"probe":probe,"clip_path":str(clip_path),"frame_path":str(frame_path) if frame_rc == 0 else None,"playback_decode_verified":True,"content_timing_verified":False,"note":"Real media decoded; reviewer must locate actual target content and record signed timing error before qualification."}
+        print(json.dumps(payload, ensure_ascii=False, indent=2))
+        return 4
+    frame_rc, _, _ = run(
+        ["ffmpeg", "-y", "-v", "error", "-ss", f"{args.start:.3f}", "-i", resolved, "-frames:v", "1", str(frame_path)],
+        timeout_sec=FRAME_TIMEOUT_SEC,
+    )
+    payload = {
+        "ok": True,
+        "media_source": args.media,
+        "resolution": resolution,
+        "expected_start_sec": args.start,
+        "requested_start_sec": args.start,
+        "decode_start_sec": decode_start,
+        "decode_end_sec": decode_end,
+        "pre_roll_sec": actual_pre_roll,
+        "decode_window_sec": args.window,
+        "probe": probe,
+        "clip_path": str(clip_path),
+        "frame_path": str(frame_path) if frame_rc == 0 else None,
+        "playback_decode_verified": True,
+        "content_timing_verified": False,
+        "note": "Real media decoded; reviewer must locate actual target content and record signed timing error before qualification.",
+    }
     evidence_path.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
-    print(json.dumps(payload, ensure_ascii=False, indent=2)); return 0
+    print(json.dumps(payload, ensure_ascii=False, indent=2))
+    return 0
 
 
 if __name__ == "__main__":
