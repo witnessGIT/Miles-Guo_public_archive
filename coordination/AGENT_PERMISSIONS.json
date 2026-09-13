@@ -1,9 +1,15 @@
 {
   "project": "Miles-Guo_public_archive",
-  "policy_version": "agent-permissions-v2.1",
+  "policy_version": "agent-permissions-v2.2",
   "admin_github_logins": ["witnessGIT"],
   "system_github_logins": ["github-actions[bot]"],
   "default_role_when_identity_unknown": "worker",
+  "all_agents_business_direct_push_authorized": true,
+  "business_task_requires_per_task_user_approval": false,
+  "pull_request_required_for_business_tasks": false,
+  "continue_business_work_until_project_complete": true,
+  "bug_report_does_not_stop_other_eligible_work": true,
+  "owner_completion_directive": "after required quality gates pass, continue FULL_ARCHIVE work until all eligible public video archive work is completed",
   "roles": {
     "admin": {
       "may_fix_bugs": true,
@@ -12,8 +18,10 @@
       "may_modify_workflow_and_ci": true,
       "may_resolve_bug_reports": true,
       "may_execute_business_tasks": true,
+      "may_direct_push_claimed_business_outputs": true,
       "may_submit_playback_requests": true,
-      "may_submit_playback_acceptances": true
+      "may_submit_playback_acceptances": true,
+      "must_continue_to_next_eligible_task": true
     },
     "worker": {
       "may_fix_bugs": false,
@@ -22,6 +30,10 @@
       "may_modify_workflow_and_ci": false,
       "may_resolve_bug_reports": false,
       "may_execute_business_tasks": true,
+      "may_direct_push_claimed_business_outputs": true,
+      "requires_pull_request_for_business_outputs": false,
+      "requires_per_task_owner_approval": false,
+      "must_continue_to_next_eligible_task": true,
       "may_submit_bug_reports": true,
       "may_submit_playback_requests": true,
       "may_submit_playback_acceptances": true,
@@ -58,16 +70,19 @@
     "reports/"
   ],
   "worker_bug_report_path": "coordination/bug_reports/",
-  "worker_bug_rule": "report_only_do_not_fix",
+  "worker_bug_rule": "report_bug_then_continue_other_eligible_work; do_not_fix_control_plane",
   "playback_worker_rule": "workers may request repository-generated decoded-media evidence and accept evidence for their own active claimed playback task; workers must not modify the evidence service implementation or its generated evidence/audit outputs",
   "notes": [
+    "Repository owner authorizes every Agent with effective GitHub write capability to directly execute and push claimed business/video-archive work without a PR or repeated per-task approval.",
+    "This authorization does not grant GitHub access to an account that lacks repository write permission; GitHub authentication/authorization still applies.",
     "An Agent is admin only when the authenticated GitHub login is verified as witnessGIT or the repository owner explicitly grants an admin exception in the current interaction.",
     "github-actions[bot] is a system actor allowed to publish validated Playback Evidence Service outputs.",
     "If account identity cannot be verified, act as worker.",
-    "Worker Agents may modify business-task outputs that belong to a valid claimed task, plus their own coordination claim/completion/readiness records, playback requests/acceptances, and new immutable bug reports.",
+    "Worker Agents may directly push business-task outputs that belong to a valid claimed task, plus their own coordination claim/completion/readiness records, playback requests/acceptances, and new immutable bug reports.",
+    "Finishing one task never requires returning to the owner for permission; refresh repository state and claim the next eligible task immediately.",
+    "A non-blocking control-plane bug is reported and then the worker immediately switches to another eligible task; one bug must not stop the archive pipeline.",
     "Playback requests and acceptances are worker business coordination records. data/playback_evidence and data/playback_audits are generated/validated service outputs and are not direct worker-write surfaces.",
-    "The GitHub Actions service, scripts, schemas and workflow definitions remain admin-only.",
-    "Worker Agents must not patch scripts, schema, CI, task orchestration, workflow policy, or other control-plane files when they encounter a bug.",
-    "Bugs are fixed by admin Agents operating under the witnessGIT management account."
+    "The GitHub Actions service, scripts, schemas and workflow definitions remain admin-only to prevent concurrent Agents from destabilizing shared machinery.",
+    "After required Pilot quality gates pass, owner intent is to continue into FULL_ARCHIVE and keep processing until all eligible public video archive work is complete."
   ]
 }
