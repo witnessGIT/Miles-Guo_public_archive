@@ -1,0 +1,85 @@
+{
+  "project": "Miles-Guo_public_archive",
+  "evidence_version": "repository-playback-evidence-v1",
+  "status": "ready_for_agent_review",
+  "case_id": "PILOT-L009",
+  "live_id": "LIVE_20230314_001",
+  "segment_id": "LIVE_20230314_001_SEG_000000",
+  "task_id": "P9-PLAYBACK-PILOT-L009",
+  "request_ref": "coordination/playback_requests/PILOT-L009/LIVE_20230314_001_SEG_000000.json",
+  "requested_by": "agent-20260913T052200Z-gpt56sol-playback-l009-r2",
+  "media_url": "https://gettr.com/post/p2bexmi7ac8",
+  "target_text": "尊敬的战友们好，你们健身了吗？",
+  "target_text_search": "尊敬的战友们好 你们健身了吗",
+  "expected_start_sec": 0.0,
+  "decode_request_start_sec": 0.0,
+  "decode_start_sec": 0.0,
+  "decode_end_sec": 24.0,
+  "decode_window_sec": 24.0,
+  "decode_resolver": "yt-dlp",
+  "playback_decode_verified": true,
+  "repository_content_inspection": true,
+  "inspection_engine": "github-actions+ffmpeg+whisper.cpp+frame-ocr",
+  "audio_asr": {
+    "engine": "whisper.cpp",
+    "model": "ggml-small.bin",
+    "entries": [
+      {
+        "local_start_sec": 0.0,
+        "local_end_sec": 8.48,
+        "absolute_start_sec": 0.0,
+        "absolute_end_sec": 8.48,
+        "text": "好 最尖的战士们好 你们战士了吗"
+      }
+    ],
+    "best_match": {
+      "local_start_sec": 0.0,
+      "local_end_sec": 8.48,
+      "text": "好 最尖的战士们好 你们战士了吗",
+      "similarity": 0.592593,
+      "keyword_coverage": 0.0,
+      "score": 0.592593,
+      "entry_count": 1
+    },
+    "process_returncode": 0,
+    "stderr_tail": "read_audio_data: reading audio data from '/home/runner/work/Miles-Guo_public_archive/Miles-Guo_public_archive/cache/playback_evidence/PILOT-L009/LIVE_20230314_001_SEG_000000/audio_16k_mono.wav' ...\nread_audio_data: trying to decode with miniaudio\noutput_srt: saving output to '/home/runner/work/Miles-Guo_public_archive/Miles-Guo_public_archive/cache/playback_evidence/PILOT-L009/LIVE_20230314_001_SEG_000000/whisper.srt'\n"
+  },
+  "visual_evidence": {
+    "frames": [
+      {
+        "local_sec": 0.0,
+        "absolute_sec": 0.0,
+        "sha256": "ea3802f3a5bda3bd6e48f3fbefa32c92cffbe27cd1ac005b67a75809e370f453",
+        "ocr_text": "Oa"
+      },
+      {
+        "local_sec": 4.0,
+        "absolute_sec": 4.0,
+        "sha256": "1380bf52fb481d2dfcaf6710cd10707145c268ac1e7f4660e11188294fdd7dbe",
+        "ocr_text": "= a:     :\n=    — 7 7\n=  oo   ‘\n4  4  ey F\n4      .    Bs\nae    eg\n  wie\nSee y\n中\ny- ww thes                                                                s\nr) if    ;   mp. [ih\n:   i, | ， 1\nar                                                  .\n:                           = |\n                                  ~ q                at\n                            P       es o_o"
+      },
+      {
+        "local_sec": 8.0,
+        "absolute_sec": 8.0,
+        "sha256": "6a294799fb0a58779122ba68ed7d7d00ff8d000836ecfff0dd539cbdac5014fc",
+        "ocr_text": "al\n                  an\nal         l4\n|  > 各\n”\n‘\n\n下 所\n\n|                        ."
+      }
+    ],
+    "smolvlm": {
+      "status": "not_requested"
+    }
+  },
+  "candidate_content_match": true,
+  "candidate_observed_position_sec": 0.0,
+  "candidate_timing_error_sec": 0.0,
+  "candidate_absolute_timing_error_sec": 0.0,
+  "minimum_agent_review_score": 0.55,
+  "agent_acceptance_required": true,
+  "counts_toward_pilot_60": false,
+  "decode_evidence_sha256": "4869af9ca65f21eb175937cabbfc5eb419ecf2f58b866ba288d31ffd419bfd6e",
+  "temporary_clip_sha256": "3cda88cc6f0bb19c8c18408747c6ad57376b1d624c3a5e84e631621315b6ced9",
+  "generated_at": "2026-09-13T05:28:16.725056+00:00",
+  "bundle_id": "01f2024bbbf9d997417ac1205e4af877f0d7fc9a3a69f9c77372091f6febff49",
+  "request_revision": 1,
+  "request_sha256": "80bffc6ed8dd32873524d48c2d15820f43e04c9757208aa05f8b296418722b87"
+}

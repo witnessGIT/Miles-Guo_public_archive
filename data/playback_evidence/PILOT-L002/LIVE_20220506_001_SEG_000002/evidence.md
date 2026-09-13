@@ -1,17 +1,17 @@
-# Playback Evidence — LIVE_20180616_001_SEG_000001
+# Playback Evidence — LIVE_20220506_001_SEG_000002
 
-- Case: `PILOT-E005`
-- Live: `LIVE_20180616_001`
-- Media: https://rumble.com/v578glm-20180616-1.html
-- Expected start: `119.000s`
-- Decode window: `119.000s` → `119.000s`
+- Case: `PILOT-L002`
+- Live: `LIVE_20220506_001`
+- Media: https://gettr.com/post/p18k9yf555e
+- Expected start: `10363.000s`
+- Decode window: `10363.000s` → `10363.000s`
 - Real media decoded: `false`
 - Evidence status: `blocked_media_decode`
-- Bundle ID: `f1946f9f3c5d9fe230cf5c2941daf0ab893f9d3854895b7e57cda27bda9b8eae`
+- Bundle ID: `25143e7486c96833b97606efa27d4a7bf4a2d84bd0e9583b808cb34607f12211`
 
 ## Target text
 
-当今黑客是防国家机器和盗国贼、独裁集团对好人的迫害
+新中国联邦人最重要的核心价值就是这个平台，就是你有没有人际关系，你有没有朋友，你有没有人能帮你在关键时候。
 
 ## Decoded-audio ASR match
 

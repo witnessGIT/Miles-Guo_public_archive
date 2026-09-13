@@ -1,17 +1,17 @@
-# Playback Evidence — LIVE_20180616_001_SEG_000001
+# Playback Evidence — LIVE_20180419_001_SEG_000000
 
-- Case: `PILOT-E005`
-- Live: `LIVE_20180616_001`
-- Media: https://rumble.com/v578glm-20180616-1.html
-- Expected start: `119.000s`
-- Decode window: `119.000s` → `119.000s`
+- Case: `PILOT-E004`
+- Live: `LIVE_20180419_001`
+- Media: https://rumble.com/v5782fo-20180419-3.html
+- Expected start: `149.000s`
+- Decode window: `149.000s` → `149.000s`
 - Real media decoded: `false`
 - Evidence status: `blocked_media_decode`
-- Bundle ID: `f1946f9f3c5d9fe230cf5c2941daf0ab893f9d3854895b7e57cda27bda9b8eae`
+- Bundle ID: `10e6bd11245a5403328e7b501f31ea327b0485ff7cc55844ae0e2e2095172b2e`
 
 ## Target text
 
-当今黑客是防国家机器和盗国贼、独裁集团对好人的迫害
+这个世界上美元永远是最好的
 
 ## Decoded-audio ASR match
 

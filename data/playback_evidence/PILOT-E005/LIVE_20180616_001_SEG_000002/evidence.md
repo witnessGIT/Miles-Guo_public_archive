@@ -2,12 +2,12 @@
 
 - Case: `PILOT-E005`
 - Live: `LIVE_20180616_001`
-- Media: https://youtu.be/ySNFfgMbjd4
+- Media: https://rumble.com/v578glm-20180616-1.html
 - Expected start: `295.000s`
 - Decode window: `295.000s` → `295.000s`
 - Real media decoded: `false`
 - Evidence status: `blocked_media_decode`
-- Bundle ID: `5524683994056e5d6bc334d977b657da657f8a52f0e8e90d84647bd1caed3614`
+- Bundle ID: `6f63ef27139d96fcac914ed906ddb6cfc49ccf77a17e1809de401f5e270f7421`
 
 ## Target text
 

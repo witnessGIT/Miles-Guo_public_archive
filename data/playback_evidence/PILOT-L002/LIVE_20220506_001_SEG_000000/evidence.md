@@ -1,17 +1,17 @@
-# Playback Evidence — LIVE_20180616_001_SEG_000001
+# Playback Evidence — LIVE_20220506_001_SEG_000000
 
-- Case: `PILOT-E005`
-- Live: `LIVE_20180616_001`
-- Media: https://rumble.com/v578glm-20180616-1.html
-- Expected start: `119.000s`
-- Decode window: `119.000s` → `119.000s`
+- Case: `PILOT-L002`
+- Live: `LIVE_20220506_001`
+- Media: https://gettr.com/post/p18k9yf555e
+- Expected start: `822.000s`
+- Decode window: `822.000s` → `822.000s`
 - Real media decoded: `false`
 - Evidence status: `blocked_media_decode`
-- Bundle ID: `f1946f9f3c5d9fe230cf5c2941daf0ab893f9d3854895b7e57cda27bda9b8eae`
+- Bundle ID: `4dde5b79df01c8ac7cc86da846cc13abe259bb985c85e42003de774a92ee4bcf`
 
 ## Target text
 
-当今黑客是防国家机器和盗国贼、独裁集团对好人的迫害
+那话筒就交给我们七哥，好的下面有请我们今天的主讲人，我们的大明星七哥出场，尊敬的战友们好。
 
 ## Decoded-audio ASR match
 

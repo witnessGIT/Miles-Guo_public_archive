@@ -1,17 +1,17 @@
-# Playback Evidence — LIVE_20180616_001_SEG_000001
+# Playback Evidence — LIVE_20220506_001_SEG_000001
 
-- Case: `PILOT-E005`
-- Live: `LIVE_20180616_001`
-- Media: https://rumble.com/v578glm-20180616-1.html
-- Expected start: `119.000s`
-- Decode window: `119.000s` → `119.000s`
+- Case: `PILOT-L002`
+- Live: `LIVE_20220506_001`
+- Media: https://gettr.com/post/p18k9yf555e
+- Expected start: `3736.000s`
+- Decode window: `3736.000s` → `3736.000s`
 - Real media decoded: `false`
 - Evidence status: `blocked_media_decode`
-- Bundle ID: `f1946f9f3c5d9fe230cf5c2941daf0ab893f9d3854895b7e57cda27bda9b8eae`
+- Bundle ID: `24791a3a2ffc725e670c012ca5caa3025c9bbe56e8ab96d210bb76f6f91e7461`
 
 ## Target text
 
-当今黑客是防国家机器和盗国贼、独裁集团对好人的迫害
+一直到今天，那么接下来俄乌战争会给我们带来什么，我告诉大家，记住，就是第一条，所有你生活的必需品。
 
 ## Decoded-audio ASR match
 

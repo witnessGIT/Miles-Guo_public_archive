@@ -1,17 +1,17 @@
-# Playback Evidence — LIVE_20180616_001_SEG_000001
+# Playback Evidence — LIVE_20220511_001_SEG_000000
 
-- Case: `PILOT-E005`
-- Live: `LIVE_20180616_001`
-- Media: https://rumble.com/v578glm-20180616-1.html
-- Expected start: `119.000s`
-- Decode window: `119.000s` → `119.000s`
+- Case: `PILOT-L003`
+- Live: `LIVE_20220511_001`
+- Media: https://gettr.com/streaming/p19cmxu5e7b
+- Expected start: `0.000s`
+- Decode window: `0.000s` → `0.000s`
 - Real media decoded: `false`
 - Evidence status: `blocked_media_decode`
-- Bundle ID: `f1946f9f3c5d9fe230cf5c2941daf0ab893f9d3854895b7e57cda27bda9b8eae`
+- Bundle ID: `106de63e082170deeb99d78161b5826c2fad4a65cb0535793acec29d605f3f3d`
 
 ## Target text
 
-当今黑客是防国家机器和盗国贼、独裁集团对好人的迫害
+你是挨板砖出去揍你呀。我这讲话讲得我，从早上……
 
 ## Decoded-audio ASR match
 
