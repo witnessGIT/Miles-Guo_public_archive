@@ -141,6 +141,44 @@ def resolve_media(source):
     return source, {"resolver": "direct", "source": source}
 
 
+def _probe(path_or_url):
+    rc, out, err = run(
+        [
+            "ffprobe", "-v", "error",
+            "-show_entries", "format=duration:stream=index,codec_type,codec_name,width,height,r_frame_rate",
+            "-of", "json", str(path_or_url),
+        ],
+        timeout_sec=PROBE_TIMEOUT_SEC,
+    )
+    payload = None
+    if rc == 0:
+        try:
+            payload = json.loads(out or "{}")
+        except json.JSONDecodeError:
+            rc = 1
+            err = (err.rstrip() + "\n" if err else "") + "ffprobe returned invalid JSON"
+    return rc, payload or {}, err
+
+
+def _decoded_clip_is_usable(probe):
+    streams = probe.get("streams") if isinstance(probe, dict) else None
+    if not isinstance(streams, list):
+        return False, "decoded clip has no stream list"
+    media_streams = [
+        stream for stream in streams
+        if isinstance(stream, dict) and stream.get("codec_type") in {"audio", "video"}
+    ]
+    if not media_streams:
+        return False, "decoded clip contains no audio/video stream"
+    try:
+        duration = float((probe.get("format") or {}).get("duration"))
+    except (TypeError, ValueError):
+        return False, "decoded clip has no numeric duration"
+    if duration <= 0.1:
+        return False, f"decoded clip duration is too short: {duration}"
+    return True, ""
+
+
 def main():
     parser = argparse.ArgumentParser(description="Decode real media around an expected audit timestamp.")
     parser.add_argument("--media", required=True)
@@ -168,10 +206,8 @@ def main():
     clip_path = output_dir / f"{safe_label}_expected_{args.start:.3f}_from_{decode_start:.3f}_window_{args.window:.3f}.mp4"
     frame_path = output_dir / f"{safe_label}_expected_{args.start:.3f}.jpg"
     evidence_path = output_dir / f"{safe_label}_expected_{args.start:.3f}.json"
-    probe_rc, probe_out, probe_err = run(
-        ["ffprobe", "-v", "error", "-show_entries", "format=duration:stream=index,codec_type,codec_name,width,height,r_frame_rate", "-of", "json", resolved],
-        timeout_sec=PROBE_TIMEOUT_SEC,
-    )
+
+    probe_rc, probe, probe_err = _probe(resolved)
     if probe_rc != 0:
         payload = {
             "ok": False,
@@ -188,7 +224,7 @@ def main():
         evidence_path.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
         print(json.dumps(payload, ensure_ascii=False, indent=2))
         return 3
-    probe = json.loads(probe_out or "{}")
+
     decode_rc, _, decode_err = run(
         ["ffmpeg", "-y", "-v", "error", "-ss", f"{decode_start:.3f}", "-i", resolved, "-t", f"{args.window:.3f}", "-c:v", "libx264", "-preset", "ultrafast", "-c:a", "aac", str(clip_path)],
         timeout_sec=DECODE_TIMEOUT_SEC,
@@ -210,6 +246,29 @@ def main():
         evidence_path.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
         print(json.dumps(payload, ensure_ascii=False, indent=2))
         return 4
+
+    clip_probe_rc, clip_probe, clip_probe_err = _probe(clip_path)
+    clip_ok, clip_problem = _decoded_clip_is_usable(clip_probe)
+    if clip_probe_rc != 0 or not clip_ok:
+        diagnostic = clip_probe_err[-4000:] if clip_probe_rc != 0 else clip_problem
+        payload = {
+            "ok": False,
+            "stage": "verify_decoded_clip",
+            "resolution": resolution,
+            "media_source": args.media,
+            "expected_start_sec": args.start,
+            "decode_start_sec": decode_start,
+            "decode_window_sec": args.window,
+            "probe": probe,
+            "decoded_clip_probe": clip_probe,
+            "stderr": diagnostic,
+            "timed_out": clip_probe_rc == TIMEOUT_RETURN_CODE,
+            "timeout_sec": PROBE_TIMEOUT_SEC if clip_probe_rc == TIMEOUT_RETURN_CODE else None,
+        }
+        evidence_path.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
+        print(json.dumps(payload, ensure_ascii=False, indent=2))
+        return 5
+
     frame_rc, _, _ = run(
         ["ffmpeg", "-y", "-v", "error", "-ss", f"{args.start:.3f}", "-i", resolved, "-frames:v", "1", str(frame_path)],
         timeout_sec=FRAME_TIMEOUT_SEC,
@@ -225,11 +284,12 @@ def main():
         "pre_roll_sec": actual_pre_roll,
         "decode_window_sec": args.window,
         "probe": probe,
+        "decoded_clip_probe": clip_probe,
         "clip_path": str(clip_path),
         "frame_path": str(frame_path) if frame_rc == 0 else None,
         "playback_decode_verified": True,
         "content_timing_verified": False,
-        "note": "Real media decoded; reviewer must locate actual target content and record signed timing error before qualification.",
+        "note": "Real media decoded into a locally re-probed audio/video clip; reviewer must locate actual target content and record signed timing error before qualification.",
     }
     evidence_path.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
     print(json.dumps(payload, ensure_ascii=False, indent=2))
