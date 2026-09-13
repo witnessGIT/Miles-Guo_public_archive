@@ -1,15 +1,16 @@
 {
   "request_version": "playback-request-v1",
-  "request_revision": 1,
+  "request_revision": 2,
   "task_id": "P9-PLAYBACK-PILOT-M001",
   "case_id": "PILOT-M001",
   "live_id": "LIVE_20200323_001",
   "segment_id": "LIVE_20200323_001_SEG_000000",
-  "media_url": "https://odysee.com/@laxi:4/20200323:d",
+  "media_url": "https://rumble.com/v58722t-20200323.html",
   "requested_by": "agent-20260914-gpt56sol-fulltest5",
-  "requested_at": "2026-09-13T21:25:20Z",
+  "requested_at": "2026-09-13T21:34:00Z",
   "pre_roll_sec": 10.0,
   "decode_window_sec": 24.0,
   "language": "zh",
-  "visual_mode": "frames_ocr"
+  "visual_mode": "frames_ocr",
+  "retry_reason": "Try the second GHOT-linked trusted media source preserved in structured provenance after Odysee returned HTTP 429."
 }
