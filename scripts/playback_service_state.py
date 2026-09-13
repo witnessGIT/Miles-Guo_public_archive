@@ -98,6 +98,21 @@ def pending_requests(*, prepare_retries: bool) -> tuple[list[Path], list[str]]:
     return pending, problems
 
 
+def pending_requires_visual_runtime() -> tuple[bool, list[str]]:
+    """Return whether any truly pending request asks for the optional visual runtime."""
+    pending, problems = pending_requests(prepare_retries=False)
+    if problems:
+        return False, problems
+    for path in pending:
+        try:
+            request = load_object(path)
+            if request.get("visual_mode") == "smolvlm2_optional":
+                return True, []
+        except Exception as exc:
+            problems.append(f"{path.relative_to(ROOT)}: {type(exc).__name__}: {exc}")
+    return False, problems
+
+
 def pending_acceptances() -> tuple[list[Path], list[str]]:
     pending: list[Path] = []
     problems: list[str] = []
@@ -168,6 +183,7 @@ def main() -> int:
     group.add_argument("--prepare-pending-requests", action="store_true")
     group.add_argument("--pending-acceptances", action="store_true")
     group.add_argument("--finalize-evidence", action="store_true")
+    group.add_argument("--visual-runtime-needed", action="store_true")
     args = parser.parse_args()
 
     if args.pending_requests or args.prepare_pending_requests:
@@ -176,6 +192,9 @@ def main() -> int:
     elif args.pending_acceptances:
         paths, problems = pending_acceptances()
         emit_paths(paths)
+    elif args.visual_runtime_needed:
+        needed, problems = pending_requires_visual_runtime()
+        print("true" if needed else "false")
     else:
         problems = finalize_evidence()
 
