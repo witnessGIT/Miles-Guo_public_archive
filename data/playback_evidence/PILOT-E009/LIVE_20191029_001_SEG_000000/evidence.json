@@ -1,0 +1,21 @@
+{
+  "project": "Miles-Guo_public_archive",
+  "evidence_version": "repository-playback-evidence-v1",
+  "status": "blocked_media_decode",
+  "case_id": "PILOT-E009",
+  "live_id": "LIVE_20191029_001",
+  "segment_id": "LIVE_20191029_001_SEG_000000",
+  "request_ref": "coordination/playback_requests/PILOT-E009/LIVE_20191029_001_SEG_000000.json",
+  "requested_by": "agent-20260913-gpt56sol-fulltest2",
+  "media_url": "https://rumble.com/v57tlbx-20191029.html",
+  "expected_start_sec": 860.0,
+  "decode_start_sec": 860.0,
+  "decode_end_sec": 860.0,
+  "playback_decode_verified": false,
+  "counts_toward_pilot_60": false,
+  "stderr": "yt-dlp resolver failed for https://rumble.com/v57tlbx-20191029.html with rc=1:\nERROR: [Rumble] v57tlbx-20191029.html: Unable to download webpage: HTTP Error 403: Forbidden (caused by <HTTPError 403: Forbidden>)\n\n",
+  "generated_at": "2026-09-13T13:10:14.304322+00:00",
+  "bundle_id": "488be4fe7b7720010cfb5cc9e821c61851042922739a1e2bfb6713fbf89ebd63",
+  "request_revision": 1,
+  "request_sha256": "e73d9e54d8c426cfb5172bc7c19dadac16858ec12e9bec44fde66db146e8d212"
+}
