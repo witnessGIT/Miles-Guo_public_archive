@@ -110,17 +110,20 @@ jobs:
             exit "$state_rc"
           fi
           failed=0
-          while IFS= read -r request; do
+          # Snapshot the queue before running media subprocesses. Media tools may read stdin;
+          # a `while ... done < file` loop would let one child consume later request lines.
+          mapfile -t requests < /tmp/playback-requests.txt
+          for request in "${requests[@]}"; do
             [[ -z "$request" ]] && continue
             # A retry may replace prior retryable evidence only after request validation.
             # Stamp the exact request revision only when processing succeeded. Therefore a
             # malformed/unauthorized retry cannot delete or relabel an older evidence bundle.
-            if python scripts/process_playback_request.py --request "$request" --force; then
-              python scripts/stamp_playback_evidence.py --request "$request" || failed=1
+            if python scripts/process_playback_request.py --request "$request" --force </dev/null; then
+              python scripts/stamp_playback_evidence.py --request "$request" </dev/null || failed=1
             else
               failed=1
             fi
-          done < /tmp/playback-requests.txt
+          done
           exit "$failed"
 
       - name: Finalize repository evidence metadata
@@ -141,10 +144,11 @@ jobs:
             exit "$state_rc"
           fi
           failed=0
-          while IFS= read -r acceptance; do
+          mapfile -t acceptances < /tmp/playback-acceptances.txt
+          for acceptance in "${acceptances[@]}"; do
             [[ -z "$acceptance" ]] && continue
-            python scripts/accept_playback_evidence.py --acceptance "$acceptance" || failed=1
-          done < /tmp/playback-acceptances.txt
+            python scripts/accept_playback_evidence.py --acceptance "$acceptance" </dev/null || failed=1
+          done
           exit "$failed"
 
       - name: Validate durable playback records
