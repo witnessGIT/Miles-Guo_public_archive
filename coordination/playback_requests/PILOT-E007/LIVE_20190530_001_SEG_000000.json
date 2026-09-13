@@ -1,15 +1,16 @@
 {
   "request_version": "playback-request-v1",
-  "request_revision": 1,
+  "request_revision": 2,
   "task_id": "P9-PLAYBACK-PILOT-E007",
   "case_id": "PILOT-E007",
   "live_id": "LIVE_20190530_001",
   "segment_id": "LIVE_20190530_001_SEG_000000",
-  "media_url": "https://rumble.com/v57ljgt-20190530-2.html",
-  "requested_by": "agent-20260913T052200Z-gpt56sol-playback-e007",
-  "requested_at": "2026-09-13T05:23:00Z",
+  "media_url": "https://odysee.com/@laxi:4/20190530_2:e",
+  "requested_by": "agent-20260913-gpt56sol-fulltest2",
+  "requested_at": "2026-09-13T12:59:00Z",
   "pre_roll_sec": 10.0,
   "decode_window_sec": 24.0,
   "language": "zh",
-  "visual_mode": "frames_ocr"
+  "visual_mode": "frames_ocr",
+  "retry_reason": "Prior orphaned revision 1 used trusted Rumble provenance and produced blocked_media_decode HTTP 403; current active claim retries with trusted Odysee alternate provenance."
 }
