@@ -103,9 +103,34 @@ class PlaybackServiceStateTest(unittest.TestCase):
             "case_id": "PILOT-X",
             "live_id": "LIVE-X",
             "agent_id": "agent-a",
+            "queue_generation": state.ACTIVE_QUEUE_GENERATION,
             "missing_segment_ids": ["SEG-NEW"],
         }
         self.write_json(state.REQUEST_ROOT / "PILOT-X" / "SEG-OLD.json", request)
+        self.write_json(state.CLAIM_ROOT / "P9-PLAYBACK-PILOT-X.json", claim)
+
+        pending, problems = state.pending_requests(prepare_retries=False)
+
+        self.assertEqual(pending, [])
+        self.assertEqual(problems, [])
+
+    def test_legacy_claim_is_inactive_after_generation_reset(self):
+        request = {
+            "request_version": "playback-request-v1",
+            "task_id": "P9-PLAYBACK-PILOT-X",
+            "case_id": "PILOT-X",
+            "live_id": "LIVE-X",
+            "segment_id": "SEG-1",
+            "requested_by": "agent-a",
+        }
+        claim = {
+            "task_id": "P9-PLAYBACK-PILOT-X",
+            "case_id": "PILOT-X",
+            "live_id": "LIVE-X",
+            "agent_id": "agent-a",
+            "missing_segment_ids": ["SEG-1"],
+        }
+        self.write_json(state.REQUEST_ROOT / "PILOT-X" / "SEG-1.json", request)
         self.write_json(state.CLAIM_ROOT / "P9-PLAYBACK-PILOT-X.json", claim)
 
         pending, problems = state.pending_requests(prepare_retries=False)
@@ -127,6 +152,7 @@ class PlaybackServiceStateTest(unittest.TestCase):
             "case_id": "PILOT-X",
             "live_id": "LIVE-X",
             "agent_id": "agent-a",
+            "queue_generation": state.ACTIVE_QUEUE_GENERATION,
             "missing_segment_ids": ["SEG-1"],
         }
         request_path = state.REQUEST_ROOT / "PILOT-X" / "SEG-1.json"
