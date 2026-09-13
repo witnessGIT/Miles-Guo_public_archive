@@ -110,7 +110,10 @@ jobs:
           failed=0
           while IFS= read -r request; do
             [[ -z "$request" ]] && continue
-            python scripts/process_playback_request.py --request "$request" || failed=1
+            # State manager emits only new/retryable revisions. --force allows a validated
+            # newer retry to replace prior retryable evidence. process_playback_request.py
+            # validates claim/canonical identity/provenance before touching the old bundle.
+            python scripts/process_playback_request.py --request "$request" --force || failed=1
           done < /tmp/playback-requests.txt
           exit "$failed"
 
