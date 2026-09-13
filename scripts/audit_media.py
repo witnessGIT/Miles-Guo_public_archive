@@ -231,64 +231,68 @@ def resolve_media(source, *, allow_archive=True):
                 file=sys.stderr,
             )
 
+    # Prefer platform-native anonymous public resolvers before webpage extraction. This avoids
+    # known 403/429/timeout behavior in yt-dlp for GETTR/Odysee pages while preserving yt-dlp as
+    # a bounded fallback. No cookies, credentials, CAPTCHA bypass, or access-control circumvention
+    # is used by either resolver.
+    gettr_url, gettr_resolution = resolve_gettr_streaming_public(source)
+    if gettr_url:
+        if archive_resolution:
+            gettr_resolution["archive_resolution"] = archive_resolution
+        return gettr_url, gettr_resolution
+    if gettr_resolution:
+        print(
+            f"GETTR public resolver failed for {source}: {gettr_resolution.get('error', 'unknown error')}",
+            file=sys.stderr,
+        )
+
+    odysee_url, odysee_resolution = resolve_odysee_public(source)
+    if odysee_url:
+        if archive_resolution:
+            odysee_resolution["archive_resolution"] = archive_resolution
+        return odysee_url, odysee_resolution
+    if odysee_resolution:
+        print(
+            f"Odysee public resolver failed for {source}: {odysee_resolution.get('error', 'unknown error')}",
+            file=sys.stderr,
+        )
+
     if source.startswith(("http://", "https://")) and shutil.which("yt-dlp"):
         rc, out, err = run(["yt-dlp", "-g", "--no-playlist", source], timeout_sec=RESOLVE_TIMEOUT_SEC)
         if rc == 0 and out.strip():
             resolution = {"resolver": "yt-dlp", "source": source, "yt_dlp_returncode": rc}
+            if gettr_resolution:
+                resolution["gettr_public_resolution"] = gettr_resolution
+            if odysee_resolution:
+                resolution["odysee_public_resolution"] = odysee_resolution
             if archive_resolution:
                 resolution["archive_resolution"] = archive_resolution
             return out.strip().splitlines()[0], resolution
         diag = (err or "")[-4000:]
         print(f"yt-dlp resolver failed for {source} with rc={rc}:\n{diag}", file=sys.stderr)
 
-        gettr_url, gettr_resolution = resolve_gettr_streaming_public(source)
-        if gettr_url:
-            gettr_resolution["yt_dlp_returncode"] = rc
-            gettr_resolution["yt_dlp_stderr"] = diag
-            return gettr_url, gettr_resolution
-        if gettr_resolution:
-            print(
-                f"GETTR public resolver failed for {source}: {gettr_resolution.get('error', 'unknown error')}",
-                file=sys.stderr,
-            )
-            return source, {
-                **gettr_resolution,
-                "yt_dlp_returncode": rc,
-                "yt_dlp_stderr": diag,
-                "resolver_timeout_sec": RESOLVE_TIMEOUT_SEC,
-            }
-
-        odysee_url, odysee_resolution = resolve_odysee_public(source)
-        if odysee_url:
-            odysee_resolution["yt_dlp_returncode"] = rc
-            odysee_resolution["yt_dlp_stderr"] = diag
-            return odysee_url, odysee_resolution
-        if odysee_resolution:
-            print(
-                f"Odysee public resolver failed for {source}: {odysee_resolution.get('error', 'unknown error')}",
-                file=sys.stderr,
-            )
-            result = {
-                **odysee_resolution,
-                "yt_dlp_returncode": rc,
-                "yt_dlp_stderr": diag,
-                "resolver_timeout_sec": RESOLVE_TIMEOUT_SEC,
-            }
-            if archive_resolution:
-                result["archive_resolution"] = archive_resolution
-            return source, result
-
         result = {
-            "resolver": "direct_after_yt_dlp_failure",
+            "resolver": "direct_after_public_and_yt_dlp_failure",
             "source": source,
             "yt_dlp_returncode": rc,
             "yt_dlp_stderr": diag,
             "resolver_timeout_sec": RESOLVE_TIMEOUT_SEC,
         }
+        if gettr_resolution:
+            result["gettr_public_resolution"] = gettr_resolution
+        if odysee_resolution:
+            result["odysee_public_resolution"] = odysee_resolution
         if archive_resolution:
             result["archive_resolution"] = archive_resolution
         return source, result
-    return source, {"resolver": "direct", "source": source}
+    result = {"resolver": "direct", "source": source}
+    if gettr_resolution:
+        result["gettr_public_resolution"] = gettr_resolution
+    if odysee_resolution:
+        result["odysee_public_resolution"] = odysee_resolution
+    if archive_resolution:
+        result["archive_resolution"] = archive_resolution
+    return source, result
 
 
 def _probe(path_or_url):
