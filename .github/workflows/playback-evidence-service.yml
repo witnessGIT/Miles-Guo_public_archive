@@ -20,7 +20,10 @@ permissions:
 
 concurrency:
   group: miles-guo-playback-evidence-writer
-  cancel-in-progress: false
+  # Every run checks out fresh main and scans the complete pending queue. The newest run can
+  # therefore safely replace an older queued/in-progress run; pending requests remain durable
+  # on main and will be picked up again, avoiding redundant installs/compiles per request push.
+  cancel-in-progress: true
 
 env:
   WHISPER_CPP_REF: v1.9.4
@@ -34,9 +37,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          # The concurrency group serializes this service, but a queued run may have an old
-          # event SHA. Always start from fresh main so it sees evidence published by the
-          # preceding service run and does not regenerate the same durable bundle.
+          # A run may have an old event SHA. Always start from fresh main so it sees durable
+          # evidence published earlier and all currently pending requests/acceptances.
           ref: main
           fetch-depth: 0
 
