@@ -25,6 +25,7 @@ concurrency:
 env:
   WHISPER_CPP_REF: v1.9.4
   WHISPER_MODEL_NAME: small
+  CCACHE_DIR: /home/runner/.cache/ccache
 
 jobs:
   process-playback-evidence:
@@ -48,7 +49,7 @@ jobs:
         run: |
           set -euo pipefail
           sudo apt-get update
-          sudo apt-get install -y ffmpeg tesseract-ocr tesseract-ocr-chi-sim
+          sudo apt-get install -y ffmpeg tesseract-ocr tesseract-ocr-chi-sim ccache
           python -m pip install --upgrade pip
           python -m pip install yt-dlp
 
@@ -58,6 +59,14 @@ jobs:
           path: ~/.cache/miles-guo-playback/models
           key: playback-${{ runner.os }}-whisper-model-${{ env.WHISPER_CPP_REF }}-${{ env.WHISPER_MODEL_NAME }}
 
+      - name: Cache portable whisper compilation objects
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/ccache
+          key: playback-${{ runner.os }}-whisper-ccache-${{ env.WHISPER_CPP_REF }}-ggml-native-off-v1
+          restore-keys: |
+            playback-${{ runner.os }}-whisper-ccache-${{ env.WHISPER_CPP_REF }}-
+
       - name: Prepare portable whisper.cpp
         shell: bash
         run: |
@@ -66,14 +75,19 @@ jobs:
           model_root="$root/models"
           tool="$RUNNER_TEMP/whisper.cpp-${WHISPER_CPP_REF}"
           rm -rf "$tool"
-          mkdir -p "$model_root"
+          mkdir -p "$model_root" "$CCACHE_DIR"
+          ccache --max-size=1G
+          ccache --zero-stats
           git clone --depth 1 --branch "$WHISPER_CPP_REF" https://github.com/ggml-org/whisper.cpp.git "$tool"
           cmake -S "$tool" -B "$tool/build" \
             -DCMAKE_BUILD_TYPE=Release \
+            -DCMAKE_C_COMPILER_LAUNCHER=ccache \
+            -DCMAKE_CXX_COMPILER_LAUNCHER=ccache \
             -DGGML_NATIVE=OFF \
             -DWHISPER_BUILD_TESTS=OFF \
             -DWHISPER_BUILD_EXAMPLES=ON
           cmake --build "$tool/build" --config Release -j 4
+          ccache --show-stats
           model="$model_root/ggml-${WHISPER_MODEL_NAME}.bin"
           if [[ ! -f "$model" ]]; then
             bash "$tool/models/download-ggml-model.sh" "$WHISPER_MODEL_NAME"
