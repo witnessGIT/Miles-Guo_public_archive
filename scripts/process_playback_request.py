@@ -195,6 +195,54 @@ def best_asr_match(entries: list[dict], target: str, search_text: str | None) ->
     return best
 
 
+
+def best_ocr_match(frames: list[dict], target: str, search_text: str | None) -> dict | None:
+    """Find a conservative target-text candidate in sampled frame OCR.
+
+    Whole-frame OCR is noisy, so score individual lines and short adjacent line windows.
+    A match only promotes decoded evidence to agent review; it never creates a qualifying
+    playback record without explicit active-claim-owner acceptance.
+    """
+    target_norm = normalize_text(target)
+    if len(target_norm) < 4 or not frames:
+        return None
+    keywords = keyword_tokens(search_text)
+    best: dict | None = None
+    for frame in frames:
+        raw = str(frame.get("ocr_text") or "")
+        lines = [line.strip() for line in raw.splitlines() if normalize_text(line)]
+        if not lines:
+            continue
+        max_window = min(3, len(lines))
+        for i in range(len(lines)):
+            for width in range(1, max_window + 1):
+                part = lines[i : i + width]
+                if not part:
+                    continue
+                combined = " ".join(part)
+                combined_norm = normalize_text(combined)
+                if len(combined_norm) < 4:
+                    continue
+                ratio = difflib.SequenceMatcher(None, target_norm, combined_norm).ratio()
+                coverage = 0.0
+                if keywords:
+                    hits = sum(1 for token in keywords if token in combined_norm)
+                    coverage = hits / len(keywords)
+                score = max(ratio, ratio * 0.75 + coverage * 0.25)
+                candidate = {
+                    "local_sec": float(frame.get("local_sec") or 0.0),
+                    "absolute_sec": float(frame.get("absolute_sec") or 0.0),
+                    "text": combined,
+                    "similarity": round(ratio, 6),
+                    "keyword_coverage": round(coverage, 6),
+                    "score": round(score, 6),
+                    "line_count": len(part),
+                    "frame_sha256": frame.get("sha256"),
+                }
+                if best is None or candidate["score"] > best["score"]:
+                    best = candidate
+    return best
+
 def frame_offsets(window: float, expected_local: float) -> list[float]:
     candidates = [
         max(0.0, expected_local - 8.0),
@@ -455,15 +503,30 @@ def process_request(path: Path, *, force: bool = False) -> Path:
     decode_start = float(decode.get("decode_start_sec", expected))
     decode_window = float(decode.get("decode_window_sec", window))
     decode_end = decode_start + decode_window
-    observed = round(decode_start + float(match["local_start_sec"]), 3) if match else None
-    timing_error = round(observed - expected, 3) if observed is not None else None
 
     frames = collect_frame_evidence(clip, temp_dir, decode_start, expected, decode_window)
+    visual_match = best_ocr_match(frames, target_text, segment.get("text_search"))
     smolvlm = run_optional_smolvlm(
         clip, temp_dir,
         bool(request.get("visual_mode") == "smolvlm2_optional" and os.environ.get("ENABLE_SMOLVLM") == "1"),
     )
-    candidate_match = bool(match and float(match.get("score", 0.0)) >= MIN_AGENT_REVIEW_SCORE)
+    candidates: list[tuple[str, dict]] = []
+    if match:
+        candidates.append(("audio_asr", match))
+    if visual_match:
+        candidates.append(("frame_ocr", visual_match))
+    candidate_method, candidate = max(
+        candidates, key=lambda item: float(item[1].get("score", 0.0))
+    ) if candidates else (None, None)
+    candidate_score = float((candidate or {}).get("score", 0.0))
+    if candidate_method == "frame_ocr":
+        observed = round(float(candidate["absolute_sec"]), 3)
+    elif candidate_method == "audio_asr":
+        observed = round(decode_start + float(candidate["local_start_sec"]), 3)
+    else:
+        observed = None
+    timing_error = round(observed - expected, 3) if observed is not None else None
+    candidate_match = bool(candidate and candidate_score >= MIN_AGENT_REVIEW_SCORE)
     status = "ready_for_agent_review" if candidate_match else "needs_manual_or_wider_review"
 
     audio_rows = [{
@@ -489,7 +552,9 @@ def process_request(path: Path, *, force: bool = False) -> Path:
             "process_returncode": None if whisper_proc is None else whisper_proc.returncode,
             "stderr_tail": "" if whisper_proc is None else whisper_proc.stderr[-2000:],
         },
-        "visual_evidence": {"frames": frames, "smolvlm": smolvlm},
+        "visual_evidence": {"frames": frames, "best_match": visual_match, "smolvlm": smolvlm},
+        "candidate_match_method": candidate_method,
+        "candidate_match_score": round(candidate_score, 6),
         "candidate_content_match": candidate_match,
         "candidate_observed_position_sec": observed,
         "candidate_timing_error_sec": timing_error,
@@ -511,7 +576,7 @@ def process_request(path: Path, *, force: bool = False) -> Path:
     evidence_path.write_text(json.dumps(core, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     (out_dir / "evidence.md").write_text(build_markdown(core), encoding="utf-8")
     print(f"Playback evidence written: {safe_rel(evidence_path)}")
-    print(f"status={status} score={(match or {}).get('score')} observed={observed}")
+    print(f"status={status} method={candidate_method} score={candidate_score:.6f} observed={observed}")
     return evidence_path
 
 

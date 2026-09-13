@@ -128,11 +128,19 @@ def process_acceptance(path: Path) -> Path:
     signed = observed - expected
     absolute = abs(signed)
 
-    match = (evidence.get("audio_asr") or {}).get("best_match") or {}
-    score = float(match.get("score") or 0.0)
+    match_method = str(evidence.get("candidate_match_method") or "audio_asr")
+    if match_method == "frame_ocr":
+        match = (evidence.get("visual_evidence") or {}).get("best_match") or {}
+    elif match_method == "audio_asr":
+        match = (evidence.get("audio_asr") or {}).get("best_match") or {}
+    else:
+        raise ValueError(f"unsupported candidate_match_method: {match_method!r}")
+    score = float(evidence.get("candidate_match_score") or match.get("score") or 0.0)
     minimum = float(evidence.get("minimum_agent_review_score") or 1.0)
     if score < minimum:
-        raise ValueError(f"ASR match score {score} is below evidence minimum {minimum}")
+        raise ValueError(
+            f"candidate match score {score} via {match_method} is below evidence minimum {minimum}"
+        )
 
     decode_start = float(evidence["decode_start_sec"])
     decode_window = float(evidence["decode_window_sec"])
@@ -152,7 +160,7 @@ def process_acceptance(path: Path) -> Path:
         "timing_error_sec": round(signed, 3),
         "absolute_timing_error_sec": round(absolute, 3),
         "media_url": str(evidence["media_url"]),
-        "observation_mode": "audio" if not (evidence.get("visual_evidence") or {}).get("frames") else "both",
+        "observation_mode": "visual" if match_method == "frame_ocr" else ("audio" if not (evidence.get("visual_evidence") or {}).get("frames") else "both"),
         "content_match": True,
         "content_observation": str(acceptance["content_observation"]),
         "playback_decode_verified": True,
@@ -163,7 +171,10 @@ def process_acceptance(path: Path) -> Path:
         "repository_evidence_ref": str(evidence_path.relative_to(ROOT)),
         "repository_evidence_bundle_id": str(evidence["bundle_id"]),
         "repository_evidence_engine": str(evidence.get("inspection_engine") or ""),
-        "repository_asr_match_score": score,
+        "repository_candidate_match_method": match_method,
+        "repository_candidate_match_score": score,
+        "repository_asr_match_score": float(((evidence.get("audio_asr") or {}).get("best_match") or {}).get("score") or 0.0),
+        "repository_ocr_match_score": float(((evidence.get("visual_evidence") or {}).get("best_match") or {}).get("score") or 0.0),
         "repository_minimum_review_score": minimum,
         "agent_evidence_acceptance": True,
         "acceptance_ref": str(path.resolve().relative_to(ROOT.resolve())),
@@ -177,8 +188,8 @@ def process_acceptance(path: Path) -> Path:
         "clip_sha256": evidence.get("temporary_clip_sha256"),
         "note": (
             "Qualifying v2 record produced only after GitHub Actions decoded real media, "
-            "offline Whisper located the target inside the decoded window, durable textual/visual "
-            "evidence was written to Git, and the active playback claim owner explicitly reviewed "
+            "repository ASR/OCR inspection located a review candidate inside the decoded window, "
+            "durable textual/visual evidence was written to Git, and the active playback claim owner explicitly reviewed "
             "and accepted that exact evidence bundle."
         ),
     }
