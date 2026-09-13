@@ -1,11 +1,12 @@
 {
   "task_id": "P9-PLAYBACK-PILOT-L007",
-  "agent_id": "agent-20260913-admin-playback-smoke",
-  "claimed_at": "2026-09-12T17:55:00Z",
+  "agent_id": "agent-20260914-gpt56sol-generation2",
+  "claimed_at": "2026-09-13T22:39:00Z",
   "status": "in_progress",
   "kind": "real_playback_audit",
   "case_id": "PILOT-L007",
   "live_id": "LIVE_20230310_001",
+  "queue_generation": 2,
   "missing_segment_ids": [
     "LIVE_20230310_001_SEG_000000",
     "LIVE_20230310_001_SEG_000001"
@@ -16,5 +17,5 @@
   "workflow_mode": "continuous-worker-v2",
   "claim_protocol": "claim-protocol-v2",
   "continue_after_finish": true,
-  "scope": "Smoke-test the ordinary-Agent repository Playback Evidence Service on the first canonical timed segment, without treating service failure as qualifying evidence."
+  "scope": "Generation-2 clean rerun of verified GETTR post media. Re-run only canonical segments with durable request/timing data; do not infer missing request metadata."
 }
