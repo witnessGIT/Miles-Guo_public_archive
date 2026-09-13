@@ -1,0 +1,21 @@
+{
+  "project": "Miles-Guo_public_archive",
+  "evidence_version": "repository-playback-evidence-v1",
+  "status": "blocked_media_decode",
+  "case_id": "PILOT-M002",
+  "live_id": "LIVE_20200418_001",
+  "segment_id": "LIVE_20200418_001_SEG_000001",
+  "request_ref": "coordination/playback_requests/PILOT-M002/LIVE_20200418_001_SEG_000001.json",
+  "requested_by": "agent-20260914-gpt56sol-generation2",
+  "media_url": "https://ghot.ai/archive/videos/2020-04-18-3",
+  "expected_start_sec": 186.0,
+  "decode_start_sec": 186.0,
+  "decode_end_sec": 186.0,
+  "playback_decode_verified": false,
+  "counts_toward_pilot_60": false,
+  "stderr": "Trusted archive resolver failed for https://ghot.ai/archive/videos/2020-04-18-3: ValueError: trusted archive page exposed no supported public media URL\nyt-dlp resolver failed for https://ghot.ai/archive/videos/2020-04-18-3 with rc=1:\nWARNING: [generic] Falling back on generic information extractor\nERROR: Unsupported URL: https://ghot.ai/archive/videos/2020-04-18-3\n\n",
+  "generated_at": "2026-09-13T22:26:33.634655+00:00",
+  "bundle_id": "83adef27b302b1a5a7534b5d66b6606b178acf5ffddd9d71e3aa94f52073619e",
+  "request_revision": 1,
+  "request_sha256": "5f4d9ef72fd3ea26857fa86335b2ed7ecb397bd48ea3782e9a9c476169d1da6d"
+}
