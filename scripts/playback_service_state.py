@@ -13,6 +13,11 @@ CLAIM_ROOT = ROOT / "coordination" / "claims"
 EVIDENCE_ROOT = ROOT / "data" / "playback_evidence"
 AUDIT_ROOT = ROOT / "data" / "playback_audits"
 
+# Queue generation 2 is the clean restart boundary requested after the first round of
+# exploratory Playback work. Historical requests/claims remain durable evidence, but only
+# claims explicitly created for this generation may enter the active service queue.
+ACTIVE_QUEUE_GENERATION = 2
+
 RETRYABLE_EVIDENCE_STATUSES = {
     "blocked_media_decode",
     "needs_manual_or_wider_review",
@@ -63,8 +68,11 @@ def request_has_active_claim(request: dict) -> bool:
     Playback request files are durable history. A newer/rebuilt claim can legitimately remove a
     segment from its missing set, or a completed task can remove/release the claim entirely.
     Those historical requests must not be re-enqueued forever by the repository service.
-    The request processor still performs the full security/canonical validation on requests that
-    pass this lightweight queue-membership check.
+
+    Queue generations provide a non-destructive reset boundary. Claims from an earlier generation
+    (including legacy claims with no queue_generation field) are historical and cannot re-enter
+    the current queue. The request processor still performs the full security/canonical validation
+    on requests that pass this lightweight queue-membership check.
     """
     case_id = str(request.get("case_id") or "")
     live_id = str(request.get("live_id") or "")
@@ -83,6 +91,8 @@ def request_has_active_claim(request: dict) -> bool:
     except Exception:
         # Invalid active claim is a real control-plane problem; let the processor surface it.
         return True
+    if claim.get("queue_generation") != ACTIVE_QUEUE_GENERATION:
+        return False
     if str(claim.get("agent_id") or "") != requested_by:
         return False
     if str(claim.get("case_id") or "") != case_id:
