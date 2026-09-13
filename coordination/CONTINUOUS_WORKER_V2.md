@@ -4,25 +4,31 @@ Project: `Miles-Guo_public_archive`
 Policy: `continuous-worker-v2`  
 Claim protocol: `claim-protocol-v2`
 
-## Goal
+## Owner standing directive
+
+The repository owner has explicitly authorized continuous multi-Agent execution.
 
 ```text
 ENTER REPOSITORY
   -> DISCOVER ELIGIBLE WORK
   -> CLAIM
+  -> PUSH CLAIM DIRECTLY
   -> EXECUTE
   -> VALIDATE
-  -> COMMIT/PUSH OUTPUTS
+  -> COMMIT/PUSH OUTPUTS DIRECTLY
   -> FINISH / PUBLISH READINESS
+  -> REFRESH REPOSITORY STATE
   -> CLAIM NEXT TASK
   -> REPEAT
 ```
 
-A worker does not intentionally stop after one successful task while other safe eligible work exists. Losing one claim race is not a stop condition.
+For ordinary claimed archive/business work, no PR and no repeated per-task owner approval are required. An Agent must not intentionally stop after one successful task while other safe eligible work exists.
+
+The target is not merely Pilot completion. Preserve all required Pilot quality gates; after they pass, continue into `FULL_ARCHIVE` and keep processing eligible public video archive work until the archive is complete.
 
 ## Platform limitation
 
-Git/GitHub provides coordination, execution services and durable resume state, but cannot resurrect a host-suspended ChatGPT/Work/Codex session. Continuous behavior applies while the Agent session remains active.
+Git/GitHub provides coordination, execution services and durable resume state, but cannot resurrect a host-suspended ChatGPT/Work/Codex session. Continuous behavior applies while the Agent session remains active. Future Agents resume from durable Git state.
 
 ## Effective scope / grandfather rule
 
@@ -40,6 +46,14 @@ New claims contain:
 
 Finish-time prerequisite checks may still enforce newer safety/quality gates on an older claim. A grandfathered claim never authorizes bypassing a newly required acceptance dependency.
 
+## Direct-push business rule
+
+Every Agent that actually has repository write capability may directly push outputs belonging to its valid claimed business/playback task to `main`, including its own claim/completion/readiness records and permitted playback requests/acceptances.
+
+This policy does not grant GitHub permission to accounts that lack repository write access.
+
+Protected shared machinery remains admin-only. Keeping `scripts/`, schema, CI, workflow policy and service-generated evidence protected is a concurrency-safety boundary, not an approval gate for normal archive work.
+
 ## Stop conditions
 
 A v2 Agent stops only for a documented reason:
@@ -47,16 +61,18 @@ A v2 Agent stops only for a documented reason:
 1. `PROJECT_COMPLETE`
 2. `USER_RECALL`
 3. genuine `NO_ELIGIBLE_WORK`
-4. `HUMAN_DECISION_REQUIRED`
+4. unavoidable `HUMAN_DECISION_REQUIRED`
 5. `SAFETY_OR_ACCESS_BLOCK`
 6. verified `GITHUB_WRITE_ERROR`
 7. true `HOST_STOP`
 
-Finishing one task or losing one claim race is not a stop condition.
+Finishing one task, one livestream, one case, one batch, or losing one claim race is not a stop condition.
 
-Because the repository now exposes a Playback Evidence Service, lack of **local** ffmpeg/player/media inspection is not by itself `HOST_STOP`. If unclaimed `P9-PLAYBACK-*` work exists and `.github/workflows/playback-evidence-service.yml` is available, ordinary workers can continue through repository requests/evidence/acceptances.
+A control-plane bug affecting only one task is not a repository-wide stop condition. A worker files an immutable bug report, refreshes the queue, and immediately continues another compatible eligible task. Admin Agents repair shared machinery.
 
-`HOST_STOP` for Playback is appropriate only when neither the repository service nor a valid local fallback is available to the current session.
+Because the repository exposes a Playback Evidence Service, lack of **local** ffmpeg/player/media inspection is not by itself `HOST_STOP`. If unclaimed `P9-PLAYBACK-*` work exists and `.github/workflows/playback-evidence-service.yml` is available, ordinary workers can continue through repository requests/evidence/acceptances.
+
+`HOST_STOP` for Playback is appropriate only when neither the repository service nor a valid local fallback is available to the current session for all remaining compatible work, or the host actually ends the session.
 
 ## Claim-race recovery
 
@@ -71,7 +87,7 @@ Only repeated fresh failure with no race/staleness explanation becomes `GITHUB_W
 
 ## No-sleep rule
 
-After completion, refresh and claim the next compatible task. If another Agent wins a claim race, choose another eligible candidate. If no task is eligible, report the exact repository state instead of inventing work.
+After completion, refresh and claim the next compatible task. If another Agent wins a claim race, choose another eligible candidate. If no ordinary task is eligible, check Playback work; if no Playback work is eligible, check gate/report work appropriate to current prerequisites. Do not invent work, but do not stop merely because one queue is temporarily empty while another valid queue remains.
 
 ## Ordinary and Playback work
 
@@ -97,6 +113,7 @@ claim P9-PLAYBACK-*
  -> if evidence really matches, write coordination/playback_acceptances/<CASE>/<SEGMENT>.json
  -> service creates qualifying playback audit record
  -> finish case when all current timed segments qualify
+ -> refresh and claim next task
 ```
 
 Workers use this service but must not modify the service implementation. Bugs in it are reported to `coordination/bug_reports/` for an admin Agent.
@@ -137,7 +154,7 @@ reports/
 
 Temporary videos/audio/frames/models/caches do not belong in Git.
 
-## Current Pilot end behavior
+## Pilot -> full archive behavior
 
 Historical `P9-AUDIT-60` and `P10-PILOT-DECISION` are superseded audit history only.
 
@@ -148,6 +165,8 @@ valid real Playback evidence
  -> P9-PLAYBACK-GATE
  -> P9-AUDIT-60-R2
  -> P10-PILOT-DECISION-R2
+ -> FULL_ARCHIVE
+ -> continue until all eligible public video archive work is complete
 ```
 
-A worker must not begin `FULL_ARCHIVE` unless current `P10-PILOT-DECISION-R2` explicitly records `full_archive_decision=YES` after all required quality gates pass.
+The quality gates remain mandatory. The owner has already stated the standing intent to continue full-archive processing after those gates pass, so an Agent must not ask for a second owner confirmation merely to continue from a successful Pilot into FULL_ARCHIVE. The current P10 record must still contain the required machine-readable decision in accordance with repository contracts.
