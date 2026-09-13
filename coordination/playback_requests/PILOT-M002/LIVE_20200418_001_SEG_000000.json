@@ -1,16 +1,16 @@
 {
   "request_version": "playback-request-v1",
-  "request_revision": 4,
+  "request_revision": 5,
   "task_id": "P9-PLAYBACK-PILOT-M002",
   "case_id": "PILOT-M002",
   "live_id": "LIVE_20200418_001",
   "segment_id": "LIVE_20200418_001_SEG_000000",
-  "media_url": "https://gwins.org/cn/milesguo/1149.html",
+  "media_url": "https://odysee.com/@laxi:4/20200418:b",
   "requested_by": "agent-20260914-gpt56sol-generation2",
-  "requested_at": "2026-09-13T23:38:00Z",
+  "requested_at": "2026-09-13T23:46:00Z",
   "pre_roll_sec": 10.0,
   "decode_window_sec": 24.0,
   "language": "zh",
   "visual_mode": "frames_ocr",
-  "retry_reason": "Generation-2 revision 4: direct Odysee was blocked by HTTP 429 and direct Rumble by HTTP 403. Retry through the repository-verified GWINS archive page so the trusted archive-page resolver can select a supported public media link without inventing provenance."
+  "retry_reason": "Generation-2 revision 5 diagnostic rerun after adding anonymous Odysee public SDK resolution and durable structured decode failure diagnostics. Use the repository-verified Odysee source directly to isolate the resolver path."
 }
