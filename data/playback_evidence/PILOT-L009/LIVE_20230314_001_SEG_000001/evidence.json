@@ -1,0 +1,97 @@
+{
+  "project": "Miles-Guo_public_archive",
+  "evidence_version": "repository-playback-evidence-v1",
+  "status": "needs_manual_or_wider_review",
+  "case_id": "PILOT-L009",
+  "live_id": "LIVE_20230314_001",
+  "segment_id": "LIVE_20230314_001_SEG_000001",
+  "task_id": "P9-PLAYBACK-PILOT-L009",
+  "request_ref": "coordination/playback_requests/PILOT-L009/LIVE_20230314_001_SEG_000001.json",
+  "requested_by": "agent-20260913T052200Z-gpt56sol-playback-l009-r2",
+  "media_url": "https://gettr.com/post/p2bexmi7ac8",
+  "target_text": "现在我这个理发成政治事件了。很多投资人说，Miles，你不能理发！",
+  "target_text_search": "理发 政治事件 投资人 Miles",
+  "expected_start_sec": 30.0,
+  "decode_request_start_sec": 30.0,
+  "decode_start_sec": 20.0,
+  "decode_end_sec": 44.0,
+  "decode_window_sec": 24.0,
+  "decode_resolver": "yt-dlp",
+  "playback_decode_verified": true,
+  "repository_content_inspection": true,
+  "inspection_engine": "github-actions+ffmpeg+whisper.cpp+frame-ocr",
+  "audio_asr": {
+    "engine": "whisper.cpp",
+    "model": "ggml-small.bin",
+    "entries": [
+      {
+        "local_start_sec": 0.0,
+        "local_end_sec": 2.0,
+        "absolute_start_sec": 20.0,
+        "absolute_end_sec": 22.0,
+        "text": "(心动)"
+      }
+    ],
+    "best_match": {
+      "local_start_sec": 0.0,
+      "local_end_sec": 2.0,
+      "text": "(心动)",
+      "similarity": 0.0,
+      "keyword_coverage": 0.0,
+      "score": 0.0,
+      "entry_count": 1
+    },
+    "process_returncode": 0,
+    "stderr_tail": "read_audio_data: reading audio data from '/home/runner/work/Miles-Guo_public_archive/Miles-Guo_public_archive/cache/playback_evidence/PILOT-L009/LIVE_20230314_001_SEG_000001/audio_16k_mono.wav' ...\nread_audio_data: trying to decode with miniaudio\noutput_srt: saving output to '/home/runner/work/Miles-Guo_public_archive/Miles-Guo_public_archive/cache/playback_evidence/PILOT-L009/LIVE_20230314_001_SEG_000001/whisper.srt'\n"
+  },
+  "visual_evidence": {
+    "frames": [
+      {
+        "local_sec": 2.0,
+        "absolute_sec": 22.0,
+        "sha256": "641c3b88527c2572d66d5ab1833d7b4c6e88696a118a101c886e5ebc4d9b3d4d",
+        "ocr_text": "|                     _ 二\n                om\n\na F\n\n               oS’ -\n—_—                           .\n\nPP\n\n|     |                J      y\n\nWD\n\n~~ <<"
+      },
+      {
+        "local_sec": 6.0,
+        "absolute_sec": 26.0,
+        "sha256": "79430ab50f777c86c28e65fc47d9aba235960cfe494ba0e12c824429f23a989f",
+        "ocr_text": "=        |\n3 —\ni}              ,\n=                                  ee\n:"
+      },
+      {
+        "local_sec": 10.0,
+        "absolute_sec": 30.0,
+        "sha256": "cbf31daddd68ab84ed5e871384f4e7cae1ba0e28f1289ece7b54a110aaf23ec1",
+        "ocr_text": "Ves                  1\ni cy    i i\n¥    ‘a\npers   rh\n(fe, LE yer 人 Uy\n:                                                                                                                  AR"
+      },
+      {
+        "local_sec": 14.0,
+        "absolute_sec": 34.0,
+        "sha256": "4dd099c09913ad820ce2e8883e16a54a12167fde659a79a8e6bc6eb4aa139bac",
+        "ocr_text": "=                .                                            =\n4        Ss\n}                     >              =\n                                             sse                          SS\nNS oe    4    AS\n                                 SS                aad Se\nSRO”    “oe                 7\n(      a |\n-                              =    0 Wer.   q                                                      -\nae      “<3\neS        ;   最     (本\n=   BF    oR Te     af\nSAN               an AS,\na     é a ; Hd. oe\n“EE     al\na                                                                                               .                   y\n4                                                                                                局"
+      },
+      {
+        "local_sec": 18.0,
+        "absolute_sec": 38.0,
+        "sha256": "95e8adf1bba6dec49c958c93133a41a782b17b855add440cdf35939449dd2b1d",
+        "ocr_text": "a\n-      re 5  '\n ay\n:   y"
+      }
+    ],
+    "smolvlm": {
+      "status": "not_requested"
+    }
+  },
+  "candidate_content_match": false,
+  "candidate_observed_position_sec": 20.0,
+  "candidate_timing_error_sec": -10.0,
+  "candidate_absolute_timing_error_sec": 10.0,
+  "minimum_agent_review_score": 0.55,
+  "agent_acceptance_required": true,
+  "counts_toward_pilot_60": false,
+  "decode_evidence_sha256": "7059ecf2e0e22c4e80ebb7729f559efca61c72e424e1e24533848268fcb1b38e",
+  "temporary_clip_sha256": "b9f3d37ac9a02deee186269f243308a0fcd0d200e2bd2cdc805b9de5d32b67bc",
+  "generated_at": "2026-09-13T05:45:37.239376+00:00",
+  "bundle_id": "8d7b75e7981d63873181fc5f1fe1f7ebb7b0db8f7168c100277b889893281fae",
+  "request_revision": 1,
+  "request_sha256": "57d042050a004ea1b78ec4eeb0cc1957fda0d6b23b4476298d3bad9b00ee7689"
+}
