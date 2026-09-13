@@ -23,6 +23,8 @@ concurrency:
   # Every run checks out fresh main and scans the complete pending queue. The newest run can
   # therefore safely replace an older queued/in-progress run; pending requests remain durable
   # on main and will be picked up again, avoiding redundant installs/compiles per request push.
+  # This workflow path is also a recovery trigger: an admin no-op repair commit can re-scan
+  # durable pending requests if a prior push event was not scheduled by GitHub Actions.
   cancel-in-progress: true
 
 env:
