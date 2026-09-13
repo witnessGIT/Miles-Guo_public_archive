@@ -1,0 +1,16 @@
+{
+  "task_id": "P9-PLAYBACK-PILOT-L003",
+  "agent_id": "agent-20260913T052600Z-gpt56sol-playback-l003-r2",
+  "claimed_at": "2026-09-13T05:26:00Z",
+  "status": "in_progress",
+  "kind": "real_playback_audit",
+  "case_id": "PILOT-L003",
+  "live_id": "LIVE_20220511_001",
+  "missing_segment_ids": [
+    "LIVE_20220511_001_SEG_000000"
+  ],
+  "execution_mode": "repository_evidence_service_v1",
+  "repository_evidence_service": true,
+  "local_content_inspection_capable": false,
+  "instructions": "Use repository Playback Evidence Service and accept only after reading durable decoded-media evidence."
+}
