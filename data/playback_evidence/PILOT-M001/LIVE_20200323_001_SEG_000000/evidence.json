@@ -1,0 +1,21 @@
+{
+  "project": "Miles-Guo_public_archive",
+  "evidence_version": "repository-playback-evidence-v1",
+  "status": "blocked_media_decode",
+  "case_id": "PILOT-M001",
+  "live_id": "LIVE_20200323_001",
+  "segment_id": "LIVE_20200323_001_SEG_000000",
+  "request_ref": "coordination/playback_requests/PILOT-M001/LIVE_20200323_001_SEG_000000.json",
+  "requested_by": "agent-20260914-gpt56sol-fulltest5",
+  "media_url": "https://odysee.com/@laxi:4/20200323:d",
+  "expected_start_sec": 646.0,
+  "decode_start_sec": 646.0,
+  "decode_end_sec": 646.0,
+  "playback_decode_verified": false,
+  "counts_toward_pilot_60": false,
+  "stderr": "yt-dlp resolver failed for https://odysee.com/@laxi:4/20200323:d with rc=1:\nWARNING: [lbry] @laxi#4/20200323#d: Unable to download webpage: HTTP Error 429: Too Many Requests\nERROR: [lbry] df664b3404db4be0efa593f70a38b2db9668e7dc: No video formats found!; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you are on the latest version using  yt-dlp -U\n\n",
+  "generated_at": "2026-09-13T21:23:47.794635+00:00",
+  "bundle_id": "219afe642ec6c9c6eee19dc171497aa37a51c78f85856bf363954c71da5d8c06",
+  "request_revision": 1,
+  "request_sha256": "5a8451d55725c73a31f156a018a57fc7437e55c59cca7c989f1f140ed86db9fc"
+}
