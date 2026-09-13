@@ -1,15 +1,16 @@
 {
   "request_version": "playback-request-v1",
-  "request_revision": 1,
+  "request_revision": 2,
   "task_id": "P9-PLAYBACK-PILOT-E009",
   "case_id": "PILOT-E009",
   "live_id": "LIVE_20191029_001",
   "segment_id": "LIVE_20191029_001_SEG_000002",
-  "media_url": "https://rumble.com/v57tlbx-20191029.html",
+  "media_url": "https://odysee.com/@laxi:4/20191029:e",
   "requested_by": "agent-20260913-gpt56sol-fulltest2",
-  "requested_at": "2026-09-13T12:59:50Z",
+  "requested_at": "2026-09-13T13:11:20Z",
   "pre_roll_sec": 10.0,
   "decode_window_sec": 24.0,
   "language": "zh",
-  "visual_mode": "frames_ocr"
+  "visual_mode": "frames_ocr",
+  "retry_reason": "Trusted Rumble provenance revision 1 returned HTTP 403 on the GitHub runner; retry with trusted Odysee alternate provenance for the same live."
 }
