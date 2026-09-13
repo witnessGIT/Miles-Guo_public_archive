@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 import argparse
+import html
 import json
 import re
 import shutil
@@ -15,6 +16,13 @@ DECODE_TIMEOUT_SEC = 180
 FRAME_TIMEOUT_SEC = 60
 TIMEOUT_RETURN_CODE = 124
 GETTR_STREAM_RE = re.compile(r"^https?://(?:www\.)?gettr\.com/streaming/([a-z0-9]+)(?:[/?#].*)?$", re.I)
+TRUSTED_ARCHIVE_PAGE_RE = re.compile(
+    r"^https?://(?:(?:www\.)?ghot\.ai/archive/videos/|(?:www\.)?gwins\.org/cn/milesguo/)", re.I
+)
+PUBLIC_MEDIA_URL_RE = re.compile(r"https?://[^\s\"'<>]+", re.I)
+SUPPORTED_PUBLIC_MEDIA_HOST_RE = re.compile(
+    r"^https?://(?:www\.)?(?:gettr\.com/(?:streaming|post)/|rumble\.com/|odysee\.com/|youtube\.com/|youtu\.be/)", re.I
+)
 
 
 def _as_text(value):
@@ -47,19 +55,9 @@ def run(cmd, *, timeout_sec):
 
 
 def resolve_gettr_streaming_public(source):
-    """Resolve a public GETTR streaming page through GETTR's public join API.
-
-    yt-dlp's current GettrStreaming extractor passes a dict as urllib request data and can fail
-    before reaching GETTR with "data must be bytes". Keep the repository service independent of
-    that third-party regression by reproducing only the minimal public API request that the
-    extractor itself uses. This helper is deliberately restricted to canonical gettr.com
-    /streaming/<id> URLs and uses no cookies, credentials, CAPTCHA bypass, or access-control
-    circumvention.
-    """
     match = GETTR_STREAM_RE.match(source)
     if not match:
         return None, None
-
     stream_id = match.group(1)
     api_url = f"https://api.gettr.com/u/live/join/{stream_id}"
     request = urllib.request.Request(
@@ -96,24 +94,86 @@ def resolve_gettr_streaming_public(source):
         }
 
 
-def resolve_media(source):
-    if source.startswith(("http://", "https://")) and shutil.which("yt-dlp"):
-        rc, out, err = run(
-            ["yt-dlp", "-g", "--no-playlist", source],
-            timeout_sec=RESOLVE_TIMEOUT_SEC,
-        )
-        if rc == 0 and out.strip():
-            return out.strip().splitlines()[0], {
-                "resolver": "yt-dlp",
-                "source": source,
-                "yt_dlp_returncode": rc,
-            }
-        diag = (err or "")[-4000:]
-        print(
-            f"yt-dlp resolver failed for {source} with rc={rc}:\n{diag}",
-            file=sys.stderr,
-        )
+def _media_priority(url):
+    lower = url.lower()
+    if "gettr.com/streaming/" in lower:
+        return 0
+    if "odysee.com" in lower:
+        return 1
+    if "rumble.com" in lower:
+        return 2
+    if "youtube.com" in lower or "youtu.be" in lower:
+        return 3
+    if "gettr.com/post/" in lower:
+        return 4
+    return 9
 
+
+def resolve_trusted_archive_page_public(source):
+    if not TRUSTED_ARCHIVE_PAGE_RE.match(source):
+        return None, None
+    request = urllib.request.Request(
+        source,
+        headers={
+            "Accept": "text/html,application/xhtml+xml",
+            "User-Agent": "Miles-Guo-public-archive-playback/1.0",
+        },
+        method="GET",
+    )
+    try:
+        with urllib.request.urlopen(request, timeout=RESOLVE_TIMEOUT_SEC) as response:
+            raw = response.read(2_000_000)
+        page = html.unescape(raw.decode("utf-8", errors="replace"))
+        candidates = []
+        seen = set()
+        for candidate in PUBLIC_MEDIA_URL_RE.findall(page):
+            candidate = candidate.rstrip(".,);]}\\")
+            if not SUPPORTED_PUBLIC_MEDIA_HOST_RE.match(candidate) or candidate in seen:
+                continue
+            seen.add(candidate)
+            candidates.append(candidate)
+        candidates.sort(key=lambda value: (_media_priority(value), value))
+        if not candidates:
+            raise ValueError("trusted archive page exposed no supported public media URL")
+        linked = candidates[0]
+        resolved, linked_resolution = resolve_media(linked, allow_archive=False)
+        resolution = dict(linked_resolution or {})
+        resolution.update({
+            "archive_resolver": "trusted_archive_page_public_links",
+            "archive_page": source,
+            "linked_media_url": linked,
+            "archive_candidates": candidates,
+        })
+        return resolved, resolution
+    except (urllib.error.URLError, urllib.error.HTTPError, TimeoutError, ValueError) as exc:
+        return None, {
+            "resolver": "trusted_archive_page_public_links_failed",
+            "source": source,
+            "error": f"{type(exc).__name__}: {exc}",
+        }
+
+
+def resolve_media(source, *, allow_archive=True):
+    archive_resolution = None
+    if allow_archive:
+        archive_url, archive_resolution = resolve_trusted_archive_page_public(source)
+        if archive_url:
+            return archive_url, archive_resolution
+        if archive_resolution:
+            print(
+                f"Trusted archive resolver failed for {source}: {archive_resolution.get('error', 'unknown error')}",
+                file=sys.stderr,
+            )
+
+    if source.startswith(("http://", "https://")) and shutil.which("yt-dlp"):
+        rc, out, err = run(["yt-dlp", "-g", "--no-playlist", source], timeout_sec=RESOLVE_TIMEOUT_SEC)
+        if rc == 0 and out.strip():
+            resolution = {"resolver": "yt-dlp", "source": source, "yt_dlp_returncode": rc}
+            if archive_resolution:
+                resolution["archive_resolution"] = archive_resolution
+            return out.strip().splitlines()[0], resolution
+        diag = (err or "")[-4000:]
+        print(f"yt-dlp resolver failed for {source} with rc={rc}:\n{diag}", file=sys.stderr)
         gettr_url, gettr_resolution = resolve_gettr_streaming_public(source)
         if gettr_url:
             gettr_resolution["yt_dlp_returncode"] = rc
@@ -130,26 +190,25 @@ def resolve_media(source):
                 "yt_dlp_stderr": diag,
                 "resolver_timeout_sec": RESOLVE_TIMEOUT_SEC,
             }
-
-        return source, {
+        result = {
             "resolver": "direct_after_yt_dlp_failure",
             "source": source,
             "yt_dlp_returncode": rc,
             "yt_dlp_stderr": diag,
             "resolver_timeout_sec": RESOLVE_TIMEOUT_SEC,
         }
+        if archive_resolution:
+            result["archive_resolution"] = archive_resolution
+        return source, result
     return source, {"resolver": "direct", "source": source}
 
 
 def _probe(path_or_url):
-    rc, out, err = run(
-        [
-            "ffprobe", "-v", "error",
-            "-show_entries", "format=duration:stream=index,codec_type,codec_name,width,height,r_frame_rate",
-            "-of", "json", str(path_or_url),
-        ],
-        timeout_sec=PROBE_TIMEOUT_SEC,
-    )
+    rc, out, err = run([
+        "ffprobe", "-v", "error",
+        "-show_entries", "format=duration:stream=index,codec_type,codec_name,width,height,r_frame_rate",
+        "-of", "json", str(path_or_url),
+    ], timeout_sec=PROBE_TIMEOUT_SEC)
     payload = None
     if rc == 0:
         try:
@@ -164,10 +223,7 @@ def _decoded_clip_is_usable(probe):
     streams = probe.get("streams") if isinstance(probe, dict) else None
     if not isinstance(streams, list):
         return False, "decoded clip has no stream list"
-    media_streams = [
-        stream for stream in streams
-        if isinstance(stream, dict) and stream.get("codec_type") in {"audio", "video"}
-    ]
+    media_streams = [s for s in streams if isinstance(s, dict) and s.get("codec_type") in {"audio", "video"}]
     if not media_streams:
         return False, "decoded clip contains no audio/video stream"
     try:
@@ -206,91 +262,28 @@ def main():
     clip_path = output_dir / f"{safe_label}_expected_{args.start:.3f}_from_{decode_start:.3f}_window_{args.window:.3f}.mp4"
     frame_path = output_dir / f"{safe_label}_expected_{args.start:.3f}.jpg"
     evidence_path = output_dir / f"{safe_label}_expected_{args.start:.3f}.json"
-
     probe_rc, probe, probe_err = _probe(resolved)
     if probe_rc != 0:
-        payload = {
-            "ok": False,
-            "stage": "probe",
-            "resolution": resolution,
-            "media_source": args.media,
-            "expected_start_sec": args.start,
-            "decode_start_sec": decode_start,
-            "decode_window_sec": args.window,
-            "stderr": probe_err[-4000:],
-            "timed_out": probe_rc == TIMEOUT_RETURN_CODE,
-            "timeout_sec": PROBE_TIMEOUT_SEC if probe_rc == TIMEOUT_RETURN_CODE else None,
-        }
+        payload = {"ok": False, "stage": "probe", "resolution": resolution, "media_source": args.media, "expected_start_sec": args.start, "decode_start_sec": decode_start, "decode_window_sec": args.window, "stderr": probe_err[-4000:], "timed_out": probe_rc == TIMEOUT_RETURN_CODE, "timeout_sec": PROBE_TIMEOUT_SEC if probe_rc == TIMEOUT_RETURN_CODE else None}
         evidence_path.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
         print(json.dumps(payload, ensure_ascii=False, indent=2))
         return 3
-
-    decode_rc, _, decode_err = run(
-        ["ffmpeg", "-y", "-v", "error", "-ss", f"{decode_start:.3f}", "-i", resolved, "-t", f"{args.window:.3f}", "-c:v", "libx264", "-preset", "ultrafast", "-c:a", "aac", str(clip_path)],
-        timeout_sec=DECODE_TIMEOUT_SEC,
-    )
+    decode_rc, _, decode_err = run(["ffmpeg", "-y", "-v", "error", "-ss", f"{decode_start:.3f}", "-i", resolved, "-t", f"{args.window:.3f}", "-c:v", "libx264", "-preset", "ultrafast", "-c:a", "aac", str(clip_path)], timeout_sec=DECODE_TIMEOUT_SEC)
     if decode_rc != 0:
-        payload = {
-            "ok": False,
-            "stage": "decode",
-            "resolution": resolution,
-            "media_source": args.media,
-            "expected_start_sec": args.start,
-            "decode_start_sec": decode_start,
-            "decode_window_sec": args.window,
-            "probe": probe,
-            "stderr": decode_err[-4000:],
-            "timed_out": decode_rc == TIMEOUT_RETURN_CODE,
-            "timeout_sec": DECODE_TIMEOUT_SEC if decode_rc == TIMEOUT_RETURN_CODE else None,
-        }
+        payload = {"ok": False, "stage": "decode", "resolution": resolution, "media_source": args.media, "expected_start_sec": args.start, "decode_start_sec": decode_start, "decode_window_sec": args.window, "probe": probe, "stderr": decode_err[-4000:], "timed_out": decode_rc == TIMEOUT_RETURN_CODE, "timeout_sec": DECODE_TIMEOUT_SEC if decode_rc == TIMEOUT_RETURN_CODE else None}
         evidence_path.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
         print(json.dumps(payload, ensure_ascii=False, indent=2))
         return 4
-
     clip_probe_rc, clip_probe, clip_probe_err = _probe(clip_path)
     clip_ok, clip_problem = _decoded_clip_is_usable(clip_probe)
     if clip_probe_rc != 0 or not clip_ok:
         diagnostic = clip_probe_err[-4000:] if clip_probe_rc != 0 else clip_problem
-        payload = {
-            "ok": False,
-            "stage": "verify_decoded_clip",
-            "resolution": resolution,
-            "media_source": args.media,
-            "expected_start_sec": args.start,
-            "decode_start_sec": decode_start,
-            "decode_window_sec": args.window,
-            "probe": probe,
-            "decoded_clip_probe": clip_probe,
-            "stderr": diagnostic,
-            "timed_out": clip_probe_rc == TIMEOUT_RETURN_CODE,
-            "timeout_sec": PROBE_TIMEOUT_SEC if clip_probe_rc == TIMEOUT_RETURN_CODE else None,
-        }
+        payload = {"ok": False, "stage": "verify_decoded_clip", "resolution": resolution, "media_source": args.media, "expected_start_sec": args.start, "decode_start_sec": decode_start, "decode_window_sec": args.window, "probe": probe, "decoded_clip_probe": clip_probe, "stderr": diagnostic, "timed_out": clip_probe_rc == TIMEOUT_RETURN_CODE, "timeout_sec": PROBE_TIMEOUT_SEC if clip_probe_rc == TIMEOUT_RETURN_CODE else None}
         evidence_path.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
         print(json.dumps(payload, ensure_ascii=False, indent=2))
         return 5
-
-    frame_rc, _, _ = run(
-        ["ffmpeg", "-y", "-v", "error", "-ss", f"{args.start:.3f}", "-i", resolved, "-frames:v", "1", str(frame_path)],
-        timeout_sec=FRAME_TIMEOUT_SEC,
-    )
-    payload = {
-        "ok": True,
-        "media_source": args.media,
-        "resolution": resolution,
-        "expected_start_sec": args.start,
-        "requested_start_sec": args.start,
-        "decode_start_sec": decode_start,
-        "decode_end_sec": decode_end,
-        "pre_roll_sec": actual_pre_roll,
-        "decode_window_sec": args.window,
-        "probe": probe,
-        "decoded_clip_probe": clip_probe,
-        "clip_path": str(clip_path),
-        "frame_path": str(frame_path) if frame_rc == 0 else None,
-        "playback_decode_verified": True,
-        "content_timing_verified": False,
-        "note": "Real media decoded into a locally re-probed audio/video clip; reviewer must locate actual target content and record signed timing error before qualification.",
-    }
+    frame_rc, _, _ = run(["ffmpeg", "-y", "-v", "error", "-ss", f"{args.start:.3f}", "-i", resolved, "-frames:v", "1", str(frame_path)], timeout_sec=FRAME_TIMEOUT_SEC)
+    payload = {"ok": True, "media_source": args.media, "resolution": resolution, "expected_start_sec": args.start, "requested_start_sec": args.start, "decode_start_sec": decode_start, "decode_end_sec": decode_end, "pre_roll_sec": actual_pre_roll, "decode_window_sec": args.window, "probe": probe, "decoded_clip_probe": clip_probe, "clip_path": str(clip_path), "frame_path": str(frame_path) if frame_rc == 0 else None, "playback_decode_verified": True, "content_timing_verified": False, "note": "Real media decoded into a locally re-probed audio/video clip; reviewer must locate actual target content and record signed timing error before qualification."}
     evidence_path.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
     print(json.dumps(payload, ensure_ascii=False, indent=2))
     return 0
