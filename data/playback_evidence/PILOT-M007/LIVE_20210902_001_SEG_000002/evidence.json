@@ -1,0 +1,21 @@
+{
+  "project": "Miles-Guo_public_archive",
+  "evidence_version": "repository-playback-evidence-v1",
+  "status": "blocked_media_decode",
+  "case_id": "PILOT-M007",
+  "live_id": "LIVE_20210902_001",
+  "segment_id": "LIVE_20210902_001_SEG_000002",
+  "request_ref": "coordination/playback_requests/PILOT-M007/LIVE_20210902_001_SEG_000002.json",
+  "requested_by": "agent-20260913T052200Z-gpt56sol",
+  "media_url": "https://ghot.ai/archive/videos/2021-09-02-2",
+  "expected_start_sec": 446.0,
+  "decode_start_sec": 446.0,
+  "decode_end_sec": 446.0,
+  "playback_decode_verified": false,
+  "counts_toward_pilot_60": false,
+  "stderr": "https://ghot.ai/archive/videos/2021-09-02-2: Invalid data found when processing input\n",
+  "generated_at": "2026-09-13T06:13:21.921173+00:00",
+  "bundle_id": "6db1e367d608c9050b9e8f63c5ac1d739a252bf79f5e8998519d33293fd91530",
+  "request_revision": 1,
+  "request_sha256": "0abb92efed818efeffd7835275206f045c8d2106ac7f3ae26109ad0d7574cf6d"
+}
