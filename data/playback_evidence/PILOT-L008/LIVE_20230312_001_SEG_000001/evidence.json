@@ -1,7 +1,7 @@
 {
   "project": "Miles-Guo_public_archive",
   "evidence_version": "repository-playback-evidence-v1",
-  "status": "needs_manual_or_wider_review",
+  "status": "ready_for_agent_review",
   "case_id": "PILOT-L008",
   "live_id": "LIVE_20230312_001",
   "segment_id": "LIVE_20230312_001_SEG_000001",
@@ -77,21 +77,33 @@
         "ocr_text": ".                           oat\n. :                q\ni aN. \\\\\\\\\\!!), Wt SS.         |\n03/08,2023 |  {     Dy) ete\nke           ==          人\nBeis “ee\n看起来确实是人工合成的 ?"
       }
     ],
+    "best_match": {
+      "local_sec": 10.0,
+      "absolute_sec": 158.0,
+      "text": "是否同意安德森博士当时的评估",
+      "similarity": 0.666667,
+      "keyword_coverage": 0.25,
+      "score": 0.666667,
+      "line_count": 1,
+      "frame_sha256": "b86cabf6b4dca9de4881b1bac1076119f5021967ccc0873ab3d9f8ef49a38db5"
+    },
     "smolvlm": {
       "status": "not_requested"
     }
   },
-  "candidate_content_match": false,
-  "candidate_observed_position_sec": 148.0,
-  "candidate_timing_error_sec": -10.0,
-  "candidate_absolute_timing_error_sec": 10.0,
+  "candidate_match_method": "frame_ocr",
+  "candidate_match_score": 0.666667,
+  "candidate_content_match": true,
+  "candidate_observed_position_sec": 158.0,
+  "candidate_timing_error_sec": 0.0,
+  "candidate_absolute_timing_error_sec": 0.0,
   "minimum_agent_review_score": 0.55,
   "agent_acceptance_required": true,
   "counts_toward_pilot_60": false,
   "decode_evidence_sha256": "54e06c98a1c622fa3c28f772ea266eee5353470e883b9af288f0423be35be6d0",
   "temporary_clip_sha256": "839afd1f3da0bed39aa26b7d8c56966be3e713dd723659b8b81f62dd37395b22",
-  "generated_at": "2026-09-13T21:07:56.903890+00:00",
-  "bundle_id": "8ecfa627cb470dcd18b4ee5caf28082a97e5da3b969753aa2693ac8524ec588c",
-  "request_revision": 4,
-  "request_sha256": "599f02a2ba3d1f96057709602d33e04ecdafdbaa8b764214e8655c96e2ed8e54"
+  "generated_at": "2026-09-13T21:15:46.462848+00:00",
+  "bundle_id": "6dbf2dffc53c455bbee9cce482821b49d083c48d8906c0ae685cf274cef97236",
+  "request_revision": 5,
+  "request_sha256": "4006607e860578d7977dc751f6db68cfebf14867a952a9d5e7a2ab9447cb2b61"
 }

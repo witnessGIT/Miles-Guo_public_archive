@@ -65,10 +65,22 @@
         "ocr_text": "rae                                                              ‘     |                           ow\n:               ir  f .             = .                      a                                      June\n|         :         4                            —                           ‘\n;   \\  =a &                      .                                yore    -  .                              ;\n'    Py.)   Jan                   、                        di\n:  — ff                            :                    >\n| 本一/                     Ss                       St’             :\nk       December 2019          4                    }   )\n;                                  ber 3        P unleashed COVID          Fst    1                pee\n|              = —    yg      SR voor\n— 4 @                ee fi          AT\n03/03/2023            4         als \\a] 2            bay 2020       in) A re\nA    站。 al,  }   a               | ve     == oa  _|"
       }
     ],
+    "best_match": {
+      "local_sec": 0.0,
+      "absolute_sec": 0.0,
+      "text": "=   Bas   :    -                             hs ey      ;  Ti   LO    upsean of Ci 03/03/2023                      a(小柯:           Be egy ne",
+      "similarity": 0.172414,
+      "keyword_coverage": 0.0,
+      "score": 0.172414,
+      "line_count": 2,
+      "frame_sha256": "f7cc3086e9584cdd568ec382c58fd6e734b80930ae7c78c41b44941b87f429b8"
+    },
     "smolvlm": {
       "status": "not_requested"
     }
   },
+  "candidate_match_method": "frame_ocr",
+  "candidate_match_score": 0.172414,
   "candidate_content_match": false,
   "candidate_observed_position_sec": 0.0,
   "candidate_timing_error_sec": 0.0,
@@ -78,8 +90,8 @@
   "counts_toward_pilot_60": false,
   "decode_evidence_sha256": "20491e9a796070f0e5b2d0ef8c7d9f856db91db456ef9e623476487ccdc3d16c",
   "temporary_clip_sha256": "01cb1826cac3b27475217786961a807a7e0bb211e01c4044a6ecbd3e722ddef7",
-  "generated_at": "2026-09-13T21:07:15.864123+00:00",
+  "generated_at": "2026-09-13T21:15:07.826205+00:00",
   "bundle_id": "6acf6438f732684e84a2cf666fae419d15f473cb512a41211fb271d69c9a447c",
-  "request_revision": 4,
-  "request_sha256": "3fe45dd5824b65d3a7d11945c69e3bea8946d2516a13994e565615b1a66efccc"
+  "request_revision": 5,
+  "request_sha256": "9051613bb6a18b2f543b45565186106dcd30586fc38a66d7d4c65e1daa540ad0"
 }

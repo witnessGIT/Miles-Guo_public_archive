@@ -6,8 +6,8 @@
 - Expected start: `158.000s`
 - Decode window: `148.000s` → `172.000s`
 - Real media decoded: `true`
-- Evidence status: `needs_manual_or_wider_review`
-- Bundle ID: `8ecfa627cb470dcd18b4ee5caf28082a97e5da3b969753aa2693ac8524ec588c`
+- Evidence status: `ready_for_agent_review`
+- Bundle ID: `6dbf2dffc53c455bbee9cce482821b49d083c48d8906c0ae685cf274cef97236`
 
 ## Target text
 
@@ -15,8 +15,8 @@ GREENE：雷德菲尔德博士，你是否同意安德森博士当时的评估�
 
 ## Decoded-audio ASR match
 
-- Candidate observed position: `148.000s`
-- Signed timing error: `-10.000s`
+- Candidate observed position: `158.000s`
+- Signed timing error: `+0.000s`
 - Match score: `0.0`
 - Similarity: `0.0`
 - Keyword coverage: `0.0`
