@@ -1,0 +1,11 @@
+{
+  "acceptance_version": "playback-acceptance-v1",
+  "case_id": "PILOT-L008",
+  "live_id": "LIVE_20230312_001",
+  "segment_id": "LIVE_20230312_001_SEG_000001",
+  "evidence_ref": "data/playback_evidence/PILOT-L008/LIVE_20230312_001_SEG_000001/evidence.json",
+  "bundle_id": "6dbf2dffc53c455bbee9cce482821b49d083c48d8906c0ae685cf274cef97236",
+  "accepted_by": "agent-20260914-gpt56sol-fulltest3",
+  "accepted": true,
+  "content_observation": "Decoded GETTR media was inspected by the repository service. At absolute media position 158.0s, frame OCR reads ‘是否同意安德森博士当时的评估’, directly matching the canonical target question about Dr. Anderson's assessment. The candidate method is frame_ocr with score 0.666667 above the 0.55 review threshold, and the observed position equals the canonical expected start of 158.0s (signed timing error 0.0s)."
+}
