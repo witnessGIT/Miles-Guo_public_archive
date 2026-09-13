@@ -13,9 +13,9 @@
   "decode_end_sec": 1200.0,
   "playback_decode_verified": false,
   "counts_toward_pilot_60": false,
-  "stderr": "yt-dlp resolver failed for https://ghot.ai/archive/videos/2022-05-29-6 with rc=1:\nWARNING: [generic] Falling back on generic information extractor\nERROR: Unsupported URL: https://ghot.ai/archive/videos/2022-05-29-6\n\n",
-  "generated_at": "2026-09-13T17:35:19.487903+00:00",
-  "bundle_id": "e49b728aea659b33b7c171316eb39baf0ddad511da6833c3ee94bd56a0381c4f",
-  "request_revision": 1,
-  "request_sha256": "937645e2d309f5e118cd03c2da7d6d45bbd49995cb2552fdd12a6f2674353945"
+  "stderr": "Trusted archive resolver failed for https://ghot.ai/archive/videos/2022-05-29-6: ValueError: trusted archive page exposed no supported public media URL\nyt-dlp resolver failed for https://ghot.ai/archive/videos/2022-05-29-6 with rc=1:\nWARNING: [generic] Falling back on generic information extractor\nERROR: Unsupported URL: https://ghot.ai/archive/videos/2022-05-29-6\n\n",
+  "generated_at": "2026-09-13T22:12:48.695214+00:00",
+  "bundle_id": "ada5c505077e877c12056e124d09062eba13858d2631c3ba8c07826327a1e6a3",
+  "request_revision": 2,
+  "request_sha256": "cd4a2924c5794d0a3e180ff0fe947de65e3ff6f786345f5ce3a8a1027452b095"
 }
