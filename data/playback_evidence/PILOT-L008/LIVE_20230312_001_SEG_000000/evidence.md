@@ -4,10 +4,10 @@
 - Live: `LIVE_20230312_001`
 - Media: https://gettr.com/streaming/p2b7kcm569c
 - Expected start: `0.000s`
-- Decode window: `0.000s` → `24.000s`
+- Decode window: `0.000s` → `90.000s`
 - Real media decoded: `true`
 - Evidence status: `needs_manual_or_wider_review`
-- Bundle ID: `6acf6438f732684e84a2cf666fae419d15f473cb512a41211fb271d69c9a447c`
+- Bundle ID: `83e192de872ec1dcfe118e9835e4b0332978d59580439235d93b7c880ce2a34c`
 
 ## Target text
 
@@ -17,11 +17,11 @@ Tia（小柯基）：绝对的，不仅是反共而是要灭共！
 
 - Candidate observed position: `0.000s`
 - Signed timing error: `+0.000s`
-- Match score: `0.090909`
-- Similarity: `0.090909`
+- Match score: `0.057971`
+- Similarity: `0.057971`
 - Keyword coverage: `0.0`
 
-(聽不懂)
+Oh man I mean you know you any topic any topic any institution.
 
 ## Sampled frame OCR
 

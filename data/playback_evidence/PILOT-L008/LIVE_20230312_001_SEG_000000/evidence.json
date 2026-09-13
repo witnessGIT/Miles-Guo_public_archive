@@ -7,15 +7,15 @@
   "segment_id": "LIVE_20230312_001_SEG_000000",
   "task_id": "P9-PLAYBACK-PILOT-L008",
   "request_ref": "coordination/playback_requests/PILOT-L008/LIVE_20230312_001_SEG_000000.json",
-  "requested_by": "agent-20260914-gpt56sol-fulltest3",
+  "requested_by": "agent-20260914-gpt56sol-generation2",
   "media_url": "https://gettr.com/streaming/p2b7kcm569c",
   "target_text": "Tia（小柯基）：绝对的，不仅是反共而是要灭共！",
   "target_text_search": "Tia 小柯基 反共 灭共",
   "expected_start_sec": 0.0,
   "decode_request_start_sec": 0.0,
   "decode_start_sec": 0.0,
-  "decode_end_sec": 24.0,
-  "decode_window_sec": 24.0,
+  "decode_end_sec": 90.0,
+  "decode_window_sec": 90.0,
   "decode_resolver": "gettr_public_join_api",
   "playback_decode_verified": true,
   "repository_content_inspection": true,
@@ -26,19 +26,47 @@
     "entries": [
       {
         "local_start_sec": 0.0,
-        "local_end_sec": 6.0,
+        "local_end_sec": 22.0,
         "absolute_start_sec": 0.0,
-        "absolute_end_sec": 6.0,
-        "text": "(聽不懂)"
+        "absolute_end_sec": 22.0,
+        "text": "Amen to that not just anti CCP but to take down the CCP and ma'am you kind of go went a little bit into this what's your so what's your opinion of the CCP and when when Americans think that politics have nothing to do with them and why should they care about the CCP."
+      },
+      {
+        "local_start_sec": 23.0,
+        "local_end_sec": 46.0,
+        "absolute_start_sec": 23.0,
+        "absolute_end_sec": 46.0,
+        "text": "Wow so I think it was on war room and a couple of other places the book was suggested to me to read unrestricted warfare published in 1999 to military CCP generals talking about how they're going to destroy America with ways that we never would have thought technology information warfare biological warfare."
+      },
+      {
+        "local_start_sec": 47.0,
+        "local_end_sec": 69.0,
+        "absolute_start_sec": 47.0,
+        "absolute_end_sec": 69.0,
+        "text": "I mentioned that in page three of the book in 1999 and here we are still debating these things the balloons you can see them you can't do anything about them you can't talk about them as if they were not even there so people need to speak up otherwise we're going to be the slaves because that is what they want to do is control Americans they want to control the world."
+      },
+      {
+        "local_start_sec": 70.0,
+        "local_end_sec": 82.0,
+        "absolute_start_sec": 70.0,
+        "absolute_end_sec": 82.0,
+        "text": "And the writing is really on the wall people just have to pay attention so I'm curious as to what's your understanding of CCP infiltration into the US media into the US education system into the US justice."
+      },
+      {
+        "local_start_sec": 83.0,
+        "local_end_sec": 89.0,
+        "absolute_start_sec": 83.0,
+        "absolute_end_sec": 89.0,
+        "text": "Oh man I mean you know you any topic any topic any institution."
       }
     ],
     "best_match": {
-      "local_start_sec": 0.0,
-      "local_end_sec": 6.0,
-      "text": "(聽不懂)",
-      "similarity": 0.090909,
+      "local_start_sec": 83.0,
+      "local_end_sec": 89.0,
+      "text": "Oh man I mean you know you any topic any topic any institution.",
+      "similarity": 0.057971,
       "keyword_coverage": 0.0,
-      "score": 0.090909,
+      "score": 0.057971,
       "entry_count": 1
     },
     "process_returncode": 0,
@@ -88,10 +116,10 @@
   "minimum_agent_review_score": 0.55,
   "agent_acceptance_required": true,
   "counts_toward_pilot_60": false,
-  "decode_evidence_sha256": "20491e9a796070f0e5b2d0ef8c7d9f856db91db456ef9e623476487ccdc3d16c",
-  "temporary_clip_sha256": "01cb1826cac3b27475217786961a807a7e0bb211e01c4044a6ecbd3e722ddef7",
-  "generated_at": "2026-09-13T21:15:07.826205+00:00",
-  "bundle_id": "6acf6438f732684e84a2cf666fae419d15f473cb512a41211fb271d69c9a447c",
-  "request_revision": 5,
-  "request_sha256": "9051613bb6a18b2f543b45565186106dcd30586fc38a66d7d4c65e1daa540ad0"
+  "decode_evidence_sha256": "0575f915b3e98f220adbcc98a3a2fabc8d66321734cf0b3eebc733f2c339e167",
+  "temporary_clip_sha256": "9c2433b7f0fcad491660eaf54fdd6e606db8fb6c228c654792e1df5b1e5b80e9",
+  "generated_at": "2026-09-13T23:56:07.288591+00:00",
+  "bundle_id": "83e192de872ec1dcfe118e9835e4b0332978d59580439235d93b7c880ce2a34c",
+  "request_revision": 6,
+  "request_sha256": "ec5d44482f72e3467f808201041198f7406896d6429685d23ab08bdfc9904483"
 }
