@@ -1,0 +1,22 @@
+{
+  "task_id": "P9-PLAYBACK-PILOT-E004",
+  "agent_id": "agent-20260913T052000Z-gpt56sol-playback-e004",
+  "claimed_at": "2026-09-13T05:20:00Z",
+  "status": "in_progress",
+  "kind": "real_playback_audit",
+  "case_id": "PILOT-E004",
+  "live_id": "LIVE_20180419_001",
+  "missing_segment_ids": [
+    "LIVE_20180419_001_SEG_000000"
+  ],
+  "execution_mode": "repository_evidence_service_v1",
+  "repository_evidence_service": true,
+  "local_runtime_tools": {
+    "ffmpeg": true,
+    "ffprobe": true,
+    "yt_dlp": false,
+    "repository_evidence_service": true
+  },
+  "local_content_inspection_capable": false,
+  "instructions": "Submit coordination/playback_requests/<CASE>/<SEGMENT>.json, let GitHub Actions decode real media and publish data/playback_evidence, read the evidence, then submit coordination/playback_acceptances. Source-page timestamps alone never count."
+}
