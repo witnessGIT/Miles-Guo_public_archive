@@ -1,7 +1,7 @@
 {
   "project": "Miles-Guo_public_archive",
   "evidence_version": "repository-playback-evidence-v1",
-  "status": "needs_manual_or_wider_review",
+  "status": "ready_for_agent_review",
   "case_id": "PILOT-L007",
   "live_id": "LIVE_20230310_001",
   "segment_id": "LIVE_20230310_001_SEG_000000",
@@ -23,10 +23,82 @@
   "audio_asr": {
     "engine": "whisper.cpp",
     "model": "ggml-small.bin",
-    "entries": [],
-    "best_match": null,
-    "process_returncode": -4,
-    "stderr_tail": ""
+    "entries": [
+      {
+        "local_start_sec": 0.0,
+        "local_end_sec": 1.5,
+        "absolute_start_sec": 0.0,
+        "absolute_end_sec": 1.5,
+        "text": "应的战友们好"
+      },
+      {
+        "local_start_sec": 2.2,
+        "local_end_sec": 3.4,
+        "absolute_start_sec": 2.2,
+        "absolute_end_sec": 3.4,
+        "text": "3月10号"
+      },
+      {
+        "local_start_sec": 5.2,
+        "local_end_sec": 6.3,
+        "absolute_start_sec": 5.2,
+        "absolute_end_sec": 6.3,
+        "text": "真心的战友们好"
+      },
+      {
+        "local_start_sec": 6.7,
+        "local_end_sec": 8.1,
+        "absolute_start_sec": 6.7,
+        "absolute_end_sec": 8.1,
+        "text": "你没见谁了吗"
+      },
+      {
+        "local_start_sec": 16.9,
+        "local_end_sec": 17.9,
+        "absolute_start_sec": 16.9,
+        "absolute_end_sec": 17.9,
+        "text": "3月12号"
+      },
+      {
+        "local_start_sec": 18.6,
+        "local_end_sec": 19.6,
+        "absolute_start_sec": 18.6,
+        "absolute_end_sec": 19.6,
+        "text": "哎呦我的妈呀"
+      },
+      {
+        "local_start_sec": 19.6,
+        "local_end_sec": 20.8,
+        "absolute_start_sec": 19.6,
+        "absolute_end_sec": 20.8,
+        "text": "共产党的两会"
+      },
+      {
+        "local_start_sec": 21.1,
+        "local_end_sec": 22.2,
+        "absolute_start_sec": 21.1,
+        "absolute_end_sec": 22.2,
+        "text": "又选出了"
+      },
+      {
+        "local_start_sec": 22.8,
+        "local_end_sec": 23.4,
+        "absolute_start_sec": 22.8,
+        "absolute_end_sec": 23.4,
+        "text": "伟大的"
+      }
+    ],
+    "best_match": {
+      "local_start_sec": 0.0,
+      "local_end_sec": 3.4,
+      "text": "应的战友们好3月10号",
+      "similarity": 0.689655,
+      "keyword_coverage": 0.333333,
+      "score": 0.689655,
+      "entry_count": 2
+    },
+    "process_returncode": 0,
+    "stderr_tail": "read_audio_data: reading audio data from '/home/runner/work/Miles-Guo_public_archive/Miles-Guo_public_archive/cache/playback_evidence/PILOT-L007/LIVE_20230310_001_SEG_000000/audio_16k_mono.wav' ...\nread_audio_data: trying to decode with miniaudio\noutput_srt: saving output to '/home/runner/work/Miles-Guo_public_archive/Miles-Guo_public_archive/cache/playback_evidence/PILOT-L007/LIVE_20230310_001_SEG_000000/whisper.srt'\n"
   },
   "visual_evidence": {
     "frames": [
@@ -53,16 +125,16 @@
       "status": "not_requested"
     }
   },
-  "candidate_content_match": false,
-  "candidate_observed_position_sec": null,
-  "candidate_timing_error_sec": null,
-  "candidate_absolute_timing_error_sec": null,
+  "candidate_content_match": true,
+  "candidate_observed_position_sec": 0.0,
+  "candidate_timing_error_sec": 0.0,
+  "candidate_absolute_timing_error_sec": 0.0,
   "minimum_agent_review_score": 0.55,
   "agent_acceptance_required": true,
   "counts_toward_pilot_60": false,
   "decode_evidence_sha256": "9bbe3e3d4320823a9390b875cdbdaad7b255723dd926fcc4f025e4a46517b663",
   "temporary_clip_sha256": "51c6620b602c854d3a0a8c8f3f75f5f548d2552c088f55109cb740986c2f5dd7",
-  "generated_at": "2026-09-13T05:13:21.158046+00:00",
-  "bundle_id": "4e91dfc9cce793991ac9cbcd75f60c7a9ae9f599cc992d2d0e3ae759d70fad04",
-  "request_revision": 4
+  "generated_at": "2026-09-13T05:16:34.308343+00:00",
+  "bundle_id": "715c7cce0aa0ffeaea00b41ac1bd12bf925ba6e6bc2f2465db1dfdcfc8c5fa8a",
+  "request_revision": 5
 }

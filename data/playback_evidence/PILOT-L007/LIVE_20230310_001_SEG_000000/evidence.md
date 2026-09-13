@@ -6,8 +6,8 @@
 - Expected start: `0.000s`
 - Decode window: `0.000s` → `24.000s`
 - Real media decoded: `true`
-- Evidence status: `needs_manual_or_wider_review`
-- Bundle ID: `4e91dfc9cce793991ac9cbcd75f60c7a9ae9f599cc992d2d0e3ae759d70fad04`
+- Evidence status: `ready_for_agent_review`
+- Bundle ID: `715c7cce0aa0ffeaea00b41ac1bd12bf925ba6e6bc2f2465db1dfdcfc8c5fa8a`
 
 ## Target text
 
@@ -15,7 +15,13 @@
 
 ## Decoded-audio ASR match
 
-No usable Whisper match was produced.
+- Candidate observed position: `0.000s`
+- Signed timing error: `+0.000s`
+- Match score: `0.689655`
+- Similarity: `0.689655`
+- Keyword coverage: `0.333333`
+
+应的战友们好3月10号
 
 ## Sampled frame OCR
 
