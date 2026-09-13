@@ -1,21 +1,85 @@
 {
   "project": "Miles-Guo_public_archive",
   "evidence_version": "repository-playback-evidence-v1",
-  "status": "blocked_media_decode",
+  "status": "needs_manual_or_wider_review",
   "case_id": "PILOT-L008",
   "live_id": "LIVE_20230312_001",
   "segment_id": "LIVE_20230312_001_SEG_000000",
+  "task_id": "P9-PLAYBACK-PILOT-L008",
   "request_ref": "coordination/playback_requests/PILOT-L008/LIVE_20230312_001_SEG_000000.json",
   "requested_by": "agent-20260914-gpt56sol-fulltest3",
-  "media_url": "https://rumble.com/v5b2z4t-20230312-1.html",
+  "media_url": "https://gettr.com/streaming/p2b7kcm569c",
+  "target_text": "Tia（小柯基）：绝对的，不仅是反共而是要灭共！",
+  "target_text_search": "Tia 小柯基 反共 灭共",
   "expected_start_sec": 0.0,
+  "decode_request_start_sec": 0.0,
   "decode_start_sec": 0.0,
-  "decode_end_sec": 0.0,
-  "playback_decode_verified": false,
+  "decode_end_sec": 24.0,
+  "decode_window_sec": 24.0,
+  "decode_resolver": "gettr_public_join_api",
+  "playback_decode_verified": true,
+  "repository_content_inspection": true,
+  "inspection_engine": "github-actions+ffmpeg+whisper.cpp+frame-ocr",
+  "audio_asr": {
+    "engine": "whisper.cpp",
+    "model": "ggml-small.bin",
+    "entries": [
+      {
+        "local_start_sec": 0.0,
+        "local_end_sec": 6.0,
+        "absolute_start_sec": 0.0,
+        "absolute_end_sec": 6.0,
+        "text": "(聽不懂)"
+      }
+    ],
+    "best_match": {
+      "local_start_sec": 0.0,
+      "local_end_sec": 6.0,
+      "text": "(聽不懂)",
+      "similarity": 0.090909,
+      "keyword_coverage": 0.0,
+      "score": 0.090909,
+      "entry_count": 1
+    },
+    "process_returncode": 0,
+    "stderr_tail": "read_audio_data: reading audio data from '/home/runner/work/Miles-Guo_public_archive/Miles-Guo_public_archive/cache/playback_evidence/PILOT-L008/LIVE_20230312_001_SEG_000000/audio_16k_mono.wav' ...\nread_audio_data: trying to decode with miniaudio\noutput_srt: saving output to '/home/runner/work/Miles-Guo_public_archive/Miles-Guo_public_archive/cache/playback_evidence/PILOT-L008/LIVE_20230312_001_SEG_000000/whisper.srt'\n"
+  },
+  "visual_evidence": {
+    "frames": [
+      {
+        "local_sec": 0.0,
+        "absolute_sec": 0.0,
+        "sha256": "f7cc3086e9584cdd568ec382c58fd6e734b80930ae7c78c41b44941b87f429b8",
+        "ocr_text": "q                 L                                                        , yet\na  :      _\n| .   b         全                             June 2  —\np            »              rh                                   :\n|  和                             a\nmt ‘           Ja                      上  全                                d\n} a,     A          7\nc——__                          — £7)    =\n‘a-/                      ee                        A.\n,          >ember 2019                                    4\n    A wang rene         : wy ff             . =\n四  4 f              se     pre wn\n|   Monica Kennedy... is E\n=   Bas   :    -                             hs ey      ;  Ti   LO    upsean of Ci\n03/03/2023                      a(小柯:           Be egy ne\n   )   |   q   -         二                -       ;    | 站 ae           |"
+      },
+      {
+        "local_sec": 4.0,
+        "absolute_sec": 4.0,
+        "sha256": "ab0d1eebcded9a242e02e7cab016b8ed629bdba615034da1b539955aa21b6bf7",
+        "ocr_text": "|                                                                                                       as     RN\n| a EB                                                                                      :      i     .\nd                 |   =                                                                                                 ;   )                                       ; oper\n|            ) Hamp         全\n|    i           >                             )                             June 2  rr\n              刘                *                                         :\n     :                    ;\n’           Jag                     ,                                                                      di\n1          N\nLp       已              ;\n        ~§                         ‘¢                                 4\n?            >ember 2019                               .                                               )\ni                                          per 20         P unieashed COVID             Fa     /                    Dake\nes 入       wah alee             a    ?   4                 es * as   Novemb«\n|   MIC nica Kennedy. Se\nmeee ly “eae                                PEE APR CSU RIO\na    | —                   | 亡     —  ———- |   |"
+      },
+      {
+        "local_sec": 8.0,
+        "absolute_sec": 8.0,
+        "sha256": "b15cdaf57dd8e3df5fd8f9fc95c5e56b74893d467582a537b9e9c134efb0cb6c",
+        "ocr_text": "rae                                                              ‘     |                           ow\n:               ir  f .             = .                      a                                      June\n|         :         4                            —                           ‘\n;   \\  =a &                      .                                yore    -  .                              ;\n'    Py.)   Jan                   、                        di\n:  — ff                            :                    >\n| 本一/                     Ss                       St’             :\nk       December 2019          4                    }   )\n;                                  ber 3        P unleashed COVID          Fst    1                pee\n|              = —    yg      SR voor\n— 4 @                ee fi          AT\n03/03/2023            4         als \\a] 2            bay 2020       in) A re\nA    站。 al,  }   a               | ve     == oa  _|"
+      }
+    ],
+    "smolvlm": {
+      "status": "not_requested"
+    }
+  },
+  "candidate_content_match": false,
+  "candidate_observed_position_sec": 0.0,
+  "candidate_timing_error_sec": 0.0,
+  "candidate_absolute_timing_error_sec": 0.0,
+  "minimum_agent_review_score": 0.55,
+  "agent_acceptance_required": true,
   "counts_toward_pilot_60": false,
-  "stderr": "yt-dlp resolver failed for https://rumble.com/v5b2z4t-20230312-1.html with rc=1:\nERROR: [Rumble] v5b2z4t-20230312-1.html: Unable to download webpage: HTTP Error 403: Forbidden (caused by <HTTPError 403: Forbidden>)\n\n",
-  "generated_at": "2026-09-13T15:49:17.139670+00:00",
-  "bundle_id": "cbf1101aa24cc162254792ecd7fdcc2b64098a0d269e4c7bcfc18dad0a55e91d",
-  "request_revision": 3,
-  "request_sha256": "b8c63d44f68baddcd891a69d1accfb2a9dc88e12de09975e1ff33db2473d0e2a"
+  "decode_evidence_sha256": "20491e9a796070f0e5b2d0ef8c7d9f856db91db456ef9e623476487ccdc3d16c",
+  "temporary_clip_sha256": "01cb1826cac3b27475217786961a807a7e0bb211e01c4044a6ecbd3e722ddef7",
+  "generated_at": "2026-09-13T21:07:15.864123+00:00",
+  "bundle_id": "6acf6438f732684e84a2cf666fae419d15f473cb512a41211fb271d69c9a447c",
+  "request_revision": 4,
+  "request_sha256": "3fe45dd5824b65d3a7d11945c69e3bea8946d2516a13994e565615b1a66efccc"
 }
