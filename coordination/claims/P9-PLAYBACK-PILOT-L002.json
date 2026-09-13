@@ -1,0 +1,21 @@
+{
+  "task_id": "P9-PLAYBACK-PILOT-L002",
+  "agent_id": "agent-20260913T052000Z-gpt56sol-a7f3",
+  "claimed_at": "2026-09-13T05:20:00Z",
+  "status": "in_progress",
+  "kind": "real_playback_audit",
+  "case_id": "PILOT-L002",
+  "live_id": "LIVE_20220506_001",
+  "missing_segment_ids": [
+    "LIVE_20220506_001_SEG_000000",
+    "LIVE_20220506_001_SEG_000001",
+    "LIVE_20220506_001_SEG_000002"
+  ],
+  "execution_mode": "repository_evidence_service_v1",
+  "repository_evidence_service": true,
+  "local_content_inspection_capable": false,
+  "workflow_mode": "continuous-worker-v2",
+  "claim_protocol": "claim-protocol-v2",
+  "continue_after_finish": true,
+  "scope": "Generate and review repository playback evidence for all canonical timed segments of PILOT-L002."
+}
