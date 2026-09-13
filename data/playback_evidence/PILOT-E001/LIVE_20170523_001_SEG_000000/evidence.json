@@ -7,15 +7,15 @@
   "segment_id": "LIVE_20170523_001_SEG_000000",
   "request_ref": "coordination/playback_requests/PILOT-E001/LIVE_20170523_001_SEG_000000.json",
   "requested_by": "agent-20260913-gpt56sol-validation3",
-  "media_url": "https://rumble.com/v576k9t-20170523.html",
+  "media_url": "https://www.youtube.com/watch?v=WwrBT5tncdo",
   "expected_start_sec": 6.0,
   "decode_start_sec": 6.0,
   "decode_end_sec": 6.0,
   "playback_decode_verified": false,
   "counts_toward_pilot_60": false,
-  "stderr": "https://rumble.com/v576k9t-20170523.html: Server returned 403 Forbidden (access denied)\n",
-  "generated_at": "2026-09-13T06:13:16.695547+00:00",
-  "bundle_id": "0bf36c109fe924539dfaec8b5dfda547b139c8ae442c865aa76fa3fff209cd10",
-  "request_revision": 1,
-  "request_sha256": "6f2fe2e70aaabce2e540088a4fc73a4415703425f1ce2e9ee756983b31042e78"
+  "stderr": "https://www.youtube.com/watch?v=WwrBT5tncdo: Invalid data found when processing input\n",
+  "generated_at": "2026-09-13T06:22:10.831805+00:00",
+  "bundle_id": "a80153b48d40d109cff583891a6a35faeac00ff04e607c73aeecc82a05d02613",
+  "request_revision": 2,
+  "request_sha256": "62e46ab51486e5f1b95719fea555a511c1d1ce86b2d11870b057dcd08834b88f"
 }
