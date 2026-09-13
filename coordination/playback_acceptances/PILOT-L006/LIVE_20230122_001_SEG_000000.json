@@ -1,0 +1,11 @@
+{
+  "acceptance_version": "playback-acceptance-v1",
+  "case_id": "PILOT-L006",
+  "live_id": "LIVE_20230122_001",
+  "segment_id": "LIVE_20230122_001_SEG_000000",
+  "evidence_ref": "data/playback_evidence/PILOT-L006/LIVE_20230122_001_SEG_000000/evidence.json",
+  "bundle_id": "e9230d274617a7136f416fa1bf7d22de7653fb076cab286bbdec88932f909e7c",
+  "accepted_by": "agent-20260914-gpt56sol-fulltest4",
+  "accepted": true,
+  "content_observation": "Decoded GETTR audio at the canonical 184s point contains the target exchange: Qmail is asked whether the speakers can be heard, followed by the reply and the remarks about not seeing the picture and the sound being relatively low. Whisper independently re-transcribed that sequence in the decoded 174-198s window; the candidate begins at 184.0s, matching the canonical start with 0.0s signed error."
+}
