@@ -11,6 +11,7 @@ REQUEST_ROOT = ROOT / "coordination" / "playback_requests"
 ACCEPTANCE_ROOT = ROOT / "coordination" / "playback_acceptances"
 CLAIM_ROOT = ROOT / "coordination" / "claims"
 EVIDENCE_ROOT = ROOT / "data" / "playback_evidence"
+CACHE_ROOT = ROOT / "cache" / "playback_evidence"
 AUDIT_ROOT = ROOT / "data" / "playback_audits"
 
 # Queue generation 2 is the clean restart boundary requested after the first round of
@@ -187,8 +188,51 @@ def pending_acceptances() -> tuple[list[Path], list[str]]:
     return pending, problems
 
 
+def _enrich_blocked_decode_diagnostics(request: dict, evidence_path: Path, evidence: dict) -> dict:
+    """Persist audit_media's structured failure diagnostics before runner cache disappears.
+
+    process_playback_request historically kept only subprocess stderr. That can hide a later
+    resolver/probe failure whenever yt-dlp already wrote a warning. The audit_media JSON is the
+    authoritative structured diagnostic for this attempt, so copy only diagnostic metadata into
+    durable evidence; never copy temporary media bytes or a resolved signed media URL.
+    """
+    if evidence.get("status") != "blocked_media_decode":
+        return evidence
+    case_id = str(request.get("case_id") or "")
+    segment_id = str(request.get("segment_id") or "")
+    temp_dir = CACHE_ROOT / case_id / segment_id
+    if not temp_dir.exists():
+        return evidence
+    candidates = sorted(temp_dir.glob(f"{segment_id}_expected_*.json"))
+    if not candidates:
+        return evidence
+    try:
+        decode = load_object(candidates[-1])
+    except Exception:
+        return evidence
+
+    changed = False
+    mapping = {
+        "decode_failure_stage": decode.get("stage"),
+        "decode_resolution": decode.get("resolution"),
+        "decode_tool_stderr": decode.get("stderr"),
+        "decode_timed_out": decode.get("timed_out"),
+        "decode_timeout_sec": decode.get("timeout_sec"),
+    }
+    for key, value in mapping.items():
+        if value is not None and evidence.get(key) != value:
+            evidence[key] = value
+            changed = True
+    if changed:
+        evidence_path.write_text(
+            json.dumps(evidence, ensure_ascii=False, indent=2) + "\n",
+            encoding="utf-8",
+        )
+    return evidence
+
+
 def finalize_evidence() -> list[str]:
-    """Finalize presentation only; request revision binding is done by stamp helper.
+    """Finalize presentation/diagnostics only; revision binding is done by stamp helper.
 
     This function intentionally does NOT modify request_revision. Otherwise a failed newer
     request could relabel an older evidence bundle as if the newer request had succeeded.
@@ -206,6 +250,7 @@ def finalize_evidence() -> list[str]:
             if str(evidence.get("request_ref") or "") != str(request_path.relative_to(ROOT)):
                 continue
 
+            evidence = _enrich_blocked_decode_diagnostics(request, evidence_path, evidence)
             md_path = evidence_path.parent / "evidence.md"
             if md_path.exists() and evidence.get("playback_decode_verified") is not True:
                 text = md_path.read_text(encoding="utf-8")
