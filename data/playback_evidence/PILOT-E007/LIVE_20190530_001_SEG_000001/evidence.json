@@ -6,16 +6,16 @@
   "live_id": "LIVE_20190530_001",
   "segment_id": "LIVE_20190530_001_SEG_000001",
   "request_ref": "coordination/playback_requests/PILOT-E007/LIVE_20190530_001_SEG_000001.json",
-  "requested_by": "agent-20260913T052200Z-gpt56sol-playback-e007",
-  "media_url": "https://rumble.com/v57ljgt-20190530-2.html",
+  "requested_by": "agent-20260913-gpt56sol-fulltest2",
+  "media_url": "https://odysee.com/@laxi:4/20190530_2:e",
   "expected_start_sec": 282.0,
   "decode_start_sec": 282.0,
   "decode_end_sec": 282.0,
   "playback_decode_verified": false,
   "counts_toward_pilot_60": false,
-  "stderr": "https://rumble.com/v57ljgt-20190530-2.html: Server returned 403 Forbidden (access denied)\n",
-  "generated_at": "2026-09-13T05:27:49.687465+00:00",
-  "bundle_id": "4bec6984c416446acb4c1e5ea0dac1dd29f7ae04962de45dce03a15391288203",
-  "request_revision": 1,
-  "request_sha256": "bf6cedc865018dfa0455cb802ef67a39d4268dfe923b59bbfee802aa01abe83c"
+  "stderr": "yt-dlp resolver failed for https://odysee.com/@laxi:4/20190530_2:e with rc=1:\nWARNING: [lbry] @laxi#4/20190530_2#e: Unable to download webpage: HTTP Error 429: Too Many Requests\nERROR: [lbry] e8c26cc07f713ce68f200261c816df1e4233c625: No video formats found!; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you are on the latest version using  yt-dlp -U\n\n",
+  "generated_at": "2026-09-13T13:05:33.295903+00:00",
+  "bundle_id": "7ba265810da740017107cfa73c0b0444d4dc7fb41a91e09d2159fbd2b60710dc",
+  "request_revision": 2,
+  "request_sha256": "0bcaa777b211991976402c532d8d90c3c99671e5a1986eb4ba28350781b95d6a"
 }
