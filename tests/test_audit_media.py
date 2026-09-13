@@ -77,6 +77,11 @@ class AuditMediaSmokeTest(unittest.TestCase):
             self.assertEqual(payload["expected_start_sec"], expected)
             self.assertTrue(Path(payload["clip_path"]).exists())
             self.assertTrue(Path(payload["frame_path"]).exists())
+            decoded_probe = payload["decoded_clip_probe"]
+            self.assertGreater(float(decoded_probe["format"]["duration"]), 0.1)
+            media_types = {stream.get("codec_type") for stream in decoded_probe["streams"]}
+            self.assertIn("video", media_types)
+            self.assertIn("audio", media_types)
 
 
 if __name__ == "__main__":
