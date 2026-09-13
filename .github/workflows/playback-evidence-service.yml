@@ -82,22 +82,9 @@ jobs:
         id: visual
         shell: bash
         run: |
-          python - <<'PY' >> "$GITHUB_OUTPUT"
-          import json
-          from pathlib import Path
-          need = False
-          root = Path('coordination/playback_requests')
-          for path in root.rglob('*.json') if root.exists() else []:
-              try:
-                  row = json.loads(path.read_text(encoding='utf-8'))
-              except Exception:
-                  continue
-              evidence = Path('data/playback_evidence') / str(row.get('case_id')) / str(row.get('segment_id')) / 'evidence.json'
-              if row.get('visual_mode') == 'smolvlm2_optional' and not evidence.exists():
-                  need = True
-                  break
-          print(f"need_smolvlm={'true' if need else 'false'}")
-          PY
+          set -euo pipefail
+          need="$(python scripts/playback_service_state.py --visual-runtime-needed)"
+          echo "need_smolvlm=$need" >> "$GITHUB_OUTPUT"
 
       - name: Install optional free SmolVLM2 runtime
         if: steps.visual.outputs.need_smolvlm == 'true'
