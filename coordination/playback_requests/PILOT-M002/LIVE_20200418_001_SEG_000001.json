@@ -1,16 +1,16 @@
 {
   "request_version": "playback-request-v1",
-  "request_revision": 3,
+  "request_revision": 4,
   "task_id": "P9-PLAYBACK-PILOT-M002",
   "case_id": "PILOT-M002",
   "live_id": "LIVE_20200418_001",
   "segment_id": "LIVE_20200418_001_SEG_000001",
-  "media_url": "https://rumble.com/v58ckph-20200418.html",
+  "media_url": "https://gwins.org/cn/milesguo/1149.html",
   "requested_by": "agent-20260914-gpt56sol-generation2",
-  "requested_at": "2026-09-13T22:32:10Z",
+  "requested_at": "2026-09-13T23:38:10Z",
   "pre_roll_sec": 10.0,
   "decode_window_sec": 24.0,
   "language": "zh",
   "visual_mode": "frames_ocr",
-  "retry_reason": "Revision 2 Odysee was blocked by HTTP 429 / resolver timeout. Revision 3 uses the same directly verified GWINS page's Rumble media URL for this canonical video."
+  "retry_reason": "Generation-2 revision 4: direct Odysee was blocked by HTTP 429 and direct Rumble by HTTP 403. Retry through the repository-verified GWINS archive page so the trusted archive-page resolver can select a supported public media link without inventing provenance."
 }
