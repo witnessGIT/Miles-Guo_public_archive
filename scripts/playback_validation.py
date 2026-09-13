@@ -157,7 +157,6 @@ def _validate_repository_evidence(row: dict, source_label: str) -> list[str]:
         r_observed = float(row["observed_position_sec"])
         r_decode_start = float(row.get("decode_start_sec", row["decode_request_start_sec"]))
         r_decode_window = float(row["decode_window_sec"])
-        score = float(((evidence.get("audio_asr") or {}).get("best_match") or {}).get("score") or 0.0)
         minimum = float(evidence.get("minimum_agent_review_score") or 1.0)
     except (KeyError, TypeError, ValueError):
         problems.append(f"{source_label}: repository evidence contains non-numeric timing/score fields")
@@ -168,15 +167,55 @@ def _validate_repository_evidence(row: dict, source_label: str) -> list[str]:
         problems.append(f"{source_label}: repository evidence observed position mismatch")
     if abs(e_decode_start - r_decode_start) > 0.001 or abs(e_decode_window - r_decode_window) > 0.001:
         problems.append(f"{source_label}: repository evidence decode window mismatch")
-    if score < minimum:
-        problems.append(f"{source_label}: repository evidence ASR score below review threshold")
+
+    match_method = str(evidence.get("candidate_match_method") or "audio_asr")
+    if match_method == "audio_asr":
+        match = (evidence.get("audio_asr") or {}).get("best_match") or {}
+    elif match_method == "frame_ocr":
+        match = (evidence.get("visual_evidence") or {}).get("best_match") or {}
+    else:
+        problems.append(f"{source_label}: unsupported repository candidate_match_method {match_method!r}")
+        match = {}
     try:
-        row_score = float(row.get("repository_asr_match_score"))
+        score = float(evidence.get("candidate_match_score") or match.get("score") or 0.0)
     except (TypeError, ValueError):
-        problems.append(f"{source_label}: invalid repository_asr_match_score")
+        problems.append(f"{source_label}: invalid repository candidate match score")
+        score = 0.0
+    if score < minimum:
+        problems.append(
+            f"{source_label}: repository evidence {match_method} score below review threshold"
+        )
+    row_method = str(row.get("repository_candidate_match_method") or "audio_asr")
+    if row_method != match_method:
+        problems.append(f"{source_label}: repository_candidate_match_method mismatch")
+    try:
+        row_score = float(row.get("repository_candidate_match_score", row.get("repository_asr_match_score")))
+    except (TypeError, ValueError):
+        problems.append(f"{source_label}: invalid repository_candidate_match_score")
     else:
         if abs(row_score - score) > 0.000001:
-            problems.append(f"{source_label}: repository_asr_match_score mismatch")
+            problems.append(f"{source_label}: repository_candidate_match_score mismatch")
+
+    # Preserve separate ASR/OCR diagnostics when present, but only the selected candidate method
+    # is required to clear the review threshold.
+    if row.get("repository_asr_match_score") is not None:
+        try:
+            row_asr = float(row.get("repository_asr_match_score"))
+            evidence_asr = float(((evidence.get("audio_asr") or {}).get("best_match") or {}).get("score") or 0.0)
+        except (TypeError, ValueError):
+            problems.append(f"{source_label}: invalid repository_asr_match_score")
+        else:
+            if abs(row_asr - evidence_asr) > 0.000001:
+                problems.append(f"{source_label}: repository_asr_match_score mismatch")
+    if row.get("repository_ocr_match_score") is not None:
+        try:
+            row_ocr = float(row.get("repository_ocr_match_score"))
+            evidence_ocr = float(((evidence.get("visual_evidence") or {}).get("best_match") or {}).get("score") or 0.0)
+        except (TypeError, ValueError):
+            problems.append(f"{source_label}: invalid repository_ocr_match_score")
+        else:
+            if abs(row_ocr - evidence_ocr) > 0.000001:
+                problems.append(f"{source_label}: repository_ocr_match_score mismatch")
     return problems
 
 
@@ -216,7 +255,7 @@ def validate_playback_record(
         problems.append(f"{source_label}: playback_decode_verified is not true")
     if row.get("content_timing_verified") is not True or row.get("content_match") is not True:
         problems.append(f"{source_label}: content timing/content match not verified")
-    if row.get("observation_mode") not in {"audio", "video", "both"}:
+    if row.get("observation_mode") not in {"audio", "video", "visual", "both"}:
         problems.append(f"{source_label}: invalid observation_mode")
     if not is_public_http_url(row.get("media_url")):
         problems.append(f"{source_label}: media_url is not a public http(s) URL")
