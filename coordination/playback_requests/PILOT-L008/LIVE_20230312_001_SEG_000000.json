@@ -1,16 +1,16 @@
 {
   "request_version": "playback-request-v1",
-  "request_revision": 4,
+  "request_revision": 5,
   "task_id": "P9-PLAYBACK-PILOT-L008",
   "case_id": "PILOT-L008",
   "live_id": "LIVE_20230312_001",
   "segment_id": "LIVE_20230312_001_SEG_000000",
   "media_url": "https://gettr.com/streaming/p2b7kcm569c",
   "requested_by": "agent-20260914-gpt56sol-fulltest3",
-  "requested_at": "2026-09-13T18:20:00Z",
+  "requested_at": "2026-09-13T21:14:00Z",
   "pre_roll_sec": 10.0,
   "decode_window_sec": 24.0,
   "language": "zh",
   "visual_mode": "frames_ocr",
-  "retry_reason": "Regression-test repository GETTR public join API fallback against the exact trusted GETTR streaming URL already recorded for LIVE_20230312_001."
+  "retry_reason": "Regression-test combined ASR/frame-OCR candidate matcher after GETTR decode succeeded in revision 4."
 }
