@@ -13,9 +13,9 @@
   "decode_end_sec": 6.0,
   "playback_decode_verified": false,
   "counts_toward_pilot_60": false,
-  "stderr": "https://www.youtube.com/watch?v=WwrBT5tncdo: Invalid data found when processing input\n",
-  "generated_at": "2026-09-13T06:22:10.831805+00:00",
-  "bundle_id": "a80153b48d40d109cff583891a6a35faeac00ff04e607c73aeecc82a05d02613",
-  "request_revision": 2,
-  "request_sha256": "62e46ab51486e5f1b95719fea555a511c1d1ce86b2d11870b057dcd08834b88f"
+  "stderr": "yt-dlp resolver failed for https://www.youtube.com/watch?v=WwrBT5tncdo with rc=1:\nWARNING: [youtube] No supported JavaScript runtime could be found. Only deno is enabled by default; to use another runtime add  --js-runtimes RUNTIME[:PATH]  to your command/config. YouTube extraction without a JS runtime has been deprecated, and some formats may be missing. See  https://github.com/yt-dlp/yt-dlp/wiki/EJS  for details on installing one\nWARNING: [youtube] No title found in player responses; falling back to title from initial data. Other metadata may also be missing\nERROR: [youtube] WwrBT5tncdo: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies\n\n",
+  "generated_at": "2026-09-13T06:27:05.768704+00:00",
+  "bundle_id": "2c7b54e0d3b30dc1f35ba28dc2f788e693be1e2c22b8b7b8a3af529401fdf88d",
+  "request_revision": 3,
+  "request_sha256": "c82eb903efbefd470b21c6d8d4b0412e1b08ac6896247322bdab7ee0717b72b4"
 }
