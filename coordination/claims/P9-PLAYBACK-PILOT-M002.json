@@ -7,7 +7,8 @@
   "case_id": "PILOT-M002",
   "live_id": "LIVE_20200418_001",
   "queue_generation": 2,
-  "missing_segment_ids": [
+  "missing_segment_ids": [],
+  "blocked_segment_ids": [
     "LIVE_20200418_001_SEG_000000",
     "LIVE_20200418_001_SEG_000001",
     "LIVE_20200418_001_SEG_000002"
@@ -18,5 +19,7 @@
   "workflow_mode": "continuous-worker-v2",
   "claim_protocol": "claim-protocol-v2",
   "continue_after_finish": true,
+  "disposition": "source_blocked_after_exhausting_verified_public_media",
+  "blocker": "Generation-2 tested the trusted GHOT page, verified GWINS Odysee alternate, and verified GWINS Rumble alternate. GHOT exposed no supported media URL; Odysee returned HTTP 429/timeouts; Rumble returned HTTP 403. No segment decoded and no acceptance was created.",
   "scope": "Clean generation-2 end-to-end Playback validation after historical queue reset."
 }
