@@ -7,15 +7,23 @@
   "segment_id": "LIVE_20200418_001_SEG_000002",
   "request_ref": "coordination/playback_requests/PILOT-M002/LIVE_20200418_001_SEG_000002.json",
   "requested_by": "agent-20260914-gpt56sol-generation2",
-  "media_url": "https://gwins.org/cn/milesguo/1149.html",
+  "media_url": "https://odysee.com/@laxi:4/20200418:b",
   "expected_start_sec": 1104.0,
   "decode_start_sec": 1104.0,
   "decode_end_sec": 1104.0,
   "playback_decode_verified": false,
   "counts_toward_pilot_60": false,
-  "stderr": "yt-dlp resolver failed for https://odysee.com/@laxi:4/20200418:b with rc=124:\ncommand timed out after 45s: yt-dlp -g --no-playlist\n",
-  "generated_at": "2026-09-13T23:42:55.973231+00:00",
-  "bundle_id": "a8d86f95c894142ea8fb88446a79a9cb440b74e7a6644dea272a5663af5cd6ca",
-  "request_revision": 4,
-  "request_sha256": "49dd8381cd4365a148b038e6d3f8ec63368c5d8bd4564999265785658b100fe6"
+  "stderr": "Cannot determine format of input stream 0:0 after EOF\nError marking filters as finished\nError while filtering: Invalid data found when processing input\n[out#0/mp4 @ 0x560274a35900] Nothing was written into output file, because at least one of its streams received no packets.\n",
+  "generated_at": "2026-09-13T23:49:56.586474+00:00",
+  "bundle_id": "a3f6522ed36e529cef8e54b7bc761499b81f4b97f7cde6a13d225a4931b61bd5",
+  "request_revision": 5,
+  "request_sha256": "de7ca56fad415292e756cd93ec1d17f8d6203b4c8d89a07efda65a00817c3e67",
+  "decode_failure_stage": "decode",
+  "decode_resolution": {
+    "resolver": "yt-dlp",
+    "source": "https://odysee.com/@laxi:4/20200418:b",
+    "yt_dlp_returncode": 0
+  },
+  "decode_tool_stderr": "Cannot determine format of input stream 0:0 after EOF\nError marking filters as finished\nError while filtering: Invalid data found when processing input\n[out#0/mp4 @ 0x560274a35900] Nothing was written into output file, because at least one of its streams received no packets.\n",
+  "decode_timed_out": false
 }

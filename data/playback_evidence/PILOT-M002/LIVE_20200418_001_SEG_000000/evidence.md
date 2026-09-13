@@ -2,12 +2,12 @@
 
 - Case: `PILOT-M002`
 - Live: `LIVE_20200418_001`
-- Media: https://gwins.org/cn/milesguo/1149.html
+- Media: https://odysee.com/@laxi:4/20200418:b
 - Expected start: `123.000s`
 - Decode window: `123.000s` → `123.000s`
 - Real media decoded: `false`
 - Evidence status: `blocked_media_decode`
-- Bundle ID: `3428db482530619eae22c9ba05c87b4432bb5ae960a738c535a21ac5ff5d8c0f`
+- Bundle ID: `7c4170c6fed4fbcb11c36c2c49e0f161268fb5f2b0da8bd6c621f887fe101e20`
 
 ## Target text
 
