@@ -19,6 +19,7 @@ class PlaybackServiceStateTest(unittest.TestCase):
             state.ROOT,
             state.REQUEST_ROOT,
             state.ACCEPTANCE_ROOT,
+            state.CLAIM_ROOT,
             state.EVIDENCE_ROOT,
             state.AUDIT_ROOT,
         )
@@ -27,6 +28,7 @@ class PlaybackServiceStateTest(unittest.TestCase):
         state.ROOT = root
         state.REQUEST_ROOT = root / "coordination" / "playback_requests"
         state.ACCEPTANCE_ROOT = root / "coordination" / "playback_acceptances"
+        state.CLAIM_ROOT = root / "coordination" / "claims"
         state.EVIDENCE_ROOT = root / "data" / "playback_evidence"
         state.AUDIT_ROOT = root / "data" / "playback_audits"
 
@@ -35,6 +37,7 @@ class PlaybackServiceStateTest(unittest.TestCase):
             state.ROOT,
             state.REQUEST_ROOT,
             state.ACCEPTANCE_ROOT,
+            state.CLAIM_ROOT,
             state.EVIDENCE_ROOT,
             state.AUDIT_ROOT,
         ) = self.originals
@@ -84,6 +87,55 @@ class PlaybackServiceStateTest(unittest.TestCase):
         needed, problems = state.pending_requires_visual_runtime()
 
         self.assertFalse(needed)
+        self.assertEqual(problems, [])
+
+    def test_retired_request_is_not_reenqueued(self):
+        request = {
+            "request_version": "playback-request-v1",
+            "task_id": "P9-PLAYBACK-PILOT-X",
+            "case_id": "PILOT-X",
+            "live_id": "LIVE-X",
+            "segment_id": "SEG-OLD",
+            "requested_by": "agent-a",
+        }
+        claim = {
+            "task_id": "P9-PLAYBACK-PILOT-X",
+            "case_id": "PILOT-X",
+            "live_id": "LIVE-X",
+            "agent_id": "agent-a",
+            "missing_segment_ids": ["SEG-NEW"],
+        }
+        self.write_json(state.REQUEST_ROOT / "PILOT-X" / "SEG-OLD.json", request)
+        self.write_json(state.CLAIM_ROOT / "P9-PLAYBACK-PILOT-X.json", claim)
+
+        pending, problems = state.pending_requests(prepare_retries=False)
+
+        self.assertEqual(pending, [])
+        self.assertEqual(problems, [])
+
+    def test_active_request_without_evidence_is_pending(self):
+        request = {
+            "request_version": "playback-request-v1",
+            "task_id": "P9-PLAYBACK-PILOT-X",
+            "case_id": "PILOT-X",
+            "live_id": "LIVE-X",
+            "segment_id": "SEG-1",
+            "requested_by": "agent-a",
+        }
+        claim = {
+            "task_id": "P9-PLAYBACK-PILOT-X",
+            "case_id": "PILOT-X",
+            "live_id": "LIVE-X",
+            "agent_id": "agent-a",
+            "missing_segment_ids": ["SEG-1"],
+        }
+        request_path = state.REQUEST_ROOT / "PILOT-X" / "SEG-1.json"
+        self.write_json(request_path, request)
+        self.write_json(state.CLAIM_ROOT / "P9-PLAYBACK-PILOT-X.json", claim)
+
+        pending, problems = state.pending_requests(prepare_retries=False)
+
+        self.assertEqual(pending, [request_path])
         self.assertEqual(problems, [])
 
 
