@@ -41,28 +41,32 @@ jobs:
           python -m pip install --upgrade pip
           python -m pip install yt-dlp
 
-      - name: Cache whisper.cpp build and model
+      - name: Cache whisper model only
         uses: actions/cache@v4
         with:
-          path: ~/.cache/miles-guo-playback
-          key: playback-${{ runner.os }}-whisper-${{ env.WHISPER_CPP_REF }}-${{ env.WHISPER_MODEL_NAME }}
+          path: ~/.cache/miles-guo-playback/models
+          key: playback-${{ runner.os }}-whisper-model-${{ env.WHISPER_CPP_REF }}-${{ env.WHISPER_MODEL_NAME }}
 
-      - name: Prepare whisper.cpp
+      - name: Prepare portable whisper.cpp
         shell: bash
         run: |
           set -euo pipefail
           root="$HOME/.cache/miles-guo-playback"
-          tool="$root/whisper.cpp-${WHISPER_CPP_REF}"
-          mkdir -p "$root"
-          if [[ ! -x "$tool/build/bin/whisper-cli" ]]; then
-            rm -rf "$tool"
-            git clone --depth 1 --branch "$WHISPER_CPP_REF" https://github.com/ggml-org/whisper.cpp.git "$tool"
-            cmake -S "$tool" -B "$tool/build" -DWHISPER_BUILD_TESTS=OFF -DWHISPER_BUILD_EXAMPLES=ON
-            cmake --build "$tool/build" --config Release -j 4
-          fi
-          model="$tool/models/ggml-${WHISPER_MODEL_NAME}.bin"
+          model_root="$root/models"
+          tool="$RUNNER_TEMP/whisper.cpp-${WHISPER_CPP_REF}"
+          rm -rf "$tool"
+          mkdir -p "$model_root"
+          git clone --depth 1 --branch "$WHISPER_CPP_REF" https://github.com/ggml-org/whisper.cpp.git "$tool"
+          cmake -S "$tool" -B "$tool/build" \
+            -DCMAKE_BUILD_TYPE=Release \
+            -DGGML_NATIVE=OFF \
+            -DWHISPER_BUILD_TESTS=OFF \
+            -DWHISPER_BUILD_EXAMPLES=ON
+          cmake --build "$tool/build" --config Release -j 4
+          model="$model_root/ggml-${WHISPER_MODEL_NAME}.bin"
           if [[ ! -f "$model" ]]; then
             bash "$tool/models/download-ggml-model.sh" "$WHISPER_MODEL_NAME"
+            mv "$tool/models/ggml-${WHISPER_MODEL_NAME}.bin" "$model"
           fi
           echo "WHISPER_CLI=$tool/build/bin/whisper-cli" >> "$GITHUB_ENV"
           echo "WHISPER_MODEL=$model" >> "$GITHUB_ENV"
