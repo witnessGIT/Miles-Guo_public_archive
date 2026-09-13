@@ -1,15 +1,16 @@
 {
   "request_version": "playback-request-v1",
-  "request_revision": 1,
+  "request_revision": 2,
   "task_id": "P9-PLAYBACK-PILOT-M002",
   "case_id": "PILOT-M002",
   "live_id": "LIVE_20200418_001",
   "segment_id": "LIVE_20200418_001_SEG_000000",
-  "media_url": "https://ghot.ai/archive/videos/2020-04-18-3",
+  "media_url": "https://odysee.com/@laxi:4/20200418:b",
   "requested_by": "agent-20260914-gpt56sol-generation2",
-  "requested_at": "2026-09-13T22:21:00Z",
+  "requested_at": "2026-09-13T22:29:00Z",
   "pre_roll_sec": 10.0,
   "decode_window_sec": 24.0,
   "language": "zh",
-  "visual_mode": "frames_ocr"
+  "visual_mode": "frames_ocr",
+  "retry_reason": "Revision 1 proved the GHOT archive page exposes no playable media URL; revision 2 uses the directly verified GWINS-published Odysee URL for the same canonical video."
 }
