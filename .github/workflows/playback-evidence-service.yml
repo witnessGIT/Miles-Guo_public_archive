@@ -114,10 +114,14 @@ jobs:
           failed=0
           while IFS= read -r request; do
             [[ -z "$request" ]] && continue
-            # State manager emits only new/retryable revisions. --force allows a validated
-            # newer retry to replace prior retryable evidence. process_playback_request.py
-            # validates claim/canonical identity/provenance before touching the old bundle.
-            python scripts/process_playback_request.py --request "$request" --force || failed=1
+            # A retry may replace prior retryable evidence only after request validation.
+            # Stamp the exact request revision only when processing succeeded. Therefore a
+            # malformed/unauthorized retry cannot delete or relabel an older evidence bundle.
+            if python scripts/process_playback_request.py --request "$request" --force; then
+              python scripts/stamp_playback_evidence.py --request "$request" || failed=1
+            else
+              failed=1
+            fi
           done < /tmp/playback-requests.txt
           exit "$failed"
 
