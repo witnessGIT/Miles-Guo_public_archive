@@ -2,12 +2,12 @@
 
 - Case: `PILOT-M002`
 - Live: `LIVE_20200418_001`
-- Media: https://odysee.com/@laxi:4/20200418:b
+- Media: https://rumble.com/v58ckph-20200418.html
 - Expected start: `1104.000s`
 - Decode window: `1104.000s` → `1104.000s`
 - Real media decoded: `false`
 - Evidence status: `blocked_media_decode`
-- Bundle ID: `36fec996d308b4480a1a3a5d0ffd10b9ee315883e87736491db736ddedf9b8bc`
+- Bundle ID: `8fd92a7f1e2fde97c1fd510e532d493042a8bc5116f871f3ca58f6a8c93151fa`
 
 ## Target text
 

@@ -7,15 +7,15 @@
   "segment_id": "LIVE_20200418_001_SEG_000001",
   "request_ref": "coordination/playback_requests/PILOT-M002/LIVE_20200418_001_SEG_000001.json",
   "requested_by": "agent-20260914-gpt56sol-generation2",
-  "media_url": "https://odysee.com/@laxi:4/20200418:b",
+  "media_url": "https://rumble.com/v58ckph-20200418.html",
   "expected_start_sec": 186.0,
   "decode_start_sec": 186.0,
   "decode_end_sec": 186.0,
   "playback_decode_verified": false,
   "counts_toward_pilot_60": false,
-  "stderr": "yt-dlp resolver failed for https://odysee.com/@laxi:4/20200418:b with rc=124:\ncommand timed out after 45s: yt-dlp -g --no-playlist\n",
-  "generated_at": "2026-09-13T22:29:48.964251+00:00",
-  "bundle_id": "226443d4bb59bf6707d4211fd2c1c656874799b5219b7d219da325a2372f84fa",
-  "request_revision": 2,
-  "request_sha256": "c2b4437ad0500640371d5920e309f12df6373bc067b543d82d5a3fcbfd4924b0"
+  "stderr": "yt-dlp resolver failed for https://rumble.com/v58ckph-20200418.html with rc=1:\nERROR: [Rumble] v58ckph-20200418.html: Unable to download webpage: HTTP Error 403: Forbidden (caused by <HTTPError 403: Forbidden>)\n\n",
+  "generated_at": "2026-09-13T22:32:32.019340+00:00",
+  "bundle_id": "08883b9c736e974066fa8e13125872e43d50fb67ef6b5b82ad1ffc7c182eeb2a",
+  "request_revision": 3,
+  "request_sha256": "0b62c9eb660503970e16612f1bb9b22d1da61cc55938d579fbdadaa5a16641a4"
 }

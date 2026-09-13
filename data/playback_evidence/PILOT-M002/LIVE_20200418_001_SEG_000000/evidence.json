@@ -7,15 +7,15 @@
   "segment_id": "LIVE_20200418_001_SEG_000000",
   "request_ref": "coordination/playback_requests/PILOT-M002/LIVE_20200418_001_SEG_000000.json",
   "requested_by": "agent-20260914-gpt56sol-generation2",
-  "media_url": "https://odysee.com/@laxi:4/20200418:b",
+  "media_url": "https://rumble.com/v58ckph-20200418.html",
   "expected_start_sec": 123.0,
   "decode_start_sec": 123.0,
   "decode_end_sec": 123.0,
   "playback_decode_verified": false,
   "counts_toward_pilot_60": false,
-  "stderr": "yt-dlp resolver failed for https://odysee.com/@laxi:4/20200418:b with rc=1:\nWARNING: [lbry] @laxi#4/20200418#b: Unable to download webpage: HTTP Error 429: Too Many Requests\nERROR: [lbry] b332e129630a78e507f83ca3eda79d4570af0fd4: No video formats found!; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you are on the latest version using  yt-dlp -U\n\n",
-  "generated_at": "2026-09-13T22:29:03.471369+00:00",
-  "bundle_id": "1b2937a65b8add078997b1bed3cb54c7ea5f5edc0f4780e7960d39b05046e00a",
-  "request_revision": 2,
-  "request_sha256": "85b1146ca798bac3b0795793edc79cd7797667b3d12249be209ff096933e7e06"
+  "stderr": "yt-dlp resolver failed for https://rumble.com/v58ckph-20200418.html with rc=1:\nERROR: [Rumble] v58ckph-20200418.html: Unable to download webpage: HTTP Error 403: Forbidden (caused by <HTTPError 403: Forbidden>)\n\n",
+  "generated_at": "2026-09-13T22:32:31.129648+00:00",
+  "bundle_id": "774c54aecca8168cf0ca524e337a3e3000cc4feab3467651cd9cb70f7c00313d",
+  "request_revision": 3,
+  "request_sha256": "a6c6933a958b2976a6fc888365717d09e3b2c66e2dc3541e1bc2d9a88a3bafc8"
 }
