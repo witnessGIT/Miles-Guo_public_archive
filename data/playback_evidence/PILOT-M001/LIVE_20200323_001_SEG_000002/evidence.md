@@ -4,10 +4,10 @@
 - Live: `LIVE_20200323_001`
 - Media: https://odysee.com/@laxi:4/20200323:d
 - Expected start: `5549.000s`
-- Decode window: `5539.000s` → `5563.000s`
-- Real media decoded: `true`
-- Evidence status: `needs_manual_or_wider_review`
-- Bundle ID: `a8c88f95ceb38764c34282462a542036a9a48a75ddfdd8f99147e95cc4db293b`
+- Decode window: `5549.000s` → `5549.000s`
+- Real media decoded: `false`
+- Evidence status: `blocked_media_decode`
+- Bundle ID: `f54758400b66a43a939a5561c35c79f258caa3acef352882f0aa4651f11f15c8`
 
 ## Target text
 
@@ -23,5 +23,5 @@ No video frames were extracted.
 
 ## Agent decision rule
 
-This evidence was produced from decoded media bytes. It is **not yet a Pilot-60 qualifying record**.
+The repository attempted real-media decoding, but decoding did **not** succeed. This is **not** a Pilot-60 qualifying record and must not be accepted.
 A worker may submit a playback acceptance only after reading this evidence and confirming that the ASR/visual evidence matches the canonical target content.
