@@ -7,15 +7,15 @@
   "segment_id": "LIVE_20230312_001_SEG_000001",
   "request_ref": "coordination/playback_requests/PILOT-L008/LIVE_20230312_001_SEG_000001.json",
   "requested_by": "agent-20260914-gpt56sol-fulltest3",
-  "media_url": "https://gettr.com/streaming/p2b7kcm569c",
+  "media_url": "https://rumble.com/v5b2z4t-20230312-1.html",
   "expected_start_sec": 158.0,
   "decode_start_sec": 158.0,
   "decode_end_sec": 158.0,
   "playback_decode_verified": false,
   "counts_toward_pilot_60": false,
-  "stderr": "yt-dlp resolver failed for https://gettr.com/streaming/p2b7kcm569c with rc=1:\nERROR: data must be bytes, iterable of bytes, or a file-like object\n\n",
-  "generated_at": "2026-09-13T15:43:32.139529+00:00",
-  "bundle_id": "50dabf3d4a74530aed269451c47c58bbe86397264d91815b798a8f5e935df782",
-  "request_revision": 1,
-  "request_sha256": "ee964c0b6f3b54d61337a3593ab0b7cf8f272d135cd2357ba8e04359a779cb62"
+  "stderr": "yt-dlp resolver failed for https://rumble.com/v5b2z4t-20230312-1.html with rc=1:\nERROR: [Rumble] v5b2z4t-20230312-1.html: Unable to download webpage: HTTP Error 403: Forbidden (caused by <HTTPError 403: Forbidden>)\n\n",
+  "generated_at": "2026-09-13T15:49:17.889560+00:00",
+  "bundle_id": "51e9afe07d628f63c0d6d7deedf22195209ff0304bac00f0c1f96d832cb16d11",
+  "request_revision": 3,
+  "request_sha256": "038129bfa1425c52384d3de53caa9040c702d0ebb5b990fc27c39dfc5067821b"
 }

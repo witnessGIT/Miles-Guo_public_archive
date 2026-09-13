@@ -2,12 +2,12 @@
 
 - Case: `PILOT-L008`
 - Live: `LIVE_20230312_001`
-- Media: https://gettr.com/streaming/p2b7kcm569c
+- Media: https://rumble.com/v5b2z4t-20230312-1.html
 - Expected start: `158.000s`
 - Decode window: `158.000s` → `158.000s`
 - Real media decoded: `false`
 - Evidence status: `blocked_media_decode`
-- Bundle ID: `50dabf3d4a74530aed269451c47c58bbe86397264d91815b798a8f5e935df782`
+- Bundle ID: `51e9afe07d628f63c0d6d7deedf22195209ff0304bac00f0c1f96d832cb16d11`
 
 ## Target text
 
