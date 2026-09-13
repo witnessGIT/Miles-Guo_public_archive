@@ -7,6 +7,7 @@ import shutil
 import subprocess
 import sys
 import urllib.error
+import urllib.parse
 import urllib.request
 from pathlib import Path
 
@@ -16,6 +17,8 @@ DECODE_TIMEOUT_SEC = 180
 FRAME_TIMEOUT_SEC = 60
 TIMEOUT_RETURN_CODE = 124
 GETTR_STREAM_RE = re.compile(r"^https?://(?:www\.)?gettr\.com/streaming/([a-z0-9]+)(?:[/?#].*)?$", re.I)
+ODYSEE_RE = re.compile(r"^https?://(?:www\.)?odysee\.com/(.+)$", re.I)
+ODYSEE_PROXY_URL = "https://api.na-backend.odysee.com/api/v1/proxy?m=get"
 TRUSTED_ARCHIVE_PAGE_RE = re.compile(
     r"^https?://(?:(?:www\.)?ghot\.ai/archive/videos/|(?:www\.)?gwins\.org/cn/milesguo/)", re.I
 )
@@ -90,6 +93,69 @@ def resolve_gettr_streaming_public(source):
             "source": source,
             "gettr_stream_id": stream_id,
             "api_url": api_url,
+            "error": f"{type(exc).__name__}: {exc}",
+        }
+
+
+def _odysee_lbry_uri(source):
+    match = ODYSEE_RE.match(source)
+    if not match:
+        return None
+    parsed = urllib.parse.urlparse(source)
+    path = urllib.parse.unquote(parsed.path.lstrip("/"))
+    if not path or "/" not in path:
+        return None
+    return f"lbry://{path}"
+
+
+def resolve_odysee_public(source):
+    """Resolve a public Odysee claim through Odysee's anonymous SDK proxy.
+
+    This uses the same relaxed `get` method used by Odysee clients. It sends no wallet,
+    credentials, cookies, or auth token and only accepts an HTTP(S) streaming_url.
+    """
+    lbry_uri = _odysee_lbry_uri(source)
+    if not lbry_uri:
+        return None, None
+    body = json.dumps({
+        "jsonrpc": "2.0",
+        "method": "get",
+        "params": {"uri": lbry_uri, "save_file": False},
+        "id": 1,
+    }).encode("utf-8")
+    request = urllib.request.Request(
+        ODYSEE_PROXY_URL,
+        data=body,
+        headers={
+            "Content-Type": "application/json",
+            "Accept": "application/json",
+            "User-Agent": "Miles-Guo-public-archive-playback/1.0",
+        },
+        method="POST",
+    )
+    try:
+        with urllib.request.urlopen(request, timeout=RESOLVE_TIMEOUT_SEC) as response:
+            payload = json.loads(response.read().decode("utf-8"))
+        if not isinstance(payload, dict):
+            raise ValueError("Odysee public SDK proxy returned a non-object payload")
+        if payload.get("error"):
+            raise ValueError(f"Odysee public SDK proxy error: {payload.get('error')}")
+        result = payload.get("result")
+        media_url = result.get("streaming_url") if isinstance(result, dict) else None
+        if not isinstance(media_url, str) or not media_url.startswith(("http://", "https://")):
+            raise ValueError("Odysee public SDK proxy returned no usable result.streaming_url")
+        return media_url, {
+            "resolver": "odysee_public_sdk_proxy",
+            "source": source,
+            "lbry_uri": lbry_uri,
+            "api_url": ODYSEE_PROXY_URL,
+        }
+    except (urllib.error.URLError, urllib.error.HTTPError, TimeoutError, ValueError, json.JSONDecodeError) as exc:
+        return None, {
+            "resolver": "odysee_public_sdk_proxy_failed",
+            "source": source,
+            "lbry_uri": lbry_uri,
+            "api_url": ODYSEE_PROXY_URL,
             "error": f"{type(exc).__name__}: {exc}",
         }
 
@@ -174,6 +240,7 @@ def resolve_media(source, *, allow_archive=True):
             return out.strip().splitlines()[0], resolution
         diag = (err or "")[-4000:]
         print(f"yt-dlp resolver failed for {source} with rc={rc}:\n{diag}", file=sys.stderr)
+
         gettr_url, gettr_resolution = resolve_gettr_streaming_public(source)
         if gettr_url:
             gettr_resolution["yt_dlp_returncode"] = rc
@@ -190,6 +257,27 @@ def resolve_media(source, *, allow_archive=True):
                 "yt_dlp_stderr": diag,
                 "resolver_timeout_sec": RESOLVE_TIMEOUT_SEC,
             }
+
+        odysee_url, odysee_resolution = resolve_odysee_public(source)
+        if odysee_url:
+            odysee_resolution["yt_dlp_returncode"] = rc
+            odysee_resolution["yt_dlp_stderr"] = diag
+            return odysee_url, odysee_resolution
+        if odysee_resolution:
+            print(
+                f"Odysee public resolver failed for {source}: {odysee_resolution.get('error', 'unknown error')}",
+                file=sys.stderr,
+            )
+            result = {
+                **odysee_resolution,
+                "yt_dlp_returncode": rc,
+                "yt_dlp_stderr": diag,
+                "resolver_timeout_sec": RESOLVE_TIMEOUT_SEC,
+            }
+            if archive_resolution:
+                result["archive_resolution"] = archive_resolution
+            return source, result
+
         result = {
             "resolver": "direct_after_yt_dlp_failure",
             "source": source,
