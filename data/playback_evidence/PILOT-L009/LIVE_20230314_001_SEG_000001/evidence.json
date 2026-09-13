@@ -7,7 +7,7 @@
   "segment_id": "LIVE_20230314_001_SEG_000001",
   "task_id": "P9-PLAYBACK-PILOT-L009",
   "request_ref": "coordination/playback_requests/PILOT-L009/LIVE_20230314_001_SEG_000001.json",
-  "requested_by": "agent-20260913T052200Z-gpt56sol-playback-l009-r2",
+  "requested_by": "agent-20260914-gpt56sol-generation2",
   "media_url": "https://gettr.com/post/p2bexmi7ac8",
   "target_text": "现在我这个理发成政治事件了。很多投资人说，Miles，你不能理发！",
   "target_text_search": "理发 政治事件 投资人 Miles",
@@ -77,21 +77,33 @@
         "ocr_text": "a\n-      re 5  '\n ay\n:   y"
       }
     ],
+    "best_match": {
+      "local_sec": 10.0,
+      "absolute_sec": 30.0,
+      "text": "i cy    i i ¥    ‘a pers   rh",
+      "similarity": 0.146341,
+      "keyword_coverage": 0.0,
+      "score": 0.146341,
+      "line_count": 3,
+      "frame_sha256": "cbf31daddd68ab84ed5e871384f4e7cae1ba0e28f1289ece7b54a110aaf23ec1"
+    },
     "smolvlm": {
       "status": "not_requested"
     }
   },
+  "candidate_match_method": "frame_ocr",
+  "candidate_match_score": 0.146341,
   "candidate_content_match": false,
-  "candidate_observed_position_sec": 20.0,
-  "candidate_timing_error_sec": -10.0,
-  "candidate_absolute_timing_error_sec": 10.0,
+  "candidate_observed_position_sec": 30.0,
+  "candidate_timing_error_sec": 0.0,
+  "candidate_absolute_timing_error_sec": 0.0,
   "minimum_agent_review_score": 0.55,
   "agent_acceptance_required": true,
   "counts_toward_pilot_60": false,
-  "decode_evidence_sha256": "7059ecf2e0e22c4e80ebb7729f559efca61c72e424e1e24533848268fcb1b38e",
+  "decode_evidence_sha256": "1c20d94e6ce845684539102c620540e50a9245e38786224859f6ff208ae94768",
   "temporary_clip_sha256": "b9f3d37ac9a02deee186269f243308a0fcd0d200e2bd2cdc805b9de5d32b67bc",
-  "generated_at": "2026-09-13T05:45:37.239376+00:00",
-  "bundle_id": "8d7b75e7981d63873181fc5f1fe1f7ebb7b0db8f7168c100277b889893281fae",
-  "request_revision": 1,
-  "request_sha256": "57d042050a004ea1b78ec4eeb0cc1957fda0d6b23b4476298d3bad9b00ee7689"
+  "generated_at": "2026-09-13T23:40:40.499685+00:00",
+  "bundle_id": "496c6a32aabcf80ce0994091ae88cd3538992ca6844b53a13073e1a77da58804",
+  "request_revision": 2,
+  "request_sha256": "a3fd23dbd4f3914a9d9a4de84c67e887aae5eea586f92a6c2ceb49261e073bab"
 }

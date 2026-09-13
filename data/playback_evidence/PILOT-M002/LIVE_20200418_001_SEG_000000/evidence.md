@@ -2,12 +2,12 @@
 
 - Case: `PILOT-M002`
 - Live: `LIVE_20200418_001`
-- Media: https://rumble.com/v58ckph-20200418.html
+- Media: https://gwins.org/cn/milesguo/1149.html
 - Expected start: `123.000s`
 - Decode window: `123.000s` → `123.000s`
 - Real media decoded: `false`
 - Evidence status: `blocked_media_decode`
-- Bundle ID: `774c54aecca8168cf0ca524e337a3e3000cc4feab3467651cd9cb70f7c00313d`
+- Bundle ID: `3428db482530619eae22c9ba05c87b4432bb5ae960a738c535a21ac5ff5d8c0f`
 
 ## Target text
 

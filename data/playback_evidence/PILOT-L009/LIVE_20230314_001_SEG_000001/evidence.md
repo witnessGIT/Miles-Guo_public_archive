@@ -7,7 +7,7 @@
 - Decode window: `20.000s` → `44.000s`
 - Real media decoded: `true`
 - Evidence status: `needs_manual_or_wider_review`
-- Bundle ID: `8d7b75e7981d63873181fc5f1fe1f7ebb7b0db8f7168c100277b889893281fae`
+- Bundle ID: `496c6a32aabcf80ce0994091ae88cd3538992ca6844b53a13073e1a77da58804`
 
 ## Target text
 
@@ -15,8 +15,8 @@
 
 ## Decoded-audio ASR match
 
-- Candidate observed position: `20.000s`
-- Signed timing error: `-10.000s`
+- Candidate observed position: `30.000s`
+- Signed timing error: `+0.000s`
 - Match score: `0.0`
 - Similarity: `0.0`
 - Keyword coverage: `0.0`
