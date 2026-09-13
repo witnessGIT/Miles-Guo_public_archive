@@ -9,6 +9,8 @@ on:
       - 'scripts/record_playback_audit.py'
       - 'scripts/process_playback_request.py'
       - 'scripts/accept_playback_evidence.py'
+      - 'scripts/playback_service_state.py'
+      - 'scripts/stamp_playback_evidence.py'
       - 'scripts/smolvlm_inspect.py'
       - 'scripts/audit_gate.py'
       - 'scripts/playback_queue.py'
@@ -65,6 +67,8 @@ jobs:
             scripts/record_playback_audit.py \
             scripts/process_playback_request.py \
             scripts/accept_playback_evidence.py \
+            scripts/playback_service_state.py \
+            scripts/stamp_playback_evidence.py \
             scripts/smolvlm_inspect.py \
             scripts/audit_gate.py \
             scripts/playback_queue.py \
