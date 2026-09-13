@@ -11,6 +11,36 @@ https://github.com/witnessGIT/Miles-Guo_public_archive
 
 The repository is the authoritative execution context. Do not ask the user to repeat requirements already stored here.
 
+## Repository-owner standing directive
+
+The owner has already authorized all Agents that actually have GitHub write capability to work continuously on this archive.
+
+```text
+READ CURRENT GIT STATE
+→ CLAIM ONE ELIGIBLE TASK
+→ PUSH CLAIM DIRECTLY
+→ EXECUTE REAL ARCHIVE WORK
+→ VALIDATE
+→ PUSH CLAIMED OUTPUTS DIRECTLY TO main
+→ COMPLETE / PUBLISH READINESS
+→ REFRESH
+→ CLAIM NEXT ELIGIBLE TASK
+→ REPEAT
+```
+
+For valid claimed business/video-archive work:
+
+- no PR is required;
+- no repeated per-task approval from the owner is required;
+- do not stop after one task, one livestream, one case, or one micro-batch;
+- a lost claim race means refresh and choose another task;
+- a non-blocking control-plane bug means file a bug report and continue other eligible work;
+- continue while the Agent session remains active until a real repository stop condition applies.
+
+The final owner intent is **not merely to finish the Pilot**. Preserve the Pilot quality gates, and after they pass continue into `FULL_ARCHIVE` until all eligible public video archive work is complete. Do not lower or bypass playback/quality requirements to reach that goal.
+
+Repository policy cannot grant GitHub access to an account that does not actually have write permission. GitHub authentication/authorization still applies.
+
 ## Step 0 — resolve role
 
 Read first:
@@ -31,11 +61,11 @@ Read first:
 Administrative GitHub login: `witnessGIT`. Verified `witnessGIT` Agents are `admin`; every other/unknown identity is a `worker`.
 
 ```text
-worker = execute claimed project tasks + use repository services + report bugs
+worker = directly execute claimed project tasks + use repository services + report bugs + continue
 admin  = worker capabilities + repair/maintain project machinery
 ```
 
-Workers MUST NOT modify `scripts/`, `schema/`, `.github/`, workflow policy, permissions or other protected control-plane files. Bugs go to `coordination/bug_reports/` for an admin Agent.
+Workers MUST NOT modify `scripts/`, `schema/`, `.github/`, workflow policy, permissions or other protected control-plane files. Bugs go to `coordination/bug_reports/` for an admin Agent. This restriction protects shared machinery; it does not require workers to wait for approval before ordinary claimed archive work.
 
 ## First status command
 
@@ -78,10 +108,12 @@ P9-AUDIT-60-R2
         ↓
 P10-PILOT-DECISION-R2
         ↓
-FULL_ARCHIVE YES / NO
+FULL_ARCHIVE
+        ↓
+continue until all eligible public video archive work is complete
 ```
 
-FULL_ARCHIVE remains locked unless current `P10-PILOT-DECISION-R2` records an explicit machine-readable `full_archive_decision=YES` after all prerequisites pass.
+The owner has stated the standing intent to continue into FULL_ARCHIVE after required quality gates pass. `P10-PILOT-DECISION-R2` must still record the required machine-readable decision and may not bypass failed quality gates, but no additional owner confirmation is required merely to continue full-archive processing after the gates are satisfied.
 
 ## Task types
 
@@ -110,102 +142,27 @@ For each missing segment, choose a **public media URL already preserved in repos
 coordination/playback_requests/<CASE_ID>/<SEGMENT_ID>.json
 ```
 
-Contract:
+The GitHub Action `.github/workflows/playback-evidence-service.yml` validates identity/provenance, decodes real media, runs offline ASR/OCR and writes durable evidence. Evidence generation alone never counts toward Pilot-60.
 
-```json
-{
-  "request_version": "playback-request-v1",
-  "task_id": "P9-PLAYBACK-PILOT-E002",
-  "case_id": "PILOT-E002",
-  "live_id": "LIVE_20170610_001",
-  "segment_id": "LIVE_20170610_001_SEG_000001",
-  "media_url": "https://public-media-url-already-in-repository-provenance",
-  "requested_by": "agent-...",
-  "requested_at": "ISO-8601 UTC",
-  "pre_roll_sec": 10.0,
-  "decode_window_sec": 24.0,
-  "language": "zh",
-  "visual_mode": "frames_ocr"
-}
-```
-
-Optional visual mode `smolvlm2_optional` asks the free open-source SmolVLM2 stage to run when the service environment enables it. Audio timing remains primary.
-
-The GitHub Action `.github/workflows/playback-evidence-service.yml` then:
-
-1. verifies case/live/segment identity;
-2. refuses arbitrary URLs not present in repository provenance for that live;
-3. resolves/probes/decodes real media with `yt-dlp` + `ffprobe` + `ffmpeg`;
-4. decodes a window before and after the canonical timestamp;
-5. runs offline `whisper.cpp` on decoded audio;
-6. fuzzy-matches the canonical target text to the new decoded-audio ASR;
-7. samples video frames and runs local OCR;
-8. optionally runs free SmolVLM2 visual description;
-9. writes durable Agent-readable `evidence.json` and `evidence.md` to Git.
-
-**Evidence generation alone never counts toward Pilot-60.**
-
-After the evidence appears, the worker MUST read `evidence.md`/`evidence.json`. If the decoded-media evidence really matches the canonical content, submit:
+After evidence appears, the worker MUST read `evidence.md`/`evidence.json`. If the decoded-media evidence really matches the canonical content, submit the corresponding acceptance under:
 
 ```text
 coordination/playback_acceptances/<CASE_ID>/<SEGMENT_ID>.json
 ```
 
-Contract:
-
-```json
-{
-  "acceptance_version": "playback-acceptance-v1",
-  "case_id": "PILOT-E002",
-  "live_id": "LIVE_20170610_001",
-  "segment_id": "LIVE_20170610_001_SEG_000001",
-  "evidence_ref": "data/playback_evidence/PILOT-E002/LIVE_20170610_001_SEG_000001/evidence.json",
-  "bundle_id": "copy-exactly-from-evidence",
-  "accepted": true,
-  "accepted_by": "agent-...",
-  "accepted_at": "ISO-8601 UTC",
-  "content_observation": "brief factual explanation of why the decoded-media evidence matches"
-}
-```
-
-The service cross-checks the acceptance against the evidence and canonical segment, then creates `qualifying_playback_timing_check_v2` under `data/playback_audits/`. A worker must never manufacture service evidence or accept evidence it has not read.
-
-CLI helpers exist when shell is available:
-
-```bash
-python scripts/playback_queue.py --request <SEGMENT_ID> --case-id <CASE_ID> --media-url '<URL>' --agent-id <agent-id>
-python scripts/playback_queue.py --accept <SEGMENT_ID> --case-id <CASE_ID> --content-observation '<why it matches>' --agent-id <agent-id>
-```
-
-## Free-service design
-
-The default service uses only repository/public infrastructure and open-source tools:
-
-```text
-GitHub standard public-repo runner
-+ ffmpeg / ffprobe
-+ yt-dlp
-+ whisper.cpp (pinned release, cached model/build)
-+ Tesseract OCR
-+ optional SmolVLM2-256M
-```
-
-Full videos/clips are temporary runner/cache data and are not committed. Durable Git evidence is compact JSON/Markdown plus hashes/provenance.
+The service cross-checks that acceptance against the evidence and canonical segment, then creates a qualifying playback audit record. A worker must never manufacture service evidence or accept evidence it has not read.
 
 ## Pilot-60 quality rule
 
-Only valid `data/playback_audits/**/*.json` records count. The validator supports:
+Only valid `data/playback_audits/**/*.json` records count. Source-page timestamps, transcript timestamps, ordinary `S-AUDIT-*` markers, or ffmpeg decode success without content evidence do not count.
 
-- v1: legacy/manual real decoded-media inspection;
-- v2: repository-decoded evidence + explicit worker evidence acceptance.
-
-Both must cross-check canonical case/live/segment identity, expected/observed timing and media provenance. Source-page timestamps, transcript timestamps, ordinary `S-AUDIT-*` markers, or ffmpeg decode success without content evidence do not count.
-
-When `scripts/audit_gate.py --json` reports `pilot60_pass=true`, seal `P9-PLAYBACK-GATE`, then proceed to P9/P10 R2. Extra unreviewed cases do not block the gate after the statistical threshold has passed.
+When `scripts/audit_gate.py --json` reports `pilot60_pass=true`, seal `P9-PLAYBACK-GATE`, proceed through current P9/P10, then continue full archive work according to the standing owner directive.
 
 ## Stop-state rule
 
-Because the repository now supplies the preferred Playback execution environment, lack of local ffmpeg/player is normally **not** `HOST_STOP` anymore. `HOST_STOP` applies only when neither the repository evidence service nor a valid local fallback is available for remaining playback work.
+Because the repository supplies the preferred Playback execution environment, lack of local ffmpeg/player is normally **not** `HOST_STOP`. `HOST_STOP` applies only when neither the repository evidence service nor a valid local fallback is available for all remaining playback work, or when the host actually terminates the Agent session.
+
+Valid stop states are limited to genuine `PROJECT_COMPLETE`, `USER_RECALL`, true `NO_ELIGIBLE_WORK`, unavoidable `HUMAN_DECISION_REQUIRED`, `SAFETY_OR_ACCESS_BLOCK`, verified `GITHUB_WRITE_ERROR`, or true `HOST_STOP`.
 
 ## Claim races
 
