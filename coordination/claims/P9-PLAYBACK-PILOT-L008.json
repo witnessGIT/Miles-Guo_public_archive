@@ -1,0 +1,20 @@
+{
+  "task_id": "P9-PLAYBACK-PILOT-L008",
+  "agent_id": "agent-20260914-gpt56sol-fulltest3",
+  "claimed_at": "2026-09-13T15:36:00Z",
+  "status": "in_progress",
+  "kind": "real_playback_audit",
+  "case_id": "PILOT-L008",
+  "live_id": "LIVE_20230312_001",
+  "missing_segment_ids": [
+    "LIVE_20230312_001_SEG_000000",
+    "LIVE_20230312_001_SEG_000001"
+  ],
+  "execution_mode": "repository_evidence_service_v1",
+  "repository_evidence_service": true,
+  "local_content_inspection_capable": false,
+  "workflow_mode": "continuous-worker-v2",
+  "claim_protocol": "claim-protocol-v2",
+  "continue_after_finish": true,
+  "scope": "Two-round full-chain validation round 1: exercise trusted public media decode, evidence generation, acceptance eligibility, durable audit gate, queueing and writeback on all PILOT-L008 segments without fabricating evidence."
+}
