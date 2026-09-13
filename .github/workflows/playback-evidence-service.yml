@@ -7,6 +7,7 @@ on:
       - 'coordination/playback_requests/**/*.json'
       - 'coordination/playback_acceptances/**/*.json'
       - 'scripts/playback_service_state.py'
+      - 'scripts/playback_validation.py'
       - 'scripts/process_playback_request.py'
       - 'scripts/stamp_playback_evidence.py'
       - 'scripts/accept_playback_evidence.py'
