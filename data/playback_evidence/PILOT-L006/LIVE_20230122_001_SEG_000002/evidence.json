@@ -1,0 +1,21 @@
+{
+  "project": "Miles-Guo_public_archive",
+  "evidence_version": "repository-playback-evidence-v1",
+  "status": "blocked_media_decode",
+  "case_id": "PILOT-L006",
+  "live_id": "LIVE_20230122_001",
+  "segment_id": "LIVE_20230122_001_SEG_000002",
+  "request_ref": "coordination/playback_requests/PILOT-L006/LIVE_20230122_001_SEG_000002.json",
+  "requested_by": "agent-20260914-gpt56sol-fulltest4",
+  "media_url": "https://ghot.ai/archive/videos/2023-01-22-2",
+  "expected_start_sec": 215.0,
+  "decode_start_sec": 215.0,
+  "decode_end_sec": 215.0,
+  "playback_decode_verified": false,
+  "counts_toward_pilot_60": false,
+  "stderr": "yt-dlp resolver failed for https://ghot.ai/archive/videos/2023-01-22-2 with rc=1:\nWARNING: [generic] Falling back on generic information extractor\nERROR: Unsupported URL: https://ghot.ai/archive/videos/2023-01-22-2\n\n",
+  "generated_at": "2026-09-13T17:35:26.908348+00:00",
+  "bundle_id": "41a32b0ad78b4f7cac7cec3c0fd5b1bffae442b5adc06cc8607ad3970184ca45",
+  "request_revision": 1,
+  "request_sha256": "ddcaa9644cd649e7d272a43685a9feaf41b4ac47c1c93feaf1c0b5845cac00cf"
+}
