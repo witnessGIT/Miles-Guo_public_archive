@@ -3,6 +3,7 @@ import argparse
 import json
 import shutil
 import subprocess
+import sys
 from pathlib import Path
 
 
@@ -25,11 +26,16 @@ def resolve_media(source):
                 "source": source,
                 "yt_dlp_returncode": rc,
             }
+        diag = (err or "")[-4000:]
+        print(
+            f"yt-dlp resolver failed for {source} with rc={rc}:\n{diag}",
+            file=sys.stderr,
+        )
         return source, {
             "resolver": "direct_after_yt_dlp_failure",
             "source": source,
             "yt_dlp_returncode": rc,
-            "yt_dlp_stderr": (err or "")[-4000:],
+            "yt_dlp_stderr": diag,
         }
     return source, {"resolver": "direct", "source": source}
 
