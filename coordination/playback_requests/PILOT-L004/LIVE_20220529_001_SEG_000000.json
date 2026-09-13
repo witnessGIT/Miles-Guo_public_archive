@@ -1,15 +1,16 @@
 {
   "request_version": "playback-request-v1",
-  "request_revision": 1,
+  "request_revision": 2,
   "task_id": "P9-PLAYBACK-PILOT-L004",
   "case_id": "PILOT-L004",
   "live_id": "LIVE_20220529_001",
   "segment_id": "LIVE_20220529_001_SEG_000000",
   "media_url": "https://ghot.ai/archive/videos/2022-05-29-6",
   "requested_by": "agent-20260914-gpt56sol-fulltest4",
-  "requested_at": "2026-09-13T17:31:20Z",
+  "requested_at": "2026-09-13T22:12:30Z",
   "pre_roll_sec": 10.0,
   "decode_window_sec": 24.0,
   "language": "zh",
-  "visual_mode": "frames_ocr"
+  "visual_mode": "frames_ocr",
+  "retry_reason": "Retry the same trusted GHOT provenance page after adding repository archive-page public-media link resolution; do not invent an alternate URL."
 }
