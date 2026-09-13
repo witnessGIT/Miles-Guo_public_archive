@@ -9,6 +9,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 REQUEST_ROOT = ROOT / "coordination" / "playback_requests"
 ACCEPTANCE_ROOT = ROOT / "coordination" / "playback_acceptances"
+CLAIM_ROOT = ROOT / "coordination" / "claims"
 EVIDENCE_ROOT = ROOT / "data" / "playback_evidence"
 AUDIT_ROOT = ROOT / "data" / "playback_audits"
 
@@ -56,6 +57,42 @@ def audit_path_for(acceptance: dict) -> Path:
     )
 
 
+def request_has_active_claim(request: dict) -> bool:
+    """Return True only while this request still belongs to the current active claim.
+
+    Playback request files are durable history. A newer/rebuilt claim can legitimately remove a
+    segment from its missing set, or a completed task can remove/release the claim entirely.
+    Those historical requests must not be re-enqueued forever by the repository service.
+    The request processor still performs the full security/canonical validation on requests that
+    pass this lightweight queue-membership check.
+    """
+    case_id = str(request.get("case_id") or "")
+    live_id = str(request.get("live_id") or "")
+    segment_id = str(request.get("segment_id") or "")
+    requested_by = str(request.get("requested_by") or "")
+    task_id = str(request.get("task_id") or (f"P9-PLAYBACK-{case_id}" if case_id else ""))
+    if not all((case_id, live_id, segment_id, requested_by, task_id)):
+        # Malformed requests are left pending so the authoritative processor can reject them
+        # loudly rather than silently hiding bad new input.
+        return True
+    claim_path = CLAIM_ROOT / f"{task_id}.json"
+    if not claim_path.exists():
+        return False
+    try:
+        claim = load_object(claim_path)
+    except Exception:
+        # Invalid active claim is a real control-plane problem; let the processor surface it.
+        return True
+    if str(claim.get("agent_id") or "") != requested_by:
+        return False
+    if str(claim.get("case_id") or "") != case_id:
+        return False
+    if str(claim.get("live_id") or "") != live_id:
+        return False
+    missing = {str(value) for value in (claim.get("missing_segment_ids") or [])}
+    return segment_id in missing
+
+
 def pending_requests(*, prepare_retries: bool) -> tuple[list[Path], list[str]]:
     """Return requests that genuinely need processing without deleting prior evidence."""
     pending: list[Path] = []
@@ -69,6 +106,8 @@ def pending_requests(*, prepare_retries: bool) -> tuple[list[Path], list[str]]:
         try:
             request = load_object(path)
             revision = request_revision(request)
+            if not request_has_active_claim(request):
+                continue
             evidence_path = evidence_path_for(request)
             if not evidence_path.exists():
                 pending.append(path)
