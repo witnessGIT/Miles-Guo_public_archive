@@ -1,5 +1,34 @@
 # Miles-Guo_public_archive
 
+## Owner standing directive — continuous multi-Agent execution
+
+The repository owner explicitly authorizes every Agent that actually has GitHub write capability to work directly and continuously on this archive.
+
+```text
+read fresh Git state
+→ claim one eligible task
+→ push claim directly
+→ execute real archive work
+→ validate
+→ push claimed outputs directly to main
+→ complete / publish readiness
+→ refresh
+→ claim next eligible task
+→ repeat
+```
+
+For valid claimed business/video-archive work:
+
+- no PR is required;
+- no repeated per-task owner approval is required;
+- finishing one task, livestream, case or batch is not a stop condition;
+- a claim race is not a stop condition;
+- a non-blocking control-plane bug is reported, then the worker continues another eligible task;
+- preserve all quality gates and never fabricate evidence merely to accelerate completion;
+- after required Pilot gates pass, continue into `FULL_ARCHIVE` until all eligible public video archive work is complete.
+
+This policy does not itself grant GitHub write access to an account that lacks repository permission.
+
 ## Step 0 — resolve permissions before doing anything
 
 This repository uses:
@@ -7,7 +36,7 @@ This repository uses:
 ```text
 continuous-worker-v2
 claim-protocol-v2
-agent-permissions-v2
+agent-permissions-v2.2
 repository-playback-evidence-v2
 ```
 
@@ -35,7 +64,7 @@ Administrative GitHub login: `witnessGIT`.
 
 Verified `witnessGIT` Agents may act as `admin`. Every other/unknown account is a `worker`.
 
-A worker may execute valid claimed business/playback tasks, write its own task outputs and coordination records, submit playback requests and acceptances for its own claimed Playback task, and submit new immutable bug reports.
+A worker may execute valid claimed business/playback tasks, push its own allowed business-task outputs directly to `main`, write its own coordination records, submit playback requests and acceptances for its own claimed Playback task, and submit new immutable bug reports.
 
 A worker MUST NOT fix repository bugs or modify protected control-plane paths, including `AGENTS.md`, `START_HERE.md`, core `coordination/` policy files, `scripts/`, `schema/`, or `.github/`.
 
@@ -45,7 +74,7 @@ Bugs go to:
 coordination/bug_reports/
 ```
 
-Only an admin Agent repairs project machinery.
+Only an admin Agent repairs shared project machinery. This restriction is a concurrency-safety boundary, not a requirement for workers to wait for ordinary task approval.
 
 ## Mandatory continuous operating mode
 
@@ -67,13 +96,15 @@ resolve role
 
 Finishing one task, one livestream, one micro-batch, or losing one claim race is not a stop condition.
 
+If a worker discovers a control-plane bug that does not block all remaining work, it must file a bug report, refresh task state, and continue another compatible task.
+
 ## Stop conditions
 
-A worker stops only for a documented reason such as `PROJECT_COMPLETE`, `USER_RECALL`, real `NO_ELIGIBLE_WORK`, `HUMAN_DECISION_REQUIRED`, `SAFETY_OR_ACCESS_BLOCK`, verified `GITHUB_WRITE_ERROR`, or true `HOST_STOP`.
+A worker stops only for a documented reason such as `PROJECT_COMPLETE`, `USER_RECALL`, real `NO_ELIGIBLE_WORK`, unavoidable `HUMAN_DECISION_REQUIRED`, `SAFETY_OR_ACCESS_BLOCK`, verified `GITHUB_WRITE_ERROR`, or true `HOST_STOP`.
 
 `CLAIM_RACE_LOST` is not a stop condition.
 
-Because the repository now contains a Playback Evidence Service, absence of local ffmpeg/player is normally **not HOST_STOP**. If repository Playback work is open and the service is available, ordinary workers can execute it through GitHub.
+Because the repository contains a Playback Evidence Service, absence of local ffmpeg/player is normally **not HOST_STOP**. If repository Playback work is open and the service is available, ordinary workers can execute it through GitHub.
 
 ## Task discovery and claiming
 
@@ -119,6 +150,9 @@ COLLECT + IDENTITY
 → source/provenance AUDIT
 → real Playback Audit where required
 → Pilot-60 aggregate gate
+→ current P9/P10 acceptance
+→ FULL_ARCHIVE
+→ all eligible public video archive work complete
 ```
 
 ### COLLECT + IDENTITY
@@ -156,10 +190,11 @@ For a claimed `P9-PLAYBACK-*` case:
 2. Select a public media URL already preserved in repository provenance for the same live.
 3. Create `coordination/playback_requests/<CASE>/<SEGMENT>.json`.
 4. Push it. GitHub Actions performs real-media decoding, offline `whisper.cpp` ASR and frame OCR; optional SmolVLM2 may add visual evidence.
-5. Wait only for repository state to advance; then read `data/playback_evidence/<CASE>/<SEGMENT>/evidence.md` and `evidence.json`.
+5. Read `data/playback_evidence/<CASE>/<SEGMENT>/evidence.md` and `evidence.json` when repository state advances.
 6. If the decoded-media evidence really matches the canonical target content, create `coordination/playback_acceptances/<CASE>/<SEGMENT>.json` bound to the exact evidence `bundle_id`.
 7. Push it. The service independently validates and writes a `qualifying_playback_timing_check_v2` under `data/playback_audits/`.
 8. Finish the case only when all currently tracked timed segments in that case have valid qualifying records.
+9. Refresh and claim the next task.
 
 Evidence generation alone never counts. Worker acceptance without valid service evidence never counts. Source-page timestamps alone never count.
 
@@ -184,7 +219,7 @@ Required:
 false merge rate approximately 0
 ```
 
-When `pilot60_pass=true`, seal `P9-PLAYBACK-GATE`, then proceed to `P9-AUDIT-60-R2` and `P10-PILOT-DECISION-R2`.
+When `pilot60_pass=true`, seal `P9-PLAYBACK-GATE`, proceed to `P9-AUDIT-60-R2` and `P10-PILOT-DECISION-R2`, then continue full-archive processing under the standing owner directive. Do not ask the owner again merely for permission to continue from a successful Pilot into FULL_ARCHIVE.
 
 ## Database behavior
 
@@ -195,7 +230,7 @@ python scripts/build_db.py
 python scripts/validate_db.py
 ```
 
-Workers may validate; if a bug/contract mismatch appears, report it instead of patching protected machinery.
+Workers may validate; if a bug/contract mismatch appears, report it instead of patching protected machinery, then continue other eligible work when possible.
 
 ## Scope and core archive discipline
 
@@ -207,10 +242,10 @@ Workers may validate; if a bug/contract mismatch appears, report it instead of p
 - Seconds are primary media locator; frames auxiliary only.
 - Public content only; no bypass of login/CAPTCHA/paywall/DRM/access controls.
 - Never commit full videos, large audio, model weights, caches or FFmpeg intermediates.
-- Do not begin FULL_ARCHIVE merely because collection works. Only current `P10-PILOT-DECISION-R2` may authorize it, and only with explicit `full_archive_decision=YES` after required gates pass.
+- Quality gates remain mandatory even though the owner has authorized continuous progression to full archive completion.
 
 ## Useful progress
 
-For a worker: source-backed business output, valid Playback request/evidence acceptance, alignment/audit evidence, readiness/completion metadata, or a properly filed bug report.
+For a worker: source-backed business output, valid Playback request/evidence acceptance, alignment/audit evidence, readiness/completion metadata, or a properly filed bug report followed by continued compatible work.
 
 For an admin: all worker progress plus validated repair of project machinery.
