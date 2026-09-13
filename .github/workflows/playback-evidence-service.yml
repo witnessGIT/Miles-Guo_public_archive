@@ -6,6 +6,13 @@ on:
     paths:
       - 'coordination/playback_requests/**/*.json'
       - 'coordination/playback_acceptances/**/*.json'
+      - 'scripts/playback_service_state.py'
+      - 'scripts/process_playback_request.py'
+      - 'scripts/stamp_playback_evidence.py'
+      - 'scripts/accept_playback_evidence.py'
+      - 'scripts/audit_gate.py'
+      - 'scripts/audit_media.py'
+      - '.github/workflows/playback-evidence-service.yml'
   workflow_dispatch:
 
 permissions:
