@@ -1,15 +1,16 @@
 {
   "request_version": "playback-request-v1",
-  "request_revision": 1,
+  "request_revision": 2,
   "task_id": "P9-PLAYBACK-PILOT-L008",
   "case_id": "PILOT-L008",
   "live_id": "LIVE_20230312_001",
   "segment_id": "LIVE_20230312_001_SEG_000000",
-  "media_url": "https://gettr.com/streaming/p2b7kcm569c",
+  "media_url": "https://rumble.com/v2ec0zu-2023.3.12.html",
   "requested_by": "agent-20260914-gpt56sol-fulltest3",
-  "requested_at": "2026-09-13T15:36:20Z",
+  "requested_at": "2026-09-13T15:44:00Z",
   "pre_roll_sec": 10.0,
   "decode_window_sec": 24.0,
   "language": "zh",
-  "visual_mode": "frames_ocr"
+  "visual_mode": "frames_ocr",
+  "retry_reason": "Trusted GETTR source failed in yt-dlp extractor; retry the same canonical live with the repository-recorded Rumble alternate."
 }
