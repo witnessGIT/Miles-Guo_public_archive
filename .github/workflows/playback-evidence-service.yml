@@ -33,6 +33,10 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
+          # The concurrency group serializes this service, but a queued run may have an old
+          # event SHA. Always start from fresh main so it sees evidence published by the
+          # preceding service run and does not regenerate the same durable bundle.
+          ref: main
           fetch-depth: 0
 
       - uses: actions/setup-python@v5
@@ -179,15 +183,23 @@ jobs:
             git commit -m 'data: publish repository playback evidence'
             published=false
             for attempt in 1 2 3 4 5; do
-              if git pull --rebase origin main && git push origin HEAD:main; then
+              # Never carry a failed rebase state into the next retry.
+              if [[ -d .git/rebase-merge || -d .git/rebase-apply ]]; then
+                git rebase --abort || true
+              fi
+              git fetch origin main
+              if git rebase origin/main && git push origin HEAD:main; then
                 published=true
                 break
               fi
-              echo "Playback evidence push race, retry $attempt/5"
+              if [[ -d .git/rebase-merge || -d .git/rebase-apply ]]; then
+                git rebase --abort || true
+              fi
+              echo "Playback evidence push race, retry $attempt/5 from a clean rebase state"
               sleep $((attempt * 2))
             done
             if [[ "$published" != "true" ]]; then
-              echo 'Failed to publish playback evidence after bounded race retries.'
+              echo 'Failed to publish playback evidence after bounded clean-state race retries.'
               exit 1
             fi
           fi
