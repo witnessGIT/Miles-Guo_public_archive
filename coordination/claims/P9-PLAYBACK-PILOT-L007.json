@@ -7,7 +7,9 @@
   "case_id": "PILOT-L007",
   "live_id": "LIVE_20230310_001",
   "queue_generation": 2,
-  "missing_segment_ids": [],
+  "missing_segment_ids": [
+    "LIVE_20230310_001_SEG_000000"
+  ],
   "protected_reviewable_segment_ids": [
     "LIVE_20230310_001_SEG_000000"
   ],
@@ -20,7 +22,7 @@
   "workflow_mode": "continuous-worker-v2",
   "claim_protocol": "claim-protocol-v2",
   "continue_after_finish": true,
-  "disposition": "generation2_rerun_not_performed_to_preserve_reviewable_evidence",
-  "blocker": "Segment 000000 already has ready_for_agent_review evidence revision 5. The service correctly forbids overwriting reviewable evidence with revision 6. Segment 000001 has no durable request metadata and was not inferred.",
-  "scope": "Generation-2 clean rerun of verified GETTR post media without weakening non-destructive evidence protections."
+  "disposition": "reviewable_evidence_pending_acceptance",
+  "blocker": null,
+  "scope": "Generation-2 L007: preserve ready_for_agent_review seg0 evidence in the missing set until its explicit acceptance is finalized; do not overwrite protected evidence."
 }
