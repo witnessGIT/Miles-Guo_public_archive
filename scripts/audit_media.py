@@ -1,9 +1,12 @@
 #!/usr/bin/env python3
 import argparse
 import json
+import re
 import shutil
 import subprocess
 import sys
+import urllib.error
+import urllib.request
 from pathlib import Path
 
 RESOLVE_TIMEOUT_SEC = 45
@@ -11,6 +14,7 @@ PROBE_TIMEOUT_SEC = 60
 DECODE_TIMEOUT_SEC = 180
 FRAME_TIMEOUT_SEC = 60
 TIMEOUT_RETURN_CODE = 124
+GETTR_STREAM_RE = re.compile(r"^https?://(?:www\.)?gettr\.com/streaming/([a-z0-9]+)(?:[/?#].*)?$", re.I)
 
 
 def _as_text(value):
@@ -42,6 +46,56 @@ def run(cmd, *, timeout_sec):
         return TIMEOUT_RETURN_CODE, stdout, stderr
 
 
+def resolve_gettr_streaming_public(source):
+    """Resolve a public GETTR streaming page through GETTR's public join API.
+
+    yt-dlp's current GettrStreaming extractor passes a dict as urllib request data and can fail
+    before reaching GETTR with "data must be bytes". Keep the repository service independent of
+    that third-party regression by reproducing only the minimal public API request that the
+    extractor itself uses. This helper is deliberately restricted to canonical gettr.com
+    /streaming/<id> URLs and uses no cookies, credentials, CAPTCHA bypass, or access-control
+    circumvention.
+    """
+    match = GETTR_STREAM_RE.match(source)
+    if not match:
+        return None, None
+
+    stream_id = match.group(1)
+    api_url = f"https://api.gettr.com/u/live/join/{stream_id}"
+    request = urllib.request.Request(
+        api_url,
+        data=b"{}",
+        headers={
+            "Content-Type": "application/json",
+            "Accept": "application/json",
+            "User-Agent": "Miles-Guo-public-archive-playback/1.0",
+        },
+        method="POST",
+    )
+    try:
+        with urllib.request.urlopen(request, timeout=RESOLVE_TIMEOUT_SEC) as response:
+            payload = json.loads(response.read().decode("utf-8"))
+        result = payload.get("result") if isinstance(payload, dict) else None
+        broadcast = result.get("broadcast") if isinstance(result, dict) else None
+        media_url = broadcast.get("url") if isinstance(broadcast, dict) else None
+        if not isinstance(media_url, str) or not media_url.startswith(("http://", "https://")):
+            raise ValueError("GETTR public join API returned no usable broadcast.url")
+        return media_url, {
+            "resolver": "gettr_public_join_api",
+            "source": source,
+            "gettr_stream_id": stream_id,
+            "api_url": api_url,
+        }
+    except (urllib.error.URLError, urllib.error.HTTPError, TimeoutError, ValueError, json.JSONDecodeError) as exc:
+        return None, {
+            "resolver": "gettr_public_join_api_failed",
+            "source": source,
+            "gettr_stream_id": stream_id,
+            "api_url": api_url,
+            "error": f"{type(exc).__name__}: {exc}",
+        }
+
+
 def resolve_media(source):
     if source.startswith(("http://", "https://")) and shutil.which("yt-dlp"):
         rc, out, err = run(
@@ -59,6 +113,24 @@ def resolve_media(source):
             f"yt-dlp resolver failed for {source} with rc={rc}:\n{diag}",
             file=sys.stderr,
         )
+
+        gettr_url, gettr_resolution = resolve_gettr_streaming_public(source)
+        if gettr_url:
+            gettr_resolution["yt_dlp_returncode"] = rc
+            gettr_resolution["yt_dlp_stderr"] = diag
+            return gettr_url, gettr_resolution
+        if gettr_resolution:
+            print(
+                f"GETTR public resolver failed for {source}: {gettr_resolution.get('error', 'unknown error')}",
+                file=sys.stderr,
+            )
+            return source, {
+                **gettr_resolution,
+                "yt_dlp_returncode": rc,
+                "yt_dlp_stderr": diag,
+                "resolver_timeout_sec": RESOLVE_TIMEOUT_SEC,
+            }
+
         return source, {
             "resolver": "direct_after_yt_dlp_failure",
             "source": source,
