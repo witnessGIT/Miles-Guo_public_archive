@@ -1,23 +1,21 @@
 {
   "task_id": "P9-PLAYBACK-PILOT-L009",
-  "agent_id": "agent-20260913T052200Z-gpt56sol-playback-l009-r2",
-  "claimed_at": "2026-09-13T05:22:00Z",
+  "agent_id": "agent-20260914-gpt56sol-generation2",
+  "claimed_at": "2026-09-13T23:34:00Z",
   "status": "in_progress",
   "kind": "real_playback_audit",
   "case_id": "PILOT-L009",
   "live_id": "LIVE_20230314_001",
+  "queue_generation": 2,
   "missing_segment_ids": [
     "LIVE_20230314_001_SEG_000000",
     "LIVE_20230314_001_SEG_000001"
   ],
   "execution_mode": "repository_evidence_service_v1",
   "repository_evidence_service": true,
-  "local_runtime_tools": {
-    "ffmpeg": false,
-    "ffprobe": false,
-    "yt_dlp": false,
-    "repository_evidence_service": true
-  },
   "local_content_inspection_capable": false,
-  "instructions": "Submit playback requests using canonical repository provenance, read durable decoded-media evidence, then submit explicit acceptances only when the evidence matches."
+  "workflow_mode": "continuous-worker-v2",
+  "claim_protocol": "claim-protocol-v2",
+  "continue_after_finish": true,
+  "scope": "Generation-2 clean end-to-end Playback test for both canonical L009 segments using repository-verified GETTR post provenance."
 }
