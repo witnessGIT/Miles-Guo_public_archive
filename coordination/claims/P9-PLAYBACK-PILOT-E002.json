@@ -11,7 +11,8 @@
   "case_id": "PILOT-E002",
   "live_id": "LIVE_20170610_001",
   "queue_generation": 2,
-  "missing_segment_ids": [
+  "missing_segment_ids": [],
+  "blocked_segment_ids": [
     "LIVE_20170610_001_SEG_000000",
     "LIVE_20170610_001_SEG_000001",
     "LIVE_20170610_001_SEG_000002"
@@ -19,5 +20,7 @@
   "execution_mode": "repository_evidence_service_v1",
   "repository_evidence_service": true,
   "local_content_inspection_capable": false,
+  "disposition": "source_blocked_after_exhausting_verified_public_media",
+  "blocker": "Generation-2 tested both repository-preserved verified public alternates for all three canonical segments. YouTube U4B9KiiqwPg required anonymous anti-bot sign-in and was not bypassed with cookies/authentication. Rumble v576mwx-20170610-1.html returned HTTP 403 from GitHub Runner. No segment decoded and no acceptance was created.",
   "scope": "Generation-2 clean end-to-end Playback test for the three canonical E002 timed segments using only repository-preserved verified media provenance."
 }
