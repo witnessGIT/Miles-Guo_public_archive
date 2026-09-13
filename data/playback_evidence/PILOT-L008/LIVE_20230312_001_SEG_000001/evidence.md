@@ -1,17 +1,17 @@
-# Playback Evidence — LIVE_20191029_001_SEG_000001
+# Playback Evidence — LIVE_20230312_001_SEG_000001
 
-- Case: `PILOT-E009`
-- Live: `LIVE_20191029_001`
-- Media: https://odysee.com/@laxi:4/20191029:4
-- Expected start: `1110.000s`
-- Decode window: `1110.000s` → `1110.000s`
+- Case: `PILOT-L008`
+- Live: `LIVE_20230312_001`
+- Media: https://gettr.com/streaming/p2b7kcm569c
+- Expected start: `158.000s`
+- Decode window: `158.000s` → `158.000s`
 - Real media decoded: `false`
 - Evidence status: `blocked_media_decode`
-- Bundle ID: `529368ff2754b39cb584e0135cf0190a1ecfa5c7775f70787c2b0196587b3a27`
+- Bundle ID: `50dabf3d4a74530aed269451c47c58bbe86397264d91815b798a8f5e935df782`
 
 ## Target text
 
-区块链最核心的问题是政治、军事情报和金融
+GREENE：雷德菲尔德博士，你是否同意安德森博士当时的评估？
 
 ## Decoded-audio ASR match
 

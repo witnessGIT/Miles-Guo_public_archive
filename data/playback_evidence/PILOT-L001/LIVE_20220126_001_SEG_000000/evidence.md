@@ -1,17 +1,17 @@
-# Playback Evidence — LIVE_20191029_001_SEG_000001
+# Playback Evidence — LIVE_20220126_001_SEG_000000
 
-- Case: `PILOT-E009`
-- Live: `LIVE_20191029_001`
-- Media: https://odysee.com/@laxi:4/20191029:4
-- Expected start: `1110.000s`
-- Decode window: `1110.000s` → `1110.000s`
+- Case: `PILOT-L001`
+- Live: `LIVE_20220126_001`
+- Media: https://ghot.ai/archive/videos/2022-01-26-2
+- Expected start: `0.000s`
+- Decode window: `0.000s` → `0.000s`
 - Real media decoded: `false`
 - Evidence status: `blocked_media_decode`
-- Bundle ID: `529368ff2754b39cb584e0135cf0190a1ecfa5c7775f70787c2b0196587b3a27`
+- Bundle ID: `5a2d3ac786763321f3ba093fa0ed8c9d704a31ff0f8df170a0dbe5e9b60ca2a9`
 
 ## Target text
 
-区块链最核心的问题是政治、军事情报和金融
+1月26号，尊敬的战友们好。
 
 ## Decoded-audio ASR match
 

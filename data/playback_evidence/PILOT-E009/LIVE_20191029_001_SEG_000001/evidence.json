@@ -7,15 +7,15 @@
   "segment_id": "LIVE_20191029_001_SEG_000001",
   "request_ref": "coordination/playback_requests/PILOT-E009/LIVE_20191029_001_SEG_000001.json",
   "requested_by": "agent-20260913-gpt56sol-fulltest2",
-  "media_url": "https://rumble.com/v57tlbx-20191029.html",
+  "media_url": "https://odysee.com/@laxi:4/20191029:4",
   "expected_start_sec": 1110.0,
   "decode_start_sec": 1110.0,
   "decode_end_sec": 1110.0,
   "playback_decode_verified": false,
   "counts_toward_pilot_60": false,
-  "stderr": "yt-dlp resolver failed for https://rumble.com/v57tlbx-20191029.html with rc=1:\nERROR: [Rumble] v57tlbx-20191029.html: Unable to download webpage: HTTP Error 403: Forbidden (caused by <HTTPError 403: Forbidden>)\n\n",
-  "generated_at": "2026-09-13T13:10:15.174633+00:00",
-  "bundle_id": "b9ac731dfb83f2d51ceeb47c7edaf95f34d28e6d3b5915ee8ff88942a806d353",
-  "request_revision": 1,
-  "request_sha256": "8aa787b197b42fb848b3c0e52a930f3bee8225ce4da44a54c559737e63e4ab35"
+  "stderr": "yt-dlp resolver failed for https://odysee.com/@laxi:4/20191029:4 with rc=1:\nWARNING: [lbry] @laxi#4/20191029#4: Unable to download webpage: HTTP Error 429: Too Many Requests\nERROR: [lbry] 4f709179288c7514c30b8ee99177ad1ffd16883b: No video formats found!; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you are on the latest version using  yt-dlp -U\n\n",
+  "generated_at": "2026-09-13T15:42:57.915073+00:00",
+  "bundle_id": "529368ff2754b39cb584e0135cf0190a1ecfa5c7775f70787c2b0196587b3a27",
+  "request_revision": 3,
+  "request_sha256": "9a3a50622c5d2afa176eef6a5c2200638a54820a5f4927eed6c935cc3a6a99dc"
 }

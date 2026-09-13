@@ -2,12 +2,12 @@
 
 - Case: `PILOT-E009`
 - Live: `LIVE_20191029_001`
-- Media: https://rumble.com/v57tlbx-20191029.html
+- Media: https://odysee.com/@laxi:4/20191029:4
 - Expected start: `3063.000s`
 - Decode window: `3063.000s` → `3063.000s`
 - Real media decoded: `false`
 - Evidence status: `blocked_media_decode`
-- Bundle ID: `1b91e64f9691a93d3e2102c039041961cfc0f6d3cc7bdc00183a6066840c0ba1`
+- Bundle ID: `1ec3db8b46fa2b9f0f9699ee5409b623d2244bcfe4f7605a19d2f44e3f99be55`
 
 ## Target text
 

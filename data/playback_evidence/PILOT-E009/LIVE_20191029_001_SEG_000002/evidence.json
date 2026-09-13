@@ -7,15 +7,15 @@
   "segment_id": "LIVE_20191029_001_SEG_000002",
   "request_ref": "coordination/playback_requests/PILOT-E009/LIVE_20191029_001_SEG_000002.json",
   "requested_by": "agent-20260913-gpt56sol-fulltest2",
-  "media_url": "https://rumble.com/v57tlbx-20191029.html",
+  "media_url": "https://odysee.com/@laxi:4/20191029:4",
   "expected_start_sec": 3063.0,
   "decode_start_sec": 3063.0,
   "decode_end_sec": 3063.0,
   "playback_decode_verified": false,
   "counts_toward_pilot_60": false,
-  "stderr": "yt-dlp resolver failed for https://rumble.com/v57tlbx-20191029.html with rc=1:\nERROR: [Rumble] v57tlbx-20191029.html: Unable to download webpage: HTTP Error 403: Forbidden (caused by <HTTPError 403: Forbidden>)\n\n",
-  "generated_at": "2026-09-13T13:10:16.038858+00:00",
-  "bundle_id": "1b91e64f9691a93d3e2102c039041961cfc0f6d3cc7bdc00183a6066840c0ba1",
-  "request_revision": 1,
-  "request_sha256": "93e20228aa2d11c71abab67d7831967f28abc2d4cd78014729c233423f21ca98"
+  "stderr": "Cannot determine format of input stream 0:0 after EOF\nError marking filters as finished\nError while filtering: Invalid data found when processing input\n[out#0/mp4 @ 0x5576b3f8b240] Nothing was written into output file, because at least one of its streams received no packets.\n",
+  "generated_at": "2026-09-13T15:43:28.420448+00:00",
+  "bundle_id": "1ec3db8b46fa2b9f0f9699ee5409b623d2244bcfe4f7605a19d2f44e3f99be55",
+  "request_revision": 3,
+  "request_sha256": "4e4f2fdc32c413d8ba471c16fd15cc282bbee05405fd8b0d3115febe8b0a0d65"
 }
