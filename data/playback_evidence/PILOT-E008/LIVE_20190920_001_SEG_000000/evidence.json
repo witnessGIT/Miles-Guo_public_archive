@@ -1,0 +1,21 @@
+{
+  "project": "Miles-Guo_public_archive",
+  "evidence_version": "repository-playback-evidence-v1",
+  "status": "blocked_media_decode",
+  "case_id": "PILOT-E008",
+  "live_id": "LIVE_20190920_001",
+  "segment_id": "LIVE_20190920_001_SEG_000000",
+  "request_ref": "coordination/playback_requests/PILOT-E008/LIVE_20190920_001_SEG_000000.json",
+  "requested_by": "agent-20260913-gpt56sol-validation3",
+  "media_url": "https://rumble.com/v57s3fp-20190920.html",
+  "expected_start_sec": 4.0,
+  "decode_start_sec": 4.0,
+  "decode_end_sec": 4.0,
+  "playback_decode_verified": false,
+  "counts_toward_pilot_60": false,
+  "stderr": "https://rumble.com/v57s3fp-20190920.html: Server returned 403 Forbidden (access denied)\n",
+  "generated_at": "2026-09-13T06:18:04.830857+00:00",
+  "bundle_id": "50f40ba4c2621432c15d349bff9591cfd2edd486f2ac122f2283c1214b3ef816",
+  "request_revision": 1,
+  "request_sha256": "82093158395eb717f2013dca5e8e2d349d226281ea4576c4bc2af5a7c0791bf5"
+}
