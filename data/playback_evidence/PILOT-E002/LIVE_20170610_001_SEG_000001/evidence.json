@@ -7,15 +7,15 @@
   "segment_id": "LIVE_20170610_001_SEG_000001",
   "request_ref": "coordination/playback_requests/PILOT-E002/LIVE_20170610_001_SEG_000001.json",
   "requested_by": "agent-20260914-gpt56sol-generation2",
-  "media_url": "https://www.youtube.com/watch?v=U4B9KiiqwPg",
+  "media_url": "https://rumble.com/v576mwx-20170610-1.html",
   "expected_start_sec": 353.0,
   "decode_start_sec": 353.0,
   "decode_end_sec": 353.0,
   "playback_decode_verified": false,
   "counts_toward_pilot_60": false,
-  "stderr": "yt-dlp resolver failed for https://www.youtube.com/watch?v=U4B9KiiqwPg with rc=1:\nWARNING: [youtube] No supported JavaScript runtime could be found. Only deno is enabled by default; to use another runtime add  --js-runtimes RUNTIME[:PATH]  to your command/config. YouTube extraction without a JS runtime has been deprecated, and some formats may be missing. See  https://github.com/yt-dlp/yt-dlp/wiki/EJS  for details on installing one\nWARNING: [youtube] No title found in player responses; falling back to title from initial data. Other metadata may also be missing\nERROR: [youtube] U4B9KiiqwPg: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies\n\n",
-  "generated_at": "2026-09-13T22:43:27.416603+00:00",
-  "bundle_id": "216ab64d3b70c72e33de822676aa8049c955c5a5cb6c5822524935d8193ef5e7",
-  "request_revision": 2,
-  "request_sha256": "851ab08663f4f73b8e99a579f9865b62c2e968ac20ea27cb95a5031ee5d904a3"
+  "stderr": "yt-dlp resolver failed for https://rumble.com/v576mwx-20170610-1.html with rc=1:\nERROR: [Rumble] v576mwx-20170610-1.html: Unable to download webpage: HTTP Error 403: Forbidden (caused by <HTTPError 403: Forbidden>)\n\n",
+  "generated_at": "2026-09-13T22:45:30.872889+00:00",
+  "bundle_id": "a471b7e8b3f824a7cc319afb0bf8492272c04a76f72ba53ecd4044f6cc15b2d1",
+  "request_revision": 3,
+  "request_sha256": "0c113a14378c2b3c10811ae688c931424c2d1155c84424eab520bb8abfb9df16"
 }

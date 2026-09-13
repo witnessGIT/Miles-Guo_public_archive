@@ -2,12 +2,12 @@
 
 - Case: `PILOT-E002`
 - Live: `LIVE_20170610_001`
-- Media: https://www.youtube.com/watch?v=U4B9KiiqwPg
+- Media: https://rumble.com/v576mwx-20170610-1.html
 - Expected start: `230.000s`
 - Decode window: `230.000s` → `230.000s`
 - Real media decoded: `false`
 - Evidence status: `blocked_media_decode`
-- Bundle ID: `be3dcbb68bfda8b49b41f7e3fbc874de4f7899bf87d5c1799fdd4bbd46f6459a`
+- Bundle ID: `305463d478671184aa0399c387866e7cc04d04c3e95e7f7cccfdae35b0ac435d`
 
 ## Target text
 
