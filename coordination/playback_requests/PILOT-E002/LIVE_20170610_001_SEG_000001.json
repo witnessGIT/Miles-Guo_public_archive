@@ -1,16 +1,16 @@
 {
   "request_version": "playback-request-v1",
-  "request_revision": 2,
+  "request_revision": 3,
   "task_id": "P9-PLAYBACK-PILOT-E002",
   "case_id": "PILOT-E002",
   "live_id": "LIVE_20170610_001",
   "segment_id": "LIVE_20170610_001_SEG_000001",
-  "media_url": "https://www.youtube.com/watch?v=U4B9KiiqwPg",
+  "media_url": "https://rumble.com/v576mwx-20170610-1.html",
   "requested_by": "agent-20260914-gpt56sol-generation2",
-  "requested_at": "2026-09-13T22:42:20Z",
+  "requested_at": "2026-09-13T22:44:20Z",
   "pre_roll_sec": 10.0,
   "decode_window_sec": 24.0,
   "language": "zh",
   "visual_mode": "frames_ocr",
-  "retry_reason": "Generation-2 clean rerun after the historical service-control failure. Use the verified GWINS-preserved YouTube media rather than the GHOT HTML archive page."
+  "retry_reason": "Verified YouTube revision 2 was blocked by anonymous anti-bot sign-in. Exhaust the other repository-preserved verified public media alternate without cookies or authentication bypass."
 }
