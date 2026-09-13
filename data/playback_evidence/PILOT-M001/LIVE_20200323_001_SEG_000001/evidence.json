@@ -7,15 +7,15 @@
   "segment_id": "LIVE_20200323_001_SEG_000001",
   "request_ref": "coordination/playback_requests/PILOT-M001/LIVE_20200323_001_SEG_000001.json",
   "requested_by": "agent-20260914-gpt56sol-fulltest5",
-  "media_url": "https://odysee.com/@laxi:4/20200323:d",
+  "media_url": "https://rumble.com/v58722t-20200323.html",
   "expected_start_sec": 1254.0,
   "decode_start_sec": 1254.0,
   "decode_end_sec": 1254.0,
   "playback_decode_verified": false,
   "counts_toward_pilot_60": false,
-  "stderr": "https://player.odycdn.com/v6/streams/df664b3404db4be0efa593f70a38b2db9668e7dc/44d873.mp4: Server returned 401 Unauthorized (authorization failed)\n",
-  "generated_at": "2026-09-13T21:23:50.545961+00:00",
-  "bundle_id": "121470b30530ecc8f603f9d379a2c8016ca279aa6b42b8fe87b142ccb5023c2d",
-  "request_revision": 1,
-  "request_sha256": "ba1815745071a7ae956361e1964157363b22a71d4f8002a1bc393907c6db43d4"
+  "stderr": "yt-dlp resolver failed for https://rumble.com/v58722t-20200323.html with rc=1:\nERROR: [Rumble] v58722t-20200323.html: Unable to download webpage: HTTP Error 403: Forbidden (caused by <HTTPError 403: Forbidden>)\n\n",
+  "generated_at": "2026-09-13T21:29:47.192566+00:00",
+  "bundle_id": "4fafa505bf139022e2d217fe693b6762637865558d0ebbaf957537642aa32c5e",
+  "request_revision": 2,
+  "request_sha256": "5ca3ab77e8841346fcb38551580d14feb338d55b3ffe10188ddc13701063db44"
 }
