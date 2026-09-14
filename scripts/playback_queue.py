@@ -28,6 +28,7 @@ AUDIT_GATE = ROOT / "scripts" / "audit_gate.py"
 SERVICE_WORKFLOW = ROOT / ".github" / "workflows" / "playback-evidence-service.yml"
 GATE_ID = "P9-PLAYBACK-GATE"
 ACTIVE_QUEUE_GENERATION = 2
+RETRYABLE_EVIDENCE_STATUSES = {"blocked_media_decode", "needs_manual_or_wider_review", "invalid"}
 
 
 def utc_now() -> str:
@@ -278,12 +279,33 @@ def request_segment(agent_id: str, case_id: str, segment_id: str, media_url: str
     out_dir = REQUEST_ROOT / case_id
     out_dir.mkdir(parents=True, exist_ok=True)
     out = out_dir / f"{segment_id}.json"
+    request_revision = 1
     if out.exists():
-        print(f"Playback request already exists: {out.relative_to(ROOT)}")
-        return out
+        try:
+            previous_request = json.loads(out.read_text(encoding="utf-8"))
+        except (OSError, json.JSONDecodeError) as exc:
+            raise SystemExit(f"Existing playback request is invalid: {exc}") from exc
+        evidence_path = EVIDENCE_ROOT / case_id / segment_id / "evidence.json"
+        if not evidence_path.exists():
+            raise SystemExit(
+                "Playback request already exists without evidence; commit/push it or wait for the service"
+            )
+        try:
+            evidence = json.loads(evidence_path.read_text(encoding="utf-8"))
+        except (OSError, json.JSONDecodeError) as exc:
+            raise SystemExit(f"Existing playback evidence is invalid: {exc}") from exc
+        status = str(evidence.get("status") or "")
+        if status not in RETRYABLE_EVIDENCE_STATUSES:
+            raise SystemExit(
+                f"Evidence status {status!r} is protected from replacement; review/accept it first"
+            )
+        request_revision = max(
+            int(previous_request.get("request_revision", 1)),
+            int(evidence.get("request_revision", 1)),
+        ) + 1
     payload = {
         "request_version": "playback-request-v1",
-        "request_revision": 1,
+        "request_revision": request_revision,
         "queue_generation": ACTIVE_QUEUE_GENERATION,
         "task_id": f"P9-PLAYBACK-{case_id}",
         "case_id": case_id,
@@ -298,7 +320,11 @@ def request_segment(agent_id: str, case_id: str, segment_id: str, media_url: str
         "visual_mode": visual_mode,
     }
     out.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    print(f"Created playback request: {out.relative_to(ROOT)}")
+    action = "Updated" if request_revision > 1 else "Created"
+    print(
+        f"{action} playback request revision {request_revision}: "
+        f"{out.relative_to(ROOT)}"
+    )
     print("Commit/push it. GitHub Actions will publish durable Agent-readable evidence.")
     return out
 
