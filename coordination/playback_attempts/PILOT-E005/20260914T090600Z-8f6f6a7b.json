@@ -1,0 +1,15 @@
+{
+  "task_id": "P9-PLAYBACK-PILOT-E005",
+  "agent_id": "agent-20260913T051200Z-gpt56sol-playback-e005",
+  "blocked_at": "2026-09-14T09:06:00Z",
+  "case_id": "PILOT-E005",
+  "execution_mode": "repository_evidence_service_v1",
+  "reason": "Repository Playback Evidence Service published revision-2 evidence for all three canonical timed segments, but the recorded public Rumble mirror returned HTTP 403 to the GitHub runner for every decode attempt. Earlier YouTube revision did not yield a durable reviewable bundle. No third public media source for this case is currently recorded in the Pilot metadata, so this claim cannot produce a qualifying playback audit without guessing or bypassing access controls.",
+  "counts_toward_pilot_60": false,
+  "evidence_refs": [
+    "data/playback_evidence/PILOT-E005/LIVE_20180616_001_SEG_000000/evidence.json",
+    "data/playback_evidence/PILOT-E005/LIVE_20180616_001_SEG_000001/evidence.json",
+    "data/playback_evidence/PILOT-E005/LIVE_20180616_001_SEG_000002/evidence.json"
+  ],
+  "note": "Blocked attempt is preserved; release the claim for a later retry if a new public decodable source becomes available."
+}
