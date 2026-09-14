@@ -7,31 +7,25 @@
   "segment_id": "LIVE_20210612_001_SEG_000002",
   "request_ref": "coordination/playback_requests/PILOT-M006/LIVE_20210612_001_SEG_000002.json",
   "requested_by": "agent-20260914T101300Z-gpt56sol-playback-m006",
-  "media_url": "https://ghot.ai/archive/videos/2021-06-12-1",
+  "media_url": "https://rumble.com/v59epot-20210612-1.html",
   "expected_start_sec": 3776.0,
   "decode_start_sec": 3776.0,
   "decode_end_sec": 3776.0,
   "playback_decode_verified": false,
   "counts_toward_pilot_60": false,
-  "stderr": "https://player.odycdn.com/v6/streams/965b486272bb24eddc9762a211c8bd078806040e/540a92.mp4: Server returned 401 Unauthorized (authorization failed)\n",
-  "generated_at": "2026-09-14T10:18:07.591712+00:00",
-  "bundle_id": "79ea1fe5b7f8bae97a58cd073d3f73c1db5b06cb134827a76318d80bc0d0d896",
-  "request_revision": 1,
-  "request_sha256": "b592f7592557d97d924f6adc424e4a9e5c49b1eee049265fd7190725d3dac0b4",
+  "stderr": "yt-dlp resolver failed for https://rumble.com/v59epot-20210612-1.html with rc=1:\nERROR: [Rumble] v59epot-20210612-1.html: Unable to download webpage: HTTP Error 403: Forbidden (caused by <HTTPError 403: Forbidden>)\n\n",
+  "generated_at": "2026-09-14T10:21:15.023579+00:00",
+  "bundle_id": "70d5f7f6b06a9896447c8f29bb8748497ee4170a665cb5c15395a4f4d407bb34",
+  "request_revision": 2,
+  "request_sha256": "033ff2fc2d23a91185f168ddaabcc4a0fe81899c0796ce053d650285a5dbd9c0",
   "decode_failure_stage": "probe",
   "decode_resolution": {
-    "resolver": "odysee_public_sdk_proxy",
-    "source": "https://odysee.com/@laxi:4/20210612_1:9",
-    "lbry_uri": "lbry://@laxi:4/20210612_1:9",
-    "api_url": "https://api.na-backend.odysee.com/api/v1/proxy?m=get",
-    "archive_resolver": "trusted_archive_page_public_links",
-    "archive_page": "https://ghot.ai/archive/videos/2021-06-12-1",
-    "linked_media_url": "https://odysee.com/@laxi:4/20210612_1:9",
-    "archive_candidates": [
-      "https://odysee.com/@laxi:4/20210612_1:9",
-      "https://rumble.com/v59epot-20210612-1.html"
-    ]
+    "resolver": "direct_after_public_and_yt_dlp_failure",
+    "source": "https://rumble.com/v59epot-20210612-1.html",
+    "yt_dlp_returncode": 1,
+    "yt_dlp_stderr": "ERROR: [Rumble] v59epot-20210612-1.html: Unable to download webpage: HTTP Error 403: Forbidden (caused by <HTTPError 403: Forbidden>)\n",
+    "resolver_timeout_sec": 45
   },
-  "decode_tool_stderr": "https://player.odycdn.com/v6/streams/965b486272bb24eddc9762a211c8bd078806040e/540a92.mp4: Server returned 401 Unauthorized (authorization failed)\n",
+  "decode_tool_stderr": "https://rumble.com/v59epot-20210612-1.html: Server returned 403 Forbidden (access denied)\n",
   "decode_timed_out": false
 }

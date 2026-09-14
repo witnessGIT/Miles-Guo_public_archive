@@ -2,12 +2,12 @@
 
 - Case: `PILOT-M006`
 - Live: `LIVE_20210612_001`
-- Media: https://ghot.ai/archive/videos/2021-06-12-1
+- Media: https://rumble.com/v59epot-20210612-1.html
 - Expected start: `3501.000s`
 - Decode window: `3501.000s` → `3501.000s`
 - Real media decoded: `false`
 - Evidence status: `blocked_media_decode`
-- Bundle ID: `b610190c8ca791c6eb09bcbff6827ff9c15f068c653289d29b4b471cc6cacb7b`
+- Bundle ID: `1519cd1a1c391aa878b8b1e7b344e5b285e4bd8a505e2b105b35c37d28c8e5ac`
 
 ## Target text
 
