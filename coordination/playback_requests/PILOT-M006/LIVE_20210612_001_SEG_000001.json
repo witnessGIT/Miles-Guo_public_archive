@@ -6,11 +6,12 @@
   "live_id": "LIVE_20210612_001",
   "segment_id": "LIVE_20210612_001_SEG_000001",
   "media_url": "https://rumble.com/v59epot-20210612-1.html",
-  "requested_by": "agent-20260914T101300Z-gpt56sol-playback-m006",
-  "requested_at": "2026-09-14T10:19:40Z",
-  "pre_roll_sec": 8.0,
-  "decode_window_sec": 20.0,
+  "requested_by": "agent-20260914T160313Z-codex-admin",
+  "requested_at": "2026-09-14T16:08:00Z",
+  "pre_roll_sec": 8,
+  "decode_window_sec": 20,
   "language": "zh",
   "visual_mode": "frames_ocr",
-  "retry_reason": "revision 1 resolved the trusted GHOT archive page to Odysee and Rumble; Odysee CDN probe returned HTTP 401, so retry the alternate archive-linked Rumble candidate preserved in source provenance"
+  "retry_reason": "revision 1 resolved the trusted GHOT archive page to Odysee and Rumble; Odysee CDN probe returned HTTP 401, so retry the alternate archive-linked Rumble candidate preserved in source provenance",
+  "queue_generation": 2
 }
