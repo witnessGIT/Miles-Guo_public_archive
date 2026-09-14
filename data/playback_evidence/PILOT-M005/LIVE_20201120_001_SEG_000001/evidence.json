@@ -1,0 +1,30 @@
+{
+  "project": "Miles-Guo_public_archive",
+  "evidence_version": "repository-playback-evidence-v1",
+  "status": "blocked_media_decode",
+  "case_id": "PILOT-M005",
+  "live_id": "LIVE_20201120_001",
+  "segment_id": "LIVE_20201120_001_SEG_000001",
+  "request_ref": "coordination/playback_requests/PILOT-M005/LIVE_20201120_001_SEG_000001.json",
+  "requested_by": "agent-20260914T101000Z-gpt56sol-generation2-m005",
+  "media_url": "https://odysee.com/@laxi:4/20201120_4:0",
+  "expected_start_sec": 9824.0,
+  "decode_start_sec": 9824.0,
+  "decode_end_sec": 9824.0,
+  "playback_decode_verified": false,
+  "counts_toward_pilot_60": false,
+  "stderr": "https://player.odycdn.com/v6/streams/04c4fee23d38e5cbf214ace565209567febecb9a/2e8fd0.mp4: Server returned 401 Unauthorized (authorization failed)\n",
+  "generated_at": "2026-09-14T10:18:04.419444+00:00",
+  "bundle_id": "b9112b27dcef76a4f2683d501c7f57f9671b7d56c8739a0292fe1806ec540ed7",
+  "request_revision": 1,
+  "request_sha256": "ccb8d427dd76331e7265cfb6da91fbe51a1202f8fa429cf12cd082828be7ac7f",
+  "decode_failure_stage": "probe",
+  "decode_resolution": {
+    "resolver": "odysee_public_sdk_proxy",
+    "source": "https://odysee.com/@laxi:4/20201120_4:0",
+    "lbry_uri": "lbry://@laxi:4/20201120_4:0",
+    "api_url": "https://api.na-backend.odysee.com/api/v1/proxy?m=get"
+  },
+  "decode_tool_stderr": "https://player.odycdn.com/v6/streams/04c4fee23d38e5cbf214ace565209567febecb9a/2e8fd0.mp4: Server returned 401 Unauthorized (authorization failed)\n",
+  "decode_timed_out": false
+}
