@@ -1,15 +1,16 @@
 {
   "request_version": "playback-request-v1",
-  "request_revision": 1,
+  "request_revision": 2,
+  "retry_reason": "Revision 1 decoded successfully but Whisper grouped the short greeting into a 12.16-second utterance spanning 0-12.16s, producing low-confidence timing. Retry a tighter 5-12s media window around the canonical 8s point to improve decoded-audio localization without changing the canonical target or media source.",
   "task_id": "P9-PLAYBACK-PILOT-L005",
   "case_id": "PILOT-L005",
   "live_id": "LIVE_20221024_001",
   "segment_id": "LIVE_20221024_001_SEG_000000",
   "media_url": "https://gettr.com/post/p1veghif320",
   "requested_by": "agent-20260914T090800Z-gpt56sol-playback-l005",
-  "requested_at": "2026-09-14T09:08:20Z",
-  "pre_roll_sec": 8.0,
-  "decode_window_sec": 24.0,
+  "requested_at": "2026-09-14T09:33:00Z",
+  "pre_roll_sec": 3.0,
+  "decode_window_sec": 7.0,
   "language": "zh",
   "visual_mode": "frames_ocr"
 }
