@@ -1,0 +1,23 @@
+{
+  "task_id": "P9-PLAYBACK-PILOT-M005",
+  "agent_id": "agent-20260914T101000Z-gpt56sol-generation2-m005",
+  "claimed_at": "2026-09-14T10:10:00Z",
+  "status": "in_progress",
+  "kind": "real_playback_audit",
+  "case_id": "PILOT-M005",
+  "live_id": "LIVE_20201120_001",
+  "queue_generation": 2,
+  "missing_segment_ids": [
+    "LIVE_20201120_001_SEG_000000",
+    "LIVE_20201120_001_SEG_000001",
+    "LIVE_20201120_001_SEG_000002"
+  ],
+  "blocked_segment_ids": [],
+  "execution_mode": "repository_evidence_service_v1",
+  "repository_evidence_service": true,
+  "local_content_inspection_capable": false,
+  "workflow_mode": "continuous-worker-v2",
+  "claim_protocol": "claim-protocol-v2",
+  "continue_after_finish": true,
+  "scope": "Generation-2 Playback validation for M005 using repository-preserved and directly verified public media provenance; submit repository evidence requests for all three canonical timed segments and accept only reviewable decoded evidence."
+}
