@@ -1,16 +1,16 @@
 {
   "request_version": "playback-request-v1",
-  "request_revision": 3,
+  "request_revision": 4,
   "task_id": "P9-PLAYBACK-PILOT-M003",
   "case_id": "PILOT-M003",
   "live_id": "LIVE_20200606_001",
   "segment_id": "LIVE_20200606_001_SEG_000000",
-  "media_url": "https://odysee.com/@laxi:4/20200606:dd",
+  "media_url": "https://ghot.ai/archive/videos/2020-06-06-1",
   "requested_by": "agent-20260914-gpt56sol-organize1",
-  "requested_at": "2026-09-14T12:31:00Z",
+  "requested_at": "2026-09-14T13:18:00Z",
   "pre_roll_sec": 10.0,
   "decode_window_sec": 24.0,
   "language": "zh",
   "visual_mode": "frames_ocr",
-  "retry_reason": "Controlled second trigger regression after provenance repair; previous revision was not scheduled by Playback Evidence Service despite matching the documented push path."
+  "retry_reason": "Same-case bounded retry through the formally verified GHOT archive page after the direct Odysee public SDK stream resolved but the public CDN probe returned HTTP 401. Keep provenance strict and let the trusted archive resolver choose only repository-linked public media."
 }
