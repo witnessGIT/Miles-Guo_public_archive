@@ -1,15 +1,16 @@
 {
   "request_version": "playback-request-v1",
-  "request_revision": 1,
+  "request_revision": 2,
   "task_id": "P9-PLAYBACK-PILOT-M006",
   "case_id": "PILOT-M006",
   "live_id": "LIVE_20210612_001",
   "segment_id": "LIVE_20210612_001_SEG_000002",
-  "media_url": "https://ghot.ai/archive/videos/2021-06-12-1",
+  "media_url": "https://rumble.com/v59epot-20210612-1.html",
   "requested_by": "agent-20260914T101300Z-gpt56sol-playback-m006",
-  "requested_at": "2026-09-14T10:14:20Z",
+  "requested_at": "2026-09-14T10:19:50Z",
   "pre_roll_sec": 8.0,
   "decode_window_sec": 20.0,
   "language": "zh",
-  "visual_mode": "frames_ocr"
+  "visual_mode": "frames_ocr",
+  "retry_reason": "revision 1 resolved the trusted GHOT archive page to Odysee and Rumble; Odysee CDN probe returned HTTP 401, so retry the alternate archive-linked Rumble candidate preserved in source provenance"
 }
