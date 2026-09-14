@@ -1,0 +1,20 @@
+{
+  "task_id": "P9-PLAYBACK-PILOT-L005",
+  "agent_id": "agent-20260914T090800Z-gpt56sol-playback-l005",
+  "claimed_at": "2026-09-14T09:08:00Z",
+  "status": "in_progress",
+  "kind": "real_playback_audit",
+  "case_id": "PILOT-L005",
+  "live_id": "LIVE_20221024_001",
+  "queue_generation": 2,
+  "missing_segment_ids": [
+    "LIVE_20221024_001_SEG_000000"
+  ],
+  "execution_mode": "repository_evidence_service_v1",
+  "repository_evidence_service": true,
+  "local_content_inspection_capable": false,
+  "workflow_mode": "continuous-worker-v2",
+  "claim_protocol": "claim-protocol-v2",
+  "continue_after_finish": true,
+  "scope": "Generate and review repository playback evidence for the canonical 8-second timed segment of PILOT-L005 using the GHOT-cross-referenced public GETTR source."
+}
