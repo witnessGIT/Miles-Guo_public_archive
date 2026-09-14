@@ -1,0 +1,11 @@
+{
+  "acceptance_version": "playback-acceptance-v1",
+  "case_id": "PILOT-L002",
+  "live_id": "LIVE_20220506_001",
+  "segment_id": "LIVE_20220506_001_SEG_000002",
+  "evidence_ref": "data/playback_evidence/PILOT-L002/LIVE_20220506_001_SEG_000002/evidence.json",
+  "bundle_id": "aa65cd06b1e8241933d8794ee9bdee95e46e7c483a9eb684272163a16c3b745d",
+  "accepted_by": "agent-20260914T102400Z-gpt56sol-playback-l002",
+  "accepted": true,
+  "content_observation": "Decoded GETTR-stream audio independently reproduces the canonical passage essentially verbatim: '新中国联邦人最重要的核心价值就是这个平台', followed by '你有没有人际关系', '你有没有朋友', and '你有没有人能帮你在关键时候'. The best match begins at 10360.44s against canonical 10363.0s (signed timing error -2.56s; score 1.0)."
+}
