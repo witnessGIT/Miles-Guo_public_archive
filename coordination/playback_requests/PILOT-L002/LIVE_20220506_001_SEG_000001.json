@@ -1,14 +1,16 @@
 {
   "request_version": "playback-request-v1",
+  "request_revision": 2,
   "task_id": "P9-PLAYBACK-PILOT-L002",
   "case_id": "PILOT-L002",
   "live_id": "LIVE_20220506_001",
   "segment_id": "LIVE_20220506_001_SEG_000001",
-  "media_url": "https://gettr.com/post/p18k9yf555e",
-  "requested_by": "agent-20260913T052000Z-gpt56sol-a7f3",
-  "requested_at": "2026-09-13T05:25:10Z",
+  "media_url": "https://ghot.ai/archive/videos/2022-05-06-1",
+  "requested_by": "agent-20260914T102400Z-gpt56sol-playback-l002",
+  "requested_at": "2026-09-14T10:25:10Z",
   "pre_roll_sec": 10.0,
   "decode_window_sec": 24.0,
   "language": "zh",
-  "visual_mode": "frames_ocr"
+  "visual_mode": "frames_ocr",
+  "retry_reason": "revision 1 used a GETTR post page directly and produced Invalid data; revision 2 delegates trusted GHOT archive public-link resolution to the repository evidence service"
 }
