@@ -1,21 +1,81 @@
 {
   "project": "Miles-Guo_public_archive",
   "evidence_version": "repository-playback-evidence-v1",
-  "status": "blocked_media_decode",
+  "status": "needs_manual_or_wider_review",
   "case_id": "PILOT-M007",
   "live_id": "LIVE_20210902_001",
   "segment_id": "LIVE_20210902_001_SEG_000000",
+  "task_id": "P9-PLAYBACK-PILOT-M007",
   "request_ref": "coordination/playback_requests/PILOT-M007/LIVE_20210902_001_SEG_000000.json",
   "requested_by": "agent-20260913T052200Z-gpt56sol",
-  "media_url": "https://ghot.ai/archive/videos/2021-09-02-2",
+  "media_url": "https://gettr.com/post/p9xyj1e4d0",
+  "target_text": "真正的战友们好",
+  "target_text_search": "战友们 好",
   "expected_start_sec": 0.0,
+  "decode_request_start_sec": 0.0,
   "decode_start_sec": 0.0,
-  "decode_end_sec": 0.0,
-  "playback_decode_verified": false,
+  "decode_end_sec": 24.0,
+  "decode_window_sec": 24.0,
+  "decode_resolver": "yt-dlp",
+  "playback_decode_verified": true,
+  "repository_content_inspection": true,
+  "inspection_engine": "github-actions+ffmpeg+whisper.cpp+frame-ocr",
+  "audio_asr": {
+    "engine": "whisper.cpp",
+    "model": "ggml-small.bin",
+    "entries": [],
+    "best_match": null,
+    "process_returncode": null,
+    "stderr_tail": ""
+  },
+  "visual_evidence": {
+    "frames": [
+      {
+        "local_sec": 0.0,
+        "absolute_sec": 0.0,
+        "sha256": "ca770ce5a23682b0c759f2ebc8242bf11969ceeb84d97b94c40c380f25d137fa",
+        "ocr_text": "ce et Rel et BETAS tes\n‘)     SA cay et Ps 时\nPO pe ES arg   te Ose, ae Te\nPgh Ae. OA ge Nee SF eee eee re oo ee\nAtt alice RS 人 Sa ea\nie: aie gaa Ei 5      Bash vel MAL 2) ee ig ae\nSs leg  a is   Fe yy            Ne SA ee ee, pe ae sss\nre Sar   ares              ba te ee    pate Pe ee 4\n‘ te ag  to SP ae                Qe Bes Rice 20 foes\nSb hn: See be Pig 机   RE «egies Pe at Pacers\nSe re ee ai Wate 2 、  : Nea aes Se a Pees\nRies  ae as) Be Ss                     i ee eS siege tected  het het\nuy air   nas Shon ae gm ae ca 4           :            Mo a 了 |\naes   yy nde 2 Bega oe ae ae                          ie aes Se esa se Coe gia Se:\nPca    “oe   PS ee  CS ad ‘kN                ee PS Sea  es ea 直\nos   2 ya     f  1 CaN SS  a oo ie =\nos  Fis ae  ke ee  setae     f      ‘e    bei es -人     S   as\n2             一人     oy\nTAR             ee    es.\n|       %    —_—\n<i    2         '                 .                   |        |\n7                         I ~S            a\n:                                           2                         is Se\n                      ,                           <                       ee a\ni          Pier           ——    -              -_    3\ni         i:       :                    |     ee\n           Bt Ot.         ;                                         re\nLe         Pe the “i     :                 ’                                      Fe\n要                                       下\n>» \" gene.       \\  y       {                   \\        :\nii  ar ee    Ag    Yi  Y    y        \\              Mall\ncat     了 a     Py A\nos  oe “a               j"
+      },
+      {
+        "local_sec": 4.0,
+        "absolute_sec": 4.0,
+        "sha256": "e4252290af3dc3685e86f75f3a96fa1400c4a203c7e419d9da84f956ad33b38c",
+        "ocr_text": "了 ie    4   tte lite hn, EEN   和\n4全     Bis Se ee eS fe  5 ai, Pewee oy ae.\na     ie  fon Ms be  Bo tg he Pee    ae ; ar och ail eat as wa  Ne Bi ages og\n= te       Re eS aps  Pe A i Poke: fis jars ly eas veg o's rage  Sula goa cae\n0 Sat Sie? aes 0 Sa RO ES Spe ea ere RE eo\nfe, Se     Be     Papa eS epee Su    pase as a\nwe eee es\nPe Seige ern ey he       = WR Wit  Rie van gerne\nRE    eR ere, Aue             SSS (a oe ES: Baan fe cen\nLame or ap lL yee. Se        Ss Me ed gene: Set gy Naa perce eee\ngee ra  pier  gee x           | i Siena Se tr aS. cae\na     ee py ae oe  A           ge  es    bo  a ae 44 ia      .  os  Pe s 人\neS    i ew oe?              &     Fo ee ig EN ae  bet se\nEre    ee a       上   Bes   ‘Yo ae  Ae Mi a eRe gt?\nPa ogi                A, eee Bae)     at eS ay\npe Bei:                 Be   ee ct ea ee ogee ne BAK ati\na               ; aa ee\n=                                 =      :   —  Pa a  Nae\n8     <                                  一一二  er\n       #4         =\n eee      ,   Ag      -           SS\n_           ha                  s                 PU\n  ‘            Rin                                    y     s    ma      2\nRite     Iie    i         “         > ee\nay               vipa   =             二                ee ed\nau  eS Me                      4         Sg oe\nme      ;                            1             —\nie att        as    neg                   \\               :\neo      i ee)                     |           i:\n~ £4      rf.                           |\n+2 Mag:  s                   |"
+      },
+      {
+        "local_sec": 8.0,
+        "absolute_sec": 8.0,
+        "sha256": "799497627c27ae4598a176fbf14c203e6ecba715f42d796b76672481161cf276",
+        "ocr_text": "ase 2S i SIR ACS is Br ore\n人 aS\nOme  Ct oar ee\nirae   Pec    ay Aaa AE gate ee oe ERR Sa  nee te\n          Seo ge a ae      上 Sa Oe\nvg   Keke eer Bae iS aa   a              rie a} 4 AN。 BS  Bag\nOona,» Seen      ah eK  FO               —  Aes Rang  koa See Pee eM\neSk  e ae Soe          Sm beet ie Oy Ee a\nSe aes nee pe “IE a                Te Sa SE ee. ea oh oars\neae  7,    a Bt Sans se Dee       >         one poe.   : ae ee  ste me\nfee ‘digo 2 cs eee            Ve TAR <=  ee\n7 ae, wd * ie Fo            S    ea eats   eel ae\ngar    了 C ,. ga ey               BW  Segue ae Ae\nLCR:   One    ow  y pee ies - =这 = >\n:                            a RE\naN\n#           te:             起\na =             d   ~\nars                 -                           :      .\n,        than’ vo                             ;        oe\noi         if fee                            ‘            \\ peas\nes    VY                             a.         gee\ni eae      y                         \\a        二\nilar       Aube        7           a\nait      in   y                          并\nYA"
+      }
+    ],
+    "best_match": {
+      "local_sec": 0.0,
+      "absolute_sec": 0.0,
+      "text": "ce et Rel et BETAS tes",
+      "similarity": 0.0,
+      "keyword_coverage": 0.0,
+      "score": 0.0,
+      "line_count": 1,
+      "frame_sha256": "ca770ce5a23682b0c759f2ebc8242bf11969ceeb84d97b94c40c380f25d137fa"
+    },
+    "smolvlm": {
+      "status": "not_requested"
+    }
+  },
+  "candidate_match_method": "frame_ocr",
+  "candidate_match_score": 0.0,
+  "candidate_content_match": false,
+  "candidate_observed_position_sec": 0.0,
+  "candidate_timing_error_sec": 0.0,
+  "candidate_absolute_timing_error_sec": 0.0,
+  "minimum_agent_review_score": 0.55,
+  "agent_acceptance_required": true,
   "counts_toward_pilot_60": false,
-  "stderr": "https://ghot.ai/archive/videos/2021-09-02-2: Invalid data found when processing input\n",
-  "generated_at": "2026-09-13T06:13:18.602616+00:00",
-  "bundle_id": "1a8d0fc420928d9a33ec4788a82e57ee9623231afa15d5ae1643006b331837f8",
-  "request_revision": 1,
-  "request_sha256": "c890d4225f6508b03aef32a706156e2a9927ca4bac620a1520e35428e863ffe1"
+  "decode_evidence_sha256": "9ce2b71636bd75235a392deb8df87f14d313c2ca38682190da21bf3f273ca05e",
+  "temporary_clip_sha256": "975e724bf5e2a84ff331b731e62b7484828278c85f7c6d89f2dcc069d1d8da4c",
+  "generated_at": "2026-09-14T13:59:26.817023+00:00",
+  "bundle_id": "05557a641b83cc33c2cc9e179d40b9424e7eb84096a722c8981b6e4cceec2592",
+  "request_revision": 2,
+  "request_sha256": "c4ad6565d750e75b66038d4357536a69feb1f4e91767a216f987c8b6503c6baf"
 }
