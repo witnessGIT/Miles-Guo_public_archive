@@ -27,6 +27,7 @@ PILOT_SELECTION = ROOT / "reports" / "pilot_selection.json"
 AUDIT_GATE = ROOT / "scripts" / "audit_gate.py"
 SERVICE_WORKFLOW = ROOT / ".github" / "workflows" / "playback-evidence-service.yml"
 GATE_ID = "P9-PLAYBACK-GATE"
+ACTIVE_QUEUE_GENERATION = 2
 
 
 def utc_now() -> str:
@@ -238,6 +239,7 @@ def claim_case(agent_id: str, requested_case: str | None, content_inspection_cap
         "live_id": chosen["live_id"],
         "missing_segment_ids": chosen["missing_segment_ids"],
         "execution_mode": execution_mode,
+        "queue_generation": ACTIVE_QUEUE_GENERATION,
         "repository_evidence_service": repository_capable,
         "local_runtime_tools": tools,
         "local_content_inspection_capable": bool(content_inspection_capable),
@@ -281,6 +283,8 @@ def request_segment(agent_id: str, case_id: str, segment_id: str, media_url: str
         return out
     payload = {
         "request_version": "playback-request-v1",
+        "request_revision": 1,
+        "queue_generation": ACTIVE_QUEUE_GENERATION,
         "task_id": f"P9-PLAYBACK-{case_id}",
         "case_id": case_id,
         "live_id": claim.get("live_id"),
