@@ -17,14 +17,15 @@ import playback_service_state as state  # noqa: E402
 
 class PlaybackQueueGenerationTest(unittest.TestCase):
     def setUp(self):
-        self.originals = (queue.CLAIMS, queue.REQUEST_ROOT)
+        self.originals = (queue.ROOT, queue.CLAIMS, queue.REQUEST_ROOT)
         self.tmp = tempfile.TemporaryDirectory()
         root = Path(self.tmp.name)
+        queue.ROOT = root
         queue.CLAIMS = root / "coordination" / "claims"
         queue.REQUEST_ROOT = root / "coordination" / "playback_requests"
 
     def tearDown(self):
-        queue.CLAIMS, queue.REQUEST_ROOT = self.originals
+        queue.ROOT, queue.CLAIMS, queue.REQUEST_ROOT = self.originals
         self.tmp.cleanup()
 
     def test_new_claim_and_request_enter_active_service_generation(self):
