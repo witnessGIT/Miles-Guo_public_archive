@@ -1,0 +1,35 @@
+{
+  "task_id": "P9-PLAYBACK-PILOT-M006",
+  "agent_id": "agent-20260914T101300Z-gpt56sol-playback-m006",
+  "blocked_at": "2026-09-14T10:22:00Z",
+  "case_id": "PILOT-M006",
+  "live_id": "LIVE_20210612_001",
+  "segment_ids": [
+    "LIVE_20210612_001_SEG_000000",
+    "LIVE_20210612_001_SEG_000001",
+    "LIVE_20210612_001_SEG_000002"
+  ],
+  "attempts": [
+    {
+      "request_revision": 1,
+      "media_url": "https://ghot.ai/archive/videos/2021-06-12-1",
+      "resolved_media_url": "https://odysee.com/@laxi:4/20210612_1:9",
+      "result": "blocked_media_decode",
+      "reason": "Repository evidence service resolved the trusted GHOT archive page through Odysee public SDK proxy, but the returned odycdn stream probe failed with HTTP 401 Unauthorized."
+    },
+    {
+      "request_revision": 2,
+      "media_url": "https://rumble.com/v59epot-20210612-1.html",
+      "result": "blocked_media_decode",
+      "reason": "Alternate GHOT-linked Rumble candidate was preserved in source provenance and retried. yt-dlp webpage resolution and direct media probe both returned HTTP 403 Forbidden."
+    }
+  ],
+  "evidence_refs": [
+    "data/playback_evidence/PILOT-M006/LIVE_20210612_001_SEG_000000/evidence.json",
+    "data/playback_evidence/PILOT-M006/LIVE_20210612_001_SEG_000001/evidence.json",
+    "data/playback_evidence/PILOT-M006/LIVE_20210612_001_SEG_000002/evidence.json"
+  ],
+  "counts_toward_pilot_60": false,
+  "qualifying_playback_checks": 0,
+  "note": "Both public archive-linked media candidates were exhausted without decoded media. No transcript timestamp or source-page text was counted as playback. Release the claim for a later retry if another independently verified playable mirror is discovered."
+}
