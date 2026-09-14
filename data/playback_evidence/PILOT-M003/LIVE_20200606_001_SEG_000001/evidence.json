@@ -1,0 +1,30 @@
+{
+  "project": "Miles-Guo_public_archive",
+  "evidence_version": "repository-playback-evidence-v1",
+  "status": "blocked_media_decode",
+  "case_id": "PILOT-M003",
+  "live_id": "LIVE_20200606_001",
+  "segment_id": "LIVE_20200606_001_SEG_000001",
+  "request_ref": "coordination/playback_requests/PILOT-M003/LIVE_20200606_001_SEG_000001.json",
+  "requested_by": "agent-20260914-gpt56sol-organize1",
+  "media_url": "https://odysee.com/@laxi:4/20200606:dd",
+  "expected_start_sec": 362.0,
+  "decode_start_sec": 362.0,
+  "decode_end_sec": 362.0,
+  "playback_decode_verified": false,
+  "counts_toward_pilot_60": false,
+  "stderr": "https://player.odycdn.com/v6/streams/ddc727d427adcc0e2b37745708010533bee248d2/7a2eac.mp4: Server returned 401 Unauthorized (authorization failed)\n",
+  "generated_at": "2026-09-14T12:22:32.719907+00:00",
+  "bundle_id": "fe39b181a90c10953be3756d06f21f0dbff6467b2a6ad5dcc3a2fcd80317eb72",
+  "request_revision": 1,
+  "request_sha256": "177970ebc19412e14d8866f3683559760afde9c67a081a59c9faab36bfa9c6bc",
+  "decode_failure_stage": "probe",
+  "decode_resolution": {
+    "resolver": "odysee_public_sdk_proxy",
+    "source": "https://odysee.com/@laxi:4/20200606:dd",
+    "lbry_uri": "lbry://@laxi:4/20200606:dd",
+    "api_url": "https://api.na-backend.odysee.com/api/v1/proxy?m=get"
+  },
+  "decode_tool_stderr": "https://player.odycdn.com/v6/streams/ddc727d427adcc0e2b37745708010533bee248d2/7a2eac.mp4: Server returned 401 Unauthorized (authorization failed)\n",
+  "decode_timed_out": false
+}
