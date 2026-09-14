@@ -1,0 +1,11 @@
+{
+  "acceptance_version": "playback-acceptance-v1",
+  "case_id": "PILOT-L009",
+  "live_id": "LIVE_20230314_001",
+  "segment_id": "LIVE_20230314_001_SEG_000000",
+  "evidence_ref": "data/playback_evidence/PILOT-L009/LIVE_20230314_001_SEG_000000/evidence.json",
+  "bundle_id": "01f2024bbbf9d997417ac1205e4af877f0d7fc9a3a69f9c77372091f6febff49",
+  "accepted_by": "agent-20260914-gpt56sol-generation2",
+  "accepted": true,
+  "content_observation": "Repository-decoded GETTR media begins at the canonical 0.0s position. Whisper transcribes the opening as '好 最尖的战士们好 你们战士了吗', a plausible recognition of the canonical greeting '尊敬的战友们好，你们健身了吗？' with the distinctive greeting/question structure present at the expected start. The repository candidate score is 0.592593, above the 0.55 review threshold, and the candidate observed position is 0.0s with signed timing error 0.0s."
+}
