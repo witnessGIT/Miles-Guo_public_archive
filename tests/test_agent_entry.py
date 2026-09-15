@@ -3,6 +3,7 @@ import sys
 import tempfile
 import unittest
 from pathlib import Path
+from unittest.mock import patch
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -31,6 +32,83 @@ class AgentEntryTests(unittest.TestCase):
                 agent_entry.SESSION = previous
         self.assertEqual(first, second)
         self.assertEqual(saved["agent_id"], first)
+
+    def test_playback_entry_candidates_include_expired_claims_but_not_active_claims(self):
+        rows = [
+            {
+                "task_id": "P9-PLAYBACK-PILOT-A",
+                "case_id": "PILOT-A",
+                "missing_segment_ids": ["SEG-A"],
+                "claim_exists": True,
+                "claim_expired": False,
+                "completed": False,
+            },
+            {
+                "task_id": "P9-PLAYBACK-PILOT-B",
+                "case_id": "PILOT-B",
+                "missing_segment_ids": ["SEG-B"],
+                "claim_exists": True,
+                "claim_expired": True,
+                "completed": False,
+            },
+            {
+                "task_id": "P9-PLAYBACK-PILOT-C",
+                "case_id": "PILOT-C",
+                "missing_segment_ids": ["SEG-C"],
+                "claim_exists": False,
+                "claim_expired": False,
+                "completed": False,
+            },
+        ]
+        with patch.object(agent_entry.playback_queue, "case_statuses", return_value=rows), patch.object(
+            agent_entry.playback_retry_guard,
+            "filter_candidates",
+            side_effect=lambda candidates: (candidates, []),
+        ):
+            eligible, guarded = agent_entry.playback_entry_candidates("agent-test")
+        self.assertEqual(guarded, [])
+        self.assertEqual({row["case_id"] for row in eligible}, {"PILOT-B", "PILOT-C"})
+
+    def test_direct_entry_reclaims_expired_playback_claim(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            claim_path = root / "coordination" / "claims" / "P9-PLAYBACK-PILOT-X.json"
+            claim_path.parent.mkdir(parents=True, exist_ok=True)
+            claim_path.write_text(
+                json.dumps(
+                    {
+                        "task_id": "P9-PLAYBACK-PILOT-X",
+                        "case_id": "PILOT-X",
+                        "agent_id": "agent-new",
+                    }
+                ),
+                encoding="utf-8",
+            )
+            expired = {
+                "task_id": "P9-PLAYBACK-PILOT-X",
+                "case_id": "PILOT-X",
+                "missing_segment_ids": ["SEG-X"],
+                "claim_exists": True,
+                "claim_expired": True,
+                "completed": False,
+            }
+            previous_root = agent_entry.ROOT
+            try:
+                agent_entry.ROOT = root
+                with patch.object(agent_entry.next_task, "eligible_tasks", return_value=[]), patch.object(
+                    agent_entry, "playback_entry_candidates", return_value=([expired], [])
+                ), patch.object(
+                    agent_entry.playback_queue,
+                    "reclaim_expired_claim",
+                    return_value=claim_path,
+                ) as reclaim:
+                    result = agent_entry.direct_entry("agent-new", 10)
+            finally:
+                agent_entry.ROOT = previous_root
+        self.assertEqual(result, 0)
+        reclaim.assert_called_once_with(
+            "agent-new", "PILOT-X", content_inspection_capable=False
+        )
 
 
 if __name__ == "__main__":
