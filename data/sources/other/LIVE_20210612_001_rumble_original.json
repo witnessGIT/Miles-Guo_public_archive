@@ -1,0 +1,15 @@
+{
+  "id": "SRC_7507DFE5",
+  "live_id": "LIVE_20210612_001",
+  "source_site": "other",
+  "source_role": "original_video",
+  "platform": "rumble",
+  "source_video_id": "v59epot",
+  "url": "https://rumble.com/v59epot-20210612-1.html",
+  "priority": 10,
+  "status": "verified",
+  "retrieved_at": "2026-09-15T13:35:00Z",
+  "last_verified_at": "2026-09-15T13:35:00Z",
+  "notes": "Public original-media candidate recovered by the repository Playback Evidence Service from the trusted GHOT archive page for PILOT-M006. The generation-2 resolver returned this exact Rumble URL alongside the Odysee original; the Odysee CDN probe returned 401, so this Rumble mirror is preserved as repository media provenance for a controlled playback retry.",
+  "metadata_json": "{\"pilot_case_id\":\"PILOT-M006\",\"source_level\":\"S3\",\"verification_method\":\"trusted_archive_page_public_links\",\"ghot_source_page\":\"https://ghot.ai/archive/videos/2021-06-12-1\",\"playback_evidence_ref\":\"data/playback_evidence/PILOT-M006/LIVE_20210612_001_SEG_000000/evidence.json\",\"resolver\":\"odysee_public_sdk_proxy\",\"identity_note\":\"Repository Playback Evidence Service resolved the trusted GHOT page to Odysee 20210612_1 and Rumble v59epot-20210612-1.html candidates for the same canonical live.\"}"
+}
