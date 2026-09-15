@@ -15,6 +15,7 @@ from pathlib import Path
 
 import next_task
 import playback_queue
+import playback_retry_guard
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -57,6 +58,11 @@ def emit(payload: dict) -> None:
     print(json.dumps(payload, ensure_ascii=False, indent=2))
 
 
+def guarded_playback_candidates(agent_id: str) -> tuple[list[dict], list[dict]]:
+    candidates = playback_queue.candidate_cases(agent_id, None)
+    return playback_retry_guard.filter_candidates(candidates)
+
+
 def direct_entry(agent_id: str, max_attempts: int) -> int:
     ordinary = next_task.eligible_tasks()
     if ordinary:
@@ -81,9 +87,15 @@ def direct_entry(agent_id: str, max_attempts: int) -> int:
             return 0
 
     try:
+        eligible_playback, guarded_playback = guarded_playback_candidates(agent_id)
+        if not eligible_playback:
+            guarded_ids = [str(row.get("case_id") or row.get("task_id")) for row in guarded_playback]
+            suffix = f" Retry-guarded unchanged cases: {', '.join(guarded_ids)}." if guarded_ids else ""
+            raise SystemExit("No autonomous playback case is currently eligible." + suffix)
+        chosen = eligible_playback[0]
         path = playback_queue.claim_case(
             agent_id,
-            None,
+            str(chosen["case_id"]),
             content_inspection_capable=False,
             max_attempts=max_attempts,
         )
@@ -119,8 +131,29 @@ def pr_entry(agent_id: str) -> int:
         task = next_task.candidate_order(ordinary, agent_id, None)[0]
         task_id = task["id"]
     else:
-        task = playback_queue.choose_case(agent_id, None)
-        task_id = task["task_id"]
+        try:
+            eligible_playback, guarded_playback = guarded_playback_candidates(agent_id)
+        except SystemExit as exc:
+            emit(
+                {
+                    "entry_status": "NO_PR_RESERVATION",
+                    "agent_id": agent_id,
+                    "reason": str(exc),
+                }
+            )
+            return 1
+        if not eligible_playback:
+            guarded_ids = [str(row.get("case_id") or row.get("task_id")) for row in guarded_playback]
+            emit(
+                {
+                    "entry_status": "NO_PR_RESERVATION",
+                    "agent_id": agent_id,
+                    "reason": "No autonomous playback case is currently eligible.",
+                    "retry_guarded_cases": guarded_ids,
+                }
+            )
+            return 1
+        task_id = eligible_playback[0]["task_id"]
     emit(
         {
             "entry_status": "PR_RESERVATION_REQUIRED",
