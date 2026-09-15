@@ -1,17 +1,17 @@
-# Playback Evidence — LIVE_20190920_001_SEG_000000
+# Playback Evidence — LIVE_20190920_001_SEG_000002
 
 - Case: `PILOT-E008`
 - Live: `LIVE_20190920_001`
 - Media: https://odysee.com/@laxi:4/20190920:f
-- Expected start: `4.000s`
-- Decode window: `4.000s` → `4.000s`
+- Expected start: `12.000s`
+- Decode window: `12.000s` → `12.000s`
 - Real media decoded: `false`
 - Evidence status: `blocked_media_decode`
-- Bundle ID: `44b3524377a8b910cba2529d3ab5d6a066b4ba908ff6d788575ce6f3f7ed6f60`
+- Bundle ID: `de6d588a12772bbd71d39e7382dc223d8d0db79ba89fd7ebc0df0f598f51b540`
 
 ## Target text
 
-尊敬的战友们好！
+非常的感谢战友们，这几天由于文贵没有直播，战友们很担心，给我很多问候。
 
 ## Decoded-audio ASR match
 

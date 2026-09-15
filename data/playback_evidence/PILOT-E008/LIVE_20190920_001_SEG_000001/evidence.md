@@ -1,17 +1,17 @@
-# Playback Evidence — LIVE_20190920_001_SEG_000000
+# Playback Evidence — LIVE_20190920_001_SEG_000001
 
 - Case: `PILOT-E008`
 - Live: `LIVE_20190920_001`
 - Media: https://odysee.com/@laxi:4/20190920:f
-- Expected start: `4.000s`
-- Decode window: `4.000s` → `4.000s`
+- Expected start: `8.000s`
+- Decode window: `8.000s` → `8.000s`
 - Real media decoded: `false`
 - Evidence status: `blocked_media_decode`
-- Bundle ID: `44b3524377a8b910cba2529d3ab5d6a066b4ba908ff6d788575ce6f3f7ed6f60`
+- Bundle ID: `ad41ceec9d3bc331fe8f4346f372836adb64f98687a8e29ffcb2797188cd7f48`
 
 ## Target text
 
-尊敬的战友们好！
+今天是9月20号，文贵报平安直播。
 
 ## Decoded-audio ASR match
 
