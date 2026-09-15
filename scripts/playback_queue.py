@@ -260,7 +260,12 @@ def print_status() -> None:
         )
 
 
-def choose_case(agent_id: str, requested_case: str | None) -> dict:
+def candidate_cases(agent_id: str, requested_case: str | None) -> list[dict]:
+    """Return a stable, collision-resistant order of currently open cases.
+
+    The first durable atomic claim remains the authoritative arrival order.  This ordering
+    merely keeps simultaneous local workers from all trying the same first visible case.
+    """
     candidates = [
         row
         for row in case_statuses()
@@ -272,10 +277,20 @@ def choose_case(agent_id: str, requested_case: str | None) -> dict:
         raise SystemExit("No unclaimed playback-audit case with missing qualifying segments.")
     candidates.sort(key=lambda row: row["case_id"])
     seed = int(hashlib.sha256(agent_id.encode("utf-8")).hexdigest(), 16)
-    return candidates[seed % len(candidates)]
+    offset = seed % len(candidates)
+    return candidates[offset:] + candidates[:offset]
 
 
-def claim_case(agent_id: str, requested_case: str | None, content_inspection_capable: bool) -> Path:
+def choose_case(agent_id: str, requested_case: str | None) -> dict:
+    return candidate_cases(agent_id, requested_case)[0]
+
+
+def claim_case(
+    agent_id: str,
+    requested_case: str | None,
+    content_inspection_capable: bool,
+    max_attempts: int = 10,
+) -> Path:
     tools = capability_status()
     local_capable = bool(tools["ffmpeg"] and tools["ffprobe"] and content_inspection_capable)
     repository_capable = bool(tools["repository_evidence_service"])
@@ -284,40 +299,54 @@ def claim_case(agent_id: str, requested_case: str | None, content_inspection_cap
             "No playback execution path is available. The repository evidence service is absent "
             "and this runtime is not a declared local decoded-content reviewer."
         )
-    chosen = choose_case(agent_id, requested_case)
     CLAIMS.mkdir(parents=True, exist_ok=True)
-    path = CLAIMS / f"{chosen['task_id']}.json"
     execution_mode = "repository_evidence_service_v1" if repository_capable else "local_manual_v1"
-    payload = {
-        "task_id": chosen["task_id"],
-        "agent_id": agent_id,
-        "claimed_at": utc_now(),
-        "status": "in_progress",
-        "kind": "real_playback_audit",
-        "case_id": chosen["case_id"],
-        "live_id": chosen["live_id"],
-        "missing_segment_ids": chosen["missing_segment_ids"],
-        "execution_mode": execution_mode,
-        "queue_generation": ACTIVE_QUEUE_GENERATION,
-        "repository_evidence_service": repository_capable,
-        "local_runtime_tools": tools,
-        "local_content_inspection_capable": bool(content_inspection_capable),
-        **_lease_fields(),
-        "instructions": (
-            "Preferred path: submit coordination/playback_requests/<CASE>/<SEGMENT>.json, "
-            "let GitHub Actions decode real media and publish data/playback_evidence, read the "
-            "evidence, then submit coordination/playback_acceptances. Local manual playback "
-            "remains a fallback. Source-page timestamps alone never count."
-        ),
-    }
-    with path.open("x", encoding="utf-8") as fh:
-        json.dump(payload, fh, ensure_ascii=False, indent=2)
-        fh.write("\n")
-    print(f"Claimed {chosen['task_id']} for {chosen['case_id']} via {execution_mode}")
-    print("Missing canonical timed segments:")
-    for segment_id in chosen["missing_segment_ids"]:
-        print(f"  - {segment_id}")
-    return path
+    candidates = candidate_cases(agent_id, requested_case)
+    for attempt, chosen in enumerate(candidates[: max(1, max_attempts)], start=1):
+        path = CLAIMS / f"{chosen['task_id']}.json"
+        payload = {
+            "task_id": chosen["task_id"],
+            "agent_id": agent_id,
+            "claimed_at": utc_now(),
+            "status": "in_progress",
+            "kind": "real_playback_audit",
+            "case_id": chosen["case_id"],
+            "live_id": chosen["live_id"],
+            "missing_segment_ids": chosen["missing_segment_ids"],
+            "execution_mode": execution_mode,
+            "queue_generation": ACTIVE_QUEUE_GENERATION,
+            "repository_evidence_service": repository_capable,
+            "local_runtime_tools": tools,
+            "local_content_inspection_capable": bool(content_inspection_capable),
+            **_lease_fields(),
+            "instructions": (
+                "Preferred path: submit coordination/playback_requests/<CASE>/<SEGMENT>.json, "
+                "let GitHub Actions decode real media and publish data/playback_evidence, read the "
+                "evidence, then submit coordination/playback_acceptances. Local manual playback "
+                "remains a fallback. Source-page timestamps alone never count."
+            ),
+        }
+        try:
+            with path.open("x", encoding="utf-8") as fh:
+                json.dump(payload, fh, ensure_ascii=False, indent=2)
+                fh.write("\n")
+        except FileExistsError:
+            print(
+                f"CLAIM_RACE_LOST: {chosen['task_id']} already has a local claim; "
+                "trying the next eligible playback case."
+            )
+            continue
+        print(f"Claimed {chosen['task_id']} for {chosen['case_id']} via {execution_mode}")
+        print("Missing canonical timed segments:")
+        for segment_id in chosen["missing_segment_ids"]:
+            print(f"  - {segment_id}")
+        if attempt > 1:
+            print(f"CLAIM_SUCCESS after {attempt} local collision-safe attempts.")
+        return path
+    raise SystemExit(
+        "CLAIM_RACE_LOST: attempted playback cases became unavailable locally. "
+        "Refresh main and start the automatic entry protocol again."
+    )
 
 
 def _owned_claim(agent_id: str, case_id: str) -> dict:
@@ -564,6 +593,7 @@ def main() -> int:
     parser = argparse.ArgumentParser(description="Manage retryable real-playback Pilot audit work.")
     parser.add_argument("--list", action="store_true")
     parser.add_argument("--claim", action="store_true")
+    parser.add_argument("--max-claim-attempts", type=int, default=10)
     parser.add_argument("--heartbeat", metavar="CASE_ID")
     parser.add_argument("--reclaim-expired", metavar="CASE_ID")
     parser.add_argument("--finish", metavar="CASE_ID")
@@ -626,7 +656,12 @@ def main() -> int:
     if args.claim:
         if not args.agent_id:
             raise SystemExit("--claim requires --agent-id")
-        claim_case(args.agent_id, args.case_id, args.content_inspection_capable)
+        claim_case(
+            args.agent_id,
+            args.case_id,
+            args.content_inspection_capable,
+            args.max_claim_attempts,
+        )
         return 0
 
     print_status()

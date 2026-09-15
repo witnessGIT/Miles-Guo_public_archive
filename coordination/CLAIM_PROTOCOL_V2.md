@@ -4,6 +4,22 @@ This protocol is mandatory for every **new** task claim under `continuous-worker
 
 Its purpose is to prevent normal multi-Agent contention on a rapidly changing `main` branch from being misreported as a repository-wide GitHub write failure.
 
+## Durable arrival order
+
+The project does not attempt to infer which chat window opened first. That timestamp is not
+shared or trustworthy. “First entered protocol” has one precise, testable meaning:
+
+```text
+direct-write Agent -> first successful atomic claim visible on main
+no-write Agent     -> first valid open task PR visible to the repository
+```
+
+This durable entry owns the task. All later Agents refresh and choose another eligible task. They
+must not wait for the user, edit the owner’s files, or keep retrying an already occupied task.
+`scripts/agent_entry.py` creates/reuses a stable local Agent ID and spreads equal-priority
+candidates; `scripts/next_task.py` and `scripts/playback_queue.py` fall through local claim
+collisions before reporting a fresh-state race.
+
 ## Core rule
 
 A failed claim attempt is **not** a stop condition by itself.

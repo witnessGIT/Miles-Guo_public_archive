@@ -44,7 +44,7 @@ class PlaybackQueueGenerationTest(unittest.TestCase):
             "yt_dlp": False,
             "repository_evidence_service": True,
         }
-        with patch.object(queue, "choose_case", return_value=chosen), patch.object(
+        with patch.object(queue, "candidate_cases", return_value=[chosen]), patch.object(
             queue, "capability_status", return_value=tools
         ):
             claim_path = queue.claim_case("agent-test", "PILOT-X", False)
@@ -145,7 +145,7 @@ class PlaybackQueueGenerationTest(unittest.TestCase):
             "ffmpeg": False, "ffprobe": False, "yt_dlp": False,
             "repository_evidence_service": True,
         }
-        with patch.object(queue, "choose_case", return_value=chosen), patch.object(
+        with patch.object(queue, "candidate_cases", return_value=[chosen]), patch.object(
             queue, "capability_status", return_value=tools
         ):
             queue.reclaim_expired_claim("agent-new", "PILOT-X", False)
@@ -155,6 +155,33 @@ class PlaybackQueueGenerationTest(unittest.TestCase):
         self.assertEqual(len(attempts), 1)
         archived = json.loads(attempts[0].read_text(encoding="utf-8"))
         self.assertEqual(archived["previous_agent_id"], "agent-old")
+
+    def test_local_collision_falls_through_to_next_playback_case(self):
+        first = {
+            "task_id": "P9-PLAYBACK-PILOT-A",
+            "case_id": "PILOT-A",
+            "live_id": "LIVE-A",
+            "missing_segment_ids": ["SEG-A"],
+        }
+        second = {
+            "task_id": "P9-PLAYBACK-PILOT-B",
+            "case_id": "PILOT-B",
+            "live_id": "LIVE-B",
+            "missing_segment_ids": ["SEG-B"],
+        }
+        queue.CLAIMS.mkdir(parents=True, exist_ok=True)
+        (queue.CLAIMS / "P9-PLAYBACK-PILOT-A.json").write_text("{}", encoding="utf-8")
+        tools = {
+            "ffmpeg": False, "ffprobe": False, "yt_dlp": False,
+            "repository_evidence_service": True,
+        }
+        with patch.object(queue, "candidate_cases", return_value=[first, second]), patch.object(
+            queue, "capability_status", return_value=tools
+        ):
+            path = queue.claim_case("agent-test", None, False)
+        self.assertEqual(path.name, "P9-PLAYBACK-PILOT-B.json")
+        payload = json.loads(path.read_text(encoding="utf-8"))
+        self.assertEqual(payload["agent_id"], "agent-test")
 
     def test_active_claim_cannot_be_reclaimed(self):
         queue.CLAIMS.mkdir(parents=True, exist_ok=True)

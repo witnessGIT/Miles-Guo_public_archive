@@ -2,14 +2,38 @@
 
 ## External prompt contract
 
-A minimal external prompt is sufficient:
+A one-sentence external prompt is sufficient:
 
 ```text
-进入这个项目并开始工作：
-https://github.com/witnessGIT/Miles-Guo_public_archive
+进入 witnessGIT/Miles-Guo_public_archive，开始执行。
 ```
 
-The repository is the authoritative execution context. Do not ask the user to repeat requirements already stored here.
+The repository is the authoritative execution context. Do not ask the user to repeat
+requirements, select a task, choose a source, or authorize routine continuation already stored
+here.
+
+## Automatic entry protocol
+
+After reading the required governance files, a fresh Agent must refresh `main` and open PR state,
+create/reuse one local stable identity, and immediately run one of these commands:
+
+```bash
+# direct write available
+python scripts/agent_entry.py --mode direct
+
+# no direct write; PR contribution route
+python scripts/agent_entry.py --mode pr
+```
+
+The command selects a collision-resistant eligible candidate and creates a local atomic claim or
+prints the exact PR reservation identity. The Agent must immediately make that result durable:
+push the claim to `main`, or create the emitted PR. It may only start task work after that durable
+entry exists.
+
+Arrival order is defined by durable repository state: the first atomic claim visible on `main`
+wins for direct-write Agents; the first valid open task PR wins for no-write Agents. A later
+Agent refreshes and takes another task. Chat start time, copied prompts and stale local files do
+not create ownership.
 
 ## Repository-owner standing directive
 
