@@ -7,13 +7,19 @@
 - Decode window: `1310.000s` → `1310.000s`
 - Real media decoded: `false`
 - Evidence status: `blocked_media_decode`
-- Bundle ID: `b9430c76e7607f854a14d1be893206bfd447900ad44b38c667e2250bc0d79782`
+- Bundle ID: `8f4acb3e506e3042548b03cc9b2e5b5d14d0ad1d76b2cefe3045741893b97a1b`
 
 ## Target text
 
 兄弟姐妹们我觉得我才能听到。
 
 ## Decoded-audio ASR match
+
+- Audio extraction return code: `None`
+- WAV exists/bytes/duration: `None` / `None` / `None`
+- Audio activity detected: `None`
+- Whisper status: `None`
+- Whisper invoked/return code/entries: `None` / `None` / `0`
 
 No usable Whisper match was produced.
 
@@ -24,4 +30,4 @@ No video frames were extracted.
 ## Agent decision rule
 
 The repository attempted real-media decoding, but decoding did **not** succeed. This is **not** a Pilot-60 qualifying record and must not be accepted.
-A worker may submit a playback acceptance only after reading this evidence and confirming that the ASR/visual evidence matches the canonical target content.
+A worker may submit a playback acceptance only when status is `ready_for_agent_review`, after reading this evidence and confirming that the decoded-audio ASR matches the canonical target content. Visual evidence is supplemental only.
