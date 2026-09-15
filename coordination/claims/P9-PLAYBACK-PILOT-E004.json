@@ -1,7 +1,7 @@
 {
   "task_id": "P9-PLAYBACK-PILOT-E004",
-  "agent_id": "agent-20260913T052000Z-gpt56sol-playback-e004",
-  "claimed_at": "2026-09-13T05:20:00Z",
+  "agent_id": "agent-20260915T133400Z-gpt56sol-playback-e004-g2",
+  "claimed_at": "2026-09-15T13:34:00Z",
   "status": "in_progress",
   "kind": "real_playback_audit",
   "case_id": "PILOT-E004",
@@ -10,6 +10,7 @@
     "LIVE_20180419_001_SEG_000000"
   ],
   "execution_mode": "repository_evidence_service_v1",
+  "queue_generation": 2,
   "repository_evidence_service": true,
   "local_runtime_tools": {
     "ffmpeg": true,
@@ -18,5 +19,8 @@
     "repository_evidence_service": true
   },
   "local_content_inspection_capable": false,
-  "instructions": "Submit coordination/playback_requests/<CASE>/<SEGMENT>.json, let GitHub Actions decode real media and publish data/playback_evidence, read the evidence, then submit coordination/playback_acceptances. Source-page timestamps alone never count."
+  "claim_lease_version": "playback-claim-lease-v1",
+  "last_heartbeat_at": "2026-09-15T13:34:00Z",
+  "lease_expires_at": "2026-09-15T19:34:00Z",
+  "instructions": "Preferred path: submit coordination/playback_requests/<CASE>/<SEGMENT>.json, let GitHub Actions decode real media and publish data/playback_evidence, read the evidence, then submit coordination/playback_acceptances. Local manual playback remains a fallback. Source-page timestamps alone never count."
 }
