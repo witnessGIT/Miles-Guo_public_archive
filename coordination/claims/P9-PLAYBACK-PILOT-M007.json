@@ -1,24 +1,28 @@
 {
   "task_id": "P9-PLAYBACK-PILOT-M007",
-  "agent_id": "agent-20260913T052200Z-gpt56sol",
-  "claimed_at": "2026-09-13T05:22:00Z",
+  "agent_id": "agent-20260915T093300Z-chat-playback-validation",
+  "claimed_at": "2026-09-15T09:30:17.979948+00:00",
   "status": "in_progress",
   "kind": "real_playback_audit",
   "case_id": "PILOT-M007",
   "live_id": "LIVE_20210902_001",
-  "queue_generation": 2,
   "missing_segment_ids": [
     "LIVE_20210902_001_SEG_000000",
     "LIVE_20210902_001_SEG_000001",
     "LIVE_20210902_001_SEG_000002"
   ],
-  "blocked_segment_ids": [],
   "execution_mode": "repository_evidence_service_v1",
+  "queue_generation": 2,
   "repository_evidence_service": true,
+  "local_runtime_tools": {
+    "ffmpeg": true,
+    "ffprobe": true,
+    "yt_dlp": false,
+    "repository_evidence_service": true
+  },
   "local_content_inspection_capable": false,
-  "workflow_mode": "continuous-worker-v2",
-  "claim_protocol": "claim-protocol-v2",
-  "continue_after_finish": true,
-  "disposition": "reopened_generation2_with_repository_provenance_gettr_fallback",
-  "scope": "Generate and review repository-decoded playback evidence for all currently timed canonical segments in PILOT-M007 using repository-recorded public GETTR provenance after the legacy GHOT page failed media decode."
+  "claim_lease_version": "playback-claim-lease-v1",
+  "last_heartbeat_at": "2026-09-15T09:30:18.085643+00:00",
+  "lease_expires_at": "2026-09-15T15:30:18.085643+00:00",
+  "instructions": "Preferred path: submit coordination/playback_requests/<CASE>/<SEGMENT>.json, let GitHub Actions decode real media and publish data/playback_evidence, read the evidence, then submit coordination/playback_acceptances. Local manual playback remains a fallback. Source-page timestamps alone never count."
 }
