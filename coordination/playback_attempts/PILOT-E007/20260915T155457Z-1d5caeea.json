@@ -1,0 +1,15 @@
+{
+  "task_id": "P9-PLAYBACK-PILOT-E007",
+  "agent_id": "agent-20260915T144850Z-gpt56sol",
+  "blocked_at": "2026-09-15T15:54:57+00:00",
+  "case_id": "PILOT-E007",
+  "execution_mode": "repository_evidence_service_v1",
+  "reason": "Reclaimed the expired E007 lease and retried all three canonical segments with the current Odysee anonymous public SDK resolver. Revision 3 resolved the verified Odysee claim but every decoded clip failed verification with 'decoded clip contains no audio/video stream'. The prior verified Rumble alternate had already returned HTTP 403. Both repository-preserved public media candidates are therefore exhausted in the current environment; no acceptance was created.",
+  "counts_toward_pilot_60": false,
+  "evidence_refs": [
+    "data/playback_evidence/PILOT-E007/LIVE_20190530_001_SEG_000000/evidence.json",
+    "data/playback_evidence/PILOT-E007/LIVE_20190530_001_SEG_000001/evidence.json",
+    "data/playback_evidence/PILOT-E007/LIVE_20190530_001_SEG_000002/evidence.json"
+  ],
+  "note": "Blocked attempt is preserved, and the case is released for a later retry after a material environment change."
+}
