@@ -234,16 +234,23 @@ def best_asr_match(entries: list[dict], target: str, search_text: str | None) ->
             if not combined_norm:
                 continue
             ratio = difflib.SequenceMatcher(None, target_norm, combined_norm).ratio()
+            exact_target_substring = target_norm in combined_norm
             coverage = 0.0
             if keywords:
                 hits = sum(1 for token in keywords if token in combined_norm)
                 coverage = hits / len(keywords)
-            score = max(ratio, ratio * 0.75 + coverage * 0.25)
+            # Short canonical speech anchors commonly occupy only the first few words of
+            # a longer Whisper cue. A normalized contiguous hit is stronger evidence than
+            # whole-cue edit distance; an Agent must still read and accept the evidence.
+            score = 1.0 if exact_target_substring else max(
+                ratio, ratio * 0.75 + coverage * 0.25
+            )
             candidate = {
                 "local_start_sec": float(part[0]["start_sec"]),
                 "local_end_sec": float(part[-1]["end_sec"]),
                 "text": combined,
                 "similarity": round(ratio, 6),
+                "exact_target_substring": exact_target_substring,
                 "keyword_coverage": round(coverage, 6),
                 "score": round(score, 6),
                 "entry_count": len(part),
