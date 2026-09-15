@@ -1,15 +1,17 @@
 {
   "request_version": "playback-request-v1",
-  "request_revision": 1,
+  "request_revision": 2,
+  "queue_generation": 2,
   "task_id": "P9-PLAYBACK-PILOT-M004",
   "case_id": "PILOT-M004",
   "live_id": "LIVE_20201001_001",
   "segment_id": "LIVE_20201001_001_SEG_000000",
   "media_url": "https://ghot.ai/archive/videos/2020-10-01-3",
-  "requested_by": "agent-20260914T101200Z-gpt56sol",
-  "requested_at": "2026-09-14T10:15:00Z",
+  "requested_by": "agent-20260915-gpt56sol-m004-retry",
+  "requested_at": "2026-09-15T00:32:00Z",
   "pre_roll_sec": 10.0,
   "decode_window_sec": 24.0,
   "language": "zh",
-  "visual_mode": "frames_ocr"
+  "visual_mode": "frames_ocr",
+  "retry_reason": "User-directed ordinary-agent real Runner retry. M004 has no alternate exact public media URL preserved in repository provenance; resubmit the only legal canonical source to obtain current Runner evidence before disposition."
 }
