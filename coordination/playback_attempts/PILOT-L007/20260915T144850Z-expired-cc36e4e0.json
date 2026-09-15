@@ -1,0 +1,12 @@
+{
+  "task_id": "P9-PLAYBACK-PILOT-L007",
+  "case_id": "PILOT-L007",
+  "attempt_type": "expired_claim_recovery",
+  "previous_agent_id": "agent-20260914-gpt56sol-generation2",
+  "previous_claimed_at": "2026-09-13T22:39:00Z",
+  "previous_lease_expires_at": "2026-09-14T22:39:00+00:00",
+  "reclaimed_by": "agent-20260915T144850Z-gpt56sol",
+  "reclaimed_at": "2026-09-15T14:48:50+00:00",
+  "counts_toward_pilot_60": false,
+  "note": "Expired claim was archived before a new ordinary-Agent lease was created."
+}
