@@ -8,6 +8,7 @@ The first claim/reservation that is durably visible in Git is the authoritative 
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
 import secrets
 from datetime import datetime, timezone
@@ -58,8 +59,20 @@ def emit(payload: dict) -> None:
     print(json.dumps(payload, ensure_ascii=False, indent=2))
 
 
-def guarded_playback_candidates(agent_id: str) -> tuple[list[dict], list[dict]]:
-    candidates = playback_queue.candidate_cases(agent_id, None)
+def playback_entry_candidates(agent_id: str) -> tuple[list[dict], list[dict]]:
+    """Return unclaimed or legally expired playback work in collision-resistant order."""
+    candidates = [
+        row
+        for row in playback_queue.case_statuses()
+        if row.get("missing_segment_ids")
+        and not row.get("completed")
+        and (not row.get("claim_exists") or row.get("claim_expired"))
+    ]
+    candidates.sort(key=lambda row: str(row.get("case_id") or ""))
+    if candidates:
+        seed = int(hashlib.sha256(agent_id.encode("utf-8")).hexdigest(), 16)
+        offset = seed % len(candidates)
+        candidates = candidates[offset:] + candidates[:offset]
     return playback_retry_guard.filter_candidates(candidates)
 
 
@@ -87,18 +100,28 @@ def direct_entry(agent_id: str, max_attempts: int) -> int:
             return 0
 
     try:
-        eligible_playback, guarded_playback = guarded_playback_candidates(agent_id)
+        eligible_playback, guarded_playback = playback_entry_candidates(agent_id)
         if not eligible_playback:
             guarded_ids = [str(row.get("case_id") or row.get("task_id")) for row in guarded_playback]
             suffix = f" Retry-guarded unchanged cases: {', '.join(guarded_ids)}." if guarded_ids else ""
             raise SystemExit("No autonomous playback case is currently eligible." + suffix)
         chosen = eligible_playback[0]
-        path = playback_queue.claim_case(
-            agent_id,
-            str(chosen["case_id"]),
-            content_inspection_capable=False,
-            max_attempts=max_attempts,
-        )
+        case_id = str(chosen["case_id"])
+        if chosen.get("claim_exists") and chosen.get("claim_expired"):
+            path = playback_queue.reclaim_expired_claim(
+                agent_id,
+                case_id,
+                content_inspection_capable=False,
+            )
+            claim_action = "expired_claim_reclaimed"
+        else:
+            path = playback_queue.claim_case(
+                agent_id,
+                case_id,
+                content_inspection_capable=False,
+                max_attempts=max_attempts,
+            )
+            claim_action = "new_claim_created"
     except SystemExit as exc:
         emit(
             {
@@ -118,8 +141,9 @@ def direct_entry(agent_id: str, max_attempts: int) -> int:
             "task_type": "real_playback",
             "task_id": claim["task_id"],
             "case_id": claim["case_id"],
+            "claim_action": claim_action,
             "claim_path": str(path.relative_to(ROOT)),
-            "next_required_action": "Immediately commit/push this exact claim. Then submit repository-provenance playback requests.",
+            "next_required_action": "Immediately commit/push this exact claim and any expired-claim archive. Then submit repository-provenance playback requests.",
         }
     )
     return 0
@@ -131,17 +155,7 @@ def pr_entry(agent_id: str) -> int:
         task = next_task.candidate_order(ordinary, agent_id, None)[0]
         task_id = task["id"]
     else:
-        try:
-            eligible_playback, guarded_playback = guarded_playback_candidates(agent_id)
-        except SystemExit as exc:
-            emit(
-                {
-                    "entry_status": "NO_PR_RESERVATION",
-                    "agent_id": agent_id,
-                    "reason": str(exc),
-                }
-            )
-            return 1
+        eligible_playback, guarded_playback = playback_entry_candidates(agent_id)
         if not eligible_playback:
             guarded_ids = [str(row.get("case_id") or row.get("task_id")) for row in guarded_playback]
             emit(
