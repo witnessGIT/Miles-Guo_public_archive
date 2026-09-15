@@ -2,6 +2,7 @@ import json
 import sys
 import tempfile
 import unittest
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from unittest.mock import patch
 
@@ -17,16 +18,17 @@ import playback_service_state as state  # noqa: E402
 
 class PlaybackQueueGenerationTest(unittest.TestCase):
     def setUp(self):
-        self.originals = (queue.ROOT, queue.CLAIMS, queue.REQUEST_ROOT, queue.EVIDENCE_ROOT)
+        self.originals = (queue.ROOT, queue.CLAIMS, queue.ATTEMPTS, queue.REQUEST_ROOT, queue.EVIDENCE_ROOT)
         self.tmp = tempfile.TemporaryDirectory()
         root = Path(self.tmp.name)
         queue.ROOT = root
         queue.CLAIMS = root / "coordination" / "claims"
+        queue.ATTEMPTS = root / "coordination" / "playback_attempts"
         queue.REQUEST_ROOT = root / "coordination" / "playback_requests"
         queue.EVIDENCE_ROOT = root / "data" / "playback_evidence"
 
     def tearDown(self):
-        queue.ROOT, queue.CLAIMS, queue.REQUEST_ROOT, queue.EVIDENCE_ROOT = self.originals
+        queue.ROOT, queue.CLAIMS, queue.ATTEMPTS, queue.REQUEST_ROOT, queue.EVIDENCE_ROOT = self.originals
         self.tmp.cleanup()
 
     def test_new_claim_and_request_enter_active_service_generation(self):
@@ -49,6 +51,8 @@ class PlaybackQueueGenerationTest(unittest.TestCase):
 
         claim = json.loads(claim_path.read_text(encoding="utf-8"))
         self.assertEqual(claim["queue_generation"], state.ACTIVE_QUEUE_GENERATION)
+        self.assertEqual(claim["claim_lease_version"], "playback-claim-lease-v1")
+        self.assertIn("lease_expires_at", claim)
 
         request_path = queue.request_segment(
             "agent-test",
@@ -117,6 +121,58 @@ class PlaybackQueueGenerationTest(unittest.TestCase):
         self.assertEqual(updated["request_revision"], 3)
         self.assertEqual(updated["requested_by"], "agent-new")
         self.assertEqual(updated["media_url"], "https://example.invalid/new")
+
+    def test_expired_claim_is_archived_before_reclaim(self):
+        queue.CLAIMS.mkdir(parents=True, exist_ok=True)
+        old = {
+            "task_id": "P9-PLAYBACK-PILOT-X",
+            "agent_id": "agent-old",
+            "claimed_at": (datetime.now(timezone.utc) - timedelta(days=2)).isoformat(),
+            "lease_expires_at": (datetime.now(timezone.utc) - timedelta(hours=1)).isoformat(),
+            "case_id": "PILOT-X",
+            "live_id": "LIVE-X",
+            "missing_segment_ids": ["SEG-1"],
+        }
+        path = queue.CLAIMS / "P9-PLAYBACK-PILOT-X.json"
+        path.write_text(json.dumps(old), encoding="utf-8")
+        chosen = {
+            "task_id": "P9-PLAYBACK-PILOT-X",
+            "case_id": "PILOT-X",
+            "live_id": "LIVE-X",
+            "missing_segment_ids": ["SEG-1"],
+        }
+        tools = {
+            "ffmpeg": False, "ffprobe": False, "yt_dlp": False,
+            "repository_evidence_service": True,
+        }
+        with patch.object(queue, "choose_case", return_value=chosen), patch.object(
+            queue, "capability_status", return_value=tools
+        ):
+            queue.reclaim_expired_claim("agent-new", "PILOT-X", False)
+        current = json.loads(path.read_text(encoding="utf-8"))
+        self.assertEqual(current["agent_id"], "agent-new")
+        attempts = list((queue.ATTEMPTS / "PILOT-X").glob("*-expired-*.json"))
+        self.assertEqual(len(attempts), 1)
+        archived = json.loads(attempts[0].read_text(encoding="utf-8"))
+        self.assertEqual(archived["previous_agent_id"], "agent-old")
+
+    def test_active_claim_cannot_be_reclaimed(self):
+        queue.CLAIMS.mkdir(parents=True, exist_ok=True)
+        active = {
+            "task_id": "P9-PLAYBACK-PILOT-X",
+            "agent_id": "agent-old",
+            "claimed_at": datetime.now(timezone.utc).isoformat(),
+            "lease_expires_at": (datetime.now(timezone.utc) + timedelta(hours=1)).isoformat(),
+            "case_id": "PILOT-X",
+            "live_id": "LIVE-X",
+            "missing_segment_ids": ["SEG-1"],
+        }
+        path = queue.CLAIMS / "P9-PLAYBACK-PILOT-X.json"
+        path.write_text(json.dumps(active), encoding="utf-8")
+        with self.assertRaises(SystemExit):
+            queue.reclaim_expired_claim("agent-new", "PILOT-X", False)
+        current = json.loads(path.read_text(encoding="utf-8"))
+        self.assertEqual(current["agent_id"], "agent-old")
 
 
 if __name__ == "__main__":

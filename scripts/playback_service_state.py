@@ -179,6 +179,24 @@ def pending_acceptances() -> tuple[list[Path], list[str]]:
     for path in sorted(ACCEPTANCE_ROOT.rglob("*.json")):
         try:
             acceptance = load_object(path)
+            case_id = str(acceptance.get("case_id") or "")
+            live_id = str(acceptance.get("live_id") or "")
+            segment_id = str(acceptance.get("segment_id") or "")
+            accepted_by = str(acceptance.get("accepted_by") or "")
+            if all((case_id, live_id, segment_id, accepted_by)):
+                claim_path = CLAIM_ROOT / f"P9-PLAYBACK-{case_id}.json"
+                if not claim_path.exists():
+                    continue
+                claim = load_object(claim_path)
+                if (
+                    str(claim.get("agent_id") or "") != accepted_by
+                    or str(claim.get("case_id") or "") != case_id
+                    or str(claim.get("live_id") or "") != live_id
+                    or segment_id not in {str(value) for value in (claim.get("missing_segment_ids") or [])}
+                ):
+                    # Acceptance files are durable history. Once a lease is reclaimed, an old
+                    # owner's unprocessed acceptance must not poison every future service run.
+                    continue
             audit_path = audit_path_for(acceptance)
             if audit_path.exists():
                 continue

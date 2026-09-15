@@ -43,6 +43,64 @@ def run(cmd: list[str], *, cwd: Path | None = None) -> subprocess.CompletedProce
     )
 
 
+def probe_media(path: Path) -> tuple[int, dict, str]:
+    process = run([
+        "ffprobe", "-v", "error", "-show_entries",
+        "format=duration,size:stream=index,codec_type,codec_name,sample_rate,channels",
+        "-of", "json", str(path),
+    ])
+    payload: dict = {}
+    if process.returncode == 0:
+        try:
+            parsed = json.loads(process.stdout or "{}")
+            if isinstance(parsed, dict):
+                payload = parsed
+        except json.JSONDecodeError:
+            return 1, {}, "ffprobe returned invalid JSON"
+    return process.returncode, payload, process.stderr[-2000:]
+
+
+def audio_probe_summary(path: Path) -> dict:
+    rc, probe, stderr = probe_media(path)
+    streams = probe.get("streams") if isinstance(probe, dict) else []
+    audio_streams = [
+        stream for stream in streams or []
+        if isinstance(stream, dict) and stream.get("codec_type") == "audio"
+    ]
+    try:
+        duration = float((probe.get("format") or {}).get("duration"))
+    except (TypeError, ValueError):
+        duration = None
+    return {
+        "probe_returncode": rc,
+        "probe_stderr_tail": stderr,
+        "has_audio_stream": bool(audio_streams),
+        "audio_streams": audio_streams,
+        "duration_sec": duration,
+    }
+
+
+VOLUME_RE = re.compile(r"(mean_volume|max_volume):\s*(-?inf|-?[0-9.]+)\s*dB", re.I)
+
+
+def measure_audio_activity(path: Path) -> dict:
+    process = run([
+        "ffmpeg", "-v", "info", "-i", str(path), "-af", "volumedetect",
+        "-f", "null", "-",
+    ])
+    values: dict[str, float | None] = {}
+    for key, raw in VOLUME_RE.findall(process.stderr or ""):
+        values[key.lower()] = None if raw.lower() == "-inf" else float(raw)
+    maximum = values.get("max_volume")
+    return {
+        "returncode": process.returncode,
+        "mean_volume_db": values.get("mean_volume"),
+        "max_volume_db": maximum,
+        "non_silent": maximum is not None and maximum > -60.0,
+        "stderr_tail": process.stderr[-2000:] if process.returncode != 0 else "",
+    }
+
+
 def sha256_file(path: Path) -> str:
     digest = hashlib.sha256()
     with path.open("rb") as fh:
@@ -305,7 +363,9 @@ def run_optional_smolvlm(clip: Path, temp_dir: Path, enabled: bool) -> dict:
 
 
 def build_markdown(evidence: dict) -> str:
-    match = evidence.get("audio_asr", {}).get("best_match") or {}
+    audio_asr = evidence.get("audio_asr", {})
+    extraction = evidence.get("audio_extraction", {})
+    match = audio_asr.get("best_match") or {}
     frames = evidence.get("visual_evidence", {}).get("frames") or []
     lines = [
         f"# Playback Evidence — {evidence['segment_id']}", "",
@@ -319,6 +379,12 @@ def build_markdown(evidence: dict) -> str:
         f"- Bundle ID: `{evidence['bundle_id']}`", "",
         "## Target text", "", evidence.get("target_text") or "(none)", "",
         "## Decoded-audio ASR match", "",
+        f"- Audio extraction return code: `{extraction.get('returncode')}`",
+        f"- WAV exists/bytes/duration: `{extraction.get('wav_exists')}` / `{extraction.get('wav_size_bytes')}` / `{extraction.get('duration_sec')}`",
+        f"- Audio activity detected: `{(extraction.get('activity') or {}).get('non_silent')}`",
+        f"- Whisper status: `{audio_asr.get('status')}`",
+        f"- Whisper invoked/return code/entries: `{audio_asr.get('invoked')}` / `{audio_asr.get('process_returncode')}` / `{audio_asr.get('parsed_entry_count', len(audio_asr.get('entries') or []))}`",
+        "",
     ]
     if match:
         lines.extend([
@@ -345,7 +411,7 @@ def build_markdown(evidence: dict) -> str:
     lines.extend([
         "", "## Agent decision rule", "",
         "This evidence was produced from decoded media bytes. It is **not yet a Pilot-60 qualifying record**.",
-        "A worker may submit a playback acceptance only after reading this evidence and confirming that the ASR/visual evidence matches the canonical target content.",
+        "A worker may submit a playback acceptance only when status is `ready_for_agent_review`, after reading this evidence and confirming that the decoded-audio ASR matches the canonical target content. Visual evidence is supplemental only.",
     ])
     return "\n".join(lines) + "\n"
 
@@ -480,6 +546,75 @@ def process_request(path: Path, *, force: bool = False) -> Path:
         "ffmpeg", "-y", "-v", "error", "-i", str(clip), "-vn",
         "-ar", "16000", "-ac", "1", "-c:a", "pcm_s16le", str(audio),
     ])
+    audio_probe = audio_probe_summary(audio) if audio.exists() else {
+        "probe_returncode": None,
+        "probe_stderr_tail": "audio WAV was not created",
+        "has_audio_stream": False,
+        "audio_streams": [],
+        "duration_sec": None,
+    }
+    audio_activity = measure_audio_activity(audio) if (
+        audio_proc.returncode == 0
+        and audio.exists()
+        and audio_probe.get("has_audio_stream")
+    ) else {
+        "returncode": None,
+        "mean_volume_db": None,
+        "max_volume_db": None,
+        "non_silent": False,
+        "stderr_tail": "audio activity was not measured because extraction/probe failed",
+    }
+    audio_extraction = {
+        "returncode": audio_proc.returncode,
+        "stderr_tail": audio_proc.stderr[-2000:],
+        "wav_exists": audio.exists(),
+        "wav_size_bytes": audio.stat().st_size if audio.exists() else 0,
+        **audio_probe,
+        "activity": audio_activity,
+    }
+    audio_usable = bool(
+        audio_proc.returncode == 0
+        and audio.exists()
+        and audio.stat().st_size > 44
+        and audio_probe.get("has_audio_stream")
+        and isinstance(audio_probe.get("duration_sec"), (int, float))
+        and float(audio_probe["duration_sec"]) > 0.1
+    )
+    if not audio_usable:
+        failed = {
+            "project": "Miles-Guo_public_archive", "evidence_version": EVIDENCE_VERSION,
+            "status": "blocked_media_decode", **ids,
+            "task_id": f"P9-PLAYBACK-{case_id}",
+            "request_ref": safe_rel(path), "requested_by": request.get("requested_by"),
+            "media_url": media_url, "expected_start_sec": expected,
+            "decode_start_sec": float(decode.get("decode_start_sec", expected)),
+            "decode_end_sec": float(decode.get("decode_start_sec", expected)) + float(decode.get("decode_window_sec", window)),
+            "decode_window_sec": float(decode.get("decode_window_sec", window)),
+            "decode_resolver": (decode.get("resolution") or {}).get("resolver"),
+            "decode_failure_stage": "audio_extract",
+            "playback_decode_verified": False,
+            "repository_content_inspection": False,
+            "audio_extraction": audio_extraction,
+            "audio_asr": {
+                "engine": "whisper.cpp", "status": "not_run_audio_extract_failed",
+                "invoked": False, "entries": [], "best_match": None,
+                "process_returncode": None,
+            },
+            "visual_evidence": {"frames": []},
+            "agent_acceptance_required": False,
+            "counts_toward_pilot_60": False,
+            "generated_at": utc_now(),
+        }
+        failed["bundle_id"] = hashlib.sha256(
+            json.dumps(failed, ensure_ascii=False, sort_keys=True).encode("utf-8")
+        ).hexdigest()
+        evidence_path.write_text(json.dumps(failed, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+        (out_dir / "evidence.md").write_text(build_markdown({
+            **failed,
+            "target_text": segment.get("text_curated") or segment.get("text_asr") or segment.get("text_search") or "",
+        }), encoding="utf-8")
+        print(f"Blocked audio evidence written: {safe_rel(evidence_path)}")
+        return evidence_path
 
     whisper_cli = os.environ.get("WHISPER_CLI", "whisper-cli")
     whisper_model = os.environ.get("WHISPER_MODEL", "")
@@ -498,6 +633,16 @@ def process_request(path: Path, *, force: bool = False) -> Path:
             "--no-prints",
         ])
     entries = parse_srt(srt_path)
+    if whisper_proc is None:
+        whisper_status = "not_run_runtime_unavailable"
+    elif whisper_proc.returncode != 0:
+        whisper_status = "failed"
+    elif not srt_path.exists():
+        whisper_status = "completed_without_srt"
+    elif not entries:
+        whisper_status = "completed_no_entries"
+    else:
+        whisper_status = "completed"
     target_text = str(segment.get("text_curated") or segment.get("text_asr") or segment.get("text_search") or "")
     match = best_asr_match(entries, target_text, segment.get("text_search"))
     decode_start = float(decode.get("decode_start_sec", expected))
@@ -510,23 +655,23 @@ def process_request(path: Path, *, force: bool = False) -> Path:
         clip, temp_dir,
         bool(request.get("visual_mode") == "smolvlm2_optional" and os.environ.get("ENABLE_SMOLVLM") == "1"),
     )
-    candidates: list[tuple[str, dict]] = []
-    if match:
-        candidates.append(("audio_asr", match))
-    if visual_match:
-        candidates.append(("frame_ocr", visual_match))
-    candidate_method, candidate = max(
-        candidates, key=lambda item: float(item[1].get("score", 0.0))
-    ) if candidates else (None, None)
+    # Keep visual evidence independent: a stronger OCR score must neither promote a
+    # visual-only result nor suppress an otherwise qualifying decoded-audio match.
+    candidate_method = "audio_asr" if match else None
+    candidate = match
     candidate_score = float((candidate or {}).get("score", 0.0))
-    if candidate_method == "frame_ocr":
-        observed = round(float(candidate["absolute_sec"]), 3)
-    elif candidate_method == "audio_asr":
+    if candidate_method == "audio_asr":
         observed = round(decode_start + float(candidate["local_start_sec"]), 3)
     else:
         observed = None
     timing_error = round(observed - expected, 3) if observed is not None else None
-    candidate_match = bool(candidate and candidate_score >= MIN_AGENT_REVIEW_SCORE)
+    # Audio is the primary ordinary-Agent evidence path for this speech archive. OCR/visual
+    # evidence remains useful context, but must never qualify a segment by itself.
+    candidate_match = bool(
+        candidate
+        and candidate_method == "audio_asr"
+        and candidate_score >= MIN_AGENT_REVIEW_SCORE
+    )
     status = "ready_for_agent_review" if candidate_match else "needs_manual_or_wider_review"
 
     audio_rows = [{
@@ -548,10 +693,17 @@ def process_request(path: Path, *, force: bool = False) -> Path:
         "inspection_engine": "github-actions+ffmpeg+whisper.cpp+frame-ocr",
         "audio_asr": {
             "engine": "whisper.cpp", "model": os.path.basename(whisper_model) if whisper_model else None,
+            "status": whisper_status,
+            "cli_available": whisper_available,
+            "model_available": bool(whisper_model and Path(whisper_model).is_file()),
+            "invoked": whisper_proc is not None,
             "entries": audio_rows, "best_match": match,
             "process_returncode": None if whisper_proc is None else whisper_proc.returncode,
             "stderr_tail": "" if whisper_proc is None else whisper_proc.stderr[-2000:],
+            "output_srt_exists": srt_path.exists(),
+            "parsed_entry_count": len(entries),
         },
+        "audio_extraction": audio_extraction,
         "visual_evidence": {"frames": frames, "best_match": visual_match, "smolvlm": smolvlm},
         "candidate_match_method": candidate_method,
         "candidate_match_score": round(candidate_score, 6),

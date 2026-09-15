@@ -16,6 +16,9 @@ PROBE_TIMEOUT_SEC = 60
 DECODE_TIMEOUT_SEC = 180
 FRAME_TIMEOUT_SEC = 60
 TIMEOUT_RETURN_CODE = 124
+YTDLP_AUDIO_FORMAT_SELECTOR = (
+    "best[acodec!=none][vcodec!=none]/bestaudio[acodec!=none]"
+)
 GETTR_STREAM_RE = re.compile(r"^https?://(?:www\.)?gettr\.com/streaming/([a-z0-9]+)(?:[/?#].*)?$", re.I)
 ODYSEE_RE = re.compile(r"^https?://(?:www\.)?odysee\.com/(.+)$", re.I)
 ODYSEE_PROXY_URL = "https://api.na-backend.odysee.com/api/v1/proxy?m=get"
@@ -258,7 +261,10 @@ def resolve_media(source, *, allow_archive=True):
         )
 
     if source.startswith(("http://", "https://")) and shutil.which("yt-dlp"):
-        rc, out, err = run(["yt-dlp", "-g", "--no-playlist", source], timeout_sec=RESOLVE_TIMEOUT_SEC)
+        rc, out, err = run([
+            "yt-dlp", "-f", YTDLP_AUDIO_FORMAT_SELECTOR,
+            "-g", "--no-playlist", source,
+        ], timeout_sec=RESOLVE_TIMEOUT_SEC)
         if rc == 0 and out.strip():
             resolution = {"resolver": "yt-dlp", "source": source, "yt_dlp_returncode": rc}
             if gettr_resolution:
@@ -327,6 +333,20 @@ def _decoded_clip_is_usable(probe):
     return True, ""
 
 
+def _decoded_clip_is_asr_usable(probe):
+    """Require a real, non-empty audio stream before promoting a clip to ASR."""
+    usable, problem = _decoded_clip_is_usable(probe)
+    if not usable:
+        return usable, problem
+    streams = probe.get("streams") if isinstance(probe, dict) else []
+    if not any(
+        isinstance(stream, dict) and stream.get("codec_type") == "audio"
+        for stream in streams
+    ):
+        return False, "decoded clip contains no audio stream required for ASR"
+    return True, ""
+
+
 def main():
     parser = argparse.ArgumentParser(description="Decode real media around an expected audit timestamp.")
     parser.add_argument("--media", required=True)
@@ -360,14 +380,20 @@ def main():
         evidence_path.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
         print(json.dumps(payload, ensure_ascii=False, indent=2))
         return 3
-    decode_rc, _, decode_err = run(["ffmpeg", "-y", "-v", "error", "-ss", f"{decode_start:.3f}", "-i", resolved, "-t", f"{args.window:.3f}", "-c:v", "libx264", "-preset", "ultrafast", "-c:a", "aac", str(clip_path)], timeout_sec=DECODE_TIMEOUT_SEC)
+    decode_rc, _, decode_err = run([
+        "ffmpeg", "-y", "-v", "error", "-ss", f"{decode_start:.3f}",
+        "-i", resolved, "-t", f"{args.window:.3f}",
+        "-map", "0:v:0?", "-map", "0:a:0?",
+        "-c:v", "libx264", "-preset", "ultrafast", "-c:a", "aac",
+        str(clip_path),
+    ], timeout_sec=DECODE_TIMEOUT_SEC)
     if decode_rc != 0:
         payload = {"ok": False, "stage": "decode", "resolution": resolution, "media_source": args.media, "expected_start_sec": args.start, "decode_start_sec": decode_start, "decode_window_sec": args.window, "probe": probe, "stderr": decode_err[-4000:], "timed_out": decode_rc == TIMEOUT_RETURN_CODE, "timeout_sec": DECODE_TIMEOUT_SEC if decode_rc == TIMEOUT_RETURN_CODE else None}
         evidence_path.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
         print(json.dumps(payload, ensure_ascii=False, indent=2))
         return 4
     clip_probe_rc, clip_probe, clip_probe_err = _probe(clip_path)
-    clip_ok, clip_problem = _decoded_clip_is_usable(clip_probe)
+    clip_ok, clip_problem = _decoded_clip_is_asr_usable(clip_probe)
     if clip_probe_rc != 0 or not clip_ok:
         diagnostic = clip_probe_err[-4000:] if clip_probe_rc != 0 else clip_problem
         payload = {"ok": False, "stage": "verify_decoded_clip", "resolution": resolution, "media_source": args.media, "expected_start_sec": args.start, "decode_start_sec": decode_start, "decode_window_sec": args.window, "probe": probe, "decoded_clip_probe": clip_probe, "stderr": diagnostic, "timed_out": clip_probe_rc == TIMEOUT_RETURN_CODE, "timeout_sec": PROBE_TIMEOUT_SEC if clip_probe_rc == TIMEOUT_RETURN_CODE else None}
@@ -375,7 +401,7 @@ def main():
         print(json.dumps(payload, ensure_ascii=False, indent=2))
         return 5
     frame_rc, _, _ = run(["ffmpeg", "-y", "-v", "error", "-ss", f"{args.start:.3f}", "-i", resolved, "-frames:v", "1", str(frame_path)], timeout_sec=FRAME_TIMEOUT_SEC)
-    payload = {"ok": True, "media_source": args.media, "resolution": resolution, "expected_start_sec": args.start, "requested_start_sec": args.start, "decode_start_sec": decode_start, "decode_end_sec": decode_end, "pre_roll_sec": actual_pre_roll, "decode_window_sec": args.window, "probe": probe, "decoded_clip_probe": clip_probe, "clip_path": str(clip_path), "frame_path": str(frame_path) if frame_rc == 0 else None, "playback_decode_verified": True, "content_timing_verified": False, "note": "Real media decoded into a locally re-probed audio/video clip; reviewer must locate actual target content and record signed timing error before qualification."}
+    payload = {"ok": True, "media_source": args.media, "resolution": resolution, "expected_start_sec": args.start, "requested_start_sec": args.start, "decode_start_sec": decode_start, "decode_end_sec": decode_end, "pre_roll_sec": actual_pre_roll, "decode_window_sec": args.window, "probe": probe, "decoded_clip_probe": clip_probe, "decoded_clip_has_audio": True, "clip_path": str(clip_path), "frame_path": str(frame_path) if frame_rc == 0 else None, "playback_decode_verified": True, "content_timing_verified": False, "note": "Real media decoded into a locally re-probed clip with an audio stream suitable for ASR; reviewer must locate actual target content and record signed timing error before qualification."}
     evidence_path.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
     print(json.dumps(payload, ensure_ascii=False, indent=2))
     return 0

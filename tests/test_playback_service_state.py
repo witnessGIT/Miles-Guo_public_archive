@@ -164,6 +164,39 @@ class PlaybackServiceStateTest(unittest.TestCase):
         self.assertEqual(pending, [request_path])
         self.assertEqual(problems, [])
 
+    def test_acceptance_from_replaced_claim_owner_is_retired(self):
+        acceptance = {
+            "case_id": "PILOT-X", "live_id": "LIVE-X", "segment_id": "SEG-1",
+            "accepted_by": "agent-old",
+        }
+        claim = {
+            "task_id": "P9-PLAYBACK-PILOT-X", "case_id": "PILOT-X",
+            "live_id": "LIVE-X", "agent_id": "agent-new",
+            "missing_segment_ids": ["SEG-1"],
+        }
+        self.write_json(state.ACCEPTANCE_ROOT / "PILOT-X" / "SEG-1.json", acceptance)
+        self.write_json(state.CLAIM_ROOT / "P9-PLAYBACK-PILOT-X.json", claim)
+        pending, problems = state.pending_acceptances()
+        self.assertEqual(pending, [])
+        self.assertEqual(problems, [])
+
+    def test_acceptance_from_active_claim_owner_is_pending(self):
+        acceptance = {
+            "case_id": "PILOT-X", "live_id": "LIVE-X", "segment_id": "SEG-1",
+            "accepted_by": "agent-a",
+        }
+        claim = {
+            "task_id": "P9-PLAYBACK-PILOT-X", "case_id": "PILOT-X",
+            "live_id": "LIVE-X", "agent_id": "agent-a",
+            "missing_segment_ids": ["SEG-1"],
+        }
+        path = state.ACCEPTANCE_ROOT / "PILOT-X" / "SEG-1.json"
+        self.write_json(path, acceptance)
+        self.write_json(state.CLAIM_ROOT / "P9-PLAYBACK-PILOT-X.json", claim)
+        pending, problems = state.pending_acceptances()
+        self.assertEqual(pending, [path])
+        self.assertEqual(problems, [])
+
 
 if __name__ == "__main__":
     unittest.main()

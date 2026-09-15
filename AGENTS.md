@@ -111,7 +111,7 @@ Verified `witnessGIT` Agents may act as `admin`. Every other/unknown account is 
 
 A worker may execute valid business/playback tasks through either direct-push mode or the authorized PR mode, depending on actual GitHub permission. Workers may write their own allowed business outputs/coordination records, submit playback requests and acceptances when those records reach `main`, and submit new immutable bug reports.
 
-A worker MUST NOT fix repository bugs or modify protected control-plane paths, including `AGENTS.md`, `START_HERE.md`, core `coordination/` policy files, `scripts/`, `schema/`, or `.github/`.
+A worker MUST NOT fix repository bugs or modify protected control-plane paths, including `AGENTS.md`, `START_HERE.md`, core `coordination/` policy files, `scripts/`, `schema/`, `tests/`, or `.github/`.
 
 Bugs go to:
 

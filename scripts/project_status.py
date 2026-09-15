@@ -125,7 +125,9 @@ def build_status(content_inspection_capable: bool, role: str = "worker") -> dict
     tools = playback_queue.capability_status()
     playback_open = [row for row in playback_rows if row.get("missing_segment_ids") and not row.get("completed")]
     playback_unclaimed = [row for row in playback_open if not row.get("claim_exists")]
-    playback_claimed = [row for row in playback_open if row.get("claim_exists")]
+    playback_expired = [row for row in playback_open if row.get("claim_exists") and row.get("claim_expired")]
+    playback_claimed = [row for row in playback_open if row.get("claim_exists") and not row.get("claim_expired")]
+    playback_claimable = [*playback_unclaimed, *playback_expired]
 
     open_bug_reports, invalid_bug_reports = load_admin_bug_queue()
     admin_queue_has_work = bool(open_bug_reports or invalid_bug_reports)
@@ -151,7 +153,7 @@ def build_status(content_inspection_capable: bool, role: str = "worker") -> dict
     playback_gate_action_available = bool(pilot60_pass and not playback_gate_completed)
 
     session_non_playback_work = bool(ordinary or admin_work_available or playback_gate_action_available)
-    session_playback_work = bool(playback_execution_available and playback_unclaimed)
+    session_playback_work = bool(playback_execution_available and playback_claimable)
     session_work_available = bool(session_non_playback_work or session_playback_work)
 
     repository_has_work = bool(ordinary or playback_open or admin_queue_has_work or playback_gate_action_available)
@@ -159,7 +161,7 @@ def build_status(content_inspection_capable: bool, role: str = "worker") -> dict
 
     host_stop = bool(
         not session_work_available
-        and playback_unclaimed
+        and playback_claimable
         and not playback_execution_available
         and not pilot60_pass
         and not playback_gate_completed
@@ -168,12 +170,12 @@ def build_status(content_inspection_capable: bool, role: str = "worker") -> dict
         not session_work_available
         and admin_queue_has_work
         and role != "admin"
-        and not playback_unclaimed
+        and not playback_claimable
     )
     wait_for_active_claims = bool(
         not session_work_available
         and playback_claimed
-        and not playback_unclaimed
+        and not playback_claimable
         and not repository_no_eligible_work
     )
 
@@ -215,6 +217,8 @@ def build_status(content_inspection_capable: bool, role: str = "worker") -> dict
         recommended_action = "CLAIM_GATE_OR_REPORT_TASK"
     elif ordinary_business:
         recommended_action = "CLAIM_ORDINARY_BUSINESS_TASK"
+    elif playback_expired and not playback_unclaimed and repository_playback_service:
+        recommended_action = "RECLAIM_EXPIRED_PLAYBACK_TASK"
     elif session_playback_work and repository_playback_service:
         recommended_action = "CLAIM_REAL_PLAYBACK_TASK_AND_REQUEST_REPOSITORY_EVIDENCE"
     elif session_playback_work:
@@ -260,8 +264,10 @@ def build_status(content_inspection_capable: bool, role: str = "worker") -> dict
             "open_case_count": len(playback_open),
             "unclaimed_case_count": len(playback_unclaimed),
             "claimed_case_count": len(playback_claimed),
+            "expired_reclaimable_case_count": len(playback_expired),
+            "expired_reclaimable_task_ids": [row.get("task_id") for row in playback_expired],
             "open_task_ids": [row.get("task_id") for row in playback_open],
-            "claimable_by_this_runtime": bool(playback_execution_available and playback_unclaimed),
+            "claimable_by_this_runtime": bool(playback_execution_available and playback_claimable),
             "preferred_execution_mode": "repository_evidence_service_v1" if repository_playback_service else "local_manual_v1",
         },
         "admin_queue": {
@@ -325,7 +331,8 @@ def print_human(status: dict) -> None:
     playback = status["playback_queue"]
     print(
         f"Playback queue: {playback['open_case_count']} open "
-        f"({playback['unclaimed_case_count']} unclaimed, {playback['claimed_case_count']} claimed), "
+        f"({playback['unclaimed_case_count']} unclaimed, {playback['claimed_case_count']} active, "
+        f"{playback['expired_reclaimable_case_count']} expired-reclaimable), "
         f"mode={playback['preferred_execution_mode']}"
     )
     print(

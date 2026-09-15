@@ -46,7 +46,7 @@ jobs:
           echo "Changed files:"
           printf '%s\n' "$changed"
 
-          protected_re='^(AGENTS\.md|START_HERE\.md|coordination/(AGENT_PERMISSIONS\.json|AGENT_PERMISSIONS\.md|CONTINUOUS_WORKER_V2\.md|CLAIM_PROTOCOL_V2\.md|WORKFLOW\.json|WORK_QUEUE\.jsonl|README\.md)|scripts/|schema/|\.github/|data/playback_evidence/|data/playback_audits/)'
+          protected_re='^(AGENTS\.md|START_HERE\.md|coordination/(AGENT_PERMISSIONS\.json|AGENT_PERMISSIONS\.md|CONTINUOUS_WORKER_V2\.md|CLAIM_PROTOCOL_V2\.md|WORKFLOW\.json|WORK_QUEUE\.jsonl|README\.md)|scripts/|schema/|tests/|\.github/|data/playback_evidence/|data/playback_audits/)'
           violations="$(printf '%s\n' "$changed" | grep -E "$protected_re" || true)"
 
           if [[ -n "$violations" ]]; then

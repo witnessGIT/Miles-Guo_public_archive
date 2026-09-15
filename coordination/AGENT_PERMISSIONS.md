@@ -62,7 +62,7 @@ A worker may:
 
 A worker MUST NOT:
 
-- patch `scripts/`, `schema/`, `.github/`, task orchestration, workflow rules, permissions, or other protected control-plane files;
+- patch `scripts/`, `schema/`, `tests/`, `.github/`, task orchestration, workflow rules, permissions, or other protected control-plane files;
 - edit the Playback Evidence Service implementation to make its own request pass;
 - manufacture or directly rewrite service-generated `data/playback_evidence/`;
 - accept evidence it has not read;

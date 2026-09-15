@@ -148,8 +148,28 @@ A worker may stop at the claim boundary only when one of these is true:
 
 A lost claim race or moving-branch `409` is not on this list.
 
+## Renewable Playback claim leases
+
+New `P9-PLAYBACK-*` claims contain a six-hour renewable lease. Successful request and acceptance
+commands renew it automatically. A continuing chat Agent can explicitly renew it with:
+
+```bash
+python scripts/playback_queue.py --heartbeat <CASE_ID> --agent-id <same-agent-id>
+```
+
+Claims created before lease support receive a conservative 24-hour lease measured from
+`claimed_at`. An expired claim is no longer an active reservation, but it may not be overwritten
+or deleted manually. After refreshing `main`, an ordinary worker may execute:
+
+```bash
+python scripts/playback_queue.py --reclaim-expired <CASE_ID> --agent-id <new-agent-id>
+```
+
+The command must verify expiration, preserve the old ownership/timestamps under
+`coordination/playback_attempts/`, and create a fresh claim lease in the same commit. A claim whose
+lease has not expired remains protected. Push races are handled by the normal refresh/retry rules.
+
 ## Compatibility
 
-This protocol does not modify, delete, rename, or take over any existing valid claim.
-
-It applies to new claim attempts only.
+This protocol never takes over an active claim. The only takeover path is the bounded,
+evidence-preserving expired-lease command above.

@@ -98,7 +98,7 @@ worker = execute claimed/reserved project tasks + use repository services + repo
 admin  = worker capabilities + repair/maintain project machinery
 ```
 
-Workers MUST NOT modify `scripts/`, `schema/`, `.github/`, workflow policy, permissions or other protected control-plane files. Bugs go to `coordination/bug_reports/` for an admin Agent. This restriction protects shared machinery; it does not require workers to wait for approval before ordinary archive work.
+Workers MUST NOT modify `scripts/`, `schema/`, `tests/`, `.github/`, workflow policy, permissions or other protected control-plane files. Bugs go to `coordination/bug_reports/` for an admin Agent. This restriction protects shared machinery; it does not require workers to wait for approval before ordinary archive work.
 
 ## First status command
 
@@ -166,6 +166,12 @@ List/claim:
 python scripts/playback_queue.py --list
 python scripts/playback_queue.py --claim --agent-id agent-<UTC>-<random>
 ```
+
+Playback claims use a six-hour renewable lease so a terminated chat session cannot reserve a
+case forever. Every successful request/acceptance renews the lease. A continuing worker may run
+`python scripts/playback_queue.py --heartbeat <CASE_ID> --agent-id <same-agent-id>`. Another worker
+may use `--reclaim-expired <CASE_ID>` only after the repository reports the lease as expired; the
+old claim is preserved as an immutable attempt record before replacement.
 
 For each missing segment, choose a **public media URL already preserved in repository provenance** and submit the corresponding playback request. The GitHub Action `.github/workflows/playback-evidence-service.yml` validates identity/provenance, decodes real media, runs offline ASR/OCR and writes durable evidence. Evidence generation alone never counts toward Pilot-60.
 

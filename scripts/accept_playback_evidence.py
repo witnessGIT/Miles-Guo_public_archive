@@ -129,12 +129,13 @@ def process_acceptance(path: Path) -> Path:
     absolute = abs(signed)
 
     match_method = str(evidence.get("candidate_match_method") or "audio_asr")
-    if match_method == "frame_ocr":
-        match = (evidence.get("visual_evidence") or {}).get("best_match") or {}
-    elif match_method == "audio_asr":
+    if match_method == "audio_asr":
         match = (evidence.get("audio_asr") or {}).get("best_match") or {}
     else:
-        raise ValueError(f"unsupported candidate_match_method: {match_method!r}")
+        raise ValueError(
+            "ordinary-Agent playback acceptance requires decoded-audio ASR; "
+            f"candidate_match_method was {match_method!r}"
+        )
     score = float(evidence.get("candidate_match_score") or match.get("score") or 0.0)
     minimum = float(evidence.get("minimum_agent_review_score") or 1.0)
     if score < minimum:
@@ -160,7 +161,7 @@ def process_acceptance(path: Path) -> Path:
         "timing_error_sec": round(signed, 3),
         "absolute_timing_error_sec": round(absolute, 3),
         "media_url": str(evidence["media_url"]),
-        "observation_mode": "visual" if match_method == "frame_ocr" else ("audio" if not (evidence.get("visual_evidence") or {}).get("frames") else "both"),
+        "observation_mode": "audio" if not (evidence.get("visual_evidence") or {}).get("frames") else "both",
         "content_match": True,
         "content_observation": str(acceptance["content_observation"]),
         "playback_decode_verified": True,
@@ -188,7 +189,7 @@ def process_acceptance(path: Path) -> Path:
         "clip_sha256": evidence.get("temporary_clip_sha256"),
         "note": (
             "Qualifying v2 record produced only after GitHub Actions decoded real media, "
-            "repository ASR/OCR inspection located a review candidate inside the decoded window, "
+            "repository decoded-audio ASR located a review candidate inside the decoded window, "
             "durable textual/visual evidence was written to Git, and the active playback claim owner explicitly reviewed "
             "and accepted that exact evidence bundle."
         ),

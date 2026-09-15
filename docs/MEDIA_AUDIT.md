@@ -61,7 +61,12 @@ Tesseract OCR
 optional SmolVLM2-256M-Video-Instruct
 ```
 
-The audio path is primary because Pilot segments are mostly speech/text anchors. Visual analysis is supporting evidence and a fallback for ambiguity, not the sole timing oracle.
+The audio path is mandatory for ordinary-Agent qualification because Pilot segments are mostly speech/text anchors. Visual analysis is supporting evidence for context or synchronization and must not qualify a segment by itself.
+
+The service must durably distinguish audio extraction failure, Whisper not invoked, Whisper
+failure, successful Whisper execution with no entries, and successful parsed ASR. Evidence records
+include decoded audio-stream presence, FFmpeg return code, WAV existence/size/duration, an audio
+activity measurement, Whisper invocation/return code, SRT existence and parsed entry count.
 
 ## Claiming Playback work
 

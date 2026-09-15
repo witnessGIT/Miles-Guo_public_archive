@@ -6,7 +6,7 @@ import hashlib
 import json
 import shutil
 import subprocess
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 from playback_validation import (
@@ -29,10 +29,51 @@ SERVICE_WORKFLOW = ROOT / ".github" / "workflows" / "playback-evidence-service.y
 GATE_ID = "P9-PLAYBACK-GATE"
 ACTIVE_QUEUE_GENERATION = 2
 RETRYABLE_EVIDENCE_STATUSES = {"blocked_media_decode", "needs_manual_or_wider_review", "invalid"}
+CLAIM_LEASE_HOURS = 6
+LEGACY_CLAIM_LEASE_HOURS = 24
 
 
 def utc_now() -> str:
     return datetime.now(timezone.utc).isoformat()
+
+
+def _parse_utc(value: object) -> datetime | None:
+    if not isinstance(value, str) or not value.strip():
+        return None
+    try:
+        parsed = datetime.fromisoformat(value.strip().replace("Z", "+00:00"))
+    except ValueError:
+        return None
+    if parsed.tzinfo is None:
+        parsed = parsed.replace(tzinfo=timezone.utc)
+    return parsed.astimezone(timezone.utc)
+
+
+def claim_lease_expires_at(claim: dict) -> datetime | None:
+    explicit = _parse_utc(claim.get("lease_expires_at"))
+    if explicit is not None:
+        return explicit
+    claimed = _parse_utc(claim.get("claimed_at"))
+    if claimed is None:
+        return None
+    return claimed + timedelta(hours=LEGACY_CLAIM_LEASE_HOURS)
+
+
+def claim_is_expired(claim: dict, *, now: datetime | None = None) -> bool:
+    expires = claim_lease_expires_at(claim)
+    if expires is None:
+        return False
+    current = (now or datetime.now(timezone.utc)).astimezone(timezone.utc)
+    return current >= expires
+
+
+def _lease_fields(*, now: datetime | None = None) -> dict:
+    current = (now or datetime.now(timezone.utc)).astimezone(timezone.utc)
+    return {
+        "claim_lease_version": "playback-claim-lease-v1",
+        "last_heartbeat_at": current.isoformat(),
+        "lease_expires_at": (current + timedelta(hours=CLAIM_LEASE_HOURS)).isoformat(),
+    }
 
 
 def load_cases() -> list[str]:
@@ -127,6 +168,13 @@ def case_statuses() -> list[dict]:
         have = checked.get(case_id, set())
         missing = sorted(timed - have)
         task_id = f"P9-PLAYBACK-{case_id}"
+        claim_path = CLAIMS / f"{task_id}.json"
+        claim = None
+        if claim_path.exists():
+            try:
+                claim = json.loads(claim_path.read_text(encoding="utf-8"))
+            except (OSError, json.JSONDecodeError):
+                claim = {}
         rows.append(
             {
                 "task_id": task_id,
@@ -136,7 +184,14 @@ def case_statuses() -> list[dict]:
                 "qualifying_segments": len(timed & have),
                 "missing_segment_ids": missing,
                 "evidence_states": {segment_id: _evidence_state(case_id, segment_id) for segment_id in missing},
-                "claim_exists": (CLAIMS / f"{task_id}.json").exists(),
+                "claim_exists": claim_path.exists(),
+                "claim_expired": bool(claim is not None and claim_is_expired(claim)),
+                "claim_agent_id": claim.get("agent_id") if isinstance(claim, dict) else None,
+                "lease_expires_at": (
+                    claim_lease_expires_at(claim).isoformat()
+                    if isinstance(claim, dict) and claim_lease_expires_at(claim) is not None
+                    else None
+                ),
                 "completed": (COMPLETED / f"{task_id}.json").exists(),
                 "global_validation_problems": global_problems,
             }
@@ -193,7 +248,10 @@ def print_status() -> None:
     for row in case_statuses():
         if not row["missing_segment_ids"]:
             continue
-        state = "claimed" if row["claim_exists"] and not row["completed"] else "open"
+        if row["claim_exists"] and row.get("claim_expired") and not row["completed"]:
+            state = "expired-reclaimable"
+        else:
+            state = "claimed" if row["claim_exists"] and not row["completed"] else "open"
         evidence_ready = sum(1 for value in row["evidence_states"].values() if value == "ready_for_agent_review")
         print(
             f"  {row['task_id']} [{state}] live={row['live_id']} "
@@ -244,6 +302,7 @@ def claim_case(agent_id: str, requested_case: str | None, content_inspection_cap
         "repository_evidence_service": repository_capable,
         "local_runtime_tools": tools,
         "local_content_inspection_capable": bool(content_inspection_capable),
+        **_lease_fields(),
         "instructions": (
             "Preferred path: submit coordination/playback_requests/<CASE>/<SEGMENT>.json, "
             "let GitHub Actions decode real media and publish data/playback_evidence, read the "
@@ -270,6 +329,54 @@ def _owned_claim(agent_id: str, case_id: str) -> dict:
     if claim.get("agent_id") != agent_id:
         raise SystemExit(f"Claim belongs to {claim.get('agent_id')!r}, not {agent_id!r}")
     return claim
+
+
+def heartbeat_claim(agent_id: str, case_id: str) -> Path:
+    task_id = f"P9-PLAYBACK-{case_id}"
+    path = CLAIMS / f"{task_id}.json"
+    claim = _owned_claim(agent_id, case_id)
+    claim.update(_lease_fields())
+    path.write_text(json.dumps(claim, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    print(f"Renewed playback claim lease: {path.relative_to(ROOT)}")
+    print(f"Lease expires at: {claim['lease_expires_at']}")
+    return path
+
+
+def reclaim_expired_claim(agent_id: str, case_id: str, content_inspection_capable: bool) -> Path:
+    task_id = f"P9-PLAYBACK-{case_id}"
+    claim_path = CLAIMS / f"{task_id}.json"
+    if not claim_path.exists():
+        return claim_case(agent_id, case_id, content_inspection_capable)
+    previous = json.loads(claim_path.read_text(encoding="utf-8"))
+    if not claim_is_expired(previous):
+        raise SystemExit(
+            f"Claim is still active for {previous.get('agent_id')!r}; "
+            f"lease_expires_at={claim_lease_expires_at(previous)}"
+        )
+    stamp = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
+    out_dir = ATTEMPTS / case_id
+    out_dir.mkdir(parents=True, exist_ok=True)
+    archive = out_dir / f"{stamp}-expired-{hashlib.sha256(str(previous.get('agent_id')).encode()).hexdigest()[:8]}.json"
+    archive_payload = {
+        "task_id": task_id,
+        "case_id": case_id,
+        "attempt_type": "expired_claim_recovery",
+        "previous_agent_id": previous.get("agent_id"),
+        "previous_claimed_at": previous.get("claimed_at"),
+        "previous_lease_expires_at": (
+            claim_lease_expires_at(previous).isoformat()
+            if claim_lease_expires_at(previous) is not None else None
+        ),
+        "reclaimed_by": agent_id,
+        "reclaimed_at": utc_now(),
+        "counts_toward_pilot_60": False,
+        "note": "Expired claim was archived before a new ordinary-Agent lease was created.",
+    }
+    archive.write_text(json.dumps(archive_payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    claim_path.unlink()
+    new_claim = claim_case(agent_id, case_id, content_inspection_capable)
+    print(f"Archived expired claim: {archive.relative_to(ROOT)}")
+    return new_claim
 
 
 def request_segment(agent_id: str, case_id: str, segment_id: str, media_url: str, visual_mode: str) -> Path:
@@ -320,6 +427,7 @@ def request_segment(agent_id: str, case_id: str, segment_id: str, media_url: str
         "visual_mode": visual_mode,
     }
     out.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    heartbeat_claim(agent_id, case_id)
     action = "Updated" if request_revision > 1 else "Created"
     print(
         f"{action} playback request revision {request_revision}: "
@@ -358,6 +466,7 @@ def accept_segment(agent_id: str, case_id: str, segment_id: str, content_observa
         "content_observation": content_observation,
     }
     out.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    heartbeat_claim(agent_id, case_id)
     print(f"Created playback acceptance: {out.relative_to(ROOT)}")
     print("Commit/push it. GitHub Actions will create the qualifying v2 playback audit record.")
     return out
@@ -455,6 +564,8 @@ def main() -> int:
     parser = argparse.ArgumentParser(description="Manage retryable real-playback Pilot audit work.")
     parser.add_argument("--list", action="store_true")
     parser.add_argument("--claim", action="store_true")
+    parser.add_argument("--heartbeat", metavar="CASE_ID")
+    parser.add_argument("--reclaim-expired", metavar="CASE_ID")
     parser.add_argument("--finish", metavar="CASE_ID")
     parser.add_argument("--block", metavar="CASE_ID")
     parser.add_argument("--request", metavar="SEGMENT_ID")
@@ -475,6 +586,17 @@ def main() -> int:
         ),
     )
     args = parser.parse_args()
+
+    if args.heartbeat:
+        if not args.agent_id:
+            raise SystemExit("--heartbeat requires --agent-id")
+        heartbeat_claim(args.agent_id, args.heartbeat)
+        return 0
+    if args.reclaim_expired:
+        if not args.agent_id:
+            raise SystemExit("--reclaim-expired requires --agent-id")
+        reclaim_expired_claim(args.agent_id, args.reclaim_expired, args.content_inspection_capable)
+        return 0
 
     if args.seal_gate:
         if not args.agent_id:
