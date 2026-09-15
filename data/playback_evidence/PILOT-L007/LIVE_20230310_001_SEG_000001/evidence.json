@@ -1,170 +1,31 @@
 {
   "project": "Miles-Guo_public_archive",
   "evidence_version": "repository-playback-evidence-v1",
-  "status": "needs_manual_or_wider_review",
+  "status": "blocked_media_decode",
   "case_id": "PILOT-L007",
   "live_id": "LIVE_20230310_001",
   "segment_id": "LIVE_20230310_001_SEG_000001",
-  "task_id": "P9-PLAYBACK-PILOT-L007",
   "request_ref": "coordination/playback_requests/PILOT-L007/LIVE_20230310_001_SEG_000001.json",
   "requested_by": "agent-20260915T144850Z-gpt56sol",
-  "media_url": "https://gettr.com/post/p2b18ew21e7",
-  "target_text": "共产党的两会又选出了…习近平当了共产党的所谓的党魁，习家军真正的头把交椅。",
-  "target_text_search": "共产党的两会 习近平 党魁 习家军",
+  "media_url": "https://rumble.com/v5b2sws-20230310-1.html",
   "expected_start_sec": 17.0,
-  "decode_request_start_sec": 17.0,
-  "decode_start_sec": 7.0,
-  "decode_end_sec": 31.0,
-  "decode_window_sec": 24.0,
-  "decode_resolver": "yt-dlp",
-  "playback_decode_verified": true,
-  "repository_content_inspection": true,
-  "inspection_engine": "github-actions+ffmpeg+whisper.cpp+frame-ocr",
-  "audio_asr": {
-    "engine": "whisper.cpp",
-    "model": "ggml-small.bin",
-    "status": "completed",
-    "cli_available": true,
-    "model_available": true,
-    "invoked": true,
-    "entries": [
-      {
-        "local_start_sec": 0.0,
-        "local_end_sec": 2.0,
-        "absolute_start_sec": 7.0,
-        "absolute_end_sec": 9.0,
-        "text": "你没见谁啊?"
-      },
-      {
-        "local_start_sec": 10.5,
-        "local_end_sec": 11.5,
-        "absolute_start_sec": 17.5,
-        "absolute_end_sec": 18.5,
-        "text": "3月12号"
-      },
-      {
-        "local_start_sec": 12.5,
-        "local_end_sec": 14.5,
-        "absolute_start_sec": 19.5,
-        "absolute_end_sec": 21.5,
-        "text": "哎呀,我的妈呀,共产党的两会"
-      },
-      {
-        "local_start_sec": 14.5,
-        "local_end_sec": 20.7,
-        "absolute_start_sec": 21.5,
-        "absolute_end_sec": 27.7,
-        "text": "又选出了伟大的宇宙中最强大的习死皇同志"
-      },
-      {
-        "local_start_sec": 20.7,
-        "local_end_sec": 25.5,
-        "absolute_start_sec": 27.7,
-        "absolute_end_sec": 32.5,
-        "text": "习近平当了共产党的两会"
-      }
-    ],
-    "best_match": {
-      "local_start_sec": 12.5,
-      "local_end_sec": 25.5,
-      "text": "哎呀,我的妈呀,共产党的两会又选出了伟大的宇宙中最强大的习死皇同志习近平当了共产党的两会",
-      "similarity": 0.5,
-      "exact_target_substring": false,
-      "keyword_coverage": 0.5,
-      "score": 0.5,
-      "entry_count": 3
-    },
-    "process_returncode": 0,
-    "stderr_tail": "read_audio_data: reading audio data from '/home/runner/work/Miles-Guo_public_archive/Miles-Guo_public_archive/cache/playback_evidence/PILOT-L007/LIVE_20230310_001_SEG_000001/audio_16k_mono.wav' ...\nread_audio_data: trying to decode with miniaudio\noutput_srt: saving output to '/home/runner/work/Miles-Guo_public_archive/Miles-Guo_public_archive/cache/playback_evidence/PILOT-L007/LIVE_20230310_001_SEG_000001/whisper.srt'\n",
-    "output_srt_exists": true,
-    "parsed_entry_count": 5
-  },
-  "audio_extraction": {
-    "returncode": 0,
-    "stderr_tail": "",
-    "wav_exists": true,
-    "wav_size_bytes": 768078,
-    "probe_returncode": 0,
-    "probe_stderr_tail": "",
-    "has_audio_stream": true,
-    "audio_streams": [
-      {
-        "index": 0,
-        "codec_name": "pcm_s16le",
-        "codec_type": "audio",
-        "sample_rate": "16000",
-        "channels": 1
-      }
-    ],
-    "duration_sec": 24.0,
-    "activity": {
-      "returncode": 0,
-      "mean_volume_db": -23.3,
-      "max_volume_db": -1.8,
-      "non_silent": true,
-      "stderr_tail": ""
-    }
-  },
-  "visual_evidence": {
-    "frames": [
-      {
-        "local_sec": 2.0,
-        "absolute_sec": 9.0,
-        "sha256": "7a15712b71136be15168262e3a728f04bc035dcc7fa5f31da6bfc314145b012b",
-        "ocr_text": "Iii s\n\n11   |           ¥\n«|\n\nAN"
-      },
-      {
-        "local_sec": 6.0,
-        "absolute_sec": 13.0,
-        "sha256": "8aafc8323c54af617e88a0ba99ef27327f20fc275e6d639dfd28eabf9d72be28",
-        "ocr_text": "NN a       <\n|            iy\n.        ei. /\n}  i\nAN        -\n‘               »            ="
-      },
-      {
-        "local_sec": 10.0,
-        "absolute_sec": 17.0,
-        "sha256": "e34d0f9eef5645526edad297271a562cc73def03e29c2988affb8a71fba82be7",
-        "ocr_text": "by\n= |\n|"
-      },
-      {
-        "local_sec": 14.0,
-        "absolute_sec": 21.0,
-        "sha256": "8c8451047876db5464e8149a5c2e5bb964ac8a08f2b81886d32745a276d7063c",
-        "ocr_text": "Wie      全\n                      _ as)\n.         |                              7     J\ni                              So Se.\n\n’                          ad    了 a y\n\n“tt                                                A 4)      ;\n\nrt  .\n\nA  .                                                                ="
-      },
-      {
-        "local_sec": 18.0,
-        "absolute_sec": 25.0,
-        "sha256": "1e1b085d9deba43892ddd1196a8a78a84e0f6d90ec4c1e4506dce64e03102a60",
-        "ocr_text": "+)                          ”\n                    i ™    a\n|  |                         人 mn  . 时   有\n                         ，\n                    和 :   iy\n4                       人      }\n‘@\nSo ie\n‘\n,\ni   ’                                                 a"
-      }
-    ],
-    "best_match": {
-      "local_sec": 14.0,
-      "absolute_sec": 21.0,
-      "text": "’                          ad    了 a y",
-      "similarity": 0.051282,
-      "keyword_coverage": 0.0,
-      "score": 0.051282,
-      "line_count": 1,
-      "frame_sha256": "8c8451047876db5464e8149a5c2e5bb964ac8a08f2b81886d32745a276d7063c"
-    },
-    "smolvlm": {
-      "status": "not_requested"
-    }
-  },
-  "candidate_match_method": "audio_asr",
-  "candidate_match_score": 0.5,
-  "candidate_content_match": false,
-  "candidate_observed_position_sec": 19.5,
-  "candidate_timing_error_sec": 2.5,
-  "candidate_absolute_timing_error_sec": 2.5,
-  "minimum_agent_review_score": 0.55,
-  "agent_acceptance_required": true,
+  "decode_start_sec": 17.0,
+  "decode_end_sec": 17.0,
+  "playback_decode_verified": false,
   "counts_toward_pilot_60": false,
-  "decode_evidence_sha256": "baea21ab34b67165c72a4c8d0087219004ca297f4bee548a3ca2fc78dc3cc4b4",
-  "temporary_clip_sha256": "f6163a2baf2d055022c6268b0c1b0a41d7bf7f4562d036fe07f9542075dbfe20",
-  "generated_at": "2026-09-15T14:51:09.737616+00:00",
-  "bundle_id": "a9c80b27039f0c201da515212acdb3d5904ed9c6888e210ef6cb4d7472b19d82",
-  "request_revision": 1,
-  "request_sha256": "edc934fa318b27479cca1335789d53610dd7c3a6e4fcfb705ff30130e2060e35"
+  "stderr": "yt-dlp resolver failed for https://rumble.com/v5b2sws-20230310-1.html with rc=1:\nERROR: [Rumble] v5b2sws-20230310-1.html: Unable to download webpage: HTTP Error 403: Forbidden (caused by <HTTPError 403: Forbidden>)\n\n",
+  "generated_at": "2026-09-15T14:55:38.302119+00:00",
+  "bundle_id": "4117936ceb4a056d51ab577823df0a829f97312db92da10ff9b757d7a8913ed9",
+  "request_revision": 2,
+  "request_sha256": "2803c7e3979579de91f9b7fa1dac39a239f541cc51bf67476b26159a56f81e1d",
+  "decode_failure_stage": "probe",
+  "decode_resolution": {
+    "resolver": "direct_after_public_and_yt_dlp_failure",
+    "source": "https://rumble.com/v5b2sws-20230310-1.html",
+    "yt_dlp_returncode": 1,
+    "yt_dlp_stderr": "ERROR: [Rumble] v5b2sws-20230310-1.html: Unable to download webpage: HTTP Error 403: Forbidden (caused by <HTTPError 403: Forbidden>)\n",
+    "resolver_timeout_sec": 45
+  },
+  "decode_tool_stderr": "https://rumble.com/v5b2sws-20230310-1.html: Server returned 403 Forbidden (access denied)\n",
+  "decode_timed_out": false
 }
