@@ -1,0 +1,29 @@
+{
+  "report_version": "worker-bug-report-v1",
+  "reported_at": "2026-09-15T10:52:24.588223+00:00",
+  "reported_by": "agent-20260915T104448Z-cd0fceea",
+  "role": "worker",
+  "area": "playback-entry-retry-guard",
+  "severity": "workflow-loop-risk",
+  "case_id": "PILOT-M004",
+  "task_id": "P9-PLAYBACK-PILOT-M004",
+  "summary": "PILOT-M004 remains autonomously claimable after repeated current-environment blocked_media_decode evidence even though no alternate exact public media URL is preserved in repository provenance.",
+  "observed": {
+    "latest_runner_workflow_run_id": 34960080972,
+    "latest_evidence_statuses": {
+      "LIVE_20201001_001_SEG_000000": "blocked_media_decode",
+      "LIVE_20201001_001_SEG_000001": "blocked_media_decode",
+      "LIVE_20201001_001_SEG_000002": "blocked_media_decode"
+    },
+    "latest_request_revisions": {
+      "LIVE_20201001_001_SEG_000000": 3,
+      "LIVE_20201001_001_SEG_000001": 2,
+      "LIVE_20201001_001_SEG_000002": 2
+    },
+    "root_cause": "Trusted GHOT archive page exposes no supported public media URL; yt-dlp reports Unsupported URL; real media decode never starts.",
+    "current_retry_guard_present": false
+  },
+  "risk": "After the ordinary worker correctly records the blocked attempt and releases its claim, automatic entry can select M004 again and repeat the same immutable-provenance attempt indefinitely.",
+  "expected": "Control-plane owner should add an environment-change/provenance-change retry guard for M004, or otherwise make autonomous eligibility conditional on a material input change, without deleting historical attempts.",
+  "worker_action": "Reported only. Worker did not modify scripts, workflow, permissions, or retry-guard control plane."
+}
