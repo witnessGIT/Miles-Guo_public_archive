@@ -255,7 +255,15 @@ def best_asr_match(entries: list[dict], target: str, search_text: str | None) ->
                 "score": round(score, 6),
                 "entry_count": len(part),
             }
-            if best is None or candidate["score"] > best["score"]:
+            if (
+                best is None
+                or candidate["score"] > best["score"]
+                or (
+                    candidate["score"] == best["score"]
+                    and candidate["exact_target_substring"]
+                    and int(candidate["entry_count"]) < int(best["entry_count"])
+                )
+            ):
                 best = candidate
     return best
 
