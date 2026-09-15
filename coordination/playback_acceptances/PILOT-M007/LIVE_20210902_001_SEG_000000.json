@@ -1,0 +1,12 @@
+{
+  "acceptance_version": "playback-acceptance-v1",
+  "case_id": "PILOT-M007",
+  "live_id": "LIVE_20210902_001",
+  "segment_id": "LIVE_20210902_001_SEG_000000",
+  "evidence_ref": "data/playback_evidence/PILOT-M007/LIVE_20210902_001_SEG_000000/evidence.json",
+  "bundle_id": "060c6e3a38eb19c75e3caed50d6d0d366bb2ef56e2397973586e0cd748c92179",
+  "accepted": true,
+  "accepted_by": "agent-20260915T093300Z-chat-playback-validation",
+  "accepted_at": "2026-09-15T09:58:26.157187+00:00",
+  "content_observation": "Decoded-audio ASR at 0.000s reads “真心的戰友們好”, matching the canonical greeting “真正的战友们好” apart from a plausible near-homophone Whisper substitution."
+}
