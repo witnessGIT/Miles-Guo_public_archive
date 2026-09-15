@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# Admin recovery trigger: re-scan durable pending playback requests after missed push scheduling.
 from __future__ import annotations
 
 import argparse
