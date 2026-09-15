@@ -6,8 +6,8 @@
 - Expected start: `355.000s`
 - Decode window: `345.000s` → `369.000s`
 - Real media decoded: `true`
-- Evidence status: `invalid` (superseded timing candidate; pending admin repair retry)
-- Bundle ID: `2e8e84cde1e6e144d18f96001f81fc1ee2c27dd9fea3c9da55bff62cc2263caf`
+- Evidence status: `ready_for_agent_review`
+- Bundle ID: `cec21e77d9c794b733d6c17cf7a9b93c02c224ef29a840ebf43984ba03e960de`
 
 ## Target text
 
@@ -21,13 +21,13 @@
 - Whisper status: `completed`
 - Whisper invoked/return code/entries: `True` / `0` / `6`
 
-- Candidate observed position: `345.000s`
-- Signed timing error: `-10.000s`
+- Candidate observed position: `357.500s`
+- Signed timing error: `+2.500s`
 - Match score: `1.0`
-- Similarity: `0.115942`
+- Similarity: `0.347826`
 - Keyword coverage: `1.0`
 
-超過10萬 不能超過10萬嚇死人啊 就這影響太大了 太大了另外頭幾天的那個直播 就是關於這幾個大直播共匪下令 這回是絕對可以確定的共和黨黑的
+共匪下令 這回是絕對可以確定的共和黨黑的
 
 ## Sampled frame OCR
 
