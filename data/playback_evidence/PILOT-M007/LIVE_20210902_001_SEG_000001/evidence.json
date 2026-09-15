@@ -1,93 +1,31 @@
 {
   "project": "Miles-Guo_public_archive",
   "evidence_version": "repository-playback-evidence-v1",
-  "status": "needs_manual_or_wider_review",
+  "status": "blocked_media_decode",
   "case_id": "PILOT-M007",
   "live_id": "LIVE_20210902_001",
   "segment_id": "LIVE_20210902_001_SEG_000001",
-  "task_id": "P9-PLAYBACK-PILOT-M007",
   "request_ref": "coordination/playback_requests/PILOT-M007/LIVE_20210902_001_SEG_000001.json",
-  "requested_by": "agent-20260913T052200Z-gpt56sol",
+  "requested_by": "agent-20260915T093300Z-chat-playback-validation",
   "media_url": "https://gettr.com/post/p9xyj1e4d0",
-  "target_text": "共匪下令",
-  "target_text_search": "共匪 下令",
   "expected_start_sec": 355.0,
-  "decode_request_start_sec": 355.0,
-  "decode_start_sec": 345.0,
-  "decode_end_sec": 369.0,
-  "decode_window_sec": 24.0,
-  "decode_resolver": "yt-dlp",
-  "playback_decode_verified": true,
-  "repository_content_inspection": true,
-  "inspection_engine": "github-actions+ffmpeg+whisper.cpp+frame-ocr",
-  "audio_asr": {
-    "engine": "whisper.cpp",
-    "model": "ggml-small.bin",
-    "entries": [],
-    "best_match": null,
-    "process_returncode": null,
-    "stderr_tail": ""
-  },
-  "visual_evidence": {
-    "frames": [
-      {
-        "local_sec": 2.0,
-        "absolute_sec": 347.0,
-        "sha256": "33465a9890f0bb8901ae1a9e1bbd4cb64cd0a2bd25c1166bfe188782a0f75cb0",
-        "ocr_text": "Ss, eat Pas $50\nie ee Eee        es gee SOR a\nprs                   人 eye:         x       hese  SA 和<       va\nSe      pha fon We, es Parnes aa    jst      # ie Rees  :  [0\n>这        Sa ee, ane i Mae SEY et gaa    baw     agers  PNT Re th es   让\noi, apa eee Be oh ere pee) ae ae tle ees\nys RI Wee sc EN oh eae aap et CAE Sn ET es aoe\npe ee     me We al: ee  oo\nco Ee ee ile Pn RA Ae                  hea ee tee EOS ek,   Pgs ey Om.\n4 See ot ae ie On               ies g ee Ge ee\nErne Lal? OEP TEE pat gh - Coed foe ae                  5 tee As Be Re ate age ees  2\na pee ofl. et                 es et Ser, CORE os ya Mo\n3      Uae? en oe eS bak gr wee                    Re a A ae Me\n’    a ae SS ane miei               as: Ao   ete a ee 0  iq\npierre pe * ae Sea ee       —      eater 72 oe 49 ctor pause\nFa      otis FEY «|                             hon Me age See h Ui cs are teas\na oe         ’           人  Rae evens:\neee                               fe gilts re ce a\nfey *            Peas om  Oe oe ee\nmalt    al     3    ,     a           ‘all         SS EE ar\n2           dt    :       ’                                        ES. 8  i\nAa       Pci      *.        “    -        a ot sa -=\n‘ali       ;  6      ‘ie        ‘     >              过             ss\nhe: i     Se,  ee     es        ‘tr            天     a”                             :\nEts eT    t           ;     7      .              = <\nhe  ee RT RD  Oe |  ¥  5 4    a        j\nNS  J)\" NR aa    ‘iis          所     mii\nwe wee ~ satel                         )     oe     :\nual Ce A geo       4 cot                                    y                 Se            .\nSN fy.    eae           .   =            x          (ee\nlea ee                      f                a=               ‘             Saree bee\n4                  %      Be ee\nRe ose ea.\nSohne eek oe"
-      },
-      {
-        "local_sec": 6.0,
-        "absolute_sec": 351.0,
-        "sha256": "80d7d65d5045c04a276fe6dfe3c87e6e05d59d4732766a549426dd9046ea03cc",
-        "ocr_text": "了       fey See ee           3\nee meee een a ee\nne   RC 2a oc we eee i ee  SAK te 2 Se coe ing ea ee\nbes   ne ay es  MLS Re Te: Be          i  ser gh os   Seay tes   es\na      ie ee ss EA ee eS               RE eee A Se Boe ene\ncil, Were ee                 2S aa\nSh Bn gee    Maa et Gat aie                   pe eee ; ee oy snes\nigs Wal Yr) kc abagee tapes «ot Stes 3                      Sn. Rae ag re:  wpleas\nger = Coma ae      ata         cee a epee & Bites peas\nRise AE pid’ — vege se          i oe\neae a 5S eres               :              py gota oe AEG SO Rae eC |\nsee    Ui id ct ote eB lle Be eg     1                        VE aks ence age  See ae\non a gh cee oN             Pe eee oe be cS\nMane a   atte ie Ra  ko                      (Wega a   人\n7                        2 Ree   fle a    =\neae   _    4  po Me at es a\nee a                        Be SE Rs PE ae al\n.     Se SS i\nies.     ~~          ti\n“           é      .         am           ™             i                            SS      :\nf        f                全   全                   zs,\n“is     Pie     i    5       Yn MS            :        =\nyall aot     GE ee    ‘    ,    2               a\nBact    Bis,  ey  a            <“                      和\nDee aa hub p.            4    <    LE se\na             were       re            wt &          Sat oe,\naa  ga        NS ——    K      eo ae oe\n<ul ial ir al i Be      F      =    ‘,      > a eee\na ee        4 3            Sis          a         eee SS\nae Weta                    Py.                                          ;                   me"
-      },
-      {
-        "local_sec": 10.0,
-        "absolute_sec": 355.0,
-        "sha256": "bae5fbc4bc7194edde381ff2fd19ae42549a40ce5d137930228309eaba81ddc0",
-        "ocr_text": "ea, ek ote Sas        var.      ee ARE ie Fre ee   ta tee\nPeas ge eee fi     Sal -  Bae ck Ler a  LF\na2    2\n34      BAER gh er chee be   oj ae a   Rant eae! ee Se      Pee eas:   ee\note igi Soe ae As %                _ as Secs ee: cA eck aes :\npe ee eae             DS ea eee\nSG ae ore ns CO!                       ie eae a te cee we .\n人                        Seu Nes “pte SO  Lee >\ni       Swit See Ge                          上\n人 ale        fe ake eee ea ee\nBah a) ina  gee                   j  a Wie  yee  Se\naa                  ee PY ERGs we aia in, eat eae ae\n             rd ea ee\n7                    '      os a RN i, Rein AR ok ok Ss SETAE\nfx      oe     a    人    ER ee ia oy ~*~\nwir     &  s                              Esc ES\nos AS   “aati   ff.   ;-  RE      4             SS\nMe        aa\nll    al    & 县   Fw   a                      a\ner it   :   aa   bin ae” ieee                  ime\nvee     a ears |   N43.               ~~“  <\nZa ice (ANH 和   picts tre     人                pas             0\nop   Se Lady   ik     frit a  |                ’ fete =\ney       AN            Ar              Peg\nSaag  RN 和      Z        Saint        本           人 ey\n> grace                ff                                         :                   Sa\nrr PN                     A                                  ce                CS a"
-      },
-      {
-        "local_sec": 14.0,
-        "absolute_sec": 359.0,
-        "sha256": "205b2e9995bee3c6f9cae8f1d4a7ee74cfa8edd72793a69273f111c4f36339e1",
-        "ocr_text": "aie ole, eT  sak x)   seem\nep OE BNE ANS &       Be ER Be OR wn tage\nSS cae eae        CBee Lette eis\nye ae eee Ppa Ee\nre eh ae RS a Mae Dey cP   BG: Soeemngy «oe  GIUE noe Pook none  Wes\n‘oak        YAP RSS aS Sate RRS ae game Ber pm si Sense Ts   |\n了  ees a Ae   bag 2. vie ia) ae ue rset\nSi      oy betel eS       Basa, gen EO PES ae Bore a ere es\n        Oe! ae oa 时 es          EAS ae 4 sie. ok aie Sa Cee os\ntee     nee AN VATE             yb eS eng ae eee\nae i ee RO Gea               oS Ret [see gee ee ge\nPS ae ae               it eige 8 a Tee et\nBier eae Oo ON!               Me 8 SPs ea eae NNT as pat\neS Pewee wget Toes a                     wo ies Sane reer Firs     Rep hn ae 汪\neee OTR, te te         =        Pi See Pa ee Geran\n二          区， 有 gt\nwrens                   4;      doen, Se  ae Sti Chae? cet oy\n-     a gS   -_                SR\n二<      A                        =                  :\nSe Be              a.\nwe   人     Pa  aa.)                         pao         tke.   ‘    ~\nMe  ihe Mey Nae               >      meee see\n了                   >       a.\nPog tle   ys eles      \"Viking      ‘                                 .       ern 3 Oi   eS\nPik     yt 1 i   pgp     J     <<   i        if         PSR eee\nmy) y Pe. 1. angi   J    ee      \\ aa F   Boe se\na ME Fe ee     ,         |      =     有   Ra,   >\n3 \"ante Oi =          his                          a"
-      },
-      {
-        "local_sec": 18.0,
-        "absolute_sec": 363.0,
-        "sha256": "171079ca649e3bfe19842347b37d857eab3e6ff37b6c38b7abcc194bb63e33e5",
-        "ocr_text": "ENS edhe x OE See      ie ME. 6 ib | Alte ere Sh cere cei a\neae A Shae te ae :       ad      Siow We Mise  人 Fa\n人\n“     Beate es ape eae Pe ey ee\nRN Be eae ik\nPe, 5 ut ee  2          ye aes ae oS oe cg\nST A Se ee ee    pa ke              PN cae ge RO Be 8. Py ae ae he ile  Ses a iN\na es eC ae                     MPR rege\nRe, tae Eke Gea                  Bie Pb Ee eo\nPie Siete, eg =e Shea PRE       —_—     Were: tic ees  GE Ae oes\nSe em ‘eee, ~ yep ee        -—,         .     EN cl OS DT Ab eer ie oer\n‘oe \" ’ foot \"il ee on          》 Ae ae a gah aoe ae\na    DRS Se a Se aia Bi                      Re ae Eaten ee\n= ae    人                   ,oS   Togo  pee naay a =o\n本    re Ae ee aN                         ees. ns ie\nCid. game. ae.              Z     pri Be de ie ea eS. SC eee\nSas             NS         人 tae\n‘      ———         和\n          并      Ld        到                        RE\nee     al    ft    F;       %  ,—->*    i      ~    .\nen        本    ae\nPitt,     i |      * -             \"ai\n‘ “i 8)     ir.  te     4               _      Ree        :\n大    Fest       2                     ~*~        ee oe\nBc tat hh ae te     a    A                y    ~~      ea\nayaa fee oS     Wise eS\nyaaa rae        3      a     £        ec TNS\nae 65,7 ais            上                         号            ee\neR 48               + ff                                 a                  at"
-      }
-    ],
-    "best_match": {
-      "local_sec": 2.0,
-      "absolute_sec": 347.0,
-      "text": "Ss, eat Pas $50",
-      "similarity": 0.0,
-      "keyword_coverage": 0.0,
-      "score": 0.0,
-      "line_count": 1,
-      "frame_sha256": "33465a9890f0bb8901ae1a9e1bbd4cb64cd0a2bd25c1166bfe188782a0f75cb0"
-    },
-    "smolvlm": {
-      "status": "not_requested"
-    }
-  },
-  "candidate_match_method": "frame_ocr",
-  "candidate_match_score": 0.0,
-  "candidate_content_match": false,
-  "candidate_observed_position_sec": 347.0,
-  "candidate_timing_error_sec": -8.0,
-  "candidate_absolute_timing_error_sec": 8.0,
-  "minimum_agent_review_score": 0.55,
-  "agent_acceptance_required": true,
+  "decode_start_sec": 355.0,
+  "decode_end_sec": 355.0,
+  "playback_decode_verified": false,
   "counts_toward_pilot_60": false,
-  "decode_evidence_sha256": "c0e64c0bfe59100efa2eafdd171b66d077bb3ee6d8a2948cb4d821bc4b1bc58f",
-  "temporary_clip_sha256": "8b70cab559d8be6d892968bc3be5288eef55bd42f2a703bd1dfddf44b9279bc9",
-  "generated_at": "2026-09-14T14:00:49.593057+00:00",
-  "bundle_id": "93e9a6183e57823f2326906948decf05dc468c1a6cfd9ea874997af82d510bef",
-  "request_revision": 2,
-  "request_sha256": "5bf0df40af7b35a87cbab09b177a3c13a519a84c2047fa886b0a83be872dd9e1"
+  "stderr": "yt-dlp resolver failed for https://gettr.com/post/p9xyj1e4d0 with rc=1:\nERROR: [Gettr] p9xyj1e4d0: Requested format is not available. Use --list-formats for a list of available formats\n\n",
+  "generated_at": "2026-09-15T09:32:09.545437+00:00",
+  "bundle_id": "ed7e79c2ab8dbbf3d3ebab57f1144f4aebf7258bd471a291c51849f2288c58a9",
+  "request_revision": 3,
+  "request_sha256": "7e34814592b86d2e6fc3cda4718e2ac918895068f52296b67910f124b7f36db2",
+  "decode_failure_stage": "probe",
+  "decode_resolution": {
+    "resolver": "direct_after_public_and_yt_dlp_failure",
+    "source": "https://gettr.com/post/p9xyj1e4d0",
+    "yt_dlp_returncode": 1,
+    "yt_dlp_stderr": "ERROR: [Gettr] p9xyj1e4d0: Requested format is not available. Use --list-formats for a list of available formats\n",
+    "resolver_timeout_sec": 45
+  },
+  "decode_tool_stderr": "https://gettr.com/post/p9xyj1e4d0: Invalid data found when processing input\n",
+  "decode_timed_out": false
 }
