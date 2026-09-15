@@ -1,17 +1,17 @@
-# Playback Evidence — LIVE_20170523_001_SEG_000000
+# Playback Evidence — LIVE_20170523_001_SEG_000001
 
 - Case: `PILOT-E001`
 - Live: `LIVE_20170523_001`
 - Media: https://rumble.com/v576k9t-20170523.html
-- Expected start: `6.000s`
-- Decode window: `6.000s` → `6.000s`
+- Expected start: `16.000s`
+- Decode window: `16.000s` → `16.000s`
 - Real media decoded: `false`
 - Evidence status: `blocked_media_decode`
-- Bundle ID: `2a0afa4367f6b0b44d021e7cc1163d792e9241e5146cb63745b9ce29c5c6177f`
+- Bundle ID: `4c09b95158e99bab66e62fd12b57b0ec5db45408cd4463e207c3b4296f887e2c`
 
 ## Target text
 
-敬的推友们大家好！这是郭文贵5月23号的报平安的直播视频！
+由于现在我要开会，这个直播视频我只能说大概十五分钟左右。
 
 ## Decoded-audio ASR match
 
