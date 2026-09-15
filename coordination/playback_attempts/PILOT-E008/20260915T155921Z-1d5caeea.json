@@ -1,0 +1,15 @@
+{
+  "task_id": "P9-PLAYBACK-PILOT-E008",
+  "agent_id": "agent-20260915T144850Z-gpt56sol",
+  "blocked_at": "2026-09-15T15:59:21+00:00",
+  "case_id": "PILOT-E008",
+  "execution_mode": "repository_evidence_service_v1",
+  "reason": "Reclaimed the expired E008 lease. Revision 3 for SEG_000000 and first requests for SEG_000001/SEG_000002 used the verified Odysee alternate through the current anonymous SDK resolver; all three resolved to the same Odysee CDN media URL and failed at probe with HTTP 401 Unauthorized. The prior verified Rumble alternate had already failed at source access with HTTP 403. These are source/resolver-level failures independent of segment timestamp, so repeating the same Rumble URL for the remaining timestamps would not create new media evidence. No segment decoded and no acceptance was created.",
+  "counts_toward_pilot_60": false,
+  "evidence_refs": [
+    "data/playback_evidence/PILOT-E008/LIVE_20190920_001_SEG_000000/evidence.json",
+    "data/playback_evidence/PILOT-E008/LIVE_20190920_001_SEG_000001/evidence.json",
+    "data/playback_evidence/PILOT-E008/LIVE_20190920_001_SEG_000002/evidence.json"
+  ],
+  "note": "Blocked attempt is preserved, and the case is released for a later retry after a material environment change."
+}

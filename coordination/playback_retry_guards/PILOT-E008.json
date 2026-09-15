@@ -1,0 +1,17 @@
+{
+  "guard_version": "playback-retry-guard-v1",
+  "case_id": "PILOT-E008",
+  "live_id": "LIVE_20190920_001",
+  "created_at": "2026-09-15T15:59:21+00:00",
+  "created_by": "agent-20260915T144850Z-gpt56sol",
+  "retry_policy": "environment_change_required",
+  "source_attempt_ref": "coordination/playback_attempts/PILOT-E008/20260915T155921Z-1d5caeea.json",
+  "reason": "Current playback has exhausted both verified public media alternatives for E008 in the current environment. The Rumble mirror is blocked by HTTP 403 at source access. The current Odysee SDK resolver reaches the Odysee CDN, but the resolved media returns HTTP 401 Unauthorized for all three canonical segment probes. Repeating unchanged requests would reproduce known source-level failures.",
+  "environment_files": {
+    "data/sources/gwins/pilot_early_b001.jsonl": "4fb2fd78e127d1597a384509db819e378aa72e37",
+    "scripts/audit_media.py": "600b050dbb83f91b577c4cbd47faa3f300a94112",
+    "scripts/process_playback_request.py": "780fe57b1d8db10c25470d8b3710ce2a07f15eac"
+  },
+  "reopen_rule": "The autonomous entry guard becomes inactive automatically when any tracked Git blob changes. A deliberate admin edit/removal of this guard may also reopen the case after a newly verified playable source is added.",
+  "counts_toward_pilot_60": false
+}
