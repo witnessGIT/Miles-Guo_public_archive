@@ -1,8 +1,0 @@
-{
-  "task_id": "P8-SQLITE-PILOT",
-  "agent_id": "agent-20260912T162000Z-gpt56sol-sqlite",
-  "claimed_at": "2026-09-12T16:20:00Z",
-  "base_commit": "277e7698dbb626c5ff871968a56763f7c56bfa49",
-  "status": "in_progress",
-  "notes": "Build and validate database/Miles-Guo_public_archive.sqlite3 from the current Git-tracked schema/data, verify FTS5/FK/integrity/rebuild counts, then commit the small Pilot SQLite artifact."
-}

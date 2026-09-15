@@ -1,8 +1,0 @@
-{
-  "task_id": "P7-ALIGNMENT-B001",
-  "agent_id": "agent-20260912T160500Z-gpt56sol-alignment",
-  "claimed_at": "2026-09-12T16:05:00Z",
-  "base_commit": "061726f1ce45cd697d644c51e517141b40a6de71",
-  "status": "in_progress",
-  "notes": "Test curated GWINS text against public time-axis data for overlapping Pilot records. Prefer existing source timestamps, then GHOT fuzzy alignment; preserve alignment_method/quality and never mark playback verification unless actual playback was performed."
-}

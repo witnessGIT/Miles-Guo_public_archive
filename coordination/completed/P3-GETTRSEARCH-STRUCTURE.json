@@ -1,9 +1,0 @@
-{
-  "task_id": "P3-GETTRSEARCH-STRUCTURE",
-  "agent_id": "agent-20260912T152100Z-gpt56sol",
-  "completed_at": "2026-09-12T15:36:00Z",
-  "result_commit": "80f0758a64990dd465c7e41fed7eb1089b37dd7c",
-  "outputs": ["docs/site_analysis/GETTRSEARCH.md"],
-  "validation": "Verified current GettrSearch homepage controls and a public /playvideo/<opaque-id> route. Confirmed 2017-2023 year filters, short/long video filters, static crawl failure for video results, and lack of durable title/date/original-GETTR metadata in the inspected static playvideo shell.",
-  "notes": "GettrSearch is provisionally classified as discovery/backfill until its dynamic payload and original GETTR/platform identifiers are reproducibly verified. No opaque route token was treated as a GETTR ID."
-}

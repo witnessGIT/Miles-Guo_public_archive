@@ -1,9 +1,0 @@
-{
-  "task_id": "P0-SCHEMA",
-  "agent_id": "agent-20260912T152100Z-gpt56sol",
-  "completed_at": "2026-09-12T15:23:00Z",
-  "result_commit": "21b039fef674fdb5d71574cde990a35c4ea968ba",
-  "outputs": ["schema/schema.sql"],
-  "validation": "Executed schema against SQLite in-memory database with foreign_keys=ON and FTS5 enabled; PRAGMA integrity_check returned ok and all core/extension tables were created successfully.",
-  "notes": "Schema supports livestreams, multiple source records, curated/ASR/time provenance, segment timing, reproducible identity-match evidence, future generic archive items/entities/topics, and standalone FTS5 rebuilt by build_db.py."
-}

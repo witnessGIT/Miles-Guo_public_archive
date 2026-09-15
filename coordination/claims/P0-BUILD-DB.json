@@ -1,8 +1,0 @@
-{
-  "task_id": "P0-BUILD-DB",
-  "agent_id": "agent-20260912T152100Z-gpt56sol",
-  "claimed_at": "2026-09-12T15:42:00Z",
-  "base_commit": "11fd3564daf91411770e01f8a5b2bb4307a94548",
-  "status": "in_progress",
-  "notes": "Implement scripts/build_db.py to rebuild the official SQLite/FTS5 artifact entirely from Git-tracked data plus schema, with batch-friendly JSON/JSONL loading and no dependence on temporary media/cache."
-}
