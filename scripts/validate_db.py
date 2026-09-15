@@ -30,6 +30,9 @@ REQUIRED_TABLES = {
     "topics",
     "item_topics",
     "live_segments_fts",
+    "media_assets", "transcript_versions", "segment_speakers", "segment_entities",
+    "live_events", "segment_events", "segment_claims", "segment_relations",
+    "segment_clip_notes",
 }
 
 

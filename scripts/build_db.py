@@ -29,6 +29,15 @@ DATASETS: tuple[tuple[str, str], ...] = (
     ("item_entities", "item_entities"),
     ("item_topics", "item_topics"),
     ("source_match_candidates", "source_match_candidates"),
+    ("media_assets", "media_assets"),
+    ("transcript_versions", "transcript_versions"),
+    ("segment_speakers", "segment_speakers"),
+    ("segment_entities", "segment_entities"),
+    ("live_events", "live_events"),
+    ("segment_events", "segment_events"),
+    ("segment_claims", "segment_claims"),
+    ("segment_relations", "segment_relations"),
+    ("segment_clip_notes", "segment_clip_notes"),
 )
 
 

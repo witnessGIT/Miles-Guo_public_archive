@@ -146,6 +146,118 @@ CREATE TABLE IF NOT EXISTS item_topics (
     PRIMARY KEY (item_id, topic_id)
 );
 
+-- Detailed original-livestream layer. These tables deliberately contain no later news,
+-- outcome, or retrospective fact fields.
+CREATE TABLE IF NOT EXISTS media_assets (
+    id TEXT PRIMARY KEY,
+    live_id TEXT NOT NULL REFERENCES live_videos(id) ON DELETE CASCADE,
+    source_id TEXT REFERENCES live_sources(id) ON DELETE SET NULL,
+    asset_role TEXT NOT NULL CHECK (asset_role IN ('original_video','mirror_video','audio','thumbnail','caption_file')),
+    url TEXT NOT NULL,
+    platform TEXT,
+    platform_asset_id TEXT,
+    mime_type TEXT,
+    duration_sec REAL,
+    width INTEGER,
+    height INTEGER,
+    audio_present INTEGER CHECK (audio_present IN (0,1)),
+    availability_status TEXT NOT NULL DEFAULT 'unknown',
+    checked_at TEXT,
+    metadata_json TEXT,
+    UNIQUE(source_id, url)
+);
+
+CREATE TABLE IF NOT EXISTS transcript_versions (
+    id TEXT PRIMARY KEY,
+    live_id TEXT NOT NULL REFERENCES live_videos(id) ON DELETE CASCADE,
+    source_id TEXT REFERENCES live_sources(id) ON DELETE SET NULL,
+    transcript_kind TEXT NOT NULL CHECK (transcript_kind IN ('source_original','curated','asr_raw','corrected','translation')),
+    language TEXT NOT NULL,
+    text TEXT NOT NULL,
+    parent_version_id TEXT REFERENCES transcript_versions(id) ON DELETE SET NULL,
+    generated_by TEXT,
+    confidence REAL CHECK (confidence IS NULL OR (confidence >= 0 AND confidence <= 1)),
+    created_at TEXT NOT NULL,
+    UNIQUE(live_id, transcript_kind, language, source_id)
+);
+
+CREATE TABLE IF NOT EXISTS segment_speakers (
+    segment_id TEXT NOT NULL REFERENCES live_segments(id) ON DELETE CASCADE,
+    entity_id TEXT NOT NULL REFERENCES entities(id) ON DELETE CASCADE,
+    role TEXT NOT NULL DEFAULT 'speaker',
+    confidence REAL CHECK (confidence IS NULL OR (confidence >= 0 AND confidence <= 1)),
+    PRIMARY KEY (segment_id, entity_id, role)
+);
+
+CREATE TABLE IF NOT EXISTS segment_entities (
+    segment_id TEXT NOT NULL REFERENCES live_segments(id) ON DELETE CASCADE,
+    entity_id TEXT NOT NULL REFERENCES entities(id) ON DELETE CASCADE,
+    mention_text TEXT,
+    mention_role TEXT NOT NULL DEFAULT 'mentioned',
+    confidence REAL CHECK (confidence IS NULL OR (confidence >= 0 AND confidence <= 1)),
+    PRIMARY KEY (segment_id, entity_id, mention_role)
+);
+
+CREATE TABLE IF NOT EXISTS live_events (
+    id TEXT PRIMARY KEY,
+    canonical_name TEXT NOT NULL,
+    event_type TEXT,
+    event_time_start TEXT,
+    event_time_end TEXT,
+    place_text TEXT,
+    description TEXT,
+    status TEXT NOT NULL DEFAULT 'mentioned_in_live',
+    metadata_json TEXT
+);
+
+CREATE TABLE IF NOT EXISTS segment_events (
+    segment_id TEXT NOT NULL REFERENCES live_segments(id) ON DELETE CASCADE,
+    event_id TEXT NOT NULL REFERENCES live_events(id) ON DELETE CASCADE,
+    relation_type TEXT NOT NULL DEFAULT 'mentions',
+    confidence REAL CHECK (confidence IS NULL OR (confidence >= 0 AND confidence <= 1)),
+    PRIMARY KEY (segment_id, event_id, relation_type)
+);
+
+CREATE TABLE IF NOT EXISTS segment_claims (
+    id TEXT PRIMARY KEY,
+    segment_id TEXT NOT NULL REFERENCES live_segments(id) ON DELETE CASCADE,
+    claim_type TEXT NOT NULL CHECK (claim_type IN ('fact_statement','opinion','judgment','prediction','question')),
+    quote TEXT NOT NULL,
+    normalized_claim TEXT,
+    stance TEXT,
+    certainty TEXT,
+    target_time_text TEXT,
+    subject_entity_id TEXT REFERENCES entities(id) ON DELETE SET NULL,
+    object_entity_id TEXT REFERENCES entities(id) ON DELETE SET NULL,
+    event_id TEXT REFERENCES live_events(id) ON DELETE SET NULL,
+    extraction_status TEXT NOT NULL DEFAULT 'unreviewed',
+    confidence REAL CHECK (confidence IS NULL OR (confidence >= 0 AND confidence <= 1))
+);
+
+CREATE TABLE IF NOT EXISTS segment_relations (
+    id TEXT PRIMARY KEY,
+    from_segment_id TEXT NOT NULL REFERENCES live_segments(id) ON DELETE CASCADE,
+    to_segment_id TEXT NOT NULL REFERENCES live_segments(id) ON DELETE CASCADE,
+    relation_type TEXT NOT NULL CHECK (relation_type IN ('same_topic','same_event','before','after','supports','contradicts','similar_to','usable_with')),
+    basis TEXT NOT NULL CHECK (basis IN ('explicit','editorial','semantic')),
+    explanation TEXT,
+    confidence REAL CHECK (confidence IS NULL OR (confidence >= 0 AND confidence <= 1)),
+    evidence_segment_id TEXT REFERENCES live_segments(id) ON DELETE SET NULL,
+    CHECK (from_segment_id <> to_segment_id),
+    UNIQUE(from_segment_id, to_segment_id, relation_type, basis)
+);
+
+CREATE TABLE IF NOT EXISTS segment_clip_notes (
+    segment_id TEXT PRIMARY KEY REFERENCES live_segments(id) ON DELETE CASCADE,
+    clip_title TEXT,
+    visual_description TEXT,
+    audio_quality TEXT,
+    video_quality TEXT,
+    clip_usability TEXT NOT NULL DEFAULT 'unknown',
+    production_tags_json TEXT,
+    notes TEXT
+);
+
 -- Standalone FTS table is rebuilt from live_segments by scripts/build_db.py.
 CREATE VIRTUAL TABLE IF NOT EXISTS live_segments_fts USING fts5(
     segment_id UNINDEXED,
@@ -165,3 +277,9 @@ CREATE INDEX IF NOT EXISTS idx_live_segments_start_sec ON live_segments(live_id,
 CREATE INDEX IF NOT EXISTS idx_source_match_decision ON source_match_candidates(decision, match_score);
 CREATE INDEX IF NOT EXISTS idx_archive_items_published_at ON archive_items(published_at);
 CREATE INDEX IF NOT EXISTS idx_archive_items_type ON archive_items(item_type);
+CREATE INDEX IF NOT EXISTS idx_media_assets_live_id ON media_assets(live_id);
+CREATE INDEX IF NOT EXISTS idx_transcript_versions_live_id ON transcript_versions(live_id);
+CREATE INDEX IF NOT EXISTS idx_segment_entities_entity_id ON segment_entities(entity_id);
+CREATE INDEX IF NOT EXISTS idx_segment_events_event_id ON segment_events(event_id);
+CREATE INDEX IF NOT EXISTS idx_segment_claims_type ON segment_claims(claim_type);
+CREATE INDEX IF NOT EXISTS idx_segment_relations_to ON segment_relations(to_segment_id, relation_type);
