@@ -1,7 +1,8 @@
 {
   "project": "Miles-Guo_public_archive",
   "evidence_version": "repository-playback-evidence-v1",
-  "status": "ready_for_agent_review",
+  "status": "invalid",
+  "invalidation_reason": "Admin repair: revision 5 used a wide tied ASR window and assigned the wrong observed start; regenerate with the narrow-window matcher.",
   "case_id": "PILOT-M007",
   "live_id": "LIVE_20210902_001",
   "segment_id": "LIVE_20210902_001_SEG_000001",
@@ -161,7 +162,7 @@
   },
   "candidate_match_method": "audio_asr",
   "candidate_match_score": 1.0,
-  "candidate_content_match": true,
+  "candidate_content_match": false,
   "candidate_observed_position_sec": 345.0,
   "candidate_timing_error_sec": -10.0,
   "candidate_absolute_timing_error_sec": 10.0,

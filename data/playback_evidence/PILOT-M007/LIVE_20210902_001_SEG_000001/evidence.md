@@ -6,7 +6,7 @@
 - Expected start: `355.000s`
 - Decode window: `345.000s` → `369.000s`
 - Real media decoded: `true`
-- Evidence status: `ready_for_agent_review`
+- Evidence status: `invalid` (superseded timing candidate; pending admin repair retry)
 - Bundle ID: `2e8e84cde1e6e144d18f96001f81fc1ee2c27dd9fea3c9da55bff62cc2263caf`
 
 ## Target text
