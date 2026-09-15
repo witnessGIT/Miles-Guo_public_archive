@@ -1,0 +1,17 @@
+{
+  "guard_version": "playback-retry-guard-v1",
+  "case_id": "PILOT-M004",
+  "live_id": "LIVE_20201001_001",
+  "created_at": "2026-09-15T10:44:57.400441+00:00",
+  "created_by": "agent-20260915T103333Z-ae1aa114",
+  "retry_policy": "environment_change_required",
+  "source_attempt_ref": "coordination/playback_attempts/PILOT-M004/20260915T001500Z-gpt56sol.json",
+  "reason": "The latest durable revision-2 GitHub Runner attempt established that the only exact public source currently preserved for M004, GHOT https://ghot.ai/archive/videos/2020-10-01-3, exposes no supported public media URL. yt-dlp reported Unsupported URL, direct ffmpeg probing received non-media input, no media bytes were decoded, and repository provenance contains no alternate exact M004 media candidate. A same-date GWINS item is explicitly non-matching. Repeating the unchanged request would only reproduce the known blocked result.",
+  "environment_files": {
+    "data/sources/ghot/pilot_middle_b001.jsonl": "4354b140efffcd4aa60ddc518fd35a4ded192b6c",
+    "scripts/audit_media.py": "600b050dbb83f91b577c4cbd47faa3f300a94112",
+    "scripts/process_playback_request.py": "780fe57b1d8db10c25470d8b3710ce2a07f15eac"
+  },
+  "reopen_rule": "The autonomous entry guard becomes inactive automatically when any tracked Git blob changes. A deliberate admin edit/removal of this guard may also reopen the case after a newly verified playable source is added.",
+  "counts_toward_pilot_60": false
+}
