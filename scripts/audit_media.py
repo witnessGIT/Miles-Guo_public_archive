@@ -16,9 +16,7 @@ PROBE_TIMEOUT_SEC = 60
 DECODE_TIMEOUT_SEC = 180
 FRAME_TIMEOUT_SEC = 60
 TIMEOUT_RETURN_CODE = 124
-YTDLP_AUDIO_FORMAT_SELECTOR = (
-    "best[acodec!=none][vcodec!=none]/bestaudio[acodec!=none]"
-)
+YTDLP_AUDIO_FORMAT_SELECTOR = "bestvideo+bestaudio/best"
 GETTR_STREAM_RE = re.compile(r"^https?://(?:www\.)?gettr\.com/streaming/([a-z0-9]+)(?:[/?#].*)?$", re.I)
 ODYSEE_RE = re.compile(r"^https?://(?:www\.)?odysee\.com/(.+)$", re.I)
 ODYSEE_PROXY_URL = "https://api.na-backend.odysee.com/api/v1/proxy?m=get"
@@ -266,14 +264,21 @@ def resolve_media(source, *, allow_archive=True):
             "-g", "--no-playlist", source,
         ], timeout_sec=RESOLVE_TIMEOUT_SEC)
         if rc == 0 and out.strip():
-            resolution = {"resolver": "yt-dlp", "source": source, "yt_dlp_returncode": rc}
+            resolved_inputs = [line.strip() for line in out.splitlines() if line.strip()]
+            resolution = {
+                "resolver": "yt-dlp", "source": source, "yt_dlp_returncode": rc,
+                "resolved_input_count": len(resolved_inputs),
+                "separate_audio_input": len(resolved_inputs) > 1,
+                # Process-local only. Signed CDN URLs are removed before evidence is written.
+                "_resolved_inputs": resolved_inputs,
+            }
             if gettr_resolution:
                 resolution["gettr_public_resolution"] = gettr_resolution
             if odysee_resolution:
                 resolution["odysee_public_resolution"] = odysee_resolution
             if archive_resolution:
                 resolution["archive_resolution"] = archive_resolution
-            return out.strip().splitlines()[0], resolution
+            return resolved_inputs[0], resolution
         diag = (err or "")[-4000:]
         print(f"yt-dlp resolver failed for {source} with rc={rc}:\n{diag}", file=sys.stderr)
 
@@ -374,19 +379,25 @@ def main():
     clip_path = output_dir / f"{safe_label}_expected_{args.start:.3f}_from_{decode_start:.3f}_window_{args.window:.3f}.mp4"
     frame_path = output_dir / f"{safe_label}_expected_{args.start:.3f}.jpg"
     evidence_path = output_dir / f"{safe_label}_expected_{args.start:.3f}.json"
+    resolved_inputs = list(resolution.pop("_resolved_inputs", [resolved]))
     probe_rc, probe, probe_err = _probe(resolved)
     if probe_rc != 0:
         payload = {"ok": False, "stage": "probe", "resolution": resolution, "media_source": args.media, "expected_start_sec": args.start, "decode_start_sec": decode_start, "decode_window_sec": args.window, "stderr": probe_err[-4000:], "timed_out": probe_rc == TIMEOUT_RETURN_CODE, "timeout_sec": PROBE_TIMEOUT_SEC if probe_rc == TIMEOUT_RETURN_CODE else None}
         evidence_path.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
         print(json.dumps(payload, ensure_ascii=False, indent=2))
         return 3
-    decode_rc, _, decode_err = run([
-        "ffmpeg", "-y", "-v", "error", "-ss", f"{decode_start:.3f}",
-        "-i", resolved, "-t", f"{args.window:.3f}",
-        "-map", "0:v:0?", "-map", "0:a:0?",
-        "-c:v", "libx264", "-preset", "ultrafast", "-c:a", "aac",
-        str(clip_path),
-    ], timeout_sec=DECODE_TIMEOUT_SEC)
+    decode_cmd = ["ffmpeg", "-y", "-v", "error"]
+    for media_input in resolved_inputs[:2]:
+        decode_cmd.extend(["-ss", f"{decode_start:.3f}", "-i", media_input])
+    decode_cmd.extend(["-t", f"{args.window:.3f}"])
+    if len(resolved_inputs) > 1:
+        decode_cmd.extend(["-map", "0:v:0?", "-map", "1:a:0?"])
+    else:
+        decode_cmd.extend(["-map", "0:v:0?", "-map", "0:a:0?"])
+    decode_cmd.extend([
+        "-c:v", "libx264", "-preset", "ultrafast", "-c:a", "aac", str(clip_path),
+    ])
+    decode_rc, _, decode_err = run(decode_cmd, timeout_sec=DECODE_TIMEOUT_SEC)
     if decode_rc != 0:
         payload = {"ok": False, "stage": "decode", "resolution": resolution, "media_source": args.media, "expected_start_sec": args.start, "decode_start_sec": decode_start, "decode_window_sec": args.window, "probe": probe, "stderr": decode_err[-4000:], "timed_out": decode_rc == TIMEOUT_RETURN_CODE, "timeout_sec": DECODE_TIMEOUT_SEC if decode_rc == TIMEOUT_RETURN_CODE else None}
         evidence_path.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")

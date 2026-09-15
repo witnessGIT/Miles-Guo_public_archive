@@ -34,16 +34,24 @@ class PlaybackAsrMediaSelectionTests(unittest.TestCase):
 
     @mock.patch("audit_media.shutil.which", return_value="/usr/local/bin/yt-dlp")
     @mock.patch("audit_media.run")
-    def test_ytdlp_resolution_requests_muxed_audio_video(self, run_mock, _which):
-        run_mock.return_value = (0, "https://cdn.example/muxed.mp4\n", "")
+    def test_ytdlp_resolution_preserves_separate_video_and_audio_inputs(self, run_mock, _which):
+        run_mock.return_value = (
+            0,
+            "https://cdn.example/video.mp4\nhttps://cdn.example/audio.m4a\n",
+            "",
+        )
         resolved, meta = audit_media.resolve_media("https://gettr.com/post/example")
-        self.assertEqual("https://cdn.example/muxed.mp4", resolved)
+        self.assertEqual("https://cdn.example/video.mp4", resolved)
         command = run_mock.call_args.args[0]
         self.assertIn("-f", command)
         selector = command[command.index("-f") + 1]
-        self.assertIn("acodec!=none", selector)
-        self.assertIn("vcodec!=none", selector)
+        self.assertEqual("bestvideo+bestaudio/best", selector)
         self.assertEqual("yt-dlp", meta["resolver"])
+        self.assertTrue(meta["separate_audio_input"])
+        self.assertEqual(
+            ["https://cdn.example/video.mp4", "https://cdn.example/audio.m4a"],
+            meta["_resolved_inputs"],
+        )
 
 
 if __name__ == "__main__":
