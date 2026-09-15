@@ -1,0 +1,12 @@
+{
+  "task_id": "P9-PLAYBACK-PILOT-E004",
+  "case_id": "PILOT-E004",
+  "attempt_type": "expired_claim_recovery",
+  "previous_agent_id": "agent-20260913T052000Z-gpt56sol-playback-e004",
+  "previous_claimed_at": "2026-09-13T05:20:00Z",
+  "previous_lease_expires_at": "2026-09-14T05:20:00+00:00",
+  "reclaimed_by": "agent-20260915T133400Z-gpt56sol-playback-e004-g2",
+  "reclaimed_at": "2026-09-15T13:34:00Z",
+  "counts_toward_pilot_60": false,
+  "note": "Expired generation-1 claim archived before generation-2 recovery. Existing revision-2 Odysee request remains durable history and will be rebound to the active generation-2 claim by an authorized retry."
+}
