@@ -13,6 +13,19 @@ task, or to repeat repository requirements. Read this repository, resolve contri
 and execute the entry protocol yourself. The repository—not chat history—is the full operating
 contract.
 
+### Entry execution barrier — no early chat response
+
+The Agent's **first substantive action** after entering is repository execution, not a prose
+status update. It must refresh state and run the applicable `scripts/agent_entry.py` command
+below before reporting anything to the user. A statement such as “task M004 is already claimed;
+I will handle another task next” is an **invalid final response**: it describes recovery instead
+of performing it.
+
+The only permitted final response is a durable terminal report: completed output, a recorded
+truthful block after all compatible work was exhausted, or a documented stop state. An occupied
+case, `CLAIM_RACE_LOST`, or discovery of a completed case is internal control flow: refresh and
+select another candidate in the same session.
+
 Before any business work, refresh `main` and open PR state, create/reuse one local stable
 `agent_id`, then run exactly one appropriate entry path:
 

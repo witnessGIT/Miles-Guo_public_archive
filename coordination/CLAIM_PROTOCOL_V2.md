@@ -82,6 +82,10 @@ Required behavior:
 
 `CLAIM_RACE_LOST` is **never** a reason to put the worker to sleep.
 
+It is also never an acceptable final chat response. The worker must perform step 4 before
+reporting: “will choose another task” without a fresh durable claim/reservation is an incomplete
+entry protocol.
+
 ### `BRANCH_RACE_RETRY`
 
 Use this transient classification when:

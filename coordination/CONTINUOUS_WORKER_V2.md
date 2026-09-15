@@ -24,6 +24,13 @@ ENTER REPOSITORY
 
 For ordinary claimed archive/business work, no PR and no repeated per-task owner approval are required. An Agent must not intentionally stop after one successful task while other safe eligible work exists.
 
+## Entry-output rule
+
+An occupied claim is internal queue state, not reportable task completion. A worker must run the
+claim/reservation recovery in the same session and may not end with “I will next select another
+task.” It must actually select and durably claim/reserve that task first. User-facing final
+reports are permitted only after durable work output or a documented stop condition.
+
 The target is not merely Pilot completion. Preserve all required Pilot quality gates; after they pass, continue into `FULL_ARCHIVE` and keep processing eligible public video archive work until the archive is complete.
 
 ## Platform limitation

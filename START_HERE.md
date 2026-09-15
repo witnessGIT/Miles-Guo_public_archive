@@ -12,6 +12,14 @@ The repository is the authoritative execution context. Do not ask the user to re
 requirements, select a task, choose a source, or authorize routine continuation already stored
 here.
 
+## Do not answer before entering the queue
+
+Do not send a governance/status message before attempting durable entry. “This task is already
+claimed” is never a final result. It means: refresh, run the entry command, and take the next
+eligible candidate. The external chat may receive a final response only after a durable result
+or a documented repository stop state; all claim checks, collisions and candidate changes stay
+inside this repository workflow.
+
 ## Automatic entry protocol
 
 After reading the required governance files, a fresh Agent must refresh `main` and open PR state,

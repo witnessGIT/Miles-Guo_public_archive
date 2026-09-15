@@ -80,6 +80,9 @@
   "bootstrap_entrypoint": "START_HERE.md",
   "automatic_entry_runner": "scripts/agent_entry.py",
   "automatic_entry_requires_user_task_selection": false,
+  "entry_status_before_durable_claim_is_final_response": false,
+  "occupied_claim_requires_same_session_next_candidate": true,
+  "user_facing_final_report_requires_durable_result_or_documented_stop": true,
   "durable_arrival_order": {
     "direct_write": "first_atomic_claim_visible_on_main",
     "no_write": "first_valid_open_task_pr",
@@ -118,6 +121,7 @@
     "If a 409 leaves the exact claim absent, classify a moving-branch retry, refresh main, short-backoff, and retry against fresh state.",
     "Only classify GITHUB_WRITE_ERROR when the exact claim remains absent after fresh bounded retries and no race/staleness/moving-main explanation applies.",
     "External prompts should not duplicate project requirements; Agents must load them from the repository.",
+    "An occupied task or CLAIM_RACE_LOST is internal queue control flow and must not be emitted as a final chat response; the same session must refresh and attempt another eligible candidate.",
     "The historical completed records P9-AUDIT-60 and P10-PILOT-DECISION predate the current playback-gated acceptance chain. Keep them for audit history, but never treat them as current completion or authorization.",
     "The current acceptance tasks are P9-AUDIT-60-R2 and P10-PILOT-DECISION-R2.",
     "An S-AUDIT completion or coordination/ready/audit marker does not by itself contribute a Pilot-60 playback check.",
