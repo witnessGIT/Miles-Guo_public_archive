@@ -1,0 +1,15 @@
+{
+  "task_id": "P9-PLAYBACK-PILOT-E006",
+  "agent_id": "agent-20260915-9b893639",
+  "claimed_at": "2026-09-15T13:31:26Z",
+  "lease_seconds": 21600,
+  "expires_at": "2026-09-15T19:31:26Z",
+  "mode": "playback",
+  "case_id": "PILOT-E006",
+  "segment_ids": [
+    "PILOT-E006-S01",
+    "PILOT-E006-S02",
+    "PILOT-E006-S03"
+  ],
+  "note": "agent_entry.py"
+}
