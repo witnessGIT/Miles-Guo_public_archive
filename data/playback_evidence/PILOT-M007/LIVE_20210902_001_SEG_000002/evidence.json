@@ -1,31 +1,183 @@
 {
   "project": "Miles-Guo_public_archive",
   "evidence_version": "repository-playback-evidence-v1",
-  "status": "blocked_media_decode",
+  "status": "ready_for_agent_review",
   "case_id": "PILOT-M007",
   "live_id": "LIVE_20210902_001",
   "segment_id": "LIVE_20210902_001_SEG_000002",
+  "task_id": "P9-PLAYBACK-PILOT-M007",
   "request_ref": "coordination/playback_requests/PILOT-M007/LIVE_20210902_001_SEG_000002.json",
   "requested_by": "agent-20260915T093300Z-chat-playback-validation",
   "media_url": "https://gettr.com/post/p9xyj1e4d0",
+  "target_text": "我们明天上午大直播",
+  "target_text_search": "明天 上午 大直播",
   "expected_start_sec": 446.0,
-  "decode_start_sec": 446.0,
-  "decode_end_sec": 446.0,
-  "playback_decode_verified": false,
-  "counts_toward_pilot_60": false,
-  "stderr": "yt-dlp resolver failed for https://gettr.com/post/p9xyj1e4d0 with rc=1:\nERROR: [Gettr] p9xyj1e4d0: Requested format is not available. Use --list-formats for a list of available formats\n\n",
-  "generated_at": "2026-09-15T09:32:11.257088+00:00",
-  "bundle_id": "e657da0d35dcb4a1156a3a682eadd48612ca4dcac737b0396678d80306fb68bb",
-  "request_revision": 3,
-  "request_sha256": "c5147c7ad00df7e8c6c3093aeca10146dc3b54b53132b5ecafdbe0945c2a6f61",
-  "decode_failure_stage": "probe",
-  "decode_resolution": {
-    "resolver": "direct_after_public_and_yt_dlp_failure",
-    "source": "https://gettr.com/post/p9xyj1e4d0",
-    "yt_dlp_returncode": 1,
-    "yt_dlp_stderr": "ERROR: [Gettr] p9xyj1e4d0: Requested format is not available. Use --list-formats for a list of available formats\n",
-    "resolver_timeout_sec": 45
+  "decode_request_start_sec": 446.0,
+  "decode_start_sec": 436.0,
+  "decode_end_sec": 460.0,
+  "decode_window_sec": 24.0,
+  "decode_resolver": "yt-dlp",
+  "playback_decode_verified": true,
+  "repository_content_inspection": true,
+  "inspection_engine": "github-actions+ffmpeg+whisper.cpp+frame-ocr",
+  "audio_asr": {
+    "engine": "whisper.cpp",
+    "model": "ggml-small.bin",
+    "status": "completed",
+    "cli_available": true,
+    "model_available": true,
+    "invoked": true,
+    "entries": [
+      {
+        "local_start_sec": 0.0,
+        "local_end_sec": 2.92,
+        "absolute_start_sec": 436.0,
+        "absolute_end_sec": 438.92,
+        "text": "郭文貴650中山機闖關"
+      },
+      {
+        "local_start_sec": 2.92,
+        "local_end_sec": 5.92,
+        "absolute_start_sec": 438.92,
+        "absolute_end_sec": 441.92,
+        "text": "陸大那片居然是大妹兄弟"
+      },
+      {
+        "local_start_sec": 6.58,
+        "local_end_sec": 8.82,
+        "absolute_start_sec": 442.58,
+        "absolute_end_sec": 444.82,
+        "text": "因為炸片全家被抓捕"
+      },
+      {
+        "local_start_sec": 9.4,
+        "local_end_sec": 12.8,
+        "absolute_start_sec": 445.4,
+        "absolute_end_sec": 448.8,
+        "text": "我都不知道,戰友問我,我才明白過來"
+      },
+      {
+        "local_start_sec": 14.26,
+        "local_end_sec": 17.88,
+        "absolute_start_sec": 450.26,
+        "absolute_end_sec": 453.88,
+        "text": "然後呢,我們明天上午大直播"
+      },
+      {
+        "local_start_sec": 17.88,
+        "local_end_sec": 21.5,
+        "absolute_start_sec": 453.88,
+        "absolute_end_sec": 457.5,
+        "text": "談談房地產,談談平安,談談幾個金融機構"
+      },
+      {
+        "local_start_sec": 21.5,
+        "local_end_sec": 24.24,
+        "absolute_start_sec": 457.5,
+        "absolute_end_sec": 460.24,
+        "text": "再談談中國的醫療保健"
+      }
+    ],
+    "best_match": {
+      "local_start_sec": 14.26,
+      "local_end_sec": 17.88,
+      "text": "然後呢,我們明天上午大直播",
+      "similarity": 0.761905,
+      "keyword_coverage": 1.0,
+      "score": 0.821429,
+      "entry_count": 1
+    },
+    "process_returncode": 0,
+    "stderr_tail": "read_audio_data: reading audio data from '/home/runner/work/Miles-Guo_public_archive/Miles-Guo_public_archive/cache/playback_evidence/PILOT-M007/LIVE_20210902_001_SEG_000002/audio_16k_mono.wav' ...\nread_audio_data: trying to decode with miniaudio\noutput_srt: saving output to '/home/runner/work/Miles-Guo_public_archive/Miles-Guo_public_archive/cache/playback_evidence/PILOT-M007/LIVE_20210902_001_SEG_000002/whisper.srt'\n",
+    "output_srt_exists": true,
+    "parsed_entry_count": 7
   },
-  "decode_tool_stderr": "https://gettr.com/post/p9xyj1e4d0: Invalid data found when processing input\n",
-  "decode_timed_out": false
+  "audio_extraction": {
+    "returncode": 0,
+    "stderr_tail": "",
+    "wav_exists": true,
+    "wav_size_bytes": 768078,
+    "probe_returncode": 0,
+    "probe_stderr_tail": "",
+    "has_audio_stream": true,
+    "audio_streams": [
+      {
+        "index": 0,
+        "codec_name": "pcm_s16le",
+        "codec_type": "audio",
+        "sample_rate": "16000",
+        "channels": 1
+      }
+    ],
+    "duration_sec": 24.0,
+    "activity": {
+      "returncode": 0,
+      "mean_volume_db": -20.2,
+      "max_volume_db": -1.8,
+      "non_silent": true,
+      "stderr_tail": ""
+    }
+  },
+  "visual_evidence": {
+    "frames": [
+      {
+        "local_sec": 2.0,
+        "absolute_sec": 438.0,
+        "sha256": "04da0eb7c68cc9f25a01742f99de7271034d27e543adcae55d74e2ea0d42649c",
+        "ocr_text": "人\nPe a 1 必 Ny fests ae          cues   Po tts a ag Bee aN Ps\n让 Wy ae Meee >        a      Berea bie feat i eee ae 2\nif ety    ee es Se ee ee\ntends ene Bey i ihc St Se ate\neee       Bis Arcee” 8 Ja oa      ee ns a  证 和\nRE AN ON peta 全\n¥            Wig A Ae eect ea                eid ekg oye 人\nSe pea se  Sg Ae Nees              i paged get 人\n这    tae, eee CARP                 4 Eee ee BE tes\nTA es ee pea                 bey [Se anes  ee as oe Se :\nBN ee ae pd TBR oe                rele pees eee Ay shame tiniest\nhe! eae 5,  wines SI                               本 ee ame Sati, ae!\nme (oo ae ee       >           D Sac ee ae io Reon tee\nWi es ge i            Pa Meat oo et ee Se pa\nKeen ge  Mee          :         ce  Wem OR ted =\nen                {pire cei a LS I.\nee    ee id     mets                             ! ape i eae eo Bes ~s\n:           5    ES aS Soh as\n、             +   4    ‘y                      -           —  SS一\nee   和         a   -要     -\ni ee       \\ Sa                a\nhg     ,    che ae       \\           ‘    ae\nat) eae   Ta lim. os     te                        eo\na        wa  ee                           \\             tae 了\n‘ies,       PRIN i Sik ee                                    2                 ape ee\na Ropaeyiee re wal, OMEN GLA    “g                           gh            wr Aa a Sa\nt      ia 0            /    SS         吕            een\nas        ST Yooh   ¢.            if                S      mame’              去                    Ses ae\n~  ‘aga,     2s        7          Te             =           ‘\"       »    -\ngn hee.            天"
+      },
+      {
+        "local_sec": 6.0,
+        "absolute_sec": 442.0,
+        "sha256": "f4d2b42cdf9af7d4aaec7668092c31e900492b0425d6c77732d5b6b77ef87ef4",
+        "ocr_text": "-证          ae,    1\n人        Np ees     nto,\n下人    TI ne ME    a      和  res\n<    和\nAN\nMig, “tag  he ie eT          SS eee Sas\ni.      a ee ee aL bod :                    pean, 4 4 eee x  fs ee\nog ea ee: Ee ee ie                    Pepe  ae  ee\neR tape age Se GT                    ie eS Te\nPe eet alge Cpr a                    EES AC peg\nOe ORIEL “ee ~via FS      —         ee Ne 二\nUe ie tee eS         Be ee ae ROSEY ake\n=    Pee eas ee Rita             BN aioe ee. a\n:      ea    patie, 33          2         SRN ween PRISE fey, eA\n:     人 aa                       bn ee ee  sae, Mien\n有                  Pi apa es ape:     Peete\nca LOE                  fect Sache        =\n——              ER nae hs PIS ae ae, >\n=                          Pe ES es   Sa a\nae   2    ¥              aa\niiss          fi   |        a       a            RE\n          cre:      ie             mee:     四\n         yf                 i                      a\nots        P                 ‘ey                  .*            .\nMh MeN       -                     ~~         ee\npre tae fa a                        ~ oe\n4       bis) tale    ia              _       Fs i       ~~\n“AN ee a                e        a    4          nea eee\noil     5                     eee        %         Spe ne OG\nee        ,                            te         ma REE See eines.\ntee ea Le                dl                                 4               eae    SR这四"
+      },
+      {
+        "local_sec": 10.0,
+        "absolute_sec": 446.0,
+        "sha256": "a6ec073b8c741588350a45958798388b61cba1a4fe9720b2420df4a60b7db7bf",
+        "ocr_text": "“Eee ates       TBR ee ISS tore a nage aa\nemer ul Ge ee    :\nse te eR By eA Ms rakes\nMe ge ee RE Re ig en ee\n;      ee Spleen   ps We Pe oP ieee Ce EN te,  a Ba shear] ve Myles Say Ne sae? Cals ees “\nie plat tae ps ee a      pees See :\nA oe  Joe RT 54 TD eae           Foe ERE Same te og oe as Geese By\nfa  ar age th Spry Nes cree igs ae                 和让 Bp ee Fegaes  点\n人                < 江 Ris Ua aes ae\nGola RD. Oe ed FURS AE                geet ite Op Oy IE\nag   eg  = x SS tes                  ae Pee   ee ss ae  iene  a\nek eee YF ee          =        CS oe pa pi 二全\n:    ; =.   ee    CR     7                   nee    SY gee, BAY rig x. ae sects\n<  ~ fe   tte Foca                  ce    Ae eae >本\nea owe pepe        '          Lass;    ib ee ee haa   =\nSpE                  et ee ee Peas\n和     =                        he EONS FE A\n»     _ ee     ea      证\n       —_    SS RS ESE -\n;    ‘        ,       a |\n\\   eg          é            ed   x ihc 一\n.        Cc 7\nHii Seeks     “ag                                      ‘aie e ke\nal rattan IE                                                 Sea\n-     ¥  ten              7                                                          emt"
+      },
+      {
+        "local_sec": 14.0,
+        "absolute_sec": 450.0,
+        "sha256": "72d8b76f4e75e1426e2a76812562a8d14731409db9c100f877583ebc24a0eea0",
+        "ocr_text": "+ Pos   六\nBee Py ee, Aa ase          ie   Be Sy A nat\n二 到，       党     ss     Re Wiese!    3\nBS hess se Ae p=      8       PAIS BOR ees abe ise ee\nGeet BRE Soa      Pi    Fi abe ys    Ee eae    ah\nvail      Rats a EY  te ee tee    to rte Se  Rin   ie Ree gn Wi\noe     中 me SPY Bees       Wi: ioe sie i   coy ke. i:\nPee    th, eee pe          DD pe nd Ta PR ee eo et ta   es\nfs     amp, Fy $e. oe ee         eye as ey Ae ieee a8\nee ces   ON a eS: vi pe?               MRS Ee ete Sa   iy a ee\nee Ye, lors    二                    SA ens ee raat 2g ee ce\nWie tee es Gees      一一-      SOS a SES Baas Mais eo\nia ei > shee ee eee\nfea Sle ee   Ce, gt                   On ee US STi ND Pee vik Be Ne\nnts sae gen aes Se       :            oa RE ape PRE Ae dae §\nnS     pe ays eee nae                 Ne ie ee i eres\npai ie XS cg ey                       IPS each PED EN Sane eo eae ae\ni    和                  [fue Geer a OA ee\noc oa eee         =      eae  有\nie   |        w   上\nia      SA                           RES Ry eA ets II ek 本\n      eee ea tt]   a    r    | ae On lg as toe pag be ~~”\n¥      Sa ge ee i cai\nlla ia                     “     a, Ey\n7    42a &        ee\n4   +    a     .          4             7  it ae\n是              ~                  ”      Mia\neee ES                       <\na.     p     a        By\ni i +.           ™~    oo Sa\noe    Be Ni           ay               :     x   eerie ee\n打扰攻人 生涯     ,.                KA          Ppa ge NU.\n:        Te ee       rp ONS         :      x         ‘i ee\n‘  Y  BP Ci ae ke    ca            SSS        a          Wie, Pe eae <a\noi) Aa aoe Mea >                    %       Eig Beane\n‘i     a lee NG      ry                          5            Posts eNO\n\"angele SS           ay                              =              ela"
+      },
+      {
+        "local_sec": 18.0,
+        "absolute_sec": 454.0,
+        "sha256": "61f5aa4f632277c8b40eeba17bb0eb5d719bc8e7312d71f6620951f1e75cf16d",
+        "ocr_text": "PRS Cee       :     pi OR en cS ae\nRY ce    a     Wigs a SS, ata\n:      SF ot che 3 a a, RMI iy Oe > EA ee RRO a\n     Re Ad. 2 Sass Res ath:     a. Baer   SE Mee Ein cea\nae a a Sameer gga iy cig fs ice io Re hae\nSquall a aera gd          a a ee i\n   ees  “4  ae  aby,  ae          he eee ee C5) Re Re kn Ss  Ps\nfol. ee fs opm:                       He et sa ee Cee ig\n和                     be ee Se ee\nfen Seppe os ee! a                       Cae po. eS\nsashes WE OORT, “TRE ~ yeti, ~~ 38           vs        BO er RN StS Mere\nmg    et Bann dae”      和       i i ere\nie       US ee Te a ad, Pe                          dee ey eevee  Sieg, 7 Toate git =\nee ew ee SCA        -    和\n    coon Ae el                 Di fomce = 5 Seas eS oe\n|                     二\n总    Te a                5 Bad aie  ose ae\nain               cae (Eo hen ns a a agers 史之\nae        Ee aE EE al\nt            ‘                     -        ae Cee Sea, TR\nee     /    »     .               ’      一   angen Hs —_\nat   a al   at   f     本 3 iy oe   7\nawe        a                                   a.\nPo ne a       >\npela eM AL SCE Wome cll                :    per cate a\n了   ae 5)  ther   ha        pe”     i              ‘  1          a os Sis\nLice 4      A   ‘ii 、六        / x           ah    ue      过   ponte\nx       ie ies   rae            SS        om      :         © ahh eee oe\nBe ee ele           =      -     本      <3 ee\n~     lta) gare.\" wae        J             ae             ©           Bea SE eS Se\nmee 3 Ae                           A          SA\nBae oy ge                ,                             :                ae      Rs"
+      }
+    ],
+    "best_match": {
+      "local_sec": 14.0,
+      "absolute_sec": 450.0,
+      "text": "ie   |        w   上",
+      "similarity": 0.153846,
+      "keyword_coverage": 0.0,
+      "score": 0.153846,
+      "line_count": 1,
+      "frame_sha256": "72d8b76f4e75e1426e2a76812562a8d14731409db9c100f877583ebc24a0eea0"
+    },
+    "smolvlm": {
+      "status": "not_requested"
+    }
+  },
+  "candidate_match_method": "audio_asr",
+  "candidate_match_score": 0.821429,
+  "candidate_content_match": true,
+  "candidate_observed_position_sec": 450.26,
+  "candidate_timing_error_sec": 4.26,
+  "candidate_absolute_timing_error_sec": 4.26,
+  "minimum_agent_review_score": 0.55,
+  "agent_acceptance_required": true,
+  "counts_toward_pilot_60": false,
+  "decode_evidence_sha256": "05cf37a7f3e49f7b5884e12dfacae950f49c58d5a7cbdec08fd51188cfe91d1f",
+  "temporary_clip_sha256": "09da02805839812d6efff811ef53a827df525a27f58b881b25bc7b3d704c1d4f",
+  "generated_at": "2026-09-15T09:40:44.716248+00:00",
+  "bundle_id": "928e4d8fa70eb86277ecfb6ae9c6d544492c6e0989e9049040cae078e42f956e",
+  "request_revision": 4,
+  "request_sha256": "cea56ae797cb974a1010a5aaeed7ae4e90fa8ce7c1ec9f275e1db274dc26d3ea"
 }
