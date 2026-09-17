@@ -12,6 +12,7 @@ ROOT = Path(__file__).resolve().parents[1]
 COMPLETED = ROOT / "coordination" / "completed"
 CLAIMS = ROOT / "coordination" / "claims"
 BUG_REPORTS = ROOT / "coordination" / "bug_reports"
+WORKFLOW = ROOT / "coordination" / "WORKFLOW.json"
 
 CURRENT_P9 = "P9-AUDIT-60-R2"
 CURRENT_P10 = "P10-PILOT-DECISION-R2"
@@ -37,6 +38,14 @@ TASK_TYPES = {
         "bug repair/control-plane/schema/CI/workflow maintenance; authorized admin only"
     ),
 }
+
+
+def load_workflow() -> dict:
+    try:
+        payload = json.loads(WORKFLOW.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return {}
+    return payload if isinstance(payload, dict) else {}
 
 
 def completed_path(task_id: str) -> Path:
@@ -116,12 +125,16 @@ def build_status(content_inspection_capable: bool, role: str = "worker") -> dict
     if role not in {"worker", "admin"}:
         raise ValueError(f"unsupported role: {role}")
 
+    workflow = load_workflow()
+    current_major_phase = str(workflow.get("current_major_phase") or "")
+    phase1_collection = current_major_phase == "PHASE_1_COLLECTION"
+
     ordinary = next_task.eligible_tasks()
     ordinary_business = [t for t in ordinary if ordinary_task_type(t) == "business"]
     ordinary_gate_report = [t for t in ordinary if ordinary_task_type(t) == "gate_or_report"]
 
-    playback_rows = playback_queue.case_statuses()
-    gate = playback_queue.gate_summary()
+    playback_rows = [] if phase1_collection else playback_queue.case_statuses()
+    gate = {"pilot60_pass": False, "phase_disabled": current_major_phase} if phase1_collection else playback_queue.gate_summary()
     tools = playback_queue.capability_status()
     playback_open = [row for row in playback_rows if row.get("missing_segment_ids") and not row.get("completed")]
     playback_unclaimed = [row for row in playback_open if not row.get("claim_exists")]
@@ -179,7 +192,9 @@ def build_status(content_inspection_capable: bool, role: str = "worker") -> dict
         and not repository_no_eligible_work
     )
 
-    if current_p10_completed and full_archive_decision == "YES":
+    if phase1_collection:
+        state = "PHASE_1_COLLECTION_ACTIVE"
+    elif current_p10_completed and full_archive_decision == "YES":
         state = "PILOT_DECISION_R2_COMPLETED_FULL_ARCHIVE_YES"
     elif current_p10_completed and full_archive_decision == "NO":
         state = "PILOT_DECISION_R2_COMPLETED_FULL_ARCHIVE_NO"
