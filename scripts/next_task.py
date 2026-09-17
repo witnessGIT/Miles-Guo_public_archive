@@ -15,6 +15,8 @@ CLAIMS = ROOT / "coordination" / "claims"
 COMPLETED = ROOT / "coordination" / "completed"
 READY = ROOT / "coordination" / "ready"
 PILOT_SELECTION = ROOT / "reports" / "pilot_selection.json"
+DATA_CURRENT = ROOT / "data" / "current"
+WORKFLOW = ROOT / "coordination" / "WORKFLOW.json"
 
 WORKFLOW_MODE = "continuous-worker-v2"
 CLAIM_PROTOCOL = "claim-protocol-v2"
@@ -34,6 +36,20 @@ STREAM_PRIORITIES = {
     "audit": 52,
 }
 
+WORK_ITEM_STAGE_PRIORITY = {
+    "source_merge": 74,
+    "metadata_fill": 72,
+    "transcript_import": 68,
+    "cue_split": 64,
+    "segment_split": 62,
+    "entity_pass": 58,
+    "event_pass": 57,
+    "claim_pass": 56,
+    "relation_pass": 54,
+    "text_verify": 50,
+    "playback_backlog": 45,
+}
+
 
 def utc_now() -> str:
     return datetime.now(timezone.utc).isoformat()
@@ -47,6 +63,64 @@ def load_queue() -> list[dict]:
         raw = raw.strip()
         if raw:
             tasks.append(json.loads(raw))
+    return tasks
+
+
+def load_workflow() -> dict:
+    try:
+        payload = json.loads(WORKFLOW.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return {}
+    return payload if isinstance(payload, dict) else {}
+
+
+def iter_current_records(relative_dir: str) -> list[dict]:
+    records: list[dict] = []
+    base = DATA_CURRENT / relative_dir
+    if not base.exists():
+        return records
+    for path in sorted(base.rglob("*")):
+        if not path.is_file() or path.suffix.lower() not in {".json", ".jsonl"}:
+            continue
+        if path.suffix.lower() == ".json":
+            payload = json.loads(path.read_text(encoding="utf-8"))
+            if isinstance(payload, dict):
+                records.append(payload)
+            elif isinstance(payload, list):
+                records.extend(item for item in payload if isinstance(item, dict))
+            continue
+        for raw in path.read_text(encoding="utf-8").splitlines():
+            raw = raw.strip()
+            if raw and not raw.startswith("#"):
+                row = json.loads(raw)
+                if isinstance(row, dict):
+                    records.append(row)
+    return records
+
+
+def live_work_item_tasks(done: set[str]) -> list[dict]:
+    tasks: list[dict] = []
+    for item in iter_current_records("live_work_items"):
+        item_id = str(item.get("id") or "")
+        if not item_id or item_id in done or has_record(COMPLETED, item_id) or has_record(CLAIMS, item_id):
+            continue
+        if str(item.get("work_status") or "open") != "open":
+            continue
+        stage = str(item.get("work_stage") or "")
+        tasks.append(
+            {
+                "id": item_id,
+                "priority": int(item.get("priority") or WORK_ITEM_STAGE_PRIORITY.get(stage, 50)),
+                "kind": "live_work_item",
+                "stage": stage,
+                "live_id": item.get("live_id"),
+                "source_candidate_id": item.get("source_candidate_id"),
+                "scope": item.get("instructions") or item.get("natural_boundary") or item_id,
+                "stream_task": False,
+                "work_item": True,
+                "depends_on": [],
+            }
+        )
     return tasks
 
 
@@ -262,7 +336,11 @@ def static_tasks(done: set[str]) -> list[dict]:
 
 def eligible_tasks() -> list[dict]:
     done = completed_ids()
-    tasks = stream_tasks(done) + static_tasks(done)
+    workflow = load_workflow()
+    legacy_stream_enabled = workflow.get("current_major_phase") != "PHASE_1_COLLECTION"
+    tasks = live_work_item_tasks(done) + static_tasks(done)
+    if legacy_stream_enabled:
+        tasks.extend(stream_tasks(done))
     filtered: list[dict] = []
     seen: set[str] = set()
     for task in tasks:
