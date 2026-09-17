@@ -101,6 +101,27 @@ For valid business/video-archive work:
 - preserve all quality gates and never fabricate evidence merely to accelerate completion;
 - after required Pilot gates pass, continue into `FULL_ARCHIVE` until all eligible public video archive work is complete.
 
+### After-task re-entry loop — mandatory
+
+After any single task finishes, the Agent must treat completion as a checkpoint, not a terminal
+state. In the same session it must:
+
+1. commit/push or PR-publish the task's durable outputs;
+2. refresh `main` and open PR state;
+3. re-run task discovery/entry;
+4. claim or reserve the next eligible task;
+5. continue working.
+
+The Agent must not stop merely because it completed one task, one livestream, one batch, one
+Playback request, one text-verification pass, or one PR update. A final response after a single
+completed task is valid only if the Agent also proves one of the documented stop conditions:
+`PROJECT_COMPLETE`, `NO_ELIGIBLE_WORK`, `USER_RECALL`, `HUMAN_DECISION_REQUIRED`,
+`SAFETY_OR_ACCESS_BLOCK`, verified inability to contribute by either direct write or PR, or
+true `HOST_STOP`.
+
+If another Agent already owns the next candidate, classify the race, refresh, and keep selecting
+another eligible task. Do not ask the user whether to continue.
+
 ## No-write PR protocol
 
 Before starting a task, a no-write Agent must check both:
