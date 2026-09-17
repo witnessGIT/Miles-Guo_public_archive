@@ -11,7 +11,7 @@ PROJECT_NAME = "Miles-Guo_public_archive"
 DATABASE_NAME = "Miles-Guo_public_archive.sqlite3"
 
 ROOT = Path(__file__).resolve().parents[1]
-DATA_DIR = ROOT / "data"
+DATA_DIR = ROOT / "data" / "current"
 SCHEMA_PATH = ROOT / "schema" / "schema.sql"
 DATABASE_DIR = ROOT / "database"
 DATABASE_PATH = DATABASE_DIR / DATABASE_NAME
@@ -31,6 +31,7 @@ DATASETS: tuple[tuple[str, str], ...] = (
     ("source_match_candidates", "source_match_candidates"),
     ("media_assets", "media_assets"),
     ("transcript_versions", "transcript_versions"),
+    ("transcript_cues", "transcript_cues"),
     ("segment_speakers", "segment_speakers"),
     ("segment_entities", "segment_entities"),
     ("live_events", "live_events"),
@@ -38,6 +39,8 @@ DATASETS: tuple[tuple[str, str], ...] = (
     ("segment_claims", "segment_claims"),
     ("segment_relations", "segment_relations"),
     ("segment_clip_notes", "segment_clip_notes"),
+    ("evidence_links", "evidence_links"),
+    ("verification_checks", "verification_checks"),
 )
 
 
