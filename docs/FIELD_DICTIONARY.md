@@ -24,7 +24,9 @@ Active records for this restarted run belong under `data/current/`. Existing fil
 | Object | Format | Example |
 |---|---|---|
 | Livestream | `LIVE_YYYYMMDD_NNN` | `LIVE_20210612_001` |
+| Source candidate | `SC_<site>_<stable_id>` | `SC_GHOT_abc123` |
 | Source | `SRC_<site>_<stable_id>` | `SRC_GHOT_abc123` |
+| Live work item | `WI_<live_id>_<stage>` | `WI_LIVE_20210612_001_claim_pass` |
 | Segment | `<live_id>_SEG_000000` | `LIVE_20210612_001_SEG_000014` |
 | Media asset | `MEDIA_<source-or-live>_<role>` | `MEDIA_SRC_GHOT_abc123_original_video` |
 | Transcript version | `TR_<live_id>_<kind>_<lang>_<NNN>` | `TR_LIVE_20210612_001_asr_raw_zh_001` |
@@ -55,6 +57,29 @@ If video checking is deferred, create records as `unverified`, `needs_review`, o
 `text_verified`.
 
 ## Core livestream records
+
+### `source_candidates`
+
+First-stage discovery records. These are safer than asking agents to immediately decide canonical
+livestream identity.
+
+| Field | Type | Required | How to fill |
+|---|---:|---:|---|
+| `id` | text | yes | `SC_<site>_<stable_id>`. |
+| `source_site` | text | yes | `GWINS`, `GHOT`, `GETTRSEARCH`, `GETTR`, etc. |
+| `source_url` | text | yes | Page or media URL found at a natural boundary. |
+| `page_kind` | enum | yes | `index_page`, `search_result_page`, `date_page`, `channel_page`, `detail_page`, `media_page`, `unknown`. |
+| `discovery_context` | text | no | Page/date/search/channel boundary where it was found. |
+| `candidate_title` | text | no | Title as displayed. |
+| `candidate_date`, `candidate_published_at` | text | no | Date/time shown by source. |
+| `candidate_duration_text`, `candidate_duration_sec` | text/number | no | Duration if shown or decoded. |
+| `has_video`, `has_audio`, `has_transcript`, `has_timestamps` | 0/1 | no | Only mark when visible from source. |
+| `source_video_id`, `source_page_id` | text | no | Stable platform/source IDs. |
+| `candidate_live_id` | text | no | Suggested live ID if obvious; not authoritative. |
+| `status` | enum | yes | `discovered`, `needs_review`, `promoted`, `duplicate`, `rejected`, `blocked`. |
+| `confidence` | number | no | 0-1 if inferred. |
+| `discovered_by`, `discovered_at` | text/datetime | yes | Agent/process and UTC timestamp. |
+| `metadata_json` | JSON text | no | Raw visible metadata. |
 
 ### `live_videos`
 
@@ -110,6 +135,24 @@ Concrete media or sidecar assets from sources.
 | `availability_status` | enum/text | yes | `unknown`, `reachable`, `blocked`, `decoded`, `video_only`, `audio_only`, `dead`. |
 | `checked_at` | datetime text | no | Last technical check time. |
 | `metadata_json` | JSON text | no | ffprobe/yt-dlp metadata or error summaries. |
+
+### `live_work_items`
+
+Natural-boundary processing tasks for one livestream and one stage. This replaces fixed quotas such
+as “process N videos” or “extract N claims.”
+
+| Field | Type | Required | How to fill |
+|---|---:|---:|---|
+| `id` | text | yes | `WI_<live_id>_<stage>`. |
+| `live_id` | text | no | Canonical livestream when known. |
+| `source_candidate_id` | text | no | Candidate being promoted/reviewed, when no live exists yet. |
+| `work_stage` | enum | yes | `source_merge`, `metadata_fill`, `transcript_import`, `cue_split`, `segment_split`, `entity_pass`, `event_pass`, `claim_pass`, `relation_pass`, `text_verify`, `playback_backlog`. |
+| `work_status` | enum | yes | `open`, `in_progress`, `blocked`, `done`, `superseded`. |
+| `natural_boundary` | text | yes | Example: one canonical livestream + one processing stage. |
+| `instructions` | text | yes | What the agent should do for this stage. |
+| `priority` | integer | yes | Higher first. |
+| `depends_on_json` | JSON text | no | Optional stage dependencies. |
+| `created_at`, `updated_at` | datetime text | yes | UTC ISO timestamp. |
 
 ## Transcript and timing records
 
@@ -339,6 +382,8 @@ Clip usefulness for future video production. This is still based only on origina
 | Stage | Agent must create or update |
 |---|---|
 | Source inventory | `live_videos`, `live_sources`, optionally `media_assets` |
+| Source discovery | `source_candidates` only; do not force fixed counts |
+| Candidate promotion | `live_videos`, `live_sources`, `media_assets`, then `live_work_items` |
 | Media/transcript extraction | `media_assets`, `transcript_versions`, `transcript_cues` |
 | Segmentation | `live_segments`, `evidence_links`, `verification_checks` as `unverified` |
 | Entity/event pass | `entities`, `segment_speakers`, `segment_entities`, `live_events`, `segment_events`, `evidence_links` |
