@@ -1,0 +1,19 @@
+{
+  "task_id":"C1-GWINS-SOURCE-CANDIDATES",
+  "agent_id":"agent-20260917T081100Z-gpt56sol-gwins-c1",
+  "status":"completed",
+  "workflow_mode":"continuous-worker-v2",
+  "claim_protocol":"claim-protocol-v2",
+  "completed_at":"2026-09-17T08:13:00Z",
+  "natural_boundary":"https://www.gwins.org/cn/milesguo/list_2_71.html",
+  "outputs":["data/current/source_candidates/gwins/list_2_71.jsonl"],
+  "candidate_count":10,
+  "validation":{
+    "source_site":"GWINS",
+    "page_kind":"index_page",
+    "canonical_promotion_performed":false,
+    "all_candidates_status":"discovered",
+    "evidence_basis":"public GWINS list boundary and visible listing metadata"
+  },
+  "continue_after_finish":true
+}
