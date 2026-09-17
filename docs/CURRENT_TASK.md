@@ -22,6 +22,36 @@ The SQLite builder reads only `data/current/`. Files outside `data/current/` are
 database input unless a future task explicitly re-ingests them with fresh evidence links and
 verification status.
 
+## Natural-boundary workflow
+
+Do not divide work by a fixed number of videos, rows, clips, or claims. Livestreams vary too much
+for quota-based slicing.
+
+Current workflow:
+
+```text
+source page/search page/date page/detail page
+→ source_candidates
+→ canonical live_videos + live_sources + media_assets
+→ live_work_items
+→ one livestream + one processing stage per task
+→ continue to next eligible task
+```
+
+Valid first-stage units are natural source boundaries such as one index page, one date page, one
+channel page, one search result page, or one detail page. A worker records what it finds as
+`source_candidates` and stops that task at the natural page boundary, not at an arbitrary count.
+
+After candidates are promoted to canonical livestreams, run:
+
+```bash
+python scripts/derive_live_work_items.py
+```
+
+This creates per-livestream processing tasks such as `metadata_fill`, `transcript_import`,
+`cue_split`, `segment_split`, `entity_pass`, `event_pass`, `claim_pass`, `relation_pass`,
+`text_verify`, and `playback_backlog`.
+
 ## Start here
 
 Classify current repository/session state with:
@@ -108,7 +138,7 @@ FULL_ARCHIVE YES / NO decision
 
 `FULL_ARCHIVE` MUST NOT begin unless the **current R2 P10** explicitly authorizes it.
 
-## Two work queues
+## Work queues
 
 Ordinary business/gate work:
 
@@ -116,7 +146,7 @@ Ordinary business/gate work:
 python scripts/next_task.py --list
 ```
 
-Real playback-position work:
+Real playback-position work is deferred during `PHASE_1_COLLECTION`. Later phases may use:
 
 ```bash
 python scripts/playback_queue.py --list
