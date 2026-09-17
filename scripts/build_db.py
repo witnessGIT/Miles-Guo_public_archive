@@ -20,8 +20,10 @@ TEMP_DATABASE_PATH = DATABASE_DIR / f"{DATABASE_NAME}.tmp"
 # Directory -> target table. Paths are recursive and may contain independent
 # per-agent/per-year/per-batch files.
 DATASETS: tuple[tuple[str, str], ...] = (
+    ("source_candidates", "source_candidates"),
     ("live_videos", "live_videos"),
     ("sources", "live_sources"),
+    ("live_work_items", "live_work_items"),
     ("live_segments", "live_segments"),
     ("archive_items", "archive_items"),
     ("entities", "entities"),
