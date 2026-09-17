@@ -1,0 +1,21 @@
+{
+  "task_id": "C1-GHOT-SOURCE-CANDIDATES",
+  "agent_id": "agent-20260917T1612Z-ad77-ghot-c1",
+  "status": "completed",
+  "completed_at": "2026-09-17T16:12:00+08:00",
+  "workflow_mode": "continuous-worker-v2",
+  "claim_protocol": "claim-protocol-v2",
+  "natural_boundary": "GHOT videos index page https://ghot.ai/archive/videos",
+  "output": "data/current/source_candidates/C1-GHOT-archive-videos-index-2023-03-06-to-2023-03-14.jsonl",
+  "candidate_count": 12,
+  "scope_respected": true,
+  "promotion_performed": false,
+  "validation": {
+    "source_site": "GHOT",
+    "all_records_status": "discovered",
+    "all_candidate_live_ids_null": true,
+    "all_records_have_source_url": true,
+    "all_records_have_source_video_id": true
+  },
+  "evidence_note": "Candidates were collected from one natural GHOT archive index boundary and linked detail pages. Missing duration/timestamp fields were left null rather than inferred. Detail pages expose source links where available."
+}
