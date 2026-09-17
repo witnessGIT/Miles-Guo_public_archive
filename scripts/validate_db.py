@@ -20,8 +20,10 @@ SEGMENT_ID_RE = re.compile(r"^LIVE_\d{8}_\d{3}_SEG_\d{6}$")
 SOURCE_ID_RE = re.compile(r"^SRC_[A-Za-z0-9_.-]+$")
 
 REQUIRED_TABLES = {
+    "source_candidates",
     "live_videos",
     "live_sources",
+    "live_work_items",
     "live_segments",
     "source_match_candidates",
     "archive_items",
@@ -126,6 +128,32 @@ def validate() -> tuple[list[str], list[str], dict[str, int]]:
             live_id = str(row["id"])
             if not LIVE_ID_RE.fullmatch(live_id):
                 add_error(errors, f"invalid live_id format: {live_id}")
+
+        # Source candidates are the safe first-stage inventory unit.
+        for row in conn.execute(
+            "SELECT id, source_site, source_url, status FROM source_candidates ORDER BY id"
+        ):
+            candidate_id = str(row["id"])
+            if not str(row["source_site"] or "").strip():
+                add_error(errors, f"source_candidate source_site is empty: {candidate_id}")
+            if not str(row["source_url"] or "").strip():
+                add_error(errors, f"source_candidate source_url is empty: {candidate_id}")
+
+        # Live work items encode natural-boundary work, not fixed row-count quotas.
+        for row in conn.execute(
+            """
+            SELECT id, live_id, source_candidate_id, work_stage, work_status, natural_boundary, instructions
+            FROM live_work_items
+            ORDER BY priority DESC, id
+            """
+        ):
+            item_id = str(row["id"])
+            if row["live_id"] is None and row["source_candidate_id"] is None:
+                add_error(errors, f"live_work_item lacks both live_id and source_candidate_id: {item_id}")
+            if not str(row["natural_boundary"] or "").strip():
+                add_error(errors, f"live_work_item lacks natural_boundary: {item_id}")
+            if not str(row["instructions"] or "").strip():
+                add_error(errors, f"live_work_item lacks instructions: {item_id}")
 
         # Every canonical live record must remain traceable to at least one source.
         orphan_lives = conn.execute(
