@@ -38,6 +38,54 @@ CREATE TABLE IF NOT EXISTS live_sources (
     UNIQUE(source_site, url)
 );
 
+CREATE TABLE IF NOT EXISTS source_candidates (
+    id TEXT PRIMARY KEY,
+    source_site TEXT NOT NULL,
+    source_url TEXT NOT NULL,
+    page_kind TEXT NOT NULL DEFAULT 'unknown'
+        CHECK (page_kind IN ('index_page','search_result_page','date_page','channel_page','detail_page','media_page','unknown')),
+    discovery_context TEXT,
+    candidate_title TEXT,
+    candidate_date TEXT,
+    candidate_published_at TEXT,
+    candidate_duration_text TEXT,
+    candidate_duration_sec REAL,
+    has_video INTEGER CHECK (has_video IS NULL OR has_video IN (0,1)),
+    has_audio INTEGER CHECK (has_audio IS NULL OR has_audio IN (0,1)),
+    has_transcript INTEGER CHECK (has_transcript IS NULL OR has_transcript IN (0,1)),
+    has_timestamps INTEGER CHECK (has_timestamps IS NULL OR has_timestamps IN (0,1)),
+    source_video_id TEXT,
+    source_page_id TEXT,
+    candidate_live_id TEXT,
+    status TEXT NOT NULL DEFAULT 'discovered'
+        CHECK (status IN ('discovered','needs_review','promoted','duplicate','rejected','blocked')),
+    confidence REAL CHECK (confidence IS NULL OR (confidence >= 0 AND confidence <= 1)),
+    discovered_by TEXT,
+    discovered_at TEXT NOT NULL,
+    metadata_json TEXT,
+    UNIQUE(source_site, source_url)
+);
+
+CREATE TABLE IF NOT EXISTS live_work_items (
+    id TEXT PRIMARY KEY,
+    live_id TEXT REFERENCES live_videos(id) ON DELETE CASCADE,
+    source_candidate_id TEXT REFERENCES source_candidates(id) ON DELETE SET NULL,
+    work_stage TEXT NOT NULL CHECK (work_stage IN (
+        'source_merge','metadata_fill','transcript_import','cue_split',
+        'segment_split','entity_pass','event_pass','claim_pass',
+        'relation_pass','text_verify','playback_backlog'
+    )),
+    work_status TEXT NOT NULL DEFAULT 'open'
+        CHECK (work_status IN ('open','in_progress','blocked','done','superseded')),
+    natural_boundary TEXT NOT NULL,
+    instructions TEXT NOT NULL,
+    priority INTEGER NOT NULL DEFAULT 50,
+    depends_on_json TEXT,
+    created_at TEXT NOT NULL,
+    updated_at TEXT NOT NULL,
+    CHECK (live_id IS NOT NULL OR source_candidate_id IS NOT NULL)
+);
+
 CREATE TABLE IF NOT EXISTS live_segments (
     id TEXT PRIMARY KEY,
     live_id TEXT NOT NULL REFERENCES live_videos(id) ON DELETE CASCADE,
@@ -337,6 +385,10 @@ CREATE INDEX IF NOT EXISTS idx_live_videos_date ON live_videos(live_date);
 CREATE INDEX IF NOT EXISTS idx_live_sources_live_id ON live_sources(live_id);
 CREATE INDEX IF NOT EXISTS idx_live_sources_site ON live_sources(source_site);
 CREATE INDEX IF NOT EXISTS idx_live_sources_video_id ON live_sources(source_video_id);
+CREATE INDEX IF NOT EXISTS idx_source_candidates_site_status ON source_candidates(source_site, status);
+CREATE INDEX IF NOT EXISTS idx_source_candidates_date ON source_candidates(candidate_date);
+CREATE INDEX IF NOT EXISTS idx_live_work_items_status ON live_work_items(work_status, priority);
+CREATE INDEX IF NOT EXISTS idx_live_work_items_live_stage ON live_work_items(live_id, work_stage);
 CREATE INDEX IF NOT EXISTS idx_live_segments_live_id ON live_segments(live_id);
 CREATE INDEX IF NOT EXISTS idx_live_segments_start_sec ON live_segments(live_id, start_sec);
 CREATE INDEX IF NOT EXISTS idx_source_match_decision ON source_match_candidates(decision, match_score);
