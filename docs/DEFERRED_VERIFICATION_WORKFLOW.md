@@ -18,9 +18,11 @@ current database rows.
 
 Ordinary agents may create:
 
+- `source_candidates`
 - `live_videos`
 - `live_sources`
 - `media_assets`
+- `live_work_items`
 - `transcript_versions`
 - `transcript_cues`
 - `live_segments`
@@ -36,6 +38,10 @@ Ordinary agents may create:
 
 All derived records must remain `unverified` or `needs_review` unless a real cross-check has been
 performed.
+
+Stage 1 uses natural boundaries. Agents must not be told to process a fixed number of videos or
+records. A source discovery task ends at a page/date/search/detail boundary; a livestream processing
+task ends at one `live_work_items.work_stage`.
 
 ## Stage 2: text cross-check
 
