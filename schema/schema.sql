@@ -181,6 +181,25 @@ CREATE TABLE IF NOT EXISTS transcript_versions (
     UNIQUE(live_id, transcript_kind, language, source_id)
 );
 
+CREATE TABLE IF NOT EXISTS transcript_cues (
+    id TEXT PRIMARY KEY,
+    transcript_version_id TEXT NOT NULL REFERENCES transcript_versions(id) ON DELETE CASCADE,
+    live_id TEXT NOT NULL REFERENCES live_videos(id) ON DELETE CASCADE,
+    cue_index INTEGER NOT NULL,
+    start_sec REAL,
+    end_sec REAL,
+    speaker_entity_id TEXT REFERENCES entities(id) ON DELETE SET NULL,
+    text TEXT NOT NULL,
+    timing_status TEXT NOT NULL DEFAULT 'unknown'
+        CHECK (timing_status IN ('unknown','asr','source_caption','aligned','playback_verified','needs_review')),
+    confidence REAL CHECK (confidence IS NULL OR (confidence >= 0 AND confidence <= 1)),
+    source_cue_id TEXT,
+    CHECK (cue_index >= 0),
+    CHECK (start_sec IS NULL OR start_sec >= 0),
+    CHECK (end_sec IS NULL OR start_sec IS NULL OR end_sec >= start_sec),
+    UNIQUE(transcript_version_id, cue_index)
+);
+
 CREATE TABLE IF NOT EXISTS segment_speakers (
     segment_id TEXT NOT NULL REFERENCES live_segments(id) ON DELETE CASCADE,
     entity_id TEXT NOT NULL REFERENCES entities(id) ON DELETE CASCADE,
@@ -258,6 +277,52 @@ CREATE TABLE IF NOT EXISTS segment_clip_notes (
     notes TEXT
 );
 
+CREATE TABLE IF NOT EXISTS evidence_links (
+    id TEXT PRIMARY KEY,
+    subject_type TEXT NOT NULL
+        CHECK (subject_type IN (
+            'segment','transcript_cue','segment_entity','segment_event',
+            'segment_claim','segment_relation','segment_clip_note','live_event'
+        )),
+    subject_id TEXT NOT NULL,
+    live_id TEXT NOT NULL REFERENCES live_videos(id) ON DELETE CASCADE,
+    segment_id TEXT REFERENCES live_segments(id) ON DELETE CASCADE,
+    transcript_cue_id TEXT REFERENCES transcript_cues(id) ON DELETE SET NULL,
+    source_id TEXT REFERENCES live_sources(id) ON DELETE SET NULL,
+    quote TEXT,
+    start_sec REAL,
+    end_sec REAL,
+    evidence_role TEXT NOT NULL DEFAULT 'primary'
+        CHECK (evidence_role IN ('primary','supporting','locator','conflict','needs_review')),
+    confidence REAL CHECK (confidence IS NULL OR (confidence >= 0 AND confidence <= 1)),
+    created_at TEXT NOT NULL,
+    CHECK (segment_id IS NOT NULL OR transcript_cue_id IS NOT NULL OR source_id IS NOT NULL),
+    CHECK (start_sec IS NULL OR start_sec >= 0),
+    CHECK (end_sec IS NULL OR start_sec IS NULL OR end_sec >= start_sec)
+);
+
+CREATE TABLE IF NOT EXISTS verification_checks (
+    id TEXT PRIMARY KEY,
+    target_type TEXT NOT NULL
+        CHECK (target_type IN (
+            'live_video','segment','transcript_cue','segment_claim',
+            'segment_relation','segment_event','segment_entity','segment_clip_note'
+        )),
+    target_id TEXT NOT NULL,
+    live_id TEXT NOT NULL REFERENCES live_videos(id) ON DELETE CASCADE,
+    segment_id TEXT REFERENCES live_segments(id) ON DELETE SET NULL,
+    check_stage TEXT NOT NULL
+        CHECK (check_stage IN ('source_inventory','text_crosscheck','playback_audio','playback_video','final_acceptance')),
+    check_status TEXT NOT NULL
+        CHECK (check_status IN ('unverified','needs_review','text_verified','playback_verified','accepted','rejected','blocked')),
+    method TEXT,
+    evidence_link_id TEXT REFERENCES evidence_links(id) ON DELETE SET NULL,
+    checked_by TEXT,
+    checked_at TEXT NOT NULL,
+    notes TEXT,
+    confidence REAL CHECK (confidence IS NULL OR (confidence >= 0 AND confidence <= 1))
+);
+
 -- Standalone FTS table is rebuilt from live_segments by scripts/build_db.py.
 CREATE VIRTUAL TABLE IF NOT EXISTS live_segments_fts USING fts5(
     segment_id UNINDEXED,
@@ -279,7 +344,13 @@ CREATE INDEX IF NOT EXISTS idx_archive_items_published_at ON archive_items(publi
 CREATE INDEX IF NOT EXISTS idx_archive_items_type ON archive_items(item_type);
 CREATE INDEX IF NOT EXISTS idx_media_assets_live_id ON media_assets(live_id);
 CREATE INDEX IF NOT EXISTS idx_transcript_versions_live_id ON transcript_versions(live_id);
+CREATE INDEX IF NOT EXISTS idx_transcript_cues_live_time ON transcript_cues(live_id, start_sec);
+CREATE INDEX IF NOT EXISTS idx_transcript_cues_version ON transcript_cues(transcript_version_id, cue_index);
 CREATE INDEX IF NOT EXISTS idx_segment_entities_entity_id ON segment_entities(entity_id);
 CREATE INDEX IF NOT EXISTS idx_segment_events_event_id ON segment_events(event_id);
 CREATE INDEX IF NOT EXISTS idx_segment_claims_type ON segment_claims(claim_type);
 CREATE INDEX IF NOT EXISTS idx_segment_relations_to ON segment_relations(to_segment_id, relation_type);
+CREATE INDEX IF NOT EXISTS idx_evidence_links_subject ON evidence_links(subject_type, subject_id);
+CREATE INDEX IF NOT EXISTS idx_evidence_links_live_time ON evidence_links(live_id, start_sec);
+CREATE INDEX IF NOT EXISTS idx_verification_checks_target ON verification_checks(target_type, target_id);
+CREATE INDEX IF NOT EXISTS idx_verification_checks_live_stage ON verification_checks(live_id, check_stage, check_status);
