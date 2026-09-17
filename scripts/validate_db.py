@@ -30,9 +30,9 @@ REQUIRED_TABLES = {
     "topics",
     "item_topics",
     "live_segments_fts",
-    "media_assets", "transcript_versions", "segment_speakers", "segment_entities",
+    "media_assets", "transcript_versions", "transcript_cues", "segment_speakers", "segment_entities",
     "live_events", "segment_events", "segment_claims", "segment_relations",
-    "segment_clip_notes",
+    "segment_clip_notes", "evidence_links", "verification_checks",
 }
 
 
@@ -232,6 +232,85 @@ def validate() -> tuple[list[str], list[str], dict[str, int]]:
                 warnings,
                 f"{unverified_timed} timed segment(s) have not been playback-verified yet",
             )
+
+        # Transcript cues are sentence/subtitle-level timing anchors.
+        for row in conn.execute(
+            """
+            SELECT tc.id, tc.transcript_version_id, tc.live_id, tv.live_id AS parent_live_id,
+                   tc.cue_index, tc.start_sec, tc.end_sec
+            FROM transcript_cues tc
+            JOIN transcript_versions tv ON tv.id = tc.transcript_version_id
+            ORDER BY tc.transcript_version_id, tc.cue_index
+            """
+        ):
+            cue_id = str(row["id"])
+            if row["live_id"] != row["parent_live_id"]:
+                add_error(
+                    errors,
+                    f"transcript cue live_id does not match parent transcript: {cue_id}",
+                )
+            if row["cue_index"] < 0:
+                add_error(errors, f"negative transcript cue index: {cue_id}")
+            if row["end_sec"] is not None and row["start_sec"] is None:
+                add_error(errors, f"transcript cue end_sec present without start_sec: {cue_id}")
+
+        # Every derived evidence link must have a durable locator and stay inside the same live.
+        for row in conn.execute(
+            """
+            SELECT el.id, el.live_id, el.segment_id, el.transcript_cue_id,
+                   ls.live_id AS segment_live_id, tc.live_id AS cue_live_id,
+                   el.start_sec, el.end_sec
+            FROM evidence_links el
+            LEFT JOIN live_segments ls ON ls.id = el.segment_id
+            LEFT JOIN transcript_cues tc ON tc.id = el.transcript_cue_id
+            ORDER BY el.id
+            """
+        ):
+            evidence_id = str(row["id"])
+            if row["segment_live_id"] is not None and row["segment_live_id"] != row["live_id"]:
+                add_error(errors, f"evidence link segment belongs to another live: {evidence_id}")
+            if row["cue_live_id"] is not None and row["cue_live_id"] != row["live_id"]:
+                add_error(errors, f"evidence link cue belongs to another live: {evidence_id}")
+            if row["end_sec"] is not None and row["start_sec"] is None:
+                add_error(errors, f"evidence link end_sec present without start_sec: {evidence_id}")
+
+        # Verification checks make deferred playback safe: text-only work must not be
+        # silently upgraded to playback/final acceptance.
+        for row in conn.execute(
+            """
+            SELECT vc.id, vc.target_type, vc.target_id, vc.live_id, vc.segment_id, vc.check_stage, vc.check_status,
+                   vc.evidence_link_id, ls.live_id AS segment_live_id,
+                   el.live_id AS evidence_live_id
+            FROM verification_checks vc
+            LEFT JOIN live_segments ls ON ls.id = vc.segment_id
+            LEFT JOIN evidence_links el ON el.id = vc.evidence_link_id
+            ORDER BY vc.id
+            """
+        ):
+            check_id = str(row["id"])
+            if row["segment_live_id"] is not None and row["segment_live_id"] != row["live_id"]:
+                add_error(errors, f"verification check segment belongs to another live: {check_id}")
+            if row["evidence_live_id"] is not None and row["evidence_live_id"] != row["live_id"]:
+                add_error(errors, f"verification check evidence belongs to another live: {check_id}")
+            if row["check_status"] in {"text_verified", "playback_verified", "accepted"} and not row["evidence_link_id"]:
+                add_error(errors, f"verified check lacks evidence_link_id: {check_id}")
+            if row["check_stage"] == "final_acceptance" and row["check_status"] == "accepted":
+                playback_rows = conn.execute(
+                    """
+                    SELECT COUNT(*)
+                    FROM verification_checks
+                    WHERE live_id = ?
+                      AND target_type = ?
+                      AND target_id = ?
+                      AND check_status = 'playback_verified'
+                    """,
+                    (row["live_id"], row["target_type"], row["target_id"]),
+                ).fetchone()[0]
+                if playback_rows == 0:
+                    add_error(
+                        errors,
+                        f"final accepted check has no prior playback_verified check: {check_id}",
+                    )
 
     finally:
         conn.close()
