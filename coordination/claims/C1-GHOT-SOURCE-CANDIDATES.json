@@ -1,0 +1,11 @@
+{
+  "task_id": "C1-GHOT-SOURCE-CANDIDATES",
+  "agent_id": "agent-20260917T1612Z-ad77-ghot-c1",
+  "claimed_at": "2026-09-17T16:12:00+08:00",
+  "status": "in_progress",
+  "workflow_mode": "continuous-worker-v2",
+  "claim_protocol": "claim-protocol-v2",
+  "scope": "Scan one natural GHOT boundary at a time and write source_candidates only. Do not promote candidates to canonical live_videos.",
+  "natural_boundary": "one GHOT archive/date/list/detail page",
+  "continue_after_finish": true
+}
