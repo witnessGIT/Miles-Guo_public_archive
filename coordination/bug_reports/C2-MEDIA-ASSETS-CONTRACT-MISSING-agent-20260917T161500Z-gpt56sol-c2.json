@@ -1,0 +1,16 @@
+{
+  "id": "BUG-C2-MEDIA-ASSETS-CONTRACT-MISSING-20260917",
+  "task_id": "C2-CANDIDATE-PROMOTION",
+  "reported_by": "agent-20260917T161500Z-gpt56sol-c2",
+  "reported_at": "2026-09-17T16:18:00+08:00",
+  "status": "open",
+  "severity": "blocking",
+  "summary": "C2 scope requires promotion into canonical live_videos, live_sources and media_assets, but schema/schema.sql defines live_videos and live_sources and contains no media_assets table; repository code search also finds no media_assets contract.",
+  "evidence": [
+    "coordination/WORK_QUEUE.jsonl C2 scope names media_assets",
+    "schema/schema.sql has CREATE TABLE live_videos and live_sources but no CREATE TABLE media_assets",
+    "data/current currently contains only README.md, source_candidates/, and templates/"
+  ],
+  "worker_action": "Stopped before inventing or patching protected schema/scripts. Worker role may report bugs but must not repair schema/workflow machinery.",
+  "requested_admin_action": "Define the canonical media_assets schema/data contract or revise C2 scope, then make C2 executable."
+}
