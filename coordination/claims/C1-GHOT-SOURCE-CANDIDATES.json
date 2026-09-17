@@ -2,10 +2,13 @@
   "task_id": "C1-GHOT-SOURCE-CANDIDATES",
   "agent_id": "agent-20260917T1612Z-ad77-ghot-c1",
   "claimed_at": "2026-09-17T16:12:00+08:00",
-  "status": "in_progress",
+  "status": "completed",
   "workflow_mode": "continuous-worker-v2",
   "claim_protocol": "claim-protocol-v2",
   "scope": "Scan one natural GHOT boundary at a time and write source_candidates only. Do not promote candidates to canonical live_videos.",
-  "natural_boundary": "one GHOT archive/date/list/detail page",
+  "natural_boundary": "GHOT videos index page https://ghot.ai/archive/videos",
+  "completed_at": "2026-09-17T16:12:00+08:00",
+  "output": "data/current/source_candidates/C1-GHOT-archive-videos-index-2023-03-06-to-2023-03-14.jsonl",
+  "candidate_count": 12,
   "continue_after_finish": true
 }
