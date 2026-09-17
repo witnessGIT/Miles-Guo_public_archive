@@ -1,0 +1,22 @@
+{
+  "task_id": "C1-GETTRSEARCH-SOURCE-CANDIDATES",
+  "agent_id": "agent-20260917T161200Z-gpt56sol-gettr-c1",
+  "status": "completed",
+  "workflow_mode": "continuous-worker-v2",
+  "claim_protocol": "claim-protocol-v2",
+  "natural_boundary": "one GETTR public detail page returned from a public discovery search",
+  "boundary_url": "https://gettr.com/post/p3y488pf67a",
+  "result": {
+    "source_candidates_created": 1,
+    "canonical_livestreams_promoted": 0,
+    "candidate_paths": ["data/current/source_candidates/GETTRSEARCH/SC_GETTR_P3Y488PF67A.json"]
+  },
+  "validation": {
+    "source_url_public": true,
+    "candidate_status_discovered": true,
+    "promotion_deferred": true,
+    "fixed_quota_used": false
+  },
+  "finished_at": "2026-09-17T16:12:00+08:00",
+  "continue_after_finish": true
+}
