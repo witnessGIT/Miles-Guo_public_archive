@@ -92,6 +92,11 @@ Each candidate must preserve:
 
 Use `needs_review` only when the row is relevant but ambiguous.
 
+Before adding a candidate, search existing `data/current/source_candidates/` for the same
+`source_site` plus `source_video_id` or exact `source_url`. If the same source item already
+exists, do not reuse the same `id`. Either skip the row, or write a unique `duplicate` row whose
+`metadata_json` includes `duplicate_of` and the boundary where it was rediscovered.
+
 Valid `source_candidates.page_kind` values are:
 
 - `index_page`
