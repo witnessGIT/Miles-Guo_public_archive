@@ -1,0 +1,15 @@
+{
+  "task_id": "C1-GHOT-archive-videos-before-2022-08-23",
+  "agent_id": "agent-20260919-gpt56sol-continuous-c1b",
+  "status": "completed",
+  "completed_at": "2026-09-18T18:10:00Z",
+  "workflow_mode": "continuous-worker-v2",
+  "claim_protocol": "claim-protocol-v2",
+  "natural_boundary": "GHOT next older public archive boundary before 2022-08-23",
+  "outputs": ["data/current/source_candidates/C1-GHOT-archive-videos-before-2022-08-23.jsonl", "data/current/source_boundaries/phase1_initial_boundaries.jsonl"],
+  "candidate_count": 1,
+  "canonical_promotion_performed": false,
+  "validation": {"source_site":"GHOT","all_candidates_status":"discovered","all_candidate_live_ids_null":true,"fixed_quota_used":false,"evidence_basis":"public GHOT indexed detail-page evidence for 2022-08-17-1"},
+  "new_boundaries": ["C1-GHOT-archive-videos-before-2022-08-17"],
+  "continue_after_finish": true
+}
