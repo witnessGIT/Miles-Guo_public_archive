@@ -1,0 +1,27 @@
+{
+  "task_id": "C2-CANDIDATE-PROMOTION-SAMPLE-20260918",
+  "parent_task": "C2-CANDIDATE-PROMOTION",
+  "agent_id": "agent-20260918T122000Z-codex-c2c3-sample",
+  "status": "completed",
+  "completed_at": "2026-09-18T12:20:00Z",
+  "scope": "Conservative sample promotion of three clear GWINS candidates to prove the C2/C3 data path without claiming full C2 collection completion.",
+  "promoted_candidates": [
+    "SC_GWINS_LIST2_68_20171102",
+    "SC_GWINS_LIST2_68_20171023_1",
+    "SC_GWINS_LIST2_68_20170924"
+  ],
+  "created_live_ids": [
+    "LIVE_20171102_001",
+    "LIVE_20171023_001",
+    "LIVE_20170924_001"
+  ],
+  "outputs": [
+    "data/current/live_videos/c2_sample_gwins.jsonl",
+    "data/current/sources/c2_sample_gwins_sources.jsonl",
+    "data/current/media_assets/c2_sample_gwins_media_assets.jsonl",
+    "data/current/transcript_versions/c2_sample_gwins_transcripts.jsonl",
+    "data/current/verification_checks/c2_sample_gwins_checks.jsonl"
+  ],
+  "full_c2_completed": false,
+  "playback_verified": false
+}
