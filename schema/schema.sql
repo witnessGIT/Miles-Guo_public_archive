@@ -62,8 +62,26 @@ CREATE TABLE IF NOT EXISTS source_candidates (
     confidence REAL CHECK (confidence IS NULL OR (confidence >= 0 AND confidence <= 1)),
     discovered_by TEXT,
     discovered_at TEXT NOT NULL,
+    metadata_json TEXT
+);
+
+CREATE TABLE IF NOT EXISTS source_boundaries (
+    id TEXT PRIMARY KEY,
+    source_site TEXT NOT NULL,
+    boundary_type TEXT NOT NULL,
+    natural_boundary TEXT NOT NULL,
+    url TEXT NOT NULL,
+    status TEXT NOT NULL DEFAULT 'open'
+        CHECK (status IN ('open','in_progress','completed','blocked','superseded')),
+    priority INTEGER NOT NULL DEFAULT 100,
+    discovered_from TEXT,
+    completed_by TEXT,
+    completed_at TEXT,
+    output TEXT,
+    notes TEXT,
+    depends_on TEXT,
     metadata_json TEXT,
-    UNIQUE(source_site, source_url)
+    UNIQUE(source_site, natural_boundary)
 );
 
 CREATE TABLE IF NOT EXISTS live_work_items (
@@ -387,6 +405,7 @@ CREATE INDEX IF NOT EXISTS idx_live_sources_site ON live_sources(source_site);
 CREATE INDEX IF NOT EXISTS idx_live_sources_video_id ON live_sources(source_video_id);
 CREATE INDEX IF NOT EXISTS idx_source_candidates_site_status ON source_candidates(source_site, status);
 CREATE INDEX IF NOT EXISTS idx_source_candidates_date ON source_candidates(candidate_date);
+CREATE INDEX IF NOT EXISTS idx_source_boundaries_status_priority ON source_boundaries(status, priority);
 CREATE INDEX IF NOT EXISTS idx_live_work_items_status ON live_work_items(work_status, priority);
 CREATE INDEX IF NOT EXISTS idx_live_work_items_live_stage ON live_work_items(live_id, work_stage);
 CREATE INDEX IF NOT EXISTS idx_live_segments_live_id ON live_segments(live_id);

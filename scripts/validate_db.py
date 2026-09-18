@@ -21,6 +21,7 @@ SOURCE_ID_RE = re.compile(r"^SRC_[A-Za-z0-9_.-]+$")
 
 REQUIRED_TABLES = {
     "source_candidates",
+    "source_boundaries",
     "live_videos",
     "live_sources",
     "live_work_items",
@@ -138,6 +139,31 @@ def validate() -> tuple[list[str], list[str], dict[str, int]]:
                 add_error(errors, f"source_candidate source_site is empty: {candidate_id}")
             if not str(row["source_url"] or "").strip():
                 add_error(errors, f"source_candidate source_url is empty: {candidate_id}")
+
+        # Source boundaries keep C1 repeatable by natural page/date/detail units.
+        for row in conn.execute(
+            """
+            SELECT id, source_site, boundary_type, natural_boundary, url, status, priority
+            FROM source_boundaries
+            ORDER BY priority DESC, id
+            """
+        ):
+            boundary_id = str(row["id"])
+            if not boundary_id.startswith("C1-"):
+                add_error(errors, f"source_boundary id must start with C1-: {boundary_id}")
+            if not str(row["source_site"] or "").strip():
+                add_error(errors, f"source_boundary source_site is empty: {boundary_id}")
+            if not str(row["boundary_type"] or "").strip():
+                add_error(errors, f"source_boundary boundary_type is empty: {boundary_id}")
+            if not str(row["natural_boundary"] or "").strip():
+                add_error(errors, f"source_boundary natural_boundary is empty: {boundary_id}")
+            if not str(row["url"] or "").strip():
+                add_error(errors, f"source_boundary url is empty: {boundary_id}")
+            if row["status"] == "open" and int(row["priority"]) < 90:
+                add_warning(
+                    warnings,
+                    f"open source_boundary has low priority and may not precede C2: {boundary_id}",
+                )
 
         # Live work items encode natural-boundary work, not fixed row-count quotas.
         for row in conn.execute(

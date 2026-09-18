@@ -3,10 +3,11 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
+import shutil
 import subprocess
 import time
 from collections import defaultdict
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -14,6 +15,7 @@ QUEUE = ROOT / "coordination" / "WORK_QUEUE.jsonl"
 CLAIMS = ROOT / "coordination" / "claims"
 COMPLETED = ROOT / "coordination" / "completed"
 READY = ROOT / "coordination" / "ready"
+CLAIM_ATTEMPTS = ROOT / "coordination" / "claim_attempts"
 PILOT_SELECTION = ROOT / "reports" / "pilot_selection.json"
 DATA_CURRENT = ROOT / "data" / "current"
 WORKFLOW = ROOT / "coordination" / "WORKFLOW.json"
@@ -23,6 +25,7 @@ CLAIM_PROTOCOL = "claim-protocol-v2"
 CURRENT_P9 = "P9-AUDIT-60-R2"
 CURRENT_P10 = "P10-PILOT-DECISION-R2"
 LEGACY_GATE_TASKS = {"P9-AUDIT-60", "P10-PILOT-DECISION"}
+STATIC_CLAIM_LEASE_HOURS = 24
 
 LEGACY_BATCH_TASKS = {
     "early": "P6-PILOT-EARLY-B001",
@@ -53,6 +56,27 @@ WORK_ITEM_STAGE_PRIORITY = {
 
 def utc_now() -> str:
     return datetime.now(timezone.utc).isoformat()
+
+
+def parse_timestamp(value: object) -> datetime | None:
+    if not isinstance(value, str) or not value:
+        return None
+    normalized = value.replace("Z", "+00:00")
+    try:
+        parsed = datetime.fromisoformat(normalized)
+    except ValueError:
+        return None
+    if parsed.tzinfo is None:
+        return parsed.replace(tzinfo=timezone.utc)
+    return parsed.astimezone(timezone.utc)
+
+
+def load_json_path(path: Path) -> dict | None:
+    try:
+        payload = json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return None
+    return payload if isinstance(payload, dict) else None
 
 
 def load_queue() -> list[dict]:
@@ -98,11 +122,31 @@ def iter_current_records(relative_dir: str) -> list[dict]:
     return records
 
 
+def normalize_depends_on(value: object) -> list[str]:
+    if value is None or value == "":
+        return []
+    if isinstance(value, str):
+        stripped = value.strip()
+        if not stripped:
+            return []
+        if stripped.startswith("["):
+            try:
+                parsed = json.loads(stripped)
+            except json.JSONDecodeError:
+                return [stripped]
+            if isinstance(parsed, list):
+                return [str(item) for item in parsed if str(item)]
+        return [stripped]
+    if isinstance(value, list):
+        return [str(item) for item in value if str(item)]
+    return [str(value)]
+
+
 def live_work_item_tasks(done: set[str]) -> list[dict]:
     tasks: list[dict] = []
     for item in iter_current_records("live_work_items"):
         item_id = str(item.get("id") or "")
-        if not item_id or item_id in done or has_record(COMPLETED, item_id) or has_record(CLAIMS, item_id):
+        if not item_id or item_id in done or task_completed(item_id) or claim_blocks_task(item_id):
             continue
         if str(item.get("work_status") or "open") != "open":
             continue
@@ -124,6 +168,38 @@ def live_work_item_tasks(done: set[str]) -> list[dict]:
     return tasks
 
 
+def source_boundary_tasks(done: set[str]) -> list[dict]:
+    tasks: list[dict] = []
+    for item in iter_current_records("source_boundaries"):
+        item_id = str(item.get("task_id") or item.get("id") or "")
+        if not item_id:
+            continue
+        if item_id in done or task_completed(item_id) or claim_blocks_task(item_id):
+            continue
+        if str(item.get("status") or "open").lower() != "open":
+            continue
+        source = str(item.get("source_site") or item.get("source") or "").lower()
+        boundary = item.get("natural_boundary") or item.get("url") or item_id
+        tasks.append(
+            {
+                "id": item_id,
+                "priority": int(item.get("priority") or 100),
+                "kind": "source_boundary_discovery",
+                "source_site": source,
+                "stage": "source_discovery",
+                "scope": (
+                    f"Scan one natural {source.upper() if source else 'source'} "
+                    f"boundary: {boundary}. Write source_candidates only, and append "
+                    "new source_boundaries for any discovered next/list/detail pages."
+                ),
+                "stream_task": False,
+                "source_boundary": True,
+                "depends_on": normalize_depends_on(item.get("depends_on")),
+            }
+        )
+    return tasks
+
+
 def load_pilot_selection() -> dict:
     if not PILOT_SELECTION.exists():
         return {"groups": {}}
@@ -139,12 +215,77 @@ def pilot_case_index() -> dict[str, dict]:
     return index
 
 
+def task_records(directory: Path, task_id: str) -> list[tuple[Path, dict]]:
+    records: list[tuple[Path, dict]] = []
+    exact = directory / f"{task_id}.json"
+    if exact.exists():
+        payload = load_json_path(exact) or {}
+        if not payload or payload.get("task_id") in {None, task_id}:
+            records.append((exact, payload))
+    if not directory.exists():
+        return records
+    for path in sorted(directory.glob("*.json")):
+        if path == exact or not path.is_file():
+            continue
+        payload = load_json_path(path)
+        if payload and payload.get("task_id") == task_id:
+            records.append((path, payload))
+    return records
+
+
 def has_record(directory: Path, task_id: str) -> bool:
-    return (directory / f"{task_id}.json").exists()
+    return bool(task_records(directory, task_id))
+
+
+def task_completed(task_id: str) -> bool:
+    if task_records(COMPLETED, task_id):
+        return True
+    for _path, payload in task_records(CLAIMS, task_id):
+        if str(payload.get("status") or "").lower() == "completed":
+            return True
+    return False
+
+
+def claim_expired(payload: dict) -> bool:
+    if str(payload.get("status") or "in_progress").lower() != "in_progress":
+        return False
+    claimed_at = parse_timestamp(payload.get("claimed_at"))
+    if claimed_at is None:
+        return False
+    expires_at = claimed_at + timedelta(hours=STATIC_CLAIM_LEASE_HOURS)
+    return datetime.now(timezone.utc) >= expires_at
+
+
+def claim_blocks_task(task_id: str) -> bool:
+    for _path, payload in task_records(CLAIMS, task_id):
+        status = str(payload.get("status") or "in_progress").lower()
+        if status == "completed":
+            continue
+        if claim_expired(payload):
+            continue
+        return True
+    return False
 
 
 def completed_ids() -> set[str]:
-    return {p.stem for p in COMPLETED.glob("*.json") if p.is_file()}
+    done: set[str] = set()
+    if not COMPLETED.exists():
+        return done
+    for path in COMPLETED.glob("*.json"):
+        if not path.is_file():
+            continue
+        done.add(path.stem)
+        payload = load_json_path(path)
+        if payload and isinstance(payload.get("task_id"), str):
+            done.add(payload["task_id"])
+    if CLAIMS.exists():
+        for path in CLAIMS.glob("*.json"):
+            payload = load_json_path(path)
+            if payload and str(payload.get("status") or "").lower() == "completed":
+                task_id = payload.get("task_id")
+                if isinstance(task_id, str) and task_id:
+                    done.add(task_id)
+    return done
 
 
 def current_commit() -> str:
@@ -324,9 +465,9 @@ def static_tasks(done: set[str]) -> list[dict]:
         task_id = task["id"]
         if task_is_superseded(task):
             continue
-        if task_id in done or has_record(COMPLETED, task_id):
+        if task_id in done or task_completed(task_id):
             continue
-        if has_record(CLAIMS, task_id):
+        if claim_blocks_task(task_id):
             continue
         if any(dep not in done for dep in task.get("depends_on", [])):
             continue
@@ -338,7 +479,7 @@ def eligible_tasks() -> list[dict]:
     done = completed_ids()
     workflow = load_workflow()
     legacy_stream_enabled = workflow.get("current_major_phase") != "PHASE_1_COLLECTION"
-    tasks = live_work_item_tasks(done) + static_tasks(done)
+    tasks = source_boundary_tasks(done) + live_work_item_tasks(done) + static_tasks(done)
     if legacy_stream_enabled:
         tasks.extend(stream_tasks(done))
     filtered: list[dict] = []
@@ -350,9 +491,9 @@ def eligible_tasks() -> list[dict]:
         if task_id in seen:
             continue
         seen.add(task_id)
-        if task_id in done or has_record(COMPLETED, task_id):
+        if task_id in done or task_completed(task_id):
             continue
-        if has_record(CLAIMS, task_id):
+        if claim_blocks_task(task_id):
             continue
         filtered.append(task)
     filtered.sort(key=lambda item: (-int(item.get("priority", 0)), item["id"]))
@@ -392,6 +533,34 @@ def claim_task(task: dict, agent_id: str) -> Path:
         raise SystemExit(f"Task {task.get('id')} is superseded and cannot be claimed.")
     CLAIMS.mkdir(parents=True, exist_ok=True)
     path = CLAIMS / f"{task['id']}.json"
+    previous_claims = task_records(CLAIMS, task["id"])
+    if previous_claims:
+        active = [
+            (claim_path, payload)
+            for claim_path, payload in previous_claims
+            if str(payload.get("status") or "in_progress").lower() != "completed"
+            and not claim_expired(payload)
+        ]
+        if active:
+            raise FileExistsError(path)
+        archive_dir = CLAIM_ATTEMPTS / task["id"]
+        archive_dir.mkdir(parents=True, exist_ok=True)
+        for claim_path, payload in previous_claims:
+            suffix = parse_timestamp(payload.get("claimed_at"))
+            if suffix is None:
+                suffix_text = claim_path.stem
+            else:
+                suffix_text = suffix.strftime("%Y%m%dT%H%M%SZ")
+            archived = archive_dir / f"{suffix_text}-{payload.get('agent_id', 'unknown')}.json"
+            counter = 1
+            while archived.exists():
+                archived = archive_dir / (
+                    f"{suffix_text}-{payload.get('agent_id', 'unknown')}-{counter}.json"
+                )
+                counter += 1
+            shutil.copy2(claim_path, archived)
+            if claim_path == path:
+                claim_path.unlink()
     payload = {
         "task_id": task["id"],
         "agent_id": agent_id,
@@ -407,6 +576,8 @@ def claim_task(task: dict, agent_id: str) -> Path:
         "kind": task.get("kind"),
         "depends_on_at_claim": list(task.get("depends_on", [])),
         "scope": task.get("scope", ""),
+        "reclaimed_expired_claim": bool(previous_claims),
+        "static_claim_lease_hours": STATIC_CLAIM_LEASE_HOURS,
     }
     with path.open("x", encoding="utf-8") as fh:
         json.dump(payload, fh, ensure_ascii=False, indent=2)

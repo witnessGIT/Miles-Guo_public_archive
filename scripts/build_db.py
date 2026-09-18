@@ -21,6 +21,7 @@ TEMP_DATABASE_PATH = DATABASE_DIR / f"{DATABASE_NAME}.tmp"
 # per-agent/per-year/per-batch files.
 DATASETS: tuple[tuple[str, str], ...] = (
     ("source_candidates", "source_candidates"),
+    ("source_boundaries", "source_boundaries"),
     ("live_videos", "live_videos"),
     ("sources", "live_sources"),
     ("live_work_items", "live_work_items"),
@@ -119,8 +120,14 @@ def insert_record(
     columns = list(record.keys())
     placeholders = ",".join("?" for _ in columns)
     sql = f"INSERT INTO {table} ({','.join(columns)}) VALUES ({placeholders})"
+    values = [
+        json.dumps(record[column], ensure_ascii=False, sort_keys=True)
+        if isinstance(record[column], (dict, list))
+        else record[column]
+        for column in columns
+    ]
     try:
-        conn.execute(sql, [record[column] for column in columns])
+        conn.execute(sql, values)
     except sqlite3.Error as exc:
         raise RuntimeError(
             f"failed inserting {source_path} record {source_index} into {table}: {exc}"

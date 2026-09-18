@@ -3,8 +3,8 @@
   "task_id": "C2-CANDIDATE-PROMOTION",
   "reported_by": "agent-20260917T161500Z-gpt56sol-c2",
   "reported_at": "2026-09-17T16:18:00+08:00",
-  "status": "open",
-  "severity": "blocking",
+  "status": "closed_invalid",
+  "severity": "non_blocking",
   "summary": "C2 scope requires promotion into canonical live_videos, live_sources and media_assets, but schema/schema.sql defines live_videos and live_sources and contains no media_assets table; repository code search also finds no media_assets contract.",
   "evidence": [
     "coordination/WORK_QUEUE.jsonl C2 scope names media_assets",
@@ -12,5 +12,16 @@
     "data/current currently contains only README.md, source_candidates/, and templates/"
   ],
   "worker_action": "Stopped before inventing or patching protected schema/scripts. Worker role may report bugs but must not repair schema/workflow machinery.",
-  "requested_admin_action": "Define the canonical media_assets schema/data contract or revise C2 scope, then make C2 executable."
+  "requested_admin_action": "No schema action required for media_assets.",
+  "admin_resolution": {
+    "resolved_by": "agent-20260918T101942Z-codex-admin-repair",
+    "resolved_at": "2026-09-18T10:19:42Z",
+    "classification": "invalid_report_stale_or_incomplete_read",
+    "evidence": [
+      "schema/schema.sql contains CREATE TABLE IF NOT EXISTS media_assets",
+      "docs/FIELD_DICTIONARY.md documents media_assets fields",
+      "scripts/build_db.py includes (\"media_assets\", \"media_assets\") in DATASETS"
+    ],
+    "remaining_blocker": "C2 should wait behind repeatable C1 source_boundaries until source discovery coverage is intentionally sufficient."
+  }
 }

@@ -81,6 +81,28 @@ livestream identity.
 | `discovered_by`, `discovered_at` | text/datetime | yes | Agent/process and UTC timestamp. |
 | `metadata_json` | JSON text | no | Raw visible metadata. |
 
+### `source_boundaries`
+
+Repeatable C1 natural-boundary queue. Each open row is one page/date/search/detail boundary that
+can be claimed as an independent discovery task. Completing one row does not mean the whole site
+is complete; agents should append newly discovered adjacent boundaries as new rows.
+
+| Field | Type | Required | How to fill |
+|---|---:|---:|---|
+| `id` | text | yes | `C1-<SITE>-<stable-boundary>`, unique task ID. |
+| `source_site` | text | yes | `gwins`, `ghot`, `gettrsearch`, etc. |
+| `boundary_type` | text | yes | `index_page`, `archive_page`, `date_page`, `search_page`, `detail_page`, etc. |
+| `natural_boundary` | text | yes | Human-readable exact boundary, not a fixed record count. |
+| `url` | text | yes | Public page/search/detail URL to inspect. |
+| `status` | enum | yes | `open`, `in_progress`, `completed`, `blocked`, `superseded`. |
+| `priority` | integer | yes | Higher first. Open C1 boundaries should normally stay above C2 priority. |
+| `discovered_from` | text | no | Parent task, boundary, or admin repair that exposed this row. |
+| `completed_by`, `completed_at` | text/datetime | no | Agent/process and UTC timestamp when complete. |
+| `output` | text | no | JSON/JSONL file containing produced `source_candidates`. |
+| `notes` | text | no | Short execution notes. |
+| `depends_on` | text | no | Optional dependency task ID or JSON text. |
+| `metadata_json` | JSON text | no | Raw navigation/search metadata. |
+
 ### `live_videos`
 
 One canonical livestream record.
