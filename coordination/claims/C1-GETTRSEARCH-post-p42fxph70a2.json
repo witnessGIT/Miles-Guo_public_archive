@@ -2,7 +2,7 @@
   "task_id": "C1-GETTRSEARCH-post-p42fxph70a2",
   "agent_id": "agent-20260919-gpt56sol-gettr-detail-c1",
   "claimed_at": "2026-09-19T05:46:00+09:00",
-  "status": "in_progress",
+  "status": "completed",
   "workflow_mode": "continuous-worker-v2",
   "claim_protocol": "claim-protocol-v2",
   "continue_after_finish": true,
@@ -10,5 +10,9 @@
   "kind": "source_boundary_discovery",
   "scope": "Process GETTR public detail boundary p42fxph70a2 and write source-candidate detail evidence only; no C2 promotion.",
   "source_boundary": "C1-GETTRSEARCH-post-p42fxph70a2",
-  "source_url": "https://gettr.com/post/p42fxph70a2"
+  "source_url": "https://gettr.com/post/p42fxph70a2",
+  "completed_at": "2026-09-19T05:48:00+09:00",
+  "output": "data/current/source_candidates/GETTRSEARCH/details/p42fxph70a2.json",
+  "candidate_count": 1,
+  "canonical_livestreams_promoted": 0
 }
