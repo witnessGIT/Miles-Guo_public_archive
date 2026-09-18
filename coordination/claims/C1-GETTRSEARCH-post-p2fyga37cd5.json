@@ -1,0 +1,13 @@
+{
+  "task_id": "C1-GETTRSEARCH-post-p2fyga37cd5",
+  "agent_id": "agent-20260919-gpt56sol-gettr-detail-c1",
+  "claimed_at": "2026-09-19T05:49:00+09:00",
+  "status": "in_progress",
+  "workflow_mode": "continuous-worker-v2",
+  "claim_protocol": "claim-protocol-v2",
+  "continue_after_finish": true,
+  "stage": "source_discovery",
+  "kind": "source_boundary_discovery",
+  "scope": "Process GETTR public detail boundary p2fyga37cd5 and write source-candidate detail evidence only; no C2 promotion.",
+  "source_url": "https://gettr.com/post/p2fyga37cd5"
+}
