@@ -2,7 +2,7 @@
   "task_id": "C1-GHOT-archive-videos-before-2017-04-19",
   "agent_id": "agent-20260919T0329JST-gpt56sol-c1",
   "claimed_at": "2026-09-18T18:29:00Z",
-  "status": "in_progress",
+  "status": "completed",
   "workflow_mode": "continuous-worker-v2",
   "claim_protocol": "claim-protocol-v2",
   "continue_after_finish": true,
@@ -14,5 +14,10 @@
   "scope": "Continue C1 GHOT source discovery into any earlier publicly indexed GHOT video boundary before 2017-04-19. Source candidates only; no C2 promotion.",
   "reclaimed_expired_claim": false,
   "static_claim_lease_hours": 24,
-  "source_boundary": "data/current/source_boundaries/C1-GHOT-archive-videos-before-2017-04-19.json"
+  "source_boundary": "data/current/source_boundaries/C1-GHOT-archive-videos-before-2017-04-19.json",
+  "completed_at": "2026-09-18T18:33:00Z",
+  "outputs": [
+    "data/current/source_candidates/C1-GHOT-archive-videos-before-2017-04-19.jsonl",
+    "coordination/completed/C1-GHOT-archive-videos-before-2017-04-19.json"
+  ]
 }
