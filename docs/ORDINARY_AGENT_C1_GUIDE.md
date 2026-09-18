@@ -3,6 +3,22 @@
 This guide is for low-cost ordinary agents doing repeatable source discovery.
 It intentionally stops before canonical promotion.
 
+## One-screen checklist
+
+Run this from a fresh `main` checkout:
+
+```bash
+git pull --ff-only
+python scripts/next_task.py --list
+python scripts/next_task.py --claim --agent-id agent-<UTC>-<short-id>
+```
+
+Then complete exactly the claimed C1 task, validate, commit, push, and repeat.
+
+If `--list` shows C1 tasks, there is ordinary work left. If it shows no C1 tasks, report the
+remaining task types exactly as printed. Do not conclude "all done" from stale local files or old
+Pilot material.
+
 ## Goal
 
 Process exactly one natural source boundary per task.
@@ -76,6 +92,18 @@ Each candidate must preserve:
 
 Use `needs_review` only when the row is relevant but ambiguous.
 
+Valid `source_candidates.page_kind` values are:
+
+- `index_page`
+- `search_result_page`
+- `date_page`
+- `channel_page`
+- `detail_page`
+- `media_page`
+- `unknown`
+
+For GETTR search pages, use `search_result_page`, not `search_result`.
+
 ## Do Not
 
 - Do not write canonical `live_videos`.
@@ -86,13 +114,14 @@ Use `needs_review` only when the row is relevant but ambiguous.
 - Do not close a whole source site after one page.
 - Do not invent direct media URLs.
 
-## Current Next Boundary
+## Queue Rule
 
-At the time this guide was written, the next ordinary C1 task was:
+Do not rely on a hardcoded "next boundary" in any chat, prompt, note, or older commit. The only
+current ordinary task list is:
 
-```text
-C1-GWINS-list_2_67
+```bash
+python scripts/next_task.py --list
 ```
 
-Workers should trust `python scripts/next_task.py --list` over this note if the
-queue has moved.
+If a claim collides, expires, or is already completed, refresh `main` and claim the next eligible
+task. A single completed page does not complete an entire source site.
