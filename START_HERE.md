@@ -12,6 +12,38 @@ The repository is the authoritative execution context. Do not ask the user to re
 requirements, select a task, choose a source, or authorize routine continuation already stored
 here.
 
+## Ordinary C1 worker quick path
+
+If the external prompt is simply "enter the project and work", and the Agent is not a verified
+admin, use this ordinary C1 path first.
+
+Read:
+
+1. `docs/CURRENT_TASK.md`
+2. `docs/ORDINARY_AGENT_C1_GUIDE.md`
+3. `coordination/CLAIM_PROTOCOL_V2.md`
+
+Then run:
+
+```bash
+git pull --ff-only
+python scripts/next_task.py --list
+python scripts/next_task.py --claim --agent-id agent-<UTC>-<short-id>
+```
+
+Work only on the claimed task. For ordinary C1 source-discovery tasks:
+
+- scan exactly one natural source boundary;
+- write only `data/current/source_candidates/`;
+- append follow-up boundaries only under `data/current/source_boundaries/`;
+- do not promote candidates into `live_videos`, `live_sources`, or `media_assets`;
+- do not touch playback/Pilot historical files;
+- rebuild, validate, test, commit, and push before claiming another task.
+
+If `python scripts/next_task.py --list` shows C1 tasks, the project is not out of ordinary work.
+If it shows only C2, live work items, playback, or bug reports, report that exact queue state
+instead of saying the project is finished.
+
 ## Do not answer before entering the queue
 
 Do not send a governance/status message before attempting durable entry. “This task is already
