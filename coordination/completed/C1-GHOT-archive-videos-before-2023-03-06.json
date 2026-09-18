@@ -1,0 +1,15 @@
+{
+  "task_id": "C1-GHOT-archive-videos-before-2023-03-06",
+  "agent_id": "agent-20260919T010600JST-gpt56sol-ghot-c1",
+  "status": "completed",
+  "completed_at": "2026-09-18T16:11:00Z",
+  "workflow_mode": "continuous-worker-v2",
+  "claim_protocol": "claim-protocol-v2",
+  "natural_boundary": "GHOT archive/videos immediately before 2023-03-06",
+  "outputs": ["data/current/source_candidates/C1-GHOT-archive-videos-before-2023-03-06.jsonl","data/current/source_boundaries/phase1_initial_boundaries.jsonl"],
+  "candidate_count": 1,
+  "canonical_promotion_performed": false,
+  "validation": {"source_site":"GHOT","page_kind":"archive/detail discovery","all_candidates_status":"discovered","all_candidate_live_ids_null":true,"fixed_quota_used":false,"evidence_basis":"public GHOT archive/detail-page evidence for 2023-03-05-1"},
+  "new_boundaries": ["C1-GHOT-archive-videos-before-2023-03-05"],
+  "continue_after_finish": true
+}
