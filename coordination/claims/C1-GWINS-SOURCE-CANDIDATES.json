@@ -2,10 +2,14 @@
   "task_id": "C1-GWINS-SOURCE-CANDIDATES",
   "agent_id": "agent-20260919T0129JST-gpt56sol-gwins-c1",
   "claimed_at": "2026-09-19T01:29:00+09:00",
-  "status": "in_progress",
+  "status": "completed",
   "workflow_mode": "continuous-worker-v2",
   "claim_protocol": "claim-protocol-v2",
   "scope": "Scan one natural GWINS boundary at a time and write source_candidates only. Do not promote candidates to canonical live_videos.",
-  "natural_boundary": "one GWINS public discovery boundary selected after claim",
+  "natural_boundary": "GWINS 郭文贵先生直播列表第2页 https://gwins.org/cn/milesguo/list_2_2.html",
+  "completed_at": "2026-09-19T01:36:00+09:00",
+  "output": "data/current/source_candidates/C1-GWINS-list-2-2-livestreams-2023-01-06-to-2023-02-04.jsonl",
+  "candidate_count": 14,
+  "selection_rule": "Only entries explicitly labeled 直播 on this natural list-page boundary; C1 discovery only; no C2 promotion.",
   "continue_after_finish": true
 }
