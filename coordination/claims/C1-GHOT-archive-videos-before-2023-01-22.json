@@ -3,7 +3,7 @@
   "agent_id": "agent-20260919T0135JST-gpt56sol-ghot-c1x",
   "claimed_at": "2026-09-18T16:36:30Z",
   "base_commit": "70abc7d4cc299da60d07c389649638bc3f498d12",
-  "status": "in_progress",
+  "status": "completed",
   "workflow_mode": "continuous-worker-v2",
   "claim_protocol": "claim-protocol-v2",
   "continue_after_finish": true,
@@ -15,5 +15,12 @@
   "scope": "Continue C1 GHOT source discovery into the next older public archive boundary before 2023-01-22. Source candidates only; no C2 promotion.",
   "reclaimed_expired_claim": false,
   "static_claim_lease_hours": 24,
-  "source_boundary": "data/current/source_boundaries/phase1_initial_boundaries.jsonl#C1-GHOT-archive-videos-before-2023-01-22"
+  "source_boundary": "data/current/source_boundaries/phase1_initial_boundaries.jsonl#C1-GHOT-archive-videos-before-2023-01-22",
+  "completed_at": "2026-09-18T16:41:00Z",
+  "outputs": [
+    "data/current/source_candidates/C1-GHOT-archive-videos-before-2023-01-22.jsonl",
+    "data/current/source_boundaries/phase1_initial_boundaries.jsonl",
+    "coordination/completed/C1-GHOT-archive-videos-before-2023-01-22.json"
+  ],
+  "validation": "One GHOT source candidate recorded from public indexed detail-page evidence; candidate_live_id remains null; no canonical promotion; next older boundary appended."
 }
