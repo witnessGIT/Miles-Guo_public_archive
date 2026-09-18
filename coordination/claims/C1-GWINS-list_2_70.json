@@ -3,7 +3,8 @@
   "agent_id": "agent-20260918T102700Z-codex-gwins-c1",
   "claimed_at": "2026-09-18T10:27:00Z",
   "base_commit": "549e38fe38d17326fd7c6a27d1afc423dece41ab",
-  "status": "in_progress",
+  "status": "completed",
+  "completed_at": "2026-09-18T10:34:00Z",
   "workflow_mode": "continuous-worker-v2",
   "claim_protocol": "claim-protocol-v2",
   "continue_after_finish": true,
@@ -11,5 +12,7 @@
   "kind": "source_boundary_discovery",
   "depends_on_at_claim": [],
   "scope": "Scan one natural GWINS boundary: list_2_70. Write source_candidates only, and append new source_boundaries for any discovered next/list/detail pages.",
-  "source_boundary": "data/current/source_boundaries/phase1_initial_boundaries.jsonl#C1-GWINS-list_2_70"
+  "source_boundary": "data/current/source_boundaries/phase1_initial_boundaries.jsonl#C1-GWINS-list_2_70",
+  "output": "data/current/source_candidates/gwins/list_2_70.jsonl",
+  "candidate_count": 40
 }
