@@ -1,0 +1,12 @@
+{
+  "task_id": "C1-GHOT-archive-videos-before-2017-04-19",
+  "agent_id": "agent-20260919T0329JST-gpt56sol-c1",
+  "status": "completed",
+  "completed_at": "2026-09-18T18:33:00Z",
+  "stage": "source_discovery",
+  "scope": "Checked the natural GHOT archive boundary immediately before the earliest established 2017-04-19 result. No earlier publicly indexed GHOT video boundary was established in this pass; recorded the boundary anchor as source candidate only. No C2 promotion.",
+  "outputs": [
+    "data/current/source_candidates/C1-GHOT-archive-videos-before-2017-04-19.jsonl"
+  ],
+  "notes": "C1 only. Bounded public-index search did not establish an earlier GHOT video than 2017-04-19-3; no follow-up boundary appended without evidence."
+}
