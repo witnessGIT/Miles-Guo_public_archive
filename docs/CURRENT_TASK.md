@@ -146,6 +146,10 @@ Ordinary business/gate work:
 python scripts/next_task.py --list
 ```
 
+Ordinary low-cost collection agents should read `docs/ORDINARY_AGENT_C1_GUIDE.md`, claim the top
+eligible C1 task, and stop that task at one natural boundary. They should not do C2 promotion,
+live work items, playback work, or control-plane repairs unless explicitly authorized.
+
 Real playback-position work is deferred during `PHASE_1_COLLECTION`. Later phases may use:
 
 ```bash
