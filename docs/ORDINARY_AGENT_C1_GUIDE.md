@@ -19,6 +19,13 @@ If `--list` shows C1 tasks, there is ordinary work left. If it shows no C1 tasks
 remaining task types exactly as printed. Do not conclude "all done" from stale local files or old
 Pilot material.
 
+If you claimed the wrong task or discover that your runtime should not perform it, release the
+claim instead of leaving it to block the queue:
+
+```bash
+python scripts/next_task.py --release <TASK_ID> --agent-id <same-agent-id> --reason "<short reason>"
+```
+
 ## Goal
 
 Process exactly one natural source boundary per task.
@@ -96,6 +103,10 @@ Before adding a candidate, search existing `data/current/source_candidates/` for
 `source_site` plus `source_video_id` or exact `source_url`. If the same source item already
 exists, do not reuse the same `id`. Either skip the row, or write a unique `duplicate` row whose
 `metadata_json` includes `duplicate_of` and the boundary where it was rediscovered.
+
+`scripts/build_db.py` runs a data preflight before writing SQLite. It rejects unknown fields,
+missing IDs, and duplicate IDs across all current JSON/JSONL records. Fix those source files
+before pushing more data.
 
 Valid `source_candidates.page_kind` values are:
 

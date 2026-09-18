@@ -4,6 +4,7 @@ from __future__ import annotations
 import json
 import os
 import sqlite3
+from collections import defaultdict
 from pathlib import Path
 from typing import Iterable, Iterator
 
@@ -93,11 +94,69 @@ def iter_records(path: Path) -> Iterable[dict]:
     raise ValueError(f"Unsupported data file: {path}")
 
 
+def iter_records_with_source(relative_dir: str) -> Iterator[tuple[Path, int, dict]]:
+    for path in iter_data_files(relative_dir):
+        for record_index, record in enumerate(iter_records(path), 1):
+            yield path, record_index, record
+
+
 def table_columns(conn: sqlite3.Connection, table: str) -> set[str]:
     rows = conn.execute(f"PRAGMA table_info({table})").fetchall()
     if not rows:
         raise RuntimeError(f"schema table missing: {table}")
     return {str(row[1]) for row in rows}
+
+
+def record_preflight_errors(
+    table: str,
+    allowed_columns: set[str],
+    records: Iterable[tuple[Path, int, dict]],
+) -> list[str]:
+    errors: list[str] = []
+    id_locations: dict[str, list[str]] = defaultdict(list)
+
+    for source_path, source_index, record in records:
+        location = f"{source_path} record {source_index}"
+        if not record:
+            errors.append(f"{location}: empty record for {table}")
+            continue
+
+        unknown = sorted(set(record) - allowed_columns)
+        if unknown:
+            errors.append(f"{location}: unknown columns for {table}: {unknown}")
+
+        if "id" in allowed_columns:
+            record_id = str(record.get("id") or "").strip()
+            if not record_id:
+                errors.append(f"{location}: missing required id for {table}")
+            else:
+                id_locations[record_id].append(location)
+
+    for record_id, locations in sorted(id_locations.items()):
+        if len(locations) > 1:
+            joined = "; ".join(locations)
+            errors.append(f"{table}: duplicate id {record_id}: {joined}")
+
+    return errors
+
+
+def preflight_datasets(conn: sqlite3.Connection) -> None:
+    errors: list[str] = []
+    for relative_dir, table in DATASETS:
+        allowed_columns = table_columns(conn, table)
+        errors.extend(
+            record_preflight_errors(
+                table,
+                allowed_columns,
+                iter_records_with_source(relative_dir),
+            )
+        )
+    if errors:
+        sample = "\n".join(f"- {error}" for error in errors[:50])
+        remaining = len(errors) - 50
+        if remaining > 0:
+            sample += f"\n- ... {remaining} more error(s)"
+        raise ValueError(f"data preflight failed:\n{sample}")
 
 
 def insert_record(
@@ -183,6 +242,7 @@ def build_database() -> dict[str, int]:
     try:
         conn.execute("PRAGMA foreign_keys = ON")
         conn.executescript(SCHEMA_PATH.read_text(encoding="utf-8"))
+        preflight_datasets(conn)
 
         # Insert parent/core datasets first, then relationship datasets.
         for relative_dir, table in DATASETS:

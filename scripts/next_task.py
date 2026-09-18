@@ -26,6 +26,7 @@ CURRENT_P9 = "P9-AUDIT-60-R2"
 CURRENT_P10 = "P10-PILOT-DECISION-R2"
 LEGACY_GATE_TASKS = {"P9-AUDIT-60", "P10-PILOT-DECISION"}
 STATIC_CLAIM_LEASE_HOURS = 24
+NON_BLOCKING_CLAIM_STATUSES = {"completed", "released", "abandoned", "cancelled"}
 
 LEGACY_BATCH_TASKS = {
     "early": "P6-PILOT-EARLY-B001",
@@ -51,6 +52,19 @@ WORK_ITEM_STAGE_PRIORITY = {
     "relation_pass": 54,
     "text_verify": 50,
     "playback_backlog": 45,
+}
+
+PHASE_1_LOCKED_STATIC_TASKS = {
+    "C2-CANDIDATE-PROMOTION",
+    "C3-DERIVE-LIVE-WORK-ITEMS",
+    "C4-COLLECTION-COVERAGE",
+    "C5-COLLECTION-FREEZE",
+    "V1-TEXT-EXTRACTION",
+    "V2-SEGMENTATION",
+    "V3-ENTITY-EVENT-CLAIM-PASS",
+    "V4-RELATED-CONTENT-PASS",
+    "V5-TEXT-CROSSCHECK",
+    "V6-PLAYBACK-BACKLOG",
 }
 
 
@@ -143,6 +157,11 @@ def normalize_depends_on(value: object) -> list[str]:
 
 
 def live_work_item_tasks(done: set[str]) -> list[dict]:
+    workflow = load_workflow()
+    if workflow.get("current_major_phase") == "PHASE_1_COLLECTION":
+        if has_unfinished_source_boundaries() or not task_completed("C2-CANDIDATE-PROMOTION"):
+            return []
+
     tasks: list[dict] = []
     for item in iter_current_records("live_work_items"):
         item_id = str(item.get("id") or "")
@@ -198,6 +217,14 @@ def source_boundary_tasks(done: set[str]) -> list[dict]:
             }
         )
     return tasks
+
+
+def has_unfinished_source_boundaries() -> bool:
+    for item in iter_current_records("source_boundaries"):
+        status = str(item.get("status") or "open").lower()
+        if status in {"open", "in_progress"}:
+            return True
+    return False
 
 
 def load_pilot_selection() -> dict:
@@ -259,7 +286,7 @@ def claim_expired(payload: dict) -> bool:
 def claim_blocks_task(task_id: str) -> bool:
     for _path, payload in task_records(CLAIMS, task_id):
         status = str(payload.get("status") or "in_progress").lower()
-        if status == "completed":
+        if status in NON_BLOCKING_CLAIM_STATUSES:
             continue
         if claim_expired(payload):
             continue
@@ -461,9 +488,14 @@ def task_is_superseded(task: dict) -> bool:
 
 def static_tasks(done: set[str]) -> list[dict]:
     eligible: list[dict] = []
+    workflow = load_workflow()
+    phase1_collection = workflow.get("current_major_phase") == "PHASE_1_COLLECTION"
+    collection_still_open = has_unfinished_source_boundaries()
     for task in load_queue():
         task_id = task["id"]
         if task_is_superseded(task):
+            continue
+        if phase1_collection and collection_still_open and task_id in PHASE_1_LOCKED_STATIC_TASKS:
             continue
         if task_id in done or task_completed(task_id):
             continue
@@ -538,7 +570,8 @@ def claim_task(task: dict, agent_id: str) -> Path:
         active = [
             (claim_path, payload)
             for claim_path, payload in previous_claims
-            if str(payload.get("status") or "in_progress").lower() != "completed"
+            if str(payload.get("status") or "in_progress").lower()
+            not in NON_BLOCKING_CLAIM_STATUSES
             and not claim_expired(payload)
         ]
         if active:
@@ -842,6 +875,27 @@ def finish_task(
     return completed_path, marker_path
 
 
+def release_task(task_id: str, agent_id: str, reason: str) -> Path:
+    claim_path = CLAIMS / f"{task_id}.json"
+    if not claim_path.exists():
+        raise SystemExit(f"Cannot release {task_id}: claim file does not exist.")
+    claim = json.loads(claim_path.read_text(encoding="utf-8"))
+    if claim.get("agent_id") != agent_id:
+        raise SystemExit(
+            f"Cannot release {task_id}: claim belongs to {claim.get('agent_id')!r}."
+        )
+    status = str(claim.get("status") or "in_progress").lower()
+    if status == "completed":
+        raise SystemExit(f"Cannot release {task_id}: claim is already completed.")
+    if status in {"released", "abandoned", "cancelled"}:
+        return claim_path
+    claim["status"] = "released"
+    claim["released_at"] = utc_now()
+    claim["release_reason"] = reason
+    claim_path.write_text(json.dumps(claim, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    return claim_path
+
+
 def print_task(task: dict) -> None:
     print(f"{task['id']} [priority={task.get('priority', 0)}]")
     print(f"  {task.get('scope', '')}")
@@ -893,6 +947,8 @@ def main() -> None:
     parser.add_argument("--task", help="Specific eligible task ID to claim/watch for.")
     parser.add_argument("--agent-id", help="Unique agent ID for claim/finish/readiness.")
     parser.add_argument("--finish", metavar="TASK_ID", help="Finish a claimed task.")
+    parser.add_argument("--release", metavar="TASK_ID", help="Release an in-progress claim without completing it.")
+    parser.add_argument("--reason", help="Reason for --release.")
     parser.add_argument("--outputs", nargs="*", default=[], help="Durable output paths.")
     parser.add_argument("--validation", help="What was actually validated.")
     parser.add_argument("--live-id", help="Canonical live ID, required for collection readiness.")
@@ -972,6 +1028,21 @@ def main() -> None:
             "Commit and push these coordination records, refresh repository state, then "
             "immediately claim the next eligible task. Finishing one task is not a stop "
             "condition under continuous-worker-v2."
+        )
+        return
+
+    if args.release:
+        if not args.agent_id:
+            raise SystemExit("--release requires --agent-id.")
+        released_path = release_task(
+            task_id=args.release,
+            agent_id=args.agent_id,
+            reason=args.reason or "released by claim owner before completing task",
+        )
+        print(f"Released claim: {released_path.relative_to(ROOT)}")
+        print(
+            "Commit and push this released claim, refresh repository state, then claim "
+            "the next eligible task if appropriate."
         )
         return
 

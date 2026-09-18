@@ -76,6 +76,11 @@ def playback_entry_candidates(agent_id: str) -> tuple[list[dict], list[dict]]:
     return playback_retry_guard.filter_candidates(candidates)
 
 
+def playback_entry_allowed() -> bool:
+    workflow = next_task.load_workflow()
+    return workflow.get("current_major_phase") != "PHASE_1_COLLECTION"
+
+
 def direct_entry(agent_id: str, max_attempts: int) -> int:
     ordinary = next_task.eligible_tasks()
     if ordinary:
@@ -98,6 +103,17 @@ def direct_entry(agent_id: str, max_attempts: int) -> int:
                 }
             )
             return 0
+
+    if not playback_entry_allowed():
+        emit(
+            {
+                "entry_status": "NO_LOCAL_CLAIM",
+                "agent_id": agent_id,
+                "reason": "Playback entry is disabled during PHASE_1_COLLECTION; use scripts/next_task.py --list for ordinary collection work or report the ordinary queue state.",
+                "next_required_action": "Do not claim playback work in PHASE_1_COLLECTION. Refresh main and continue only with ordinary eligible tasks.",
+            }
+        )
+        return 1
 
     try:
         eligible_playback, guarded_playback = playback_entry_candidates(agent_id)
@@ -155,6 +171,15 @@ def pr_entry(agent_id: str) -> int:
         task = next_task.candidate_order(ordinary, agent_id, None)[0]
         task_id = task["id"]
     else:
+        if not playback_entry_allowed():
+            emit(
+                {
+                    "entry_status": "NO_PR_RESERVATION",
+                    "agent_id": agent_id,
+                    "reason": "Playback PR reservation is disabled during PHASE_1_COLLECTION.",
+                }
+            )
+            return 1
         eligible_playback, guarded_playback = playback_entry_candidates(agent_id)
         if not eligible_playback:
             guarded_ids = [str(row.get("case_id") or row.get("task_id")) for row in guarded_playback]

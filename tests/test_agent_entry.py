@@ -96,6 +96,10 @@ class AgentEntryTests(unittest.TestCase):
             try:
                 agent_entry.ROOT = root
                 with patch.object(agent_entry.next_task, "eligible_tasks", return_value=[]), patch.object(
+                    agent_entry.next_task,
+                    "load_workflow",
+                    return_value={"current_major_phase": "PHASE_2_VERIFICATION"},
+                ), patch.object(
                     agent_entry, "playback_entry_candidates", return_value=([expired], [])
                 ), patch.object(
                     agent_entry.playback_queue,
@@ -109,6 +113,17 @@ class AgentEntryTests(unittest.TestCase):
         reclaim.assert_called_once_with(
             "agent-new", "PILOT-X", content_inspection_capable=False
         )
+
+    def test_direct_entry_does_not_fall_back_to_playback_during_phase1(self):
+        with patch.object(agent_entry.next_task, "eligible_tasks", return_value=[]), patch.object(
+            agent_entry.next_task,
+            "load_workflow",
+            return_value={"current_major_phase": "PHASE_1_COLLECTION"},
+        ), patch.object(agent_entry, "playback_entry_candidates") as playback_candidates:
+            result = agent_entry.direct_entry("agent-new", 10)
+
+        self.assertEqual(result, 1)
+        playback_candidates.assert_not_called()
 
 
 if __name__ == "__main__":
