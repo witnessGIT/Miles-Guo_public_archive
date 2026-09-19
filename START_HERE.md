@@ -78,6 +78,10 @@ claim through the GitHub file/Contents API, fetch that exact claim to verify own
 perform and publish the bounded task through the same API. It must not attempt `git pull` merely to
 satisfy this protocol.
 
+For API Agents, claim first using the minimal fast-entry reads in `AGENTS.md`; only after the claim
+is visible on `main` should the Agent spend calls reading the full governance and task-specific
+guides. Reading the entire historical queue before the first write is an entry failure pattern.
+
 Arrival order is defined by durable repository state: the first atomic claim visible on `main`
 wins for direct-write Agents; the first valid open task PR wins for no-write Agents. A later
 Agent refreshes and takes another task. Chat start time, copied prompts and stale local files do

@@ -13,6 +13,26 @@ An Agent with read-only access cannot publish durable work, but lack of local Gi
 blocker. Historical GPT workers used the API path: commits were attributed to the authenticated
 GitHub account while claim records retained each distinct GPT `agent_id`.
 
+### API Agent fast-entry budget — mandatory
+
+An API-only chat Agent MUST reserve its limited tool window for durable entry. Before claim it
+reads only the minimum fresh state needed to choose safely:
+
+1. `AGENTS.md`;
+2. `coordination/WORKFLOW.json`;
+3. during `PHASE_1_COLLECTION`, `data/current/source_boundaries/phase1_initial_boundaries.jsonl`
+   plus the claim/completion paths for the highest-priority open candidate;
+4. open PR titles/bodies only when the Agent lacks direct file-create access to `main`.
+
+It then immediately attempts the atomic claim. The longer Step 0 reading list and task-specific
+guides are read **after the claim is durable but before business data is produced**. Do not exhaust
+the tool window by recursively reading the full queue, every historical claim, every completion,
+or unrelated Playback policy before attempting entry.
+
+“The tool window ended after reading” is not a successful entry or a documented project stop. If
+the host ends the turn before a write can be attempted, report `HOST_STOP_BEFORE_ENTRY`; never
+present it as queue progress or `NO_ELIGIBLE_WORK`.
+
 ## Zero-prompt autonomous entry — mandatory
 
 The only external instruction needed is:
@@ -164,7 +184,7 @@ The Agent should open the PR early, then keep pushing the real task work to the 
 
 A PR does not bypass worker restrictions. No-write workers still MUST NOT use PRs to modify protected control-plane paths, manufacture service-generated playback evidence/audits, or bypass repository quality gates.
 
-## Step 0 — resolve permissions before doing anything
+## Step 0 — resolve permissions before business work
 
 This repository uses:
 
@@ -175,7 +195,8 @@ agent-permissions-v2.3
 repository-playback-evidence-v2
 ```
 
-Read first, in order:
+After a GitHub API Agent has published its minimal durable claim (or before local business work for
+a Git workspace Agent), read in order:
 
 1. `coordination/AGENT_PERMISSIONS.json`
 2. `coordination/AGENT_PERMISSIONS.md`

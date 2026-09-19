@@ -30,8 +30,9 @@ approve ordinary continuation.
 
 An ordinary chat Agent with repository file-write tools:
 
-1. Reads fresh `main`: `AGENTS.md`, `coordination/WORKFLOW.json`, current boundaries/queue,
-   claims, completions, and open PRs.
+1. Reads the minimal fresh-entry set from `main`: `AGENTS.md`, `coordination/WORKFLOW.json`, the
+   current Phase-1 boundary file, and only the candidate-specific claim/completion paths. It does
+   not enumerate all historical queue records before entry.
 2. Creates one stable `agent-<UTC>-<random>` identity for the conversation.
 3. Computes eligibility using priority, dependencies, completions and active claims. During
    `PHASE_1_COLLECTION`, open C1 source boundaries take precedence and Playback is disabled.
@@ -44,6 +45,9 @@ An ordinary chat Agent with repository file-write tools:
 7. Performs the bounded public-source task and publishes only worker-allowed business files with
    the same GitHub API. Where no local runtime exists, repository CI supplies executable checks.
 8. Publishes completion, updates its claim status, refreshes `main`, and selects the next task.
+
+Once step 5 succeeds, the Agent reads the full governance and task-specific instructions before
+step 7. This ordering preserves the quality contract without consuming the pre-claim tool window.
 
 API-only workers must not modify protected control-plane paths. A conversation whose available
 GitHub tool is genuinely read-only cannot become a durable worker.
