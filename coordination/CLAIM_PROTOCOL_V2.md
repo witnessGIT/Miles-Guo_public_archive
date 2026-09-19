@@ -24,7 +24,7 @@ collisions before reporting a fresh-state race.
 
 A failed claim attempt is **not** a stop condition by itself.
 
-For GitHub Contents API `create_file`, both of these are normally retryable classification events rather than immediate outages:
+For an ordinary chat repository-file creation, both of these are normally retryable classification events rather than immediate outages:
 
 - HTTP `422` — often an already-exists / atomic claim race;
 - HTTP `409` — often a branch/update conflict because `main` moved between read and write.
@@ -117,9 +117,9 @@ This classification is allowed only after all of the following are true:
 
 Do not retry aggressively.
 
-## GitHub API Agent procedure
+## Ordinary chat Agent procedure
 
-For Agents using GitHub `create_file` directly:
+Using the repository file-creation tool already available in the chat:
 
 1. compute the eligible task set from current Git state;
 2. distribute the starting candidate using the Agent ID when possible instead of always picking the first task;
@@ -132,20 +132,6 @@ For Agents using GitHub `create_file` directly:
 9. only after those bounded checks fail may the Agent report `GITHUB_WRITE_ERROR`.
 
 A single `422` or `409` MUST NOT produce a message such as "the execution chain must stop at the claim boundary".
-
-## Local git / filesystem Agent procedure
-
-`scripts/next_task.py --claim` uses exclusive local file creation and rotates across multiple eligible candidates.
-
-If local creation raises `FileExistsError`, the script treats it as `CLAIM_RACE_LOST` and tries the next candidate instead of exiting after the first collision.
-
-After local claim creation, the Agent must still commit and push immediately. If the push loses a remote race:
-
-1. remove only the losing local claim file;
-2. refresh/pull `main`;
-3. re-evaluate task eligibility;
-4. run the claim command again;
-5. do not touch the winning Agent's claim or force-push unrelated work.
 
 ## Candidate dispersion
 

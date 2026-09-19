@@ -1,28 +1,18 @@
 # Miles-Guo_public_archive
 
-## Two supported Agent transports
+## Ordinary chat Agent entry — mandatory
 
-This repository supports both transports represented in its history:
+This repository's worker entry is optimized for ordinary chat-mode Agents. Do not clone, pull,
+run local setup, classify transport types, or explain Git/API mechanics to the user. Use the
+repository tools already available in the chat to read and publish files.
 
-1. **Git workspace Agent (for example Codex):** use the local automatic entry command.
-2. **GitHub API Agent (ordinary chat Agent with repository file-write tools):** do not clone or
-   pull. Read fresh `main`, claims/completions and open PR state through GitHub tools, then use the
-   API-only procedure in `docs/AUTONOMOUS_CHAT_AGENT.md` and `coordination/CLAIM_PROTOCOL_V2.md`.
-
-An Agent with read-only access cannot publish durable work, but lack of local Git is not itself a
-blocker. Historical GPT workers used the API path: commits were attributed to the authenticated
-GitHub account while claim records retained each distinct GPT `agent_id`.
-
-### API Agent fast-entry budget — mandatory
-
-An API-only chat Agent MUST reserve its limited tool window for durable entry. Before claim it
-reads only the minimum fresh state needed to choose safely:
+Reserve the limited tool window for durable work. Before claim, read only:
 
 1. `AGENTS.md`;
 2. `coordination/WORKFLOW.json`;
 3. during `PHASE_1_COLLECTION`, `data/current/source_boundaries/phase1_initial_boundaries.jsonl`
    plus the claim/completion paths for the highest-priority open candidate;
-4. open PR titles/bodies only when the Agent lacks direct file-create access to `main`.
+4. the exact candidate claim/completion paths needed to verify availability.
 
 It then immediately attempts the atomic claim. The longer Step 0 reading list and task-specific
 guides are read **after the claim is durable but before business data is produced**. Do not exhaust
@@ -49,8 +39,8 @@ contract.
 ### Entry execution barrier — no early chat response
 
 The Agent's **first substantive action** after entering is repository execution, not a prose
-status update. It must refresh state and run `scripts/agent_entry.py` or perform its documented
-GitHub API equivalent before reporting anything to the user. A statement such as “task M004 is already claimed;
+status update. It must refresh state and attempt a durable claim with the available repository
+tools before reporting anything to the user. A statement such as “task M004 is already claimed;
 I will handle another task next” is an **invalid final response**: it describes recovery instead
 of performing it.
 
@@ -59,21 +49,10 @@ truthful block after all compatible work was exhausted, or a documented stop sta
 case, `CLAIM_RACE_LOST`, or discovery of a completed case is internal control flow: refresh and
 select another candidate in the same session.
 
-Before business work, choose the entry mechanism from the tools actually available—never ask the
-user to choose it. A Git workspace Agent runs:
-
-```bash
-python scripts/agent_entry.py --mode auto
-```
-
-Manual `--mode direct` and `--mode pr` are diagnostic/compatibility paths only; they do not make
-the result durable. A local result alone is never permission to begin expensive work. PR mode
-requires an authenticated GitHub CLI so existing open reservations can be checked atomically.
-
-A GitHub API Agent instead atomically creates the same claim on fresh `main` with its file-create
-tool, fetches the exact path to verify ownership, and applies Claim Protocol v2 to every 409/422.
-No local clone, pull, shell or Python execution is required for ordinary C1 API work; repository
-CI may supply validation after publication.
+Atomically create the claim on fresh `main`, fetch the exact path to verify ownership, and apply
+Claim Protocol v2 to every write conflict. No clone, pull, shell, local Python, transport choice,
+or per-task user question is part of ordinary chat entry. Repository CI supplies executable checks
+when needed.
 
 ### Arrival order and collision rule
 
@@ -195,8 +174,8 @@ agent-permissions-v2.3
 repository-playback-evidence-v2
 ```
 
-After a GitHub API Agent has published its minimal durable claim (or before local business work for
-a Git workspace Agent), read in order:
+After the ordinary chat Agent has published its minimal durable claim, read in order before
+producing business data:
 
 1. `coordination/AGENT_PERMISSIONS.json`
 2. `coordination/AGENT_PERMISSIONS.md`

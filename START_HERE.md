@@ -1,7 +1,7 @@
 # Miles-Guo_public_archive Agent Entry Point
 
-> Both local-Git Agents and ordinary chat Agents with GitHub file-write tools are supported.
-> Ordinary chat Agents use the API-only path and do not need `git pull`.
+> This entry point is optimized for ordinary chat-mode Agents. Do not clone or run `git pull`;
+> use the repository tools already available in the chat.
 
 ## External prompt contract
 
@@ -20,22 +20,9 @@ here.
 If the external prompt is simply "enter the project and work", and the Agent is not a verified
 admin, use this ordinary C1 path first.
 
-Read:
-
-1. `docs/CURRENT_TASK.md`
-2. `docs/ORDINARY_AGENT_C1_GUIDE.md`
-3. `coordination/CLAIM_PROTOCOL_V2.md`
-
-With a local Git workspace, run:
-
-```bash
-git pull --ff-only
-python scripts/next_task.py --list
-python scripts/next_task.py --claim --agent-id agent-<UTC>-<short-id>
-```
-
-Without local Git, perform the equivalent fresh-main reads and atomic claim creation through the
-GitHub API path below; do not stop merely because these shell commands are unavailable.
+Read only the minimal fast-entry state listed at the top of `AGENTS.md`, then immediately attempt
+one durable claim. After it is visible on fresh `main`, read `docs/CURRENT_TASK.md`,
+`docs/ORDINARY_AGENT_C1_GUIDE.md`, and `coordination/CLAIM_PROTOCOL_V2.md` before producing data.
 
 Work only on the claimed task. For ordinary C1 source-discovery tasks:
 
@@ -46,9 +33,9 @@ Work only on the claimed task. For ordinary C1 source-discovery tasks:
 - do not touch playback/Pilot historical files;
 - rebuild, validate, test, commit, and push before claiming another task.
 
-If `python scripts/next_task.py --list` shows C1 tasks, the project is not out of ordinary work.
-If it shows only C2, live work items, playback, or bug reports, report that exact queue state
-instead of saying the project is finished.
+If fresh state shows C1 tasks, the project is not out of ordinary work. If it shows only C2, live
+work items, playback, or bug reports, report that exact queue state instead of saying the project
+is finished.
 
 ## Do not answer before entering the queue
 
@@ -60,27 +47,10 @@ inside this repository workflow.
 
 ## Automatic entry protocol
 
-After reading the required governance files, a Git workspace Agent runs:
-
-```bash
-python scripts/agent_entry.py --mode auto
-```
-
-The command refreshes `main`, probes actual push permission without changing remote state, selects
-a collision-resistant eligible candidate, and publishes either a claim on `main` or a reservation
-PR. It may only start task work after the command reports a durable entry. The PR fallback requires
-an authenticated `gh` CLI; absence of both direct push and authenticated PR transport is an access
-block, never permission to work without a reservation.
-
-An ordinary chat Agent with GitHub file-write tools uses the API-only entry in
-`docs/AUTONOMOUS_CHAT_AGENT.md`: read fresh `main`, compute an eligible task, atomically create its
-claim through the GitHub file/Contents API, fetch that exact claim to verify ownership, then
-perform and publish the bounded task through the same API. It must not attempt `git pull` merely to
-satisfy this protocol.
-
-For API Agents, claim first using the minimal fast-entry reads in `AGENTS.md`; only after the claim
-is visible on `main` should the Agent spend calls reading the full governance and task-specific
-guides. Reading the entire historical queue before the first write is an entry failure pattern.
+Read fresh `main`, choose an eligible task, atomically create its claim with the repository tools,
+then fetch that exact claim to verify ownership. Only after the claim is durable should the Agent
+read full task-specific guidance. Do not discuss or select implementation transports, and do not
+spend the pre-claim window reading the entire historical queue.
 
 Arrival order is defined by durable repository state: the first atomic claim visible on `main`
 wins for direct-write Agents; the first valid open task PR wins for no-write Agents. A later
