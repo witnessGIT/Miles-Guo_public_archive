@@ -1,12 +1,28 @@
 # Miles-Guo_public_archive
 
-## Ordinary chat Agent entry — mandatory
+## Entry mode detection — exactly two modes
 
-This repository's worker entry is optimized for ordinary chat-mode Agents. Do not clone, pull,
-run local setup, classify transport types, or explain Git/API mechanics to the user. Use the
-repository tools already available in the chat to read and publish files.
+Choose automatically from capabilities; never ask the user which mode to use.
 
-Reserve the limited tool window for durable work. Before claim, read only:
+### Mode 1 — Work mode
+
+When a terminal/workspace is available, clone the repository if it is absent, or fast-forward it
+if already present, then enter the repository and run the local automatic entry:
+
+```bash
+git clone https://github.com/witnessGIT/Miles-Guo_public_archive.git
+cd Miles-Guo_public_archive
+python scripts/agent_entry.py --mode auto
+```
+
+For an existing checkout use `git pull --ff-only` instead of cloning. Work mode must use the clone;
+it must not substitute stale chat context for current repository state.
+
+### Mode 2 — Ordinary chat mode
+
+When no terminal/workspace is available, do not clone or pull. Use the repository tools already
+present in the chat to read and publish files. Reserve the limited tool window for durable work.
+Before claim, read only:
 
 1. `AGENTS.md`;
 2. `coordination/WORKFLOW.json`;
@@ -14,7 +30,7 @@ Reserve the limited tool window for durable work. Before claim, read only:
    plus the claim/completion paths for the highest-priority open candidate;
 4. the exact candidate claim/completion paths needed to verify availability.
 
-It then immediately attempts the atomic claim. The longer Step 0 reading list and task-specific
+Then immediately attempt the atomic claim. The longer Step 0 reading list and task-specific
 guides are read **after the claim is durable but before business data is produced**. Do not exhaust
 the tool window by recursively reading the full queue, every historical claim, every completion,
 or unrelated Playback policy before attempting entry.
@@ -49,10 +65,9 @@ truthful block after all compatible work was exhausted, or a documented stop sta
 case, `CLAIM_RACE_LOST`, or discovery of a completed case is internal control flow: refresh and
 select another candidate in the same session.
 
-Atomically create the claim on fresh `main`, fetch the exact path to verify ownership, and apply
-Claim Protocol v2 to every write conflict. No clone, pull, shell, local Python, transport choice,
-or per-task user question is part of ordinary chat entry. Repository CI supplies executable checks
-when needed.
+In ordinary chat mode, atomically create the claim on fresh `main`, fetch the exact path to verify
+ownership, and apply Claim Protocol v2 to every write conflict. Repository CI supplies executable
+checks when needed.
 
 ### Arrival order and collision rule
 

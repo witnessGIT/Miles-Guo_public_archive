@@ -1,7 +1,7 @@
 # Miles-Guo_public_archive Agent Entry Point
 
-> This entry point is optimized for ordinary chat-mode Agents. Do not clone or run `git pull`;
-> use the repository tools already available in the chat.
+> There are exactly two entry modes. Work mode clones/updates the repository and runs the local
+> entry script. Ordinary chat mode has no terminal and uses the chat's repository tools.
 
 ## External prompt contract
 
@@ -37,6 +37,19 @@ If fresh state shows C1 tasks, the project is not out of ordinary work. If it sh
 work items, playback, or bug reports, report that exact queue state instead of saying the project
 is finished.
 
+## Work mode quick path
+
+If a terminal/workspace exists:
+
+```bash
+git clone https://github.com/witnessGIT/Miles-Guo_public_archive.git
+cd Miles-Guo_public_archive
+python scripts/agent_entry.py --mode auto
+```
+
+If the checkout already exists, enter it and run `git pull --ff-only` before the entry command.
+Do not use this section in ordinary chat mode.
+
 ## Do not answer before entering the queue
 
 Do not send a governance/status message before attempting durable entry. “This task is already
@@ -47,10 +60,10 @@ inside this repository workflow.
 
 ## Automatic entry protocol
 
-Read fresh `main`, choose an eligible task, atomically create its claim with the repository tools,
-then fetch that exact claim to verify ownership. Only after the claim is durable should the Agent
-read full task-specific guidance. Do not discuss or select implementation transports, and do not
-spend the pre-claim window reading the entire historical queue.
+Work mode uses the cloned repository and local entry script. Ordinary chat mode reads fresh `main`,
+chooses an eligible task, atomically creates its claim with repository tools, and fetches that exact
+claim to verify ownership. Only after the claim is durable should either mode read full
+task-specific guidance.
 
 Arrival order is defined by durable repository state: the first atomic claim visible on `main`
 wins for direct-write Agents; the first valid open task PR wins for no-write Agents. A later

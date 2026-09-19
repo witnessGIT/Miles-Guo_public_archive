@@ -22,11 +22,15 @@ ENTER REPOSITORY
   -> REPEAT
 ```
 
-### Ordinary chat entry
+### Two entry modes
 
-Use the repository tools already present in the chat: read the minimal fresh state, atomically
-publish one claim, verify it on `main`, then read the task-specific rules and execute. Do not clone,
-pull, classify transport types, or spend the pre-claim tool window reading unrelated history.
+- **Work mode:** clone or fast-forward the repository, then run
+  `python scripts/agent_entry.py --mode auto` inside the checkout.
+- **Ordinary chat mode:** without a terminal, use the chat's repository tools, read minimal fresh
+  state, atomically publish one claim, and verify it on `main`.
+
+Detect the mode from available capabilities; do not ask the user. Both modes read task-specific
+rules only after durable entry.
 
 For ordinary claimed archive/business work, no PR and no repeated per-task owner approval are required. An Agent must not intentionally stop after one successful task while other safe eligible work exists.
 

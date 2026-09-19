@@ -83,7 +83,12 @@
   "external_prompt_contract": "one_sentence_repository_enter_and_execute",
   "minimal_external_prompt_example": "进入 witnessGIT/Miles-Guo_public_archive，开始执行。",
   "bootstrap_entrypoint": "START_HERE.md",
-  "automatic_entry_runner": "ordinary_chat_repository_tools",
+  "entry_modes": {
+    "work": "clone_or_fast_forward_then_python_scripts_agent_entry_mode_auto",
+    "ordinary_chat": "repository_tools_minimal_read_then_atomic_claim"
+  },
+  "automatic_entry_runner": "capability_detect_work_or_ordinary_chat",
+  "work_mode_requires_clone": true,
   "ordinary_chat_requires_local_git": false,
   "ordinary_chat_fast_entry": true,
   "ordinary_chat_read_full_governance_after_durable_claim": true,
