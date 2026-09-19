@@ -1,5 +1,18 @@
 # Miles-Guo_public_archive
 
+## Two supported Agent transports
+
+This repository supports both transports represented in its history:
+
+1. **Git workspace Agent (for example Codex):** use the local automatic entry command.
+2. **GitHub API Agent (ordinary chat Agent with repository file-write tools):** do not clone or
+   pull. Read fresh `main`, claims/completions and open PR state through GitHub tools, then use the
+   API-only procedure in `docs/AUTONOMOUS_CHAT_AGENT.md` and `coordination/CLAIM_PROTOCOL_V2.md`.
+
+An Agent with read-only access cannot publish durable work, but lack of local Git is not itself a
+blocker. Historical GPT workers used the API path: commits were attributed to the authenticated
+GitHub account while claim records retained each distinct GPT `agent_id`.
+
 ## Zero-prompt autonomous entry — mandatory
 
 The only external instruction needed is:
@@ -16,8 +29,8 @@ contract.
 ### Entry execution barrier — no early chat response
 
 The Agent's **first substantive action** after entering is repository execution, not a prose
-status update. It must refresh state and run the applicable `scripts/agent_entry.py` command
-below before reporting anything to the user. A statement such as “task M004 is already claimed;
+status update. It must refresh state and run `scripts/agent_entry.py` or perform its documented
+GitHub API equivalent before reporting anything to the user. A statement such as “task M004 is already claimed;
 I will handle another task next” is an **invalid final response**: it describes recovery instead
 of performing it.
 
@@ -26,19 +39,21 @@ truthful block after all compatible work was exhausted, or a documented stop sta
 case, `CLAIM_RACE_LOST`, or discovery of a completed case is internal control flow: refresh and
 select another candidate in the same session.
 
-Before any business work, refresh `main` and open PR state, create/reuse one local stable
-`agent_id`, then run exactly one appropriate entry path:
+Before business work, choose the entry mechanism from the tools actually available—never ask the
+user to choose it. A Git workspace Agent runs:
 
 ```bash
-# direct-write worker/admin
-python scripts/agent_entry.py --mode direct
-
-# no-write worker after confirming it cannot push to main
-python scripts/agent_entry.py --mode pr
+python scripts/agent_entry.py --mode auto
 ```
 
-For direct write, immediately commit/push the created claim. For PR mode, immediately create
-the emitted task PR. A local result alone is never permission to begin expensive work.
+Manual `--mode direct` and `--mode pr` are diagnostic/compatibility paths only; they do not make
+the result durable. A local result alone is never permission to begin expensive work. PR mode
+requires an authenticated GitHub CLI so existing open reservations can be checked atomically.
+
+A GitHub API Agent instead atomically creates the same claim on fresh `main` with its file-create
+tool, fetches the exact path to verify ownership, and applies Claim Protocol v2 to every 409/422.
+No local clone, pull, shell or Python execution is required for ordinary C1 API work; repository
+CI may supply validation after publication.
 
 ### Arrival order and collision rule
 

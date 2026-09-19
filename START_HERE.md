@@ -1,5 +1,8 @@
 # Miles-Guo_public_archive Agent Entry Point
 
+> Both local-Git Agents and ordinary chat Agents with GitHub file-write tools are supported.
+> Ordinary chat Agents use the API-only path and do not need `git pull`.
+
 ## External prompt contract
 
 A one-sentence external prompt is sufficient:
@@ -23,13 +26,16 @@ Read:
 2. `docs/ORDINARY_AGENT_C1_GUIDE.md`
 3. `coordination/CLAIM_PROTOCOL_V2.md`
 
-Then run:
+With a local Git workspace, run:
 
 ```bash
 git pull --ff-only
 python scripts/next_task.py --list
 python scripts/next_task.py --claim --agent-id agent-<UTC>-<short-id>
 ```
+
+Without local Git, perform the equivalent fresh-main reads and atomic claim creation through the
+GitHub API path below; do not stop merely because these shell commands are unavailable.
 
 Work only on the claimed task. For ordinary C1 source-discovery tasks:
 
@@ -54,21 +60,23 @@ inside this repository workflow.
 
 ## Automatic entry protocol
 
-After reading the required governance files, a fresh Agent must refresh `main` and open PR state,
-create/reuse one local stable identity, and immediately run one of these commands:
+After reading the required governance files, a Git workspace Agent runs:
 
 ```bash
-# direct write available
-python scripts/agent_entry.py --mode direct
-
-# no direct write; PR contribution route
-python scripts/agent_entry.py --mode pr
+python scripts/agent_entry.py --mode auto
 ```
 
-The command selects a collision-resistant eligible candidate and creates a local atomic claim or
-prints the exact PR reservation identity. The Agent must immediately make that result durable:
-push the claim to `main`, or create the emitted PR. It may only start task work after that durable
-entry exists.
+The command refreshes `main`, probes actual push permission without changing remote state, selects
+a collision-resistant eligible candidate, and publishes either a claim on `main` or a reservation
+PR. It may only start task work after the command reports a durable entry. The PR fallback requires
+an authenticated `gh` CLI; absence of both direct push and authenticated PR transport is an access
+block, never permission to work without a reservation.
+
+An ordinary chat Agent with GitHub file-write tools uses the API-only entry in
+`docs/AUTONOMOUS_CHAT_AGENT.md`: read fresh `main`, compute an eligible task, atomically create its
+claim through the GitHub file/Contents API, fetch that exact claim to verify ownership, then
+perform and publish the bounded task through the same API. It must not attempt `git pull` merely to
+satisfy this protocol.
 
 Arrival order is defined by durable repository state: the first atomic claim visible on `main`
 wins for direct-write Agents; the first valid open task PR wins for no-write Agents. A later

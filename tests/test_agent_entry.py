@@ -2,6 +2,7 @@ import json
 import sys
 import tempfile
 import unittest
+import subprocess
 from pathlib import Path
 from unittest.mock import patch
 
@@ -124,6 +125,112 @@ class AgentEntryTests(unittest.TestCase):
 
         self.assertEqual(result, 1)
         playback_candidates.assert_not_called()
+
+    def test_pr_selection_skips_tasks_reserved_by_open_pull_requests(self):
+        tasks = [
+            {"id": "C1-A", "priority": 100},
+            {"id": "C1-B", "priority": 100},
+        ]
+        with patch.object(agent_entry.next_task, "eligible_tasks", return_value=tasks), patch.object(
+            agent_entry.next_task,
+            "candidate_order",
+            side_effect=lambda eligible, agent_id, requested: eligible,
+        ):
+            selected = agent_entry.select_pr_task("agent-test", {"C1-A"})
+        self.assertEqual(selected, "C1-B")
+
+    def test_automatic_entry_publishes_direct_claim_when_push_is_available(self):
+        with patch.object(agent_entry, "refresh_main") as refresh, patch.object(
+            agent_entry, "direct_push_available", return_value=True
+        ), patch.object(agent_entry, "publish_direct_claim", return_value=0) as publish:
+            result = agent_entry.automatic_entry("agent-test", 7, "origin")
+        self.assertEqual(result, 0)
+        refresh.assert_called_once_with("origin")
+        publish.assert_called_once_with("agent-test", 7, "origin")
+
+    def test_refresh_rejects_unpublished_local_main_commit(self):
+        def fake_git(*args, check=True):
+            outputs = {
+                ("status", "--porcelain=v1"): "",
+                ("branch", "--show-current"): "main\n",
+                ("pull", "--ff-only", "origin", "main"): "Already up to date.\n",
+                ("rev-parse", "HEAD"): "local123\n",
+                ("rev-parse", "origin/main"): "remote456\n",
+            }
+            return subprocess.CompletedProcess(args, 0, outputs[args], "")
+
+        with patch.object(agent_entry, "run_git", side_effect=fake_git):
+            with self.assertRaisesRegex(RuntimeError, "not identical"):
+                agent_entry.refresh_main("origin")
+
+    def test_automatic_entry_falls_back_to_pr_when_direct_push_is_unavailable(self):
+        with patch.object(agent_entry, "refresh_main"), patch.object(
+            agent_entry, "direct_push_available", return_value=False
+        ), patch.object(agent_entry, "publish_pr_reservation", return_value=0) as publish:
+            result = agent_entry.automatic_entry("agent-test", 10, "origin")
+        self.assertEqual(result, 0)
+        publish.assert_called_once_with("agent-test", "origin")
+
+    def test_automatic_entry_retries_after_pr_reservation_race(self):
+        with patch.object(agent_entry, "refresh_main"), patch.object(
+            agent_entry, "direct_push_available", return_value=False
+        ), patch.object(
+            agent_entry, "publish_pr_reservation", side_effect=[3, 0]
+        ) as publish:
+            result = agent_entry.automatic_entry("agent-test", 10, "origin")
+        self.assertEqual(result, 0)
+        self.assertEqual(publish.call_count, 2)
+
+    def test_pr_publish_blocks_safely_without_authenticated_github_cli(self):
+        with patch.object(agent_entry, "gh_available", return_value=False):
+            result = agent_entry.publish_pr_reservation("agent-test", "origin")
+        self.assertEqual(result, 2)
+
+    def test_manual_pr_entry_fails_closed_when_open_prs_cannot_be_read(self):
+        with patch.object(
+            agent_entry, "open_pr_reservations", side_effect=RuntimeError("no GitHub access")
+        ), patch.object(agent_entry, "select_pr_task") as select:
+            result = agent_entry.pr_entry("agent-test")
+        self.assertEqual(result, 2)
+        select.assert_not_called()
+
+    def test_direct_publish_stages_only_claim_paths_and_pushes_main(self):
+        calls = []
+        statuses = iter(["", "?? coordination/claims/C1-A.json\n"])
+
+        def fake_git(*args, check=True):
+            calls.append(args)
+            if args[:2] == ("status", "--porcelain=v1"):
+                return subprocess.CompletedProcess(args, 0, next(statuses), "")
+            if args[:2] == ("push", "origin"):
+                return subprocess.CompletedProcess(args, 0, "", "")
+            if args[:2] == ("rev-parse", "HEAD"):
+                return subprocess.CompletedProcess(args, 0, "abc123\n", "")
+            return subprocess.CompletedProcess(args, 0, "", "")
+
+        with patch.object(agent_entry, "run_git", side_effect=fake_git), patch.object(
+            agent_entry, "direct_entry", return_value=0
+        ):
+            result = agent_entry.publish_direct_claim("agent-test", 10, "origin")
+
+        self.assertEqual(result, 0)
+        self.assertIn(("add", "--", "coordination/claims/C1-A.json"), calls)
+        self.assertIn(("push", "origin", "HEAD:main"), calls)
+
+    def test_github_repository_slug_supports_https_and_ssh_remotes(self):
+        for remote_url in (
+            "https://github.com/witnessGIT/Miles-Guo_public_archive.git",
+            "git@github.com:witnessGIT/Miles-Guo_public_archive.git",
+        ):
+            with self.subTest(remote_url=remote_url), patch.object(
+                agent_entry,
+                "run_git",
+                return_value=subprocess.CompletedProcess([], 0, remote_url + "\n", ""),
+            ):
+                self.assertEqual(
+                    agent_entry.github_repository_slug("origin"),
+                    "witnessGIT/Miles-Guo_public_archive",
+                )
 
 
 if __name__ == "__main__":

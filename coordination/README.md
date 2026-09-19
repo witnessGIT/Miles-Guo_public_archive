@@ -19,6 +19,7 @@ Important paths:
 
 ```text
 coordination/claims/
+coordination/pr_reservations/
 coordination/completed/
 coordination/ready/
 coordination/bug_reports/

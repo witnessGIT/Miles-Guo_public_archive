@@ -16,7 +16,7 @@ on:
       - 'scripts/playback_queue.py'
       - 'scripts/next_task.py'
       - 'scripts/project_status.py'
-      - 'data/live_segments/**'
+      - 'data/current/live_segments/**'
       - 'data/playback_audits/**'
       - 'data/playback_evidence/**'
       - 'coordination/playback_requests/**'
@@ -37,7 +37,7 @@ on:
     branches: [main]
     paths:
       - 'scripts/**'
-      - 'data/live_segments/**'
+      - 'data/current/live_segments/**'
       - 'data/playback_audits/**'
       - 'data/playback_evidence/**'
       - 'coordination/playback_requests/**'

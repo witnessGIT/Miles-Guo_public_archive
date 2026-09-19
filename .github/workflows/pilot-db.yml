@@ -12,6 +12,14 @@ on:
       - 'scripts/project_status.py'
       - 'tests/**'
       - '.github/workflows/pilot-db.yml'
+  pull_request:
+    branches: [main]
+    paths:
+      - 'data/**'
+      - 'schema/**'
+      - 'scripts/**'
+      - 'tests/**'
+      - '.github/workflows/pilot-db.yml'
   workflow_dispatch:
 
 permissions:
@@ -46,6 +54,7 @@ jobs:
         run: python scripts/validate_db.py
 
       - name: Commit rebuilt Pilot database
+        if: github.event_name == 'push'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"

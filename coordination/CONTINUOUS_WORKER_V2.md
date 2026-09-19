@@ -22,6 +22,20 @@ ENTER REPOSITORY
   -> REPEAT
 ```
 
+### Agent transport entry
+
+With a local Git workspace, the executable entry contract is one command:
+
+```bash
+python scripts/agent_entry.py --mode auto
+```
+
+It owns refresh, effective permission probing and durable direct/PR reservation publication.
+An ordinary chat Agent with GitHub file-write tools performs the equivalent fresh-main reads and
+atomic file creation through the GitHub Contents/API path; it does not need `git pull` or a shell.
+Detailed states and prerequisites for both transports are defined in
+`docs/AUTONOMOUS_CHAT_AGENT.md`.
+
 For ordinary claimed archive/business work, no PR and no repeated per-task owner approval are required. An Agent must not intentionally stop after one successful task while other safe eligible work exists.
 
 ## Entry-output rule
