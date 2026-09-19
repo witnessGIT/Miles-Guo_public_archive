@@ -1,0 +1,19 @@
+{
+  "task_id": "C1-GWINS-list_2_14",
+  "agent_id": "agent-20260920-gpt56sol-c1",
+  "claimed_at": "2026-09-19T23:15:00Z",
+  "base_commit": "48b48b5ef074138d6e2581fcd3dcf09373e05673",
+  "status": "in_progress",
+  "workflow_mode": "continuous-worker-v2",
+  "claim_protocol": "claim-protocol-v2",
+  "continue_after_finish": true,
+  "stage": "source_discovery",
+  "case_id": null,
+  "live_id": null,
+  "kind": "source_boundary_discovery",
+  "depends_on_at_claim": [],
+  "scope": "Scan one natural GWINS boundary: list_2_14. Write source_candidates only and discover the adjacent next boundary; do not perform C2 promotion.",
+  "reclaimed_expired_claim": false,
+  "static_claim_lease_hours": 24,
+  "source_boundary": "data/current/source_boundaries/phase1_initial_boundaries.jsonl#C1-GWINS-list_2_14"
+}
