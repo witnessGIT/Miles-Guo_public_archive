@@ -3,7 +3,7 @@
   "agent_id": "agent-20260919T2139Z-gpt56sol-c1",
   "claimed_at": "2026-09-19T21:58:00Z",
   "base_commit": "947e0ea1bfe8cdaeb4564f734550b7a2bfabfefa",
-  "status": "in_progress",
+  "status": "released",
   "workflow_mode": "continuous-worker-v2",
   "claim_protocol": "claim-protocol-v2",
   "continue_after_finish": true,
@@ -15,5 +15,7 @@
   "scope": "Scan one natural GWINS boundary: list_2_47. Write source_candidates only and discover the adjacent next boundary; do not perform C2 promotion.",
   "reclaimed_expired_claim": false,
   "static_claim_lease_hours": 24,
-  "source_boundary": "data/current/source_boundaries/phase1_initial_boundaries.jsonl#C1-GWINS-list_2_47"
+  "source_boundary": "data/current/source_boundaries/phase1_initial_boundaries.jsonl#C1-GWINS-list_2_47",
+  "released_at": "2026-09-19T22:10:00Z",
+  "release_reason": "GWINS list_2_47 source page is not reliably decodable in this runtime; search-index fragments are insufficient to establish the complete natural boundary without guessing."
 }
