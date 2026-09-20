@@ -56,7 +56,7 @@ def safe_component(raw: object, field: str) -> str:
     return value
 
 
-def load_and_validate_request(path: Path) -> dict:
+def load_and_validate_request(path: Path) -> tuple[dict, str]:
     try:
         path.resolve().relative_to(REQUEST_ROOT.resolve())
     except ValueError as exc:
@@ -89,11 +89,12 @@ def load_and_validate_request(path: Path) -> dict:
     claim = json.loads(claim_path.read_text(encoding="utf-8"))
     if claim.get("agent_id") != value["agent_id"]:
         raise ValueError("request agent_id does not own the task claim")
-    if claim.get("status") != "in_progress":
-        raise ValueError("task claim is not in_progress")
     if claim.get("task_id") != value["task_id"]:
         raise ValueError("claim task_id mismatch")
-    return value
+    claim_status = str(claim.get("status") or "")
+    if claim_status not in {"claimed", "in_progress", "completed"}:
+        raise ValueError(f"task claim has unsupported status: {claim_status or '<empty>'}")
+    return value, claim_status
 
 
 class GWINSParser(HTMLParser):
@@ -171,7 +172,7 @@ def fetch_page(source_url: str) -> tuple[bytes, str, int, str]:
 
 
 def process_request(path: Path, *, force: bool = False) -> Path:
-    request = load_and_validate_request(path)
+    request, claim_status = load_and_validate_request(path)
     req_sha = request_sha256(request)
     site = str(request["source_site"]).lower()
     page_id = str(request["source_page_id"])
@@ -181,6 +182,11 @@ def process_request(path: Path, *, force: bool = False) -> Path:
         old = json.loads(evidence_path.read_text(encoding="utf-8"))
         if old.get("request_sha256") == req_sha:
             return evidence_path
+
+    # Historical requests remain durable after their tasks complete. They must be harmless on
+    # every later queue scan, but a completed task may never trigger a new or forced fetch.
+    if claim_status == "completed":
+        raise ValueError("completed task request has no matching durable evidence")
 
     raw, final_url, status, content_type = fetch_page(str(request["source_url"]))
     parsed = parse_gwins_page(raw, final_url)

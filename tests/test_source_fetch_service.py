@@ -53,8 +53,44 @@ class SourceFetchServiceTests(unittest.TestCase):
             with mock.patch.object(Path, "exists", return_value=True), mock.patch.object(
                 Path, "read_text", side_effect=[path.read_text(encoding="utf-8"), json.dumps(claim)]
             ):
-                loaded = service.load_and_validate_request(path)
+                loaded, claim_status = service.load_and_validate_request(path)
             self.assertEqual(loaded["agent_id"], "agent-test")
+            self.assertEqual(claim_status, "in_progress")
+
+    def test_claimed_status_is_fetchable(self):
+        request = {
+            "task_id": "T", "agent_id": "A", "source_site": "gwins", "source_page_id": "list_2_2",
+            "source_url": "https://www.gwins.org/cn/milesguo/list_2_2.html",
+        }
+        with mock.patch.object(service, "load_and_validate_request", return_value=(request, "claimed")), mock.patch.object(
+            service, "request_sha256", return_value="request-sha"
+        ), mock.patch.object(service, "fetch_page", return_value=(b"raw", "https://www.gwins.org/cn/milesguo/list_2_2.html", 200, "text/html")), mock.patch.object(
+            service, "parse_gwins_page", return_value={"items": [{"title": "x"}], "pagination_urls": []}
+        ):
+            with tempfile.TemporaryDirectory(dir=service.ROOT) as temp_dir:
+                with mock.patch.object(service, "EVIDENCE_ROOT", Path(temp_dir)):
+                    output = service.process_request(Path("ignored.json"))
+                    self.assertTrue(output.exists())
+
+    def test_completed_request_with_matching_evidence_is_skipped(self):
+        request = {"task_id": "T", "agent_id": "A", "source_site": "gwins", "source_page_id": "list_2_3"}
+        with tempfile.TemporaryDirectory() as temp_dir:
+            evidence_dir = Path(temp_dir) / "gwins" / "list_2_3"
+            evidence_dir.mkdir(parents=True)
+            evidence_path = evidence_dir / "evidence.json"
+            evidence_path.write_text(json.dumps({"request_sha256": "request-sha"}), encoding="utf-8")
+            with mock.patch.object(service, "load_and_validate_request", return_value=(request, "completed")), mock.patch.object(
+                service, "request_sha256", return_value="request-sha"
+            ), mock.patch.object(service, "EVIDENCE_ROOT", Path(temp_dir)), mock.patch.object(service, "fetch_page") as fetch:
+                self.assertEqual(service.process_request(Path("ignored.json")), evidence_path)
+                fetch.assert_not_called()
+
+    def test_completed_request_cannot_fetch_new_evidence(self):
+        request = {"task_id": "T", "agent_id": "A", "source_site": "gwins", "source_page_id": "list_2_3"}
+        with tempfile.TemporaryDirectory() as temp_dir, mock.patch.object(
+            service, "load_and_validate_request", return_value=(request, "completed")
+        ), mock.patch.object(service, "EVIDENCE_ROOT", Path(temp_dir)), self.assertRaisesRegex(ValueError, "no matching"):
+            service.process_request(Path("ignored.json"))
 
 
 if __name__ == "__main__":
