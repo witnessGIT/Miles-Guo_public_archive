@@ -1,0 +1,80 @@
+name: Source Page Evidence Service
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'coordination/source_fetch_requests/**/*.json'
+      - 'scripts/process_source_fetch_request.py'
+      - '.github/workflows/source-page-evidence-service.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: miles-guo-source-page-evidence-writer
+  cancel-in-progress: true
+
+jobs:
+  process-source-pages:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Process pending source fetch requests
+        shell: bash
+        run: |
+          set -euo pipefail
+          failed=0
+          mapfile -t requests < <(find coordination/source_fetch_requests -type f -name '*.json' | sort)
+          for request in "${requests[@]}"; do
+            [[ -z "$request" ]] && continue
+            if ! python scripts/process_source_fetch_request.py --request "$request"; then
+              failed=1
+            fi
+          done
+          exit "$failed"
+
+      - name: Commit durable source evidence
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          if [[ -e data/source_page_evidence ]]; then
+            git add -f -- data/source_page_evidence
+          fi
+          if git diff --cached --quiet; then
+            echo 'No durable source-page evidence changes to commit.'
+            exit 0
+          fi
+          git commit -m 'data: publish repository source-page evidence'
+          published=false
+          for attempt in 1 2 3 4 5; do
+            if [[ -d .git/rebase-merge || -d .git/rebase-apply ]]; then
+              git rebase --abort || true
+            fi
+            git fetch origin main
+            if git rebase origin/main && git push origin HEAD:main; then
+              published=true
+              break
+            fi
+            if [[ -d .git/rebase-merge || -d .git/rebase-apply ]]; then
+              git rebase --abort || true
+            fi
+            echo "Source evidence push race, retry $attempt/5"
+            sleep $((attempt * 2))
+          done
+          if [[ "$published" != "true" ]]; then
+            echo 'Failed to publish source evidence after bounded retries.'
+            exit 1
+          fi

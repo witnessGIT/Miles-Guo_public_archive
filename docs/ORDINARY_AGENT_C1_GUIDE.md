@@ -58,6 +58,28 @@ Do not process a fixed number of videos. Do not promote candidates to
 
 4. Scan the task's one natural boundary.
 
+   If the ordinary-chat web reader cannot fetch the exact page, do not stop and do not use
+   search snippets. Submit one repository Source Page Evidence request for the active claim:
+
+   ```json
+   {
+     "request_version": "source-fetch-request-v1",
+     "task_id": "C1-GWINS-list_2_3",
+     "agent_id": "agent-<same-claim-owner>",
+     "source_site": "gwins",
+     "source_page_id": "list_2_3",
+     "source_url": "https://www.gwins.org/cn/milesguo/list_2_3.html",
+     "requested_at": "<UTC ISO-8601>"
+   }
+   ```
+
+   Write it to `coordination/source_fetch_requests/<TASK_ID>/<agent_id>.json`, commit and push.
+   GitHub Actions will publish the complete parsed page to
+   `data/source_page_evidence/gwins/<source_page_id>/evidence.json`. Refresh `main`, read that
+   evidence, and use its `items` as the verified natural-boundary source. The generated evidence
+   is read-only to workers. A pending evidence request is continuation of the claimed task, not a
+   `HOST_STOP`, and does not authorize claiming another task.
+
 5. Write discovered records under `data/current/source_candidates/`.
 
 6. If the boundary exposes adjacent pages or detail/search continuations, append

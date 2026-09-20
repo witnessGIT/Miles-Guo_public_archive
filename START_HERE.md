@@ -33,6 +33,9 @@ Work only on the claimed task. For ordinary C1 source-discovery tasks:
 - do not touch playback/Pilot historical files;
 - rebuild, validate, test, commit, and push before claiming another task.
 
+If the chat runtime cannot read the exact source page, follow the Source Page Evidence request
+path in `docs/ORDINARY_AGENT_C1_GUIDE.md`; do not stop at the host web-reader limitation.
+
 If fresh state shows C1 tasks, the project is not out of ordinary work. If it shows only C2, live
 work items, playback, or bug reports, report that exact queue state instead of saying the project
 is finished.

@@ -44,8 +44,10 @@
       "may_submit_bug_reports": true,
       "may_submit_playback_requests": true,
       "may_submit_playback_acceptances": true,
+      "may_submit_source_fetch_requests": true,
       "may_modify_service_generated_playback_evidence": false,
-      "may_modify_service_generated_playback_audits": false
+      "may_modify_service_generated_playback_audits": false,
+      "may_modify_service_generated_source_page_evidence": false
     }
   },
   "protected_control_plane_paths": [
@@ -65,7 +67,8 @@
   ],
   "protected_service_output_paths": [
     "data/playback_evidence/",
-    "data/playback_audits/"
+    "data/playback_audits/",
+    "data/source_page_evidence/"
   ],
   "worker_business_paths": [
     "coordination/claims/",
@@ -75,12 +78,14 @@
     "coordination/playback_requests/",
     "coordination/playback_acceptances/",
     "coordination/playback_attempts/",
+    "coordination/source_fetch_requests/",
     "data/ excluding protected_service_output_paths",
     "reports/"
   ],
   "worker_bug_report_path": "coordination/bug_reports/",
   "worker_bug_rule": "report_bug_then_continue_other_eligible_work; do_not_fix_control_plane",
   "playback_worker_rule": "workers may request repository-generated decoded-media evidence and accept evidence for their own active claimed playback task; workers must not modify the evidence service implementation or its generated evidence/audit outputs",
+  "source_fetch_worker_rule": "workers may request repository-generated source-page evidence for their own active claimed C1 task; workers must not modify generated source-page evidence",
   "external_pr_rule": "agents without direct repository write permission may fork or use an available personal branch, open a PR identified by TASK_ID and agent_id, keep working on that PR branch, and update the same PR until the task is merge-ready; open valid task PRs are soft reservations and must be checked before another agent starts the same task",
   "notes": [
     "Repository owner authorizes every Agent with effective GitHub write capability to directly execute and push claimed business/video-archive work without a PR or repeated per-task approval.",
@@ -89,11 +94,13 @@
     "An open valid task PR is a soft reservation so other Agents should avoid duplicating that task; only merged work becomes authoritative main-branch completion state.",
     "An Agent is admin only when the authenticated GitHub login is verified as witnessGIT or the repository owner explicitly grants an admin exception in the current interaction.",
     "github-actions[bot] is a system actor allowed to publish validated Playback Evidence Service outputs.",
+    "github-actions[bot] is a system actor allowed to publish validated Source Page Evidence Service outputs.",
     "If account identity cannot be verified, act as worker.",
     "Worker Agents may directly push business-task outputs that belong to a valid claimed task, plus their own coordination claim/completion/readiness records, playback requests/acceptances, and new immutable bug reports when they have write access.",
     "Finishing one task never requires returning to the owner for permission; refresh repository state and claim or PR-reserve the next eligible task immediately.",
     "A non-blocking control-plane bug is reported and then the worker immediately switches to another eligible task; one bug must not stop the archive pipeline.",
     "Playback requests and acceptances are worker business coordination records. data/playback_evidence and data/playback_audits are generated/validated service outputs and are not direct worker-write surfaces.",
+    "Source fetch requests are worker business coordination records. data/source_page_evidence is generated service output and is not a direct worker-write surface.",
     "The GitHub Actions service, scripts, schemas and workflow definitions remain admin-only to prevent concurrent Agents from destabilizing shared machinery.",
     "After required Pilot quality gates pass, owner intent is to continue into FULL_ARCHIVE and keep processing until all eligible public video archive work is complete."
   ]
