@@ -9,19 +9,21 @@ Branch: `main`
 Continue **C1 source discovery only**. The current highest-priority open boundary is expected to be:
 
 ```text
-C1-GWINS-list_2_4
-https://www.gwins.org/cn/milesguo/list_2_4.html
+C1-GWINS-list_2_2
+https://www.gwins.org/cn/milesguo/list_2_2.html
 ```
 
 Always refresh and run `python3 scripts/next_task.py --list` before claiming because scheduled ChatGPT agents may advance the queue after this handoff is written.
 
 ## Current durable state
 
-- `C1-GWINS-list_2_12` through `C1-GWINS-list_2_5` are completed.
+- `C1-GWINS-list_2_12` through `C1-GWINS-list_2_3` are completed.
 - Each completed GWINS page contributed 40 `source_candidates`.
 - `list_2_8` was initially blocked in ordinary chat mode, then completed by a verified `witnessGIT` admin using direct HTTP access.
 - `list_2_8` completion commit: `0d8e09a`.
-- Current database validation after `list_2_5`: 2,464 source candidates, 3 canonical live videos.
+- Current database validation after `list_2_3`: 2,544 source candidates, 3 canonical live videos.
+- The Source Page Evidence Service is live and was end-to-end verified on `list_2_3`; ordinary
+  chat agents can submit a small owned request when their web reader cannot access the exact page.
 - C1 is not complete; the adjacent-page chain must continue toward `list_2_1` unless fresh source evidence establishes a different natural end.
 - Five ChatGPT scheduled tasks exist for C1 work. They run hourly at minutes `:06`, `:18`, `:30`, `:42`, and `:54` JST. Treat fresh Git state as authoritative and obey claim races.
 
@@ -40,7 +42,8 @@ git push origin main
 
 After the claim is visible on fresh `main`:
 
-1. Fetch the exact natural boundary directly. For GWINS, `curl -L -A 'Mozilla/5.0' <URL>` has worked when ordinary chat retrieval failed.
+1. Fetch the exact natural boundary. If the ordinary chat web reader fails, submit the request
+   documented in `docs/ORDINARY_AGENT_C1_GUIDE.md`, refresh, then use the generated evidence.
 2. Record all visible listing items under `data/current/source_candidates/gwins/`.
 3. Preserve visible titles, dates, source video IDs, boundary URL, and detail URLs.
 4. Mark the current boundary completed and append exactly the adjacent next natural boundary.

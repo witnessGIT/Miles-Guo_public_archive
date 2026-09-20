@@ -1,0 +1,29 @@
+{
+  "task_id": "C1-GWINS-list_2_3",
+  "agent_id": "agent-20260921-admin-source-service",
+  "completed_by": "agent-20260921-admin-source-service",
+  "status": "completed",
+  "completed_at": "2026-09-20T22:42:16.975362+00:00",
+  "workflow_mode": "continuous-worker-v2",
+  "claim_protocol": "claim-protocol-v2",
+  "natural_boundary": "https://www.gwins.org/cn/milesguo/list_2_3.html",
+  "outputs": [
+    "data/current/source_candidates/gwins/list_2_3.jsonl",
+    "data/current/source_boundaries/phase1_initial_boundaries.jsonl"
+  ],
+  "candidate_count": 40,
+  "canonical_promotion_performed": false,
+  "validation": {
+    "source_site": "GWINS",
+    "page_kind": "index_page",
+    "all_candidates_status": "discovered",
+    "all_candidate_live_ids_null": true,
+    "fixed_quota_used": false,
+    "evidence_basis": "repository Source Page Evidence Service fetched HTTP 200 page, raw SHA-256 e4888c5d5040a7be98e515ca40b7641b1f11eb32790abefb7a32cf834e407e27, and parsed 40 visible title records",
+    "source_page_evidence": "data/source_page_evidence/gwins/list_2_3/evidence.json"
+  },
+  "new_boundaries": [
+    "C1-GWINS-list_2_2"
+  ],
+  "continue_after_finish": true
+}
