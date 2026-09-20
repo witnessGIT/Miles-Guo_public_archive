@@ -1,0 +1,28 @@
+{
+  "task_id": "C1-GWINS-list_2_9",
+  "agent_id": "agent-20260921T0422JST-chat-c1",
+  "status": "completed",
+  "completed_at": "2026-09-20T19:39:00Z",
+  "workflow_mode": "continuous-worker-v2",
+  "claim_protocol": "claim-protocol-v2",
+  "natural_boundary": "https://gwins.org/cn/milesguo/list_2_9.html",
+  "outputs": [
+    "data/current/source_candidates/gwins/list_2_9.jsonl",
+    "data/current/source_boundaries/phase1_initial_boundaries.jsonl"
+  ],
+  "candidate_count": 40,
+  "canonical_promotion_performed": false,
+  "validation": {
+    "source_site": "GWINS",
+    "page_kind": "index_page",
+    "all_candidates_status": "discovered",
+    "all_candidate_live_ids_null": true,
+    "fixed_quota_used": false,
+    "evidence_basis": "full public GWINS list_2_9 index boundary plus verified detail-page links",
+    "duplicate_source_video_id_hits_in_current_candidates": 0
+  },
+  "new_boundaries": [
+    "C1-GWINS-list_2_8"
+  ],
+  "continue_after_finish": true
+}
