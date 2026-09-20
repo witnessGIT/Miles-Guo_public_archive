@@ -3,7 +3,7 @@
   "agent_id": "agent-20260921T0422JST-chat-c1",
   "claimed_at": "2026-09-20T19:22:00Z",
   "base_commit": "ef22434c84eef262c09c2804de036238a8297e96",
-  "status": "claimed",
+  "status": "completed",
   "workflow_mode": "continuous-worker-v2",
   "claim_protocol": "claim-protocol-v2",
   "continue_after_finish": true,
@@ -14,5 +14,10 @@
   "depends_on_at_claim": [],
   "scope": "Scan one natural GWINS boundary at list_2_9; write source_candidates only and append only the necessary next source boundary.",
   "reclaimed_expired_claim": false,
-  "static_claim_lease_hours": 24
+  "static_claim_lease_hours": 24,
+  "completed_at": "2026-09-20T19:39:00Z",
+  "outputs": [
+    "data/current/source_candidates/gwins/list_2_9.jsonl",
+    "data/current/source_boundaries/phase1_initial_boundaries.jsonl"
+  ]
 }
