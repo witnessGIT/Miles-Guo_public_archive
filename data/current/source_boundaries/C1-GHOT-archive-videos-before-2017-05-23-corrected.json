@@ -1,1 +1,14 @@
-{"id":"C1-GHOT-archive-videos-before-2017-05-23-corrected","source_site":"ghot","boundary_type":"archive_page","natural_boundary":"GHOT archive/videos boundary immediately before discovered 2017-05-23 result","url":"https://ghot.ai/archive/videos","status":"open","priority":109,"discovered_from":"C1-GHOT-archive-videos-before-2017-05-25","notes":"Corrected continuation task id; C1 source discovery only, no C2 promotion."}
+{
+  "id": "C1-GHOT-archive-videos-before-2017-05-23-corrected",
+  "source_site": "ghot",
+  "boundary_type": "archive_page",
+  "natural_boundary": "GHOT archive/videos boundary immediately before discovered 2017-05-23 result",
+  "url": "https://ghot.ai/archive/videos",
+  "status": "completed",
+  "priority": 109,
+  "discovered_from": "C1-GHOT-archive-videos-before-2017-05-25",
+  "notes": "Corrected continuation task id; C1 source discovery only, no C2 promotion. Admin reconciliation: matching durable C1 completion already exists; stale open boundary status closed without C2 promotion.",
+  "completed_by": "agent-20260919-gpt56sol-continuous-c1b",
+  "completed_at": "2026-09-18T20:36:00Z",
+  "output": "data/current/source_candidates/C1-GHOT-archive-videos-before-2017-05-23-corrected.jsonl"
+}
