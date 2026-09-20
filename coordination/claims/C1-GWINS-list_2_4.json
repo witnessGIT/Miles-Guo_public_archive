@@ -3,7 +3,7 @@
   "agent_id": "agent-20260921T0728JST-chat-c1-agent3",
   "claimed_at": "2026-09-20T22:28:39Z",
   "base_commit": "f98729650177aef78b02b7809903d8a6ad623a2f",
-  "status": "claimed",
+  "status": "blocked",
   "workflow_mode": "continuous-worker-v2",
   "claim_protocol": "claim-protocol-v2",
   "continue_after_finish": true,
@@ -15,5 +15,8 @@
   "scope": "Scan one natural GWINS boundary: GWINS adjacent list page immediately newer than list_2_5. Write source_candidates only, and append only the necessary next source boundary.",
   "reclaimed_expired_claim": false,
   "static_claim_lease_hours": 24,
-  "source_boundary": "data/current/source_boundaries/phase1_initial_boundaries.jsonl#C1-GWINS-list_2_4"
+  "source_boundary": "data/current/source_boundaries/phase1_initial_boundaries.jsonl#C1-GWINS-list_2_4",
+  "blocked_at": "2026-09-20T22:31:00Z",
+  "stop_state": "HOST_STOP",
+  "block_reason": "The exact public GWINS list_2_4 index boundary could not be fetched by this ordinary-chat runtime: direct page retrieval was inaccessible and exact-site public search returned no results. Recording search fragments or inferred membership would violate the C1 rule requiring real verification of the complete natural boundary. No source_candidates, canonical data, protected control-plane files, or next boundary were modified."
 }
