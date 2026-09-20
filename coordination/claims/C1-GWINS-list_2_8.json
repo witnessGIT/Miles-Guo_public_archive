@@ -2,7 +2,7 @@
   "task_id": "C1-GWINS-list_2_8",
   "agent_id": "agent-20260921T0544JST-chat-c1-agent4",
   "claimed_at": "2026-09-20T20:44:41Z",
-  "status": "claimed",
+  "status": "blocked",
   "workflow_mode": "continuous-worker-v2",
   "claim_protocol": "claim-protocol-v2",
   "continue_after_finish": true,
@@ -14,5 +14,8 @@
   "scope": "Scan one natural GWINS boundary at list_2_8; write source_candidates only and append only the necessary next source boundary.",
   "reclaimed_expired_claim": false,
   "static_claim_lease_hours": 24,
-  "source_boundary": "data/current/source_boundaries/phase1_initial_boundaries.jsonl#C1-GWINS-list_2_8"
+  "source_boundary": "data/current/source_boundaries/phase1_initial_boundaries.jsonl#C1-GWINS-list_2_8",
+  "blocked_at": "2026-09-20T20:52:00Z",
+  "stop_state": "HOST_STOP",
+  "block_reason": "The exact public GWINS list_2_8 index boundary could not be fetched by this ordinary-chat runtime. Public search indexing exposed individual June 2022 GWINS records but did not establish exact list_2_8 membership, so recording them as this boundary would violate the repository rule against using search fragments as a complete boundary. No source_candidates, canonical data, or protected control-plane files were modified."
 }
