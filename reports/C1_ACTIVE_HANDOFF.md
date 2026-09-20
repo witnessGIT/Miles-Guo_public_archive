@@ -9,19 +9,19 @@ Branch: `main`
 Continue **C1 source discovery only**. The current highest-priority open boundary is expected to be:
 
 ```text
-C1-GWINS-list_2_7
-https://www.gwins.org/cn/milesguo/list_2_7.html
+C1-GWINS-list_2_4
+https://www.gwins.org/cn/milesguo/list_2_4.html
 ```
 
 Always refresh and run `python3 scripts/next_task.py --list` before claiming because scheduled ChatGPT agents may advance the queue after this handoff is written.
 
 ## Current durable state
 
-- `C1-GWINS-list_2_12` through `C1-GWINS-list_2_8` are completed.
+- `C1-GWINS-list_2_12` through `C1-GWINS-list_2_5` are completed.
 - Each completed GWINS page contributed 40 `source_candidates`.
 - `list_2_8` was initially blocked in ordinary chat mode, then completed by a verified `witnessGIT` admin using direct HTTP access.
 - `list_2_8` completion commit: `0d8e09a`.
-- Current database validation after `list_2_8`: 2,344 source candidates, 3 canonical live videos.
+- Current database validation after `list_2_5`: 2,464 source candidates, 3 canonical live videos.
 - C1 is not complete; the adjacent-page chain must continue toward `list_2_1` unless fresh source evidence establishes a different natural end.
 - Five ChatGPT scheduled tasks exist for C1 work. They run hourly at minutes `:06`, `:18`, `:30`, `:42`, and `:54` JST. Treat fresh Git state as authoritative and obey claim races.
 
