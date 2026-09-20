@@ -1,0 +1,18 @@
+{
+  "task_id": "C1-GWINS-list_2_5",
+  "agent_id": "agent-20260921-admin-local-c1",
+  "claimed_at": "2026-09-20T21:36:10.188326+00:00",
+  "base_commit": "bb8b1ef6e1b1df7e4afd1b1690cdaf196973ca75",
+  "status": "in_progress",
+  "workflow_mode": "continuous-worker-v2",
+  "claim_protocol": "claim-protocol-v2",
+  "continue_after_finish": true,
+  "stage": "source_discovery",
+  "case_id": null,
+  "live_id": null,
+  "kind": "source_boundary_discovery",
+  "depends_on_at_claim": [],
+  "scope": "Scan one natural GWINS boundary: GWINS adjacent list page immediately newer than list_2_6. Write source_candidates only, and append new source_boundaries for any discovered next/list/detail pages.",
+  "reclaimed_expired_claim": false,
+  "static_claim_lease_hours": 24
+}
