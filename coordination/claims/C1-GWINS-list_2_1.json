@@ -1,1 +1,13 @@
-{"task_id":"C1-GWINS-list_2_1","agent_id":"agent-20260921T095242JST-gpt56sol-c1-agent5","status":"CLAIMED","mode":"ordinary-chat","claimed_at":"2026-09-21T00:52:42Z"}
+{
+  "task_id": "C1-GWINS-list_2_1",
+  "agent_id": "agent-20260921T095242JST-gpt56sol-c1-agent5",
+  "status": "completed",
+  "mode": "ordinary-chat",
+  "claimed_at": "2026-09-21T00:52:42Z",
+  "completed_at": "2026-09-21T01:15:49.407335+00:00",
+  "completed_by": "agent-20260921T095242JST-gpt56sol-c1-agent5",
+  "outputs": [
+    "data/current/source_candidates/gwins/list_2_1.jsonl",
+    "data/current/source_boundaries/phase1_initial_boundaries.jsonl"
+  ]
+}
