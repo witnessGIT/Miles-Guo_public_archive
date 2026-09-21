@@ -44,15 +44,33 @@ jobs:
           done
           exit "$failed"
 
+      - name: Finalize verified C1 source boundaries
+        shell: bash
+        run: |
+          set -euo pipefail
+          mapfile -t requests < <(find coordination/source_fetch_requests -type f -name '*.json' | sort -r)
+          # Two passes allow a prematurely submitted adjacent-page request to defer until the
+          # preceding verified page legally appends its boundary during the first pass.
+          for pass in 1 2; do
+            for request in "${requests[@]}"; do
+              [[ -z "$request" ]] && continue
+              python scripts/finalize_source_fetch_request.py --request "$request"
+            done
+          done
+
+      - name: Rebuild and validate C1 outputs
+        run: |
+          python scripts/build_db.py
+          python scripts/validate_db.py
+
       - name: Commit durable source evidence
         shell: bash
         run: |
           set -euo pipefail
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          if [[ -e data/source_page_evidence ]]; then
-            git add -f -- data/source_page_evidence
-          fi
+          git add -f -- data/source_page_evidence data/current/source_candidates data/current/source_boundaries \
+            coordination/claims coordination/completed database/Miles-Guo_public_archive.sqlite3
           if git diff --cached --quiet; then
             echo 'No durable source-page evidence changes to commit.'
             exit 0

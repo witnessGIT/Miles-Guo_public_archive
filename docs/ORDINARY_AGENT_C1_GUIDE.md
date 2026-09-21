@@ -76,9 +76,11 @@ Do not process a fixed number of videos. Do not promote candidates to
    Write it to `coordination/source_fetch_requests/<TASK_ID>/<agent_id>.json`, commit and push.
    GitHub Actions will publish the complete parsed page to
    `data/source_page_evidence/gwins/<source_page_id>/evidence.json`. Refresh `main`, read that
-   evidence, and use its `items` as the verified natural-boundary source. The generated evidence
-   is read-only to workers. A pending evidence request is continuation of the claimed task, not a
-   `HOST_STOP`, and does not authorize claiming another task.
+   evidence, and verify the service-generated candidate/completion outputs. The service performs
+   the mechanical candidate conversion, completes the claimed boundary, and appends only the
+   adjacent page established by evidence. Generated evidence is read-only to workers. A pending
+   evidence request is continuation of the claimed task, not a `HOST_STOP`, and does not authorize
+   manually claiming an absent or later boundary.
 
 5. Write discovered records under `data/current/source_candidates/`.
 

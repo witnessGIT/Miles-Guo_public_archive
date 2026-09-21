@@ -91,7 +91,7 @@ def load_and_validate_request(path: Path) -> tuple[dict, str]:
         raise ValueError("request agent_id does not own the task claim")
     if claim.get("task_id") != value["task_id"]:
         raise ValueError("claim task_id mismatch")
-    claim_status = str(claim.get("status") or "")
+    claim_status = str(claim.get("status") or "").lower()
     if claim_status not in {"claimed", "in_progress", "completed"}:
         raise ValueError(f"task claim has unsupported status: {claim_status or '<empty>'}")
     return value, claim_status
