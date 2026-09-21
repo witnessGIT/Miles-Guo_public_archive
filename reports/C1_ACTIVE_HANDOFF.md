@@ -6,26 +6,23 @@ Branch: `main`
 
 ## Immediate objective
 
-Continue **C1 source discovery only**. The current highest-priority open boundary is expected to be:
-
-```text
-C1-GWINS-list_2_2
-https://www.gwins.org/cn/milesguo/list_2_2.html
-```
-
-Always refresh and run `python3 scripts/next_task.py --list` before claiming because scheduled ChatGPT agents may advance the queue after this handoff is written.
+**C1 source discovery is complete.** Do not claim or invent another C1 boundary. Fresh queue state
+now recommends `C2-CANDIDATE-PROMOTION`, which is outside the former C1-only worker scope and
+requires an explicit C2 operating decision.
 
 ## Current durable state
 
-- `C1-GWINS-list_2_12` through `C1-GWINS-list_2_3` are completed.
+- `C1-GWINS-list_2_72` through `C1-GWINS-list_2_1` are completed.
 - Each completed GWINS page contributed 40 `source_candidates`.
 - `list_2_8` was initially blocked in ordinary chat mode, then completed by a verified `witnessGIT` admin using direct HTTP access.
 - `list_2_8` completion commit: `0d8e09a`.
-- Current database validation after `list_2_3`: 2,544 source candidates, 3 canonical live videos.
+- Current database validation after `list_2_1`: 2,624 source candidates, 3 canonical live videos.
 - The Source Page Evidence Service is live and was end-to-end verified on `list_2_3`; ordinary
   chat agents can submit a small owned request when their web reader cannot access the exact page.
-- C1 is not complete; the adjacent-page chain must continue toward `list_2_1` unless fresh source evidence establishes a different natural end.
-- Five ChatGPT scheduled tasks exist for C1 work. They run hourly at minutes `:06`, `:18`, `:30`, `:42`, and `:54` JST. Treat fresh Git state as authoritative and obey claim races.
+- The adjacent-page chain reached `list_2_1`; its verified pagination exposed no further positive
+  `list_2_N` boundary.
+- All five C1 ChatGPT scheduled tasks were paused after C1 completion to prevent empty hourly runs
+  or accidental C2/canonical work.
 
 ## Fast takeover procedure
 
