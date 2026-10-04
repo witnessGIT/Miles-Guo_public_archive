@@ -257,6 +257,14 @@ Because the repository contains a Playback Evidence Service, absence of local ff
 
 ## Task discovery and claiming
 
+During candidate identity review, an ordinary Agent claims a fixed batch of 100 currently
+`unreviewed` candidates. All 100 per-candidate claims must become durable together and therefore
+show as `in_progress` before review begins. Review the batch one candidate at a time; each completed
+candidate receives its own completion/archive record and becomes permanently `reviewed`. Do not
+top the batch back up as members finish. The Agent's batch is complete only after all 100 fixed
+members are reviewed. Any individual member still `in_progress` after 10 hours automatically
+returns to `unreviewed`; completed members never expire.
+
 Ordinary/static tasks:
 
 ```bash

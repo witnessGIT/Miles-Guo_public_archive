@@ -388,6 +388,57 @@ class NextTaskSchedulingTests(unittest.TestCase):
         self.assertEqual(states[first], "in_progress")
         self.assertEqual(states[second], "unreviewed")
 
+    def test_candidate_review_batch_claims_one_hundred_and_does_not_top_up(self):
+        for index in range(105):
+            self.write_candidate(f"SC_GWINS_BATCH_{index:03d}")
+
+        batch = next_task.claim_candidate_review_batch(
+            next_task.candidate_review_tasks(), "agent-batch"
+        )
+        self.assertEqual(batch["target_size"], 100)
+        self.assertEqual(batch["claimed_count"], 100)
+        self.assertEqual(len(batch["new_paths"]), 100)
+        states = next_task.candidate_review_states()
+        self.assertEqual(sum(row["state"] == "in_progress" for row in states), 100)
+        self.assertEqual(sum(row["state"] == "unreviewed" for row in states), 5)
+
+        first_task = batch["task_ids"][0]
+        next_task.finish_task(
+            task_id=first_task,
+            agent_id="agent-batch",
+            outputs=["data/current/live_videos/example.json"],
+            validation="identity checked",
+            live_id=None,
+            full_archive_decision=None,
+        )
+        continued = next_task.claim_candidate_review_batch(
+            next_task.candidate_review_tasks(), "agent-batch"
+        )
+        self.assertTrue(continued["continued"])
+        self.assertEqual(continued["claimed_count"], 100)
+        self.assertEqual(continued["active_count"], 99)
+        self.assertEqual(continued["new_paths"], [])
+        states = next_task.candidate_review_states()
+        self.assertEqual(sum(row["state"] == "reviewed" for row in states), 1)
+        self.assertEqual(sum(row["state"] == "in_progress" for row in states), 99)
+        self.assertEqual(sum(row["state"] == "unreviewed" for row in states), 5)
+
+    def test_candidate_review_batch_adopts_existing_single_claim(self):
+        for index in range(101):
+            self.write_candidate(f"SC_GWINS_ADOPT_{index:03d}")
+        first = next_task.candidate_review_tasks()[0]
+        first_path = next_task.claim_task(first, "agent-adopt")
+
+        batch = next_task.claim_candidate_review_batch(
+            next_task.candidate_review_tasks(), "agent-adopt"
+        )
+        self.assertEqual(batch["claimed_count"], 100)
+        self.assertEqual(len(batch["new_paths"]), 99)
+        adopted = json.loads(first_path.read_text(encoding="utf-8"))
+        self.assertEqual(adopted["review_batch_id"], batch["batch_id"])
+        self.assertEqual(adopted["review_batch_position"], 1)
+        self.assertEqual(adopted["review_batch_claimed_count"], 100)
+
     def test_candidate_review_finish_carries_timeout_metadata(self):
         candidate_id = self.write_candidate()
         task = next_task.candidate_review_tasks()[0]

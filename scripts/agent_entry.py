@@ -202,6 +202,42 @@ def playback_entry_allowed() -> bool:
 
 def direct_entry(agent_id: str, max_attempts: int) -> int:
     ordinary = next_task.eligible_tasks()
+    active_reviews = next_task.active_candidate_review_claims(agent_id)
+    ordered_ordinary = next_task.candidate_order(ordinary, agent_id, None)
+    if active_reviews or (
+        ordered_ordinary
+        and ordered_ordinary[0].get("kind") == "candidate_promotion_review"
+    ):
+        batch = next_task.claim_candidate_review_batch(ordinary, agent_id)
+        if batch.get("batch_id"):
+            emit(
+                {
+                    "entry_status": (
+                        "LOCAL_REVIEW_BATCH_ACTIVE"
+                        if batch.get("continued")
+                        else "LOCAL_REVIEW_BATCH_CREATED"
+                    ),
+                    "agent_id": agent_id,
+                    "task_type": "candidate_review_batch",
+                    "review_batch_id": batch["batch_id"],
+                    "batch_target_size": batch["target_size"],
+                    "batch_claimed_count": batch["claimed_count"],
+                    "batch_active_count": batch["active_count"],
+                    "task_ids": batch["task_ids"],
+                    "claim_paths_changed": [
+                        str(path.relative_to(ROOT)) for path in batch["changed_paths"]
+                    ],
+                    "next_required_action": (
+                        "Continue the existing batch; finish and archive each candidate "
+                        "individually. Do not top up completed members."
+                        if batch.get("continued")
+                        else "Immediately commit/push every batch claim. Work starts only "
+                        "after all claims are visible on fresh main."
+                    ),
+                }
+            )
+            return 0
+
     if ordinary:
         claimed = next_task.claim_from_candidates(
             eligible=ordinary,
@@ -341,7 +377,19 @@ def publish_direct_claim(agent_id: str, max_attempts: int, remote: str) -> int:
         "coordination/claims/", "coordination/claim_attempts/",
         "coordination/playback_attempts/",
     )
-    if not paths or any(not path.startswith(allowed) for path in paths):
+    if not paths:
+        active = next_task.active_candidate_review_claims(agent_id)
+        if active:
+            emit({
+                "entry_status": "DURABLE_REVIEW_BATCH_CONTINUE",
+                "agent_id": agent_id,
+                "mode": "direct",
+                "active_count": len(active),
+                "next_required_action": "Continue the already-published review batch.",
+            })
+            return 0
+        raise RuntimeError("entry produced no claim paths")
+    if any(not path.startswith(allowed) for path in paths):
         raise RuntimeError(f"entry produced unexpected paths: {paths}")
     run_git("add", "--", *paths)
     run_git(

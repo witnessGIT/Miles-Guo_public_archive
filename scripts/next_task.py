@@ -30,6 +30,7 @@ NON_BLOCKING_CLAIM_STATUSES = {"completed", "released", "abandoned", "cancelled"
 CANDIDATE_REVIEW_PREFIX = "C2-REVIEW-"
 CANDIDATE_REVIEW_PRIORITY = 90
 CANDIDATE_REVIEW_CLAIM_TIMEOUT_HOURS = 10
+CANDIDATE_REVIEW_BATCH_SIZE = 100
 REVIEWABLE_CANDIDATE_STATUSES = {"discovered", "needs_review"}
 
 LEGACY_BATCH_TASKS = {
@@ -333,6 +334,133 @@ def candidate_review_tasks() -> list[dict]:
     return tasks
 
 
+def active_candidate_review_claims(agent_id: str) -> list[dict]:
+    """Return this Agent's non-expired candidate claims in stable task order."""
+    active: list[dict] = []
+    for row in candidate_review_states():
+        claim = row.get("active_claim")
+        if isinstance(claim, dict) and claim.get("agent_id") == agent_id:
+            active.append(claim)
+    return sorted(active, key=lambda claim: str(claim.get("task_id") or ""))
+
+
+def _new_review_batch_id(agent_id: str) -> str:
+    stamp = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%S%fZ")
+    digest = hashlib.sha256(agent_id.encode("utf-8")).hexdigest()[:8]
+    return f"REVIEW-BATCH-{stamp}-{digest}"
+
+
+def claim_candidate_review_batch(
+    eligible: list[dict],
+    agent_id: str,
+    batch_size: int = CANDIDATE_REVIEW_BATCH_SIZE,
+) -> dict:
+    """Claim a fixed review batch, adopting an older unbatched active claim."""
+    if batch_size < 1:
+        raise ValueError("candidate review batch size must be positive")
+
+    active = active_candidate_review_claims(agent_id)
+    batched = [claim for claim in active if claim.get("review_batch_id")]
+    if batched:
+        newest = max(
+            batched,
+            key=lambda claim: parse_timestamp(claim.get("claimed_at"))
+            or datetime.min.replace(tzinfo=timezone.utc),
+        )
+        batch_id = str(newest["review_batch_id"])
+        members = [
+            claim for claim in active if str(claim.get("review_batch_id") or "") == batch_id
+        ]
+        return {
+            "batch_id": batch_id,
+            "target_size": int(newest.get("review_batch_target_size") or batch_size),
+            "claimed_count": int(newest.get("review_batch_claimed_count") or len(members)),
+            "active_count": len(members),
+            "task_ids": [str(claim.get("task_id")) for claim in members],
+            "changed_paths": [],
+            "new_paths": [],
+            "continued": True,
+        }
+
+    review_tasks = [
+        task for task in eligible if task.get("kind") == "candidate_promotion_review"
+    ]
+    unbatched = [claim for claim in active if not claim.get("review_batch_id")]
+    target_size = min(batch_size, len(unbatched) + len(review_tasks))
+    if target_size == 0:
+        return {
+            "batch_id": None,
+            "target_size": 0,
+            "claimed_count": 0,
+            "active_count": 0,
+            "task_ids": [],
+            "changed_paths": [],
+            "new_paths": [],
+            "continued": False,
+        }
+
+    batch_id = _new_review_batch_id(agent_id)
+    members: list[tuple[dict, Path]] = []
+    changed_paths: list[Path] = []
+    new_paths: list[Path] = []
+
+    for position, claim in enumerate(unbatched[:target_size], start=1):
+        task_id = str(claim.get("task_id") or "")
+        path = CLAIMS / f"{task_id}.json"
+        claim.update(
+            {
+                "review_batch_id": batch_id,
+                "review_batch_target_size": target_size,
+                "review_batch_position": position,
+            }
+        )
+        path.write_text(
+            json.dumps(claim, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
+        )
+        members.append((claim, path))
+        changed_paths.append(path)
+
+    ordered = candidate_order(review_tasks, agent_id, None)
+    for task in ordered:
+        if len(members) >= target_size:
+            break
+        position = len(members) + 1
+        try:
+            path = claim_task(
+                task,
+                agent_id,
+                claim_metadata={
+                    "review_batch_id": batch_id,
+                    "review_batch_target_size": target_size,
+                    "review_batch_position": position,
+                },
+            )
+        except FileExistsError:
+            continue
+        claim = json.loads(path.read_text(encoding="utf-8"))
+        members.append((claim, path))
+        changed_paths.append(path)
+        new_paths.append(path)
+
+    claimed_count = len(members)
+    for claim, path in members:
+        claim["review_batch_claimed_count"] = claimed_count
+        path.write_text(
+            json.dumps(claim, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
+        )
+
+    return {
+        "batch_id": batch_id,
+        "target_size": target_size,
+        "claimed_count": claimed_count,
+        "active_count": claimed_count,
+        "task_ids": [str(claim.get("task_id")) for claim, _ in members],
+        "changed_paths": changed_paths,
+        "new_paths": new_paths,
+        "continued": False,
+    }
+
+
 def print_candidate_review_summary() -> None:
     rows = candidate_review_states()
     counts = defaultdict(int)
@@ -346,6 +474,7 @@ def print_candidate_review_summary() -> None:
         "  in_progress_timeout_hours: "
         f"{CANDIDATE_REVIEW_CLAIM_TIMEOUT_HOURS}"
     )
+    print(f"  ordinary_agent_batch_size: {CANDIDATE_REVIEW_BATCH_SIZE}")
     for state in ("in_progress", "reviewed", "unreviewed"):
         sample = [row for row in rows if row["state"] == state][:10]
         if not sample:
@@ -775,7 +904,12 @@ def candidate_order(
     return ordered
 
 
-def claim_task(task: dict, agent_id: str) -> Path:
+def claim_task(
+    task: dict,
+    agent_id: str,
+    *,
+    claim_metadata: dict | None = None,
+) -> Path:
     if task_is_superseded(task):
         raise SystemExit(f"Task {task.get('id')} is superseded and cannot be claimed.")
     CLAIMS.mkdir(parents=True, exist_ok=True)
@@ -835,6 +969,8 @@ def claim_task(task: dict, agent_id: str) -> Path:
             else STATIC_CLAIM_LEASE_HOURS
         ),
     }
+    if claim_metadata:
+        payload.update(claim_metadata)
     with path.open("x", encoding="utf-8") as fh:
         json.dump(payload, fh, ensure_ascii=False, indent=2)
         fh.write("\n")
@@ -1062,6 +1198,10 @@ def finish_task(
                 "source_candidate_id": claim.get("source_candidate_id"),
                 "review_generation": claim.get("review_generation"),
                 "review_claim_timeout_hours": CANDIDATE_REVIEW_CLAIM_TIMEOUT_HOURS,
+                "review_batch_id": claim.get("review_batch_id"),
+                "review_batch_target_size": claim.get("review_batch_target_size"),
+                "review_batch_claimed_count": claim.get("review_batch_claimed_count"),
+                "review_batch_position": claim.get("review_batch_position"),
             }
         )
 

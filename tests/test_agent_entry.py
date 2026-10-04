@@ -126,6 +126,35 @@ class AgentEntryTests(unittest.TestCase):
         self.assertEqual(result, 1)
         playback_candidates.assert_not_called()
 
+    def test_direct_entry_claims_candidate_review_batch(self):
+        task = {
+            "id": "C2-REVIEW-SC-TEST-R001",
+            "priority": 90,
+            "kind": "candidate_promotion_review",
+        }
+        batch = {
+            "batch_id": "REVIEW-BATCH-TEST",
+            "target_size": 100,
+            "claimed_count": 100,
+            "active_count": 100,
+            "task_ids": [task["id"]],
+            "changed_paths": [],
+            "new_paths": [],
+            "continued": False,
+        }
+        with patch.object(agent_entry.next_task, "eligible_tasks", return_value=[task]), patch.object(
+            agent_entry.next_task, "active_candidate_review_claims", return_value=[]
+        ), patch.object(
+            agent_entry.next_task, "candidate_order", return_value=[task]
+        ), patch.object(
+            agent_entry.next_task, "claim_candidate_review_batch", return_value=batch
+        ) as claim_batch, patch.object(agent_entry, "emit") as emit:
+            result = agent_entry.direct_entry("agent-batch", 10)
+
+        self.assertEqual(result, 0)
+        claim_batch.assert_called_once_with([task], "agent-batch")
+        self.assertEqual(emit.call_args.args[0]["entry_status"], "LOCAL_REVIEW_BATCH_CREATED")
+
     def test_pr_selection_skips_tasks_reserved_by_open_pull_requests(self):
         tasks = [
             {"id": "C1-A", "priority": 100},

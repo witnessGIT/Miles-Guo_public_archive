@@ -72,7 +72,8 @@ One completed task or one claim race is not a stop condition.
 
 ### Candidate review queue
 
-C2 identity review is split by source candidate so many Agents can work independently:
+C2 identity review is split by source candidate so many Agents can work independently. An
+ordinary Agent takes a fixed batch of 100 candidates on entry:
 
 ```text
 unreviewed
@@ -85,6 +86,12 @@ reviewed
 in_progress for 10 hours without completion
   -> automatically derives back to unreviewed
 ```
+
+All 100 per-candidate claim records are published together, so the full batch immediately appears
+as `in_progress`. The Agent reviews them one by one; each finished candidate gets its own durable
+completion/archive record and becomes `reviewed`, while unfinished members remain `in_progress`.
+The batch is complete only when all 100 members are reviewed. Re-entry continues the same batch
+and never replaces completed members with newly claimed work.
 
 The three states are derived from immutable claim/completion records; Agents do not append to or
 rewrite one shared queue file. A completed review remains `reviewed`. An `in_progress` claim that
@@ -101,8 +108,9 @@ Inspect current counts with:
 python scripts/next_task.py --review-status
 ```
 
-Automatic entry and normal `--claim` include unreviewed candidate tasks. Each claim contains the
-candidate ID, review generation, and TTL. Completing one candidate never blocks other candidates.
+Automatic entry batches unreviewed candidate tasks in groups of 100. Each claim contains the
+candidate ID, review generation, batch ID/position, and TTL. Completing one candidate never blocks
+other candidates.
 
 ## 4. Claim races
 
