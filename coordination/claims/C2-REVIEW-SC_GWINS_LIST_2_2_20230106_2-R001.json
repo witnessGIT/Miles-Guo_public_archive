@@ -2,8 +2,8 @@
   "task_id": "C2-REVIEW-SC_GWINS_LIST_2_2_20230106_2-R001",
   "agent_id": "agent-20261004T133000Z-gpt56sol-chat-c2-serious",
   "claimed_at": "2026-10-04T13:30:00Z",
-  "base_commit": "45494a56504e6ec987bb12e5bfa8b45c9e41ec1b",
-  "status": "in_progress",
+  "base_commit": "29c5dd2456ee3a420a015344e1aa434278199cdf",
+  "status": "released",
   "workflow_mode": "continuous-worker-v2",
   "claim_protocol": "claim-protocol-v2",
   "entry_mode": "ordinary_chat",
@@ -21,8 +21,10 @@
   "scope": "Review source candidate SC_GWINS_LIST_2_2_20230106_2 one at a time; confirm canonical identity, duplicate/source relationships, and write isolated durable outputs. Do not perform playback audit, media download, transcription, segmentation, or later content processing. Current source: https://gwins.org/cn/milesguo/list_2_2.html",
   "reclaimed_expired_claim": false,
   "static_claim_lease_hours": 10,
-  "review_batch_id": "REVIEW-BATCH-20261004T133000Z-gpt56sol-chat-c2-serious",
+  "review_batch_id": "REVIEW-BATCH-20261004T133000Z-gpt56sol-chat-c2-serious-ERR-RELEASED",
   "review_batch_target_size": 20,
   "review_batch_position": 19,
-  "review_batch_claimed_count": 20
+  "review_batch_claimed_count": 20,
+  "released_at": "2026-10-04T13:34:00Z",
+  "release_reason": "Tool orchestration duplicated the ordinary-chat claim cycle after a successful 20-member batch; released immediately without review or business-data work."
 }
