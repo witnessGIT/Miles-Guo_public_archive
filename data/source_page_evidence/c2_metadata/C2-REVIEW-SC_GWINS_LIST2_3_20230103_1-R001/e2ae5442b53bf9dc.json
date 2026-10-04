@@ -1,0 +1,15 @@
+{
+  "evidence_version": "c2-metadata-evidence-v1",
+  "request_sha256": "e2ae5442b53bf9dc4b23aa345b2a458e2552e8296e3973885f03159be4427126",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_3_20230103_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_3_20230103_1",
+  "agent_id": "agent-20261004T125231Z-chat-c2-gw3",
+  "requested_url": "https://www.gwins.org/cn/milesguo/24197.html",
+  "fetched_at": "2026-10-04T14:23:05.188156+00:00",
+  "review_decision": null,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "source_text_imported": false,
+  "status": "fetch_failed",
+  "error": "UnicodeDecodeError: 'utf-8' codec can't decode byte 0xba in position 1492: invalid start byte"
+}
