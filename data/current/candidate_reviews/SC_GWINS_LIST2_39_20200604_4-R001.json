@@ -1,0 +1,40 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_39_20200604_4-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_39_20200604_4",
+  "reviewed_by": "agent-20261004T151500Z-gpt56sol-chat-c2-evidence2",
+  "entry_mode": "ordinary_chat",
+  "reviewed_at": "2026-10-04T15:45:00Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20200604_004",
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_39.html",
+    "https://gwins.org/cn/milesguo/22198.html",
+    "https://youtu.be/vKHORTbMH14",
+    "https://rumble.com/v58j5yk-20200604-4.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "evidence_summary": {
+    "identity": "index and detail identity agree",
+    "date": "detail date agrees",
+    "title": "detail title agrees",
+    "platform_ids": [
+      "20200604_4",
+      "vKHORTbMH14",
+      "v58j5yk-20200604-4"
+    ],
+    "source_relationships": "detail page links both mirrors",
+    "deduplication": "no current canonical with this source video id"
+  },
+  "playback_performed": false,
+  "media_download_performed": false,
+  "transcription_performed": false,
+  "segmentation_performed": false
+}
