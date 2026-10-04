@@ -33,7 +33,12 @@ class MetadataEvidenceTests(unittest.TestCase):
         self.assertNotIn("decision", result)
 
     def test_invalid_utf8_is_not_silently_replaced(self):
-        with self.assertRaises(UnicodeDecodeError): m.parse_page(b"\xff", "https://gwins.org/cn/milesguo/24186.html", "x")
+        raw = b"<script>\xff</script>" + "<title>20230101_1</title><p>今天录一段视频。</p>".encode()
+        result = m.parse_page(raw, "https://gwins.org/cn/milesguo/24186.html", "20230101_1")
+        self.assertFalse(result["decoding"]["strict"])
+        self.assertEqual(result["decoding"]["replacement_count"], 1)
+        self.assertTrue(result["decoding"]["title_clean"])
+        self.assertEqual(result["identity_type_cues"][0]["excerpt"], "今天录一段视频。")
 
     def test_owned_claim_and_candidate_binding(self):
         with tempfile.TemporaryDirectory() as td, patch.object(m, "ROOT", Path(td)):
