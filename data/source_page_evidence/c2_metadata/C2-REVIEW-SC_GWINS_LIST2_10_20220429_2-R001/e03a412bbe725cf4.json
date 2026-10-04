@@ -1,0 +1,66 @@
+{
+  "evidence_version": "c2-metadata-evidence-v1",
+  "request_sha256": "e03a412bbe725cf4b804b1352f134f9e6449141e29ac389f0b23471e824c9235",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_10_20220429_2-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_10_20220429_2",
+  "agent_id": "agent-20261004T125231Z-chat-c2-gw3",
+  "requested_url": "https://gwins.org/cn/milesguo/23898.html",
+  "fetched_at": "2026-10-04T23:07:59.364745+00:00",
+  "review_decision": null,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "source_text_imported": false,
+  "status": "fetched",
+  "http_status": 200,
+  "final_url": "https://gwins.org/cn/milesguo/23898.html",
+  "raw_bytes": 18943,
+  "raw_sha256": "e21503497e1a56a198668304ef879e732cf76a6881dda0e30399edb036b8b6b5",
+  "metadata_evidence": {
+    "page_title": "郭文贵2022年4月29日盖特 20220429_2尊敬的战友们好……今天的纽约．阳光明媚．美丽极了，今天取消了开庭．七哥与战友们分享这美好的时光！",
+    "metadata": {
+      "description": "4月29号，兄弟姐妹们。今天没开庭，昨天取消了；取消了开庭。所以今天很闲呐。 但是7哥很忙；共产党知道最近7哥很忙 — 它很害怕。继7哥昨天说天津市长廖国勋被做"
+    },
+    "decoding": {
+      "codec": "utf-8",
+      "strict": false,
+      "replacement_count": 17,
+      "title_clean": true,
+      "warning": "Damaged fields are not reliable; clean excerpts only. Missing cues are not absence evidence."
+    },
+    "expected_source_video_id": "20220429_2",
+    "expected_id_visible": true,
+    "outbound_links": [
+      "https://gettr.com/post/p17l79de01e",
+      "https://rumble.com/v5aen9h-20220429-2.html",
+      "https://gettr.com/"
+    ],
+    "identity_type_cues": [
+      {
+        "paragraph_index": 2,
+        "excerpt": "郭文贵视频"
+      },
+      {
+        "paragraph_index": 20,
+        "excerpt": "视频链接：https://gettr.com/post/p17l79de01e"
+      },
+      {
+        "paragraph_index": 21,
+        "excerpt": "视频链接2：https://rumble.com/v5aen9h-20220429-2.html"
+      },
+      {
+        "paragraph_index": 39,
+        "excerpt": "我明天上不了直播，后天星期天我要上直播跟大家聊聊最近巨大的质的改变 — 爆料革命，和五个从没感受的。刚才是有家人出来，所以我的眼镜戴着反光，赶快摘下来。哎呀，你说容易吗？不容易呀，不容易。你看这房子：这是马场，好多马；你再看这草坪…在这"
+      },
+      {
+        "paragraph_index": 39,
+        "excerpt": "我明天上不了直播，后天星期天我要上直播跟大家聊聊最近巨大的质的改变 — 爆料革命，和五个从没感受的。刚才是有家人出来，所以我的眼镜戴着反光，赶快摘下来。哎呀，你说容易吗？不容易呀，不容易。你看这房子：这是马场，好多马；你再看这草坪…在这儿你要不剪草坪人家告你"
+      },
+      {
+        "paragraph_index": 40,
+        "excerpt": "一会儿出去会个老友，开两个小会，再让共产党哆嗦哆嗦。很多战友们关心的各种问题，星期天我们的直播中给你们回答回答。大家所有跟7哥一起“心连心”的感受太美好了，太美妙了！"
+      }
+    ],
+    "cue_profile": "origin-context-v2",
+    "cue_warning": "Excerpts may discuss other recordings; a reviewer must resolve context. No automatic type decision."
+  }
+}

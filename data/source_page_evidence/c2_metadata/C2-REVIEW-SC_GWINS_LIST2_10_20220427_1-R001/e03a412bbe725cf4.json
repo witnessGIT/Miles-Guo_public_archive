@@ -1,0 +1,53 @@
+{
+  "evidence_version": "c2-metadata-evidence-v1",
+  "request_sha256": "e03a412bbe725cf4b804b1352f134f9e6449141e29ac389f0b23471e824c9235",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_10_20220427_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_10_20220427_1",
+  "agent_id": "agent-20261004T125231Z-chat-c2-gw3",
+  "requested_url": "https://gwins.org/cn/milesguo/23896.html",
+  "fetched_at": "2026-10-04T23:08:01.694907+00:00",
+  "review_decision": null,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "source_text_imported": false,
+  "status": "fetched",
+  "http_status": 200,
+  "final_url": "https://gwins.org/cn/milesguo/23896.html",
+  "raw_bytes": 18502,
+  "raw_sha256": "a222d2ff9c0fc142c9402a85d16dd216b8fd1fcff1a7f957000681deeb9565b7",
+  "metadata_evidence": {
+    "page_title": "郭文贵2022年4月27日盖特 20220427_1尊敬的战友们好．七哥在开庭的路上．和战友们聊聊，我们将揭开深藏在美国的、中国共产党间谍们……在美国违法犯罪的金融政治渗透的集团。卸下P A X的邪恶的假面具！让西方的国家法律系统重",
+    "metadata": {
+      "description": "尊敬的战友们好，4月27号。7哥正在去开庭的路上… 哎呀，这阳光明媚绿树荫荫呐，太漂亮了，太漂亮了！你说人家这大树林，你说人家这花，多到…简直是无穷无"
+    },
+    "decoding": {
+      "codec": "utf-8",
+      "strict": false,
+      "replacement_count": 17,
+      "title_clean": true,
+      "warning": "Damaged fields are not reliable; clean excerpts only. Missing cues are not absence evidence."
+    },
+    "expected_source_video_id": "20220427_1",
+    "expected_id_visible": true,
+    "outbound_links": [
+      "https://rumble.com/v5ad1wc-20220427-1.html",
+      "https://gettr.com/"
+    ],
+    "identity_type_cues": [
+      {
+        "paragraph_index": 2,
+        "excerpt": "郭文贵视频"
+      },
+      {
+        "paragraph_index": 20,
+        "excerpt": "视频链接：https://odysee.com/@laxi:4/20220427_1:4"
+      },
+      {
+        "paragraph_index": 21,
+        "excerpt": "视频链接2：https://rumble.com/v5ad1wc-20220427-1.html"
+      }
+    ],
+    "cue_profile": "origin-context-v2",
+    "cue_warning": "Excerpts may discuss other recordings; a reviewer must resolve context. No automatic type decision."
+  }
+}

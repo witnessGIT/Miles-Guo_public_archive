@@ -1,0 +1,61 @@
+{
+  "evidence_version": "c2-metadata-evidence-v1",
+  "request_sha256": "e03a412bbe725cf4b804b1352f134f9e6449141e29ac389f0b23471e824c9235",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_10_20220427_2-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_10_20220427_2",
+  "agent_id": "agent-20261004T125231Z-chat-c2-gw3",
+  "requested_url": "https://gwins.org/cn/milesguo/23897.html",
+  "fetched_at": "2026-10-04T23:08:02.859179+00:00",
+  "review_decision": null,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "source_text_imported": false,
+  "status": "fetched",
+  "http_status": 200,
+  "final_url": "https://gwins.org/cn/milesguo/23897.html",
+  "raw_bytes": 14628,
+  "raw_sha256": "c1fae9ab1067ba9a3c2901c42a23566fdfbf4982f2474d610253ad678416ba05",
+  "metadata_evidence": {
+    "page_title": "郭文贵2022年4月27日盖特 20220427_2尊敬的战友们好……开完庭了开完庭了，谢谢战友们的关心，感恩上天护佑我们的一切，大家一起为美好的今天感谢万佛万神吧，一切都已经开始！",
+    "metadata": {
+      "description": "好了…尊敬的战友们好，4月27号！上午给你们发了那个视频之后到现在刚刚开完庭。从昨天晚上两点钟起床到现在，整整十八个小时…除了昨天晚上两点到今天早上六点一直在"
+    },
+    "decoding": {
+      "codec": "utf-8",
+      "strict": false,
+      "replacement_count": 17,
+      "title_clean": true,
+      "warning": "Damaged fields are not reliable; clean excerpts only. Missing cues are not absence evidence."
+    },
+    "expected_source_video_id": "20220427_2",
+    "expected_id_visible": true,
+    "outbound_links": [
+      "https://rumble.com/v5ad1yt-20220427-2.html",
+      "https://gettr.com/"
+    ],
+    "identity_type_cues": [
+      {
+        "paragraph_index": 2,
+        "excerpt": "郭文贵视频"
+      },
+      {
+        "paragraph_index": 20,
+        "excerpt": "视频链接：https://odysee.com/@laxi:4/20220427_2:d"
+      },
+      {
+        "paragraph_index": 21,
+        "excerpt": "视频链接2：https://rumble.com/v5ad1yt-20220427-2.html"
+      },
+      {
+        "paragraph_index": 26,
+        "excerpt": "好了…尊敬的战友们好，4月27号！上午给你们发了那个视频之后到现在刚刚开完庭。从昨天晚上两点钟起床到现在，整整十八个小时…除了昨天晚上两点到今天早上六点一直在跟亚洲的，还有战友们，还有一些其它地方的在开会，然后今天就是开庭。感触太深了！"
+      },
+      {
+        "paragraph_index": 33,
+        "excerpt": "一天，星期五，是司法部的一个所谓的Trustee的一个会；它对我们一点都不友好，不太友好。但是，那是小事儿。明天找时间我看看能不能直播一会儿，因为明天我有好几个大的其它方面的会 — 你们懂的。灭共正在关键时！谢谢战友们的关心，很多战友发的信息我就不一一回复了。"
+      }
+    ],
+    "cue_profile": "origin-context-v2",
+    "cue_warning": "Excerpts may discuss other recordings; a reviewer must resolve context. No automatic type decision."
+  }
+}

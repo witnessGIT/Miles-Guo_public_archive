@@ -1,0 +1,70 @@
+{
+  "evidence_version": "c2-metadata-evidence-v1",
+  "request_sha256": "e03a412bbe725cf4b804b1352f134f9e6449141e29ac389f0b23471e824c9235",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_10_20220418_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_10_20220418_1",
+  "agent_id": "agent-20261004T125231Z-chat-c2-gw3",
+  "requested_url": "https://gwins.org/cn/milesguo/23891.html",
+  "fetched_at": "2026-10-04T23:08:14.852361+00:00",
+  "review_decision": null,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "source_text_imported": false,
+  "status": "fetched",
+  "http_status": 200,
+  "final_url": "https://gwins.org/cn/milesguo/23891.html",
+  "raw_bytes": 19681,
+  "raw_sha256": "fca8713aeb1aa63a5c3356a9902a718f21be85f05e20c7afe3d65157abfdf38c",
+  "metadata_evidence": {
+    "page_title": "郭文贵2022年4月18日盖特 20220418_1尊敬的战友们好，刚才的视频没有讲完．最后一个重点是．刚刚收到信息．上海会马上解封！",
+    "metadata": {
+      "description": "乖乖嘞，4月18号，尊敬的战友们好，今天是周一。今天的纽约蓝天白云呐，蓝天白云，太棒了！中央公园很热闹，兄弟姐妹们，我收到了大量的信息，在海口的，大连的，哈尔滨的，"
+    },
+    "decoding": {
+      "codec": "utf-8",
+      "strict": false,
+      "replacement_count": 17,
+      "title_clean": true,
+      "warning": "Damaged fields are not reliable; clean excerpts only. Missing cues are not absence evidence."
+    },
+    "expected_source_video_id": "20220418_1",
+    "expected_id_visible": true,
+    "outbound_links": [
+      "https://gettr.com/post/p15wbxu0c9c",
+      "https://rumble.com/v5acwz1-20220418-1.html",
+      "https://gettr.com/"
+    ],
+    "identity_type_cues": [
+      {
+        "paragraph_index": 0,
+        "excerpt": "郭文贵2022年4月18日盖特 20220418_1尊敬的战友们好，刚才的视频没有讲完．最后一个重点是．刚刚收到信息．上海会马上解封！"
+      },
+      {
+        "paragraph_index": 2,
+        "excerpt": "郭文贵视频"
+      },
+      {
+        "paragraph_index": 12,
+        "excerpt": "郭文贵2022年4月18日盖特 20220418_1 尊敬的战友们好，刚才的视频没有讲完．最后一个重点是．刚刚收到信息．上海会马上解封！"
+      },
+      {
+        "paragraph_index": 20,
+        "excerpt": "视频链接：https://gettr.com/post/p15wbxu0c9c"
+      },
+      {
+        "paragraph_index": 21,
+        "excerpt": "视频链接2：https://rumble.com/v5acwz1-20220418-1.html"
+      },
+      {
+        "paragraph_index": 28,
+        "excerpt": "我说这样吧，你报告完我再通知战友，我再直播一下子。但是我告诉他，我说我认为你这个报告上海不会解封。他说不可能，他说已经让我们准备了解封的条件，还有解封后的各种社会的宣传，封后的管理…因为共产党内部有一套，就是每个城封完以后怎么让死的人不让人知道，病死的人不让人家"
+      },
+      {
+        "paragraph_index": 32,
+        "excerpt": "这就是美国人对待上海人，说我们了解你们上海的惨状，进去吧。天知，地知美国人怎么对待中国人的 — 中国人你自己知道！在看这个视频的很多到了美国的上海人，你们站出来说一句有良知的话，美国人怎么给你们方便的？！现在在上海的日本大使馆和美国大使馆快饿死了个球的了 — 「这是」中国人怎么对待美国人的，怎么对待其它国家人的！但人家怎么对待我们的？"
+      }
+    ],
+    "cue_profile": "origin-context-v2",
+    "cue_warning": "Excerpts may discuss other recordings; a reviewer must resolve context. No automatic type decision."
+  }
+}

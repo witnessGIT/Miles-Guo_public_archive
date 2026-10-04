@@ -1,0 +1,62 @@
+{
+  "evidence_version": "c2-metadata-evidence-v1",
+  "request_sha256": "e03a412bbe725cf4b804b1352f134f9e6449141e29ac389f0b23471e824c9235",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_10_20220425_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_10_20220425_1",
+  "agent_id": "agent-20261004T125231Z-chat-c2-gw3",
+  "requested_url": "https://gwins.org/cn/milesguo/23894.html",
+  "fetched_at": "2026-10-04T23:08:05.204247+00:00",
+  "review_decision": null,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "source_text_imported": false,
+  "status": "fetched",
+  "http_status": 200,
+  "final_url": "https://gwins.org/cn/milesguo/23894.html",
+  "raw_bytes": 10837,
+  "raw_sha256": "61af54db5c3983967b885f2559430c8c02f15209386993204a52adaa30f4f6d3",
+  "metadata_evidence": {
+    "page_title": "郭文贵2022年4月25日盖特 20220425_1尊敬的战友们好·应战友们的要求……录一段SNOW的视频给大家????SNOW 刚刚洗完澡????太可爱了……",
+    "metadata": {
+      "description": "Snow，今天你洗澡的是吗，Snow？嗯？Snow，咋这么漂亮呢，Snow？ 你看它屁股上毛都少了，咋回事儿这Snow呢？屁股毛咋掉那么多呢？啊…Snow？ 太可爱了！Sno"
+    },
+    "decoding": {
+      "codec": "utf-8",
+      "strict": false,
+      "replacement_count": 17,
+      "title_clean": true,
+      "warning": "Damaged fields are not reliable; clean excerpts only. Missing cues are not absence evidence."
+    },
+    "expected_source_video_id": "20220425_1",
+    "expected_id_visible": true,
+    "outbound_links": [
+      "https://gettr.com/post/p172qj5026c",
+      "https://rumble.com/v5ad1re-20220425-1.html",
+      "https://gettr.com/"
+    ],
+    "identity_type_cues": [
+      {
+        "paragraph_index": 0,
+        "excerpt": "郭文贵2022年4月25日盖特 20220425_1尊敬的战友们好·应战友们的要求……录一段SNOW的视频给大家????SNOW 刚刚洗完澡????太可爱了……"
+      },
+      {
+        "paragraph_index": 2,
+        "excerpt": "郭文贵视频"
+      },
+      {
+        "paragraph_index": 12,
+        "excerpt": "郭文贵2022年4月25日盖特 20220425_1 尊敬的战友们好·应战友们的要求……录一段SNOW的视频给大家????SNOW 刚刚洗完澡????太可爱了……"
+      },
+      {
+        "paragraph_index": 20,
+        "excerpt": "视频链接：https://gettr.com/post/p172qj5026c"
+      },
+      {
+        "paragraph_index": 21,
+        "excerpt": "视频链接2：https://rumble.com/v5ad1re-20220425-1.html"
+      }
+    ],
+    "cue_profile": "origin-context-v2",
+    "cue_warning": "Excerpts may discuss other recordings; a reviewer must resolve context. No automatic type decision."
+  }
+}

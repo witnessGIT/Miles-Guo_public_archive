@@ -1,0 +1,70 @@
+{
+  "evidence_version": "c2-metadata-evidence-v1",
+  "request_sha256": "e03a412bbe725cf4b804b1352f134f9e6449141e29ac389f0b23471e824c9235",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_10_20220417_2-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_10_20220417_2",
+  "agent_id": "agent-20261004T125231Z-chat-c2-gw3",
+  "requested_url": "https://gwins.org/cn/milesguo/23890.html",
+  "fetched_at": "2026-10-04T23:08:17.195321+00:00",
+  "review_decision": null,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "source_text_imported": false,
+  "status": "fetched",
+  "http_status": 200,
+  "final_url": "https://gwins.org/cn/milesguo/23890.html",
+  "raw_bytes": 19399,
+  "raw_sha256": "86d9b7a43abdc580ea78de14a5eccb4ef0afb8487e661f7ac6e9c21f05b2b69e",
+  "metadata_evidence": {
+    "page_title": "郭文贵2022年4月17日盖特 20220417_2尊敬的战友们好……下周二．4月19号，我们将有一整天的纪念419．5周年的大直播，一切都已经开始！",
+    "metadata": {
+      "description": "尊敬的战友们好，4月17号。你看这外面的天气，你看看，你看看。哎呀～这绿茵茵的，到处是樱花，到处是迎春花，太漂亮了！ 美帝国主义咋这么漂亮啊？共产党天天骂美"
+    },
+    "decoding": {
+      "codec": "utf-8",
+      "strict": false,
+      "replacement_count": 17,
+      "title_clean": true,
+      "warning": "Damaged fields are not reliable; clean excerpts only. Missing cues are not absence evidence."
+    },
+    "expected_source_video_id": "20220417_2",
+    "expected_id_visible": true,
+    "outbound_links": [
+      "https://gettr.com/post/p15pehy240a",
+      "https://rumble.com/v5acwxf-20220417-2.html",
+      "https://gettr.com/"
+    ],
+    "identity_type_cues": [
+      {
+        "paragraph_index": 0,
+        "excerpt": "郭文贵2022年4月17日盖特 20220417_2尊敬的战友们好……下周二．4月19号，我们将有一整天的纪念419．5周年的大直播，一切都已经开始！"
+      },
+      {
+        "paragraph_index": 2,
+        "excerpt": "郭文贵视频"
+      },
+      {
+        "paragraph_index": 12,
+        "excerpt": "郭文贵2022年4月17日盖特 20220417_2 尊敬的战友们好……下周二．4月19号，我们将有一整天的纪念419．5周年的大直播，一切都已经开始！"
+      },
+      {
+        "paragraph_index": 20,
+        "excerpt": "视频链接：https://gettr.com/post/p15pehy240a"
+      },
+      {
+        "paragraph_index": 21,
+        "excerpt": "视频链接2：https://rumble.com/v5acwxf-20220417-2.html"
+      },
+      {
+        "paragraph_index": 41,
+        "excerpt": "行了，啥不说了，兄弟姐妹们。明天不直播，后天星期二有个大直播 — “419”！“419”是有几年了，“419”这都…五年了！一晃就是五年了！啥都不说了，兄弟姐妹们，星期二早上九点「开始」大直播，一整天。姆该嗮，么～"
+      },
+      {
+        "paragraph_index": 41,
+        "excerpt": "播 — “419”！“419”是有几年了，“419”这都…五年了！一晃就是五年了！啥都不说了，兄弟姐妹们，星期二早上九点「开始」大直播，一整天。姆该嗮，么～"
+      }
+    ],
+    "cue_profile": "origin-context-v2",
+    "cue_warning": "Excerpts may discuss other recordings; a reviewer must resolve context. No automatic type decision."
+  }
+}
