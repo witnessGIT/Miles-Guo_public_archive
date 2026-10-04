@@ -1,0 +1,40 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_37_20200722-R002",
+  "source_candidate_id": "SC_GWINS_LIST2_37_20200722",
+  "reviewed_by": "agent-20261004T122400Z-chatgpt-github-c2",
+  "entry_mode": "ordinary_chat",
+  "reviewed_at": "2026-10-04T16:17:00Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20200722_001",
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_37.html",
+    "https://gwins.org/cn/milesguo/12511.html",
+    "https://odysee.com/@laxi:4/20200722:a",
+    "https://rumble.com/v58lfqd-20200722.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "evidence_summary": {
+    "identity": "GWINS list_2_37 links source id 20200722 to detail page 12511 and the detail page repeats the same record identity.",
+    "date": "GWINS detail page states 发布时间 20200722, matching the source candidate date 2020-07-22.",
+    "title": "GWINS detail title matches the source candidate title for 20200722.",
+    "platform_ids": [
+      "20200722",
+      "@laxi:4/20200722:a",
+      "v58lfqd-20200722"
+    ],
+    "source_relationships": "GWINS detail 12511 directly exposes the Odysee and Rumble URLs.",
+    "deduplication": "No current canonical or completed review for source id 20200722 existed before this promotion."
+  },
+  "playback_performed": false,
+  "media_download_performed": false,
+  "transcription_performed": false,
+  "segmentation_performed": false
+}
