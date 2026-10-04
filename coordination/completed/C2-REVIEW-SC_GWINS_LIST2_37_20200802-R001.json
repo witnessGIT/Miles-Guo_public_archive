@@ -1,0 +1,27 @@
+{
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_37_20200802-R001",
+  "agent_id": "agent-20261004T122400Z-chatgpt-github-c2",
+  "completed_at": "2026-10-04T12:40:00Z",
+  "result_commit": "11d2f4a76c8012925b2204484dd0918703ba5cf8",
+  "database_refresh_commit": "135bd70c01eca3a43c66f3a421b0875a1120eab3",
+  "outputs": [
+    "data/current/live_videos/c2_review_20200802.json",
+    "data/current/sources/c2_review_20200802.jsonl",
+    "data/current/media_assets/c2_review_20200802.jsonl",
+    "data/current/source_match_candidates/c2_review_20200802.jsonl",
+    "database/Miles-Guo_public_archive.sqlite3"
+  ],
+  "validation": "GWINS list/detail identity, date, title, and direct Odysee/Rumble source relationships verified. No playback, media download, transcription, segmentation, or later-stage processing performed. Build Pilot SQLite completed successfully: repository unit tests passed, SQLite rebuilt from Git-tracked source data, validate_db.py passed, and refreshed SQLite was committed.",
+  "workflow_mode": "continuous-worker-v2",
+  "claim_protocol": "claim-protocol-v2",
+  "continue_after_finish": true,
+  "finish_prerequisites_revalidated": true,
+  "notes": "Candidate review completed under fixed review batch REVIEW-BATCH-20261004T122400Z-chatgpt. Continue with the next fixed batch member; do not top up the batch.",
+  "kind": "candidate_promotion_review",
+  "source_candidate_id": "SC_GWINS_LIST2_37_20200802",
+  "review_generation": 1,
+  "review_claim_timeout_hours": 10,
+  "review_batch_id": "REVIEW-BATCH-20261004T122400Z-chatgpt",
+  "review_batch_position": 3,
+  "review_batch_target_size": 100
+}
