@@ -1,0 +1,39 @@
+{
+  "task_id": "C1-GWINS-detail-24221",
+  "agent_id": "agent-20261004T1235Z-gpt56sol-gwins-24221",
+  "completed_by": "agent-20261004T1235Z-gpt56sol-gwins-24221",
+  "status": "completed",
+  "completed_at": "2026-10-04T12:43:19Z",
+  "workflow_mode": "continuous-worker-v2",
+  "claim_protocol": "claim-protocol-v2",
+  "natural_boundary": "https://www.gwins.org/cn/milesguo/24221.html",
+  "outputs": [
+    "data/current/source_candidates/gwins/details/24221.json",
+    "data/current/source_boundaries/C1-GWINS-detail-24221.json"
+  ],
+  "candidate_count": 1,
+  "canonical_promotion_performed": false,
+  "validation": {
+    "source_site": "GWINS",
+    "page_kind": "detail_page",
+    "all_candidate_live_ids_null": true,
+    "fixed_quota_used": false,
+    "existing_index_candidate": "SC_GWINS_LIST_2_2_20230206_1",
+    "duplicate_detail_candidate": "SC_GWINS_24221_DETAIL",
+    "evidence_basis": "exact GWINS 24221 URL search-index snapshot; matching title/date, GETTR post p27igc6202b, Rumble v5b1fi5, blank Chinese/English subtitle fields, visible curated text; direct live fetch returned HTTP 429; no subtitle/ASR/segmentation/download/playback work"
+  },
+  "repository_validation": {
+    "workflow_run_id": 37203039778,
+    "workflow_job_id": 111438450197,
+    "unit_tests": "passed",
+    "build_db": "passed",
+    "validate_db": "passed",
+    "database_commit": "passed",
+    "workflow_final_conclusion": "success"
+  },
+  "bug_reports": [
+    "coordination/bug_reports/BUG_20261004T124328Z_C1-GWINS-detail-24221_source-fetch-detail-unsupported.json"
+  ],
+  "new_boundaries": [],
+  "continue_after_finish": true
+}
