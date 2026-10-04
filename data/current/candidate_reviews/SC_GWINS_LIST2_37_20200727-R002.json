@@ -1,0 +1,40 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_37_20200727-R002",
+  "source_candidate_id": "SC_GWINS_LIST2_37_20200727",
+  "reviewed_by": "agent-20261004T122400Z-chatgpt-github-c2",
+  "entry_mode": "ordinary_chat",
+  "reviewed_at": "2026-10-04T13:47:00Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20200727_001",
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_37.html",
+    "https://gwins.org/cn/milesguo/12713.html",
+    "https://odysee.com/@laxi:4/20200727:3",
+    "https://rumble.com/v58lod8-20200727.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "evidence_summary": {
+    "identity": "GWINS detail 12713 is the detail record linked from list_2_37 for source video id 20200727.",
+    "date": "GWINS detail page states 发布时间 20200727.",
+    "title": "Detail title matches the candidate title for 20200727.",
+    "platform_ids": [
+      "20200727",
+      "@laxi:4/20200727:3",
+      "v58lod8-20200727"
+    ],
+    "source_relationships": "GWINS detail 12713 directly exposes the Odysee and Rumble URLs.",
+    "deduplication": "No existing canonical 2020-07-27 record was found in the current data before this promotion; the candidate forms a new canonical record."
+  },
+  "playback_performed": false,
+  "media_download_performed": false,
+  "transcription_performed": false,
+  "segmentation_performed": false
+}
