@@ -1,0 +1,27 @@
+{
+  "task_id": "C1-GWINS-detail-24224",
+  "agent_id": "agent-20261004T0924Z-gpt56sol-gwins-24224",
+  "completed_by": "agent-20261004T0924Z-gpt56sol-gwins-24224",
+  "status": "completed",
+  "completed_at": "2026-10-04T09:26:00Z",
+  "workflow_mode": "continuous-worker-v2",
+  "claim_protocol": "claim-protocol-v2",
+  "natural_boundary": "https://www.gwins.org/cn/milesguo/24224.html",
+  "outputs": [
+    "data/current/source_candidates/gwins/details/24224.json",
+    "data/current/source_boundaries/C1-GWINS-detail-24224.json"
+  ],
+  "candidate_count": 1,
+  "canonical_promotion_performed": false,
+  "validation": {
+    "source_site": "GWINS",
+    "page_kind": "detail_page",
+    "all_candidate_live_ids_null": true,
+    "fixed_quota_used": false,
+    "existing_index_candidate": "SC_GWINS_LIST_2_1_20230209_2",
+    "duplicate_detail_candidate": "SC_GWINS_24224_DETAIL",
+    "evidence_basis": "direct public GWINS detail page inspection; visible title/date, Odysee and Rumble links; no subtitle/ASR/segmentation/playback work"
+  },
+  "new_boundaries": [],
+  "continue_after_finish": true
+}
