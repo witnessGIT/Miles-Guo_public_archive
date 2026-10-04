@@ -1,0 +1,66 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST_2_2_20230202_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST_2_2_20230202_1",
+  "reviewed_by": "agent-20261004T133000Z-gpt56sol-chat-c2-serious",
+  "entry_mode": "ordinary_chat",
+  "reviewed_at": "2026-10-04T13:45:00Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20230202_001",
+  "evidence_urls": [
+    "https://www.gwins.org/cn/milesguo/24218.html",
+    "https://gettr.com/post/p274lsh3c21",
+    "https://rumble.com/v5b1d9u-20230202-1.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "identity": {
+    "conclusion": "distinct target video item",
+    "basis": "GWINS detail 24218 identifies 20230202_1 and direct external links."
+  },
+  "date": {
+    "value": "2023-02-02",
+    "basis": "GWINS date and source token agree."
+  },
+  "title": {
+    "value": "郭文贵2023年2月2日盖特 20230202_1",
+    "basis": "GWINS heading."
+  },
+  "platform_ids": {
+    "gwins_page": "24218",
+    "gwins_source_video_id": "20230202_1",
+    "gettr_post_id": "p274lsh3c21",
+    "rumble_item_id": "v5b1d9u"
+  },
+  "source_relationships": [
+    {
+      "from": "https://www.gwins.org/cn/milesguo/24218.html",
+      "to": "https://gettr.com/post/p274lsh3c21",
+      "type": "direct_outbound_video_link"
+    },
+    {
+      "from": "https://www.gwins.org/cn/milesguo/24218.html",
+      "to": "https://rumble.com/v5b1d9u-20230202-1.html",
+      "type": "direct_outbound_video_link"
+    }
+  ],
+  "deduplication": {
+    "result": "no_existing_canonical_match",
+    "checks": [
+      "No LIVE_20230202_001 on fresh main.",
+      "No current repository use of p274lsh3c21."
+    ]
+  },
+  "scope_limits": {
+    "playback_performed": false,
+    "media_download_performed": false,
+    "transcription_performed": false,
+    "segmentation_performed": false
+  }
+}
