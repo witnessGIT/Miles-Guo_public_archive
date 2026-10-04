@@ -1,0 +1,32 @@
+{
+  "task_id": "C2-REVIEW-SC_GWINS_LIST_2_2_20230206_1-R001",
+  "agent_id": "agent-20261004T133000Z-gpt56sol-chat-c2-serious",
+  "completed_at": "2026-10-04T13:40:00Z",
+  "result_commit": "4b306ecc32bc3e4ef46c19c122b53fdf66d03566",
+  "outputs": [
+    "data/current/candidate_reviews/SC_GWINS_LIST_2_2_20230206_1.json",
+    "data/current/live_videos/c2_review_20230206_1.json",
+    "data/current/sources/c2_review_20230206_1.jsonl",
+    "data/current/media_assets/c2_review_20230206_1.jsonl",
+    "data/current/source_match_candidates/c2_review_20230206_1.jsonl"
+  ],
+  "validation": "GWINS 24221 was read from public indexed page content: exact title/date plus direct GETTR post p27igc6202b and Rumble v5b1fi5 links were verified. Fresh repository searches found no existing LIVE_20230206_001 or use of p27igc6202b. Promoted as a new canonical without playback, download, transcription, or segmentation.",
+  "workflow_mode": "continuous-worker-v2",
+  "claim_protocol": "claim-protocol-v2",
+  "entry_mode": "ordinary_chat",
+  "continue_after_finish": true,
+  "finish_prerequisites_revalidated": true,
+  "notes": "Completed under candidate-review-evidence-v2 after one-candidate source-backed review.",
+  "kind": "candidate_promotion_review",
+  "source_candidate_id": "SC_GWINS_LIST_2_2_20230206_1",
+  "review_generation": 1,
+  "review_claim_timeout_hours": 10,
+  "review_batch_id": "REVIEW-BATCH-20261004T133000Z-gpt56sol-chat-c2-serious",
+  "review_batch_target_size": 20,
+  "review_batch_claimed_count": 20,
+  "review_batch_position": 1,
+  "candidate_review_contract": "candidate-review-evidence-v2",
+  "review_artifact": "data/current/candidate_reviews/SC_GWINS_LIST_2_2_20230206_1.json",
+  "review_decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20230206_001"
+}
