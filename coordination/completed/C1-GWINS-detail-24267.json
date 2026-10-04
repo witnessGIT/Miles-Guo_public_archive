@@ -17,5 +17,22 @@
     "c2_promotion_performed": false,
     "playback_verification_performed": false
   },
-  "continue_after_finish": true
+  "continue_after_finish": true,
+  "repository_validation": {
+    "workflow_run_id": 37187335656,
+    "unit_tests": "passed",
+    "build_db": "passed",
+    "validate_db": "passed",
+    "validation_summary": "OK (0 warnings)",
+    "database_counts": {
+      "live_sources": 12,
+      "live_videos": 6,
+      "live_work_items": 30,
+      "media_assets": 9,
+      "source_boundaries": 135,
+      "source_candidates": 2628
+    },
+    "workflow_final_conclusion": "failure",
+    "final_step_note": "Rebuilt SQLite commit could not fast-forward to main because another agent pushed concurrent commits after checkout; validation itself passed."
+  }
 }
