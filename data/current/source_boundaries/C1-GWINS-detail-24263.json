@@ -1,0 +1,19 @@
+{
+  "id": "C1-GWINS-detail-24263",
+  "source_site": "gwins",
+  "boundary_type": "detail_page",
+  "natural_boundary": "GWINS detail page 24263 for 2023-03-13 candidate 20230313_1",
+  "url": "https://www.gwins.org/cn/milesguo/24263.html",
+  "status": "in_progress",
+  "priority": 180,
+  "discovered_from": "SC_GWINS_LIST_2_1_20230313_1",
+  "completed_by": null,
+  "completed_at": null,
+  "output": "data/current/source_candidates/gwins/details/24263.json",
+  "notes": "Direct public detail-page inspection for C1 provenance only. Candidate is a duplicate of the existing list_2_1 source item; linked platform pages preserved in metadata. No C2 promotion and no playback verification.",
+  "depends_on": null,
+  "metadata_json": {
+    "task_id": "C1-GWINS-detail-24263",
+    "agent_id": "agent-20261004T0748Z-gpt56sol-gwins-24263"
+  }
+}
