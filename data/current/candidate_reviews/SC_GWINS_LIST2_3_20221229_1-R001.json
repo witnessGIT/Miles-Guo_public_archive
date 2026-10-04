@@ -1,0 +1,31 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_3_20221229_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_3_20221229_1",
+  "reviewed_by": "agent-20261004T125231Z-chat-c2-gw3",
+  "entry_mode": "ordinary_chat",
+  "reviewed_at": "2026-10-04T13:41:20Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20221229_001",
+  "evidence_urls": ["https://gwins.org/cn/milesguo/list_2_3.html", "https://www.gwins.org/cn/milesguo/24185.html", "https://www.51haoyou.com/discuz/thread-relateitem-6468.html"],
+  "checked_fields": ["identity", "date", "title", "platform_ids", "source_relationships", "deduplication"],
+  "checks": {
+    "identity": "The complete preserved GWINS source-page record identifies one specific original program with source token 20221229_1 and numeric detail page 24185. Its distinctive return-after-21-days title is also independently listed on the read 51haoyou event index, with the same date. This is more specific than a generic livestream category or same-day title similarity.",
+    "date": "The original source title, date-bearing token and service-parsed candidate date agree on 2022-12-29. The independently listed event date agrees. The separate December 30 item explicitly discusses the previous day's major live broadcast, providing additional temporal context without merging the two items.",
+    "title": "郭文贵2022年12月29日直播 20221229_1 鳳凰涅槃三度 生命浴火幾重 無色無相無我 萬法歸於滅共 文貴閉關二十一天出關大直播",
+    "platform_ids": {"gwins_source_video_id": "20221229_1", "gwins_detail_page_id": "24185", "observed_51haoyou_thread_id": "9084", "gettr_id": null, "rumble_id": null, "note": "No actual GETTR or Rumble item identity was exposed by the successfully read evidence. The forum thread link was observed in its index, but the thread itself was not readable. No missing URL or platform ID was reconstructed."},
+    "source_relationships": "The repository's exact GWINS index-to-detail linkage is preserved as the sole canonical source. The independent forum index confirms this distinctive dated program's catalog identity, not a media mirror relationship. The December 30 reference describes the earlier broadcast but does not establish duplicate-recording identity.",
+    "deduplication": "Previously inspected active canonicals plus refreshed main changes contained no corresponding December 29 2022 identity. Newly added canonical records for July 28/29 2020 and February 6 2023 were individually read and excluded. The separately identified November 30, December 4 and January 4 broadcasts are not date/title matches. December 30/31 and January 1 parts retain separate source identities; no same-topic or adjacent-date merge is performed. Scope is the inspected active repository, not exhaustive public-Web uniqueness."
+  },
+  "evidence_observations": [
+    {"kind": "repository_source_page_evidence", "path": "data/source_page_evidence/gwins/list_2_3/evidence.json", "locator": "items[source_video_id=20221229_1]", "raw_sha256": "e4888c5d5040a7be98e515ca40b7641b1f11eb32790abefb7a32cf834e407e27"},
+    {"kind": "public_search_indexed_primary_listing", "url": "https://gwins.org/cn/milesguo/list_2_3.html", "locator": "20221229_1 title/opening and the 20221230_1 introductory reference to the previous day's broadcast", "note": "The actual indexed introductory passages were read; no full transcript or media timing was imported."},
+    {"kind": "direct_public_index_read", "url": "https://www.51haoyou.com/discuz/thread-relateitem-6468.html", "locator": "2022.12.29 event link to thread-9084.html", "note": "Distinctive event title and date are corroborated by the index; the linked thread could not be fetched and is not represented as read."}
+  ],
+  "canonical_outputs": ["data/current/live_videos/c2_review_20221229_1.json", "data/current/sources/c2_review_20221229_1.jsonl"],
+  "uncertainty": "This is a partial canonical established at the original-broadcast catalog-identity level. External media provenance, duration, FPS, dimensions, exact publication time and actual playback availability are still unknown. It is not a claim of fully verified or accepted media.",
+  "canonical_promotion_performed": true,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}
