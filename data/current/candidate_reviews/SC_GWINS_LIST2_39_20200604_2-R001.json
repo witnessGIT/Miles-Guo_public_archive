@@ -1,0 +1,40 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_39_20200604_2-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_39_20200604_2",
+  "reviewed_by": "agent-20261004T151500Z-gpt56sol-chat-c2-evidence2",
+  "entry_mode": "ordinary_chat",
+  "reviewed_at": "2026-10-04T15:35:00Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20200604_002",
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_39.html",
+    "https://gwins.org/cn/milesguo/5064.html",
+    "https://youtu.be/tamPSHpac0A",
+    "https://rumble.com/v58j3t9-20200604-2.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "evidence_summary": {
+    "identity": "The public GWINS index candidate 20200604_2 links to detail page 5064 with the same identity.",
+    "date": "GWINS detail 5064 states publication date 20200604.",
+    "title": "The detail-page title matches the candidate title.",
+    "platform_ids": [
+      "20200604_2",
+      "tamPSHpac0A",
+      "v58j3t9-20200604-2"
+    ],
+    "source_relationships": "GWINS detail 5064 directly exposes the YouTube and Rumble URLs.",
+    "deduplication": "The existing same-day canonical record represents a different source video id; no current canonical record for 20200604_2 existed before this promotion."
+  },
+  "playback_performed": false,
+  "media_download_performed": false,
+  "transcription_performed": false,
+  "segmentation_performed": false
+}
