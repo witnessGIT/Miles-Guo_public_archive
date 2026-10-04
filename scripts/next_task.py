@@ -29,7 +29,7 @@ STATIC_CLAIM_LEASE_HOURS = 24
 NON_BLOCKING_CLAIM_STATUSES = {"completed", "released", "abandoned", "cancelled"}
 CANDIDATE_REVIEW_PREFIX = "C2-REVIEW-"
 CANDIDATE_REVIEW_PRIORITY = 90
-CANDIDATE_REVIEW_TTL_HOURS = 10
+CANDIDATE_REVIEW_CLAIM_TIMEOUT_HOURS = 10
 REVIEWABLE_CANDIDATE_STATUSES = {"discovered", "needs_review"}
 
 LEGACY_BATCH_TASKS = {
@@ -253,7 +253,7 @@ def candidate_review_states(*, now: datetime | None = None) -> list[dict]:
         for claim in claims_by_candidate.get(candidate_id, []):
             if str(claim.get("status") or "in_progress").lower() != "in_progress":
                 continue
-            if claim_expired(claim):
+            if claim_expired(claim, now=current):
                 continue
             claimed_at = parse_timestamp(claim.get("claimed_at"))
             if latest_completed_at is not None and (
@@ -267,14 +267,15 @@ def candidate_review_states(*, now: datetime | None = None) -> list[dict]:
                 active_claim = claim
                 active_claimed_at = claimed_at
 
-        expires_at = (
-            latest_completed_at + timedelta(hours=CANDIDATE_REVIEW_TTL_HOURS)
-            if latest_completed_at is not None
+        claim_expires_at = (
+            active_claimed_at
+            + timedelta(hours=CANDIDATE_REVIEW_CLAIM_TIMEOUT_HOURS)
+            if active_claimed_at is not None
             else None
         )
         if active_claim is not None:
             state = "in_progress"
-        elif expires_at is not None and current < expires_at:
+        elif latest_completed_at is not None:
             state = "reviewed"
         else:
             state = "unreviewed"
@@ -292,7 +293,9 @@ def candidate_review_states(*, now: datetime | None = None) -> list[dict]:
                 "latest_completed_at": (
                     latest_completed_at.isoformat() if latest_completed_at else None
                 ),
-                "review_expires_at": expires_at.isoformat() if expires_at else None,
+                "claim_expires_at": (
+                    claim_expires_at.isoformat() if claim_expires_at else None
+                ),
                 "next_generation": next_generation,
             }
         )
@@ -315,13 +318,15 @@ def candidate_review_tasks() -> list[dict]:
                 "stage": "candidate_review",
                 "source_candidate_id": candidate_id,
                 "review_generation": generation,
-                "review_ttl_hours": CANDIDATE_REVIEW_TTL_HOURS,
+                "review_claim_timeout_hours": CANDIDATE_REVIEW_CLAIM_TIMEOUT_HOURS,
                 "review_state_before_claim": "unreviewed",
                 "depends_on": [],
                 "scope": (
                     f"Review source candidate {candidate_id} one at a time; confirm canonical "
                     "identity, duplicate/source relationships, and write isolated durable "
-                    f"outputs. Current source: {candidate.get('source_url') or '-'}"
+                    "outputs. Do not perform playback audit, media download, transcription, "
+                    "segmentation, or later content processing. "
+                    f"Current source: {candidate.get('source_url') or '-'}"
                 ),
             }
         )
@@ -337,7 +342,10 @@ def print_candidate_review_summary() -> None:
     print(f"  unreviewed: {counts['unreviewed']}")
     print(f"  in_progress: {counts['in_progress']}")
     print(f"  reviewed: {counts['reviewed']}")
-    print(f"  reviewed_ttl_hours: {CANDIDATE_REVIEW_TTL_HOURS}")
+    print(
+        "  in_progress_timeout_hours: "
+        f"{CANDIDATE_REVIEW_CLAIM_TIMEOUT_HOURS}"
+    )
     for state in ("in_progress", "reviewed", "unreviewed"):
         sample = [row for row in rows if row["state"] == state][:10]
         if not sample:
@@ -345,8 +353,8 @@ def print_candidate_review_summary() -> None:
         print(f"  {state}_sample:")
         for row in sample:
             suffix = (
-                f" expires={row['review_expires_at']}"
-                if row.get("review_expires_at")
+                f" claim_expires={row['claim_expires_at']}"
+                if row.get("claim_expires_at")
                 else ""
             )
             print(f"    - {row['candidate_id']}{suffix}")
@@ -469,14 +477,20 @@ def task_completed(task_id: str) -> bool:
     return False
 
 
-def claim_expired(payload: dict) -> bool:
+def claim_expired(payload: dict, *, now: datetime | None = None) -> bool:
     if str(payload.get("status") or "in_progress").lower() != "in_progress":
         return False
     claimed_at = parse_timestamp(payload.get("claimed_at"))
     if claimed_at is None:
         return False
-    expires_at = claimed_at + timedelta(hours=STATIC_CLAIM_LEASE_HOURS)
-    return datetime.now(timezone.utc) >= expires_at
+    lease_hours = payload.get("static_claim_lease_hours", STATIC_CLAIM_LEASE_HOURS)
+    try:
+        lease_hours = float(lease_hours)
+    except (TypeError, ValueError):
+        lease_hours = float(STATIC_CLAIM_LEASE_HOURS)
+    expires_at = claimed_at + timedelta(hours=lease_hours)
+    current = (now or datetime.now(timezone.utc)).astimezone(timezone.utc)
+    return current >= expires_at
 
 
 def claim_blocks_task(task_id: str) -> bool:
@@ -810,12 +824,16 @@ def claim_task(task: dict, agent_id: str) -> Path:
         "kind": task.get("kind"),
         "source_candidate_id": task.get("source_candidate_id"),
         "review_generation": task.get("review_generation"),
-        "review_ttl_hours": task.get("review_ttl_hours"),
+        "review_claim_timeout_hours": task.get("review_claim_timeout_hours"),
         "review_state_before_claim": task.get("review_state_before_claim"),
         "depends_on_at_claim": list(task.get("depends_on", [])),
         "scope": task.get("scope", ""),
         "reclaimed_expired_claim": bool(previous_claims),
-        "static_claim_lease_hours": STATIC_CLAIM_LEASE_HOURS,
+        "static_claim_lease_hours": (
+            CANDIDATE_REVIEW_CLAIM_TIMEOUT_HOURS
+            if task.get("kind") == "candidate_promotion_review"
+            else STATIC_CLAIM_LEASE_HOURS
+        ),
     }
     with path.open("x", encoding="utf-8") as fh:
         json.dump(payload, fh, ensure_ascii=False, indent=2)
@@ -1043,11 +1061,7 @@ def finish_task(
                 "kind": "candidate_promotion_review",
                 "source_candidate_id": claim.get("source_candidate_id"),
                 "review_generation": claim.get("review_generation"),
-                "review_ttl_hours": CANDIDATE_REVIEW_TTL_HOURS,
-                "review_expires_at": (
-                    datetime.now(timezone.utc)
-                    + timedelta(hours=CANDIDATE_REVIEW_TTL_HOURS)
-                ).isoformat(),
+                "review_claim_timeout_hours": CANDIDATE_REVIEW_CLAIM_TIMEOUT_HOURS,
             }
         )
 

@@ -356,7 +356,23 @@ class NextTaskSchedulingTests(unittest.TestCase):
         self.assertEqual(reviewed[0]["state"], "reviewed")
         self.assertEqual(reviewed[0]["next_generation"], 2)
 
-        expired = next_task.candidate_review_states(now=base_now + timedelta(hours=13))
+        still_reviewed = next_task.candidate_review_states(now=base_now + timedelta(days=30))
+        self.assertEqual(still_reviewed[0]["state"], "reviewed")
+
+    def test_in_progress_review_returns_to_unreviewed_after_ten_hours(self):
+        self.write_candidate()
+        base_now = datetime(2026, 10, 4, 12, 0, tzinfo=timezone.utc)
+        task = next_task.candidate_review_tasks()[0]
+        claim_path = next_task.claim_task(task, "agent-reviewer")
+        claim = json.loads(claim_path.read_text(encoding="utf-8"))
+        claim["claimed_at"] = base_now.isoformat()
+        claim_path.write_text(json.dumps(claim), encoding="utf-8")
+
+        active = next_task.candidate_review_states(now=base_now + timedelta(hours=9))
+        self.assertEqual(active[0]["state"], "in_progress")
+        self.assertIsNotNone(active[0]["claim_expires_at"])
+
+        expired = next_task.candidate_review_states(now=base_now + timedelta(hours=10))
         self.assertEqual(expired[0]["state"], "unreviewed")
         self.assertEqual(expired[0]["next_generation"], 2)
 
@@ -372,7 +388,7 @@ class NextTaskSchedulingTests(unittest.TestCase):
         self.assertEqual(states[first], "in_progress")
         self.assertEqual(states[second], "unreviewed")
 
-    def test_candidate_review_finish_carries_ttl_metadata(self):
+    def test_candidate_review_finish_carries_timeout_metadata(self):
         candidate_id = self.write_candidate()
         task = next_task.candidate_review_tasks()[0]
         next_task.claim_task(task, "agent-reviewer")
@@ -390,8 +406,15 @@ class NextTaskSchedulingTests(unittest.TestCase):
         self.assertIsNone(marker)
         self.assertEqual(completed["source_candidate_id"], candidate_id)
         self.assertEqual(completed["review_generation"], 1)
-        self.assertEqual(completed["review_ttl_hours"], 10)
-        self.assertIsNotNone(next_task.parse_timestamp(completed["review_expires_at"]))
+        self.assertEqual(completed["review_claim_timeout_hours"], 10)
+        self.assertNotIn("review_expires_at", completed)
+
+    def test_candidate_review_scope_excludes_later_video_processing(self):
+        self.write_candidate()
+        scope = next_task.candidate_review_tasks()[0]["scope"]
+        self.assertIn("Do not perform playback audit", scope)
+        self.assertIn("transcription", scope)
+        self.assertIn("segmentation", scope)
 
 
 if __name__ == "__main__":

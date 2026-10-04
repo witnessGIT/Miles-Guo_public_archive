@@ -80,13 +80,20 @@ unreviewed
 in_progress
   -> durable canonical/duplicate/rejected decision + completion record
 reviewed
-  -> after 10 hours, automatically derives back to unreviewed
+  -> remains reviewed
+
+in_progress for 10 hours without completion
+  -> automatically derives back to unreviewed
 ```
 
 The three states are derived from immutable claim/completion records; Agents do not append to or
-rewrite one shared queue file. A fresh completed review remains `reviewed` for 10 hours. Once its
-TTL expires, the next task uses a new generation ID, preserving prior evidence while allowing a
-new independent check.
+rewrite one shared queue file. A completed review remains `reviewed`. An `in_progress` claim that
+has not completed after 10 hours is treated as an interrupted Agent and derives back to
+`unreviewed`. The next claim uses a new generation ID, preserving the timed-out claim as history.
+
+Candidate review continues the owner-approved first-two-step scope only: verify candidate identity,
+date/title/platform IDs, cross-source relationships and deduplication. It does not perform playback
+audit, media download, transcription, segmentation, or later content processing.
 
 Inspect current counts with:
 

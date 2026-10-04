@@ -13,10 +13,10 @@
   "kind": "candidate_promotion_review",
   "source_candidate_id": "SC_GWINS_LIST2_46_20191116",
   "review_generation": 1,
-  "review_ttl_hours": 10,
+  "review_claim_timeout_hours": 10,
   "review_state_before_claim": "unreviewed",
   "depends_on_at_claim": [],
   "scope": "Review source candidate SC_GWINS_LIST2_46_20191116 one at a time; confirm canonical identity, duplicate/source relationships, and write isolated durable outputs. Current source: https://gwins.org/cn/milesguo/list_2_46.html",
   "reclaimed_expired_claim": false,
-  "static_claim_lease_hours": 24
+  "static_claim_lease_hours": 10
 }
