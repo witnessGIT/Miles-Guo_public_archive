@@ -32,6 +32,21 @@ CANDIDATE_REVIEW_PRIORITY = 90
 CANDIDATE_REVIEW_CLAIM_TIMEOUT_HOURS = 10
 CANDIDATE_REVIEW_BATCH_SIZE = 100
 CANDIDATE_REVIEW_CHAT_BATCH_SIZE = 20
+CANDIDATE_REVIEW_CONTRACT = "candidate-review-evidence-v2"
+CANDIDATE_REVIEW_DECISIONS = {
+    "promoted_new_canonical",
+    "linked_existing_canonical",
+    "confirmed_duplicate",
+    "rejected_not_target",
+}
+CANDIDATE_REVIEW_REQUIRED_FIELDS = {
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication",
+}
 REVIEWABLE_CANDIDATE_STATUSES = {"discovered", "needs_review"}
 
 LEGACY_BATCH_TASKS = {
@@ -963,6 +978,11 @@ def claim_task(
         "review_generation": task.get("review_generation"),
         "review_claim_timeout_hours": task.get("review_claim_timeout_hours"),
         "review_state_before_claim": task.get("review_state_before_claim"),
+        "candidate_review_contract": (
+            CANDIDATE_REVIEW_CONTRACT
+            if task.get("kind") == "candidate_promotion_review"
+            else None
+        ),
         "depends_on_at_claim": list(task.get("depends_on", [])),
         "scope": task.get("scope", ""),
         "reclaimed_expired_claim": bool(previous_claims),
@@ -1008,6 +1028,110 @@ def claim_from_candidates(
             continue
 
     return None
+
+
+def validate_candidate_review_artifact(
+    claim_or_completion: dict,
+    outputs: list[str],
+) -> tuple[str, dict]:
+    """Require one durable, source-backed decision for one candidate review."""
+    if not outputs:
+        raise SystemExit(
+            "Candidate review completion requires a per-candidate review artifact; "
+            "empty outputs cannot be completed."
+        )
+
+    candidate_id = str(claim_or_completion.get("source_candidate_id") or "")
+    expected_prefix = "data/current/candidate_reviews/"
+    artifact_paths = [
+        value for value in outputs
+        if isinstance(value, str)
+        and value.startswith(expected_prefix)
+        and value.endswith(".json")
+    ]
+    if len(artifact_paths) != 1:
+        raise SystemExit(
+            "Candidate review completion requires exactly one JSON artifact under "
+            "data/current/candidate_reviews/."
+        )
+
+    relative = artifact_paths[0]
+    artifact_path = (ROOT / relative).resolve()
+    current_root = (DATA_CURRENT / "candidate_reviews").resolve()
+    if not artifact_path.is_relative_to(current_root) or not artifact_path.is_file():
+        raise SystemExit(f"Candidate review artifact does not exist: {relative}")
+    artifact = load_json_path(artifact_path)
+    if artifact is None:
+        raise SystemExit(f"Candidate review artifact is not a JSON object: {relative}")
+
+    expected = {
+        "contract_version": CANDIDATE_REVIEW_CONTRACT,
+        "task_id": str(claim_or_completion.get("task_id") or ""),
+        "source_candidate_id": candidate_id,
+        "reviewed_by": str(claim_or_completion.get("agent_id") or ""),
+        "entry_mode": str(claim_or_completion.get("entry_mode") or ""),
+    }
+    for field, value in expected.items():
+        if artifact.get(field) != value:
+            raise SystemExit(
+                f"Candidate review artifact {relative} has invalid {field!r}; "
+                f"expected {value!r}."
+            )
+
+    if expected["entry_mode"] not in {"work", "ordinary_chat"}:
+        raise SystemExit("Candidate review claim must record entry_mode work or ordinary_chat.")
+    if parse_timestamp(artifact.get("reviewed_at")) is None:
+        raise SystemExit("Candidate review artifact requires a valid reviewed_at timestamp.")
+
+    decision = artifact.get("decision")
+    if decision not in CANDIDATE_REVIEW_DECISIONS:
+        raise SystemExit(
+            "Candidate review decision must be a final evidence-backed decision; "
+            "insufficient/unverified work remains in_progress and cannot be completed."
+        )
+    evidence_urls = artifact.get("evidence_urls")
+    if not isinstance(evidence_urls, list) or not evidence_urls or any(
+        not isinstance(url, str) or not url.startswith(("https://", "http://"))
+        for url in evidence_urls
+    ):
+        raise SystemExit("Candidate review artifact requires one or more public evidence_urls.")
+    checked_fields = artifact.get("checked_fields")
+    if not isinstance(checked_fields, list) or not CANDIDATE_REVIEW_REQUIRED_FIELDS.issubset(
+        {str(value) for value in checked_fields}
+    ):
+        missing = sorted(
+            CANDIDATE_REVIEW_REQUIRED_FIELDS
+            - ({str(value) for value in checked_fields} if isinstance(checked_fields, list) else set())
+        )
+        raise SystemExit("Candidate review artifact is missing checked_fields: " + ", ".join(missing))
+    if decision != "rejected_not_target":
+        live_id = artifact.get("canonical_live_id")
+        if not isinstance(live_id, str) or not live_id.startswith("LIVE_"):
+            raise SystemExit(f"Decision {decision} requires canonical_live_id LIVE_....")
+    elif not str(artifact.get("rejection_reason") or "").strip():
+        raise SystemExit("Decision rejected_not_target requires rejection_reason.")
+
+    expected_batch_size = (
+        CANDIDATE_REVIEW_BATCH_SIZE
+        if expected["entry_mode"] == "work"
+        else CANDIDATE_REVIEW_CHAT_BATCH_SIZE
+    )
+    if claim_or_completion.get("review_batch_target_size") != expected_batch_size:
+        raise SystemExit(
+            f"Candidate review {expected['entry_mode']} batch target must be "
+            f"{expected_batch_size}."
+        )
+    if claim_or_completion.get("review_batch_claimed_count") != expected_batch_size:
+        raise SystemExit(
+            f"Candidate review batch must durably contain all {expected_batch_size} claims."
+        )
+    if not str(claim_or_completion.get("review_batch_id") or ""):
+        raise SystemExit("Candidate review completion requires review_batch_id.")
+    position = claim_or_completion.get("review_batch_position")
+    if not isinstance(position, int) or not 1 <= position <= expected_batch_size:
+        raise SystemExit("Candidate review completion has invalid review_batch_position.")
+
+    return relative, artifact
 
 
 def create_ready_marker(
@@ -1162,6 +1286,18 @@ def finish_task(
             f"Cannot finish {task_id}: claim belongs to {claim.get('agent_id')!r}."
         )
 
+    review_artifact_path: str | None = None
+    review_artifact: dict | None = None
+    if claim.get("kind") == "candidate_promotion_review":
+        if claim.get("candidate_review_contract") != CANDIDATE_REVIEW_CONTRACT:
+            raise SystemExit(
+                "Candidate review claim uses an obsolete contract and cannot be completed; "
+                "release it and take a fresh claim."
+            )
+        review_artifact_path, review_artifact = validate_candidate_review_artifact(
+            claim, outputs
+        )
+
     gate_sentinel = validate_finish_prerequisites(task_id)
 
     if task_id == CURRENT_P10:
@@ -1206,6 +1342,10 @@ def finish_task(
                 "review_batch_target_size": claim.get("review_batch_target_size"),
                 "review_batch_claimed_count": claim.get("review_batch_claimed_count"),
                 "review_batch_position": claim.get("review_batch_position"),
+                "candidate_review_contract": CANDIDATE_REVIEW_CONTRACT,
+                "review_artifact": review_artifact_path,
+                "review_decision": (review_artifact or {}).get("decision"),
+                "canonical_live_id": (review_artifact or {}).get("canonical_live_id"),
             }
         )
 
@@ -1478,6 +1618,28 @@ def main() -> None:
 
     if not args.agent_id:
         raise SystemExit("--claim requires --agent-id.")
+
+    candidate_work = [
+        task for task in eligible if task.get("kind") == "candidate_promotion_review"
+    ]
+    if candidate_work:
+        if args.task:
+            raise SystemExit(
+                "Candidate reviews must be claimed as one fixed Work-mode batch; "
+                "do not use --task for a single candidate."
+            )
+        batch = claim_candidate_review_batch(eligible, args.agent_id)
+        if not batch.get("batch_id"):
+            raise SystemExit("No candidate review batch could be claimed.")
+        print(
+            f"Candidate review batch created locally: {batch['batch_id']} "
+            f"({batch['claimed_count']} claims)."
+        )
+        print(
+            "IMPORTANT: commit and push every changed claim path together before reviewing. "
+            "Complete candidates one by one with evidence artifacts; never bulk-complete them."
+        )
+        return
 
     claimed = claim_from_candidates(
         eligible=eligible,

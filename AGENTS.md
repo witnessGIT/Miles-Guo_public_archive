@@ -1,5 +1,22 @@
 # Miles-Guo_public_archive
 
+## Current-state-only rule
+
+Normal entry and execution must not read `docs/archive/`, `reports/archive/`, or
+`coordination/archive/`. Those directories are sealed historical audit material and never define
+current scope, queue state, ownership, completion, or progress. Old C1-only instructions are
+superseded. Current Phase 1 work includes C2 candidate identity review; later video processing
+remains forbidden.
+
+A session/check report is not business output and cannot substitute for an eligible C2 task.
+Candidate-review completion requires one source-backed artifact under
+`data/current/candidate_reviews/` for that exact candidate. Empty outputs, generic validation text,
+bulk assertions, and “unable to verify” are not completion. Insufficiently verified work remains
+`in_progress` until completed correctly or returned to `unreviewed` by the 10-hour timeout.
+The exact pre-contract allowlist is `coordination/candidate_review_grandfathered.json`; no Agent may
+extend it. All other candidate completions, including completions from older active claims, must
+use `candidate-review-evidence-v2` and pass CI.
+
 ## Entry mode detection — exactly two modes
 
 Choose automatically from capabilities; never ask the user which mode to use.

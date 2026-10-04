@@ -66,6 +66,42 @@ class NextTaskSchedulingTests(unittest.TestCase):
         )
         return candidate_id
 
+    def write_review_artifact(self, task_id, candidate_id, agent_id, entry_mode="work"):
+        relative = f"data/current/candidate_reviews/{candidate_id}.json"
+        path = self.root / relative
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_text(
+            json.dumps(
+                {
+                    "contract_version": next_task.CANDIDATE_REVIEW_CONTRACT,
+                    "task_id": task_id,
+                    "source_candidate_id": candidate_id,
+                    "reviewed_by": agent_id,
+                    "entry_mode": entry_mode,
+                    "reviewed_at": datetime.now(timezone.utc).isoformat(),
+                    "decision": "linked_existing_canonical",
+                    "canonical_live_id": "LIVE_20261004_001",
+                    "evidence_urls": ["https://example.invalid/source"],
+                    "checked_fields": sorted(next_task.CANDIDATE_REVIEW_REQUIRED_FIELDS),
+                }
+            ),
+            encoding="utf-8",
+        )
+        return relative
+
+    def mark_as_complete_work_batch_member(self, task_id, position=1):
+        path = next_task.CLAIMS / f"{task_id}.json"
+        claim = json.loads(path.read_text(encoding="utf-8"))
+        claim.update(
+            {
+                "review_batch_id": "REVIEW-BATCH-TEST",
+                "review_batch_target_size": 100,
+                "review_batch_claimed_count": 100,
+                "review_batch_position": position,
+            }
+        )
+        path.write_text(json.dumps(claim), encoding="utf-8")
+
     def test_completed_ids_read_task_id_from_noncanonical_filename(self):
         self.write_queue(
             {
@@ -404,10 +440,16 @@ class NextTaskSchedulingTests(unittest.TestCase):
         self.assertEqual(sum(row["state"] == "unreviewed" for row in states), 5)
 
         first_task = batch["task_ids"][0]
+        first_candidate = json.loads(
+            (next_task.CLAIMS / f"{first_task}.json").read_text(encoding="utf-8")
+        )["source_candidate_id"]
+        artifact = self.write_review_artifact(
+            first_task, first_candidate, "agent-batch"
+        )
         next_task.finish_task(
             task_id=first_task,
             agent_id="agent-batch",
-            outputs=["data/current/live_videos/example.json"],
+            outputs=[artifact],
             validation="identity checked",
             live_id=None,
             full_archive_decision=None,
@@ -444,11 +486,15 @@ class NextTaskSchedulingTests(unittest.TestCase):
         candidate_id = self.write_candidate()
         task = next_task.candidate_review_tasks()[0]
         next_task.claim_task(task, "agent-reviewer")
+        self.mark_as_complete_work_batch_member(task["id"])
+        artifact = self.write_review_artifact(
+            task["id"], candidate_id, "agent-reviewer"
+        )
 
         completed_path, marker = next_task.finish_task(
             task_id=task["id"],
             agent_id="agent-reviewer",
-            outputs=["data/current/live_videos/example.json"],
+            outputs=[artifact],
             validation="identity checked",
             live_id="LIVE_20261004_001",
             full_archive_decision=None,
@@ -461,6 +507,43 @@ class NextTaskSchedulingTests(unittest.TestCase):
         self.assertEqual(completed["review_claim_timeout_hours"], 10)
         self.assertEqual(completed["entry_mode"], "work")
         self.assertNotIn("review_expires_at", completed)
+        self.assertEqual(completed["review_artifact"], artifact)
+        self.assertEqual(completed["review_decision"], "linked_existing_canonical")
+
+    def test_candidate_review_finish_rejects_empty_outputs(self):
+        self.write_candidate()
+        task = next_task.candidate_review_tasks()[0]
+        next_task.claim_task(task, "agent-reviewer")
+
+        with self.assertRaisesRegex(SystemExit, "empty outputs"):
+            next_task.finish_task(
+                task_id=task["id"],
+                agent_id="agent-reviewer",
+                outputs=[],
+                validation="generic assertion",
+                live_id=None,
+                full_archive_decision=None,
+            )
+
+    def test_candidate_review_finish_rejects_unverified_decision(self):
+        candidate_id = self.write_candidate()
+        task = next_task.candidate_review_tasks()[0]
+        next_task.claim_task(task, "agent-reviewer")
+        relative = self.write_review_artifact(task["id"], candidate_id, "agent-reviewer")
+        path = self.root / relative
+        artifact = json.loads(path.read_text(encoding="utf-8"))
+        artifact["decision"] = "insufficient_public_evidence"
+        path.write_text(json.dumps(artifact), encoding="utf-8")
+
+        with self.assertRaisesRegex(SystemExit, "final evidence-backed decision"):
+            next_task.finish_task(
+                task_id=task["id"],
+                agent_id="agent-reviewer",
+                outputs=[relative],
+                validation="unable to verify",
+                live_id=None,
+                full_archive_decision=None,
+            )
 
     def test_candidate_review_scope_excludes_later_video_processing(self):
         self.write_candidate()

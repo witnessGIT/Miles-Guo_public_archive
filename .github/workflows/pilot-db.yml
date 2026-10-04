@@ -5,6 +5,8 @@ on:
     branches: [main]
     paths:
       - 'data/**'
+      - 'coordination/claims/**'
+      - 'coordination/completed/**'
       - 'schema/**'
       - 'scripts/build_db.py'
       - 'scripts/validate_db.py'
@@ -16,6 +18,8 @@ on:
     branches: [main]
     paths:
       - 'data/**'
+      - 'coordination/claims/**'
+      - 'coordination/completed/**'
       - 'schema/**'
       - 'scripts/**'
       - 'tests/**'
@@ -46,6 +50,9 @@ jobs:
 
       - name: Run repository unit tests
         run: python -m unittest discover -s tests -p 'test_*.py' -v
+
+      - name: Validate candidate-review evidence
+        run: python scripts/validate_candidate_reviews.py
 
       - name: Build SQLite from Git-tracked source data
         run: python scripts/build_db.py

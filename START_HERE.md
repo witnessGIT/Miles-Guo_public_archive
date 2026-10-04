@@ -15,30 +15,27 @@ The repository is the authoritative execution context. Do not ask the user to re
 requirements, select a task, choose a source, or authorize routine continuation already stored
 here.
 
-## Ordinary C1 worker quick path
+## Ordinary current-work quick path
 
 If the external prompt is simply "enter the project and work", and the Agent is not a verified
-admin, use this ordinary C1 path first.
+admin, use the current C2 candidate-review path.
 
 Read only the minimal fast-entry state listed at the top of `AGENTS.md`, then immediately attempt
-one durable claim. After it is visible on fresh `main`, read `docs/CURRENT_TASK.md`,
-`docs/ORDINARY_AGENT_C1_GUIDE.md`, and `coordination/CLAIM_PROTOCOL_V2.md` before producing data.
+one durable claim. After it is visible on fresh `main`, read `docs/CURRENT_TASK.md` and
+`coordination/CLAIM_PROTOCOL_V2.md` before producing data. Never read archived instruction roots
+during normal entry or execution.
 
-Work only on the claimed task. For ordinary C1 source-discovery tasks:
+For ordinary-chat C2 work, atomically publish exactly 20 per-candidate claims, then review them
+one by one. Each completion requires its own `candidate-review-evidence-v2` artifact under
+`data/current/candidate_reviews/` and must pass `scripts/validate_candidate_reviews.py`.
 
-- scan exactly one natural source boundary;
-- write only `data/current/source_candidates/`;
-- append follow-up boundaries only under `data/current/source_boundaries/`;
-- do not promote candidates into `live_videos`, `live_sources`, or `media_assets`;
-- do not touch playback/Pilot historical files;
-- rebuild, validate, test, commit, and push before claiming another task.
+- Empty outputs, bulk assertions, and unverified decisions do not complete a candidate.
+- Unfinished claims return to `unreviewed` after 10 hours.
+- Do not perform playback, downloads, transcription, segmentation, or later video processing.
+- After all 20 valid completions reach fresh `main`, report `CHAT_BATCH_COMPLETE`.
 
-If the chat runtime cannot read the exact source page, follow the Source Page Evidence request
-path in `docs/ORDINARY_AGENT_C1_GUIDE.md`; do not stop at the host web-reader limitation.
-
-If fresh state shows C1 tasks, the project is not out of ordinary work. If it shows only C2, live
-work items, playback, or bug reports, report that exact queue state instead of saying the project
-is finished.
+The C1 discovery phase is sealed history. It must not be repeated or used as a reason to refuse
+eligible C2 work.
 
 ## Work mode quick path
 
