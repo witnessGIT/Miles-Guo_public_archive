@@ -1,0 +1,26 @@
+{
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_37_20200731_2-R001",
+  "agent_id": "agent-20261004T122400Z-chatgpt-github-c2",
+  "completed_at": "2026-10-04T13:29:00Z",
+  "result_commit": "9a569c8d9c51cdbc15b861bceae056eb6ba0112e",
+  "database_refresh_commit": null,
+  "outputs": [
+    "data/current/live_videos/c2_review_20200731_2.json",
+    "data/current/sources/c2_review_20200731_2.jsonl",
+    "data/current/media_assets/c2_review_20200731_2.jsonl",
+    "data/current/source_match_candidates/c2_review_20200731_2.jsonl"
+  ],
+  "validation": "GWINS detail 23724 confirmed title, publication date, and direct Odysee/Rumble video links. Candidate-review evidence validation, repository unit tests, build_db.py, and validate_db.py all passed. The rebuilt database push encountered a normal concurrent main advance and the workflow classified it as a successful concurrency handoff; the next descendant data workflow will rebuild from fresh main and include this candidate.",
+  "workflow_mode": "continuous-worker-v2",
+  "claim_protocol": "claim-protocol-v2",
+  "continue_after_finish": true,
+  "finish_prerequisites_revalidated": true,
+  "notes": "Candidate review completed under fixed review batch REVIEW-BATCH-20261004T122400Z-chatgpt. No playback, media download, transcription, segmentation, or later-stage processing was performed. Continue with the next fixed batch member; do not top up the batch.",
+  "kind": "candidate_promotion_review",
+  "source_candidate_id": "SC_GWINS_LIST2_37_20200731_2",
+  "review_generation": 1,
+  "review_claim_timeout_hours": 10,
+  "review_batch_id": "REVIEW-BATCH-20261004T122400Z-chatgpt",
+  "review_batch_position": 7,
+  "review_batch_target_size": 100
+}
