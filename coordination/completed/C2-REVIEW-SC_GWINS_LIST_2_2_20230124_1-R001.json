@@ -1,0 +1,32 @@
+{
+  "task_id": "C2-REVIEW-SC_GWINS_LIST_2_2_20230124_1-R001",
+  "agent_id": "agent-20261004T133000Z-gpt56sol-chat-c2-serious",
+  "completed_at": "2026-10-04T13:56:00Z",
+  "result_commit": "93dcf99095db7bb8af77a5fd303d0f6bd54db0bf",
+  "outputs": [
+    "data/current/candidate_reviews/SC_GWINS_LIST_2_2_20230124_1.json",
+    "data/current/live_videos/c2_review_20230124_1.json",
+    "data/current/sources/c2_review_20230124_1.jsonl",
+    "data/current/media_assets/c2_review_20230124_1.jsonl",
+    "data/current/source_match_candidates/c2_review_20230124_1.jsonl"
+  ],
+  "validation": "GWINS 24211 identity/date and direct GETTR p265w5ga60a plus Rumble v5b169p links checked; fresh repository dedup searches found no canonical or stable-ID conflict.",
+  "workflow_mode": "continuous-worker-v2",
+  "claim_protocol": "claim-protocol-v2",
+  "entry_mode": "ordinary_chat",
+  "continue_after_finish": true,
+  "finish_prerequisites_revalidated": true,
+  "notes": "One-candidate evidence-v2 review.",
+  "kind": "candidate_promotion_review",
+  "source_candidate_id": "SC_GWINS_LIST_2_2_20230124_1",
+  "review_generation": 1,
+  "review_claim_timeout_hours": 10,
+  "review_batch_id": "REVIEW-BATCH-20261004T133000Z-gpt56sol-chat-c2-serious",
+  "review_batch_target_size": 20,
+  "review_batch_claimed_count": 20,
+  "review_batch_position": 16,
+  "candidate_review_contract": "candidate-review-evidence-v2",
+  "review_artifact": "data/current/candidate_reviews/SC_GWINS_LIST_2_2_20230124_1.json",
+  "review_decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20230124_001"
+}
