@@ -17,7 +17,9 @@ CONTRACT = "c2-metadata-request-v1"
 MAX_BYTES = 2_000_000
 SAFE_ID = re.compile(r"[A-Za-z0-9_-]{1,180}\Z")
 DETAIL_PATH = re.compile(r"/cn/milesguo/[0-9]+\.html\Z")
-CUE = re.compile(r"录.{0,12}(?:视频|一段|这一|这段)|(?:视频|一段|今天|刚才).{0,12}录|拍摄|直播|上半场|下半场")
+# These are search clues, never automatic evidence of live/non-live origin.
+CUE_PROFILE = "origin-context-v2"
+CUE = re.compile(r"录.{0,12}(?:视频|一段|这一|这段)|(?:视频|一段|今天|刚才).{0,12}录|拍摄|拍一段|直播|上半场|下半场|视频|視頻|录制|錄製|录播|分鐘|分钟")
 
 
 def now() -> str:
@@ -118,7 +120,7 @@ def parse_page(raw: bytes, url: str, video_id: str) -> dict:
                          "warning": "Damaged fields are not reliable; clean excerpts only. Missing cues are not absence evidence."},
             "expected_source_video_id": video_id,
             "expected_id_visible": bool(video_id and video_id in "\n".join(paragraphs)),
-            "outbound_links": links[:60], "identity_type_cues": cues,
+            "outbound_links": links[:60], "identity_type_cues": cues, "cue_profile": CUE_PROFILE,
             "cue_warning": "Excerpts may discuss other recordings; a reviewer must resolve context. No automatic type decision."}
 
 
