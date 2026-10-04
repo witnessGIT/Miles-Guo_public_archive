@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - 'coordination/c2_metadata_requests/*.json'
+      - 'coordination/c2_platform_requests/*.json'
 
 permissions:
   contents: write
@@ -27,27 +28,34 @@ jobs:
         with:
           python-version: '3.12'
       - name: Test metadata boundaries
-        run: python -m unittest discover -s tests -p 'test_c2_metadata_evidence.py' -v
-      - name: Read pending claim-bound public page metadata
+        run: python -m unittest discover -s tests -p 'test_c2*metadata*.py' -v
+      - name: Read pending claim-bound public metadata
         shell: bash
         run: |
           set -euo pipefail
-          mkdir -p data/source_page_evidence/c2_metadata
-          while IFS= read -r request; do
-            python scripts/c2_metadata_evidence.py --request "$request"
-          done < <(find coordination/c2_metadata_requests -maxdepth 1 -type f -name '*.json' | sort)
+          mkdir -p data/source_page_evidence/c2_metadata data/source_page_evidence/c2_platform
+          if [[ -d coordination/c2_metadata_requests ]]; then
+            while IFS= read -r request; do
+              python scripts/c2_metadata_evidence.py --request "$request"
+            done < <(find coordination/c2_metadata_requests -maxdepth 1 -type f -name '*.json' | sort)
+          fi
+          if [[ -d coordination/c2_platform_requests ]]; then
+            while IFS= read -r request; do
+              python scripts/c2_platform_metadata.py --request "$request"
+            done < <(find coordination/c2_platform_requests -maxdepth 1 -type f -name '*.json' | sort)
+          fi
       - name: Publish immutable metadata only
         shell: bash
         run: |
           set -euo pipefail
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add -f -- data/source_page_evidence/c2_metadata
+          git add -f -- data/source_page_evidence/c2_metadata data/source_page_evidence/c2_platform
           if git diff --cached --quiet; then
             echo 'No new metadata evidence.'
             exit 0
           fi
-          git commit -m 'data: publish claim-bound C2 page metadata evidence'
+          git commit -m 'data: publish claim-bound C2 page and platform metadata evidence'
           for attempt in 1 2 3 4 5; do
             git fetch origin main
             if git rebase origin/main && git push origin HEAD:main; then
