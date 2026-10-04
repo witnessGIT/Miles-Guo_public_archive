@@ -6,6 +6,7 @@
   "entry_mode": "ordinary_chat",
   "reviewed_at": "2026-10-04T14:13:00Z",
   "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20230313_001",
   "evidence_urls": [
     "https://www.gwins.org/cn/milesguo/24263.html",
     "https://gettr.com/post/p2bbizx1e1e",
@@ -21,7 +22,7 @@
   ],
   "identity": {
     "conclusion": "one distinct target video item",
-    "basis": "GWINS detail 24263 identifies the item and links distinct GETTR/Rumble targets."
+    "basis": "GWINS detail identifies source item 20230313_1 and direct GETTR/Rumble targets."
   },
   "date": {
     "value": "2023-03-13",
@@ -34,8 +35,8 @@
   "platform_ids": {
     "gwins_page": "24263",
     "gwins_source_video_id": "20230313_1",
-    "gettr_id": "p2bbizx1e1e",
-    "rumble_id": "v5b2zcl"
+    "gettr_post_id": "p2bbizx1e1e",
+    "rumble_item_id": "v5b2zcl"
   },
   "source_relationships": [
     {
@@ -52,7 +53,7 @@
   "deduplication": {
     "result": "no_existing_canonical_match",
     "checks": [
-      "No 2023-03-13 canonical review output existed before review."
+      "No current 2023-03-13 canonical review output existed before review."
     ]
   },
   "scope_limits": {
@@ -60,6 +61,5 @@
     "media_download_performed": false,
     "transcription_performed": false,
     "segmentation_performed": false
-  },
-  "canonical_live_id": "LIVE_20230313_001"
+  }
 }
