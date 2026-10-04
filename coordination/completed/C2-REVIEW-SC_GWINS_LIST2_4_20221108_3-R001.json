@@ -1,0 +1,28 @@
+{
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_4_20221108_3-R001",
+  "agent_id": "agent-20261004T151500Z-gpt56sol-chat-c2-careful-3",
+  "completed_at": "2026-10-04T15:21:00Z",
+  "result_commit": "b6a4ba61f224c6079b49da1db6935ca1e09f2dfc",
+  "outputs": [
+    "data/current/candidate_reviews/SC_GWINS_LIST2_4_20221108_3.json"
+  ],
+  "validation": "Exact source title/date/platform IDs checked; lifestyle clip rejected.",
+  "workflow_mode": "continuous-worker-v2",
+  "claim_protocol": "claim-protocol-v2",
+  "entry_mode": "ordinary_chat",
+  "continue_after_finish": true,
+  "finish_prerequisites_revalidated": true,
+  "notes": "Completed under candidate-review-evidence-v2.",
+  "kind": "candidate_promotion_review",
+  "source_candidate_id": "SC_GWINS_LIST2_4_20221108_3",
+  "review_generation": 1,
+  "review_claim_timeout_hours": 10,
+  "review_batch_id": "REVIEW-BATCH-20261004T151500Z-gpt56sol-chat-c2-careful-3",
+  "review_batch_target_size": 20,
+  "review_batch_claimed_count": 20,
+  "review_batch_position": 6,
+  "candidate_review_contract": "candidate-review-evidence-v2",
+  "review_artifact": "data/current/candidate_reviews/SC_GWINS_LIST2_4_20221108_3.json",
+  "review_decision": "rejected_not_target",
+  "canonical_live_id": null
+}
