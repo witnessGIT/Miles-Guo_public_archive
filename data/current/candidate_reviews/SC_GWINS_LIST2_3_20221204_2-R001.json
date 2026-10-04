@@ -1,0 +1,32 @@
+{
+  "contract_version":"candidate-review-evidence-v2",
+  "task_id":"C2-REVIEW-SC_GWINS_LIST2_3_20221204_2-R001",
+  "source_candidate_id":"SC_GWINS_LIST2_3_20221204_2",
+  "reviewed_by":"agent-20261004T125231Z-chat-c2-gw3",
+  "entry_mode":"ordinary_chat",
+  "reviewed_at":"2026-10-04T13:13:00Z",
+  "decision":"rejected_not_target",
+  "canonical_live_id":null,
+  "rejection_reason":"This item explicitly presents a small-video follow-up correcting an omission from the morning's livestream. The original livestream is a separate same-day item, 20221204_1. The supplement is therefore not promoted as an original livestream or silently merged as a mirror of the earlier program. This is a scope decision, not a claim that the supplement is unimportant or false.",
+  "evidence_urls":["https://gwins.org/cn/milesguo/list_2_3.html","https://www.gwins.org/cn/milesguo/24182.html","https://www.gwins.org/cn/milesguo/24176.html"],
+  "checked_fields":["identity","date","title","platform_ids","source_relationships","deduplication"],
+  "checks":{
+    "identity":"Exact candidate 20221204_2 identifies 郭文贵 and links to GWINS detail page 24182.",
+    "date":"2022-12-04 in the preserved title and parsed date, corroborated by the indexed spoken introduction.",
+    "title":"郭文贵2022年12月4日盖特 20221204_2; the preserved longer title describes future small-video availability and a point omitted from today's livestream.",
+    "platform_ids":{"gwins_source_video_id":"20221204_2","gwins_detail_page_id":"24182","gettr_id":null,"note":"GWINS identifiers were not converted into invented GETTR identities."},
+    "source_relationships":"The indexed introduction expressly places this supplement after the morning broadcast. The original broadcast is separately catalogued as 20221204_1 at page 24176. Related subject matter is not same-recording evidence.",
+    "deduplication":"Compared the two December 4 batch candidates, their distinct page IDs, suffixes, category labels and explicit before/after relationship. No date-only or title-only canonical merge. No exhaustive global duplicate-absence claim."
+  },
+  "evidence_basis":{
+    "repository_snapshot":"data/source_page_evidence/gwins/list_2_3/evidence.json",
+    "snapshot_locator":"items[source_video_id=20221204_2] and items[source_video_id=20221204_1]",
+    "snapshot_raw_sha256":"e4888c5d5040a7be98e515ca40b7641b1f11eb32790abefb7a32cf834e407e27",
+    "additional_read":"Public search-indexed exact GWINS listing, specifically the supplement's introductory reference to the earlier broadcast.",
+    "access_limit":"No successful direct detail-page fetch or media playback is claimed. The supplement classification rests on positive source wording."
+  },
+  "canonical_promotion_performed":false,
+  "playback_audit_performed":false,
+  "media_download_performed":false,
+  "later_content_processing_performed":false
+}
