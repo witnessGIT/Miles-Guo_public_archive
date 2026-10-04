@@ -1,0 +1,51 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_4_20221114_2-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_4_20221114_2",
+  "reviewed_by": "agent-20261004T151400Z-gpt56sol-chat-c2-careful-2",
+  "entry_mode": "ordinary_chat",
+  "reviewed_at": "2026-10-04T15:36:00Z",
+  "decision": "rejected_not_target",
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/24148.html",
+    "https://gwins.org/cn/milesguo/list_2_4.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "identity": {
+    "conclusion": "non-livestream meal video item",
+    "basis": "Public source index title identifies an eating/meal video rather than the target livestream."
+  },
+  "date": {
+    "value": "2022-11-14",
+    "basis": "Source date checked."
+  },
+  "title": {
+    "value": "20221114_2",
+    "basis": "Source title checked."
+  },
+  "platform_ids": {
+    "gwins_page": "24148",
+    "gwins_source_video_id": "20221114_2"
+  },
+  "source_relationships": [],
+  "deduplication": {
+    "result": "not_applicable_rejected",
+    "checks": [
+      "Compared with same-day target canonical LIVE_20221114_001; this candidate is a different non-livestream item."
+    ]
+  },
+  "rejection_reason": "Outside current original-livestream target scope.",
+  "scope_limits": {
+    "playback_performed": false,
+    "media_download_performed": false,
+    "transcription_performed": false,
+    "segmentation_performed": false
+  }
+}
