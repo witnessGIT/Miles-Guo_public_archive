@@ -1,0 +1,60 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_3_20221206_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_3_20221206_1",
+  "reviewed_by": "agent-20261004T125231Z-chat-c2-gw3",
+  "entry_mode": "ordinary_chat",
+  "reviewed_at": "2026-10-04T13:02:06Z",
+  "decision": "rejected_not_target",
+  "canonical_live_id": null,
+  "rejection_reason": "This specific item is a recorded GETTR announcement, not an original livestream. GWINS classifies 20221206_1 as 盖特; the independently indexed source-linked mirror identifies GETTR post p20x47162d1 and preserves the speaker's explicit statement that he is recording this video. This is a scope classification, not a judgment about the truth of the announcement, and does not exclude the separate same-day 20221206_2 item.",
+  "evidence_urls": [
+    "https://www.gwins.org/cn/milesguo/list_2_3.html",
+    "https://gwins.org/cn/milesguo/24177.html",
+    "https://miles.md/en/dbl",
+    "https://gettr.com/post/p20x47162d1"
+  ],
+  "checked_fields": ["identity", "date", "title", "platform_ids", "source_relationships", "deduplication"],
+  "observed_identity": {
+    "source_site": "gwins",
+    "source_page_id": "24177",
+    "source_video_id": "20221206_1",
+    "date": "2022-12-06",
+    "title_prefix": "郭文贵2022年12月6日盖特 20221206_1",
+    "title_subject": "announcement concerning the speaker's father",
+    "normalized_platform_ids": ["gettr:post:p20x47162d1"],
+    "rumble_item_id_observed": "v5b0dyz",
+    "rumble_url_recorded": false
+  },
+  "evidence_observations": [
+    {
+      "kind": "repository_source_page_evidence",
+      "path": "data/source_page_evidence/gwins/list_2_3/evidence.json",
+      "raw_sha256": "e4888c5d5040a7be98e515ca40b7641b1f11eb32790abefb7a32cf834e407e27",
+      "fetched_at": "2026-09-20T22:42:16.975362+00:00",
+      "locator": "items[source_video_id=20221206_1]",
+      "observation": "The exact item binds date 2022-12-06 and category 盖特 to numeric detail page 24177."
+    },
+    {
+      "kind": "public_search_indexed_page_text",
+      "url": "https://miles.md/en/dbl",
+      "observation": "The indexed page matches the dated item title, explicitly cites GWINS 24177 as Source, and links GETTR post p20x47162d1 under Video.",
+      "short_quote": "今天在录这个视频的时候不哭的",
+      "access_note": "Indexed page text was read; direct web-reader opening returned a cache miss. The GETTR media itself was not played. The truncated Rumble URL was not reconstructed."
+    }
+  ],
+  "source_relationships": {
+    "mirror_to_gwins": "explicit source link to the exact detail page",
+    "gettr_relationship": "mirror's explicit video link; post identity remains distinct from a streaming identity"
+  },
+  "deduplication": {
+    "scope": "Exact candidate identity and same-page same-day neighbor comparison; no global nonexistence assertion",
+    "same_day_neighbor": "SC_GWINS_LIST2_3_20221206_2",
+    "neighbor_detail_page": "24184",
+    "result": "Different source suffix and detail page; no automatic merge. The rejected candidate is retained in source_candidates, with this isolated review decision."
+  },
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}
