@@ -1,0 +1,52 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_3_20221204_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_3_20221204_1",
+  "reviewed_by": "agent-20261004T125231Z-chat-c2-gw3",
+  "entry_mode": "ordinary_chat",
+  "reviewed_at": "2026-10-04T13:23:32Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20221204_001",
+  "evidence_urls": [
+    "https://www.gwins.org/cn/milesguo/list_2_3.html",
+    "https://gwins.org/cn/milesguo/24176.html",
+    "https://gettr.com/streaming/p20mx0i9125",
+    "https://rumble.com/v5b0dqx-20221204-1.html"
+  ],
+  "checked_fields": ["identity", "date", "title", "platform_ids", "source_relationships", "deduplication"],
+  "checks": {
+    "identity": "The successfully read GWINS detail page explicitly identifies a 郭文贵 livestream and binds it to page 24176 / source item 20221204_1. Its GETTR locator uses the streaming route.",
+    "date": "The detail-page title, dated item identifier, displayed date, and repository source-page snapshot agree on 2022-12-04. No exact publication time or timezone was inferred.",
+    "title": "郭文贵2022年12月4日直播 20221204_1 共产党将会如何使用核酸检测这个政治武器",
+    "platform_ids": {
+      "gwins_detail_page_id": "24176",
+      "gwins_source_video_id": "20221204_1",
+      "gettr_streaming_id": "p20mx0i9125",
+      "rumble_video_id": "v5b0dqx",
+      "normalization": "Preserve gettr:streaming:p20mx0i9125 separately from post-route identities; retain the complete observed Rumble URL rather than constructing a slug."
+    },
+    "source_relationships": "Both platform URLs were read as explicit outbound links on the exact dated GWINS detail page. They are associated at the provenance level, not through guessed title similarity or decoded-content comparison.",
+    "deduplication": {
+      "canonical_inventory_scope": "Read all canonical JSON/JSONL contents in the inspected 26-file active live_videos inventory, including the sample and MVP multi-record files, then checked the current directory listing for additions. No corresponding December 4 canonical identity was found before creating this record. This is a repository-snapshot check, not a claim of global Internet uniqueness.",
+      "inspected_canonical_dates": ["2017-09-24", "2017-10-23", "2017-11-02", "2019-11-16", "2019-12-07", "2020-07-30", "2020-07-31", "2020-08-01", "2020-08-02", "2020-08-03", "2021-08-12", "2022-03-14", "2023-01-08", "2023-02-07", "2023-02-08", "2023-02-09", "2023-02-10", "2023-02-11", "2023-02-12", "2023-02-13", "2023-02-14", "2023-02-26", "2023-03-12"],
+      "same_day_comparison": "SC_GWINS_LIST2_3_20221204_2 / page 24182 explicitly describes a later small-video supplement after the morning broadcast. It is not merged with this original livestream.",
+      "search_limit": "GitHub code search for the streaming ID returned incomplete_results=true; its zero hits were not treated as proof of absence."
+    }
+  },
+  "repository_evidence": {
+    "path": "data/source_page_evidence/gwins/list_2_3/evidence.json",
+    "locator": "items[source_video_id=20221204_1]",
+    "raw_sha256": "e4888c5d5040a7be98e515ca40b7641b1f11eb32790abefb7a32cf834e407e27"
+  },
+  "canonical_outputs": [
+    "data/current/live_videos/c2_review_20221204_1.json",
+    "data/current/sources/c2_review_20221204_1.jsonl",
+    "data/current/media_assets/c2_review_20221204_1.jsonl",
+    "data/current/source_match_candidates/c2_review_20221204_1.jsonl"
+  ],
+  "uncertainty": "Canonical status is partial. Duration, frame rate, dimensions, exact publication timestamp and actual media availability remain unknown. Platform-page pointers are not downloaded media or proof that both mirrors contain identical complete recordings.",
+  "canonical_promotion_performed": true,
+  "playback_audit_performed": false,
+  "media_download_performed": false,
+  "later_content_processing_performed": false
+}
