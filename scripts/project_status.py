@@ -20,7 +20,13 @@ LEGACY_P9 = "P9-AUDIT-60"
 LEGACY_P10 = "P10-PILOT-DECISION"
 
 GATE_OR_REPORT_KINDS = {"alignment_gate", "database_gate", "qa_gate", "report"}
-CLOSED_BUG_STATUSES = {"resolved", "closed", "dismissed", "fixed"}
+CLOSED_BUG_STATUSES = {
+    "resolved",
+    "closed",
+    "closed_invalid",
+    "dismissed",
+    "fixed",
+}
 
 TASK_TYPES = {
     "ordinary_business": (

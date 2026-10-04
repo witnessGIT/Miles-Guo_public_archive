@@ -201,6 +201,18 @@ class PlaybackQueueGenerationTest(unittest.TestCase):
         current = json.loads(path.read_text(encoding="utf-8"))
         self.assertEqual(current["agent_id"], "agent-old")
 
+    def test_gate_summary_uses_current_python_interpreter(self):
+        completed = type(
+            "CompletedProcess",
+            (),
+            {"stdout": '{"pilot60_pass": false}', "stderr": ""},
+        )()
+        with patch.object(queue.subprocess, "run", return_value=completed) as run:
+            summary = queue.gate_summary()
+
+        self.assertFalse(summary["pilot60_pass"])
+        self.assertEqual(run.call_args.args[0][0], sys.executable)
+
 
 if __name__ == "__main__":
     unittest.main()

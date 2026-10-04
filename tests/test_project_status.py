@@ -1,4 +1,6 @@
+import json
 import sys
+import tempfile
 import unittest
 from pathlib import Path
 
@@ -51,6 +53,22 @@ class ProjectStatusDecisionTest(unittest.TestCase):
             ),
             "NO",
         )
+
+    def test_closed_invalid_bug_report_is_not_actionable(self):
+        original = project_status.BUG_REPORTS
+        with tempfile.TemporaryDirectory() as tmp:
+            project_status.BUG_REPORTS = Path(tmp)
+            (project_status.BUG_REPORTS / "closed-invalid.json").write_text(
+                json.dumps({"status": "closed_invalid", "summary": "stale report"}),
+                encoding="utf-8",
+            )
+            try:
+                open_reports, invalid_reports = project_status.load_admin_bug_queue()
+            finally:
+                project_status.BUG_REPORTS = original
+
+        self.assertEqual(open_reports, [])
+        self.assertEqual(invalid_reports, [])
 
 
 if __name__ == "__main__":

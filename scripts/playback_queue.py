@@ -6,6 +6,7 @@ import hashlib
 import json
 import shutil
 import subprocess
+import sys
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
@@ -201,7 +202,7 @@ def case_statuses() -> list[dict]:
 
 def gate_summary() -> dict:
     process = subprocess.run(
-        ["python", str(AUDIT_GATE), "--json"],
+        [sys.executable, str(AUDIT_GATE), "--json"],
         cwd=ROOT,
         stdout=subprocess.PIPE,
         stderr=subprocess.PIPE,
