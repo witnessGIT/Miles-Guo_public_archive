@@ -1,0 +1,35 @@
+{
+  "task_id": "C1-GWINS-detail-24254",
+  "agent_id": "agent-20261004T0901Z-gpt56sol-gwins-24254",
+  "status": "completed",
+  "completed_at": "2026-10-04T09:02:00Z",
+  "output": "data/current/source_candidates/gwins/details/24254.json",
+  "validation": {
+    "source_page_id": "24254",
+    "source_video_id": "20230302_1",
+    "display_date": "2023-03-02",
+    "gettr_post_id": "p2a8wu3e526",
+    "rumble_item_id": "v5b2i19",
+    "duplicate_of": "SC_GWINS_LIST_2_1_20230302_1",
+    "title_match": true,
+    "candidate_live_id": null,
+    "c2_promotion_performed": false,
+    "playback_verification_performed": false
+  },
+  "continue_after_finish": true,
+  "repository_validation": {
+    "workflow_run_id": 37190751039,
+    "unit_tests": "passed",
+    "build_db": "passed",
+    "validate_db": "passed",
+    "validation_summary": "OK (0 warnings)",
+    "database_counts": {
+      "live_sources": 12,
+      "live_videos": 6,
+      "source_boundaries": 145,
+      "source_candidates": 2638
+    },
+    "workflow_final_conclusion": "failure",
+    "final_step_note": "Rebuilt SQLite commit could not fast-forward to main because concurrent commits landed after checkout; validation itself passed."
+  }
+}
