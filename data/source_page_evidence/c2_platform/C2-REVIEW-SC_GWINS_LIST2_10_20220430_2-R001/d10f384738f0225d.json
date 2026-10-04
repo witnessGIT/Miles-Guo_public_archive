@@ -1,0 +1,32 @@
+{
+  "evidence_version": "c2-platform-evidence-v1",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_10_20220430_2-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_10_20220430_2",
+  "agent_id": "agent-20261004T125231Z-chat-c2-gw3",
+  "request_sha256": "d10f384738f0225da65f201bfd76fd842d32d03fdf330b526f8751ed7696464c",
+  "source_evidence_path": "data/source_page_evidence/c2_metadata/C2-REVIEW-SC_GWINS_LIST2_10_20220430_2-R001/e03a412bbe725cf4.json",
+  "public_post_url": "https://gettr.com/post/p17qvluf298",
+  "api_url": "https://api.gettr.com/u/post/p17qvluf298",
+  "fetched_at": "2026-10-04T23:32:51.525863+00:00",
+  "review_decision": null,
+  "media_download_performed": false,
+  "status": "fetched",
+  "http_status": 200,
+  "raw_sha256": "22d08ee03a7ebb9f312be705c779ef0ea125b5494632658d6c9f1a1cd782c3d3",
+  "raw_bytes": 729,
+  "platform_metadata": {
+    "post_id": "p17qvluf298",
+    "object_type": "post",
+    "p_type": null,
+    "uploader_id": "miles",
+    "created_at_epoch_ms": 1651330723683,
+    "updated_at_epoch_ms": 1651330733313,
+    "duration_sec_as_reported": "570",
+    "has_vid_field": true,
+    "has_original_video_field": true,
+    "has_external_embed_field": false,
+    "reposted_ids": null,
+    "text_prefix": " 4月30号：尊敬的战友们好……世界的经济已经走向崩塌，崩溃已经开始！",
+    "warning": "These are platform object fields, not proof that uploaded footage was never livestreamed. Missing p_type is unknown; no automatic review decision."
+  }
+}

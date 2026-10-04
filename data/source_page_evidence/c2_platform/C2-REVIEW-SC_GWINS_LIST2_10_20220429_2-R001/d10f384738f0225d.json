@@ -1,0 +1,32 @@
+{
+  "evidence_version": "c2-platform-evidence-v1",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_10_20220429_2-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_10_20220429_2",
+  "agent_id": "agent-20261004T125231Z-chat-c2-gw3",
+  "request_sha256": "d10f384738f0225da65f201bfd76fd842d32d03fdf330b526f8751ed7696464c",
+  "source_evidence_path": "data/source_page_evidence/c2_metadata/C2-REVIEW-SC_GWINS_LIST2_10_20220429_2-R001/e03a412bbe725cf4.json",
+  "public_post_url": "https://gettr.com/post/p17l79de01e",
+  "api_url": "https://api.gettr.com/u/post/p17l79de01e",
+  "fetched_at": "2026-10-04T23:32:52.777018+00:00",
+  "review_decision": null,
+  "media_download_performed": false,
+  "status": "fetched",
+  "http_status": 200,
+  "raw_sha256": "e8e36f910f000fe60ced90aab9657d3390e707f8e6591898d1c1cba32a7e1614",
+  "raw_bytes": 789,
+  "platform_metadata": {
+    "post_id": "p17l79de01e",
+    "object_type": "post",
+    "p_type": null,
+    "uploader_id": "miles",
+    "created_at_epoch_ms": 1651241220958,
+    "updated_at_epoch_ms": 1651241229879,
+    "duration_sec_as_reported": "581",
+    "has_vid_field": true,
+    "has_original_video_field": true,
+    "has_external_embed_field": false,
+    "reposted_ids": null,
+    "text_prefix": " 4月29号：尊敬的战友们好……今天的纽约．阳光明媚．美丽极了，今天取消了开庭．七哥与战友们分享这美好的时光！",
+    "warning": "These are platform object fields, not proof that uploaded footage was never livestreamed. Missing p_type is unknown; no automatic review decision."
+  }
+}

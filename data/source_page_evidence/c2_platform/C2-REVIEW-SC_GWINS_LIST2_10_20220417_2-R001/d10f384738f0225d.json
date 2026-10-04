@@ -1,0 +1,32 @@
+{
+  "evidence_version": "c2-platform-evidence-v1",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_10_20220417_2-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_10_20220417_2",
+  "agent_id": "agent-20261004T125231Z-chat-c2-gw3",
+  "request_sha256": "d10f384738f0225da65f201bfd76fd842d32d03fdf330b526f8751ed7696464c",
+  "source_evidence_path": "data/source_page_evidence/c2_metadata/C2-REVIEW-SC_GWINS_LIST2_10_20220417_2-R001/e03a412bbe725cf4.json",
+  "public_post_url": "https://gettr.com/post/p15pehy240a",
+  "api_url": "https://api.gettr.com/u/post/p15pehy240a",
+  "fetched_at": "2026-10-04T23:32:56.378016+00:00",
+  "review_decision": null,
+  "media_download_performed": false,
+  "status": "fetched",
+  "http_status": 200,
+  "raw_sha256": "05e0b4fe7c9c320e73ec77da8f66122d41f20012fa83d4ef22e3894e0d0b234c",
+  "raw_bytes": 779,
+  "platform_metadata": {
+    "post_id": "p15pehy240a",
+    "object_type": "post",
+    "p_type": null,
+    "uploader_id": "miles",
+    "created_at_epoch_ms": 1650205031934,
+    "updated_at_epoch_ms": 1650205037551,
+    "duration_sec_as_reported": "566",
+    "has_vid_field": true,
+    "has_original_video_field": true,
+    "has_external_embed_field": false,
+    "reposted_ids": null,
+    "text_prefix": " 4月17号：尊敬的战友们好……下周二．4月19号，我们将有一整天的纪念419．5周年的大直播，一切都已经开始！",
+    "warning": "These are platform object fields, not proof that uploaded footage was never livestreamed. Missing p_type is unknown; no automatic review decision."
+  }
+}
