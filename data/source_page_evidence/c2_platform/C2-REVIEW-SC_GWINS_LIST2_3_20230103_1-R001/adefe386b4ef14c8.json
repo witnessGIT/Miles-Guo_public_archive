@@ -1,0 +1,32 @@
+{
+  "evidence_version": "c2-platform-evidence-v1",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_3_20230103_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_3_20230103_1",
+  "agent_id": "agent-20261004T125231Z-chat-c2-gw3",
+  "request_sha256": "adefe386b4ef14c830a7c4382219814b51cc2b7a6ff10bd4990464e2fea1a00d",
+  "source_evidence_path": "data/source_page_evidence/c2_metadata/C2-REVIEW-SC_GWINS_LIST2_3_20230103_1-R001/9f3349448fa96a16.json",
+  "public_post_url": "https://gettr.com/post/p23qiok5c87",
+  "api_url": "https://api.gettr.com/u/post/p23qiok5c87",
+  "fetched_at": "2026-10-04T14:50:25.773951+00:00",
+  "review_decision": null,
+  "media_download_performed": false,
+  "status": "fetched",
+  "http_status": 200,
+  "raw_sha256": "3b15073522e5c7a75bbb7816cdf8d23af2622f5408bc4739f8d8494fbeb6f22c",
+  "raw_bytes": 1136,
+  "platform_metadata": {
+    "post_id": "p23qiok5c87",
+    "object_type": "post",
+    "p_type": null,
+    "uploader_id": "milesguo",
+    "created_at_epoch_ms": 1672760133515,
+    "updated_at_epoch_ms": 1672760134606,
+    "duration_sec_as_reported": "599",
+    "has_vid_field": true,
+    "has_original_video_field": true,
+    "has_external_embed_field": false,
+    "reposted_ids": null,
+    "text_prefix": "2023.01.03 尊敬的战友们好……喜联储以全世界最严格的KYC和受国家主权控制，法律框架监管的第三方机构成为数字货币和区块链货币永远的未来！市面上所有的数字货币都将避免不了没有KYC、挪用用户保障金、没有独立第三方监管的法律制裁",
+    "warning": "These are platform object fields, not proof that uploaded footage was never livestreamed. Missing p_type is unknown; no automatic review decision."
+  }
+}

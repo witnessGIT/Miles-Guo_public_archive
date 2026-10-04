@@ -1,0 +1,32 @@
+{
+  "evidence_version": "c2-platform-evidence-v1",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_3_20221231_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_3_20221231_1",
+  "agent_id": "agent-20261004T125231Z-chat-c2-gw3",
+  "request_sha256": "adefe386b4ef14c830a7c4382219814b51cc2b7a6ff10bd4990464e2fea1a00d",
+  "source_evidence_path": "data/source_page_evidence/c2_metadata/C2-REVIEW-SC_GWINS_LIST2_3_20221231_1-R001/9f3349448fa96a16.json",
+  "public_post_url": "https://gettr.com/post/p23h53e5756",
+  "api_url": "https://api.gettr.com/u/post/p23h53e5756",
+  "fetched_at": "2026-10-04T14:50:27.246917+00:00",
+  "review_decision": null,
+  "media_download_performed": false,
+  "status": "fetched",
+  "http_status": 200,
+  "raw_sha256": "25ca9cd1c61b715536428ed78b8a5e5c8ccd4af8cc43041a2bb4e5d6e989f276",
+  "raw_bytes": 1027,
+  "platform_metadata": {
+    "post_id": "p23h53e5756",
+    "object_type": "post",
+    "p_type": null,
+    "uploader_id": "milesguo",
+    "created_at_epoch_ms": 1672503743630,
+    "updated_at_epoch_ms": 1672503744594,
+    "duration_sec_as_reported": "596",
+    "has_vid_field": true,
+    "has_original_video_field": true,
+    "has_external_embed_field": false,
+    "reposted_ids": null,
+    "text_prefix": "2022.12.31 尊敬的战友们好……七哥祝愿全球各地所有的兄弟姐妹们2023阳历年新年快乐🙏🙏🙏 唯有新中国联邦才能带给我们最安全、最健康、最有希望的港湾",
+    "warning": "These are platform object fields, not proof that uploaded footage was never livestreamed. Missing p_type is unknown; no automatic review decision."
+  }
+}

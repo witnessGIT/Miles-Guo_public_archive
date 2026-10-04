@@ -1,0 +1,32 @@
+{
+  "evidence_version": "c2-platform-evidence-v1",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_3_20221205_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_3_20221205_1",
+  "agent_id": "agent-20261004T125231Z-chat-c2-gw3",
+  "request_sha256": "adefe386b4ef14c830a7c4382219814b51cc2b7a6ff10bd4990464e2fea1a00d",
+  "source_evidence_path": "data/source_page_evidence/c2_metadata/C2-REVIEW-SC_GWINS_LIST2_3_20221205_1-R001/9f3349448fa96a16.json",
+  "public_post_url": "https://gettr.com/post/p20qzwmfaf3",
+  "api_url": "https://api.gettr.com/u/post/p20qzwmfaf3",
+  "fetched_at": "2026-10-04T14:50:30.699771+00:00",
+  "review_decision": null,
+  "media_download_performed": false,
+  "status": "fetched",
+  "http_status": 200,
+  "raw_sha256": "0462d8a49ab84c253290ec9dfad9d0f643c2b708713568097df5a86194b18fc5",
+  "raw_bytes": 893,
+  "platform_metadata": {
+    "post_id": "p20qzwmfaf3",
+    "object_type": "post",
+    "p_type": null,
+    "uploader_id": "milesguo",
+    "created_at_epoch_ms": 1670245706606,
+    "updated_at_epoch_ms": 1670245707125,
+    "duration_sec_as_reported": "565",
+    "has_vid_field": true,
+    "has_original_video_field": true,
+    "has_external_embed_field": false,
+    "reposted_ids": null,
+    "text_prefix": "2022.12.05 尊敬的战友们好……北京八宝山又出什么大事了？？？",
+    "warning": "These are platform object fields, not proof that uploaded footage was never livestreamed. Missing p_type is unknown; no automatic review decision."
+  }
+}
