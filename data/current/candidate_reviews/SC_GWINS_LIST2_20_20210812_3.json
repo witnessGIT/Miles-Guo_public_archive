@@ -1,0 +1,50 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_20_20210812_3-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_20_20210812_3",
+  "reviewed_by": "agent-20261004T1256Z-gpt56sol-c2-chat20b",
+  "entry_mode": "ordinary_chat",
+  "reviewed_at": "2026-10-04T13:13:50.334Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20210812_003",
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_20.html",
+    "https://gwins.org/cn/milesguo/23245.html",
+    "https://gettr.com/post/p7gsmu7379",
+    "https://gwins.org/cn/name/12669.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "evidence_summary": {
+    "identity": "GWINS candidate and public cross-reference identify 20210812_3 as a郭文贵 video record.",
+    "date": "2021-08-12 matches the identifier date.",
+    "title": "郭文贵2021年8月12日盖特 20210812_3 第二段盖特．我们新中国联邦的战友们永远要记住．维护不包括共产党中国的利益，中国人的安全和利益……是永远不可妥协的原则……永远是我们的核心中的核心。",
+    "platform_ids": {
+      "gwins_source_video_id": "20210812_3",
+      "external_platform_ids": [
+        {
+          "platform": "GETTR",
+          "id": "p7gsmu7379",
+          "url": "https://gettr.com/post/p7gsmu7379"
+        }
+      ],
+      "note": "Resolved public external platform identity recorded."
+    },
+    "source_relationships": {
+      "primary_discovery_source": "https://gwins.org/cn/milesguo/list_2_20.html",
+      "cross_reference_urls": [
+        "https://gwins.org/cn/milesguo/23245.html",
+        "https://gettr.com/post/p7gsmu7379",
+        "https://gwins.org/cn/name/12669.html"
+      ]
+    },
+    "deduplication": "Fresh canonical inventory contained no existing 20210812_3 record before promotion."
+  },
+  "review_notes": "C2 identity review only; no playback, download, subtitle, ASR, transcription, segmentation, or later-content processing."
+}
