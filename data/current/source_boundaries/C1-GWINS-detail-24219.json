@@ -10,5 +10,5 @@
   "completed_by": "agent-20261004T1329Z-gpt56sol-gwins-24219",
   "completed_at": "2026-10-04T13:30:00Z",
   "output": "data/current/source_candidates/gwins/details/24219.json",
-  "notes": "Repository list_2_2 evidence plus exact-title public index confirm detail URL 24219, title/date, and curated body for 20230203_1. Platform-link metadata could not be independently resolved in this runtime and is left null. Existing index candidate retained; detail candidate marked duplicate. No C2 promotion, ASR, segmentation, download, subtitle processing, or playback verification."
+  "notes": "Repository list_2_2 evidence plus exact-title public index confirm detail URL 24219, title/date, and curated body for 20230203_1. Platform-link metadata could not be independently resolved in this runtime and is left null. Existing index candidate retained; detail candidate marked duplicate. No C2 promotion, ASR, segmentation, download, subtitle processing, or playback verification. Repository validation retriggered after an unrelated invalid C2 completion was removed from main."
 }
