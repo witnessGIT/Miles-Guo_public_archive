@@ -1,0 +1,19 @@
+{
+  "id": "BUG-C2-EFFECTIVE-LEASE-FIELD-20261004T161244Z",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_3_20230103_1-R001",
+  "reported_by": "agent-20261004T125231Z-chat-c2-gw3",
+  "reported_at": "2026-10-04T16:12:44Z",
+  "status": "open",
+  "severity": "non_blocking",
+  "summary": "A manually created C2 claim carrying review_claim_timeout_hours=10 but no static_claim_lease_hours is scheduled with the generic 24-hour default. Displayed candidate expiry still says 10 hours. This can over-reserve uncertain candidates for 14 extra hours.",
+  "evidence": [
+    "scripts/next_task.py blob e9b21dd6a494480acb22bfa348b9fe421365495d: claim_expired reads static_claim_lease_hours and defaults to STATIC_CLAIM_LEASE_HOURS=24.",
+    "candidate_review_states calls claim_expired to exclude active claims, but separately reports claimed_at plus CANDIDATE_REVIEW_CLAIM_TIMEOUT_HOURS=10.",
+    "claim_task generated C2 records include static_claim_lease_hours=10; the eight pending GW3 ordinary-chat claims omitted this implementation field.",
+    "Isolated exact-function reproduction with eight blob-hash-verified originals: no expiry at 10 hours; adding only static_claim_lease_hours=10 restores expiry exactly at 10 hours."
+  ],
+  "worker_action": "As verified witnessGIT admin and original claim owner, add only static_claim_lease_hours=10 to the eight unfinished GW3 claims in this changeset. Preserve claimed_at, ownership, generation, status, fixed membership, and all twelve completed reviews. This is a scoped data mitigation, not a global scheduler fix or business completion.",
+  "requested_admin_action": "Make the C2 effective lease contract consistent across scheduler, display and validator, with missing-field and conflicting-field regressions. Preserve static-task leases and immutable completion history. The generic fallback remains unchanged by this scoped repair.",
+  "repair_record": "reports/admin_repairs/20261005-gw3-effective-lease.md",
+  "global_impact_census_performed": false
+}
