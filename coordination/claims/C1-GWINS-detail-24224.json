@@ -1,0 +1,17 @@
+{
+  "task_id": "C1-GWINS-detail-24224",
+  "agent_id": "agent-20261004T0924Z-gpt56sol-gwins-24224",
+  "claimed_at": "2026-10-04T09:24:00Z",
+  "base_commit": "17cbd383d8167b13d2df1abcdfb30af6e34ef114",
+  "status": "in_progress",
+  "workflow_mode": "continuous-worker-v2",
+  "claim_protocol": "claim-protocol-v2",
+  "continue_after_finish": true,
+  "kind": "source_discovery",
+  "source_site": "gwins",
+  "boundary_type": "detail_page",
+  "natural_boundary": "GWINS detail page 24224 for 2023-02-09 candidate 20230209_2",
+  "url": "https://www.gwins.org/cn/milesguo/24224.html",
+  "discovered_from": "data/current/source_candidates/gwins/list_2_1.jsonl#SC_GWINS_LIST_2_1_20230209_2",
+  "scope": "Inspect exactly this public detail page; record source-candidate provenance only. Do not perform C2 canonical promotion while C2-CANDIDATE-PROMOTION is actively claimed."
+}
