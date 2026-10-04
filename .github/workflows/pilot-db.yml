@@ -70,5 +70,16 @@ jobs:
             echo "Pilot SQLite is already current."
           else
             git commit -m "build: refresh Pilot SQLite database"
-            git push
+            rebuild_base="$(git rev-parse HEAD^)"
+            if git push; then
+              exit 0
+            fi
+            git fetch origin main
+            if git merge-base --is-ancestor "$rebuild_base" origin/main; then
+              echo "main advanced during this rebuild; its newer push triggered a fresh run."
+              echo "Treating this non-fast-forward as a concurrency handoff, not a build failure."
+              exit 0
+            fi
+            echo "Database push failed for a reason other than a normal concurrent main advance."
+            exit 1
           fi
