@@ -1,0 +1,29 @@
+{
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_20_20210812_1-R001",
+  "agent_id": "agent-20261004T1256Z-gpt56sol-c2-chat20b",
+  "completed_at": "2026-10-04T13:05:00Z",
+  "result_commit": "8a4ecc3e0cf4dc2ba12767477007ca90c24a4de9",
+  "outputs": [
+    "data/current/candidate_reviews/SC_GWINS_LIST2_20_20210812_1.json",
+    "data/current/live_videos/c2_review_20210812_1.json"
+  ],
+  "validation": "Exact GWINS title/date/source_video_id identity was checked; no existing canonical live matched; external platform IDs were checked but not resolved and were not invented. Promoted LIVE_20210812_001 as partial.",
+  "workflow_mode": "continuous-worker-v2",
+  "claim_protocol": "claim-protocol-v2",
+  "entry_mode": "ordinary_chat",
+  "continue_after_finish": true,
+  "finish_prerequisites_revalidated": true,
+  "notes": "Completed one fixed ordinary-chat batch member; continue with the next member without topping up.",
+  "kind": "candidate_promotion_review",
+  "source_candidate_id": "SC_GWINS_LIST2_20_20210812_1",
+  "review_generation": 1,
+  "review_claim_timeout_hours": 10,
+  "review_batch_id": "REVIEW-BATCH-20261004T125600000000Z-chat20b",
+  "review_batch_target_size": 20,
+  "review_batch_claimed_count": 20,
+  "review_batch_position": 1,
+  "candidate_review_contract": "candidate-review-evidence-v2",
+  "review_artifact": "data/current/candidate_reviews/SC_GWINS_LIST2_20_20210812_1.json",
+  "review_decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20210812_001"
+}
