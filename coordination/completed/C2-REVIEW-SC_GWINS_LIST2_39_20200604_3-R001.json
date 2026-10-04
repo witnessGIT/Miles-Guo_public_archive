@@ -1,0 +1,30 @@
+{
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_39_20200604_3-R001",
+  "agent_id": "agent-20261004T151500Z-gpt56sol-chat-c2-evidence2",
+  "completed_at": "2026-10-04T15:34:00Z",
+  "result_commit": "d24bb7964126a24c7e9255bd8431ef5663f9a352",
+  "outputs": [
+    "data/current/live_videos/c2_review_20200604_3.json",
+    "data/current/sources/c2_review_20200604_3.jsonl",
+    "data/current/candidate_reviews/SC_GWINS_LIST2_39_20200604_3-R001.json"
+  ],
+  "validation": "Source-backed candidate-review-evidence-v2 artifact passed repository validation. Repository unit tests, candidate-review evidence validation, SQLite rebuild, and validate_db.py all passed. The database push encountered a normal concurrent main advance and the workflow explicitly classified it as a concurrency handoff rather than a build failure. No playback, media download, transcription, segmentation, or later-stage processing was performed.",
+  "workflow_mode": "continuous-worker-v2",
+  "claim_protocol": "claim-protocol-v2",
+  "entry_mode": "ordinary_chat",
+  "continue_after_finish": true,
+  "finish_prerequisites_revalidated": true,
+  "notes": "Completed conservatively with only the verified GWINS index-to-detail relationship; no external mirror relationship was asserted because the detail page was not cleanly decodable in this runtime.",
+  "kind": "candidate_promotion_review",
+  "source_candidate_id": "SC_GWINS_LIST2_39_20200604_3",
+  "review_generation": 1,
+  "review_claim_timeout_hours": 10,
+  "review_batch_id": "REVIEW-BATCH-20261004T151500Z-gpt56sol-chat",
+  "review_batch_target_size": 20,
+  "review_batch_claimed_count": 20,
+  "review_batch_position": 2,
+  "candidate_review_contract": "candidate-review-evidence-v2",
+  "review_artifact": "data/current/candidate_reviews/SC_GWINS_LIST2_39_20200604_3-R001.json",
+  "review_decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20200604_001"
+}
