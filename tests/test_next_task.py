@@ -335,6 +335,7 @@ class NextTaskSchedulingTests(unittest.TestCase):
         task = next_task.candidate_review_tasks()[0]
         claim_path = next_task.claim_task(task, "agent-reviewer")
         claim = json.loads(claim_path.read_text(encoding="utf-8"))
+        self.assertEqual(claim["entry_mode"], "work")
         claim["claimed_at"] = base_now.isoformat()
         claim_path.write_text(json.dumps(claim), encoding="utf-8")
 
@@ -458,6 +459,7 @@ class NextTaskSchedulingTests(unittest.TestCase):
         self.assertEqual(completed["source_candidate_id"], candidate_id)
         self.assertEqual(completed["review_generation"], 1)
         self.assertEqual(completed["review_claim_timeout_hours"], 10)
+        self.assertEqual(completed["entry_mode"], "work")
         self.assertNotIn("review_expires_at", completed)
 
     def test_candidate_review_scope_excludes_later_video_processing(self):

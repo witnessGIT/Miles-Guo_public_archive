@@ -31,6 +31,7 @@ CANDIDATE_REVIEW_PREFIX = "C2-REVIEW-"
 CANDIDATE_REVIEW_PRIORITY = 90
 CANDIDATE_REVIEW_CLAIM_TIMEOUT_HOURS = 10
 CANDIDATE_REVIEW_BATCH_SIZE = 100
+CANDIDATE_REVIEW_CHAT_BATCH_SIZE = 20
 REVIEWABLE_CANDIDATE_STATUSES = {"discovered", "needs_review"}
 
 LEGACY_BATCH_TASKS = {
@@ -474,7 +475,8 @@ def print_candidate_review_summary() -> None:
         "  in_progress_timeout_hours: "
         f"{CANDIDATE_REVIEW_CLAIM_TIMEOUT_HOURS}"
     )
-    print(f"  ordinary_agent_batch_size: {CANDIDATE_REVIEW_BATCH_SIZE}")
+    print(f"  work_mode_batch_size: {CANDIDATE_REVIEW_BATCH_SIZE}")
+    print(f"  ordinary_chat_batch_size: {CANDIDATE_REVIEW_CHAT_BATCH_SIZE}")
     for state in ("in_progress", "reviewed", "unreviewed"):
         sample = [row for row in rows if row["state"] == state][:10]
         if not sample:
@@ -951,6 +953,7 @@ def claim_task(
         "status": "in_progress",
         "workflow_mode": WORKFLOW_MODE,
         "claim_protocol": CLAIM_PROTOCOL,
+        "entry_mode": "work",
         "continue_after_finish": True,
         "stage": task.get("stage"),
         "case_id": task.get("case_id"),
@@ -1182,6 +1185,7 @@ def finish_task(
         "validation": validation,
         "workflow_mode": claim.get("workflow_mode", "legacy-grandfathered"),
         "claim_protocol": claim.get("claim_protocol", "legacy"),
+        "entry_mode": claim.get("entry_mode", "legacy_unknown"),
         "continue_after_finish": claim.get("workflow_mode") == WORKFLOW_MODE,
         "finish_prerequisites_revalidated": True,
         "notes": (

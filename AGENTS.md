@@ -4,6 +4,11 @@
 
 Choose automatically from capabilities; never ask the user which mode to use.
 
+Every new claim and completion must record `entry_mode` as exactly `work` or `ordinary_chat`.
+This makes the automatically detected mode durable and lets other Agents audit which batch rule
+applies. A claim created by `scripts/agent_entry.py` is `work`; a claim created only through
+repository tools without a terminal/workspace is `ordinary_chat`.
+
 ### Mode 1 — Work mode
 
 When a terminal/workspace is available, clone the repository if it is absent, or fast-forward it
@@ -34,6 +39,14 @@ Then immediately attempt the atomic claim. The longer Step 0 reading list and ta
 guides are read **after the claim is durable but before business data is produced**. Do not exhaust
 the tool window by recursively reading the full queue, every historical claim, every completion,
 or unrelated Playback policy before attempting entry.
+
+For candidate identity review in ordinary chat mode, claim one fixed batch of exactly **20**
+`unreviewed` candidates. Publish all 20 per-candidate claims together, then review, archive and
+complete them one by one. Do not top the batch back up as members finish. After all 20 completions
+are durable on fresh `main`, report `CHAT_BATCH_COMPLETE` and stop instead of re-entering; this is
+the token-saving ordinary-chat exception to the continuous re-entry loop. The per-candidate
+10-hour timeout and collision rules remain unchanged. Every claim in this batch must contain
+`"entry_mode":"ordinary_chat"` and `"review_batch_target_size":20`.
 
 “The tool window ended after reading” is not a successful entry or a documented project stop. If
 the host ends the turn before a write can be attempted, report `HOST_STOP_BEFORE_ENTRY`; never
@@ -251,14 +264,18 @@ If a worker discovers a control-plane bug that does not block all remaining work
 
 A worker stops only for a documented reason such as `PROJECT_COMPLETE`, `USER_RECALL`, real `NO_ELIGIBLE_WORK`, unavoidable `HUMAN_DECISION_REQUIRED`, `SAFETY_OR_ACCESS_BLOCK`, verified inability to contribute through either direct-write or PR path, or true `HOST_STOP`.
 
+Ordinary chat mode additionally stops with `CHAT_BATCH_COMPLETE` after all 20 members of its fixed
+candidate-review batch are durably completed. This exception does not apply to Work mode or to an
+unfinished chat batch.
+
 `CLAIM_RACE_LOST` and `PR_RESERVATION_RACE_LOST` are not stop conditions.
 
 Because the repository contains a Playback Evidence Service, absence of local ffmpeg/player is normally **not HOST_STOP**. If repository Playback work is open and the service is available, ordinary workers can execute it through GitHub once their required request/acceptance records reach `main`.
 
 ## Task discovery and claiming
 
-During candidate identity review, an ordinary Agent claims a fixed batch of 100 currently
-`unreviewed` candidates. All 100 per-candidate claims must become durable together and therefore
+During candidate identity review in Work mode, an ordinary Agent claims a fixed batch of 100
+currently `unreviewed` candidates. All 100 per-candidate claims must become durable together and therefore
 show as `in_progress` before review begins. Review the batch one candidate at a time; each completed
 candidate receives its own completion/archive record and becomes permanently `reviewed`. Do not
 top the batch back up as members finish. The Agent's batch is complete only after all 100 fixed

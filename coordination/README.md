@@ -72,8 +72,8 @@ One completed task or one claim race is not a stop condition.
 
 ### Candidate review queue
 
-C2 identity review is split by source candidate so many Agents can work independently. An
-ordinary Agent takes a fixed batch of 100 candidates on entry:
+C2 identity review is split by source candidate so many Agents can work independently. Work mode
+takes a fixed batch of 100 candidates; ordinary chat mode takes a fixed batch of 20:
 
 ```text
 unreviewed
@@ -87,11 +87,17 @@ in_progress for 10 hours without completion
   -> automatically derives back to unreviewed
 ```
 
-All 100 per-candidate claim records are published together, so the full batch immediately appears
+All per-candidate claim records are published together, so the full batch immediately appears
 as `in_progress`. The Agent reviews them one by one; each finished candidate gets its own durable
 completion/archive record and becomes `reviewed`, while unfinished members remain `in_progress`.
-The batch is complete only when all 100 members are reviewed. Re-entry continues the same batch
+The Work-mode batch is complete only when all 100 members are reviewed. Re-entry continues the same batch
 and never replaces completed members with newly claimed work.
+
+Ordinary chat mode applies the same one-by-one review and immutable completion rules to 20 fixed
+members. Once all 20 are durable on fresh `main`, it reports `CHAT_BATCH_COMPLETE` and stops rather
+than re-entering, conserving the chat token/tool window. An unfinished chat batch is not a valid
+stop condition. Claims and completions record `entry_mode`, so mode selection and the applicable
+batch size are visible in Git rather than existing only in chat context.
 
 The three states are derived from immutable claim/completion records; Agents do not append to or
 rewrite one shared queue file. A completed review remains `reviewed`. An `in_progress` claim that
@@ -108,7 +114,8 @@ Inspect current counts with:
 python scripts/next_task.py --review-status
 ```
 
-Automatic entry batches unreviewed candidate tasks in groups of 100. Each claim contains the
+Work-mode automatic entry batches unreviewed candidates in groups of 100. Ordinary chat mode
+claims groups of 20 through repository tools. Each claim contains the
 candidate ID, review generation, batch ID/position, and TTL. Completing one candidate never blocks
 other candidates.
 
