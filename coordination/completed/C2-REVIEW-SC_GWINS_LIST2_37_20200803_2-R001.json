@@ -1,0 +1,27 @@
+{
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_37_20200803_2-R001",
+  "agent_id": "agent-20261004T122400Z-chatgpt-github-c2",
+  "completed_at": "2026-10-04T12:39:00Z",
+  "result_commit": "6c1d56286e4e5ca099f43e6ac6309aaa7ac16f3b",
+  "database_refresh_commit": "7bf5d569749a8f00b726f7ad1240805e5cb903d8",
+  "outputs": [
+    "data/current/live_videos/c2_review_20200803_2.json",
+    "data/current/sources/c2_review_20200803_2.jsonl",
+    "data/current/media_assets/c2_review_20200803_2.jsonl",
+    "data/current/source_match_candidates/c2_review_20200803_2.jsonl",
+    "database/Miles-Guo_public_archive.sqlite3"
+  ],
+  "validation": "GWINS list/detail identity, date, title, and direct YouTube/Rumble source relationships verified. No playback, media download, transcription, segmentation, or later-stage processing performed. The task-triggered workflow passed 72 unit tests, build_db.py, and validate_db.py with validation OK; its database push lost a concurrent-main race. A subsequent Build Pilot SQLite workflow on descendant main commit f66e14da completed successfully and database refresh commit 7bf5d569 includes this task's data.",
+  "workflow_mode": "continuous-worker-v2",
+  "claim_protocol": "claim-protocol-v2",
+  "continue_after_finish": true,
+  "finish_prerequisites_revalidated": true,
+  "notes": "Candidate review completed under fixed review batch REVIEW-BATCH-20261004T122400Z-chatgpt. The failed database push was classified as a concurrent non-fast-forward race, not a data-validation failure. Continue with the next fixed batch member; do not top up the batch.",
+  "kind": "candidate_promotion_review",
+  "source_candidate_id": "SC_GWINS_LIST2_37_20200803_2",
+  "review_generation": 1,
+  "review_claim_timeout_hours": 10,
+  "review_batch_id": "REVIEW-BATCH-20261004T122400Z-chatgpt",
+  "review_batch_position": 2,
+  "review_batch_target_size": 100
+}
