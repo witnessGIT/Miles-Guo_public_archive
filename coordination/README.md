@@ -70,6 +70,33 @@ discover
 
 One completed task or one claim race is not a stop condition.
 
+### Candidate review queue
+
+C2 identity review is split by source candidate so many Agents can work independently:
+
+```text
+unreviewed
+  -> atomic coordination/claims/C2-REVIEW-<CANDIDATE>-R<GENERATION>.json
+in_progress
+  -> durable canonical/duplicate/rejected decision + completion record
+reviewed
+  -> after 10 hours, automatically derives back to unreviewed
+```
+
+The three states are derived from immutable claim/completion records; Agents do not append to or
+rewrite one shared queue file. A fresh completed review remains `reviewed` for 10 hours. Once its
+TTL expires, the next task uses a new generation ID, preserving prior evidence while allowing a
+new independent check.
+
+Inspect current counts with:
+
+```bash
+python scripts/next_task.py --review-status
+```
+
+Automatic entry and normal `--claim` include unreviewed candidate tasks. Each claim contains the
+candidate ID, review generation, and TTL. Completing one candidate never blocks other candidates.
+
 ## 4. Claim races
 
 Create one immutable claim:

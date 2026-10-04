@@ -27,6 +27,10 @@ CURRENT_P10 = "P10-PILOT-DECISION-R2"
 LEGACY_GATE_TASKS = {"P9-AUDIT-60", "P10-PILOT-DECISION"}
 STATIC_CLAIM_LEASE_HOURS = 24
 NON_BLOCKING_CLAIM_STATUSES = {"completed", "released", "abandoned", "cancelled"}
+CANDIDATE_REVIEW_PREFIX = "C2-REVIEW-"
+CANDIDATE_REVIEW_PRIORITY = 90
+CANDIDATE_REVIEW_TTL_HOURS = 10
+REVIEWABLE_CANDIDATE_STATUSES = {"discovered", "needs_review"}
 
 LEGACY_BATCH_TASKS = {
     "early": "P6-PILOT-EARLY-B001",
@@ -154,6 +158,198 @@ def normalize_depends_on(value: object) -> list[str]:
     if isinstance(value, list):
         return [str(item) for item in value if str(item)]
     return [str(value)]
+
+
+def candidate_review_task_id(candidate_id: str, generation: int) -> str:
+    return f"{CANDIDATE_REVIEW_PREFIX}{candidate_id}-R{generation:03d}"
+
+
+def _review_generation(payload: dict) -> int:
+    explicit = payload.get("review_generation")
+    if isinstance(explicit, int) and explicit > 0:
+        return explicit
+    task_id = str(payload.get("task_id") or "")
+    suffix = task_id.rsplit("-R", 1)[-1]
+    if suffix.isdigit() and int(suffix) > 0:
+        return int(suffix)
+    return 1
+
+
+def _candidate_id_from_review(payload: dict) -> str | None:
+    explicit = payload.get("source_candidate_id")
+    if isinstance(explicit, str) and explicit:
+        return explicit
+    task_id = str(payload.get("task_id") or "")
+    if not task_id.startswith(CANDIDATE_REVIEW_PREFIX):
+        return None
+    candidate_id = task_id[len(CANDIDATE_REVIEW_PREFIX):]
+    base, separator, suffix = candidate_id.rpartition("-R")
+    if separator and suffix.isdigit():
+        candidate_id = base
+    return candidate_id or None
+
+
+def _coordination_records(directory: Path) -> list[dict]:
+    records: list[dict] = []
+    if not directory.exists():
+        return records
+    for path in sorted(directory.glob("*.json")):
+        payload = load_json_path(path)
+        if payload:
+            records.append(payload)
+    return records
+
+
+def candidate_review_states(*, now: datetime | None = None) -> list[dict]:
+    current = (now or datetime.now(timezone.utc)).astimezone(timezone.utc)
+    candidates: dict[str, dict] = {}
+    for row in iter_current_records("source_candidates"):
+        candidate_id = str(row.get("id") or "")
+        status = str(row.get("status") or "discovered").lower()
+        if candidate_id and status in REVIEWABLE_CANDIDATE_STATUSES:
+            candidates[candidate_id] = row
+
+    claims_by_candidate: dict[str, list[dict]] = defaultdict(list)
+    completions_by_candidate: dict[str, list[dict]] = defaultdict(list)
+    max_generation: dict[str, int] = defaultdict(int)
+
+    for payload in _coordination_records(CLAIMS):
+        candidate_id = _candidate_id_from_review(payload)
+        if not candidate_id:
+            continue
+        claims_by_candidate[candidate_id].append(payload)
+        max_generation[candidate_id] = max(
+            max_generation[candidate_id], _review_generation(payload)
+        )
+        if str(payload.get("status") or "").lower() == "completed":
+            completions_by_candidate[candidate_id].append(payload)
+
+    for payload in _coordination_records(COMPLETED):
+        candidate_id = _candidate_id_from_review(payload)
+        if not candidate_id:
+            continue
+        completions_by_candidate[candidate_id].append(payload)
+        max_generation[candidate_id] = max(
+            max_generation[candidate_id], _review_generation(payload)
+        )
+
+    states: list[dict] = []
+    for candidate_id, candidate in sorted(candidates.items()):
+        completions = completions_by_candidate.get(candidate_id, [])
+        dated_completions = [
+            (parse_timestamp(payload.get("completed_at")), payload)
+            for payload in completions
+        ]
+        dated_completions = [item for item in dated_completions if item[0] is not None]
+        latest_completed_at: datetime | None = None
+        latest_completion: dict | None = None
+        if dated_completions:
+            latest_completed_at, latest_completion = max(
+                dated_completions, key=lambda item: item[0]
+            )
+
+        active_claim: dict | None = None
+        active_claimed_at: datetime | None = None
+        for claim in claims_by_candidate.get(candidate_id, []):
+            if str(claim.get("status") or "in_progress").lower() != "in_progress":
+                continue
+            if claim_expired(claim):
+                continue
+            claimed_at = parse_timestamp(claim.get("claimed_at"))
+            if latest_completed_at is not None and (
+                claimed_at is None or claimed_at <= latest_completed_at
+            ):
+                continue
+            if active_claim is None or (
+                claimed_at is not None
+                and (active_claimed_at is None or claimed_at > active_claimed_at)
+            ):
+                active_claim = claim
+                active_claimed_at = claimed_at
+
+        expires_at = (
+            latest_completed_at + timedelta(hours=CANDIDATE_REVIEW_TTL_HOURS)
+            if latest_completed_at is not None
+            else None
+        )
+        if active_claim is not None:
+            state = "in_progress"
+        elif expires_at is not None and current < expires_at:
+            state = "reviewed"
+        else:
+            state = "unreviewed"
+
+        next_generation = max_generation[candidate_id] + 1
+        if max_generation[candidate_id] == 0:
+            next_generation = 1
+        states.append(
+            {
+                "candidate_id": candidate_id,
+                "state": state,
+                "candidate": candidate,
+                "active_claim": active_claim,
+                "latest_completion": latest_completion,
+                "latest_completed_at": (
+                    latest_completed_at.isoformat() if latest_completed_at else None
+                ),
+                "review_expires_at": expires_at.isoformat() if expires_at else None,
+                "next_generation": next_generation,
+            }
+        )
+    return states
+
+
+def candidate_review_tasks() -> list[dict]:
+    tasks: list[dict] = []
+    for row in candidate_review_states():
+        if row["state"] != "unreviewed":
+            continue
+        candidate = row["candidate"]
+        candidate_id = row["candidate_id"]
+        generation = int(row["next_generation"])
+        tasks.append(
+            {
+                "id": candidate_review_task_id(candidate_id, generation),
+                "priority": CANDIDATE_REVIEW_PRIORITY,
+                "kind": "candidate_promotion_review",
+                "stage": "candidate_review",
+                "source_candidate_id": candidate_id,
+                "review_generation": generation,
+                "review_ttl_hours": CANDIDATE_REVIEW_TTL_HOURS,
+                "review_state_before_claim": "unreviewed",
+                "depends_on": [],
+                "scope": (
+                    f"Review source candidate {candidate_id} one at a time; confirm canonical "
+                    "identity, duplicate/source relationships, and write isolated durable "
+                    f"outputs. Current source: {candidate.get('source_url') or '-'}"
+                ),
+            }
+        )
+    return tasks
+
+
+def print_candidate_review_summary() -> None:
+    rows = candidate_review_states()
+    counts = defaultdict(int)
+    for row in rows:
+        counts[row["state"]] += 1
+    print("Candidate review queue")
+    print(f"  unreviewed: {counts['unreviewed']}")
+    print(f"  in_progress: {counts['in_progress']}")
+    print(f"  reviewed: {counts['reviewed']}")
+    print(f"  reviewed_ttl_hours: {CANDIDATE_REVIEW_TTL_HOURS}")
+    for state in ("in_progress", "reviewed", "unreviewed"):
+        sample = [row for row in rows if row["state"] == state][:10]
+        if not sample:
+            continue
+        print(f"  {state}_sample:")
+        for row in sample:
+            suffix = (
+                f" expires={row['review_expires_at']}"
+                if row.get("review_expires_at")
+                else ""
+            )
+            print(f"    - {row['candidate_id']}{suffix}")
 
 
 def live_work_item_tasks(done: set[str]) -> list[dict]:
@@ -511,7 +707,12 @@ def eligible_tasks() -> list[dict]:
     done = completed_ids()
     workflow = load_workflow()
     legacy_stream_enabled = workflow.get("current_major_phase") != "PHASE_1_COLLECTION"
-    tasks = source_boundary_tasks(done) + live_work_item_tasks(done) + static_tasks(done)
+    tasks = (
+        source_boundary_tasks(done)
+        + candidate_review_tasks()
+        + live_work_item_tasks(done)
+        + static_tasks(done)
+    )
     if legacy_stream_enabled:
         tasks.extend(stream_tasks(done))
     filtered: list[dict] = []
@@ -607,6 +808,10 @@ def claim_task(task: dict, agent_id: str) -> Path:
         "case_id": task.get("case_id"),
         "live_id": task.get("live_id"),
         "kind": task.get("kind"),
+        "source_candidate_id": task.get("source_candidate_id"),
+        "review_generation": task.get("review_generation"),
+        "review_ttl_hours": task.get("review_ttl_hours"),
+        "review_state_before_claim": task.get("review_state_before_claim"),
         "depends_on_at_claim": list(task.get("depends_on", [])),
         "scope": task.get("scope", ""),
         "reclaimed_expired_claim": bool(previous_claims),
@@ -832,6 +1037,20 @@ def finish_task(
         ),
     }
 
+    if claim.get("kind") == "candidate_promotion_review":
+        payload.update(
+            {
+                "kind": "candidate_promotion_review",
+                "source_candidate_id": claim.get("source_candidate_id"),
+                "review_generation": claim.get("review_generation"),
+                "review_ttl_hours": CANDIDATE_REVIEW_TTL_HOURS,
+                "review_expires_at": (
+                    datetime.now(timezone.utc)
+                    + timedelta(hours=CANDIDATE_REVIEW_TTL_HOURS)
+                ).isoformat(),
+            }
+        )
+
     if task_id == CURRENT_P9:
         payload["gate_outcome"] = "pass"
         payload["playback_gate_task"] = "P9-PLAYBACK-GATE"
@@ -960,6 +1179,11 @@ def main() -> None:
         description="Discover, claim, finish, and stream Miles-Guo_public_archive tasks."
     )
     parser.add_argument("--list", action="store_true", help="List eligible tasks.")
+    parser.add_argument(
+        "--review-status",
+        action="store_true",
+        help="Show unreviewed, in-progress, and reviewed candidate counts.",
+    )
     parser.add_argument("--claim", action="store_true", help="Claim an eligible task.")
     parser.add_argument("--task", help="Specific eligible task ID to claim/watch for.")
     parser.add_argument("--agent-id", help="Unique agent ID for claim/finish/readiness.")
@@ -1004,6 +1228,10 @@ def main() -> None:
         ),
     )
     args = parser.parse_args()
+
+    if args.review_status:
+        print_candidate_review_summary()
+        return
 
     if args.mark_ready:
         if not args.agent_id or not args.case_id or not args.validation:

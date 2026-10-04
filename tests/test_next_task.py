@@ -50,6 +50,22 @@ class NextTaskSchedulingTests(unittest.TestCase):
             encoding="utf-8",
         )
 
+    def write_candidate(self, candidate_id="SC_GWINS_TEST"):
+        candidate_dir = next_task.DATA_CURRENT / "source_candidates"
+        candidate_dir.mkdir(parents=True, exist_ok=True)
+        (candidate_dir / f"{candidate_id}.json").write_text(
+            json.dumps(
+                {
+                    "id": candidate_id,
+                    "source_site": "GWINS",
+                    "source_url": "https://example.invalid/source",
+                    "status": "discovered",
+                }
+            ),
+            encoding="utf-8",
+        )
+        return candidate_id
+
     def test_completed_ids_read_task_id_from_noncanonical_filename(self):
         self.write_queue(
             {
@@ -307,6 +323,75 @@ class NextTaskSchedulingTests(unittest.TestCase):
         with patch.object(next_task.subprocess, "run", return_value=failed):
             with self.assertRaisesRegex(SystemExit, "polling stale state"):
                 next_task.refresh_main_for_watch()
+
+    def test_candidate_review_moves_through_three_states(self):
+        candidate_id = self.write_candidate()
+        base_now = datetime(2026, 10, 4, 12, 0, tzinfo=timezone.utc)
+
+        initial = next_task.candidate_review_states(now=base_now)
+        self.assertEqual(initial[0]["state"], "unreviewed")
+        self.assertEqual(initial[0]["next_generation"], 1)
+
+        task = next_task.candidate_review_tasks()[0]
+        claim_path = next_task.claim_task(task, "agent-reviewer")
+        claim = json.loads(claim_path.read_text(encoding="utf-8"))
+        claim["claimed_at"] = base_now.isoformat()
+        claim_path.write_text(json.dumps(claim), encoding="utf-8")
+
+        active = next_task.candidate_review_states(now=base_now + timedelta(hours=1))
+        self.assertEqual(active[0]["state"], "in_progress")
+
+        completion = {
+            "task_id": task["id"],
+            "kind": "candidate_promotion_review",
+            "source_candidate_id": candidate_id,
+            "review_generation": 1,
+            "completed_at": (base_now + timedelta(hours=2)).isoformat(),
+        }
+        (next_task.COMPLETED / f"{task['id']}.json").write_text(
+            json.dumps(completion), encoding="utf-8"
+        )
+
+        reviewed = next_task.candidate_review_states(now=base_now + timedelta(hours=11))
+        self.assertEqual(reviewed[0]["state"], "reviewed")
+        self.assertEqual(reviewed[0]["next_generation"], 2)
+
+        expired = next_task.candidate_review_states(now=base_now + timedelta(hours=13))
+        self.assertEqual(expired[0]["state"], "unreviewed")
+        self.assertEqual(expired[0]["next_generation"], 2)
+
+    def test_candidate_review_claims_are_independent(self):
+        first = self.write_candidate("SC_GWINS_A")
+        second = self.write_candidate("SC_GWINS_B")
+        tasks = next_task.candidate_review_tasks()
+        by_candidate = {task["source_candidate_id"]: task for task in tasks}
+
+        next_task.claim_task(by_candidate[first], "agent-a")
+        states = {row["candidate_id"]: row["state"] for row in next_task.candidate_review_states()}
+
+        self.assertEqual(states[first], "in_progress")
+        self.assertEqual(states[second], "unreviewed")
+
+    def test_candidate_review_finish_carries_ttl_metadata(self):
+        candidate_id = self.write_candidate()
+        task = next_task.candidate_review_tasks()[0]
+        next_task.claim_task(task, "agent-reviewer")
+
+        completed_path, marker = next_task.finish_task(
+            task_id=task["id"],
+            agent_id="agent-reviewer",
+            outputs=["data/current/live_videos/example.json"],
+            validation="identity checked",
+            live_id="LIVE_20261004_001",
+            full_archive_decision=None,
+        )
+        completed = json.loads(completed_path.read_text(encoding="utf-8"))
+
+        self.assertIsNone(marker)
+        self.assertEqual(completed["source_candidate_id"], candidate_id)
+        self.assertEqual(completed["review_generation"], 1)
+        self.assertEqual(completed["review_ttl_hours"], 10)
+        self.assertIsNotNone(next_task.parse_timestamp(completed["review_expires_at"]))
 
 
 if __name__ == "__main__":
