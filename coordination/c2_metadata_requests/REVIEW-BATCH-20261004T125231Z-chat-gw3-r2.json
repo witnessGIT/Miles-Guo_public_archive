@@ -1,0 +1,21 @@
+{
+  "request_version": "c2-metadata-request-v1",
+  "agent_id": "agent-20261004T125231Z-chat-c2-gw3",
+  "review_batch_id": "REVIEW-BATCH-20261004T125231Z-chat-gw3",
+  "requested_by_verified_github_login": "witnessGIT",
+  "revision": 2,
+  "retry_reason": "First request obtained HTML but strict UTF-8 decoding failed in the legacy template. Reader now explicitly reports encoding damage and excludes damaged identity excerpts. Preserve earlier failure receipts.",
+  "task_ids": [
+    "C2-REVIEW-SC_GWINS_LIST2_3_20230103_1-R001",
+    "C2-REVIEW-SC_GWINS_LIST2_3_20230101_1-R001",
+    "C2-REVIEW-SC_GWINS_LIST2_3_20230101_2-R001",
+    "C2-REVIEW-SC_GWINS_LIST2_3_20221231_1-R001",
+    "C2-REVIEW-SC_GWINS_LIST2_3_20221230_1-R001",
+    "C2-REVIEW-SC_GWINS_LIST2_3_20221206_2-R001",
+    "C2-REVIEW-SC_GWINS_LIST2_3_20221205_1-R001",
+    "C2-REVIEW-SC_GWINS_LIST2_3_20221203_1-R001",
+    "C2-REVIEW-SC_GWINS_LIST2_3_20221201_1-R001",
+    "C2-REVIEW-SC_GWINS_LIST2_3_20221129_1-R001",
+    "C2-REVIEW-SC_GWINS_LIST2_3_20221128_1-R001"
+  ]
+}

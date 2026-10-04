@@ -81,8 +81,14 @@ class Page(HTMLParser):
 
 
 def parse_page(raw: bytes, url: str, video_id: str) -> dict:
-    # GWINS declares UTF-8. Strict decoding prevents silently archiving mojibake.
-    text = raw.decode("utf-8-sig", errors="strict")
+    # Some GWINS templates mix legacy bytes into otherwise UTF-8 pages.
+    # Preserve an explicit warning and never use a damaged excerpt as evidence.
+    try:
+        text = raw.decode("utf-8-sig", errors="strict")
+        strict_utf8 = True
+    except UnicodeDecodeError:
+        text = raw.decode("utf-8-sig", errors="replace")
+        strict_utf8 = False
     page = Page()
     page.feed(text)
     paragraphs = [re.sub(r"\s+", " ", s).strip() for s in "".join(page.parts).splitlines()]
@@ -91,7 +97,7 @@ def parse_page(raw: bytes, url: str, video_id: str) -> dict:
     for index, paragraph in enumerate(paragraphs):
         for match in CUE.finditer(paragraph):
             excerpt = paragraph[max(0, match.start()-65):match.end()+110]
-            if excerpt not in [x["excerpt"] for x in cues]:
+            if "\ufffd" not in excerpt and excerpt not in [x["excerpt"] for x in cues]:
                 cues.append({"paragraph_index": index, "excerpt": excerpt})
             if len(cues) >= 40:
                 break
@@ -101,12 +107,15 @@ def parse_page(raw: bytes, url: str, video_id: str) -> dict:
     for value in page.links:
         target = urljoin(url, value)
         p = urlsplit(target)
-        if (p.scheme in {"http", "https"} and not p.username and not p.password
+        if ("\ufffd" not in target and p.scheme in {"http", "https"} and not p.username and not p.password
                 and p.hostname in {"gettr.com", "www.gettr.com", "rumble.com", "www.rumble.com",
                                    "youtube.com", "www.youtube.com", "youtu.be", "ghot.ai"}):
             if target not in links:
                 links.append(target)
     return {"page_title": "".join(page.titles).strip(), "metadata": page.metadata,
+            "decoding": {"codec": "utf-8", "strict": strict_utf8, "replacement_count": text.count("\ufffd"),
+                         "title_clean": "\ufffd" not in "".join(page.titles),
+                         "warning": "Damaged fields are not reliable; clean excerpts only. Missing cues are not absence evidence."},
             "expected_source_video_id": video_id,
             "expected_id_visible": bool(video_id and video_id in "\n".join(paragraphs)),
             "outbound_links": links[:60], "identity_type_cues": cues,
