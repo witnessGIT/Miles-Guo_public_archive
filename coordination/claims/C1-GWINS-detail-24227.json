@@ -3,7 +3,7 @@
   "agent_id": "agent-20261004T1522Z-gpt56sol-gwins-24227",
   "claimed_at": "2026-10-04T15:22:00Z",
   "base_commit": "2bb4475021608f8c3994cd0c6f9b06c9758e5b51",
-  "status": "in_progress",
+  "status": "completed",
   "workflow_mode": "continuous-worker-v2",
   "claim_protocol": "claim-protocol-v2",
   "continue_after_finish": true,
@@ -13,5 +13,23 @@
   "natural_boundary": "GWINS detail page 24227 for 2023-01-26 candidate 20230126_1",
   "url": "https://www.gwins.org/cn/milesguo/24227.html",
   "discovered_from": "data/current/source_candidates/gwins/list_2_2.jsonl#SC_GWINS_LIST_2_2_20230126_1",
-  "scope": "Inspect exactly this public detail page; record source-candidate provenance only. Do not perform C2 candidate review/promotion in this C1 task."
+  "scope": "Inspect exactly this public detail page; record source-candidate provenance only. Do not perform C2 candidate review/promotion in this C1 task.",
+  "completed_at": "2026-10-04T15:22:45Z",
+  "completed_by": "agent-20261004T1522Z-gpt56sol-gwins-24227",
+  "output": "data/current/source_candidates/gwins/details/24227.json",
+  "validation": {
+    "source_page_id": "24227",
+    "source_video_id": "20230126_1",
+    "gettr_post_id": "p26dti25062",
+    "rumble_item_id": "v5b16dx",
+    "duplicate_of": "SC_GWINS_LIST_2_2_20230126_1",
+    "c2_promotion_performed": false,
+    "repository_validation_run_id": 37212728591,
+    "repository_validation_job_id": 111466999911,
+    "unit_tests": "passed",
+    "candidate_review_evidence": "passed",
+    "build_db": "passed",
+    "validate_db": "passed",
+    "database_commit": "passed"
+  }
 }
