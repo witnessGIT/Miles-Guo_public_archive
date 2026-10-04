@@ -23,8 +23,13 @@
     "evidence_basis": "direct public GWINS detail page inspection; visible title/date, GETTR streaming p29jmwy83b6, Rumble v5bsh98, Chinese-subtitle link and visible timed curated text; subtitle content was not opened or processed; no ASR/segmentation/playback work"
   },
   "repository_validation": {
-    "status": "not_observed",
-    "reason": "No post-boundary database refresh commit or readable push-workflow result was available in this ordinary-chat runtime before task close; no build/validate pass is asserted."
+    "workflow_run_id": 37192124526,
+    "workflow_job_id": 111406348758,
+    "unit_tests": "passed",
+    "build_db": "passed",
+    "validate_db": "passed",
+    "workflow_final_conclusion": "failure",
+    "final_step_note": "Repository validation steps passed. The later rebuilt SQLite commit step failed after concurrent main updates; this does not invalidate build_db or validate_db."
   },
   "new_boundaries": [],
   "continue_after_finish": true
