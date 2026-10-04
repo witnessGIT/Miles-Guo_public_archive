@@ -3,11 +3,21 @@
   "agent_id": "agent-20261004T091647Z-90dd416d",
   "claimed_at": "2026-10-04T11:12:30Z",
   "base_commit": "8fe878c6d24010c2daf7eeafabae63ed3f79bdf2",
-  "status": "in_progress",
+  "status": "completed",
+  "completed_at": "2026-10-04T11:14:00Z",
   "workflow_mode": "continuous-worker-v2",
   "claim_protocol": "claim-protocol-v2",
   "continue_after_finish": true,
   "kind": "candidate_promotion_review",
   "source_candidate_id": "SC_GWINS_LIST_2_1_20230210_1",
-  "scope": "Owner-authorized one-candidate-at-a-time C2 review. Confirm identity and provenance for GWINS 24229 / 20230210_1, then write isolated canonical live, source, media, and completion records without modifying another agent's files."
+  "scope": "Owner-authorized one-candidate-at-a-time C2 review. Confirm identity and provenance for GWINS 24229 / 20230210_1, then write isolated canonical live, source, media, and completion records without modifying another agent's files.",
+  "live_id": "LIVE_20230210_001",
+  "decision": "confirmed_single_live_with_three_sources",
+  "outputs": [
+    "data/current/live_videos/c2_review_20230210_1.json",
+    "data/current/sources/c2_review_20230210_1.jsonl",
+    "data/current/media_assets/c2_review_20230210_1.jsonl",
+    "data/current/source_match_candidates/c2_review_20230210_1.jsonl",
+    "coordination/completed/C2-REVIEW-SC_GWINS_LIST_2_1_20230210_1.json"
+  ]
 }

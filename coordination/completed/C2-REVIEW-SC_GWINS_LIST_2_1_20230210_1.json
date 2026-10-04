@@ -1,0 +1,22 @@
+{
+  "task_id": "C2-REVIEW-SC_GWINS_LIST_2_1_20230210_1",
+  "agent_id": "agent-20261004T091647Z-90dd416d",
+  "status": "completed",
+  "completed_at": "2026-10-04T11:14:00Z",
+  "source_candidate_id": "SC_GWINS_LIST_2_1_20230210_1",
+  "live_id": "LIVE_20230210_001",
+  "decision": "confirmed_single_live_with_three_sources",
+  "identity_evidence": [
+    "GWINS 24229 displays source video ID 20230210_1 and publish date 20230210.",
+    "GWINS 24229 directly links GETTR post p27wr6z403e and Rumble item v5b1ji5.",
+    "The public GETTR page displays the matching 2023.02.10 title text."
+  ],
+  "outputs": [
+    "data/current/live_videos/c2_review_20230210_1.json",
+    "data/current/sources/c2_review_20230210_1.jsonl",
+    "data/current/media_assets/c2_review_20230210_1.jsonl",
+    "data/current/source_match_candidates/c2_review_20230210_1.jsonl"
+  ],
+  "playback_verified": false,
+  "validation": "Canonical identity and source relationships manually reviewed against public GWINS and GETTR pages; Rumble identity retained from the direct GWINS cross-reference. Database build and validation required before publication."
+}
