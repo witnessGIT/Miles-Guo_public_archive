@@ -918,6 +918,22 @@ def choose_task(eligible: list[dict], task_id: str | None) -> dict:
     return matches[0]
 
 
+def refresh_main_for_watch() -> None:
+    process = subprocess.run(
+        ["git", "pull", "--ff-only", "origin", "main"],
+        cwd=ROOT,
+        stdout=subprocess.PIPE,
+        stderr=subprocess.PIPE,
+        text=True,
+    )
+    if process.returncode != 0:
+        detail = (process.stderr or process.stdout).strip()
+        raise SystemExit(
+            "Watch mode could not refresh authoritative origin/main; "
+            f"stopping instead of polling stale state. {detail}"
+        )
+
+
 def watch_for_task(
     poll_seconds: int,
     requested_task: str | None,
@@ -929,6 +945,7 @@ def watch_for_task(
         "This process can still be stopped by the host platform or Ctrl+C."
     )
     while True:
+        refresh_main_for_watch()
         eligible = eligible_tasks()
         if requested_task:
             eligible = [task for task in eligible if task["id"] == requested_task]

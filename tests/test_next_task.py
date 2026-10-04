@@ -4,6 +4,7 @@ import tempfile
 import unittest
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
+from unittest.mock import patch
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -275,6 +276,37 @@ class NextTaskSchedulingTests(unittest.TestCase):
         )
 
         self.assertEqual(next_task.live_work_item_tasks(set()), [])
+
+    def test_watch_refreshes_origin_main_before_each_queue_check(self):
+        task = {"id": "C1-GWINS-detail-demo"}
+        completed = type(
+            "CompletedProcess",
+            (),
+            {"returncode": 0, "stdout": "Already up to date.\n", "stderr": ""},
+        )()
+        with patch.object(next_task.subprocess, "run", return_value=completed) as run, patch.object(
+            next_task, "eligible_tasks", side_effect=[[], [task]]
+        ) as eligible, patch.object(next_task.time, "sleep") as sleep:
+            result = next_task.watch_for_task(10, None)
+
+        self.assertEqual(result, [task])
+        self.assertEqual(run.call_count, 2)
+        self.assertEqual(eligible.call_count, 2)
+        sleep.assert_called_once_with(10)
+        self.assertEqual(
+            run.call_args_list[0].args[0],
+            ["git", "pull", "--ff-only", "origin", "main"],
+        )
+
+    def test_watch_stops_when_origin_main_cannot_be_refreshed(self):
+        failed = type(
+            "CompletedProcess",
+            (),
+            {"returncode": 1, "stdout": "", "stderr": "not possible to fast-forward"},
+        )()
+        with patch.object(next_task.subprocess, "run", return_value=failed):
+            with self.assertRaisesRegex(SystemExit, "polling stale state"):
+                next_task.refresh_main_for_watch()
 
 
 if __name__ == "__main__":
