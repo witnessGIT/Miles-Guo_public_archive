@@ -1,0 +1,32 @@
+{
+  "contract_version":"candidate-review-evidence-v2",
+  "task_id":"C2-REVIEW-SC_GWINS_LIST2_3_20221202_1-R001",
+  "source_candidate_id":"SC_GWINS_LIST2_3_20221202_1",
+  "reviewed_by":"agent-20261004T125231Z-chat-c2-gw3",
+  "entry_mode":"ordinary_chat",
+  "reviewed_at":"2026-10-04T13:10:00Z",
+  "decision":"rejected_not_target",
+  "canonical_live_id":null,
+  "rejection_reason":"The source title explicitly says the speaker is recording a video before sleeping. This positively identifies a standalone recording rather than an original livestream. It is excluded from original-livestream canonical promotion, not deleted from the discovery archive.",
+  "evidence_urls":["https://gwins.org/cn/milesguo/list_2_3.html","https://www.gwins.org/cn/milesguo/24179.html"],
+  "checked_fields":["identity","date","title","platform_ids","source_relationships","deduplication"],
+  "checks":{
+    "identity":"Exact preserved GWINS item identifies 郭文贵 and binds 20221202_1 to page 24179.",
+    "date":"2022-12-02 in the item title, the source token, the service-parsed candidate date, and the indexed introduction.",
+    "title":"郭文贵2022年12月2日盖特 20221202_1 尊敬的战友们好！睡觉前先给大家录一段视频，乱聊一下，免得国内战友，因为看不到我视频，睡不着而我睡的太晚！",
+    "platform_ids":{"gwins_source_video_id":"20221202_1","gwins_detail_page_id":"24179","gettr_id":null,"note":"Actual GETTR IDs are not present in the inspected index evidence and were not invented."},
+    "source_relationships":"The source-page evidence gives a direct index-to-detail link; the indexed introduction agrees with the dated recording title.",
+    "deduplication":"The same-day 20221202_2 points to page 24180 and describes a further recording; preserve distinct source records and do not date-only merge them. Scope is this exact source and its inspected same-day neighbor, not an exhaustive global nonexistence claim."
+  },
+  "evidence_basis":{
+    "repository_snapshot":"data/source_page_evidence/gwins/list_2_3/evidence.json",
+    "snapshot_locator":"items[source_video_id=20221202_1]",
+    "snapshot_raw_sha256":"e4888c5d5040a7be98e515ca40b7641b1f11eb32790abefb7a32cf834e407e27",
+    "additional_read":"Public search-indexed exact GWINS listing with item introduction.",
+    "access_limit":"No successful direct detail-page read or playback is claimed. Positive recorded-video wording is the basis of rejection, not missing media access."
+  },
+  "canonical_promotion_performed":false,
+  "playback_audit_performed":false,
+  "media_download_performed":false,
+  "later_content_processing_performed":false
+}
