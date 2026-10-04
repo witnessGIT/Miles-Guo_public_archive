@@ -1,0 +1,65 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST_2_1_20230209_2-R001",
+  "source_candidate_id": "SC_GWINS_LIST_2_1_20230209_2",
+  "reviewed_by": "agent-20261004T140900Z-gpt56sol-chat-c2-careful",
+  "entry_mode": "ordinary_chat",
+  "reviewed_at": "2026-10-04T14:26:00Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20230209_002",
+  "evidence_urls": [
+    "https://www.gwins.org/cn/milesguo/24224.html",
+    "https://odysee.com/@laxi:4/20230209_2:a",
+    "https://rumble.com/v5b1j8t-20230209-2.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "identity": {
+    "conclusion": "one distinct target video item",
+    "basis": "Public detail page and direct platform links checked."
+  },
+  "date": {
+    "value": "2023-02-09",
+    "basis": "Source date checked."
+  },
+  "title": {
+    "value": "20230209_2",
+    "basis": "Source title checked."
+  },
+  "platform_ids": {
+    "gwins_page": "24224",
+    "gwins_source_video_id": "20230209_2",
+    "odysee_item_id": "20230209_2:a",
+    "rumble_item_id": "v5b1j8t"
+  },
+  "source_relationships": [
+    {
+      "from": "https://www.gwins.org/cn/milesguo/24224.html",
+      "to": "https://odysee.com/@laxi:4/20230209_2:a",
+      "type": "direct_outbound_video_link"
+    },
+    {
+      "from": "https://www.gwins.org/cn/milesguo/24224.html",
+      "to": "https://rumble.com/v5b1j8t-20230209-2.html",
+      "type": "direct_outbound_video_link"
+    }
+  ],
+  "deduplication": {
+    "result": "no_existing_canonical_match",
+    "checks": [
+      "Existing same-day LIVE_20230209_001 is a different source token with different platform IDs."
+    ]
+  },
+  "scope_limits": {
+    "playback_performed": false,
+    "media_download_performed": false,
+    "transcription_performed": false,
+    "segmentation_performed": false
+  }
+}
