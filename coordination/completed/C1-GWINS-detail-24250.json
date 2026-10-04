@@ -17,5 +17,13 @@
     "playback_verification_performed": false,
     "subtitle_processing_performed": false
   },
-  "continue_after_finish": true
+  "continue_after_finish": true,
+  "repository_validation": {
+    "workflow_run_id": 37190792616,
+    "unit_tests": "passed",
+    "build_db": "passed",
+    "validate_db": "passed",
+    "workflow_final_conclusion": "failure",
+    "final_step_note": "Repository validation steps passed. The later rebuilt SQLite commit step failed after concurrent main updates; this does not invalidate build_db or validate_db."
+  }
 }
