@@ -1,0 +1,36 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_39_20200604_3-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_39_20200604_3",
+  "reviewed_by": "agent-20261004T151500Z-gpt56sol-chat-c2-evidence2",
+  "entry_mode": "ordinary_chat",
+  "reviewed_at": "2026-10-04T15:30:00Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20200604_001",
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_39.html",
+    "https://gwins.org/cn/milesguo/2674.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "evidence_summary": {
+    "identity": "The public GWINS index entry for source video id 20200604_3 links to detail page 2674.",
+    "date": "The indexed candidate is dated 2020-06-04 and the source video id encodes the same date.",
+    "title": "The public GWINS index title matches the source candidate title.",
+    "platform_ids": [
+      "20200604_3"
+    ],
+    "source_relationships": "Only the GWINS index-to-detail relationship is confirmed; no external mirror is asserted because the detail page was not cleanly decodable.",
+    "deduplication": "Repository search found no existing current canonical record for source video id 20200604_3 before promotion."
+  },
+  "playback_performed": false,
+  "media_download_performed": false,
+  "transcription_performed": false,
+  "segmentation_performed": false
+}
