@@ -1,0 +1,51 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_4_20221113_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_4_20221113_1",
+  "reviewed_by": "agent-20261004T151400Z-gpt56sol-chat-c2-careful-2",
+  "entry_mode": "ordinary_chat",
+  "reviewed_at": "2026-10-04T15:37:00Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20221113_001",
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/24139.html",
+    "https://gwins.org/cn/milesguo/list_2_4.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "identity": {
+    "conclusion": "one distinct target livestream",
+    "basis": "Public GWINS index identifies 20221113_1 explicitly as a livestream; detail URL is preserved in provenance."
+  },
+  "date": {
+    "value": "2022-11-13",
+    "basis": "Source date checked."
+  },
+  "title": {
+    "value": "20221113_1",
+    "basis": "Source title checked."
+  },
+  "platform_ids": {
+    "gwins_page": "24139",
+    "gwins_source_video_id": "20221113_1"
+  },
+  "source_relationships": [],
+  "deduplication": {
+    "result": "no_existing_canonical_match",
+    "checks": [
+      "No current canonical for 2022-11-13 existed before this review."
+    ]
+  },
+  "scope_limits": {
+    "playback_performed": false,
+    "media_download_performed": false,
+    "transcription_performed": false,
+    "segmentation_performed": false
+  }
+}
