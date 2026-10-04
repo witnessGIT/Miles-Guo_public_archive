@@ -1,0 +1,28 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_3_20230101_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_3_20230101_1",
+  "reviewed_by": "agent-20261004T125231Z-chat-c2-gw3",
+  "entry_mode": "ordinary_chat",
+  "reviewed_at": "2026-10-04T14:41:39Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20230101_001",
+  "evidence_urls": ["https://www.gwins.org/cn/milesguo/24186.html", "https://gettr.com/streaming/p23jkb96a16", "https://rumble.com/v5b0uvo-20230101-1.html", "https://www.51haoyou.com/discuz/thread-9085.html"],
+  "checked_fields": ["identity", "date", "title", "platform_ids", "source_relationships", "deduplication"],
+  "checks": {
+    "identity": "HTTP-200 metadata evidence for exact GWINS page 24186 contains source token 20230101_1 and actual streaming target p23jkb96a16. Clean paragraphs 60, 62 and 63 identify the current New Year live program and its hosts. This is positive live-origin catalog evidence rather than inference from an update's generic category.",
+    "date": "The clean dated title and current-program introduction establish 2023-01-01. The independent event archive identifies the same day and streaming ID. No exact publication time is inferred.",
+    "title": "郭文贵2023年1月1日直播 20230101_1 新中国联邦2023元旦大直播",
+    "platform_ids": {"gwins_detail_page_id":"24186","gwins_source_video_id":"20230101_1","gettr_streaming_id":"p23jkb96a16","rumble_item_id":"v5b0uvo"},
+    "source_relationships": "The actual anchors on GWINS 24186 bind this candidate to GETTR streaming p23jkb96a16 and Rumble v5b0uvo. The same day's lower-half GWINS page 24187 instead exposes p23knnye6f2 and v5c2zzv. They belong to the same named event but are preserved as distinct source-stream items, not duplicate copies with interchangeable time axes.",
+    "deduplication": "Fresh active canonical directory listing and previously read aggregate seed files exposed no January 1 canonical. Exact first-stream identity differs from the lower-half candidate. Allocate a new internal ID for this source-stream item, without merging on date or generic title. This bounded repository check does not assert global Internet uniqueness or prove byte-level disjointness of the two streams. CI must check active-data key and reference integrity before merge."
+  },
+  "evidence_observations": [{"kind":"repository_c2_metadata_evidence","path":"data/source_page_evidence/c2_metadata/C2-REVIEW-SC_GWINS_LIST2_3_20230101_1-R001/9f3349448fa96a16.json","raw_sha256":"58445c7bcc9ae7770f08c276621590743be8cba076a4daa80f1206340ecb55ad","locators":["metadata_evidence.page_title","metadata_evidence.outbound_links","metadata_evidence.identity_type_cues paragraphs 60,62,63"],"decoding":"Mixed template encoding disclosed; exact title and cited cues contain no replacement characters."}],
+  "repository_snapshot": "eee0992e45944a08e2daec7bc60308e8f3344019",
+  "canonical_outputs": ["data/current/live_videos/c2_review_20230101_1.json", "data/current/sources/c2_review_20230101_1.jsonl", "data/current/media_assets/c2_review_20230101_1.jsonl"],
+  "uncertainty": "Catalog identity and source-declared relationships only. Program-wide planned hours are not measured duration. External availability, stream overlap, precise timing, content truth and playback remain unverified; no concatenation or timestamp transfer is performed.",
+  "canonical_promotion_performed": true,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}
