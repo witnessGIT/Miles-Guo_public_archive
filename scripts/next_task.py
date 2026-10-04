@@ -217,6 +217,26 @@ def _coordination_records(directory: Path) -> list[dict]:
     return records
 
 
+def candidate_review_grandfathered_ids() -> set[str]:
+    payload = load_json_path(ROOT / "coordination" / "candidate_review_grandfathered.json") or {}
+    return {str(task_id) for task_id in payload.get("task_ids", []) if str(task_id)}
+
+
+def candidate_review_completion_is_valid(payload: dict) -> bool:
+    task_id = str(payload.get("task_id") or "")
+    if not task_id.startswith(CANDIDATE_REVIEW_PREFIX):
+        return True
+    if task_id in candidate_review_grandfathered_ids():
+        return True
+    if payload.get("candidate_review_contract") != CANDIDATE_REVIEW_CONTRACT:
+        return False
+    try:
+        validate_candidate_review_artifact(payload, list(payload.get("outputs") or []))
+    except SystemExit:
+        return False
+    return True
+
+
 def candidate_review_states(*, now: datetime | None = None) -> list[dict]:
     current = (now or datetime.now(timezone.utc)).astimezone(timezone.utc)
     candidates: dict[str, dict] = {}
@@ -239,16 +259,18 @@ def candidate_review_states(*, now: datetime | None = None) -> list[dict]:
             max_generation[candidate_id], _review_generation(payload)
         )
         if str(payload.get("status") or "").lower() == "completed":
-            completions_by_candidate[candidate_id].append(payload)
+            if candidate_review_completion_is_valid(payload):
+                completions_by_candidate[candidate_id].append(payload)
 
     for payload in _coordination_records(COMPLETED):
         candidate_id = _candidate_id_from_review(payload)
         if not candidate_id:
             continue
-        completions_by_candidate[candidate_id].append(payload)
         max_generation[candidate_id] = max(
             max_generation[candidate_id], _review_generation(payload)
         )
+        if candidate_review_completion_is_valid(payload):
+            completions_by_candidate[candidate_id].append(payload)
 
     states: list[dict] = []
     for candidate_id, candidate in sorted(candidates.items()):
@@ -615,10 +637,14 @@ def has_record(directory: Path, task_id: str) -> bool:
 
 
 def task_completed(task_id: str) -> bool:
-    if task_records(COMPLETED, task_id):
-        return True
+    for _path, payload in task_records(COMPLETED, task_id):
+        if candidate_review_completion_is_valid(payload):
+            return True
     for _path, payload in task_records(CLAIMS, task_id):
-        if str(payload.get("status") or "").lower() == "completed":
+        if (
+            str(payload.get("status") or "").lower() == "completed"
+            and candidate_review_completion_is_valid(payload)
+        ):
             return True
     return False
 
@@ -659,12 +685,19 @@ def completed_ids() -> set[str]:
             continue
         done.add(path.stem)
         payload = load_json_path(path)
+        if payload and not candidate_review_completion_is_valid(payload):
+            done.discard(path.stem)
+            continue
         if payload and isinstance(payload.get("task_id"), str):
             done.add(payload["task_id"])
     if CLAIMS.exists():
         for path in CLAIMS.glob("*.json"):
             payload = load_json_path(path)
-            if payload and str(payload.get("status") or "").lower() == "completed":
+            if (
+                payload
+                and str(payload.get("status") or "").lower() == "completed"
+                and candidate_review_completion_is_valid(payload)
+            ):
                 task_id = payload.get("task_id")
                 if isinstance(task_id, str) and task_id:
                     done.add(task_id)

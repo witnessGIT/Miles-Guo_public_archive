@@ -385,6 +385,10 @@ class NextTaskSchedulingTests(unittest.TestCase):
             "review_generation": 1,
             "completed_at": (base_now + timedelta(hours=2)).isoformat(),
         }
+        grandfather_path = self.root / "coordination" / "candidate_review_grandfathered.json"
+        grandfather_path.write_text(
+            json.dumps({"task_ids": [task["id"]]}), encoding="utf-8"
+        )
         (next_task.COMPLETED / f"{task['id']}.json").write_text(
             json.dumps(completion), encoding="utf-8"
         )
@@ -395,6 +399,27 @@ class NextTaskSchedulingTests(unittest.TestCase):
 
         still_reviewed = next_task.candidate_review_states(now=base_now + timedelta(days=30))
         self.assertEqual(still_reviewed[0]["state"], "reviewed")
+
+    def test_invalid_candidate_completion_does_not_count_as_reviewed(self):
+        self.write_candidate()
+        task = next_task.candidate_review_tasks()[0]
+        (next_task.COMPLETED / f"{task['id']}.json").write_text(
+            json.dumps(
+                {
+                    "task_id": task["id"],
+                    "kind": "candidate_promotion_review",
+                    "source_candidate_id": task["source_candidate_id"],
+                    "completed_at": datetime.now(timezone.utc).isoformat(),
+                    "outputs": [],
+                }
+            ),
+            encoding="utf-8",
+        )
+
+        state = next_task.candidate_review_states()[0]
+        self.assertEqual(state["state"], "unreviewed")
+        self.assertEqual(state["next_generation"], 2)
+        self.assertNotIn(task["id"], next_task.completed_ids())
 
     def test_in_progress_review_returns_to_unreviewed_after_ten_hours(self):
         self.write_candidate()
