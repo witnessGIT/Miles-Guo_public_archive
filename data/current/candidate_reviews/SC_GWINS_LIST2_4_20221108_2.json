@@ -1,0 +1,65 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_4_20221108_2-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_4_20221108_2",
+  "reviewed_by": "agent-20261004T151500Z-gpt56sol-chat-c2-careful-3",
+  "entry_mode": "ordinary_chat",
+  "reviewed_at": "2026-10-04T15:20:00Z",
+  "decision": "rejected_not_target",
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/24153.html",
+    "https://gettr.com/post/p1xf3llabeb",
+    "https://rumble.com/v5aydh1-20221108-2.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "identity": {
+    "conclusion": "non-livestream meal/lifestyle video item",
+    "basis": "Exact GWINS detail title identifies a meal video, distinct from the substantive same-day archive item."
+  },
+  "date": {
+    "value": "2022-11-08",
+    "basis": "Source date checked."
+  },
+  "title": {
+    "value": "20221108_2",
+    "basis": "Source title checked."
+  },
+  "platform_ids": {
+    "gwins_page": "24153",
+    "gwins_source_video_id": "20221108_2",
+    "gettr_post_id": "p1xf3llabeb",
+    "rumble_item_id": "v5aydh1"
+  },
+  "source_relationships": [
+    {
+      "from": "https://gwins.org/cn/milesguo/24153.html",
+      "to": "https://gettr.com/post/p1xf3llabeb",
+      "type": "direct_outbound_video_link"
+    },
+    {
+      "from": "https://gwins.org/cn/milesguo/24153.html",
+      "to": "https://rumble.com/v5aydh1-20221108-2.html",
+      "type": "direct_outbound_video_link"
+    }
+  ],
+  "deduplication": {
+    "result": "not_applicable_rejected",
+    "checks": [
+      "Compared with same-day canonical LIVE_20221108_001; this is a separate lifestyle clip."
+    ]
+  },
+  "scope_limits": {
+    "playback_performed": false,
+    "media_download_performed": false,
+    "transcription_performed": false,
+    "segmentation_performed": false
+  },
+  "rejection_reason": "Outside current original-livestream target scope."
+}
