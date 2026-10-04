@@ -1,0 +1,32 @@
+{
+  "contract_version":"candidate-review-evidence-v2",
+  "task_id":"C2-REVIEW-SC_GWINS_LIST2_3_20221202_2-R001",
+  "source_candidate_id":"SC_GWINS_LIST2_3_20221202_2",
+  "reviewed_by":"agent-20261004T125231Z-chat-c2-gw3",
+  "entry_mode":"ordinary_chat",
+  "reviewed_at":"2026-10-04T13:13:00Z",
+  "decision":"rejected_not_target",
+  "canonical_live_id":null,
+  "rejection_reason":"The exact item's indexed opening explicitly describes recording another video after an earlier recording and exercise. This is positive evidence of a separately recorded update, not an original live broadcast. Its mention of the earlier recording does not make it a duplicate or continuation source for one canonical livestream.",
+  "evidence_urls":["https://gwins.org/cn/milesguo/list_2_3.html","https://www.gwins.org/cn/milesguo/24180.html"],
+  "checked_fields":["identity","date","title","platform_ids","source_relationships","deduplication"],
+  "checks":{
+    "identity":"Exact GWINS candidate 20221202_2 identifies 郭文贵 and points to numeric detail page 24180.",
+    "date":"The title and indexed opening agree on December 2; the preserved source metadata gives 2022-12-02.",
+    "title":"郭文贵2022年12月2日盖特 20221202_2; the complete longer title is retained unchanged in source_candidates.",
+    "platform_ids":{"gwins_source_video_id":"20221202_2","gwins_detail_page_id":"24180","gettr_id":null,"note":"No actual GETTR post or streaming ID was exposed in the inspected index evidence."},
+    "source_relationships":"Service evidence binds this exact item to its detail URL. The independently indexed opening describes a second recording after the earlier one.",
+    "deduplication":"Compared with SC_GWINS_LIST2_3_20221202_1 / page 24179. Distinct page, suffix, subject and explicit second-recording description support keeping both source records separate. No canonical merge; no assertion of exhaustive cross-site duplicate absence."
+  },
+  "evidence_basis":{
+    "repository_snapshot":"data/source_page_evidence/gwins/list_2_3/evidence.json",
+    "snapshot_locator":"items[source_video_id=20221202_2]",
+    "snapshot_raw_sha256":"e4888c5d5040a7be98e515ca40b7641b1f11eb32790abefb7a32cf834e407e27",
+    "additional_read":"Public search-indexed exact GWINS list page, specifically this item's recording-related opening.",
+    "access_limit":"The exact detail page was not directly readable. Recording classification is based on positive source text rather than missing access."
+  },
+  "canonical_promotion_performed":false,
+  "playback_audit_performed":false,
+  "media_download_performed":false,
+  "later_content_processing_performed":false
+}
