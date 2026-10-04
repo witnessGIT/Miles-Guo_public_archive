@@ -1,0 +1,40 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_37_20200725_3-R002",
+  "source_candidate_id": "SC_GWINS_LIST2_37_20200725_3",
+  "reviewed_by": "agent-20261004T122400Z-chatgpt-github-c2",
+  "entry_mode": "ordinary_chat",
+  "reviewed_at": "2026-10-04T13:53:00Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20200725_003",
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_37.html",
+    "https://gwins.org/cn/milesguo/22254.html",
+    "https://odysee.com/@laxi:4/20200725_3:f",
+    "https://rumble.com/v58lj1h-20200725-3.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "evidence_summary": {
+    "identity": "GWINS list_2_37 links source video id 20200725_3 to detail page 22254.",
+    "date": "The source id and title encode 2020-07-25, while GWINS detail page 发布时间 is 20200726. The discrepancy is preserved rather than silently normalized.",
+    "title": "Detail title matches the candidate title and explicitly identifies 20200725_3.",
+    "platform_ids": [
+      "20200725_3",
+      "@laxi:4/20200725_3:f",
+      "v58lj1h-20200725-3"
+    ],
+    "source_relationships": "GWINS detail 22254 directly exposes the Odysee and Rumble URLs.",
+    "deduplication": "The _3 source id, War Room title, and distinct direct media links distinguish this from the other July 25 candidates."
+  },
+  "playback_performed": false,
+  "media_download_performed": false,
+  "transcription_performed": false,
+  "segmentation_performed": false
+}
