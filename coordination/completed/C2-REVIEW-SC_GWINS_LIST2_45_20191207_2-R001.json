@@ -1,0 +1,23 @@
+{
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_45_20191207_2-R001",
+  "agent_id": "agent-20261004T091647Z-90dd416d",
+  "completed_at": "2026-10-04T11:36:12.791639+00:00",
+  "result_commit": "2506a621c0e003340dd8b952161571520b5d0302",
+  "outputs": [
+    "data/current/live_videos/c2_review_20191207_2.json",
+    "data/current/sources/c2_review_20191207_2.jsonl",
+    "data/current/media_assets/c2_review_20191207_2.jsonl",
+    "data/current/source_match_candidates/c2_review_20191207_2.jsonl",
+    "database/Miles-Guo_public_archive.sqlite3"
+  ],
+  "validation": "GWINS index and detail identity/date/title verified; direct Odysee and Rumble mirror relationships confirmed from GWINS 470; both public platform metadata records agreed on title 20191207_2, duration 6855 seconds, and 854x480; no playback, download, transcription, segmentation, or later-stage processing performed; database validation OK; 69 unit tests passed, 3 skipped for absent ffmpeg/ffprobe.",
+  "workflow_mode": "continuous-worker-v2",
+  "claim_protocol": "claim-protocol-v2",
+  "continue_after_finish": true,
+  "finish_prerequisites_revalidated": true,
+  "notes": "Task completed only after re-checking the latest repository dependency contract. Under continuous-worker-v2, refresh repository state and claim the next eligible task unless a documented stop condition applies.",
+  "kind": "candidate_promotion_review",
+  "source_candidate_id": "SC_GWINS_LIST2_45_20191207_2",
+  "review_generation": 1,
+  "review_claim_timeout_hours": 10
+}
