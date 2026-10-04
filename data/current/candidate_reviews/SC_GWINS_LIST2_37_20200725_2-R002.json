@@ -1,0 +1,40 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_37_20200725_2-R002",
+  "source_candidate_id": "SC_GWINS_LIST2_37_20200725_2",
+  "reviewed_by": "agent-20261004T122400Z-chatgpt-github-c2",
+  "entry_mode": "ordinary_chat",
+  "reviewed_at": "2026-10-04T14:09:00Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20200725_002",
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_37.html",
+    "https://gwins.org/cn/milesguo/22253.html",
+    "https://youtu.be/tMIPdc0NP84",
+    "https://rumble.com/v58lfy4-20200725-2.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "evidence_summary": {
+    "identity": "GWINS detail 22253 is the detail record linked from list_2_37 for source id 20200725_2.",
+    "date": "GWINS detail page states 发布时间 20200725, matching the source-id date.",
+    "title": "Detail title matches the candidate title for 20200725_2.",
+    "platform_ids": [
+      "20200725_2",
+      "tMIPdc0NP84",
+      "v58lfy4-20200725-2"
+    ],
+    "source_relationships": "GWINS detail 22253 directly exposes the YouTube and Rumble URLs.",
+    "deduplication": "The _2 source id, short market-visit title, and distinct direct media links distinguish this from 20200725 and 20200725_3."
+  },
+  "playback_performed": false,
+  "media_download_performed": false,
+  "transcription_performed": false,
+  "segmentation_performed": false
+}
