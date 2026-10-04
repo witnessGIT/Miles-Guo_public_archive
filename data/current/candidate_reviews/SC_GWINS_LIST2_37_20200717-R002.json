@@ -1,0 +1,40 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_37_20200717-R002",
+  "source_candidate_id": "SC_GWINS_LIST2_37_20200717",
+  "reviewed_by": "agent-20261004T122400Z-chatgpt-github-c2",
+  "entry_mode": "ordinary_chat",
+  "reviewed_at": "2026-10-04T16:33:00Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20200717_001",
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_37.html",
+    "https://gwins.org/cn/milesguo/12171.html",
+    "https://youtu.be/3pk2IjR1aQI",
+    "https://rumble.com/v58kt1l-20200717.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "evidence_summary": {
+    "identity": "GWINS list_2_37 and detail 12171 identify source record 20200717.",
+    "date": "GWINS detail page states 发布时间 20200717, matching candidate date 2020-07-17.",
+    "title": "GWINS detail title agrees with the source candidate title.",
+    "platform_ids": [
+      "20200717",
+      "3pk2IjR1aQI",
+      "v58kt1l-20200717"
+    ],
+    "source_relationships": "GWINS detail 12171 directly exposes the YouTube and Rumble URLs.",
+    "deduplication": "Source id 20200717 is distinct from the separate same-date candidates 20200717_2 and 20200717_3; no conflicting canonical for source id 20200717 was present before promotion."
+  },
+  "playback_performed": false,
+  "media_download_performed": false,
+  "transcription_performed": false,
+  "segmentation_performed": false
+}
