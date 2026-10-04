@@ -1,0 +1,89 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_3_20221203_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_3_20221203_1",
+  "reviewed_by": "agent-20261004T125231Z-chat-c2-gw3",
+  "entry_mode": "ordinary_chat",
+  "reviewed_at": "2026-10-04T15:30:43.278096+00:00",
+  "decision": "rejected_not_target",
+  "canonical_live_id": null,
+  "rejection_reason": "This exact December 3 item is positively identified as a separately published short-video update rather than the original-livestream target. In the dated opening, the speaker explains that meetings delayed publication and explicitly calls the current item a late-posted small video; in the closing he separately arranges to meet viewers at tomorrow's livestream. The actual GWINS link resolves the item to the speaker's native video-bearing GETTR post p20kesebd11, with matching text and December 3 creation date. The decision uses that combined, item-specific self-description and provenance, not the generic 盖特 label, /post/ route, missing p_type, or short duration alone. The candidate is retained for possible future non-livestream scope, not deleted or judged false.",
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_3.html",
+    "https://www.gwins.org/cn/milesguo/24181.html",
+    "https://gettr.com/post/p20kesebd11",
+    "https://api.gettr.com/u/post/p20kesebd11",
+    "https://rumble.com/v5b07yd-20221203-1.html"
+  ],
+  "checked_fields": ["identity", "date", "title", "platform_ids", "source_relationships", "deduplication"],
+  "checks": {
+    "identity": {
+      "conclusion": "Separately published December 3 short-video update; not promoted into original-livestream canonicals.",
+      "positive_basis": "The exact page's dated opening refers to the current small video's delayed publication after meetings, rather than describing somebody else's video. Its closing refers separately to the following day's livestream. These two first-person passages were reviewed in conjunction with matching native-post provenance.",
+      "not_used_as_proof": ["The site's generic video navigation label", "A future livestream reference by itself", "GETTR /post/ path by itself", "Absent platform p_type", "Duration alone"]
+    },
+    "date": {
+      "value": "2022-12-03",
+      "basis": "Original candidate date/source token 20221203_1, exact GWINS page title and dated opening agree. GETTR created_at_epoch_ms 1670092229348 converts to 2022-12-03T18:30:29.348Z. This is the post's creation time, not an inferred livestream start."
+    },
+    "title": {
+      "candidate_title": "郭文贵2022年12月3日盖特 20221203_1 尊敬的战友们好！国内的疫苗灾难正在走向极端恶化的程度，新中国联邦人……将互相保护，帮助我们的战友，一切都已经开始！",
+      "basis": "The exact original candidate, clean detail-page title, and GETTR text prefix identify the same item. Archived statements are attributed source text, not endorsed factual findings."
+    },
+    "platform_ids": {
+      "gwins_source_video_id": "20221203_1",
+      "gwins_detail_page_id": "24181",
+      "gettr_post_id": "p20kesebd11",
+      "gettr_uploader_id": "milesguo",
+      "gettr_object_type": "post",
+      "gettr_p_type": null,
+      "rumble_item_id": "v5b07yd",
+      "note": "IDs are from actual preserved outbound anchors and the exact returned GETTR post object. Missing p_type remains unknown; no streaming URL was substituted."
+    },
+    "source_relationships": {
+      "index_to_detail": "The candidate's preserved detail_url maps list_2_3 item 20221203_1 to page 24181.",
+      "detail_to_platforms": "The HTTP-200 page explicitly links GETTR p20kesebd11 and the full Rumble v5b07yd-20221203-1 URL. GETTR returned the exact post ID, uploader milesguo, matching text, video/original-video fields and no repost or external-embed field.",
+      "limit": "An explicit link is provenance, not decoded-media equivalence or successful playback."
+    },
+    "deduplication": {
+      "result": "No canonical merge performed; standalone short-video candidate retained.",
+      "bounded_comparison": "The Dec 3 candidate has detail identity 24181 and post p20kesebd11. It is not the Dec 2 recording candidate 20221202_1/page 24179, and is not the separately catalogued Dec 4 original livestream 20221204_1/page 24176/GETTR streaming p20mx0i9125. The next-day livestream reference is not used to merge the recordings. Exact original candidate identity remains unchanged.",
+      "limit": "This is a bounded candidate/neighbor provenance check, not a claim of Internet-wide uniqueness or a new cross-source media match."
+    }
+  },
+  "evidence_observations": [
+    {
+      "kind": "repository_source_candidate",
+      "path": "data/current/source_candidates/gwins/list_2_3.jsonl",
+      "locator": "id=SC_GWINS_LIST2_3_20221203_1",
+      "git_blob_sha": "17252de804e68dfa0cb9d95fe2094c8fe02a7331"
+    },
+    {
+      "kind": "claim_bound_public_page_metadata",
+      "path": "data/source_page_evidence/c2_metadata/C2-REVIEW-SC_GWINS_LIST2_3_20221203_1-R001/efb806113d59c116.json",
+      "request_sha256": "efb806113d59c116636b08841a6328c67c8aaa40092a57079df247635db76271",
+      "raw_sha256": "828c745965281810eced0ace32f70fc2d6efd1c20bd02ed3804cec58e6304562",
+      "fetched_at": "2026-10-04T15:27:36.370407+00:00",
+      "locator": "metadata_evidence.identity_type_cues paragraph_index=27 and paragraph_index=50",
+      "observation": "The first-person opening labels the current small video as posted late because of meetings; the closing separately points to tomorrow's livestream. The new origin-context-v2 profile recovers the opening that the narrower prior cue matcher omitted.",
+      "encoding_limit": "The page reports 17 replacement characters in the template. Title and the relied-upon excerpts are clean. Damaged fields and absent matches were not used as evidence."
+    },
+    {
+      "kind": "claim_bound_public_gettr_metadata",
+      "path": "data/source_page_evidence/c2_platform/C2-REVIEW-SC_GWINS_LIST2_3_20221203_1-R001/adefe386b4ef14c8.json",
+      "raw_sha256": "74188d3dcb17f699fe2856e18b5dbfa96496053d55b9ccfa9c38b419789c54eb",
+      "fetched_at": "2026-10-04T14:50:31.820754+00:00",
+      "observation": "Returned ID p20kesebd11, uploader milesguo, matching text, dated creation timestamp and native video fields corroborate exact item identity. Reported duration 573 seconds is platform metadata, not a measurement and not the rejection basis."
+    }
+  ],
+  "decision_scope": "Final catalog-target decision for this source candidate under current original-livestream scope, not a forensic claim about every possible historical rebroadcast.",
+  "original_source_candidate_retained": true,
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "transcription_performed": false,
+  "transcript_import_performed": false,
+  "segmentation_performed": false,
+  "later_content_processing_performed": false,
+  "content_truth_evaluation_performed": false
+}
