@@ -1,0 +1,65 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_4_20221104_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_4_20221104_1",
+  "reviewed_by": "agent-20261004T151500Z-gpt56sol-chat-c2-careful-3",
+  "entry_mode": "ordinary_chat",
+  "reviewed_at": "2026-10-04T15:28:00Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20221104_001",
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/24136.html",
+    "https://gettr.com/post/p1wskwg2414",
+    "https://rumble.com/v5ay9e5-20221104-1.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "identity": {
+    "conclusion": "one distinct target video item",
+    "basis": "GWINS detail exposes stable GETTR/Rumble targets."
+  },
+  "date": {
+    "value": "2022-11-04",
+    "basis": "Source date checked."
+  },
+  "title": {
+    "value": "20221104_1",
+    "basis": "Source title checked."
+  },
+  "platform_ids": {
+    "gwins_page": "24136",
+    "gwins_source_video_id": "20221104_1",
+    "gettr_post_id": "p1wskwg2414",
+    "rumble_item_id": "v5ay9e5"
+  },
+  "source_relationships": [
+    {
+      "from": "https://gwins.org/cn/milesguo/24136.html",
+      "to": "https://gettr.com/post/p1wskwg2414",
+      "type": "direct_outbound_video_link"
+    },
+    {
+      "from": "https://gwins.org/cn/milesguo/24136.html",
+      "to": "https://rumble.com/v5ay9e5-20221104-1.html",
+      "type": "direct_outbound_video_link"
+    }
+  ],
+  "deduplication": {
+    "result": "no_existing_canonical_match",
+    "checks": [
+      "No current canonical for 2022-11-04 existed before review."
+    ]
+  },
+  "scope_limits": {
+    "playback_performed": false,
+    "media_download_performed": false,
+    "transcription_performed": false,
+    "segmentation_performed": false
+  }
+}
