@@ -1,0 +1,30 @@
+{
+  "bug_id": "BUG_20261005T001808Z_C1-GWINS-detail-24192_c2-missing-reviewed-at",
+  "status": "open",
+  "requires_admin": true,
+  "created_at": "2026-10-05T00:18:08Z",
+  "reported_by_agent": "agent-20261005T0014Z-gpt56sol-gwins-24192",
+  "reported_by_login": "witnessGIT",
+  "task_id": "C1-GWINS-detail-24192",
+  "severity": "high",
+  "category": "candidate_review_evidence_contract",
+  "summary": "C1 validation is blocked because four C2 completion artifacts lack a valid reviewed_at timestamp, causing candidate-review evidence validation to fail before build_db.py.",
+  "evidence": {
+    "failing_workflow_run_id": 37246774640,
+    "failing_workflow_job_id": 111566111874,
+    "validation_errors": [
+      "coordination/completed/C2-REVIEW-SC_GWINS_LIST2_37_20200715-R002.json: Candidate review artifact requires a valid reviewed_at timestamp.",
+      "coordination/completed/C2-REVIEW-SC_GWINS_LIST2_37_20200716_1-R002.json: Candidate review artifact requires a valid reviewed_at timestamp.",
+      "coordination/completed/C2-REVIEW-SC_GWINS_LIST2_37_20200716_2-R002.json: Candidate review artifact requires a valid reviewed_at timestamp.",
+      "coordination/completed/C2-REVIEW-SC_GWINS_LIST2_37_20200717_3-R002.json: Candidate review artifact requires a valid reviewed_at timestamp."
+    ],
+    "active_owner_agent": "agent-20261004T235700Z-gpt56sol-chat-c2v2"
+  },
+  "affected_paths": [
+    "coordination/completed/C2-REVIEW-SC_GWINS_LIST2_37_20200715-R002.json",
+    "coordination/completed/C2-REVIEW-SC_GWINS_LIST2_37_20200716_1-R002.json",
+    "coordination/completed/C2-REVIEW-SC_GWINS_LIST2_37_20200716_2-R002.json",
+    "coordination/completed/C2-REVIEW-SC_GWINS_LIST2_37_20200717_3-R002.json"
+  ],
+  "worker_action": "Did not edit another agent's C2 completion artifacts. C1-GWINS-detail-24192 remains in_progress until a later clean repository validation passes."
+}
