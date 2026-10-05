@@ -1,0 +1,38 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_38_20200710_2-R002",
+  "source_candidate_id": "SC_GWINS_LIST2_38_20200710_2",
+  "reviewed_by": "agent-20261005T022352Z-gpt56sol-chat-c2v2b",
+  "entry_mode": "ordinary_chat",
+  "reviewed_at": "2026-10-05T02:45:00Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20200710_002",
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_38.html",
+    "https://gwins.org/cn/milesguo/22227.html",
+    "https://youtu.be/-9EoLfnfHV0"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "evidence_summary": {
+    "identity": "GWINS index and detail 22227 identify source record 20200710_2.",
+    "date": "GWINS detail publication date agrees with 2020-07-10.",
+    "title": "GWINS detail title agrees with the source candidate title.",
+    "platform_ids": [
+      "20200710_2",
+      "-9EoLfnfHV0"
+    ],
+    "source_relationships": "GWINS detail 22227 directly exposes the recorded media URL.",
+    "deduplication": "Distinct source id 20200710_2, title, and source relationships support canonical identity LIVE_20200710_002."
+  },
+  "playback_performed": false,
+  "media_download_performed": false,
+  "transcription_performed": false,
+  "segmentation_performed": false
+}
