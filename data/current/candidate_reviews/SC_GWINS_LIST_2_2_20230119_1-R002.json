@@ -1,0 +1,41 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST_2_2_20230119_1-R002",
+  "source_candidate_id": "SC_GWINS_LIST_2_2_20230119_1",
+  "reviewed_by": "agent-20261004T133000Z-gpt56sol-chat-c2-serious",
+  "entry_mode": "ordinary_chat",
+  "reviewed_at": "2026-10-05T13:52:00Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20230119_001",
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_2.html",
+    "https://gwins.org/cn/milesguo/24208.html",
+    "https://miles.md/fnn",
+    "https://gettr.com/post/p25kxcq4dec",
+    "https://rumble.com/v5b162s-20230119-1.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "evidence_summary": {
+    "identity": "Repository GWINS source-page evidence identifies detail 24208 / source 20230119_1; miles.md presents the same dated item and source link.",
+    "date": "GWINS candidate date and miles.md record agree on 2023-01-19.",
+    "title": "GWINS candidate title and miles.md item title agree on the same 2023-01-19 message.",
+    "platform_ids": [
+      "20230119_1",
+      "p25kxcq4dec",
+      "v5b162s"
+    ],
+    "source_relationships": "miles.md/fnn lists GETTR p25kxcq4dec and Rumble v5b162s and points to GWINS 24208; GETTR indexing independently matches the same title/date.",
+    "deduplication": "Fresh repository searches found no LIVE_20230119_001, p25kxcq4dec, v5b162s, or prior canonical output for 20230119_1."
+  },
+  "playback_performed": false,
+  "media_download_performed": false,
+  "transcription_performed": false,
+  "segmentation_performed": false
+}
