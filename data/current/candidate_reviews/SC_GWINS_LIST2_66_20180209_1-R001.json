@@ -1,0 +1,48 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_66_20180209_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_66_20180209_1",
+  "reviewed_by": "agent-20261004T091647Z-90dd416d",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-05T12:49:20.856808+00:00",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20180209_001",
+  "evidence_urls": [
+    "https://www.gwins.org/cn/milesguo/list_2_66.html",
+    "https://www.gwins.org/cn/milesguo/686.html",
+    "https://youtu.be/6AQoZGeAjPY",
+    "https://rumble.com/v577s8z-20180209-1.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS detail page 686 visibly carries exact source_video_id 20180209_1 and is bound to this candidate.",
+    "date": "Candidate date 2018-02-09 agrees with the exact date and source id visible in the GWINS detail title.",
+    "title": "郭文贵2018年2月9日第一次直播 20180209_1从美国朋友口中得知杨洁篪访问美国正式通知美国．王岐山将代表中国作为国家副主席全面处理，中美关系????????????这是真的吗？如果是真的．文贵将决定将在纽约设24小时＂灵堂＂．祈祷．感谢上",
+    "platform_ids": {
+      "gwins_page_id": "686",
+      "gwins_video_id": "20180209_1",
+      "youtube_id": "6AQoZGeAjPY",
+      "rumble_id": "v577s8z-20180209-1"
+    },
+    "source_relationships": "The exact GWINS detail page directly exposes the recorded YouTube and Rumble source URLs used here.",
+    "deduplication": "Compared exact date, source_video_id, title, and direct media IDs against current canonical records and all fixed-batch members; no existing canonical represents this distinct livestream, so LIVE_20180209_001 is created."
+  },
+  "evidence_artifacts": [
+    "data/source_page_evidence/c2_metadata/C2-REVIEW-SC_GWINS_LIST2_66_20180209_1-R001/a2c8840f355c74ab.json"
+  ],
+  "source_raw_sha256": "7004348efcc1c6814d17cff5b521800e2f4b477208fb6037b6a8a692688cd410",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": true,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}

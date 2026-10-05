@@ -1,0 +1,48 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_67_20171126_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_67_20171126_1",
+  "reviewed_by": "agent-20261004T091647Z-90dd416d",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-05T12:49:20.878811+00:00",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20171126_001",
+  "evidence_urls": [
+    "https://www.gwins.org/cn/milesguo/list_2_67.html",
+    "https://www.gwins.org/cn/milesguo/638.html",
+    "https://www.youtube.com/watch?v=wvcCY_DJK-s",
+    "https://rumble.com/v577nk5-20171126-1.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS detail page 638 visibly carries exact source_video_id 20171126_1 and is bound to this candidate.",
+    "date": "Candidate date 2017-11-26 agrees with the exact date and source id visible in the GWINS detail title.",
+    "title": "郭文贵2017年11月26日第一次直播 20171126_1在Livestream 试播",
+    "platform_ids": {
+      "gwins_page_id": "638",
+      "gwins_video_id": "20171126_1",
+      "youtube_id": "wvcCY_DJK-s",
+      "rumble_id": "v577nk5-20171126-1"
+    },
+    "source_relationships": "The exact GWINS detail page directly exposes the recorded YouTube and Rumble source URLs used here.",
+    "deduplication": "Compared exact date, source_video_id, title, and direct media IDs against current canonical records and all fixed-batch members; no existing canonical represents this distinct livestream, so LIVE_20171126_001 is created."
+  },
+  "evidence_artifacts": [
+    "data/source_page_evidence/c2_metadata/C2-REVIEW-SC_GWINS_LIST2_67_20171126_1-R001/939c3a4686e09c68.json"
+  ],
+  "source_raw_sha256": "33ae99760274e9c61fdf22b1c32f7ec8720bb07c874597860c60c88b2033bae4",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": true,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}

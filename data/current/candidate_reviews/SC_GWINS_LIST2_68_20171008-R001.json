@@ -1,0 +1,48 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_68_20171008-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_68_20171008",
+  "reviewed_by": "agent-20261004T091647Z-90dd416d",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-05T12:49:20.896478+00:00",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20171008_001",
+  "evidence_urls": [
+    "https://www.gwins.org/cn/milesguo/list_2_68.html",
+    "https://www.gwins.org/cn/milesguo/697.html",
+    "https://www.youtube.com/watch?v=CXmlv3-PVaY",
+    "https://rumble.com/v577ei5-20171008.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS detail page 697 visibly carries exact source_video_id 20171008 and is bound to this candidate.",
+    "date": "Candidate date 2017-10-08 agrees with the exact date and source id visible in the GWINS detail title.",
+    "title": "郭文贵2017年10月8日 20171008吴征杨澜将引爆中美巨大政治丑闻",
+    "platform_ids": {
+      "gwins_page_id": "697",
+      "gwins_video_id": "20171008",
+      "youtube_id": "CXmlv3-PVaY",
+      "rumble_id": "v577ei5-20171008"
+    },
+    "source_relationships": "The exact GWINS detail page directly exposes the recorded YouTube and Rumble source URLs used here.",
+    "deduplication": "Compared exact date, source_video_id, title, and direct media IDs against current canonical records and all fixed-batch members; no existing canonical represents this distinct livestream, so LIVE_20171008_001 is created."
+  },
+  "evidence_artifacts": [
+    "data/source_page_evidence/c2_metadata/C2-REVIEW-SC_GWINS_LIST2_68_20171008-R001/6107c001056998a3.json"
+  ],
+  "source_raw_sha256": "e4ae895929e3c3d2172b68342f5f249ffbf635a82fb57f917cd6b35670c25109",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": true,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}

@@ -1,0 +1,49 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_68_20170928-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_68_20170928",
+  "reviewed_by": "agent-20261004T091647Z-90dd416d",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-05T12:49:20.893363+00:00",
+  "decision": "rejected_not_target",
+  "canonical_live_id": null,
+  "evidence_urls": [
+    "https://www.gwins.org/cn/milesguo/list_2_68.html",
+    "https://www.gwins.org/cn/milesguo/23584.html",
+    "https://youtu.be/sEwe_L22IYA",
+    "https://rumble.com/v577cx6-20170928.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS detail page 23584 visibly carries exact source_video_id 20170928 and is bound to this candidate.",
+    "date": "Candidate date 2017-09-28 agrees with the exact date and source id visible in the GWINS detail title.",
+    "title": "郭文贵2017年9月28日视频 20170928国内封网，放出曲龙，游虎给虎看！",
+    "platform_ids": {
+      "gwins_page_id": "23584",
+      "gwins_video_id": "20170928",
+      "youtube_id": "sEwe_L22IYA",
+      "rumble_id": "v577cx6-20170928"
+    },
+    "source_relationships": "The exact GWINS detail page directly exposes the recorded YouTube and Rumble source URLs used here.",
+    "deduplication": "Compared the exact source id, date, title, and current-item context with the other fixed-batch candidates; retained as a distinct non-livestream candidate and did not merge it into a canonical live."
+  },
+  "evidence_artifacts": [
+    "data/source_page_evidence/c2_metadata/C2-REVIEW-SC_GWINS_LIST2_68_20170928-R001/c2ca943002db5140.json"
+  ],
+  "source_raw_sha256": "9aa4b01e7bc0524b7fde5fb60fcb884a73def6dfd3458e6b416bf1516eaade79",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false,
+  "rejection_reason": "The exact GWINS title and current-item context identify a standalone recorded video/update, not an original livestream."
+}

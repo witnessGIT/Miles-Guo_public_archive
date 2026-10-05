@@ -1,0 +1,48 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_66_20180205_3-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_66_20180205_3",
+  "reviewed_by": "agent-20261004T091647Z-90dd416d",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-05T12:49:20.849996+00:00",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20180205_003",
+  "evidence_urls": [
+    "https://www.gwins.org/cn/milesguo/list_2_66.html",
+    "https://www.gwins.org/cn/milesguo/681.html",
+    "https://www.youtube.com/watch?v=mKdzqSGGLbU",
+    "https://rumble.com/v577r5d-20180205-3.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS detail page 681 visibly carries exact source_video_id 20180205_3 and is bound to this candidate.",
+    "date": "Candidate date 2018-02-05 agrees with the exact date and source id visible in the GWINS detail title.",
+    "title": "郭文贵2018年2月5日第三次直播 20180205_3文贵现金悬赏．提供假民运分子利用假证屁文件．欺骗同胞．违法美国法律．给同胞造成伤害和损失证据！希望所有的战友们口口相传共同打击假民运！假政庇！",
+    "platform_ids": {
+      "gwins_page_id": "681",
+      "gwins_video_id": "20180205_3",
+      "youtube_id": "mKdzqSGGLbU",
+      "rumble_id": "v577r5d-20180205-3"
+    },
+    "source_relationships": "The exact GWINS detail page directly exposes the recorded YouTube and Rumble source URLs used here.",
+    "deduplication": "Compared exact date, source_video_id, title, and direct media IDs against current canonical records and all fixed-batch members; no existing canonical represents this distinct livestream, so LIVE_20180205_003 is created."
+  },
+  "evidence_artifacts": [
+    "data/source_page_evidence/c2_metadata/C2-REVIEW-SC_GWINS_LIST2_66_20180205_3-R001/a2c8840f355c74ab.json"
+  ],
+  "source_raw_sha256": "be6d29ad3e0c261d37b095c85846e74ee611b03563c91fe640500f382d21420c",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": true,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}

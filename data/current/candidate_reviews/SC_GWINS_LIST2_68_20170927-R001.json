@@ -1,0 +1,49 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_68_20170927-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_68_20170927",
+  "reviewed_by": "agent-20261004T091647Z-90dd416d",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-05T12:49:20.893071+00:00",
+  "decision": "rejected_not_target",
+  "canonical_live_id": null,
+  "evidence_urls": [
+    "https://www.gwins.org/cn/milesguo/list_2_68.html",
+    "https://www.gwins.org/cn/milesguo/23583.html",
+    "https://youtu.be/UujgKWKJWNc",
+    "https://rumble.com/v577ctg-20170927.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS detail page 23583 visibly carries exact source_video_id 20170927 and is bound to this candidate.",
+    "date": "Candidate date 2017-09-27 agrees with the exact date and source id visible in the GWINS detail title.",
+    "title": "郭文贵2017年9月27日视频 20170927不要开会，不要搞募捐，要行动！",
+    "platform_ids": {
+      "gwins_page_id": "23583",
+      "gwins_video_id": "20170927",
+      "youtube_id": "UujgKWKJWNc",
+      "rumble_id": "v577ctg-20170927"
+    },
+    "source_relationships": "The exact GWINS detail page directly exposes the recorded YouTube and Rumble source URLs used here.",
+    "deduplication": "Compared the exact source id, date, title, and current-item context with the other fixed-batch candidates; retained as a distinct non-livestream candidate and did not merge it into a canonical live."
+  },
+  "evidence_artifacts": [
+    "data/source_page_evidence/c2_metadata/C2-REVIEW-SC_GWINS_LIST2_68_20170927-R001/c2ca943002db5140.json"
+  ],
+  "source_raw_sha256": "3f71f61e1a4095deccf208685dfa2923f6ff0516566b39660df4796299b8086a",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false,
+  "rejection_reason": "The exact GWINS title and current-item context identify a standalone recorded video/update, not an original livestream."
+}

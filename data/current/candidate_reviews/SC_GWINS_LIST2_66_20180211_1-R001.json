@@ -1,0 +1,48 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_66_20180211_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_66_20180211_1",
+  "reviewed_by": "agent-20261004T091647Z-90dd416d",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-05T12:49:20.862877+00:00",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20180211_001",
+  "evidence_urls": [
+    "https://www.gwins.org/cn/milesguo/list_2_66.html",
+    "https://www.gwins.org/cn/milesguo/687.html",
+    "https://youtu.be/q2ew6d3qWgw",
+    "https://rumble.com/v577srp-20180211-1.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS detail page 687 visibly carries exact source_video_id 20180211_1 and is bound to this candidate.",
+    "date": "Candidate date 2018-02-11 agrees with the exact date and source id visible in the GWINS detail title.",
+    "title": "郭文贵2018年2月11日 20180211_1为什么这么多战友支持文贵",
+    "platform_ids": {
+      "gwins_page_id": "687",
+      "gwins_video_id": "20180211_1",
+      "youtube_id": "q2ew6d3qWgw",
+      "rumble_id": "v577srp-20180211-1"
+    },
+    "source_relationships": "The exact GWINS detail page directly exposes the recorded YouTube and Rumble source URLs used here.",
+    "deduplication": "Compared exact date, source_video_id, title, and direct media IDs against current canonical records and all fixed-batch members; no existing canonical represents this distinct livestream, so LIVE_20180211_001 is created."
+  },
+  "evidence_artifacts": [
+    "data/source_page_evidence/c2_metadata/C2-REVIEW-SC_GWINS_LIST2_66_20180211_1-R001/a2c8840f355c74ab.json"
+  ],
+  "source_raw_sha256": "0e651fc627414e02b070d21b9734febc1c0e2087d36a85827cbfb0cb71cc954e",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": true,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}

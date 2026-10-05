@@ -1,0 +1,48 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_67_20171115_2-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_67_20171115_2",
+  "reviewed_by": "agent-20261004T091647Z-90dd416d",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-05T12:49:20.873409+00:00",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20171115_002",
+  "evidence_urls": [
+    "https://www.gwins.org/cn/milesguo/list_2_67.html",
+    "https://www.gwins.org/cn/milesguo/632.html",
+    "https://www.youtube.com/watch?v=eaJWyYCDaVQ",
+    "https://rumble.com/v577mp1-20171115-2.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS detail page 632 visibly carries exact source_video_id 20171115_2 and is bound to this candidate.",
+    "date": "Candidate date 2017-11-15 agrees with the exact date and source id visible in the GWINS detail title.",
+    "title": "郭文贵2017年11月15日第二次直播 20171115_2文贵与网友分享迈 阿密的穷人区新发展出来的新的设计区，这 才是真正地产开发商该干的事！创造财富以 报社会！并该恶帮穷从善！",
+    "platform_ids": {
+      "gwins_page_id": "632",
+      "gwins_video_id": "20171115_2",
+      "youtube_id": "eaJWyYCDaVQ",
+      "rumble_id": "v577mp1-20171115-2"
+    },
+    "source_relationships": "The exact GWINS detail page directly exposes the recorded YouTube and Rumble source URLs used here.",
+    "deduplication": "Compared exact date, source_video_id, title, and direct media IDs against current canonical records and all fixed-batch members; no existing canonical represents this distinct livestream, so LIVE_20171115_002 is created."
+  },
+  "evidence_artifacts": [
+    "data/source_page_evidence/c2_metadata/C2-REVIEW-SC_GWINS_LIST2_67_20171115_2-R001/ea1195c14b83901f.json"
+  ],
+  "source_raw_sha256": "f105db731413073cb51e99d39c21ca916067ebc37852014458696ae743bcb6fa",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": true,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}

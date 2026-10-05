@@ -1,0 +1,48 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_66_20180210_3-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_66_20180210_3",
+  "reviewed_by": "agent-20261004T091647Z-90dd416d",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-05T12:49:20.859948+00:00",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20180210_003",
+  "evidence_urls": [
+    "https://www.gwins.org/cn/milesguo/list_2_66.html",
+    "https://www.gwins.org/cn/milesguo/713.html",
+    "https://www.youtube.com/watch?v=t59qbiMIq-4",
+    "https://rumble.com/v577slw-20180210-3.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS detail page 713 visibly carries exact source_video_id 20180210_3 and is bound to this candidate.",
+    "date": "Candidate date 2018-02-10 agrees with the exact date and source id visible in the GWINS detail title.",
+    "title": "郭文贵2018年2月10日第三次直播 20180210_3钓鱼网站骗子韦石，屎诺，朋友骗子陈军，民主骗子李伟 东，流氓骗子袁建彬与吴征时什么关系？",
+    "platform_ids": {
+      "gwins_page_id": "713",
+      "gwins_video_id": "20180210_3",
+      "youtube_id": "t59qbiMIq-4",
+      "rumble_id": "v577slw-20180210-3"
+    },
+    "source_relationships": "The exact GWINS detail page directly exposes the recorded YouTube and Rumble source URLs used here.",
+    "deduplication": "Compared exact date, source_video_id, title, and direct media IDs against current canonical records and all fixed-batch members; no existing canonical represents this distinct livestream, so LIVE_20180210_003 is created."
+  },
+  "evidence_artifacts": [
+    "data/source_page_evidence/c2_metadata/C2-REVIEW-SC_GWINS_LIST2_66_20180210_3-R001/a2c8840f355c74ab.json"
+  ],
+  "source_raw_sha256": "101164602b0fbd41684635a3c796590a08c51ef326059eddf57efc352ac6388f",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": true,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}

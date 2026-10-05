@@ -1,0 +1,48 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_66_20180208-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_66_20180208",
+  "reviewed_by": "agent-20261004T091647Z-90dd416d",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-05T12:49:20.855263+00:00",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20180208_001",
+  "evidence_urls": [
+    "https://www.gwins.org/cn/milesguo/list_2_66.html",
+    "https://www.gwins.org/cn/milesguo/684.html",
+    "https://www.youtube.com/watch?v=uxOMPHpX7Yw",
+    "https://rumble.com/v577s7h-20180208.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS detail page 684 visibly carries exact source_video_id 20180208 and is bound to this candidate.",
+    "date": "Candidate date 2018-02-08 agrees with the exact date and source id visible in the GWINS detail title.",
+    "title": "郭文贵2018年2月8日 20180208文贵报平安视频，再谈陈军的虚伪与荒唐，及现在各方形势表明，中国的经济出现大问题，中国未来的一年将出现巨大的变数和不稳定; 习主席危险，盗国贼可能将成功，我们",
+    "platform_ids": {
+      "gwins_page_id": "684",
+      "gwins_video_id": "20180208",
+      "youtube_id": "uxOMPHpX7Yw",
+      "rumble_id": "v577s7h-20180208"
+    },
+    "source_relationships": "The exact GWINS detail page directly exposes the recorded YouTube and Rumble source URLs used here.",
+    "deduplication": "Compared exact date, source_video_id, title, and direct media IDs against current canonical records and all fixed-batch members; no existing canonical represents this distinct livestream, so LIVE_20180208_001 is created."
+  },
+  "evidence_artifacts": [
+    "data/source_page_evidence/c2_metadata/C2-REVIEW-SC_GWINS_LIST2_66_20180208-R001/a2c8840f355c74ab.json"
+  ],
+  "source_raw_sha256": "23dee11d58d454fcc5f8daf9870df94d7b4a92dd7ea117a59db5cfcd204f69a5",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": true,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}

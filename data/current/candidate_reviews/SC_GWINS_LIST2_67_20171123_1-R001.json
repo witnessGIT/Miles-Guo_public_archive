@@ -1,0 +1,48 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_67_20171123_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_67_20171123_1",
+  "reviewed_by": "agent-20261004T091647Z-90dd416d",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-05T12:49:20.877363+00:00",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20171123_001",
+  "evidence_urls": [
+    "https://www.gwins.org/cn/milesguo/list_2_67.html",
+    "https://www.gwins.org/cn/milesguo/739.html",
+    "https://www.youtube.com/watch?v=6OqujQKoC4I",
+    "https://rumble.com/v577nca-20171123-1.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS detail page 739 visibly carries exact source_video_id 20171123_1 and is bound to this candidate.",
+    "date": "Candidate date 2017-11-23 agrees with the exact date and source id visible in the GWINS detail title.",
+    "title": "郭文贵2017年11月23日第一次直播 20171123_1就近况回答明镜电视追问",
+    "platform_ids": {
+      "gwins_page_id": "739",
+      "gwins_video_id": "20171123_1",
+      "youtube_id": "6OqujQKoC4I",
+      "rumble_id": "v577nca-20171123-1"
+    },
+    "source_relationships": "The exact GWINS detail page directly exposes the recorded YouTube and Rumble source URLs used here.",
+    "deduplication": "Compared exact date, source_video_id, title, and direct media IDs against current canonical records and all fixed-batch members; no existing canonical represents this distinct livestream, so LIVE_20171123_001 is created."
+  },
+  "evidence_artifacts": [
+    "data/source_page_evidence/c2_metadata/C2-REVIEW-SC_GWINS_LIST2_67_20171123_1-R001/939c3a4686e09c68.json"
+  ],
+  "source_raw_sha256": "3c854cc1a0f01d568e015df5bca44fb053d122aa017401e934a28ce6fecafc95",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": true,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}

@@ -1,0 +1,49 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_67_20180118-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_67_20180118",
+  "reviewed_by": "agent-20261004T091647Z-90dd416d",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-05T12:49:20.888008+00:00",
+  "decision": "rejected_not_target",
+  "canonical_live_id": null,
+  "evidence_urls": [
+    "https://www.gwins.org/cn/milesguo/list_2_67.html",
+    "https://www.gwins.org/cn/milesguo/23626.html",
+    "https://youtu.be/45Z1an8qN_M",
+    "https://rumble.com/v577pqt-20180118.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS detail page 23626 visibly carries exact source_video_id 20180118 and is bound to this candidate.",
+    "date": "Candidate date 2018-01-18 agrees with the exact date and source id visible in the GWINS detail title.",
+    "title": "郭文贵2018年1月18日视频 20180118时间飞逝 文贵先生宠物狗snow的成长全记录",
+    "platform_ids": {
+      "gwins_page_id": "23626",
+      "gwins_video_id": "20180118",
+      "youtube_id": "45Z1an8qN_M",
+      "rumble_id": "v577pqt-20180118"
+    },
+    "source_relationships": "The exact GWINS detail page directly exposes the recorded YouTube and Rumble source URLs used here.",
+    "deduplication": "Compared the exact source id, date, title, and current-item context with the other fixed-batch candidates; retained as a distinct non-livestream candidate and did not merge it into a canonical live."
+  },
+  "evidence_artifacts": [
+    "data/source_page_evidence/c2_metadata/C2-REVIEW-SC_GWINS_LIST2_67_20180118-R001/c2ca943002db5140.json"
+  ],
+  "source_raw_sha256": "7a74d0214d912ba94d5037af1c77a8c692e6758e53a100379cbbc87bb885ae43",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false,
+  "rejection_reason": "The exact GWINS title and current-item context identify a standalone recorded video/update, not an original livestream."
+}

@@ -1,0 +1,48 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_66_20180212_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_66_20180212_1",
+  "reviewed_by": "agent-20261004T091647Z-90dd416d",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-05T12:49:20.863989+00:00",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20180212_001",
+  "evidence_urls": [
+    "https://www.gwins.org/cn/milesguo/list_2_66.html",
+    "https://www.gwins.org/cn/milesguo/688.html",
+    "https://youtu.be/sV96FyCljTw",
+    "https://rumble.com/v577t05-20180212-1.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS detail page 688 visibly carries exact source_video_id 20180212_1 and is bound to this candidate.",
+    "date": "Candidate date 2018-02-12 agrees with the exact date and source id visible in the GWINS detail title.",
+    "title": "郭文贵2018年2月12日 20180212_1郭文贵首次在郭媒体上直播！放出博讯拿钱删帖证据！对陈军做最后一次说明！大量网友互动内中有猛料！",
+    "platform_ids": {
+      "gwins_page_id": "688",
+      "gwins_video_id": "20180212_1",
+      "youtube_id": "sV96FyCljTw",
+      "rumble_id": "v577t05-20180212-1"
+    },
+    "source_relationships": "The exact GWINS detail page directly exposes the recorded YouTube and Rumble source URLs used here.",
+    "deduplication": "Compared exact date, source_video_id, title, and direct media IDs against current canonical records and all fixed-batch members; no existing canonical represents this distinct livestream, so LIVE_20180212_001 is created."
+  },
+  "evidence_artifacts": [
+    "data/source_page_evidence/c2_metadata/C2-REVIEW-SC_GWINS_LIST2_66_20180212_1-R001/a2c8840f355c74ab.json"
+  ],
+  "source_raw_sha256": "7a76b9d2a974f05d394b5dc4c1c45a6d476eeb13f6f5e6d8a1d34f50e820ee22",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": true,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}

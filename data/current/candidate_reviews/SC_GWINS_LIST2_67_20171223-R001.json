@@ -1,0 +1,48 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_67_20171223-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_67_20171223",
+  "reviewed_by": "agent-20261004T091647Z-90dd416d",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-05T12:49:20.882166+00:00",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20171223_001",
+  "evidence_urls": [
+    "https://www.gwins.org/cn/milesguo/list_2_67.html",
+    "https://www.gwins.org/cn/milesguo/645.html",
+    "https://www.youtube.com/watch?v=OAq2aGC3MrQ",
+    "https://rumble.com/v577om1-20171223.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS detail page 645 visibly carries exact source_video_id 20171223 and is bound to this candidate.",
+    "date": "Candidate date 2017-12-23 agrees with the exact date and source id visible in the GWINS detail title.",
+    "title": "郭文贵2017年12月23日 20171223关于盘古被掠夺、蛆聋等8个伪类的诉讼，以及下一步的爆料计划，文贵向北京再次提出条件",
+    "platform_ids": {
+      "gwins_page_id": "645",
+      "gwins_video_id": "20171223",
+      "youtube_id": "OAq2aGC3MrQ",
+      "rumble_id": "v577om1-20171223"
+    },
+    "source_relationships": "The exact GWINS detail page directly exposes the recorded YouTube and Rumble source URLs used here.",
+    "deduplication": "Compared exact date, source_video_id, title, and direct media IDs against current canonical records and all fixed-batch members; no existing canonical represents this distinct livestream, so LIVE_20171223_001 is created."
+  },
+  "evidence_artifacts": [
+    "data/source_page_evidence/c2_metadata/C2-REVIEW-SC_GWINS_LIST2_67_20171223-R001/939c3a4686e09c68.json"
+  ],
+  "source_raw_sha256": "7bdbb02f6f220f9455d1292edabf0dc5db7ca8e15c63137168dec119b496436a",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": true,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}

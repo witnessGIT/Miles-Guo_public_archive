@@ -1,0 +1,48 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_67_20171115_3-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_67_20171115_3",
+  "reviewed_by": "agent-20261004T091647Z-90dd416d",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-05T12:49:20.874020+00:00",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20171115_003",
+  "evidence_urls": [
+    "https://www.gwins.org/cn/milesguo/list_2_67.html",
+    "https://www.gwins.org/cn/milesguo/23609.html",
+    "https://youtu.be/zkexu2qiDRU",
+    "https://rumble.com/v577mq3-20171115-3.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS detail page 23609 visibly carries exact source_video_id 20171115_3 and is bound to this candidate.",
+    "date": "Candidate date 2017-11-15 agrees with the exact date and source id visible in the GWINS detail title.",
+    "title": "郭文贵2017年11月15日视频 20171115_3在游艇上早餐 Instagram直播",
+    "platform_ids": {
+      "gwins_page_id": "23609",
+      "gwins_video_id": "20171115_3",
+      "youtube_id": "zkexu2qiDRU",
+      "rumble_id": "v577mq3-20171115-3"
+    },
+    "source_relationships": "The exact GWINS detail page directly exposes the recorded YouTube and Rumble source URLs used here.",
+    "deduplication": "Compared exact date, source_video_id, title, and direct media IDs against current canonical records and all fixed-batch members; no existing canonical represents this distinct livestream, so LIVE_20171115_003 is created."
+  },
+  "evidence_artifacts": [
+    "data/source_page_evidence/c2_metadata/C2-REVIEW-SC_GWINS_LIST2_67_20171115_3-R001/ea1195c14b83901f.json"
+  ],
+  "source_raw_sha256": "274667ded07954189ddcc6de025128cf7b1b1291fa13ab8bc814a921c9a1f4ce",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": true,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}

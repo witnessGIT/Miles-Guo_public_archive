@@ -1,0 +1,48 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_66_20180206_2-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_66_20180206_2",
+  "reviewed_by": "agent-20261004T091647Z-90dd416d",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-05T12:49:20.852149+00:00",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20180206_002",
+  "evidence_urls": [
+    "https://www.gwins.org/cn/milesguo/list_2_66.html",
+    "https://www.gwins.org/cn/milesguo/709.html",
+    "https://youtu.be/9ZgRsftSGVM",
+    "https://rumble.com/v577r91-20180206-2.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS detail page 709 visibly carries exact source_video_id 20180206_2 and is bound to this candidate.",
+    "date": "Candidate date 2018-02-06 agrees with the exact date and source id visible in the GWINS detail title.",
+    "title": "郭文贵2018年2月6日第二次直播 20180206_2再次呼吁战友们提供有关韦石、西诺、陈闯创、胡平利用办理假政庇骗钱的证据！一个把老婆放在大街上让人“乱干”的人不可能为大家“干出”民主自由！",
+    "platform_ids": {
+      "gwins_page_id": "709",
+      "gwins_video_id": "20180206_2",
+      "youtube_id": "9ZgRsftSGVM",
+      "rumble_id": "v577r91-20180206-2"
+    },
+    "source_relationships": "The exact GWINS detail page directly exposes the recorded YouTube and Rumble source URLs used here.",
+    "deduplication": "Compared exact date, source_video_id, title, and direct media IDs against current canonical records and all fixed-batch members; no existing canonical represents this distinct livestream, so LIVE_20180206_002 is created."
+  },
+  "evidence_artifacts": [
+    "data/source_page_evidence/c2_metadata/C2-REVIEW-SC_GWINS_LIST2_66_20180206_2-R001/a2c8840f355c74ab.json"
+  ],
+  "source_raw_sha256": "59792fc86c713d9c985d1c162212289966c1365d6500100105634204a8f023fe",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": true,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}

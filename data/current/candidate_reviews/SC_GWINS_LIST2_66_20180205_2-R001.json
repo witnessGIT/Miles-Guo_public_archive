@@ -1,0 +1,48 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_66_20180205_2-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_66_20180205_2",
+  "reviewed_by": "agent-20261004T091647Z-90dd416d",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-05T12:49:20.846673+00:00",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20180205_002",
+  "evidence_urls": [
+    "https://www.gwins.org/cn/milesguo/list_2_66.html",
+    "https://www.gwins.org/cn/milesguo/707.html",
+    "https://youtu.be/7rjB4Z_ZR34",
+    "https://rumble.com/v577r3w-20180205-2.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS detail page 707 visibly carries exact source_video_id 20180205_2 and is bound to this candidate.",
+    "date": "Candidate date 2018-02-05 agrees with the exact date and source id visible in the GWINS detail title.",
+    "title": "郭文贵2018年2月5日第二次直播 20180205_2文贵浅谈，曹长青先生被断访．这是上天赐给我们的又一个礼物！",
+    "platform_ids": {
+      "gwins_page_id": "707",
+      "gwins_video_id": "20180205_2",
+      "youtube_id": "7rjB4Z_ZR34",
+      "rumble_id": "v577r3w-20180205-2"
+    },
+    "source_relationships": "The exact GWINS detail page directly exposes the recorded YouTube and Rumble source URLs used here.",
+    "deduplication": "Compared exact date, source_video_id, title, and direct media IDs against current canonical records and all fixed-batch members; no existing canonical represents this distinct livestream, so LIVE_20180205_002 is created."
+  },
+  "evidence_artifacts": [
+    "data/source_page_evidence/c2_metadata/C2-REVIEW-SC_GWINS_LIST2_66_20180205_2-R001/a2c8840f355c74ab.json"
+  ],
+  "source_raw_sha256": "2fb34ed9420569193db4388c3074da6935381df4d4c0e44bf43a6176a263cd70",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": true,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}
