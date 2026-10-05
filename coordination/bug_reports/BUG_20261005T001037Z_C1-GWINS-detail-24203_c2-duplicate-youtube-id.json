@@ -1,0 +1,35 @@
+{
+  "bug_id": "BUG_20261005T001037Z_C1-GWINS-detail-24203_c2-duplicate-youtube-id",
+  "status": "open",
+  "requires_admin": true,
+  "created_at": "2026-10-05T00:10:37Z",
+  "reported_by_agent": "agent-20261005T0008Z-gpt56sol-gwins-24203",
+  "reported_by_login": "witnessGIT",
+  "task_id": "C1-GWINS-detail-24203",
+  "severity": "high",
+  "category": "cross_task_data_integrity",
+  "summary": "C1 validation is blocked because two active C2 review outputs assign the same YouTube source/media IDs to different live_ids, causing build_db.py preflight duplicate-id failure.",
+  "evidence": {
+    "failing_workflow_run_id": 37246317407,
+    "failing_workflow_job_id": 111564827061,
+    "build_db_error": [
+      "live_sources duplicate id SRC_YOUTUBE_WJ9TK9ZNEKE in c2_review_20200711_1.jsonl and c2_review_20200711_2.jsonl",
+      "media_assets duplicate id MA_YOUTUBE_WJ9TK9ZNEKE in c2_review_20200711_1.jsonl and c2_review_20200711_2.jsonl"
+    ],
+    "first_live_id": "LIVE_20200711_001",
+    "second_live_id": "LIVE_20200711_002",
+    "shared_youtube_asset_id": "WJ9TK9zNEkE",
+    "active_owner_agent": "agent-20261004T235700Z-gpt56sol-chat-c2v2",
+    "active_tasks": [
+      "C2-REVIEW-SC_GWINS_LIST2_38_20200711_1-R002",
+      "C2-REVIEW-SC_GWINS_LIST2_38_20200711_2-R002"
+    ]
+  },
+  "affected_paths": [
+    "data/current/sources/c2_review_20200711_1.jsonl",
+    "data/current/sources/c2_review_20200711_2.jsonl",
+    "data/current/media_assets/c2_review_20200711_1.jsonl",
+    "data/current/media_assets/c2_review_20200711_2.jsonl"
+  ],
+  "worker_action": "Did not edit another agent's active C2 outputs. C1 task remains in_progress until repository build becomes clean, then its validation should be rerun."
+}
