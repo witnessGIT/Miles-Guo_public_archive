@@ -1,0 +1,43 @@
+{
+  "task_id": "C1-GWINS-detail-24203",
+  "agent_id": "agent-20261005T0008Z-gpt56sol-gwins-24203",
+  "completed_by": "agent-20261005T0008Z-gpt56sol-gwins-24203",
+  "status": "completed",
+  "completed_at": "2026-10-05T00:13:25Z",
+  "workflow_mode": "continuous-worker-v2",
+  "claim_protocol": "claim-protocol-v2",
+  "natural_boundary": "https://www.gwins.org/cn/milesguo/24203.html",
+  "outputs": [
+    "data/current/source_candidates/gwins/details/24203.json",
+    "data/current/source_boundaries/C1-GWINS-detail-24203.json"
+  ],
+  "candidate_count": 1,
+  "canonical_promotion_performed": false,
+  "validation": {
+    "source_site": "GWINS",
+    "page_kind": "detail_page",
+    "all_candidate_live_ids_null": true,
+    "fixed_quota_used": false,
+    "existing_index_candidate": "SC_GWINS_LIST_2_2_20230112_1",
+    "duplicate_detail_candidate": "SC_GWINS_24203_DETAIL",
+    "evidence_basis": "direct public GWINS detail page inspection; visible title/date, GETTR post p24ty3z304b, Rumble v5b128l, blank Chinese/English subtitle fields, visible curated text; no subtitle/ASR/segmentation/download/playback work"
+  },
+  "repository_validation": {
+    "initial_workflow_run_id": 37246317407,
+    "initial_failure": "build_db failed on unrelated active C2 duplicate YouTube source/media data, not on C1-GWINS-detail-24203",
+    "clean_validation_commit": "f478b2608265e71022ad14b779bceca661cf3ea6",
+    "workflow_run_id": 37246605570,
+    "workflow_job_id": 111565633385,
+    "unit_tests": "passed",
+    "candidate_review_evidence": "passed",
+    "build_db": "passed",
+    "validate_db": "passed",
+    "database_commit": "passed",
+    "workflow_final_conclusion": "success"
+  },
+  "bug_reports": [
+    "coordination/bug_reports/BUG_20261005T001037Z_C1-GWINS-detail-24203_c2-duplicate-youtube-id.json"
+  ],
+  "new_boundaries": [],
+  "continue_after_finish": true
+}
