@@ -1,0 +1,32 @@
+{
+  "task_id": "C2-REVIEW-SC_GWINS_LIST_2_2_20230116_1-R002",
+  "agent_id": "agent-20261004T133000Z-gpt56sol-chat-c2-serious",
+  "completed_at": "2026-10-05T13:57:00Z",
+  "result_commit": "ef5a4563a25ebce5aedc1dba79a6b114c4464dc8",
+  "outputs": [
+    "data/current/live_videos/c2_review_20230116_1.json",
+    "data/current/sources/c2_review_20230116_1.jsonl",
+    "data/current/media_assets/c2_review_20230116_1.jsonl",
+    "data/current/source_match_candidates/c2_review_20230116_1.jsonl",
+    "data/current/candidate_reviews/SC_GWINS_LIST_2_2_20230116_1-R002.json"
+  ],
+  "validation": "Repository GWINS evidence plus https://miles.md/tyu establish exact identity/date/title and bind GETTR p2594777d2b and Rumble v5b13o5; fresh repository search found no prior platform-ID reuse. No playback, download, transcription, segmentation, or later processing.",
+  "workflow_mode": "continuous-worker-v2",
+  "claim_protocol": "claim-protocol-v2",
+  "entry_mode": "ordinary_chat",
+  "continue_after_finish": true,
+  "finish_prerequisites_revalidated": true,
+  "notes": "Completed under fixed 20-member ordinary-chat evidence-v2 batch REVIEW-BATCH-20261005T121300Z-gpt56sol-chat-c2-continuation.",
+  "kind": "candidate_promotion_review",
+  "source_candidate_id": "SC_GWINS_LIST_2_2_20230116_1",
+  "review_generation": 2,
+  "review_claim_timeout_hours": 10,
+  "review_batch_id": "REVIEW-BATCH-20261005T121300Z-gpt56sol-chat-c2-continuation",
+  "review_batch_target_size": 20,
+  "review_batch_claimed_count": 20,
+  "review_batch_position": 6,
+  "candidate_review_contract": "candidate-review-evidence-v2",
+  "review_artifact": "data/current/candidate_reviews/SC_GWINS_LIST_2_2_20230116_1-R002.json",
+  "review_decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20230116_001"
+}
