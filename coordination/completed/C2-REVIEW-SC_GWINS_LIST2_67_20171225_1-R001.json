@@ -1,0 +1,32 @@
+{
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_67_20171225_1-R001",
+  "agent_id": "agent-20261004T091647Z-90dd416d",
+  "completed_at": "2026-10-05T12:53:32.861882+00:00",
+  "result_commit": "3f35459311181c586ed9e3b10b6b3b7c021f69ee",
+  "outputs": [
+    "data/current/candidate_reviews/SC_GWINS_LIST2_67_20171225_1-R001.json",
+    "data/current/live_videos/c2_review_20171225_1.json",
+    "data/current/sources/c2_review_20171225_1.jsonl",
+    "data/current/media_assets/c2_review_20171225_1.jsonl",
+    "data/current/source_match_candidates/c2_review_20171225_1.jsonl"
+  ],
+  "validation": "Exact GWINS detail identity/date/title, direct YouTube and Rumble platform IDs, source relationships, and batch deduplication were reviewed against immutable metadata evidence; candidate-review-evidence-v2 artifact validated. No playback, media download, transcription, segmentation, or later video processing was performed.",
+  "workflow_mode": "continuous-worker-v2",
+  "claim_protocol": "claim-protocol-v2",
+  "entry_mode": "work",
+  "continue_after_finish": true,
+  "finish_prerequisites_revalidated": true,
+  "notes": "Task completed only after re-checking the latest repository dependency contract. Under continuous-worker-v2, refresh repository state and claim the next eligible task unless a documented stop condition applies.",
+  "kind": "candidate_promotion_review",
+  "source_candidate_id": "SC_GWINS_LIST2_67_20171225_1",
+  "review_generation": 1,
+  "review_claim_timeout_hours": 10,
+  "review_batch_id": "REVIEW-BATCH-20261005T123308417967Z-abf6bf85",
+  "review_batch_target_size": 100,
+  "review_batch_claimed_count": 100,
+  "review_batch_position": 54,
+  "candidate_review_contract": "candidate-review-evidence-v2",
+  "review_artifact": "data/current/candidate_reviews/SC_GWINS_LIST2_67_20171225_1-R001.json",
+  "review_decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20171225_001"
+}
