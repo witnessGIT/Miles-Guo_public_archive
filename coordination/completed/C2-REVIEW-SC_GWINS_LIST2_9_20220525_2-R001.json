@@ -1,0 +1,27 @@
+{
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_9_20220525_2-R001",
+  "agent_id": "agent-20261005T025700Z-chat-c2-gw9",
+  "completed_at": "2026-10-05T03:18:00Z",
+  "result_commit": "a609c2139d695f371526530b45295b7a3c9de533",
+  "outputs": [
+    "data/current/candidate_reviews/SC_GWINS_LIST2_9_20220525_2-R001.json"
+  ],
+  "validation": "Individually reviewed public metadata for identity, date, title, platform locators, source relationships and deduplication only. No media download, playback, transcription, segmentation or timing validation.",
+  "entry_mode": "ordinary_chat",
+  "workflow_mode": "continuous-worker-v2",
+  "claim_protocol": "claim-protocol-v2",
+  "continue_after_finish": true,
+  "finish_prerequisites_revalidated": true,
+  "kind": "candidate_promotion_review",
+  "source_candidate_id": "SC_GWINS_LIST2_9_20220525_2",
+  "review_generation": 1,
+  "review_claim_timeout_hours": 10,
+  "review_batch_id": "REVIEW-BATCH-20261005T025700Z-chat-gw9",
+  "review_batch_target_size": 20,
+  "review_batch_claimed_count": 20,
+  "review_batch_position": 11,
+  "candidate_review_contract": "candidate-review-evidence-v2",
+  "review_artifact": "data/current/candidate_reviews/SC_GWINS_LIST2_9_20220525_2-R001.json",
+  "review_decision": "rejected_not_target",
+  "canonical_live_id": null
+}

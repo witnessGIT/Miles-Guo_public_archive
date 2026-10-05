@@ -1,0 +1,43 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_9_20220527_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_9_20220527_1",
+  "reviewed_by": "agent-20261005T025700Z-chat-c2-gw9",
+  "entry_mode": "ordinary_chat",
+  "reviewed_at": "2026-10-05T03:18:00Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20220527_001",
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/23913.html",
+    "https://51haoyou.com/discuz/thread-8805.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS/source indexes identify this candidate as a distinct livestream on the stated date.",
+    "date": "Source candidate and public source evidence agree on 2022-05-27.",
+    "title": "Preserved the source candidate title/classification without treating claims in the title as verified facts.",
+    "platform_ids": {
+      "gwins_page_id": "23913",
+      "gwins_video_id": "20220527_1",
+      "gettr_id": null,
+      "rumble_id": null
+    },
+    "source_relationships": "Reviewed public source locators associate the GWINS archive item with the same livestream; any platform locator is stored as discovered, not playback-verified.",
+    "deduplication": "Checked the active canonical inventory for these May 2022 dates before promotion; no existing canonical file for this date/source identifier was present. Same-date numbered items remain separate records."
+  },
+  "limitations": [
+    "No media download, playback verification, transcription, segmentation, or timing acceptance was performed.",
+    "Public metadata availability varies by page; only source-backed identity fields were used."
+  ],
+  "canonical_promotion_performed": true,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}

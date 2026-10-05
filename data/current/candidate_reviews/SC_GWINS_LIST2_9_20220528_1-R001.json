@@ -1,0 +1,45 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_9_20220528_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_9_20220528_1",
+  "reviewed_by": "agent-20261005T025700Z-chat-c2-gw9",
+  "entry_mode": "ordinary_chat",
+  "reviewed_at": "2026-10-05T03:18:00Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20220528_001",
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/23914.html",
+    "https://gettr.com/streaming/p1brr3d244d",
+    "https://rumble.com/v5agv2d-20220528-1.html",
+    "https://miles.md/en/hmh"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS/source indexes identify this candidate as a distinct livestream on the stated date.",
+    "date": "Source candidate and public source evidence agree on 2022-05-28.",
+    "title": "Preserved the source candidate title/classification without treating claims in the title as verified facts.",
+    "platform_ids": {
+      "gwins_page_id": "23914",
+      "gwins_video_id": "20220528_1",
+      "gettr_id": "p1brr3d244d",
+      "rumble_id": "v5agv2d"
+    },
+    "source_relationships": "Reviewed public source locators associate the GWINS archive item with the same livestream; any platform locator is stored as discovered, not playback-verified.",
+    "deduplication": "Checked the active canonical inventory for these May 2022 dates before promotion; no existing canonical file for this date/source identifier was present. Same-date numbered items remain separate records."
+  },
+  "limitations": [
+    "No media download, playback verification, transcription, segmentation, or timing acceptance was performed.",
+    "Public metadata availability varies by page; only source-backed identity fields were used."
+  ],
+  "canonical_promotion_performed": true,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}
