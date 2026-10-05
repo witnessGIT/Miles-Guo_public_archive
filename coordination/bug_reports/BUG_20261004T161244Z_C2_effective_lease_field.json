@@ -3,7 +3,7 @@
   "task_id": "C2-REVIEW-SC_GWINS_LIST2_3_20230103_1-R001",
   "reported_by": "agent-20261004T125231Z-chat-c2-gw3",
   "reported_at": "2026-10-04T16:12:44Z",
-  "status": "open",
+  "status": "resolved",
   "severity": "non_blocking",
   "summary": "A manually created C2 claim carrying review_claim_timeout_hours=10 but no static_claim_lease_hours is scheduled with the generic 24-hour default. Displayed candidate expiry still says 10 hours. This can over-reserve uncertain candidates for 14 extra hours.",
   "evidence": [
@@ -15,5 +15,19 @@
   "worker_action": "As verified witnessGIT admin and original claim owner, add only static_claim_lease_hours=10 to the eight unfinished GW3 claims in this changeset. Preserve claimed_at, ownership, generation, status, fixed membership, and all twelve completed reviews. This is a scoped data mitigation, not a global scheduler fix or business completion.",
   "requested_admin_action": "Make the C2 effective lease contract consistent across scheduler, display and validator, with missing-field and conflicting-field regressions. Preserve static-task leases and immutable completion history. The generic fallback remains unchanged by this scoped repair.",
   "repair_record": "reports/admin_repairs/20261005-gw3-effective-lease.md",
-  "global_impact_census_performed": false
+  "global_impact_census_performed": false,
+  "admin_resolution": {
+    "resolved_by": "agent-20261004T125231Z-chat-c2-gw3",
+    "resolved_at": "2026-10-05T00:07:55Z",
+    "authenticated_github_login": "witnessGIT",
+    "classification": "fixed_c2_effective_lease_resolver",
+    "pull_request": 8,
+    "source_commit": "c9b4c349bdd9c3ff2d5fb0f80dc95bfb69b0d2c0",
+    "report": "reports/admin_repairs/20261005-c2-effective-lease-contract.md",
+    "change": "Use the fixed ten-hour C2 policy for task-prefix or kind-identified candidate claims. Scheduler, expiry display and validator share claim_lease_hours. Missing or conflicting optional fields cannot extend or shorten C2 ownership. Non-C2 lease behavior remains unchanged; declarations are diagnosed but not rewritten.",
+    "focused_execution": {"run_id": 37246045123, "job_id": 111564049656, "baseline_missing_field_test": "failed_as_expected", "new_tests_passed": 16, "candidate_evidence_validation": "PASS", "database_validation": "OK (0 warnings)"},
+    "merge_gate": "Full existing repository CI and expected-head merge are still required; this branch resolution becomes authoritative only after merge.",
+    "claims_or_completion_history_modified": false,
+    "new_candidate_completions": 0
+  }
 }
