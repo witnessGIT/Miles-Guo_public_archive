@@ -1,0 +1,82 @@
+{
+  "evidence_version": "c2-metadata-evidence-v1",
+  "request_sha256": "a2c8840f355c74ab26d17bb2e35dcb235219234569d05fab9bfc2fb431871782",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_66_20180208_2-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_66_20180208_2",
+  "agent_id": "agent-20261004T091647Z-90dd416d",
+  "requested_url": "https://www.gwins.org/cn/milesguo/21753.html",
+  "fetched_at": "2026-10-05T12:36:38.294814+00:00",
+  "review_decision": null,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "source_text_imported": false,
+  "status": "fetched",
+  "http_status": 200,
+  "final_url": "https://www.gwins.org/cn/milesguo/21753.html",
+  "raw_bytes": 31066,
+  "raw_sha256": "b614cb59714850345eb7ef3271013f6c4986e9a1946000e35968e4906b1932a1",
+  "metadata_evidence": {
+    "page_title": "郭文贵2018年2月8日直播 20180208_2温哥华援郭会上的激情演讲、首次披露与王岐山见面详情",
+    "metadata": {
+      "description": "主持人：好，那就正式开始吧。我们现在就是加拿大温哥华挺郭会聚会，大家都非常希望你来讲几句话，所以你要多鼓励鼓励大家。我们欢迎文贵先生讲话。 郭文贵先生："
+    },
+    "decoding": {
+      "codec": "utf-8",
+      "strict": false,
+      "replacement_count": 17,
+      "title_clean": true,
+      "warning": "Damaged fields are not reliable; clean excerpts only. Missing cues are not absence evidence."
+    },
+    "expected_source_video_id": "20180208_2",
+    "expected_id_visible": true,
+    "outbound_links": [
+      "https://youtu.be/MT-vdZScW7I",
+      "https://rumble.com/v577rr8-20180208-2.html",
+      "https://gettr.com/"
+    ],
+    "identity_type_cues": [
+      {
+        "paragraph_index": 0,
+        "excerpt": "郭文贵2018年2月8日直播 20180208_2温哥华援郭会上的激情演讲、首次披露与王岐山见面详情"
+      },
+      {
+        "paragraph_index": 2,
+        "excerpt": "郭文贵视频"
+      },
+      {
+        "paragraph_index": 10,
+        "excerpt": "郭文贵2018年2月8日直播 20180208_2"
+      },
+      {
+        "paragraph_index": 12,
+        "excerpt": "郭文贵2018年2月8日直播 20180208_2 温哥华援郭会上的激情演讲、首次披露与王岐山见面详情"
+      },
+      {
+        "paragraph_index": 20,
+        "excerpt": "视频链接：https://youtu.be/MT-vdZScW7I"
+      },
+      {
+        "paragraph_index": 21,
+        "excerpt": "视频链接2：https://rumble.com/v577rr8-20180208-2.html"
+      },
+      {
+        "paragraph_index": 46,
+        "excerpt": "我和王岐山等这些常委领导人多次在一起吃饭说话，我在视频里也讲过这些人内心里面儿所存在的东西，是我们老百姓无法想象的。"
+      },
+      {
+        "paragraph_index": 52,
+        "excerpt": "今天我特别荣幸能站在这个位置跟你们说话，但在跟你们通话前，我今天按例给我的父亲母亲家人刚刚视频过，大家也能想到，我老父亲老母亲都快九十岁的人了，因为我的事情老人家病得很严重，家人现在哥哥已经抓进去了，已到过年了，所以我每次视频的时候我得强颜欢笑，让老人开心让家人开心。"
+      },
+      {
+        "paragraph_index": 52,
+        "excerpt": "频过，大家也能想到，我老父亲老母亲都快九十岁的人了，因为我的事情老人家病得很严重，家人现在哥哥已经抓进去了，已到过年了，所以我每次视频的时候我得强颜欢笑，让老人开心让家人开心。"
+      },
+      {
+        "paragraph_index": 63,
+        "excerpt": "就像我们在视频里说的，对西方的扩张是把整个民族绑在上了战车，是自杀的行为。那么跟西方的对抗大家很清楚，另外一个在经济上大家看到了，从2014年的3万六千亿美元的外汇储备，现在官方的2点6万亿，事实上外汇储备不超过1点几万亿。"
+      }
+    ],
+    "cue_profile": "origin-context-v2",
+    "cue_warning": "Excerpts may discuss other recordings; a reviewer must resolve context. No automatic type decision."
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "evidence_version": "c2-metadata-evidence-v1",
+  "request_sha256": "939c3a4686e09c682d8209b0a60117f6afd5762b0b78194428379fd2988a8f39",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_67_20171205-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_67_20171205",
+  "agent_id": "agent-20261004T091647Z-90dd416d",
+  "requested_url": "https://www.gwins.org/cn/milesguo/641.html",
+  "fetched_at": "2026-10-05T12:37:23.661737+00:00",
+  "review_decision": null,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "source_text_imported": false,
+  "status": "fetched",
+  "http_status": 200,
+  "final_url": "https://www.gwins.org/cn/milesguo/641.html",
+  "raw_bytes": 10666,
+  "raw_sha256": "372a8c3f10bed8ea1912b49c43fdb1aa4a2d3112cebad305633750d39057cfa0",
+  "metadata_evidence": {
+    "page_title": "郭文贵2017年12月5日 20171205尊敬的推友们你们健身了吗？",
+    "metadata": {
+      "description": "尊敬的网友们大家好，你们健身了吗？我刚刚健完很舒服。昨晚上开会，开的时间太长了，开的视频会，睡了不到三个小时。真的很累，但是有特别特别多的好消息。等到下个月吧，我"
+    },
+    "decoding": {
+      "codec": "utf-8",
+      "strict": false,
+      "replacement_count": 17,
+      "title_clean": true,
+      "warning": "Damaged fields are not reliable; clean excerpts only. Missing cues are not absence evidence."
+    },
+    "expected_source_video_id": "20171205",
+    "expected_id_visible": true,
+    "outbound_links": [
+      "https://www.youtube.com/watch?v=JqImeRGqqdM",
+      "https://rumble.com/v577ntp-20171205.html",
+      "https://gettr.com/"
+    ],
+    "identity_type_cues": [
+      {
+        "paragraph_index": 2,
+        "excerpt": "郭文贵视频"
+      },
+      {
+        "paragraph_index": 20,
+        "excerpt": "视频链接：https://www.youtube.com/watch?v=JqImeRGqqdM"
+      },
+      {
+        "paragraph_index": 21,
+        "excerpt": "视频链接2：https://rumble.com/v577ntp-20171205.html"
+      },
+      {
+        "paragraph_index": 26,
+        "excerpt": "尊敬的网友们大家好，你们健身了吗？我刚刚健完很舒服。昨晚上开会，开的时间太长了，开的视频会，睡了不到三个小时。真的很累，但是有特别特别多的好消息。等到下个月吧，我们要对海外的民运骗子，民运的这些骗子集团，骗子团伙我们进行一次性的打击。请大家拭目以待，还是文贵那句话，不要说，不要讲，不要放狠炮，看结果。替民除"
+      }
+    ],
+    "cue_profile": "origin-context-v2",
+    "cue_warning": "Excerpts may discuss other recordings; a reviewer must resolve context. No automatic type decision."
+  }
+}

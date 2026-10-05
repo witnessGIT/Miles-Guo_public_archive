@@ -1,0 +1,66 @@
+{
+  "evidence_version": "c2-metadata-evidence-v1",
+  "request_sha256": "a2c8840f355c74ab26d17bb2e35dcb235219234569d05fab9bfc2fb431871782",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_66_20180206_2-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_66_20180206_2",
+  "agent_id": "agent-20261004T091647Z-90dd416d",
+  "requested_url": "https://www.gwins.org/cn/milesguo/709.html",
+  "fetched_at": "2026-10-05T12:36:32.633162+00:00",
+  "review_decision": null,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "source_text_imported": false,
+  "status": "fetched",
+  "http_status": 200,
+  "final_url": "https://www.gwins.org/cn/milesguo/709.html",
+  "raw_bytes": 14358,
+  "raw_sha256": "59792fc86c713d9c985d1c162212289966c1365d6500100105634204a8f023fe",
+  "metadata_evidence": {
+    "page_title": "郭文贵2018年2月6日第二次直播 20180206_2再次呼吁战友们提供有关韦石、西诺、陈闯创、胡平利用办理假政庇骗钱的证据！一个把老婆放在大街上让人“乱干”的人不可能为大家“干出”民主自由！",
+    "metadata": {
+      "description": "尊敬的战友们好！ 关于胡平先生头两天瞪眼说瞎话，把他自己的脸从菱角形变成了三角形，玷污文贵。还有头两天什么民主纪念王先生的会上，有一半，不是都是啊，其中特别这"
+    },
+    "decoding": {
+      "codec": "utf-8",
+      "strict": false,
+      "replacement_count": 17,
+      "title_clean": true,
+      "warning": "Damaged fields are not reliable; clean excerpts only. Missing cues are not absence evidence."
+    },
+    "expected_source_video_id": "20180206_2",
+    "expected_id_visible": true,
+    "outbound_links": [
+      "https://youtu.be/9ZgRsftSGVM",
+      "https://rumble.com/v577r91-20180206-2.html",
+      "https://gettr.com/"
+    ],
+    "identity_type_cues": [
+      {
+        "paragraph_index": 0,
+        "excerpt": "郭文贵2018年2月6日第二次直播 20180206_2再次呼吁战友们提供有关韦石、西诺、陈闯创、胡平利用办理假政庇骗钱的证据！一个把老婆放在大街上让人“乱干”的人不可能为大家“干出”民主自由！"
+      },
+      {
+        "paragraph_index": 2,
+        "excerpt": "郭文贵视频"
+      },
+      {
+        "paragraph_index": 10,
+        "excerpt": "郭文贵2018年2月6日第二次直播 20180206_2"
+      },
+      {
+        "paragraph_index": 12,
+        "excerpt": "郭文贵2018年2月6日第二次直播 20180206_2 再次呼吁战友们提供有关韦石、西诺、陈闯创、胡平利用办理假政庇骗钱的证据！一个把老婆放在大街上让人“乱干”的人不可能为大家“干出”民主自由！"
+      },
+      {
+        "paragraph_index": 20,
+        "excerpt": "视频链接：https://youtu.be/9ZgRsftSGVM"
+      },
+      {
+        "paragraph_index": 21,
+        "excerpt": "视频链接2：https://rumble.com/v577r91-20180206-2.html"
+      }
+    ],
+    "cue_profile": "origin-context-v2",
+    "cue_warning": "Excerpts may discuss other recordings; a reviewer must resolve context. No automatic type decision."
+  }
+}

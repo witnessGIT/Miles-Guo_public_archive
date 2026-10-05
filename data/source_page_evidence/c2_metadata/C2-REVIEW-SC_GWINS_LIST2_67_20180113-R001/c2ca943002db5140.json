@@ -1,0 +1,66 @@
+{
+  "evidence_version": "c2-metadata-evidence-v1",
+  "request_sha256": "c2ca943002db51406da51dca03e129a28e4d0ae972efa149c4cf8fe164ce8d34",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_67_20180113-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_67_20180113",
+  "agent_id": "agent-20261004T091647Z-90dd416d",
+  "requested_url": "https://www.gwins.org/cn/milesguo/705.html",
+  "fetched_at": "2026-10-05T12:37:37.425728+00:00",
+  "review_decision": null,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "source_text_imported": false,
+  "status": "fetched",
+  "http_status": 200,
+  "final_url": "https://www.gwins.org/cn/milesguo/705.html",
+  "raw_bytes": 20679,
+  "raw_sha256": "4177967fd7263e8030f56f551e9bfb012338e1a8235e98dc992b0e7d71ac234a",
+  "metadata_evidence": {
+    "page_title": "郭文贵2018年1月13日 20180113加拿大挺郭后援会2018年首次挺郭聚会（2）",
+    "metadata": {
+      "description": "大家好,我是文贵！ 大家相聚在这个加拿大的晚餐上，我相信大家讨论最多的话题还是，盗国贼。 那么，最近大家也都看到了， 国内这个政治形势，经济形势 可以说是突变！ 特别"
+    },
+    "decoding": {
+      "codec": "utf-8",
+      "strict": false,
+      "replacement_count": 17,
+      "title_clean": true,
+      "warning": "Damaged fields are not reliable; clean excerpts only. Missing cues are not absence evidence."
+    },
+    "expected_source_video_id": "20180113",
+    "expected_id_visible": true,
+    "outbound_links": [
+      "https://www.youtube.com/watch?v=NAl4hhc9ko8",
+      "https://rumble.com/v577pbd-20180113.html",
+      "https://gettr.com/"
+    ],
+    "identity_type_cues": [
+      {
+        "paragraph_index": 2,
+        "excerpt": "郭文贵视频"
+      },
+      {
+        "paragraph_index": 20,
+        "excerpt": "视频链接：https://www.youtube.com/watch?v=NAl4hhc9ko8"
+      },
+      {
+        "paragraph_index": 21,
+        "excerpt": "视频链接2：https://rumble.com/v577pbd-20180113.html"
+      },
+      {
+        "paragraph_index": 30,
+        "excerpt": "我在几个月前，我记得特别清楚的是我看到了赖建平先生最早就是阐述、最早上视频，接受明镜采访还有跟宝胜连线当中说到的海航的分析那是一个很好的开端。也使得加拿大所有的咱们爱咱们民族的这些战友们走向了前台。"
+      },
+      {
+        "paragraph_index": 45,
+        "excerpt": "另外一个大家一定要记住，文贵遭受的痛苦和压力和损失真的是常人无法想象的 。那么在这种情况下，为什么这么做呢？ 因为我没办法在视频中和直播中所说的，你们没法看到中国军内还有政府内还有各方面这种真正的一股力量，那就是中国要实变了，要走向文明、要走向法治民主自由。 这个力量是巨大的，是文贵冒那么大的风险、付出那么大代价的根本原因，大家一定要相信，真该我"
+      },
+      {
+        "paragraph_index": 45,
+        "excerpt": "外一个大家一定要记住，文贵遭受的痛苦和压力和损失真的是常人无法想象的 。那么在这种情况下，为什么这么做呢？ 因为我没办法在视频中和直播中所说的，你们没法看到中国军内还有政府内还有各方面这种真正的一股力量，那就是中国要实变了，要走向文明、要走向法治民主自由。 这个力量是巨大的，是文贵冒那么大的风险、付出那么大代价的根本原因，大家一定要相信，真该我们赢了。"
+      }
+    ],
+    "cue_profile": "origin-context-v2",
+    "cue_warning": "Excerpts may discuss other recordings; a reviewer must resolve context. No automatic type decision."
+  }
+}

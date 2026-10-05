@@ -1,0 +1,66 @@
+{
+  "evidence_version": "c2-metadata-evidence-v1",
+  "request_sha256": "ea1195c14b83901f5394a88169a34ea02e92b45fa566150da090096843ae283c",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_67_20171115_2-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_67_20171115_2",
+  "agent_id": "agent-20261004T091647Z-90dd416d",
+  "requested_url": "https://www.gwins.org/cn/milesguo/632.html",
+  "fetched_at": "2026-10-05T12:37:08.924156+00:00",
+  "review_decision": null,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "source_text_imported": false,
+  "status": "fetched",
+  "http_status": 200,
+  "final_url": "https://www.gwins.org/cn/milesguo/632.html",
+  "raw_bytes": 10901,
+  "raw_sha256": "f105db731413073cb51e99d39c21ca916067ebc37852014458696ae743bcb6fa",
+  "metadata_evidence": {
+    "page_title": "郭文贵2017年11月15日第二次直播 20171115_2文贵与网友分享迈 阿密的穷人区新发展出来的新的设计区，这 才是真正地产开发商该干的事！创造财富以 报社会！并该恶帮穷从善！",
+    "metadata": {
+      "description": "这是迈阿密的design  district ，就是设计区，太漂亮太漂亮了，你看这副画有多漂亮。人民的力量自由的发挥，你看这幅画，涂鸦太漂亮了。简直是不可思议的，太美太美，太漂亮了。"
+    },
+    "decoding": {
+      "codec": "utf-8",
+      "strict": false,
+      "replacement_count": 17,
+      "title_clean": true,
+      "warning": "Damaged fields are not reliable; clean excerpts only. Missing cues are not absence evidence."
+    },
+    "expected_source_video_id": "20171115_2",
+    "expected_id_visible": true,
+    "outbound_links": [
+      "https://www.youtube.com/watch?v=eaJWyYCDaVQ",
+      "https://rumble.com/v577mp1-20171115-2.html",
+      "https://gettr.com/"
+    ],
+    "identity_type_cues": [
+      {
+        "paragraph_index": 0,
+        "excerpt": "郭文贵2017年11月15日第二次直播 20171115_2文贵与网友分享迈 阿密的穷人区新发展出来的新的设计区，这 才是真正地产开发商该干的事！创造财富以 报社会！并该恶帮穷从善！"
+      },
+      {
+        "paragraph_index": 2,
+        "excerpt": "郭文贵视频"
+      },
+      {
+        "paragraph_index": 10,
+        "excerpt": "郭文贵2017年11月15日第二次直播 20171115_2"
+      },
+      {
+        "paragraph_index": 12,
+        "excerpt": "郭文贵2017年11月15日第二次直播 20171115_2 文贵与网友分享迈 阿密的穷人区新发展出来的新的设计区，这 才是真正地产开发商该干的事！创造财富以 报社会！并该恶帮穷从善！"
+      },
+      {
+        "paragraph_index": 20,
+        "excerpt": "视频链接：https://www.youtube.com/watch?v=eaJWyYCDaVQ"
+      },
+      {
+        "paragraph_index": 21,
+        "excerpt": "视频链接2：https://rumble.com/v577mp1-20171115-2.html"
+      }
+    ],
+    "cue_profile": "origin-context-v2",
+    "cue_warning": "Excerpts may discuss other recordings; a reviewer must resolve context. No automatic type decision."
+  }
+}

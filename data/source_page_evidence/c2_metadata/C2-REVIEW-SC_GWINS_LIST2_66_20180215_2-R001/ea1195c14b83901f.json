@@ -1,0 +1,66 @@
+{
+  "evidence_version": "c2-metadata-evidence-v1",
+  "request_sha256": "ea1195c14b83901f5394a88169a34ea02e92b45fa566150da090096843ae283c",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_66_20180215_2-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_66_20180215_2",
+  "agent_id": "agent-20261004T091647Z-90dd416d",
+  "requested_url": "https://www.gwins.org/cn/milesguo/23210.html",
+  "fetched_at": "2026-10-05T12:36:56.554727+00:00",
+  "review_decision": null,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "source_text_imported": false,
+  "status": "fetched",
+  "http_status": 200,
+  "final_url": "https://www.gwins.org/cn/milesguo/23210.html",
+  "raw_bytes": 24166,
+  "raw_sha256": "15bbf9d54722c226240a4bd487687d0011c630daa1e24f85de474fd62bb6081f",
+  "metadata_evidence": {
+    "page_title": "郭文贵2018年2月15日 20180215_2陈军先生不敢面对文贵与他2月18号的辩论，文贵将为辩论准备的有关部分视频播出“陈军是个大骗子”",
+    "metadata": {
+      "description": "陈军：就让自己的生活呢，在这个世界上能尽量多的去经历，可能别人我原来说过，可能别人要三辈子经历的事情，我最好能不能在一辈子当中能够尽量多的去经验到。我之所以会选"
+    },
+    "decoding": {
+      "codec": "utf-8",
+      "strict": false,
+      "replacement_count": 17,
+      "title_clean": true,
+      "warning": "Damaged fields are not reliable; clean excerpts only. Missing cues are not absence evidence."
+    },
+    "expected_source_video_id": "20180215_2",
+    "expected_id_visible": true,
+    "outbound_links": [
+      "https://youtu.be/m3eLpZTpDP4",
+      "https://rumble.com/v577tv0-20180215-2.html",
+      "https://gettr.com/"
+    ],
+    "identity_type_cues": [
+      {
+        "paragraph_index": 0,
+        "excerpt": "郭文贵2018年2月15日 20180215_2陈军先生不敢面对文贵与他2月18号的辩论，文贵将为辩论准备的有关部分视频播出“陈军是个大骗子”"
+      },
+      {
+        "paragraph_index": 2,
+        "excerpt": "郭文贵视频"
+      },
+      {
+        "paragraph_index": 12,
+        "excerpt": "郭文贵2018年2月15日 20180215_2 陈军先生不敢面对文贵与他2月18号的辩论，文贵将为辩论准备的有关部分视频播出“陈军是个大骗子”"
+      },
+      {
+        "paragraph_index": 20,
+        "excerpt": "视频链接：https://youtu.be/m3eLpZTpDP4"
+      },
+      {
+        "paragraph_index": 21,
+        "excerpt": "视频链接2：https://rumble.com/v577tv0-20180215-2.html"
+      },
+      {
+        "paragraph_index": 101,
+        "excerpt": "郭文贵先生：好我一定看，你知道嘛，我今天下午直播我就说到特务。一定要记住啊，我心中有数，但是一定让特务，都是特务也行，也当朋友，只要特务能帮咱们办事也行，没啥不好的，只要别反咱特务也是兄弟啊，文兄。"
+      }
+    ],
+    "cue_profile": "origin-context-v2",
+    "cue_warning": "Excerpts may discuss other recordings; a reviewer must resolve context. No automatic type decision."
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "evidence_version": "c2-metadata-evidence-v1",
+  "request_sha256": "ea1195c14b83901f5394a88169a34ea02e92b45fa566150da090096843ae283c",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_66_20180221_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_66_20180221_1",
+  "agent_id": "agent-20261004T091647Z-90dd416d",
+  "requested_url": "https://www.gwins.org/cn/milesguo/21757.html",
+  "fetched_at": "2026-10-05T12:36:59.909495+00:00",
+  "review_decision": null,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "source_text_imported": false,
+  "status": "fetched",
+  "http_status": 200,
+  "final_url": "https://www.gwins.org/cn/milesguo/21757.html",
+  "raw_bytes": 10198,
+  "raw_sha256": "8c757a89f338113e7069383a38e9ba1281bc11ecbe070d2cb4b00d47c51eb175",
+  "metadata_evidence": {
+    "page_title": "郭文贵2018年2月21日直播 20180221_1被盗国贼宣传的一无是处的美帝国主义！咋这么自然！这么多别墅呢？而且都是私人拥有！ Via：郭媒体",
+    "metadata": {
+      "description": "蓝天白云呐，太漂亮了，太漂亮了，多美呀，太美了！哇。 "
+    },
+    "decoding": {
+      "codec": "utf-8",
+      "strict": false,
+      "replacement_count": 17,
+      "title_clean": true,
+      "warning": "Damaged fields are not reliable; clean excerpts only. Missing cues are not absence evidence."
+    },
+    "expected_source_video_id": "20180221_1",
+    "expected_id_visible": true,
+    "outbound_links": [
+      "https://youtu.be/mFBo-yzpBBw",
+      "https://rumble.com/v577uv9-20180221-1.html",
+      "https://gettr.com/"
+    ],
+    "identity_type_cues": [
+      {
+        "paragraph_index": 0,
+        "excerpt": "郭文贵2018年2月21日直播 20180221_1被盗国贼宣传的一无是处的美帝国主义！咋这么自然！这么多别墅呢？而且都是私人拥有！ Via：郭媒体"
+      },
+      {
+        "paragraph_index": 2,
+        "excerpt": "郭文贵视频"
+      },
+      {
+        "paragraph_index": 10,
+        "excerpt": "郭文贵2018年2月21日直播 20180221_1"
+      },
+      {
+        "paragraph_index": 12,
+        "excerpt": "郭文贵2018年2月21日直播 20180221_1 被盗国贼宣传的一无是处的美帝国主义！咋这么自然！这么多别墅呢？而且都是私人拥有！ Via：郭媒体"
+      },
+      {
+        "paragraph_index": 20,
+        "excerpt": "视频链接：https://youtu.be/mFBo-yzpBBw"
+      },
+      {
+        "paragraph_index": 21,
+        "excerpt": "视频链接2：https://rumble.com/v577uv9-20180221-1.html"
+      }
+    ],
+    "cue_profile": "origin-context-v2",
+    "cue_warning": "Excerpts may discuss other recordings; a reviewer must resolve context. No automatic type decision."
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "evidence_version": "c2-metadata-evidence-v1",
+  "request_sha256": "c2ca943002db51406da51dca03e129a28e4d0ae972efa149c4cf8fe164ce8d34",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_67_20180119_2-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_67_20180119_2",
+  "agent_id": "agent-20261004T091647Z-90dd416d",
+  "requested_url": "https://www.gwins.org/cn/milesguo/23632.html",
+  "fetched_at": "2026-10-05T12:37:41.978544+00:00",
+  "review_decision": null,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "source_text_imported": false,
+  "status": "fetched",
+  "http_status": 200,
+  "final_url": "https://www.gwins.org/cn/milesguo/23632.html",
+  "raw_bytes": 9887,
+  "raw_sha256": "d77149099ff3d2c2cfff6d3ddf0567eadd4a47dff4fbe5d72f235931e95b2f65",
+  "metadata_evidence": {
+    "page_title": "郭文贵2018年1月19日视频 20180119_2文贵现在回答很多战友们关心文贵看春晚的节目的安排．的大概情况．谢谢大家的关心关注",
+    "metadata": {},
+    "decoding": {
+      "codec": "utf-8",
+      "strict": false,
+      "replacement_count": 17,
+      "title_clean": true,
+      "warning": "Damaged fields are not reliable; clean excerpts only. Missing cues are not absence evidence."
+    },
+    "expected_source_video_id": "20180119_2",
+    "expected_id_visible": true,
+    "outbound_links": [
+      "https://youtu.be/Se7odZTT7pE",
+      "https://rumble.com/v577pul-20180119-2.html",
+      "https://gettr.com/"
+    ],
+    "identity_type_cues": [
+      {
+        "paragraph_index": 0,
+        "excerpt": "郭文贵2018年1月19日视频 20180119_2文贵现在回答很多战友们关心文贵看春晚的节目的安排．的大概情况．谢谢大家的关心关注"
+      },
+      {
+        "paragraph_index": 2,
+        "excerpt": "郭文贵视频"
+      },
+      {
+        "paragraph_index": 10,
+        "excerpt": "郭文贵2018年1月19日视频 20180119_2"
+      },
+      {
+        "paragraph_index": 12,
+        "excerpt": "郭文贵2018年1月19日视频 20180119_2 文贵现在回答很多战友们关心文贵看春晚的节目的安排．的大概情况．谢谢大家的关心关注"
+      },
+      {
+        "paragraph_index": 20,
+        "excerpt": "视频链接：https://youtu.be/Se7odZTT7pE"
+      },
+      {
+        "paragraph_index": 21,
+        "excerpt": "视频链接2：https://rumble.com/v577pul-20180119-2.html"
+      }
+    ],
+    "cue_profile": "origin-context-v2",
+    "cue_warning": "Excerpts may discuss other recordings; a reviewer must resolve context. No automatic type decision."
+  }
+}

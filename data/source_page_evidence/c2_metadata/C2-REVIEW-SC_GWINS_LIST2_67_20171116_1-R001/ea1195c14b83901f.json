@@ -1,0 +1,74 @@
+{
+  "evidence_version": "c2-metadata-evidence-v1",
+  "request_sha256": "ea1195c14b83901f5394a88169a34ea02e92b45fa566150da090096843ae283c",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_67_20171116_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_67_20171116_1",
+  "agent_id": "agent-20261004T091647Z-90dd416d",
+  "requested_url": "https://www.gwins.org/cn/milesguo/21744.html",
+  "fetched_at": "2026-10-05T12:37:12.271234+00:00",
+  "review_decision": null,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "source_text_imported": false,
+  "status": "fetched",
+  "http_status": 200,
+  "final_url": "https://www.gwins.org/cn/milesguo/21744.html",
+  "raw_bytes": 19579,
+  "raw_sha256": "46206bac010413bd44751927ea4a7ccdab454445baf66f4b717ed823113f74ea",
+  "metadata_evidence": {
+    "page_title": "郭文贵2017年11月16日直播 20171116_1自称“领袖”级人物要把川普介绍给郭文贵",
+    "metadata": {
+      "description": "以下是茅屎坑战友没校对前的内容。  服务。这个不看，这个不看。11刚才说那个。  卡啊我这个好。刚才在那边大概还欠了那边卡，清楚了来了，你说咱们是微友们，网"
+    },
+    "decoding": {
+      "codec": "utf-8",
+      "strict": false,
+      "replacement_count": 17,
+      "title_clean": true,
+      "warning": "Damaged fields are not reliable; clean excerpts only. Missing cues are not absence evidence."
+    },
+    "expected_source_video_id": "20171116_1",
+    "expected_id_visible": true,
+    "outbound_links": [
+      "https://youtu.be/YmU8axQjL4M",
+      "https://rumble.com/v577mwt-20171116-1.html",
+      "https://gettr.com/"
+    ],
+    "identity_type_cues": [
+      {
+        "paragraph_index": 0,
+        "excerpt": "郭文贵2017年11月16日直播 20171116_1自称“领袖”级人物要把川普介绍给郭文贵"
+      },
+      {
+        "paragraph_index": 2,
+        "excerpt": "郭文贵视频"
+      },
+      {
+        "paragraph_index": 10,
+        "excerpt": "郭文贵2017年11月16日直播 20171116_1"
+      },
+      {
+        "paragraph_index": 12,
+        "excerpt": "郭文贵2017年11月16日直播 20171116_1 自称“领袖”级人物要把川普介绍给郭文贵"
+      },
+      {
+        "paragraph_index": 20,
+        "excerpt": "视频链接：https://youtu.be/YmU8axQjL4M"
+      },
+      {
+        "paragraph_index": 21,
+        "excerpt": "视频链接2：https://rumble.com/v577mwt-20171116-1.html"
+      },
+      {
+        "paragraph_index": 31,
+        "excerpt": "一直跟着。很有意思，但是那是善意的啊，不是恶意的，不是恶意的，这个我们警察上去确认确认，确实就是就是。没什么恶意没什么恶意，一直想直播啊，各位网友们分享分享。"
+      },
+      {
+        "paragraph_index": 47,
+        "excerpt": "想想会怎么样在准备一场大戏，大家做好心理准备，练好心脏啊，谢谢所有。谢谢，我挂了啊，谢谢，我先离线了，非常感谢，非常感谢，我先结束直播了，谢谢。说。嗯。"
+      }
+    ],
+    "cue_profile": "origin-context-v2",
+    "cue_warning": "Excerpts may discuss other recordings; a reviewer must resolve context. No automatic type decision."
+  }
+}

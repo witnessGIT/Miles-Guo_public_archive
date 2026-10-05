@@ -1,0 +1,70 @@
+{
+  "evidence_version": "c2-metadata-evidence-v1",
+  "request_sha256": "a2c8840f355c74ab26d17bb2e35dcb235219234569d05fab9bfc2fb431871782",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_66_20180206_3-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_66_20180206_3",
+  "agent_id": "agent-20261004T091647Z-90dd416d",
+  "requested_url": "https://www.gwins.org/cn/milesguo/682.html",
+  "fetched_at": "2026-10-05T12:36:33.754348+00:00",
+  "review_decision": null,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "source_text_imported": false,
+  "status": "fetched",
+  "http_status": 200,
+  "final_url": "https://www.gwins.org/cn/milesguo/682.html",
+  "raw_bytes": 14433,
+  "raw_sha256": "82f07184c88a8e89124ac31efea72ed890e7772ac5a1d2adfeff5cc9ad1b29a9",
+  "metadata_evidence": {
+    "page_title": "郭文贵2018年2月6日第三次直播 20180206_3向大家报告关于今天2月6日取消与陈军先生见面的过程！",
+    "metadata": {
+      "description": "尊敬的战友们大家好，刚刚的锻炼完，这全身都湿了都是汗，非常的舒服。 我向大家报告一下关于陈军先生的事件，本来前天陈军先生找了华盛顿的杨建利先生还有另外一"
+    },
+    "decoding": {
+      "codec": "utf-8",
+      "strict": false,
+      "replacement_count": 17,
+      "title_clean": true,
+      "warning": "Damaged fields are not reliable; clean excerpts only. Missing cues are not absence evidence."
+    },
+    "expected_source_video_id": "20180206_3",
+    "expected_id_visible": true,
+    "outbound_links": [
+      "https://www.youtube.com/watch?v=lbo5br51Bi0",
+      "https://rumble.com/v577ray-20180206-3.html",
+      "https://gettr.com/"
+    ],
+    "identity_type_cues": [
+      {
+        "paragraph_index": 0,
+        "excerpt": "郭文贵2018年2月6日第三次直播 20180206_3向大家报告关于今天2月6日取消与陈军先生见面的过程！"
+      },
+      {
+        "paragraph_index": 2,
+        "excerpt": "郭文贵视频"
+      },
+      {
+        "paragraph_index": 10,
+        "excerpt": "郭文贵2018年2月6日第三次直播 20180206_3"
+      },
+      {
+        "paragraph_index": 12,
+        "excerpt": "郭文贵2018年2月6日第三次直播 20180206_3 向大家报告关于今天2月6日取消与陈军先生见面的过程！"
+      },
+      {
+        "paragraph_index": 20,
+        "excerpt": "视频链接：https://www.youtube.com/watch?v=lbo5br51Bi0"
+      },
+      {
+        "paragraph_index": 21,
+        "excerpt": "视频链接2：https://rumble.com/v577ray-20180206-3.html"
+      },
+      {
+        "paragraph_index": 29,
+        "excerpt": "昨天，他打电话给杨建利先生说：郭先生又录了视频，他什么意思啊？他答应了还录视频？我希望他见面之前先跟我道个歉。"
+      }
+    ],
+    "cue_profile": "origin-context-v2",
+    "cue_warning": "Excerpts may discuss other recordings; a reviewer must resolve context. No automatic type decision."
+  }
+}

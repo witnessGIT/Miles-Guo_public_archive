@@ -1,0 +1,74 @@
+{
+  "evidence_version": "c2-metadata-evidence-v1",
+  "request_sha256": "a2c8840f355c74ab26d17bb2e35dcb235219234569d05fab9bfc2fb431871782",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_66_20180209_2-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_66_20180209_2",
+  "agent_id": "agent-20261004T091647Z-90dd416d",
+  "requested_url": "https://www.gwins.org/cn/milesguo/685.html",
+  "fetched_at": "2026-10-05T12:36:40.538304+00:00",
+  "review_decision": null,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "source_text_imported": false,
+  "status": "fetched",
+  "http_status": 200,
+  "final_url": "https://www.gwins.org/cn/milesguo/685.html",
+  "raw_bytes": 13140,
+  "raw_sha256": "39b9fd63f65e6d09df62a2650ec92d2a1e6a1c61b07012f615e4dba12f7604d5",
+  "metadata_evidence": {
+    "page_title": "郭文贵2018年2月9日第二次直播 20180209_2关于陈军在推特上的公开造假……说谎．文贵将在近日直播有关他的欺骗及骗人真！",
+    "metadata": {
+      "description": "尊敬的战友们好！这是今天文贵2月9日报平安视频。这两天还是很热闹，我看到推特上、郭媒体上关于陈军先生在这块儿发出各种推来搞自己，陈军同志太厉害了，跟韦石他俩和西诺他"
+    },
+    "decoding": {
+      "codec": "utf-8",
+      "strict": false,
+      "replacement_count": 17,
+      "title_clean": true,
+      "warning": "Damaged fields are not reliable; clean excerpts only. Missing cues are not absence evidence."
+    },
+    "expected_source_video_id": "20180209_2",
+    "expected_id_visible": true,
+    "outbound_links": [
+      "https://www.youtube.com/watch?v=l0QodJL5Axc",
+      "https://rumble.com/v577sb7-20180209-2.html",
+      "https://gettr.com/"
+    ],
+    "identity_type_cues": [
+      {
+        "paragraph_index": 0,
+        "excerpt": "郭文贵2018年2月9日第二次直播 20180209_2关于陈军在推特上的公开造假……说谎．文贵将在近日直播有关他的欺骗及骗人真！"
+      },
+      {
+        "paragraph_index": 2,
+        "excerpt": "郭文贵视频"
+      },
+      {
+        "paragraph_index": 10,
+        "excerpt": "郭文贵2018年2月9日第二次直播 20180209_2"
+      },
+      {
+        "paragraph_index": 12,
+        "excerpt": "郭文贵2018年2月9日第二次直播 20180209_2 关于陈军在推特上的公开造假……说谎．文贵将在近日直播有关他的欺骗及骗人真！"
+      },
+      {
+        "paragraph_index": 20,
+        "excerpt": "视频链接：https://www.youtube.com/watch?v=l0QodJL5Axc"
+      },
+      {
+        "paragraph_index": 21,
+        "excerpt": "视频链接2：https://rumble.com/v577sb7-20180209-2.html"
+      },
+      {
+        "paragraph_index": 26,
+        "excerpt": "尊敬的战友们好！这是今天文贵2月9日报平安视频。这两天还是很热闹，我看到推特上、郭媒体上关于陈军先生在这块儿发出各种推来搞自己，陈军同志太厉害了，跟韦石他俩和西诺他们应该是拜把兄弟，瞪眼说瞎话脸不带红、心不带跳的，然后把什么问题都弄到他有水平，把什么问题都变成他有格"
+      },
+      {
+        "paragraph_index": 29,
+        "excerpt": "品太差，昨天我也看了一些盲流子和袁建斌又打电话去，那个袁建斌太烂了，袁建斌这个人太烂了，然后打电话进去采访，哎呀，没法看了。这哪叫直播采访哪？这就是我们老家那村里面骂群架，妇女上屋顶上骂架去，就是那个情况，比那还乱。"
+      }
+    ],
+    "cue_profile": "origin-context-v2",
+    "cue_warning": "Excerpts may discuss other recordings; a reviewer must resolve context. No automatic type decision."
+  }
+}

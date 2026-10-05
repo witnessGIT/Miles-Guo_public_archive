@@ -1,0 +1,64 @@
+{
+  "evidence_version": "c2-metadata-evidence-v1",
+  "request_sha256": "6107c001056998a3216df1d1baca7589b9c87c886a1d4e19b1448a30bb70e6ac",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_68_20171007-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_68_20171007",
+  "agent_id": "agent-20261004T091647Z-90dd416d",
+  "requested_url": "https://www.gwins.org/cn/milesguo/23590.html",
+  "fetched_at": "2026-10-05T12:38:06.795051+00:00",
+  "review_decision": null,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "source_text_imported": false,
+  "status": "fetched",
+  "http_status": 200,
+  "final_url": "https://www.gwins.org/cn/milesguo/23590.html",
+  "raw_bytes": 9552,
+  "raw_sha256": "285a6464205e68078685e9d8387d635fe74bd0b3907c71acae2e870fa922a84a",
+  "metadata_evidence": {
+    "page_title": "郭文贵2017年10月7日视频 20171007Snow上镜了",
+    "metadata": {},
+    "decoding": {
+      "codec": "utf-8",
+      "strict": false,
+      "replacement_count": 17,
+      "title_clean": true,
+      "warning": "Damaged fields are not reliable; clean excerpts only. Missing cues are not absence evidence."
+    },
+    "expected_source_video_id": "20171007",
+    "expected_id_visible": true,
+    "outbound_links": [
+      "https://youtu.be/-8E9oG88qQg",
+      "https://rumble.com/v577egl-20171007.html",
+      "https://gettr.com/"
+    ],
+    "identity_type_cues": [
+      {
+        "paragraph_index": 0,
+        "excerpt": "郭文贵2017年10月7日视频 20171007Snow上镜了"
+      },
+      {
+        "paragraph_index": 2,
+        "excerpt": "郭文贵视频"
+      },
+      {
+        "paragraph_index": 10,
+        "excerpt": "郭文贵2017年10月7日视频 20171007"
+      },
+      {
+        "paragraph_index": 12,
+        "excerpt": "郭文贵2017年10月7日视频 20171007 Snow上镜了"
+      },
+      {
+        "paragraph_index": 20,
+        "excerpt": "视频链接：https://youtu.be/-8E9oG88qQg"
+      },
+      {
+        "paragraph_index": 21,
+        "excerpt": "视频链接2：https://rumble.com/v577egl-20171007.html"
+      }
+    ],
+    "cue_profile": "origin-context-v2",
+    "cue_warning": "Excerpts may discuss other recordings; a reviewer must resolve context. No automatic type decision."
+  }
+}

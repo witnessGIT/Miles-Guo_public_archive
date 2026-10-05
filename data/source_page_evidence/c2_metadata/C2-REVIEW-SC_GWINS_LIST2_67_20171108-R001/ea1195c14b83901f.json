@@ -1,0 +1,82 @@
+{
+  "evidence_version": "c2-metadata-evidence-v1",
+  "request_sha256": "ea1195c14b83901f5394a88169a34ea02e92b45fa566150da090096843ae283c",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_67_20171108-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_67_20171108",
+  "agent_id": "agent-20261004T091647Z-90dd416d",
+  "requested_url": "https://www.gwins.org/cn/milesguo/628.html",
+  "fetched_at": "2026-10-05T12:37:02.154283+00:00",
+  "review_decision": null,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "source_text_imported": false,
+  "status": "fetched",
+  "http_status": 200,
+  "final_url": "https://www.gwins.org/cn/milesguo/628.html",
+  "raw_bytes": 26081,
+  "raw_sha256": "c0115beca2113d3c276755f20cf494e69494d3f4edbc02d2980676cc441e3b7b",
+  "metadata_evidence": {
+    "page_title": "郭文贵2017年11月8日 20171108twitter再次被封7天后的报平安",
+    "metadata": {
+      "description": "大家好！大家好！这是文贵, 今天是……几月几号啊，我得看一看啊。（查看手机）今天啊，是这个……我每天就是没有什么时间……呃，这个几月几号，呃，我"
+    },
+    "decoding": {
+      "codec": "utf-8",
+      "strict": false,
+      "replacement_count": 17,
+      "title_clean": true,
+      "warning": "Damaged fields are not reliable; clean excerpts only. Missing cues are not absence evidence."
+    },
+    "expected_source_video_id": "20171108",
+    "expected_id_visible": true,
+    "outbound_links": [
+      "https://www.youtube.com/watch?v=-7IpNljrGkA",
+      "https://rumble.com/v577lmr-20171108.html",
+      "https://gettr.com/"
+    ],
+    "identity_type_cues": [
+      {
+        "paragraph_index": 2,
+        "excerpt": "郭文贵视频"
+      },
+      {
+        "paragraph_index": 20,
+        "excerpt": "视频链接：https://www.youtube.com/watch?v=-7IpNljrGkA"
+      },
+      {
+        "paragraph_index": 21,
+        "excerpt": "视频链接2：https://rumble.com/v577lmr-20171108.html"
+      },
+      {
+        "paragraph_index": 27,
+        "excerpt": "这个本来呢，半小时以前，我这个……哎，我寻思看一下推特，看一下推特反映出来呵，文贵推特反映出来，说这个：你将在15分钟以后就恢复使用啦！我说好啊！赶快我就准备，拍了几个照片，然后呢就写好一个推文，准备给大家发一个信息，结果一到点儿，显示出来：大家看到了呵，大家看到这个（展示手机屏幕）什么呢？"
+      },
+      {
+        "paragraph_index": 33,
+        "excerpt": "第二个呢，我要和大家要说的事情：这几天啊，我看到李洪宽先生关于我头两天的直播以后，这个强烈的反应。哈哈（笑），这个我可以理解啊，因为我认为李洪宽先生，是真民主！（严肃表情）真民运分子呵！真民运人士。"
+      },
+      {
+        "paragraph_index": 41,
+        "excerpt": "贼不害怕的人，你都是没有价值的，盗国贼不去骚扰你的人，那说明你没价值。像，这个宝胜先生，前天做了一个采访，结果是采访完，他也是这个视频给他移除了，还给停了直播功能，啊，非常难受。"
+      },
+      {
+        "paragraph_index": 41,
+        "excerpt": "价值的，盗国贼不去骚扰你的人，那说明你没价值。像，这个宝胜先生，前天做了一个采访，结果是采访完，他也是这个视频给他移除了，还给停了直播功能，啊，非常难受。"
+      },
+      {
+        "paragraph_index": 44,
+        "excerpt": "大家知道，以色列技术我原来一直不说，大家往回看一看，我们所有人关于文贵的爆料的视频，为什么在大陆，在过去几个月，都是每个好的视频，都是几亿次的传播呀，啊，因为我原来我不想说，我的以色列顾问公司一直在帮忙，啊，一直在帮忙，在做这个事情，否则，达不到这个效果，但是，彻底破开那个墙，暂时不可能。啊，暂时不肯"
+      },
+      {
+        "paragraph_index": 44,
+        "excerpt": "大家知道，以色列技术我原来一直不说，大家往回看一看，我们所有人关于文贵的爆料的视频，为什么在大陆，在过去几个月，都是每个好的视频，都是几亿次的传播呀，啊，因为我原来我不想说，我的以色列顾问公司一直在帮忙，啊，一直在帮忙，在做这个事情，否则，达不到这个效果，但是，彻底破开那个墙，暂时不可能。啊，暂时不肯能。啊，但是很快，应该那个墙就不存在了。"
+      },
+      {
+        "paragraph_index": 60,
+        "excerpt": "然后有时我会来这里Livestream直播，来向大家报个平安，有时又我可能通过别人跟大家报告一些情况，"
+      }
+    ],
+    "cue_profile": "origin-context-v2",
+    "cue_warning": "Excerpts may discuss other recordings; a reviewer must resolve context. No automatic type decision."
+  }
+}

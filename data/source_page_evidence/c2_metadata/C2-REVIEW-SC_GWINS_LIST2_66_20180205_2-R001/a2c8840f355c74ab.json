@@ -1,0 +1,70 @@
+{
+  "evidence_version": "c2-metadata-evidence-v1",
+  "request_sha256": "a2c8840f355c74ab26d17bb2e35dcb235219234569d05fab9bfc2fb431871782",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_66_20180205_2-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_66_20180205_2",
+  "agent_id": "agent-20261004T091647Z-90dd416d",
+  "requested_url": "https://www.gwins.org/cn/milesguo/707.html",
+  "fetched_at": "2026-10-05T12:36:28.926469+00:00",
+  "review_decision": null,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "source_text_imported": false,
+  "status": "fetched",
+  "http_status": 200,
+  "final_url": "https://www.gwins.org/cn/milesguo/707.html",
+  "raw_bytes": 12552,
+  "raw_sha256": "2fb34ed9420569193db4388c3074da6935381df4d4c0e44bf43a6176a263cd70",
+  "metadata_evidence": {
+    "page_title": "郭文贵2018年2月5日第二次直播 20180205_2文贵浅谈，曹长青先生被断访．这是上天赐给我们的又一个礼物！",
+    "metadata": {
+      "description": "尊敬的战友们好，今天是2018年2月5号文贵报平安直播。昨天网络上一片热闹，又发生了曹长青先生参与的某个什么民运组织的电话采访，结果一提到文贵“咔嚓断播了，”这文贵"
+    },
+    "decoding": {
+      "codec": "utf-8",
+      "strict": false,
+      "replacement_count": 17,
+      "title_clean": true,
+      "warning": "Damaged fields are not reliable; clean excerpts only. Missing cues are not absence evidence."
+    },
+    "expected_source_video_id": "20180205_2",
+    "expected_id_visible": true,
+    "outbound_links": [
+      "https://youtu.be/7rjB4Z_ZR34",
+      "https://rumble.com/v577r3w-20180205-2.html",
+      "https://gettr.com/"
+    ],
+    "identity_type_cues": [
+      {
+        "paragraph_index": 0,
+        "excerpt": "郭文贵2018年2月5日第二次直播 20180205_2文贵浅谈，曹长青先生被断访．这是上天赐给我们的又一个礼物！"
+      },
+      {
+        "paragraph_index": 2,
+        "excerpt": "郭文贵视频"
+      },
+      {
+        "paragraph_index": 10,
+        "excerpt": "郭文贵2018年2月5日第二次直播 20180205_2"
+      },
+      {
+        "paragraph_index": 12,
+        "excerpt": "郭文贵2018年2月5日第二次直播 20180205_2 文贵浅谈，曹长青先生被断访．这是上天赐给我们的又一个礼物！"
+      },
+      {
+        "paragraph_index": 20,
+        "excerpt": "视频链接：https://youtu.be/7rjB4Z_ZR34"
+      },
+      {
+        "paragraph_index": 21,
+        "excerpt": "视频链接2：https://rumble.com/v577r3w-20180205-2.html"
+      },
+      {
+        "paragraph_index": 26,
+        "excerpt": "尊敬的战友们好，今天是2018年2月5号文贵报平安直播。昨天网络上一片热闹，又发生了曹长青先生参与的某个什么民运组织的电话采访，结果一提到文贵“咔嚓断播了，”这文贵太有力量了，竟然让那么多人忌讳，连曹长青先生的电话都敢掐，有意思！"
+      }
+    ],
+    "cue_profile": "origin-context-v2",
+    "cue_warning": "Excerpts may discuss other recordings; a reviewer must resolve context. No automatic type decision."
+  }
+}

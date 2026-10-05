@@ -1,0 +1,66 @@
+{
+  "evidence_version": "c2-metadata-evidence-v1",
+  "request_sha256": "939c3a4686e09c682d8209b0a60117f6afd5762b0b78194428379fd2988a8f39",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_67_20171208-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_67_20171208",
+  "agent_id": "agent-20261004T091647Z-90dd416d",
+  "requested_url": "https://www.gwins.org/cn/milesguo/642.html",
+  "fetched_at": "2026-10-05T12:37:24.767238+00:00",
+  "review_decision": null,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "source_text_imported": false,
+  "status": "fetched",
+  "http_status": 200,
+  "final_url": "https://www.gwins.org/cn/milesguo/642.html",
+  "raw_bytes": 10649,
+  "raw_sha256": "60e53c8d7273f0ff3ecfa9d6dcf895742a1e7df87b5bef084e0c6a6ec0865959",
+  "metadata_evidence": {
+    "page_title": "郭文贵2017年12月8日视频 20171208一切都是刚刚开始",
+    "metadata": {
+      "description": "尊敬的网友们。你们健身了吗？刚健完身，纽约还是真冷了，但是非常的舒服。开会开的我也是每天头昏脑涨。一直到下个周六才能彻底的开完会，然后从下周开始起，才能和大家多多"
+    },
+    "decoding": {
+      "codec": "utf-8",
+      "strict": false,
+      "replacement_count": 17,
+      "title_clean": true,
+      "warning": "Damaged fields are not reliable; clean excerpts only. Missing cues are not absence evidence."
+    },
+    "expected_source_video_id": "20171208",
+    "expected_id_visible": true,
+    "outbound_links": [
+      "https://www.youtube.com/watch?v=VTsLQ1e0HEs",
+      "https://rumble.com/v577nwt-20171208.html",
+      "https://gettr.com/"
+    ],
+    "identity_type_cues": [
+      {
+        "paragraph_index": 0,
+        "excerpt": "郭文贵2017年12月8日视频 20171208一切都是刚刚开始"
+      },
+      {
+        "paragraph_index": 2,
+        "excerpt": "郭文贵视频"
+      },
+      {
+        "paragraph_index": 10,
+        "excerpt": "郭文贵2017年12月8日视频 20171208"
+      },
+      {
+        "paragraph_index": 12,
+        "excerpt": "郭文贵2017年12月8日视频 20171208 一切都是刚刚开始"
+      },
+      {
+        "paragraph_index": 20,
+        "excerpt": "视频链接：https://www.youtube.com/watch?v=VTsLQ1e0HEs"
+      },
+      {
+        "paragraph_index": 21,
+        "excerpt": "视频链接2：https://rumble.com/v577nwt-20171208.html"
+      }
+    ],
+    "cue_profile": "origin-context-v2",
+    "cue_warning": "Excerpts may discuss other recordings; a reviewer must resolve context. No automatic type decision."
+  }
+}

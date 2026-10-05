@@ -1,0 +1,66 @@
+{
+  "evidence_version": "c2-metadata-evidence-v1",
+  "request_sha256": "a2c8840f355c74ab26d17bb2e35dcb235219234569d05fab9bfc2fb431871782",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_66_20180210_3-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_66_20180210_3",
+  "agent_id": "agent-20261004T091647Z-90dd416d",
+  "requested_url": "https://www.gwins.org/cn/milesguo/713.html",
+  "fetched_at": "2026-10-05T12:36:43.894647+00:00",
+  "review_decision": null,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "source_text_imported": false,
+  "status": "fetched",
+  "http_status": 200,
+  "final_url": "https://www.gwins.org/cn/milesguo/713.html",
+  "raw_bytes": 13529,
+  "raw_sha256": "101164602b0fbd41684635a3c796590a08c51ef326059eddf57efc352ac6388f",
+  "metadata_evidence": {
+    "page_title": "郭文贵2018年2月10日第三次直播 20180210_3钓鱼网站骗子韦石，屎诺，朋友骗子陈军，民主骗子李伟 东，流氓骗子袁建彬与吴征时什么关系？",
+    "metadata": {
+      "description": "尊敬的战友们好，韦石、屎诺、李伟东、夏业良、乱伦彪、胡平和陈军，袁建斌他们是什么关系，从现在发展的事情来看，同样的事情就是马云是金主，代表了盗国贼，吴征是提供所有"
+    },
+    "decoding": {
+      "codec": "utf-8",
+      "strict": false,
+      "replacement_count": 17,
+      "title_clean": true,
+      "warning": "Damaged fields are not reliable; clean excerpts only. Missing cues are not absence evidence."
+    },
+    "expected_source_video_id": "20180210_3",
+    "expected_id_visible": true,
+    "outbound_links": [
+      "https://www.youtube.com/watch?v=t59qbiMIq-4",
+      "https://rumble.com/v577slw-20180210-3.html",
+      "https://gettr.com/"
+    ],
+    "identity_type_cues": [
+      {
+        "paragraph_index": 0,
+        "excerpt": "郭文贵2018年2月10日第三次直播 20180210_3钓鱼网站骗子韦石，屎诺，朋友骗子陈军，民主骗子李伟 东，流氓骗子袁建彬与吴征时什么关系？"
+      },
+      {
+        "paragraph_index": 2,
+        "excerpt": "郭文贵视频"
+      },
+      {
+        "paragraph_index": 10,
+        "excerpt": "郭文贵2018年2月10日第三次直播 20180210_3"
+      },
+      {
+        "paragraph_index": 12,
+        "excerpt": "郭文贵2018年2月10日第三次直播 20180210_3 钓鱼网站骗子韦石，屎诺，朋友骗子陈军，民主骗子李伟 东，流氓骗子袁建彬与吴征时什么关系？"
+      },
+      {
+        "paragraph_index": 20,
+        "excerpt": "视频链接：https://www.youtube.com/watch?v=t59qbiMIq-4"
+      },
+      {
+        "paragraph_index": 21,
+        "excerpt": "视频链接2：https://rumble.com/v577slw-20180210-3.html"
+      }
+    ],
+    "cue_profile": "origin-context-v2",
+    "cue_warning": "Excerpts may discuss other recordings; a reviewer must resolve context. No automatic type decision."
+  }
+}

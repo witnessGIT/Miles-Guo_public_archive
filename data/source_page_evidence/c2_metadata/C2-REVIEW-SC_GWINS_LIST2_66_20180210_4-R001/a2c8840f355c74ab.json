@@ -1,0 +1,70 @@
+{
+  "evidence_version": "c2-metadata-evidence-v1",
+  "request_sha256": "a2c8840f355c74ab26d17bb2e35dcb235219234569d05fab9bfc2fb431871782",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_66_20180210_4-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_66_20180210_4",
+  "agent_id": "agent-20261004T091647Z-90dd416d",
+  "requested_url": "https://www.gwins.org/cn/milesguo/716.html",
+  "fetched_at": "2026-10-05T12:36:45.012256+00:00",
+  "review_decision": null,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "source_text_imported": false,
+  "status": "fetched",
+  "http_status": 200,
+  "final_url": "https://www.gwins.org/cn/milesguo/716.html",
+  "raw_bytes": 13352,
+  "raw_sha256": "2dbec2c74a9aa2e8517c7e56e2d0ad4aebf9d282d17913e351362da5a20e62bc",
+  "metadata_evidence": {
+    "page_title": "郭文贵2018年2月10日第四次直播 20180210_4吴征这个大骗子……为什么会如此猖狂？骂郭战友们的下场如何？",
+    "metadata": {
+      "description": "尊敬的战友们好！过去的一、两天来，大家看到了马云出钱吴征执行行骗，陈军、袁建斌、韦石、西诺执行的在这里形成的一系列谎言和欺诈、诈骗，以及他们由于屡骗屡成功导致的"
+    },
+    "decoding": {
+      "codec": "utf-8",
+      "strict": false,
+      "replacement_count": 17,
+      "title_clean": true,
+      "warning": "Damaged fields are not reliable; clean excerpts only. Missing cues are not absence evidence."
+    },
+    "expected_source_video_id": "20180210_4",
+    "expected_id_visible": true,
+    "outbound_links": [
+      "https://youtu.be/T1Ng_wK1NPA",
+      "https://rumble.com/v577sn6-20180210-4.html",
+      "https://gettr.com/"
+    ],
+    "identity_type_cues": [
+      {
+        "paragraph_index": 0,
+        "excerpt": "郭文贵2018年2月10日第四次直播 20180210_4吴征这个大骗子……为什么会如此猖狂？骂郭战友们的下场如何？"
+      },
+      {
+        "paragraph_index": 2,
+        "excerpt": "郭文贵视频"
+      },
+      {
+        "paragraph_index": 10,
+        "excerpt": "郭文贵2018年2月10日第四次直播 20180210_4"
+      },
+      {
+        "paragraph_index": 12,
+        "excerpt": "郭文贵2018年2月10日第四次直播 20180210_4 吴征这个大骗子……为什么会如此猖狂？骂郭战友们的下场如何？"
+      },
+      {
+        "paragraph_index": 20,
+        "excerpt": "视频链接：https://youtu.be/T1Ng_wK1NPA"
+      },
+      {
+        "paragraph_index": 21,
+        "excerpt": "视频链接2：https://rumble.com/v577sn6-20180210-4.html"
+      },
+      {
+        "paragraph_index": 27,
+        "excerpt": "德先生《自由中国》节目的电话，把支持文贵的战友们说的一文不值，然后说郭文贵爆料革命将一地鸡毛啥也不是，因为文贵没钱了。还有他竟然在直播当中大言不惭的说：“我没有投资，没有和吴征合作俱乐部。”这种谎言都说得出来？而且说从来没有攻击过曹长青先生，这简直是卑劣至极。"
+      }
+    ],
+    "cue_profile": "origin-context-v2",
+    "cue_warning": "Excerpts may discuss other recordings; a reviewer must resolve context. No automatic type decision."
+  }
+}

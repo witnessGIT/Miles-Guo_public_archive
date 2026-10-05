@@ -1,0 +1,82 @@
+{
+  "evidence_version": "c2-metadata-evidence-v1",
+  "request_sha256": "c2ca943002db51406da51dca03e129a28e4d0ae972efa149c4cf8fe164ce8d34",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_67_20180128_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_67_20180128_1",
+  "agent_id": "agent-20261004T091647Z-90dd416d",
+  "requested_url": "https://www.gwins.org/cn/milesguo/21750.html",
+  "fetched_at": "2026-10-05T12:37:45.321397+00:00",
+  "review_decision": null,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "source_text_imported": false,
+  "status": "fetched",
+  "http_status": 200,
+  "final_url": "https://www.gwins.org/cn/milesguo/21750.html",
+  "raw_bytes": 14121,
+  "raw_sha256": "8766e36f6d418f8a6f9537f3bcf394faa1764742a59a0902a405d5d838705e2c",
+  "metadata_evidence": {
+    "page_title": "郭文贵2018年1月28日直播 20180128_1郭媒体最新测试视频钓贼完整版",
+    "metadata": {
+      "description": "尊敬的战友们好啊！刚才我在试那个视频，哎呀！录了几下但是没发出去呀，我再试试，是不是时间太长了，刚才录了17分钟。我们未来的视频是要想录多长时间就多长时间呢。所以咱"
+    },
+    "decoding": {
+      "codec": "utf-8",
+      "strict": false,
+      "replacement_count": 17,
+      "title_clean": true,
+      "warning": "Damaged fields are not reliable; clean excerpts only. Missing cues are not absence evidence."
+    },
+    "expected_source_video_id": "20180128_1",
+    "expected_id_visible": true,
+    "outbound_links": [
+      "https://youtu.be/C3NeZSZvHcM",
+      "https://rumble.com/v577q19-20180128-1.html",
+      "https://gettr.com/"
+    ],
+    "identity_type_cues": [
+      {
+        "paragraph_index": 0,
+        "excerpt": "郭文贵2018年1月28日直播 20180128_1郭媒体最新测试视频钓贼完整版"
+      },
+      {
+        "paragraph_index": 2,
+        "excerpt": "郭文贵视频"
+      },
+      {
+        "paragraph_index": 10,
+        "excerpt": "郭文贵2018年1月28日直播 20180128_1"
+      },
+      {
+        "paragraph_index": 12,
+        "excerpt": "郭文贵2018年1月28日直播 20180128_1 郭媒体最新测试视频钓贼完整版"
+      },
+      {
+        "paragraph_index": 20,
+        "excerpt": "视频链接：https://youtu.be/C3NeZSZvHcM"
+      },
+      {
+        "paragraph_index": 21,
+        "excerpt": "视频链接2：https://rumble.com/v577q19-20180128-1.html"
+      },
+      {
+        "paragraph_index": 26,
+        "excerpt": "尊敬的战友们好啊！刚才我在试那个视频，哎呀！录了几下但是没发出去呀，我再试试，是不是时间太长了，刚才录了17分钟。我们未来的视频是要想录多长时间就多长时间呢。所以咱还有很多方面需要改进，他们现在老是黑客我们，咱现在主要是看那个黑客、咱怎么能把黑客给解决了。"
+      },
+      {
+        "paragraph_index": 31,
+        "excerpt": "刚才我发现两分钟啊，“抽”一下就过去了。挺好、挺好，最起码今天盗国贼们想说想给我们关了，那不可能了，现在不可能了，帮助我们反击盗国贼的黑客手段的就是川普总统的他的网站和他的Twitter的同一个运营商。"
+      },
+      {
+        "paragraph_index": 35,
+        "excerpt": "咱们慢慢地试，咱们现在因为我们的视频直播他们先不让开，大概下周才让开。直播、现在我就播两分钟我就挂上去。大家谁愿意录呢，就录上录一下就挂上去，多发点视频，我们这个文字和视频才是真正的核武器，谢谢所有的战友！"
+      },
+      {
+        "paragraph_index": 35,
+        "excerpt": "播他们先不让开，大概下周才让开。直播、现在我就播两分钟我就挂上去。大家谁愿意录呢，就录上录一下就挂上去，多发点视频，我们这个文字和视频才是真正的核武器，谢谢所有的战友！"
+      }
+    ],
+    "cue_profile": "origin-context-v2",
+    "cue_warning": "Excerpts may discuss other recordings; a reviewer must resolve context. No automatic type decision."
+  }
+}

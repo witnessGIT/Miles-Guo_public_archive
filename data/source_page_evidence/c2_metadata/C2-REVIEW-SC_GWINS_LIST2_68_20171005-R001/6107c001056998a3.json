@@ -1,0 +1,70 @@
+{
+  "evidence_version": "c2-metadata-evidence-v1",
+  "request_sha256": "6107c001056998a3216df1d1baca7589b9c87c886a1d4e19b1448a30bb70e6ac",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_68_20171005-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_68_20171005",
+  "agent_id": "agent-20261004T091647Z-90dd416d",
+  "requested_url": "https://www.gwins.org/cn/milesguo/696.html",
+  "fetched_at": "2026-10-05T12:38:05.649154+00:00",
+  "review_decision": null,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "source_text_imported": false,
+  "status": "fetched",
+  "http_status": 200,
+  "final_url": "https://www.gwins.org/cn/milesguo/696.html",
+  "raw_bytes": 46236,
+  "raw_sha256": "ffbca6cb2095668fbe8a24e44c20753af2f9aacd7855355f812eb9d27b5a4838",
+  "metadata_evidence": {
+    "page_title": "郭文贵2017年10月5日 20171005 郭文贵10月5日全球新聞發布會第02次华盛顿记者会剪輯後英語版官方版",
+    "metadata": {
+      "description": "主持人比尔·戈茨（英语）：早上好，Miles，你在美国造成了一场重大的震荡，不仅 在美国，而且在中国，以前呢，大家没有亲自和你见面，今天你到这儿来和我们 对话，首先请你"
+    },
+    "decoding": {
+      "codec": "utf-8",
+      "strict": false,
+      "replacement_count": 17,
+      "title_clean": true,
+      "warning": "Damaged fields are not reliable; clean excerpts only. Missing cues are not absence evidence."
+    },
+    "expected_source_video_id": "20171005",
+    "expected_id_visible": true,
+    "outbound_links": [
+      "https://youtu.be/rCA3wlbCwdk",
+      "https://rumble.com/v577eep-20171005.html",
+      "https://gettr.com/"
+    ],
+    "identity_type_cues": [
+      {
+        "paragraph_index": 2,
+        "excerpt": "郭文贵视频"
+      },
+      {
+        "paragraph_index": 20,
+        "excerpt": "视频链接：https://youtu.be/rCA3wlbCwdk"
+      },
+      {
+        "paragraph_index": 21,
+        "excerpt": "视频链接2：https://rumble.com/v577eep-20171005.html"
+      },
+      {
+        "paragraph_index": 40,
+        "excerpt": "呢，我本来我拿出来以后，会对我的家人和同事带来巨大的威胁，可还是想贡献给美国，我认为美国能保护我的安全，但是昨天在哈德逊在这最后一分钟他这个给取消，让我非常之震惊，我昨天和美国的政府部门也有见面，然后我就到了洗手间，我将这个用生命换来的最重要的文件之一，这三份文件用火给烧掉了，永远不会出现在这个世界上，那是唯一的一份原件，它决定着很多人的生死。而且对美"
+      },
+      {
+        "paragraph_index": 47,
+        "excerpt": "，特别是过去这二十八年来，我跟这些人在一起，我了解他们怎么看美国。就像昨天和前天中国每天所有的电视都在播着拉斯维加斯恐怖袭击的这个视频，中国在云南啊任何地方死了人他们不报，只报美国死人，然后那个非常之高兴。这都是来源于一个国家内部最高统治盗国贼集团的一个决定。"
+      },
+      {
+        "paragraph_index": 54,
+        "excerpt": "家采访的时候，我从来不知道有一个人叫张晶，就在我家，你一直在接电话的时候，就是安全不的领导给我打了一个电话说，这个文贵，不会让你们直播成功的，一定会失败，我当时很惊讶，他说我们已经动用了一切沉默的力量，"
+      },
+      {
+        "paragraph_index": 100,
+        "excerpt": "分别是谁，至少告诉我们他们是什么部门的，他们对你的态度如何，他们想从你那了解什么。第二个问题是藏族的朋友想提的问题，就是前几天你在视频当中提到的，中秋节中国政府派了很多人到了萨拉，他们的计划是什么？领头的人的名字叫何晓柱，这个人是谁？"
+      }
+    ],
+    "cue_profile": "origin-context-v2",
+    "cue_warning": "Excerpts may discuss other recordings; a reviewer must resolve context. No automatic type decision."
+  }
+}
