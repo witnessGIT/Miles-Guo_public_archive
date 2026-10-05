@@ -1,0 +1,36 @@
+{
+  "id": "BUG-C2-INVALID-REVIEW-TIMESTAMPS-20261005T002701Z",
+  "reported_by": "agent-20261004T125231Z-chat-c2-gw3",
+  "reported_at": "2026-10-05T00:27:01.704547+00:00",
+  "authenticated_github_login": "witnessGIT",
+  "status": "open",
+  "severity": "blocking_validation",
+  "category": "candidate_review_evidence_metadata",
+  "requires_admin": true,
+  "summary": "Four current C2 review artifacts contain minute values 60..63 in reviewed_at. The unchanged timestamp requirement correctly rejects their completion records and stops evidence/database validation, including the independent lease repair PR #8.",
+  "observed_ci": {
+    "run_id": 37247337954,
+    "job_id": 111567706624,
+    "pull_request": 8,
+    "head_sha": "77b0f450955b218c5d4d7ec51cd415787e17bb0e",
+    "tested_merge_sha": "53820f0320ad5c735ba5c2e51f9b2850c6b6d304",
+    "tested_main_sha": "53f181c275488e85ad09b886fe141801e78c1290",
+    "unit_tests": "110 passed",
+    "candidate_evidence_validation": "FAIL: Candidate review artifact requires a valid reviewed_at timestamp.",
+    "existing_completions_checked": 154,
+    "database_steps": "not run after evidence failure"
+  },
+  "artifacts": [
+    {"path": "data/current/candidate_reviews/SC_GWINS_LIST2_37_20200715-R002.json", "blob_sha": "cc984e3517785cabe6f22ca7b718612e778a3b2d", "reviewed_at": "2026-10-04T23:63:00Z"},
+    {"path": "data/current/candidate_reviews/SC_GWINS_LIST2_37_20200716_1-R002.json", "blob_sha": "cc1c129838da100e7a2fc69f3cbc955531dc7b33", "reviewed_at": "2026-10-04T23:61:00Z"},
+    {"path": "data/current/candidate_reviews/SC_GWINS_LIST2_37_20200716_2-R002.json", "blob_sha": "8ef2d4367e4848a6c9f7dac1431c7f46523c48ed", "reviewed_at": "2026-10-04T23:62:00Z"},
+    {"path": "data/current/candidate_reviews/SC_GWINS_LIST2_37_20200717_3-R002.json", "blob_sha": "dea4942b4d808f62b6a978a8c6c12f26c6e1888c", "reviewed_at": "2026-10-04T23:60:00Z"}
+  ],
+  "original_reviewed_by": "agent-20261004T235700Z-gpt56sol-chat-c2v2",
+  "reproduction": "Each of the four exact values raises ValueError: minute must be in 0..59 in datetime.fromisoformat after replacing trailing Z with +00:00. All four were fetched individually from current main and independently checked locally. A full local repository execution is not claimed.",
+  "worker_action": "Preserve original artifacts/completions and register this exact defect. Do not relax timestamp validation, extend the grandfather allowlist, invent actual review times from commit dates, or silently roll overflowing minutes into the next day. PR #8 remains unmerged pending successful current-state evidence/database checks.",
+  "requested_admin_action": "Establish the correct review-time provenance with the original reviewer and record a traceable correction consistent with immutable-review-history policy. Revalidate these four artifacts and every corresponding completion; inspect related metadata for the same generating error. Then rerun candidate evidence, SQLite build/validation and PR #8 integration checks. This report does not prescribe a guessed replacement timestamp.",
+  "new_candidate_completions": 0,
+  "media_processing_performed": false,
+  "global_impact_census_performed": false
+}
