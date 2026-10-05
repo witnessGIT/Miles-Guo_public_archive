@@ -13,5 +13,26 @@
   "natural_boundary": "GWINS detail page 24192 for 2023-01-11 candidate 20230111_1",
   "url": "https://www.gwins.org/cn/milesguo/24192.html",
   "discovered_from": "data/current/source_candidates/gwins/list_2_2.jsonl#SC_GWINS_LIST_2_2_20230111_1",
-  "scope": "Inspect exactly this public detail page; record source-candidate provenance only. Do not perform C2 candidate review/promotion in this C1 task."
+  "scope": "Inspect exactly this public detail page; record source-candidate provenance only. Do not perform C2 candidate review/promotion in this C1 task.",
+  "validation_state": "blocked_external_candidate_review_evidence",
+  "validation_attempt": {
+    "workflow_run_id": 37246774640,
+    "workflow_job_id": 111566111874,
+    "unit_tests": "passed",
+    "candidate_review_evidence": "failed",
+    "build_db": "skipped",
+    "validate_db": "skipped",
+    "reason": "Four unrelated C2 candidate-review artifacts contain invalid reviewed_at timestamps with minutes 60-63."
+  },
+  "blocked_on": {
+    "bug_report": "coordination/bug_reports/BUG_20261005T001808Z_C1-GWINS-detail-24192_c2-missing-reviewed-at.json",
+    "owner_agent": "agent-20261004T235700Z-gpt56sol-chat-c2v2",
+    "offending_reviewed_at_values": [
+      "2026-10-04T23:60:00Z",
+      "2026-10-04T23:61:00Z",
+      "2026-10-04T23:62:00Z",
+      "2026-10-04T23:63:00Z"
+    ],
+    "worker_action": "Do not edit another agent's active C2 outputs. Revalidate when main is repaired."
+  }
 }
