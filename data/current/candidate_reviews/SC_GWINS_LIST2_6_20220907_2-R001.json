@@ -1,0 +1,40 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_6_20220907_2-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_6_20220907_2",
+  "reviewed_by": "agent-20261005T122900Z-gpt56sol-chat-c2v2g",
+  "entry_mode": "ordinary_chat",
+  "reviewed_at": "2026-10-05T12:35:00Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20220907_002",
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_6.html",
+    "https://gwins.org/cn/milesguo/24036.html",
+    "https://gettr.com/post/p1q3alp6da2",
+    "https://rumble.com/v5asi23-20220907-2.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "evidence_summary": {
+    "identity": "GWINS index and detail 24036 identify source record 20220907_2.",
+    "date": "GWINS detail publication date agrees with 2022-09-07.",
+    "title": "GWINS detail title agrees with the source candidate title.",
+    "platform_ids": [
+      "20220907_2",
+      "p1q3alp6da2",
+      "v5asi23-20220907-2"
+    ],
+    "source_relationships": "GWINS detail 24036 directly exposes two recorded media URLs.",
+    "deduplication": "Fresh repository checks found no existing canonical LIVE_20220907_002 and no current structured use of the primary Gettr identifier; distinct source id, date, title, and direct media relationships support promotion."
+  },
+  "playback_performed": false,
+  "media_download_performed": false,
+  "transcription_performed": false,
+  "segmentation_performed": false
+}
