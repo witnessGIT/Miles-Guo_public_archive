@@ -143,6 +143,8 @@ jobs:
         run: |
           PYTHONPATH=scripts python - <<'PY'
           import project_status as ps
+          # Synthetic post-collection fixture; never change the repository phase.
+          ps.load_workflow = lambda: {"current_major_phase": "PHASE_2_PROCESSING"}
           ps.next_task.eligible_tasks = lambda: []
           ps.playback_queue.case_statuses = lambda: [{
               'task_id': 'P9-PLAYBACK-PILOT-X001',
@@ -170,12 +172,24 @@ jobs:
           assert status['recommended_action'] == 'CLAIM_REAL_PLAYBACK_TASK_AND_REQUEST_REPOSITORY_EVIDENCE', status
           assert status['host_stop_for_this_runtime'] is False, status
           print('ordinary-agent repository playback regression OK')
+          # Even a passing synthetic playback gate cannot enable Phase 1 playback.
+          ps.load_workflow = lambda: {"current_major_phase": "PHASE_1_COLLECTION"}
+          ps.playback_queue.gate_summary = lambda: {"pilot60_pass": True}
+          phase1 = ps.build_status(False, "worker")
+          assert phase1["state"] == "PHASE_1_COLLECTION_ACTIVE", phase1
+          assert phase1["classification"] == "NO_ELIGIBLE_WORK", phase1
+          assert phase1["recommended_action"] == "NO_CURRENT_ACTION", phase1
+          assert phase1["playback_queue"]["claimable_by_this_runtime"] is False, phase1
+          assert phase1["gates"]["P9_PLAYBACK_GATE_ready_to_seal"] is False, phase1
+          print("Phase 1 playback prohibition regression OK")
           PY
 
       - name: Regression test gate-pass outranks leftover playback work
         run: |
           PYTHONPATH=scripts python - <<'PY'
           import project_status as ps
+          # Synthetic post-collection fixture; never change the repository phase.
+          ps.load_workflow = lambda: {"current_major_phase": "PHASE_2_PROCESSING"}
           ps.next_task.eligible_tasks = lambda: []
           ps.playback_queue.case_statuses = lambda: [{
               'task_id': 'P9-PLAYBACK-PILOT-X001', 'case_id': 'PILOT-X001',
@@ -205,6 +219,8 @@ jobs:
         run: |
           PYTHONPATH=scripts python - <<'PY'
           import project_status as ps
+          # Synthetic post-collection fixture; never change the repository phase.
+          ps.load_workflow = lambda: {"current_major_phase": "PHASE_2_PROCESSING"}
           ps.next_task.eligible_tasks = lambda: []
           ps.playback_queue.case_statuses = lambda: [{
               'task_id': 'P9-PLAYBACK-PILOT-X001', 'case_id': 'PILOT-X001',
