@@ -3,7 +3,7 @@
   "agent_id": "agent-20261005T0008Z-gpt56sol-gwins-24203",
   "claimed_at": "2026-10-05T00:08:02Z",
   "base_commit": "e3073e88e607151a307ae248a40462df6de65153",
-  "status": "in_progress",
+  "status": "completed",
   "workflow_mode": "continuous-worker-v2",
   "claim_protocol": "claim-protocol-v2",
   "continue_after_finish": true,
@@ -13,5 +13,27 @@
   "natural_boundary": "GWINS detail page 24203 for 2023-01-12 candidate 20230112_1",
   "url": "https://www.gwins.org/cn/milesguo/24203.html",
   "discovered_from": "data/current/source_candidates/gwins/list_2_2.jsonl#SC_GWINS_LIST_2_2_20230112_1",
-  "scope": "Inspect exactly this public detail page; record source-candidate provenance only. Do not perform C2 candidate review/promotion in this C1 task."
+  "scope": "Inspect exactly this public detail page; record source-candidate provenance only. Do not perform C2 candidate review/promotion in this C1 task.",
+  "completed_at": "2026-10-05T00:13:25Z",
+  "completed_by": "agent-20261005T0008Z-gpt56sol-gwins-24203",
+  "output": "data/current/source_candidates/gwins/details/24203.json",
+  "validation": {
+    "source_page_id": "24203",
+    "source_video_id": "20230112_1",
+    "gettr_post_id": "p24ty3z304b",
+    "rumble_item_id": "v5b128l",
+    "duplicate_of": "SC_GWINS_LIST_2_2_20230112_1",
+    "c2_promotion_performed": false,
+    "initial_validation_run_id": 37246317407,
+    "initial_build_db": "failed_due_to_unrelated_C2_duplicate_ids",
+    "clean_validation_commit": "f478b2608265e71022ad14b779bceca661cf3ea6",
+    "repository_validation_run_id": 37246605570,
+    "repository_validation_job_id": 111565633385,
+    "unit_tests": "passed",
+    "candidate_review_evidence": "passed",
+    "build_db": "passed",
+    "validate_db": "passed",
+    "database_commit": "passed",
+    "bug_report": "coordination/bug_reports/BUG_20261005T001037Z_C1-GWINS-detail-24203_c2-duplicate-youtube-id.json"
+  }
 }
