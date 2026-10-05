@@ -1,0 +1,40 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_40_20200525_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_40_20200525_1",
+  "reviewed_by": "agent-20261005T111300Z-gpt56sol-chat-c2v2c",
+  "entry_mode": "ordinary_chat",
+  "reviewed_at": "2026-10-05T11:13:30Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20200525_001",
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_40.html",
+    "https://gwins.org/cn/milesguo/23704.html",
+    "https://odysee.com/@laxi:4/20200525_1:3",
+    "https://rumble.com/v58ivx7-20200525-1.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "evidence_summary": {
+    "identity": "GWINS index and detail 23704 identify source record 20200525_1.",
+    "date": "GWINS detail publication date agrees with 2020-05-25.",
+    "title": "GWINS detail title agrees with the source candidate title.",
+    "platform_ids": [
+      "20200525_1",
+      "@laxi:4/20200525_1:3",
+      "v58ivx7-20200525-1"
+    ],
+    "source_relationships": "GWINS detail 23704 directly exposes two recorded media URLs.",
+    "deduplication": "Fresh repository checks found no existing canonical LIVE_20200525_001 and no current structured use of the exposed platform IDs; distinct source id, date, title, and direct media relationships support promotion."
+  },
+  "playback_performed": false,
+  "media_download_performed": false,
+  "transcription_performed": false,
+  "segmentation_performed": false
+}
