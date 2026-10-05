@@ -1,0 +1,40 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST_2_2_20230120_2-R002",
+  "source_candidate_id": "SC_GWINS_LIST_2_2_20230120_2",
+  "reviewed_by": "agent-20261004T133000Z-gpt56sol-chat-c2-serious",
+  "entry_mode": "ordinary_chat",
+  "reviewed_at": "2026-10-05T12:24:00Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20230120_002",
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_2.html",
+    "https://gwins.org/cn/milesguo/24209.html",
+    "https://gettr.com/post/p25pcw54983",
+    "https://rumble.com/v5b1651-20230120-2.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "evidence_summary": {
+    "identity": "GWINS index and detail 24209 identify source record 20230120_2 as one distinct target video item.",
+    "date": "GWINS detail publication date is 20230120 and agrees with candidate date 2023-01-20.",
+    "title": "GWINS detail title agrees with the source candidate title.",
+    "platform_ids": [
+      "20230120_2",
+      "p25pcw54983",
+      "v5b1651"
+    ],
+    "source_relationships": "GWINS detail 24209 directly exposes the GETTR and Rumble media URLs recorded here.",
+    "deduplication": "Fresh repository searches found no LIVE_20230120_001, LIVE_20230120_002, p25pcw54983, v5b1651, or prior canonical output for 20230120_2; suffix _2 is reserved as LIVE_20230120_002 because a distinct same-date source candidate 20230120_1 also exists."
+  },
+  "playback_performed": false,
+  "media_download_performed": false,
+  "transcription_performed": false,
+  "segmentation_performed": false
+}
