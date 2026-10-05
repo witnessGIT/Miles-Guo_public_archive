@@ -1,0 +1,41 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST_2_2_20230106_1-R002",
+  "source_candidate_id": "SC_GWINS_LIST_2_2_20230106_1",
+  "reviewed_by": "agent-20261004T133000Z-gpt56sol-chat-c2-serious",
+  "entry_mode": "ordinary_chat",
+  "reviewed_at": "2026-10-05T14:13:00Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20230106_001",
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_2.html",
+    "https://gwins.org/cn/milesguo/24198.html",
+    "https://miles.md/ldd",
+    "https://gettr.com/post/p243e2a5471",
+    "https://rumble.com/v5b0xbl-20230106-1.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "evidence_summary": {
+    "identity": "GWINS evidence identifies 24198/20230106_1; miles.md presents the same record.",
+    "date": "GWINS and miles.md agree on 2023-01-06.",
+    "title": "Candidate title agrees with miles.md.",
+    "platform_ids": [
+      "20230106_1",
+      "p243e2a5471",
+      "v5b0xbl"
+    ],
+    "source_relationships": "miles.md binds GETTR p243e2a5471 and Rumble v5b0xbl to GWINS 24198.",
+    "deduplication": "Fresh repository search found no prior use of p243e2a5471; no R002 review/completion existed for 20230106_1."
+  },
+  "playback_performed": false,
+  "media_download_performed": false,
+  "transcription_performed": false,
+  "segmentation_performed": false
+}
