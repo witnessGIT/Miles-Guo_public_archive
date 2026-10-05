@@ -308,7 +308,7 @@ def candidate_review_states(*, now: datetime | None = None) -> list[dict]:
 
         claim_expires_at = (
             active_claimed_at
-            + timedelta(hours=CANDIDATE_REVIEW_CLAIM_TIMEOUT_HOURS)
+            + timedelta(hours=claim_lease_hours(active_claim or {}))
             if active_claimed_at is not None
             else None
         )
@@ -649,18 +649,32 @@ def task_completed(task_id: str) -> bool:
     return False
 
 
+def claim_lease_hours(payload: dict) -> float:
+    """Resolve the effective lease without rewriting immutable claim history.
+
+    Candidate reviews have a fixed policy lease. Their optional static-task
+    metadata cannot extend or shorten it, including on older chat claims.
+    Non-C2 tasks retain their existing configurable lease and fallback.
+    """
+    if (
+        str(payload.get("task_id") or "").startswith(CANDIDATE_REVIEW_PREFIX)
+        or payload.get("kind") == "candidate_promotion_review"
+    ):
+        return float(CANDIDATE_REVIEW_CLAIM_TIMEOUT_HOURS)
+    lease_hours = payload.get("static_claim_lease_hours", STATIC_CLAIM_LEASE_HOURS)
+    try:
+        return float(lease_hours)
+    except (TypeError, ValueError):
+        return float(STATIC_CLAIM_LEASE_HOURS)
+
+
 def claim_expired(payload: dict, *, now: datetime | None = None) -> bool:
     if str(payload.get("status") or "in_progress").lower() != "in_progress":
         return False
     claimed_at = parse_timestamp(payload.get("claimed_at"))
     if claimed_at is None:
         return False
-    lease_hours = payload.get("static_claim_lease_hours", STATIC_CLAIM_LEASE_HOURS)
-    try:
-        lease_hours = float(lease_hours)
-    except (TypeError, ValueError):
-        lease_hours = float(STATIC_CLAIM_LEASE_HOURS)
-    expires_at = claimed_at + timedelta(hours=lease_hours)
+    expires_at = claimed_at + timedelta(hours=claim_lease_hours(payload))
     current = (now or datetime.now(timezone.utc)).astimezone(timezone.utc)
     return current >= expires_at
 
