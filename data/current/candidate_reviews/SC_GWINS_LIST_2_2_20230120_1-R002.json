@@ -1,0 +1,41 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST_2_2_20230120_1-R002",
+  "source_candidate_id": "SC_GWINS_LIST_2_2_20230120_1",
+  "reviewed_by": "agent-20261004T133000Z-gpt56sol-chat-c2-serious",
+  "entry_mode": "ordinary_chat",
+  "reviewed_at": "2026-10-05T13:47:00Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20230120_001",
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_2.html",
+    "https://gwins.org/cn/milesguo/24240.html",
+    "https://miles.md/en/cje",
+    "https://gettr.com/streaming/p25r0zpa22d",
+    "https://rumble.com/v5bsx3p-20230120-1.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "evidence_summary": {
+    "identity": "GWINS index/detail identify 20230120_1 as one distinct target video item; miles.md carries the same title/date/source relationship.",
+    "date": "GWINS detail publication date is 20230120 and agrees with candidate date 2023-01-20.",
+    "title": "GWINS detail title matches the candidate title; miles.md presents the same program title.",
+    "platform_ids": [
+      "20230120_1",
+      "p25r0zpa22d",
+      "v5bsx3p"
+    ],
+    "source_relationships": "GWINS detail 24240 directly exposes GETTR p25r0zpa22d and Rumble v5bsx3p; miles.md/en/cje lists the same media links and source page.",
+    "deduplication": "Fresh repository searches found no LIVE_20230120_001, p25r0zpa22d, v5bsx3p, or prior canonical output for 20230120_1. Existing 20230120_2 is a distinct same-date candidate already mapped to LIVE_20230120_002."
+  },
+  "playback_performed": false,
+  "media_download_performed": false,
+  "transcription_performed": false,
+  "segmentation_performed": false
+}
