@@ -1,0 +1,70 @@
+{
+  "evidence_version": "c2-metadata-evidence-v1",
+  "request_sha256": "35c9b91e060675a93f3d43e973af2044f17768b1ab54d533b7111fbf4bc834b6",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_20_20210808_2-R002",
+  "source_candidate_id": "SC_GWINS_LIST2_20_20210808_2",
+  "agent_id": "agent-20261006T191534Z-d915df7b",
+  "requested_url": "https://gwins.org/cn/milesguo/23237.html",
+  "fetched_at": "2026-10-06T19:36:36.215650+00:00",
+  "review_decision": null,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "source_text_imported": false,
+  "status": "fetched",
+  "http_status": 200,
+  "final_url": "https://gwins.org/cn/milesguo/23237.html",
+  "raw_bytes": 19674,
+  "raw_sha256": "964f9617b1d864692b64325631472b849813111128422f9f346dbf0a094a67ee",
+  "metadata_evidence": {
+    "page_title": "郭文贵2021年8月8日盖特 20210808_2尊敬的战友们好．共产党在全世界发动的又一次．一个又一个的．大革命，都是摧毁人类的文明．和二战后世界．共同创造的经济．和和平的军事合作体系，人类正面对巨大的安全和生存的挑战。",
+    "metadata": {
+      "description": "尊敬的战友们好！8月8号，55周年前是中国人灾难的日子，共产党在人民日报头版头条登出来，正式发动文化大革命，死了多少人呢，几千万直接死亡，上亿人死，这种残毒留在我们血"
+    },
+    "decoding": {
+      "codec": "utf-8",
+      "strict": false,
+      "replacement_count": 17,
+      "title_clean": true,
+      "warning": "Damaged fields are not reliable; clean excerpts only. Missing cues are not absence evidence."
+    },
+    "expected_source_video_id": "20210808_2",
+    "expected_id_visible": true,
+    "outbound_links": [
+      "https://gettr.com/post/p72hqr",
+      "https://rumble.com/v59hgdh-20210808-2.html",
+      "https://gettr.com/"
+    ],
+    "identity_type_cues": [
+      {
+        "paragraph_index": 2,
+        "excerpt": "郭文贵视频"
+      },
+      {
+        "paragraph_index": 20,
+        "excerpt": "视频链接：https://gettr.com/post/p72hqr"
+      },
+      {
+        "paragraph_index": 21,
+        "excerpt": "视频链接2：https://rumble.com/v59hgdh-20210808-2.html"
+      },
+      {
+        "paragraph_index": 27,
+        "excerpt": "塞琳，要戴贝雷帽，攻击他就攻击美军，领导北约，还有蛇妖闫说我们爆料革命全都是一帮的暴力分子，这帮孙子，现在应该还有5000人看他的直播，这就是毒啊，没拿过一分钱，没干过一件真事，完全蹭吃蹭喝从来没有给过别人，她照样还可以成为所谓的天使、英雄，这就是文化大革命的毒。"
+      },
+      {
+        "paragraph_index": 31,
+        "excerpt": "，中国的粮食将极大的短缺，混不到人吃人，还要人吃树皮可能，王岐山说的人吃草..七哥开始练吃草了..你看到了嘛，我已经开始吃草了，再直播这草都会被七哥吃了，没钱了嘛，粮食会短缺，但愿混不到人吃人，但人会吃草。"
+      },
+      {
+        "paragraph_index": 35,
+        "excerpt": "不和G-Fashion到底是怎么回事，有什么样的意义，大家没懂，等大家想明白了我再播，随时，有可能，我看到大家…盖文、推文、GTV直播..沾点边了，我就开始直播了，谢谢！"
+      },
+      {
+        "paragraph_index": 35,
+        "excerpt": "是怎么回事，有什么样的意义，大家没懂，等大家想明白了我再播，随时，有可能，我看到大家…盖文、推文、GTV直播..沾点边了，我就开始直播了，谢谢！"
+      }
+    ],
+    "cue_profile": "origin-context-v2",
+    "cue_warning": "Excerpts may discuss other recordings; a reviewer must resolve context. No automatic type decision."
+  }
+}

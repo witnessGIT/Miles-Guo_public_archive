@@ -1,0 +1,48 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_20_20210811_1-R002",
+  "source_candidate_id": "SC_GWINS_LIST2_20_20210811_1",
+  "reviewed_by": "agent-20261006T191534Z-d915df7b",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-06T19:36:48Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20210811_001",
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/23217.html",
+    "https://rumble.com/v59il7x-20210811-1.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "Exact GWINS detail page 23217 contains source video ID 20210811_1 and a clean matching page title.",
+    "date": "Candidate date 2021-08-11 agrees with the source ID and detail-page title; no publication time was inferred.",
+    "title": "郭文贵2021年8月11日直播 20210811_1 文贵解读什么是“时尚”和“俱乐部”；G|Fashion和G|Club 是新中国联邦，爆料革命与战友之间心血相融的必须的平台，而且会成为正道主义传播的重要的方式，和聚集财富的平台",
+    "platform_ids": {
+      "gwins_page_id": "23217",
+      "gwins_video_id": "20210811_1",
+      "rumble_ids": [
+        "v59il7x"
+      ]
+    },
+    "source_relationships": "Only exact outbound platform links exposed by the verified GWINS detail page were attached; generic homepages were excluded.",
+    "deduplication": "Exact detail/media URLs and source_video_id were checked against the active SQLite inventory built from Git at da5075bbe656330c808eec2f030e0e6587e547d6; exact matches link an existing canonical record, otherwise a date-scoped canonical ID is created without date-only merging."
+  },
+  "evidence_artifacts": [
+    "data/source_page_evidence/c2_metadata/C2-REVIEW-SC_GWINS_LIST2_20_20210811_1-R002/35c9b91e060675a9.json"
+  ],
+  "source_raw_sha256": "04274f0d8fd1e4cabd15d6b490c73debd1a65c00700e91492959bfda94c6ed48",
+  "limitations": [
+    "Public HTML metadata and outbound links only; linked media was not opened or played.",
+    "No media download, ASR, transcript import, timing transfer, segmentation, or content-truth judgment."
+  ],
+  "canonical_promotion_performed": true,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}
