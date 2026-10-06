@@ -1,0 +1,46 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_9_20220516_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_9_20220516_1",
+  "reviewed_by": "agent-20261006T191453Z-a890f4a8",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-06T20:09:32Z",
+  "decision": "rejected_not_target",
+  "canonical_live_id": null,
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_9.html",
+    "https://gwins.org/cn/milesguo/23938.html",
+    "https://gettr.com/post/p1a07kx1cf3",
+    "https://rumble.com/v5afgxh-20220516-1.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "Exact public GWINS page is bound to candidate SC_GWINS_LIST2_9_20220516_1 and page/source identifier list_2_9; identity visibility=True.",
+    "date": "Candidate date is 2022-05-16; no publication time was inferred.",
+    "title": "郭文贵2022年5月16日盖特 20220516_1",
+    "platform_ids": [
+      "20220516_1",
+      "list_2_9",
+      "p1a07kx1cf3",
+      "v5afgxh-20220516-1"
+    ],
+    "source_relationships": "Only exact public page URLs and concrete outbound platform links were retained; generic navigation links were excluded.",
+    "deduplication": "The exact GWINS title identifies a standalone GETTR update, short video, or rebroadcast rather than an original livestream."
+  },
+  "source_raw_sha256": "a0a6d3a7657f1fa50abb9187d4ae7902c90d295fd6103a9ab983f442bf24c99a",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false,
+  "rejection_reason": "The exact GWINS title identifies a standalone GETTR update, short video, or rebroadcast rather than an original livestream."
+}

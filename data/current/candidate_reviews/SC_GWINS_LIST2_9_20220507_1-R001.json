@@ -1,0 +1,45 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_9_20220507_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_9_20220507_1",
+  "reviewed_by": "agent-20261006T191453Z-a890f4a8",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-06T20:09:32Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20220507_001",
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_9.html",
+    "https://gwins.org/cn/milesguo/23874.html",
+    "https://gettr.com/streaming/p18pki5140c",
+    "https://rumble.com/v5aevp1-20220507-1.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "Exact public GWINS page is bound to candidate SC_GWINS_LIST2_9_20220507_1 and page/source identifier list_2_9; identity visibility=True.",
+    "date": "Candidate date is 2022-05-07; no publication time was inferred.",
+    "title": "郭文贵2022年5月7日直播 20220507_1",
+    "platform_ids": [
+      "20220507_1",
+      "list_2_9",
+      "streaming/p18pki5140c",
+      "v5aevp1-20220507-1"
+    ],
+    "source_relationships": "Only exact public page URLs and concrete outbound platform links were retained; generic navigation links were excluded.",
+    "deduplication": "The exact GWINS title explicitly identifies an original livestream."
+  },
+  "source_raw_sha256": "fcafd92d6b61dbfcdbca056923121a660c7ca9f01976a18e67b44b6f92864344",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": true,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}
