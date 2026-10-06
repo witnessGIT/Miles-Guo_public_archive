@@ -1,0 +1,40 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GETTR_P42FXPH70A2-R001",
+  "source_candidate_id": "SC_GETTR_P42FXPH70A2",
+  "reviewed_by": "agent-20261006T191453Z-a890f4a8",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-06T20:10:46Z",
+  "decision": "rejected_not_target",
+  "canonical_live_id": null,
+  "evidence_urls": [
+    "https://gettr.com/post/p42fxph70a2"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "Exact public GETTRSEARCH page is bound to candidate SC_GETTR_P42FXPH70A2 and page/source identifier p42fxph70a2; identity visibility=False.",
+    "date": "Candidate date is 2026-08-03; no publication time was inferred.",
+    "title": "2026年8月3日 #联盟工作汇报 直播内容",
+    "platform_ids": [
+      "p42fxph70a2"
+    ],
+    "source_relationships": "Only exact public page URLs and concrete outbound platform links were retained; generic navigation links were excluded.",
+    "deduplication": "The exact GETTR page is a report, text summary, legal update, livestream reference, or another host's program rather than an original Miles Guo livestream."
+  },
+  "source_raw_sha256": "52155e2d07100c12412bc5e7a6e53d678dc2046c701261d33dac0549eba3612e",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false,
+  "rejection_reason": "The exact GETTR page is a report, text summary, legal update, livestream reference, or another host's program rather than an original Miles Guo livestream."
+}
