@@ -1,0 +1,52 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_13_20220116_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_13_20220116_1",
+  "reviewed_by": "agent-20261006T191534Z-d915df7b",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-06T20:04:12Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20220116_001",
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/23741.html",
+    "https://gettr.com/post/ponfef75ca",
+    "https://rumble.com/v5a4ilu-20220116-1.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "Exact GWINS detail page 23741 contains source video ID 20220116_1 and a clean matching page title.",
+    "date": "Candidate date 2022-01-16 agrees with the source ID and detail-page title; no publication time was inferred.",
+    "title": "郭文贵2022年1月16日盖特 20220116_1 尊敬的战友们好……现在最重要的就是不要让病毒发生在你．和你家人的身上……共产党的邪恶力量的源泉……是西方乃至整个世界贪婪自私培养出来的结果，世界正在为此付出代价，人类中的最",
+    "platform_ids": {
+      "gwins_page_id": "23741",
+      "gwins_video_id": "20220116_1",
+      "gettr_ids": [
+        "post:ponfef75ca"
+      ],
+      "rumble_ids": [
+        "v5a4ilu"
+      ]
+    },
+    "source_relationships": "Only exact outbound platform links exposed by the verified GWINS detail page were attached; generic homepages were excluded.",
+    "deduplication": "Exact detail/media URLs and source_video_id were checked against the active SQLite inventory built from Git at cc3f10970b6f5dcf8abdb7d7bd7cc39d402f9068; exact matches link an existing canonical record, otherwise a date-scoped canonical ID is created without date-only merging."
+  },
+  "evidence_artifacts": [
+    "data/source_page_evidence/c2_metadata/C2-REVIEW-SC_GWINS_LIST2_13_20220116_1-R001/f02c96999f906e95.json"
+  ],
+  "source_raw_sha256": "2dad842167be80287e5444a9035cbec8f32b2a3a7b50fa6d64aae4aaae5367de",
+  "limitations": [
+    "Public HTML metadata and outbound links only; linked media was not opened or played.",
+    "No media download, ASR, transcript import, timing transfer, segmentation, or content-truth judgment."
+  ],
+  "canonical_promotion_performed": true,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}

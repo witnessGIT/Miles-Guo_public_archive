@@ -1,0 +1,48 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_13_20220114_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_13_20220114_1",
+  "reviewed_by": "agent-20261006T191534Z-d915df7b",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-06T20:04:12Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20220114_001",
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/23731.html",
+    "https://rumble.com/v5a4i91-20220114-1.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "Exact GWINS detail page 23731 contains source video ID 20220114_1 and a clean matching page title.",
+    "date": "Candidate date 2022-01-14 agrees with the source ID and detail-page title; no publication time was inferred.",
+    "title": "郭文贵2022年1月14日直播 20220114_1 为何YouTube在冬奥会前全面封杀爆料革命的频道；再谈病毒疫苗虚拟货币；Joe Rogan 加入盖特前后；小飞象获政庇意义何在",
+    "platform_ids": {
+      "gwins_page_id": "23731",
+      "gwins_video_id": "20220114_1",
+      "rumble_ids": [
+        "v5a4i91"
+      ]
+    },
+    "source_relationships": "Only exact outbound platform links exposed by the verified GWINS detail page were attached; generic homepages were excluded.",
+    "deduplication": "Exact detail/media URLs and source_video_id were checked against the active SQLite inventory built from Git at cc3f10970b6f5dcf8abdb7d7bd7cc39d402f9068; exact matches link an existing canonical record, otherwise a date-scoped canonical ID is created without date-only merging."
+  },
+  "evidence_artifacts": [
+    "data/source_page_evidence/c2_metadata/C2-REVIEW-SC_GWINS_LIST2_13_20220114_1-R001/f02c96999f906e95.json"
+  ],
+  "source_raw_sha256": "e5c14fd530613d03392753892b4b0c095962e27b002ccb877086d27608042c32",
+  "limitations": [
+    "Public HTML metadata and outbound links only; linked media was not opened or played.",
+    "No media download, ASR, transcript import, timing transfer, segmentation, or content-truth judgment."
+  ],
+  "canonical_promotion_performed": true,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}

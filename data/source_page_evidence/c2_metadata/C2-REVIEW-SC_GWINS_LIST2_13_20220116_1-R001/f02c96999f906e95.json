@@ -1,0 +1,58 @@
+{
+  "evidence_version": "c2-metadata-evidence-v1",
+  "request_sha256": "f02c96999f906e95ee049a2102801eb6842d5433baeae657c5054ed40f888a8e",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_13_20220116_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_13_20220116_1",
+  "agent_id": "agent-20261006T191534Z-d915df7b",
+  "requested_url": "https://gwins.org/cn/milesguo/23741.html",
+  "fetched_at": "2026-10-06T20:03:45.608754+00:00",
+  "review_decision": null,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "source_text_imported": false,
+  "status": "fetched",
+  "http_status": 200,
+  "final_url": "https://gwins.org/cn/milesguo/23741.html",
+  "raw_bytes": 18635,
+  "raw_sha256": "2dad842167be80287e5444a9035cbec8f32b2a3a7b50fa6d64aae4aaae5367de",
+  "metadata_evidence": {
+    "page_title": "郭文贵2022年1月16日盖特 20220116_1尊敬的战友们好……现在最重要的就是不要让病毒发生在你．和你家人的身上……共产党的邪恶力量的源泉……是西方乃至整个世界贪婪自私培养出来的结果，世界正在为此付出代价，人类中的最",
+    "metadata": {
+      "description": "1月16号，尊敬的战友们好。烈火焰焰欲壑难填呐！这家伙，这外面超级冷啊！现在大概在「零下」十二三度，当年小时候「零下」三十几度在外面玩。你说这人呐真是变化太大了。"
+    },
+    "decoding": {
+      "codec": "utf-8",
+      "strict": false,
+      "replacement_count": 17,
+      "title_clean": true,
+      "warning": "Damaged fields are not reliable; clean excerpts only. Missing cues are not absence evidence."
+    },
+    "expected_source_video_id": "20220116_1",
+    "expected_id_visible": true,
+    "outbound_links": [
+      "https://gettr.com/post/ponfef75ca",
+      "https://rumble.com/v5a4ilu-20220116-1.html",
+      "https://gettr.com/"
+    ],
+    "identity_type_cues": [
+      {
+        "paragraph_index": 2,
+        "excerpt": "郭文贵视频"
+      },
+      {
+        "paragraph_index": 20,
+        "excerpt": "视频链接：https://gettr.com/post/ponfef75ca"
+      },
+      {
+        "paragraph_index": 21,
+        "excerpt": "视频链接2：https://rumble.com/v5a4ilu-20220116-1.html"
+      },
+      {
+        "paragraph_index": 27,
+        "excerpt": "兄弟姐妹们，从昨天我录了那个盖特视频出去，大家可能都看到了这个世界多大的变化：日本现在感染率上升；欧洲感染率上升；美国现在是每天按百万计感染。我们的战友和生活当中太多人就被感染上了。兄弟姐妹们真得小心呐，真得小心呐！有的人说吃药 — “我吃药了” — 吃药"
+      }
+    ],
+    "cue_profile": "origin-context-v2",
+    "cue_warning": "Excerpts may discuss other recordings; a reviewer must resolve context. No automatic type decision."
+  }
+}

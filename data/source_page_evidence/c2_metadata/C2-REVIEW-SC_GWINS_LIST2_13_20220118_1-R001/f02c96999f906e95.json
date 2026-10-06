@@ -1,0 +1,55 @@
+{
+  "evidence_version": "c2-metadata-evidence-v1",
+  "request_sha256": "f02c96999f906e95ee049a2102801eb6842d5433baeae657c5054ed40f888a8e",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_13_20220118_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_13_20220118_1",
+  "agent_id": "agent-20261006T191534Z-d915df7b",
+  "requested_url": "https://gwins.org/cn/milesguo/23733.html",
+  "fetched_at": "2026-10-06T20:03:49.396059+00:00",
+  "review_decision": null,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "source_text_imported": false,
+  "status": "fetched",
+  "http_status": 200,
+  "final_url": "https://gwins.org/cn/milesguo/23733.html",
+  "raw_bytes": 9549,
+  "raw_sha256": "85c8611e8c8ffa742282d705eba760bfc31a65b92771cea1fa04c9175cca133b",
+  "metadata_evidence": {
+    "page_title": "郭文贵2022年1月18日直播 20220118_1",
+    "metadata": {},
+    "decoding": {
+      "codec": "utf-8",
+      "strict": false,
+      "replacement_count": 17,
+      "title_clean": true,
+      "warning": "Damaged fields are not reliable; clean excerpts only. Missing cues are not absence evidence."
+    },
+    "expected_source_video_id": "20220118_1",
+    "expected_id_visible": true,
+    "outbound_links": [
+      "https://rumble.com/v5a5ovd-20220118-1.html",
+      "https://gettr.com/"
+    ],
+    "identity_type_cues": [
+      {
+        "paragraph_index": 0,
+        "excerpt": "郭文贵2022年1月18日直播 20220118_1"
+      },
+      {
+        "paragraph_index": 2,
+        "excerpt": "郭文贵视频"
+      },
+      {
+        "paragraph_index": 20,
+        "excerpt": "视频链接：https://odysee.com/@laxi:4/20220118_1:c"
+      },
+      {
+        "paragraph_index": 21,
+        "excerpt": "视频链接2：https://rumble.com/v5a5ovd-20220118-1.html"
+      }
+    ],
+    "cue_profile": "origin-context-v2",
+    "cue_warning": "Excerpts may discuss other recordings; a reviewer must resolve context. No automatic type decision."
+  }
+}

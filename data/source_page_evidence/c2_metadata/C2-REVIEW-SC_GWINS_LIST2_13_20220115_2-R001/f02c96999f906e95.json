@@ -1,0 +1,66 @@
+{
+  "evidence_version": "c2-metadata-evidence-v1",
+  "request_sha256": "f02c96999f906e95ee049a2102801eb6842d5433baeae657c5054ed40f888a8e",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_13_20220115_2-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_13_20220115_2",
+  "agent_id": "agent-20261006T191534Z-d915df7b",
+  "requested_url": "https://gwins.org/cn/milesguo/23740.html",
+  "fetched_at": "2026-10-06T20:03:44.375420+00:00",
+  "review_decision": null,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "source_text_imported": false,
+  "status": "fetched",
+  "http_status": 200,
+  "final_url": "https://gwins.org/cn/milesguo/23740.html",
+  "raw_bytes": 13822,
+  "raw_sha256": "7199d44ce172323df471873157d6cc8608e7f363dee93ed9e78479fb7431ac5f",
+  "metadata_evidence": {
+    "page_title": "郭文贵2022年1月15日盖特 20220115_2尊敬的战友们好文贵在这里????????????????????????????????????????衷心地，祈求所有的战友们????????????????????????????????????认真的严肃的防止被感染病毒，做好一切灾难到来的物资的储备，一切都已经开始！",
+    "metadata": {
+      "description": "尊敬的战友们好，2022年1月15日。 我从昨天到现在忙，兄弟姐妹们，我今天再次给大家说我真是感觉到这个世界上现在病毒离每个人都太近了！就我这块儿收到的信息「关于"
+    },
+    "decoding": {
+      "codec": "utf-8",
+      "strict": false,
+      "replacement_count": 17,
+      "title_clean": true,
+      "warning": "Damaged fields are not reliable; clean excerpts only. Missing cues are not absence evidence."
+    },
+    "expected_source_video_id": "20220115_2",
+    "expected_id_visible": true,
+    "outbound_links": [
+      "https://gettr.com/post/pohbz5f05d",
+      "https://rumble.com/v5a4ihp-20220115-2.html",
+      "https://gettr.com/"
+    ],
+    "identity_type_cues": [
+      {
+        "paragraph_index": 2,
+        "excerpt": "郭文贵视频"
+      },
+      {
+        "paragraph_index": 20,
+        "excerpt": "视频链接：https://gettr.com/post/pohbz5f05d"
+      },
+      {
+        "paragraph_index": 21,
+        "excerpt": "视频链接2：https://rumble.com/v5a4ihp-20220115-2.html"
+      },
+      {
+        "paragraph_index": 30,
+        "excerpt": "大家不能染上病，大家一定要小心！这不是开玩笑的。7哥强烈的感受啊现在。拜托了，兄弟姐妹们，拜托了。其它事儿咱先别说了，明天可能继续直播，由于行程改变也可能直播或者星期一直播 — 请看盖特公告，好吧？兄弟姐妹们，拜托了，多小心！"
+      },
+      {
+        "paragraph_index": 30,
+        "excerpt": "要小心！这不是开玩笑的。7哥强烈的感受啊现在。拜托了，兄弟姐妹们，拜托了。其它事儿咱先别说了，明天可能继续直播，由于行程改变也可能直播或者星期一直播 — 请看盖特公告，好吧？兄弟姐妹们，拜托了，多小心！"
+      },
+      {
+        "paragraph_index": 30,
+        "excerpt": "开玩笑的。7哥强烈的感受啊现在。拜托了，兄弟姐妹们，拜托了。其它事儿咱先别说了，明天可能继续直播，由于行程改变也可能直播或者星期一直播 — 请看盖特公告，好吧？兄弟姐妹们，拜托了，多小心！"
+      }
+    ],
+    "cue_profile": "origin-context-v2",
+    "cue_warning": "Excerpts may discuss other recordings; a reviewer must resolve context. No automatic type decision."
+  }
+}

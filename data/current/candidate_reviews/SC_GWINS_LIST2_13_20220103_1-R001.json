@@ -1,0 +1,52 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_13_20220103_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_13_20220103_1",
+  "reviewed_by": "agent-20261006T191534Z-d915df7b",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-06T20:04:12Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20220103_001",
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/23654.html",
+    "https://gettr.com/streaming/plrbe5aa53",
+    "https://rumble.com/v5a1pjx-20220103-1.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "Exact GWINS detail page 23654 contains source video ID 20220103_1 and a clean matching page title.",
+    "date": "Candidate date 2022-01-03 agrees with the source ID and detail-page title; no publication time was inferred.",
+    "title": "郭文贵2022年1月3日盖特直播 20220103_1 健身乱聊吃过",
+    "platform_ids": {
+      "gwins_page_id": "23654",
+      "gwins_video_id": "20220103_1",
+      "gettr_ids": [
+        "streaming:plrbe5aa53"
+      ],
+      "rumble_ids": [
+        "v5a1pjx"
+      ]
+    },
+    "source_relationships": "Only exact outbound platform links exposed by the verified GWINS detail page were attached; generic homepages were excluded.",
+    "deduplication": "Exact detail/media URLs and source_video_id were checked against the active SQLite inventory built from Git at cc3f10970b6f5dcf8abdb7d7bd7cc39d402f9068; exact matches link an existing canonical record, otherwise a date-scoped canonical ID is created without date-only merging."
+  },
+  "evidence_artifacts": [
+    "data/source_page_evidence/c2_metadata/C2-REVIEW-SC_GWINS_LIST2_13_20220103_1-R001/954f9cbdfa6638a7.json"
+  ],
+  "source_raw_sha256": "401dfe550bb4501970de3db4c3dcc9881d0f57008d50264d38ce0b4935315cb1",
+  "limitations": [
+    "Public HTML metadata and outbound links only; linked media was not opened or played.",
+    "No media download, ASR, transcript import, timing transfer, segmentation, or content-truth judgment."
+  ],
+  "canonical_promotion_performed": true,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}

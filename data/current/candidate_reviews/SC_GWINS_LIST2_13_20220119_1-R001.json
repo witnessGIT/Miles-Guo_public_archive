@@ -1,0 +1,48 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_13_20220119_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_13_20220119_1",
+  "reviewed_by": "agent-20261006T191534Z-d915df7b",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-06T20:04:12Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20220119_001",
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/23734.html",
+    "https://rumble.com/v5a5u1p-20220119-1.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "Exact GWINS detail page 23734 contains source video ID 20220119_1 and a clean matching page title.",
+    "date": "Candidate date 2022-01-19 agrees with the source ID and detail-page title; no publication time was inferred.",
+    "title": "郭文贵2022年1月19日直播 20220119_1 太平联盟官司背后的故事；达沃斯已成中共倒闭论坛；与西方经济脱钩洞察其奸；疫苗政策盼转机有备无患",
+    "platform_ids": {
+      "gwins_page_id": "23734",
+      "gwins_video_id": "20220119_1",
+      "rumble_ids": [
+        "v5a5u1p"
+      ]
+    },
+    "source_relationships": "Only exact outbound platform links exposed by the verified GWINS detail page were attached; generic homepages were excluded.",
+    "deduplication": "Exact detail/media URLs and source_video_id were checked against the active SQLite inventory built from Git at cc3f10970b6f5dcf8abdb7d7bd7cc39d402f9068; exact matches link an existing canonical record, otherwise a date-scoped canonical ID is created without date-only merging."
+  },
+  "evidence_artifacts": [
+    "data/source_page_evidence/c2_metadata/C2-REVIEW-SC_GWINS_LIST2_13_20220119_1-R001/f02c96999f906e95.json"
+  ],
+  "source_raw_sha256": "c7344ee31282212ee76472e48887bab2c83e228f6192c6a5de3ab0075b5f74bd",
+  "limitations": [
+    "Public HTML metadata and outbound links only; linked media was not opened or played.",
+    "No media download, ASR, transcript import, timing transfer, segmentation, or content-truth judgment."
+  ],
+  "canonical_promotion_performed": true,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}

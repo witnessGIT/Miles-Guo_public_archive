@@ -1,0 +1,52 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_13_20220117_2-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_13_20220117_2",
+  "reviewed_by": "agent-20261006T191534Z-d915df7b",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-06T20:04:12Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20220117_002",
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/23742.html",
+    "https://gettr.com/post/poxm9i8a21",
+    "https://rumble.com/v5a5k0d-20220117-2.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "Exact GWINS detail page 23742 contains source video ID 20220117_2 and a clean matching page title.",
+    "date": "Candidate date 2022-01-17 agrees with the source ID and detail-page title; no publication time was inferred.",
+    "title": "郭文贵2022年1月17日盖特 20220117_2 尊敬的战友们好．征服不了自己的人……永远征服不了敌人……能让你自己不流泪，家人不流血的方式，就是必须要强大自己……强大自己的内心，坚定追求自己的信仰，才是最基本的，让你自己",
+    "platform_ids": {
+      "gwins_page_id": "23742",
+      "gwins_video_id": "20220117_2",
+      "gettr_ids": [
+        "post:poxm9i8a21"
+      ],
+      "rumble_ids": [
+        "v5a5k0d"
+      ]
+    },
+    "source_relationships": "Only exact outbound platform links exposed by the verified GWINS detail page were attached; generic homepages were excluded.",
+    "deduplication": "Exact detail/media URLs and source_video_id were checked against the active SQLite inventory built from Git at cc3f10970b6f5dcf8abdb7d7bd7cc39d402f9068; exact matches link an existing canonical record, otherwise a date-scoped canonical ID is created without date-only merging."
+  },
+  "evidence_artifacts": [
+    "data/source_page_evidence/c2_metadata/C2-REVIEW-SC_GWINS_LIST2_13_20220117_2-R001/f02c96999f906e95.json"
+  ],
+  "source_raw_sha256": "dc7fe582ad3577da8cf4b4163546556bd5761a179ca5a9340b389f29c40f7fee",
+  "limitations": [
+    "Public HTML metadata and outbound links only; linked media was not opened or played.",
+    "No media download, ASR, transcript import, timing transfer, segmentation, or content-truth judgment."
+  ],
+  "canonical_promotion_performed": true,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}

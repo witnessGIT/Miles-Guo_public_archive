@@ -1,0 +1,48 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_13_20220121_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_13_20220121_1",
+  "reviewed_by": "agent-20261006T191534Z-d915df7b",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-06T20:04:12Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20220121_001",
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/23735.html",
+    "https://rumble.com/v5a5yrh-20220121-1.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "Exact GWINS detail page 23735 contains source video ID 20220121_1 and a clean matching page title.",
+    "date": "Candidate date 2022-01-21 agrees with the source ID and detail-page title; no publication time was inferred.",
+    "title": "郭文贵2022年1月21日直播 20220121_1 全球疫苗政策与政治；冬奥会政治国际影响；邓小平南巡 江 曾 王 孟 ；喜币投资与喜币未来；中共大撒币与蓝金黄；盗国贼盗取人民财富",
+    "platform_ids": {
+      "gwins_page_id": "23735",
+      "gwins_video_id": "20220121_1",
+      "rumble_ids": [
+        "v5a5yrh"
+      ]
+    },
+    "source_relationships": "Only exact outbound platform links exposed by the verified GWINS detail page were attached; generic homepages were excluded.",
+    "deduplication": "Exact detail/media URLs and source_video_id were checked against the active SQLite inventory built from Git at cc3f10970b6f5dcf8abdb7d7bd7cc39d402f9068; exact matches link an existing canonical record, otherwise a date-scoped canonical ID is created without date-only merging."
+  },
+  "evidence_artifacts": [
+    "data/source_page_evidence/c2_metadata/C2-REVIEW-SC_GWINS_LIST2_13_20220121_1-R001/f02c96999f906e95.json"
+  ],
+  "source_raw_sha256": "dc5571a644f78b43c27d3f053e067d0e67f3e0a622c50f73454efc191601e56a",
+  "limitations": [
+    "Public HTML metadata and outbound links only; linked media was not opened or played.",
+    "No media download, ASR, transcript import, timing transfer, segmentation, or content-truth judgment."
+  ],
+  "canonical_promotion_performed": true,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}
