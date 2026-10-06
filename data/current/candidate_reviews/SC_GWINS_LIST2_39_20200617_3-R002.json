@@ -1,0 +1,52 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_39_20200617_3-R002",
+  "source_candidate_id": "SC_GWINS_LIST2_39_20200617_3",
+  "reviewed_by": "agent-20261006T191534Z-d915df7b",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-06T19:26:10Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20200617_003",
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/22205.html",
+    "https://youtu.be/pmuNqJAqA3o",
+    "https://rumble.com/v58kf9x-20200617-3.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "Exact GWINS detail page 22205 contains source video ID 20200617_3 and a clean matching page title.",
+    "date": "Candidate date 2020-06-17 agrees with the source ID and detail-page title; no publication time was inferred.",
+    "title": "郭文贵2020年6月17日视频 20200617_3 衷心地感谢硅谷的战友们在过去的24小时．提供的有关在硅谷寻找的房产信息，由于巨量的信息．导致了当地的房地产中介市场的混乱，我们现在指定由一个我们的战友小羊女士",
+    "platform_ids": {
+      "gwins_page_id": "22205",
+      "gwins_video_id": "20200617_3",
+      "youtube_ids": [
+        "pmuNqJAqA3o"
+      ],
+      "rumble_ids": [
+        "v58kf9x"
+      ]
+    },
+    "source_relationships": "Only exact outbound platform links exposed by the verified GWINS detail page were attached; generic homepages were excluded.",
+    "deduplication": "Exact detail/media URLs and source_video_id were checked against the active SQLite inventory built from Git at 53fe9dc522288849dc4a2eac524ee925bd02f847; exact matches link an existing canonical record, otherwise a date-scoped canonical ID is created without date-only merging."
+  },
+  "evidence_artifacts": [
+    "data/source_page_evidence/c2_metadata/C2-REVIEW-SC_GWINS_LIST2_39_20200617_3-R002/8db3580a71c6908e.json"
+  ],
+  "source_raw_sha256": "e9672213d35b8d823e855e7c9a397830cb8405c1d2ccf469c20e20b8cff705fc",
+  "limitations": [
+    "Public HTML metadata and outbound links only; linked media was not opened or played.",
+    "No media download, ASR, transcript import, timing transfer, segmentation, or content-truth judgment."
+  ],
+  "canonical_promotion_performed": true,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}

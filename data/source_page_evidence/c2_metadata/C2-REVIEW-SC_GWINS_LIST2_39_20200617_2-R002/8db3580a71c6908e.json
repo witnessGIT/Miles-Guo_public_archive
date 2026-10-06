@@ -1,0 +1,66 @@
+{
+  "evidence_version": "c2-metadata-evidence-v1",
+  "request_sha256": "8db3580a71c6908ec20d7a4bbbc58f94551fe828273977d44431df1653ab501a",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_39_20200617_2-R002",
+  "source_candidate_id": "SC_GWINS_LIST2_39_20200617_2",
+  "agent_id": "agent-20261006T191534Z-d915df7b",
+  "requested_url": "https://gwins.org/cn/milesguo/22204.html",
+  "fetched_at": "2026-10-06T19:21:31.846903+00:00",
+  "review_decision": null,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "source_text_imported": false,
+  "status": "fetched",
+  "http_status": 200,
+  "final_url": "https://gwins.org/cn/milesguo/22204.html",
+  "raw_bytes": 11490,
+  "raw_sha256": "63a116db1f3709566d93606b12128b4c4bd4ef215cbc8b5b1ce10b3c6010c1a6",
+  "metadata_evidence": {
+    "page_title": "郭文贵2020年6月17日视频 20200617_2有在旧金山湾区的战友们 请战友帮忙在斯坦福大学附近购买或租赁2万尺到4万尺的写字楼",
+    "metadata": {
+      "description": "    战友们，战友们，俺这深更半夜的啊，我这是半夜时间啊录的，那边都着急了，老让我走，让我睡觉。这样啊，湾区的啊，咱们旧金山湾区的战友们，有好多战友过去了，也都"
+    },
+    "decoding": {
+      "codec": "utf-8",
+      "strict": false,
+      "replacement_count": 17,
+      "title_clean": true,
+      "warning": "Damaged fields are not reliable; clean excerpts only. Missing cues are not absence evidence."
+    },
+    "expected_source_video_id": "20200617_2",
+    "expected_id_visible": true,
+    "outbound_links": [
+      "https://youtu.be/9VyBWQe35RQ",
+      "https://rumble.com/v58kf71-20200617-2.html",
+      "https://gettr.com/"
+    ],
+    "identity_type_cues": [
+      {
+        "paragraph_index": 0,
+        "excerpt": "郭文贵2020年6月17日视频 20200617_2有在旧金山湾区的战友们 请战友帮忙在斯坦福大学附近购买或租赁2万尺到4万尺的写字楼"
+      },
+      {
+        "paragraph_index": 2,
+        "excerpt": "郭文贵视频"
+      },
+      {
+        "paragraph_index": 10,
+        "excerpt": "郭文贵2020年6月17日视频 20200617_2"
+      },
+      {
+        "paragraph_index": 12,
+        "excerpt": "郭文贵2020年6月17日视频 20200617_2 有在旧金山湾区的战友们 请战友帮忙在斯坦福大学附近购买或租赁2万尺到4万尺的写字楼"
+      },
+      {
+        "paragraph_index": 20,
+        "excerpt": "视频链接：https://youtu.be/9VyBWQe35RQ"
+      },
+      {
+        "paragraph_index": 21,
+        "excerpt": "视频链接2：https://rumble.com/v58kf71-20200617-2.html"
+      }
+    ],
+    "cue_profile": "origin-context-v2",
+    "cue_warning": "Excerpts may discuss other recordings; a reviewer must resolve context. No automatic type decision."
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "evidence_version": "c2-metadata-evidence-v1",
+  "request_sha256": "8db3580a71c6908ec20d7a4bbbc58f94551fe828273977d44431df1653ab501a",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_39_20200615_5-R002",
+  "source_candidate_id": "SC_GWINS_LIST2_39_20200615_5",
+  "agent_id": "agent-20261006T191534Z-d915df7b",
+  "requested_url": "https://gwins.org/cn/milesguo/22201.html",
+  "fetched_at": "2026-10-06T19:21:24.987722+00:00",
+  "review_decision": null,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "source_text_imported": false,
+  "status": "fetched",
+  "http_status": 200,
+  "final_url": "https://gwins.org/cn/milesguo/22201.html",
+  "raw_bytes": 12846,
+  "raw_sha256": "92f866ff6b890fd9c67a64102c32001a462297124bf0524f703076491a7e3a34",
+  "metadata_evidence": {
+    "page_title": "郭文贵2020年6月15日视频 20200615_5很多人打电话问我关于VOA炒掉VOACEO阿曼达和很多人要采访我对此事的看法我没有兴趣接受任何人的采访我只在这里谈谈我个人的粗浅的看法",
+    "metadata": {
+      "description": "尊敬战友们好啊，今天是6月15号，大家刚才我发了盖特以后呢，大家知道这个，美国之音啊，他们还有很多其他地方人打电话问我，说这个阿曼达，这个被fail掉了啊。然后呢，他自己公"
+    },
+    "decoding": {
+      "codec": "utf-8",
+      "strict": false,
+      "replacement_count": 17,
+      "title_clean": true,
+      "warning": "Damaged fields are not reliable; clean excerpts only. Missing cues are not absence evidence."
+    },
+    "expected_source_video_id": "20200615_5",
+    "expected_id_visible": true,
+    "outbound_links": [
+      "https://youtu.be/GhaZ2L1MrvA",
+      "https://rumble.com/v58keid-20200615-5.html",
+      "https://gettr.com/"
+    ],
+    "identity_type_cues": [
+      {
+        "paragraph_index": 0,
+        "excerpt": "郭文贵2020年6月15日视频 20200615_5很多人打电话问我关于VOA炒掉VOACEO阿曼达和很多人要采访我对此事的看法我没有兴趣接受任何人的采访我只在这里谈谈我个人的粗浅的看法"
+      },
+      {
+        "paragraph_index": 2,
+        "excerpt": "郭文贵视频"
+      },
+      {
+        "paragraph_index": 10,
+        "excerpt": "郭文贵2020年6月15日视频 20200615_5"
+      },
+      {
+        "paragraph_index": 12,
+        "excerpt": "郭文贵2020年6月15日视频 20200615_5 很多人打电话问我关于VOA炒掉VOACEO阿曼达和很多人要采访我对此事的看法我没有兴趣接受任何人的采访我只在这里谈谈我个人的粗浅的看法"
+      },
+      {
+        "paragraph_index": 20,
+        "excerpt": "视频链接：https://youtu.be/GhaZ2L1MrvA"
+      },
+      {
+        "paragraph_index": 21,
+        "excerpt": "视频链接2：https://rumble.com/v58keid-20200615-5.html"
+      }
+    ],
+    "cue_profile": "origin-context-v2",
+    "cue_warning": "Excerpts may discuss other recordings; a reviewer must resolve context. No automatic type decision."
+  }
+}

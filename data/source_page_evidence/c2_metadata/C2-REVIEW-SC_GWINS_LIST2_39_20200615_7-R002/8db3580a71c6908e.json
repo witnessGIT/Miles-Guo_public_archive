@@ -1,0 +1,74 @@
+{
+  "evidence_version": "c2-metadata-evidence-v1",
+  "request_sha256": "8db3580a71c6908ec20d7a4bbbc58f94551fe828273977d44431df1653ab501a",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_39_20200615_7-R002",
+  "source_candidate_id": "SC_GWINS_LIST2_39_20200615_7",
+  "agent_id": "agent-20261006T191534Z-d915df7b",
+  "requested_url": "https://gwins.org/cn/milesguo/22203.html",
+  "fetched_at": "2026-10-06T19:21:27.720350+00:00",
+  "review_decision": null,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "source_text_imported": false,
+  "status": "fetched",
+  "http_status": 200,
+  "final_url": "https://gwins.org/cn/milesguo/22203.html",
+  "raw_bytes": 11273,
+  "raw_sha256": "39ffcabf30a1f8e407823c9b2d10bd7c47a0a8ecd1a71e8eb3ab10d456471a86",
+  "metadata_evidence": {
+    "page_title": "郭文贵2020年6月15日视频 20200615_7今天不直播",
+    "metadata": {
+      "description": " 尊敬的战友们好啊，很多战友问我，今天直不直播，今天不直播了啊，这个我们等待着夏威夷，啊，这个看看这结果啊，共产党又出招了，但是我相信大家都知道啊。啊，什么中"
+    },
+    "decoding": {
+      "codec": "utf-8",
+      "strict": false,
+      "replacement_count": 17,
+      "title_clean": true,
+      "warning": "Damaged fields are not reliable; clean excerpts only. Missing cues are not absence evidence."
+    },
+    "expected_source_video_id": "20200615_7",
+    "expected_id_visible": true,
+    "outbound_links": [
+      "https://youtu.be/ab9faiI9yek",
+      "https://rumble.com/v58kenx-20200615-7.html",
+      "https://gettr.com/"
+    ],
+    "identity_type_cues": [
+      {
+        "paragraph_index": 0,
+        "excerpt": "郭文贵2020年6月15日视频 20200615_7今天不直播"
+      },
+      {
+        "paragraph_index": 2,
+        "excerpt": "郭文贵视频"
+      },
+      {
+        "paragraph_index": 10,
+        "excerpt": "郭文贵2020年6月15日视频 20200615_7"
+      },
+      {
+        "paragraph_index": 12,
+        "excerpt": "郭文贵2020年6月15日视频 20200615_7 今天不直播"
+      },
+      {
+        "paragraph_index": 20,
+        "excerpt": "视频链接：https://youtu.be/ab9faiI9yek"
+      },
+      {
+        "paragraph_index": 21,
+        "excerpt": "视频链接2：https://rumble.com/v58kenx-20200615-7.html"
+      },
+      {
+        "paragraph_index": 26,
+        "excerpt": "尊敬的战友们好啊，很多战友问我，今天直不直播，今天不直播了啊，这个我们等待着夏威夷，啊，这个看看这结果啊，共产党又出招了，但是我相信大家都知道啊。啊，什么中美最谈啊，什么中美这个战略最谈啊，然后什么再有一年的时间呢，1000个中美关系结婚的理由啊，是吧，还有一个7"
+      },
+      {
+        "paragraph_index": 26,
+        "excerpt": "尊敬的战友们好啊，很多战友问我，今天直不直播，今天不直播了啊，这个我们等待着夏威夷，啊，这个看看这结果啊，共产党又出招了，但是我相信大家都知道啊。啊，什么中美最谈啊，什么中美这个战略最谈啊，然后什么再有一年的时间呢，1000个中美关系结婚的理由啊，是吧，还有一个720后的90"
+      }
+    ],
+    "cue_profile": "origin-context-v2",
+    "cue_warning": "Excerpts may discuss other recordings; a reviewer must resolve context. No automatic type decision."
+  }
+}

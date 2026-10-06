@@ -1,0 +1,70 @@
+{
+  "evidence_version": "c2-metadata-evidence-v1",
+  "request_sha256": "8db3580a71c6908ec20d7a4bbbc58f94551fe828273977d44431df1653ab501a",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_39_20200615_3-R002",
+  "source_candidate_id": "SC_GWINS_LIST2_39_20200615_3",
+  "agent_id": "agent-20261006T191534Z-d915df7b",
+  "requested_url": "https://gwins.org/cn/milesguo/22199.html",
+  "fetched_at": "2026-10-06T19:21:22.223893+00:00",
+  "review_decision": null,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "source_text_imported": false,
+  "status": "fetched",
+  "http_status": 200,
+  "final_url": "https://gwins.org/cn/milesguo/22199.html",
+  "raw_bytes": 11376,
+  "raw_sha256": "c9f31122223a7a74599456a6a2aca013c31d9add6efd2e5dc1f3c2edfee13243",
+  "metadata_evidence": {
+    "page_title": "郭文贵2020年6月15日视频 20200615_3请应聘新中国联邦职务的战友们务必详细的提供你的个人信息和个人需求",
+    "metadata": {
+      "description": "    另外啊，很多战友给我发来这个招聘，招聘的这个信息啊，参与招聘，我刚才说了特别的伟大，特别的感谢啊。这个我希望所有的战友发这个应聘的时候，要把你的家庭背景"
+    },
+    "decoding": {
+      "codec": "utf-8",
+      "strict": false,
+      "replacement_count": 17,
+      "title_clean": true,
+      "warning": "Damaged fields are not reliable; clean excerpts only. Missing cues are not absence evidence."
+    },
+    "expected_source_video_id": "20200615_3",
+    "expected_id_visible": true,
+    "outbound_links": [
+      "https://youtu.be/f47eIOPFN1A",
+      "https://rumble.com/v58kedg-20200615-3.html",
+      "https://gettr.com/"
+    ],
+    "identity_type_cues": [
+      {
+        "paragraph_index": 0,
+        "excerpt": "郭文贵2020年6月15日视频 20200615_3请应聘新中国联邦职务的战友们务必详细的提供你的个人信息和个人需求"
+      },
+      {
+        "paragraph_index": 2,
+        "excerpt": "郭文贵视频"
+      },
+      {
+        "paragraph_index": 10,
+        "excerpt": "郭文贵2020年6月15日视频 20200615_3"
+      },
+      {
+        "paragraph_index": 12,
+        "excerpt": "郭文贵2020年6月15日视频 20200615_3 请应聘新中国联邦职务的战友们务必详细的提供你的个人信息和个人需求"
+      },
+      {
+        "paragraph_index": 20,
+        "excerpt": "视频链接：https://youtu.be/f47eIOPFN1A"
+      },
+      {
+        "paragraph_index": 21,
+        "excerpt": "视频链接2：https://rumble.com/v58kedg-20200615-3.html"
+      },
+      {
+        "paragraph_index": 27,
+        "excerpt": "兄弟姐妹们，刚才那个视频效果不太好，我觉得这个才好，咱们这个，这个裤子以后成为咱们Gfashion的经典之作，舒服极了。哎，兄弟姐妹们，哎呀，好消息太多啊，太好了，刚才那个软件好像不，这个多真实啊，这是没有任何的，那个什么录的非常差啊，中不中？"
+      }
+    ],
+    "cue_profile": "origin-context-v2",
+    "cue_warning": "Excerpts may discuss other recordings; a reviewer must resolve context. No automatic type decision."
+  }
+}

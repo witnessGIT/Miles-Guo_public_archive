@@ -1,0 +1,48 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_39_20200609_1-R002",
+  "source_candidate_id": "SC_GWINS_LIST2_39_20200609_1",
+  "reviewed_by": "agent-20261006T191534Z-d915df7b",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-06T19:26:10Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20200609_001",
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/2677.html",
+    "https://rumble.com/v58jjzx-20200609-1.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "Exact GWINS detail page 2677 contains source video ID 20200609_1 and a clean matching page title.",
+    "date": "Candidate date 2020-06-09 agrees with the source ID and detail-page title; no publication time was inferred.",
+    "title": "郭文贵2020年6月9日 20200609_1 关于G币的退款．诉讼．赔偿．一些问题．及如何拥有投资GTV老股的机会！的一些回答。",
+    "platform_ids": {
+      "gwins_page_id": "2677",
+      "gwins_video_id": "20200609_1",
+      "rumble_ids": [
+        "v58jjzx"
+      ]
+    },
+    "source_relationships": "Only exact outbound platform links exposed by the verified GWINS detail page were attached; generic homepages were excluded.",
+    "deduplication": "Exact detail/media URLs and source_video_id were checked against the active SQLite inventory built from Git at 53fe9dc522288849dc4a2eac524ee925bd02f847; exact matches link an existing canonical record, otherwise a date-scoped canonical ID is created without date-only merging."
+  },
+  "evidence_artifacts": [
+    "data/source_page_evidence/c2_metadata/C2-REVIEW-SC_GWINS_LIST2_39_20200609_1-R002/21587b234e8ec100.json"
+  ],
+  "source_raw_sha256": "b53e92d6304049dae00ff492eceab0d7d8f13186f76afb1748d4bf47972304fd",
+  "limitations": [
+    "Public HTML metadata and outbound links only; linked media was not opened or played.",
+    "No media download, ASR, transcript import, timing transfer, segmentation, or content-truth judgment."
+  ],
+  "canonical_promotion_performed": true,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}

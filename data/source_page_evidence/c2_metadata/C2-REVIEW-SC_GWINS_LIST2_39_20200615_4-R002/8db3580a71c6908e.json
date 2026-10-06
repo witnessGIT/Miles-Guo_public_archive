@@ -1,0 +1,74 @@
+{
+  "evidence_version": "c2-metadata-evidence-v1",
+  "request_sha256": "8db3580a71c6908ec20d7a4bbbc58f94551fe828273977d44431df1653ab501a",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_39_20200615_4-R002",
+  "source_candidate_id": "SC_GWINS_LIST2_39_20200615_4",
+  "agent_id": "agent-20261006T191534Z-d915df7b",
+  "requested_url": "https://gwins.org/cn/milesguo/22200.html",
+  "fetched_at": "2026-10-06T19:21:23.670164+00:00",
+  "review_decision": null,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "source_text_imported": false,
+  "status": "fetched",
+  "http_status": 200,
+  "final_url": "https://gwins.org/cn/milesguo/22200.html",
+  "raw_bytes": 12716,
+  "raw_sha256": "8ea91ff34a22b163e78439ecee6e0a2819ac4e4cc69849632b24f45b5c5bed99",
+  "metadata_evidence": {
+    "page_title": "郭文贵2020年6月15日视频 20200615_4文贵衷心地向战友们就昨天错误的发出新中国联邦部长及副总理招聘广告衷心地向你们道歉️文贵将在视频中骑狗惩罚自己",
+    "metadata": {
+      "description": "    嗯，接着我再来一段儿，接下去还是6月15号啊，这个就是说，啊昨天，我们由于咱们在新中国联邦刚成立啊，资源和人员啊，还都缺乏，所以说有些事儿还是错误的，这个我昨"
+    },
+    "decoding": {
+      "codec": "utf-8",
+      "strict": false,
+      "replacement_count": 17,
+      "title_clean": true,
+      "warning": "Damaged fields are not reliable; clean excerpts only. Missing cues are not absence evidence."
+    },
+    "expected_source_video_id": "20200615_4",
+    "expected_id_visible": true,
+    "outbound_links": [
+      "https://youtu.be/3lOkWZROlX8",
+      "https://rumble.com/v58kef9-20200615-4.html",
+      "https://gettr.com/"
+    ],
+    "identity_type_cues": [
+      {
+        "paragraph_index": 0,
+        "excerpt": "郭文贵2020年6月15日视频 20200615_4文贵衷心地向战友们就昨天错误的发出新中国联邦部长及副总理招聘广告衷心地向你们道歉️文贵将在视频中骑狗惩罚自己"
+      },
+      {
+        "paragraph_index": 0,
+        "excerpt": "0年6月15日视频 20200615_4文贵衷心地向战友们就昨天错误的发出新中国联邦部长及副总理招聘广告衷心地向你们道歉️文贵将在视频中骑狗惩罚自己"
+      },
+      {
+        "paragraph_index": 2,
+        "excerpt": "郭文贵视频"
+      },
+      {
+        "paragraph_index": 10,
+        "excerpt": "郭文贵2020年6月15日视频 20200615_4"
+      },
+      {
+        "paragraph_index": 12,
+        "excerpt": "郭文贵2020年6月15日视频 20200615_4 文贵衷心地向战友们就昨天错误的发出新中国联邦部长及副总理招聘广告衷心地向你们道歉️文贵将在视频中骑狗惩罚自己"
+      },
+      {
+        "paragraph_index": 12,
+        "excerpt": "年6月15日视频 20200615_4 文贵衷心地向战友们就昨天错误的发出新中国联邦部长及副总理招聘广告衷心地向你们道歉️文贵将在视频中骑狗惩罚自己"
+      },
+      {
+        "paragraph_index": 20,
+        "excerpt": "视频链接：https://youtu.be/3lOkWZROlX8"
+      },
+      {
+        "paragraph_index": 21,
+        "excerpt": "视频链接2：https://rumble.com/v58kef9-20200615-4.html"
+      }
+    ],
+    "cue_profile": "origin-context-v2",
+    "cue_warning": "Excerpts may discuss other recordings; a reviewer must resolve context. No automatic type decision."
+  }
+}

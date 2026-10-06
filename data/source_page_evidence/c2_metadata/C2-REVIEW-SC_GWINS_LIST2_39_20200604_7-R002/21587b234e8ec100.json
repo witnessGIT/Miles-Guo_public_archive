@@ -1,0 +1,63 @@
+{
+  "evidence_version": "c2-metadata-evidence-v1",
+  "request_sha256": "21587b234e8ec1006bdedc59271570c0353960e312908d15379bc518ed4dcc7c",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_39_20200604_7-R002",
+  "source_candidate_id": "SC_GWINS_LIST2_39_20200604_7",
+  "agent_id": "agent-20261006T191534Z-d915df7b",
+  "requested_url": "https://gwins.org/cn/milesguo/23719.html",
+  "fetched_at": "2026-10-06T19:21:35.602562+00:00",
+  "review_decision": null,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "source_text_imported": false,
+  "status": "fetched",
+  "http_status": 200,
+  "final_url": "https://gwins.org/cn/milesguo/23719.html",
+  "raw_bytes": 9794,
+  "raw_sha256": "e4becda05d39b55ef42c448dee5a4cb48be27412126b06b54a25ad959c618b10",
+  "metadata_evidence": {
+    "page_title": "郭文贵2020年6月4日gtv视频 20200604_7讲述国旗上面的七七四十九宇宙之星， 心中之星，太阳之心",
+    "metadata": {},
+    "decoding": {
+      "codec": "utf-8",
+      "strict": false,
+      "replacement_count": 17,
+      "title_clean": true,
+      "warning": "Damaged fields are not reliable; clean excerpts only. Missing cues are not absence evidence."
+    },
+    "expected_source_video_id": "20200604_7",
+    "expected_id_visible": true,
+    "outbound_links": [
+      "https://rumble.com/v58jhut-20200604-7.html",
+      "https://gettr.com/"
+    ],
+    "identity_type_cues": [
+      {
+        "paragraph_index": 0,
+        "excerpt": "郭文贵2020年6月4日gtv视频 20200604_7讲述国旗上面的七七四十九宇宙之星， 心中之星，太阳之心"
+      },
+      {
+        "paragraph_index": 2,
+        "excerpt": "郭文贵视频"
+      },
+      {
+        "paragraph_index": 10,
+        "excerpt": "郭文贵2020年6月4日gtv视频 20200604_7"
+      },
+      {
+        "paragraph_index": 12,
+        "excerpt": "郭文贵2020年6月4日gtv视频 20200604_7 讲述国旗上面的七七四十九宇宙之星， 心中之星，太阳之心"
+      },
+      {
+        "paragraph_index": 20,
+        "excerpt": "视频链接：https://odysee.com/@laxi:4/20200604_7:4"
+      },
+      {
+        "paragraph_index": 21,
+        "excerpt": "视频链接2：https://rumble.com/v58jhut-20200604-7.html"
+      }
+    ],
+    "cue_profile": "origin-context-v2",
+    "cue_warning": "Excerpts may discuss other recordings; a reviewer must resolve context. No automatic type decision."
+  }
+}
