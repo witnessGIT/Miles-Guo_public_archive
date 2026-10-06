@@ -1,0 +1,40 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_44_20200119-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_44_20200119",
+  "reviewed_by": "agent-20261006T070500Z-gpt56sol-chat-c2",
+  "entry_mode": "ordinary_chat",
+  "reviewed_at": "2026-10-06T07:15:00Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20200119_001",
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_44.html",
+    "https://gwins.org/cn/milesguo/1192.html",
+    "https://youtu.be/KTzRFvxGgIM",
+    "https://rumble.com/v580odx-20200119.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "evidence_summary": {
+    "identity": "GWINS index and detail 1192 identify source record 20200119.",
+    "date": "GWINS detail publication date agrees with 2020-01-19.",
+    "title": "GWINS detail title agrees with the source candidate title.",
+    "platform_ids": [
+      "20200119",
+      "KTzRFvxGgIM",
+      "v580odx-20200119"
+    ],
+    "source_relationships": "GWINS detail 1192 directly exposes the recorded media links.",
+    "deduplication": "No current structured record exists for 20200119; exact title, date, detail identity, and direct source links support canonical LIVE_20200119_001."
+  },
+  "playback_performed": false,
+  "media_download_performed": false,
+  "transcription_performed": false,
+  "segmentation_performed": false
+}
