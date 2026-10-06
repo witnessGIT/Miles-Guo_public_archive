@@ -1,0 +1,40 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GETTR_P42UY8I2ABC_DETAIL-R001",
+  "source_candidate_id": "SC_GETTR_P42UY8I2ABC_DETAIL",
+  "reviewed_by": "agent-20261006T191453Z-a890f4a8",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-06T20:12:24Z",
+  "decision": "rejected_not_target",
+  "canonical_live_id": null,
+  "evidence_urls": [
+    "https://gettr.com/post/p42uy8i2abc"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "Exact public GETTRSEARCH page is bound to candidate SC_GETTR_P42UY8I2ABC_DETAIL and page/source identifier p42uy8i2abc; identity visibility=False.",
+    "date": "Candidate date is not independently established; no publication time was inferred.",
+    "title": "石头剪刀布 on GETTR: 二零二六年八月十七日的《#联盟工作汇报》直播内容，从 #青藤 秘书长与 #佳佳 汇报总结如下：\n\n一...",
+    "platform_ids": [
+      "p42uy8i2abc"
+    ],
+    "source_relationships": "Only exact public page URLs and concrete outbound platform links were retained; generic navigation links were excluded.",
+    "deduplication": "The exact GETTR page is a report, text summary, legal update, livestream reference, or another host's program rather than an original Miles Guo livestream."
+  },
+  "source_raw_sha256": "922e108a42d5d51ed023225b4d35cd039eba1e8eee1776b56244c96db824269d",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false,
+  "rejection_reason": "The exact GETTR page is a report, text summary, legal update, livestream reference, or another host's program rather than an original Miles Guo livestream."
+}
