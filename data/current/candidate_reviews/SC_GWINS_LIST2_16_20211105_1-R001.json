@@ -1,0 +1,48 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_16_20211105_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_16_20211105_1",
+  "reviewed_by": "agent-20261006T191534Z-d915df7b",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-06T20:05:49Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20211105_001",
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/23429.html",
+    "https://rumble.com/v59u2np-20211105-1.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "Exact GWINS detail page 23429 contains source video ID 20211105_1 and a clean matching page title.",
+    "date": "Candidate date 2021-11-05 agrees with the source ID and detail-page title; no publication time was inferred.",
+    "title": "郭文贵2021年11月5日直播 20211105_1 危机中的财富与财富中的危机；投资，投机，投票权的关系；喜币价格涨的真实性，公平性，对比香港恒生指数的虚假；无知无善，一定要付出法律的代价",
+    "platform_ids": {
+      "gwins_page_id": "23429",
+      "gwins_video_id": "20211105_1",
+      "rumble_ids": [
+        "v59u2np"
+      ]
+    },
+    "source_relationships": "Only exact outbound platform links exposed by the verified GWINS detail page were attached; generic homepages were excluded.",
+    "deduplication": "Exact detail/media URLs and source_video_id were checked against the active SQLite inventory built from Git at 0c4c829e27b143eb7830ca3a752c87a4ac9a9275; exact matches link an existing canonical record, otherwise a date-scoped canonical ID is created without date-only merging."
+  },
+  "evidence_artifacts": [
+    "data/source_page_evidence/c2_metadata/C2-REVIEW-SC_GWINS_LIST2_16_20211105_1-R001/0d767166c9ad7fdd.json"
+  ],
+  "source_raw_sha256": "842004d217ab0c3acc56e167b1867fa4d5290c78c4e0a16be9087f9538febd8a",
+  "limitations": [
+    "Public HTML metadata and outbound links only; linked media was not opened or played.",
+    "No media download, ASR, transcript import, timing transfer, segmentation, or content-truth judgment."
+  ],
+  "canonical_promotion_performed": true,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}

@@ -1,0 +1,52 @@
+{
+  "evidence_version": "c2-metadata-evidence-v1",
+  "request_sha256": "0d767166c9ad7fdd9d8158b6225f66f2a2874f099f4f3e5b0e9e24a2767d101d",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_16_20211028_2-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_16_20211028_2",
+  "agent_id": "agent-20261006T191534Z-d915df7b",
+  "requested_url": "https://gwins.org/cn/milesguo/23432.html",
+  "fetched_at": "2026-10-06T20:05:24.469545+00:00",
+  "review_decision": null,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "source_text_imported": false,
+  "status": "fetched",
+  "http_status": 200,
+  "final_url": "https://gwins.org/cn/milesguo/23432.html",
+  "raw_bytes": 10113,
+  "raw_sha256": "bf3ccb0a8cd01afd0d9550d57382f4c0268d0d5293df157396d794394316bd00",
+  "metadata_evidence": {
+    "page_title": "郭文贵2021年10月28日盖特 20211028_2尊敬的战友们好．拜托大家涡轮腹拉器的时候，每一组千万不要做超过12个，否则会伤到身体。科学健身，快乐健身．才是新中国联邦人在追求。",
+    "metadata": {},
+    "decoding": {
+      "codec": "utf-8",
+      "strict": false,
+      "replacement_count": 17,
+      "title_clean": true,
+      "warning": "Damaged fields are not reliable; clean excerpts only. Missing cues are not absence evidence."
+    },
+    "expected_source_video_id": "20211028_2",
+    "expected_id_visible": true,
+    "outbound_links": [
+      "https://gettr.com/post/pffnk596d8",
+      "https://rumble.com/v59s2ul-20211028-2.html",
+      "https://gettr.com/"
+    ],
+    "identity_type_cues": [
+      {
+        "paragraph_index": 2,
+        "excerpt": "郭文贵视频"
+      },
+      {
+        "paragraph_index": 20,
+        "excerpt": "视频链接：https://gettr.com/post/pffnk596d8"
+      },
+      {
+        "paragraph_index": 21,
+        "excerpt": "视频链接2：https://rumble.com/v59s2ul-20211028-2.html"
+      }
+    ],
+    "cue_profile": "origin-context-v2",
+    "cue_warning": "Excerpts may discuss other recordings; a reviewer must resolve context. No automatic type decision."
+  }
+}

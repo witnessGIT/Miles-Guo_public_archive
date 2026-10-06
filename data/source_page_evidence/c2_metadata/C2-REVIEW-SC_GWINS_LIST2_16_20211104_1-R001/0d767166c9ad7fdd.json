@@ -1,0 +1,62 @@
+{
+  "evidence_version": "c2-metadata-evidence-v1",
+  "request_sha256": "0d767166c9ad7fdd9d8158b6225f66f2a2874f099f4f3e5b0e9e24a2767d101d",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_16_20211104_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_16_20211104_1",
+  "agent_id": "agent-20261006T191534Z-d915df7b",
+  "requested_url": "https://gwins.org/cn/milesguo/23438.html",
+  "fetched_at": "2026-10-06T20:05:37.376078+00:00",
+  "review_decision": null,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "source_text_imported": false,
+  "status": "fetched",
+  "http_status": 200,
+  "final_url": "https://gwins.org/cn/milesguo/23438.html",
+  "raw_bytes": 14013,
+  "raw_sha256": "d7f420ceaa5414b9c7c38dff58dc26510063167c3191ecf25de281bd437e714a",
+  "metadata_evidence": {
+    "page_title": "郭文贵2021年11月4日盖特 20211104_1尊敬的战友们好！你们健身了吗？传播CCP病毒，香港灾难和疫苗解药的真相了吗？一切都已经开始！",
+    "metadata": {
+      "description": "刚才录了半天没录上，我的天呐；刚才我嘚不嘚录了半天，发现没录上，讨厌。很多国内战友都说，“着急啊，7哥，我特别相信你，想办法都在开喜美元账号。” 我特别讨厌这"
+    },
+    "decoding": {
+      "codec": "utf-8",
+      "strict": false,
+      "replacement_count": 17,
+      "title_clean": true,
+      "warning": "Damaged fields are not reliable; clean excerpts only. Missing cues are not absence evidence."
+    },
+    "expected_source_video_id": "20211104_1",
+    "expected_id_visible": true,
+    "outbound_links": [
+      "https://gettr.com/post/pg1kj3494c",
+      "https://rumble.com/v59tufp-20211104-1.html",
+      "https://gettr.com/"
+    ],
+    "identity_type_cues": [
+      {
+        "paragraph_index": 2,
+        "excerpt": "郭文贵视频"
+      },
+      {
+        "paragraph_index": 20,
+        "excerpt": "视频链接：https://gettr.com/post/pg1kj3494c"
+      },
+      {
+        "paragraph_index": 21,
+        "excerpt": "视频链接2：https://rumble.com/v59tufp-20211104-1.html"
+      },
+      {
+        "paragraph_index": 26,
+        "excerpt": "刚才录了半天没录上，我的天呐；刚才我嘚不嘚录了半天，发现没录上，讨厌。很多国内战友都说，“着急啊，7哥，我特别相信你，想办法都在开喜美元账号。” 我特别讨厌这话！从小到大，我最不在乎就是你信不信我。你信不信我跟我有什么关系？ — 那是你"
+      },
+      {
+        "paragraph_index": 26,
+        "excerpt": "刚才录了半天没录上，我的天呐；刚才我嘚不嘚录了半天，发现没录上，讨厌。很多国内战友都说，“着急啊，7哥，我特别相信你，想办法都在开喜美元账号。” 我特别讨厌这话！从小到大，我最不在乎就是你信不信我。你信不信我跟我有什么关系？ — 那是你的事。现在很多人我不需要你信我，我需要你赚钱"
+      }
+    ],
+    "cue_profile": "origin-context-v2",
+    "cue_warning": "Excerpts may discuss other recordings; a reviewer must resolve context. No automatic type decision."
+  }
+}

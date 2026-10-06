@@ -1,0 +1,48 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_16_20211103_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_16_20211103_1",
+  "reviewed_by": "agent-20261006T191534Z-d915df7b",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-06T20:05:49Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20211103_001",
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/23428.html",
+    "https://rumble.com/v59tu6y-20211103-1.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "Exact GWINS detail page 23428 contains source video ID 20211103_1 and a clean matching page title.",
+    "date": "Candidate date 2021-11-03 agrees with the source ID and detail-page title; no publication time was inferred.",
+    "title": "郭文贵2021年11月3日直播 20211103_1 彭帅爆张高丽丑闻，再次验证爆料革命的真实性；喜交所的上市标志着新中国联邦的中央银行，铸币中心成立了，这是新中国联邦人永远的财产；房地产税会灭国灭党；共和党在弗吉尼亚州长竞选",
+    "platform_ids": {
+      "gwins_page_id": "23428",
+      "gwins_video_id": "20211103_1",
+      "rumble_ids": [
+        "v59tu6y"
+      ]
+    },
+    "source_relationships": "Only exact outbound platform links exposed by the verified GWINS detail page were attached; generic homepages were excluded.",
+    "deduplication": "Exact detail/media URLs and source_video_id were checked against the active SQLite inventory built from Git at 0c4c829e27b143eb7830ca3a752c87a4ac9a9275; exact matches link an existing canonical record, otherwise a date-scoped canonical ID is created without date-only merging."
+  },
+  "evidence_artifacts": [
+    "data/source_page_evidence/c2_metadata/C2-REVIEW-SC_GWINS_LIST2_16_20211103_1-R001/0d767166c9ad7fdd.json"
+  ],
+  "source_raw_sha256": "fc87214b908bbadf29688063afec05db28dd9645af817ad6097145b8d13f2be5",
+  "limitations": [
+    "Public HTML metadata and outbound links only; linked media was not opened or played.",
+    "No media download, ASR, transcript import, timing transfer, segmentation, or content-truth judgment."
+  ],
+  "canonical_promotion_performed": true,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}

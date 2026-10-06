@@ -1,0 +1,60 @@
+{
+  "evidence_version": "c2-metadata-evidence-v1",
+  "request_sha256": "0d767166c9ad7fdd9d8158b6225f66f2a2874f099f4f3e5b0e9e24a2767d101d",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_16_20211105_2-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_16_20211105_2",
+  "agent_id": "agent-20261006T191534Z-d915df7b",
+  "requested_url": "https://gwins.org/cn/milesguo/23439.html",
+  "fetched_at": "2026-10-06T20:05:39.946686+00:00",
+  "review_decision": null,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "source_text_imported": false,
+  "status": "fetched",
+  "http_status": 200,
+  "final_url": "https://gwins.org/cn/milesguo/23439.html",
+  "raw_bytes": 10185,
+  "raw_sha256": "5a15e2985d7cb0654467962873c029b22fae96c4caa0d350b4c63d02bc843460",
+  "metadata_evidence": {
+    "page_title": "郭文贵2021年11月5日盖特 20211105_2尊敬的战友们好，今天星期五的大直播前．提前锻炼，因为今天没有时间锻炼了……任何情况下都不要给自己的承诺．和目标．找任何借口放弃！一切都已经开始！",
+    "metadata": {},
+    "decoding": {
+      "codec": "utf-8",
+      "strict": false,
+      "replacement_count": 17,
+      "title_clean": true,
+      "warning": "Damaged fields are not reliable; clean excerpts only. Missing cues are not absence evidence."
+    },
+    "expected_source_video_id": "20211105_2",
+    "expected_id_visible": true,
+    "outbound_links": [
+      "https://gettr.com/post/pg4surff7b",
+      "https://rumble.com/v59u2qz-20211105-2.html",
+      "https://gettr.com/"
+    ],
+    "identity_type_cues": [
+      {
+        "paragraph_index": 0,
+        "excerpt": "郭文贵2021年11月5日盖特 20211105_2尊敬的战友们好，今天星期五的大直播前．提前锻炼，因为今天没有时间锻炼了……任何情况下都不要给自己的承诺．和目标．找任何借口放弃！一切都已经开始！"
+      },
+      {
+        "paragraph_index": 2,
+        "excerpt": "郭文贵视频"
+      },
+      {
+        "paragraph_index": 12,
+        "excerpt": "郭文贵2021年11月5日盖特 20211105_2 尊敬的战友们好，今天星期五的大直播前．提前锻炼，因为今天没有时间锻炼了……任何情况下都不要给自己的承诺．和目标．找任何借口放弃！一切都已经开始！"
+      },
+      {
+        "paragraph_index": 20,
+        "excerpt": "视频链接：https://gettr.com/post/pg4surff7b"
+      },
+      {
+        "paragraph_index": 21,
+        "excerpt": "视频链接2：https://rumble.com/v59u2qz-20211105-2.html"
+      }
+    ],
+    "cue_profile": "origin-context-v2",
+    "cue_warning": "Excerpts may discuss other recordings; a reviewer must resolve context. No automatic type decision."
+  }
+}
