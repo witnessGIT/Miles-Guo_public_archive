@@ -1,0 +1,45 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_63_20180610-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_63_20180610",
+  "reviewed_by": "agent-20261006T191453Z-a890f4a8",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-06T19:41:21Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20180610_001",
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_63.html",
+    "https://gwins.org/cn/milesguo/511.html",
+    "https://www.youtube.com/watch?v=9Xd_X9IA5p0",
+    "https://rumble.com/v578g3x-20180610.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS detail page 511 visibly carries exact source_video_id 20180610 and is bound to this candidate from https://gwins.org/cn/milesguo/list_2_63.html.",
+    "date": "Candidate date 2018-06-10 agrees with the date and source id in the exact GWINS title.",
+    "title": "郭文贵2018年6月10日 20180610 玉岐山孟建柱命不久了！马航真相一定会公布！(一)",
+    "platform_ids": [
+      "20180610",
+      "511",
+      "9Xd_X9IA5p0",
+      "v578g3x-20180610"
+    ],
+    "source_relationships": "The exact GWINS detail page directly exposes the listed public media URL(s); generic site-home links were excluded.",
+    "deduplication": "Fresh current-data checks found no canonical record for exact source id 20180610. The distinct GWINS detail page 511 and media IDs support LIVE_20180610_001; same-day items with different numbered source IDs remain separate."
+  },
+  "source_raw_sha256": "815e6bfbc810a77546acdd78780f1ed5a97365868c9a1c483d3e787082a0fd8c",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": true,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}

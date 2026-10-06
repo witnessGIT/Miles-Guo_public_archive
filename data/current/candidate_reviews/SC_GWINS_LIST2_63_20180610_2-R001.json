@@ -1,0 +1,45 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_63_20180610_2-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_63_20180610_2",
+  "reviewed_by": "agent-20261006T191453Z-a890f4a8",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-06T19:41:21Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20180610_002",
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_63.html",
+    "https://gwins.org/cn/milesguo/21795.html",
+    "https://youtu.be/Ye1kER7htdk",
+    "https://rumble.com/v578fy5-20180610-2.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS detail page 21795 visibly carries exact source_video_id 20180610_2 and is bound to this candidate from https://gwins.org/cn/milesguo/list_2_63.html.",
+    "date": "Candidate date 2018-06-10 agrees with the date and source id in the exact GWINS title.",
+    "title": "郭文贵2018年6月10日直播 20180610_2 文贵爆料第一階段启蒙期结束．正在准备第二階段．定点爆破！",
+    "platform_ids": [
+      "20180610_2",
+      "21795",
+      "Ye1kER7htdk",
+      "v578fy5-20180610-2"
+    ],
+    "source_relationships": "The exact GWINS detail page directly exposes the listed public media URL(s); generic site-home links were excluded.",
+    "deduplication": "Fresh current-data checks found no canonical record for exact source id 20180610_2. The distinct GWINS detail page 21795 and media IDs support LIVE_20180610_002; same-day items with different numbered source IDs remain separate."
+  },
+  "source_raw_sha256": "26f448a96001ad6f8b2f57f454c6a99c92a3357a09420295c2bb47830e8f2802",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": true,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}

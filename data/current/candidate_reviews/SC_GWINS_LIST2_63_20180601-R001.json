@@ -1,0 +1,46 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_63_20180601-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_63_20180601",
+  "reviewed_by": "agent-20261006T191453Z-a890f4a8",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-06T19:41:21Z",
+  "decision": "rejected_not_target",
+  "canonical_live_id": null,
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_63.html",
+    "https://gwins.org/cn/milesguo/509.html",
+    "https://www.youtube.com/watch?v=v4KBkgzTEoc",
+    "https://rumble.com/v578ev1-20180601.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS detail page 509 visibly carries exact source_video_id 20180601 and is bound to this candidate from https://gwins.org/cn/milesguo/list_2_63.html.",
+    "date": "Candidate date 2018-06-01 agrees with the date and source id in the exact GWINS title.",
+    "title": "郭文贵2018年6月1日 20180601 文贵视频为什么成为盗国贼的精神艾滋！",
+    "platform_ids": [
+      "20180601",
+      "509",
+      "v4KBkgzTEoc",
+      "v578ev1-20180601"
+    ],
+    "source_relationships": "The exact GWINS detail page directly exposes the listed public media URL(s); generic site-home links were excluded.",
+    "deduplication": "Compared the exact source id, date, title, detail page, and exposed platform IDs with the other fixed-batch candidates; retained as a distinct non-livestream candidate and did not merge it into a canonical live."
+  },
+  "source_raw_sha256": "b5c161d2e07654fc24c8eeea3661b3ccdb97f4578bb6370eb0ae0508476ae65f",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false,
+  "rejection_reason": "The exact GWINS title and current-item context identify a standalone recorded video, interview, or update rather than an original livestream; neighboring livestreams are explicitly labeled, while this record is preserved without canonical promotion."
+}

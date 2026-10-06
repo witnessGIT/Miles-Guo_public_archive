@@ -1,0 +1,45 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_63_20180611_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_63_20180611_1",
+  "reviewed_by": "agent-20261006T191453Z-a890f4a8",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-06T19:41:21Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20180611_001",
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_63.html",
+    "https://gwins.org/cn/milesguo/21796.html",
+    "https://youtu.be/u2pUYWmRyDI",
+    "https://rumble.com/v578g8d-20180611-1.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS detail page 21796 visibly carries exact source_video_id 20180611_1 and is bound to this candidate from https://gwins.org/cn/milesguo/list_2_63.html.",
+    "date": "Candidate date 2018-06-11 agrees with the date and source id in the exact GWINS title.",
+    "title": "郭文贵2018年6月11日直播 20180611_1 陈峰脑血管病急救．感谢黑客先生．大陆官场热离婚．商场热移民美国！习主席进入官场轮轴灾难区！",
+    "platform_ids": [
+      "20180611_1",
+      "21796",
+      "u2pUYWmRyDI",
+      "v578g8d-20180611-1"
+    ],
+    "source_relationships": "The exact GWINS detail page directly exposes the listed public media URL(s); generic site-home links were excluded.",
+    "deduplication": "Fresh current-data checks found no canonical record for exact source id 20180611_1. The distinct GWINS detail page 21796 and media IDs support LIVE_20180611_001; same-day items with different numbered source IDs remain separate."
+  },
+  "source_raw_sha256": "2fde2e6debd579e9dcf8e7314f17f0bda8f1ea2177b470eedd6a3b6ddb7b9207",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": true,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}

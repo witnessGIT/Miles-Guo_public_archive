@@ -1,0 +1,45 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_63_20180603_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_63_20180603_1",
+  "reviewed_by": "agent-20261006T191453Z-a890f4a8",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-06T19:41:21Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20180603_001",
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_63.html",
+    "https://gwins.org/cn/milesguo/21791.html",
+    "https://youtu.be/XHPgCeNa3LI",
+    "https://rumble.com/v578ffh-20180603-1.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS detail page 21791 visibly carries exact source_video_id 20180603_1 and is bound to this candidate from https://gwins.org/cn/milesguo/list_2_63.html.",
+    "date": "Candidate date 2018-06-03 agrees with the date and source id in the exact GWINS title.",
+    "title": "郭文贵2018年6月3日直播 20180603_1 文贵先生来到聊天室(51:53起)和网友共同热议六四！文贵先生爆料范冰冰已经到了洛杉矶，上面领导打招呼尽快离开。",
+    "platform_ids": [
+      "20180603_1",
+      "21791",
+      "XHPgCeNa3LI",
+      "v578ffh-20180603-1"
+    ],
+    "source_relationships": "The exact GWINS detail page directly exposes the listed public media URL(s); generic site-home links were excluded.",
+    "deduplication": "Fresh current-data checks found no canonical record for exact source id 20180603_1. The distinct GWINS detail page 21791 and media IDs support LIVE_20180603_001; same-day items with different numbered source IDs remain separate."
+  },
+  "source_raw_sha256": "f7b94268b65629a2292b7188a27c02ec2ae164a47606a75341bf13dfd4a6fe5b",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": true,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}
