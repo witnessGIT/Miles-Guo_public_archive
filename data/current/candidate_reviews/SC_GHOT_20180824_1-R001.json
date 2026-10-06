@@ -1,0 +1,45 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GHOT_20180824_1-R001",
+  "source_candidate_id": "SC_GHOT_20180824_1",
+  "reviewed_by": "agent-20261006T191453Z-a890f4a8",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-06T20:13:20Z",
+  "decision": "rejected_not_target",
+  "canonical_live_id": null,
+  "evidence_urls": [
+    "https://ghot.ai/archive/videos/2018-08-24-1",
+    "https://www.youtube.com/watch?v=DGanIrNmZ-A",
+    "https://rumble.com/v57cn2l-20180824.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "Exact public GHOT page is bound to candidate SC_GHOT_20180824_1 and page/source identifier 2018-08-24-1; identity visibility=False.",
+    "date": "Candidate date is 2018-08-24; no publication time was inferred.",
+    "title": "2018.08.24 澳大利亚是西方向中共说不的开始！西方的一根筋为什么能赢中共的千招会！西方用法律．宗教．科技．赢到了什么！",
+    "platform_ids": [
+      "2018-08-24-1",
+      "2018-08-24-1",
+      "DGanIrNmZ-A",
+      "v57cn2l-20180824"
+    ],
+    "source_relationships": "Only exact public page URLs and concrete outbound platform links were retained; generic navigation links were excluded.",
+    "deduplication": "The exact GHOT title identifies a recorded update, interview/rebroadcast, excerpt, or otherwise lacks an original-livestream identity."
+  },
+  "source_raw_sha256": "97f866c9182c01d3d54082afbb43cd551c8845a8b5fa7d18f3b1318af38c8dc7",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false,
+  "rejection_reason": "The exact GHOT title identifies a recorded update, interview/rebroadcast, excerpt, or otherwise lacks an original-livestream identity."
+}
