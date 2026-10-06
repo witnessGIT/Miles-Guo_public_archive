@@ -1,0 +1,40 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GHOT_20200812_4-R001",
+  "source_candidate_id": "SC_GHOT_20200812_4",
+  "reviewed_by": "agent-20261006T191453Z-a890f4a8",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-06T20:14:15Z",
+  "decision": "linked_existing_canonical",
+  "canonical_live_id": "LIVE_20200812_001",
+  "evidence_urls": [
+    "https://ghot.ai/archive/videos/2020-08-12-4"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "Exact public GHOT page is bound to candidate SC_GHOT_20200812_4 and page/source identifier 2020-08-12-4; identity visibility=False.",
+    "date": "Candidate date is 2020-08-12; no publication time was inferred.",
+    "title": "2020.08.12 8月12号尊敬的战友们好，你们健身了吗？你们传播C C P病毒．香港危机真相了吗？文贵在半夜向战友们问好",
+    "platform_ids": [
+      "2020-08-12-4",
+      "2020-08-12-4"
+    ],
+    "source_relationships": "Only exact public page URLs and concrete outbound platform links were retained; generic navigation links were excluded.",
+    "deduplication": "Exact outbound platform URLs already belong to the named canonical live."
+  },
+  "source_raw_sha256": "5237b9842ce097ece0d5bd1605c0fb5717c120c5f182e87a0bf20fa274b8d6af",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}
