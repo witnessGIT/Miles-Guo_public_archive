@@ -1,0 +1,32 @@
+{
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_10_20220410_1-R001",
+  "agent_id": "agent-20261006T191258Z-937a95e9",
+  "completed_at": "2026-10-06T19:24:41.813227+00:00",
+  "result_commit": "d9f465c9744395f97b1413c3d0bcf04aa5fecdae",
+  "outputs": [
+    "data/current/candidate_reviews/SC_GWINS_LIST2_10_20220410_1-R001.json",
+    "data/current/live_videos/c2_review_gwins_list_2_10_batch_56ce8649.jsonl",
+    "data/current/sources/c2_review_gwins_list_2_10_batch_56ce8649.jsonl",
+    "data/current/media_assets/c2_review_gwins_list_2_10_batch_56ce8649.jsonl",
+    "data/current/source_match_candidates/c2_review_gwins_list_2_10_batch_56ce8649.jsonl"
+  ],
+  "validation": "Source-backed identity, date, title, platform IDs, source relationships, and deduplication verified from the public GWINS index/detail pages. No playback, media download, transcription, or segmentation was performed.",
+  "workflow_mode": "continuous-worker-v2",
+  "claim_protocol": "claim-protocol-v2",
+  "entry_mode": "work",
+  "continue_after_finish": true,
+  "finish_prerequisites_revalidated": true,
+  "notes": "Task completed only after re-checking the latest repository dependency contract. Under continuous-worker-v2, refresh repository state and claim the next eligible task unless a documented stop condition applies.",
+  "kind": "candidate_promotion_review",
+  "source_candidate_id": "SC_GWINS_LIST2_10_20220410_1",
+  "review_generation": 1,
+  "review_claim_timeout_hours": 10,
+  "review_batch_id": "REVIEW-BATCH-20261006T191900669981Z-56ce8649",
+  "review_batch_target_size": 100,
+  "review_batch_claimed_count": 100,
+  "review_batch_position": 5,
+  "candidate_review_contract": "candidate-review-evidence-v2",
+  "review_artifact": "data/current/candidate_reviews/SC_GWINS_LIST2_10_20220410_1-R001.json",
+  "review_decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20220410_001"
+}
