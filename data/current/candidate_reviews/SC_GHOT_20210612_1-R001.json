@@ -1,0 +1,44 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GHOT_20210612_1-R001",
+  "source_candidate_id": "SC_GHOT_20210612_1",
+  "reviewed_by": "agent-20261006T191453Z-a890f4a8",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-06T20:14:23Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20210612_001",
+  "evidence_urls": [
+    "https://ghot.ai/archive/videos/2021-06-12-1",
+    "https://odysee.com/@laxi:4/20210612_1:9",
+    "https://rumble.com/v59epot-20210612-1.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "Exact public GHOT page is bound to candidate SC_GHOT_20210612_1 and page/source identifier 2021-06-12-1; identity visibility=False.",
+    "date": "Candidate date is 2021-06-12; no publication time was inferred.",
+    "title": "2021.06.12-1 文贵直播：新盖特，盖特Pay将是全球的领导者；爆料革命不要急功近利，任何时候都要无我；爆料革命，新中国联邦，法治基金，将永远在我们的生命之上，成为我们的信仰！_ X264",
+    "platform_ids": [
+      "2021-06-12-1",
+      "2021-06-12-1",
+      "@laxi:4/20210612_1:9",
+      "v59epot-20210612-1"
+    ],
+    "source_relationships": "Only exact public page URLs and concrete outbound platform links were retained; generic navigation links were excluded.",
+    "deduplication": "The exact GHOT title explicitly identifies an original Miles Guo livestream."
+  },
+  "source_raw_sha256": "0041fefc00a55e10b1068ef99f3a1b3bba7b5e6b050355a950a7a54570061205",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": true,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}
