@@ -1,0 +1,45 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_18_20210917_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_18_20210917_1",
+  "reviewed_by": "agent-20261006T191453Z-a890f4a8",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-06T19:24:55Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20210917_001",
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_18.html",
+    "https://gwins.org/cn/milesguo/23345.html",
+    "https://odysee.com/@laxi:4/20210917_1:f",
+    "https://rumble.com/v59nvzo-20210917-1.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS detail page 23345 visibly carries exact source_video_id 20210917_1 and is bound to this candidate from https://gwins.org/cn/milesguo/list_2_18.html.",
+    "date": "Candidate date 2021-09-17 agrees with the date and source id in the exact GWINS title.",
+    "title": "郭文贵2021年9月17日直播 20210917_1 恒大就是旁氏骗局，中国有2.5亿人卷入，这是国家金融灾难，世界灾难；不打疫苗就是财富；SEC和解协议和纽约州总检查长的保证书的重大意义，中共司法超限战彻底失败，报假案的一定会得到严",
+    "platform_ids": [
+      "20210917_1",
+      "23345",
+      "@laxi:4/20210917_1:f",
+      "v59nvzo-20210917-1"
+    ],
+    "source_relationships": "The exact GWINS detail page directly exposes the listed public media URL(s); generic site-home links were excluded.",
+    "deduplication": "Fresh current-data checks found no canonical record for exact source id 20210917_1. The distinct GWINS detail page 23345 and media IDs support LIVE_20210917_001; same-day items with different numbered source IDs remain separate."
+  },
+  "source_raw_sha256": "7d78d5049d036cb20b73832285cccaa995f91ed6bbc96e2525843db4aa1176d2",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": true,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}

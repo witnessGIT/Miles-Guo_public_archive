@@ -1,0 +1,46 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_18_20210915_3-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_18_20210915_3",
+  "reviewed_by": "agent-20261006T191453Z-a890f4a8",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-06T19:24:55Z",
+  "decision": "rejected_not_target",
+  "canonical_live_id": null,
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_18.html",
+    "https://gwins.org/cn/milesguo/23344.html",
+    "https://gettr.com/post/pb3fgn3ea7",
+    "https://rumble.com/v59npx1-20210915-3.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS detail page 23344 visibly carries exact source_video_id 20210915_3 and is bound to this candidate from https://gwins.org/cn/milesguo/list_2_18.html.",
+    "date": "Candidate date 2021-09-15 agrees with the date and source id in the exact GWINS title.",
+    "title": "郭文贵2021年9月15日盖特 20210915_3 感谢纽约州伟大的詹乐霞总检查长，和所有的调查此案的检察官，公正办案，维护美国法律的尊严，看明白了共产党在美国发动的，针对我们爆料革命的法律超限战，不被他们利用。他们的阴谋彻",
+    "platform_ids": [
+      "20210915_3",
+      "23344",
+      "pb3fgn3ea7",
+      "v59npx1-20210915-3"
+    ],
+    "source_relationships": "The exact GWINS detail page directly exposes the listed public media URL(s); generic site-home links were excluded.",
+    "deduplication": "Compared the exact source id, date, title, detail page, and exposed platform IDs with the other fixed-batch candidates; retained as a distinct non-livestream candidate and did not merge it into a canonical live."
+  },
+  "source_raw_sha256": "70302a1bf40eecaf2e00c0a2290a26ed81cc64d87b3748c99140c06f4510ed4b",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false,
+  "rejection_reason": "The exact GWINS title labels this item as a GETTR post (盖特), and its detail page exposes a direct GETTR post; it is a standalone platform video/update rather than an original livestream."
+}

@@ -1,0 +1,45 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_18_20210917_2-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_18_20210917_2",
+  "reviewed_by": "agent-20261006T191453Z-a890f4a8",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-06T19:24:55Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20210917_002",
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_18.html",
+    "https://gwins.org/cn/milesguo/23346.html",
+    "https://odysee.com/@laxi:4/20210917_2:7",
+    "https://rumble.com/v59nxvx-20210917-2.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS detail page 23346 visibly carries exact source_video_id 20210917_2 and is bound to this candidate from https://gwins.org/cn/milesguo/list_2_18.html.",
+    "date": "Candidate date 2021-09-17 agrees with the date and source id in the exact GWINS title.",
+    "title": "郭文贵2021年9月17日直播 20210917_2 新中国联邦庆贺马丁·班农先生百岁生日快乐！The New Federal State of China Wishes Mr. Marty Bannon A Happy 100th Birthday!",
+    "platform_ids": [
+      "20210917_2",
+      "23346",
+      "@laxi:4/20210917_2:7",
+      "v59nxvx-20210917-2"
+    ],
+    "source_relationships": "The exact GWINS detail page directly exposes the listed public media URL(s); generic site-home links were excluded.",
+    "deduplication": "Fresh current-data checks found no canonical record for exact source id 20210917_2. The distinct GWINS detail page 23346 and media IDs support LIVE_20210917_002; same-day items with different numbered source IDs remain separate."
+  },
+  "source_raw_sha256": "24a39fad414581f5a17e0fd1df53e967ae959cf6158cb3385ee9126701c332cb",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": true,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}

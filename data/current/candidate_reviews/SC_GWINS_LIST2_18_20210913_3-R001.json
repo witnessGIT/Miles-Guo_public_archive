@@ -1,0 +1,46 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_18_20210913_3-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_18_20210913_3",
+  "reviewed_by": "agent-20261006T191453Z-a890f4a8",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-06T19:24:55Z",
+  "decision": "rejected_not_target",
+  "canonical_live_id": null,
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_18.html",
+    "https://gwins.org/cn/milesguo/23340.html",
+    "https://gettr.com/post/paxv1lf7e0",
+    "https://rumble.com/v59nduj-20210913-3.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS detail page 23340 visibly carries exact source_video_id 20210913_3 and is bound to this candidate from https://gwins.org/cn/milesguo/list_2_18.html.",
+    "date": "Candidate date 2021-09-13 agrees with the date and source id in the exact GWINS title.",
+    "title": "郭文贵2021年9月13日盖特 20210913_3 中国人在近代史上得到解放了一个里程碑的日子，也是中国人走向耻辱的日子，从潘石屹两口子的离不开表演的这种行为！和他一直充当白手套…傲慢无知，愚蠢的行为，看中国的企业家……其实",
+    "platform_ids": [
+      "20210913_3",
+      "23340",
+      "paxv1lf7e0",
+      "v59nduj-20210913-3"
+    ],
+    "source_relationships": "The exact GWINS detail page directly exposes the listed public media URL(s); generic site-home links were excluded.",
+    "deduplication": "Compared the exact source id, date, title, detail page, and exposed platform IDs with the other fixed-batch candidates; retained as a distinct non-livestream candidate and did not merge it into a canonical live."
+  },
+  "source_raw_sha256": "e825ccbe7000b0e4259681d6a313d505261596b7edc78092c6ff9ed4e511e69f",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false,
+  "rejection_reason": "The exact GWINS title labels this item as a GETTR post (盖特), and its detail page exposes a direct GETTR post; it is a standalone platform video/update rather than an original livestream."
+}

@@ -1,0 +1,45 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_18_20210912_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_18_20210912_1",
+  "reviewed_by": "agent-20261006T191453Z-a890f4a8",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-06T19:24:55Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20210912_001",
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_18.html",
+    "https://gwins.org/cn/milesguo/23334.html",
+    "https://odysee.com/@laxi:4/20210912_1:d",
+    "https://rumble.com/v59n73h-20210912-1.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS detail page 23334 visibly carries exact source_video_id 20210912_1 and is bound to this candidate from https://gwins.org/cn/milesguo/list_2_18.html.",
+    "date": "Candidate date 2021-09-12 agrees with the date and source id in the exact GWINS title.",
+    "title": "郭文贵2021年9月12日直播 20210912_1 今年年底将爆发疫苗政治的大危机，文贵再开赌局：辉瑞一定会破产，会受到国际制裁；人类最大的单笔回扣是1200亿美元，由白手套张宏伟和国开行陈元拿走，其中200亿给了江志城；扩大前海经济",
+    "platform_ids": [
+      "20210912_1",
+      "23334",
+      "@laxi:4/20210912_1:d",
+      "v59n73h-20210912-1"
+    ],
+    "source_relationships": "The exact GWINS detail page directly exposes the listed public media URL(s); generic site-home links were excluded.",
+    "deduplication": "Fresh current-data checks found no canonical record for exact source id 20210912_1. The distinct GWINS detail page 23334 and media IDs support LIVE_20210912_001; same-day items with different numbered source IDs remain separate."
+  },
+  "source_raw_sha256": "01e3391fb3da28cd29f20fb426e7d1bd184360b4f3511f2b28c253eea4cabdc8",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": true,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}

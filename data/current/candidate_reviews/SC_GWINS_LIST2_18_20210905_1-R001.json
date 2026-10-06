@@ -1,0 +1,45 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_18_20210905_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_18_20210905_1",
+  "reviewed_by": "agent-20261006T191453Z-a890f4a8",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-06T19:24:55Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20210905_001",
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_18.html",
+    "https://gwins.org/cn/milesguo/23321.html",
+    "https://odysee.com/@laxi:4/20210905_1:d",
+    "https://rumble.com/v59lai3-20210905-1.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS detail page 23321 visibly carries exact source_video_id 20210905_1 and is bound to this candidate from https://gwins.org/cn/milesguo/list_2_18.html.",
+    "date": "Candidate date 2021-09-05 agrees with the date and source id in the exact GWINS title.",
+    "title": "郭文贵2021年9月5日直播 20210905_1 从苏联切尔诺贝利核事件看今天的中共；最纯最多的青蒿素在美国和加拿大；克里访华将要谈判的内容；陆金所是对西方的经济炸弹，经济病毒，每一股的变化背后都是蓝金黄；马明哲就是中国的",
+    "platform_ids": [
+      "20210905_1",
+      "23321",
+      "@laxi:4/20210905_1:d",
+      "v59lai3-20210905-1"
+    ],
+    "source_relationships": "The exact GWINS detail page directly exposes the listed public media URL(s); generic site-home links were excluded.",
+    "deduplication": "Fresh current-data checks found no canonical record for exact source id 20210905_1. The distinct GWINS detail page 23321 and media IDs support LIVE_20210905_001; same-day items with different numbered source IDs remain separate."
+  },
+  "source_raw_sha256": "881ccc8f17ee428f2269218250addeb8beb157356b15c4699f42f4927f8e9a7f",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": true,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}

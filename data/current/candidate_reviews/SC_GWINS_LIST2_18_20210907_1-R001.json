@@ -1,0 +1,45 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_18_20210907_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_18_20210907_1",
+  "reviewed_by": "agent-20261006T191453Z-a890f4a8",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-06T19:24:55Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20210907_001",
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_18.html",
+    "https://gwins.org/cn/milesguo/23322.html",
+    "https://odysee.com/@laxi:4/20210907_1:6",
+    "https://rumble.com/v59lmcs-20210907-1.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS detail page 23322 visibly carries exact source_video_id 20210907_1 and is bound to this candidate from https://gwins.org/cn/milesguo/list_2_18.html.",
+    "date": "Candidate date 2021-09-07 agrees with the date and source id in the exact GWINS title.",
+    "title": "郭文贵2021年9月7日直播 20210907_1 政治与艺术的关系：拍卖行背后都是军方的势力；所有的古董字画都是政治情报，都是洗钱和行贿；马明哲对台湾的渗透腐败都是核弹级的；最大的艺术品保险就是马明哲。解读黑天鹅事件，毛泽",
+    "platform_ids": [
+      "20210907_1",
+      "23322",
+      "@laxi:4/20210907_1:6",
+      "v59lmcs-20210907-1"
+    ],
+    "source_relationships": "The exact GWINS detail page directly exposes the listed public media URL(s); generic site-home links were excluded.",
+    "deduplication": "Fresh current-data checks found no canonical record for exact source id 20210907_1. The distinct GWINS detail page 23322 and media IDs support LIVE_20210907_001; same-day items with different numbered source IDs remain separate."
+  },
+  "source_raw_sha256": "a019cb923786e3f71903c3723abaa52bd83c7ef9423884e1661991d10f537786",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": true,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}

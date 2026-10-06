@@ -1,0 +1,46 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_18_20210916_5-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_18_20210916_5",
+  "reviewed_by": "agent-20261006T191453Z-a890f4a8",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-06T19:24:55Z",
+  "decision": "rejected_not_target",
+  "canonical_live_id": null,
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_18.html",
+    "https://gwins.org/cn/milesguo/23351.html",
+    "https://gettr.com/post/pba6id3241",
+    "https://rumble.com/v59nt4t-20210916-5.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS detail page 23351 visibly carries exact source_video_id 20210916_5 and is bound to this candidate from https://gwins.org/cn/milesguo/list_2_18.html.",
+    "date": "Candidate date 2021-09-16 agrees with the date and source id in the exact GWINS title.",
+    "title": "郭文贵2021年9月16日盖特 20210916_5 看了这个房子的花园和曾经相比简直是无法形容的恼怒，这是清理了一个多月以后的情况！很多车的垃圾已经清理出去了，太烂了路大脑骗！",
+    "platform_ids": [
+      "20210916_5",
+      "23351",
+      "pba6id3241",
+      "v59nt4t-20210916-5"
+    ],
+    "source_relationships": "The exact GWINS detail page directly exposes the listed public media URL(s); generic site-home links were excluded.",
+    "deduplication": "Compared the exact source id, date, title, detail page, and exposed platform IDs with the other fixed-batch candidates; retained as a distinct non-livestream candidate and did not merge it into a canonical live."
+  },
+  "source_raw_sha256": "0489b61c15a09a5ca87960dfc137f3be05c0ea5e848bf073e1df020ad01d7c21",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false,
+  "rejection_reason": "The exact GWINS title labels this item as a GETTR post (盖特), and its detail page exposes a direct GETTR post; it is a standalone platform video/update rather than an original livestream."
+}

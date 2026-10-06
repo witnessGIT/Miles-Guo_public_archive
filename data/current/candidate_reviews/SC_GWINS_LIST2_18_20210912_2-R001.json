@@ -1,0 +1,46 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_18_20210912_2-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_18_20210912_2",
+  "reviewed_by": "agent-20261006T191453Z-a890f4a8",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-06T19:24:55Z",
+  "decision": "rejected_not_target",
+  "canonical_live_id": null,
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_18.html",
+    "https://gwins.org/cn/milesguo/23338.html",
+    "https://gettr.com/post/paxc186e4a",
+    "https://rumble.com/v59n75h-20210912-2.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS detail page 23338 visibly carries exact source_video_id 20210912_2 and is bound to this candidate from https://gwins.org/cn/milesguo/list_2_18.html.",
+    "date": "Candidate date 2021-09-12 agrees with the date and source id in the exact GWINS title.",
+    "title": "郭文贵2021年9月12日盖特 20210912_2 一年前直播中答应送给小郑州兄弟的雪茄空盒子的事情，今天终于尘埃落定．很多老雪茄盒子都被管家给扔了！到处找才找到这几个难得的具有雪茄奇迹般的历史的记忆的盒子，大家能看得懂吗？",
+    "platform_ids": [
+      "20210912_2",
+      "23338",
+      "paxc186e4a",
+      "v59n75h-20210912-2"
+    ],
+    "source_relationships": "The exact GWINS detail page directly exposes the listed public media URL(s); generic site-home links were excluded.",
+    "deduplication": "Compared the exact source id, date, title, detail page, and exposed platform IDs with the other fixed-batch candidates; retained as a distinct non-livestream candidate and did not merge it into a canonical live."
+  },
+  "source_raw_sha256": "6df07afcbb1e4207fefb9693309e498a4f384ec729f0791994b8e25fa52d770c",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false,
+  "rejection_reason": "The exact GWINS title labels this item as a GETTR post (盖特), and its detail page exposes a direct GETTR post; it is a standalone platform video/update rather than an original livestream."
+}

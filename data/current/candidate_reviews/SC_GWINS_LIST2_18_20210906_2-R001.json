@@ -1,0 +1,46 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_18_20210906_2-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_18_20210906_2",
+  "reviewed_by": "agent-20261006T191453Z-a890f4a8",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-06T19:24:55Z",
+  "decision": "rejected_not_target",
+  "canonical_live_id": null,
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_18.html",
+    "https://gwins.org/cn/milesguo/23327.html",
+    "https://gettr.com/post/paazes872c",
+    "https://rumble.com/v59lawq-20210906-2.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS detail page 23327 visibly carries exact source_video_id 20210906_2 and is bound to this candidate from https://gwins.org/cn/milesguo/list_2_18.html.",
+    "date": "Candidate date 2021-09-06 agrees with the date and source id in the exact GWINS title.",
+    "title": "郭文贵2021年9月6日盖特 20210906_2 尊敬的战友们好．黑天鹅事件，和延安的摇窖洞崩塌……断了共产党的根呀……因此同时发生的对台的战争方案临时的改变……这将意味着什么？天助台湾的呢……明天上午9:00继续和战友们一起大",
+    "platform_ids": [
+      "20210906_2",
+      "23327",
+      "paazes872c",
+      "v59lawq-20210906-2"
+    ],
+    "source_relationships": "The exact GWINS detail page directly exposes the listed public media URL(s); generic site-home links were excluded.",
+    "deduplication": "Compared the exact source id, date, title, detail page, and exposed platform IDs with the other fixed-batch candidates; retained as a distinct non-livestream candidate and did not merge it into a canonical live."
+  },
+  "source_raw_sha256": "57c5eddcca6e6aa7706e68fe494d64ef176eb2a5963030fd1c6f8960344938bb",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false,
+  "rejection_reason": "The exact GWINS title labels this item as a GETTR post (盖特), and its detail page exposes a direct GETTR post; it is a standalone platform video/update rather than an original livestream."
+}
