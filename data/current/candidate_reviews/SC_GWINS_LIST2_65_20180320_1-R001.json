@@ -1,0 +1,45 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_65_20180320_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_65_20180320_1",
+  "reviewed_by": "agent-20261006T191453Z-a890f4a8",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-06T19:43:17Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20180320_001",
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_65.html",
+    "https://gwins.org/cn/milesguo/126.html",
+    "https://www.youtube.com/watch?v=ynVqxUe0Iuo",
+    "https://rumble.com/v577ybx-20180320-1.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS detail page 126 visibly carries exact source_video_id 20180320_1 and is bound to this candidate from https://gwins.org/cn/milesguo/list_2_65.html.",
+    "date": "Candidate date 2018-03-20 agrees with the date and source id in the exact GWINS title.",
+    "title": "郭文贵2018年3月20日第一次直播 20180320_1 今天我们完成了对．谣言．诽谤．威胁．文贵的陈军先生．袁健斌先生．林宇丹女士(美猴王)三个人的控告！我们绝不会忘掉一个帮助我文贵的任何一个恩人！也不会放过一个伤害我们的坏人！",
+    "platform_ids": [
+      "20180320_1",
+      "126",
+      "ynVqxUe0Iuo",
+      "v577ybx-20180320-1"
+    ],
+    "source_relationships": "The exact GWINS detail page directly exposes the listed public media URL(s); generic site-home links were excluded.",
+    "deduplication": "Fresh current-data checks found no canonical record for exact source id 20180320_1. The distinct GWINS detail page 126 and media IDs support LIVE_20180320_001; same-day items with different numbered source IDs remain separate."
+  },
+  "source_raw_sha256": "247fe5209be9bd09beaa5e6fb2d6d68bb30df74e39202e1ffa68ed9bf178d4da",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": true,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}

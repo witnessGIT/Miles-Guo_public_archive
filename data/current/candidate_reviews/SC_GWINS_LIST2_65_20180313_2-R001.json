@@ -1,0 +1,45 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_65_20180313_2-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_65_20180313_2",
+  "reviewed_by": "agent-20261006T191453Z-a890f4a8",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-06T19:43:17Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20180313_002",
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_65.html",
+    "https://gwins.org/cn/milesguo/21772.html",
+    "https://youtu.be/h1Us69LZ4KU",
+    "https://rumble.com/v577wk5-20180313-2.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS detail page 21772 visibly carries exact source_video_id 20180313_2 and is bound to this candidate from https://gwins.org/cn/milesguo/list_2_65.html.",
+    "date": "Candidate date 2018-03-13 agrees with the date and source id in the exact GWINS title.",
+    "title": "郭文贵2018年3月13日直播 20180313_2 陈军拥有多少明镜股份？身为民运大佬，又被边控，为什么他可以随时进出中国？",
+    "platform_ids": [
+      "20180313_2",
+      "21772",
+      "h1Us69LZ4KU",
+      "v577wk5-20180313-2"
+    ],
+    "source_relationships": "The exact GWINS detail page directly exposes the listed public media URL(s); generic site-home links were excluded.",
+    "deduplication": "Fresh current-data checks found no canonical record for exact source id 20180313_2. The distinct GWINS detail page 21772 and media IDs support LIVE_20180313_002; same-day items with different numbered source IDs remain separate."
+  },
+  "source_raw_sha256": "a7c9d7cda131b4848c8d6b34de2e68caa4072078be874f81e0303dbf747e7780",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": true,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}

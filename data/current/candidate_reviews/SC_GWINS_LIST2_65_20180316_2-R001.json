@@ -1,0 +1,45 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_65_20180316_2-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_65_20180316_2",
+  "reviewed_by": "agent-20261006T191453Z-a890f4a8",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-06T19:43:17Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20180316_002",
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_65.html",
+    "https://gwins.org/cn/milesguo/521.html",
+    "https://www.youtube.com/watch?v=uM4nic1nFRU",
+    "https://rumble.com/v577x2d-20180316-2.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS detail page 521 visibly carries exact source_video_id 20180316_2 and is bound to this candidate from https://gwins.org/cn/milesguo/list_2_65.html.",
+    "date": "Candidate date 2018-03-16 agrees with the date and source id in the exact GWINS title.",
+    "title": "郭文贵2018年3月16日第二次直播 20180316_2 推特拉黑了谁？如何用智慧铲灭盗国贼！",
+    "platform_ids": [
+      "20180316_2",
+      "521",
+      "uM4nic1nFRU",
+      "v577x2d-20180316-2"
+    ],
+    "source_relationships": "The exact GWINS detail page directly exposes the listed public media URL(s); generic site-home links were excluded.",
+    "deduplication": "Fresh current-data checks found no canonical record for exact source id 20180316_2. The distinct GWINS detail page 521 and media IDs support LIVE_20180316_002; same-day items with different numbered source IDs remain separate."
+  },
+  "source_raw_sha256": "9f3f322b924d8ce478ad82cd81eb769c874a64104af1f863438694ee22d6bd6d",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": true,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}

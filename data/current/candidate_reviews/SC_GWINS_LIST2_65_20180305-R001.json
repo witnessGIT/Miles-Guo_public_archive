@@ -1,0 +1,45 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_65_20180305-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_65_20180305",
+  "reviewed_by": "agent-20261006T191453Z-a890f4a8",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-06T19:43:17Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20180305_001",
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_65.html",
+    "https://gwins.org/cn/milesguo/21768.html",
+    "https://youtu.be/tD9ntLPEDrE",
+    "https://rumble.com/v577vuz-20180305.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS detail page 21768 visibly carries exact source_video_id 20180305 and is bound to this candidate from https://gwins.org/cn/milesguo/list_2_65.html.",
+    "date": "Candidate date 2018-03-05 agrees with the date and source id in the exact GWINS title.",
+    "title": "郭文贵2018年3月5日直播 20180305 17号后的两会你们会看到一个完全不一样的让你们惊讶的结果",
+    "platform_ids": [
+      "20180305",
+      "21768",
+      "tD9ntLPEDrE",
+      "v577vuz-20180305"
+    ],
+    "source_relationships": "The exact GWINS detail page directly exposes the listed public media URL(s); generic site-home links were excluded.",
+    "deduplication": "Fresh current-data checks found no canonical record for exact source id 20180305. The distinct GWINS detail page 21768 and media IDs support LIVE_20180305_001; same-day items with different numbered source IDs remain separate."
+  },
+  "source_raw_sha256": "b741f792c34738ff885159f3147f77ce74a58d7881243d14a5bd00089aa411c5",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": true,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}

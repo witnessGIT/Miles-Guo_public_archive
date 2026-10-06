@@ -1,0 +1,45 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_65_20180320_2-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_65_20180320_2",
+  "reviewed_by": "agent-20261006T191453Z-a890f4a8",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-06T19:43:17Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20180320_002",
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_65.html",
+    "https://gwins.org/cn/milesguo/127.html",
+    "https://youtu.be/zA-C_9Ui04w",
+    "https://rumble.com/v577ydx-20180320-2.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS detail page 127 visibly carries exact source_video_id 20180320_2 and is bound to this candidate from https://gwins.org/cn/milesguo/list_2_65.html.",
+    "date": "Candidate date 2018-03-20 agrees with the date and source id in the exact GWINS title.",
+    "title": "郭文贵2018年3月20日第二次直播 20180320_2 谈盗国贼靠吴征能依法治国实现中国梦吗",
+    "platform_ids": [
+      "20180320_2",
+      "127",
+      "zA-C_9Ui04w",
+      "v577ydx-20180320-2"
+    ],
+    "source_relationships": "The exact GWINS detail page directly exposes the listed public media URL(s); generic site-home links were excluded.",
+    "deduplication": "Fresh current-data checks found no canonical record for exact source id 20180320_2. The distinct GWINS detail page 127 and media IDs support LIVE_20180320_002; same-day items with different numbered source IDs remain separate."
+  },
+  "source_raw_sha256": "60be37f5a2c06feb5c2c0d931d260057aa812afef0fd7b0b78a0fce923bbf1a9",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": true,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}

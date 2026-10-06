@@ -1,0 +1,45 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_65_20180228_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_65_20180228_1",
+  "reviewed_by": "agent-20261006T191453Z-a890f4a8",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-06T19:43:17Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20180228_001",
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_65.html",
+    "https://gwins.org/cn/milesguo/21765.html",
+    "https://youtu.be/Pq4jFomagJ4",
+    "https://rumble.com/v577vfx-20180228-1.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS detail page 21765 visibly carries exact source_video_id 20180228_1 and is bound to this candidate from https://gwins.org/cn/milesguo/list_2_65.html.",
+    "date": "Candidate date 2018-02-28 agrees with the date and source id in the exact GWINS title.",
+    "title": "郭文贵2018年2月28日直播 20180228_1 盗国贼新的又一个新阶段猛烈的攻击来了……继续要断文贵的财路，继续发动超限战！因为现在盗国贼就要灭亡！这是他们灭亡前的猖狂！一切",
+    "platform_ids": [
+      "20180228_1",
+      "21765",
+      "Pq4jFomagJ4",
+      "v577vfx-20180228-1"
+    ],
+    "source_relationships": "The exact GWINS detail page directly exposes the listed public media URL(s); generic site-home links were excluded.",
+    "deduplication": "Fresh current-data checks found no canonical record for exact source id 20180228_1. The distinct GWINS detail page 21765 and media IDs support LIVE_20180228_001; same-day items with different numbered source IDs remain separate."
+  },
+  "source_raw_sha256": "1f9a7e37d04af6348b635d0a9c6e2882d00c279d744f5514ff0d1b66f89c92b7",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": true,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}

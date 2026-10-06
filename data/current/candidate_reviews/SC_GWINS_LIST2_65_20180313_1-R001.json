@@ -1,0 +1,45 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_65_20180313_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_65_20180313_1",
+  "reviewed_by": "agent-20261006T191453Z-a890f4a8",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-06T19:43:17Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20180313_001",
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_65.html",
+    "https://gwins.org/cn/milesguo/21771.html",
+    "https://youtu.be/fHn0MySSXpU",
+    "https://rumble.com/v577wgt-20180313-1.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS detail page 21771 visibly carries exact source_video_id 20180313_1 and is bound to this candidate from https://gwins.org/cn/milesguo/list_2_65.html.",
+    "date": "Candidate date 2018-03-13 agrees with the date and source id in the exact GWINS title.",
+    "title": "郭文贵2018年3月13日直播 20180313_1 上天赐予的又一个巨大的礼物 —美国新国务卿！对盗国贼将是巨大打击",
+    "platform_ids": [
+      "20180313_1",
+      "21771",
+      "fHn0MySSXpU",
+      "v577wgt-20180313-1"
+    ],
+    "source_relationships": "The exact GWINS detail page directly exposes the listed public media URL(s); generic site-home links were excluded.",
+    "deduplication": "Fresh current-data checks found no canonical record for exact source id 20180313_1. The distinct GWINS detail page 21771 and media IDs support LIVE_20180313_001; same-day items with different numbered source IDs remain separate."
+  },
+  "source_raw_sha256": "eeacb5c4842de852562165c27e33265b85a385e77eb270b919d08fd0a35341bc",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": true,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}

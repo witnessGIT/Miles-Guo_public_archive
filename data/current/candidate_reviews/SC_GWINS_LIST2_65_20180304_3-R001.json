@@ -1,0 +1,46 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_65_20180304_3-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_65_20180304_3",
+  "reviewed_by": "agent-20261006T191453Z-a890f4a8",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-06T19:43:17Z",
+  "decision": "rejected_not_target",
+  "canonical_live_id": null,
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_65.html",
+    "https://gwins.org/cn/milesguo/112.html",
+    "https://youtu.be/-LFhBPsuV2E",
+    "https://rumble.com/v577vst-20180304-3.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS detail page 112 visibly carries exact source_video_id 20180304_3 and is bound to this candidate from https://gwins.org/cn/milesguo/list_2_65.html.",
+    "date": "Candidate date 2018-03-04 agrees with the date and source id in the exact GWINS title.",
+    "title": "郭文贵2018年3月4日报平安视频 20180304_3 文贵呼吁所有的援郭的战友们以家庭安全．正常生活为重……全球一致行动！",
+    "platform_ids": [
+      "20180304_3",
+      "112",
+      "-LFhBPsuV2E",
+      "v577vst-20180304-3"
+    ],
+    "source_relationships": "The exact GWINS detail page directly exposes the listed public media URL(s); generic site-home links were excluded.",
+    "deduplication": "Compared the exact source id, date, title, detail page, and exposed platform IDs with the other fixed-batch candidates; retained as a distinct non-livestream candidate and did not merge it into a canonical live."
+  },
+  "source_raw_sha256": "66cc47a77a721c2838a67ca7b005e8d70882ec210055b5cfa84eef1aee0aeca7",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false,
+  "rejection_reason": "The exact GWINS title and current-item context identify a standalone recorded video, interview, or update rather than an original livestream; neighboring livestreams are explicitly labeled, while this record is preserved without canonical promotion."
+}

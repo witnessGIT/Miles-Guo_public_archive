@@ -1,0 +1,46 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_65_20180312_2-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_65_20180312_2",
+  "reviewed_by": "agent-20261006T191453Z-a890f4a8",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-06T19:43:17Z",
+  "decision": "rejected_not_target",
+  "canonical_live_id": null,
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_65.html",
+    "https://gwins.org/cn/milesguo/118.html",
+    "https://youtu.be/wDZWrC5LNEI",
+    "https://rumble.com/v577w9p-20180312-2.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS detail page 118 visibly carries exact source_video_id 20180312_2 and is bound to this candidate from https://gwins.org/cn/milesguo/list_2_65.html.",
+    "date": "Candidate date 2018-03-12 agrees with the date and source id in the exact GWINS title.",
+    "title": "郭文贵2018年3月12日视频第二部分 20180312_2 文贵拜托战友们的新行动．推特拉黑．YouTube 取关不打盗国贼的任何人任何媒体！全力以赴支持自由中国．爆料！支持路上德就是无尚功德！",
+    "platform_ids": [
+      "20180312_2",
+      "118",
+      "wDZWrC5LNEI",
+      "v577w9p-20180312-2"
+    ],
+    "source_relationships": "The exact GWINS detail page directly exposes the listed public media URL(s); generic site-home links were excluded.",
+    "deduplication": "Compared the exact source id, date, title, detail page, and exposed platform IDs with the other fixed-batch candidates; retained as a distinct non-livestream candidate and did not merge it into a canonical live."
+  },
+  "source_raw_sha256": "9c743da1509d7bb3b123bd4a637a89ced94e809bf42ab2709b4694fdc21ee003",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false,
+  "rejection_reason": "The exact GWINS title and current-item context identify a standalone recorded video, interview, or update rather than an original livestream; neighboring livestreams are explicitly labeled, while this record is preserved without canonical promotion."
+}

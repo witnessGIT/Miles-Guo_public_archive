@@ -1,0 +1,45 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_65_20180301_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_65_20180301_1",
+  "reviewed_by": "agent-20261006T191453Z-a890f4a8",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-06T19:43:17Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20180301_001",
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_65.html",
+    "https://gwins.org/cn/milesguo/21766.html",
+    "https://youtu.be/Kuj6t7OUDYI",
+    "https://rumble.com/v577vhw-20180301-1.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS detail page 21766 visibly carries exact source_video_id 20180301_1 and is bound to this candidate from https://gwins.org/cn/milesguo/list_2_65.html.",
+    "date": "Candidate date 2018-03-01 agrees with the date and source id in the exact GWINS title.",
+    "title": "郭文贵2018年3月1日直播 20180301_1 尊敬的战友们好：你们健身了吗！未来的20天．北京可能还要出更大的事儿（一位陈．．是……一切都是刚刚开始！ Via：郭媒体",
+    "platform_ids": [
+      "20180301_1",
+      "21766",
+      "Kuj6t7OUDYI",
+      "v577vhw-20180301-1"
+    ],
+    "source_relationships": "The exact GWINS detail page directly exposes the listed public media URL(s); generic site-home links were excluded.",
+    "deduplication": "Fresh current-data checks found no canonical record for exact source id 20180301_1. The distinct GWINS detail page 21766 and media IDs support LIVE_20180301_001; same-day items with different numbered source IDs remain separate."
+  },
+  "source_raw_sha256": "9aa20a7de2555e5d9a741d3b990ff752021a1b085b1e846f39aff7cd2e5246cb",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": true,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}

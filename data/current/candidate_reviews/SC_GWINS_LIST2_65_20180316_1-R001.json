@@ -1,0 +1,45 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_65_20180316_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_65_20180316_1",
+  "reviewed_by": "agent-20261006T191453Z-a890f4a8",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-06T19:43:17Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20180316_001",
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_65.html",
+    "https://gwins.org/cn/milesguo/522.html",
+    "https://www.youtube.com/watch?v=sLefXIUz4_U",
+    "https://rumble.com/v577x0l-20180316-1.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS detail page 522 visibly carries exact source_video_id 20180316_1 and is bound to this candidate from https://gwins.org/cn/milesguo/list_2_65.html.",
+    "date": "Candidate date 2018-03-16 agrees with the date and source id in the exact GWINS title.",
+    "title": "郭文贵2018年3月16日第一次直播 20180316_1 如何感恩．并享受．砸郭运动！王岐山到底是总理还是监察委主任．副主席？一切都是刚刚开始！",
+    "platform_ids": [
+      "20180316_1",
+      "522",
+      "sLefXIUz4_U",
+      "v577x0l-20180316-1"
+    ],
+    "source_relationships": "The exact GWINS detail page directly exposes the listed public media URL(s); generic site-home links were excluded.",
+    "deduplication": "Fresh current-data checks found no canonical record for exact source id 20180316_1. The distinct GWINS detail page 522 and media IDs support LIVE_20180316_001; same-day items with different numbered source IDs remain separate."
+  },
+  "source_raw_sha256": "db508635c9936c81482b78a5b317f2e1926484f448e819e9e978722998318e60",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": true,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}
