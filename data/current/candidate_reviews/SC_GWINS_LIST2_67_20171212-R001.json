@@ -2,13 +2,13 @@
   "contract_version": "candidate-review-evidence-v2",
   "task_id": "C2-REVIEW-SC_GWINS_LIST2_67_20171212-R001",
   "source_candidate_id": "SC_GWINS_LIST2_67_20171212",
-  "reviewed_by": "agent-20261004T091647Z-90dd416d",
-  "entry_mode": "work",
-  "reviewed_at": "2026-10-05T12:49:20.881852+00:00",
-  "decision": "rejected_not_target",
-  "canonical_live_id": null,
+  "reviewed_by": "agent-20261006T194900Z-gpt56sol-chat-c2",
+  "entry_mode": "ordinary_chat",
+  "reviewed_at": "2026-10-06T19:58:00Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20171212_001",
   "evidence_urls": [
-    "https://www.gwins.org/cn/milesguo/list_2_67.html",
+    "https://gwins.org/cn/milesguo/list_2_67.html",
     "https://www.gwins.org/cn/milesguo/644.html",
     "https://www.youtube.com/watch?v=AsBoFhUW7n4",
     "https://rumble.com/v577o9x-20171212.html"
@@ -21,29 +21,20 @@
     "source_relationships",
     "deduplication"
   ],
-  "checks": {
-    "identity": "GWINS detail page 644 visibly carries exact source_video_id 20171212 and is bound to this candidate.",
-    "date": "Candidate date 2017-12-12 agrees with the exact date and source id visible in the GWINS detail title.",
-    "title": "郭文贵2017年12月12日 20171212文贵给即将在大连被冤审的员工及家人的誓言；谈小平妻子失踪，法新社采访，华涌及乱运8分子",
-    "platform_ids": {
-      "gwins_page_id": "644",
-      "gwins_video_id": "20171212",
-      "youtube_id": "AsBoFhUW7n4",
-      "rumble_id": "v577o9x-20171212"
-    },
-    "source_relationships": "The exact GWINS detail page directly exposes the recorded YouTube and Rumble source URLs used here.",
-    "deduplication": "Compared the exact source id, date, title, and current-item context with the other fixed-batch candidates; retained as a distinct non-livestream candidate and did not merge it into a canonical live."
+  "evidence_summary": {
+    "identity": "GWINS index and detail 644 identify source record 20171212.",
+    "date": "GWINS detail publication date agrees with 2017-12-12.",
+    "title": "GWINS detail title agrees with the source candidate title.",
+    "platform_ids": [
+      "20171212",
+      "AsBoFhUW7n4",
+      "v577o9x-20171212"
+    ],
+    "source_relationships": "GWINS detail 644 directly exposes the recorded public media URLs.",
+    "deduplication": "Fresh current structured inventory has no canonical record for 20171212; date, title, source id, and direct public media relationships support new canonical LIVE_20171212_001."
   },
-  "evidence_artifacts": [
-    "data/source_page_evidence/c2_metadata/C2-REVIEW-SC_GWINS_LIST2_67_20171212-R001/939c3a4686e09c68.json"
-  ],
-  "source_raw_sha256": "dba58db056992493faca7bc80dd5d23eef18a59ef1eee6bd236194ef3a77763d",
-  "limitations": [
-    "No playback, media download, transcription, segmentation, or later content processing was performed."
-  ],
-  "canonical_promotion_performed": false,
+  "playback_performed": false,
   "media_download_performed": false,
-  "playback_audit_performed": false,
-  "later_content_processing_performed": false,
-  "rejection_reason": "The exact GWINS record identifies this item as an interview rather than an original Miles Guo livestream."
+  "transcription_performed": false,
+  "segmentation_performed": false
 }

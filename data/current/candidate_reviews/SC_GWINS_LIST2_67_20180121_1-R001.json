@@ -2,13 +2,13 @@
   "contract_version": "candidate-review-evidence-v2",
   "task_id": "C2-REVIEW-SC_GWINS_LIST2_67_20180121_1-R001",
   "source_candidate_id": "SC_GWINS_LIST2_67_20180121_1",
-  "reviewed_by": "agent-20261004T091647Z-90dd416d",
-  "entry_mode": "work",
-  "reviewed_at": "2026-10-05T12:49:20.888928+00:00",
-  "decision": "promoted_new_canonical",
+  "reviewed_by": "agent-20261006T194900Z-gpt56sol-chat-c2",
+  "entry_mode": "ordinary_chat",
+  "reviewed_at": "2026-10-06T19:58:00Z",
+  "decision": "linked_existing_canonical",
   "canonical_live_id": "LIVE_20180121_001",
   "evidence_urls": [
-    "https://www.gwins.org/cn/milesguo/list_2_67.html",
+    "https://gwins.org/cn/milesguo/list_2_67.html",
     "https://www.gwins.org/cn/milesguo/21749.html",
     "https://youtu.be/s2KabClWvVs",
     "https://rumble.com/v577px1-20180121-1.html"
@@ -21,28 +21,20 @@
     "source_relationships",
     "deduplication"
   ],
-  "checks": {
-    "identity": "GWINS detail page 21749 visibly carries exact source_video_id 20180121_1 and is bound to this candidate.",
-    "date": "Candidate date 2018-01-21 agrees with the exact date and source id visible in the GWINS detail title.",
-    "title": "郭文贵2018年1月21日直播 20180121_1",
-    "platform_ids": {
-      "gwins_page_id": "21749",
-      "gwins_video_id": "20180121_1",
-      "youtube_id": "s2KabClWvVs",
-      "rumble_id": "v577px1-20180121-1"
-    },
-    "source_relationships": "The exact GWINS detail page directly exposes the recorded YouTube and Rumble source URLs used here.",
-    "deduplication": "Compared exact date, source_video_id, title, and direct media IDs against current canonical records and all fixed-batch members; no existing canonical represents this distinct livestream, so LIVE_20180121_001 is created."
+  "evidence_summary": {
+    "identity": "GWINS index and detail 21749 identify source record 20180121_1.",
+    "date": "GWINS detail publication date agrees with 2018-01-21.",
+    "title": "GWINS detail title agrees with the source candidate title.",
+    "platform_ids": [
+      "20180121_1",
+      "s2KabClWvVs",
+      "v577px1-20180121-1"
+    ],
+    "source_relationships": "GWINS detail 21749 directly exposes the recorded public media URLs.",
+    "deduplication": "Current structured canonical LIVE_20180121_001 already exists for 20180121_1; this review links the candidate to that canonical instead of creating a duplicate."
   },
-  "evidence_artifacts": [
-    "data/source_page_evidence/c2_metadata/C2-REVIEW-SC_GWINS_LIST2_67_20180121_1-R001/c2ca943002db5140.json"
-  ],
-  "source_raw_sha256": "727903503f6af1405873804381ebc6f0718747c00ff798f579d52d0108e56ecd",
-  "limitations": [
-    "No playback, media download, transcription, segmentation, or later content processing was performed."
-  ],
-  "canonical_promotion_performed": true,
+  "playback_performed": false,
   "media_download_performed": false,
-  "playback_audit_performed": false,
-  "later_content_processing_performed": false
+  "transcription_performed": false,
+  "segmentation_performed": false
 }
