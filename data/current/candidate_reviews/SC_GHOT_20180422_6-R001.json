@@ -1,0 +1,41 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GHOT_20180422_6-R001",
+  "source_candidate_id": "SC_GHOT_20180422_6",
+  "reviewed_by": "agent-20261006T191453Z-a890f4a8",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-06T20:13:13Z",
+  "decision": "rejected_not_target",
+  "canonical_live_id": null,
+  "evidence_urls": [
+    "https://ghot.ai/archive/videos/2018-04-22-6"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "Exact public GHOT page is bound to candidate SC_GHOT_20180422_6 and page/source identifier 2018-04-22-6; identity visibility=False.",
+    "date": "Candidate date is 2018-04-22; no publication time was inferred.",
+    "title": "2018.04.22 郭文贵4月19日接受路德采访，录播3 [360p]",
+    "platform_ids": [
+      "2018-04-22-6",
+      "2018-04-22-6"
+    ],
+    "source_relationships": "Only exact public page URLs and concrete outbound platform links were retained; generic navigation links were excluded.",
+    "deduplication": "The exact GHOT title identifies a recorded update, interview/rebroadcast, excerpt, or otherwise lacks an original-livestream identity."
+  },
+  "source_raw_sha256": "6cf8a604fdeab39e26dc4ed63b96f785aafa7c5e0714bc530b2e7ee21e0b8a12",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false,
+  "rejection_reason": "The exact GHOT title identifies a recorded update, interview/rebroadcast, excerpt, or otherwise lacks an original-livestream identity."
+}
