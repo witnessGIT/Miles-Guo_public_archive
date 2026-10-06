@@ -1,0 +1,58 @@
+{
+  "evidence_version": "c2-metadata-evidence-v1",
+  "request_sha256": "1c5b82bdaa11be7b3938def9e3a83e1a463f8494ec1633d5fed937b53f1ed5fc",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_22_20210624_2-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_22_20210624_2",
+  "agent_id": "agent-20261006T191534Z-d915df7b",
+  "requested_url": "https://gwins.org/cn/milesguo/23107.html",
+  "fetched_at": "2026-10-06T20:07:27.473056+00:00",
+  "review_decision": null,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "source_text_imported": false,
+  "status": "fetched",
+  "http_status": 200,
+  "final_url": "https://gwins.org/cn/milesguo/23107.html",
+  "raw_bytes": 13446,
+  "raw_sha256": "8c04824e66b35157c45a0c1bc4a758718655736d82572c4d1bac6a45c251029b",
+  "metadata_evidence": {
+    "page_title": "郭文贵2021年6月24日盖特 20210624_2第二段：关于很多想加入GTV工作的战友们的一些问题的回复！",
+    "metadata": {
+      "description": "对了，我刚才录完我再说一段，战友们记住啊，在日本建设的GTV工程团队的基地，请和草根小哥还有康州农场的小帅，还有喜马拉雅联盟铁血组委员会联系，都可以，你所有的要求都"
+    },
+    "decoding": {
+      "codec": "utf-8",
+      "strict": false,
+      "replacement_count": 17,
+      "title_clean": true,
+      "warning": "Damaged fields are not reliable; clean excerpts only. Missing cues are not absence evidence."
+    },
+    "expected_source_video_id": "20210624_2",
+    "expected_id_visible": true,
+    "outbound_links": [
+      "https://youtu.be/vACgX06Qdjw",
+      "https://rumble.com/v59ev37-20210624-2.html",
+      "https://gettr.com/"
+    ],
+    "identity_type_cues": [
+      {
+        "paragraph_index": 2,
+        "excerpt": "郭文贵视频"
+      },
+      {
+        "paragraph_index": 20,
+        "excerpt": "视频链接：https://youtu.be/vACgX06Qdjw"
+      },
+      {
+        "paragraph_index": 21,
+        "excerpt": "视频链接2：https://rumble.com/v59ev37-20210624-2.html"
+      },
+      {
+        "paragraph_index": 26,
+        "excerpt": "对了，我刚才录完我再说一段，战友们记住啊，在日本建设的GTV工程团队的基地，请和草根小哥还有康州农场的小帅，还有喜马拉雅联盟铁血组委员会联系，都可以，你所有的要求都是可以的，像原来是抖音啊，微软啊，斯柯的，youtubu的，是吧，推特"
+      }
+    ],
+    "cue_profile": "origin-context-v2",
+    "cue_warning": "Excerpts may discuss other recordings; a reviewer must resolve context. No automatic type decision."
+  }
+}

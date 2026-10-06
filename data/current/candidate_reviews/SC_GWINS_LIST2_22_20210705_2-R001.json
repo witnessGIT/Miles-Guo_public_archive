@@ -1,0 +1,52 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_22_20210705_2-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_22_20210705_2",
+  "reviewed_by": "agent-20261006T191534Z-d915df7b",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-06T20:07:55Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20210705_002",
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/23160.html",
+    "https://youtu.be/mWEj-ELcSgw",
+    "https://rumble.com/v59ffya-20210705-2.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "Exact GWINS detail page 23160 contains source video ID 20210705_2 and a clean matching page title.",
+    "date": "Candidate date 2021-07-05 agrees with the source ID and detail-page title; no publication time was inferred.",
+    "title": "郭文贵2021年7月5日盖特 20210705_2 海航．北大方正．滴滴打车．阿里巴巴．恒大地产，大连万达．叶簡明．肖建华．车峰，平安集团民生银行，上海银行，香港汇丰银行．等等等等．一系列红色资本运作．都将验证共产主义是人间",
+    "platform_ids": {
+      "gwins_page_id": "23160",
+      "gwins_video_id": "20210705_2",
+      "youtube_ids": [
+        "mWEj-ELcSgw"
+      ],
+      "rumble_ids": [
+        "v59ffya"
+      ]
+    },
+    "source_relationships": "Only exact outbound platform links exposed by the verified GWINS detail page were attached; generic homepages were excluded.",
+    "deduplication": "Exact detail/media URLs and source_video_id were checked against the active SQLite inventory built from Git at 5e9f5d78f35bad02a21c0b12d6b3a99df028c7bc; exact matches link an existing canonical record, otherwise a date-scoped canonical ID is created without date-only merging."
+  },
+  "evidence_artifacts": [
+    "data/source_page_evidence/c2_metadata/C2-REVIEW-SC_GWINS_LIST2_22_20210705_2-R001/6a4bfa1325174727.json"
+  ],
+  "source_raw_sha256": "00ced392ea46cf51c1939ccb225bb798b5888b4ed71f1fe9feb0a145d3dd3a57",
+  "limitations": [
+    "Public HTML metadata and outbound links only; linked media was not opened or played.",
+    "No media download, ASR, transcript import, timing transfer, segmentation, or content-truth judgment."
+  ],
+  "canonical_promotion_performed": true,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}
