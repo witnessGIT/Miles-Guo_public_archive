@@ -1,0 +1,70 @@
+{
+  "evidence_version": "c2-metadata-evidence-v1",
+  "request_sha256": "92509ee2abbd258707c573006b5bd67da7cc92bf1292875c038ad8b2749bb4fd",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_17_20211011_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_17_20211011_1",
+  "agent_id": "agent-20261006T191534Z-d915df7b",
+  "requested_url": "https://gwins.org/cn/milesguo/23396.html",
+  "fetched_at": "2026-10-06T19:34:52.540913+00:00",
+  "review_decision": null,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "source_text_imported": false,
+  "status": "fetched",
+  "http_status": 200,
+  "final_url": "https://gwins.org/cn/milesguo/23396.html",
+  "raw_bytes": 19227,
+  "raw_sha256": "634e3daaf4d57ea03a48b1ce8a1b14389d9d20463c5a7c6e1640e21a0d5b4979",
+  "metadata_evidence": {
+    "page_title": "郭文贵2021年10月11日盖特 20211011_1刚才的视频大家的反应有卡顿，我再重发一次。",
+    "metadata": {
+      "description": "尊敬的战友们好，你们健身了吗？传播疫苗和冠状病毒真相，以及疫苗解药了吗？香港危机真相别忘了！香港，香港，现在又有台湾危机了。刚才我看了天津老马正在做节目，做的非"
+    },
+    "decoding": {
+      "codec": "utf-8",
+      "strict": false,
+      "replacement_count": 17,
+      "title_clean": true,
+      "warning": "Damaged fields are not reliable; clean excerpts only. Missing cues are not absence evidence."
+    },
+    "expected_source_video_id": "20211011_1",
+    "expected_id_visible": true,
+    "outbound_links": [
+      "https://gettr.com/post/pdttfc3253",
+      "https://rumble.com/v59qbth-20211011-1.html",
+      "https://gettr.com/"
+    ],
+    "identity_type_cues": [
+      {
+        "paragraph_index": 0,
+        "excerpt": "郭文贵2021年10月11日盖特 20211011_1刚才的视频大家的反应有卡顿，我再重发一次。"
+      },
+      {
+        "paragraph_index": 2,
+        "excerpt": "郭文贵视频"
+      },
+      {
+        "paragraph_index": 12,
+        "excerpt": "郭文贵2021年10月11日盖特 20211011_1 刚才的视频大家的反应有卡顿，我再重发一次。"
+      },
+      {
+        "paragraph_index": 20,
+        "excerpt": "视频链接：https://gettr.com/post/pdttfc3253"
+      },
+      {
+        "paragraph_index": 21,
+        "excerpt": "视频链接2：https://rumble.com/v59qbth-20211011-1.html"
+      },
+      {
+        "paragraph_index": 35,
+        "excerpt": "今天是星期一了，有很多消息我现在先不说。随时7哥可能要在GETTR和G-TV直播。今天有点阴天，但是感觉很舒服。台湾的兄弟姐妹们给我发的很多信息我都收到了，7哥在直播中回答；具体回答不了了，太多战友发来信息，没办法回的请包涵，不好意思啦。"
+      },
+      {
+        "paragraph_index": 35,
+        "excerpt": "先不说。随时7哥可能要在GETTR和G-TV直播。今天有点阴天，但是感觉很舒服。台湾的兄弟姐妹们给我发的很多信息我都收到了，7哥在直播中回答；具体回答不了了，太多战友发来信息，没办法回的请包涵，不好意思啦。"
+      }
+    ],
+    "cue_profile": "origin-context-v2",
+    "cue_warning": "Excerpts may discuss other recordings; a reviewer must resolve context. No automatic type decision."
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "evidence_version": "c2-metadata-evidence-v1",
+  "request_sha256": "92509ee2abbd258707c573006b5bd67da7cc92bf1292875c038ad8b2749bb4fd",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_17_20211003_2-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_17_20211003_2",
+  "agent_id": "agent-20261006T191534Z-d915df7b",
+  "requested_url": "https://gwins.org/cn/milesguo/23381.html",
+  "fetched_at": "2026-10-06T19:34:35.382325+00:00",
+  "review_decision": null,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "source_text_imported": false,
+  "status": "fetched",
+  "http_status": 200,
+  "final_url": "https://gwins.org/cn/milesguo/23381.html",
+  "raw_bytes": 10239,
+  "raw_sha256": "f915b4260641656907d21ac8cad1e93b3a2bc9a54156c9853da3b10cc9833565",
+  "metadata_evidence": {
+    "page_title": "郭文贵2021年10月3日盖特 20211003_2衷心地感谢，今天所有的战友们，参与的六个小时的大直播，感谢所有的台前幕后的工作的兄弟姐妹们，七哥还是感觉，意犹未尽，????????????现在还想马上直播，咋弄咧咋弄咧？",
+    "metadata": {},
+    "decoding": {
+      "codec": "utf-8",
+      "strict": false,
+      "replacement_count": 17,
+      "title_clean": true,
+      "warning": "Damaged fields are not reliable; clean excerpts only. Missing cues are not absence evidence."
+    },
+    "expected_source_video_id": "20211003_2",
+    "expected_id_visible": true,
+    "outbound_links": [
+      "https://gettr.com/post/pd1b9p8034",
+      "https://rumble.com/v59piel-20211003-2.html",
+      "https://gettr.com/"
+    ],
+    "identity_type_cues": [
+      {
+        "paragraph_index": 0,
+        "excerpt": "郭文贵2021年10月3日盖特 20211003_2衷心地感谢，今天所有的战友们，参与的六个小时的大直播，感谢所有的台前幕后的工作的兄弟姐妹们，七哥还是感觉，意犹未尽，????????????现在还想马上直播，咋弄咧咋弄咧？"
+      },
+      {
+        "paragraph_index": 0,
+        "excerpt": "战友们，参与的六个小时的大直播，感谢所有的台前幕后的工作的兄弟姐妹们，七哥还是感觉，意犹未尽，????????????现在还想马上直播，咋弄咧咋弄咧？"
+      },
+      {
+        "paragraph_index": 2,
+        "excerpt": "郭文贵视频"
+      },
+      {
+        "paragraph_index": 12,
+        "excerpt": "郭文贵2021年10月3日盖特 20211003_2 衷心地感谢，今天所有的战友们，参与的六个小时的大直播，感谢所有的台前幕后的工作的兄弟姐妹们，七哥还是感觉，意犹未尽，????????????现在还想马上直播，咋弄咧咋弄咧？"
+      },
+      {
+        "paragraph_index": 20,
+        "excerpt": "视频链接：https://gettr.com/post/pd1b9p8034"
+      },
+      {
+        "paragraph_index": 21,
+        "excerpt": "视频链接2：https://rumble.com/v59piel-20211003-2.html"
+      }
+    ],
+    "cue_profile": "origin-context-v2",
+    "cue_warning": "Excerpts may discuss other recordings; a reviewer must resolve context. No automatic type decision."
+  }
+}

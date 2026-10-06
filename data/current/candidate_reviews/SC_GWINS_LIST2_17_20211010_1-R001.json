@@ -1,0 +1,48 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_17_20211010_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_17_20211010_1",
+  "reviewed_by": "agent-20261006T191534Z-d915df7b",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-06T19:35:00Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20211010_001",
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/23394.html",
+    "https://rumble.com/v59qbno-20211010-1.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "Exact GWINS detail page 23394 contains source video ID 20211010_1 and a clean matching page title.",
+    "date": "Candidate date 2021-10-10 agrees with the source ID and detail-page title; no publication time was inferred.",
+    "title": "郭文贵2021年10月10日直播 20211010_1 文贵在双十节给台湾同胞说的话：台湾凶也，中共与美方对台湾问题早有文字性承诺勾兑;习以孙灭台，与国民党卖台贼呼应；国内经济房地产的万亿债务危机，华平基金的腐败会把西方掏空，中美",
+    "platform_ids": {
+      "gwins_page_id": "23394",
+      "gwins_video_id": "20211010_1",
+      "rumble_ids": [
+        "v59qbno"
+      ]
+    },
+    "source_relationships": "Only exact outbound platform links exposed by the verified GWINS detail page were attached; generic homepages were excluded.",
+    "deduplication": "Exact detail/media URLs and source_video_id were checked against the active SQLite inventory built from Git at 4fc00ac9be5d0e5b6419cd09fb9b297b69b623f9; exact matches link an existing canonical record, otherwise a date-scoped canonical ID is created without date-only merging."
+  },
+  "evidence_artifacts": [
+    "data/source_page_evidence/c2_metadata/C2-REVIEW-SC_GWINS_LIST2_17_20211010_1-R001/92509ee2abbd2587.json"
+  ],
+  "source_raw_sha256": "06862965037935e1a4ca62aea54af7e51eb77d872b36f5eb4c4e9ece14b39f58",
+  "limitations": [
+    "Public HTML metadata and outbound links only; linked media was not opened or played.",
+    "No media download, ASR, transcript import, timing transfer, segmentation, or content-truth judgment."
+  ],
+  "canonical_promotion_performed": true,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}

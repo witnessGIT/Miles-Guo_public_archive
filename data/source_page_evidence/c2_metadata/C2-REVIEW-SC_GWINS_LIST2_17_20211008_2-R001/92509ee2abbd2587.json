@@ -1,0 +1,56 @@
+{
+  "evidence_version": "c2-metadata-evidence-v1",
+  "request_sha256": "92509ee2abbd258707c573006b5bd67da7cc92bf1292875c038ad8b2749bb4fd",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_17_20211008_2-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_17_20211008_2",
+  "agent_id": "agent-20261006T191534Z-d915df7b",
+  "requested_url": "https://gwins.org/cn/milesguo/23390.html",
+  "fetched_at": "2026-10-06T19:34:45.182630+00:00",
+  "review_decision": null,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "source_text_imported": false,
+  "status": "fetched",
+  "http_status": 200,
+  "final_url": "https://gwins.org/cn/milesguo/23390.html",
+  "raw_bytes": 9569,
+  "raw_sha256": "955cbc2bdad12f78b327247b0fb214194405d681901c52d6d172a528b6ca30f0",
+  "metadata_evidence": {
+    "page_title": "郭文贵2021年10月8日盖特直播 20211008_2",
+    "metadata": {},
+    "decoding": {
+      "codec": "utf-8",
+      "strict": false,
+      "replacement_count": 17,
+      "title_clean": true,
+      "warning": "Damaged fields are not reliable; clean excerpts only. Missing cues are not absence evidence."
+    },
+    "expected_source_video_id": "20211008_2",
+    "expected_id_visible": true,
+    "outbound_links": [
+      "https://gettr.com/post/pdle8qf1b6",
+      "https://rumble.com/v59q941-20211008-2.html",
+      "https://gettr.com/"
+    ],
+    "identity_type_cues": [
+      {
+        "paragraph_index": 0,
+        "excerpt": "郭文贵2021年10月8日盖特直播 20211008_2"
+      },
+      {
+        "paragraph_index": 2,
+        "excerpt": "郭文贵视频"
+      },
+      {
+        "paragraph_index": 20,
+        "excerpt": "视频链接：https://gettr.com/post/pdle8qf1b6"
+      },
+      {
+        "paragraph_index": 21,
+        "excerpt": "视频链接2：https://rumble.com/v59q941-20211008-2.html"
+      }
+    ],
+    "cue_profile": "origin-context-v2",
+    "cue_warning": "Excerpts may discuss other recordings; a reviewer must resolve context. No automatic type decision."
+  }
+}

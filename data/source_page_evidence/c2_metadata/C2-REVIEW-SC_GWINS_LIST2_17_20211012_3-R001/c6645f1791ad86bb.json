@@ -1,0 +1,52 @@
+{
+  "evidence_version": "c2-metadata-evidence-v1",
+  "request_sha256": "c6645f1791ad86bb883e8459c5979e98ac44746c80fb9698674be3bc3d9d4794",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_17_20211012_3-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_17_20211012_3",
+  "agent_id": "agent-20261006T191534Z-d915df7b",
+  "requested_url": "https://gwins.org/cn/milesguo/23404.html",
+  "fetched_at": "2026-10-06T19:34:32.862557+00:00",
+  "review_decision": null,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "source_text_imported": false,
+  "status": "fetched",
+  "http_status": 200,
+  "final_url": "https://gwins.org/cn/milesguo/23404.html",
+  "raw_bytes": 10253,
+  "raw_sha256": "50377b001c696b8bb3f08fb00c1225404539e468d68cdc25e065793b048962ad",
+  "metadata_evidence": {
+    "page_title": "郭文贵2021年10月12日盖特 20211012_3尊敬的战友们好．世界政治经济面临的巨大挑战给新中国联邦带来了前所未有的机会，我们要冷静，客观全面进行揭发．帮助世界拆除共产党在全世界埋下的各种定时炸弹……",
+    "metadata": {},
+    "decoding": {
+      "codec": "utf-8",
+      "strict": false,
+      "replacement_count": 17,
+      "title_clean": true,
+      "warning": "Damaged fields are not reliable; clean excerpts only. Missing cues are not absence evidence."
+    },
+    "expected_source_video_id": "20211012_3",
+    "expected_id_visible": true,
+    "outbound_links": [
+      "https://gettr.com/post/pdy3yq0473",
+      "https://rumble.com/v59qeos-20211012-3.html",
+      "https://gettr.com/"
+    ],
+    "identity_type_cues": [
+      {
+        "paragraph_index": 2,
+        "excerpt": "郭文贵视频"
+      },
+      {
+        "paragraph_index": 20,
+        "excerpt": "视频链接：https://gettr.com/post/pdy3yq0473"
+      },
+      {
+        "paragraph_index": 21,
+        "excerpt": "视频链接2：https://rumble.com/v59qeos-20211012-3.html"
+      }
+    ],
+    "cue_profile": "origin-context-v2",
+    "cue_warning": "Excerpts may discuss other recordings; a reviewer must resolve context. No automatic type decision."
+  }
+}

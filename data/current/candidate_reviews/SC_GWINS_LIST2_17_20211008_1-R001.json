@@ -1,0 +1,52 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_17_20211008_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_17_20211008_1",
+  "reviewed_by": "agent-20261006T191534Z-d915df7b",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-06T19:35:00Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20211008_001",
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/23389.html",
+    "https://gettr.com/post/pdiwza018f",
+    "https://rumble.com/v59prxx-20211008-1.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "Exact GWINS detail page 23389 contains source video ID 20211008_1 and a clean matching page title.",
+    "date": "Candidate date 2021-10-08 agrees with the source ID and detail-page title; no publication time was inferred.",
+    "title": "郭文贵2021年10月8日盖特 20211008_1 尊敬的战友们好……台湾再次成为中美两国之间的政治经济交易的筹码，对台湾没有任何好处，美国等西方国家正在利用中国的内部政治斗争，获取自己的短暂的政治经济的利益，对中国人，对世",
+    "platform_ids": {
+      "gwins_page_id": "23389",
+      "gwins_video_id": "20211008_1",
+      "gettr_ids": [
+        "post:pdiwza018f"
+      ],
+      "rumble_ids": [
+        "v59prxx"
+      ]
+    },
+    "source_relationships": "Only exact outbound platform links exposed by the verified GWINS detail page were attached; generic homepages were excluded.",
+    "deduplication": "Exact detail/media URLs and source_video_id were checked against the active SQLite inventory built from Git at 4fc00ac9be5d0e5b6419cd09fb9b297b69b623f9; exact matches link an existing canonical record, otherwise a date-scoped canonical ID is created without date-only merging."
+  },
+  "evidence_artifacts": [
+    "data/source_page_evidence/c2_metadata/C2-REVIEW-SC_GWINS_LIST2_17_20211008_1-R001/92509ee2abbd2587.json"
+  ],
+  "source_raw_sha256": "8819b61faf60999e6b77bd5ca9ddc9503a9ec77c56d0ead48921f859a080fa3f",
+  "limitations": [
+    "Public HTML metadata and outbound links only; linked media was not opened or played.",
+    "No media download, ASR, transcript import, timing transfer, segmentation, or content-truth judgment."
+  ],
+  "canonical_promotion_performed": true,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}

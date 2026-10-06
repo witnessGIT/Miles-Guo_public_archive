@@ -1,0 +1,52 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_17_20211003_3-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_17_20211003_3",
+  "reviewed_by": "agent-20261006T191534Z-d915df7b",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-06T19:35:00Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20211003_003",
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/23382.html",
+    "https://gettr.com/post/pd2izyb046",
+    "https://rumble.com/v59pigd-20211003-3.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "Exact GWINS detail page 23382 contains source video ID 20211003_3 and a clean matching page title.",
+    "date": "Candidate date 2021-10-03 agrees with the source ID and detail-page title; no publication time was inferred.",
+    "title": "郭文贵2021年10月3日盖特 20211003_3 尊敬的战友们好！物无美恶．过则为灾。运动，一定要智慧的运动，千万不要伤了肌肉和身体，否则后悔莫及，健身绝对不能逞强，就像爆料革命灭共事业也一样，不要硬撑．在愉悦快乐，轻松中",
+    "platform_ids": {
+      "gwins_page_id": "23382",
+      "gwins_video_id": "20211003_3",
+      "gettr_ids": [
+        "post:pd2izyb046"
+      ],
+      "rumble_ids": [
+        "v59pigd"
+      ]
+    },
+    "source_relationships": "Only exact outbound platform links exposed by the verified GWINS detail page were attached; generic homepages were excluded.",
+    "deduplication": "Exact detail/media URLs and source_video_id were checked against the active SQLite inventory built from Git at 4fc00ac9be5d0e5b6419cd09fb9b297b69b623f9; exact matches link an existing canonical record, otherwise a date-scoped canonical ID is created without date-only merging."
+  },
+  "evidence_artifacts": [
+    "data/source_page_evidence/c2_metadata/C2-REVIEW-SC_GWINS_LIST2_17_20211003_3-R001/92509ee2abbd2587.json"
+  ],
+  "source_raw_sha256": "76c6c37f7c85c782601749ccf232a5653251203dac4b9e1307359c6531dcbd29",
+  "limitations": [
+    "Public HTML metadata and outbound links only; linked media was not opened or played.",
+    "No media download, ASR, transcript import, timing transfer, segmentation, or content-truth judgment."
+  ],
+  "canonical_promotion_performed": true,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}

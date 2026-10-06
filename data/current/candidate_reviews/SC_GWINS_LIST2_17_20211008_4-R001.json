@@ -1,0 +1,48 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_17_20211008_4-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_17_20211008_4",
+  "reviewed_by": "agent-20261006T191534Z-d915df7b",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-06T19:35:00Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20211008_004",
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/23392.html",
+    "https://rumble.com/v59q9gd-20211008-4.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "Exact GWINS detail page 23392 contains source video ID 20211008_4 and a clean matching page title.",
+    "date": "Candidate date 2021-10-08 agrees with the source ID and detail-page title; no publication time was inferred.",
+    "title": "郭文贵2021年10月8日直播 20211008_4 试驾RAM3500第一段",
+    "platform_ids": {
+      "gwins_page_id": "23392",
+      "gwins_video_id": "20211008_4",
+      "rumble_ids": [
+        "v59q9gd"
+      ]
+    },
+    "source_relationships": "Only exact outbound platform links exposed by the verified GWINS detail page were attached; generic homepages were excluded.",
+    "deduplication": "Exact detail/media URLs and source_video_id were checked against the active SQLite inventory built from Git at 4fc00ac9be5d0e5b6419cd09fb9b297b69b623f9; exact matches link an existing canonical record, otherwise a date-scoped canonical ID is created without date-only merging."
+  },
+  "evidence_artifacts": [
+    "data/source_page_evidence/c2_metadata/C2-REVIEW-SC_GWINS_LIST2_17_20211008_4-R001/92509ee2abbd2587.json"
+  ],
+  "source_raw_sha256": "95f85e755a8a16d0787a65e83d95cff12620f53248e25526b74e55e560ada47b",
+  "limitations": [
+    "Public HTML metadata and outbound links only; linked media was not opened or played.",
+    "No media download, ASR, transcript import, timing transfer, segmentation, or content-truth judgment."
+  ],
+  "canonical_promotion_performed": true,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}
