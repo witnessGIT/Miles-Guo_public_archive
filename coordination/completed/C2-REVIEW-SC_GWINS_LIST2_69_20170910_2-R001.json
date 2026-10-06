@@ -1,0 +1,28 @@
+{
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_69_20170910_2-R001",
+  "agent_id": "agent-20261006T200100Z-gpt56sol-chat-c2",
+  "completed_at": "2026-10-06T20:07:00Z",
+  "result_commit": "b576e59d9568cc33bddd81c5ea332b816a983195",
+  "outputs": [
+    "data/current/candidate_reviews/SC_GWINS_LIST2_69_20170910_2-R001.json"
+  ],
+  "validation": "GWINS list_2_69 candidate 20170910_2 was individually reviewed and rejected as a non-target standalone/preannouncement/supplemental video using exact current-item identity, date/title, direct platform IDs, source relationships, and same-day deduplication. No playback, media download, transcription, or segmentation was performed. Candidate evidence validation, database build, and database validation passed in repository CI.",
+  "workflow_mode": "continuous-worker-v2",
+  "claim_protocol": "claim-protocol-v2",
+  "entry_mode": "ordinary_chat",
+  "continue_after_finish": true,
+  "finish_prerequisites_revalidated": true,
+  "notes": "Completed under candidate-review-evidence-v2 after one-candidate source-backed review.",
+  "kind": "candidate_promotion_review",
+  "source_candidate_id": "SC_GWINS_LIST2_69_20170910_2",
+  "review_generation": 1,
+  "review_claim_timeout_hours": 10,
+  "review_batch_id": "REVIEW-BATCH-20261006T200100Z-gpt56sol-chat-c2",
+  "review_batch_target_size": 20,
+  "review_batch_claimed_count": 20,
+  "review_batch_position": 12,
+  "candidate_review_contract": "candidate-review-evidence-v2",
+  "review_artifact": "data/current/candidate_reviews/SC_GWINS_LIST2_69_20170910_2-R001.json",
+  "review_decision": "rejected_not_target",
+  "canonical_live_id": null
+}
