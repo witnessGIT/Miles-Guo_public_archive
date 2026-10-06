@@ -1,0 +1,41 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_47_20191029-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_47_20191029",
+  "reviewed_by": "agent-20261006T143300Z-gpt56sol-chat-c2-list47",
+  "entry_mode": "ordinary_chat",
+  "reviewed_at": "2026-10-06T14:40:00Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20191029_001",
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_47.html",
+    "https://gwins.org/cn/milesguo/437.html",
+    "https://miles.md/en/myz",
+    "https://odysee.com/@laxi:4/20191029:4",
+    "https://rumble.com/v57tlbx-20191029.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "evidence_summary": {
+    "identity": "GWINS list_2_47 candidate 20191029 matches the public archival record and GWINS detail page.",
+    "date": "Public source evidence agrees with 2019-10-29.",
+    "title": "Public source title agrees with the source candidate title.",
+    "platform_ids": [
+      "20191029",
+      "@laxi:4/20191029:4",
+      "v57tlbx-20191029"
+    ],
+    "source_relationships": "Public archival page exposes the recorded media URL(s) for this exact candidate identity.",
+    "deduplication": "Current live_videos contains no canonical record for 20191029; title/date/source id are distinct and support LIVE_20191029_001."
+  },
+  "playback_performed": false,
+  "media_download_performed": false,
+  "transcription_performed": false,
+  "segmentation_performed": false
+}
