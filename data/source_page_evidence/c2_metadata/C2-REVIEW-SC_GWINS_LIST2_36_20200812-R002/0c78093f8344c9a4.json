@@ -1,0 +1,62 @@
+{
+  "evidence_version": "c2-metadata-evidence-v1",
+  "request_sha256": "0c78093f8344c9a4dfaa2b4b65ee4066119ec22186444a452e6fd816a132dcd1",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_36_20200812-R002",
+  "source_candidate_id": "SC_GWINS_LIST2_36_20200812",
+  "agent_id": "agent-20261006T191534Z-d915df7b",
+  "requested_url": "https://gwins.org/cn/milesguo/13604.html",
+  "fetched_at": "2026-10-06T19:21:18.473346+00:00",
+  "review_decision": null,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "source_text_imported": false,
+  "status": "fetched",
+  "http_status": 200,
+  "final_url": "https://gwins.org/cn/milesguo/13604.html",
+  "raw_bytes": 13195,
+  "raw_sha256": "3e4ee23ac2f4803d27fa3b91a6c4f5fe392831c1543a08ec0d2219726c531627",
+  "metadata_evidence": {
+    "page_title": "郭文贵2020年8月12日盖特 202008128月12号尊敬的战友们好，你们健身了吗？你们传播C C P病毒．香港危机真相了吗？文贵在半夜向战友们问好",
+    "metadata": {
+      "description": "尊敬的战友们好啊，现在是8月12号啊，你说我这深更半夜的又来给你们打扰你们来了，哎呀，真热闹啊，大家看到昨天的战斗室，昨天的我们的科学家啊，这么棒的访谈，问的问题是如"
+    },
+    "decoding": {
+      "codec": "utf-8",
+      "strict": false,
+      "replacement_count": 17,
+      "title_clean": true,
+      "warning": "Damaged fields are not reliable; clean excerpts only. Missing cues are not absence evidence."
+    },
+    "expected_source_video_id": "20200812",
+    "expected_id_visible": true,
+    "outbound_links": [
+      "https://youtu.be/XC3ByyH2w04",
+      "https://rumble.com/v58ov70-20200812.html",
+      "https://gettr.com/"
+    ],
+    "identity_type_cues": [
+      {
+        "paragraph_index": 2,
+        "excerpt": "郭文贵视频"
+      },
+      {
+        "paragraph_index": 20,
+        "excerpt": "视频链接：https://youtu.be/XC3ByyH2w04"
+      },
+      {
+        "paragraph_index": 21,
+        "excerpt": "视频链接2：https://rumble.com/v58ov70-20200812.html"
+      },
+      {
+        "paragraph_index": 27,
+        "excerpt": "能把共产党给灭了就没什么革命能把共产党给灭了。就这么简单啊，我相信到时候不能老让我们等吧。经济这块儿，擀面杖子一完，共产党内部，分分钟脆断。比突尼斯还可怕，大家不信走着看，还是那句话，灭共没你不行，缺你不行啊，我不能在这喊里面睡觉呢，那么多人，战友们没你灭不了共，没你不行。"
+      },
+      {
+        "paragraph_index": 28,
+        "excerpt": "拜托了，阿弥陀佛，俺去睡觉了，今天可能啊，可能抽时间吧，就是12号的下午抽时间直播一下啊，有一些事给大家报告报告啊，谢了兄弟姐妹们，有你们真好。"
+      }
+    ],
+    "cue_profile": "origin-context-v2",
+    "cue_warning": "Excerpts may discuss other recordings; a reviewer must resolve context. No automatic type decision."
+  }
+}

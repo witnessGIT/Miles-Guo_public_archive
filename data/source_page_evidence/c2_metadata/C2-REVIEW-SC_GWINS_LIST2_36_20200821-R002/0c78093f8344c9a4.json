@@ -1,0 +1,58 @@
+{
+  "evidence_version": "c2-metadata-evidence-v1",
+  "request_sha256": "0c78093f8344c9a4dfaa2b4b65ee4066119ec22186444a452e6fd816a132dcd1",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_36_20200821-R002",
+  "source_candidate_id": "SC_GWINS_LIST2_36_20200821",
+  "agent_id": "agent-20261006T191534Z-d915df7b",
+  "requested_url": "https://gwins.org/cn/milesguo/13768.html",
+  "fetched_at": "2026-10-06T19:21:39.335199+00:00",
+  "review_decision": null,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "source_text_imported": false,
+  "status": "fetched",
+  "http_status": 200,
+  "final_url": "https://gwins.org/cn/milesguo/13768.html",
+  "raw_bytes": 14066,
+  "raw_sha256": "492e38f7b7419c87b92291e96b9a56e8674d47483e575c406a1268619939ec91",
+  "metadata_evidence": {
+    "page_title": "郭文贵2020年8月21日盖特 202008218月21号 尊敬的战友们好，你们健身了吗？你们传播C C P病毒．香港危机真相了吗？从班农先生的事件……看中美两国真正的巨大差异，一切都已经开",
+    "metadata": {
+      "description": "8月21号了，战友们，我这个工作的8月21号深夜了，看来这梦还挺好，这一半噩梦没实现，没有真的发生挺好的啊，我们不能忘了，灭共啊。是为了人们过得更美好啊。咱不希望人出入太"
+    },
+    "decoding": {
+      "codec": "utf-8",
+      "strict": false,
+      "replacement_count": 17,
+      "title_clean": true,
+      "warning": "Damaged fields are not reliable; clean excerpts only. Missing cues are not absence evidence."
+    },
+    "expected_source_video_id": "20200821",
+    "expected_id_visible": true,
+    "outbound_links": [
+      "https://youtu.be/gXtBgRUf878",
+      "https://rumble.com/v58pfod-20200821.html",
+      "https://gettr.com/"
+    ],
+    "identity_type_cues": [
+      {
+        "paragraph_index": 2,
+        "excerpt": "郭文贵视频"
+      },
+      {
+        "paragraph_index": 20,
+        "excerpt": "视频链接：https://youtu.be/gXtBgRUf878"
+      },
+      {
+        "paragraph_index": 21,
+        "excerpt": "视频链接2：https://rumble.com/v58pfod-20200821.html"
+      },
+      {
+        "paragraph_index": 27,
+        "excerpt": "中南坑人估计你们是一辈子也坐不上来。你想到我船上被逮捕都不可能，结果昨天来的人当中没有fbi的就是南区法院的结果都知道文贵都看文贵视频，挺搞笑的所以非常尊重非常友好是人家这个。"
+      }
+    ],
+    "cue_profile": "origin-context-v2",
+    "cue_warning": "Excerpts may discuss other recordings; a reviewer must resolve context. No automatic type decision."
+  }
+}

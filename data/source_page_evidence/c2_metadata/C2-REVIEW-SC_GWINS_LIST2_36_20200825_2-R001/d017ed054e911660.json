@@ -1,0 +1,54 @@
+{
+  "evidence_version": "c2-metadata-evidence-v1",
+  "request_sha256": "d017ed054e91166093f5ea81960705cb42d15c3c0535c74d801a2abddcdcbab8",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_36_20200825_2-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_36_20200825_2",
+  "agent_id": "agent-20261006T191534Z-d915df7b",
+  "requested_url": "https://gwins.org/cn/milesguo/14443.html",
+  "fetched_at": "2026-10-06T19:21:23.747967+00:00",
+  "review_decision": null,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "source_text_imported": false,
+  "status": "fetched",
+  "http_status": 200,
+  "final_url": "https://gwins.org/cn/milesguo/14443.html",
+  "raw_bytes": 13411,
+  "raw_sha256": "822644ead8eec72ed4881a99ce62366192eadc2e0f40b5cfd52147f15058a7ae",
+  "metadata_evidence": {
+    "page_title": "郭文贵2020年8月25日盖特 20200825_28月25号 尊敬的战友们好．请大家的焦点定在中共在美国实施的法律超限战。……，的事情，请大家关注华尔街日报，以及美国司法部，披露的中共在",
+    "metadata": {
+      "description": "8月25号，战友们好，你们健身了吗。嗯。嗯哇，亲爱的兄弟姐妹们，这两天很热闹啊，唉呀，最后看这个路德先生爆这个小白杨，虽然这个来自令完成，但是我建议兄弟姐妹们不要再搞"
+    },
+    "decoding": {
+      "codec": "utf-8",
+      "strict": false,
+      "replacement_count": 17,
+      "title_clean": true,
+      "warning": "Damaged fields are not reliable; clean excerpts only. Missing cues are not absence evidence."
+    },
+    "expected_source_video_id": "20200825_2",
+    "expected_id_visible": true,
+    "outbound_links": [
+      "https://youtu.be/V3QL08mM_xk",
+      "https://rumble.com/v58q1at-20200825-2.html",
+      "https://gettr.com/"
+    ],
+    "identity_type_cues": [
+      {
+        "paragraph_index": 2,
+        "excerpt": "郭文贵视频"
+      },
+      {
+        "paragraph_index": 20,
+        "excerpt": "视频链接：https://youtu.be/V3QL08mM_xk"
+      },
+      {
+        "paragraph_index": 21,
+        "excerpt": "视频链接2：https://rumble.com/v58q1at-20200825-2.html"
+      }
+    ],
+    "cue_profile": "origin-context-v2",
+    "cue_warning": "Excerpts may discuss other recordings; a reviewer must resolve context. No automatic type decision."
+  }
+}

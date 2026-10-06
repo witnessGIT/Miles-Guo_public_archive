@@ -1,0 +1,48 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_36_20200804_4-R002",
+  "source_candidate_id": "SC_GWINS_LIST2_36_20200804_4",
+  "reviewed_by": "agent-20261006T191534Z-d915df7b",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-06T19:25:03Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20200804_004",
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/13325.html",
+    "https://rumble.com/v58oaky-20200804-4.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "Exact GWINS detail page 13325 contains source video ID 20200804_4 and a clean matching page title.",
+    "date": "Candidate date 2020-08-04 agrees with the source ID and detail-page title; no publication time was inferred.",
+    "title": "郭文贵2020年8月4日直播 20200804_4 共产党的内斗将是一场人类前所未有的政治大劫难",
+    "platform_ids": {
+      "gwins_page_id": "13325",
+      "gwins_video_id": "20200804_4",
+      "rumble_ids": [
+        "v58oaky"
+      ]
+    },
+    "source_relationships": "Only exact outbound platform links exposed by the verified GWINS detail page were attached; generic homepages were excluded.",
+    "deduplication": "Exact detail/media URLs and source_video_id were checked against the active SQLite inventory built from Git at 477c2f6fd76fc73abe942a7b547da87b3a18faf6; exact matches link an existing canonical record, otherwise a date-scoped canonical ID is created without date-only merging."
+  },
+  "evidence_artifacts": [
+    "data/source_page_evidence/c2_metadata/C2-REVIEW-SC_GWINS_LIST2_36_20200804_4-R002/112e8a8e59b0fac5.json"
+  ],
+  "source_raw_sha256": "6e3da9389c9413cef219c81258062ebb5dd541a98b87dfb0c289aa061287035f",
+  "limitations": [
+    "Public HTML metadata and outbound links only; linked media was not opened or played.",
+    "No media download, ASR, transcript import, timing transfer, segmentation, or content-truth judgment."
+  ],
+  "canonical_promotion_performed": true,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}

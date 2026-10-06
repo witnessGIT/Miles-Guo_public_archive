@@ -1,0 +1,62 @@
+{
+  "evidence_version": "c2-metadata-evidence-v1",
+  "request_sha256": "0c78093f8344c9a4dfaa2b4b65ee4066119ec22186444a452e6fd816a132dcd1",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_36_20200819_1-R002",
+  "source_candidate_id": "SC_GWINS_LIST2_36_20200819_1",
+  "agent_id": "agent-20261006T191534Z-d915df7b",
+  "requested_url": "https://gwins.org/cn/milesguo/13706.html",
+  "fetched_at": "2026-10-06T19:21:33.094562+00:00",
+  "review_decision": null,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "source_text_imported": false,
+  "status": "fetched",
+  "http_status": 200,
+  "final_url": "https://gwins.org/cn/milesguo/13706.html",
+  "raw_bytes": 13530,
+  "raw_sha256": "253a40e31d0ce68e6c11d7c6b1945e6677f66422c1ba832a0f3f0b1a8f1d6338",
+  "metadata_evidence": {
+    "page_title": "郭文贵2020年8月19日盖特 20200819_1尊敬的战友们好，你们健身了吗？你们传播C C P病毒香港危机真相了吗？一切都已经开始",
+    "metadata": {
+      "description": "尊敬的战友们好，8月19号，这个我马上正在准备了一个国际性的会议啊，马上要开，所以说这个这两天实在太忙没法直播，现在啊美国以及西方国家正在以非常快的速度。啊与爆料革命"
+    },
+    "decoding": {
+      "codec": "utf-8",
+      "strict": false,
+      "replacement_count": 17,
+      "title_clean": true,
+      "warning": "Damaged fields are not reliable; clean excerpts only. Missing cues are not absence evidence."
+    },
+    "expected_source_video_id": "20200819_1",
+    "expected_id_visible": true,
+    "outbound_links": [
+      "https://youtu.be/OsJqatw0Qh4",
+      "https://rumble.com/v58p1zp-20200819-1.html",
+      "https://gettr.com/"
+    ],
+    "identity_type_cues": [
+      {
+        "paragraph_index": 2,
+        "excerpt": "郭文贵视频"
+      },
+      {
+        "paragraph_index": 20,
+        "excerpt": "视频链接：https://youtu.be/OsJqatw0Qh4"
+      },
+      {
+        "paragraph_index": 21,
+        "excerpt": "视频链接2：https://rumble.com/v58p1zp-20200819-1.html"
+      },
+      {
+        "paragraph_index": 26,
+        "excerpt": "尊敬的战友们好，8月19号，这个我马上正在准备了一个国际性的会议啊，马上要开，所以说这个这两天实在太忙没法直播，现在啊美国以及西方国家正在以非常快的速度。啊与爆料革命新中国联邦合作如何的了解中共，对付中国，现在班农正在进行的战斗室直播啊主要是美国内部斗争内部选举咱不馋和。川普总统这几天，啊这些行动。和接下来美国啊，把行动行动行动"
+      },
+      {
+        "paragraph_index": 26,
+        "excerpt": "忙没法直播，现在啊美国以及西方国家正在以非常快的速度。啊与爆料革命新中国联邦合作如何的了解中共，对付中国，现在班农正在进行的战斗室直播啊主要是美国内部斗争内部选举咱不馋和。川普总统这几天，啊这些行动。和接下来美国啊，把行动行动行动作为美国政治大家都要遵守的一个原则，紧跟爆料革命和新中国联邦的行动宣言，加速共产党的灭亡，同时共产党在国内在干啥，想干啥未来"
+      }
+    ],
+    "cue_profile": "origin-context-v2",
+    "cue_warning": "Excerpts may discuss other recordings; a reviewer must resolve context. No automatic type decision."
+  }
+}

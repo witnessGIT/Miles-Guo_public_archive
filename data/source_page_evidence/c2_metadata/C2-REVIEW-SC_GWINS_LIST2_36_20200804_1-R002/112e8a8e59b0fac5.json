@@ -1,0 +1,54 @@
+{
+  "evidence_version": "c2-metadata-evidence-v1",
+  "request_sha256": "112e8a8e59b0fac543dfef6983fb6f4b389c8b15dcdb8555fab4658589a28c7d",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_36_20200804_1-R002",
+  "source_candidate_id": "SC_GWINS_LIST2_36_20200804_1",
+  "agent_id": "agent-20261006T191534Z-d915df7b",
+  "requested_url": "https://gwins.org/cn/milesguo/13255.html",
+  "fetched_at": "2026-10-06T19:21:26.386905+00:00",
+  "review_decision": null,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "source_text_imported": false,
+  "status": "fetched",
+  "http_status": 200,
+  "final_url": "https://gwins.org/cn/milesguo/13255.html",
+  "raw_bytes": 10688,
+  "raw_sha256": "f46de238dd511932dd150daf9a3fe460491035f43c80c45448d34758b6c14283",
+  "metadata_evidence": {
+    "page_title": "郭文贵2020年8月4日盖特 20200804_18月4号尊敬的战友们好，你们健身了吗？你们传播系C CP病毒……香港危机真相了吗？文贵分享偷吃面包的感觉……",
+    "metadata": {
+      "description": "以下是茅屎坑战友没校对前的内容。在吗？我在厨房里偷偷的吃面包，头疼喝咖啡，现在在楼上。是啊那是。今天早晨看了。特别。  如果我还不吃了，我也大概8, 我也吃一个吧。"
+    },
+    "decoding": {
+      "codec": "utf-8",
+      "strict": false,
+      "replacement_count": 17,
+      "title_clean": true,
+      "warning": "Damaged fields are not reliable; clean excerpts only. Missing cues are not absence evidence."
+    },
+    "expected_source_video_id": "20200804_1",
+    "expected_id_visible": true,
+    "outbound_links": [
+      "https://youtu.be/1UBOhSIAHIo",
+      "https://rumble.com/v58nsql-20200804-1.html",
+      "https://gettr.com/"
+    ],
+    "identity_type_cues": [
+      {
+        "paragraph_index": 2,
+        "excerpt": "郭文贵视频"
+      },
+      {
+        "paragraph_index": 20,
+        "excerpt": "视频链接：https://youtu.be/1UBOhSIAHIo"
+      },
+      {
+        "paragraph_index": 21,
+        "excerpt": "视频链接2：https://rumble.com/v58nsql-20200804-1.html"
+      }
+    ],
+    "cue_profile": "origin-context-v2",
+    "cue_warning": "Excerpts may discuss other recordings; a reviewer must resolve context. No automatic type decision."
+  }
+}

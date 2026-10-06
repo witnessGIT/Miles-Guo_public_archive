@@ -1,0 +1,54 @@
+{
+  "evidence_version": "c2-metadata-evidence-v1",
+  "request_sha256": "0c78093f8344c9a4dfaa2b4b65ee4066119ec22186444a452e6fd816a132dcd1",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_36_20200820_2-R002",
+  "source_candidate_id": "SC_GWINS_LIST2_36_20200820_2",
+  "agent_id": "agent-20261006T191534Z-d915df7b",
+  "requested_url": "https://gwins.org/cn/milesguo/13767.html",
+  "fetched_at": "2026-10-06T19:21:38.084571+00:00",
+  "review_decision": null,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "source_text_imported": false,
+  "status": "fetched",
+  "http_status": 200,
+  "final_url": "https://gwins.org/cn/milesguo/13767.html",
+  "raw_bytes": 12400,
+  "raw_sha256": "7783606a05743385d84e00647d09af21e8c931a911b154ad411187080690d6d0",
+  "metadata_evidence": {
+    "page_title": "郭文贵2020年8月20日盖特 20200820_28月20号 尊敬的战友们好，我一直以来所说的。新中国联邦．爆料革命灭共运动，在八月份．九月份是最重要的",
+    "metadata": {
+      "description": "尊敬的战友们好！兄弟姐妹，今天是8月20号。 接下来一二十个小时大家得做好心理准备啊，准备好你们的心脏！共产党以及各方面的西方的沉默力量发动了对我们爆料革命，和我"
+    },
+    "decoding": {
+      "codec": "utf-8",
+      "strict": false,
+      "replacement_count": 17,
+      "title_clean": true,
+      "warning": "Damaged fields are not reliable; clean excerpts only. Missing cues are not absence evidence."
+    },
+    "expected_source_video_id": "20200820_2",
+    "expected_id_visible": true,
+    "outbound_links": [
+      "https://youtu.be/n8waFmVtUiE",
+      "https://rumble.com/v58pfgd-20200820-2.html",
+      "https://gettr.com/"
+    ],
+    "identity_type_cues": [
+      {
+        "paragraph_index": 2,
+        "excerpt": "郭文贵视频"
+      },
+      {
+        "paragraph_index": 20,
+        "excerpt": "视频链接：https://youtu.be/n8waFmVtUiE"
+      },
+      {
+        "paragraph_index": 21,
+        "excerpt": "视频链接2：https://rumble.com/v58pfgd-20200820-2.html"
+      }
+    ],
+    "cue_profile": "origin-context-v2",
+    "cue_warning": "Excerpts may discuss other recordings; a reviewer must resolve context. No automatic type decision."
+  }
+}

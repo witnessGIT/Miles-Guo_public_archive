@@ -1,0 +1,74 @@
+{
+  "evidence_version": "c2-metadata-evidence-v1",
+  "request_sha256": "0c78093f8344c9a4dfaa2b4b65ee4066119ec22186444a452e6fd816a132dcd1",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_36_20200814-R002",
+  "source_candidate_id": "SC_GWINS_LIST2_36_20200814",
+  "agent_id": "agent-20261006T191534Z-d915df7b",
+  "requested_url": "https://gwins.org/cn/milesguo/13657.html",
+  "fetched_at": "2026-10-06T19:21:23.614475+00:00",
+  "review_decision": null,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "source_text_imported": false,
+  "status": "fetched",
+  "http_status": 200,
+  "final_url": "https://gwins.org/cn/milesguo/13657.html",
+  "raw_bytes": 13927,
+  "raw_sha256": "98a3c6ae47a44a8a749dda3934c545ee447ce59faf17e0a67727088e49f66210",
+  "metadata_evidence": {
+    "page_title": "郭文贵2020年8月14日盖特 202008148月14号刚刚的直播．被黑断播了…文贵几个小时内．不再继续直播，今天GTV升级后再回复直播，大概在今天下午的时间吧…衷心的感谢日本战友",
+    "metadata": {
+      "description": "兄弟姐妹们，刚才直播断了啊，又被黑了没问题啊，咱们马上就升级了，大概今天下午就升级完，就应该不会有问题了啊，他找到办法了，然后看看这旗子啊，太漂亮了，太漂亮了，太"
+    },
+    "decoding": {
+      "codec": "utf-8",
+      "strict": false,
+      "replacement_count": 17,
+      "title_clean": true,
+      "warning": "Damaged fields are not reliable; clean excerpts only. Missing cues are not absence evidence."
+    },
+    "expected_source_video_id": "20200814",
+    "expected_id_visible": true,
+    "outbound_links": [
+      "https://youtu.be/b-7U3Y3KlwY",
+      "https://rumble.com/v58ov9v-20200814.html",
+      "https://gettr.com/"
+    ],
+    "identity_type_cues": [
+      {
+        "paragraph_index": 0,
+        "excerpt": "郭文贵2020年8月14日盖特 202008148月14号刚刚的直播．被黑断播了…文贵几个小时内．不再继续直播，今天GTV升级后再回复直播，大概在今天下午的时间吧…衷心的感谢日本战友"
+      },
+      {
+        "paragraph_index": 0,
+        "excerpt": "贵2020年8月14日盖特 202008148月14号刚刚的直播．被黑断播了…文贵几个小时内．不再继续直播，今天GTV升级后再回复直播，大概在今天下午的时间吧…衷心的感谢日本战友"
+      },
+      {
+        "paragraph_index": 2,
+        "excerpt": "郭文贵视频"
+      },
+      {
+        "paragraph_index": 12,
+        "excerpt": "郭文贵2020年8月14日盖特 20200814 8月14号刚刚的直播．被黑断播了…文贵几个小时内．不再继续直播，今天GTV升级后再回复直播，大概在今天下午的时间吧…衷心的感谢日本战友"
+      },
+      {
+        "paragraph_index": 12,
+        "excerpt": "2020年8月14日盖特 20200814 8月14号刚刚的直播．被黑断播了…文贵几个小时内．不再继续直播，今天GTV升级后再回复直播，大概在今天下午的时间吧…衷心的感谢日本战友"
+      },
+      {
+        "paragraph_index": 20,
+        "excerpt": "视频链接：https://youtu.be/b-7U3Y3KlwY"
+      },
+      {
+        "paragraph_index": 21,
+        "excerpt": "视频链接2：https://rumble.com/v58ov9v-20200814.html"
+      },
+      {
+        "paragraph_index": 26,
+        "excerpt": "兄弟姐妹们，刚才直播断了啊，又被黑了没问题啊，咱们马上就升级了，大概今天下午就升级完，就应该不会有问题了啊，他找到办法了，然后看看这旗子啊，太漂亮了，太漂亮了，太漂亮了，看看这个，这是真正的游行旗。你看这个质量啊，你看这个质量是吧，你能看得"
+      }
+    ],
+    "cue_profile": "origin-context-v2",
+    "cue_warning": "Excerpts may discuss other recordings; a reviewer must resolve context. No automatic type decision."
+  }
+}

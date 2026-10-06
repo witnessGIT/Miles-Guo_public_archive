@@ -1,0 +1,52 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_36_20200810-R002",
+  "source_candidate_id": "SC_GWINS_LIST2_36_20200810",
+  "reviewed_by": "agent-20261006T191534Z-d915df7b",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-06T19:25:03Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20200810_001",
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/13591.html",
+    "https://youtu.be/QlgNgZBCO7I",
+    "https://rumble.com/v58ookt-20200810.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "Exact GWINS detail page 13591 contains source video ID 20200810 and a clean matching page title.",
+    "date": "Candidate date 2020-08-10 agrees with the source ID and detail-page title; no publication time was inferred.",
+    "title": "郭文贵2020年8月10日盖特 20200810 8月10号尊敬的战友们好，你们健身了吗？你们传播CCP病毒香港危机真相了吧，刚刚收到了很多战友发来的私信。没办法一一回信息…",
+    "platform_ids": {
+      "gwins_page_id": "13591",
+      "gwins_video_id": "20200810",
+      "youtube_ids": [
+        "QlgNgZBCO7I"
+      ],
+      "rumble_ids": [
+        "v58ookt"
+      ]
+    },
+    "source_relationships": "Only exact outbound platform links exposed by the verified GWINS detail page were attached; generic homepages were excluded.",
+    "deduplication": "Exact detail/media URLs and source_video_id were checked against the active SQLite inventory built from Git at 477c2f6fd76fc73abe942a7b547da87b3a18faf6; exact matches link an existing canonical record, otherwise a date-scoped canonical ID is created without date-only merging."
+  },
+  "evidence_artifacts": [
+    "data/source_page_evidence/c2_metadata/C2-REVIEW-SC_GWINS_LIST2_36_20200810-R002/112e8a8e59b0fac5.json"
+  ],
+  "source_raw_sha256": "2f8047eb8becb444f371a16ba832d0cb7a9d8bb03214e3de7c5e26bb248feabd",
+  "limitations": [
+    "Public HTML metadata and outbound links only; linked media was not opened or played.",
+    "No media download, ASR, transcript import, timing transfer, segmentation, or content-truth judgment."
+  ],
+  "canonical_promotion_performed": true,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}
