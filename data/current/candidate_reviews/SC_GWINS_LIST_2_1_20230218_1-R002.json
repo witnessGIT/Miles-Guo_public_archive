@@ -1,0 +1,46 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST_2_1_20230218_1-R002",
+  "source_candidate_id": "SC_GWINS_LIST_2_1_20230218_1",
+  "reviewed_by": "agent-20261006T191453Z-a890f4a8",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-06T20:10:30Z",
+  "decision": "rejected_not_target",
+  "canonical_live_id": null,
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_1.html",
+    "https://www.gwins.org/cn/milesguo/24234.html",
+    "https://gettr.com/post/p28qbecebee",
+    "https://rumble.com/v5b1ucz-20230218-1.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "Exact public GWINS page is bound to candidate SC_GWINS_LIST_2_1_20230218_1 and page/source identifier list_2_1; identity visibility=True.",
+    "date": "Candidate date is 2023-02-18; no publication time was inferred.",
+    "title": "郭文贵2023年2月18日盖特 20230218_1 尊敬的战友们好……共产党的无情无义，无信，魔鬼的统治，必须结束。共产党对中国人的伤害以及对中国的文化和人性的毒害之深！无法忍受。只有消灭邪恶的中国共产党，我们每个人才能安全",
+    "platform_ids": [
+      "20230218_1",
+      "list_2_1",
+      "p28qbecebee",
+      "v5b1ucz-20230218-1"
+    ],
+    "source_relationships": "Only exact public page URLs and concrete outbound platform links were retained; generic navigation links were excluded.",
+    "deduplication": "The exact GWINS title identifies a standalone GETTR update, short video, or rebroadcast rather than an original livestream."
+  },
+  "source_raw_sha256": "85626fd925257d789e71ed51d7e1e16d40d108f1b8da414c7a36e749673557d8",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false,
+  "rejection_reason": "The exact GWINS title identifies a standalone GETTR update, short video, or rebroadcast rather than an original livestream."
+}

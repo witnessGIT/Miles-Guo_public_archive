@@ -1,0 +1,46 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST_2_1_20230303_1-R002",
+  "source_candidate_id": "SC_GWINS_LIST_2_1_20230303_1",
+  "reviewed_by": "agent-20261006T191453Z-a890f4a8",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-06T20:10:30Z",
+  "decision": "rejected_not_target",
+  "canonical_live_id": null,
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_1.html",
+    "https://www.gwins.org/cn/milesguo/24255.html",
+    "https://gettr.com/post/p2adjo894b7",
+    "https://rumble.com/v5b2i6q-20230303-1.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "Exact public GWINS page is bound to candidate SC_GWINS_LIST_2_1_20230303_1 and page/source identifier list_2_1; identity visibility=True.",
+    "date": "Candidate date is 2023-03-03; no publication time was inferred.",
+    "title": "郭文贵2023年3月3日盖特 20230303_1 尊敬的战友们好……共产党已经走向希特勒跨过莱茵河的堕落之路……新中国联邦在华盛顿CPAC的活动正在书写新的篇章….只要坚持到底不妥协不放弃…最终一定会成功！共产党你完了！",
+    "platform_ids": [
+      "20230303_1",
+      "list_2_1",
+      "p2adjo894b7",
+      "v5b2i6q-20230303-1"
+    ],
+    "source_relationships": "Only exact public page URLs and concrete outbound platform links were retained; generic navigation links were excluded.",
+    "deduplication": "The exact GWINS title identifies a standalone GETTR update, short video, or rebroadcast rather than an original livestream."
+  },
+  "source_raw_sha256": "2ad23c8a558f3f1312ad7173f994ec149adb9395eace807d72fcbbbd6ab902f0",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false,
+  "rejection_reason": "The exact GWINS title identifies a standalone GETTR update, short video, or rebroadcast rather than an original livestream."
+}

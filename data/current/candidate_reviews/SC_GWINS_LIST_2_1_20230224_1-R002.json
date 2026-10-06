@@ -1,0 +1,45 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST_2_1_20230224_1-R002",
+  "source_candidate_id": "SC_GWINS_LIST_2_1_20230224_1",
+  "reviewed_by": "agent-20261006T191453Z-a890f4a8",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-06T20:10:30Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20230224_001",
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_1.html",
+    "https://www.gwins.org/cn/milesguo/24247.html",
+    "https://gettr.com/streaming/p29jmwy83b6",
+    "https://rumble.com/v5bsh98-20230224-1.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "Exact public GWINS page is bound to candidate SC_GWINS_LIST_2_1_20230224_1 and page/source identifier list_2_1; identity visibility=True.",
+    "date": "Candidate date is 2023-02-24; no publication time was inferred.",
+    "title": "郭文贵2023年2月24日直播 20230224_1 飞飞所住的Park Lane酒店（36 Central Parks）发生重大火灾，和战友们紧急报告情况",
+    "platform_ids": [
+      "20230224_1",
+      "list_2_1",
+      "streaming/p29jmwy83b6",
+      "v5bsh98-20230224-1"
+    ],
+    "source_relationships": "Only exact public page URLs and concrete outbound platform links were retained; generic navigation links were excluded.",
+    "deduplication": "The exact GWINS title explicitly identifies an original livestream."
+  },
+  "source_raw_sha256": "fd0cc6c71030a10bcfd6aff0ce0b25ddc80236c6ab754bd6875ea52450ff7588",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": true,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}

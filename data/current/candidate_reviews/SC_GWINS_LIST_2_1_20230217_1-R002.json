@@ -1,0 +1,46 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST_2_1_20230217_1-R002",
+  "source_candidate_id": "SC_GWINS_LIST_2_1_20230217_1",
+  "reviewed_by": "agent-20261006T191453Z-a890f4a8",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-06T20:10:30Z",
+  "decision": "rejected_not_target",
+  "canonical_live_id": null,
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_1.html",
+    "https://www.gwins.org/cn/milesguo/24233.html",
+    "https://gettr.com/post/p28mg4nc72f",
+    "https://rumble.com/v5b1u7x-20230217-1.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "Exact public GWINS page is bound to candidate SC_GWINS_LIST_2_1_20230217_1 and page/source identifier list_2_1; identity visibility=True.",
+    "date": "Candidate date is 2023-02-17; no publication time was inferred.",
+    "title": "郭文贵2023年2月17日盖特 20230217_1 尊敬的战友们好，共产党的私人企业家，精英们……资金.。正在大逃亡，全世界正在准备与共产党全面开战……新中国联邦一定要把握住……这个千载难逢的机会……莘县阳谷县搭县，咱们走走看",
+    "platform_ids": [
+      "20230217_1",
+      "list_2_1",
+      "p28mg4nc72f",
+      "v5b1u7x-20230217-1"
+    ],
+    "source_relationships": "Only exact public page URLs and concrete outbound platform links were retained; generic navigation links were excluded.",
+    "deduplication": "The exact GWINS title identifies a standalone GETTR update, short video, or rebroadcast rather than an original livestream."
+  },
+  "source_raw_sha256": "a8b008ff4f28c6764cf8edb6fcced673a92e8314c73f13f1ef616d742ddea520",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false,
+  "rejection_reason": "The exact GWINS title identifies a standalone GETTR update, short video, or rebroadcast rather than an original livestream."
+}
