@@ -1,0 +1,44 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GHOT_20210902_2-R001",
+  "source_candidate_id": "SC_GHOT_20210902_2",
+  "reviewed_by": "agent-20261006T191453Z-a890f4a8",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-06T20:14:31Z",
+  "decision": "linked_existing_canonical",
+  "canonical_live_id": "LIVE_20210902_002",
+  "evidence_urls": [
+    "https://ghot.ai/archive/videos/2021-09-02-2",
+    "https://gettr.com/post/p9xyj1e4d0",
+    "https://rumble.com/v59l2dh-20210902-2.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "Exact public GHOT page is bound to candidate SC_GHOT_20210902_2 and page/source identifier 2021-09-02-2; identity visibility=False.",
+    "date": "Candidate date is 2021-09-02; no publication time was inferred.",
+    "title": "2021.09.02 9月2号：一次一次大直播！点了共产党的死穴……共产党恼羞成怒．正在组织力量黑客我们的GTV……威胁YOUTUBE 移除我们的视频……在欧洲等地打压威胁我们的战友……已被当地政府采取法律行动！",
+    "platform_ids": [
+      "2021-09-02-2",
+      "2021-09-02-2",
+      "p9xyj1e4d0",
+      "v59l2dh-20210902-2"
+    ],
+    "source_relationships": "Only exact public page URLs and concrete outbound platform links were retained; generic navigation links were excluded.",
+    "deduplication": "Exact outbound platform URLs already belong to the named canonical live."
+  },
+  "source_raw_sha256": "0b377b37577539c4c24c336c37af45ce235a37a022aa71bf7b5f1dfe4e8b433c",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}
