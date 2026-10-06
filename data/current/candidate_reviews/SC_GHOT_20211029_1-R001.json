@@ -1,0 +1,44 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GHOT_20211029_1-R001",
+  "source_candidate_id": "SC_GHOT_20211029_1",
+  "reviewed_by": "agent-20261006T191453Z-a890f4a8",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-06T20:14:47Z",
+  "decision": "linked_existing_canonical",
+  "canonical_live_id": "LIVE_20211029_001",
+  "evidence_urls": [
+    "https://ghot.ai/archive/videos/2021-10-29-1",
+    "https://odysee.com/@laxi:4/20211029_1:5",
+    "https://rumble.com/v59s5mh-20211029-1.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "Exact public GHOT page is bound to candidate SC_GHOT_20211029_1 and page/source identifier 2021-10-29-1; identity visibility=False.",
+    "date": "Candidate date is 2021-10-29; no publication time was inferred.",
+    "title": "2021.10.29 文贵大直播：格芯在美国上市的重大意义和其未来价值，格芯与数字货币紧密相连；喜币周一上市会带来什么样的改变；房地产会在明年5-7月爆雷，是中共制造的最大的噩梦 - G_TV_ X264",
+    "platform_ids": [
+      "2021-10-29-1",
+      "2021-10-29-1",
+      "@laxi:4/20211029_1:5",
+      "v59s5mh-20211029-1"
+    ],
+    "source_relationships": "Only exact public page URLs and concrete outbound platform links were retained; generic navigation links were excluded.",
+    "deduplication": "Canonical ID LIVE_20211029_001 already exists in current structured data; this exact source is linked without creating a duplicate live."
+  },
+  "source_raw_sha256": "a03b7532f73b4a6c53127dd701761a82ccfd5afdfcd9a64aed96503826cb24ff",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}
