@@ -2,13 +2,13 @@
   "contract_version": "candidate-review-evidence-v2",
   "task_id": "C2-REVIEW-SC_GWINS_LIST2_67_20180119_2-R001",
   "source_candidate_id": "SC_GWINS_LIST2_67_20180119_2",
-  "reviewed_by": "agent-20261006T194900Z-gpt56sol-chat-c2",
-  "entry_mode": "ordinary_chat",
-  "reviewed_at": "2026-10-06T19:58:00Z",
-  "decision": "promoted_new_canonical",
-  "canonical_live_id": "LIVE_20180119_002",
+  "reviewed_by": "agent-20261004T091647Z-90dd416d",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-05T12:49:20.888653+00:00",
+  "decision": "rejected_not_target",
+  "canonical_live_id": null,
   "evidence_urls": [
-    "https://gwins.org/cn/milesguo/list_2_67.html",
+    "https://www.gwins.org/cn/milesguo/list_2_67.html",
     "https://www.gwins.org/cn/milesguo/23632.html",
     "https://youtu.be/Se7odZTT7pE",
     "https://rumble.com/v577pul-20180119-2.html"
@@ -21,20 +21,29 @@
     "source_relationships",
     "deduplication"
   ],
-  "evidence_summary": {
-    "identity": "GWINS index and detail 23632 identify source record 20180119_2.",
-    "date": "GWINS detail publication date agrees with 2018-01-19.",
-    "title": "GWINS detail title agrees with the source candidate title.",
-    "platform_ids": [
-      "20180119_2",
-      "Se7odZTT7pE",
-      "v577pul-20180119-2"
-    ],
-    "source_relationships": "GWINS detail 23632 directly exposes the recorded public media URLs.",
-    "deduplication": "Fresh current structured inventory has no canonical record for 20180119_2; date, title, source id, and direct public media relationships support new canonical LIVE_20180119_002."
+  "checks": {
+    "identity": "GWINS detail page 23632 visibly carries exact source_video_id 20180119_2 and is bound to this candidate.",
+    "date": "Candidate date 2018-01-19 agrees with the exact date and source id visible in the GWINS detail title.",
+    "title": "郭文贵2018年1月19日视频 20180119_2文贵现在回答很多战友们关心文贵看春晚的节目的安排．的大概情况．谢谢大家的关心关注",
+    "platform_ids": {
+      "gwins_page_id": "23632",
+      "gwins_video_id": "20180119_2",
+      "youtube_id": "Se7odZTT7pE",
+      "rumble_id": "v577pul-20180119-2"
+    },
+    "source_relationships": "The exact GWINS detail page directly exposes the recorded YouTube and Rumble source URLs used here.",
+    "deduplication": "Compared the exact source id, date, title, and current-item context with the other fixed-batch candidates; retained as a distinct non-livestream candidate and did not merge it into a canonical live."
   },
-  "playback_performed": false,
+  "evidence_artifacts": [
+    "data/source_page_evidence/c2_metadata/C2-REVIEW-SC_GWINS_LIST2_67_20180119_2-R001/c2ca943002db5140.json"
+  ],
+  "source_raw_sha256": "d77149099ff3d2c2cfff6d3ddf0567eadd4a47dff4fbe5d72f235931e95b2f65",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": false,
   "media_download_performed": false,
-  "transcription_performed": false,
-  "segmentation_performed": false
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false,
+  "rejection_reason": "The exact GWINS title and current-item context identify a standalone recorded video/update, not an original livestream."
 }
