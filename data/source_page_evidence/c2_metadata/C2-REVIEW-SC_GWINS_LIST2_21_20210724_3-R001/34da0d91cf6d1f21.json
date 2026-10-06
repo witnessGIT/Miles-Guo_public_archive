@@ -1,0 +1,54 @@
+{
+  "evidence_version": "c2-metadata-evidence-v1",
+  "request_sha256": "34da0d91cf6d1f21f69bdaf3ed822329eb4ec0a7ebcf567e4ba481c03ebc7222",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_21_20210724_3-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_21_20210724_3",
+  "agent_id": "agent-20261006T191534Z-d915df7b",
+  "requested_url": "https://gwins.org/cn/milesguo/23193.html",
+  "fetched_at": "2026-10-06T19:37:56.142410+00:00",
+  "review_decision": null,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "source_text_imported": false,
+  "status": "fetched",
+  "http_status": 200,
+  "final_url": "https://gwins.org/cn/milesguo/23193.html",
+  "raw_bytes": 10151,
+  "raw_sha256": "cac89d962d9287754835640a1ad1c79c667536f8d6144b3a6180b12e1168f48a",
+  "metadata_evidence": {
+    "page_title": "郭文贵2021年7月24日盖特 20210724_3准备对诀海东兄弟的足球！",
+    "metadata": {
+      "description": "噢, 这都没进去 ！天哪！人家郝海东还没来。Oh My God！这回真进了。 Oh My God！耶！进了 ! 有你海东大哥在，没我们活的了！耶！进了 ！"
+    },
+    "decoding": {
+      "codec": "utf-8",
+      "strict": false,
+      "replacement_count": 17,
+      "title_clean": true,
+      "warning": "Damaged fields are not reliable; clean excerpts only. Missing cues are not absence evidence."
+    },
+    "expected_source_video_id": "20210724_3",
+    "expected_id_visible": true,
+    "outbound_links": [
+      "https://gettr.com/post/p5hh6o",
+      "https://rumble.com/v59gqj7-20210724-3.html",
+      "https://gettr.com/"
+    ],
+    "identity_type_cues": [
+      {
+        "paragraph_index": 2,
+        "excerpt": "郭文贵视频"
+      },
+      {
+        "paragraph_index": 20,
+        "excerpt": "视频链接：https://gettr.com/post/p5hh6o"
+      },
+      {
+        "paragraph_index": 21,
+        "excerpt": "视频链接2：https://rumble.com/v59gqj7-20210724-3.html"
+      }
+    ],
+    "cue_profile": "origin-context-v2",
+    "cue_warning": "Excerpts may discuss other recordings; a reviewer must resolve context. No automatic type decision."
+  }
+}

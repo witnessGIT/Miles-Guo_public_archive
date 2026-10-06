@@ -1,0 +1,52 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_21_20210724_2-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_21_20210724_2",
+  "reviewed_by": "agent-20261006T191534Z-d915df7b",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-06T19:38:17Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20210724_002",
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/23192.html",
+    "https://gettr.com/post/p5fiyb",
+    "https://rumble.com/v59gqgh-20210724-2.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "Exact GWINS detail page 23192 contains source video ID 20210724_2 and a clean matching page title.",
+    "date": "Candidate date 2021-07-24 agrees with the source ID and detail-page title; no publication time was inferred.",
+    "title": "郭文贵2021年7月24日盖特 20210724_2 这次在路大骗子和蛇妖闫的问题上站错立场的，爆料革命和新中国联邦不接受任何理由的道歉",
+    "platform_ids": {
+      "gwins_page_id": "23192",
+      "gwins_video_id": "20210724_2",
+      "gettr_ids": [
+        "post:p5fiyb"
+      ],
+      "rumble_ids": [
+        "v59gqgh"
+      ]
+    },
+    "source_relationships": "Only exact outbound platform links exposed by the verified GWINS detail page were attached; generic homepages were excluded.",
+    "deduplication": "Exact detail/media URLs and source_video_id were checked against the active SQLite inventory built from Git at d22a4aab4d050a0bf9993589b236cd56a4e988fc; exact matches link an existing canonical record, otherwise a date-scoped canonical ID is created without date-only merging."
+  },
+  "evidence_artifacts": [
+    "data/source_page_evidence/c2_metadata/C2-REVIEW-SC_GWINS_LIST2_21_20210724_2-R001/34da0d91cf6d1f21.json"
+  ],
+  "source_raw_sha256": "61cfb18a3113ed5715bab9e2748899a73f8055c67e72df98485216ac25d6ebab",
+  "limitations": [
+    "Public HTML metadata and outbound links only; linked media was not opened or played.",
+    "No media download, ASR, transcript import, timing transfer, segmentation, or content-truth judgment."
+  ],
+  "canonical_promotion_performed": true,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}

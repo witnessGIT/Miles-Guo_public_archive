@@ -1,0 +1,54 @@
+{
+  "evidence_version": "c2-metadata-evidence-v1",
+  "request_sha256": "34da0d91cf6d1f21f69bdaf3ed822329eb4ec0a7ebcf567e4ba481c03ebc7222",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_21_20210727_2-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_21_20210727_2",
+  "agent_id": "agent-20261006T191534Z-d915df7b",
+  "requested_url": "https://gwins.org/cn/milesguo/23197.html",
+  "fetched_at": "2026-10-06T19:38:01.032446+00:00",
+  "review_decision": null,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "source_text_imported": false,
+  "status": "fetched",
+  "http_status": 200,
+  "final_url": "https://gwins.org/cn/milesguo/23197.html",
+  "raw_bytes": 11410,
+  "raw_sha256": "7c57237f611ff08705f19c1811da6378c32d75367799fdb545e16cca1aae9e4b",
+  "metadata_evidence": {
+    "page_title": "郭文贵2021年7月27日盖特 20210727_2为战友们看一看最新款的湾流650ER飞机内部！太太想兄弟姐妹们：很快我们的战友们会有很多人买的起这样的超级喷气飞机的！咱们走着看！",
+    "metadata": {
+      "description": "来战友们，我带你们看看湾流650，这是湾流的650，湾流里面它现在700是最新的，这个湾流650是被称为商务机中的拉法，你看看这个..这是八个座位，你看到没有，（到这来）这里有一个空"
+    },
+    "decoding": {
+      "codec": "utf-8",
+      "strict": false,
+      "replacement_count": 17,
+      "title_clean": true,
+      "warning": "Damaged fields are not reliable; clean excerpts only. Missing cues are not absence evidence."
+    },
+    "expected_source_video_id": "20210727_2",
+    "expected_id_visible": true,
+    "outbound_links": [
+      "https://gettr.com/post/p5q4gg",
+      "https://rumble.com/v59gqup-20210727-2.html",
+      "https://gettr.com/"
+    ],
+    "identity_type_cues": [
+      {
+        "paragraph_index": 2,
+        "excerpt": "郭文贵视频"
+      },
+      {
+        "paragraph_index": 20,
+        "excerpt": "视频链接：https://gettr.com/post/p5q4gg"
+      },
+      {
+        "paragraph_index": 21,
+        "excerpt": "视频链接2：https://rumble.com/v59gqup-20210727-2.html"
+      }
+    ],
+    "cue_profile": "origin-context-v2",
+    "cue_warning": "Excerpts may discuss other recordings; a reviewer must resolve context. No automatic type decision."
+  }
+}

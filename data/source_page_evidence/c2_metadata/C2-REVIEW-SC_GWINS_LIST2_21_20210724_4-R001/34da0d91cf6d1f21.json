@@ -1,0 +1,58 @@
+{
+  "evidence_version": "c2-metadata-evidence-v1",
+  "request_sha256": "34da0d91cf6d1f21f69bdaf3ed822329eb4ec0a7ebcf567e4ba481c03ebc7222",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_21_20210724_4-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_21_20210724_4",
+  "agent_id": "agent-20261006T191534Z-d915df7b",
+  "requested_url": "https://gwins.org/cn/milesguo/23194.html",
+  "fetched_at": "2026-10-06T19:37:57.354484+00:00",
+  "review_decision": null,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "source_text_imported": false,
+  "status": "fetched",
+  "http_status": 200,
+  "final_url": "https://gwins.org/cn/milesguo/23194.html",
+  "raw_bytes": 18278,
+  "raw_sha256": "6b18936122c59f4cf5c451117310735c2e1ab8d022467ec849efd6943ba1e2f0",
+  "metadata_evidence": {
+    "page_title": "郭文贵2021年7月24日盖特 20210724_4尊敬的战友好，爆料革命将开启. 以毒灭共. 以灾灭共！",
+    "metadata": {
+      "description": "7月24号，尊敬的战友们好，你们健身了没有？现在能活着真不容易，看到国内郑州的灾区，新乡各地，这些真相逐渐出来，听到这些很多的事情，现在大家都可以证明了，各个渠道，"
+    },
+    "decoding": {
+      "codec": "utf-8",
+      "strict": false,
+      "replacement_count": 17,
+      "title_clean": true,
+      "warning": "Damaged fields are not reliable; clean excerpts only. Missing cues are not absence evidence."
+    },
+    "expected_source_video_id": "20210724_4",
+    "expected_id_visible": true,
+    "outbound_links": [
+      "https://gettr.com/post/p5hk9y",
+      "https://rumble.com/v59gqmp-20210724-4.html",
+      "https://gettr.com/"
+    ],
+    "identity_type_cues": [
+      {
+        "paragraph_index": 2,
+        "excerpt": "郭文贵视频"
+      },
+      {
+        "paragraph_index": 20,
+        "excerpt": "视频链接：https://gettr.com/post/p5hk9y"
+      },
+      {
+        "paragraph_index": 21,
+        "excerpt": "视频链接2：https://rumble.com/v59gqmp-20210724-4.html"
+      },
+      {
+        "paragraph_index": 34,
+        "excerpt": "以咱也钓钓鱼，七哥陪他们玩玩，兄弟姐妹们，你们给我发的很多信息，要追加投资的，要再买喜币的很多事情，请和各农场联系，或者七哥有时间直播再聊，请大家千万别忘了，当你有时间的时候动动你的手指，传播整个郑州这种人祸的大灾的，有史以来人祸大灾的所有的真相，这就是支持爆料革命，时间到了，谢谢。"
+      }
+    ],
+    "cue_profile": "origin-context-v2",
+    "cue_warning": "Excerpts may discuss other recordings; a reviewer must resolve context. No automatic type decision."
+  }
+}

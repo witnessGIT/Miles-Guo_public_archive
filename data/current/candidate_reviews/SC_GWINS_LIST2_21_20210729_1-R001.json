@@ -1,0 +1,48 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_21_20210729_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_21_20210729_1",
+  "reviewed_by": "agent-20261006T191534Z-d915df7b",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-06T19:38:17Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20210729_001",
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/23185.html",
+    "https://rumble.com/v59gwxx-20210729-1.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "Exact GWINS detail page 23185 contains source video ID 20210729_1 and a clean matching page title.",
+    "date": "Candidate date 2021-07-29 agrees with the source ID and detail-page title; no publication time was inferred.",
+    "title": "郭文贵2021年7月29日直播 20210729_1 文贵是第一个说中概股会崩溃的；世界的未来和希望就是虚拟币；灭共要有耐心，不能急功近利；灭爆小组行动将持续到9月20号，更多孙力军会被抓",
+    "platform_ids": {
+      "gwins_page_id": "23185",
+      "gwins_video_id": "20210729_1",
+      "rumble_ids": [
+        "v59gwxx"
+      ]
+    },
+    "source_relationships": "Only exact outbound platform links exposed by the verified GWINS detail page were attached; generic homepages were excluded.",
+    "deduplication": "Exact detail/media URLs and source_video_id were checked against the active SQLite inventory built from Git at d22a4aab4d050a0bf9993589b236cd56a4e988fc; exact matches link an existing canonical record, otherwise a date-scoped canonical ID is created without date-only merging."
+  },
+  "evidence_artifacts": [
+    "data/source_page_evidence/c2_metadata/C2-REVIEW-SC_GWINS_LIST2_21_20210729_1-R001/34da0d91cf6d1f21.json"
+  ],
+  "source_raw_sha256": "f50f75954e2baebb24c97286acb628c619c6967b2d6f47c88510f7b9f3791a24",
+  "limitations": [
+    "Public HTML metadata and outbound links only; linked media was not opened or played.",
+    "No media download, ASR, transcript import, timing transfer, segmentation, or content-truth judgment."
+  ],
+  "canonical_promotion_performed": true,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}

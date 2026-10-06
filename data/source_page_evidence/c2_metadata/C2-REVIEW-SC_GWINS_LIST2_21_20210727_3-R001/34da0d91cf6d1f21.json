@@ -1,0 +1,54 @@
+{
+  "evidence_version": "c2-metadata-evidence-v1",
+  "request_sha256": "34da0d91cf6d1f21f69bdaf3ed822329eb4ec0a7ebcf567e4ba481c03ebc7222",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_21_20210727_3-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_21_20210727_3",
+  "agent_id": "agent-20261006T191534Z-d915df7b",
+  "requested_url": "https://gwins.org/cn/milesguo/23198.html",
+  "fetched_at": "2026-10-06T19:38:02.390026+00:00",
+  "review_decision": null,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "source_text_imported": false,
+  "status": "fetched",
+  "http_status": 200,
+  "final_url": "https://gwins.org/cn/milesguo/23198.html",
+  "raw_bytes": 9778,
+  "raw_sha256": "dcc53a7152d8b13e98a8746526745807a82336adeb86d556e5bedad55fe4f3a2",
+  "metadata_evidence": {
+    "page_title": "郭文贵2021年7月27日盖特 20210727_3我在等谁呢？我是为了谁？为了谁这样的工作呢？这在哪呢？",
+    "metadata": {
+      "description": "无"
+    },
+    "decoding": {
+      "codec": "utf-8",
+      "strict": false,
+      "replacement_count": 17,
+      "title_clean": true,
+      "warning": "Damaged fields are not reliable; clean excerpts only. Missing cues are not absence evidence."
+    },
+    "expected_source_video_id": "20210727_3",
+    "expected_id_visible": true,
+    "outbound_links": [
+      "https://gettr.com/post/p5nf50",
+      "https://rumble.com/v59gqxx-20210727-3.html",
+      "https://gettr.com/"
+    ],
+    "identity_type_cues": [
+      {
+        "paragraph_index": 2,
+        "excerpt": "郭文贵视频"
+      },
+      {
+        "paragraph_index": 20,
+        "excerpt": "视频链接：https://gettr.com/post/p5nf50"
+      },
+      {
+        "paragraph_index": 21,
+        "excerpt": "视频链接2：https://rumble.com/v59gqxx-20210727-3.html"
+      }
+    ],
+    "cue_profile": "origin-context-v2",
+    "cue_warning": "Excerpts may discuss other recordings; a reviewer must resolve context. No automatic type decision."
+  }
+}

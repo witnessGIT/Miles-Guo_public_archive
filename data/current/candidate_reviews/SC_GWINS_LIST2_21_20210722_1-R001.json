@@ -1,0 +1,48 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_21_20210722_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_21_20210722_1",
+  "reviewed_by": "agent-20261006T191534Z-d915df7b",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-06T19:38:17Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20210722_001",
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/23182.html",
+    "https://rumble.com/v59g1pv-20210722-1.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "Exact GWINS detail page 23182 contains source video ID 20210722_1 and a clean matching page title.",
+    "date": "Candidate date 2021-07-22 agrees with the source ID and detail-page title; no publication time was inferred.",
+    "title": "郭文贵2021年7月22日直播 20210722_1 中共对洪水灾难真相的掩盖，内斗，腐败，是正在对郑州进行着另类种族大屠杀！大灾之后的次生灾难将是洪灾的千倍万倍；黄河边全村死光被变成哑巴村；只有结束一党专政，才能结束悲剧；传",
+    "platform_ids": {
+      "gwins_page_id": "23182",
+      "gwins_video_id": "20210722_1",
+      "rumble_ids": [
+        "v59g1pv"
+      ]
+    },
+    "source_relationships": "Only exact outbound platform links exposed by the verified GWINS detail page were attached; generic homepages were excluded.",
+    "deduplication": "Exact detail/media URLs and source_video_id were checked against the active SQLite inventory built from Git at d22a4aab4d050a0bf9993589b236cd56a4e988fc; exact matches link an existing canonical record, otherwise a date-scoped canonical ID is created without date-only merging."
+  },
+  "evidence_artifacts": [
+    "data/source_page_evidence/c2_metadata/C2-REVIEW-SC_GWINS_LIST2_21_20210722_1-R001/34da0d91cf6d1f21.json"
+  ],
+  "source_raw_sha256": "91e6a0e565caebd98c27232ff94d4c1e7eb2d73a241a618a342b00e59126f2ff",
+  "limitations": [
+    "Public HTML metadata and outbound links only; linked media was not opened or played.",
+    "No media download, ASR, transcript import, timing transfer, segmentation, or content-truth judgment."
+  ],
+  "canonical_promotion_performed": true,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}

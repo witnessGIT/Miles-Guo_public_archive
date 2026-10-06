@@ -1,0 +1,58 @@
+{
+  "evidence_version": "c2-metadata-evidence-v1",
+  "request_sha256": "34da0d91cf6d1f21f69bdaf3ed822329eb4ec0a7ebcf567e4ba481c03ebc7222",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_21_20210724_2-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_21_20210724_2",
+  "agent_id": "agent-20261006T191534Z-d915df7b",
+  "requested_url": "https://gwins.org/cn/milesguo/23192.html",
+  "fetched_at": "2026-10-06T19:37:54.919890+00:00",
+  "review_decision": null,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "source_text_imported": false,
+  "status": "fetched",
+  "http_status": 200,
+  "final_url": "https://gwins.org/cn/milesguo/23192.html",
+  "raw_bytes": 12430,
+  "raw_sha256": "61cfb18a3113ed5715bab9e2748899a73f8055c67e72df98485216ac25d6ebab",
+  "metadata_evidence": {
+    "page_title": "郭文贵2021年7月24日盖特 20210724_2这次在路大骗子和蛇妖闫的问题上站错立场的，爆料革命和新中国联邦不接受任何理由的道歉",
+    "metadata": {
+      "description": "这花多漂亮。哇..刚刚的直播完以后,有几个大咖给我发信息,向七哥道歉，然后如何说错了，我告诉你，这次在路大脑袋、蛇妖闫这件事情上立场不坚定的，永远不可能有和解的机会，"
+    },
+    "decoding": {
+      "codec": "utf-8",
+      "strict": false,
+      "replacement_count": 17,
+      "title_clean": true,
+      "warning": "Damaged fields are not reliable; clean excerpts only. Missing cues are not absence evidence."
+    },
+    "expected_source_video_id": "20210724_2",
+    "expected_id_visible": true,
+    "outbound_links": [
+      "https://gettr.com/post/p5fiyb",
+      "https://rumble.com/v59gqgh-20210724-2.html",
+      "https://gettr.com/"
+    ],
+    "identity_type_cues": [
+      {
+        "paragraph_index": 2,
+        "excerpt": "郭文贵视频"
+      },
+      {
+        "paragraph_index": 20,
+        "excerpt": "视频链接：https://gettr.com/post/p5fiyb"
+      },
+      {
+        "paragraph_index": 21,
+        "excerpt": "视频链接2：https://rumble.com/v59gqgh-20210724-2.html"
+      },
+      {
+        "paragraph_index": 26,
+        "excerpt": "这花多漂亮。哇..刚刚的直播完以后,有几个大咖给我发信息,向七哥道歉，然后如何说错了，我告诉你，这次在路大脑袋、蛇妖闫这件事情上立场不坚定的，永远不可能有和解的机会，永远没有道歉，我不接受任何道歉，最起码的常识。"
+      }
+    ],
+    "cue_profile": "origin-context-v2",
+    "cue_warning": "Excerpts may discuss other recordings; a reviewer must resolve context. No automatic type decision."
+  }
+}

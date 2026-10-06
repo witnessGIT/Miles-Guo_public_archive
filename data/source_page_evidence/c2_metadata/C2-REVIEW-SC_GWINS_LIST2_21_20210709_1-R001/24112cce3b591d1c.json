@@ -1,0 +1,54 @@
+{
+  "evidence_version": "c2-metadata-evidence-v1",
+  "request_sha256": "24112cce3b591d1c89cb5f8cb309293d91ef71e0efe995b359155f0ac63deeb8",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_21_20210709_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_21_20210709_1",
+  "agent_id": "agent-20261006T191534Z-d915df7b",
+  "requested_url": "https://gwins.org/cn/milesguo/23152.html",
+  "fetched_at": "2026-10-06T19:37:53.632789+00:00",
+  "review_decision": null,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "source_text_imported": false,
+  "status": "fetched",
+  "http_status": 200,
+  "final_url": "https://gwins.org/cn/milesguo/23152.html",
+  "raw_bytes": 17348,
+  "raw_sha256": "dc65a56cad6314453ec9d054f7683d609c388b4a4058f5db7f839eba26957b38",
+  "metadata_evidence": {
+    "page_title": "郭文贵2021年7月9日盖特 20210709_1尊敬的战友好，你们健身了吗？你们传播学C CP病毒香港危机的真相了吗？感谢战友们对七哥身体的关心！",
+    "metadata": {
+      "description": "尊敬的战友们好！7月9号了，很多战友跟我发信息，说感冒怎么样了？很担心，特别感动。我昨天晚上大概在今早上4点以前，还是头疼欲裂，也不知道为啥，就是头疼欲裂，后来我想"
+    },
+    "decoding": {
+      "codec": "utf-8",
+      "strict": false,
+      "replacement_count": 17,
+      "title_clean": true,
+      "warning": "Damaged fields are not reliable; clean excerpts only. Missing cues are not absence evidence."
+    },
+    "expected_source_video_id": "20210709_1",
+    "expected_id_visible": true,
+    "outbound_links": [
+      "https://gettr.com/post/p3ehx3",
+      "https://rumble.com/v59fgpn-20210709-1.html",
+      "https://gettr.com/"
+    ],
+    "identity_type_cues": [
+      {
+        "paragraph_index": 2,
+        "excerpt": "郭文贵视频"
+      },
+      {
+        "paragraph_index": 20,
+        "excerpt": "视频链接：https://gettr.com/post/p3ehx3"
+      },
+      {
+        "paragraph_index": 21,
+        "excerpt": "视频链接2：https://rumble.com/v59fgpn-20210709-1.html"
+      }
+    ],
+    "cue_profile": "origin-context-v2",
+    "cue_warning": "Excerpts may discuss other recordings; a reviewer must resolve context. No automatic type decision."
+  }
+}

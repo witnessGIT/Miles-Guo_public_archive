@@ -1,0 +1,52 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_21_20210719_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_21_20210719_1",
+  "reviewed_by": "agent-20261006T191534Z-d915df7b",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-06T19:38:17Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20210719_001",
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/23180.html",
+    "https://gettr.com/post/p4ngh8",
+    "https://rumble.com/v59fr7g-20210719-1.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "Exact GWINS detail page 23180 contains source video ID 20210719_1 and a clean matching page title.",
+    "date": "Candidate date 2021-07-19 agrees with the source ID and detail-page title; no publication time was inferred.",
+    "title": "郭文贵2021年7月19日盖特 20210719_1 尊敬的战友们好，你们健身了吗？传播C C P病毒．香港危机真相了吗？灭共已经到了最关键的时刻，我们全球的战友们．越是在这个时候越要擦亮眼睛．辩善恶是非．一切都已经开始！",
+    "platform_ids": {
+      "gwins_page_id": "23180",
+      "gwins_video_id": "20210719_1",
+      "gettr_ids": [
+        "post:p4ngh8"
+      ],
+      "rumble_ids": [
+        "v59fr7g"
+      ]
+    },
+    "source_relationships": "Only exact outbound platform links exposed by the verified GWINS detail page were attached; generic homepages were excluded.",
+    "deduplication": "Exact detail/media URLs and source_video_id were checked against the active SQLite inventory built from Git at d22a4aab4d050a0bf9993589b236cd56a4e988fc; exact matches link an existing canonical record, otherwise a date-scoped canonical ID is created without date-only merging."
+  },
+  "evidence_artifacts": [
+    "data/source_page_evidence/c2_metadata/C2-REVIEW-SC_GWINS_LIST2_21_20210719_1-R001/24112cce3b591d1c.json"
+  ],
+  "source_raw_sha256": "715ecad2e7d6bdbb89de6b98458b661f8c0c6fe475356563835bb61b7d671071",
+  "limitations": [
+    "Public HTML metadata and outbound links only; linked media was not opened or played.",
+    "No media download, ASR, transcript import, timing transfer, segmentation, or content-truth judgment."
+  ],
+  "canonical_promotion_performed": true,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}
