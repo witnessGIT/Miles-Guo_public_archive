@@ -1,0 +1,52 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_3_20221128_1-R002",
+  "source_candidate_id": "SC_GWINS_LIST2_3_20221128_1",
+  "reviewed_by": "agent-20261006T191534Z-d915df7b",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-06T19:26:40Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20221128_001",
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/24172.html",
+    "https://gettr.com/post/p1zyrz1867d",
+    "https://rumble.com/v5azco5-20221128-1.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "Exact GWINS detail page 24172 contains source video ID 20221128_1 and a clean matching page title.",
+    "date": "Candidate date 2022-11-28 agrees with the source ID and detail-page title; no publication time was inferred.",
+    "title": "郭文贵2022年11月28日盖特 20221128_1 尊敬的战友们好……党内已经下令要把郑州富士康的所有造反的组织者，挑头人及其家人全部抓捕…… 北京现在大概有6万特警警力已经布置到位，大量的坦克装甲车即将从北方调到北京，实行分片",
+    "platform_ids": {
+      "gwins_page_id": "24172",
+      "gwins_video_id": "20221128_1",
+      "gettr_ids": [
+        "post:p1zyrz1867d"
+      ],
+      "rumble_ids": [
+        "v5azco5"
+      ]
+    },
+    "source_relationships": "Only exact outbound platform links exposed by the verified GWINS detail page were attached; generic homepages were excluded.",
+    "deduplication": "Exact detail/media URLs and source_video_id were checked against the active SQLite inventory built from Git at 29c65c1a2bd658f7980cf13abdd8ed15229df67f; exact matches link an existing canonical record, otherwise a date-scoped canonical ID is created without date-only merging."
+  },
+  "evidence_artifacts": [
+    "data/source_page_evidence/c2_metadata/C2-REVIEW-SC_GWINS_LIST2_3_20221128_1-R002/8db3580a71c6908e.json"
+  ],
+  "source_raw_sha256": "da74c564ca98d5592b7d3787f91b082910c76cb49c58abfdc7d8d6c022d84e0b",
+  "limitations": [
+    "Public HTML metadata and outbound links only; linked media was not opened or played.",
+    "No media download, ASR, transcript import, timing transfer, segmentation, or content-truth judgment."
+  ],
+  "canonical_promotion_performed": true,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}

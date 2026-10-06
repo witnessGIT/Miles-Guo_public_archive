@@ -1,0 +1,52 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_3_20221201_1-R002",
+  "source_candidate_id": "SC_GWINS_LIST2_3_20221201_1",
+  "reviewed_by": "agent-20261006T191534Z-d915df7b",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-06T19:26:40Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20221201_001",
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/24178.html",
+    "https://gettr.com/post/p20b4sr708c",
+    "https://rumble.com/v5b07ne-20221201-1.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "Exact GWINS detail page 24178 contains source video ID 20221201_1 and a clean matching page title.",
+    "date": "Candidate date 2022-12-01 agrees with the source ID and detail-page title; no publication time was inferred.",
+    "title": "郭文贵2022年12月1日盖特 20221201_1 尊敬的战友们好……12月6日江泽民同志发丧，会发生什么呢？但是听说习太阳12月7号访问沙特已经准备好了预备方案，习太阳会去吗？听说这两天身体反应很大……共产党即将对各大院校学生实行",
+    "platform_ids": {
+      "gwins_page_id": "24178",
+      "gwins_video_id": "20221201_1",
+      "gettr_ids": [
+        "post:p20b4sr708c"
+      ],
+      "rumble_ids": [
+        "v5b07ne"
+      ]
+    },
+    "source_relationships": "Only exact outbound platform links exposed by the verified GWINS detail page were attached; generic homepages were excluded.",
+    "deduplication": "Exact detail/media URLs and source_video_id were checked against the active SQLite inventory built from Git at 29c65c1a2bd658f7980cf13abdd8ed15229df67f; exact matches link an existing canonical record, otherwise a date-scoped canonical ID is created without date-only merging."
+  },
+  "evidence_artifacts": [
+    "data/source_page_evidence/c2_metadata/C2-REVIEW-SC_GWINS_LIST2_3_20221201_1-R002/8db3580a71c6908e.json"
+  ],
+  "source_raw_sha256": "b32fbf299fad8e36b53234655c9ac2871841bce9758f73a3ef75fb3fbc98ed8a",
+  "limitations": [
+    "Public HTML metadata and outbound links only; linked media was not opened or played.",
+    "No media download, ASR, transcript import, timing transfer, segmentation, or content-truth judgment."
+  ],
+  "canonical_promotion_performed": true,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}
