@@ -1,0 +1,66 @@
+{
+  "evidence_version": "c2-metadata-evidence-v1",
+  "request_sha256": "d017ed054e91166093f5ea81960705cb42d15c3c0535c74d801a2abddcdcbab8",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_38_20200621_3-R002",
+  "source_candidate_id": "SC_GWINS_LIST2_38_20200621_3",
+  "agent_id": "agent-20261006T191534Z-d915df7b",
+  "requested_url": "https://gwins.org/cn/milesguo/22214.html",
+  "fetched_at": "2026-10-06T19:21:34.751163+00:00",
+  "review_decision": null,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "source_text_imported": false,
+  "status": "fetched",
+  "http_status": 200,
+  "final_url": "https://gwins.org/cn/milesguo/22214.html",
+  "raw_bytes": 11731,
+  "raw_sha256": "62a3d6a5a0aa3a7eb253e61a033fc559c0aa758adb3e1c58706ca3408414997f",
+  "metadata_evidence": {
+    "page_title": "郭文贵2020年6月21日视频 20200621_3文贵在父亲节做第二道菜小鸡炖蘑菇蘑菇积极响应地摊经济第2段",
+    "metadata": {
+      "description": "    盐是最后放完，辣椒在那呢，料酒在这呢，放完了，这个葱和姜是最后放的啊，也许问了，刚才那个是，完全是打味，看看这个，大家看到这个小鸡炖蘑菇啊，小鸡炖蘑菇的这"
+    },
+    "decoding": {
+      "codec": "utf-8",
+      "strict": false,
+      "replacement_count": 17,
+      "title_clean": true,
+      "warning": "Damaged fields are not reliable; clean excerpts only. Missing cues are not absence evidence."
+    },
+    "expected_source_video_id": "20200621_3",
+    "expected_id_visible": true,
+    "outbound_links": [
+      "https://youtu.be/p5G-YUptKTo",
+      "https://rumble.com/v58kife-20200621-3.html",
+      "https://gettr.com/"
+    ],
+    "identity_type_cues": [
+      {
+        "paragraph_index": 0,
+        "excerpt": "郭文贵2020年6月21日视频 20200621_3文贵在父亲节做第二道菜小鸡炖蘑菇蘑菇积极响应地摊经济第2段"
+      },
+      {
+        "paragraph_index": 2,
+        "excerpt": "郭文贵视频"
+      },
+      {
+        "paragraph_index": 10,
+        "excerpt": "郭文贵2020年6月21日视频 20200621_3"
+      },
+      {
+        "paragraph_index": 12,
+        "excerpt": "郭文贵2020年6月21日视频 20200621_3 文贵在父亲节做第二道菜小鸡炖蘑菇蘑菇积极响应地摊经济第2段"
+      },
+      {
+        "paragraph_index": 20,
+        "excerpt": "视频链接：https://youtu.be/p5G-YUptKTo"
+      },
+      {
+        "paragraph_index": 21,
+        "excerpt": "视频链接2：https://rumble.com/v58kife-20200621-3.html"
+      }
+    ],
+    "cue_profile": "origin-context-v2",
+    "cue_warning": "Excerpts may discuss other recordings; a reviewer must resolve context. No automatic type decision."
+  }
+}

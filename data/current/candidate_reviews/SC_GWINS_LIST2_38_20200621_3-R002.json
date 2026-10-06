@@ -1,0 +1,52 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_38_20200621_3-R002",
+  "source_candidate_id": "SC_GWINS_LIST2_38_20200621_3",
+  "reviewed_by": "agent-20261006T191534Z-d915df7b",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-06T19:25:35Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20200621_003",
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/22214.html",
+    "https://youtu.be/p5G-YUptKTo",
+    "https://rumble.com/v58kife-20200621-3.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "Exact GWINS detail page 22214 contains source video ID 20200621_3 and a clean matching page title.",
+    "date": "Candidate date 2020-06-21 agrees with the source ID and detail-page title; no publication time was inferred.",
+    "title": "郭文贵2020年6月21日视频 20200621_3 文贵在父亲节做第二道菜小鸡炖蘑菇蘑菇积极响应地摊经济第2段",
+    "platform_ids": {
+      "gwins_page_id": "22214",
+      "gwins_video_id": "20200621_3",
+      "youtube_ids": [
+        "p5G-YUptKTo"
+      ],
+      "rumble_ids": [
+        "v58kife"
+      ]
+    },
+    "source_relationships": "Only exact outbound platform links exposed by the verified GWINS detail page were attached; generic homepages were excluded.",
+    "deduplication": "Exact detail/media URLs and source_video_id were checked against the active SQLite inventory built from Git at a7c5417e4dfd5fb2d7abb6c1c88af296e737cad0; exact matches link an existing canonical record, otherwise a date-scoped canonical ID is created without date-only merging."
+  },
+  "evidence_artifacts": [
+    "data/source_page_evidence/c2_metadata/C2-REVIEW-SC_GWINS_LIST2_38_20200621_3-R002/d017ed054e911660.json"
+  ],
+  "source_raw_sha256": "62a3d6a5a0aa3a7eb253e61a033fc559c0aa758adb3e1c58706ca3408414997f",
+  "limitations": [
+    "Public HTML metadata and outbound links only; linked media was not opened or played.",
+    "No media download, ASR, transcript import, timing transfer, segmentation, or content-truth judgment."
+  ],
+  "canonical_promotion_performed": true,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}
