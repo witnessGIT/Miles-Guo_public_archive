@@ -1,0 +1,52 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_18_20210902_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_18_20210902_1",
+  "reviewed_by": "agent-20261006T191534Z-d915df7b",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-06T19:35:56Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20210902_001",
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/23291.html",
+    "https://gettr.com/post/p9vqa224f8",
+    "https://rumble.com/v59l29p-20210902-1.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "Exact GWINS detail page 23291 contains source video ID 20210902_1 and a clean matching page title.",
+    "date": "Candidate date 2021-09-02 agrees with the source ID and detail-page title; no publication time was inferred.",
+    "title": "郭文贵2021年9月2日盖特 20210902_1 尊敬的家人们好：你们健身了吗？传播C C P病毒．香港危机．郑州人祸．病毒解药的真相了吗？",
+    "platform_ids": {
+      "gwins_page_id": "23291",
+      "gwins_video_id": "20210902_1",
+      "gettr_ids": [
+        "post:p9vqa224f8"
+      ],
+      "rumble_ids": [
+        "v59l29p"
+      ]
+    },
+    "source_relationships": "Only exact outbound platform links exposed by the verified GWINS detail page were attached; generic homepages were excluded.",
+    "deduplication": "Exact detail/media URLs and source_video_id were checked against the active SQLite inventory built from Git at c54187cf9955575bde57de18a6652a2823b97b57; exact matches link an existing canonical record, otherwise a date-scoped canonical ID is created without date-only merging."
+  },
+  "evidence_artifacts": [
+    "data/source_page_evidence/c2_metadata/C2-REVIEW-SC_GWINS_LIST2_18_20210902_1-R001/ef9097e708c76a00.json"
+  ],
+  "source_raw_sha256": "11c5cfb5b069fc9b032b0c99c47a670b5fb57311111b17a87c5aa4302f3d3510",
+  "limitations": [
+    "Public HTML metadata and outbound links only; linked media was not opened or played.",
+    "No media download, ASR, transcript import, timing transfer, segmentation, or content-truth judgment."
+  ],
+  "canonical_promotion_performed": true,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}

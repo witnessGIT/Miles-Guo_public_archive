@@ -1,0 +1,48 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_18_20210903_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_18_20210903_1",
+  "reviewed_by": "agent-20261006T191534Z-d915df7b",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-06T19:35:56Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20210903_001",
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/23312.html",
+    "https://rumble.com/v59l7hh-20210903-1.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "Exact GWINS detail page 23312 contains source video ID 20210903_1 and a clean matching page title.",
+    "date": "Candidate date 2021-09-03 agrees with the source ID and detail-page title; no publication time was inferred.",
+    "title": "郭文贵2021年9月3日直播 20210903_1 平安集团的崩溃背后的较量，核心是陆金所；从平安股东变化看改革开放30年中共各派权力的斗争，万亿的盗国；中国的房地产就是党的房地产，整个国家由几大家族瓜分控制；青蒿素是人类以后所",
+    "platform_ids": {
+      "gwins_page_id": "23312",
+      "gwins_video_id": "20210903_1",
+      "rumble_ids": [
+        "v59l7hh"
+      ]
+    },
+    "source_relationships": "Only exact outbound platform links exposed by the verified GWINS detail page were attached; generic homepages were excluded.",
+    "deduplication": "Exact detail/media URLs and source_video_id were checked against the active SQLite inventory built from Git at c54187cf9955575bde57de18a6652a2823b97b57; exact matches link an existing canonical record, otherwise a date-scoped canonical ID is created without date-only merging."
+  },
+  "evidence_artifacts": [
+    "data/source_page_evidence/c2_metadata/C2-REVIEW-SC_GWINS_LIST2_18_20210903_1-R001/ef9097e708c76a00.json"
+  ],
+  "source_raw_sha256": "213aef13ed32c633ae670172343bdc52761e121934d7d3c1fe2ec55bd9678c41",
+  "limitations": [
+    "Public HTML metadata and outbound links only; linked media was not opened or played.",
+    "No media download, ASR, transcript import, timing transfer, segmentation, or content-truth judgment."
+  ],
+  "canonical_promotion_performed": true,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}

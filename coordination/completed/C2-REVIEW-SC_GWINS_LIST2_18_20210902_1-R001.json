@@ -1,0 +1,28 @@
+{
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_18_20210902_1-R001",
+  "agent_id": "agent-20261006T191534Z-d915df7b",
+  "completed_at": "2026-10-06T19:36:01.880723+00:00",
+  "result_commit": "c54187cf9955575bde57de18a6652a2823b97b57",
+  "outputs": [
+    "data/current/candidate_reviews/SC_GWINS_LIST2_18_20210902_1-R001.json"
+  ],
+  "validation": "candidate-review-evidence-v2 exact metadata and SQLite identity checks; no media processing",
+  "workflow_mode": "continuous-worker-v2",
+  "claim_protocol": "claim-protocol-v2",
+  "entry_mode": "work",
+  "continue_after_finish": true,
+  "finish_prerequisites_revalidated": true,
+  "notes": "Task completed only after re-checking the latest repository dependency contract. Under continuous-worker-v2, refresh repository state and claim the next eligible task unless a documented stop condition applies.",
+  "kind": "candidate_promotion_review",
+  "source_candidate_id": "SC_GWINS_LIST2_18_20210902_1",
+  "review_generation": 1,
+  "review_claim_timeout_hours": 10,
+  "review_batch_id": "REVIEW-BATCH-20261006T193323787921Z-2ddfcaa6",
+  "review_batch_target_size": 100,
+  "review_batch_claimed_count": 100,
+  "review_batch_position": 28,
+  "candidate_review_contract": "candidate-review-evidence-v2",
+  "review_artifact": "data/current/candidate_reviews/SC_GWINS_LIST2_18_20210902_1-R001.json",
+  "review_decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20210902_001"
+}

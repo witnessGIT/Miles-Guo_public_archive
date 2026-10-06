@@ -1,0 +1,70 @@
+{
+  "evidence_version": "c2-metadata-evidence-v1",
+  "request_sha256": "ef9097e708c76a00b4adef3d62f7c7c30f508e3e782a83ebbff6bc205e769845",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_18_20210904_2-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_18_20210904_2",
+  "agent_id": "agent-20261006T191534Z-d915df7b",
+  "requested_url": "https://gwins.org/cn/milesguo/23318.html",
+  "fetched_at": "2026-10-06T19:35:53.843373+00:00",
+  "review_decision": null,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "source_text_imported": false,
+  "status": "fetched",
+  "http_status": 200,
+  "final_url": "https://gwins.org/cn/milesguo/23318.html",
+  "raw_bytes": 18430,
+  "raw_sha256": "b5ff3edf1f986e591e86222f60edd2f1036d454a76489f020cb1580c42ef42bc",
+  "metadata_evidence": {
+    "page_title": "郭文贵2021年9月4日盖特 20210904_2解药的事儿太大了..太大了..太大了..",
+    "metadata": {
+      "description": "尊敬的战友们好，9月4号，阳光明媚，天气太好了，我想兄弟姐妹们今天我不直播，让大家去看《真人真事》，明天上午8:30推流，9:00正式开始直播，继续聊聊，平安陆金所，平安保险"
+    },
+    "decoding": {
+      "codec": "utf-8",
+      "strict": false,
+      "replacement_count": 17,
+      "title_clean": true,
+      "warning": "Damaged fields are not reliable; clean excerpts only. Missing cues are not absence evidence."
+    },
+    "expected_source_video_id": "20210904_2",
+    "expected_id_visible": true,
+    "outbound_links": [
+      "https://gettr.com/post/pa39u2338c",
+      "https://rumble.com/v59l7q4-20210904-2.html",
+      "https://gettr.com/"
+    ],
+    "identity_type_cues": [
+      {
+        "paragraph_index": 2,
+        "excerpt": "郭文贵视频"
+      },
+      {
+        "paragraph_index": 20,
+        "excerpt": "视频链接：https://gettr.com/post/pa39u2338c"
+      },
+      {
+        "paragraph_index": 21,
+        "excerpt": "视频链接2：https://rumble.com/v59l7q4-20210904-2.html"
+      },
+      {
+        "paragraph_index": 26,
+        "excerpt": "尊敬的战友们好，9月4号，阳光明媚，天气太好了，我想兄弟姐妹们今天我不直播，让大家去看《真人真事》，明天上午8:30推流，9:00正式开始直播，继续聊聊，平安陆金所，平安保险，平安金融，平安政治，还有中国的房地产，很多事儿还没爆呢，光平安说个二十期也说不完。它是几十年的历史涵盖了整个国内大陆。"
+      },
+      {
+        "paragraph_index": 26,
+        "excerpt": "友们好，9月4号，阳光明媚，天气太好了，我想兄弟姐妹们今天我不直播，让大家去看《真人真事》，明天上午8:30推流，9:00正式开始直播，继续聊聊，平安陆金所，平安保险，平安金融，平安政治，还有中国的房地产，很多事儿还没爆呢，光平安说个二十期也说不完。它是几十年的历史涵盖了整个国内大陆。"
+      },
+      {
+        "paragraph_index": 27,
+        "excerpt": "这几天的直播影响太大了，但是最重要的是青蒿素..青蒿素..青蒿素..地塞米松..地塞米松..地塞米松..伊维菌素..伊维菌素..伊维菌素..太重要了，土霉素有时也可以用，这几种药，氢氯喹加锌，而且一定要加维他命D，一定加维他命D，别"
+      },
+      {
+        "paragraph_index": 37,
+        "excerpt": "现在看到这个世界形势变化多快，我就不多说了，明天直播咱们再详细聊，时间到了，谢谢。"
+      }
+    ],
+    "cue_profile": "origin-context-v2",
+    "cue_warning": "Excerpts may discuss other recordings; a reviewer must resolve context. No automatic type decision."
+  }
+}

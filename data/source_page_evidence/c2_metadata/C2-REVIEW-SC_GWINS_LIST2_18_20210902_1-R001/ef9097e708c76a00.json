@@ -1,0 +1,54 @@
+{
+  "evidence_version": "c2-metadata-evidence-v1",
+  "request_sha256": "ef9097e708c76a00b4adef3d62f7c7c30f508e3e782a83ebbff6bc205e769845",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_18_20210902_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_18_20210902_1",
+  "agent_id": "agent-20261006T191534Z-d915df7b",
+  "requested_url": "https://gwins.org/cn/milesguo/23291.html",
+  "fetched_at": "2026-10-06T19:35:47.675714+00:00",
+  "review_decision": null,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "source_text_imported": false,
+  "status": "fetched",
+  "http_status": 200,
+  "final_url": "https://gwins.org/cn/milesguo/23291.html",
+  "raw_bytes": 9927,
+  "raw_sha256": "11c5cfb5b069fc9b032b0c99c47a670b5fb57311111b17a87c5aa4302f3d3510",
+  "metadata_evidence": {
+    "page_title": "郭文贵2021年9月2日盖特 20210902_1尊敬的家人们好：你们健身了吗？传播C C P病毒．香港危机．郑州人祸．病毒解药的真相了吗？",
+    "metadata": {
+      "description": "无内容"
+    },
+    "decoding": {
+      "codec": "utf-8",
+      "strict": false,
+      "replacement_count": 17,
+      "title_clean": true,
+      "warning": "Damaged fields are not reliable; clean excerpts only. Missing cues are not absence evidence."
+    },
+    "expected_source_video_id": "20210902_1",
+    "expected_id_visible": true,
+    "outbound_links": [
+      "https://gettr.com/post/p9vqa224f8",
+      "https://rumble.com/v59l29p-20210902-1.html",
+      "https://gettr.com/"
+    ],
+    "identity_type_cues": [
+      {
+        "paragraph_index": 2,
+        "excerpt": "郭文贵视频"
+      },
+      {
+        "paragraph_index": 20,
+        "excerpt": "视频链接：https://gettr.com/post/p9vqa224f8"
+      },
+      {
+        "paragraph_index": 21,
+        "excerpt": "视频链接2：https://rumble.com/v59l29p-20210902-1.html"
+      }
+    ],
+    "cue_profile": "origin-context-v2",
+    "cue_warning": "Excerpts may discuss other recordings; a reviewer must resolve context. No automatic type decision."
+  }
+}
