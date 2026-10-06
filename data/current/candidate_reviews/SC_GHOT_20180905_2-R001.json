@@ -1,0 +1,45 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GHOT_20180905_2-R001",
+  "source_candidate_id": "SC_GHOT_20180905_2",
+  "reviewed_by": "agent-20261006T191453Z-a890f4a8",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-06T20:13:28Z",
+  "decision": "rejected_not_target",
+  "canonical_live_id": null,
+  "evidence_urls": [
+    "https://ghot.ai/archive/videos/2018-09-05-2",
+    "https://www.youtube.com/watch?v=OHx2wz6z63M",
+    "https://rumble.com/v57cxuk-20180905-2.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "Exact public GHOT page is bound to candidate SC_GHOT_20180905_2 and page/source identifier 2018-09-05-2; identity visibility=False.",
+    "date": "Candidate date is 2018-09-05; no publication time was inferred.",
+    "title": "2018.09.05 黄河边性无能造成严重后果。林肯中心被取消发布会 2",
+    "platform_ids": [
+      "2018-09-05-2",
+      "2018-09-05-2",
+      "OHx2wz6z63M",
+      "v57cxuk-20180905-2"
+    ],
+    "source_relationships": "Only exact public page URLs and concrete outbound platform links were retained; generic navigation links were excluded.",
+    "deduplication": "The exact GHOT title identifies a recorded update, interview/rebroadcast, excerpt, or otherwise lacks an original-livestream identity."
+  },
+  "source_raw_sha256": "0b88888ca0ac2d5a8057a4faa375cdef518285441ef5178acf5a4277e0daaad5",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false,
+  "rejection_reason": "The exact GHOT title identifies a recorded update, interview/rebroadcast, excerpt, or otherwise lacks an original-livestream identity."
+}
