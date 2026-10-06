@@ -1,0 +1,45 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GHOT_20191201_1-R001",
+  "source_candidate_id": "SC_GHOT_20191201_1",
+  "reviewed_by": "agent-20261006T191453Z-a890f4a8",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-06T20:14:07Z",
+  "decision": "rejected_not_target",
+  "canonical_live_id": null,
+  "evidence_urls": [
+    "https://ghot.ai/archive/videos/2019-12-01-1",
+    "https://odysee.com/@laxi:4/20191201:e",
+    "https://rumble.com/v57wdky-20191201.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "Exact public GHOT page is bound to candidate SC_GHOT_20191201_1 and page/source identifier 2019-12-01-1; identity visibility=False.",
+    "date": "Candidate date is 2019-12-01; no publication time was inferred.",
+    "title": "2019.12.01 梁振英站台的海南恒大超级医院；龚火鸡欺骗VOA并做各种假材料；香港人权法案打响了全世界灭共的第一枪_X264",
+    "platform_ids": [
+      "2019-12-01-1",
+      "2019-12-01-1",
+      "@laxi:4/20191201:e",
+      "v57wdky-20191201"
+    ],
+    "source_relationships": "Only exact public page URLs and concrete outbound platform links were retained; generic navigation links were excluded.",
+    "deduplication": "The exact GHOT title identifies a recorded update, interview/rebroadcast, excerpt, or otherwise lacks an original-livestream identity."
+  },
+  "source_raw_sha256": "08d74008e338f9c0f93aa110da47c8096cd7f701c86f50b619a521ee77c3f51c",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false,
+  "rejection_reason": "The exact GHOT title identifies a recorded update, interview/rebroadcast, excerpt, or otherwise lacks an original-livestream identity."
+}
