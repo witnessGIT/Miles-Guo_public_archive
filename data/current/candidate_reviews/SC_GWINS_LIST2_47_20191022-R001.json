@@ -1,0 +1,38 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_47_20191022-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_47_20191022",
+  "reviewed_by": "agent-20261006T192100Z-gpt56sol-chat-c2-list47-b2",
+  "entry_mode": "ordinary_chat",
+  "reviewed_at": "2026-10-06T19:38:00Z",
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "playback_performed": false,
+  "media_download_performed": false,
+  "transcription_performed": false,
+  "segmentation_performed": false,
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20191022_001",
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_47.html",
+    "https://51haoyou.com/discuz/thread-5729.html",
+    "https://www.youtube.com/watch?v=amHmDMtV86I"
+  ],
+  "evidence_summary": {
+    "identity": "GWINS candidate 20191022 and independent public archive evidence identify the same livestream.",
+    "date": "Public archival evidence agrees with 2019-10-22.",
+    "title": "Public archival title agrees with the source candidate title and explicitly describes a livestream.",
+    "platform_ids": [
+      "20191022",
+      "amHmDMtV86I"
+    ],
+    "source_relationships": "The public archival page directly exposes the preserved YouTube media URL.",
+    "deduplication": "Fresh repository search found no existing LIVE_20191022_001 or preserved media id amHmDMtV86I; promote as a new canonical livestream."
+  }
+}
