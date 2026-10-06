@@ -1,0 +1,45 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_69_20170903_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_69_20170903_1",
+  "reviewed_by": "agent-20261006T200100Z-gpt56sol-chat-c2",
+  "entry_mode": "ordinary_chat",
+  "reviewed_at": "2026-10-06T20:10:00Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20170903_001",
+  "evidence_urls": [
+    "https://www.gwins.org/cn/milesguo/list_2_69.html",
+    "https://www.gwins.org/cn/milesguo/21740.html",
+    "https://youtu.be/XtLfnABY3og",
+    "https://rumble.com/v5777f9-20170903-1.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS list_2_69 and detail page 21740 identify the exact source record 20170903_1.",
+    "date": "Candidate date 2017-09-03 agrees with the date encoded by the current GWINS record and source id.",
+    "title": "郭文贵2017年9月3日直播 20170903_1 直播怀疑刘呈杰姐姐刚死。三段视频，被骇四次",
+    "platform_ids": {
+      "gwins_page_id": "21740",
+      "gwins_video_id": "20170903_1",
+      "youtube_id": "XtLfnABY3og",
+      "rumble_id": "v5777f9-20170903-1"
+    },
+    "source_relationships": "The exact GWINS detail page directly exposes the recorded YouTube and Rumble media URLs.",
+    "deduplication": "Fresh complete-tree checks found no current canonical record for 20170903_1; same-day supplemental clips remain distinct, so LIVE_20170903_001 is created only for this verified livestream/program."
+  },
+  "limitations": [
+    "No playback, media download, transcription, segmentation, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": true,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false,
+  "target_basis": "The exact GWINS current-item title twice identifies the recording as a livestream and distinguishes it from other same-day videos."
+}

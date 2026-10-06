@@ -1,0 +1,45 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_69_20170907-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_69_20170907",
+  "reviewed_by": "agent-20261006T200100Z-gpt56sol-chat-c2",
+  "entry_mode": "ordinary_chat",
+  "reviewed_at": "2026-10-06T20:10:00Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20170907_001",
+  "evidence_urls": [
+    "https://www.gwins.org/cn/milesguo/list_2_69.html",
+    "https://www.gwins.org/cn/milesguo/616.html",
+    "https://www.youtube.com/watch?v=xW5TzUkUjrw",
+    "https://rumble.com/v5778cd-20170907.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS list_2_69 and detail page 616 identify the exact source record 20170907.",
+    "date": "Candidate date 2017-09-07 agrees with the date encoded by the current GWINS record and source id.",
+    "title": "郭文贵2017年9月7日视频 20170907 是孙力军．孟建柱．傅政华．王岐山．的凶恶．促使文贵决定美国政治屁护！",
+    "platform_ids": {
+      "gwins_page_id": "616",
+      "gwins_video_id": "20170907",
+      "youtube_id": "xW5TzUkUjrw",
+      "rumble_id": "v5778cd-20170907"
+    },
+    "source_relationships": "The exact GWINS detail page directly exposes the recorded YouTube and Rumble media URLs.",
+    "deduplication": "Fresh complete-tree checks found no current canonical record for 20170907; same-day supplemental clips remain distinct, so LIVE_20170907_001 is created only for this verified livestream/program."
+  },
+  "limitations": [
+    "No playback, media download, transcription, segmentation, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": true,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false,
+  "target_basis": "The current-item opening explicitly says '今天是9月7号文贵报平安直播', identifying the session as a live."
+}

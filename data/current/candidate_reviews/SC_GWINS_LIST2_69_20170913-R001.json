@@ -1,0 +1,45 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_69_20170913-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_69_20170913",
+  "reviewed_by": "agent-20261006T200100Z-gpt56sol-chat-c2",
+  "entry_mode": "ordinary_chat",
+  "reviewed_at": "2026-10-06T20:10:00Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20170913_001",
+  "evidence_urls": [
+    "https://www.gwins.org/cn/milesguo/list_2_69.html",
+    "https://www.gwins.org/cn/milesguo/619.html",
+    "https://www.youtube.com/watch?v=q3Ed2mwFsjs",
+    "https://rumble.com/v577a6t-20170913.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS list_2_69 and detail page 619 identify the exact source record 20170913.",
+    "date": "Candidate date 2017-09-13 agrees with the date encoded by the current GWINS record and source id.",
+    "title": "郭文贵2017年9月13日视频 20170913 姚依林王岐山孟建柱孙力军傅政华的生殖器治国首篇！姚依林与姚明瑞．刘呈杰．刘新扬的乱伦！刘呈杰的法人爹是谁？",
+    "platform_ids": {
+      "gwins_page_id": "619",
+      "gwins_video_id": "20170913",
+      "youtube_id": "q3Ed2mwFsjs",
+      "rumble_id": "v577a6t-20170913"
+    },
+    "source_relationships": "The exact GWINS detail page directly exposes the recorded YouTube and Rumble media URLs.",
+    "deduplication": "Fresh complete-tree checks found no current canonical record for 20170913; same-day supplemental clips remain distinct, so LIVE_20170913_001 is created only for this verified livestream/program."
+  },
+  "limitations": [
+    "No playback, media download, transcription, segmentation, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": true,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false,
+  "target_basis": "The current-item transcript explicitly identifies the session as today's 报平安直播 and closes the live program."
+}

@@ -1,0 +1,45 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_69_20170909_4-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_69_20170909_4",
+  "reviewed_by": "agent-20261006T200100Z-gpt56sol-chat-c2",
+  "entry_mode": "ordinary_chat",
+  "reviewed_at": "2026-10-06T20:10:00Z",
+  "decision": "rejected_not_target",
+  "canonical_live_id": null,
+  "evidence_urls": [
+    "https://www.gwins.org/cn/milesguo/list_2_69.html",
+    "https://www.gwins.org/cn/milesguo/23571.html",
+    "https://youtu.be/vHN_FNKIJLk",
+    "https://rumble.com/v5778j9-20170909-4.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS list_2_69 and detail page 23571 identify the exact source record 20170909_4.",
+    "date": "Candidate date 2017-09-09 agrees with the date encoded by the current GWINS record and source id.",
+    "title": "郭文贵2017年9月9日视频 20170909_4 补偿今天直播技术的失败 分享游艇内部",
+    "platform_ids": {
+      "gwins_page_id": "23571",
+      "gwins_video_id": "20170909_4",
+      "youtube_id": "vHN_FNKIJLk",
+      "rumble_id": "v5778j9-20170909-4"
+    },
+    "source_relationships": "The exact GWINS detail page directly exposes the recorded YouTube and Rumble media URLs.",
+    "deduplication": "Compared this exact source id, date, title, current-item framing, and same-day neighboring records; it is retained as a distinct non-target video and is not merged into a canonical live."
+  },
+  "limitations": [
+    "No playback, media download, transcription, segmentation, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false,
+  "rejection_reason": "The title says this clip compensates for the day's failed livestream and shares the yacht interior; it is supplemental material, not the canonical live."
+}

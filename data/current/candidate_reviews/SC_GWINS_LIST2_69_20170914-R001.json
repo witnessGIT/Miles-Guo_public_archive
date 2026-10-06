@@ -1,0 +1,45 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_69_20170914-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_69_20170914",
+  "reviewed_by": "agent-20261006T200100Z-gpt56sol-chat-c2",
+  "entry_mode": "ordinary_chat",
+  "reviewed_at": "2026-10-06T20:10:00Z",
+  "decision": "rejected_not_target",
+  "canonical_live_id": null,
+  "evidence_urls": [
+    "https://www.gwins.org/cn/milesguo/list_2_69.html",
+    "https://www.gwins.org/cn/milesguo/23576.html",
+    "https://youtu.be/flcnpoZPUJw",
+    "https://rumble.com/v577a91-20170914.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS list_2_69 and detail page 23576 identify the exact source record 20170914.",
+    "date": "Candidate date 2017-09-14 agrees with the date encoded by the current GWINS record and source id.",
+    "title": "郭文贵2017年9月14日视频 20170914 将在48小时内爆政法王的情人之一",
+    "platform_ids": {
+      "gwins_page_id": "23576",
+      "gwins_video_id": "20170914",
+      "youtube_id": "flcnpoZPUJw",
+      "rumble_id": "v577a91-20170914"
+    },
+    "source_relationships": "The exact GWINS detail page directly exposes the recorded YouTube and Rumble media URLs.",
+    "deduplication": "Compared this exact source id, date, title, current-item framing, and same-day neighboring records; it is retained as a distinct non-target video and is not merged into a canonical live."
+  },
+  "limitations": [
+    "No playback, media download, transcription, segmentation, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false,
+  "rejection_reason": "The current item is a short advance announcement ('within 48 hours') rather than the later originated livestream/program it previews."
+}

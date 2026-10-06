@@ -1,0 +1,45 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_69_20170902-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_69_20170902",
+  "reviewed_by": "agent-20261006T200100Z-gpt56sol-chat-c2",
+  "entry_mode": "ordinary_chat",
+  "reviewed_at": "2026-10-06T20:10:00Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20170902_001",
+  "evidence_urls": [
+    "https://www.gwins.org/cn/milesguo/list_2_69.html",
+    "https://www.gwins.org/cn/milesguo/612.html",
+    "https://www.youtube.com/watch?v=JSSRGaMH1ho",
+    "https://rumble.com/v5777ap-20170902.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS list_2_69 and detail page 612 identify the exact source record 20170902.",
+    "date": "Candidate date 2017-09-02 agrees with the date encoded by the current GWINS record and source id.",
+    "title": "郭文贵2017年9月2日 20170902 爆孟建柱孙力军盗国淫法阴谋杀人灭口，盗国系列:第二季第二集",
+    "platform_ids": {
+      "gwins_page_id": "612",
+      "gwins_video_id": "20170902",
+      "youtube_id": "JSSRGaMH1ho",
+      "rumble_id": "v5777ap-20170902"
+    },
+    "source_relationships": "The exact GWINS detail page directly exposes the recorded YouTube and Rumble media URLs.",
+    "deduplication": "Fresh complete-tree checks found no current canonical record for 20170902; same-day supplemental clips remain distinct, so LIVE_20170902_001 is created only for this verified livestream/program."
+  },
+  "limitations": [
+    "No playback, media download, transcription, segmentation, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": true,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false,
+  "target_basis": "The current-item transcript explicitly states '今天是9月2号，文贵直播', identifying an originated live program."
+}

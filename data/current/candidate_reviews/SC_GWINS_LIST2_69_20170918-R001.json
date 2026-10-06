@@ -1,0 +1,45 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_69_20170918-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_69_20170918",
+  "reviewed_by": "agent-20261006T200100Z-gpt56sol-chat-c2",
+  "entry_mode": "ordinary_chat",
+  "reviewed_at": "2026-10-06T20:10:00Z",
+  "decision": "rejected_not_target",
+  "canonical_live_id": null,
+  "evidence_urls": [
+    "https://www.gwins.org/cn/milesguo/list_2_69.html",
+    "https://www.gwins.org/cn/milesguo/23577.html",
+    "https://youtu.be/jUQJsXwIkd4",
+    "https://rumble.com/v5c49zt-20170918.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS list_2_69 and detail page 23577 identify the exact source record 20170918.",
+    "date": "Candidate date 2017-09-18 agrees with the date encoded by the current GWINS record and source id.",
+    "title": "郭文贵2017年9月18日视频 20170918 在安全屋准备全球发布会资料 担心中国大乱",
+    "platform_ids": {
+      "gwins_page_id": "23577",
+      "gwins_video_id": "20170918",
+      "youtube_id": "jUQJsXwIkd4",
+      "rumble_id": "v5c49zt-20170918"
+    },
+    "source_relationships": "The exact GWINS detail page directly exposes the recorded YouTube and Rumble media URLs.",
+    "deduplication": "Compared this exact source id, date, title, current-item framing, and same-day neighboring records; it is retained as a distinct non-target video and is not merged into a canonical live."
+  },
+  "limitations": [
+    "No playback, media download, transcription, segmentation, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false,
+  "rejection_reason": "GWINS presents this as a preparation/update video about getting materials ready for a later global press conference; the current item is not framed as an originated livestream."
+}

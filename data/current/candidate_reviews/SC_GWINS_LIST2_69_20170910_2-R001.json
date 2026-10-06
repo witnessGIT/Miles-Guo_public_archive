@@ -1,0 +1,45 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_69_20170910_2-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_69_20170910_2",
+  "reviewed_by": "agent-20261006T200100Z-gpt56sol-chat-c2",
+  "entry_mode": "ordinary_chat",
+  "reviewed_at": "2026-10-06T20:10:00Z",
+  "decision": "rejected_not_target",
+  "canonical_live_id": null,
+  "evidence_urls": [
+    "https://www.gwins.org/cn/milesguo/list_2_69.html",
+    "https://www.gwins.org/cn/milesguo/23625.html",
+    "https://youtu.be/lTvXhDJeIIo",
+    "https://rumble.com/v5779ir-20170910-2.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS list_2_69 and detail page 23625 identify the exact source record 20170910_2.",
+    "date": "Candidate date 2017-09-10 agrees with the date encoded by the current GWINS record and source id.",
+    "title": "郭文贵2017年9月10日视频 20170910_2 马云你还记得这个东西么?180次飞行记录，200万买的录像证明一切。",
+    "platform_ids": {
+      "gwins_page_id": "23625",
+      "gwins_video_id": "20170910_2",
+      "youtube_id": "lTvXhDJeIIo",
+      "rumble_id": "v5779ir-20170910-2"
+    },
+    "source_relationships": "The exact GWINS detail page directly exposes the recorded YouTube and Rumble media URLs.",
+    "deduplication": "Compared this exact source id, date, title, current-item framing, and same-day neighboring records; it is retained as a distinct non-target video and is not merged into a canonical live."
+  },
+  "limitations": [
+    "No playback, media download, transcription, segmentation, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false,
+  "rejection_reason": "This is a separate evidence/comment clip about flight records, not the 20170910 originated 报平安直播 preserved as the distinct 20170910 item."
+}

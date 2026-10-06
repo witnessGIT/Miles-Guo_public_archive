@@ -1,0 +1,45 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_69_20170909_2-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_69_20170909_2",
+  "reviewed_by": "agent-20261006T200100Z-gpt56sol-chat-c2",
+  "entry_mode": "ordinary_chat",
+  "reviewed_at": "2026-10-06T20:10:00Z",
+  "decision": "rejected_not_target",
+  "canonical_live_id": null,
+  "evidence_urls": [
+    "https://www.gwins.org/cn/milesguo/list_2_69.html",
+    "https://www.gwins.org/cn/milesguo/23569.html",
+    "https://youtu.be/z4WiZLGUci8",
+    "https://rumble.com/v5778dw-20170909-2.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS list_2_69 and detail page 23569 identify the exact source record 20170909_2.",
+    "date": "Candidate date 2017-09-09 agrees with the date encoded by the current GWINS record and source id.",
+    "title": "郭文贵2017年9月9日视频 20170909_2 分享此时此刻 为今天的直播技术失误道歉",
+    "platform_ids": {
+      "gwins_page_id": "23569",
+      "gwins_video_id": "20170909_2",
+      "youtube_id": "z4WiZLGUci8",
+      "rumble_id": "v5778dw-20170909-2"
+    },
+    "source_relationships": "The exact GWINS detail page directly exposes the recorded YouTube and Rumble media URLs.",
+    "deduplication": "Compared this exact source id, date, title, current-item framing, and same-day neighboring records; it is retained as a distinct non-target video and is not merged into a canonical live."
+  },
+  "limitations": [
+    "No playback, media download, transcription, segmentation, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false,
+  "rejection_reason": "The title describes an apology for the day's livestream technical failure; this is a supplemental post-live clip rather than the canonical livestream."
+}
