@@ -1,0 +1,44 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_20_20210802_3-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_20_20210802_3",
+  "reviewed_by": "agent-20261006T191453Z-a890f4a8",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-06T19:27:36Z",
+  "decision": "rejected_not_target",
+  "canonical_live_id": null,
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_20.html",
+    "https://gwins.org/cn/milesguo/23224.html",
+    "https://rumble.com/v59h4z1-20210802-3.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS detail page 23224 visibly carries exact source_video_id 20210802_3 and is bound to this candidate from https://gwins.org/cn/milesguo/list_2_20.html.",
+    "date": "Candidate date 2021-08-02 agrees with the date and source id in the exact GWINS title.",
+    "title": "郭文贵2021年8月2日盖特 20210802_3 〖有人还记得2017年每次郭先生直播时国内都大规模切断外网吗？每次直播刚开始，绝大部分VPN都失效，直到直播结束后几个小时才陆陆续续恢复。很多数码博主还在微博上讨论为什么经常在晚上所",
+    "platform_ids": [
+      "20210802_3",
+      "23224",
+      "v59h4z1-20210802-3"
+    ],
+    "source_relationships": "The exact GWINS detail page directly exposes the listed public media URL(s); generic site-home links were excluded.",
+    "deduplication": "Compared the exact source id, date, title, detail page, and exposed platform IDs with the other fixed-batch candidates; retained as a distinct non-livestream candidate and did not merge it into a canonical live."
+  },
+  "source_raw_sha256": "c071221b33b816a0df5ee4ad7ed6fb4b6e153263979d15583a8db8c47fc674b1",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false,
+  "rejection_reason": "The exact GWINS title labels this item as a GETTR post (盖特), and its detail page exposes a direct GETTR post; it is a standalone platform video/update rather than an original livestream."
+}

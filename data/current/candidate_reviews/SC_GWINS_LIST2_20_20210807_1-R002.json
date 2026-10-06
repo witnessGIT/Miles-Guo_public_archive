@@ -1,0 +1,45 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_20_20210807_1-R002",
+  "source_candidate_id": "SC_GWINS_LIST2_20_20210807_1",
+  "reviewed_by": "agent-20261006T191453Z-a890f4a8",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-06T19:27:36Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20210807_001",
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_20.html",
+    "https://gwins.org/cn/milesguo/23215.html",
+    "https://odysee.com/@laxi:4/20210807_1:4",
+    "https://rumble.com/v59hg79-20210807-1.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS detail page 23215 visibly carries exact source_video_id 20210807_1 and is bound to this candidate from https://gwins.org/cn/milesguo/list_2_20.html.",
+    "date": "Candidate date 2021-08-07 agrees with the date and source id in the exact GWINS title.",
+    "title": "郭文贵2021年8月7日直播 20210807_1 新中国联邦与黑水公司将联合打造海外华人防护力量；永远不能忘记了爆料革命的真，蛇妖闫亡腚缸的假，共产党做的恶，追求自由是我们的根本；今年北戴河会议，中共两派在政治、经济、政法",
+    "platform_ids": [
+      "20210807_1",
+      "23215",
+      "@laxi:4/20210807_1:4",
+      "v59hg79-20210807-1"
+    ],
+    "source_relationships": "The exact GWINS detail page directly exposes the listed public media URL(s); generic site-home links were excluded.",
+    "deduplication": "Fresh current-data checks found no canonical record for exact source id 20210807_1. The distinct GWINS detail page 23215 and media IDs support LIVE_20210807_001; same-day items with different numbered source IDs remain separate."
+  },
+  "source_raw_sha256": "4589f9df8a97d1f20e7936a405d011cae552e0d095ff760de076cd16438ed940",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": true,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}

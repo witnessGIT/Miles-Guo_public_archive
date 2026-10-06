@@ -1,0 +1,46 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_20_20210806_2-R002",
+  "source_candidate_id": "SC_GWINS_LIST2_20_20210806_2",
+  "reviewed_by": "agent-20261006T191453Z-a890f4a8",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-06T19:27:36Z",
+  "decision": "rejected_not_target",
+  "canonical_live_id": null,
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_20.html",
+    "https://gwins.org/cn/milesguo/23234.html",
+    "https://gettr.com/post/p6vxhm",
+    "https://rumble.com/v59hf6d-20210806-2.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS detail page 23234 visibly carries exact source_video_id 20210806_2 and is bound to this candidate from https://gwins.org/cn/milesguo/list_2_20.html.",
+    "date": "Candidate date 2021-08-06 agrees with the date and source id in the exact GWINS title.",
+    "title": "郭文贵2021年8月6日盖特 20210806_2 尊敬的战友们好，全国水灾．人祸．病毒肆虐．经济接近崩溃，为什么中南坑的老杂毛？还是照样的群居北戴河呢，他们在干什么？他们想干什么？无产阶级的中国共产党，所享受的物质的生活，",
+    "platform_ids": [
+      "20210806_2",
+      "23234",
+      "p6vxhm",
+      "v59hf6d-20210806-2"
+    ],
+    "source_relationships": "The exact GWINS detail page directly exposes the listed public media URL(s); generic site-home links were excluded.",
+    "deduplication": "Compared the exact source id, date, title, detail page, and exposed platform IDs with the other fixed-batch candidates; retained as a distinct non-livestream candidate and did not merge it into a canonical live."
+  },
+  "source_raw_sha256": "be4ab8177f2da1766987241cfc5d14306f3ee99913a39cf6c572bac6eff1c08d",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false,
+  "rejection_reason": "The exact GWINS title labels this item as a GETTR post (盖特), and its detail page exposes a direct GETTR post; it is a standalone platform video/update rather than an original livestream."
+}
