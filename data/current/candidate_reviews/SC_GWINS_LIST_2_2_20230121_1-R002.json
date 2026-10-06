@@ -1,0 +1,46 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST_2_2_20230121_1-R002",
+  "source_candidate_id": "SC_GWINS_LIST_2_2_20230121_1",
+  "reviewed_by": "agent-20261006T191453Z-a890f4a8",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-06T20:10:38Z",
+  "decision": "rejected_not_target",
+  "canonical_live_id": null,
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_2.html",
+    "https://www.gwins.org/cn/milesguo/24210.html",
+    "https://gettr.com/post/p25te6k2b1d",
+    "https://rumble.com/v5b167o-20230121-1.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "Exact public GWINS page is bound to candidate SC_GWINS_LIST_2_2_20230121_1 and page/source identifier list_2_2; identity visibility=True.",
+    "date": "Candidate date is 2023-01-21; no publication time was inferred.",
+    "title": "郭文贵2023年1月21日盖特 20230121_1 尊敬的战友们好......有太多战友发来祝福信息，七哥不能及时回复的还请战友们多包涵，在这祝愿所有全球各地的战友及家人们，新春快乐！兔年大吉！七哥将在美东时间大年初一早上和全球战友",
+    "platform_ids": [
+      "20230121_1",
+      "list_2_2",
+      "p25te6k2b1d",
+      "v5b167o-20230121-1"
+    ],
+    "source_relationships": "Only exact public page URLs and concrete outbound platform links were retained; generic navigation links were excluded.",
+    "deduplication": "The exact GWINS title identifies a standalone GETTR update, short video, or rebroadcast rather than an original livestream."
+  },
+  "source_raw_sha256": "7c7e1c729d7221399f6f668d38be081b1adf036013ef5451afaa4f523036816f",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false,
+  "rejection_reason": "The exact GWINS title identifies a standalone GETTR update, short video, or rebroadcast rather than an original livestream."
+}
