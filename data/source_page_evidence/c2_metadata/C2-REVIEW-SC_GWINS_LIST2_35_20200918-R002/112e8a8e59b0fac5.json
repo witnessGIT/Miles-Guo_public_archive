@@ -1,0 +1,58 @@
+{
+  "evidence_version": "c2-metadata-evidence-v1",
+  "request_sha256": "112e8a8e59b0fac543dfef6983fb6f4b389c8b15dcdb8555fab4658589a28c7d",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_35_20200918-R002",
+  "source_candidate_id": "SC_GWINS_LIST2_35_20200918",
+  "agent_id": "agent-20261006T191534Z-d915df7b",
+  "requested_url": "https://gwins.org/cn/milesguo/14954.html",
+  "fetched_at": "2026-10-06T19:21:19.713937+00:00",
+  "review_decision": null,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "source_text_imported": false,
+  "status": "fetched",
+  "http_status": 200,
+  "final_url": "https://gwins.org/cn/milesguo/14954.html",
+  "raw_bytes": 15256,
+  "raw_sha256": "77d8803e320cdcc8c32ae467e8ac0b3aa686311fd55d3569fea507711d30c460",
+  "metadata_evidence": {
+    "page_title": "郭文贵2020年9月18日盖特 20200918会议期间再和战友们聊一会儿",
+    "metadata": {
+      "description": "    哎呦哎呦，唉呀从早上开会开到现在，一打开GTV就兴奋的不中，啊，太兴奋了，感谢兄弟姐们的你们的辛苦，维护战友们的家人和战友们的尊严，这绝对不允许这些狗杂碎，拿"
+    },
+    "decoding": {
+      "codec": "utf-8",
+      "strict": false,
+      "replacement_count": 17,
+      "title_clean": true,
+      "warning": "Damaged fields are not reliable; clean excerpts only. Missing cues are not absence evidence."
+    },
+    "expected_source_video_id": "20200918",
+    "expected_id_visible": true,
+    "outbound_links": [
+      "https://youtu.be/AGPDJvl56cc",
+      "https://rumble.com/v58shst-20200918.html",
+      "https://gettr.com/"
+    ],
+    "identity_type_cues": [
+      {
+        "paragraph_index": 2,
+        "excerpt": "郭文贵视频"
+      },
+      {
+        "paragraph_index": 20,
+        "excerpt": "视频链接：https://youtu.be/AGPDJvl56cc"
+      },
+      {
+        "paragraph_index": 21,
+        "excerpt": "视频链接2：https://rumble.com/v58shst-20200918.html"
+      },
+      {
+        "paragraph_index": 26,
+        "excerpt": "十万个信息，大半是给文贵建议的，大家去行动行动，你去执行执行，不要说坚持三年，你坚持三个月试试，像我的二十四小时，二十小时工作，每分钟有被消灭的危险，还有呢中国城的郑琦，梁冠军，咱们的美东小哥也不行动了，对不对？郑琦那梁冠军必须找他们，他不是黑社会嘛，你让他玩玩黑社会。现在大佬孟维参家没人去，孟维参那是大佬啊，曾红，孟维参这个熊宪民，还有华盛顿的李洪宽"
+      }
+    ],
+    "cue_profile": "origin-context-v2",
+    "cue_warning": "Excerpts may discuss other recordings; a reviewer must resolve context. No automatic type decision."
+  }
+}

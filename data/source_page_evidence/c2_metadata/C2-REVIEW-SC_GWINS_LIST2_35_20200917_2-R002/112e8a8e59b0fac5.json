@@ -1,0 +1,62 @@
+{
+  "evidence_version": "c2-metadata-evidence-v1",
+  "request_sha256": "112e8a8e59b0fac543dfef6983fb6f4b389c8b15dcdb8555fab4658589a28c7d",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_35_20200917_2-R002",
+  "source_candidate_id": "SC_GWINS_LIST2_35_20200917_2",
+  "agent_id": "agent-20261006T191534Z-d915df7b",
+  "requested_url": "https://gwins.org/cn/milesguo/14953.html",
+  "fetched_at": "2026-10-06T19:21:18.473148+00:00",
+  "review_decision": null,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "source_text_imported": false,
+  "status": "fetched",
+  "http_status": 200,
+  "final_url": "https://gwins.org/cn/milesguo/14953.html",
+  "raw_bytes": 14036,
+  "raw_sha256": "2ba49354922ba71439229e6597aa6fa8a8858f143a9b11d6b230dd29e5b52b7d",
+  "metadata_evidence": {
+    "page_title": "郭文贵2020年9月17日盖特 20200917_2会议期间与战友们乱聊一会儿",
+    "metadata": {
+      "description": "    战友们好啊，哈哈，今天你看，早上录得那个太蓝了，声音都变了，这色彩啊，这才是今天真正的西装啊。啊，你看看，今天这屋的颜色，这椅子太配了吧，太配了吧。哎呀"
+    },
+    "decoding": {
+      "codec": "utf-8",
+      "strict": false,
+      "replacement_count": 17,
+      "title_clean": true,
+      "warning": "Damaged fields are not reliable; clean excerpts only. Missing cues are not absence evidence."
+    },
+    "expected_source_video_id": "20200917_2",
+    "expected_id_visible": true,
+    "outbound_links": [
+      "https://youtu.be/VHZgGD20xDo",
+      "https://rumble.com/v58sfu9-20200917-2.html",
+      "https://gettr.com/"
+    ],
+    "identity_type_cues": [
+      {
+        "paragraph_index": 2,
+        "excerpt": "郭文贵视频"
+      },
+      {
+        "paragraph_index": 20,
+        "excerpt": "视频链接：https://youtu.be/VHZgGD20xDo"
+      },
+      {
+        "paragraph_index": 21,
+        "excerpt": "视频链接2：https://rumble.com/v58sfu9-20200917-2.html"
+      },
+      {
+        "paragraph_index": 26,
+        "excerpt": "战友们好啊，哈哈，今天你看，早上录得那个太蓝了，声音都变了，这色彩啊，这才是今天"
+      },
+      {
+        "paragraph_index": 27,
+        "excerpt": "真正的西装啊。啊，你看看，今天这屋的颜色，这椅子太配了吧，太配了吧。哎呀我从直播完开会开到现在啊，感觉这更好了，现在共产党这个流氓，发动了这个史无前例的宣传洗脑的这个宣传机器，刚刚有战友给我发信息，让我知道南华早报，苹果日报，还有台湾的几大报纸电视台，还有欧洲的像美国这种快要破产的像福克斯一样，背后"
+      }
+    ],
+    "cue_profile": "origin-context-v2",
+    "cue_warning": "Excerpts may discuss other recordings; a reviewer must resolve context. No automatic type decision."
+  }
+}

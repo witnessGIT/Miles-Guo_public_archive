@@ -1,0 +1,54 @@
+{
+  "evidence_version": "c2-metadata-evidence-v1",
+  "request_sha256": "112e8a8e59b0fac543dfef6983fb6f4b389c8b15dcdb8555fab4658589a28c7d",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_35_20200919_3-R002",
+  "source_candidate_id": "SC_GWINS_LIST2_35_20200919_3",
+  "agent_id": "agent-20261006T191534Z-d915df7b",
+  "requested_url": "https://gwins.org/cn/milesguo/16661.html",
+  "fetched_at": "2026-10-06T19:21:23.622291+00:00",
+  "review_decision": null,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "source_text_imported": false,
+  "status": "fetched",
+  "http_status": 200,
+  "final_url": "https://gwins.org/cn/milesguo/16661.html",
+  "raw_bytes": 13288,
+  "raw_sha256": "799087e95c27c8055dd07356e99804f12b4c9598c86584224572185a4849f13c",
+  "metadata_evidence": {
+    "page_title": "郭文贵2020年9月19日盖特 20200919_3尊敬的香港同胞们……你们的流血．牺牲．将迎来香港新的生命．新的时刻，一切从昨天开始！",
+    "metadata": {
+      "description": "   亲爱的兄弟姐妹们，今天刚上完战斗室节目，唉呀真是挺好，咱好哥们朱利安尼是第二档啊，第一档是我，唉呀真是太多好消息了，然后告诉我自己一定要搂住搂住搂住，搂住"
+    },
+    "decoding": {
+      "codec": "utf-8",
+      "strict": false,
+      "replacement_count": 17,
+      "title_clean": true,
+      "warning": "Damaged fields are not reliable; clean excerpts only. Missing cues are not absence evidence."
+    },
+    "expected_source_video_id": "20200919_3",
+    "expected_id_visible": true,
+    "outbound_links": [
+      "https://youtu.be/dLCOJC_uVio",
+      "https://rumble.com/v58si8d-20200919-3.html",
+      "https://gettr.com/"
+    ],
+    "identity_type_cues": [
+      {
+        "paragraph_index": 2,
+        "excerpt": "郭文贵视频"
+      },
+      {
+        "paragraph_index": 20,
+        "excerpt": "视频链接：https://youtu.be/dLCOJC_uVio"
+      },
+      {
+        "paragraph_index": 21,
+        "excerpt": "视频链接2：https://rumble.com/v58si8d-20200919-3.html"
+      }
+    ],
+    "cue_profile": "origin-context-v2",
+    "cue_warning": "Excerpts may discuss other recordings; a reviewer must resolve context. No automatic type decision."
+  }
+}
