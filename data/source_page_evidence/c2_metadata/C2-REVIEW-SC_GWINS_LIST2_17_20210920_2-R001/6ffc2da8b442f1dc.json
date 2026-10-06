@@ -1,0 +1,54 @@
+{
+  "evidence_version": "c2-metadata-evidence-v1",
+  "request_sha256": "6ffc2da8b442f1dc94ae7c7d41bdb450841b79185ed9c10d5d1aadcbbdbe89c1",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_17_20210920_2-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_17_20210920_2",
+  "agent_id": "agent-20261006T191534Z-d915df7b",
+  "requested_url": "https://gwins.org/cn/milesguo/23358.html",
+  "fetched_at": "2026-10-06T20:06:37.672250+00:00",
+  "review_decision": null,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "source_text_imported": false,
+  "status": "fetched",
+  "http_status": 200,
+  "final_url": "https://gwins.org/cn/milesguo/23358.html",
+  "raw_bytes": 11065,
+  "raw_sha256": "fb8f23185238310b3b61985d71333b94227dbb5cbab72c814d03a3bac09ef2f4",
+  "metadata_evidence": {
+    "page_title": "郭文贵2021年9月20日盖特 20210920_2尊敬的战友们好……七哥在这里向所有的全球的兄弟姐妹们请安了。你们觉得未来的新中国联邦的农场总部，这样的山脉和环境怎么样？",
+    "metadata": {
+      "description": "这是我的卧室。这地方不大，按中国的亩也就是万把亩，万把亩吧。前面有一条长长的河。我说过吧？今天早上太阳会从东方升起，照样会从东方升起；从正东方，是我床的正东方。"
+    },
+    "decoding": {
+      "codec": "utf-8",
+      "strict": false,
+      "replacement_count": 17,
+      "title_clean": true,
+      "warning": "Damaged fields are not reliable; clean excerpts only. Missing cues are not absence evidence."
+    },
+    "expected_source_video_id": "20210920_2",
+    "expected_id_visible": true,
+    "outbound_links": [
+      "https://gettr.com/post/pbqspb64cd",
+      "https://rumble.com/v59nyt9-20210920-2.html",
+      "https://gettr.com/"
+    ],
+    "identity_type_cues": [
+      {
+        "paragraph_index": 2,
+        "excerpt": "郭文贵视频"
+      },
+      {
+        "paragraph_index": 20,
+        "excerpt": "视频链接：https://gettr.com/post/pbqspb64cd"
+      },
+      {
+        "paragraph_index": 21,
+        "excerpt": "视频链接2：https://rumble.com/v59nyt9-20210920-2.html"
+      }
+    ],
+    "cue_profile": "origin-context-v2",
+    "cue_warning": "Excerpts may discuss other recordings; a reviewer must resolve context. No automatic type decision."
+  }
+}

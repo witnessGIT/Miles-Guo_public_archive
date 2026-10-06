@@ -1,0 +1,48 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_17_20210921_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_17_20210921_1",
+  "reviewed_by": "agent-20261006T191534Z-d915df7b",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-06T20:06:53Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20210921_001",
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/23357.html",
+    "https://rumble.com/v59owz1-20210921-1.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "Exact GWINS detail page 23357 contains source video ID 20210921_1 and a clean matching page title.",
+    "date": "Candidate date 2021-09-21 agrees with the source ID and detail-page title; no publication time was inferred.",
+    "title": "郭文贵2021年9月21日直播 20210921_1 2021中秋特别节目：月亮托起我们的心愿",
+    "platform_ids": {
+      "gwins_page_id": "23357",
+      "gwins_video_id": "20210921_1",
+      "rumble_ids": [
+        "v59owz1"
+      ]
+    },
+    "source_relationships": "Only exact outbound platform links exposed by the verified GWINS detail page were attached; generic homepages were excluded.",
+    "deduplication": "Exact detail/media URLs and source_video_id were checked against the active SQLite inventory built from Git at feb4fdd6a9e111b5683f44db74ba83e90dbc60f8; exact matches link an existing canonical record, otherwise a date-scoped canonical ID is created without date-only merging."
+  },
+  "evidence_artifacts": [
+    "data/source_page_evidence/c2_metadata/C2-REVIEW-SC_GWINS_LIST2_17_20210921_1-R001/6ffc2da8b442f1dc.json"
+  ],
+  "source_raw_sha256": "a349e6c7328a91e6ad98097159f4c1da7e4cd6aac4bd94258760edb5d07365e0",
+  "limitations": [
+    "Public HTML metadata and outbound links only; linked media was not opened or played.",
+    "No media download, ASR, transcript import, timing transfer, segmentation, or content-truth judgment."
+  ],
+  "canonical_promotion_performed": true,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}

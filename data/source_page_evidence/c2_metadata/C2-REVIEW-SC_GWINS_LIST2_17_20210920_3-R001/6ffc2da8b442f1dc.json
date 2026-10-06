@@ -1,0 +1,54 @@
+{
+  "evidence_version": "c2-metadata-evidence-v1",
+  "request_sha256": "6ffc2da8b442f1dc94ae7c7d41bdb450841b79185ed9c10d5d1aadcbbdbe89c1",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_17_20210920_3-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_17_20210920_3",
+  "agent_id": "agent-20261006T191534Z-d915df7b",
+  "requested_url": "https://gwins.org/cn/milesguo/23359.html",
+  "fetched_at": "2026-10-06T20:06:38.910714+00:00",
+  "review_decision": null,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "source_text_imported": false,
+  "status": "fetched",
+  "http_status": 200,
+  "final_url": "https://gwins.org/cn/milesguo/23359.html",
+  "raw_bytes": 12391,
+  "raw_sha256": "589bb0c7f95d9c24ca468bdfc428647bf540b49cd7034211abea2e72a91cc9eb",
+  "metadata_evidence": {
+    "page_title": "郭文贵2021年9月20日盖特 20210920_3与战友分享大自然神奇……无法解释的这种自然现象，我深信这所有的美丽都是人心，和历史，和人的行为，和上天对这里的人们的一切的裁判．给予的结果，才能有这样的自然的神奇，这种人工",
+    "metadata": {
+      "description": "Snow～天呐，你还找高地儿去呐？天呐，天呐，Snow你可真会装狮子啊。看看这个，看看这个 — 这蓝天、白云、山脉！牛了牛了，看到「远处」山上黄色的树了吗？那是我最喜欢的，"
+    },
+    "decoding": {
+      "codec": "utf-8",
+      "strict": false,
+      "replacement_count": 17,
+      "title_clean": true,
+      "warning": "Damaged fields are not reliable; clean excerpts only. Missing cues are not absence evidence."
+    },
+    "expected_source_video_id": "20210920_3",
+    "expected_id_visible": true,
+    "outbound_links": [
+      "https://gettr.com/post/pbp9zq1fa1",
+      "https://rumble.com/v59nyu9-20210920-3.html",
+      "https://gettr.com/"
+    ],
+    "identity_type_cues": [
+      {
+        "paragraph_index": 2,
+        "excerpt": "郭文贵视频"
+      },
+      {
+        "paragraph_index": 20,
+        "excerpt": "视频链接：https://gettr.com/post/pbp9zq1fa1"
+      },
+      {
+        "paragraph_index": 21,
+        "excerpt": "视频链接2：https://rumble.com/v59nyu9-20210920-3.html"
+      }
+    ],
+    "cue_profile": "origin-context-v2",
+    "cue_warning": "Excerpts may discuss other recordings; a reviewer must resolve context. No automatic type decision."
+  }
+}

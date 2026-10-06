@@ -1,0 +1,62 @@
+{
+  "evidence_version": "c2-metadata-evidence-v1",
+  "request_sha256": "6ffc2da8b442f1dc94ae7c7d41bdb450841b79185ed9c10d5d1aadcbbdbe89c1",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_17_20210925_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_17_20210925_1",
+  "agent_id": "agent-20261006T191534Z-d915df7b",
+  "requested_url": "https://gwins.org/cn/milesguo/23371.html",
+  "fetched_at": "2026-10-06T20:06:45.310559+00:00",
+  "review_decision": null,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "source_text_imported": false,
+  "status": "fetched",
+  "http_status": 200,
+  "final_url": "https://gwins.org/cn/milesguo/23371.html",
+  "raw_bytes": 17616,
+  "raw_sha256": "316a7486c2760181d4ebab2d2282c899376b4ff7d0ebf42a26600da3ba478e35",
+  "metadata_evidence": {
+    "page_title": "郭文贵2021年9月25日盖特 20210925_1尊敬的战友们好，在这里简单地回答一下，很多战友发给我，关于孟晩回囯的看法……还有国内粮食危机的一些问题，一切都已经开始。",
+    "metadata": {
+      "description": "9月25号，尊敬的战友们好。7哥说孟晚舟回中国她就真回了，啊，兄弟姐妹们？然后一片沸腾！但网络上评论被关了，不让评论，这是啥子情况呢？很多人问7哥怎么看这个问题，7哥今"
+    },
+    "decoding": {
+      "codec": "utf-8",
+      "strict": false,
+      "replacement_count": 17,
+      "title_clean": true,
+      "warning": "Damaged fields are not reliable; clean excerpts only. Missing cues are not absence evidence."
+    },
+    "expected_source_video_id": "20210925_1",
+    "expected_id_visible": true,
+    "outbound_links": [
+      "https://gettr.com/post/pc75jfe75d",
+      "https://rumble.com/v59p3a5-20210925-1.html",
+      "https://gettr.com/"
+    ],
+    "identity_type_cues": [
+      {
+        "paragraph_index": 2,
+        "excerpt": "郭文贵视频"
+      },
+      {
+        "paragraph_index": 20,
+        "excerpt": "视频链接：https://gettr.com/post/pc75jfe75d"
+      },
+      {
+        "paragraph_index": 21,
+        "excerpt": "视频链接2：https://rumble.com/v59p3a5-20210925-1.html"
+      },
+      {
+        "paragraph_index": 26,
+        "excerpt": "弟姐妹们？然后一片沸腾！但网络上评论被关了，不让评论，这是啥子情况呢？很多人问7哥怎么看这个问题，7哥今天就不在这说了，明天我们大直播，纽约上午时间10点到10点半开始，大陆时间晚上10点，比较晚了，抱歉了兄弟姐妹们。咱们好好聊聊所谓的孟晚舟事件和孟晚舟事件的背后的交易的故事。7哥将有不同的观点和不同的情报跟大家分享，到时候大家看看咋回事儿。哈哈，很有"
+      },
+      {
+        "paragraph_index": 27,
+        "excerpt": "我刚刚在录这个视频之前，我看到国内战友们给我发了信息，很有意思。所以人呢，我还是那句话，认知和脑子里装着什么基本上决定你这个人的行为结果将会发生什么。这是那么重要。为什么信息、媒体、网络那么重要呢？它最终导致你行为的结果和对事情和事物认知"
+      }
+    ],
+    "cue_profile": "origin-context-v2",
+    "cue_warning": "Excerpts may discuss other recordings; a reviewer must resolve context. No automatic type decision."
+  }
+}
