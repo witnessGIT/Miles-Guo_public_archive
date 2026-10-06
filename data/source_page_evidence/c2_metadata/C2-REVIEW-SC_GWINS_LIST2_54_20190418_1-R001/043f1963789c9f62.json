@@ -1,0 +1,32 @@
+{
+  "evidence_version": "c2-metadata-evidence-v1",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_54_20190418_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_54_20190418_1",
+  "agent_id": "agent-20261006T191410Z-7c0f48fc",
+  "requested_url": "https://www.gwins.org/cn/milesguo/302.html",
+  "fetched_at": "2026-10-06T19:55:44.479550+00:00",
+  "status": "fetched",
+  "http_status": 200,
+  "final_url": "https://www.gwins.org/cn/milesguo/302.html",
+  "raw_bytes": 35817,
+  "raw_sha256": "421a88f6ee27942667398fad7f978f838d91bc8e515b6fc32a6728df02f5c836",
+  "metadata_evidence": {
+    "page_title": "郭文贵2019年4月18日视频 20190418_1一个难忘的日子……2017年与VOA龚小夏女士．东方先生……在我家的釆访！断播二周年．文贵回顾这两年来爆料的一些人和事……一切都是刚刚开始",
+    "metadata": {
+      "description": "尊敬的战友们好，今天是2019年4月19号，这日子读起来比较沉重，4月19号。本来准备好，我说4月19号这个大日子，咱做点大节目，后来考虑各个方面，咱不要激动，不要被什么日子影响，"
+    },
+    "expected_source_video_id": "20190418_1",
+    "expected_id_visible": true,
+    "outbound_links": [
+      "https://youtu.be/Oe22Ocs1qrU",
+      "https://rumble.com/v57krsa-20190418-1.html",
+      "https://gettr.com/"
+    ],
+    "decoding": {
+      "codec": "utf-8",
+      "strict": false,
+      "replacement_count": 17,
+      "warning": "Metadata-only bounded HTML capture; damaged fields are not used as exclusive evidence."
+    }
+  }
+}

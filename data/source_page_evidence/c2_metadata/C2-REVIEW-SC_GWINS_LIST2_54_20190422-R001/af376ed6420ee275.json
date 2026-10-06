@@ -1,0 +1,32 @@
+{
+  "evidence_version": "c2-metadata-evidence-v1",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_54_20190422-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_54_20190422",
+  "agent_id": "agent-20261006T191410Z-7c0f48fc",
+  "requested_url": "https://www.gwins.org/cn/milesguo/21990.html",
+  "fetched_at": "2026-10-06T19:55:44.479550+00:00",
+  "status": "fetched",
+  "http_status": 200,
+  "final_url": "https://www.gwins.org/cn/milesguo/21990.html",
+  "raw_bytes": 10713,
+  "raw_sha256": "fbc2532988d5c48d07ec41f727ed4e4cbf86348a8da5bfa3578d5a254af8a489",
+  "metadata_evidence": {
+    "page_title": "郭文贵2019年4月22日视频 20190422_2半小时后，纽约时间上午1000北京时间晚上1000．文贵直播报平安．谈谈对伊朗石油的制裁意味着什么？和盗国贼有什么关系",
+    "metadata": {
+      "description": "以下是茅屎坑战友没校对前的内容。  睡觉在说好啊，等一会儿啊，再就是20分钟以后，我们一会儿在过媒体师傅，你战友要求谈谈这个。伊朗石油制裁意味着什么？4月22号报平"
+    },
+    "expected_source_video_id": "20190422",
+    "expected_id_visible": true,
+    "outbound_links": [
+      "https://odysee.com/@laxi:4/20190422_2:e",
+      "https://rumble.com/v57kt1h-20190422-2.html",
+      "https://gettr.com/"
+    ],
+    "decoding": {
+      "codec": "utf-8",
+      "strict": false,
+      "replacement_count": 17,
+      "warning": "Metadata-only bounded HTML capture; damaged fields are not used as exclusive evidence."
+    }
+  }
+}

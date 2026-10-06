@@ -1,0 +1,49 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_56_20190117_2-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_56_20190117_2",
+  "reviewed_by": "agent-20261006T191410Z-7c0f48fc",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-06T19:55:44.479550+00:00",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20190117_002",
+  "evidence_urls": [
+    "https://www.gwins.org/cn/milesguo/list_2_56.html",
+    "https://www.gwins.org/cn/milesguo/254.html",
+    "https://youtu.be/dodjLKdrL9E",
+    "https://rumble.com/v57hjw3-20190117-2.html",
+    "https://gettr.com/"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS metadata binds source candidate SC_GWINS_LIST2_56_20190117_2 to source_video_id 20190117_2.",
+    "date": "Candidate date 2019-01-17 agrees with the source id/date metadata available for this item.",
+    "title": "郭文贵2019年1月17日第二次直播 20190117_2尊敬的战友们好，你们健身了吗！文贵向你们报告出席华盛顿一系列的活动和几个重大的采访",
+    "platform_ids": {
+      "gwins_page_id": "254",
+      "gwins_video_id": "20190117_2",
+      "youtube_id": "dodjLKdrL9E",
+      "rumble_id": "v57hjw3-20190117-2"
+    },
+    "source_relationships": "Public GWINS HTML metadata and outbound source links were captured without downloading or playing media.",
+    "deduplication": "Reviewed inside the fixed claimed batch and current repository state; promoted only when item title/context clearly identified an original livestream."
+  },
+  "evidence_artifacts": [
+    "data/source_page_evidence/c2_metadata/C2-REVIEW-SC_GWINS_LIST2_56_20190117_2-R001/87a8ddf756830c15.json"
+  ],
+  "source_raw_sha256": "57319d3004a4f29d7ece9961db8a308daa336749b0ffac6144ea573b99543320",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": true,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}

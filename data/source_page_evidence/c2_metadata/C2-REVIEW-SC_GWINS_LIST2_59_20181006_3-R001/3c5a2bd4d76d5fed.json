@@ -1,0 +1,32 @@
+{
+  "evidence_version": "c2-metadata-evidence-v1",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_59_20181006_3-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_59_20181006_3",
+  "agent_id": "agent-20261006T191410Z-7c0f48fc",
+  "requested_url": "https://www.gwins.org/cn/milesguo/21873.html",
+  "fetched_at": "2026-10-06T19:55:44.479550+00:00",
+  "status": "fetched",
+  "http_status": 200,
+  "final_url": "https://www.gwins.org/cn/milesguo/21873.html",
+  "raw_bytes": 9831,
+  "raw_sha256": "bd39bffbf3247b4c4fa046ecf1c100a662dabbb08f835e6c7c22c2b54dbfbe71",
+  "metadata_evidence": {
+    "page_title": "郭文贵2018年10月6日视频 20181006_3",
+    "metadata": {
+      "description": "以下是茅屎坑战友没校对前的内容。  那你晚上去。5000万大奖。"
+    },
+    "expected_source_video_id": "20181006_3",
+    "expected_id_visible": true,
+    "outbound_links": [
+      "https://youtu.be/qVLNsBDaSdI",
+      "https://rumble.com/v57giwx-20181006-3.html",
+      "https://gettr.com/"
+    ],
+    "decoding": {
+      "codec": "utf-8",
+      "strict": false,
+      "replacement_count": 17,
+      "warning": "Metadata-only bounded HTML capture; damaged fields are not used as exclusive evidence."
+    }
+  }
+}

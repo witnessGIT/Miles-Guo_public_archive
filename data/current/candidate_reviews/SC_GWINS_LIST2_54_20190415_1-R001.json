@@ -1,0 +1,49 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_54_20190415_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_54_20190415_1",
+  "reviewed_by": "agent-20261006T191410Z-7c0f48fc",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-06T19:55:44.479550+00:00",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20190415_001",
+  "evidence_urls": [
+    "https://www.gwins.org/cn/milesguo/list_2_54.html",
+    "https://www.gwins.org/cn/milesguo/300.html",
+    "https://www.youtube.com/watch?v=krSH2rDTPZ4",
+    "https://rumble.com/v57kjkt-20190415-1.html",
+    "https://gettr.com/"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS metadata binds source candidate SC_GWINS_LIST2_54_20190415_1 to source_video_id 20190415_1.",
+    "date": "Candidate date 2019-04-15 agrees with the source id/date metadata available for this item.",
+    "title": "郭文贵2019年4月15日第一次直播 20190415_1下午三点！显摆一下新＂汉挂子＂新衣服．向战友报告一点刚刚的神秘会议！一切都是刚刚开始！",
+    "platform_ids": {
+      "gwins_page_id": "300",
+      "gwins_video_id": "20190415_1",
+      "youtube_id": "krSH2rDTPZ4",
+      "rumble_id": "v57kjkt-20190415-1"
+    },
+    "source_relationships": "Public GWINS HTML metadata and outbound source links were captured without downloading or playing media.",
+    "deduplication": "Reviewed inside the fixed claimed batch and current repository state; promoted only when item title/context clearly identified an original livestream."
+  },
+  "evidence_artifacts": [
+    "data/source_page_evidence/c2_metadata/C2-REVIEW-SC_GWINS_LIST2_54_20190415_1-R001/fab2bb4474d3e17e.json"
+  ],
+  "source_raw_sha256": "a9908731e6e079739c11556a15dc6d9077cfde0089ac5c62fe3da7de136bb3f3",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": true,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}

@@ -1,0 +1,32 @@
+{
+  "evidence_version": "c2-metadata-evidence-v1",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_54_20190415_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_54_20190415_1",
+  "agent_id": "agent-20261006T191410Z-7c0f48fc",
+  "requested_url": "https://www.gwins.org/cn/milesguo/300.html",
+  "fetched_at": "2026-10-06T19:55:44.479550+00:00",
+  "status": "fetched",
+  "http_status": 200,
+  "final_url": "https://www.gwins.org/cn/milesguo/300.html",
+  "raw_bytes": 12597,
+  "raw_sha256": "a9908731e6e079739c11556a15dc6d9077cfde0089ac5c62fe3da7de136bb3f3",
+  "metadata_evidence": {
+    "page_title": "郭文贵2019年4月15日第一次直播 20190415_1下午三点！显摆一下新＂汉挂子＂新衣服．向战友报告一点刚刚的神秘会议！一切都是刚刚开始！",
+    "metadata": {
+      "description": "战友们好啊，看我今天穿啥啊？看看，嗯，咔、咔、咔啊，这个是，看看啊，这个是新款的（如爱课文）（英语）和（口木哈的）（英语）。这是刚刚的态度和事实。我发现好多的衣服"
+    },
+    "expected_source_video_id": "20190415_1",
+    "expected_id_visible": true,
+    "outbound_links": [
+      "https://www.youtube.com/watch?v=krSH2rDTPZ4",
+      "https://rumble.com/v57kjkt-20190415-1.html",
+      "https://gettr.com/"
+    ],
+    "decoding": {
+      "codec": "utf-8",
+      "strict": false,
+      "replacement_count": 17,
+      "warning": "Metadata-only bounded HTML capture; damaged fields are not used as exclusive evidence."
+    }
+  }
+}

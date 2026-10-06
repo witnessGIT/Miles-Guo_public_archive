@@ -1,0 +1,32 @@
+{
+  "evidence_version": "c2-metadata-evidence-v1",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_54_20190420-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_54_20190420",
+  "agent_id": "agent-20261006T191410Z-7c0f48fc",
+  "requested_url": "https://www.gwins.org/cn/milesguo/303.html",
+  "fetched_at": "2026-10-06T19:55:44.479550+00:00",
+  "status": "fetched",
+  "http_status": 200,
+  "final_url": "https://www.gwins.org/cn/milesguo/303.html",
+  "raw_bytes": 76888,
+  "raw_sha256": "3bb080c291af591351a974c5e730bfdc6269e7559077b0447d91a6cfd01d1386",
+  "metadata_evidence": {
+    "page_title": "郭文贵2019年4月20日视频 20190420班农先生与文贵谈郭台铭选台湾总统 : Steve Bannon and Miles Guo, a dialogue on Terry Gou’s presidential bid",
+    "metadata": {
+      "description": "郭文贵先生：是和中国大陆建了最多的厂，而且和台湾人民的利益，台湾人民的政治各种关系错综复杂，他是唯一一个链接美，中，台最重要的商人。而且与刚刚发生的华为事件，还有"
+    },
+    "expected_source_video_id": "20190420",
+    "expected_id_visible": true,
+    "outbound_links": [
+      "https://odysee.com/@laxi:4/20190420:9",
+      "https://rumble.com/v57ksw9-20190420.html",
+      "https://gettr.com/"
+    ],
+    "decoding": {
+      "codec": "utf-8",
+      "strict": false,
+      "replacement_count": 17,
+      "warning": "Metadata-only bounded HTML capture; damaged fields are not used as exclusive evidence."
+    }
+  }
+}

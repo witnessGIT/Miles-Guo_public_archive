@@ -1,0 +1,32 @@
+{
+  "evidence_version": "c2-metadata-evidence-v1",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_53_20190504-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_53_20190504",
+  "agent_id": "agent-20261006T191410Z-7c0f48fc",
+  "requested_url": "https://www.gwins.org/cn/milesguo/313.html",
+  "fetched_at": "2026-10-06T19:55:44.479550+00:00",
+  "status": "fetched",
+  "http_status": 200,
+  "final_url": "https://www.gwins.org/cn/milesguo/313.html",
+  "raw_bytes": 226309,
+  "raw_sha256": "6bddb5d0705a2b342397a606948157783fbdb65591d5af9717a21230f6ebe8b7",
+  "metadata_evidence": {
+    "page_title": "郭文贵2019年5月4日视频 20190504小夏与文贵谈四一九VOA断播背后的真相",
+    "metadata": {
+      "description": "郭文贵先生: 尊敬的战友们好，今天是5月4号，现在文贵在纽约和我们好朋友小夏女士，一起在这里给大家直播。小夏文贵聊天谈谈2017年4月19号发生的那个历史性的事件，也就是当"
+    },
+    "expected_source_video_id": "20190504",
+    "expected_id_visible": true,
+    "outbound_links": [
+      "https://odysee.com/@laxi:4/20190504:3",
+      "https://rumble.com/v57kytx-20190504.html",
+      "https://gettr.com/"
+    ],
+    "decoding": {
+      "codec": "utf-8",
+      "strict": false,
+      "replacement_count": 17,
+      "warning": "Metadata-only bounded HTML capture; damaged fields are not used as exclusive evidence."
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "evidence_version": "c2-metadata-evidence-v1",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_58_20181031-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_58_20181031",
+  "agent_id": "agent-20261006T191410Z-7c0f48fc",
+  "requested_url": "https://www.gwins.org/cn/milesguo/224.html",
+  "fetched_at": "2026-10-06T19:55:44.479550+00:00",
+  "status": "fetched",
+  "http_status": 200,
+  "final_url": "https://www.gwins.org/cn/milesguo/224.html",
+  "raw_bytes": 31242,
+  "raw_sha256": "847e0de32f8a8d151843b538e745003b3c18ff60ee84fe75484c5de1b7fee8a3",
+  "metadata_evidence": {
+    "page_title": "郭文贵2018年10月31日视频 20181031在华盛顿直播 关于今天参加反共大联盟会议的详情和报告 世界正在巨变！",
+    "metadata": {
+      "description": "尊敬的战友们好，今天是10月31日，文贵在美国华盛顿白宫的后面的叫 海伊亚当斯酒店（Hay-Adams），“Adams是一个美国的国务卿，他曾是里根总统的助理，是美国的国务卿，是他打开"
+    },
+    "expected_source_video_id": "20181031",
+    "expected_id_visible": true,
+    "outbound_links": [
+      "https://odysee.com/@laxi:4/20181031:d",
+      "https://rumble.com/v57gq0x-20181031.html",
+      "https://gettr.com/"
+    ],
+    "decoding": {
+      "codec": "utf-8",
+      "strict": false,
+      "replacement_count": 17,
+      "warning": "Metadata-only bounded HTML capture; damaged fields are not used as exclusive evidence."
+    }
+  }
+}

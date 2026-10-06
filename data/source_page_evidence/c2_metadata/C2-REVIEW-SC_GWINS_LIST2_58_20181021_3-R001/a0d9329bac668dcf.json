@@ -1,0 +1,32 @@
+{
+  "evidence_version": "c2-metadata-evidence-v1",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_58_20181021_3-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_58_20181021_3",
+  "agent_id": "agent-20261006T191410Z-7c0f48fc",
+  "requested_url": "https://www.gwins.org/cn/milesguo/23642.html",
+  "fetched_at": "2026-10-06T19:55:44.479550+00:00",
+  "status": "fetched",
+  "http_status": 200,
+  "final_url": "https://www.gwins.org/cn/milesguo/23642.html",
+  "raw_bytes": 11095,
+  "raw_sha256": "b6c4b2c11c03cfcdfbc6daba45f108d3ac6a24543bda23c079cdcf9d89c030f8",
+  "metadata_evidence": {
+    "page_title": "郭文贵2018年10月21日 20181021_3澳門鄭曉松的被殺是因為孟宏偉 這是又一次的黑吃黑 3",
+    "metadata": {
+      "description": "这二个循环，把绝大数以贪反贪的财富和权利聚集到某几个家族，然后把权利全部私有化，把财富，所谓的公有化，就是他代表的那个权利，私有化的权利给他拿走。 所以"
+    },
+    "expected_source_video_id": "20181021_3",
+    "expected_id_visible": true,
+    "outbound_links": [
+      "https://youtu.be/xtlA9xH6A9g",
+      "https://rumble.com/v57gnos-20181021-3.html",
+      "https://gettr.com/"
+    ],
+    "decoding": {
+      "codec": "utf-8",
+      "strict": false,
+      "replacement_count": 17,
+      "warning": "Metadata-only bounded HTML capture; damaged fields are not used as exclusive evidence."
+    }
+  }
+}

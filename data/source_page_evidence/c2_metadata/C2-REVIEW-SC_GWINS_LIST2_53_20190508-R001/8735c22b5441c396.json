@@ -1,0 +1,32 @@
+{
+  "evidence_version": "c2-metadata-evidence-v1",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_53_20190508-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_53_20190508",
+  "agent_id": "agent-20261006T191410Z-7c0f48fc",
+  "requested_url": "https://www.gwins.org/cn/milesguo/317.html",
+  "fetched_at": "2026-10-06T19:55:44.479550+00:00",
+  "status": "fetched",
+  "http_status": 200,
+  "final_url": "https://www.gwins.org/cn/milesguo/317.html",
+  "raw_bytes": 28050,
+  "raw_sha256": "d7e5c0cb1904c247e4f98341213e04e9dd7be93e795024fd2ff753d5a7b47d08",
+  "metadata_evidence": {
+    "page_title": "郭文贵2019年5月8日视频 20190508尊敬的战友们好，你们健身了吗？文贵聊聊．为什么中方要求美方不能公开中美的贸易协议内容！为什么文贵的梦语．郭九条．在国内引起了巨大的反响！一切都是刚刚开始！",
+    "metadata": {
+      "description": "尊敬的战友们好啊！今天是5月8号，我得蹦两下，我得蹦两下。 5月8号，尊敬的战友们好！你们健身了吗？你们往身上泼水了吗？咱们这个健身啊，千万不能耽误了啊，这是特别特"
+    },
+    "expected_source_video_id": "20190508",
+    "expected_id_visible": true,
+    "outbound_links": [
+      "https://youtu.be/uDV1AjSpcDs",
+      "https://rumble.com/v57l73x-20190508.html",
+      "https://gettr.com/"
+    ],
+    "decoding": {
+      "codec": "utf-8",
+      "strict": false,
+      "replacement_count": 17,
+      "warning": "Metadata-only bounded HTML capture; damaged fields are not used as exclusive evidence."
+    }
+  }
+}

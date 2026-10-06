@@ -1,0 +1,44 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_52_20190528-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_52_20190528",
+  "reviewed_by": "agent-20261006T191410Z-7c0f48fc",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-06T19:55:44.479550+00:00",
+  "decision": "rejected_not_target",
+  "canonical_live_id": null,
+  "evidence_urls": [
+    "https://www.gwins.org/cn/milesguo/list_2_52.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS index candidate SC_GWINS_LIST2_52_20190528 remained bounded to its natural list source; no detail page was used for promotion.",
+    "date": "Candidate date 2019-05-28 agrees with the source id/date metadata available for this item.",
+    "title": "郭文贵2019年5月28日视频 20190528",
+    "platform_ids": {
+      "gwins_page_id": null,
+      "gwins_video_id": "20190528"
+    },
+    "source_relationships": "Only public GWINS index metadata was available; no media inference was made.",
+    "deduplication": "Rejected from canonical live promotion to avoid weak title-only or video-only merges."
+  },
+  "evidence_artifacts": [
+    "data/source_page_evidence/c2_metadata/C2-REVIEW-SC_GWINS_LIST2_52_20190528-R001/b688a19154f568c4.json"
+  ],
+  "source_raw_sha256": null,
+  "limitations": [
+    "No playback, media download, transcription, segmentation, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false,
+  "rejection_reason": "The exact GWINS title and current-item context identify a standalone recorded video/update rather than a clear original livestream."
+}

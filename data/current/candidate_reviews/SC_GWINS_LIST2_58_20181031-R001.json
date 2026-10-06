@@ -1,0 +1,49 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_58_20181031-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_58_20181031",
+  "reviewed_by": "agent-20261006T191410Z-7c0f48fc",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-06T19:55:44.479550+00:00",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20181031_001",
+  "evidence_urls": [
+    "https://www.gwins.org/cn/milesguo/list_2_58.html",
+    "https://www.gwins.org/cn/milesguo/224.html",
+    "https://odysee.com/@laxi:4/20181031:d",
+    "https://rumble.com/v57gq0x-20181031.html",
+    "https://gettr.com/"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS metadata binds source candidate SC_GWINS_LIST2_58_20181031 to source_video_id 20181031.",
+    "date": "Candidate date 2018-10-31 agrees with the source id/date metadata available for this item.",
+    "title": "郭文贵2018年10月31日视频 20181031在华盛顿直播 关于今天参加反共大联盟会议的详情和报告 世界正在巨变！",
+    "platform_ids": {
+      "gwins_page_id": "224",
+      "gwins_video_id": "20181031",
+      "odysee_id": "@laxi:4/20181031:d",
+      "rumble_id": "v57gq0x-20181031"
+    },
+    "source_relationships": "Public GWINS HTML metadata and outbound source links were captured without downloading or playing media.",
+    "deduplication": "Reviewed inside the fixed claimed batch and current repository state; promoted only when item title/context clearly identified an original livestream."
+  },
+  "evidence_artifacts": [
+    "data/source_page_evidence/c2_metadata/C2-REVIEW-SC_GWINS_LIST2_58_20181031-R001/38a47f967be2926d.json"
+  ],
+  "source_raw_sha256": "847e0de32f8a8d151843b538e745003b3c18ff60ee84fe75484c5de1b7fee8a3",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": true,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}

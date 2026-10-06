@@ -1,0 +1,32 @@
+{
+  "evidence_version": "c2-metadata-evidence-v1",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_56_20190117_2-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_56_20190117_2",
+  "agent_id": "agent-20261006T191410Z-7c0f48fc",
+  "requested_url": "https://www.gwins.org/cn/milesguo/254.html",
+  "fetched_at": "2026-10-06T19:55:44.479550+00:00",
+  "status": "fetched",
+  "http_status": 200,
+  "final_url": "https://www.gwins.org/cn/milesguo/254.html",
+  "raw_bytes": 14475,
+  "raw_sha256": "57319d3004a4f29d7ece9961db8a308daa336749b0ffac6144ea573b99543320",
+  "metadata_evidence": {
+    "page_title": "郭文贵2019年1月17日第二次直播 20190117_2尊敬的战友们好，你们健身了吗！文贵向你们报告出席华盛顿一系列的活动和几个重大的采访",
+    "metadata": {
+      "description": "尊敬的战友们好！今天是1月17号你们健身了吗？  咱们这个爆料革命，现在真是到了一个日月秒分都在巨大的变化中。我这真的是浇水呀，因为我还没有运动呢！刚洗了脸。真"
+    },
+    "expected_source_video_id": "20190117_2",
+    "expected_id_visible": true,
+    "outbound_links": [
+      "https://youtu.be/dodjLKdrL9E",
+      "https://rumble.com/v57hjw3-20190117-2.html",
+      "https://gettr.com/"
+    ],
+    "decoding": {
+      "codec": "utf-8",
+      "strict": false,
+      "replacement_count": 17,
+      "warning": "Metadata-only bounded HTML capture; damaged fields are not used as exclusive evidence."
+    }
+  }
+}

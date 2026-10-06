@@ -1,0 +1,32 @@
+{
+  "evidence_version": "c2-metadata-evidence-v1",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_58_20181021_2-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_58_20181021_2",
+  "agent_id": "agent-20261006T191410Z-7c0f48fc",
+  "requested_url": "https://www.gwins.org/cn/milesguo/23641.html",
+  "fetched_at": "2026-10-06T19:55:44.479550+00:00",
+  "status": "fetched",
+  "http_status": 200,
+  "final_url": "https://www.gwins.org/cn/milesguo/23641.html",
+  "raw_bytes": 12857,
+  "raw_sha256": "7ea3256e7da521dc133af7d56b0a91d8414672da59ddca875f00acbc4138095b",
+  "metadata_evidence": {
+    "page_title": "郭文贵2018年10月21日 20181021_2澳門鄭曉松的被殺是因為孟宏偉 這是又一次的黑吃黑 2",
+    "metadata": {
+      "description": "2:35共产党是把绝大数以贪反贪的财富和权力聚集到某几个家族，把权力全部私有化，把财富所谓的公有化，所有过去五年抓人的人都将被抓，大家拭目以待。 Snow，你在干"
+    },
+    "expected_source_video_id": "20181021_2",
+    "expected_id_visible": true,
+    "outbound_links": [
+      "https://youtu.be/AP-qBvdjFos",
+      "https://rumble.com/v57gnlp-20181021-2.html",
+      "https://gettr.com/"
+    ],
+    "decoding": {
+      "codec": "utf-8",
+      "strict": false,
+      "replacement_count": 17,
+      "warning": "Metadata-only bounded HTML capture; damaged fields are not used as exclusive evidence."
+    }
+  }
+}

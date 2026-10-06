@@ -1,0 +1,32 @@
+{
+  "evidence_version": "c2-metadata-evidence-v1",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_57_20181223_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_57_20181223_1",
+  "agent_id": "agent-20261006T191410Z-7c0f48fc",
+  "requested_url": "https://www.gwins.org/cn/milesguo/21931.html",
+  "fetched_at": "2026-10-06T19:55:44.479550+00:00",
+  "status": "fetched",
+  "http_status": 200,
+  "final_url": "https://www.gwins.org/cn/milesguo/21931.html",
+  "raw_bytes": 11399,
+  "raw_sha256": "0553c2a1b19ae3a11c4f239ecd653434f578483955ab01c57bd163da04904c6c",
+  "metadata_evidence": {
+    "page_title": "郭文贵2018年12月23日视频 20181223_1我们这两天加班，完成了对Sam Nunberg 和吴征的重新起诉，索赔，这是个大事！媒体高度关注！",
+    "metadata": {
+      "description": "以下是茅屎坑战友没校对前的内容。  最近在干什么？你们好，12月22号你们见面了吗？今年9月阳光明媚。哎呀，整个美国都是到处充满了圣诞的气氛，纽约的圣诞树，到时候现"
+    },
+    "expected_source_video_id": "20181223_1",
+    "expected_id_visible": true,
+    "outbound_links": [
+      "https://odysee.com/@laxi:4/20181223_1:9",
+      "https://rumble.com/v57h7wq-20181223-1.html",
+      "https://gettr.com/"
+    ],
+    "decoding": {
+      "codec": "utf-8",
+      "strict": false,
+      "replacement_count": 17,
+      "warning": "Metadata-only bounded HTML capture; damaged fields are not used as exclusive evidence."
+    }
+  }
+}

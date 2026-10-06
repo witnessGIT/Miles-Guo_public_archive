@@ -1,0 +1,50 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_57_20181224_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_57_20181224_1",
+  "reviewed_by": "agent-20261006T191410Z-7c0f48fc",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-06T19:55:44.479550+00:00",
+  "decision": "rejected_not_target",
+  "canonical_live_id": null,
+  "evidence_urls": [
+    "https://www.gwins.org/cn/milesguo/list_2_57.html",
+    "https://www.gwins.org/cn/milesguo/21932.html",
+    "https://odysee.com/@laxi:4/20181224_1:1",
+    "https://rumble.com/v57h7z8-20181224-1.html",
+    "https://gettr.com/"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS metadata binds source candidate SC_GWINS_LIST2_57_20181224_1 to source_video_id 20181224_1.",
+    "date": "Candidate date 2018-12-24 agrees with the source id/date metadata available for this item.",
+    "title": "郭文贵2018年12月24日视频 20181224_1文贵衷心祝愿所有的伟大的战友及家人！14亿同胞！全世界的人们圣诞快乐",
+    "platform_ids": {
+      "gwins_page_id": "21932",
+      "gwins_video_id": "20181224_1",
+      "odysee_id": "@laxi:4/20181224_1:1",
+      "rumble_id": "v57h7z8-20181224-1"
+    },
+    "source_relationships": "Public GWINS HTML metadata and outbound source links were captured without downloading or playing media.",
+    "deduplication": "Rejected from canonical live promotion to avoid weak title-only or video-only merges."
+  },
+  "evidence_artifacts": [
+    "data/source_page_evidence/c2_metadata/C2-REVIEW-SC_GWINS_LIST2_57_20181224_1-R001/0ae053b459f1185c.json"
+  ],
+  "source_raw_sha256": "af36f33da236f07b714b4dd4ce2beae9d44a9a325c67bd6ea8314f66fa743134",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false,
+  "rejection_reason": "The exact GWINS title and current-item context identify a standalone recorded video/update rather than a clear original livestream."
+}

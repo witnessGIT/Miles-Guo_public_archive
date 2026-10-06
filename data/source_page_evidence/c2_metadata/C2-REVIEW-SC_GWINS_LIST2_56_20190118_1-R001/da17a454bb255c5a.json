@@ -1,0 +1,32 @@
+{
+  "evidence_version": "c2-metadata-evidence-v1",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_56_20190118_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_56_20190118_1",
+  "agent_id": "agent-20261006T191410Z-7c0f48fc",
+  "requested_url": "https://www.gwins.org/cn/milesguo/256.html",
+  "fetched_at": "2026-10-06T19:55:44.479550+00:00",
+  "status": "fetched",
+  "http_status": 200,
+  "final_url": "https://www.gwins.org/cn/milesguo/256.html",
+  "raw_bytes": 25724,
+  "raw_sha256": "0de054ed83cc77471a0e01d7e60f6611d8a31d42b6eca7d8c1be4c7d0941e721",
+  "metadata_evidence": {
+    "page_title": "郭文贵2019年1月18日第一次直播 20190118_1告诉大家赚几千亿美元的秘诀",
+    "metadata": {
+      "description": "这么多人啊！这 没预告啊！突然袭击啊！又来骚扰你们来啊！ 亲爱的战友们好！今天是1月几号？对1月17号。文贵从早上工作到现在，这个采访，开会，稀里哗啦一整天！丰富的，"
+    },
+    "expected_source_video_id": "20190118_1",
+    "expected_id_visible": true,
+    "outbound_links": [
+      "https://odysee.com/@laxi:4/20190118_1:d",
+      "https://rumble.com/v57hk0t-20190118-1.html",
+      "https://gettr.com/"
+    ],
+    "decoding": {
+      "codec": "utf-8",
+      "strict": false,
+      "replacement_count": 17,
+      "warning": "Metadata-only bounded HTML capture; damaged fields are not used as exclusive evidence."
+    }
+  }
+}

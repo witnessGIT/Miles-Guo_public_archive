@@ -1,0 +1,32 @@
+{
+  "evidence_version": "c2-metadata-evidence-v1",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_55_20190204_3-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_55_20190204_3",
+  "agent_id": "agent-20261006T191410Z-7c0f48fc",
+  "requested_url": "https://www.gwins.org/cn/milesguo/21963.html",
+  "fetched_at": "2026-10-06T19:55:44.479550+00:00",
+  "status": "fetched",
+  "http_status": 200,
+  "final_url": "https://www.gwins.org/cn/milesguo/21963.html",
+  "raw_bytes": 10558,
+  "raw_sha256": "c0c7f4a6d19eb683176b7fececc1388e4cdcaf367770c23e94362af63342fbf0",
+  "metadata_evidence": {
+    "page_title": "郭文贵2019年2月4日视频 20190204_3赶饺子????皮！感恩美国感恩战友！感恩上天！",
+    "metadata": {
+      "description": "以下是茅屎坑战友没校对前的内容。  嗯，亲爱的战友啊，过年包饺子是中国人的传统习惯，干饺子皮儿是最关键的啊，所以饺子皮儿主要是好的饺子皮儿。就是4下就能感觉出"
+    },
+    "expected_source_video_id": "20190204_3",
+    "expected_id_visible": true,
+    "outbound_links": [
+      "https://odysee.com/@laxi:4/20190204_3:8",
+      "https://rumble.com/v57jjud-20190204-3.html",
+      "https://gettr.com/"
+    ],
+    "decoding": {
+      "codec": "utf-8",
+      "strict": false,
+      "replacement_count": 17,
+      "warning": "Metadata-only bounded HTML capture; damaged fields are not used as exclusive evidence."
+    }
+  }
+}

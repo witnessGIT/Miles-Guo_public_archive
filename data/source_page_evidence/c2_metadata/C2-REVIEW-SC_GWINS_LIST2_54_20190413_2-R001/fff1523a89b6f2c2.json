@@ -1,0 +1,32 @@
+{
+  "evidence_version": "c2-metadata-evidence-v1",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_54_20190413_2-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_54_20190413_2",
+  "agent_id": "agent-20261006T191410Z-7c0f48fc",
+  "requested_url": "https://www.gwins.org/cn/milesguo/297.html",
+  "fetched_at": "2026-10-06T19:55:44.479550+00:00",
+  "status": "fetched",
+  "http_status": 200,
+  "final_url": "https://www.gwins.org/cn/milesguo/297.html",
+  "raw_bytes": 68459,
+  "raw_sha256": "00a08369fd67c5c6dfaa790bf12865a8d4f9819ea79cb305f615415e36b8610c",
+  "metadata_evidence": {
+    "page_title": "郭文贵2019年4月13日第二次直播 20190413_2郭文贵直播谈盗国贼的财富以及这周发生的大事！ 江家集团在中国的实际实力和未来的下场！",
+    "metadata": {
+      "description": "尊敬的战友们好啊！今天星期六和大家在儿直播，过去的一星期，这个世界，包括和我们爆料革命的很多事情，发生了一些重大的事件，世界也有很多变化，那么当我今天在这里在做直"
+    },
+    "expected_source_video_id": "20190413_2",
+    "expected_id_visible": true,
+    "outbound_links": [
+      "https://odysee.com/@laxi:4/20190413_2:f",
+      "https://rumble.com/v57kj79-20190413-2.html",
+      "https://gettr.com/"
+    ],
+    "decoding": {
+      "codec": "utf-8",
+      "strict": false,
+      "replacement_count": 17,
+      "warning": "Metadata-only bounded HTML capture; damaged fields are not used as exclusive evidence."
+    }
+  }
+}

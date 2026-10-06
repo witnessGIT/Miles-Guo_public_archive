@@ -1,0 +1,50 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_58_20181025_2-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_58_20181025_2",
+  "reviewed_by": "agent-20261006T191410Z-7c0f48fc",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-06T19:55:44.479550+00:00",
+  "decision": "rejected_not_target",
+  "canonical_live_id": null,
+  "evidence_urls": [
+    "https://www.gwins.org/cn/milesguo/list_2_58.html",
+    "https://www.gwins.org/cn/milesguo/21897.html",
+    "https://youtu.be/POObSqTYpEI",
+    "https://rumble.com/v57gol8-20181025-2.html",
+    "https://gettr.com/"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS metadata binds source candidate SC_GWINS_LIST2_58_20181025_2 to source_video_id 20181025_2.",
+    "date": "Candidate date 2018-10-25 agrees with the source id/date metadata available for this item.",
+    "title": "郭文贵2018年10月25日视频 20181025_2",
+    "platform_ids": {
+      "gwins_page_id": "21897",
+      "gwins_video_id": "20181025_2",
+      "youtube_id": "POObSqTYpEI",
+      "rumble_id": "v57gol8-20181025-2"
+    },
+    "source_relationships": "Public GWINS HTML metadata and outbound source links were captured without downloading or playing media.",
+    "deduplication": "Rejected from canonical live promotion to avoid weak title-only or video-only merges."
+  },
+  "evidence_artifacts": [
+    "data/source_page_evidence/c2_metadata/C2-REVIEW-SC_GWINS_LIST2_58_20181025_2-R001/58b55a2c3134d749.json"
+  ],
+  "source_raw_sha256": "466b9b222fb098a696f345f125ca0f659cd26f589f05084bb6934946e54070cf",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false,
+  "rejection_reason": "The exact GWINS title and current-item context identify a standalone recorded video/update rather than a clear original livestream."
+}

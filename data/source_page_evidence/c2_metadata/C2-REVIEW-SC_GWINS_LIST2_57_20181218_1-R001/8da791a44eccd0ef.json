@@ -1,0 +1,32 @@
+{
+  "evidence_version": "c2-metadata-evidence-v1",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_57_20181218_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_57_20181218_1",
+  "agent_id": "agent-20261006T191410Z-7c0f48fc",
+  "requested_url": "https://www.gwins.org/cn/milesguo/21928.html",
+  "fetched_at": "2026-10-06T19:55:44.479550+00:00",
+  "status": "fetched",
+  "http_status": 200,
+  "final_url": "https://www.gwins.org/cn/milesguo/21928.html",
+  "raw_bytes": 12295,
+  "raw_sha256": "dfd9ccdb4343a078fa59181bb06a163f395c5bf933bbb0178854983003fade8b",
+  "metadata_evidence": {
+    "page_title": "郭文贵2018年12月18日视频 20181218_1某部門已開始對過去在網路上造我的謠的人那個那個那個",
+    "metadata": {
+      "description": "关于各种案件都有重大好消息 00:00 郭先生将要起诉国内某个机构郭文贵先生：尊敬的战友们好！今天是12月18号是吧，18号。刚健身完，你们健身了吗？ 昨天"
+    },
+    "expected_source_video_id": "20181218_1",
+    "expected_id_visible": true,
+    "outbound_links": [
+      "https://odysee.com/@laxi:4/20181218_1:7",
+      "https://rumble.com/v57h5zh-20181218-1.html",
+      "https://gettr.com/"
+    ],
+    "decoding": {
+      "codec": "utf-8",
+      "strict": false,
+      "replacement_count": 17,
+      "warning": "Metadata-only bounded HTML capture; damaged fields are not used as exclusive evidence."
+    }
+  }
+}

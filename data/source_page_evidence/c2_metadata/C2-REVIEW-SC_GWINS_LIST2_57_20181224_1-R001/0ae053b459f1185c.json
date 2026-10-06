@@ -1,0 +1,32 @@
+{
+  "evidence_version": "c2-metadata-evidence-v1",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_57_20181224_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_57_20181224_1",
+  "agent_id": "agent-20261006T191410Z-7c0f48fc",
+  "requested_url": "https://www.gwins.org/cn/milesguo/21932.html",
+  "fetched_at": "2026-10-06T19:55:44.479550+00:00",
+  "status": "fetched",
+  "http_status": 200,
+  "final_url": "https://www.gwins.org/cn/milesguo/21932.html",
+  "raw_bytes": 11821,
+  "raw_sha256": "af36f33da236f07b714b4dd4ce2beae9d44a9a325c67bd6ea8314f66fa743134",
+  "metadata_evidence": {
+    "page_title": "郭文贵2018年12月24日视频 20181224_1文贵衷心祝愿所有的伟大的战友及家人！14亿同胞！全世界的人们圣诞快乐",
+    "metadata": {
+      "description": "以下是茅屎坑战友没校对前的内容。  尊敬的战友们好，这是纽约时间啊，这个平安夜的今天啊。前几个小时文会荣幸的在纽约，在我的家里面，向所有的战友们及家人们祝福"
+    },
+    "expected_source_video_id": "20181224_1",
+    "expected_id_visible": true,
+    "outbound_links": [
+      "https://odysee.com/@laxi:4/20181224_1:1",
+      "https://rumble.com/v57h7z8-20181224-1.html",
+      "https://gettr.com/"
+    ],
+    "decoding": {
+      "codec": "utf-8",
+      "strict": false,
+      "replacement_count": 17,
+      "warning": "Metadata-only bounded HTML capture; damaged fields are not used as exclusive evidence."
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_56_20190116_2-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_56_20190116_2",
+  "reviewed_by": "agent-20261006T191410Z-7c0f48fc",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-06T19:55:44.479550+00:00",
+  "decision": "rejected_not_target",
+  "canonical_live_id": null,
+  "evidence_urls": [
+    "https://www.gwins.org/cn/milesguo/list_2_56.html",
+    "https://www.gwins.org/cn/milesguo/253.html",
+    "https://www.youtube.com/watch?v=NFGurZeZZ2Y",
+    "https://rumble.com/v57hjp1-20190116-2.html",
+    "https://gettr.com/"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS metadata binds source candidate SC_GWINS_LIST2_56_20190116_2 to source_video_id 20190116_2.",
+    "date": "Candidate date 2019-01-16 agrees with the source id/date metadata available for this item.",
+    "title": "郭文贵2019年1月16日视频第二部分 20190116_2王健被谋杀之密有了重大进展。吴征还有博讯, 马蕊强奸案有了重大的实质性的证据证明吴征被CCP控制",
+    "platform_ids": {
+      "gwins_page_id": "253",
+      "gwins_video_id": "20190116_2",
+      "youtube_id": "NFGurZeZZ2Y",
+      "rumble_id": "v57hjp1-20190116-2"
+    },
+    "source_relationships": "Public GWINS HTML metadata and outbound source links were captured without downloading or playing media.",
+    "deduplication": "Rejected from canonical live promotion to avoid weak title-only or video-only merges."
+  },
+  "evidence_artifacts": [
+    "data/source_page_evidence/c2_metadata/C2-REVIEW-SC_GWINS_LIST2_56_20190116_2-R001/cfcab49da4826bfb.json"
+  ],
+  "source_raw_sha256": "317df716174b64fa6ea9ed725af78576b818471edfde2cfec6b07c5b3cc8ba38",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false,
+  "rejection_reason": "The exact GWINS title and current-item context identify a standalone recorded video/update rather than a clear original livestream."
+}

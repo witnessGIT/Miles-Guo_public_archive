@@ -1,0 +1,50 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_57_20181221_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_57_20181221_1",
+  "reviewed_by": "agent-20261006T191410Z-7c0f48fc",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-06T19:55:44.479550+00:00",
+  "decision": "rejected_not_target",
+  "canonical_live_id": null,
+  "evidence_urls": [
+    "https://www.gwins.org/cn/milesguo/list_2_57.html",
+    "https://www.gwins.org/cn/milesguo/21929.html",
+    "https://odysee.com/@laxi:4/20181221_1:1",
+    "https://rumble.com/v57h64z-20181221-1.html",
+    "https://gettr.com/"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS metadata binds source candidate SC_GWINS_LIST2_57_20181221_1 to source_video_id 20181221_1.",
+    "date": "Candidate date 2018-12-21 agrees with the source id/date metadata available for this item.",
+    "title": "郭文贵2018年12月21日视频 20181221_1昨天美國司法部的行動還不是特別大的事 大事還沒開始呢 明年三月才開始 那時候可就不是亂扔刀叉這個級別的了",
+    "platform_ids": {
+      "gwins_page_id": "21929",
+      "gwins_video_id": "20181221_1",
+      "odysee_id": "@laxi:4/20181221_1:1",
+      "rumble_id": "v57h64z-20181221-1"
+    },
+    "source_relationships": "Public GWINS HTML metadata and outbound source links were captured without downloading or playing media.",
+    "deduplication": "Rejected from canonical live promotion to avoid weak title-only or video-only merges."
+  },
+  "evidence_artifacts": [
+    "data/source_page_evidence/c2_metadata/C2-REVIEW-SC_GWINS_LIST2_57_20181221_1-R001/606b1dc1810e1b43.json"
+  ],
+  "source_raw_sha256": "0e80a453e9077ce4488eb8a6eda409b72fa8b6e150327d5ac6ff55878d28ae3c",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false,
+  "rejection_reason": "The exact GWINS title and current-item context identify a standalone recorded video/update rather than a clear original livestream."
+}

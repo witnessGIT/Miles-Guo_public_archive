@@ -1,0 +1,32 @@
+{
+  "evidence_version": "c2-metadata-evidence-v1",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_54_20190421-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_54_20190421",
+  "agent_id": "agent-20261006T191410Z-7c0f48fc",
+  "requested_url": "https://www.gwins.org/cn/milesguo/304.html",
+  "fetched_at": "2026-10-06T19:55:44.479550+00:00",
+  "status": "fetched",
+  "http_status": 200,
+  "final_url": "https://www.gwins.org/cn/milesguo/304.html",
+  "raw_bytes": 21505,
+  "raw_sha256": "18ca5eb5bf41158c701621016d0c3899ce7ef51ec98f4f822128997e58e1d1ee",
+  "metadata_evidence": {
+    "page_title": "郭文贵2019年4月21日 20190421文贵为什么要揭穿．李嘉诚．马云．郭台铭．江志诚！",
+    "metadata": {
+      "description": "尊敬的战友们好，你们健身了吗，你们往身上泼水了吗？ 今天是4月21号，周末。 昨天我和班农先生在郭媒体就有关郭台铭竞选台湾总统问题，我们俩和战友们进行了聊天。反"
+    },
+    "expected_source_video_id": "20190421",
+    "expected_id_visible": true,
+    "outbound_links": [
+      "https://youtu.be/Nno18amLzwQ",
+      "https://rumble.com/v57kszh-20190421.html",
+      "https://gettr.com/"
+    ],
+    "decoding": {
+      "codec": "utf-8",
+      "strict": false,
+      "replacement_count": 17,
+      "warning": "Metadata-only bounded HTML capture; damaged fields are not used as exclusive evidence."
+    }
+  }
+}

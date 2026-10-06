@@ -1,0 +1,32 @@
+{
+  "evidence_version": "c2-metadata-evidence-v1",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_56_20190116_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_56_20190116_1",
+  "agent_id": "agent-20261006T191410Z-7c0f48fc",
+  "requested_url": "https://www.gwins.org/cn/milesguo/252.html",
+  "fetched_at": "2026-10-06T19:55:44.479550+00:00",
+  "status": "fetched",
+  "http_status": 200,
+  "final_url": "https://www.gwins.org/cn/milesguo/252.html",
+  "raw_bytes": 33110,
+  "raw_sha256": "ef19deecde44c4178f6f2306b75dbd88ec57b4d011b543151bb2fec07fdd2a05",
+  "metadata_evidence": {
+    "page_title": "郭文贵2019年1月16日视频第一部分 20190116_1报平安直播，因春晚收到了国内盗国贼各方的威胁，以及接下来将对盗国贼子女海外资产的一系列行动，慈善基金可能将成为第一个有回报的慈善基金",
+    "metadata": {
+      "description": "尊敬的战友们好！今天是1月16号，你们健身了吗？天哪，哎呀，战友们，来了来了。 战友们好！我今天还是5点多起床，战友们。因为我今天9点整跟一个世界上的打击金融犯罪的最"
+    },
+    "expected_source_video_id": "20190116_1",
+    "expected_id_visible": true,
+    "outbound_links": [
+      "https://www.youtube.com/watch?v=LfQVbNK6XW4",
+      "https://rumble.com/v57hjnp-20190116-1.html",
+      "https://gettr.com/"
+    ],
+    "decoding": {
+      "codec": "utf-8",
+      "strict": false,
+      "replacement_count": 17,
+      "warning": "Metadata-only bounded HTML capture; damaged fields are not used as exclusive evidence."
+    }
+  }
+}

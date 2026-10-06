@@ -1,0 +1,32 @@
+{
+  "evidence_version": "c2-metadata-evidence-v1",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_53_20190429-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_53_20190429",
+  "agent_id": "agent-20261006T191410Z-7c0f48fc",
+  "requested_url": "https://www.gwins.org/cn/milesguo/23672.html",
+  "fetched_at": "2026-10-06T19:55:44.479550+00:00",
+  "status": "fetched",
+  "http_status": 200,
+  "final_url": "https://www.gwins.org/cn/milesguo/23672.html",
+  "raw_bytes": 50208,
+  "raw_sha256": "4b869592f82db23cb4723956f36609f0c1f726e484b16512c187b6c767d39d02",
+  "metadata_evidence": {
+    "page_title": "郭文贵2019年4月29日 20190429_2（2）台湾．香港．将是灭共的重要之地",
+    "metadata": {
+      "description": "所以说，现在共产党总是拿似是而非的表面现象，来否定人类，然后来证实CCP是伟大的，CCP是高智慧、高智商的。本质的问题，本质的问题，你共产党就是个骗子，就是流氓，就是"
+    },
+    "expected_source_video_id": "20190429",
+    "expected_id_visible": true,
+    "outbound_links": [
+      "https://odysee.com/@laxi:4/20190429_2:0",
+      "https://rumble.com/v57kvlv-20190429-2.html",
+      "https://gettr.com/"
+    ],
+    "decoding": {
+      "codec": "utf-8",
+      "strict": false,
+      "replacement_count": 17,
+      "warning": "Metadata-only bounded HTML capture; damaged fields are not used as exclusive evidence."
+    }
+  }
+}

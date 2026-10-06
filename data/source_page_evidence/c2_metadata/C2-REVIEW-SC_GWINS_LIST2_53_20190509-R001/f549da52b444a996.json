@@ -1,0 +1,32 @@
+{
+  "evidence_version": "c2-metadata-evidence-v1",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_53_20190509-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_53_20190509",
+  "agent_id": "agent-20261006T191410Z-7c0f48fc",
+  "requested_url": "https://www.gwins.org/cn/milesguo/499.html",
+  "fetched_at": "2026-10-06T19:55:44.479550+00:00",
+  "status": "fetched",
+  "http_status": 200,
+  "final_url": "https://www.gwins.org/cn/milesguo/499.html",
+  "raw_bytes": 15693,
+  "raw_sha256": "a8757f15c676bb848aabf364d8c89ca1ba0266903a1cd672a44c4fc123388a07",
+  "metadata_evidence": {
+    "page_title": "郭文贵2019年5月9日 20190509中共玩弄中美贸易协议重大事件！全球金融市场陷入惊慌！美国将对台湾香港采取战略调整",
+    "metadata": {
+      "description": "尊敬的战友们好，现在是5月9号，5月9号啊。 昨天晚上，昨天晚上因为工作得特别晚。一直在和亚洲的朋友们通电话。看来啊，这个中国和美国的这个贸易协议啊停止以后，对整个"
+    },
+    "expected_source_video_id": "20190509",
+    "expected_id_visible": true,
+    "outbound_links": [
+      "https://www.youtube.com/watch?v=x-28IUVRJ80",
+      "https://rumble.com/v57l771-20190509.html",
+      "https://gettr.com/"
+    ],
+    "decoding": {
+      "codec": "utf-8",
+      "strict": false,
+      "replacement_count": 17,
+      "warning": "Metadata-only bounded HTML capture; damaged fields are not used as exclusive evidence."
+    }
+  }
+}

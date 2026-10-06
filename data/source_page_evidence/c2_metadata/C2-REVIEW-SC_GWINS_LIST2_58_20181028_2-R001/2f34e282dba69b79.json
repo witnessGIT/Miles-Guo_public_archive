@@ -1,0 +1,32 @@
+{
+  "evidence_version": "c2-metadata-evidence-v1",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_58_20181028_2-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_58_20181028_2",
+  "agent_id": "agent-20261006T191410Z-7c0f48fc",
+  "requested_url": "https://www.gwins.org/cn/milesguo/21899.html",
+  "fetched_at": "2026-10-06T19:55:44.479550+00:00",
+  "status": "fetched",
+  "http_status": 200,
+  "final_url": "https://www.gwins.org/cn/milesguo/21899.html",
+  "raw_bytes": 11210,
+  "raw_sha256": "639b3af03c9ccc6878c917d5c1b34ef4c3f8b3196cc6d557f431fd22e25afeb2",
+  "metadata_evidence": {
+    "page_title": "郭文贵2018年10月28日视频 20181028_2 法國政府對王健之死案的判決",
+    "metadata": {
+      "description": "以下是茅屎坑战友没校对前的内容。  尊敬的战友们好啊，10月28号，今天上午在系我直播之后，关于谈到了王健在法国被杀，这个案件。进展之后啊，我的团队还有法国的合作"
+    },
+    "expected_source_video_id": "20181028_2",
+    "expected_id_visible": true,
+    "outbound_links": [
+      "https://youtu.be/4Sl25W-y5IY",
+      "https://rumble.com/v57gp2d-20181028-2.html",
+      "https://gettr.com/"
+    ],
+    "decoding": {
+      "codec": "utf-8",
+      "strict": false,
+      "replacement_count": 17,
+      "warning": "Metadata-only bounded HTML capture; damaged fields are not used as exclusive evidence."
+    }
+  }
+}

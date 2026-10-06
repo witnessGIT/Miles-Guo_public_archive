@@ -1,0 +1,32 @@
+{
+  "evidence_version": "c2-metadata-evidence-v1",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_53_20190507-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_53_20190507",
+  "agent_id": "agent-20261006T191410Z-7c0f48fc",
+  "requested_url": "https://www.gwins.org/cn/milesguo/316.html",
+  "fetched_at": "2026-10-06T19:55:44.479550+00:00",
+  "status": "fetched",
+  "http_status": 200,
+  "final_url": "https://www.gwins.org/cn/milesguo/316.html",
+  "raw_bytes": 23634,
+  "raw_sha256": "beaeb647e32bf24fab45f0dd33fb53436793fb2b6752158eebe37f54d7289e66",
+  "metadata_evidence": {
+    "page_title": "郭文贵2019年5月7日视频 20190507共产党被推倒，释放所有监狱里的犯人．土地拥有权归人民所有．西藏，新疆，台湾．香港实施百分之百的自治！你们觉得可能吗？",
+    "metadata": {
+      "description": "尊敬的战友们好啊！你们健身了吗？今天是5月7号啊 ，你们健身了吗？哎呀我这刚健完啊， 今天不错 ，今天做的非常成功啊 在超过30分钟啊， 啊...一天我是做两组 ，我要告诉大家的是"
+    },
+    "expected_source_video_id": "20190507",
+    "expected_id_visible": true,
+    "outbound_links": [
+      "https://www.youtube.com/watch?v=d5sGf98nfbQ",
+      "https://rumble.com/v57l6z6-20190507.html",
+      "https://gettr.com/"
+    ],
+    "decoding": {
+      "codec": "utf-8",
+      "strict": false,
+      "replacement_count": 17,
+      "warning": "Metadata-only bounded HTML capture; damaged fields are not used as exclusive evidence."
+    }
+  }
+}

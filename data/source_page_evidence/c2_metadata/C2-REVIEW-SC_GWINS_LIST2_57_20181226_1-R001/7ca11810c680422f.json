@@ -1,0 +1,32 @@
+{
+  "evidence_version": "c2-metadata-evidence-v1",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_57_20181226_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_57_20181226_1",
+  "agent_id": "agent-20261006T191410Z-7c0f48fc",
+  "requested_url": "https://www.gwins.org/cn/milesguo/21933.html",
+  "fetched_at": "2026-10-06T19:55:44.479550+00:00",
+  "status": "fetched",
+  "http_status": 200,
+  "final_url": "https://www.gwins.org/cn/milesguo/21933.html",
+  "raw_bytes": 14780,
+  "raw_sha256": "627acfcefaa80bb1907b7b2b189043de9d99e164f62ad568459fc996c1b64e94",
+  "metadata_evidence": {
+    "page_title": "郭文贵2018年12月26日视频 20181226_1辽宁沈阳对罚款600亿人民币维持原判．限期30天内交罚款！文贵的三个压力二个高兴！",
+    "metadata": {
+      "description": "以下是茅屎坑战友没校对前的内容。  尊敬的战友们好啊，今天是12月26号文贵报平安视频啊，昨天晚上啊。在咱们纽约时间，在咱们的中国辽宁省沈阳市，当时大连所谓的。我"
+    },
+    "expected_source_video_id": "20181226_1",
+    "expected_id_visible": true,
+    "outbound_links": [
+      "https://odysee.com/@laxi:4/20181226_1:b",
+      "https://rumble.com/v57h831-20181226-1.html",
+      "https://gettr.com/"
+    ],
+    "decoding": {
+      "codec": "utf-8",
+      "strict": false,
+      "replacement_count": 17,
+      "warning": "Metadata-only bounded HTML capture; damaged fields are not used as exclusive evidence."
+    }
+  }
+}

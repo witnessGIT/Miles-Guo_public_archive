@@ -1,0 +1,32 @@
+{
+  "evidence_version": "c2-metadata-evidence-v1",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_57_20181219-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_57_20181219",
+  "agent_id": "agent-20261006T191410Z-7c0f48fc",
+  "requested_url": "https://www.gwins.org/cn/milesguo/501.html",
+  "fetched_at": "2026-10-06T19:55:44.479550+00:00",
+  "status": "fetched",
+  "http_status": 200,
+  "final_url": "https://www.gwins.org/cn/milesguo/501.html",
+  "raw_bytes": 12589,
+  "raw_sha256": "44f353216e62a1f40eeb354266ed253e68a9c599c4a6d359a33623ca52b1fe2d",
+  "metadata_evidence": {
+    "page_title": "郭文贵2018年12月19日视频 20181219改革開放40年大會確定要往回走 大家準備吃草吧",
+    "metadata": {
+      "description": "尊敬的战友们好，今天是12月20号（应为19号，郭先生口误）文贵报平安直播。你们健身了吗？从前天，昨天到现在，全美国人，欧洲人都在问一个问题，中国的纪念40年改革开放的讲话"
+    },
+    "expected_source_video_id": "20181219",
+    "expected_id_visible": true,
+    "outbound_links": [
+      "https://odysee.com/@laxi:4/20181219:1",
+      "https://rumble.com/v57h615-20181219.html",
+      "https://gettr.com/"
+    ],
+    "decoding": {
+      "codec": "utf-8",
+      "strict": false,
+      "replacement_count": 17,
+      "warning": "Metadata-only bounded HTML capture; damaged fields are not used as exclusive evidence."
+    }
+  }
+}

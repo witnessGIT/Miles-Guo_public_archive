@@ -1,0 +1,32 @@
+{
+  "evidence_version": "c2-metadata-evidence-v1",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_56_20190108-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_56_20190108",
+  "agent_id": "agent-20261006T191410Z-7c0f48fc",
+  "requested_url": "https://www.gwins.org/cn/milesguo/267.html",
+  "fetched_at": "2026-10-06T19:55:44.479550+00:00",
+  "status": "fetched",
+  "http_status": 200,
+  "final_url": "https://www.gwins.org/cn/milesguo/267.html",
+  "raw_bytes": 32943,
+  "raw_sha256": "cac8bd4c89238c5efdc1ed0e1c5a4b488e9c7a29744fa5c267cc6d2f4cbb41bf",
+  "metadata_evidence": {
+    "page_title": "郭文贵2019年1月8日视频 20190108春晚搞不搞，听听战友们的心声",
+    "metadata": {
+      "description": "尊敬的战友们好啊！今天是1月8号，文贵报平安直播，我现在盯着那电视，我盯着那电视，战友们，我可没录播额，谁要录播谁录播，我可没有录播。我今天在电视上看这管不管用，我"
+    },
+    "expected_source_video_id": "20190108",
+    "expected_id_visible": true,
+    "outbound_links": [
+      "https://odysee.com/@laxi:4/20190108:6",
+      "https://rumble.com/v57hhdp-20190108.mp4.html",
+      "https://gettr.com/"
+    ],
+    "decoding": {
+      "codec": "utf-8",
+      "strict": false,
+      "replacement_count": 17,
+      "warning": "Metadata-only bounded HTML capture; damaged fields are not used as exclusive evidence."
+    }
+  }
+}

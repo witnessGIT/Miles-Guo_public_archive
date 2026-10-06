@@ -1,0 +1,32 @@
+{
+  "evidence_version": "c2-metadata-evidence-v1",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_58_20181024-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_58_20181024",
+  "agent_id": "agent-20261006T191410Z-7c0f48fc",
+  "requested_url": "https://www.gwins.org/cn/milesguo/21895.html",
+  "fetched_at": "2026-10-06T19:55:44.479550+00:00",
+  "status": "fetched",
+  "http_status": 200,
+  "final_url": "https://www.gwins.org/cn/milesguo/21895.html",
+  "raw_bytes": 16535,
+  "raw_sha256": "d8fb1fd286aafac84162873c10dabddc3a855e30c1d982feba3ea195c0ca5229",
+  "metadata_evidence": {
+    "page_title": "郭文贵2018年10月24日视频 20181024_2太卡1",
+    "metadata": {
+      "description": "以下是茅屎坑战友没校对前的内容。  几个大佬要合作啊，绝对是伸着脸腆着屁股要去被兰陵王了啊，这个家伙专门搞武器，搞间谍系统，而且。再卖给中国安全部，还有这个"
+    },
+    "expected_source_video_id": "20181024",
+    "expected_id_visible": true,
+    "outbound_links": [
+      "https://youtu.be/v7pwSzzIdyY",
+      "https://rumble.com/v57go3m-20181024-2.html",
+      "https://gettr.com/"
+    ],
+    "decoding": {
+      "codec": "utf-8",
+      "strict": false,
+      "replacement_count": 17,
+      "warning": "Metadata-only bounded HTML capture; damaged fields are not used as exclusive evidence."
+    }
+  }
+}

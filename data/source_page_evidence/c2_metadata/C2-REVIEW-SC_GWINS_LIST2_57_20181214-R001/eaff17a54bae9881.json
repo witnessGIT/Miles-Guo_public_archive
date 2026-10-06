@@ -1,0 +1,32 @@
+{
+  "evidence_version": "c2-metadata-evidence-v1",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_57_20181214-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_57_20181214",
+  "agent_id": "agent-20261006T191410Z-7c0f48fc",
+  "requested_url": "https://www.gwins.org/cn/milesguo/241.html",
+  "fetched_at": "2026-10-06T19:55:44.479550+00:00",
+  "status": "fetched",
+  "http_status": 200,
+  "final_url": "https://www.gwins.org/cn/milesguo/241.html",
+  "raw_bytes": 45170,
+  "raw_sha256": "a7af6f9c6638a8a21a3a352be703fc02708bd66aa4abd15d7de4f27452687d68",
+  "metadata_evidence": {
+    "page_title": "郭文贵2018年12月14日视频 20181214肖建华的资产被分的差不多了，很快就会消失了",
+    "metadata": {
+      "description": "尊敬的战友们好啊，今天是12月14号文贵报平安直播。  因为我收到了很多战友们的给我留的私信啊，说这个太长时间没有视频了，不中，文贵你得说两声，你得说两声，好吧，"
+    },
+    "expected_source_video_id": "20181214",
+    "expected_id_visible": true,
+    "outbound_links": [
+      "https://odysee.com/@laxi:4/20181214:b",
+      "https://rumble.com/v57h54k-20181214.html",
+      "https://gettr.com/"
+    ],
+    "decoding": {
+      "codec": "utf-8",
+      "strict": false,
+      "replacement_count": 17,
+      "warning": "Metadata-only bounded HTML capture; damaged fields are not used as exclusive evidence."
+    }
+  }
+}

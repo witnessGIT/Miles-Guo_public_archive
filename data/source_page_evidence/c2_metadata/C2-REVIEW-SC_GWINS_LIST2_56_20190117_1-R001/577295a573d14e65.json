@@ -1,0 +1,32 @@
+{
+  "evidence_version": "c2-metadata-evidence-v1",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_56_20190117_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_56_20190117_1",
+  "agent_id": "agent-20261006T191410Z-7c0f48fc",
+  "requested_url": "https://www.gwins.org/cn/milesguo/500.html",
+  "fetched_at": "2026-10-06T19:55:44.479550+00:00",
+  "status": "fetched",
+  "http_status": 200,
+  "final_url": "https://www.gwins.org/cn/milesguo/500.html",
+  "raw_bytes": 35762,
+  "raw_sha256": "1e0a92b07a6f926afe6a2ba4c41b2637f6cc92030b239ecb34b4296d3caf5e56",
+  "metadata_evidence": {
+    "page_title": "郭文贵2019年1月17日第一次直播 20190117_1中美贸易谈判崩裂意味着什么????文贵在这里向你们报告一下！一切都是刚刚开始！",
+    "metadata": {
+      "description": "亲爱的战友们好啊，跟大家聊聊。小哥一美金到现在也没捐，这小子活了几十年白活了，完全不清楚，好钱如命，好色如命。 最近路德同志情绪很紧张，听说路德最近频繁被人家"
+    },
+    "expected_source_video_id": "20190117_1",
+    "expected_id_visible": true,
+    "outbound_links": [
+      "https://youtu.be/JH9z8gkNbCI",
+      "https://rumble.com/v57hjtp-20190117-1.html",
+      "https://gettr.com/"
+    ],
+    "decoding": {
+      "codec": "utf-8",
+      "strict": false,
+      "replacement_count": 17,
+      "warning": "Metadata-only bounded HTML capture; damaged fields are not used as exclusive evidence."
+    }
+  }
+}

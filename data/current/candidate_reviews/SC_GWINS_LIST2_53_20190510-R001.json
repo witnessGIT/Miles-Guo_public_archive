@@ -1,0 +1,50 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_53_20190510-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_53_20190510",
+  "reviewed_by": "agent-20261006T191410Z-7c0f48fc",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-06T19:55:44.479550+00:00",
+  "decision": "rejected_not_target",
+  "canonical_live_id": null,
+  "evidence_urls": [
+    "https://www.gwins.org/cn/milesguo/list_2_53.html",
+    "https://www.gwins.org/cn/milesguo/318.html",
+    "https://odysee.com/@laxi:4/20190510:4",
+    "https://rumble.com/v57lbil-20190510.html",
+    "https://gettr.com/"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS metadata binds source candidate SC_GWINS_LIST2_53_20190510 to source_video_id 20190510.",
+    "date": "Candidate date 2019-05-10 agrees with the source id/date metadata available for this item.",
+    "title": "郭文贵2019年5月10日50岁生日感言 20190510 郭文贵先生50岁生日，谈母亲，父母，家庭 The real reason for trade talks failing; The future of Taiwanese and Hong Kong people",
+    "platform_ids": {
+      "gwins_page_id": "318",
+      "gwins_video_id": "20190510",
+      "odysee_id": "@laxi:4/20190510:4",
+      "rumble_id": "v57lbil-20190510"
+    },
+    "source_relationships": "Public GWINS HTML metadata and outbound source links were captured without downloading or playing media.",
+    "deduplication": "Rejected from canonical live promotion to avoid weak title-only or video-only merges."
+  },
+  "evidence_artifacts": [
+    "data/source_page_evidence/c2_metadata/C2-REVIEW-SC_GWINS_LIST2_53_20190510-R001/c1d0a3691bb69c62.json"
+  ],
+  "source_raw_sha256": "c37ffce4619a4e8c093a395e8fe0b1f1ab050ba0d3adde832f05a779e216427c",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false,
+  "rejection_reason": "The exact GWINS title and current-item context identify a standalone recorded video/update rather than a clear original livestream."
+}

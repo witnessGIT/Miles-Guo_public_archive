@@ -1,0 +1,32 @@
+{
+  "evidence_version": "c2-metadata-evidence-v1",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_54_20190424-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_54_20190424",
+  "agent_id": "agent-20261006T191410Z-7c0f48fc",
+  "requested_url": "https://www.gwins.org/cn/milesguo/306.html",
+  "fetched_at": "2026-10-06T19:55:44.479550+00:00",
+  "status": "fetched",
+  "http_status": 200,
+  "final_url": "https://www.gwins.org/cn/milesguo/306.html",
+  "raw_bytes": 44132,
+  "raw_sha256": "6e0ca697ad117031e96f6a8c196e036dfbb7f9d8e722f37cb2969cbc363d3e1b",
+  "metadata_evidence": {
+    "page_title": "郭文贵2019年4月24日 20190424文贵向战友们报告昨天的三个神秘会议的内容及对张建先生突然病逝的祈祷！",
+    "metadata": {
+      "description": "亲爱的战友们，你们好，今天是4月24号，你们健身了吗？你们往身上泼水了吗？  亲爱的战友们，这个向大家报告一下，昨天到今天的情况。特别是某个宗教的教堂，叫教会，"
+    },
+    "expected_source_video_id": "20190424",
+    "expected_id_visible": true,
+    "outbound_links": [
+      "https://youtu.be/6NU3FM3YfYQ",
+      "https://rumble.com/v57ktj9-20190424.html",
+      "https://gettr.com/"
+    ],
+    "decoding": {
+      "codec": "utf-8",
+      "strict": false,
+      "replacement_count": 17,
+      "warning": "Metadata-only bounded HTML capture; damaged fields are not used as exclusive evidence."
+    }
+  }
+}

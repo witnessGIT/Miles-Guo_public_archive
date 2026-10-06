@@ -1,0 +1,32 @@
+{
+  "evidence_version": "c2-metadata-evidence-v1",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_58_20181026-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_58_20181026",
+  "agent_id": "agent-20261006T191410Z-7c0f48fc",
+  "requested_url": "https://www.gwins.org/cn/milesguo/221.html",
+  "fetched_at": "2026-10-06T19:55:44.479550+00:00",
+  "status": "fetched",
+  "http_status": 200,
+  "final_url": "https://www.gwins.org/cn/milesguo/221.html",
+  "raw_bytes": 21100,
+  "raw_sha256": "a0c60362639531ea2aa73a2938b68078b6723bf9f7ba378caee8bd503276663a",
+  "metadata_evidence": {
+    "page_title": "郭文贵2018年10月26日视频 20181026你们健身了吗！一切都是刚开始！谈港币和人⺠币 的汇率",
+    "metadata": {
+      "description": "尊敬的战友们好，现在是10月26号上午啊，我刚刚的从外面回来，大家看看啊，带着眼镜，带着帽子，刚刚取秘见了我几个朋友，在中央公园我们走走路，回来冲了个凉很舒服，一大早我"
+    },
+    "expected_source_video_id": "20181026",
+    "expected_id_visible": true,
+    "outbound_links": [
+      "https://www.youtube.com/watch?v=PDHGqbrtXNI",
+      "https://rumble.com/v57gowl-20181026.html",
+      "https://gettr.com/"
+    ],
+    "decoding": {
+      "codec": "utf-8",
+      "strict": false,
+      "replacement_count": 17,
+      "warning": "Metadata-only bounded HTML capture; damaged fields are not used as exclusive evidence."
+    }
+  }
+}

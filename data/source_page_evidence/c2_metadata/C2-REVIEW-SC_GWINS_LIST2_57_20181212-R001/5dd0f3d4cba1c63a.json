@@ -1,0 +1,32 @@
+{
+  "evidence_version": "c2-metadata-evidence-v1",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_57_20181212-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_57_20181212",
+  "agent_id": "agent-20261006T191410Z-7c0f48fc",
+  "requested_url": "https://www.gwins.org/cn/milesguo/240.html",
+  "fetched_at": "2026-10-06T19:55:44.479550+00:00",
+  "status": "fetched",
+  "http_status": 200,
+  "final_url": "https://www.gwins.org/cn/milesguo/240.html",
+  "raw_bytes": 17196,
+  "raw_sha256": "474615bba1b27d362b212687b8ad1406af684c34db6123a56c26ab3883db8095",
+  "metadata_evidence": {
+    "page_title": "郭文贵2018年12月12日视频 20181212",
+    "metadata": {
+      "description": "尊敬的战友们  今天是12月12日，你们健身了吗？我刚健完，还得蹦两下。  记得头两天直播完以后，很多国内的，香港的，台湾的朋友，问我很多问题。特别是关于到"
+    },
+    "expected_source_video_id": "20181212",
+    "expected_id_visible": true,
+    "outbound_links": [
+      "https://www.youtube.com/watch?v=fHTKLBDB-ew",
+      "https://rumble.com/v57h4ve-20181212.html",
+      "https://gettr.com/"
+    ],
+    "decoding": {
+      "codec": "utf-8",
+      "strict": false,
+      "replacement_count": 17,
+      "warning": "Metadata-only bounded HTML capture; damaged fields are not used as exclusive evidence."
+    }
+  }
+}

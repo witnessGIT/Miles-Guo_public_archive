@@ -1,0 +1,32 @@
+{
+  "evidence_version": "c2-metadata-evidence-v1",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_58_20181030_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_58_20181030_1",
+  "agent_id": "agent-20261006T191410Z-7c0f48fc",
+  "requested_url": "https://www.gwins.org/cn/milesguo/21900.html",
+  "fetched_at": "2026-10-06T19:55:44.479550+00:00",
+  "status": "fetched",
+  "http_status": 200,
+  "final_url": "https://www.gwins.org/cn/milesguo/21900.html",
+  "raw_bytes": 10912,
+  "raw_sha256": "28e10c55f8022b340edbcae74600bf81bd453c440ced6b4701d3b16b45d08fde",
+  "metadata_evidence": {
+    "page_title": "郭文贵2018年10月30日视频 20181030_1",
+    "metadata": {
+      "description": "以下是茅屎坑战友没校对前的内容。  尊敬的战友们好啊，今天是现在是10月30号了，我刚刚从外面回来，痛得我满脸通红，嗯，到了对面啊。你窗户总统家很近的一个地方啊，"
+    },
+    "expected_source_video_id": "20181030_1",
+    "expected_id_visible": true,
+    "outbound_links": [
+      "https://youtu.be/kCTN87xfJhg",
+      "https://rumble.com/v57gpyd-20181030-1.html",
+      "https://gettr.com/"
+    ],
+    "decoding": {
+      "codec": "utf-8",
+      "strict": false,
+      "replacement_count": 17,
+      "warning": "Metadata-only bounded HTML capture; damaged fields are not used as exclusive evidence."
+    }
+  }
+}

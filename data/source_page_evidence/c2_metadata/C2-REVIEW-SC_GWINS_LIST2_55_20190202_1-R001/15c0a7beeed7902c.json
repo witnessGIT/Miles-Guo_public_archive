@@ -1,0 +1,32 @@
+{
+  "evidence_version": "c2-metadata-evidence-v1",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_55_20190202_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_55_20190202_1",
+  "agent_id": "agent-20261006T191410Z-7c0f48fc",
+  "requested_url": "https://www.gwins.org/cn/milesguo/21961.html",
+  "fetched_at": "2026-10-06T19:55:44.479550+00:00",
+  "status": "fetched",
+  "http_status": 200,
+  "final_url": "https://www.gwins.org/cn/milesguo/21961.html",
+  "raw_bytes": 16358,
+  "raw_sha256": "1884d947d93cfaa76f26e3c1a038817c97d648f5112993503633a2a78f8cd136",
+  "metadata_evidence": {
+    "page_title": "郭文贵2019年2月2日视频 20190202_1委内瑞拉的局势变化正是未來中國變局最好的樣板！和3月20号习近平先生的访问梵蒂冈！川金会川习会！",
+    "metadata": {
+      "description": "00:00 郭先生昨天见了重要的朋友，二三月份是大日子，“川金会”和“川习会”是大事郭文贵先生：尊敬的战友们好，这是2月2号文贵报平安，你们健身了吗？哎呀，蹦"
+    },
+    "expected_source_video_id": "20190202_1",
+    "expected_id_visible": true,
+    "outbound_links": [
+      "https://odysee.com/@laxi:4/20190202_1:e",
+      "https://rumble.com/v57hn2t-20190202-1.html",
+      "https://gettr.com/"
+    ],
+    "decoding": {
+      "codec": "utf-8",
+      "strict": false,
+      "replacement_count": 17,
+      "warning": "Metadata-only bounded HTML capture; damaged fields are not used as exclusive evidence."
+    }
+  }
+}

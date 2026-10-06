@@ -1,0 +1,50 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_56_20190122_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_56_20190122_1",
+  "reviewed_by": "agent-20261006T191410Z-7c0f48fc",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-06T19:55:44.479550+00:00",
+  "decision": "rejected_not_target",
+  "canonical_live_id": null,
+  "evidence_urls": [
+    "https://www.gwins.org/cn/milesguo/list_2_56.html",
+    "https://www.gwins.org/cn/milesguo/21954.html",
+    "https://odysee.com/@laxi:4/20190122_1:3",
+    "https://rumble.com/v57hkzh-20190122-1.html",
+    "https://gettr.com/"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS metadata binds source candidate SC_GWINS_LIST2_56_20190122_1 to source_video_id 20190122_1.",
+    "date": "Candidate date 2019-01-22 agrees with the source id/date metadata available for this item.",
+    "title": "郭文贵2019年1月22日视频 20190122_1文贵在战斗途中！正在完成战友希望我完成的任务中！一切都是刚刚开始",
+    "platform_ids": {
+      "gwins_page_id": "21954",
+      "gwins_video_id": "20190122_1",
+      "odysee_id": "@laxi:4/20190122_1:3",
+      "rumble_id": "v57hkzh-20190122-1"
+    },
+    "source_relationships": "Public GWINS HTML metadata and outbound source links were captured without downloading or playing media.",
+    "deduplication": "Rejected from canonical live promotion to avoid weak title-only or video-only merges."
+  },
+  "evidence_artifacts": [
+    "data/source_page_evidence/c2_metadata/C2-REVIEW-SC_GWINS_LIST2_56_20190122_1-R001/24da601c8ac75f7a.json"
+  ],
+  "source_raw_sha256": "43c7a80d53b9ac490cbb12f9bec1a0bc812f6553d1448fb6824dc769cb8590ca",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false,
+  "rejection_reason": "The exact GWINS title and current-item context identify a standalone recorded video/update rather than a clear original livestream."
+}

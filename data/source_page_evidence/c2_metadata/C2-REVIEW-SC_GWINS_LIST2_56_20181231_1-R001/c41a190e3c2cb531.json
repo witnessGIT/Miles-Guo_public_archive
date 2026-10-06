@@ -1,0 +1,32 @@
+{
+  "evidence_version": "c2-metadata-evidence-v1",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_56_20181231_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_56_20181231_1",
+  "agent_id": "agent-20261006T191410Z-7c0f48fc",
+  "requested_url": "https://www.gwins.org/cn/milesguo/21936.html",
+  "fetched_at": "2026-10-06T19:55:44.479550+00:00",
+  "status": "fetched",
+  "http_status": 200,
+  "final_url": "https://www.gwins.org/cn/milesguo/21936.html",
+  "raw_bytes": 12657,
+  "raw_sha256": "9a056a1434f352ff22ad2412687f20e563b647d363836db2276619fa1acae832",
+  "metadata_evidence": {
+    "page_title": "郭文贵2018年12月31日视频 20181231_1明天2019年1月1日纽约时间上午10点整，北京时间晚上11点整，卡丽熙將采访郭文贵",
+    "metadata": {
+      "description": "以下是茅屎坑战友没校对前的内容。  开始吧好，今天是2018年12月31号。支持2018年阳历最后的一天，哎呀，明天就跨入到2019年了，1月1号请大家记住啊。明天1号上午10点纽约时"
+    },
+    "expected_source_video_id": "20181231_1",
+    "expected_id_visible": true,
+    "outbound_links": [
+      "https://odysee.com/@laxi:4/20181231_1:d",
+      "https://rumble.com/v57h9r6-20181231-1.html",
+      "https://gettr.com/"
+    ],
+    "decoding": {
+      "codec": "utf-8",
+      "strict": false,
+      "replacement_count": 17,
+      "warning": "Metadata-only bounded HTML capture; damaged fields are not used as exclusive evidence."
+    }
+  }
+}

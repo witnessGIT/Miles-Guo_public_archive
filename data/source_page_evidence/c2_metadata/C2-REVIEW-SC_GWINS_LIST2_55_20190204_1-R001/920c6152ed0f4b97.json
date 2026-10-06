@@ -1,0 +1,32 @@
+{
+  "evidence_version": "c2-metadata-evidence-v1",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_55_20190204_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_55_20190204_1",
+  "agent_id": "agent-20261006T191410Z-7c0f48fc",
+  "requested_url": "https://www.gwins.org/cn/milesguo/270.html",
+  "fetched_at": "2026-10-06T19:55:44.479550+00:00",
+  "status": "fetched",
+  "http_status": 200,
+  "final_url": "https://www.gwins.org/cn/milesguo/270.html",
+  "raw_bytes": 75317,
+  "raw_sha256": "7750b1dcd9e9c6338cc390bbd9b43b44b644eb072e63ad2c1a85c94f041f9488",
+  "metadata_evidence": {
+    "page_title": "郭文贵2019年2月4日英文 20190204_1除夕爆料春晚 达赖喇嘛尊者",
+    "metadata": {
+      "description": "文贵：谢谢班农先生的这个总结。我们现在接下来关于尊者达赖喇嘛的节目。我们现在开始。首先我要大家介绍一下这个背景，介绍背景的时候会有一个短篇资料放出来。请大家先看一"
+    },
+    "expected_source_video_id": "20190204_1",
+    "expected_id_visible": true,
+    "outbound_links": [
+      "https://youtu.be/aKyaEBKVJUA",
+      "https://rumble.com/v57hquy-20190204-1.html",
+      "https://gettr.com/"
+    ],
+    "decoding": {
+      "codec": "utf-8",
+      "strict": false,
+      "replacement_count": 17,
+      "warning": "Metadata-only bounded HTML capture; damaged fields are not used as exclusive evidence."
+    }
+  }
+}

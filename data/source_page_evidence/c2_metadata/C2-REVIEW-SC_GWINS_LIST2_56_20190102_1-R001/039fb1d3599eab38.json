@@ -1,0 +1,32 @@
+{
+  "evidence_version": "c2-metadata-evidence-v1",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_56_20190102_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_56_20190102_1",
+  "agent_id": "agent-20261006T191410Z-7c0f48fc",
+  "requested_url": "https://www.gwins.org/cn/milesguo/21938.html",
+  "fetched_at": "2026-10-06T19:55:44.479550+00:00",
+  "status": "fetched",
+  "http_status": 200,
+  "final_url": "https://www.gwins.org/cn/milesguo/21938.html",
+  "raw_bytes": 12004,
+  "raw_sha256": "ffa28075a7773ab9530358ab11197fbfbd1ac5f0c49118f500c3a7862ad7b8ac",
+  "metadata_evidence": {
+    "page_title": "郭文贵2019年1月2日视频 20190102_1乔布斯与他带有神秘色彩的设计的游艇太牛了",
+    "metadata": {
+      "description": "以下是茅屎坑战友没校对前的内容。  听到战友们好啊，刚才我在那个船前面给大家录了一下，不清楚，他的这个传记不是传统的。形式的，也不是我们adc这个形式的，他是不"
+    },
+    "expected_source_video_id": "20190102_1",
+    "expected_id_visible": true,
+    "outbound_links": [
+      "https://odysee.com/@laxi:4/20190102_1:9",
+      "https://rumble.com/v57hdih-20190102-1.html",
+      "https://gettr.com/"
+    ],
+    "decoding": {
+      "codec": "utf-8",
+      "strict": false,
+      "replacement_count": 17,
+      "warning": "Metadata-only bounded HTML capture; damaged fields are not used as exclusive evidence."
+    }
+  }
+}

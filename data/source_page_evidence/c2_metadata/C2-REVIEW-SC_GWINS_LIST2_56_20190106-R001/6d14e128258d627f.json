@@ -1,0 +1,32 @@
+{
+  "evidence_version": "c2-metadata-evidence-v1",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_56_20190106-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_56_20190106",
+  "agent_id": "agent-20261006T191410Z-7c0f48fc",
+  "requested_url": "https://www.gwins.org/cn/milesguo/249.html",
+  "fetched_at": "2026-10-06T19:55:44.479550+00:00",
+  "status": "fetched",
+  "http_status": 200,
+  "final_url": "https://www.gwins.org/cn/milesguo/249.html",
+  "raw_bytes": 60915,
+  "raw_sha256": "6ac3944d5c0f15f46a08690c89ebfa5f60b8ace3bb26382ff147e5d13239f22f",
+  "metadata_evidence": {
+    "page_title": "郭文贵2019年1月6日视频 20190106关于战友们关心的法制基金的几个问题的回复！以及文贵对香港，澳门台湾法制沦陷……是被孟建柱．王岐山．孙力军等控制的结果几个观点！",
+    "metadata": {
+      "description": "尊敬的战友们好。今天应该是2019年1月6号，文贵报平安直播。看战友们的留言啊。亲爱的战友们啊，昨天，应该是从前天，到现在最起码大概在7万多条的私人信息里面，收到了战友们"
+    },
+    "expected_source_video_id": "20190106",
+    "expected_id_visible": true,
+    "outbound_links": [
+      "https://www.youtube.com/watch?v=RwjhD9L_120",
+      "https://rumble.com/v57hgid-20190106.html",
+      "https://gettr.com/"
+    ],
+    "decoding": {
+      "codec": "utf-8",
+      "strict": false,
+      "replacement_count": 17,
+      "warning": "Metadata-only bounded HTML capture; damaged fields are not used as exclusive evidence."
+    }
+  }
+}

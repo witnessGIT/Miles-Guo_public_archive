@@ -1,0 +1,50 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_57_20181227-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_57_20181227",
+  "reviewed_by": "agent-20261006T191410Z-7c0f48fc",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-06T19:55:44.479550+00:00",
+  "decision": "rejected_not_target",
+  "canonical_live_id": null,
+  "evidence_urls": [
+    "https://www.gwins.org/cn/milesguo/list_2_57.html",
+    "https://www.gwins.org/cn/milesguo/245.html",
+    "https://odysee.com/@laxi:4/20181227:4",
+    "https://rumble.com/v57h8ix-20181227.html",
+    "https://gettr.com/"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS metadata binds source candidate SC_GWINS_LIST2_57_20181227 to source_video_id 20181227.",
+    "date": "Candidate date 2018-12-27 agrees with the source id/date metadata available for this item.",
+    "title": "郭文贵2018年12月27日视频 20181227 原马健副部长所谓的被判无期徒刑是中共“以黑治国”“以警治国”最好的证明！郭文贵将不惜一切代价为马健先生及绝大多数被残害的共产党员争取公平！真相！还他们自由！",
+    "platform_ids": {
+      "gwins_page_id": "245",
+      "gwins_video_id": "20181227",
+      "odysee_id": "@laxi:4/20181227:4",
+      "rumble_id": "v57h8ix-20181227"
+    },
+    "source_relationships": "Public GWINS HTML metadata and outbound source links were captured without downloading or playing media.",
+    "deduplication": "Rejected from canonical live promotion to avoid weak title-only or video-only merges."
+  },
+  "evidence_artifacts": [
+    "data/source_page_evidence/c2_metadata/C2-REVIEW-SC_GWINS_LIST2_57_20181227-R001/47391f7445503d99.json"
+  ],
+  "source_raw_sha256": "b6b93d6f7f07be5e397343a89091dcd2c25f40178b14de9632f9feb6daccd72d",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false,
+  "rejection_reason": "The exact GWINS title and current-item context identify a standalone recorded video/update rather than a clear original livestream."
+}

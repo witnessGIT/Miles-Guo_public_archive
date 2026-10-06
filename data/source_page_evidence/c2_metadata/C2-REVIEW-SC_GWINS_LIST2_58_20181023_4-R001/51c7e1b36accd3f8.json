@@ -1,0 +1,32 @@
+{
+  "evidence_version": "c2-metadata-evidence-v1",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_58_20181023_4-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_58_20181023_4",
+  "agent_id": "agent-20261006T191410Z-7c0f48fc",
+  "requested_url": "https://www.gwins.org/cn/milesguo/21894.html",
+  "fetched_at": "2026-10-06T19:55:44.479550+00:00",
+  "status": "fetched",
+  "http_status": 200,
+  "final_url": "https://www.gwins.org/cn/milesguo/21894.html",
+  "raw_bytes": 11252,
+  "raw_sha256": "f626b97149ac623a0574c0ff3a45f2982f53d334a211d13278ceedff936fe193",
+  "metadata_evidence": {
+    "page_title": "郭文贵2018年10月23日视频 20181023_4這幾天阿裡巴巴及騰訊的股票 港幣人民幣匯率 期指的變化怎麼回事",
+    "metadata": {
+      "description": "以下是茅屎坑战友没校对前的内容。  尊敬的战友们好啊，咱再录一段啊，这个昨天的股市，还有人民币和港币的啊，整个秋。市场，昨天啊变化是最有意思的，大家可以看到"
+    },
+    "expected_source_video_id": "20181023_4",
+    "expected_id_visible": true,
+    "outbound_links": [
+      "https://youtu.be/PwVT0YPKnWA",
+      "https://rumble.com/v57go0d-20181023-4.html",
+      "https://gettr.com/"
+    ],
+    "decoding": {
+      "codec": "utf-8",
+      "strict": false,
+      "replacement_count": 17,
+      "warning": "Metadata-only bounded HTML capture; damaged fields are not used as exclusive evidence."
+    }
+  }
+}

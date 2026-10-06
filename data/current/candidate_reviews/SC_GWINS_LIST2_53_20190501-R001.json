@@ -1,0 +1,50 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_53_20190501-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_53_20190501",
+  "reviewed_by": "agent-20261006T191410Z-7c0f48fc",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-06T19:55:44.479550+00:00",
+  "decision": "rejected_not_target",
+  "canonical_live_id": null,
+  "evidence_urls": [
+    "https://www.gwins.org/cn/milesguo/list_2_53.html",
+    "https://www.gwins.org/cn/milesguo/310.html",
+    "https://youtu.be/FU0GR6uW-ro",
+    "https://rumble.com/v57kw7g-20190501.html",
+    "https://gettr.com/"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS metadata binds source candidate SC_GWINS_LIST2_53_20190501 to source_video_id 20190501.",
+    "date": "Candidate date 2019-05-01 agrees with the source id/date metadata available for this item.",
+    "title": "郭文贵2019年5月1日委内瑞拉革命 20190501从委内瑞拉革命，我们可以得到如何保护台湾和香港快速灭共的最佳办法，什么是尿脸党！",
+    "platform_ids": {
+      "gwins_page_id": "310",
+      "gwins_video_id": "20190501",
+      "youtube_id": "FU0GR6uW-ro",
+      "rumble_id": "v57kw7g-20190501"
+    },
+    "source_relationships": "Public GWINS HTML metadata and outbound source links were captured without downloading or playing media.",
+    "deduplication": "Rejected from canonical live promotion to avoid weak title-only or video-only merges."
+  },
+  "evidence_artifacts": [
+    "data/source_page_evidence/c2_metadata/C2-REVIEW-SC_GWINS_LIST2_53_20190501-R001/ea9509536658c12b.json"
+  ],
+  "source_raw_sha256": "98dba2bf6d4bd096eee91003735424cce5adb98cf0212d47527198854c16ce06",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false,
+  "rejection_reason": "The exact GWINS title and current-item context identify a standalone recorded video/update rather than a clear original livestream."
+}

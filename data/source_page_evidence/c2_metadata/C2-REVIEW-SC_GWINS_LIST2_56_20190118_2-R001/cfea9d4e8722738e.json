@@ -1,0 +1,32 @@
+{
+  "evidence_version": "c2-metadata-evidence-v1",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_56_20190118_2-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_56_20190118_2",
+  "agent_id": "agent-20261006T191410Z-7c0f48fc",
+  "requested_url": "https://www.gwins.org/cn/milesguo/255.html",
+  "fetched_at": "2026-10-06T19:55:44.479550+00:00",
+  "status": "fetched",
+  "http_status": 200,
+  "final_url": "https://www.gwins.org/cn/milesguo/255.html",
+  "raw_bytes": 17507,
+  "raw_sha256": "30cab1e4302840cf55d758e8eb69daf3e93d298f48ad31ad1d0043a814e13fc3",
+  "metadata_evidence": {
+    "page_title": "郭文贵2019年1月18日第二次直播 20190118_2关于政事小哥！因为受共产党对家人的迫害威胁，不得不离开过爆料革命！这更加坚定了摧毁流氓CCp的决心！以实际行动为战友报仇！一切都是刚刚开始",
+    "metadata": {
+      "description": "亲爱的战友们啊，这个是因为我今天早上快五点才睡觉，然后呢我十点整我跟人家吃早餐，十一点出去作证，再过40分钟，在那做完证以后，休息20分钟，然后去四五个地点开会，都是些"
+    },
+    "expected_source_video_id": "20190118_2",
+    "expected_id_visible": true,
+    "outbound_links": [
+      "https://youtu.be/5yx1SOODGpc",
+      "https://rumble.com/v57hk37-20190118-2.html",
+      "https://gettr.com/"
+    ],
+    "decoding": {
+      "codec": "utf-8",
+      "strict": false,
+      "replacement_count": 17,
+      "warning": "Metadata-only bounded HTML capture; damaged fields are not used as exclusive evidence."
+    }
+  }
+}

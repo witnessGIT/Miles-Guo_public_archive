@@ -1,0 +1,32 @@
+{
+  "evidence_version": "c2-metadata-evidence-v1",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_56_20190123-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_56_20190123",
+  "agent_id": "agent-20261006T191410Z-7c0f48fc",
+  "requested_url": "https://www.gwins.org/cn/milesguo/260.html",
+  "fetched_at": "2026-10-06T19:55:44.479550+00:00",
+  "status": "fetched",
+  "http_status": 200,
+  "final_url": "https://www.gwins.org/cn/milesguo/260.html",
+  "raw_bytes": 19813,
+  "raw_sha256": "f7381f61cca290cad8b9756d700eb18b75c9f8139b1e56e6d57792857f220219",
+  "metadata_evidence": {
+    "page_title": "郭文贵2019年1月23日视频 20190123华盛顿上空弥漫这共同的目标：灭共",
+    "metadata": {
+      "description": "  尊敬的战友们好！这是1月23号，文贵在华盛顿向大家报平安。 刚才，接了一个战友的电话，比较激动、比较激动。然后洗个脸，稀里哗啦地，呵呵！IEA战友，你是沙发、"
+    },
+    "expected_source_video_id": "20190123",
+    "expected_id_visible": true,
+    "outbound_links": [
+      "https://odysee.com/@laxi:4/20190123:0",
+      "https://rumble.com/v57hl4k-20190123.html",
+      "https://gettr.com/"
+    ],
+    "decoding": {
+      "codec": "utf-8",
+      "strict": false,
+      "replacement_count": 17,
+      "warning": "Metadata-only bounded HTML capture; damaged fields are not used as exclusive evidence."
+    }
+  }
+}

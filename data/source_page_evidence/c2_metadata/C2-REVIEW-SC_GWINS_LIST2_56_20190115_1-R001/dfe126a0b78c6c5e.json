@@ -1,0 +1,32 @@
+{
+  "evidence_version": "c2-metadata-evidence-v1",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_56_20190115_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_56_20190115_1",
+  "agent_id": "agent-20261006T191410Z-7c0f48fc",
+  "requested_url": "https://www.gwins.org/cn/milesguo/21953.html",
+  "fetched_at": "2026-10-06T19:55:44.479550+00:00",
+  "status": "fetched",
+  "http_status": 200,
+  "final_url": "https://www.gwins.org/cn/milesguo/21953.html",
+  "raw_bytes": 12213,
+  "raw_sha256": "3626080750baa67955e1da568801d8859af04d309596de78846faa16534c907d",
+  "metadata_evidence": {
+    "page_title": "郭文贵2019年1月15日视频 20190115_1两天前！我出去见朋友！CCP很多人跟踪我！他们这种做法一定会受到美国的法律的严惩",
+    "metadata": {
+      "description": "以下是茅屎坑战友没校对前的内容。  哎呀，尊敬的战友们好啊，今天是1月15号，文贵报平安直播，你们健身了吗？哎呀这个昨天下午的时候我跟着安保团队开会，我头两天不"
+    },
+    "expected_source_video_id": "20190115_1",
+    "expected_id_visible": true,
+    "outbound_links": [
+      "https://odysee.com/@laxi:4/20190115_1:2",
+      "https://rumble.com/v57hjk5-20190115-1.html",
+      "https://gettr.com/"
+    ],
+    "decoding": {
+      "codec": "utf-8",
+      "strict": false,
+      "replacement_count": 17,
+      "warning": "Metadata-only bounded HTML capture; damaged fields are not used as exclusive evidence."
+    }
+  }
+}

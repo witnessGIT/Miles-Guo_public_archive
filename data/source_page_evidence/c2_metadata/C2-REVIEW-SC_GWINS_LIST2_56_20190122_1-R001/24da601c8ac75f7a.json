@@ -1,0 +1,32 @@
+{
+  "evidence_version": "c2-metadata-evidence-v1",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_56_20190122_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_56_20190122_1",
+  "agent_id": "agent-20261006T191410Z-7c0f48fc",
+  "requested_url": "https://www.gwins.org/cn/milesguo/21954.html",
+  "fetched_at": "2026-10-06T19:55:44.479550+00:00",
+  "status": "fetched",
+  "http_status": 200,
+  "final_url": "https://www.gwins.org/cn/milesguo/21954.html",
+  "raw_bytes": 10672,
+  "raw_sha256": "43c7a80d53b9ac490cbb12f9bec1a0bc812f6553d1448fb6824dc769cb8590ca",
+  "metadata_evidence": {
+    "page_title": "郭文贵2019年1月22日视频 20190122_1文贵在战斗途中！正在完成战友希望我完成的任务中！一切都是刚刚开始",
+    "metadata": {
+      "description": "以下是茅屎坑战友没校对前的内容。  现在再也没人看啊，这个蓝天白云，纽约今天特别特别冷，蓝天白云。万里无云不是蓝天白云，啊，大家猜猜我要回哪儿了，快点猜我去"
+    },
+    "expected_source_video_id": "20190122_1",
+    "expected_id_visible": true,
+    "outbound_links": [
+      "https://odysee.com/@laxi:4/20190122_1:3",
+      "https://rumble.com/v57hkzh-20190122-1.html",
+      "https://gettr.com/"
+    ],
+    "decoding": {
+      "codec": "utf-8",
+      "strict": false,
+      "replacement_count": 17,
+      "warning": "Metadata-only bounded HTML capture; damaged fields are not used as exclusive evidence."
+    }
+  }
+}

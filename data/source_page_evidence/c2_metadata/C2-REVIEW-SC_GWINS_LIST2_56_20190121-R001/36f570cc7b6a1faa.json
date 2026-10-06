@@ -1,0 +1,32 @@
+{
+  "evidence_version": "c2-metadata-evidence-v1",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_56_20190121-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_56_20190121",
+  "agent_id": "agent-20261006T191410Z-7c0f48fc",
+  "requested_url": "https://www.gwins.org/cn/milesguo/259.html",
+  "fetched_at": "2026-10-06T19:55:44.479550+00:00",
+  "status": "fetched",
+  "http_status": 200,
+  "final_url": "https://www.gwins.org/cn/milesguo/259.html",
+  "raw_bytes": 30331,
+  "raw_sha256": "8f42cd9c6eab423bfcb2a973c6ceb0df2d756dd6eb4e2e39c626d805908825bc",
+  "metadata_evidence": {
+    "page_title": "郭文贵2019年1月21日视频 20190121共产党号召学习王阳明的心学是对圣人的巨大侮辱",
+    "metadata": {
+      "description": " 尊敬的战友们好！1月21号文贵报平安直播。 战友们好哇！今天是1月21号，文贵报平安直播。大家看到，我已经锻炼了，然后呢，我现在向大家报平安！因为我准备好马上开会"
+    },
+    "expected_source_video_id": "20190121",
+    "expected_id_visible": true,
+    "outbound_links": [
+      "https://youtu.be/2MtRmwKRKqM",
+      "https://rumble.com/v57hkx5-20190121.html",
+      "https://gettr.com/"
+    ],
+    "decoding": {
+      "codec": "utf-8",
+      "strict": false,
+      "replacement_count": 17,
+      "warning": "Metadata-only bounded HTML capture; damaged fields are not used as exclusive evidence."
+    }
+  }
+}

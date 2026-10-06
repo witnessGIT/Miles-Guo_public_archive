@@ -1,0 +1,32 @@
+{
+  "evidence_version": "c2-metadata-evidence-v1",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_55_20190201_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_55_20190201_1",
+  "agent_id": "agent-20261006T191410Z-7c0f48fc",
+  "requested_url": "https://www.gwins.org/cn/milesguo/21960.html",
+  "fetched_at": "2026-10-06T19:55:44.479550+00:00",
+  "status": "fetched",
+  "http_status": 200,
+  "final_url": "https://www.gwins.org/cn/milesguo/21960.html",
+  "raw_bytes": 19574,
+  "raw_sha256": "0b65f491bf5075394c566bc106acc9f9fcdb8005bfd337c8b73805dff865e521",
+  "metadata_evidence": {
+    "page_title": "郭文贵2019年2月1日视频 20190201_1昨天刘鹤跟川普团队谈判后的自己的感受！ 王健被自己的生殖器戳死",
+    "metadata": {
+      "description": "00:00今天要开研究RICO法案和关于法治基金和法治社会的会议 郭文贵先生：尊敬的战友们好啊，今天是2月1号文贵现在向大家报平安直播。因为大家可能看到昨天我发信息的"
+    },
+    "expected_source_video_id": "20190201_1",
+    "expected_id_visible": true,
+    "outbound_links": [
+      "https://odysee.com/@laxi:4/20190201_1:a",
+      "https://rumble.com/v57hn05-20190201-1.html",
+      "https://gettr.com/"
+    ],
+    "decoding": {
+      "codec": "utf-8",
+      "strict": false,
+      "replacement_count": 17,
+      "warning": "Metadata-only bounded HTML capture; damaged fields are not used as exclusive evidence."
+    }
+  }
+}

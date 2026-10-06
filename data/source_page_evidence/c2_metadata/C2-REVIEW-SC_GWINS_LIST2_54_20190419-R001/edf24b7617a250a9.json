@@ -1,0 +1,32 @@
+{
+  "evidence_version": "c2-metadata-evidence-v1",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_54_20190419-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_54_20190419",
+  "agent_id": "agent-20261006T191410Z-7c0f48fc",
+  "requested_url": "https://www.gwins.org/cn/milesguo/21989.html",
+  "fetched_at": "2026-10-06T19:55:44.479550+00:00",
+  "status": "fetched",
+  "http_status": 200,
+  "final_url": "https://www.gwins.org/cn/milesguo/21989.html",
+  "raw_bytes": 12145,
+  "raw_sha256": "56305d9cfc2b833831b7efbf16fb5db200556abba7e12c96873b4e92d023f640",
+  "metadata_evidence": {
+    "page_title": "郭文贵2019年4月19日视频 20190419明早將與班農一起直播, 班農說的話文貴不負責, 因為他可能違反郭七條",
+    "metadata": {
+      "description": "以下是茅屎坑战友没校对前的内容。  亲爱的战友们好啊，今天是4月19号，昨天搞错了，昨天昨天都录完了播出就下午了，小夏的给我。通电话他说明天4月29，我说你给我发个"
+    },
+    "expected_source_video_id": "20190419",
+    "expected_id_visible": true,
+    "outbound_links": [
+      "https://odysee.com/@laxi:4/20190419:5b",
+      "https://rumble.com/v57krxo-20190419.html",
+      "https://gettr.com/"
+    ],
+    "decoding": {
+      "codec": "utf-8",
+      "strict": false,
+      "replacement_count": 17,
+      "warning": "Metadata-only bounded HTML capture; damaged fields are not used as exclusive evidence."
+    }
+  }
+}

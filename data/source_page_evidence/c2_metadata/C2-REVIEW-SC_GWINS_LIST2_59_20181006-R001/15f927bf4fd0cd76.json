@@ -1,0 +1,32 @@
+{
+  "evidence_version": "c2-metadata-evidence-v1",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_59_20181006-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_59_20181006",
+  "agent_id": "agent-20261006T191410Z-7c0f48fc",
+  "requested_url": "https://www.gwins.org/cn/milesguo/213.html",
+  "fetched_at": "2026-10-06T19:55:44.479550+00:00",
+  "status": "fetched",
+  "http_status": 200,
+  "final_url": "https://www.gwins.org/cn/milesguo/213.html",
+  "raw_bytes": 78710,
+  "raw_sha256": "d1d600c5b46ed4c08fc4c5e2fa20e57f1c87496b9aa96f46337726343979ee04",
+  "metadata_evidence": {
+    "page_title": "郭文贵2018年10月6日 20181006文贵与班农接受著名对冲基金经理采访,讲述中共政治黑幕和孟宏伟失踪事件",
+    "metadata": {
+      "description": "郭文贵为什么来美国开始爆料革命 2：50-2：57 Kyle Bass凯尔·巴斯：欢迎来到得克萨斯州的 *** , Miles。 Miles Kwok郭文贵：很高兴见到你，Kyle。非常感谢你。  2："
+    },
+    "expected_source_video_id": "20181006",
+    "expected_id_visible": true,
+    "outbound_links": [
+      "https://youtu.be/8HIQVJ7C8OM",
+      "https://rumble.com/v57gj99-20181006.html",
+      "https://gettr.com/"
+    ],
+    "decoding": {
+      "codec": "utf-8",
+      "strict": false,
+      "replacement_count": 17,
+      "warning": "Metadata-only bounded HTML capture; damaged fields are not used as exclusive evidence."
+    }
+  }
+}

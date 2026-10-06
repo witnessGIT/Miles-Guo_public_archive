@@ -1,0 +1,50 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_57_20181216-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_57_20181216",
+  "reviewed_by": "agent-20261006T191410Z-7c0f48fc",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-06T19:55:44.479550+00:00",
+  "decision": "rejected_not_target",
+  "canonical_live_id": null,
+  "evidence_urls": [
+    "https://www.gwins.org/cn/milesguo/list_2_57.html",
+    "https://www.gwins.org/cn/milesguo/242.html",
+    "https://www.youtube.com/watch?v=AKzogKBSC2Y",
+    "https://rumble.com/v57h5ul-20181216.html",
+    "https://gettr.com/"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS metadata binds source candidate SC_GWINS_LIST2_57_20181216 to source_video_id 20181216.",
+    "date": "Candidate date 2018-12-16 agrees with the source id/date metadata available for this item.",
+    "title": "郭文贵2018年12月16日 20181216郭文贵回答战友之声的问题，聊天，怎么看待习江斗。",
+    "platform_ids": {
+      "gwins_page_id": "242",
+      "gwins_video_id": "20181216",
+      "youtube_id": "AKzogKBSC2Y",
+      "rumble_id": "v57h5ul-20181216"
+    },
+    "source_relationships": "Public GWINS HTML metadata and outbound source links were captured without downloading or playing media.",
+    "deduplication": "Rejected from canonical live promotion to avoid weak title-only or video-only merges."
+  },
+  "evidence_artifacts": [
+    "data/source_page_evidence/c2_metadata/C2-REVIEW-SC_GWINS_LIST2_57_20181216-R001/6bdecd84d89d5026.json"
+  ],
+  "source_raw_sha256": "15fdb6f8466ecf52cc797dc14082cfc5e57423028c8ce08228a8a37decc54558",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false,
+  "rejection_reason": "The exact GWINS title and current-item context identify a standalone recorded video/update rather than a clear original livestream."
+}

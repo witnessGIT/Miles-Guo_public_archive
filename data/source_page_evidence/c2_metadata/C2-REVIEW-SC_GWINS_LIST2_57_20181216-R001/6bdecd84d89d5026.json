@@ -1,0 +1,32 @@
+{
+  "evidence_version": "c2-metadata-evidence-v1",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_57_20181216-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_57_20181216",
+  "agent_id": "agent-20261006T191410Z-7c0f48fc",
+  "requested_url": "https://www.gwins.org/cn/milesguo/242.html",
+  "fetched_at": "2026-10-06T19:55:44.479550+00:00",
+  "status": "fetched",
+  "http_status": 200,
+  "final_url": "https://www.gwins.org/cn/milesguo/242.html",
+  "raw_bytes": 118646,
+  "raw_sha256": "15fdb6f8466ecf52cc797dc14082cfc5e57423028c8ce08228a8a37decc54558",
+  "metadata_evidence": {
+    "page_title": "郭文贵2018年12月16日 20181216郭文贵回答战友之声的问题，聊天，怎么看待习江斗。",
+    "metadata": {
+      "description": "主持人：各位观众好; 欢迎收看discord战友之声。我是主持人啸天，今天我们很高兴地请来了郭文贵先生来到战友之声直播间跟我们聊天互动。郭先生您好，欢迎你的到来，能先跟我们的"
+    },
+    "expected_source_video_id": "20181216",
+    "expected_id_visible": true,
+    "outbound_links": [
+      "https://www.youtube.com/watch?v=AKzogKBSC2Y",
+      "https://rumble.com/v57h5ul-20181216.html",
+      "https://gettr.com/"
+    ],
+    "decoding": {
+      "codec": "utf-8",
+      "strict": false,
+      "replacement_count": 17,
+      "warning": "Metadata-only bounded HTML capture; damaged fields are not used as exclusive evidence."
+    }
+  }
+}
