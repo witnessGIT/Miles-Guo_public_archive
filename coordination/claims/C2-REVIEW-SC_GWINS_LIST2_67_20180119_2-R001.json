@@ -1,12 +1,12 @@
 {
   "task_id": "C2-REVIEW-SC_GWINS_LIST2_67_20180119_2-R001",
-  "agent_id": "agent-20261004T091647Z-90dd416d",
-  "claimed_at": "2026-10-05T12:33:10.755135+00:00",
-  "base_commit": "2246ff35c328270f4c70871a2006e860fe4528fd",
+  "agent_id": "agent-20261006T194900Z-gpt56sol-chat-c2",
+  "claimed_at": "2026-10-06T19:49:00Z",
+  "base_commit": "8c4ef9f2e2811db521b5445f23fa293bc1300d0d",
   "status": "in_progress",
   "workflow_mode": "continuous-worker-v2",
   "claim_protocol": "claim-protocol-v2",
-  "entry_mode": "work",
+  "entry_mode": "ordinary_chat",
   "continue_after_finish": true,
   "stage": "candidate_review",
   "case_id": null,
@@ -18,11 +18,11 @@
   "review_state_before_claim": "unreviewed",
   "candidate_review_contract": "candidate-review-evidence-v2",
   "depends_on_at_claim": [],
-  "scope": "Review source candidate SC_GWINS_LIST2_67_20180119_2 one at a time; confirm canonical identity, duplicate/source relationships, and write isolated durable outputs. Do not perform playback audit, media download, transcription, segmentation, or later content processing. Current source: https://www.gwins.org/cn/milesguo/list_2_67.html",
+  "scope": "Review source candidate SC_GWINS_LIST2_67_20180119_2 one at a time; confirm canonical identity, duplicate/source relationships, and write isolated durable outputs. Do not perform playback audit, media download, transcription, segmentation, or later content processing. Current source: https://gwins.org/cn/milesguo/list_2_67.html",
   "reclaimed_expired_claim": false,
   "static_claim_lease_hours": 10,
-  "review_batch_id": "REVIEW-BATCH-20261005T123308417967Z-abf6bf85",
-  "review_batch_target_size": 100,
-  "review_batch_position": 65,
-  "review_batch_claimed_count": 100
+  "review_batch_id": "REVIEW-BATCH-20261006T194900Z-gpt56sol-chat-c2",
+  "review_batch_target_size": 20,
+  "review_batch_position": 15,
+  "review_batch_claimed_count": 20
 }
