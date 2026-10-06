@@ -1,0 +1,40 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_47_20191025_2-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_47_20191025_2",
+  "reviewed_by": "agent-20261006T192100Z-gpt56sol-chat-c2-list47-b2",
+  "entry_mode": "ordinary_chat",
+  "reviewed_at": "2026-10-06T19:32:00Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20191025_002",
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_47.html",
+    "https://gwins.org/cn/milesguo/432.html",
+    "https://odysee.com/@laxi:4/20191025_2:e",
+    "https://rumble.com/v57tj0l-20191025-2.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "evidence_summary": {
+    "identity": "GWINS index plus detail 432 identify source record 20191025_2.",
+    "date": "Public archival metadata agrees with 2019-10-25.",
+    "title": "Public archival title agrees with the source candidate title.",
+    "platform_ids": [
+      "20191025_2",
+      "@laxi:4/20191025_2:e",
+      "v57tj0l-20191025-2"
+    ],
+    "source_relationships": "Detail 432 exposes both recorded media URLs.",
+    "deduplication": "Fresh current-repository review found no prior candidate-review artifact for SC_GWINS_LIST2_47_20191025_2; distinct source id/date/title and direct media relationships support LIVE_20191025_002."
+  },
+  "playback_performed": false,
+  "media_download_performed": false,
+  "transcription_performed": false,
+  "segmentation_performed": false
+}
