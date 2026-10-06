@@ -1,0 +1,45 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_19_20210821_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_19_20210821_1",
+  "reviewed_by": "agent-20261006T191453Z-a890f4a8",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-06T19:26:49Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20210821_001",
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_19.html",
+    "https://gwins.org/cn/milesguo/23261.html",
+    "https://odysee.com/@laxi:4/20210821_1:8",
+    "https://rumble.com/v59jqw5-20210821-1.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS detail page 23261 visibly carries exact source_video_id 20210821_1 and is bound to this candidate from https://gwins.org/cn/milesguo/list_2_19.html.",
+    "date": "Candidate date 2021-08-21 agrees with the date and source id in the exact GWINS title.",
+    "title": "郭文贵2021年8月21日直播 20210821_1 我们是否应该打疫苗；打疫苗背后的本质是什么；福奇的威胁性有多大；政府和技术官僚人士如何控制社交媒体，严肃媒体实行疫苗计划，疫苗计划最大的受益者是谁；警告：人类面临前所未有生",
+    "platform_ids": [
+      "20210821_1",
+      "23261",
+      "@laxi:4/20210821_1:8",
+      "v59jqw5-20210821-1"
+    ],
+    "source_relationships": "The exact GWINS detail page directly exposes the listed public media URL(s); generic site-home links were excluded.",
+    "deduplication": "Fresh current-data checks found no canonical record for exact source id 20210821_1. The distinct GWINS detail page 23261 and media IDs support LIVE_20210821_001; same-day items with different numbered source IDs remain separate."
+  },
+  "source_raw_sha256": "1daa4b7196cbba2525d3e7fa0b49a6308bca230548638461202fae88cd0d3115",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": true,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}

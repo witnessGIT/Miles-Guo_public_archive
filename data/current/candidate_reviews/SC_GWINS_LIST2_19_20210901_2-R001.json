@@ -1,0 +1,45 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_19_20210901_2-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_19_20210901_2",
+  "reviewed_by": "agent-20261006T191453Z-a890f4a8",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-06T19:26:49Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20210901_002",
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_19.html",
+    "https://gwins.org/cn/milesguo/23284.html",
+    "https://odysee.com/@laxi:4/20210901_2:c",
+    "https://rumble.com/v59l250-20210901-2.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS detail page 23284 visibly carries exact source_video_id 20210901_2 and is bound to this candidate from https://gwins.org/cn/milesguo/list_2_19.html.",
+    "date": "Candidate date 2021-09-01 agrees with the date and source id in the exact GWINS title.",
+    "title": "郭文贵2021年9月1日直播 20210901_2 大卫兄弟以命试毒，奇迹生还，验证爆料革命的情报和实力，七哥与战友之间爱的力量；中共的文化运动的本质，是颠覆政权的需要；中共没有房地产，只有房产，是最大的政治旁氏骗局；房产是",
+    "platform_ids": [
+      "20210901_2",
+      "23284",
+      "@laxi:4/20210901_2:c",
+      "v59l250-20210901-2"
+    ],
+    "source_relationships": "The exact GWINS detail page directly exposes the listed public media URL(s); generic site-home links were excluded.",
+    "deduplication": "Fresh current-data checks found no canonical record for exact source id 20210901_2. The distinct GWINS detail page 23284 and media IDs support LIVE_20210901_002; same-day items with different numbered source IDs remain separate."
+  },
+  "source_raw_sha256": "8435ff8b1b770674f2e021ae52ada24a8091187eb4b0de4662f763b3bb7eee21",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": true,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}

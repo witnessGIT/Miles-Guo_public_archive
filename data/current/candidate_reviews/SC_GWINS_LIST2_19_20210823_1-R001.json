@@ -1,0 +1,45 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_19_20210823_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_19_20210823_1",
+  "reviewed_by": "agent-20261006T191453Z-a890f4a8",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-06T19:26:49Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20210823_001",
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_19.html",
+    "https://gwins.org/cn/milesguo/23263.html",
+    "https://odysee.com/@laxi:4/20210823_1:6",
+    "https://rumble.com/v59jshl-20210823-1.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS detail page 23263 visibly carries exact source_video_id 20210823_1 and is bound to this candidate from https://gwins.org/cn/milesguo/list_2_19.html.",
+    "date": "Candidate date 2021-08-23 agrees with the date and source id in the exact GWINS title.",
+    "title": "郭文贵2021年8月23日直播 20210823_1 中共病毒疫苗到底是什么；共产党的放毒计划；中共放毒传染的方式就是“疫苗”；这场生化大战美国和西方国家是输家，是北京和俄罗斯合作进行的超限战；每个战友都是传播病毒疫苗真相的信",
+    "platform_ids": [
+      "20210823_1",
+      "23263",
+      "@laxi:4/20210823_1:6",
+      "v59jshl-20210823-1"
+    ],
+    "source_relationships": "The exact GWINS detail page directly exposes the listed public media URL(s); generic site-home links were excluded.",
+    "deduplication": "Fresh current-data checks found no canonical record for exact source id 20210823_1. The distinct GWINS detail page 23263 and media IDs support LIVE_20210823_001; same-day items with different numbered source IDs remain separate."
+  },
+  "source_raw_sha256": "806c6deeaaf21ee31a3cc5d240a7c9a5f040488c1b43d86b4414642c76c32048",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": true,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}

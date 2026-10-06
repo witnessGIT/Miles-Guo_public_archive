@@ -1,0 +1,45 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_19_20210830_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_19_20210830_1",
+  "reviewed_by": "agent-20261006T191453Z-a890f4a8",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-06T19:26:49Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20210830_001",
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_19.html",
+    "https://gwins.org/cn/milesguo/23282.html",
+    "https://odysee.com/@laxi:4/20210830_1:b",
+    "https://rumble.com/v59kim5-20210830-1.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS detail page 23282 visibly carries exact source_video_id 20210830_1 and is bound to this candidate from https://gwins.org/cn/milesguo/list_2_19.html.",
+    "date": "Candidate date 2021-08-30 agrees with the date and source id in the exact GWINS title.",
+    "title": "郭文贵2021年8月30日直播 20210830_1 中共已经有解药：D-NAB；东奥会中国队员已经用青蒿素防病毒，屠呦呦的药都有效；从美军，郑州，香港看中共的解药；疫苗界的大咖很快会出来爆料；体制内将大换岗，特别是公检法",
+    "platform_ids": [
+      "20210830_1",
+      "23282",
+      "@laxi:4/20210830_1:b",
+      "v59kim5-20210830-1"
+    ],
+    "source_relationships": "The exact GWINS detail page directly exposes the listed public media URL(s); generic site-home links were excluded.",
+    "deduplication": "Fresh current-data checks found no canonical record for exact source id 20210830_1. The distinct GWINS detail page 23282 and media IDs support LIVE_20210830_001; same-day items with different numbered source IDs remain separate."
+  },
+  "source_raw_sha256": "1096f97731ddd3b3c2bc49714041f58373df4b1f48a93c92cea3b93f531c26cc",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": true,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}

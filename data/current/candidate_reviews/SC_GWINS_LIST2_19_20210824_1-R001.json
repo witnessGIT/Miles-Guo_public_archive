@@ -1,0 +1,45 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_19_20210824_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_19_20210824_1",
+  "reviewed_by": "agent-20261006T191453Z-a890f4a8",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-06T19:26:49Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20210824_001",
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_19.html",
+    "https://gwins.org/cn/milesguo/23264.html",
+    "https://odysee.com/@laxi:4/20210824_1:1",
+    "https://rumble.com/v59jtz9-20210824-1.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS detail page 23264 visibly carries exact source_video_id 20210824_1 and is bound to this candidate from https://gwins.org/cn/milesguo/list_2_19.html.",
+    "date": "Candidate date 2021-08-24 agrees with the date and source id in the exact GWINS title.",
+    "title": "郭文贵2021年8月24日直播 20210824_1 中共病毒和疫苗的生化超限战对世界经济的前所未有的打击；疫苗灾难给人类带来什么样危机；经济负增长意味着什么；有毒的口罩和疫苗都含有氧化石墨烯；新中国联邦农场战友全面开始互助互",
+    "platform_ids": [
+      "20210824_1",
+      "23264",
+      "@laxi:4/20210824_1:1",
+      "v59jtz9-20210824-1"
+    ],
+    "source_relationships": "The exact GWINS detail page directly exposes the listed public media URL(s); generic site-home links were excluded.",
+    "deduplication": "Fresh current-data checks found no canonical record for exact source id 20210824_1. The distinct GWINS detail page 23264 and media IDs support LIVE_20210824_001; same-day items with different numbered source IDs remain separate."
+  },
+  "source_raw_sha256": "a052216b2d7e17af7f72f464c2371e7fc9a74e10c98d27e92241ff4962c95444",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": true,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}

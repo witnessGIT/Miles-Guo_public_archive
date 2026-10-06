@@ -1,0 +1,46 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_19_20210822_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_19_20210822_1",
+  "reviewed_by": "agent-20261006T191453Z-a890f4a8",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-06T19:26:49Z",
+  "decision": "rejected_not_target",
+  "canonical_live_id": null,
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_19.html",
+    "https://gwins.org/cn/milesguo/23265.html",
+    "https://gettr.com/post/p8gis0d075",
+    "https://rumble.com/v59jr6d-20210822-1.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS detail page 23265 visibly carries exact source_video_id 20210822_1 and is bound to this candidate from https://gwins.org/cn/milesguo/list_2_19.html.",
+    "date": "Candidate date 2021-08-22 agrees with the date and source id in the exact GWINS title.",
+    "title": "郭文贵2021年8月22日盖特 20210822_1 尊敬的战友们好……共产党内部的经济到底坏到了什么样的程度？我们最近几天的直播在国内产生了什么样的影响……国内的同胞到底是怎么认知疫苗的？我们的灭共歌打榜的奇迹，深深地震撼了",
+    "platform_ids": [
+      "20210822_1",
+      "23265",
+      "p8gis0d075",
+      "v59jr6d-20210822-1"
+    ],
+    "source_relationships": "The exact GWINS detail page directly exposes the listed public media URL(s); generic site-home links were excluded.",
+    "deduplication": "Compared the exact source id, date, title, detail page, and exposed platform IDs with the other fixed-batch candidates; retained as a distinct non-livestream candidate and did not merge it into a canonical live."
+  },
+  "source_raw_sha256": "e2e7ccf36ca89db893a106e247932b5dedc0382d0e9dac88220b50cc31def4aa",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false,
+  "rejection_reason": "The exact GWINS title labels this item as a GETTR post (盖特), and its detail page exposes a direct GETTR post; it is a standalone platform video/update rather than an original livestream."
+}

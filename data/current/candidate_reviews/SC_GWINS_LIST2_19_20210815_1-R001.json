@@ -1,0 +1,46 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_19_20210815_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_19_20210815_1",
+  "reviewed_by": "agent-20261006T191453Z-a890f4a8",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-06T19:26:49Z",
+  "decision": "rejected_not_target",
+  "canonical_live_id": null,
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_19.html",
+    "https://gwins.org/cn/milesguo/23254.html",
+    "https://gettr.com/post/p7pold6922",
+    "https://rumble.com/v59j5rl-20210815-1.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS detail page 23254 visibly carries exact source_video_id 20210815_1 and is bound to this candidate from https://gwins.org/cn/milesguo/list_2_19.html.",
+    "date": "Candidate date 2021-08-15 agrees with the date and source id in the exact GWINS title.",
+    "title": "郭文贵2021年8月15日盖特 20210815_1 尊敬的战友们大家好．北戴河会议，有些什么样的决定？共产党的经济崩溃前……会有什么要疯狂的行动，中国的私人企业家的命运将走向何方？",
+    "platform_ids": [
+      "20210815_1",
+      "23254",
+      "p7pold6922",
+      "v59j5rl-20210815-1"
+    ],
+    "source_relationships": "The exact GWINS detail page directly exposes the listed public media URL(s); generic site-home links were excluded.",
+    "deduplication": "Compared the exact source id, date, title, detail page, and exposed platform IDs with the other fixed-batch candidates; retained as a distinct non-livestream candidate and did not merge it into a canonical live."
+  },
+  "source_raw_sha256": "fa453c85ee88595de13301c5a61811102807d36a8c368eb3bea71f4b2ab0195d",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false,
+  "rejection_reason": "The exact GWINS title labels this item as a GETTR post (盖特), and its detail page exposes a direct GETTR post; it is a standalone platform video/update rather than an original livestream."
+}

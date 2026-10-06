@@ -1,0 +1,45 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_19_20210820_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_19_20210820_1",
+  "reviewed_by": "agent-20261006T191453Z-a890f4a8",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-06T19:26:49Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20210820_001",
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_19.html",
+    "https://gwins.org/cn/milesguo/23253.html",
+    "https://odysee.com/@laxi:4/20210820_1:a",
+    "https://rumble.com/v59jof1-20210820-1.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS detail page 23253 visibly carries exact source_video_id 20210820_1 and is bound to this candidate from https://gwins.org/cn/milesguo/list_2_19.html.",
+    "date": "Candidate date 2021-08-20 agrees with the date and source id in the exact GWINS title.",
+    "title": "郭文贵2021年8月20日直播 20210820_1 文贵歌曲上榜世界最权威音乐排行榜Billboard 公告牌的重大意义；中共国即将面临的粮食危机和爆料革命精神上的富有及财富的成功来看中国人的未来",
+    "platform_ids": [
+      "20210820_1",
+      "23253",
+      "@laxi:4/20210820_1:a",
+      "v59jof1-20210820-1"
+    ],
+    "source_relationships": "The exact GWINS detail page directly exposes the listed public media URL(s); generic site-home links were excluded.",
+    "deduplication": "Fresh current-data checks found no canonical record for exact source id 20210820_1. The distinct GWINS detail page 23253 and media IDs support LIVE_20210820_001; same-day items with different numbered source IDs remain separate."
+  },
+  "source_raw_sha256": "51891a35a94871fe94b7470be0702da55f9fc907604ae1db786b1985ddf4c007",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": true,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}

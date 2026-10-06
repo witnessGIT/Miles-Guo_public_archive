@@ -1,0 +1,45 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_19_20210826_2-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_19_20210826_2",
+  "reviewed_by": "agent-20261006T191453Z-a890f4a8",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-06T19:26:49Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20210826_002",
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_19.html",
+    "https://gwins.org/cn/milesguo/23271.html",
+    "https://odysee.com/@laxi:4/20210826_2:7",
+    "https://rumble.com/v59k4hw-20210826-2.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS detail page 23271 visibly carries exact source_video_id 20210826_2 and is bound to this candidate from https://gwins.org/cn/milesguo/list_2_19.html.",
+    "date": "Candidate date 2021-08-26 agrees with the date and source id in the exact GWINS title.",
+    "title": "郭文贵2021年8月26日直播 20210826_2 摇滚歌神文贵先生现场签名直播",
+    "platform_ids": [
+      "20210826_2",
+      "23271",
+      "@laxi:4/20210826_2:7",
+      "v59k4hw-20210826-2"
+    ],
+    "source_relationships": "The exact GWINS detail page directly exposes the listed public media URL(s); generic site-home links were excluded.",
+    "deduplication": "Fresh current-data checks found no canonical record for exact source id 20210826_2. The distinct GWINS detail page 23271 and media IDs support LIVE_20210826_002; same-day items with different numbered source IDs remain separate."
+  },
+  "source_raw_sha256": "f771dbd9af6cf2a654d6c18dd87c349e934f7fda602b9d7a01c341f50a456eff",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": true,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}
