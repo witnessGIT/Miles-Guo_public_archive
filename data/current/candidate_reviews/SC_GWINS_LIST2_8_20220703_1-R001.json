@@ -1,0 +1,47 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_8_20220703_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_8_20220703_1",
+  "reviewed_by": "agent-20261006T191453Z-a890f4a8",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-06T20:06:58Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20220703_001",
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_8.html",
+    "https://gwins.org/cn/milesguo/23932.html",
+    "https://odysee.com/@laxi:4/20220703_1:f",
+    "https://rumble.com/v5al8bx-20220703-1.html",
+    "https://gettr.com/"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "Exact public GWINS page is bound to candidate SC_GWINS_LIST2_8_20220703_1 and page/source identifier list_2_8; identity visibility=True.",
+    "date": "Candidate date is 2022-07-03; no publication time was inferred.",
+    "title": "郭文贵2022年7月3日直播 20220703_1 文贵先生携百位战友戒烟宣誓大直播：立誓戒烟；一呼百应；健康灭共；言出必行 （1080P版）",
+    "platform_ids": [
+      "20220703_1",
+      "list_2_8",
+      "@laxi:4/20220703_1:f",
+      "v5al8bx-20220703-1",
+      ""
+    ],
+    "source_relationships": "Only exact public page URLs and concrete outbound platform links were retained; generic navigation links were excluded.",
+    "deduplication": "The exact GWINS title explicitly identifies an original livestream."
+  },
+  "source_raw_sha256": "9a06e14fcdb88931ee2503b0188c6609b300e4575991bab75ffb0a0254afa004",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": true,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}

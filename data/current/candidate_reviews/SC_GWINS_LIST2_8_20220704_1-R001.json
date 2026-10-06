@@ -1,0 +1,48 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_8_20220704_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_8_20220704_1",
+  "reviewed_by": "agent-20261006T191453Z-a890f4a8",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-06T20:06:58Z",
+  "decision": "rejected_not_target",
+  "canonical_live_id": null,
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_8.html",
+    "https://gwins.org/cn/milesguo/23966.html",
+    "https://gettr.com/post/p1h16oe3c88",
+    "https://rumble.com/v5alg7v-20220704-1.html",
+    "https://gettr.com/"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "Exact public GWINS page is bound to candidate SC_GWINS_LIST2_8_20220704_1 and page/source identifier list_2_8; identity visibility=True.",
+    "date": "Candidate date is 2022-07-04; no publication time was inferred.",
+    "title": "郭文贵2022年7月4日盖特 20220704_1 尊敬的战友们好，．今天是美国独立纪念日，也是盖特平台诞生，一周年纪念日。这是个伟大的日子．是人类历史最伟大的日子之一……天佑美国．……永远的祝福美国人民．美利坚共和国……繁",
+    "platform_ids": [
+      "20220704_1",
+      "list_2_8",
+      "p1h16oe3c88",
+      "v5alg7v-20220704-1",
+      ""
+    ],
+    "source_relationships": "Only exact public page URLs and concrete outbound platform links were retained; generic navigation links were excluded.",
+    "deduplication": "The exact GWINS title identifies a standalone GETTR update, short video, or rebroadcast rather than an original livestream."
+  },
+  "source_raw_sha256": "76db1b514896597c5df025f0e18c955541282d9d7e4ca905dd93535ff4fc10db",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false,
+  "rejection_reason": "The exact GWINS title identifies a standalone GETTR update, short video, or rebroadcast rather than an original livestream."
+}

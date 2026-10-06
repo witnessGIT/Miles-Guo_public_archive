@@ -1,0 +1,48 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_8_20220701_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_8_20220701_1",
+  "reviewed_by": "agent-20261006T191453Z-a890f4a8",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-06T20:06:58Z",
+  "decision": "rejected_not_target",
+  "canonical_live_id": null,
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_8.html",
+    "https://gwins.org/cn/milesguo/23964.html",
+    "https://gettr.com/post/p1gl58da147",
+    "https://rumble.com/v5al0ur-20220701-1.html",
+    "https://gettr.com/"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "Exact public GWINS page is bound to candidate SC_GWINS_LIST2_8_20220701_1 and page/source identifier list_2_8; identity visibility=True.",
+    "date": "Candidate date is 2022-07-01; no publication time was inferred.",
+    "title": "郭文贵2022年7月1日盖特 20220701_1 尊敬的战友们好……香港的7月1号的所谓25周年回归庆祝．政治活动，向世界展示了共产党的假空骗的本质．成为了人类历史上最大的一个有关中国人的，新版的皇帝新衣的政治大笑话，一切都已经",
+    "platform_ids": [
+      "20220701_1",
+      "list_2_8",
+      "p1gl58da147",
+      "v5al0ur-20220701-1",
+      ""
+    ],
+    "source_relationships": "Only exact public page URLs and concrete outbound platform links were retained; generic navigation links were excluded.",
+    "deduplication": "The exact GWINS title identifies a standalone GETTR update, short video, or rebroadcast rather than an original livestream."
+  },
+  "source_raw_sha256": "a165a94a864c865f6507e326d64f3b674816040fe2949a49103a5aef4366111e",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false,
+  "rejection_reason": "The exact GWINS title identifies a standalone GETTR update, short video, or rebroadcast rather than an original livestream."
+}

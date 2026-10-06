@@ -1,0 +1,48 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_8_20220703_2-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_8_20220703_2",
+  "reviewed_by": "agent-20261006T191453Z-a890f4a8",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-06T20:06:58Z",
+  "decision": "rejected_not_target",
+  "canonical_live_id": null,
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_8.html",
+    "https://gwins.org/cn/milesguo/23933.html",
+    "https://gettr.com/streaming/p1gyjqye5ca",
+    "https://rumble.com/v5alg5g-20220703-2.html",
+    "https://gettr.com/"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "Exact public GWINS page is bound to candidate SC_GWINS_LIST2_8_20220703_2 and page/source identifier list_2_8; identity visibility=True.",
+    "date": "Candidate date is 2022-07-03; no publication time was inferred.",
+    "title": "郭文贵2022年7月3日直播 20220703_2 女子戒烟监督团连线补播 （4K版）",
+    "platform_ids": [
+      "20220703_2",
+      "list_2_8",
+      "streaming/p1gyjqye5ca",
+      "v5alg5g-20220703-2",
+      ""
+    ],
+    "source_relationships": "Only exact public page URLs and concrete outbound platform links were retained; generic navigation links were excluded.",
+    "deduplication": "The exact GWINS title identifies a standalone GETTR update, short video, or rebroadcast rather than an original livestream."
+  },
+  "source_raw_sha256": "a5540137cf8a11ec08e8478a2906d4b1c2a059d476d5f18fa11869f5d725d955",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false,
+  "rejection_reason": "The exact GWINS title identifies a standalone GETTR update, short video, or rebroadcast rather than an original livestream."
+}

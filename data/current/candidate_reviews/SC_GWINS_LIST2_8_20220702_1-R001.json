@@ -1,0 +1,48 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_8_20220702_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_8_20220702_1",
+  "reviewed_by": "agent-20261006T191453Z-a890f4a8",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-06T20:06:58Z",
+  "decision": "rejected_not_target",
+  "canonical_live_id": null,
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_8.html",
+    "https://gwins.org/cn/milesguo/23965.html",
+    "https://gettr.com/post/p1gs6uoe90f",
+    "https://rumble.com/v5al0x6-20220702-1.html",
+    "https://gettr.com/"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "Exact public GWINS page is bound to candidate SC_GWINS_LIST2_8_20220702_1 and page/source identifier list_2_8; identity visibility=True.",
+    "date": "Candidate date is 2022-07-02; no publication time was inferred.",
+    "title": "郭文贵2022年7月2日盖特 20220702_1 尊敬的战友们好．香港的25周年纪念活动的成为世界最大的政治笑话、美国和欧洲正在全速创造的数字货币化的时代！以及完善相关的法律和规则．迅猛发展。这是新中国联邦人……抓住最伟大的历",
+    "platform_ids": [
+      "20220702_1",
+      "list_2_8",
+      "p1gs6uoe90f",
+      "v5al0x6-20220702-1",
+      ""
+    ],
+    "source_relationships": "Only exact public page URLs and concrete outbound platform links were retained; generic navigation links were excluded.",
+    "deduplication": "The exact GWINS title identifies a standalone GETTR update, short video, or rebroadcast rather than an original livestream."
+  },
+  "source_raw_sha256": "7dd6dc2709bd7abf9d922728a8bb97d930d4da605d6b66cc7d79bdc4e606a63d",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false,
+  "rejection_reason": "The exact GWINS title identifies a standalone GETTR update, short video, or rebroadcast rather than an original livestream."
+}

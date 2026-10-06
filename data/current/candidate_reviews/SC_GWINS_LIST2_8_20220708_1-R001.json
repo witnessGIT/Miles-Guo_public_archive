@@ -1,0 +1,47 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_8_20220708_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_8_20220708_1",
+  "reviewed_by": "agent-20261006T191453Z-a890f4a8",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-06T20:06:58Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20220708_001",
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_8.html",
+    "https://gwins.org/cn/milesguo/23936.html",
+    "https://odysee.com/@laxi:4/20220708_1:4",
+    "https://rumble.com/v5amoi4-20220708-1.html",
+    "https://gettr.com/"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "Exact public GWINS page is bound to candidate SC_GWINS_LIST2_8_20220708_1 and page/source identifier list_2_8; identity visibility=True.",
+    "date": "Candidate date is 2022-07-08; no publication time was inferred.",
+    "title": "郭文贵2022年7月8日直播 20220708_1 从日本安倍被杀害看中国人的人性……和智商。",
+    "platform_ids": [
+      "20220708_1",
+      "list_2_8",
+      "@laxi:4/20220708_1:4",
+      "v5amoi4-20220708-1",
+      ""
+    ],
+    "source_relationships": "Only exact public page URLs and concrete outbound platform links were retained; generic navigation links were excluded.",
+    "deduplication": "The exact GWINS title explicitly identifies an original livestream."
+  },
+  "source_raw_sha256": "6106a96754c06873916a063ea6edc83a6d532c3d4eb730392e16159b48bc124a",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": true,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}
