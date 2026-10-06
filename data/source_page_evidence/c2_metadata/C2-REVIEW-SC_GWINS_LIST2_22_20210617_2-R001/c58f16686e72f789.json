@@ -1,0 +1,52 @@
+{
+  "evidence_version": "c2-metadata-evidence-v1",
+  "request_sha256": "c58f16686e72f7898e9f060a3e8dfedd2b297a272b7719454c23fe5da4a86b01",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_22_20210617_2-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_22_20210617_2",
+  "agent_id": "agent-20261006T191534Z-d915df7b",
+  "requested_url": "https://gwins.org/cn/milesguo/23077.html",
+  "fetched_at": "2026-10-06T19:39:17.496157+00:00",
+  "review_decision": null,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "source_text_imported": false,
+  "status": "fetched",
+  "http_status": 200,
+  "final_url": "https://gwins.org/cn/milesguo/23077.html",
+  "raw_bytes": 9527,
+  "raw_sha256": "c82e95a2c9222587e17881a0225dc430ba2fa52c27b9a301259d3776f57ac408",
+  "metadata_evidence": {
+    "page_title": "郭文贵2021年6月17日盖特 20210617_2",
+    "metadata": {},
+    "decoding": {
+      "codec": "utf-8",
+      "strict": false,
+      "replacement_count": 17,
+      "title_clean": true,
+      "warning": "Damaged fields are not reliable; clean excerpts only. Missing cues are not absence evidence."
+    },
+    "expected_source_video_id": "20210617_2",
+    "expected_id_visible": true,
+    "outbound_links": [
+      "https://youtu.be/Tfhj28Ow6vQ",
+      "https://rumble.com/v59esvh-20210617-2.html",
+      "https://gettr.com/"
+    ],
+    "identity_type_cues": [
+      {
+        "paragraph_index": 2,
+        "excerpt": "郭文贵视频"
+      },
+      {
+        "paragraph_index": 20,
+        "excerpt": "视频链接：https://youtu.be/Tfhj28Ow6vQ"
+      },
+      {
+        "paragraph_index": 21,
+        "excerpt": "视频链接2：https://rumble.com/v59esvh-20210617-2.html"
+      }
+    ],
+    "cue_profile": "origin-context-v2",
+    "cue_warning": "Excerpts may discuss other recordings; a reviewer must resolve context. No automatic type decision."
+  }
+}
