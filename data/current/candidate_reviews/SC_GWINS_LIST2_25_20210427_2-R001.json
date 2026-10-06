@@ -1,0 +1,54 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_25_20210427_2-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_25_20210427_2",
+  "reviewed_by": "agent-20261006T191410Z-7c0f48fc",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-06T19:34:47Z",
+  "decision": "rejected_not_target",
+  "canonical_live_id": null,
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_25.html",
+    "https://gwins.org/cn/milesguo/22873.html",
+    "https://youtu.be/v2owTb5fCEg",
+    "https://rumble.com/v59c2at-20210427-2.html",
+    "https://gettr.com/"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS list candidate 20210427_2 maps to exact detail page 22873 parsed from https://gwins.org/cn/milesguo/list_2_25.html.",
+    "date": "Candidate date 2021-04-27 agrees with the date encoded in source id/title 20210427_2.",
+    "title": "郭文贵2021年4月27日盖特 20210427_2 偷偷餵snow冰棍！",
+    "platform_ids": [
+      "youtube:v2owTb5fCEg",
+      "rumble:v59c2at-20210427-2.html",
+      "gwins:22873",
+      "20210427_2"
+    ],
+    "source_relationships": "The exact GWINS detail page was fetched as bounded HTML metadata and outbound platform/page links were recorded; no media bytes were requested.",
+    "deduplication": "Compared fixed-batch source id, date, title, detail page, and exposed platform IDs; same-day numbered items remain separate unless direct identity evidence links them."
+  },
+  "source_page_capture": {
+    "url": "https://gwins.org/cn/milesguo/22873.html",
+    "retrieved_at": "2026-10-06T19:34:47Z",
+    "sha256": "5dceb9fff3662de170c25c7479f2f037891ada567cc6a9aadb9a9e148cd53c84",
+    "bytes": 10612,
+    "result": "metadata_verified"
+  },
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "transcription_performed": false,
+  "segmentation_performed": false,
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "rejection_reason": "The exact GWINS title labels this item as a GETTR/盖特 standalone update or short video rather than an original livestream; it is preserved as source evidence but not promoted into the canonical livestream catalog."
+}

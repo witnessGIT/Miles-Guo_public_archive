@@ -1,0 +1,51 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_24_20210523_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_24_20210523_1",
+  "reviewed_by": "agent-20261006T191410Z-7c0f48fc",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-06T19:34:47Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20210523_001",
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_24.html",
+    "https://gwins.org/cn/milesguo/22978.html",
+    "https://rumble.com/v59czw1-20210523-1.html",
+    "https://gettr.com/"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS list candidate 20210523_1 maps to exact detail page 22978 parsed from https://gwins.org/cn/milesguo/list_2_24.html.",
+    "date": "Candidate date 2021-05-23 agrees with the date encoded in source id/title 20210523_1.",
+    "title": "郭文贵2021年5月23日直播 20210523_1 中共的楼震，桥震，币震，粮震，随时脆断；Gnews，GTV，盖特，国际影响力巨大；九指妖故意毁坏财物暴露了，她是一个嫉妒心理变态，早已经背叛了爆料革命的叛徒",
+    "platform_ids": [
+      "rumble:v59czw1-20210523-1.html",
+      "gwins:22978",
+      "20210523_1"
+    ],
+    "source_relationships": "The exact GWINS detail page was fetched as bounded HTML metadata and outbound platform/page links were recorded; no media bytes were requested.",
+    "deduplication": "Compared fixed-batch source id, date, title, detail page, and exposed platform IDs; same-day numbered items remain separate unless direct identity evidence links them."
+  },
+  "source_page_capture": {
+    "url": "https://gwins.org/cn/milesguo/22978.html",
+    "retrieved_at": "2026-10-06T19:34:47Z",
+    "sha256": "7464287983c9dd4ccffd33bdf2a493f9dbd53017d82f6f0728c6ae0cfc606e26",
+    "bytes": 82346,
+    "result": "metadata_verified"
+  },
+  "canonical_promotion_performed": true,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "transcription_performed": false,
+  "segmentation_performed": false,
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ]
+}

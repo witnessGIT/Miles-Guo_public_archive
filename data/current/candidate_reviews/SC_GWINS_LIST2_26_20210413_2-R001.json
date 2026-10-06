@@ -1,0 +1,54 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_26_20210413_2-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_26_20210413_2",
+  "reviewed_by": "agent-20261006T191410Z-7c0f48fc",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-06T19:34:47Z",
+  "decision": "rejected_not_target",
+  "canonical_live_id": null,
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_26.html",
+    "https://gwins.org/cn/milesguo/22814.html",
+    "https://youtu.be/jv8wNLprHBw",
+    "https://rumble.com/v59b5gh-20210413-2.html",
+    "https://gettr.com/"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS list candidate 20210413_2 maps to exact detail page 22814 parsed from https://gwins.org/cn/milesguo/list_2_26.html.",
+    "date": "Candidate date 2021-04-13 agrees with the date encoded in source id/title 20210413_2.",
+    "title": "郭文贵2021年4月13日盖特 20210413_2 为什么美国和欧洲．每小时都有灭共的巨大的力量在凝聚和行动？我们战友们一定要客观冷静的看待G系列的投资！",
+    "platform_ids": [
+      "youtube:jv8wNLprHBw",
+      "rumble:v59b5gh-20210413-2.html",
+      "gwins:22814",
+      "20210413_2"
+    ],
+    "source_relationships": "The exact GWINS detail page was fetched as bounded HTML metadata and outbound platform/page links were recorded; no media bytes were requested.",
+    "deduplication": "Compared fixed-batch source id, date, title, detail page, and exposed platform IDs; same-day numbered items remain separate unless direct identity evidence links them."
+  },
+  "source_page_capture": {
+    "url": "https://gwins.org/cn/milesguo/22814.html",
+    "retrieved_at": "2026-10-06T19:34:47Z",
+    "sha256": "feb230d7ec43c26f7ee970a6287d8ea1cf1e842cf7a1345074bd0c19882ddd95",
+    "bytes": 19143,
+    "result": "metadata_verified"
+  },
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "transcription_performed": false,
+  "segmentation_performed": false,
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "rejection_reason": "The exact GWINS title labels this item as a GETTR/盖特 standalone update or short video rather than an original livestream; it is preserved as source evidence but not promoted into the canonical livestream catalog."
+}

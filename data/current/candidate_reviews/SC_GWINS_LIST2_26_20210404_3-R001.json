@@ -1,0 +1,53 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_26_20210404_3-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_26_20210404_3",
+  "reviewed_by": "agent-20261006T191410Z-7c0f48fc",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-06T19:34:47Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20210404_003",
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_26.html",
+    "https://gwins.org/cn/milesguo/22769.html",
+    "https://youtu.be/PjDlMnhHyss",
+    "https://rumble.com/v59ahwt-20210404-3.html",
+    "https://gettr.com/"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS list candidate 20210404_3 maps to exact detail page 22769 parsed from https://gwins.org/cn/milesguo/list_2_26.html.",
+    "date": "Candidate date 2021-04-04 agrees with the date encoded in source id/title 20210404_3.",
+    "title": "郭文贵2021年4月4日盖特 20210404_3 尊敬的战友们好，明天上午9:30文贵乱聊直播！谈谈共产党的以钱灭美的计划．和共产党为什么提倡过清明节？共产党病毒在武汉．中国．世界．到底杀了多少人？",
+    "platform_ids": [
+      "youtube:PjDlMnhHyss",
+      "rumble:v59ahwt-20210404-3.html",
+      "gwins:22769",
+      "20210404_3"
+    ],
+    "source_relationships": "The exact GWINS detail page was fetched as bounded HTML metadata and outbound platform/page links were recorded; no media bytes were requested.",
+    "deduplication": "Compared fixed-batch source id, date, title, detail page, and exposed platform IDs; same-day numbered items remain separate unless direct identity evidence links them."
+  },
+  "source_page_capture": {
+    "url": "https://gwins.org/cn/milesguo/22769.html",
+    "retrieved_at": "2026-10-06T19:34:47Z",
+    "sha256": "8252cf9b16387efc97358498fa972cdc31f0a21f9c24095f87221bde8318e38c",
+    "bytes": 13828,
+    "result": "metadata_verified"
+  },
+  "canonical_promotion_performed": true,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "transcription_performed": false,
+  "segmentation_performed": false,
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ]
+}

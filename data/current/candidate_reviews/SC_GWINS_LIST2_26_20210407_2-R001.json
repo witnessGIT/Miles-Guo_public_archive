@@ -1,0 +1,54 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_26_20210407_2-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_26_20210407_2",
+  "reviewed_by": "agent-20261006T191410Z-7c0f48fc",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-06T19:34:47Z",
+  "decision": "rejected_not_target",
+  "canonical_live_id": null,
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_26.html",
+    "https://gwins.org/cn/milesguo/22793.html",
+    "https://youtu.be/C3LZ2jQo5Oc",
+    "https://rumble.com/v59ailm-20210407-2.html",
+    "https://gettr.com/"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS list candidate 20210407_2 maps to exact detail page 22793 parsed from https://gwins.org/cn/milesguo/list_2_26.html.",
+    "date": "Candidate date 2021-04-07 agrees with the date encoded in source id/title 20210407_2.",
+    "title": "郭文贵2021年4月7日盖特 20210407_2 上次穿这件衣服的时候，我们新中国联邦还没有诞生，爆料革命的所处的环境和形势和今天大不相同，我们如何从这些变化和过去的时光里．得到和学到我们的经验……午餐后和战友们乱聊，7哥第",
+    "platform_ids": [
+      "youtube:C3LZ2jQo5Oc",
+      "rumble:v59ailm-20210407-2.html",
+      "gwins:22793",
+      "20210407_2"
+    ],
+    "source_relationships": "The exact GWINS detail page was fetched as bounded HTML metadata and outbound platform/page links were recorded; no media bytes were requested.",
+    "deduplication": "Compared fixed-batch source id, date, title, detail page, and exposed platform IDs; same-day numbered items remain separate unless direct identity evidence links them."
+  },
+  "source_page_capture": {
+    "url": "https://gwins.org/cn/milesguo/22793.html",
+    "retrieved_at": "2026-10-06T19:34:47Z",
+    "sha256": "14c0ac149407497147e6208b79bb001a7857f95c35b6066ae5a126862ce98da3",
+    "bytes": 19823,
+    "result": "metadata_verified"
+  },
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "transcription_performed": false,
+  "segmentation_performed": false,
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "rejection_reason": "The exact GWINS title labels this item as a GETTR/盖特 standalone update or short video rather than an original livestream; it is preserved as source evidence but not promoted into the canonical livestream catalog."
+}

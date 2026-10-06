@@ -1,0 +1,53 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_26_20210406_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_26_20210406_1",
+  "reviewed_by": "agent-20261006T191410Z-7c0f48fc",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-06T19:34:47Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20210406_001",
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_26.html",
+    "https://gwins.org/cn/milesguo/22791.html",
+    "https://youtu.be/tqnYeEy2JcY",
+    "https://rumble.com/v59aifx-20210406-1.html",
+    "https://gettr.com/"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS list candidate 20210406_1 maps to exact detail page 22791 parsed from https://gwins.org/cn/milesguo/list_2_26.html.",
+    "date": "Candidate date 2021-04-06 agrees with the date encoded in source id/title 20210406_1.",
+    "title": "郭文贵2021年4月6日盖特 20210406_1 文贵被昨天在华盛顿I DC抗议的GTV投资者……和战友们的行为．表现出来的新中国联邦人．的素质！多次感动！文贵昨天的直播在世界的政治舞台上，引起了巨大的反响！为什么呢？",
+    "platform_ids": [
+      "youtube:tqnYeEy2JcY",
+      "rumble:v59aifx-20210406-1.html",
+      "gwins:22791",
+      "20210406_1"
+    ],
+    "source_relationships": "The exact GWINS detail page was fetched as bounded HTML metadata and outbound platform/page links were recorded; no media bytes were requested.",
+    "deduplication": "Compared fixed-batch source id, date, title, detail page, and exposed platform IDs; same-day numbered items remain separate unless direct identity evidence links them."
+  },
+  "source_page_capture": {
+    "url": "https://gwins.org/cn/milesguo/22791.html",
+    "retrieved_at": "2026-10-06T19:34:47Z",
+    "sha256": "9134c369508a9301198fecc9b486c3c55db00a3d324c5c611ac04585071e58ed",
+    "bytes": 19970,
+    "result": "metadata_verified"
+  },
+  "canonical_promotion_performed": true,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "transcription_performed": false,
+  "segmentation_performed": false,
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ]
+}

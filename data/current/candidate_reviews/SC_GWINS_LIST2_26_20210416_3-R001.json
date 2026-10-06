@@ -1,0 +1,54 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_26_20210416_3-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_26_20210416_3",
+  "reviewed_by": "agent-20261006T191410Z-7c0f48fc",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-06T19:34:47Z",
+  "decision": "rejected_not_target",
+  "canonical_live_id": null,
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_26.html",
+    "https://gwins.org/cn/milesguo/22830.html",
+    "https://youtu.be/pMoE3f0CzWg",
+    "https://rumble.com/v59b7yt-20210416-3.html",
+    "https://gettr.com/"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS list candidate 20210416_3 maps to exact detail page 22830 parsed from https://gwins.org/cn/milesguo/list_2_26.html.",
+    "date": "Candidate date 2021-04-16 agrees with the date encoded in source id/title 20210416_3.",
+    "title": "郭文贵2021年4月16日盖特 20210416_3 根据我海东兄弟和叶钊颖妹妹的提醒．我现在做两组啊，让他们审核看是否符合标准，战友们一定要按照标准做这个姿势，否则会伤到身体．这非常的重要！ 智慧人生……科学健身！(第二段)另一",
+    "platform_ids": [
+      "youtube:pMoE3f0CzWg",
+      "rumble:v59b7yt-20210416-3.html",
+      "gwins:22830",
+      "20210416_3"
+    ],
+    "source_relationships": "The exact GWINS detail page was fetched as bounded HTML metadata and outbound platform/page links were recorded; no media bytes were requested.",
+    "deduplication": "Compared fixed-batch source id, date, title, detail page, and exposed platform IDs; same-day numbered items remain separate unless direct identity evidence links them."
+  },
+  "source_page_capture": {
+    "url": "https://gwins.org/cn/milesguo/22830.html",
+    "retrieved_at": "2026-10-06T19:34:47Z",
+    "sha256": "787ab5694cffa6fece48636dcac8df99fd75f6a2dc7d54c4ceb96014527e4647",
+    "bytes": 10301,
+    "result": "metadata_verified"
+  },
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "transcription_performed": false,
+  "segmentation_performed": false,
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "rejection_reason": "The exact GWINS title labels this item as a GETTR/盖特 standalone update or short video rather than an original livestream; it is preserved as source evidence but not promoted into the canonical livestream catalog."
+}

@@ -1,0 +1,54 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_25_20210420_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_25_20210420_1",
+  "reviewed_by": "agent-20261006T191410Z-7c0f48fc",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-06T19:34:47Z",
+  "decision": "rejected_not_target",
+  "canonical_live_id": null,
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_25.html",
+    "https://gwins.org/cn/milesguo/22843.html",
+    "https://youtu.be/6Id4msluTWo",
+    "https://rumble.com/v59bnul-20210420-1.html",
+    "https://gettr.com/"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS list candidate 20210420_1 maps to exact detail page 22843 parsed from https://gwins.org/cn/milesguo/list_2_25.html.",
+    "date": "Candidate date 2021-04-20 agrees with the date encoded in source id/title 20210420_1.",
+    "title": "郭文贵2021年4月20日盖特 20210420_1 尊敬的战友们好．美中刚刚 想了环境天气的双休高潮后！共产党为什么又在这个病毒肆虐的时候．高调的开启BGY海南论坛，再再推出老妈咪．大老仟．王岐山出来公关？( (习大神，三天不学习，赶",
+    "platform_ids": [
+      "youtube:6Id4msluTWo",
+      "rumble:v59bnul-20210420-1.html",
+      "gwins:22843",
+      "20210420_1"
+    ],
+    "source_relationships": "The exact GWINS detail page was fetched as bounded HTML metadata and outbound platform/page links were recorded; no media bytes were requested.",
+    "deduplication": "Compared fixed-batch source id, date, title, detail page, and exposed platform IDs; same-day numbered items remain separate unless direct identity evidence links them."
+  },
+  "source_page_capture": {
+    "url": "https://gwins.org/cn/milesguo/22843.html",
+    "retrieved_at": "2026-10-06T19:34:47Z",
+    "sha256": "17a2505d554a0549d20e905d4216f2a01dfd74ea8446554b665873eefe460747",
+    "bytes": 21530,
+    "result": "metadata_verified"
+  },
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "transcription_performed": false,
+  "segmentation_performed": false,
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "rejection_reason": "The exact GWINS title labels this item as a GETTR/盖特 standalone update or short video rather than an original livestream; it is preserved as source evidence but not promoted into the canonical livestream catalog."
+}

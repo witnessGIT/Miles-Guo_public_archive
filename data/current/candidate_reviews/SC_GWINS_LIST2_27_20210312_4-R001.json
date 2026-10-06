@@ -1,0 +1,54 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_27_20210312_4-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_27_20210312_4",
+  "reviewed_by": "agent-20261006T191410Z-7c0f48fc",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-06T19:34:47Z",
+  "decision": "rejected_not_target",
+  "canonical_live_id": null,
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_27.html",
+    "https://gwins.org/cn/milesguo/22657.html",
+    "https://youtu.be/cAuMvwV-1wk",
+    "https://rumble.com/v597yfx-20210312-4.html",
+    "https://gettr.com/"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS list candidate 20210312_4 maps to exact detail page 22657 parsed from https://gwins.org/cn/milesguo/list_2_27.html.",
+    "date": "Candidate date 2021-03-12 agrees with the date encoded in source id/title 20210312_4.",
+    "title": "郭文贵2021年3月12日盖特 20210312_4 在外面开会回来．文贵看到共产党病毒在西方世界……给中国人带来的负面影响，感到非常的恐惧和害怕，我们都要珍惜由爆料革命新中国联邦！为中国人在国际上打下这片天空！将共产党与共产",
+    "platform_ids": [
+      "youtube:cAuMvwV-1wk",
+      "rumble:v597yfx-20210312-4.html",
+      "gwins:22657",
+      "20210312_4"
+    ],
+    "source_relationships": "The exact GWINS detail page was fetched as bounded HTML metadata and outbound platform/page links were recorded; no media bytes were requested.",
+    "deduplication": "Compared fixed-batch source id, date, title, detail page, and exposed platform IDs; same-day numbered items remain separate unless direct identity evidence links them."
+  },
+  "source_page_capture": {
+    "url": "https://gwins.org/cn/milesguo/22657.html",
+    "retrieved_at": "2026-10-06T19:34:47Z",
+    "sha256": "c1166704191e9ef2bd7b08f2015a19c78afa941546e7b4fd5fd3ad359e905e02",
+    "bytes": 12548,
+    "result": "metadata_verified"
+  },
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "transcription_performed": false,
+  "segmentation_performed": false,
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "rejection_reason": "The exact GWINS title labels this item as a GETTR/盖特 standalone update or short video rather than an original livestream; it is preserved as source evidence but not promoted into the canonical livestream catalog."
+}

@@ -1,0 +1,52 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_25_20210430_4-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_25_20210430_4",
+  "reviewed_by": "agent-20261006T191410Z-7c0f48fc",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-06T19:34:47Z",
+  "decision": "rejected_not_target",
+  "canonical_live_id": null,
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_25.html",
+    "https://gwins.org/cn/milesguo/22880.html",
+    "https://rumble.com/v59c2xh-20210430-4.html",
+    "https://gettr.com/"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS list candidate 20210430_4 maps to exact detail page 22880 parsed from https://gwins.org/cn/milesguo/list_2_25.html.",
+    "date": "Candidate date 2021-04-30 agrees with the date encoded in source id/title 20210430_4.",
+    "title": "郭文贵2021年4月30日盖特 20210430_4 尊敬的戰友們好！剛剛录制幾個小時的［馬背英雄］新歌之後的感想．分享給大家！感謝唐平老師！威廉王老師！辛苦的付出！和對一個完全不具備唱歌的學生！所付出的耐心！一切都已经开始！",
+    "platform_ids": [
+      "rumble:v59c2xh-20210430-4.html",
+      "gwins:22880",
+      "20210430_4"
+    ],
+    "source_relationships": "The exact GWINS detail page was fetched as bounded HTML metadata and outbound platform/page links were recorded; no media bytes were requested.",
+    "deduplication": "Compared fixed-batch source id, date, title, detail page, and exposed platform IDs; same-day numbered items remain separate unless direct identity evidence links them."
+  },
+  "source_page_capture": {
+    "url": "https://gwins.org/cn/milesguo/22880.html",
+    "retrieved_at": "2026-10-06T19:34:47Z",
+    "sha256": "5f029b9d5e38f14499794d2434ac6aafa9b19a53848aa25ab39f842f142bc9a8",
+    "bytes": 17451,
+    "result": "metadata_verified"
+  },
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "transcription_performed": false,
+  "segmentation_performed": false,
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "rejection_reason": "The exact GWINS title labels this item as a GETTR/盖特 standalone update or short video rather than an original livestream; it is preserved as source evidence but not promoted into the canonical livestream catalog."
+}

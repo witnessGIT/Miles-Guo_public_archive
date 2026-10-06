@@ -1,0 +1,54 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_26_20210325_2-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_26_20210325_2",
+  "reviewed_by": "agent-20261006T191410Z-7c0f48fc",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-06T19:34:47Z",
+  "decision": "rejected_not_target",
+  "canonical_live_id": null,
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_26.html",
+    "https://gwins.org/cn/milesguo/22721.html",
+    "https://youtu.be/Qwq2gCGNCQA",
+    "https://rumble.com/v59881h-20210325-2.html",
+    "https://gettr.com/"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS list candidate 20210325_2 maps to exact detail page 22721 parsed from https://gwins.org/cn/milesguo/list_2_26.html.",
+    "date": "Candidate date 2021-03-25 agrees with the date encoded in source id/title 20210325_2.",
+    "title": "郭文贵2021年3月25日盖特 20210325_2 希望所有过去做过义工的战友们……尽快的和我们新成立的几个老战友信息核对工作组！和对过去义工战友信息的战友们的有关情况！完成我们对这些战友过去付出一些补偿，一切都已经开始！",
+    "platform_ids": [
+      "youtube:Qwq2gCGNCQA",
+      "rumble:v59881h-20210325-2.html",
+      "gwins:22721",
+      "20210325_2"
+    ],
+    "source_relationships": "The exact GWINS detail page was fetched as bounded HTML metadata and outbound platform/page links were recorded; no media bytes were requested.",
+    "deduplication": "Compared fixed-batch source id, date, title, detail page, and exposed platform IDs; same-day numbered items remain separate unless direct identity evidence links them."
+  },
+  "source_page_capture": {
+    "url": "https://gwins.org/cn/milesguo/22721.html",
+    "retrieved_at": "2026-10-06T19:34:47Z",
+    "sha256": "c5d337547a58fb812b857d2c09e3fd9f61809a8d4670cca20aa86049be523398",
+    "bytes": 13652,
+    "result": "metadata_verified"
+  },
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "transcription_performed": false,
+  "segmentation_performed": false,
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "rejection_reason": "The exact GWINS title labels this item as a GETTR/盖特 standalone update or short video rather than an original livestream; it is preserved as source evidence but not promoted into the canonical livestream catalog."
+}

@@ -1,0 +1,52 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_25_20210421_2-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_25_20210421_2",
+  "reviewed_by": "agent-20261006T191410Z-7c0f48fc",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-06T19:34:47Z",
+  "decision": "rejected_not_target",
+  "canonical_live_id": null,
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_25.html",
+    "https://gwins.org/cn/milesguo/22846.html",
+    "https://rumble.com/v59bo0l-20210421-2.html",
+    "https://gettr.com/"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS list candidate 20210421_2 maps to exact detail page 22846 parsed from https://gwins.org/cn/milesguo/list_2_25.html.",
+    "date": "Candidate date 2021-04-21 agrees with the date encoded in source id/title 20210421_2.",
+    "title": "郭文贵2021年4月21日盖特 20210421_2 今天文貴在這裡向戰友們爆大料！希望战友能廣泛傳播！這關係到人類的生命和安危⋯⋯和冠狀病毒的真相！誰不看這個視頻．將是巨大的損失誰不相信這個視頻！誰就會像一年前一樣．不相信氰",
+    "platform_ids": [
+      "rumble:v59bo0l-20210421-2.html",
+      "gwins:22846",
+      "20210421_2"
+    ],
+    "source_relationships": "The exact GWINS detail page was fetched as bounded HTML metadata and outbound platform/page links were recorded; no media bytes were requested.",
+    "deduplication": "Compared fixed-batch source id, date, title, detail page, and exposed platform IDs; same-day numbered items remain separate unless direct identity evidence links them."
+  },
+  "source_page_capture": {
+    "url": "https://gwins.org/cn/milesguo/22846.html",
+    "retrieved_at": "2026-10-06T19:34:47Z",
+    "sha256": "25474f5c29598c214e08fa0540168fd891ca6d57d7e9d48c11137cec033e77d8",
+    "bytes": 19598,
+    "result": "metadata_verified"
+  },
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "transcription_performed": false,
+  "segmentation_performed": false,
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "rejection_reason": "The exact GWINS title labels this item as a GETTR/盖特 standalone update or short video rather than an original livestream; it is preserved as source evidence but not promoted into the canonical livestream catalog."
+}

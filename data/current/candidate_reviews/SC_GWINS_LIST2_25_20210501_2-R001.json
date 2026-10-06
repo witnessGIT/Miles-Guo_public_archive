@@ -1,0 +1,54 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_25_20210501_2-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_25_20210501_2",
+  "reviewed_by": "agent-20261006T191410Z-7c0f48fc",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-06T19:34:47Z",
+  "decision": "rejected_not_target",
+  "canonical_live_id": null,
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_25.html",
+    "https://gwins.org/cn/milesguo/22885.html",
+    "https://youtu.be/Z2TZHlUMIjI",
+    "https://rumble.com/v59c36z-20210501-2.html",
+    "https://gettr.com/"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS list candidate 20210501_2 maps to exact detail page 22885 parsed from https://gwins.org/cn/milesguo/list_2_25.html.",
+    "date": "Candidate date 2021-05-01 agrees with the date encoded in source id/title 20210501_2.",
+    "title": "郭文贵2021年5月1日盖特 20210501_2 关于义工．漏报喜币配额的战友们的一些问题的回复！",
+    "platform_ids": [
+      "youtube:Z2TZHlUMIjI",
+      "rumble:v59c36z-20210501-2.html",
+      "gwins:22885",
+      "20210501_2"
+    ],
+    "source_relationships": "The exact GWINS detail page was fetched as bounded HTML metadata and outbound platform/page links were recorded; no media bytes were requested.",
+    "deduplication": "Compared fixed-batch source id, date, title, detail page, and exposed platform IDs; same-day numbered items remain separate unless direct identity evidence links them."
+  },
+  "source_page_capture": {
+    "url": "https://gwins.org/cn/milesguo/22885.html",
+    "retrieved_at": "2026-10-06T19:34:47Z",
+    "sha256": "66df5626e7ba06ccfebc49756a5b64eaf0f4fdbd610723c5fff5677734f4f7e2",
+    "bytes": 19384,
+    "result": "metadata_verified"
+  },
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "transcription_performed": false,
+  "segmentation_performed": false,
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "rejection_reason": "The exact GWINS title labels this item as a GETTR/盖特 standalone update or short video rather than an original livestream; it is preserved as source evidence but not promoted into the canonical livestream catalog."
+}

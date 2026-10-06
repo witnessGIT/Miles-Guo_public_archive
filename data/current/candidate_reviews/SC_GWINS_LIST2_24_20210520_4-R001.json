@@ -1,0 +1,54 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_24_20210520_4-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_24_20210520_4",
+  "reviewed_by": "agent-20261006T191410Z-7c0f48fc",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-06T19:34:47Z",
+  "decision": "rejected_not_target",
+  "canonical_live_id": null,
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_24.html",
+    "https://gwins.org/cn/milesguo/22968.html",
+    "https://youtu.be/ymX0KtMZ6bg",
+    "https://rumble.com/v59ctc4-20210520-4.html",
+    "https://gettr.com/"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS list candidate 20210520_4 maps to exact detail page 22968 parsed from https://gwins.org/cn/milesguo/list_2_24.html.",
+    "date": "Candidate date 2021-05-20 agrees with the date encoded in source id/title 20210520_4.",
+    "title": "郭文贵2021年5月20日盖特 20210520_4 感谢很多战友．对文贵昨天．试吃拉肚子的关心．和很多战友对虚拟货币．发生的这些灾难性事件·文贵的一些看法！",
+    "platform_ids": [
+      "youtube:ymX0KtMZ6bg",
+      "rumble:v59ctc4-20210520-4.html",
+      "gwins:22968",
+      "20210520_4"
+    ],
+    "source_relationships": "The exact GWINS detail page was fetched as bounded HTML metadata and outbound platform/page links were recorded; no media bytes were requested.",
+    "deduplication": "Compared fixed-batch source id, date, title, detail page, and exposed platform IDs; same-day numbered items remain separate unless direct identity evidence links them."
+  },
+  "source_page_capture": {
+    "url": "https://gwins.org/cn/milesguo/22968.html",
+    "retrieved_at": "2026-10-06T19:34:47Z",
+    "sha256": "8cea02939b7be4c354c58e3d4597afd8abc66f08c009b0596e46d2b6e349cc1e",
+    "bytes": 18872,
+    "result": "metadata_verified"
+  },
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "transcription_performed": false,
+  "segmentation_performed": false,
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "rejection_reason": "The exact GWINS title labels this item as a GETTR/盖特 standalone update or short video rather than an original livestream; it is preserved as source evidence but not promoted into the canonical livestream catalog."
+}

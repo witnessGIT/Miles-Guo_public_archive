@@ -1,0 +1,51 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_24_20210521_2-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_24_20210521_2",
+  "reviewed_by": "agent-20261006T191410Z-7c0f48fc",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-06T19:34:47Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20210521_002",
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_24.html",
+    "https://gwins.org/cn/milesguo/22970.html",
+    "https://rumble.com/v59cya5-20210521-2.html",
+    "https://gettr.com/"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS list candidate 20210521_2 maps to exact detail page 22970 parsed from https://gwins.org/cn/milesguo/list_2_24.html.",
+    "date": "Candidate date 2021-05-21 agrees with the date encoded in source id/title 20210521_2.",
+    "title": "郭文贵2021年5月21日直播 20210521_2 为新中国联邦一周年平安顺利进行．到纽约自由女神祈福",
+    "platform_ids": [
+      "rumble:v59cya5-20210521-2.html",
+      "gwins:22970",
+      "20210521_2"
+    ],
+    "source_relationships": "The exact GWINS detail page was fetched as bounded HTML metadata and outbound platform/page links were recorded; no media bytes were requested.",
+    "deduplication": "Compared fixed-batch source id, date, title, detail page, and exposed platform IDs; same-day numbered items remain separate unless direct identity evidence links them."
+  },
+  "source_page_capture": {
+    "url": "https://gwins.org/cn/milesguo/22970.html",
+    "retrieved_at": "2026-10-06T19:34:47Z",
+    "sha256": "56c29ac9b48dbdb6b03a6338f1fc92da61cfb2e05fc99dfbe80340c7dcf3a268",
+    "bytes": 37697,
+    "result": "metadata_verified"
+  },
+  "canonical_promotion_performed": true,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "transcription_performed": false,
+  "segmentation_performed": false,
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ]
+}

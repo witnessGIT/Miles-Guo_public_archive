@@ -1,0 +1,54 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_26_20210416_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_26_20210416_1",
+  "reviewed_by": "agent-20261006T191410Z-7c0f48fc",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-06T19:34:47Z",
+  "decision": "rejected_not_target",
+  "canonical_live_id": null,
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_26.html",
+    "https://gwins.org/cn/milesguo/22828.html",
+    "https://youtu.be/H3FJsrWxjOA",
+    "https://rumble.com/v59b7te-20210416-1.html",
+    "https://gettr.com/"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS list candidate 20210416_1 maps to exact detail page 22828 parsed from https://gwins.org/cn/milesguo/list_2_26.html.",
+    "date": "Candidate date 2021-04-16 agrees with the date encoded in source id/title 20210416_1.",
+    "title": "郭文贵2021年4月16日盖特 20210416_1 尊敬的战友们好……共产党在灭亡前夜……正在创造最大的经济泡沫，美国华尔街正在能制造一个世界经济的陷阱，我们如何把握住自己．踩着历史的节奏而不掉入陷阱，不被泡沫化．还要抓住的",
+    "platform_ids": [
+      "youtube:H3FJsrWxjOA",
+      "rumble:v59b7te-20210416-1.html",
+      "gwins:22828",
+      "20210416_1"
+    ],
+    "source_relationships": "The exact GWINS detail page was fetched as bounded HTML metadata and outbound platform/page links were recorded; no media bytes were requested.",
+    "deduplication": "Compared fixed-batch source id, date, title, detail page, and exposed platform IDs; same-day numbered items remain separate unless direct identity evidence links them."
+  },
+  "source_page_capture": {
+    "url": "https://gwins.org/cn/milesguo/22828.html",
+    "retrieved_at": "2026-10-06T19:34:47Z",
+    "sha256": "f309025544ad5c67cda86c80a9ef48227ff19fff070a156a14306f3a039c7dfb",
+    "bytes": 19437,
+    "result": "metadata_verified"
+  },
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "transcription_performed": false,
+  "segmentation_performed": false,
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "rejection_reason": "The exact GWINS title labels this item as a GETTR/盖特 standalone update or short video rather than an original livestream; it is preserved as source evidence but not promoted into the canonical livestream catalog."
+}
