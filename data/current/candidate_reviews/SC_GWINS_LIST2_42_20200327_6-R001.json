@@ -1,0 +1,40 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_42_20200327_6-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_42_20200327_6",
+  "reviewed_by": "agent-20261006T064300Z-gpt56sol-chat-c2",
+  "entry_mode": "ordinary_chat",
+  "reviewed_at": "2026-10-06T07:05:00Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20200327_006",
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_42.html",
+    "https://gwins.org/cn/milesguo/23712.html",
+    "https://youtu.be/EjcsHEYlmZo",
+    "https://rumble.com/v588erx-20200327-6.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "evidence_summary": {
+    "identity": "GWINS index and detail 23712 identify source record 20200327_6.",
+    "date": "GWINS detail publication date agrees with 2020-03-27.",
+    "title": "GWINS detail title agrees with the source candidate title.",
+    "platform_ids": [
+      "20200327_6",
+      "EjcsHEYlmZo",
+      "v588erx-20200327-6"
+    ],
+    "source_relationships": "GWINS detail 23712 directly exposes the recorded public media URLs.",
+    "deduplication": "Fresh repository checks found no current structured canonical files for 20200327_6; date, title, source id, and direct public media relationships support canonical identity LIVE_20200327_006."
+  },
+  "playback_performed": false,
+  "media_download_performed": false,
+  "transcription_performed": false,
+  "segmentation_performed": false
+}
