@@ -1,0 +1,52 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_12_20220221_2-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_12_20220221_2",
+  "reviewed_by": "agent-20261006T191534Z-d915df7b",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-06T20:03:04Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20220221_002",
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/23812.html",
+    "https://gettr.com/post/pvxtj8684e",
+    "https://rumble.com/v5a8til-20220221-2.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "Exact GWINS detail page 23812 contains source video ID 20220221_2 and a clean matching page title.",
+    "date": "Candidate date 2022-02-21 agrees with the source ID and detail-page title; no publication time was inferred.",
+    "title": "郭文贵2022年2月21日盖特 20220221_2 尊敬的战友们好中共国的化肥．农产品．以及粮食都在大涨价，这是为什么呢？所谓的最成功的北京冬奥会开完以后……中国人的生活有什么改变呢？世界形势巨变，为什么中国人又成了牺牲品呢",
+    "platform_ids": {
+      "gwins_page_id": "23812",
+      "gwins_video_id": "20220221_2",
+      "gettr_ids": [
+        "post:pvxtj8684e"
+      ],
+      "rumble_ids": [
+        "v5a8til"
+      ]
+    },
+    "source_relationships": "Only exact outbound platform links exposed by the verified GWINS detail page were attached; generic homepages were excluded.",
+    "deduplication": "Exact detail/media URLs and source_video_id were checked against the active SQLite inventory built from Git at 63ee52dcf6cf93b1b033f4671343b37a813ac822; exact matches link an existing canonical record, otherwise a date-scoped canonical ID is created without date-only merging."
+  },
+  "evidence_artifacts": [
+    "data/source_page_evidence/c2_metadata/C2-REVIEW-SC_GWINS_LIST2_12_20220221_2-R001/aeacc350f82cedbb.json"
+  ],
+  "source_raw_sha256": "643ad70c8545c997368b5d3167d9b29ee2738c45f4b5b9770354b80591204b7d",
+  "limitations": [
+    "Public HTML metadata and outbound links only; linked media was not opened or played.",
+    "No media download, ASR, transcript import, timing transfer, segmentation, or content-truth judgment."
+  ],
+  "canonical_promotion_performed": true,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}

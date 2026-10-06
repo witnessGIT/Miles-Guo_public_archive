@@ -1,0 +1,66 @@
+{
+  "evidence_version": "c2-metadata-evidence-v1",
+  "request_sha256": "aeacc350f82cedbb6fc6087ff6e55cab08ce9a9d239dcbc21fc5c3d064892487",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_12_20220221_2-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_12_20220221_2",
+  "agent_id": "agent-20261006T191534Z-d915df7b",
+  "requested_url": "https://gwins.org/cn/milesguo/23812.html",
+  "fetched_at": "2026-10-06T20:03:03.515857+00:00",
+  "review_decision": null,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "source_text_imported": false,
+  "status": "fetched",
+  "http_status": 200,
+  "final_url": "https://gwins.org/cn/milesguo/23812.html",
+  "raw_bytes": 17358,
+  "raw_sha256": "643ad70c8545c997368b5d3167d9b29ee2738c45f4b5b9770354b80591204b7d",
+  "metadata_evidence": {
+    "page_title": "郭文贵2022年2月21日盖特 20220221_2尊敬的战友们好中共国的化肥．农产品．以及粮食都在大涨价，这是为什么呢？所谓的最成功的北京冬奥会开完以后……中国人的生活有什么改变呢？世界形势巨变，为什么中国人又成了牺牲品呢",
+    "metadata": {
+      "description": "首页2022年2月21日郭先生盖特 — 视频1「8分03秒」2022年2月21日郭先生盖特 — 视频1「8分03秒」郭文贵先生盖特喜联盟七哥盖特组 Miles Guo’s Gettr 喜联盟七哥"
+    },
+    "decoding": {
+      "codec": "utf-8",
+      "strict": false,
+      "replacement_count": 17,
+      "title_clean": true,
+      "warning": "Damaged fields are not reliable; clean excerpts only. Missing cues are not absence evidence."
+    },
+    "expected_source_video_id": "20220221_2",
+    "expected_id_visible": true,
+    "outbound_links": [
+      "https://gettr.com/post/pvxtj8684e",
+      "https://rumble.com/v5a8til-20220221-2.html",
+      "https://gettr.com/"
+    ],
+    "identity_type_cues": [
+      {
+        "paragraph_index": 2,
+        "excerpt": "郭文贵视频"
+      },
+      {
+        "paragraph_index": 20,
+        "excerpt": "视频链接：https://gettr.com/post/pvxtj8684e"
+      },
+      {
+        "paragraph_index": 21,
+        "excerpt": "视频链接2：https://rumble.com/v5a8til-20220221-2.html"
+      },
+      {
+        "paragraph_index": 26,
+        "excerpt": "首页2022年2月21日郭先生盖特 — 视频1「8分03秒」"
+      },
+      {
+        "paragraph_index": 27,
+        "excerpt": "2022年2月21日郭先生盖特 — 视频1「8分03秒」"
+      },
+      {
+        "paragraph_index": 41,
+        "excerpt": "啥都不说了，后天直播。星期三一次大直播，星期五一场大直播，星期六还有一场大直播— 教育直播，然后星期天还有一场直播 — 很多呀！"
+      }
+    ],
+    "cue_profile": "origin-context-v2",
+    "cue_warning": "Excerpts may discuss other recordings; a reviewer must resolve context. No automatic type decision."
+  }
+}
