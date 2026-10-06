@@ -1,0 +1,39 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GETTR_P24A7MKF35C_DETAIL-R001",
+  "source_candidate_id": "SC_GETTR_P24A7MKF35C_DETAIL",
+  "reviewed_by": "agent-20261006T191453Z-a890f4a8",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-06T20:10:53Z",
+  "decision": "linked_existing_canonical",
+  "canonical_live_id": "LIVE_20230108_001",
+  "evidence_urls": [
+    "https://gettr.com/post/p24a7mkf35c"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "Exact public GETTRSEARCH page is bound to candidate SC_GETTR_P24A7MKF35C_DETAIL and page/source identifier p24a7mkf35c; identity visibility=False.",
+    "date": "Candidate date is 2023-01-08; no publication time was inferred.",
+    "title": "2023.01.08 文贵大直播：世界经济危机会给爆料革命带来什么？",
+    "platform_ids": [
+      "p24a7mkf35c"
+    ],
+    "source_relationships": "Only exact public page URLs and concrete outbound platform links were retained; generic navigation links were excluded.",
+    "deduplication": "The exact GETTR post URL is already attached to the matching canonical live."
+  },
+  "source_raw_sha256": "793ffebdf90aa3c982a3fb6a2a75763f46f418e41534d29f7a0c205689e6e733",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}
