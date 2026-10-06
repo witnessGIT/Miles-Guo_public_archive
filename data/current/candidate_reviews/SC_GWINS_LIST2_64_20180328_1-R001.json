@@ -1,0 +1,45 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_64_20180328_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_64_20180328_1",
+  "reviewed_by": "agent-20261006T191453Z-a890f4a8",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-06T19:42:42Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20180328_001",
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_64.html",
+    "https://gwins.org/cn/milesguo/132.html",
+    "https://www.youtube.com/watch?v=liomOb4aMqQ&t=148s ",
+    "https://rumble.com/v577z1h-20180328-1.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS detail page 132 visibly carries exact source_video_id 20180328_1 and is bound to this candidate from https://gwins.org/cn/milesguo/list_2_64.html.",
+    "date": "Candidate date 2018-03-28 agrees with the date and source id in the exact GWINS title.",
+    "title": "郭文贵2018年3月28日第一次直播 20180328_1 谈香港警察如何黑抓我们的员工和钱",
+    "platform_ids": [
+      "20180328_1",
+      "132",
+      "liomOb4aMqQ",
+      "v577z1h-20180328-1"
+    ],
+    "source_relationships": "The exact GWINS detail page directly exposes the listed public media URL(s); generic site-home links were excluded.",
+    "deduplication": "Fresh current-data checks found no canonical record for exact source id 20180328_1. The distinct GWINS detail page 132 and media IDs support LIVE_20180328_001; same-day items with different numbered source IDs remain separate."
+  },
+  "source_raw_sha256": "659373173e8f6cacc993a4bd936c0c42907a8618960771d6c49b28042284dcca",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": true,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}

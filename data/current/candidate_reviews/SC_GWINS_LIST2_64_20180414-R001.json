@@ -1,0 +1,46 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_64_20180414-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_64_20180414",
+  "reviewed_by": "agent-20261006T191453Z-a890f4a8",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-06T19:42:42Z",
+  "decision": "rejected_not_target",
+  "canonical_live_id": null,
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_64.html",
+    "https://gwins.org/cn/milesguo/152.html",
+    "https://www.youtube.com/watch?v=uJFt5tdCsyQ",
+    "https://rumble.com/v5781a5-20180414.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS detail page 152 visibly carries exact source_video_id 20180414 and is bound to this candidate from https://gwins.org/cn/milesguo/list_2_64.html.",
+    "date": "Candidate date 2018-04-14 agrees with the date and source id in the exact GWINS title.",
+    "title": "郭文贵2018年4月14日视频 20180414 谈美国及盟国导弹袭击叙利亚是中国的第二次战略机会还是盗国贼盗国的最大机会",
+    "platform_ids": [
+      "20180414",
+      "152",
+      "uJFt5tdCsyQ",
+      "v5781a5-20180414"
+    ],
+    "source_relationships": "The exact GWINS detail page directly exposes the listed public media URL(s); generic site-home links were excluded.",
+    "deduplication": "Compared the exact source id, date, title, detail page, and exposed platform IDs with the other fixed-batch candidates; retained as a distinct non-livestream candidate and did not merge it into a canonical live."
+  },
+  "source_raw_sha256": "2fc012c0798fc022dbcf3ee9a4549f2a19ff4f711ab577626adddaaee416a258",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false,
+  "rejection_reason": "The exact GWINS title and current-item context identify a standalone recorded video, interview, or update rather than an original livestream; neighboring livestreams are explicitly labeled, while this record is preserved without canonical promotion."
+}

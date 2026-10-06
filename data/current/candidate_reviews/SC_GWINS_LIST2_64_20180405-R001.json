@@ -1,0 +1,46 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_64_20180405-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_64_20180405",
+  "reviewed_by": "agent-20261006T191453Z-a890f4a8",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-06T19:42:42Z",
+  "decision": "rejected_not_target",
+  "canonical_live_id": null,
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_64.html",
+    "https://gwins.org/cn/milesguo/146.html",
+    "https://www.youtube.com/watch?v=ZziR9o7OcL8&t=8s",
+    "https://rumble.com/v5780ej-20180405.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS detail page 146 visibly carries exact source_video_id 20180405 and is bound to this candidate from https://gwins.org/cn/milesguo/list_2_64.html.",
+    "date": "Candidate date 2018-04-05 agrees with the date and source id in the exact GWINS title.",
+    "title": "郭文贵2018年4月5日视频 20180405 告诉您吴小晖飞机上的牛人是谁",
+    "platform_ids": [
+      "20180405",
+      "146",
+      "ZziR9o7OcL8",
+      "v5780ej-20180405"
+    ],
+    "source_relationships": "The exact GWINS detail page directly exposes the listed public media URL(s); generic site-home links were excluded.",
+    "deduplication": "Compared the exact source id, date, title, detail page, and exposed platform IDs with the other fixed-batch candidates; retained as a distinct non-livestream candidate and did not merge it into a canonical live."
+  },
+  "source_raw_sha256": "df7a33a2f4d284ac53be2d2978aba4c8c82d53900eecab0d0210a5ab29a189ca",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false,
+  "rejection_reason": "The exact GWINS title and current-item context identify a standalone recorded video, interview, or update rather than an original livestream; neighboring livestreams are explicitly labeled, while this record is preserved without canonical promotion."
+}

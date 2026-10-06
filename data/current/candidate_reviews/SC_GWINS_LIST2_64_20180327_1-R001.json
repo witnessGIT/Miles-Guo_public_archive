@@ -1,0 +1,45 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_64_20180327_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_64_20180327_1",
+  "reviewed_by": "agent-20261006T191453Z-a890f4a8",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-06T19:42:42Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20180327_001",
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_64.html",
+    "https://gwins.org/cn/milesguo/21775.html",
+    "https://youtu.be/V_9BC9KozT0",
+    "https://rumble.com/v577yvp-20180327-1.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS detail page 21775 visibly carries exact source_video_id 20180327_1 and is bound to this candidate from https://gwins.org/cn/milesguo/list_2_64.html.",
+    "date": "Candidate date 2018-03-27 agrees with the date and source id in the exact GWINS title.",
+    "title": "郭文贵2018年3月27日直播 20180327_1 -海航3月29日要重新洗牌．王岐山要干什么大事",
+    "platform_ids": [
+      "20180327_1",
+      "21775",
+      "V_9BC9KozT0",
+      "v577yvp-20180327-1"
+    ],
+    "source_relationships": "The exact GWINS detail page directly exposes the listed public media URL(s); generic site-home links were excluded.",
+    "deduplication": "Fresh current-data checks found no canonical record for exact source id 20180327_1. The distinct GWINS detail page 21775 and media IDs support LIVE_20180327_001; same-day items with different numbered source IDs remain separate."
+  },
+  "source_raw_sha256": "f0bad8c83499052a312341794e97eca7c6b9ec39fe720fbe0571f548e5e13cce",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": true,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}
