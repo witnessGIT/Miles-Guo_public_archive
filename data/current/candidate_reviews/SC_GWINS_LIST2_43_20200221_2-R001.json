@@ -1,0 +1,40 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_43_20200221_2-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_43_20200221_2",
+  "reviewed_by": "agent-20261006T064500Z-gpt56sol-chat-c2",
+  "entry_mode": "ordinary_chat",
+  "reviewed_at": "2026-10-06T06:55:00Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20200221_002",
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_43.html",
+    "https://gwins.org/cn/milesguo/1114.html",
+    "https://odysee.com/@laxi:4/20200221_2:5",
+    "https://rumble.com/v585y0s-20200221-2.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "evidence_summary": {
+    "identity": "GWINS list_2_43 index and detail 1114 identify the exact titled source record 20200221_2.",
+    "date": "GWINS detail publication date agrees with 2020-02-21.",
+    "title": "GWINS detail title agrees with the source candidate title.",
+    "platform_ids": [
+      "20200221_2",
+      "https://odysee.com/@laxi:4/20200221_2:5",
+      "https://rumble.com/v585y0s-20200221-2.html"
+    ],
+    "source_relationships": "GWINS detail 1114 directly exposes the recorded media links.",
+    "deduplication": "Current structured archive contains no existing c2 review data for 20200221_2; exact title, detail identity, date, and direct media relationships support new canonical LIVE_20200221_002."
+  },
+  "playback_performed": false,
+  "media_download_performed": false,
+  "transcription_performed": false,
+  "segmentation_performed": false
+}
