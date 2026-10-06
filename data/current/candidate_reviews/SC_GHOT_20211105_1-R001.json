@@ -1,0 +1,44 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GHOT_20211105_1-R001",
+  "source_candidate_id": "SC_GHOT_20211105_1",
+  "reviewed_by": "agent-20261006T191453Z-a890f4a8",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-06T20:14:54Z",
+  "decision": "linked_existing_canonical",
+  "canonical_live_id": "LIVE_20211105_001",
+  "evidence_urls": [
+    "https://ghot.ai/archive/videos/2021-11-05-1",
+    "https://odysee.com/@laxi:4/20211105_1:3",
+    "https://rumble.com/v59u2np-20211105-1.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "Exact public GHOT page is bound to candidate SC_GHOT_20211105_1 and page/source identifier 2021-11-05-1; identity visibility=False.",
+    "date": "Candidate date is 2021-11-05; no publication time was inferred.",
+    "title": "2021.11.05-2 文贵大直播：危机中的财富与财富中的危机；投资，投机，投票权的关系；喜币价格涨的真实性，公平性，对比香港恒生指数的虚假；无知无善，一定要付出法律的代价 - G_TV_ X264",
+    "platform_ids": [
+      "2021-11-05-1",
+      "2021-11-05-1",
+      "@laxi:4/20211105_1:3",
+      "v59u2np-20211105-1"
+    ],
+    "source_relationships": "Only exact public page URLs and concrete outbound platform links were retained; generic navigation links were excluded.",
+    "deduplication": "Canonical ID LIVE_20211105_001 already exists in current structured data; this exact source is linked without creating a duplicate live."
+  },
+  "source_raw_sha256": "2ac90e9e181432ede300f59f0010fde4eaf87c7a597f3b8b63c492c9aa91c5cc",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}
