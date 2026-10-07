@@ -1,0 +1,44 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GHOT_20230309_1-R001",
+  "source_candidate_id": "SC_GHOT_20230309_1",
+  "reviewed_by": "agent-20261006T191453Z-a890f4a8",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-07T01:20:23Z",
+  "decision": "linked_existing_canonical",
+  "canonical_live_id": "LIVE_20230309_001",
+  "evidence_urls": [
+    "https://ghot.ai/archive/videos/2023-03-09-1",
+    "https://gettr.com/post/p2ay7q8f1fa",
+    "https://rumble.com/v5b2st9-20230309-1.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "Exact public GHOT page is bound to candidate SC_GHOT_20230309_1 and page/source identifier 2023-03-09-1; identity visibility=False.",
+    "date": "Candidate date is 2023-03-09; no publication time was inferred.",
+    "title": "2023.03.09 尊敬的战友们好......中国共产党的两会还在意淫搞乱搞死台湾，企图控制世界，搞死美国",
+    "platform_ids": [
+      "2023-03-09-1",
+      "2023-03-09-1",
+      "p2ay7q8f1fa",
+      "v5b2st9-20230309-1"
+    ],
+    "source_relationships": "Only exact public page URLs and concrete outbound platform links were retained; generic navigation links were excluded.",
+    "deduplication": "Exact outbound platform URLs already belong to the named canonical live."
+  },
+  "source_raw_sha256": "08f3e0508eb054abf349bae69bcaeabd1f8ef765918605a76d9fc40fd201fc88",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}
