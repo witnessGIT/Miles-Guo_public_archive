@@ -1,0 +1,46 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_8_20220606_2-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_8_20220606_2",
+  "reviewed_by": "agent-20261006T191453Z-a890f4a8",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-07T01:16:55Z",
+  "decision": "rejected_not_target",
+  "canonical_live_id": null,
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_8.html",
+    "https://gwins.org/cn/milesguo/23953.html",
+    "https://gettr.com/post/p1cwij94054",
+    "https://rumble.com/v5aiob1-20220606-2.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "Exact public GWINS page is bound to candidate SC_GWINS_LIST2_8_20220606_2 and page/source identifier list_2_8; identity visibility=True.",
+    "date": "Candidate date is 2022-06-06; no publication time was inferred.",
+    "title": "郭文贵2022年6月6日盖特 20220606_2 尊敬的战友们好……祝今天离开曼哈顿纽约的战友们……一路平安，今天的短暂别离，是为了我们永久的相聚，永远珍惜和感恩……我们一起度过美好的无与伦比的时刻……万分万分的感谢感谢，",
+    "platform_ids": [
+      "20220606_2",
+      "list_2_8",
+      "p1cwij94054",
+      "v5aiob1-20220606-2"
+    ],
+    "source_relationships": "Only exact public page URLs and concrete outbound platform links were retained; generic navigation links were excluded.",
+    "deduplication": "The exact GWINS title identifies a standalone GETTR update, short video, or rebroadcast rather than an original livestream."
+  },
+  "source_raw_sha256": "4f0caeeeef110cb84ec9935eeba7690ad1b8a0a08e333a492b8963fa921fb0bb",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false,
+  "rejection_reason": "The exact GWINS title identifies a standalone GETTR update, short video, or rebroadcast rather than an original livestream."
+}

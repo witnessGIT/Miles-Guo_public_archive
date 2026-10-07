@@ -1,0 +1,46 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_8_20220605_2-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_8_20220605_2",
+  "reviewed_by": "agent-20261006T191453Z-a890f4a8",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-07T01:16:55Z",
+  "decision": "rejected_not_target",
+  "canonical_live_id": null,
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_8.html",
+    "https://gwins.org/cn/milesguo/23952.html",
+    "https://gettr.com/post/p1csnprf813",
+    "https://rumble.com/v5ainv0-20220605-2.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "Exact public GWINS page is bound to candidate SC_GWINS_LIST2_8_20220605_2 and page/source identifier list_2_8; identity visibility=True.",
+    "date": "Candidate date is 2022-06-05; no publication time was inferred.",
+    "title": "郭文贵2022年6月5日盖特 20220605_2 尊敬的战友们好．新中国联邦建国两周年的纪念日．开启了个新的时代！任何事物在相对公平，客观的对比情况下．得出的结果就是真理，昨天我们证明了真理是存在的．人性．人格．人命，是可",
+    "platform_ids": [
+      "20220605_2",
+      "list_2_8",
+      "p1csnprf813",
+      "v5ainv0-20220605-2"
+    ],
+    "source_relationships": "Only exact public page URLs and concrete outbound platform links were retained; generic navigation links were excluded.",
+    "deduplication": "The exact GWINS title identifies a standalone GETTR update, short video, or rebroadcast rather than an original livestream."
+  },
+  "source_raw_sha256": "732b61c9dcf6eabb5b36748ea30664e7abf541164721802fc35e6dd5676e55b1",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false,
+  "rejection_reason": "The exact GWINS title identifies a standalone GETTR update, short video, or rebroadcast rather than an original livestream."
+}

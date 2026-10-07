@@ -1,0 +1,46 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_8_20220609_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_8_20220609_1",
+  "reviewed_by": "agent-20261006T191453Z-a890f4a8",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-07T01:16:55Z",
+  "decision": "rejected_not_target",
+  "canonical_live_id": null,
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_8.html",
+    "https://gwins.org/cn/milesguo/23955.html",
+    "https://gettr.com/post/p1ddatf2f9e",
+    "https://rumble.com/v5airr7-20220609-1.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "Exact public GWINS page is bound to candidate SC_GWINS_LIST2_8_20220609_1 and page/source identifier list_2_8; identity visibility=True.",
+    "date": "Candidate date is 2022-06-09; no publication time was inferred.",
+    "title": "郭文贵2022年6月9日盖特 20220609_1 尊敬的战友们好．疫苗灾难．正在中共国．正在以不可思议的速度．在发生中．我们一定要耐心．对待我们所有的家人．朋友，战友．更要珍惜．新中国联邦独有的这种上天恩赐！",
+    "platform_ids": [
+      "20220609_1",
+      "list_2_8",
+      "p1ddatf2f9e",
+      "v5airr7-20220609-1"
+    ],
+    "source_relationships": "Only exact public page URLs and concrete outbound platform links were retained; generic navigation links were excluded.",
+    "deduplication": "The exact GWINS title identifies a standalone GETTR update, short video, or rebroadcast rather than an original livestream."
+  },
+  "source_raw_sha256": "0d40ba1bff17ad93622d0b9bf4a96305e40c51ed1f0a3109fd0d571199c586e7",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false,
+  "rejection_reason": "The exact GWINS title identifies a standalone GETTR update, short video, or rebroadcast rather than an original livestream."
+}

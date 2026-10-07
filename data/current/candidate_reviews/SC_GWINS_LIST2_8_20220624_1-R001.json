@@ -1,0 +1,45 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_8_20220624_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_8_20220624_1",
+  "reviewed_by": "agent-20261006T191453Z-a890f4a8",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-07T01:16:55Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20220624_001",
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_8.html",
+    "https://gwins.org/cn/milesguo/23929.html",
+    "https://odysee.com/20220624_1:c",
+    "https://rumble.com/v5akfqd-20220624-1.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "Exact public GWINS page is bound to candidate SC_GWINS_LIST2_8_20220624_1 and page/source identifier list_2_8; identity visibility=True.",
+    "date": "Candidate date is 2022-06-24; no publication time was inferred.",
+    "title": "郭文贵2022年6月24日直播 20220624_1 七哥出山爆大料；中共死期已然到；时代变革高科技；无苗有币最风骚；世界经济大海啸；中国面临脱钩潮；爆料革命新生代；扎扎实实向前跑 （4K版）",
+    "platform_ids": [
+      "20220624_1",
+      "list_2_8",
+      "20220624_1:c",
+      "v5akfqd-20220624-1"
+    ],
+    "source_relationships": "Only exact public page URLs and concrete outbound platform links were retained; generic navigation links were excluded.",
+    "deduplication": "The exact GWINS title explicitly identifies an original livestream."
+  },
+  "source_raw_sha256": "0970a4a6751914d001d5d6fd03d342a0346804c33bdac2ea58b5d058e5615444",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": true,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}

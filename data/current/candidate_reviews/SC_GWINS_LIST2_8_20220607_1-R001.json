@@ -1,0 +1,46 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_8_20220607_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_8_20220607_1",
+  "reviewed_by": "agent-20261006T191453Z-a890f4a8",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-07T01:16:55Z",
+  "decision": "rejected_not_target",
+  "canonical_live_id": null,
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_8.html",
+    "https://gwins.org/cn/milesguo/23954.html",
+    "https://gettr.com/post/p1d1r9n1866",
+    "https://rumble.com/v5aioc5-20220607-1.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "Exact public GWINS page is bound to candidate SC_GWINS_LIST2_8_20220607_1 and page/source identifier list_2_8; identity visibility=True.",
+    "date": "Candidate date is 2022-06-07; no publication time was inferred.",
+    "title": "郭文贵2022年6月7日盖特 20220607_1 尊敬的战友们好，全球在华投资者……都在从中国大陆撤出生产线……和全面的撤回投资的资金。这是共产党灭亡前．必然发生的现象！和当年大清朝倒闭时．所有的皇亲贵族．把钱转到美国花旗",
+    "platform_ids": [
+      "20220607_1",
+      "list_2_8",
+      "p1d1r9n1866",
+      "v5aioc5-20220607-1"
+    ],
+    "source_relationships": "Only exact public page URLs and concrete outbound platform links were retained; generic navigation links were excluded.",
+    "deduplication": "The exact GWINS title identifies a standalone GETTR update, short video, or rebroadcast rather than an original livestream."
+  },
+  "source_raw_sha256": "0f81368cc2c339a650afaea87e6f79b875ee43cd065b3e41d20f8c3e82ece445",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false,
+  "rejection_reason": "The exact GWINS title identifies a standalone GETTR update, short video, or rebroadcast rather than an original livestream."
+}
