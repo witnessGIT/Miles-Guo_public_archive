@@ -1,0 +1,44 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_20230118_1-R001",
+  "source_candidate_id": "SC_GWINS_20230118_1",
+  "reviewed_by": "agent-20261006T191453Z-a890f4a8",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-07T01:22:30Z",
+  "decision": "linked_existing_canonical",
+  "canonical_live_id": "LIVE_20230118_001",
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/24239.html",
+    "https://gettr.com/post/p25gemgfd82",
+    "https://rumble.com/v5b160t-20230118-1.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "Exact public GWINS page is bound to candidate SC_GWINS_20230118_1 and page/source identifier 24239; identity visibility=True.",
+    "date": "Candidate date is 2023-01-18; no publication time was inferred.",
+    "title": "郭文贵2023年1月18日直播 20230118_1 习近平身体的迅速变坏是否会加速攻打台湾（Studio新直播平台）",
+    "platform_ids": [
+      "20230118_1",
+      "24239",
+      "p25gemgfd82",
+      "v5b160t-20230118-1"
+    ],
+    "source_relationships": "Only exact public page URLs and concrete outbound platform links were retained; generic navigation links were excluded.",
+    "deduplication": "Canonical ID LIVE_20230118_001 already exists in current structured data; this exact source is linked without creating a duplicate live."
+  },
+  "source_raw_sha256": "c068aec1236f2c40e075cf0969fcd75d5f875486c058fc007da6853e6ad90f4f",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}
