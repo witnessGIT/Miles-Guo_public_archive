@@ -1,0 +1,46 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_23_20210606_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_23_20210606_1",
+  "reviewed_by": "agent-20261006T191453Z-a890f4a8",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-07T01:24:59Z",
+  "decision": "rejected_not_target",
+  "canonical_live_id": null,
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_23.html",
+    "https://gwins.org/cn/milesguo/23039.html",
+    "https://youtu.be/WHC1HnT1ils",
+    "https://rumble.com/v59ejcx-20210606-1.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "Exact public GWINS page is bound to candidate SC_GWINS_LIST2_23_20210606_1 and page/source identifier list_2_23; identity visibility=True.",
+    "date": "Candidate date is 2021-06-06; no publication time was inferred.",
+    "title": "郭文贵2021年6月6日盖特 20210606_1 尊敬的战友们好！新中国联邦的宣言．和爆料革命的．行动力．正在对冲掉共产党在中共的一切谎言．爆料革命将横扫中共在世界上任何一个角落的黑暗的力量！",
+    "platform_ids": [
+      "20210606_1",
+      "list_2_23",
+      "WHC1HnT1ils",
+      "v59ejcx-20210606-1"
+    ],
+    "source_relationships": "Only exact public page URLs and concrete outbound platform links were retained; generic navigation links were excluded.",
+    "deduplication": "The exact GWINS title identifies a standalone GETTR update, short video, or rebroadcast rather than an original livestream."
+  },
+  "source_raw_sha256": "47e906f71b642f4ba101abb185a8c0e9d30c0c3845ffa65b67f1d86429f69f3c",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false,
+  "rejection_reason": "The exact GWINS title identifies a standalone GETTR update, short video, or rebroadcast rather than an original livestream."
+}

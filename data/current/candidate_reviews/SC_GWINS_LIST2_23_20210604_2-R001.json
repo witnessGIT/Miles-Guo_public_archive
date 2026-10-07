@@ -1,0 +1,45 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_23_20210604_2-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_23_20210604_2",
+  "reviewed_by": "agent-20261006T191453Z-a890f4a8",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-07T01:24:59Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20210604_002",
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_23.html",
+    "https://gwins.org/cn/milesguo/23032.html",
+    "https://odysee.com/@laxi:4/20210604_2:6",
+    "https://rumble.com/v59e3px-20210604-2.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "Exact public GWINS page is bound to candidate SC_GWINS_LIST2_23_20210604_2 and page/source identifier list_2_23; identity visibility=True.",
+    "date": "Candidate date is 2021-06-04; no publication time was inferred.",
+    "title": "郭文贵2021年6月4日直播 20210604_2 文贵谈新中国联邦周年庆观后感，及国内的反响；三个重镑人物，军事大佬弗林将军，经济沼泽地摩根家族，政治新星枕头哥；更多新中国联邦的新人，有才能的战友将涌现出来",
+    "platform_ids": [
+      "20210604_2",
+      "list_2_23",
+      "@laxi:4/20210604_2:6",
+      "v59e3px-20210604-2"
+    ],
+    "source_relationships": "Only exact public page URLs and concrete outbound platform links were retained; generic navigation links were excluded.",
+    "deduplication": "The exact GWINS title explicitly identifies an original livestream."
+  },
+  "source_raw_sha256": "ac7dc5b28cd074c18d399a8a287403ae2e1c3fee5da325df4d9009ea791c0738",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": true,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}

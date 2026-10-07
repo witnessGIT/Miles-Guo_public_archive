@@ -1,0 +1,45 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_23_20210530_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_23_20210530_1",
+  "reviewed_by": "agent-20261006T191453Z-a890f4a8",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-07T01:24:59Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20210530_001",
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_23.html",
+    "https://gwins.org/cn/milesguo/23012.html",
+    "https://odysee.com/@laxi:4/20210530_1:9",
+    "https://rumble.com/v59d4kr-20210530-1.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "Exact public GWINS page is bound to candidate SC_GWINS_LIST2_23_20210530_1 and page/source identifier list_2_23; identity visibility=True.",
+    "date": "Candidate date is 2021-05-30; no publication time was inferred.",
+    "title": "郭文贵2021年5月30日直播 20210530_1 欧中协议被冻结的重大意义；中共将被WTO，世界银行，IMF踢出；法国情报局曝出孟宏伟被消失的真相；欧美通过香港P3实验室向中共提供资金；中共将彻底灭亡于2024，2025",
+    "platform_ids": [
+      "20210530_1",
+      "list_2_23",
+      "@laxi:4/20210530_1:9",
+      "v59d4kr-20210530-1"
+    ],
+    "source_relationships": "Only exact public page URLs and concrete outbound platform links were retained; generic navigation links were excluded.",
+    "deduplication": "The exact GWINS title explicitly identifies an original livestream."
+  },
+  "source_raw_sha256": "d5b74e8134f87dc20927f171db1de8a0d1bfb33e5affb8d6f76923114396b215",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": true,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}
