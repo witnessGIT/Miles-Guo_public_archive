@@ -1,0 +1,46 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_27_20210316_3-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_27_20210316_3",
+  "reviewed_by": "agent-20261006T191453Z-a890f4a8",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-07T02:02:10Z",
+  "decision": "rejected_not_target",
+  "canonical_live_id": null,
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_27.html",
+    "https://gwins.org/cn/milesguo/22684.html",
+    "https://youtu.be/tUCCRIcbRJs",
+    "https://rumble.com/v5983rh-20210316-3.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "Exact public GWINS page is bound to candidate SC_GWINS_LIST2_27_20210316_3 and page/source identifier list_2_27; identity visibility=True.",
+    "date": "Candidate date is 2021-03-16; no publication time was inferred.",
+    "title": "郭文贵2021年3月16日盖特 20210316_3 没钱的文贵只能吃点粗茶淡饭！",
+    "platform_ids": [
+      "20210316_3",
+      "list_2_27",
+      "tUCCRIcbRJs",
+      "v5983rh-20210316-3"
+    ],
+    "source_relationships": "Only exact public page URLs and concrete outbound platform links were retained; generic navigation links were excluded.",
+    "deduplication": "The exact GWINS title identifies a standalone GETTR update, short video, or rebroadcast rather than an original livestream."
+  },
+  "source_raw_sha256": "813451523a5e90162752f90a6c1096c68d67c4a96c371afbde514207ee29b86b",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false,
+  "rejection_reason": "The exact GWINS title identifies a standalone GETTR update, short video, or rebroadcast rather than an original livestream."
+}

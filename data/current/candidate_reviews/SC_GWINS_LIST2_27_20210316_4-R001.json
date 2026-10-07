@@ -1,0 +1,46 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_27_20210316_4-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_27_20210316_4",
+  "reviewed_by": "agent-20261006T191453Z-a890f4a8",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-07T02:02:10Z",
+  "decision": "rejected_not_target",
+  "canonical_live_id": null,
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_27.html",
+    "https://gwins.org/cn/milesguo/22685.html",
+    "https://youtu.be/9-xIIpw7iLg",
+    "https://rumble.com/v5983u1-20210316-4.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "Exact public GWINS page is bound to candidate SC_GWINS_LIST2_27_20210316_4 and page/source identifier list_2_27; identity visibility=True.",
+    "date": "Candidate date is 2021-03-16; no publication time was inferred.",
+    "title": "郭文贵2021年3月16日盖特 20210316_4 文贵在此，拜托，所有的战友．在汇款的时候，务必要填全．填准确．所有的汇款信息，避免给自己．或他人．带来更多的不方便。这是我们共同成长的过程。我们要做好享受财富．驾驭财富，让",
+    "platform_ids": [
+      "20210316_4",
+      "list_2_27",
+      "9-xIIpw7iLg",
+      "v5983u1-20210316-4"
+    ],
+    "source_relationships": "Only exact public page URLs and concrete outbound platform links were retained; generic navigation links were excluded.",
+    "deduplication": "The exact GWINS title identifies a standalone GETTR update, short video, or rebroadcast rather than an original livestream."
+  },
+  "source_raw_sha256": "6752c23b78acd134c4aa8c35143488ed2d2c6213c3645f5f6ccbef599bda9b1e",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false,
+  "rejection_reason": "The exact GWINS title identifies a standalone GETTR update, short video, or rebroadcast rather than an original livestream."
+}
