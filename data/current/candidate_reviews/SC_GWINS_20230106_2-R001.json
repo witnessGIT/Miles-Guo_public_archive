@@ -1,0 +1,42 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_20230106_2-R001",
+  "source_candidate_id": "SC_GWINS_20230106_2",
+  "reviewed_by": "agent-20261006T191453Z-a890f4a8",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-07T01:21:19Z",
+  "decision": "linked_existing_canonical",
+  "canonical_live_id": "LIVE_20230106_002",
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/24275.html",
+    "https://rumble.com/v5b0yjx-20230106-2.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "Exact public GWINS page is bound to candidate SC_GWINS_20230106_2 and page/source identifier 24275; identity visibility=True.",
+    "date": "Candidate date is 2023-01-06; no publication time was inferred.",
+    "title": "郭文贵2023年1月6日直播 20230106_2 来GETTR看 MILES GUO直播 七哥试玩Studio新直播功能",
+    "platform_ids": [
+      "20230106_2",
+      "24275",
+      "v5b0yjx-20230106-2"
+    ],
+    "source_relationships": "Only exact public page URLs and concrete outbound platform links were retained; generic navigation links were excluded.",
+    "deduplication": "Canonical ID LIVE_20230106_002 already exists in current structured data; this exact source is linked without creating a duplicate live."
+  },
+  "source_raw_sha256": "ef3cc08e3055ca9a4354b2af64333cb4513b5e197cb4c429560b6c1d9045a354",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}
