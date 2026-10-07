@@ -1,0 +1,45 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_70_20170709-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_70_20170709",
+  "reviewed_by": "agent-20261006T191534Z-d915df7b",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-07T01:28:53Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20170709_001",
+  "evidence_urls": [
+    "https://www.gwins.org/cn/milesguo/list_2_70.html",
+    "https://www.gwins.org/cn/milesguo/595.html",
+    "https://www.youtube.com/watch?v=JpTFppOYU0Q",
+    "https://rumble.com/v576wpx-20170709.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS detail page 595 carries source_video_id 20170709 and binds it to this candidate.",
+    "date": "Candidate date 2017-07-09 agrees with the date and source id in the public GWINS title.",
+    "title": "郭文贵2017年7月9日直播试网络 20170709 文贵爆的王岐山傅政华盗国贼们的事情大陆人的真实感受",
+    "platform_ids": [
+      "20170709",
+      "595",
+      "JpTFppOYU0Q",
+      "v576wpx-20170709"
+    ],
+    "source_relationships": "The public GWINS detail page directly exposes the listed media URL(s); generic site-home links were excluded.",
+    "deduplication": "Fresh current-data checks found no canonical record for exact source id 20170709. The distinct GWINS record supports LIVE_20170709_001; same-day numbered items remain separate."
+  },
+  "source_raw_sha256": "d07fa8f7038c6cc89dfc8e3e3955e5d7c0d48d08fd00808ec7257a7c9d8e994a",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": true,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}

@@ -1,0 +1,45 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_70_20170724_3-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_70_20170724_3",
+  "reviewed_by": "agent-20261006T191534Z-d915df7b",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-07T01:28:53Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20170724_003",
+  "evidence_urls": [
+    "https://www.gwins.org/cn/milesguo/list_2_70.html",
+    "https://www.gwins.org/cn/milesguo/21735.html",
+    "https://youtu.be/jrFQu20KPn0",
+    "https://rumble.com/v576ygz-20170724-3.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS detail page 21735 carries source_video_id 20170724_3 and binds it to this candidate.",
+    "date": "Candidate date 2017-07-24 agrees with the date and source id in the public GWINS title.",
+    "title": "郭文贵2017年7月24日第三次直播 20170724_3",
+    "platform_ids": [
+      "20170724_3",
+      "21735",
+      "jrFQu20KPn0",
+      "v576ygz-20170724-3"
+    ],
+    "source_relationships": "The public GWINS detail page directly exposes the listed media URL(s); generic site-home links were excluded.",
+    "deduplication": "Fresh current-data checks found no canonical record for exact source id 20170724_3. The distinct GWINS record supports LIVE_20170724_003; same-day numbered items remain separate."
+  },
+  "source_raw_sha256": "ad601fd6ddc1bb4b04058f5165a6bd030044a6fd145e875b84d3060ea04c5d11",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": true,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}

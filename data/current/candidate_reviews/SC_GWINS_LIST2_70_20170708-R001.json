@@ -1,0 +1,45 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_70_20170708-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_70_20170708",
+  "reviewed_by": "agent-20261006T191534Z-d915df7b",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-07T01:28:53Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20170708_001",
+  "evidence_urls": [
+    "https://www.gwins.org/cn/milesguo/list_2_70.html",
+    "https://www.gwins.org/cn/milesguo/594.html",
+    "https://www.youtube.com/watch?v=UMImhzaD7Og",
+    "https://rumble.com/v576wi5-20170708.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS detail page 594 carries source_video_id 20170708 and binds it to this candidate.",
+    "date": "Candidate date 2017-07-08 agrees with the date and source id in the public GWINS title.",
+    "title": "郭文贵2017年7月8日 20170708 文贵与王岐山的啪啪啪的能力比较",
+    "platform_ids": [
+      "20170708",
+      "594",
+      "UMImhzaD7Og",
+      "v576wi5-20170708"
+    ],
+    "source_relationships": "The public GWINS detail page directly exposes the listed media URL(s); generic site-home links were excluded.",
+    "deduplication": "Fresh current-data checks found no canonical record for exact source id 20170708. The distinct GWINS record supports LIVE_20170708_001; same-day numbered items remain separate."
+  },
+  "source_raw_sha256": "5d17da626b993e7f4f64ecd21bc2ced8e656f3ec9f3c15e4bb92d2d448831bfd",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": true,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}

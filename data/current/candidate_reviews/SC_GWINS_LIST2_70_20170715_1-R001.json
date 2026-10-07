@@ -1,0 +1,45 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_70_20170715_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_70_20170715_1",
+  "reviewed_by": "agent-20261006T191534Z-d915df7b",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-07T01:28:53Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20170715_001",
+  "evidence_urls": [
+    "https://www.gwins.org/cn/milesguo/list_2_70.html",
+    "https://www.gwins.org/cn/milesguo/596.html",
+    "https://www.youtube.com/watch?v=eDhL2za0d3k",
+    "https://rumble.com/v576x85-20170715.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS detail page 596 carries source_video_id 20170715 and binds it to this candidate.",
+    "date": "Candidate date 2017-07-15 agrees with the date and source id in the public GWINS title.",
+    "title": "郭文贵2017年7月15日 20170715 关于范冰冰起诉．海航20万亿线",
+    "platform_ids": [
+      "20170715",
+      "596",
+      "eDhL2za0d3k",
+      "v576x85-20170715"
+    ],
+    "source_relationships": "The public GWINS detail page directly exposes the listed media URL(s); generic site-home links were excluded.",
+    "deduplication": "Fresh current-data checks found no canonical record for exact source id 20170715. The distinct GWINS record supports LIVE_20170715_001; same-day numbered items remain separate."
+  },
+  "source_raw_sha256": "bbf7b1d350162ae5a01bf0c25a88fe435d3c0add73f40801dc4e418d06108372",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": true,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}

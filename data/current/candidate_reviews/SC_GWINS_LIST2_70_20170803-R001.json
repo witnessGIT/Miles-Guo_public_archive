@@ -1,0 +1,45 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_70_20170803-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_70_20170803",
+  "reviewed_by": "agent-20261006T191534Z-d915df7b",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-07T01:28:53Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20170803_001",
+  "evidence_urls": [
+    "https://www.gwins.org/cn/milesguo/list_2_70.html",
+    "https://www.gwins.org/cn/milesguo/601.html",
+    "https://www.youtube.com/watch?v=gc_Pgwd6N9U",
+    "https://rumble.com/v5770a4-20170803.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS detail page 601 carries source_video_id 20170803 and binds it to this candidate.",
+    "date": "Candidate date 2017-08-03 agrees with the date and source id in the public GWINS title.",
+    "title": "郭文贵2017年8月3日 20170803 关于网上虚假录音和香港警察搜查文贵香港办公室",
+    "platform_ids": [
+      "20170803",
+      "601",
+      "gc_Pgwd6N9U",
+      "v5770a4-20170803"
+    ],
+    "source_relationships": "The public GWINS detail page directly exposes the listed media URL(s); generic site-home links were excluded.",
+    "deduplication": "Fresh current-data checks found no canonical record for exact source id 20170803. The distinct GWINS record supports LIVE_20170803_001; same-day numbered items remain separate."
+  },
+  "source_raw_sha256": "cdf6e8f7f0c3fd5bc79a3e570f89a91c39f1c50a52927e40a3570a135da97c3e",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": true,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}

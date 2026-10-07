@@ -1,0 +1,45 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_70_20170814_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_70_20170814_1",
+  "reviewed_by": "agent-20261006T191534Z-d915df7b",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-07T01:28:53Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20170814_001",
+  "evidence_urls": [
+    "https://www.gwins.org/cn/milesguo/list_2_70.html",
+    "https://www.gwins.org/cn/milesguo/21736.html",
+    "https://youtu.be/65fVyeE00x0",
+    "https://rumble.com/v5772gt-20170814-1.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS detail page 21736 carries source_video_id 20170814_1 and binds it to this candidate.",
+    "date": "Candidate date 2017-08-14 agrees with the date and source id in the public GWINS title.",
+    "title": "郭文贵2017年8月14日直播 20170814_1 报平安：我没被爆头；19大后多人将下马；预言政法系的马化腾活不过50岁？！马云的蚂蚁金服也会收归国有，从而完全控制民众舆论及民间财富。",
+    "platform_ids": [
+      "20170814_1",
+      "21736",
+      "65fVyeE00x0",
+      "v5772gt-20170814-1"
+    ],
+    "source_relationships": "The public GWINS detail page directly exposes the listed media URL(s); generic site-home links were excluded.",
+    "deduplication": "Fresh current-data checks found no canonical record for exact source id 20170814_1. The distinct GWINS record supports LIVE_20170814_001; same-day numbered items remain separate."
+  },
+  "source_raw_sha256": "30cc89256ac64977154c70386ff977f55f515d7a7da9f442b7024630a4eac324",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": true,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}

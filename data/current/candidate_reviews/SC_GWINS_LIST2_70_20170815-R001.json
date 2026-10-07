@@ -1,0 +1,45 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_70_20170815-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_70_20170815",
+  "reviewed_by": "agent-20261006T191534Z-d915df7b",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-07T01:28:53Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20170815_001",
+  "evidence_urls": [
+    "https://www.gwins.org/cn/milesguo/list_2_70.html",
+    "https://www.gwins.org/cn/milesguo/605.html",
+    "https://www.youtube.com/watch?v=fhZ1ZPSkI4E",
+    "https://rumble.com/v57732d-20170815.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS detail page 605 carries source_video_id 20170815 and binds it to this candidate.",
+    "date": "Candidate date 2017-08-15 agrees with the date and source id in the public GWINS title.",
+    "title": "郭文贵2017年8月15日 20170815 盗国贼和香港警察如何以警以黑治国治港",
+    "platform_ids": [
+      "20170815",
+      "605",
+      "fhZ1ZPSkI4E",
+      "v57732d-20170815"
+    ],
+    "source_relationships": "The public GWINS detail page directly exposes the listed media URL(s); generic site-home links were excluded.",
+    "deduplication": "Fresh current-data checks found no canonical record for exact source id 20170815. The distinct GWINS record supports LIVE_20170815_001; same-day numbered items remain separate."
+  },
+  "source_raw_sha256": "c02da918e446a794364d9e0e713963f697d17e488fd3c470f0c0a3d107f8464c",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": true,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}

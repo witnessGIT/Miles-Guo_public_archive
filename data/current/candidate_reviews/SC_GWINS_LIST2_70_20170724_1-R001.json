@@ -1,0 +1,45 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_70_20170724_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_70_20170724_1",
+  "reviewed_by": "agent-20261006T191534Z-d915df7b",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-07T01:28:53Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20170724_001",
+  "evidence_urls": [
+    "https://www.gwins.org/cn/milesguo/list_2_70.html",
+    "https://www.gwins.org/cn/milesguo/597.html",
+    "https://youtu.be/eiWYsmY8wzY",
+    "https://rumble.com/v576y59-20170724-1.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS detail page 597 carries source_video_id 20170724_1 and binds it to this candidate.",
+    "date": "Candidate date 2017-07-24 agrees with the date and source id in the public GWINS title.",
+    "title": "郭文贵2017年7月24日第一次直播 20170724_1 王岐山盗国贼们的恐惧",
+    "platform_ids": [
+      "20170724_1",
+      "597",
+      "eiWYsmY8wzY",
+      "v576y59-20170724-1"
+    ],
+    "source_relationships": "The public GWINS detail page directly exposes the listed media URL(s); generic site-home links were excluded.",
+    "deduplication": "Fresh current-data checks found no canonical record for exact source id 20170724_1. The distinct GWINS record supports LIVE_20170724_001; same-day numbered items remain separate."
+  },
+  "source_raw_sha256": "69ea58bfe6aae6666521b5445eb50ff340c2d5de6c186f19594c1a579aa53c59",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": true,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}

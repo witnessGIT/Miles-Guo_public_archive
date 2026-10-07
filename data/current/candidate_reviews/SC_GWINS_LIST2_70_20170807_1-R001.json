@@ -1,0 +1,45 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_70_20170807_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_70_20170807_1",
+  "reviewed_by": "agent-20261006T191534Z-d915df7b",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-07T01:28:53Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20170807_001",
+  "evidence_urls": [
+    "https://www.gwins.org/cn/milesguo/list_2_70.html",
+    "https://www.gwins.org/cn/milesguo/604.html",
+    "https://www.youtube.com/watch?v=lsyXYGGaAMI",
+    "https://rumble.com/v5771g3-20170807-1.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS detail page 604 carries source_video_id 20170807_1 and binds it to this candidate.",
+    "date": "Candidate date 2017-08-07 agrees with the date and source id in the public GWINS title.",
+    "title": "郭文贵2017年8月7日直播 20170807_1 报平安直播---台湾香港的危与机．王岐山为什么要用三条杀规威胁范冰冰！",
+    "platform_ids": [
+      "20170807_1",
+      "604",
+      "lsyXYGGaAMI",
+      "v5771g3-20170807-1"
+    ],
+    "source_relationships": "The public GWINS detail page directly exposes the listed media URL(s); generic site-home links were excluded.",
+    "deduplication": "Fresh current-data checks found no canonical record for exact source id 20170807_1. The distinct GWINS record supports LIVE_20170807_001; same-day numbered items remain separate."
+  },
+  "source_raw_sha256": "c75a9dbac6a8310b1f656c363cd87c9d0322ff5f427efc65068a12464745ccd8",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": true,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}

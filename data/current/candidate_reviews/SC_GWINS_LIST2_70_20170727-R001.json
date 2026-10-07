@@ -1,0 +1,45 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_70_20170727-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_70_20170727",
+  "reviewed_by": "agent-20261006T191534Z-d915df7b",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-07T01:28:53Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20170727_001",
+  "evidence_urls": [
+    "https://www.gwins.org/cn/milesguo/list_2_70.html",
+    "https://www.gwins.org/cn/milesguo/600.html",
+    "https://www.youtube.com/watch?v=fvB1Ryni34I",
+    "https://rumble.com/v576zr9-20170727.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS detail page 600 carries source_video_id 20170727 and binds it to this candidate.",
+    "date": "Candidate date 2017-07-27 agrees with the date and source id in the public GWINS title.",
+    "title": "郭文贵2017年7月27日 20170727 王岐山的真姚庆到底怕什么",
+    "platform_ids": [
+      "20170727",
+      "600",
+      "fvB1Ryni34I",
+      "v576zr9-20170727"
+    ],
+    "source_relationships": "The public GWINS detail page directly exposes the listed media URL(s); generic site-home links were excluded.",
+    "deduplication": "Fresh current-data checks found no canonical record for exact source id 20170727. The distinct GWINS record supports LIVE_20170727_001; same-day numbered items remain separate."
+  },
+  "source_raw_sha256": "8c18fc77babd5013175813859aef6de0e7b6aae34df3eb80738e9dc6c7178653",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": true,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}

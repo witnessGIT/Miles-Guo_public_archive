@@ -1,0 +1,45 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_70_20170811_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_70_20170811_1",
+  "reviewed_by": "agent-20261006T191534Z-d915df7b",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-07T01:28:53Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20170811_001",
+  "evidence_urls": [
+    "https://www.gwins.org/cn/milesguo/list_2_70.html",
+    "https://www.gwins.org/cn/milesguo/23544.html",
+    "https://youtu.be/ejVMzkmzJSs",
+    "https://rumble.com/v5771zh-20170811-1.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS detail page 23544 carries source_video_id 20170811_1 and binds it to this candidate.",
+    "date": "Candidate date 2017-08-11 agrees with the date and source id in the public GWINS title.",
+    "title": "郭文贵2017年8月11日直播 20170811_1 船上那天说多了，刘呈杰，贯君的爹们正在北戴河夺权呢",
+    "platform_ids": [
+      "20170811_1",
+      "23544",
+      "ejVMzkmzJSs",
+      "v5771zh-20170811-1"
+    ],
+    "source_relationships": "The public GWINS detail page directly exposes the listed media URL(s); generic site-home links were excluded.",
+    "deduplication": "Fresh current-data checks found no canonical record for exact source id 20170811_1. The distinct GWINS record supports LIVE_20170811_001; same-day numbered items remain separate."
+  },
+  "source_raw_sha256": "81035df30aa4877e98e44b9c6df2b65f0e69dd2021fd386f283abbd2fbf1ed09",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": true,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}
