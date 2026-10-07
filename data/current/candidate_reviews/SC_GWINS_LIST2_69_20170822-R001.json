@@ -1,0 +1,45 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_69_20170822-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_69_20170822",
+  "reviewed_by": "agent-20261006T191534Z-d915df7b",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-07T01:24:50Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20170822_001",
+  "evidence_urls": [
+    "https://www.gwins.org/cn/milesguo/list_2_69.html",
+    "https://www.gwins.org/cn/milesguo/740.html",
+    "https://www.youtube.com/watch?v=nWLng_-sjzk",
+    "https://rumble.com/v5774c2-20170822.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS detail page 740 carries source_video_id 20170822 and binds it to this candidate.",
+    "date": "Candidate date 2017-08-22 agrees with the date and source id in the public GWINS title.",
+    "title": "郭文贵2017年8月22日第二次直播 20170822 盗国贼组织上百特务来美，用‘蓝金黄’计划对付文贵及知名推友。很多人及家人会被威胁。",
+    "platform_ids": [
+      "20170822",
+      "740",
+      "nWLng_-sjzk",
+      "v5774c2-20170822"
+    ],
+    "source_relationships": "The public GWINS detail page directly exposes the listed media URL(s); generic site-home links were excluded.",
+    "deduplication": "Fresh current-data checks found no canonical record for exact source id 20170822. The distinct GWINS record supports LIVE_20170822_001; same-day numbered items remain separate."
+  },
+  "source_raw_sha256": "030d21aa7048a78ca476cf68f53ef418dc96a6f53cf0af8df3a56b7ae8907517",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": true,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}

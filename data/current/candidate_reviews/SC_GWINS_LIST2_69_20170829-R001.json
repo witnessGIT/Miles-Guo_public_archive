@@ -1,0 +1,46 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_69_20170829-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_69_20170829",
+  "reviewed_by": "agent-20261006T191534Z-d915df7b",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-07T01:24:50Z",
+  "decision": "rejected_not_target",
+  "canonical_live_id": null,
+  "evidence_urls": [
+    "https://www.gwins.org/cn/milesguo/list_2_69.html",
+    "https://www.gwins.org/cn/milesguo/23565.html",
+    "https://youtu.be/X3prvxRZHTk",
+    "https://rumble.com/v57765n-20170829.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS detail page 23565 carries source_video_id 20170829 and binds it to this candidate.",
+    "date": "Candidate date 2017-08-29 agrees with the date and source id in the public GWINS title.",
+    "title": "郭文贵2017年8月29日视频 20170829 船上健身",
+    "platform_ids": [
+      "20170829",
+      "23565",
+      "X3prvxRZHTk",
+      "v57765n-20170829"
+    ],
+    "source_relationships": "The public GWINS detail page directly exposes the listed media URL(s); generic site-home links were excluded.",
+    "deduplication": "Compared exact source id, date, title, detail page, and platform IDs within current data; retained as a distinct non-livestream candidate without canonical-live promotion."
+  },
+  "source_raw_sha256": "45dc3576b43b33321c82f21c0b75ef02fb20dbd9f5d8f613d46a2f84b3f1c0bb",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false,
+  "rejection_reason": "The exact GWINS title identifies a standalone video, interview, Gettr update, or other non-livestream record; it is preserved without canonical livestream promotion."
+}

@@ -1,0 +1,45 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_69_20170828-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_69_20170828",
+  "reviewed_by": "agent-20261006T191534Z-d915df7b",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-07T01:24:50Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20170828_001",
+  "evidence_urls": [
+    "https://www.gwins.org/cn/milesguo/list_2_69.html",
+    "https://www.gwins.org/cn/milesguo/609.html",
+    "https://www.youtube.com/watch?v=IHrAtCTmqGA",
+    "https://rumble.com/v5775ya-20170828.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS detail page 609 carries source_video_id 20170828 and binds it to this candidate.",
+    "date": "Candidate date 2017-08-28 agrees with the date and source id in the public GWINS title.",
+    "title": "郭文贵2017年8月28日 20170828 文贵到底是不是国安特务，文贵与王艳平到底有没有乱伦",
+    "platform_ids": [
+      "20170828",
+      "609",
+      "IHrAtCTmqGA",
+      "v5775ya-20170828"
+    ],
+    "source_relationships": "The public GWINS detail page directly exposes the listed media URL(s); generic site-home links were excluded.",
+    "deduplication": "Fresh current-data checks found no canonical record for exact source id 20170828. The distinct GWINS record supports LIVE_20170828_001; same-day numbered items remain separate."
+  },
+  "source_raw_sha256": "10dfdeef136bea327329284f9760947b7eb4ebaf1c05d26ce13485a6ef7a3b6e",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": true,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}

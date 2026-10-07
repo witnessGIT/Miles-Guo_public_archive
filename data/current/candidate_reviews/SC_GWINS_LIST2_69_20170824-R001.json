@@ -1,0 +1,45 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_69_20170824-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_69_20170824",
+  "reviewed_by": "agent-20261006T191534Z-d915df7b",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-07T01:24:50Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20170824_001",
+  "evidence_urls": [
+    "https://www.gwins.org/cn/milesguo/list_2_69.html",
+    "https://www.gwins.org/cn/milesguo/608.html",
+    "https://www.youtube.com/watch?v=RoMToiKBoJE",
+    "https://rumble.com/v5774m3-20170824.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS detail page 608 carries source_video_id 20170824 and binds it to this candidate.",
+    "date": "Candidate date 2017-08-24 agrees with the date and source id in the public GWINS title.",
+    "title": "郭文贵2017年8月24日 20170824 关于腾彪先生造谣文贵乱伦",
+    "platform_ids": [
+      "20170824",
+      "608",
+      "RoMToiKBoJE",
+      "v5774m3-20170824"
+    ],
+    "source_relationships": "The public GWINS detail page directly exposes the listed media URL(s); generic site-home links were excluded.",
+    "deduplication": "Fresh current-data checks found no canonical record for exact source id 20170824. The distinct GWINS record supports LIVE_20170824_001; same-day numbered items remain separate."
+  },
+  "source_raw_sha256": "4ca8743ab038cad2dae0aff3251529bf4d78706e51f0c23c95c90fa549fe6583",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": true,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}

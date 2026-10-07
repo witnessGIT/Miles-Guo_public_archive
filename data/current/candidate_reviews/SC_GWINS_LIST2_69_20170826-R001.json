@@ -1,0 +1,46 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_69_20170826-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_69_20170826",
+  "reviewed_by": "agent-20261006T191534Z-d915df7b",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-07T01:24:50Z",
+  "decision": "rejected_not_target",
+  "canonical_live_id": null,
+  "evidence_urls": [
+    "https://www.gwins.org/cn/milesguo/list_2_69.html",
+    "https://www.gwins.org/cn/milesguo/23561.html",
+    "https://youtu.be/twjXWOkXiWI",
+    "https://rumble.com/v5775ch-20170826.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS detail page 23561 carries source_video_id 20170826 and binds it to this candidate.",
+    "date": "Candidate date 2017-08-26 agrees with the date and source id in the public GWINS title.",
+    "title": "郭文贵2017年8月26日视频 20170826 老兵通过新加坡发来视频 翻墙软件偷信息 美政府对海航的关注达到我们的目的",
+    "platform_ids": [
+      "20170826",
+      "23561",
+      "twjXWOkXiWI",
+      "v5775ch-20170826"
+    ],
+    "source_relationships": "The public GWINS detail page directly exposes the listed media URL(s); generic site-home links were excluded.",
+    "deduplication": "Compared exact source id, date, title, detail page, and platform IDs within current data; retained as a distinct non-livestream candidate without canonical-live promotion."
+  },
+  "source_raw_sha256": "d6dae482e450e530caa04c235d6dddd20fefc72780d7bb8c99f48f9b833939d8",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false,
+  "rejection_reason": "The exact GWINS title identifies a standalone video, interview, Gettr update, or other non-livestream record; it is preserved without canonical livestream promotion."
+}
