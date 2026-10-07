@@ -1,0 +1,44 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GHOT_20230122_2-R001",
+  "source_candidate_id": "SC_GHOT_20230122_2",
+  "reviewed_by": "agent-20261006T191453Z-a890f4a8",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-07T01:19:27Z",
+  "decision": "linked_existing_canonical",
+  "canonical_live_id": "LIVE_20230122_001",
+  "evidence_urls": [
+    "https://ghot.ai/archive/videos/2023-01-22-2",
+    "https://gettr.com/streaming/p25xe03e97d",
+    "https://rumble.com/v5bsm2t-20230122-2.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "Exact public GHOT page is bound to candidate SC_GHOT_20230122_2 and page/source identifier 2023-01-22-2; identity visibility=False.",
+    "date": "Candidate date is 2023-01-22; no publication time was inferred.",
+    "title": "2023.01.22 大年初一文贵春节大直播 ——《希望2023》（下半场）（4K） 失去未必失去 得到未必得到 黑暗笼罩全球 希望存于灭共",
+    "platform_ids": [
+      "2023-01-22-2",
+      "2023-01-22-2",
+      "streaming/p25xe03e97d",
+      "v5bsm2t-20230122-2"
+    ],
+    "source_relationships": "Only exact public page URLs and concrete outbound platform links were retained; generic navigation links were excluded.",
+    "deduplication": "Exact outbound platform URLs already belong to the named canonical live."
+  },
+  "source_raw_sha256": "833ed114ffdeaf55b5c191b1eef2fb7407fcd8b6fda6a8ad580d8224941f2d40",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}
