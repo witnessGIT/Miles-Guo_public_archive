@@ -1,0 +1,46 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_8_20220531_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_8_20220531_1",
+  "reviewed_by": "agent-20261006T191453Z-a890f4a8",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-07T02:01:46Z",
+  "decision": "rejected_not_target",
+  "canonical_live_id": null,
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_8.html",
+    "https://gwins.org/cn/milesguo/23951.html",
+    "https://gettr.com/post/p1c50a3b3df",
+    "https://rumble.com/v5ah0cr-20220531-1.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "Exact public GWINS page is bound to candidate SC_GWINS_LIST2_8_20220531_1 and page/source identifier list_2_8; identity visibility=True.",
+    "date": "Candidate date is 2022-05-31; no publication time was inferred.",
+    "title": "郭文贵2022年5月31日盖特 20220531_1 尊敬的战友们好……接下来的几天，直到6月4号．新中国联邦人，将会用．无数传奇和感动．在世界的传奇城市．金融城市．时尚城市，现代音乐城市．世界的政治．经济精英中心．曼哈顿描绘新中",
+    "platform_ids": [
+      "20220531_1",
+      "list_2_8",
+      "p1c50a3b3df",
+      "v5ah0cr-20220531-1"
+    ],
+    "source_relationships": "Only exact public page URLs and concrete outbound platform links were retained; generic navigation links were excluded.",
+    "deduplication": "The exact GWINS title identifies a standalone GETTR update, short video, or rebroadcast rather than an original livestream."
+  },
+  "source_raw_sha256": "1857d6c06e1db721b13890143fd0774c6a19063be8b68d3878517e58316d6e23",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false,
+  "rejection_reason": "The exact GWINS title identifies a standalone GETTR update, short video, or rebroadcast rather than an original livestream."
+}
