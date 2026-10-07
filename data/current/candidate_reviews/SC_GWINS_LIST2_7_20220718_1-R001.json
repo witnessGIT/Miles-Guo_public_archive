@@ -1,0 +1,46 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_7_20220718_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_7_20220718_1",
+  "reviewed_by": "agent-20261006T191453Z-a890f4a8",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-07T02:01:37Z",
+  "decision": "rejected_not_target",
+  "canonical_live_id": null,
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_7.html",
+    "https://gwins.org/cn/milesguo/23988.html",
+    "https://gettr.com/post/p1irx6i4804",
+    "https://rumble.com/v5anbtx-20220718-1.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "Exact public GWINS page is bound to candidate SC_GWINS_LIST2_7_20220718_1 and page/source identifier list_2_7; identity visibility=True.",
+    "date": "Candidate date is 2022-07-18; no publication time was inferred.",
+    "title": "郭文贵2022年7月18日盖特 20220718_1 尊敬的战友们好，我们正在开启的前所未有的……关于共产党的军事恐怖行为爆料……向世界展示了中国共产党．不是一个合法的政权，完全以中国人民．全部的孩子．老人的身体和安全．作为战",
+    "platform_ids": [
+      "20220718_1",
+      "list_2_7",
+      "p1irx6i4804",
+      "v5anbtx-20220718-1"
+    ],
+    "source_relationships": "Only exact public page URLs and concrete outbound platform links were retained; generic navigation links were excluded.",
+    "deduplication": "The exact GWINS title identifies a standalone GETTR update, short video, or rebroadcast rather than an original livestream."
+  },
+  "source_raw_sha256": "2e1ec3e5bfd93293aad71a858f008c37ea9461256e97685d5ac4c3395a3e40ca",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false,
+  "rejection_reason": "The exact GWINS title identifies a standalone GETTR update, short video, or rebroadcast rather than an original livestream."
+}

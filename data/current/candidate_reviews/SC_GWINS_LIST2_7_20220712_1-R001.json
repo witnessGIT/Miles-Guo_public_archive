@@ -1,0 +1,46 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_7_20220712_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_7_20220712_1",
+  "reviewed_by": "agent-20261006T191453Z-a890f4a8",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-07T02:01:37Z",
+  "decision": "rejected_not_target",
+  "canonical_live_id": null,
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_7.html",
+    "https://gwins.org/cn/milesguo/23971.html",
+    "https://odysee.com/@laxi:4/20220712_1:d",
+    "https://rumble.com/v5amth7-20220712-1.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "Exact public GWINS page is bound to candidate SC_GWINS_LIST2_7_20220712_1 and page/source identifier list_2_7; identity visibility=True.",
+    "date": "Candidate date is 2022-07-12; no publication time was inferred.",
+    "title": "郭文贵2022年7月12日盖特 20220712_1 尊敬的战友们好……中共国的经济．房地产．国际环境．都到了，千年来最坏和最危险的程度，全球灭共，无人可挡．普衡律师事务所．DOJ 的违法，甚至涉嫌犯罪的欺骗法官的行为……遭到了全球",
+    "platform_ids": [
+      "20220712_1",
+      "list_2_7",
+      "@laxi:4/20220712_1:d",
+      "v5amth7-20220712-1"
+    ],
+    "source_relationships": "Only exact public page URLs and concrete outbound platform links were retained; generic navigation links were excluded.",
+    "deduplication": "The exact GWINS title identifies a standalone GETTR update, short video, or rebroadcast rather than an original livestream."
+  },
+  "source_raw_sha256": "abccf577d9543db9fe64d990b808a58659c843688e33bbfc423c41c1491977b7",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false,
+  "rejection_reason": "The exact GWINS title identifies a standalone GETTR update, short video, or rebroadcast rather than an original livestream."
+}

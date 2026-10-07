@@ -1,0 +1,46 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_7_20220711_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_7_20220711_1",
+  "reviewed_by": "agent-20261006T191453Z-a890f4a8",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-07T02:01:37Z",
+  "decision": "rejected_not_target",
+  "canonical_live_id": null,
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_7.html",
+    "https://gwins.org/cn/milesguo/23970.html",
+    "https://gettr.com/post/p1hw7va2f42",
+    "https://rumble.com/v5amtfh-20220711-1.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "Exact public GWINS page is bound to candidate SC_GWINS_LIST2_7_20220711_1 and page/source identifier list_2_7; identity visibility=True.",
+    "date": "Candidate date is 2022-07-11; no publication time was inferred.",
+    "title": "郭文贵2022年7月11日盖特 20220711_1 尊敬的战友们好，我们进入了与美国黑暗势力和共产党在美国潜伏力量的面对面的较量，这是上天给我们送来灭共的最好的礼物……最好的机会，让我们真正的开始：以美灭共．以法灭共．普衡律",
+    "platform_ids": [
+      "20220711_1",
+      "list_2_7",
+      "p1hw7va2f42",
+      "v5amtfh-20220711-1"
+    ],
+    "source_relationships": "Only exact public page URLs and concrete outbound platform links were retained; generic navigation links were excluded.",
+    "deduplication": "The exact GWINS title identifies a standalone GETTR update, short video, or rebroadcast rather than an original livestream."
+  },
+  "source_raw_sha256": "8c82bfe8894089baa3bf1a1e0ae678a76cd31fb322d47a06684bb4a85e6998f7",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false,
+  "rejection_reason": "The exact GWINS title identifies a standalone GETTR update, short video, or rebroadcast rather than an original livestream."
+}

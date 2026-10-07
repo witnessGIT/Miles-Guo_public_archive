@@ -1,0 +1,46 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_7_20220715_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_7_20220715_1",
+  "reviewed_by": "agent-20261006T191453Z-a890f4a8",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-07T02:01:37Z",
+  "decision": "rejected_not_target",
+  "canonical_live_id": null,
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_7.html",
+    "https://gwins.org/cn/milesguo/23985.html",
+    "https://gettr.com/post/p1ifmcncc3c",
+    "https://rumble.com/v5an665-20220715-1.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "Exact public GWINS page is bound to candidate SC_GWINS_LIST2_7_20220715_1 and page/source identifier list_2_7; identity visibility=True.",
+    "date": "Candidate date is 2022-07-15; no publication time was inferred.",
+    "title": "郭文贵2022年7月15日盖特 20220715_1 尊敬的战友们好……共产党的金融．房地产．灾难正在毁掉中国．香港．和世界经济．全球的金融灾难即将到来，在这样的灾难时刻，我们更要小心病毒．和对家人的保护．一切都已经开始！",
+    "platform_ids": [
+      "20220715_1",
+      "list_2_7",
+      "p1ifmcncc3c",
+      "v5an665-20220715-1"
+    ],
+    "source_relationships": "Only exact public page URLs and concrete outbound platform links were retained; generic navigation links were excluded.",
+    "deduplication": "The exact GWINS title identifies a standalone GETTR update, short video, or rebroadcast rather than an original livestream."
+  },
+  "source_raw_sha256": "f6f61ecd6ab4a090741d67a1892a94ebd69b3976b34e3ec003d659b43b574255",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false,
+  "rejection_reason": "The exact GWINS title identifies a standalone GETTR update, short video, or rebroadcast rather than an original livestream."
+}

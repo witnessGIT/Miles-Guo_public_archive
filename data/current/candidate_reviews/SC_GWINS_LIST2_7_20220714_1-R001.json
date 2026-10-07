@@ -1,0 +1,45 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_7_20220714_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_7_20220714_1",
+  "reviewed_by": "agent-20261006T191453Z-a890f4a8",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-07T02:01:37Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20220714_001",
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_7.html",
+    "https://gwins.org/cn/milesguo/23973.html",
+    "https://odysee.com/@laxi:4/20220714_1:d",
+    "https://rumble.com/v5bxa0t-20220714-1.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "Exact public GWINS page is bound to candidate SC_GWINS_LIST2_7_20220714_1 and page/source identifier list_2_7; identity visibility=True.",
+    "date": "Candidate date is 2022-07-14; no publication time was inferred.",
+    "title": "郭文贵2022年7月14日直播 20220714_1 太平联盟到底有多危险？",
+    "platform_ids": [
+      "20220714_1",
+      "list_2_7",
+      "@laxi:4/20220714_1:d",
+      "v5bxa0t-20220714-1"
+    ],
+    "source_relationships": "Only exact public page URLs and concrete outbound platform links were retained; generic navigation links were excluded.",
+    "deduplication": "The exact GWINS title explicitly identifies an original livestream."
+  },
+  "source_raw_sha256": "8383cb24cf0113de62032c21584750bda179c09b66769eb508e19f7f2259d077",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": true,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}
