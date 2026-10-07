@@ -1,0 +1,44 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GHOT_20220805_1-R001",
+  "source_candidate_id": "SC_GHOT_20220805_1",
+  "reviewed_by": "agent-20261006T191453Z-a890f4a8",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-07T01:18:38Z",
+  "decision": "linked_existing_canonical",
+  "canonical_live_id": "LIVE_20220805_001",
+  "evidence_urls": [
+    "https://ghot.ai/archive/videos/2022-08-05-1",
+    "https://odysee.com/@laxi:4/20220805_1:e",
+    "https://rumble.com/v5aohzh-20220805-1.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "Exact public GHOT page is bound to candidate SC_GHOT_20220805_1 and page/source identifier 2022-08-05-1; identity visibility=False.",
+    "date": "Candidate date is 2022-08-05; no publication time was inferred.",
+    "title": "2022.08.05 七哥直播谈法律与道德_X264",
+    "platform_ids": [
+      "2022-08-05-1",
+      "2022-08-05-1",
+      "@laxi:4/20220805_1:e",
+      "v5aohzh-20220805-1"
+    ],
+    "source_relationships": "Only exact public page URLs and concrete outbound platform links were retained; generic navigation links were excluded.",
+    "deduplication": "Exact outbound platform URLs already belong to the named canonical live."
+  },
+  "source_raw_sha256": "1e2a61b83bdb9e9bec28f573aebada355bfcfb4731408b0f3c5aabb50bbc9c3c",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}
