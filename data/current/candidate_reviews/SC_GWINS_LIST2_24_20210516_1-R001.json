@@ -1,0 +1,45 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_24_20210516_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_24_20210516_1",
+  "reviewed_by": "agent-20261006T191453Z-a890f4a8",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-07T02:02:02Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20210516_001",
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_24.html",
+    "https://gwins.org/cn/milesguo/22945.html",
+    "https://odysee.com/@laxi:4/20210516_1:b",
+    "https://rumble.com/v59cp6k-20210516-1.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "Exact public GWINS page is bound to candidate SC_GWINS_LIST2_24_20210516_1 and page/source identifier list_2_24; identity visibility=True.",
+    "date": "Candidate date is 2021-05-16; no publication time was inferred.",
+    "title": "郭文贵2021年5月16日直播 20210516_1 为什么文贵反对西方国家对中共子女的签证限制；怎样理解文贵坚决灭共，对99%党员大赦，反共不反华",
+    "platform_ids": [
+      "20210516_1",
+      "list_2_24",
+      "@laxi:4/20210516_1:b",
+      "v59cp6k-20210516-1"
+    ],
+    "source_relationships": "Only exact public page URLs and concrete outbound platform links were retained; generic navigation links were excluded.",
+    "deduplication": "The exact GWINS title explicitly identifies an original livestream."
+  },
+  "source_raw_sha256": "d9248835762cb1351024da08e4ce461547bc38ec5b69de8ae18f8bf272d6dc11",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": true,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}

@@ -1,0 +1,46 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_24_20210517_2-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_24_20210517_2",
+  "reviewed_by": "agent-20261006T191453Z-a890f4a8",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-07T02:02:02Z",
+  "decision": "rejected_not_target",
+  "canonical_live_id": null,
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_24.html",
+    "https://gwins.org/cn/milesguo/22955.html",
+    "https://youtu.be/v9XtxKF2xlU",
+    "https://rumble.com/v59cpfh-20210517-2.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "Exact public GWINS page is bound to candidate SC_GWINS_LIST2_24_20210517_2 and page/source identifier list_2_24; identity visibility=True.",
+    "date": "Candidate date is 2021-05-17; no publication time was inferred.",
+    "title": "郭文贵2021年5月17日盖特 20210517_2 尊敬的战友们好，由于明天一整天的特别重要的事情的安排，上午没有时间发盖特，所以现在先发一个盖特！谈谈今天共产党操控的火鸡龚．????粑傅．在华盛顿邮报和所谓的一个．AI黑客网站。两",
+    "platform_ids": [
+      "20210517_2",
+      "list_2_24",
+      "v9XtxKF2xlU",
+      "v59cpfh-20210517-2"
+    ],
+    "source_relationships": "Only exact public page URLs and concrete outbound platform links were retained; generic navigation links were excluded.",
+    "deduplication": "The exact GWINS title identifies a standalone GETTR update, short video, or rebroadcast rather than an original livestream."
+  },
+  "source_raw_sha256": "5e6ccb1dbafeedc1b7e6c5482e8294235f1b01c09ddd26195f5ca90db4daf08d",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false,
+  "rejection_reason": "The exact GWINS title identifies a standalone GETTR update, short video, or rebroadcast rather than an original livestream."
+}

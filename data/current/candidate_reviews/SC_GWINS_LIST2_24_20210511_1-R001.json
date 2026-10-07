@@ -1,0 +1,46 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_24_20210511_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_24_20210511_1",
+  "reviewed_by": "agent-20261006T191453Z-a890f4a8",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-07T02:02:02Z",
+  "decision": "rejected_not_target",
+  "canonical_live_id": null,
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_24.html",
+    "https://gwins.org/cn/milesguo/22926.html",
+    "https://youtu.be/tNRBJgLpDhA",
+    "https://rumble.com/v59cmxt-20210511-1.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "Exact public GWINS page is bound to candidate SC_GWINS_LIST2_24_20210511_1 and page/source identifier list_2_24; identity visibility=True.",
+    "date": "Candidate date is 2021-05-11; no publication time was inferred.",
+    "title": "郭文贵2021年5月11日盖特 20210511_1 5月11号尊敬的战友们好！SN0W向大家请安了……",
+    "platform_ids": [
+      "20210511_1",
+      "list_2_24",
+      "tNRBJgLpDhA",
+      "v59cmxt-20210511-1"
+    ],
+    "source_relationships": "Only exact public page URLs and concrete outbound platform links were retained; generic navigation links were excluded.",
+    "deduplication": "The exact GWINS title identifies a standalone GETTR update, short video, or rebroadcast rather than an original livestream."
+  },
+  "source_raw_sha256": "5910501caea0ed51bc0eccda1ce8e35cb2714b3377f57fb48f37bbb883f99578",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false,
+  "rejection_reason": "The exact GWINS title identifies a standalone GETTR update, short video, or rebroadcast rather than an original livestream."
+}

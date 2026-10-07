@@ -1,0 +1,46 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_24_20210509_2-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_24_20210509_2",
+  "reviewed_by": "agent-20261006T191453Z-a890f4a8",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-07T02:02:02Z",
+  "decision": "rejected_not_target",
+  "canonical_live_id": null,
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_24.html",
+    "https://gwins.org/cn/milesguo/22916.html",
+    "https://youtu.be/mux0QSXJFZs",
+    "https://rumble.com/v59cl1u-20210509-2.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "Exact public GWINS page is bound to candidate SC_GWINS_LIST2_24_20210509_2 and page/source identifier list_2_24; identity visibility=True.",
+    "date": "Candidate date is 2021-05-09; no publication time was inferred.",
+    "title": "郭文贵2021年5月9日盖特 20210509_2 衷心地祝愿所有天下的母亲．母亲节快乐????????????????????????????????永远平安健康！",
+    "platform_ids": [
+      "20210509_2",
+      "list_2_24",
+      "mux0QSXJFZs",
+      "v59cl1u-20210509-2"
+    ],
+    "source_relationships": "Only exact public page URLs and concrete outbound platform links were retained; generic navigation links were excluded.",
+    "deduplication": "The exact GWINS title identifies a standalone GETTR update, short video, or rebroadcast rather than an original livestream."
+  },
+  "source_raw_sha256": "716f67bdc412724ef428c3591623a0bb5f350097ede747c87619aab5a6d60aab",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false,
+  "rejection_reason": "The exact GWINS title identifies a standalone GETTR update, short video, or rebroadcast rather than an original livestream."
+}

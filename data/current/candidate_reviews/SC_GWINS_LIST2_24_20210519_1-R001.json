@@ -1,0 +1,45 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_24_20210519_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_24_20210519_1",
+  "reviewed_by": "agent-20261006T191453Z-a890f4a8",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-07T02:02:02Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20210519_001",
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_24.html",
+    "https://gwins.org/cn/milesguo/22959.html",
+    "https://odysee.com/@laxi:4/20210519_1:e",
+    "https://rumble.com/v59cqgp-20210519-1.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "Exact public GWINS page is bound to candidate SC_GWINS_LIST2_24_20210519_1 and page/source identifier list_2_24; identity visibility=True.",
+    "date": "Candidate date is 2021-05-19; no publication time was inferred.",
+    "title": "郭文贵2021年5月19日直播 20210519_1 谈西方媒体的傲慢，贪婪，暴力，绑架法律；远离中共操纵的“比震“；文贵发起“躺平”币计划",
+    "platform_ids": [
+      "20210519_1",
+      "list_2_24",
+      "@laxi:4/20210519_1:e",
+      "v59cqgp-20210519-1"
+    ],
+    "source_relationships": "Only exact public page URLs and concrete outbound platform links were retained; generic navigation links were excluded.",
+    "deduplication": "The exact GWINS title explicitly identifies an original livestream."
+  },
+  "source_raw_sha256": "45cb7cc6c8c8766cf0c49d4d8ab8826090db33b5bd3841923ceb361545954ef3",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": true,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}

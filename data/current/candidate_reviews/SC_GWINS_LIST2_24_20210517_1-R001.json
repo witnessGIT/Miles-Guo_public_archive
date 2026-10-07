@@ -1,0 +1,46 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_24_20210517_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_24_20210517_1",
+  "reviewed_by": "agent-20261006T191453Z-a890f4a8",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-07T02:02:02Z",
+  "decision": "rejected_not_target",
+  "canonical_live_id": null,
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_24.html",
+    "https://gwins.org/cn/milesguo/22951.html",
+    "https://youtu.be/ih2YVU_5wwU",
+    "https://rumble.com/v59cpdh-20210517-1.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "Exact public GWINS page is bound to candidate SC_GWINS_LIST2_24_20210517_1 and page/source identifier list_2_24; identity visibility=True.",
+    "date": "Candidate date is 2021-05-17; no publication time was inferred.",
+    "title": "郭文贵2021年5月17日盖特 20210517_1 回答很多国内战友问七哥．是否应该投资刚刚复出的过去的中国亿万富豪们的项目！七哥如何看待，现在比特币和加密货币的混乱！",
+    "platform_ids": [
+      "20210517_1",
+      "list_2_24",
+      "ih2YVU_5wwU",
+      "v59cpdh-20210517-1"
+    ],
+    "source_relationships": "Only exact public page URLs and concrete outbound platform links were retained; generic navigation links were excluded.",
+    "deduplication": "The exact GWINS title identifies a standalone GETTR update, short video, or rebroadcast rather than an original livestream."
+  },
+  "source_raw_sha256": "8efed8452121dcd6239acfa98e092b119147dd48f04512fc17b5d412bb72627d",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false,
+  "rejection_reason": "The exact GWINS title identifies a standalone GETTR update, short video, or rebroadcast rather than an original livestream."
+}

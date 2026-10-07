@@ -1,0 +1,46 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_24_20210511_2-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_24_20210511_2",
+  "reviewed_by": "agent-20261006T191453Z-a890f4a8",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-07T02:02:02Z",
+  "decision": "rejected_not_target",
+  "canonical_live_id": null,
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_24.html",
+    "https://gwins.org/cn/milesguo/22927.html",
+    "https://youtu.be/q_iuasA3a4k",
+    "https://rumble.com/v59cn1t-20210511-2.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "Exact public GWINS page is bound to candidate SC_GWINS_LIST2_24_20210511_2 and page/source identifier list_2_24; identity visibility=True.",
+    "date": "Candidate date is 2021-05-11; no publication time was inferred.",
+    "title": "郭文贵2021年5月11日盖特 20210511_2 昨晚和国内统计部门的战友．通话极大的震撼了文贵……中华民族真的被共产党以．最快的速度．最愚蠢的方式，送进地狱！国将不国族将不族啊……我们只能以捶胸顿足．嚎啕大哭．来面对这残",
+    "platform_ids": [
+      "20210511_2",
+      "list_2_24",
+      "q_iuasA3a4k",
+      "v59cn1t-20210511-2"
+    ],
+    "source_relationships": "Only exact public page URLs and concrete outbound platform links were retained; generic navigation links were excluded.",
+    "deduplication": "The exact GWINS title identifies a standalone GETTR update, short video, or rebroadcast rather than an original livestream."
+  },
+  "source_raw_sha256": "def763649e3f33b0efde33b78a69ed45ddc6d33985dd6552c256087e82304af1",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false,
+  "rejection_reason": "The exact GWINS title identifies a standalone GETTR update, short video, or rebroadcast rather than an original livestream."
+}

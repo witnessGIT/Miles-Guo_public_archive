@@ -1,0 +1,46 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_24_20210514_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_24_20210514_1",
+  "reviewed_by": "agent-20261006T191453Z-a890f4a8",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-07T02:02:02Z",
+  "decision": "rejected_not_target",
+  "canonical_live_id": null,
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_24.html",
+    "https://gwins.org/cn/milesguo/22939.html",
+    "https://youtu.be/e47B90_QWKI",
+    "https://rumble.com/v59cnot-20210514-1.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "Exact public GWINS page is bound to candidate SC_GWINS_LIST2_24_20210514_1 and page/source identifier list_2_24; identity visibility=True.",
+    "date": "Candidate date is 2021-05-14; no publication time was inferred.",
+    "title": "郭文贵2021年5月14日盖特 20210514_1 任何对无辜的体制内的孩子．被拒签而幸灾乐祸的人！都是不正确的，呼吁所有的买Gclub的战友以最快的时间．到你的农场对账，或给Gclub公司直接打电话．对帐领卡！不要让自己失去利益的机会！",
+    "platform_ids": [
+      "20210514_1",
+      "list_2_24",
+      "e47B90_QWKI",
+      "v59cnot-20210514-1"
+    ],
+    "source_relationships": "Only exact public page URLs and concrete outbound platform links were retained; generic navigation links were excluded.",
+    "deduplication": "The exact GWINS title identifies a standalone GETTR update, short video, or rebroadcast rather than an original livestream."
+  },
+  "source_raw_sha256": "b6c158dde7b04965200aa09b552d8af37d075f34df5d4d5cda3f740a22d9e132",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false,
+  "rejection_reason": "The exact GWINS title identifies a standalone GETTR update, short video, or rebroadcast rather than an original livestream."
+}
