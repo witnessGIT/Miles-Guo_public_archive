@@ -1,0 +1,44 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_20230122_1-R001",
+  "source_candidate_id": "SC_GWINS_20230122_1",
+  "reviewed_by": "agent-20261006T191453Z-a890f4a8",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-07T01:23:25Z",
+  "decision": "linked_existing_canonical",
+  "canonical_live_id": "LIVE_20230122_001",
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/24272.html",
+    "https://gettr.com/streaming/p25vkoyb00f",
+    "https://rumble.com/v5bsklw-20230122-1.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "Exact public GWINS page is bound to candidate SC_GWINS_20230122_1 and page/source identifier 24272; identity visibility=True.",
+    "date": "Candidate date is 2023-01-22; no publication time was inferred.",
+    "title": "郭文贵2023年1月22日直播第一场 20230122_1 大年初一文贵春节大直播 ——《希望2023》（4K） 失去未必失去 得到未必得到 黑暗笼罩全球 希望存于灭共",
+    "platform_ids": [
+      "20230122_1",
+      "24272",
+      "streaming/p25vkoyb00f",
+      "v5bsklw-20230122-1"
+    ],
+    "source_relationships": "Only exact public page URLs and concrete outbound platform links were retained; generic navigation links were excluded.",
+    "deduplication": "Canonical ID LIVE_20230122_001 already exists in current structured data; this exact source is linked without creating a duplicate live."
+  },
+  "source_raw_sha256": "609bb3ba662258e587553752426b689067a018567490f4d566c75ac999ce07f7",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}
