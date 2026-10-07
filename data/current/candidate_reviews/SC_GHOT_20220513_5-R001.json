@@ -1,0 +1,40 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GHOT_20220513_5-R001",
+  "source_candidate_id": "SC_GHOT_20220513_5",
+  "reviewed_by": "agent-20261006T191453Z-a890f4a8",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-07T01:18:14Z",
+  "decision": "linked_existing_canonical",
+  "canonical_live_id": "LIVE_20220513_001",
+  "evidence_urls": [
+    "https://ghot.ai/archive/videos/2022-05-13-5"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "Exact public GHOT page is bound to candidate SC_GHOT_20220513_5 and page/source identifier 2022-05-13-5; identity visibility=False.",
+    "date": "Candidate date is 2022-05-13; no publication time was inferred.",
+    "title": "2022.05.13-1 文贵大直播：最新疫苗灾难信息防护；数字货币价格变动比较；喜币流通应用突出优势；区块链的政治领域应用",
+    "platform_ids": [
+      "2022-05-13-5",
+      "2022-05-13-5"
+    ],
+    "source_relationships": "Only exact public page URLs and concrete outbound platform links were retained; generic navigation links were excluded.",
+    "deduplication": "Exact outbound platform URLs already belong to the named canonical live."
+  },
+  "source_raw_sha256": "d44dd8140235551ca1ae39c38e13d3a4f528a474a90daba84171e6cc0ca83742",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}
