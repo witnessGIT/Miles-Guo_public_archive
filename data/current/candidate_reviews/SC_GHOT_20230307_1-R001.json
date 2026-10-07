@@ -1,0 +1,44 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GHOT_20230307_1-R001",
+  "source_candidate_id": "SC_GHOT_20230307_1",
+  "reviewed_by": "agent-20261006T191453Z-a890f4a8",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-07T01:19:59Z",
+  "decision": "linked_existing_canonical",
+  "canonical_live_id": "LIVE_20230307_001",
+  "evidence_urls": [
+    "https://ghot.ai/archive/videos/2023-03-07-1",
+    "https://gettr.com/post/p2aqwug0028",
+    "https://rumble.com/v5b2ik1-20230307-1.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "Exact public GHOT page is bound to candidate SC_GHOT_20230307_1 and page/source identifier 2023-03-07-1; identity visibility=False.",
+    "date": "Candidate date is 2023-03-07; no publication time was inferred.",
+    "title": "2023.03.07-1 尊敬的战友们好……只有真正懂得感恩、奋斗与珍惜……才能体会到自己所拥有的是多么的美好……",
+    "platform_ids": [
+      "2023-03-07-1",
+      "2023-03-07-1",
+      "p2aqwug0028",
+      "v5b2ik1-20230307-1"
+    ],
+    "source_relationships": "Only exact public page URLs and concrete outbound platform links were retained; generic navigation links were excluded.",
+    "deduplication": "Exact outbound platform URLs already belong to the named canonical live."
+  },
+  "source_raw_sha256": "bff4f106b36fa1e27144735ce9b11802d3bee72b3557743815b5d3b5aef43e14",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}
