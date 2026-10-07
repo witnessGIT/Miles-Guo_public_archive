@@ -1,0 +1,43 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_31_20210102_2-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_31_20210102_2",
+  "reviewed_by": "agent-20261006T191258Z-937a95e9",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-07T01:09:35Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20210102_002",
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_31.html",
+    "https://gwins.org/cn/milesguo/22385.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "evidence_summary": {
+    "identity": "GWINS list_2_31 candidate and detail page 22385 agree on source identity 20210102_2.",
+    "date": "Detail page title and 发布时间 both agree with 2021-01-02.",
+    "title": "Candidate title agrees with the public detail-page title after whitespace normalization.",
+    "platform_ids": [
+      "No concrete outbound media locator exposed by the verified detail page."
+    ],
+    "source_relationships": "The verified GWINS archive page is recorded as the only available source; no concrete outbound media locator was exposed, so no media relationship was asserted.",
+    "deduplication": "No existing source URL or source_video_id matched; same-date canonical IDs were checked before assigning LIVE_20210102_002."
+  },
+  "source_page_capture": {
+    "url": "https://gwins.org/cn/milesguo/22385.html",
+    "retrieved_at": "2026-10-07T01:09:35Z",
+    "sha256": "fd6fa7a34c4c902246fd3e22625c72ea2bdac2e64882303f7e1a017bcb8a68b7",
+    "bytes": 39838,
+    "result": "metadata_verified"
+  },
+  "playback_performed": false,
+  "media_download_performed": false,
+  "transcription_performed": false,
+  "segmentation_performed": false
+}
