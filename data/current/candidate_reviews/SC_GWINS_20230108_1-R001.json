@@ -1,0 +1,44 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_20230108_1-R001",
+  "source_candidate_id": "SC_GWINS_20230108_1",
+  "reviewed_by": "agent-20261006T191453Z-a890f4a8",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-07T01:21:27Z",
+  "decision": "linked_existing_canonical",
+  "canonical_live_id": "LIVE_20230108_001",
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/24189.html",
+    "https://gettr.com/streaming/p24awiia134",
+    "https://rumble.com/v5b0zus-20230108-1.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "Exact public GWINS page is bound to candidate SC_GWINS_20230108_1 and page/source identifier 24189; identity visibility=True.",
+    "date": "Candidate date is 2023-01-08; no publication time was inferred.",
+    "title": "郭文贵2023年1月8日直播 20230108_1 世界经济危机会给爆料革命带来什么？",
+    "platform_ids": [
+      "20230108_1",
+      "24189",
+      "streaming/p24awiia134",
+      "v5b0zus-20230108-1"
+    ],
+    "source_relationships": "Only exact public page URLs and concrete outbound platform links were retained; generic navigation links were excluded.",
+    "deduplication": "Canonical ID LIVE_20230108_001 already exists in current structured data; this exact source is linked without creating a duplicate live."
+  },
+  "source_raw_sha256": "196b8bfc08b5e310e89011649c4fc544edc907f896f1459b067cb8e412eabeb0",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}
