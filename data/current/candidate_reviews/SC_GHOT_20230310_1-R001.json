@@ -1,0 +1,44 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GHOT_20230310_1-R001",
+  "source_candidate_id": "SC_GHOT_20230310_1",
+  "reviewed_by": "agent-20261006T191453Z-a890f4a8",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-07T01:20:31Z",
+  "decision": "linked_existing_canonical",
+  "canonical_live_id": "LIVE_20230310_001",
+  "evidence_urls": [
+    "https://ghot.ai/archive/videos/2023-03-10-1",
+    "https://gettr.com/post/p2b18ew21e7",
+    "https://rumble.com/v5b2sws-20230310-1.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "Exact public GHOT page is bound to candidate SC_GHOT_20230310_1 and page/source identifier 2023-03-10-1; identity visibility=True.",
+    "date": "Candidate date is 2023-03-10; no publication time was inferred.",
+    "title": "2023.03.10 尊敬的战友们好！3月9号是个大日子啊，有意义的日子！长岛哥，NICOLE 小王子又为新中国联邦……灭共之战开了一局",
+    "platform_ids": [
+      "2023-03-10-1",
+      "2023-03-10-1",
+      "p2b18ew21e7",
+      "v5b2sws-20230310-1"
+    ],
+    "source_relationships": "Only exact public page URLs and concrete outbound platform links were retained; generic navigation links were excluded.",
+    "deduplication": "Exact outbound platform URLs already belong to the named canonical live."
+  },
+  "source_raw_sha256": "22d659ea09db83d8c2a0e16111e9fa5e3e733c9b3d313edd110c4a725445cedb",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}
