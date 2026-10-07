@@ -1,0 +1,41 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GHOT_20230306_2-R001",
+  "source_candidate_id": "SC_GHOT_20230306_2",
+  "reviewed_by": "agent-20261006T191453Z-a890f4a8",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-07T01:19:43Z",
+  "decision": "rejected_not_target",
+  "canonical_live_id": null,
+  "evidence_urls": [
+    "https://ghot.ai/archive/videos/2023-03-06-2"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "Exact public GHOT page is bound to candidate SC_GHOT_20230306_2 and page/source identifier 2023-03-06-2; identity visibility=False.",
+    "date": "Candidate date is 2023-03-06; no publication time was inferred.",
+    "title": "2023.03.06-1 七哥与五月花交流会_ X264",
+    "platform_ids": [
+      "2023-03-06-2",
+      "2023-03-06-2"
+    ],
+    "source_relationships": "Only exact public page URLs and concrete outbound platform links were retained; generic navigation links were excluded.",
+    "deduplication": "The exact GHOT title identifies a recorded update, interview/rebroadcast, excerpt, or otherwise lacks an original-livestream identity."
+  },
+  "source_raw_sha256": "250f7c5dfe057e3efe9c173a3c11dc34c67fcd784b1eb975b9c5d04e68dc7ed3",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false,
+  "rejection_reason": "The exact GHOT title identifies a recorded update, interview/rebroadcast, excerpt, or otherwise lacks an original-livestream identity."
+}
