@@ -1,0 +1,44 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GHOT_20230311_1-R001",
+  "source_candidate_id": "SC_GHOT_20230311_1",
+  "reviewed_by": "agent-20261006T191453Z-a890f4a8",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-07T01:20:39Z",
+  "decision": "linked_existing_canonical",
+  "canonical_live_id": "LIVE_20230311_001",
+  "evidence_urls": [
+    "https://ghot.ai/archive/videos/2023-03-11-1",
+    "https://gettr.com/post/p2b51772fdb",
+    "https://rumble.com/v5b2t0k-20230311-1.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "Exact public GHOT page is bound to candidate SC_GHOT_20230311_1 and page/source identifier 2023-03-11-1; identity visibility=True.",
+    "date": "Candidate date is 2023-03-11; no publication time was inferred.",
+    "title": "2023.03.11 尊敬的战友们好！在今天这个311共产党对全世界发动发动的第三次全面综合性的战争日。新中国联邦是拥有上天的恩赐的人群，我们是唯一拥有希望，安全，健康，财富，和使命．的全人类希望的群体，一切已经开始！",
+    "platform_ids": [
+      "2023-03-11-1",
+      "2023-03-11-1",
+      "p2b51772fdb",
+      "v5b2t0k-20230311-1"
+    ],
+    "source_relationships": "Only exact public page URLs and concrete outbound platform links were retained; generic navigation links were excluded.",
+    "deduplication": "Exact outbound platform URLs already belong to the named canonical live."
+  },
+  "source_raw_sha256": "42845b110caa5dc5415f80a89affcba7321481bb8232324eaee752656b781f28",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}
