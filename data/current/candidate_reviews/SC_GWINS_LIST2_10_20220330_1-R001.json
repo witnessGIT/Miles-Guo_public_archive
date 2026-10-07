@@ -1,0 +1,45 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_10_20220330_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_10_20220330_1",
+  "reviewed_by": "agent-20261006T191453Z-a890f4a8",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-07T01:24:44Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20220330_001",
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_10.html",
+    "https://gwins.org/cn/milesguo/23839.html",
+    "https://www.gettr.com/streaming/p12oba38c9d",
+    "https://rumble.com/v5ac4cb-20220330-1.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "Exact public GWINS page is bound to candidate SC_GWINS_LIST2_10_20220330_1 and page/source identifier list_2_10; identity visibility=True.",
+    "date": "Candidate date is 2022-03-30; no publication time was inferred.",
+    "title": "郭文贵2022年3月30日直播 20220330_1 俄乌战争与和谈最新动态；墙内疫情与民众生活危机；扩大应用与喜币价值提升；房地产债务违约金融分析",
+    "platform_ids": [
+      "20220330_1",
+      "list_2_10",
+      "streaming/p12oba38c9d",
+      "v5ac4cb-20220330-1"
+    ],
+    "source_relationships": "Only exact public page URLs and concrete outbound platform links were retained; generic navigation links were excluded.",
+    "deduplication": "The exact GWINS title explicitly identifies an original livestream."
+  },
+  "source_raw_sha256": "e75a0ad3819e65f606bf0105add6f4f733c88967c2374ef7b0a8b36a9830f011",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": true,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}
