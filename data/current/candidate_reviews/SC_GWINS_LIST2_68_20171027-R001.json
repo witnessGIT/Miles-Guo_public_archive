@@ -1,0 +1,46 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_68_20171027-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_68_20171027",
+  "reviewed_by": "agent-20261006T191534Z-d915df7b",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-07T01:23:49Z",
+  "decision": "rejected_not_target",
+  "canonical_live_id": null,
+  "evidence_urls": [
+    "https://www.gwins.org/cn/milesguo/list_2_68.html",
+    "https://www.gwins.org/cn/milesguo/624.html",
+    "https://www.youtube.com/watch?v=ryBala76EzY",
+    "https://rumble.com/v577hs5-20171027.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS detail page 624 carries source_video_id 20171027 and binds it to this candidate.",
+    "date": "Candidate date 2017-10-27 agrees with the date and source id in the public GWINS title.",
+    "title": "郭文贵2017年10月27日视频 20171027",
+    "platform_ids": [
+      "20171027",
+      "624",
+      "ryBala76EzY",
+      "v577hs5-20171027"
+    ],
+    "source_relationships": "The public GWINS detail page directly exposes the listed media URL(s); generic site-home links were excluded.",
+    "deduplication": "Compared exact source id, date, title, detail page, and platform IDs within current data; retained as a distinct non-livestream candidate without canonical-live promotion."
+  },
+  "source_raw_sha256": "0c409ef9470d75737df168f97597f29d0c01f360f7da87fe4ea20fc4837b38ed",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false,
+  "rejection_reason": "The exact GWINS title identifies a standalone video, interview, Gettr update, or other non-livestream record; it is preserved without canonical livestream promotion."
+}
