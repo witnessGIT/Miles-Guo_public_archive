@@ -1,0 +1,46 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_28_20210304_2-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_28_20210304_2",
+  "reviewed_by": "agent-20261006T191534Z-d915df7b",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-07T01:58:12Z",
+  "decision": "rejected_not_target",
+  "canonical_live_id": null,
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_28.html",
+    "https://gwins.org/cn/milesguo/22622.html",
+    "https://youtu.be/NZMw1jK8Gho",
+    "https://rumble.com/v597out-20210304-2.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS detail page 22622 carries source_video_id 20210304_2 and binds it to this candidate.",
+    "date": "Candidate date 2021-03-04 agrees with the date and source id in the public GWINS title.",
+    "title": "郭文贵2021年3月4日盖特 20210304_2 尊敬的战友们好！G俱乐部的会员卡．从今天起．任何人都可以买多张卡的新政策开始实施",
+    "platform_ids": [
+      "20210304_2",
+      "22622",
+      "NZMw1jK8Gho",
+      "v597out-20210304-2"
+    ],
+    "source_relationships": "The public GWINS detail page directly exposes the listed media URL(s); generic site-home links were excluded.",
+    "deduplication": "Compared exact source id, date, title, detail page, and platform IDs within current data; retained as a distinct non-livestream candidate without canonical-live promotion."
+  },
+  "source_raw_sha256": "c451ab51087064985ef66d2a812dc29031ca22c921ca1fdb2eb650eec6e1de42",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false,
+  "rejection_reason": "The exact GWINS title identifies a standalone video, interview, Gettr update, or other non-livestream record; it is preserved without canonical livestream promotion."
+}

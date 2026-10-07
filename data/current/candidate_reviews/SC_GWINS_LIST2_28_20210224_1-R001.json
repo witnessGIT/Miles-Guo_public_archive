@@ -1,0 +1,43 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_28_20210224_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_28_20210224_1",
+  "reviewed_by": "agent-20261006T191534Z-d915df7b",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-07T01:58:12Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20210224_001",
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_28.html",
+    "https://gwins.org/cn/milesguo/22583.html",
+    "https://rumble.com/v597acr-20210224-1.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS detail page 22583 carries source_video_id 20210224_1 and binds it to this candidate.",
+    "date": "Candidate date 2021-02-24 agrees with the date and source id in the public GWINS title.",
+    "title": "郭文贵2021年2月24日直播 20210224_1 美国沼泽地只能与新中国联邦合作；中共20大保江山，指定习的接班人；虚拟货币获得美国支付牌照的重大意义",
+    "platform_ids": [
+      "20210224_1",
+      "22583",
+      "v597acr-20210224-1"
+    ],
+    "source_relationships": "The public GWINS detail page directly exposes the listed media URL(s); generic site-home links were excluded.",
+    "deduplication": "Fresh current-data checks found no canonical record for exact source id 20210224_1. The distinct GWINS record supports LIVE_20210224_001; same-day numbered items remain separate."
+  },
+  "source_raw_sha256": "bf0a76b426f271ca41e1395b52c06f9909da9947da36f3fbd9fc91499e192b7e",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": true,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}

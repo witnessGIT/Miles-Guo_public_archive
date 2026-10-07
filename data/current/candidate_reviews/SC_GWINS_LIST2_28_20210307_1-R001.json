@@ -1,0 +1,46 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_28_20210307_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_28_20210307_1",
+  "reviewed_by": "agent-20261006T191534Z-d915df7b",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-07T01:58:12Z",
+  "decision": "rejected_not_target",
+  "canonical_live_id": null,
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_28.html",
+    "https://gwins.org/cn/milesguo/22636.html",
+    "https://youtu.be/QNJuXYB8slA",
+    "https://rumble.com/v597syx-20210307-1.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS detail page 22636 carries source_video_id 20210307_1 and binds it to this candidate.",
+    "date": "Candidate date 2021-03-07 agrees with the date and source id in the public GWINS title.",
+    "title": "郭文贵2021年3月7日盖特 20210307_1 国际巨头 (鳄鱼????￼)投资基金．在对大陆的金融市场价值．风险全面调查后．决定将投入大陆的资金撤出，可能部分????????????投入到我们G系列！一切都已经开始！",
+    "platform_ids": [
+      "20210307_1",
+      "22636",
+      "QNJuXYB8slA",
+      "v597syx-20210307-1"
+    ],
+    "source_relationships": "The public GWINS detail page directly exposes the listed media URL(s); generic site-home links were excluded.",
+    "deduplication": "Compared exact source id, date, title, detail page, and platform IDs within current data; retained as a distinct non-livestream candidate without canonical-live promotion."
+  },
+  "source_raw_sha256": "69486657c2d54e677fa95a2281992fe53c3215c345c843fb7dcd179516fdbe97",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false,
+  "rejection_reason": "The exact GWINS title identifies a standalone video, interview, Gettr update, or other non-livestream record; it is preserved without canonical livestream promotion."
+}

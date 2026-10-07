@@ -1,0 +1,46 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_28_20210224_2-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_28_20210224_2",
+  "reviewed_by": "agent-20261006T191534Z-d915df7b",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-07T01:58:12Z",
+  "decision": "rejected_not_target",
+  "canonical_live_id": null,
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_28.html",
+    "https://gwins.org/cn/milesguo/22584.html",
+    "https://youtu.be/CTEiJFJEXfw",
+    "https://rumble.com/v597ah9-20210224-2.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS detail page 22584 carries source_video_id 20210224_2 and binds it to this candidate.",
+    "date": "Candidate date 2021-02-24 agrees with the date and source id in the public GWINS title.",
+    "title": "郭文贵2021年2月24日盖特 20210224_2 国内的很多战友发的信息不能一一回信息——请大家原谅、以毒灭共．以钱灭共！正在全世界全面火热????开始……无人可以阻挡新中国联邦拯救中国人和世界人民的胜利✌️✌️✌️✌️✌️……",
+    "platform_ids": [
+      "20210224_2",
+      "22584",
+      "CTEiJFJEXfw",
+      "v597ah9-20210224-2"
+    ],
+    "source_relationships": "The public GWINS detail page directly exposes the listed media URL(s); generic site-home links were excluded.",
+    "deduplication": "Compared exact source id, date, title, detail page, and platform IDs within current data; retained as a distinct non-livestream candidate without canonical-live promotion."
+  },
+  "source_raw_sha256": "46b3c5951b5fc249b36d45b0d744ca0753fc42efa6956868e0c51d91716b397c",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false,
+  "rejection_reason": "The exact GWINS title identifies a standalone video, interview, Gettr update, or other non-livestream record; it is preserved without canonical livestream promotion."
+}

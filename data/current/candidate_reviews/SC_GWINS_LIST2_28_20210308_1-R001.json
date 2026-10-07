@@ -1,0 +1,43 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_28_20210308_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_28_20210308_1",
+  "reviewed_by": "agent-20261006T191534Z-d915df7b",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-07T01:58:12Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20210308_001",
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_28.html",
+    "https://gwins.org/cn/milesguo/22645.html",
+    "https://rumble.com/v597vnu-20210308-1.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS detail page 22645 carries source_video_id 20210308_1 and binds it to this candidate.",
+    "date": "Candidate date 2021-03-08 agrees with the date and source id in the public GWINS title.",
+    "title": "郭文贵2021年3月8日直播 20210308_1 文贵将在农历2月初二，即3月14号直播怀念母亲；各农场和联盟不要忘记灭共的使命；战友们要学会感恩；Gnews，GTV正飞速发展壮大，感谢义工的付出，希望更多战友加入",
+    "platform_ids": [
+      "20210308_1",
+      "22645",
+      "v597vnu-20210308-1"
+    ],
+    "source_relationships": "The public GWINS detail page directly exposes the listed media URL(s); generic site-home links were excluded.",
+    "deduplication": "Fresh current-data checks found no canonical record for exact source id 20210308_1. The distinct GWINS record supports LIVE_20210308_001; same-day numbered items remain separate."
+  },
+  "source_raw_sha256": "026c185bee7004a8404ff7c30fd1561c5e04cd0e7c51b723c074affcb8c55c7d",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": true,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}
