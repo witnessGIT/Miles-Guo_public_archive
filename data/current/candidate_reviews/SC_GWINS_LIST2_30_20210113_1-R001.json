@@ -1,0 +1,46 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_30_20210113_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_30_20210113_1",
+  "reviewed_by": "agent-20261006T191534Z-d915df7b",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-07T01:59:51Z",
+  "decision": "rejected_not_target",
+  "canonical_live_id": null,
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_30.html",
+    "https://gwins.org/cn/milesguo/22420.html",
+    "https://youtu.be/sukoJ2ROGk8",
+    "https://rumble.com/v590mis-20210113-1.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS detail page 22420 carries source_video_id 20210113_1 and binds it to this candidate.",
+    "date": "Candidate date 2021-01-13 agrees with the date and source id in the public GWINS title.",
+    "title": "郭文贵2021年1月13日盖特 20210113_1 这个对全人类的重要的日子．让我们更加深刻看清了共产党的邪恶……和正道主义的伟大，最终结果会如何呢？",
+    "platform_ids": [
+      "20210113_1",
+      "22420",
+      "sukoJ2ROGk8",
+      "v590mis-20210113-1"
+    ],
+    "source_relationships": "The public GWINS detail page directly exposes the listed media URL(s); generic site-home links were excluded.",
+    "deduplication": "Compared exact source id, date, title, detail page, and platform IDs within current data; retained as a distinct non-livestream candidate without canonical-live promotion."
+  },
+  "source_raw_sha256": "4fc99e89608c46881c8808898961caacf5e888e6ff8191e6580a45317f716fc9",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false,
+  "rejection_reason": "The exact GWINS title identifies a standalone video, interview, Gettr update, or other non-livestream record; it is preserved without canonical livestream promotion."
+}

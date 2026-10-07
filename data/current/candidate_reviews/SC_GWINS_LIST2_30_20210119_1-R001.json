@@ -1,0 +1,46 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_30_20210119_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_30_20210119_1",
+  "reviewed_by": "agent-20261006T191534Z-d915df7b",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-07T01:59:51Z",
+  "decision": "rejected_not_target",
+  "canonical_live_id": null,
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_30.html",
+    "https://gwins.org/cn/milesguo/22440.html",
+    "https://youtu.be/xeDNA5kHVxM",
+    "https://rumble.com/v590rj1-20210119-1.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS detail page 22440 carries source_video_id 20210119_1 and binds it to this candidate.",
+    "date": "Candidate date 2021-01-19 agrees with the date and source id in the public GWINS title.",
+    "title": "郭文贵2021年1月19日盖特 20210119_1 共产党刚刚决定的将在未来的几个月……买通，美国……重回中美贸易逆差的大时代。 买掉共产党应承担的病毒责任，以贸易方式变相的解决中共病毒在全世界的伤害……让全世界重新回到……共",
+    "platform_ids": [
+      "20210119_1",
+      "22440",
+      "xeDNA5kHVxM",
+      "v590rj1-20210119-1"
+    ],
+    "source_relationships": "The public GWINS detail page directly exposes the listed media URL(s); generic site-home links were excluded.",
+    "deduplication": "Compared exact source id, date, title, detail page, and platform IDs within current data; retained as a distinct non-livestream candidate without canonical-live promotion."
+  },
+  "source_raw_sha256": "b7b301dc3e88b03ea4508689c3ba211b6ce59626f04ba9d6cbdb36cd172e7495",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false,
+  "rejection_reason": "The exact GWINS title identifies a standalone video, interview, Gettr update, or other non-livestream record; it is preserved without canonical livestream promotion."
+}

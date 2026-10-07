@@ -1,0 +1,43 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_30_20210117_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_30_20210117_1",
+  "reviewed_by": "agent-20261006T191534Z-d915df7b",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-07T01:59:51Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20210117_001",
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_30.html",
+    "https://gwins.org/cn/milesguo/22433.html",
+    "https://rumble.com/v590r3x-20210117-1.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS detail page 22433 carries source_video_id 20210117_1 and binds it to this candidate.",
+    "date": "Candidate date 2021-01-17 agrees with the date and source id in the public GWINS title.",
+    "title": "郭文贵2021年1月17日直播 20210117_1 拒绝中共的谎言和洗脑！G-Fashion新品全面上线！G翻身是时尚文化运动！人类的终极之战，CCP的灭亡不可逆转！",
+    "platform_ids": [
+      "20210117_1",
+      "22433",
+      "v590r3x-20210117-1"
+    ],
+    "source_relationships": "The public GWINS detail page directly exposes the listed media URL(s); generic site-home links were excluded.",
+    "deduplication": "Fresh current-data checks found no canonical record for exact source id 20210117_1. The distinct GWINS record supports LIVE_20210117_001; same-day numbered items remain separate."
+  },
+  "source_raw_sha256": "b0f78844f7acfa83c4b8f5c3285fbdd4bc974612262103c6a5b5be917125493d",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": true,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}

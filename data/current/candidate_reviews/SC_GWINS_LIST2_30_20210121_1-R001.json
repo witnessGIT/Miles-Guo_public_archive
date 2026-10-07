@@ -1,0 +1,43 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_30_20210121_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_30_20210121_1",
+  "reviewed_by": "agent-20261006T191534Z-d915df7b",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-07T01:59:51Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20210121_001",
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_30.html",
+    "https://gwins.org/cn/milesguo/22454.html",
+    "https://rumble.com/v590wj1-20210121-1.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS detail page 22454 carries source_video_id 20210121_1 and binds it to this candidate.",
+    "date": "Candidate date 2021-01-21 agrees with the date and source id in the public GWINS title.",
+    "title": "郭文贵2021年1月21日直播 20210121_1 深刻总结爆料革命的成功与不足，今年重点发展Ｇ系列，壮大灭共经济体系，与美新政府合作，联合灭共",
+    "platform_ids": [
+      "20210121_1",
+      "22454",
+      "v590wj1-20210121-1"
+    ],
+    "source_relationships": "The public GWINS detail page directly exposes the listed media URL(s); generic site-home links were excluded.",
+    "deduplication": "Fresh current-data checks found no canonical record for exact source id 20210121_1. The distinct GWINS record supports LIVE_20210121_001; same-day numbered items remain separate."
+  },
+  "source_raw_sha256": "38050c283f3e04db593f1738d0ef7b6cb176617e21d0963908ec82a10e65fc30",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": true,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}
