@@ -1,0 +1,46 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_6_20220816_1-R002",
+  "source_candidate_id": "SC_GWINS_LIST2_6_20220816_1",
+  "reviewed_by": "agent-20261006T191534Z-d915df7b",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-07T01:27:10Z",
+  "decision": "rejected_not_target",
+  "canonical_live_id": null,
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_6.html",
+    "https://gwins.org/cn/milesguo/24012.html",
+    "https://gettr.com/post/p1muarmf1f7",
+    "https://rumble.com/v5apl3p-20220816-1.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS detail page 24012 carries source_video_id 20220816_1 and binds it to this candidate.",
+    "date": "Candidate date 2022-08-16 agrees with the date and source id in the public GWINS title.",
+    "title": "郭文贵2022年8月16日盖特 20220816_1 尊敬的战友们好……共产党的国际打黑．反洗钱运动．以及迅速地消除曾．王．孟．江的势力背后的动机是什么？",
+    "platform_ids": [
+      "20220816_1",
+      "24012",
+      "p1muarmf1f7",
+      "v5apl3p-20220816-1"
+    ],
+    "source_relationships": "The public GWINS detail page directly exposes the listed media URL(s); generic site-home links were excluded.",
+    "deduplication": "Compared exact source id, date, title, detail page, and platform IDs within current data; retained as a distinct non-livestream candidate without canonical-live promotion."
+  },
+  "source_raw_sha256": "0366b1fdfa210d8cb2fdaeba846824a16d2e6f01c837707391d01653891d2540",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false,
+  "rejection_reason": "The exact GWINS title identifies a standalone video, interview, Gettr update, or other non-livestream record; it is preserved without canonical livestream promotion."
+}

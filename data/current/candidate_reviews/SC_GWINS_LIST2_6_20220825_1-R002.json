@@ -1,0 +1,46 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_6_20220825_1-R002",
+  "source_candidate_id": "SC_GWINS_LIST2_6_20220825_1",
+  "reviewed_by": "agent-20261006T191534Z-d915df7b",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-07T01:27:10Z",
+  "decision": "rejected_not_target",
+  "canonical_live_id": null,
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_6.html",
+    "https://gwins.org/cn/milesguo/24025.html",
+    "https://gettr.com/post/p1o6nyse58c",
+    "https://rumble.com/v5aqldt-20220825-1.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS detail page 24025 carries source_video_id 20220825_1 and binds it to this candidate.",
+    "date": "Candidate date 2022-08-25 agrees with the date and source id in the public GWINS title.",
+    "title": "郭文贵2022年8月25日盖特 20220825_1 尊敬的战友们好．人类正在面对．气候急剧变化．疫苗灾难．经济危机的关键时刻——新中国联邦人一定要互相珍惜，互相帮助．创建一个最和谐的人类群体！",
+    "platform_ids": [
+      "20220825_1",
+      "24025",
+      "p1o6nyse58c",
+      "v5aqldt-20220825-1"
+    ],
+    "source_relationships": "The public GWINS detail page directly exposes the listed media URL(s); generic site-home links were excluded.",
+    "deduplication": "Compared exact source id, date, title, detail page, and platform IDs within current data; retained as a distinct non-livestream candidate without canonical-live promotion."
+  },
+  "source_raw_sha256": "f9b42e35e3cc9c52bfe69c62623c9d26e560caacd978483fe9bd1f2accb3230c",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false,
+  "rejection_reason": "The exact GWINS title identifies a standalone video, interview, Gettr update, or other non-livestream record; it is preserved without canonical livestream promotion."
+}

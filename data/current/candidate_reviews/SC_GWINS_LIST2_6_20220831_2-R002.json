@@ -1,0 +1,43 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_6_20220831_2-R002",
+  "source_candidate_id": "SC_GWINS_LIST2_6_20220831_2",
+  "reviewed_by": "agent-20261006T191534Z-d915df7b",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-07T01:27:10Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20220831_002",
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_6.html",
+    "https://gwins.org/cn/milesguo/24021.html",
+    "https://rumble.com/v5arz31-20220831-2.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS detail page 24021 carries source_video_id 20220831_2 and binds it to this candidate.",
+    "date": "Candidate date 2022-08-31 agrees with the date and source id in the public GWINS title.",
+    "title": "郭文贵2022年8月31日直播 20220831_2 七哥應戰友要求帶聲直播",
+    "platform_ids": [
+      "20220831_2",
+      "24021",
+      "v5arz31-20220831-2"
+    ],
+    "source_relationships": "The public GWINS detail page directly exposes the listed media URL(s); generic site-home links were excluded.",
+    "deduplication": "Fresh current-data checks found no canonical record for exact source id 20220831_2. The distinct GWINS record supports LIVE_20220831_002; same-day numbered items remain separate."
+  },
+  "source_raw_sha256": "a15cee3b2d1728cfe42b8e0c94794f6e40dcea50978dc7b2fa634d12f0334945",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": true,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}

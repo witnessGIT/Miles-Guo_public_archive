@@ -1,0 +1,46 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_6_20220820_2-R002",
+  "source_candidate_id": "SC_GWINS_LIST2_6_20220820_2",
+  "reviewed_by": "agent-20261006T191534Z-d915df7b",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-07T01:27:10Z",
+  "decision": "rejected_not_target",
+  "canonical_live_id": null,
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_6.html",
+    "https://gwins.org/cn/milesguo/24016.html",
+    "https://gettr.com/post/p1ni3e1ad2e",
+    "https://rumble.com/v5apr2t-20220820-2.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS detail page 24016 carries source_video_id 20220820_2 and binds it to this candidate.",
+    "date": "Candidate date 2022-08-20 agrees with the date and source id in the public GWINS title.",
+    "title": "郭文贵2022年8月20日盖特 20220820_2 尊敬的战友们好，今天早上视频后很多人发来的信息，我无法一回复在这里，录个小视频和大家聊聊！",
+    "platform_ids": [
+      "20220820_2",
+      "24016",
+      "p1ni3e1ad2e",
+      "v5apr2t-20220820-2"
+    ],
+    "source_relationships": "The public GWINS detail page directly exposes the listed media URL(s); generic site-home links were excluded.",
+    "deduplication": "Compared exact source id, date, title, detail page, and platform IDs within current data; retained as a distinct non-livestream candidate without canonical-live promotion."
+  },
+  "source_raw_sha256": "730cbb92517a3587dfa1b9e60d63b9ca2d664ae3257d6f39e6bc6c6b0af957bf",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false,
+  "rejection_reason": "The exact GWINS title identifies a standalone video, interview, Gettr update, or other non-livestream record; it is preserved without canonical livestream promotion."
+}

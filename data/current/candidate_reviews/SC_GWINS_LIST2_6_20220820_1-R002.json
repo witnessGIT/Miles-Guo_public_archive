@@ -1,0 +1,46 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_6_20220820_1-R002",
+  "source_candidate_id": "SC_GWINS_LIST2_6_20220820_1",
+  "reviewed_by": "agent-20261006T191534Z-d915df7b",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-07T01:27:10Z",
+  "decision": "rejected_not_target",
+  "canonical_live_id": null,
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_6.html",
+    "https://gwins.org/cn/milesguo/24015.html",
+    "https://gettr.com/post/p1ngd4o9f56",
+    "https://rumble.com/v5apqyz-20220820-1.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS detail page 24015 carries source_video_id 20220820_1 and binds it to this candidate.",
+    "date": "Candidate date 2022-08-20 agrees with the date and source id in the public GWINS title.",
+    "title": "郭文贵2022年8月20日盖特 20220820_1 尊敬的战友们好．新中国联邦人的成长……只会是在合法．体面．有尊严的信仰自由的生活方式……在一次次的挑战中成长强大！",
+    "platform_ids": [
+      "20220820_1",
+      "24015",
+      "p1ngd4o9f56",
+      "v5apqyz-20220820-1"
+    ],
+    "source_relationships": "The public GWINS detail page directly exposes the listed media URL(s); generic site-home links were excluded.",
+    "deduplication": "Compared exact source id, date, title, detail page, and platform IDs within current data; retained as a distinct non-livestream candidate without canonical-live promotion."
+  },
+  "source_raw_sha256": "7cf8a02c7e8197dd52ea7e9efd01d6a0061f7a9ac377c976759a6150dffcb155",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false,
+  "rejection_reason": "The exact GWINS title identifies a standalone video, interview, Gettr update, or other non-livestream record; it is preserved without canonical livestream promotion."
+}

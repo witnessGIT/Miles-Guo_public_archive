@@ -1,0 +1,46 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_6_20220819_1-R002",
+  "source_candidate_id": "SC_GWINS_LIST2_6_20220819_1",
+  "reviewed_by": "agent-20261006T191534Z-d915df7b",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-07T01:27:10Z",
+  "decision": "rejected_not_target",
+  "canonical_live_id": null,
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_6.html",
+    "https://gwins.org/cn/milesguo/24014.html",
+    "https://gettr.com/post/p1nbwp80d7f",
+    "https://rumble.com/v5apqu5-20220819-1.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS detail page 24014 carries source_video_id 20220819_1 and binds it to this candidate.",
+    "date": "Candidate date 2022-08-19 agrees with the date and source id in the public GWINS title.",
+    "title": "郭文贵2022年8月19日盖特 20220819_1 尊敬的战友们好……全球发达国家．与中国共产党的经济，科技等的全面脱钩．正在快速进行中，共国的经济必然崩塌。我们要拯救中国的人心，帮助那些被长期洗脑了99.99的中国同胞们……一切都",
+    "platform_ids": [
+      "20220819_1",
+      "24014",
+      "p1nbwp80d7f",
+      "v5apqu5-20220819-1"
+    ],
+    "source_relationships": "The public GWINS detail page directly exposes the listed media URL(s); generic site-home links were excluded.",
+    "deduplication": "Compared exact source id, date, title, detail page, and platform IDs within current data; retained as a distinct non-livestream candidate without canonical-live promotion."
+  },
+  "source_raw_sha256": "7344e10922b48c9ae47fa1a3234e1d810b07176bd69cb688846c96855fc13ff1",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false,
+  "rejection_reason": "The exact GWINS title identifies a standalone video, interview, Gettr update, or other non-livestream record; it is preserved without canonical livestream promotion."
+}

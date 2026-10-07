@@ -1,0 +1,46 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_6_20220827_1-R002",
+  "source_candidate_id": "SC_GWINS_LIST2_6_20220827_1",
+  "reviewed_by": "agent-20261006T191534Z-d915df7b",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-07T01:27:10Z",
+  "decision": "rejected_not_target",
+  "canonical_live_id": null,
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_6.html",
+    "https://gwins.org/cn/milesguo/24028.html",
+    "https://gettr.com/post/p1ohmtu9087",
+    "https://rumble.com/v5aqlki-20220827-1.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS detail page 24028 carries source_video_id 20220827_1 and binds it to this candidate.",
+    "date": "Candidate date 2022-08-27 agrees with the date and source id in the public GWINS title.",
+    "title": "郭文贵2022年8月27日盖特 20220827_1 尊敬的战友们好……中国和世界的经济贸易．科技．脱钩……会让很多盗国贼的财富……暴露在阳光之下……",
+    "platform_ids": [
+      "20220827_1",
+      "24028",
+      "p1ohmtu9087",
+      "v5aqlki-20220827-1"
+    ],
+    "source_relationships": "The public GWINS detail page directly exposes the listed media URL(s); generic site-home links were excluded.",
+    "deduplication": "Compared exact source id, date, title, detail page, and platform IDs within current data; retained as a distinct non-livestream candidate without canonical-live promotion."
+  },
+  "source_raw_sha256": "4bbf20b254ba5e510b0a55c96966b343e5010e6acb117dfa728fb60fc7f9b550",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false,
+  "rejection_reason": "The exact GWINS title identifies a standalone video, interview, Gettr update, or other non-livestream record; it is preserved without canonical livestream promotion."
+}

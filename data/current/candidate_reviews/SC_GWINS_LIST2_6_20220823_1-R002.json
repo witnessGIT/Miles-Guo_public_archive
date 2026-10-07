@@ -1,0 +1,43 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_6_20220823_1-R002",
+  "source_candidate_id": "SC_GWINS_LIST2_6_20220823_1",
+  "reviewed_by": "agent-20261006T191534Z-d915df7b",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-07T01:27:10Z",
+  "decision": "linked_existing_canonical",
+  "canonical_live_id": "LIVE_20220823_001",
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_6.html",
+    "https://gwins.org/cn/milesguo/24017.html",
+    "https://rumble.com/v5aq9rh-20220823-1.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS detail page 24017 carries source_video_id 20220823_1 and binds it to this candidate.",
+    "date": "Candidate date 2022-08-23 agrees with the date and source id in the public GWINS title.",
+    "title": "郭文贵2022年8月23日直播 20220823_1 直播回复战友关注的 习 李 曾 大战的一些问题",
+    "platform_ids": [
+      "20220823_1",
+      "24017",
+      "v5aq9rh-20220823-1"
+    ],
+    "source_relationships": "The public GWINS detail page directly exposes the listed media URL(s); generic site-home links were excluded.",
+    "deduplication": "Exact public media URL already belongs to LIVE_20220823_001; this GWINS record is linked to that existing canonical live without duplicating the media asset."
+  },
+  "source_raw_sha256": "e50c357cf9d29b599c327213d4a7a7225f3dee3f3d354caa8f2a8976a55a4c0a",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}

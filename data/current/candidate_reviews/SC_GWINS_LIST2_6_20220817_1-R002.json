@@ -1,0 +1,43 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_6_20220817_1-R002",
+  "source_candidate_id": "SC_GWINS_LIST2_6_20220817_1",
+  "reviewed_by": "agent-20261006T191534Z-d915df7b",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-07T01:27:10Z",
+  "decision": "linked_existing_canonical",
+  "canonical_live_id": "LIVE_20220817_001",
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_6.html",
+    "https://gwins.org/cn/milesguo/24009.html",
+    "https://rumble.com/v5apqlp-20220817-1.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS detail page 24009 carries source_video_id 20220817_1 and binds it to this candidate.",
+    "date": "Candidate date 2022-08-17 agrees with the date and source id in the public GWINS title.",
+    "title": "郭文贵2022年8月17日直播 20220817_1 五块证劵锅泽林，栗战书二女儿王源有多少钱",
+    "platform_ids": [
+      "20220817_1",
+      "24009",
+      "v5apqlp-20220817-1"
+    ],
+    "source_relationships": "The public GWINS detail page directly exposes the listed media URL(s); generic site-home links were excluded.",
+    "deduplication": "Exact public media URL already belongs to LIVE_20220817_001; this GWINS record is linked to that existing canonical live without duplicating the media asset."
+  },
+  "source_raw_sha256": "49c61f9f398e2f50498e2bb582f7a6fa703c687e2a1860f27ee1aedcc57ce62d",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}
