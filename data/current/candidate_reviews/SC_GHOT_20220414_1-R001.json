@@ -1,0 +1,44 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GHOT_20220414_1-R001",
+  "source_candidate_id": "SC_GHOT_20220414_1",
+  "reviewed_by": "agent-20261006T191453Z-a890f4a8",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-07T01:17:50Z",
+  "decision": "linked_existing_canonical",
+  "canonical_live_id": "LIVE_20220414_001",
+  "evidence_urls": [
+    "https://ghot.ai/archive/videos/2022-04-14-1",
+    "https://gettr.com/streaming/p159w5ob237",
+    "https://rumble.com/v5acr85-20220414-1.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "Exact public GHOT page is bound to candidate SC_GHOT_20220414_1 and page/source identifier 2022-04-14-1; identity visibility=False.",
+    "date": "Candidate date is 2022-04-14; no publication time was inferred.",
+    "title": "2022.04.14 七哥乱聊直播第一段",
+    "platform_ids": [
+      "2022-04-14-1",
+      "2022-04-14-1",
+      "streaming/p159w5ob237",
+      "v5acr85-20220414-1"
+    ],
+    "source_relationships": "Only exact public page URLs and concrete outbound platform links were retained; generic navigation links were excluded.",
+    "deduplication": "Exact outbound platform URLs already belong to the named canonical live."
+  },
+  "source_raw_sha256": "b1c313ba0c9f10c9448cd10b77dba00fcce27e814455565dfab665e7df792976",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}
