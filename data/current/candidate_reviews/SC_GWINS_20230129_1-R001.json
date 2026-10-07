@@ -1,0 +1,44 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_20230129_1-R001",
+  "source_candidate_id": "SC_GWINS_20230129_1",
+  "reviewed_by": "agent-20261006T191453Z-a890f4a8",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-07T01:23:47Z",
+  "decision": "linked_existing_canonical",
+  "canonical_live_id": "LIVE_20230129_001",
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/24271.html",
+    "https://gettr.com/streaming/p26ogg2bb78",
+    "https://rumble.com/v5b19ut-20230129-1.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "Exact public GWINS page is bound to candidate SC_GWINS_20230129_1 and page/source identifier 24271; identity visibility=True.",
+    "date": "Candidate date is 2023-01-29; no publication time was inferred.",
+    "title": "郭文贵2023年1月29日直播 20230129_1 习近平和共产党的恐惧是什么？2023年1月29日",
+    "platform_ids": [
+      "20230129_1",
+      "24271",
+      "streaming/p26ogg2bb78",
+      "v5b19ut-20230129-1"
+    ],
+    "source_relationships": "Only exact public page URLs and concrete outbound platform links were retained; generic navigation links were excluded.",
+    "deduplication": "Canonical ID LIVE_20230129_001 already exists in current structured data; this exact source is linked without creating a duplicate live."
+  },
+  "source_raw_sha256": "a296ae20a8df41ef13f6e0047486a48d26b027726983fc0464d5ea732e1d69ae",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}
