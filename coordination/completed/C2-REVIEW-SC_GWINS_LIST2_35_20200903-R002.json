@@ -1,0 +1,28 @@
+{
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_35_20200903-R002",
+  "agent_id": "agent-20261006T191258Z-937a95e9",
+  "completed_at": "2026-10-07T01:59:33.512375+00:00",
+  "result_commit": "dc3bd0f7fa5fd35f4cf2d255d50f538bb9cb03be",
+  "outputs": [
+    "data/current/candidate_reviews/SC_GWINS_LIST2_35_20200903-R002.json"
+  ],
+  "validation": "Second-generation review confirmed exact GWINS detail identity/date/title and direct platform locators against captured metadata evidence; real YouTube video IDs were parsed from query parameters. The candidate-review-evidence-v2 artifact plus build_db, validate_db, validate_candidate_reviews, and the full unit test suite passed. No playback, media download, transcription, segmentation, or later video processing was performed.",
+  "workflow_mode": "continuous-worker-v2",
+  "claim_protocol": "claim-protocol-v2",
+  "entry_mode": "work",
+  "continue_after_finish": true,
+  "finish_prerequisites_revalidated": true,
+  "notes": "Task completed only after re-checking the latest repository dependency contract. Under continuous-worker-v2, refresh repository state and claim the next eligible task unless a documented stop condition applies.",
+  "kind": "candidate_promotion_review",
+  "source_candidate_id": "SC_GWINS_LIST2_35_20200903",
+  "review_generation": 2,
+  "review_claim_timeout_hours": 10,
+  "review_batch_id": "REVIEW-BATCH-20261007T015740682204Z-56ce8649",
+  "review_batch_target_size": 100,
+  "review_batch_claimed_count": 100,
+  "review_batch_position": 15,
+  "candidate_review_contract": "candidate-review-evidence-v2",
+  "review_artifact": "data/current/candidate_reviews/SC_GWINS_LIST2_35_20200903-R002.json",
+  "review_decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20200903_001"
+}
