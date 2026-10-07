@@ -1,0 +1,44 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GHOT_20220817_1-R001",
+  "source_candidate_id": "SC_GHOT_20220817_1",
+  "reviewed_by": "agent-20261006T191453Z-a890f4a8",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-07T01:18:47Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20220817_001",
+  "evidence_urls": [
+    "https://ghot.ai/archive/videos/2022-08-17-1",
+    "https://gettr.com/streaming/p1n0ozl9f79",
+    "https://rumble.com/v5apqlp-20220817-1.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "Exact public GHOT page is bound to candidate SC_GHOT_20220817_1 and page/source identifier 2022-08-17-1; identity visibility=False.",
+    "date": "Candidate date is 2022-08-17; no publication time was inferred.",
+    "title": "2022.08.17 文贵大直播：五块证劵锅泽林，栗战书二女儿王源有多少钱",
+    "platform_ids": [
+      "2022-08-17-1",
+      "2022-08-17-1",
+      "streaming/p1n0ozl9f79",
+      "v5apqlp-20220817-1"
+    ],
+    "source_relationships": "Only exact public page URLs and concrete outbound platform links were retained; generic navigation links were excluded.",
+    "deduplication": "The exact GHOT title explicitly identifies an original Miles Guo livestream."
+  },
+  "source_raw_sha256": "99559e7ec36a2bb99798ce08c3631c5f222459457e640b09972e250ebf0bb7a8",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": true,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}
