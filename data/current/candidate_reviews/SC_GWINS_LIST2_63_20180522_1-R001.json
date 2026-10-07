@@ -1,0 +1,46 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_63_20180522_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_63_20180522_1",
+  "reviewed_by": "agent-20261006T191534Z-d915df7b",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-07T01:20:13Z",
+  "decision": "rejected_not_target",
+  "canonical_live_id": null,
+  "evidence_urls": [
+    "https://www.gwins.org/cn/milesguo/list_2_63.html",
+    "https://www.gwins.org/cn/milesguo/507.html",
+    "https://www.youtube.com/watch?v=Tnt4LY3YBNg",
+    "https://rumble.com/v578ead-20180522-1.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS detail page 507 carries source_video_id 20180522_1 and binds it to this candidate.",
+    "date": "Candidate date 2018-05-22 agrees with the date and source id in the public GWINS title.",
+    "title": "郭文贵2018年5月22日视频第一部分 20180522_1 谈与王岐山刘志华一起战斗的日子！",
+    "platform_ids": [
+      "20180522_1",
+      "507",
+      "Tnt4LY3YBNg",
+      "v578ead-20180522-1"
+    ],
+    "source_relationships": "The public GWINS detail page directly exposes the listed media URL(s); generic site-home links were excluded.",
+    "deduplication": "Compared exact source id, date, title, detail page, and platform IDs within current data; retained as a distinct non-livestream candidate without canonical-live promotion."
+  },
+  "source_raw_sha256": "4ecced29bf51fa33c11cf822d06e40ba74e883b62629fbd90899d22e8c597257",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false,
+  "rejection_reason": "The exact GWINS title identifies a standalone video, interview, Gettr update, or other non-livestream record; it is preserved without canonical livestream promotion."
+}

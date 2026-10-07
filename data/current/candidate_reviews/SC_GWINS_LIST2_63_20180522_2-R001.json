@@ -1,0 +1,46 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_63_20180522_2-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_63_20180522_2",
+  "reviewed_by": "agent-20261006T191534Z-d915df7b",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-07T01:20:13Z",
+  "decision": "rejected_not_target",
+  "canonical_live_id": null,
+  "evidence_urls": [
+    "https://www.gwins.org/cn/milesguo/list_2_63.html",
+    "https://www.gwins.org/cn/milesguo/508.html",
+    "https://www.youtube.com/watch?v=p-9xyEYaCIA",
+    "https://rumble.com/v578edp-20180522-2.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS detail page 508 carries source_video_id 20180522_2 and binds it to this candidate.",
+    "date": "Candidate date 2018-05-22 agrees with the date and source id in the public GWINS title.",
+    "title": "郭文贵2018年5月22日视频第二部分 20180522_2 谈委内瑞拉．马来西亚．是我们借鉴走向喜马拉雅的好榜样！岳文海的腐败！",
+    "platform_ids": [
+      "20180522_2",
+      "508",
+      "p-9xyEYaCIA",
+      "v578edp-20180522-2"
+    ],
+    "source_relationships": "The public GWINS detail page directly exposes the listed media URL(s); generic site-home links were excluded.",
+    "deduplication": "Compared exact source id, date, title, detail page, and platform IDs within current data; retained as a distinct non-livestream candidate without canonical-live promotion."
+  },
+  "source_raw_sha256": "d1b5d8c7bc30cc5676394567cb02388fc587e431437a5acd238846efeffb7434",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false,
+  "rejection_reason": "The exact GWINS title identifies a standalone video, interview, Gettr update, or other non-livestream record; it is preserved without canonical livestream promotion."
+}

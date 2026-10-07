@@ -1,0 +1,45 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_63_20180513_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_63_20180513_1",
+  "reviewed_by": "agent-20261006T191534Z-d915df7b",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-07T01:20:13Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20180513_001",
+  "evidence_urls": [
+    "https://www.gwins.org/cn/milesguo/list_2_63.html",
+    "https://www.gwins.org/cn/milesguo/21789.html",
+    "https://youtu.be/M_eF-BbxOYs",
+    "https://rumble.com/v578dto-20180513-1.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS detail page 21789 carries source_video_id 20180513_1 and binds it to this candidate.",
+    "date": "Candidate date 2018-05-13 agrees with the date and source id in the public GWINS title.",
+    "title": "郭文贵2018年5月13日直播 20180513_1 文贵的人生导师之一昨晚上仙鹤而去！！！????????????",
+    "platform_ids": [
+      "20180513_1",
+      "21789",
+      "M_eF-BbxOYs",
+      "v578dto-20180513-1"
+    ],
+    "source_relationships": "The public GWINS detail page directly exposes the listed media URL(s); generic site-home links were excluded.",
+    "deduplication": "Fresh current-data checks found no canonical record for exact source id 20180513_1. The distinct GWINS record supports LIVE_20180513_001; same-day numbered items remain separate."
+  },
+  "source_raw_sha256": "42fd6adf5ad914ca123c8daed5adbfa5202dc43c8cc68aead8383405e74f951a",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": true,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}
