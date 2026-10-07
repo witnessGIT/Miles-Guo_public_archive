@@ -1,0 +1,44 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_20230111_1-R001",
+  "source_candidate_id": "SC_GWINS_20230111_1",
+  "reviewed_by": "agent-20261006T191453Z-a890f4a8",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-07T01:21:50Z",
+  "decision": "linked_existing_canonical",
+  "canonical_live_id": "LIVE_20230111_001",
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/24192.html",
+    "https://odysee.com/@laxi:4/20230111_1:5",
+    "https://rumble.com/v5b126x-20230111-1.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "Exact public GWINS page is bound to candidate SC_GWINS_20230111_1 and page/source identifier 24192; identity visibility=True.",
+    "date": "Candidate date is 2023-01-11; no publication time was inferred.",
+    "title": "郭文贵2023年1月11日直播 20230111_1 美国国会会对中国共产党以及美国共产党采取怎么样的实质行动",
+    "platform_ids": [
+      "20230111_1",
+      "24192",
+      "@laxi:4/20230111_1:5",
+      "v5b126x-20230111-1"
+    ],
+    "source_relationships": "Only exact public page URLs and concrete outbound platform links were retained; generic navigation links were excluded.",
+    "deduplication": "Canonical ID LIVE_20230111_001 already exists in current structured data; this exact source is linked without creating a duplicate live."
+  },
+  "source_raw_sha256": "17a505d596395841bad9745b10569c1a9d5055aa544d323b57e5edecad078f1b",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}
