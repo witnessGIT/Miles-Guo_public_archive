@@ -1,0 +1,44 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_20230201_1-R001",
+  "source_candidate_id": "SC_GWINS_20230201_1",
+  "reviewed_by": "agent-20261006T191453Z-a890f4a8",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-07T01:23:54Z",
+  "decision": "linked_existing_canonical",
+  "canonical_live_id": "LIVE_20230201_001",
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/24241.html",
+    "https://gettr.com/streaming/p271nur051e",
+    "https://rumble.com/v5b1d7t-20230201-1.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "Exact public GWINS page is bound to candidate SC_GWINS_20230201_1 and page/source identifier 24241; identity visibility=True.",
+    "date": "Candidate date is 2023-02-01; no publication time was inferred.",
+    "title": "郭文贵2023年2月1日直播 20230201_1 岳文海被抓的“钱钱”后后.....",
+    "platform_ids": [
+      "20230201_1",
+      "24241",
+      "streaming/p271nur051e",
+      "v5b1d7t-20230201-1"
+    ],
+    "source_relationships": "Only exact public page URLs and concrete outbound platform links were retained; generic navigation links were excluded.",
+    "deduplication": "Canonical ID LIVE_20230201_001 already exists in current structured data; this exact source is linked without creating a duplicate live."
+  },
+  "source_raw_sha256": "503631c9e3c6ddba43e7b2576123b43f4ab13c5cc9dc2829a80adc8100fc3213",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}
