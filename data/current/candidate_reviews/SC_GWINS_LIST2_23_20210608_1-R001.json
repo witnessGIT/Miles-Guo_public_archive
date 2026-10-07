@@ -1,0 +1,46 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_23_20210608_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_23_20210608_1",
+  "reviewed_by": "agent-20261006T191453Z-a890f4a8",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-07T02:01:54Z",
+  "decision": "rejected_not_target",
+  "canonical_live_id": null,
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_23.html",
+    "https://gwins.org/cn/milesguo/23051.html",
+    "https://youtu.be/ySCvvrrRIrg",
+    "https://rumble.com/v59envx-20210608-1.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "Exact public GWINS page is bound to candidate SC_GWINS_LIST2_23_20210608_1 and page/source identifier list_2_23; identity visibility=True.",
+    "date": "Candidate date is 2021-06-08; no publication time was inferred.",
+    "title": "郭文贵2021年6月8日盖特 20210608_1 尊敬的战友们好14亿同胞．和孩子们的绝望……中共经济的即将的崩溃……和社会治安的动乱……和美军即将长期派驻台湾……保护台湾……宣布台湾成为主权独立的国家……这些事件的发生这意味",
+    "platform_ids": [
+      "20210608_1",
+      "list_2_23",
+      "ySCvvrrRIrg",
+      "v59envx-20210608-1"
+    ],
+    "source_relationships": "Only exact public page URLs and concrete outbound platform links were retained; generic navigation links were excluded.",
+    "deduplication": "The exact GWINS title identifies a standalone GETTR update, short video, or rebroadcast rather than an original livestream."
+  },
+  "source_raw_sha256": "619da91a94898129491e73a4b2712aeaed570fbbb72e03af7b4d0a4c5e49d231",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false,
+  "rejection_reason": "The exact GWINS title identifies a standalone GETTR update, short video, or rebroadcast rather than an original livestream."
+}

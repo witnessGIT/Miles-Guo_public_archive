@@ -1,0 +1,45 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_23_20210613_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_23_20210613_1",
+  "reviewed_by": "agent-20261006T191453Z-a890f4a8",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-07T02:01:54Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20210613_001",
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_23.html",
+    "https://gwins.org/cn/milesguo/23061.html",
+    "https://odysee.com/@laxi:4/20210613_1:1",
+    "https://rumble.com/v59eq29-20210613-1.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "Exact public GWINS page is bound to candidate SC_GWINS_LIST2_23_20210613_1 and page/source identifier list_2_23; identity visibility=True.",
+    "date": "Candidate date is 2021-06-13; no publication time was inferred.",
+    "title": "郭文贵2021年6月13日直播 20210613_1 董宏受专案组虐待，交代了王岐山，吴征，孙力军，孟建柱对文贵专案组的任务，花费上亿美元；只有爆料革命每天都在改变着中南坑；明年影响人类命运的4个选举，3大的政治变化；战友们一定要",
+    "platform_ids": [
+      "20210613_1",
+      "list_2_23",
+      "@laxi:4/20210613_1:1",
+      "v59eq29-20210613-1"
+    ],
+    "source_relationships": "Only exact public page URLs and concrete outbound platform links were retained; generic navigation links were excluded.",
+    "deduplication": "The exact GWINS title explicitly identifies an original livestream."
+  },
+  "source_raw_sha256": "087d9809e2682d4c0e2fe720d89e0bd1092c850eda4f524ddf68439c136b3406",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": true,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}

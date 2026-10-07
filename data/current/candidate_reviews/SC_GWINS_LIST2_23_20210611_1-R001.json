@@ -1,0 +1,46 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_23_20210611_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_23_20210611_1",
+  "reviewed_by": "agent-20261006T191453Z-a890f4a8",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-07T02:01:54Z",
+  "decision": "rejected_not_target",
+  "canonical_live_id": null,
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_23.html",
+    "https://gwins.org/cn/milesguo/23054.html",
+    "https://youtu.be/szYN_Ny8-m0",
+    "https://rumble.com/v59eo25-20210611-1.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "Exact public GWINS page is bound to candidate SC_GWINS_LIST2_23_20210611_1 and page/source identifier list_2_23; identity visibility=True.",
+    "date": "Candidate date is 2021-06-11; no publication time was inferred.",
+    "title": "郭文贵2021年6月11日盖特 20210611_1 尊敬的战友们好！回应战友们！这几天给我发的信息．有关路德访谈和科学家访谈！当中的一系列的不好的感觉！我们一定要记住，唯真不破．知恩感恩的．爆料革命团结是一切根本性的原则！只",
+    "platform_ids": [
+      "20210611_1",
+      "list_2_23",
+      "szYN_Ny8-m0",
+      "v59eo25-20210611-1"
+    ],
+    "source_relationships": "Only exact public page URLs and concrete outbound platform links were retained; generic navigation links were excluded.",
+    "deduplication": "The exact GWINS title identifies a standalone GETTR update, short video, or rebroadcast rather than an original livestream."
+  },
+  "source_raw_sha256": "90c7ae6c82407c47d5b4053e044b4df1cb3a7efcb46a5b5752ec100c21c4e033",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false,
+  "rejection_reason": "The exact GWINS title identifies a standalone GETTR update, short video, or rebroadcast rather than an original livestream."
+}

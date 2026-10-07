@@ -1,0 +1,46 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_23_20210606_3-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_23_20210606_3",
+  "reviewed_by": "agent-20261006T191453Z-a890f4a8",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-07T02:01:54Z",
+  "decision": "rejected_not_target",
+  "canonical_live_id": null,
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_23.html",
+    "https://gwins.org/cn/milesguo/23041.html",
+    "https://youtu.be/7dx79EQQ9Gs",
+    "https://rumble.com/v59ejfp-20210606-3.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "Exact public GWINS page is bound to candidate SC_GWINS_LIST2_23_20210606_3 and page/source identifier list_2_23; identity visibility=True.",
+    "date": "Candidate date is 2021-06-06; no publication time was inferred.",
+    "title": "郭文贵2021年6月6日盖特 20210606_3 尊敬的战友们……好在开会20分钟时间为SNOW 理理战发！",
+    "platform_ids": [
+      "20210606_3",
+      "list_2_23",
+      "7dx79EQQ9Gs",
+      "v59ejfp-20210606-3"
+    ],
+    "source_relationships": "Only exact public page URLs and concrete outbound platform links were retained; generic navigation links were excluded.",
+    "deduplication": "The exact GWINS title identifies a standalone GETTR update, short video, or rebroadcast rather than an original livestream."
+  },
+  "source_raw_sha256": "54df6afd5d699ae28500cdba048bbccbe4929cdf46eb03dc666231791b019f0d",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false,
+  "rejection_reason": "The exact GWINS title identifies a standalone GETTR update, short video, or rebroadcast rather than an original livestream."
+}
