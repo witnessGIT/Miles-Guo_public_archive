@@ -1,0 +1,46 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_29_20210215_2-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_29_20210215_2",
+  "reviewed_by": "agent-20261006T191534Z-d915df7b",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-07T01:59:02Z",
+  "decision": "rejected_not_target",
+  "canonical_live_id": null,
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_29.html",
+    "https://gwins.org/cn/milesguo/22551.html",
+    "https://youtu.be/xCh-4b7LGtI",
+    "https://rumble.com/v596gzh-20210215-2.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS detail page 22551 carries source_video_id 20210215_2 and binds it to this candidate.",
+    "date": "Candidate date 2021-02-15 agrees with the date and source id in the public GWINS title.",
+    "title": "郭文贵2021年2月15日盖特 20210215_2 文贵与友们赏雪……",
+    "platform_ids": [
+      "20210215_2",
+      "22551",
+      "xCh-4b7LGtI",
+      "v596gzh-20210215-2"
+    ],
+    "source_relationships": "The public GWINS detail page directly exposes the listed media URL(s); generic site-home links were excluded.",
+    "deduplication": "Compared exact source id, date, title, detail page, and platform IDs within current data; retained as a distinct non-livestream candidate without canonical-live promotion."
+  },
+  "source_raw_sha256": "3040afafe7627e0bde9ac31c223727a228688919217421be2292135a6e018f86",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false,
+  "rejection_reason": "The exact GWINS title identifies a standalone video, interview, Gettr update, or other non-livestream record; it is preserved without canonical livestream promotion."
+}

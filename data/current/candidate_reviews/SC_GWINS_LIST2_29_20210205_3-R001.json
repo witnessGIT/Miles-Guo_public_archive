@@ -1,0 +1,46 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_29_20210205_3-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_29_20210205_3",
+  "reviewed_by": "agent-20261006T191534Z-d915df7b",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-07T01:59:02Z",
+  "decision": "rejected_not_target",
+  "canonical_live_id": null,
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_29.html",
+    "https://gwins.org/cn/milesguo/22514.html",
+    "https://youtu.be/326FUjd6pC4",
+    "https://rumble.com/v595iot-20210205-3.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS detail page 22514 carries source_video_id 20210205_3 and binds it to this candidate.",
+    "date": "Candidate date 2021-02-05 agrees with the date and source id in the public GWINS title.",
+    "title": "郭文贵2021年2月5日盖特 20210205_3 过去几周来．共产党威胁虐待和殴打的国内的战友们……几乎百分之百都是给VOG写遗书和原来在VOG打义工的战友们 !这个灾难发生后……七哥必须承担全部的责任，我们必须深刻的反思和在这个过程",
+    "platform_ids": [
+      "20210205_3",
+      "22514",
+      "326FUjd6pC4",
+      "v595iot-20210205-3"
+    ],
+    "source_relationships": "The public GWINS detail page directly exposes the listed media URL(s); generic site-home links were excluded.",
+    "deduplication": "Compared exact source id, date, title, detail page, and platform IDs within current data; retained as a distinct non-livestream candidate without canonical-live promotion."
+  },
+  "source_raw_sha256": "9ab26c8eedc6c879dc9da949a9cfe10ab577bfe4e11591d8a66e7115af7c629d",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false,
+  "rejection_reason": "The exact GWINS title identifies a standalone video, interview, Gettr update, or other non-livestream record; it is preserved without canonical livestream promotion."
+}

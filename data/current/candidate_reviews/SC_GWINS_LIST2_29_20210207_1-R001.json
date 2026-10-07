@@ -1,0 +1,43 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_29_20210207_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_29_20210207_1",
+  "reviewed_by": "agent-20261006T191534Z-d915df7b",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-07T01:59:02Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20210207_001",
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_29.html",
+    "https://gwins.org/cn/milesguo/22523.html",
+    "https://rumble.com/v595n2t-20210207-1.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS detail page 22523 carries source_video_id 20210207_1 and binds it to this candidate.",
+    "date": "Candidate date 2021-02-07 agrees with the date and source id in the public GWINS title.",
+    "title": "郭文贵2021年2月7日直播 20210207_1 给战友们做美食；要用行动反击九指妖",
+    "platform_ids": [
+      "20210207_1",
+      "22523",
+      "v595n2t-20210207-1"
+    ],
+    "source_relationships": "The public GWINS detail page directly exposes the listed media URL(s); generic site-home links were excluded.",
+    "deduplication": "Fresh current-data checks found no canonical record for exact source id 20210207_1. The distinct GWINS record supports LIVE_20210207_001; same-day numbered items remain separate."
+  },
+  "source_raw_sha256": "be3277487ea19fc7bbcd9c8f6ca2cea19ee984525d6a2f1d6af0cc95c1735fbc",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": true,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}

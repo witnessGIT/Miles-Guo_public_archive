@@ -1,0 +1,46 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_29_20210208_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_29_20210208_1",
+  "reviewed_by": "agent-20261006T191534Z-d915df7b",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-07T01:59:02Z",
+  "decision": "rejected_not_target",
+  "canonical_live_id": null,
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_29.html",
+    "https://gwins.org/cn/milesguo/22527.html",
+    "https://youtu.be/GOWNqms7dGM",
+    "https://rumble.com/v595n42-20210208-1.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS detail page 22527 carries source_video_id 20210208_1 and binds it to this candidate.",
+    "date": "Candidate date 2021-02-08 agrees with the date and source id in the public GWINS title.",
+    "title": "郭文贵2021年2月8日盖特 20210208_1 尊敬的战友们好，你们健身了吗？中共即将崩塌的经济和党员们对未来财富安全的恐惧，正在改变着世界的经济的格局……，美国总统拜登将与习近平新春通话……",
+    "platform_ids": [
+      "20210208_1",
+      "22527",
+      "GOWNqms7dGM",
+      "v595n42-20210208-1"
+    ],
+    "source_relationships": "The public GWINS detail page directly exposes the listed media URL(s); generic site-home links were excluded.",
+    "deduplication": "Compared exact source id, date, title, detail page, and platform IDs within current data; retained as a distinct non-livestream candidate without canonical-live promotion."
+  },
+  "source_raw_sha256": "9d5d92d6a568d4acf2dfe3d9f8d359645107a40be4a0cf6bd8fa2967af332e65",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false,
+  "rejection_reason": "The exact GWINS title identifies a standalone video, interview, Gettr update, or other non-livestream record; it is preserved without canonical livestream promotion."
+}

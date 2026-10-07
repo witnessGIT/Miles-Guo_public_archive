@@ -1,0 +1,43 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_29_20210216_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_29_20210216_1",
+  "reviewed_by": "agent-20261006T191534Z-d915df7b",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-07T01:59:02Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20210216_001",
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_29.html",
+    "https://gwins.org/cn/milesguo/22554.html",
+    "https://rumble.com/v596ql7-20210216-1.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS detail page 22554 carries source_video_id 20210216_1 and binds it to this candidate.",
+    "date": "Candidate date 2021-02-16 agrees with the date and source id in the public GWINS title.",
+    "title": "郭文贵2021年2月16日直播 20210216_1 文贵讲的关于电影《白虎》和“灭白计划”，反响强烈；欧洲，日本即将对中共会有大动作；战友们一定赶快找九指妖要钱",
+    "platform_ids": [
+      "20210216_1",
+      "22554",
+      "v596ql7-20210216-1"
+    ],
+    "source_relationships": "The public GWINS detail page directly exposes the listed media URL(s); generic site-home links were excluded.",
+    "deduplication": "Fresh current-data checks found no canonical record for exact source id 20210216_1. The distinct GWINS record supports LIVE_20210216_001; same-day numbered items remain separate."
+  },
+  "source_raw_sha256": "eaa168fcef81ef116ba5f86f7db8dfe140821d5a8b1d9120a7da93f12013c576",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": true,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}

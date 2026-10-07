@@ -1,0 +1,46 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_29_20210201_4-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_29_20210201_4",
+  "reviewed_by": "agent-20261006T191534Z-d915df7b",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-07T01:59:02Z",
+  "decision": "rejected_not_target",
+  "canonical_live_id": null,
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_29.html",
+    "https://gwins.org/cn/milesguo/22497.html",
+    "https://youtu.be/PUfxGsstGsY",
+    "https://rumble.com/v595ekl-20210201-4.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS detail page 22497 carries source_video_id 20210201_4 and binds it to this candidate.",
+    "date": "Candidate date 2021-02-01 agrees with the date and source id in the public GWINS title.",
+    "title": "郭文贵2021年2月1日盖特 20210201_4 共产党犯下的罪行……和在香港犯下的罪……和对全世界人民现在的威胁……正在凝聚全人类正义的力量，全球联合灭共正在进行时……",
+    "platform_ids": [
+      "20210201_4",
+      "22497",
+      "PUfxGsstGsY",
+      "v595ekl-20210201-4"
+    ],
+    "source_relationships": "The public GWINS detail page directly exposes the listed media URL(s); generic site-home links were excluded.",
+    "deduplication": "Compared exact source id, date, title, detail page, and platform IDs within current data; retained as a distinct non-livestream candidate without canonical-live promotion."
+  },
+  "source_raw_sha256": "d79b459ea7142d834fd85453b5c247f413833c30f5b4454bb313ec201aec2465",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false,
+  "rejection_reason": "The exact GWINS title identifies a standalone video, interview, Gettr update, or other non-livestream record; it is preserved without canonical livestream promotion."
+}

@@ -1,0 +1,46 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_29_20210205_4-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_29_20210205_4",
+  "reviewed_by": "agent-20261006T191534Z-d915df7b",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-07T01:59:02Z",
+  "decision": "rejected_not_target",
+  "canonical_live_id": null,
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_29.html",
+    "https://gwins.org/cn/milesguo/22515.html",
+    "https://youtu.be/Bx1Xlx2y8UY",
+    "https://rumble.com/v595iql-20210205-4.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS detail page 22515 carries source_video_id 20210205_4 and binds it to this candidate.",
+    "date": "Candidate date 2021-02-05 agrees with the date and source id in the public GWINS title.",
+    "title": "郭文贵2021年2月5日盖特 20210205_4 九指妖和龟头痒，出卖爆料革命和战友……造成的损失和伤害正在逐步显现，爆料革命和新中国联邦的成长必须面对和这样的挑战和背叛，这会让我们更加的强大……更加的健康的发展，非常抱歉",
+    "platform_ids": [
+      "20210205_4",
+      "22515",
+      "Bx1Xlx2y8UY",
+      "v595iql-20210205-4"
+    ],
+    "source_relationships": "The public GWINS detail page directly exposes the listed media URL(s); generic site-home links were excluded.",
+    "deduplication": "Compared exact source id, date, title, detail page, and platform IDs within current data; retained as a distinct non-livestream candidate without canonical-live promotion."
+  },
+  "source_raw_sha256": "9ae401ec90216b9a02e0b5c8b4458ba4528678316a09c3e92f4f6bf942d425c8",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false,
+  "rejection_reason": "The exact GWINS title identifies a standalone video, interview, Gettr update, or other non-livestream record; it is preserved without canonical livestream promotion."
+}

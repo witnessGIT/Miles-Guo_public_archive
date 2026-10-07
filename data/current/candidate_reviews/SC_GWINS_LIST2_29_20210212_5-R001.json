@@ -1,0 +1,44 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_29_20210212_5-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_29_20210212_5",
+  "reviewed_by": "agent-20261006T191534Z-d915df7b",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-07T01:59:02Z",
+  "decision": "rejected_not_target",
+  "canonical_live_id": null,
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_29.html",
+    "https://gwins.org/cn/milesguo/22602.html",
+    "https://rumble.com/v595vel-20210212-5.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS detail page 22602 carries source_video_id 20210212_5 and binds it to this candidate.",
+    "date": "Candidate date 2021-02-12 agrees with the date and source id in the public GWINS title.",
+    "title": "郭文贵2021年2月12日视频巴黎和澳喜 20210212_5 悉尼澳喜和巴黎七星大年初一联合晚会",
+    "platform_ids": [
+      "20210212_5",
+      "22602",
+      "v595vel-20210212-5"
+    ],
+    "source_relationships": "The public GWINS detail page directly exposes the listed media URL(s); generic site-home links were excluded.",
+    "deduplication": "Compared exact source id, date, title, detail page, and platform IDs within current data; retained as a distinct non-livestream candidate without canonical-live promotion."
+  },
+  "source_raw_sha256": "00b8a3c2bdcd3bf56fb37d338eb07ee93fcb2b248edd4ae7d94c9f837ae35d3d",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false,
+  "rejection_reason": "The exact GWINS title identifies a standalone video, interview, Gettr update, or other non-livestream record; it is preserved without canonical livestream promotion."
+}

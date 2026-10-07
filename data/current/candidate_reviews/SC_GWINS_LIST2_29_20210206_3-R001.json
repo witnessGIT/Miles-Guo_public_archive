@@ -1,0 +1,43 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_29_20210206_3-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_29_20210206_3",
+  "reviewed_by": "agent-20261006T191534Z-d915df7b",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-07T01:59:02Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20210206_001",
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_29.html",
+    "https://gwins.org/cn/milesguo/22520.html",
+    "https://rumble.com/v595jia-20210206-3.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS detail page 22520 carries source_video_id 20210206_3 and binds it to this candidate.",
+    "date": "Candidate date 2021-02-06 agrees with the date and source id in the public GWINS title.",
+    "title": "郭文贵2021年2月6日直播 20210206_3 中共发展数字货币的本质和野心．与G系列产品的区别和对新中国联邦的重大意义！",
+    "platform_ids": [
+      "20210206_3",
+      "22520",
+      "v595jia-20210206-3"
+    ],
+    "source_relationships": "The public GWINS detail page directly exposes the listed media URL(s); generic site-home links were excluded.",
+    "deduplication": "Fresh current-data checks found no canonical record for exact source id 20210206_3. The distinct GWINS record supports LIVE_20210206_001; same-day numbered items remain separate."
+  },
+  "source_raw_sha256": "b08e2e3d11d47c62e5bbcf8ea97185a79ff004e7d8679f7c65fdf1eef4b91533",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": true,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}
