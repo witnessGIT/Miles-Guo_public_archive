@@ -1,0 +1,44 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GHOT_20220823_1-R001",
+  "source_candidate_id": "SC_GHOT_20220823_1",
+  "reviewed_by": "agent-20261006T191453Z-a890f4a8",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-07T01:18:55Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20220823_001",
+  "evidence_urls": [
+    "https://ghot.ai/archive/videos/2022-08-23-1",
+    "https://gettr.com/streaming/p1nvql99e57",
+    "https://rumble.com/v5aq9rh-20220823-1.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "Exact public GHOT page is bound to candidate SC_GHOT_20220823_1 and page/source identifier 2022-08-23-1; identity visibility=False.",
+    "date": "Candidate date is 2022-08-23; no publication time was inferred.",
+    "title": "2022.08.23 直播回复战友关注的 习 李 曾 大战的一些问题",
+    "platform_ids": [
+      "2022-08-23-1",
+      "2022-08-23-1",
+      "streaming/p1nvql99e57",
+      "v5aq9rh-20220823-1"
+    ],
+    "source_relationships": "Only exact public page URLs and concrete outbound platform links were retained; generic navigation links were excluded.",
+    "deduplication": "The exact GHOT title explicitly identifies an original Miles Guo livestream."
+  },
+  "source_raw_sha256": "1b19222f83a63df306ebca2191ef226f2aa5c29102107edd0200d48daa8355f5",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": true,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}
