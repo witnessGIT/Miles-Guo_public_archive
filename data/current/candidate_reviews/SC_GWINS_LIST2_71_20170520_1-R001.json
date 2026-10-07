@@ -1,0 +1,45 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_71_20170520_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_71_20170520_1",
+  "reviewed_by": "agent-20261006T191534Z-d915df7b",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-07T01:30:03Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20170520_001",
+  "evidence_urls": [
+    "https://www.gwins.org/cn/milesguo/list_2_71.html",
+    "https://www.gwins.org/cn/milesguo/560.html",
+    "https://www.youtube.com/watch?v=hTc86sS0_bw",
+    "https://rumble.com/v576jl1-20170520.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS detail page 560 carries source_video_id 20170520 and binds it to this candidate.",
+    "date": "Candidate date 2017-05-20 agrees with the date and source id in the public GWINS title.",
+    "title": "郭文贵2017年5月20日第一次直播 20170520 在香港是否存在执法黑屋",
+    "platform_ids": [
+      "20170520",
+      "560",
+      "hTc86sS0_bw",
+      "v576jl1-20170520"
+    ],
+    "source_relationships": "The public GWINS detail page directly exposes the listed media URL(s); generic site-home links were excluded.",
+    "deduplication": "Fresh current-data checks found no canonical record for exact source id 20170520. The distinct GWINS record supports LIVE_20170520_001; same-day numbered items remain separate."
+  },
+  "source_raw_sha256": "ee1cc4c739f3dc4e99d3792c0c21140ef04e09c0041fe0246cb2216c06c79850",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": true,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}

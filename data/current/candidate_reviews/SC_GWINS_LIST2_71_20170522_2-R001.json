@@ -1,0 +1,45 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_71_20170522_2-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_71_20170522_2",
+  "reviewed_by": "agent-20261006T191534Z-d915df7b",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-07T01:30:03Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20170522_002",
+  "evidence_urls": [
+    "https://www.gwins.org/cn/milesguo/list_2_71.html",
+    "https://www.gwins.org/cn/milesguo/23533.html",
+    "https://www.youtube.com/watch?v=KGY80iKWqjY",
+    "https://rumble.com/v576k5n-20170522-2.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS detail page 23533 carries source_video_id 20170522_2 and binds it to this candidate.",
+    "date": "Candidate date 2017-05-22 agrees with the date and source id in the public GWINS title.",
+    "title": "郭文贵2017年5月22日直播 20170522_2 手机直播回应潘石屹视频",
+    "platform_ids": [
+      "20170522_2",
+      "23533",
+      "KGY80iKWqjY",
+      "v576k5n-20170522-2"
+    ],
+    "source_relationships": "The public GWINS detail page directly exposes the listed media URL(s); generic site-home links were excluded.",
+    "deduplication": "Fresh current-data checks found no canonical record for exact source id 20170522_2. The distinct GWINS record supports LIVE_20170522_002; same-day numbered items remain separate."
+  },
+  "source_raw_sha256": "519a1bd1ad2924fc1eb9e450916234ff99690439fc5d4dbc2ddf6afb47e3fd5e",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": true,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}
