@@ -1,0 +1,40 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_62_20180721_2-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_62_20180721_2",
+  "reviewed_by": "agent-20261008T165500Z-gpt56sol-chat",
+  "entry_mode": "ordinary_chat",
+  "reviewed_at": "2026-10-08T17:05:00Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20180721_002",
+  "evidence_urls": [
+    "https://www.gwins.org/cn/milesguo/list_2_62.html",
+    "https://www.gwins.org/cn/milesguo/21810.html",
+    "https://youtu.be/X9hhYGK6Sg8",
+    "https://rumble.com/v57cau5-20180721-2.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "evidence_summary": {
+    "identity": "GWINS index and detail 21810 identify source record 20180721_2.",
+    "date": "GWINS detail publication date agrees with 2018-07-21.",
+    "title": "GWINS detail title agrees with the source candidate title.",
+    "platform_ids": [
+      "20180721_2",
+      "X9hhYGK6Sg8",
+      "v57cau5-20180721-2"
+    ],
+    "source_relationships": "GWINS detail 21810 directly exposes the recorded public media URLs.",
+    "deduplication": "No existing current candidate-review/live/source path for 20180721_2 was found before promotion; distinct source id, date, title, and direct source relationships support canonical identity LIVE_20180721_002."
+  },
+  "playback_performed": false,
+  "media_download_performed": false,
+  "transcription_performed": false,
+  "segmentation_performed": false
+}
