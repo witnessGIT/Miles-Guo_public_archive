@@ -1,0 +1,32 @@
+{
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_62_20180722_2-R001",
+  "agent_id": "agent-20261008T165500Z-gpt56sol-chat",
+  "completed_at": "2026-10-08T17:10:00Z",
+  "result_commit": "1434e6d3d5c4c9eeaa742e74651127970dd2f763",
+  "outputs": [
+    "data/current/candidate_reviews/SC_GWINS_LIST2_62_20180722_2-R001.json",
+    "data/current/live_videos/c2_review_gwins_list_2_62_batch1.jsonl",
+    "data/current/sources/c2_review_gwins_list_2_62_batch1.jsonl",
+    "data/current/media_assets/c2_review_gwins_list_2_62_batch1.jsonl",
+    "data/current/source_match_candidates/c2_review_gwins_list_2_62_batch1.jsonl"
+  ],
+  "validation": "GWINS list_2_62 candidate 20180722_2 was checked against its public detail page: identity, publication date, title, platform identifiers, direct source relationships, and current-repository deduplication were verified. No playback, download, transcription, or segmentation was performed.",
+  "workflow_mode": "continuous-worker-v2",
+  "claim_protocol": "claim-protocol-v2",
+  "entry_mode": "ordinary_chat",
+  "continue_after_finish": true,
+  "finish_prerequisites_revalidated": true,
+  "notes": "Completed under candidate-review-evidence-v2 after one-candidate source-backed review.",
+  "kind": "candidate_promotion_review",
+  "source_candidate_id": "SC_GWINS_LIST2_62_20180722_2",
+  "review_generation": 1,
+  "review_claim_timeout_hours": 10,
+  "review_batch_id": "REVIEW-BATCH-20261008T165500Z-gpt56sol-chat",
+  "review_batch_target_size": 20,
+  "review_batch_claimed_count": 20,
+  "review_batch_position": 11,
+  "candidate_review_contract": "candidate-review-evidence-v2",
+  "review_artifact": "data/current/candidate_reviews/SC_GWINS_LIST2_62_20180722_2-R001.json",
+  "review_decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20180722_002"
+}
