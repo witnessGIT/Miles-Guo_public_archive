@@ -17,25 +17,18 @@ here.
 
 ## Ordinary current-work quick path
 
-If the external prompt is simply "enter the project and work", and the Agent is not a verified
-admin, use the current C2 candidate-review path.
+If the external prompt is simply "enter the project and work", use the current first-pass
+livestream archive path. Claim one eligible `WI_<LIVE_ID>_metadata_fill` task and preserve public
+identity/source/platform/media metadata without performing transcription or Playback Audit.
 
 Read only the minimal fast-entry state listed at the top of `AGENTS.md`, then immediately attempt
 one durable claim. After it is visible on fresh `main`, read `docs/CURRENT_TASK.md` and
 `coordination/CLAIM_PROTOCOL_V2.md` before producing data. Never read archived instruction roots
 during normal entry or execution.
 
-For ordinary-chat C2 work, atomically publish exactly 20 per-candidate claims, then review them
-one by one. Each completion requires its own `candidate-review-evidence-v2` artifact under
-`data/current/candidate_reviews/` and must pass `scripts/validate_candidate_reviews.py`.
-
-- Empty outputs, bulk assertions, and unverified decisions do not complete a candidate.
-- Unfinished claims return to `unreviewed` after 10 hours.
-- Do not perform playback, downloads, transcription, segmentation, or later video processing.
-- After all 20 valid completions reach fresh `main`, report `CHAT_BATCH_COMPLETE`.
-
-The C1 discovery phase is sealed history. It must not be repeated or used as a reason to refuse
-eligible C2 work.
+The C1 discovery and C2 candidate-review phases are sealed. Do not repeat them. Current
+`metadata_fill` completion must cite actual public evidence and leave unknown fields null rather
+than inventing values. Transcript, segmentation, analysis and Playback work remain deferred.
 
 ## Work mode quick path
 

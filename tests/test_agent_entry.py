@@ -126,6 +126,19 @@ class AgentEntryTests(unittest.TestCase):
         self.assertEqual(result, 1)
         playback_candidates.assert_not_called()
 
+    def test_direct_entry_does_not_use_playback_during_initial_archiving(self):
+        workflow = {
+            "current_major_phase": "PHASE_2_INITIAL_ARCHIVING",
+            "playback_enabled_in_current_phase": False,
+        }
+        with patch.object(agent_entry.next_task, "eligible_tasks", return_value=[]), patch.object(
+            agent_entry.next_task, "load_workflow", return_value=workflow
+        ), patch.object(agent_entry, "playback_entry_candidates") as playback_candidates:
+            result = agent_entry.direct_entry("agent-new", 10)
+
+        self.assertEqual(result, 1)
+        playback_candidates.assert_not_called()
+
     def test_direct_entry_claims_candidate_review_batch(self):
         task = {
             "id": "C2-REVIEW-SC-TEST-R001",

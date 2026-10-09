@@ -1,22 +1,25 @@
-# Current task: C2 candidate identity review
+# Current task: first-pass livestream archive
 
-The C1 source-discovery phase is complete and sealed as history. Do not repeat C1 discovery and do
-not use historical C1-only guides to stop current work.
+Phase 1 source discovery and candidate identity review are complete and frozen. The current scope
+is `PHASE_2_INITIAL_ARCHIVING`: establish a usable first archive record for every canonical
+livestream.
 
-Current work is `C2-REVIEW-*`: claim a fixed batch, then review candidates strictly one by one.
+Current executable work is limited to `WI_<LIVE_ID>_metadata_fill`.
 
-- Work mode claims 100 candidates, or all remaining candidates when fewer than 100 remain;
-  ordinary chat mode claims exactly 20.
-- Each candidate has its own claim, evidence artifact, final decision, and completion record.
-- All claims in a batch must be published atomically: 100 for Work mode (or the complete final
-  remainder when fewer than 100 remain) or exactly 20 for ordinary chat mode. An arbitrary partial
-  batch fails CI.
-- A candidate becomes `reviewed` only after a valid artifact exists under
-  `data/current/candidate_reviews/` and the completion passes the validator.
-- If evidence is insufficient, it is not complete. Leave it `in_progress`; after 10 hours it
-  derives back to `unreviewed`.
-- Do not perform playback review, download media, transcribe, segment, or do later video work.
-- Do not read archived documentation or archived invalid records during normal work.
+For one claimed canonical livestream, verify and preserve as much public evidence as is actually
+available:
+
+- canonical title, livestream date and publication time;
+- source page identity and URL;
+- platform name, public video/post ID and media URL;
+- duration, dimensions, FPS and audio presence when public metadata proves them;
+- availability and the exact time/method used to check it;
+- conflicts and unknown fields without guessing.
+
+Do not download full media merely to fill metadata. Do not claim Playback verification from page
+metadata or extractor metadata. In this first-pass archive phase, do not execute transcription,
+cue/segment splitting, entity/event/claim extraction, relationship analysis, text verification or
+Playback Audit. Those work items remain durable future backlog.
 
 Work-mode entry:
 
@@ -25,9 +28,10 @@ git pull --ff-only
 python scripts/agent_entry.py --mode auto
 ```
 
-Before publishing candidate-review completion:
+Before completion:
 
 ```bash
-python scripts/validate_candidate_reviews.py
+python scripts/build_db.py
+python scripts/validate_db.py
 python -m unittest discover -s tests -p 'test_*.py' -v
 ```

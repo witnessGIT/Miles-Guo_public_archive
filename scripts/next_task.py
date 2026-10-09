@@ -87,6 +87,14 @@ PHASE_1_LOCKED_STATIC_TASKS = {
     "V5-TEXT-CROSSCHECK",
     "V6-PLAYBACK-BACKLOG",
 }
+INITIAL_ARCHIVE_DEFERRED_STATIC_TASKS = {
+    "V1-TEXT-EXTRACTION",
+    "V2-SEGMENTATION",
+    "V3-ENTITY-EVENT-CLAIM-PASS",
+    "V4-RELATED-CONTENT-PASS",
+    "V5-TEXT-CROSSCHECK",
+    "V6-PLAYBACK-BACKLOG",
+}
 
 
 def utc_now() -> str:
@@ -534,6 +542,7 @@ def live_work_item_tasks(
     done: set[str], blocked: set[str] | None = None
 ) -> list[dict]:
     workflow = load_workflow()
+    current_phase = workflow.get("current_major_phase")
     if workflow.get("current_major_phase") == "PHASE_1_COLLECTION":
         if has_unfinished_source_boundaries() or not task_completed("C2-CANDIDATE-PROMOTION"):
             return []
@@ -547,6 +556,8 @@ def live_work_item_tasks(
         if str(item.get("work_status") or "open") != "open":
             continue
         stage = str(item.get("work_stage") or "")
+        if current_phase == "PHASE_2_INITIAL_ARCHIVING" and stage != "metadata_fill":
+            continue
         depends_on = normalize_depends_on(item.get("depends_on_json"))
         if any(dependency not in done for dependency in depends_on):
             continue
@@ -919,12 +930,15 @@ def static_tasks(done: set[str], blocked: set[str] | None = None) -> list[dict]:
     eligible: list[dict] = []
     workflow = load_workflow()
     phase1_collection = workflow.get("current_major_phase") == "PHASE_1_COLLECTION"
+    initial_archiving = workflow.get("current_major_phase") == "PHASE_2_INITIAL_ARCHIVING"
     collection_still_open = has_unfinished_source_boundaries(done)
     for task in load_queue():
         task_id = task["id"]
         if task_is_superseded(task):
             continue
         if phase1_collection and collection_still_open and task_id in PHASE_1_LOCKED_STATIC_TASKS:
+            continue
+        if initial_archiving and task_id in INITIAL_ARCHIVE_DEFERRED_STATIC_TASKS:
             continue
         if task_id in done:
             continue

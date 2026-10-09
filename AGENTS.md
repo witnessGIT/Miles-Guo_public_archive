@@ -6,9 +6,11 @@ Normal entry and execution must not read `docs/archive/`, `reports/archive/`, or
 `coordination/archive/`. Those directories are sealed historical audit material and never define
 current scope, queue state, ownership, completion, or progress. Old C1-only instructions are
 superseded. Phase 1 collection and C2 candidate identity review are frozen by
-`data/current/collection_freeze/phase1_20261010.json`. Current work is Phase 2 verification;
-workers must follow the live-work-item dependency chain and may use the repository Playback
-Evidence Service where a task requires real media inspection.
+`data/current/collection_freeze/phase1_20261010.json`. Current work is the first-pass livestream
+archive: complete `metadata_fill` for each canonical live using public title/date/source/platform
+ID/media-link/basic technical metadata. Transcription, cue/segment splitting, entity/event/claim
+extraction, relationship analysis, text verification and Playback Audit remain deferred backlog
+and are not current executable work.
 
 A session/check report is not business output and cannot substitute for an eligible C2 task.
 Candidate-review completion requires one source-backed artifact under

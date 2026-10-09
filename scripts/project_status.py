@@ -134,13 +134,20 @@ def build_status(content_inspection_capable: bool, role: str = "worker") -> dict
     workflow = load_workflow()
     current_major_phase = str(workflow.get("current_major_phase") or "")
     phase1_collection = current_major_phase == "PHASE_1_COLLECTION"
+    initial_archiving = current_major_phase == "PHASE_2_INITIAL_ARCHIVING"
+    playback_enabled = bool(
+        workflow.get("playback_enabled_in_current_phase", not phase1_collection)
+    )
 
     ordinary = next_task.eligible_tasks()
     ordinary_business = [t for t in ordinary if ordinary_task_type(t) == "business"]
     ordinary_gate_report = [t for t in ordinary if ordinary_task_type(t) == "gate_or_report"]
 
-    playback_rows = [] if phase1_collection else playback_queue.case_statuses()
-    gate = {"pilot60_pass": False, "phase_disabled": current_major_phase} if phase1_collection else playback_queue.gate_summary()
+    playback_rows = playback_queue.case_statuses() if playback_enabled else []
+    gate = playback_queue.gate_summary() if playback_enabled else {
+        "pilot60_pass": False,
+        "phase_disabled": current_major_phase,
+    }
     tools = playback_queue.capability_status()
     playback_open = [row for row in playback_rows if row.get("missing_segment_ids") and not row.get("completed")]
     playback_unclaimed = [row for row in playback_open if not row.get("claim_exists")]
@@ -200,6 +207,8 @@ def build_status(content_inspection_capable: bool, role: str = "worker") -> dict
 
     if phase1_collection:
         state = "PHASE_1_COLLECTION_ACTIVE"
+    elif initial_archiving:
+        state = "INITIAL_ARCHIVE_BUILD_ACTIVE"
     elif current_p10_completed and full_archive_decision == "YES":
         state = "PILOT_DECISION_R2_COMPLETED_FULL_ARCHIVE_YES"
     elif current_p10_completed and full_archive_decision == "NO":

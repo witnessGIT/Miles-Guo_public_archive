@@ -435,6 +435,43 @@ class NextTaskSchedulingTests(unittest.TestCase):
             [transcript_id],
         )
 
+    def test_initial_archiving_exposes_only_metadata_fill(self):
+        next_task.WORKFLOW.parent.mkdir(parents=True, exist_ok=True)
+        next_task.WORKFLOW.write_text(
+            json.dumps({"current_major_phase": "PHASE_2_INITIAL_ARCHIVING"}),
+            encoding="utf-8",
+        )
+        work_item_dir = next_task.DATA_CURRENT / "live_work_items"
+        work_item_dir.mkdir(parents=True)
+        metadata_id = "WI_LIVE_TEST_metadata_fill"
+        (work_item_dir / "items.jsonl").write_text(
+            "\n".join(
+                json.dumps(row)
+                for row in (
+                    {
+                        "id": metadata_id,
+                        "live_id": "LIVE_TEST",
+                        "work_stage": "metadata_fill",
+                        "work_status": "open",
+                    },
+                    {
+                        "id": "WI_LIVE_TEST_transcript_import",
+                        "live_id": "LIVE_TEST",
+                        "work_stage": "transcript_import",
+                        "work_status": "open",
+                        "depends_on_json": [metadata_id],
+                    },
+                )
+            )
+            + "\n",
+            encoding="utf-8",
+        )
+
+        self.assertEqual(
+            [task["id"] for task in next_task.live_work_item_tasks({metadata_id})],
+            [],
+        )
+
     def test_watch_refreshes_origin_main_before_each_queue_check(self):
         task = {"id": "C1-GWINS-detail-demo"}
         completed = type(

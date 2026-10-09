@@ -197,6 +197,8 @@ def playback_entry_candidates(agent_id: str) -> tuple[list[dict], list[dict]]:
 
 def playback_entry_allowed() -> bool:
     workflow = next_task.load_workflow()
+    if workflow.get("playback_enabled_in_current_phase") is not None:
+        return workflow.get("playback_enabled_in_current_phase") is True
     return workflow.get("current_major_phase") != "PHASE_1_COLLECTION"
 
 
@@ -260,12 +262,13 @@ def direct_entry(agent_id: str, max_attempts: int) -> int:
             return 0
 
     if not playback_entry_allowed():
+        phase = next_task.load_workflow().get("current_major_phase")
         emit(
             {
                 "entry_status": "NO_LOCAL_CLAIM",
                 "agent_id": agent_id,
-                "reason": "Playback entry is disabled during PHASE_1_COLLECTION; use scripts/next_task.py --list for ordinary collection work or report the ordinary queue state.",
-                "next_required_action": "Do not claim playback work in PHASE_1_COLLECTION. Refresh main and continue only with ordinary eligible tasks.",
+                "reason": f"Playback entry is disabled during {phase}; use scripts/next_task.py --list for work allowed by the current phase.",
+                "next_required_action": "Do not claim playback work in the current phase. Refresh main and continue only with eligible ordinary tasks.",
             }
         )
         return 1
