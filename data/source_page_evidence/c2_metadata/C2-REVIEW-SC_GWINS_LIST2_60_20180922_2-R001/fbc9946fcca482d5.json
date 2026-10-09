@@ -1,0 +1,66 @@
+{
+  "evidence_version": "c2-metadata-evidence-v1",
+  "request_sha256": "fbc9946fcca482d53bd4ec935ff860bb398bfc21df84d1c43598eb3f80c3ccbc",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_60_20180922_2-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_60_20180922_2",
+  "agent_id": "agent-20261004T091647Z-90dd416d",
+  "requested_url": "https://www.gwins.org/cn/milesguo/21853.html",
+  "fetched_at": "2026-10-09T14:22:09.947813+00:00",
+  "review_decision": null,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "source_text_imported": false,
+  "status": "fetched",
+  "http_status": 200,
+  "final_url": "https://www.gwins.org/cn/milesguo/21853.html",
+  "raw_bytes": 10436,
+  "raw_sha256": "5c5aab1a0725a4ceba4df7dbb6a98cf9570cf80fbf51f72997c3ce2a52e6b3c6",
+  "metadata_evidence": {
+    "page_title": "郭文贵2018年9月22日视频 20180922_2Snow在偷吃他女朋友的飯",
+    "metadata": {
+      "description": "以下是茅屎坑战友没校对前的内容。  死都在偷吃狗粮的。Snow, 你在干什么呢？啊？偷吃了。偷吃别人的狗粮啊，那是你朋友的呀，你女朋友的狗粮啊，你怎么可以吃呢？"
+    },
+    "decoding": {
+      "codec": "utf-8",
+      "strict": false,
+      "replacement_count": 17,
+      "title_clean": true,
+      "warning": "Damaged fields are not reliable; clean excerpts only. Missing cues are not absence evidence."
+    },
+    "expected_source_video_id": "20180922_2",
+    "expected_id_visible": true,
+    "outbound_links": [
+      "https://youtu.be/5iC_Vd4hIKY",
+      "https://rumble.com/v57gbsd-20180922-2.html",
+      "https://gettr.com/"
+    ],
+    "identity_type_cues": [
+      {
+        "paragraph_index": 0,
+        "excerpt": "郭文贵2018年9月22日视频 20180922_2Snow在偷吃他女朋友的飯"
+      },
+      {
+        "paragraph_index": 2,
+        "excerpt": "郭文贵视频"
+      },
+      {
+        "paragraph_index": 10,
+        "excerpt": "郭文贵2018年9月22日视频 20180922_2"
+      },
+      {
+        "paragraph_index": 12,
+        "excerpt": "郭文贵2018年9月22日视频 20180922_2 Snow在偷吃他女朋友的飯"
+      },
+      {
+        "paragraph_index": 20,
+        "excerpt": "视频链接：https://youtu.be/5iC_Vd4hIKY"
+      },
+      {
+        "paragraph_index": 21,
+        "excerpt": "视频链接2：https://rumble.com/v57gbsd-20180922-2.html"
+      }
+    ],
+    "cue_profile": "origin-context-v2",
+    "cue_warning": "Excerpts may discuss other recordings; a reviewer must resolve context. No automatic type decision."
+  }
+}

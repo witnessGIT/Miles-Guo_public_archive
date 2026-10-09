@@ -1,0 +1,66 @@
+{
+  "evidence_version": "c2-metadata-evidence-v1",
+  "request_sha256": "fbc9946fcca482d53bd4ec935ff860bb398bfc21df84d1c43598eb3f80c3ccbc",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_60_20180922_4-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_60_20180922_4",
+  "agent_id": "agent-20261004T091647Z-90dd416d",
+  "requested_url": "https://www.gwins.org/cn/milesguo/21855.html",
+  "fetched_at": "2026-10-09T14:22:12.392262+00:00",
+  "review_decision": null,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "source_text_imported": false,
+  "status": "fetched",
+  "http_status": 200,
+  "final_url": "https://www.gwins.org/cn/milesguo/21855.html",
+  "raw_bytes": 10058,
+  "raw_sha256": "743c9415d0f92f48c59d183ee7e46e530ba1c7e6bad3c6afa4d66071dc77123b",
+  "metadata_evidence": {
+    "page_title": "郭文贵2018年9月22日视频 20180922_4文貴周末為家人做魚肉丸 用趕麵杖趕魚肉",
+    "metadata": {
+      "description": "以下是茅屎坑战友没校对前的内容。  鱼肉丸都要变。啊。这才好。  "
+    },
+    "decoding": {
+      "codec": "utf-8",
+      "strict": false,
+      "replacement_count": 17,
+      "title_clean": true,
+      "warning": "Damaged fields are not reliable; clean excerpts only. Missing cues are not absence evidence."
+    },
+    "expected_source_video_id": "20180922_4",
+    "expected_id_visible": true,
+    "outbound_links": [
+      "https://youtu.be/hgHU3fE4tio",
+      "https://rumble.com/v57gbvx-20180922-4.html",
+      "https://gettr.com/"
+    ],
+    "identity_type_cues": [
+      {
+        "paragraph_index": 0,
+        "excerpt": "郭文贵2018年9月22日视频 20180922_4文貴周末為家人做魚肉丸 用趕麵杖趕魚肉"
+      },
+      {
+        "paragraph_index": 2,
+        "excerpt": "郭文贵视频"
+      },
+      {
+        "paragraph_index": 10,
+        "excerpt": "郭文贵2018年9月22日视频 20180922_4"
+      },
+      {
+        "paragraph_index": 12,
+        "excerpt": "郭文贵2018年9月22日视频 20180922_4 文貴周末為家人做魚肉丸 用趕麵杖趕魚肉"
+      },
+      {
+        "paragraph_index": 20,
+        "excerpt": "视频链接：https://youtu.be/hgHU3fE4tio"
+      },
+      {
+        "paragraph_index": 21,
+        "excerpt": "视频链接2：https://rumble.com/v57gbvx-20180922-4.html"
+      }
+    ],
+    "cue_profile": "origin-context-v2",
+    "cue_warning": "Excerpts may discuss other recordings; a reviewer must resolve context. No automatic type decision."
+  }
+}
