@@ -1,0 +1,46 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_33_20201122_2-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_33_20201122_2",
+  "reviewed_by": "agent-20261006T191534Z-d915df7b",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-09T00:20:45Z",
+  "decision": "rejected_not_target",
+  "canonical_live_id": null,
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_33.html",
+    "https://gwins.org/cn/milesguo/21235.html",
+    "https://youtu.be/1CoHGzouC2A",
+    "https://rumble.com/v58wluq-20201122-2.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS detail page 21235 carries source_video_id 20201122_2 and binds it to this candidate.",
+    "date": "Candidate date 2020-11-22 agrees with the date and source id in the public GWINS title.",
+    "title": "郭文贵2020年11月22日盖特 20201122_2 尊敬的战友们好，你们健身了吗？你们传统播C C B病毒——香港危机真相了吗？一切都已经开始！",
+    "platform_ids": [
+      "20201122_2",
+      "21235",
+      "1CoHGzouC2A",
+      "v58wluq-20201122-2"
+    ],
+    "source_relationships": "The public GWINS detail page directly exposes the listed media URL(s); generic site-home links were excluded.",
+    "deduplication": "Compared exact source id, date, title, detail page, and platform IDs within current data; retained as a distinct non-livestream candidate without canonical-live promotion."
+  },
+  "source_raw_sha256": "9a4875852009b494674dc123a1754c8fb0e9c6d06e3395bf51c92f157dff2933",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false,
+  "rejection_reason": "The exact GWINS title identifies a standalone video, interview, Gettr update, or other non-livestream record; it is preserved without canonical livestream promotion."
+}

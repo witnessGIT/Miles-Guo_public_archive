@@ -1,0 +1,43 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_33_20201124_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_33_20201124_1",
+  "reviewed_by": "agent-20261006T191534Z-d915df7b",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-09T00:20:45Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20201124_001",
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_33.html",
+    "https://gwins.org/cn/milesguo/21307.html",
+    "https://rumble.com/v58x0b9-20201124-1.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS detail page 21307 carries source_video_id 20201124_1 and binds it to this candidate.",
+    "date": "Candidate date 2020-11-24 agrees with the date and source id in the public GWINS title.",
+    "title": "郭文贵2020年11月24日直播 20201124_1",
+    "platform_ids": [
+      "20201124_1",
+      "21307",
+      "v58x0b9-20201124-1"
+    ],
+    "source_relationships": "The public GWINS detail page directly exposes the listed media URL(s); generic site-home links were excluded.",
+    "deduplication": "Fresh current-data checks found no canonical record for exact source id 20201124_1. The distinct GWINS record supports LIVE_20201124_001; same-day numbered items remain separate."
+  },
+  "source_raw_sha256": "32ece6c88f188ee1e8a7cd5b0f09b0486f9a42d73d50ed3884b6e5df33e0ea59",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": true,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}

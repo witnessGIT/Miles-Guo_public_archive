@@ -1,0 +1,43 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_33_20201127_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_33_20201127_1",
+  "reviewed_by": "agent-20261006T191534Z-d915df7b",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-09T00:20:45Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20201127_001",
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_33.html",
+    "https://gwins.org/cn/milesguo/21347.html",
+    "https://rumble.com/v58x5qt-20201127-1.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS detail page 21347 carries source_video_id 20201127_1 and binds it to this candidate.",
+    "date": "Candidate date 2020-11-27 agrees with the date and source id in the public GWINS title.",
+    "title": "郭文贵2020年11月27日直播 20201127_1 大选从滑到稽，川普总统百分之一万当选，战友们要团结、要行动！",
+    "platform_ids": [
+      "20201127_1",
+      "21347",
+      "v58x5qt-20201127-1"
+    ],
+    "source_relationships": "The public GWINS detail page directly exposes the listed media URL(s); generic site-home links were excluded.",
+    "deduplication": "Fresh current-data checks found no canonical record for exact source id 20201127_1. The distinct GWINS record supports LIVE_20201127_001; same-day numbered items remain separate."
+  },
+  "source_raw_sha256": "fc900e16afecc934db740644d695db64770a9deed7935cec6862cc04463858ae",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": true,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}
