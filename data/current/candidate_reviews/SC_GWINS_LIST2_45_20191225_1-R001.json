@@ -1,0 +1,46 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_45_20191225_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_45_20191225_1",
+  "reviewed_by": "agent-20261006T191258Z-937a95e9",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-09T00:17:25Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20191225_001",
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_45.html",
+    "https://gwins.org/cn/milesguo/22141.html",
+    "https://odysee.com/@laxi:4/20191225_1:5",
+    "https://rumble.com/v57yho5-20191225-1.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "evidence_summary": {
+    "identity": "GWINS list_2_45 candidate and detail page 22141 agree on source identity 20191225_1.",
+    "date": "Detail page title and 发布时间 both agree with 2019-12-25.",
+    "title": "Candidate title agrees with the public detail-page title after whitespace normalization.",
+    "platform_ids": [
+      "odysee:@laxi:4/20191225_1:5",
+      "rumble:v57yho5-20191225-1"
+    ],
+    "source_relationships": "Every recorded media locator is a concrete outbound anchor on the verified detail page.",
+    "deduplication": "No existing source URL or source_video_id matched; same-date canonical IDs were checked before assigning LIVE_20191225_001."
+  },
+  "source_page_capture": {
+    "url": "https://gwins.org/cn/milesguo/22141.html",
+    "retrieved_at": "2026-10-09T00:17:25Z",
+    "sha256": "b9f8bc5dd519dc5bcf92237a27458f6a16e0b91c49c2743faf93af4d95297678",
+    "bytes": 56757,
+    "result": "metadata_verified"
+  },
+  "playback_performed": false,
+  "media_download_performed": false,
+  "transcription_performed": false,
+  "segmentation_performed": false
+}
