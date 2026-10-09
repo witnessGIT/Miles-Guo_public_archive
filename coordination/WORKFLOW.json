@@ -123,7 +123,7 @@
   "candidate_review_work_mode_batch_size": 100,
   "candidate_review_ordinary_chat_batch_size": 20,
   "candidate_review_batch_claim_action": "atomically_publish_all_per_candidate_claims_then_review_one_by_one",
-  "candidate_review_batch_completion_rule": "work_mode_all_100_fixed_members_reviewed;ordinary_chat_all_20_fixed_members_reviewed",
+  "candidate_review_batch_completion_rule": "work_mode_all_fixed_members_reviewed_batch_size_up_to_100_final_remainder_allowed;ordinary_chat_all_20_fixed_members_reviewed",
   "candidate_review_batch_reentry_rule": "continue_existing_batch_without_topping_up_completed_members",
   "ordinary_chat_candidate_completion_stop_status": "CHAT_BATCH_COMPLETE",
   "candidate_review_claim_isolation": "one_claim_file_per_candidate_per_generation",

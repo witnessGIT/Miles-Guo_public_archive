@@ -33,11 +33,25 @@ def main() -> int:
             failures.append(f"batch {batch_id}: inconsistent or invalid entry_mode")
             continue
         mode = next(iter(modes))
-        expected = (
+        configured = (
             next_task.CANDIDATE_REVIEW_BATCH_SIZE
             if mode == "work"
             else next_task.CANDIDATE_REVIEW_CHAT_BATCH_SIZE
         )
+        targets = {payload.get("review_batch_target_size") for _path, payload in members}
+        if len(targets) != 1 or not isinstance(next(iter(targets)), int):
+            failures.append(f"batch {batch_id}: inconsistent or invalid batch target")
+            continue
+        expected = next(iter(targets))
+        if mode == "ordinary_chat" and expected != configured:
+            failures.append(f"batch {batch_id}: ordinary-chat target must be {configured}")
+        if mode == "work" and not 1 <= expected <= configured:
+            failures.append(f"batch {batch_id}: work target must be between 1 and {configured}")
+        if mode == "work" and expected < configured and any(
+            payload.get("review_batch_final_remainder") is not True
+            for _path, payload in members
+        ):
+            failures.append(f"batch {batch_id}: partial work batch is not marked as the final remainder")
         if len(members) != expected:
             failures.append(f"batch {batch_id}: has {len(members)} claims, expected {expected}")
         positions = {payload.get("review_batch_position") for _path, payload in members}

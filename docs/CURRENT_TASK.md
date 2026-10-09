@@ -5,10 +5,12 @@ not use historical C1-only guides to stop current work.
 
 Current work is `C2-REVIEW-*`: claim a fixed batch, then review candidates strictly one by one.
 
-- Work mode claims 100 candidates; ordinary chat mode claims 20.
+- Work mode claims 100 candidates, or all remaining candidates when fewer than 100 remain;
+  ordinary chat mode claims exactly 20.
 - Each candidate has its own claim, evidence artifact, final decision, and completion record.
-- All claims in a batch must be published atomically: exactly 100 for Work mode or 20 for
-  ordinary chat mode. A single-candidate or partial batch fails CI.
+- All claims in a batch must be published atomically: 100 for Work mode (or the complete final
+  remainder when fewer than 100 remain) or exactly 20 for ordinary chat mode. An arbitrary partial
+  batch fails CI.
 - A candidate becomes `reviewed` only after a valid artifact exists under
   `data/current/candidate_reviews/` and the completion passes the validator.
 - If evidence is insufficient, it is not complete. Leave it `in_progress`; after 10 hours it

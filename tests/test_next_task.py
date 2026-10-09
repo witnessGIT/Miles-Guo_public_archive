@@ -507,6 +507,22 @@ class NextTaskSchedulingTests(unittest.TestCase):
         self.assertEqual(adopted["review_batch_position"], 1)
         self.assertEqual(adopted["review_batch_claimed_count"], 100)
 
+    def test_candidate_review_batch_claims_final_remainder(self):
+        for index in range(31):
+            self.write_candidate(f"SC_GWINS_FINAL_{index:03d}")
+
+        batch = next_task.claim_candidate_review_batch(
+            next_task.candidate_review_tasks(), "agent-final"
+        )
+
+        self.assertEqual(batch["target_size"], 31)
+        self.assertEqual(batch["claimed_count"], 31)
+        for task_id in batch["task_ids"]:
+            claim = json.loads(
+                (next_task.CLAIMS / f"{task_id}.json").read_text(encoding="utf-8")
+            )
+            self.assertTrue(claim["review_batch_final_remainder"])
+
     def test_candidate_review_finish_carries_timeout_metadata(self):
         candidate_id = self.write_candidate()
         task = next_task.candidate_review_tasks()[0]

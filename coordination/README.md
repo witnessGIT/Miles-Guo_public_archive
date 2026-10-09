@@ -73,7 +73,8 @@ One completed task or one claim race is not a stop condition.
 ### Candidate review queue
 
 C2 identity review is split by source candidate so many Agents can work independently. Work mode
-takes a fixed batch of 100 candidates; ordinary chat mode takes a fixed batch of 20:
+takes a fixed batch of 100 candidates, or the complete final remainder when fewer than 100 remain;
+ordinary chat mode takes a fixed batch of 20:
 
 ```text
 unreviewed

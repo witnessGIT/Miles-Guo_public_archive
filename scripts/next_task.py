@@ -449,6 +449,7 @@ def claim_candidate_review_batch(
             {
                 "review_batch_id": batch_id,
                 "review_batch_target_size": target_size,
+                "review_batch_final_remainder": target_size < batch_size,
                 "review_batch_position": position,
             }
         )
@@ -470,6 +471,7 @@ def claim_candidate_review_batch(
                 claim_metadata={
                     "review_batch_id": batch_id,
                     "review_batch_target_size": target_size,
+                    "review_batch_final_remainder": target_size < batch_size,
                     "review_batch_position": position,
                 },
             )
