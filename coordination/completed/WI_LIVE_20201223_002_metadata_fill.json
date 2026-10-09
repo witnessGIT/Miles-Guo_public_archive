@@ -1,0 +1,18 @@
+{
+  "task_id": "WI_LIVE_20201223_002_metadata_fill",
+  "agent_id": "agent-20261004T091647Z-90dd416d",
+  "completed_at": "2026-10-09T16:32:09.256161+00:00",
+  "result_commit": "f5f1350af7940ee40bf1e75300f833cb49c94428",
+  "outputs": [
+    "data/current/live_videos/c2_review_gwins_list_2_32_batch_56ce8649.jsonl",
+    "data/current/sources/c2_review_gwins_list_2_32_batch_56ce8649.jsonl",
+    "data/current/media_assets/c2_review_gwins_list_2_32_batch_56ce8649.jsonl"
+  ],
+  "validation": "Public YouTube and Rumble metadata independently verified; matching 597-second duration, 854x470 dimensions, and 12 FPS recorded; YouTube/GWINS title conflict explicitly preserved; mirror upload dates kept separate from original livestream publication time; no playback verification claimed; database validation OK with zero warnings.",
+  "workflow_mode": "continuous-worker-v2",
+  "claim_protocol": "claim-protocol-v2",
+  "entry_mode": "work",
+  "continue_after_finish": true,
+  "finish_prerequisites_revalidated": true,
+  "notes": "Task completed only after re-checking the latest repository dependency contract. Under continuous-worker-v2, refresh repository state and claim the next eligible task unless a documented stop condition applies."
+}
