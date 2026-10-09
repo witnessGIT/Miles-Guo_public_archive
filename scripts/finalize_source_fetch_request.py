@@ -7,7 +7,13 @@ import re
 import sys
 from pathlib import Path
 
-from process_source_fetch_request import EVIDENCE_ROOT, ROOT, load_and_validate_request, request_sha256
+from process_source_fetch_request import (
+    EVIDENCE_ROOT,
+    ROOT,
+    UnsupportedSourceRequest,
+    load_and_validate_request,
+    request_sha256,
+)
 
 BOUNDARIES = ROOT / "data" / "current" / "source_boundaries" / "phase1_initial_boundaries.jsonl"
 CANDIDATES = ROOT / "data" / "current" / "source_candidates" / "gwins"
@@ -68,7 +74,10 @@ def candidate_rows(request: dict, evidence: dict) -> list[dict]:
 
 
 def finalize(path: Path) -> str:
-    request, claim_status = load_and_validate_request(path)
+    try:
+        request, claim_status = load_and_validate_request(path)
+    except UnsupportedSourceRequest:
+        return "skipped:unsupported-request"
     page_id = request["source_page_id"]
     evidence_path = EVIDENCE_ROOT / "gwins" / page_id / "evidence.json"
     if not evidence_path.exists():

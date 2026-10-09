@@ -10,6 +10,7 @@ import next_task
 
 def main() -> int:
     failures: list[str] = []
+    lease_warnings: list[dict] = []
     checked = 0
     grandfather_path = next_task.ROOT / "coordination" / "candidate_review_grandfathered.json"
     grandfather_payload = next_task.load_json_path(grandfather_path) or {}
@@ -21,6 +22,24 @@ def main() -> int:
         payload = next_task.load_json_path(path)
         if not payload or payload.get("candidate_review_contract") != next_task.CANDIDATE_REVIEW_CONTRACT:
             continue
+        effective_hours = next_task.claim_lease_hours(payload)
+        if effective_hours != next_task.CANDIDATE_REVIEW_CLAIM_TIMEOUT_HOURS:
+            failures.append(f"{path.relative_to(next_task.ROOT)}: invalid effective C2 lease")
+        for field in ("review_claim_timeout_hours", "static_claim_lease_hours"):
+            if field not in payload:
+                continue
+            value = payload[field]
+            try:
+                consistent = not isinstance(value, bool) and float(value) == effective_hours
+            except (TypeError, ValueError, OverflowError):
+                consistent = False
+            if not consistent:
+                lease_warnings.append({
+                    "path": str(path.relative_to(next_task.ROOT)),
+                    "field": field,
+                    "declared_value": value,
+                    "effective_hours": effective_hours,
+                })
         batch_id = str(payload.get("review_batch_id") or "")
         if not batch_id:
             failures.append(f"{path.relative_to(next_task.ROOT)}: missing review_batch_id")
@@ -105,7 +124,7 @@ def main() -> int:
     if failures:
         print(json.dumps({"status": "FAIL", "checked": checked, "errors": failures}, ensure_ascii=False, indent=2))
         return 1
-    print(json.dumps({"status": "PASS", "checked": checked, "batches": len(batches)}, ensure_ascii=False))
+    print(json.dumps({"status": "PASS", "checked": checked, "batches": len(batches), "lease_warnings": lease_warnings}, ensure_ascii=False))
     return 0
 
 

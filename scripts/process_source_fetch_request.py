@@ -26,6 +26,10 @@ MAX_PAGE_BYTES = 5 * 1024 * 1024
 USER_AGENT = "Miles-Guo-public-archive-source-evidence/1.0"
 
 
+class UnsupportedSourceRequest(ValueError):
+    """A safe, well-formed request that belongs to another evidence adapter."""
+
+
 def utc_now() -> str:
     return datetime.now(timezone.utc).isoformat()
 
@@ -76,10 +80,17 @@ def load_and_validate_request(path: Path) -> tuple[dict, str]:
     page_id = safe_component(value["source_page_id"], "source_page_id")
     if site != "gwins":
         raise ValueError("only the gwins source adapter is currently supported")
+    source_url = validate_url(str(value["source_url"]))
+    if re.fullmatch(r"\d+", page_id):
+        expected_suffix = f"/cn/milesguo/{page_id}.html"
+        if urlparse(source_url).path != expected_suffix:
+            raise ValueError(f"source_url path must be {expected_suffix}")
+        raise UnsupportedSourceRequest(
+            "GWINS numeric detail pages are not list boundaries; skipping this historical request"
+        )
     if not re.fullmatch(r"list_2_\d+", page_id):
         raise ValueError("unsupported GWINS source_page_id")
     expected_suffix = f"/cn/milesguo/{page_id}.html"
-    source_url = validate_url(str(value["source_url"]))
     if urlparse(source_url).path != expected_suffix:
         raise ValueError(f"source_url path must be {expected_suffix}")
 
@@ -225,6 +236,9 @@ def main() -> int:
     args = parser.parse_args()
     try:
         output = process_request(args.request, force=args.force)
+    except UnsupportedSourceRequest as exc:
+        print(f"source fetch request skipped: {exc}")
+        return 0
     except (OSError, ValueError, json.JSONDecodeError, urllib.error.URLError) as exc:
         print(f"source fetch request failed: {exc}", file=sys.stderr)
         return 1

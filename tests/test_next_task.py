@@ -438,6 +438,40 @@ class NextTaskSchedulingTests(unittest.TestCase):
         self.assertEqual(expired[0]["state"], "unreviewed")
         self.assertEqual(expired[0]["next_generation"], 2)
 
+    def test_candidate_review_missing_or_conflicting_static_lease_still_expires_at_ten_hours(self):
+        base_now = datetime.now(timezone.utc).replace(microsecond=0)
+        for static_value in (None, 24, "invalid"):
+            claim = {
+                "task_id": "C2-REVIEW-SC_GWINS_TEST-R001",
+                "kind": "candidate_promotion_review",
+                "status": "in_progress",
+                "claimed_at": base_now.isoformat(),
+            }
+            if static_value is not None:
+                claim["static_claim_lease_hours"] = static_value
+            with self.subTest(static_value=static_value):
+                self.assertFalse(next_task.claim_expired(
+                    claim, now=base_now + timedelta(hours=10) - timedelta(microseconds=1)
+                ))
+                self.assertTrue(next_task.claim_expired(
+                    claim, now=base_now + timedelta(hours=10)
+                ))
+
+    def test_non_candidate_static_lease_remains_configurable(self):
+        base_now = datetime.now(timezone.utc).replace(microsecond=0)
+        claim = {
+            "task_id": "C1-GWINS-list_2_1",
+            "status": "in_progress",
+            "claimed_at": base_now.isoformat(),
+            "static_claim_lease_hours": 12,
+        }
+        self.assertFalse(next_task.claim_expired(
+            claim, now=base_now + timedelta(hours=11)
+        ))
+        self.assertTrue(next_task.claim_expired(
+            claim, now=base_now + timedelta(hours=12)
+        ))
+
     def test_candidate_review_claims_are_independent(self):
         first = self.write_candidate("SC_GWINS_A")
         second = self.write_candidate("SC_GWINS_B")

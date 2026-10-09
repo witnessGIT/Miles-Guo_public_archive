@@ -57,6 +57,38 @@ class SourceFetchServiceTests(unittest.TestCase):
             self.assertEqual(loaded["agent_id"], "agent-test")
             self.assertEqual(claim_status, "in_progress")
 
+    def test_numeric_detail_request_is_safe_to_skip(self):
+        request = {
+            "request_version": service.REQUEST_VERSION,
+            "task_id": "C1-GWINS-detail-24253",
+            "agent_id": "agent-test",
+            "source_site": "gwins",
+            "source_page_id": "24253",
+            "source_url": "https://www.gwins.org/cn/milesguo/24253.html",
+            "requested_at": "2026-10-04T09:12:00Z",
+        }
+        with tempfile.TemporaryDirectory(dir=service.REQUEST_ROOT) as temp_dir:
+            path = Path(temp_dir) / "request.json"
+            path.write_text(json.dumps(request), encoding="utf-8")
+            with self.assertRaises(service.UnsupportedSourceRequest):
+                service.load_and_validate_request(path)
+
+    def test_numeric_detail_request_still_requires_exact_url_identity(self):
+        request = {
+            "request_version": service.REQUEST_VERSION,
+            "task_id": "C1-GWINS-detail-24253",
+            "agent_id": "agent-test",
+            "source_site": "gwins",
+            "source_page_id": "24253",
+            "source_url": "https://www.gwins.org/cn/milesguo/24254.html",
+            "requested_at": "2026-10-04T09:12:00Z",
+        }
+        with tempfile.TemporaryDirectory(dir=service.REQUEST_ROOT) as temp_dir:
+            path = Path(temp_dir) / "request.json"
+            path.write_text(json.dumps(request), encoding="utf-8")
+            with self.assertRaisesRegex(ValueError, "source_url path"):
+                service.load_and_validate_request(path)
+
     def test_claimed_status_is_fetchable(self):
         request = {
             "task_id": "T", "agent_id": "A", "source_site": "gwins", "source_page_id": "list_2_2",
