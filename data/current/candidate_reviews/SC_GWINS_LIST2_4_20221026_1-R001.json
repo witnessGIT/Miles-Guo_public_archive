@@ -1,0 +1,45 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_4_20221026_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_4_20221026_1",
+  "reviewed_by": "agent-20261006T191453Z-a890f4a8",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-09T00:49:37Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20221026_001",
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_4.html",
+    "https://gwins.org/cn/milesguo/24124.html",
+    "https://gettr.com/streaming/p1vmu9d3a12",
+    "https://rumble.com/v5axs23-20221026-1.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "Exact public GWINS page is bound to candidate SC_GWINS_LIST2_4_20221026_1 and page/source identifier list_2_4; identity visibility=True.",
+    "date": "Candidate date is 2022-10-26; no publication time was inferred.",
+    "title": "郭文贵2022年10月26日直播 20221026_1 再谈中共伪二十大事件真相（4K版）",
+    "platform_ids": [
+      "20221026_1",
+      "list_2_4",
+      "streaming/p1vmu9d3a12",
+      "v5axs23-20221026-1"
+    ],
+    "source_relationships": "Only exact public page URLs and concrete outbound platform links were retained; generic navigation links were excluded.",
+    "deduplication": "The exact GWINS title explicitly identifies an original livestream."
+  },
+  "source_raw_sha256": "0e95c740ce8057b7907ba33d344351b2633937f993321698d1be6e2f54483cc6",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": true,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}

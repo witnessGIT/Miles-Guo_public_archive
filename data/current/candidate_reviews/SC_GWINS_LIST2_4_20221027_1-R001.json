@@ -1,0 +1,45 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_4_20221027_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_4_20221027_1",
+  "reviewed_by": "agent-20261006T191453Z-a890f4a8",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-09T00:49:37Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20221027_001",
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_4.html",
+    "https://gwins.org/cn/milesguo/24125.html",
+    "https://gettr.com/streaming/p1vsasbe29a",
+    "https://rumble.com/v5axuzn-20221027-1.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "Exact public GWINS page is bound to candidate SC_GWINS_LIST2_4_20221027_1 and page/source identifier list_2_4; identity visibility=True.",
+    "date": "Candidate date is 2022-10-27; no publication time was inferred.",
+    "title": "郭文贵2022年10月27日直播 20221027_1 二十大后七哥家的大Party",
+    "platform_ids": [
+      "20221027_1",
+      "list_2_4",
+      "streaming/p1vsasbe29a",
+      "v5axuzn-20221027-1"
+    ],
+    "source_relationships": "Only exact public page URLs and concrete outbound platform links were retained; generic navigation links were excluded.",
+    "deduplication": "The exact GWINS title explicitly identifies an original livestream."
+  },
+  "source_raw_sha256": "4d065c7e383eb77c8a05b780caee24b25ef7cc70116d86bc7f8bb4106814a755",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": true,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}
