@@ -1,0 +1,46 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_47_20191027-R002",
+  "source_candidate_id": "SC_GWINS_LIST2_47_20191027",
+  "reviewed_by": "agent-20261006T191258Z-937a95e9",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-09T00:18:28Z",
+  "decision": "confirmed_duplicate",
+  "canonical_live_id": "LIVE_20191027_001",
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_47.html",
+    "https://gwins.org/cn/milesguo/435.html",
+    "https://odysee.com/@laxi:4/20191027:a",
+    "https://rumble.com/v57tkat-20191027.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "evidence_summary": {
+    "identity": "GWINS candidate and detail page agree on source identity 20191027.",
+    "date": "Detail page title and 发布时间 both agree with 2019-10-27.",
+    "title": "Candidate title agrees with the public detail-page title after whitespace normalization.",
+    "platform_ids": [
+      "odysee:@laxi:4/20191027:a",
+      "rumble:v57tkat-20191027"
+    ],
+    "source_relationships": "The verified detail page and its outbound locators were reviewed without adding duplicate source or media rows.",
+    "deduplication": "Existing source identity 20191027 already resolves to LIVE_20191027_001; the candidate is confirmed as a duplicate canonicalization review."
+  },
+  "source_page_capture": {
+    "url": "https://gwins.org/cn/milesguo/435.html",
+    "retrieved_at": "2026-10-09T00:18:28Z",
+    "sha256": "1211ebb1107f559a3d771999e913f281d7fa75dc27888d0eb04ae310687fd765",
+    "bytes": 41381,
+    "result": "metadata_verified"
+  },
+  "playback_performed": false,
+  "media_download_performed": false,
+  "transcription_performed": false,
+  "segmentation_performed": false
+}
