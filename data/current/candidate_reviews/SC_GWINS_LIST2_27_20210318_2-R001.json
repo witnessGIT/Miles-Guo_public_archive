@@ -1,0 +1,46 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_27_20210318_2-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_27_20210318_2",
+  "reviewed_by": "agent-20261006T191534Z-d915df7b",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-09T00:19:32Z",
+  "decision": "rejected_not_target",
+  "canonical_live_id": null,
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_27.html",
+    "https://gwins.org/cn/milesguo/22692.html",
+    "https://youtu.be/izULiQb3pVw",
+    "https://rumble.com/v5984wx-20210318-2.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS detail page 22692 carries source_video_id 20210318_2 and binds it to this candidate.",
+    "date": "Candidate date 2021-03-18 agrees with the date and source id in the public GWINS title.",
+    "title": "郭文贵2021年3月18日盖特 20210318_2 刚刚直播完后．没有声音的一段．很多战友让我再说一下，我在这里在和有个重复补播上！听战友的话有饭吃．有未来！",
+    "platform_ids": [
+      "20210318_2",
+      "22692",
+      "izULiQb3pVw",
+      "v5984wx-20210318-2"
+    ],
+    "source_relationships": "The public GWINS detail page directly exposes the listed media URL(s); generic site-home links were excluded.",
+    "deduplication": "Compared exact source id, date, title, detail page, and platform IDs within current data; retained as a distinct non-livestream candidate without canonical-live promotion."
+  },
+  "source_raw_sha256": "61f9ec3ad6d1985142ec6f91ddf1e3b072fee2de69e7a451545ebf454cf4b3af",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false,
+  "rejection_reason": "The exact GWINS title identifies a standalone video, interview, Gettr update, or other non-livestream record; it is preserved without canonical livestream promotion."
+}

@@ -1,0 +1,45 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_27_20210318_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_27_20210318_1",
+  "reviewed_by": "agent-20261006T191534Z-d915df7b",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-09T00:19:32Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20210318_001",
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_27.html",
+    "https://gwins.org/cn/milesguo/22691.html",
+    "https://youtu.be/d_3Yk95hMoA",
+    "https://rumble.com/v5984ud-20210318-1.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS detail page 22691 carries source_video_id 20210318_1 and binds it to this candidate.",
+    "date": "Candidate date 2021-03-18 agrees with the date and source id in the public GWINS title.",
+    "title": "郭文贵2021年3月18日直播 20210318_1 火币是中共用来控制个人信息和收割财富的高科技手段；Gcoin， Ｇdollar是保证个人财富安全，灭共的金融平台；SEC下周开始退款，九指妖的灾难即将到来",
+    "platform_ids": [
+      "20210318_1",
+      "22691",
+      "d_3Yk95hMoA",
+      "v5984ud-20210318-1"
+    ],
+    "source_relationships": "The public GWINS detail page directly exposes the listed media URL(s); generic site-home links were excluded.",
+    "deduplication": "Fresh current-data checks found no canonical record for exact source id 20210318_1. The distinct GWINS record supports LIVE_20210318_001; same-day numbered items remain separate."
+  },
+  "source_raw_sha256": "f85f79bf92616a63b8bb10249c5e87fbb5078808ec454a90b7076455b52dbe16",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": true,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}

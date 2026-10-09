@@ -1,0 +1,46 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_27_20210321_2-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_27_20210321_2",
+  "reviewed_by": "agent-20261006T191534Z-d915df7b",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-09T00:19:32Z",
+  "decision": "rejected_not_target",
+  "canonical_live_id": null,
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_27.html",
+    "https://gwins.org/cn/milesguo/22703.html",
+    "https://youtu.be/63ilIZLbxiw",
+    "https://rumble.com/v5985e5-20210321-2.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS detail page 22703 carries source_video_id 20210321_2 and binds it to this candidate.",
+    "date": "Candidate date 2021-03-21 agrees with the date and source id in the public GWINS title.",
+    "title": "郭文贵2021年3月21日盖特 20210321_2 GTV……Gnews……G club．Gfasion将有一系列的……每周每月每季．每年的……按照工作和不同的结果……和节目的质量，长久的打赏和抽奖方式！这是让我们新中国联邦的人所有的战友！每一天，每年",
+    "platform_ids": [
+      "20210321_2",
+      "22703",
+      "63ilIZLbxiw",
+      "v5985e5-20210321-2"
+    ],
+    "source_relationships": "The public GWINS detail page directly exposes the listed media URL(s); generic site-home links were excluded.",
+    "deduplication": "Compared exact source id, date, title, detail page, and platform IDs within current data; retained as a distinct non-livestream candidate without canonical-live promotion."
+  },
+  "source_raw_sha256": "05e25a277681a2cffd0517f42a403e5a339b8a19e8d33229aaa824092996a0bf",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false,
+  "rejection_reason": "The exact GWINS title identifies a standalone video, interview, Gettr update, or other non-livestream record; it is preserved without canonical livestream promotion."
+}

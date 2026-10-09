@@ -1,0 +1,46 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_27_20210319_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_27_20210319_1",
+  "reviewed_by": "agent-20261006T191534Z-d915df7b",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-09T00:19:32Z",
+  "decision": "rejected_not_target",
+  "canonical_live_id": null,
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_27.html",
+    "https://gwins.org/cn/milesguo/22694.html",
+    "https://youtu.be/KebjxSEnxnI",
+    "https://rumble.com/v59852k-20210319-1.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS detail page 22694 carries source_video_id 20210319_1 and binds it to this candidate.",
+    "date": "Candidate date 2021-03-19 agrees with the date and source id in the public GWINS title.",
+    "title": "郭文贵2021年3月19日盖特 20210319_1 文贵再谈为什么？阿拉斯加的会谈！引起了美国和西方的高度关注！如何看待共产党玩弄种族矛盾……以及回应很多国内战友关于文贵．二月二直播后！一些家庭问题引起的各种讨论！",
+    "platform_ids": [
+      "20210319_1",
+      "22694",
+      "KebjxSEnxnI",
+      "v59852k-20210319-1"
+    ],
+    "source_relationships": "The public GWINS detail page directly exposes the listed media URL(s); generic site-home links were excluded.",
+    "deduplication": "Compared exact source id, date, title, detail page, and platform IDs within current data; retained as a distinct non-livestream candidate without canonical-live promotion."
+  },
+  "source_raw_sha256": "f1a15dcc35bcc892fea082883caea1bf0b7a29411c47cdf034369b5757ad4686",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false,
+  "rejection_reason": "The exact GWINS title identifies a standalone video, interview, Gettr update, or other non-livestream record; it is preserved without canonical livestream promotion."
+}

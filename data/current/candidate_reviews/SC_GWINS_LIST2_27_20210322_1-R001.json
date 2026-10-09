@@ -1,0 +1,46 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_27_20210322_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_27_20210322_1",
+  "reviewed_by": "agent-20261006T191534Z-d915df7b",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-09T00:19:32Z",
+  "decision": "rejected_not_target",
+  "canonical_live_id": null,
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_27.html",
+    "https://gwins.org/cn/milesguo/22707.html",
+    "https://youtu.be/PVJHuEGI2eg",
+    "https://rumble.com/v5985j7-20210322-1.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS detail page 22707 carries source_video_id 20210322_1 and binds it to this candidate.",
+    "date": "Candidate date 2021-03-22 agrees with the date and source id in the public GWINS title.",
+    "title": "郭文贵2021年3月22日盖特 20210322_1 尊敬的战友们好……我被传染上精神障碍病了……",
+    "platform_ids": [
+      "20210322_1",
+      "22707",
+      "PVJHuEGI2eg",
+      "v5985j7-20210322-1"
+    ],
+    "source_relationships": "The public GWINS detail page directly exposes the listed media URL(s); generic site-home links were excluded.",
+    "deduplication": "Compared exact source id, date, title, detail page, and platform IDs within current data; retained as a distinct non-livestream candidate without canonical-live promotion."
+  },
+  "source_raw_sha256": "9707c8402a25c831d9e646e3dfa386d0f9b0bd0746c30d96ddee62889c52421d",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false,
+  "rejection_reason": "The exact GWINS title identifies a standalone video, interview, Gettr update, or other non-livestream record; it is preserved without canonical livestream promotion."
+}

@@ -1,0 +1,43 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_27_20210324_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_27_20210324_1",
+  "reviewed_by": "agent-20261006T191534Z-d915df7b",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-09T00:19:32Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20210324_001",
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_27.html",
+    "https://gwins.org/cn/milesguo/22716.html",
+    "https://rumble.com/v5987sl-20210324-1.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS detail page 22716 carries source_video_id 20210324_1 and binds it to this candidate.",
+    "date": "Candidate date 2021-03-24 agrees with the date and source id in the public GWINS title.",
+    "title": "郭文贵2021年3月24日直播 20210324_1 欧盟已经查出多个辛普森夫人，中共在世界多国实施了辛普森计划，实际是现代义和团；中共病毒白皮书即将出台",
+    "platform_ids": [
+      "20210324_1",
+      "22716",
+      "v5987sl-20210324-1"
+    ],
+    "source_relationships": "The public GWINS detail page directly exposes the listed media URL(s); generic site-home links were excluded.",
+    "deduplication": "Fresh current-data checks found no canonical record for exact source id 20210324_1. The distinct GWINS record supports LIVE_20210324_001; same-day numbered items remain separate."
+  },
+  "source_raw_sha256": "d3f4fb0bdc864bc5ddfe9c8beab8b4cc426a1885fc47cc081ced3bff3dd3d6b8",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": true,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}

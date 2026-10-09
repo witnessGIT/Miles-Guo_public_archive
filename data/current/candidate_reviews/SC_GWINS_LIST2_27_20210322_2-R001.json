@@ -1,0 +1,46 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_27_20210322_2-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_27_20210322_2",
+  "reviewed_by": "agent-20261006T191534Z-d915df7b",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-09T00:19:32Z",
+  "decision": "rejected_not_target",
+  "canonical_live_id": null,
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_27.html",
+    "https://gwins.org/cn/milesguo/22708.html",
+    "https://youtu.be/L0wfNOJFjzs",
+    "https://rumble.com/v5985kx-20210322-2.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS detail page 22708 carries source_video_id 20210322_2 and binds it to this candidate.",
+    "date": "Candidate date 2021-03-22 agrees with the date and source id in the public GWINS title.",
+    "title": "郭文贵2021年3月22日盖特 20210322_2 很多战友都发信息问．文贵阻止了一场什么样的战争……我现在就严肃地给大家解开这个谜题！共产党的战狼外交政策，将使我们的同胞们一起走向地狱……一个十几亿人的国家被几个流氓无知的",
+    "platform_ids": [
+      "20210322_2",
+      "22708",
+      "L0wfNOJFjzs",
+      "v5985kx-20210322-2"
+    ],
+    "source_relationships": "The public GWINS detail page directly exposes the listed media URL(s); generic site-home links were excluded.",
+    "deduplication": "Compared exact source id, date, title, detail page, and platform IDs within current data; retained as a distinct non-livestream candidate without canonical-live promotion."
+  },
+  "source_raw_sha256": "fc067b8c7e63b92eb6db517c2df5ca858f6eb91ab3eb46bb909aeaa651e56a0e",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false,
+  "rejection_reason": "The exact GWINS title identifies a standalone video, interview, Gettr update, or other non-livestream record; it is preserved without canonical livestream promotion."
+}

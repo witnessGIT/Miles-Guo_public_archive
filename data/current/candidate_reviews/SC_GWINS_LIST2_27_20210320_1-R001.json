@@ -1,0 +1,46 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_27_20210320_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_27_20210320_1",
+  "reviewed_by": "agent-20261006T191534Z-d915df7b",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-09T00:19:32Z",
+  "decision": "rejected_not_target",
+  "canonical_live_id": null,
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_27.html",
+    "https://gwins.org/cn/milesguo/22698.html",
+    "https://youtu.be/Md-KVT0ziMw",
+    "https://rumble.com/v59857n-20210320-1.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS detail page 22698 carries source_video_id 20210320_1 and binds it to this candidate.",
+    "date": "Candidate date 2021-03-20 agrees with the date and source id in the public GWINS title.",
+    "title": "郭文贵2021年3月20日盖特 20210320_1 昨天阿拉斯加的最大的政治骗局．又骗谁，又骗什么？和昨天拜登总统空军一号的三摔．摔出了什么？摔倒了谁？后果有多严重？",
+    "platform_ids": [
+      "20210320_1",
+      "22698",
+      "Md-KVT0ziMw",
+      "v59857n-20210320-1"
+    ],
+    "source_relationships": "The public GWINS detail page directly exposes the listed media URL(s); generic site-home links were excluded.",
+    "deduplication": "Compared exact source id, date, title, detail page, and platform IDs within current data; retained as a distinct non-livestream candidate without canonical-live promotion."
+  },
+  "source_raw_sha256": "928ecf9ec95ec9d9425a22edc35b2ce965ef523f03eef7557f55735e172e5fd0",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false,
+  "rejection_reason": "The exact GWINS title identifies a standalone video, interview, Gettr update, or other non-livestream record; it is preserved without canonical livestream promotion."
+}

@@ -1,0 +1,46 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_27_20210323_2-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_27_20210323_2",
+  "reviewed_by": "agent-20261006T191534Z-d915df7b",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-09T00:19:32Z",
+  "decision": "rejected_not_target",
+  "canonical_live_id": null,
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_27.html",
+    "https://gwins.org/cn/milesguo/22714.html",
+    "https://youtu.be/18WrL_4uGck",
+    "https://rumble.com/v5985ot-20210323-2.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS detail page 22714 carries source_video_id 20210323_2 and binds it to this candidate.",
+    "date": "Candidate date 2021-03-23 agrees with the date and source id in the public GWINS title.",
+    "title": "郭文贵2021年3月23日盖特 20210323_2 文贵紧急的呼吁所有的战友们……一定要严肃对待．以各种名义的假战友的欺骗行为……任何战友再上当受骗．文贵不会再承担任何责任，防止九指妖事件的重演．我们必须要为自己的行为负责…",
+    "platform_ids": [
+      "20210323_2",
+      "22714",
+      "18WrL_4uGck",
+      "v5985ot-20210323-2"
+    ],
+    "source_relationships": "The public GWINS detail page directly exposes the listed media URL(s); generic site-home links were excluded.",
+    "deduplication": "Compared exact source id, date, title, detail page, and platform IDs within current data; retained as a distinct non-livestream candidate without canonical-live promotion."
+  },
+  "source_raw_sha256": "d73ed1ecb710d29301e1874eb69278abbeb97bfb61940a71d9814dd5200e159d",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false,
+  "rejection_reason": "The exact GWINS title identifies a standalone video, interview, Gettr update, or other non-livestream record; it is preserved without canonical livestream promotion."
+}
