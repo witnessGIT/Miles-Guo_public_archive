@@ -1,0 +1,46 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_59_20181014_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_59_20181014_1",
+  "reviewed_by": "agent-20261006T191453Z-a890f4a8",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-09T00:50:12Z",
+  "decision": "rejected_not_target",
+  "canonical_live_id": null,
+  "evidence_urls": [
+    "https://www.gwins.org/cn/milesguo/list_2_59.html",
+    "https://www.gwins.org/cn/milesguo/21881.html",
+    "https://youtu.be/jpzYB4wBhr4",
+    "https://rumble.com/v57gkv1-20181014-1.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "Exact public GWINS page is bound to candidate SC_GWINS_LIST2_59_20181014_1 and page/source identifier list_2_59; identity visibility=True.",
+    "date": "Candidate date is 2018-10-14; no publication time was inferred.",
+    "title": "郭文贵2018年10月14日视频 20181014_1",
+    "platform_ids": [
+      "20181014_1",
+      "list_2_59",
+      "jpzYB4wBhr4",
+      "v57gkv1-20181014-1"
+    ],
+    "source_relationships": "Only exact public page URLs and concrete outbound platform links were retained; generic navigation links were excluded.",
+    "deduplication": "The exact GWINS title identifies a standalone GETTR update, short video, or rebroadcast rather than an original livestream."
+  },
+  "source_raw_sha256": "23b852400a1c99e03ee5c649589126d0f376b6ced42f89601ecd2a029f0692ae",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false,
+  "rejection_reason": "The exact GWINS title identifies a standalone GETTR update, short video, or rebroadcast rather than an original livestream."
+}

@@ -1,0 +1,45 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_59_20181016-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_59_20181016",
+  "reviewed_by": "agent-20261006T191453Z-a890f4a8",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-09T00:50:12Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20181016_001",
+  "evidence_urls": [
+    "https://www.gwins.org/cn/milesguo/list_2_59.html",
+    "https://www.gwins.org/cn/milesguo/217.html",
+    "https://odysee.com/@laxi:4/20181016:1",
+    "https://rumble.com/v57glb7-20181016.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "Exact public GWINS page is bound to candidate SC_GWINS_LIST2_59_20181016 and page/source identifier list_2_59; identity visibility=True.",
+    "date": "Candidate date is 2018-10-16; no publication time was inferred.",
+    "title": "郭文贵2018年10月16日视频 20181016 郭文贵直播 政法委以黑治国比黑还黑！孟宏伟怎么回国的？怎么被抓的？王建是怎么死的？王岐山赴以色列人民币“偷”技术 赴沙特 人民币换石油",
+    "platform_ids": [
+      "20181016",
+      "list_2_59",
+      "@laxi:4/20181016:1",
+      "v57glb7-20181016"
+    ],
+    "source_relationships": "Only exact public page URLs and concrete outbound platform links were retained; generic navigation links were excluded.",
+    "deduplication": "The exact GWINS title explicitly identifies an original livestream."
+  },
+  "source_raw_sha256": "961bca3178d8d6f86adf35a982a89df916f38f588a912f679c2f53eff6fdecb3",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": true,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}

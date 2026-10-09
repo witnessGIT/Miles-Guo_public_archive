@@ -1,0 +1,46 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_59_20181017-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_59_20181017",
+  "reviewed_by": "agent-20261006T191453Z-a890f4a8",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-09T00:50:12Z",
+  "decision": "rejected_not_target",
+  "canonical_live_id": null,
+  "evidence_urls": [
+    "https://www.gwins.org/cn/milesguo/list_2_59.html",
+    "https://www.gwins.org/cn/milesguo/218.html",
+    "https://www.youtube.com/watch?v=7vA9ZHu-6iE",
+    "https://rumble.com/v57gn71-20181017.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "Exact public GWINS page is bound to candidate SC_GWINS_LIST2_59_20181017 and page/source identifier list_2_59; identity visibility=True.",
+    "date": "Candidate date is 2018-10-17; no publication time was inferred.",
+    "title": "郭文贵2018年10月17日参加路德访谈 20181017 法国大革命与共产党的打土豪分田地的根本不同！也必将引起流血革命！西方国家已经开始实施对中国共产党的清除方案！无人可以改变！",
+    "platform_ids": [
+      "20181017",
+      "list_2_59",
+      "7vA9ZHu-6iE",
+      "v57gn71-20181017"
+    ],
+    "source_relationships": "Only exact public page URLs and concrete outbound platform links were retained; generic navigation links were excluded.",
+    "deduplication": "The exact GWINS title identifies a standalone GETTR update, short video, or rebroadcast rather than an original livestream."
+  },
+  "source_raw_sha256": "7238da69af6d7106d999387f356cd3f8b032cea5f5612e0414251e9ad4ffec05",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false,
+  "rejection_reason": "The exact GWINS title identifies a standalone GETTR update, short video, or rebroadcast rather than an original livestream."
+}
