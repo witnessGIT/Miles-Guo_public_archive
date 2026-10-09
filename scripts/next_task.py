@@ -569,7 +569,7 @@ def source_boundary_tasks(done: set[str]) -> list[dict]:
             continue
         if item_id in done or task_completed(item_id) or claim_blocks_task(item_id):
             continue
-        if str(item.get("status") or "open").lower() != "open":
+        if str(item.get("status") or "open").lower() not in {"open", "in_progress"}:
             continue
         source = str(item.get("source_site") or item.get("source") or "").lower()
         boundary = item.get("natural_boundary") or item.get("url") or item_id
@@ -593,8 +593,12 @@ def source_boundary_tasks(done: set[str]) -> list[dict]:
     return tasks
 
 
-def has_unfinished_source_boundaries() -> bool:
+def has_unfinished_source_boundaries(done: set[str] | None = None) -> bool:
+    completed = completed_ids() if done is None else done
     for item in iter_current_records("source_boundaries"):
+        task_id = str(item.get("task_id") or item.get("id") or "")
+        if task_id and task_id in completed:
+            continue
         status = str(item.get("status") or "open").lower()
         if status in {"open", "in_progress"}:
             return True
@@ -890,7 +894,7 @@ def static_tasks(done: set[str]) -> list[dict]:
     eligible: list[dict] = []
     workflow = load_workflow()
     phase1_collection = workflow.get("current_major_phase") == "PHASE_1_COLLECTION"
-    collection_still_open = has_unfinished_source_boundaries()
+    collection_still_open = has_unfinished_source_boundaries(done)
     for task in load_queue():
         task_id = task["id"]
         if task_is_superseded(task):

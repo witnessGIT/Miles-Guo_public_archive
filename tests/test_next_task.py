@@ -241,6 +241,29 @@ class NextTaskSchedulingTests(unittest.TestCase):
         self.assertEqual([task["id"] for task in tasks], ["C1-GWINS-list_2_70"])
         self.assertEqual(tasks[0]["kind"], "source_boundary_discovery")
 
+    def test_orphaned_in_progress_boundary_is_reclaimable(self):
+        boundary_dir = next_task.DATA_CURRENT / "source_boundaries"
+        boundary_dir.mkdir(parents=True)
+        (boundary_dir / "queue.jsonl").write_text(
+            json.dumps(
+                {
+                    "id": "C1-GWINS-detail-demo",
+                    "source_site": "gwins",
+                    "boundary_type": "detail_page",
+                    "natural_boundary": "GWINS detail demo",
+                    "url": "https://www.gwins.org/cn/milesguo/demo.html",
+                    "status": "in_progress",
+                    "priority": 110,
+                }
+            )
+            + "\n",
+            encoding="utf-8",
+        )
+
+        tasks = next_task.eligible_tasks()
+
+        self.assertEqual([task["id"] for task in tasks], ["C1-GWINS-detail-demo"])
+
     def test_source_boundary_string_dependency_is_not_split_into_characters(self):
         boundary_dir = next_task.DATA_CURRENT / "source_boundaries"
         boundary_dir.mkdir(parents=True)
@@ -300,6 +323,49 @@ class NextTaskSchedulingTests(unittest.TestCase):
 
         self.assertIn("C1-GETTRSEARCH-post-demo", ids)
         self.assertNotIn("C2-CANDIDATE-PROMOTION", ids)
+
+    def test_completed_phase1_boundary_does_not_keep_c2_blocked(self):
+        self.write_queue(
+            {
+                "id": "C2-CANDIDATE-PROMOTION",
+                "priority": 90,
+                "depends_on": [],
+                "kind": "candidate_promotion",
+                "scope": "promote candidates",
+            }
+        )
+        next_task.WORKFLOW.parent.mkdir(parents=True, exist_ok=True)
+        next_task.WORKFLOW.write_text(
+            json.dumps({"current_major_phase": "PHASE_1_COLLECTION"}),
+            encoding="utf-8",
+        )
+        boundary_dir = next_task.DATA_CURRENT / "source_boundaries"
+        boundary_dir.mkdir(parents=True)
+        boundary_id = "C1-GETTRSEARCH-post-demo"
+        (boundary_dir / "queue.jsonl").write_text(
+            json.dumps(
+                {
+                    "id": boundary_id,
+                    "source_site": "gettrsearch",
+                    "boundary_type": "detail_page",
+                    "natural_boundary": "demo",
+                    "url": "https://gettr.com/post/demo",
+                    "status": "open",
+                    "priority": 105,
+                }
+            )
+            + "\n",
+            encoding="utf-8",
+        )
+        (next_task.COMPLETED / f"{boundary_id}.json").write_text(
+            json.dumps({"task_id": boundary_id, "status": "completed"}),
+            encoding="utf-8",
+        )
+
+        ids = [task["id"] for task in next_task.eligible_tasks()]
+
+        self.assertFalse(next_task.has_unfinished_source_boundaries())
+        self.assertEqual(ids, ["C2-CANDIDATE-PROMOTION"])
 
     def test_live_work_items_are_blocked_until_phase1_collection_promotes_candidates(self):
         next_task.WORKFLOW.parent.mkdir(parents=True, exist_ok=True)
