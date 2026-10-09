@@ -395,6 +395,46 @@ class NextTaskSchedulingTests(unittest.TestCase):
 
         self.assertEqual(next_task.live_work_item_tasks(set()), [])
 
+    def test_live_work_item_stage_dependency_is_enforced(self):
+        next_task.WORKFLOW.parent.mkdir(parents=True, exist_ok=True)
+        next_task.WORKFLOW.write_text(
+            json.dumps({"current_major_phase": "PHASE_2_VERIFICATION"}),
+            encoding="utf-8",
+        )
+        work_item_dir = next_task.DATA_CURRENT / "live_work_items"
+        work_item_dir.mkdir(parents=True)
+        metadata_id = "WI_LIVE_TEST_metadata_fill"
+        transcript_id = "WI_LIVE_TEST_transcript_import"
+        rows = [
+            {
+                "id": metadata_id,
+                "live_id": "LIVE_TEST",
+                "work_stage": "metadata_fill",
+                "work_status": "open",
+                "depends_on_json": [],
+            },
+            {
+                "id": transcript_id,
+                "live_id": "LIVE_TEST",
+                "work_stage": "transcript_import",
+                "work_status": "open",
+                "depends_on_json": [metadata_id],
+            },
+        ]
+        (work_item_dir / "items.jsonl").write_text(
+            "\n".join(json.dumps(row) for row in rows) + "\n",
+            encoding="utf-8",
+        )
+
+        self.assertEqual(
+            [task["id"] for task in next_task.live_work_item_tasks(set())],
+            [metadata_id],
+        )
+        self.assertEqual(
+            [task["id"] for task in next_task.live_work_item_tasks({metadata_id})],
+            [transcript_id],
+        )
+
     def test_watch_refreshes_origin_main_before_each_queue_check(self):
         task = {"id": "C1-GWINS-detail-demo"}
         completed = type(

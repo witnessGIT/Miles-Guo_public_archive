@@ -547,6 +547,9 @@ def live_work_item_tasks(
         if str(item.get("work_status") or "open") != "open":
             continue
         stage = str(item.get("work_stage") or "")
+        depends_on = normalize_depends_on(item.get("depends_on_json"))
+        if any(dependency not in done for dependency in depends_on):
+            continue
         tasks.append(
             {
                 "id": item_id,
@@ -558,7 +561,7 @@ def live_work_item_tasks(
                 "scope": item.get("instructions") or item.get("natural_boundary") or item_id,
                 "stream_task": False,
                 "work_item": True,
-                "depends_on": [],
+                "depends_on": depends_on,
             }
         )
     return tasks
