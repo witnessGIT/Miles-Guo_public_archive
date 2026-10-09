@@ -1,0 +1,46 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_34_20201020-R002",
+  "source_candidate_id": "SC_GWINS_LIST2_34_20201020",
+  "reviewed_by": "agent-20261006T191453Z-a890f4a8",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-09T00:49:18Z",
+  "decision": "rejected_not_target",
+  "canonical_live_id": null,
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_34.html",
+    "https://gwins.org/cn/milesguo/20655.html",
+    "https://youtu.be/bIwtQOvDE28",
+    "https://rumble.com/v58tqzm-20201020.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "Exact public GWINS page is bound to candidate SC_GWINS_LIST2_34_20201020 and page/source identifier list_2_34; identity visibility=True.",
+    "date": "Candidate date is 2020-10-20; no publication time was inferred.",
+    "title": "郭文贵2020年10月20日语音 20201020 这个世界上没有信仰的魔鬼的时代它已经在。” “共产党不灭，未来人类上不可能有后来的15年",
+    "platform_ids": [
+      "20201020",
+      "list_2_34",
+      "bIwtQOvDE28",
+      "v58tqzm-20201020"
+    ],
+    "source_relationships": "Only exact public page URLs and concrete outbound platform links were retained; generic navigation links were excluded.",
+    "deduplication": "The exact GWINS title identifies a standalone GETTR update, short video, or rebroadcast rather than an original livestream."
+  },
+  "source_raw_sha256": "0de1b842fda73d29166a0987e5c657e81fceb42b5e8ca603e01adf3f40630757",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false,
+  "rejection_reason": "The exact GWINS title identifies a standalone GETTR update, short video, or rebroadcast rather than an original livestream."
+}

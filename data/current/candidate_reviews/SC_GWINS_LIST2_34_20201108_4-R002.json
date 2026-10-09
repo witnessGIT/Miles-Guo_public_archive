@@ -1,0 +1,46 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_34_20201108_4-R002",
+  "source_candidate_id": "SC_GWINS_LIST2_34_20201108_4",
+  "reviewed_by": "agent-20261006T191453Z-a890f4a8",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-09T00:49:18Z",
+  "decision": "rejected_not_target",
+  "canonical_live_id": null,
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_34.html",
+    "https://gwins.org/cn/milesguo/20819.html",
+    "https://youtu.be/Z-DEpXo9Qnk",
+    "https://rumble.com/v58u5i9-20201108-4.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "Exact public GWINS page is bound to candidate SC_GWINS_LIST2_34_20201108_4 and page/source identifier list_2_34; identity visibility=True.",
+    "date": "Candidate date is 2020-11-08; no publication time was inferred.",
+    "title": "郭文贵2020年11月8日盖特 20201108_4 记得文贵去过亚利桑娜州吧，我们今天将等来亚利桑娜州的重大利好信息！",
+    "platform_ids": [
+      "20201108_4",
+      "list_2_34",
+      "Z-DEpXo9Qnk",
+      "v58u5i9-20201108-4"
+    ],
+    "source_relationships": "Only exact public page URLs and concrete outbound platform links were retained; generic navigation links were excluded.",
+    "deduplication": "The exact GWINS title identifies a standalone GETTR update, short video, or rebroadcast rather than an original livestream."
+  },
+  "source_raw_sha256": "34d13a4b69539b2d1751659ebae866706a9b793cef643e48dace12c02e232629",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false,
+  "rejection_reason": "The exact GWINS title identifies a standalone GETTR update, short video, or rebroadcast rather than an original livestream."
+}

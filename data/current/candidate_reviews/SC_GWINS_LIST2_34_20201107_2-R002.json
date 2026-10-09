@@ -1,0 +1,45 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_34_20201107_2-R002",
+  "source_candidate_id": "SC_GWINS_LIST2_34_20201107_2",
+  "reviewed_by": "agent-20261006T191453Z-a890f4a8",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-09T00:49:18Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20201107_002",
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_34.html",
+    "https://gwins.org/cn/milesguo/20744.html",
+    "https://odysee.com/@laxi:4/20201107_2:a",
+    "https://rumble.com/v58u2xp-20201107-2.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "Exact public GWINS page is bound to candidate SC_GWINS_LIST2_34_20201107_2 and page/source identifier list_2_34; identity visibility=True.",
+    "date": "Candidate date is 2020-11-07; no publication time was inferred.",
+    "title": "郭文贵2020年11月7日直播 20201107_2 美国大选后文贵一起直播 - 第二段",
+    "platform_ids": [
+      "20201107_2",
+      "list_2_34",
+      "@laxi:4/20201107_2:a",
+      "v58u2xp-20201107-2"
+    ],
+    "source_relationships": "Only exact public page URLs and concrete outbound platform links were retained; generic navigation links were excluded.",
+    "deduplication": "The exact GWINS title explicitly identifies an original livestream."
+  },
+  "source_raw_sha256": "c26805e329d945036bed7578bcdb95d785b20347d59414c17f3e3643ad3b1de3",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": true,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}

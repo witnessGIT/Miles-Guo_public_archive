@@ -1,0 +1,45 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_34_20201108_1-R002",
+  "source_candidate_id": "SC_GWINS_LIST2_34_20201108_1",
+  "reviewed_by": "agent-20261006T191453Z-a890f4a8",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-09T00:49:18Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20201108_001",
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_34.html",
+    "https://gwins.org/cn/milesguo/20781.html",
+    "https://odysee.com/@laxi:4/20201108_1:e",
+    "https://rumble.com/v58u4po-20201108-1.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "Exact public GWINS page is bound to candidate SC_GWINS_LIST2_34_20201108_1 and page/source identifier list_2_34; identity visibility=True.",
+    "date": "Candidate date is 2020-11-08; no publication time was inferred.",
+    "title": "郭文贵2020年11月8日直播 20201108_1",
+    "platform_ids": [
+      "20201108_1",
+      "list_2_34",
+      "@laxi:4/20201108_1:e",
+      "v58u4po-20201108-1"
+    ],
+    "source_relationships": "Only exact public page URLs and concrete outbound platform links were retained; generic navigation links were excluded.",
+    "deduplication": "The exact GWINS title explicitly identifies an original livestream."
+  },
+  "source_raw_sha256": "69816dc3fa523382123724b0dc0eba0506599bc7e41a4ef4a414ac0eda7d3507",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": true,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}

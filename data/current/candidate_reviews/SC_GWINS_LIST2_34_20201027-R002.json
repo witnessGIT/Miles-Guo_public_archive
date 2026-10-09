@@ -1,0 +1,46 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_34_20201027-R002",
+  "source_candidate_id": "SC_GWINS_LIST2_34_20201027",
+  "reviewed_by": "agent-20261006T191453Z-a890f4a8",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-09T00:49:18Z",
+  "decision": "rejected_not_target",
+  "canonical_live_id": null,
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_34.html",
+    "https://gwins.org/cn/milesguo/20654.html",
+    "https://youtu.be/gWf75YvaXe4",
+    "https://rumble.com/v58tr25-20201027.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "Exact public GWINS page is bound to candidate SC_GWINS_LIST2_34_20201027 and page/source identifier list_2_34; identity visibility=True.",
+    "date": "Candidate date is 2020-10-27; no publication time was inferred.",
+    "title": "郭文贵2020年10月27日盖特 20201027 太长时间没有直播，没有发照片，很多战友一直在关心和想念．惦记着文贵…你们发来的信息都收到了，今天我到了另外一个地方…录了一",
+    "platform_ids": [
+      "20201027",
+      "list_2_34",
+      "gWf75YvaXe4",
+      "v58tr25-20201027"
+    ],
+    "source_relationships": "Only exact public page URLs and concrete outbound platform links were retained; generic navigation links were excluded.",
+    "deduplication": "The exact GWINS title identifies a standalone GETTR update, short video, or rebroadcast rather than an original livestream."
+  },
+  "source_raw_sha256": "f051af43ecae6293fa8390c9997a5d7013ac29142aec42f99f253fab5d9484b8",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false,
+  "rejection_reason": "The exact GWINS title identifies a standalone GETTR update, short video, or rebroadcast rather than an original livestream."
+}

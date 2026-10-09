@@ -1,0 +1,46 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_34_20201014-R002",
+  "source_candidate_id": "SC_GWINS_LIST2_34_20201014",
+  "reviewed_by": "agent-20261006T191453Z-a890f4a8",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-09T00:49:18Z",
+  "decision": "rejected_not_target",
+  "canonical_live_id": null,
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_34.html",
+    "https://gwins.org/cn/milesguo/20589.html",
+    "https://youtu.be/uqj4vdadBV0",
+    "https://rumble.com/v58tqwt-20201014.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "Exact public GWINS page is bound to candidate SC_GWINS_LIST2_34_20201014 and page/source identifier list_2_34; identity visibility=True.",
+    "date": "Candidate date is 2020-10-14; no publication time was inferred.",
+    "title": "郭文贵2020年10月14日盖特 20201014 兄弟姐妹们你们可搂住、明天放亨特拜登照片的时候......很黄很黄...不要让孩子们看阿.",
+    "platform_ids": [
+      "20201014",
+      "list_2_34",
+      "uqj4vdadBV0",
+      "v58tqwt-20201014"
+    ],
+    "source_relationships": "Only exact public page URLs and concrete outbound platform links were retained; generic navigation links were excluded.",
+    "deduplication": "The exact GWINS title identifies a standalone GETTR update, short video, or rebroadcast rather than an original livestream."
+  },
+  "source_raw_sha256": "038c5330d873557f670d63ca3b8df47d40444ef4acf4793da62a67aa32fea3d7",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false,
+  "rejection_reason": "The exact GWINS title identifies a standalone GETTR update, short video, or rebroadcast rather than an original livestream."
+}
