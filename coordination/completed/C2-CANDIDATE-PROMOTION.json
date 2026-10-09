@@ -1,0 +1,19 @@
+{
+  "task_id": "C2-CANDIDATE-PROMOTION",
+  "agent_id": "agent-20261004T091647Z-90dd416d",
+  "completed_at": "2026-10-09T15:52:37.185485+00:00",
+  "result_commit": "fb42a9cb17c9b1aab641168a1d76b965d58ad360",
+  "outputs": [
+    "data/current/candidate_reviews",
+    "data/current/live_videos",
+    "data/current/live_sources",
+    "data/current/media_assets"
+  ],
+  "validation": "All 2614 reviewable candidates are reviewed; validate_candidate_reviews PASS for 2605 v2 completions across 51 batches with zero lease warnings; promoted canonical live, source, media, and duplicate relationships are durable.",
+  "workflow_mode": "continuous-worker-v2",
+  "claim_protocol": "claim-protocol-v2",
+  "entry_mode": "work",
+  "continue_after_finish": true,
+  "finish_prerequisites_revalidated": true,
+  "notes": "Task completed only after re-checking the latest repository dependency contract. Under continuous-worker-v2, refresh repository state and claim the next eligible task unless a documented stop condition applies."
+}
