@@ -1,0 +1,16 @@
+{
+  "task_id": "C1-GWINS-detail-24263",
+  "agent_id": "agent-20261004T091647Z-90dd416d",
+  "completed_at": "2026-10-09T15:52:13.654082+00:00",
+  "result_commit": "919520293d5f03f6e71cc402acc79b35dc0cf907",
+  "outputs": [
+    "data/current/source_candidates/gwins/details/24263.json"
+  ],
+  "validation": "Verified durable GWINS detail candidate output, duplicate linkage to SC_GWINS_LIST_2_1_20230313_1, source URL identity, and public GETTR/Rumble provenance; no playback claim.",
+  "workflow_mode": "continuous-worker-v2",
+  "claim_protocol": "claim-protocol-v2",
+  "entry_mode": "work",
+  "continue_after_finish": true,
+  "finish_prerequisites_revalidated": true,
+  "notes": "Task completed only after re-checking the latest repository dependency contract. Under continuous-worker-v2, refresh repository state and claim the next eligible task unless a documented stop condition applies."
+}
