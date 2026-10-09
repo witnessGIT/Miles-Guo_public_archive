@@ -1,0 +1,45 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_71_20170525-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_71_20170525",
+  "reviewed_by": "agent-20261006T191534Z-d915df7b",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-09T00:18:09Z",
+  "decision": "linked_existing_canonical",
+  "canonical_live_id": "LIVE_20170525_001",
+  "evidence_urls": [
+    "https://www.gwins.org/cn/milesguo/list_2_71.html",
+    "https://www.gwins.org/cn/milesguo/568.html",
+    "https://www.youtube.com/watch?v=0CJC9iyvnbo",
+    "https://rumble.com/v576km1-20170525.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS detail page 568 carries source_video_id 20170525 and binds it to this candidate.",
+    "date": "Candidate date 2017-05-25 agrees with the date and source id in the public GWINS title.",
+    "title": "郭文贵2017年5月25日 20170525 回应胡舒立报道 托尼 布萊尔",
+    "platform_ids": [
+      "20170525",
+      "568",
+      "0CJC9iyvnbo",
+      "v576km1-20170525"
+    ],
+    "source_relationships": "The public GWINS detail page directly exposes the listed media URL(s); generic site-home links were excluded.",
+    "deduplication": "Exact public media URL already belongs to LIVE_20170525_001; this GWINS record is linked to that existing canonical live without duplicating the media asset."
+  },
+  "source_raw_sha256": "d9d877b73d6ebc6e6caf8f5506b6b6454a2a2467dccca171ead111ec074a14f0",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}

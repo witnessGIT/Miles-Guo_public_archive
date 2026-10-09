@@ -1,0 +1,46 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_71_20170529-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_71_20170529",
+  "reviewed_by": "agent-20261006T191534Z-d915df7b",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-09T00:18:09Z",
+  "decision": "rejected_not_target",
+  "canonical_live_id": null,
+  "evidence_urls": [
+    "https://www.gwins.org/cn/milesguo/list_2_71.html",
+    "https://www.gwins.org/cn/milesguo/569.html",
+    "https://www.youtube.com/watch?v=uoMlhusFIkY",
+    "https://rumble.com/v576l51-20170529.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS detail page 569 carries source_video_id 20170529 and binds it to this candidate.",
+    "date": "Candidate date 2017-05-29 agrees with the date and source id in the public GWINS title.",
+    "title": "郭文贵2017年5月29日关于王歧山 20170529 关于王歧山",
+    "platform_ids": [
+      "20170529",
+      "569",
+      "uoMlhusFIkY",
+      "v576l51-20170529"
+    ],
+    "source_relationships": "The public GWINS detail page directly exposes the listed media URL(s); generic site-home links were excluded.",
+    "deduplication": "Compared exact source id, date, title, detail page, and platform IDs within current data; retained as a distinct non-livestream candidate without canonical-live promotion."
+  },
+  "source_raw_sha256": "7632e735f4c4cb8c2d521c52bb2a8c5201d426f2954b91f4c29c64e6e94660c7",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false,
+  "rejection_reason": "The exact GWINS title identifies a standalone video, interview, Gettr update, or other non-livestream record; it is preserved without canonical livestream promotion."
+}
