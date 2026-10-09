@@ -5,8 +5,10 @@
 Normal entry and execution must not read `docs/archive/`, `reports/archive/`, or
 `coordination/archive/`. Those directories are sealed historical audit material and never define
 current scope, queue state, ownership, completion, or progress. Old C1-only instructions are
-superseded. Current Phase 1 work includes C2 candidate identity review; later video processing
-remains forbidden.
+superseded. Phase 1 collection and C2 candidate identity review are frozen by
+`data/current/collection_freeze/phase1_20261010.json`. Current work is Phase 2 verification;
+workers must follow the live-work-item dependency chain and may use the repository Playback
+Evidence Service where a task requires real media inspection.
 
 A session/check report is not business output and cannot substitute for an eligible C2 task.
 Candidate-review completion requires one source-backed artifact under

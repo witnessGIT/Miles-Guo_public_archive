@@ -1,7 +1,7 @@
 {
   "project": "Miles-Guo_public_archive",
   "archive_run": "original-livestream-restart-2026-09-16",
-  "current_major_phase": "PHASE_1_COLLECTION",
+  "current_major_phase": "PHASE_2_VERIFICATION",
   "active_data_root": "data/current",
   "sealed_historical_data_policy": "Files outside data/current are historical audit material only and must not count as current progress or active database input.",
   "phase_1_forbids": ["playback_acceptance", "final_archive_acceptance", "later_news", "outcome_judgment"],
