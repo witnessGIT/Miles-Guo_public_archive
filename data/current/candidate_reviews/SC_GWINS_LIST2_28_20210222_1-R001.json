@@ -1,0 +1,46 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_28_20210222_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_28_20210222_1",
+  "reviewed_by": "agent-20261006T191534Z-d915df7b",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-09T00:20:01Z",
+  "decision": "rejected_not_target",
+  "canonical_live_id": null,
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_28.html",
+    "https://gwins.org/cn/milesguo/22576.html",
+    "https://youtu.be/JjLcGOTkFHY",
+    "https://rumble.com/v597645-20210222-1.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS detail page 22576 carries source_video_id 20210222_1 and binds it to this candidate.",
+    "date": "Candidate date 2021-02-22 agrees with the date and source id in the public GWINS title.",
+    "title": "郭文贵2021年2月22日盖特 20210222_1 尊敬的战友们好，你们健身了吗？你们传播C C P病毒．香港危机真相了吗？一切都已经开始！",
+    "platform_ids": [
+      "20210222_1",
+      "22576",
+      "JjLcGOTkFHY",
+      "v597645-20210222-1"
+    ],
+    "source_relationships": "The public GWINS detail page directly exposes the listed media URL(s); generic site-home links were excluded.",
+    "deduplication": "Compared exact source id, date, title, detail page, and platform IDs within current data; retained as a distinct non-livestream candidate without canonical-live promotion."
+  },
+  "source_raw_sha256": "3b9551a19504538e2063ea6d166feca69b353b5060452643fcfd05d9fc775af0",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false,
+  "rejection_reason": "The exact GWINS title identifies a standalone video, interview, Gettr update, or other non-livestream record; it is preserved without canonical livestream promotion."
+}
