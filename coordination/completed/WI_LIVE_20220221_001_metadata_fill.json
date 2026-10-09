@@ -1,0 +1,18 @@
+{
+  "task_id": "WI_LIVE_20220221_001_metadata_fill",
+  "agent_id": "agent-20261004T091647Z-90dd416d",
+  "completed_at": "2026-10-09T17:24:05.854697+00:00",
+  "result_commit": "1da92e6495039563b305a90b7ee80444a14032ab",
+  "outputs": [
+    "data/current/live_videos/c2_review_gwins_list_2_11_batch_56ce8649.jsonl",
+    "data/current/sources/c2_review_gwins_list_2_11_batch_56ce8649.jsonl",
+    "data/current/media_assets/c2_review_gwins_list_2_11_batch_56ce8649.jsonl"
+  ],
+  "validation": "Public Rumble metadata verified; 352-second duration, 1280x720 dimensions, and 30 FPS recorded. GETTR locator was preserved but not marked verified because public extractor returned no usable metadata. No playback verification claimed; database validation OK with zero warnings.",
+  "workflow_mode": "continuous-worker-v2",
+  "claim_protocol": "claim-protocol-v2",
+  "entry_mode": "work",
+  "continue_after_finish": true,
+  "finish_prerequisites_revalidated": true,
+  "notes": "Task completed only after re-checking the latest repository dependency contract. Under continuous-worker-v2, refresh repository state and claim the next eligible task unless a documented stop condition applies."
+}
