@@ -1146,10 +1146,19 @@ def validate_candidate_review_artifact(
     elif not str(artifact.get("rejection_reason") or "").strip():
         raise SystemExit("Decision rejected_not_target requires rejection_reason.")
 
-    expected_batch_size = (
+    configured_batch_size = (
         CANDIDATE_REVIEW_BATCH_SIZE
         if expected["entry_mode"] == "work"
         else CANDIDATE_REVIEW_CHAT_BATCH_SIZE
+    )
+    claimed_target_size = claim_or_completion.get("review_batch_target_size")
+    final_remainder = claim_or_completion.get("review_batch_final_remainder") is True
+    expected_batch_size = (
+        claimed_target_size
+        if final_remainder
+        and isinstance(claimed_target_size, int)
+        and 1 <= claimed_target_size < configured_batch_size
+        else configured_batch_size
     )
     if claim_or_completion.get("review_batch_target_size") != expected_batch_size:
         raise SystemExit(
@@ -1377,6 +1386,9 @@ def finish_task(
                 "review_batch_target_size": claim.get("review_batch_target_size"),
                 "review_batch_claimed_count": claim.get("review_batch_claimed_count"),
                 "review_batch_position": claim.get("review_batch_position"),
+                "review_batch_final_remainder": claim.get(
+                    "review_batch_final_remainder", False
+                ),
                 "candidate_review_contract": CANDIDATE_REVIEW_CONTRACT,
                 "review_artifact": review_artifact_path,
                 "review_decision": (review_artifact or {}).get("decision"),

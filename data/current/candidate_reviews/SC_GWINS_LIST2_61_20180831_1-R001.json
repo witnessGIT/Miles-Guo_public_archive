@@ -1,0 +1,50 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_61_20180831_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_61_20180831_1",
+  "reviewed_by": "agent-20261004T091647Z-90dd416d",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-09T14:25:23Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20180831_001",
+  "evidence_urls": [
+    "https://www.gwins.org/cn/milesguo/list_2_61.html",
+    "https://www.gwins.org/cn/milesguo/21833.html",
+    "https://youtu.be/Z8gTnDY5uMg",
+    "https://rumble.com/v57cwod-20180831-1.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "Exact public GWINS detail page 21833 is bound to source video ID 20180831_1; expected identity visible=True.",
+    "date": "Candidate date 2018-08-31 agrees with the source ID and exact detail-page title; no publication time was inferred.",
+    "title": "郭文贵2018年8月31日直播 20180831_1 感谢昨天为盘古公寓和写字楼被非法拍卖而流泪担心我的战友们你们的爱惜担心文贵更加让我精进反盗为战友而战为正义而战一切都是刚刚开始",
+    "platform_ids": [
+      "20180831_1",
+      "21833",
+      "Z8gTnDY5uMg",
+      "v57cwod-20180831-1.html"
+    ],
+    "source_relationships": "Only the exact public GWINS detail page and concrete outbound platform links exposed by its captured metadata were retained; generic navigation links were excluded.",
+    "deduplication": "Exact detail/media URLs and source_video_id were checked against the current SQLite inventory; no canonical match exists, so the distinct source identity is promoted as LIVE_20180831_001 without date-only merging."
+  },
+  "evidence_artifacts": [
+    "data/source_page_evidence/c2_metadata/C2-REVIEW-SC_GWINS_LIST2_61_20180831_1-R001/8cb6a132e9413304.json"
+  ],
+  "source_raw_sha256": "7abb6048096de688feeeda4dc55eb1bffc6b25f9c08efcc1c44e2054e3c22b9b",
+  "limitations": [
+    "Public HTML metadata, clean text cues, and outbound links only; linked media was not opened or played.",
+    "No media download, ASR, transcript import, timing transfer, segmentation, or later content processing."
+  ],
+  "canonical_promotion_performed": true,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}
+

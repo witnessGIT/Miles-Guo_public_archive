@@ -1,0 +1,50 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_61_20180816_3-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_61_20180816_3",
+  "reviewed_by": "agent-20261004T091647Z-90dd416d",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-09T14:25:23Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20180816_003",
+  "evidence_urls": [
+    "https://www.gwins.org/cn/milesguo/list_2_61.html",
+    "https://www.gwins.org/cn/milesguo/186.html",
+    "https://www.youtube.com/watch?v=KQurOGSQyLg",
+    "https://rumble.com/v57ckgp-20180816-3.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "Exact public GWINS detail page 186 is bound to source video ID 20180816_3; expected identity visible=True.",
+    "date": "Candidate date 2018-08-16 agrees with the source ID and exact detail-page title; no publication time was inferred.",
+    "title": "郭文贵2018年8月16日第三次直播 20180816_3 台湾香港等地区的人民的安全．人权．尊严．经济．受到了严重威胁时有权寻求独立．人权生存权大于主权！（连续二）",
+    "platform_ids": [
+      "20180816_3",
+      "186",
+      "KQurOGSQyLg",
+      "v57ckgp-20180816-3.html"
+    ],
+    "source_relationships": "Only the exact public GWINS detail page and concrete outbound platform links exposed by its captured metadata were retained; generic navigation links were excluded.",
+    "deduplication": "Exact detail/media URLs and source_video_id were checked against the current SQLite inventory; no canonical match exists, so the distinct source identity is promoted as LIVE_20180816_003 without date-only merging."
+  },
+  "evidence_artifacts": [
+    "data/source_page_evidence/c2_metadata/C2-REVIEW-SC_GWINS_LIST2_61_20180816_3-R001/8cb6a132e9413304.json"
+  ],
+  "source_raw_sha256": "61fd5e93af8ccbe5ab91115af4122a1d212bd5ffcdef1ef8f5e3a1388fa41d01",
+  "limitations": [
+    "Public HTML metadata, clean text cues, and outbound links only; linked media was not opened or played.",
+    "No media download, ASR, transcript import, timing transfer, segmentation, or later content processing."
+  ],
+  "canonical_promotion_performed": true,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}
+

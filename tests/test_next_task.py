@@ -523,6 +523,36 @@ class NextTaskSchedulingTests(unittest.TestCase):
             )
             self.assertTrue(claim["review_batch_final_remainder"])
 
+    def test_candidate_review_final_remainder_can_finish(self):
+        for index in range(31):
+            self.write_candidate(f"SC_GWINS_FINAL_{index:03d}")
+
+        batch = next_task.claim_candidate_review_batch(
+            next_task.candidate_review_tasks(), "agent-final"
+        )
+        task_id = batch["task_ids"][0]
+        claim = json.loads(
+            (next_task.CLAIMS / f"{task_id}.json").read_text(encoding="utf-8")
+        )
+        artifact = self.write_review_artifact(
+            task_id, claim["source_candidate_id"], "agent-final"
+        )
+
+        completed_path, marker = next_task.finish_task(
+            task_id=task_id,
+            agent_id="agent-final",
+            outputs=[artifact],
+            validation="identity checked",
+            live_id=None,
+            full_archive_decision=None,
+        )
+        completed = json.loads(completed_path.read_text(encoding="utf-8"))
+
+        self.assertIsNone(marker)
+        self.assertTrue(completed["review_batch_final_remainder"])
+        self.assertEqual(completed["review_batch_target_size"], 31)
+        self.assertEqual(completed["review_batch_claimed_count"], 31)
+
     def test_candidate_review_finish_carries_timeout_metadata(self):
         candidate_id = self.write_candidate()
         task = next_task.candidate_review_tasks()[0]

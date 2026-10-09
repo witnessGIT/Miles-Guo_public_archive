@@ -1,0 +1,51 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_60_20180916_3-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_60_20180916_3",
+  "reviewed_by": "agent-20261004T091647Z-90dd416d",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-09T14:24:57Z",
+  "decision": "rejected_not_target",
+  "canonical_live_id": null,
+  "evidence_urls": [
+    "https://www.gwins.org/cn/milesguo/list_2_60.html",
+    "https://www.gwins.org/cn/milesguo/23677.html",
+    "https://rumble.com/v57gau5-20180916-3.html",
+    "https://odysee.com/@laxi:4/20180916_3:d"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "Exact public GWINS detail page 23677 is bound to source video ID 20180916_3; expected identity visible=True.",
+    "date": "Candidate date 2018-09-16 agrees with the source ID and exact detail-page title; no publication time was inferred.",
+    "title": "郭文贵2018年9月16日视频 20180916_3",
+    "platform_ids": [
+      "20180916_3",
+      "23677",
+      "v57gau5-20180916-3.html",
+      "20180916_3:d"
+    ],
+    "source_relationships": "Only the exact public GWINS detail page and concrete outbound platform links exposed by its captured metadata were retained; generic navigation links were excluded.",
+    "deduplication": "The exact GWINS title and page context identify a standalone recorded video, short clip, or compiled item rather than an original livestream."
+  },
+  "evidence_artifacts": [
+    "data/source_page_evidence/c2_metadata/C2-REVIEW-SC_GWINS_LIST2_60_20180916_3-R001/fbc9946fcca482d5.json"
+  ],
+  "source_raw_sha256": "7a9a66e76f06778fb40e6dce024c8a21b5fbd0fd3ce9cd19bddc19e9ef2673db",
+  "limitations": [
+    "Public HTML metadata, clean text cues, and outbound links only; linked media was not opened or played.",
+    "No media download, ASR, transcript import, timing transfer, segmentation, or later content processing."
+  ],
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false,
+  "rejection_reason": "The exact GWINS title and page context identify a standalone recorded video, short clip, or compiled item rather than an original livestream."
+}
+

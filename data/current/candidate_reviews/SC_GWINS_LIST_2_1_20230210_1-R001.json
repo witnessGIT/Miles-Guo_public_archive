@@ -1,0 +1,50 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST_2_1_20230210_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST_2_1_20230210_1",
+  "reviewed_by": "agent-20261004T091647Z-90dd416d",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-09T14:24:57Z",
+  "decision": "linked_existing_canonical",
+  "canonical_live_id": "LIVE_20230210_001",
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_1.html",
+    "https://www.gwins.org/cn/milesguo/24229.html",
+    "https://gettr.com/post/p27wr6z403e",
+    "https://rumble.com/v5b1ji5-20230210-1.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "Exact public GWINS detail page 24229 is bound to source video ID 20230210_1; expected identity visible=True.",
+    "date": "Candidate date 2023-02-10 agrees with the source ID and exact detail-page title; no publication time was inferred.",
+    "title": "郭文贵2023年2月10日盖特 20230210_1 尊敬的战友们好……习死皇领导的中国共产党在气球事件后，要在经济上有大动作，势要将西方世界打趴在地，他能做到吗？关于A10项目七哥无法一一回复战友们的信息，请大家随时关注联盟和飞",
+    "platform_ids": [
+      "20230210_1",
+      "24229",
+      "p27wr6z403e",
+      "v5b1ji5-20230210-1.html"
+    ],
+    "source_relationships": "Only the exact public GWINS detail page and concrete outbound platform links exposed by its captured metadata were retained; generic navigation links were excluded.",
+    "deduplication": "Exact GWINS page and platform URLs already resolve to LIVE_20230210_001 in the current SQLite inventory; this candidate is linked without creating a second live."
+  },
+  "evidence_artifacts": [
+    "data/source_page_evidence/c2_metadata/C2-REVIEW-SC_GWINS_LIST_2_1_20230210_1-R001/b06701fd50674b6b.json"
+  ],
+  "source_raw_sha256": "63d21bb19b165ba1fc67115c9185fbf968cfd02513de962945dc842393f1e183",
+  "limitations": [
+    "Public HTML metadata, clean text cues, and outbound links only; linked media was not opened or played.",
+    "No media download, ASR, transcript import, timing transfer, segmentation, or later content processing."
+  ],
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}
+

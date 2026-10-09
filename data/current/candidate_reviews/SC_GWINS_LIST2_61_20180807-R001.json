@@ -1,0 +1,50 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_61_20180807-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_61_20180807",
+  "reviewed_by": "agent-20261004T091647Z-90dd416d",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-09T14:25:10Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20180807_001",
+  "evidence_urls": [
+    "https://www.gwins.org/cn/milesguo/list_2_61.html",
+    "https://www.gwins.org/cn/milesguo/181.html",
+    "https://youtu.be/0hfjsD2Od10",
+    "https://rumble.com/v57cf1p-20180807.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "Exact public GWINS detail page 181 is bound to source video ID 20180807; expected identity visible=True.",
+    "date": "Candidate date 2018-08-07 agrees with the source ID and exact detail-page title; no publication time was inferred.",
+    "title": "郭文贵2018年8月7日视频 20180807 王健被杀死前曾接触过其他国家情报部门．并通过香港中间人与文贵有联系！",
+    "platform_ids": [
+      "20180807",
+      "181",
+      "0hfjsD2Od10",
+      "v57cf1p-20180807.html"
+    ],
+    "source_relationships": "Only the exact public GWINS detail page and concrete outbound platform links exposed by its captured metadata were retained; generic navigation links were excluded.",
+    "deduplication": "The captured page transcript starts after a live interruption, records interaction with viewers, and explicitly ends the livestream at 00:24:06. Exact detail/media URLs and source_video_id were checked against the current inventory; LIVE_20180807_001 is distinct from the existing date-scoped 002 and 003 records."
+  },
+  "evidence_artifacts": [
+    "data/source_page_evidence/c2_metadata/C2-REVIEW-SC_GWINS_LIST2_61_20180807-R001/8cb6a132e9413304.json"
+  ],
+  "source_raw_sha256": "a48f26f92da7d198421a33b8b8c31ad74f9a3b22769fec3e9bd7b2b4476a7c74",
+  "limitations": [
+    "Public HTML metadata, clean text cues, and outbound links only; linked media was not opened or played.",
+    "No media download, ASR, transcript import, timing transfer, segmentation, or later content processing."
+  ],
+  "canonical_promotion_performed": true,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}
+
