@@ -1,0 +1,45 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_63_20180510-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_63_20180510",
+  "reviewed_by": "agent-20261006T191453Z-a890f4a8",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-09T00:50:30Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20180510_001",
+  "evidence_urls": [
+    "https://www.gwins.org/cn/milesguo/list_2_63.html",
+    "https://www.gwins.org/cn/milesguo/23681.html",
+    "https://odysee.com/@laxi:4/20180510:1",
+    "https://rumble.com/v578d3x-20180510.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "Exact public GWINS page is bound to candidate SC_GWINS_LIST2_63_20180510 and page/source identifier list_2_63; identity visibility=True.",
+    "date": "Candidate date is 2018-05-10; no publication time was inferred.",
+    "title": "郭文贵2018年5月10日视频 20180510 生日直播，盗国贼不亡，独狼行动不止",
+    "platform_ids": [
+      "20180510",
+      "list_2_63",
+      "@laxi:4/20180510:1",
+      "v578d3x-20180510"
+    ],
+    "source_relationships": "Only exact public page URLs and concrete outbound platform links were retained; generic navigation links were excluded.",
+    "deduplication": "The exact GWINS title explicitly identifies an original livestream."
+  },
+  "source_raw_sha256": "9bb50cbf11edeaa871ed4f738dfca2f19ee0b570607f266354752a50d205af36",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": true,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}

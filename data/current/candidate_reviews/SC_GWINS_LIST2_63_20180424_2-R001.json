@@ -1,0 +1,46 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_63_20180424_2-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_63_20180424_2",
+  "reviewed_by": "agent-20261006T191453Z-a890f4a8",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-09T00:50:30Z",
+  "decision": "rejected_not_target",
+  "canonical_live_id": null,
+  "evidence_urls": [
+    "https://www.gwins.org/cn/milesguo/list_2_63.html",
+    "https://www.gwins.org/cn/milesguo/23635.html",
+    "https://youtu.be/DB5qOoafQNw",
+    "https://rumble.com/v5783gl-20180424-2.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "Exact public GWINS page is bound to candidate SC_GWINS_LIST2_63_20180424_2 and page/source identifier list_2_63; identity visibility=True.",
+    "date": "Candidate date is 2018-04-24; no publication time was inferred.",
+    "title": "郭文贵2018年4月24日视频 20180424_2 Guo Wengui's statement on the Persecution of Mr Zhiyu Chen and Zhiheng Chen by the Chin",
+    "platform_ids": [
+      "20180424_2",
+      "list_2_63",
+      "DB5qOoafQNw",
+      "v5783gl-20180424-2"
+    ],
+    "source_relationships": "Only exact public page URLs and concrete outbound platform links were retained; generic navigation links were excluded.",
+    "deduplication": "The exact GWINS title identifies a standalone GETTR update, short video, or rebroadcast rather than an original livestream."
+  },
+  "source_raw_sha256": "50511527c246f5895266284dff367b7964dac75b1dd6b90aa2240161be6d792b",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false,
+  "rejection_reason": "The exact GWINS title identifies a standalone GETTR update, short video, or rebroadcast rather than an original livestream."
+}

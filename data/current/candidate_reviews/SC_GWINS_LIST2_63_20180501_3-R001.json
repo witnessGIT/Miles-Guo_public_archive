@@ -1,0 +1,45 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_63_20180501_3-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_63_20180501_3",
+  "reviewed_by": "agent-20261006T191453Z-a890f4a8",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-09T00:50:30Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20180501_003",
+  "evidence_urls": [
+    "https://www.gwins.org/cn/milesguo/list_2_63.html",
+    "https://www.gwins.org/cn/milesguo/21787.html",
+    "https://youtu.be/3UwEzRJPFcg",
+    "https://rumble.com/v57858a-20180501-3.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "Exact public GWINS page is bound to candidate SC_GWINS_LIST2_63_20180501_3 and page/source identifier list_2_63; identity visibility=True.",
+    "date": "Candidate date is 2018-05-01; no publication time was inferred.",
+    "title": "郭文贵2018年5月1日直播 20180501_3 郭文贵先生突然进入聊天室，回答网友问答，谈北京盘古双龙戏珠的龙脉设计的内幕",
+    "platform_ids": [
+      "20180501_3",
+      "list_2_63",
+      "3UwEzRJPFcg",
+      "v57858a-20180501-3"
+    ],
+    "source_relationships": "Only exact public page URLs and concrete outbound platform links were retained; generic navigation links were excluded.",
+    "deduplication": "The exact GWINS title explicitly identifies an original livestream."
+  },
+  "source_raw_sha256": "1a1ddaf7cb6283371080ee78edceb03572e989c3f37783b94accfdc5f5bbc663",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": true,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}

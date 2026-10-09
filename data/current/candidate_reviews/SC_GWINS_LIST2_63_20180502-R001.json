@@ -1,0 +1,45 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_63_20180502-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_63_20180502",
+  "reviewed_by": "agent-20261006T191453Z-a890f4a8",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-09T00:50:30Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20180502_001",
+  "evidence_urls": [
+    "https://www.gwins.org/cn/milesguo/list_2_63.html",
+    "https://www.gwins.org/cn/milesguo/163.html",
+    "https://www.youtube.com/watch?v=OlvKJCOzFjs",
+    "https://rumble.com/v5785c5-20180502.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "Exact public GWINS page is bound to candidate SC_GWINS_LIST2_63_20180502 and page/source identifier list_2_63; identity visibility=True.",
+    "date": "Candidate date is 2018-05-02; no publication time was inferred.",
+    "title": "郭文贵2018年5月2日视频 20180502 Instagram 直播 《战友同行》",
+    "platform_ids": [
+      "20180502",
+      "list_2_63",
+      "OlvKJCOzFjs",
+      "v5785c5-20180502"
+    ],
+    "source_relationships": "Only exact public page URLs and concrete outbound platform links were retained; generic navigation links were excluded.",
+    "deduplication": "The exact GWINS title explicitly identifies an original livestream."
+  },
+  "source_raw_sha256": "a21b36fe8afda5c24281fcc16ab9cb51a689bfb4922a649328cdd8e35b63224c",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": true,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}

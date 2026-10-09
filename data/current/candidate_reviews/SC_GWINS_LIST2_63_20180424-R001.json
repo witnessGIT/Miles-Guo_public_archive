@@ -1,0 +1,46 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_63_20180424-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_63_20180424",
+  "reviewed_by": "agent-20261006T191453Z-a890f4a8",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-09T00:50:30Z",
+  "decision": "rejected_not_target",
+  "canonical_live_id": null,
+  "evidence_urls": [
+    "https://www.gwins.org/cn/milesguo/list_2_63.html",
+    "https://www.gwins.org/cn/milesguo/159.html",
+    "https://www.youtube.com/watch?v=n2AQUbNlc6k",
+    "https://rumble.com/v5783wl-20180424.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "Exact public GWINS page is bound to candidate SC_GWINS_LIST2_63_20180424 and page/source identifier list_2_63; identity visibility=True.",
+    "date": "Candidate date is 2018-04-24; no publication time was inferred.",
+    "title": "郭文贵2018年4月24日视频 20180424 在重庆公安认罪的陈氏兄弟是现任常委秘书的家人！ 《战友同行》",
+    "platform_ids": [
+      "20180424",
+      "list_2_63",
+      "n2AQUbNlc6k",
+      "v5783wl-20180424"
+    ],
+    "source_relationships": "Only exact public page URLs and concrete outbound platform links were retained; generic navigation links were excluded.",
+    "deduplication": "The exact GWINS title identifies a standalone GETTR update, short video, or rebroadcast rather than an original livestream."
+  },
+  "source_raw_sha256": "a9a7641016b80094e8704e9e9982096263d166c8d62d35171d6dbd04eba353b8",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false,
+  "rejection_reason": "The exact GWINS title identifies a standalone GETTR update, short video, or rebroadcast rather than an original livestream."
+}
