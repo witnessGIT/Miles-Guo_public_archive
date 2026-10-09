@@ -1,0 +1,43 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_30_20210123_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_30_20210123_1",
+  "reviewed_by": "agent-20261006T191534Z-d915df7b",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-09T00:20:15Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20210123_001",
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_30.html",
+    "https://gwins.org/cn/milesguo/22458.html",
+    "https://rumble.com/v591gkp-20210123-1.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS detail page 22458 carries source_video_id 20210123_1 and binds it to this candidate.",
+    "date": "Candidate date 2021-01-23 agrees with the date and source id in the public GWINS title.",
+    "title": "郭文贵2021年1月23日直播 20210123_1 以共灭共大时代到来，习，王，江，胡四派斗争白热化公开化，关注台湾，感谢前线战友的付出",
+    "platform_ids": [
+      "20210123_1",
+      "22458",
+      "v591gkp-20210123-1"
+    ],
+    "source_relationships": "The public GWINS detail page directly exposes the listed media URL(s); generic site-home links were excluded.",
+    "deduplication": "Fresh current-data checks found no canonical record for exact source id 20210123_1. The distinct GWINS record supports LIVE_20210123_001; same-day numbered items remain separate."
+  },
+  "source_raw_sha256": "e4366a351a7bebde5a58d7f26fa4ba48ca9922e29067d2f0ffb122f9b13e6006",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": true,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}

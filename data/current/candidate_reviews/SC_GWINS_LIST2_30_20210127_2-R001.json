@@ -1,0 +1,46 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_30_20210127_2-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_30_20210127_2",
+  "reviewed_by": "agent-20261006T191534Z-d915df7b",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-09T00:20:15Z",
+  "decision": "rejected_not_target",
+  "canonical_live_id": null,
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_30.html",
+    "https://gwins.org/cn/milesguo/22474.html",
+    "https://youtu.be/htxaH2YCoDw",
+    "https://rumble.com/v592ip9-20210127-2.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS detail page 22474 carries source_video_id 20210127_2 and binds it to this candidate.",
+    "date": "Candidate date 2021-01-27 agrees with the date and source id in the public GWINS title.",
+    "title": "郭文贵2021年1月27日盖特 20210127_2 全球联合灭共……全球为了自己的生存，必须灭共……和爆料革命新联邦中国的联合灭共．将是世界正义的力量！和政治安全必然的结果……共产党你完了！",
+    "platform_ids": [
+      "20210127_2",
+      "22474",
+      "htxaH2YCoDw",
+      "v592ip9-20210127-2"
+    ],
+    "source_relationships": "The public GWINS detail page directly exposes the listed media URL(s); generic site-home links were excluded.",
+    "deduplication": "Compared exact source id, date, title, detail page, and platform IDs within current data; retained as a distinct non-livestream candidate without canonical-live promotion."
+  },
+  "source_raw_sha256": "f1775a1652b2bcea98554b220b3fb4e0bbf4e485bf82e7d43e24f480ceb26aea",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false,
+  "rejection_reason": "The exact GWINS title identifies a standalone video, interview, Gettr update, or other non-livestream record; it is preserved without canonical livestream promotion."
+}

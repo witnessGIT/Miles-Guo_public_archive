@@ -1,0 +1,43 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_30_20210125_2-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_30_20210125_2",
+  "reviewed_by": "agent-20261006T191534Z-d915df7b",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-09T00:20:15Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20210125_002",
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_30.html",
+    "https://gwins.org/cn/milesguo/22470.html",
+    "https://rumble.com/v5925v9-20210125-2.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS detail page 22470 carries source_video_id 20210125_2 and binds it to this candidate.",
+    "date": "Candidate date 2021-01-25 agrees with the date and source id in the public GWINS title.",
+    "title": "郭文贵2021年1月25日直播 20210125_2 中共一定会实施双龙计划，统战台湾！中国东北的疫情比我们想象的严重得多！孙力军已被送到秦城监狱！",
+    "platform_ids": [
+      "20210125_2",
+      "22470",
+      "v5925v9-20210125-2"
+    ],
+    "source_relationships": "The public GWINS detail page directly exposes the listed media URL(s); generic site-home links were excluded.",
+    "deduplication": "Fresh current-data checks found no canonical record for exact source id 20210125_2. The distinct GWINS record supports LIVE_20210125_002; same-day numbered items remain separate."
+  },
+  "source_raw_sha256": "370773c03ab9ea816e9ec7d87f6910a6766d97954d4dbaaa3550140816d2fc09",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": true,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}
