@@ -1,0 +1,18 @@
+{
+  "task_id": "WI_LIVE_20220908_001_metadata_fill",
+  "agent_id": "agent-20261004T091647Z-90dd416d",
+  "completed_at": "2026-10-09T17:25:26.944291+00:00",
+  "result_commit": "773b62b41bdd06e2955be82f30c0949c4ef014ca",
+  "outputs": [
+    "data/current/live_videos/c2_review_gwins_list_2_6_batch1.jsonl",
+    "data/current/sources/c2_review_gwins_list_2_6_batch1.jsonl",
+    "data/current/media_assets/c2_review_gwins_list_2_6_batch1.jsonl"
+  ],
+  "validation": "Public GETTR and Rumble metadata independently verified; matching 597-second duration and 1920x1080 dimensions recorded, GETTR publication time and codecs plus Rumble 30 FPS preserved; no playback verification claimed; database validation OK with zero warnings.",
+  "workflow_mode": "continuous-worker-v2",
+  "claim_protocol": "claim-protocol-v2",
+  "entry_mode": "work",
+  "continue_after_finish": true,
+  "finish_prerequisites_revalidated": true,
+  "notes": "Task completed only after re-checking the latest repository dependency contract. Under continuous-worker-v2, refresh repository state and claim the next eligible task unless a documented stop condition applies."
+}
