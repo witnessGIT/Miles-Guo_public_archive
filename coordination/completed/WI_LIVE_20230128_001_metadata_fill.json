@@ -1,0 +1,18 @@
+{
+  "task_id": "WI_LIVE_20230128_001_metadata_fill",
+  "agent_id": "agent-20261004T091647Z-90dd416d",
+  "completed_at": "2026-10-09T16:03:23.798503+00:00",
+  "result_commit": "ebe79e5bacfa6f74c84250ea766abf9d7d768025",
+  "outputs": [
+    "data/current/live_videos/c2_review_20230128_1.json",
+    "data/current/sources/c2_review_20230128_1.jsonl",
+    "data/current/media_assets/metadata_fill_20230128_1.jsonl"
+  ],
+  "validation": "Public GWINS detail evidence exposed exact GETTR and Rumble locators; public extractor metadata from both platforms agreed on a 515-second 1920x1080 asset. GETTR supplied publication time and audio/video codecs; Rumble supplied 30 FPS. No download or playback verification was claimed. Database validation passed with zero warnings.",
+  "workflow_mode": "continuous-worker-v2",
+  "claim_protocol": "claim-protocol-v2",
+  "entry_mode": "work",
+  "continue_after_finish": true,
+  "finish_prerequisites_revalidated": true,
+  "notes": "Task completed only after re-checking the latest repository dependency contract. Under continuous-worker-v2, refresh repository state and claim the next eligible task unless a documented stop condition applies."
+}
