@@ -1,0 +1,18 @@
+{
+  "task_id": "WI_LIVE_20200830_001_metadata_fill",
+  "agent_id": "agent-20261004T091647Z-90dd416d",
+  "completed_at": "2026-10-09T17:27:14.615910+00:00",
+  "result_commit": "abe9295fa331ceedc5f403354b622d9d4b5472c5",
+  "outputs": [
+    "data/current/live_videos/c2_review_gwins_list_2_35_batch_56ce8649.jsonl",
+    "data/current/sources/c2_review_gwins_list_2_35_batch_56ce8649.jsonl",
+    "data/current/media_assets/c2_review_gwins_list_2_35_batch_56ce8649.jsonl"
+  ],
+  "validation": "GWINS identity retained; public YouTube check reports the video unavailable and the Rumble locator did not expose usable metadata after redirect. Source and asset states recorded conservatively without inventing duration or media properties; no playback verification claimed; database validation OK with zero warnings.",
+  "workflow_mode": "continuous-worker-v2",
+  "claim_protocol": "claim-protocol-v2",
+  "entry_mode": "work",
+  "continue_after_finish": true,
+  "finish_prerequisites_revalidated": true,
+  "notes": "Task completed only after re-checking the latest repository dependency contract. Under continuous-worker-v2, refresh repository state and claim the next eligible task unless a documented stop condition applies."
+}
