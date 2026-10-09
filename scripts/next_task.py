@@ -530,7 +530,9 @@ def print_candidate_review_summary() -> None:
             print(f"    - {row['candidate_id']}{suffix}")
 
 
-def live_work_item_tasks(done: set[str]) -> list[dict]:
+def live_work_item_tasks(
+    done: set[str], blocked: set[str] | None = None
+) -> list[dict]:
     workflow = load_workflow()
     if workflow.get("current_major_phase") == "PHASE_1_COLLECTION":
         if has_unfinished_source_boundaries() or not task_completed("C2-CANDIDATE-PROMOTION"):
@@ -539,7 +541,8 @@ def live_work_item_tasks(done: set[str]) -> list[dict]:
     tasks: list[dict] = []
     for item in iter_current_records("live_work_items"):
         item_id = str(item.get("id") or "")
-        if not item_id or item_id in done or task_completed(item_id) or claim_blocks_task(item_id):
+        is_blocked = item_id in blocked if blocked is not None else claim_blocks_task(item_id)
+        if not item_id or item_id in done or is_blocked:
             continue
         if str(item.get("work_status") or "open") != "open":
             continue
@@ -561,13 +564,16 @@ def live_work_item_tasks(done: set[str]) -> list[dict]:
     return tasks
 
 
-def source_boundary_tasks(done: set[str]) -> list[dict]:
+def source_boundary_tasks(
+    done: set[str], blocked: set[str] | None = None
+) -> list[dict]:
     tasks: list[dict] = []
     for item in iter_current_records("source_boundaries"):
         item_id = str(item.get("task_id") or item.get("id") or "")
         if not item_id:
             continue
-        if item_id in done or task_completed(item_id) or claim_blocks_task(item_id):
+        is_blocked = item_id in blocked if blocked is not None else claim_blocks_task(item_id)
+        if item_id in done or is_blocked:
             continue
         if str(item.get("status") or "open").lower() not in {"open", "in_progress"}:
             continue
@@ -689,6 +695,22 @@ def claim_blocks_task(task_id: str) -> bool:
             continue
         return True
     return False
+
+
+def blocking_claim_ids() -> set[str]:
+    blocked: set[str] = set()
+    if not CLAIMS.exists():
+        return blocked
+    for path in CLAIMS.glob("*.json"):
+        payload = load_json_path(path)
+        if not payload:
+            continue
+        task_id = str(payload.get("task_id") or path.stem)
+        status = str(payload.get("status") or "in_progress").lower()
+        if status in NON_BLOCKING_CLAIM_STATUSES or claim_expired(payload):
+            continue
+        blocked.add(task_id)
+    return blocked
 
 
 def completed_ids() -> set[str]:
@@ -890,7 +912,7 @@ def task_is_superseded(task: dict) -> bool:
     )
 
 
-def static_tasks(done: set[str]) -> list[dict]:
+def static_tasks(done: set[str], blocked: set[str] | None = None) -> list[dict]:
     eligible: list[dict] = []
     workflow = load_workflow()
     phase1_collection = workflow.get("current_major_phase") == "PHASE_1_COLLECTION"
@@ -901,9 +923,10 @@ def static_tasks(done: set[str]) -> list[dict]:
             continue
         if phase1_collection and collection_still_open and task_id in PHASE_1_LOCKED_STATIC_TASKS:
             continue
-        if task_id in done or task_completed(task_id):
+        if task_id in done:
             continue
-        if claim_blocks_task(task_id):
+        is_blocked = task_id in blocked if blocked is not None else claim_blocks_task(task_id)
+        if is_blocked:
             continue
         if any(dep not in done for dep in task.get("depends_on", [])):
             continue
@@ -913,13 +936,14 @@ def static_tasks(done: set[str]) -> list[dict]:
 
 def eligible_tasks() -> list[dict]:
     done = completed_ids()
+    blocked = blocking_claim_ids()
     workflow = load_workflow()
     legacy_stream_enabled = workflow.get("current_major_phase") != "PHASE_1_COLLECTION"
     tasks = (
-        source_boundary_tasks(done)
+        source_boundary_tasks(done, blocked)
         + candidate_review_tasks()
-        + live_work_item_tasks(done)
-        + static_tasks(done)
+        + live_work_item_tasks(done, blocked)
+        + static_tasks(done, blocked)
     )
     if legacy_stream_enabled:
         tasks.extend(stream_tasks(done))
@@ -932,9 +956,9 @@ def eligible_tasks() -> list[dict]:
         if task_id in seen:
             continue
         seen.add(task_id)
-        if task_id in done or task_completed(task_id):
+        if task_id in done:
             continue
-        if claim_blocks_task(task_id):
+        if task_id in blocked:
             continue
         filtered.append(task)
     filtered.sort(key=lambda item: (-int(item.get("priority", 0)), item["id"]))

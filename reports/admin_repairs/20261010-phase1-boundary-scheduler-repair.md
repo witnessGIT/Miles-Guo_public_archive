@@ -23,10 +23,14 @@ the aggregate C2 task remained locked after the underlying work was complete.
   active claim blocks them, allowing the normal expired-claim reclaim path to run.
 - Regression tests cover both completed-open boundaries and reclaimable orphaned
   in-progress boundaries.
+- Queue discovery now builds the completed-task and blocking-claim indexes once.
+  This avoids rescanning every claim for every generated live work item after C3
+  expands the queue to full-archive scale.
 
 ## Validation
 
 - Full unit suite: 100 tests pass with local `ffmpeg` and `ffprobe`; no skips.
 - `C1-GWINS-detail-24263` becomes the next eligible task and can be reclaimed
   through Claim Protocol v2.
-
+- With 17,500 generated live work items, `next_task.py --list` completes in about
+  two seconds instead of stalling in repeated claim-directory scans.
