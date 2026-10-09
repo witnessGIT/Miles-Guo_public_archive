@@ -1,0 +1,45 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_62_20180613_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_62_20180613_1",
+  "reviewed_by": "agent-20261006T191453Z-a890f4a8",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-09T00:50:21Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20180613_001",
+  "evidence_urls": [
+    "https://www.gwins.org/cn/milesguo/list_2_62.html",
+    "https://www.gwins.org/cn/milesguo/21797.html",
+    "https://youtu.be/ZpZtB1Lw3q0",
+    "https://rumble.com/v578gde-20180613-1.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "Exact public GWINS page is bound to candidate SC_GWINS_LIST2_62_20180613_1 and page/source identifier list_2_62; identity visibility=True.",
+    "date": "Candidate date is 2018-06-13; no publication time was inferred.",
+    "title": "郭文贵2018年6月13日直播 20180613_1 郭战装与什么是习主席的政治轮轴效应！",
+    "platform_ids": [
+      "20180613_1",
+      "list_2_62",
+      "ZpZtB1Lw3q0",
+      "v578gde-20180613-1"
+    ],
+    "source_relationships": "Only exact public page URLs and concrete outbound platform links were retained; generic navigation links were excluded.",
+    "deduplication": "The exact GWINS title explicitly identifies an original livestream."
+  },
+  "source_raw_sha256": "a405c916e1090d2147c1b904080174e9f951121b4d4b361c1466af0d6c0f7014",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": true,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}

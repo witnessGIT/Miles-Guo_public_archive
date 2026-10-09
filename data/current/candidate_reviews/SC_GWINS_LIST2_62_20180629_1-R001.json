@@ -1,0 +1,45 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_62_20180629_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_62_20180629_1",
+  "reviewed_by": "agent-20261006T191453Z-a890f4a8",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-09T00:50:21Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20180629_001",
+  "evidence_urls": [
+    "https://www.gwins.org/cn/milesguo/list_2_62.html",
+    "https://www.gwins.org/cn/milesguo/21803.html",
+    "https://youtu.be/4agxei2B3cQ",
+    "https://rumble.com/v578i59-20180629-1.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "Exact public GWINS page is bound to candidate SC_GWINS_LIST2_62_20180629_1 and page/source identifier list_2_62; identity visibility=True.",
+    "date": "Candidate date is 2018-06-29; no publication time was inferred.",
+    "title": "郭文贵2018年6月29日直播 20180629_1 谈刘刚与屎诺．王岐山与错功胜为什么救海航！",
+    "platform_ids": [
+      "20180629_1",
+      "list_2_62",
+      "4agxei2B3cQ",
+      "v578i59-20180629-1"
+    ],
+    "source_relationships": "Only exact public page URLs and concrete outbound platform links were retained; generic navigation links were excluded.",
+    "deduplication": "The exact GWINS title explicitly identifies an original livestream."
+  },
+  "source_raw_sha256": "33585c4aed75f4f132b86a3e811c61a49eebff86e08e2ce4c2275d5f460194e3",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": true,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}

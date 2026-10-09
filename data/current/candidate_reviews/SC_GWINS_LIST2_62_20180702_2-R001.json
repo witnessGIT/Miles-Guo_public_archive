@@ -1,0 +1,45 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_62_20180702_2-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_62_20180702_2",
+  "reviewed_by": "agent-20261006T191453Z-a890f4a8",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-09T00:50:21Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20180702_002",
+  "evidence_urls": [
+    "https://www.gwins.org/cn/milesguo/list_2_62.html",
+    "https://www.gwins.org/cn/milesguo/21806.html",
+    "https://youtu.be/hDH5s6hHmxk",
+    "https://rumble.com/v57b9q5-20180702-2.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "Exact public GWINS page is bound to candidate SC_GWINS_LIST2_62_20180702_2 and page/source identifier list_2_62; identity visibility=True.",
+    "date": "Candidate date is 2018-07-02; no publication time was inferred.",
+    "title": "郭文贵2018年7月2日直播 20180702_2 路德访谈约翰小哥時文貴之講話",
+    "platform_ids": [
+      "20180702_2",
+      "list_2_62",
+      "hDH5s6hHmxk",
+      "v57b9q5-20180702-2"
+    ],
+    "source_relationships": "Only exact public page URLs and concrete outbound platform links were retained; generic navigation links were excluded.",
+    "deduplication": "The exact GWINS title explicitly identifies an original livestream."
+  },
+  "source_raw_sha256": "21e1201dfc7bea7b6a82804b5f4ebd1369ca974c2c3aace80e5ceefc0a154202",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": true,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}
