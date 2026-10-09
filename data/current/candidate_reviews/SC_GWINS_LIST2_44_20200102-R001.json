@@ -1,0 +1,46 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_44_20200102-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_44_20200102",
+  "reviewed_by": "agent-20261006T191453Z-a890f4a8",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-09T00:49:28Z",
+  "decision": "rejected_not_target",
+  "canonical_live_id": null,
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_44.html",
+    "https://gwins.org/cn/milesguo/1077.html",
+    "https://odysee.com/@laxi:4/20200102:1",
+    "https://rumble.com/v57yz3u-20200102.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "Exact public GWINS page is bound to candidate SC_GWINS_LIST2_44_20200102 and page/source identifier list_2_44; identity visibility=True.",
+    "date": "Candidate date is 2020-01-02; no publication time was inferred.",
+    "title": "郭文贵2020年1月2日 20200102 聊自己的人生和武汉的非典 为战友终生戒吃牛肉！",
+    "platform_ids": [
+      "20200102",
+      "list_2_44",
+      "@laxi:4/20200102:1",
+      "v57yz3u-20200102"
+    ],
+    "source_relationships": "Only exact public page URLs and concrete outbound platform links were retained; generic navigation links were excluded.",
+    "deduplication": "The exact GWINS title identifies a standalone GETTR update, short video, or rebroadcast rather than an original livestream."
+  },
+  "source_raw_sha256": "84fadbd76afa1a8ab94c21ee85798b1828fb88354bbefbe53117b3902c44bc39",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false,
+  "rejection_reason": "The exact GWINS title identifies a standalone GETTR update, short video, or rebroadcast rather than an original livestream."
+}
