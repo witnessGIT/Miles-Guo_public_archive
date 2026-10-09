@@ -1,6 +1,6 @@
 {
   "bug_id": "BUG_20261005T001037Z_C1-GWINS-detail-24203_c2-duplicate-youtube-id",
-  "status": "open",
+  "status": "resolved",
   "requires_admin": true,
   "created_at": "2026-10-05T00:10:37Z",
   "reported_by_agent": "agent-20261005T0008Z-gpt56sol-gwins-24203",
@@ -31,5 +31,12 @@
     "data/current/media_assets/c2_review_20200711_1.jsonl",
     "data/current/media_assets/c2_review_20200711_2.jsonl"
   ],
-  "worker_action": "Did not edit another agent's active C2 outputs. C1 task remains in_progress until repository build becomes clean, then its validation should be rerun."
+  "worker_action": "Did not edit another agent's active C2 outputs. C1 task remains in_progress until repository build becomes clean, then its validation should be rerun.",
+  "admin_resolution": {
+    "resolved_at": "2026-10-09T14:30:00Z",
+    "resolved_by_login": "witnessGIT",
+    "repair_commits": ["f478b260", "d59db383"],
+    "result": "The shared YouTube locator is retained once as canonical deduplication evidence and no duplicate internal source or media-asset ID remains.",
+    "verification": "Current-tree census finds one SRC_YOUTUBE_WJ9TK9ZNEKE and one MA_YOUTUBE_WJ9TK9ZNEKE; build_db and validate_db pass."
+  }
 }

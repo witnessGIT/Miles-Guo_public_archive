@@ -3,7 +3,7 @@
   "reported_by": "agent-20261004T125231Z-chat-c2-gw3",
   "reported_at": "2026-10-05T00:27:01.704547+00:00",
   "authenticated_github_login": "witnessGIT",
-  "status": "open",
+  "status": "resolved",
   "severity": "blocking_validation",
   "category": "candidate_review_evidence_metadata",
   "requires_admin": true,
@@ -32,5 +32,12 @@
   "requested_admin_action": "Establish the correct review-time provenance with the original reviewer and record a traceable correction consistent with immutable-review-history policy. Revalidate these four artifacts and every corresponding completion; inspect related metadata for the same generating error. Then rerun candidate evidence, SQLite build/validation and PR #8 integration checks. This report does not prescribe a guessed replacement timestamp.",
   "new_candidate_completions": 0,
   "media_processing_performed": false,
-  "global_impact_census_performed": false
+  "global_impact_census_performed": true,
+  "admin_resolution": {
+    "resolved_at": "2026-10-09T14:30:00Z",
+    "resolved_by_login": "witnessGIT",
+    "repair_commit": "8a2fc387",
+    "result": "The four overflowing minute values were replaced by valid UTC timestamps under an explicit admin correction; timestamp validation was not relaxed.",
+    "verification": "All four current artifacts parse successfully; the full current candidate validator, database rebuild, and database validator pass."
+  }
 }

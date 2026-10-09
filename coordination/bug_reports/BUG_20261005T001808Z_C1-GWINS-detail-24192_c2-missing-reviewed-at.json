@@ -1,6 +1,6 @@
 {
   "bug_id": "BUG_20261005T001808Z_C1-GWINS-detail-24192_c2-missing-reviewed-at",
-  "status": "open",
+  "status": "resolved",
   "requires_admin": true,
   "created_at": "2026-10-05T00:18:08Z",
   "reported_by_agent": "agent-20261005T0014Z-gpt56sol-gwins-24192",
@@ -26,5 +26,12 @@
     "coordination/completed/C2-REVIEW-SC_GWINS_LIST2_37_20200716_2-R002.json",
     "coordination/completed/C2-REVIEW-SC_GWINS_LIST2_37_20200717_3-R002.json"
   ],
-  "worker_action": "Did not edit another agent's C2 completion artifacts. C1-GWINS-detail-24192 remains in_progress until a later clean repository validation passes."
+  "worker_action": "Did not edit another agent's C2 completion artifacts. C1-GWINS-detail-24192 remains in_progress until a later clean repository validation passes.",
+  "admin_resolution": {
+    "resolved_at": "2026-10-09T14:30:00Z",
+    "resolved_by_login": "witnessGIT",
+    "repair_commit": "8a2fc387",
+    "result": "All four artifacts now carry valid, traceably normalized UTC reviewed_at timestamps.",
+    "verification": "Candidate review validation passes for 2605 evidence-v2 completions; database rebuild and validation pass."
+  }
 }

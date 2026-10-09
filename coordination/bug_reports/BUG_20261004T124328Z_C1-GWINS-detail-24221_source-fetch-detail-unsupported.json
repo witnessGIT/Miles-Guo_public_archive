@@ -1,6 +1,6 @@
 {
   "bug_id": "BUG_20261004T124328Z_C1-GWINS-detail-24221_source-fetch-detail-unsupported",
-  "status": "open",
+  "status": "resolved",
   "requires_admin": true,
   "created_at": "2026-10-04T12:43:28.177Z",
   "reported_by_agent": "agent-20261004T1235Z-gpt56sol-gwins-24221",
@@ -25,5 +25,12 @@
     "coordination/source_fetch_requests/C1-GWINS-detail-24221/",
     "coordination/source_fetch_requests/C1-GWINS-detail-24253/"
   ],
-  "suggested_admin_review": "Either prevent detail-page tasks from submitting this service request, add a supported detail-page adapter, or make the service skip/reject unsupported historical requests without poisoning every queue scan."
+  "suggested_admin_review": "Either prevent detail-page tasks from submitting this service request, add a supported detail-page adapter, or make the service skip/reject unsupported historical requests without poisoning every queue scan.",
+  "admin_resolution": {
+    "resolved_at": "2026-10-09T14:30:00Z",
+    "resolved_by_login": "witnessGIT",
+    "commit": "de323d11",
+    "result": "Safe, exact-identity numeric GWINS detail requests are classified as unsupported for the list-page adapter and skipped successfully by both processing and finalization; malformed or mismatched URLs still fail closed.",
+    "verification": "Both historical 24221 and 24253 requests returned successful skip results; focused tests, candidate validation, database rebuild, and database validation passed."
+  }
 }
