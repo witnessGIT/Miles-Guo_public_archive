@@ -143,6 +143,7 @@ jobs:
         run: |
           PYTHONPATH=scripts python - <<'PY'
           import project_status as ps
+          ps.load_workflow = lambda: {'current_major_phase': 'PILOT'}
           ps.next_task.eligible_tasks = lambda: []
           ps.playback_queue.case_statuses = lambda: [{
               'task_id': 'P9-PLAYBACK-PILOT-X001',
@@ -176,6 +177,7 @@ jobs:
         run: |
           PYTHONPATH=scripts python - <<'PY'
           import project_status as ps
+          ps.load_workflow = lambda: {'current_major_phase': 'PILOT'}
           ps.next_task.eligible_tasks = lambda: []
           ps.playback_queue.case_statuses = lambda: [{
               'task_id': 'P9-PLAYBACK-PILOT-X001', 'case_id': 'PILOT-X001',
@@ -205,6 +207,7 @@ jobs:
         run: |
           PYTHONPATH=scripts python - <<'PY'
           import project_status as ps
+          ps.load_workflow = lambda: {'current_major_phase': 'PILOT'}
           ps.next_task.eligible_tasks = lambda: []
           ps.playback_queue.case_statuses = lambda: [{
               'task_id': 'P9-PLAYBACK-PILOT-X001', 'case_id': 'PILOT-X001',
