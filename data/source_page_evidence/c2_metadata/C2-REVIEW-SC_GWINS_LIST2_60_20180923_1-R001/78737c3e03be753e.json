@@ -1,0 +1,70 @@
+{
+  "evidence_version": "c2-metadata-evidence-v1",
+  "request_sha256": "78737c3e03be753ea38da036749f3727e0d0e969dcc3cc52cd9387c22a2f4512",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_60_20180923_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_60_20180923_1",
+  "agent_id": "agent-20261004T091647Z-90dd416d",
+  "requested_url": "https://www.gwins.org/cn/milesguo/21856.html",
+  "fetched_at": "2026-10-09T14:23:03.676380+00:00",
+  "review_decision": null,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "source_text_imported": false,
+  "status": "fetched",
+  "http_status": 200,
+  "final_url": "https://www.gwins.org/cn/milesguo/21856.html",
+  "raw_bytes": 11176,
+  "raw_sha256": "4a23e6c842cb704c92d95c1d380caab298f03fdda1f7e1c52574e4720bb23c0d",
+  "metadata_evidence": {
+    "page_title": "郭文贵2018年9月23日视频 20180923_1天下所有人都能中秋快樂 團圓",
+    "metadata": {
+      "description": "以下是茅屎坑战友没校对前的内容。  尊敬的战友们好，你们健身了吧，今天又是中秋节了，首先我在此衷心的祝所有的战友们中秋快乐，20。12年18个常委都选出来，以后王岐"
+    },
+    "decoding": {
+      "codec": "utf-8",
+      "strict": false,
+      "replacement_count": 17,
+      "title_clean": true,
+      "warning": "Damaged fields are not reliable; clean excerpts only. Missing cues are not absence evidence."
+    },
+    "expected_source_video_id": "20180923_1",
+    "expected_id_visible": true,
+    "outbound_links": [
+      "https://youtu.be/SrrjGZU9mL8",
+      "https://rumble.com/v57gc1g-20180923-1.html",
+      "https://gettr.com/"
+    ],
+    "identity_type_cues": [
+      {
+        "paragraph_index": 0,
+        "excerpt": "郭文贵2018年9月23日视频 20180923_1天下所有人都能中秋快樂 團圓"
+      },
+      {
+        "paragraph_index": 2,
+        "excerpt": "郭文贵视频"
+      },
+      {
+        "paragraph_index": 10,
+        "excerpt": "郭文贵2018年9月23日视频 20180923_1"
+      },
+      {
+        "paragraph_index": 12,
+        "excerpt": "郭文贵2018年9月23日视频 20180923_1 天下所有人都能中秋快樂 團圓"
+      },
+      {
+        "paragraph_index": 20,
+        "excerpt": "视频链接：https://youtu.be/SrrjGZU9mL8"
+      },
+      {
+        "paragraph_index": 21,
+        "excerpt": "视频链接2：https://rumble.com/v57gc1g-20180923-1.html"
+      },
+      {
+        "paragraph_index": 28,
+        "excerpt": "月饼，吃的发自内心的月饼，愿我们所有的同胞们都能。我和所有的人，很快我们在北京盘古路盘古大观龙头下去，谢谢这样的支持，我一周以后再录视频。从今天起我可能只发文字信息，甚至是文字性的不发，请大家不要担心，祝大家中秋快乐，一切都是刚刚开始，谢谢。"
+      }
+    ],
+    "cue_profile": "origin-context-v2",
+    "cue_warning": "Excerpts may discuss other recordings; a reviewer must resolve context. No automatic type decision."
+  }
+}

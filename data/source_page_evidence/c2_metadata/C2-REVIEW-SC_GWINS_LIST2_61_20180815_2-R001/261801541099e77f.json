@@ -1,0 +1,64 @@
+{
+  "evidence_version": "c2-metadata-evidence-v1",
+  "request_sha256": "261801541099e77f1f4334857c7aaf116e2c8227e95a9a3ae1f875d64f1be9c2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_61_20180815_2-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_61_20180815_2",
+  "agent_id": "agent-20261004T091647Z-90dd416d",
+  "requested_url": "https://www.gwins.org/cn/milesguo/23619.html",
+  "fetched_at": "2026-10-09T14:23:14.641394+00:00",
+  "review_decision": null,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "source_text_imported": false,
+  "status": "fetched",
+  "http_status": 200,
+  "final_url": "https://www.gwins.org/cn/milesguo/23619.html",
+  "raw_bytes": 9629,
+  "raw_sha256": "bd5e57f5fd935872e18cf36b7ea54d302609260d7696efba386bbe38f69c6d78",
+  "metadata_evidence": {
+    "page_title": "郭文贵2018年8月15日视频 20180815_2做平板撑 坚持才能胜利！",
+    "metadata": {},
+    "decoding": {
+      "codec": "utf-8",
+      "strict": false,
+      "replacement_count": 17,
+      "title_clean": true,
+      "warning": "Damaged fields are not reliable; clean excerpts only. Missing cues are not absence evidence."
+    },
+    "expected_source_video_id": "20180815_2",
+    "expected_id_visible": true,
+    "outbound_links": [
+      "https://youtu.be/elBNw1jIBHY",
+      "https://rumble.com/v57cjz1-20180815-2.html",
+      "https://gettr.com/"
+    ],
+    "identity_type_cues": [
+      {
+        "paragraph_index": 0,
+        "excerpt": "郭文贵2018年8月15日视频 20180815_2做平板撑 坚持才能胜利！"
+      },
+      {
+        "paragraph_index": 2,
+        "excerpt": "郭文贵视频"
+      },
+      {
+        "paragraph_index": 10,
+        "excerpt": "郭文贵2018年8月15日视频 20180815_2"
+      },
+      {
+        "paragraph_index": 12,
+        "excerpt": "郭文贵2018年8月15日视频 20180815_2 做平板撑 坚持才能胜利！"
+      },
+      {
+        "paragraph_index": 20,
+        "excerpt": "视频链接：https://youtu.be/elBNw1jIBHY"
+      },
+      {
+        "paragraph_index": 21,
+        "excerpt": "视频链接2：https://rumble.com/v57cjz1-20180815-2.html"
+      }
+    ],
+    "cue_profile": "origin-context-v2",
+    "cue_warning": "Excerpts may discuss other recordings; a reviewer must resolve context. No automatic type decision."
+  }
+}
