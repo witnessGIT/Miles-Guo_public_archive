@@ -1,0 +1,46 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_34_20201009-R002",
+  "source_candidate_id": "SC_GWINS_LIST2_34_20201009",
+  "reviewed_by": "agent-20261006T191534Z-d915df7b",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-09T00:21:30Z",
+  "decision": "rejected_not_target",
+  "canonical_live_id": null,
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_34.html",
+    "https://gwins.org/cn/milesguo/19592.html",
+    "https://youtu.be/4ZDlwKB1Ejc",
+    "https://rumble.com/v58tpdu-20201009.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS detail page 19592 carries source_video_id 20201009 and binds it to this candidate.",
+    "date": "Candidate date 2020-10-09 agrees with the date and source id in the public GWINS title.",
+    "title": "郭文贵2020年10月9日盖特 20201009 尊敬的战友们好……任何事情，只要依法做事，没有任何人可以伤害我们——我们要绝对的相信美国的司法系统！在美国的法律面前绝对人人",
+    "platform_ids": [
+      "20201009",
+      "19592",
+      "4ZDlwKB1Ejc",
+      "v58tpdu-20201009"
+    ],
+    "source_relationships": "The public GWINS detail page directly exposes the listed media URL(s); generic site-home links were excluded.",
+    "deduplication": "Compared exact source id, date, title, detail page, and platform IDs within current data; retained as a distinct non-livestream candidate without canonical-live promotion."
+  },
+  "source_raw_sha256": "7d5b61b31836cc030cbaa42c9833fa2fb36ace01b39ddd69c95b0e598a42a89b",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false,
+  "rejection_reason": "The exact GWINS title identifies a standalone video, interview, Gettr update, or other non-livestream record; it is preserved without canonical livestream promotion."
+}

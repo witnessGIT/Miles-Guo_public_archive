@@ -1,0 +1,43 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_34_20200926_1-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_34_20200926_1",
+  "reviewed_by": "agent-20261006T191534Z-d915df7b",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-09T00:21:30Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20200926_001",
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_34.html",
+    "https://gwins.org/cn/milesguo/17708.html",
+    "https://rumble.com/v58skv9-20200926-1.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS detail page 17708 carries source_video_id 20200926_1 and binds it to this candidate.",
+    "date": "Candidate date 2020-09-26 agrees with the date and source id in the public GWINS title.",
+    "title": "郭文贵2020年9月26日直播 20200926_1 感谢在前线依法灭贼的战友们；依法灭贼的重大意义，是对战友勇气与智慧的考验",
+    "platform_ids": [
+      "20200926_1",
+      "17708",
+      "v58skv9-20200926-1"
+    ],
+    "source_relationships": "The public GWINS detail page directly exposes the listed media URL(s); generic site-home links were excluded.",
+    "deduplication": "Fresh current-data checks found no canonical record for exact source id 20200926_1. The distinct GWINS record supports LIVE_20200926_001; same-day numbered items remain separate."
+  },
+  "source_raw_sha256": "624700aa9837e6b45d7c83b054702425516269cdddff2c97a7eb302621c066ee",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": true,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}

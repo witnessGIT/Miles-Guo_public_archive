@@ -1,0 +1,46 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_34_20201002-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_34_20201002",
+  "reviewed_by": "agent-20261006T191534Z-d915df7b",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-09T00:21:30Z",
+  "decision": "rejected_not_target",
+  "canonical_live_id": null,
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_34.html",
+    "https://gwins.org/cn/milesguo/18634.html",
+    "https://youtu.be/aLMEMl8bUbc",
+    "https://rumble.com/v58tlad-20201002.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS detail page 18634 carries source_video_id 20201002 and binds it to this candidate.",
+    "date": "Candidate date 2020-10-02 agrees with the date and source id in the public GWINS title.",
+    "title": "郭文贵2020年10月2日盖特 20201002 文贵在此衷心地祝福川普总统夫妇和天下所有的的人们……都能安全的度过C C P中共的潘多拉之战",
+    "platform_ids": [
+      "20201002",
+      "18634",
+      "aLMEMl8bUbc",
+      "v58tlad-20201002"
+    ],
+    "source_relationships": "The public GWINS detail page directly exposes the listed media URL(s); generic site-home links were excluded.",
+    "deduplication": "Compared exact source id, date, title, detail page, and platform IDs within current data; retained as a distinct non-livestream candidate without canonical-live promotion."
+  },
+  "source_raw_sha256": "705c4c5e14affc0f3291a247b4d1e64f8109a7d5668022441b2b3ce9184939d1",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false,
+  "rejection_reason": "The exact GWINS title identifies a standalone video, interview, Gettr update, or other non-livestream record; it is preserved without canonical livestream promotion."
+}

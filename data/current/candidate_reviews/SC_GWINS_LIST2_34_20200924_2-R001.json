@@ -1,0 +1,43 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_34_20200924_2-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_34_20200924_2",
+  "reviewed_by": "agent-20261006T191534Z-d915df7b",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-09T00:21:30Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20200924_002",
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_34.html",
+    "https://gwins.org/cn/milesguo/16790.html",
+    "https://rumble.com/v58skia-20200924-2.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS detail page 16790 carries source_video_id 20200924_2 and binds it to this candidate.",
+    "date": "Candidate date 2020-09-24 agrees with the date and source id in the public GWINS title.",
+    "title": "郭文贵2020年9月24日直播 20200924_2 测试GTV安卓版直播；中共在48小时内将打开第二个潘多拉盒子，加速灭亡；全球灭贼行动正在进行",
+    "platform_ids": [
+      "20200924_2",
+      "16790",
+      "v58skia-20200924-2"
+    ],
+    "source_relationships": "The public GWINS detail page directly exposes the listed media URL(s); generic site-home links were excluded.",
+    "deduplication": "Fresh current-data checks found no canonical record for exact source id 20200924_2. The distinct GWINS record supports LIVE_20200924_002; same-day numbered items remain separate."
+  },
+  "source_raw_sha256": "6ca98dd410ffdb23c07f038494b4c7fb43a0ae84f3c82dc5361c904476bfebda",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": true,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}

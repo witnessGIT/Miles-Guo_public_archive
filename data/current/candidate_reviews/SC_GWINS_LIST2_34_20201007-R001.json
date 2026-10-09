@@ -1,0 +1,46 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_34_20201007-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_34_20201007",
+  "reviewed_by": "agent-20261006T191534Z-d915df7b",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-09T00:21:30Z",
+  "decision": "rejected_not_target",
+  "canonical_live_id": null,
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_34.html",
+    "https://gwins.org/cn/milesguo/18695.html",
+    "https://youtu.be/WU4yFuSVGP0",
+    "https://rumble.com/v58tp8d-20201007.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS detail page 18695 carries source_video_id 20201007 and binds it to this candidate.",
+    "date": "Candidate date 2020-10-07 agrees with the date and source id in the public GWINS title.",
+    "title": "郭文贵2020年10月7日盖特 20201007 尊敬的战友们好……猜猜这是谁送给我的花？我太喜欢 了……",
+    "platform_ids": [
+      "20201007",
+      "18695",
+      "WU4yFuSVGP0",
+      "v58tp8d-20201007"
+    ],
+    "source_relationships": "The public GWINS detail page directly exposes the listed media URL(s); generic site-home links were excluded.",
+    "deduplication": "Compared exact source id, date, title, detail page, and platform IDs within current data; retained as a distinct non-livestream candidate without canonical-live promotion."
+  },
+  "source_raw_sha256": "778140f940674ebe70b1f7c5d4514293cd9d5f1065b99c5ad3a5cef9f271ac5b",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false,
+  "rejection_reason": "The exact GWINS title identifies a standalone video, interview, Gettr update, or other non-livestream record; it is preserved without canonical livestream promotion."
+}

@@ -1,0 +1,43 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_34_20201005-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_34_20201005",
+  "reviewed_by": "agent-20261006T191534Z-d915df7b",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-09T00:21:30Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20201005_001",
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_34.html",
+    "https://gwins.org/cn/milesguo/18669.html",
+    "https://rumble.com/v58to4d-20201005.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS detail page 18669 carries source_video_id 20201005 and binds it to this candidate.",
+    "date": "Candidate date 2020-10-05 agrees with the date and source id in the public GWINS title.",
+    "title": "郭文贵2020年10月5日直播 20201005 全球惩贼行动，为正义牺牲，要坚持到底；为被洗脑的同胞感到悲愤，CCP病毒毒害人心；美国准备好了行动",
+    "platform_ids": [
+      "20201005",
+      "18669",
+      "v58to4d-20201005"
+    ],
+    "source_relationships": "The public GWINS detail page directly exposes the listed media URL(s); generic site-home links were excluded.",
+    "deduplication": "Fresh current-data checks found no canonical record for exact source id 20201005. The distinct GWINS record supports LIVE_20201005_001; same-day numbered items remain separate."
+  },
+  "source_raw_sha256": "06deb1930b4d55c4a32dba1c88177926123da51c8bcf9209562cb09339dd88ff",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": true,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}

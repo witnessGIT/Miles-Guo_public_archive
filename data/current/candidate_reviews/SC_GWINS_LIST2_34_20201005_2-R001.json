@@ -1,0 +1,46 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_34_20201005_2-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_34_20201005_2",
+  "reviewed_by": "agent-20261006T191534Z-d915df7b",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-09T00:21:30Z",
+  "decision": "rejected_not_target",
+  "canonical_live_id": null,
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_34.html",
+    "https://gwins.org/cn/milesguo/18694.html",
+    "https://youtu.be/ANoe24mONBo",
+    "https://rumble.com/v58tlcd-20201005-2.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS detail page 18694 carries source_video_id 20201005_2 and binds it to this candidate.",
+    "date": "Candidate date 2020-10-05 agrees with the date and source id in the public GWINS title.",
+    "title": "郭文贵2020年10月5日盖特 20201005_2 为了揭发在美国和西方共产党的建立的间谍系统……和沉默的力量，让西方知到共产党的潜伏的真相。在德州和加拿大．纽约的战友们……",
+    "platform_ids": [
+      "20201005_2",
+      "18694",
+      "ANoe24mONBo",
+      "v58tlcd-20201005-2"
+    ],
+    "source_relationships": "The public GWINS detail page directly exposes the listed media URL(s); generic site-home links were excluded.",
+    "deduplication": "Compared exact source id, date, title, detail page, and platform IDs within current data; retained as a distinct non-livestream candidate without canonical-live promotion."
+  },
+  "source_raw_sha256": "b3fd81c5cf418dbaca3fb13785c9c557a84bf5f99faa5b7f655fa876f58dfe78",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false,
+  "rejection_reason": "The exact GWINS title identifies a standalone video, interview, Gettr update, or other non-livestream record; it is preserved without canonical livestream promotion."
+}

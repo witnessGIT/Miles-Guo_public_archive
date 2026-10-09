@@ -1,0 +1,46 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_34_20201008-R002",
+  "source_candidate_id": "SC_GWINS_LIST2_34_20201008",
+  "reviewed_by": "agent-20261006T191534Z-d915df7b",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-09T00:21:30Z",
+  "decision": "rejected_not_target",
+  "canonical_live_id": null,
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_34.html",
+    "https://gwins.org/cn/milesguo/19591.html",
+    "https://youtu.be/mMBrZMkO-2U",
+    "https://rumble.com/v58tpb1-20201008.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS detail page 19591 carries source_video_id 20201008 and binds it to this candidate.",
+    "date": "Candidate date 2020-10-08 agrees with the date and source id in the public GWINS title.",
+    "title": "郭文贵2020年10月8日盖特 20201008 尊敬的战友们好……全球的战友的一致行动……和坚定地灭掉共产党和惩罚贼行动，正在得到全世界有良知的人认可和支持……维护海外的华人",
+    "platform_ids": [
+      "20201008",
+      "19591",
+      "mMBrZMkO-2U",
+      "v58tpb1-20201008"
+    ],
+    "source_relationships": "The public GWINS detail page directly exposes the listed media URL(s); generic site-home links were excluded.",
+    "deduplication": "Compared exact source id, date, title, detail page, and platform IDs within current data; retained as a distinct non-livestream candidate without canonical-live promotion."
+  },
+  "source_raw_sha256": "13897496ca62d61917b9671f3937c96142c664a3a894458128c0daf472a74842",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false,
+  "rejection_reason": "The exact GWINS title identifies a standalone video, interview, Gettr update, or other non-livestream record; it is preserved without canonical livestream promotion."
+}

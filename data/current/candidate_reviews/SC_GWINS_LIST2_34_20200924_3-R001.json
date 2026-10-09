@@ -1,0 +1,46 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_34_20200924_3-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_34_20200924_3",
+  "reviewed_by": "agent-20261006T191534Z-d915df7b",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-09T00:21:30Z",
+  "decision": "rejected_not_target",
+  "canonical_live_id": null,
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_34.html",
+    "https://gwins.org/cn/milesguo/17680.html",
+    "https://youtu.be/nj6FqSddi2w",
+    "https://rumble.com/v58skkl-20200924-3.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS detail page 17680 carries source_video_id 20200924_3 and binds it to this candidate.",
+    "date": "Candidate date 2020-09-24 agrees with the date and source id in the public GWINS title.",
+    "title": "郭文贵2020年9月24日盖特 20200924_3 尊敬的战友们好，谁能认出和我这么亲近的这只可爱的猫！谁就能准确地预测出美国总统大选的结果！这猫今天真是爱上我了…我一走她就",
+    "platform_ids": [
+      "20200924_3",
+      "17680",
+      "nj6FqSddi2w",
+      "v58skkl-20200924-3"
+    ],
+    "source_relationships": "The public GWINS detail page directly exposes the listed media URL(s); generic site-home links were excluded.",
+    "deduplication": "Compared exact source id, date, title, detail page, and platform IDs within current data; retained as a distinct non-livestream candidate without canonical-live promotion."
+  },
+  "source_raw_sha256": "839db2fc7c1151c0e93dd0d23ceb2cf1720ea29fe3b81f4a8d10b58838d9ac98",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false,
+  "rejection_reason": "The exact GWINS title identifies a standalone video, interview, Gettr update, or other non-livestream record; it is preserved without canonical livestream promotion."
+}

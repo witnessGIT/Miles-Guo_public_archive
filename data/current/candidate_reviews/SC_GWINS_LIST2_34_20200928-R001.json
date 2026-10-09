@@ -1,0 +1,46 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_34_20200928-R001",
+  "source_candidate_id": "SC_GWINS_LIST2_34_20200928",
+  "reviewed_by": "agent-20261006T191534Z-d915df7b",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-09T00:21:30Z",
+  "decision": "rejected_not_target",
+  "canonical_live_id": null,
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_34.html",
+    "https://gwins.org/cn/milesguo/17759.html",
+    "https://youtu.be/YUmOPL1ryM0",
+    "https://rumble.com/v58t8vo-20200928.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS detail page 17759 carries source_video_id 20200928 and binds it to this candidate.",
+    "date": "Candidate date 2020-09-28 agrees with the date and source id in the public GWINS title.",
+    "title": "郭文贵2020年9月28日盖特 20200928 文贵去大教堂．为新中国联邦为爆料革命战友祈福",
+    "platform_ids": [
+      "20200928",
+      "17759",
+      "YUmOPL1ryM0",
+      "v58t8vo-20200928"
+    ],
+    "source_relationships": "The public GWINS detail page directly exposes the listed media URL(s); generic site-home links were excluded.",
+    "deduplication": "Compared exact source id, date, title, detail page, and platform IDs within current data; retained as a distinct non-livestream candidate without canonical-live promotion."
+  },
+  "source_raw_sha256": "412d89b5a5496bb298cb7d9c73810cce0e6959ca9358dd18c5c18633776271d7",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": false,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false,
+  "rejection_reason": "The exact GWINS title identifies a standalone video, interview, Gettr update, or other non-livestream record; it is preserved without canonical livestream promotion."
+}

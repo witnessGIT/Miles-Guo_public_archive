@@ -1,0 +1,43 @@
+{
+  "contract_version": "candidate-review-evidence-v2",
+  "task_id": "C2-REVIEW-SC_GWINS_LIST2_34_20201007_2-R002",
+  "source_candidate_id": "SC_GWINS_LIST2_34_20201007_2",
+  "reviewed_by": "agent-20261006T191534Z-d915df7b",
+  "entry_mode": "work",
+  "reviewed_at": "2026-10-09T00:21:30Z",
+  "decision": "promoted_new_canonical",
+  "canonical_live_id": "LIVE_20201007_001",
+  "evidence_urls": [
+    "https://gwins.org/cn/milesguo/list_2_34.html",
+    "https://gwins.org/cn/milesguo/18696.html",
+    "https://rumble.com/v58tp51-20201007-2.html"
+  ],
+  "checked_fields": [
+    "identity",
+    "date",
+    "title",
+    "platform_ids",
+    "source_relationships",
+    "deduplication"
+  ],
+  "checks": {
+    "identity": "GWINS detail page 18696 carries source_video_id 20201007_2 and binds it to this candidate.",
+    "date": "Candidate date 2020-10-07 agrees with the date and source id in the public GWINS title.",
+    "title": "郭文贵2020年10月7日直播 20201007_2 德州惩贼行动现场，黑警抓战友，傅希秋一定法庭见；文贵公布病毒检测结果，亲身验证羟氯喹是有效的",
+    "platform_ids": [
+      "20201007_2",
+      "18696",
+      "v58tp51-20201007-2"
+    ],
+    "source_relationships": "The public GWINS detail page directly exposes the listed media URL(s); generic site-home links were excluded.",
+    "deduplication": "Fresh current-data checks found no canonical record for exact source id 20201007_2. The distinct GWINS record supports LIVE_20201007_001; same-day numbered items remain separate."
+  },
+  "source_raw_sha256": "cd01c05aa84d8ebac92b065d508e8223e3e7f419cf99c5d6e59879a4e6d8df7e",
+  "limitations": [
+    "No playback, media download, transcription, segmentation, subtitle work, or later content processing was performed."
+  ],
+  "canonical_promotion_performed": true,
+  "media_download_performed": false,
+  "playback_audit_performed": false,
+  "later_content_processing_performed": false
+}
