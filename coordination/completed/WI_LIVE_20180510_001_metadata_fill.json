@@ -1,0 +1,18 @@
+{
+  "task_id": "WI_LIVE_20180510_001_metadata_fill",
+  "agent_id": "agent-20261006T191534Z-d915df7b",
+  "completed_at": "2026-10-10T12:21:49.821896+00:00",
+  "result_commit": "f367fbfa22cec976326728070e901bf73db403f0",
+  "outputs": [
+    "data/current/live_videos/c2_review_gwins_list_2_63_agent_a890f4a8_batch6.jsonl",
+    "data/current/sources/c2_review_gwins_list_2_63_agent_a890f4a8_batch6.jsonl",
+    "data/current/media_assets/c2_review_gwins_list_2_63_agent_a890f4a8_batch6.jsonl"
+  ],
+  "validation": "Public Odysee claim metadata and Rumble oEmbed independently agreed on a 6415-second 1280x720 asset; Odysee claim identity, size, and source hash were preserved. No media download, playback, transcription, ASR, or segmentation was performed. Database validation passed with zero warnings and 103 tests passed.",
+  "workflow_mode": "continuous-worker-v2",
+  "claim_protocol": "claim-protocol-v2",
+  "entry_mode": "work",
+  "continue_after_finish": true,
+  "finish_prerequisites_revalidated": true,
+  "notes": "Task completed only after re-checking the latest repository dependency contract. Under continuous-worker-v2, refresh repository state and claim the next eligible task unless a documented stop condition applies."
+}
