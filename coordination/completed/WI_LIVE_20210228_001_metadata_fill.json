@@ -1,0 +1,18 @@
+{
+  "task_id": "WI_LIVE_20210228_001_metadata_fill",
+  "agent_id": "agent-20261004T091647Z-90dd416d",
+  "completed_at": "2026-10-10T11:41:12.680225+00:00",
+  "result_commit": "3421cb982d532c39869d26e761e0b76afcd57049",
+  "outputs": [
+    "data/current/live_videos/c2_review_gwins_list_2_28_agent_d915df7b.jsonl",
+    "data/current/sources/c2_review_gwins_list_2_28_agent_d915df7b.jsonl",
+    "data/current/media_assets/c2_review_gwins_list_2_28_agent_d915df7b.jsonl"
+  ],
+  "validation": "Public Rumble metadata verified; 8655-second duration, 854x480 dimensions, and 30 FPS recorded; mirror upload date kept separate from original livestream date; no playback verification claimed; database validation OK with zero warnings.",
+  "workflow_mode": "continuous-worker-v2",
+  "claim_protocol": "claim-protocol-v2",
+  "entry_mode": "work",
+  "continue_after_finish": true,
+  "finish_prerequisites_revalidated": true,
+  "notes": "Task completed only after re-checking the latest repository dependency contract. Under continuous-worker-v2, refresh repository state and claim the next eligible task unless a documented stop condition applies."
+}
