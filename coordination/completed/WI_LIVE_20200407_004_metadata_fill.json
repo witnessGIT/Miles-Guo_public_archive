@@ -1,0 +1,18 @@
+{
+  "task_id": "WI_LIVE_20200407_004_metadata_fill",
+  "agent_id": "agent-20261006T191534Z-d915df7b",
+  "completed_at": "2026-10-10T12:07:34.756963+00:00",
+  "result_commit": "deb8e63a8633a5007ec1e5f2cc08db939e3900f3",
+  "outputs": [
+    "data/current/live_videos/c2_review_gwins_list_2_41_batch_56ce8649.jsonl",
+    "data/current/sources/c2_review_gwins_list_2_41_batch_56ce8649.jsonl",
+    "data/current/media_assets/c2_review_gwins_list_2_41_batch_56ce8649.jsonl"
+  ],
+  "validation": "Public GWINS detail identity retained; public Odysee oEmbed/resolve and Rumble oEmbed metadata independently agree on title 20200407_4, duration 2802 seconds, and 1280x720 dimensions. Odysee reports MP4 source type, public claim identity, source hash and size. Unknown FPS, audio presence and canonical publication time remain null. No media download, playback, transcription, ASR, segmentation, or playback verification was performed. Database validation passed with zero warnings; 103 tests passed.",
+  "workflow_mode": "continuous-worker-v2",
+  "claim_protocol": "claim-protocol-v2",
+  "entry_mode": "work",
+  "continue_after_finish": true,
+  "finish_prerequisites_revalidated": true,
+  "notes": "Task completed only after re-checking the latest repository dependency contract. Under continuous-worker-v2, refresh repository state and claim the next eligible task unless a documented stop condition applies."
+}
