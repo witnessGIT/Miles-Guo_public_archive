@@ -1,0 +1,18 @@
+{
+  "task_id": "WI_LIVE_20211026_003_metadata_fill",
+  "agent_id": "agent-20261006T191534Z-d915df7b",
+  "completed_at": "2026-10-10T12:09:56.678887+00:00",
+  "result_commit": "5d45e93933b678965df7924badbbe144bcfc3e58",
+  "outputs": [
+    "data/current/live_videos/c2_review_gwins_list_2_16_batch_56ce8649.jsonl",
+    "data/current/sources/c2_review_gwins_list_2_16_batch_56ce8649.jsonl",
+    "data/current/media_assets/c2_review_gwins_list_2_16_batch_56ce8649.jsonl"
+  ],
+  "validation": "Public GWINS detail identity retained; public GETTR post API confirms exact post ID, title, 2021-10-26T14:56:31.172000Z publication time, 554-second duration, 1920x1080 dimensions and HLS locator. Public Rumble oEmbed independently agrees on title and duration and reports a 1280x720 mirror. Unknown FPS and audio presence remain null. No media download, playback, transcription, ASR, segmentation, or playback verification was performed. Database validation passed with zero warnings; 103 tests passed.",
+  "workflow_mode": "continuous-worker-v2",
+  "claim_protocol": "claim-protocol-v2",
+  "entry_mode": "work",
+  "continue_after_finish": true,
+  "finish_prerequisites_revalidated": true,
+  "notes": "Task completed only after re-checking the latest repository dependency contract. Under continuous-worker-v2, refresh repository state and claim the next eligible task unless a documented stop condition applies."
+}
