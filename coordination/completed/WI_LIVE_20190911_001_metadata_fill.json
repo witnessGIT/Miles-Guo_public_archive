@@ -1,0 +1,18 @@
+{
+  "task_id": "WI_LIVE_20190911_001_metadata_fill",
+  "agent_id": "agent-20261006T191534Z-d915df7b",
+  "completed_at": "2026-10-10T17:36:14.143697+00:00",
+  "result_commit": "25549f331def48284a7248f3cafd6c7ac2b0909a",
+  "outputs": [
+    "data/current/live_videos/c2_review_gwins_list_2_49_batch_56ce8649.jsonl",
+    "data/current/media_assets/c2_review_gwins_list_2_49_batch_56ce8649.jsonl",
+    "data/current/sources/c2_review_gwins_list_2_49_batch_56ce8649.jsonl"
+  ],
+  "validation": "Public Rumble oEmbed and Odysee resolve metadata independently verified both linked 20190911 and 20190911_1 source variants; all four source-specific records and identities were preserved, while canonical 20190911_1 metadata records 2096 seconds at 1280x720. No media download, playback, decode, transcription, ASR, or segmentation was performed. Database validation passed with zero warnings and 103 tests passed.",
+  "workflow_mode": "continuous-worker-v2",
+  "claim_protocol": "claim-protocol-v2",
+  "entry_mode": "work",
+  "continue_after_finish": true,
+  "finish_prerequisites_revalidated": true,
+  "notes": "Task completed only after re-checking the latest repository dependency contract. Under continuous-worker-v2, refresh repository state and claim the next eligible task unless a documented stop condition applies."
+}
