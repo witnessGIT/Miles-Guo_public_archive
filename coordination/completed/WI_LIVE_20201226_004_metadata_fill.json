@@ -1,0 +1,17 @@
+{
+  "task_id": "WI_LIVE_20201226_004_metadata_fill",
+  "agent_id": "agent-20261006T191534Z-d915df7b",
+  "completed_at": "2026-10-10T21:03:26.781327+00:00",
+  "result_commit": "7edc482d75be896a38476ddcd3d31051e03c5f45",
+  "outputs": [
+    "data/current/live_videos/c2_review_gwins_list_2_31_batch_56ce8649.jsonl",
+    "data/current/sources/c2_review_gwins_list_2_31_batch_56ce8649.jsonl"
+  ],
+  "validation": "Public source-page metadata confirmed HTTP reachability and title; page byte count and SHA-256 were recorded. Technical video fields remain unknown because no media was downloaded, played, decoded, or probed. Database validation passed with zero warnings and 103 tests passed.",
+  "workflow_mode": "continuous-worker-v2",
+  "claim_protocol": "claim-protocol-v2",
+  "entry_mode": "work",
+  "continue_after_finish": true,
+  "finish_prerequisites_revalidated": true,
+  "notes": "Task completed only after re-checking the latest repository dependency contract. Under continuous-worker-v2, refresh repository state and claim the next eligible task unless a documented stop condition applies."
+}
