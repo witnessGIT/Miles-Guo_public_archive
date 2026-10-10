@@ -1,0 +1,18 @@
+{
+  "task_id": "WI_LIVE_20180207_001_metadata_fill",
+  "agent_id": "agent-20261006T191534Z-d915df7b",
+  "completed_at": "2026-10-10T16:05:37.938903+00:00",
+  "result_commit": "65308fc32719d90e24a9d608498bfc8dd03a10b3",
+  "outputs": [
+    "data/current/live_videos/c2_review_20180207_1.json",
+    "data/current/media_assets/c2_review_20180207_1.jsonl",
+    "data/current/sources/c2_review_20180207_1.jsonl"
+  ],
+  "validation": "Public Rumble oEmbed metadata verified the exact linked source and recorded a 1071-second 1280x720 asset with its embed identity. Unknown publication time, FPS, and audio remain null. No media download, playback, decode, transcription, ASR, or segmentation was performed. Database validation passed with zero warnings and 103 tests passed.",
+  "workflow_mode": "continuous-worker-v2",
+  "claim_protocol": "claim-protocol-v2",
+  "entry_mode": "work",
+  "continue_after_finish": true,
+  "finish_prerequisites_revalidated": true,
+  "notes": "Task completed only after re-checking the latest repository dependency contract. Under continuous-worker-v2, refresh repository state and claim the next eligible task unless a documented stop condition applies."
+}
