@@ -3,7 +3,7 @@
   "agent_id": "agent-20261006T191534Z-d915df7b",
   "claimed_at": "2026-10-11T16:18:13.645704+00:00",
   "base_commit": "5f64e7c2a9a1c877d4334ece1f2838a4fb3dee4a",
-  "status": "in_progress",
+  "status": "released",
   "workflow_mode": "continuous-worker-v2",
   "claim_protocol": "claim-protocol-v2",
   "entry_mode": "work",
@@ -22,5 +22,7 @@
   ],
   "scope": "Import source transcript or ASR text without overwriting original text.",
   "reclaimed_expired_claim": false,
-  "static_claim_lease_hours": 24
+  "static_claim_lease_hours": 24,
+  "released_at": "2026-10-11T17:21:36.074655+00:00",
+  "release_reason": "released for GitHub Actions cloud ASR migration"
 }
