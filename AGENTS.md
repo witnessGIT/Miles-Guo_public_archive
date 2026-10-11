@@ -7,13 +7,15 @@ Normal entry and execution must not read `docs/archive/`, `reports/archive/`, or
 current scope, queue state, ownership, completion, or progress. Old C1-only instructions are
 superseded. Phase 1 collection, C2 candidate identity review, and first-pass metadata archiving
 are frozen by their current completion records. Under the owner's 2026-10-12 authorization,
-current work is full-corpus local ASR: complete `transcript_import` for each canonical live using
-public media, offline inference, timestamped raw-ASR cues and searchable machine segments. Media,
-extracted audio, model files and caches stay local and must never enter Git. Git stores only
-structured transcripts, time locators, source URLs, local-path/checksum manifests and processing
-results. ASR output remains explicitly machine/unverified; it must not be represented as
-human-corrected or Playback-verified. Entity/event/claim extraction, relationship analysis, text
-verification and Playback Audit remain separate backlog.
+current work begins with full-corpus ASR: complete `transcript_import` for each canonical live
+using public media, offline open-source inference, timestamped raw-ASR cues and searchable machine
+segments. The preferred execution mode is the claim-bound GitHub-hosted macOS workflow; local
+inference is only a fallback. Media, extracted audio, model files and caches are ephemeral/local
+artifacts and must never enter Git. Git stores only structured transcripts, time locators, source
+URLs, processing-path/checksum manifests and results. ASR output remains explicitly
+machine/unverified; it must not be represented as human-corrected or Playback-verified. After the
+ASR dependency is complete, continue the repository stage chain for natural segmentation, key
+points/topics, entities, events, claims, relations, text verification and searchable retrieval.
 
 A session/check report is not business output and cannot substitute for an eligible C2 task.
 Candidate-review completion requires one source-backed artifact under

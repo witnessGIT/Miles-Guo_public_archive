@@ -1,0 +1,60 @@
+name: Cloud ASR Pilot
+
+on:
+  workflow_dispatch:
+    inputs:
+      batch_size:
+        description: Number of livestreams for this conservative cloud pilot
+        required: true
+        default: '10'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: miles-guo-cloud-asr-writer
+  cancel-in-progress: false
+
+jobs:
+  transcribe:
+    if: github.actor == 'witnessGIT'
+    runs-on: macos-14
+    timeout-minutes: 350
+    env:
+      HF_HOME: ${{ runner.temp }}/hf-cache
+      PYTHONUNBUFFERED: '1'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Cache the public Whisper model
+        uses: actions/cache@v4
+        with:
+          path: ${{ env.HF_HOME }}/hub
+          key: cloud-asr-macos-arm64-mlx-whisper-large-v3-turbo-v1
+
+      - name: Install free local-inference tools
+        shell: bash
+        run: |
+          set -euo pipefail
+          command -v ffmpeg >/dev/null || brew install ffmpeg
+          python -m pip install --upgrade pip
+          python -m pip install mlx-whisper==0.4.3 yt-dlp
+
+      - name: Run claim-bound cloud ASR pilot
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          python scripts/cloud_asr_batch.py \
+            --repo "$GITHUB_WORKSPACE" \
+            --work-root "$RUNNER_TEMP/miles-guo-asr" \
+            --batch-size '${{ inputs.batch_size }}' \
+            --agent-id "github-actions-cloud-asr-${GITHUB_RUN_ID}"
