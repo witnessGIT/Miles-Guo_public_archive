@@ -3,6 +3,7 @@
 
 from __future__ import annotations
 
+import argparse
 import hashlib
 import json
 import re
@@ -12,6 +13,12 @@ from typing import Callable
 
 ENTITY_TYPES = {"person", "organization", "country", "place", "media", "law", "project", "company", "government", "other"}
 MENTION_ROLES = {"mentioned", "target", "ally", "opponent", "source", "victim", "location", "organization", "quoted"}
+GENERIC_ENTITY_TERMS = {
+    "五毛", "政府", "官员", "领导", "老领导", "朋友", "家人", "员工", "律师团队",
+    "哥哥", "弟弟", "姐姐", "妹妹", "侄女", "侄子", "网友", "推友", "战友",
+}
+KNOWN_TYPE_OVERRIDES = {"推特": "media", "Twitter": "media", "香港": "place", "日本": "country", "中国": "country"}
+RELATIONAL_PREFIXES = ("我的", "我们", "这个", "这些", "那个", "那些", "一位", "某个", "有些")
 
 
 def parse_json_array(text: str) -> list[dict]:
@@ -33,22 +40,24 @@ def entity_id(live_id: str, entity_type: str, canonical_name: str) -> str:
 def validate_mentions(segment: dict, candidates: list[dict]) -> list[dict]:
     text = str(segment.get("text_asr") or segment.get("text_search") or "")
     accepted: list[dict] = []
-    seen: set[tuple[str, str]] = set()
+    seen: set[str] = set()
     for item in candidates:
         canonical = str(item.get("canonical_name") or "").strip()
         mention = str(item.get("mention_text") or canonical).strip()
         kind = str(item.get("entity_type") or "other").strip().lower()
         role = str(item.get("mention_role") or "mentioned").strip().lower()
+        if canonical in GENERIC_ENTITY_TERMS or canonical.startswith(RELATIONAL_PREFIXES):
+            continue
+        kind = KNOWN_TYPE_OVERRIDES.get(canonical, kind)
         if kind not in ENTITY_TYPES:
             kind = "other"
         if role not in MENTION_ROLES:
             role = "mentioned"
         if not canonical or not mention or mention not in text:
             continue
-        key = (canonical, role)
-        if key in seen:
+        if canonical in seen:
             continue
-        seen.add(key)
+        seen.add(canonical)
         accepted.append({"canonical_name": canonical, "mention_text": mention, "entity_type": kind, "mention_role": role})
     return accepted
 
@@ -57,7 +66,9 @@ def prompt_for(segment: dict) -> str:
     text = str(segment.get("text_asr") or "")
     return (
         "你是历史档案实体标注器。只根据给出的机器转录原文识别人名、组织、国家、地点、媒体、法律、项目、公司或政府机构。"
-        "不要补充外部知识，不要纠正原文，不要猜测代词指向。mention_text必须是原文中逐字存在的连续文本。"
+        "不要补充外部知识，不要纠正原文，不要猜测代词指向。只标注有专名的具体实体；"
+        "排除政府、官员、领导、五毛、朋友、员工、家人等泛称，排除我的哥哥、我的侄女等未具名亲属称谓。"
+        "mention_text必须是原文中逐字存在的连续文本。"
         "只输出JSON数组；每项字段为canonical_name、mention_text、entity_type、mention_role。"
         "entity_type只能是person,organization,country,place,media,law,project,company,government,other；"
         "mention_role只能是mentioned,target,ally,opponent,source,victim,location,organization,quoted。没有实体就输出[]。\n"
@@ -115,3 +126,54 @@ def process_live(repo: Path, live_id: str, generate_text: Callable[[str], str]) 
     write_jsonl(link_path, links)
     outputs = [str(path.relative_to(repo)) for path in (segment_path, entity_path, link_path)]
     return outputs, stats
+
+
+def repair_existing_outputs(repo: Path, live_id: str) -> dict:
+    stem = f"machine_{live_id.lower()}"
+    segment_path = repo / "data" / "current" / "live_segments" / f"asr_{live_id.lower()}.jsonl"
+    entity_path = repo / "data" / "current" / "entities" / f"{stem}.jsonl"
+    link_path = repo / "data" / "current" / "segment_entities" / f"{stem}.jsonl"
+    segments = [json.loads(line) for line in segment_path.read_text(encoding="utf-8").splitlines() if line.strip()]
+    entities = [json.loads(line) for line in entity_path.read_text(encoding="utf-8").splitlines() if line.strip()]
+    links = [json.loads(line) for line in link_path.read_text(encoding="utf-8").splitlines() if line.strip()]
+    kept: dict[str, dict] = {}
+    for row in entities:
+        name = str(row.get("canonical_name") or "").strip()
+        if not name or name in GENERIC_ENTITY_TERMS or name.startswith(RELATIONAL_PREFIXES):
+            continue
+        row["entity_type"] = KNOWN_TYPE_OVERRIDES.get(name, row.get("entity_type") or "other")
+        kept[row["id"]] = row
+    filtered_links: list[dict] = []
+    seen: set[tuple[str, str]] = set()
+    for row in links:
+        entity = kept.get(str(row.get("entity_id") or ""))
+        key = (str(row.get("segment_id") or ""), str(row.get("entity_id") or ""))
+        if entity is None or key in seen:
+            continue
+        seen.add(key)
+        filtered_links.append(row)
+    names_by_segment: dict[str, set[str]] = {}
+    for row in filtered_links:
+        names_by_segment.setdefault(row["segment_id"], set()).add(kept[row["entity_id"]]["canonical_name"])
+    for segment in segments:
+        segment["entities_json"] = sorted(names_by_segment.get(segment["id"], set())) or None
+    write_jsonl(segment_path, segments)
+    write_jsonl(entity_path, list(kept.values()))
+    write_jsonl(link_path, filtered_links)
+    return {"entities": len(kept), "mentions": len(filtered_links), "segments": len(segments)}
+
+
+def main() -> int:
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--repo", type=Path, default=Path(__file__).resolve().parents[1])
+    parser.add_argument("--repair-existing", nargs="+", metavar="LIVE_ID")
+    args = parser.parse_args()
+    if not args.repair_existing:
+        parser.error("--repair-existing is required when running this module directly")
+    for live_id in args.repair_existing:
+        print(json.dumps({"live_id": live_id, **repair_existing_outputs(args.repo.resolve(), live_id)}, ensure_ascii=False))
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())
