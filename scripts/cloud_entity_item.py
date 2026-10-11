@@ -19,6 +19,7 @@ GENERIC_ENTITY_TERMS = {
 }
 KNOWN_TYPE_OVERRIDES = {"推特": "media", "Twitter": "media", "香港": "place", "日本": "country", "中国": "country"}
 RELATIONAL_PREFIXES = ("我的", "我们", "这个", "这些", "那个", "那些", "一位", "某个", "有些")
+GENERIC_ENTITY_FRAGMENTS = ("很多人", "家属", "官员", "某人", "一些人", "一群人")
 
 
 def parse_json_array(text: str) -> list[dict]:
@@ -46,7 +47,7 @@ def validate_mentions(segment: dict, candidates: list[dict]) -> list[dict]:
         mention = str(item.get("mention_text") or canonical).strip()
         kind = str(item.get("entity_type") or "other").strip().lower()
         role = str(item.get("mention_role") or "mentioned").strip().lower()
-        if canonical in GENERIC_ENTITY_TERMS or canonical.startswith(RELATIONAL_PREFIXES):
+        if canonical in GENERIC_ENTITY_TERMS or canonical.startswith(RELATIONAL_PREFIXES) or any(fragment in canonical for fragment in GENERIC_ENTITY_FRAGMENTS):
             continue
         kind = KNOWN_TYPE_OVERRIDES.get(canonical, kind)
         if kind not in ENTITY_TYPES:
@@ -139,7 +140,7 @@ def repair_existing_outputs(repo: Path, live_id: str) -> dict:
     kept: dict[str, dict] = {}
     for row in entities:
         name = str(row.get("canonical_name") or "").strip()
-        if not name or name in GENERIC_ENTITY_TERMS or name.startswith(RELATIONAL_PREFIXES):
+        if not name or name in GENERIC_ENTITY_TERMS or name.startswith(RELATIONAL_PREFIXES) or any(fragment in name for fragment in GENERIC_ENTITY_FRAGMENTS):
             continue
         row["entity_type"] = KNOWN_TYPE_OVERRIDES.get(name, row.get("entity_type") or "other")
         kept[row["id"]] = row
