@@ -1,0 +1,19 @@
+{
+  "task_id": "WI_LIVE_20170508_001_entity_pass",
+  "agent_id": "github-actions-cloud-entity-38176901721",
+  "completed_at": "2026-10-11T21:44:33.595238+00:00",
+  "result_commit": "6f9b252e0fc0eefd5e4c92b9a6a7650d9de98e40",
+  "outputs": [
+    "data/current/live_segments/asr_live_20170508_001.jsonl",
+    "data/current/entities/machine_live_20170508_001.jsonl",
+    "data/current/segment_entities/machine_live_20170508_001.jsonl",
+    "database/Miles-Guo_public_archive.sqlite3"
+  ],
+  "validation": "Open-source Qwen entity extraction; exact mention substring guard; build_db/validate_db/tests OK; machine status",
+  "workflow_mode": "continuous-worker-v2",
+  "claim_protocol": "claim-protocol-v2",
+  "entry_mode": "work",
+  "continue_after_finish": true,
+  "finish_prerequisites_revalidated": true,
+  "notes": "Task completed only after re-checking the latest repository dependency contract. Under continuous-worker-v2, refresh repository state and claim the next eligible task unless a documented stop condition applies."
+}
