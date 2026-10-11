@@ -5,12 +5,15 @@
 Normal entry and execution must not read `docs/archive/`, `reports/archive/`, or
 `coordination/archive/`. Those directories are sealed historical audit material and never define
 current scope, queue state, ownership, completion, or progress. Old C1-only instructions are
-superseded. Phase 1 collection and C2 candidate identity review are frozen by
-`data/current/collection_freeze/phase1_20261010.json`. Current work is the first-pass livestream
-archive: complete `metadata_fill` for each canonical live using public title/date/source/platform
-ID/media-link/basic technical metadata. Transcription, cue/segment splitting, entity/event/claim
-extraction, relationship analysis, text verification and Playback Audit remain deferred backlog
-and are not current executable work.
+superseded. Phase 1 collection, C2 candidate identity review, and first-pass metadata archiving
+are frozen by their current completion records. Under the owner's 2026-10-12 authorization,
+current work is full-corpus local ASR: complete `transcript_import` for each canonical live using
+public media, offline inference, timestamped raw-ASR cues and searchable machine segments. Media,
+extracted audio, model files and caches stay local and must never enter Git. Git stores only
+structured transcripts, time locators, source URLs, local-path/checksum manifests and processing
+results. ASR output remains explicitly machine/unverified; it must not be represented as
+human-corrected or Playback-verified. Entity/event/claim extraction, relationship analysis, text
+verification and Playback Audit remain separate backlog.
 
 A session/check report is not business output and cannot substitute for an eligible C2 task.
 Candidate-review completion requires one source-backed artifact under

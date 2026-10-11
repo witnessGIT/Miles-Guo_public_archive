@@ -1,25 +1,24 @@
-# Current task: first-pass livestream archive
+# Current task: full-corpus local ASR archive
 
-Phase 1 source discovery and candidate identity review are complete and frozen. The current scope
-is `PHASE_2_INITIAL_ARCHIVING`: establish a usable first archive record for every canonical
-livestream.
+Phase 1 source discovery, candidate identity review and the first metadata pass are complete and
+frozen. Under the owner's 2026-10-12 authorization, the current scope is
+`PHASE_3_LOCAL_ASR_ARCHIVING`: create a searchable machine transcript and timestamp index for
+every canonical livestream with accessible public media.
 
-Current executable work is limited to `WI_<LIVE_ID>_metadata_fill`.
+Current executable work is limited to `WI_<LIVE_ID>_transcript_import`.
 
-For one claimed canonical livestream, verify and preserve as much public evidence as is actually
-available:
+For one claimed canonical livestream:
 
-- canonical title, livestream date and publication time;
-- source page identity and URL;
-- platform name, public video/post ID and media URL;
-- duration, dimensions, FPS and audio presence when public metadata proves them;
-- availability and the exact time/method used to check it;
-- conflicts and unknown fields without guessing.
+- use an already archived public media locator and keep media/audio/model files outside Git;
+- run offline local ASR without a paid API or hosted inference;
+- preserve one `asr_raw` transcript version and timestamped transcript cues;
+- create matching machine-status searchable segments for SQLite FTS;
+- preserve source URL, media asset ID, local audio path, checksum, model and processing result;
+- mark failures and inaccessible media truthfully without inventing transcript text.
 
-Do not download full media merely to fill metadata. Do not claim Playback verification from page
-metadata or extractor metadata. In this first-pass archive phase, do not execute transcription,
-cue/segment splitting, entity/event/claim extraction, relationship analysis, text verification or
-Playback Audit. Those work items remain durable future backlog.
+Raw ASR is not human correction and is not Playback verification. Do not promote its verification
+level beyond `machine`/`asr`. Do not execute entity/event/claim extraction, relationship analysis,
+text verification or Playback Audit as part of this task.
 
 Work-mode entry:
 
