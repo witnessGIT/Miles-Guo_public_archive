@@ -5,7 +5,9 @@ frozen. Under the owner's 2026-10-12 authorization, the current scope is
 `PHASE_3_CLOUD_ASR_PILOT`: create a searchable machine transcript and timestamp index for every
 canonical livestream with accessible public media without consuming the owner's local compute.
 
-Current executable work is limited to `WI_<LIVE_ID>_transcript_import`.
+Current work is a streaming pipeline. `WI_<LIVE_ID>_transcript_import` continues across the corpus,
+while a livestream with a completed transcript may immediately advance through `cue_split`,
+`segment_split`, and machine-status enrichment. It is not necessary to wait for corpus-wide ASR.
 
 For one claimed canonical livestream:
 
