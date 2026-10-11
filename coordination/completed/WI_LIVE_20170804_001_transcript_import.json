@@ -1,0 +1,20 @@
+{
+  "task_id": "WI_LIVE_20170804_001_transcript_import",
+  "agent_id": "agent-20261006T191534Z-d915df7b",
+  "completed_at": "2026-10-11T17:21:06.190211+00:00",
+  "result_commit": "45f89fea35305694fac81847daa438e982a980eb",
+  "outputs": [
+    "data/current/transcript_versions/asr_live_20170804_001.jsonl",
+    "data/current/transcript_cues/asr_live_20170804_001.jsonl",
+    "data/current/live_segments/asr_live_20170804_001.jsonl",
+    "data/current/asr_manifests/asr_live_20170804_001.json",
+    "database/Miles-Guo_public_archive.sqlite3"
+  ],
+  "validation": "offline local MLX Whisper batch 32; item_status=transcribed; build_db OK; validate_db OK; 103 tests OK; machine ASR remains unverified",
+  "workflow_mode": "continuous-worker-v2",
+  "claim_protocol": "claim-protocol-v2",
+  "entry_mode": "work",
+  "continue_after_finish": true,
+  "finish_prerequisites_revalidated": true,
+  "notes": "Task completed only after re-checking the latest repository dependency contract. Under continuous-worker-v2, refresh repository state and claim the next eligible task unless a documented stop condition applies."
+}
