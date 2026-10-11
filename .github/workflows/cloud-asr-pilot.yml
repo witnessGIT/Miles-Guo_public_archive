@@ -21,7 +21,7 @@ jobs:
     runs-on: macos-14
     timeout-minutes: 350
     env:
-      HF_HOME: ${{ runner.temp }}/hf-cache
+      HF_HOME: /tmp/miles-guo-hf-cache
       PYTHONUNBUFFERED: '1'
     steps:
       - uses: actions/checkout@v4
