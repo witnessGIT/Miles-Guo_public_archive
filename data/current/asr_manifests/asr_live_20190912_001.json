@@ -1,0 +1,11 @@
+{
+  "error": "\nFetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]\nFetching 4 files: 100%|██████████| 4/4 [00:00<00:00, 1176.85it/s]\n{\"live_id\": \"LIVE_20190912_001\", \"status\": \"failed\", \"error\": \"[Errno 2] No such file or directory: 'ffmpeg'\"}\n",
+  "generated_at": "2026-10-11T16:03:41Z",
+  "live_id": "LIVE_20190912_001",
+  "media_committed_to_git": false,
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "paid_api_used": false,
+  "schema_version": "local-asr-result-v1",
+  "software": "mlx-whisper",
+  "status": "blocked_no_usable_public_media"
+}
