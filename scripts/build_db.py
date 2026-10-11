@@ -32,6 +32,7 @@ DATASETS: tuple[tuple[str, str], ...] = (
     ("topics", "topics"),
     ("item_entities", "item_entities"),
     ("item_topics", "item_topics"),
+    ("segment_topics", "segment_topics"),
     ("source_match_candidates", "source_match_candidates"),
     ("media_assets", "media_assets"),
     ("transcript_versions", "transcript_versions"),
@@ -41,9 +42,14 @@ DATASETS: tuple[tuple[str, str], ...] = (
     ("live_events", "live_events"),
     ("segment_events", "segment_events"),
     ("segment_claims", "segment_claims"),
+    ("segment_key_points", "segment_key_points"),
     ("segment_relations", "segment_relations"),
     ("segment_clip_notes", "segment_clip_notes"),
     ("evidence_links", "evidence_links"),
+    ("archive_item_segment_matches", "archive_item_segment_matches"),
+    ("semantic_index_manifests", "semantic_index_manifests"),
+    ("retrieval_eval_queries", "retrieval_eval_queries"),
+    ("retrieval_eval_judgments", "retrieval_eval_judgments"),
     ("verification_checks", "verification_checks"),
 )
 

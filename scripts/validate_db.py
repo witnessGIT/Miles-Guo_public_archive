@@ -18,6 +18,7 @@ PROJECT_NAME = "Miles-Guo_public_archive"
 LIVE_ID_RE = re.compile(r"^LIVE_\d{8}_\d{3}$")
 SEGMENT_ID_RE = re.compile(r"^LIVE_\d{8}_\d{3}_SEG_\d{6}$")
 SOURCE_ID_RE = re.compile(r"^SRC_[A-Za-z0-9_.-]+$")
+SHA256_RE = re.compile(r"^[0-9a-f]{64}$")
 
 REQUIRED_TABLES = {
     "source_candidates",
@@ -32,9 +33,12 @@ REQUIRED_TABLES = {
     "item_entities",
     "topics",
     "item_topics",
+    "segment_topics",
     "live_segments_fts",
     "media_assets", "transcript_versions", "transcript_cues", "segment_speakers", "segment_entities",
-    "live_events", "segment_events", "segment_claims", "segment_relations",
+    "live_events", "segment_events", "segment_claims", "segment_key_points", "segment_relations",
+    "archive_item_segment_matches", "semantic_index_manifests",
+    "retrieval_eval_queries", "retrieval_eval_judgments",
     "segment_clip_notes", "evidence_links", "verification_checks",
 }
 
@@ -219,7 +223,7 @@ def validate() -> tuple[list[str], list[str], dict[str, int]]:
                 start_sec, end_sec,
                 start_frame, end_frame, fps_at_index,
                 curated_source_id, asr_source_id, time_source_id,
-                playback_verified
+                playback_verified, content_sha256
             FROM live_segments
             ORDER BY live_id, segment_index, id
             """
@@ -254,6 +258,8 @@ def validate() -> tuple[list[str], list[str], dict[str, int]]:
 
             if row["playback_verified"] and row["start_sec"] is None:
                 add_error(errors, f"playback_verified segment has no start_sec: {segment_id}")
+            if row["content_sha256"] is not None and not SHA256_RE.fullmatch(str(row["content_sha256"])):
+                add_error(errors, f"invalid segment content_sha256: {segment_id}")
 
         # Duplicate original platform IDs should be reviewed because they are strong identity evidence.
         duplicate_video_ids = conn.execute(
@@ -365,6 +371,48 @@ def validate() -> tuple[list[str], list[str], dict[str, int]]:
                         errors,
                         f"final accepted check has no prior playback_verified check: {check_id}",
                     )
+
+        # Search enrichment must preserve both the matched wording and each
+        # scoring signal so retrieval results remain explainable.
+        for row in conn.execute(
+            """
+            SELECT id, matched_excerpt, combined_score, rank
+            FROM archive_item_segment_matches
+            ORDER BY id
+            """
+        ):
+            match_id = str(row["id"])
+            if not str(row["matched_excerpt"] or "").strip():
+                add_error(errors, f"archive match has empty matched_excerpt: {match_id}")
+            if not 0 <= float(row["combined_score"]) <= 1:
+                add_error(errors, f"archive match combined_score outside 0-1: {match_id}")
+            if row["rank"] is not None and int(row["rank"]) < 1:
+                add_error(errors, f"archive match rank must be positive: {match_id}")
+
+        for row in conn.execute(
+            """
+            SELECT id, source_snapshot_sha256, index_sha256, local_path, row_count, status
+            FROM semantic_index_manifests
+            ORDER BY id
+            """
+        ):
+            manifest_id = str(row["id"])
+            if not SHA256_RE.fullmatch(str(row["source_snapshot_sha256"] or "")):
+                add_error(errors, f"semantic index has invalid source snapshot hash: {manifest_id}")
+            if row["index_sha256"] is not None and not SHA256_RE.fullmatch(str(row["index_sha256"])):
+                add_error(errors, f"semantic index has invalid index hash: {manifest_id}")
+            if not str(row["local_path"] or "").strip():
+                add_error(errors, f"semantic index has empty local_path: {manifest_id}")
+            if int(row["row_count"]) < 0:
+                add_error(errors, f"semantic index has negative row_count: {manifest_id}")
+            if row["status"] == "ready" and row["index_sha256"] is None:
+                add_warning(warnings, f"ready semantic index lacks index_sha256: {manifest_id}")
+
+        for row in conn.execute(
+            "SELECT id, point_text FROM segment_key_points ORDER BY id"
+        ):
+            if not str(row["point_text"] or "").strip():
+                add_error(errors, f"segment key point has empty point_text: {row['id']}")
 
     finally:
         conn.close()

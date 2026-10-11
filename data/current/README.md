@@ -10,6 +10,11 @@ When creating real records, write them under the matching dataset directory such
 `source_candidates/`, `source_boundaries/`, `live_videos/`, `sources/`, `live_work_items/`,
 `transcript_versions/`, or `transcript_cues/`.
 
+Search-enrichment datasets use `segment_topics/`, `segment_key_points/`,
+`archive_item_segment_matches/`, `semantic_index_manifests/`, `retrieval_eval_queries/`, and
+`retrieval_eval_judgments/`. Semantic vector files and reranker caches stay outside Git; only their
+reproducible manifest is tracked. Ad-hoc user search history is not an archive dataset.
+
 `source_boundaries/` is the repeatable C1 discovery queue. One row means one natural
 page/date/search/detail boundary, not an entire website. After scanning a boundary, write found
 records to `source_candidates/` and append any newly discovered adjacent boundaries as new

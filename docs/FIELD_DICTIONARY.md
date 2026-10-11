@@ -227,6 +227,9 @@ The smallest citable content unit for later retrieval and work. A segment can co
 | `text_asr` | text | no | Raw ASR segment text. |
 | `text_search` | text | no | Search-normalized text; do not replace originals. |
 | `text_summary` | text | no | Short neutral summary of what this segment says. |
+| `headline` | text | no | Short retrieval/display title; neutral and faithful to the segment. |
+| `segment_type` | text | no | Content form such as `speech`, `question`, `answer`, `quote`, `argument`, `list`, `intro`, or `outro`. |
+| `boundary_method` | text | no | Why this citable boundary exists, such as `topic`, `event`, `quote`, `speaker_turn`, `source_caption`, `asr_pause`, or `manual`. |
 | `start_sec`, `end_sec` | number | no | Segment time range. |
 | `start_frame`, `end_frame`, `fps_at_index` | number | no | Use only when frame-accurate location is needed. |
 | `topic_primary`, `topic_secondary` | text | no | Human-readable topic labels. Structured topics may be added later. |
@@ -238,6 +241,7 @@ The smallest citable content unit for later retrieval and work. A segment can co
 | `playback_verified` | 0/1 | yes | Whether audio/video playback verified this segment. |
 | `playback_verified_at` | datetime text | no | UTC verification timestamp. |
 | `review_status` | enum/text | yes | `unverified`, `machine`, `needs_review`, `human_reviewed`, `accepted`, `rejected`. |
+| `content_sha256` | text | no | SHA-256 of the exact indexed segment text so local semantic indexes can detect stale rows. |
 | `created_at`, `updated_at` | datetime text | yes | UTC ISO timestamp. |
 
 ## People, organizations, places and topics
@@ -276,6 +280,20 @@ Entities mentioned or discussed in a segment.
 | `mention_text` | text | no | Exact local wording if useful. |
 | `mention_role` | enum/text | yes | `mentioned`, `speaker`, `target`, `ally`, `opponent`, `source`, `victim`, `location`, `organization`, `quoted`. |
 | `confidence` | number | no | 0-1 if automatic or uncertain. |
+
+### `segment_topics`
+
+Normalized topic assignments for timestamped livestream passages. The two topic columns on
+`live_segments` may be used as display caches, but this table is the searchable many-to-many source.
+
+| Field | Type | Required | How to fill |
+|---|---:|---:|---|
+| `segment_id`, `topic_id` | text | yes | Existing segment and canonical topic IDs. |
+| `topic_role` | enum | yes | `primary`, `secondary`, or `related`. |
+| `relevance` | number | no | 0-1 relevance score. |
+| `extraction_status` | enum | yes | `machine`, `needs_review`, `human_reviewed`, `accepted`, or `rejected`. |
+| `extraction_method` | text | no | Model/process name and version. |
+| `created_at` | datetime text | yes | UTC ISO timestamp. |
 
 ## Events and claims inside the original livestream
 
@@ -324,6 +342,23 @@ Distinct claims made in the original livestream. Store what was said, not whethe
 | `extraction_status` | enum/text | yes | `unreviewed`, `machine`, `human_reviewed`, `accepted`, `needs_review`, `rejected`. |
 | `confidence` | number | no | 0-1 confidence for extraction/normalization. |
 
+### `segment_key_points`
+
+Short neutral takeaways for research, writing and production. A key point must never replace the
+exact original wording. Link it to a claim/event/topic when one exists.
+
+| Field | Type | Required | How to fill |
+|---|---:|---:|---|
+| `id` | text | yes | `KPT_<segment_id>_<NNN>`. |
+| `segment_id`, `point_index` | text/integer | yes | Parent segment and zero-based stable order. |
+| `point_type` | enum | yes | `takeaway`, `context`, `argument`, `evidence`, `conclusion`, `question`, `warning`, or `instruction`. |
+| `point_text` | text | yes | Concise neutral summary. Do not introduce outside facts. |
+| `significance` | text | no | Why the point helps research or retrieval, without asserting truth. |
+| `topic_id`, `event_id`, `supporting_claim_id` | text | no | Structured links when confidently available. |
+| `importance`, `confidence` | number | no | Independent 0-1 importance and extraction-confidence scores. |
+| `extraction_status` | enum | yes | Machine results remain `machine` or `needs_review` until reviewed. |
+| `extraction_method`, `created_at` | text/datetime | yes/no | Reproducible extractor identity and UTC creation time. |
+
 ## Related-content retrieval
 
 ### `segment_relations`
@@ -339,6 +374,46 @@ Relations between original livestream segments. Use for “find related parts”
 | `explanation` | text | no | One sentence explaining the link. |
 | `confidence` | number | no | 0-1; required when `basis=semantic`. |
 | `evidence_segment_id` | text | no | Segment that explicitly states the relation, if any. |
+
+### `archive_item_segment_matches`
+
+Links a public news report, article, post or other `archive_item` to exact original livestream
+passages. Ordinary private/ad-hoc search queries are not stored here.
+
+| Field | Type | Required | How to fill |
+|---|---:|---:|---|
+| `id` | text | yes | Stable match ID. |
+| `item_id`, `segment_id` | text | yes | Public archive item and matched livestream segment. |
+| `match_type` | enum | yes | `exact_quote`, `near_quote`, `semantic`, `same_entity`, `same_event`, `same_claim`, `supports`, `contradicts`, or `background`. |
+| `query_excerpt`, `matched_excerpt` | text | no/yes | The news-side clue and exact livestream-side wording. |
+| `lexical_score`, `semantic_score`, `rerank_score`, `entity_score`, `event_score` | number | no | Separate 0-1 signals; never collapse away the reason for a match. |
+| `combined_score`, `rank` | number/integer | yes/no | Final retrieval score and result position. |
+| `match_reasons_json`, `explanation` | JSON/text | no | Human-readable and machine-readable reasons. |
+| `model_name`, `model_revision` | text | no | Reproducibility metadata for machine matching. |
+| `match_status` | enum | yes | `machine`, `needs_review`, `human_reviewed`, `accepted`, or `rejected`. |
+| `created_at` | datetime text | yes | UTC ISO timestamp. |
+
+### `semantic_index_manifests`
+
+Tracks local reproducible search indexes. Vector files and reranker caches are large local artifacts
+and are not committed; only their model, input snapshot, checksum, local path and status are stored.
+
+| Field | Type | Required | How to fill |
+|---|---:|---:|---|
+| `id`, `index_kind`, `corpus_scope` | text | yes | Stable ID; `dense`, `sparse`, `hybrid`, or `reranker_cache`; indexed corpus description. |
+| `model_name`, `model_revision` | text | yes/no | Exact local model identity. |
+| `embedding_dimensions`, `distance_metric` | number/text | no | Vector shape and similarity measure. |
+| `chunking_version` | text | yes | Version of the natural-boundary passage builder. |
+| `source_snapshot_sha256`, `index_sha256` | text | yes/no | Detect corpus or index changes. |
+| `local_path`, `row_count`, `status` | text/integer/enum | yes | Local artifact path, indexed rows and `building`/`ready`/`stale`/`error`. |
+| `generated_at`, `metadata_json` | datetime/JSON | yes/no | Build time and technical details. |
+
+### `retrieval_eval_queries` and `retrieval_eval_judgments`
+
+Versioned public test cases for exact quotes, vague recollections, news excerpts, questions,
+entity/event searches and cross-language searches. Judgments map each query to expected segments
+with relevance grades `0` (irrelevant) through `3` (exact/highly relevant). These tables make search
+quality measurable; they must not be used to store private user query history.
 
 ### `evidence_links`
 

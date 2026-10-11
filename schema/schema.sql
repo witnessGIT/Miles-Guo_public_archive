@@ -113,6 +113,9 @@ CREATE TABLE IF NOT EXISTS live_segments (
     text_asr TEXT,
     text_search TEXT,
     text_summary TEXT,
+    headline TEXT,
+    segment_type TEXT,
+    boundary_method TEXT,
 
     start_sec REAL,
     end_sec REAL,
@@ -135,6 +138,7 @@ CREATE TABLE IF NOT EXISTS live_segments (
     playback_verified INTEGER NOT NULL DEFAULT 0 CHECK (playback_verified IN (0,1)),
     playback_verified_at TEXT,
     review_status TEXT NOT NULL DEFAULT 'unverified',
+    content_sha256 TEXT,
 
     created_at TEXT NOT NULL,
     updated_at TEXT NOT NULL,
@@ -210,6 +214,21 @@ CREATE TABLE IF NOT EXISTS item_topics (
     topic_id TEXT NOT NULL REFERENCES topics(id) ON DELETE CASCADE,
     confidence REAL CHECK (confidence IS NULL OR (confidence >= 0 AND confidence <= 1)),
     PRIMARY KEY (item_id, topic_id)
+);
+
+-- Normalized topic assignments for timestamped livestream passages. The legacy
+-- topic_primary/topic_secondary columns remain useful display caches.
+CREATE TABLE IF NOT EXISTS segment_topics (
+    segment_id TEXT NOT NULL REFERENCES live_segments(id) ON DELETE CASCADE,
+    topic_id TEXT NOT NULL REFERENCES topics(id) ON DELETE CASCADE,
+    topic_role TEXT NOT NULL DEFAULT 'related'
+        CHECK (topic_role IN ('primary','secondary','related')),
+    relevance REAL CHECK (relevance IS NULL OR (relevance >= 0 AND relevance <= 1)),
+    extraction_status TEXT NOT NULL DEFAULT 'machine'
+        CHECK (extraction_status IN ('machine','needs_review','human_reviewed','accepted','rejected')),
+    extraction_method TEXT,
+    created_at TEXT NOT NULL,
+    PRIMARY KEY (segment_id, topic_id, topic_role)
 );
 
 -- Detailed original-livestream layer. These tables deliberately contain no later news,
@@ -319,6 +338,28 @@ CREATE TABLE IF NOT EXISTS segment_claims (
     confidence REAL CHECK (confidence IS NULL OR (confidence >= 0 AND confidence <= 1))
 );
 
+-- Short neutral takeaways for research, writing and production. Key points are
+-- summaries, not substitutes for the exact quote kept on the segment/claim.
+CREATE TABLE IF NOT EXISTS segment_key_points (
+    id TEXT PRIMARY KEY,
+    segment_id TEXT NOT NULL REFERENCES live_segments(id) ON DELETE CASCADE,
+    point_index INTEGER NOT NULL CHECK (point_index >= 0),
+    point_type TEXT NOT NULL DEFAULT 'takeaway'
+        CHECK (point_type IN ('takeaway','context','argument','evidence','conclusion','question','warning','instruction')),
+    point_text TEXT NOT NULL,
+    significance TEXT,
+    topic_id TEXT REFERENCES topics(id) ON DELETE SET NULL,
+    event_id TEXT REFERENCES live_events(id) ON DELETE SET NULL,
+    supporting_claim_id TEXT REFERENCES segment_claims(id) ON DELETE SET NULL,
+    importance REAL CHECK (importance IS NULL OR (importance >= 0 AND importance <= 1)),
+    confidence REAL CHECK (confidence IS NULL OR (confidence >= 0 AND confidence <= 1)),
+    extraction_status TEXT NOT NULL DEFAULT 'machine'
+        CHECK (extraction_status IN ('machine','needs_review','human_reviewed','accepted','rejected')),
+    extraction_method TEXT,
+    created_at TEXT NOT NULL,
+    UNIQUE(segment_id, point_index)
+);
+
 CREATE TABLE IF NOT EXISTS segment_relations (
     id TEXT PRIMARY KEY,
     from_segment_id TEXT NOT NULL REFERENCES live_segments(id) ON DELETE CASCADE,
@@ -348,7 +389,8 @@ CREATE TABLE IF NOT EXISTS evidence_links (
     subject_type TEXT NOT NULL
         CHECK (subject_type IN (
             'segment','transcript_cue','segment_entity','segment_event',
-            'segment_claim','segment_relation','segment_clip_note','live_event'
+            'segment_claim','segment_key_point','segment_relation',
+            'segment_clip_note','live_event','archive_item_segment_match'
         )),
     subject_id TEXT NOT NULL,
     live_id TEXT NOT NULL REFERENCES live_videos(id) ON DELETE CASCADE,
@@ -365,6 +407,81 @@ CREATE TABLE IF NOT EXISTS evidence_links (
     CHECK (segment_id IS NOT NULL OR transcript_cue_id IS NOT NULL OR source_id IS NOT NULL),
     CHECK (start_sec IS NULL OR start_sec >= 0),
     CHECK (end_sec IS NULL OR start_sec IS NULL OR end_sec >= start_sec)
+);
+
+-- Durable links from public news/articles/posts to the original livestream.
+-- Ad-hoc user searches stay local and are not written here.
+CREATE TABLE IF NOT EXISTS archive_item_segment_matches (
+    id TEXT PRIMARY KEY,
+    item_id TEXT NOT NULL REFERENCES archive_items(id) ON DELETE CASCADE,
+    segment_id TEXT NOT NULL REFERENCES live_segments(id) ON DELETE CASCADE,
+    match_type TEXT NOT NULL
+        CHECK (match_type IN ('exact_quote','near_quote','semantic','same_entity','same_event','same_claim','supports','contradicts','background')),
+    query_excerpt TEXT,
+    matched_excerpt TEXT NOT NULL,
+    lexical_score REAL CHECK (lexical_score IS NULL OR (lexical_score >= 0 AND lexical_score <= 1)),
+    semantic_score REAL CHECK (semantic_score IS NULL OR (semantic_score >= 0 AND semantic_score <= 1)),
+    rerank_score REAL CHECK (rerank_score IS NULL OR (rerank_score >= 0 AND rerank_score <= 1)),
+    entity_score REAL CHECK (entity_score IS NULL OR (entity_score >= 0 AND entity_score <= 1)),
+    event_score REAL CHECK (event_score IS NULL OR (event_score >= 0 AND event_score <= 1)),
+    combined_score REAL NOT NULL CHECK (combined_score >= 0 AND combined_score <= 1),
+    rank INTEGER CHECK (rank IS NULL OR rank > 0),
+    match_reasons_json TEXT,
+    explanation TEXT,
+    model_name TEXT,
+    model_revision TEXT,
+    match_status TEXT NOT NULL DEFAULT 'machine'
+        CHECK (match_status IN ('machine','needs_review','human_reviewed','accepted','rejected')),
+    created_at TEXT NOT NULL,
+    UNIQUE(item_id, segment_id, match_type)
+);
+
+-- Only index metadata is Git-tracked. Dense/sparse vectors and reranker caches
+-- remain local because they are large and reproducible.
+CREATE TABLE IF NOT EXISTS semantic_index_manifests (
+    id TEXT PRIMARY KEY,
+    index_kind TEXT NOT NULL
+        CHECK (index_kind IN ('dense','sparse','hybrid','reranker_cache')),
+    corpus_scope TEXT NOT NULL,
+    model_name TEXT NOT NULL,
+    model_revision TEXT,
+    embedding_dimensions INTEGER CHECK (embedding_dimensions IS NULL OR embedding_dimensions > 0),
+    distance_metric TEXT,
+    chunking_version TEXT NOT NULL,
+    source_snapshot_sha256 TEXT NOT NULL,
+    index_sha256 TEXT,
+    local_path TEXT NOT NULL,
+    row_count INTEGER NOT NULL CHECK (row_count >= 0),
+    status TEXT NOT NULL DEFAULT 'ready'
+        CHECK (status IN ('building','ready','stale','error')),
+    generated_at TEXT NOT NULL,
+    metadata_json TEXT
+);
+
+-- Public, non-private regression queries keep vague-phrase and news-to-live
+-- retrieval measurable across model/index changes.
+CREATE TABLE IF NOT EXISTS retrieval_eval_queries (
+    id TEXT PRIMARY KEY,
+    query_text TEXT NOT NULL,
+    query_kind TEXT NOT NULL
+        CHECK (query_kind IN ('exact_quote','vague_phrase','news_excerpt','question','entity_event','cross_language')),
+    language TEXT NOT NULL DEFAULT 'zh',
+    source_item_id TEXT REFERENCES archive_items(id) ON DELETE SET NULL,
+    filters_json TEXT,
+    notes TEXT,
+    created_at TEXT NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS retrieval_eval_judgments (
+    query_id TEXT NOT NULL REFERENCES retrieval_eval_queries(id) ON DELETE CASCADE,
+    segment_id TEXT NOT NULL REFERENCES live_segments(id) ON DELETE CASCADE,
+    relevance_grade INTEGER NOT NULL CHECK (relevance_grade BETWEEN 0 AND 3),
+    rationale TEXT,
+    judgment_status TEXT NOT NULL DEFAULT 'needs_review'
+        CHECK (judgment_status IN ('machine','needs_review','human_reviewed','accepted','rejected')),
+    judged_by TEXT,
+    created_at TEXT NOT NULL,
+    PRIMARY KEY (query_id, segment_id)
 );
 
 CREATE TABLE IF NOT EXISTS verification_checks (
@@ -418,10 +535,16 @@ CREATE INDEX IF NOT EXISTS idx_transcript_versions_live_id ON transcript_version
 CREATE INDEX IF NOT EXISTS idx_transcript_cues_live_time ON transcript_cues(live_id, start_sec);
 CREATE INDEX IF NOT EXISTS idx_transcript_cues_version ON transcript_cues(transcript_version_id, cue_index);
 CREATE INDEX IF NOT EXISTS idx_segment_entities_entity_id ON segment_entities(entity_id);
+CREATE INDEX IF NOT EXISTS idx_segment_topics_topic_id ON segment_topics(topic_id, topic_role);
 CREATE INDEX IF NOT EXISTS idx_segment_events_event_id ON segment_events(event_id);
 CREATE INDEX IF NOT EXISTS idx_segment_claims_type ON segment_claims(claim_type);
+CREATE INDEX IF NOT EXISTS idx_segment_key_points_segment ON segment_key_points(segment_id, point_index);
 CREATE INDEX IF NOT EXISTS idx_segment_relations_to ON segment_relations(to_segment_id, relation_type);
 CREATE INDEX IF NOT EXISTS idx_evidence_links_subject ON evidence_links(subject_type, subject_id);
 CREATE INDEX IF NOT EXISTS idx_evidence_links_live_time ON evidence_links(live_id, start_sec);
+CREATE INDEX IF NOT EXISTS idx_archive_item_segment_matches_item ON archive_item_segment_matches(item_id, combined_score DESC);
+CREATE INDEX IF NOT EXISTS idx_archive_item_segment_matches_segment ON archive_item_segment_matches(segment_id, match_type);
+CREATE INDEX IF NOT EXISTS idx_semantic_index_manifests_status ON semantic_index_manifests(status, generated_at);
+CREATE INDEX IF NOT EXISTS idx_retrieval_eval_judgments_segment ON retrieval_eval_judgments(segment_id, relevance_grade);
 CREATE INDEX IF NOT EXISTS idx_verification_checks_target ON verification_checks(target_type, target_id);
 CREATE INDEX IF NOT EXISTS idx_verification_checks_live_stage ON verification_checks(live_id, check_stage, check_status);
