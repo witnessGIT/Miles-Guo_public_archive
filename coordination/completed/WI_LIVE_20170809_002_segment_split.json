@@ -1,0 +1,16 @@
+{
+  "task_id": "WI_LIVE_20170809_002_segment_split",
+  "agent_id": "github-actions-natural-segments-38249570902",
+  "completed_at": "2026-10-12T12:33:15.425959+00:00",
+  "result_commit": "901619bbf963102c6f9afc98550dd75b3de8c926",
+  "outputs": [
+    "data/current/live_segments/asr_live_20170809_002.jsonl"
+  ],
+  "validation": "Natural ASR passage boundaries; build_db/validate_db/full tests OK; machine status",
+  "workflow_mode": "continuous-worker-v2",
+  "claim_protocol": "claim-protocol-v2",
+  "entry_mode": "work",
+  "continue_after_finish": true,
+  "finish_prerequisites_revalidated": true,
+  "notes": "Task completed only after re-checking the latest repository dependency contract. Under continuous-worker-v2, refresh repository state and claim the next eligible task unless a documented stop condition applies."
+}
