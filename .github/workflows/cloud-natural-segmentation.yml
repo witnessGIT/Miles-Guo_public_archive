@@ -1,0 +1,42 @@
+name: Cloud Natural Segmentation
+
+on:
+  workflow_dispatch:
+    inputs:
+      batch_size:
+        description: Number of completed transcripts to group into natural passages
+        required: true
+        default: '20'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: miles-guo-cloud-natural-segmentation-writer
+  cancel-in-progress: false
+
+jobs:
+  segment:
+    if: github.actor == 'witnessGIT'
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Validate cues and build natural passages
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          python scripts/cloud_natural_segment_batch.py \
+            --repo "$GITHUB_WORKSPACE" \
+            --batch-size '${{ inputs.batch_size }}' \
+            --agent-id "github-actions-natural-segments-${GITHUB_RUN_ID}"

@@ -13,6 +13,7 @@
   "streaming_enrichment_policy": "completed transcripts may advance immediately through dependent stages without waiting for corpus-wide ASR completion",
   "entity_cloud_workflow": ".github/workflows/cloud-entity-pilot.yml",
   "key_points_cloud_workflow": ".github/workflows/cloud-key-points-pilot.yml",
+  "natural_segmentation_cloud_workflow": ".github/workflows/cloud-natural-segmentation.yml",
   "playback_enabled_in_current_phase": false,
   "active_data_root": "data/current",
   "sealed_historical_data_policy": "Files outside data/current are historical audit material only and must not count as current progress or active database input.",
