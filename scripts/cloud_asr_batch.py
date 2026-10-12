@@ -67,11 +67,11 @@ def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--repo", type=Path, required=True)
     parser.add_argument("--work-root", type=Path, required=True)
-    parser.add_argument("--batch-size", type=int, default=10)
+    parser.add_argument("--batch-size", type=int, default=100)
     parser.add_argument("--agent-id", required=True)
     args = parser.parse_args()
-    if not 1 <= args.batch_size <= 50:
-        raise SystemExit("cloud ASR batch size must be between 1 and 50")
+    if not 1 <= args.batch_size <= 100:
+        raise SystemExit("cloud ASR batch size must be between 1 and 100")
     repo = args.repo.resolve()
     work = args.work_root.resolve()
     tasks = eligible(repo, args.batch_size)

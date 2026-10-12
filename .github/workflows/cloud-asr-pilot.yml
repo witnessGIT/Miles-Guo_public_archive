@@ -4,9 +4,9 @@ on:
   workflow_dispatch:
     inputs:
       batch_size:
-        description: Number of livestreams for this conservative cloud pilot
+        description: Number of livestreams in this cloud ASR batch
         required: true
-        default: '10'
+        default: '100'
 
 permissions:
   contents: write
