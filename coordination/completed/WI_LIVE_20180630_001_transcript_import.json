@@ -1,0 +1,20 @@
+{
+  "task_id": "WI_LIVE_20180630_001_transcript_import",
+  "agent_id": "github-actions-cloud-asr-38213475499",
+  "completed_at": "2026-10-12T09:56:37.168364+00:00",
+  "result_commit": "22cc17a32e4f17a48f0641724c5a6fce67da78f6",
+  "outputs": [
+    "data/current/transcript_versions/asr_live_20180630_001.jsonl",
+    "data/current/transcript_cues/asr_live_20180630_001.jsonl",
+    "data/current/live_segments/asr_live_20180630_001.jsonl",
+    "data/current/asr_manifests/asr_live_20180630_001.json",
+    "database/Miles-Guo_public_archive.sqlite3"
+  ],
+  "validation": "GitHub-hosted MLX Whisper; build_db OK; validate_db OK; full tests OK; machine ASR remains unverified",
+  "workflow_mode": "continuous-worker-v2",
+  "claim_protocol": "claim-protocol-v2",
+  "entry_mode": "work",
+  "continue_after_finish": true,
+  "finish_prerequisites_revalidated": true,
+  "notes": "Task completed only after re-checking the latest repository dependency contract. Under continuous-worker-v2, refresh repository state and claim the next eligible task unless a documented stop condition applies."
+}
