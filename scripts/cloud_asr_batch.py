@@ -87,62 +87,77 @@ def main() -> int:
     run(["git", "commit", "-m", f"claim: reserve GitHub Actions ASR pilot of {len(tasks)}"], repo)
     push_with_rebase(repo)
 
-    success: list[tuple[str, str, list[str]]] = []
-    failed: list[tuple[str, str, str]] = []
-    attempt_paths: list[str] = []
-    for task_id, live_id in tasks:
-        completed = run(
-            [sys.executable, "scripts/cloud_asr_item.py", "--repo", str(repo), "--live-id", live_id, "--work-root", str(work)],
-            repo,
-            check=False,
-        )
-        stem = f"asr_{live_id.lower()}"
-        outputs = [
-            f"data/current/transcript_versions/{stem}.jsonl",
-            f"data/current/transcript_cues/{stem}.jsonl",
-            f"data/current/live_segments/{stem}.jsonl",
-            f"data/current/asr_manifests/{stem}.json",
-        ]
-        if completed.returncode == 0 and all((repo / path).exists() for path in outputs):
-            success.append((task_id, live_id, outputs))
-        else:
-            attempt = f"data/current/asr_attempts/cloud_{live_id.lower()}.json"
-            if (repo / attempt).exists():
-                attempt_paths.append(attempt)
-            failed.append((task_id, live_id, attempt))
+    total_success = 0
+    total_failed = 0
+    checkpoint_size = 10
+    for checkpoint_number, start in enumerate(range(0, len(tasks), checkpoint_size), start=1):
+        checkpoint = tasks[start : start + checkpoint_size]
+        success: list[tuple[str, str, list[str]]] = []
+        failed: list[tuple[str, str, str]] = []
+        attempt_paths: list[str] = []
+        for task_id, live_id in checkpoint:
+            completed = run(
+                [sys.executable, "scripts/cloud_asr_item.py", "--repo", str(repo), "--live-id", live_id, "--work-root", str(work)],
+                repo,
+                check=False,
+            )
+            stem = f"asr_{live_id.lower()}"
+            outputs = [
+                f"data/current/transcript_versions/{stem}.jsonl",
+                f"data/current/transcript_cues/{stem}.jsonl",
+                f"data/current/live_segments/{stem}.jsonl",
+                f"data/current/asr_manifests/{stem}.json",
+            ]
+            if completed.returncode == 0 and all((repo / path).exists() for path in outputs):
+                success.append((task_id, live_id, outputs))
+            else:
+                attempt = f"data/current/asr_attempts/cloud_{live_id.lower()}.json"
+                if (repo / attempt).exists():
+                    attempt_paths.append(attempt)
+                failed.append((task_id, live_id, attempt))
 
-    run([sys.executable, "scripts/build_db.py"], repo)
-    run([sys.executable, "scripts/validate_db.py"], repo)
-    run([sys.executable, "-m", "unittest", "discover", "-s", "tests", "-p", "test_*.py", "-v"], repo)
+        run([sys.executable, "scripts/build_db.py"], repo)
+        run([sys.executable, "scripts/validate_db.py"], repo)
+        run([sys.executable, "-m", "unittest", "discover", "-s", "tests", "-p", "test_*.py", "-q"], repo)
 
-    completion_paths: list[str] = []
-    output_paths: list[str] = []
-    for task_id, _live_id, outputs in success:
+        completion_paths: list[str] = []
+        output_paths: list[str] = []
+        for task_id, _live_id, outputs in success:
+            run([
+                sys.executable, "scripts/next_task.py", "--finish", task_id,
+                "--agent-id", args.agent_id, "--outputs", *outputs,
+                "database/Miles-Guo_public_archive.sqlite3", "--validation",
+                "GitHub-hosted MLX Whisper; build_db OK; validate_db OK; full tests OK; machine ASR remains unverified",
+            ], repo)
+            completion_paths.append(f"coordination/completed/{task_id}.json")
+            output_paths.extend(outputs)
+        for task_id, _live_id, _attempt in failed:
+            run([
+                sys.executable, "scripts/next_task.py", "--release", task_id,
+                "--agent-id", args.agent_id,
+                "--reason", "GitHub-hosted runner could not complete media access or ASR; retained for retry",
+            ], repo)
+
+        checkpoint_claims = [f"coordination/claims/{task_id}.json" for task_id, _live_id in checkpoint]
+        stage = sorted(set(output_paths + attempt_paths + completion_paths + checkpoint_claims + ["database/Miles-Guo_public_archive.sqlite3"]))
+        run(["git", "add", *stage], repo)
+        run(["git", "diff", "--cached", "--check"], repo)
         run([
-            sys.executable, "scripts/next_task.py", "--finish", task_id,
-            "--agent-id", args.agent_id, "--outputs", *outputs,
-            "database/Miles-Guo_public_archive.sqlite3", "--validation",
-            "GitHub-hosted MLX Whisper; build_db OK; validate_db OK; 103 tests OK; machine ASR remains unverified",
+            "git", "commit", "-m",
+            f"data: checkpoint cloud ASR batch {checkpoint_number} ({len(success)} transcribed, {len(failed)} retryable)",
         ], repo)
-        completion_paths.append(f"coordination/completed/{task_id}.json")
-        output_paths.extend(outputs)
-    for task_id, _live_id, _attempt in failed:
-        run([
-            sys.executable, "scripts/next_task.py", "--release", task_id,
-            "--agent-id", args.agent_id,
-            "--reason", "GitHub-hosted runner could not complete media access or ASR; retained for retry",
-        ], repo)
+        push_with_rebase(repo)
+        total_success += len(success)
+        total_failed += len(failed)
+        print(json.dumps({
+            "checkpoint": checkpoint_number,
+            "claimed": len(checkpoint),
+            "transcribed": len(success),
+            "retryable": len(failed),
+        }, ensure_ascii=False), flush=True)
 
-    stage = sorted(set(output_paths + attempt_paths + completion_paths + claim_paths + ["database/Miles-Guo_public_archive.sqlite3"]))
-    run(["git", "add", *stage], repo)
-    run(["git", "diff", "--cached", "--check"], repo)
-    run([
-        "git", "commit", "-m",
-        f"data: publish cloud ASR pilot ({len(success)} transcribed, {len(failed)} retryable)",
-    ], repo)
-    push_with_rebase(repo)
-    print(json.dumps({"claimed": len(tasks), "transcribed": len(success), "retryable": len(failed)}, ensure_ascii=False))
-    return 0 if success else 2
+    print(json.dumps({"claimed": len(tasks), "transcribed": total_success, "retryable": total_failed}, ensure_ascii=False))
+    return 0 if total_success else 2
 
 
 if __name__ == "__main__":
