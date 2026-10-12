@@ -129,7 +129,7 @@ python scripts/next_task.py \
 - 人工整理文字与自动 ASR 分开保存；
 - 时间定位以 `start_sec` / `end_sec` 为主，帧号仅作辅助；
 - `data/` 中的 JSON / JSONL 是 Git 长期真源；
-- `database/Miles-Guo_public_archive.sqlite3` 是可删除、可重建的查询产物；
+- `database/Miles-Guo_public_archive.sqlite3` 是可删除、可重建的本地查询产物；因体积会持续增长，不提交 Git；
 - SQLite 使用 FTS5 提供全文检索；
 - 所有来源保留站点、URL、第三方 ID、抓取时间与来源等级。
 
@@ -345,6 +345,8 @@ python scripts/validate_db.py
 ```
 
 并仅通过 `data/` + `schema/` 重建等价的可搜索数据库。
+GitHub Actions 也执行同样的构建与验证，但只提交 JSON/JSONL、来源与协调记录，
+不提交派生 SQLite 文件。
 
 ## Search contract
 

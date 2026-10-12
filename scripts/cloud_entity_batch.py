@@ -78,8 +78,7 @@ def main() -> int:
         run([
             sys.executable, "scripts/next_task.py", "--finish", task_id,
             "--agent-id", args.agent_id, "--outputs", *outputs,
-            "database/Miles-Guo_public_archive.sqlite3", "--validation",
-            "Open-source Qwen entity extraction; exact mention substring guard; build_db/validate_db/tests OK; machine status",
+            "--validation", "Open-source Qwen entity extraction; exact mention substring guard; build_db/validate_db/tests OK; machine status",
         ], repo)
         completion_paths.append(f"coordination/completed/{task_id}.json")
         output_paths.extend(outputs)
@@ -88,7 +87,7 @@ def main() -> int:
         print(json.dumps({"live_id": _live_id, "error": error}, ensure_ascii=False))
         run([sys.executable, "scripts/next_task.py", "--release", task_id, "--agent-id", args.agent_id, "--reason", "Cloud entity extraction failed; retained for retry"], repo)
 
-    stage = sorted(set(output_paths + completion_paths + claim_paths + ["database/Miles-Guo_public_archive.sqlite3"]))
+    stage = sorted(set(output_paths + completion_paths + claim_paths))
     run(["git", "add", *stage], repo)
     run(["git", "diff", "--cached", "--check"], repo)
     run(["git", "commit", "-m", f"data: publish cloud entity pilot ({len(success)} enriched, {len(failed)} retryable)"], repo)

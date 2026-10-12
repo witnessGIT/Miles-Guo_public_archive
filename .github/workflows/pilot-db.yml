@@ -60,26 +60,7 @@ jobs:
       - name: Validate SQLite
         run: python scripts/validate_db.py
 
-      - name: Commit rebuilt Pilot database
-        if: github.event_name == 'push'
+      - name: Confirm SQLite remains a derived artifact
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add database/Miles-Guo_public_archive.sqlite3
-          if git diff --cached --quiet; then
-            echo "Pilot SQLite is already current."
-          else
-            git commit -m "build: refresh Pilot SQLite database"
-            rebuild_base="$(git rev-parse HEAD^)"
-            if git push; then
-              exit 0
-            fi
-            git fetch origin main
-            if git merge-base --is-ancestor "$rebuild_base" origin/main; then
-              echo "main advanced during this rebuild; its newer push triggered a fresh run."
-              echo "Treating this non-fast-forward as a concurrency handoff, not a build failure."
-              exit 0
-            fi
-            echo "Database push failed for a reason other than a normal concurrent main advance."
-            exit 1
-          fi
+          git check-ignore database/Miles-Guo_public_archive.sqlite3
+          test -f database/Miles-Guo_public_archive.sqlite3

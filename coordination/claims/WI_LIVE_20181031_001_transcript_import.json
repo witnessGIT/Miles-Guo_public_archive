@@ -3,7 +3,7 @@
   "agent_id": "github-actions-cloud-asr-38213475499",
   "claimed_at": "2026-10-12T06:41:26.609592+00:00",
   "base_commit": "5768727283368bc922af9aa53584717d82d0c533",
-  "status": "in_progress",
+  "status": "released",
   "workflow_mode": "continuous-worker-v2",
   "claim_protocol": "claim-protocol-v2",
   "entry_mode": "work",
@@ -22,5 +22,7 @@
   ],
   "scope": "Import source transcript or ASR text without overwriting original text.",
   "reclaimed_expired_claim": true,
-  "static_claim_lease_hours": 24
+  "static_claim_lease_hours": 24,
+  "released_at": "2026-10-12T11:40:07.131130+00:00",
+  "release_reason": "Cloud checkpoint could not publish because derived SQLite exceeded GitHub single-file limit; retry after database was made local-only"
 }

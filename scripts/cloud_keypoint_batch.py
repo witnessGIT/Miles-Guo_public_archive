@@ -73,10 +73,10 @@ def main() -> int:
     run([sys.executable, "scripts/validate_db.py"], repo)
     run([sys.executable, "-m", "unittest", "discover", "-s", "tests", "-p", "test_*.py", "-q"], repo)
 
-    stage = ["database/Miles-Guo_public_archive.sqlite3", *claim_paths]
+    stage = [*claim_paths]
     for task_id, live_id, outputs, stats in success:
         if not reprocess_live_id:
-            run([sys.executable, "scripts/next_task.py", "--finish", task_id, "--agent-id", args.agent_id, "--outputs", *outputs, "database/Miles-Guo_public_archive.sqlite3", "--validation", "Evidence-quote-grounded variable-count key points; controlled topics; build_db/validate_db/full tests OK; machine status"], repo)
+            run([sys.executable, "scripts/next_task.py", "--finish", task_id, "--agent-id", args.agent_id, "--outputs", *outputs, "--validation", "Evidence-quote-grounded variable-count key points; controlled topics; build_db/validate_db/full tests OK; machine status"], repo)
             stage.append(f"coordination/completed/{task_id}.json")
         stage.extend(outputs)
         print(json.dumps({"live_id": live_id, **stats}, ensure_ascii=False))

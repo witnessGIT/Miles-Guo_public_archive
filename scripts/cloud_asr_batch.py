@@ -86,6 +86,7 @@ def main() -> int:
     run(["git", "add", *claim_paths], repo)
     run(["git", "commit", "-m", f"claim: reserve GitHub Actions ASR pilot of {len(tasks)}"], repo)
     push_with_rebase(repo)
+    run([sys.executable, "scripts/build_db.py"], repo)
 
     total_success = 0
     total_failed = 0
@@ -126,8 +127,7 @@ def main() -> int:
             run([
                 sys.executable, "scripts/next_task.py", "--finish", task_id,
                 "--agent-id", args.agent_id, "--outputs", *outputs,
-                "database/Miles-Guo_public_archive.sqlite3", "--validation",
-                "GitHub-hosted MLX Whisper; build_db OK; validate_db OK; full tests OK; machine ASR remains unverified",
+                "--validation", "GitHub-hosted MLX Whisper; build_db OK; validate_db OK; full tests OK; machine ASR remains unverified",
             ], repo)
             completion_paths.append(f"coordination/completed/{task_id}.json")
             output_paths.extend(outputs)
@@ -139,7 +139,7 @@ def main() -> int:
             ], repo)
 
         checkpoint_claims = [f"coordination/claims/{task_id}.json" for task_id, _live_id in checkpoint]
-        stage = sorted(set(output_paths + attempt_paths + completion_paths + checkpoint_claims + ["database/Miles-Guo_public_archive.sqlite3"]))
+        stage = sorted(set(output_paths + attempt_paths + completion_paths + checkpoint_claims))
         run(["git", "add", *stage], repo)
         run(["git", "diff", "--cached", "--check"], repo)
         run([
