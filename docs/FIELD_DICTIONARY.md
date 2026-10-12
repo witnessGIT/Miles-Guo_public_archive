@@ -168,7 +168,7 @@ as “process N videos” or “extract N claims.”
 | `id` | text | yes | `WI_<live_id>_<stage>`. |
 | `live_id` | text | no | Canonical livestream when known. |
 | `source_candidate_id` | text | no | Candidate being promoted/reviewed, when no live exists yet. |
-| `work_stage` | enum | yes | `source_merge`, `metadata_fill`, `transcript_import`, `cue_split`, `segment_split`, `entity_pass`, `event_pass`, `claim_pass`, `relation_pass`, `text_verify`, `playback_backlog`. |
+| `work_stage` | enum | yes | `source_merge`, `metadata_fill`, `transcript_import`, `cue_split`, `segment_split`, `key_points_topics`, `entity_pass`, `event_pass`, `claim_pass`, `relation_pass`, `text_verify`, `playback_backlog`. |
 | `work_status` | enum | yes | `open`, `in_progress`, `blocked`, `done`, `superseded`. |
 | `natural_boundary` | text | yes | Example: one canonical livestream + one processing stage. |
 | `instructions` | text | yes | What the agent should do for this stage. |

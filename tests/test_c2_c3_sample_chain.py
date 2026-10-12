@@ -36,8 +36,12 @@ class C2C3SampleChainTest(unittest.TestCase):
 
         items = list(iter_jsonl(DATA / "live_work_items" / "generated.jsonl"))
         sample_items = [row for row in items if row["live_id"] in lives]
-        self.assertEqual(len(sample_items), 30)
+        self.assertEqual(len(sample_items), 33)
         self.assertTrue(all(row["work_status"] == "open" for row in sample_items))
+        self.assertEqual(
+            len([row for row in sample_items if row["work_stage"] == "key_points_topics"]),
+            3,
+        )
 
     def test_promoted_candidates_keep_live_ids(self):
         promoted = {}

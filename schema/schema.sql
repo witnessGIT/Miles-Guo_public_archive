@@ -90,7 +90,7 @@ CREATE TABLE IF NOT EXISTS live_work_items (
     source_candidate_id TEXT REFERENCES source_candidates(id) ON DELETE SET NULL,
     work_stage TEXT NOT NULL CHECK (work_stage IN (
         'source_merge','metadata_fill','transcript_import','cue_split',
-        'segment_split','entity_pass','event_pass','claim_pass',
+        'segment_split','key_points_topics','entity_pass','event_pass','claim_pass',
         'relation_pass','text_verify','playback_backlog'
     )),
     work_status TEXT NOT NULL DEFAULT 'open'

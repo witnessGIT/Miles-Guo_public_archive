@@ -1,0 +1,91 @@
+#!/usr/bin/env python3
+"""Claim, extract, validate and publish a cloud key-point pilot batch."""
+
+from __future__ import annotations
+
+import argparse
+import json
+import sys
+from pathlib import Path
+
+from cloud_asr_batch import push_with_rebase, run
+from cloud_keypoint_item import process_live
+
+
+def eligible(repo: Path, limit: int) -> list[tuple[str, str]]:
+    completed = repo / "coordination" / "completed"
+    claims = repo / "coordination" / "claims"
+    values: list[tuple[str, str]] = []
+    for segment_done in sorted(completed.glob("WI_LIVE_*_segment_split.json")):
+        live_id = segment_done.stem.removeprefix("WI_").removesuffix("_segment_split")
+        task_id = f"WI_{live_id}_key_points_topics"
+        if (completed / f"{task_id}.json").exists() or (claims / f"{task_id}.json").exists():
+            continue
+        values.append((task_id, live_id))
+        if len(values) == limit:
+            break
+    return values
+
+
+def main() -> int:
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--repo", type=Path, required=True)
+    parser.add_argument("--batch-size", type=int, default=1)
+    parser.add_argument("--agent-id", required=True)
+    parser.add_argument("--model", default="mlx-community/Qwen2.5-7B-Instruct-4bit")
+    args = parser.parse_args()
+    if not 1 <= args.batch_size <= 5:
+        raise SystemExit("cloud key-point pilot batch size must be between 1 and 5")
+    repo = args.repo.resolve()
+    tasks = eligible(repo, args.batch_size)
+    if not tasks:
+        print("No eligible key_points_topics tasks.")
+        return 0
+
+    claim_paths: list[str] = []
+    for task_id, _live_id in tasks:
+        run([sys.executable, "scripts/next_task.py", "--claim", "--task", task_id, "--agent-id", args.agent_id], repo)
+        claim_paths.append(f"coordination/claims/{task_id}.json")
+    run(["git", "add", *claim_paths], repo)
+    run(["git", "commit", "-m", f"claim: reserve cloud key-point pilot of {len(tasks)}"], repo)
+    push_with_rebase(repo)
+
+    from mlx_lm import generate, load
+    model, tokenizer = load(args.model)
+
+    def generate_text(prompt: str) -> str:
+        rendered = tokenizer.apply_chat_template([{"role": "user", "content": prompt}], tokenize=False, add_generation_prompt=True)
+        return generate(model, tokenizer, prompt=rendered, max_tokens=256, verbose=False)
+
+    success: list[tuple[str, str, list[str], dict]] = []
+    failed: list[tuple[str, str, str]] = []
+    for task_id, live_id in tasks:
+        try:
+            outputs, stats = process_live(repo, live_id, generate_text)
+            success.append((task_id, live_id, outputs, stats))
+        except Exception as exc:
+            failed.append((task_id, live_id, repr(exc)))
+
+    run([sys.executable, "scripts/build_db.py"], repo)
+    run([sys.executable, "scripts/validate_db.py"], repo)
+    run([sys.executable, "-m", "unittest", "discover", "-s", "tests", "-p", "test_*.py", "-q"], repo)
+
+    stage = ["database/Miles-Guo_public_archive.sqlite3", *claim_paths]
+    for task_id, live_id, outputs, stats in success:
+        run([sys.executable, "scripts/next_task.py", "--finish", task_id, "--agent-id", args.agent_id, "--outputs", *outputs, "database/Miles-Guo_public_archive.sqlite3", "--validation", "Evidence-quote-grounded key points; controlled topics; build_db/validate_db/full tests OK; machine status"], repo)
+        stage.extend(outputs)
+        stage.append(f"coordination/completed/{task_id}.json")
+        print(json.dumps({"live_id": live_id, **stats}, ensure_ascii=False))
+    for task_id, live_id, error in failed:
+        print(json.dumps({"live_id": live_id, "error": error}, ensure_ascii=False))
+        run([sys.executable, "scripts/next_task.py", "--release", task_id, "--agent-id", args.agent_id, "--reason", "Cloud key-point extraction failed; retained for retry"], repo)
+
+    run(["git", "add", *sorted(set(stage))], repo)
+    run(["git", "diff", "--cached", "--check"], repo)
+    run(["git", "commit", "-m", f"data: publish cloud key-point pilot ({len(success)} enriched, {len(failed)} retryable)"], repo)
+    push_with_rebase(repo)
+    return 0 if success else 2
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

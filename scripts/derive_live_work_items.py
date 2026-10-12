@@ -14,6 +14,7 @@ STAGES: tuple[tuple[str, str], ...] = (
     ("transcript_import", "Import source transcript or ASR text without overwriting original text."),
     ("cue_split", "Split transcript into sentence/subtitle cues using natural sentence/time boundaries."),
     ("segment_split", "Create citable segments by natural topic/event/quote boundaries, not by fixed counts."),
+    ("key_points_topics", "Create evidence-grounded neutral key points and controlled topic assignments."),
     ("entity_pass", "Extract speakers, people, organizations, places and mentioned entities."),
     ("event_pass", "Extract events mentioned inside the original livestream."),
     ("claim_pass", "Extract original quotes, opinions, judgments, predictions and questions."),

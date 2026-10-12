@@ -1,0 +1,54 @@
+name: Cloud Key Points and Topics Pilot
+
+on:
+  workflow_dispatch:
+    inputs:
+      batch_size:
+        description: Number of naturally segmented livestreams to summarize
+        required: true
+        default: '1'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: miles-guo-cloud-key-points-writer
+  cancel-in-progress: false
+
+jobs:
+  summarize:
+    if: github.actor == 'witnessGIT'
+    runs-on: macos-14
+    timeout-minutes: 350
+    env:
+      HF_HOME: /tmp/miles-guo-hf-cache
+      PYTHONUNBUFFERED: '1'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Cache the public enrichment model
+        uses: actions/cache@v4
+        with:
+          path: ${{ env.HF_HOME }}/hub
+          key: cloud-key-points-macos-arm64-qwen2.5-7b-instruct-4bit-v1
+
+      - name: Install free local-inference tools
+        run: python -m pip install mlx-lm==0.31.3
+
+      - name: Run claim-bound key-point pilot
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          python scripts/cloud_keypoint_batch.py \
+            --repo "$GITHUB_WORKSPACE" \
+            --batch-size '${{ inputs.batch_size }}' \
+            --agent-id "github-actions-cloud-key-points-${GITHUB_RUN_ID}"

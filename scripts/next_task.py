@@ -67,6 +67,7 @@ WORK_ITEM_STAGE_PRIORITY = {
     "transcript_import": 68,
     "cue_split": 64,
     "segment_split": 62,
+    "key_points_topics": 60,
     "entity_pass": 58,
     "event_pass": 57,
     "claim_pass": 56,
