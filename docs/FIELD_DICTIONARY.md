@@ -353,6 +353,8 @@ exact original wording. Link it to a claim/event/topic when one exists.
 | `segment_id`, `point_index` | text/integer | yes | Parent segment and zero-based stable order. |
 | `point_type` | enum | yes | `takeaway`, `context`, `argument`, `evidence`, `conclusion`, `question`, `warning`, or `instruction`. |
 | `point_text` | text | yes | Concise neutral summary. Do not introduce outside facts. |
+| `evidence_quote` | text | yes | Exact continuous wording from the timestamped ASR segment that supports this point. |
+| `evidence_start_char`, `evidence_end_char` | integer | yes | Character offsets of `evidence_quote` inside the segment ASR text. |
 | `significance` | text | no | Why the point helps research or retrieval, without asserting truth. |
 | `topic_id`, `event_id`, `supporting_claim_id` | text | no | Structured links when confidently available. |
 | `importance`, `confidence` | number | no | Independent 0-1 importance and extraction-confidence scores. |

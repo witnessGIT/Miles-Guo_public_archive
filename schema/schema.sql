@@ -347,6 +347,11 @@ CREATE TABLE IF NOT EXISTS segment_key_points (
     point_type TEXT NOT NULL DEFAULT 'takeaway'
         CHECK (point_type IN ('takeaway','context','argument','evidence','conclusion','question','warning','instruction')),
     point_text TEXT NOT NULL,
+    evidence_quote TEXT,
+    evidence_start_char INTEGER CHECK (evidence_start_char IS NULL OR evidence_start_char >= 0),
+    evidence_end_char INTEGER CHECK (
+        evidence_end_char IS NULL OR (evidence_start_char IS NOT NULL AND evidence_end_char > evidence_start_char)
+    ),
     significance TEXT,
     topic_id TEXT REFERENCES topics(id) ON DELETE SET NULL,
     event_id TEXT REFERENCES live_events(id) ON DELETE SET NULL,

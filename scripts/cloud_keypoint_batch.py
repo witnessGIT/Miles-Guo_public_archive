@@ -33,29 +33,32 @@ def main() -> int:
     parser.add_argument("--batch-size", type=int, default=1)
     parser.add_argument("--agent-id", required=True)
     parser.add_argument("--model", default="mlx-community/Qwen2.5-7B-Instruct-4bit")
+    parser.add_argument("--reprocess-live-id", default="")
     args = parser.parse_args()
     if not 1 <= args.batch_size <= 5:
         raise SystemExit("cloud key-point pilot batch size must be between 1 and 5")
     repo = args.repo.resolve()
-    tasks = eligible(repo, args.batch_size)
+    reprocess_live_id = args.reprocess_live_id.strip()
+    tasks = [(f"WI_{reprocess_live_id}_key_points_topics", reprocess_live_id)] if reprocess_live_id else eligible(repo, args.batch_size)
     if not tasks:
         print("No eligible key_points_topics tasks.")
         return 0
 
     claim_paths: list[str] = []
-    for task_id, _live_id in tasks:
-        run([sys.executable, "scripts/next_task.py", "--claim", "--task", task_id, "--agent-id", args.agent_id], repo)
-        claim_paths.append(f"coordination/claims/{task_id}.json")
-    run(["git", "add", *claim_paths], repo)
-    run(["git", "commit", "-m", f"claim: reserve cloud key-point pilot of {len(tasks)}"], repo)
-    push_with_rebase(repo)
+    if not reprocess_live_id:
+        for task_id, _live_id in tasks:
+            run([sys.executable, "scripts/next_task.py", "--claim", "--task", task_id, "--agent-id", args.agent_id], repo)
+            claim_paths.append(f"coordination/claims/{task_id}.json")
+        run(["git", "add", *claim_paths], repo)
+        run(["git", "commit", "-m", f"claim: reserve cloud key-point pilot of {len(tasks)}"], repo)
+        push_with_rebase(repo)
 
     from mlx_lm import generate, load
     model, tokenizer = load(args.model)
 
     def generate_text(prompt: str) -> str:
         rendered = tokenizer.apply_chat_template([{"role": "user", "content": prompt}], tokenize=False, add_generation_prompt=True)
-        return generate(model, tokenizer, prompt=rendered, max_tokens=256, verbose=False)
+        return generate(model, tokenizer, prompt=rendered, max_tokens=768, verbose=False)
 
     success: list[tuple[str, str, list[str], dict]] = []
     failed: list[tuple[str, str, str]] = []
@@ -72,17 +75,24 @@ def main() -> int:
 
     stage = ["database/Miles-Guo_public_archive.sqlite3", *claim_paths]
     for task_id, live_id, outputs, stats in success:
-        run([sys.executable, "scripts/next_task.py", "--finish", task_id, "--agent-id", args.agent_id, "--outputs", *outputs, "database/Miles-Guo_public_archive.sqlite3", "--validation", "Evidence-quote-grounded key points; controlled topics; build_db/validate_db/full tests OK; machine status"], repo)
+        if not reprocess_live_id:
+            run([sys.executable, "scripts/next_task.py", "--finish", task_id, "--agent-id", args.agent_id, "--outputs", *outputs, "database/Miles-Guo_public_archive.sqlite3", "--validation", "Evidence-quote-grounded variable-count key points; controlled topics; build_db/validate_db/full tests OK; machine status"], repo)
+            stage.append(f"coordination/completed/{task_id}.json")
         stage.extend(outputs)
-        stage.append(f"coordination/completed/{task_id}.json")
         print(json.dumps({"live_id": live_id, **stats}, ensure_ascii=False))
     for task_id, live_id, error in failed:
         print(json.dumps({"live_id": live_id, "error": error}, ensure_ascii=False))
-        run([sys.executable, "scripts/next_task.py", "--release", task_id, "--agent-id", args.agent_id, "--reason", "Cloud key-point extraction failed; retained for retry"], repo)
+        if not reprocess_live_id:
+            run([sys.executable, "scripts/next_task.py", "--release", task_id, "--agent-id", args.agent_id, "--reason", "Cloud key-point extraction failed; retained for retry"], repo)
 
     run(["git", "add", *sorted(set(stage))], repo)
     run(["git", "diff", "--cached", "--check"], repo)
-    run(["git", "commit", "-m", f"data: publish cloud key-point pilot ({len(success)} enriched, {len(failed)} retryable)"], repo)
+    message = (
+        f"data: reprocess variable key points for {reprocess_live_id}"
+        if reprocess_live_id
+        else f"data: publish cloud key-point pilot ({len(success)} enriched, {len(failed)} retryable)"
+    )
+    run(["git", "commit", "-m", message], repo)
     push_with_rebase(repo)
     return 0 if success else 2
 

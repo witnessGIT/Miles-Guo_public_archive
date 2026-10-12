@@ -7,6 +7,10 @@ on:
         description: Number of naturally segmented livestreams to summarize
         required: true
         default: '1'
+      reprocess_live_id:
+        description: Optional completed livestream to regenerate with the current extraction contract
+        required: false
+        default: ''
 
 permissions:
   contents: write
@@ -51,4 +55,5 @@ jobs:
           python scripts/cloud_keypoint_batch.py \
             --repo "$GITHUB_WORKSPACE" \
             --batch-size '${{ inputs.batch_size }}' \
+            --reprocess-live-id '${{ inputs.reprocess_live_id }}' \
             --agent-id "github-actions-cloud-key-points-${GITHUB_RUN_ID}"
