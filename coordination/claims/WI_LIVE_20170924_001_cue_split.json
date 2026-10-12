@@ -1,0 +1,26 @@
+{
+  "task_id": "WI_LIVE_20170924_001_cue_split",
+  "agent_id": "github-actions-natural-segments-38252926964",
+  "claimed_at": "2026-10-12T13:03:27.177101+00:00",
+  "base_commit": "ac2823945de8f6ecaa3ef120d7ad1578fd38675e",
+  "status": "in_progress",
+  "workflow_mode": "continuous-worker-v2",
+  "claim_protocol": "claim-protocol-v2",
+  "entry_mode": "work",
+  "continue_after_finish": true,
+  "stage": "cue_split",
+  "case_id": null,
+  "live_id": "LIVE_20170924_001",
+  "kind": "live_work_item",
+  "source_candidate_id": null,
+  "review_generation": null,
+  "review_claim_timeout_hours": null,
+  "review_state_before_claim": null,
+  "candidate_review_contract": null,
+  "depends_on_at_claim": [
+    "WI_LIVE_20170924_001_transcript_import"
+  ],
+  "scope": "Split transcript into sentence/subtitle cues using natural sentence/time boundaries.",
+  "reclaimed_expired_claim": false,
+  "static_claim_lease_hours": 24
+}
