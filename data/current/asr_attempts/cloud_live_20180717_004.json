@@ -1,6 +1,6 @@
 {
-  "error": "[METAL] Command buffer execution failed: Caused GPU Hang Error (00000003:kIOGPUCommandBufferCallbackErrorHang).",
-  "generated_at": "2026-10-13T06:28:36Z",
+  "error": "[METAL] Command buffer execution failed: Caused GPU Timeout Error (00000002:kIOGPUCommandBufferCallbackErrorTimeout).",
+  "generated_at": "2026-10-13T11:43:46Z",
   "live_id": "LIVE_20180717_004",
   "media_committed_to_git": false,
   "model": "mlx-community/whisper-large-v3-turbo",
