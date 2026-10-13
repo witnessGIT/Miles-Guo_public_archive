@@ -1,0 +1,21 @@
+{
+  "error": "no media source was reachable from this GitHub-hosted runner",
+  "generated_at": "2026-10-13T15:32:20Z",
+  "live_id": "LIVE_20200321_002",
+  "media_committed_to_git": false,
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "paid_api_used": false,
+  "processing_location": "github-hosted-macos-arm64",
+  "schema_version": "cloud-asr-attempt-v1",
+  "source_attempt_errors": [
+    {
+      "asset_id": "MA_C2_RUMBLE_C9A480054A5F",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "asset_id": "MA_C2_ODYSEE_FC6DB3A1A764",
+      "error": "Command '['ffmpeg', '-nostdin', '-hide_banner', '-loglevel', 'warning', '-y', '-user_agent', 'curl/8.7.1', '-i', 'https://player.odycdn.com/api/v4/streams/free/20200321_2/f20d1d119a06bdd57dd29bec3ee735a99f3e5869/best', '-vn', '-ac', '1', '-ar', '16000', '-c:a', 'libopus', '-b:a', '32k', '-f', 'ogg', '/Users/runner/work/_temp/miles-guo-asr/LIVE_20200321_002.ogg.partial']' returned non-zero exit status 251."
+    }
+  ],
+  "status": "cloud_attempt_failed_needs_retry"
+}

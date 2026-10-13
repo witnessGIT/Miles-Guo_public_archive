@@ -1,0 +1,21 @@
+{
+  "error": "no media source was reachable from this GitHub-hosted runner",
+  "generated_at": "2026-10-13T15:32:22Z",
+  "live_id": "LIVE_20200322_001",
+  "media_committed_to_git": false,
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "paid_api_used": false,
+  "processing_location": "github-hosted-macos-arm64",
+  "schema_version": "cloud-asr-attempt-v1",
+  "source_attempt_errors": [
+    {
+      "asset_id": "MA_C2_RUMBLE_43DAB4AC97F4",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "asset_id": "MA_C2_YOUTUBE_FB2E921935EB",
+      "error": "Command '['yt-dlp', '--no-playlist', '-f', 'bestaudio/best', '-g', 'https://youtu.be/y3MI2Cw_aiY']' returned non-zero exit status 1."
+    }
+  ],
+  "status": "cloud_attempt_failed_needs_retry"
+}
