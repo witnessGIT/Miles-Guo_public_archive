@@ -29,7 +29,7 @@ def push_with_rebase(repo: Path) -> None:
         if run(["git", "push", "origin", "HEAD:main"], repo, check=False).returncode == 0:
             return
         run(["git", "fetch", "origin", "main"], repo)
-        rebased = run(["git", "rebase", "origin/main"], repo, check=False)
+        rebased = run(["git", "rebase", "--autostash", "origin/main"], repo, check=False)
         if rebased.returncode == 0:
             continue
         conflicts = run(["git", "diff", "--name-only", "--diff-filter=U"], repo).stdout.splitlines()
