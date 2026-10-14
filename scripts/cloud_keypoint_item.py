@@ -157,6 +157,11 @@ def process_live(repo: Path, live_id: str, generate_text: Callable[[str], str]) 
     if not segments or not all(str(row.get("boundary_method") or "").startswith("natural_asr_v1:") for row in segments):
         raise ValueError(f"{live_id}: natural segments are required before key-point extraction")
     segments, key_points, topic_links, stats = enrich_segments(live_id, segments, generate_text)
+    if not key_points:
+        raise ValueError(
+            f"{live_id}: key-point extraction produced no accepted points "
+            f"for {stats['segments']} natural segments; retained for retry"
+        )
     key_path = repo / "data" / "current" / "segment_key_points" / f"machine_{lower}.jsonl"
     link_path = repo / "data" / "current" / "segment_topics" / f"machine_{lower}.jsonl"
     topic_path = repo / "data" / "current" / "topics" / "controlled_taxonomy_v1.jsonl"

@@ -27,6 +27,20 @@ def eligible(repo: Path, limit: int) -> list[tuple[str, str]]:
     return values
 
 
+def completed_with_empty_output(repo: Path, limit: int) -> list[tuple[str, str]]:
+    completed = repo / "coordination" / "completed"
+    values: list[tuple[str, str]] = []
+    for done in sorted(completed.glob("WI_LIVE_*_key_points_topics.json")):
+        live_id = done.stem.removeprefix("WI_").removesuffix("_key_points_topics")
+        output = repo / "data" / "current" / "segment_key_points" / f"machine_{live_id.lower()}.jsonl"
+        if output.exists() and output.stat().st_size > 0:
+            continue
+        values.append((done.stem, live_id))
+        if len(values) == limit:
+            break
+    return values
+
+
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--repo", type=Path, required=True)
@@ -34,18 +48,27 @@ def main() -> int:
     parser.add_argument("--agent-id", required=True)
     parser.add_argument("--model", default="mlx-community/Qwen2.5-7B-Instruct-4bit")
     parser.add_argument("--reprocess-live-id", default="")
+    parser.add_argument("--reprocess-empty", action="store_true")
     args = parser.parse_args()
     if not 1 <= args.batch_size <= 5:
         raise SystemExit("cloud key-point pilot batch size must be between 1 and 5")
     repo = args.repo.resolve()
     reprocess_live_id = args.reprocess_live_id.strip()
-    tasks = [(f"WI_{reprocess_live_id}_key_points_topics", reprocess_live_id)] if reprocess_live_id else eligible(repo, args.batch_size)
+    if reprocess_live_id and args.reprocess_empty:
+        raise SystemExit("choose either --reprocess-live-id or --reprocess-empty")
+    reprocessing = bool(reprocess_live_id or args.reprocess_empty)
+    if reprocess_live_id:
+        tasks = [(f"WI_{reprocess_live_id}_key_points_topics", reprocess_live_id)]
+    elif args.reprocess_empty:
+        tasks = completed_with_empty_output(repo, args.batch_size)
+    else:
+        tasks = eligible(repo, args.batch_size)
     if not tasks:
         print("No eligible key_points_topics tasks.")
         return 0
 
     claim_paths: list[str] = []
-    if not reprocess_live_id:
+    if not reprocessing:
         for task_id, _live_id in tasks:
             run([sys.executable, "scripts/next_task.py", "--claim", "--task", task_id, "--agent-id", args.agent_id], repo)
             claim_paths.append(f"coordination/claims/{task_id}.json")
@@ -75,21 +98,26 @@ def main() -> int:
 
     stage = [*claim_paths]
     for task_id, live_id, outputs, stats in success:
-        if not reprocess_live_id:
+        if not reprocessing:
             run([sys.executable, "scripts/next_task.py", "--finish", task_id, "--agent-id", args.agent_id, "--outputs", *outputs, "--validation", "Evidence-quote-grounded variable-count key points; controlled topics; build_db/validate_db/full tests OK; machine status"], repo)
             stage.append(f"coordination/completed/{task_id}.json")
         stage.extend(outputs)
         print(json.dumps({"live_id": live_id, **stats}, ensure_ascii=False))
     for task_id, live_id, error in failed:
         print(json.dumps({"live_id": live_id, "error": error}, ensure_ascii=False))
-        if not reprocess_live_id:
+        if not reprocessing:
             run([sys.executable, "scripts/next_task.py", "--release", task_id, "--agent-id", args.agent_id, "--reason", "Cloud key-point extraction failed; retained for retry"], repo)
 
+    if not stage:
+        print("No key-point output was accepted; no repository changes to publish.")
+        return 2
     run(["git", "add", *sorted(set(stage))], repo)
     run(["git", "diff", "--cached", "--check"], repo)
     message = (
         f"data: reprocess variable key points for {reprocess_live_id}"
         if reprocess_live_id
+        else f"data: repair empty key-point outputs ({len(success)} repaired, {len(failed)} retryable)"
+        if args.reprocess_empty
         else f"data: publish cloud key-point pilot ({len(success)} enriched, {len(failed)} retryable)"
     )
     run(["git", "commit", "-m", message], repo)

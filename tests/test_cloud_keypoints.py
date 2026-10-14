@@ -1,6 +1,9 @@
+import json
+import tempfile
 import unittest
+from pathlib import Path
 
-from scripts.cloud_keypoint_item import parse_json_array, validate_results
+from scripts.cloud_keypoint_item import parse_json_array, process_live, validate_results
 
 
 class CloudKeyPointTests(unittest.TestCase):
@@ -38,6 +41,25 @@ class CloudKeyPointTests(unittest.TestCase):
             {"point_type": "instruction", "point_text": "计划下周召开记者会", "evidence_quote": "下周召开记者会", "topic_ids": ["TOPIC_MEDIA_PUBLIC_OPINION"]},
         ])
         self.assertEqual(len(accepted), 2)
+
+    def test_process_live_rejects_empty_accepted_output(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            repo = Path(tmp)
+            segment_dir = repo / "data" / "current" / "live_segments"
+            segment_dir.mkdir(parents=True)
+            segment = {
+                "id": "LIVE_TEST_001_SEG_000000",
+                "text_asr": "这里包含一段可以整理的测试内容。",
+                "boundary_method": "natural_asr_v1:test",
+            }
+            (segment_dir / "asr_live_test_001.jsonl").write_text(
+                json.dumps(segment, ensure_ascii=False) + "\n", encoding="utf-8"
+            )
+            with self.assertRaisesRegex(ValueError, "no accepted points"):
+                process_live(repo, "LIVE_TEST_001", lambda _prompt: "[]")
+            self.assertFalse(
+                (repo / "data" / "current" / "segment_key_points" / "machine_live_test_001.jsonl").exists()
+            )
 
 
 if __name__ == "__main__":
