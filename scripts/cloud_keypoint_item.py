@@ -4,11 +4,20 @@
 from __future__ import annotations
 
 import argparse
+import difflib
 import json
 import re
+import unicodedata
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Callable
+
+try:
+    from opencc import OpenCC
+except ImportError:  # The cloud key-point workflow installs this optional grounding aid.
+    OpenCC = None
+
+_T2S = OpenCC("t2s") if OpenCC else None
 
 
 TOPICS = {
@@ -61,6 +70,46 @@ def prompt_for(segment: dict) -> str:
     )
 
 
+def locate_evidence(text: str, evidence: str) -> tuple[int, int] | None:
+    exact_start = text.find(evidence)
+    if exact_start >= 0:
+        return exact_start, exact_start + len(evidence)
+
+    def compact(value: str) -> tuple[str, list[int]]:
+        chars: list[str] = []
+        offsets: list[int] = []
+        for index, char in enumerate(value):
+            if char.isspace() or unicodedata.category(char).startswith("P"):
+                continue
+            chars.append(char.casefold())
+            offsets.append(index)
+        return "".join(chars), offsets
+
+    compact_text, offsets = compact(text)
+    compact_evidence, _ = compact(evidence)
+    if _T2S:
+        converted_text = _T2S.convert(compact_text)
+        converted_evidence = _T2S.convert(compact_evidence)
+        if len(converted_text) == len(compact_text) and len(converted_evidence) == len(compact_evidence):
+            compact_text = converted_text
+            compact_evidence = converted_evidence
+    if len(compact_evidence) < 6 or len(compact_text) < len(compact_evidence):
+        return None
+    width = len(compact_evidence)
+    best_ratio = 0.0
+    best_start = -1
+    for start in range(0, len(compact_text) - width + 1):
+        ratio = difflib.SequenceMatcher(
+            None, compact_evidence, compact_text[start:start + width], autojunk=False
+        ).ratio()
+        if ratio > best_ratio:
+            best_ratio = ratio
+            best_start = start
+    if best_ratio < 0.72 or best_start < 0:
+        return None
+    return offsets[best_start], offsets[best_start + width - 1] + 1
+
+
 def validate_results(segment: dict, values: list[dict]) -> list[dict]:
     text = str(segment.get("text_asr") or "")
     accepted: list[dict] = []
@@ -72,10 +121,13 @@ def validate_results(segment: dict, values: list[dict]) -> list[dict]:
         significance = re.sub(r"\s+", " ", str(value.get("significance") or "")).strip()
         raw_topics = value.get("topic_ids") if isinstance(value.get("topic_ids"), list) else []
         topic_ids = list(dict.fromkeys(str(item) for item in raw_topics if str(item) in TOPICS))
-        evidence_start = text.find(evidence)
+        evidence_span = locate_evidence(text, evidence)
+        evidence_start = evidence_span[0] if evidence_span else -1
         key = (point_text, evidence)
         if not 4 <= len(point_text) <= 240 or len(evidence) < 6 or evidence_start < 0 or not topic_ids or key in seen:
             continue
+        evidence_end = evidence_span[1]
+        evidence = text[evidence_start:evidence_end]
         seen.add(key)
         if point_type not in POINT_TYPES:
             point_type = "takeaway"
@@ -85,7 +137,7 @@ def validate_results(segment: dict, values: list[dict]) -> list[dict]:
             "significance": significance[:320] or None,
             "evidence_quote": evidence,
             "evidence_start_char": evidence_start,
-            "evidence_end_char": evidence_start + len(evidence),
+            "evidence_end_char": evidence_end,
             "topic_ids": topic_ids,
         })
     return accepted
@@ -96,13 +148,22 @@ def enrich_segments(live_id: str, segments: list[dict], generate_text: Callable[
     key_points: list[dict] = []
     segment_topics: list[dict] = []
     invalid = 0
+    parse_errors = 0
+    model_empty = 0
+    rejected_all = 0
     for segment in segments:
         try:
             values = parse_json_array(generate_text(prompt_for(segment)))
+            if not values:
+                model_empty += 1
             results = validate_results(segment, values)
         except (ValueError, json.JSONDecodeError):
+            parse_errors += 1
+            values = []
             results = []
         if not results:
+            if values:
+                rejected_all += 1
             invalid += 1
             continue
         segment_id = str(segment["id"])
@@ -142,7 +203,15 @@ def enrich_segments(live_id: str, segments: list[dict], generate_text: Callable[
                 "extraction_method": METHOD,
                 "created_at": now,
             })
-    return segments, key_points, segment_topics, {"segments": len(segments), "key_points": len(key_points), "topic_links": len(segment_topics), "skipped_or_invalid": invalid}
+    return segments, key_points, segment_topics, {
+        "segments": len(segments),
+        "key_points": len(key_points),
+        "topic_links": len(segment_topics),
+        "skipped_or_invalid": invalid,
+        "parse_errors": parse_errors,
+        "model_empty": model_empty,
+        "rejected_all": rejected_all,
+    }
 
 
 def write_jsonl(path: Path, rows: list[dict]) -> None:
@@ -157,11 +226,13 @@ def process_live(repo: Path, live_id: str, generate_text: Callable[[str], str]) 
     if not segments or not all(str(row.get("boundary_method") or "").startswith("natural_asr_v1:") for row in segments):
         raise ValueError(f"{live_id}: natural segments are required before key-point extraction")
     segments, key_points, topic_links, stats = enrich_segments(live_id, segments, generate_text)
-    if not key_points:
+    if not key_points and (stats["parse_errors"] or stats["rejected_all"]):
         raise ValueError(
             f"{live_id}: key-point extraction produced no accepted points "
-            f"for {stats['segments']} natural segments; retained for retry"
+            f"for {stats['segments']} natural segments "
+            f"({stats['parse_errors']} parse errors, {stats['rejected_all']} rejected outputs); retained for retry"
         )
+    stats["outcome"] = "enriched" if key_points else "no_substantive_content"
     key_path = repo / "data" / "current" / "segment_key_points" / f"machine_{lower}.jsonl"
     link_path = repo / "data" / "current" / "segment_topics" / f"machine_{lower}.jsonl"
     topic_path = repo / "data" / "current" / "topics" / "controlled_taxonomy_v1.jsonl"

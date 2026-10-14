@@ -35,6 +35,12 @@ def completed_with_empty_output(repo: Path, limit: int) -> list[tuple[str, str]]
         output = repo / "data" / "current" / "segment_key_points" / f"machine_{live_id.lower()}.jsonl"
         if output.exists() and output.stat().st_size > 0:
             continue
+        try:
+            completion = json.loads(done.read_text(encoding="utf-8"))
+        except (OSError, json.JSONDecodeError):
+            completion = {}
+        if completion.get("result_stats", {}).get("outcome") == "no_substantive_content":
+            continue
         values.append((done.stem, live_id))
         if len(values) == limit:
             break
@@ -99,8 +105,26 @@ def main() -> int:
     stage = [*claim_paths]
     for task_id, live_id, outputs, stats in success:
         if not reprocessing:
-            run([sys.executable, "scripts/next_task.py", "--finish", task_id, "--agent-id", args.agent_id, "--outputs", *outputs, "--validation", "Evidence-quote-grounded variable-count key points; controlled topics; build_db/validate_db/full tests OK; machine status"], repo)
+            validation = (
+                "No substantive content identified after all natural segments returned no key points; "
+                "build_db/validate_db/full tests OK; machine status"
+                if stats.get("outcome") == "no_substantive_content"
+                else "Evidence-quote-grounded variable-count key points; controlled topics; "
+                "build_db/validate_db/full tests OK; machine status"
+            )
+            run([sys.executable, "scripts/next_task.py", "--finish", task_id, "--agent-id", args.agent_id, "--outputs", *outputs, "--validation", validation], repo)
             stage.append(f"coordination/completed/{task_id}.json")
+        elif args.reprocess_empty:
+            completion_path = repo / "coordination" / "completed" / f"{task_id}.json"
+            completion = json.loads(completion_path.read_text(encoding="utf-8"))
+            completion["result_stats"] = stats
+            completion["validation"] = (
+                "Reprocessed empty output; no substantive content identified by the model"
+                if stats.get("outcome") == "no_substantive_content"
+                else "Reprocessed empty output with evidence-grounded variable-count key points"
+            )
+            completion_path.write_text(json.dumps(completion, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+            stage.append(str(completion_path.relative_to(repo)))
         stage.extend(outputs)
         print(json.dumps({"live_id": live_id, **stats}, ensure_ascii=False))
     for task_id, live_id, error in failed:

@@ -2,8 +2,10 @@ import json
 import tempfile
 import unittest
 from pathlib import Path
+from unittest import mock
 
-from scripts.cloud_keypoint_item import parse_json_array, process_live, validate_results
+from scripts import cloud_keypoint_item
+from scripts.cloud_keypoint_item import locate_evidence, parse_json_array, process_live, validate_results
 
 
 class CloudKeyPointTests(unittest.TestCase):
@@ -34,6 +36,18 @@ class CloudKeyPointTests(unittest.TestCase):
         }])
         self.assertEqual(rejected, [])
 
+    def test_locates_simplified_quote_in_traditional_source(self):
+        source = "昨天發生很多事情，特別是我揭發的幾個盜國賊。"
+        evidence = "特别是我揭发的几个盗国贼"
+        class FakeT2S:
+            def convert(self, value):
+                return value.translate(str.maketrans("發別幾盜國賊", "发别几盗国贼"))
+
+        with mock.patch.object(cloud_keypoint_item, "_T2S", FakeT2S()):
+            span = locate_evidence(source, evidence)
+        self.assertIsNotNone(span)
+        self.assertEqual(source[slice(*span)], "特別是我揭發的幾個盜國賊")
+
     def test_accepts_multiple_independent_points(self):
         segment = {"text_asr": "先讨论案件进展，然后说明下周召开记者会。"}
         accepted = validate_results(segment, [
@@ -42,7 +56,7 @@ class CloudKeyPointTests(unittest.TestCase):
         ])
         self.assertEqual(len(accepted), 2)
 
-    def test_process_live_rejects_empty_accepted_output(self):
+    def test_process_live_records_no_substantive_content(self):
         with tempfile.TemporaryDirectory() as tmp:
             repo = Path(tmp)
             segment_dir = repo / "data" / "current" / "live_segments"
@@ -55,9 +69,10 @@ class CloudKeyPointTests(unittest.TestCase):
             (segment_dir / "asr_live_test_001.jsonl").write_text(
                 json.dumps(segment, ensure_ascii=False) + "\n", encoding="utf-8"
             )
-            with self.assertRaisesRegex(ValueError, "no accepted points"):
-                process_live(repo, "LIVE_TEST_001", lambda _prompt: "[]")
-            self.assertFalse(
+            _outputs, stats = process_live(repo, "LIVE_TEST_001", lambda _prompt: "[]")
+            self.assertEqual(stats["outcome"], "no_substantive_content")
+            self.assertEqual(stats["key_points"], 0)
+            self.assertTrue(
                 (repo / "data" / "current" / "segment_key_points" / "machine_live_test_001.jsonl").exists()
             )
 
