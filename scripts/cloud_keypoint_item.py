@@ -40,7 +40,7 @@ TOPICS = {
     "TOPIC_OTHER": "其他",
 }
 POINT_TYPES = {"takeaway", "context", "argument", "evidence", "conclusion", "question", "warning", "instruction"}
-METHOD = "qwen2.5-7b-instruct-4bit-grounded-keypoints-v2-variable"
+METHOD = "qwen2.5-7b-instruct-4bit-grounded-keypoints-v3-inclusive"
 
 
 def parse_json_array(text: str) -> list[dict]:
@@ -62,7 +62,10 @@ def prompt_for(segment: dict) -> str:
         "你是历史档案要点标注器。只依据机器转录原文，按内容密度提炼0到多条中性、详细、便于检索的要点。"
         "数量不得固定：每个独立事实陈述、背景、论点、证据、结论、问题、警告或行动指示分别输出一条；"
         "不得合并彼此独立的信息，也不得为了凑数拆分同一信息。不得补充外部事实，不得判断真伪，不得纠正原文。"
-        "若原文只是寒暄、口头语或无法形成要点，输出[]。每条evidence_quote必须是原文中逐字存在、"
+        "生活内容、个人感受、展示物品、地点描述、人物关系、未来计划和未经证实的指控也都是可检索要点；"
+        "只要原文含有任何可复述的人物、事件、行动、物品、地点、感受、计划或指控，就不得输出[]。"
+        "只有整段完全是纯音乐、重复字幕、无意义口头语或纯寒暄且没有其他信息时才输出[]。"
+        "每条evidence_quote必须是原文中逐字存在、"
         "能直接支持该要点的连续短句，至少6个字符。"
         "point_type只能是takeaway,context,argument,evidence,conclusion,question,warning,instruction。"
         "topic_ids只能从给定主题中选择。只输出JSON数组，每项字段为point_type、point_text、significance、evidence_quote、topic_ids。"
@@ -211,6 +214,7 @@ def enrich_segments(live_id: str, segments: list[dict], generate_text: Callable[
         "parse_errors": parse_errors,
         "model_empty": model_empty,
         "rejected_all": rejected_all,
+        "extraction_method": METHOD,
     }
 
 

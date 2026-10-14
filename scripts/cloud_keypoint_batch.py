@@ -39,7 +39,11 @@ def completed_with_empty_output(repo: Path, limit: int) -> list[tuple[str, str]]
             completion = json.loads(done.read_text(encoding="utf-8"))
         except (OSError, json.JSONDecodeError):
             completion = {}
-        if completion.get("result_stats", {}).get("outcome") == "no_substantive_content":
+        result_stats = completion.get("result_stats", {})
+        if (
+            result_stats.get("outcome") == "no_substantive_content"
+            and result_stats.get("extraction_method") == "qwen2.5-7b-instruct-4bit-grounded-keypoints-v3-inclusive"
+        ):
             continue
         values.append((done.stem, live_id))
         if len(values) == limit:

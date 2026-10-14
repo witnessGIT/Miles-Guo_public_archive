@@ -5,13 +5,18 @@ from pathlib import Path
 from unittest import mock
 
 from scripts import cloud_keypoint_item
-from scripts.cloud_keypoint_item import locate_evidence, parse_json_array, process_live, validate_results
+from scripts.cloud_keypoint_item import locate_evidence, parse_json_array, process_live, prompt_for, validate_results
 
 
 class CloudKeyPointTests(unittest.TestCase):
     def test_parse_fenced_array(self):
         value = parse_json_array('```json\n[{"point_text":"测试"}]\n```')
         self.assertEqual(value[0]["point_text"], "测试")
+
+    def test_prompt_requires_points_for_short_or_personal_content(self):
+        prompt = prompt_for({"text_asr": "我正在锻炼，稍后录视频。"})
+        self.assertIn("就不得输出[]", prompt)
+        self.assertIn("生活内容", prompt)
 
     def test_requires_exact_evidence_and_controlled_topic(self):
         segment = {"text_asr": "他说今天主要讨论法律程序和案件进展。"}
