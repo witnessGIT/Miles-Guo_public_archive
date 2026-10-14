@@ -60,8 +60,8 @@ def main() -> int:
     parser.add_argument("--reprocess-live-id", default="")
     parser.add_argument("--reprocess-empty", action="store_true")
     args = parser.parse_args()
-    if not 1 <= args.batch_size <= 5:
-        raise SystemExit("cloud key-point pilot batch size must be between 1 and 5")
+    if not 1 <= args.batch_size <= 10:
+        raise SystemExit("cloud key-point pilot batch size must be between 1 and 10")
     repo = args.repo.resolve()
     reprocess_live_id = args.reprocess_live_id.strip()
     if reprocess_live_id and args.reprocess_empty:

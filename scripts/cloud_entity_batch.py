@@ -34,8 +34,8 @@ def main() -> int:
     parser.add_argument("--agent-id", required=True)
     parser.add_argument("--model", default="mlx-community/Qwen2.5-7B-Instruct-4bit")
     args = parser.parse_args()
-    if not 1 <= args.batch_size <= 10:
-        raise SystemExit("cloud entity pilot batch size must be between 1 and 10")
+    if not 1 <= args.batch_size <= 20:
+        raise SystemExit("cloud entity pilot batch size must be between 1 and 20")
     repo = args.repo.resolve()
     tasks = eligible(repo, args.batch_size)
     if not tasks:
