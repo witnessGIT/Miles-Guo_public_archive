@@ -8,6 +8,7 @@ import difflib
 import json
 import re
 import unicodedata
+import zlib
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Callable
@@ -40,7 +41,7 @@ TOPICS = {
     "TOPIC_OTHER": "其他",
 }
 POINT_TYPES = {"takeaway", "context", "argument", "evidence", "conclusion", "question", "warning", "instruction"}
-METHOD = "qwen2.5-7b-instruct-4bit-grounded-keypoints-v3-inclusive"
+METHOD = "qwen2.5-7b-instruct-4bit-grounded-keypoints-v4-forced-retry"
 
 
 def parse_json_array(text: str) -> list[dict]:
@@ -70,6 +71,24 @@ def prompt_for(segment: dict) -> str:
         "point_type只能是takeaway,context,argument,evidence,conclusion,question,warning,instruction。"
         "topic_ids只能从给定主题中选择。只输出JSON数组，每项字段为point_type、point_text、significance、evidence_quote、topic_ids。"
         f"主题：{choices}\n<transcript>{segment.get('text_asr') or ''}</transcript>"
+    )
+
+
+def likely_substantive(text: str) -> bool:
+    compact = re.sub(r"\s+", "", text)
+    if len(compact) < 40:
+        return False
+    encoded = compact.encode("utf-8")
+    return len(zlib.compress(encoded)) / len(encoded) >= 0.25
+
+
+def forced_prompt_for(segment: dict) -> str:
+    return (
+        prompt_for(segment)
+        + "\n前一次回答错误地输出了空数组。本段包含实际信息，请重新逐项阅读。"
+        "例如‘我正在锻炼，稍后录视频’至少包含当前行动和未来计划两条要点；"
+        "‘展示一只狗并说明是女儿送的生日礼物’至少包含物品展示、赠送关系和个人感受。"
+        "现在必须输出至少一条有原文证据的JSON要点，不要输出[]。"
     )
 
 
@@ -154,9 +173,13 @@ def enrich_segments(live_id: str, segments: list[dict], generate_text: Callable[
     parse_errors = 0
     model_empty = 0
     rejected_all = 0
+    forced_retries = 0
     for segment in segments:
         try:
             values = parse_json_array(generate_text(prompt_for(segment)))
+            if not values and likely_substantive(str(segment.get("text_asr") or "")):
+                forced_retries += 1
+                values = parse_json_array(generate_text(forced_prompt_for(segment)))
             if not values:
                 model_empty += 1
             results = validate_results(segment, values)
@@ -214,6 +237,7 @@ def enrich_segments(live_id: str, segments: list[dict], generate_text: Callable[
         "parse_errors": parse_errors,
         "model_empty": model_empty,
         "rejected_all": rejected_all,
+        "forced_retries": forced_retries,
         "extraction_method": METHOD,
     }
 

@@ -5,7 +5,7 @@ from pathlib import Path
 from unittest import mock
 
 from scripts import cloud_keypoint_item
-from scripts.cloud_keypoint_item import locate_evidence, parse_json_array, process_live, prompt_for, validate_results
+from scripts.cloud_keypoint_item import likely_substantive, locate_evidence, parse_json_array, process_live, prompt_for, validate_results
 
 
 class CloudKeyPointTests(unittest.TestCase):
@@ -17,6 +17,10 @@ class CloudKeyPointTests(unittest.TestCase):
         prompt = prompt_for({"text_asr": "我正在锻炼，稍后录视频。"})
         self.assertIn("就不得输出[]", prompt)
         self.assertIn("生活内容", prompt)
+
+    def test_repetition_filter_distinguishes_content_from_repeated_subtitles(self):
+        self.assertTrue(likely_substantive("昨天发生很多事情，我稍后会录制视频详细说明有关人员和计划。" * 3))
+        self.assertFalse(likely_substantive("字幕志愿者 李宗盛 " * 30))
 
     def test_requires_exact_evidence_and_controlled_topic(self):
         segment = {"text_asr": "他说今天主要讨论法律程序和案件进展。"}
@@ -80,6 +84,34 @@ class CloudKeyPointTests(unittest.TestCase):
             self.assertTrue(
                 (repo / "data" / "current" / "segment_key_points" / "machine_live_test_001.jsonl").exists()
             )
+
+    def test_process_live_retries_substantive_empty_response(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            repo = Path(tmp)
+            segment_dir = repo / "data" / "current" / "live_segments"
+            segment_dir.mkdir(parents=True)
+            text = "昨天发生很多事情，我正在锻炼，并计划稍后录制视频详细说明有关人员的行动。" * 2
+            segment = {
+                "id": "LIVE_TEST_002_SEG_000000",
+                "text_asr": text,
+                "boundary_method": "natural_asr_v1:test",
+            }
+            (segment_dir / "asr_live_test_002.jsonl").write_text(
+                json.dumps(segment, ensure_ascii=False) + "\n", encoding="utf-8"
+            )
+            responses = iter([
+                "[]",
+                json.dumps([{
+                    "point_type": "instruction",
+                    "point_text": "计划稍后录制视频",
+                    "significance": "记录后续行动",
+                    "evidence_quote": "计划稍后录制视频",
+                    "topic_ids": ["TOPIC_PROJECT_ACTION"],
+                }], ensure_ascii=False),
+            ])
+            _outputs, stats = process_live(repo, "LIVE_TEST_002", lambda _prompt: next(responses))
+            self.assertEqual(stats["key_points"], 1)
+            self.assertEqual(stats["forced_retries"], 1)
 
 
 if __name__ == "__main__":

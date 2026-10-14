@@ -42,7 +42,7 @@ def completed_with_empty_output(repo: Path, limit: int) -> list[tuple[str, str]]
         result_stats = completion.get("result_stats", {})
         if (
             result_stats.get("outcome") == "no_substantive_content"
-            and result_stats.get("extraction_method") == "qwen2.5-7b-instruct-4bit-grounded-keypoints-v3-inclusive"
+            and result_stats.get("extraction_method") == "qwen2.5-7b-instruct-4bit-grounded-keypoints-v4-forced-retry"
         ):
             continue
         values.append((done.stem, live_id))
