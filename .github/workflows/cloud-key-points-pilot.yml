@@ -57,13 +57,13 @@ jobs:
           set -euo pipefail
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          extra_args=()
+          extra_arg=''
           if [[ '${{ inputs.reprocess_empty }}' == 'true' ]]; then
-            extra_args+=(--reprocess-empty)
+            extra_arg='--reprocess-empty'
           fi
           python scripts/cloud_keypoint_batch.py \
             --repo "$GITHUB_WORKSPACE" \
             --batch-size '${{ inputs.batch_size }}' \
             --reprocess-live-id '${{ inputs.reprocess_live_id }}' \
-            "${extra_args[@]}" \
+            ${extra_arg:+"$extra_arg"} \
             --agent-id "github-actions-cloud-key-points-${GITHUB_RUN_ID}"
