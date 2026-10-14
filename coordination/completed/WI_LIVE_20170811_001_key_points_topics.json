@@ -9,11 +9,21 @@
     "data/current/segment_topics/machine_live_20170811_001.jsonl",
     "data/current/topics/controlled_taxonomy_v1.jsonl"
   ],
-  "validation": "Evidence-quote-grounded variable-count key points; controlled topics; build_db/validate_db/full tests OK; machine status",
+  "validation": "Reprocessed empty output; no substantive content identified by the model",
   "workflow_mode": "continuous-worker-v2",
   "claim_protocol": "claim-protocol-v2",
   "entry_mode": "work",
   "continue_after_finish": true,
   "finish_prerequisites_revalidated": true,
-  "notes": "Task completed only after re-checking the latest repository dependency contract. Under continuous-worker-v2, refresh repository state and claim the next eligible task unless a documented stop condition applies."
+  "notes": "Task completed only after re-checking the latest repository dependency contract. Under continuous-worker-v2, refresh repository state and claim the next eligible task unless a documented stop condition applies.",
+  "result_stats": {
+    "segments": 3,
+    "key_points": 0,
+    "topic_links": 0,
+    "skipped_or_invalid": 3,
+    "parse_errors": 0,
+    "model_empty": 3,
+    "rejected_all": 0,
+    "outcome": "no_substantive_content"
+  }
 }
