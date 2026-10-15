@@ -1,0 +1,17 @@
+{
+  "error": "no media source was reachable from this GitHub-hosted runner",
+  "generated_at": "2026-10-15T07:42:38Z",
+  "live_id": "LIVE_20210406_001",
+  "media_committed_to_git": false,
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "paid_api_used": false,
+  "processing_location": "github-hosted-macos-arm64",
+  "schema_version": "cloud-asr-attempt-v1",
+  "source_attempt_errors": [
+    {
+      "asset_id": "MEDIA_SRC_GWINS_22791_youtube_1",
+      "error": "Command '['yt-dlp', '--no-playlist', '-f', 'bestaudio/best', '-g', 'https://youtu.be/tqnYeEy2JcY']' returned non-zero exit status 1."
+    }
+  ],
+  "status": "cloud_attempt_failed_needs_retry"
+}
