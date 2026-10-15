@@ -9,14 +9,20 @@ import os
 import re
 import subprocess
 import sys
+from datetime import datetime, timezone
 from pathlib import Path
 
 
 TASK_RE = re.compile(r"WI_(LIVE_\d{8}_\d{3})_transcript_import")
 
 
-def run(command: list[str], cwd: Path, check: bool = True) -> subprocess.CompletedProcess[str]:
-    completed = subprocess.run(command, cwd=cwd, text=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
+def run(
+    command: list[str], cwd: Path, check: bool = True, timeout: int | None = None,
+) -> subprocess.CompletedProcess[str]:
+    completed = subprocess.run(
+        command, cwd=cwd, text=True, stdout=subprocess.PIPE,
+        stderr=subprocess.STDOUT, timeout=timeout,
+    )
     if completed.stdout:
         print(completed.stdout, end="" if completed.stdout.endswith("\n") else "\n", flush=True)
     if check and completed.returncode:
@@ -68,10 +74,13 @@ def main() -> int:
     parser.add_argument("--repo", type=Path, required=True)
     parser.add_argument("--work-root", type=Path, required=True)
     parser.add_argument("--batch-size", type=int, default=100)
+    parser.add_argument("--item-timeout-sec", type=int, default=1500)
     parser.add_argument("--agent-id", required=True)
     args = parser.parse_args()
     if not 1 <= args.batch_size <= 100:
         raise SystemExit("cloud ASR batch size must be between 1 and 100")
+    if not 300 <= args.item_timeout_sec <= 3000:
+        raise SystemExit("cloud ASR item timeout must be between 300 and 3000 seconds")
     repo = args.repo.resolve()
     work = args.work_root.resolve()
     tasks = eligible(repo, args.batch_size)
@@ -97,11 +106,30 @@ def main() -> int:
         failed: list[tuple[str, str, str]] = []
         attempt_paths: list[str] = []
         for task_id, live_id in checkpoint:
-            completed = run(
-                [sys.executable, "scripts/cloud_asr_item.py", "--repo", str(repo), "--live-id", live_id, "--work-root", str(work)],
-                repo,
-                check=False,
-            )
+            item_command = [
+                sys.executable, "scripts/cloud_asr_item.py", "--repo", str(repo),
+                "--live-id", live_id, "--work-root", str(work),
+            ]
+            try:
+                completed = run(
+                    item_command, repo, check=False, timeout=args.item_timeout_sec,
+                )
+            except subprocess.TimeoutExpired as exc:
+                if exc.stdout:
+                    print(exc.stdout, end="" if str(exc.stdout).endswith("\n") else "\n", flush=True)
+                attempt_path = repo / "data" / "current" / "asr_attempts" / f"cloud_{live_id.lower()}.json"
+                attempt_path.parent.mkdir(parents=True, exist_ok=True)
+                attempt_path.write_text(json.dumps({
+                    "schema_version": "cloud-asr-attempt-v1",
+                    "live_id": live_id,
+                    "status": "cloud_attempt_timed_out_needs_retry",
+                    "generated_at": datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z"),
+                    "processing_location": "github-hosted-macos-arm64",
+                    "paid_api_used": False,
+                    "media_committed_to_git": False,
+                    "error": f"cloud ASR item exceeded {args.item_timeout_sec} seconds; retained for retry or chunked processing",
+                }, ensure_ascii=False, indent=2, sort_keys=True) + "\n", encoding="utf-8")
+                completed = subprocess.CompletedProcess(item_command, 124, "")
             stem = f"asr_{live_id.lower()}"
             outputs = [
                 f"data/current/transcript_versions/{stem}.jsonl",
