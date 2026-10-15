@@ -74,7 +74,7 @@ def resolve_media_url(asset: sqlite3.Row) -> str | None:
             return str(path)
         return "https://media.gettr.com/" + str(path).lstrip("/")
     if platform == "rumble":
-        embed_id = metadata.get("rumble_embed_id")
+        embed_id = metadata.get("rumble_embed_id") or metadata.get("embed_id")
         if not embed_id:
             return None
         url = f"https://rumble.com/embedJS/u3/?request=video&ver=2&v={urllib.parse.quote(str(embed_id))}"
