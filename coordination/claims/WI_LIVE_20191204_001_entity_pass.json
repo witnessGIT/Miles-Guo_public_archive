@@ -1,0 +1,26 @@
+{
+  "task_id": "WI_LIVE_20191204_001_entity_pass",
+  "agent_id": "github-actions-cloud-entity-38778593238",
+  "claimed_at": "2026-10-15T17:37:05.406880+00:00",
+  "base_commit": "8fffbd5a35b56fd94a1b8912f1390431dbbd02df",
+  "status": "in_progress",
+  "workflow_mode": "continuous-worker-v2",
+  "claim_protocol": "claim-protocol-v2",
+  "entry_mode": "work",
+  "continue_after_finish": true,
+  "stage": "entity_pass",
+  "case_id": null,
+  "live_id": "LIVE_20191204_001",
+  "kind": "live_work_item",
+  "source_candidate_id": null,
+  "review_generation": null,
+  "review_claim_timeout_hours": null,
+  "review_state_before_claim": null,
+  "candidate_review_contract": null,
+  "depends_on_at_claim": [
+    "WI_LIVE_20191204_001_segment_split"
+  ],
+  "scope": "Extract speakers, people, organizations, places and mentioned entities.",
+  "reclaimed_expired_claim": false,
+  "static_claim_lease_hours": 24
+}
