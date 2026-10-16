@@ -3,7 +3,7 @@
   "agent_id": "github-actions-cloud-asr-38787138167",
   "claimed_at": "2026-10-15T18:42:30.766289+00:00",
   "base_commit": "a8739429a8e0f4a931bd34a3b143705ddd92a57d",
-  "status": "in_progress",
+  "status": "released",
   "workflow_mode": "continuous-worker-v2",
   "claim_protocol": "claim-protocol-v2",
   "entry_mode": "work",
@@ -22,5 +22,7 @@
   ],
   "scope": "Import source transcript or ASR text without overwriting original text.",
   "reclaimed_expired_claim": false,
-  "static_claim_lease_hours": 24
+  "static_claim_lease_hours": 24,
+  "released_at": "2026-10-16T01:28:18.396377+00:00",
+  "release_reason": "GitHub Actions reached its 350-minute job limit before this reserved item was completed; retained for retry in smaller cloud shards"
 }
