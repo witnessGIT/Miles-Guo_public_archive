@@ -1,0 +1,10 @@
+{
+  "error": "cloud ASR item exceeded 1500 seconds; retained for retry or chunked processing",
+  "generated_at": "2026-10-16T11:06:15Z",
+  "live_id": "LIVE_20210314_001",
+  "media_committed_to_git": false,
+  "paid_api_used": false,
+  "processing_location": "github-hosted-macos-arm64",
+  "schema_version": "cloud-asr-attempt-v1",
+  "status": "cloud_attempt_timed_out_needs_retry"
+}
