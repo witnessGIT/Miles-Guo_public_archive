@@ -1,0 +1,16 @@
+{
+  "task_id": "WI_LIVE_20211020_002_cue_split",
+  "agent_id": "github-actions-natural-segments-38956873822",
+  "completed_at": "2026-10-16T19:42:55.737741+00:00",
+  "result_commit": "c3422e0e14069c7156cf3b9212df27dff7654c0a",
+  "outputs": [
+    "data/current/transcript_cues/asr_live_20211020_002.jsonl"
+  ],
+  "validation": "Timestamped ASR cue file exists; source ASR remains machine/unverified",
+  "workflow_mode": "continuous-worker-v2",
+  "claim_protocol": "claim-protocol-v2",
+  "entry_mode": "work",
+  "continue_after_finish": true,
+  "finish_prerequisites_revalidated": true,
+  "notes": "Task completed only after re-checking the latest repository dependency contract. Under continuous-worker-v2, refresh repository state and claim the next eligible task unless a documented stop condition applies."
+}
