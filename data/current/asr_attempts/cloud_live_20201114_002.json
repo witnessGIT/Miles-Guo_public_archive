@@ -1,6 +1,6 @@
 {
-  "error": "[METAL] Command buffer execution failed: Caused GPU Timeout Error (00000002:kIOGPUCommandBufferCallbackErrorTimeout).",
-  "generated_at": "2026-10-14T23:44:09Z",
+  "error": "[metal::load_device] No Metal device available. This typically occurs in headless, sandboxed, or virtualized macOS sessions where the GPU is not accessible.",
+  "generated_at": "2026-10-16T03:13:29Z",
   "live_id": "LIVE_20201114_002",
   "media_committed_to_git": false,
   "model": "mlx-community/whisper-large-v3-turbo",

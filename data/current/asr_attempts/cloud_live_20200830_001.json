@@ -1,6 +1,6 @@
 {
-  "error": "no media source was reachable from this GitHub-hosted runner",
-  "generated_at": "2026-10-14T23:36:43Z",
+  "error": "[metal::load_device] No Metal device available. This typically occurs in headless, sandboxed, or virtualized macOS sessions where the GPU is not accessible.",
+  "generated_at": "2026-10-16T03:09:28Z",
   "live_id": "LIVE_20200830_001",
   "media_committed_to_git": false,
   "model": "mlx-community/whisper-large-v3-turbo",
