@@ -1,0 +1,26 @@
+{
+  "task_id": "WI_LIVE_20210308_001_segment_split",
+  "agent_id": "github-actions-natural-segments-38915149980",
+  "claimed_at": "2026-10-16T14:25:35.540328+00:00",
+  "base_commit": "f25289b1f24a32abe91e0dd0a1443425543b10c1",
+  "status": "in_progress",
+  "workflow_mode": "continuous-worker-v2",
+  "claim_protocol": "claim-protocol-v2",
+  "entry_mode": "work",
+  "continue_after_finish": true,
+  "stage": "segment_split",
+  "case_id": null,
+  "live_id": "LIVE_20210308_001",
+  "kind": "live_work_item",
+  "source_candidate_id": null,
+  "review_generation": null,
+  "review_claim_timeout_hours": null,
+  "review_state_before_claim": null,
+  "candidate_review_contract": null,
+  "depends_on_at_claim": [
+    "WI_LIVE_20210308_001_cue_split"
+  ],
+  "scope": "Create citable segments by natural topic/event/quote boundaries, not by fixed counts.",
+  "reclaimed_expired_claim": false,
+  "static_claim_lease_hours": 24
+}
