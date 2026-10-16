@@ -4,7 +4,7 @@ import unittest
 from datetime import datetime, timezone
 from pathlib import Path
 
-from scripts.cloud_asr_batch import attempt_is_cooling_down
+from scripts.cloud_asr_batch import attempt_is_cooling_down, claim_is_unavailable
 
 
 class CloudAsrBatchTests(unittest.TestCase):
@@ -28,6 +28,26 @@ class CloudAsrBatchTests(unittest.TestCase):
             self.write_attempt(repo, "2000-01-01T00:00:00Z")
             self.assertFalse(attempt_is_cooling_down(repo, "LIVE_20260101_001", 24))
             self.assertFalse(attempt_is_cooling_down(repo, "LIVE_20260101_001", 0))
+
+    def test_active_claim_blocks_reclaim(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "claim.json"
+            path.write_text(json.dumps({
+                "status": "in_progress",
+                "claimed_at": datetime.now(timezone.utc).isoformat(),
+                "static_claim_lease_hours": 24,
+            }), encoding="utf-8")
+            self.assertTrue(claim_is_unavailable(path))
+
+    def test_released_claim_cools_down_then_can_be_reclaimed(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "claim.json"
+            path.write_text(json.dumps({
+                "status": "released",
+                "released_at": datetime.now(timezone.utc).isoformat(),
+            }), encoding="utf-8")
+            self.assertTrue(claim_is_unavailable(path, 24))
+            self.assertFalse(claim_is_unavailable(path, 0))
 
 
 if __name__ == "__main__":

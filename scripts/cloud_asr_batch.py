@@ -74,6 +74,37 @@ def attempt_is_cooling_down(repo: Path, live_id: str, cooldown_hours: int) -> bo
     return datetime.now(timezone.utc) - attempted_at < timedelta(hours=cooldown_hours)
 
 
+def claim_is_unavailable(path: Path, cooldown_hours: int = 24) -> bool:
+    """Return whether a claim is active or was released too recently to retry."""
+    if not path.exists():
+        return False
+    try:
+        payload = json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return True
+    status = str(payload.get("status") or "in_progress").lower()
+    if status == "in_progress":
+        claimed_at_text = str(payload.get("claimed_at") or "").replace("Z", "+00:00")
+        try:
+            claimed_at = datetime.fromisoformat(claimed_at_text)
+            if claimed_at.tzinfo is None:
+                claimed_at = claimed_at.replace(tzinfo=timezone.utc)
+            lease_hours = float(payload.get("static_claim_lease_hours") or 24)
+            return datetime.now(timezone.utc) - claimed_at < timedelta(hours=lease_hours)
+        except (ValueError, TypeError):
+            return True
+    if status != "released" or cooldown_hours <= 0:
+        return False
+    released_at_text = str(payload.get("released_at") or "").replace("Z", "+00:00")
+    try:
+        released_at = datetime.fromisoformat(released_at_text)
+        if released_at.tzinfo is None:
+            released_at = released_at.replace(tzinfo=timezone.utc)
+    except (ValueError, TypeError):
+        return False
+    return datetime.now(timezone.utc) - released_at < timedelta(hours=cooldown_hours)
+
+
 def eligible(repo: Path, limit: int, retry_cooldown_hours: int = 24) -> list[tuple[str, str]]:
     listing = run([sys.executable, "scripts/next_task.py", "--list"], repo).stdout
     values: list[tuple[str, str]] = []

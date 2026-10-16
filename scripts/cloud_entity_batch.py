@@ -8,18 +8,20 @@ import json
 import sys
 from pathlib import Path
 
-from cloud_asr_batch import push_with_rebase, run
+from cloud_asr_batch import claim_is_unavailable, push_with_rebase, run
 from cloud_entity_item import process_live
 
 
-def eligible(repo: Path, limit: int) -> list[tuple[str, str]]:
+def eligible(repo: Path, limit: int, retry_cooldown_hours: int = 24) -> list[tuple[str, str]]:
     completed = repo / "coordination" / "completed"
     claims = repo / "coordination" / "claims"
     values: list[tuple[str, str]] = []
     for segment_done in sorted(completed.glob("WI_LIVE_*_segment_split.json")):
         live_id = segment_done.stem.removeprefix("WI_").removesuffix("_segment_split")
         task_id = f"WI_{live_id}_entity_pass"
-        if (completed / f"{task_id}.json").exists() or (claims / f"{task_id}.json").exists():
+        if (completed / f"{task_id}.json").exists() or claim_is_unavailable(
+            claims / f"{task_id}.json", retry_cooldown_hours,
+        ):
             continue
         values.append((task_id, live_id))
         if len(values) == limit:
@@ -33,11 +35,14 @@ def main() -> int:
     parser.add_argument("--batch-size", type=int, default=2)
     parser.add_argument("--agent-id", required=True)
     parser.add_argument("--model", default="mlx-community/Qwen2.5-7B-Instruct-4bit")
+    parser.add_argument("--retry-cooldown-hours", type=int, default=24)
     args = parser.parse_args()
     if not 1 <= args.batch_size <= 20:
         raise SystemExit("cloud entity pilot batch size must be between 1 and 20")
+    if not 0 <= args.retry_cooldown_hours <= 168:
+        raise SystemExit("entity retry cooldown must be between 0 and 168 hours")
     repo = args.repo.resolve()
-    tasks = eligible(repo, args.batch_size)
+    tasks = eligible(repo, args.batch_size, args.retry_cooldown_hours)
     if not tasks:
         print("No eligible entity_pass tasks.")
         return 0

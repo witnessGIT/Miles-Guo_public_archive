@@ -8,18 +8,20 @@ import json
 import sys
 from pathlib import Path
 
-from cloud_asr_batch import push_with_rebase, run
+from cloud_asr_batch import claim_is_unavailable, push_with_rebase, run
 from cloud_keypoint_item import process_live
 
 
-def eligible(repo: Path, limit: int) -> list[tuple[str, str]]:
+def eligible(repo: Path, limit: int, retry_cooldown_hours: int = 24) -> list[tuple[str, str]]:
     completed = repo / "coordination" / "completed"
     claims = repo / "coordination" / "claims"
     values: list[tuple[str, str]] = []
     for segment_done in sorted(completed.glob("WI_LIVE_*_segment_split.json")):
         live_id = segment_done.stem.removeprefix("WI_").removesuffix("_segment_split")
         task_id = f"WI_{live_id}_key_points_topics"
-        if (completed / f"{task_id}.json").exists() or (claims / f"{task_id}.json").exists():
+        if (completed / f"{task_id}.json").exists() or claim_is_unavailable(
+            claims / f"{task_id}.json", retry_cooldown_hours,
+        ):
             continue
         values.append((task_id, live_id))
         if len(values) == limit:
@@ -59,9 +61,12 @@ def main() -> int:
     parser.add_argument("--model", default="mlx-community/Qwen2.5-7B-Instruct-4bit")
     parser.add_argument("--reprocess-live-id", default="")
     parser.add_argument("--reprocess-empty", action="store_true")
+    parser.add_argument("--retry-cooldown-hours", type=int, default=24)
     args = parser.parse_args()
     if not 1 <= args.batch_size <= 10:
         raise SystemExit("cloud key-point pilot batch size must be between 1 and 10")
+    if not 0 <= args.retry_cooldown_hours <= 168:
+        raise SystemExit("key-point retry cooldown must be between 0 and 168 hours")
     repo = args.repo.resolve()
     reprocess_live_id = args.reprocess_live_id.strip()
     if reprocess_live_id and args.reprocess_empty:
@@ -72,7 +77,7 @@ def main() -> int:
     elif args.reprocess_empty:
         tasks = completed_with_empty_output(repo, args.batch_size)
     else:
-        tasks = eligible(repo, args.batch_size)
+        tasks = eligible(repo, args.batch_size, args.retry_cooldown_hours)
     if not tasks:
         print("No eligible key_points_topics tasks.")
         return 0
