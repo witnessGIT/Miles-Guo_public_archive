@@ -1,0 +1,31 @@
+{
+  "audio_sha256": "a26163842ff16b18ae82e7f01de6b077a53eb9bf570793fa94cc8de885edf980",
+  "audio_size_bytes": 14423992,
+  "cue_count": 125,
+  "generated_at": "2026-10-16T17:32:31Z",
+  "language": "zh",
+  "live_id": "LIVE_20211011_002",
+  "media_asset_id": "MA_RUMBLE_V59QCR1_E41FBD96",
+  "media_committed_to_git": false,
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "paid_api_used": false,
+  "path_persistence": "ephemeral_deleted_after_job",
+  "processing_elapsed_sec": 214.522,
+  "processing_location": "github-hosted-macos-arm64",
+  "processing_path": "/Users/runner/work/_temp/miles-guo-asr/LIVE_20211011_002.ogg",
+  "resolved_media_url": "https://hugh.cdn.rumble.cloud/video/s8/2/n/a/Q/_/naQ_s.oaa.mp4",
+  "schema_version": "cloud-asr-result-v1",
+  "segment_count": 125,
+  "software": "mlx-whisper",
+  "source_attempt_errors": [
+    {
+      "asset_id": "MA_GETTR_POST_PDUJ7DF2ED_DE8B8E94",
+      "error": "Command '['ffmpeg', '-nostdin', '-hide_banner', '-loglevel', 'warning', '-y', '-user_agent', 'curl/8.7.1', '-i', 'https://stream.video.gettr.com/yXUO6WdwGrIxJGp4oSEi022DyPjrmCPaitXOyeA7a5Bw.m3u8', '-vn', '-ac', '1', '-ar', '16000', '-c:a', 'libopus', '-b:a', '32k', '-f', 'ogg', '/Users/runner/work/_temp/miles-guo-asr/LIVE_20211011_002.ogg.partial']' returned non-zero exit status 8."
+    }
+  ],
+  "source_id": "SRC_RUMBLE_V59QCR1_E41FBD96",
+  "source_url": "https://rumble.com/v59qcr1-20211011-2.html",
+  "status": "transcribed",
+  "transcript_version_id": "TR_LIVE_20211011_002_asr_raw_zh_001",
+  "verification_level": "machine_unverified"
+}
