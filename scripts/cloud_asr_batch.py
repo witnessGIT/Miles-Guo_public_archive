@@ -9,7 +9,7 @@ import os
 import re
 import subprocess
 import sys
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 
@@ -57,10 +57,29 @@ def push_with_rebase(repo: Path) -> None:
     raise RuntimeError("could not publish after five non-force retries")
 
 
-def eligible(repo: Path, limit: int) -> list[tuple[str, str]]:
+def attempt_is_cooling_down(repo: Path, live_id: str, cooldown_hours: int) -> bool:
+    if cooldown_hours <= 0:
+        return False
+    path = repo / "data" / "current" / "asr_attempts" / f"cloud_{live_id.lower()}.json"
+    if not path.exists():
+        return False
+    try:
+        payload = json.loads(path.read_text(encoding="utf-8"))
+        generated_at = str(payload.get("generated_at") or "").replace("Z", "+00:00")
+        attempted_at = datetime.fromisoformat(generated_at)
+        if attempted_at.tzinfo is None:
+            attempted_at = attempted_at.replace(tzinfo=timezone.utc)
+    except (OSError, ValueError, TypeError, json.JSONDecodeError):
+        return False
+    return datetime.now(timezone.utc) - attempted_at < timedelta(hours=cooldown_hours)
+
+
+def eligible(repo: Path, limit: int, retry_cooldown_hours: int = 24) -> list[tuple[str, str]]:
     listing = run([sys.executable, "scripts/next_task.py", "--list"], repo).stdout
     values: list[tuple[str, str]] = []
     for live_id in TASK_RE.findall(listing):
+        if attempt_is_cooling_down(repo, live_id, retry_cooldown_hours):
+            continue
         task_id = f"WI_{live_id}_transcript_import"
         if (task_id, live_id) not in values:
             values.append((task_id, live_id))
@@ -75,15 +94,18 @@ def main() -> int:
     parser.add_argument("--work-root", type=Path, required=True)
     parser.add_argument("--batch-size", type=int, default=100)
     parser.add_argument("--item-timeout-sec", type=int, default=1500)
+    parser.add_argument("--retry-cooldown-hours", type=int, default=24)
     parser.add_argument("--agent-id", required=True)
     args = parser.parse_args()
     if not 1 <= args.batch_size <= 100:
         raise SystemExit("cloud ASR batch size must be between 1 and 100")
     if not 300 <= args.item_timeout_sec <= 3000:
         raise SystemExit("cloud ASR item timeout must be between 300 and 3000 seconds")
+    if not 0 <= args.retry_cooldown_hours <= 168:
+        raise SystemExit("cloud ASR retry cooldown must be between 0 and 168 hours")
     repo = args.repo.resolve()
     work = args.work_root.resolve()
-    tasks = eligible(repo, args.batch_size)
+    tasks = eligible(repo, args.batch_size, args.retry_cooldown_hours)
     if not tasks:
         print("No eligible transcript_import tasks.")
         return 0
