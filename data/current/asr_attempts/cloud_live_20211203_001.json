@@ -1,0 +1,12 @@
+{
+  "error": "[METAL] Command buffer execution failed: Caused GPU Hang Error (00000003:kIOGPUCommandBufferCallbackErrorHang).",
+  "generated_at": "2026-10-17T04:24:00Z",
+  "live_id": "LIVE_20211203_001",
+  "media_committed_to_git": false,
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "paid_api_used": false,
+  "processing_location": "github-hosted-macos-arm64",
+  "schema_version": "cloud-asr-attempt-v1",
+  "source_attempt_errors": [],
+  "status": "cloud_attempt_failed_needs_retry"
+}
