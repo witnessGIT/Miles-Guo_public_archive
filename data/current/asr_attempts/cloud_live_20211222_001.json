@@ -1,0 +1,21 @@
+{
+  "error": "no media source was reachable from this GitHub-hosted runner",
+  "generated_at": "2026-10-17T06:31:26Z",
+  "live_id": "LIVE_20211222_001",
+  "media_committed_to_git": false,
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "paid_api_used": false,
+  "processing_location": "github-hosted-macos-arm64",
+  "schema_version": "cloud-asr-attempt-v1",
+  "source_attempt_errors": [
+    {
+      "asset_id": "MA_C2_RUMBLE_D777ACE87932",
+      "error": "Command '['ffmpeg', '-nostdin', '-hide_banner', '-loglevel', 'warning', '-y', '-user_agent', 'curl/8.7.1', '-i', 'https://hugh.cdn.rumble.cloud/video/s8/2/T/W/J/b/TWJbt.oaa.mp4', '-vn', '-ac', '1', '-ar', '16000', '-c:a', 'libopus', '-b:a', '32k', '-f', 'ogg', '/Users/runner/work/_temp/miles-guo-asr/LIVE_20211222_001.ogg.partial']' returned non-zero exit status 234."
+    },
+    {
+      "asset_id": "MA_C2_ODYSEE_197359139C95",
+      "error": "Command '['ffmpeg', '-nostdin', '-hide_banner', '-loglevel', 'warning', '-y', '-user_agent', 'curl/8.7.1', '-i', 'https://player.odycdn.com/api/v4/streams/free/20211222_1/2f9c801b38882bda8448e3f01c89acc0a8be51a7/best', '-vn', '-ac', '1', '-ar', '16000', '-c:a', 'libopus', '-b:a', '32k', '-f', 'ogg', '/Users/runner/work/_temp/miles-guo-asr/LIVE_20211222_001.ogg.partial']' returned non-zero exit status 8."
+    }
+  ],
+  "status": "cloud_attempt_failed_needs_retry"
+}
