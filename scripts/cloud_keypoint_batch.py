@@ -6,10 +6,10 @@ from __future__ import annotations
 import argparse
 import json
 import sys
+import tempfile
 from pathlib import Path
 
 from cloud_asr_batch import claim_is_unavailable, push_with_rebase, run
-from cloud_keypoint_item import process_live
 
 
 def eligible(
@@ -114,21 +114,23 @@ def main() -> int:
         run(["git", "commit", "-m", f"claim: reserve cloud key-point pilot of {len(tasks)}"], repo)
         push_with_rebase(repo)
 
-    from mlx_lm import generate, load
-    model, tokenizer = load(args.model)
-
-    def generate_text(prompt: str) -> str:
-        rendered = tokenizer.apply_chat_template([{"role": "user", "content": prompt}], tokenize=False, add_generation_prompt=True)
-        return generate(model, tokenizer, prompt=rendered, max_tokens=768, verbose=False)
-
     success: list[tuple[str, str, list[str], dict]] = []
     failed: list[tuple[str, str, str]] = []
-    for task_id, live_id in tasks:
-        try:
-            outputs, stats = process_live(repo, live_id, generate_text)
-            success.append((task_id, live_id, outputs, stats))
-        except Exception as exc:
-            failed.append((task_id, live_id, repr(exc)))
+    with tempfile.TemporaryDirectory(prefix="miles-keypoints-") as temporary:
+        result_root = Path(temporary)
+        for task_id, live_id in tasks:
+            result_path = result_root / f"{live_id}.json"
+            completed = run([
+                sys.executable, "scripts/cloud_keypoint_runner.py",
+                "--repo", str(repo), "--live-id", live_id,
+                "--model", args.model, "--result", str(result_path),
+            ], repo, check=False)
+            if completed.returncode == 0 and result_path.exists():
+                result = json.loads(result_path.read_text(encoding="utf-8"))
+                success.append((task_id, live_id, result["outputs"], result["stats"]))
+            else:
+                error = (completed.stdout or "isolated key-point worker failed")[-2000:].strip()
+                failed.append((task_id, live_id, error))
 
     run([sys.executable, "scripts/build_db.py"], repo)
     run([sys.executable, "scripts/validate_db.py"], repo)

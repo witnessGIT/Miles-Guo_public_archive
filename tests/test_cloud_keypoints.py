@@ -5,10 +5,17 @@ from pathlib import Path
 from unittest import mock
 
 from scripts import cloud_keypoint_item
+from scripts.cloud_keypoint_runner import write_result
 from scripts.cloud_keypoint_item import likely_substantive, locate_evidence, parse_json_array, process_live, prompt_for, validate_results
 
 
 class CloudKeyPointTests(unittest.TestCase):
+    def test_isolated_runner_writes_structured_result(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / "result.json"
+            write_result(path, {"outputs": ["one.jsonl"], "stats": {"key_points": 2}})
+            self.assertEqual(json.loads(path.read_text(encoding="utf-8"))["stats"]["key_points"], 2)
+
     def test_parse_fenced_array(self):
         value = parse_json_array('```json\n[{"point_text":"测试"}]\n```')
         self.assertEqual(value[0]["point_text"], "测试")
