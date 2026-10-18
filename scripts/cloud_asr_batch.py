@@ -105,10 +105,22 @@ def claim_is_unavailable(path: Path, cooldown_hours: int = 24) -> bool:
     return datetime.now(timezone.utc) - released_at < timedelta(hours=cooldown_hours)
 
 
-def eligible(repo: Path, limit: int, retry_cooldown_hours: int = 24) -> list[tuple[str, str]]:
+def eligible(
+    repo: Path, limit: int, retry_cooldown_hours: int = 24,
+    requested_live_ids: list[str] | None = None,
+) -> list[tuple[str, str]]:
     listing = run([sys.executable, "scripts/next_task.py", "--list"], repo).stdout
+    listed_live_ids = TASK_RE.findall(listing)
+    if requested_live_ids:
+        listed = set(listed_live_ids)
+        values: list[tuple[str, str]] = []
+        for live_id in requested_live_ids:
+            if live_id not in listed:
+                raise RuntimeError(f"requested ASR task is not currently eligible: {live_id}")
+            values.append((f"WI_{live_id}_transcript_import", live_id))
+        return values[:limit]
     values: list[tuple[str, str]] = []
-    for live_id in TASK_RE.findall(listing):
+    for live_id in listed_live_ids:
         if attempt_is_cooling_down(repo, live_id, retry_cooldown_hours):
             continue
         task_id = f"WI_{live_id}_transcript_import"
@@ -126,6 +138,10 @@ def main() -> int:
     parser.add_argument("--batch-size", type=int, default=100)
     parser.add_argument("--item-timeout-sec", type=int, default=3000)
     parser.add_argument("--retry-cooldown-hours", type=int, default=24)
+    parser.add_argument(
+        "--live-ids", default="",
+        help="Optional comma-separated eligible LIVE ids to retry explicitly",
+    )
     parser.add_argument("--agent-id", required=True)
     args = parser.parse_args()
     if not 1 <= args.batch_size <= 100:
@@ -136,7 +152,10 @@ def main() -> int:
         raise SystemExit("cloud ASR retry cooldown must be between 0 and 168 hours")
     repo = args.repo.resolve()
     work = args.work_root.resolve()
-    tasks = eligible(repo, args.batch_size, args.retry_cooldown_hours)
+    requested_live_ids = [value.strip() for value in args.live_ids.split(",") if value.strip()]
+    if len(requested_live_ids) > args.batch_size:
+        raise SystemExit("explicit live-id count cannot exceed batch size")
+    tasks = eligible(repo, args.batch_size, args.retry_cooldown_hours, requested_live_ids)
     if not tasks:
         print("No eligible transcript_import tasks.")
         return 0

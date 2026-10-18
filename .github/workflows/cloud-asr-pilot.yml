@@ -7,6 +7,10 @@ on:
         description: Number of livestreams in this cloud ASR batch
         required: true
         default: '100'
+      live_ids:
+        description: Optional comma-separated eligible LIVE ids for an explicit retry
+        required: false
+        default: ''
 
 permissions:
   contents: write
@@ -57,4 +61,5 @@ jobs:
             --repo "$GITHUB_WORKSPACE" \
             --work-root "$RUNNER_TEMP/miles-guo-asr" \
             --batch-size '${{ inputs.batch_size }}' \
+            --live-ids '${{ inputs.live_ids }}' \
             --agent-id "github-actions-cloud-asr-${GITHUB_RUN_ID}"
