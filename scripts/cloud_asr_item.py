@@ -12,6 +12,7 @@ import argparse
 import hashlib
 import json
 import os
+import shutil
 import sqlite3
 import subprocess
 import tempfile
@@ -25,6 +26,7 @@ from typing import Any
 
 MODEL = "mlx-community/whisper-large-v3-turbo"
 USER_AGENT = "curl/8.7.1"
+CHUNK_DURATION_SEC = 900
 
 
 def utc_now() -> str:
@@ -146,6 +148,53 @@ def extract_audio(media_url: str, destination: Path) -> None:
     os.replace(partial, destination)
 
 
+def transcribe_chunked(audio: Path, chunk_root: Path, mlx_whisper: Any) -> dict[str, Any]:
+    """Transcribe bounded audio chunks so long recordings cannot exhaust Metal buffers."""
+    shutil.rmtree(chunk_root, ignore_errors=True)
+    chunk_root.mkdir(parents=True, exist_ok=True)
+    pattern = chunk_root / "chunk_%04d.wav"
+    subprocess.run(
+        [
+            "ffmpeg", "-nostdin", "-hide_banner", "-loglevel", "warning", "-y",
+            "-i", str(audio), "-map", "0:a:0", "-ac", "1", "-ar", "16000",
+            "-c:a", "pcm_s16le", "-f", "segment", "-segment_time",
+            str(CHUNK_DURATION_SEC), "-reset_timestamps", "1", str(pattern),
+        ],
+        check=True,
+    )
+    chunks = sorted(chunk_root.glob("chunk_*.wav"))
+    if not chunks:
+        raise RuntimeError("ffmpeg produced no ASR chunks")
+
+    combined_text: list[str] = []
+    combined_segments: list[dict[str, Any]] = []
+    language = "zh"
+    for chunk_index, chunk in enumerate(chunks):
+        result = mlx_whisper.transcribe(
+            str(chunk), path_or_hf_repo=MODEL, language="zh", task="transcribe",
+            word_timestamps=False, condition_on_previous_text=True, verbose=False,
+        )
+        language = str(result.get("language") or language)
+        chunk_text = str(result.get("text") or "").strip()
+        if chunk_text:
+            combined_text.append(chunk_text)
+        offset = chunk_index * CHUNK_DURATION_SEC
+        for segment in result.get("segments") or []:
+            text = str(segment.get("text") or "").strip()
+            if not text:
+                continue
+            start = round(offset + float(segment["start"]), 3)
+            end = max(start, round(offset + float(segment["end"]), 3))
+            combined_segments.append({"start": start, "end": end, "text": text})
+        chunk.unlink(missing_ok=True)
+    return {
+        "text": " ".join(combined_text),
+        "segments": combined_segments,
+        "language": language,
+        "chunk_count": len(chunks),
+    }
+
+
 def output_paths(repo: Path, live_id: str) -> dict[str, Path]:
     stem = f"asr_{live_id.lower()}"
     root = repo / "data" / "current"
@@ -200,6 +249,7 @@ def publish(repo: Path, payload: dict[str, Any]) -> list[str]:
         "resolved_media_url", "audio_sha256", "audio_size_bytes", "model", "software",
         "language", "generated_at", "processing_elapsed_sec", "source_attempt_errors",
         "processing_location", "processing_path", "path_persistence",
+        "chunk_duration_sec", "chunk_count",
     )}
     manifest.update({
         "transcript_version_id": version_id, "cue_count": len(cues), "segment_count": len(segments),
@@ -224,6 +274,7 @@ def main() -> int:
     work = args.work_root.resolve()
     work.mkdir(parents=True, exist_ok=True)
     audio = work / f"{args.live_id}.ogg"
+    chunk_root = work / f"{args.live_id}.chunks"
     result_file = work / f"{args.live_id}.result.json"
     paths = output_paths(repo, args.live_id)
     if paths["version"].exists() and paths["cues"].exists() and paths["segments"].exists():
@@ -249,10 +300,7 @@ def main() -> int:
             raise RuntimeError("no media source was reachable from this GitHub-hosted runner")
         import mlx_whisper
         started = time.monotonic()
-        result = mlx_whisper.transcribe(
-            str(audio), path_or_hf_repo=MODEL, language="zh", task="transcribe",
-            word_timestamps=False, condition_on_previous_text=True, verbose=False,
-        )
+        result = transcribe_chunked(audio, chunk_root, mlx_whisper)
         elapsed = round(time.monotonic() - started, 3)
         asset, resolved = chosen
         segments = []
@@ -271,6 +319,7 @@ def main() -> int:
             "model": MODEL, "software": "mlx-whisper", "language": result.get("language") or "zh",
             "generated_at": utc_now(), "processing_elapsed_sec": elapsed,
             "text": str(result.get("text") or "").strip(), "segments": segments,
+            "chunk_duration_sec": CHUNK_DURATION_SEC, "chunk_count": result.get("chunk_count"),
             "source_attempt_errors": errors, "processing_location": "github-hosted-macos-arm64",
             "processing_path": str(audio), "path_persistence": "ephemeral_deleted_after_job",
         }
@@ -292,6 +341,7 @@ def main() -> int:
     finally:
         conn.close()
         audio.unlink(missing_ok=True)
+        shutil.rmtree(chunk_root, ignore_errors=True)
 
 
 if __name__ == "__main__":

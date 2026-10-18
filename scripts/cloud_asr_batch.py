@@ -124,7 +124,7 @@ def main() -> int:
     parser.add_argument("--repo", type=Path, required=True)
     parser.add_argument("--work-root", type=Path, required=True)
     parser.add_argument("--batch-size", type=int, default=100)
-    parser.add_argument("--item-timeout-sec", type=int, default=1500)
+    parser.add_argument("--item-timeout-sec", type=int, default=3000)
     parser.add_argument("--retry-cooldown-hours", type=int, default=24)
     parser.add_argument("--agent-id", required=True)
     args = parser.parse_args()
