@@ -148,8 +148,15 @@ def extract_audio(media_url: str, destination: Path) -> None:
     os.replace(partial, destination)
 
 
-def transcribe_chunked(audio: Path, chunk_root: Path, mlx_whisper: Any) -> dict[str, Any]:
-    """Transcribe bounded audio chunks so long recordings cannot exhaust Metal buffers."""
+def checkpoint_dir(repo: Path, live_id: str) -> Path:
+    return repo / "data" / "current" / "asr_checkpoints" / f"asr_{live_id.lower()}"
+
+
+def transcribe_chunked(
+    audio: Path, chunk_root: Path, mlx_whisper: Any,
+    checkpoint_root: Path | None = None, live_id: str = "",
+) -> dict[str, Any]:
+    """Transcribe bounded chunks and durably resume completed structured results."""
     shutil.rmtree(chunk_root, ignore_errors=True)
     chunk_root.mkdir(parents=True, exist_ok=True)
     pattern = chunk_root / "chunk_%04d.wav"
@@ -166,25 +173,73 @@ def transcribe_chunked(audio: Path, chunk_root: Path, mlx_whisper: Any) -> dict[
     if not chunks:
         raise RuntimeError("ffmpeg produced no ASR chunks")
 
+    if checkpoint_root is not None:
+        checkpoint_root.mkdir(parents=True, exist_ok=True)
     combined_text: list[str] = []
     combined_segments: list[dict[str, Any]] = []
     language = "zh"
+    resumed_chunks = 0
     for chunk_index, chunk in enumerate(chunks):
-        result = mlx_whisper.transcribe(
-            str(chunk), path_or_hf_repo=MODEL, language="zh", task="transcribe",
-            word_timestamps=False, condition_on_previous_text=True, verbose=False,
-        )
-        language = str(result.get("language") or language)
-        chunk_text = str(result.get("text") or "").strip()
+        offset = chunk_index * CHUNK_DURATION_SEC
+        checkpoint_path = checkpoint_root / f"chunk_{chunk_index:04d}.json" if checkpoint_root else None
+        checkpoint: dict[str, Any] | None = None
+        if checkpoint_path and checkpoint_path.exists():
+            try:
+                candidate = json.loads(checkpoint_path.read_text(encoding="utf-8"))
+                if (
+                    candidate.get("schema_version") == "cloud-asr-chunk-v1"
+                    and candidate.get("live_id") == live_id
+                    and candidate.get("model") == MODEL
+                    and candidate.get("chunk_index") == chunk_index
+                    and candidate.get("offset_sec") == offset
+                ):
+                    checkpoint = candidate
+                    resumed_chunks += 1
+            except (OSError, json.JSONDecodeError):
+                checkpoint = None
+        if checkpoint is None:
+            result = mlx_whisper.transcribe(
+                str(chunk), path_or_hf_repo=MODEL, language="zh", task="transcribe",
+                word_timestamps=False, condition_on_previous_text=True, verbose=False,
+            )
+            checkpoint = {
+                "schema_version": "cloud-asr-chunk-v1",
+                "live_id": live_id,
+                "chunk_index": chunk_index,
+                "offset_sec": offset,
+                "chunk_audio_sha256": sha256_file(chunk),
+                "model": MODEL,
+                "language": str(result.get("language") or language),
+                "text": str(result.get("text") or "").strip(),
+                "segments": [
+                    {
+                        "start": round(offset + float(segment["start"]), 3),
+                        "end": max(
+                            round(offset + float(segment["start"]), 3),
+                            round(offset + float(segment["end"]), 3),
+                        ),
+                        "text": str(segment.get("text") or "").strip(),
+                    }
+                    for segment in result.get("segments") or []
+                    if str(segment.get("text") or "").strip()
+                ],
+                "completed_at": utc_now(),
+                "processing_location": "github-hosted-macos-arm64",
+                "media_committed_to_git": False,
+                "paid_api_used": False,
+            }
+            if checkpoint_path:
+                write_json(checkpoint_path, checkpoint)
+        language = str(checkpoint.get("language") or language)
+        chunk_text = str(checkpoint.get("text") or "").strip()
         if chunk_text:
             combined_text.append(chunk_text)
-        offset = chunk_index * CHUNK_DURATION_SEC
-        for segment in result.get("segments") or []:
+        for segment in checkpoint.get("segments") or []:
             text = str(segment.get("text") or "").strip()
             if not text:
                 continue
-            start = round(offset + float(segment["start"]), 3)
-            end = max(start, round(offset + float(segment["end"]), 3))
+            start = round(float(segment["start"]), 3)
+            end = max(start, round(float(segment["end"]), 3))
             combined_segments.append({"start": start, "end": end, "text": text})
         chunk.unlink(missing_ok=True)
     return {
@@ -192,6 +247,7 @@ def transcribe_chunked(audio: Path, chunk_root: Path, mlx_whisper: Any) -> dict[
         "segments": combined_segments,
         "language": language,
         "chunk_count": len(chunks),
+        "resumed_chunk_count": resumed_chunks,
     }
 
 
@@ -249,7 +305,7 @@ def publish(repo: Path, payload: dict[str, Any]) -> list[str]:
         "resolved_media_url", "audio_sha256", "audio_size_bytes", "model", "software",
         "language", "generated_at", "processing_elapsed_sec", "source_attempt_errors",
         "processing_location", "processing_path", "path_persistence",
-        "chunk_duration_sec", "chunk_count",
+        "chunk_duration_sec", "chunk_count", "resumed_chunk_count",
     )}
     manifest.update({
         "transcript_version_id": version_id, "cue_count": len(cues), "segment_count": len(segments),
@@ -275,6 +331,7 @@ def main() -> int:
     work.mkdir(parents=True, exist_ok=True)
     audio = work / f"{args.live_id}.ogg"
     chunk_root = work / f"{args.live_id}.chunks"
+    checkpoints = checkpoint_dir(repo, args.live_id)
     result_file = work / f"{args.live_id}.result.json"
     paths = output_paths(repo, args.live_id)
     if paths["version"].exists() and paths["cues"].exists() and paths["segments"].exists():
@@ -298,11 +355,35 @@ def main() -> int:
                 audio.unlink(missing_ok=True)
         if chosen is None:
             raise RuntimeError("no media source was reachable from this GitHub-hosted runner")
+        asset, resolved = chosen
+        audio_digest = sha256_file(audio)
+        resume_manifest = checkpoints / "source.json"
+        previous_digest = None
+        if resume_manifest.exists():
+            try:
+                previous_digest = json.loads(resume_manifest.read_text(encoding="utf-8")).get("audio_sha256")
+            except (OSError, json.JSONDecodeError):
+                previous_digest = None
+        if previous_digest != audio_digest:
+            shutil.rmtree(checkpoints, ignore_errors=True)
+        write_json(resume_manifest, {
+            "schema_version": "cloud-asr-checkpoint-set-v1",
+            "live_id": args.live_id,
+            "source_id": asset["source_id"],
+            "media_asset_id": asset["id"],
+            "source_url": asset["url"],
+            "audio_sha256": audio_digest,
+            "audio_size_bytes": audio.stat().st_size,
+            "model": MODEL,
+            "chunk_duration_sec": CHUNK_DURATION_SEC,
+            "processing_location": "github-hosted-macos-arm64",
+            "media_committed_to_git": False,
+            "paid_api_used": False,
+        })
         import mlx_whisper
         started = time.monotonic()
-        result = transcribe_chunked(audio, chunk_root, mlx_whisper)
+        result = transcribe_chunked(audio, chunk_root, mlx_whisper, checkpoints, args.live_id)
         elapsed = round(time.monotonic() - started, 3)
-        asset, resolved = chosen
         segments = []
         for index, segment in enumerate(result.get("segments") or []):
             text = str(segment.get("text") or "").strip()
@@ -315,11 +396,12 @@ def main() -> int:
             "schema_version": "cloud-asr-result-v1", "live_id": args.live_id,
             "status": "transcribed", "source_id": asset["source_id"], "media_asset_id": asset["id"],
             "source_url": asset["url"], "resolved_media_url": resolved,
-            "audio_sha256": sha256_file(audio), "audio_size_bytes": audio.stat().st_size,
+            "audio_sha256": audio_digest, "audio_size_bytes": audio.stat().st_size,
             "model": MODEL, "software": "mlx-whisper", "language": result.get("language") or "zh",
             "generated_at": utc_now(), "processing_elapsed_sec": elapsed,
             "text": str(result.get("text") or "").strip(), "segments": segments,
             "chunk_duration_sec": CHUNK_DURATION_SEC, "chunk_count": result.get("chunk_count"),
+            "resumed_chunk_count": result.get("resumed_chunk_count", 0),
             "source_attempt_errors": errors, "processing_location": "github-hosted-macos-arm64",
             "processing_path": str(audio), "path_persistence": "ephemeral_deleted_after_job",
         }

@@ -178,6 +178,7 @@ def main() -> int:
         failed: list[tuple[str, str, str]] = []
         attempt_paths: list[str] = []
         for task_id, live_id in checkpoint:
+            checkpoint_path = f"data/current/asr_checkpoints/asr_{live_id.lower()}"
             item_command = [
                 sys.executable, "scripts/cloud_asr_item.py", "--repo", str(repo),
                 "--live-id", live_id, "--work-root", str(work),
@@ -210,11 +211,15 @@ def main() -> int:
                 f"data/current/asr_manifests/{stem}.json",
             ]
             if completed.returncode == 0 and all((repo / path).exists() for path in outputs):
+                if (repo / checkpoint_path).exists():
+                    attempt_paths.append(checkpoint_path)
                 success.append((task_id, live_id, outputs))
             else:
                 attempt = f"data/current/asr_attempts/cloud_{live_id.lower()}.json"
                 if (repo / attempt).exists():
                     attempt_paths.append(attempt)
+                if (repo / checkpoint_path).exists():
+                    attempt_paths.append(checkpoint_path)
                 failed.append((task_id, live_id, attempt))
 
         run([sys.executable, "scripts/build_db.py"], repo)

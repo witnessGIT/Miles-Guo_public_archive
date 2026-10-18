@@ -6,7 +6,7 @@ import unittest
 from pathlib import Path
 from unittest.mock import patch
 
-from scripts.cloud_asr_item import CHUNK_DURATION_SEC, output_paths, publish, transcribe_chunked
+from scripts.cloud_asr_item import CHUNK_DURATION_SEC, MODEL, output_paths, publish, transcribe_chunked
 
 
 class CloudAsrOutputTests(unittest.TestCase):
@@ -43,6 +43,54 @@ class CloudAsrOutputTests(unittest.TestCase):
             self.assertEqual(segments[0]["start"], 1.0)
             self.assertEqual(segments[1]["start"], CHUNK_DURATION_SEC + 1.0)
             self.assertFalse(any(chunk_root.glob("chunk_*.wav")))
+
+    def test_chunked_transcription_resumes_structured_checkpoints(self) -> None:
+        class FakeWhisper:
+            calls = 0
+
+            @classmethod
+            def transcribe(cls, _path: str, **_kwargs: object) -> dict[str, object]:
+                cls.calls += 1
+                return {
+                    "text": "new chunk",
+                    "language": "zh",
+                    "segments": [{"start": 2.0, "end": 3.0, "text": "new part"}],
+                }
+
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            audio = root / "audio.ogg"
+            audio.touch()
+            chunk_root = root / "chunks"
+            checkpoints = root / "checkpoints"
+            checkpoints.mkdir()
+            (checkpoints / "chunk_0000.json").write_text(json.dumps({
+                "schema_version": "cloud-asr-chunk-v1",
+                "live_id": "LIVE_20200101_001",
+                "chunk_index": 0,
+                "offset_sec": 0,
+                "model": MODEL,
+                "language": "zh",
+                "text": "saved chunk",
+                "segments": [{"start": 1.0, "end": 1.5, "text": "saved part"}],
+            }), encoding="utf-8")
+
+            def fake_ffmpeg(*_args: object, **_kwargs: object) -> None:
+                chunk_root.mkdir(parents=True, exist_ok=True)
+                (chunk_root / "chunk_0000.wav").touch()
+                (chunk_root / "chunk_0001.wav").touch()
+
+            with patch("scripts.cloud_asr_item.subprocess.run", side_effect=fake_ffmpeg):
+                result = transcribe_chunked(
+                    audio, chunk_root, FakeWhisper, checkpoints, "LIVE_20200101_001",
+                )
+
+            self.assertEqual(FakeWhisper.calls, 1)
+            self.assertEqual(result["resumed_chunk_count"], 1)
+            self.assertEqual(result["text"], "saved chunk new chunk")
+            self.assertEqual(result["segments"][1]["start"], CHUNK_DURATION_SEC + 2.0)
+            written = json.loads((checkpoints / "chunk_0001.json").read_text(encoding="utf-8"))
+            self.assertFalse(written["media_committed_to_git"])
 
     def test_publish_keeps_media_out_and_writes_timestamped_machine_records(self) -> None:
         with tempfile.TemporaryDirectory() as temporary:
