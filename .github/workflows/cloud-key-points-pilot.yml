@@ -16,6 +16,10 @@ on:
         required: false
         type: boolean
         default: false
+      live_ids:
+        description: Optional comma-separated eligible LIVE ids for an explicit retry
+        required: false
+        default: ''
 
 permissions:
   contents: write
@@ -65,5 +69,6 @@ jobs:
             --repo "$GITHUB_WORKSPACE" \
             --batch-size '${{ inputs.batch_size }}' \
             --reprocess-live-id '${{ inputs.reprocess_live_id }}' \
+            --live-ids '${{ inputs.live_ids }}' \
             ${extra_arg:+"$extra_arg"} \
             --agent-id "github-actions-cloud-key-points-${GITHUB_RUN_ID}"

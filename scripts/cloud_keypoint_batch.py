@@ -12,9 +12,23 @@ from cloud_asr_batch import claim_is_unavailable, push_with_rebase, run
 from cloud_keypoint_item import process_live
 
 
-def eligible(repo: Path, limit: int, retry_cooldown_hours: int = 24) -> list[tuple[str, str]]:
+def eligible(
+    repo: Path, limit: int, retry_cooldown_hours: int = 24,
+    requested_live_ids: list[str] | None = None,
+) -> list[tuple[str, str]]:
     completed = repo / "coordination" / "completed"
     claims = repo / "coordination" / "claims"
+    if requested_live_ids:
+        values: list[tuple[str, str]] = []
+        for live_id in requested_live_ids:
+            task_id = f"WI_{live_id}_key_points_topics"
+            segment_done = completed / f"WI_{live_id}_segment_split.json"
+            if not segment_done.exists() or (completed / f"{task_id}.json").exists():
+                raise RuntimeError(f"requested key-point task is not currently eligible: {live_id}")
+            if claim_is_unavailable(claims / f"{task_id}.json", cooldown_hours=0):
+                raise RuntimeError(f"requested key-point task has an active claim: {live_id}")
+            values.append((task_id, live_id))
+        return values[:limit]
     values: list[tuple[str, str]] = []
     for segment_done in sorted(completed.glob("WI_LIVE_*_segment_split.json")):
         live_id = segment_done.stem.removeprefix("WI_").removesuffix("_segment_split")
@@ -62,6 +76,10 @@ def main() -> int:
     parser.add_argument("--reprocess-live-id", default="")
     parser.add_argument("--reprocess-empty", action="store_true")
     parser.add_argument("--retry-cooldown-hours", type=int, default=24)
+    parser.add_argument(
+        "--live-ids", default="",
+        help="Optional comma-separated eligible LIVE ids to retry explicitly",
+    )
     args = parser.parse_args()
     if not 1 <= args.batch_size <= 10:
         raise SystemExit("cloud key-point pilot batch size must be between 1 and 10")
@@ -69,6 +87,11 @@ def main() -> int:
         raise SystemExit("key-point retry cooldown must be between 0 and 168 hours")
     repo = args.repo.resolve()
     reprocess_live_id = args.reprocess_live_id.strip()
+    requested_live_ids = [value.strip() for value in args.live_ids.split(",") if value.strip()]
+    if len(requested_live_ids) > args.batch_size:
+        raise SystemExit("explicit live-id count cannot exceed batch size")
+    if requested_live_ids and (reprocess_live_id or args.reprocess_empty):
+        raise SystemExit("explicit retries cannot be combined with reprocessing")
     if reprocess_live_id and args.reprocess_empty:
         raise SystemExit("choose either --reprocess-live-id or --reprocess-empty")
     reprocessing = bool(reprocess_live_id or args.reprocess_empty)
@@ -77,7 +100,7 @@ def main() -> int:
     elif args.reprocess_empty:
         tasks = completed_with_empty_output(repo, args.batch_size)
     else:
-        tasks = eligible(repo, args.batch_size, args.retry_cooldown_hours)
+        tasks = eligible(repo, args.batch_size, args.retry_cooldown_hours, requested_live_ids)
     if not tasks:
         print("No eligible key_points_topics tasks.")
         return 0
