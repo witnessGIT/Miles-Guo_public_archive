@@ -1,0 +1,591 @@
+{
+  "chunk_audio_sha256": "62d974845e2af5c82859dffaa79c90bc0356d39a43ac6652c30ae0a439b9afde",
+  "chunk_index": 36,
+  "completed_at": "2026-10-18T16:36:39Z",
+  "language": "zh",
+  "live_id": "LIVE_20210604_001",
+  "media_committed_to_git": false,
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "offset_sec": 32400,
+  "paid_api_used": false,
+  "processing_location": "github-hosted-macos-arm64",
+  "schema_version": "cloud-asr-chunk-v1",
+  "segments": [
+    {
+      "end": 32409.2,
+      "start": 32400.0,
+      "text": "like a forensic scene at a at a crime scene with like dna evidence is that correct yeah so really"
+    },
+    {
+      "end": 32417.76,
+      "start": 32409.2,
+      "text": "what you're looking at is i mean there's hash values which are unique to each item any change"
+    },
+    {
+      "end": 32426.0,
+      "start": 32417.76,
+      "text": "to that it'll it'll change the hash so that's how you verify images or you know the pcap in this"
+    },
+    {
+      "end": 32434.4,
+      "start": 32426.0,
+      "text": "in this case so when you're looking at you know this file you make sure that it hasn't been doctored"
+    },
+    {
+      "end": 32440.88,
+      "start": 32434.4,
+      "text": "or anything's been done to it because when you do the work it needs to match that original file"
+    },
+    {
+      "end": 32446.72,
+      "start": 32440.88,
+      "text": "and so that that's where you start and then you know we work to unencrypt and pull the data out"
+    },
+    {
+      "end": 32453.04,
+      "start": 32446.72,
+      "text": "to identify exactly what happened during that period of time okay so have now when you in all"
+    },
+    {
+      "end": 32459.04,
+      "start": 32453.04,
+      "text": "your work in 20 years then do you work with these pcaps a lot or do most cyber experts is that that's"
+    },
+    {
+      "end": 32467.12,
+      "start": 32459.04,
+      "text": "what you work with all the time yeah a lot a lot of the time we do because um you know well you"
+    },
+    {
+      "end": 32476.32,
+      "start": 32468.08,
+      "text": "if there is a active cyber attack you record it and the way you record it is through a pcap that's how"
+    },
+    {
+      "end": 32482.48,
+      "start": 32476.32,
+      "text": "how you capture that traffic and that traffic when when you capture that information you have"
+    },
+    {
+      "end": 32488.72,
+      "start": 32482.48,
+      "text": "the source you have the destination you know you have the files that are being transmitted and through"
+    },
+    {
+      "end": 32496.4,
+      "start": 32488.72,
+      "text": "what through what protocol it it captures a lot of information and you know you go through it and"
+    },
+    {
+      "end": 32503.92,
+      "start": 32497.28,
+      "text": "essentially translate it right that's what took so long i i i believe uh it's been a couple months now"
+    },
+    {
+      "end": 32511.68,
+      "start": 32503.92,
+      "text": "with i've had yourself and many others validating and uh translating uh this these cpacks and there"
+    },
+    {
+      "end": 32521.28,
+      "start": 32511.68,
+      "text": "was literally thousands of hacks right from china yeah well there were there were there were a lot and"
+    },
+    {
+      "end": 32528.08,
+      "start": 32521.28,
+      "text": "there were a lot successful some were just doing reconnaissance and others were flipping votes and so"
+    },
+    {
+      "end": 32534.08,
+      "start": 32528.08,
+      "text": "it would go in and identify where it needed to flip and then it would flip so okay there was a lot of"
+    },
+    {
+      "end": 32542.8,
+      "start": 32534.08,
+      "text": "activity so what i had you guys do was go out and get 20 just grab 20 of the pcaps 20 of them that"
+    },
+    {
+      "end": 32550.4,
+      "start": 32542.8,
+      "text": "trans that you could take that data and translate it into something that was readable for all of us here"
+    },
+    {
+      "end": 32557.28,
+      "start": 32550.4,
+      "text": "so what i did is i said you know what let's just see how this you know because this was in the millions"
+    },
+    {
+      "end": 32563.76,
+      "start": 32557.28,
+      "text": "of millions of millions of votes that were flipped on our election by china from uh from uh trump to"
+    },
+    {
+      "end": 32573.68,
+      "start": 32563.76,
+      "text": "biden okay so i said well let's just grab 20 of them so we can make this uh this uh um absolutely 9-0 video"
+    },
+    {
+      "end": 32580.08,
+      "start": 32573.68,
+      "text": "so we went out we grabbed 20 of them now it took uh uh i don't know what it take four to six weeks to"
+    },
+    {
+      "end": 32588.4,
+      "start": 32580.08,
+      "text": "to validate just those 20 um uh pcaps and and chuck because i wanted every i was very particular"
+    },
+    {
+      "end": 32596.96,
+      "start": 32588.4,
+      "text": "wasn't i i wanted every little thing validated and uh 100 full proof and these were the five states"
+    },
+    {
+      "end": 32606.48,
+      "start": 32596.96,
+      "text": "these were five states michigan wisconsin pennsylvania arizona and georgia okay so now what i want to do"
+    },
+    {
+      "end": 32614.96,
+      "start": 32606.48,
+      "text": "is bring up the data that you that you took the pcaps and and translated it for us and showed just"
+    },
+    {
+      "end": 32624.32,
+      "start": 32614.96,
+      "text": "these 20 attacks exactly what these pcaps show and that we can all read on the first line uh if we start"
+    },
+    {
+      "end": 32632.72,
+      "start": 32624.32,
+      "text": "on the top here this was from if we look at the date it's 11 3 20 the day of the election at 10 49 pm"
+    },
+    {
+      "end": 32639.84,
+      "start": 32632.72,
+      "text": "can you go ahead and take us through this uh when you talk about the source and take us through us"
+    },
+    {
+      "end": 32648.96,
+      "start": 32639.84,
+      "text": "line by line and explain what this uh what this is yeah so um the source is the ip address from"
+    },
+    {
+      "end": 32657.92,
+      "start": 32649.6,
+      "text": "the computer that essentially uh you know changed that vote so since we focused on the 20 each one of these"
+    },
+    {
+      "end": 32669.04,
+      "start": 32657.92,
+      "text": "resulted in votes being changed so that's the source um latitude and longitude is essentially within 400 yards"
+    },
+    {
+      "end": 32681.92,
+      "start": 32669.04,
+      "text": "of where that device is located um beijing uh obviously china province city um and then this next part um"
+    },
+    {
+      "end": 32692.0,
+      "start": 32681.92,
+      "text": "um is the network that was pulled out of um out of the pcap essentially but you know some of this isn't"
+    },
+    {
+      "end": 32698.48,
+      "start": 32692.0,
+      "text": "chinese so when you translate it you just want to make sure and you know as you've asked us to do"
+    },
+    {
+      "end": 32706.88,
+      "start": 32700.0,
+      "text": "double triple quadruple you know validate and so we've been going through making sure the translations and"
+    },
+    {
+      "end": 32713.92,
+      "start": 32706.88,
+      "text": "all the information checks out so what he's saying here everybody is what i did is i made them all"
+    },
+    {
+      "end": 32721.76,
+      "start": 32713.92,
+      "text": "validate the validation isn't that correct yeah so we you know because we're dealing with uh other"
+    },
+    {
+      "end": 32730.0,
+      "start": 32721.76,
+      "text": "languages we validated the validation that was validated so that the next line there which is the"
+    },
+    {
+      "end": 32739.36,
+      "start": 32730.0,
+      "text": "network code what would that be yeah so that that that's essentially from the registration of of um that ip so"
+    },
+    {
+      "end": 32750.72,
+      "start": 32740.64,
+      "text": "you know most every single uh ip is registered to somebody so when you look at that network that network"
+    },
+    {
+      "end": 32759.04,
+      "start": 32750.72,
+      "text": "range um and you know identify who who the registered owner is right so that that's where it comes down"
+    },
+    {
+      "end": 32767.44,
+      "start": 32759.04,
+      "text": "okay so you got all of this information from the pcaps is that correct yeah the next line it says target"
+    },
+    {
+      "end": 32774.24,
+      "start": 32767.44,
+      "text": "now we just went through which would be the the hacker or the attacker so to speak correct and now"
+    },
+    {
+      "end": 32781.44,
+      "start": 32774.24,
+      "text": "we're going to get into the target which is um i i guess i could pull that out the target that's the target"
+    },
+    {
+      "end": 32788.8,
+      "start": 32781.44,
+      "text": "would that be the target's ip address and then again the longitude latitude and the state that it came"
+    },
+    {
+      "end": 32798.56,
+      "start": 32788.8,
+      "text": "that it was hacked into correct yep and then we have the entry point um you know there's uh delta"
+    },
+    {
+      "end": 32804.96,
+      "start": 32798.56,
+      "text": "county here in this case and then the network registration what is it so the network registration"
+    },
+    {
+      "end": 32813.28,
+      "start": 32804.96,
+      "text": "that also all this stuff came right out of the pcaps that's preserved in time you can't change it and"
+    },
+    {
+      "end": 32820.24,
+      "start": 32813.28,
+      "text": "when you have it it's uh it's uh 100 it's non-negotiable it's not there's no i mean here"
+    },
+    {
+      "end": 32829.2,
+      "start": 32820.24,
+      "text": "it is this is what it is is that correct yeah i think uh we were saying that it it's this isn't"
+    },
+    {
+      "end": 32836.48,
+      "start": 32829.2,
+      "text": "subjective it just is what it is it's fact that information you know speaks for itself and right"
+    },
+    {
+      "end": 32843.04,
+      "start": 32836.48,
+      "text": "so before before we go to the last couple lines i want to ask you this if you are going to prove a"
+    },
+    {
+      "end": 32852.48,
+      "start": 32843.04,
+      "text": "case a cyber case a cyber attack and if you if you had a wish list like let's say you know obviously"
+    },
+    {
+      "end": 32860.24,
+      "start": 32852.48,
+      "text": "when i came to you and said and others and said hey i have something that's really going to change the"
+    },
+    {
+      "end": 32865.6,
+      "start": 32860.24,
+      "text": "world it's good because these guys brought me these uh i didn't know they were called uh pcaps at the"
+    },
+    {
+      "end": 32872.32,
+      "start": 32865.6,
+      "text": "time uh from uh but i knew they were from the night of the election um what would you would you say if"
+    },
+    {
+      "end": 32878.64,
+      "start": 32872.32,
+      "text": "you could have your wish list 100 prove something is this what it would be what would it be in a cyber"
+    },
+    {
+      "end": 32890.56,
+      "start": 32878.64,
+      "text": "attack yeah um this is 100 i mean this is what you would want this is yeah a lot of times you know you"
+    },
+    {
+      "end": 32898.48,
+      "start": 32890.56,
+      "text": "come in at least you know in our line of work we get called in after the attack so this was something"
+    },
+    {
+      "end": 32906.48,
+      "start": 32898.48,
+      "text": "that was captured during the attack you always want that right you want to catch somebody yeah you want"
+    },
+    {
+      "end": 32912.32,
+      "start": 32906.48,
+      "text": "to catch them you know somebody's robbing a bank you want to have it on video like right that's"
+    },
+    {
+      "end": 32919.2,
+      "start": 32912.32,
+      "text": "definitive evidence this is robbing the bank and having it on video so i wanted to hear everyone to"
+    },
+    {
+      "end": 32926.24,
+      "start": 32919.2,
+      "text": "hear that this is we have what everyone would ever want if uh if there was a crime committed cyberly a"
+    },
+    {
+      "end": 32931.52,
+      "start": 32926.24,
+      "text": "cyber attack we have the forensic evidence we have the movie we have the video of the bank being robbed"
+    },
+    {
+      "end": 32938.0,
+      "start": 32931.52,
+      "text": "so to speak and right before i wanted you all to hear that before you look at the last couple lines"
+    },
+    {
+      "end": 32944.96,
+      "start": 32938.0,
+      "text": "here you have the you have the uh intrusion what how they got in firewall or credentials whether they"
+    },
+    {
+      "end": 32952.56,
+      "start": 32944.96,
+      "text": "had the credentials and was it a success yes it was a success here it is everybody what happened"
+    },
+    {
+      "end": 32963.68,
+      "start": 32952.56,
+      "text": "in this case donald trump it says down there were 3 215 votes flipped and you can go all the way down"
+    },
+    {
+      "end": 32971.84,
+      "start": 32963.68,
+      "text": "this list and every one of them was a trump uh votes taken from trump given to biden it was a flip"
+    },
+    {
+      "end": 32978.96,
+      "start": 32971.84,
+      "text": "so these cyber hacks and these attacks are you saying that these these numbers here at the end came right"
+    },
+    {
+      "end": 32987.92,
+      "start": 32978.96,
+      "text": "off of those p caps is that correct yeah those uh i mean they're specific numbers right right so those"
+    },
+    {
+      "end": 32997.6,
+      "start": 32988.72,
+      "text": "you're not just rounding up it's actual specific like to the vote numbers that were wow that is so"
+    },
+    {
+      "end": 33004.72,
+      "start": 32997.6,
+      "text": "awesome so everybody do you see what this is what we have here you talk about a smoking gun this is why"
+    },
+    {
+      "end": 33010.0,
+      "start": 33004.72,
+      "text": "i've been so by everybody you know for two months people have attacked me and told me i didn't have"
+    },
+    {
+      "end": 33015.92,
+      "start": 33010.0,
+      "text": "the evidence and all this stuff and we've made these other movies but i wanted to get on here and explain"
+    },
+    {
+      "end": 33022.8,
+      "start": 33015.92,
+      "text": "to everyone this was an attack by china on our country through these dominion and these other machines"
+    },
+    {
+      "end": 33029.6,
+      "start": 33023.36,
+      "text": "where and they just hacked in a cyber attack hacked into our election and flipped it to everyone anyone that"
+    },
+    {
+      "end": 33034.64,
+      "start": 33029.6,
+      "text": "they wanted to win in this case it was the democrat party i want to ask you something before we go to"
+    },
+    {
+      "end": 33041.36,
+      "start": 33034.64,
+      "text": "the next chart going to the supreme court when this gets there when we when we bring this to the supreme"
+    },
+    {
+      "end": 33049.92,
+      "start": 33041.36,
+      "text": "court and so what you're saying because this isn't subjective and you can't change anything and with"
+    },
+    {
+      "end": 33056.0,
+      "start": 33049.92,
+      "text": "this evidence if uh and you go in there and what would you expect is there any way it could be"
+    },
+    {
+      "end": 33064.88,
+      "start": 33056.0,
+      "text": "five to four or six to three that this is real or eight to one um or does it have nine zero it's"
+    },
+    {
+      "end": 33074.4,
+      "start": 33064.88,
+      "text": "irrefutable irrefutable that's the word irrefutable and it's not subjective right i mean this is"
+    },
+    {
+      "end": 33083.2,
+      "start": 33074.96,
+      "text": "you're beautiful right yeah it's blood sometimes you have little specks of blood right this is a buck a"
+    },
+    {
+      "end": 33090.96,
+      "start": 33083.2,
+      "text": "bucket of it wow yeah you you're so awesome you have now now everybody knows why i've had the"
+    },
+    {
+      "end": 33097.6,
+      "start": 33090.96,
+      "text": "confidence i've had over the last couple months and now i want to show you i want to show everybody"
+    },
+    {
+      "end": 33105.52,
+      "start": 33098.32,
+      "text": "what just remember these are just 20 of the hacks everybody out of thousands that china orchestrated"
+    },
+    {
+      "end": 33111.04,
+      "start": 33105.52,
+      "text": "and so whether you're a democrat or republican this is the most serious thing that's ever happened this is"
+    },
+    {
+      "end": 33117.12,
+      "start": 33111.04,
+      "text": "the biggest crime against our country and humanity i could think of ever so now let's pull up the next"
+    },
+    {
+      "end": 33124.56,
+      "start": 33117.12,
+      "text": "chart here and what it's going to show everybody is just remember we just did i just had 20 of the"
+    },
+    {
+      "end": 33133.44,
+      "start": 33124.56,
+      "text": "attacks 20 of the thousands of attacks on our 2020 election by china i just took 20 of them and i had 20 of"
+    },
+    {
+      "end": 33141.36,
+      "start": 33133.44,
+      "text": "them validated and revalidated and revalidated so right now as we pull up this chart i'm going to show"
+    },
+    {
+      "end": 33149.84,
+      "start": 33141.36,
+      "text": "you what those 20 attacks did what they did if you look at pennsylvania here it's where it said biden won"
+    },
+    {
+      "end": 33157.2,
+      "start": 33149.84,
+      "text": "by over 80 000. just with these attacks that we showed you this small sampling donald trump won by over"
+    },
+    {
+      "end": 33166.8,
+      "start": 33157.2,
+      "text": "107 000. you go to georgia donald they say biden won by 11 779. just with this small sampling of the"
+    },
+    {
+      "end": 33177.44,
+      "start": 33166.8,
+      "text": "attacks donald trump won by over 35 000 votes arizona same story over 10 000 votes for biden and uh after"
+    },
+    {
+      "end": 33186.0,
+      "start": 33177.44,
+      "text": "you add in uh these just a small sampling of of the attacks donald trump wins by almost 37 000. you go to"
+    },
+    {
+      "end": 33191.52,
+      "start": 33186.0,
+      "text": "michigan michigan it says biden won remember we had the big thing in michigan where they injected"
+    },
+    {
+      "end": 33200.56,
+      "start": 33191.52,
+      "text": "votes there but you have 154 000 plus votes in michigan and um with this small sampling of hacksies"
+    },
+    {
+      "end": 33209.2,
+      "start": 33200.56,
+      "text": "20 these 20 attacks just 20 of them now donald trump wins michigan by over 48 000 votes now now when you go"
+    },
+    {
+      "end": 33217.92,
+      "start": 33209.2,
+      "text": "to wisconsin you can see donald trump lost by over 20 000 votes but he really wins by over 49 000 almost"
+    },
+    {
+      "end": 33225.76,
+      "start": 33217.92,
+      "text": "50 000 votes and we realize this was just 20 of the thousands of attacks this is why when we say that"
+    },
+    {
+      "end": 33232.56,
+      "start": 33225.76,
+      "text": "donald trump really won this election by like almost 80 million to 68 million for biden how can you switch"
+    },
+    {
+      "end": 33239.6,
+      "start": 33232.56,
+      "text": "tens of millions of votes it had to be done with computers it had to be done uh with the machines"
+    },
+    {
+      "end": 33247.84,
+      "start": 33239.6,
+      "text": "through these dominion through all these machines and china china did it it's a cyber attack of historical"
+    },
+    {
+      "end": 33256.88,
+      "start": 33247.84,
+      "text": "proportions and i want to ask you now if you took this into the supreme court with all of this and you"
+    },
+    {
+      "end": 33263.04,
+      "start": 33256.88,
+      "text": "just with these just with this sampling and with these uh and brought it in there with could any"
+    },
+    {
+      "end": 33269.92,
+      "start": 33263.68,
+      "text": "any cyber person that works in cyber um what do you call it cyber warfare or cyber uh forensics"
+    },
+    {
+      "end": 33278.64,
+      "start": 33270.56,
+      "text": "they would be able to show these nine justices um this evidence and is there any way that it would not"
+    },
+    {
+      "end": 33289.52,
+      "start": 33278.64,
+      "text": "be a nine zero vote saying this is a hundred percent true no and and i i think it would be great for"
+    },
+    {
+      "end": 33297.04,
+      "start": 33289.52,
+      "text": "you know some of my colleagues and and you know more people within that community to to weigh in because"
+    },
+    {
+      "end": 33299.84,
+      "start": 33297.04,
+      "text": "they'll they'll reach the same conclusion and you know"
+    }
+  ],
+  "text": "like a forensic scene at a at a crime scene with like dna evidence is that correct yeah so reallywhat you're looking at is i mean there's hash values which are unique to each item any change to that it'll it'll change the hash so that's how you verify images or you know the pcap in this in this case so when you're looking at you know this file you make sure that it hasn't been doctored or anything's been done to it because when you do the work it needs to match that original file and so that that's where you start and then you know we work to unencrypt and pull the data out to identify exactly what happened during that period of time okay so have now when you in all your work in 20 years then do you work with these pcaps a lot or do most cyber experts is that that's what you work with all the time yeah a lot a lot of the time we do because um you know well you if there is a active cyber attack you record it and the way you record it is through a pcap that's how how you capture that traffic and that traffic when when you capture that information you have the source you have the destination you know you have the files that are being transmitted and through what through what protocol it it captures a lot of information and you know you go through it and essentially translate it right that's what took so long i i i believe uh it's been a couple months now with i've had yourself and many others validating and uh translating uh this these cpacks and there was literally thousands of hacks right from china yeah well there were there were there were a lot and there were a lot successful some were just doing reconnaissance and others were flipping votes and so it would go in and identify where it needed to flip and then it would flip so okay there was a lot of activity so what i had you guys do was go out and get 20 just grab 20 of the pcaps 20 of them that trans that you could take that data and translate it into something that was readable for all of us here so what i did is i said you know what let's just see how this you know because this was in the millions of millions of millions of votes that were flipped on our election by china from uh from uh trump to biden okay so i said well let's just grab 20 of them so we can make this uh this uh um absolutely 9-0 video so we went out we grabbed 20 of them now it took uh uh i don't know what it take four to six weeks to to validate just those 20 um uh pcaps and and chuck because i wanted every i was very particular wasn't i i wanted every little thing validated and uh 100 full proof and these were the five states these were five states michigan wisconsin pennsylvania arizona and georgia okay so now what i want to do is bring up the data that you that you took the pcaps and and translated it for us and showed just these 20 attacks exactly what these pcaps show and that we can all read on the first line uh if we start on the top here this was from if we look at the date it's 11 3 20 the day of the election at 10 49 pm can you go ahead and take us through this uh when you talk about the source and take us through us line by line and explain what this uh what this is yeah so um the source is the ip address from the computer that essentially uh you know changed that vote so since we focused on the 20 each one of these resulted in votes being changed so that's the source um latitude and longitude is essentially within 400 yards of where that device is located um beijing uh obviously china province city um and then this next part um um is the network that was pulled out of um out of the pcap essentially but you know some of this isn't chinese so when you translate it you just want to make sure and you know as you've asked us to do double triple quadruple you know validate and so we've been going through making sure the translations and all the information checks out so what he's saying here everybody is what i did is i made them all validate the validation isn't that correct yeah so we you know because we're dealing with uh other languages we validated the validation that was validated so that the next line there which is the network code what would that be yeah so that that that's essentially from the registration of of um that ip so you know most every single uh ip is registered to somebody so when you look at that network that network range um and you know identify who who the registered owner is right so that that's where it comes down okay so you got all of this information from the pcaps is that correct yeah the next line it says target now we just went through which would be the the hacker or the attacker so to speak correct and now we're going to get into the target which is um i i guess i could pull that out the target that's the target would that be the target's ip address and then again the longitude latitude and the state that it came that it was hacked into correct yep and then we have the entry point um you know there's uh delta county here in this case and then the network registration what is it so the network registration that also all this stuff came right out of the pcaps that's preserved in time you can't change it and when you have it it's uh it's uh 100 it's non-negotiable it's not there's no i mean here it is this is what it is is that correct yeah i think uh we were saying that it it's this isn't subjective it just is what it is it's fact that information you know speaks for itself and right so before before we go to the last couple lines i want to ask you this if you are going to prove a case a cyber case a cyber attack and if you if you had a wish list like let's say you know obviously when i came to you and said and others and said hey i have something that's really going to change the world it's good because these guys brought me these uh i didn't know they were called uh pcaps at the time uh from uh but i knew they were from the night of the election um what would you would you say if you could have your wish list 100 prove something is this what it would be what would it be in a cyber attack yeah um this is 100 i mean this is what you would want this is yeah a lot of times you know you come in at least you know in our line of work we get called in after the attack so this was something that was captured during the attack you always want that right you want to catch somebody yeah you want to catch them you know somebody's robbing a bank you want to have it on video like right that's definitive evidence this is robbing the bank and having it on video so i wanted to hear everyone to hear that this is we have what everyone would ever want if uh if there was a crime committed cyberly a cyber attack we have the forensic evidence we have the movie we have the video of the bank being robbed so to speak and right before i wanted you all to hear that before you look at the last couple lines here you have the you have the uh intrusion what how they got in firewall or credentials whether they had the credentials and was it a success yes it was a success here it is everybody what happened in this case donald trump it says down there were 3 215 votes flipped and you can go all the way down this list and every one of them was a trump uh votes taken from trump given to biden it was a flip so these cyber hacks and these attacks are you saying that these these numbers here at the end came right off of those p caps is that correct yeah those uh i mean they're specific numbers right right so those you're not just rounding up it's actual specific like to the vote numbers that were wow that is so awesome so everybody do you see what this is what we have here you talk about a smoking gun this is why i've been so by everybody you know for two months people have attacked me and told me i didn't have the evidence and all this stuff and we've made these other movies but i wanted to get on here and explain to everyone this was an attack by china on our country through these dominion and these other machines where and they just hacked in a cyber attack hacked into our election and flipped it to everyone anyone that they wanted to win in this case it was the democrat party i want to ask you something before we go to the next chart going to the supreme court when this gets there when we when we bring this to the supreme court and so what you're saying because this isn't subjective and you can't change anything and with this evidence if uh and you go in there and what would you expect is there any way it could be five to four or six to three that this is real or eight to one um or does it have nine zero it's irrefutable irrefutable that's the word irrefutable and it's not subjective right i mean this is you're beautiful right yeah it's blood sometimes you have little specks of blood right this is a buck a bucket of it wow yeah you you're so awesome you have now now everybody knows why i've had the confidence i've had over the last couple months and now i want to show you i want to show everybody what just remember these are just 20 of the hacks everybody out of thousands that china orchestrated and so whether you're a democrat or republican this is the most serious thing that's ever happened this is the biggest crime against our country and humanity i could think of ever so now let's pull up the next chart here and what it's going to show everybody is just remember we just did i just had 20 of the attacks 20 of the thousands of attacks on our 2020 election by china i just took 20 of them and i had 20 of them validated and revalidated and revalidated so right now as we pull up this chart i'm going to show you what those 20 attacks did what they did if you look at pennsylvania here it's where it said biden won by over 80 000. just with these attacks that we showed you this small sampling donald trump won by over 107 000. you go to georgia donald they say biden won by 11 779. just with this small sampling of the attacks donald trump won by over 35 000 votes arizona same story over 10 000 votes for biden and uh after you add in uh these just a small sampling of of the attacks donald trump wins by almost 37 000. you go to michigan michigan it says biden won remember we had the big thing in michigan where they injected votes there but you have 154 000 plus votes in michigan and um with this small sampling of hacksies 20 these 20 attacks just 20 of them now donald trump wins michigan by over 48 000 votes now now when you go to wisconsin you can see donald trump lost by over 20 000 votes but he really wins by over 49 000 almost 50 000 votes and we realize this was just 20 of the thousands of attacks this is why when we say that donald trump really won this election by like almost 80 million to 68 million for biden how can you switch tens of millions of votes it had to be done with computers it had to be done uh with the machines through these dominion through all these machines and china china did it it's a cyber attack of historical proportions and i want to ask you now if you took this into the supreme court with all of this and you just with these just with this sampling and with these uh and brought it in there with could any any cyber person that works in cyber um what do you call it cyber warfare or cyber uh forensics they would be able to show these nine justices um this evidence and is there any way that it would not be a nine zero vote saying this is a hundred percent true no and and i i think it would be great for you know some of my colleagues and and you know more people within that community to to weigh in because they'll they'll reach the same conclusion and you know"
+}
