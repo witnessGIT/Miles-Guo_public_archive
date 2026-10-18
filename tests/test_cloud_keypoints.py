@@ -120,6 +120,39 @@ class CloudKeyPointTests(unittest.TestCase):
             self.assertEqual(stats["key_points"], 1)
             self.assertEqual(stats["forced_retries"], 1)
 
+    def test_process_live_retries_rejected_ungrounded_response(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            repo = Path(tmp)
+            segment_dir = repo / "data" / "current" / "live_segments"
+            segment_dir.mkdir(parents=True)
+            text = "昨天发生很多事情，我正在锻炼，并计划稍后录制视频详细说明有关人员的行动。" * 2
+            segment = {
+                "id": "LIVE_TEST_003_SEG_000000",
+                "text_asr": text,
+                "boundary_method": "natural_asr_v1:test",
+            }
+            (segment_dir / "asr_live_test_003.jsonl").write_text(
+                json.dumps(segment, ensure_ascii=False) + "\n", encoding="utf-8"
+            )
+            responses = iter([
+                json.dumps([{
+                    "point_type": "takeaway",
+                    "point_text": "模型补充了原文没有的信息",
+                    "evidence_quote": "原文完全不存在的证据",
+                    "topic_ids": ["TOPIC_OTHER"],
+                }], ensure_ascii=False),
+                json.dumps([{
+                    "point_type": "instruction",
+                    "point_text": "计划稍后录制视频",
+                    "evidence_quote": "计划稍后录制视频",
+                    "topic_ids": ["TOPIC_PROJECT_ACTION"],
+                }], ensure_ascii=False),
+            ])
+            _outputs, stats = process_live(repo, "LIVE_TEST_003", lambda _prompt: next(responses))
+            self.assertEqual(stats["key_points"], 1)
+            self.assertEqual(stats["forced_retries"], 1)
+            self.assertEqual(stats["rejected_all"], 0)
+
 
 if __name__ == "__main__":
     unittest.main()

@@ -177,12 +177,13 @@ def enrich_segments(live_id: str, segments: list[dict], generate_text: Callable[
     for segment in segments:
         try:
             values = parse_json_array(generate_text(prompt_for(segment)))
-            if not values and likely_substantive(str(segment.get("text_asr") or "")):
+            results = validate_results(segment, values)
+            if not results and likely_substantive(str(segment.get("text_asr") or "")):
                 forced_retries += 1
                 values = parse_json_array(generate_text(forced_prompt_for(segment)))
+                results = validate_results(segment, values)
             if not values:
                 model_empty += 1
-            results = validate_results(segment, values)
         except (ValueError, json.JSONDecodeError):
             parse_errors += 1
             values = []
