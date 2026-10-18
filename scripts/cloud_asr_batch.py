@@ -146,8 +146,8 @@ def main() -> int:
     args = parser.parse_args()
     if not 1 <= args.batch_size <= 100:
         raise SystemExit("cloud ASR batch size must be between 1 and 100")
-    if not 300 <= args.item_timeout_sec <= 3000:
-        raise SystemExit("cloud ASR item timeout must be between 300 and 3000 seconds")
+    if not 300 <= args.item_timeout_sec <= 18000:
+        raise SystemExit("cloud ASR item timeout must be between 300 and 18000 seconds")
     if not 0 <= args.retry_cooldown_hours <= 168:
         raise SystemExit("cloud ASR retry cooldown must be between 0 and 168 hours")
     repo = args.repo.resolve()

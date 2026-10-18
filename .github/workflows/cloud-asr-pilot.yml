@@ -11,6 +11,10 @@ on:
         description: Optional comma-separated eligible LIVE ids for an explicit retry
         required: false
         default: ''
+      item_timeout_sec:
+        description: Per-recording timeout; raise only for targeted long-recording retries
+        required: false
+        default: '3000'
 
 permissions:
   contents: write
@@ -62,4 +66,5 @@ jobs:
             --work-root "$RUNNER_TEMP/miles-guo-asr" \
             --batch-size '${{ inputs.batch_size }}' \
             --live-ids '${{ inputs.live_ids }}' \
+            --item-timeout-sec '${{ inputs.item_timeout_sec }}' \
             --agent-id "github-actions-cloud-asr-${GITHUB_RUN_ID}"
