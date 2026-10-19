@@ -12,9 +12,24 @@ from cloud_asr_batch import claim_is_unavailable, push_with_rebase, run
 from cloud_entity_item import process_live
 
 
-def eligible(repo: Path, limit: int, retry_cooldown_hours: int = 24) -> list[tuple[str, str]]:
+def eligible(
+    repo: Path, limit: int, retry_cooldown_hours: int = 24,
+    requested_live_ids: list[str] | None = None,
+) -> list[tuple[str, str]]:
     completed = repo / "coordination" / "completed"
     claims = repo / "coordination" / "claims"
+    if requested_live_ids:
+        values: list[tuple[str, str]] = []
+        for live_id in requested_live_ids:
+            task_id = f"WI_{live_id}_entity_pass"
+            if not (completed / f"WI_{live_id}_segment_split.json").exists():
+                raise RuntimeError(f"requested entity task is not currently eligible: {live_id}")
+            if (completed / f"{task_id}.json").exists():
+                continue
+            if claim_is_unavailable(claims / f"{task_id}.json", cooldown_hours=0):
+                raise RuntimeError(f"requested entity task has an active claim: {live_id}")
+            values.append((task_id, live_id))
+        return values[:limit]
     values: list[tuple[str, str]] = []
     for segment_done in sorted(completed.glob("WI_LIVE_*_segment_split.json")):
         live_id = segment_done.stem.removeprefix("WI_").removesuffix("_segment_split")
@@ -32,17 +47,24 @@ def eligible(repo: Path, limit: int, retry_cooldown_hours: int = 24) -> list[tup
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--repo", type=Path, required=True)
-    parser.add_argument("--batch-size", type=int, default=2)
+    parser.add_argument("--batch-size", type=int, default=50)
     parser.add_argument("--agent-id", required=True)
     parser.add_argument("--model", default="mlx-community/Qwen2.5-7B-Instruct-4bit")
     parser.add_argument("--retry-cooldown-hours", type=int, default=24)
+    parser.add_argument(
+        "--live-ids", default="",
+        help="Optional comma-separated LIVE ids shared with the key-point batch",
+    )
     args = parser.parse_args()
-    if not 1 <= args.batch_size <= 20:
-        raise SystemExit("cloud entity pilot batch size must be between 1 and 20")
+    if not 1 <= args.batch_size <= 50:
+        raise SystemExit("cloud entity pilot batch size must be between 1 and 50")
     if not 0 <= args.retry_cooldown_hours <= 168:
         raise SystemExit("entity retry cooldown must be between 0 and 168 hours")
     repo = args.repo.resolve()
-    tasks = eligible(repo, args.batch_size, args.retry_cooldown_hours)
+    requested_live_ids = [value.strip() for value in args.live_ids.split(",") if value.strip()]
+    if len(requested_live_ids) > args.batch_size:
+        raise SystemExit("explicit live-id count cannot exceed batch size")
+    tasks = eligible(repo, args.batch_size, args.retry_cooldown_hours, requested_live_ids)
     if not tasks:
         print("No eligible entity_pass tasks.")
         return 0

@@ -6,7 +6,11 @@ on:
       batch_size:
         description: Number of naturally segmented livestreams to enrich
         required: true
-        default: '2'
+        default: '50'
+      live_ids:
+        description: Optional comma-separated LIVE ids shared with the key-point batch
+        required: false
+        default: ''
 
 permissions:
   contents: write
@@ -51,4 +55,5 @@ jobs:
           python scripts/cloud_entity_batch.py \
             --repo "$GITHUB_WORKSPACE" \
             --batch-size '${{ inputs.batch_size }}' \
+            --live-ids '${{ inputs.live_ids }}' \
             --agent-id "github-actions-cloud-entity-${GITHUB_RUN_ID}"

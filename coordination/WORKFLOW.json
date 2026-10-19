@@ -13,6 +13,8 @@
   "streaming_enrichment_policy": "completed transcripts may advance immediately through dependent stages without waiting for corpus-wide ASR completion",
   "entity_cloud_workflow": ".github/workflows/cloud-entity-pilot.yml",
   "key_points_cloud_workflow": ".github/workflows/cloud-key-points-pilot.yml",
+  "shared_enrichment_batch_size": 50,
+  "shared_enrichment_batch_policy": "select_one_shared_set_of_up_to_50_live_ids_then_run_key_points_topics_and_entity_pass_for_that_same_set;completed_stage_is_skipped_without_reprocessing",
   "natural_segmentation_cloud_workflow": ".github/workflows/cloud-natural-segmentation.yml",
   "playback_enabled_in_current_phase": false,
   "active_data_root": "data/current",

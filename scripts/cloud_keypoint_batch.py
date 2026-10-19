@@ -23,8 +23,10 @@ def eligible(
         for live_id in requested_live_ids:
             task_id = f"WI_{live_id}_key_points_topics"
             segment_done = completed / f"WI_{live_id}_segment_split.json"
-            if not segment_done.exists() or (completed / f"{task_id}.json").exists():
+            if not segment_done.exists():
                 raise RuntimeError(f"requested key-point task is not currently eligible: {live_id}")
+            if (completed / f"{task_id}.json").exists():
+                continue
             if claim_is_unavailable(claims / f"{task_id}.json", cooldown_hours=0):
                 raise RuntimeError(f"requested key-point task has an active claim: {live_id}")
             values.append((task_id, live_id))
@@ -70,7 +72,7 @@ def completed_with_empty_output(repo: Path, limit: int) -> list[tuple[str, str]]
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--repo", type=Path, required=True)
-    parser.add_argument("--batch-size", type=int, default=1)
+    parser.add_argument("--batch-size", type=int, default=50)
     parser.add_argument("--agent-id", required=True)
     parser.add_argument("--model", default="mlx-community/Qwen2.5-7B-Instruct-4bit")
     parser.add_argument("--reprocess-live-id", default="")
@@ -81,8 +83,8 @@ def main() -> int:
         help="Optional comma-separated eligible LIVE ids to retry explicitly",
     )
     args = parser.parse_args()
-    if not 1 <= args.batch_size <= 10:
-        raise SystemExit("cloud key-point pilot batch size must be between 1 and 10")
+    if not 1 <= args.batch_size <= 50:
+        raise SystemExit("cloud key-point pilot batch size must be between 1 and 50")
     if not 0 <= args.retry_cooldown_hours <= 168:
         raise SystemExit("key-point retry cooldown must be between 0 and 168 hours")
     repo = args.repo.resolve()
