@@ -160,20 +160,29 @@ def main() -> int:
         print("No eligible transcript_import tasks.")
         return 0
 
-    claim_paths: list[str] = []
-    for task_id, _live_id in tasks:
-        run([sys.executable, "scripts/next_task.py", "--claim", "--task", task_id, "--agent-id", args.agent_id], repo)
-        claim_paths.append(f"coordination/claims/{task_id}.json")
-    run(["git", "add", *claim_paths], repo)
-    run(["git", "commit", "-m", f"claim: reserve GitHub Actions ASR pilot of {len(tasks)}"], repo)
-    push_with_rebase(repo)
-    run([sys.executable, "scripts/build_db.py"], repo)
-
     total_success = 0
     total_failed = 0
     checkpoint_size = 10
     for checkpoint_number, start in enumerate(range(0, len(tasks), checkpoint_size), start=1):
         checkpoint = tasks[start : start + checkpoint_size]
+        # Claim only the checkpoint that is about to run. Reserving the whole
+        # logical batch up front leaves dozens of valid claims stranded when a
+        # hosted runner reaches GitHub's hard job timeout.
+        claim_paths: list[str] = []
+        for task_id, _live_id in checkpoint:
+            run([
+                sys.executable, "scripts/next_task.py", "--claim", "--task", task_id,
+                "--agent-id", args.agent_id,
+            ], repo)
+            claim_paths.append(f"coordination/claims/{task_id}.json")
+        run(["git", "add", *claim_paths], repo)
+        run([
+            "git", "commit", "-m",
+            f"claim: reserve GitHub Actions ASR checkpoint {checkpoint_number} of {len(checkpoint)}",
+        ], repo)
+        push_with_rebase(repo)
+        run([sys.executable, "scripts/build_db.py"], repo)
+
         success: list[tuple[str, str, list[str]]] = []
         failed: list[tuple[str, str, str]] = []
         attempt_paths: list[str] = []
