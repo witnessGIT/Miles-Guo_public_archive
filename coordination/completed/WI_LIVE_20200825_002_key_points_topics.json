@@ -1,0 +1,19 @@
+{
+  "task_id": "WI_LIVE_20200825_002_key_points_topics",
+  "agent_id": "github-actions-cloud-key-points-39489053834",
+  "completed_at": "2026-10-20T23:21:04.233514+00:00",
+  "result_commit": "e1c2f7195f23bf25b316f5d50c4db18241eccdf3",
+  "outputs": [
+    "data/current/live_segments/asr_live_20200825_002.jsonl",
+    "data/current/segment_key_points/machine_live_20200825_002.jsonl",
+    "data/current/segment_topics/machine_live_20200825_002.jsonl",
+    "data/current/topics/controlled_taxonomy_v1.jsonl"
+  ],
+  "validation": "Evidence-quote-grounded variable-count key points; controlled topics; build_db/validate_db/full tests OK; machine status",
+  "workflow_mode": "continuous-worker-v2",
+  "claim_protocol": "claim-protocol-v2",
+  "entry_mode": "work",
+  "continue_after_finish": true,
+  "finish_prerequisites_revalidated": true,
+  "notes": "Task completed only after re-checking the latest repository dependency contract. Under continuous-worker-v2, refresh repository state and claim the next eligible task unless a documented stop condition applies."
+}
