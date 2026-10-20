@@ -12,6 +12,8 @@ from pathlib import Path
 
 from cloud_asr_batch import claim_is_unavailable, push_with_rebase, run
 
+MAX_LOGICAL_BATCH_SIZE = 150
+
 
 def eligible(
     repo: Path, limit: int, retry_cooldown_hours: int = 24,
@@ -73,7 +75,7 @@ def completed_with_empty_output(repo: Path, limit: int) -> list[tuple[str, str]]
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--repo", type=Path, required=True)
-    parser.add_argument("--batch-size", type=int, default=50)
+    parser.add_argument("--batch-size", type=int, default=MAX_LOGICAL_BATCH_SIZE)
     parser.add_argument("--agent-id", required=True)
     parser.add_argument("--model", default="mlx-community/Qwen2.5-7B-Instruct-4bit")
     parser.add_argument(
@@ -88,8 +90,10 @@ def main() -> int:
         help="Optional comma-separated eligible LIVE ids to retry explicitly",
     )
     args = parser.parse_args()
-    if not 1 <= args.batch_size <= 50:
-        raise SystemExit("cloud key-point pilot batch size must be between 1 and 50")
+    if not 1 <= args.batch_size <= MAX_LOGICAL_BATCH_SIZE:
+        raise SystemExit(
+            f"cloud key-point pilot batch size must be between 1 and {MAX_LOGICAL_BATCH_SIZE}"
+        )
     if not 0 <= args.retry_cooldown_hours <= 168:
         raise SystemExit("key-point retry cooldown must be between 0 and 168 hours")
     if not 30 <= args.max_runtime_minutes <= 330:

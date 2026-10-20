@@ -6,7 +6,7 @@ on:
       batch_size:
         description: Number of naturally segmented livestreams to summarize
         required: true
-        default: '50'
+        default: '150'
       reprocess_live_id:
         description: Optional completed livestream to regenerate with the current extraction contract
         required: false

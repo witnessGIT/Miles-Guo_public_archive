@@ -6,7 +6,7 @@ on:
       batch_size:
         description: Number of naturally segmented livestreams to enrich
         required: true
-        default: '50'
+        default: '150'
       live_ids:
         description: Optional comma-separated LIVE ids shared with the key-point batch
         required: false

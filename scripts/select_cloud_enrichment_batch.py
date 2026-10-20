@@ -13,6 +13,7 @@ except ImportError:  # Direct script execution adds scripts/ to sys.path.
 
 
 STAGES = ("key_points_topics", "entity_pass")
+MAX_SHARED_BATCH_SIZE = 150
 
 
 def select_live_ids(repo: Path, limit: int, retry_cooldown_hours: int = 24) -> list[str]:
@@ -43,11 +44,13 @@ def select_live_ids(repo: Path, limit: int, retry_cooldown_hours: int = 24) -> l
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--repo", type=Path, required=True)
-    parser.add_argument("--batch-size", type=int, default=50)
+    parser.add_argument("--batch-size", type=int, default=MAX_SHARED_BATCH_SIZE)
     parser.add_argument("--retry-cooldown-hours", type=int, default=24)
     args = parser.parse_args()
-    if not 1 <= args.batch_size <= 50:
-        raise SystemExit("shared enrichment batch size must be between 1 and 50")
+    if not 1 <= args.batch_size <= MAX_SHARED_BATCH_SIZE:
+        raise SystemExit(
+            f"shared enrichment batch size must be between 1 and {MAX_SHARED_BATCH_SIZE}"
+        )
     if not 0 <= args.retry_cooldown_hours <= 168:
         raise SystemExit("shared enrichment retry cooldown must be between 0 and 168 hours")
     print(",".join(select_live_ids(
