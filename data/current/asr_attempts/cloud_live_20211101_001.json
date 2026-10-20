@@ -1,12 +1,10 @@
 {
-  "error": "[metal::malloc] Attempting to allocate 6408452800 bytes which is greater than the maximum allowed buffer size of 3758096384 bytes.",
-  "generated_at": "2026-10-18T01:40:07Z",
+  "error": "cloud ASR item exceeded 3000 seconds; retained for retry or chunked processing",
+  "generated_at": "2026-10-20T16:18:20Z",
   "live_id": "LIVE_20211101_001",
   "media_committed_to_git": false,
-  "model": "mlx-community/whisper-large-v3-turbo",
   "paid_api_used": false,
   "processing_location": "github-hosted-macos-arm64",
   "schema_version": "cloud-asr-attempt-v1",
-  "source_attempt_errors": [],
-  "status": "cloud_attempt_failed_needs_retry"
+  "status": "cloud_attempt_timed_out_needs_retry"
 }
