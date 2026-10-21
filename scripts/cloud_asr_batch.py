@@ -48,7 +48,8 @@ def record_failed_resume(
     path = attempt_path(repo, live_id)
     payload = read_attempt(repo, live_id)
     count = previous_retry_count + (1 if resume_timed_out else 0)
-    deferred = count >= CHECKPOINT_RETRY_LIMIT
+    already_deferred = attempt_is_deferred(repo, live_id)
+    deferred = already_deferred or count >= CHECKPOINT_RETRY_LIMIT
     payload.update({
         "schema_version": "cloud-asr-attempt-v1",
         "live_id": live_id,
@@ -57,7 +58,7 @@ def record_failed_resume(
         "deferred_until_corpus_tail": deferred,
         "retry_queue": "corpus_tail" if deferred else "normal",
     })
-    if deferred:
+    if deferred and not already_deferred:
         payload["pre_defer_status"] = payload.get("status")
         payload["status"] = DEFERRED_STATUS
         payload["deferred_reason"] = (

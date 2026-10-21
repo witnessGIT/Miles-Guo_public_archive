@@ -86,6 +86,27 @@ class CloudAsrBatchTests(unittest.TestCase):
             self.assertEqual(count, 1)
             self.assertFalse(deferred)
 
+    def test_quality_deferred_attempt_remains_deferred_after_batch_records_failure(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            repo = Path(directory)
+            path = repo / "data/current/asr_attempts/cloud_live_20260101_001.json"
+            path.parent.mkdir(parents=True)
+            path.write_text(json.dumps({
+                "status": "cloud_asr_quality_failed_deferred",
+                "deferred_until_corpus_tail": True,
+                "retry_queue": "corpus_tail",
+                "deferred_reason": "dictation quality gate failed",
+            }), encoding="utf-8")
+            count, deferred = record_failed_resume(
+                repo, "LIVE_20260101_001", 0, False,
+            )
+            payload = json.loads(path.read_text(encoding="utf-8"))
+            self.assertEqual(count, 0)
+            self.assertTrue(deferred)
+            self.assertEqual(payload["status"], "cloud_asr_quality_failed_deferred")
+            self.assertEqual(payload["deferred_reason"], "dictation quality gate failed")
+            self.assertEqual(payload["retry_queue"], "corpus_tail")
+
     def test_normal_queue_excludes_deferred_video(self) -> None:
         with tempfile.TemporaryDirectory() as directory:
             repo = Path(directory)

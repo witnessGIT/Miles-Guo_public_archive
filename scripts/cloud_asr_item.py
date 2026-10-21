@@ -12,6 +12,7 @@ import argparse
 import hashlib
 import json
 import os
+import re
 import shutil
 import sqlite3
 import subprocess
@@ -39,6 +40,122 @@ def sha256_file(path: Path) -> str:
         for chunk in iter(lambda: handle.read(1024 * 1024), b""):
             digest.update(chunk)
     return digest.hexdigest()
+
+
+def audio_duration_sec(path: Path) -> float:
+    completed = subprocess.run(
+        [
+            "ffprobe", "-v", "error", "-show_entries", "format=duration",
+            "-of", "default=noprint_wrappers=1:nokey=1", str(path),
+        ],
+        check=True,
+        capture_output=True,
+        text=True,
+    )
+    return max(0.0, float(completed.stdout.strip()))
+
+
+def assess_transcript_quality(
+    segments: list[dict[str, Any]], duration_sec: float,
+) -> dict[str, Any]:
+    """Apply conservative machine-ASR quality gates before task completion."""
+    reasons: list[str] = []
+    warnings: list[str] = []
+    texts = [str(item.get("text") or "").strip() for item in segments]
+    char_count = sum(len(re.sub(r"\s+", "", text)) for text in texts)
+    duration_minutes = max(duration_sec / 60.0, 1 / 60.0)
+    chars_per_minute = char_count / duration_minutes
+    invalid_timestamps = 0
+    last_cue_end = 0.0
+    confidence_segment_count = 0
+    low_confidence_segment_count = 0
+    high_no_speech_segment_count = 0
+    high_compression_segment_count = 0
+    for item in segments:
+        try:
+            start = float(item.get("start_sec"))
+            end = float(item.get("end_sec"))
+        except (TypeError, ValueError):
+            invalid_timestamps += 1
+            continue
+        if start < 0 or end < start or end > duration_sec + 30:
+            invalid_timestamps += 1
+        last_cue_end = max(last_cue_end, end)
+        avg_logprob = item.get("avg_logprob")
+        no_speech_prob = item.get("no_speech_prob")
+        compression_ratio = item.get("compression_ratio")
+        if avg_logprob is not None:
+            confidence_segment_count += 1
+            if float(avg_logprob) < -1.2:
+                low_confidence_segment_count += 1
+        if no_speech_prob is not None and float(no_speech_prob) > 0.8:
+            high_no_speech_segment_count += 1
+        if compression_ratio is not None and float(compression_ratio) > 2.6:
+            high_compression_segment_count += 1
+
+    normalized = [
+        re.sub(r"[^\w\u3400-\u9fff]+", "", text.lower())
+        for text in texts
+    ]
+    repeat_candidates = [text for text in normalized if len(text) >= 4]
+    counts: dict[str, int] = {}
+    for text in repeat_candidates:
+        counts[text] = counts.get(text, 0) + 1
+    repeated_chars = sum(
+        len(text) * count for text, count in counts.items() if count >= 3
+    )
+    candidate_chars = sum(len(text) for text in repeat_candidates)
+    repeated_text_ratio = repeated_chars / candidate_chars if candidate_chars else 0.0
+    end_coverage_ratio = min(1.0, last_cue_end / duration_sec) if duration_sec > 0 else 0.0
+
+    minimum_chars = max(20, int(duration_minutes * 5))
+    if not segments or char_count < minimum_chars:
+        reasons.append("transcript_too_sparse_for_audio_duration")
+    if invalid_timestamps:
+        reasons.append("invalid_or_out_of_bounds_timestamps")
+    if candidate_chars >= 200 and repeated_text_ratio > 0.8:
+        reasons.append("probable_repetition_or_hallucination")
+    if (
+        confidence_segment_count >= 5
+        and low_confidence_segment_count / confidence_segment_count > 0.6
+    ):
+        reasons.append("predominantly_low_confidence_dictation")
+    if len(segments) >= 5 and high_no_speech_segment_count / len(segments) > 0.6:
+        reasons.append("probable_speech_transcribed_from_non_speech")
+    if len(segments) >= 5 and high_compression_segment_count / len(segments) > 0.4:
+        reasons.append("probable_compressed_repetitive_dictation")
+    if duration_sec >= 600 and end_coverage_ratio < 0.15:
+        reasons.append("transcript_ends_too_early_for_audio_duration")
+    elif duration_sec >= 300 and end_coverage_ratio < 0.5:
+        warnings.append("low_end_of_audio_coverage_needs_text_review")
+
+    density_score = min(1.0, chars_per_minute / 60.0)
+    repetition_score = max(0.0, 1.0 - repeated_text_ratio)
+    timing_score = 1.0 if not invalid_timestamps else 0.0
+    quality_score = round(
+        density_score * 0.45 + repetition_score * 0.35 + timing_score * 0.20,
+        4,
+    )
+    return {
+        "schema_version": "cloud-asr-quality-v1",
+        "gate_status": "pass" if not reasons else "deferred_review",
+        "quality_score": quality_score,
+        "reasons": reasons,
+        "warnings": warnings,
+        "metrics": {
+            "audio_duration_sec": round(duration_sec, 3),
+            "segment_count": len(segments),
+            "text_character_count": char_count,
+            "characters_per_minute": round(chars_per_minute, 3),
+            "invalid_timestamp_count": invalid_timestamps,
+            "repeated_text_ratio": round(repeated_text_ratio, 6),
+            "end_coverage_ratio": round(end_coverage_ratio, 6),
+            "confidence_segment_count": confidence_segment_count,
+            "low_confidence_segment_count": low_confidence_segment_count,
+            "high_no_speech_segment_count": high_no_speech_segment_count,
+            "high_compression_segment_count": high_compression_segment_count,
+        },
+    }
 
 
 def write_json(path: Path, payload: dict[str, Any]) -> None:
@@ -221,6 +338,13 @@ def transcribe_chunked(
                             round(offset + float(segment["end"]), 3),
                         ),
                         "text": str(segment.get("text") or "").strip(),
+                        **{
+                            key: round(float(segment[key]), 6)
+                            for key in (
+                                "avg_logprob", "no_speech_prob", "compression_ratio",
+                            )
+                            if segment.get(key) is not None
+                        },
                     }
                     for segment in result.get("segments") or []
                     if str(segment.get("text") or "").strip()
@@ -242,7 +366,18 @@ def transcribe_chunked(
                 continue
             start = round(float(segment["start"]), 3)
             end = max(start, round(float(segment["end"]), 3))
-            combined_segments.append({"start": start, "end": end, "text": text})
+            combined_segments.append({
+                "start": start,
+                "end": end,
+                "text": text,
+                **{
+                    key: segment[key]
+                    for key in (
+                        "avg_logprob", "no_speech_prob", "compression_ratio",
+                    )
+                    if segment.get(key) is not None
+                },
+            })
         chunk.unlink(missing_ok=True)
     if checkpoint_root is not None:
         expected = {f"chunk_{index:04d}.json" for index in range(len(chunks))}
@@ -280,7 +415,8 @@ def publish(repo: Path, payload: dict[str, Any]) -> list[str]:
         "transcript_kind": "asr_raw", "language": payload.get("language") or "zh",
         "text": payload.get("text") or "", "parent_version_id": None,
         "generated_by": f"mlx-whisper GitHub-hosted offline inference; model={payload['model']}; machine raw, not human corrected",
-        "confidence": None, "created_at": created_at,
+        "confidence": (payload.get("quality") or {}).get("quality_score"),
+        "created_at": created_at,
     }
     cues: list[dict[str, Any]] = []
     segments: list[dict[str, Any]] = []
@@ -313,6 +449,7 @@ def publish(repo: Path, payload: dict[str, Any]) -> list[str]:
         "language", "generated_at", "processing_elapsed_sec", "source_attempt_errors",
         "processing_location", "processing_path", "path_persistence",
         "chunk_duration_sec", "chunk_count", "resumed_chunk_count",
+        "audio_duration_sec", "quality",
     )}
     manifest.update({
         "transcript_version_id": version_id, "cue_count": len(cues), "segment_count": len(segments),
@@ -364,6 +501,7 @@ def main() -> int:
             raise RuntimeError("no media source was reachable from this GitHub-hosted runner")
         asset, resolved = chosen
         audio_digest = sha256_file(audio)
+        duration_sec = audio_duration_sec(audio)
         resume_manifest = checkpoints / "source.json"
         # Fresh OGG files can be byte-different even when their decoded audio is
         # identical (for example, because container serial/header values change).
@@ -378,6 +516,7 @@ def main() -> int:
             "source_url": asset["url"],
             "audio_sha256": audio_digest,
             "audio_size_bytes": audio.stat().st_size,
+            "audio_duration_sec": round(duration_sec, 3),
             "model": MODEL,
             "chunk_duration_sec": CHUNK_DURATION_SEC,
             "resume_validation": "per_chunk_pcm_wav_sha256",
@@ -396,12 +535,25 @@ def main() -> int:
                 continue
             start = round(float(segment["start"]), 3)
             end = max(start, round(float(segment["end"]), 3))
-            segments.append({"index": index, "start_sec": start, "end_sec": end, "text": text})
+            segments.append({
+                "index": index,
+                "start_sec": start,
+                "end_sec": end,
+                "text": text,
+                **{
+                    key: segment[key]
+                    for key in (
+                        "avg_logprob", "no_speech_prob", "compression_ratio",
+                    )
+                    if segment.get(key) is not None
+                },
+            })
         payload = {
             "schema_version": "cloud-asr-result-v1", "live_id": args.live_id,
             "status": "transcribed", "source_id": asset["source_id"], "media_asset_id": asset["id"],
             "source_url": asset["url"], "resolved_media_url": resolved,
             "audio_sha256": audio_digest, "audio_size_bytes": audio.stat().st_size,
+            "audio_duration_sec": round(duration_sec, 3),
             "model": MODEL, "software": "mlx-whisper", "language": result.get("language") or "zh",
             "generated_at": utc_now(), "processing_elapsed_sec": elapsed,
             "text": str(result.get("text") or "").strip(), "segments": segments,
@@ -410,6 +562,33 @@ def main() -> int:
             "source_attempt_errors": errors, "processing_location": "github-hosted-macos-arm64",
             "processing_path": str(audio), "path_persistence": "ephemeral_deleted_after_job",
         }
+        quality = assess_transcript_quality(segments, duration_sec)
+        payload["quality"] = quality
+        if quality["gate_status"] != "pass":
+            attempt = {
+                "schema_version": "cloud-asr-attempt-v1",
+                "live_id": args.live_id,
+                "status": "cloud_asr_quality_failed_deferred",
+                "generated_at": utc_now(),
+                "processing_location": "github-hosted-macos-arm64",
+                "model": MODEL,
+                "paid_api_used": False,
+                "media_committed_to_git": False,
+                "deferred_until_corpus_tail": True,
+                "retry_queue": "corpus_tail",
+                "deferred_reason": (
+                    "machine transcript failed dictation, timing, coverage, or "
+                    "hallucination quality gates"
+                ),
+                "error": "machine transcript did not pass conservative ASR quality gates",
+                "quality": quality,
+                "source_id": asset["source_id"],
+                "media_asset_id": asset["id"],
+                "source_url": asset["url"],
+            }
+            write_json(paths["attempt"], attempt)
+            print(json.dumps(attempt, ensure_ascii=False))
+            return 3
         write_json(result_file, payload)
         outputs = publish(repo, payload)
         print(json.dumps({"status": "transcribed", "live_id": args.live_id, "outputs": outputs, "segments": len(segments)}, ensure_ascii=False))

@@ -10,6 +10,7 @@ from unittest.mock import patch
 from scripts.cloud_asr_item import (
     CHUNK_DURATION_SEC,
     MODEL,
+    assess_transcript_quality,
     output_paths,
     publish,
     sha256_file,
@@ -18,6 +19,54 @@ from scripts.cloud_asr_item import (
 
 
 class CloudAsrOutputTests(unittest.TestCase):
+    def test_quality_gate_accepts_dense_continuous_machine_dictation(self) -> None:
+        segments = [
+            {
+                "start_sec": index * 30.0,
+                "end_sec": (index + 1) * 30.0,
+                "text": f"这是第{index}段内容，讨论不同事实并保留自然语言信息。",
+                "avg_logprob": -0.35,
+                "no_speech_prob": 0.02,
+                "compression_ratio": 1.2,
+            }
+            for index in range(20)
+        ]
+        quality = assess_transcript_quality(segments, 600.0)
+        self.assertEqual(quality["gate_status"], "pass")
+        self.assertEqual(quality["reasons"], [])
+
+    def test_quality_gate_defers_sparse_or_truncated_dictation(self) -> None:
+        quality = assess_transcript_quality([
+            {"start_sec": 0.0, "end_sec": 8.0, "text": "短句"},
+        ], 1200.0)
+        self.assertEqual(quality["gate_status"], "deferred_review")
+        self.assertIn("transcript_too_sparse_for_audio_duration", quality["reasons"])
+        self.assertIn("transcript_ends_too_early_for_audio_duration", quality["reasons"])
+
+    def test_quality_gate_defers_repetition_and_low_confidence_dictation(self) -> None:
+        segments = [
+            {
+                "start_sec": index * 10.0,
+                "end_sec": (index + 1) * 10.0,
+                "text": "感谢观看请订阅这个频道并打开通知",
+                "avg_logprob": -1.8,
+                "no_speech_prob": 0.9,
+                "compression_ratio": 3.0,
+            }
+            for index in range(20)
+        ]
+        quality = assess_transcript_quality(segments, 200.0)
+        self.assertIn("probable_repetition_or_hallucination", quality["reasons"])
+        self.assertIn("predominantly_low_confidence_dictation", quality["reasons"])
+        self.assertIn("probable_speech_transcribed_from_non_speech", quality["reasons"])
+        self.assertIn("probable_compressed_repetitive_dictation", quality["reasons"])
+
+    def test_quality_gate_defers_invalid_timestamps(self) -> None:
+        quality = assess_transcript_quality([
+            {"start_sec": 12.0, "end_sec": 3.0, "text": "时间码不合法但文本长度足够用于检查"},
+        ], 30.0)
+        self.assertIn("invalid_or_out_of_bounds_timestamps", quality["reasons"])
+
     def test_chunked_transcription_offsets_timestamps(self) -> None:
         class FakeWhisper:
             calls = 0
@@ -28,7 +77,14 @@ class CloudAsrOutputTests(unittest.TestCase):
                 return {
                     "text": f"chunk {cls.calls}",
                     "language": "zh",
-                    "segments": [{"start": 1.0, "end": 2.5, "text": f"part {cls.calls}"}],
+                    "segments": [{
+                        "start": 1.0,
+                        "end": 2.5,
+                        "text": f"part {cls.calls}",
+                        "avg_logprob": -0.4,
+                        "no_speech_prob": 0.01,
+                        "compression_ratio": 1.1,
+                    }],
                 }
 
         with tempfile.TemporaryDirectory() as temporary:
@@ -50,6 +106,7 @@ class CloudAsrOutputTests(unittest.TestCase):
             segments = result["segments"]
             self.assertEqual(segments[0]["start"], 1.0)
             self.assertEqual(segments[1]["start"], CHUNK_DURATION_SEC + 1.0)
+            self.assertEqual(segments[0]["avg_logprob"], -0.4)
             self.assertFalse(any(chunk_root.glob("chunk_*.wav")))
 
     def test_chunked_transcription_resumes_structured_checkpoints(self) -> None:
@@ -166,6 +223,7 @@ class CloudAsrOutputTests(unittest.TestCase):
                 "resolved_media_url": "https://example.test/video.mp4",
                 "audio_sha256": "a" * 64,
                 "audio_size_bytes": 123,
+                "audio_duration_sec": 3.0,
                 "model": "mlx-community/whisper-large-v3-turbo",
                 "software": "mlx-whisper",
                 "language": "zh",
@@ -179,6 +237,14 @@ class CloudAsrOutputTests(unittest.TestCase):
                 "segments": [
                     {"start_sec": 1.0, "end_sec": 2.5, "text": "测试文本"},
                 ],
+                "quality": {
+                    "schema_version": "cloud-asr-quality-v1",
+                    "gate_status": "pass",
+                    "quality_score": 0.91,
+                    "reasons": [],
+                    "warnings": [],
+                    "metrics": {},
+                },
             }
             outputs = publish(repo, payload)
             paths = output_paths(repo, payload["live_id"])
@@ -188,6 +254,8 @@ class CloudAsrOutputTests(unittest.TestCase):
             self.assertFalse(manifest["media_committed_to_git"])
             self.assertFalse(manifest["paid_api_used"])
             self.assertEqual(manifest["path_persistence"], "ephemeral_deleted_after_job")
+            self.assertEqual(manifest["quality"]["gate_status"], "pass")
+            self.assertEqual(manifest["audio_duration_sec"], 3.0)
             cue = json.loads(paths["cues"].read_text(encoding="utf-8").strip())
             self.assertEqual((cue["start_sec"], cue["end_sec"]), (1.0, 2.5))
             segment = json.loads(paths["segments"].read_text(encoding="utf-8").strip())
