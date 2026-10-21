@@ -1,14 +1,17 @@
 import json
+import subprocess
 import tempfile
 import unittest
 from datetime import datetime, timezone
 from pathlib import Path
+from unittest.mock import patch
 
 from scripts.cloud_asr_batch import (
     DEFERRED_STATUS,
     attempt_is_cooling_down,
     attempt_is_deferred,
     claim_is_unavailable,
+    eligible,
     record_failed_resume,
 )
 
@@ -82,6 +85,35 @@ class CloudAsrBatchTests(unittest.TestCase):
             count, deferred = record_failed_resume(repo, "LIVE_20260101_001", 1, False)
             self.assertEqual(count, 1)
             self.assertFalse(deferred)
+
+    def test_normal_queue_excludes_deferred_video(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            repo = Path(directory)
+            self.write_attempt(repo, "2026-10-21T00:00:00Z")
+            record_failed_resume(repo, "LIVE_20260101_001", 1, True)
+            listing = subprocess.CompletedProcess(
+                [], 0, "WI_LIVE_20260101_001_transcript_import [priority=71]\n", "",
+            )
+            with patch("scripts.cloud_asr_batch.run", return_value=listing):
+                self.assertEqual(eligible(repo, 10, 0), [])
+                with self.assertRaisesRegex(RuntimeError, "deferred until corpus tail"):
+                    eligible(repo, 10, 0, ["LIVE_20260101_001"])
+
+    def test_corpus_tail_mode_can_select_deferred_video(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            repo = Path(directory)
+            self.write_attempt(repo, "2026-10-21T00:00:00Z")
+            record_failed_resume(repo, "LIVE_20260101_001", 1, True)
+            listing = subprocess.CompletedProcess(
+                [], 0, "WI_LIVE_20260101_001_transcript_import [priority=71]\n", "",
+            )
+            with patch("scripts.cloud_asr_batch.run", return_value=listing):
+                self.assertEqual(
+                    eligible(
+                        repo, 10, 0, ["LIVE_20260101_001"], include_deferred=True,
+                    ),
+                    [("WI_LIVE_20260101_001_transcript_import", "LIVE_20260101_001")],
+                )
 
 
 if __name__ == "__main__":
