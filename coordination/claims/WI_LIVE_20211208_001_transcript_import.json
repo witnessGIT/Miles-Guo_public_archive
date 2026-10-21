@@ -3,7 +3,7 @@
   "agent_id": "github-actions-cloud-asr-39536304551",
   "claimed_at": "2026-10-21T03:04:06.705938+00:00",
   "base_commit": "d6e1db0c73fd6ca34eb421d31d7bdc0958f454f7",
-  "status": "in_progress",
+  "status": "released",
   "workflow_mode": "continuous-worker-v2",
   "claim_protocol": "claim-protocol-v2",
   "entry_mode": "work",
@@ -22,5 +22,7 @@
   ],
   "scope": "Import source transcript or ASR text without overwriting original text.",
   "reclaimed_expired_claim": true,
-  "static_claim_lease_hours": 24
+  "static_claim_lease_hours": 24,
+  "released_at": "2026-10-21T05:36:20.483693+00:00",
+  "release_reason": "GitHub-hosted runner could not complete media access or ASR; retained for retry"
 }
