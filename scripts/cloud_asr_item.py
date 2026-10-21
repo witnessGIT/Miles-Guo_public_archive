@@ -181,6 +181,7 @@ def transcribe_chunked(
     resumed_chunks = 0
     for chunk_index, chunk in enumerate(chunks):
         offset = chunk_index * CHUNK_DURATION_SEC
+        chunk_digest = sha256_file(chunk)
         checkpoint_path = checkpoint_root / f"chunk_{chunk_index:04d}.json" if checkpoint_root else None
         checkpoint: dict[str, Any] | None = None
         if checkpoint_path and checkpoint_path.exists():
@@ -192,6 +193,7 @@ def transcribe_chunked(
                     and candidate.get("model") == MODEL
                     and candidate.get("chunk_index") == chunk_index
                     and candidate.get("offset_sec") == offset
+                    and candidate.get("chunk_audio_sha256") == chunk_digest
                 ):
                     checkpoint = candidate
                     resumed_chunks += 1
@@ -207,7 +209,7 @@ def transcribe_chunked(
                 "live_id": live_id,
                 "chunk_index": chunk_index,
                 "offset_sec": offset,
-                "chunk_audio_sha256": sha256_file(chunk),
+                "chunk_audio_sha256": chunk_digest,
                 "model": MODEL,
                 "language": str(result.get("language") or language),
                 "text": str(result.get("text") or "").strip(),
@@ -242,6 +244,11 @@ def transcribe_chunked(
             end = max(start, round(float(segment["end"]), 3))
             combined_segments.append({"start": start, "end": end, "text": text})
         chunk.unlink(missing_ok=True)
+    if checkpoint_root is not None:
+        expected = {f"chunk_{index:04d}.json" for index in range(len(chunks))}
+        for stale in checkpoint_root.glob("chunk_*.json"):
+            if stale.name not in expected:
+                stale.unlink(missing_ok=True)
     return {
         "text": " ".join(combined_text),
         "segments": combined_segments,
@@ -358,14 +365,11 @@ def main() -> int:
         asset, resolved = chosen
         audio_digest = sha256_file(audio)
         resume_manifest = checkpoints / "source.json"
-        previous_digest = None
-        if resume_manifest.exists():
-            try:
-                previous_digest = json.loads(resume_manifest.read_text(encoding="utf-8")).get("audio_sha256")
-            except (OSError, json.JSONDecodeError):
-                previous_digest = None
-        if previous_digest != audio_digest:
-            shutil.rmtree(checkpoints, ignore_errors=True)
+        # Fresh OGG files can be byte-different even when their decoded audio is
+        # identical (for example, because container serial/header values change).
+        # Keep prior checkpoints here and validate every decoded PCM chunk by its
+        # own SHA-256 in transcribe_chunked.  A genuinely changed source therefore
+        # invalidates only the chunks whose audio content changed.
         write_json(resume_manifest, {
             "schema_version": "cloud-asr-checkpoint-set-v1",
             "live_id": args.live_id,
@@ -376,6 +380,7 @@ def main() -> int:
             "audio_size_bytes": audio.stat().st_size,
             "model": MODEL,
             "chunk_duration_sec": CHUNK_DURATION_SEC,
+            "resume_validation": "per_chunk_pcm_wav_sha256",
             "processing_location": "github-hosted-macos-arm64",
             "media_committed_to_git": False,
             "paid_api_used": False,

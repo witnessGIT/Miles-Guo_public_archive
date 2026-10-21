@@ -1,12 +1,20 @@
 from __future__ import annotations
 
+import hashlib
 import json
 import tempfile
 import unittest
 from pathlib import Path
 from unittest.mock import patch
 
-from scripts.cloud_asr_item import CHUNK_DURATION_SEC, MODEL, output_paths, publish, transcribe_chunked
+from scripts.cloud_asr_item import (
+    CHUNK_DURATION_SEC,
+    MODEL,
+    output_paths,
+    publish,
+    sha256_file,
+    transcribe_chunked,
+)
 
 
 class CloudAsrOutputTests(unittest.TestCase):
@@ -64,11 +72,14 @@ class CloudAsrOutputTests(unittest.TestCase):
             chunk_root = root / "chunks"
             checkpoints = root / "checkpoints"
             checkpoints.mkdir()
+            saved_chunk = root / "saved_chunk.wav"
+            saved_chunk.write_bytes(b"stable decoded pcm")
             (checkpoints / "chunk_0000.json").write_text(json.dumps({
                 "schema_version": "cloud-asr-chunk-v1",
                 "live_id": "LIVE_20200101_001",
                 "chunk_index": 0,
                 "offset_sec": 0,
+                "chunk_audio_sha256": sha256_file(saved_chunk),
                 "model": MODEL,
                 "language": "zh",
                 "text": "saved chunk",
@@ -77,8 +88,8 @@ class CloudAsrOutputTests(unittest.TestCase):
 
             def fake_ffmpeg(*_args: object, **_kwargs: object) -> None:
                 chunk_root.mkdir(parents=True, exist_ok=True)
-                (chunk_root / "chunk_0000.wav").touch()
-                (chunk_root / "chunk_0001.wav").touch()
+                (chunk_root / "chunk_0000.wav").write_bytes(b"stable decoded pcm")
+                (chunk_root / "chunk_0001.wav").write_bytes(b"new decoded pcm")
 
             with patch("scripts.cloud_asr_item.subprocess.run", side_effect=fake_ffmpeg):
                 result = transcribe_chunked(
@@ -91,6 +102,56 @@ class CloudAsrOutputTests(unittest.TestCase):
             self.assertEqual(result["segments"][1]["start"], CHUNK_DURATION_SEC + 2.0)
             written = json.loads((checkpoints / "chunk_0001.json").read_text(encoding="utf-8"))
             self.assertFalse(written["media_committed_to_git"])
+
+    def test_chunked_transcription_recomputes_changed_audio_checkpoint(self) -> None:
+        class FakeWhisper:
+            calls = 0
+
+            @classmethod
+            def transcribe(cls, _path: str, **_kwargs: object) -> dict[str, object]:
+                cls.calls += 1
+                return {
+                    "text": "replacement chunk",
+                    "language": "zh",
+                    "segments": [{"start": 1.0, "end": 2.0, "text": "replacement part"}],
+                }
+
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            audio = root / "audio.ogg"
+            audio.touch()
+            chunk_root = root / "chunks"
+            checkpoints = root / "checkpoints"
+            checkpoints.mkdir()
+            (checkpoints / "chunk_0000.json").write_text(json.dumps({
+                "schema_version": "cloud-asr-chunk-v1",
+                "live_id": "LIVE_20200101_001",
+                "chunk_index": 0,
+                "offset_sec": 0,
+                "chunk_audio_sha256": "0" * 64,
+                "model": MODEL,
+                "language": "zh",
+                "text": "stale chunk",
+                "segments": [{"start": 1.0, "end": 1.5, "text": "stale part"}],
+            }), encoding="utf-8")
+
+            def fake_ffmpeg(*_args: object, **_kwargs: object) -> None:
+                chunk_root.mkdir(parents=True, exist_ok=True)
+                (chunk_root / "chunk_0000.wav").write_bytes(b"changed decoded pcm")
+
+            with patch("scripts.cloud_asr_item.subprocess.run", side_effect=fake_ffmpeg):
+                result = transcribe_chunked(
+                    audio, chunk_root, FakeWhisper, checkpoints, "LIVE_20200101_001",
+                )
+
+            self.assertEqual(FakeWhisper.calls, 1)
+            self.assertEqual(result["resumed_chunk_count"], 0)
+            self.assertEqual(result["text"], "replacement chunk")
+            written = json.loads((checkpoints / "chunk_0000.json").read_text(encoding="utf-8"))
+            self.assertEqual(
+                written["chunk_audio_sha256"],
+                hashlib.sha256(b"changed decoded pcm").hexdigest(),
+            )
 
     def test_publish_keeps_media_out_and_writes_timestamped_machine_records(self) -> None:
         with tempfile.TemporaryDirectory() as temporary:
