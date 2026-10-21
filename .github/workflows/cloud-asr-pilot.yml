@@ -66,9 +66,9 @@ jobs:
           set -euo pipefail
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          deferred_args=()
+          set --
           if [[ '${{ inputs.include_deferred }}' == 'true' ]]; then
-            deferred_args+=(--include-deferred)
+            set -- --include-deferred
           fi
           python scripts/cloud_asr_batch.py \
             --repo "$GITHUB_WORKSPACE" \
@@ -76,5 +76,5 @@ jobs:
             --batch-size '${{ inputs.batch_size }}' \
             --live-ids '${{ inputs.live_ids }}' \
             --item-timeout-sec '${{ inputs.item_timeout_sec }}' \
-            "${deferred_args[@]}" \
+            "$@" \
             --agent-id "github-actions-cloud-asr-${GITHUB_RUN_ID}"
