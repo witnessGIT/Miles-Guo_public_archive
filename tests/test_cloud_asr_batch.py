@@ -4,7 +4,13 @@ import unittest
 from datetime import datetime, timezone
 from pathlib import Path
 
-from scripts.cloud_asr_batch import attempt_is_cooling_down, claim_is_unavailable
+from scripts.cloud_asr_batch import (
+    DEFERRED_STATUS,
+    attempt_is_cooling_down,
+    attempt_is_deferred,
+    claim_is_unavailable,
+    record_failed_resume,
+)
 
 
 class CloudAsrBatchTests(unittest.TestCase):
@@ -48,6 +54,34 @@ class CloudAsrBatchTests(unittest.TestCase):
             }), encoding="utf-8")
             self.assertTrue(claim_is_unavailable(path, 24))
             self.assertFalse(claim_is_unavailable(path, 0))
+
+    def test_two_failed_checkpoint_resumes_defer_video_to_corpus_tail(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            repo = Path(directory)
+            self.write_attempt(repo, "2026-10-21T00:00:00Z")
+            count, deferred = record_failed_resume(repo, "LIVE_20260101_001", 0, True)
+            self.assertEqual(count, 1)
+            self.assertFalse(deferred)
+            self.assertFalse(attempt_is_deferred(repo, "LIVE_20260101_001"))
+
+            count, deferred = record_failed_resume(repo, "LIVE_20260101_001", count, True)
+            self.assertEqual(count, 2)
+            self.assertTrue(deferred)
+            self.assertTrue(attempt_is_deferred(repo, "LIVE_20260101_001"))
+            payload = json.loads(
+                (repo / "data/current/asr_attempts/cloud_live_20260101_001.json")
+                .read_text(encoding="utf-8")
+            )
+            self.assertEqual(payload["status"], DEFERRED_STATUS)
+            self.assertEqual(payload["retry_queue"], "corpus_tail")
+
+    def test_source_failure_does_not_consume_checkpoint_resume_allowance(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            repo = Path(directory)
+            self.write_attempt(repo, "2026-10-21T00:00:00Z")
+            count, deferred = record_failed_resume(repo, "LIVE_20260101_001", 1, False)
+            self.assertEqual(count, 1)
+            self.assertFalse(deferred)
 
 
 if __name__ == "__main__":

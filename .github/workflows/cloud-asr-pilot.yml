@@ -15,6 +15,11 @@ on:
         description: Per-recording timeout; raise only for targeted long-recording retries
         required: false
         default: '3000'
+      include_deferred:
+        description: Retry corpus-tail videos after two failed checkpoint resumes
+        required: false
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -61,10 +66,15 @@ jobs:
           set -euo pipefail
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          deferred_args=()
+          if [[ '${{ inputs.include_deferred }}' == 'true' ]]; then
+            deferred_args+=(--include-deferred)
+          fi
           python scripts/cloud_asr_batch.py \
             --repo "$GITHUB_WORKSPACE" \
             --work-root "$RUNNER_TEMP/miles-guo-asr" \
             --batch-size '${{ inputs.batch_size }}' \
             --live-ids '${{ inputs.live_ids }}' \
             --item-timeout-sec '${{ inputs.item_timeout_sec }}' \
+            "${deferred_args[@]}" \
             --agent-id "github-actions-cloud-asr-${GITHUB_RUN_ID}"

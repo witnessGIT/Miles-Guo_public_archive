@@ -14,6 +14,62 @@ from pathlib import Path
 
 
 TASK_RE = re.compile(r"WI_(LIVE_\d{8}_\d{3})_transcript_import")
+DEFERRED_STATUS = "cloud_checkpoint_retry_limit_deferred"
+CHECKPOINT_RETRY_LIMIT = 2
+
+
+def attempt_path(repo: Path, live_id: str) -> Path:
+    return repo / "data" / "current" / "asr_attempts" / f"cloud_{live_id.lower()}.json"
+
+
+def read_attempt(repo: Path, live_id: str) -> dict[str, object]:
+    path = attempt_path(repo, live_id)
+    if not path.exists():
+        return {}
+    try:
+        payload = json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return {}
+    return payload if isinstance(payload, dict) else {}
+
+
+def attempt_is_deferred(repo: Path, live_id: str) -> bool:
+    payload = read_attempt(repo, live_id)
+    return (
+        payload.get("status") == DEFERRED_STATUS
+        or payload.get("deferred_until_corpus_tail") is True
+    )
+
+
+def record_failed_resume(
+    repo: Path, live_id: str, previous_retry_count: int, resume_timed_out: bool,
+) -> tuple[int, bool]:
+    """Record a failed resume and defer it after two actual checkpoint timeouts."""
+    path = attempt_path(repo, live_id)
+    payload = read_attempt(repo, live_id)
+    count = previous_retry_count + (1 if resume_timed_out else 0)
+    deferred = count >= CHECKPOINT_RETRY_LIMIT
+    payload.update({
+        "schema_version": "cloud-asr-attempt-v1",
+        "live_id": live_id,
+        "checkpoint_retry_count": count,
+        "checkpoint_retry_limit": CHECKPOINT_RETRY_LIMIT,
+        "deferred_until_corpus_tail": deferred,
+        "retry_queue": "corpus_tail" if deferred else "normal",
+    })
+    if deferred:
+        payload["pre_defer_status"] = payload.get("status")
+        payload["status"] = DEFERRED_STATUS
+        payload["deferred_reason"] = (
+            "two checkpoint resume attempts did not complete; released so the "
+            "normal queue can continue and retained for corpus-tail retry"
+        )
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(
+        json.dumps(payload, ensure_ascii=False, indent=2, sort_keys=True) + "\n",
+        encoding="utf-8",
+    )
+    return count, deferred
 
 
 def run(
@@ -60,7 +116,7 @@ def push_with_rebase(repo: Path) -> None:
 def attempt_is_cooling_down(repo: Path, live_id: str, cooldown_hours: int) -> bool:
     if cooldown_hours <= 0:
         return False
-    path = repo / "data" / "current" / "asr_attempts" / f"cloud_{live_id.lower()}.json"
+    path = attempt_path(repo, live_id)
     if not path.exists():
         return False
     try:
@@ -107,7 +163,7 @@ def claim_is_unavailable(path: Path, cooldown_hours: int = 24) -> bool:
 
 def eligible(
     repo: Path, limit: int, retry_cooldown_hours: int = 24,
-    requested_live_ids: list[str] | None = None,
+    requested_live_ids: list[str] | None = None, include_deferred: bool = False,
 ) -> list[tuple[str, str]]:
     listing = run([sys.executable, "scripts/next_task.py", "--list"], repo).stdout
     listed_live_ids = TASK_RE.findall(listing)
@@ -117,10 +173,17 @@ def eligible(
         for live_id in requested_live_ids:
             if live_id not in listed:
                 raise RuntimeError(f"requested ASR task is not currently eligible: {live_id}")
+            if attempt_is_deferred(repo, live_id) and not include_deferred:
+                raise RuntimeError(
+                    f"requested ASR task is deferred until corpus tail: {live_id}; "
+                    "use --include-deferred only for the final retry phase"
+                )
             values.append((f"WI_{live_id}_transcript_import", live_id))
         return values[:limit]
     values: list[tuple[str, str]] = []
     for live_id in listed_live_ids:
+        if attempt_is_deferred(repo, live_id) and not include_deferred:
+            continue
         if attempt_is_cooling_down(repo, live_id, retry_cooldown_hours):
             continue
         task_id = f"WI_{live_id}_transcript_import"
@@ -142,6 +205,10 @@ def main() -> int:
         "--live-ids", default="",
         help="Optional comma-separated eligible LIVE ids to retry explicitly",
     )
+    parser.add_argument(
+        "--include-deferred", action="store_true",
+        help="Include videos deferred after two failed checkpoint resumes",
+    )
     parser.add_argument("--agent-id", required=True)
     args = parser.parse_args()
     if not 1 <= args.batch_size <= 100:
@@ -155,7 +222,10 @@ def main() -> int:
     requested_live_ids = [value.strip() for value in args.live_ids.split(",") if value.strip()]
     if len(requested_live_ids) > args.batch_size:
         raise SystemExit("explicit live-id count cannot exceed batch size")
-    tasks = eligible(repo, args.batch_size, args.retry_cooldown_hours, requested_live_ids)
+    tasks = eligible(
+        repo, args.batch_size, args.retry_cooldown_hours, requested_live_ids,
+        args.include_deferred,
+    )
     if not tasks:
         print("No eligible transcript_import tasks.")
         return 0
@@ -188,6 +258,10 @@ def main() -> int:
         attempt_paths: list[str] = []
         for task_id, live_id in checkpoint:
             checkpoint_path = f"data/current/asr_checkpoints/asr_{live_id.lower()}"
+            checkpoint_root = repo / checkpoint_path
+            had_checkpoint = any(checkpoint_root.glob("chunk_*.json"))
+            previous_attempt = read_attempt(repo, live_id)
+            previous_retry_count = int(previous_attempt.get("checkpoint_retry_count") or 0)
             item_command = [
                 sys.executable, "scripts/cloud_asr_item.py", "--repo", str(repo),
                 "--live-id", live_id, "--work-root", str(work),
@@ -225,6 +299,15 @@ def main() -> int:
                 success.append((task_id, live_id, outputs))
             else:
                 attempt = f"data/current/asr_attempts/cloud_{live_id.lower()}.json"
+                retry_count, deferred = record_failed_resume(
+                    repo, live_id, previous_retry_count,
+                    had_checkpoint and completed.returncode == 124,
+                )
+                print(json.dumps({
+                    "live_id": live_id,
+                    "checkpoint_retry_count": retry_count,
+                    "deferred_until_corpus_tail": deferred,
+                }, ensure_ascii=False), flush=True)
                 if (repo / attempt).exists():
                     attempt_paths.append(attempt)
                 if (repo / checkpoint_path).exists():
