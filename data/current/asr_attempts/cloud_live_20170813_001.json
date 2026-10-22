@@ -1,11 +1,15 @@
 {
+  "checkpoint_retry_count": 0,
+  "checkpoint_retry_limit": 2,
+  "deferred_until_corpus_tail": false,
   "error": "no media source was reachable from this GitHub-hosted runner",
-  "generated_at": "2026-10-20T02:19:36Z",
+  "generated_at": "2026-10-22T09:05:37Z",
   "live_id": "LIVE_20170813_001",
   "media_committed_to_git": false,
   "model": "mlx-community/whisper-large-v3-turbo",
   "paid_api_used": false,
   "processing_location": "github-hosted-macos-arm64",
+  "retry_queue": "normal",
   "schema_version": "cloud-asr-attempt-v1",
   "source_attempt_errors": [
     {

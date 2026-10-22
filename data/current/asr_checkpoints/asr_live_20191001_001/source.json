@@ -1,5 +1,6 @@
 {
-  "audio_sha256": "4a04cf12426c69f272dea39bfd213c960c45511070b480af2fae6d97ae1161df",
+  "audio_duration_sec": 22858.449,
+  "audio_sha256": "924785f85dfb598a4c2324d361ef0699c1c5a1dc19f9e5413a6cfdaa5f372b7f",
   "audio_size_bytes": 91284300,
   "chunk_duration_sec": 900,
   "live_id": "LIVE_20191001_001",
@@ -8,6 +9,7 @@
   "model": "mlx-community/whisper-large-v3-turbo",
   "paid_api_used": false,
   "processing_location": "github-hosted-macos-arm64",
+  "resume_validation": "per_chunk_pcm_wav_sha256",
   "schema_version": "cloud-asr-checkpoint-set-v1",
   "source_id": "SRC_C2_RUMBLE_6D47F0217040",
   "source_url": "https://rumble.com/v57sjwd-20191001-1.html"
