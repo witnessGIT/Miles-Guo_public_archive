@@ -1,9 +1,9 @@
 {
   "task_id": "WI_LIVE_20191118_002_key_points_topics",
-  "agent_id": "github-actions-cloud-key-points-39524913327",
-  "claimed_at": "2026-10-21T01:10:03.933813+00:00",
-  "base_commit": "031c96d5bfcbdb10c7778c4280c8bebb75d79a64",
-  "status": "released",
+  "agent_id": "github-actions-cloud-key-points-39721116553",
+  "claimed_at": "2026-10-22T04:21:45.444567+00:00",
+  "base_commit": "2f6e8417b4113286154da969ea3abdd53f85f0f4",
+  "status": "in_progress",
   "workflow_mode": "continuous-worker-v2",
   "claim_protocol": "claim-protocol-v2",
   "entry_mode": "work",
@@ -22,7 +22,5 @@
   ],
   "scope": "Create evidence-grounded neutral key points and controlled topic assignments.",
   "reclaimed_expired_claim": true,
-  "static_claim_lease_hours": 24,
-  "released_at": "2026-10-21T01:13:21.563199+00:00",
-  "release_reason": "Cloud key-point extraction failed; retained for retry"
+  "static_claim_lease_hours": 24
 }
