@@ -1,0 +1,4856 @@
+{
+  "chunk_audio_sha256": "c5c1416beb36db60a308c6222229654e7da8cd288ad45cb64a93331cb315da52",
+  "chunk_index": 17,
+  "completed_at": "2026-10-22T05:48:31Z",
+  "language": "zh",
+  "live_id": "LIVE_20211101_002",
+  "media_committed_to_git": false,
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "offset_sec": 15300,
+  "paid_api_used": false,
+  "processing_location": "github-hosted-macos-arm64",
+  "schema_version": "cloud-asr-chunk-v1",
+  "segments": [
+    {
+      "avg_logprob": -0.373051,
+      "compression_ratio": 1.271186,
+      "end": 15301.4,
+      "no_speech_prob": 0.0,
+      "start": 15300.0,
+      "text": "大位老问你"
+    },
+    {
+      "avg_logprob": -0.373051,
+      "compression_ratio": 1.271186,
+      "end": 15303.46,
+      "no_speech_prob": 0.0,
+      "start": 15301.4,
+      "text": "太小了 还要大一点"
+    },
+    {
+      "avg_logprob": -0.373051,
+      "compression_ratio": 1.271186,
+      "end": 15306.58,
+      "no_speech_prob": 0.0,
+      "start": 15303.46,
+      "text": "我的声音小吗"
+    },
+    {
+      "avg_logprob": -0.373051,
+      "compression_ratio": 1.271186,
+      "end": 15308.2,
+      "no_speech_prob": 0.0,
+      "start": 15306.58,
+      "text": "我的声音很小是吗"
+    },
+    {
+      "avg_logprob": -0.373051,
+      "compression_ratio": 1.271186,
+      "end": 15309.28,
+      "no_speech_prob": 0.0,
+      "start": 15308.2,
+      "text": "小小小"
+    },
+    {
+      "avg_logprob": -0.373051,
+      "compression_ratio": 1.271186,
+      "end": 15310.82,
+      "no_speech_prob": 0.0,
+      "start": 15309.28,
+      "text": "对 再大一点"
+    },
+    {
+      "avg_logprob": -0.373051,
+      "compression_ratio": 1.271186,
+      "end": 15314.52,
+      "no_speech_prob": 0.0,
+      "start": 15310.82,
+      "text": "还可以啊 我听着还可以"
+    },
+    {
+      "avg_logprob": -0.373051,
+      "compression_ratio": 1.271186,
+      "end": 15316.3,
+      "no_speech_prob": 0.0,
+      "start": 15314.52,
+      "text": "声音很小"
+    },
+    {
+      "avg_logprob": -0.405235,
+      "compression_ratio": 1.534653,
+      "end": 15332.5,
+      "no_speech_prob": 0.0,
+      "start": 15330.0,
+      "text": "这是要放大招吗"
+    },
+    {
+      "avg_logprob": -0.405235,
+      "compression_ratio": 1.534653,
+      "end": 15335.3,
+      "no_speech_prob": 0.0,
+      "start": 15332.5,
+      "text": "唐平能听到吗"
+    },
+    {
+      "avg_logprob": -0.405235,
+      "compression_ratio": 1.534653,
+      "end": 15336.94,
+      "no_speech_prob": 0.0,
+      "start": 15335.3,
+      "text": "能听到还是有一点小"
+    },
+    {
+      "avg_logprob": -0.405235,
+      "compression_ratio": 1.534653,
+      "end": 15338.18,
+      "no_speech_prob": 0.0,
+      "start": 15336.94,
+      "text": "还能大一点吗"
+    },
+    {
+      "avg_logprob": -0.405235,
+      "compression_ratio": 1.534653,
+      "end": 15339.34,
+      "no_speech_prob": 0.0,
+      "start": 15338.18,
+      "text": "对 声音能再大一点吗"
+    },
+    {
+      "avg_logprob": -0.405235,
+      "compression_ratio": 1.534653,
+      "end": 15341.32,
+      "no_speech_prob": 0.0,
+      "start": 15339.34,
+      "text": "麦克风"
+    },
+    {
+      "avg_logprob": -0.405235,
+      "compression_ratio": 1.534653,
+      "end": 15344.68,
+      "no_speech_prob": 0.0,
+      "start": 15341.32,
+      "text": "唐平能听到吗"
+    },
+    {
+      "avg_logprob": -0.405235,
+      "compression_ratio": 1.534653,
+      "end": 15345.78,
+      "no_speech_prob": 0.0,
+      "start": 15344.68,
+      "text": "这回好了 这回好了"
+    },
+    {
+      "avg_logprob": -0.405235,
+      "compression_ratio": 1.534653,
+      "end": 15346.68,
+      "no_speech_prob": 0.0,
+      "start": 15345.78,
+      "text": "可以"
+    },
+    {
+      "avg_logprob": -0.405235,
+      "compression_ratio": 1.534653,
+      "end": 15347.78,
+      "no_speech_prob": 0.0,
+      "start": 15346.68,
+      "text": "可以"
+    },
+    {
+      "avg_logprob": -0.405235,
+      "compression_ratio": 1.534653,
+      "end": 15348.66,
+      "no_speech_prob": 0.0,
+      "start": 15347.78,
+      "text": "我的怎么样了"
+    },
+    {
+      "avg_logprob": -0.405235,
+      "compression_ratio": 1.534653,
+      "end": 15350.68,
+      "no_speech_prob": 0.0,
+      "start": 15348.66,
+      "text": "好的 大位声音也好了"
+    },
+    {
+      "avg_logprob": -0.405235,
+      "compression_ratio": 1.534653,
+      "end": 15351.86,
+      "no_speech_prob": 0.0,
+      "start": 15350.68,
+      "text": "好 不错"
+    },
+    {
+      "avg_logprob": -0.405235,
+      "compression_ratio": 1.534653,
+      "end": 15353.96,
+      "no_speech_prob": 0.0,
+      "start": 15351.86,
+      "text": "大位哥也行"
+    },
+    {
+      "avg_logprob": -0.405235,
+      "compression_ratio": 1.534653,
+      "end": 15355.66,
+      "no_speech_prob": 0.0,
+      "start": 15353.96,
+      "text": "我现在扎好马步了"
+    },
+    {
+      "avg_logprob": -0.405235,
+      "compression_ratio": 1.534653,
+      "end": 15358.3,
+      "no_speech_prob": 0.0,
+      "start": 15355.66,
+      "text": "等导哥等的好辛苦"
+    },
+    {
+      "avg_logprob": -0.405235,
+      "compression_ratio": 1.534653,
+      "end": 15359.2,
+      "no_speech_prob": 0.0,
+      "start": 15358.3,
+      "text": "我扎好马步"
+    },
+    {
+      "avg_logprob": -0.260307,
+      "compression_ratio": 1.625,
+      "end": 15361.7,
+      "no_speech_prob": 0.0,
+      "start": 15359.2,
+      "text": "大位那边声音可以再大一点"
+    },
+    {
+      "avg_logprob": -0.260307,
+      "compression_ratio": 1.625,
+      "end": 15363.94,
+      "no_speech_prob": 0.0,
+      "start": 15361.7,
+      "text": "现在可以听到吗"
+    },
+    {
+      "avg_logprob": -0.260307,
+      "compression_ratio": 1.625,
+      "end": 15364.74,
+      "no_speech_prob": 0.0,
+      "start": 15363.94,
+      "text": "现在声音怎么样"
+    },
+    {
+      "avg_logprob": -0.260307,
+      "compression_ratio": 1.625,
+      "end": 15365.64,
+      "no_speech_prob": 0.0,
+      "start": 15364.74,
+      "text": "可以"
+    },
+    {
+      "avg_logprob": -0.260307,
+      "compression_ratio": 1.625,
+      "end": 15367.18,
+      "no_speech_prob": 0.0,
+      "start": 15365.64,
+      "text": "可以可以可以"
+    },
+    {
+      "avg_logprob": -0.260307,
+      "compression_ratio": 1.625,
+      "end": 15368.2,
+      "no_speech_prob": 0.0,
+      "start": 15367.18,
+      "text": "我感觉"
+    },
+    {
+      "avg_logprob": -0.260307,
+      "compression_ratio": 1.625,
+      "end": 15369.74,
+      "no_speech_prob": 0.0,
+      "start": 15368.2,
+      "text": "导哥那边声音可以再大一点"
+    },
+    {
+      "avg_logprob": -0.260307,
+      "compression_ratio": 1.625,
+      "end": 15371.64,
+      "no_speech_prob": 0.0,
+      "start": 15369.74,
+      "text": "对 还可以大吗"
+    },
+    {
+      "avg_logprob": -0.260307,
+      "compression_ratio": 1.625,
+      "end": 15373.92,
+      "no_speech_prob": 0.0,
+      "start": 15371.64,
+      "text": "我的声音还不够大是吧"
+    },
+    {
+      "avg_logprob": -0.260307,
+      "compression_ratio": 1.625,
+      "end": 15377.32,
+      "no_speech_prob": 0.0,
+      "start": 15373.92,
+      "text": "对 大位的声音也不够大"
+    },
+    {
+      "avg_logprob": -0.260307,
+      "compression_ratio": 1.625,
+      "end": 15378.28,
+      "no_speech_prob": 0.0,
+      "start": 15377.32,
+      "text": "好的 我调一下啊"
+    },
+    {
+      "avg_logprob": -0.260307,
+      "compression_ratio": 1.625,
+      "end": 15383.82,
+      "no_speech_prob": 0.0,
+      "start": 15378.28,
+      "text": "稍等稍等"
+    },
+    {
+      "avg_logprob": -0.260307,
+      "compression_ratio": 1.625,
+      "end": 15386.6,
+      "no_speech_prob": 0.0,
+      "start": 15383.82,
+      "text": "稳当的啊 稳当的"
+    },
+    {
+      "avg_logprob": -0.260307,
+      "compression_ratio": 1.625,
+      "end": 15389.2,
+      "no_speech_prob": 0.0,
+      "start": 15386.6,
+      "text": "好"
+    },
+    {
+      "avg_logprob": -0.816385,
+      "compression_ratio": 1.032,
+      "end": 15394.5,
+      "no_speech_prob": 0.0,
+      "start": 15389.2,
+      "text": "东哥和莹姐还没到位"
+    },
+    {
+      "avg_logprob": -0.816385,
+      "compression_ratio": 1.032,
+      "end": 15398.6,
+      "no_speech_prob": 0.0,
+      "start": 15394.5,
+      "text": "对他们现在赶紧从那个餐厅"
+    },
+    {
+      "avg_logprob": -0.816385,
+      "compression_ratio": 1.032,
+      "end": 15399.42,
+      "no_speech_prob": 0.0,
+      "start": 15398.6,
+      "text": "唠老班长"
+    },
+    {
+      "avg_logprob": -0.816385,
+      "compression_ratio": 1.032,
+      "end": 15400.78,
+      "no_speech_prob": 0.0,
+      "start": 15399.42,
+      "text": "老班长怎么样"
+    },
+    {
+      "avg_logprob": -0.816385,
+      "compression_ratio": 1.032,
+      "end": 15404.98,
+      "no_speech_prob": 0.0,
+      "start": 15400.78,
+      "text": "早就开喝了已经"
+    },
+    {
+      "avg_logprob": -0.816385,
+      "compression_ratio": 1.032,
+      "end": 15407.66,
+      "no_speech_prob": 0.0,
+      "start": 15404.98,
+      "text": "喝好几瓶了"
+    },
+    {
+      "avg_logprob": -0.516755,
+      "compression_ratio": 1.126506,
+      "end": 15410.16,
+      "no_speech_prob": 0.0,
+      "start": 15407.66,
+      "text": "館長又沒聲音了 沒開麥吧"
+    },
+    {
+      "avg_logprob": -0.516755,
+      "compression_ratio": 1.126506,
+      "end": 15413.26,
+      "no_speech_prob": 0.0,
+      "start": 15412.06,
+      "text": "哦對 剛沒開麥"
+    },
+    {
+      "avg_logprob": -0.516755,
+      "compression_ratio": 1.126506,
+      "end": 15416.76,
+      "no_speech_prob": 0.0,
+      "start": 15415.36,
+      "text": "早就準備好了"
+    },
+    {
+      "avg_logprob": -0.516755,
+      "compression_ratio": 1.126506,
+      "end": 15422.06,
+      "no_speech_prob": 0.0,
+      "start": 15419.16,
+      "text": "好 大家耐心等待"
+    },
+    {
+      "avg_logprob": -0.516755,
+      "compression_ratio": 1.126506,
+      "end": 15426.06,
+      "no_speech_prob": 0.0,
+      "start": 15424.16,
+      "text": "哇 激動人心的時刻"
+    },
+    {
+      "avg_logprob": -0.516755,
+      "compression_ratio": 1.126506,
+      "end": 15432.8,
+      "no_speech_prob": 0.0,
+      "start": 15431.36,
+      "text": "大衛這瓶卡女兒很近"
+    },
+    {
+      "avg_logprob": -0.516755,
+      "compression_ratio": 1.126506,
+      "end": 15436.86,
+      "no_speech_prob": 0.0,
+      "start": 15432.8,
+      "text": "海東哥和小葉正在回酒店的路上"
+    },
+    {
+      "avg_logprob": -0.379948,
+      "compression_ratio": 1.183544,
+      "end": 15437.86,
+      "no_speech_prob": 0.0,
+      "start": 15436.86,
+      "text": "對"
+    },
+    {
+      "avg_logprob": -0.379948,
+      "compression_ratio": 1.183544,
+      "end": 15443.86,
+      "no_speech_prob": 0.0,
+      "start": 15440.66,
+      "text": "哎呀 我看是肯定要等他們回到酒店以後"
+    },
+    {
+      "avg_logprob": -0.379948,
+      "compression_ratio": 1.183544,
+      "end": 15447.56,
+      "no_speech_prob": 0.0,
+      "start": 15444.16,
+      "text": "兩千的酒就沒有了 我們有一個普通酒"
+    },
+    {
+      "avg_logprob": -0.379948,
+      "compression_ratio": 1.183544,
+      "end": 15448.36,
+      "no_speech_prob": 0.0,
+      "start": 15447.56,
+      "text": "普通酒"
+    },
+    {
+      "avg_logprob": -0.379948,
+      "compression_ratio": 1.183544,
+      "end": 15453.26,
+      "no_speech_prob": 0.0,
+      "start": 15451.56,
+      "text": "我也有一個40塊錢的酒"
+    },
+    {
+      "avg_logprob": -0.379948,
+      "compression_ratio": 1.183544,
+      "end": 15456.66,
+      "no_speech_prob": 0.0,
+      "start": 15455.66,
+      "text": "瓶子很漂亮"
+    },
+    {
+      "avg_logprob": -0.379948,
+      "compression_ratio": 1.183544,
+      "end": 15464.46,
+      "no_speech_prob": 0.0,
+      "start": 15461.06,
+      "text": "我這個也是那個模擬的"
+    },
+    {
+      "avg_logprob": -0.946891,
+      "compression_ratio": 1.05102,
+      "end": 15466.66,
+      "no_speech_prob": 0.0,
+      "start": 15464.46,
+      "text": "什麼版"
+    },
+    {
+      "avg_logprob": -0.946891,
+      "compression_ratio": 1.05102,
+      "end": 15469.46,
+      "no_speech_prob": 0.0,
+      "start": 15468.46,
+      "text": "2013"
+    },
+    {
+      "avg_logprob": -0.946891,
+      "compression_ratio": 1.05102,
+      "end": 15473.46,
+      "no_speech_prob": 0.0,
+      "start": 15472.46,
+      "text": "哇"
+    },
+    {
+      "avg_logprob": -0.946891,
+      "compression_ratio": 1.05102,
+      "end": 15475.46,
+      "no_speech_prob": 0.0,
+      "start": 15474.16,
+      "text": "早一點點你加上吧"
+    },
+    {
+      "avg_logprob": -0.946891,
+      "compression_ratio": 1.05102,
+      "end": 15476.46,
+      "no_speech_prob": 0.0,
+      "start": 15475.46,
+      "text": "想買"
+    },
+    {
+      "avg_logprob": -0.946891,
+      "compression_ratio": 1.05102,
+      "end": 15477.96,
+      "no_speech_prob": 0.0,
+      "start": 15476.46,
+      "text": "沒有超過一百塊錢的"
+    },
+    {
+      "avg_logprob": -0.946891,
+      "compression_ratio": 1.05102,
+      "end": 15478.96,
+      "no_speech_prob": 0.0,
+      "start": 15477.96,
+      "text": "哈哈哈哈"
+    },
+    {
+      "avg_logprob": -0.946891,
+      "compression_ratio": 1.05102,
+      "end": 15480.46,
+      "no_speech_prob": 0.0,
+      "start": 15478.96,
+      "text": "想買好的沒有"
+    },
+    {
+      "avg_logprob": -0.527225,
+      "compression_ratio": 1.333333,
+      "end": 15481.46,
+      "no_speech_prob": 0.0,
+      "start": 15480.46,
+      "text": "哈哈哈哈"
+    },
+    {
+      "avg_logprob": -0.527225,
+      "compression_ratio": 1.333333,
+      "end": 15484.46,
+      "no_speech_prob": 0.0,
+      "start": 15483.46,
+      "text": "這個兩千"
+    },
+    {
+      "avg_logprob": -0.527225,
+      "compression_ratio": 1.333333,
+      "end": 15486.46,
+      "no_speech_prob": 0.0,
+      "start": 15484.46,
+      "text": "兩千塊錢一瓶"
+    },
+    {
+      "avg_logprob": -0.527225,
+      "compression_ratio": 1.333333,
+      "end": 15488.46,
+      "no_speech_prob": 0.0,
+      "start": 15487.46,
+      "text": "兩千多的啊"
+    },
+    {
+      "avg_logprob": -0.527225,
+      "compression_ratio": 1.333333,
+      "end": 15491.16,
+      "no_speech_prob": 0.0,
+      "start": 15489.46,
+      "text": "我可以展示一百一百多塊錢的"
+    },
+    {
+      "avg_logprob": -0.527225,
+      "compression_ratio": 1.333333,
+      "end": 15492.16,
+      "no_speech_prob": 0.0,
+      "start": 15491.16,
+      "text": "一百多塊錢左右的"
+    },
+    {
+      "avg_logprob": -0.575801,
+      "compression_ratio": 1.252427,
+      "end": 15493.16,
+      "no_speech_prob": 0.0,
+      "start": 15492.16,
+      "text": "哈哈"
+    },
+    {
+      "avg_logprob": -0.575801,
+      "compression_ratio": 1.252427,
+      "end": 15501.66,
+      "no_speech_prob": 0.0,
+      "start": 15501.16,
+      "text": "哇"
+    },
+    {
+      "avg_logprob": -0.575801,
+      "compression_ratio": 1.252427,
+      "end": 15502.16,
+      "no_speech_prob": 0.0,
+      "start": 15501.66,
+      "text": "這需要啊"
+    },
+    {
+      "avg_logprob": -0.575801,
+      "compression_ratio": 1.252427,
+      "end": 15507.16,
+      "no_speech_prob": 0.0,
+      "start": 15505.16,
+      "text": "大家這個在我們都把香檳準備好"
+    },
+    {
+      "avg_logprob": -0.575801,
+      "compression_ratio": 1.252427,
+      "end": 15507.66,
+      "no_speech_prob": 0.0,
+      "start": 15507.16,
+      "text": "對"
+    },
+    {
+      "avg_logprob": -0.575801,
+      "compression_ratio": 1.252427,
+      "end": 15510.16,
+      "no_speech_prob": 0.0,
+      "start": 15509.16,
+      "text": "看我們都已經準備好了"
+    },
+    {
+      "avg_logprob": -0.575801,
+      "compression_ratio": 1.252427,
+      "end": 15511.16,
+      "no_speech_prob": 0.0,
+      "start": 15510.16,
+      "text": "大家也把香檳準備好啊"
+    },
+    {
+      "avg_logprob": -0.615698,
+      "compression_ratio": 0.904762,
+      "end": 15515.16,
+      "no_speech_prob": 0.0,
+      "start": 15511.16,
+      "text": "沒有香檳做的白酒準備好啊"
+    },
+    {
+      "avg_logprob": -0.615698,
+      "compression_ratio": 0.904762,
+      "end": 15516.16,
+      "no_speech_prob": 0.0,
+      "start": 15515.16,
+      "text": "白酒"
+    },
+    {
+      "avg_logprob": -0.615698,
+      "compression_ratio": 0.904762,
+      "end": 15517.16,
+      "no_speech_prob": 0.0,
+      "start": 15516.16,
+      "text": "一酒飄香了"
+    },
+    {
+      "avg_logprob": -0.461522,
+      "compression_ratio": 1.076923,
+      "end": 15519.16,
+      "no_speech_prob": 0.0,
+      "start": 15517.16,
+      "text": "有一點酒會的感覺啊"
+    },
+    {
+      "avg_logprob": -0.461522,
+      "compression_ratio": 1.076923,
+      "end": 15520.16,
+      "no_speech_prob": 0.0,
+      "start": 15519.16,
+      "text": "嗯"
+    },
+    {
+      "avg_logprob": -0.461522,
+      "compression_ratio": 1.076923,
+      "end": 15524.16,
+      "no_speech_prob": 0.0,
+      "start": 15523.16,
+      "text": "嗯"
+    },
+    {
+      "avg_logprob": -0.461522,
+      "compression_ratio": 1.076923,
+      "end": 15525.16,
+      "no_speech_prob": 0.0,
+      "start": 15525.16,
+      "text": "有戰友說已經幾步來了"
+    },
+    {
+      "avg_logprob": -0.461522,
+      "compression_ratio": 1.076923,
+      "end": 15525.16,
+      "no_speech_prob": 0.0,
+      "start": 15524.16,
+      "text": "哈哈"
+    },
+    {
+      "avg_logprob": -0.461522,
+      "compression_ratio": 1.076923,
+      "end": 15526.16,
+      "no_speech_prob": 0.0,
+      "start": 15525.16,
+      "text": "躺在床上喝"
+    },
+    {
+      "avg_logprob": -0.461522,
+      "compression_ratio": 1.076923,
+      "end": 15527.16,
+      "no_speech_prob": 0.0,
+      "start": 15526.16,
+      "text": "累了好幾天了"
+    },
+    {
+      "avg_logprob": -0.461522,
+      "compression_ratio": 1.076923,
+      "end": 15528.16,
+      "no_speech_prob": 0.0,
+      "start": 15527.16,
+      "text": "哈哈"
+    },
+    {
+      "avg_logprob": -0.461522,
+      "compression_ratio": 1.076923,
+      "end": 15529.16,
+      "no_speech_prob": 0.0,
+      "start": 15528.16,
+      "text": "那躺床上喝吧"
+    },
+    {
+      "avg_logprob": -0.556748,
+      "compression_ratio": 1.473684,
+      "end": 15530.16,
+      "no_speech_prob": 0.0,
+      "start": 15529.16,
+      "text": "哈哈"
+    },
+    {
+      "avg_logprob": -0.556748,
+      "compression_ratio": 1.473684,
+      "end": 15531.16,
+      "no_speech_prob": 0.0,
+      "start": 15530.16,
+      "text": "哈哈"
+    },
+    {
+      "avg_logprob": -0.556748,
+      "compression_ratio": 1.473684,
+      "end": 15532.16,
+      "no_speech_prob": 0.0,
+      "start": 15531.16,
+      "text": "哈哈"
+    },
+    {
+      "avg_logprob": -0.556748,
+      "compression_ratio": 1.473684,
+      "end": 15533.16,
+      "no_speech_prob": 0.0,
+      "start": 15532.16,
+      "text": "去上西瓜"
+    },
+    {
+      "avg_logprob": -0.556748,
+      "compression_ratio": 1.473684,
+      "end": 15534.16,
+      "no_speech_prob": 0.0,
+      "start": 15533.16,
+      "text": "多喝點就沒線了"
+    },
+    {
+      "avg_logprob": -0.556748,
+      "compression_ratio": 1.473684,
+      "end": 15537.16,
+      "no_speech_prob": 0.0,
+      "start": 15535.16,
+      "text": "看見咱們這麼高興的在喝酒慶祝啊"
+    },
+    {
+      "avg_logprob": -0.556748,
+      "compression_ratio": 1.473684,
+      "end": 15538.16,
+      "no_speech_prob": 0.0,
+      "start": 15537.16,
+      "text": "這幫偉淚"
+    },
+    {
+      "avg_logprob": -0.556748,
+      "compression_ratio": 1.473684,
+      "end": 15539.16,
+      "no_speech_prob": 0.0,
+      "start": 15538.16,
+      "text": "也很高興的"
+    },
+    {
+      "avg_logprob": -0.556748,
+      "compression_ratio": 1.473684,
+      "end": 15540.16,
+      "no_speech_prob": 0.0,
+      "start": 15539.16,
+      "text": "在喝酒慶祝啊"
+    },
+    {
+      "avg_logprob": -0.556748,
+      "compression_ratio": 1.473684,
+      "end": 15541.16,
+      "no_speech_prob": 0.0,
+      "start": 15540.16,
+      "text": "這幫偉淚"
+    },
+    {
+      "avg_logprob": -0.556748,
+      "compression_ratio": 1.473684,
+      "end": 15542.16,
+      "no_speech_prob": 0.0,
+      "start": 15541.16,
+      "text": "也很高興的"
+    },
+    {
+      "avg_logprob": -0.283489,
+      "compression_ratio": 1.384615,
+      "end": 15543.16,
+      "no_speech_prob": 0.0,
+      "start": 15542.16,
+      "text": "這幫偉淚"
+    },
+    {
+      "avg_logprob": -0.283489,
+      "compression_ratio": 1.384615,
+      "end": 15544.16,
+      "no_speech_prob": 0.0,
+      "start": 15543.16,
+      "text": "那躺床上喝"
+    },
+    {
+      "avg_logprob": -0.283489,
+      "compression_ratio": 1.384615,
+      "end": 15545.16,
+      "no_speech_prob": 0.0,
+      "start": 15544.16,
+      "text": "那躺床上喝吧"
+    },
+    {
+      "avg_logprob": -0.283489,
+      "compression_ratio": 1.384615,
+      "end": 15546.16,
+      "no_speech_prob": 0.0,
+      "start": 15545.16,
+      "text": "那躺床上喝吧"
+    },
+    {
+      "avg_logprob": -0.283489,
+      "compression_ratio": 1.384615,
+      "end": 15549.16,
+      "no_speech_prob": 0.0,
+      "start": 15548.16,
+      "text": "哈哈"
+    },
+    {
+      "avg_logprob": -0.283489,
+      "compression_ratio": 1.384615,
+      "end": 15550.16,
+      "no_speech_prob": 0.0,
+      "start": 15549.16,
+      "text": "去上西瓜"
+    },
+    {
+      "avg_logprob": -0.283489,
+      "compression_ratio": 1.384615,
+      "end": 15551.16,
+      "no_speech_prob": 0.0,
+      "start": 15550.16,
+      "text": "多喝點就沒線了"
+    },
+    {
+      "avg_logprob": -0.283489,
+      "compression_ratio": 1.384615,
+      "end": 15558.16,
+      "no_speech_prob": 0.0,
+      "start": 15555.16,
+      "text": "看見咱們這麼高興的在喝酒慶祝啊"
+    },
+    {
+      "avg_logprob": -0.283489,
+      "compression_ratio": 1.384615,
+      "end": 15559.16,
+      "no_speech_prob": 0.0,
+      "start": 15558.16,
+      "text": "這幫偉淚"
+    },
+    {
+      "avg_logprob": -0.283489,
+      "compression_ratio": 1.384615,
+      "end": 15561.16,
+      "no_speech_prob": 0.0,
+      "start": 15559.16,
+      "text": "劉淡老師他們又有些新的詞法"
+    },
+    {
+      "avg_logprob": -0.283489,
+      "compression_ratio": 1.384615,
+      "end": 15562.16,
+      "no_speech_prob": 0.0,
+      "start": 15561.16,
+      "text": "叫難受子"
+    },
+    {
+      "avg_logprob": -0.283489,
+      "compression_ratio": 1.384615,
+      "end": 15563.16,
+      "no_speech_prob": 0.0,
+      "start": 15562.16,
+      "text": "哈哈"
+    },
+    {
+      "avg_logprob": -0.283489,
+      "compression_ratio": 1.384615,
+      "end": 15564.16,
+      "no_speech_prob": 0.0,
+      "start": 15563.16,
+      "text": "激度子"
+    },
+    {
+      "avg_logprob": -0.283489,
+      "compression_ratio": 1.384615,
+      "end": 15565.16,
+      "no_speech_prob": 0.0,
+      "start": 15564.16,
+      "text": "難受子"
+    },
+    {
+      "avg_logprob": -0.273397,
+      "compression_ratio": 1.397436,
+      "end": 15566.16,
+      "no_speech_prob": 0.0,
+      "start": 15565.16,
+      "text": "唉"
+    },
+    {
+      "avg_logprob": -0.273397,
+      "compression_ratio": 1.397436,
+      "end": 15567.16,
+      "no_speech_prob": 0.0,
+      "start": 15566.16,
+      "text": "唉"
+    },
+    {
+      "avg_logprob": -0.273397,
+      "compression_ratio": 1.397436,
+      "end": 15568.16,
+      "no_speech_prob": 0.0,
+      "start": 15567.16,
+      "text": "唉"
+    },
+    {
+      "avg_logprob": -0.273397,
+      "compression_ratio": 1.397436,
+      "end": 15570.16,
+      "no_speech_prob": 0.0,
+      "start": 15569.16,
+      "text": "唉"
+    },
+    {
+      "avg_logprob": -0.273397,
+      "compression_ratio": 1.397436,
+      "end": 15572.16,
+      "no_speech_prob": 0.0,
+      "start": 15570.16,
+      "text": "不過我真的就一點都想不想過"
+    },
+    {
+      "avg_logprob": -0.273397,
+      "compression_ratio": 1.397436,
+      "end": 15573.16,
+      "no_speech_prob": 0.0,
+      "start": 15572.16,
+      "text": "真的"
+    },
+    {
+      "avg_logprob": -0.273397,
+      "compression_ratio": 1.397436,
+      "end": 15574.16,
+      "no_speech_prob": 0.0,
+      "start": 15573.16,
+      "text": "過去就過去了"
+    },
+    {
+      "avg_logprob": -0.273397,
+      "compression_ratio": 1.397436,
+      "end": 15575.16,
+      "no_speech_prob": 0.0,
+      "start": 15574.16,
+      "text": "我也完全想不想"
+    },
+    {
+      "avg_logprob": -0.273397,
+      "compression_ratio": 1.397436,
+      "end": 15576.16,
+      "no_speech_prob": 0.0,
+      "start": 15575.16,
+      "text": "嗯"
+    },
+    {
+      "avg_logprob": -0.273397,
+      "compression_ratio": 1.397436,
+      "end": 15578.16,
+      "no_speech_prob": 0.0,
+      "start": 15576.16,
+      "text": "有人說已經喝醉了"
+    },
+    {
+      "avg_logprob": -0.273397,
+      "compression_ratio": 1.397436,
+      "end": 15579.16,
+      "no_speech_prob": 0.0,
+      "start": 15578.16,
+      "text": "哈哈"
+    },
+    {
+      "avg_logprob": -0.273397,
+      "compression_ratio": 1.397436,
+      "end": 15580.16,
+      "no_speech_prob": 0.0,
+      "start": 15579.16,
+      "text": "肯定要喝醉了已經"
+    },
+    {
+      "avg_logprob": -0.273397,
+      "compression_ratio": 1.397436,
+      "end": 15583.16,
+      "no_speech_prob": 0.0,
+      "start": 15580.16,
+      "text": "一邊看著直播一邊喝得喝了幾幾個小時"
+    },
+    {
+      "avg_logprob": -0.273397,
+      "compression_ratio": 1.397436,
+      "end": 15584.16,
+      "no_speech_prob": 0.0,
+      "start": 15583.16,
+      "text": "那能不醉"
+    },
+    {
+      "avg_logprob": -0.273397,
+      "compression_ratio": 1.397436,
+      "end": 15585.16,
+      "no_speech_prob": 0.0,
+      "start": 15584.16,
+      "text": "反正想著啊"
+    },
+    {
+      "avg_logprob": -0.273397,
+      "compression_ratio": 1.397436,
+      "end": 15586.16,
+      "no_speech_prob": 0.0,
+      "start": 15585.16,
+      "text": "康大早上那會兒"
+    },
+    {
+      "avg_logprob": -0.273397,
+      "compression_ratio": 1.397436,
+      "end": 15587.16,
+      "no_speech_prob": 0.0,
+      "start": 15586.16,
+      "text": "對馬上就喝了"
+    },
+    {
+      "avg_logprob": -0.273397,
+      "compression_ratio": 1.397436,
+      "end": 15588.16,
+      "no_speech_prob": 0.0,
+      "start": 15587.16,
+      "text": "對"
+    },
+    {
+      "avg_logprob": -0.273397,
+      "compression_ratio": 1.397436,
+      "end": 15589.16,
+      "no_speech_prob": 0.0,
+      "start": 15588.16,
+      "text": "我先喝點"
+    },
+    {
+      "avg_logprob": -0.273397,
+      "compression_ratio": 1.397436,
+      "end": 15590.16,
+      "no_speech_prob": 0.0,
+      "start": 15589.16,
+      "text": "酒醒了"
+    },
+    {
+      "avg_logprob": -0.273397,
+      "compression_ratio": 1.397436,
+      "end": 15592.16,
+      "no_speech_prob": 0.0,
+      "start": 15590.16,
+      "text": "這現在就起來再透了一透"
+    },
+    {
+      "avg_logprob": -0.304651,
+      "compression_ratio": 1.383495,
+      "end": 15596.16,
+      "no_speech_prob": 0.0,
+      "start": 15592.16,
+      "text": "那個啊"
+    },
+    {
+      "avg_logprob": -0.304651,
+      "compression_ratio": 1.383495,
+      "end": 15597.16,
+      "no_speech_prob": 0.0,
+      "start": 15596.16,
+      "text": "我們那個搭檔"
+    },
+    {
+      "avg_logprob": -0.304651,
+      "compression_ratio": 1.383495,
+      "end": 15598.16,
+      "no_speech_prob": 0.0,
+      "start": 15597.16,
+      "text": "SFG就是"
+    },
+    {
+      "avg_logprob": -0.304651,
+      "compression_ratio": 1.383495,
+      "end": 15601.16,
+      "no_speech_prob": 0.0,
+      "start": 15598.16,
+      "text": "他就是提前想著"
+    },
+    {
+      "avg_logprob": -0.304651,
+      "compression_ratio": 1.383495,
+      "end": 15602.16,
+      "no_speech_prob": 0.0,
+      "start": 15601.16,
+      "text": "估計在那個時候"
+    },
+    {
+      "avg_logprob": -0.304651,
+      "compression_ratio": 1.383495,
+      "end": 15603.16,
+      "no_speech_prob": 0.0,
+      "start": 15602.16,
+      "text": "呃"
+    },
+    {
+      "avg_logprob": -0.304651,
+      "compression_ratio": 1.383495,
+      "end": 15605.16,
+      "no_speech_prob": 0.0,
+      "start": 15603.16,
+      "text": "正好上市的那個時候"
+    },
+    {
+      "avg_logprob": -0.304651,
+      "compression_ratio": 1.383495,
+      "end": 15606.16,
+      "no_speech_prob": 0.0,
+      "start": 15605.16,
+      "text": "他喝的正美"
+    },
+    {
+      "avg_logprob": -0.304651,
+      "compression_ratio": 1.383495,
+      "end": 15607.16,
+      "no_speech_prob": 0.0,
+      "start": 15606.16,
+      "text": "因為他之前喝了很多"
+    },
+    {
+      "avg_logprob": -0.304651,
+      "compression_ratio": 1.383495,
+      "end": 15609.16,
+      "no_speech_prob": 0.0,
+      "start": 15607.16,
+      "text": "結果一直等著睡著了"
+    },
+    {
+      "avg_logprob": -0.304651,
+      "compression_ratio": 1.383495,
+      "end": 15611.16,
+      "no_speech_prob": 0.0,
+      "start": 15609.16,
+      "text": "剛起"
+    },
+    {
+      "avg_logprob": -0.304651,
+      "compression_ratio": 1.383495,
+      "end": 15612.16,
+      "no_speech_prob": 0.0,
+      "start": 15611.16,
+      "text": "哈哈"
+    },
+    {
+      "avg_logprob": -0.304651,
+      "compression_ratio": 1.383495,
+      "end": 15613.16,
+      "no_speech_prob": 0.0,
+      "start": 15612.16,
+      "text": "第二波"
+    },
+    {
+      "avg_logprob": -0.304651,
+      "compression_ratio": 1.383495,
+      "end": 15614.16,
+      "no_speech_prob": 0.0,
+      "start": 15613.16,
+      "text": "起了這個波"
+    },
+    {
+      "avg_logprob": -0.304651,
+      "compression_ratio": 1.383495,
+      "end": 15615.16,
+      "no_speech_prob": 0.0,
+      "start": 15614.16,
+      "text": "起了這個波"
+    },
+    {
+      "avg_logprob": -0.304651,
+      "compression_ratio": 1.383495,
+      "end": 15616.16,
+      "no_speech_prob": 0.0,
+      "start": 15615.16,
+      "text": "發生我們還得來的"
+    },
+    {
+      "avg_logprob": -0.304651,
+      "compression_ratio": 1.383495,
+      "end": 15617.16,
+      "no_speech_prob": 0.0,
+      "start": 15616.16,
+      "text": "哈哈"
+    },
+    {
+      "avg_logprob": -0.304651,
+      "compression_ratio": 1.383495,
+      "end": 15618.16,
+      "no_speech_prob": 0.0,
+      "start": 15617.16,
+      "text": "很好又趕上了第二波"
+    },
+    {
+      "avg_logprob": -0.308421,
+      "compression_ratio": 1.601036,
+      "end": 15623.16,
+      "no_speech_prob": 0.0,
+      "start": 15618.16,
+      "text": "是哎呃"
+    },
+    {
+      "avg_logprob": -0.308421,
+      "compression_ratio": 1.601036,
+      "end": 15624.16,
+      "no_speech_prob": 0.0,
+      "start": 15623.16,
+      "text": "呃"
+    },
+    {
+      "avg_logprob": -0.308421,
+      "compression_ratio": 1.601036,
+      "end": 15625.16,
+      "no_speech_prob": 0.0,
+      "start": 15624.16,
+      "text": "呃"
+    },
+    {
+      "avg_logprob": -0.308421,
+      "compression_ratio": 1.601036,
+      "end": 15628.16,
+      "no_speech_prob": 0.0,
+      "start": 15625.16,
+      "text": "他哥是不是隨時都有可能發生啊"
+    },
+    {
+      "avg_logprob": -0.308421,
+      "compression_ratio": 1.601036,
+      "end": 15630.16,
+      "no_speech_prob": 0.0,
+      "start": 15628.16,
+      "text": "已經是倒計時了"
+    },
+    {
+      "avg_logprob": -0.308421,
+      "compression_ratio": 1.601036,
+      "end": 15631.16,
+      "no_speech_prob": 0.0,
+      "start": 15630.16,
+      "text": "我們一定要等"
+    },
+    {
+      "avg_logprob": -0.308421,
+      "compression_ratio": 1.601036,
+      "end": 15632.16,
+      "no_speech_prob": 0.0,
+      "start": 15631.16,
+      "text": "我們一定要等"
+    },
+    {
+      "avg_logprob": -0.308421,
+      "compression_ratio": 1.601036,
+      "end": 15633.16,
+      "no_speech_prob": 0.0,
+      "start": 15632.16,
+      "text": "那個海東哥小葉"
+    },
+    {
+      "avg_logprob": -0.308421,
+      "compression_ratio": 1.601036,
+      "end": 15634.16,
+      "no_speech_prob": 0.0,
+      "start": 15633.16,
+      "text": "嗯"
+    },
+    {
+      "avg_logprob": -0.308421,
+      "compression_ratio": 1.601036,
+      "end": 15635.16,
+      "no_speech_prob": 0.0,
+      "start": 15634.16,
+      "text": "到酒店以後"
+    },
+    {
+      "avg_logprob": -0.308421,
+      "compression_ratio": 1.601036,
+      "end": 15636.16,
+      "no_speech_prob": 0.0,
+      "start": 15635.16,
+      "text": "對"
+    },
+    {
+      "avg_logprob": -0.308421,
+      "compression_ratio": 1.601036,
+      "end": 15637.16,
+      "no_speech_prob": 0.0,
+      "start": 15636.16,
+      "text": "金哥是不是換衣服去了"
+    },
+    {
+      "avg_logprob": -0.308421,
+      "compression_ratio": 1.601036,
+      "end": 15638.16,
+      "no_speech_prob": 0.0,
+      "start": 15637.16,
+      "text": "我覺得他肯定要換衣服"
+    },
+    {
+      "avg_logprob": -0.308421,
+      "compression_ratio": 1.601036,
+      "end": 15639.16,
+      "no_speech_prob": 0.0,
+      "start": 15638.16,
+      "text": "這個"
+    },
+    {
+      "avg_logprob": -0.308421,
+      "compression_ratio": 1.601036,
+      "end": 15640.16,
+      "no_speech_prob": 0.0,
+      "start": 15639.16,
+      "text": "這個時間由不得我們"
+    },
+    {
+      "avg_logprob": -0.308421,
+      "compression_ratio": 1.601036,
+      "end": 15641.16,
+      "no_speech_prob": 0.0,
+      "start": 15640.16,
+      "text": "這個時間由不得我們"
+    },
+    {
+      "avg_logprob": -0.308421,
+      "compression_ratio": 1.601036,
+      "end": 15643.16,
+      "no_speech_prob": 0.0,
+      "start": 15641.16,
+      "text": "這個時間由不得我們決定"
+    },
+    {
+      "avg_logprob": -0.665614,
+      "compression_ratio": 1.655172,
+      "end": 15652.16,
+      "no_speech_prob": 0.0,
+      "start": 15643.16,
+      "text": "隨時都可能"
+    },
+    {
+      "avg_logprob": -0.665614,
+      "compression_ratio": 1.655172,
+      "end": 15653.16,
+      "no_speech_prob": 0.0,
+      "start": 15652.16,
+      "text": "現在正在等著"
+    },
+    {
+      "avg_logprob": -0.665614,
+      "compression_ratio": 1.655172,
+      "end": 15655.16,
+      "no_speech_prob": 0.0,
+      "start": 15653.16,
+      "text": "最後一分鐘"
+    },
+    {
+      "avg_logprob": -0.665614,
+      "compression_ratio": 1.655172,
+      "end": 15656.16,
+      "no_speech_prob": 0.0,
+      "start": 15655.16,
+      "text": "最後幾分鐘"
+    },
+    {
+      "avg_logprob": -0.665614,
+      "compression_ratio": 1.655172,
+      "end": 15658.16,
+      "no_speech_prob": 0.0,
+      "start": 15656.16,
+      "text": "最後幾分鐘"
+    },
+    {
+      "avg_logprob": -0.665614,
+      "compression_ratio": 1.655172,
+      "end": 15660.16,
+      "no_speech_prob": 0.0,
+      "start": 15658.16,
+      "text": "最後幾分鐘"
+    },
+    {
+      "avg_logprob": -0.665614,
+      "compression_ratio": 1.655172,
+      "end": 15661.16,
+      "no_speech_prob": 0.0,
+      "start": 15660.16,
+      "text": "最後幾分鐘"
+    },
+    {
+      "avg_logprob": -0.665614,
+      "compression_ratio": 1.655172,
+      "end": 15662.16,
+      "no_speech_prob": 0.0,
+      "start": 15661.16,
+      "text": "最後幾分鐘"
+    },
+    {
+      "avg_logprob": -0.665614,
+      "compression_ratio": 1.655172,
+      "end": 15664.16,
+      "no_speech_prob": 0.0,
+      "start": 15662.16,
+      "text": "有點小激動"
+    },
+    {
+      "avg_logprob": -0.665614,
+      "compression_ratio": 1.655172,
+      "end": 15667.16,
+      "no_speech_prob": 0.0,
+      "start": 15664.16,
+      "text": "隨便"
+    },
+    {
+      "avg_logprob": -0.780527,
+      "compression_ratio": 1.472826,
+      "end": 15669.16,
+      "no_speech_prob": 0.0,
+      "start": 15667.16,
+      "text": "这样的 最后一分钟"
+    },
+    {
+      "avg_logprob": -0.780527,
+      "compression_ratio": 1.472826,
+      "end": 15671.4,
+      "no_speech_prob": 0.0,
+      "start": 15670.52,
+      "text": "最后一分钟"
+    },
+    {
+      "avg_logprob": -0.780527,
+      "compression_ratio": 1.472826,
+      "end": 15673.8,
+      "no_speech_prob": 0.0,
+      "start": 15672.8,
+      "text": "太厚了"
+    },
+    {
+      "avg_logprob": -0.780527,
+      "compression_ratio": 1.472826,
+      "end": 15674.8,
+      "no_speech_prob": 0.0,
+      "start": 15673.8,
+      "text": "哈哈哈"
+    },
+    {
+      "avg_logprob": -0.780527,
+      "compression_ratio": 1.472826,
+      "end": 15675.76,
+      "no_speech_prob": 0.0,
+      "start": 15674.8,
+      "text": "我俩一句是你"
+    },
+    {
+      "avg_logprob": -0.780527,
+      "compression_ratio": 1.472826,
+      "end": 15676.8,
+      "no_speech_prob": 0.0,
+      "start": 15675.76,
+      "text": "还真嫌一句"
+    },
+    {
+      "avg_logprob": -0.780527,
+      "compression_ratio": 1.472826,
+      "end": 15678.68,
+      "no_speech_prob": 0.0,
+      "start": 15678.12,
+      "text": "我俩是你"
+    },
+    {
+      "avg_logprob": -0.780527,
+      "compression_ratio": 1.472826,
+      "end": 15679.24,
+      "no_speech_prob": 0.0,
+      "start": 15678.68,
+      "text": "没问题"
+    },
+    {
+      "avg_logprob": -0.780527,
+      "compression_ratio": 1.472826,
+      "end": 15679.84,
+      "no_speech_prob": 0.0,
+      "start": 15679.24,
+      "text": "没问题"
+    },
+    {
+      "avg_logprob": -0.780527,
+      "compression_ratio": 1.472826,
+      "end": 15680.4,
+      "no_speech_prob": 0.0,
+      "start": 15679.84,
+      "text": "哈哈"
+    },
+    {
+      "avg_logprob": -0.780527,
+      "compression_ratio": 1.472826,
+      "end": 15683.4,
+      "no_speech_prob": 0.0,
+      "start": 15682.24,
+      "text": "再来一个这个"
+    },
+    {
+      "avg_logprob": -0.780527,
+      "compression_ratio": 1.472826,
+      "end": 15683.92,
+      "no_speech_prob": 0.0,
+      "start": 15683.4,
+      "text": "这个"
+    },
+    {
+      "avg_logprob": -0.780527,
+      "compression_ratio": 1.472826,
+      "end": 15684.92,
+      "no_speech_prob": 0.0,
+      "start": 15683.92,
+      "text": "哈哈哈"
+    },
+    {
+      "avg_logprob": -0.780527,
+      "compression_ratio": 1.472826,
+      "end": 15686.92,
+      "no_speech_prob": 0.0,
+      "start": 15684.92,
+      "text": "哈哈哈"
+    },
+    {
+      "avg_logprob": -0.780527,
+      "compression_ratio": 1.472826,
+      "end": 15687.72,
+      "no_speech_prob": 0.0,
+      "start": 15686.92,
+      "text": "对啊"
+    },
+    {
+      "avg_logprob": -0.780527,
+      "compression_ratio": 1.472826,
+      "end": 15690.0,
+      "no_speech_prob": 0.0,
+      "start": 15688.92,
+      "text": "我念不会硬气功"
+    },
+    {
+      "avg_logprob": -0.780527,
+      "compression_ratio": 1.472826,
+      "end": 15691.12,
+      "no_speech_prob": 0.0,
+      "start": 15690.0,
+      "text": "要灰硬气功吧"
+    },
+    {
+      "avg_logprob": -0.780527,
+      "compression_ratio": 1.472826,
+      "end": 15692.72,
+      "no_speech_prob": 0.0,
+      "start": 15691.52,
+      "text": "把这香槟倒完了"
+    },
+    {
+      "avg_logprob": -0.780527,
+      "compression_ratio": 1.472826,
+      "end": 15693.72,
+      "no_speech_prob": 0.0,
+      "start": 15692.72,
+      "text": "一瓶到赵宝上"
+    },
+    {
+      "avg_logprob": -0.780527,
+      "compression_ratio": 1.472826,
+      "end": 15694.4,
+      "no_speech_prob": 0.0,
+      "start": 15693.72,
+      "text": "削一下"
+    },
+    {
+      "avg_logprob": -0.780527,
+      "compression_ratio": 1.472826,
+      "end": 15695.2,
+      "no_speech_prob": 0.0,
+      "start": 15694.4,
+      "text": "哈哈哈"
+    },
+    {
+      "avg_logprob": -0.371838,
+      "compression_ratio": 1.321782,
+      "end": 15702.2,
+      "no_speech_prob": 0.0,
+      "start": 15695.2,
+      "text": "你可千万别冲动啊"
+    },
+    {
+      "avg_logprob": -0.371838,
+      "compression_ratio": 1.321782,
+      "end": 15704.52,
+      "no_speech_prob": 0.0,
+      "start": 15703.48,
+      "text": "千万别冲动"
+    },
+    {
+      "avg_logprob": -0.371838,
+      "compression_ratio": 1.321782,
+      "end": 15705.6,
+      "no_speech_prob": 0.0,
+      "start": 15704.52,
+      "text": "哈哈哈"
+    },
+    {
+      "avg_logprob": -0.371838,
+      "compression_ratio": 1.321782,
+      "end": 15706.68,
+      "no_speech_prob": 0.0,
+      "start": 15705.6,
+      "text": "大哥练了"
+    },
+    {
+      "avg_logprob": -0.371838,
+      "compression_ratio": 1.321782,
+      "end": 15710.88,
+      "no_speech_prob": 0.0,
+      "start": 15708.52,
+      "text": "有战友在留言区说这个"
+    },
+    {
+      "avg_logprob": -0.371838,
+      "compression_ratio": 1.321782,
+      "end": 15712.04,
+      "no_speech_prob": 0.0,
+      "start": 15711.4,
+      "text": "绿啊"
+    },
+    {
+      "avg_logprob": -0.371838,
+      "compression_ratio": 1.321782,
+      "end": 15713.72,
+      "no_speech_prob": 0.0,
+      "start": 15712.04,
+      "text": "你看今天七哥穿的也是"
+    },
+    {
+      "avg_logprob": -0.371838,
+      "compression_ratio": 1.321782,
+      "end": 15714.92,
+      "no_speech_prob": 0.0,
+      "start": 15713.72,
+      "text": "因为开盘嘛"
+    },
+    {
+      "avg_logprob": -0.371838,
+      "compression_ratio": 1.321782,
+      "end": 15715.96,
+      "no_speech_prob": 0.0,
+      "start": 15714.92,
+      "text": "逢绿即涨"
+    },
+    {
+      "avg_logprob": -0.371838,
+      "compression_ratio": 1.321782,
+      "end": 15716.8,
+      "no_speech_prob": 0.0,
+      "start": 15715.96,
+      "text": "对吧这两个"
+    },
+    {
+      "avg_logprob": -0.371838,
+      "compression_ratio": 1.321782,
+      "end": 15718.68,
+      "no_speech_prob": 0.0,
+      "start": 15716.8,
+      "text": "一绿冲天就涨的意思"
+    },
+    {
+      "avg_logprob": -0.371838,
+      "compression_ratio": 1.321782,
+      "end": 15719.92,
+      "no_speech_prob": 0.0,
+      "start": 15718.68,
+      "text": "开盘必涨的意思啊"
+    },
+    {
+      "avg_logprob": -0.371838,
+      "compression_ratio": 1.321782,
+      "end": 15720.84,
+      "no_speech_prob": 0.0,
+      "start": 15719.92,
+      "text": "必须有点绿"
+    },
+    {
+      "avg_logprob": -0.371838,
+      "compression_ratio": 1.321782,
+      "end": 15721.76,
+      "no_speech_prob": 0.0,
+      "start": 15720.84,
+      "text": "因为我"
+    },
+    {
+      "avg_logprob": -0.371838,
+      "compression_ratio": 1.321782,
+      "end": 15722.48,
+      "no_speech_prob": 0.0,
+      "start": 15721.76,
+      "text": "哎"
+    },
+    {
+      "avg_logprob": -0.371838,
+      "compression_ratio": 1.321782,
+      "end": 15723.64,
+      "no_speech_prob": 0.0,
+      "start": 15722.48,
+      "text": "我是跟七哥刚才"
+    },
+    {
+      "avg_logprob": -0.441166,
+      "compression_ratio": 1.394118,
+      "end": 15725.76,
+      "no_speech_prob": 0.0,
+      "start": 15723.64,
+      "text": "还有一几个战友看出来了"
+    },
+    {
+      "avg_logprob": -0.441166,
+      "compression_ratio": 1.394118,
+      "end": 15726.76,
+      "no_speech_prob": 0.0,
+      "start": 15725.76,
+      "text": "董航"
+    },
+    {
+      "avg_logprob": -0.441166,
+      "compression_ratio": 1.394118,
+      "end": 15727.52,
+      "no_speech_prob": 0.0,
+      "start": 15726.76,
+      "text": "董航啊"
+    },
+    {
+      "avg_logprob": -0.441166,
+      "compression_ratio": 1.394118,
+      "end": 15728.2,
+      "no_speech_prob": 0.0,
+      "start": 15727.52,
+      "text": "兄弟姐妹们"
+    },
+    {
+      "avg_logprob": -0.441166,
+      "compression_ratio": 1.394118,
+      "end": 15729.36,
+      "no_speech_prob": 0.0,
+      "start": 15728.2,
+      "text": "高手都在战友里"
+    },
+    {
+      "avg_logprob": -0.441166,
+      "compression_ratio": 1.394118,
+      "end": 15730.64,
+      "no_speech_prob": 0.0,
+      "start": 15729.36,
+      "text": "哈哈哈"
+    },
+    {
+      "avg_logprob": -0.441166,
+      "compression_ratio": 1.394118,
+      "end": 15736.76,
+      "no_speech_prob": 0.0,
+      "start": 15730.64,
+      "text": "但是在中国是反的"
+    },
+    {
+      "avg_logprob": -0.441166,
+      "compression_ratio": 1.394118,
+      "end": 15738.32,
+      "no_speech_prob": 0.0,
+      "start": 15736.76,
+      "text": "所以"
+    },
+    {
+      "avg_logprob": -0.441166,
+      "compression_ratio": 1.394118,
+      "end": 15739.12,
+      "no_speech_prob": 0.0,
+      "start": 15738.32,
+      "text": "所以"
+    },
+    {
+      "avg_logprob": -0.441166,
+      "compression_ratio": 1.394118,
+      "end": 15740.12,
+      "no_speech_prob": 0.0,
+      "start": 15739.12,
+      "text": "共产党那帮忙不带"
+    },
+    {
+      "avg_logprob": -0.441166,
+      "compression_ratio": 1.394118,
+      "end": 15741.04,
+      "no_speech_prob": 0.0,
+      "start": 15740.12,
+      "text": "带领红领带"
+    },
+    {
+      "avg_logprob": -0.441166,
+      "compression_ratio": 1.394118,
+      "end": 15741.96,
+      "no_speech_prob": 0.0,
+      "start": 15741.04,
+      "text": "共产党那帮忙不带"
+    },
+    {
+      "avg_logprob": -0.441166,
+      "compression_ratio": 1.394118,
+      "end": 15742.92,
+      "no_speech_prob": 0.0,
+      "start": 15741.96,
+      "text": "他都他对"
+    },
+    {
+      "avg_logprob": -0.441166,
+      "compression_ratio": 1.394118,
+      "end": 15744.24,
+      "no_speech_prob": 0.0,
+      "start": 15742.92,
+      "text": "他都给你反着来"
+    },
+    {
+      "avg_logprob": -0.441166,
+      "compression_ratio": 1.394118,
+      "end": 15744.6,
+      "no_speech_prob": 0.0,
+      "start": 15744.24,
+      "text": "对"
+    },
+    {
+      "avg_logprob": -0.441166,
+      "compression_ratio": 1.394118,
+      "end": 15745.92,
+      "no_speech_prob": 0.0,
+      "start": 15744.6,
+      "text": "哈哈哈"
+    },
+    {
+      "avg_logprob": -0.541469,
+      "compression_ratio": 1.4375,
+      "end": 15749.4,
+      "no_speech_prob": 0.0,
+      "start": 15745.92,
+      "text": "你共产党他是红色的嘛"
+    },
+    {
+      "avg_logprob": -0.541469,
+      "compression_ratio": 1.4375,
+      "end": 15750.68,
+      "no_speech_prob": 0.0,
+      "start": 15749.4,
+      "text": "你看那个党旗"
+    },
+    {
+      "avg_logprob": -0.541469,
+      "compression_ratio": 1.4375,
+      "end": 15751.12,
+      "no_speech_prob": 0.0,
+      "start": 15750.68,
+      "text": "对不对"
+    },
+    {
+      "avg_logprob": -0.541469,
+      "compression_ratio": 1.4375,
+      "end": 15751.56,
+      "no_speech_prob": 0.0,
+      "start": 15751.12,
+      "text": "国旗"
+    },
+    {
+      "avg_logprob": -0.541469,
+      "compression_ratio": 1.4375,
+      "end": 15752.8,
+      "no_speech_prob": 0.0,
+      "start": 15751.56,
+      "text": "他喜欢红血嘛"
+    },
+    {
+      "avg_logprob": -0.541469,
+      "compression_ratio": 1.4375,
+      "end": 15753.72,
+      "no_speech_prob": 0.0,
+      "start": 15752.8,
+      "text": "对不对"
+    },
+    {
+      "avg_logprob": -0.541469,
+      "compression_ratio": 1.4375,
+      "end": 15754.56,
+      "no_speech_prob": 0.0,
+      "start": 15753.72,
+      "text": "他反过来着"
+    },
+    {
+      "avg_logprob": -0.541469,
+      "compression_ratio": 1.4375,
+      "end": 15755.72,
+      "no_speech_prob": 0.0,
+      "start": 15754.56,
+      "text": "给你上斜劲"
+    },
+    {
+      "avg_logprob": -0.541469,
+      "compression_ratio": 1.4375,
+      "end": 15759.52,
+      "no_speech_prob": 0.0,
+      "start": 15759.0,
+      "text": "啊"
+    },
+    {
+      "avg_logprob": -0.541469,
+      "compression_ratio": 1.4375,
+      "end": 15760.44,
+      "no_speech_prob": 0.0,
+      "start": 15759.52,
+      "text": "回来了"
+    },
+    {
+      "avg_logprob": -0.541469,
+      "compression_ratio": 1.4375,
+      "end": 15761.04,
+      "no_speech_prob": 0.0,
+      "start": 15760.44,
+      "text": "啊"
+    },
+    {
+      "avg_logprob": -0.541469,
+      "compression_ratio": 1.4375,
+      "end": 15761.64,
+      "no_speech_prob": 0.0,
+      "start": 15761.04,
+      "text": "啊"
+    },
+    {
+      "avg_logprob": -0.541469,
+      "compression_ratio": 1.4375,
+      "end": 15762.44,
+      "no_speech_prob": 0.0,
+      "start": 15761.64,
+      "text": "超英姐"
+    },
+    {
+      "avg_logprob": -0.541469,
+      "compression_ratio": 1.4375,
+      "end": 15763.44,
+      "no_speech_prob": 0.0,
+      "start": 15762.44,
+      "text": "你也来了"
+    },
+    {
+      "avg_logprob": -0.541469,
+      "compression_ratio": 1.4375,
+      "end": 15764.28,
+      "no_speech_prob": 0.0,
+      "start": 15763.44,
+      "text": "及时等着"
+    },
+    {
+      "avg_logprob": -0.541469,
+      "compression_ratio": 1.4375,
+      "end": 15765.96,
+      "no_speech_prob": 0.0,
+      "start": 15764.28,
+      "text": "等着你们的啊"
+    },
+    {
+      "avg_logprob": -0.541469,
+      "compression_ratio": 1.4375,
+      "end": 15767.64,
+      "no_speech_prob": 0.0,
+      "start": 15765.96,
+      "text": "真是时候"
+    },
+    {
+      "avg_logprob": -0.541469,
+      "compression_ratio": 1.4375,
+      "end": 15768.24,
+      "no_speech_prob": 0.0,
+      "start": 15767.64,
+      "text": "真是时候"
+    },
+    {
+      "avg_logprob": -0.541469,
+      "compression_ratio": 1.4375,
+      "end": 15768.8,
+      "no_speech_prob": 0.0,
+      "start": 15768.24,
+      "text": "超英姐"
+    },
+    {
+      "avg_logprob": -0.541469,
+      "compression_ratio": 1.4375,
+      "end": 15769.56,
+      "no_speech_prob": 0.0,
+      "start": 15768.8,
+      "text": "你接着啊"
+    },
+    {
+      "avg_logprob": -0.541469,
+      "compression_ratio": 1.4375,
+      "end": 15770.52,
+      "no_speech_prob": 0.0,
+      "start": 15769.56,
+      "text": "给你扔过去"
+    },
+    {
+      "avg_logprob": -0.541469,
+      "compression_ratio": 1.4375,
+      "end": 15772.72,
+      "no_speech_prob": 0.0,
+      "start": 15770.52,
+      "text": "哈哈哈"
+    },
+    {
+      "avg_logprob": -0.541469,
+      "compression_ratio": 1.4375,
+      "end": 15773.72,
+      "no_speech_prob": 0.0,
+      "start": 15772.72,
+      "text": "接住了"
+    },
+    {
+      "avg_logprob": -0.541469,
+      "compression_ratio": 1.4375,
+      "end": 15774.4,
+      "no_speech_prob": 0.0,
+      "start": 15773.72,
+      "text": "哈哈哈"
+    },
+    {
+      "avg_logprob": -0.757944,
+      "compression_ratio": 1.643617,
+      "end": 15775.48,
+      "no_speech_prob": 0.0,
+      "start": 15774.4,
+      "text": "哈哈哈"
+    },
+    {
+      "avg_logprob": -0.757944,
+      "compression_ratio": 1.643617,
+      "end": 15776.04,
+      "no_speech_prob": 0.0,
+      "start": 15775.48,
+      "text": "哈哈哈"
+    },
+    {
+      "avg_logprob": -0.757944,
+      "compression_ratio": 1.643617,
+      "end": 15777.04,
+      "no_speech_prob": 0.0,
+      "start": 15776.04,
+      "text": "这个太后"
+    },
+    {
+      "avg_logprob": -0.757944,
+      "compression_ratio": 1.643617,
+      "end": 15777.76,
+      "no_speech_prob": 0.0,
+      "start": 15777.04,
+      "text": "啊"
+    },
+    {
+      "avg_logprob": -0.757944,
+      "compression_ratio": 1.643617,
+      "end": 15778.76,
+      "no_speech_prob": 0.0,
+      "start": 15777.76,
+      "text": "这个太后"
+    },
+    {
+      "avg_logprob": -0.757944,
+      "compression_ratio": 1.643617,
+      "end": 15781.24,
+      "no_speech_prob": 0.0,
+      "start": 15778.76,
+      "text": "这个比你更更近感啊"
+    },
+    {
+      "avg_logprob": -0.757944,
+      "compression_ratio": 1.643617,
+      "end": 15782.44,
+      "no_speech_prob": 0.0,
+      "start": 15781.24,
+      "text": "我们不能跟"
+    },
+    {
+      "avg_logprob": -0.757944,
+      "compression_ratio": 1.643617,
+      "end": 15782.92,
+      "no_speech_prob": 0.0,
+      "start": 15782.44,
+      "text": "明白明白"
+    },
+    {
+      "avg_logprob": -0.757944,
+      "compression_ratio": 1.643617,
+      "end": 15783.44,
+      "no_speech_prob": 0.0,
+      "start": 15782.92,
+      "text": "这个"
+    },
+    {
+      "avg_logprob": -0.757944,
+      "compression_ratio": 1.643617,
+      "end": 15784.0,
+      "no_speech_prob": 0.0,
+      "start": 15783.44,
+      "text": "这个"
+    },
+    {
+      "avg_logprob": -0.757944,
+      "compression_ratio": 1.643617,
+      "end": 15785.24,
+      "no_speech_prob": 0.0,
+      "start": 15784.0,
+      "text": "那边这个"
+    },
+    {
+      "avg_logprob": -0.757944,
+      "compression_ratio": 1.643617,
+      "end": 15785.64,
+      "no_speech_prob": 0.0,
+      "start": 15785.24,
+      "text": "这个"
+    },
+    {
+      "avg_logprob": -0.757944,
+      "compression_ratio": 1.643617,
+      "end": 15786.68,
+      "no_speech_prob": 0.0,
+      "start": 15785.64,
+      "text": "击货准备的这么"
+    },
+    {
+      "avg_logprob": -0.757944,
+      "compression_ratio": 1.643617,
+      "end": 15787.64,
+      "no_speech_prob": 0.0,
+      "start": 15786.68,
+      "text": "贵重"
+    },
+    {
+      "avg_logprob": -0.757944,
+      "compression_ratio": 1.643617,
+      "end": 15788.36,
+      "no_speech_prob": 0.0,
+      "start": 15787.64,
+      "text": "我"
+    },
+    {
+      "avg_logprob": -0.757944,
+      "compression_ratio": 1.643617,
+      "end": 15788.92,
+      "no_speech_prob": 0.0,
+      "start": 15788.36,
+      "text": "这么"
+    },
+    {
+      "avg_logprob": -0.757944,
+      "compression_ratio": 1.643617,
+      "end": 15789.56,
+      "no_speech_prob": 0.0,
+      "start": 15788.92,
+      "text": "这个"
+    },
+    {
+      "avg_logprob": -0.757944,
+      "compression_ratio": 1.643617,
+      "end": 15790.92,
+      "no_speech_prob": 0.0,
+      "start": 15789.56,
+      "text": "我们就是以"
+    },
+    {
+      "avg_logprob": -0.757944,
+      "compression_ratio": 1.643617,
+      "end": 15791.64,
+      "no_speech_prob": 0.0,
+      "start": 15790.92,
+      "text": "以"
+    },
+    {
+      "avg_logprob": -0.757944,
+      "compression_ratio": 1.643617,
+      "end": 15792.68,
+      "no_speech_prob": 0.0,
+      "start": 15791.64,
+      "text": "个头取胜"
+    },
+    {
+      "avg_logprob": -0.757944,
+      "compression_ratio": 1.643617,
+      "end": 15794.36,
+      "no_speech_prob": 0.0,
+      "start": 15792.68,
+      "text": "以个头取胜"
+    },
+    {
+      "avg_logprob": -0.757944,
+      "compression_ratio": 1.643617,
+      "end": 15795.48,
+      "no_speech_prob": 0.0,
+      "start": 15794.36,
+      "text": "哈哈哈"
+    },
+    {
+      "avg_logprob": -0.757944,
+      "compression_ratio": 1.643617,
+      "end": 15796.2,
+      "no_speech_prob": 0.0,
+      "start": 15795.48,
+      "text": "必须的啊"
+    },
+    {
+      "avg_logprob": -0.757944,
+      "compression_ratio": 1.643617,
+      "end": 15797.88,
+      "no_speech_prob": 0.0,
+      "start": 15796.2,
+      "text": "订队员酒量好多喝点"
+    },
+    {
+      "avg_logprob": -0.757944,
+      "compression_ratio": 1.643617,
+      "end": 15798.48,
+      "no_speech_prob": 0.0,
+      "start": 15797.88,
+      "text": "对"
+    },
+    {
+      "avg_logprob": -0.757944,
+      "compression_ratio": 1.643617,
+      "end": 15801.08,
+      "no_speech_prob": 0.0,
+      "start": 15799.28,
+      "text": "真喝不了酒"
+    },
+    {
+      "avg_logprob": -0.757944,
+      "compression_ratio": 1.643617,
+      "end": 15802.08,
+      "no_speech_prob": 0.0,
+      "start": 15801.08,
+      "text": "酒量"
+    },
+    {
+      "avg_logprob": -0.757944,
+      "compression_ratio": 1.643617,
+      "end": 15803.96,
+      "no_speech_prob": 0.0,
+      "start": 15803.28,
+      "text": "哈哈哈"
+    },
+    {
+      "avg_logprob": -0.617377,
+      "compression_ratio": 1.320652,
+      "end": 15804.64,
+      "no_speech_prob": 0.0,
+      "start": 15803.96,
+      "text": "哈哈哈"
+    },
+    {
+      "avg_logprob": -0.617377,
+      "compression_ratio": 1.320652,
+      "end": 15805.32,
+      "no_speech_prob": 0.0,
+      "start": 15804.64,
+      "text": "要赶紧"
+    },
+    {
+      "avg_logprob": -0.617377,
+      "compression_ratio": 1.320652,
+      "end": 15805.92,
+      "no_speech_prob": 0.0,
+      "start": 15805.32,
+      "text": "改善你"
+    },
+    {
+      "avg_logprob": -0.617377,
+      "compression_ratio": 1.320652,
+      "end": 15806.64,
+      "no_speech_prob": 0.0,
+      "start": 15805.92,
+      "text": "还有一批"
+    },
+    {
+      "avg_logprob": -0.617377,
+      "compression_ratio": 1.320652,
+      "end": 15809.48,
+      "no_speech_prob": 0.0,
+      "start": 15809.12,
+      "text": "啊"
+    },
+    {
+      "avg_logprob": -0.617377,
+      "compression_ratio": 1.320652,
+      "end": 15811.16,
+      "no_speech_prob": 0.0,
+      "start": 15809.48,
+      "text": "东哥和盈姐一人一瓶"
+    },
+    {
+      "avg_logprob": -0.617377,
+      "compression_ratio": 1.320652,
+      "end": 15812.12,
+      "no_speech_prob": 0.0,
+      "start": 15811.16,
+      "text": "东哥那个大的"
+    },
+    {
+      "avg_logprob": -0.617377,
+      "compression_ratio": 1.320652,
+      "end": 15813.04,
+      "no_speech_prob": 0.0,
+      "start": 15812.12,
+      "text": "盈姐是小的"
+    },
+    {
+      "avg_logprob": -0.617377,
+      "compression_ratio": 1.320652,
+      "end": 15813.96,
+      "no_speech_prob": 0.0,
+      "start": 15813.04,
+      "text": "干上点"
+    },
+    {
+      "avg_logprob": -0.617377,
+      "compression_ratio": 1.320652,
+      "end": 15814.36,
+      "no_speech_prob": 0.0,
+      "start": 15813.96,
+      "text": "好了"
+    },
+    {
+      "avg_logprob": -0.617377,
+      "compression_ratio": 1.320652,
+      "end": 15815.36,
+      "no_speech_prob": 0.0,
+      "start": 15814.36,
+      "text": "哈哈"
+    },
+    {
+      "avg_logprob": -0.617377,
+      "compression_ratio": 1.320652,
+      "end": 15815.92,
+      "no_speech_prob": 0.0,
+      "start": 15815.36,
+      "text": "哎"
+    },
+    {
+      "avg_logprob": -0.617377,
+      "compression_ratio": 1.320652,
+      "end": 15817.88,
+      "no_speech_prob": 0.0,
+      "start": 15816.56,
+      "text": "这不刚才在"
+    },
+    {
+      "avg_logprob": -0.617377,
+      "compression_ratio": 1.320652,
+      "end": 15818.92,
+      "no_speech_prob": 0.0,
+      "start": 15817.88,
+      "text": "在餐厅吗"
+    },
+    {
+      "avg_logprob": -0.617377,
+      "compression_ratio": 1.320652,
+      "end": 15820.04,
+      "no_speech_prob": 0.0,
+      "start": 15818.92,
+      "text": "在餐厅"
+    },
+    {
+      "avg_logprob": -0.617377,
+      "compression_ratio": 1.320652,
+      "end": 15820.6,
+      "no_speech_prob": 0.0,
+      "start": 15820.04,
+      "text": "然后"
+    },
+    {
+      "avg_logprob": -0.617377,
+      "compression_ratio": 1.320652,
+      "end": 15821.6,
+      "no_speech_prob": 0.0,
+      "start": 15820.6,
+      "text": "其实等一等"
+    },
+    {
+      "avg_logprob": -0.617377,
+      "compression_ratio": 1.320652,
+      "end": 15823.44,
+      "no_speech_prob": 0.0,
+      "start": 15821.6,
+      "text": "把餐厅都等下班了"
+    },
+    {
+      "avg_logprob": -0.617377,
+      "compression_ratio": 1.320652,
+      "end": 15823.8,
+      "no_speech_prob": 0.0,
+      "start": 15823.44,
+      "text": "我来"
+    },
+    {
+      "avg_logprob": -0.617377,
+      "compression_ratio": 1.320652,
+      "end": 15826.04,
+      "no_speech_prob": 0.0,
+      "start": 15824.52,
+      "text": "然后赶紧跑回来"
+    },
+    {
+      "avg_logprob": -0.617377,
+      "compression_ratio": 1.320652,
+      "end": 15827.44,
+      "no_speech_prob": 0.0,
+      "start": 15826.68,
+      "text": "我靠"
+    },
+    {
+      "avg_logprob": -0.617377,
+      "compression_ratio": 1.320652,
+      "end": 15828.8,
+      "no_speech_prob": 0.0,
+      "start": 15828.0,
+      "text": "你"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.433962,
+      "end": 15829.48,
+      "no_speech_prob": 0.0,
+      "start": 15828.8,
+      "text": "哈哈"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.433962,
+      "end": 15829.8,
+      "no_speech_prob": 0.0,
+      "start": 15829.48,
+      "text": "东哥"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.433962,
+      "end": 15830.48,
+      "no_speech_prob": 0.0,
+      "start": 15829.8,
+      "text": "哈哈"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.433962,
+      "end": 15831.48,
+      "no_speech_prob": 0.0,
+      "start": 15830.48,
+      "text": "哎呀"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.433962,
+      "end": 15831.96,
+      "no_speech_prob": 0.0,
+      "start": 15831.48,
+      "text": "这的话"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.433962,
+      "end": 15833.56,
+      "no_speech_prob": 0.0,
+      "start": 15831.96,
+      "text": "我就那么我们一桌"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.433962,
+      "end": 15835.92,
+      "no_speech_prob": 0.0,
+      "start": 15833.56,
+      "text": "我一直从十二点等到两点"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.433962,
+      "end": 15836.96,
+      "no_speech_prob": 0.0,
+      "start": 15835.92,
+      "text": "那的话"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.433962,
+      "end": 15837.2,
+      "no_speech_prob": 0.0,
+      "start": 15836.96,
+      "text": "你们"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.433962,
+      "end": 15837.64,
+      "no_speech_prob": 0.0,
+      "start": 15837.2,
+      "text": "哈哈"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.433962,
+      "end": 15837.72,
+      "no_speech_prob": 0.0,
+      "start": 15837.64,
+      "text": "哈哈"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.433962,
+      "end": 15838.48,
+      "no_speech_prob": 0.0,
+      "start": 15837.72,
+      "text": "那个那个"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.433962,
+      "end": 15840.12,
+      "no_speech_prob": 0.0,
+      "start": 15838.48,
+      "text": "我们也不走啊"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.433962,
+      "end": 15840.68,
+      "no_speech_prob": 0.0,
+      "start": 15840.12,
+      "text": "我说也"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.433962,
+      "end": 15842.6,
+      "no_speech_prob": 0.0,
+      "start": 15840.68,
+      "text": "那个那个怎么了"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.433962,
+      "end": 15843.92,
+      "no_speech_prob": 0.0,
+      "start": 15842.6,
+      "text": "弄一直播"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.433962,
+      "end": 15846.48,
+      "no_speech_prob": 0.0,
+      "start": 15843.92,
+      "text": "就是弄一屏幕在这一直讲啊"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.433962,
+      "end": 15849.16,
+      "no_speech_prob": 0.0,
+      "start": 15846.48,
+      "text": "这个小伙子都快睡了"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.433962,
+      "end": 15850.32,
+      "no_speech_prob": 0.0,
+      "start": 15849.16,
+      "text": "那餐厅啊"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.433962,
+      "end": 15850.76,
+      "no_speech_prob": 0.0,
+      "start": 15850.32,
+      "text": "也是"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.433962,
+      "end": 15853.28,
+      "no_speech_prob": 0.0,
+      "start": 15850.76,
+      "text": "市中心一个很好的餐厅啊"
+    },
+    {
+      "avg_logprob": -0.482864,
+      "compression_ratio": 1.361446,
+      "end": 15854.68,
+      "no_speech_prob": 0.0,
+      "start": 15853.28,
+      "text": "这个这个"
+    },
+    {
+      "avg_logprob": -0.482864,
+      "compression_ratio": 1.361446,
+      "end": 15855.6,
+      "no_speech_prob": 0.0,
+      "start": 15854.68,
+      "text": "这个"
+    },
+    {
+      "avg_logprob": -0.482864,
+      "compression_ratio": 1.361446,
+      "end": 15857.0,
+      "no_speech_prob": 0.0,
+      "start": 15855.6,
+      "text": "你想这西班牙"
+    },
+    {
+      "avg_logprob": -0.482864,
+      "compression_ratio": 1.361446,
+      "end": 15859.48,
+      "no_speech_prob": 0.0,
+      "start": 15857.0,
+      "text": "这都是已经在欧洲都很好了"
+    },
+    {
+      "avg_logprob": -0.482864,
+      "compression_ratio": 1.361446,
+      "end": 15860.84,
+      "no_speech_prob": 0.0,
+      "start": 15859.48,
+      "text": "你家大卫在英国"
+    },
+    {
+      "avg_logprob": -0.482864,
+      "compression_ratio": 1.361446,
+      "end": 15861.68,
+      "no_speech_prob": 0.0,
+      "start": 15860.84,
+      "text": "在有开到"
+    },
+    {
+      "avg_logprob": -0.482864,
+      "compression_ratio": 1.361446,
+      "end": 15862.36,
+      "no_speech_prob": 0.0,
+      "start": 15861.68,
+      "text": "那个"
+    },
+    {
+      "avg_logprob": -0.482864,
+      "compression_ratio": 1.361446,
+      "end": 15862.96,
+      "no_speech_prob": 0.0,
+      "start": 15862.36,
+      "text": "那个"
+    },
+    {
+      "avg_logprob": -0.482864,
+      "compression_ratio": 1.361446,
+      "end": 15864.16,
+      "no_speech_prob": 0.0,
+      "start": 15862.96,
+      "text": "两点"
+    },
+    {
+      "avg_logprob": -0.482864,
+      "compression_ratio": 1.361446,
+      "end": 15864.84,
+      "no_speech_prob": 0.0,
+      "start": 15864.16,
+      "text": "开到屁"
+    },
+    {
+      "avg_logprob": -0.482864,
+      "compression_ratio": 1.361446,
+      "end": 15866.2,
+      "no_speech_prob": 0.0,
+      "start": 15864.84,
+      "text": "早就有人打烊了"
+    },
+    {
+      "avg_logprob": -0.482864,
+      "compression_ratio": 1.361446,
+      "end": 15866.92,
+      "no_speech_prob": 0.0,
+      "start": 15866.2,
+      "text": "哈哈"
+    },
+    {
+      "avg_logprob": -0.482864,
+      "compression_ratio": 1.361446,
+      "end": 15867.72,
+      "no_speech_prob": 0.0,
+      "start": 15866.92,
+      "text": "哈哈"
+    },
+    {
+      "avg_logprob": -0.482864,
+      "compression_ratio": 1.361446,
+      "end": 15868.6,
+      "no_speech_prob": 0.0,
+      "start": 15867.72,
+      "text": "哎"
+    },
+    {
+      "avg_logprob": -0.482864,
+      "compression_ratio": 1.361446,
+      "end": 15869.24,
+      "no_speech_prob": 0.0,
+      "start": 15868.6,
+      "text": "东哥"
+    },
+    {
+      "avg_logprob": -0.482864,
+      "compression_ratio": 1.361446,
+      "end": 15870.4,
+      "no_speech_prob": 0.0,
+      "start": 15869.24,
+      "text": "我说那服务员"
+    },
+    {
+      "avg_logprob": -0.482864,
+      "compression_ratio": 1.361446,
+      "end": 15872.92,
+      "no_speech_prob": 0.0,
+      "start": 15870.4,
+      "text": "是不是等着咱拿洗币给他小费来"
+    },
+    {
+      "avg_logprob": -0.482864,
+      "compression_ratio": 1.361446,
+      "end": 15874.04,
+      "no_speech_prob": 0.0,
+      "start": 15872.92,
+      "text": "所以一直在这等着"
+    },
+    {
+      "avg_logprob": -0.482864,
+      "compression_ratio": 1.361446,
+      "end": 15875.24,
+      "no_speech_prob": 0.0,
+      "start": 15874.04,
+      "text": "也跟着开盘呢"
+    },
+    {
+      "avg_logprob": -0.482864,
+      "compression_ratio": 1.361446,
+      "end": 15875.64,
+      "no_speech_prob": 0.0,
+      "start": 15875.24,
+      "text": "是吧"
+    },
+    {
+      "avg_logprob": -0.482864,
+      "compression_ratio": 1.361446,
+      "end": 15877.4,
+      "no_speech_prob": 0.0,
+      "start": 15875.64,
+      "text": "哎"
+    },
+    {
+      "avg_logprob": -0.482864,
+      "compression_ratio": 1.361446,
+      "end": 15878.04,
+      "no_speech_prob": 0.0,
+      "start": 15877.4,
+      "text": "我"
+    },
+    {
+      "avg_logprob": -0.482864,
+      "compression_ratio": 1.361446,
+      "end": 15879.4,
+      "no_speech_prob": 0.0,
+      "start": 15878.04,
+      "text": "我该开盘了"
+    },
+    {
+      "avg_logprob": -0.482864,
+      "compression_ratio": 1.361446,
+      "end": 15880.0,
+      "no_speech_prob": 0.0,
+      "start": 15879.4,
+      "text": "人家"
+    },
+    {
+      "avg_logprob": -0.482864,
+      "compression_ratio": 1.361446,
+      "end": 15882.96,
+      "no_speech_prob": 0.0,
+      "start": 15880.0,
+      "text": "我今天不用吃方便面了"
+    },
+    {
+      "avg_logprob": -0.379402,
+      "compression_ratio": 1.495327,
+      "end": 15885.92,
+      "no_speech_prob": 0.0,
+      "start": 15882.96,
+      "text": "我吃了一大餐在一块那个"
+    },
+    {
+      "avg_logprob": -0.379402,
+      "compression_ratio": 1.495327,
+      "end": 15886.84,
+      "no_speech_prob": 0.0,
+      "start": 15885.92,
+      "text": "完了最后"
+    },
+    {
+      "avg_logprob": -0.379402,
+      "compression_ratio": 1.495327,
+      "end": 15889.4,
+      "no_speech_prob": 0.0,
+      "start": 15886.84,
+      "text": "我一看实在不好意思"
+    },
+    {
+      "avg_logprob": -0.379402,
+      "compression_ratio": 1.495327,
+      "end": 15892.44,
+      "no_speech_prob": 0.0,
+      "start": 15889.4,
+      "text": "这个给了他50欧元"
+    },
+    {
+      "avg_logprob": -0.379402,
+      "compression_ratio": 1.495327,
+      "end": 15895.16,
+      "no_speech_prob": 0.0,
+      "start": 15892.44,
+      "text": "老板长多不多50欧元"
+    },
+    {
+      "avg_logprob": -0.379402,
+      "compression_ratio": 1.495327,
+      "end": 15897.12,
+      "no_speech_prob": 0.0,
+      "start": 15895.16,
+      "text": "这么多50欧元很好了"
+    },
+    {
+      "avg_logprob": -0.379402,
+      "compression_ratio": 1.495327,
+      "end": 15897.84,
+      "no_speech_prob": 0.0,
+      "start": 15897.12,
+      "text": "很多了"
+    },
+    {
+      "avg_logprob": -0.379402,
+      "compression_ratio": 1.495327,
+      "end": 15898.56,
+      "no_speech_prob": 0.0,
+      "start": 15897.84,
+      "text": "你很厉害了"
+    },
+    {
+      "avg_logprob": -0.379402,
+      "compression_ratio": 1.495327,
+      "end": 15900.64,
+      "no_speech_prob": 0.0,
+      "start": 15898.56,
+      "text": "很牛了"
+    },
+    {
+      "avg_logprob": -0.379402,
+      "compression_ratio": 1.495327,
+      "end": 15901.0,
+      "no_speech_prob": 0.0,
+      "start": 15900.64,
+      "text": "对啊"
+    },
+    {
+      "avg_logprob": -0.379402,
+      "compression_ratio": 1.495327,
+      "end": 15901.32,
+      "no_speech_prob": 0.0,
+      "start": 15901.0,
+      "text": "这"
+    },
+    {
+      "avg_logprob": -0.379402,
+      "compression_ratio": 1.495327,
+      "end": 15903.72,
+      "no_speech_prob": 0.0,
+      "start": 15901.32,
+      "text": "我感觉人家也说容易"
+    },
+    {
+      "avg_logprob": -0.379402,
+      "compression_ratio": 1.495327,
+      "end": 15904.56,
+      "no_speech_prob": 0.0,
+      "start": 15903.72,
+      "text": "没跟你说"
+    },
+    {
+      "avg_logprob": -0.379402,
+      "compression_ratio": 1.495327,
+      "end": 15905.52,
+      "no_speech_prob": 0.0,
+      "start": 15904.56,
+      "text": "没跟你说"
+    },
+    {
+      "avg_logprob": -0.379402,
+      "compression_ratio": 1.495327,
+      "end": 15906.16,
+      "no_speech_prob": 0.0,
+      "start": 15905.52,
+      "text": "没跟你说"
+    },
+    {
+      "avg_logprob": -0.379402,
+      "compression_ratio": 1.495327,
+      "end": 15907.24,
+      "no_speech_prob": 0.0,
+      "start": 15906.16,
+      "text": "没记过我同意"
+    },
+    {
+      "avg_logprob": -0.379402,
+      "compression_ratio": 1.495327,
+      "end": 15909.16,
+      "no_speech_prob": 0.0,
+      "start": 15907.24,
+      "text": "就给了50欧元"
+    },
+    {
+      "avg_logprob": -0.379402,
+      "compression_ratio": 1.495327,
+      "end": 15910.04,
+      "no_speech_prob": 0.0,
+      "start": 15909.16,
+      "text": "哈哈"
+    },
+    {
+      "avg_logprob": -0.379402,
+      "compression_ratio": 1.495327,
+      "end": 15910.84,
+      "no_speech_prob": 0.0,
+      "start": 15910.04,
+      "text": "哈哈"
+    },
+    {
+      "avg_logprob": -0.379402,
+      "compression_ratio": 1.495327,
+      "end": 15911.88,
+      "no_speech_prob": 0.0,
+      "start": 15910.84,
+      "text": "洗臂上"
+    },
+    {
+      "avg_logprob": -0.379402,
+      "compression_ratio": 1.495327,
+      "end": 15912.92,
+      "no_speech_prob": 0.0,
+      "start": 15911.88,
+      "text": "洗臂上市"
+    },
+    {
+      "avg_logprob": -0.271456,
+      "compression_ratio": 1.376963,
+      "end": 15916.8,
+      "no_speech_prob": 0.0,
+      "start": 15912.92,
+      "text": "哎哎哎哎我我都不好意思说我的"
+    },
+    {
+      "avg_logprob": -0.271456,
+      "compression_ratio": 1.376963,
+      "end": 15919.76,
+      "no_speech_prob": 0.0,
+      "start": 15916.8,
+      "text": "早晨给人家也是吃一早餐"
+    },
+    {
+      "avg_logprob": -0.271456,
+      "compression_ratio": 1.376963,
+      "end": 15920.52,
+      "no_speech_prob": 0.0,
+      "start": 15919.76,
+      "text": "对吧"
+    },
+    {
+      "avg_logprob": -0.271456,
+      "compression_ratio": 1.376963,
+      "end": 15923.6,
+      "no_speech_prob": 0.0,
+      "start": 15920.52,
+      "text": "人家在那也是都下班了"
+    },
+    {
+      "avg_logprob": -0.271456,
+      "compression_ratio": 1.376963,
+      "end": 15926.28,
+      "no_speech_prob": 0.0,
+      "start": 15923.6,
+      "text": "我们一直在那吃完了早餐吧"
+    },
+    {
+      "avg_logprob": -0.271456,
+      "compression_ratio": 1.376963,
+      "end": 15927.72,
+      "no_speech_prob": 0.0,
+      "start": 15926.28,
+      "text": "人家16块钱"
+    },
+    {
+      "avg_logprob": -0.271456,
+      "compression_ratio": 1.376963,
+      "end": 15929.24,
+      "no_speech_prob": 0.0,
+      "start": 15927.72,
+      "text": "我就给了20"
+    },
+    {
+      "avg_logprob": -0.271456,
+      "compression_ratio": 1.376963,
+      "end": 15931.44,
+      "no_speech_prob": 0.0,
+      "start": 15929.24,
+      "text": "我就没要那个零钱"
+    },
+    {
+      "avg_logprob": -0.271456,
+      "compression_ratio": 1.376963,
+      "end": 15933.16,
+      "no_speech_prob": 0.0,
+      "start": 15931.44,
+      "text": "我小叶就说"
+    },
+    {
+      "avg_logprob": -0.271456,
+      "compression_ratio": 1.376963,
+      "end": 15935.16,
+      "no_speech_prob": 0.0,
+      "start": 15933.16,
+      "text": "我靠你这4块钱都给了"
+    },
+    {
+      "avg_logprob": -0.271456,
+      "compression_ratio": 1.376963,
+      "end": 15936.48,
+      "no_speech_prob": 0.0,
+      "start": 15935.16,
+      "text": "你不拿回来两块"
+    },
+    {
+      "avg_logprob": -0.518141,
+      "compression_ratio": 1.178771,
+      "end": 15937.48,
+      "no_speech_prob": 0.0,
+      "start": 15936.48,
+      "text": "那类似这"
+    },
+    {
+      "avg_logprob": -0.518141,
+      "compression_ratio": 1.178771,
+      "end": 15938.28,
+      "no_speech_prob": 0.0,
+      "start": 15937.48,
+      "text": "我老板长"
+    },
+    {
+      "avg_logprob": -0.518141,
+      "compression_ratio": 1.178771,
+      "end": 15939.6,
+      "no_speech_prob": 0.0,
+      "start": 15938.28,
+      "text": "这日子没法过"
+    },
+    {
+      "avg_logprob": -0.518141,
+      "compression_ratio": 1.178771,
+      "end": 15940.36,
+      "no_speech_prob": 0.0,
+      "start": 15939.6,
+      "text": "有时候"
+    },
+    {
+      "avg_logprob": -0.518141,
+      "compression_ratio": 1.178771,
+      "end": 15941.08,
+      "no_speech_prob": 0.0,
+      "start": 15940.36,
+      "text": "哇炸"
+    },
+    {
+      "avg_logprob": -0.518141,
+      "compression_ratio": 1.178771,
+      "end": 15942.12,
+      "no_speech_prob": 0.0,
+      "start": 15941.08,
+      "text": "哈哈哈哈"
+    },
+    {
+      "avg_logprob": -0.518141,
+      "compression_ratio": 1.178771,
+      "end": 15942.36,
+      "no_speech_prob": 0.0,
+      "start": 15942.12,
+      "text": "这个"
+    },
+    {
+      "avg_logprob": -0.518141,
+      "compression_ratio": 1.178771,
+      "end": 15944.0,
+      "no_speech_prob": 0.0,
+      "start": 15942.36,
+      "text": "不是真的啊"
+    },
+    {
+      "avg_logprob": -0.518141,
+      "compression_ratio": 1.178771,
+      "end": 15944.88,
+      "no_speech_prob": 0.0,
+      "start": 15944.0,
+      "text": "有时候买"
+    },
+    {
+      "avg_logprob": -0.518141,
+      "compression_ratio": 1.178771,
+      "end": 15946.44,
+      "no_speech_prob": 0.0,
+      "start": 15944.88,
+      "text": "买包方便面"
+    },
+    {
+      "avg_logprob": -0.518141,
+      "compression_ratio": 1.178771,
+      "end": 15946.8,
+      "no_speech_prob": 0.0,
+      "start": 15946.44,
+      "text": "贵"
+    },
+    {
+      "avg_logprob": -0.518141,
+      "compression_ratio": 1.178771,
+      "end": 15947.16,
+      "no_speech_prob": 0.0,
+      "start": 15946.8,
+      "text": "你妈"
+    },
+    {
+      "avg_logprob": -0.518141,
+      "compression_ratio": 1.178771,
+      "end": 15948.04,
+      "no_speech_prob": 0.0,
+      "start": 15947.16,
+      "text": "6毛"
+    },
+    {
+      "avg_logprob": -0.518141,
+      "compression_ratio": 1.178771,
+      "end": 15949.2,
+      "no_speech_prob": 0.0,
+      "start": 15948.04,
+      "text": "5毛1"
+    },
+    {
+      "avg_logprob": -0.518141,
+      "compression_ratio": 1.178771,
+      "end": 15950.16,
+      "no_speech_prob": 0.0,
+      "start": 15949.2,
+      "text": "都都不行"
+    },
+    {
+      "avg_logprob": -0.518141,
+      "compression_ratio": 1.178771,
+      "end": 15950.76,
+      "no_speech_prob": 0.0,
+      "start": 15950.16,
+      "text": "没错"
+    },
+    {
+      "avg_logprob": -0.518141,
+      "compression_ratio": 1.178771,
+      "end": 15951.28,
+      "no_speech_prob": 0.0,
+      "start": 15950.76,
+      "text": "哎"
+    },
+    {
+      "avg_logprob": -0.518141,
+      "compression_ratio": 1.178771,
+      "end": 15953.08,
+      "no_speech_prob": 0.0,
+      "start": 15951.28,
+      "text": "你还得加油站呗"
+    },
+    {
+      "avg_logprob": -0.518141,
+      "compression_ratio": 1.178771,
+      "end": 15954.48,
+      "no_speech_prob": 0.0,
+      "start": 15953.08,
+      "text": "你到超市去啊"
+    },
+    {
+      "avg_logprob": -0.518141,
+      "compression_ratio": 1.178771,
+      "end": 15954.8,
+      "no_speech_prob": 0.0,
+      "start": 15954.48,
+      "text": "对吗"
+    },
+    {
+      "avg_logprob": -0.518141,
+      "compression_ratio": 1.178771,
+      "end": 15956.04,
+      "no_speech_prob": 0.0,
+      "start": 15954.8,
+      "text": "那才6毛"
+    },
+    {
+      "avg_logprob": -0.449624,
+      "compression_ratio": 1.531818,
+      "end": 15956.72,
+      "no_speech_prob": 0.0,
+      "start": 15956.04,
+      "text": "方便面"
+    },
+    {
+      "avg_logprob": -0.449624,
+      "compression_ratio": 1.531818,
+      "end": 15957.76,
+      "no_speech_prob": 0.0,
+      "start": 15956.72,
+      "text": "你这一块一"
+    },
+    {
+      "avg_logprob": -0.449624,
+      "compression_ratio": 1.531818,
+      "end": 15958.4,
+      "no_speech_prob": 0.0,
+      "start": 15957.76,
+      "text": "哇炸"
+    },
+    {
+      "avg_logprob": -0.449624,
+      "compression_ratio": 1.531818,
+      "end": 15960.0,
+      "no_speech_prob": 0.0,
+      "start": 15958.4,
+      "text": "你讲这个你在这"
+    },
+    {
+      "avg_logprob": -0.449624,
+      "compression_ratio": 1.531818,
+      "end": 15960.6,
+      "no_speech_prob": 0.0,
+      "start": 15960.0,
+      "text": "对着"
+    },
+    {
+      "avg_logprob": -0.449624,
+      "compression_ratio": 1.531818,
+      "end": 15961.04,
+      "no_speech_prob": 0.0,
+      "start": 15960.6,
+      "text": "对着呢"
+    },
+    {
+      "avg_logprob": -0.449624,
+      "compression_ratio": 1.531818,
+      "end": 15963.8,
+      "no_speech_prob": 0.0,
+      "start": 15963.28,
+      "text": "对吧"
+    },
+    {
+      "avg_logprob": -0.449624,
+      "compression_ratio": 1.531818,
+      "end": 15967.08,
+      "no_speech_prob": 0.0,
+      "start": 15963.8,
+      "text": "你想这4块钱得买多少方便面呢"
+    },
+    {
+      "avg_logprob": -0.449624,
+      "compression_ratio": 1.531818,
+      "end": 15968.16,
+      "no_speech_prob": 0.0,
+      "start": 15967.08,
+      "text": "你想一想"
+    },
+    {
+      "avg_logprob": -0.449624,
+      "compression_ratio": 1.531818,
+      "end": 15969.44,
+      "no_speech_prob": 0.0,
+      "start": 15968.16,
+      "text": "哈哈哈哈"
+    },
+    {
+      "avg_logprob": -0.449624,
+      "compression_ratio": 1.531818,
+      "end": 15970.0,
+      "no_speech_prob": 0.0,
+      "start": 15969.44,
+      "text": "你看看"
+    },
+    {
+      "avg_logprob": -0.449624,
+      "compression_ratio": 1.531818,
+      "end": 15970.72,
+      "no_speech_prob": 0.0,
+      "start": 15970.0,
+      "text": "你看看"
+    },
+    {
+      "avg_logprob": -0.449624,
+      "compression_ratio": 1.531818,
+      "end": 15971.44,
+      "no_speech_prob": 0.0,
+      "start": 15970.72,
+      "text": "你看看"
+    },
+    {
+      "avg_logprob": -0.449624,
+      "compression_ratio": 1.531818,
+      "end": 15973.4,
+      "no_speech_prob": 0.0,
+      "start": 15971.44,
+      "text": "你看看老板长就替我做主了"
+    },
+    {
+      "avg_logprob": -0.449624,
+      "compression_ratio": 1.531818,
+      "end": 15973.96,
+      "no_speech_prob": 0.0,
+      "start": 15973.4,
+      "text": "对吧"
+    },
+    {
+      "avg_logprob": -0.449624,
+      "compression_ratio": 1.531818,
+      "end": 15975.0,
+      "no_speech_prob": 0.0,
+      "start": 15973.96,
+      "text": "嗯"
+    },
+    {
+      "avg_logprob": -0.449624,
+      "compression_ratio": 1.531818,
+      "end": 15975.96,
+      "no_speech_prob": 0.0,
+      "start": 15975.0,
+      "text": "不是"
+    },
+    {
+      "avg_logprob": -0.449624,
+      "compression_ratio": 1.531818,
+      "end": 15976.96,
+      "no_speech_prob": 0.0,
+      "start": 15975.96,
+      "text": "这有时候"
+    },
+    {
+      "avg_logprob": -0.449624,
+      "compression_ratio": 1.531818,
+      "end": 15978.32,
+      "no_speech_prob": 0.0,
+      "start": 15976.96,
+      "text": "哎哎"
+    },
+    {
+      "avg_logprob": -0.449624,
+      "compression_ratio": 1.531818,
+      "end": 15979.64,
+      "no_speech_prob": 0.0,
+      "start": 15978.32,
+      "text": "我一个喜必没有"
+    },
+    {
+      "avg_logprob": -0.449624,
+      "compression_ratio": 1.531818,
+      "end": 15980.6,
+      "no_speech_prob": 0.0,
+      "start": 15979.64,
+      "text": "就跟七哥说的"
+    },
+    {
+      "avg_logprob": -0.449624,
+      "compression_ratio": 1.531818,
+      "end": 15981.6,
+      "no_speech_prob": 0.0,
+      "start": 15980.6,
+      "text": "我才爱"
+    },
+    {
+      "avg_logprob": -0.449624,
+      "compression_ratio": 1.531818,
+      "end": 15982.68,
+      "no_speech_prob": 0.0,
+      "start": 15981.6,
+      "text": "我到现在为止"
+    },
+    {
+      "avg_logprob": -0.449624,
+      "compression_ratio": 1.531818,
+      "end": 15983.16,
+      "no_speech_prob": 0.0,
+      "start": 15982.68,
+      "text": "老板长"
+    },
+    {
+      "avg_logprob": -0.449624,
+      "compression_ratio": 1.531818,
+      "end": 15984.0,
+      "no_speech_prob": 0.0,
+      "start": 15983.16,
+      "text": "我真的爱"
+    },
+    {
+      "avg_logprob": -0.449624,
+      "compression_ratio": 1.531818,
+      "end": 15985.08,
+      "no_speech_prob": 0.0,
+      "start": 15984.0,
+      "text": "我我"
+    },
+    {
+      "avg_logprob": -0.449624,
+      "compression_ratio": 1.531818,
+      "end": 15985.88,
+      "no_speech_prob": 0.0,
+      "start": 15985.08,
+      "text": "我"
+    },
+    {
+      "avg_logprob": -0.325422,
+      "compression_ratio": 1.434783,
+      "end": 15986.76,
+      "no_speech_prob": 0.0,
+      "start": 15985.88,
+      "text": "我弄啊"
+    },
+    {
+      "avg_logprob": -0.325422,
+      "compression_ratio": 1.434783,
+      "end": 15987.72,
+      "no_speech_prob": 0.0,
+      "start": 15986.76,
+      "text": "所有的"
+    },
+    {
+      "avg_logprob": -0.325422,
+      "compression_ratio": 1.434783,
+      "end": 15989.08,
+      "no_speech_prob": 0.0,
+      "start": 15987.72,
+      "text": "了房子"
+    },
+    {
+      "avg_logprob": -0.325422,
+      "compression_ratio": 1.434783,
+      "end": 15990.44,
+      "no_speech_prob": 0.0,
+      "start": 15989.08,
+      "text": "什么这样的那样"
+    },
+    {
+      "avg_logprob": -0.325422,
+      "compression_ratio": 1.434783,
+      "end": 15991.84,
+      "no_speech_prob": 0.0,
+      "start": 15990.44,
+      "text": "从前面"
+    },
+    {
+      "avg_logprob": -0.325422,
+      "compression_ratio": 1.434783,
+      "end": 15993.44,
+      "no_speech_prob": 0.0,
+      "start": 15991.84,
+      "text": "从我十几岁"
+    },
+    {
+      "avg_logprob": -0.325422,
+      "compression_ratio": 1.434783,
+      "end": 15994.92,
+      "no_speech_prob": 0.0,
+      "start": 15993.44,
+      "text": "挣钱到现在"
+    },
+    {
+      "avg_logprob": -0.325422,
+      "compression_ratio": 1.434783,
+      "end": 15996.08,
+      "no_speech_prob": 0.0,
+      "start": 15994.92,
+      "text": "给父母亲啊"
+    },
+    {
+      "avg_logprob": -0.325422,
+      "compression_ratio": 1.434783,
+      "end": 15997.88,
+      "no_speech_prob": 0.0,
+      "start": 15996.08,
+      "text": "就是到现在为止"
+    },
+    {
+      "avg_logprob": -0.325422,
+      "compression_ratio": 1.434783,
+      "end": 15998.8,
+      "no_speech_prob": 0.0,
+      "start": 15997.88,
+      "text": "一个没有"
+    },
+    {
+      "avg_logprob": -0.325422,
+      "compression_ratio": 1.434783,
+      "end": 15999.4,
+      "no_speech_prob": 0.0,
+      "start": 15998.8,
+      "text": "哇靠"
+    },
+    {
+      "avg_logprob": -0.325422,
+      "compression_ratio": 1.434783,
+      "end": 16000.16,
+      "no_speech_prob": 0.0,
+      "start": 15999.4,
+      "text": "一个"
+    },
+    {
+      "avg_logprob": -0.325422,
+      "compression_ratio": 1.434783,
+      "end": 16001.2,
+      "no_speech_prob": 0.0,
+      "start": 16000.16,
+      "text": "一个房子"
+    },
+    {
+      "avg_logprob": -0.325422,
+      "compression_ratio": 1.434783,
+      "end": 16002.48,
+      "no_speech_prob": 0.0,
+      "start": 16001.2,
+      "text": "一个车"
+    },
+    {
+      "avg_logprob": -0.325422,
+      "compression_ratio": 1.434783,
+      "end": 16003.6,
+      "no_speech_prob": 0.0,
+      "start": 16002.48,
+      "text": "最后连洗币"
+    },
+    {
+      "avg_logprob": -0.325422,
+      "compression_ratio": 1.434783,
+      "end": 16004.36,
+      "no_speech_prob": 0.0,
+      "start": 16003.6,
+      "text": "一个没有"
+    },
+    {
+      "avg_logprob": -0.325422,
+      "compression_ratio": 1.434783,
+      "end": 16005.08,
+      "no_speech_prob": 0.0,
+      "start": 16004.36,
+      "text": "哇靠"
+    },
+    {
+      "avg_logprob": -0.325422,
+      "compression_ratio": 1.434783,
+      "end": 16005.76,
+      "no_speech_prob": 0.0,
+      "start": 16005.08,
+      "text": "他告诉我"
+    },
+    {
+      "avg_logprob": -0.325422,
+      "compression_ratio": 1.434783,
+      "end": 16007.2,
+      "no_speech_prob": 0.0,
+      "start": 16005.76,
+      "text": "你这账号也会不了"
+    },
+    {
+      "avg_logprob": -0.325422,
+      "compression_ratio": 1.434783,
+      "end": 16007.92,
+      "no_speech_prob": 0.0,
+      "start": 16007.2,
+      "text": "你也没有"
+    },
+    {
+      "avg_logprob": -0.325422,
+      "compression_ratio": 1.434783,
+      "end": 16008.44,
+      "no_speech_prob": 0.0,
+      "start": 16007.92,
+      "text": "你也没"
+    },
+    {
+      "avg_logprob": -0.325422,
+      "compression_ratio": 1.434783,
+      "end": 16009.04,
+      "no_speech_prob": 0.0,
+      "start": 16008.44,
+      "text": "哦"
+    },
+    {
+      "avg_logprob": -0.325422,
+      "compression_ratio": 1.434783,
+      "end": 16010.24,
+      "no_speech_prob": 0.0,
+      "start": 16009.04,
+      "text": "在我这挺好"
+    },
+    {
+      "avg_logprob": -0.325422,
+      "compression_ratio": 1.434783,
+      "end": 16011.12,
+      "no_speech_prob": 0.0,
+      "start": 16010.24,
+      "text": "这个也"
+    },
+    {
+      "avg_logprob": -0.325422,
+      "compression_ratio": 1.434783,
+      "end": 16012.72,
+      "no_speech_prob": 0.0,
+      "start": 16011.64,
+      "text": "也不用带池"
+    },
+    {
+      "avg_logprob": -0.325422,
+      "compression_ratio": 1.434783,
+      "end": 16013.76,
+      "no_speech_prob": 0.0,
+      "start": 16012.72,
+      "text": "也没办带池"
+    },
+    {
+      "avg_logprob": -0.325422,
+      "compression_ratio": 1.434783,
+      "end": 16014.72,
+      "no_speech_prob": 0.0,
+      "start": 16013.76,
+      "text": "带池啥"
+    },
+    {
+      "avg_logprob": -0.325422,
+      "compression_ratio": 1.434783,
+      "end": 16015.32,
+      "no_speech_prob": 0.0,
+      "start": 16014.72,
+      "text": "是吧"
+    },
+    {
+      "avg_logprob": -0.671942,
+      "compression_ratio": 1.934579,
+      "end": 16015.92,
+      "no_speech_prob": 0.0,
+      "start": 16015.32,
+      "text": "这也没玩儿"
+    },
+    {
+      "avg_logprob": -0.671942,
+      "compression_ratio": 1.934579,
+      "end": 16016.44,
+      "no_speech_prob": 0.0,
+      "start": 16015.92,
+      "text": "写呀"
+    },
+    {
+      "avg_logprob": -0.671942,
+      "compression_ratio": 1.934579,
+      "end": 16017.12,
+      "no_speech_prob": 0.0,
+      "start": 16016.44,
+      "text": "没有啊"
+    },
+    {
+      "avg_logprob": -0.671942,
+      "compression_ratio": 1.934579,
+      "end": 16019.2,
+      "no_speech_prob": 0.0,
+      "start": 16017.12,
+      "text": "还"
+    },
+    {
+      "avg_logprob": -0.671942,
+      "compression_ratio": 1.934579,
+      "end": 16019.68,
+      "no_speech_prob": 0.0,
+      "start": 16019.2,
+      "text": "还"
+    },
+    {
+      "avg_logprob": -0.671942,
+      "compression_ratio": 1.934579,
+      "end": 16021.0,
+      "no_speech_prob": 0.0,
+      "start": 16019.68,
+      "text": "难道你们"
+    },
+    {
+      "avg_logprob": -0.671942,
+      "compression_ratio": 1.934579,
+      "end": 16022.76,
+      "no_speech_prob": 0.0,
+      "start": 16021.0,
+      "text": "大家不都是这样的吗"
+    },
+    {
+      "avg_logprob": -0.671942,
+      "compression_ratio": 1.934579,
+      "end": 16024.48,
+      "no_speech_prob": 0.0,
+      "start": 16022.76,
+      "text": "你比草根有吗"
+    },
+    {
+      "avg_logprob": -0.671942,
+      "compression_ratio": 1.934579,
+      "end": 16025.44,
+      "no_speech_prob": 0.0,
+      "start": 16024.48,
+      "text": "你比草根有吗"
+    },
+    {
+      "avg_logprob": -0.671942,
+      "compression_ratio": 1.934579,
+      "end": 16026.16,
+      "no_speech_prob": 0.0,
+      "start": 16025.44,
+      "text": "你比草根有吗"
+    },
+    {
+      "avg_logprob": -0.671942,
+      "compression_ratio": 1.934579,
+      "end": 16026.72,
+      "no_speech_prob": 0.0,
+      "start": 16026.16,
+      "text": "你比草根有吗"
+    },
+    {
+      "avg_logprob": -0.671942,
+      "compression_ratio": 1.934579,
+      "end": 16027.32,
+      "no_speech_prob": 0.0,
+      "start": 16026.72,
+      "text": "你比草根有吗"
+    },
+    {
+      "avg_logprob": -0.671942,
+      "compression_ratio": 1.934579,
+      "end": 16028.08,
+      "no_speech_prob": 0.0,
+      "start": 16027.32,
+      "text": "你比草根有吗"
+    },
+    {
+      "avg_logprob": -0.671942,
+      "compression_ratio": 1.934579,
+      "end": 16029.2,
+      "no_speech_prob": 0.0,
+      "start": 16028.08,
+      "text": "我有"
+    },
+    {
+      "avg_logprob": -0.429784,
+      "compression_ratio": 1.360825,
+      "end": 16029.92,
+      "no_speech_prob": 0.0,
+      "start": 16029.2,
+      "text": "从道中人"
+    },
+    {
+      "avg_logprob": -0.429784,
+      "compression_ratio": 1.360825,
+      "end": 16030.52,
+      "no_speech_prob": 0.0,
+      "start": 16029.92,
+      "text": "从道中人"
+    },
+    {
+      "avg_logprob": -0.429784,
+      "compression_ratio": 1.360825,
+      "end": 16031.84,
+      "no_speech_prob": 0.0,
+      "start": 16030.52,
+      "text": "怪不得"
+    },
+    {
+      "avg_logprob": -0.429784,
+      "compression_ratio": 1.360825,
+      "end": 16034.76,
+      "no_speech_prob": 0.0,
+      "start": 16031.84,
+      "text": "盈姐一直号称东哥是掌柜的呢"
+    },
+    {
+      "avg_logprob": -0.429784,
+      "compression_ratio": 1.360825,
+      "end": 16036.36,
+      "no_speech_prob": 0.0,
+      "start": 16034.76,
+      "text": "因为盈姐是东姐"
+    },
+    {
+      "avg_logprob": -0.429784,
+      "compression_ratio": 1.360825,
+      "end": 16036.92,
+      "no_speech_prob": 0.0,
+      "start": 16036.36,
+      "text": "对呀"
+    },
+    {
+      "avg_logprob": -0.429784,
+      "compression_ratio": 1.360825,
+      "end": 16038.04,
+      "no_speech_prob": 0.0,
+      "start": 16036.92,
+      "text": "掌柜的给东姐咱们"
+    },
+    {
+      "avg_logprob": -0.429784,
+      "compression_ratio": 1.360825,
+      "end": 16041.0,
+      "no_speech_prob": 0.0,
+      "start": 16038.04,
+      "text": "你们都懂"
+    },
+    {
+      "avg_logprob": -0.429784,
+      "compression_ratio": 1.360825,
+      "end": 16042.32,
+      "no_speech_prob": 0.0,
+      "start": 16041.0,
+      "text": "把你架上"
+    },
+    {
+      "avg_logprob": -0.429784,
+      "compression_ratio": 1.360825,
+      "end": 16043.16,
+      "no_speech_prob": 0.0,
+      "start": 16042.32,
+      "text": "你干干了"
+    },
+    {
+      "avg_logprob": -0.429784,
+      "compression_ratio": 1.360825,
+      "end": 16044.16,
+      "no_speech_prob": 0.0,
+      "start": 16043.16,
+      "text": "最后"
+    },
+    {
+      "avg_logprob": -0.429784,
+      "compression_ratio": 1.360825,
+      "end": 16046.04,
+      "no_speech_prob": 0.0,
+      "start": 16044.16,
+      "text": "你妈啥你也捞不着"
+    },
+    {
+      "avg_logprob": -0.429784,
+      "compression_ratio": 1.360825,
+      "end": 16047.6,
+      "no_speech_prob": 0.0,
+      "start": 16046.04,
+      "text": "这我们都明白"
+    },
+    {
+      "avg_logprob": -0.429784,
+      "compression_ratio": 1.360825,
+      "end": 16048.28,
+      "no_speech_prob": 0.0,
+      "start": 16047.6,
+      "text": "对吧"
+    },
+    {
+      "avg_logprob": -0.429784,
+      "compression_ratio": 1.360825,
+      "end": 16049.96,
+      "no_speech_prob": 0.0,
+      "start": 16048.28,
+      "text": "咱就别讲这些"
+    },
+    {
+      "avg_logprob": -0.429784,
+      "compression_ratio": 1.360825,
+      "end": 16051.2,
+      "no_speech_prob": 0.0,
+      "start": 16049.96,
+      "text": "没啥意思"
+    },
+    {
+      "avg_logprob": -0.429784,
+      "compression_ratio": 1.360825,
+      "end": 16052.52,
+      "no_speech_prob": 0.0,
+      "start": 16051.2,
+      "text": "没什么意思"
+    },
+    {
+      "avg_logprob": -0.429784,
+      "compression_ratio": 1.360825,
+      "end": 16052.92,
+      "no_speech_prob": 0.0,
+      "start": 16052.52,
+      "text": "对吧"
+    },
+    {
+      "avg_logprob": -0.272201,
+      "compression_ratio": 1.331707,
+      "end": 16054.4,
+      "no_speech_prob": 0.0,
+      "start": 16052.92,
+      "text": "但是"
+    },
+    {
+      "avg_logprob": -0.272201,
+      "compression_ratio": 1.331707,
+      "end": 16055.64,
+      "no_speech_prob": 0.0,
+      "start": 16054.4,
+      "text": "不要紧"
+    },
+    {
+      "avg_logprob": -0.272201,
+      "compression_ratio": 1.331707,
+      "end": 16057.54,
+      "no_speech_prob": 0.0,
+      "start": 16055.64,
+      "text": "刚才七哥就说了"
+    },
+    {
+      "avg_logprob": -0.272201,
+      "compression_ratio": 1.331707,
+      "end": 16059.28,
+      "no_speech_prob": 0.0,
+      "start": 16057.54,
+      "text": "人走到哪一步"
+    },
+    {
+      "avg_logprob": -0.272201,
+      "compression_ratio": 1.331707,
+      "end": 16060.58,
+      "no_speech_prob": 0.0,
+      "start": 16059.28,
+      "text": "一定最后"
+    },
+    {
+      "avg_logprob": -0.272201,
+      "compression_ratio": 1.331707,
+      "end": 16062.58,
+      "no_speech_prob": 0.0,
+      "start": 16060.58,
+      "text": "你所有的行为的"
+    },
+    {
+      "avg_logprob": -0.272201,
+      "compression_ratio": 1.331707,
+      "end": 16063.6,
+      "no_speech_prob": 0.0,
+      "start": 16062.58,
+      "text": "最后的总结"
+    },
+    {
+      "avg_logprob": -0.272201,
+      "compression_ratio": 1.331707,
+      "end": 16064.64,
+      "no_speech_prob": 0.0,
+      "start": 16063.6,
+      "text": "是吧"
+    },
+    {
+      "avg_logprob": -0.272201,
+      "compression_ratio": 1.331707,
+      "end": 16066.68,
+      "no_speech_prob": 0.0,
+      "start": 16064.64,
+      "text": "你想一想"
+    },
+    {
+      "avg_logprob": -0.272201,
+      "compression_ratio": 1.331707,
+      "end": 16068.12,
+      "no_speech_prob": 0.0,
+      "start": 16066.68,
+      "text": "像我这种情形"
+    },
+    {
+      "avg_logprob": -0.272201,
+      "compression_ratio": 1.331707,
+      "end": 16070.36,
+      "no_speech_prob": 0.0,
+      "start": 16068.12,
+      "text": "到了今天"
+    },
+    {
+      "avg_logprob": -0.272201,
+      "compression_ratio": 1.331707,
+      "end": 16071.2,
+      "no_speech_prob": 0.0,
+      "start": 16070.36,
+      "text": "你妈的"
+    },
+    {
+      "avg_logprob": -0.272201,
+      "compression_ratio": 1.331707,
+      "end": 16071.98,
+      "no_speech_prob": 0.0,
+      "start": 16071.2,
+      "text": "但凡"
+    },
+    {
+      "avg_logprob": -0.272201,
+      "compression_ratio": 1.331707,
+      "end": 16072.88,
+      "no_speech_prob": 0.0,
+      "start": 16071.98,
+      "text": "有一点"
+    },
+    {
+      "avg_logprob": -0.272201,
+      "compression_ratio": 1.331707,
+      "end": 16073.98,
+      "no_speech_prob": 0.0,
+      "start": 16072.88,
+      "text": "你做的操蛋"
+    },
+    {
+      "avg_logprob": -0.272201,
+      "compression_ratio": 1.331707,
+      "end": 16075.74,
+      "no_speech_prob": 0.0,
+      "start": 16073.98,
+      "text": "所有的人"
+    },
+    {
+      "avg_logprob": -0.272201,
+      "compression_ratio": 1.331707,
+      "end": 16076.66,
+      "no_speech_prob": 0.0,
+      "start": 16075.74,
+      "text": "对吧"
+    },
+    {
+      "avg_logprob": -0.272201,
+      "compression_ratio": 1.331707,
+      "end": 16078.2,
+      "no_speech_prob": 0.0,
+      "start": 16076.66,
+      "text": "你的兄弟姐妹"
+    },
+    {
+      "avg_logprob": -0.272201,
+      "compression_ratio": 1.331707,
+      "end": 16078.76,
+      "no_speech_prob": 0.0,
+      "start": 16078.2,
+      "text": "父母亲"
+    },
+    {
+      "avg_logprob": -0.272201,
+      "compression_ratio": 1.331707,
+      "end": 16079.52,
+      "no_speech_prob": 0.0,
+      "start": 16078.76,
+      "text": "你的前妻"
+    },
+    {
+      "avg_logprob": -0.272201,
+      "compression_ratio": 1.331707,
+      "end": 16080.28,
+      "no_speech_prob": 0.0,
+      "start": 16079.52,
+      "text": "你的孩子"
+    },
+    {
+      "avg_logprob": -0.272201,
+      "compression_ratio": 1.331707,
+      "end": 16080.6,
+      "no_speech_prob": 0.0,
+      "start": 16080.28,
+      "text": "你的"
+    },
+    {
+      "avg_logprob": -0.272201,
+      "compression_ratio": 1.331707,
+      "end": 16082.2,
+      "no_speech_prob": 0.0,
+      "start": 16080.6,
+      "text": "弄死你"
+    },
+    {
+      "avg_logprob": -0.315771,
+      "compression_ratio": 1.344828,
+      "end": 16082.64,
+      "no_speech_prob": 0.0,
+      "start": 16082.2,
+      "text": "是吧"
+    },
+    {
+      "avg_logprob": -0.315771,
+      "compression_ratio": 1.344828,
+      "end": 16083.52,
+      "no_speech_prob": 0.0,
+      "start": 16082.64,
+      "text": "你好爱东"
+    },
+    {
+      "avg_logprob": -0.315771,
+      "compression_ratio": 1.344828,
+      "end": 16084.64,
+      "no_speech_prob": 0.0,
+      "start": 16083.52,
+      "text": "你想一想"
+    },
+    {
+      "avg_logprob": -0.315771,
+      "compression_ratio": 1.344828,
+      "end": 16086.12,
+      "no_speech_prob": 0.0,
+      "start": 16084.64,
+      "text": "你但凡做错点"
+    },
+    {
+      "avg_logprob": -0.315771,
+      "compression_ratio": 1.344828,
+      "end": 16087.48,
+      "no_speech_prob": 0.0,
+      "start": 16086.12,
+      "text": "是吧"
+    },
+    {
+      "avg_logprob": -0.315771,
+      "compression_ratio": 1.344828,
+      "end": 16088.62,
+      "no_speech_prob": 0.0,
+      "start": 16087.48,
+      "text": "我还好"
+    },
+    {
+      "avg_logprob": -0.315771,
+      "compression_ratio": 1.344828,
+      "end": 16090.06,
+      "no_speech_prob": 0.0,
+      "start": 16088.62,
+      "text": "从来没有"
+    },
+    {
+      "avg_logprob": -0.315771,
+      "compression_ratio": 1.344828,
+      "end": 16092.36,
+      "no_speech_prob": 0.0,
+      "start": 16090.06,
+      "text": "你想想"
+    },
+    {
+      "avg_logprob": -0.315771,
+      "compression_ratio": 1.344828,
+      "end": 16093.36,
+      "no_speech_prob": 0.0,
+      "start": 16092.36,
+      "text": "从小挣钱"
+    },
+    {
+      "avg_logprob": -0.315771,
+      "compression_ratio": 1.344828,
+      "end": 16094.26,
+      "no_speech_prob": 0.0,
+      "start": 16093.36,
+      "text": "给父母亲"
+    },
+    {
+      "avg_logprob": -0.315771,
+      "compression_ratio": 1.344828,
+      "end": 16095.94,
+      "no_speech_prob": 0.0,
+      "start": 16094.26,
+      "text": "结了婚"
+    },
+    {
+      "avg_logprob": -0.315771,
+      "compression_ratio": 1.344828,
+      "end": 16097.08,
+      "no_speech_prob": 0.0,
+      "start": 16095.94,
+      "text": "把钱给老婆"
+    },
+    {
+      "avg_logprob": -0.315771,
+      "compression_ratio": 1.344828,
+      "end": 16097.86,
+      "no_speech_prob": 0.0,
+      "start": 16097.08,
+      "text": "是吧"
+    },
+    {
+      "avg_logprob": -0.315771,
+      "compression_ratio": 1.344828,
+      "end": 16099.74,
+      "no_speech_prob": 0.0,
+      "start": 16097.86,
+      "text": "给你妈的陈怡"
+    },
+    {
+      "avg_logprob": -0.315771,
+      "compression_ratio": 1.344828,
+      "end": 16101.2,
+      "no_speech_prob": 0.0,
+      "start": 16099.74,
+      "text": "到后来"
+    },
+    {
+      "avg_logprob": -0.315771,
+      "compression_ratio": 1.344828,
+      "end": 16102.16,
+      "no_speech_prob": 0.0,
+      "start": 16101.2,
+      "text": "完了给小叶"
+    },
+    {
+      "avg_logprob": -0.315771,
+      "compression_ratio": 1.344828,
+      "end": 16102.92,
+      "no_speech_prob": 0.0,
+      "start": 16102.16,
+      "text": "是吧"
+    },
+    {
+      "avg_logprob": -0.315771,
+      "compression_ratio": 1.344828,
+      "end": 16104.48,
+      "no_speech_prob": 0.0,
+      "start": 16102.92,
+      "text": "好爱东"
+    },
+    {
+      "avg_logprob": -0.315771,
+      "compression_ratio": 1.344828,
+      "end": 16105.84,
+      "no_speech_prob": 0.0,
+      "start": 16104.48,
+      "text": "没拿一分钱"
+    },
+    {
+      "avg_logprob": -0.315771,
+      "compression_ratio": 1.344828,
+      "end": 16107.18,
+      "no_speech_prob": 0.0,
+      "start": 16105.84,
+      "text": "当年挣钱"
+    },
+    {
+      "avg_logprob": -0.315771,
+      "compression_ratio": 1.344828,
+      "end": 16108.78,
+      "no_speech_prob": 0.0,
+      "start": 16107.18,
+      "text": "是我最早挣了"
+    },
+    {
+      "avg_logprob": -0.315771,
+      "compression_ratio": 1.344828,
+      "end": 16109.72,
+      "no_speech_prob": 0.0,
+      "start": 16108.78,
+      "text": "唐明他们都"
+    },
+    {
+      "avg_logprob": -0.315771,
+      "compression_ratio": 1.344828,
+      "end": 16111.5,
+      "no_speech_prob": 0.0,
+      "start": 16109.72,
+      "text": "太知道了"
+    },
+    {
+      "avg_logprob": -0.315771,
+      "compression_ratio": 1.344828,
+      "end": 16111.82,
+      "no_speech_prob": 0.0,
+      "start": 16111.5,
+      "text": "对吧"
+    },
+    {
+      "avg_logprob": -0.248038,
+      "compression_ratio": 1.258537,
+      "end": 16113.46,
+      "no_speech_prob": 0.0,
+      "start": 16111.82,
+      "text": "他们这些唱歌的"
+    },
+    {
+      "avg_logprob": -0.248038,
+      "compression_ratio": 1.258537,
+      "end": 16114.38,
+      "no_speech_prob": 0.0,
+      "start": 16113.46,
+      "text": "他们那些人"
+    },
+    {
+      "avg_logprob": -0.248038,
+      "compression_ratio": 1.258537,
+      "end": 16115.74,
+      "no_speech_prob": 0.0,
+      "start": 16114.38,
+      "text": "擦狗屁"
+    },
+    {
+      "avg_logprob": -0.248038,
+      "compression_ratio": 1.258537,
+      "end": 16116.44,
+      "no_speech_prob": 0.0,
+      "start": 16115.74,
+      "text": "90年代"
+    },
+    {
+      "avg_logprob": -0.248038,
+      "compression_ratio": 1.258537,
+      "end": 16117.38,
+      "no_speech_prob": 0.0,
+      "start": 16116.44,
+      "text": "他们有多少钱"
+    },
+    {
+      "avg_logprob": -0.248038,
+      "compression_ratio": 1.258537,
+      "end": 16117.7,
+      "no_speech_prob": 0.0,
+      "start": 16117.38,
+      "text": "擦"
+    },
+    {
+      "avg_logprob": -0.248038,
+      "compression_ratio": 1.258537,
+      "end": 16118.18,
+      "no_speech_prob": 0.0,
+      "start": 16117.7,
+      "text": "对吧"
+    },
+    {
+      "avg_logprob": -0.248038,
+      "compression_ratio": 1.258537,
+      "end": 16119.26,
+      "no_speech_prob": 0.0,
+      "start": 16118.18,
+      "text": "我们开始"
+    },
+    {
+      "avg_logprob": -0.248038,
+      "compression_ratio": 1.258537,
+      "end": 16121.84,
+      "no_speech_prob": 0.0,
+      "start": 16119.26,
+      "text": "我告诉大家"
+    },
+    {
+      "avg_logprob": -0.248038,
+      "compression_ratio": 1.258537,
+      "end": 16124.2,
+      "no_speech_prob": 0.0,
+      "start": 16121.84,
+      "text": "没有一个人知道"
+    },
+    {
+      "avg_logprob": -0.248038,
+      "compression_ratio": 1.258537,
+      "end": 16126.6,
+      "no_speech_prob": 0.0,
+      "start": 16124.2,
+      "text": "我在八一队的时候"
+    },
+    {
+      "avg_logprob": -0.248038,
+      "compression_ratio": 1.258537,
+      "end": 16128.84,
+      "no_speech_prob": 0.0,
+      "start": 16126.6,
+      "text": "我都拿美金了"
+    },
+    {
+      "avg_logprob": -0.248038,
+      "compression_ratio": 1.258537,
+      "end": 16129.84,
+      "no_speech_prob": 0.0,
+      "start": 16128.84,
+      "text": "在八一队"
+    },
+    {
+      "avg_logprob": -0.248038,
+      "compression_ratio": 1.258537,
+      "end": 16131.22,
+      "no_speech_prob": 0.0,
+      "start": 16129.84,
+      "text": "我当兵的时候"
+    },
+    {
+      "avg_logprob": -0.248038,
+      "compression_ratio": 1.258537,
+      "end": 16133.22,
+      "no_speech_prob": 0.0,
+      "start": 16131.22,
+      "text": "我们的主场"
+    },
+    {
+      "avg_logprob": -0.248038,
+      "compression_ratio": 1.258537,
+      "end": 16135.04,
+      "no_speech_prob": 0.0,
+      "start": 16133.22,
+      "text": "都卖出去了"
+    },
+    {
+      "avg_logprob": -0.248038,
+      "compression_ratio": 1.258537,
+      "end": 16135.9,
+      "no_speech_prob": 0.0,
+      "start": 16135.04,
+      "text": "职业联赛以后"
+    },
+    {
+      "avg_logprob": -0.248038,
+      "compression_ratio": 1.258537,
+      "end": 16137.22,
+      "no_speech_prob": 0.0,
+      "start": 16135.9,
+      "text": "95年"
+    },
+    {
+      "avg_logprob": -0.248038,
+      "compression_ratio": 1.258537,
+      "end": 16137.88,
+      "no_speech_prob": 0.0,
+      "start": 16137.22,
+      "text": "96年"
+    },
+    {
+      "avg_logprob": -0.249443,
+      "compression_ratio": 1.354497,
+      "end": 16140.4,
+      "no_speech_prob": 0.0,
+      "start": 16137.88,
+      "text": "他们就给我美金了"
+    },
+    {
+      "avg_logprob": -0.249443,
+      "compression_ratio": 1.354497,
+      "end": 16140.62,
+      "no_speech_prob": 0.0,
+      "start": 16140.4,
+      "text": "已经"
+    },
+    {
+      "avg_logprob": -0.249443,
+      "compression_ratio": 1.354497,
+      "end": 16142.06,
+      "no_speech_prob": 0.0,
+      "start": 16140.62,
+      "text": "我不讲"
+    },
+    {
+      "avg_logprob": -0.249443,
+      "compression_ratio": 1.354497,
+      "end": 16143.22,
+      "no_speech_prob": 0.0,
+      "start": 16142.06,
+      "text": "没有一个人知道"
+    },
+    {
+      "avg_logprob": -0.249443,
+      "compression_ratio": 1.354497,
+      "end": 16145.8,
+      "no_speech_prob": 0.0,
+      "start": 16143.22,
+      "text": "这就是共产党的恶"
+    },
+    {
+      "avg_logprob": -0.249443,
+      "compression_ratio": 1.354497,
+      "end": 16147.18,
+      "no_speech_prob": 0.0,
+      "start": 16145.8,
+      "text": "你们就是"
+    },
+    {
+      "avg_logprob": -0.249443,
+      "compression_ratio": 1.354497,
+      "end": 16148.44,
+      "no_speech_prob": 0.0,
+      "start": 16147.18,
+      "text": "所有的老百姓"
+    },
+    {
+      "avg_logprob": -0.249443,
+      "compression_ratio": 1.354497,
+      "end": 16149.0,
+      "no_speech_prob": 0.0,
+      "start": 16148.44,
+      "text": "所有的队"
+    },
+    {
+      "avg_logprob": -0.249443,
+      "compression_ratio": 1.354497,
+      "end": 16150.12,
+      "no_speech_prob": 0.0,
+      "start": 16149.0,
+      "text": "现在队员都不知道"
+    },
+    {
+      "avg_logprob": -0.249443,
+      "compression_ratio": 1.354497,
+      "end": 16151.52,
+      "no_speech_prob": 0.0,
+      "start": 16150.12,
+      "text": "我们今天"
+    },
+    {
+      "avg_logprob": -0.249443,
+      "compression_ratio": 1.354497,
+      "end": 16152.78,
+      "no_speech_prob": 0.0,
+      "start": 16151.52,
+      "text": "就前几个小时"
+    },
+    {
+      "avg_logprob": -0.249443,
+      "compression_ratio": 1.354497,
+      "end": 16154.6,
+      "no_speech_prob": 0.0,
+      "start": 16152.78,
+      "text": "八一队的"
+    },
+    {
+      "avg_logprob": -0.249443,
+      "compression_ratio": 1.354497,
+      "end": 16155.88,
+      "no_speech_prob": 0.0,
+      "start": 16154.6,
+      "text": "就是我们C组的队长"
+    },
+    {
+      "avg_logprob": -0.249443,
+      "compression_ratio": 1.354497,
+      "end": 16156.88,
+      "no_speech_prob": 0.0,
+      "start": 16155.88,
+      "text": "尚秦刚去世"
+    },
+    {
+      "avg_logprob": -0.224916,
+      "compression_ratio": 1.285068,
+      "end": 16159.74,
+      "no_speech_prob": 0.0,
+      "start": 16156.88,
+      "text": "但是他一分"
+    },
+    {
+      "avg_logprob": -0.224916,
+      "compression_ratio": 1.285068,
+      "end": 16160.56,
+      "no_speech_prob": 0.0,
+      "start": 16159.74,
+      "text": "他甭说"
+    },
+    {
+      "avg_logprob": -0.224916,
+      "compression_ratio": 1.285068,
+      "end": 16162.16,
+      "no_speech_prob": 0.0,
+      "start": 16160.56,
+      "text": "骗美金了"
+    },
+    {
+      "avg_logprob": -0.224916,
+      "compression_ratio": 1.285068,
+      "end": 16164.86,
+      "no_speech_prob": 0.0,
+      "start": 16162.16,
+      "text": "他怎么见过"
+    },
+    {
+      "avg_logprob": -0.224916,
+      "compression_ratio": 1.285068,
+      "end": 16165.76,
+      "no_speech_prob": 0.0,
+      "start": 16164.86,
+      "text": "十万块钱"
+    },
+    {
+      "avg_logprob": -0.224916,
+      "compression_ratio": 1.285068,
+      "end": 16167.54,
+      "no_speech_prob": 0.0,
+      "start": 16165.76,
+      "text": "一场头都没见过"
+    },
+    {
+      "avg_logprob": -0.224916,
+      "compression_ratio": 1.285068,
+      "end": 16167.78,
+      "no_speech_prob": 0.0,
+      "start": 16167.54,
+      "text": "对吧"
+    },
+    {
+      "avg_logprob": -0.224916,
+      "compression_ratio": 1.285068,
+      "end": 16169.08,
+      "no_speech_prob": 0.0,
+      "start": 16167.78,
+      "text": "分到个人"
+    },
+    {
+      "avg_logprob": -0.224916,
+      "compression_ratio": 1.285068,
+      "end": 16170.44,
+      "no_speech_prob": 0.0,
+      "start": 16169.08,
+      "text": "我们90年代"
+    },
+    {
+      "avg_logprob": -0.224916,
+      "compression_ratio": 1.285068,
+      "end": 16172.16,
+      "no_speech_prob": 0.0,
+      "start": 16170.44,
+      "text": "我都拿一场"
+    },
+    {
+      "avg_logprob": -0.224916,
+      "compression_ratio": 1.285068,
+      "end": 16173.52,
+      "no_speech_prob": 0.0,
+      "start": 16172.16,
+      "text": "我都拿一万美金"
+    },
+    {
+      "avg_logprob": -0.224916,
+      "compression_ratio": 1.285068,
+      "end": 16175.6,
+      "no_speech_prob": 0.0,
+      "start": 16173.52,
+      "text": "这帮人都要给我的"
+    },
+    {
+      "avg_logprob": -0.224916,
+      "compression_ratio": 1.285068,
+      "end": 16176.5,
+      "no_speech_prob": 0.0,
+      "start": 16175.6,
+      "text": "对吧"
+    },
+    {
+      "avg_logprob": -0.224916,
+      "compression_ratio": 1.285068,
+      "end": 16177.78,
+      "no_speech_prob": 0.0,
+      "start": 16176.5,
+      "text": "你想一想"
+    },
+    {
+      "avg_logprob": -0.224916,
+      "compression_ratio": 1.285068,
+      "end": 16179.22,
+      "no_speech_prob": 0.0,
+      "start": 16177.78,
+      "text": "这就是中共的路"
+    },
+    {
+      "avg_logprob": -0.224916,
+      "compression_ratio": 1.285068,
+      "end": 16180.44,
+      "no_speech_prob": 0.0,
+      "start": 16179.22,
+      "text": "但是浩尔东"
+    },
+    {
+      "avg_logprob": -0.224916,
+      "compression_ratio": 1.285068,
+      "end": 16182.2,
+      "no_speech_prob": 0.0,
+      "start": 16180.44,
+      "text": "从来没有拿这个东西"
+    },
+    {
+      "avg_logprob": -0.224916,
+      "compression_ratio": 1.285068,
+      "end": 16182.78,
+      "no_speech_prob": 0.0,
+      "start": 16182.2,
+      "text": "最后"
+    },
+    {
+      "avg_logprob": -0.224916,
+      "compression_ratio": 1.285068,
+      "end": 16184.48,
+      "no_speech_prob": 0.0,
+      "start": 16182.78,
+      "text": "凌驾于他们之上"
+    },
+    {
+      "avg_logprob": -0.175998,
+      "compression_ratio": 1.157143,
+      "end": 16185.88,
+      "no_speech_prob": 0.0,
+      "start": 16184.48,
+      "text": "我去干坏事"
+    },
+    {
+      "avg_logprob": -0.175998,
+      "compression_ratio": 1.157143,
+      "end": 16187.62,
+      "no_speech_prob": 0.0,
+      "start": 16185.88,
+      "text": "我今天我他妈不灭共"
+    },
+    {
+      "avg_logprob": -0.175998,
+      "compression_ratio": 1.157143,
+      "end": 16188.2,
+      "no_speech_prob": 0.0,
+      "start": 16187.62,
+      "text": "是吧"
+    },
+    {
+      "avg_logprob": -0.175998,
+      "compression_ratio": 1.157143,
+      "end": 16189.64,
+      "no_speech_prob": 0.0,
+      "start": 16188.2,
+      "text": "我不灭共"
+    },
+    {
+      "avg_logprob": -0.175998,
+      "compression_ratio": 1.157143,
+      "end": 16191.84,
+      "no_speech_prob": 0.0,
+      "start": 16189.64,
+      "text": "我甭说灭共了"
+    },
+    {
+      "avg_logprob": -0.175998,
+      "compression_ratio": 1.157143,
+      "end": 16193.38,
+      "no_speech_prob": 0.0,
+      "start": 16191.84,
+      "text": "我就跟他们没啥"
+    },
+    {
+      "avg_logprob": -0.175998,
+      "compression_ratio": 1.157143,
+      "end": 16194.32,
+      "no_speech_prob": 0.0,
+      "start": 16193.38,
+      "text": "我就正常"
+    },
+    {
+      "avg_logprob": -0.175998,
+      "compression_ratio": 1.157143,
+      "end": 16195.02,
+      "no_speech_prob": 0.0,
+      "start": 16194.32,
+      "text": "对吧"
+    },
+    {
+      "avg_logprob": -0.175998,
+      "compression_ratio": 1.157143,
+      "end": 16197.9,
+      "no_speech_prob": 0.0,
+      "start": 16195.02,
+      "text": "那些人能贿赂过我吗"
+    },
+    {
+      "avg_logprob": -0.175998,
+      "compression_ratio": 1.157143,
+      "end": 16199.64,
+      "no_speech_prob": 0.0,
+      "start": 16197.9,
+      "text": "能逼我有钱吗"
+    }
+  ],
+  "text": "大位老问你太小了 还要大一点我的声音小吗我的声音很小是吗小小小对 再大一点还可以啊 我听着还可以声音很小这是要放大招吗唐平能听到吗能听到还是有一点小还能大一点吗对 声音能再大一点吗麦克风唐平能听到吗这回好了 这回好了可以可以我的怎么样了好的 大位声音也好了好 不错大位哥也行我现在扎好马步了等导哥等的好辛苦我扎好马步大位那边声音可以再大一点现在可以听到吗现在声音怎么样可以可以可以可以我感觉导哥那边声音可以再大一点对 还可以大吗我的声音还不够大是吧对 大位的声音也不够大好的 我调一下啊稍等稍等稳当的啊 稳当的好东哥和莹姐还没到位对他们现在赶紧从那个餐厅唠老班长老班长怎么样早就开喝了已经喝好几瓶了館長又沒聲音了 沒開麥吧哦對 剛沒開麥早就準備好了好 大家耐心等待哇 激動人心的時刻大衛這瓶卡女兒很近海東哥和小葉正在回酒店的路上對哎呀 我看是肯定要等他們回到酒店以後兩千的酒就沒有了 我們有一個普通酒普通酒我也有一個40塊錢的酒瓶子很漂亮我這個也是那個模擬的什麼版2013哇早一點點你加上吧想買沒有超過一百塊錢的哈哈哈哈想買好的沒有哈哈哈哈這個兩千兩千塊錢一瓶兩千多的啊我可以展示一百一百多塊錢的一百多塊錢左右的哈哈哇這需要啊大家這個在我們都把香檳準備好對看我們都已經準備好了大家也把香檳準備好啊沒有香檳做的白酒準備好啊白酒一酒飄香了有一點酒會的感覺啊嗯嗯有戰友說已經幾步來了哈哈躺在床上喝累了好幾天了哈哈那躺床上喝吧哈哈哈哈哈哈去上西瓜多喝點就沒線了看見咱們這麼高興的在喝酒慶祝啊這幫偉淚也很高興的在喝酒慶祝啊這幫偉淚也很高興的這幫偉淚那躺床上喝那躺床上喝吧那躺床上喝吧哈哈去上西瓜多喝點就沒線了看見咱們這麼高興的在喝酒慶祝啊這幫偉淚劉淡老師他們又有些新的詞法叫難受子哈哈激度子難受子唉唉唉唉不過我真的就一點都想不想過真的過去就過去了我也完全想不想嗯有人說已經喝醉了哈哈肯定要喝醉了已經一邊看著直播一邊喝得喝了幾幾個小時那能不醉反正想著啊康大早上那會兒對馬上就喝了對我先喝點酒醒了這現在就起來再透了一透那個啊我們那個搭檔SFG就是他就是提前想著估計在那個時候呃正好上市的那個時候他喝的正美因為他之前喝了很多結果一直等著睡著了剛起哈哈第二波起了這個波起了這個波發生我們還得來的哈哈很好又趕上了第二波是哎呃呃呃他哥是不是隨時都有可能發生啊已經是倒計時了我們一定要等我們一定要等那個海東哥小葉嗯到酒店以後對金哥是不是換衣服去了我覺得他肯定要換衣服這個這個時間由不得我們這個時間由不得我們這個時間由不得我們決定隨時都可能現在正在等著最後一分鐘最後幾分鐘最後幾分鐘最後幾分鐘最後幾分鐘最後幾分鐘有點小激動隨便这样的 最后一分钟最后一分钟太厚了哈哈哈我俩一句是你还真嫌一句我俩是你没问题没问题哈哈再来一个这个这个哈哈哈哈哈哈对啊我念不会硬气功要灰硬气功吧把这香槟倒完了一瓶到赵宝上削一下哈哈哈你可千万别冲动啊千万别冲动哈哈哈大哥练了有战友在留言区说这个绿啊你看今天七哥穿的也是因为开盘嘛逢绿即涨对吧这两个一绿冲天就涨的意思开盘必涨的意思啊必须有点绿因为我哎我是跟七哥刚才还有一几个战友看出来了董航董航啊兄弟姐妹们高手都在战友里哈哈哈但是在中国是反的所以所以共产党那帮忙不带带领红领带共产党那帮忙不带他都他对他都给你反着来对哈哈哈你共产党他是红色的嘛你看那个党旗对不对国旗他喜欢红血嘛对不对他反过来着给你上斜劲啊回来了啊啊超英姐你也来了及时等着等着你们的啊真是时候真是时候超英姐你接着啊给你扔过去哈哈哈接住了哈哈哈哈哈哈哈哈哈这个太后啊这个太后这个比你更更近感啊我们不能跟明白明白这个这个那边这个这个击货准备的这么贵重我这么这个我们就是以以个头取胜以个头取胜哈哈哈必须的啊订队员酒量好多喝点对真喝不了酒酒量哈哈哈哈哈哈要赶紧改善你还有一批啊东哥和盈姐一人一瓶东哥那个大的盈姐是小的干上点好了哈哈哎这不刚才在在餐厅吗在餐厅然后其实等一等把餐厅都等下班了我来然后赶紧跑回来我靠你哈哈东哥哈哈哎呀这的话我就那么我们一桌我一直从十二点等到两点那的话你们哈哈哈哈那个那个我们也不走啊我说也那个那个怎么了弄一直播就是弄一屏幕在这一直讲啊这个小伙子都快睡了那餐厅啊也是市中心一个很好的餐厅啊这个这个这个你想这西班牙这都是已经在欧洲都很好了你家大卫在英国在有开到那个那个两点开到屁早就有人打烊了哈哈哈哈哎东哥我说那服务员是不是等着咱拿洗币给他小费来所以一直在这等着也跟着开盘呢是吧哎我我该开盘了人家我今天不用吃方便面了我吃了一大餐在一块那个完了最后我一看实在不好意思这个给了他50欧元老板长多不多50欧元这么多50欧元很好了很多了你很厉害了很牛了对啊这我感觉人家也说容易没跟你说没跟你说没跟你说没记过我同意就给了50欧元哈哈哈哈洗臂上洗臂上市哎哎哎哎我我都不好意思说我的早晨给人家也是吃一早餐对吧人家在那也是都下班了我们一直在那吃完了早餐吧人家16块钱我就给了20我就没要那个零钱我小叶就说我靠你这4块钱都给了你不拿回来两块那类似这我老板长这日子没法过有时候哇炸哈哈哈哈这个不是真的啊有时候买买包方便面贵你妈6毛5毛1都都不行没错哎你还得加油站呗你到超市去啊对吗那才6毛方便面你这一块一哇炸你讲这个你在这对着对着呢对吧你想这4块钱得买多少方便面呢你想一想哈哈哈哈你看看你看看你看看你看看老板长就替我做主了对吧嗯不是这有时候哎哎我一个喜必没有就跟七哥说的我才爱我到现在为止老板长我真的爱我我我我弄啊所有的了房子什么这样的那样从前面从我十几岁挣钱到现在给父母亲啊就是到现在为止一个没有哇靠一个一个房子一个车最后连洗币一个没有哇靠他告诉我你这账号也会不了你也没有你也没哦在我这挺好这个也也不用带池也没办带池带池啥是吧这也没玩儿写呀没有啊还还难道你们大家不都是这样的吗你比草根有吗你比草根有吗你比草根有吗你比草根有吗你比草根有吗你比草根有吗我有从道中人从道中人怪不得盈姐一直号称东哥是掌柜的呢因为盈姐是东姐对呀掌柜的给东姐咱们你们都懂把你架上你干干了最后你妈啥你也捞不着这我们都明白对吧咱就别讲这些没啥意思没什么意思对吧但是不要紧刚才七哥就说了人走到哪一步一定最后你所有的行为的最后的总结是吧你想一想像我这种情形到了今天你妈的但凡有一点你做的操蛋所有的人对吧你的兄弟姐妹父母亲你的前妻你的孩子你的弄死你是吧你好爱东你想一想你但凡做错点是吧我还好从来没有你想想从小挣钱给父母亲结了婚把钱给老婆是吧给你妈的陈怡到后来完了给小叶是吧好爱东没拿一分钱当年挣钱是我最早挣了唐明他们都太知道了对吧他们这些唱歌的他们那些人擦狗屁90年代他们有多少钱擦对吧我们开始我告诉大家没有一个人知道我在八一队的时候我都拿美金了在八一队我当兵的时候我们的主场都卖出去了职业联赛以后95年96年他们就给我美金了已经我不讲没有一个人知道这就是共产党的恶你们就是所有的老百姓所有的队现在队员都不知道我们今天就前几个小时八一队的就是我们C组的队长尚秦刚去世但是他一分他甭说骗美金了他怎么见过十万块钱一场头都没见过对吧分到个人我们90年代我都拿一场我都拿一万美金这帮人都要给我的对吧你想一想这就是中共的路但是浩尔东从来没有拿这个东西最后凌驾于他们之上我去干坏事我今天我他妈不灭共是吧我不灭共我甭说灭共了我就跟他们没啥我就正常对吧那些人能贿赂过我吗能逼我有钱吗"
+}

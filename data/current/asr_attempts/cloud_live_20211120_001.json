@@ -1,14 +1,16 @@
 {
-  "checkpoint_retry_count": 1,
+  "checkpoint_retry_count": 2,
   "checkpoint_retry_limit": 2,
-  "deferred_until_corpus_tail": false,
+  "deferred_reason": "two checkpoint resume attempts did not complete; released so the normal queue can continue and retained for corpus-tail retry",
+  "deferred_until_corpus_tail": true,
   "error": "cloud ASR item exceeded 1800 seconds; retained for retry or chunked processing",
-  "generated_at": "2026-10-22T01:08:09Z",
+  "generated_at": "2026-10-22T06:51:48Z",
   "live_id": "LIVE_20211120_001",
   "media_committed_to_git": false,
   "paid_api_used": false,
+  "pre_defer_status": "cloud_attempt_timed_out_needs_retry",
   "processing_location": "github-hosted-macos-arm64",
-  "retry_queue": "normal",
+  "retry_queue": "corpus_tail",
   "schema_version": "cloud-asr-attempt-v1",
-  "status": "cloud_attempt_timed_out_needs_retry"
+  "status": "cloud_checkpoint_retry_limit_deferred"
 }
