@@ -13,12 +13,28 @@ from scripts.cloud_asr_item import (
     assess_transcript_quality,
     output_paths,
     publish,
+    remove_joint_low_confidence_repetition,
     sha256_file,
     transcribe_chunked,
 )
 
 
 class CloudAsrOutputTests(unittest.TestCase):
+    def test_hallucination_filter_removes_decoder_loops_conservatively(self) -> None:
+        segments = [
+            {"text": "保留正常语音", "avg_logprob": -0.3, "compression_ratio": 1.2},
+            {"text": "困难但不重复的语音", "avg_logprob": -1.5, "compression_ratio": 1.4},
+            {"text": "是是是", "avg_logprob": -1.5, "compression_ratio": 3.0},
+            {"text": "jjjj", "avg_logprob": -0.2, "compression_ratio": 18.0},
+        ]
+
+        filtered, removed = remove_joint_low_confidence_repetition(segments)
+
+        self.assertEqual(removed, 2)
+        self.assertEqual([item["text"] for item in filtered], [
+            "保留正常语音", "困难但不重复的语音",
+        ])
+
     def test_quality_gate_accepts_dense_continuous_machine_dictation(self) -> None:
         segments = [
             {
