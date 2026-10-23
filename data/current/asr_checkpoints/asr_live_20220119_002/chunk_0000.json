@@ -1,0 +1,88 @@
+{
+  "chunk_audio_sha256": "49aacbee4840b22367ba422a0922266b27de3c82abbe3d99adbdb3463e5995f9",
+  "chunk_index": 0,
+  "completed_at": "2026-10-23T01:25:10Z",
+  "language": "zh",
+  "live_id": "LIVE_20220119_002",
+  "media_committed_to_git": false,
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "offset_sec": 0,
+  "paid_api_used": false,
+  "processing_location": "codex-local-apple-silicon-agent50",
+  "schema_version": "cloud-asr-chunk-v1",
+  "segments": [
+    {
+      "avg_logprob": -0.249499,
+      "compression_ratio": 1.621469,
+      "end": 2.0,
+      "no_speech_prob": 0.0,
+      "start": 0.0,
+      "text": "乖乖乖来 乖乖来"
+    },
+    {
+      "avg_logprob": -0.249499,
+      "compression_ratio": 1.621469,
+      "end": 5.0,
+      "no_speech_prob": 0.0,
+      "start": 2.0,
+      "text": "百年的老鼠啊 百年的老鼠"
+    },
+    {
+      "avg_logprob": -0.249499,
+      "compression_ratio": 1.621469,
+      "end": 9.0,
+      "no_speech_prob": 0.0,
+      "start": 5.0,
+      "text": "起草子包子 一头豆腐"
+    },
+    {
+      "avg_logprob": -0.249499,
+      "compression_ratio": 1.621469,
+      "end": 12.0,
+      "no_speech_prob": 0.0,
+      "start": 9.0,
+      "text": "太幸福了 你看这感觉"
+    },
+    {
+      "avg_logprob": -0.249499,
+      "compression_ratio": 1.621469,
+      "end": 16.0,
+      "no_speech_prob": 0.0,
+      "start": 12.0,
+      "text": "这味道都香的不得了 太幸福了"
+    },
+    {
+      "avg_logprob": -0.249499,
+      "compression_ratio": 1.621469,
+      "end": 19.0,
+      "no_speech_prob": 0.0,
+      "start": 16.0,
+      "text": "你看看 你看看 你看看 你看看"
+    },
+    {
+      "avg_logprob": -0.249499,
+      "compression_ratio": 1.621469,
+      "end": 22.0,
+      "no_speech_prob": 0.0,
+      "start": 19.0,
+      "text": "哎呀 加百年老鼠啊 就这么简单"
+    },
+    {
+      "avg_logprob": -0.249499,
+      "compression_ratio": 1.621469,
+      "end": 25.0,
+      "no_speech_prob": 0.0,
+      "start": 22.0,
+      "text": "就这么简单 幸福就这么简单"
+    },
+    {
+      "avg_logprob": -0.249499,
+      "compression_ratio": 1.621469,
+      "end": 26.0,
+      "no_speech_prob": 0.0,
+      "start": 25.0,
+      "text": "我们开始来了"
+    }
+  ],
+  "text": "乖乖乖来 乖乖来百年的老鼠啊 百年的老鼠起草子包子 一头豆腐太幸福了 你看这感觉这味道都香的不得了 太幸福了你看看 你看看 你看看 你看看哎呀 加百年老鼠啊 就这么简单就这么简单 幸福就这么简单我们开始来了"
+}
