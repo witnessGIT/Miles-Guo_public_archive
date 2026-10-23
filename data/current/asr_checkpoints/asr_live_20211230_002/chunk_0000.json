@@ -1,0 +1,464 @@
+{
+  "chunk_audio_sha256": "2045edf664a1ee5e7c2c13d911f743f8956f916e633417b3fd7ecd1004208b13",
+  "chunk_index": 0,
+  "completed_at": "2026-10-23T00:09:47Z",
+  "language": "zh",
+  "live_id": "LIVE_20211230_002",
+  "media_committed_to_git": false,
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "offset_sec": 0,
+  "paid_api_used": false,
+  "processing_location": "codex-local-apple-silicon-direct-trial",
+  "schema_version": "cloud-asr-chunk-v1",
+  "segments": [
+    {
+      "avg_logprob": -0.346517,
+      "compression_ratio": 1.298851,
+      "end": 4.0,
+      "no_speech_prob": 0.0,
+      "start": 0.0,
+      "text": "Snow,你看啥呢?"
+    },
+    {
+      "avg_logprob": -0.346517,
+      "compression_ratio": 1.298851,
+      "end": 8.0,
+      "no_speech_prob": 0.0,
+      "start": 4.0,
+      "text": "Snow,Snow,谁给你洗的澡啊?"
+    },
+    {
+      "avg_logprob": -0.346517,
+      "compression_ratio": 1.298851,
+      "end": 10.0,
+      "no_speech_prob": 0.0,
+      "start": 8.0,
+      "text": "嗯?"
+    },
+    {
+      "avg_logprob": -0.346517,
+      "compression_ratio": 1.298851,
+      "end": 12.0,
+      "no_speech_prob": 0.0,
+      "start": 10.0,
+      "text": "谁给你洗的澡啊?"
+    },
+    {
+      "avg_logprob": -0.346517,
+      "compression_ratio": 1.298851,
+      "end": 14.0,
+      "no_speech_prob": 0.0,
+      "start": 12.0,
+      "text": "嗯?"
+    },
+    {
+      "avg_logprob": -0.346517,
+      "compression_ratio": 1.298851,
+      "end": 18.0,
+      "no_speech_prob": 0.0,
+      "start": 14.0,
+      "text": "你喜欢你的窝是吗?"
+    },
+    {
+      "avg_logprob": -0.346517,
+      "compression_ratio": 1.298851,
+      "end": 20.0,
+      "no_speech_prob": 0.0,
+      "start": 18.0,
+      "text": "嗯?"
+    },
+    {
+      "avg_logprob": -0.346517,
+      "compression_ratio": 1.298851,
+      "end": 22.0,
+      "no_speech_prob": 0.0,
+      "start": 20.0,
+      "text": "嗯?"
+    },
+    {
+      "avg_logprob": -0.331693,
+      "compression_ratio": 0.890411,
+      "end": 34.0,
+      "no_speech_prob": 0.0,
+      "start": 22.0,
+      "text": "你看啥吃的了?想吃"
+    },
+    {
+      "avg_logprob": -0.331693,
+      "compression_ratio": 0.890411,
+      "end": 36.0,
+      "no_speech_prob": 0.0,
+      "start": 34.0,
+      "text": "嗯?"
+    },
+    {
+      "avg_logprob": -0.331693,
+      "compression_ratio": 0.890411,
+      "end": 44.0,
+      "no_speech_prob": 0.0,
+      "start": 40.0,
+      "text": "你干嘛在那儿看我啊?"
+    },
+    {
+      "avg_logprob": -0.331693,
+      "compression_ratio": 0.890411,
+      "end": 46.0,
+      "no_speech_prob": 0.0,
+      "start": 44.0,
+      "text": "嗯?"
+    },
+    {
+      "avg_logprob": -0.331693,
+      "compression_ratio": 0.890411,
+      "end": 48.0,
+      "no_speech_prob": 0.0,
+      "start": 46.0,
+      "text": "Snow"
+    },
+    {
+      "avg_logprob": -0.526452,
+      "compression_ratio": 0.813953,
+      "end": 70.0,
+      "no_speech_prob": 0.0,
+      "start": 52.0,
+      "text": "你快成了土丁的狗了"
+    },
+    {
+      "avg_logprob": -0.526452,
+      "compression_ratio": 0.813953,
+      "end": 72.0,
+      "no_speech_prob": 0.0,
+      "start": 70.0,
+      "text": "啊?"
+    },
+    {
+      "avg_logprob": -0.526452,
+      "compression_ratio": 0.813953,
+      "end": 74.0,
+      "no_speech_prob": 0.0,
+      "start": 72.0,
+      "text": "Snow"
+    },
+    {
+      "avg_logprob": -0.204441,
+      "compression_ratio": 1.0,
+      "end": 84.0,
+      "no_speech_prob": 0.0,
+      "start": 74.0,
+      "text": "就喜欢那个窝,每天就像在那儿窝里"
+    },
+    {
+      "avg_logprob": -0.204441,
+      "compression_ratio": 1.0,
+      "end": 86.0,
+      "no_speech_prob": 0.0,
+      "start": 84.0,
+      "text": "是吧?"
+    },
+    {
+      "avg_logprob": -0.204441,
+      "compression_ratio": 1.0,
+      "end": 90.0,
+      "no_speech_prob": 0.0,
+      "start": 86.0,
+      "text": "你为什么那么喜欢你的窝呢?"
+    },
+    {
+      "avg_logprob": -0.204441,
+      "compression_ratio": 1.0,
+      "end": 92.0,
+      "no_speech_prob": 0.0,
+      "start": 90.0,
+      "text": "嗯?"
+    },
+    {
+      "avg_logprob": -0.204441,
+      "compression_ratio": 1.0,
+      "end": 94.0,
+      "no_speech_prob": 0.0,
+      "start": 92.0,
+      "text": "嗯?"
+    },
+    {
+      "avg_logprob": -2.113599,
+      "compression_ratio": 5.820513,
+      "end": 95.0,
+      "no_speech_prob": 0.0,
+      "start": 94.0,
+      "text": "的"
+    },
+    {
+      "avg_logprob": -2.113599,
+      "compression_ratio": 5.820513,
+      "end": 95.52,
+      "no_speech_prob": 0.0,
+      "start": 95.0,
+      "text": "是"
+    },
+    {
+      "avg_logprob": -2.113599,
+      "compression_ratio": 5.820513,
+      "end": 95.92,
+      "no_speech_prob": 0.0,
+      "start": 95.52,
+      "text": "是"
+    },
+    {
+      "avg_logprob": -2.113599,
+      "compression_ratio": 5.820513,
+      "end": 96.0,
+      "no_speech_prob": 0.0,
+      "start": 95.92,
+      "text": "是"
+    },
+    {
+      "avg_logprob": -2.113599,
+      "compression_ratio": 5.820513,
+      "end": 96.02,
+      "no_speech_prob": 0.0,
+      "start": 96.0,
+      "text": "是"
+    },
+    {
+      "avg_logprob": -2.113599,
+      "compression_ratio": 5.820513,
+      "end": 96.28,
+      "no_speech_prob": 0.0,
+      "start": 96.02,
+      "text": "是"
+    },
+    {
+      "avg_logprob": -2.113599,
+      "compression_ratio": 5.820513,
+      "end": 96.48,
+      "no_speech_prob": 0.0,
+      "start": 96.28,
+      "text": "是"
+    },
+    {
+      "avg_logprob": -2.113599,
+      "compression_ratio": 5.820513,
+      "end": 96.56,
+      "no_speech_prob": 0.0,
+      "start": 96.48,
+      "text": "是"
+    },
+    {
+      "avg_logprob": -2.113599,
+      "compression_ratio": 5.820513,
+      "end": 96.64,
+      "no_speech_prob": 0.0,
+      "start": 96.56,
+      "text": "是"
+    },
+    {
+      "avg_logprob": -2.113599,
+      "compression_ratio": 5.820513,
+      "end": 96.7,
+      "no_speech_prob": 0.0,
+      "start": 96.64,
+      "text": "是"
+    },
+    {
+      "avg_logprob": -2.113599,
+      "compression_ratio": 5.820513,
+      "end": 96.76,
+      "no_speech_prob": 0.0,
+      "start": 96.7,
+      "text": "是"
+    },
+    {
+      "avg_logprob": -2.113599,
+      "compression_ratio": 5.820513,
+      "end": 96.82,
+      "no_speech_prob": 0.0,
+      "start": 96.76,
+      "text": "是"
+    },
+    {
+      "avg_logprob": -2.113599,
+      "compression_ratio": 5.820513,
+      "end": 96.84,
+      "no_speech_prob": 0.0,
+      "start": 96.82,
+      "text": "是"
+    },
+    {
+      "avg_logprob": -2.113599,
+      "compression_ratio": 5.820513,
+      "end": 96.9,
+      "no_speech_prob": 0.0,
+      "start": 96.84,
+      "text": "是"
+    },
+    {
+      "avg_logprob": -2.113599,
+      "compression_ratio": 5.820513,
+      "end": 96.92,
+      "no_speech_prob": 0.0,
+      "start": 96.9,
+      "text": "是"
+    },
+    {
+      "avg_logprob": -2.113599,
+      "compression_ratio": 5.820513,
+      "end": 96.94,
+      "no_speech_prob": 0.0,
+      "start": 96.92,
+      "text": "是"
+    },
+    {
+      "avg_logprob": -2.113599,
+      "compression_ratio": 5.820513,
+      "end": 96.98,
+      "no_speech_prob": 0.0,
+      "start": 96.94,
+      "text": "是"
+    },
+    {
+      "avg_logprob": -2.113599,
+      "compression_ratio": 5.820513,
+      "end": 97.06,
+      "no_speech_prob": 0.0,
+      "start": 96.98,
+      "text": "even"
+    },
+    {
+      "avg_logprob": -2.113599,
+      "compression_ratio": 5.820513,
+      "end": 97.06,
+      "no_speech_prob": 0.0,
+      "start": 97.06,
+      "text": "是"
+    },
+    {
+      "avg_logprob": -2.113599,
+      "compression_ratio": 5.820513,
+      "end": 97.16,
+      "no_speech_prob": 0.0,
+      "start": 97.04,
+      "text": "home"
+    },
+    {
+      "avg_logprob": -2.113599,
+      "compression_ratio": 5.820513,
+      "end": 97.16,
+      "no_speech_prob": 0.0,
+      "start": 97.16,
+      "text": "is"
+    },
+    {
+      "avg_logprob": -2.113599,
+      "compression_ratio": 5.820513,
+      "end": 97.12,
+      "no_speech_prob": 0.0,
+      "start": 97.1,
+      "text": "是"
+    },
+    {
+      "avg_logprob": -2.113599,
+      "compression_ratio": 5.820513,
+      "end": 97.16,
+      "no_speech_prob": 0.0,
+      "start": 97.12,
+      "text": "it"
+    },
+    {
+      "avg_logprob": -2.113599,
+      "compression_ratio": 5.820513,
+      "end": 97.18,
+      "no_speech_prob": 0.0,
+      "start": 97.16,
+      "text": "是"
+    },
+    {
+      "avg_logprob": -2.113599,
+      "compression_ratio": 5.820513,
+      "end": 97.2,
+      "no_speech_prob": 0.0,
+      "start": 97.18,
+      "text": "是"
+    },
+    {
+      "avg_logprob": -2.113599,
+      "compression_ratio": 5.820513,
+      "end": 97.22,
+      "no_speech_prob": 0.0,
+      "start": 97.2,
+      "text": "是"
+    },
+    {
+      "avg_logprob": -2.113599,
+      "compression_ratio": 5.820513,
+      "end": 97.24,
+      "no_speech_prob": 0.0,
+      "start": 97.22,
+      "text": "是"
+    },
+    {
+      "avg_logprob": -2.113599,
+      "compression_ratio": 5.820513,
+      "end": 97.26,
+      "no_speech_prob": 0.0,
+      "start": 97.24,
+      "text": "是"
+    },
+    {
+      "avg_logprob": -2.113599,
+      "compression_ratio": 5.820513,
+      "end": 97.3,
+      "no_speech_prob": 0.0,
+      "start": 97.26,
+      "text": "是"
+    },
+    {
+      "avg_logprob": -2.113599,
+      "compression_ratio": 5.820513,
+      "end": 97.32,
+      "no_speech_prob": 0.0,
+      "start": 97.3,
+      "text": "是"
+    },
+    {
+      "avg_logprob": -2.113599,
+      "compression_ratio": 5.820513,
+      "end": 97.36,
+      "no_speech_prob": 0.0,
+      "start": 97.32,
+      "text": "是"
+    },
+    {
+      "avg_logprob": -2.113599,
+      "compression_ratio": 5.820513,
+      "end": 97.38,
+      "no_speech_prob": 0.0,
+      "start": 97.36,
+      "text": "是"
+    },
+    {
+      "avg_logprob": -2.113599,
+      "compression_ratio": 5.820513,
+      "end": 97.4,
+      "no_speech_prob": 0.0,
+      "start": 97.38,
+      "text": "是"
+    },
+    {
+      "avg_logprob": -2.113599,
+      "compression_ratio": 5.820513,
+      "end": 97.42,
+      "no_speech_prob": 0.0,
+      "start": 97.4,
+      "text": "是"
+    },
+    {
+      "avg_logprob": -0.185591,
+      "compression_ratio": 18.583333,
+      "end": 104.19,
+      "no_speech_prob": 0.0,
+      "start": 97.42,
+      "text": "jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj"
+    }
+  ],
+  "text": "Snow,你看啥呢?Snow,Snow,谁给你洗的澡啊?嗯?谁给你洗的澡啊?嗯?你喜欢你的窝是吗?嗯?嗯?你看啥吃的了?想吃嗯?你干嘛在那儿看我啊?嗯?Snow你快成了土丁的狗了啊?Snow就喜欢那个窝,每天就像在那儿窝里是吧?你为什么那么喜欢你的窝呢?嗯?嗯?的是是是是是是是是是是是是是是是是 even是 home is 是 it 是 是 是 是 是 是 是 是 是 是 是jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj"
+}

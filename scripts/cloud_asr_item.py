@@ -28,6 +28,9 @@ from typing import Any
 MODEL = "mlx-community/whisper-large-v3-turbo"
 USER_AGENT = "curl/8.7.1"
 CHUNK_DURATION_SEC = 900
+PROCESSING_LOCATION = os.environ.get(
+    "ASR_PROCESSING_LOCATION", "github-hosted-macos-arm64"
+)
 
 
 def utc_now() -> str:
@@ -156,6 +159,37 @@ def assess_transcript_quality(
             "high_compression_segment_count": high_compression_segment_count,
         },
     }
+
+
+def remove_joint_low_confidence_repetition(
+    segments: list[dict[str, Any]],
+) -> tuple[list[dict[str, Any]], int]:
+    """Drop segments that satisfy both strong hallucination signals.
+
+    A low log probability by itself can be legitimate difficult speech, while a
+    high compression ratio by itself can be a naturally repetitive utterance.
+    Requiring both preserves uncertain speech and removes only the pathological
+    decoder loops that the publication quality gate would reject anyway.
+    """
+    kept: list[dict[str, Any]] = []
+    removed = 0
+    for segment in segments:
+        avg_logprob = segment.get("avg_logprob")
+        compression_ratio = segment.get("compression_ratio")
+        probable_decoder_loop = (
+            compression_ratio is not None and float(compression_ratio) > 4.0
+        )
+        joint_low_confidence_repetition = (
+            avg_logprob is not None
+            and compression_ratio is not None
+            and float(avg_logprob) < -1.2
+            and float(compression_ratio) > 2.6
+        )
+        if probable_decoder_loop or joint_low_confidence_repetition:
+            removed += 1
+            continue
+        kept.append(segment)
+    return kept, removed
 
 
 def write_json(path: Path, payload: dict[str, Any]) -> None:
@@ -350,7 +384,7 @@ def transcribe_chunked(
                     if str(segment.get("text") or "").strip()
                 ],
                 "completed_at": utc_now(),
-                "processing_location": "github-hosted-macos-arm64",
+                "processing_location": PROCESSING_LOCATION,
                 "media_committed_to_git": False,
                 "paid_api_used": False,
             }
@@ -414,7 +448,11 @@ def publish(repo: Path, payload: dict[str, Any]) -> list[str]:
         "id": version_id, "live_id": live_id, "source_id": payload.get("source_id"),
         "transcript_kind": "asr_raw", "language": payload.get("language") or "zh",
         "text": payload.get("text") or "", "parent_version_id": None,
-        "generated_by": f"mlx-whisper GitHub-hosted offline inference; model={payload['model']}; machine raw, not human corrected",
+        "generated_by": (
+            "mlx-whisper offline inference; "
+            f"processing_location={payload.get('processing_location')}; "
+            f"model={payload['model']}; machine raw, not human corrected"
+        ),
         "confidence": (payload.get("quality") or {}).get("quality_score"),
         "created_at": created_at,
     }
@@ -520,7 +558,7 @@ def main() -> int:
             "model": MODEL,
             "chunk_duration_sec": CHUNK_DURATION_SEC,
             "resume_validation": "per_chunk_pcm_wav_sha256",
-            "processing_location": "github-hosted-macos-arm64",
+            "processing_location": PROCESSING_LOCATION,
             "media_committed_to_git": False,
             "paid_api_used": False,
         })
@@ -548,6 +586,9 @@ def main() -> int:
                     if segment.get(key) is not None
                 },
             })
+        segments, filtered_hallucination_segments = remove_joint_low_confidence_repetition(
+            segments
+        )
         payload = {
             "schema_version": "cloud-asr-result-v1", "live_id": args.live_id,
             "status": "transcribed", "source_id": asset["source_id"], "media_asset_id": asset["id"],
@@ -556,13 +597,17 @@ def main() -> int:
             "audio_duration_sec": round(duration_sec, 3),
             "model": MODEL, "software": "mlx-whisper", "language": result.get("language") or "zh",
             "generated_at": utc_now(), "processing_elapsed_sec": elapsed,
-            "text": str(result.get("text") or "").strip(), "segments": segments,
+            "text": " ".join(item["text"] for item in segments), "segments": segments,
             "chunk_duration_sec": CHUNK_DURATION_SEC, "chunk_count": result.get("chunk_count"),
             "resumed_chunk_count": result.get("resumed_chunk_count", 0),
-            "source_attempt_errors": errors, "processing_location": "github-hosted-macos-arm64",
+            "source_attempt_errors": errors, "processing_location": PROCESSING_LOCATION,
             "processing_path": str(audio), "path_persistence": "ephemeral_deleted_after_job",
+            "filtered_hallucination_segments": filtered_hallucination_segments,
         }
         quality = assess_transcript_quality(segments, duration_sec)
+        quality["metrics"]["filtered_hallucination_segment_count"] = (
+            filtered_hallucination_segments
+        )
         payload["quality"] = quality
         if quality["gate_status"] != "pass":
             attempt = {
@@ -570,7 +615,7 @@ def main() -> int:
                 "live_id": args.live_id,
                 "status": "cloud_asr_quality_failed_deferred",
                 "generated_at": utc_now(),
-                "processing_location": "github-hosted-macos-arm64",
+                "processing_location": PROCESSING_LOCATION,
                 "model": MODEL,
                 "paid_api_used": False,
                 "media_committed_to_git": False,
@@ -597,7 +642,7 @@ def main() -> int:
         attempt = {
             "schema_version": "cloud-asr-attempt-v1", "live_id": args.live_id,
             "status": "cloud_attempt_failed_needs_retry", "generated_at": utc_now(),
-            "processing_location": "github-hosted-macos-arm64", "model": MODEL,
+            "processing_location": PROCESSING_LOCATION, "model": MODEL,
             "paid_api_used": False, "media_committed_to_git": False,
             "error": str(exc)[:2000], "source_attempt_errors": errors,
         }
