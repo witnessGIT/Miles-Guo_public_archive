@@ -1,0 +1,21 @@
+{
+  "checkpoint_retry_count": 0,
+  "checkpoint_retry_limit": 2,
+  "deferred_until_corpus_tail": false,
+  "error": "no media source was reachable from this GitHub-hosted runner",
+  "generated_at": "2026-10-23T10:25:25Z",
+  "live_id": "LIVE_20220114_001",
+  "media_committed_to_git": false,
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "paid_api_used": false,
+  "processing_location": "github-hosted-macos-arm64",
+  "retry_queue": "normal",
+  "schema_version": "cloud-asr-attempt-v1",
+  "source_attempt_errors": [
+    {
+      "asset_id": "MA_RUMBLE_V5A4I91_C9A8ADBA",
+      "error": "Command '['ffmpeg', '-nostdin', '-hide_banner', '-loglevel', 'warning', '-y', '-user_agent', 'curl/8.7.1', '-i', 'https://hugh.cdn.rumble.cloud/video/s8/2/L/n/l/c/Lnlct.oaa.mp4', '-vn', '-ac', '1', '-ar', '16000', '-c:a', 'libopus', '-b:a', '32k', '-f', 'ogg', '/Users/runner/work/_temp/miles-guo-asr/LIVE_20220114_001.ogg.partial']' returned non-zero exit status 234."
+    }
+  ],
+  "status": "cloud_attempt_failed_needs_retry"
+}
