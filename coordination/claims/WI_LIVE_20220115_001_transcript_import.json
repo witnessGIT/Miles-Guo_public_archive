@@ -3,7 +3,7 @@
   "agent_id": "codex-local-asr-agent50-20261023",
   "claimed_at": "2026-10-23T05:51:03.800322+00:00",
   "base_commit": "3a9fb69867a8223f146676a69b24963d399f99c9",
-  "status": "in_progress",
+  "status": "released",
   "workflow_mode": "continuous-worker-v2",
   "claim_protocol": "claim-protocol-v2",
   "entry_mode": "work",
@@ -22,5 +22,7 @@
   ],
   "scope": "Import source transcript or ASR text without overwriting original text.",
   "reclaimed_expired_claim": true,
-  "static_claim_lease_hours": 24
+  "static_claim_lease_hours": 24,
+  "released_at": "2026-10-23T05:52:09.540474+00:00",
+  "release_reason": "Manual hallucination audit rejected auto-pass: three consecutive ~30-second windows contain repeated stock outro text unrelated to source content. Evidence/checkpoint retained and deferred to corpus_tail; not missing media."
 }
