@@ -1,0 +1,40 @@
+{
+  "chunk_audio_sha256": "f4fd8261eb4282251b575199dd803876a5d40dbe5608a24f32be6af6864afc69",
+  "chunk_index": 0,
+  "completed_at": "2026-10-23T02:27:01Z",
+  "language": "zh",
+  "live_id": "LIVE_20220810_002",
+  "media_committed_to_git": false,
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "offset_sec": 0,
+  "paid_api_used": false,
+  "processing_location": "codex-local-apple-silicon-agent50",
+  "schema_version": "cloud-asr-chunk-v1",
+  "segments": [
+    {
+      "avg_logprob": -0.05456,
+      "compression_ratio": 17.684211,
+      "end": 30.0,
+      "no_speech_prob": 0.0,
+      "start": 0.0,
+      "text": "裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂�"
+    },
+    {
+      "avg_logprob": -0.653851,
+      "compression_ratio": 1.3,
+      "end": 58.0,
+      "no_speech_prob": 0.0,
+      "start": 30.0,
+      "text": "來啦某,來啦某,有人某,有人某"
+    },
+    {
+      "avg_logprob": -0.375163,
+      "compression_ratio": 0.977273,
+      "end": 72.0,
+      "no_speech_prob": 0.0,
+      "start": 58.0,
+      "text": "哇塞,爆熱呀!兄弟姐妹們,爆熱呀!"
+    }
+  ],
+  "text": "裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂裂�來啦某,來啦某,有人某,有人某哇塞,爆熱呀!兄弟姐妹們,爆熱呀!"
+}
