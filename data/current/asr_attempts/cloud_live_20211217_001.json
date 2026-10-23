@@ -1,12 +1,14 @@
 {
-  "error": "[METAL] Command buffer execution failed: Caused GPU Timeout Error (00000002:kIOGPUCommandBufferCallbackErrorTimeout).",
-  "generated_at": "2026-10-17T06:00:59Z",
+  "checkpoint_retry_count": 0,
+  "checkpoint_retry_limit": 2,
+  "deferred_until_corpus_tail": false,
+  "error": "cloud ASR item exceeded 1800 seconds; retained for retry or chunked processing",
+  "generated_at": "2026-10-23T02:49:47Z",
   "live_id": "LIVE_20211217_001",
   "media_committed_to_git": false,
-  "model": "mlx-community/whisper-large-v3-turbo",
   "paid_api_used": false,
   "processing_location": "github-hosted-macos-arm64",
+  "retry_queue": "normal",
   "schema_version": "cloud-asr-attempt-v1",
-  "source_attempt_errors": [],
-  "status": "cloud_attempt_failed_needs_retry"
+  "status": "cloud_attempt_timed_out_needs_retry"
 }

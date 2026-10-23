@@ -1,0 +1,1576 @@
+{
+  "chunk_audio_sha256": "9e44ac223813fc5fc9147dbce718972220efc07b938c4bbd3aed67b90303d443",
+  "chunk_index": 0,
+  "completed_at": "2026-10-23T04:12:31Z",
+  "language": "zh",
+  "live_id": "LIVE_20211228_001",
+  "media_committed_to_git": false,
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "offset_sec": 0,
+  "paid_api_used": false,
+  "processing_location": "github-hosted-macos-arm64",
+  "schema_version": "cloud-asr-chunk-v1",
+  "segments": [
+    {
+      "avg_logprob": -0.087912,
+      "compression_ratio": 0.851351,
+      "end": 29.98,
+      "no_speech_prob": 0.0,
+      "start": 0.0,
+      "text": "请不吝点赞 订阅 转发 打赏支持明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.130961,
+      "compression_ratio": 0.724138,
+      "end": 59.98,
+      "no_speech_prob": 0.0,
+      "start": 30.0,
+      "text": "明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.194778,
+      "compression_ratio": 0.724138,
+      "end": 89.98,
+      "no_speech_prob": 0.0,
+      "start": 60.0,
+      "text": "明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.206083,
+      "compression_ratio": 0.724138,
+      "end": 119.96,
+      "no_speech_prob": 0.0,
+      "start": 89.98,
+      "text": "明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.182785,
+      "compression_ratio": 0.724138,
+      "end": 149.94,
+      "no_speech_prob": 0.0,
+      "start": 119.96,
+      "text": "明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.174856,
+      "compression_ratio": 0.724138,
+      "end": 179.92,
+      "no_speech_prob": 0.0,
+      "start": 149.94,
+      "text": "明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.135535,
+      "compression_ratio": 1.96875,
+      "end": 181.92,
+      "no_speech_prob": 0.0,
+      "start": 179.92,
+      "text": "明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.135535,
+      "compression_ratio": 1.96875,
+      "end": 183.92,
+      "no_speech_prob": 0.0,
+      "start": 181.92,
+      "text": "明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.135535,
+      "compression_ratio": 1.96875,
+      "end": 185.92,
+      "no_speech_prob": 0.0,
+      "start": 183.92,
+      "text": "明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.164464,
+      "compression_ratio": 0.724138,
+      "end": 187.92,
+      "no_speech_prob": 0.0,
+      "start": 185.92,
+      "text": "明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.132267,
+      "compression_ratio": 0.724138,
+      "end": 189.92,
+      "no_speech_prob": 0.0,
+      "start": 187.92,
+      "text": "明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.116306,
+      "compression_ratio": 1.147059,
+      "end": 191.92,
+      "no_speech_prob": 0.0,
+      "start": 189.92,
+      "text": "明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.116306,
+      "compression_ratio": 1.147059,
+      "end": 193.92,
+      "no_speech_prob": 0.0,
+      "start": 191.92,
+      "text": "明镜与点栏目"
+    },
+    {
+      "avg_logprob": -0.077951,
+      "compression_ratio": 1.16129,
+      "end": 195.92,
+      "no_speech_prob": 0.0,
+      "start": 193.92,
+      "text": "明镜与点栏目"
+    },
+    {
+      "avg_logprob": -0.077951,
+      "compression_ratio": 1.16129,
+      "end": 197.92,
+      "no_speech_prob": 0.0,
+      "start": 195.92,
+      "text": "明镜与点栏目"
+    },
+    {
+      "avg_logprob": -0.065657,
+      "compression_ratio": 1.741935,
+      "end": 199.92,
+      "no_speech_prob": 0.0,
+      "start": 197.92,
+      "text": "明镜与点栏目"
+    },
+    {
+      "avg_logprob": -0.065657,
+      "compression_ratio": 1.741935,
+      "end": 201.92,
+      "no_speech_prob": 0.0,
+      "start": 199.92,
+      "text": "明镜与点栏目"
+    },
+    {
+      "avg_logprob": -0.065657,
+      "compression_ratio": 1.741935,
+      "end": 203.92,
+      "no_speech_prob": 0.0,
+      "start": 201.92,
+      "text": "明镜与点栏目"
+    },
+    {
+      "avg_logprob": -0.066142,
+      "compression_ratio": 1.16129,
+      "end": 205.92,
+      "no_speech_prob": 0.0,
+      "start": 203.92,
+      "text": "明镜与点栏目"
+    },
+    {
+      "avg_logprob": -0.066142,
+      "compression_ratio": 1.16129,
+      "end": 207.92,
+      "no_speech_prob": 0.0,
+      "start": 205.92,
+      "text": "明镜与点栏目"
+    },
+    {
+      "avg_logprob": -0.068348,
+      "compression_ratio": 2.322581,
+      "end": 209.92,
+      "no_speech_prob": 0.0,
+      "start": 207.92,
+      "text": "明镜与点栏目"
+    },
+    {
+      "avg_logprob": -0.068348,
+      "compression_ratio": 2.322581,
+      "end": 211.92,
+      "no_speech_prob": 0.0,
+      "start": 209.92,
+      "text": "明镜与点栏目"
+    },
+    {
+      "avg_logprob": -0.068348,
+      "compression_ratio": 2.322581,
+      "end": 213.92,
+      "no_speech_prob": 0.0,
+      "start": 211.92,
+      "text": "明镜与点栏目"
+    },
+    {
+      "avg_logprob": -0.068348,
+      "compression_ratio": 2.322581,
+      "end": 215.92,
+      "no_speech_prob": 0.0,
+      "start": 213.92,
+      "text": "明镜与点栏目"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 7.18,
+      "end": 216.92,
+      "no_speech_prob": 0.0,
+      "start": 215.92,
+      "text": "明镜与点栏目"
+    },
+    {
+      "avg_logprob": -0.616143,
+      "compression_ratio": 6.355556,
+      "end": 246.92,
+      "no_speech_prob": 0.0,
+      "start": 216.92,
+      "text": "stripe, 的褪, attern,  assen, 严, 严, 严, 严, 严, 严, 严, 严, 严, 严, 严, 严, 严, 严, 严, 严, 严, 严, 严, 严, 严, 严, 严, 严, 严, 严, 严, 严, 严, 严, 严, 严, 严, 严, 严, 严, 严, 严, 严, 严, 严, 严, 严, 严, 严, 严, 严, 严, 严, 严, 严,"
+    },
+    {
+      "avg_logprob": -0.430746,
+      "compression_ratio": 8.171429,
+      "end": 276.92,
+      "no_speech_prob": 0.0,
+      "start": 246.92,
+      "text": "makaerea,  voice, 叨 叨, 叨, 叨, 叨, 叨, 叨, 叨, 叨, 叨, 叨, 叨, 叨, 叨, 叨, 叨, 叨, 叨, 叨, 叨, 叨, 叨, 叨, 叨, 叨, 叨, 叨, 叨, 叨, 叨, 叨, 叨, 叨, 叨, 叨, 叨, 叨, 叨, 叨, 叨, 叨, 叨, 叨, 叨, 叨, 叨, 叨, 叨, 叨, 叨, 叨, 叨, 叨, 叨,"
+    },
+    {
+      "avg_logprob": -0.991125,
+      "compression_ratio": 2.009524,
+      "end": 280.72,
+      "no_speech_prob": 0.0,
+      "start": 276.92,
+      "text": "四年前,我认为了一个房间,我的妈妈还在家里面。"
+    },
+    {
+      "avg_logprob": -0.991125,
+      "compression_ratio": 2.009524,
+      "end": 283.12,
+      "no_speech_prob": 0.0,
+      "start": 280.72,
+      "text": "后来,我的妈妈还在家里面。"
+    },
+    {
+      "avg_logprob": -0.991125,
+      "compression_ratio": 2.009524,
+      "end": 286.12,
+      "no_speech_prob": 0.0,
+      "start": 283.12,
+      "text": "我的家的家伙子在家里面。"
+    },
+    {
+      "avg_logprob": -0.991125,
+      "compression_ratio": 2.009524,
+      "end": 288.72,
+      "no_speech_prob": 0.0,
+      "start": 286.12,
+      "text": "为什么你不问我,"
+    },
+    {
+      "avg_logprob": -0.991125,
+      "compression_ratio": 2.009524,
+      "end": 292.12,
+      "no_speech_prob": 0.0,
+      "start": 288.72,
+      "text": "我一直在工作上,为什么我会在家里面的家伙子?"
+    },
+    {
+      "avg_logprob": -0.991125,
+      "compression_ratio": 2.009524,
+      "end": 294.52,
+      "no_speech_prob": 0.0,
+      "start": 292.12,
+      "text": "为什么我会在家伙子的家伙子?"
+    },
+    {
+      "avg_logprob": -0.991125,
+      "compression_ratio": 2.009524,
+      "end": 298.52,
+      "no_speech_prob": 0.0,
+      "start": 294.52,
+      "text": "为什么我会在家伙子里面的家伙子?"
+    },
+    {
+      "avg_logprob": -0.991125,
+      "compression_ratio": 2.009524,
+      "end": 299.72,
+      "no_speech_prob": 0.0,
+      "start": 298.52,
+      "text": "那是个原因。"
+    },
+    {
+      "avg_logprob": -0.991125,
+      "compression_ratio": 2.009524,
+      "end": 301.92,
+      "no_speech_prob": 0.0,
+      "start": 299.72,
+      "text": "你不问我,你只能问我。"
+    },
+    {
+      "avg_logprob": -0.991125,
+      "compression_ratio": 2.009524,
+      "end": 304.72,
+      "no_speech_prob": 0.0,
+      "start": 301.92,
+      "text": "你只能有一个人,你不问我。"
+    },
+    {
+      "avg_logprob": -0.991125,
+      "compression_ratio": 2.009524,
+      "end": 306.32,
+      "no_speech_prob": 0.0,
+      "start": 304.72,
+      "text": "但是,这是很厉害的。"
+    },
+    {
+      "avg_logprob": -1.915116,
+      "compression_ratio": 3.57971,
+      "end": 307.32,
+      "no_speech_prob": 0.0,
+      "start": 306.32,
+      "text": "我侧te, vo you, again, is 。"
+    },
+    {
+      "avg_logprob": -1.915116,
+      "compression_ratio": 3.57971,
+      "end": 307.62,
+      "no_speech_prob": 0.0,
+      "start": 307.32,
+      "text": "fact, b 。"
+    },
+    {
+      "avg_logprob": -1.915116,
+      "compression_ratio": 3.57971,
+      "end": 307.76,
+      "no_speech_prob": 0.0,
+      "start": 307.62,
+      "text": "myln, 。"
+    },
+    {
+      "avg_logprob": -1.915116,
+      "compression_ratio": 3.57971,
+      "end": 307.88,
+      "no_speech_prob": 0.0,
+      "start": 307.76,
+      "text": "the bG."
+    },
+    {
+      "avg_logprob": -1.915116,
+      "compression_ratio": 3.57971,
+      "end": 308.08,
+      "no_speech_prob": 0.0,
+      "start": 307.88,
+      "text": "。"
+    },
+    {
+      "avg_logprob": -1.915116,
+      "compression_ratio": 3.57971,
+      "end": 308.2,
+      "no_speech_prob": 0.0,
+      "start": 308.08,
+      "text": "。"
+    },
+    {
+      "avg_logprob": -1.915116,
+      "compression_ratio": 3.57971,
+      "end": 308.28,
+      "no_speech_prob": 0.0,
+      "start": 308.2,
+      "text": "。"
+    },
+    {
+      "avg_logprob": -1.915116,
+      "compression_ratio": 3.57971,
+      "end": 308.32,
+      "no_speech_prob": 0.0,
+      "start": 308.28,
+      "text": "。"
+    },
+    {
+      "avg_logprob": -1.915116,
+      "compression_ratio": 3.57971,
+      "end": 308.36,
+      "no_speech_prob": 0.0,
+      "start": 308.32,
+      "text": "。"
+    },
+    {
+      "avg_logprob": -1.915116,
+      "compression_ratio": 3.57971,
+      "end": 308.44,
+      "no_speech_prob": 0.0,
+      "start": 308.36,
+      "text": "。"
+    },
+    {
+      "avg_logprob": -1.915116,
+      "compression_ratio": 3.57971,
+      "end": 308.48,
+      "no_speech_prob": 0.0,
+      "start": 308.44,
+      "text": "。"
+    },
+    {
+      "avg_logprob": -1.915116,
+      "compression_ratio": 3.57971,
+      "end": 308.52,
+      "no_speech_prob": 0.0,
+      "start": 308.48,
+      "text": "。"
+    },
+    {
+      "avg_logprob": -1.915116,
+      "compression_ratio": 3.57971,
+      "end": 308.56,
+      "no_speech_prob": 0.0,
+      "start": 308.52,
+      "text": "。"
+    },
+    {
+      "avg_logprob": -1.915116,
+      "compression_ratio": 3.57971,
+      "end": 308.6,
+      "no_speech_prob": 0.0,
+      "start": 308.56,
+      "text": "。"
+    },
+    {
+      "avg_logprob": -1.915116,
+      "compression_ratio": 3.57971,
+      "end": 308.64,
+      "no_speech_prob": 0.0,
+      "start": 308.6,
+      "text": "。"
+    },
+    {
+      "avg_logprob": -1.915116,
+      "compression_ratio": 3.57971,
+      "end": 308.66,
+      "no_speech_prob": 0.0,
+      "start": 308.64,
+      "text": "。"
+    },
+    {
+      "avg_logprob": -1.915116,
+      "compression_ratio": 3.57971,
+      "end": 308.68,
+      "no_speech_prob": 0.0,
+      "start": 308.66,
+      "text": "。"
+    },
+    {
+      "avg_logprob": -1.915116,
+      "compression_ratio": 3.57971,
+      "end": 308.7,
+      "no_speech_prob": 0.0,
+      "start": 308.68,
+      "text": "。"
+    },
+    {
+      "avg_logprob": -1.915116,
+      "compression_ratio": 3.57971,
+      "end": 308.72,
+      "no_speech_prob": 0.0,
+      "start": 308.7,
+      "text": "。"
+    },
+    {
+      "avg_logprob": -1.915116,
+      "compression_ratio": 3.57971,
+      "end": 308.74,
+      "no_speech_prob": 0.0,
+      "start": 308.72,
+      "text": "。"
+    },
+    {
+      "avg_logprob": -1.915116,
+      "compression_ratio": 3.57971,
+      "end": 308.76,
+      "no_speech_prob": 0.0,
+      "start": 308.74,
+      "text": "。"
+    },
+    {
+      "avg_logprob": -0.841152,
+      "compression_ratio": 0.945455,
+      "end": 338.82,
+      "no_speech_prob": 0.0,
+      "start": 336.32,
+      "text": "You follow the man, you work the CCP"
+    },
+    {
+      "avg_logprob": -0.841152,
+      "compression_ratio": 0.945455,
+      "end": 340.82,
+      "no_speech_prob": 0.0,
+      "start": 339.32,
+      "text": "So sorry, Tabila"
+    },
+    {
+      "avg_logprob": -0.331253,
+      "compression_ratio": 1.360656,
+      "end": 368.32,
+      "no_speech_prob": 0.0,
+      "start": 366.32,
+      "text": "You know, Tabila 不知道嗎?"
+    },
+    {
+      "avg_logprob": -0.331253,
+      "compression_ratio": 1.360656,
+      "end": 369.32,
+      "no_speech_prob": 0.0,
+      "start": 368.32,
+      "text": "Ivo Bien不知道"
+    },
+    {
+      "avg_logprob": -0.331253,
+      "compression_ratio": 1.360656,
+      "end": 372.32,
+      "no_speech_prob": 0.0,
+      "start": 369.32,
+      "text": "你知道馬健副部長出來做證"
+    },
+    {
+      "avg_logprob": -0.331253,
+      "compression_ratio": 1.360656,
+      "end": 374.32,
+      "no_speech_prob": 0.0,
+      "start": 372.32,
+      "text": "他咋沒有說我是間諜啊"
+    },
+    {
+      "avg_logprob": -0.331253,
+      "compression_ratio": 1.360656,
+      "end": 376.32,
+      "no_speech_prob": 0.0,
+      "start": 374.32,
+      "text": "如果郭文貴是間諜的馬健說"
+    },
+    {
+      "avg_logprob": -0.331253,
+      "compression_ratio": 1.360656,
+      "end": 378.32,
+      "no_speech_prob": 0.0,
+      "start": 376.32,
+      "text": "這傢伙是我們的工作人員"
+    },
+    {
+      "avg_logprob": -0.331253,
+      "compression_ratio": 1.360656,
+      "end": 380.32,
+      "no_speech_prob": 0.0,
+      "start": 378.32,
+      "text": "是我的間諜啊"
+    },
+    {
+      "avg_logprob": -0.331253,
+      "compression_ratio": 1.360656,
+      "end": 382.32,
+      "no_speech_prob": 0.0,
+      "start": 380.32,
+      "text": "他怎麼稱叫幫忙郭文貴呢"
+    },
+    {
+      "avg_logprob": -0.331253,
+      "compression_ratio": 1.360656,
+      "end": 384.32,
+      "no_speech_prob": 0.0,
+      "start": 382.32,
+      "text": "你為什麼幫他說說郭文貴是間諜"
+    },
+    {
+      "avg_logprob": -0.331253,
+      "compression_ratio": 1.360656,
+      "end": 386.32,
+      "no_speech_prob": 0.0,
+      "start": 384.32,
+      "text": "Ivo Bien的人和CIA的人"
+    },
+    {
+      "avg_logprob": -0.331253,
+      "compression_ratio": 1.360656,
+      "end": 387.32,
+      "no_speech_prob": 0.0,
+      "start": 386.32,
+      "text": "我可以告訴大家"
+    },
+    {
+      "avg_logprob": -0.331253,
+      "compression_ratio": 1.360656,
+      "end": 389.32,
+      "no_speech_prob": 0.0,
+      "start": 387.32,
+      "text": "我開會不下七百次了吧"
+    },
+    {
+      "avg_logprob": -0.331253,
+      "compression_ratio": 1.360656,
+      "end": 391.32,
+      "no_speech_prob": 0.0,
+      "start": 389.92,
+      "text": "他們跟我開會他們都不想想"
+    },
+    {
+      "avg_logprob": -0.331253,
+      "compression_ratio": 1.360656,
+      "end": 393.32,
+      "no_speech_prob": 0.0,
+      "start": 391.32,
+      "text": "你這個小子是間諜啊"
+    },
+    {
+      "avg_logprob": -0.178668,
+      "compression_ratio": 1.057377,
+      "end": 396.32,
+      "no_speech_prob": 0.0,
+      "start": 393.32,
+      "text": "美國大使館開了美國大使館的車"
+    },
+    {
+      "avg_logprob": -0.178668,
+      "compression_ratio": 1.057377,
+      "end": 399.32,
+      "no_speech_prob": 0.0,
+      "start": 396.32,
+      "text": "到船舟去吃飯是公開的秘密"
+    },
+    {
+      "avg_logprob": -0.178668,
+      "compression_ratio": 1.057377,
+      "end": 402.32,
+      "no_speech_prob": 0.0,
+      "start": 400.32,
+      "text": "如果我是間諜"
+    },
+    {
+      "avg_logprob": -0.178668,
+      "compression_ratio": 1.057377,
+      "end": 404.32,
+      "no_speech_prob": 0.0,
+      "start": 402.32,
+      "text": "我不找被共產黨抓起來了"
+    },
+    {
+      "avg_logprob": -2.732766,
+      "compression_ratio": 0.428571,
+      "end": 424.32,
+      "no_speech_prob": 0.0,
+      "start": 423.32,
+      "text": "NH."
+    },
+    {
+      "avg_logprob": -0.264184,
+      "compression_ratio": 8.615385,
+      "end": 483.32,
+      "no_speech_prob": 0.0,
+      "start": 453.32,
+      "text": "Yi A.F.A.B.B,E,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A"
+    },
+    {
+      "avg_logprob": -0.77602,
+      "compression_ratio": 2.221429,
+      "end": 485.32,
+      "no_speech_prob": 0.0,
+      "start": 483.32,
+      "text": "不可能有法治疗。"
+    },
+    {
+      "avg_logprob": -0.77602,
+      "compression_ratio": 2.221429,
+      "end": 487.32,
+      "no_speech_prob": 0.0,
+      "start": 485.32,
+      "text": "不可能有法治疗。"
+    },
+    {
+      "avg_logprob": -0.77602,
+      "compression_ratio": 2.221429,
+      "end": 489.32,
+      "no_speech_prob": 0.0,
+      "start": 487.32,
+      "text": "不可能有法治疗。"
+    },
+    {
+      "avg_logprob": -0.77602,
+      "compression_ratio": 2.221429,
+      "end": 491.32,
+      "no_speech_prob": 0.0,
+      "start": 489.32,
+      "text": "不可能有法治疗。"
+    },
+    {
+      "avg_logprob": -0.77602,
+      "compression_ratio": 2.221429,
+      "end": 495.32,
+      "no_speech_prob": 0.0,
+      "start": 491.32,
+      "text": "你父母和父母是不重要的。"
+    },
+    {
+      "avg_logprob": -0.77602,
+      "compression_ratio": 2.221429,
+      "end": 497.32,
+      "no_speech_prob": 0.0,
+      "start": 495.32,
+      "text": "是最重要的。"
+    },
+    {
+      "avg_logprob": -0.77602,
+      "compression_ratio": 2.221429,
+      "end": 499.32,
+      "no_speech_prob": 0.0,
+      "start": 497.32,
+      "text": "所以,中国人不可能有法治疗。"
+    },
+    {
+      "avg_logprob": -0.77602,
+      "compression_ratio": 2.221429,
+      "end": 501.32,
+      "no_speech_prob": 0.0,
+      "start": 499.32,
+      "text": "不可能有法治疗。"
+    },
+    {
+      "avg_logprob": -0.77602,
+      "compression_ratio": 2.221429,
+      "end": 503.32,
+      "no_speech_prob": 0.0,
+      "start": 501.32,
+      "text": "不可能有法治疗。"
+    },
+    {
+      "avg_logprob": -0.77602,
+      "compression_ratio": 2.221429,
+      "end": 505.32,
+      "no_speech_prob": 0.0,
+      "start": 503.32,
+      "text": "不可能有法治疗。"
+    },
+    {
+      "avg_logprob": -0.77602,
+      "compression_ratio": 2.221429,
+      "end": 507.32,
+      "no_speech_prob": 0.0,
+      "start": 505.32,
+      "text": "现在,这就是非常好。"
+    },
+    {
+      "avg_logprob": -0.77602,
+      "compression_ratio": 2.221429,
+      "end": 509.32,
+      "no_speech_prob": 0.0,
+      "start": 507.32,
+      "text": "在美国的国家。"
+    },
+    {
+      "avg_logprob": -1.298763,
+      "compression_ratio": 4.597315,
+      "end": 511.32,
+      "no_speech_prob": 0.0,
+      "start": 509.32,
+      "text": "是 наli 。"
+    },
+    {
+      "avg_logprob": -1.298763,
+      "compression_ratio": 4.597315,
+      "end": 513.32,
+      "no_speech_prob": 0.0,
+      "start": 511.32,
+      "text": "是ta the old media, just to follow the money and the power,"
+    },
+    {
+      "avg_logprob": -1.298763,
+      "compression_ratio": 4.597315,
+      "end": 515.32,
+      "no_speech_prob": 0.0,
+      "start": 513.32,
+      "text": "and to not follow the justice."
+    },
+    {
+      "avg_logprob": -1.298763,
+      "compression_ratio": 4.597315,
+      "end": 517.32,
+      "no_speech_prob": 0.0,
+      "start": 515.32,
+      "text": "there is no religion, no faith,"
+    },
+    {
+      "avg_logprob": -1.298763,
+      "compression_ratio": 4.597315,
+      "end": 519.32,
+      "no_speech_prob": 0.0,
+      "start": 517.32,
+      "text": "there is no justice,"
+    },
+    {
+      "avg_logprob": -1.298763,
+      "compression_ratio": 4.597315,
+      "end": 521.32,
+      "no_speech_prob": 0.0,
+      "start": 519.32,
+      "text": "there is no hero!"
+    },
+    {
+      "avg_logprob": -1.298763,
+      "compression_ratio": 4.597315,
+      "end": 522.32,
+      "no_speech_prob": 0.0,
+      "start": 521.32,
+      "text": "Now, the which the people and the people,"
+    },
+    {
+      "avg_logprob": -1.298763,
+      "compression_ratio": 4.597315,
+      "end": 522.32,
+      "no_speech_prob": 0.0,
+      "start": 522.32,
+      "text": "the people, the people,"
+    },
+    {
+      "avg_logprob": -1.298763,
+      "compression_ratio": 4.597315,
+      "end": 519.42,
+      "no_speech_prob": 0.0,
+      "start": 519.32,
+      "text": "the people, the people,"
+    },
+    {
+      "avg_logprob": -1.298763,
+      "compression_ratio": 4.597315,
+      "end": 519.6,
+      "no_speech_prob": 0.0,
+      "start": 519.42,
+      "text": "the people, the people,"
+    },
+    {
+      "avg_logprob": -1.298763,
+      "compression_ratio": 4.597315,
+      "end": 519.76,
+      "no_speech_prob": 0.0,
+      "start": 519.6,
+      "text": "the people, the people,"
+    },
+    {
+      "avg_logprob": -1.298763,
+      "compression_ratio": 4.597315,
+      "end": 519.82,
+      "no_speech_prob": 0.0,
+      "start": 519.76,
+      "text": "the people, the people,"
+    },
+    {
+      "avg_logprob": -1.298763,
+      "compression_ratio": 4.597315,
+      "end": 519.88,
+      "no_speech_prob": 0.0,
+      "start": 519.82,
+      "text": "the people, the people,"
+    },
+    {
+      "avg_logprob": -1.298763,
+      "compression_ratio": 4.597315,
+      "end": 519.98,
+      "no_speech_prob": 0.0,
+      "start": 519.88,
+      "text": "the people, the people,"
+    },
+    {
+      "avg_logprob": -1.298763,
+      "compression_ratio": 4.597315,
+      "end": 520.18,
+      "no_speech_prob": 0.0,
+      "start": 519.98,
+      "text": "the people, the people,"
+    },
+    {
+      "avg_logprob": -1.298763,
+      "compression_ratio": 4.597315,
+      "end": 520.32,
+      "no_speech_prob": 0.0,
+      "start": 520.18,
+      "text": "the people, the people,"
+    },
+    {
+      "avg_logprob": -1.298763,
+      "compression_ratio": 4.597315,
+      "end": 520.38,
+      "no_speech_prob": 0.0,
+      "start": 520.32,
+      "text": "the people, the people,"
+    },
+    {
+      "avg_logprob": -1.298763,
+      "compression_ratio": 4.597315,
+      "end": 520.52,
+      "no_speech_prob": 0.0,
+      "start": 520.38,
+      "text": "the people, the people,"
+    },
+    {
+      "avg_logprob": -0.409479,
+      "compression_ratio": 6.0875,
+      "end": 523.06,
+      "no_speech_prob": 0.0,
+      "start": 520.52,
+      "text": "why the global people of America?"
+    },
+    {
+      "avg_logprob": -0.409479,
+      "compression_ratio": 6.0875,
+      "end": 524.68,
+      "no_speech_prob": 0.0,
+      "start": 523.06,
+      "text": "because the way the people of America to be a hero"
+    },
+    {
+      "avg_logprob": -0.274058,
+      "compression_ratio": 8.828571,
+      "end": 554.68,
+      "no_speech_prob": 0.0,
+      "start": 524.68,
+      "text": "… 你不 choose 佢 佢 佢 佢 佢 佢 佢 佢 佢 佢 佢 佢 佢 佢 佢 佢 佢 佢 佢 佢 佢 佢 佢 佢 佢 佢 佢 佢 佢 佢 佢 佢 佢 佢 佢 佢 佢 佢 佢 佢 佢 佢 佢 佢 佢 佢 佢 佢 佢 佢 佢 佢 佢 佢 佢 佢 佢 佢 佢 佢 佢 佢 佢 佢 佢 佢 佢 佢 佢 佢 佢 佢 �"
+    },
+    {
+      "avg_logprob": -0.565339,
+      "compression_ratio": 6.409091,
+      "end": 584.68,
+      "no_speech_prob": 0.0,
+      "start": 554.68,
+      "text": "here, 央 att 央鱼, 佢鱼, 产严, 亦, 亦, 亦, 亦, 亦, 亦, 亦, 亦, 亦, 亦, 亦, 亦, 亦, 亦, 亦, 亦, 亦, 亦, 亦, 亦, 亦, 亦, 亦, 亦, 亦, 亦, 亦, 亦, 亦, 亦, 亦, 亦, 亦, 亦, 亦, 亦, 亦, 亦, 亦, 亦, 亦, 亦, 亦, 亦, 亦, 亦, 亦, 亦, 亦,"
+    },
+    {
+      "avg_logprob": -0.951709,
+      "compression_ratio": 4.270833,
+      "end": 585.68,
+      "no_speech_prob": 0.0,
+      "start": 584.68,
+      "text": "And the people the people."
+    },
+    {
+      "avg_logprob": -0.951709,
+      "compression_ratio": 4.270833,
+      "end": 586.68,
+      "no_speech_prob": 0.0,
+      "start": 585.68,
+      "text": "I we in the in."
+    },
+    {
+      "avg_logprob": -0.951709,
+      "compression_ratio": 4.270833,
+      "end": 587.68,
+      "no_speech_prob": 0.0,
+      "start": 586.68,
+      "text": "I the the."
+    },
+    {
+      "avg_logprob": -0.951709,
+      "compression_ratio": 4.270833,
+      "end": 588.68,
+      "no_speech_prob": 0.0,
+      "start": 587.68,
+      "text": "I a."
+    },
+    {
+      "avg_logprob": -0.951709,
+      "compression_ratio": 4.270833,
+      "end": 589.68,
+      "no_speech_prob": 0.0,
+      "start": 588.68,
+      "text": "I."
+    },
+    {
+      "avg_logprob": -0.951709,
+      "compression_ratio": 4.270833,
+      "end": 590.68,
+      "no_speech_prob": 0.0,
+      "start": 589.68,
+      "text": "I."
+    },
+    {
+      "avg_logprob": -0.951709,
+      "compression_ratio": 4.270833,
+      "end": 591.68,
+      "no_speech_prob": 0.0,
+      "start": 590.68,
+      "text": "I."
+    },
+    {
+      "avg_logprob": -0.951709,
+      "compression_ratio": 4.270833,
+      "end": 592.68,
+      "no_speech_prob": 0.0,
+      "start": 591.68,
+      "text": "I."
+    },
+    {
+      "avg_logprob": -0.951709,
+      "compression_ratio": 4.270833,
+      "end": 593.68,
+      "no_speech_prob": 0.0,
+      "start": 592.68,
+      "text": "I."
+    },
+    {
+      "avg_logprob": -0.951709,
+      "compression_ratio": 4.270833,
+      "end": 594.68,
+      "no_speech_prob": 0.0,
+      "start": 593.68,
+      "text": "I."
+    },
+    {
+      "avg_logprob": -0.951709,
+      "compression_ratio": 4.270833,
+      "end": 595.68,
+      "no_speech_prob": 0.0,
+      "start": 594.68,
+      "text": "I."
+    },
+    {
+      "avg_logprob": -0.951709,
+      "compression_ratio": 4.270833,
+      "end": 596.68,
+      "no_speech_prob": 0.0,
+      "start": 595.68,
+      "text": "I."
+    },
+    {
+      "avg_logprob": -0.951709,
+      "compression_ratio": 4.270833,
+      "end": 597.68,
+      "no_speech_prob": 0.0,
+      "start": 596.68,
+      "text": "I."
+    },
+    {
+      "avg_logprob": -0.951709,
+      "compression_ratio": 4.270833,
+      "end": 598.68,
+      "no_speech_prob": 0.0,
+      "start": 597.68,
+      "text": "I."
+    },
+    {
+      "avg_logprob": -0.951709,
+      "compression_ratio": 4.270833,
+      "end": 599.68,
+      "no_speech_prob": 0.0,
+      "start": 598.68,
+      "text": "I."
+    },
+    {
+      "avg_logprob": -0.951709,
+      "compression_ratio": 4.270833,
+      "end": 599.78,
+      "no_speech_prob": 0.0,
+      "start": 599.68,
+      "text": "I."
+    },
+    {
+      "avg_logprob": -0.951709,
+      "compression_ratio": 4.270833,
+      "end": 600.68,
+      "no_speech_prob": 0.0,
+      "start": 599.78,
+      "text": "I."
+    },
+    {
+      "avg_logprob": -0.951709,
+      "compression_ratio": 4.270833,
+      "end": 601.1,
+      "no_speech_prob": 0.0,
+      "start": 600.68,
+      "text": "I."
+    },
+    {
+      "avg_logprob": -0.951709,
+      "compression_ratio": 4.270833,
+      "end": 601.68,
+      "no_speech_prob": 0.0,
+      "start": 601.1,
+      "text": "I."
+    },
+    {
+      "avg_logprob": -0.951709,
+      "compression_ratio": 4.270833,
+      "end": 602.68,
+      "no_speech_prob": 0.0,
+      "start": 601.68,
+      "text": "I."
+    },
+    {
+      "avg_logprob": -0.951709,
+      "compression_ratio": 4.270833,
+      "end": 603.1,
+      "no_speech_prob": 0.0,
+      "start": 602.68,
+      "text": "I."
+    },
+    {
+      "avg_logprob": -0.951709,
+      "compression_ratio": 4.270833,
+      "end": 603.28,
+      "no_speech_prob": 0.0,
+      "start": 603.1,
+      "text": "I."
+    },
+    {
+      "avg_logprob": -0.951709,
+      "compression_ratio": 4.270833,
+      "end": 603.38,
+      "no_speech_prob": 0.0,
+      "start": 603.28,
+      "text": "I."
+    },
+    {
+      "avg_logprob": -0.951709,
+      "compression_ratio": 4.270833,
+      "end": 603.4,
+      "no_speech_prob": 0.0,
+      "start": 603.38,
+      "text": "I."
+    },
+    {
+      "avg_logprob": -0.951709,
+      "compression_ratio": 4.270833,
+      "end": 603.48,
+      "no_speech_prob": 0.0,
+      "start": 603.4,
+      "text": "I."
+    },
+    {
+      "avg_logprob": -1.273366,
+      "compression_ratio": 3.691983,
+      "end": 608.76,
+      "no_speech_prob": 0.0,
+      "start": 603.48,
+      "text": "if the people in China have a free religion, the people in China have a really independent road,"
+    },
+    {
+      "avg_logprob": -1.273366,
+      "compression_ratio": 3.691983,
+      "end": 614.2,
+      "no_speech_prob": 0.0,
+      "start": 608.76,
+      "text": "the people in China have a really, really good an education system, that is a kind of a new future"
+    },
+    {
+      "avg_logprob": -1.273366,
+      "compression_ratio": 3.691983,
+      "end": 618.52,
+      "no_speech_prob": 0.0,
+      "start": 614.2,
+      "text": "of the state, we don't want the know, the genocide in Xinjiang, the genocide in errors, the genocide in Hanak."
+    },
+    {
+      "avg_logprob": -1.273366,
+      "compression_ratio": 3.691983,
+      "end": 618.64,
+      "no_speech_prob": 0.0,
+      "start": 618.52,
+      "text": "that is a new future of the state, Thank you!"
+    },
+    {
+      "avg_logprob": -1.273366,
+      "compression_ratio": 3.691983,
+      "end": 619.4,
+      "no_speech_prob": 0.0,
+      "start": 618.64,
+      "text": "can you just repeat that little in Chinese, what the need to be a good?"
+    },
+    {
+      "avg_logprob": -0.323482,
+      "compression_ratio": 1.164179,
+      "end": 636.4,
+      "no_speech_prob": 0.0,
+      "start": 619.4,
+      "text": "新中国联邦是我们要建造的一个"
+    },
+    {
+      "avg_logprob": -0.323482,
+      "compression_ratio": 1.164179,
+      "end": 643.46,
+      "no_speech_prob": 0.0,
+      "start": 637.06,
+      "text": "中国人未来追求的一个和与世界和平相处的一个"
+    },
+    {
+      "avg_logprob": -0.323482,
+      "compression_ratio": 1.164179,
+      "end": 647.9,
+      "no_speech_prob": 0.0,
+      "start": 643.66,
+      "text": "受宪法保护的和独立法治的信仰自由的"
+    },
+    {
+      "avg_logprob": -0.265157,
+      "compression_ratio": 1.03125,
+      "end": 652.0,
+      "no_speech_prob": 0.0,
+      "start": 647.9,
+      "text": "还有一个不能再发生现在像共产党一党独大的"
+    },
+    {
+      "avg_logprob": -0.265157,
+      "compression_ratio": 1.03125,
+      "end": 655.58,
+      "no_speech_prob": 0.0,
+      "start": 652.26,
+      "text": "要中国人一人一票投出的合法政府"
+    },
+    {
+      "avg_logprob": -0.265157,
+      "compression_ratio": 1.03125,
+      "end": 657.38,
+      "no_speech_prob": 0.0,
+      "start": 655.84,
+      "text": "这是我们追求的目标"
+    },
+    {
+      "avg_logprob": -0.299904,
+      "compression_ratio": 13.117647,
+      "end": 707.9,
+      "no_speech_prob": 0.0,
+      "start": 677.9,
+      "text": "5,5,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1"
+    },
+    {
+      "avg_logprob": -0.971259,
+      "compression_ratio": 1.781065,
+      "end": 715.66,
+      "no_speech_prob": 0.0,
+      "start": 707.9,
+      "text": "Gcoin,Gdollar,Gnews,GTV,Gfashion, tell us about what they are."
+    },
+    {
+      "avg_logprob": -0.971259,
+      "compression_ratio": 1.781065,
+      "end": 724.34,
+      "no_speech_prob": 0.0,
+      "start": 715.66,
+      "text": "我不是自己的,我只是一個人的,我只是一個人的,我只是一個人的,"
+    },
+    {
+      "avg_logprob": -0.971259,
+      "compression_ratio": 1.781065,
+      "end": 728.34,
+      "no_speech_prob": 0.0,
+      "start": 724.34,
+      "text": "我也是一個人的,一個人的,一個人的,一個人的,一個人的,一個人的,"
+    },
+    {
+      "avg_logprob": -0.971259,
+      "compression_ratio": 1.781065,
+      "end": 733.34,
+      "no_speech_prob": 0.0,
+      "start": 728.34,
+      "text": "因為我沒有錢,沒有$1,沒有 credit card,沒有 bank account,"
+    },
+    {
+      "avg_logprob": -0.449819,
+      "compression_ratio": 7.689655,
+      "end": 763.34,
+      "no_speech_prob": 0.0,
+      "start": 733.34,
+      "text": "SGP,NC,C,B,G0,B,C,B,C,B,C,B,C,B,C,B,C,B,B,C,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B"
+    },
+    {
+      "avg_logprob": -0.450417,
+      "compression_ratio": 12.948718,
+      "end": 793.34,
+      "no_speech_prob": 0.0,
+      "start": 763.34,
+      "text": "And the G-C fund, the G-C, the G-C, the G-C, the G-C, the G-C, the G-C, the D, the B, the S, the S, the S, the S, the S, the S, the S, the S, the S, the S, the S, the S, the S, the S, the S, the S, the S, the S, the S, the S, the S, the S, the S, the S, the S, the S, the S, the S, the S, the S, the S, the S, the S, the S, the S, the S, the S, the S, the S, the S, the S, the S, the S, the S, the S, the S, the S, the S, the S, the S, the S, the S, the S, the S, the S, the S, the S, the S, the S, the S,"
+    },
+    {
+      "avg_logprob": -0.376285,
+      "compression_ratio": 1.691244,
+      "end": 799.34,
+      "no_speech_prob": 0.0,
+      "start": 793.34,
+      "text": "這就是我們在中國的很多人在中國的支持者"
+    },
+    {
+      "avg_logprob": -0.376285,
+      "compression_ratio": 1.691244,
+      "end": 803.34,
+      "no_speech_prob": 0.0,
+      "start": 799.34,
+      "text": "他們在中國抓了我們很多的支持者"
+    },
+    {
+      "avg_logprob": -0.376285,
+      "compression_ratio": 1.691244,
+      "end": 807.34,
+      "no_speech_prob": 0.0,
+      "start": 803.34,
+      "text": "我們在中國說明我們有很多的支持者"
+    },
+    {
+      "avg_logprob": -0.376285,
+      "compression_ratio": 1.691244,
+      "end": 811.34,
+      "no_speech_prob": 0.0,
+      "start": 807.34,
+      "text": "每天都在抓人包括法治基金、捐款者他們也抓"
+    },
+    {
+      "avg_logprob": -0.376285,
+      "compression_ratio": 1.691244,
+      "end": 813.34,
+      "no_speech_prob": 0.0,
+      "start": 811.34,
+      "text": "這說明他們很恐懼"
+    },
+    {
+      "avg_logprob": -0.376285,
+      "compression_ratio": 1.691244,
+      "end": 815.34,
+      "no_speech_prob": 0.0,
+      "start": 813.34,
+      "text": "如果他們不恐懼的話他們不會理我們"
+    },
+    {
+      "avg_logprob": -0.376285,
+      "compression_ratio": 1.691244,
+      "end": 820.34,
+      "no_speech_prob": 0.0,
+      "start": 815.34,
+      "text": "那麼在中國共產黨跟我來談的人就說過"
+    },
+    {
+      "avg_logprob": -0.376285,
+      "compression_ratio": 1.691244,
+      "end": 822.34,
+      "no_speech_prob": 0.0,
+      "start": 820.34,
+      "text": "在中國超過4億人來支持我"
+    },
+    {
+      "avg_logprob": -0.121945,
+      "compression_ratio": 1.486056,
+      "end": 824.34,
+      "no_speech_prob": 0.0,
+      "start": 822.34,
+      "text": "這個消滅共產黨"
+    },
+    {
+      "avg_logprob": -0.121945,
+      "compression_ratio": 1.486056,
+      "end": 826.34,
+      "no_speech_prob": 0.0,
+      "start": 824.34,
+      "text": "那現在共產黨內部人告訴我們說"
+    },
+    {
+      "avg_logprob": -0.121945,
+      "compression_ratio": 1.486056,
+      "end": 830.34,
+      "no_speech_prob": 0.0,
+      "start": 826.34,
+      "text": "有超過5億人甚至更多的人了解爆料革命"
+    },
+    {
+      "avg_logprob": -0.121945,
+      "compression_ratio": 1.486056,
+      "end": 832.34,
+      "no_speech_prob": 0.0,
+      "start": 830.34,
+      "text": "了解新中國的那方"
+    },
+    {
+      "avg_logprob": -0.121945,
+      "compression_ratio": 1.486056,
+      "end": 836.34,
+      "no_speech_prob": 0.0,
+      "start": 832.34,
+      "text": "也希望很多人是不相信的我們能推翻共產黨"
+    },
+    {
+      "avg_logprob": -0.121945,
+      "compression_ratio": 1.486056,
+      "end": 838.34,
+      "no_speech_prob": 0.0,
+      "start": 836.34,
+      "text": "但是現在更多人會相信說"
+    },
+    {
+      "avg_logprob": -0.121945,
+      "compression_ratio": 1.486056,
+      "end": 841.34,
+      "no_speech_prob": 0.0,
+      "start": 838.34,
+      "text": "很有可能我們能消滅共產黨"
+    },
+    {
+      "avg_logprob": -0.121945,
+      "compression_ratio": 1.486056,
+      "end": 844.34,
+      "no_speech_prob": 0.0,
+      "start": 841.34,
+      "text": "這最起碼是一個中國人的希望"
+    },
+    {
+      "avg_logprob": -0.121945,
+      "compression_ratio": 1.486056,
+      "end": 847.34,
+      "no_speech_prob": 0.0,
+      "start": 844.34,
+      "text": "中國人在以前沒有任何希望"
+    },
+    {
+      "avg_logprob": -0.121945,
+      "compression_ratio": 1.486056,
+      "end": 851.34,
+      "no_speech_prob": 0.0,
+      "start": 847.34,
+      "text": "而中國人民他們想要民主"
+    },
+    {
+      "avg_logprob": -0.123149,
+      "compression_ratio": 1.361233,
+      "end": 853.34,
+      "no_speech_prob": 0.0,
+      "start": 851.34,
+      "text": "想要信仰的自由"
+    },
+    {
+      "avg_logprob": -0.123149,
+      "compression_ratio": 1.361233,
+      "end": 854.34,
+      "no_speech_prob": 0.0,
+      "start": 853.34,
+      "text": "想要法治"
+    },
+    {
+      "avg_logprob": -0.123149,
+      "compression_ratio": 1.361233,
+      "end": 857.34,
+      "no_speech_prob": 0.0,
+      "start": 854.34,
+      "text": "想要和美國一樣這樣的民主自由的社會"
+    },
+    {
+      "avg_logprob": -0.123149,
+      "compression_ratio": 1.361233,
+      "end": 859.34,
+      "no_speech_prob": 0.0,
+      "start": 857.34,
+      "text": "這是絕大多數人想像的"
+    },
+    {
+      "avg_logprob": -0.123149,
+      "compression_ratio": 1.361233,
+      "end": 863.34,
+      "no_speech_prob": 0.0,
+      "start": 859.34,
+      "text": "但是他們被共產黨洗腦了很多年"
+    },
+    {
+      "avg_logprob": -0.123149,
+      "compression_ratio": 1.361233,
+      "end": 867.34,
+      "no_speech_prob": 0.0,
+      "start": 863.34,
+      "text": "我相信新中國聯邦和爆料革命給了他們一個希望"
+    },
+    {
+      "avg_logprob": -0.123149,
+      "compression_ratio": 1.361233,
+      "end": 870.34,
+      "no_speech_prob": 0.0,
+      "start": 867.34,
+      "text": "給了他們一個了解西方真相的地方"
+    },
+    {
+      "avg_logprob": -0.123149,
+      "compression_ratio": 1.361233,
+      "end": 873.34,
+      "no_speech_prob": 0.0,
+      "start": 870.34,
+      "text": "但是這需要我們做很多很多的事情"
+    },
+    {
+      "avg_logprob": -0.14842,
+      "compression_ratio": 1.420408,
+      "end": 876.34,
+      "no_speech_prob": 0.0,
+      "start": 873.34,
+      "text": "這就像我每天都要回答中國國內的朋友啊"
+    },
+    {
+      "avg_logprob": -0.14842,
+      "compression_ratio": 1.420408,
+      "end": 879.34,
+      "no_speech_prob": 0.0,
+      "start": 876.34,
+      "text": "還有支持者他們說病毒是美國造的"
+    },
+    {
+      "avg_logprob": -0.14842,
+      "compression_ratio": 1.420408,
+      "end": 882.34,
+      "no_speech_prob": 0.0,
+      "start": 879.34,
+      "text": "他們說美國人已經死了一半的人了"
+    },
+    {
+      "avg_logprob": -0.14842,
+      "compression_ratio": 1.420408,
+      "end": 883.34,
+      "no_speech_prob": 0.0,
+      "start": 882.34,
+      "text": "這是不可能的"
+    },
+    {
+      "avg_logprob": -0.14842,
+      "compression_ratio": 1.420408,
+      "end": 886.34,
+      "no_speech_prob": 0.0,
+      "start": 883.34,
+      "text": "說美國人死的人都飄在大海裡"
+    },
+    {
+      "avg_logprob": -0.14842,
+      "compression_ratio": 1.420408,
+      "end": 888.34,
+      "no_speech_prob": 0.0,
+      "start": 886.34,
+      "text": "說美國人製造了冠狀病毒"
+    },
+    {
+      "avg_logprob": -0.14842,
+      "compression_ratio": 1.420408,
+      "end": 889.34,
+      "no_speech_prob": 0.0,
+      "start": 888.34,
+      "text": "這是不現實的"
+    },
+    {
+      "avg_logprob": -0.14842,
+      "compression_ratio": 1.420408,
+      "end": 891.34,
+      "no_speech_prob": 0.0,
+      "start": 889.34,
+      "text": "那麽我們要讓中國人知道真相"
+    },
+    {
+      "avg_logprob": -0.14842,
+      "compression_ratio": 1.420408,
+      "end": 893.34,
+      "no_speech_prob": 0.0,
+      "start": 891.34,
+      "text": "共產黨就是靠洗腦"
+    },
+    {
+      "avg_logprob": -0.14842,
+      "compression_ratio": 1.420408,
+      "end": 895.34,
+      "no_speech_prob": 0.0,
+      "start": 893.34,
+      "text": "還控制了中國控制了世界"
+    },
+    {
+      "avg_logprob": -0.17498,
+      "compression_ratio": 0.765957,
+      "end": 897.34,
+      "no_speech_prob": 0.0,
+      "start": 895.34,
+      "text": "所以他們才建造一個防火牆"
+    }
+  ],
+  "text": "请不吝点赞 订阅 转发 打赏支持明镜与点点栏目明镜与点点栏目明镜与点点栏目明镜与点点栏目明镜与点点栏目明镜与点点栏目明镜与点点栏目明镜与点点栏目明镜与点点栏目明镜与点点栏目明镜与点点栏目明镜与点点栏目明镜与点栏目明镜与点栏目明镜与点栏目明镜与点栏目明镜与点栏目明镜与点栏目明镜与点栏目明镜与点栏目明镜与点栏目明镜与点栏目明镜与点栏目明镜与点栏目明镜与点栏目stripe, 的褪, attern,  assen, 严, 严, 严, 严, 严, 严, 严, 严, 严, 严, 严, 严, 严, 严, 严, 严, 严, 严, 严, 严, 严, 严, 严, 严, 严, 严, 严, 严, 严, 严, 严, 严, 严, 严, 严, 严, 严, 严, 严, 严, 严, 严, 严, 严, 严, 严, 严, 严, 严, 严, 严,  makaerea,  voice, 叨 叨, 叨, 叨, 叨, 叨, 叨, 叨, 叨, 叨, 叨, 叨, 叨, 叨, 叨, 叨, 叨, 叨, 叨, 叨, 叨, 叨, 叨, 叨, 叨, 叨, 叨, 叨, 叨, 叨, 叨, 叨, 叨, 叨, 叨, 叨, 叨, 叨, 叨, 叨, 叨, 叨, 叨, 叨, 叨, 叨, 叨, 叨, 叨, 叨, 叨, 叨, 叨, 叨,四年前,我认为了一个房间,我的妈妈还在家里面。后来,我的妈妈还在家里面。我的家的家伙子在家里面。为什么你不问我,我一直在工作上,为什么我会在家里面的家伙子?为什么我会在家伙子的家伙子?为什么我会在家伙子里面的家伙子?那是个原因。你不问我,你只能问我。你只能有一个人,你不问我。但是,这是很厉害的。我侧te, vo you, again, is 。 fact, b 。 myln, 。 the bG. 。 。 。 。 。 。 。 。 。 。 。 。 。 。 。 。 。You follow the man, you work the CCPSo sorry, TabilaYou know, Tabila 不知道嗎?Ivo Bien不知道你知道馬健副部長出來做證他咋沒有說我是間諜啊如果郭文貴是間諜的馬健說這傢伙是我們的工作人員是我的間諜啊他怎麼稱叫幫忙郭文貴呢你為什麼幫他說說郭文貴是間諜Ivo Bien的人和CIA的人我可以告訴大家我開會不下七百次了吧他們跟我開會他們都不想想你這個小子是間諜啊美國大使館開了美國大使館的車到船舟去吃飯是公開的秘密如果我是間諜我不找被共產黨抓起來了NH.Yi A.F.A.B.B,E,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A不可能有法治疗。不可能有法治疗。不可能有法治疗。不可能有法治疗。你父母和父母是不重要的。是最重要的。所以,中国人不可能有法治疗。不可能有法治疗。不可能有法治疗。不可能有法治疗。现在,这就是非常好。在美国的国家。是 наli 。是ta the old media, just to follow the money and the power, and to not follow the justice. there is no religion, no faith, there is no justice, there is no hero! Now, the which the people and the people, the people, the people, the people, the people, the people, the people, the people, the people, the people, the people, the people, the people, the people, the people, the people, the people, the people, the people, the people, the people, the people, the people, why the global people of America? because the way the people of America to be a hero… 你不 choose 佢 佢 佢 佢 佢 佢 佢 佢 佢 佢 佢 佢 佢 佢 佢 佢 佢 佢 佢 佢 佢 佢 佢 佢 佢 佢 佢 佢 佢 佢 佢 佢 佢 佢 佢 佢 佢 佢 佢 佢 佢 佢 佢 佢 佢 佢 佢 佢 佢 佢 佢 佢 佢 佢 佢 佢 佢 佢 佢 佢 佢 佢 佢 佢 佢 佢 佢 佢 佢 佢 佢 佢 � here, 央 att 央鱼, 佢鱼, 产严, 亦, 亦, 亦, 亦, 亦, 亦, 亦, 亦, 亦, 亦, 亦, 亦, 亦, 亦, 亦, 亦, 亦, 亦, 亦, 亦, 亦, 亦, 亦, 亦, 亦, 亦, 亦, 亦, 亦, 亦, 亦, 亦, 亦, 亦, 亦, 亦, 亦, 亦, 亦, 亦, 亦, 亦, 亦, 亦, 亦, 亦, 亦, 亦, 亦,  And the people the people. I we in the in. I the the. I a. I. I. I. I. I. I. I. I. I. I. I. I. I. I. I. I. I. I. I. I. I. if the people in China have a free religion, the people in China have a really independent road, the people in China have a really, really good an education system, that is a kind of a new future of the state, we don't want the know, the genocide in Xinjiang, the genocide in errors, the genocide in Hanak. that is a new future of the state, Thank you! can you just repeat that little in Chinese, what the need to be a good?新中国联邦是我们要建造的一个中国人未来追求的一个和与世界和平相处的一个受宪法保护的和独立法治的信仰自由的还有一个不能再发生现在像共产党一党独大的要中国人一人一票投出的合法政府这是我们追求的目标5,5,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1Gcoin,Gdollar,Gnews,GTV,Gfashion, tell us about what they are.我不是自己的,我只是一個人的,我只是一個人的,我只是一個人的,我也是一個人的,一個人的,一個人的,一個人的,一個人的,一個人的,因為我沒有錢,沒有$1,沒有 credit card,沒有 bank account,SGP,NC,C,B,G0,B,C,B,C,B,C,B,C,B,C,B,C,B,B,C,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B,B And the G-C fund, the G-C, the G-C, the G-C, the G-C, the G-C, the G-C, the D, the B, the S, the S, the S, the S, the S, the S, the S, the S, the S, the S, the S, the S, the S, the S, the S, the S, the S, the S, the S, the S, the S, the S, the S, the S, the S, the S, the S, the S, the S, the S, the S, the S, the S, the S, the S, the S, the S, the S, the S, the S, the S, the S, the S, the S, the S, the S, the S, the S, the S, the S, the S, the S, the S, the S, the S, the S, the S, the S, the S, the S,這就是我們在中國的很多人在中國的支持者他們在中國抓了我們很多的支持者我們在中國說明我們有很多的支持者每天都在抓人包括法治基金、捐款者他們也抓這說明他們很恐懼如果他們不恐懼的話他們不會理我們那麼在中國共產黨跟我來談的人就說過在中國超過4億人來支持我這個消滅共產黨那現在共產黨內部人告訴我們說有超過5億人甚至更多的人了解爆料革命了解新中國的那方也希望很多人是不相信的我們能推翻共產黨但是現在更多人會相信說很有可能我們能消滅共產黨這最起碼是一個中國人的希望中國人在以前沒有任何希望而中國人民他們想要民主想要信仰的自由想要法治想要和美國一樣這樣的民主自由的社會這是絕大多數人想像的但是他們被共產黨洗腦了很多年我相信新中國聯邦和爆料革命給了他們一個希望給了他們一個了解西方真相的地方但是這需要我們做很多很多的事情這就像我每天都要回答中國國內的朋友啊還有支持者他們說病毒是美國造的他們說美國人已經死了一半的人了這是不可能的說美國人死的人都飄在大海裡說美國人製造了冠狀病毒這是不現實的那麽我們要讓中國人知道真相共產黨就是靠洗腦還控制了中國控制了世界所以他們才建造一個防火牆"
+}
