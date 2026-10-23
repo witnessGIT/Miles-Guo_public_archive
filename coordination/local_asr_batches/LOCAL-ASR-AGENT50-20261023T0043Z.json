@@ -60,7 +60,7 @@
     "LIVE_20221101_001",
     "LIVE_20220427_002"
   ],
-  "next_live_id": "LIVE_20220306_002",
+  "next_live_id": "LIVE_20220106_001",
   "completed_live_ids": [
     "LIVE_20220119_002",
     "LIVE_20220215_002",
@@ -75,7 +75,8 @@
     "LIVE_20220208_002"
   ],
   "failed_or_deferred_live_ids": [
-    "LIVE_20220114_002"
+    "LIVE_20220114_002",
+    "LIVE_20220306_002"
   ],
   "notes": "Fixed logical batch for immediate local Agent processing and later agent-50 automation continuation. Revalidate eligibility and claim ownership before every item."
 }
