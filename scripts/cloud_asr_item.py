@@ -209,6 +209,27 @@ def remove_joint_low_confidence_repetition(
     if len(run) >= 5:
         remove_indexes.update(run)
 
+    # Short identical token loops can have deceptively acceptable confidence
+    # and compression scores, especially over outro audio. Four adjacent
+    # copies of the same <=4-character cue are a decoder-loop signature.
+    repeated_run: list[int] = []
+    repeated_token = ""
+    for index, segment in enumerate(segments):
+        token = re.sub(r"[^\w\u3400-\u9fff]+", "", str(segment.get("text") or "").lower())
+        try:
+            duration = float(segment["end_sec"]) - float(segment["start_sec"])
+        except (KeyError, TypeError, ValueError):
+            duration = float("inf")
+        if token and len(token) <= 4 and duration <= 2.5 and token == repeated_token:
+            repeated_run.append(index)
+            continue
+        if len(repeated_run) >= 4:
+            remove_indexes.update(repeated_run)
+        repeated_run = [index] if token and len(token) <= 4 and duration <= 2.5 else []
+        repeated_token = token if repeated_run else ""
+    if len(repeated_run) >= 4:
+        remove_indexes.update(repeated_run)
+
     kept = [
         segment for index, segment in enumerate(segments)
         if index not in remove_indexes

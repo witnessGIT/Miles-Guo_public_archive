@@ -51,6 +51,26 @@ class CloudAsrOutputTests(unittest.TestCase):
         self.assertEqual(removed, 6)
         self.assertEqual([item["text"] for item in filtered], ["恢复正常语音"])
 
+    def test_hallucination_filter_removes_identical_short_token_loop(self) -> None:
+        segments = [
+            {"start_sec": 0.0, "end_sec": 3.0, "text": "正文", "avg_logprob": -0.2},
+            *[
+                {
+                    "start_sec": 3.0 + index,
+                    "end_sec": 4.0 + index,
+                    "text": "组合。",
+                    "avg_logprob": -0.5,
+                    "compression_ratio": 2.1,
+                }
+                for index in range(4)
+            ],
+        ]
+
+        filtered, removed = remove_joint_low_confidence_repetition(segments)
+
+        self.assertEqual(removed, 4)
+        self.assertEqual([item["text"] for item in filtered], ["正文"])
+
     def test_quality_gate_accepts_dense_continuous_machine_dictation(self) -> None:
         segments = [
             {
