@@ -3,7 +3,7 @@
   "agent_id": "codex-local-asr-agent50-20261023",
   "claimed_at": "2026-10-23T01:44:53.621211+00:00",
   "base_commit": "42bd6ee8baaa3207e851d65229c6db5804472f12",
-  "status": "in_progress",
+  "status": "released",
   "workflow_mode": "continuous-worker-v2",
   "claim_protocol": "claim-protocol-v2",
   "entry_mode": "work",
@@ -22,5 +22,7 @@
   ],
   "scope": "Split transcript into sentence/subtitle cues using natural sentence/time boundaries.",
   "reclaimed_expired_claim": false,
-  "static_claim_lease_hours": 24
+  "static_claim_lease_hours": 24,
+  "released_at": "2026-10-23T01:45:01.714539+00:00",
+  "release_reason": "Cue completion prepared; release ownership"
 }
