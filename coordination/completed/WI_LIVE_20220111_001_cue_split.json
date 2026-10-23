@@ -1,0 +1,16 @@
+{
+  "task_id": "WI_LIVE_20220111_001_cue_split",
+  "agent_id": "codex-direct-asr-long-trial-20261023",
+  "completed_at": "2026-10-23T00:40:29.911059+00:00",
+  "result_commit": "20312bf2db8fbf68163f3d1046aeb75e65f9513d",
+  "outputs": [
+    "data/current/transcript_cues/asr_live_20220111_001.jsonl"
+  ],
+  "validation": "357 monotonic quality-gated ASR cues; timestamps within 1217.564-second audio; build_db/validate_db/full tests OK; machine status retained",
+  "workflow_mode": "continuous-worker-v2",
+  "claim_protocol": "claim-protocol-v2",
+  "entry_mode": "work",
+  "continue_after_finish": true,
+  "finish_prerequisites_revalidated": true,
+  "notes": "Task completed only after re-checking the latest repository dependency contract. Under continuous-worker-v2, refresh repository state and claim the next eligible task unless a documented stop condition applies."
+}
