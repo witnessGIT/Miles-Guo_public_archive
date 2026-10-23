@@ -230,6 +230,30 @@ def remove_joint_low_confidence_repetition(
     if len(repeated_run) >= 4:
         remove_indexes.update(repeated_run)
 
+    # Outro music and other non-speech can also produce the same long stock
+    # sentence once per 30-second decoder window with otherwise plausible
+    # confidence. Two adjacent, normalized-identical cues are only filtered
+    # when both are unusually long windows and contain substantive-length
+    # text; this avoids removing ordinary repeated speech or short refrains.
+    long_repeat_run: list[int] = []
+    long_repeat_token = ""
+    for index, segment in enumerate(segments):
+        token = re.sub(r"[^\w\u3400-\u9fff]+", "", str(segment.get("text") or "").lower())
+        try:
+            duration = float(segment["end_sec"]) - float(segment["start_sec"])
+        except (KeyError, TypeError, ValueError):
+            duration = 0.0
+        qualifies = len(token) >= 12 and duration >= 10.0
+        if qualifies and token == long_repeat_token:
+            long_repeat_run.append(index)
+            continue
+        if len(long_repeat_run) >= 2:
+            remove_indexes.update(long_repeat_run)
+        long_repeat_run = [index] if qualifies else []
+        long_repeat_token = token if long_repeat_run else ""
+    if len(long_repeat_run) >= 2:
+        remove_indexes.update(long_repeat_run)
+
     kept = [
         segment for index, segment in enumerate(segments)
         if index not in remove_indexes

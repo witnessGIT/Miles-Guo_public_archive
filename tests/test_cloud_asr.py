@@ -71,6 +71,19 @@ class CloudAsrOutputTests(unittest.TestCase):
         self.assertEqual(removed, 4)
         self.assertEqual([item["text"] for item in filtered], ["正文"])
 
+    def test_hallucination_filter_removes_identical_long_window_outro(self) -> None:
+        repeated = "请不吝点赞 订阅 转发 打赏支持明镜与点点栏目"
+        segments = [
+            {"start_sec": 0.0, "end_sec": 29.98, "text": repeated, "avg_logprob": -0.4},
+            {"start_sec": 30.0, "end_sec": 59.98, "text": repeated, "avg_logprob": -0.4},
+            {"start_sec": 60.0, "end_sec": 62.0, "text": "明镜与点点栏目", "avg_logprob": -0.4},
+        ]
+
+        filtered, removed = remove_joint_low_confidence_repetition(segments)
+
+        self.assertEqual(removed, 2)
+        self.assertEqual([item["text"] for item in filtered], ["明镜与点点栏目"])
+
     def test_quality_gate_accepts_dense_continuous_machine_dictation(self) -> None:
         segments = [
             {
