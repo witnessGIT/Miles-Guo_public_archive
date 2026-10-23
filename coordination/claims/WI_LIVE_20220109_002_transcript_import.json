@@ -3,7 +3,7 @@
   "agent_id": "codex-local-asr-agent50-20261023",
   "claimed_at": "2026-10-23T05:47:39.799761+00:00",
   "base_commit": "658ca5224e55c791899a1093ff7cde67c577e1bc",
-  "status": "in_progress",
+  "status": "released",
   "workflow_mode": "continuous-worker-v2",
   "claim_protocol": "claim-protocol-v2",
   "entry_mode": "work",
@@ -22,5 +22,7 @@
   ],
   "scope": "Import source transcript or ASR text without overwriting original text.",
   "reclaimed_expired_claim": true,
-  "static_claim_lease_hours": 24
+  "static_claim_lease_hours": 24,
+  "released_at": "2026-10-23T05:49:08.932199+00:00",
+  "release_reason": "Manual dictation audit rejected auto-pass: four accepted opening segments had avg_logprob below -5 and multilingual gibberish, alongside 37 filtered hallucination segments. Evidence/checkpoint retained and deferred to corpus_tail; not missing media."
 }

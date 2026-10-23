@@ -1,0 +1,42 @@
+{
+  "schema_version": "cloud-asr-attempt-v1",
+  "live_id": "LIVE_20220109_002",
+  "status": "cloud_asr_quality_failed_deferred",
+  "generated_at": "2026-10-23T05:48:27Z",
+  "processing_location": "codex-local-apple-silicon-agent50",
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "paid_api_used": false,
+  "media_committed_to_git": false,
+  "deferred_until_corpus_tail": true,
+  "retry_queue": "corpus_tail",
+  "deferred_reason": "manual quality audit rejected four accepted ultra-low-confidence multilingual microsegments despite automatic gate pass",
+  "error": "machine transcript did not pass conservative post-inference dictation review",
+  "quality": {
+    "schema_version": "cloud-asr-quality-v1",
+    "gate_status": "deferred_review",
+    "quality_score": 0.0,
+    "reasons": [
+      "accepted_ultra_low_confidence_multilingual_gibberish",
+      "excessive_filtered_hallucination_segments"
+    ],
+    "warnings": [],
+    "metrics": {
+      "audio_duration_sec": 87.601,
+      "segment_count": 14,
+      "text_character_count": 60,
+      "characters_per_minute": 41.095,
+      "invalid_timestamp_count": 0,
+      "repeated_text_ratio": 0.0,
+      "end_coverage_ratio": 0.939713,
+      "confidence_segment_count": 14,
+      "low_confidence_segment_count": 4,
+      "high_no_speech_segment_count": 0,
+      "high_compression_segment_count": 0,
+      "filtered_hallucination_segment_count": 37,
+      "manual_rejected_segment_count": 4
+    }
+  },
+  "source_id": "SRC_GETTR_POST_PMN4B36548_DF8BD067",
+  "media_asset_id": "MA_GETTR_POST_PMN4B36548_DF8BD067",
+  "source_url": "https://gettr.com/post/pmn4b36548"
+}
