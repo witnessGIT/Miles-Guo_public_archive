@@ -1,0 +1,88 @@
+{
+  "chunk_audio_sha256": "e4d5279394b7c1bc441364f71eb787bebfc02a401112cc37e319bcd7bde09aa2",
+  "chunk_index": 0,
+  "completed_at": "2026-10-23T01:34:45Z",
+  "language": "zh",
+  "live_id": "LIVE_20220215_002",
+  "media_committed_to_git": false,
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "offset_sec": 0,
+  "paid_api_used": false,
+  "processing_location": "codex-local-apple-silicon-agent50",
+  "schema_version": "cloud-asr-chunk-v1",
+  "segments": [
+    {
+      "avg_logprob": -0.225164,
+      "compression_ratio": 1.123377,
+      "end": 3.0,
+      "no_speech_prob": 0.0,
+      "start": 0.0,
+      "text": "2022年1月15號"
+    },
+    {
+      "avg_logprob": -0.225164,
+      "compression_ratio": 1.123377,
+      "end": 6.0,
+      "no_speech_prob": 0.0,
+      "start": 3.0,
+      "text": "也是中國奴隸的2022年"
+    },
+    {
+      "avg_logprob": -0.225164,
+      "compression_ratio": 1.123377,
+      "end": 10.0,
+      "no_speech_prob": 0.0,
+      "start": 6.0,
+      "text": "人吟年初十五元宵節"
+    },
+    {
+      "avg_logprob": -0.225164,
+      "compression_ratio": 1.123377,
+      "end": 13.0,
+      "no_speech_prob": 0.0,
+      "start": 10.0,
+      "text": "文會第一次簽下人生的"
+    },
+    {
+      "avg_logprob": -0.225164,
+      "compression_ratio": 1.123377,
+      "end": 17.0,
+      "no_speech_prob": 0.0,
+      "start": 13.0,
+      "text": "個人破產申請書"
+    },
+    {
+      "avg_logprob": -0.225164,
+      "compression_ratio": 1.123377,
+      "end": 19.0,
+      "no_speech_prob": 0.0,
+      "start": 17.0,
+      "text": "嚴肅認真"
+    },
+    {
+      "avg_logprob": -0.225164,
+      "compression_ratio": 1.123377,
+      "end": 26.0,
+      "no_speech_prob": 0.0,
+      "start": 25.0,
+      "text": "從這一刻起"
+    },
+    {
+      "avg_logprob": -0.225164,
+      "compression_ratio": 1.123377,
+      "end": 28.0,
+      "no_speech_prob": 0.0,
+      "start": 26.0,
+      "text": "我就是個人破產了"
+    },
+    {
+      "avg_logprob": -0.116093,
+      "compression_ratio": 0.62069,
+      "end": 30.0,
+      "no_speech_prob": 0.0,
+      "start": 28.0,
+      "text": "共產黨的迫害"
+    }
+  ],
+  "text": "2022年1月15號也是中國奴隸的2022年人吟年初十五元宵節文會第一次簽下人生的個人破產申請書嚴肅認真從這一刻起我就是個人破產了共產黨的迫害"
+}
