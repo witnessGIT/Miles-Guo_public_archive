@@ -1,0 +1,3728 @@
+{
+  "chunk_audio_sha256": "79031cbc98522032ab0a2998dcb9b693f5591f92f42e54cc87272e13812c0d41",
+  "chunk_index": 0,
+  "completed_at": "2026-10-23T07:35:45Z",
+  "language": "zh",
+  "live_id": "LIVE_20220104_001",
+  "media_committed_to_git": false,
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "offset_sec": 0,
+  "paid_api_used": false,
+  "processing_location": "github-hosted-macos-arm64",
+  "schema_version": "cloud-asr-chunk-v1",
+  "segments": [
+    {
+      "avg_logprob": -0.561781,
+      "compression_ratio": 0.738095,
+      "end": 29.98,
+      "no_speech_prob": 0.0,
+      "start": 0.0,
+      "text": "中文字幕志愿者 李宗盛"
+    },
+    {
+      "avg_logprob": -0.221721,
+      "compression_ratio": 0.738095,
+      "end": 59.98,
+      "no_speech_prob": 0.0,
+      "start": 30.0,
+      "text": "中文字幕志愿者 李宗盛"
+    },
+    {
+      "avg_logprob": -0.228574,
+      "compression_ratio": 0.738095,
+      "end": 89.98,
+      "no_speech_prob": 0.0,
+      "start": 60.0,
+      "text": "中文字幕志愿者 李宗盛"
+    },
+    {
+      "avg_logprob": -0.106921,
+      "compression_ratio": 0.738095,
+      "end": 119.98,
+      "no_speech_prob": 0.0,
+      "start": 90.0,
+      "text": "中文字幕志愿者 李宗盛"
+    },
+    {
+      "avg_logprob": -0.194258,
+      "compression_ratio": 0.738095,
+      "end": 149.96,
+      "no_speech_prob": 0.0,
+      "start": 119.98,
+      "text": "中文字幕志愿者 李宗盛"
+    },
+    {
+      "avg_logprob": -0.460793,
+      "compression_ratio": 0.920635,
+      "end": 151.98,
+      "no_speech_prob": 0.0,
+      "start": 149.98,
+      "text": "中文字幕志愿者 李宗盛"
+    },
+    {
+      "avg_logprob": -0.460793,
+      "compression_ratio": 0.920635,
+      "end": 152.98,
+      "no_speech_prob": 0.0,
+      "start": 151.98,
+      "text": "李宗盛"
+    },
+    {
+      "avg_logprob": -0.460793,
+      "compression_ratio": 0.920635,
+      "end": 153.98,
+      "no_speech_prob": 0.0,
+      "start": 152.98,
+      "text": "好人"
+    },
+    {
+      "avg_logprob": -0.460793,
+      "compression_ratio": 0.920635,
+      "end": 155.98,
+      "no_speech_prob": 0.0,
+      "start": 153.98,
+      "text": "小金不敬"
+    },
+    {
+      "avg_logprob": -0.540172,
+      "compression_ratio": 0.62069,
+      "end": 171.98,
+      "no_speech_prob": 0.0,
+      "start": 155.98,
+      "text": "一米地太快了"
+    },
+    {
+      "avg_logprob": -0.199004,
+      "compression_ratio": 0.738095,
+      "end": 175.98,
+      "no_speech_prob": 0.0,
+      "start": 171.98,
+      "text": "中文字幕志愿者 李宗盛"
+    },
+    {
+      "avg_logprob": -0.350728,
+      "compression_ratio": 0.857143,
+      "end": 177.98,
+      "no_speech_prob": 0.0,
+      "start": 175.98,
+      "text": "李宗盛"
+    },
+    {
+      "avg_logprob": -0.350728,
+      "compression_ratio": 0.857143,
+      "end": 179.98,
+      "no_speech_prob": 0.0,
+      "start": 177.98,
+      "text": "李宗盛"
+    },
+    {
+      "avg_logprob": -0.30428,
+      "compression_ratio": 0.857143,
+      "end": 187.98,
+      "no_speech_prob": 0.0,
+      "start": 179.98,
+      "text": "李宗盛"
+    },
+    {
+      "avg_logprob": -0.30428,
+      "compression_ratio": 0.857143,
+      "end": 189.98,
+      "no_speech_prob": 0.0,
+      "start": 187.98,
+      "text": "李宗盛"
+    },
+    {
+      "avg_logprob": -0.266473,
+      "compression_ratio": 1.285714,
+      "end": 191.98,
+      "no_speech_prob": 0.0,
+      "start": 189.98,
+      "text": "李宗盛"
+    },
+    {
+      "avg_logprob": -0.266473,
+      "compression_ratio": 1.285714,
+      "end": 193.98,
+      "no_speech_prob": 0.0,
+      "start": 191.98,
+      "text": "李宗盛"
+    },
+    {
+      "avg_logprob": -0.266473,
+      "compression_ratio": 1.285714,
+      "end": 195.98,
+      "no_speech_prob": 0.0,
+      "start": 193.98,
+      "text": "李宗盛"
+    },
+    {
+      "avg_logprob": -0.741884,
+      "compression_ratio": 1.0,
+      "end": 196.98,
+      "no_speech_prob": 0.0,
+      "start": 195.98,
+      "text": "今天是演直播"
+    },
+    {
+      "avg_logprob": -0.741884,
+      "compression_ratio": 1.0,
+      "end": 198.98,
+      "no_speech_prob": 0.0,
+      "start": 196.98,
+      "text": "没任何事别耽误时间"
+    },
+    {
+      "avg_logprob": -0.741884,
+      "compression_ratio": 1.0,
+      "end": 200.98,
+      "no_speech_prob": 0.0,
+      "start": 198.98,
+      "text": "今天是演直播"
+    },
+    {
+      "avg_logprob": -0.741884,
+      "compression_ratio": 1.0,
+      "end": 205.98,
+      "no_speech_prob": 0.0,
+      "start": 200.98,
+      "text": "你看汤前桑"
+    },
+    {
+      "avg_logprob": -0.741884,
+      "compression_ratio": 1.0,
+      "end": 210.98,
+      "no_speech_prob": 0.0,
+      "start": 205.98,
+      "text": "对"
+    },
+    {
+      "avg_logprob": -0.937164,
+      "compression_ratio": 0.822581,
+      "end": 215.98,
+      "no_speech_prob": 0.0,
+      "start": 210.98,
+      "text": "肩膀是你"
+    },
+    {
+      "avg_logprob": -0.937164,
+      "compression_ratio": 0.822581,
+      "end": 228.98,
+      "no_speech_prob": 0.0,
+      "start": 215.98,
+      "text": "然后叫红线振作"
+    },
+    {
+      "avg_logprob": -0.937164,
+      "compression_ratio": 0.822581,
+      "end": 233.98,
+      "no_speech_prob": 0.0,
+      "start": 228.98,
+      "text": "用手机"
+    },
+    {
+      "avg_logprob": -0.937164,
+      "compression_ratio": 0.822581,
+      "end": 236.98,
+      "no_speech_prob": 0.0,
+      "start": 233.98,
+      "text": "来一看"
+    },
+    {
+      "avg_logprob": -0.601001,
+      "compression_ratio": 0.978261,
+      "end": 239.98,
+      "no_speech_prob": 0.0,
+      "start": 236.98,
+      "text": "闻到流"
+    },
+    {
+      "avg_logprob": -0.601001,
+      "compression_ratio": 0.978261,
+      "end": 241.98,
+      "no_speech_prob": 0.0,
+      "start": 239.98,
+      "text": "闻幽浮欲"
+    },
+    {
+      "avg_logprob": -0.601001,
+      "compression_ratio": 0.978261,
+      "end": 243.98,
+      "no_speech_prob": 0.0,
+      "start": 241.98,
+      "text": "发觉醒"
+    },
+    {
+      "avg_logprob": -0.601001,
+      "compression_ratio": 0.978261,
+      "end": 249.98,
+      "no_speech_prob": 0.0,
+      "start": 243.98,
+      "text": "一马拉雅"
+    },
+    {
+      "avg_logprob": -0.601001,
+      "compression_ratio": 0.978261,
+      "end": 251.98,
+      "no_speech_prob": 0.0,
+      "start": 249.98,
+      "text": "人生的希望"
+    },
+    {
+      "avg_logprob": -0.601001,
+      "compression_ratio": 0.978261,
+      "end": 254.98,
+      "no_speech_prob": 0.0,
+      "start": 251.98,
+      "text": "中山"
+    },
+    {
+      "avg_logprob": -0.601001,
+      "compression_ratio": 0.978261,
+      "end": 257.98,
+      "no_speech_prob": 0.0,
+      "start": 254.98,
+      "text": "一马拉雅"
+    },
+    {
+      "avg_logprob": -0.601001,
+      "compression_ratio": 0.978261,
+      "end": 258.98,
+      "no_speech_prob": 0.0,
+      "start": 257.98,
+      "text": "如意"
+    },
+    {
+      "avg_logprob": -0.601001,
+      "compression_ratio": 0.978261,
+      "end": 259.98,
+      "no_speech_prob": 0.0,
+      "start": 258.98,
+      "text": "回来了"
+    },
+    {
+      "avg_logprob": -0.995158,
+      "compression_ratio": 9.0,
+      "end": 262.98,
+      "no_speech_prob": 0.0,
+      "start": 259.98,
+      "text": "有"
+    },
+    {
+      "avg_logprob": -0.995158,
+      "compression_ratio": 9.0,
+      "end": 263.98,
+      "no_speech_prob": 0.0,
+      "start": 262.98,
+      "text": "人生的珍谣"
+    },
+    {
+      "avg_logprob": -0.995158,
+      "compression_ratio": 9.0,
+      "end": 264.98,
+      "no_speech_prob": 0.0,
+      "start": 263.98,
+      "text": "人生的珍谣"
+    },
+    {
+      "avg_logprob": -0.995158,
+      "compression_ratio": 9.0,
+      "end": 265.98,
+      "no_speech_prob": 0.0,
+      "start": 264.98,
+      "text": "人生的珍谣"
+    },
+    {
+      "avg_logprob": -0.995158,
+      "compression_ratio": 9.0,
+      "end": 266.98,
+      "no_speech_prob": 0.0,
+      "start": 265.98,
+      "text": "人生的珍谣"
+    },
+    {
+      "avg_logprob": -0.995158,
+      "compression_ratio": 9.0,
+      "end": 267.86,
+      "no_speech_prob": 0.0,
+      "start": 266.98,
+      "text": "在这本来我"
+    },
+    {
+      "avg_logprob": -0.995158,
+      "compression_ratio": 9.0,
+      "end": 268.62,
+      "no_speech_prob": 0.0,
+      "start": 267.86,
+      "text": "在这本来我"
+    },
+    {
+      "avg_logprob": -0.995158,
+      "compression_ratio": 9.0,
+      "end": 269.26,
+      "no_speech_prob": 0.0,
+      "start": 268.62,
+      "text": "在这本来我"
+    },
+    {
+      "avg_logprob": -0.995158,
+      "compression_ratio": 9.0,
+      "end": 269.84,
+      "no_speech_prob": 0.0,
+      "start": 269.26,
+      "text": "在这本来我"
+    },
+    {
+      "avg_logprob": -0.995158,
+      "compression_ratio": 9.0,
+      "end": 270.26,
+      "no_speech_prob": 0.0,
+      "start": 269.84,
+      "text": "在这本来我"
+    },
+    {
+      "avg_logprob": -0.995158,
+      "compression_ratio": 9.0,
+      "end": 270.86,
+      "no_speech_prob": 0.0,
+      "start": 270.26,
+      "text": "在这本来我"
+    },
+    {
+      "avg_logprob": -0.995158,
+      "compression_ratio": 9.0,
+      "end": 271.38,
+      "no_speech_prob": 0.0,
+      "start": 270.86,
+      "text": "在这本来我"
+    },
+    {
+      "avg_logprob": -0.995158,
+      "compression_ratio": 9.0,
+      "end": 271.82,
+      "no_speech_prob": 0.0,
+      "start": 271.38,
+      "text": "在这本来我"
+    },
+    {
+      "avg_logprob": -0.995158,
+      "compression_ratio": 9.0,
+      "end": 272.34,
+      "no_speech_prob": 0.0,
+      "start": 271.82,
+      "text": "在这本来我"
+    },
+    {
+      "avg_logprob": -0.995158,
+      "compression_ratio": 9.0,
+      "end": 272.86,
+      "no_speech_prob": 0.0,
+      "start": 272.34,
+      "text": "在这本来我"
+    },
+    {
+      "avg_logprob": -0.995158,
+      "compression_ratio": 9.0,
+      "end": 273.22,
+      "no_speech_prob": 0.0,
+      "start": 272.86,
+      "text": "在这本来我"
+    },
+    {
+      "avg_logprob": -0.995158,
+      "compression_ratio": 9.0,
+      "end": 273.52,
+      "no_speech_prob": 0.0,
+      "start": 273.22,
+      "text": "在这本来我"
+    },
+    {
+      "avg_logprob": -0.995158,
+      "compression_ratio": 9.0,
+      "end": 273.84,
+      "no_speech_prob": 0.0,
+      "start": 273.52,
+      "text": "在这本来我"
+    },
+    {
+      "avg_logprob": -0.995158,
+      "compression_ratio": 9.0,
+      "end": 274.12,
+      "no_speech_prob": 0.0,
+      "start": 273.84,
+      "text": "在这本来我"
+    },
+    {
+      "avg_logprob": -0.995158,
+      "compression_ratio": 9.0,
+      "end": 274.52,
+      "no_speech_prob": 0.0,
+      "start": 274.12,
+      "text": "在这本来我"
+    },
+    {
+      "avg_logprob": -0.995158,
+      "compression_ratio": 9.0,
+      "end": 274.84,
+      "no_speech_prob": 0.0,
+      "start": 274.52,
+      "text": "在这本来我"
+    },
+    {
+      "avg_logprob": -0.995158,
+      "compression_ratio": 9.0,
+      "end": 275.06,
+      "no_speech_prob": 0.0,
+      "start": 274.84,
+      "text": "在这本来我"
+    },
+    {
+      "avg_logprob": -0.995158,
+      "compression_ratio": 9.0,
+      "end": 275.34,
+      "no_speech_prob": 0.0,
+      "start": 275.06,
+      "text": "在这本来我"
+    },
+    {
+      "avg_logprob": -0.995158,
+      "compression_ratio": 9.0,
+      "end": 275.62,
+      "no_speech_prob": 0.0,
+      "start": 275.34,
+      "text": "在这本来我"
+    },
+    {
+      "avg_logprob": -0.995158,
+      "compression_ratio": 9.0,
+      "end": 275.86,
+      "no_speech_prob": 0.0,
+      "start": 275.62,
+      "text": "在这本来我"
+    },
+    {
+      "avg_logprob": -0.995158,
+      "compression_ratio": 9.0,
+      "end": 276.14,
+      "no_speech_prob": 0.0,
+      "start": 275.86,
+      "text": "在这本来我"
+    },
+    {
+      "avg_logprob": -0.995158,
+      "compression_ratio": 9.0,
+      "end": 276.46,
+      "no_speech_prob": 0.0,
+      "start": 276.14,
+      "text": "在这本来我"
+    },
+    {
+      "avg_logprob": -0.995158,
+      "compression_ratio": 9.0,
+      "end": 276.82,
+      "no_speech_prob": 0.0,
+      "start": 276.46,
+      "text": "在这本来我"
+    },
+    {
+      "avg_logprob": -0.995158,
+      "compression_ratio": 9.0,
+      "end": 277.0,
+      "no_speech_prob": 0.0,
+      "start": 276.82,
+      "text": "在这本来我"
+    },
+    {
+      "avg_logprob": -0.995158,
+      "compression_ratio": 9.0,
+      "end": 277.22,
+      "no_speech_prob": 0.0,
+      "start": 277.0,
+      "text": "在这本来我"
+    },
+    {
+      "avg_logprob": -0.995158,
+      "compression_ratio": 9.0,
+      "end": 277.54,
+      "no_speech_prob": 0.0,
+      "start": 277.22,
+      "text": "在这本来我"
+    },
+    {
+      "avg_logprob": -0.544173,
+      "compression_ratio": 1.714286,
+      "end": 278.54,
+      "no_speech_prob": 0.0,
+      "start": 277.54,
+      "text": "嗯"
+    },
+    {
+      "avg_logprob": -0.544173,
+      "compression_ratio": 1.714286,
+      "end": 280.54,
+      "no_speech_prob": 0.0,
+      "start": 278.54,
+      "text": "嗯"
+    },
+    {
+      "avg_logprob": -0.544173,
+      "compression_ratio": 1.714286,
+      "end": 281.54,
+      "no_speech_prob": 0.0,
+      "start": 280.54,
+      "text": "嗯"
+    },
+    {
+      "avg_logprob": -0.544173,
+      "compression_ratio": 1.714286,
+      "end": 282.54,
+      "no_speech_prob": 0.0,
+      "start": 281.54,
+      "text": "嗯"
+    },
+    {
+      "avg_logprob": -0.544173,
+      "compression_ratio": 1.714286,
+      "end": 283.54,
+      "no_speech_prob": 0.0,
+      "start": 282.54,
+      "text": "嗯"
+    },
+    {
+      "avg_logprob": -0.544173,
+      "compression_ratio": 1.714286,
+      "end": 284.54,
+      "no_speech_prob": 0.0,
+      "start": 283.54,
+      "text": "嗯"
+    },
+    {
+      "avg_logprob": -0.544173,
+      "compression_ratio": 1.714286,
+      "end": 285.54,
+      "no_speech_prob": 0.0,
+      "start": 284.54,
+      "text": "嗯"
+    },
+    {
+      "avg_logprob": -0.544173,
+      "compression_ratio": 1.714286,
+      "end": 286.54,
+      "no_speech_prob": 0.0,
+      "start": 285.54,
+      "text": "嗯"
+    },
+    {
+      "avg_logprob": -0.544173,
+      "compression_ratio": 1.714286,
+      "end": 287.54,
+      "no_speech_prob": 0.0,
+      "start": 286.54,
+      "text": "嗯"
+    },
+    {
+      "avg_logprob": -0.544173,
+      "compression_ratio": 1.714286,
+      "end": 288.54,
+      "no_speech_prob": 0.0,
+      "start": 287.54,
+      "text": "嗯"
+    },
+    {
+      "avg_logprob": -0.544173,
+      "compression_ratio": 1.714286,
+      "end": 289.54,
+      "no_speech_prob": 0.0,
+      "start": 288.54,
+      "text": "嗯"
+    },
+    {
+      "avg_logprob": -0.544173,
+      "compression_ratio": 1.714286,
+      "end": 290.54,
+      "no_speech_prob": 0.0,
+      "start": 289.54,
+      "text": "嗯"
+    },
+    {
+      "avg_logprob": -0.544173,
+      "compression_ratio": 1.714286,
+      "end": 291.54,
+      "no_speech_prob": 0.0,
+      "start": 290.54,
+      "text": "嗯"
+    },
+    {
+      "avg_logprob": -0.544173,
+      "compression_ratio": 1.714286,
+      "end": 292.54,
+      "no_speech_prob": 0.0,
+      "start": 291.54,
+      "text": "嗯"
+    },
+    {
+      "avg_logprob": -0.544173,
+      "compression_ratio": 1.714286,
+      "end": 293.54,
+      "no_speech_prob": 0.0,
+      "start": 292.54,
+      "text": "嗯"
+    },
+    {
+      "avg_logprob": -0.544173,
+      "compression_ratio": 1.714286,
+      "end": 294.54,
+      "no_speech_prob": 0.0,
+      "start": 293.54,
+      "text": "嗯"
+    },
+    {
+      "avg_logprob": -0.544173,
+      "compression_ratio": 1.714286,
+      "end": 295.54,
+      "no_speech_prob": 0.0,
+      "start": 294.54,
+      "text": "嗯"
+    },
+    {
+      "avg_logprob": -0.544173,
+      "compression_ratio": 1.714286,
+      "end": 300.54,
+      "no_speech_prob": 0.0,
+      "start": 299.54,
+      "text": "啊"
+    },
+    {
+      "avg_logprob": -0.544173,
+      "compression_ratio": 1.714286,
+      "end": 302.54,
+      "no_speech_prob": 0.0,
+      "start": 300.54,
+      "text": "呀点大能打"
+    },
+    {
+      "avg_logprob": -0.544173,
+      "compression_ratio": 1.714286,
+      "end": 303.54,
+      "no_speech_prob": 0.0,
+      "start": 302.54,
+      "text": "明天的娘们"
+    },
+    {
+      "avg_logprob": -0.649674,
+      "compression_ratio": 1.442308,
+      "end": 305.54,
+      "no_speech_prob": 0.0,
+      "start": 303.54,
+      "text": "嗯"
+    },
+    {
+      "avg_logprob": -0.649674,
+      "compression_ratio": 1.442308,
+      "end": 306.54,
+      "no_speech_prob": 0.0,
+      "start": 305.54,
+      "text": "嗯"
+    },
+    {
+      "avg_logprob": -0.649674,
+      "compression_ratio": 1.442308,
+      "end": 307.54,
+      "no_speech_prob": 0.0,
+      "start": 306.54,
+      "text": "嗯"
+    },
+    {
+      "avg_logprob": -0.649674,
+      "compression_ratio": 1.442308,
+      "end": 308.54,
+      "no_speech_prob": 0.0,
+      "start": 307.54,
+      "text": "小晋晋"
+    },
+    {
+      "avg_logprob": -0.649674,
+      "compression_ratio": 1.442308,
+      "end": 309.54,
+      "no_speech_prob": 0.0,
+      "start": 308.54,
+      "text": "嗯"
+    },
+    {
+      "avg_logprob": -0.649674,
+      "compression_ratio": 1.442308,
+      "end": 310.54,
+      "no_speech_prob": 0.0,
+      "start": 309.54,
+      "text": "嗯"
+    },
+    {
+      "avg_logprob": -0.649674,
+      "compression_ratio": 1.442308,
+      "end": 311.54,
+      "no_speech_prob": 0.0,
+      "start": 310.54,
+      "text": "嗯"
+    },
+    {
+      "avg_logprob": -0.649674,
+      "compression_ratio": 1.442308,
+      "end": 312.54,
+      "no_speech_prob": 0.0,
+      "start": 311.54,
+      "text": "嗯"
+    },
+    {
+      "avg_logprob": -0.649674,
+      "compression_ratio": 1.442308,
+      "end": 313.54,
+      "no_speech_prob": 0.0,
+      "start": 312.54,
+      "text": "嗯"
+    },
+    {
+      "avg_logprob": -0.649674,
+      "compression_ratio": 1.442308,
+      "end": 314.54,
+      "no_speech_prob": 0.0,
+      "start": 313.54,
+      "text": "嗯"
+    },
+    {
+      "avg_logprob": -0.649674,
+      "compression_ratio": 1.442308,
+      "end": 315.54,
+      "no_speech_prob": 0.0,
+      "start": 314.54,
+      "text": "嗯"
+    },
+    {
+      "avg_logprob": -0.649674,
+      "compression_ratio": 1.442308,
+      "end": 316.54,
+      "no_speech_prob": 0.0,
+      "start": 315.54,
+      "text": "嗯"
+    },
+    {
+      "avg_logprob": -0.649674,
+      "compression_ratio": 1.442308,
+      "end": 317.54,
+      "no_speech_prob": 0.0,
+      "start": 316.54,
+      "text": "嗯"
+    },
+    {
+      "avg_logprob": -0.649674,
+      "compression_ratio": 1.442308,
+      "end": 318.54,
+      "no_speech_prob": 0.0,
+      "start": 317.54,
+      "text": "嗯"
+    },
+    {
+      "avg_logprob": -0.649674,
+      "compression_ratio": 1.442308,
+      "end": 320.54,
+      "no_speech_prob": 0.0,
+      "start": 318.54,
+      "text": "天池能打"
+    },
+    {
+      "avg_logprob": -0.649674,
+      "compression_ratio": 1.442308,
+      "end": 321.54,
+      "no_speech_prob": 0.0,
+      "start": 320.54,
+      "text": "天池能打"
+    },
+    {
+      "avg_logprob": -0.649674,
+      "compression_ratio": 1.442308,
+      "end": 322.54,
+      "no_speech_prob": 0.0,
+      "start": 321.54,
+      "text": "嗯"
+    },
+    {
+      "avg_logprob": -0.649674,
+      "compression_ratio": 1.442308,
+      "end": 324.54,
+      "no_speech_prob": 0.0,
+      "start": 322.54,
+      "text": "雅田南德爾塔"
+    },
+    {
+      "avg_logprob": -0.649674,
+      "compression_ratio": 1.442308,
+      "end": 325.54,
+      "no_speech_prob": 0.0,
+      "start": 324.54,
+      "text": "天池能打"
+    },
+    {
+      "avg_logprob": -0.649674,
+      "compression_ratio": 1.442308,
+      "end": 327.54,
+      "no_speech_prob": 0.0,
+      "start": 325.54,
+      "text": "奥喜"
+    },
+    {
+      "avg_logprob": -0.649674,
+      "compression_ratio": 1.442308,
+      "end": 328.54,
+      "no_speech_prob": 0.0,
+      "start": 327.54,
+      "text": "克战里"
+    },
+    {
+      "avg_logprob": -0.649674,
+      "compression_ratio": 1.442308,
+      "end": 329.54,
+      "no_speech_prob": 0.0,
+      "start": 328.54,
+      "text": "哈"
+    },
+    {
+      "avg_logprob": -0.649674,
+      "compression_ratio": 1.442308,
+      "end": 330.54,
+      "no_speech_prob": 0.0,
+      "start": 329.54,
+      "text": "天池烈空"
+    },
+    {
+      "avg_logprob": -0.649674,
+      "compression_ratio": 1.442308,
+      "end": 331.54,
+      "no_speech_prob": 0.0,
+      "start": 330.54,
+      "text": "東京櫻花坦"
+    },
+    {
+      "avg_logprob": -0.986723,
+      "compression_ratio": 10.0,
+      "end": 332.58,
+      "no_speech_prob": 0.0,
+      "start": 331.54,
+      "text": "美月"
+    },
+    {
+      "avg_logprob": -0.986723,
+      "compression_ratio": 10.0,
+      "end": 333.3,
+      "no_speech_prob": 0.0,
+      "start": 332.58,
+      "text": "都"
+    },
+    {
+      "avg_logprob": -0.986723,
+      "compression_ratio": 10.0,
+      "end": 333.9,
+      "no_speech_prob": 0.0,
+      "start": 333.3,
+      "text": "天池"
+    },
+    {
+      "avg_logprob": -0.986723,
+      "compression_ratio": 10.0,
+      "end": 334.3,
+      "no_speech_prob": 0.0,
+      "start": 333.9,
+      "text": "天池"
+    },
+    {
+      "avg_logprob": -0.986723,
+      "compression_ratio": 10.0,
+      "end": 334.54,
+      "no_speech_prob": 0.0,
+      "start": 334.3,
+      "text": "天池"
+    },
+    {
+      "avg_logprob": -0.986723,
+      "compression_ratio": 10.0,
+      "end": 334.96,
+      "no_speech_prob": 0.0,
+      "start": 334.54,
+      "text": "天池"
+    },
+    {
+      "avg_logprob": -0.986723,
+      "compression_ratio": 10.0,
+      "end": 335.38,
+      "no_speech_prob": 0.0,
+      "start": 334.96,
+      "text": "天池"
+    },
+    {
+      "avg_logprob": -0.986723,
+      "compression_ratio": 10.0,
+      "end": 335.82,
+      "no_speech_prob": 0.0,
+      "start": 335.38,
+      "text": "天池"
+    },
+    {
+      "avg_logprob": -0.986723,
+      "compression_ratio": 10.0,
+      "end": 336.16,
+      "no_speech_prob": 0.0,
+      "start": 335.82,
+      "text": "天池"
+    },
+    {
+      "avg_logprob": -0.986723,
+      "compression_ratio": 10.0,
+      "end": 336.58,
+      "no_speech_prob": 0.0,
+      "start": 336.16,
+      "text": "天池"
+    },
+    {
+      "avg_logprob": -0.986723,
+      "compression_ratio": 10.0,
+      "end": 336.88,
+      "no_speech_prob": 0.0,
+      "start": 336.58,
+      "text": "天池"
+    },
+    {
+      "avg_logprob": -0.986723,
+      "compression_ratio": 10.0,
+      "end": 337.12,
+      "no_speech_prob": 0.0,
+      "start": 336.88,
+      "text": "天池"
+    },
+    {
+      "avg_logprob": -0.986723,
+      "compression_ratio": 10.0,
+      "end": 337.3,
+      "no_speech_prob": 0.0,
+      "start": 337.12,
+      "text": "天池"
+    },
+    {
+      "avg_logprob": -0.986723,
+      "compression_ratio": 10.0,
+      "end": 337.54,
+      "no_speech_prob": 0.0,
+      "start": 337.3,
+      "text": "天池"
+    },
+    {
+      "avg_logprob": -0.986723,
+      "compression_ratio": 10.0,
+      "end": 337.98,
+      "no_speech_prob": 0.0,
+      "start": 337.54,
+      "text": "天池"
+    },
+    {
+      "avg_logprob": -0.986723,
+      "compression_ratio": 10.0,
+      "end": 338.2,
+      "no_speech_prob": 0.0,
+      "start": 337.98,
+      "text": "天池"
+    },
+    {
+      "avg_logprob": -0.986723,
+      "compression_ratio": 10.0,
+      "end": 338.48,
+      "no_speech_prob": 0.0,
+      "start": 338.2,
+      "text": "天池"
+    },
+    {
+      "avg_logprob": -0.986723,
+      "compression_ratio": 10.0,
+      "end": 338.86,
+      "no_speech_prob": 0.0,
+      "start": 338.48,
+      "text": "天池"
+    },
+    {
+      "avg_logprob": -0.986723,
+      "compression_ratio": 10.0,
+      "end": 339.04,
+      "no_speech_prob": 0.0,
+      "start": 338.86,
+      "text": "天池"
+    },
+    {
+      "avg_logprob": -0.986723,
+      "compression_ratio": 10.0,
+      "end": 339.26,
+      "no_speech_prob": 0.0,
+      "start": 339.04,
+      "text": "天池"
+    },
+    {
+      "avg_logprob": -0.986723,
+      "compression_ratio": 10.0,
+      "end": 339.54,
+      "no_speech_prob": 0.0,
+      "start": 339.26,
+      "text": "天池"
+    },
+    {
+      "avg_logprob": -0.986723,
+      "compression_ratio": 10.0,
+      "end": 339.88,
+      "no_speech_prob": 0.0,
+      "start": 339.54,
+      "text": "天池"
+    },
+    {
+      "avg_logprob": -0.986723,
+      "compression_ratio": 10.0,
+      "end": 340.14,
+      "no_speech_prob": 0.0,
+      "start": 339.88,
+      "text": "天池"
+    },
+    {
+      "avg_logprob": -0.986723,
+      "compression_ratio": 10.0,
+      "end": 340.38,
+      "no_speech_prob": 0.0,
+      "start": 340.14,
+      "text": "天池"
+    },
+    {
+      "avg_logprob": -0.986723,
+      "compression_ratio": 10.0,
+      "end": 340.6,
+      "no_speech_prob": 0.0,
+      "start": 340.38,
+      "text": "天池"
+    },
+    {
+      "avg_logprob": -0.986723,
+      "compression_ratio": 10.0,
+      "end": 340.88,
+      "no_speech_prob": 0.0,
+      "start": 340.6,
+      "text": "天池"
+    },
+    {
+      "avg_logprob": -0.986723,
+      "compression_ratio": 10.0,
+      "end": 341.1,
+      "no_speech_prob": 0.0,
+      "start": 340.88,
+      "text": "天池"
+    },
+    {
+      "avg_logprob": -0.986723,
+      "compression_ratio": 10.0,
+      "end": 341.32,
+      "no_speech_prob": 0.0,
+      "start": 341.1,
+      "text": "天池"
+    },
+    {
+      "avg_logprob": -0.986723,
+      "compression_ratio": 10.0,
+      "end": 341.66,
+      "no_speech_prob": 0.0,
+      "start": 341.32,
+      "text": "天池"
+    },
+    {
+      "avg_logprob": -0.986723,
+      "compression_ratio": 10.0,
+      "end": 342.02,
+      "no_speech_prob": 0.0,
+      "start": 341.66,
+      "text": "天池"
+    },
+    {
+      "avg_logprob": -0.986723,
+      "compression_ratio": 10.0,
+      "end": 342.26,
+      "no_speech_prob": 0.0,
+      "start": 342.02,
+      "text": "天池"
+    },
+    {
+      "avg_logprob": -0.986723,
+      "compression_ratio": 10.0,
+      "end": 342.5,
+      "no_speech_prob": 0.0,
+      "start": 342.26,
+      "text": "天池"
+    },
+    {
+      "avg_logprob": -0.986723,
+      "compression_ratio": 10.0,
+      "end": 342.86,
+      "no_speech_prob": 0.0,
+      "start": 342.5,
+      "text": "天池"
+    },
+    {
+      "avg_logprob": -0.986723,
+      "compression_ratio": 10.0,
+      "end": 343.02,
+      "no_speech_prob": 0.0,
+      "start": 342.86,
+      "text": "天池"
+    },
+    {
+      "avg_logprob": -0.986723,
+      "compression_ratio": 10.0,
+      "end": 343.3,
+      "no_speech_prob": 0.0,
+      "start": 343.02,
+      "text": "天池"
+    },
+    {
+      "avg_logprob": -0.986723,
+      "compression_ratio": 10.0,
+      "end": 343.68,
+      "no_speech_prob": 0.0,
+      "start": 343.3,
+      "text": "天池"
+    },
+    {
+      "avg_logprob": -0.986723,
+      "compression_ratio": 10.0,
+      "end": 344.1,
+      "no_speech_prob": 0.0,
+      "start": 343.68,
+      "text": "天池"
+    },
+    {
+      "avg_logprob": -0.986723,
+      "compression_ratio": 10.0,
+      "end": 344.28,
+      "no_speech_prob": 0.0,
+      "start": 344.1,
+      "text": "天池"
+    },
+    {
+      "avg_logprob": -0.986723,
+      "compression_ratio": 10.0,
+      "end": 344.56,
+      "no_speech_prob": 0.0,
+      "start": 344.28,
+      "text": "天池"
+    },
+    {
+      "avg_logprob": -0.986723,
+      "compression_ratio": 10.0,
+      "end": 344.88,
+      "no_speech_prob": 0.0,
+      "start": 344.56,
+      "text": "天池"
+    },
+    {
+      "avg_logprob": -0.986723,
+      "compression_ratio": 10.0,
+      "end": 345.1,
+      "no_speech_prob": 0.0,
+      "start": 344.88,
+      "text": "天池"
+    },
+    {
+      "avg_logprob": -0.986723,
+      "compression_ratio": 10.0,
+      "end": 345.36,
+      "no_speech_prob": 0.0,
+      "start": 345.1,
+      "text": "天池"
+    },
+    {
+      "avg_logprob": -0.986723,
+      "compression_ratio": 10.0,
+      "end": 345.82,
+      "no_speech_prob": 0.0,
+      "start": 345.36,
+      "text": "天池"
+    },
+    {
+      "avg_logprob": -0.986723,
+      "compression_ratio": 10.0,
+      "end": 346.12,
+      "no_speech_prob": 0.0,
+      "start": 345.82,
+      "text": "天池"
+    },
+    {
+      "avg_logprob": -0.986723,
+      "compression_ratio": 10.0,
+      "end": 346.42,
+      "no_speech_prob": 0.0,
+      "start": 346.12,
+      "text": "天池"
+    },
+    {
+      "avg_logprob": -0.52264,
+      "compression_ratio": 1.358491,
+      "end": 353.42,
+      "no_speech_prob": 0.0,
+      "start": 346.42,
+      "text": "喜马拉雅 喜马拉雅"
+    },
+    {
+      "avg_logprob": -0.52264,
+      "compression_ratio": 1.358491,
+      "end": 362.42,
+      "no_speech_prob": 0.0,
+      "start": 353.42,
+      "text": "人生的希望 分享 喜马拉雅"
+    },
+    {
+      "avg_logprob": -0.52264,
+      "compression_ratio": 1.358491,
+      "end": 366.42,
+      "no_speech_prob": 0.0,
+      "start": 362.42,
+      "text": "喜马拉雅"
+    },
+    {
+      "avg_logprob": -0.600135,
+      "compression_ratio": 0.830769,
+      "end": 378.42,
+      "no_speech_prob": 0.0,
+      "start": 366.42,
+      "text": "这歌太棒了"
+    },
+    {
+      "avg_logprob": -0.600135,
+      "compression_ratio": 0.830769,
+      "end": 395.42,
+      "no_speech_prob": 0.0,
+      "start": 378.42,
+      "text": "抱负纯真 温迪 稀奇 草根达人"
+    },
+    {
+      "avg_logprob": -0.61031,
+      "compression_ratio": 0.784314,
+      "end": 402.42,
+      "no_speech_prob": 0.0,
+      "start": 395.42,
+      "text": "东京樱花坦 太阳的国度"
+    },
+    {
+      "avg_logprob": -0.61031,
+      "compression_ratio": 0.784314,
+      "end": 420.42,
+      "no_speech_prob": 0.0,
+      "start": 418.42,
+      "text": "文艺针"
+    },
+    {
+      "avg_logprob": -0.302932,
+      "compression_ratio": 10.714286,
+      "end": 422.42,
+      "no_speech_prob": 0.0,
+      "start": 420.42,
+      "text": "冒险"
+    },
+    {
+      "avg_logprob": -0.302932,
+      "compression_ratio": 10.714286,
+      "end": 423.42,
+      "no_speech_prob": 0.0,
+      "start": 422.42,
+      "text": "冒险"
+    },
+    {
+      "avg_logprob": -0.302932,
+      "compression_ratio": 10.714286,
+      "end": 424.42,
+      "no_speech_prob": 0.0,
+      "start": 423.42,
+      "text": "冒险"
+    },
+    {
+      "avg_logprob": -0.302932,
+      "compression_ratio": 10.714286,
+      "end": 425.42,
+      "no_speech_prob": 0.0,
+      "start": 424.42,
+      "text": "冒险"
+    },
+    {
+      "avg_logprob": -0.302932,
+      "compression_ratio": 10.714286,
+      "end": 426.42,
+      "no_speech_prob": 0.0,
+      "start": 425.42,
+      "text": "冒险"
+    },
+    {
+      "avg_logprob": -0.302932,
+      "compression_ratio": 10.714286,
+      "end": 427.42,
+      "no_speech_prob": 0.0,
+      "start": 426.42,
+      "text": "冒险"
+    },
+    {
+      "avg_logprob": -0.302932,
+      "compression_ratio": 10.714286,
+      "end": 428.42,
+      "no_speech_prob": 0.0,
+      "start": 427.42,
+      "text": "冒险"
+    },
+    {
+      "avg_logprob": -0.302932,
+      "compression_ratio": 10.714286,
+      "end": 429.42,
+      "no_speech_prob": 0.0,
+      "start": 428.42,
+      "text": "冒险"
+    },
+    {
+      "avg_logprob": -0.302932,
+      "compression_ratio": 10.714286,
+      "end": 430.42,
+      "no_speech_prob": 0.0,
+      "start": 429.42,
+      "text": "冒险"
+    },
+    {
+      "avg_logprob": -0.302932,
+      "compression_ratio": 10.714286,
+      "end": 431.42,
+      "no_speech_prob": 0.0,
+      "start": 430.42,
+      "text": "冒险"
+    },
+    {
+      "avg_logprob": -0.302932,
+      "compression_ratio": 10.714286,
+      "end": 432.42,
+      "no_speech_prob": 0.0,
+      "start": 431.42,
+      "text": "冒险"
+    },
+    {
+      "avg_logprob": -0.302932,
+      "compression_ratio": 10.714286,
+      "end": 433.42,
+      "no_speech_prob": 0.0,
+      "start": 432.42,
+      "text": "冒险"
+    },
+    {
+      "avg_logprob": -0.302932,
+      "compression_ratio": 10.714286,
+      "end": 434.22,
+      "no_speech_prob": 0.0,
+      "start": 433.42,
+      "text": "冒险"
+    },
+    {
+      "avg_logprob": -0.302932,
+      "compression_ratio": 10.714286,
+      "end": 434.42,
+      "no_speech_prob": 0.0,
+      "start": 434.22,
+      "text": "冒险"
+    },
+    {
+      "avg_logprob": -0.302932,
+      "compression_ratio": 10.714286,
+      "end": 435.42,
+      "no_speech_prob": 0.0,
+      "start": 434.42,
+      "text": "冒险"
+    },
+    {
+      "avg_logprob": -0.302932,
+      "compression_ratio": 10.714286,
+      "end": 436.34,
+      "no_speech_prob": 0.0,
+      "start": 435.42,
+      "text": "冒险"
+    },
+    {
+      "avg_logprob": -0.302932,
+      "compression_ratio": 10.714286,
+      "end": 436.42,
+      "no_speech_prob": 0.0,
+      "start": 436.34,
+      "text": "冒险"
+    },
+    {
+      "avg_logprob": -0.302932,
+      "compression_ratio": 10.714286,
+      "end": 437.42,
+      "no_speech_prob": 0.0,
+      "start": 436.42,
+      "text": "冒险"
+    },
+    {
+      "avg_logprob": -0.302932,
+      "compression_ratio": 10.714286,
+      "end": 438.42,
+      "no_speech_prob": 0.0,
+      "start": 437.42,
+      "text": "冒险"
+    },
+    {
+      "avg_logprob": -0.302932,
+      "compression_ratio": 10.714286,
+      "end": 439.42,
+      "no_speech_prob": 0.0,
+      "start": 438.42,
+      "text": "冒险"
+    },
+    {
+      "avg_logprob": -0.302932,
+      "compression_ratio": 10.714286,
+      "end": 440.22,
+      "no_speech_prob": 0.0,
+      "start": 439.42,
+      "text": "冒险"
+    },
+    {
+      "avg_logprob": -0.302932,
+      "compression_ratio": 10.714286,
+      "end": 440.42,
+      "no_speech_prob": 0.0,
+      "start": 440.22,
+      "text": "冒险"
+    },
+    {
+      "avg_logprob": -0.302932,
+      "compression_ratio": 10.714286,
+      "end": 441.42,
+      "no_speech_prob": 0.0,
+      "start": 440.42,
+      "text": "冒险"
+    },
+    {
+      "avg_logprob": -0.302932,
+      "compression_ratio": 10.714286,
+      "end": 442.42,
+      "no_speech_prob": 0.0,
+      "start": 441.42,
+      "text": "冒险"
+    },
+    {
+      "avg_logprob": -0.302932,
+      "compression_ratio": 10.714286,
+      "end": 443.42,
+      "no_speech_prob": 0.0,
+      "start": 442.42,
+      "text": "冒险"
+    },
+    {
+      "avg_logprob": -0.302932,
+      "compression_ratio": 10.714286,
+      "end": 444.42,
+      "no_speech_prob": 0.0,
+      "start": 443.42,
+      "text": "冒险"
+    },
+    {
+      "avg_logprob": -0.665726,
+      "compression_ratio": 1.144737,
+      "end": 450.42,
+      "no_speech_prob": 0.0,
+      "start": 444.42,
+      "text": "太多水了"
+    },
+    {
+      "avg_logprob": -0.665726,
+      "compression_ratio": 1.144737,
+      "end": 453.42,
+      "no_speech_prob": 0.0,
+      "start": 450.42,
+      "text": "太多水了"
+    },
+    {
+      "avg_logprob": -0.665726,
+      "compression_ratio": 1.144737,
+      "end": 455.42,
+      "no_speech_prob": 0.0,
+      "start": 453.42,
+      "text": "文童一句位"
+    },
+    {
+      "avg_logprob": -0.665726,
+      "compression_ratio": 1.144737,
+      "end": 457.42,
+      "no_speech_prob": 0.0,
+      "start": 455.42,
+      "text": "一句一句"
+    },
+    {
+      "avg_logprob": -0.665726,
+      "compression_ratio": 1.144737,
+      "end": 459.42,
+      "no_speech_prob": 0.0,
+      "start": 457.42,
+      "text": "文部"
+    },
+    {
+      "avg_logprob": -0.665726,
+      "compression_ratio": 1.144737,
+      "end": 462.42,
+      "no_speech_prob": 0.0,
+      "start": 459.42,
+      "text": "看一个小哥"
+    },
+    {
+      "avg_logprob": -0.665726,
+      "compression_ratio": 1.144737,
+      "end": 464.42,
+      "no_speech_prob": 0.0,
+      "start": 462.42,
+      "text": "看一身冬场"
+    },
+    {
+      "avg_logprob": -0.628141,
+      "compression_ratio": 0.62069,
+      "end": 488.42,
+      "no_speech_prob": 0.0,
+      "start": 474.42,
+      "text": "土乒乓"
+    },
+    {
+      "avg_logprob": -0.628141,
+      "compression_ratio": 0.62069,
+      "end": 490.42,
+      "no_speech_prob": 0.0,
+      "start": 488.42,
+      "text": "肥好多"
+    },
+    {
+      "avg_logprob": -0.433227,
+      "compression_ratio": 1.045161,
+      "end": 508.42,
+      "no_speech_prob": 0.0,
+      "start": 504.42,
+      "text": "水太多了"
+    },
+    {
+      "avg_logprob": -0.433227,
+      "compression_ratio": 1.045161,
+      "end": 510.42,
+      "no_speech_prob": 0.0,
+      "start": 508.42,
+      "text": "上下都流水"
+    },
+    {
+      "avg_logprob": -0.433227,
+      "compression_ratio": 1.045161,
+      "end": 512.42,
+      "no_speech_prob": 0.0,
+      "start": 510.42,
+      "text": "王党"
+    },
+    {
+      "avg_logprob": -0.433227,
+      "compression_ratio": 1.045161,
+      "end": 514.42,
+      "no_speech_prob": 0.0,
+      "start": 512.42,
+      "text": "暗眼王党"
+    },
+    {
+      "avg_logprob": -0.433227,
+      "compression_ratio": 1.045161,
+      "end": 516.42,
+      "no_speech_prob": 0.0,
+      "start": 514.42,
+      "text": "暮风"
+    },
+    {
+      "avg_logprob": -0.433227,
+      "compression_ratio": 1.045161,
+      "end": 518.42,
+      "no_speech_prob": 0.0,
+      "start": 516.42,
+      "text": "明天的阳光"
+    },
+    {
+      "avg_logprob": -0.433227,
+      "compression_ratio": 1.045161,
+      "end": 520.42,
+      "no_speech_prob": 0.0,
+      "start": 518.42,
+      "text": "战斗富山六二"
+    },
+    {
+      "avg_logprob": -0.433227,
+      "compression_ratio": 1.045161,
+      "end": 522.42,
+      "no_speech_prob": 0.0,
+      "start": 520.42,
+      "text": "ARY"
+    },
+    {
+      "avg_logprob": -0.433227,
+      "compression_ratio": 1.045161,
+      "end": 524.42,
+      "no_speech_prob": 0.0,
+      "start": 522.42,
+      "text": "白小嘲讨文英英"
+    },
+    {
+      "avg_logprob": -0.433227,
+      "compression_ratio": 1.045161,
+      "end": 526.42,
+      "no_speech_prob": 0.0,
+      "start": 524.42,
+      "text": "追着曙光"
+    },
+    {
+      "avg_logprob": -0.433227,
+      "compression_ratio": 1.045161,
+      "end": 528.42,
+      "no_speech_prob": 0.0,
+      "start": 526.42,
+      "text": "告一看乱理"
+    },
+    {
+      "avg_logprob": -0.433227,
+      "compression_ratio": 1.045161,
+      "end": 530.42,
+      "no_speech_prob": 0.0,
+      "start": 528.42,
+      "text": "信心的选择"
+    },
+    {
+      "avg_logprob": -0.433227,
+      "compression_ratio": 1.045161,
+      "end": 532.42,
+      "no_speech_prob": 0.0,
+      "start": 530.42,
+      "text": "民音公子"
+    },
+    {
+      "avg_logprob": -0.525035,
+      "compression_ratio": 1.113402,
+      "end": 536.42,
+      "no_speech_prob": 0.0,
+      "start": 534.42,
+      "text": "看"
+    },
+    {
+      "avg_logprob": -0.525035,
+      "compression_ratio": 1.113402,
+      "end": 537.42,
+      "no_speech_prob": 0.0,
+      "start": 536.42,
+      "text": "看"
+    },
+    {
+      "avg_logprob": -0.525035,
+      "compression_ratio": 1.113402,
+      "end": 540.42,
+      "no_speech_prob": 0.0,
+      "start": 537.42,
+      "text": "看"
+    },
+    {
+      "avg_logprob": -0.525035,
+      "compression_ratio": 1.113402,
+      "end": 544.42,
+      "no_speech_prob": 0.0,
+      "start": 540.42,
+      "text": "看"
+    },
+    {
+      "avg_logprob": -0.525035,
+      "compression_ratio": 1.113402,
+      "end": 546.42,
+      "no_speech_prob": 0.0,
+      "start": 544.42,
+      "text": "看"
+    },
+    {
+      "avg_logprob": -0.525035,
+      "compression_ratio": 1.113402,
+      "end": 547.42,
+      "no_speech_prob": 0.0,
+      "start": 546.42,
+      "text": "看"
+    },
+    {
+      "avg_logprob": -0.525035,
+      "compression_ratio": 1.113402,
+      "end": 548.42,
+      "no_speech_prob": 0.0,
+      "start": 547.42,
+      "text": "看"
+    },
+    {
+      "avg_logprob": -0.525035,
+      "compression_ratio": 1.113402,
+      "end": 549.42,
+      "no_speech_prob": 0.0,
+      "start": 548.42,
+      "text": "看"
+    },
+    {
+      "avg_logprob": -0.525035,
+      "compression_ratio": 1.113402,
+      "end": 550.42,
+      "no_speech_prob": 0.0,
+      "start": 549.42,
+      "text": "出"
+    },
+    {
+      "avg_logprob": -0.525035,
+      "compression_ratio": 1.113402,
+      "end": 551.42,
+      "no_speech_prob": 0.0,
+      "start": 550.42,
+      "text": "出名小哥"
+    },
+    {
+      "avg_logprob": -0.525035,
+      "compression_ratio": 1.113402,
+      "end": 552.42,
+      "no_speech_prob": 0.0,
+      "start": 551.42,
+      "text": "文归来"
+    },
+    {
+      "avg_logprob": -0.525035,
+      "compression_ratio": 1.113402,
+      "end": 554.42,
+      "no_speech_prob": 0.0,
+      "start": 552.42,
+      "text": "中军一花团"
+    },
+    {
+      "avg_logprob": -0.525035,
+      "compression_ratio": 1.113402,
+      "end": 555.42,
+      "no_speech_prob": 0.0,
+      "start": 554.42,
+      "text": "卫武议员"
+    },
+    {
+      "avg_logprob": -0.525035,
+      "compression_ratio": 1.113402,
+      "end": 557.42,
+      "no_speech_prob": 0.0,
+      "start": 555.42,
+      "text": "新想安主"
+    },
+    {
+      "avg_logprob": -0.525035,
+      "compression_ratio": 1.113402,
+      "end": 558.42,
+      "no_speech_prob": 0.0,
+      "start": 557.42,
+      "text": "文肃"
+    },
+    {
+      "avg_logprob": -0.525035,
+      "compression_ratio": 1.113402,
+      "end": 560.42,
+      "no_speech_prob": 0.0,
+      "start": 558.42,
+      "text": "达布斯小强"
+    },
+    {
+      "avg_logprob": -1.385405,
+      "compression_ratio": 6.107143,
+      "end": 561.42,
+      "no_speech_prob": 0.0,
+      "start": 560.42,
+      "text": "家冬斑"
+    },
+    {
+      "avg_logprob": -1.385405,
+      "compression_ratio": 6.107143,
+      "end": 562.42,
+      "no_speech_prob": 0.0,
+      "start": 561.42,
+      "text": "他"
+    },
+    {
+      "avg_logprob": -1.385405,
+      "compression_ratio": 6.107143,
+      "end": 563.12,
+      "no_speech_prob": 0.0,
+      "start": 562.42,
+      "text": "炸"
+    },
+    {
+      "avg_logprob": -1.385405,
+      "compression_ratio": 6.107143,
+      "end": 563.42,
+      "no_speech_prob": 0.0,
+      "start": 563.12,
+      "text": "他"
+    },
+    {
+      "avg_logprob": -1.385405,
+      "compression_ratio": 6.107143,
+      "end": 564.22,
+      "no_speech_prob": 0.0,
+      "start": 563.42,
+      "text": "炸"
+    },
+    {
+      "avg_logprob": -1.385405,
+      "compression_ratio": 6.107143,
+      "end": 564.42,
+      "no_speech_prob": 0.0,
+      "start": 564.22,
+      "text": "炸"
+    },
+    {
+      "avg_logprob": -1.385405,
+      "compression_ratio": 6.107143,
+      "end": 565.38,
+      "no_speech_prob": 0.0,
+      "start": 564.42,
+      "text": "炸"
+    },
+    {
+      "avg_logprob": -1.385405,
+      "compression_ratio": 6.107143,
+      "end": 565.42,
+      "no_speech_prob": 0.0,
+      "start": 565.38,
+      "text": "炸"
+    },
+    {
+      "avg_logprob": -1.385405,
+      "compression_ratio": 6.107143,
+      "end": 565.82,
+      "no_speech_prob": 0.0,
+      "start": 565.42,
+      "text": "炸"
+    },
+    {
+      "avg_logprob": -1.385405,
+      "compression_ratio": 6.107143,
+      "end": 566.82,
+      "no_speech_prob": 0.0,
+      "start": 566.42,
+      "text": "炸"
+    },
+    {
+      "avg_logprob": -1.385405,
+      "compression_ratio": 6.107143,
+      "end": 567.38,
+      "no_speech_prob": 0.0,
+      "start": 567.38,
+      "text": "炸"
+    },
+    {
+      "avg_logprob": -1.385405,
+      "compression_ratio": 6.107143,
+      "end": 567.52,
+      "no_speech_prob": 0.0,
+      "start": 567.32,
+      "text": "炸"
+    },
+    {
+      "avg_logprob": -1.385405,
+      "compression_ratio": 6.107143,
+      "end": 567.94,
+      "no_speech_prob": 0.0,
+      "start": 567.42,
+      "text": "炸"
+    },
+    {
+      "avg_logprob": -1.385405,
+      "compression_ratio": 6.107143,
+      "end": 568.22,
+      "no_speech_prob": 0.0,
+      "start": 567.94,
+      "text": "炸"
+    },
+    {
+      "avg_logprob": -1.385405,
+      "compression_ratio": 6.107143,
+      "end": 568.44,
+      "no_speech_prob": 0.0,
+      "start": 568.22,
+      "text": "炸"
+    },
+    {
+      "avg_logprob": -1.385405,
+      "compression_ratio": 6.107143,
+      "end": 568.82,
+      "no_speech_prob": 0.0,
+      "start": 568.42,
+      "text": "炸"
+    },
+    {
+      "avg_logprob": -1.385405,
+      "compression_ratio": 6.107143,
+      "end": 569.06,
+      "no_speech_prob": 0.0,
+      "start": 568.82,
+      "text": "炸"
+    },
+    {
+      "avg_logprob": -1.385405,
+      "compression_ratio": 6.107143,
+      "end": 569.24,
+      "no_speech_prob": 0.0,
+      "start": 569.06,
+      "text": "炸"
+    },
+    {
+      "avg_logprob": -1.385405,
+      "compression_ratio": 6.107143,
+      "end": 569.42,
+      "no_speech_prob": 0.0,
+      "start": 569.24,
+      "text": "炸"
+    },
+    {
+      "avg_logprob": -1.385405,
+      "compression_ratio": 6.107143,
+      "end": 569.76,
+      "no_speech_prob": 0.0,
+      "start": 569.42,
+      "text": "炸"
+    },
+    {
+      "avg_logprob": -1.385405,
+      "compression_ratio": 6.107143,
+      "end": 570.08,
+      "no_speech_prob": 0.0,
+      "start": 569.76,
+      "text": "炸"
+    },
+    {
+      "avg_logprob": -1.385405,
+      "compression_ratio": 6.107143,
+      "end": 570.36,
+      "no_speech_prob": 0.0,
+      "start": 570.08,
+      "text": "炸"
+    },
+    {
+      "avg_logprob": -1.385405,
+      "compression_ratio": 6.107143,
+      "end": 570.56,
+      "no_speech_prob": 0.0,
+      "start": 570.36,
+      "text": "炸"
+    },
+    {
+      "avg_logprob": -1.385405,
+      "compression_ratio": 6.107143,
+      "end": 570.82,
+      "no_speech_prob": 0.0,
+      "start": 570.56,
+      "text": "炸"
+    },
+    {
+      "avg_logprob": -1.385405,
+      "compression_ratio": 6.107143,
+      "end": 571.02,
+      "no_speech_prob": 0.0,
+      "start": 570.82,
+      "text": "炸"
+    },
+    {
+      "avg_logprob": -1.385405,
+      "compression_ratio": 6.107143,
+      "end": 571.16,
+      "no_speech_prob": 0.0,
+      "start": 571.02,
+      "text": "炸"
+    },
+    {
+      "avg_logprob": -1.385405,
+      "compression_ratio": 6.107143,
+      "end": 571.28,
+      "no_speech_prob": 0.0,
+      "start": 571.16,
+      "text": "炸"
+    },
+    {
+      "avg_logprob": -1.385405,
+      "compression_ratio": 6.107143,
+      "end": 571.46,
+      "no_speech_prob": 0.0,
+      "start": 571.28,
+      "text": "炸"
+    },
+    {
+      "avg_logprob": -1.385405,
+      "compression_ratio": 6.107143,
+      "end": 571.68,
+      "no_speech_prob": 0.0,
+      "start": 571.46,
+      "text": "炸"
+    },
+    {
+      "avg_logprob": -1.385405,
+      "compression_ratio": 6.107143,
+      "end": 572.02,
+      "no_speech_prob": 0.0,
+      "start": 571.68,
+      "text": "炸"
+    },
+    {
+      "avg_logprob": -1.385405,
+      "compression_ratio": 6.107143,
+      "end": 572.28,
+      "no_speech_prob": 0.0,
+      "start": 572.02,
+      "text": "炸"
+    },
+    {
+      "avg_logprob": -1.385405,
+      "compression_ratio": 6.107143,
+      "end": 572.54,
+      "no_speech_prob": 0.0,
+      "start": 572.28,
+      "text": "炸"
+    },
+    {
+      "avg_logprob": -1.385405,
+      "compression_ratio": 6.107143,
+      "end": 572.7,
+      "no_speech_prob": 0.0,
+      "start": 572.54,
+      "text": "炸"
+    },
+    {
+      "avg_logprob": -1.385405,
+      "compression_ratio": 6.107143,
+      "end": 572.9,
+      "no_speech_prob": 0.0,
+      "start": 572.7,
+      "text": "炸"
+    },
+    {
+      "avg_logprob": -1.385405,
+      "compression_ratio": 6.107143,
+      "end": 573.1,
+      "no_speech_prob": 0.0,
+      "start": 572.9,
+      "text": "炸"
+    },
+    {
+      "avg_logprob": -1.385405,
+      "compression_ratio": 6.107143,
+      "end": 573.3,
+      "no_speech_prob": 0.0,
+      "start": 573.1,
+      "text": "炸"
+    },
+    {
+      "avg_logprob": -1.385405,
+      "compression_ratio": 6.107143,
+      "end": 573.54,
+      "no_speech_prob": 0.0,
+      "start": 573.3,
+      "text": "炸"
+    },
+    {
+      "avg_logprob": -1.385405,
+      "compression_ratio": 6.107143,
+      "end": 573.74,
+      "no_speech_prob": 0.0,
+      "start": 573.54,
+      "text": "炸"
+    },
+    {
+      "avg_logprob": -1.385405,
+      "compression_ratio": 6.107143,
+      "end": 574.02,
+      "no_speech_prob": 0.0,
+      "start": 573.74,
+      "text": "炸"
+    },
+    {
+      "avg_logprob": -1.385405,
+      "compression_ratio": 6.107143,
+      "end": 574.16,
+      "no_speech_prob": 0.0,
+      "start": 574.02,
+      "text": "炸"
+    },
+    {
+      "avg_logprob": -1.385405,
+      "compression_ratio": 6.107143,
+      "end": 574.28,
+      "no_speech_prob": 0.0,
+      "start": 574.16,
+      "text": "炸"
+    },
+    {
+      "avg_logprob": -1.385405,
+      "compression_ratio": 6.107143,
+      "end": 574.36,
+      "no_speech_prob": 0.0,
+      "start": 574.28,
+      "text": "炸"
+    },
+    {
+      "avg_logprob": -1.385405,
+      "compression_ratio": 6.107143,
+      "end": 574.54,
+      "no_speech_prob": 0.0,
+      "start": 574.36,
+      "text": "炸"
+    },
+    {
+      "avg_logprob": -1.385405,
+      "compression_ratio": 6.107143,
+      "end": 574.72,
+      "no_speech_prob": 0.0,
+      "start": 574.54,
+      "text": "炸"
+    },
+    {
+      "avg_logprob": -1.385405,
+      "compression_ratio": 6.107143,
+      "end": 574.92,
+      "no_speech_prob": 0.0,
+      "start": 574.72,
+      "text": "炸"
+    },
+    {
+      "avg_logprob": -1.385405,
+      "compression_ratio": 6.107143,
+      "end": 575.06,
+      "no_speech_prob": 0.0,
+      "start": 574.92,
+      "text": "炸"
+    },
+    {
+      "avg_logprob": -1.385405,
+      "compression_ratio": 6.107143,
+      "end": 575.22,
+      "no_speech_prob": 0.0,
+      "start": 575.06,
+      "text": "炸"
+    },
+    {
+      "avg_logprob": -1.385405,
+      "compression_ratio": 6.107143,
+      "end": 575.34,
+      "no_speech_prob": 0.0,
+      "start": 575.22,
+      "text": "炸"
+    },
+    {
+      "avg_logprob": -1.385405,
+      "compression_ratio": 6.107143,
+      "end": 575.54,
+      "no_speech_prob": 0.0,
+      "start": 575.34,
+      "text": "炸"
+    },
+    {
+      "avg_logprob": -1.385405,
+      "compression_ratio": 6.107143,
+      "end": 575.72,
+      "no_speech_prob": 0.0,
+      "start": 575.54,
+      "text": "炸"
+    },
+    {
+      "avg_logprob": -1.385405,
+      "compression_ratio": 6.107143,
+      "end": 576.08,
+      "no_speech_prob": 0.0,
+      "start": 575.72,
+      "text": "炸"
+    },
+    {
+      "avg_logprob": -1.385405,
+      "compression_ratio": 6.107143,
+      "end": 576.28,
+      "no_speech_prob": 0.0,
+      "start": 576.08,
+      "text": "炸"
+    },
+    {
+      "avg_logprob": -1.385405,
+      "compression_ratio": 6.107143,
+      "end": 576.54,
+      "no_speech_prob": 0.0,
+      "start": 576.28,
+      "text": "炸"
+    },
+    {
+      "avg_logprob": -1.385405,
+      "compression_ratio": 6.107143,
+      "end": 576.86,
+      "no_speech_prob": 0.0,
+      "start": 576.54,
+      "text": "炸"
+    },
+    {
+      "avg_logprob": -0.538156,
+      "compression_ratio": 1.058394,
+      "end": 587.36,
+      "no_speech_prob": 0.0,
+      "start": 576.86,
+      "text": "文归来,东西来开始不断续飞,乾坤,波风马门,波风水门,"
+    },
+    {
+      "avg_logprob": -0.538156,
+      "compression_ratio": 1.058394,
+      "end": 602.22,
+      "no_speech_prob": 0.0,
+      "start": 587.36,
+      "text": "心想事成,大鱼,龙浩,文京京,文先生,妈木,西诺比利,沉默,"
+    },
+    {
+      "avg_logprob": -0.495112,
+      "compression_ratio": 1.0,
+      "end": 631.42,
+      "no_speech_prob": 0.0,
+      "start": 602.22,
+      "text": "山东福山,人民大费堂,东西来发烦,太多水了,太多水了,"
+    },
+    {
+      "avg_logprob": -1.030651,
+      "compression_ratio": 5.11,
+      "end": 636.7,
+      "no_speech_prob": 0.0,
+      "start": 632.22,
+      "text": "很再来,就是 treatment。"
+    },
+    {
+      "avg_logprob": -1.030651,
+      "compression_ratio": 5.11,
+      "end": 640.82,
+      "no_speech_prob": 0.0,
+      "start": 636.7,
+      "text": "很再来,就是盆子叶的大idade。"
+    },
+    {
+      "avg_logprob": -1.030651,
+      "compression_ratio": 5.11,
+      "end": 644.32,
+      "no_speech_prob": 0.0,
+      "start": 640.82,
+      "text": "很行,很来临 consider。"
+    },
+    {
+      "avg_logprob": -1.030651,
+      "compression_ratio": 5.11,
+      "end": 647.1,
+      "no_speech_prob": 0.0,
+      "start": 644.32,
+      "text": "很来,很来临。"
+    },
+    {
+      "avg_logprob": -1.030651,
+      "compression_ratio": 5.11,
+      "end": 649.3,
+      "no_speech_prob": 0.0,
+      "start": 647.1,
+      "text": "很来,很来临。"
+    },
+    {
+      "avg_logprob": -1.030651,
+      "compression_ratio": 5.11,
+      "end": 651.48,
+      "no_speech_prob": 0.0,
+      "start": 649.3,
+      "text": "很来,很来临。"
+    },
+    {
+      "avg_logprob": -1.030651,
+      "compression_ratio": 5.11,
+      "end": 653.74,
+      "no_speech_prob": 0.0,
+      "start": 651.48,
+      "text": "很来,很来临。"
+    },
+    {
+      "avg_logprob": -1.030651,
+      "compression_ratio": 5.11,
+      "end": 655.68,
+      "no_speech_prob": 0.0,
+      "start": 653.74,
+      "text": "很来,很来."
+    },
+    {
+      "avg_logprob": -2.293807,
+      "compression_ratio": 3.863636,
+      "end": 658.62,
+      "no_speech_prob": 0.0,
+      "start": 655.68,
+      "text": "有事你可以分归"
+    },
+    {
+      "avg_logprob": -2.293807,
+      "compression_ratio": 3.863636,
+      "end": 660.58,
+      "no_speech_prob": 0.0,
+      "start": 659.48,
+      "text": "就得voi"
+    },
+    {
+      "avg_logprob": -2.293807,
+      "compression_ratio": 3.863636,
+      "end": 661.44,
+      "no_speech_prob": 0.0,
+      "start": 660.68,
+      "text": "你也有事"
+    },
+    {
+      "avg_logprob": -2.293807,
+      "compression_ratio": 3.863636,
+      "end": 662.78,
+      "no_speech_prob": 0.0,
+      "start": 661.76,
+      "text": "你會多攤"
+    },
+    {
+      "avg_logprob": -2.293807,
+      "compression_ratio": 3.863636,
+      "end": 664.12,
+      "no_speech_prob": 0.0,
+      "start": 663.12,
+      "text": "你會多攤"
+    },
+    {
+      "avg_logprob": -2.293807,
+      "compression_ratio": 3.863636,
+      "end": 664.68,
+      "no_speech_prob": 0.0,
+      "start": 664.24,
+      "text": "好"
+    },
+    {
+      "avg_logprob": -2.293807,
+      "compression_ratio": 3.863636,
+      "end": 665.28,
+      "no_speech_prob": 0.0,
+      "start": 664.8,
+      "text": "好"
+    },
+    {
+      "avg_logprob": -2.293807,
+      "compression_ratio": 3.863636,
+      "end": 665.86,
+      "no_speech_prob": 0.0,
+      "start": 665.38,
+      "text": "好"
+    },
+    {
+      "avg_logprob": -2.293807,
+      "compression_ratio": 3.863636,
+      "end": 666.34,
+      "no_speech_prob": 0.0,
+      "start": 665.94,
+      "text": "好"
+    },
+    {
+      "avg_logprob": -2.293807,
+      "compression_ratio": 3.863636,
+      "end": 666.78,
+      "no_speech_prob": 0.0,
+      "start": 666.42,
+      "text": "好"
+    },
+    {
+      "avg_logprob": -2.293807,
+      "compression_ratio": 3.863636,
+      "end": 667.24,
+      "no_speech_prob": 0.0,
+      "start": 666.86,
+      "text": "好"
+    },
+    {
+      "avg_logprob": -2.293807,
+      "compression_ratio": 3.863636,
+      "end": 667.74,
+      "no_speech_prob": 0.0,
+      "start": 667.32,
+      "text": "好"
+    },
+    {
+      "avg_logprob": -2.293807,
+      "compression_ratio": 3.863636,
+      "end": 668.18,
+      "no_speech_prob": 0.0,
+      "start": 667.8,
+      "text": "好"
+    },
+    {
+      "avg_logprob": -2.293807,
+      "compression_ratio": 3.863636,
+      "end": 668.58,
+      "no_speech_prob": 0.0,
+      "start": 668.24,
+      "text": "好"
+    },
+    {
+      "avg_logprob": -2.293807,
+      "compression_ratio": 3.863636,
+      "end": 668.88,
+      "no_speech_prob": 0.0,
+      "start": 668.64,
+      "text": "好"
+    },
+    {
+      "avg_logprob": -2.293807,
+      "compression_ratio": 3.863636,
+      "end": 669.22,
+      "no_speech_prob": 0.0,
+      "start": 668.94,
+      "text": "好"
+    },
+    {
+      "avg_logprob": -2.293807,
+      "compression_ratio": 3.863636,
+      "end": 669.56,
+      "no_speech_prob": 0.0,
+      "start": 669.28,
+      "text": "好"
+    },
+    {
+      "avg_logprob": -2.293807,
+      "compression_ratio": 3.863636,
+      "end": 669.84,
+      "no_speech_prob": 0.0,
+      "start": 669.62,
+      "text": "好"
+    },
+    {
+      "avg_logprob": -2.293807,
+      "compression_ratio": 3.863636,
+      "end": 670.12,
+      "no_speech_prob": 0.0,
+      "start": 669.9,
+      "text": "好"
+    },
+    {
+      "avg_logprob": -2.293807,
+      "compression_ratio": 3.863636,
+      "end": 670.42,
+      "no_speech_prob": 0.0,
+      "start": 670.18,
+      "text": "好"
+    },
+    {
+      "avg_logprob": -2.293807,
+      "compression_ratio": 3.863636,
+      "end": 670.7,
+      "no_speech_prob": 0.0,
+      "start": 670.48,
+      "text": "好"
+    },
+    {
+      "avg_logprob": -2.293807,
+      "compression_ratio": 3.863636,
+      "end": 670.98,
+      "no_speech_prob": 0.0,
+      "start": 670.74,
+      "text": "好"
+    },
+    {
+      "avg_logprob": -2.293807,
+      "compression_ratio": 3.863636,
+      "end": 671.28,
+      "no_speech_prob": 0.0,
+      "start": 671.02,
+      "text": "好"
+    },
+    {
+      "avg_logprob": -2.293807,
+      "compression_ratio": 3.863636,
+      "end": 671.58,
+      "no_speech_prob": 0.0,
+      "start": 671.3,
+      "text": "好"
+    },
+    {
+      "avg_logprob": -2.293807,
+      "compression_ratio": 3.863636,
+      "end": 671.88,
+      "no_speech_prob": 0.0,
+      "start": 671.6,
+      "text": "好"
+    },
+    {
+      "avg_logprob": -2.293807,
+      "compression_ratio": 3.863636,
+      "end": 672.08,
+      "no_speech_prob": 0.0,
+      "start": 671.92,
+      "text": "好"
+    },
+    {
+      "avg_logprob": -2.293807,
+      "compression_ratio": 3.863636,
+      "end": 672.34,
+      "no_speech_prob": 0.0,
+      "start": 672.1,
+      "text": "好"
+    },
+    {
+      "avg_logprob": -2.293807,
+      "compression_ratio": 3.863636,
+      "end": 672.66,
+      "no_speech_prob": 0.0,
+      "start": 672.36,
+      "text": "好"
+    },
+    {
+      "avg_logprob": -2.293807,
+      "compression_ratio": 3.863636,
+      "end": 672.92,
+      "no_speech_prob": 0.0,
+      "start": 672.68,
+      "text": "好"
+    },
+    {
+      "avg_logprob": -2.293807,
+      "compression_ratio": 3.863636,
+      "end": 673.14,
+      "no_speech_prob": 0.0,
+      "start": 672.94,
+      "text": "好"
+    },
+    {
+      "avg_logprob": -2.293807,
+      "compression_ratio": 3.863636,
+      "end": 673.36,
+      "no_speech_prob": 0.0,
+      "start": 673.14,
+      "text": "好"
+    },
+    {
+      "avg_logprob": -2.293807,
+      "compression_ratio": 3.863636,
+      "end": 673.56,
+      "no_speech_prob": 0.0,
+      "start": 673.36,
+      "text": "好"
+    },
+    {
+      "avg_logprob": -2.293807,
+      "compression_ratio": 3.863636,
+      "end": 673.72,
+      "no_speech_prob": 0.0,
+      "start": 673.56,
+      "text": "好"
+    },
+    {
+      "avg_logprob": -2.293807,
+      "compression_ratio": 3.863636,
+      "end": 673.88,
+      "no_speech_prob": 0.0,
+      "start": 673.72,
+      "text": "好"
+    },
+    {
+      "avg_logprob": -2.293807,
+      "compression_ratio": 3.863636,
+      "end": 674.0,
+      "no_speech_prob": 0.0,
+      "start": 673.88,
+      "text": "好"
+    },
+    {
+      "avg_logprob": -2.293807,
+      "compression_ratio": 3.863636,
+      "end": 674.14,
+      "no_speech_prob": 0.0,
+      "start": 674.0,
+      "text": "好"
+    },
+    {
+      "avg_logprob": -2.293807,
+      "compression_ratio": 3.863636,
+      "end": 674.24,
+      "no_speech_prob": 0.0,
+      "start": 674.14,
+      "text": "好"
+    },
+    {
+      "avg_logprob": -2.293807,
+      "compression_ratio": 3.863636,
+      "end": 674.4,
+      "no_speech_prob": 0.0,
+      "start": 674.24,
+      "text": "好"
+    },
+    {
+      "avg_logprob": -2.293807,
+      "compression_ratio": 3.863636,
+      "end": 674.56,
+      "no_speech_prob": 0.0,
+      "start": 674.4,
+      "text": "好"
+    },
+    {
+      "avg_logprob": -2.293807,
+      "compression_ratio": 3.863636,
+      "end": 674.66,
+      "no_speech_prob": 0.0,
+      "start": 674.56,
+      "text": "好"
+    },
+    {
+      "avg_logprob": -2.293807,
+      "compression_ratio": 3.863636,
+      "end": 674.74,
+      "no_speech_prob": 0.0,
+      "start": 674.66,
+      "text": "好"
+    },
+    {
+      "avg_logprob": -2.293807,
+      "compression_ratio": 3.863636,
+      "end": 674.8,
+      "no_speech_prob": 0.0,
+      "start": 674.74,
+      "text": "好"
+    },
+    {
+      "avg_logprob": -2.293807,
+      "compression_ratio": 3.863636,
+      "end": 674.86,
+      "no_speech_prob": 0.0,
+      "start": 674.8,
+      "text": "好"
+    },
+    {
+      "avg_logprob": -2.293807,
+      "compression_ratio": 3.863636,
+      "end": 674.98,
+      "no_speech_prob": 0.0,
+      "start": 674.86,
+      "text": "好"
+    },
+    {
+      "avg_logprob": -2.293807,
+      "compression_ratio": 3.863636,
+      "end": 675.04,
+      "no_speech_prob": 0.0,
+      "start": 674.98,
+      "text": "好"
+    },
+    {
+      "avg_logprob": -2.293807,
+      "compression_ratio": 3.863636,
+      "end": 675.1,
+      "no_speech_prob": 0.0,
+      "start": 675.04,
+      "text": "好"
+    },
+    {
+      "avg_logprob": -2.293807,
+      "compression_ratio": 3.863636,
+      "end": 675.16,
+      "no_speech_prob": 0.0,
+      "start": 675.1,
+      "text": "好"
+    },
+    {
+      "avg_logprob": -2.293807,
+      "compression_ratio": 3.863636,
+      "end": 675.2,
+      "no_speech_prob": 0.0,
+      "start": 675.16,
+      "text": "好"
+    },
+    {
+      "avg_logprob": -2.293807,
+      "compression_ratio": 3.863636,
+      "end": 675.24,
+      "no_speech_prob": 0.0,
+      "start": 675.2,
+      "text": "好"
+    },
+    {
+      "avg_logprob": -2.293807,
+      "compression_ratio": 3.863636,
+      "end": 675.26,
+      "no_speech_prob": 0.0,
+      "start": 675.24,
+      "text": "好"
+    },
+    {
+      "avg_logprob": -2.293807,
+      "compression_ratio": 3.863636,
+      "end": 675.3,
+      "no_speech_prob": 0.0,
+      "start": 675.26,
+      "text": "好"
+    },
+    {
+      "avg_logprob": -2.293807,
+      "compression_ratio": 3.863636,
+      "end": 675.34,
+      "no_speech_prob": 0.0,
+      "start": 675.3,
+      "text": "好"
+    },
+    {
+      "avg_logprob": -2.293807,
+      "compression_ratio": 3.863636,
+      "end": 675.36,
+      "no_speech_prob": 0.0,
+      "start": 675.34,
+      "text": "好"
+    },
+    {
+      "avg_logprob": -2.293807,
+      "compression_ratio": 3.863636,
+      "end": 675.4,
+      "no_speech_prob": 0.0,
+      "start": 675.36,
+      "text": "好"
+    },
+    {
+      "avg_logprob": -2.293807,
+      "compression_ratio": 3.863636,
+      "end": 675.44,
+      "no_speech_prob": 0.0,
+      "start": 675.4,
+      "text": "好"
+    },
+    {
+      "avg_logprob": -2.293807,
+      "compression_ratio": 3.863636,
+      "end": 675.46,
+      "no_speech_prob": 0.0,
+      "start": 675.44,
+      "text": "好"
+    },
+    {
+      "avg_logprob": -2.293807,
+      "compression_ratio": 3.863636,
+      "end": 675.48,
+      "no_speech_prob": 0.0,
+      "start": 675.46,
+      "text": "好"
+    },
+    {
+      "avg_logprob": -2.293807,
+      "compression_ratio": 3.863636,
+      "end": 675.5,
+      "no_speech_prob": 0.0,
+      "start": 675.48,
+      "text": "好"
+    },
+    {
+      "avg_logprob": -2.293807,
+      "compression_ratio": 3.863636,
+      "end": 675.54,
+      "no_speech_prob": 0.0,
+      "start": 675.5,
+      "text": "好"
+    },
+    {
+      "avg_logprob": -2.293807,
+      "compression_ratio": 3.863636,
+      "end": 675.56,
+      "no_speech_prob": 0.0,
+      "start": 675.54,
+      "text": "好"
+    },
+    {
+      "avg_logprob": -2.293807,
+      "compression_ratio": 3.863636,
+      "end": 675.6,
+      "no_speech_prob": 0.0,
+      "start": 675.56,
+      "text": "好"
+    },
+    {
+      "avg_logprob": -2.293807,
+      "compression_ratio": 3.863636,
+      "end": 675.62,
+      "no_speech_prob": 0.0,
+      "start": 675.6,
+      "text": "好"
+    },
+    {
+      "avg_logprob": -2.293807,
+      "compression_ratio": 3.863636,
+      "end": 675.66,
+      "no_speech_prob": 0.0,
+      "start": 675.62,
+      "text": "好"
+    },
+    {
+      "avg_logprob": -2.293807,
+      "compression_ratio": 3.863636,
+      "end": 675.68,
+      "no_speech_prob": 0.0,
+      "start": 675.66,
+      "text": "好"
+    },
+    {
+      "avg_logprob": -2.293807,
+      "compression_ratio": 3.863636,
+      "end": 675.74,
+      "no_speech_prob": 0.0,
+      "start": 675.68,
+      "text": "好"
+    },
+    {
+      "avg_logprob": -2.293807,
+      "compression_ratio": 3.863636,
+      "end": 675.86,
+      "no_speech_prob": 0.0,
+      "start": 675.74,
+      "text": "好"
+    },
+    {
+      "avg_logprob": -2.293807,
+      "compression_ratio": 3.863636,
+      "end": 675.96,
+      "no_speech_prob": 0.0,
+      "start": 675.86,
+      "text": "好"
+    },
+    {
+      "avg_logprob": -0.584647,
+      "compression_ratio": 1.194915,
+      "end": 687.68,
+      "no_speech_prob": 0.0,
+      "start": 685.68,
+      "text": "我们的兵力啊"
+    },
+    {
+      "avg_logprob": -0.584647,
+      "compression_ratio": 1.194915,
+      "end": 696.46,
+      "no_speech_prob": 0.0,
+      "start": 687.68,
+      "text": "他们的恐惧是我们的武器"
+    },
+    {
+      "avg_logprob": -0.584647,
+      "compression_ratio": 1.194915,
+      "end": 698.24,
+      "no_speech_prob": 0.0,
+      "start": 696.46,
+      "text": "我们的胜利"
+    },
+    {
+      "avg_logprob": -0.584647,
+      "compression_ratio": 1.194915,
+      "end": 701.04,
+      "no_speech_prob": 0.0,
+      "start": 698.24,
+      "text": "谢谢了兄弟姐妹们"
+    },
+    {
+      "avg_logprob": -0.584647,
+      "compression_ratio": 1.194915,
+      "end": 702.68,
+      "no_speech_prob": 0.0,
+      "start": 701.04,
+      "text": "你们健身了吗"
+    },
+    {
+      "avg_logprob": -0.584647,
+      "compression_ratio": 1.194915,
+      "end": 706.04,
+      "no_speech_prob": 0.0,
+      "start": 703.54,
+      "text": "行动行动行动"
+    },
+    {
+      "avg_logprob": -0.584647,
+      "compression_ratio": 1.194915,
+      "end": 708.68,
+      "no_speech_prob": 0.0,
+      "start": 706.04,
+      "text": "中国已完了"
+    },
+    {
+      "avg_logprob": -0.5262,
+      "compression_ratio": 1.077586,
+      "end": 717.68,
+      "no_speech_prob": 0.0,
+      "start": 708.68,
+      "text": "水多多"
+    },
+    {
+      "avg_logprob": -0.5262,
+      "compression_ratio": 1.077586,
+      "end": 723.68,
+      "no_speech_prob": 0.0,
+      "start": 717.68,
+      "text": "1月4号公战友们"
+    },
+    {
+      "avg_logprob": -0.5262,
+      "compression_ratio": 1.077586,
+      "end": 725.68,
+      "no_speech_prob": 0.0,
+      "start": 723.68,
+      "text": "这大会给大家时间"
+    },
+    {
+      "avg_logprob": -0.5262,
+      "compression_ratio": 1.077586,
+      "end": 727.68,
+      "no_speech_prob": 0.0,
+      "start": 725.68,
+      "text": "很多国际战友们气个露出脸"
+    },
+    {
+      "avg_logprob": -0.5262,
+      "compression_ratio": 1.077586,
+      "end": 729.68,
+      "no_speech_prob": 0.0,
+      "start": 727.68,
+      "text": "气个露出脸"
+    },
+    {
+      "avg_logprob": -0.5262,
+      "compression_ratio": 1.077586,
+      "end": 733.68,
+      "no_speech_prob": 0.0,
+      "start": 729.68,
+      "text": "郑州西安"
+    },
+    {
+      "avg_logprob": -0.5262,
+      "compression_ratio": 1.077586,
+      "end": 735.68,
+      "no_speech_prob": 0.0,
+      "start": 733.68,
+      "text": "太惨了"
+    },
+    {
+      "avg_logprob": -0.749004,
+      "compression_ratio": 0.5,
+      "end": 739.68,
+      "no_speech_prob": 0.0,
+      "start": 735.68,
+      "text": "太惨了"
+    },
+    {
+      "avg_logprob": -1.016041,
+      "compression_ratio": 11.892857,
+      "end": 741.68,
+      "no_speech_prob": 0.0,
+      "start": 739.68,
+      "text": "啊"
+    },
+    {
+      "avg_logprob": -1.016041,
+      "compression_ratio": 11.892857,
+      "end": 742.68,
+      "no_speech_prob": 0.0,
+      "start": 741.68,
+      "text": "那啊"
+    },
+    {
+      "avg_logprob": -1.016041,
+      "compression_ratio": 11.892857,
+      "end": 743.68,
+      "no_speech_prob": 0.0,
+      "start": 742.68,
+      "text": "下来"
+    },
+    {
+      "avg_logprob": -1.016041,
+      "compression_ratio": 11.892857,
+      "end": 744.68,
+      "no_speech_prob": 0.0,
+      "start": 743.68,
+      "text": "下来"
+    },
+    {
+      "avg_logprob": -1.016041,
+      "compression_ratio": 11.892857,
+      "end": 745.68,
+      "no_speech_prob": 0.0,
+      "start": 744.68,
+      "text": "下来"
+    },
+    {
+      "avg_logprob": -1.016041,
+      "compression_ratio": 11.892857,
+      "end": 746.68,
+      "no_speech_prob": 0.0,
+      "start": 745.68,
+      "text": "下来"
+    },
+    {
+      "avg_logprob": -1.016041,
+      "compression_ratio": 11.892857,
+      "end": 747.68,
+      "no_speech_prob": 0.0,
+      "start": 746.68,
+      "text": "下来"
+    },
+    {
+      "avg_logprob": -1.016041,
+      "compression_ratio": 11.892857,
+      "end": 748.68,
+      "no_speech_prob": 0.0,
+      "start": 747.68,
+      "text": "下来"
+    },
+    {
+      "avg_logprob": -1.016041,
+      "compression_ratio": 11.892857,
+      "end": 749.68,
+      "no_speech_prob": 0.0,
+      "start": 748.68,
+      "text": "下来"
+    },
+    {
+      "avg_logprob": -1.016041,
+      "compression_ratio": 11.892857,
+      "end": 750.68,
+      "no_speech_prob": 0.0,
+      "start": 749.68,
+      "text": "下来"
+    },
+    {
+      "avg_logprob": -1.016041,
+      "compression_ratio": 11.892857,
+      "end": 751.68,
+      "no_speech_prob": 0.0,
+      "start": 750.68,
+      "text": "下来"
+    },
+    {
+      "avg_logprob": -1.016041,
+      "compression_ratio": 11.892857,
+      "end": 752.68,
+      "no_speech_prob": 0.0,
+      "start": 751.68,
+      "text": "下来"
+    },
+    {
+      "avg_logprob": -1.016041,
+      "compression_ratio": 11.892857,
+      "end": 753.68,
+      "no_speech_prob": 0.0,
+      "start": 752.68,
+      "text": "下来"
+    },
+    {
+      "avg_logprob": -1.016041,
+      "compression_ratio": 11.892857,
+      "end": 754.3,
+      "no_speech_prob": 0.0,
+      "start": 753.68,
+      "text": "下来"
+    },
+    {
+      "avg_logprob": -1.016041,
+      "compression_ratio": 11.892857,
+      "end": 754.68,
+      "no_speech_prob": 0.0,
+      "start": 754.3,
+      "text": "下来"
+    },
+    {
+      "avg_logprob": -1.016041,
+      "compression_ratio": 11.892857,
+      "end": 755.3,
+      "no_speech_prob": 0.0,
+      "start": 754.68,
+      "text": "下来"
+    },
+    {
+      "avg_logprob": -1.016041,
+      "compression_ratio": 11.892857,
+      "end": 755.68,
+      "no_speech_prob": 0.0,
+      "start": 755.3,
+      "text": "下来"
+    },
+    {
+      "avg_logprob": -1.016041,
+      "compression_ratio": 11.892857,
+      "end": 756.26,
+      "no_speech_prob": 0.0,
+      "start": 755.68,
+      "text": "下来"
+    },
+    {
+      "avg_logprob": -1.016041,
+      "compression_ratio": 11.892857,
+      "end": 756.66,
+      "no_speech_prob": 0.0,
+      "start": 756.26,
+      "text": "下来"
+    },
+    {
+      "avg_logprob": -1.016041,
+      "compression_ratio": 11.892857,
+      "end": 756.68,
+      "no_speech_prob": 0.0,
+      "start": 756.66,
+      "text": "下来"
+    },
+    {
+      "avg_logprob": -1.016041,
+      "compression_ratio": 11.892857,
+      "end": 757.02,
+      "no_speech_prob": 0.0,
+      "start": 756.68,
+      "text": "下来"
+    },
+    {
+      "avg_logprob": -1.016041,
+      "compression_ratio": 11.892857,
+      "end": 757.24,
+      "no_speech_prob": 0.0,
+      "start": 757.02,
+      "text": "下来"
+    },
+    {
+      "avg_logprob": -1.016041,
+      "compression_ratio": 11.892857,
+      "end": 757.44,
+      "no_speech_prob": 0.0,
+      "start": 757.24,
+      "text": "下来"
+    },
+    {
+      "avg_logprob": -1.016041,
+      "compression_ratio": 11.892857,
+      "end": 757.62,
+      "no_speech_prob": 0.0,
+      "start": 757.44,
+      "text": "下来"
+    },
+    {
+      "avg_logprob": -1.016041,
+      "compression_ratio": 11.892857,
+      "end": 757.68,
+      "no_speech_prob": 0.0,
+      "start": 757.62,
+      "text": "下来"
+    },
+    {
+      "avg_logprob": -1.016041,
+      "compression_ratio": 11.892857,
+      "end": 757.94,
+      "no_speech_prob": 0.0,
+      "start": 757.68,
+      "text": "下来"
+    },
+    {
+      "avg_logprob": -1.016041,
+      "compression_ratio": 11.892857,
+      "end": 758.04,
+      "no_speech_prob": 0.0,
+      "start": 757.94,
+      "text": "下来"
+    },
+    {
+      "avg_logprob": -1.016041,
+      "compression_ratio": 11.892857,
+      "end": 758.14,
+      "no_speech_prob": 0.0,
+      "start": 758.04,
+      "text": "下来"
+    },
+    {
+      "avg_logprob": -1.016041,
+      "compression_ratio": 11.892857,
+      "end": 758.24,
+      "no_speech_prob": 0.0,
+      "start": 758.14,
+      "text": "下来"
+    },
+    {
+      "avg_logprob": -1.016041,
+      "compression_ratio": 11.892857,
+      "end": 758.4,
+      "no_speech_prob": 0.0,
+      "start": 758.24,
+      "text": "下来"
+    },
+    {
+      "avg_logprob": -1.016041,
+      "compression_ratio": 11.892857,
+      "end": 758.52,
+      "no_speech_prob": 0.0,
+      "start": 758.4,
+      "text": "下来"
+    },
+    {
+      "avg_logprob": -1.016041,
+      "compression_ratio": 11.892857,
+      "end": 758.62,
+      "no_speech_prob": 0.0,
+      "start": 758.52,
+      "text": "下来"
+    },
+    {
+      "avg_logprob": -1.016041,
+      "compression_ratio": 11.892857,
+      "end": 758.68,
+      "no_speech_prob": 0.0,
+      "start": 758.62,
+      "text": "下来"
+    },
+    {
+      "avg_logprob": -1.016041,
+      "compression_ratio": 11.892857,
+      "end": 758.9,
+      "no_speech_prob": 0.0,
+      "start": 758.68,
+      "text": "下来"
+    },
+    {
+      "avg_logprob": -1.016041,
+      "compression_ratio": 11.892857,
+      "end": 759.1,
+      "no_speech_prob": 0.0,
+      "start": 758.9,
+      "text": "下来"
+    },
+    {
+      "avg_logprob": -1.016041,
+      "compression_ratio": 11.892857,
+      "end": 759.24,
+      "no_speech_prob": 0.0,
+      "start": 759.1,
+      "text": "下来"
+    },
+    {
+      "avg_logprob": -1.016041,
+      "compression_ratio": 11.892857,
+      "end": 759.46,
+      "no_speech_prob": 0.0,
+      "start": 759.24,
+      "text": "下来"
+    },
+    {
+      "avg_logprob": -1.016041,
+      "compression_ratio": 11.892857,
+      "end": 759.66,
+      "no_speech_prob": 0.0,
+      "start": 759.46,
+      "text": "下来"
+    },
+    {
+      "avg_logprob": -1.016041,
+      "compression_ratio": 11.892857,
+      "end": 759.84,
+      "no_speech_prob": 0.0,
+      "start": 759.66,
+      "text": "下来"
+    },
+    {
+      "avg_logprob": -1.016041,
+      "compression_ratio": 11.892857,
+      "end": 760.02,
+      "no_speech_prob": 0.0,
+      "start": 759.84,
+      "text": "下来"
+    },
+    {
+      "avg_logprob": -1.016041,
+      "compression_ratio": 11.892857,
+      "end": 760.16,
+      "no_speech_prob": 0.0,
+      "start": 760.02,
+      "text": "下来"
+    },
+    {
+      "avg_logprob": -1.016041,
+      "compression_ratio": 11.892857,
+      "end": 760.4,
+      "no_speech_prob": 0.0,
+      "start": 760.16,
+      "text": "下来"
+    },
+    {
+      "avg_logprob": -1.016041,
+      "compression_ratio": 11.892857,
+      "end": 760.62,
+      "no_speech_prob": 0.0,
+      "start": 760.4,
+      "text": "下来"
+    },
+    {
+      "avg_logprob": -1.016041,
+      "compression_ratio": 11.892857,
+      "end": 760.76,
+      "no_speech_prob": 0.0,
+      "start": 760.62,
+      "text": "下来"
+    },
+    {
+      "avg_logprob": -1.016041,
+      "compression_ratio": 11.892857,
+      "end": 760.98,
+      "no_speech_prob": 0.0,
+      "start": 760.76,
+      "text": "下来"
+    },
+    {
+      "avg_logprob": -1.016041,
+      "compression_ratio": 11.892857,
+      "end": 761.12,
+      "no_speech_prob": 0.0,
+      "start": 760.98,
+      "text": "下来"
+    },
+    {
+      "avg_logprob": -1.016041,
+      "compression_ratio": 11.892857,
+      "end": 761.32,
+      "no_speech_prob": 0.0,
+      "start": 761.12,
+      "text": "下来"
+    },
+    {
+      "avg_logprob": -1.016041,
+      "compression_ratio": 11.892857,
+      "end": 761.52,
+      "no_speech_prob": 0.0,
+      "start": 761.32,
+      "text": "下来"
+    },
+    {
+      "avg_logprob": -1.016041,
+      "compression_ratio": 11.892857,
+      "end": 761.78,
+      "no_speech_prob": 0.0,
+      "start": 761.52,
+      "text": "下来"
+    },
+    {
+      "avg_logprob": -0.462442,
+      "compression_ratio": 0.738095,
+      "end": 791.76,
+      "no_speech_prob": 0.0,
+      "start": 761.78,
+      "text": "中文字幕志愿者 李宗盛"
+    },
+    {
+      "avg_logprob": -0.890541,
+      "compression_ratio": 0.642857,
+      "end": 792.78,
+      "no_speech_prob": 0.0,
+      "start": 791.78,
+      "text": "啊"
+    },
+    {
+      "avg_logprob": -0.890541,
+      "compression_ratio": 0.642857,
+      "end": 796.3,
+      "no_speech_prob": 0.0,
+      "start": 795.3,
+      "text": "啊"
+    },
+    {
+      "avg_logprob": -0.890541,
+      "compression_ratio": 0.642857,
+      "end": 803.54,
+      "no_speech_prob": 0.0,
+      "start": 802.54,
+      "text": "啊"
+    },
+    {
+      "avg_logprob": -0.704568,
+      "compression_ratio": 1.141104,
+      "end": 823.78,
+      "no_speech_prob": 0.0,
+      "start": 821.78,
+      "text": "啊"
+    },
+    {
+      "avg_logprob": -0.704568,
+      "compression_ratio": 1.141104,
+      "end": 827.78,
+      "no_speech_prob": 0.0,
+      "start": 823.78,
+      "text": "明眼睛小哥哥呀"
+    },
+    {
+      "avg_logprob": -0.704568,
+      "compression_ratio": 1.141104,
+      "end": 830.78,
+      "no_speech_prob": 0.0,
+      "start": 827.78,
+      "text": "小廷哥莉莉"
+    },
+    {
+      "avg_logprob": -0.704568,
+      "compression_ratio": 1.141104,
+      "end": 833.78,
+      "no_speech_prob": 0.0,
+      "start": 830.78,
+      "text": "黑白金一百零豹風"
+    },
+    {
+      "avg_logprob": -0.704568,
+      "compression_ratio": 1.141104,
+      "end": 835.78,
+      "no_speech_prob": 0.0,
+      "start": 833.78,
+      "text": "哇"
+    },
+    {
+      "avg_logprob": -0.704568,
+      "compression_ratio": 1.141104,
+      "end": 837.78,
+      "no_speech_prob": 0.0,
+      "start": 835.78,
+      "text": "波士頓五藥花動場"
+    },
+    {
+      "avg_logprob": -0.704568,
+      "compression_ratio": 1.141104,
+      "end": 838.78,
+      "no_speech_prob": 0.0,
+      "start": 837.78,
+      "text": "三川動場"
+    },
+    {
+      "avg_logprob": -0.704568,
+      "compression_ratio": 1.141104,
+      "end": 841.78,
+      "no_speech_prob": 0.0,
+      "start": 838.78,
+      "text": "挺牛牛"
+    },
+    {
+      "avg_logprob": -0.704568,
+      "compression_ratio": 1.141104,
+      "end": 843.78,
+      "no_speech_prob": 0.0,
+      "start": 841.78,
+      "text": "大洋比亞的喜馬拉雅"
+    },
+    {
+      "avg_logprob": -0.704568,
+      "compression_ratio": 1.141104,
+      "end": 847.78,
+      "no_speech_prob": 0.0,
+      "start": 843.78,
+      "text": "小金不定打個四小牆"
+    },
+    {
+      "avg_logprob": -0.704568,
+      "compression_ratio": 1.141104,
+      "end": 850.78,
+      "no_speech_prob": 0.0,
+      "start": 847.78,
+      "text": "俺家憲城在手外"
+    },
+    {
+      "avg_logprob": -0.753738,
+      "compression_ratio": 0.972222,
+      "end": 852.78,
+      "no_speech_prob": 0.0,
+      "start": 850.78,
+      "text": "東西電話給我"
+    },
+    {
+      "avg_logprob": -0.753738,
+      "compression_ratio": 0.972222,
+      "end": 854.78,
+      "no_speech_prob": 0.0,
+      "start": 852.78,
+      "text": "我一天天"
+    },
+    {
+      "avg_logprob": -0.753738,
+      "compression_ratio": 0.972222,
+      "end": 855.78,
+      "no_speech_prob": 0.0,
+      "start": 854.78,
+      "text": "我趕緊查"
+    },
+    {
+      "avg_logprob": -0.753738,
+      "compression_ratio": 0.972222,
+      "end": 857.78,
+      "no_speech_prob": 0.0,
+      "start": 855.78,
+      "text": "三川如老徐"
+    },
+    {
+      "avg_logprob": -0.753738,
+      "compression_ratio": 0.972222,
+      "end": 858.78,
+      "no_speech_prob": 0.0,
+      "start": 857.78,
+      "text": "柯玉"
+    },
+    {
+      "avg_logprob": -0.753738,
+      "compression_ratio": 0.972222,
+      "end": 872.78,
+      "no_speech_prob": 0.0,
+      "start": 871.78,
+      "text": "光明行"
+    },
+    {
+      "avg_logprob": -0.753738,
+      "compression_ratio": 0.972222,
+      "end": 874.78,
+      "no_speech_prob": 0.0,
+      "start": 872.78,
+      "text": "左邊西方拉雅雲電"
+    },
+    {
+      "avg_logprob": -0.753738,
+      "compression_ratio": 0.972222,
+      "end": 876.78,
+      "no_speech_prob": 0.0,
+      "start": 874.78,
+      "text": "白開水"
+    },
+    {
+      "avg_logprob": -2.203884,
+      "compression_ratio": 1.353659,
+      "end": 882.78,
+      "no_speech_prob": 0.0,
+      "start": 880.78,
+      "text": "黄絲"
+    },
+    {
+      "avg_logprob": -2.203884,
+      "compression_ratio": 1.353659,
+      "end": 883.78,
+      "no_speech_prob": 0.0,
+      "start": 882.78,
+      "text": "18"
+    },
+    {
+      "avg_logprob": -2.203884,
+      "compression_ratio": 1.353659,
+      "end": 884.78,
+      "no_speech_prob": 0.0,
+      "start": 883.78,
+      "text": "智勢"
+    },
+    {
+      "avg_logprob": -2.203884,
+      "compression_ratio": 1.353659,
+      "end": 885.78,
+      "no_speech_prob": 0.0,
+      "start": 884.78,
+      "text": "我們"
+    },
+    {
+      "avg_logprob": -2.203884,
+      "compression_ratio": 1.353659,
+      "end": 886.78,
+      "no_speech_prob": 0.0,
+      "start": 885.78,
+      "text": "上去"
+    },
+    {
+      "avg_logprob": -2.203884,
+      "compression_ratio": 1.353659,
+      "end": 887.78,
+      "no_speech_prob": 0.0,
+      "start": 886.78,
+      "text": "冬真的"
+    },
+    {
+      "avg_logprob": -2.203884,
+      "compression_ratio": 1.353659,
+      "end": 888.78,
+      "no_speech_prob": 0.0,
+      "start": 887.78,
+      "text": "冬真"
+    },
+    {
+      "avg_logprob": -2.203884,
+      "compression_ratio": 1.353659,
+      "end": 889.78,
+      "no_speech_prob": 0.0,
+      "start": 888.78,
+      "text": "後來"
+    },
+    {
+      "avg_logprob": -2.203884,
+      "compression_ratio": 1.353659,
+      "end": 890.78,
+      "no_speech_prob": 0.0,
+      "start": 889.78,
+      "text": "我們"
+    },
+    {
+      "avg_logprob": -2.203884,
+      "compression_ratio": 1.353659,
+      "end": 891.78,
+      "no_speech_prob": 0.0,
+      "start": 890.78,
+      "text": "上去"
+    },
+    {
+      "avg_logprob": -2.203884,
+      "compression_ratio": 1.353659,
+      "end": 892.78,
+      "no_speech_prob": 0.0,
+      "start": 891.78,
+      "text": "我們"
+    },
+    {
+      "avg_logprob": -2.203884,
+      "compression_ratio": 1.353659,
+      "end": 893.78,
+      "no_speech_prob": 0.0,
+      "start": 892.78,
+      "text": "冬真"
+    },
+    {
+      "avg_logprob": -2.203884,
+      "compression_ratio": 1.353659,
+      "end": 894.78,
+      "no_speech_prob": 0.0,
+      "start": 893.78,
+      "text": "我們"
+    },
+    {
+      "avg_logprob": -2.203884,
+      "compression_ratio": 1.353659,
+      "end": 895.78,
+      "no_speech_prob": 0.0,
+      "start": 894.78,
+      "text": "我們"
+    },
+    {
+      "avg_logprob": -2.203884,
+      "compression_ratio": 1.353659,
+      "end": 896.78,
+      "no_speech_prob": 0.0,
+      "start": 895.78,
+      "text": "我們"
+    },
+    {
+      "avg_logprob": -2.203884,
+      "compression_ratio": 1.353659,
+      "end": 897.78,
+      "no_speech_prob": 0.0,
+      "start": 896.78,
+      "text": "知道"
+    },
+    {
+      "avg_logprob": -2.203884,
+      "compression_ratio": 1.353659,
+      "end": 898.78,
+      "no_speech_prob": 0.0,
+      "start": 897.78,
+      "text": "我們"
+    },
+    {
+      "avg_logprob": -2.203884,
+      "compression_ratio": 1.353659,
+      "end": 899.78,
+      "no_speech_prob": 0.0,
+      "start": 898.78,
+      "text": "什麼"
+    }
+  ],
+  "text": "中文字幕志愿者 李宗盛中文字幕志愿者 李宗盛中文字幕志愿者 李宗盛中文字幕志愿者 李宗盛中文字幕志愿者 李宗盛中文字幕志愿者 李宗盛李宗盛好人小金不敬一米地太快了中文字幕志愿者 李宗盛李宗盛李宗盛李宗盛李宗盛李宗盛李宗盛李宗盛今天是演直播没任何事别耽误时间今天是演直播你看汤前桑对肩膀是你然后叫红线振作用手机来一看闻到流闻幽浮欲发觉醒一马拉雅人生的希望中山一马拉雅如意回来了有人生的珍谣人生的珍谣人生的珍谣人生的珍谣在这本来我在这本来我在这本来我在这本来我在这本来我在这本来我在这本来我在这本来我在这本来我在这本来我在这本来我在这本来我在这本来我在这本来我在这本来我在这本来我在这本来我在这本来我在这本来我在这本来我在这本来我在这本来我在这本来我在这本来我在这本来我在这本来我嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯啊呀点大能打明天的娘们嗯嗯嗯小晋晋嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯天池能打天池能打嗯雅田南德爾塔天池能打奥喜克战里哈天池烈空東京櫻花坦美月都天池天池天池天池天池天池天池天池天池天池天池天池天池天池天池天池天池天池天池天池天池天池天池天池天池天池天池天池天池天池天池天池天池天池天池天池天池天池天池天池天池天池天池喜马拉雅 喜马拉雅人生的希望 分享 喜马拉雅喜马拉雅这歌太棒了抱负纯真 温迪 稀奇 草根达人东京樱花坦 太阳的国度文艺针冒险冒险冒险冒险冒险冒险冒险冒险冒险冒险冒险冒险冒险冒险冒险冒险冒险冒险冒险冒险冒险冒险冒险冒险冒险冒险太多水了太多水了文童一句位一句一句文部看一个小哥看一身冬场土乒乓肥好多水太多了上下都流水王党暗眼王党暮风明天的阳光战斗富山六二ARY白小嘲讨文英英追着曙光告一看乱理信心的选择民音公子看看看看看看看看出出名小哥文归来中军一花团卫武议员新想安主文肃达布斯小强家冬斑他炸他炸炸炸炸炸炸炸炸炸炸炸炸炸炸炸炸炸炸炸炸炸炸炸炸炸炸炸炸炸炸炸炸炸炸炸炸炸炸炸炸炸炸炸炸炸炸炸炸炸炸文归来,东西来开始不断续飞,乾坤,波风马门,波风水门,心想事成,大鱼,龙浩,文京京,文先生,妈木,西诺比利,沉默,山东福山,人民大费堂,东西来发烦,太多水了,太多水了,很再来,就是 treatment。很再来,就是盆子叶的大idade。很行,很来临 consider。很来,很来临。很来,很来临。很来,很来临。很来,很来临。很来,很来.有事你可以分归就得voi你也有事你會多攤你會多攤好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好好我们的兵力啊他们的恐惧是我们的武器我们的胜利谢谢了兄弟姐妹们你们健身了吗行动行动行动中国已完了水多多1月4号公战友们这大会给大家时间很多国际战友们气个露出脸气个露出脸郑州西安太惨了太惨了啊那啊下来下来下来下来下来下来下来下来下来下来下来下来下来下来下来下来下来下来下来下来下来下来下来下来下来下来下来下来下来下来下来下来下来下来下来下来下来下来下来下来下来下来下来下来下来下来下来中文字幕志愿者 李宗盛啊啊啊啊明眼睛小哥哥呀小廷哥莉莉黑白金一百零豹風哇波士頓五藥花動場三川動場挺牛牛大洋比亞的喜馬拉雅小金不定打個四小牆俺家憲城在手外東西電話給我我一天天我趕緊查三川如老徐柯玉光明行左邊西方拉雅雲電白開水黄絲18智勢我們上去冬真的冬真後來我們上去我們冬真我們我們我們知道我們什麼"
+}

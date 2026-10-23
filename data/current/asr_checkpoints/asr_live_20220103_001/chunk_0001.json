@@ -1,0 +1,80 @@
+{
+  "chunk_audio_sha256": "325f77cfe81e2f718ef2491473a664e0b1f4c9ffbbae015f0709acfbe9daacbc",
+  "chunk_index": 1,
+  "completed_at": "2026-10-23T07:31:06Z",
+  "language": "zh",
+  "live_id": "LIVE_20220103_001",
+  "media_committed_to_git": false,
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "offset_sec": 900,
+  "paid_api_used": false,
+  "processing_location": "github-hosted-macos-arm64",
+  "schema_version": "cloud-asr-chunk-v1",
+  "segments": [
+    {
+      "avg_logprob": -0.381204,
+      "compression_ratio": 0.991379,
+      "end": 911.0,
+      "no_speech_prob": 0.0,
+      "start": 900.0,
+      "text": "是吧?大家没打疫苗,没打假疫苗,又赚了钱,"
+    },
+    {
+      "avg_logprob": -0.381204,
+      "compression_ratio": 0.991379,
+      "end": 922.0,
+      "no_speech_prob": 0.0,
+      "start": 912.8,
+      "text": "赚了几百亿美元,在你们手里边呢,谁能做到啊?"
+    },
+    {
+      "avg_logprob": -0.292908,
+      "compression_ratio": 0.876404,
+      "end": 954.0,
+      "no_speech_prob": 0.0,
+      "start": 930.0,
+      "text": "哎呀,行了,傻得不火了,我们一起为郑州,西安,国内的同胞们,"
+    },
+    {
+      "avg_logprob": -0.136236,
+      "compression_ratio": 1.058824,
+      "end": 962.0,
+      "no_speech_prob": 0.0,
+      "start": 954.0,
+      "text": "在病毒灾难之中的同胞们,75亿同类,14亿新中国联邦同胞,"
+    },
+    {
+      "avg_logprob": -0.136236,
+      "compression_ratio": 1.058824,
+      "end": 966.0,
+      "no_speech_prob": 0.0,
+      "start": 962.0,
+      "text": "香港同胞,台湾同胞,西上新疆同胞祈福。"
+    },
+    {
+      "avg_logprob": -0.788746,
+      "compression_ratio": 1.703704,
+      "end": 1012.0,
+      "no_speech_prob": 0.0,
+      "start": 984.0,
+      "text": "啊,啊,没错吧,啊,没错吧,啊,没错吧,"
+    },
+    {
+      "avg_logprob": -0.371654,
+      "compression_ratio": 0.944444,
+      "end": 1020.0,
+      "no_speech_prob": 0.0,
+      "start": 1012.0,
+      "text": "行了,国内的战友,西哥今天就拨在这吧。"
+    },
+    {
+      "avg_logprob": -0.371654,
+      "compression_ratio": 0.944444,
+      "end": 1035.0,
+      "no_speech_prob": 0.0,
+      "start": 1020.0,
+      "text": "这水浪多了,都是水呀。傻得不火了。"
+    }
+  ],
+  "text": "是吧?大家没打疫苗,没打假疫苗,又赚了钱,赚了几百亿美元,在你们手里边呢,谁能做到啊?哎呀,行了,傻得不火了,我们一起为郑州,西安,国内的同胞们,在病毒灾难之中的同胞们,75亿同类,14亿新中国联邦同胞,香港同胞,台湾同胞,西上新疆同胞祈福。啊,啊,没错吧,啊,没错吧,啊,没错吧,行了,国内的战友,西哥今天就拨在这吧。这水浪多了,都是水呀。傻得不火了。"
+}
