@@ -13,6 +13,7 @@ import hashlib
 import json
 import os
 import re
+import resource
 import shutil
 import sqlite3
 import subprocess
@@ -171,9 +172,8 @@ def remove_joint_low_confidence_repetition(
     Requiring both preserves uncertain speech and removes only the pathological
     decoder loops that the publication quality gate would reject anyway.
     """
-    kept: list[dict[str, Any]] = []
-    removed = 0
-    for segment in segments:
+    remove_indexes: set[int] = set()
+    for index, segment in enumerate(segments):
         avg_logprob = segment.get("avg_logprob")
         compression_ratio = segment.get("compression_ratio")
         probable_decoder_loop = (
@@ -186,10 +186,34 @@ def remove_joint_low_confidence_repetition(
             and float(compression_ratio) > 2.6
         )
         if probable_decoder_loop or joint_low_confidence_repetition:
-            removed += 1
+            remove_indexes.add(index)
+
+    # Whisper occasionally emits a burst of one-token cues with the same very
+    # low window confidence.  The aggregate may not have a high compression
+    # ratio, but five or more adjacent sub-1.5-second cues are still a strong
+    # decoder-failure signature.  Isolated uncertain words remain untouched.
+    run: list[int] = []
+    for index, segment in enumerate(segments):
+        try:
+            duration = float(segment["end_sec"]) - float(segment["start_sec"])
+            avg_logprob = float(segment.get("avg_logprob"))
+        except (KeyError, TypeError, ValueError):
+            duration = float("inf")
+            avg_logprob = 0.0
+        if avg_logprob < -1.5 and duration <= 1.5:
+            run.append(index)
             continue
-        kept.append(segment)
-    return kept, removed
+        if len(run) >= 5:
+            remove_indexes.update(run)
+        run = []
+    if len(run) >= 5:
+        remove_indexes.update(run)
+
+    kept = [
+        segment for index, segment in enumerate(segments)
+        if index not in remove_indexes
+    ]
+    return kept, len(remove_indexes)
 
 
 def write_json(path: Path, payload: dict[str, Any]) -> None:
@@ -487,7 +511,9 @@ def publish(repo: Path, payload: dict[str, Any]) -> list[str]:
         "language", "generated_at", "processing_elapsed_sec", "source_attempt_errors",
         "processing_location", "processing_path", "path_persistence",
         "chunk_duration_sec", "chunk_count", "resumed_chunk_count",
-        "audio_duration_sec", "quality",
+        "audio_duration_sec", "quality", "pipeline_started_at",
+        "download_elapsed_sec", "model_load_elapsed_sec",
+        "structured_result_elapsed_sec", "peak_rss_bytes",
     )}
     manifest.update({
         "transcript_version_id": version_id, "cue_count": len(cues), "segment_count": len(segments),
@@ -510,6 +536,8 @@ def main() -> int:
     args = parser.parse_args()
     repo = args.repo.resolve()
     work = args.work_root.resolve()
+    pipeline_started = time.monotonic()
+    pipeline_started_at = utc_now()
     work.mkdir(parents=True, exist_ok=True)
     audio = work / f"{args.live_id}.ogg"
     chunk_root = work / f"{args.live_id}.chunks"
@@ -524,6 +552,7 @@ def main() -> int:
     errors: list[dict[str, str]] = []
     try:
         chosen: tuple[sqlite3.Row, str] | None = None
+        download_started = time.monotonic()
         for asset in assets(conn, args.live_id):
             try:
                 resolved = resolve_media_url(asset)
@@ -537,6 +566,7 @@ def main() -> int:
                 audio.unlink(missing_ok=True)
         if chosen is None:
             raise RuntimeError("no media source was reachable from this GitHub-hosted runner")
+        download_elapsed = round(time.monotonic() - download_started, 3)
         asset, resolved = chosen
         audio_digest = sha256_file(audio)
         duration_sec = audio_duration_sec(audio)
@@ -562,7 +592,12 @@ def main() -> int:
             "media_committed_to_git": False,
             "paid_api_used": False,
         })
+        model_load_started = time.monotonic()
+        import mlx.core as mx
         import mlx_whisper
+        from mlx_whisper.transcribe import ModelHolder
+        ModelHolder.get_model(MODEL, mx.float16)
+        model_load_elapsed = round(time.monotonic() - model_load_started, 3)
         started = time.monotonic()
         result = transcribe_chunked(audio, chunk_root, mlx_whisper, checkpoints, args.live_id)
         elapsed = round(time.monotonic() - started, 3)
@@ -603,6 +638,11 @@ def main() -> int:
             "source_attempt_errors": errors, "processing_location": PROCESSING_LOCATION,
             "processing_path": str(audio), "path_persistence": "ephemeral_deleted_after_job",
             "filtered_hallucination_segments": filtered_hallucination_segments,
+            "pipeline_started_at": pipeline_started_at,
+            "download_elapsed_sec": download_elapsed,
+            "model_load_elapsed_sec": model_load_elapsed,
+            "structured_result_elapsed_sec": round(time.monotonic() - pipeline_started, 3),
+            "peak_rss_bytes": resource.getrusage(resource.RUSAGE_SELF).ru_maxrss,
         }
         quality = assess_transcript_quality(segments, duration_sec)
         quality["metrics"]["filtered_hallucination_segment_count"] = (

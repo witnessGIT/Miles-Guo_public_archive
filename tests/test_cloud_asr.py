@@ -35,6 +35,22 @@ class CloudAsrOutputTests(unittest.TestCase):
             "保留正常语音", "困难但不重复的语音",
         ])
 
+    def test_hallucination_filter_removes_low_confidence_token_burst(self) -> None:
+        segments = [{
+            "start_sec": float(index), "end_sec": float(index + 1),
+            "text": f"碎片{index}", "avg_logprob": -1.8,
+            "compression_ratio": 1.3,
+        } for index in range(6)]
+        segments.append({
+            "start_sec": 6.0, "end_sec": 10.0, "text": "恢复正常语音",
+            "avg_logprob": -0.4, "compression_ratio": 1.1,
+        })
+
+        filtered, removed = remove_joint_low_confidence_repetition(segments)
+
+        self.assertEqual(removed, 6)
+        self.assertEqual([item["text"] for item in filtered], ["恢复正常语音"])
+
     def test_quality_gate_accepts_dense_continuous_machine_dictation(self) -> None:
         segments = [
             {
