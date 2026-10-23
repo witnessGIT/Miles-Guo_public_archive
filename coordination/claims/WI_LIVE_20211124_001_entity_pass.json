@@ -3,7 +3,7 @@
   "agent_id": "github-actions-cloud-entity-39899010666",
   "claimed_at": "2026-10-23T04:13:56.545919+00:00",
   "base_commit": "b5223b19b435be5dab980d005d5202dccbfd36f5",
-  "status": "in_progress",
+  "status": "released",
   "workflow_mode": "continuous-worker-v2",
   "claim_protocol": "claim-protocol-v2",
   "entry_mode": "work",
@@ -22,5 +22,7 @@
   ],
   "scope": "Extract speakers, people, organizations, places and mentioned entities.",
   "reclaimed_expired_claim": false,
-  "static_claim_lease_hours": 24
+  "static_claim_lease_hours": 24,
+  "released_at": "2026-10-23T12:11:57.904163+00:00",
+  "release_reason": "GitHub Actions entity run 39899010666 was cancelled by the hosted platform after nearly six hours before publishing outputs; retryable cancellation, not missing content"
 }
