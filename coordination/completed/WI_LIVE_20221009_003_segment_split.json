@@ -1,0 +1,16 @@
+{
+  "task_id": "WI_LIVE_20221009_003_segment_split",
+  "agent_id": "codex-local-asr-agent50-20261023",
+  "completed_at": "2026-10-23T01:57:06.278670+00:00",
+  "result_commit": "aac7af4a8a4476e71880832008f681dfbe4fdb6b",
+  "outputs": [
+    "data/current/live_segments/asr_live_20221009_003.jsonl"
+  ],
+  "validation": "Two natural speech segments from 27 timed cues: dumpling-making comparison followed by hot-pot/eating preview; 0.0-55.0s; machine/unverified",
+  "workflow_mode": "continuous-worker-v2",
+  "claim_protocol": "claim-protocol-v2",
+  "entry_mode": "work",
+  "continue_after_finish": true,
+  "finish_prerequisites_revalidated": true,
+  "notes": "Task completed only after re-checking the latest repository dependency contract. Under continuous-worker-v2, refresh repository state and claim the next eligible task unless a documented stop condition applies."
+}
