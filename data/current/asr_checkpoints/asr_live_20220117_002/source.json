@@ -1,0 +1,16 @@
+{
+  "audio_duration_sec": 123.185,
+  "audio_sha256": "1879220a62516a492977a1f96e7cccd0c7666f0e78b5be36ddaac232bfd623e8",
+  "audio_size_bytes": 465159,
+  "chunk_duration_sec": 900,
+  "live_id": "LIVE_20220117_002",
+  "media_asset_id": "MA_GETTR_POST_POXM9I8A21_B3582615",
+  "media_committed_to_git": false,
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "paid_api_used": false,
+  "processing_location": "codex-local-apple-silicon-agent50",
+  "resume_validation": "per_chunk_pcm_wav_sha256",
+  "schema_version": "cloud-asr-checkpoint-set-v1",
+  "source_id": "SRC_GETTR_POST_POXM9I8A21_B3582615",
+  "source_url": "https://gettr.com/post/poxm9i8a21"
+}

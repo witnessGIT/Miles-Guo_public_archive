@@ -1,0 +1,112 @@
+{
+  "chunk_audio_sha256": "ded8e098a3ad6f369545f5d981d9bd6023708399f05538a1c132c614c4d2999b",
+  "chunk_index": 0,
+  "completed_at": "2026-10-24T13:27:28Z",
+  "language": "zh",
+  "live_id": "LIVE_20220117_002",
+  "media_committed_to_git": false,
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "offset_sec": 0,
+  "paid_api_used": false,
+  "processing_location": "codex-local-apple-silicon-agent50",
+  "schema_version": "cloud-asr-chunk-v1",
+  "segments": [
+    {
+      "avg_logprob": -0.704367,
+      "compression_ratio": 0.714286,
+      "end": 29.98,
+      "no_speech_prob": 0.0,
+      "start": 0.0,
+      "text": "中文字幕——YK"
+    },
+    {
+      "avg_logprob": -0.085382,
+      "compression_ratio": 0.714286,
+      "end": 59.98,
+      "no_speech_prob": 0.0,
+      "start": 30.0,
+      "text": "中文字幕——YK"
+    },
+    {
+      "avg_logprob": -0.267069,
+      "compression_ratio": 0.714286,
+      "end": 89.98,
+      "no_speech_prob": 0.0,
+      "start": 60.0,
+      "text": "中文字幕——YK"
+    },
+    {
+      "avg_logprob": -0.139333,
+      "compression_ratio": 14.705882,
+      "end": 92.0,
+      "no_speech_prob": 0.0,
+      "start": 90.0,
+      "text": "中文字幕——YK"
+    },
+    {
+      "avg_logprob": -0.139333,
+      "compression_ratio": 14.705882,
+      "end": 94.0,
+      "no_speech_prob": 0.0,
+      "start": 92.0,
+      "text": "中文字幕——YK"
+    },
+    {
+      "avg_logprob": -0.139333,
+      "compression_ratio": 14.705882,
+      "end": 96.0,
+      "no_speech_prob": 0.0,
+      "start": 94.0,
+      "text": "中文字幕——YK"
+    },
+    {
+      "avg_logprob": -0.139333,
+      "compression_ratio": 14.705882,
+      "end": 98.0,
+      "no_speech_prob": 0.0,
+      "start": 96.0,
+      "text": "中文字幕——YK"
+    },
+    {
+      "avg_logprob": -0.139333,
+      "compression_ratio": 14.705882,
+      "end": 100.0,
+      "no_speech_prob": 0.0,
+      "start": 98.0,
+      "text": "中文字幕——YK"
+    },
+    {
+      "avg_logprob": -0.438825,
+      "compression_ratio": 1.079365,
+      "end": 104.24,
+      "no_speech_prob": 0.0,
+      "start": 100.0,
+      "text": "散足敌人 消滅敌人 征服敌人"
+    },
+    {
+      "avg_logprob": -0.438825,
+      "compression_ratio": 1.079365,
+      "end": 109.28,
+      "no_speech_prob": 0.0,
+      "start": 105.12,
+      "text": "你才能不流淚 让你家人不流血"
+    },
+    {
+      "avg_logprob": -0.438825,
+      "compression_ratio": 1.079365,
+      "end": 111.68,
+      "no_speech_prob": 0.0,
+      "start": 110.32,
+      "text": "那就先征服自己"
+    },
+    {
+      "avg_logprob": -0.438825,
+      "compression_ratio": 1.079365,
+      "end": 116.48,
+      "no_speech_prob": 0.0,
+      "start": 112.4,
+      "text": "兄弟姐妹们 一切都已经开始"
+    }
+  ],
+  "text": "中文字幕——YK中文字幕——YK中文字幕——YK中文字幕——YK中文字幕——YK中文字幕——YK中文字幕——YK中文字幕——YK散足敌人 消滅敌人 征服敌人你才能不流淚 让你家人不流血那就先征服自己兄弟姐妹们 一切都已经开始"
+}
