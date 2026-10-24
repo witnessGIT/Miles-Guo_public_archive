@@ -1,0 +1,16 @@
+{
+  "task_id": "WI_LIVE_20230209_002_cue_split",
+  "agent_id": "codex-local-asr-agent50-20261023",
+  "completed_at": "2026-10-24T23:29:12.388744+00:00",
+  "result_commit": "404b03f58db2ee6a5bcf9d819b7fe5bb002acee9",
+  "outputs": [
+    "data/current/transcript_cues/asr_live_20230209_002.jsonl"
+  ],
+  "validation": "103 nonempty monotonic ASR cues; timestamps valid; machine_unverified",
+  "workflow_mode": "continuous-worker-v2",
+  "claim_protocol": "claim-protocol-v2",
+  "entry_mode": "work",
+  "continue_after_finish": true,
+  "finish_prerequisites_revalidated": true,
+  "notes": "Task completed only after re-checking the latest repository dependency contract. Under continuous-worker-v2, refresh repository state and claim the next eligible task unless a documented stop condition applies."
+}
