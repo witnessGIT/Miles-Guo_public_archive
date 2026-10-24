@@ -1,0 +1,18 @@
+{
+  "task_id": "WI_LIVE_20211231_002_key_points_topics",
+  "agent_id": "codex-local-asr-agent50-20261023",
+  "completed_at": "2026-10-24T14:30:59.910982+00:00",
+  "result_commit": "6ced1192062733714a0fac57b12cb6aba69435bd",
+  "outputs": [
+    "data/current/live_segments/asr_live_20211231_002.jsonl",
+    "data/current/segment_key_points/machine_live_20211231_002.jsonl",
+    "data/current/segment_topics/machine_live_20211231_002.jsonl"
+  ],
+  "validation": "7 variable evidence-grounded machine key points across 5 cooking segments; exact quote offsets verified; Qwen returned empty after 4 forced retries, then agent evidence review added grounded points; 5 controlled topic links; dialect uncertainty explicitly retained as machine-unverified",
+  "workflow_mode": "continuous-worker-v2",
+  "claim_protocol": "claim-protocol-v2",
+  "entry_mode": "work",
+  "continue_after_finish": true,
+  "finish_prerequisites_revalidated": true,
+  "notes": "Task completed only after re-checking the latest repository dependency contract. Under continuous-worker-v2, refresh repository state and claim the next eligible task unless a documented stop condition applies."
+}
