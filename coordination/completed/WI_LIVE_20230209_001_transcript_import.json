@@ -1,0 +1,21 @@
+{
+  "task_id": "WI_LIVE_20230209_001_transcript_import",
+  "agent_id": "codex-local-asr-agent50-20261023",
+  "completed_at": "2026-10-24T12:31:34.121084+00:00",
+  "result_commit": "e79dc47afc71221191f419df2e28291552427898",
+  "outputs": [
+    "data/current/transcript_versions/asr_live_20230209_001.jsonl",
+    "data/current/transcript_cues/asr_live_20230209_001.jsonl",
+    "data/current/live_segments/asr_live_20230209_001.jsonl",
+    "data/current/asr_manifests/asr_live_20230209_001.json",
+    "data/current/asr_checkpoints/asr_live_20230209_001/chunk_0000.json",
+    "data/current/asr_checkpoints/asr_live_20230209_001/source.json"
+  ],
+  "validation": "118.684s machine ASR; 52 cues; 418 chars; 211.318 CPM; coverage 0.985813; quality score 0.9782; low-confidence=0 high-compression=0 high-no-speech=0 invalid-timestamp=0 filtered-hallucination=0 repeated-ratio=0.062176; manual evidence review passed with colloquial repetition retained; machine-generated unverified",
+  "workflow_mode": "continuous-worker-v2",
+  "claim_protocol": "claim-protocol-v2",
+  "entry_mode": "work",
+  "continue_after_finish": true,
+  "finish_prerequisites_revalidated": true,
+  "notes": "Task completed only after re-checking the latest repository dependency contract. Under continuous-worker-v2, refresh repository state and claim the next eligible task unless a documented stop condition applies."
+}
