@@ -1,0 +1,64 @@
+{
+  "chunk_audio_sha256": "1ba3cf0489db76087dbf4a450758991760ba1de83320ce06f35189fe67a94d15",
+  "chunk_index": 16,
+  "completed_at": "2026-10-24T15:30:20Z",
+  "language": "zh",
+  "live_id": "LIVE_20211217_001",
+  "media_committed_to_git": false,
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "offset_sec": 14400,
+  "paid_api_used": false,
+  "processing_location": "github-hosted-macos-arm64",
+  "schema_version": "cloud-asr-chunk-v1",
+  "segments": [
+    {
+      "avg_logprob": -0.576273,
+      "compression_ratio": 0.738095,
+      "end": 14429.98,
+      "no_speech_prob": 0.0,
+      "start": 14400.0,
+      "text": "中文字幕志愿者 李宗盛"
+    },
+    {
+      "avg_logprob": -0.11475,
+      "compression_ratio": 0.738095,
+      "end": 14459.98,
+      "no_speech_prob": 0.0,
+      "start": 14430.0,
+      "text": "中文字幕志愿者 李宗盛"
+    },
+    {
+      "avg_logprob": -0.079108,
+      "compression_ratio": 0.738095,
+      "end": 14489.98,
+      "no_speech_prob": 0.0,
+      "start": 14460.0,
+      "text": "中文字幕志愿者 李宗盛"
+    },
+    {
+      "avg_logprob": -0.077137,
+      "compression_ratio": 0.738095,
+      "end": 14519.96,
+      "no_speech_prob": 0.0,
+      "start": 14489.98,
+      "text": "中文字幕志愿者 李宗盛"
+    },
+    {
+      "avg_logprob": -0.07624,
+      "compression_ratio": 0.738095,
+      "end": 14549.94,
+      "no_speech_prob": 0.0,
+      "start": 14519.96,
+      "text": "中文字幕志愿者 李宗盛"
+    },
+    {
+      "avg_logprob": -0.152346,
+      "compression_ratio": 0.738095,
+      "end": 14579.92,
+      "no_speech_prob": 0.0,
+      "start": 14549.94,
+      "text": "中文字幕志愿者 李宗盛"
+    }
+  ],
+  "text": "中文字幕志愿者 李宗盛中文字幕志愿者 李宗盛中文字幕志愿者 李宗盛中文字幕志愿者 李宗盛中文字幕志愿者 李宗盛中文字幕志愿者 李宗盛"
+}

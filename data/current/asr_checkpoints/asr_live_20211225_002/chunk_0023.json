@@ -1,0 +1,3448 @@
+{
+  "chunk_audio_sha256": "5913846514b843a396d95fc4545ff9a06648ce89df04b151c69a9b0b45d5b176",
+  "chunk_index": 23,
+  "completed_at": "2026-10-24T16:51:35Z",
+  "language": "zh",
+  "live_id": "LIVE_20211225_002",
+  "media_committed_to_git": false,
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "offset_sec": 20700,
+  "paid_api_used": false,
+  "processing_location": "github-hosted-macos-arm64",
+  "schema_version": "cloud-asr-chunk-v1",
+  "segments": [
+    {
+      "avg_logprob": -0.61064,
+      "compression_ratio": 0.803571,
+      "end": 20702.0,
+      "no_speech_prob": 0.0,
+      "start": 20700.0,
+      "text": "這大哥的女兒像他媽啊"
+    },
+    {
+      "avg_logprob": -0.61064,
+      "compression_ratio": 0.803571,
+      "end": 20712.0,
+      "no_speech_prob": 0.0,
+      "start": 20710.0,
+      "text": "你想問什麼"
+    },
+    {
+      "avg_logprob": -0.670995,
+      "compression_ratio": 0.75,
+      "end": 20732.0,
+      "no_speech_prob": 0.0,
+      "start": 20730.0,
+      "text": "你會看聖誕老人是真的嗎"
+    },
+    {
+      "avg_logprob": -0.860362,
+      "compression_ratio": 1.490566,
+      "end": 20762.0,
+      "no_speech_prob": 0.0,
+      "start": 20760.0,
+      "text": "應該吧"
+    },
+    {
+      "avg_logprob": -0.860362,
+      "compression_ratio": 1.490566,
+      "end": 20764.0,
+      "no_speech_prob": 0.0,
+      "start": 20762.0,
+      "text": "你問你爸爸"
+    },
+    {
+      "avg_logprob": -0.860362,
+      "compression_ratio": 1.490566,
+      "end": 20766.0,
+      "no_speech_prob": 0.0,
+      "start": 20764.0,
+      "text": "你爸爸做到的事情"
+    },
+    {
+      "avg_logprob": -0.860362,
+      "compression_ratio": 1.490566,
+      "end": 20768.0,
+      "no_speech_prob": 0.0,
+      "start": 20766.0,
+      "text": "不是真的"
+    },
+    {
+      "avg_logprob": -0.860362,
+      "compression_ratio": 1.490566,
+      "end": 20770.0,
+      "no_speech_prob": 0.0,
+      "start": 20768.0,
+      "text": "不是真的"
+    },
+    {
+      "avg_logprob": -0.860362,
+      "compression_ratio": 1.490566,
+      "end": 20772.0,
+      "no_speech_prob": 0.0,
+      "start": 20770.0,
+      "text": "不是真的"
+    },
+    {
+      "avg_logprob": -0.860362,
+      "compression_ratio": 1.490566,
+      "end": 20774.0,
+      "no_speech_prob": 0.0,
+      "start": 20772.0,
+      "text": "我愛你爸爸"
+    },
+    {
+      "avg_logprob": -0.860362,
+      "compression_ratio": 1.490566,
+      "end": 20776.0,
+      "no_speech_prob": 0.0,
+      "start": 20774.0,
+      "text": "你爸爸是個天啊"
+    },
+    {
+      "avg_logprob": -0.860362,
+      "compression_ratio": 1.490566,
+      "end": 20780.0,
+      "no_speech_prob": 0.0,
+      "start": 20778.0,
+      "text": "OK"
+    },
+    {
+      "avg_logprob": -0.860362,
+      "compression_ratio": 1.490566,
+      "end": 20784.0,
+      "no_speech_prob": 0.0,
+      "start": 20782.0,
+      "text": "你多少錢"
+    },
+    {
+      "avg_logprob": -0.860362,
+      "compression_ratio": 1.490566,
+      "end": 20786.0,
+      "no_speech_prob": 0.0,
+      "start": 20784.0,
+      "text": "你多少錢"
+    },
+    {
+      "avg_logprob": -0.860362,
+      "compression_ratio": 1.490566,
+      "end": 20788.0,
+      "no_speech_prob": 0.0,
+      "start": 20786.0,
+      "text": "在錢的錢"
+    },
+    {
+      "avg_logprob": -1.097959,
+      "compression_ratio": 9.574468,
+      "end": 20792.0,
+      "no_speech_prob": 0.0,
+      "start": 20790.0,
+      "text": "你要有帮és有看的"
+    },
+    {
+      "avg_logprob": -1.097959,
+      "compression_ratio": 9.574468,
+      "end": 20793.0,
+      "no_speech_prob": 0.0,
+      "start": 20792.0,
+      "text": "是一家的"
+    },
+    {
+      "avg_logprob": -1.097959,
+      "compression_ratio": 9.574468,
+      "end": 20794.0,
+      "no_speech_prob": 0.0,
+      "start": 20793.0,
+      "text": "是一家的"
+    },
+    {
+      "avg_logprob": -1.097959,
+      "compression_ratio": 9.574468,
+      "end": 20794.96,
+      "no_speech_prob": 0.0,
+      "start": 20794.0,
+      "text": "是一家的"
+    },
+    {
+      "avg_logprob": -1.097959,
+      "compression_ratio": 9.574468,
+      "end": 20795.6,
+      "no_speech_prob": 0.0,
+      "start": 20794.96,
+      "text": "是一家的"
+    },
+    {
+      "avg_logprob": -1.097959,
+      "compression_ratio": 9.574468,
+      "end": 20796.0,
+      "no_speech_prob": 0.0,
+      "start": 20795.6,
+      "text": "是一家的"
+    },
+    {
+      "avg_logprob": -1.097959,
+      "compression_ratio": 9.574468,
+      "end": 20796.6,
+      "no_speech_prob": 0.0,
+      "start": 20796.0,
+      "text": "是一家的"
+    },
+    {
+      "avg_logprob": -1.097959,
+      "compression_ratio": 9.574468,
+      "end": 20796.88,
+      "no_speech_prob": 0.0,
+      "start": 20796.6,
+      "text": "是一家的"
+    },
+    {
+      "avg_logprob": -1.097959,
+      "compression_ratio": 9.574468,
+      "end": 20797.2,
+      "no_speech_prob": 0.0,
+      "start": 20796.88,
+      "text": "是一家的"
+    },
+    {
+      "avg_logprob": -1.097959,
+      "compression_ratio": 9.574468,
+      "end": 20797.68,
+      "no_speech_prob": 0.0,
+      "start": 20797.2,
+      "text": "是一家的"
+    },
+    {
+      "avg_logprob": -1.097959,
+      "compression_ratio": 9.574468,
+      "end": 20798.1,
+      "no_speech_prob": 0.0,
+      "start": 20797.68,
+      "text": "是一家的"
+    },
+    {
+      "avg_logprob": -1.097959,
+      "compression_ratio": 9.574468,
+      "end": 20798.5,
+      "no_speech_prob": 0.0,
+      "start": 20798.1,
+      "text": "是一家的"
+    },
+    {
+      "avg_logprob": -1.097959,
+      "compression_ratio": 9.574468,
+      "end": 20798.7,
+      "no_speech_prob": 0.0,
+      "start": 20798.5,
+      "text": "是一家的"
+    },
+    {
+      "avg_logprob": -1.097959,
+      "compression_ratio": 9.574468,
+      "end": 20799.0,
+      "no_speech_prob": 0.0,
+      "start": 20798.7,
+      "text": "是一家的"
+    },
+    {
+      "avg_logprob": -1.097959,
+      "compression_ratio": 9.574468,
+      "end": 20799.3,
+      "no_speech_prob": 0.0,
+      "start": 20799.0,
+      "text": "是一家的"
+    },
+    {
+      "avg_logprob": -1.097959,
+      "compression_ratio": 9.574468,
+      "end": 20799.62,
+      "no_speech_prob": 0.0,
+      "start": 20799.3,
+      "text": "是一家的"
+    },
+    {
+      "avg_logprob": -1.097959,
+      "compression_ratio": 9.574468,
+      "end": 20799.96,
+      "no_speech_prob": 0.0,
+      "start": 20799.62,
+      "text": "是一家的"
+    },
+    {
+      "avg_logprob": -1.097959,
+      "compression_ratio": 9.574468,
+      "end": 20800.24,
+      "no_speech_prob": 0.0,
+      "start": 20799.96,
+      "text": "是一家的"
+    },
+    {
+      "avg_logprob": -1.097959,
+      "compression_ratio": 9.574468,
+      "end": 20800.46,
+      "no_speech_prob": 0.0,
+      "start": 20800.24,
+      "text": "是一家的"
+    },
+    {
+      "avg_logprob": -1.097959,
+      "compression_ratio": 9.574468,
+      "end": 20800.68,
+      "no_speech_prob": 0.0,
+      "start": 20800.46,
+      "text": "是一家的"
+    },
+    {
+      "avg_logprob": -1.097959,
+      "compression_ratio": 9.574468,
+      "end": 20800.88,
+      "no_speech_prob": 0.0,
+      "start": 20800.68,
+      "text": "是一家的"
+    },
+    {
+      "avg_logprob": -1.097959,
+      "compression_ratio": 9.574468,
+      "end": 20801.22,
+      "no_speech_prob": 0.0,
+      "start": 20800.88,
+      "text": "是一家的"
+    },
+    {
+      "avg_logprob": -1.097959,
+      "compression_ratio": 9.574468,
+      "end": 20801.52,
+      "no_speech_prob": 0.0,
+      "start": 20801.22,
+      "text": "是一家的"
+    },
+    {
+      "avg_logprob": -1.097959,
+      "compression_ratio": 9.574468,
+      "end": 20801.84,
+      "no_speech_prob": 0.0,
+      "start": 20801.52,
+      "text": "是一家的"
+    },
+    {
+      "avg_logprob": -1.097959,
+      "compression_ratio": 9.574468,
+      "end": 20802.2,
+      "no_speech_prob": 0.0,
+      "start": 20801.84,
+      "text": "是一家的"
+    },
+    {
+      "avg_logprob": -1.097959,
+      "compression_ratio": 9.574468,
+      "end": 20802.34,
+      "no_speech_prob": 0.0,
+      "start": 20802.2,
+      "text": "是一家的"
+    },
+    {
+      "avg_logprob": -1.097959,
+      "compression_ratio": 9.574468,
+      "end": 20802.46,
+      "no_speech_prob": 0.0,
+      "start": 20802.34,
+      "text": "是一家的"
+    },
+    {
+      "avg_logprob": -1.097959,
+      "compression_ratio": 9.574468,
+      "end": 20802.58,
+      "no_speech_prob": 0.0,
+      "start": 20802.46,
+      "text": "是一家的"
+    },
+    {
+      "avg_logprob": -1.097959,
+      "compression_ratio": 9.574468,
+      "end": 20802.74,
+      "no_speech_prob": 0.0,
+      "start": 20802.58,
+      "text": "是一家的"
+    },
+    {
+      "avg_logprob": -1.097959,
+      "compression_ratio": 9.574468,
+      "end": 20803.04,
+      "no_speech_prob": 0.0,
+      "start": 20802.74,
+      "text": "是一家的"
+    },
+    {
+      "avg_logprob": -1.097959,
+      "compression_ratio": 9.574468,
+      "end": 20803.28,
+      "no_speech_prob": 0.0,
+      "start": 20803.04,
+      "text": "是一家的"
+    },
+    {
+      "avg_logprob": -1.097959,
+      "compression_ratio": 9.574468,
+      "end": 20803.46,
+      "no_speech_prob": 0.0,
+      "start": 20803.28,
+      "text": "是一家的"
+    },
+    {
+      "avg_logprob": -1.097959,
+      "compression_ratio": 9.574468,
+      "end": 20803.68,
+      "no_speech_prob": 0.0,
+      "start": 20803.46,
+      "text": "是一家的"
+    },
+    {
+      "avg_logprob": -1.097959,
+      "compression_ratio": 9.574468,
+      "end": 20803.8,
+      "no_speech_prob": 0.0,
+      "start": 20803.68,
+      "text": "是一家的"
+    },
+    {
+      "avg_logprob": -1.097959,
+      "compression_ratio": 9.574468,
+      "end": 20803.92,
+      "no_speech_prob": 0.0,
+      "start": 20803.8,
+      "text": "是一家的"
+    },
+    {
+      "avg_logprob": -1.097959,
+      "compression_ratio": 9.574468,
+      "end": 20804.08,
+      "no_speech_prob": 0.0,
+      "start": 20803.92,
+      "text": "是一家的"
+    },
+    {
+      "avg_logprob": -0.912995,
+      "compression_ratio": 1.707692,
+      "end": 20805.08,
+      "no_speech_prob": 0.0,
+      "start": 20804.08,
+      "text": "你想看你"
+    },
+    {
+      "avg_logprob": -0.912995,
+      "compression_ratio": 1.707692,
+      "end": 20809.08,
+      "no_speech_prob": 0.0,
+      "start": 20807.88,
+      "text": "你想看你"
+    },
+    {
+      "avg_logprob": -0.912995,
+      "compression_ratio": 1.707692,
+      "end": 20810.08,
+      "no_speech_prob": 0.0,
+      "start": 20809.08,
+      "text": "你想看你"
+    },
+    {
+      "avg_logprob": -0.912995,
+      "compression_ratio": 1.707692,
+      "end": 20811.08,
+      "no_speech_prob": 0.0,
+      "start": 20810.08,
+      "text": "我喜歡"
+    },
+    {
+      "avg_logprob": -0.912995,
+      "compression_ratio": 1.707692,
+      "end": 20812.08,
+      "no_speech_prob": 0.0,
+      "start": 20811.08,
+      "text": "我喜歡"
+    },
+    {
+      "avg_logprob": -0.912995,
+      "compression_ratio": 1.707692,
+      "end": 20813.08,
+      "no_speech_prob": 0.0,
+      "start": 20812.08,
+      "text": "嗯"
+    },
+    {
+      "avg_logprob": -0.912995,
+      "compression_ratio": 1.707692,
+      "end": 20814.08,
+      "no_speech_prob": 0.0,
+      "start": 20813.08,
+      "text": "看你的臉"
+    },
+    {
+      "avg_logprob": -0.912995,
+      "compression_ratio": 1.707692,
+      "end": 20815.08,
+      "no_speech_prob": 0.0,
+      "start": 20814.08,
+      "text": "你真的像你的臉"
+    },
+    {
+      "avg_logprob": -0.912995,
+      "compression_ratio": 1.707692,
+      "end": 20816.08,
+      "no_speech_prob": 0.0,
+      "start": 20815.08,
+      "text": "臉"
+    },
+    {
+      "avg_logprob": -0.912995,
+      "compression_ratio": 1.707692,
+      "end": 20826.08,
+      "no_speech_prob": 0.0,
+      "start": 20825.08,
+      "text": "屁"
+    },
+    {
+      "avg_logprob": -0.912995,
+      "compression_ratio": 1.707692,
+      "end": 20828.08,
+      "no_speech_prob": 0.0,
+      "start": 20827.08,
+      "text": "屁"
+    },
+    {
+      "avg_logprob": -0.912995,
+      "compression_ratio": 1.707692,
+      "end": 20829.08,
+      "no_speech_prob": 0.0,
+      "start": 20828.08,
+      "text": "屁"
+    },
+    {
+      "avg_logprob": -0.912995,
+      "compression_ratio": 1.707692,
+      "end": 20830.08,
+      "no_speech_prob": 0.0,
+      "start": 20829.08,
+      "text": "屁"
+    },
+    {
+      "avg_logprob": -0.912995,
+      "compression_ratio": 1.707692,
+      "end": 20831.08,
+      "no_speech_prob": 0.0,
+      "start": 20830.08,
+      "text": "屁"
+    },
+    {
+      "avg_logprob": -0.912995,
+      "compression_ratio": 1.707692,
+      "end": 20832.08,
+      "no_speech_prob": 0.0,
+      "start": 20831.08,
+      "text": "屁"
+    },
+    {
+      "avg_logprob": -0.958449,
+      "compression_ratio": 13.44,
+      "end": 20835.08,
+      "no_speech_prob": 0.0,
+      "start": 20834.08,
+      "text": "好"
+    },
+    {
+      "avg_logprob": -0.958449,
+      "compression_ratio": 13.44,
+      "end": 20836.08,
+      "no_speech_prob": 0.0,
+      "start": 20835.08,
+      "text": "我认了"
+    },
+    {
+      "avg_logprob": -0.958449,
+      "compression_ratio": 13.44,
+      "end": 20837.08,
+      "no_speech_prob": 0.0,
+      "start": 20836.08,
+      "text": "我认了"
+    },
+    {
+      "avg_logprob": -0.958449,
+      "compression_ratio": 13.44,
+      "end": 20838.08,
+      "no_speech_prob": 0.0,
+      "start": 20837.08,
+      "text": "我认了"
+    },
+    {
+      "avg_logprob": -0.958449,
+      "compression_ratio": 13.44,
+      "end": 20838.32,
+      "no_speech_prob": 0.0,
+      "start": 20838.08,
+      "text": "我认了"
+    },
+    {
+      "avg_logprob": -0.958449,
+      "compression_ratio": 13.44,
+      "end": 20839.04,
+      "no_speech_prob": 0.0,
+      "start": 20838.32,
+      "text": "我认了"
+    },
+    {
+      "avg_logprob": -0.958449,
+      "compression_ratio": 13.44,
+      "end": 20839.08,
+      "no_speech_prob": 0.0,
+      "start": 20839.04,
+      "text": "我认了"
+    },
+    {
+      "avg_logprob": -0.958449,
+      "compression_ratio": 13.44,
+      "end": 20839.48,
+      "no_speech_prob": 0.0,
+      "start": 20839.08,
+      "text": "我认了"
+    },
+    {
+      "avg_logprob": -0.958449,
+      "compression_ratio": 13.44,
+      "end": 20840.02,
+      "no_speech_prob": 0.0,
+      "start": 20839.48,
+      "text": "我认了"
+    },
+    {
+      "avg_logprob": -0.958449,
+      "compression_ratio": 13.44,
+      "end": 20840.08,
+      "no_speech_prob": 0.0,
+      "start": 20840.02,
+      "text": "我认了"
+    },
+    {
+      "avg_logprob": -0.958449,
+      "compression_ratio": 13.44,
+      "end": 20840.54,
+      "no_speech_prob": 0.0,
+      "start": 20840.08,
+      "text": "我认了"
+    },
+    {
+      "avg_logprob": -0.958449,
+      "compression_ratio": 13.44,
+      "end": 20840.8,
+      "no_speech_prob": 0.0,
+      "start": 20840.54,
+      "text": "我认了"
+    },
+    {
+      "avg_logprob": -0.958449,
+      "compression_ratio": 13.44,
+      "end": 20841.04,
+      "no_speech_prob": 0.0,
+      "start": 20840.8,
+      "text": "我认了"
+    },
+    {
+      "avg_logprob": -0.958449,
+      "compression_ratio": 13.44,
+      "end": 20841.2,
+      "no_speech_prob": 0.0,
+      "start": 20841.04,
+      "text": "我认了"
+    },
+    {
+      "avg_logprob": -0.958449,
+      "compression_ratio": 13.44,
+      "end": 20841.46,
+      "no_speech_prob": 0.0,
+      "start": 20841.2,
+      "text": "我认了"
+    },
+    {
+      "avg_logprob": -0.958449,
+      "compression_ratio": 13.44,
+      "end": 20841.64,
+      "no_speech_prob": 0.0,
+      "start": 20841.46,
+      "text": "我认了"
+    },
+    {
+      "avg_logprob": -0.958449,
+      "compression_ratio": 13.44,
+      "end": 20841.92,
+      "no_speech_prob": 0.0,
+      "start": 20841.64,
+      "text": "我认了"
+    },
+    {
+      "avg_logprob": -0.958449,
+      "compression_ratio": 13.44,
+      "end": 20842.16,
+      "no_speech_prob": 0.0,
+      "start": 20841.92,
+      "text": "我认了"
+    },
+    {
+      "avg_logprob": -0.958449,
+      "compression_ratio": 13.44,
+      "end": 20842.36,
+      "no_speech_prob": 0.0,
+      "start": 20842.16,
+      "text": "我认了"
+    },
+    {
+      "avg_logprob": -0.958449,
+      "compression_ratio": 13.44,
+      "end": 20842.5,
+      "no_speech_prob": 0.0,
+      "start": 20842.36,
+      "text": "我认了"
+    },
+    {
+      "avg_logprob": -0.958449,
+      "compression_ratio": 13.44,
+      "end": 20842.64,
+      "no_speech_prob": 0.0,
+      "start": 20842.5,
+      "text": "我认了"
+    },
+    {
+      "avg_logprob": -0.958449,
+      "compression_ratio": 13.44,
+      "end": 20842.8,
+      "no_speech_prob": 0.0,
+      "start": 20842.64,
+      "text": "我认了"
+    },
+    {
+      "avg_logprob": -0.958449,
+      "compression_ratio": 13.44,
+      "end": 20842.94,
+      "no_speech_prob": 0.0,
+      "start": 20842.8,
+      "text": "我认了"
+    },
+    {
+      "avg_logprob": -0.958449,
+      "compression_ratio": 13.44,
+      "end": 20843.14,
+      "no_speech_prob": 0.0,
+      "start": 20842.94,
+      "text": "我认了"
+    },
+    {
+      "avg_logprob": -0.958449,
+      "compression_ratio": 13.44,
+      "end": 20843.3,
+      "no_speech_prob": 0.0,
+      "start": 20843.14,
+      "text": "我认了"
+    },
+    {
+      "avg_logprob": -0.958449,
+      "compression_ratio": 13.44,
+      "end": 20843.44,
+      "no_speech_prob": 0.0,
+      "start": 20843.3,
+      "text": "我认了"
+    },
+    {
+      "avg_logprob": -0.958449,
+      "compression_ratio": 13.44,
+      "end": 20843.58,
+      "no_speech_prob": 0.0,
+      "start": 20843.44,
+      "text": "我认了"
+    },
+    {
+      "avg_logprob": -0.958449,
+      "compression_ratio": 13.44,
+      "end": 20843.8,
+      "no_speech_prob": 0.0,
+      "start": 20843.58,
+      "text": "我认了"
+    },
+    {
+      "avg_logprob": -0.958449,
+      "compression_ratio": 13.44,
+      "end": 20843.98,
+      "no_speech_prob": 0.0,
+      "start": 20843.8,
+      "text": "我认了"
+    },
+    {
+      "avg_logprob": -0.958449,
+      "compression_ratio": 13.44,
+      "end": 20844.16,
+      "no_speech_prob": 0.0,
+      "start": 20843.98,
+      "text": "我认了"
+    },
+    {
+      "avg_logprob": -0.958449,
+      "compression_ratio": 13.44,
+      "end": 20844.32,
+      "no_speech_prob": 0.0,
+      "start": 20844.16,
+      "text": "我认了"
+    },
+    {
+      "avg_logprob": -0.958449,
+      "compression_ratio": 13.44,
+      "end": 20844.48,
+      "no_speech_prob": 0.0,
+      "start": 20844.32,
+      "text": "我认了"
+    },
+    {
+      "avg_logprob": -0.958449,
+      "compression_ratio": 13.44,
+      "end": 20844.58,
+      "no_speech_prob": 0.0,
+      "start": 20844.48,
+      "text": "我认了"
+    },
+    {
+      "avg_logprob": -0.958449,
+      "compression_ratio": 13.44,
+      "end": 20844.66,
+      "no_speech_prob": 0.0,
+      "start": 20844.58,
+      "text": "我认了"
+    },
+    {
+      "avg_logprob": -0.728898,
+      "compression_ratio": 1.295238,
+      "end": 20848.9,
+      "no_speech_prob": 0.0,
+      "start": 20844.66,
+      "text": "這樣咱們小孩來了 你兩個今天真的很辛苦"
+    },
+    {
+      "avg_logprob": -0.728898,
+      "compression_ratio": 1.295238,
+      "end": 20850.3,
+      "no_speech_prob": 0.0,
+      "start": 20848.9,
+      "text": "我知道你們時間的問題"
+    },
+    {
+      "avg_logprob": -0.728898,
+      "compression_ratio": 1.295238,
+      "end": 20853.42,
+      "no_speech_prob": 0.0,
+      "start": 20850.76,
+      "text": "你有沒有什麼歌在我們唱一首"
+    },
+    {
+      "avg_logprob": -0.728898,
+      "compression_ratio": 1.295238,
+      "end": 20856.02,
+      "no_speech_prob": 0.0,
+      "start": 20853.62,
+      "text": "我們上有老下有小的那麼多人 那麼多人"
+    },
+    {
+      "avg_logprob": -0.728898,
+      "compression_ratio": 1.295238,
+      "end": 20857.3,
+      "no_speech_prob": 0.0,
+      "start": 20856.02,
+      "text": "那跟我們唱一首吧"
+    },
+    {
+      "avg_logprob": -0.728898,
+      "compression_ratio": 1.295238,
+      "end": 20859.12,
+      "no_speech_prob": 0.0,
+      "start": 20858.12,
+      "text": "可以啊"
+    },
+    {
+      "avg_logprob": -0.728898,
+      "compression_ratio": 1.295238,
+      "end": 20863.9,
+      "no_speech_prob": 0.0,
+      "start": 20862.72,
+      "text": "那唱什麼"
+    },
+    {
+      "avg_logprob": -0.728898,
+      "compression_ratio": 1.295238,
+      "end": 20868.1,
+      "no_speech_prob": 0.0,
+      "start": 20865.16,
+      "text": "等會Bernie要準備一首啊"
+    },
+    {
+      "avg_logprob": -0.728898,
+      "compression_ratio": 1.295238,
+      "end": 20872.3,
+      "no_speech_prob": 0.0,
+      "start": 20871.3,
+      "text": "再來一首啊"
+    },
+    {
+      "avg_logprob": -0.728898,
+      "compression_ratio": 1.295238,
+      "end": 20874.16,
+      "no_speech_prob": 0.0,
+      "start": 20872.66,
+      "text": "好的"
+    },
+    {
+      "avg_logprob": -0.419768,
+      "compression_ratio": 1.247475,
+      "end": 20876.16,
+      "no_speech_prob": 0.0,
+      "start": 20874.16,
+      "text": "你們什麼歌跟我們唱唱啊"
+    },
+    {
+      "avg_logprob": -0.419768,
+      "compression_ratio": 1.247475,
+      "end": 20880.46,
+      "no_speech_prob": 0.0,
+      "start": 20878.66,
+      "text": "我繼續親吻你們繼續唱"
+    },
+    {
+      "avg_logprob": -0.419768,
+      "compression_ratio": 1.247475,
+      "end": 20882.46,
+      "no_speech_prob": 0.0,
+      "start": 20880.46,
+      "text": "Bernie看你也得想想啊來一首啊"
+    },
+    {
+      "avg_logprob": -0.419768,
+      "compression_ratio": 1.247475,
+      "end": 20883.86,
+      "no_speech_prob": 0.0,
+      "start": 20882.46,
+      "text": "你們都唱太好了"
+    },
+    {
+      "avg_logprob": -0.419768,
+      "compression_ratio": 1.247475,
+      "end": 20887.86,
+      "no_speech_prob": 0.0,
+      "start": 20886.16,
+      "text": "你們一唱我都不好意思了"
+    },
+    {
+      "avg_logprob": -0.419768,
+      "compression_ratio": 1.247475,
+      "end": 20889.36,
+      "no_speech_prob": 0.0,
+      "start": 20887.86,
+      "text": "我咋能成腰滾歌星呢"
+    },
+    {
+      "avg_logprob": -0.419768,
+      "compression_ratio": 1.247475,
+      "end": 20890.66,
+      "no_speech_prob": 0.0,
+      "start": 20889.36,
+      "text": "你們都比我厲害了"
+    },
+    {
+      "avg_logprob": -0.419768,
+      "compression_ratio": 1.247475,
+      "end": 20898.66,
+      "no_speech_prob": 0.0,
+      "start": 20896.16,
+      "text": "真的是跟你們沒法比 天地之差"
+    },
+    {
+      "avg_logprob": -0.992156,
+      "compression_ratio": 0.685714,
+      "end": 20904.96,
+      "no_speech_prob": 0.0,
+      "start": 20898.66,
+      "text": "哎呀這真是"
+    },
+    {
+      "avg_logprob": -0.992156,
+      "compression_ratio": 0.685714,
+      "end": 20906.36,
+      "no_speech_prob": 0.0,
+      "start": 20904.96,
+      "text": "開始吧"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 10.954545,
+      "end": 20907.12,
+      "no_speech_prob": 0.0,
+      "start": 20906.36,
+      "text": "我看不說"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 10.954545,
+      "end": 20907.56,
+      "no_speech_prob": 0.0,
+      "start": 20907.22,
+      "text": "我看不看不看我"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 10.954545,
+      "end": 20907.86,
+      "no_speech_prob": 0.0,
+      "start": 20907.56,
+      "text": "我看不看我"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 10.954545,
+      "end": 20908.3,
+      "no_speech_prob": 0.0,
+      "start": 20907.86,
+      "text": "我看不看我"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 10.954545,
+      "end": 20908.56,
+      "no_speech_prob": 0.0,
+      "start": 20908.3,
+      "text": "我看不看我"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 10.954545,
+      "end": 20908.8,
+      "no_speech_prob": 0.0,
+      "start": 20908.56,
+      "text": "我看不看我"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 10.954545,
+      "end": 20909.06,
+      "no_speech_prob": 0.0,
+      "start": 20908.8,
+      "text": "我看不看我"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 10.954545,
+      "end": 20909.32,
+      "no_speech_prob": 0.0,
+      "start": 20909.06,
+      "text": "我看不看我"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 10.954545,
+      "end": 20909.6,
+      "no_speech_prob": 0.0,
+      "start": 20909.32,
+      "text": "我看不看我"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 10.954545,
+      "end": 20909.9,
+      "no_speech_prob": 0.0,
+      "start": 20909.6,
+      "text": "我看不看我"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 10.954545,
+      "end": 20910.16,
+      "no_speech_prob": 0.0,
+      "start": 20909.9,
+      "text": "我看不看我"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 10.954545,
+      "end": 20910.32,
+      "no_speech_prob": 0.0,
+      "start": 20910.16,
+      "text": "我看不看我"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 10.954545,
+      "end": 20910.52,
+      "no_speech_prob": 0.0,
+      "start": 20910.32,
+      "text": "我看不看我"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 10.954545,
+      "end": 20910.72,
+      "no_speech_prob": 0.0,
+      "start": 20910.52,
+      "text": "我看不看我"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 10.954545,
+      "end": 20910.92,
+      "no_speech_prob": 0.0,
+      "start": 20910.72,
+      "text": "我看不看我"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 10.954545,
+      "end": 20911.06,
+      "no_speech_prob": 0.0,
+      "start": 20910.92,
+      "text": "我看不看我"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 10.954545,
+      "end": 20911.3,
+      "no_speech_prob": 0.0,
+      "start": 20911.06,
+      "text": "我看不看我"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 10.954545,
+      "end": 20911.56,
+      "no_speech_prob": 0.0,
+      "start": 20911.3,
+      "text": "我看不看我"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 10.954545,
+      "end": 20911.7,
+      "no_speech_prob": 0.0,
+      "start": 20911.56,
+      "text": "我看不看我"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 10.954545,
+      "end": 20911.86,
+      "no_speech_prob": 0.0,
+      "start": 20911.7,
+      "text": "我看不看我"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 10.954545,
+      "end": 20912.02,
+      "no_speech_prob": 0.0,
+      "start": 20911.86,
+      "text": "我看不看我"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 10.954545,
+      "end": 20912.22,
+      "no_speech_prob": 0.0,
+      "start": 20912.02,
+      "text": "我看不看我"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 10.954545,
+      "end": 20912.4,
+      "no_speech_prob": 0.0,
+      "start": 20912.22,
+      "text": "我看不看我"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 10.954545,
+      "end": 20912.56,
+      "no_speech_prob": 0.0,
+      "start": 20912.4,
+      "text": "我看不看我"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 10.954545,
+      "end": 20912.64,
+      "no_speech_prob": 0.0,
+      "start": 20912.56,
+      "text": "我看不看我"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 10.954545,
+      "end": 20912.76,
+      "no_speech_prob": 0.0,
+      "start": 20912.64,
+      "text": "我看不看我"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 10.954545,
+      "end": 20912.9,
+      "no_speech_prob": 0.0,
+      "start": 20912.76,
+      "text": "我看不看我"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 10.954545,
+      "end": 20913.0,
+      "no_speech_prob": 0.0,
+      "start": 20912.9,
+      "text": "我看不看我"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 10.954545,
+      "end": 20913.08,
+      "no_speech_prob": 0.0,
+      "start": 20913.0,
+      "text": "我看不看我"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 10.954545,
+      "end": 20913.2,
+      "no_speech_prob": 0.0,
+      "start": 20913.08,
+      "text": "我看不看我"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 10.954545,
+      "end": 20913.52,
+      "no_speech_prob": 0.0,
+      "start": 20913.2,
+      "text": "atically"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 10.954545,
+      "end": 20913.56,
+      "no_speech_prob": 0.0,
+      "start": 20913.52,
+      "text": "我看不看我"
+    },
+    {
+      "avg_logprob": -0.488674,
+      "compression_ratio": 0.853333,
+      "end": 20931.08,
+      "no_speech_prob": 0.0,
+      "start": 20913.56,
+      "text": "我们又唱一首自己写的歌"
+    },
+    {
+      "avg_logprob": -0.488674,
+      "compression_ratio": 0.853333,
+      "end": 20933.0,
+      "no_speech_prob": 0.0,
+      "start": 20931.08,
+      "text": "就是叫"
+    },
+    {
+      "avg_logprob": -0.488674,
+      "compression_ratio": 0.853333,
+      "end": 20934.16,
+      "no_speech_prob": 0.0,
+      "start": 20933.0,
+      "text": "Not Enough Words"
+    },
+    {
+      "avg_logprob": -0.488674,
+      "compression_ratio": 0.853333,
+      "end": 20942.04,
+      "no_speech_prob": 0.0,
+      "start": 20934.16,
+      "text": "好的"
+    },
+    {
+      "avg_logprob": -0.982514,
+      "compression_ratio": 0.5,
+      "end": 20943.16,
+      "no_speech_prob": 0.0,
+      "start": 20942.04,
+      "text": "请开始"
+    },
+    {
+      "avg_logprob": -0.578776,
+      "compression_ratio": 1.285714,
+      "end": 20975.16,
+      "no_speech_prob": 0.0,
+      "start": 20972.04,
+      "text": "I'm not always there to fix things for me"
+    },
+    {
+      "avg_logprob": -0.578776,
+      "compression_ratio": 1.285714,
+      "end": 20979.08,
+      "no_speech_prob": 0.0,
+      "start": 20975.16,
+      "text": "How am I supposed to take on"
+    },
+    {
+      "avg_logprob": -0.578776,
+      "compression_ratio": 1.285714,
+      "end": 20981.16,
+      "no_speech_prob": 0.0,
+      "start": 20979.08,
+      "text": "The baby"
+    },
+    {
+      "avg_logprob": -0.578776,
+      "compression_ratio": 1.285714,
+      "end": 20985.16,
+      "no_speech_prob": 0.0,
+      "start": 20981.16,
+      "text": "Mother, father, will you be there for me"
+    },
+    {
+      "avg_logprob": -0.578776,
+      "compression_ratio": 1.285714,
+      "end": 20989.16,
+      "no_speech_prob": 0.0,
+      "start": 20985.16,
+      "text": "Oh, but all these open doors are overwhelming"
+    },
+    {
+      "avg_logprob": -0.26628,
+      "compression_ratio": 1.472973,
+      "end": 20996.28,
+      "no_speech_prob": 0.0,
+      "start": 20989.16,
+      "text": "Because sometimes all I need is a little family"
+    },
+    {
+      "avg_logprob": -0.26628,
+      "compression_ratio": 1.472973,
+      "end": 21000.28,
+      "no_speech_prob": 0.0,
+      "start": 20996.28,
+      "text": "So thank you for the things you do"
+    },
+    {
+      "avg_logprob": -0.26628,
+      "compression_ratio": 1.472973,
+      "end": 21002.28,
+      "no_speech_prob": 0.0,
+      "start": 21000.28,
+      "text": "All the troubles that you go through"
+    },
+    {
+      "avg_logprob": -0.26628,
+      "compression_ratio": 1.472973,
+      "end": 21004.28,
+      "no_speech_prob": 0.0,
+      "start": 21002.28,
+      "text": "Don't know what other way to thank you"
+    },
+    {
+      "avg_logprob": -0.26628,
+      "compression_ratio": 1.472973,
+      "end": 21006.28,
+      "no_speech_prob": 0.0,
+      "start": 21004.28,
+      "text": "But thank you, yeah thank you"
+    },
+    {
+      "avg_logprob": -0.26628,
+      "compression_ratio": 1.472973,
+      "end": 21010.28,
+      "no_speech_prob": 0.0,
+      "start": 21006.28,
+      "text": "Oh, can I count the endless number"
+    },
+    {
+      "avg_logprob": -0.292904,
+      "compression_ratio": 1.134615,
+      "end": 21013.4,
+      "no_speech_prob": 0.0,
+      "start": 21010.28,
+      "text": "Can I count the endless number"
+    },
+    {
+      "avg_logprob": -0.292904,
+      "compression_ratio": 1.134615,
+      "end": 21015.4,
+      "no_speech_prob": 0.0,
+      "start": 21013.4,
+      "text": "Of sacrifices you've made"
+    },
+    {
+      "avg_logprob": -0.292904,
+      "compression_ratio": 1.134615,
+      "end": 21019.4,
+      "no_speech_prob": 0.0,
+      "start": 21015.4,
+      "text": "That brought me here to this day"
+    },
+    {
+      "avg_logprob": -0.292904,
+      "compression_ratio": 1.134615,
+      "end": 21025.4,
+      "no_speech_prob": 0.0,
+      "start": 21019.4,
+      "text": "Not enough words to give thanks"
+    },
+    {
+      "avg_logprob": -0.345897,
+      "compression_ratio": 1.5,
+      "end": 21032.52,
+      "no_speech_prob": 0.0,
+      "start": 21025.4,
+      "text": "When we grow old"
+    },
+    {
+      "avg_logprob": -0.345897,
+      "compression_ratio": 1.5,
+      "end": 21034.52,
+      "no_speech_prob": 0.0,
+      "start": 21032.52,
+      "text": "All the games we used to play"
+    },
+    {
+      "avg_logprob": -0.345897,
+      "compression_ratio": 1.5,
+      "end": 21038.52,
+      "no_speech_prob": 0.0,
+      "start": 21034.52,
+      "text": "When we let our imaginations"
+    },
+    {
+      "avg_logprob": -0.345897,
+      "compression_ratio": 1.5,
+      "end": 21040.52,
+      "no_speech_prob": 0.0,
+      "start": 21038.52,
+      "text": "Overtake"
+    },
+    {
+      "avg_logprob": -0.345897,
+      "compression_ratio": 1.5,
+      "end": 21042.52,
+      "no_speech_prob": 0.0,
+      "start": 21040.52,
+      "text": "And when we grow old"
+    },
+    {
+      "avg_logprob": -0.345897,
+      "compression_ratio": 1.5,
+      "end": 21046.52,
+      "no_speech_prob": 0.0,
+      "start": 21042.52,
+      "text": "All the dreams we used to make"
+    },
+    {
+      "avg_logprob": -0.345897,
+      "compression_ratio": 1.5,
+      "end": 21050.52,
+      "no_speech_prob": 0.0,
+      "start": 21046.52,
+      "text": "Will all these precious moments fly away"
+    },
+    {
+      "avg_logprob": -0.248404,
+      "compression_ratio": 1.441176,
+      "end": 21057.64,
+      "no_speech_prob": 0.0,
+      "start": 21050.52,
+      "text": "So thank you for the things you do"
+    },
+    {
+      "avg_logprob": -0.248404,
+      "compression_ratio": 1.441176,
+      "end": 21059.64,
+      "no_speech_prob": 0.0,
+      "start": 21057.64,
+      "text": "All the troubles that you go through"
+    },
+    {
+      "avg_logprob": -0.248404,
+      "compression_ratio": 1.441176,
+      "end": 21061.64,
+      "no_speech_prob": 0.0,
+      "start": 21059.64,
+      "text": "Don't know what other way to thank you"
+    },
+    {
+      "avg_logprob": -0.248404,
+      "compression_ratio": 1.441176,
+      "end": 21063.64,
+      "no_speech_prob": 0.0,
+      "start": 21061.64,
+      "text": "But thank you, yeah thank you"
+    },
+    {
+      "avg_logprob": -0.248404,
+      "compression_ratio": 1.441176,
+      "end": 21067.64,
+      "no_speech_prob": 0.0,
+      "start": 21063.64,
+      "text": "Oh, can I count the endless number"
+    },
+    {
+      "avg_logprob": -0.248404,
+      "compression_ratio": 1.441176,
+      "end": 21069.64,
+      "no_speech_prob": 0.0,
+      "start": 21067.64,
+      "text": "Of sacrifices you've made"
+    },
+    {
+      "avg_logprob": -0.290308,
+      "compression_ratio": 1.623377,
+      "end": 21076.76,
+      "no_speech_prob": 0.0,
+      "start": 21069.64,
+      "text": "That brought me here to this day"
+    },
+    {
+      "avg_logprob": -0.290308,
+      "compression_ratio": 1.623377,
+      "end": 21078.76,
+      "no_speech_prob": 0.0,
+      "start": 21076.76,
+      "text": "Not enough words to give thanks"
+    },
+    {
+      "avg_logprob": -0.290308,
+      "compression_ratio": 1.623377,
+      "end": 21082.76,
+      "no_speech_prob": 0.0,
+      "start": 21078.76,
+      "text": "How will I make it to the other side"
+    },
+    {
+      "avg_logprob": -0.290308,
+      "compression_ratio": 1.623377,
+      "end": 21084.76,
+      "no_speech_prob": 0.0,
+      "start": 21082.76,
+      "text": "How will I make it to the other side"
+    },
+    {
+      "avg_logprob": -0.290308,
+      "compression_ratio": 1.623377,
+      "end": 21086.76,
+      "no_speech_prob": 0.0,
+      "start": 21084.76,
+      "text": "To guide me"
+    },
+    {
+      "avg_logprob": -0.290308,
+      "compression_ratio": 1.623377,
+      "end": 21088.76,
+      "no_speech_prob": 0.0,
+      "start": 21086.76,
+      "text": "How had I been such a fool"
+    },
+    {
+      "avg_logprob": -0.290308,
+      "compression_ratio": 1.623377,
+      "end": 21090.76,
+      "no_speech_prob": 0.0,
+      "start": 21088.76,
+      "text": "To see so blindly"
+    },
+    {
+      "avg_logprob": -0.290308,
+      "compression_ratio": 1.623377,
+      "end": 21094.76,
+      "no_speech_prob": 0.0,
+      "start": 21090.76,
+      "text": "All the reason why I'm here today"
+    },
+    {
+      "avg_logprob": -0.290308,
+      "compression_ratio": 1.623377,
+      "end": 21096.76,
+      "no_speech_prob": 0.0,
+      "start": 21094.76,
+      "text": "Because of you"
+    },
+    {
+      "avg_logprob": -0.290308,
+      "compression_ratio": 1.623377,
+      "end": 21098.76,
+      "no_speech_prob": 0.0,
+      "start": 21096.76,
+      "text": "Because of you"
+    },
+    {
+      "avg_logprob": -0.300341,
+      "compression_ratio": 1.730539,
+      "end": 21100.76,
+      "no_speech_prob": 0.0,
+      "start": 21098.76,
+      "text": "Because of you"
+    },
+    {
+      "avg_logprob": -0.300341,
+      "compression_ratio": 1.730539,
+      "end": 21102.76,
+      "no_speech_prob": 0.0,
+      "start": 21100.76,
+      "text": "Because of you"
+    },
+    {
+      "avg_logprob": -0.300341,
+      "compression_ratio": 1.730539,
+      "end": 21105.88,
+      "no_speech_prob": 0.0,
+      "start": 21102.76,
+      "text": "Thank you for the things you do"
+    },
+    {
+      "avg_logprob": -0.300341,
+      "compression_ratio": 1.730539,
+      "end": 21107.88,
+      "no_speech_prob": 0.0,
+      "start": 21105.88,
+      "text": "All the troubles that you go through"
+    },
+    {
+      "avg_logprob": -0.300341,
+      "compression_ratio": 1.730539,
+      "end": 21109.88,
+      "no_speech_prob": 0.0,
+      "start": 21107.88,
+      "text": "All the troubles that you go through"
+    },
+    {
+      "avg_logprob": -0.300341,
+      "compression_ratio": 1.730539,
+      "end": 21111.88,
+      "no_speech_prob": 0.0,
+      "start": 21109.88,
+      "text": "Don't know what other way to thank you"
+    },
+    {
+      "avg_logprob": -0.300341,
+      "compression_ratio": 1.730539,
+      "end": 21113.88,
+      "no_speech_prob": 0.0,
+      "start": 21111.88,
+      "text": "But thank you, yeah thank you"
+    },
+    {
+      "avg_logprob": -0.300341,
+      "compression_ratio": 1.730539,
+      "end": 21117.88,
+      "no_speech_prob": 0.0,
+      "start": 21113.88,
+      "text": "Oh, can I count the endless number"
+    },
+    {
+      "avg_logprob": -0.300341,
+      "compression_ratio": 1.730539,
+      "end": 21119.88,
+      "no_speech_prob": 0.0,
+      "start": 21117.88,
+      "text": "Of sacrifices you've made"
+    },
+    {
+      "avg_logprob": -0.300341,
+      "compression_ratio": 1.730539,
+      "end": 21123.88,
+      "no_speech_prob": 0.0,
+      "start": 21119.88,
+      "text": "That brought me here to this day"
+    },
+    {
+      "avg_logprob": -0.327115,
+      "compression_ratio": 1.921986,
+      "end": 21127.0,
+      "no_speech_prob": 0.0,
+      "start": 21123.88,
+      "text": "Not enough words to give thanks"
+    },
+    {
+      "avg_logprob": -0.327115,
+      "compression_ratio": 1.921986,
+      "end": 21129.0,
+      "no_speech_prob": 0.0,
+      "start": 21127.0,
+      "text": "Thank you for the things you do"
+    },
+    {
+      "avg_logprob": -0.327115,
+      "compression_ratio": 1.921986,
+      "end": 21131.0,
+      "no_speech_prob": 0.0,
+      "start": 21129.0,
+      "text": "All the troubles that you go through"
+    },
+    {
+      "avg_logprob": -0.327115,
+      "compression_ratio": 1.921986,
+      "end": 21133.0,
+      "no_speech_prob": 0.0,
+      "start": 21131.0,
+      "text": "All the troubles that you go through"
+    },
+    {
+      "avg_logprob": -0.327115,
+      "compression_ratio": 1.921986,
+      "end": 21135.0,
+      "no_speech_prob": 0.0,
+      "start": 21133.0,
+      "text": "All the troubles that you go through"
+    },
+    {
+      "avg_logprob": -0.327115,
+      "compression_ratio": 1.921986,
+      "end": 21137.0,
+      "no_speech_prob": 0.0,
+      "start": 21135.0,
+      "text": "Don't know what other way to thank you"
+    },
+    {
+      "avg_logprob": -0.327115,
+      "compression_ratio": 1.921986,
+      "end": 21139.0,
+      "no_speech_prob": 0.0,
+      "start": 21137.0,
+      "text": "But thank you, yeah thank you"
+    },
+    {
+      "avg_logprob": -0.327115,
+      "compression_ratio": 1.921986,
+      "end": 21143.0,
+      "no_speech_prob": 0.0,
+      "start": 21139.0,
+      "text": "Oh, can I count the endless number"
+    },
+    {
+      "avg_logprob": -0.331627,
+      "compression_ratio": 1.474227,
+      "end": 21144.12,
+      "no_speech_prob": 0.0,
+      "start": 21143.0,
+      "text": "Of sacrifices you've made"
+    },
+    {
+      "avg_logprob": -0.331627,
+      "compression_ratio": 1.474227,
+      "end": 21152.12,
+      "no_speech_prob": 0.0,
+      "start": 21144.12,
+      "text": "That brought me here to this day"
+    },
+    {
+      "avg_logprob": -0.331627,
+      "compression_ratio": 1.474227,
+      "end": 21156.12,
+      "no_speech_prob": 0.0,
+      "start": 21152.12,
+      "text": "Not enough words"
+    },
+    {
+      "avg_logprob": -0.331627,
+      "compression_ratio": 1.474227,
+      "end": 21160.12,
+      "no_speech_prob": 0.0,
+      "start": 21156.12,
+      "text": "Not enough words to give thanks"
+    },
+    {
+      "avg_logprob": -0.331627,
+      "compression_ratio": 1.474227,
+      "end": 21164.12,
+      "no_speech_prob": 0.0,
+      "start": 21160.12,
+      "text": "Oh, oh, you brought me here to this day"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 6.09434,
+      "end": 21166.12,
+      "no_speech_prob": 0.0,
+      "start": 21164.12,
+      "text": "Oh, oh, you brought me here to this day"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 6.09434,
+      "end": 21166.48,
+      "no_speech_prob": 0.0,
+      "start": 21166.12,
+      "text": "You've made it to this day"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 6.09434,
+      "end": 21167.0,
+      "no_speech_prob": 0.0,
+      "start": 21166.48,
+      "text": "You've made it to this day"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 6.09434,
+      "end": 21167.12,
+      "no_speech_prob": 0.0,
+      "start": 21167.0,
+      "text": "You've made it to this day"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 6.09434,
+      "end": 21167.72,
+      "no_speech_prob": 0.0,
+      "start": 21167.12,
+      "text": "not enough words to give thanks"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 6.09434,
+      "end": 21167.72,
+      "no_speech_prob": 0.0,
+      "start": 21167.72,
+      "text": "atically"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 6.09434,
+      "end": 21167.32,
+      "no_speech_prob": 0.0,
+      "start": 21167.12,
+      "text": "ck you't do you"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 6.09434,
+      "end": 21167.32,
+      "no_speech_prob": 0.0,
+      "start": 21167.32,
+      "text": "atically"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 6.09434,
+      "end": 21167.16,
+      "no_speech_prob": 0.0,
+      "start": 21167.12,
+      "text": "atically"
+    },
+    {
+      "avg_logprob": -0.877238,
+      "compression_ratio": 0.685714,
+      "end": 21197.14,
+      "no_speech_prob": 0.0,
+      "start": 21167.16,
+      "text": "不小心唱极了一点"
+    },
+    {
+      "avg_logprob": -0.331995,
+      "compression_ratio": 1.381757,
+      "end": 21199.16,
+      "no_speech_prob": 0.0,
+      "start": 21197.16,
+      "text": "唱得太棒了"
+    },
+    {
+      "avg_logprob": -0.331995,
+      "compression_ratio": 1.381757,
+      "end": 21202.16,
+      "no_speech_prob": 0.0,
+      "start": 21199.16,
+      "text": "我觉得你看Rika这个Tunes唱歌的时候"
+    },
+    {
+      "avg_logprob": -0.331995,
+      "compression_ratio": 1.381757,
+      "end": 21204.16,
+      "no_speech_prob": 0.0,
+      "start": 21202.16,
+      "text": "他跟一年前 我今天跟你说"
+    },
+    {
+      "avg_logprob": -0.331995,
+      "compression_ratio": 1.381757,
+      "end": 21207.16,
+      "no_speech_prob": 0.0,
+      "start": 21204.16,
+      "text": "我上次你咱们聊天采访我的时候"
+    },
+    {
+      "avg_logprob": -0.331995,
+      "compression_ratio": 1.381757,
+      "end": 21210.16,
+      "no_speech_prob": 0.0,
+      "start": 21207.16,
+      "text": "这个我们基本上讲到有两个"
+    },
+    {
+      "avg_logprob": -0.331995,
+      "compression_ratio": 1.381757,
+      "end": 21213.16,
+      "no_speech_prob": 0.0,
+      "start": 21210.16,
+      "text": "就是你说这个世界上的最我最喜欢谁的音乐"
+    },
+    {
+      "avg_logprob": -0.331995,
+      "compression_ratio": 1.381757,
+      "end": 21216.16,
+      "no_speech_prob": 0.0,
+      "start": 21213.16,
+      "text": "我是希望谈到Michael Jackson"
+    },
+    {
+      "avg_logprob": -0.331995,
+      "compression_ratio": 1.381757,
+      "end": 21218.16,
+      "no_speech_prob": 0.0,
+      "start": 21216.16,
+      "text": "Michael Jackson的音乐当中"
+    },
+    {
+      "avg_logprob": -0.331995,
+      "compression_ratio": 1.381757,
+      "end": 21221.16,
+      "no_speech_prob": 0.0,
+      "start": 21218.16,
+      "text": "你看到他最最的他的最伟大的音乐"
+    },
+    {
+      "avg_logprob": -0.331995,
+      "compression_ratio": 1.381757,
+      "end": 21223.16,
+      "no_speech_prob": 0.0,
+      "start": 21221.16,
+      "text": "他是来自哪里的"
+    },
+    {
+      "avg_logprob": -0.331995,
+      "compression_ratio": 1.381757,
+      "end": 21226.16,
+      "no_speech_prob": 0.0,
+      "start": 21223.16,
+      "text": "所有的几个歌最好的时候他唱的是什么"
+    },
+    {
+      "avg_logprob": -0.152515,
+      "compression_ratio": 1.371859,
+      "end": 21231.16,
+      "no_speech_prob": 0.0,
+      "start": 21226.16,
+      "text": "他唱的全部都是整个的跟他没有关系的"
+    },
+    {
+      "avg_logprob": -0.152515,
+      "compression_ratio": 1.371859,
+      "end": 21236.16,
+      "no_speech_prob": 0.0,
+      "start": 21231.16,
+      "text": "他要表达的都是对种族的歧视的一种恼怒"
+    },
+    {
+      "avg_logprob": -0.152515,
+      "compression_ratio": 1.371859,
+      "end": 21238.16,
+      "no_speech_prob": 0.0,
+      "start": 21236.16,
+      "text": "对自由的向往"
+    },
+    {
+      "avg_logprob": -0.152515,
+      "compression_ratio": 1.371859,
+      "end": 21243.16,
+      "no_speech_prob": 0.0,
+      "start": 21238.16,
+      "text": "而不是没有什么是恩恩爱爱的"
+    },
+    {
+      "avg_logprob": -0.152515,
+      "compression_ratio": 1.371859,
+      "end": 21244.16,
+      "no_speech_prob": 0.0,
+      "start": 21243.16,
+      "text": "是吗"
+    },
+    {
+      "avg_logprob": -0.152515,
+      "compression_ratio": 1.371859,
+      "end": 21246.16,
+      "no_speech_prob": 0.0,
+      "start": 21244.16,
+      "text": "像泰克尼克号这种恩恩爱爱的首歌"
+    },
+    {
+      "avg_logprob": -0.152515,
+      "compression_ratio": 1.371859,
+      "end": 21249.16,
+      "no_speech_prob": 0.0,
+      "start": 21246.16,
+      "text": "火了以后是那个电影他弄火的"
+    },
+    {
+      "avg_logprob": -0.152515,
+      "compression_ratio": 1.371859,
+      "end": 21250.16,
+      "no_speech_prob": 0.0,
+      "start": 21249.16,
+      "text": "是那个调调火的"
+    },
+    {
+      "avg_logprob": -0.147842,
+      "compression_ratio": 1.04878,
+      "end": 21252.16,
+      "no_speech_prob": 0.0,
+      "start": 21250.16,
+      "text": "他的歌词没有火"
+    },
+    {
+      "avg_logprob": -0.147842,
+      "compression_ratio": 1.04878,
+      "end": 21255.16,
+      "no_speech_prob": 0.0,
+      "start": 21252.16,
+      "text": "所以说音乐的魅力在什么"
+    },
+    {
+      "avg_logprob": -0.147842,
+      "compression_ratio": 1.04878,
+      "end": 21257.16,
+      "no_speech_prob": 0.0,
+      "start": 21255.16,
+      "text": "就刚才你俩写的歌"
+    },
+    {
+      "avg_logprob": -0.147842,
+      "compression_ratio": 1.04878,
+      "end": 21259.16,
+      "no_speech_prob": 0.0,
+      "start": 21257.16,
+      "text": "就你俩有默契"
+    },
+    {
+      "avg_logprob": -0.147842,
+      "compression_ratio": 1.04878,
+      "end": 21264.16,
+      "no_speech_prob": 0.0,
+      "start": 21259.16,
+      "text": "你看看美国从嘻哈摇滚乐"
+    },
+    {
+      "avg_logprob": -0.239793,
+      "compression_ratio": 0.964286,
+      "end": 21266.16,
+      "no_speech_prob": 0.0,
+      "start": 21264.16,
+      "text": "最牛的几个大人物"
+    },
+    {
+      "avg_logprob": -0.239793,
+      "compression_ratio": 0.964286,
+      "end": 21268.16,
+      "no_speech_prob": 0.0,
+      "start": 21266.16,
+      "text": "吉斯坦"
+    },
+    {
+      "avg_logprob": -0.239793,
+      "compression_ratio": 0.964286,
+      "end": 21270.16,
+      "no_speech_prob": 0.0,
+      "start": 21268.16,
+      "text": "Miles Daivy"
+    },
+    {
+      "avg_logprob": -0.239793,
+      "compression_ratio": 0.964286,
+      "end": 21272.16,
+      "no_speech_prob": 0.0,
+      "start": 21270.16,
+      "text": "《绝神乐》"
+    },
+    {
+      "avg_logprob": -0.239793,
+      "compression_ratio": 0.964286,
+      "end": 21273.16,
+      "no_speech_prob": 0.0,
+      "start": 21272.16,
+      "text": "你们去看一看去"
+    },
+    {
+      "avg_logprob": -0.239793,
+      "compression_ratio": 0.964286,
+      "end": 21276.16,
+      "no_speech_prob": 0.0,
+      "start": 21273.16,
+      "text": "包括在休斯顿那几个大咖"
+    },
+    {
+      "avg_logprob": -0.239793,
+      "compression_ratio": 0.964286,
+      "end": 21277.16,
+      "no_speech_prob": 0.0,
+      "start": 21276.16,
+      "text": "吉尔斯"
+    },
+    {
+      "avg_logprob": -0.239793,
+      "compression_ratio": 0.964286,
+      "end": 21279.16,
+      "no_speech_prob": 0.0,
+      "start": 21277.16,
+      "text": "还有捷克"
+    },
+    {
+      "avg_logprob": -0.197808,
+      "compression_ratio": 1.360153,
+      "end": 21280.16,
+      "no_speech_prob": 0.0,
+      "start": 21279.16,
+      "text": "马里德"
+    },
+    {
+      "avg_logprob": -0.197808,
+      "compression_ratio": 1.360153,
+      "end": 21282.16,
+      "no_speech_prob": 0.0,
+      "start": 21280.16,
+      "text": "都是在佛洛尼亚的"
+    },
+    {
+      "avg_logprob": -0.197808,
+      "compression_ratio": 1.360153,
+      "end": 21283.16,
+      "no_speech_prob": 0.0,
+      "start": 21282.16,
+      "text": "还有几个什么什么什么"
+    },
+    {
+      "avg_logprob": -0.197808,
+      "compression_ratio": 1.360153,
+      "end": 21284.16,
+      "no_speech_prob": 0.0,
+      "start": 21283.16,
+      "text": "布克林的"
+    },
+    {
+      "avg_logprob": -0.197808,
+      "compression_ratio": 1.360153,
+      "end": 21286.16,
+      "no_speech_prob": 0.0,
+      "start": 21284.16,
+      "text": "那几个那些嘻哈的"
+    },
+    {
+      "avg_logprob": -0.197808,
+      "compression_ratio": 1.360153,
+      "end": 21288.16,
+      "no_speech_prob": 0.0,
+      "start": 21286.16,
+      "text": "还有几个很早都过世了"
+    },
+    {
+      "avg_logprob": -0.197808,
+      "compression_ratio": 1.360153,
+      "end": 21291.16,
+      "no_speech_prob": 0.0,
+      "start": 21288.16,
+      "text": "几乎他们从来没有"
+    },
+    {
+      "avg_logprob": -0.197808,
+      "compression_ratio": 1.360153,
+      "end": 21292.16,
+      "no_speech_prob": 0.0,
+      "start": 21291.16,
+      "text": "没有歌谱的"
+    },
+    {
+      "avg_logprob": -0.197808,
+      "compression_ratio": 1.360153,
+      "end": 21294.16,
+      "no_speech_prob": 0.0,
+      "start": 21292.16,
+      "text": "他们在现场表现没有歌谱的"
+    },
+    {
+      "avg_logprob": -0.197808,
+      "compression_ratio": 1.360153,
+      "end": 21296.16,
+      "no_speech_prob": 0.0,
+      "start": 21294.16,
+      "text": "Miles Daivy的歌"
+    },
+    {
+      "avg_logprob": -0.197808,
+      "compression_ratio": 1.360153,
+      "end": 21298.16,
+      "no_speech_prob": 0.0,
+      "start": 21296.16,
+      "text": "几乎90%是没有歌谱的"
+    },
+    {
+      "avg_logprob": -0.197808,
+      "compression_ratio": 1.360153,
+      "end": 21299.16,
+      "no_speech_prob": 0.0,
+      "start": 21298.16,
+      "text": "就是到了现场"
+    },
+    {
+      "avg_logprob": -0.197808,
+      "compression_ratio": 1.360153,
+      "end": 21300.16,
+      "no_speech_prob": 0.0,
+      "start": 21299.16,
+      "text": "大家说一个"
+    },
+    {
+      "avg_logprob": -0.197808,
+      "compression_ratio": 1.360153,
+      "end": 21301.16,
+      "no_speech_prob": 0.0,
+      "start": 21300.16,
+      "text": "就是吹"
+    },
+    {
+      "avg_logprob": -0.197808,
+      "compression_ratio": 1.360153,
+      "end": 21302.16,
+      "no_speech_prob": 0.0,
+      "start": 21301.16,
+      "text": "就是感觉就来了"
+    },
+    {
+      "avg_logprob": -0.197808,
+      "compression_ratio": 1.360153,
+      "end": 21304.16,
+      "no_speech_prob": 0.0,
+      "start": 21302.16,
+      "text": "他在这个57届有一个叫"
+    },
+    {
+      "avg_logprob": -0.197808,
+      "compression_ratio": 1.360153,
+      "end": 21306.16,
+      "no_speech_prob": 0.0,
+      "start": 21304.16,
+      "text": "Jazz Music Club"
+    },
+    {
+      "avg_logprob": -0.134038,
+      "compression_ratio": 1.211957,
+      "end": 21311.16,
+      "no_speech_prob": 0.0,
+      "start": 21306.16,
+      "text": "这就是蓝调"
+    },
+    {
+      "avg_logprob": -0.134038,
+      "compression_ratio": 1.211957,
+      "end": 21313.16,
+      "no_speech_prob": 0.0,
+      "start": 21311.16,
+      "text": "嘻哈"
+    },
+    {
+      "avg_logprob": -0.134038,
+      "compression_ratio": 1.211957,
+      "end": 21315.16,
+      "no_speech_prob": 0.0,
+      "start": 21313.16,
+      "text": "Rock"
+    },
+    {
+      "avg_logprob": -0.134038,
+      "compression_ratio": 1.211957,
+      "end": 21316.16,
+      "no_speech_prob": 0.0,
+      "start": 21315.16,
+      "text": "Pop"
+    },
+    {
+      "avg_logprob": -0.134038,
+      "compression_ratio": 1.211957,
+      "end": 21317.16,
+      "no_speech_prob": 0.0,
+      "start": 21316.16,
+      "text": "这些总结起来的原因"
+    },
+    {
+      "avg_logprob": -0.134038,
+      "compression_ratio": 1.211957,
+      "end": 21319.16,
+      "no_speech_prob": 0.0,
+      "start": 21317.16,
+      "text": "黑人音乐"
+    },
+    {
+      "avg_logprob": -0.134038,
+      "compression_ratio": 1.211957,
+      "end": 21321.16,
+      "no_speech_prob": 0.0,
+      "start": 21319.16,
+      "text": "把整个所有的过去的"
+    },
+    {
+      "avg_logprob": -0.134038,
+      "compression_ratio": 1.211957,
+      "end": 21323.16,
+      "no_speech_prob": 0.0,
+      "start": 21321.16,
+      "text": "唱的宗教的歌"
+    },
+    {
+      "avg_logprob": -0.134038,
+      "compression_ratio": 1.211957,
+      "end": 21325.16,
+      "no_speech_prob": 0.0,
+      "start": 21323.16,
+      "text": "宗教的歌"
+    },
+    {
+      "avg_logprob": -0.134038,
+      "compression_ratio": 1.211957,
+      "end": 21327.16,
+      "no_speech_prob": 0.0,
+      "start": 21325.16,
+      "text": "还有传统的歌剧"
+    },
+    {
+      "avg_logprob": -0.134038,
+      "compression_ratio": 1.211957,
+      "end": 21329.16,
+      "no_speech_prob": 0.0,
+      "start": 21327.16,
+      "text": "和送葬的歌"
+    },
+    {
+      "avg_logprob": -0.134038,
+      "compression_ratio": 1.211957,
+      "end": 21330.16,
+      "no_speech_prob": 0.0,
+      "start": 21329.16,
+      "text": "死亡的歌"
+    },
+    {
+      "avg_logprob": -0.134038,
+      "compression_ratio": 1.211957,
+      "end": 21331.16,
+      "no_speech_prob": 0.0,
+      "start": 21330.16,
+      "text": "跳舞的歌"
+    },
+    {
+      "avg_logprob": -0.134038,
+      "compression_ratio": 1.211957,
+      "end": 21332.16,
+      "no_speech_prob": 0.0,
+      "start": 21331.16,
+      "text": "融合到一起"
+    },
+    {
+      "avg_logprob": -0.134038,
+      "compression_ratio": 1.211957,
+      "end": 21334.16,
+      "no_speech_prob": 0.0,
+      "start": 21332.16,
+      "text": "在过去叫地下歌曲"
+    },
+    {
+      "avg_logprob": -0.146634,
+      "compression_ratio": 1.36,
+      "end": 21337.16,
+      "no_speech_prob": 0.0,
+      "start": 21334.16,
+      "text": "在新奥尔良"
+    },
+    {
+      "avg_logprob": -0.146634,
+      "compression_ratio": 1.36,
+      "end": 21340.16,
+      "no_speech_prob": 0.0,
+      "start": 21337.16,
+      "text": "到了美国的西部洛杉矶"
+    },
+    {
+      "avg_logprob": -0.146634,
+      "compression_ratio": 1.36,
+      "end": 21342.16,
+      "no_speech_prob": 0.0,
+      "start": 21340.16,
+      "text": "然后到了旧金山"
+    },
+    {
+      "avg_logprob": -0.146634,
+      "compression_ratio": 1.36,
+      "end": 21344.16,
+      "no_speech_prob": 0.0,
+      "start": 21342.16,
+      "text": "然后到了这个"
+    },
+    {
+      "avg_logprob": -0.146634,
+      "compression_ratio": 1.36,
+      "end": 21345.16,
+      "no_speech_prob": 0.0,
+      "start": 21344.16,
+      "text": "这个芝加哥"
+    },
+    {
+      "avg_logprob": -0.146634,
+      "compression_ratio": 1.36,
+      "end": 21347.16,
+      "no_speech_prob": 0.0,
+      "start": 21345.16,
+      "text": "然后到纽约"
+    },
+    {
+      "avg_logprob": -0.146634,
+      "compression_ratio": 1.36,
+      "end": 21348.16,
+      "no_speech_prob": 0.0,
+      "start": 21347.16,
+      "text": "布克林这么起来的"
+    },
+    {
+      "avg_logprob": -0.146634,
+      "compression_ratio": 1.36,
+      "end": 21349.16,
+      "no_speech_prob": 0.0,
+      "start": 21348.16,
+      "text": "所有的音乐"
+    },
+    {
+      "avg_logprob": -0.146634,
+      "compression_ratio": 1.36,
+      "end": 21351.16,
+      "no_speech_prob": 0.0,
+      "start": 21349.16,
+      "text": "是你当时的心境的表达"
+    },
+    {
+      "avg_logprob": -0.146634,
+      "compression_ratio": 1.36,
+      "end": 21354.16,
+      "no_speech_prob": 0.0,
+      "start": 21351.16,
+      "text": "现在在回去买元代的时候"
+    },
+    {
+      "avg_logprob": -0.146634,
+      "compression_ratio": 1.36,
+      "end": 21355.16,
+      "no_speech_prob": 0.0,
+      "start": 21354.16,
+      "text": "贵的要死啊"
+    },
+    {
+      "avg_logprob": -0.146634,
+      "compression_ratio": 1.36,
+      "end": 21358.16,
+      "no_speech_prob": 0.0,
+      "start": 21355.16,
+      "text": "我收藏了很多很多他们的元代"
+    },
+    {
+      "avg_logprob": -0.146634,
+      "compression_ratio": 1.36,
+      "end": 21360.16,
+      "no_speech_prob": 0.0,
+      "start": 21358.16,
+      "text": "所以你今天听到你唱歌的时候"
+    },
+    {
+      "avg_logprob": -0.146634,
+      "compression_ratio": 1.36,
+      "end": 21361.16,
+      "no_speech_prob": 0.0,
+      "start": 21360.16,
+      "text": "Twins"
+    },
+    {
+      "avg_logprob": -0.146634,
+      "compression_ratio": 1.36,
+      "end": 21362.16,
+      "no_speech_prob": 0.0,
+      "start": 21361.16,
+      "text": "你唱你自己写的歌的时候"
+    },
+    {
+      "avg_logprob": -0.146634,
+      "compression_ratio": 1.36,
+      "end": 21363.16,
+      "no_speech_prob": 0.0,
+      "start": 21362.16,
+      "text": "你会唱得更好更自然"
+    },
+    {
+      "avg_logprob": -0.129008,
+      "compression_ratio": 1.306773,
+      "end": 21365.16,
+      "no_speech_prob": 0.0,
+      "start": 21363.16,
+      "text": "你俩已经完全不同了"
+    },
+    {
+      "avg_logprob": -0.129008,
+      "compression_ratio": 1.306773,
+      "end": 21368.16,
+      "no_speech_prob": 0.0,
+      "start": 21365.16,
+      "text": "跟一年前的两个男孩"
+    },
+    {
+      "avg_logprob": -0.129008,
+      "compression_ratio": 1.306773,
+      "end": 21370.16,
+      "no_speech_prob": 0.0,
+      "start": 21368.16,
+      "text": "完全不是一个级别的了"
+    },
+    {
+      "avg_logprob": -0.129008,
+      "compression_ratio": 1.306773,
+      "end": 21372.16,
+      "no_speech_prob": 0.0,
+      "start": 21370.16,
+      "text": "就你嗓子已经成熟了"
+    },
+    {
+      "avg_logprob": -0.129008,
+      "compression_ratio": 1.306773,
+      "end": 21373.16,
+      "no_speech_prob": 0.0,
+      "start": 21372.16,
+      "text": "你的体系"
+    },
+    {
+      "avg_logprob": -0.129008,
+      "compression_ratio": 1.306773,
+      "end": 21374.16,
+      "no_speech_prob": 0.0,
+      "start": 21373.16,
+      "text": "你的自信已经来了"
+    },
+    {
+      "avg_logprob": -0.129008,
+      "compression_ratio": 1.306773,
+      "end": 21376.16,
+      "no_speech_prob": 0.0,
+      "start": 21374.16,
+      "text": "你已经不是在表演了"
+    },
+    {
+      "avg_logprob": -0.129008,
+      "compression_ratio": 1.306773,
+      "end": 21378.16,
+      "no_speech_prob": 0.0,
+      "start": 21376.16,
+      "text": "你俩是一种在交流"
+    },
+    {
+      "avg_logprob": -0.129008,
+      "compression_ratio": 1.306773,
+      "end": 21379.16,
+      "no_speech_prob": 0.0,
+      "start": 21378.16,
+      "text": "在对话"
+    },
+    {
+      "avg_logprob": -0.129008,
+      "compression_ratio": 1.306773,
+      "end": 21382.16,
+      "no_speech_prob": 0.0,
+      "start": 21379.16,
+      "text": "所以说这个Miles David"
+    },
+    {
+      "avg_logprob": -0.129008,
+      "compression_ratio": 1.306773,
+      "end": 21384.16,
+      "no_speech_prob": 0.0,
+      "start": 21382.16,
+      "text": "当时采访他的很傲慢的"
+    },
+    {
+      "avg_logprob": -0.129008,
+      "compression_ratio": 1.306773,
+      "end": 21385.16,
+      "no_speech_prob": 0.0,
+      "start": 21384.16,
+      "text": "黑人的"
+    },
+    {
+      "avg_logprob": -0.129008,
+      "compression_ratio": 1.306773,
+      "end": 21387.16,
+      "no_speech_prob": 0.0,
+      "start": 21385.16,
+      "text": "新奥尔良的第二大富豪"
+    },
+    {
+      "avg_logprob": -0.129008,
+      "compression_ratio": 1.306773,
+      "end": 21388.16,
+      "no_speech_prob": 0.0,
+      "start": 21387.16,
+      "text": "黑人的孩子"
+    },
+    {
+      "avg_logprob": -0.200548,
+      "compression_ratio": 1.175439,
+      "end": 21391.16,
+      "no_speech_prob": 0.0,
+      "start": 21388.16,
+      "text": "这么一个全人类横扫世界的"
+    },
+    {
+      "avg_logprob": -0.200548,
+      "compression_ratio": 1.175439,
+      "end": 21392.16,
+      "no_speech_prob": 0.0,
+      "start": 21391.16,
+      "text": "爵士音乐大师"
+    },
+    {
+      "avg_logprob": -0.200548,
+      "compression_ratio": 1.175439,
+      "end": 21396.16,
+      "no_speech_prob": 0.0,
+      "start": 21392.16,
+      "text": "一生中的爱人都是最美丽的"
+    },
+    {
+      "avg_logprob": -0.200548,
+      "compression_ratio": 1.175439,
+      "end": 21399.16,
+      "no_speech_prob": 0.0,
+      "start": 21397.16,
+      "text": "而且他讲了最简单的话"
+    },
+    {
+      "avg_logprob": -0.200548,
+      "compression_ratio": 1.175439,
+      "end": 21401.16,
+      "no_speech_prob": 0.0,
+      "start": 21399.16,
+      "text": "有人在下面"
+    },
+    {
+      "avg_logprob": -0.200548,
+      "compression_ratio": 1.175439,
+      "end": 21403.16,
+      "no_speech_prob": 0.0,
+      "start": 21401.16,
+      "text": "每次都为他狂的时候"
+    },
+    {
+      "avg_logprob": -0.200548,
+      "compression_ratio": 1.175439,
+      "end": 21406.16,
+      "no_speech_prob": 0.0,
+      "start": 21403.16,
+      "text": "他一吹出来"
+    },
+    {
+      "avg_logprob": -0.200548,
+      "compression_ratio": 1.175439,
+      "end": 21409.16,
+      "no_speech_prob": 0.0,
+      "start": 21406.16,
+      "text": "人家记者采访他说"
+    },
+    {
+      "avg_logprob": -0.125069,
+      "compression_ratio": 1.187919,
+      "end": 21411.16,
+      "no_speech_prob": 0.0,
+      "start": 21409.16,
+      "text": "说你从来不拿谱子"
+    },
+    {
+      "avg_logprob": -0.125069,
+      "compression_ratio": 1.187919,
+      "end": 21412.16,
+      "no_speech_prob": 0.0,
+      "start": 21411.16,
+      "text": "不拿曲子"
+    },
+    {
+      "avg_logprob": -0.125069,
+      "compression_ratio": 1.187919,
+      "end": 21414.16,
+      "no_speech_prob": 0.0,
+      "start": 21412.16,
+      "text": "你怎么能吹出好音乐"
+    },
+    {
+      "avg_logprob": -0.125069,
+      "compression_ratio": 1.187919,
+      "end": 21415.16,
+      "no_speech_prob": 0.0,
+      "start": 21414.16,
+      "text": "他直接对着那个记者"
+    },
+    {
+      "avg_logprob": -0.125069,
+      "compression_ratio": 1.187919,
+      "end": 21417.16,
+      "no_speech_prob": 0.0,
+      "start": 21415.16,
+      "text": "就把他臭骂一顿"
+    },
+    {
+      "avg_logprob": -0.125069,
+      "compression_ratio": 1.187919,
+      "end": 21418.16,
+      "no_speech_prob": 0.0,
+      "start": 21417.16,
+      "text": "说你就是个婊子"
+    },
+    {
+      "avg_logprob": -0.125069,
+      "compression_ratio": 1.187919,
+      "end": 21419.16,
+      "no_speech_prob": 0.0,
+      "start": 21418.16,
+      "text": "你根本不懂什么叫音乐"
+    },
+    {
+      "avg_logprob": -0.125069,
+      "compression_ratio": 1.187919,
+      "end": 21423.16,
+      "no_speech_prob": 0.0,
+      "start": 21419.16,
+      "text": "当时就骂他"
+    },
+    {
+      "avg_logprob": -0.152997,
+      "compression_ratio": 1.460481,
+      "end": 21424.16,
+      "no_speech_prob": 0.0,
+      "start": 21423.16,
+      "text": "当时就骂他"
+    },
+    {
+      "avg_logprob": -0.152997,
+      "compression_ratio": 1.460481,
+      "end": 21425.16,
+      "no_speech_prob": 0.0,
+      "start": 21424.16,
+      "text": "当时Miles David"
+    },
+    {
+      "avg_logprob": -0.152997,
+      "compression_ratio": 1.460481,
+      "end": 21426.16,
+      "no_speech_prob": 0.0,
+      "start": 21425.16,
+      "text": "是很文明的那个人"
+    },
+    {
+      "avg_logprob": -0.152997,
+      "compression_ratio": 1.460481,
+      "end": 21428.16,
+      "no_speech_prob": 0.0,
+      "start": 21426.16,
+      "text": "你看他在巴黎待过几年"
+    },
+    {
+      "avg_logprob": -0.152997,
+      "compression_ratio": 1.460481,
+      "end": 21431.16,
+      "no_speech_prob": 0.0,
+      "start": 21428.16,
+      "text": "就是他说他在巴黎"
+    },
+    {
+      "avg_logprob": -0.152997,
+      "compression_ratio": 1.460481,
+      "end": 21432.16,
+      "no_speech_prob": 0.0,
+      "start": 21431.16,
+      "text": "他已经很小"
+    },
+    {
+      "avg_logprob": -0.152997,
+      "compression_ratio": 1.460481,
+      "end": 21435.16,
+      "no_speech_prob": 0.0,
+      "start": 21432.16,
+      "text": "在家里边一个黑人的妻子"
+    },
+    {
+      "avg_logprob": -0.152997,
+      "compression_ratio": 1.460481,
+      "end": 21436.16,
+      "no_speech_prob": 0.0,
+      "start": 21435.16,
+      "text": "生了孩子"
+    },
+    {
+      "avg_logprob": -0.152997,
+      "compression_ratio": 1.460481,
+      "end": 21437.16,
+      "no_speech_prob": 0.0,
+      "start": 21436.16,
+      "text": "但是他是父母包办的"
+    },
+    {
+      "avg_logprob": -0.152997,
+      "compression_ratio": 1.460481,
+      "end": 21439.16,
+      "no_speech_prob": 0.0,
+      "start": 21437.16,
+      "text": "他到了巴黎遇到了第二个妻子"
+    },
+    {
+      "avg_logprob": -0.152997,
+      "compression_ratio": 1.460481,
+      "end": 21443.16,
+      "no_speech_prob": 0.0,
+      "start": 21439.16,
+      "text": "是个当时的法国一个红人"
+    },
+    {
+      "avg_logprob": -0.152997,
+      "compression_ratio": 1.460481,
+      "end": 21445.16,
+      "no_speech_prob": 0.0,
+      "start": 21443.16,
+      "text": "巴黎舞的一个红爵"
+    },
+    {
+      "avg_logprob": -0.152997,
+      "compression_ratio": 1.460481,
+      "end": 21446.16,
+      "no_speech_prob": 0.0,
+      "start": 21445.16,
+      "text": "然后别人问他"
+    },
+    {
+      "avg_logprob": -0.152997,
+      "compression_ratio": 1.460481,
+      "end": 21448.16,
+      "no_speech_prob": 0.0,
+      "start": 21446.16,
+      "text": "你为什么不跟他结婚"
+    },
+    {
+      "avg_logprob": -0.152997,
+      "compression_ratio": 1.460481,
+      "end": 21449.16,
+      "no_speech_prob": 0.0,
+      "start": 21448.16,
+      "text": "他说因为我爱上了他"
+    },
+    {
+      "avg_logprob": -0.152997,
+      "compression_ratio": 1.460481,
+      "end": 21451.16,
+      "no_speech_prob": 0.0,
+      "start": 21449.16,
+      "text": "他说那你为啥不是结婚呢"
+    },
+    {
+      "avg_logprob": -0.152997,
+      "compression_ratio": 1.460481,
+      "end": 21452.16,
+      "no_speech_prob": 0.0,
+      "start": 21451.16,
+      "text": "他说因为我爱上了他"
+    },
+    {
+      "avg_logprob": -0.15964,
+      "compression_ratio": 1.338028,
+      "end": 21454.16,
+      "no_speech_prob": 0.0,
+      "start": 21452.16,
+      "text": "就这么有个性"
+    },
+    {
+      "avg_logprob": -0.15964,
+      "compression_ratio": 1.338028,
+      "end": 21455.16,
+      "no_speech_prob": 0.0,
+      "start": 21454.16,
+      "text": "我爱上他我就不会娶个家"
+    },
+    {
+      "avg_logprob": -0.15964,
+      "compression_ratio": 1.338028,
+      "end": 21457.16,
+      "no_speech_prob": 0.0,
+      "start": 21455.16,
+      "text": "我娶了家都不是爱的"
+    },
+    {
+      "avg_logprob": -0.15964,
+      "compression_ratio": 1.338028,
+      "end": 21458.16,
+      "no_speech_prob": 0.0,
+      "start": 21457.16,
+      "text": "当时就这么牛"
+    },
+    {
+      "avg_logprob": -0.15964,
+      "compression_ratio": 1.338028,
+      "end": 21459.16,
+      "no_speech_prob": 0.0,
+      "start": 21458.16,
+      "text": "就这么牛"
+    },
+    {
+      "avg_logprob": -0.15964,
+      "compression_ratio": 1.338028,
+      "end": 21461.16,
+      "no_speech_prob": 0.0,
+      "start": 21459.16,
+      "text": "所以我名字叫Miles Huo"
+    },
+    {
+      "avg_logprob": -0.15964,
+      "compression_ratio": 1.338028,
+      "end": 21462.16,
+      "no_speech_prob": 0.0,
+      "start": 21461.16,
+      "text": "就Miles Huo"
+    },
+    {
+      "avg_logprob": -0.15964,
+      "compression_ratio": 1.338028,
+      "end": 21465.16,
+      "no_speech_prob": 0.0,
+      "start": 21462.16,
+      "text": "我一听觉神音乐我就醉了"
+    },
+    {
+      "avg_logprob": -0.15964,
+      "compression_ratio": 1.338028,
+      "end": 21466.16,
+      "no_speech_prob": 0.0,
+      "start": 21465.16,
+      "text": "我就醉了"
+    },
+    {
+      "avg_logprob": -0.15964,
+      "compression_ratio": 1.338028,
+      "end": 21468.16,
+      "no_speech_prob": 0.0,
+      "start": 21466.16,
+      "text": "他那个吹出来的感觉一直"
+    },
+    {
+      "avg_logprob": -0.15964,
+      "compression_ratio": 1.338028,
+      "end": 21471.16,
+      "no_speech_prob": 0.0,
+      "start": 21468.16,
+      "text": "他从过去的永远的绅士风度"
+    },
+    {
+      "avg_logprob": -0.15964,
+      "compression_ratio": 1.338028,
+      "end": 21473.16,
+      "no_speech_prob": 0.0,
+      "start": 21471.16,
+      "text": "到最后适合Rock风"
+    },
+    {
+      "avg_logprob": -0.15964,
+      "compression_ratio": 1.338028,
+      "end": 21475.16,
+      "no_speech_prob": 0.0,
+      "start": 21473.16,
+      "text": "Pup风 嘻哈风"
+    },
+    {
+      "avg_logprob": -0.15964,
+      "compression_ratio": 1.338028,
+      "end": 21478.16,
+      "no_speech_prob": 0.0,
+      "start": 21475.16,
+      "text": "然后穿那些红红绿绿的衣装"
+    },
+    {
+      "avg_logprob": -0.15964,
+      "compression_ratio": 1.338028,
+      "end": 21480.16,
+      "no_speech_prob": 0.0,
+      "start": 21478.16,
+      "text": "到最后几次出马"
+    },
+    {
+      "avg_logprob": -0.15964,
+      "compression_ratio": 1.338028,
+      "end": 21481.16,
+      "no_speech_prob": 0.0,
+      "start": 21480.16,
+      "text": "他的一生就是川岐"
+    },
+    {
+      "avg_logprob": -0.345521,
+      "compression_ratio": 1.109589,
+      "end": 21482.16,
+      "no_speech_prob": 0.0,
+      "start": 21481.16,
+      "text": "他就是川岐"
+    },
+    {
+      "avg_logprob": -0.345521,
+      "compression_ratio": 1.109589,
+      "end": 21483.16,
+      "no_speech_prob": 0.0,
+      "start": 21482.16,
+      "text": "他就在整个我这一块"
+    },
+    {
+      "avg_logprob": -0.345521,
+      "compression_ratio": 1.109589,
+      "end": 21484.16,
+      "no_speech_prob": 0.0,
+      "start": 21483.16,
+      "text": "就在整个我这一块"
+    },
+    {
+      "avg_logprob": -0.345521,
+      "compression_ratio": 1.109589,
+      "end": 21485.16,
+      "no_speech_prob": 0.0,
+      "start": 21484.16,
+      "text": "起来的"
+    },
+    {
+      "avg_logprob": -0.345521,
+      "compression_ratio": 1.109589,
+      "end": 21486.16,
+      "no_speech_prob": 0.0,
+      "start": 21485.16,
+      "text": "所以Reka"
+    },
+    {
+      "avg_logprob": -0.345521,
+      "compression_ratio": 1.109589,
+      "end": 21487.16,
+      "no_speech_prob": 0.0,
+      "start": 21486.16,
+      "text": "你一定要记住"
+    },
+    {
+      "avg_logprob": -0.345521,
+      "compression_ratio": 1.109589,
+      "end": 21490.16,
+      "no_speech_prob": 0.0,
+      "start": 21487.16,
+      "text": "音乐不是表演给别人的"
+    },
+    {
+      "avg_logprob": -0.345521,
+      "compression_ratio": 1.109589,
+      "end": 21493.16,
+      "no_speech_prob": 0.0,
+      "start": 21492.16,
+      "text": "Miles David说一话"
+    },
+    {
+      "avg_logprob": -0.345521,
+      "compression_ratio": 1.109589,
+      "end": 21494.16,
+      "no_speech_prob": 0.0,
+      "start": 21493.16,
+      "text": "我音乐"
+    },
+    {
+      "avg_logprob": -0.147141,
+      "compression_ratio": 1.462687,
+      "end": 21496.16,
+      "no_speech_prob": 0.0,
+      "start": 21494.16,
+      "text": "我是和懂我的人在交流"
+    },
+    {
+      "avg_logprob": -0.147141,
+      "compression_ratio": 1.462687,
+      "end": 21499.16,
+      "no_speech_prob": 0.0,
+      "start": 21496.16,
+      "text": "我在和我的灵魂在交流"
+    },
+    {
+      "avg_logprob": -0.147141,
+      "compression_ratio": 1.462687,
+      "end": 21501.16,
+      "no_speech_prob": 0.0,
+      "start": 21499.16,
+      "text": "和我的上帝在交流"
+    },
+    {
+      "avg_logprob": -0.147141,
+      "compression_ratio": 1.462687,
+      "end": 21504.16,
+      "no_speech_prob": 0.0,
+      "start": 21501.16,
+      "text": "我管你们这些家伙懂不懂不懂"
+    },
+    {
+      "avg_logprob": -0.147141,
+      "compression_ratio": 1.462687,
+      "end": 21507.16,
+      "no_speech_prob": 0.0,
+      "start": 21504.16,
+      "text": "骂得很难就滚出去了"
+    },
+    {
+      "avg_logprob": -0.147141,
+      "compression_ratio": 1.462687,
+      "end": 21511.16,
+      "no_speech_prob": 0.0,
+      "start": 21507.16,
+      "text": "当一个把音乐把歌曲当成表演的时候"
+    },
+    {
+      "avg_logprob": -0.147141,
+      "compression_ratio": 1.462687,
+      "end": 21513.16,
+      "no_speech_prob": 0.0,
+      "start": 21511.16,
+      "text": "你已经全都输了"
+    },
+    {
+      "avg_logprob": -0.147141,
+      "compression_ratio": 1.462687,
+      "end": 21516.16,
+      "no_speech_prob": 0.0,
+      "start": 21513.16,
+      "text": "当你在乎别人的批评和对你的评论的时候"
+    },
+    {
+      "avg_logprob": -0.147141,
+      "compression_ratio": 1.462687,
+      "end": 21517.16,
+      "no_speech_prob": 0.0,
+      "start": 21516.16,
+      "text": "你已经全都输了"
+    },
+    {
+      "avg_logprob": -0.155406,
+      "compression_ratio": 1.149351,
+      "end": 21520.16,
+      "no_speech_prob": 0.0,
+      "start": 21517.16,
+      "text": "今天的两个吞死就那种自信劲就来了"
+    },
+    {
+      "avg_logprob": -0.155406,
+      "compression_ratio": 1.149351,
+      "end": 21522.16,
+      "no_speech_prob": 0.0,
+      "start": 21520.16,
+      "text": "就你俩在对话"
+    },
+    {
+      "avg_logprob": -0.155406,
+      "compression_ratio": 1.149351,
+      "end": 21526.16,
+      "no_speech_prob": 0.0,
+      "start": 21524.16,
+      "text": "好像我们说过专业训练"
+    },
+    {
+      "avg_logprob": -0.155406,
+      "compression_ratio": 1.149351,
+      "end": 21529.16,
+      "no_speech_prob": 0.0,
+      "start": 21526.16,
+      "text": "但是我对我唱的歌我还是很喜欢的"
+    },
+    {
+      "avg_logprob": -0.155406,
+      "compression_ratio": 1.149351,
+      "end": 21531.16,
+      "no_speech_prob": 0.0,
+      "start": 21529.16,
+      "text": "每个歌我都很喜欢"
+    },
+    {
+      "avg_logprob": -0.155406,
+      "compression_ratio": 1.149351,
+      "end": 21532.16,
+      "no_speech_prob": 0.0,
+      "start": 21531.16,
+      "text": "因爲什麽"
+    },
+    {
+      "avg_logprob": -0.162996,
+      "compression_ratio": 1.440171,
+      "end": 21534.16,
+      "no_speech_prob": 0.0,
+      "start": 21532.16,
+      "text": "每句话我唱的这是我唱的"
+    },
+    {
+      "avg_logprob": -0.162996,
+      "compression_ratio": 1.440171,
+      "end": 21536.16,
+      "no_speech_prob": 0.0,
+      "start": 21534.16,
+      "text": "我就是坚持我自己唱的"
+    },
+    {
+      "avg_logprob": -0.162996,
+      "compression_ratio": 1.440171,
+      "end": 21538.16,
+      "no_speech_prob": 0.0,
+      "start": 21537.16,
+      "text": "不能篡改"
+    },
+    {
+      "avg_logprob": -0.162996,
+      "compression_ratio": 1.440171,
+      "end": 21539.16,
+      "no_speech_prob": 0.0,
+      "start": 21538.16,
+      "text": "这就是我"
+    },
+    {
+      "avg_logprob": -0.162996,
+      "compression_ratio": 1.440171,
+      "end": 21541.16,
+      "no_speech_prob": 0.0,
+      "start": 21540.16,
+      "text": "是吧"
+    },
+    {
+      "avg_logprob": -0.162996,
+      "compression_ratio": 1.440171,
+      "end": 21542.16,
+      "no_speech_prob": 0.0,
+      "start": 21541.16,
+      "text": "每句话"
+    },
+    {
+      "avg_logprob": -0.162996,
+      "compression_ratio": 1.440171,
+      "end": 21547.16,
+      "no_speech_prob": 0.0,
+      "start": 21544.16,
+      "text": "雖然有人听起来说"
+    },
+    {
+      "avg_logprob": -0.162996,
+      "compression_ratio": 1.440171,
+      "end": 21548.16,
+      "no_speech_prob": 0.0,
+      "start": 21547.16,
+      "text": "啊 怎麽样"
+    },
+    {
+      "avg_logprob": -0.162996,
+      "compression_ratio": 1.440171,
+      "end": 21549.16,
+      "no_speech_prob": 0.0,
+      "start": 21548.16,
+      "text": "我管你那干嘛"
+    },
+    {
+      "avg_logprob": -0.162996,
+      "compression_ratio": 1.440171,
+      "end": 21550.16,
+      "no_speech_prob": 0.0,
+      "start": 21549.16,
+      "text": "我又不要你钱"
+    },
+    {
+      "avg_logprob": -0.162996,
+      "compression_ratio": 1.440171,
+      "end": 21551.16,
+      "no_speech_prob": 0.0,
+      "start": 21550.16,
+      "text": "不要你银子的"
+    },
+    {
+      "avg_logprob": -0.162996,
+      "compression_ratio": 1.440171,
+      "end": 21552.16,
+      "no_speech_prob": 0.0,
+      "start": 21551.16,
+      "text": "唱歌就让自己开心就好了"
+    },
+    {
+      "avg_logprob": -0.162996,
+      "compression_ratio": 1.440171,
+      "end": 21553.16,
+      "no_speech_prob": 0.0,
+      "start": 21552.16,
+      "text": "我很开心"
+    },
+    {
+      "avg_logprob": -0.162996,
+      "compression_ratio": 1.440171,
+      "end": 21555.16,
+      "no_speech_prob": 0.0,
+      "start": 21553.16,
+      "text": "我每天就听我自己的歌"
+    },
+    {
+      "avg_logprob": -0.162996,
+      "compression_ratio": 1.440171,
+      "end": 21558.16,
+      "no_speech_prob": 0.0,
+      "start": 21556.16,
+      "text": "那明天我可能听你们几个歌"
+    },
+    {
+      "avg_logprob": -0.162996,
+      "compression_ratio": 1.440171,
+      "end": 21560.16,
+      "no_speech_prob": 0.0,
+      "start": 21558.16,
+      "text": "希望你们继续唱好"
+    },
+    {
+      "avg_logprob": -0.276862,
+      "compression_ratio": 1.144928,
+      "end": 21564.16,
+      "no_speech_prob": 0.0,
+      "start": 21562.16,
+      "text": "下个开始"
+    },
+    {
+      "avg_logprob": -0.276862,
+      "compression_ratio": 1.144928,
+      "end": 21566.16,
+      "no_speech_prob": 0.0,
+      "start": 21564.16,
+      "text": "太幸福了"
+    },
+    {
+      "avg_logprob": -0.276862,
+      "compression_ratio": 1.144928,
+      "end": 21567.16,
+      "no_speech_prob": 0.0,
+      "start": 21566.16,
+      "text": "谢谢"
+    },
+    {
+      "avg_logprob": -0.276862,
+      "compression_ratio": 1.144928,
+      "end": 21568.16,
+      "no_speech_prob": 0.0,
+      "start": 21567.16,
+      "text": "谢谢"
+    },
+    {
+      "avg_logprob": -0.276862,
+      "compression_ratio": 1.144928,
+      "end": 21570.16,
+      "no_speech_prob": 0.0,
+      "start": 21568.16,
+      "text": "谢谢"
+    },
+    {
+      "avg_logprob": -0.276862,
+      "compression_ratio": 1.144928,
+      "end": 21571.16,
+      "no_speech_prob": 0.0,
+      "start": 21570.16,
+      "text": "谢谢"
+    },
+    {
+      "avg_logprob": -0.276862,
+      "compression_ratio": 1.144928,
+      "end": 21575.16,
+      "no_speech_prob": 0.0,
+      "start": 21574.16,
+      "text": "谢谢郭先生"
+    },
+    {
+      "avg_logprob": -0.276862,
+      "compression_ratio": 1.144928,
+      "end": 21576.16,
+      "no_speech_prob": 0.0,
+      "start": 21575.16,
+      "text": "那个唱歌"
+    },
+    {
+      "avg_logprob": -0.276862,
+      "compression_ratio": 1.144928,
+      "end": 21577.16,
+      "no_speech_prob": 0.0,
+      "start": 21576.16,
+      "text": "确实是要从内"
+    },
+    {
+      "avg_logprob": -0.276862,
+      "compression_ratio": 1.144928,
+      "end": 21580.16,
+      "no_speech_prob": 0.0,
+      "start": 21577.16,
+      "text": "往外发出来的一种内心的声音"
+    },
+    {
+      "avg_logprob": -0.276862,
+      "compression_ratio": 1.144928,
+      "end": 21581.16,
+      "no_speech_prob": 0.0,
+      "start": 21580.16,
+      "text": "好"
+    },
+    {
+      "avg_logprob": -0.276862,
+      "compression_ratio": 1.144928,
+      "end": 21582.16,
+      "no_speech_prob": 0.0,
+      "start": 21581.16,
+      "text": "我们"
+    },
+    {
+      "avg_logprob": -0.276862,
+      "compression_ratio": 1.144928,
+      "end": 21583.16,
+      "no_speech_prob": 0.0,
+      "start": 21582.16,
+      "text": "我们"
+    },
+    {
+      "avg_logprob": -0.276862,
+      "compression_ratio": 1.144928,
+      "end": 21584.16,
+      "no_speech_prob": 0.0,
+      "start": 21583.16,
+      "text": "Bunny"
+    },
+    {
+      "avg_logprob": -0.276862,
+      "compression_ratio": 1.144928,
+      "end": 21589.16,
+      "no_speech_prob": 0.0,
+      "start": 21588.16,
+      "text": "好"
+    },
+    {
+      "avg_logprob": -0.579546,
+      "compression_ratio": 7.637931,
+      "end": 21590.16,
+      "no_speech_prob": 0.0,
+      "start": 21589.16,
+      "text": "我唱一首"
+    },
+    {
+      "avg_logprob": -0.395253,
+      "compression_ratio": 0.813559,
+      "end": 21594.16,
+      "no_speech_prob": 0.0,
+      "start": 21590.16,
+      "text": "我唱一首王力宏的《落叶归根》"
+    },
+    {
+      "avg_logprob": -0.395253,
+      "compression_ratio": 0.813559,
+      "end": 21600.16,
+      "no_speech_prob": 0.0,
+      "start": 21599.16,
+      "text": "好的"
+    }
+  ],
+  "text": "這大哥的女兒像他媽啊你想問什麼你會看聖誕老人是真的嗎應該吧你問你爸爸你爸爸做到的事情不是真的不是真的不是真的我愛你爸爸你爸爸是個天啊OK你多少錢你多少錢在錢的錢你要有帮és有看的是一家的是一家的是一家的是一家的是一家的是一家的是一家的是一家的是一家的是一家的是一家的是一家的是一家的是一家的是一家的是一家的是一家的是一家的是一家的是一家的是一家的是一家的是一家的是一家的是一家的是一家的是一家的是一家的是一家的是一家的是一家的是一家的是一家的是一家的是一家的你想看你你想看你你想看你我喜歡我喜歡嗯看你的臉你真的像你的臉臉屁屁屁屁屁屁好我认了我认了我认了我认了我认了我认了我认了我认了我认了我认了我认了我认了我认了我认了我认了我认了我认了我认了我认了我认了我认了我认了我认了我认了我认了我认了我认了我认了我认了我认了我认了我认了我认了這樣咱們小孩來了 你兩個今天真的很辛苦我知道你們時間的問題你有沒有什麼歌在我們唱一首我們上有老下有小的那麼多人 那麼多人那跟我們唱一首吧可以啊那唱什麼等會Bernie要準備一首啊再來一首啊好的你們什麼歌跟我們唱唱啊我繼續親吻你們繼續唱Bernie看你也得想想啊來一首啊你們都唱太好了你們一唱我都不好意思了我咋能成腰滾歌星呢你們都比我厲害了真的是跟你們沒法比 天地之差哎呀這真是開始吧我看不說我看不看不看我我看不看我我看不看我我看不看我我看不看我我看不看我我看不看我我看不看我我看不看我我看不看我我看不看我我看不看我我看不看我我看不看我我看不看我我看不看我我看不看我我看不看我我看不看我我看不看我我看不看我我看不看我我看不看我我看不看我我看不看我我看不看我我看不看我我看不看我我看不看我atically我看不看我我们又唱一首自己写的歌就是叫Not Enough Words好的请开始I'm not always there to fix things for meHow am I supposed to take onThe babyMother, father, will you be there for meOh, but all these open doors are overwhelmingBecause sometimes all I need is a little familySo thank you for the things you doAll the troubles that you go throughDon't know what other way to thank youBut thank you, yeah thank youOh, can I count the endless numberCan I count the endless numberOf sacrifices you've madeThat brought me here to this dayNot enough words to give thanksWhen we grow oldAll the games we used to playWhen we let our imaginationsOvertakeAnd when we grow oldAll the dreams we used to makeWill all these precious moments fly awaySo thank you for the things you doAll the troubles that you go throughDon't know what other way to thank youBut thank you, yeah thank youOh, can I count the endless numberOf sacrifices you've madeThat brought me here to this dayNot enough words to give thanksHow will I make it to the other sideHow will I make it to the other sideTo guide meHow had I been such a foolTo see so blindlyAll the reason why I'm here todayBecause of youBecause of youBecause of youBecause of youThank you for the things you doAll the troubles that you go throughAll the troubles that you go throughDon't know what other way to thank youBut thank you, yeah thank youOh, can I count the endless numberOf sacrifices you've madeThat brought me here to this dayNot enough words to give thanksThank you for the things you doAll the troubles that you go throughAll the troubles that you go throughAll the troubles that you go throughDon't know what other way to thank youBut thank you, yeah thank youOh, can I count the endless numberOf sacrifices you've madeThat brought me here to this dayNot enough wordsNot enough words to give thanksOh, oh, you brought me here to this dayOh, oh, you brought me here to this dayYou've made it to this dayYou've made it to this dayYou've made it to this day not enough words to give thanksaticallyck you't do youaticallyatically不小心唱极了一点唱得太棒了我觉得你看Rika这个Tunes唱歌的时候他跟一年前 我今天跟你说我上次你咱们聊天采访我的时候这个我们基本上讲到有两个就是你说这个世界上的最我最喜欢谁的音乐我是希望谈到Michael JacksonMichael Jackson的音乐当中你看到他最最的他的最伟大的音乐他是来自哪里的所有的几个歌最好的时候他唱的是什么他唱的全部都是整个的跟他没有关系的他要表达的都是对种族的歧视的一种恼怒对自由的向往而不是没有什么是恩恩爱爱的是吗像泰克尼克号这种恩恩爱爱的首歌火了以后是那个电影他弄火的是那个调调火的他的歌词没有火所以说音乐的魅力在什么就刚才你俩写的歌就你俩有默契你看看美国从嘻哈摇滚乐最牛的几个大人物吉斯坦 Miles Daivy《绝神乐》你们去看一看去包括在休斯顿那几个大咖吉尔斯还有捷克马里德都是在佛洛尼亚的还有几个什么什么什么布克林的那几个那些嘻哈的还有几个很早都过世了几乎他们从来没有没有歌谱的他们在现场表现没有歌谱的Miles Daivy的歌几乎90%是没有歌谱的就是到了现场大家说一个就是吹就是感觉就来了他在这个57届有一个叫Jazz Music Club这就是蓝调嘻哈RockPop这些总结起来的原因黑人音乐把整个所有的过去的唱的宗教的歌宗教的歌还有传统的歌剧和送葬的歌死亡的歌跳舞的歌融合到一起在过去叫地下歌曲在新奥尔良到了美国的西部洛杉矶然后到了旧金山然后到了这个这个芝加哥然后到纽约布克林这么起来的所有的音乐是你当时的心境的表达现在在回去买元代的时候贵的要死啊我收藏了很多很多他们的元代所以你今天听到你唱歌的时候Twins你唱你自己写的歌的时候你会唱得更好更自然你俩已经完全不同了跟一年前的两个男孩完全不是一个级别的了就你嗓子已经成熟了你的体系你的自信已经来了你已经不是在表演了你俩是一种在交流在对话所以说这个Miles David当时采访他的很傲慢的黑人的新奥尔良的第二大富豪黑人的孩子这么一个全人类横扫世界的爵士音乐大师一生中的爱人都是最美丽的而且他讲了最简单的话有人在下面每次都为他狂的时候他一吹出来人家记者采访他说说你从来不拿谱子不拿曲子你怎么能吹出好音乐他直接对着那个记者就把他臭骂一顿说你就是个婊子你根本不懂什么叫音乐当时就骂他当时就骂他当时Miles David是很文明的那个人你看他在巴黎待过几年就是他说他在巴黎他已经很小在家里边一个黑人的妻子生了孩子但是他是父母包办的他到了巴黎遇到了第二个妻子是个当时的法国一个红人巴黎舞的一个红爵然后别人问他你为什么不跟他结婚他说因为我爱上了他他说那你为啥不是结婚呢他说因为我爱上了他就这么有个性我爱上他我就不会娶个家我娶了家都不是爱的当时就这么牛就这么牛所以我名字叫Miles Huo就Miles Huo我一听觉神音乐我就醉了我就醉了他那个吹出来的感觉一直他从过去的永远的绅士风度到最后适合Rock风Pup风 嘻哈风然后穿那些红红绿绿的衣装到最后几次出马他的一生就是川岐他就是川岐他就在整个我这一块就在整个我这一块起来的所以Reka你一定要记住音乐不是表演给别人的Miles David说一话我音乐我是和懂我的人在交流我在和我的灵魂在交流和我的上帝在交流我管你们这些家伙懂不懂不懂骂得很难就滚出去了当一个把音乐把歌曲当成表演的时候你已经全都输了当你在乎别人的批评和对你的评论的时候你已经全都输了今天的两个吞死就那种自信劲就来了就你俩在对话好像我们说过专业训练但是我对我唱的歌我还是很喜欢的每个歌我都很喜欢因爲什麽每句话我唱的这是我唱的我就是坚持我自己唱的不能篡改这就是我是吧每句话雖然有人听起来说啊 怎麽样我管你那干嘛我又不要你钱不要你银子的唱歌就让自己开心就好了我很开心我每天就听我自己的歌那明天我可能听你们几个歌希望你们继续唱好下个开始太幸福了谢谢谢谢谢谢谢谢谢谢郭先生那个唱歌确实是要从内往外发出来的一种内心的声音好我们我们Bunny好我唱一首我唱一首王力宏的《落叶归根》好的"
+}
