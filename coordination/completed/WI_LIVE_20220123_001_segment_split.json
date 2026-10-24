@@ -1,0 +1,16 @@
+{
+  "task_id": "WI_LIVE_20220123_001_segment_split",
+  "agent_id": "codex-local-asr-agent50-20261023",
+  "completed_at": "2026-10-24T22:33:06.287986+00:00",
+  "result_commit": "42423c9a8fe4ee4c219b7fe4bd7d7b38366462e2",
+  "outputs": [
+    "data/current/live_segments/asr_live_20220123_001.jsonl"
+  ],
+  "validation": "5 natural evidence-reviewed segments from 70 machine cues: exercise/breathing intro, greeting and virus warning, finance/virus/political claims, 2022 outlook, exercise-song closing; monotonic non-overlapping timestamps; exact cue text preserved; summaries explicitly retain machine-ASR ambiguity; no fixed-count template",
+  "workflow_mode": "continuous-worker-v2",
+  "claim_protocol": "claim-protocol-v2",
+  "entry_mode": "work",
+  "continue_after_finish": true,
+  "finish_prerequisites_revalidated": true,
+  "notes": "Task completed only after re-checking the latest repository dependency contract. Under continuous-worker-v2, refresh repository state and claim the next eligible task unless a documented stop condition applies."
+}
