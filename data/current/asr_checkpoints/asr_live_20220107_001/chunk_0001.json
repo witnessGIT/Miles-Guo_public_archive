@@ -1,0 +1,72 @@
+{
+  "chunk_audio_sha256": "82d73f146d3e4f470a67d218ed6326802aaa8e6ba5433b3d4ba445210c1da46e",
+  "chunk_index": 1,
+  "completed_at": "2026-10-24T19:47:54Z",
+  "language": "zh",
+  "live_id": "LIVE_20220107_001",
+  "media_committed_to_git": false,
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "offset_sec": 900,
+  "paid_api_used": false,
+  "processing_location": "github-hosted-macos-arm64",
+  "schema_version": "cloud-asr-chunk-v1",
+  "segments": [
+    {
+      "avg_logprob": -0.368342,
+      "compression_ratio": 6.033333,
+      "end": 903.22,
+      "no_speech_prob": 0.0,
+      "start": 900.0,
+      "text": "星期干部 Però Bom тем星期 mieux"
+    },
+    {
+      "avg_logprob": -6.02582,
+      "compression_ratio": 0.908333,
+      "end": 906.66,
+      "no_speech_prob": 0.0,
+      "start": 903.22,
+      "text": "星期First而選擇更通常又又 wires而今天 jokes很好"
+    },
+    {
+      "avg_logprob": -6.02582,
+      "compression_ratio": 0.908333,
+      "end": 916.92,
+      "no_speech_prob": 0.0,
+      "start": 906.66,
+      "text": "яниозм doğru店埋page onde 來Jo від"
+    },
+    {
+      "avg_logprob": -0.068518,
+      "compression_ratio": 0.851351,
+      "end": 946.9,
+      "no_speech_prob": 0.0,
+      "start": 916.92,
+      "text": "请不吝点赞 订阅 转发 打赏支持明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.095831,
+      "compression_ratio": 0.851351,
+      "end": 976.9,
+      "no_speech_prob": 0.0,
+      "start": 946.92,
+      "text": "请不吝点赞 订阅 转发 打赏支持明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.082319,
+      "compression_ratio": 0.851351,
+      "end": 1006.9,
+      "no_speech_prob": 0.0,
+      "start": 976.92,
+      "text": "请不吝点赞 订阅 转发 打赏支持明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.071828,
+      "compression_ratio": 0.851351,
+      "end": 1036.9,
+      "no_speech_prob": 0.0,
+      "start": 1006.92,
+      "text": "请不吝点赞 订阅 转发 打赏支持明镜与点点栏目"
+    }
+  ],
+  "text": "星期干部 Però Bom тем星期 mieux星期First而選擇更通常又又 wires而今天 jokes很好яниозм doğru店埋page onde 來Jo від请不吝点赞 订阅 转发 打赏支持明镜与点点栏目请不吝点赞 订阅 转发 打赏支持明镜与点点栏目请不吝点赞 订阅 转发 打赏支持明镜与点点栏目请不吝点赞 订阅 转发 打赏支持明镜与点点栏目"
+}

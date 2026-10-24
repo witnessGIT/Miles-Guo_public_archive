@@ -1,9 +1,9 @@
 {
-  "checkpoint_retry_count": 0,
+  "checkpoint_retry_count": 1,
   "checkpoint_retry_limit": 2,
   "deferred_until_corpus_tail": false,
-  "error": "cloud ASR item exceeded 1800 seconds; retained for retry or chunked processing",
-  "generated_at": "2026-10-23T07:26:54Z",
+  "error": "cloud ASR item exceeded 3000 seconds; retained for retry or chunked processing",
+  "generated_at": "2026-10-24T19:27:53Z",
   "live_id": "LIVE_20220101_001",
   "media_committed_to_git": false,
   "paid_api_used": false,

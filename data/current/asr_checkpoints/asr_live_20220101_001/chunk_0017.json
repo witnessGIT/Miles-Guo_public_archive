@@ -1,0 +1,264 @@
+{
+  "chunk_audio_sha256": "998137a9c521ac979d40b3222d77e36c8ef7488e4b9a7fa2c2c2e381f8923a2b",
+  "chunk_index": 17,
+  "completed_at": "2026-10-24T19:07:22Z",
+  "language": "zh",
+  "live_id": "LIVE_20220101_001",
+  "media_committed_to_git": false,
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "offset_sec": 15300,
+  "paid_api_used": false,
+  "processing_location": "github-hosted-macos-arm64",
+  "schema_version": "cloud-asr-chunk-v1",
+  "segments": [
+    {
+      "avg_logprob": -0.736775,
+      "compression_ratio": 0.555556,
+      "end": 15329.98,
+      "no_speech_prob": 0.0,
+      "start": 15300.0,
+      "text": "i know you"
+    },
+    {
+      "avg_logprob": -0.566059,
+      "compression_ratio": 0.555556,
+      "end": 15359.98,
+      "no_speech_prob": 0.0,
+      "start": 15330.0,
+      "text": "i know you"
+    },
+    {
+      "avg_logprob": -0.246506,
+      "compression_ratio": 0.555556,
+      "end": 15389.98,
+      "no_speech_prob": 0.0,
+      "start": 15360.0,
+      "text": "i know you"
+    },
+    {
+      "avg_logprob": -0.370424,
+      "compression_ratio": 0.555556,
+      "end": 15419.96,
+      "no_speech_prob": 0.0,
+      "start": 15389.98,
+      "text": "i know you"
+    },
+    {
+      "avg_logprob": -0.240499,
+      "compression_ratio": 0.555556,
+      "end": 15449.94,
+      "no_speech_prob": 0.0,
+      "start": 15419.96,
+      "text": "i know you"
+    },
+    {
+      "avg_logprob": -0.16318,
+      "compression_ratio": 0.555556,
+      "end": 15479.92,
+      "no_speech_prob": 0.0,
+      "start": 15449.94,
+      "text": "i know you"
+    },
+    {
+      "avg_logprob": -0.298819,
+      "compression_ratio": 0.555556,
+      "end": 15509.9,
+      "no_speech_prob": 0.0,
+      "start": 15479.92,
+      "text": "i know you"
+    },
+    {
+      "avg_logprob": -0.254188,
+      "compression_ratio": 0.555556,
+      "end": 15539.88,
+      "no_speech_prob": 0.0,
+      "start": 15509.9,
+      "text": "i know you"
+    },
+    {
+      "avg_logprob": -0.248031,
+      "compression_ratio": 0.555556,
+      "end": 15569.86,
+      "no_speech_prob": 0.0,
+      "start": 15539.88,
+      "text": "i know you"
+    },
+    {
+      "avg_logprob": -0.374908,
+      "compression_ratio": 0.555556,
+      "end": 15599.84,
+      "no_speech_prob": 0.0,
+      "start": 15569.86,
+      "text": "i know you"
+    },
+    {
+      "avg_logprob": -0.186343,
+      "compression_ratio": 0.555556,
+      "end": 15629.82,
+      "no_speech_prob": 0.0,
+      "start": 15599.84,
+      "text": "i know you"
+    },
+    {
+      "avg_logprob": -0.295622,
+      "compression_ratio": 0.555556,
+      "end": 15659.8,
+      "no_speech_prob": 0.0,
+      "start": 15629.82,
+      "text": "i know you"
+    },
+    {
+      "avg_logprob": -0.105811,
+      "compression_ratio": 0.555556,
+      "end": 15689.78,
+      "no_speech_prob": 0.0,
+      "start": 15659.8,
+      "text": "i know you"
+    },
+    {
+      "avg_logprob": -0.125013,
+      "compression_ratio": 0.555556,
+      "end": 15719.76,
+      "no_speech_prob": 0.0,
+      "start": 15689.78,
+      "text": "i know you"
+    },
+    {
+      "avg_logprob": -0.103029,
+      "compression_ratio": 0.555556,
+      "end": 15749.74,
+      "no_speech_prob": 0.0,
+      "start": 15719.76,
+      "text": "i know you"
+    },
+    {
+      "avg_logprob": -0.117153,
+      "compression_ratio": 0.555556,
+      "end": 15779.72,
+      "no_speech_prob": 0.0,
+      "start": 15749.74,
+      "text": "i know you"
+    },
+    {
+      "avg_logprob": -0.128228,
+      "compression_ratio": 0.555556,
+      "end": 15809.7,
+      "no_speech_prob": 0.0,
+      "start": 15779.72,
+      "text": "i know you"
+    },
+    {
+      "avg_logprob": -0.25733,
+      "compression_ratio": 0.555556,
+      "end": 15839.68,
+      "no_speech_prob": 0.0,
+      "start": 15809.7,
+      "text": "i know you"
+    },
+    {
+      "avg_logprob": -0.133528,
+      "compression_ratio": 0.555556,
+      "end": 15869.68,
+      "no_speech_prob": 0.0,
+      "start": 15839.7,
+      "text": "i know you"
+    },
+    {
+      "avg_logprob": -0.174308,
+      "compression_ratio": 0.555556,
+      "end": 15899.66,
+      "no_speech_prob": 0.0,
+      "start": 15869.68,
+      "text": "i know you"
+    },
+    {
+      "avg_logprob": -0.102085,
+      "compression_ratio": 0.555556,
+      "end": 15929.64,
+      "no_speech_prob": 0.0,
+      "start": 15899.66,
+      "text": "i know you"
+    },
+    {
+      "avg_logprob": -0.092977,
+      "compression_ratio": 0.555556,
+      "end": 15959.62,
+      "no_speech_prob": 0.0,
+      "start": 15929.64,
+      "text": "i know you"
+    },
+    {
+      "avg_logprob": -0.075929,
+      "compression_ratio": 0.555556,
+      "end": 15989.6,
+      "no_speech_prob": 0.0,
+      "start": 15959.62,
+      "text": "i know you"
+    },
+    {
+      "avg_logprob": -0.114859,
+      "compression_ratio": 0.555556,
+      "end": 16019.58,
+      "no_speech_prob": 0.0,
+      "start": 15989.6,
+      "text": "i know you"
+    },
+    {
+      "avg_logprob": -0.072812,
+      "compression_ratio": 0.555556,
+      "end": 16049.56,
+      "no_speech_prob": 0.0,
+      "start": 16019.58,
+      "text": "i know you"
+    },
+    {
+      "avg_logprob": -0.058336,
+      "compression_ratio": 0.555556,
+      "end": 16079.54,
+      "no_speech_prob": 0.0,
+      "start": 16049.56,
+      "text": "i know you"
+    },
+    {
+      "avg_logprob": -0.175134,
+      "compression_ratio": 0.555556,
+      "end": 16109.52,
+      "no_speech_prob": 0.0,
+      "start": 16079.54,
+      "text": "i know you"
+    },
+    {
+      "avg_logprob": -0.15046,
+      "compression_ratio": 0.555556,
+      "end": 16139.52,
+      "no_speech_prob": 0.0,
+      "start": 16109.54,
+      "text": "i know you"
+    },
+    {
+      "avg_logprob": -0.062201,
+      "compression_ratio": 0.555556,
+      "end": 16169.52,
+      "no_speech_prob": 0.0,
+      "start": 16139.54,
+      "text": "i know you"
+    },
+    {
+      "avg_logprob": -0.062013,
+      "compression_ratio": 0.555556,
+      "end": 16199.5,
+      "no_speech_prob": 0.0,
+      "start": 16169.52,
+      "text": "i know you"
+    },
+    {
+      "avg_logprob": -0.390019,
+      "compression_ratio": 0.555556,
+      "end": 16229.48,
+      "no_speech_prob": 0.0,
+      "start": 16199.5,
+      "text": "i know you"
+    }
+  ],
+  "text": "i know youi know youi know youi know youi know youi know youi know youi know youi know youi know youi know youi know youi know youi know youi know youi know youi know youi know youi know youi know youi know youi know youi know youi know youi know youi know youi know youi know youi know youi know youi know you"
+}
