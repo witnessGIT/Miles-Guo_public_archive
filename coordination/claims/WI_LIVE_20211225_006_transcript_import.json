@@ -3,7 +3,7 @@
   "agent_id": "codex-local-asr-agent50-20261023",
   "claimed_at": "2026-10-24T16:26:00.727696+00:00",
   "base_commit": "420fa2ee92e1015ae08c9e4b7b3f3a6d806a22e0",
-  "status": "in_progress",
+  "status": "released",
   "workflow_mode": "continuous-worker-v2",
   "claim_protocol": "claim-protocol-v2",
   "entry_mode": "work",
@@ -22,5 +22,7 @@
   ],
   "scope": "Import source transcript or ASR text without overwriting original text.",
   "reclaimed_expired_claim": true,
-  "static_claim_lease_hours": 24
+  "static_claim_lease_hours": 24,
+  "released_at": "2026-10-24T16:27:45.381910+00:00",
+  "release_reason": "manual audit: mixed-language micro-token hallucinations, 44 filtered hallucinations, 14 high-compression segments and non-monotonic cue ordering; two PCM-SHA resumes reproduced; deferred to corpus_tail"
 }

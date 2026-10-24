@@ -1,0 +1,46 @@
+{
+  "schema_version": "cloud-asr-attempt-v1",
+  "live_id": "LIVE_20211225_006",
+  "status": "cloud_asr_quality_failed_deferred",
+  "generated_at": "2026-10-24T16:28:15Z",
+  "processing_location": "codex-local-apple-silicon-agent50",
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "paid_api_used": false,
+  "media_committed_to_git": false,
+  "checkpoint_resume_attempt_count": 2,
+  "checkpoint_pcm_sha256": "db2e05c87e5be2a73ea71d08d66f3993ee0d47c6c34c7c5ae2afb15540426c33",
+  "deferred_until_corpus_tail": true,
+  "retry_queue": "corpus_tail",
+  "deferred_reason": "manual quality audit rejected a long run of mixed-language micro-token hallucinations, high-compression fragments and non-monotonic cue ordering; two SHA-256-validated checkpoint resumes reproduced the same result",
+  "error": "machine transcript did not pass conservative post-inference dictation, timestamp and hallucination review",
+  "quality": {
+    "schema_version": "cloud-asr-quality-v1",
+    "gate_status": "deferred_review",
+    "quality_score": 0.0,
+    "reasons": [
+      "excessive_filtered_hallucination_segments",
+      "excessive_high_compression_segments",
+      "continuous_mixed_language_microtoken_hallucination",
+      "non_monotonic_cue_order"
+    ],
+    "warnings": [],
+    "metrics": {
+      "audio_duration_sec": 173.361,
+      "segment_count": 73,
+      "text_character_count": 429,
+      "characters_per_minute": 148.476,
+      "invalid_timestamp_count": 0,
+      "manual_non_monotonic_cue_count": 1,
+      "repeated_text_ratio": 0.076087,
+      "end_coverage_ratio": 0.997917,
+      "confidence_segment_count": 73,
+      "low_confidence_segment_count": 0,
+      "high_no_speech_segment_count": 0,
+      "high_compression_segment_count": 14,
+      "filtered_hallucination_segment_count": 44
+    }
+  },
+  "source_id": "SRC_C2_GETTR_1C6D5B76CB60",
+  "media_asset_id": "MA_C2_GETTR_1C6D5B76CB60",
+  "source_url": "https://gettr.com/post/pkm5t44c95"
+}
