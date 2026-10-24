@@ -1,0 +1,16 @@
+{
+  "task_id": "WI_LIVE_20221127_002_segment_split",
+  "agent_id": "codex-local-asr-agent50-20261023",
+  "completed_at": "2026-10-24T12:19:06.926343+00:00",
+  "result_commit": "e8bda41d740257e3fa659e627a5bfbe06687c9ef",
+  "outputs": [
+    "data/current/live_segments/asr_live_20221127_002.jsonl"
+  ],
+  "validation": "Natural segmentation grouped 45 quality-reviewed cues at semantic and pause boundaries into citable machine segments.",
+  "workflow_mode": "continuous-worker-v2",
+  "claim_protocol": "claim-protocol-v2",
+  "entry_mode": "work",
+  "continue_after_finish": true,
+  "finish_prerequisites_revalidated": true,
+  "notes": "Task completed only after re-checking the latest repository dependency contract. Under continuous-worker-v2, refresh repository state and claim the next eligible task unless a documented stop condition applies."
+}
