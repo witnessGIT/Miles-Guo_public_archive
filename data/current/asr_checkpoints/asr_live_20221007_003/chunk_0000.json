@@ -1,0 +1,64 @@
+{
+  "chunk_audio_sha256": "74b630b4f27638bfc01505c5773c24e1e9902fd305db541051c21f8ec0d7ce63",
+  "chunk_index": 0,
+  "completed_at": "2026-10-23T20:04:30Z",
+  "language": "zh",
+  "live_id": "LIVE_20221007_003",
+  "media_committed_to_git": false,
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "offset_sec": 0,
+  "paid_api_used": false,
+  "processing_location": "codex-local-apple-silicon-agent50",
+  "schema_version": "cloud-asr-chunk-v1",
+  "segments": [
+    {
+      "avg_logprob": -6.290503,
+      "compression_ratio": 0.466667,
+      "end": 8.76,
+      "no_speech_prob": 0.0,
+      "start": 0.64,
+      "text": "Grey"
+    },
+    {
+      "avg_logprob": -6.290503,
+      "compression_ratio": 0.466667,
+      "end": 14.48,
+      "no_speech_prob": 0.0,
+      "start": 10.24,
+      "text": "歌"
+    },
+    {
+      "avg_logprob": -5.936248,
+      "compression_ratio": 0.590909,
+      "end": 24.8,
+      "no_speech_prob": 0.0,
+      "start": 14.48,
+      "text": "性格良ії"
+    },
+    {
+      "avg_logprob": -0.653651,
+      "compression_ratio": 0.738095,
+      "end": 54.78,
+      "no_speech_prob": 0.0,
+      "start": 24.8,
+      "text": "中文字幕志愿者 李宗盛"
+    },
+    {
+      "avg_logprob": -0.06078,
+      "compression_ratio": 0.738095,
+      "end": 84.78,
+      "no_speech_prob": 0.0,
+      "start": 54.8,
+      "text": "中文字幕志愿者 李宗盛"
+    },
+    {
+      "avg_logprob": -0.179271,
+      "compression_ratio": 0.738095,
+      "end": 114.78,
+      "no_speech_prob": 0.0,
+      "start": 84.8,
+      "text": "中文字幕志愿者 李宗盛"
+    }
+  ],
+  "text": "Grey歌性格良ії中文字幕志愿者 李宗盛中文字幕志愿者 李宗盛中文字幕志愿者 李宗盛"
+}

@@ -3,7 +3,7 @@
   "agent_id": "codex-local-asr-agent50-20261023",
   "claimed_at": "2026-10-23T09:30:52.249961+00:00",
   "base_commit": "12e77e3a7be49a7e3d1f182800326c91b78e404a",
-  "status": "in_progress",
+  "status": "released",
   "workflow_mode": "continuous-worker-v2",
   "claim_protocol": "claim-protocol-v2",
   "entry_mode": "work",
@@ -22,5 +22,7 @@
   ],
   "scope": "Import source transcript or ASR text without overwriting original text.",
   "reclaimed_expired_claim": false,
-  "static_claim_lease_hours": 24
+  "static_claim_lease_hours": 24,
+  "released_at": "2026-10-24T12:04:48.748420+00:00",
+  "release_reason": "HLS stalled with retryable TLS/corrupt-segment errors; same-source MP4 recovered, but manual audit rejected repeated stock-credit hallucinations and ultra-low-confidence multilingual fragments. Deferred to corpus_tail, not missing media."
 }

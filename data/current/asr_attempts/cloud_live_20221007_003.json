@@ -1,0 +1,44 @@
+{
+  "schema_version": "cloud-asr-attempt-v1",
+  "live_id": "LIVE_20221007_003",
+  "status": "cloud_asr_quality_failed_deferred",
+  "generated_at": "2026-10-24T03:11:43Z",
+  "processing_location": "codex-local-apple-silicon-agent50",
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "paid_api_used": false,
+  "media_committed_to_git": false,
+  "deferred_until_corpus_tail": true,
+  "retry_queue": "corpus_tail",
+  "deferred_reason": "manual quality audit rejected three repeated 30-second stock-credit hallucinations plus ultra-low-confidence multilingual fragments despite automatic gate pass",
+  "error": "machine transcript did not pass conservative post-inference hallucination review",
+  "quality": {
+    "schema_version": "cloud-asr-quality-v1",
+    "gate_status": "deferred_review",
+    "quality_score": 0.0,
+    "reasons": [
+      "repeated_long_window_stock_credit_hallucination",
+      "ultra_low_confidence_multilingual_fragments"
+    ],
+    "warnings": [
+      "initial HLS extraction stalled for 31422.57 seconds after TLS and corrupt-segment errors; same-source direct MP4 recovered successfully and the source failure was not counted as a checkpoint-resume failure"
+    ],
+    "metrics": {
+      "audio_duration_sec": 105.649,
+      "segment_count": 6,
+      "text_character_count": 40,
+      "characters_per_minute": 22.717,
+      "invalid_timestamp_count": 0,
+      "repeated_text_ratio": 0.769231,
+      "end_coverage_ratio": 1.0,
+      "confidence_segment_count": 6,
+      "low_confidence_segment_count": 3,
+      "high_no_speech_segment_count": 0,
+      "high_compression_segment_count": 0,
+      "filtered_hallucination_segment_count": 0,
+      "manual_rejected_segment_count": 6
+    }
+  },
+  "source_id": "SRC_GETTR_P1TH1ZB9FF0",
+  "media_asset_id": "MA_GETTR_P1TH1ZB9FF0",
+  "source_url": "https://gettr.com/post/p1th1zb9ff0"
+}
