@@ -1,0 +1,16 @@
+{
+  "task_id": "WI_LIVE_20220413_002_segment_split",
+  "agent_id": "codex-local-asr-agent50-20261023",
+  "completed_at": "2026-10-24T20:27:39.948168+00:00",
+  "result_commit": "02c377e1ff740a7db329aebec587a0efc3f35a0c",
+  "outputs": [
+    "data/current/live_segments/asr_live_20220413_002.jsonl"
+  ],
+  "validation": "3 natural ASR passages from 101 quality-gated cues using transcript, topic/question and pause boundaries; spans 0.000-183.300s; machine-generated and not human-corrected",
+  "workflow_mode": "continuous-worker-v2",
+  "claim_protocol": "claim-protocol-v2",
+  "entry_mode": "work",
+  "continue_after_finish": true,
+  "finish_prerequisites_revalidated": true,
+  "notes": "Task completed only after re-checking the latest repository dependency contract. Under continuous-worker-v2, refresh repository state and claim the next eligible task unless a documented stop condition applies."
+}
