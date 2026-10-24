@@ -1,9 +1,9 @@
 {
   "task_id": "WI_LIVE_20220122_003_transcript_import",
-  "agent_id": "github-actions-cloud-asr-39357616282",
-  "claimed_at": "2026-10-20T02:18:45.415798+00:00",
-  "base_commit": "e37192f1ecbb4e56c22b5d3fa320e4ee3a414084",
-  "status": "released",
+  "agent_id": "github-actions-cloud-asr-40141980356",
+  "claimed_at": "2026-10-24T23:17:17.581593+00:00",
+  "base_commit": "e4f3bf3280835f5776f83c8a04fc4f5d065e78a0",
+  "status": "in_progress",
   "workflow_mode": "continuous-worker-v2",
   "claim_protocol": "claim-protocol-v2",
   "entry_mode": "work",
@@ -21,8 +21,6 @@
     "WI_LIVE_20220122_003_metadata_fill"
   ],
   "scope": "Import source transcript or ASR text without overwriting original text.",
-  "reclaimed_expired_claim": false,
-  "static_claim_lease_hours": 24,
-  "released_at": "2026-10-20T11:11:23.136621+00:00",
-  "release_reason": "GitHub Actions ASR run 39357616282 exceeded the hosted job time limit before this item started; retryable cancellation, not missing media"
+  "reclaimed_expired_claim": true,
+  "static_claim_lease_hours": 24
 }
