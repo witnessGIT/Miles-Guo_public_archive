@@ -1,0 +1,18 @@
+{
+  "task_id": "WI_LIVE_20211224_003_key_points_topics",
+  "agent_id": "codex-local-asr-agent50-20261023",
+  "completed_at": "2026-10-24T12:10:43.899536+00:00",
+  "result_commit": "737a4f09133ceeda65c1ffb7e73f513af8239fb7",
+  "outputs": [
+    "data/current/live_segments/asr_live_20211224_003.jsonl",
+    "data/current/segment_key_points/machine_live_20211224_003.jsonl",
+    "data/current/segment_topics/machine_live_20211224_003.jsonl"
+  ],
+  "validation": "Six variable, evidence-grounded key points and two controlled topics passed exact quote-offset verification and manual topic review; incorrect model law topic was corrected to media/public opinion and project/action.",
+  "workflow_mode": "continuous-worker-v2",
+  "claim_protocol": "claim-protocol-v2",
+  "entry_mode": "work",
+  "continue_after_finish": true,
+  "finish_prerequisites_revalidated": true,
+  "notes": "Task completed only after re-checking the latest repository dependency contract. Under continuous-worker-v2, refresh repository state and claim the next eligible task unless a documented stop condition applies."
+}
