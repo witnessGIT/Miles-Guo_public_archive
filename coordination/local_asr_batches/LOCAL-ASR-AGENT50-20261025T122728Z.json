@@ -64,7 +64,7 @@
     "LIVE_20220318_002",
     "LIVE_20220913_002"
   ],
-  "next_live_id": "LIVE_20230106_001",
+  "next_live_id": "LIVE_20220411_002",
   "completed_live_ids": [
     "LIVE_20220902_001",
     "LIVE_20220406_001",
@@ -91,7 +91,8 @@
     "LIVE_20221111_001",
     "LIVE_20230211_001",
     "LIVE_20220307_001",
-    "LIVE_20230306_001"
+    "LIVE_20230306_001",
+    "LIVE_20230106_001"
   ],
   "failed_or_deferred_live_ids": [],
   "notes": "Fixed logical batch for sequential local MLX-Whisper transcription, cue splitting, natural segmentation, and evidence-grounded key points. Revalidate stage-specific cloud IDs and effective claims before each stage; never expand this list."
