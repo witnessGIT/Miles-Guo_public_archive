@@ -1,0 +1,16 @@
+{
+  "task_id": "WI_LIVE_20220128_001_segment_split",
+  "agent_id": "codex-local-asr-agent50-20261023",
+  "completed_at": "2026-10-25T05:31:27.444352+00:00",
+  "result_commit": "082b80fcf49818191eba250e4d1c3f6afd32197b",
+  "outputs": [
+    "data/current/live_segments/asr_live_20220128_001.jsonl"
+  ],
+  "validation": "7 manually reviewed citable natural topic passages from 75 retained machine-ASR cues after filtering 8 low-confidence non-speech tokens; explicit fitness/weather, evacuation allegation, joint announcement, medical planes, political-culture critique, information questioning, and closing boundaries; ordered timestamps and SHA-256 hashes verified; machine generated and not human corrected",
+  "workflow_mode": "continuous-worker-v2",
+  "claim_protocol": "claim-protocol-v2",
+  "entry_mode": "work",
+  "continue_after_finish": true,
+  "finish_prerequisites_revalidated": true,
+  "notes": "Task completed only after re-checking the latest repository dependency contract. Under continuous-worker-v2, refresh repository state and claim the next eligible task unless a documented stop condition applies."
+}
