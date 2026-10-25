@@ -1,0 +1,2328 @@
+{
+  "chunk_audio_sha256": "a56f10dec13ac63b984dd60195beb20e3c580f449e2613a0ddde9b073caf5027",
+  "chunk_index": 0,
+  "completed_at": "2026-10-25T11:59:47Z",
+  "language": "zh",
+  "live_id": "LIVE_20220224_002",
+  "media_committed_to_git": false,
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "offset_sec": 0,
+  "paid_api_used": false,
+  "processing_location": "github-hosted-macos-arm64",
+  "schema_version": "cloud-asr-chunk-v1",
+  "segments": [
+    {
+      "avg_logprob": -0.811458,
+      "compression_ratio": 1.174825,
+      "end": 5.0,
+      "no_speech_prob": 0.0,
+      "start": 0.0,
+      "text": "今天大家的心情都很沉重"
+    },
+    {
+      "avg_logprob": -0.811458,
+      "compression_ratio": 1.174825,
+      "end": 12.76,
+      "no_speech_prob": 0.0,
+      "start": 5.62,
+      "text": "哦!尊敬的戰友們好!"
+    },
+    {
+      "avg_logprob": -0.811458,
+      "compression_ratio": 1.174825,
+      "end": 14.5,
+      "no_speech_prob": 0.0,
+      "start": 13.0,
+      "text": "2月24號"
+    },
+    {
+      "avg_logprob": -0.811458,
+      "compression_ratio": 1.174825,
+      "end": 18.46,
+      "no_speech_prob": 0.0,
+      "start": 15.24,
+      "text": "哎!這今天的大家心情都很沉重啊"
+    },
+    {
+      "avg_logprob": -0.811458,
+      "compression_ratio": 1.174825,
+      "end": 20.98,
+      "no_speech_prob": 0.0,
+      "start": 18.96,
+      "text": "看到這個俄羅斯啊"
+    },
+    {
+      "avg_logprob": -0.811458,
+      "compression_ratio": 1.174825,
+      "end": 23.52,
+      "no_speech_prob": 0.0,
+      "start": 21.62,
+      "text": "這個轟炸機"
+    },
+    {
+      "avg_logprob": -0.811458,
+      "compression_ratio": 1.174825,
+      "end": 25.16,
+      "no_speech_prob": 0.0,
+      "start": 24.14,
+      "text": "坦克"
+    },
+    {
+      "avg_logprob": -0.811458,
+      "compression_ratio": 1.174825,
+      "end": 27.54,
+      "no_speech_prob": 0.0,
+      "start": 25.8,
+      "text": "從天而降"
+    },
+    {
+      "avg_logprob": -0.220019,
+      "compression_ratio": 1.302439,
+      "end": 31.54,
+      "no_speech_prob": 0.0,
+      "start": 27.54,
+      "text": "整個的烏克蘭現在陰雲尼布"
+    },
+    {
+      "avg_logprob": -0.220019,
+      "compression_ratio": 1.302439,
+      "end": 34.54,
+      "no_speech_prob": 0.0,
+      "start": 31.54,
+      "text": "去過烏克蘭的人都會知道"
+    },
+    {
+      "avg_logprob": -0.220019,
+      "compression_ratio": 1.302439,
+      "end": 37.54,
+      "no_speech_prob": 0.0,
+      "start": 34.54,
+      "text": "那個陰天就像英國的陰天一樣"
+    },
+    {
+      "avg_logprob": -0.220019,
+      "compression_ratio": 1.302439,
+      "end": 39.54,
+      "no_speech_prob": 0.0,
+      "start": 37.54,
+      "text": "會讓你窒息"
+    },
+    {
+      "avg_logprob": -0.220019,
+      "compression_ratio": 1.302439,
+      "end": 41.54,
+      "no_speech_prob": 0.0,
+      "start": 39.54,
+      "text": "嘎嘎嘎嘎的冷"
+    },
+    {
+      "avg_logprob": -0.220019,
+      "compression_ratio": 1.302439,
+      "end": 48.54,
+      "no_speech_prob": 0.0,
+      "start": 41.54,
+      "text": "再加上你想想整個城市的感覺那種壓抑"
+    },
+    {
+      "avg_logprob": -0.220019,
+      "compression_ratio": 1.302439,
+      "end": 51.54,
+      "no_speech_prob": 0.0,
+      "start": 48.54,
+      "text": "現在城市中心聚集著那些無辜的"
+    },
+    {
+      "avg_logprob": -0.220019,
+      "compression_ratio": 1.302439,
+      "end": 54.54,
+      "no_speech_prob": 0.0,
+      "start": 51.54,
+      "text": "不知道該如何地方去的人"
+    },
+    {
+      "avg_logprob": -0.196103,
+      "compression_ratio": 1.314286,
+      "end": 58.54,
+      "no_speech_prob": 0.0,
+      "start": 54.54,
+      "text": "就像你看到當時到非洲去"
+    },
+    {
+      "avg_logprob": -0.196103,
+      "compression_ratio": 1.314286,
+      "end": 64.54,
+      "no_speech_prob": 0.0,
+      "start": 58.54,
+      "text": "你看到非洲上從山上降落的那個突破一樣"
+    },
+    {
+      "avg_logprob": -0.196103,
+      "compression_ratio": 1.314286,
+      "end": 67.54,
+      "no_speech_prob": 0.0,
+      "start": 64.54,
+      "text": "嘩就下來了很多動物無辜的"
+    },
+    {
+      "avg_logprob": -0.196103,
+      "compression_ratio": 1.314286,
+      "end": 70.54,
+      "no_speech_prob": 0.0,
+      "start": 67.54,
+      "text": "也不能去那兒就在下面直接就給淹了"
+    },
+    {
+      "avg_logprob": -0.196103,
+      "compression_ratio": 1.314286,
+      "end": 73.54,
+      "no_speech_prob": 0.0,
+      "start": 70.54,
+      "text": "那種殘酷那種無奈"
+    },
+    {
+      "avg_logprob": -0.196103,
+      "compression_ratio": 1.314286,
+      "end": 78.54,
+      "no_speech_prob": 0.0,
+      "start": 73.54,
+      "text": "就像在北極看到海雄"
+    },
+    {
+      "avg_logprob": -0.196103,
+      "compression_ratio": 1.314286,
+      "end": 83.54,
+      "no_speech_prob": 0.0,
+      "start": 78.54,
+      "text": "海寬從山上好像掉落一樣自殺一樣很可怕"
+    },
+    {
+      "avg_logprob": -0.105896,
+      "compression_ratio": 1.328571,
+      "end": 87.54,
+      "no_speech_prob": 0.0,
+      "start": 84.54,
+      "text": "所以說兄弟姐妹們太殘酷了"
+    },
+    {
+      "avg_logprob": -0.105896,
+      "compression_ratio": 1.328571,
+      "end": 90.54,
+      "no_speech_prob": 0.0,
+      "start": 87.54,
+      "text": "這個戰爭力我們並不遙遠"
+    },
+    {
+      "avg_logprob": -0.105896,
+      "compression_ratio": 1.328571,
+      "end": 92.54,
+      "no_speech_prob": 0.0,
+      "start": 90.54,
+      "text": "它非常的淒慘"
+    },
+    {
+      "avg_logprob": -0.105896,
+      "compression_ratio": 1.328571,
+      "end": 94.54,
+      "no_speech_prob": 0.0,
+      "start": 92.54,
+      "text": "從人類上所有的戰爭看"
+    },
+    {
+      "avg_logprob": -0.105896,
+      "compression_ratio": 1.328571,
+      "end": 96.54,
+      "no_speech_prob": 0.0,
+      "start": 94.54,
+      "text": "沒有一個戰爭不是扯淡的"
+    },
+    {
+      "avg_logprob": -0.105896,
+      "compression_ratio": 1.328571,
+      "end": 99.54,
+      "no_speech_prob": 0.0,
+      "start": 96.54,
+      "text": "沒有一個戰爭是對自己的國家民族有利的"
+    },
+    {
+      "avg_logprob": -0.105896,
+      "compression_ratio": 1.328571,
+      "end": 107.54,
+      "no_speech_prob": 0.0,
+      "start": 99.54,
+      "text": "都是其少數人的瘋狂的個人權利和個人的危機和精神疾病"
+    },
+    {
+      "avg_logprob": -0.250093,
+      "compression_ratio": 1.203593,
+      "end": 110.54,
+      "no_speech_prob": 0.0,
+      "start": 107.54,
+      "text": "還有都是因為中國女人的戰爭"
+    },
+    {
+      "avg_logprob": -0.250093,
+      "compression_ratio": 1.203593,
+      "end": 112.54,
+      "no_speech_prob": 0.0,
+      "start": 110.54,
+      "text": "就這麼荒唐"
+    },
+    {
+      "avg_logprob": -0.250093,
+      "compression_ratio": 1.203593,
+      "end": 114.54,
+      "no_speech_prob": 0.0,
+      "start": 112.54,
+      "text": "現在普京為了什麼"
+    },
+    {
+      "avg_logprob": -0.250093,
+      "compression_ratio": 1.203593,
+      "end": 116.54,
+      "no_speech_prob": 0.0,
+      "start": 114.54,
+      "text": "習亥要為了什麼"
+    },
+    {
+      "avg_logprob": -0.250093,
+      "compression_ratio": 1.203593,
+      "end": 119.54,
+      "no_speech_prob": 0.0,
+      "start": 116.54,
+      "text": "我再次的告訴大家"
+    },
+    {
+      "avg_logprob": -0.250093,
+      "compression_ratio": 1.203593,
+      "end": 122.54,
+      "no_speech_prob": 0.0,
+      "start": 119.54,
+      "text": "如果你不信爆炸革命"
+    },
+    {
+      "avg_logprob": -0.250093,
+      "compression_ratio": 1.203593,
+      "end": 123.54,
+      "no_speech_prob": 0.0,
+      "start": 122.54,
+      "text": "新中爆炸革命"
+    },
+    {
+      "avg_logprob": -0.250093,
+      "compression_ratio": 1.203593,
+      "end": 124.54,
+      "no_speech_prob": 0.0,
+      "start": 123.54,
+      "text": "那就去吧"
+    },
+    {
+      "avg_logprob": -0.250093,
+      "compression_ratio": 1.203593,
+      "end": 126.54,
+      "no_speech_prob": 0.0,
+      "start": 124.54,
+      "text": "我最近老是在想"
+    },
+    {
+      "avg_logprob": -0.164117,
+      "compression_ratio": 1.185,
+      "end": 129.54,
+      "no_speech_prob": 0.0,
+      "start": 126.54,
+      "text": "我們老是說扯著傻著喊"
+    },
+    {
+      "avg_logprob": -0.164117,
+      "compression_ratio": 1.185,
+      "end": 131.54,
+      "no_speech_prob": 0.0,
+      "start": 129.54,
+      "text": "讓這個不打疫苗"
+    },
+    {
+      "avg_logprob": -0.164117,
+      "compression_ratio": 1.185,
+      "end": 133.54,
+      "no_speech_prob": 0.0,
+      "start": 131.54,
+      "text": "那敢吃青豪樹"
+    },
+    {
+      "avg_logprob": -0.164117,
+      "compression_ratio": 1.185,
+      "end": 136.54,
+      "no_speech_prob": 0.0,
+      "start": 133.54,
+      "text": "然後這個要相信戰爭"
+    },
+    {
+      "avg_logprob": -0.164117,
+      "compression_ratio": 1.185,
+      "end": 139.54,
+      "no_speech_prob": 0.0,
+      "start": 136.54,
+      "text": "這四五年來走下來發現"
+    },
+    {
+      "avg_logprob": -0.164117,
+      "compression_ratio": 1.185,
+      "end": 140.54,
+      "no_speech_prob": 0.0,
+      "start": 139.54,
+      "text": "信的則信"
+    },
+    {
+      "avg_logprob": -0.164117,
+      "compression_ratio": 1.185,
+      "end": 143.54,
+      "no_speech_prob": 0.0,
+      "start": 140.54,
+      "text": "不信的你喊啥也沒用"
+    },
+    {
+      "avg_logprob": -0.164117,
+      "compression_ratio": 1.185,
+      "end": 145.54,
+      "no_speech_prob": 0.0,
+      "start": 143.54,
+      "text": "那反過來說了"
+    },
+    {
+      "avg_logprob": -0.164117,
+      "compression_ratio": 1.185,
+      "end": 147.54,
+      "no_speech_prob": 0.0,
+      "start": 145.54,
+      "text": "咱不能有著硬幹心理"
+    },
+    {
+      "avg_logprob": -0.164117,
+      "compression_ratio": 1.185,
+      "end": 149.54,
+      "no_speech_prob": 0.0,
+      "start": 147.54,
+      "text": "他不信的就讓他去吧"
+    },
+    {
+      "avg_logprob": -0.145878,
+      "compression_ratio": 1.374502,
+      "end": 150.54,
+      "no_speech_prob": 0.0,
+      "start": 149.54,
+      "text": "對吧"
+    },
+    {
+      "avg_logprob": -0.145878,
+      "compression_ratio": 1.374502,
+      "end": 152.54,
+      "no_speech_prob": 0.0,
+      "start": 150.54,
+      "text": "那不是好事兒嗎"
+    },
+    {
+      "avg_logprob": -0.145878,
+      "compression_ratio": 1.374502,
+      "end": 153.54,
+      "no_speech_prob": 0.0,
+      "start": 152.54,
+      "text": "陸大腦袋"
+    },
+    {
+      "avg_logprob": -0.145878,
+      "compression_ratio": 1.374502,
+      "end": 154.54,
+      "no_speech_prob": 0.0,
+      "start": 153.54,
+      "text": "蛇腰炎"
+    },
+    {
+      "avg_logprob": -0.145878,
+      "compression_ratio": 1.374502,
+      "end": 155.54,
+      "no_speech_prob": 0.0,
+      "start": 154.54,
+      "text": "那九指腰這幫孫子"
+    },
+    {
+      "avg_logprob": -0.145878,
+      "compression_ratio": 1.374502,
+      "end": 156.54,
+      "no_speech_prob": 0.0,
+      "start": 155.54,
+      "text": "還有雞腿潘"
+    },
+    {
+      "avg_logprob": -0.145878,
+      "compression_ratio": 1.374502,
+      "end": 157.54,
+      "no_speech_prob": 0.0,
+      "start": 156.54,
+      "text": "什麼火雞拱啊"
+    },
+    {
+      "avg_logprob": -0.145878,
+      "compression_ratio": 1.374502,
+      "end": 159.54,
+      "no_speech_prob": 0.0,
+      "start": 157.54,
+      "text": "周孝正這幫孫子"
+    },
+    {
+      "avg_logprob": -0.145878,
+      "compression_ratio": 1.374502,
+      "end": 160.54,
+      "no_speech_prob": 0.0,
+      "start": 159.54,
+      "text": "還有高冰塵"
+    },
+    {
+      "avg_logprob": -0.145878,
+      "compression_ratio": 1.374502,
+      "end": 161.54,
+      "no_speech_prob": 0.0,
+      "start": 160.54,
+      "text": "那個爛鞭王"
+    },
+    {
+      "avg_logprob": -0.145878,
+      "compression_ratio": 1.374502,
+      "end": 163.54,
+      "no_speech_prob": 0.0,
+      "start": 161.54,
+      "text": "應該把他送到烏克蘭去"
+    },
+    {
+      "avg_logprob": -0.145878,
+      "compression_ratio": 1.374502,
+      "end": 164.54,
+      "no_speech_prob": 0.0,
+      "start": 163.54,
+      "text": "那不是沒戰爭嗎"
+    },
+    {
+      "avg_logprob": -0.145878,
+      "compression_ratio": 1.374502,
+      "end": 166.54,
+      "no_speech_prob": 0.0,
+      "start": 164.54,
+      "text": "他應該在兩周以前去烏克蘭"
+    },
+    {
+      "avg_logprob": -0.145878,
+      "compression_ratio": 1.374502,
+      "end": 167.54,
+      "no_speech_prob": 0.0,
+      "start": 166.54,
+      "text": "對了"
+    },
+    {
+      "avg_logprob": -0.145878,
+      "compression_ratio": 1.374502,
+      "end": 170.54,
+      "no_speech_prob": 0.0,
+      "start": 167.54,
+      "text": "火雞拱去過烏克蘭"
+    },
+    {
+      "avg_logprob": -0.145878,
+      "compression_ratio": 1.374502,
+      "end": 172.54,
+      "no_speech_prob": 0.0,
+      "start": 170.54,
+      "text": "在那和共產黨會面"
+    },
+    {
+      "avg_logprob": -0.145878,
+      "compression_ratio": 1.374502,
+      "end": 173.54,
+      "no_speech_prob": 0.0,
+      "start": 172.54,
+      "text": "是吧"
+    },
+    {
+      "avg_logprob": -0.145878,
+      "compression_ratio": 1.374502,
+      "end": 174.54,
+      "no_speech_prob": 0.0,
+      "start": 173.54,
+      "text": "所以說"
+    },
+    {
+      "avg_logprob": -0.145878,
+      "compression_ratio": 1.374502,
+      "end": 175.54,
+      "no_speech_prob": 0.0,
+      "start": 174.54,
+      "text": "兄弟姐妹們"
+    },
+    {
+      "avg_logprob": -0.145878,
+      "compression_ratio": 1.374502,
+      "end": 177.54,
+      "no_speech_prob": 0.0,
+      "start": 175.54,
+      "text": "這你就能看到"
+    },
+    {
+      "avg_logprob": -0.142483,
+      "compression_ratio": 1.327434,
+      "end": 179.54,
+      "no_speech_prob": 0.0,
+      "start": 177.54,
+      "text": "人他是有緣分的"
+    },
+    {
+      "avg_logprob": -0.142483,
+      "compression_ratio": 1.327434,
+      "end": 180.54,
+      "no_speech_prob": 0.0,
+      "start": 179.54,
+      "text": "跟親中國聯邦"
+    },
+    {
+      "avg_logprob": -0.142483,
+      "compression_ratio": 1.327434,
+      "end": 182.54,
+      "no_speech_prob": 0.0,
+      "start": 180.54,
+      "text": "跟爆料革命"
+    },
+    {
+      "avg_logprob": -0.142483,
+      "compression_ratio": 1.327434,
+      "end": 183.54,
+      "no_speech_prob": 0.0,
+      "start": 182.54,
+      "text": "跟七哥有緣分的"
+    },
+    {
+      "avg_logprob": -0.142483,
+      "compression_ratio": 1.327434,
+      "end": 184.54,
+      "no_speech_prob": 0.0,
+      "start": 183.54,
+      "text": "他自有緣"
+    },
+    {
+      "avg_logprob": -0.142483,
+      "compression_ratio": 1.327434,
+      "end": 185.54,
+      "no_speech_prob": 0.0,
+      "start": 184.54,
+      "text": "沒緣分的"
+    },
+    {
+      "avg_logprob": -0.142483,
+      "compression_ratio": 1.327434,
+      "end": 187.54,
+      "no_speech_prob": 0.0,
+      "start": 185.54,
+      "text": "沒啥事兒"
+    },
+    {
+      "avg_logprob": -0.142483,
+      "compression_ratio": 1.327434,
+      "end": 189.54,
+      "no_speech_prob": 0.0,
+      "start": 187.54,
+      "text": "沒這"
+    },
+    {
+      "avg_logprob": -0.142483,
+      "compression_ratio": 1.327434,
+      "end": 191.54,
+      "no_speech_prob": 0.0,
+      "start": 189.54,
+      "text": "你啥做不了"
+    },
+    {
+      "avg_logprob": -0.142483,
+      "compression_ratio": 1.327434,
+      "end": 193.54,
+      "no_speech_prob": 0.0,
+      "start": 191.54,
+      "text": "怎麼辦也沒有"
+    },
+    {
+      "avg_logprob": -0.142483,
+      "compression_ratio": 1.327434,
+      "end": 194.54,
+      "no_speech_prob": 0.0,
+      "start": 193.54,
+      "text": "所以說兄弟姐妹們"
+    },
+    {
+      "avg_logprob": -0.142483,
+      "compression_ratio": 1.327434,
+      "end": 195.54,
+      "no_speech_prob": 0.0,
+      "start": 194.54,
+      "text": "這就是緣分"
+    },
+    {
+      "avg_logprob": -0.142483,
+      "compression_ratio": 1.327434,
+      "end": 196.54,
+      "no_speech_prob": 0.0,
+      "start": 195.54,
+      "text": "這就是人生"
+    },
+    {
+      "avg_logprob": -0.142483,
+      "compression_ratio": 1.327434,
+      "end": 198.54,
+      "no_speech_prob": 0.0,
+      "start": 196.54,
+      "text": "烏克蘭"
+    },
+    {
+      "avg_logprob": -0.142483,
+      "compression_ratio": 1.327434,
+      "end": 200.54,
+      "no_speech_prob": 0.0,
+      "start": 198.54,
+      "text": "這個我好多朋友都跑出來了"
+    },
+    {
+      "avg_logprob": -0.142483,
+      "compression_ratio": 1.327434,
+      "end": 201.54,
+      "no_speech_prob": 0.0,
+      "start": 200.54,
+      "text": "哎呀"
+    },
+    {
+      "avg_logprob": -0.142483,
+      "compression_ratio": 1.327434,
+      "end": 202.54,
+      "no_speech_prob": 0.0,
+      "start": 201.54,
+      "text": "從昨晚那再過"
+    },
+    {
+      "avg_logprob": -0.142483,
+      "compression_ratio": 1.327434,
+      "end": 203.54,
+      "no_speech_prob": 0.0,
+      "start": 202.54,
+      "text": "電話那就是哭"
+    },
+    {
+      "avg_logprob": -0.142483,
+      "compression_ratio": 1.327434,
+      "end": 205.54,
+      "no_speech_prob": 0.0,
+      "start": 203.54,
+      "text": "謝謝你"
+    },
+    {
+      "avg_logprob": -0.328545,
+      "compression_ratio": 1.217143,
+      "end": 207.7,
+      "no_speech_prob": 0.0,
+      "start": 205.54,
+      "text": "謝謝你"
+    },
+    {
+      "avg_logprob": -0.328545,
+      "compression_ratio": 1.217143,
+      "end": 209.54,
+      "no_speech_prob": 0.0,
+      "start": 208.54,
+      "text": "謝謝你"
+    },
+    {
+      "avg_logprob": -0.328545,
+      "compression_ratio": 1.217143,
+      "end": 210.54,
+      "no_speech_prob": 0.0,
+      "start": 209.54,
+      "text": "我們都出來了"
+    },
+    {
+      "avg_logprob": -0.328545,
+      "compression_ratio": 1.217143,
+      "end": 211.54,
+      "no_speech_prob": 0.0,
+      "start": 210.54,
+      "text": "哎呀"
+    },
+    {
+      "avg_logprob": -0.328545,
+      "compression_ratio": 1.217143,
+      "end": 212.54,
+      "no_speech_prob": 0.0,
+      "start": 211.54,
+      "text": "多有錢的人"
+    },
+    {
+      "avg_logprob": -0.328545,
+      "compression_ratio": 1.217143,
+      "end": 214.54,
+      "no_speech_prob": 0.0,
+      "start": 213.54,
+      "text": "親人在國內"
+    },
+    {
+      "avg_logprob": -0.328545,
+      "compression_ratio": 1.217143,
+      "end": 215.54,
+      "no_speech_prob": 0.0,
+      "start": 214.54,
+      "text": "在戰爭中"
+    },
+    {
+      "avg_logprob": -0.328545,
+      "compression_ratio": 1.217143,
+      "end": 216.54,
+      "no_speech_prob": 0.0,
+      "start": 215.54,
+      "text": "他都痛苦"
+    },
+    {
+      "avg_logprob": -0.328545,
+      "compression_ratio": 1.217143,
+      "end": 218.54,
+      "no_speech_prob": 0.0,
+      "start": 216.54,
+      "text": "不是每個人把全家都弄出來的"
+    },
+    {
+      "avg_logprob": -0.328545,
+      "compression_ratio": 1.217143,
+      "end": 220.54,
+      "no_speech_prob": 0.0,
+      "start": 218.54,
+      "text": "很多人家人還都在呢"
+    },
+    {
+      "avg_logprob": -0.328545,
+      "compression_ratio": 1.217143,
+      "end": 221.54,
+      "no_speech_prob": 0.0,
+      "start": 220.54,
+      "text": "有的"
+    },
+    {
+      "avg_logprob": -0.328545,
+      "compression_ratio": 1.217143,
+      "end": 223.54,
+      "no_speech_prob": 0.0,
+      "start": 221.54,
+      "text": "有朋友在頓尼斯克"
+    },
+    {
+      "avg_logprob": -0.328545,
+      "compression_ratio": 1.217143,
+      "end": 224.54,
+      "no_speech_prob": 0.0,
+      "start": 223.54,
+      "text": "搞牛奶場的"
+    },
+    {
+      "avg_logprob": -0.328545,
+      "compression_ratio": 1.217143,
+      "end": 226.54,
+      "no_speech_prob": 0.0,
+      "start": 225.54,
+      "text": "他說"
+    },
+    {
+      "avg_logprob": -0.320662,
+      "compression_ratio": 1.330435,
+      "end": 228.54,
+      "no_speech_prob": 0.0,
+      "start": 226.54,
+      "text": "我和我太太俩孩子出来了"
+    },
+    {
+      "avg_logprob": -0.320662,
+      "compression_ratio": 1.330435,
+      "end": 230.94,
+      "no_speech_prob": 0.0,
+      "start": 228.54,
+      "text": "全家人都在敦尼斯克的"
+    },
+    {
+      "avg_logprob": -0.320662,
+      "compression_ratio": 1.330435,
+      "end": 231.94,
+      "no_speech_prob": 0.0,
+      "start": 230.94,
+      "text": "是不是啊"
+    },
+    {
+      "avg_logprob": -0.320662,
+      "compression_ratio": 1.330435,
+      "end": 233.14,
+      "no_speech_prob": 0.0,
+      "start": 231.94,
+      "text": "如干斯克"
+    },
+    {
+      "avg_logprob": -0.320662,
+      "compression_ratio": 1.330435,
+      "end": 234.64,
+      "no_speech_prob": 0.0,
+      "start": 233.14,
+      "text": "都有"
+    },
+    {
+      "avg_logprob": -0.320662,
+      "compression_ratio": 1.330435,
+      "end": 236.14,
+      "no_speech_prob": 0.0,
+      "start": 234.64,
+      "text": "痛苦吧"
+    },
+    {
+      "avg_logprob": -0.320662,
+      "compression_ratio": 1.330435,
+      "end": 237.44,
+      "no_speech_prob": 0.0,
+      "start": 236.14,
+      "text": "咋办呢"
+    },
+    {
+      "avg_logprob": -0.320662,
+      "compression_ratio": 1.330435,
+      "end": 238.84,
+      "no_speech_prob": 0.0,
+      "start": 237.44,
+      "text": "咋办呢"
+    },
+    {
+      "avg_logprob": -0.320662,
+      "compression_ratio": 1.330435,
+      "end": 241.24,
+      "no_speech_prob": 0.0,
+      "start": 238.84,
+      "text": "世界就这么疯狂"
+    },
+    {
+      "avg_logprob": -0.320662,
+      "compression_ratio": 1.330435,
+      "end": 244.74,
+      "no_speech_prob": 0.0,
+      "start": 241.24,
+      "text": "这个国家就成为了世界上的政治经济的牺牲品"
+    },
+    {
+      "avg_logprob": -0.320662,
+      "compression_ratio": 1.330435,
+      "end": 248.04,
+      "no_speech_prob": 0.0,
+      "start": 244.74,
+      "text": "齐哥已经连着说了三四年了"
+    },
+    {
+      "avg_logprob": -0.320662,
+      "compression_ratio": 1.330435,
+      "end": 251.04,
+      "no_speech_prob": 0.0,
+      "start": 248.04,
+      "text": "世界经济一定会崩溃"
+    },
+    {
+      "avg_logprob": -0.320662,
+      "compression_ratio": 1.330435,
+      "end": 254.04,
+      "no_speech_prob": 0.0,
+      "start": 251.04,
+      "text": "没选择"
+    },
+    {
+      "avg_logprob": -0.320662,
+      "compression_ratio": 1.330435,
+      "end": 256.04,
+      "no_speech_prob": 0.0,
+      "start": 254.04,
+      "text": "世界找了一个崩溃的理由"
+    },
+    {
+      "avg_logprob": -0.256448,
+      "compression_ratio": 1.205607,
+      "end": 257.34,
+      "no_speech_prob": 0.0,
+      "start": 256.04,
+      "text": "不是冠状疫"
+    },
+    {
+      "avg_logprob": -0.256448,
+      "compression_ratio": 1.205607,
+      "end": 258.74,
+      "no_speech_prob": 0.0,
+      "start": 257.34,
+      "text": "不是共产党病毒"
+    },
+    {
+      "avg_logprob": -0.256448,
+      "compression_ratio": 1.205607,
+      "end": 260.24,
+      "no_speech_prob": 0.0,
+      "start": 258.74,
+      "text": "也不是疫苗"
+    },
+    {
+      "avg_logprob": -0.256448,
+      "compression_ratio": 1.205607,
+      "end": 262.94,
+      "no_speech_prob": 0.0,
+      "start": 261.34,
+      "text": "乌克兰战争"
+    },
+    {
+      "avg_logprob": -0.256448,
+      "compression_ratio": 1.205607,
+      "end": 264.94,
+      "no_speech_prob": 0.0,
+      "start": 263.44,
+      "text": "这个黑国北大"
+    },
+    {
+      "avg_logprob": -0.256448,
+      "compression_ratio": 1.205607,
+      "end": 270.94,
+      "no_speech_prob": 0.0,
+      "start": 266.94,
+      "text": "俄罗斯一夜之间的45%的股票暴力"
+    },
+    {
+      "avg_logprob": -0.256448,
+      "compression_ratio": 1.205607,
+      "end": 273.94,
+      "no_speech_prob": 0.0,
+      "start": 270.94,
+      "text": "昨天晚上的大宗交易市场"
+    },
+    {
+      "avg_logprob": -0.256448,
+      "compression_ratio": 1.205607,
+      "end": 276.24,
+      "no_speech_prob": 0.0,
+      "start": 274.74,
+      "text": "使其比伏啊"
+    },
+    {
+      "avg_logprob": -0.256448,
+      "compression_ratio": 1.205607,
+      "end": 279.24,
+      "no_speech_prob": 0.0,
+      "start": 276.24,
+      "text": "有的一个产品能过十几手"
+    },
+    {
+      "avg_logprob": -0.256448,
+      "compression_ratio": 1.205607,
+      "end": 280.94,
+      "no_speech_prob": 0.0,
+      "start": 279.24,
+      "text": "过去50年都没有"
+    },
+    {
+      "avg_logprob": -0.256448,
+      "compression_ratio": 1.205607,
+      "end": 282.94,
+      "no_speech_prob": 0.0,
+      "start": 280.94,
+      "text": "别说过去30年"
+    },
+    {
+      "avg_logprob": -0.256448,
+      "compression_ratio": 1.205607,
+      "end": 284.14,
+      "no_speech_prob": 0.0,
+      "start": 282.94,
+      "text": "50年都没有"
+    },
+    {
+      "avg_logprob": -0.309131,
+      "compression_ratio": 1.210526,
+      "end": 286.54,
+      "no_speech_prob": 0.0,
+      "start": 284.14,
+      "text": "你手里有点油"
+    },
+    {
+      "avg_logprob": -0.309131,
+      "compression_ratio": 1.210526,
+      "end": 288.04,
+      "no_speech_prob": 0.0,
+      "start": 286.54,
+      "text": "我手里有点期货"
+    },
+    {
+      "avg_logprob": -0.309131,
+      "compression_ratio": 1.210526,
+      "end": 289.54,
+      "no_speech_prob": 0.0,
+      "start": 288.04,
+      "text": "卖个来卖去"
+    },
+    {
+      "avg_logprob": -0.309131,
+      "compression_ratio": 1.210526,
+      "end": 290.74,
+      "no_speech_prob": 0.0,
+      "start": 289.54,
+      "text": "能卖十几手"
+    },
+    {
+      "avg_logprob": -0.309131,
+      "compression_ratio": 1.210526,
+      "end": 293.04,
+      "no_speech_prob": 0.0,
+      "start": 290.74,
+      "text": "现在这市场啥样我也不知道"
+    },
+    {
+      "avg_logprob": -0.309131,
+      "compression_ratio": 1.210526,
+      "end": 294.04,
+      "no_speech_prob": 0.0,
+      "start": 293.04,
+      "text": "一定是暴跌"
+    },
+    {
+      "avg_logprob": -0.309131,
+      "compression_ratio": 1.210526,
+      "end": 297.64,
+      "no_speech_prob": 0.0,
+      "start": 294.04,
+      "text": "供应链一定是崩塌"
+    },
+    {
+      "avg_logprob": -0.309131,
+      "compression_ratio": 1.210526,
+      "end": 300.84,
+      "no_speech_prob": 0.0,
+      "start": 297.64,
+      "text": "然后石油商爆发"
+    },
+    {
+      "avg_logprob": -0.309131,
+      "compression_ratio": 1.210526,
+      "end": 302.34,
+      "no_speech_prob": 0.0,
+      "start": 300.84,
+      "text": "然后等一段时间"
+    },
+    {
+      "avg_logprob": -0.309131,
+      "compression_ratio": 1.210526,
+      "end": 303.54,
+      "no_speech_prob": 0.0,
+      "start": 302.34,
+      "text": "啪啥都会暴下来"
+    },
+    {
+      "avg_logprob": -0.285885,
+      "compression_ratio": 1.111111,
+      "end": 306.94,
+      "no_speech_prob": 0.0,
+      "start": 303.54,
+      "text": "这个起起伏伏多少家和人亡"
+    },
+    {
+      "avg_logprob": -0.285885,
+      "compression_ratio": 1.111111,
+      "end": 308.64,
+      "no_speech_prob": 0.0,
+      "start": 306.94,
+      "text": "战友们千万记住"
+    },
+    {
+      "avg_logprob": -0.285885,
+      "compression_ratio": 1.111111,
+      "end": 310.14,
+      "no_speech_prob": 0.0,
+      "start": 308.64,
+      "text": "发战争财"
+    },
+    {
+      "avg_logprob": -0.285885,
+      "compression_ratio": 1.111111,
+      "end": 311.34,
+      "no_speech_prob": 0.0,
+      "start": 310.14,
+      "text": "发投机财"
+    },
+    {
+      "avg_logprob": -0.285885,
+      "compression_ratio": 1.111111,
+      "end": 312.24,
+      "no_speech_prob": 0.0,
+      "start": 311.34,
+      "text": "发快钱"
+    },
+    {
+      "avg_logprob": -0.285885,
+      "compression_ratio": 1.111111,
+      "end": 313.44,
+      "no_speech_prob": 0.0,
+      "start": 312.24,
+      "text": "发赌博财"
+    },
+    {
+      "avg_logprob": -0.285885,
+      "compression_ratio": 1.111111,
+      "end": 315.64,
+      "no_speech_prob": 0.0,
+      "start": 313.44,
+      "text": "你一定会死无葬身子弟"
+    },
+    {
+      "avg_logprob": -0.285885,
+      "compression_ratio": 1.111111,
+      "end": 316.94,
+      "no_speech_prob": 0.0,
+      "start": 315.64,
+      "text": "你不要去尝试"
+    },
+    {
+      "avg_logprob": -0.383352,
+      "compression_ratio": 1.2,
+      "end": 319.34,
+      "no_speech_prob": 0.0,
+      "start": 316.94,
+      "text": "就像七哥本人"
+    },
+    {
+      "avg_logprob": -0.383352,
+      "compression_ratio": 1.2,
+      "end": 320.84,
+      "no_speech_prob": 0.0,
+      "start": 319.34,
+      "text": "我可以给他们基金建议"
+    },
+    {
+      "avg_logprob": -0.383352,
+      "compression_ratio": 1.2,
+      "end": 322.34,
+      "no_speech_prob": 0.0,
+      "start": 320.84,
+      "text": "我从来不上我的身子"
+    },
+    {
+      "avg_logprob": -0.383352,
+      "compression_ratio": 1.2,
+      "end": 323.34,
+      "no_speech_prob": 0.0,
+      "start": 322.34,
+      "text": "我可以像天罢说"
+    },
+    {
+      "avg_logprob": -0.383352,
+      "compression_ratio": 1.2,
+      "end": 325.54,
+      "no_speech_prob": 0.0,
+      "start": 323.34,
+      "text": "郭文贵没做过一次投机的声音"
+    },
+    {
+      "avg_logprob": -0.383352,
+      "compression_ratio": 1.2,
+      "end": 327.34,
+      "no_speech_prob": 0.0,
+      "start": 325.54,
+      "text": "没有一次投机的钱"
+    },
+    {
+      "avg_logprob": -0.383352,
+      "compression_ratio": 1.2,
+      "end": 330.34,
+      "no_speech_prob": 0.0,
+      "start": 328.34,
+      "text": "我永远相信一个哲理"
+    },
+    {
+      "avg_logprob": -0.197312,
+      "compression_ratio": 1.377049,
+      "end": 332.94,
+      "no_speech_prob": 0.0,
+      "start": 330.34,
+      "text": "钱来得有多快"
+    },
+    {
+      "avg_logprob": -0.197312,
+      "compression_ratio": 1.377049,
+      "end": 333.94,
+      "no_speech_prob": 0.0,
+      "start": 332.94,
+      "text": "走得有多快"
+    },
+    {
+      "avg_logprob": -0.197312,
+      "compression_ratio": 1.377049,
+      "end": 336.34,
+      "no_speech_prob": 0.0,
+      "start": 333.94,
+      "text": "弄不好还带走你的命"
+    },
+    {
+      "avg_logprob": -0.197312,
+      "compression_ratio": 1.377049,
+      "end": 337.94,
+      "no_speech_prob": 0.0,
+      "start": 336.34,
+      "text": "还带走你家人的命"
+    },
+    {
+      "avg_logprob": -0.197312,
+      "compression_ratio": 1.377049,
+      "end": 340.54,
+      "no_speech_prob": 0.0,
+      "start": 337.94,
+      "text": "我从来不要这块钱"
+    },
+    {
+      "avg_logprob": -0.197312,
+      "compression_ratio": 1.377049,
+      "end": 341.54,
+      "no_speech_prob": 0.0,
+      "start": 340.54,
+      "text": "就像赌博一样"
+    },
+    {
+      "avg_logprob": -0.197312,
+      "compression_ratio": 1.377049,
+      "end": 344.14,
+      "no_speech_prob": 0.0,
+      "start": 341.54,
+      "text": "就不管你赌的有多大"
+    },
+    {
+      "avg_logprob": -0.197312,
+      "compression_ratio": 1.377049,
+      "end": 347.14,
+      "no_speech_prob": 0.0,
+      "start": 344.14,
+      "text": "最后赌博是一定会输的"
+    },
+    {
+      "avg_logprob": -0.197312,
+      "compression_ratio": 1.377049,
+      "end": 348.94,
+      "no_speech_prob": 0.0,
+      "start": 347.14,
+      "text": "这是规则"
+    },
+    {
+      "avg_logprob": -0.197312,
+      "compression_ratio": 1.377049,
+      "end": 350.14,
+      "no_speech_prob": 0.0,
+      "start": 348.94,
+      "text": "这是天意"
+    },
+    {
+      "avg_logprob": -0.197312,
+      "compression_ratio": 1.377049,
+      "end": 352.34,
+      "no_speech_prob": 0.0,
+      "start": 350.14,
+      "text": "所以说兄弟姐妹们"
+    },
+    {
+      "avg_logprob": -0.197312,
+      "compression_ratio": 1.377049,
+      "end": 353.74,
+      "no_speech_prob": 0.0,
+      "start": 352.34,
+      "text": "千万别在那里眼馋"
+    },
+    {
+      "avg_logprob": -0.197312,
+      "compression_ratio": 1.377049,
+      "end": 354.54,
+      "no_speech_prob": 0.0,
+      "start": 353.74,
+      "text": "是吧"
+    },
+    {
+      "avg_logprob": -0.197312,
+      "compression_ratio": 1.377049,
+      "end": 355.74,
+      "no_speech_prob": 0.0,
+      "start": 354.54,
+      "text": "手里拿着膜"
+    },
+    {
+      "avg_logprob": -0.197312,
+      "compression_ratio": 1.377049,
+      "end": 357.14,
+      "no_speech_prob": 0.0,
+      "start": 355.74,
+      "text": "再就着包子"
+    },
+    {
+      "avg_logprob": -0.197312,
+      "compression_ratio": 1.377049,
+      "end": 358.34,
+      "no_speech_prob": 0.0,
+      "start": 357.14,
+      "text": "放下包子"
+    },
+    {
+      "avg_logprob": -0.197312,
+      "compression_ratio": 1.377049,
+      "end": 359.54,
+      "no_speech_prob": 0.0,
+      "start": 358.34,
+      "text": "那边拿起了榨菜"
+    },
+    {
+      "avg_logprob": -0.197312,
+      "compression_ratio": 1.377049,
+      "end": 360.24,
+      "no_speech_prob": 0.0,
+      "start": 359.54,
+      "text": "拿起鲑鱼"
+    },
+    {
+      "avg_logprob": -0.244042,
+      "compression_ratio": 1.436782,
+      "end": 362.44,
+      "no_speech_prob": 0.0,
+      "start": 360.24,
+      "text": "榨菜包鱼还没吃进去呢"
+    },
+    {
+      "avg_logprob": -0.244042,
+      "compression_ratio": 1.436782,
+      "end": 363.84,
+      "no_speech_prob": 0.0,
+      "start": 362.44,
+      "text": "旁边来牛肉了"
+    },
+    {
+      "avg_logprob": -0.244042,
+      "compression_ratio": 1.436782,
+      "end": 365.44,
+      "no_speech_prob": 0.0,
+      "start": 363.84,
+      "text": "又来海参了"
+    },
+    {
+      "avg_logprob": -0.244042,
+      "compression_ratio": 1.436782,
+      "end": 366.84,
+      "no_speech_prob": 0.0,
+      "start": 365.44,
+      "text": "你就抓海参牛肉"
+    },
+    {
+      "avg_logprob": -0.244042,
+      "compression_ratio": 1.436782,
+      "end": 368.14,
+      "no_speech_prob": 0.0,
+      "start": 366.84,
+      "text": "这边还没放下呢"
+    },
+    {
+      "avg_logprob": -0.244042,
+      "compression_ratio": 1.436782,
+      "end": 368.94,
+      "no_speech_prob": 0.0,
+      "start": 368.14,
+      "text": "发现卧菜"
+    },
+    {
+      "avg_logprob": -0.244042,
+      "compression_ratio": 1.436782,
+      "end": 370.14,
+      "no_speech_prob": 0.0,
+      "start": 368.94,
+      "text": "还有更好的肉"
+    },
+    {
+      "avg_logprob": -0.244042,
+      "compression_ratio": 1.436782,
+      "end": 370.84,
+      "no_speech_prob": 0.0,
+      "start": 370.14,
+      "text": "还有熊掌"
+    },
+    {
+      "avg_logprob": -0.244042,
+      "compression_ratio": 1.436782,
+      "end": 371.64,
+      "no_speech_prob": 0.0,
+      "start": 370.84,
+      "text": "还有燕锅"
+    },
+    {
+      "avg_logprob": -0.244042,
+      "compression_ratio": 1.436782,
+      "end": 373.44,
+      "no_speech_prob": 0.0,
+      "start": 371.64,
+      "text": "你吃得下去吗"
+    },
+    {
+      "avg_logprob": -0.244042,
+      "compression_ratio": 1.436782,
+      "end": 375.14,
+      "no_speech_prob": 0.0,
+      "start": 373.44,
+      "text": "你胃消化得了吗"
+    },
+    {
+      "avg_logprob": -0.244042,
+      "compression_ratio": 1.436782,
+      "end": 377.04,
+      "no_speech_prob": 0.0,
+      "start": 375.14,
+      "text": "我看到有些战士发生"
+    },
+    {
+      "avg_logprob": -0.244042,
+      "compression_ratio": 1.436782,
+      "end": 377.94,
+      "no_speech_prob": 0.0,
+      "start": 377.04,
+      "text": "七个是不是在干"
+    },
+    {
+      "avg_logprob": -0.244042,
+      "compression_ratio": 1.436782,
+      "end": 378.64,
+      "no_speech_prob": 0.0,
+      "start": 377.94,
+      "text": "七个是不是在干"
+    },
+    {
+      "avg_logprob": -0.244042,
+      "compression_ratio": 1.436782,
+      "end": 380.14,
+      "no_speech_prob": 0.0,
+      "start": 378.64,
+      "text": "我真的无语"
+    },
+    {
+      "avg_logprob": -0.244042,
+      "compression_ratio": 1.436782,
+      "end": 381.94,
+      "no_speech_prob": 0.0,
+      "start": 380.14,
+      "text": "这个时候"
+    },
+    {
+      "avg_logprob": -0.244042,
+      "compression_ratio": 1.436782,
+      "end": 384.94,
+      "no_speech_prob": 0.0,
+      "start": 381.94,
+      "text": "就是基辅给我金砖金条"
+    },
+    {
+      "avg_logprob": -0.244042,
+      "compression_ratio": 1.436782,
+      "end": 386.24,
+      "no_speech_prob": 0.0,
+      "start": 384.94,
+      "text": "钻石我都不要好"
+    },
+    {
+      "avg_logprob": -0.244042,
+      "compression_ratio": 1.436782,
+      "end": 387.54,
+      "no_speech_prob": 0.0,
+      "start": 386.24,
+      "text": "甭说是钻"
+    },
+    {
+      "avg_logprob": -0.244042,
+      "compression_ratio": 1.436782,
+      "end": 388.74,
+      "no_speech_prob": 0.0,
+      "start": 387.54,
+      "text": "给我我都不要"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.238806,
+      "end": 390.94,
+      "no_speech_prob": 0.0,
+      "start": 388.74,
+      "text": "因为老天爷会睁眼的"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.238806,
+      "end": 392.94,
+      "no_speech_prob": 0.0,
+      "start": 390.94,
+      "text": "带着人血的馒头"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.238806,
+      "end": 395.34,
+      "no_speech_prob": 0.0,
+      "start": 392.94,
+      "text": "带着人血的钻石"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.238806,
+      "end": 396.34,
+      "no_speech_prob": 0.0,
+      "start": 395.34,
+      "text": "!"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.238806,
+      "end": 397.84,
+      "no_speech_prob": 0.0,
+      "start": 396.34,
+      "text": "带着人血的金条"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.238806,
+      "end": 399.14,
+      "no_speech_prob": 0.0,
+      "start": 397.84,
+      "text": "他一定会再用"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.238806,
+      "end": 400.64,
+      "no_speech_prob": 0.0,
+      "start": 399.14,
+      "text": "带走你的鲜血"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.238806,
+      "end": 401.94,
+      "no_speech_prob": 0.0,
+      "start": 400.64,
+      "text": "不要想"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.238806,
+      "end": 402.94,
+      "no_speech_prob": 0.0,
+      "start": 401.94,
+      "text": "想都是"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.238806,
+      "end": 405.34,
+      "no_speech_prob": 0.0,
+      "start": 402.94,
+      "text": "你也想都是犯罪"
+    },
+    {
+      "avg_logprob": -0.258292,
+      "compression_ratio": 1.526316,
+      "end": 407.54,
+      "no_speech_prob": 0.0,
+      "start": 405.34,
+      "text": "就现在台湾"
+    },
+    {
+      "avg_logprob": -0.258292,
+      "compression_ratio": 1.526316,
+      "end": 409.04,
+      "no_speech_prob": 0.0,
+      "start": 407.54,
+      "text": "我这拙待到现在"
+    },
+    {
+      "avg_logprob": -0.258292,
+      "compression_ratio": 1.526316,
+      "end": 410.54,
+      "no_speech_prob": 0.0,
+      "start": 409.04,
+      "text": "我告诉咱们所有的"
+    },
+    {
+      "avg_logprob": -0.258292,
+      "compression_ratio": 1.526316,
+      "end": 411.94,
+      "no_speech_prob": 0.0,
+      "start": 410.54,
+      "text": "台湾的亲人朋友"
+    },
+    {
+      "avg_logprob": -0.258292,
+      "compression_ratio": 1.526316,
+      "end": 413.14,
+      "no_speech_prob": 0.0,
+      "start": 411.94,
+      "text": "能撤皆撤"
+    },
+    {
+      "avg_logprob": -0.258292,
+      "compression_ratio": 1.526316,
+      "end": 414.44,
+      "no_speech_prob": 0.0,
+      "start": 413.14,
+      "text": "活着"
+    },
+    {
+      "avg_logprob": -0.258292,
+      "compression_ratio": 1.526316,
+      "end": 418.44,
+      "no_speech_prob": 0.0,
+      "start": 414.44,
+      "text": "我们全球的所有的农场的兄弟姐妹们"
+    },
+    {
+      "avg_logprob": -0.258292,
+      "compression_ratio": 1.526316,
+      "end": 420.04,
+      "no_speech_prob": 0.0,
+      "start": 418.44,
+      "text": "只要是台湾同胞"
+    },
+    {
+      "avg_logprob": -0.258292,
+      "compression_ratio": 1.526316,
+      "end": 421.14,
+      "no_speech_prob": 0.0,
+      "start": 420.04,
+      "text": "只要是战友"
+    },
+    {
+      "avg_logprob": -0.258292,
+      "compression_ratio": 1.526316,
+      "end": 423.94,
+      "no_speech_prob": 0.0,
+      "start": 421.14,
+      "text": "我们战友要对待兄弟姐妹一样对待"
+    },
+    {
+      "avg_logprob": -0.258292,
+      "compression_ratio": 1.526316,
+      "end": 425.94,
+      "no_speech_prob": 0.0,
+      "start": 423.94,
+      "text": "同胞要对待同胞一样对待"
+    },
+    {
+      "avg_logprob": -0.362184,
+      "compression_ratio": 1.099237,
+      "end": 428.14,
+      "no_speech_prob": 0.0,
+      "start": 425.94,
+      "text": "不要有任何这了那的"
+    },
+    {
+      "avg_logprob": -0.362184,
+      "compression_ratio": 1.099237,
+      "end": 430.14,
+      "no_speech_prob": 0.0,
+      "start": 428.14,
+      "text": "更没有资格批评"
+    },
+    {
+      "avg_logprob": -0.362184,
+      "compression_ratio": 1.099237,
+      "end": 432.54,
+      "no_speech_prob": 0.0,
+      "start": 430.14,
+      "text": "你更没有一个居高临下的"
+    },
+    {
+      "avg_logprob": -0.362184,
+      "compression_ratio": 1.099237,
+      "end": 434.54,
+      "no_speech_prob": 0.0,
+      "start": 432.54,
+      "text": "你应该捧着手轻"
+    },
+    {
+      "avg_logprob": -0.362184,
+      "compression_ratio": 1.099237,
+      "end": 436.14,
+      "no_speech_prob": 0.0,
+      "start": 434.54,
+      "text": "他们危难之时"
+    },
+    {
+      "avg_logprob": -0.362184,
+      "compression_ratio": 1.099237,
+      "end": 438.14,
+      "no_speech_prob": 0.0,
+      "start": 436.14,
+      "text": "把心拿出来帮他们"
+    },
+    {
+      "avg_logprob": -0.213578,
+      "compression_ratio": 1.360465,
+      "end": 440.34,
+      "no_speech_prob": 0.0,
+      "start": 438.14,
+      "text": "拜托了"
+    },
+    {
+      "avg_logprob": -0.213578,
+      "compression_ratio": 1.360465,
+      "end": 442.74,
+      "no_speech_prob": 0.0,
+      "start": 440.34,
+      "text": "做善"
+    },
+    {
+      "avg_logprob": -0.213578,
+      "compression_ratio": 1.360465,
+      "end": 443.94,
+      "no_speech_prob": 0.0,
+      "start": 442.74,
+      "text": "行善"
+    },
+    {
+      "avg_logprob": -0.213578,
+      "compression_ratio": 1.360465,
+      "end": 444.74,
+      "no_speech_prob": 0.0,
+      "start": 443.94,
+      "text": "帮人"
+    },
+    {
+      "avg_logprob": -0.213578,
+      "compression_ratio": 1.360465,
+      "end": 446.74,
+      "no_speech_prob": 0.0,
+      "start": 444.74,
+      "text": "绝对比害人"
+    },
+    {
+      "avg_logprob": -0.213578,
+      "compression_ratio": 1.360465,
+      "end": 448.44,
+      "no_speech_prob": 0.0,
+      "start": 446.74,
+      "text": "抢人家"
+    },
+    {
+      "avg_logprob": -0.213578,
+      "compression_ratio": 1.360465,
+      "end": 449.84,
+      "no_speech_prob": 0.0,
+      "start": 448.44,
+      "text": "骗人家好得多"
+    },
+    {
+      "avg_logprob": -0.213578,
+      "compression_ratio": 1.360465,
+      "end": 452.14,
+      "no_speech_prob": 0.0,
+      "start": 449.84,
+      "text": "不要趁人之危"
+    },
+    {
+      "avg_logprob": -0.213578,
+      "compression_ratio": 1.360465,
+      "end": 454.24,
+      "no_speech_prob": 0.0,
+      "start": 452.14,
+      "text": "不要趁人之危"
+    },
+    {
+      "avg_logprob": -0.213578,
+      "compression_ratio": 1.360465,
+      "end": 456.44,
+      "no_speech_prob": 0.0,
+      "start": 454.24,
+      "text": "趁人之危的所有人"
+    },
+    {
+      "avg_logprob": -0.213578,
+      "compression_ratio": 1.360465,
+      "end": 457.94,
+      "no_speech_prob": 0.0,
+      "start": 456.44,
+      "text": "都会没有好下场的"
+    },
+    {
+      "avg_logprob": -0.213578,
+      "compression_ratio": 1.360465,
+      "end": 460.94,
+      "no_speech_prob": 0.0,
+      "start": 457.94,
+      "text": "一定记住"
+    },
+    {
+      "avg_logprob": -0.213578,
+      "compression_ratio": 1.360465,
+      "end": 462.64,
+      "no_speech_prob": 0.0,
+      "start": 460.94,
+      "text": "没有人"
+    },
+    {
+      "avg_logprob": -0.213578,
+      "compression_ratio": 1.360465,
+      "end": 464.74,
+      "no_speech_prob": 0.0,
+      "start": 462.64,
+      "text": "没有过不去的战争"
+    },
+    {
+      "avg_logprob": -0.213578,
+      "compression_ratio": 1.360465,
+      "end": 466.64,
+      "no_speech_prob": 0.0,
+      "start": 464.74,
+      "text": "你隔着战争这边"
+    },
+    {
+      "avg_logprob": -0.213578,
+      "compression_ratio": 1.360465,
+      "end": 468.04,
+      "no_speech_prob": 0.0,
+      "start": 466.64,
+      "text": "你就死掉了"
+    },
+    {
+      "avg_logprob": -0.172558,
+      "compression_ratio": 1.411765,
+      "end": 470.14,
+      "no_speech_prob": 0.0,
+      "start": 468.04,
+      "text": "过去的战争就能过去"
+    },
+    {
+      "avg_logprob": -0.172558,
+      "compression_ratio": 1.411765,
+      "end": 471.64,
+      "no_speech_prob": 0.0,
+      "start": 470.14,
+      "text": "没有过不去的坎"
+    },
+    {
+      "avg_logprob": -0.172558,
+      "compression_ratio": 1.411765,
+      "end": 473.64,
+      "no_speech_prob": 0.0,
+      "start": 471.64,
+      "text": "没有跨不过的战争"
+    },
+    {
+      "avg_logprob": -0.172558,
+      "compression_ratio": 1.411765,
+      "end": 476.34,
+      "no_speech_prob": 0.0,
+      "start": 473.64,
+      "text": "人生中没有跨不去的灾难"
+    },
+    {
+      "avg_logprob": -0.172558,
+      "compression_ratio": 1.411765,
+      "end": 479.04,
+      "no_speech_prob": 0.0,
+      "start": 476.34,
+      "text": "但是人不要跪下来"
+    },
+    {
+      "avg_logprob": -0.172558,
+      "compression_ratio": 1.411765,
+      "end": 481.44,
+      "no_speech_prob": 0.0,
+      "start": 479.04,
+      "text": "跪下来即使你活着"
+    },
+    {
+      "avg_logprob": -0.172558,
+      "compression_ratio": 1.411765,
+      "end": 482.84,
+      "no_speech_prob": 0.0,
+      "start": 481.44,
+      "text": "还不如死了呢"
+    },
+    {
+      "avg_logprob": -0.172558,
+      "compression_ratio": 1.411765,
+      "end": 485.94,
+      "no_speech_prob": 0.0,
+      "start": 482.84,
+      "text": "所以说兄弟姐妹们"
+    },
+    {
+      "avg_logprob": -0.172558,
+      "compression_ratio": 1.411765,
+      "end": 487.34,
+      "no_speech_prob": 0.0,
+      "start": 485.94,
+      "text": "一定要记住"
+    },
+    {
+      "avg_logprob": -0.172558,
+      "compression_ratio": 1.411765,
+      "end": 489.84,
+      "no_speech_prob": 0.0,
+      "start": 487.34,
+      "text": "拜托了台湾的同胞们兄弟姐妹"
+    },
+    {
+      "avg_logprob": -0.172558,
+      "compression_ratio": 1.411765,
+      "end": 491.14,
+      "no_speech_prob": 0.0,
+      "start": 489.84,
+      "text": "能撤则撤"
+    },
+    {
+      "avg_logprob": -0.172558,
+      "compression_ratio": 1.411765,
+      "end": 492.14,
+      "no_speech_prob": 0.0,
+      "start": 491.14,
+      "text": "能躲则躲"
+    },
+    {
+      "avg_logprob": -0.172558,
+      "compression_ratio": 1.411765,
+      "end": 495.74,
+      "no_speech_prob": 0.0,
+      "start": 492.14,
+      "text": "今天联盟委员会会召开所有的大会"
+    },
+    {
+      "avg_logprob": -0.172558,
+      "compression_ratio": 1.411765,
+      "end": 497.74,
+      "no_speech_prob": 0.0,
+      "start": 495.74,
+      "text": "商讨一致对撤"
+    },
+    {
+      "avg_logprob": -0.239073,
+      "compression_ratio": 1.084507,
+      "end": 499.04,
+      "no_speech_prob": 0.0,
+      "start": 497.74,
+      "text": "相信我"
+    },
+    {
+      "avg_logprob": -0.239073,
+      "compression_ratio": 1.084507,
+      "end": 501.34,
+      "no_speech_prob": 0.0,
+      "start": 499.04,
+      "text": "整个共产党的军队"
+    },
+    {
+      "avg_logprob": -0.239073,
+      "compression_ratio": 1.084507,
+      "end": 503.34,
+      "no_speech_prob": 0.0,
+      "start": 501.34,
+      "text": "瞬间就会到达台湾"
+    },
+    {
+      "avg_logprob": -0.239073,
+      "compression_ratio": 1.084507,
+      "end": 506.04,
+      "no_speech_prob": 0.0,
+      "start": 503.34,
+      "text": "而且是你无法想象的方式"
+    },
+    {
+      "avg_logprob": -0.239073,
+      "compression_ratio": 1.084507,
+      "end": 512.34,
+      "no_speech_prob": 0.0,
+      "start": 506.04,
+      "text": "共产党就是要拿台湾2300人的"
+    },
+    {
+      "avg_logprob": -0.239073,
+      "compression_ratio": 1.084507,
+      "end": 513.44,
+      "no_speech_prob": 0.0,
+      "start": 512.34,
+      "text": "300人的命"
+    },
+    {
+      "avg_logprob": -0.239073,
+      "compression_ratio": 1.084507,
+      "end": 515.34,
+      "no_speech_prob": 0.0,
+      "start": 513.44,
+      "text": "来铸就现在"
+    },
+    {
+      "avg_logprob": -0.295956,
+      "compression_ratio": 0.908163,
+      "end": 516.64,
+      "no_speech_prob": 0.0,
+      "start": 515.34,
+      "text": "在习太阳"
+    },
+    {
+      "avg_logprob": -0.295956,
+      "compression_ratio": 0.908163,
+      "end": 520.44,
+      "no_speech_prob": 0.0,
+      "start": 516.64,
+      "text": "和现在的共产党再多活20年"
+    },
+    {
+      "avg_logprob": -0.295956,
+      "compression_ratio": 0.908163,
+      "end": 525.64,
+      "no_speech_prob": 0.0,
+      "start": 523.94,
+      "text": "这就那么疯狂"
+    },
+    {
+      "avg_logprob": -0.295956,
+      "compression_ratio": 0.908163,
+      "end": 527.64,
+      "no_speech_prob": 0.0,
+      "start": 525.64,
+      "text": "所以说兄弟姐妹们"
+    },
+    {
+      "avg_logprob": -0.21671,
+      "compression_ratio": 1.557692,
+      "end": 529.54,
+      "no_speech_prob": 0.0,
+      "start": 527.64,
+      "text": "一定要记住"
+    },
+    {
+      "avg_logprob": -0.21671,
+      "compression_ratio": 1.557692,
+      "end": 531.24,
+      "no_speech_prob": 0.0,
+      "start": 529.54,
+      "text": "要认真"
+    },
+    {
+      "avg_logprob": -0.21671,
+      "compression_ratio": 1.557692,
+      "end": 533.24,
+      "no_speech_prob": 0.0,
+      "start": 531.24,
+      "text": "七哥很严肃地告诉大家"
+    },
+    {
+      "avg_logprob": -0.21671,
+      "compression_ratio": 1.557692,
+      "end": 535.24,
+      "no_speech_prob": 0.0,
+      "start": 533.24,
+      "text": "我尽了我的所能了"
+    },
+    {
+      "avg_logprob": -0.21671,
+      "compression_ratio": 1.557692,
+      "end": 537.64,
+      "no_speech_prob": 0.0,
+      "start": 536.24,
+      "text": "我尽了我的所能了"
+    },
+    {
+      "avg_logprob": -0.21671,
+      "compression_ratio": 1.557692,
+      "end": 539.74,
+      "no_speech_prob": 0.0,
+      "start": 537.64,
+      "text": "我能做的也就这么多了"
+    },
+    {
+      "avg_logprob": -0.21671,
+      "compression_ratio": 1.557692,
+      "end": 542.24,
+      "no_speech_prob": 0.0,
+      "start": 539.74,
+      "text": "我能做的也就这么多了"
+    },
+    {
+      "avg_logprob": -0.289349,
+      "compression_ratio": 1.137931,
+      "end": 546.84,
+      "no_speech_prob": 0.0,
+      "start": 542.24,
+      "text": "其他的就得靠台湾兄弟姐妹们"
+    },
+    {
+      "avg_logprob": -0.289349,
+      "compression_ratio": 1.137931,
+      "end": 548.84,
+      "no_speech_prob": 0.0,
+      "start": 546.84,
+      "text": "你们的修行"
+    },
+    {
+      "avg_logprob": -0.289349,
+      "compression_ratio": 1.137931,
+      "end": 551.04,
+      "no_speech_prob": 0.0,
+      "start": 548.84,
+      "text": "和你们的判断"
+    },
+    {
+      "avg_logprob": -0.289349,
+      "compression_ratio": 1.137931,
+      "end": 553.54,
+      "no_speech_prob": 0.0,
+      "start": 551.04,
+      "text": "但不管任何情况下"
+    },
+    {
+      "avg_logprob": -0.289349,
+      "compression_ratio": 1.137931,
+      "end": 555.04,
+      "no_speech_prob": 0.0,
+      "start": 553.54,
+      "text": "文贵和战友们"
+    },
+    {
+      "avg_logprob": -0.289349,
+      "compression_ratio": 1.137931,
+      "end": 557.34,
+      "no_speech_prob": 0.0,
+      "start": 555.04,
+      "text": "都会和台湾的战友同胞"
+    },
+    {
+      "avg_logprob": -0.289349,
+      "compression_ratio": 1.137931,
+      "end": 559.14,
+      "no_speech_prob": 0.0,
+      "start": 557.34,
+      "text": "坚决地站在一起"
+    },
+    {
+      "avg_logprob": -0.218956,
+      "compression_ratio": 1.213974,
+      "end": 561.94,
+      "no_speech_prob": 0.0,
+      "start": 559.14,
+      "text": "而且我们更加坚定地"
+    },
+    {
+      "avg_logprob": -0.218956,
+      "compression_ratio": 1.213974,
+      "end": 564.14,
+      "no_speech_prob": 0.0,
+      "start": 561.94,
+      "text": "要尽快地消灭共产党"
+    },
+    {
+      "avg_logprob": -0.218956,
+      "compression_ratio": 1.213974,
+      "end": 567.74,
+      "no_speech_prob": 0.0,
+      "start": 564.14,
+      "text": "其被威胁被绑架"
+    },
+    {
+      "avg_logprob": -0.218956,
+      "compression_ratio": 1.213974,
+      "end": 570.94,
+      "no_speech_prob": 0.0,
+      "start": 567.74,
+      "text": "被战争阴云笼罩的台湾同胞保抄"
+    },
+    {
+      "avg_logprob": -0.218956,
+      "compression_ratio": 1.213974,
+      "end": 572.34,
+      "no_speech_prob": 0.0,
+      "start": 570.94,
+      "text": "战友们"
+    },
+    {
+      "avg_logprob": -0.218956,
+      "compression_ratio": 1.213974,
+      "end": 573.94,
+      "no_speech_prob": 0.0,
+      "start": 572.34,
+      "text": "我一再地说"
+    },
+    {
+      "avg_logprob": -0.218956,
+      "compression_ratio": 1.213974,
+      "end": 576.94,
+      "no_speech_prob": 0.0,
+      "start": 573.94,
+      "text": "我今天说了N点2022年"
+    },
+    {
+      "avg_logprob": -0.218956,
+      "compression_ratio": 1.213974,
+      "end": 578.74,
+      "no_speech_prob": 0.0,
+      "start": 576.94,
+      "text": "是人类上有史以来"
+    },
+    {
+      "avg_logprob": -0.218956,
+      "compression_ratio": 1.213974,
+      "end": 580.24,
+      "no_speech_prob": 0.0,
+      "start": 578.74,
+      "text": "最黑暗的一年"
+    },
+    {
+      "avg_logprob": -0.218956,
+      "compression_ratio": 1.213974,
+      "end": 582.34,
+      "no_speech_prob": 0.0,
+      "start": 580.24,
+      "text": "经济将崩溃"
+    },
+    {
+      "avg_logprob": -0.218956,
+      "compression_ratio": 1.213974,
+      "end": 586.34,
+      "no_speech_prob": 0.0,
+      "start": 582.34,
+      "text": "人心会受到最大的检验"
+    },
+    {
+      "avg_logprob": -0.218956,
+      "compression_ratio": 1.213974,
+      "end": 588.34,
+      "no_speech_prob": 0.0,
+      "start": 586.34,
+      "text": "会受到上天的惩罚"
+    },
+    {
+      "avg_logprob": -0.260854,
+      "compression_ratio": 1.066667,
+      "end": 590.84,
+      "no_speech_prob": 0.0,
+      "start": 588.34,
+      "text": "因为人类太坦烂了"
+    },
+    {
+      "avg_logprob": -0.260854,
+      "compression_ratio": 1.066667,
+      "end": 593.34,
+      "no_speech_prob": 0.0,
+      "start": 590.84,
+      "text": "重庸着共产党"
+    },
+    {
+      "avg_logprob": -0.260854,
+      "compression_ratio": 1.066667,
+      "end": 594.64,
+      "no_speech_prob": 0.0,
+      "start": 593.34,
+      "text": "怂恿着共产党"
+    },
+    {
+      "avg_logprob": -0.260854,
+      "compression_ratio": 1.066667,
+      "end": 598.74,
+      "no_speech_prob": 0.0,
+      "start": 594.64,
+      "text": "培养着邪恶的五大邪恶敌国"
+    }
+  ],
+  "text": "今天大家的心情都很沉重哦!尊敬的戰友們好!2月24號哎!這今天的大家心情都很沉重啊看到這個俄羅斯啊這個轟炸機坦克從天而降整個的烏克蘭現在陰雲尼布去過烏克蘭的人都會知道那個陰天就像英國的陰天一樣會讓你窒息嘎嘎嘎嘎的冷再加上你想想整個城市的感覺那種壓抑現在城市中心聚集著那些無辜的不知道該如何地方去的人就像你看到當時到非洲去你看到非洲上從山上降落的那個突破一樣嘩就下來了很多動物無辜的也不能去那兒就在下面直接就給淹了那種殘酷那種無奈就像在北極看到海雄海寬從山上好像掉落一樣自殺一樣很可怕所以說兄弟姐妹們太殘酷了這個戰爭力我們並不遙遠它非常的淒慘從人類上所有的戰爭看沒有一個戰爭不是扯淡的沒有一個戰爭是對自己的國家民族有利的都是其少數人的瘋狂的個人權利和個人的危機和精神疾病還有都是因為中國女人的戰爭就這麼荒唐現在普京為了什麼習亥要為了什麼我再次的告訴大家如果你不信爆炸革命新中爆炸革命那就去吧我最近老是在想我們老是說扯著傻著喊讓這個不打疫苗那敢吃青豪樹然後這個要相信戰爭這四五年來走下來發現信的則信不信的你喊啥也沒用那反過來說了咱不能有著硬幹心理他不信的就讓他去吧對吧那不是好事兒嗎陸大腦袋蛇腰炎那九指腰這幫孫子還有雞腿潘什麼火雞拱啊周孝正這幫孫子還有高冰塵那個爛鞭王應該把他送到烏克蘭去那不是沒戰爭嗎他應該在兩周以前去烏克蘭對了火雞拱去過烏克蘭在那和共產黨會面是吧所以說兄弟姐妹們這你就能看到人他是有緣分的跟親中國聯邦跟爆料革命跟七哥有緣分的他自有緣沒緣分的沒啥事兒沒這你啥做不了怎麼辦也沒有所以說兄弟姐妹們這就是緣分這就是人生烏克蘭這個我好多朋友都跑出來了哎呀從昨晚那再過電話那就是哭謝謝你謝謝你謝謝你我們都出來了哎呀多有錢的人親人在國內在戰爭中他都痛苦不是每個人把全家都弄出來的很多人家人還都在呢有的有朋友在頓尼斯克搞牛奶場的他說我和我太太俩孩子出来了全家人都在敦尼斯克的是不是啊如干斯克都有痛苦吧咋办呢咋办呢世界就这么疯狂这个国家就成为了世界上的政治经济的牺牲品齐哥已经连着说了三四年了世界经济一定会崩溃没选择世界找了一个崩溃的理由不是冠状疫不是共产党病毒也不是疫苗乌克兰战争这个黑国北大俄罗斯一夜之间的45%的股票暴力昨天晚上的大宗交易市场使其比伏啊有的一个产品能过十几手过去50年都没有别说过去30年50年都没有你手里有点油我手里有点期货卖个来卖去能卖十几手现在这市场啥样我也不知道一定是暴跌供应链一定是崩塌然后石油商爆发然后等一段时间啪啥都会暴下来这个起起伏伏多少家和人亡战友们千万记住发战争财发投机财发快钱发赌博财你一定会死无葬身子弟你不要去尝试就像七哥本人我可以给他们基金建议我从来不上我的身子我可以像天罢说郭文贵没做过一次投机的声音没有一次投机的钱我永远相信一个哲理钱来得有多快走得有多快弄不好还带走你的命还带走你家人的命我从来不要这块钱就像赌博一样就不管你赌的有多大最后赌博是一定会输的这是规则这是天意所以说兄弟姐妹们千万别在那里眼馋是吧手里拿着膜再就着包子放下包子那边拿起了榨菜拿起鲑鱼榨菜包鱼还没吃进去呢旁边来牛肉了又来海参了你就抓海参牛肉这边还没放下呢发现卧菜还有更好的肉还有熊掌还有燕锅你吃得下去吗你胃消化得了吗我看到有些战士发生七个是不是在干七个是不是在干我真的无语这个时候就是基辅给我金砖金条钻石我都不要好甭说是钻给我我都不要因为老天爷会睁眼的带着人血的馒头带着人血的钻石!带着人血的金条他一定会再用带走你的鲜血不要想想都是你也想都是犯罪就现在台湾我这拙待到现在我告诉咱们所有的台湾的亲人朋友能撤皆撤活着我们全球的所有的农场的兄弟姐妹们只要是台湾同胞只要是战友我们战友要对待兄弟姐妹一样对待同胞要对待同胞一样对待不要有任何这了那的更没有资格批评你更没有一个居高临下的你应该捧着手轻他们危难之时把心拿出来帮他们拜托了做善行善帮人绝对比害人抢人家骗人家好得多不要趁人之危不要趁人之危趁人之危的所有人都会没有好下场的一定记住没有人没有过不去的战争你隔着战争这边你就死掉了过去的战争就能过去没有过不去的坎没有跨不过的战争人生中没有跨不去的灾难但是人不要跪下来跪下来即使你活着还不如死了呢所以说兄弟姐妹们一定要记住拜托了台湾的同胞们兄弟姐妹能撤则撤能躲则躲今天联盟委员会会召开所有的大会商讨一致对撤相信我整个共产党的军队瞬间就会到达台湾而且是你无法想象的方式共产党就是要拿台湾2300人的300人的命来铸就现在在习太阳和现在的共产党再多活20年这就那么疯狂所以说兄弟姐妹们一定要记住要认真七哥很严肃地告诉大家我尽了我的所能了我尽了我的所能了我能做的也就这么多了我能做的也就这么多了其他的就得靠台湾兄弟姐妹们你们的修行和你们的判断但不管任何情况下文贵和战友们都会和台湾的战友同胞坚决地站在一起而且我们更加坚定地要尽快地消灭共产党其被威胁被绑架被战争阴云笼罩的台湾同胞保抄战友们我一再地说我今天说了N点2022年是人类上有史以来最黑暗的一年经济将崩溃人心会受到最大的检验会受到上天的惩罚因为人类太坦烂了重庸着共产党怂恿着共产党培养着邪恶的五大邪恶敌国"
+}

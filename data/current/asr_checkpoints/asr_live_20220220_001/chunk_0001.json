@@ -1,0 +1,2400 @@
+{
+  "chunk_audio_sha256": "cd86f9effcf66916df3e2ecf7a9c492f5d07fb1047f15bb1de65b4e7c7334f74",
+  "chunk_index": 1,
+  "completed_at": "2026-10-25T10:50:54Z",
+  "language": "zh",
+  "live_id": "LIVE_20220220_001",
+  "media_committed_to_git": false,
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "offset_sec": 900,
+  "paid_api_used": false,
+  "processing_location": "github-hosted-macos-arm64",
+  "schema_version": "cloud-asr-chunk-v1",
+  "segments": [
+    {
+      "avg_logprob": -2.184113,
+      "compression_ratio": 1.111111,
+      "end": 902.48,
+      "no_speech_prob": 0.0,
+      "start": 900.0,
+      "text": "在凡徹的圈"
+    },
+    {
+      "avg_logprob": -2.184113,
+      "compression_ratio": 1.111111,
+      "end": 903.58,
+      "no_speech_prob": 0.0,
+      "start": 902.48,
+      "text": "在凡徹的圈"
+    },
+    {
+      "avg_logprob": -1.093894,
+      "compression_ratio": 19.565217,
+      "end": 932.62,
+      "no_speech_prob": 0.0,
+      "start": 930.0,
+      "text": "i know you"
+    },
+    {
+      "avg_logprob": -1.093894,
+      "compression_ratio": 19.565217,
+      "end": 934.26,
+      "no_speech_prob": 0.0,
+      "start": 932.62,
+      "text": "i know you"
+    },
+    {
+      "avg_logprob": -1.093894,
+      "compression_ratio": 19.565217,
+      "end": 935.32,
+      "no_speech_prob": 0.0,
+      "start": 934.26,
+      "text": "i know you"
+    },
+    {
+      "avg_logprob": -1.093894,
+      "compression_ratio": 19.565217,
+      "end": 936.16,
+      "no_speech_prob": 0.0,
+      "start": 935.32,
+      "text": "i know you"
+    },
+    {
+      "avg_logprob": -1.093894,
+      "compression_ratio": 19.565217,
+      "end": 936.64,
+      "no_speech_prob": 0.0,
+      "start": 936.16,
+      "text": "i know you"
+    },
+    {
+      "avg_logprob": -1.093894,
+      "compression_ratio": 19.565217,
+      "end": 937.02,
+      "no_speech_prob": 0.0,
+      "start": 936.64,
+      "text": "i know you"
+    },
+    {
+      "avg_logprob": -1.093894,
+      "compression_ratio": 19.565217,
+      "end": 937.28,
+      "no_speech_prob": 0.0,
+      "start": 937.02,
+      "text": "i know you"
+    },
+    {
+      "avg_logprob": -1.093894,
+      "compression_ratio": 19.565217,
+      "end": 937.5,
+      "no_speech_prob": 0.0,
+      "start": 937.28,
+      "text": "i know you"
+    },
+    {
+      "avg_logprob": -1.093894,
+      "compression_ratio": 19.565217,
+      "end": 937.64,
+      "no_speech_prob": 0.0,
+      "start": 937.5,
+      "text": "i know you"
+    },
+    {
+      "avg_logprob": -1.093894,
+      "compression_ratio": 19.565217,
+      "end": 937.82,
+      "no_speech_prob": 0.0,
+      "start": 937.64,
+      "text": "i know you"
+    },
+    {
+      "avg_logprob": -1.093894,
+      "compression_ratio": 19.565217,
+      "end": 938.0,
+      "no_speech_prob": 0.0,
+      "start": 937.82,
+      "text": "i know you"
+    },
+    {
+      "avg_logprob": -1.093894,
+      "compression_ratio": 19.565217,
+      "end": 938.18,
+      "no_speech_prob": 0.0,
+      "start": 938.0,
+      "text": "i know you"
+    },
+    {
+      "avg_logprob": -1.093894,
+      "compression_ratio": 19.565217,
+      "end": 938.32,
+      "no_speech_prob": 0.0,
+      "start": 938.18,
+      "text": "i know you"
+    },
+    {
+      "avg_logprob": -1.093894,
+      "compression_ratio": 19.565217,
+      "end": 938.48,
+      "no_speech_prob": 0.0,
+      "start": 938.32,
+      "text": "i know you"
+    },
+    {
+      "avg_logprob": -1.093894,
+      "compression_ratio": 19.565217,
+      "end": 938.6,
+      "no_speech_prob": 0.0,
+      "start": 938.48,
+      "text": "i know you"
+    },
+    {
+      "avg_logprob": -1.093894,
+      "compression_ratio": 19.565217,
+      "end": 938.76,
+      "no_speech_prob": 0.0,
+      "start": 938.6,
+      "text": "i know you"
+    },
+    {
+      "avg_logprob": -1.093894,
+      "compression_ratio": 19.565217,
+      "end": 938.96,
+      "no_speech_prob": 0.0,
+      "start": 938.76,
+      "text": "i know you"
+    },
+    {
+      "avg_logprob": -1.093894,
+      "compression_ratio": 19.565217,
+      "end": 939.18,
+      "no_speech_prob": 0.0,
+      "start": 938.96,
+      "text": "i know you"
+    },
+    {
+      "avg_logprob": -1.093894,
+      "compression_ratio": 19.565217,
+      "end": 939.38,
+      "no_speech_prob": 0.0,
+      "start": 939.18,
+      "text": "i know you"
+    },
+    {
+      "avg_logprob": -1.093894,
+      "compression_ratio": 19.565217,
+      "end": 939.56,
+      "no_speech_prob": 0.0,
+      "start": 939.38,
+      "text": "i know you"
+    },
+    {
+      "avg_logprob": -1.093894,
+      "compression_ratio": 19.565217,
+      "end": 939.76,
+      "no_speech_prob": 0.0,
+      "start": 939.56,
+      "text": "i know you"
+    },
+    {
+      "avg_logprob": -1.093894,
+      "compression_ratio": 19.565217,
+      "end": 939.96,
+      "no_speech_prob": 0.0,
+      "start": 939.76,
+      "text": "i know you"
+    },
+    {
+      "avg_logprob": -1.093894,
+      "compression_ratio": 19.565217,
+      "end": 940.14,
+      "no_speech_prob": 0.0,
+      "start": 939.96,
+      "text": "i know you"
+    },
+    {
+      "avg_logprob": -1.093894,
+      "compression_ratio": 19.565217,
+      "end": 940.3,
+      "no_speech_prob": 0.0,
+      "start": 940.14,
+      "text": "i know you"
+    },
+    {
+      "avg_logprob": -1.093894,
+      "compression_ratio": 19.565217,
+      "end": 940.44,
+      "no_speech_prob": 0.0,
+      "start": 940.3,
+      "text": "i know you"
+    },
+    {
+      "avg_logprob": -1.093894,
+      "compression_ratio": 19.565217,
+      "end": 940.54,
+      "no_speech_prob": 0.0,
+      "start": 940.44,
+      "text": "i know you"
+    },
+    {
+      "avg_logprob": -1.093894,
+      "compression_ratio": 19.565217,
+      "end": 940.68,
+      "no_speech_prob": 0.0,
+      "start": 940.54,
+      "text": "i know you"
+    },
+    {
+      "avg_logprob": -1.093894,
+      "compression_ratio": 19.565217,
+      "end": 940.82,
+      "no_speech_prob": 0.0,
+      "start": 940.68,
+      "text": "i know you"
+    },
+    {
+      "avg_logprob": -1.093894,
+      "compression_ratio": 19.565217,
+      "end": 940.96,
+      "no_speech_prob": 0.0,
+      "start": 940.82,
+      "text": "i know you"
+    },
+    {
+      "avg_logprob": -1.093894,
+      "compression_ratio": 19.565217,
+      "end": 941.14,
+      "no_speech_prob": 0.0,
+      "start": 940.96,
+      "text": "i know you"
+    },
+    {
+      "avg_logprob": -1.093894,
+      "compression_ratio": 19.565217,
+      "end": 941.3,
+      "no_speech_prob": 0.0,
+      "start": 941.14,
+      "text": "i know you"
+    },
+    {
+      "avg_logprob": -1.093894,
+      "compression_ratio": 19.565217,
+      "end": 941.46,
+      "no_speech_prob": 0.0,
+      "start": 941.3,
+      "text": "i know you"
+    },
+    {
+      "avg_logprob": -1.093894,
+      "compression_ratio": 19.565217,
+      "end": 941.58,
+      "no_speech_prob": 0.0,
+      "start": 941.46,
+      "text": "i know you"
+    },
+    {
+      "avg_logprob": -1.093894,
+      "compression_ratio": 19.565217,
+      "end": 941.72,
+      "no_speech_prob": 0.0,
+      "start": 941.58,
+      "text": "i know you"
+    },
+    {
+      "avg_logprob": -1.093894,
+      "compression_ratio": 19.565217,
+      "end": 941.84,
+      "no_speech_prob": 0.0,
+      "start": 941.72,
+      "text": "i know you"
+    },
+    {
+      "avg_logprob": -1.093894,
+      "compression_ratio": 19.565217,
+      "end": 942.02,
+      "no_speech_prob": 0.0,
+      "start": 941.84,
+      "text": "i know you"
+    },
+    {
+      "avg_logprob": -1.093894,
+      "compression_ratio": 19.565217,
+      "end": 942.18,
+      "no_speech_prob": 0.0,
+      "start": 942.02,
+      "text": "i know you"
+    },
+    {
+      "avg_logprob": -1.093894,
+      "compression_ratio": 19.565217,
+      "end": 942.32,
+      "no_speech_prob": 0.0,
+      "start": 942.18,
+      "text": "i know you"
+    },
+    {
+      "avg_logprob": -1.093894,
+      "compression_ratio": 19.565217,
+      "end": 942.42,
+      "no_speech_prob": 0.0,
+      "start": 942.32,
+      "text": "i know you"
+    },
+    {
+      "avg_logprob": -1.093894,
+      "compression_ratio": 19.565217,
+      "end": 942.54,
+      "no_speech_prob": 0.0,
+      "start": 942.42,
+      "text": "i know you"
+    },
+    {
+      "avg_logprob": -1.093894,
+      "compression_ratio": 19.565217,
+      "end": 942.64,
+      "no_speech_prob": 0.0,
+      "start": 942.54,
+      "text": "i know you"
+    },
+    {
+      "avg_logprob": -1.093894,
+      "compression_ratio": 19.565217,
+      "end": 942.74,
+      "no_speech_prob": 0.0,
+      "start": 942.64,
+      "text": "i know you"
+    },
+    {
+      "avg_logprob": -1.093894,
+      "compression_ratio": 19.565217,
+      "end": 942.88,
+      "no_speech_prob": 0.0,
+      "start": 942.74,
+      "text": "i know you"
+    },
+    {
+      "avg_logprob": -1.093894,
+      "compression_ratio": 19.565217,
+      "end": 943.02,
+      "no_speech_prob": 0.0,
+      "start": 942.88,
+      "text": "i know you"
+    },
+    {
+      "avg_logprob": -0.187672,
+      "compression_ratio": 0.875,
+      "end": 973.0,
+      "no_speech_prob": 0.0,
+      "start": 943.02,
+      "text": "优优独播剧场——YoYo Television Series Exclusive"
+    },
+    {
+      "avg_logprob": -0.055217,
+      "compression_ratio": 0.875,
+      "end": 1003.0,
+      "no_speech_prob": 0.0,
+      "start": 973.02,
+      "text": "优优独播剧场——YoYo Television Series Exclusive"
+    },
+    {
+      "avg_logprob": -0.220549,
+      "compression_ratio": 1.209424,
+      "end": 1006.02,
+      "no_speech_prob": 0.0,
+      "start": 1003.02,
+      "text": "全球的爆料革命战友大家好"
+    },
+    {
+      "avg_logprob": -0.220549,
+      "compression_ratio": 1.209424,
+      "end": 1010.02,
+      "no_speech_prob": 0.0,
+      "start": 1006.02,
+      "text": "这里是美东时间2月20日星期天"
+    },
+    {
+      "avg_logprob": -0.220549,
+      "compression_ratio": 1.209424,
+      "end": 1013.02,
+      "no_speech_prob": 0.0,
+      "start": 1010.02,
+      "text": "欢迎大家观看文会大直播节目"
+    },
+    {
+      "avg_logprob": -0.220549,
+      "compression_ratio": 1.209424,
+      "end": 1016.02,
+      "no_speech_prob": 0.0,
+      "start": 1013.02,
+      "text": "我是今天的主持人依晨"
+    },
+    {
+      "avg_logprob": -0.220549,
+      "compression_ratio": 1.209424,
+      "end": 1018.02,
+      "no_speech_prob": 0.0,
+      "start": 1016.02,
+      "text": "今天也是我们伍叶花"
+    },
+    {
+      "avg_logprob": -0.220549,
+      "compression_ratio": 1.209424,
+      "end": 1023.02,
+      "no_speech_prob": 0.0,
+      "start": 1018.02,
+      "text": "波士顿的伍叶花农场和七哥的那个专场大直播"
+    },
+    {
+      "avg_logprob": -0.156971,
+      "compression_ratio": 1.227273,
+      "end": 1029.02,
+      "no_speech_prob": 0.0,
+      "start": 1023.02,
+      "text": "我也是第一次和一哥和战友们同框同心非常开心"
+    },
+    {
+      "avg_logprob": -0.156971,
+      "compression_ratio": 1.227273,
+      "end": 1033.02,
+      "no_speech_prob": 0.0,
+      "start": 1029.02,
+      "text": "能够和大家一起和七哥一起直播"
+    },
+    {
+      "avg_logprob": -0.156971,
+      "compression_ratio": 1.227273,
+      "end": 1036.02,
+      "no_speech_prob": 0.0,
+      "start": 1033.02,
+      "text": "度过这个快乐美好的时光"
+    },
+    {
+      "avg_logprob": -0.156971,
+      "compression_ratio": 1.227273,
+      "end": 1039.02,
+      "no_speech_prob": 0.0,
+      "start": 1036.02,
+      "text": "也是第一次同框"
+    },
+    {
+      "avg_logprob": -0.156971,
+      "compression_ratio": 1.227273,
+      "end": 1041.02,
+      "no_speech_prob": 0.0,
+      "start": 1039.02,
+      "text": "然后第一次又做主持人"
+    },
+    {
+      "avg_logprob": -0.205377,
+      "compression_ratio": 1.298969,
+      "end": 1043.02,
+      "no_speech_prob": 0.0,
+      "start": 1041.02,
+      "text": "那个就是刚刚这一推出来"
+    },
+    {
+      "avg_logprob": -0.205377,
+      "compression_ratio": 1.298969,
+      "end": 1045.02,
+      "no_speech_prob": 0.0,
+      "start": 1043.02,
+      "text": "确实有点那个心跳有点爆表了这样"
+    },
+    {
+      "avg_logprob": -0.205377,
+      "compression_ratio": 1.298969,
+      "end": 1049.02,
+      "no_speech_prob": 0.0,
+      "start": 1045.02,
+      "text": "那个今天五月花农场也是很多战友"
+    },
+    {
+      "avg_logprob": -0.205377,
+      "compression_ratio": 1.298969,
+      "end": 1053.02,
+      "no_speech_prob": 0.0,
+      "start": 1049.02,
+      "text": "同框同框有基本很多都是第一次来和七哥一起大直播的"
+    },
+    {
+      "avg_logprob": -0.205377,
+      "compression_ratio": 1.298969,
+      "end": 1058.02,
+      "no_speech_prob": 0.0,
+      "start": 1053.02,
+      "text": "那么我们那个先请各位战友那个给自我介绍"
+    },
+    {
+      "avg_logprob": -0.186402,
+      "compression_ratio": 1.337662,
+      "end": 1063.02,
+      "no_speech_prob": 0.0,
+      "start": 1058.02,
+      "text": "然后我们再请郭先生说那个文迪"
+    },
+    {
+      "avg_logprob": -0.186402,
+      "compression_ratio": 1.337662,
+      "end": 1067.02,
+      "no_speech_prob": 0.0,
+      "start": 1063.02,
+      "text": "观人好 全球的战友们好"
+    },
+    {
+      "avg_logprob": -0.186402,
+      "compression_ratio": 1.337662,
+      "end": 1070.02,
+      "no_speech_prob": 0.0,
+      "start": 1067.02,
+      "text": "我是来自维越花农场的文迪"
+    },
+    {
+      "avg_logprob": -0.186402,
+      "compression_ratio": 1.337662,
+      "end": 1073.02,
+      "no_speech_prob": 0.0,
+      "start": 1070.02,
+      "text": "听说今天大直播过了以后呢"
+    },
+    {
+      "avg_logprob": -0.186402,
+      "compression_ratio": 1.337662,
+      "end": 1075.02,
+      "no_speech_prob": 0.0,
+      "start": 1073.02,
+      "text": "这个世界会有巨大的变化"
+    },
+    {
+      "avg_logprob": -0.186402,
+      "compression_ratio": 1.337662,
+      "end": 1077.02,
+      "no_speech_prob": 0.0,
+      "start": 1075.02,
+      "text": "我今天上来主要是来留个爪印的"
+    },
+    {
+      "avg_logprob": -0.186402,
+      "compression_ratio": 1.337662,
+      "end": 1080.02,
+      "no_speech_prob": 0.0,
+      "start": 1077.02,
+      "text": "好 谢谢 请文肖"
+    },
+    {
+      "avg_logprob": -0.186402,
+      "compression_ratio": 1.337662,
+      "end": 1084.02,
+      "no_speech_prob": 0.0,
+      "start": 1081.02,
+      "text": "七哥好 全球战友们好"
+    },
+    {
+      "avg_logprob": -0.186402,
+      "compression_ratio": 1.337662,
+      "end": 1087.02,
+      "no_speech_prob": 0.0,
+      "start": 1084.02,
+      "text": "维越花农场 播一下视频部 文肖"
+    },
+    {
+      "avg_logprob": -0.219342,
+      "compression_ratio": 1.058333,
+      "end": 1090.02,
+      "no_speech_prob": 0.0,
+      "start": 1087.02,
+      "text": "是第二次跟七哥同心同狂"
+    },
+    {
+      "avg_logprob": -0.219342,
+      "compression_ratio": 1.058333,
+      "end": 1092.02,
+      "no_speech_prob": 0.0,
+      "start": 1090.02,
+      "text": "非常非常荣幸"
+    },
+    {
+      "avg_logprob": -0.219342,
+      "compression_ratio": 1.058333,
+      "end": 1094.02,
+      "no_speech_prob": 0.0,
+      "start": 1092.02,
+      "text": "第一次水多跑了两次厕所"
+    },
+    {
+      "avg_logprob": -0.219342,
+      "compression_ratio": 1.058333,
+      "end": 1096.02,
+      "no_speech_prob": 0.0,
+      "start": 1094.02,
+      "text": "今天一点事都没有 谢谢"
+    },
+    {
+      "avg_logprob": -0.219342,
+      "compression_ratio": 1.058333,
+      "end": 1099.02,
+      "no_speech_prob": 0.0,
+      "start": 1096.02,
+      "text": "哈哈哈哈"
+    },
+    {
+      "avg_logprob": -0.174835,
+      "compression_ratio": 1.246154,
+      "end": 1108.02,
+      "no_speech_prob": 0.0,
+      "start": 1099.02,
+      "text": "文平先生好 全球的战友们好"
+    },
+    {
+      "avg_logprob": -0.174835,
+      "compression_ratio": 1.246154,
+      "end": 1111.02,
+      "no_speech_prob": 0.0,
+      "start": 1108.02,
+      "text": "全世界的父老乡亲们你们好"
+    },
+    {
+      "avg_logprob": -0.174835,
+      "compression_ratio": 1.246154,
+      "end": 1116.02,
+      "no_speech_prob": 0.0,
+      "start": 1111.02,
+      "text": "我是文平 我是很荣幸"
+    },
+    {
+      "avg_logprob": -0.174835,
+      "compression_ratio": 1.246154,
+      "end": 1121.02,
+      "no_speech_prob": 0.0,
+      "start": 1116.02,
+      "text": "五月花农场 代表五月花农场和全世界的父奶奶"
+    },
+    {
+      "avg_logprob": -0.612327,
+      "compression_ratio": 1.103448,
+      "end": 1127.02,
+      "no_speech_prob": 0.0,
+      "start": 1121.02,
+      "text": "今天有限的在这里得瑟瑟得瑟 谢谢"
+    },
+    {
+      "avg_logprob": -0.612327,
+      "compression_ratio": 1.103448,
+      "end": 1131.02,
+      "no_speech_prob": 0.0,
+      "start": 1130.02,
+      "text": "郭先生 谢谢"
+    },
+    {
+      "avg_logprob": -0.612327,
+      "compression_ratio": 1.103448,
+      "end": 1136.02,
+      "no_speech_prob": 0.0,
+      "start": 1132.02,
+      "text": "文一听 这个文婷文婷文肖"
+    },
+    {
+      "avg_logprob": -0.2925,
+      "compression_ratio": 1.31875,
+      "end": 1139.02,
+      "no_speech_prob": 0.0,
+      "start": 1136.02,
+      "text": "给他打招呼 想起了不老乡亲"
+    },
+    {
+      "avg_logprob": -0.2925,
+      "compression_ratio": 1.31875,
+      "end": 1142.02,
+      "no_speech_prob": 0.0,
+      "start": 1139.02,
+      "text": "哎呀 这想起了我们这老家"
+    },
+    {
+      "avg_logprob": -0.2925,
+      "compression_ratio": 1.31875,
+      "end": 1146.02,
+      "no_speech_prob": 0.0,
+      "start": 1142.02,
+      "text": "死的活的 愿意到 愿意不到的 全问好"
+    },
+    {
+      "avg_logprob": -0.2925,
+      "compression_ratio": 1.31875,
+      "end": 1150.02,
+      "no_speech_prob": 0.0,
+      "start": 1146.02,
+      "text": "中国人这个叫周到 这个叫周到"
+    },
+    {
+      "avg_logprob": -0.2925,
+      "compression_ratio": 1.31875,
+      "end": 1154.02,
+      "no_speech_prob": 0.0,
+      "start": 1150.02,
+      "text": "周到的了 别人和自己都已经周到不到了"
+    },
+    {
+      "avg_logprob": -0.101035,
+      "compression_ratio": 1.390244,
+      "end": 1157.02,
+      "no_speech_prob": 0.0,
+      "start": 1154.02,
+      "text": "但是为了周到 谁也周不到"
+    },
+    {
+      "avg_logprob": -0.101035,
+      "compression_ratio": 1.390244,
+      "end": 1160.02,
+      "no_speech_prob": 0.0,
+      "start": 1157.02,
+      "text": "尊敬的战友们好 今天是2月20号"
+    },
+    {
+      "avg_logprob": -0.101035,
+      "compression_ratio": 1.390244,
+      "end": 1162.02,
+      "no_speech_prob": 0.0,
+      "start": 1160.02,
+      "text": "今天是一个特别的日子"
+    },
+    {
+      "avg_logprob": -0.101035,
+      "compression_ratio": 1.390244,
+      "end": 1165.02,
+      "no_speech_prob": 0.0,
+      "start": 1162.02,
+      "text": "共产党的冬奥的冬眠会"
+    },
+    {
+      "avg_logprob": -0.101035,
+      "compression_ratio": 1.390244,
+      "end": 1170.02,
+      "no_speech_prob": 0.0,
+      "start": 1165.02,
+      "text": "这个也正在所谓的闭不了墓的闭幕中"
+    },
+    {
+      "avg_logprob": -0.101035,
+      "compression_ratio": 1.390244,
+      "end": 1173.02,
+      "no_speech_prob": 0.0,
+      "start": 1170.02,
+      "text": "我觉得共产党是真的是死不瞑目"
+    },
+    {
+      "avg_logprob": -0.101035,
+      "compression_ratio": 1.390244,
+      "end": 1175.02,
+      "no_speech_prob": 0.0,
+      "start": 1173.02,
+      "text": "他说死也闭不了墓了"
+    },
+    {
+      "avg_logprob": -0.101035,
+      "compression_ratio": 1.390244,
+      "end": 1177.02,
+      "no_speech_prob": 0.0,
+      "start": 1175.02,
+      "text": "今天呢 我都忘了"
+    },
+    {
+      "avg_logprob": -0.101035,
+      "compression_ratio": 1.390244,
+      "end": 1179.02,
+      "no_speech_prob": 0.0,
+      "start": 1177.02,
+      "text": "在共产党还有一个闭幕会"
+    },
+    {
+      "avg_logprob": -0.101035,
+      "compression_ratio": 1.390244,
+      "end": 1182.02,
+      "no_speech_prob": 0.0,
+      "start": 1179.02,
+      "text": "这早上这五点钟我都起来了"
+    },
+    {
+      "avg_logprob": -0.164723,
+      "compression_ratio": 1.421818,
+      "end": 1186.02,
+      "no_speech_prob": 0.0,
+      "start": 1182.02,
+      "text": "你说我睡吧 我要睡我也怕醒不来"
+    },
+    {
+      "avg_logprob": -0.164723,
+      "compression_ratio": 1.421818,
+      "end": 1191.02,
+      "no_speech_prob": 0.0,
+      "start": 1186.02,
+      "text": "我过了咱今天直播了点 不睡吧 太早了 是吧"
+    },
+    {
+      "avg_logprob": -0.164723,
+      "compression_ratio": 1.421818,
+      "end": 1194.02,
+      "no_speech_prob": 0.0,
+      "start": 1191.02,
+      "text": "这群里才说今天是闭幕会 我才整明白"
+    },
+    {
+      "avg_logprob": -0.164723,
+      "compression_ratio": 1.421818,
+      "end": 1196.02,
+      "no_speech_prob": 0.0,
+      "start": 1194.02,
+      "text": "共产党就是冬奥会闭幕会"
+    },
+    {
+      "avg_logprob": -0.164723,
+      "compression_ratio": 1.421818,
+      "end": 1200.02,
+      "no_speech_prob": 0.0,
+      "start": 1196.02,
+      "text": "我这时候拿国内的咱们战友联络的专用手机"
+    },
+    {
+      "avg_logprob": -0.164723,
+      "compression_ratio": 1.421818,
+      "end": 1203.02,
+      "no_speech_prob": 0.0,
+      "start": 1200.02,
+      "text": "我国内战友啥反应啊 这一喊一嗓子"
+    },
+    {
+      "avg_logprob": -0.164723,
+      "compression_ratio": 1.421818,
+      "end": 1205.02,
+      "no_speech_prob": 0.0,
+      "start": 1203.02,
+      "text": "就国内战友炸的祸了"
+    },
+    {
+      "avg_logprob": -0.164723,
+      "compression_ratio": 1.421818,
+      "end": 1207.02,
+      "no_speech_prob": 0.0,
+      "start": 1205.02,
+      "text": "他说我们都准备好上去评论去了"
+    },
+    {
+      "avg_logprob": -0.164723,
+      "compression_ratio": 1.421818,
+      "end": 1210.02,
+      "no_speech_prob": 0.0,
+      "start": 1207.02,
+      "text": "没有评论哪 不让我们评论哪"
+    },
+    {
+      "avg_logprob": -0.155638,
+      "compression_ratio": 1.307339,
+      "end": 1212.02,
+      "no_speech_prob": 0.0,
+      "start": 1210.02,
+      "text": "还有一个他说突然间"
+    },
+    {
+      "avg_logprob": -0.155638,
+      "compression_ratio": 1.307339,
+      "end": 1216.02,
+      "no_speech_prob": 0.0,
+      "start": 1212.02,
+      "text": "他说就在闭幕式所谓刚刚开始的时候"
+    },
+    {
+      "avg_logprob": -0.155638,
+      "compression_ratio": 1.307339,
+      "end": 1219.02,
+      "no_speech_prob": 0.0,
+      "start": 1216.02,
+      "text": "他说我们的信号就突然都不敢用了"
+    },
+    {
+      "avg_logprob": -0.155638,
+      "compression_ratio": 1.307339,
+      "end": 1222.02,
+      "no_speech_prob": 0.0,
+      "start": 1219.02,
+      "text": "好多地方就是上不去 上不了网"
+    },
+    {
+      "avg_logprob": -0.155638,
+      "compression_ratio": 1.307339,
+      "end": 1226.02,
+      "no_speech_prob": 0.0,
+      "start": 1222.02,
+      "text": "所以说共产党的闭幕会"
+    },
+    {
+      "avg_logprob": -0.155638,
+      "compression_ratio": 1.307339,
+      "end": 1230.02,
+      "no_speech_prob": 0.0,
+      "start": 1226.02,
+      "text": "最怕的是什么呀 怕的是中国人们"
+    },
+    {
+      "avg_logprob": -0.155638,
+      "compression_ratio": 1.307339,
+      "end": 1232.02,
+      "no_speech_prob": 0.0,
+      "start": 1230.02,
+      "text": "他不让中国人们参与"
+    },
+    {
+      "avg_logprob": -0.155638,
+      "compression_ratio": 1.307339,
+      "end": 1236.02,
+      "no_speech_prob": 0.0,
+      "start": 1232.02,
+      "text": "那谁花了钱呢 是吧"
+    },
+    {
+      "avg_logprob": -0.085916,
+      "compression_ratio": 1.424084,
+      "end": 1240.02,
+      "no_speech_prob": 0.0,
+      "start": 1236.02,
+      "text": "更不让外国人参与 你看都不让你看 来都不让你来"
+    },
+    {
+      "avg_logprob": -0.085916,
+      "compression_ratio": 1.424084,
+      "end": 1242.02,
+      "no_speech_prob": 0.0,
+      "start": 1240.02,
+      "text": "那你这个冬奥会是国际冬奥会呢"
+    },
+    {
+      "avg_logprob": -0.085916,
+      "compression_ratio": 1.424084,
+      "end": 1245.02,
+      "no_speech_prob": 0.0,
+      "start": 1242.02,
+      "text": "还是中国共产党的冬奥会呢"
+    },
+    {
+      "avg_logprob": -0.085916,
+      "compression_ratio": 1.424084,
+      "end": 1249.02,
+      "no_speech_prob": 0.0,
+      "start": 1245.02,
+      "text": "然后共产党的中央电视台又开始了"
+    },
+    {
+      "avg_logprob": -0.085916,
+      "compression_ratio": 1.424084,
+      "end": 1251.02,
+      "no_speech_prob": 0.0,
+      "start": 1249.02,
+      "text": "没有离开已经想念"
+    },
+    {
+      "avg_logprob": -0.085916,
+      "compression_ratio": 1.424084,
+      "end": 1254.02,
+      "no_speech_prob": 0.0,
+      "start": 1251.02,
+      "text": "现在说全世界人民都在夸奖"
+    },
+    {
+      "avg_logprob": -0.085916,
+      "compression_ratio": 1.424084,
+      "end": 1256.02,
+      "no_speech_prob": 0.0,
+      "start": 1254.02,
+      "text": "全世界人民都夸奖"
+    },
+    {
+      "avg_logprob": -0.171073,
+      "compression_ratio": 1.19898,
+      "end": 1260.02,
+      "no_speech_prob": 0.0,
+      "start": 1256.02,
+      "text": "这是一个绝美的 绝妙的普京的原话"
+    },
+    {
+      "avg_logprob": -0.171073,
+      "compression_ratio": 1.19898,
+      "end": 1264.02,
+      "no_speech_prob": 0.0,
+      "start": 1260.02,
+      "text": "史无前例的成功的冬奥会"
+    },
+    {
+      "avg_logprob": -0.171073,
+      "compression_ratio": 1.19898,
+      "end": 1268.02,
+      "no_speech_prob": 0.0,
+      "start": 1264.02,
+      "text": "大家你们记得2008年七哥在那牛叉的盘鼓"
+    },
+    {
+      "avg_logprob": -0.171073,
+      "compression_ratio": 1.19898,
+      "end": 1273.02,
+      "no_speech_prob": 0.0,
+      "start": 1268.02,
+      "text": "开幕式闭幕式 我都是有几个包厢的闭幕会"
+    },
+    {
+      "avg_logprob": -0.171073,
+      "compression_ratio": 1.19898,
+      "end": 1275.02,
+      "no_speech_prob": 0.0,
+      "start": 1273.02,
+      "text": "那是啥样子"
+    },
+    {
+      "avg_logprob": -0.171073,
+      "compression_ratio": 1.19898,
+      "end": 1278.02,
+      "no_speech_prob": 0.0,
+      "start": 1275.02,
+      "text": "你看那运动员 你看那场景"
+    },
+    {
+      "avg_logprob": -0.112209,
+      "compression_ratio": 1.198238,
+      "end": 1284.02,
+      "no_speech_prob": 0.0,
+      "start": 1278.02,
+      "text": "这次的冬奥会花的钱是当时2008年开幕式"
+    },
+    {
+      "avg_logprob": -0.112209,
+      "compression_ratio": 1.198238,
+      "end": 1286.02,
+      "no_speech_prob": 0.0,
+      "start": 1284.02,
+      "text": "并不是都是N倍的钱"
+    },
+    {
+      "avg_logprob": -0.112209,
+      "compression_ratio": 1.198238,
+      "end": 1289.02,
+      "no_speech_prob": 0.0,
+      "start": 1286.02,
+      "text": "蓝金黄的钱也超出N倍"
+    },
+    {
+      "avg_logprob": -0.112209,
+      "compression_ratio": 1.198238,
+      "end": 1291.02,
+      "no_speech_prob": 0.0,
+      "start": 1289.02,
+      "text": "但是弄成这个德行"
+    },
+    {
+      "avg_logprob": -0.112209,
+      "compression_ratio": 1.198238,
+      "end": 1293.02,
+      "no_speech_prob": 0.0,
+      "start": 1291.02,
+      "text": "但凡有点脑子的人"
+    },
+    {
+      "avg_logprob": -0.112209,
+      "compression_ratio": 1.198238,
+      "end": 1296.02,
+      "no_speech_prob": 0.0,
+      "start": 1293.02,
+      "text": "我们回去看看2008年到今天"
+    },
+    {
+      "avg_logprob": -0.112209,
+      "compression_ratio": 1.198238,
+      "end": 1300.02,
+      "no_speech_prob": 0.0,
+      "start": 1296.02,
+      "text": "我们中国人忘记疼痛"
+    },
+    {
+      "avg_logprob": -0.112209,
+      "compression_ratio": 1.198238,
+      "end": 1304.02,
+      "no_speech_prob": 0.0,
+      "start": 1300.02,
+      "text": "忘记痛苦 忘记灾难"
+    },
+    {
+      "avg_logprob": -0.112209,
+      "compression_ratio": 1.198238,
+      "end": 1306.02,
+      "no_speech_prob": 0.0,
+      "start": 1304.02,
+      "text": "可能全世界是最快的忘的"
+    },
+    {
+      "avg_logprob": -0.127802,
+      "compression_ratio": 1.321138,
+      "end": 1311.02,
+      "no_speech_prob": 0.0,
+      "start": 1306.02,
+      "text": "最爱憧憬未来 幻想未来的"
+    },
+    {
+      "avg_logprob": -0.127802,
+      "compression_ratio": 1.321138,
+      "end": 1314.02,
+      "no_speech_prob": 0.0,
+      "start": 1311.02,
+      "text": "你看咱们战友有很多人 包括咱们战友"
+    },
+    {
+      "avg_logprob": -0.127802,
+      "compression_ratio": 1.321138,
+      "end": 1316.02,
+      "no_speech_prob": 0.0,
+      "start": 1314.02,
+      "text": "就是啥事出现了一"
+    },
+    {
+      "avg_logprob": -0.127802,
+      "compression_ratio": 1.321138,
+      "end": 1317.02,
+      "no_speech_prob": 0.0,
+      "start": 1316.02,
+      "text": "他能跟你想出一个一出来"
+    },
+    {
+      "avg_logprob": -0.127802,
+      "compression_ratio": 1.321138,
+      "end": 1319.02,
+      "no_speech_prob": 0.0,
+      "start": 1317.02,
+      "text": "一到后边生无数"
+    },
+    {
+      "avg_logprob": -0.127802,
+      "compression_ratio": 1.321138,
+      "end": 1321.02,
+      "no_speech_prob": 0.0,
+      "start": 1319.02,
+      "text": "一生无数 不用三生无数"
+    },
+    {
+      "avg_logprob": -0.127802,
+      "compression_ratio": 1.321138,
+      "end": 1323.02,
+      "no_speech_prob": 0.0,
+      "start": 1321.02,
+      "text": "幻想就是极强"
+    },
+    {
+      "avg_logprob": -0.127802,
+      "compression_ratio": 1.321138,
+      "end": 1327.02,
+      "no_speech_prob": 0.0,
+      "start": 1323.02,
+      "text": "但是中国人就对过去的疼痛 灾难"
+    },
+    {
+      "avg_logprob": -0.127802,
+      "compression_ratio": 1.321138,
+      "end": 1329.02,
+      "no_speech_prob": 0.0,
+      "start": 1327.02,
+      "text": "基本上你不记得"
+    },
+    {
+      "avg_logprob": -0.127802,
+      "compression_ratio": 1.321138,
+      "end": 1331.02,
+      "no_speech_prob": 0.0,
+      "start": 1329.02,
+      "text": "就像那索脸女一样"
+    },
+    {
+      "avg_logprob": -0.127802,
+      "compression_ratio": 1.321138,
+      "end": 1335.02,
+      "no_speech_prob": 0.0,
+      "start": 1331.02,
+      "text": "24年的疼 你能忘掉吗"
+    },
+    {
+      "avg_logprob": -0.19924,
+      "compression_ratio": 1.289773,
+      "end": 1338.02,
+      "no_speech_prob": 0.0,
+      "start": 1335.02,
+      "text": "三天前咱们一个女战友说"
+    },
+    {
+      "avg_logprob": -0.19924,
+      "compression_ratio": 1.289773,
+      "end": 1341.02,
+      "no_speech_prob": 0.0,
+      "start": 1338.02,
+      "text": "七哥你知道吗 我十一岁"
+    },
+    {
+      "avg_logprob": -0.19924,
+      "compression_ratio": 1.289773,
+      "end": 1344.02,
+      "no_speech_prob": 0.0,
+      "start": 1341.02,
+      "text": "我就被我爸爸的同事给强奸"
+    },
+    {
+      "avg_logprob": -0.19924,
+      "compression_ratio": 1.289773,
+      "end": 1349.02,
+      "no_speech_prob": 0.0,
+      "start": 1344.02,
+      "text": "我到了十六岁 我又被我哥的同事强奸"
+    },
+    {
+      "avg_logprob": -0.19924,
+      "compression_ratio": 1.289773,
+      "end": 1351.02,
+      "no_speech_prob": 0.0,
+      "start": 1349.02,
+      "text": "我跟我爸说 跟我哥说两次"
+    },
+    {
+      "avg_logprob": -0.19924,
+      "compression_ratio": 1.289773,
+      "end": 1355.02,
+      "no_speech_prob": 0.0,
+      "start": 1351.02,
+      "text": "稀释宁人 不要再说 你还得嫁人呢"
+    },
+    {
+      "avg_logprob": -0.147951,
+      "compression_ratio": 1.291667,
+      "end": 1358.02,
+      "no_speech_prob": 0.0,
+      "start": 1355.02,
+      "text": "他说七哥 我忘掉了两次强奸"
+    },
+    {
+      "avg_logprob": -0.147951,
+      "compression_ratio": 1.291667,
+      "end": 1361.02,
+      "no_speech_prob": 0.0,
+      "start": 1358.02,
+      "text": "你说这个女的被24年强奸 天天强奸"
+    },
+    {
+      "avg_logprob": -0.147951,
+      "compression_ratio": 1.291667,
+      "end": 1363.02,
+      "no_speech_prob": 0.0,
+      "start": 1361.02,
+      "text": "她是啥感觉啊"
+    },
+    {
+      "avg_logprob": -0.147951,
+      "compression_ratio": 1.291667,
+      "end": 1367.02,
+      "no_speech_prob": 0.0,
+      "start": 1363.02,
+      "text": "我说这就是我们中国人的根基 因和圆"
+    },
+    {
+      "avg_logprob": -0.147951,
+      "compression_ratio": 1.291667,
+      "end": 1371.02,
+      "no_speech_prob": 0.0,
+      "start": 1367.02,
+      "text": "就因为有你这样两次被你爸你哥的同事强奸"
+    },
+    {
+      "avg_logprob": -0.147951,
+      "compression_ratio": 1.291667,
+      "end": 1376.02,
+      "no_speech_prob": 0.0,
+      "start": 1371.02,
+      "text": "不说 他才能结出这样24年被轮奸"
+    },
+    {
+      "avg_logprob": -0.191052,
+      "compression_ratio": 1.236994,
+      "end": 1379.02,
+      "no_speech_prob": 0.0,
+      "start": 1376.02,
+      "text": "生出八个孩子 这样的结果"
+    },
+    {
+      "avg_logprob": -0.191052,
+      "compression_ratio": 1.236994,
+      "end": 1384.02,
+      "no_speech_prob": 0.0,
+      "start": 1381.02,
+      "text": "我徐州的一个好朋友"
+    },
+    {
+      "avg_logprob": -0.191052,
+      "compression_ratio": 1.236994,
+      "end": 1388.02,
+      "no_speech_prob": 0.0,
+      "start": 1384.02,
+      "text": "是曾经的 跟我很短暂的一个同学"
+    },
+    {
+      "avg_logprob": -0.191052,
+      "compression_ratio": 1.236994,
+      "end": 1392.02,
+      "no_speech_prob": 0.0,
+      "start": 1388.02,
+      "text": "是在我老家红庙的同学"
+    },
+    {
+      "avg_logprob": -0.191052,
+      "compression_ratio": 1.236994,
+      "end": 1396.02,
+      "no_speech_prob": 0.0,
+      "start": 1393.02,
+      "text": "昨天给我发信息 跟我说什么"
+    },
+    {
+      "avg_logprob": -0.191052,
+      "compression_ratio": 1.236994,
+      "end": 1400.02,
+      "no_speech_prob": 0.0,
+      "start": 1396.02,
+      "text": "七哥 整个徐州现在建了好几堵墙"
+    },
+    {
+      "avg_logprob": -0.191658,
+      "compression_ratio": 1.295775,
+      "end": 1406.02,
+      "no_speech_prob": 0.0,
+      "start": 1400.02,
+      "text": "他说 你能想想这个锁链女的村旁边建上了铁墙吗"
+    },
+    {
+      "avg_logprob": -0.191658,
+      "compression_ratio": 1.295775,
+      "end": 1413.02,
+      "no_speech_prob": 0.0,
+      "start": 1407.02,
+      "text": "你能想想那个医院里边现在警察建立了一到200多个警察墙吗"
+    },
+    {
+      "avg_logprob": -0.191658,
+      "compression_ratio": 1.295775,
+      "end": 1418.02,
+      "no_speech_prob": 0.0,
+      "start": 1414.02,
+      "text": "他说 我是管的同心部门里边就是防火墙"
+    },
+    {
+      "avg_logprob": -0.191658,
+      "compression_ratio": 1.295775,
+      "end": 1420.02,
+      "no_speech_prob": 0.0,
+      "start": 1418.02,
+      "text": "经常给七哥让他们放防水 是吧"
+    },
+    {
+      "avg_logprob": -0.191658,
+      "compression_ratio": 1.295775,
+      "end": 1423.02,
+      "no_speech_prob": 0.0,
+      "start": 1420.02,
+      "text": "这个我们现在来的是三个部门管"
+    },
+    {
+      "avg_logprob": -0.148696,
+      "compression_ratio": 1.212121,
+      "end": 1430.02,
+      "no_speech_prob": 0.0,
+      "start": 1423.02,
+      "text": "郑保的和国安的 叫网络防火墙"
+    },
+    {
+      "avg_logprob": -0.148696,
+      "compression_ratio": 1.212121,
+      "end": 1435.02,
+      "no_speech_prob": 0.0,
+      "start": 1432.02,
+      "text": "兄弟姐妹们 我们今天五月花农场"
+    },
+    {
+      "avg_logprob": -0.148696,
+      "compression_ratio": 1.212121,
+      "end": 1439.02,
+      "no_speech_prob": 0.0,
+      "start": 1435.02,
+      "text": "五月花是追求自由 追求幸福"
+    },
+    {
+      "avg_logprob": -0.148696,
+      "compression_ratio": 1.212121,
+      "end": 1443.02,
+      "no_speech_prob": 0.0,
+      "start": 1440.02,
+      "text": "在今天的冬奥闭幕式上就不要看别的"
+    },
+    {
+      "avg_logprob": -0.148696,
+      "compression_ratio": 1.212121,
+      "end": 1449.02,
+      "no_speech_prob": 0.0,
+      "start": 1443.02,
+      "text": "就看一看所有的那个锁链女的村落的铁皮墙建的有多快"
+    },
+    {
+      "avg_logprob": -0.134961,
+      "compression_ratio": 1.24537,
+      "end": 1452.02,
+      "no_speech_prob": 0.0,
+      "start": 1449.02,
+      "text": "徐州的网络防火墙有多快"
+    },
+    {
+      "avg_logprob": -0.134961,
+      "compression_ratio": 1.24537,
+      "end": 1457.02,
+      "no_speech_prob": 0.0,
+      "start": 1452.02,
+      "text": "徐州的把这闺女锁链女以精神病为名"
+    },
+    {
+      "avg_logprob": -0.134961,
+      "compression_ratio": 1.24537,
+      "end": 1460.02,
+      "no_speech_prob": 0.0,
+      "start": 1457.02,
+      "text": "关在医院里边的警察墙建的有多快"
+    },
+    {
+      "avg_logprob": -0.134961,
+      "compression_ratio": 1.24537,
+      "end": 1466.02,
+      "no_speech_prob": 0.0,
+      "start": 1461.02,
+      "text": "如果拿出这个千分之一 一分之一的精力和时间 警力"
+    },
+    {
+      "avg_logprob": -0.134961,
+      "compression_ratio": 1.24537,
+      "end": 1470.02,
+      "no_speech_prob": 0.0,
+      "start": 1467.02,
+      "text": "锁链女当年不至于24年 找不着人"
+    },
+    {
+      "avg_logprob": -0.134961,
+      "compression_ratio": 1.24537,
+      "end": 1475.02,
+      "no_speech_prob": 0.0,
+      "start": 1473.02,
+      "text": "但是中国人会很快忘记了"
+    },
+    {
+      "avg_logprob": -0.193482,
+      "compression_ratio": 1.363636,
+      "end": 1481.02,
+      "no_speech_prob": 0.0,
+      "start": 1475.02,
+      "text": "谁还记得当年的 叫雷什么 大家还记得吗"
+    },
+    {
+      "avg_logprob": -0.193482,
+      "compression_ratio": 1.363636,
+      "end": 1485.02,
+      "no_speech_prob": 0.0,
+      "start": 1482.02,
+      "text": "被打死的 雷洋"
+    },
+    {
+      "avg_logprob": -0.193482,
+      "compression_ratio": 1.363636,
+      "end": 1489.02,
+      "no_speech_prob": 0.0,
+      "start": 1487.02,
+      "text": "还好一成 今天你的主持人不白当兄弟"
+    },
+    {
+      "avg_logprob": -0.193482,
+      "compression_ratio": 1.363636,
+      "end": 1493.02,
+      "no_speech_prob": 0.0,
+      "start": 1489.02,
+      "text": "你还记得叫雷洋 也没叫什么雷猪挺好"
+    },
+    {
+      "avg_logprob": -0.193482,
+      "compression_ratio": 1.363636,
+      "end": 1499.02,
+      "no_speech_prob": 0.0,
+      "start": 1493.02,
+      "text": "你们还记得几个叫雷洋啊 谁谁记得雷洋啊"
+    },
+    {
+      "avg_logprob": -0.175521,
+      "compression_ratio": 1.157895,
+      "end": 1502.02,
+      "no_speech_prob": 0.0,
+      "start": 1499.02,
+      "text": "你问中国人很多人还已经忘掉雷洋了"
+    },
+    {
+      "avg_logprob": -0.175521,
+      "compression_ratio": 1.157895,
+      "end": 1505.02,
+      "no_speech_prob": 0.0,
+      "start": 1502.02,
+      "text": "不是忘掉文化大革命8964 雷洋谁还记得"
+    },
+    {
+      "avg_logprob": -0.175521,
+      "compression_ratio": 1.157895,
+      "end": 1510.02,
+      "no_speech_prob": 0.0,
+      "start": 1506.02,
+      "text": "雷洋当时我给你们在直播中 2017年就说过"
+    },
+    {
+      "avg_logprob": -0.175521,
+      "compression_ratio": 1.157895,
+      "end": 1513.02,
+      "no_speech_prob": 0.0,
+      "start": 1510.02,
+      "text": "领导说他最多折腾三星期 闹着闹着就过去了"
+    },
+    {
+      "avg_logprob": -0.175521,
+      "compression_ratio": 1.157895,
+      "end": 1516.02,
+      "no_speech_prob": 0.0,
+      "start": 1514.02,
+      "text": "躲猫猫死不就是三星期吗"
+    },
+    {
+      "avg_logprob": -0.161494,
+      "compression_ratio": 1.280172,
+      "end": 1519.02,
+      "no_speech_prob": 0.0,
+      "start": 1516.02,
+      "text": "就这个事儿 徐周然那个哥们跟我说"
+    },
+    {
+      "avg_logprob": -0.161494,
+      "compression_ratio": 1.280172,
+      "end": 1523.02,
+      "no_speech_prob": 0.0,
+      "start": 1519.02,
+      "text": "说讲话内部啊 这个事儿可能要折腾一个月"
+    },
+    {
+      "avg_logprob": -0.161494,
+      "compression_ratio": 1.280172,
+      "end": 1529.02,
+      "no_speech_prob": 0.0,
+      "start": 1523.02,
+      "text": "由于西方反华势力 大声地说出了啊"
+    },
+    {
+      "avg_logprob": -0.161494,
+      "compression_ratio": 1.280172,
+      "end": 1531.02,
+      "no_speech_prob": 0.0,
+      "start": 1529.02,
+      "text": "郭文贵啊 他们说我们这里开会"
+    },
+    {
+      "avg_logprob": -0.161494,
+      "compression_ratio": 1.280172,
+      "end": 1533.02,
+      "no_speech_prob": 0.0,
+      "start": 1531.02,
+      "text": "从来不说郭文贵的名字吧"
+    },
+    {
+      "avg_logprob": -0.161494,
+      "compression_ratio": 1.280172,
+      "end": 1535.02,
+      "no_speech_prob": 0.0,
+      "start": 1533.02,
+      "text": "也不说新中国联邦 不允许说"
+    },
+    {
+      "avg_logprob": -0.161494,
+      "compression_ratio": 1.280172,
+      "end": 1538.02,
+      "no_speech_prob": 0.0,
+      "start": 1535.02,
+      "text": "就是反华组织 这回提出郭文贵"
+    },
+    {
+      "avg_logprob": -0.123643,
+      "compression_ratio": 1.157303,
+      "end": 1544.02,
+      "no_speech_prob": 0.0,
+      "start": 1538.02,
+      "text": "以及他所谓建的犯罪集团 反党反国集团 新中国联邦"
+    },
+    {
+      "avg_logprob": -0.123643,
+      "compression_ratio": 1.157303,
+      "end": 1549.02,
+      "no_speech_prob": 0.0,
+      "start": 1545.02,
+      "text": "利用所谓的锁链女事件大肆炒作"
+    },
+    {
+      "avg_logprob": -0.123643,
+      "compression_ratio": 1.157303,
+      "end": 1553.02,
+      "no_speech_prob": 0.0,
+      "start": 1550.02,
+      "text": "这个事情可能要进行四周到六周的时间"
+    },
+    {
+      "avg_logprob": -0.123643,
+      "compression_ratio": 1.157303,
+      "end": 1562.02,
+      "no_speech_prob": 0.0,
+      "start": 1555.02,
+      "text": "严查 紧急的24小时的进行网络封锁"
+    },
+    {
+      "avg_logprob": -0.196702,
+      "compression_ratio": 1.310606,
+      "end": 1568.02,
+      "no_speech_prob": 0.0,
+      "start": 1562.02,
+      "text": "就是现在锁链女六周 现在已经大概四周了吧"
+    },
+    {
+      "avg_logprob": -0.196702,
+      "compression_ratio": 1.310606,
+      "end": 1570.02,
+      "no_speech_prob": 0.0,
+      "start": 1568.02,
+      "text": "还有两周时间 估计这事儿就过了"
+    },
+    {
+      "avg_logprob": -0.196702,
+      "compression_ratio": 1.310606,
+      "end": 1576.02,
+      "no_speech_prob": 0.0,
+      "start": 1573.02,
+      "text": "所以说一程你看我们坐在这儿的时候兄弟"
+    },
+    {
+      "avg_logprob": -0.196702,
+      "compression_ratio": 1.310606,
+      "end": 1578.02,
+      "no_speech_prob": 0.0,
+      "start": 1576.02,
+      "text": "我们每次大直播的时候"
+    },
+    {
+      "avg_logprob": -0.196702,
+      "compression_ratio": 1.310606,
+      "end": 1581.02,
+      "no_speech_prob": 0.0,
+      "start": 1579.02,
+      "text": "我特别想问问中国人"
+    },
+    {
+      "avg_logprob": -0.196702,
+      "compression_ratio": 1.310606,
+      "end": 1585.02,
+      "no_speech_prob": 0.0,
+      "start": 1581.02,
+      "text": "我们中国人真的就是这么容易忘掉"
+    },
+    {
+      "avg_logprob": -0.196702,
+      "compression_ratio": 1.310606,
+      "end": 1588.02,
+      "no_speech_prob": 0.0,
+      "start": 1585.02,
+      "text": "被强奸两次然后等待着你的"
+    },
+    {
+      "avg_logprob": -0.196702,
+      "compression_ratio": 1.310606,
+      "end": 1591.02,
+      "no_speech_prob": 0.0,
+      "start": 1588.02,
+      "text": "很有可能发生在你家人家的24年的轮奸吗"
+    },
+    {
+      "avg_logprob": -0.121603,
+      "compression_ratio": 1.311203,
+      "end": 1593.02,
+      "no_speech_prob": 0.0,
+      "start": 1591.02,
+      "text": "我们真的那么容易忘记吗"
+    },
+    {
+      "avg_logprob": -0.121603,
+      "compression_ratio": 1.311203,
+      "end": 1599.02,
+      "no_speech_prob": 0.0,
+      "start": 1597.02,
+      "text": "我们每次大直播的时候上直播的兄弟姐妹"
+    },
+    {
+      "avg_logprob": -0.121603,
+      "compression_ratio": 1.311203,
+      "end": 1600.02,
+      "no_speech_prob": 0.0,
+      "start": 1599.02,
+      "text": "你们都想一想"
+    },
+    {
+      "avg_logprob": -0.121603,
+      "compression_ratio": 1.311203,
+      "end": 1604.02,
+      "no_speech_prob": 0.0,
+      "start": 1600.02,
+      "text": "你真以为这种绑架事不会发生在你家身上和我家身上"
+    },
+    {
+      "avg_logprob": -0.121603,
+      "compression_ratio": 1.311203,
+      "end": 1610.02,
+      "no_speech_prob": 0.0,
+      "start": 1608.02,
+      "text": "你看看今天冬奥会的闭幕式上"
+    },
+    {
+      "avg_logprob": -0.121603,
+      "compression_ratio": 1.311203,
+      "end": 1613.02,
+      "no_speech_prob": 0.0,
+      "start": 1610.02,
+      "text": "共产党在全世界已经弄成啥样子"
+    },
+    {
+      "avg_logprob": -0.121603,
+      "compression_ratio": 1.311203,
+      "end": 1616.02,
+      "no_speech_prob": 0.0,
+      "start": 1613.02,
+      "text": "俄罗斯的 我一会儿给你们爆料"
+    },
+    {
+      "avg_logprob": -0.121603,
+      "compression_ratio": 1.311203,
+      "end": 1617.02,
+      "no_speech_prob": 0.0,
+      "start": 1616.02,
+      "text": "现在不给你们爆"
+    },
+    {
+      "avg_logprob": -0.150368,
+      "compression_ratio": 1.280788,
+      "end": 1620.02,
+      "no_speech_prob": 0.0,
+      "start": 1617.02,
+      "text": "昨天上午的时候"
+    },
+    {
+      "avg_logprob": -0.150368,
+      "compression_ratio": 1.280788,
+      "end": 1623.02,
+      "no_speech_prob": 0.0,
+      "start": 1620.02,
+      "text": "普京身边的人跟我深聊了一下普京的事儿"
+    },
+    {
+      "avg_logprob": -0.150368,
+      "compression_ratio": 1.280788,
+      "end": 1626.02,
+      "no_speech_prob": 0.0,
+      "start": 1623.02,
+      "text": "我也是后脑勺发凉啊 听他聊"
+    },
+    {
+      "avg_logprob": -0.150368,
+      "compression_ratio": 1.280788,
+      "end": 1630.02,
+      "no_speech_prob": 0.0,
+      "start": 1627.02,
+      "text": "他现在天天使用HP在忙活他的钱呢"
+    },
+    {
+      "avg_logprob": -0.150368,
+      "compression_ratio": 1.280788,
+      "end": 1631.02,
+      "no_speech_prob": 0.0,
+      "start": 1630.02,
+      "text": "是吧"
+    },
+    {
+      "avg_logprob": -0.150368,
+      "compression_ratio": 1.280788,
+      "end": 1633.02,
+      "no_speech_prob": 0.0,
+      "start": 1631.02,
+      "text": "我说你老使用HP哥们儿"
+    },
+    {
+      "avg_logprob": -0.150368,
+      "compression_ratio": 1.280788,
+      "end": 1636.02,
+      "no_speech_prob": 0.0,
+      "start": 1633.02,
+      "text": "你得跟我聊聊普京到底北京啥情况"
+    },
+    {
+      "avg_logprob": -0.150368,
+      "compression_ratio": 1.280788,
+      "end": 1638.02,
+      "no_speech_prob": 0.0,
+      "start": 1636.02,
+      "text": "普京打不打乌克兰"
+    },
+    {
+      "avg_logprob": -0.120821,
+      "compression_ratio": 1.398058,
+      "end": 1641.02,
+      "no_speech_prob": 0.0,
+      "start": 1638.02,
+      "text": "他说你要有时间咱俩打个电话"
+    },
+    {
+      "avg_logprob": -0.120821,
+      "compression_ratio": 1.398058,
+      "end": 1642.02,
+      "no_speech_prob": 0.0,
+      "start": 1641.02,
+      "text": "我最讨厌的"
+    },
+    {
+      "avg_logprob": -0.120821,
+      "compression_ratio": 1.398058,
+      "end": 1644.02,
+      "no_speech_prob": 0.0,
+      "start": 1642.02,
+      "text": "因为我同时干三件事儿哪有时间打电话呀"
+    },
+    {
+      "avg_logprob": -0.120821,
+      "compression_ratio": 1.398058,
+      "end": 1646.02,
+      "no_speech_prob": 0.0,
+      "start": 1644.02,
+      "text": "打电话就不能同时干三件事儿"
+    },
+    {
+      "avg_logprob": -0.120821,
+      "compression_ratio": 1.398058,
+      "end": 1648.02,
+      "no_speech_prob": 0.0,
+      "start": 1646.02,
+      "text": "我就通个电话吧"
+    },
+    {
+      "avg_logprob": -0.120821,
+      "compression_ratio": 1.398058,
+      "end": 1649.02,
+      "no_speech_prob": 0.0,
+      "start": 1648.02,
+      "text": "通三分钟电话"
+    },
+    {
+      "avg_logprob": -0.120821,
+      "compression_ratio": 1.398058,
+      "end": 1651.02,
+      "no_speech_prob": 0.0,
+      "start": 1649.02,
+      "text": "结果通了将近二三十分钟"
+    },
+    {
+      "avg_logprob": -0.120821,
+      "compression_ratio": 1.398058,
+      "end": 1655.02,
+      "no_speech_prob": 0.0,
+      "start": 1651.02,
+      "text": "他讲了普京从北京回来之后的感受"
+    },
+    {
+      "avg_logprob": -0.120821,
+      "compression_ratio": 1.398058,
+      "end": 1658.02,
+      "no_speech_prob": 0.0,
+      "start": 1656.02,
+      "text": "我还给他也算过命"
+    },
+    {
+      "avg_logprob": -0.127824,
+      "compression_ratio": 1.578182,
+      "end": 1661.02,
+      "no_speech_prob": 0.0,
+      "start": 1658.02,
+      "text": "他说Miles你还记得你给我算过命吗"
+    },
+    {
+      "avg_logprob": -0.127824,
+      "compression_ratio": 1.578182,
+      "end": 1664.02,
+      "no_speech_prob": 0.0,
+      "start": 1661.02,
+      "text": "我妹妹你给算命说我妹妹过不了三十五"
+    },
+    {
+      "avg_logprob": -0.127824,
+      "compression_ratio": 1.578182,
+      "end": 1665.02,
+      "no_speech_prob": 0.0,
+      "start": 1664.02,
+      "text": "我妹妹就去年过世了"
+    },
+    {
+      "avg_logprob": -0.127824,
+      "compression_ratio": 1.578182,
+      "end": 1667.02,
+      "no_speech_prob": 0.0,
+      "start": 1665.02,
+      "text": "三十六三十七岁"
+    },
+    {
+      "avg_logprob": -0.127824,
+      "compression_ratio": 1.578182,
+      "end": 1668.02,
+      "no_speech_prob": 0.0,
+      "start": 1667.02,
+      "text": "过了三十五了"
+    },
+    {
+      "avg_logprob": -0.127824,
+      "compression_ratio": 1.578182,
+      "end": 1669.02,
+      "no_speech_prob": 0.0,
+      "start": 1668.02,
+      "text": "但是就过两年"
+    },
+    {
+      "avg_logprob": -0.127824,
+      "compression_ratio": 1.578182,
+      "end": 1671.02,
+      "no_speech_prob": 0.0,
+      "start": 1669.02,
+      "text": "他说你能不能给我算"
+    },
+    {
+      "avg_logprob": -0.127824,
+      "compression_ratio": 1.578182,
+      "end": 1672.02,
+      "no_speech_prob": 0.0,
+      "start": 1671.02,
+      "text": "我说我不给你算"
+    },
+    {
+      "avg_logprob": -0.127824,
+      "compression_ratio": 1.578182,
+      "end": 1675.02,
+      "no_speech_prob": 0.0,
+      "start": 1672.02,
+      "text": "我说你的命也很长不了"
+    },
+    {
+      "avg_logprob": -0.127824,
+      "compression_ratio": 1.578182,
+      "end": 1678.02,
+      "no_speech_prob": 0.0,
+      "start": 1675.02,
+      "text": "他说真的他最近要让我去乌克兰呢"
+    },
+    {
+      "avg_logprob": -0.127824,
+      "compression_ratio": 1.578182,
+      "end": 1680.02,
+      "no_speech_prob": 0.0,
+      "start": 1678.02,
+      "text": "我说那你去乌克兰就死在那儿求的了"
+    },
+    {
+      "avg_logprob": -0.127824,
+      "compression_ratio": 1.578182,
+      "end": 1683.02,
+      "no_speech_prob": 0.0,
+      "start": 1680.02,
+      "text": "但愿咱俩不是最后一次通话"
+    },
+    {
+      "avg_logprob": -0.127824,
+      "compression_ratio": 1.578182,
+      "end": 1687.02,
+      "no_speech_prob": 0.0,
+      "start": 1683.02,
+      "text": "但是他跟我讲了就是普京从北京和习"
+    },
+    {
+      "avg_logprob": -0.115866,
+      "compression_ratio": 1.440529,
+      "end": 1690.02,
+      "no_speech_prob": 0.0,
+      "start": 1687.02,
+      "text": "有两个半小时的单独会谈"
+    },
+    {
+      "avg_logprob": -0.115866,
+      "compression_ratio": 1.440529,
+      "end": 1694.02,
+      "no_speech_prob": 0.0,
+      "start": 1690.02,
+      "text": "单独会谈"
+    },
+    {
+      "avg_logprob": -0.115866,
+      "compression_ratio": 1.440529,
+      "end": 1696.02,
+      "no_speech_prob": 0.0,
+      "start": 1694.02,
+      "text": "两人没有翻译"
+    },
+    {
+      "avg_logprob": -0.115866,
+      "compression_ratio": 1.440529,
+      "end": 1697.02,
+      "no_speech_prob": 0.0,
+      "start": 1696.02,
+      "text": "我说他俩咋沟通啊"
+    },
+    {
+      "avg_logprob": -0.115866,
+      "compression_ratio": 1.440529,
+      "end": 1699.02,
+      "no_speech_prob": 0.0,
+      "start": 1697.02,
+      "text": "用脚趾头掰脚趾头"
+    },
+    {
+      "avg_logprob": -0.115866,
+      "compression_ratio": 1.440529,
+      "end": 1702.02,
+      "no_speech_prob": 0.0,
+      "start": 1699.02,
+      "text": "他说有一个他俩人的翻译器"
+    },
+    {
+      "avg_logprob": -0.115866,
+      "compression_ratio": 1.440529,
+      "end": 1705.02,
+      "no_speech_prob": 0.0,
+      "start": 1702.02,
+      "text": "就是翻译都不让他参加"
+    },
+    {
+      "avg_logprob": -0.115866,
+      "compression_ratio": 1.440529,
+      "end": 1707.02,
+      "no_speech_prob": 0.0,
+      "start": 1705.02,
+      "text": "这是我听说"
+    },
+    {
+      "avg_logprob": -0.115866,
+      "compression_ratio": 1.440529,
+      "end": 1709.02,
+      "no_speech_prob": 0.0,
+      "start": 1707.02,
+      "text": "几乎可能中国是第一次了"
+    },
+    {
+      "avg_logprob": -0.115866,
+      "compression_ratio": 1.440529,
+      "end": 1711.02,
+      "no_speech_prob": 0.0,
+      "start": 1709.02,
+      "text": "就是两国这样的元首讨论"
+    },
+    {
+      "avg_logprob": -0.115866,
+      "compression_ratio": 1.440529,
+      "end": 1715.02,
+      "no_speech_prob": 0.0,
+      "start": 1711.02,
+      "text": "决定人类的大事掰脚趾头用翻译器来弄"
+    },
+    {
+      "avg_logprob": -0.115866,
+      "compression_ratio": 1.440529,
+      "end": 1716.02,
+      "no_speech_prob": 0.0,
+      "start": 1715.02,
+      "text": "不让翻译参加"
+    },
+    {
+      "avg_logprob": -0.246128,
+      "compression_ratio": 1.169118,
+      "end": 1718.02,
+      "no_speech_prob": 0.0,
+      "start": 1716.02,
+      "text": "你可见他俩谈的是啥事"
+    },
+    {
+      "avg_logprob": -0.246128,
+      "compression_ratio": 1.169118,
+      "end": 1725.02,
+      "no_speech_prob": 0.0,
+      "start": 1718.02,
+      "text": "然后他大概知道了一些普京回来的神经的情况"
+    },
+    {
+      "avg_logprob": -0.246128,
+      "compression_ratio": 1.169118,
+      "end": 1729.02,
+      "no_speech_prob": 0.0,
+      "start": 1725.02,
+      "text": "比如说普京上飞机的习主间"
+    },
+    {
+      "avg_logprob": -0.246128,
+      "compression_ratio": 1.169118,
+      "end": 1731.02,
+      "no_speech_prob": 0.0,
+      "start": 1729.02,
+      "text": "普京上习主间绝对两分钟"
+    },
+    {
+      "avg_logprob": -0.232692,
+      "compression_ratio": 1.25,
+      "end": 1736.02,
+      "no_speech_prob": 0.0,
+      "start": 1731.02,
+      "text": "大工最多不会超过五分钟"
+    },
+    {
+      "avg_logprob": -0.232692,
+      "compression_ratio": 1.25,
+      "end": 1740.02,
+      "no_speech_prob": 0.0,
+      "start": 1736.02,
+      "text": "他说普京我很少看到他上大工"
+    },
+    {
+      "avg_logprob": -0.232692,
+      "compression_ratio": 1.25,
+      "end": 1742.02,
+      "no_speech_prob": 0.0,
+      "start": 1740.02,
+      "text": "二十几分钟这些习主间出来"
+    },
+    {
+      "avg_logprob": -0.232692,
+      "compression_ratio": 1.25,
+      "end": 1746.02,
+      "no_speech_prob": 0.0,
+      "start": 1743.02,
+      "text": "哎呀二十几分钟确实很长啊"
+    },
+    {
+      "avg_logprob": -0.232692,
+      "compression_ratio": 1.25,
+      "end": 1748.02,
+      "no_speech_prob": 0.0,
+      "start": 1746.02,
+      "text": "生孩子也就是二十几分钟嘛"
+    },
+    {
+      "avg_logprob": -0.261545,
+      "compression_ratio": 1.402174,
+      "end": 1750.02,
+      "no_speech_prob": 0.0,
+      "start": 1748.02,
+      "text": "回去以后"
+    },
+    {
+      "avg_logprob": -0.261545,
+      "compression_ratio": 1.402174,
+      "end": 1752.02,
+      "no_speech_prob": 0.0,
+      "start": 1750.02,
+      "text": "回去你笑啥"
+    },
+    {
+      "avg_logprob": -0.261545,
+      "compression_ratio": 1.402174,
+      "end": 1753.02,
+      "no_speech_prob": 0.0,
+      "start": 1752.02,
+      "text": "我笑好像你生过孩子"
+    },
+    {
+      "avg_logprob": -0.261545,
+      "compression_ratio": 1.402174,
+      "end": 1754.02,
+      "no_speech_prob": 0.0,
+      "start": 1753.02,
+      "text": "你生过"
+    },
+    {
+      "avg_logprob": -0.261545,
+      "compression_ratio": 1.402174,
+      "end": 1755.02,
+      "no_speech_prob": 0.0,
+      "start": 1754.02,
+      "text": "你笑啥呀"
+    },
+    {
+      "avg_logprob": -0.261545,
+      "compression_ratio": 1.402174,
+      "end": 1757.02,
+      "no_speech_prob": 0.0,
+      "start": 1755.02,
+      "text": "生孩子你笑啥呀"
+    },
+    {
+      "avg_logprob": -0.261545,
+      "compression_ratio": 1.402174,
+      "end": 1760.02,
+      "no_speech_prob": 0.0,
+      "start": 1757.02,
+      "text": "好像你生过似的感同身受"
+    },
+    {
+      "avg_logprob": -0.17544,
+      "compression_ratio": 1.016529,
+      "end": 1761.02,
+      "no_speech_prob": 0.0,
+      "start": 1760.02,
+      "text": "是吧"
+    },
+    {
+      "avg_logprob": -0.17544,
+      "compression_ratio": 1.016529,
+      "end": 1762.02,
+      "no_speech_prob": 0.0,
+      "start": 1761.02,
+      "text": "所以今天我跟你们聊聊"
+    },
+    {
+      "avg_logprob": -0.17544,
+      "compression_ratio": 1.016529,
+      "end": 1767.02,
+      "no_speech_prob": 0.0,
+      "start": 1762.02,
+      "text": "乌克兰局势和咱现在的整个中共的"
+    },
+    {
+      "avg_logprob": -0.17544,
+      "compression_ratio": 1.016529,
+      "end": 1771.02,
+      "no_speech_prob": 0.0,
+      "start": 1767.02,
+      "text": "避不了幕的避幕式和世界的经济"
+    },
+    {
+      "avg_logprob": -0.16734,
+      "compression_ratio": 1.26,
+      "end": 1773.02,
+      "no_speech_prob": 0.0,
+      "start": 1771.02,
+      "text": "兄弟姐妹们"
+    },
+    {
+      "avg_logprob": -0.16734,
+      "compression_ratio": 1.26,
+      "end": 1776.02,
+      "no_speech_prob": 0.0,
+      "start": 1773.02,
+      "text": "世界真的是大变了"
+    },
+    {
+      "avg_logprob": -0.16734,
+      "compression_ratio": 1.26,
+      "end": 1778.02,
+      "no_speech_prob": 0.0,
+      "start": 1777.02,
+      "text": "咱下一个题目吧"
+    },
+    {
+      "avg_logprob": -0.16734,
+      "compression_ratio": 1.26,
+      "end": 1779.02,
+      "no_speech_prob": 0.0,
+      "start": 1778.02,
+      "text": "义辰"
+    },
+    {
+      "avg_logprob": -0.16734,
+      "compression_ratio": 1.26,
+      "end": 1780.02,
+      "no_speech_prob": 0.0,
+      "start": 1779.02,
+      "text": "我怕把你们说睡着了"
+    },
+    {
+      "avg_logprob": -0.16734,
+      "compression_ratio": 1.26,
+      "end": 1784.02,
+      "no_speech_prob": 0.0,
+      "start": 1782.02,
+      "text": "好的我们今天有三个话题"
+    },
+    {
+      "avg_logprob": -0.16734,
+      "compression_ratio": 1.26,
+      "end": 1785.02,
+      "no_speech_prob": 0.0,
+      "start": 1784.02,
+      "text": "那我们先"
+    },
+    {
+      "avg_logprob": -0.16734,
+      "compression_ratio": 1.26,
+      "end": 1787.02,
+      "no_speech_prob": 0.0,
+      "start": 1785.02,
+      "text": "七哥已经给大家介绍了一下"
+    },
+    {
+      "avg_logprob": -0.16734,
+      "compression_ratio": 1.26,
+      "end": 1789.02,
+      "no_speech_prob": 0.0,
+      "start": 1787.02,
+      "text": "冬奥会的事情"
+    },
+    {
+      "avg_logprob": -0.16734,
+      "compression_ratio": 1.26,
+      "end": 1791.02,
+      "no_speech_prob": 0.0,
+      "start": 1789.02,
+      "text": "那我们现在先做第一个PPT"
+    },
+    {
+      "avg_logprob": -0.16734,
+      "compression_ratio": 1.26,
+      "end": 1793.02,
+      "no_speech_prob": 0.0,
+      "start": 1791.02,
+      "text": "就是中俄领导"
+    },
+    {
+      "avg_logprob": -0.16734,
+      "compression_ratio": 1.26,
+      "end": 1794.02,
+      "no_speech_prob": 0.0,
+      "start": 1793.02,
+      "text": "对"
+    },
+    {
+      "avg_logprob": -0.16734,
+      "compression_ratio": 1.26,
+      "end": 1795.02,
+      "no_speech_prob": 0.0,
+      "start": 1794.02,
+      "text": "改变国际秩序"
+    },
+    {
+      "avg_logprob": -0.16734,
+      "compression_ratio": 1.26,
+      "end": 1797.02,
+      "no_speech_prob": 0.0,
+      "start": 1795.02,
+      "text": "乌克兰作为较量的战场"
+    },
+    {
+      "avg_logprob": -0.16734,
+      "compression_ratio": 1.26,
+      "end": 1798.02,
+      "no_speech_prob": 0.0,
+      "start": 1797.02,
+      "text": "现在发生了什么"
+    }
+  ],
+  "text": "在凡徹的圈在凡徹的圈i know youi know youi know youi know youi know youi know youi know youi know youi know youi know youi know youi know youi know youi know youi know youi know youi know youi know youi know youi know youi know youi know youi know youi know youi know youi know youi know youi know youi know youi know youi know youi know youi know youi know youi know youi know youi know youi know youi know youi know youi know youi know youi know youi know you优优独播剧场——YoYo Television Series Exclusive优优独播剧场——YoYo Television Series Exclusive全球的爆料革命战友大家好这里是美东时间2月20日星期天欢迎大家观看文会大直播节目我是今天的主持人依晨今天也是我们伍叶花波士顿的伍叶花农场和七哥的那个专场大直播我也是第一次和一哥和战友们同框同心非常开心能够和大家一起和七哥一起直播度过这个快乐美好的时光也是第一次同框然后第一次又做主持人那个就是刚刚这一推出来确实有点那个心跳有点爆表了这样那个今天五月花农场也是很多战友同框同框有基本很多都是第一次来和七哥一起大直播的那么我们那个先请各位战友那个给自我介绍然后我们再请郭先生说那个文迪观人好 全球的战友们好我是来自维越花农场的文迪听说今天大直播过了以后呢这个世界会有巨大的变化我今天上来主要是来留个爪印的好 谢谢 请文肖七哥好 全球战友们好维越花农场 播一下视频部 文肖是第二次跟七哥同心同狂非常非常荣幸第一次水多跑了两次厕所今天一点事都没有 谢谢哈哈哈哈文平先生好 全球的战友们好全世界的父老乡亲们你们好我是文平 我是很荣幸五月花农场 代表五月花农场和全世界的父奶奶今天有限的在这里得瑟瑟得瑟 谢谢郭先生 谢谢文一听 这个文婷文婷文肖给他打招呼 想起了不老乡亲哎呀 这想起了我们这老家死的活的 愿意到 愿意不到的 全问好中国人这个叫周到 这个叫周到周到的了 别人和自己都已经周到不到了但是为了周到 谁也周不到尊敬的战友们好 今天是2月20号今天是一个特别的日子共产党的冬奥的冬眠会这个也正在所谓的闭不了墓的闭幕中我觉得共产党是真的是死不瞑目他说死也闭不了墓了今天呢 我都忘了在共产党还有一个闭幕会这早上这五点钟我都起来了你说我睡吧 我要睡我也怕醒不来我过了咱今天直播了点 不睡吧 太早了 是吧这群里才说今天是闭幕会 我才整明白共产党就是冬奥会闭幕会我这时候拿国内的咱们战友联络的专用手机我国内战友啥反应啊 这一喊一嗓子就国内战友炸的祸了他说我们都准备好上去评论去了没有评论哪 不让我们评论哪还有一个他说突然间他说就在闭幕式所谓刚刚开始的时候他说我们的信号就突然都不敢用了好多地方就是上不去 上不了网所以说共产党的闭幕会最怕的是什么呀 怕的是中国人们他不让中国人们参与那谁花了钱呢 是吧更不让外国人参与 你看都不让你看 来都不让你来那你这个冬奥会是国际冬奥会呢还是中国共产党的冬奥会呢然后共产党的中央电视台又开始了没有离开已经想念现在说全世界人民都在夸奖全世界人民都夸奖这是一个绝美的 绝妙的普京的原话史无前例的成功的冬奥会大家你们记得2008年七哥在那牛叉的盘鼓开幕式闭幕式 我都是有几个包厢的闭幕会那是啥样子你看那运动员 你看那场景这次的冬奥会花的钱是当时2008年开幕式并不是都是N倍的钱蓝金黄的钱也超出N倍但是弄成这个德行但凡有点脑子的人我们回去看看2008年到今天我们中国人忘记疼痛忘记痛苦 忘记灾难可能全世界是最快的忘的最爱憧憬未来 幻想未来的你看咱们战友有很多人 包括咱们战友就是啥事出现了一他能跟你想出一个一出来一到后边生无数一生无数 不用三生无数幻想就是极强但是中国人就对过去的疼痛 灾难基本上你不记得就像那索脸女一样24年的疼 你能忘掉吗三天前咱们一个女战友说七哥你知道吗 我十一岁我就被我爸爸的同事给强奸我到了十六岁 我又被我哥的同事强奸我跟我爸说 跟我哥说两次稀释宁人 不要再说 你还得嫁人呢他说七哥 我忘掉了两次强奸你说这个女的被24年强奸 天天强奸她是啥感觉啊我说这就是我们中国人的根基 因和圆就因为有你这样两次被你爸你哥的同事强奸不说 他才能结出这样24年被轮奸生出八个孩子 这样的结果我徐州的一个好朋友是曾经的 跟我很短暂的一个同学是在我老家红庙的同学昨天给我发信息 跟我说什么七哥 整个徐州现在建了好几堵墙他说 你能想想这个锁链女的村旁边建上了铁墙吗你能想想那个医院里边现在警察建立了一到200多个警察墙吗他说 我是管的同心部门里边就是防火墙经常给七哥让他们放防水 是吧这个我们现在来的是三个部门管郑保的和国安的 叫网络防火墙兄弟姐妹们 我们今天五月花农场五月花是追求自由 追求幸福在今天的冬奥闭幕式上就不要看别的就看一看所有的那个锁链女的村落的铁皮墙建的有多快徐州的网络防火墙有多快徐州的把这闺女锁链女以精神病为名关在医院里边的警察墙建的有多快如果拿出这个千分之一 一分之一的精力和时间 警力锁链女当年不至于24年 找不着人但是中国人会很快忘记了谁还记得当年的 叫雷什么 大家还记得吗被打死的 雷洋还好一成 今天你的主持人不白当兄弟你还记得叫雷洋 也没叫什么雷猪挺好你们还记得几个叫雷洋啊 谁谁记得雷洋啊你问中国人很多人还已经忘掉雷洋了不是忘掉文化大革命8964 雷洋谁还记得雷洋当时我给你们在直播中 2017年就说过领导说他最多折腾三星期 闹着闹着就过去了躲猫猫死不就是三星期吗就这个事儿 徐周然那个哥们跟我说说讲话内部啊 这个事儿可能要折腾一个月由于西方反华势力 大声地说出了啊郭文贵啊 他们说我们这里开会从来不说郭文贵的名字吧也不说新中国联邦 不允许说就是反华组织 这回提出郭文贵以及他所谓建的犯罪集团 反党反国集团 新中国联邦利用所谓的锁链女事件大肆炒作这个事情可能要进行四周到六周的时间严查 紧急的24小时的进行网络封锁就是现在锁链女六周 现在已经大概四周了吧还有两周时间 估计这事儿就过了所以说一程你看我们坐在这儿的时候兄弟我们每次大直播的时候我特别想问问中国人我们中国人真的就是这么容易忘掉被强奸两次然后等待着你的很有可能发生在你家人家的24年的轮奸吗我们真的那么容易忘记吗我们每次大直播的时候上直播的兄弟姐妹你们都想一想你真以为这种绑架事不会发生在你家身上和我家身上你看看今天冬奥会的闭幕式上共产党在全世界已经弄成啥样子俄罗斯的 我一会儿给你们爆料现在不给你们爆昨天上午的时候普京身边的人跟我深聊了一下普京的事儿我也是后脑勺发凉啊 听他聊他现在天天使用HP在忙活他的钱呢是吧我说你老使用HP哥们儿你得跟我聊聊普京到底北京啥情况普京打不打乌克兰他说你要有时间咱俩打个电话我最讨厌的因为我同时干三件事儿哪有时间打电话呀打电话就不能同时干三件事儿我就通个电话吧通三分钟电话结果通了将近二三十分钟他讲了普京从北京回来之后的感受我还给他也算过命他说Miles你还记得你给我算过命吗我妹妹你给算命说我妹妹过不了三十五我妹妹就去年过世了三十六三十七岁过了三十五了但是就过两年他说你能不能给我算我说我不给你算我说你的命也很长不了他说真的他最近要让我去乌克兰呢我说那你去乌克兰就死在那儿求的了但愿咱俩不是最后一次通话但是他跟我讲了就是普京从北京和习有两个半小时的单独会谈单独会谈两人没有翻译我说他俩咋沟通啊用脚趾头掰脚趾头他说有一个他俩人的翻译器就是翻译都不让他参加这是我听说几乎可能中国是第一次了就是两国这样的元首讨论决定人类的大事掰脚趾头用翻译器来弄不让翻译参加你可见他俩谈的是啥事然后他大概知道了一些普京回来的神经的情况比如说普京上飞机的习主间普京上习主间绝对两分钟大工最多不会超过五分钟他说普京我很少看到他上大工二十几分钟这些习主间出来哎呀二十几分钟确实很长啊生孩子也就是二十几分钟嘛回去以后回去你笑啥我笑好像你生过孩子你生过你笑啥呀生孩子你笑啥呀好像你生过似的感同身受是吧所以今天我跟你们聊聊乌克兰局势和咱现在的整个中共的避不了幕的避幕式和世界的经济兄弟姐妹们世界真的是大变了咱下一个题目吧义辰我怕把你们说睡着了好的我们今天有三个话题那我们先七哥已经给大家介绍了一下冬奥会的事情那我们现在先做第一个PPT就是中俄领导对改变国际秩序乌克兰作为较量的战场现在发生了什么"
+}

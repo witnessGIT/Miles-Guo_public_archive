@@ -1,0 +1,48 @@
+{
+  "chunk_audio_sha256": "bc59f1a254cc4dee8d366b2f4e2987d46fd29040643091cdbd321ffb509efe31",
+  "chunk_index": 15,
+  "completed_at": "2026-10-25T10:41:50Z",
+  "language": "zh",
+  "live_id": "LIVE_20220218_001",
+  "media_committed_to_git": false,
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "offset_sec": 13500,
+  "paid_api_used": false,
+  "processing_location": "github-hosted-macos-arm64",
+  "schema_version": "cloud-asr-chunk-v1",
+  "segments": [
+    {
+      "avg_logprob": -8.313805,
+      "compression_ratio": 0.636364,
+      "end": 13505.44,
+      "no_speech_prob": 0.0,
+      "start": 13500.6,
+      "text": "inom وبOTHER"
+    },
+    {
+      "avg_logprob": -8.254827,
+      "compression_ratio": 0.652174,
+      "end": 13520.2,
+      "no_speech_prob": 0.0,
+      "start": 13505.92,
+      "text": "健 HEL çıkar"
+    },
+    {
+      "avg_logprob": -7.59252,
+      "compression_ratio": 0.7,
+      "end": 13547.46,
+      "no_speech_prob": 0.0,
+      "start": 13520.58,
+      "text": "grandi Frankie"
+    },
+    {
+      "avg_logprob": -0.128703,
+      "compression_ratio": 0.851351,
+      "end": 13577.44,
+      "no_speech_prob": 0.0,
+      "start": 13547.46,
+      "text": "请不吝点赞 订阅 转发 打赏支持明镜与点点栏目"
+    }
+  ],
+  "text": "inom وبOTHER健 HEL çıkar grandi Frankie请不吝点赞 订阅 转发 打赏支持明镜与点点栏目"
+}
