@@ -1,0 +1,17 @@
+{
+  "task_id": "WI_LIVE_20220128_001_key_points_topics",
+  "agent_id": "codex-local-asr-agent50-20261023",
+  "completed_at": "2026-10-25T05:34:40.329987+00:00",
+  "result_commit": "92e7b7c6883335fe9f50db683e0fc70644d6996a",
+  "outputs": [
+    "data/current/segment_key_points/machine_live_20220128_001.jsonl",
+    "data/current/segment_topics/machine_live_20220128_001.jsonl"
+  ],
+  "validation": "37 evidence-grounded agent-reviewed machine key points across all 7 natural segments; 23 controlled topic links; exact Python character offsets; every substantive segment covered; political, diplomatic, medical-plane, and classified-information claims explicitly attributed and marked unverified or ASR-ambiguous; build_db OK; validate_db OK; 146 tests OK",
+  "workflow_mode": "continuous-worker-v2",
+  "claim_protocol": "claim-protocol-v2",
+  "entry_mode": "work",
+  "continue_after_finish": true,
+  "finish_prerequisites_revalidated": true,
+  "notes": "Task completed only after re-checking the latest repository dependency contract. Under continuous-worker-v2, refresh repository state and claim the next eligible task unless a documented stop condition applies."
+}
