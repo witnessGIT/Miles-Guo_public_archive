@@ -1,0 +1,1184 @@
+{
+  "chunk_audio_sha256": "3bf5fab35275711260566aa22f70d85afe4da03436e26854716bbf5c0efe8078",
+  "chunk_index": 1,
+  "completed_at": "2026-10-25T00:33:54Z",
+  "language": "zh",
+  "live_id": "LIVE_20220122_001",
+  "media_committed_to_git": false,
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "offset_sec": 900,
+  "paid_api_used": false,
+  "processing_location": "github-hosted-macos-arm64",
+  "schema_version": "cloud-asr-chunk-v1",
+  "segments": [
+    {
+      "avg_logprob": -0.443154,
+      "compression_ratio": 0.65625,
+      "end": 901.16,
+      "no_speech_prob": 0.0,
+      "start": 900.0,
+      "text": "這個蘿蔔太好了"
+    },
+    {
+      "avg_logprob": -2.559467,
+      "compression_ratio": 0.62069,
+      "end": 952.16,
+      "no_speech_prob": 0.0,
+      "start": 930.0,
+      "text": "差溫度太長啊"
+    },
+    {
+      "avg_logprob": -0.237116,
+      "compression_ratio": 0.685714,
+      "end": 959.84,
+      "no_speech_prob": 0.0,
+      "start": 952.16,
+      "text": "大白眼"
+    },
+    {
+      "avg_logprob": -0.237116,
+      "compression_ratio": 0.685714,
+      "end": 964.42,
+      "no_speech_prob": 0.0,
+      "start": 959.84,
+      "text": "多米诺骨牌"
+    },
+    {
+      "avg_logprob": -0.658265,
+      "compression_ratio": 0.625,
+      "end": 1012.14,
+      "no_speech_prob": 0.0,
+      "start": 982.16,
+      "text": "多米诺骨牌"
+    },
+    {
+      "avg_logprob": -0.353273,
+      "compression_ratio": 0.625,
+      "end": 1042.14,
+      "no_speech_prob": 0.0,
+      "start": 1012.16,
+      "text": "多米诺骨牌"
+    },
+    {
+      "avg_logprob": -0.198221,
+      "compression_ratio": 0.625,
+      "end": 1072.14,
+      "no_speech_prob": 0.0,
+      "start": 1042.16,
+      "text": "多米诺骨牌"
+    },
+    {
+      "avg_logprob": -0.333411,
+      "compression_ratio": 0.625,
+      "end": 1082.14,
+      "no_speech_prob": 0.0,
+      "start": 1072.14,
+      "text": "多米诺骨牌"
+    },
+    {
+      "avg_logprob": -0.17097,
+      "compression_ratio": 1.111111,
+      "end": 1084.14,
+      "no_speech_prob": 0.0,
+      "start": 1082.14,
+      "text": "多米诺骨牌"
+    },
+    {
+      "avg_logprob": -0.17097,
+      "compression_ratio": 1.111111,
+      "end": 1086.14,
+      "no_speech_prob": 0.0,
+      "start": 1084.14,
+      "text": "多米诺骨牌"
+    },
+    {
+      "avg_logprob": -0.181116,
+      "compression_ratio": 0.625,
+      "end": 1088.14,
+      "no_speech_prob": 0.0,
+      "start": 1086.14,
+      "text": "多米诺骨牌"
+    },
+    {
+      "avg_logprob": -0.341023,
+      "compression_ratio": 0.625,
+      "end": 1094.14,
+      "no_speech_prob": 0.0,
+      "start": 1088.14,
+      "text": "多米诺骨牌"
+    },
+    {
+      "avg_logprob": -0.584291,
+      "compression_ratio": 1.117241,
+      "end": 1096.14,
+      "no_speech_prob": 0.0,
+      "start": 1094.14,
+      "text": "嗯嗯"
+    },
+    {
+      "avg_logprob": -0.584291,
+      "compression_ratio": 1.117241,
+      "end": 1102.9,
+      "no_speech_prob": 0.0,
+      "start": 1100.9,
+      "text": "《鑽繩之中》"
+    },
+    {
+      "avg_logprob": -0.584291,
+      "compression_ratio": 1.117241,
+      "end": 1105.54,
+      "no_speech_prob": 0.0,
+      "start": 1102.9,
+      "text": "《東京音樂團傳播福音》的人"
+    },
+    {
+      "avg_logprob": -0.584291,
+      "compression_ratio": 1.117241,
+      "end": 1106.98,
+      "no_speech_prob": 0.0,
+      "start": 1105.54,
+      "text": "《流浪的加飛》"
+    },
+    {
+      "avg_logprob": -0.584291,
+      "compression_ratio": 1.117241,
+      "end": 1107.98,
+      "no_speech_prob": 0.0,
+      "start": 1106.98,
+      "text": "《時光》"
+    },
+    {
+      "avg_logprob": -0.584291,
+      "compression_ratio": 1.117241,
+      "end": 1112.84,
+      "no_speech_prob": 0.0,
+      "start": 1111.84,
+      "text": "《戰姆士》"
+    },
+    {
+      "avg_logprob": -0.584291,
+      "compression_ratio": 1.117241,
+      "end": 1116.6,
+      "no_speech_prob": 0.0,
+      "start": 1115.08,
+      "text": "哎呀不行了太快了"
+    },
+    {
+      "avg_logprob": -0.584291,
+      "compression_ratio": 1.117241,
+      "end": 1117.6,
+      "no_speech_prob": 0.0,
+      "start": 1116.6,
+      "text": "頭眼睛都暈了"
+    },
+    {
+      "avg_logprob": -0.584291,
+      "compression_ratio": 1.117241,
+      "end": 1122.5,
+      "no_speech_prob": 0.0,
+      "start": 1121.5,
+      "text": "哈傢伙"
+    },
+    {
+      "avg_logprob": -0.830522,
+      "compression_ratio": 0.913043,
+      "end": 1126.14,
+      "no_speech_prob": 0.0,
+      "start": 1124.14,
+      "text": "啊"
+    },
+    {
+      "avg_logprob": -0.830522,
+      "compression_ratio": 0.913043,
+      "end": 1141.78,
+      "no_speech_prob": 0.0,
+      "start": 1140.78,
+      "text": "黃麗平"
+    },
+    {
+      "avg_logprob": -0.830522,
+      "compression_ratio": 0.913043,
+      "end": 1143.78,
+      "no_speech_prob": 0.0,
+      "start": 1142.9,
+      "text": "黃麗平"
+    },
+    {
+      "avg_logprob": -2.714866,
+      "compression_ratio": 0.65625,
+      "end": 1145.82,
+      "no_speech_prob": 0.0,
+      "start": 1143.78,
+      "text": "嗯"
+    },
+    {
+      "avg_logprob": -2.714866,
+      "compression_ratio": 0.65625,
+      "end": 1152.54,
+      "no_speech_prob": 0.0,
+      "start": 1152.54,
+      "text": "味噌音行動"
+    },
+    {
+      "avg_logprob": -2.714866,
+      "compression_ratio": 0.65625,
+      "end": 1154.34,
+      "no_speech_prob": 0.0,
+      "start": 1153.78,
+      "text": "啊"
+    },
+    {
+      "avg_logprob": -0.557093,
+      "compression_ratio": 0.964286,
+      "end": 1179.6,
+      "no_speech_prob": 0.0,
+      "start": 1154.34,
+      "text": "这一盆吃完了"
+    },
+    {
+      "avg_logprob": -0.557093,
+      "compression_ratio": 0.964286,
+      "end": 1180.68,
+      "no_speech_prob": 0.0,
+      "start": 1179.6,
+      "text": "吃完了"
+    },
+    {
+      "avg_logprob": -0.378953,
+      "compression_ratio": 1.042553,
+      "end": 1190.3,
+      "no_speech_prob": 0.0,
+      "start": 1184.34,
+      "text": "KK太残忍了回旋标"
+    },
+    {
+      "avg_logprob": -0.378953,
+      "compression_ratio": 1.042553,
+      "end": 1201.4,
+      "no_speech_prob": 0.0,
+      "start": 1190.3,
+      "text": "兄弟姐妹们"
+    },
+    {
+      "avg_logprob": -0.378953,
+      "compression_ratio": 1.042553,
+      "end": 1206.48,
+      "no_speech_prob": 0.0,
+      "start": 1201.4,
+      "text": "你管看七哥能干的时候"
+    },
+    {
+      "avg_logprob": -0.378953,
+      "compression_ratio": 1.042553,
+      "end": 1207.86,
+      "no_speech_prob": 0.0,
+      "start": 1206.48,
+      "text": "你看七哥能吃的时候吗"
+    },
+    {
+      "avg_logprob": -0.816698,
+      "compression_ratio": 0.653846,
+      "end": 1223.32,
+      "no_speech_prob": 0.0,
+      "start": 1207.86,
+      "text": "服S号8412"
+    },
+    {
+      "avg_logprob": -0.816698,
+      "compression_ratio": 0.653846,
+      "end": 1228.76,
+      "no_speech_prob": 0.0,
+      "start": 1223.32,
+      "text": "呼粉"
+    },
+    {
+      "avg_logprob": -0.603215,
+      "compression_ratio": 0.964286,
+      "end": 1230.32,
+      "no_speech_prob": 0.0,
+      "start": 1228.76,
+      "text": "Fur me"
+    },
+    {
+      "avg_logprob": -0.603215,
+      "compression_ratio": 0.964286,
+      "end": 1232.3,
+      "no_speech_prob": 0.0,
+      "start": 1230.32,
+      "text": "微针不破"
+    },
+    {
+      "avg_logprob": -0.603215,
+      "compression_ratio": 0.964286,
+      "end": 1234.4,
+      "no_speech_prob": 0.0,
+      "start": 1232.3,
+      "text": "完了"
+    },
+    {
+      "avg_logprob": -0.603215,
+      "compression_ratio": 0.964286,
+      "end": 1235.6,
+      "no_speech_prob": 0.0,
+      "start": 1234.4,
+      "text": "这一块上了"
+    },
+    {
+      "avg_logprob": -0.603215,
+      "compression_ratio": 0.964286,
+      "end": 1236.56,
+      "no_speech_prob": 0.0,
+      "start": 1235.6,
+      "text": "让物体来了吗"
+    },
+    {
+      "avg_logprob": -0.603215,
+      "compression_ratio": 0.964286,
+      "end": 1237.02,
+      "no_speech_prob": 0.0,
+      "start": 1236.56,
+      "text": "让物体"
+    },
+    {
+      "avg_logprob": -0.603215,
+      "compression_ratio": 0.964286,
+      "end": 1238.56,
+      "no_speech_prob": 0.0,
+      "start": 1237.02,
+      "text": "奥喜"
+    },
+    {
+      "avg_logprob": -0.603215,
+      "compression_ratio": 0.964286,
+      "end": 1251.86,
+      "no_speech_prob": 0.0,
+      "start": 1238.56,
+      "text": "小号手"
+    },
+    {
+      "avg_logprob": -0.504572,
+      "compression_ratio": 0.962963,
+      "end": 1253.66,
+      "no_speech_prob": 0.0,
+      "start": 1251.86,
+      "text": "这是个1米6的桌子啊"
+    },
+    {
+      "avg_logprob": -0.504572,
+      "compression_ratio": 0.962963,
+      "end": 1256.16,
+      "no_speech_prob": 0.0,
+      "start": 1253.66,
+      "text": "我来看你们1米6还能看你们这字"
+    },
+    {
+      "avg_logprob": -0.504572,
+      "compression_ratio": 0.962963,
+      "end": 1256.82,
+      "no_speech_prob": 0.0,
+      "start": 1256.16,
+      "text": "Iray"
+    },
+    {
+      "avg_logprob": -0.504572,
+      "compression_ratio": 0.962963,
+      "end": 1258.82,
+      "no_speech_prob": 0.0,
+      "start": 1256.82,
+      "text": "Maliyah"
+    },
+    {
+      "avg_logprob": -0.465347,
+      "compression_ratio": 0.962963,
+      "end": 1270.62,
+      "no_speech_prob": 0.0,
+      "start": 1258.82,
+      "text": "纽约客战友啊"
+    },
+    {
+      "avg_logprob": -0.465347,
+      "compression_ratio": 0.962963,
+      "end": 1272.78,
+      "no_speech_prob": 0.0,
+      "start": 1270.62,
+      "text": "为啥不胖啊"
+    },
+    {
+      "avg_logprob": -0.465347,
+      "compression_ratio": 0.962963,
+      "end": 1275.28,
+      "no_speech_prob": 0.0,
+      "start": 1272.78,
+      "text": "七哥刚才做了160个"
+    },
+    {
+      "avg_logprob": -0.465347,
+      "compression_ratio": 0.962963,
+      "end": 1275.96,
+      "no_speech_prob": 0.0,
+      "start": 1275.28,
+      "text": "和阿雪"
+    },
+    {
+      "avg_logprob": -0.465347,
+      "compression_ratio": 0.962963,
+      "end": 1278.86,
+      "no_speech_prob": 0.0,
+      "start": 1275.96,
+      "text": "做了120个"
+    },
+    {
+      "avg_logprob": -0.411366,
+      "compression_ratio": 0.838235,
+      "end": 1285.32,
+      "no_speech_prob": 0.0,
+      "start": 1278.86,
+      "text": "郭叔最烂"
+    },
+    {
+      "avg_logprob": -0.411366,
+      "compression_ratio": 0.838235,
+      "end": 1286.82,
+      "no_speech_prob": 0.0,
+      "start": 1285.32,
+      "text": "天姑之烂"
+    },
+    {
+      "avg_logprob": -0.411366,
+      "compression_ratio": 0.838235,
+      "end": 1288.06,
+      "no_speech_prob": 0.0,
+      "start": 1286.82,
+      "text": "白月"
+    },
+    {
+      "avg_logprob": -0.411366,
+      "compression_ratio": 0.838235,
+      "end": 1289.72,
+      "no_speech_prob": 0.0,
+      "start": 1288.06,
+      "text": "文友"
+    },
+    {
+      "avg_logprob": -0.411366,
+      "compression_ratio": 0.838235,
+      "end": 1292.46,
+      "no_speech_prob": 0.0,
+      "start": 1289.72,
+      "text": "米小乐"
+    },
+    {
+      "avg_logprob": -0.411366,
+      "compression_ratio": 0.838235,
+      "end": 1298.76,
+      "no_speech_prob": 0.0,
+      "start": 1292.46,
+      "text": "东方又红"
+    },
+    {
+      "avg_logprob": -3.217675,
+      "compression_ratio": 0.8,
+      "end": 1305.52,
+      "no_speech_prob": 0.0,
+      "start": 1298.76,
+      "text": "平 junk"
+    },
+    {
+      "avg_logprob": -3.217675,
+      "compression_ratio": 0.8,
+      "end": 1314.52,
+      "no_speech_prob": 0.0,
+      "start": 1313.6,
+      "text": "文"
+    },
+    {
+      "avg_logprob": -3.217675,
+      "compression_ratio": 0.8,
+      "end": 1315.9,
+      "no_speech_prob": 0.0,
+      "start": 1314.72,
+      "text": "люди"
+    },
+    {
+      "avg_logprob": -3.217675,
+      "compression_ratio": 0.8,
+      "end": 1316.72,
+      "no_speech_prob": 0.0,
+      "start": 1315.9,
+      "text": "嗯"
+    },
+    {
+      "avg_logprob": -3.217675,
+      "compression_ratio": 0.8,
+      "end": 1324.52,
+      "no_speech_prob": 0.0,
+      "start": 1316.72,
+      "text": "全程"
+    },
+    {
+      "avg_logprob": -3.217675,
+      "compression_ratio": 0.8,
+      "end": 1325.24,
+      "no_speech_prob": 0.0,
+      "start": 1324.52,
+      "text": "进西"
+    },
+    {
+      "avg_logprob": -3.217675,
+      "compression_ratio": 0.8,
+      "end": 1326.72,
+      "no_speech_prob": 0.0,
+      "start": 1325.24,
+      "text": "西郊"
+    },
+    {
+      "avg_logprob": -3.217675,
+      "compression_ratio": 0.8,
+      "end": 1327.32,
+      "no_speech_prob": 0.0,
+      "start": 1326.72,
+      "text": "路"
+    },
+    {
+      "avg_logprob": -0.38159,
+      "compression_ratio": 1.03125,
+      "end": 1337.24,
+      "no_speech_prob": 0.0,
+      "start": 1327.32,
+      "text": "富尔文基盘古千寻望仔小仙辈小王子"
+    },
+    {
+      "avg_logprob": -0.38159,
+      "compression_ratio": 1.03125,
+      "end": 1338.32,
+      "no_speech_prob": 0.0,
+      "start": 1337.24,
+      "text": "哎呀王子来了"
+    },
+    {
+      "avg_logprob": -0.38159,
+      "compression_ratio": 1.03125,
+      "end": 1341.26,
+      "no_speech_prob": 0.0,
+      "start": 1338.32,
+      "text": "没给家家双休假"
+    },
+    {
+      "avg_logprob": -0.38159,
+      "compression_ratio": 1.03125,
+      "end": 1342.2,
+      "no_speech_prob": 0.0,
+      "start": 1341.26,
+      "text": "没五休假"
+    },
+    {
+      "avg_logprob": -0.500863,
+      "compression_ratio": 1.076923,
+      "end": 1363.32,
+      "no_speech_prob": 0.0,
+      "start": 1357.32,
+      "text": "我吃这个做饭"
+    },
+    {
+      "avg_logprob": -0.500863,
+      "compression_ratio": 1.076923,
+      "end": 1366.32,
+      "no_speech_prob": 0.0,
+      "start": 1363.32,
+      "text": "再来想想"
+    },
+    {
+      "avg_logprob": -0.500863,
+      "compression_ratio": 1.076923,
+      "end": 1376.32,
+      "no_speech_prob": 0.0,
+      "start": 1366.32,
+      "text": "一个不能吃你就不能干 是吧"
+    },
+    {
+      "avg_logprob": -0.500863,
+      "compression_ratio": 1.076923,
+      "end": 1380.32,
+      "no_speech_prob": 0.0,
+      "start": 1376.32,
+      "text": "你不能练 你管吃那会出事的"
+    },
+    {
+      "avg_logprob": -0.500863,
+      "compression_ratio": 1.076923,
+      "end": 1385.32,
+      "no_speech_prob": 0.0,
+      "start": 1380.32,
+      "text": "是吧 七哥还能吃"
+    },
+    {
+      "avg_logprob": -0.211243,
+      "compression_ratio": 1.186275,
+      "end": 1389.32,
+      "no_speech_prob": 0.0,
+      "start": 1385.32,
+      "text": "还能练 是吧"
+    },
+    {
+      "avg_logprob": -0.211243,
+      "compression_ratio": 1.186275,
+      "end": 1391.32,
+      "no_speech_prob": 0.0,
+      "start": 1389.32,
+      "text": "这不是吹牛的 就像那眼睛"
+    },
+    {
+      "avg_logprob": -0.211243,
+      "compression_ratio": 1.186275,
+      "end": 1393.32,
+      "no_speech_prob": 0.0,
+      "start": 1391.32,
+      "text": "我看这个一米六桌子 就这儿"
+    },
+    {
+      "avg_logprob": -0.211243,
+      "compression_ratio": 1.186275,
+      "end": 1395.32,
+      "no_speech_prob": 0.0,
+      "start": 1393.32,
+      "text": "我都能看到你们的字"
+    },
+    {
+      "avg_logprob": -0.211243,
+      "compression_ratio": 1.186275,
+      "end": 1398.32,
+      "no_speech_prob": 0.0,
+      "start": 1395.32,
+      "text": "子群2020"
+    },
+    {
+      "avg_logprob": -0.211243,
+      "compression_ratio": 1.186275,
+      "end": 1402.32,
+      "no_speech_prob": 0.0,
+      "start": 1398.32,
+      "text": "挺郭小七 你看看"
+    },
+    {
+      "avg_logprob": -0.211243,
+      "compression_ratio": 1.186275,
+      "end": 1404.32,
+      "no_speech_prob": 0.0,
+      "start": 1402.32,
+      "text": "是吧 AGO"
+    },
+    {
+      "avg_logprob": -0.211243,
+      "compression_ratio": 1.186275,
+      "end": 1406.32,
+      "no_speech_prob": 0.0,
+      "start": 1404.32,
+      "text": "蒲公英飞呀飞"
+    },
+    {
+      "avg_logprob": -0.211243,
+      "compression_ratio": 1.186275,
+      "end": 1410.32,
+      "no_speech_prob": 0.0,
+      "start": 1407.32,
+      "text": "金妹子777 是吧 没看明白"
+    },
+    {
+      "avg_logprob": -0.211243,
+      "compression_ratio": 1.186275,
+      "end": 1412.32,
+      "no_speech_prob": 0.0,
+      "start": 1410.32,
+      "text": "这就是七哥"
+    },
+    {
+      "avg_logprob": -0.211243,
+      "compression_ratio": 1.186275,
+      "end": 1414.32,
+      "no_speech_prob": 0.0,
+      "start": 1412.32,
+      "text": "你说吹牛能行吗"
+    },
+    {
+      "avg_logprob": -0.28378,
+      "compression_ratio": 0.870588,
+      "end": 1418.32,
+      "no_speech_prob": 0.0,
+      "start": 1414.32,
+      "text": "那高冰晨 大起来的 还有鲁大脑袋"
+    },
+    {
+      "avg_logprob": -0.28378,
+      "compression_ratio": 0.870588,
+      "end": 1422.32,
+      "no_speech_prob": 0.0,
+      "start": 1418.32,
+      "text": "他再拖上一百回都不行"
+    },
+    {
+      "avg_logprob": -0.547992,
+      "compression_ratio": 1.282609,
+      "end": 1424.32,
+      "no_speech_prob": 0.0,
+      "start": 1422.32,
+      "text": "吃完啦吃完啦"
+    },
+    {
+      "avg_logprob": -0.547992,
+      "compression_ratio": 1.282609,
+      "end": 1428.32,
+      "no_speech_prob": 0.0,
+      "start": 1424.32,
+      "text": "吃完啦 吃完啦"
+    },
+    {
+      "avg_logprob": -0.547992,
+      "compression_ratio": 1.282609,
+      "end": 1430.32,
+      "no_speech_prob": 0.0,
+      "start": 1428.32,
+      "text": "朱莉啊 I'm finished"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 0.947619,
+      "end": 1432.32,
+      "no_speech_prob": 0.0,
+      "start": 1430.32,
+      "text": "快点儿 같아요"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 0.947619,
+      "end": 1435.32,
+      "no_speech_prob": 0.0,
+      "start": 1432.32,
+      "text": "separated"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 0.947619,
+      "end": 1438.32,
+      "no_speech_prob": 0.0,
+      "start": 1436.32,
+      "text": "收水我们还会被搭 Mansfield"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 0.947619,
+      "end": 1440.32,
+      "no_speech_prob": 0.0,
+      "start": 1438.32,
+      "text": "又 overdidence 就 Secondly"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 0.947619,
+      "end": 1442.02,
+      "no_speech_prob": 0.0,
+      "start": 1440.32,
+      "text": "aré"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 0.947619,
+      "end": 1444.32,
+      "no_speech_prob": 0.0,
+      "start": 1442.32,
+      "text": "不要给 goed操口阿 你还还せ zam께"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 0.947619,
+      "end": 1446.34,
+      "no_speech_prob": 0.0,
+      "start": 1444.32,
+      "text": "口 Barn"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 0.947619,
+      "end": 1448.32,
+      "no_speech_prob": 0.0,
+      "start": 1446.34,
+      "text": "这个答案里看到没有五岘"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 0.947619,
+      "end": 1450.32,
+      "no_speech_prob": 0.0,
+      "start": 1448.32,
+      "text": "谢谢 Hussein RM軒"
+    },
+    {
+      "avg_logprob": -0.813162,
+      "compression_ratio": 0.93617,
+      "end": 1455.32,
+      "no_speech_prob": 0.0,
+      "start": 1450.32,
+      "text": "我先收口吧 我不收口 我說不出來"
+    },
+    {
+      "avg_logprob": -0.718942,
+      "compression_ratio": 1.107143,
+      "end": 1485.32,
+      "no_speech_prob": 0.0,
+      "start": 1480.32,
+      "text": "我先收口吧 我先收口吧"
+    },
+    {
+      "avg_logprob": -0.834308,
+      "compression_ratio": 1.037037,
+      "end": 1512.32,
+      "no_speech_prob": 0.0,
+      "start": 1510.32,
+      "text": "我先收口吧 先收口吧"
+    },
+    {
+      "avg_logprob": -3.708406,
+      "compression_ratio": 0.65625,
+      "end": 1568.54,
+      "no_speech_prob": 0.0,
+      "start": 1540.32,
+      "text": "文字幕命令影片"
+    },
+    {
+      "avg_logprob": -0.155622,
+      "compression_ratio": 19.342857,
+      "end": 1598.54,
+      "no_speech_prob": 0.0,
+      "start": 1568.54,
+      "text": "этом第一話題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題"
+    },
+    {
+      "avg_logprob": -0.831858,
+      "compression_ratio": 1.366197,
+      "end": 1601.3,
+      "no_speech_prob": 0.0,
+      "start": 1598.54,
+      "text": "你裝啥裝?你耍啤酒?"
+    },
+    {
+      "avg_logprob": -0.831858,
+      "compression_ratio": 1.366197,
+      "end": 1603.72,
+      "no_speech_prob": 0.0,
+      "start": 1602.56,
+      "text": "我們讓你吃吃吧?"
+    },
+    {
+      "avg_logprob": -0.831858,
+      "compression_ratio": 1.366197,
+      "end": 1606.38,
+      "no_speech_prob": 0.0,
+      "start": 1604.2,
+      "text": "你別裝看聽見行不行?"
+    },
+    {
+      "avg_logprob": -0.831858,
+      "compression_ratio": 1.366197,
+      "end": 1608.2,
+      "no_speech_prob": 0.0,
+      "start": 1606.84,
+      "text": "那邊沒人,過來"
+    },
+    {
+      "avg_logprob": -0.831858,
+      "compression_ratio": 1.366197,
+      "end": 1610.54,
+      "no_speech_prob": 0.0,
+      "start": 1609.94,
+      "text": "過來"
+    },
+    {
+      "avg_logprob": -0.831858,
+      "compression_ratio": 1.366197,
+      "end": 1612.46,
+      "no_speech_prob": 0.0,
+      "start": 1611.26,
+      "text": "這站上看看你過來"
+    },
+    {
+      "avg_logprob": -0.831858,
+      "compression_ratio": 1.366197,
+      "end": 1617.0,
+      "no_speech_prob": 0.0,
+      "start": 1616.42,
+      "text": "過來"
+    },
+    {
+      "avg_logprob": -0.831858,
+      "compression_ratio": 1.366197,
+      "end": 1621.5,
+      "no_speech_prob": 0.0,
+      "start": 1619.66,
+      "text": "你走你走你走你走"
+    },
+    {
+      "avg_logprob": -0.831858,
+      "compression_ratio": 1.366197,
+      "end": 1623.5,
+      "no_speech_prob": 0.0,
+      "start": 1622.3,
+      "text": "好吧你走吧"
+    },
+    {
+      "avg_logprob": -0.831858,
+      "compression_ratio": 1.366197,
+      "end": 1627.16,
+      "no_speech_prob": 0.0,
+      "start": 1624.88,
+      "text": "過來吧別裝了行吧"
+    },
+    {
+      "avg_logprob": -0.875086,
+      "compression_ratio": 1.284091,
+      "end": 1630.54,
+      "no_speech_prob": 0.0,
+      "start": 1628.54,
+      "text": "你真生氣了"
+    },
+    {
+      "avg_logprob": -0.875086,
+      "compression_ratio": 1.284091,
+      "end": 1633.08,
+      "no_speech_prob": 0.0,
+      "start": 1632.3,
+      "text": "我走了"
+    },
+    {
+      "avg_logprob": -0.875086,
+      "compression_ratio": 1.284091,
+      "end": 1634.82,
+      "no_speech_prob": 0.0,
+      "start": 1633.82,
+      "text": "我走了Snow"
+    },
+    {
+      "avg_logprob": -0.875086,
+      "compression_ratio": 1.284091,
+      "end": 1640.36,
+      "no_speech_prob": 0.0,
+      "start": 1639.36,
+      "text": "這邊有吃的"
+    },
+    {
+      "avg_logprob": -0.875086,
+      "compression_ratio": 1.284091,
+      "end": 1644.84,
+      "no_speech_prob": 0.0,
+      "start": 1643.6,
+      "text": "這邊有吃的Snow"
+    },
+    {
+      "avg_logprob": -0.875086,
+      "compression_ratio": 1.284091,
+      "end": 1647.08,
+      "no_speech_prob": 0.0,
+      "start": 1646.58,
+      "text": "過來"
+    },
+    {
+      "avg_logprob": -0.875086,
+      "compression_ratio": 1.284091,
+      "end": 1649.48,
+      "no_speech_prob": 0.0,
+      "start": 1648.98,
+      "text": "過來"
+    },
+    {
+      "avg_logprob": -0.875086,
+      "compression_ratio": 1.284091,
+      "end": 1655.16,
+      "no_speech_prob": 0.0,
+      "start": 1653.02,
+      "text": "哎你真給我鬥氣是不是"
+    },
+    {
+      "avg_logprob": -1.673289,
+      "compression_ratio": 0.924731,
+      "end": 1656.88,
+      "no_speech_prob": 0.0,
+      "start": 1655.66,
+      "text": "哎"
+    },
+    {
+      "avg_logprob": -1.673289,
+      "compression_ratio": 0.924731,
+      "end": 1658.14,
+      "no_speech_prob": 0.0,
+      "start": 1657.56,
+      "text": "小燕兒"
+    },
+    {
+      "avg_logprob": -1.673289,
+      "compression_ratio": 0.924731,
+      "end": 1659.28,
+      "no_speech_prob": 0.0,
+      "start": 1658.48,
+      "text": "你真的"
+    },
+    {
+      "avg_logprob": -1.673289,
+      "compression_ratio": 0.924731,
+      "end": 1660.88,
+      "no_speech_prob": 0.0,
+      "start": 1659.98,
+      "text": "你確定啊"
+    },
+    {
+      "avg_logprob": -1.673289,
+      "compression_ratio": 0.924731,
+      "end": 1661.8,
+      "no_speech_prob": 0.0,
+      "start": 1661.18,
+      "text": "Snow"
+    },
+    {
+      "avg_logprob": -1.673289,
+      "compression_ratio": 0.924731,
+      "end": 1665.16,
+      "no_speech_prob": 0.0,
+      "start": 1663.7,
+      "text": "不是你老躲進去"
+    },
+    {
+      "avg_logprob": -1.673289,
+      "compression_ratio": 0.924731,
+      "end": 1667.42,
+      "no_speech_prob": 0.0,
+      "start": 1666.42,
+      "text": "Snow"
+    },
+    {
+      "avg_logprob": -1.673289,
+      "compression_ratio": 0.924731,
+      "end": 1669.34,
+      "no_speech_prob": 0.0,
+      "start": 1667.98,
+      "text": "快看看我另外一點"
+    },
+    {
+      "avg_logprob": -5.285458,
+      "compression_ratio": 0.636364,
+      "end": 1681.46,
+      "no_speech_prob": 0.0,
+      "start": 1669.34,
+      "text": "慢点"
+    },
+    {
+      "avg_logprob": -5.285458,
+      "compression_ratio": 0.636364,
+      "end": 1692.44,
+      "no_speech_prob": 0.0,
+      "start": 1687.84,
+      "text": "ideally"
+    },
+    {
+      "avg_logprob": -0.801204,
+      "compression_ratio": 1.078125,
+      "end": 1713.54,
+      "no_speech_prob": 0.0,
+      "start": 1699.34,
+      "text": "你晃过来了"
+    },
+    {
+      "avg_logprob": -0.801204,
+      "compression_ratio": 1.078125,
+      "end": 1716.94,
+      "no_speech_prob": 0.0,
+      "start": 1713.54,
+      "text": "你晃过来了是吧"
+    },
+    {
+      "avg_logprob": -0.801204,
+      "compression_ratio": 1.078125,
+      "end": 1723.44,
+      "no_speech_prob": 0.0,
+      "start": 1716.94,
+      "text": "你有种有了呀"
+    },
+    {
+      "avg_logprob": -0.801204,
+      "compression_ratio": 1.078125,
+      "end": 1725.84,
+      "no_speech_prob": 0.0,
+      "start": 1723.44,
+      "text": "这我耍平息"
+    },
+    {
+      "avg_logprob": -0.736593,
+      "compression_ratio": 0.857143,
+      "end": 1732.84,
+      "no_speech_prob": 0.0,
+      "start": 1725.84,
+      "text": "你吃不吃"
+    },
+    {
+      "avg_logprob": -0.736593,
+      "compression_ratio": 0.857143,
+      "end": 1748.54,
+      "no_speech_prob": 0.0,
+      "start": 1732.84,
+      "text": "这死呢我"
+    },
+    {
+      "avg_logprob": -0.736593,
+      "compression_ratio": 0.857143,
+      "end": 1750.94,
+      "no_speech_prob": 0.0,
+      "start": 1748.54,
+      "text": "这比猴都精"
+    },
+    {
+      "avg_logprob": -0.736593,
+      "compression_ratio": 0.857143,
+      "end": 1753.04,
+      "no_speech_prob": 0.0,
+      "start": 1750.94,
+      "text": "你真没办法"
+    },
+    {
+      "avg_logprob": -0.424636,
+      "compression_ratio": 0.784314,
+      "end": 1755.04,
+      "no_speech_prob": 0.0,
+      "start": 1753.04,
+      "text": "真比猴都精"
+    },
+    {
+      "avg_logprob": -0.424636,
+      "compression_ratio": 0.784314,
+      "end": 1769.04,
+      "no_speech_prob": 0.0,
+      "start": 1767.04,
+      "text": "好看不?兄弟姐妹们"
+    },
+    {
+      "avg_logprob": -0.332092,
+      "compression_ratio": 0.555556,
+      "end": 1783.04,
+      "no_speech_prob": 0.0,
+      "start": 1769.04,
+      "text": "像谁呀?"
+    },
+    {
+      "avg_logprob": -1.307803,
+      "compression_ratio": 0.428571,
+      "end": 1797.04,
+      "no_speech_prob": 0.0,
+      "start": 1783.04,
+      "text": "谢谢"
+    },
+    {
+      "avg_logprob": -0.560418,
+      "compression_ratio": 0.571429,
+      "end": 1827.02,
+      "no_speech_prob": 0.0,
+      "start": 1797.04,
+      "text": "感谢观看"
+    }
+  ],
+  "text": "這個蘿蔔太好了差溫度太長啊大白眼多米诺骨牌多米诺骨牌多米诺骨牌多米诺骨牌多米诺骨牌多米诺骨牌多米诺骨牌多米诺骨牌多米诺骨牌嗯嗯《鑽繩之中》《東京音樂團傳播福音》的人《流浪的加飛》《時光》《戰姆士》哎呀不行了太快了頭眼睛都暈了哈傢伙啊黃麗平黃麗平嗯味噌音行動啊这一盆吃完了吃完了KK太残忍了回旋标兄弟姐妹们你管看七哥能干的时候你看七哥能吃的时候吗服S号8412呼粉Fur me微针不破完了这一块上了让物体来了吗让物体奥喜小号手这是个1米6的桌子啊我来看你们1米6还能看你们这字IrayMaliyah纽约客战友啊为啥不胖啊七哥刚才做了160个和阿雪做了120个郭叔最烂天姑之烂白月文友米小乐东方又红平 junk文 люди嗯全程进西西郊路富尔文基盘古千寻望仔小仙辈小王子哎呀王子来了没给家家双休假没五休假我吃这个做饭再来想想一个不能吃你就不能干 是吧你不能练 你管吃那会出事的是吧 七哥还能吃还能练 是吧这不是吹牛的 就像那眼睛我看这个一米六桌子 就这儿我都能看到你们的字子群2020挺郭小七 你看看是吧 AGO蒲公英飞呀飞金妹子777 是吧 没看明白这就是七哥你说吹牛能行吗那高冰晨 大起来的 还有鲁大脑袋他再拖上一百回都不行吃完啦吃完啦吃完啦 吃完啦朱莉啊 I'm finished快点儿 같아요 separated收水我们还会被搭 Mansfield又 overdidence 就 Secondlyaré不要给 goed操口阿 你还还せ zam께口 Barn这个答案里看到没有五岘谢谢 Hussein RM軒我先收口吧 我不收口 我說不出來我先收口吧 我先收口吧我先收口吧 先收口吧文字幕命令影片 этом第一話題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題題你裝啥裝?你耍啤酒?我們讓你吃吃吧?你別裝看聽見行不行?那邊沒人,過來過來這站上看看你過來過來你走你走你走你走好吧你走吧過來吧別裝了行吧你真生氣了我走了我走了Snow這邊有吃的這邊有吃的Snow過來過來哎你真給我鬥氣是不是哎小燕兒你真的你確定啊Snow不是你老躲進去Snow快看看我另外一點慢点 ideally你晃过来了你晃过来了是吧你有种有了呀这我耍平息你吃不吃这死呢我这比猴都精你真没办法真比猴都精好看不?兄弟姐妹们像谁呀?谢谢感谢观看"
+}

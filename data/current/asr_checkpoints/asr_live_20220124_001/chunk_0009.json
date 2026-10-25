@@ -1,0 +1,3224 @@
+{
+  "chunk_audio_sha256": "716f0b57b531d081e1a2c703f1d7d747d385693a95872cab441e45174f976cea",
+  "chunk_index": 9,
+  "completed_at": "2026-10-25T01:03:59Z",
+  "language": "zh",
+  "live_id": "LIVE_20220124_001",
+  "media_committed_to_git": false,
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "offset_sec": 8100,
+  "paid_api_used": false,
+  "processing_location": "github-hosted-macos-arm64",
+  "schema_version": "cloud-asr-chunk-v1",
+  "segments": [
+    {
+      "avg_logprob": -0.373901,
+      "compression_ratio": 1.245614,
+      "end": 8102.44,
+      "no_speech_prob": 0.0,
+      "start": 8100.0,
+      "text": "下面都进入我们最后一个话题"
+    },
+    {
+      "avg_logprob": -0.373901,
+      "compression_ratio": 1.245614,
+      "end": 8103.44,
+      "no_speech_prob": 0.0,
+      "start": 8102.44,
+      "text": "就是我们飞飞"
+    },
+    {
+      "avg_logprob": -0.373901,
+      "compression_ratio": 1.245614,
+      "end": 8106.2,
+      "no_speech_prob": 0.0,
+      "start": 8103.44,
+      "text": "就是她准备的PPT是关于冬奥会"
+    },
+    {
+      "avg_logprob": -0.373901,
+      "compression_ratio": 1.245614,
+      "end": 8108.04,
+      "no_speech_prob": 0.0,
+      "start": 8106.2,
+      "text": "和这两天北京发生了什么"
+    },
+    {
+      "avg_logprob": -0.373901,
+      "compression_ratio": 1.245614,
+      "end": 8109.76,
+      "no_speech_prob": 0.0,
+      "start": 8108.04,
+      "text": "交给飞飞谢谢"
+    },
+    {
+      "avg_logprob": -0.373901,
+      "compression_ratio": 1.245614,
+      "end": 8112.0,
+      "no_speech_prob": 0.0,
+      "start": 8109.76,
+      "text": "谢谢"
+    },
+    {
+      "avg_logprob": -0.373901,
+      "compression_ratio": 1.245614,
+      "end": 8115.0,
+      "no_speech_prob": 0.0,
+      "start": 8112.0,
+      "text": "是"
+    },
+    {
+      "avg_logprob": -0.373901,
+      "compression_ratio": 1.245614,
+      "end": 8118.16,
+      "no_speech_prob": 0.0,
+      "start": 8115.0,
+      "text": "唱甜蜜蜜吗"
+    },
+    {
+      "avg_logprob": -0.373901,
+      "compression_ratio": 1.245614,
+      "end": 8125.24,
+      "no_speech_prob": 0.0,
+      "start": 8118.16,
+      "text": "四位楚歌十面埋伏的北京冬奥会"
+    },
+    {
+      "avg_logprob": -0.152785,
+      "compression_ratio": 1.225,
+      "end": 8130.6,
+      "no_speech_prob": 0.0,
+      "start": 8125.24,
+      "text": "是撰稿人是代命文晓然后樱花团的"
+    },
+    {
+      "avg_logprob": -0.152785,
+      "compression_ratio": 1.225,
+      "end": 8133.2,
+      "no_speech_prob": 0.0,
+      "start": 8130.6,
+      "text": "然后还有青山是英喜的"
+    },
+    {
+      "avg_logprob": -0.152785,
+      "compression_ratio": 1.225,
+      "end": 8135.24,
+      "no_speech_prob": 0.0,
+      "start": 8133.2,
+      "text": "然后是美工是英喜的青山"
+    },
+    {
+      "avg_logprob": -0.152785,
+      "compression_ratio": 1.225,
+      "end": 8141.84,
+      "no_speech_prob": 0.0,
+      "start": 8135.24,
+      "text": "首先是谈到西方国家抵制冬奥最新消息"
+    },
+    {
+      "avg_logprob": -0.152785,
+      "compression_ratio": 1.225,
+      "end": 8147.0,
+      "no_speech_prob": 0.0,
+      "start": 8141.84,
+      "text": "1月19号NBA求新坎特回应姚明邀请"
+    },
+    {
+      "avg_logprob": -0.152785,
+      "compression_ratio": 1.225,
+      "end": 8148.66,
+      "no_speech_prob": 0.0,
+      "start": 8147.0,
+      "text": "我能参观老改营吗"
+    },
+    {
+      "avg_logprob": -0.152785,
+      "compression_ratio": 1.225,
+      "end": 8153.72,
+      "no_speech_prob": 0.0,
+      "start": 8148.66,
+      "text": "然后1月20号欧洲议会通过香港基本自由遭受侵害决议"
+    },
+    {
+      "avg_logprob": -0.068908,
+      "compression_ratio": 1.353612,
+      "end": 8155.48,
+      "no_speech_prob": 0.0,
+      "start": 8153.72,
+      "text": "呼吁抵制冬奥会"
+    },
+    {
+      "avg_logprob": -0.068908,
+      "compression_ratio": 1.353612,
+      "end": 8158.72,
+      "no_speech_prob": 0.0,
+      "start": 8155.48,
+      "text": "1月20号法国国民议会通过谴责中共"
+    },
+    {
+      "avg_logprob": -0.068908,
+      "compression_ratio": 1.353612,
+      "end": 8160.62,
+      "no_speech_prob": 0.0,
+      "start": 8158.72,
+      "text": "对新疆实行种族灭绝的决议"
+    },
+    {
+      "avg_logprob": -0.068908,
+      "compression_ratio": 1.353612,
+      "end": 8164.64,
+      "no_speech_prob": 0.0,
+      "start": 8160.62,
+      "text": "1月20号媒介准确在可口可乐总部发起"
+    },
+    {
+      "avg_logprob": -0.068908,
+      "compression_ratio": 1.353612,
+      "end": 8168.1,
+      "no_speech_prob": 0.0,
+      "start": 8164.64,
+      "text": "为什么可口可乐赞助种族灭绝的广告牌运动"
+    },
+    {
+      "avg_logprob": -0.068908,
+      "compression_ratio": 1.353612,
+      "end": 8172.62,
+      "no_speech_prob": 0.0,
+      "start": 8168.1,
+      "text": "1月24号NBC北京冬奥会是种族灭绝运动会"
+    },
+    {
+      "avg_logprob": -0.068908,
+      "compression_ratio": 1.353612,
+      "end": 8174.24,
+      "no_speech_prob": 0.0,
+      "start": 8172.62,
+      "text": "令人鄙视令人恶心"
+    },
+    {
+      "avg_logprob": -0.068908,
+      "compression_ratio": 1.353612,
+      "end": 8176.72,
+      "no_speech_prob": 0.0,
+      "start": 8174.24,
+      "text": "下一页是疫情失控"
+    },
+    {
+      "avg_logprob": -0.068908,
+      "compression_ratio": 1.353612,
+      "end": 8178.04,
+      "no_speech_prob": 0.0,
+      "start": 8176.72,
+      "text": "甚火失从"
+    },
+    {
+      "avg_logprob": -0.068908,
+      "compression_ratio": 1.353612,
+      "end": 8181.82,
+      "no_speech_prob": 0.0,
+      "start": 8178.04,
+      "text": "截止1月23号北京疫情确诊57例"
+    },
+    {
+      "avg_logprob": -0.096367,
+      "compression_ratio": 1.126168,
+      "end": 8185.02,
+      "no_speech_prob": 0.0,
+      "start": 8181.82,
+      "text": "累计确诊1272例"
+    },
+    {
+      "avg_logprob": -0.096367,
+      "compression_ratio": 1.126168,
+      "end": 8187.72,
+      "no_speech_prob": 0.0,
+      "start": 8185.02,
+      "text": "封台和朝阳开始全员核酸检测"
+    },
+    {
+      "avg_logprob": -0.096367,
+      "compression_ratio": 1.126168,
+      "end": 8190.4,
+      "no_speech_prob": 0.0,
+      "start": 8187.72,
+      "text": "那那个国际观众进入"
+    },
+    {
+      "avg_logprob": -0.096367,
+      "compression_ratio": 1.126168,
+      "end": 8192.02,
+      "no_speech_prob": 0.0,
+      "start": 8190.4,
+      "text": "国内观众不提供门票"
+    },
+    {
+      "avg_logprob": -0.096367,
+      "compression_ratio": 1.126168,
+      "end": 8196.0,
+      "no_speech_prob": 0.0,
+      "start": 8192.02,
+      "text": "只邀请特定群体参加"
+    },
+    {
+      "avg_logprob": -0.096367,
+      "compression_ratio": 1.126168,
+      "end": 8200.64,
+      "no_speech_prob": 0.0,
+      "start": 8196.0,
+      "text": "北京及周边地区冬奥会期间实行无线电管控"
+    },
+    {
+      "avg_logprob": -0.096367,
+      "compression_ratio": 1.126168,
+      "end": 8205.18,
+      "no_speech_prob": 0.0,
+      "start": 8200.64,
+      "text": "火炬接力将封闭传递不向工作开放"
+    },
+    {
+      "avg_logprob": -0.133202,
+      "compression_ratio": 1.131148,
+      "end": 8212.16,
+      "no_speech_prob": 0.0,
+      "start": 8205.18,
+      "text": "下面一页是发射超过100万颗造学火箭弹"
+    },
+    {
+      "avg_logprob": -0.133202,
+      "compression_ratio": 1.131148,
+      "end": 8214.08,
+      "no_speech_prob": 0.0,
+      "start": 8212.16,
+      "text": "火箭弹的主要成分是点化银"
+    },
+    {
+      "avg_logprob": -0.133202,
+      "compression_ratio": 1.131148,
+      "end": 8218.42,
+      "no_speech_prob": 0.0,
+      "start": 8214.08,
+      "text": "局部接触发生局部或全身皮肤沉着症"
+    },
+    {
+      "avg_logprob": -0.133202,
+      "compression_ratio": 1.131148,
+      "end": 8221.48,
+      "no_speech_prob": 0.0,
+      "start": 8218.42,
+      "text": "眼部损害慢性脂气管炎等不容易水"
+    },
+    {
+      "avg_logprob": -0.133202,
+      "compression_ratio": 1.131148,
+      "end": 8223.26,
+      "no_speech_prob": 0.0,
+      "start": 8221.48,
+      "text": "对水体可能造成污染"
+    },
+    {
+      "avg_logprob": -0.084388,
+      "compression_ratio": 1.283898,
+      "end": 8226.76,
+      "no_speech_prob": 0.0,
+      "start": 8223.26,
+      "text": "一刻的点化银受热后"
+    },
+    {
+      "avg_logprob": -0.084388,
+      "compression_ratio": 1.283898,
+      "end": 8229.34,
+      "no_speech_prob": 0.0,
+      "start": 8226.76,
+      "text": "可以形成几十万亿个点化银威力"
+    },
+    {
+      "avg_logprob": -0.084388,
+      "compression_ratio": 1.283898,
+      "end": 8234.94,
+      "no_speech_prob": 0.0,
+      "start": 8229.34,
+      "text": "这些威力会随气流运动进入云中"
+    },
+    {
+      "avg_logprob": -0.084388,
+      "compression_ratio": 1.283898,
+      "end": 8239.74,
+      "no_speech_prob": 0.0,
+      "start": 8234.94,
+      "text": "在冷云中产生几万亿到上百万亿个水晶"
+    },
+    {
+      "avg_logprob": -0.084388,
+      "compression_ratio": 1.283898,
+      "end": 8241.78,
+      "no_speech_prob": 0.0,
+      "start": 8239.74,
+      "text": "最后随雪落到地面"
+    },
+    {
+      "avg_logprob": -0.084388,
+      "compression_ratio": 1.283898,
+      "end": 8246.02,
+      "no_speech_prob": 0.0,
+      "start": 8241.78,
+      "text": "标准的银离子浓度将对环境和人体"
+    },
+    {
+      "avg_logprob": -0.084388,
+      "compression_ratio": 1.283898,
+      "end": 8247.36,
+      "no_speech_prob": 0.0,
+      "start": 8246.02,
+      "text": "造成不可逆的伤害"
+    },
+    {
+      "avg_logprob": -0.084388,
+      "compression_ratio": 1.283898,
+      "end": 8251.56,
+      "no_speech_prob": 0.0,
+      "start": 8247.36,
+      "text": "那运动员的这个身体是有很大的损害"
+    },
+    {
+      "avg_logprob": -0.106682,
+      "compression_ratio": 1.268482,
+      "end": 8254.08,
+      "no_speech_prob": 0.0,
+      "start": 8251.56,
+      "text": "各国社澳人员到京情况"
+    },
+    {
+      "avg_logprob": -0.106682,
+      "compression_ratio": 1.268482,
+      "end": 8256.3,
+      "no_speech_prob": 0.0,
+      "start": 8254.08,
+      "text": "来自中国英国芬兰等"
+    },
+    {
+      "avg_logprob": -0.106682,
+      "compression_ratio": 1.268482,
+      "end": 8260.9,
+      "no_speech_prob": 0.0,
+      "start": 8256.3,
+      "text": "20多个国家代表团部分社澳人员"
+    },
+    {
+      "avg_logprob": -0.106682,
+      "compression_ratio": 1.268482,
+      "end": 8262.5,
+      "no_speech_prob": 0.0,
+      "start": 8260.9,
+      "text": "已经进驻东澳村"
+    },
+    {
+      "avg_logprob": -0.106682,
+      "compression_ratio": 1.268482,
+      "end": 8264.38,
+      "no_speech_prob": 0.0,
+      "start": 8262.5,
+      "text": "1月4日至1月22日期间"
+    },
+    {
+      "avg_logprob": -0.106682,
+      "compression_ratio": 1.268482,
+      "end": 8267.1,
+      "no_speech_prob": 0.0,
+      "start": 8264.38,
+      "text": "对于2586名奥运会相关人员"
+    },
+    {
+      "avg_logprob": -0.106682,
+      "compression_ratio": 1.268482,
+      "end": 8268.56,
+      "no_speech_prob": 0.0,
+      "start": 8267.1,
+      "text": "进行了PCR检测"
+    },
+    {
+      "avg_logprob": -0.106682,
+      "compression_ratio": 1.268482,
+      "end": 8270.26,
+      "no_speech_prob": 0.0,
+      "start": 8268.56,
+      "text": "确诊72例阳性"
+    },
+    {
+      "avg_logprob": -0.106682,
+      "compression_ratio": 1.268482,
+      "end": 8272.64,
+      "no_speech_prob": 0.0,
+      "start": 8270.26,
+      "text": "其中39人在机场检测被发现"
+    },
+    {
+      "avg_logprob": -0.106682,
+      "compression_ratio": 1.268482,
+      "end": 8275.74,
+      "no_speech_prob": 0.0,
+      "start": 8272.64,
+      "text": "33人在闭环内检测被发现"
+    },
+    {
+      "avg_logprob": -0.106682,
+      "compression_ratio": 1.268482,
+      "end": 8276.34,
+      "no_speech_prob": 0.0,
+      "start": 8275.74,
+      "text": "下一页"
+    },
+    {
+      "avg_logprob": -0.106682,
+      "compression_ratio": 1.268482,
+      "end": 8280.76,
+      "no_speech_prob": 0.0,
+      "start": 8276.34,
+      "text": "新中国联邦狙击北京奥运会"
+    },
+    {
+      "avg_logprob": -0.133468,
+      "compression_ratio": 1.226337,
+      "end": 8283.44,
+      "no_speech_prob": 0.0,
+      "start": 8280.76,
+      "text": "然后向各国政府运动员提供"
+    },
+    {
+      "avg_logprob": -0.133468,
+      "compression_ratio": 1.226337,
+      "end": 8284.76,
+      "no_speech_prob": 0.0,
+      "start": 8283.44,
+      "text": "中共种族灭绝"
+    },
+    {
+      "avg_logprob": -0.133468,
+      "compression_ratio": 1.226337,
+      "end": 8285.72,
+      "no_speech_prob": 0.0,
+      "start": 8284.76,
+      "text": "玩人类信息"
+    },
+    {
+      "avg_logprob": -0.133468,
+      "compression_ratio": 1.226337,
+      "end": 8288.72,
+      "no_speech_prob": 0.0,
+      "start": 8285.72,
+      "text": "告知世界被中共虐杀的数百万只狗"
+    },
+    {
+      "avg_logprob": -0.133468,
+      "compression_ratio": 1.226337,
+      "end": 8290.5,
+      "no_speech_prob": 0.0,
+      "start": 8288.72,
+      "text": "可能进入冬奥会的参盘"
+    },
+    {
+      "avg_logprob": -0.133468,
+      "compression_ratio": 1.226337,
+      "end": 8293.88,
+      "no_speech_prob": 0.0,
+      "start": 8290.5,
+      "text": "后面一点是参加本次冬奥会的人员"
+    },
+    {
+      "avg_logprob": -0.133468,
+      "compression_ratio": 1.226337,
+      "end": 8295.76,
+      "no_speech_prob": 0.0,
+      "start": 8293.88,
+      "text": "将会被永久公布在"
+    },
+    {
+      "avg_logprob": -0.133468,
+      "compression_ratio": 1.226337,
+      "end": 8297.6,
+      "no_speech_prob": 0.0,
+      "start": 8295.76,
+      "text": "GeniusGatter GTV上"
+    },
+    {
+      "avg_logprob": -0.133468,
+      "compression_ratio": 1.226337,
+      "end": 8301.28,
+      "no_speech_prob": 0.0,
+      "start": 8297.6,
+      "text": "第四项是不参加本次冬奥会的运动员"
+    },
+    {
+      "avg_logprob": -0.133468,
+      "compression_ratio": 1.226337,
+      "end": 8302.68,
+      "no_speech_prob": 0.0,
+      "start": 8301.28,
+      "text": "可以获得喜币"
+    },
+    {
+      "avg_logprob": -0.314801,
+      "compression_ratio": 1.183099,
+      "end": 8305.36,
+      "no_speech_prob": 0.0,
+      "start": 8302.68,
+      "text": "最后也是感谢您的观看"
+    },
+    {
+      "avg_logprob": -0.314801,
+      "compression_ratio": 1.183099,
+      "end": 8308.08,
+      "no_speech_prob": 0.0,
+      "start": 8305.36,
+      "text": "感谢一下农场樱花团和应喜"
+    },
+    {
+      "avg_logprob": -0.314801,
+      "compression_ratio": 1.183099,
+      "end": 8308.64,
+      "no_speech_prob": 0.0,
+      "start": 8308.08,
+      "text": "谢谢"
+    },
+    {
+      "avg_logprob": -0.314801,
+      "compression_ratio": 1.183099,
+      "end": 8311.68,
+      "no_speech_prob": 0.0,
+      "start": 8308.64,
+      "text": "谢谢菲菲"
+    },
+    {
+      "avg_logprob": -0.314801,
+      "compression_ratio": 1.183099,
+      "end": 8314.36,
+      "no_speech_prob": 0.0,
+      "start": 8311.68,
+      "text": "在交给七哥之前"
+    },
+    {
+      "avg_logprob": -0.314801,
+      "compression_ratio": 1.183099,
+      "end": 8315.76,
+      "no_speech_prob": 0.0,
+      "start": 8314.36,
+      "text": "我跟大家分享一下"
+    },
+    {
+      "avg_logprob": -0.314801,
+      "compression_ratio": 1.183099,
+      "end": 8318.36,
+      "no_speech_prob": 0.0,
+      "start": 8315.76,
+      "text": "就是也是在准备开奥运会之前"
+    },
+    {
+      "avg_logprob": -0.175431,
+      "compression_ratio": 1.454148,
+      "end": 8322.36,
+      "no_speech_prob": 0.0,
+      "start": 8318.36,
+      "text": "就现在正在国内网上热搜的一件事情"
+    },
+    {
+      "avg_logprob": -0.175431,
+      "compression_ratio": 1.454148,
+      "end": 8324.36,
+      "no_speech_prob": 0.0,
+      "start": 8322.36,
+      "text": "叫李雪州自杀事件"
+    },
+    {
+      "avg_logprob": -0.175431,
+      "compression_ratio": 1.454148,
+      "end": 8326.36,
+      "no_speech_prob": 0.0,
+      "start": 8324.36,
+      "text": "然后他李雪州"
+    },
+    {
+      "avg_logprob": -0.175431,
+      "compression_ratio": 1.454148,
+      "end": 8328.36,
+      "no_speech_prob": 0.0,
+      "start": 8326.36,
+      "text": "他现在去世的时候"
+    },
+    {
+      "avg_logprob": -0.175431,
+      "compression_ratio": 1.454148,
+      "end": 8329.36,
+      "no_speech_prob": 0.0,
+      "start": 8328.36,
+      "text": "15岁刚去世"
+    },
+    {
+      "avg_logprob": -0.175431,
+      "compression_ratio": 1.454148,
+      "end": 8331.36,
+      "no_speech_prob": 0.0,
+      "start": 8329.36,
+      "text": "然后出生的时候被亲生的父母卖了"
+    },
+    {
+      "avg_logprob": -0.175431,
+      "compression_ratio": 1.454148,
+      "end": 8335.36,
+      "no_speech_prob": 0.0,
+      "start": 8331.36,
+      "text": "然后在他4岁的时候养父母也去世了"
+    },
+    {
+      "avg_logprob": -0.175431,
+      "compression_ratio": 1.454148,
+      "end": 8341.36,
+      "no_speech_prob": 0.0,
+      "start": 8335.36,
+      "text": "然后后面读书的时候被欺凌千方百计的踏上寻亲的路"
+    },
+    {
+      "avg_logprob": -0.175431,
+      "compression_ratio": 1.454148,
+      "end": 8343.36,
+      "no_speech_prob": 0.0,
+      "start": 8341.36,
+      "text": "然后呢找到亲生父母了"
+    },
+    {
+      "avg_logprob": -0.175431,
+      "compression_ratio": 1.454148,
+      "end": 8344.36,
+      "no_speech_prob": 0.0,
+      "start": 8343.36,
+      "text": "但是被拒绝"
+    },
+    {
+      "avg_logprob": -0.118057,
+      "compression_ratio": 1.479021,
+      "end": 8347.36,
+      "no_speech_prob": 0.0,
+      "start": 8344.36,
+      "text": "然后在这个过程中间在这一步的时候"
+    },
+    {
+      "avg_logprob": -0.118057,
+      "compression_ratio": 1.479021,
+      "end": 8349.36,
+      "no_speech_prob": 0.0,
+      "start": 8347.36,
+      "text": "新京报这个王八蛋"
+    },
+    {
+      "avg_logprob": -0.118057,
+      "compression_ratio": 1.479021,
+      "end": 8352.36,
+      "no_speech_prob": 0.0,
+      "start": 8349.36,
+      "text": "然后就是报告说他千里寻亲"
+    },
+    {
+      "avg_logprob": -0.118057,
+      "compression_ratio": 1.479021,
+      "end": 8355.36,
+      "no_speech_prob": 0.0,
+      "start": 8352.36,
+      "text": "就想找亲生父母买套房子"
+    },
+    {
+      "avg_logprob": -0.118057,
+      "compression_ratio": 1.479021,
+      "end": 8357.36,
+      "no_speech_prob": 0.0,
+      "start": 8355.36,
+      "text": "然后完全就被误导了"
+    },
+    {
+      "avg_logprob": -0.118057,
+      "compression_ratio": 1.479021,
+      "end": 8358.36,
+      "no_speech_prob": 0.0,
+      "start": 8357.36,
+      "text": "然后网上很多人抨起他"
+    },
+    {
+      "avg_logprob": -0.118057,
+      "compression_ratio": 1.479021,
+      "end": 8360.36,
+      "no_speech_prob": 0.0,
+      "start": 8358.36,
+      "text": "然后最后他自杀了"
+    },
+    {
+      "avg_logprob": -0.118057,
+      "compression_ratio": 1.479021,
+      "end": 8361.36,
+      "no_speech_prob": 0.0,
+      "start": 8360.36,
+      "text": "在海边吞药自杀了"
+    },
+    {
+      "avg_logprob": -0.118057,
+      "compression_ratio": 1.479021,
+      "end": 8364.36,
+      "no_speech_prob": 0.0,
+      "start": 8361.36,
+      "text": "在遗书中他说我不是想要房子"
+    },
+    {
+      "avg_logprob": -0.118057,
+      "compression_ratio": 1.479021,
+      "end": 8365.36,
+      "no_speech_prob": 0.0,
+      "start": 8364.36,
+      "text": "我只是想要一个家"
+    },
+    {
+      "avg_logprob": -0.118057,
+      "compression_ratio": 1.479021,
+      "end": 8367.36,
+      "no_speech_prob": 0.0,
+      "start": 8365.36,
+      "text": "因为想和父母在一起"
+    },
+    {
+      "avg_logprob": -0.118057,
+      "compression_ratio": 1.479021,
+      "end": 8369.36,
+      "no_speech_prob": 0.0,
+      "start": 8367.36,
+      "text": "但是呢他的父母现在微信上"
+    },
+    {
+      "avg_logprob": -0.118057,
+      "compression_ratio": 1.479021,
+      "end": 8370.36,
+      "no_speech_prob": 0.0,
+      "start": 8369.36,
+      "text": "然后给他拉黑了"
+    },
+    {
+      "avg_logprob": -0.118057,
+      "compression_ratio": 1.479021,
+      "end": 8373.36,
+      "no_speech_prob": 0.0,
+      "start": 8370.36,
+      "text": "最后账户的钱在遗书中"
+    },
+    {
+      "avg_logprob": -0.146078,
+      "compression_ratio": 1.184713,
+      "end": 8376.36,
+      "no_speech_prob": 0.0,
+      "start": 8373.36,
+      "text": "然后写到就是捐给孤儿"
+    },
+    {
+      "avg_logprob": -0.146078,
+      "compression_ratio": 1.184713,
+      "end": 8378.36,
+      "no_speech_prob": 0.0,
+      "start": 8376.36,
+      "text": "这也是在即将开奥运会之前"
+    },
+    {
+      "avg_logprob": -0.146078,
+      "compression_ratio": 1.184713,
+      "end": 8381.36,
+      "no_speech_prob": 0.0,
+      "start": 8378.36,
+      "text": "然后现在国内也是还在第一的热搜"
+    },
+    {
+      "avg_logprob": -0.146078,
+      "compression_ratio": 1.184713,
+      "end": 8383.36,
+      "no_speech_prob": 0.0,
+      "start": 8381.36,
+      "text": "流血洲事件"
+    },
+    {
+      "avg_logprob": -0.146078,
+      "compression_ratio": 1.184713,
+      "end": 8385.36,
+      "no_speech_prob": 0.0,
+      "start": 8383.36,
+      "text": "然后跟这个话题一起"
+    },
+    {
+      "avg_logprob": -0.146078,
+      "compression_ratio": 1.184713,
+      "end": 8386.36,
+      "no_speech_prob": 0.0,
+      "start": 8385.36,
+      "text": "我想一起先交给七哥"
+    },
+    {
+      "avg_logprob": -0.146078,
+      "compression_ratio": 1.184713,
+      "end": 8387.36,
+      "no_speech_prob": 0.0,
+      "start": 8386.36,
+      "text": "谢谢"
+    },
+    {
+      "avg_logprob": -0.224891,
+      "compression_ratio": 1.345361,
+      "end": 8389.36,
+      "no_speech_prob": 0.0,
+      "start": 8387.36,
+      "text": "哎呀"
+    },
+    {
+      "avg_logprob": -0.224891,
+      "compression_ratio": 1.345361,
+      "end": 8391.36,
+      "no_speech_prob": 0.0,
+      "start": 8389.36,
+      "text": "这是这个流血洲事件我不知道啊"
+    },
+    {
+      "avg_logprob": -0.224891,
+      "compression_ratio": 1.345361,
+      "end": 8392.36,
+      "no_speech_prob": 0.0,
+      "start": 8391.36,
+      "text": "我是完全不知道"
+    },
+    {
+      "avg_logprob": -0.224891,
+      "compression_ratio": 1.345361,
+      "end": 8393.36,
+      "no_speech_prob": 0.0,
+      "start": 8392.36,
+      "text": "完全"
+    },
+    {
+      "avg_logprob": -0.224891,
+      "compression_ratio": 1.345361,
+      "end": 8395.36,
+      "no_speech_prob": 0.0,
+      "start": 8393.36,
+      "text": "我第一个听到你的名字"
+    },
+    {
+      "avg_logprob": -0.224891,
+      "compression_ratio": 1.345361,
+      "end": 8396.36,
+      "no_speech_prob": 0.0,
+      "start": 8395.36,
+      "text": "这个"
+    },
+    {
+      "avg_logprob": -0.224891,
+      "compression_ratio": 1.345361,
+      "end": 8400.36,
+      "no_speech_prob": 0.0,
+      "start": 8396.36,
+      "text": "我想刚才说的事情就是这个冬奥会啊"
+    },
+    {
+      "avg_logprob": -0.224891,
+      "compression_ratio": 1.345361,
+      "end": 8403.36,
+      "no_speech_prob": 0.0,
+      "start": 8401.36,
+      "text": "我觉得另外有一个玄机啊"
+    },
+    {
+      "avg_logprob": -0.224891,
+      "compression_ratio": 1.345361,
+      "end": 8405.36,
+      "no_speech_prob": 0.0,
+      "start": 8403.36,
+      "text": "这是大家可能是没有注意到的"
+    },
+    {
+      "avg_logprob": -0.224891,
+      "compression_ratio": 1.345361,
+      "end": 8407.36,
+      "no_speech_prob": 0.0,
+      "start": 8405.36,
+      "text": "你看最近国内这个媒体"
+    },
+    {
+      "avg_logprob": -0.292508,
+      "compression_ratio": 0.972973,
+      "end": 8409.36,
+      "no_speech_prob": 0.0,
+      "start": 8407.36,
+      "text": "这个媒体"
+    },
+    {
+      "avg_logprob": -0.292508,
+      "compression_ratio": 0.972973,
+      "end": 8411.36,
+      "no_speech_prob": 0.0,
+      "start": 8409.36,
+      "text": "这个媒体出奇的"
+    },
+    {
+      "avg_logprob": -0.292508,
+      "compression_ratio": 0.972973,
+      "end": 8412.36,
+      "no_speech_prob": 0.0,
+      "start": 8411.36,
+      "text": "啊"
+    },
+    {
+      "avg_logprob": -0.109108,
+      "compression_ratio": 1.242857,
+      "end": 8413.36,
+      "no_speech_prob": 0.0,
+      "start": 8412.36,
+      "text": "啊"
+    },
+    {
+      "avg_logprob": -0.109108,
+      "compression_ratio": 1.242857,
+      "end": 8414.36,
+      "no_speech_prob": 0.0,
+      "start": 8413.36,
+      "text": "净"
+    },
+    {
+      "avg_logprob": -0.109108,
+      "compression_ratio": 1.242857,
+      "end": 8415.36,
+      "no_speech_prob": 0.0,
+      "start": 8414.36,
+      "text": "哈哈"
+    },
+    {
+      "avg_logprob": -0.109108,
+      "compression_ratio": 1.242857,
+      "end": 8416.36,
+      "no_speech_prob": 0.0,
+      "start": 8415.36,
+      "text": "就是宣传方法"
+    },
+    {
+      "avg_logprob": -0.109108,
+      "compression_ratio": 1.242857,
+      "end": 8417.36,
+      "no_speech_prob": 0.0,
+      "start": 8416.36,
+      "text": "大外宣"
+    },
+    {
+      "avg_logprob": -0.109108,
+      "compression_ratio": 1.242857,
+      "end": 8420.36,
+      "no_speech_prob": 0.0,
+      "start": 8417.36,
+      "text": "吹狼弹的这个这个这个招数呢"
+    },
+    {
+      "avg_logprob": -0.109108,
+      "compression_ratio": 1.242857,
+      "end": 8422.36,
+      "no_speech_prob": 0.0,
+      "start": 8420.36,
+      "text": "都没怎么用"
+    },
+    {
+      "avg_logprob": -0.109108,
+      "compression_ratio": 1.242857,
+      "end": 8423.36,
+      "no_speech_prob": 0.0,
+      "start": 8422.36,
+      "text": "啊"
+    },
+    {
+      "avg_logprob": -0.109108,
+      "compression_ratio": 1.242857,
+      "end": 8425.36,
+      "no_speech_prob": 0.0,
+      "start": 8423.36,
+      "text": "而且很不自信的"
+    },
+    {
+      "avg_logprob": -0.109108,
+      "compression_ratio": 1.242857,
+      "end": 8427.36,
+      "no_speech_prob": 0.0,
+      "start": 8425.36,
+      "text": "很不确定的"
+    },
+    {
+      "avg_logprob": -0.109108,
+      "compression_ratio": 1.242857,
+      "end": 8428.36,
+      "no_speech_prob": 0.0,
+      "start": 8427.36,
+      "text": "谁能来"
+    },
+    {
+      "avg_logprob": -0.109108,
+      "compression_ratio": 1.242857,
+      "end": 8430.36,
+      "no_speech_prob": 0.0,
+      "start": 8429.36,
+      "text": "包括"
+    },
+    {
+      "avg_logprob": -0.109108,
+      "compression_ratio": 1.242857,
+      "end": 8432.36,
+      "no_speech_prob": 0.0,
+      "start": 8430.36,
+      "text": "必须应该公布的"
+    },
+    {
+      "avg_logprob": -0.109108,
+      "compression_ratio": 1.242857,
+      "end": 8433.36,
+      "no_speech_prob": 0.0,
+      "start": 8432.36,
+      "text": "外国领导人"
+    },
+    {
+      "avg_logprob": -0.109108,
+      "compression_ratio": 1.242857,
+      "end": 8435.36,
+      "no_speech_prob": 0.0,
+      "start": 8433.36,
+      "text": "所谓的奥运会的"
+    },
+    {
+      "avg_logprob": -0.109108,
+      "compression_ratio": 1.242857,
+      "end": 8436.36,
+      "no_speech_prob": 0.0,
+      "start": 8435.36,
+      "text": "欢迎仪式啊"
+    },
+    {
+      "avg_logprob": -0.109108,
+      "compression_ratio": 1.242857,
+      "end": 8437.36,
+      "no_speech_prob": 0.0,
+      "start": 8436.36,
+      "text": "晚宴啊"
+    },
+    {
+      "avg_logprob": -0.109108,
+      "compression_ratio": 1.242857,
+      "end": 8438.36,
+      "no_speech_prob": 0.0,
+      "start": 8437.36,
+      "text": "然后呢"
+    },
+    {
+      "avg_logprob": -0.109108,
+      "compression_ratio": 1.242857,
+      "end": 8440.36,
+      "no_speech_prob": 0.0,
+      "start": 8438.36,
+      "text": "这个搞一些悬念啊"
+    },
+    {
+      "avg_logprob": -0.141992,
+      "compression_ratio": 1.377682,
+      "end": 8442.36,
+      "no_speech_prob": 0.0,
+      "start": 8440.36,
+      "text": "开幕式啊"
+    },
+    {
+      "avg_logprob": -0.141992,
+      "compression_ratio": 1.377682,
+      "end": 8444.36,
+      "no_speech_prob": 0.0,
+      "start": 8442.36,
+      "text": "就是极大不确定性"
+    },
+    {
+      "avg_logprob": -0.141992,
+      "compression_ratio": 1.377682,
+      "end": 8447.36,
+      "no_speech_prob": 0.0,
+      "start": 8445.36,
+      "text": "媒体上也不自信"
+    },
+    {
+      "avg_logprob": -0.141992,
+      "compression_ratio": 1.377682,
+      "end": 8450.36,
+      "no_speech_prob": 0.0,
+      "start": 8447.36,
+      "text": "还有更重要的事情就是"
+    },
+    {
+      "avg_logprob": -0.141992,
+      "compression_ratio": 1.377682,
+      "end": 8453.36,
+      "no_speech_prob": 0.0,
+      "start": 8450.36,
+      "text": "你可以看出他一系列的政策"
+    },
+    {
+      "avg_logprob": -0.141992,
+      "compression_ratio": 1.377682,
+      "end": 8454.36,
+      "no_speech_prob": 0.0,
+      "start": 8453.36,
+      "text": "包括这个"
+    },
+    {
+      "avg_logprob": -0.141992,
+      "compression_ratio": 1.377682,
+      "end": 8456.36,
+      "no_speech_prob": 0.0,
+      "start": 8454.36,
+      "text": "尝试着去试一下子"
+    },
+    {
+      "avg_logprob": -0.141992,
+      "compression_ratio": 1.377682,
+      "end": 8458.36,
+      "no_speech_prob": 0.0,
+      "start": 8456.36,
+      "text": "放这个这个这个这个"
+    },
+    {
+      "avg_logprob": -0.141992,
+      "compression_ratio": 1.377682,
+      "end": 8459.36,
+      "no_speech_prob": 0.0,
+      "start": 8458.36,
+      "text": "这个气候导弹"
+    },
+    {
+      "avg_logprob": -0.141992,
+      "compression_ratio": 1.377682,
+      "end": 8460.36,
+      "no_speech_prob": 0.0,
+      "start": 8459.36,
+      "text": "是吧"
+    },
+    {
+      "avg_logprob": -0.141992,
+      "compression_ratio": 1.377682,
+      "end": 8461.36,
+      "no_speech_prob": 0.0,
+      "start": 8460.36,
+      "text": "那点雪下来"
+    },
+    {
+      "avg_logprob": -0.141992,
+      "compression_ratio": 1.377682,
+      "end": 8463.36,
+      "no_speech_prob": 0.0,
+      "start": 8461.36,
+      "text": "就你能从这一系列端"
+    },
+    {
+      "avg_logprob": -0.141992,
+      "compression_ratio": 1.377682,
+      "end": 8464.36,
+      "no_speech_prob": 0.0,
+      "start": 8463.36,
+      "text": "你能看出来"
+    },
+    {
+      "avg_logprob": -0.141992,
+      "compression_ratio": 1.377682,
+      "end": 8466.36,
+      "no_speech_prob": 0.0,
+      "start": 8464.36,
+      "text": "习近平本人也不自信"
+    },
+    {
+      "avg_logprob": -0.141992,
+      "compression_ratio": 1.377682,
+      "end": 8468.36,
+      "no_speech_prob": 0.0,
+      "start": 8466.36,
+      "text": "这个东方会能开啥样"
+    },
+    {
+      "avg_logprob": -0.20048,
+      "compression_ratio": 1.136646,
+      "end": 8470.36,
+      "no_speech_prob": 0.0,
+      "start": 8468.36,
+      "text": "就和各国的勾兑"
+    },
+    {
+      "avg_logprob": -0.20048,
+      "compression_ratio": 1.136646,
+      "end": 8473.36,
+      "no_speech_prob": 0.0,
+      "start": 8470.36,
+      "text": "现在完全也不确定"
+    },
+    {
+      "avg_logprob": -0.20048,
+      "compression_ratio": 1.136646,
+      "end": 8477.36,
+      "no_speech_prob": 0.0,
+      "start": 8475.36,
+      "text": "在开幕式上一些节目"
+    },
+    {
+      "avg_logprob": -0.20048,
+      "compression_ratio": 1.136646,
+      "end": 8478.36,
+      "no_speech_prob": 0.0,
+      "start": 8477.36,
+      "text": "听说到昨天还在改"
+    },
+    {
+      "avg_logprob": -0.20048,
+      "compression_ratio": 1.136646,
+      "end": 8480.36,
+      "no_speech_prob": 0.0,
+      "start": 8478.36,
+      "text": "还在修改"
+    },
+    {
+      "avg_logprob": -0.20048,
+      "compression_ratio": 1.136646,
+      "end": 8484.36,
+      "no_speech_prob": 0.0,
+      "start": 8480.36,
+      "text": "本来要把习主席啊"
+    },
+    {
+      "avg_logprob": -0.20048,
+      "compression_ratio": 1.136646,
+      "end": 8486.36,
+      "no_speech_prob": 0.0,
+      "start": 8484.36,
+      "text": "习太阳出来的时候"
+    },
+    {
+      "avg_logprob": -0.20048,
+      "compression_ratio": 1.136646,
+      "end": 8488.36,
+      "no_speech_prob": 0.0,
+      "start": 8486.36,
+      "text": "到像道年希特勒一样"
+    },
+    {
+      "avg_logprob": -0.153972,
+      "compression_ratio": 1.336134,
+      "end": 8490.36,
+      "no_speech_prob": 0.0,
+      "start": 8488.36,
+      "text": "一站出来"
+    },
+    {
+      "avg_logprob": -0.153972,
+      "compression_ratio": 1.336134,
+      "end": 8491.36,
+      "no_speech_prob": 0.0,
+      "start": 8490.36,
+      "text": "手一伸"
+    },
+    {
+      "avg_logprob": -0.153972,
+      "compression_ratio": 1.336134,
+      "end": 8493.36,
+      "no_speech_prob": 0.0,
+      "start": 8491.36,
+      "text": "那个镜头"
+    },
+    {
+      "avg_logprob": -0.153972,
+      "compression_ratio": 1.336134,
+      "end": 8495.36,
+      "no_speech_prob": 0.0,
+      "start": 8493.36,
+      "text": "更加的修改"
+    },
+    {
+      "avg_logprob": -0.153972,
+      "compression_ratio": 1.336134,
+      "end": 8497.36,
+      "no_speech_prob": 0.0,
+      "start": 8496.36,
+      "text": "要把习太阳"
+    },
+    {
+      "avg_logprob": -0.153972,
+      "compression_ratio": 1.336134,
+      "end": 8500.36,
+      "no_speech_prob": 0.0,
+      "start": 8497.36,
+      "text": "要是中国人民强大崛起"
+    },
+    {
+      "avg_logprob": -0.153972,
+      "compression_ratio": 1.336134,
+      "end": 8502.36,
+      "no_speech_prob": 0.0,
+      "start": 8500.36,
+      "text": "就像邓小平南巡讲话"
+    },
+    {
+      "avg_logprob": -0.153972,
+      "compression_ratio": 1.336134,
+      "end": 8503.36,
+      "no_speech_prob": 0.0,
+      "start": 8502.36,
+      "text": "里边有一个词儿"
+    },
+    {
+      "avg_logprob": -0.153972,
+      "compression_ratio": 1.336134,
+      "end": 8505.36,
+      "no_speech_prob": 0.0,
+      "start": 8503.36,
+      "text": "坚决不能说"
+    },
+    {
+      "avg_logprob": -0.153972,
+      "compression_ratio": 1.336134,
+      "end": 8506.36,
+      "no_speech_prob": 0.0,
+      "start": 8505.36,
+      "text": "就是"
+    },
+    {
+      "avg_logprob": -0.153972,
+      "compression_ratio": 1.336134,
+      "end": 8507.36,
+      "no_speech_prob": 0.0,
+      "start": 8506.36,
+      "text": "邓小平一个老人"
+    },
+    {
+      "avg_logprob": -0.153972,
+      "compression_ratio": 1.336134,
+      "end": 8509.36,
+      "no_speech_prob": 0.0,
+      "start": 8507.36,
+      "text": "到南边转了一圈"
+    },
+    {
+      "avg_logprob": -0.153972,
+      "compression_ratio": 1.336134,
+      "end": 8511.36,
+      "no_speech_prob": 0.0,
+      "start": 8509.36,
+      "text": "然后画了一个圈"
+    },
+    {
+      "avg_logprob": -0.153972,
+      "compression_ratio": 1.336134,
+      "end": 8512.36,
+      "no_speech_prob": 0.0,
+      "start": 8511.36,
+      "text": "这画圈事就别说了"
+    },
+    {
+      "avg_logprob": -0.153972,
+      "compression_ratio": 1.336134,
+      "end": 8513.36,
+      "no_speech_prob": 0.0,
+      "start": 8512.36,
+      "text": "因为他不是他画的"
+    },
+    {
+      "avg_logprob": -0.153972,
+      "compression_ratio": 1.336134,
+      "end": 8515.36,
+      "no_speech_prob": 0.0,
+      "start": 8513.36,
+      "text": "他认为是习中心画的"
+    },
+    {
+      "avg_logprob": -0.153972,
+      "compression_ratio": 1.336134,
+      "end": 8516.36,
+      "no_speech_prob": 0.0,
+      "start": 8515.36,
+      "text": "这句话不能说"
+    },
+    {
+      "avg_logprob": -0.122446,
+      "compression_ratio": 1.279188,
+      "end": 8520.36,
+      "no_speech_prob": 0.0,
+      "start": 8516.36,
+      "text": "特别是对待"
+    },
+    {
+      "avg_logprob": -0.122446,
+      "compression_ratio": 1.279188,
+      "end": 8522.36,
+      "no_speech_prob": 0.0,
+      "start": 8520.36,
+      "text": "这次中奥会开幕式上"
+    },
+    {
+      "avg_logprob": -0.122446,
+      "compression_ratio": 1.279188,
+      "end": 8523.36,
+      "no_speech_prob": 0.0,
+      "start": 8522.36,
+      "text": "有一句话不能说"
+    },
+    {
+      "avg_logprob": -0.122446,
+      "compression_ratio": 1.279188,
+      "end": 8525.36,
+      "no_speech_prob": 0.0,
+      "start": 8523.36,
+      "text": "就是"
+    },
+    {
+      "avg_logprob": -0.122446,
+      "compression_ratio": 1.279188,
+      "end": 8527.36,
+      "no_speech_prob": 0.0,
+      "start": 8525.36,
+      "text": "党和国家第四代领导人"
+    },
+    {
+      "avg_logprob": -0.122446,
+      "compression_ratio": 1.279188,
+      "end": 8529.36,
+      "no_speech_prob": 0.0,
+      "start": 8527.36,
+      "text": "习近平先生"
+    },
+    {
+      "avg_logprob": -0.122446,
+      "compression_ratio": 1.279188,
+      "end": 8530.36,
+      "no_speech_prob": 0.0,
+      "start": 8529.36,
+      "text": "要改为"
+    },
+    {
+      "avg_logprob": -0.122446,
+      "compression_ratio": 1.279188,
+      "end": 8533.36,
+      "no_speech_prob": 0.0,
+      "start": 8530.36,
+      "text": "党和国家核心领导人"
+    },
+    {
+      "avg_logprob": -0.122446,
+      "compression_ratio": 1.279188,
+      "end": 8536.36,
+      "no_speech_prob": 0.0,
+      "start": 8535.36,
+      "text": "真是独尊了"
+    },
+    {
+      "avg_logprob": -0.122446,
+      "compression_ratio": 1.279188,
+      "end": 8538.36,
+      "no_speech_prob": 0.0,
+      "start": 8536.36,
+      "text": "现在真的要独尊了"
+    },
+    {
+      "avg_logprob": -0.122446,
+      "compression_ratio": 1.279188,
+      "end": 8541.36,
+      "no_speech_prob": 0.0,
+      "start": 8538.36,
+      "text": "而且特别明确的是"
+    },
+    {
+      "avg_logprob": -0.122446,
+      "compression_ratio": 1.279188,
+      "end": 8542.36,
+      "no_speech_prob": 0.0,
+      "start": 8541.36,
+      "text": "中国"
+    },
+    {
+      "avg_logprob": -0.122446,
+      "compression_ratio": 1.279188,
+      "end": 8543.36,
+      "no_speech_prob": 0.0,
+      "start": 8542.36,
+      "text": "冬奥会的"
+    },
+    {
+      "avg_logprob": -0.122446,
+      "compression_ratio": 1.279188,
+      "end": 8544.36,
+      "no_speech_prob": 0.0,
+      "start": 8543.36,
+      "text": "将获得巨大成功"
+    },
+    {
+      "avg_logprob": -0.177658,
+      "compression_ratio": 1.330189,
+      "end": 8545.36,
+      "no_speech_prob": 0.0,
+      "start": 8544.36,
+      "text": "成功"
+    },
+    {
+      "avg_logprob": -0.177658,
+      "compression_ratio": 1.330189,
+      "end": 8546.36,
+      "no_speech_prob": 0.0,
+      "start": 8545.36,
+      "text": "得开放"
+    },
+    {
+      "avg_logprob": -0.177658,
+      "compression_ratio": 1.330189,
+      "end": 8547.36,
+      "no_speech_prob": 0.0,
+      "start": 8546.36,
+      "text": "走向新纪元"
+    },
+    {
+      "avg_logprob": -0.177658,
+      "compression_ratio": 1.330189,
+      "end": 8548.36,
+      "no_speech_prob": 0.0,
+      "start": 8547.36,
+      "text": "新纪元"
+    },
+    {
+      "avg_logprob": -0.177658,
+      "compression_ratio": 1.330189,
+      "end": 8549.36,
+      "no_speech_prob": 0.0,
+      "start": 8548.36,
+      "text": "这词儿很大"
+    },
+    {
+      "avg_logprob": -0.177658,
+      "compression_ratio": 1.330189,
+      "end": 8551.36,
+      "no_speech_prob": 0.0,
+      "start": 8549.36,
+      "text": "新纪元的一个开始"
+    },
+    {
+      "avg_logprob": -0.177658,
+      "compression_ratio": 1.330189,
+      "end": 8555.36,
+      "no_speech_prob": 0.0,
+      "start": 8554.36,
+      "text": "那么另外一个就是"
+    },
+    {
+      "avg_logprob": -0.177658,
+      "compression_ratio": 1.330189,
+      "end": 8557.36,
+      "no_speech_prob": 0.0,
+      "start": 8555.36,
+      "text": "现场没有观众"
+    },
+    {
+      "avg_logprob": -0.177658,
+      "compression_ratio": 1.330189,
+      "end": 8559.36,
+      "no_speech_prob": 0.0,
+      "start": 8557.36,
+      "text": "他们要搞出网络上"
+    },
+    {
+      "avg_logprob": -0.177658,
+      "compression_ratio": 1.330189,
+      "end": 8560.36,
+      "no_speech_prob": 0.0,
+      "start": 8559.36,
+      "text": "大家记住啊"
+    },
+    {
+      "avg_logprob": -0.177658,
+      "compression_ratio": 1.330189,
+      "end": 8561.36,
+      "no_speech_prob": 0.0,
+      "start": 8560.36,
+      "text": "网络上"
+    },
+    {
+      "avg_logprob": -0.177658,
+      "compression_ratio": 1.330189,
+      "end": 8562.36,
+      "no_speech_prob": 0.0,
+      "start": 8561.36,
+      "text": "他一定会说"
+    },
+    {
+      "avg_logprob": -0.177658,
+      "compression_ratio": 1.330189,
+      "end": 8565.36,
+      "no_speech_prob": 0.0,
+      "start": 8562.36,
+      "text": "超过12亿人次的看"
+    },
+    {
+      "avg_logprob": -0.177658,
+      "compression_ratio": 1.330189,
+      "end": 8566.36,
+      "no_speech_prob": 0.0,
+      "start": 8565.36,
+      "text": "你看到"
+    },
+    {
+      "avg_logprob": -0.177658,
+      "compression_ratio": 1.330189,
+      "end": 8567.36,
+      "no_speech_prob": 0.0,
+      "start": 8566.36,
+      "text": "这个数据都会出来的"
+    },
+    {
+      "avg_logprob": -0.177658,
+      "compression_ratio": 1.330189,
+      "end": 8569.36,
+      "no_speech_prob": 0.0,
+      "start": 8567.36,
+      "text": "超过12亿啊"
+    },
+    {
+      "avg_logprob": -0.177658,
+      "compression_ratio": 1.330189,
+      "end": 8570.36,
+      "no_speech_prob": 0.0,
+      "start": 8569.36,
+      "text": "一定说超过12亿"
+    },
+    {
+      "avg_logprob": -0.177658,
+      "compression_ratio": 1.330189,
+      "end": 8572.36,
+      "no_speech_prob": 0.0,
+      "start": 8570.36,
+      "text": "而且"
+    },
+    {
+      "avg_logprob": -0.145734,
+      "compression_ratio": 1.198347,
+      "end": 8575.36,
+      "no_speech_prob": 0.0,
+      "start": 8572.36,
+      "text": "不但超过12亿人看"
+    },
+    {
+      "avg_logprob": -0.145734,
+      "compression_ratio": 1.198347,
+      "end": 8577.36,
+      "no_speech_prob": 0.0,
+      "start": 8575.36,
+      "text": "就是外国的商家"
+    },
+    {
+      "avg_logprob": -0.145734,
+      "compression_ratio": 1.198347,
+      "end": 8578.36,
+      "no_speech_prob": 0.0,
+      "start": 8577.36,
+      "text": "很多赞助厂商都不去了"
+    },
+    {
+      "avg_logprob": -0.145734,
+      "compression_ratio": 1.198347,
+      "end": 8579.36,
+      "no_speech_prob": 0.0,
+      "start": 8578.36,
+      "text": "是到不厂了"
+    },
+    {
+      "avg_logprob": -0.145734,
+      "compression_ratio": 1.198347,
+      "end": 8581.36,
+      "no_speech_prob": 0.0,
+      "start": 8579.36,
+      "text": "转播也去不了了"
+    },
+    {
+      "avg_logprob": -0.145734,
+      "compression_ratio": 1.198347,
+      "end": 8582.36,
+      "no_speech_prob": 0.0,
+      "start": 8581.36,
+      "text": "他会说"
+    },
+    {
+      "avg_logprob": -0.145734,
+      "compression_ratio": 1.198347,
+      "end": 8584.36,
+      "no_speech_prob": 0.0,
+      "start": 8582.36,
+      "text": "由于病毒和疫苗"
+    },
+    {
+      "avg_logprob": -0.145734,
+      "compression_ratio": 1.198347,
+      "end": 8588.36,
+      "no_speech_prob": 0.0,
+      "start": 8584.36,
+      "text": "以及西方反华势力的搞破坏"
+    },
+    {
+      "avg_logprob": -0.145734,
+      "compression_ratio": 1.198347,
+      "end": 8590.36,
+      "no_speech_prob": 0.0,
+      "start": 8588.36,
+      "text": "反而给我们带来了"
+    },
+    {
+      "avg_logprob": -0.145734,
+      "compression_ratio": 1.198347,
+      "end": 8593.36,
+      "no_speech_prob": 0.0,
+      "start": 8590.36,
+      "text": "社交媒体上的巨大的关注量"
+    },
+    {
+      "avg_logprob": -0.145734,
+      "compression_ratio": 1.198347,
+      "end": 8595.36,
+      "no_speech_prob": 0.0,
+      "start": 8593.36,
+      "text": "十几亿次看"
+    },
+    {
+      "avg_logprob": -0.145734,
+      "compression_ratio": 1.198347,
+      "end": 8597.36,
+      "no_speech_prob": 0.0,
+      "start": 8595.36,
+      "text": "而且点赞数是百分六七十可能"
+    },
+    {
+      "avg_logprob": -0.206194,
+      "compression_ratio": 1.230415,
+      "end": 8599.36,
+      "no_speech_prob": 0.0,
+      "start": 8597.36,
+      "text": "甚至百分之八十"
+    },
+    {
+      "avg_logprob": -0.206194,
+      "compression_ratio": 1.230415,
+      "end": 8602.36,
+      "no_speech_prob": 0.0,
+      "start": 8599.36,
+      "text": "然后一系列的支持中国"
+    },
+    {
+      "avg_logprob": -0.206194,
+      "compression_ratio": 1.230415,
+      "end": 8604.36,
+      "no_speech_prob": 0.0,
+      "start": 8602.36,
+      "text": "已经现在派到海外"
+    },
+    {
+      "avg_logprob": -0.206194,
+      "compression_ratio": 1.230415,
+      "end": 8605.36,
+      "no_speech_prob": 0.0,
+      "start": 8604.36,
+      "text": "巴基斯坦"
+    },
+    {
+      "avg_logprob": -0.206194,
+      "compression_ratio": 1.230415,
+      "end": 8606.36,
+      "no_speech_prob": 0.0,
+      "start": 8605.36,
+      "text": "古巴"
+    },
+    {
+      "avg_logprob": -0.206194,
+      "compression_ratio": 1.230415,
+      "end": 8609.36,
+      "no_speech_prob": 0.0,
+      "start": 8607.36,
+      "text": "阿富汗"
+    },
+    {
+      "avg_logprob": -0.206194,
+      "compression_ratio": 1.230415,
+      "end": 8610.36,
+      "no_speech_prob": 0.0,
+      "start": 8609.36,
+      "text": "都有啊"
+    },
+    {
+      "avg_logprob": -0.206194,
+      "compression_ratio": 1.230415,
+      "end": 8612.36,
+      "no_speech_prob": 0.0,
+      "start": 8610.36,
+      "text": "法国"
+    },
+    {
+      "avg_logprob": -0.206194,
+      "compression_ratio": 1.230415,
+      "end": 8613.36,
+      "no_speech_prob": 0.0,
+      "start": 8612.36,
+      "text": "德国"
+    },
+    {
+      "avg_logprob": -0.206194,
+      "compression_ratio": 1.230415,
+      "end": 8615.36,
+      "no_speech_prob": 0.0,
+      "start": 8613.36,
+      "text": "就这个被共产能收买的地方"
+    },
+    {
+      "avg_logprob": -0.206194,
+      "compression_ratio": 1.230415,
+      "end": 8616.36,
+      "no_speech_prob": 0.0,
+      "start": 8615.36,
+      "text": "加拿大"
+    },
+    {
+      "avg_logprob": -0.206194,
+      "compression_ratio": 1.230415,
+      "end": 8617.36,
+      "no_speech_prob": 0.0,
+      "start": 8616.36,
+      "text": "都已经准备好了"
+    },
+    {
+      "avg_logprob": -0.206194,
+      "compression_ratio": 1.230415,
+      "end": 8618.36,
+      "no_speech_prob": 0.0,
+      "start": 8617.36,
+      "text": "到时候会有"
+    },
+    {
+      "avg_logprob": -0.206194,
+      "compression_ratio": 1.230415,
+      "end": 8619.36,
+      "no_speech_prob": 0.0,
+      "start": 8618.36,
+      "text": "你看着还会采访华人"
+    },
+    {
+      "avg_logprob": -0.206194,
+      "compression_ratio": 1.230415,
+      "end": 8620.36,
+      "no_speech_prob": 0.0,
+      "start": 8619.36,
+      "text": "可以采访路人"
+    },
+    {
+      "avg_logprob": -0.206194,
+      "compression_ratio": 1.230415,
+      "end": 8622.36,
+      "no_speech_prob": 0.0,
+      "start": 8620.36,
+      "text": "路人甲路人蚁"
+    },
+    {
+      "avg_logprob": -0.135042,
+      "compression_ratio": 1.363636,
+      "end": 8623.36,
+      "no_speech_prob": 0.0,
+      "start": 8622.36,
+      "text": "是吧"
+    },
+    {
+      "avg_logprob": -0.135042,
+      "compression_ratio": 1.363636,
+      "end": 8625.36,
+      "no_speech_prob": 0.0,
+      "start": 8623.36,
+      "text": "全都出来了"
+    },
+    {
+      "avg_logprob": -0.135042,
+      "compression_ratio": 1.363636,
+      "end": 8627.36,
+      "no_speech_prob": 0.0,
+      "start": 8625.36,
+      "text": "哎呦我看了北京冬奥会了"
+    },
+    {
+      "avg_logprob": -0.135042,
+      "compression_ratio": 1.363636,
+      "end": 8629.36,
+      "no_speech_prob": 0.0,
+      "start": 8627.36,
+      "text": "这可简直是太好了"
+    },
+    {
+      "avg_logprob": -0.135042,
+      "compression_ratio": 1.363636,
+      "end": 8630.36,
+      "no_speech_prob": 0.0,
+      "start": 8629.36,
+      "text": "你们做得太好了"
+    },
+    {
+      "avg_logprob": -0.135042,
+      "compression_ratio": 1.363636,
+      "end": 8632.36,
+      "no_speech_prob": 0.0,
+      "start": 8630.36,
+      "text": "哎呀你们这个情况下"
+    },
+    {
+      "avg_logprob": -0.135042,
+      "compression_ratio": 1.363636,
+      "end": 8633.36,
+      "no_speech_prob": 0.0,
+      "start": 8632.36,
+      "text": "防止疫苗防止病毒"
+    },
+    {
+      "avg_logprob": -0.135042,
+      "compression_ratio": 1.363636,
+      "end": 8635.36,
+      "no_speech_prob": 0.0,
+      "start": 8633.36,
+      "text": "都安排好了"
+    },
+    {
+      "avg_logprob": -0.135042,
+      "compression_ratio": 1.363636,
+      "end": 8637.36,
+      "no_speech_prob": 0.0,
+      "start": 8636.36,
+      "text": "从外打内"
+    },
+    {
+      "avg_logprob": -0.135042,
+      "compression_ratio": 1.363636,
+      "end": 8638.36,
+      "no_speech_prob": 0.0,
+      "start": 8637.36,
+      "text": "从内打外"
+    },
+    {
+      "avg_logprob": -0.135042,
+      "compression_ratio": 1.363636,
+      "end": 8642.36,
+      "no_speech_prob": 0.0,
+      "start": 8640.36,
+      "text": "这些事情我知道以后啊"
+    },
+    {
+      "avg_logprob": -0.135042,
+      "compression_ratio": 1.363636,
+      "end": 8644.36,
+      "no_speech_prob": 0.0,
+      "start": 8643.36,
+      "text": "我看到这些出招以后"
+    },
+    {
+      "avg_logprob": -0.135042,
+      "compression_ratio": 1.363636,
+      "end": 8646.36,
+      "no_speech_prob": 0.0,
+      "start": 8644.36,
+      "text": "我太了解共产党的什么招数"
+    },
+    {
+      "avg_logprob": -0.135042,
+      "compression_ratio": 1.363636,
+      "end": 8647.36,
+      "no_speech_prob": 0.0,
+      "start": 8646.36,
+      "text": "这要给谁看"
+    },
+    {
+      "avg_logprob": -0.135042,
+      "compression_ratio": 1.363636,
+      "end": 8648.36,
+      "no_speech_prob": 0.0,
+      "start": 8647.36,
+      "text": "要叫谁看"
+    },
+    {
+      "avg_logprob": -0.135042,
+      "compression_ratio": 1.363636,
+      "end": 8649.36,
+      "no_speech_prob": 0.0,
+      "start": 8648.36,
+      "text": "第一"
+    },
+    {
+      "avg_logprob": -0.141464,
+      "compression_ratio": 1.296992,
+      "end": 8650.36,
+      "no_speech_prob": 0.0,
+      "start": 8649.36,
+      "text": "第一"
+    },
+    {
+      "avg_logprob": -0.141464,
+      "compression_ratio": 1.296992,
+      "end": 8651.36,
+      "no_speech_prob": 0.0,
+      "start": 8650.36,
+      "text": "篡改历史"
+    },
+    {
+      "avg_logprob": -0.141464,
+      "compression_ratio": 1.296992,
+      "end": 8652.36,
+      "no_speech_prob": 0.0,
+      "start": 8651.36,
+      "text": "要把这个冬奥会"
+    },
+    {
+      "avg_logprob": -0.141464,
+      "compression_ratio": 1.296992,
+      "end": 8654.36,
+      "no_speech_prob": 0.0,
+      "start": 8652.36,
+      "text": "搞成一个举无"
+    },
+    {
+      "avg_logprob": -0.141464,
+      "compression_ratio": 1.296992,
+      "end": 8655.36,
+      "no_speech_prob": 0.0,
+      "start": 8654.36,
+      "text": "举世无双的"
+    },
+    {
+      "avg_logprob": -0.141464,
+      "compression_ratio": 1.296992,
+      "end": 8657.36,
+      "no_speech_prob": 0.0,
+      "start": 8655.36,
+      "text": "在病毒期间的"
+    },
+    {
+      "avg_logprob": -0.141464,
+      "compression_ratio": 1.296992,
+      "end": 8659.36,
+      "no_speech_prob": 0.0,
+      "start": 8657.36,
+      "text": "被西方打压的"
+    },
+    {
+      "avg_logprob": -0.141464,
+      "compression_ratio": 1.296992,
+      "end": 8661.36,
+      "no_speech_prob": 0.0,
+      "start": 8659.36,
+      "text": "一场重大的冬奥运会"
+    },
+    {
+      "avg_logprob": -0.141464,
+      "compression_ratio": 1.296992,
+      "end": 8663.36,
+      "no_speech_prob": 0.0,
+      "start": 8662.36,
+      "text": "要让内部中国人民看到"
+    },
+    {
+      "avg_logprob": -0.141464,
+      "compression_ratio": 1.296992,
+      "end": 8664.36,
+      "no_speech_prob": 0.0,
+      "start": 8663.36,
+      "text": "你看看"
+    },
+    {
+      "avg_logprob": -0.141464,
+      "compression_ratio": 1.296992,
+      "end": 8665.36,
+      "no_speech_prob": 0.0,
+      "start": 8664.36,
+      "text": "我在这种情况下"
+    },
+    {
+      "avg_logprob": -0.141464,
+      "compression_ratio": 1.296992,
+      "end": 8667.36,
+      "no_speech_prob": 0.0,
+      "start": 8665.36,
+      "text": "习太阳都能搞这样的冬奥会"
+    },
+    {
+      "avg_logprob": -0.141464,
+      "compression_ratio": 1.296992,
+      "end": 8669.36,
+      "no_speech_prob": 0.0,
+      "start": 8668.36,
+      "text": "那要没有疫苗"
+    },
+    {
+      "avg_logprob": -0.141464,
+      "compression_ratio": 1.296992,
+      "end": 8670.36,
+      "no_speech_prob": 0.0,
+      "start": 8669.36,
+      "text": "没有病毒呢"
+    },
+    {
+      "avg_logprob": -0.141464,
+      "compression_ratio": 1.296992,
+      "end": 8671.36,
+      "no_speech_prob": 0.0,
+      "start": 8670.36,
+      "text": "那不更厉害了吗"
+    },
+    {
+      "avg_logprob": -0.141464,
+      "compression_ratio": 1.296992,
+      "end": 8673.36,
+      "no_speech_prob": 0.0,
+      "start": 8671.36,
+      "text": "江泽民和胡一桃怎么跟我比啊"
+    },
+    {
+      "avg_logprob": -0.141464,
+      "compression_ratio": 1.296992,
+      "end": 8674.36,
+      "no_speech_prob": 0.0,
+      "start": 8673.36,
+      "text": "是不是"
+    },
+    {
+      "avg_logprob": -0.141464,
+      "compression_ratio": 1.296992,
+      "end": 8678.36,
+      "no_speech_prob": 0.0,
+      "start": 8677.36,
+      "text": "完了之后"
+    },
+    {
+      "avg_logprob": -0.116578,
+      "compression_ratio": 1.248869,
+      "end": 8679.36,
+      "no_speech_prob": 0.0,
+      "start": 8678.36,
+      "text": "就真可能"
+    },
+    {
+      "avg_logprob": -0.116578,
+      "compression_ratio": 1.248869,
+      "end": 8680.36,
+      "no_speech_prob": 0.0,
+      "start": 8679.36,
+      "text": "就打台湾了"
+    },
+    {
+      "avg_logprob": -0.116578,
+      "compression_ratio": 1.248869,
+      "end": 8684.36,
+      "no_speech_prob": 0.0,
+      "start": 8682.36,
+      "text": "这个是大家也看到的"
+    },
+    {
+      "avg_logprob": -0.116578,
+      "compression_ratio": 1.248869,
+      "end": 8685.36,
+      "no_speech_prob": 0.0,
+      "start": 8684.36,
+      "text": "一切的铺垫"
+    },
+    {
+      "avg_logprob": -0.116578,
+      "compression_ratio": 1.248869,
+      "end": 8687.36,
+      "no_speech_prob": 0.0,
+      "start": 8685.36,
+      "text": "在全世界"
+    },
+    {
+      "avg_logprob": -0.116578,
+      "compression_ratio": 1.248869,
+      "end": 8690.36,
+      "no_speech_prob": 0.0,
+      "start": 8688.36,
+      "text": "所有人都在讨论冬奥会的时候"
+    },
+    {
+      "avg_logprob": -0.116578,
+      "compression_ratio": 1.248869,
+      "end": 8691.36,
+      "no_speech_prob": 0.0,
+      "start": 8690.36,
+      "text": "乌克兰"
+    },
+    {
+      "avg_logprob": -0.116578,
+      "compression_ratio": 1.248869,
+      "end": 8693.36,
+      "no_speech_prob": 0.0,
+      "start": 8691.36,
+      "text": "台湾将生事端"
+    },
+    {
+      "avg_logprob": -0.116578,
+      "compression_ratio": 1.248869,
+      "end": 8698.36,
+      "no_speech_prob": 0.0,
+      "start": 8695.36,
+      "text": "就像当年的希特勒和苏联一样"
+    },
+    {
+      "avg_logprob": -0.116578,
+      "compression_ratio": 1.248869,
+      "end": 8700.36,
+      "no_speech_prob": 0.0,
+      "start": 8699.36,
+      "text": "所有冬奥会以后"
+    },
+    {
+      "avg_logprob": -0.116578,
+      "compression_ratio": 1.248869,
+      "end": 8703.36,
+      "no_speech_prob": 0.0,
+      "start": 8700.36,
+      "text": "他们判断世界人民对这个国家的好感"
+    },
+    {
+      "avg_logprob": -0.116578,
+      "compression_ratio": 1.248869,
+      "end": 8706.36,
+      "no_speech_prob": 0.0,
+      "start": 8703.36,
+      "text": "和政治上的反应"
+    },
+    {
+      "avg_logprob": -0.219099,
+      "compression_ratio": 1.2,
+      "end": 8707.36,
+      "no_speech_prob": 0.0,
+      "start": 8706.36,
+      "text": "是最马目的"
+    },
+    {
+      "avg_logprob": -0.219099,
+      "compression_ratio": 1.2,
+      "end": 8709.36,
+      "no_speech_prob": 0.0,
+      "start": 8707.36,
+      "text": "他要行动"
+    },
+    {
+      "avg_logprob": -0.219099,
+      "compression_ratio": 1.2,
+      "end": 8712.36,
+      "no_speech_prob": 0.0,
+      "start": 8710.36,
+      "text": "但是七哥也有行动"
+    },
+    {
+      "avg_logprob": -0.219099,
+      "compression_ratio": 1.2,
+      "end": 8714.36,
+      "no_speech_prob": 0.0,
+      "start": 8713.36,
+      "text": "我的行动"
+    },
+    {
+      "avg_logprob": -0.219099,
+      "compression_ratio": 1.2,
+      "end": 8715.36,
+      "no_speech_prob": 0.0,
+      "start": 8714.36,
+      "text": "你们会看到"
+    },
+    {
+      "avg_logprob": -0.219099,
+      "compression_ratio": 1.2,
+      "end": 8716.36,
+      "no_speech_prob": 0.0,
+      "start": 8715.36,
+      "text": "就在北京城"
+    },
+    {
+      "avg_logprob": -0.219099,
+      "compression_ratio": 1.2,
+      "end": 8717.36,
+      "no_speech_prob": 0.0,
+      "start": 8716.36,
+      "text": "我今天告诉大家"
+    },
+    {
+      "avg_logprob": -0.219099,
+      "compression_ratio": 1.2,
+      "end": 8722.36,
+      "no_speech_prob": 0.0,
+      "start": 8718.36,
+      "text": "七哥的行动就在北京城"
+    },
+    {
+      "avg_logprob": -0.19349,
+      "compression_ratio": 1.212766,
+      "end": 8723.36,
+      "no_speech_prob": 0.0,
+      "start": 8722.36,
+      "text": "记住啊"
+    },
+    {
+      "avg_logprob": -0.19349,
+      "compression_ratio": 1.212766,
+      "end": 8724.36,
+      "no_speech_prob": 0.0,
+      "start": 8723.36,
+      "text": "我说的话"
+    },
+    {
+      "avg_logprob": -0.19349,
+      "compression_ratio": 1.212766,
+      "end": 8726.36,
+      "no_speech_prob": 0.0,
+      "start": 8724.36,
+      "text": "就在二环以内"
+    },
+    {
+      "avg_logprob": -0.19349,
+      "compression_ratio": 1.212766,
+      "end": 8728.36,
+      "no_speech_prob": 0.0,
+      "start": 8727.36,
+      "text": "我今天告诉大家地方"
+    },
+    {
+      "avg_logprob": -0.19349,
+      "compression_ratio": 1.212766,
+      "end": 8729.36,
+      "no_speech_prob": 0.0,
+      "start": 8728.36,
+      "text": "我都不去四环"
+    },
+    {
+      "avg_logprob": -0.19349,
+      "compression_ratio": 1.212766,
+      "end": 8730.36,
+      "no_speech_prob": 0.0,
+      "start": 8729.36,
+      "text": "四环"
+    },
+    {
+      "avg_logprob": -0.19349,
+      "compression_ratio": 1.212766,
+      "end": 8731.36,
+      "no_speech_prob": 0.0,
+      "start": 8730.36,
+      "text": "四环里盘古太近了"
+    },
+    {
+      "avg_logprob": -0.19349,
+      "compression_ratio": 1.212766,
+      "end": 8732.36,
+      "no_speech_prob": 0.0,
+      "start": 8731.36,
+      "text": "不好意思"
+    },
+    {
+      "avg_logprob": -0.19349,
+      "compression_ratio": 1.212766,
+      "end": 8737.36,
+      "no_speech_prob": 0.0,
+      "start": 8734.36,
+      "text": "我就在二环以内给他弄点动静出来"
+    },
+    {
+      "avg_logprob": -0.156516,
+      "compression_ratio": 0.838235,
+      "end": 8742.36,
+      "no_speech_prob": 0.0,
+      "start": 8737.36,
+      "text": "你们会突然间听到二环以内到处充满着歌声"
+    },
+    {
+      "avg_logprob": -0.406128,
+      "compression_ratio": 0.967742,
+      "end": 8745.36,
+      "no_speech_prob": 0.0,
+      "start": 8742.36,
+      "text": "在哪里"
+    },
+    {
+      "avg_logprob": -0.406128,
+      "compression_ratio": 0.967742,
+      "end": 8748.36,
+      "no_speech_prob": 0.0,
+      "start": 8745.36,
+      "text": "在哪里见过你"
+    },
+    {
+      "avg_logprob": -0.406128,
+      "compression_ratio": 0.967742,
+      "end": 8752.36,
+      "no_speech_prob": 0.0,
+      "start": 8748.36,
+      "text": "你的笑容这样熟悉"
+    },
+    {
+      "avg_logprob": -0.406128,
+      "compression_ratio": 0.967742,
+      "end": 8756.36,
+      "no_speech_prob": 0.0,
+      "start": 8752.36,
+      "text": "在梦里"
+    },
+    {
+      "avg_logprob": -0.319892,
+      "compression_ratio": 1.0,
+      "end": 8758.36,
+      "no_speech_prob": 0.0,
+      "start": 8756.36,
+      "text": "在梦里"
+    },
+    {
+      "avg_logprob": -0.319892,
+      "compression_ratio": 1.0,
+      "end": 8762.36,
+      "no_speech_prob": 0.0,
+      "start": 8759.36,
+      "text": "全北京城都要听到这种"
+    },
+    {
+      "avg_logprob": -0.319892,
+      "compression_ratio": 1.0,
+      "end": 8763.36,
+      "no_speech_prob": 0.0,
+      "start": 8762.36,
+      "text": "甜蜜蜜"
+    },
+    {
+      "avg_logprob": -0.319892,
+      "compression_ratio": 1.0,
+      "end": 8764.36,
+      "no_speech_prob": 0.0,
+      "start": 8763.36,
+      "text": "暗号暗号"
+    },
+    {
+      "avg_logprob": -0.319892,
+      "compression_ratio": 1.0,
+      "end": 8765.36,
+      "no_speech_prob": 0.0,
+      "start": 8764.36,
+      "text": "哎呦多了"
+    },
+    {
+      "avg_logprob": -0.319892,
+      "compression_ratio": 1.0,
+      "end": 8766.36,
+      "no_speech_prob": 0.0,
+      "start": 8765.36,
+      "text": "哈哈哈哈"
+    },
+    {
+      "avg_logprob": -0.505627,
+      "compression_ratio": 1.917293,
+      "end": 8767.36,
+      "no_speech_prob": 0.0,
+      "start": 8766.36,
+      "text": "哈哈哈哈哈哈"
+    },
+    {
+      "avg_logprob": -0.505627,
+      "compression_ratio": 1.917293,
+      "end": 8768.36,
+      "no_speech_prob": 0.0,
+      "start": 8767.36,
+      "text": "不要听到"
+    },
+    {
+      "avg_logprob": -0.505627,
+      "compression_ratio": 1.917293,
+      "end": 8769.36,
+      "no_speech_prob": 0.0,
+      "start": 8768.36,
+      "text": "你是不是人记得"
+    },
+    {
+      "avg_logprob": -0.505627,
+      "compression_ratio": 1.917293,
+      "end": 8770.36,
+      "no_speech_prob": 0.0,
+      "start": 8769.36,
+      "text": "你是不是人记得"
+    },
+    {
+      "avg_logprob": -0.505627,
+      "compression_ratio": 1.917293,
+      "end": 8771.36,
+      "no_speech_prob": 0.0,
+      "start": 8770.36,
+      "text": "你是不是人记得"
+    },
+    {
+      "avg_logprob": -0.505627,
+      "compression_ratio": 1.917293,
+      "end": 8772.36,
+      "no_speech_prob": 0.0,
+      "start": 8771.36,
+      "text": "你是不是人记得"
+    },
+    {
+      "avg_logprob": -0.505627,
+      "compression_ratio": 1.917293,
+      "end": 8773.36,
+      "no_speech_prob": 0.0,
+      "start": 8772.36,
+      "text": "你是不是人记得"
+    },
+    {
+      "avg_logprob": -0.505627,
+      "compression_ratio": 1.917293,
+      "end": 8775.36,
+      "no_speech_prob": 0.0,
+      "start": 8773.36,
+      "text": "你这边也记得点酒味啊"
+    },
+    {
+      "avg_logprob": -0.505627,
+      "compression_ratio": 1.917293,
+      "end": 8777.36,
+      "no_speech_prob": 0.0,
+      "start": 8775.36,
+      "text": "哎呦"
+    },
+    {
+      "avg_logprob": -0.505627,
+      "compression_ratio": 1.917293,
+      "end": 8778.36,
+      "no_speech_prob": 0.0,
+      "start": 8777.36,
+      "text": "哎呦"
+    },
+    {
+      "avg_logprob": -0.505627,
+      "compression_ratio": 1.917293,
+      "end": 8779.36,
+      "no_speech_prob": 0.0,
+      "start": 8778.36,
+      "text": "哎呦"
+    },
+    {
+      "avg_logprob": -0.505627,
+      "compression_ratio": 1.917293,
+      "end": 8783.36,
+      "no_speech_prob": 0.0,
+      "start": 8779.36,
+      "text": "你笑的天蜜蜜"
+    },
+    {
+      "avg_logprob": -0.505627,
+      "compression_ratio": 1.917293,
+      "end": 8788.36,
+      "no_speech_prob": 0.0,
+      "start": 8783.36,
+      "text": "好想火而开在春风里"
+    },
+    {
+      "avg_logprob": -0.505627,
+      "compression_ratio": 1.917293,
+      "end": 8789.36,
+      "no_speech_prob": 0.0,
+      "start": 8788.36,
+      "text": "春风里啊"
+    },
+    {
+      "avg_logprob": -0.505627,
+      "compression_ratio": 1.917293,
+      "end": 8790.36,
+      "no_speech_prob": 0.0,
+      "start": 8789.36,
+      "text": "春风里"
+    },
+    {
+      "avg_logprob": -0.505627,
+      "compression_ratio": 1.917293,
+      "end": 8792.36,
+      "no_speech_prob": 0.0,
+      "start": 8791.36,
+      "text": "哎呦"
+    },
+    {
+      "avg_logprob": -0.399909,
+      "compression_ratio": 1.142857,
+      "end": 8797.36,
+      "no_speech_prob": 0.0,
+      "start": 8796.36,
+      "text": "太好棒啊"
+    },
+    {
+      "avg_logprob": -0.399909,
+      "compression_ratio": 1.142857,
+      "end": 8798.36,
+      "no_speech_prob": 0.0,
+      "start": 8797.36,
+      "text": "太棒了"
+    },
+    {
+      "avg_logprob": -0.399909,
+      "compression_ratio": 1.142857,
+      "end": 8799.36,
+      "no_speech_prob": 0.0,
+      "start": 8798.36,
+      "text": "太棒了"
+    },
+    {
+      "avg_logprob": -0.399909,
+      "compression_ratio": 1.142857,
+      "end": 8800.36,
+      "no_speech_prob": 0.0,
+      "start": 8799.36,
+      "text": "太棒了"
+    },
+    {
+      "avg_logprob": -0.399909,
+      "compression_ratio": 1.142857,
+      "end": 8801.36,
+      "no_speech_prob": 0.0,
+      "start": 8800.36,
+      "text": "这个"
+    },
+    {
+      "avg_logprob": -0.399909,
+      "compression_ratio": 1.142857,
+      "end": 8802.36,
+      "no_speech_prob": 0.0,
+      "start": 8801.36,
+      "text": "到时候我们要在"
+    },
+    {
+      "avg_logprob": -3.188706,
+      "compression_ratio": 0.5,
+      "end": 8853.36,
+      "no_speech_prob": 0.0,
+      "start": 8826.36,
+      "text": "春风轰"
+    },
+    {
+      "avg_logprob": -0.999515,
+      "compression_ratio": 0.765957,
+      "end": 8872.44,
+      "no_speech_prob": 0.0,
+      "start": 8853.36,
+      "text": "我现在就看着你"
+    },
+    {
+      "avg_logprob": -0.999515,
+      "compression_ratio": 0.765957,
+      "end": 8880.04,
+      "no_speech_prob": 0.0,
+      "start": 8872.44,
+      "text": "好"
+    },
+    {
+      "avg_logprob": -0.999515,
+      "compression_ratio": 0.765957,
+      "end": 8880.94,
+      "no_speech_prob": 0.0,
+      "start": 8880.04,
+      "text": "真的"
+    },
+    {
+      "avg_logprob": -0.999515,
+      "compression_ratio": 0.765957,
+      "end": 8882.86,
+      "no_speech_prob": 0.0,
+      "start": 8880.94,
+      "text": "太好"
+    },
+    {
+      "avg_logprob": -0.233351,
+      "compression_ratio": 1.43617,
+      "end": 8886.06,
+      "no_speech_prob": 0.0,
+      "start": 8882.86,
+      "text": "他说七哥叫北京城整点动静"
+    },
+    {
+      "avg_logprob": -0.233351,
+      "compression_ratio": 1.43617,
+      "end": 8887.7,
+      "no_speech_prob": 0.0,
+      "start": 8886.06,
+      "text": "整点动静"
+    },
+    {
+      "avg_logprob": -0.233351,
+      "compression_ratio": 1.43617,
+      "end": 8890.44,
+      "no_speech_prob": 0.0,
+      "start": 8887.7,
+      "text": "这个动静你就看着七哥"
+    },
+    {
+      "avg_logprob": -0.233351,
+      "compression_ratio": 1.43617,
+      "end": 8892.02,
+      "no_speech_prob": 0.0,
+      "start": 8890.44,
+      "text": "你就看着七哥整出来"
+    },
+    {
+      "avg_logprob": -0.233351,
+      "compression_ratio": 1.43617,
+      "end": 8896.98,
+      "no_speech_prob": 0.0,
+      "start": 8892.02,
+      "text": "这个动静会以病毒为借口的动静"
+    },
+    {
+      "avg_logprob": -0.233351,
+      "compression_ratio": 1.43617,
+      "end": 8899.62,
+      "no_speech_prob": 0.0,
+      "start": 8896.98,
+      "text": "而且是世界级的"
+    },
+    {
+      "avg_logprob": -0.233351,
+      "compression_ratio": 1.43617,
+      "end": 8902.48,
+      "no_speech_prob": 0.0,
+      "start": 8899.62,
+      "text": "世界级的"
+    },
+    {
+      "avg_logprob": -0.233351,
+      "compression_ratio": 1.43617,
+      "end": 8903.58,
+      "no_speech_prob": 0.0,
+      "start": 8902.48,
+      "text": "记住啊"
+    },
+    {
+      "avg_logprob": -0.233351,
+      "compression_ratio": 1.43617,
+      "end": 8905.62,
+      "no_speech_prob": 0.0,
+      "start": 8903.58,
+      "text": "世界级的"
+    },
+    {
+      "avg_logprob": -0.233351,
+      "compression_ratio": 1.43617,
+      "end": 8907.54,
+      "no_speech_prob": 0.0,
+      "start": 8905.62,
+      "text": "绝不超过六周"
+    },
+    {
+      "avg_logprob": -0.233351,
+      "compression_ratio": 1.43617,
+      "end": 8909.72,
+      "no_speech_prob": 0.0,
+      "start": 8907.54,
+      "text": "我有99%的把握"
+    },
+    {
+      "avg_logprob": -0.233351,
+      "compression_ratio": 1.43617,
+      "end": 8912.68,
+      "no_speech_prob": 0.0,
+      "start": 8909.72,
+      "text": "在冬奥会期间整点大动静"
+    },
+    {
+      "avg_logprob": -0.277779,
+      "compression_ratio": 0.935484,
+      "end": 8915.26,
+      "no_speech_prob": 0.0,
+      "start": 8912.86,
+      "text": "叫在北京城"
+    },
+    {
+      "avg_logprob": -0.277779,
+      "compression_ratio": 0.935484,
+      "end": 8917.06,
+      "no_speech_prob": 0.0,
+      "start": 8915.26,
+      "text": "叫大家"
+    },
+    {
+      "avg_logprob": -0.277779,
+      "compression_ratio": 0.935484,
+      "end": 8919.44,
+      "no_speech_prob": 0.0,
+      "start": 8917.06,
+      "text": "习近平不老是做梦吗"
+    },
+    {
+      "avg_logprob": -0.277779,
+      "compression_ratio": 0.935484,
+      "end": 8919.86,
+      "no_speech_prob": 0.0,
+      "start": 8919.44,
+      "text": "是吧"
+    },
+    {
+      "avg_logprob": -0.277779,
+      "compression_ratio": 0.935484,
+      "end": 8922.02,
+      "no_speech_prob": 0.0,
+      "start": 8919.86,
+      "text": "咱们就要在梦里梦见你"
+    },
+    {
+      "avg_logprob": -0.561882,
+      "compression_ratio": 1.054054,
+      "end": 8925.42,
+      "no_speech_prob": 0.0,
+      "start": 8922.02,
+      "text": "在那里"
+    },
+    {
+      "avg_logprob": -0.561882,
+      "compression_ratio": 1.054054,
+      "end": 8928.6,
+      "no_speech_prob": 0.0,
+      "start": 8925.42,
+      "text": "在那里见过你"
+    },
+    {
+      "avg_logprob": -0.561882,
+      "compression_ratio": 1.054054,
+      "end": 8933.36,
+      "no_speech_prob": 0.0,
+      "start": 8928.6,
+      "text": "你的笑容这样熟悉"
+    },
+    {
+      "avg_logprob": -0.561882,
+      "compression_ratio": 1.054054,
+      "end": 8935.36,
+      "no_speech_prob": 0.0,
+      "start": 8933.36,
+      "text": "啊"
+    },
+    {
+      "avg_logprob": -0.561882,
+      "compression_ratio": 1.054054,
+      "end": 8938.86,
+      "no_speech_prob": 0.0,
+      "start": 8935.36,
+      "text": "在梦里"
+    },
+    {
+      "avg_logprob": -0.561882,
+      "compression_ratio": 1.054054,
+      "end": 8940.4,
+      "no_speech_prob": 0.0,
+      "start": 8938.86,
+      "text": "我们在梦里"
+    },
+    {
+      "avg_logprob": -0.418632,
+      "compression_ratio": 1.12,
+      "end": 8942.9,
+      "no_speech_prob": 0.0,
+      "start": 8940.4,
+      "text": "而且一身手还摸得着"
+    },
+    {
+      "avg_logprob": -0.418632,
+      "compression_ratio": 1.12,
+      "end": 8944.6,
+      "no_speech_prob": 0.0,
+      "start": 8942.9,
+      "text": "到那时候"
+    },
+    {
+      "avg_logprob": -0.418632,
+      "compression_ratio": 1.12,
+      "end": 8946.64,
+      "no_speech_prob": 0.0,
+      "start": 8944.6,
+      "text": "二环"
+    },
+    {
+      "avg_logprob": -0.418632,
+      "compression_ratio": 1.12,
+      "end": 8949.28,
+      "no_speech_prob": 0.0,
+      "start": 8946.64,
+      "text": "就是三百年的飞飞一首甜蜜蜜"
+    },
+    {
+      "avg_logprob": -0.418632,
+      "compression_ratio": 1.12,
+      "end": 8951.24,
+      "no_speech_prob": 0.0,
+      "start": 8949.28,
+      "text": "唱的郭文贵"
+    },
+    {
+      "avg_logprob": -0.418632,
+      "compression_ratio": 1.12,
+      "end": 8953.6,
+      "no_speech_prob": 0.0,
+      "start": 8951.24,
+      "text": "这个如醉如痴啊"
+    },
+    {
+      "avg_logprob": -0.418632,
+      "compression_ratio": 1.12,
+      "end": 8954.64,
+      "no_speech_prob": 0.0,
+      "start": 8953.6,
+      "text": "然后呢"
+    },
+    {
+      "avg_logprob": -0.418632,
+      "compression_ratio": 1.12,
+      "end": 8956.94,
+      "no_speech_prob": 0.0,
+      "start": 8954.64,
+      "text": "在北京城搞的叫甜蜜蜜的运动"
+    },
+    {
+      "avg_logprob": -0.336663,
+      "compression_ratio": 1.401747,
+      "end": 8961.14,
+      "no_speech_prob": 0.0,
+      "start": 8956.94,
+      "text": "绝对是这个运动"
+    },
+    {
+      "avg_logprob": -0.336663,
+      "compression_ratio": 1.401747,
+      "end": 8963.24,
+      "no_speech_prob": 0.0,
+      "start": 8961.14,
+      "text": "就叫甜蜜蜜运动"
+    },
+    {
+      "avg_logprob": -0.336663,
+      "compression_ratio": 1.401747,
+      "end": 8964.94,
+      "no_speech_prob": 0.0,
+      "start": 8963.24,
+      "text": "然后你们看到"
+    },
+    {
+      "avg_logprob": -0.336663,
+      "compression_ratio": 1.401747,
+      "end": 8966.04,
+      "no_speech_prob": 0.0,
+      "start": 8964.94,
+      "text": "二环里面的动静"
+    },
+    {
+      "avg_logprob": -0.336663,
+      "compression_ratio": 1.401747,
+      "end": 8966.24,
+      "no_speech_prob": 0.0,
+      "start": 8966.04,
+      "text": "哎"
+    },
+    {
+      "avg_logprob": -0.336663,
+      "compression_ratio": 1.401747,
+      "end": 8967.34,
+      "no_speech_prob": 0.0,
+      "start": 8966.24,
+      "text": "习近平这傻眼"
+    },
+    {
+      "avg_logprob": -0.336663,
+      "compression_ratio": 1.401747,
+      "end": 8968.12,
+      "no_speech_prob": 0.0,
+      "start": 8967.34,
+      "text": "他就明知道"
+    },
+    {
+      "avg_logprob": -0.336663,
+      "compression_ratio": 1.401747,
+      "end": 8969.34,
+      "no_speech_prob": 0.0,
+      "start": 8968.12,
+      "text": "呀呀"
+    },
+    {
+      "avg_logprob": -0.336663,
+      "compression_ratio": 1.401747,
+      "end": 8971.84,
+      "no_speech_prob": 0.0,
+      "start": 8969.34,
+      "text": "没办法"
+    },
+    {
+      "avg_logprob": -0.336663,
+      "compression_ratio": 1.401747,
+      "end": 8972.84,
+      "no_speech_prob": 0.0,
+      "start": 8971.84,
+      "text": "支持不了"
+    },
+    {
+      "avg_logprob": -0.336663,
+      "compression_ratio": 1.401747,
+      "end": 8974.04,
+      "no_speech_prob": 0.0,
+      "start": 8972.84,
+      "text": "然后就听到"
+    },
+    {
+      "avg_logprob": -0.336663,
+      "compression_ratio": 1.401747,
+      "end": 8975.74,
+      "no_speech_prob": 0.0,
+      "start": 8974.04,
+      "text": "出面都在唱甜蜜蜜"
+    },
+    {
+      "avg_logprob": -0.336663,
+      "compression_ratio": 1.401747,
+      "end": 8977.0,
+      "no_speech_prob": 0.0,
+      "start": 8975.74,
+      "text": "左看右看"
+    },
+    {
+      "avg_logprob": -0.336663,
+      "compression_ratio": 1.401747,
+      "end": 8977.44,
+      "no_speech_prob": 0.0,
+      "start": 8977.0,
+      "text": "前看"
+    },
+    {
+      "avg_logprob": -0.336663,
+      "compression_ratio": 1.401747,
+      "end": 8977.84,
+      "no_speech_prob": 0.0,
+      "start": 8977.44,
+      "text": "后看"
+    },
+    {
+      "avg_logprob": -0.336663,
+      "compression_ratio": 1.401747,
+      "end": 8978.24,
+      "no_speech_prob": 0.0,
+      "start": 8977.84,
+      "text": "上看"
+    },
+    {
+      "avg_logprob": -0.336663,
+      "compression_ratio": 1.401747,
+      "end": 8978.64,
+      "no_speech_prob": 0.0,
+      "start": 8978.24,
+      "text": "下看"
+    },
+    {
+      "avg_logprob": -0.336663,
+      "compression_ratio": 1.401747,
+      "end": 8979.84,
+      "no_speech_prob": 0.0,
+      "start": 8978.64,
+      "text": "都在甜蜜蜜"
+    },
+    {
+      "avg_logprob": -0.336663,
+      "compression_ratio": 1.401747,
+      "end": 8981.04,
+      "no_speech_prob": 0.0,
+      "start": 8979.84,
+      "text": "都在梦里见过你"
+    },
+    {
+      "avg_logprob": -0.336663,
+      "compression_ratio": 1.401747,
+      "end": 8982.44,
+      "no_speech_prob": 0.0,
+      "start": 8981.04,
+      "text": "说我的习近平"
+    },
+    {
+      "avg_logprob": -0.336663,
+      "compression_ratio": 1.401747,
+      "end": 8983.38,
+      "no_speech_prob": 0.0,
+      "start": 8982.44,
+      "text": "我的中国梦"
+    },
+    {
+      "avg_logprob": -0.336663,
+      "compression_ratio": 1.401747,
+      "end": 8985.34,
+      "no_speech_prob": 0.0,
+      "start": 8983.38,
+      "text": "怎么变成甜蜜蜜的梦了呢"
+    },
+    {
+      "avg_logprob": -0.256279,
+      "compression_ratio": 1.12,
+      "end": 8986.64,
+      "no_speech_prob": 0.0,
+      "start": 8985.34,
+      "text": "是吧"
+    },
+    {
+      "avg_logprob": -0.256279,
+      "compression_ratio": 1.12,
+      "end": 8987.64,
+      "no_speech_prob": 0.0,
+      "start": 8986.64,
+      "text": "刚那时候就认了"
+    },
+    {
+      "avg_logprob": -0.256279,
+      "compression_ratio": 1.12,
+      "end": 8990.54,
+      "no_speech_prob": 0.0,
+      "start": 8987.64,
+      "text": "我今天就告诉你这老大毛"
+    },
+    {
+      "avg_logprob": -0.256279,
+      "compression_ratio": 1.12,
+      "end": 8993.84,
+      "no_speech_prob": 0.0,
+      "start": 8990.54,
+      "text": "你张高丽会给彭帅讲故事"
+    },
+    {
+      "avg_logprob": -0.256279,
+      "compression_ratio": 1.12,
+      "end": 8995.64,
+      "no_speech_prob": 0.0,
+      "start": 8993.84,
+      "text": "宇宙无限大"
+    },
+    {
+      "avg_logprob": -0.256279,
+      "compression_ratio": 1.12,
+      "end": 8996.64,
+      "no_speech_prob": 0.0,
+      "start": 8995.64,
+      "text": "地球伊丽莎"
+    },
+    {
+      "avg_logprob": -0.256279,
+      "compression_ratio": 1.12,
+      "end": 8997.94,
+      "no_speech_prob": 0.0,
+      "start": 8996.64,
+      "text": "今天我跟你来个"
+    },
+    {
+      "avg_logprob": -0.256279,
+      "compression_ratio": 1.12,
+      "end": 8999.44,
+      "no_speech_prob": 0.0,
+      "start": 8997.94,
+      "text": "就在你家门口"
+    },
+    {
+      "avg_logprob": -0.256279,
+      "compression_ratio": 1.12,
+      "end": 8999.94,
+      "no_speech_prob": 0.0,
+      "start": 8999.44,
+      "text": "来个"
+    }
+  ],
+  "text": "下面都进入我们最后一个话题就是我们飞飞就是她准备的PPT是关于冬奥会和这两天北京发生了什么交给飞飞谢谢谢谢是唱甜蜜蜜吗四位楚歌十面埋伏的北京冬奥会是撰稿人是代命文晓然后樱花团的然后还有青山是英喜的然后是美工是英喜的青山首先是谈到西方国家抵制冬奥最新消息1月19号NBA求新坎特回应姚明邀请我能参观老改营吗然后1月20号欧洲议会通过香港基本自由遭受侵害决议呼吁抵制冬奥会1月20号法国国民议会通过谴责中共对新疆实行种族灭绝的决议1月20号媒介准确在可口可乐总部发起为什么可口可乐赞助种族灭绝的广告牌运动1月24号NBC北京冬奥会是种族灭绝运动会令人鄙视令人恶心下一页是疫情失控甚火失从截止1月23号北京疫情确诊57例累计确诊1272例封台和朝阳开始全员核酸检测那那个国际观众进入国内观众不提供门票只邀请特定群体参加北京及周边地区冬奥会期间实行无线电管控火炬接力将封闭传递不向工作开放下面一页是发射超过100万颗造学火箭弹火箭弹的主要成分是点化银局部接触发生局部或全身皮肤沉着症眼部损害慢性脂气管炎等不容易水对水体可能造成污染一刻的点化银受热后可以形成几十万亿个点化银威力这些威力会随气流运动进入云中在冷云中产生几万亿到上百万亿个水晶最后随雪落到地面标准的银离子浓度将对环境和人体造成不可逆的伤害那运动员的这个身体是有很大的损害各国社澳人员到京情况来自中国英国芬兰等20多个国家代表团部分社澳人员已经进驻东澳村1月4日至1月22日期间对于2586名奥运会相关人员进行了PCR检测确诊72例阳性其中39人在机场检测被发现33人在闭环内检测被发现下一页新中国联邦狙击北京奥运会然后向各国政府运动员提供中共种族灭绝玩人类信息告知世界被中共虐杀的数百万只狗可能进入冬奥会的参盘后面一点是参加本次冬奥会的人员将会被永久公布在GeniusGatter GTV上第四项是不参加本次冬奥会的运动员可以获得喜币最后也是感谢您的观看感谢一下农场樱花团和应喜谢谢谢谢菲菲在交给七哥之前我跟大家分享一下就是也是在准备开奥运会之前就现在正在国内网上热搜的一件事情叫李雪州自杀事件然后他李雪州他现在去世的时候15岁刚去世然后出生的时候被亲生的父母卖了然后在他4岁的时候养父母也去世了然后后面读书的时候被欺凌千方百计的踏上寻亲的路然后呢找到亲生父母了但是被拒绝然后在这个过程中间在这一步的时候新京报这个王八蛋然后就是报告说他千里寻亲就想找亲生父母买套房子然后完全就被误导了然后网上很多人抨起他然后最后他自杀了在海边吞药自杀了在遗书中他说我不是想要房子我只是想要一个家因为想和父母在一起但是呢他的父母现在微信上然后给他拉黑了最后账户的钱在遗书中然后写到就是捐给孤儿这也是在即将开奥运会之前然后现在国内也是还在第一的热搜流血洲事件然后跟这个话题一起我想一起先交给七哥谢谢哎呀这是这个流血洲事件我不知道啊我是完全不知道完全我第一个听到你的名字这个我想刚才说的事情就是这个冬奥会啊我觉得另外有一个玄机啊这是大家可能是没有注意到的你看最近国内这个媒体这个媒体这个媒体出奇的啊啊净哈哈就是宣传方法大外宣吹狼弹的这个这个这个招数呢都没怎么用啊而且很不自信的很不确定的谁能来包括必须应该公布的外国领导人所谓的奥运会的欢迎仪式啊晚宴啊然后呢这个搞一些悬念啊开幕式啊就是极大不确定性媒体上也不自信还有更重要的事情就是你可以看出他一系列的政策包括这个尝试着去试一下子放这个这个这个这个这个气候导弹是吧那点雪下来就你能从这一系列端你能看出来习近平本人也不自信这个东方会能开啥样就和各国的勾兑现在完全也不确定在开幕式上一些节目听说到昨天还在改还在修改本来要把习主席啊习太阳出来的时候到像道年希特勒一样一站出来手一伸那个镜头更加的修改要把习太阳要是中国人民强大崛起就像邓小平南巡讲话里边有一个词儿坚决不能说就是邓小平一个老人到南边转了一圈然后画了一个圈这画圈事就别说了因为他不是他画的他认为是习中心画的这句话不能说特别是对待这次中奥会开幕式上有一句话不能说就是党和国家第四代领导人习近平先生要改为党和国家核心领导人真是独尊了现在真的要独尊了而且特别明确的是中国冬奥会的将获得巨大成功成功得开放走向新纪元新纪元这词儿很大新纪元的一个开始那么另外一个就是现场没有观众他们要搞出网络上大家记住啊网络上他一定会说超过12亿人次的看你看到这个数据都会出来的超过12亿啊一定说超过12亿而且不但超过12亿人看就是外国的商家很多赞助厂商都不去了是到不厂了转播也去不了了他会说由于病毒和疫苗以及西方反华势力的搞破坏反而给我们带来了社交媒体上的巨大的关注量十几亿次看而且点赞数是百分六七十可能甚至百分之八十然后一系列的支持中国已经现在派到海外巴基斯坦古巴阿富汗都有啊法国德国就这个被共产能收买的地方加拿大都已经准备好了到时候会有你看着还会采访华人可以采访路人路人甲路人蚁是吧全都出来了哎呦我看了北京冬奥会了这可简直是太好了你们做得太好了哎呀你们这个情况下防止疫苗防止病毒都安排好了从外打内从内打外这些事情我知道以后啊我看到这些出招以后我太了解共产党的什么招数这要给谁看要叫谁看第一第一篡改历史要把这个冬奥会搞成一个举无举世无双的在病毒期间的被西方打压的一场重大的冬奥运会要让内部中国人民看到你看看我在这种情况下习太阳都能搞这样的冬奥会那要没有疫苗没有病毒呢那不更厉害了吗江泽民和胡一桃怎么跟我比啊是不是完了之后就真可能就打台湾了这个是大家也看到的一切的铺垫在全世界所有人都在讨论冬奥会的时候乌克兰台湾将生事端就像当年的希特勒和苏联一样所有冬奥会以后他们判断世界人民对这个国家的好感和政治上的反应是最马目的他要行动但是七哥也有行动我的行动你们会看到就在北京城我今天告诉大家七哥的行动就在北京城记住啊我说的话就在二环以内我今天告诉大家地方我都不去四环四环四环里盘古太近了不好意思我就在二环以内给他弄点动静出来你们会突然间听到二环以内到处充满着歌声在哪里在哪里见过你你的笑容这样熟悉在梦里在梦里全北京城都要听到这种甜蜜蜜暗号暗号哎呦多了哈哈哈哈哈哈哈哈哈哈不要听到你是不是人记得你是不是人记得你是不是人记得你是不是人记得你是不是人记得你这边也记得点酒味啊哎呦哎呦哎呦你笑的天蜜蜜好想火而开在春风里春风里啊春风里哎呦太好棒啊太棒了太棒了太棒了这个到时候我们要在春风轰我现在就看着你好真的太好他说七哥叫北京城整点动静整点动静这个动静你就看着七哥你就看着七哥整出来这个动静会以病毒为借口的动静而且是世界级的世界级的记住啊世界级的绝不超过六周我有99%的把握在冬奥会期间整点大动静叫在北京城叫大家习近平不老是做梦吗是吧咱们就要在梦里梦见你在那里在那里见过你你的笑容这样熟悉啊在梦里我们在梦里而且一身手还摸得着到那时候二环就是三百年的飞飞一首甜蜜蜜唱的郭文贵这个如醉如痴啊然后呢在北京城搞的叫甜蜜蜜的运动绝对是这个运动就叫甜蜜蜜运动然后你们看到二环里面的动静哎习近平这傻眼他就明知道呀呀没办法支持不了然后就听到出面都在唱甜蜜蜜左看右看前看后看上看下看都在甜蜜蜜都在梦里见过你说我的习近平我的中国梦怎么变成甜蜜蜜的梦了呢是吧刚那时候就认了我今天就告诉你这老大毛你张高丽会给彭帅讲故事宇宙无限大地球伊丽莎今天我跟你来个就在你家门口来个"
+}

@@ -1,0 +1,1600 @@
+{
+  "chunk_audio_sha256": "bef8bc543d90bcb53520c89364abee37578d2d8e5608253f03e1d929e19b1212",
+  "chunk_index": 1,
+  "completed_at": "2026-10-25T01:23:03Z",
+  "language": "zh",
+  "live_id": "LIVE_20220125_001",
+  "media_committed_to_git": false,
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "offset_sec": 900,
+  "paid_api_used": false,
+  "processing_location": "github-hosted-macos-arm64",
+  "schema_version": "cloud-asr-chunk-v1",
+  "segments": [
+    {
+      "avg_logprob": -0.340032,
+      "compression_ratio": 0.965116,
+      "end": 908.0,
+      "no_speech_prob": 0.0,
+      "start": 900.0,
+      "text": "在哪里 在哪里见过你"
+    },
+    {
+      "avg_logprob": -0.340032,
+      "compression_ratio": 0.965116,
+      "end": 913.0,
+      "no_speech_prob": 0.0,
+      "start": 908.0,
+      "text": "你的笑容这样珍惜"
+    },
+    {
+      "avg_logprob": -0.340032,
+      "compression_ratio": 0.965116,
+      "end": 919.0,
+      "no_speech_prob": 0.0,
+      "start": 913.0,
+      "text": "我一时想不起"
+    },
+    {
+      "avg_logprob": -0.340032,
+      "compression_ratio": 0.965116,
+      "end": 926.0,
+      "no_speech_prob": 0.0,
+      "start": 919.0,
+      "text": "啊 在梦里"
+    },
+    {
+      "avg_logprob": -0.189075,
+      "compression_ratio": 0.928571,
+      "end": 954.0,
+      "no_speech_prob": 0.0,
+      "start": 930.0,
+      "text": "在哪里 在哪里见过你"
+    },
+    {
+      "avg_logprob": -0.189075,
+      "compression_ratio": 0.928571,
+      "end": 959.0,
+      "no_speech_prob": 0.0,
+      "start": 954.0,
+      "text": "你的笑容这样珍惜"
+    },
+    {
+      "avg_logprob": -0.11739,
+      "compression_ratio": 0.946429,
+      "end": 965.0,
+      "no_speech_prob": 0.0,
+      "start": 959.0,
+      "text": "我一时想不起"
+    },
+    {
+      "avg_logprob": -0.11739,
+      "compression_ratio": 0.946429,
+      "end": 972.0,
+      "no_speech_prob": 0.0,
+      "start": 965.0,
+      "text": "啊 在梦里"
+    },
+    {
+      "avg_logprob": -0.11739,
+      "compression_ratio": 0.946429,
+      "end": 980.0,
+      "no_speech_prob": 0.0,
+      "start": 972.0,
+      "text": "梦里 梦里见过你"
+    },
+    {
+      "avg_logprob": -0.125067,
+      "compression_ratio": 1.039216,
+      "end": 986.0,
+      "no_speech_prob": 0.0,
+      "start": 980.0,
+      "text": "甜蜜笑得多甜蜜"
+    },
+    {
+      "avg_logprob": -0.125067,
+      "compression_ratio": 1.039216,
+      "end": 994.0,
+      "no_speech_prob": 0.0,
+      "start": 986.0,
+      "text": "是你 是你 梦见的就是你"
+    },
+    {
+      "avg_logprob": -0.24336,
+      "compression_ratio": 1.206897,
+      "end": 1000.0,
+      "no_speech_prob": 0.0,
+      "start": 994.0,
+      "text": "在哪里 在哪里见过你"
+    },
+    {
+      "avg_logprob": -0.24336,
+      "compression_ratio": 1.206897,
+      "end": 1002.0,
+      "no_speech_prob": 0.0,
+      "start": 1000.0,
+      "text": "在哪里见过你"
+    },
+    {
+      "avg_logprob": -0.24336,
+      "compression_ratio": 1.206897,
+      "end": 1007.0,
+      "no_speech_prob": 0.0,
+      "start": 1002.0,
+      "text": "你的笑容这样珍惜"
+    },
+    {
+      "avg_logprob": -0.255714,
+      "compression_ratio": 0.738095,
+      "end": 1013.0,
+      "no_speech_prob": 0.0,
+      "start": 1007.0,
+      "text": "我一时想不起"
+    },
+    {
+      "avg_logprob": -0.255714,
+      "compression_ratio": 0.738095,
+      "end": 1019.0,
+      "no_speech_prob": 0.0,
+      "start": 1013.0,
+      "text": "啊 在梦里"
+    },
+    {
+      "avg_logprob": -0.63876,
+      "compression_ratio": 0.666667,
+      "end": 1025.0,
+      "no_speech_prob": 0.0,
+      "start": 1019.0,
+      "text": "我一时想不起"
+    },
+    {
+      "avg_logprob": -0.668713,
+      "compression_ratio": 1.741935,
+      "end": 1027.0,
+      "no_speech_prob": 0.0,
+      "start": 1025.0,
+      "text": "我一时想不起"
+    },
+    {
+      "avg_logprob": -0.668713,
+      "compression_ratio": 1.741935,
+      "end": 1029.0,
+      "no_speech_prob": 0.0,
+      "start": 1027.0,
+      "text": "我一时想不起"
+    },
+    {
+      "avg_logprob": -0.668713,
+      "compression_ratio": 1.741935,
+      "end": 1031.0,
+      "no_speech_prob": 0.0,
+      "start": 1029.0,
+      "text": "我一时想不起"
+    },
+    {
+      "avg_logprob": -0.407751,
+      "compression_ratio": 0.666667,
+      "end": 1037.0,
+      "no_speech_prob": 0.0,
+      "start": 1031.0,
+      "text": "我一时想不起"
+    },
+    {
+      "avg_logprob": -0.230705,
+      "compression_ratio": 1.220339,
+      "end": 1043.0,
+      "no_speech_prob": 0.0,
+      "start": 1037.0,
+      "text": "甜蜜蜜蜜"
+    },
+    {
+      "avg_logprob": -0.230705,
+      "compression_ratio": 1.220339,
+      "end": 1045.0,
+      "no_speech_prob": 0.0,
+      "start": 1043.0,
+      "text": "你笑得甜蜜蜜"
+    },
+    {
+      "avg_logprob": -0.230705,
+      "compression_ratio": 1.220339,
+      "end": 1049.0,
+      "no_speech_prob": 0.0,
+      "start": 1045.0,
+      "text": "好像花儿开在春风里"
+    },
+    {
+      "avg_logprob": -0.230705,
+      "compression_ratio": 1.220339,
+      "end": 1053.0,
+      "no_speech_prob": 0.0,
+      "start": 1049.0,
+      "text": "开在春风里"
+    },
+    {
+      "avg_logprob": -0.493581,
+      "compression_ratio": 4.296875,
+      "end": 1055.12,
+      "no_speech_prob": 0.0,
+      "start": 1053.0,
+      "text": "在哪里 里"
+    },
+    {
+      "avg_logprob": -0.493581,
+      "compression_ratio": 4.296875,
+      "end": 1058.0,
+      "no_speech_prob": 0.0,
+      "start": 1055.12,
+      "text": "在哪里 在哪里"
+    },
+    {
+      "avg_logprob": -0.493581,
+      "compression_ratio": 4.296875,
+      "end": 1059.08,
+      "no_speech_prob": 0.0,
+      "start": 1058.0,
+      "text": "在哪里见过你"
+    },
+    {
+      "avg_logprob": -0.493581,
+      "compression_ratio": 4.296875,
+      "end": 1061.0,
+      "no_speech_prob": 0.0,
+      "start": 1059.0,
+      "text": "在哪里见过你"
+    },
+    {
+      "avg_logprob": -0.493581,
+      "compression_ratio": 4.296875,
+      "end": 1062.0,
+      "no_speech_prob": 0.0,
+      "start": 1061.0,
+      "text": "在哪里见过你"
+    },
+    {
+      "avg_logprob": -0.493581,
+      "compression_ratio": 4.296875,
+      "end": 1063.0,
+      "no_speech_prob": 0.0,
+      "start": 1062.0,
+      "text": "在哪里见过你"
+    },
+    {
+      "avg_logprob": -0.493581,
+      "compression_ratio": 4.296875,
+      "end": 1064.0,
+      "no_speech_prob": 0.0,
+      "start": 1063.0,
+      "text": "在哪里见过你"
+    },
+    {
+      "avg_logprob": -0.493581,
+      "compression_ratio": 4.296875,
+      "end": 1064.04,
+      "no_speech_prob": 0.0,
+      "start": 1064.0,
+      "text": "在哪里见过你"
+    },
+    {
+      "avg_logprob": -0.493581,
+      "compression_ratio": 4.296875,
+      "end": 1065.0,
+      "no_speech_prob": 0.0,
+      "start": 1064.04,
+      "text": "在哪里见过你"
+    },
+    {
+      "avg_logprob": -0.493581,
+      "compression_ratio": 4.296875,
+      "end": 1066.0,
+      "no_speech_prob": 0.0,
+      "start": 1065.0,
+      "text": "在哪里见过你"
+    },
+    {
+      "avg_logprob": -0.493581,
+      "compression_ratio": 4.296875,
+      "end": 1067.0,
+      "no_speech_prob": 0.0,
+      "start": 1066.0,
+      "text": "在哪里见过你"
+    },
+    {
+      "avg_logprob": -0.493581,
+      "compression_ratio": 4.296875,
+      "end": 1068.0,
+      "no_speech_prob": 0.0,
+      "start": 1067.0,
+      "text": "你在哪里见过你"
+    },
+    {
+      "avg_logprob": -0.270491,
+      "compression_ratio": 1.0,
+      "end": 1073.0,
+      "no_speech_prob": 0.0,
+      "start": 1068.0,
+      "text": "我一时想不起"
+    },
+    {
+      "avg_logprob": -0.270491,
+      "compression_ratio": 1.0,
+      "end": 1081.0,
+      "no_speech_prob": 0.0,
+      "start": 1073.0,
+      "text": "啊 在梦里"
+    },
+    {
+      "avg_logprob": -0.270491,
+      "compression_ratio": 1.0,
+      "end": 1089.0,
+      "no_speech_prob": 0.0,
+      "start": 1081.0,
+      "text": "梦里 梦里见过你"
+    },
+    {
+      "avg_logprob": -0.270491,
+      "compression_ratio": 1.0,
+      "end": 1096.0,
+      "no_speech_prob": 0.0,
+      "start": 1089.0,
+      "text": "甜蜜笑得多甜蜜"
+    },
+    {
+      "avg_logprob": -0.133141,
+      "compression_ratio": 1.052083,
+      "end": 1100.0,
+      "no_speech_prob": 0.0,
+      "start": 1096.0,
+      "text": "是你 是你"
+    },
+    {
+      "avg_logprob": -0.133141,
+      "compression_ratio": 1.052083,
+      "end": 1104.0,
+      "no_speech_prob": 0.0,
+      "start": 1100.0,
+      "text": "梦见的就是你"
+    },
+    {
+      "avg_logprob": -0.133141,
+      "compression_ratio": 1.052083,
+      "end": 1112.0,
+      "no_speech_prob": 0.0,
+      "start": 1104.0,
+      "text": "在哪里 在哪里见过你"
+    },
+    {
+      "avg_logprob": -0.133141,
+      "compression_ratio": 1.052083,
+      "end": 1117.0,
+      "no_speech_prob": 0.0,
+      "start": 1112.0,
+      "text": "你的笑容这样熟悉"
+    },
+    {
+      "avg_logprob": -0.133141,
+      "compression_ratio": 1.052083,
+      "end": 1123.0,
+      "no_speech_prob": 0.0,
+      "start": 1117.0,
+      "text": "我一时想不起"
+    },
+    {
+      "avg_logprob": -0.114518,
+      "compression_ratio": 0.590909,
+      "end": 1129.0,
+      "no_speech_prob": 0.0,
+      "start": 1123.0,
+      "text": "啊 在梦里"
+    },
+    {
+      "avg_logprob": -0.286226,
+      "compression_ratio": 0.903226,
+      "end": 1135.0,
+      "no_speech_prob": 0.0,
+      "start": 1129.0,
+      "text": "在哪里 在哪里见过你"
+    },
+    {
+      "avg_logprob": -0.196914,
+      "compression_ratio": 0.685714,
+      "end": 1141.0,
+      "no_speech_prob": 0.0,
+      "start": 1135.0,
+      "text": "你的笑容这样熟悉"
+    },
+    {
+      "avg_logprob": -0.282423,
+      "compression_ratio": 0.666667,
+      "end": 1151.0,
+      "no_speech_prob": 0.0,
+      "start": 1141.0,
+      "text": "我一时想不起"
+    },
+    {
+      "avg_logprob": -0.21988,
+      "compression_ratio": 0.738095,
+      "end": 1157.0,
+      "no_speech_prob": 0.0,
+      "start": 1151.0,
+      "text": "我一时想不起"
+    },
+    {
+      "avg_logprob": -0.21988,
+      "compression_ratio": 0.738095,
+      "end": 1161.0,
+      "no_speech_prob": 0.0,
+      "start": 1157.0,
+      "text": "啊 在梦里"
+    },
+    {
+      "avg_logprob": -0.1936,
+      "compression_ratio": 0.946429,
+      "end": 1167.0,
+      "no_speech_prob": 0.0,
+      "start": 1161.0,
+      "text": "我一时想不起"
+    },
+    {
+      "avg_logprob": -0.1936,
+      "compression_ratio": 0.946429,
+      "end": 1171.0,
+      "no_speech_prob": 0.0,
+      "start": 1167.0,
+      "text": "啊 在梦里"
+    },
+    {
+      "avg_logprob": -0.1936,
+      "compression_ratio": 0.946429,
+      "end": 1175.0,
+      "no_speech_prob": 0.0,
+      "start": 1171.0,
+      "text": "梦里 梦里见过你"
+    },
+    {
+      "avg_logprob": -0.105181,
+      "compression_ratio": 1.06383,
+      "end": 1183.0,
+      "no_speech_prob": 0.0,
+      "start": 1175.0,
+      "text": "梦里 梦里 梦里见过你"
+    },
+    {
+      "avg_logprob": -0.105181,
+      "compression_ratio": 1.06383,
+      "end": 1189.0,
+      "no_speech_prob": 0.0,
+      "start": 1183.0,
+      "text": "甜蜜笑得多甜蜜"
+    },
+    {
+      "avg_logprob": -0.343208,
+      "compression_ratio": 3.453125,
+      "end": 1191.0,
+      "no_speech_prob": 0.0,
+      "start": 1189.0,
+      "text": "是你 是你"
+    },
+    {
+      "avg_logprob": -0.343208,
+      "compression_ratio": 3.453125,
+      "end": 1193.0,
+      "no_speech_prob": 0.0,
+      "start": 1191.0,
+      "text": "是你 是你"
+    },
+    {
+      "avg_logprob": -0.343208,
+      "compression_ratio": 3.453125,
+      "end": 1195.0,
+      "no_speech_prob": 0.0,
+      "start": 1193.0,
+      "text": "梦见的就是你"
+    },
+    {
+      "avg_logprob": -0.343208,
+      "compression_ratio": 3.453125,
+      "end": 1197.0,
+      "no_speech_prob": 0.0,
+      "start": 1195.0,
+      "text": "是你 是你"
+    },
+    {
+      "avg_logprob": -0.343208,
+      "compression_ratio": 3.453125,
+      "end": 1199.0,
+      "no_speech_prob": 0.0,
+      "start": 1197.0,
+      "text": "是你 是你"
+    },
+    {
+      "avg_logprob": -0.343208,
+      "compression_ratio": 3.453125,
+      "end": 1200.5,
+      "no_speech_prob": 0.0,
+      "start": 1199.0,
+      "text": "是你 是你"
+    },
+    {
+      "avg_logprob": -0.343208,
+      "compression_ratio": 3.453125,
+      "end": 1202.0,
+      "no_speech_prob": 0.0,
+      "start": 1200.5,
+      "text": "是你 梦见的就是你"
+    },
+    {
+      "avg_logprob": -0.343208,
+      "compression_ratio": 3.453125,
+      "end": 1203.0,
+      "no_speech_prob": 0.0,
+      "start": 1202.0,
+      "text": "是你 是你"
+    },
+    {
+      "avg_logprob": -0.343208,
+      "compression_ratio": 3.453125,
+      "end": 1204.0,
+      "no_speech_prob": 0.0,
+      "start": 1203.0,
+      "text": "是你 梦见的就是你"
+    },
+    {
+      "avg_logprob": -0.343208,
+      "compression_ratio": 3.453125,
+      "end": 1206.0,
+      "no_speech_prob": 0.0,
+      "start": 1204.0,
+      "text": "是你 是你"
+    },
+    {
+      "avg_logprob": -0.343208,
+      "compression_ratio": 3.453125,
+      "end": 1208.0,
+      "no_speech_prob": 0.0,
+      "start": 1206.0,
+      "text": "是你 梦见的就是你"
+    },
+    {
+      "avg_logprob": -0.343208,
+      "compression_ratio": 3.453125,
+      "end": 1209.0,
+      "no_speech_prob": 0.0,
+      "start": 1208.0,
+      "text": "在哪里 在哪里"
+    },
+    {
+      "avg_logprob": -0.343208,
+      "compression_ratio": 3.453125,
+      "end": 1210.0,
+      "no_speech_prob": 0.0,
+      "start": 1209.0,
+      "text": "在哪里见过你"
+    },
+    {
+      "avg_logprob": -0.757578,
+      "compression_ratio": 0.666667,
+      "end": 1214.0,
+      "no_speech_prob": 0.0,
+      "start": 1210.0,
+      "text": "我一时想不清"
+    },
+    {
+      "avg_logprob": -0.589529,
+      "compression_ratio": 0.666667,
+      "end": 1269.98,
+      "no_speech_prob": 0.0,
+      "start": 1240.0,
+      "text": "我一时想不清"
+    },
+    {
+      "avg_logprob": -0.193814,
+      "compression_ratio": 0.989691,
+      "end": 1288.48,
+      "no_speech_prob": 0.0,
+      "start": 1270.0,
+      "text": "好 时间到了"
+    },
+    {
+      "avg_logprob": -0.193814,
+      "compression_ratio": 0.989691,
+      "end": 1291.9,
+      "no_speech_prob": 0.0,
+      "start": 1288.48,
+      "text": "尊敬的战友们好"
+    },
+    {
+      "avg_logprob": -0.193814,
+      "compression_ratio": 0.989691,
+      "end": 1295.28,
+      "no_speech_prob": 0.0,
+      "start": 1291.9,
+      "text": "14亿新中国联邦的同胞们好"
+    },
+    {
+      "avg_logprob": -0.193814,
+      "compression_ratio": 0.989691,
+      "end": 1297.08,
+      "no_speech_prob": 0.0,
+      "start": 1295.28,
+      "text": "全世界的朋友们好"
+    },
+    {
+      "avg_logprob": -0.144161,
+      "compression_ratio": 0.918367,
+      "end": 1301.04,
+      "no_speech_prob": 0.0,
+      "start": 1297.08,
+      "text": "今天是2022年1月25号"
+    },
+    {
+      "avg_logprob": -0.144161,
+      "compression_ratio": 0.918367,
+      "end": 1305.16,
+      "no_speech_prob": 0.0,
+      "start": 1301.04,
+      "text": "郭文贵代表新中国联邦"
+    },
+    {
+      "avg_logprob": -0.144161,
+      "compression_ratio": 0.918367,
+      "end": 1311.08,
+      "no_speech_prob": 0.0,
+      "start": 1305.16,
+      "text": "和14亿新中国的同胞们"
+    },
+    {
+      "avg_logprob": -0.144161,
+      "compression_ratio": 0.918367,
+      "end": 1312.68,
+      "no_speech_prob": 0.0,
+      "start": 1311.08,
+      "text": "以及"
+    },
+    {
+      "avg_logprob": -0.265594,
+      "compression_ratio": 0.804878,
+      "end": 1318.64,
+      "no_speech_prob": 0.0,
+      "start": 1312.68,
+      "text": "我们现在正在为世界正义"
+    },
+    {
+      "avg_logprob": -0.242812,
+      "compression_ratio": 0.857143,
+      "end": 1320.6,
+      "no_speech_prob": 0.0,
+      "start": 1318.64,
+      "text": "铲除邪恶"
+    },
+    {
+      "avg_logprob": -0.242812,
+      "compression_ratio": 0.857143,
+      "end": 1325.8,
+      "no_speech_prob": 0.0,
+      "start": 1320.6,
+      "text": "铲除魔鬼的这些英雄勇士们"
+    },
+    {
+      "avg_logprob": -0.303276,
+      "compression_ratio": 1.267857,
+      "end": 1329.76,
+      "no_speech_prob": 0.0,
+      "start": 1325.8,
+      "text": "在这里有重大的公告"
+    },
+    {
+      "avg_logprob": -0.303276,
+      "compression_ratio": 1.267857,
+      "end": 1332.76,
+      "no_speech_prob": 0.0,
+      "start": 1329.76,
+      "text": "现在请我们农场的兄弟姐妹们"
+    },
+    {
+      "avg_logprob": -0.303276,
+      "compression_ratio": 1.267857,
+      "end": 1333.88,
+      "no_speech_prob": 0.0,
+      "start": 1332.76,
+      "text": "懂英语的"
+    },
+    {
+      "avg_logprob": -0.303276,
+      "compression_ratio": 1.267857,
+      "end": 1334.76,
+      "no_speech_prob": 0.0,
+      "start": 1333.88,
+      "text": "英语好的"
+    },
+    {
+      "avg_logprob": -0.303276,
+      "compression_ratio": 1.267857,
+      "end": 1335.84,
+      "no_speech_prob": 0.0,
+      "start": 1334.76,
+      "text": "和各种语言好的"
+    },
+    {
+      "avg_logprob": -0.303276,
+      "compression_ratio": 1.267857,
+      "end": 1336.76,
+      "no_speech_prob": 0.0,
+      "start": 1335.84,
+      "text": "日语的"
+    },
+    {
+      "avg_logprob": -0.303276,
+      "compression_ratio": 1.267857,
+      "end": 1337.76,
+      "no_speech_prob": 0.0,
+      "start": 1336.76,
+      "text": "德语的"
+    },
+    {
+      "avg_logprob": -0.303276,
+      "compression_ratio": 1.267857,
+      "end": 1338.76,
+      "no_speech_prob": 0.0,
+      "start": 1337.76,
+      "text": "请做好"
+    },
+    {
+      "avg_logprob": -0.303276,
+      "compression_ratio": 1.267857,
+      "end": 1341.76,
+      "no_speech_prob": 0.0,
+      "start": 1338.76,
+      "text": "请把下面这段正式的公告"
+    },
+    {
+      "avg_logprob": -0.303276,
+      "compression_ratio": 1.267857,
+      "end": 1343.76,
+      "no_speech_prob": 0.0,
+      "start": 1341.76,
+      "text": "迅速地传发到全世界上去"
+    },
+    {
+      "avg_logprob": -0.61572,
+      "compression_ratio": 0.75,
+      "end": 1349.72,
+      "no_speech_prob": 0.0,
+      "start": 1343.76,
+      "text": "本人 郭文贵 又名 Miles Gow"
+    },
+    {
+      "avg_logprob": -0.260809,
+      "compression_ratio": 1.007812,
+      "end": 1352.68,
+      "no_speech_prob": 0.0,
+      "start": 1349.72,
+      "text": "在我们过去的五年来"
+    },
+    {
+      "avg_logprob": -0.260809,
+      "compression_ratio": 1.007812,
+      "end": 1358.68,
+      "no_speech_prob": 0.0,
+      "start": 1352.68,
+      "text": "一直致力于黑客当的CCP"
+    },
+    {
+      "avg_logprob": -0.260809,
+      "compression_ratio": 1.007812,
+      "end": 1367.04,
+      "no_speech_prob": 0.0,
+      "start": 1358.68,
+      "text": "给中国带来一个一人一票的选举的民主法治的政权制度"
+    },
+    {
+      "avg_logprob": -0.167716,
+      "compression_ratio": 1.125,
+      "end": 1381.0,
+      "no_speech_prob": 0.0,
+      "start": 1367.04,
+      "text": "致力于利用我们亲身经历和掌握的共产党在新疆的种族大屠杀"
+    },
+    {
+      "avg_logprob": -0.167716,
+      "compression_ratio": 1.125,
+      "end": 1390.0,
+      "no_speech_prob": 0.0,
+      "start": 1381.0,
+      "text": "西藏的种族大屠杀以及计划当时在香港现在已经发生的"
+    },
+    {
+      "avg_logprob": -0.154317,
+      "compression_ratio": 1.23913,
+      "end": 1395.0,
+      "no_speech_prob": 0.0,
+      "start": 1390.0,
+      "text": "严重侵犯人权和大屠杀行动"
+    },
+    {
+      "avg_logprob": -0.154317,
+      "compression_ratio": 1.23913,
+      "end": 1401.0,
+      "no_speech_prob": 0.0,
+      "start": 1395.0,
+      "text": "以及我们在五年前和四年前分别的警告西方"
+    },
+    {
+      "avg_logprob": -0.154317,
+      "compression_ratio": 1.23913,
+      "end": 1403.0,
+      "no_speech_prob": 0.0,
+      "start": 1401.0,
+      "text": "共产党正有计划"
+    },
+    {
+      "avg_logprob": -0.154317,
+      "compression_ratio": 1.23913,
+      "end": 1408.0,
+      "no_speech_prob": 0.0,
+      "start": 1403.0,
+      "text": "有组织的对西方文明的世界"
+    },
+    {
+      "avg_logprob": -0.154317,
+      "compression_ratio": 1.23913,
+      "end": 1412.0,
+      "no_speech_prob": 0.0,
+      "start": 1408.0,
+      "text": "也就是西方的民主法治"
+    },
+    {
+      "avg_logprob": -0.154317,
+      "compression_ratio": 1.23913,
+      "end": 1417.0,
+      "no_speech_prob": 0.0,
+      "start": 1412.0,
+      "text": "由民主法治制度社会进行猛烈的攻击"
+    },
+    {
+      "avg_logprob": -0.084176,
+      "compression_ratio": 1.227513,
+      "end": 1422.0,
+      "no_speech_prob": 0.0,
+      "start": 1417.0,
+      "text": "甚至释放化学病毒 生化病毒"
+    },
+    {
+      "avg_logprob": -0.084176,
+      "compression_ratio": 1.227513,
+      "end": 1424.0,
+      "no_speech_prob": 0.0,
+      "start": 1422.0,
+      "text": "黑暗即将来临到世界"
+    },
+    {
+      "avg_logprob": -0.084176,
+      "compression_ratio": 1.227513,
+      "end": 1428.0,
+      "no_speech_prob": 0.0,
+      "start": 1424.0,
+      "text": "这是一个独裁的世界和独裁的政权"
+    },
+    {
+      "avg_logprob": -0.084176,
+      "compression_ratio": 1.227513,
+      "end": 1435.0,
+      "no_speech_prob": 0.0,
+      "start": 1428.0,
+      "text": "和西方的民主的法治的追求自由的信仰自由的人权"
+    },
+    {
+      "avg_logprob": -0.084176,
+      "compression_ratio": 1.227513,
+      "end": 1438.0,
+      "no_speech_prob": 0.0,
+      "start": 1435.0,
+      "text": "一场决战"
+    },
+    {
+      "avg_logprob": -0.084176,
+      "compression_ratio": 1.227513,
+      "end": 1446.0,
+      "no_speech_prob": 0.0,
+      "start": 1438.0,
+      "text": "同时我们在2019年12月份就警告西方"
+    },
+    {
+      "avg_logprob": -0.100971,
+      "compression_ratio": 1.182243,
+      "end": 1451.0,
+      "no_speech_prob": 0.0,
+      "start": 1446.0,
+      "text": "并且同时在2019年的5月份香港运动前夕警告西方"
+    },
+    {
+      "avg_logprob": -0.100971,
+      "compression_ratio": 1.182243,
+      "end": 1459.0,
+      "no_speech_prob": 0.0,
+      "start": 1451.0,
+      "text": "由于共产党习近平王岐山的这样的独裁政府"
+    },
+    {
+      "avg_logprob": -0.100971,
+      "compression_ratio": 1.182243,
+      "end": 1463.0,
+      "no_speech_prob": 0.0,
+      "start": 1459.0,
+      "text": "预领导全世界征服全世界"
+    },
+    {
+      "avg_logprob": -0.100971,
+      "compression_ratio": 1.182243,
+      "end": 1469.0,
+      "no_speech_prob": 0.0,
+      "start": 1463.0,
+      "text": "正在试图在香港和世界使用化学和生化武器"
+    },
+    {
+      "avg_logprob": -0.100971,
+      "compression_ratio": 1.182243,
+      "end": 1475.0,
+      "no_speech_prob": 0.0,
+      "start": 1469.0,
+      "text": "2020年1月份我们最早在直播中提出"
+    },
+    {
+      "avg_logprob": -0.105107,
+      "compression_ratio": 1.055556,
+      "end": 1485.0,
+      "no_speech_prob": 0.0,
+      "start": 1475.0,
+      "text": "香港运动的本质是对世界和文明法治进行挑战的开始"
+    },
+    {
+      "avg_logprob": -0.105107,
+      "compression_ratio": 1.055556,
+      "end": 1490.0,
+      "no_speech_prob": 0.0,
+      "start": 1485.0,
+      "text": "并且很有可能使用生化和化学武器"
+    },
+    {
+      "avg_logprob": -0.105107,
+      "compression_ratio": 1.055556,
+      "end": 1494.0,
+      "no_speech_prob": 0.0,
+      "start": 1490.0,
+      "text": "2020年的2月份我们向世界宣布"
+    },
+    {
+      "avg_logprob": -0.111163,
+      "compression_ratio": 1.021277,
+      "end": 1497.0,
+      "no_speech_prob": 0.0,
+      "start": 1494.0,
+      "text": "由于我们掌握和过去亲身的经历"
+    },
+    {
+      "avg_logprob": -0.111163,
+      "compression_ratio": 1.021277,
+      "end": 1500.0,
+      "no_speech_prob": 0.0,
+      "start": 1497.0,
+      "text": "共产党的邪恶和共产党过去一系列的计划"
+    },
+    {
+      "avg_logprob": -0.109888,
+      "compression_ratio": 1.0,
+      "end": 1504.0,
+      "no_speech_prob": 0.0,
+      "start": 1500.0,
+      "text": "并且由我们无数个在中国国内体制内冒着生命危险"
+    },
+    {
+      "avg_logprob": -0.109888,
+      "compression_ratio": 1.0,
+      "end": 1506.0,
+      "no_speech_prob": 0.0,
+      "start": 1504.0,
+      "text": "向我们提供的情报的同仁们和战友们"
+    },
+    {
+      "avg_logprob": -0.261347,
+      "compression_ratio": 1.440789,
+      "end": 1512.0,
+      "no_speech_prob": 0.0,
+      "start": 1506.0,
+      "text": "告诉我们这次的2019年所谓的COVID-19冠状病毒是共产党的生化武器"
+    },
+    {
+      "avg_logprob": -0.261347,
+      "compression_ratio": 1.440789,
+      "end": 1514.0,
+      "no_speech_prob": 0.0,
+      "start": 1512.0,
+      "text": "而生化武器并不是他们的主要目的"
+    },
+    {
+      "avg_logprob": -0.261347,
+      "compression_ratio": 1.440789,
+      "end": 1516.0,
+      "no_speech_prob": 0.0,
+      "start": 1514.0,
+      "text": "最重要的是用生化武器"
+    },
+    {
+      "avg_logprob": -0.261347,
+      "compression_ratio": 1.440789,
+      "end": 1518.0,
+      "no_speech_prob": 0.0,
+      "start": 1516.0,
+      "text": "用生化武器的生化武器"
+    },
+    {
+      "avg_logprob": -0.261347,
+      "compression_ratio": 1.440789,
+      "end": 1520.0,
+      "no_speech_prob": 0.0,
+      "start": 1518.0,
+      "text": "用生化武器的生化武器"
+    },
+    {
+      "avg_logprob": -0.167976,
+      "compression_ratio": 1.986726,
+      "end": 1522.0,
+      "no_speech_prob": 0.0,
+      "start": 1520.0,
+      "text": "并且在2019年冠状病毒出来之时"
+    },
+    {
+      "avg_logprob": -0.167976,
+      "compression_ratio": 1.986726,
+      "end": 1524.0,
+      "no_speech_prob": 0.0,
+      "start": 1522.0,
+      "text": "共产党已经在全世界提前勾满了"
+    },
+    {
+      "avg_logprob": -0.167976,
+      "compression_ratio": 1.986726,
+      "end": 1526.0,
+      "no_speech_prob": 0.0,
+      "start": 1524.0,
+      "text": "这次的2019年所谓的COVID-19冠状病毒"
+    },
+    {
+      "avg_logprob": -0.167976,
+      "compression_ratio": 1.986726,
+      "end": 1528.0,
+      "no_speech_prob": 0.0,
+      "start": 1526.0,
+      "text": "是共产党的生化武器"
+    },
+    {
+      "avg_logprob": -0.167976,
+      "compression_ratio": 1.986726,
+      "end": 1532.0,
+      "no_speech_prob": 0.0,
+      "start": 1528.0,
+      "text": "而生化武器并不是他们的主要目的"
+    },
+    {
+      "avg_logprob": -0.167976,
+      "compression_ratio": 1.986726,
+      "end": 1534.0,
+      "no_speech_prob": 0.0,
+      "start": 1532.0,
+      "text": "而生化武器并不是他们的主要目的"
+    },
+    {
+      "avg_logprob": -0.167976,
+      "compression_ratio": 1.986726,
+      "end": 1536.0,
+      "no_speech_prob": 0.0,
+      "start": 1534.0,
+      "text": "而生化武器并不是他们的主要目的"
+    },
+    {
+      "avg_logprob": -0.167976,
+      "compression_ratio": 1.986726,
+      "end": 1538.0,
+      "no_speech_prob": 0.0,
+      "start": 1536.0,
+      "text": "而生化武器并不是他们的主要目的"
+    },
+    {
+      "avg_logprob": -0.167976,
+      "compression_ratio": 1.986726,
+      "end": 1540.0,
+      "no_speech_prob": 0.0,
+      "start": 1538.0,
+      "text": "最重要的是用生化武器推动疫苗政策"
+    },
+    {
+      "avg_logprob": -0.167976,
+      "compression_ratio": 1.986726,
+      "end": 1542.0,
+      "no_speech_prob": 0.0,
+      "start": 1540.0,
+      "text": "疫苗才是真正的灾难"
+    },
+    {
+      "avg_logprob": -0.167976,
+      "compression_ratio": 1.986726,
+      "end": 1546.0,
+      "no_speech_prob": 0.0,
+      "start": 1542.0,
+      "text": "并且在2019年冠状病毒出来之时"
+    },
+    {
+      "avg_logprob": -0.106926,
+      "compression_ratio": 1.13615,
+      "end": 1551.0,
+      "no_speech_prob": 0.0,
+      "start": 1546.0,
+      "text": "共产党已经在全世界提前勾满了大量的PPE"
+    },
+    {
+      "avg_logprob": -0.106926,
+      "compression_ratio": 1.13615,
+      "end": 1553.0,
+      "no_speech_prob": 0.0,
+      "start": 1551.0,
+      "text": "口罩医疗设备"
+    },
+    {
+      "avg_logprob": -0.106926,
+      "compression_ratio": 1.13615,
+      "end": 1557.0,
+      "no_speech_prob": 0.0,
+      "start": 1553.0,
+      "text": "阻止了冠状病毒在世界流行时"
+    },
+    {
+      "avg_logprob": -0.106926,
+      "compression_ratio": 1.13615,
+      "end": 1564.0,
+      "no_speech_prob": 0.0,
+      "start": 1557.0,
+      "text": "各国政府可以使本国公民免于COVID的伤害"
+    },
+    {
+      "avg_logprob": -0.106926,
+      "compression_ratio": 1.13615,
+      "end": 1565.0,
+      "no_speech_prob": 0.0,
+      "start": 1564.0,
+      "text": "甚至是死亡"
+    },
+    {
+      "avg_logprob": -0.106926,
+      "compression_ratio": 1.13615,
+      "end": 1572.0,
+      "no_speech_prob": 0.0,
+      "start": 1565.0,
+      "text": "这是第二次的有计划的对冠状病毒患者的大屠杀"
+    },
+    {
+      "avg_logprob": -0.133423,
+      "compression_ratio": 1.073171,
+      "end": 1582.0,
+      "no_speech_prob": 0.0,
+      "start": 1572.0,
+      "text": "随即全世界根据我们过去五年的爆料和推出的各种情报"
+    },
+    {
+      "avg_logprob": -0.133423,
+      "compression_ratio": 1.073171,
+      "end": 1593.0,
+      "no_speech_prob": 0.0,
+      "start": 1582.0,
+      "text": "大量的掌握了共产党在全世界建立的网络情报"
+    },
+    {
+      "avg_logprob": -0.065683,
+      "compression_ratio": 1.109589,
+      "end": 1603.0,
+      "no_speech_prob": 0.0,
+      "start": 1593.0,
+      "text": "以及在各个领域包括经济网络各种领域的对西方的渗透和伤害"
+    },
+    {
+      "avg_logprob": -0.065683,
+      "compression_ratio": 1.109589,
+      "end": 1611.0,
+      "no_speech_prob": 0.0,
+      "start": 1603.0,
+      "text": "完全不尊重国与国之间和联合国公约所制定的各种法律和规则"
+    },
+    {
+      "avg_logprob": -0.10317,
+      "compression_ratio": 1.280899,
+      "end": 1617.0,
+      "no_speech_prob": 0.0,
+      "start": 1611.0,
+      "text": "在我们向全世界公布了中国的海航"
+    },
+    {
+      "avg_logprob": -0.10317,
+      "compression_ratio": 1.280899,
+      "end": 1622.0,
+      "no_speech_prob": 0.0,
+      "start": 1617.0,
+      "text": "海航本质的后边老板是中国的当时最有事件"
+    },
+    {
+      "avg_logprob": -0.10317,
+      "compression_ratio": 1.280899,
+      "end": 1625.0,
+      "no_speech_prob": 0.0,
+      "start": 1622.0,
+      "text": "中国中央纪律反腐委员会主席"
+    },
+    {
+      "avg_logprob": -0.10317,
+      "compression_ratio": 1.280899,
+      "end": 1633.0,
+      "no_speech_prob": 0.0,
+      "start": 1625.0,
+      "text": "中国的二号人物修改宪法后终生连任的副主席王岐山是真正的后台"
+    },
+    {
+      "avg_logprob": -0.066327,
+      "compression_ratio": 1.053435,
+      "end": 1641.0,
+      "no_speech_prob": 0.0,
+      "start": 1633.0,
+      "text": "以及后来我们一系列爆出了阿里巴巴马云以及中国多个企业"
+    },
+    {
+      "avg_logprob": -0.066327,
+      "compression_ratio": 1.053435,
+      "end": 1647.0,
+      "no_speech_prob": 0.0,
+      "start": 1641.0,
+      "text": "打着私人企业的名号在西方经济各方面的渗透"
+    },
+    {
+      "avg_logprob": -0.089406,
+      "compression_ratio": 1.209677,
+      "end": 1655.0,
+      "no_speech_prob": 0.0,
+      "start": 1647.0,
+      "text": "回顾过去的五年新中国联邦人在世界和各国政府"
+    },
+    {
+      "avg_logprob": -0.089406,
+      "compression_ratio": 1.209677,
+      "end": 1665.0,
+      "no_speech_prob": 0.0,
+      "start": 1655.0,
+      "text": "以及民间的各种的公益机构和人权机构建立了秘密的安全的可信赖的关系"
+    },
+    {
+      "avg_logprob": -0.089406,
+      "compression_ratio": 1.209677,
+      "end": 1671.0,
+      "no_speech_prob": 0.0,
+      "start": 1665.0,
+      "text": "由于共产党的势力的邪恶之巨大对世界的渗透之深"
+    },
+    {
+      "avg_logprob": -0.084067,
+      "compression_ratio": 1.355932,
+      "end": 1679.0,
+      "no_speech_prob": 0.0,
+      "start": 1671.0,
+      "text": "我们和各国政府以及各种机构合作之时必须要回避"
+    },
+    {
+      "avg_logprob": -0.084067,
+      "compression_ratio": 1.355932,
+      "end": 1687.0,
+      "no_speech_prob": 0.0,
+      "start": 1679.0,
+      "text": "以及必须要考虑到对方的安全和信息情报的安全和相关人的安全的要求"
+    },
+    {
+      "avg_logprob": -0.084067,
+      "compression_ratio": 1.355932,
+      "end": 1691.0,
+      "no_speech_prob": 0.0,
+      "start": 1688.0,
+      "text": "我们必须考虑到种种方面"
+    },
+    {
+      "avg_logprob": -0.084067,
+      "compression_ratio": 1.355932,
+      "end": 1697.0,
+      "no_speech_prob": 0.0,
+      "start": 1692.0,
+      "text": "我们并不希望在任何这样的行动当中"
+    },
+    {
+      "avg_logprob": -0.098497,
+      "compression_ratio": 1.215247,
+      "end": 1703.0,
+      "no_speech_prob": 0.0,
+      "start": 1697.0,
+      "text": "消灭共产党的这场史无前例的巨大的伟大的正义运动当中"
+    },
+    {
+      "avg_logprob": -0.098497,
+      "compression_ratio": 1.215247,
+      "end": 1705.0,
+      "no_speech_prob": 0.0,
+      "start": 1703.0,
+      "text": "获得任何利益"
+    },
+    {
+      "avg_logprob": -0.098497,
+      "compression_ratio": 1.215247,
+      "end": 1707.0,
+      "no_speech_prob": 0.0,
+      "start": 1705.0,
+      "text": "任何名头"
+    },
+    {
+      "avg_logprob": -0.098497,
+      "compression_ratio": 1.215247,
+      "end": 1709.0,
+      "no_speech_prob": 0.0,
+      "start": 1707.0,
+      "text": "参与任何政治"
+    },
+    {
+      "avg_logprob": -0.098497,
+      "compression_ratio": 1.215247,
+      "end": 1713.0,
+      "no_speech_prob": 0.0,
+      "start": 1711.0,
+      "text": "2020年"
+    },
+    {
+      "avg_logprob": -0.098497,
+      "compression_ratio": 1.215247,
+      "end": 1717.0,
+      "no_speech_prob": 0.0,
+      "start": 1713.0,
+      "text": "我非常荣幸的和我们中国足球英雄"
+    },
+    {
+      "avg_logprob": -0.098497,
+      "compression_ratio": 1.215247,
+      "end": 1719.0,
+      "no_speech_prob": 0.0,
+      "start": 1717.0,
+      "text": "世界冠军"
+    },
+    {
+      "avg_logprob": -0.098497,
+      "compression_ratio": 1.215247,
+      "end": 1721.0,
+      "no_speech_prob": 0.0,
+      "start": 1719.0,
+      "text": "叶昭影女士"
+    },
+    {
+      "avg_logprob": -0.098497,
+      "compression_ratio": 1.215247,
+      "end": 1726.0,
+      "no_speech_prob": 0.0,
+      "start": 1721.0,
+      "text": "还有美国我们的新中国联邦的合作者史蒂夫班农先生"
+    },
+    {
+      "avg_logprob": -0.082567,
+      "compression_ratio": 1.208333,
+      "end": 1732.0,
+      "no_speech_prob": 0.0,
+      "start": 1726.0,
+      "text": "以及全球的亿万的新中国联邦的战友们"
+    },
+    {
+      "avg_logprob": -0.082567,
+      "compression_ratio": 1.208333,
+      "end": 1736.0,
+      "no_speech_prob": 0.0,
+      "start": 1732.0,
+      "text": "我们的同胞们同仁们一起在纽约"
+    },
+    {
+      "avg_logprob": -0.082567,
+      "compression_ratio": 1.208333,
+      "end": 1740.0,
+      "no_speech_prob": 0.0,
+      "start": 1736.0,
+      "text": "在6月的4号宣布了建立新中国联邦"
+    },
+    {
+      "avg_logprob": -0.082567,
+      "compression_ratio": 1.208333,
+      "end": 1747.0,
+      "no_speech_prob": 0.0,
+      "start": 1740.0,
+      "text": "在这个之前和之后都获得了很多国家和组织的支持"
+    },
+    {
+      "avg_logprob": -0.175018,
+      "compression_ratio": 1.015748,
+      "end": 1749.0,
+      "no_speech_prob": 0.0,
+      "start": 1747.0,
+      "text": "在2020年6月4号后"
+    },
+    {
+      "avg_logprob": -0.175018,
+      "compression_ratio": 1.015748,
+      "end": 1751.0,
+      "no_speech_prob": 0.0,
+      "start": 1749.0,
+      "text": "我们一直紧密的和各国政府合法的"
+    },
+    {
+      "avg_logprob": -0.175018,
+      "compression_ratio": 1.015748,
+      "end": 1753.0,
+      "no_speech_prob": 0.0,
+      "start": 1751.0,
+      "text": "合法的"
+    },
+    {
+      "avg_logprob": -0.175018,
+      "compression_ratio": 1.015748,
+      "end": 1755.0,
+      "no_speech_prob": 0.0,
+      "start": 1753.0,
+      "text": "依法的"
+    },
+    {
+      "avg_logprob": -0.175018,
+      "compression_ratio": 1.015748,
+      "end": 1757.0,
+      "no_speech_prob": 0.0,
+      "start": 1755.0,
+      "text": "智慧的"
+    },
+    {
+      "avg_logprob": -0.175018,
+      "compression_ratio": 1.015748,
+      "end": 1759.0,
+      "no_speech_prob": 0.0,
+      "start": 1757.0,
+      "text": "通过各种方法"
+    },
+    {
+      "avg_logprob": -0.175018,
+      "compression_ratio": 1.015748,
+      "end": 1761.0,
+      "no_speech_prob": 0.0,
+      "start": 1759.0,
+      "text": "提供准确真实"
+    },
+    {
+      "avg_logprob": -0.082965,
+      "compression_ratio": 1.184615,
+      "end": 1763.0,
+      "no_speech_prob": 0.0,
+      "start": 1761.0,
+      "text": "及时的"
+    },
+    {
+      "avg_logprob": -0.082965,
+      "compression_ratio": 1.184615,
+      "end": 1765.0,
+      "no_speech_prob": 0.0,
+      "start": 1763.0,
+      "text": "在新疆大屠杀"
+    },
+    {
+      "avg_logprob": -0.082965,
+      "compression_ratio": 1.184615,
+      "end": 1767.0,
+      "no_speech_prob": 0.0,
+      "start": 1765.0,
+      "text": "冠状病毒这个生化武器"
+    },
+    {
+      "avg_logprob": -0.082965,
+      "compression_ratio": 1.184615,
+      "end": 1769.0,
+      "no_speech_prob": 0.0,
+      "start": 1767.0,
+      "text": "以及疫苗的和世界上的黑暗势力的勾兑"
+    },
+    {
+      "avg_logprob": -0.082965,
+      "compression_ratio": 1.184615,
+      "end": 1771.0,
+      "no_speech_prob": 0.0,
+      "start": 1769.0,
+      "text": "以及对新中国联邦人爆料革命"
+    },
+    {
+      "avg_logprob": -0.082965,
+      "compression_ratio": 1.184615,
+      "end": 1773.0,
+      "no_speech_prob": 0.0,
+      "start": 1771.0,
+      "text": "对国内的战友们"
+    },
+    {
+      "avg_logprob": -0.082965,
+      "compression_ratio": 1.184615,
+      "end": 1775.0,
+      "no_speech_prob": 0.0,
+      "start": 1773.0,
+      "text": "数以百万人的伤害"
+    },
+    {
+      "avg_logprob": -0.082965,
+      "compression_ratio": 1.184615,
+      "end": 1777.0,
+      "no_speech_prob": 0.0,
+      "start": 1775.0,
+      "text": "和人权的侵犯"
+    },
+    {
+      "avg_logprob": -0.252479,
+      "compression_ratio": 2.0,
+      "end": 1781.0,
+      "no_speech_prob": 0.0,
+      "start": 1777.0,
+      "text": "以及继续在香港、新疆、西藏等地犯下的种族大厨杀"
+    },
+    {
+      "avg_logprob": -0.252479,
+      "compression_ratio": 2.0,
+      "end": 1783.0,
+      "no_speech_prob": 0.0,
+      "start": 1781.0,
+      "text": "和侵犯人权的罪行"
+    },
+    {
+      "avg_logprob": -0.252479,
+      "compression_ratio": 2.0,
+      "end": 1785.0,
+      "no_speech_prob": 0.0,
+      "start": 1783.0,
+      "text": "和人权的罪行"
+    },
+    {
+      "avg_logprob": -0.252479,
+      "compression_ratio": 2.0,
+      "end": 1787.0,
+      "no_speech_prob": 0.0,
+      "start": 1785.0,
+      "text": "和人权的侵犯"
+    },
+    {
+      "avg_logprob": -0.252479,
+      "compression_ratio": 2.0,
+      "end": 1790.0,
+      "no_speech_prob": 0.0,
+      "start": 1787.0,
+      "text": "以及继续在香港、新疆、西藏等地犯下的种族大厨杀"
+    },
+    {
+      "avg_logprob": -0.252479,
+      "compression_ratio": 2.0,
+      "end": 1792.0,
+      "no_speech_prob": 0.0,
+      "start": 1790.0,
+      "text": "和侵犯人权的罪行"
+    },
+    {
+      "avg_logprob": -0.283779,
+      "compression_ratio": 0.896552,
+      "end": 1796.84,
+      "no_speech_prob": 0.0,
+      "start": 1792.0,
+      "text": "香港、新疆、西藏等地犯下的"
+    },
+    {
+      "avg_logprob": -0.283779,
+      "compression_ratio": 0.896552,
+      "end": 1799.88,
+      "no_speech_prob": 0.0,
+      "start": 1797.1,
+      "text": "種族大駐殺和侵犯人權的罪行"
+    }
+  ],
+  "text": "在哪里 在哪里见过你你的笑容这样珍惜我一时想不起啊 在梦里在哪里 在哪里见过你你的笑容这样珍惜我一时想不起啊 在梦里梦里 梦里见过你甜蜜笑得多甜蜜是你 是你 梦见的就是你在哪里 在哪里见过你在哪里见过你你的笑容这样珍惜我一时想不起啊 在梦里我一时想不起我一时想不起我一时想不起我一时想不起我一时想不起甜蜜蜜蜜你笑得甜蜜蜜好像花儿开在春风里开在春风里在哪里 里在哪里 在哪里在哪里见过你在哪里见过你在哪里见过你在哪里见过你在哪里见过你在哪里见过你在哪里见过你在哪里见过你在哪里见过你你在哪里见过你我一时想不起啊 在梦里梦里 梦里见过你甜蜜笑得多甜蜜是你 是你梦见的就是你在哪里 在哪里见过你你的笑容这样熟悉我一时想不起啊 在梦里在哪里 在哪里见过你你的笑容这样熟悉我一时想不起我一时想不起啊 在梦里我一时想不起啊 在梦里梦里 梦里见过你梦里 梦里 梦里见过你甜蜜笑得多甜蜜是你 是你是你 是你梦见的就是你是你 是你是你 是你是你 是你是你 梦见的就是你是你 是你是你 梦见的就是你是你 是你是你 梦见的就是你在哪里 在哪里在哪里见过你我一时想不清我一时想不清好 时间到了尊敬的战友们好14亿新中国联邦的同胞们好全世界的朋友们好今天是2022年1月25号郭文贵代表新中国联邦和14亿新中国的同胞们以及我们现在正在为世界正义铲除邪恶铲除魔鬼的这些英雄勇士们在这里有重大的公告现在请我们农场的兄弟姐妹们懂英语的英语好的和各种语言好的日语的德语的请做好请把下面这段正式的公告迅速地传发到全世界上去本人 郭文贵 又名 Miles Gow在我们过去的五年来一直致力于黑客当的CCP给中国带来一个一人一票的选举的民主法治的政权制度致力于利用我们亲身经历和掌握的共产党在新疆的种族大屠杀西藏的种族大屠杀以及计划当时在香港现在已经发生的严重侵犯人权和大屠杀行动以及我们在五年前和四年前分别的警告西方共产党正有计划有组织的对西方文明的世界也就是西方的民主法治由民主法治制度社会进行猛烈的攻击甚至释放化学病毒 生化病毒黑暗即将来临到世界这是一个独裁的世界和独裁的政权和西方的民主的法治的追求自由的信仰自由的人权一场决战同时我们在2019年12月份就警告西方并且同时在2019年的5月份香港运动前夕警告西方由于共产党习近平王岐山的这样的独裁政府预领导全世界征服全世界正在试图在香港和世界使用化学和生化武器2020年1月份我们最早在直播中提出香港运动的本质是对世界和文明法治进行挑战的开始并且很有可能使用生化和化学武器2020年的2月份我们向世界宣布由于我们掌握和过去亲身的经历共产党的邪恶和共产党过去一系列的计划并且由我们无数个在中国国内体制内冒着生命危险向我们提供的情报的同仁们和战友们告诉我们这次的2019年所谓的COVID-19冠状病毒是共产党的生化武器而生化武器并不是他们的主要目的最重要的是用生化武器用生化武器的生化武器用生化武器的生化武器并且在2019年冠状病毒出来之时共产党已经在全世界提前勾满了这次的2019年所谓的COVID-19冠状病毒是共产党的生化武器而生化武器并不是他们的主要目的而生化武器并不是他们的主要目的而生化武器并不是他们的主要目的而生化武器并不是他们的主要目的最重要的是用生化武器推动疫苗政策疫苗才是真正的灾难并且在2019年冠状病毒出来之时共产党已经在全世界提前勾满了大量的PPE口罩医疗设备阻止了冠状病毒在世界流行时各国政府可以使本国公民免于COVID的伤害甚至是死亡这是第二次的有计划的对冠状病毒患者的大屠杀随即全世界根据我们过去五年的爆料和推出的各种情报大量的掌握了共产党在全世界建立的网络情报以及在各个领域包括经济网络各种领域的对西方的渗透和伤害完全不尊重国与国之间和联合国公约所制定的各种法律和规则在我们向全世界公布了中国的海航海航本质的后边老板是中国的当时最有事件中国中央纪律反腐委员会主席中国的二号人物修改宪法后终生连任的副主席王岐山是真正的后台以及后来我们一系列爆出了阿里巴巴马云以及中国多个企业打着私人企业的名号在西方经济各方面的渗透回顾过去的五年新中国联邦人在世界和各国政府以及民间的各种的公益机构和人权机构建立了秘密的安全的可信赖的关系由于共产党的势力的邪恶之巨大对世界的渗透之深我们和各国政府以及各种机构合作之时必须要回避以及必须要考虑到对方的安全和信息情报的安全和相关人的安全的要求我们必须考虑到种种方面我们并不希望在任何这样的行动当中消灭共产党的这场史无前例的巨大的伟大的正义运动当中获得任何利益任何名头参与任何政治2020年我非常荣幸的和我们中国足球英雄世界冠军叶昭影女士还有美国我们的新中国联邦的合作者史蒂夫班农先生以及全球的亿万的新中国联邦的战友们我们的同胞们同仁们一起在纽约在6月的4号宣布了建立新中国联邦在这个之前和之后都获得了很多国家和组织的支持在2020年6月4号后我们一直紧密的和各国政府合法的合法的依法的智慧的通过各种方法提供准确真实及时的在新疆大屠杀冠状病毒这个生化武器以及疫苗的和世界上的黑暗势力的勾兑以及对新中国联邦人爆料革命对国内的战友们数以百万人的伤害和人权的侵犯以及继续在香港、新疆、西藏等地犯下的种族大厨杀和侵犯人权的罪行和人权的罪行和人权的侵犯以及继续在香港、新疆、西藏等地犯下的种族大厨杀和侵犯人权的罪行香港、新疆、西藏等地犯下的種族大駐殺和侵犯人權的罪行"
+}

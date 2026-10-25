@@ -1,0 +1,96 @@
+{
+  "chunk_audio_sha256": "c04b981dcb1e980f73407eabf7cd8dd77ad6303b0a9cafb0eb1a8e2f19dd00cd",
+  "chunk_index": 9,
+  "completed_at": "2026-10-25T01:38:19Z",
+  "language": "zh",
+  "live_id": "LIVE_20220125_001",
+  "media_committed_to_git": false,
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "offset_sec": 8100,
+  "paid_api_used": false,
+  "processing_location": "github-hosted-macos-arm64",
+  "schema_version": "cloud-asr-chunk-v1",
+  "segments": [
+    {
+      "avg_logprob": -1.171029,
+      "compression_ratio": 0.428571,
+      "end": 8101.04,
+      "no_speech_prob": 0.0,
+      "start": 8100.0,
+      "text": "拜拜"
+    },
+    {
+      "avg_logprob": -0.284927,
+      "compression_ratio": 0.694444,
+      "end": 8159.98,
+      "no_speech_prob": 0.0,
+      "start": 8130.0,
+      "text": "字幕志愿者 李宗盛"
+    },
+    {
+      "avg_logprob": -0.127753,
+      "compression_ratio": 0.694444,
+      "end": 8189.98,
+      "no_speech_prob": 0.0,
+      "start": 8160.0,
+      "text": "字幕志愿者 李宗盛"
+    },
+    {
+      "avg_logprob": -0.064653,
+      "compression_ratio": 0.694444,
+      "end": 8219.98,
+      "no_speech_prob": 0.0,
+      "start": 8190.0,
+      "text": "字幕志愿者 李宗盛"
+    },
+    {
+      "avg_logprob": -0.054049,
+      "compression_ratio": 0.694444,
+      "end": 8249.96,
+      "no_speech_prob": 0.0,
+      "start": 8219.98,
+      "text": "字幕志愿者 李宗盛"
+    },
+    {
+      "avg_logprob": -0.085257,
+      "compression_ratio": 0.694444,
+      "end": 8279.94,
+      "no_speech_prob": 0.0,
+      "start": 8249.96,
+      "text": "字幕志愿者 李宗盛"
+    },
+    {
+      "avg_logprob": -0.061829,
+      "compression_ratio": 0.694444,
+      "end": 8309.92,
+      "no_speech_prob": 0.0,
+      "start": 8279.94,
+      "text": "字幕志愿者 李宗盛"
+    },
+    {
+      "avg_logprob": -0.067273,
+      "compression_ratio": 0.694444,
+      "end": 8339.9,
+      "no_speech_prob": 0.0,
+      "start": 8309.92,
+      "text": "字幕志愿者 李宗盛"
+    },
+    {
+      "avg_logprob": -0.041057,
+      "compression_ratio": 0.694444,
+      "end": 8369.88,
+      "no_speech_prob": 0.0,
+      "start": 8339.9,
+      "text": "字幕志愿者 李宗盛"
+    },
+    {
+      "avg_logprob": -0.109818,
+      "compression_ratio": 0.694444,
+      "end": 8399.86,
+      "no_speech_prob": 0.0,
+      "start": 8369.88,
+      "text": "字幕志愿者 李宗盛"
+    }
+  ],
+  "text": "拜拜字幕志愿者 李宗盛字幕志愿者 李宗盛字幕志愿者 李宗盛字幕志愿者 李宗盛字幕志愿者 李宗盛字幕志愿者 李宗盛字幕志愿者 李宗盛字幕志愿者 李宗盛字幕志愿者 李宗盛"
+}
