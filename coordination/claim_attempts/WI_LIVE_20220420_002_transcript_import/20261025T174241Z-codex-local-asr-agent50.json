@@ -1,0 +1,16 @@
+{
+  "task_id": "WI_LIVE_20220420_002_transcript_import",
+  "live_id": "LIVE_20220420_002",
+  "agent_id": "codex-local-asr-agent50-20261023",
+  "status": "released_quality_failure",
+  "attempt_count": 2,
+  "corpus_tail": true,
+  "source_reachable": true,
+  "media_missing": false,
+  "attempts": [
+    {"audio_sha256":"865e8011e3675f08ad05c49020161d16c9018e66b425ee1acc87ff49f995257c","audio_duration_sec":553.009,"cue_count":19,"characters_per_minute":16.492,"repeated_text_ratio":1.0,"quality_score":0.3237,"download_elapsed_sec":265.188,"processing_elapsed_sec":9.07,"structured_result_elapsed_sec":275.527},
+    {"audio_sha256":"9e25911d47914e9f4d399f0572c26347ac4c8cf137efecddb343d033c8bb26ef","audio_duration_sec":553.009,"cue_count":19,"characters_per_minute":16.492,"repeated_text_ratio":1.0,"quality_score":0.3237,"structured_result_elapsed_sec":22.365}
+  ],
+  "failure_reason": "Every accepted window is the same stock-credit hallucination; no usable spoken transcript remains.",
+  "released_at": "2026-10-25T17:42:41.308480+00:00"
+}
