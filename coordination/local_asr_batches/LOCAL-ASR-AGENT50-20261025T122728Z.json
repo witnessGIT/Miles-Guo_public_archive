@@ -3,7 +3,7 @@
   "batch_id": "LOCAL-ASR-AGENT50-20261025T122728Z",
   "agent_id": "codex-local-asr-agent50-20261023",
   "created_at": "2026-10-25T12:27:28Z",
-  "status": "in_progress",
+  "status": "completed",
   "entry_mode": "work",
   "claim_protocol": "claim-protocol-v2",
   "selection_policy": "shortest known-duration eligible normal-queue items; excludes effective claims, completed transcript tasks, 24-hour retry cooldown, corpus_tail, Cloud ASR Pilot run 40192475636 explicit IDs, and unavailable media",
@@ -64,7 +64,7 @@
     "LIVE_20220318_002",
     "LIVE_20220913_002"
   ],
-  "next_live_id": "LIVE_20220913_002",
+  "next_live_id": null,
   "completed_live_ids": [
     "LIVE_20220902_001",
     "LIVE_20220406_001",
@@ -110,7 +110,8 @@
     "LIVE_20220907_002",
     "LIVE_20220430_002",
     "LIVE_20221003_001",
-    "LIVE_20220318_002"
+    "LIVE_20220318_002",
+    "LIVE_20220913_002"
   ],
   "failed_or_deferred_live_ids": [
     "LIVE_20220420_002",
@@ -118,5 +119,5 @@
     "LIVE_20230116_001",
     "LIVE_20220314_001"
   ],
-  "notes": "Fixed logical batch for sequential local MLX-Whisper transcription, cue splitting, natural segmentation, and evidence-grounded key points. Revalidate stage-specific cloud IDs and effective claims before each stage; never expand this list."
+  "notes": "Fixed logical batch completed for the normal queue: 46 videos passed all four stages and 4 quality failures remain explicitly deferred in corpus_tail. The deferred videos were not retried during ordinary-queue closeout. Revalidate stage-specific cloud IDs and effective claims before any later tail review; never expand this list."
 }
