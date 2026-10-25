@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import subprocess
 import sys
 import tempfile
 import time
@@ -30,8 +31,11 @@ def eligible(
                 raise RuntimeError(f"requested key-point task is not currently eligible: {live_id}")
             if (completed / f"{task_id}.json").exists():
                 continue
-            if claim_is_unavailable(claims / f"{task_id}.json", cooldown_hours=0):
+            claim_path = claims / f"{task_id}.json"
+            if claim_is_unavailable(claim_path, cooldown_hours=0):
                 raise RuntimeError(f"requested key-point task has an active claim: {live_id}")
+            if claim_is_unavailable(claim_path, retry_cooldown_hours):
+                continue
             values.append((task_id, live_id))
         return values[:limit]
     values: list[tuple[str, str]] = []
@@ -86,6 +90,10 @@ def main() -> int:
     parser.add_argument("--reprocess-empty", action="store_true")
     parser.add_argument("--retry-cooldown-hours", type=int, default=24)
     parser.add_argument(
+        "--item-timeout-sec", type=int, default=2700,
+        help="Maximum isolated inference time per livestream before releasing its claim",
+    )
+    parser.add_argument(
         "--live-ids", default="",
         help="Optional comma-separated eligible LIVE ids to retry explicitly",
     )
@@ -96,6 +104,8 @@ def main() -> int:
         )
     if not 0 <= args.retry_cooldown_hours <= 168:
         raise SystemExit("key-point retry cooldown must be between 0 and 168 hours")
+    if not 300 <= args.item_timeout_sec <= 7200:
+        raise SystemExit("key-point item timeout must be between 300 and 7200 seconds")
     if not 30 <= args.max_runtime_minutes <= 330:
         raise SystemExit("key-point runtime budget must be between 30 and 330 minutes")
     repo = args.repo.resolve()
@@ -144,12 +154,17 @@ def main() -> int:
                 push_with_rebase(repo)
 
             result_path = result_root / f"{live_id}.json"
-            completed = run([
-                sys.executable, "scripts/cloud_keypoint_runner.py",
-                "--repo", str(repo), "--live-id", live_id,
-                "--model", args.model, "--result", str(result_path),
-            ], repo, check=False)
-            accepted = completed.returncode == 0 and result_path.exists()
+            try:
+                completed = run([
+                    sys.executable, "scripts/cloud_keypoint_runner.py",
+                    "--repo", str(repo), "--live-id", live_id,
+                    "--model", args.model, "--result", str(result_path),
+                ], repo, check=False, timeout=args.item_timeout_sec)
+                timed_out = False
+            except subprocess.TimeoutExpired:
+                completed = None
+                timed_out = True
+            accepted = completed is not None and completed.returncode == 0 and result_path.exists()
             result = json.loads(result_path.read_text(encoding="utf-8")) if accepted else None
 
             run([sys.executable, "scripts/build_db.py"], repo)
@@ -185,11 +200,20 @@ def main() -> int:
                 success_count += 1
                 print(json.dumps({"live_id": live_id, **stats}, ensure_ascii=False))
             else:
-                error = (completed.stdout or "isolated key-point worker failed")[-2000:].strip()
+                error = (
+                    f"isolated key-point worker timed out after {args.item_timeout_sec} seconds"
+                    if timed_out
+                    else (completed.stdout or "isolated key-point worker failed")[-2000:].strip()
+                )
                 failed_count += 1
                 print(json.dumps({"live_id": live_id, "error": error}, ensure_ascii=False))
                 if not reprocessing:
-                    run([sys.executable, "scripts/next_task.py", "--release", task_id, "--agent-id", args.agent_id, "--reason", "Cloud key-point extraction failed; retained for retry"], repo)
+                    reason = (
+                        f"Cloud key-point inference timed out after {args.item_timeout_sec} seconds; retained for retry"
+                        if timed_out
+                        else "Cloud key-point extraction failed; retained for retry"
+                    )
+                    run([sys.executable, "scripts/next_task.py", "--release", task_id, "--agent-id", args.agent_id, "--reason", reason], repo)
 
             processed_count += 1
             if not stage:

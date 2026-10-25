@@ -20,6 +20,10 @@ on:
         description: Optional comma-separated eligible LIVE ids for an explicit retry
         required: false
         default: ''
+      item_timeout_sec:
+        description: Maximum isolated inference time per livestream before releasing and continuing
+        required: false
+        default: '2700'
 
 permissions:
   contents: write
@@ -70,5 +74,6 @@ jobs:
             --batch-size '${{ inputs.batch_size }}' \
             --reprocess-live-id '${{ inputs.reprocess_live_id }}' \
             --live-ids '${{ inputs.live_ids }}' \
+            --item-timeout-sec '${{ inputs.item_timeout_sec }}' \
             ${extra_arg:+"$extra_arg"} \
             --agent-id "github-actions-cloud-key-points-${GITHUB_RUN_ID}"
