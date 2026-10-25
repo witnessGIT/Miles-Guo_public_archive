@@ -1,0 +1,16 @@
+{
+  "task_id": "WI_LIVE_20230201_002_segment_split",
+  "agent_id": "codex-local-asr-agent50-20261023",
+  "completed_at": "2026-10-25T03:31:07.670713+00:00",
+  "result_commit": "932284ea3bf7e6c3124cfe458a73e4ac41ad051b",
+  "outputs": [
+    "data/current/live_segments/asr_live_20230201_002.jsonl"
+  ],
+  "validation": "7 manually reviewed citable natural topic passages from 112 machine-ASR cues; explicit schedule, attributed arrest allegations, slogan, mask/sea, financial-market predictions, claimed winner, and closing boundaries; ordered non-overlapping timestamps; SHA-256 content hashes verified; machine generated and not human corrected",
+  "workflow_mode": "continuous-worker-v2",
+  "claim_protocol": "claim-protocol-v2",
+  "entry_mode": "work",
+  "continue_after_finish": true,
+  "finish_prerequisites_revalidated": true,
+  "notes": "Task completed only after re-checking the latest repository dependency contract. Under continuous-worker-v2, refresh repository state and claim the next eligible task unless a documented stop condition applies."
+}
