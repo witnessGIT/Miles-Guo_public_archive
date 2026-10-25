@@ -1,0 +1,584 @@
+{
+  "chunk_audio_sha256": "283c9a62556774bdc2bb92ea8cf90920314bca5c2aa24cad1877a82006c621b3",
+  "chunk_index": 16,
+  "completed_at": "2026-10-25T21:39:18Z",
+  "language": "zh",
+  "live_id": "LIVE_20220317_001",
+  "media_committed_to_git": false,
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "offset_sec": 14400,
+  "paid_api_used": false,
+  "processing_location": "github-hosted-macos-arm64",
+  "schema_version": "cloud-asr-chunk-v1",
+  "segments": [
+    {
+      "avg_logprob": -0.385222,
+      "compression_ratio": 1.016949,
+      "end": 14403.8,
+      "no_speech_prob": 0.0,
+      "start": 14400.0,
+      "text": "我受尽了折磨"
+    },
+    {
+      "avg_logprob": -0.385222,
+      "compression_ratio": 1.016949,
+      "end": 14409.44,
+      "no_speech_prob": 0.0,
+      "start": 14403.8,
+      "text": "这个世界不要我"
+    },
+    {
+      "avg_logprob": -0.385222,
+      "compression_ratio": 1.016949,
+      "end": 14411.4,
+      "no_speech_prob": 0.0,
+      "start": 14409.44,
+      "text": "请来吧"
+    },
+    {
+      "avg_logprob": -0.385222,
+      "compression_ratio": 1.016949,
+      "end": 14415.8,
+      "no_speech_prob": 0.0,
+      "start": 14411.4,
+      "text": "别再如此冷漠"
+    },
+    {
+      "avg_logprob": -0.385222,
+      "compression_ratio": 1.016949,
+      "end": 14417.8,
+      "no_speech_prob": 0.0,
+      "start": 14415.8,
+      "text": "请来吧"
+    },
+    {
+      "avg_logprob": -0.385222,
+      "compression_ratio": 1.016949,
+      "end": 14422.2,
+      "no_speech_prob": 0.0,
+      "start": 14417.8,
+      "text": "朋友说有懦弱"
+    },
+    {
+      "avg_logprob": -0.385222,
+      "compression_ratio": 1.016949,
+      "end": 14428.6,
+      "no_speech_prob": 0.0,
+      "start": 14422.2,
+      "text": "只为能借我足千人手"
+    },
+    {
+      "avg_logprob": -0.284588,
+      "compression_ratio": 0.940678,
+      "end": 14435.8,
+      "no_speech_prob": 0.0,
+      "start": 14428.6,
+      "text": "要埋葬那些恶的中空"
+    },
+    {
+      "avg_logprob": -0.284588,
+      "compression_ratio": 0.940678,
+      "end": 14439.0,
+      "no_speech_prob": 0.0,
+      "start": 14435.8,
+      "text": "牙齿全把落"
+    },
+    {
+      "avg_logprob": -0.284588,
+      "compression_ratio": 0.940678,
+      "end": 14442.2,
+      "no_speech_prob": 0.0,
+      "start": 14439.0,
+      "text": "切锁已斑驳"
+    },
+    {
+      "avg_logprob": -0.284588,
+      "compression_ratio": 0.940678,
+      "end": 14448.6,
+      "no_speech_prob": 0.0,
+      "start": 14442.2,
+      "text": "这就是我的一生"
+    },
+    {
+      "avg_logprob": -0.284588,
+      "compression_ratio": 0.940678,
+      "end": 14451.4,
+      "no_speech_prob": 0.0,
+      "start": 14448.6,
+      "text": "你若不醒来"
+    },
+    {
+      "avg_logprob": -0.284588,
+      "compression_ratio": 0.940678,
+      "end": 14455.0,
+      "no_speech_prob": 0.0,
+      "start": 14451.4,
+      "text": "还在梦里游走"
+    },
+    {
+      "avg_logprob": -0.382454,
+      "compression_ratio": 0.65625,
+      "end": 14461.4,
+      "no_speech_prob": 0.0,
+      "start": 14455.0,
+      "text": "又是第一座足口"
+    },
+    {
+      "avg_logprob": -0.948563,
+      "compression_ratio": 0.272727,
+      "end": 14474.6,
+      "no_speech_prob": 0.0,
+      "start": 14461.4,
+      "text": "啊"
+    },
+    {
+      "avg_logprob": -0.559904,
+      "compression_ratio": 0.830769,
+      "end": 14487.8,
+      "no_speech_prob": 0.0,
+      "start": 14474.6,
+      "text": "啊"
+    },
+    {
+      "avg_logprob": -0.559904,
+      "compression_ratio": 0.830769,
+      "end": 14490.2,
+      "no_speech_prob": 0.0,
+      "start": 14487.8,
+      "text": "我本话已多"
+    },
+    {
+      "avg_logprob": -0.559904,
+      "compression_ratio": 0.830769,
+      "end": 14493.4,
+      "no_speech_prob": 0.0,
+      "start": 14490.2,
+      "text": "被拐遍山中"
+    },
+    {
+      "avg_logprob": -0.559904,
+      "compression_ratio": 0.830769,
+      "end": 14499.8,
+      "no_speech_prob": 0.0,
+      "start": 14493.4,
+      "text": "送此情人永相隔"
+    },
+    {
+      "avg_logprob": -0.228787,
+      "compression_ratio": 0.981818,
+      "end": 14502.6,
+      "no_speech_prob": 0.0,
+      "start": 14499.8,
+      "text": "就近二十年"
+    },
+    {
+      "avg_logprob": -0.228787,
+      "compression_ratio": 0.981818,
+      "end": 14506.2,
+      "no_speech_prob": 0.0,
+      "start": 14502.6,
+      "text": "我受尽了折磨"
+    },
+    {
+      "avg_logprob": -0.228787,
+      "compression_ratio": 0.981818,
+      "end": 14512.0,
+      "no_speech_prob": 0.0,
+      "start": 14506.2,
+      "text": "这个世界不要我"
+    },
+    {
+      "avg_logprob": -0.228787,
+      "compression_ratio": 0.981818,
+      "end": 14514.0,
+      "no_speech_prob": 0.0,
+      "start": 14512.0,
+      "text": "请来吧"
+    },
+    {
+      "avg_logprob": -0.228787,
+      "compression_ratio": 0.981818,
+      "end": 14518.2,
+      "no_speech_prob": 0.0,
+      "start": 14514.0,
+      "text": "别再如此冷漠"
+    },
+    {
+      "avg_logprob": -0.228787,
+      "compression_ratio": 0.981818,
+      "end": 14520.2,
+      "no_speech_prob": 0.0,
+      "start": 14518.2,
+      "text": "请来吧"
+    },
+    {
+      "avg_logprob": -0.228787,
+      "compression_ratio": 0.981818,
+      "end": 14524.6,
+      "no_speech_prob": 0.0,
+      "start": 14520.2,
+      "text": "好酒说有懦弱"
+    },
+    {
+      "avg_logprob": -0.298021,
+      "compression_ratio": 0.990826,
+      "end": 14531.0,
+      "no_speech_prob": 0.0,
+      "start": 14524.6,
+      "text": "只为能借我足千人手"
+    },
+    {
+      "avg_logprob": -0.298021,
+      "compression_ratio": 0.990826,
+      "end": 14536.6,
+      "no_speech_prob": 0.0,
+      "start": 14531.0,
+      "text": "要埋葬那些恶的中空"
+    },
+    {
+      "avg_logprob": -0.298021,
+      "compression_ratio": 0.990826,
+      "end": 14542.6,
+      "no_speech_prob": 0.0,
+      "start": 14540.6,
+      "text": "请来吧"
+    },
+    {
+      "avg_logprob": -0.298021,
+      "compression_ratio": 0.990826,
+      "end": 14547.0,
+      "no_speech_prob": 0.0,
+      "start": 14542.6,
+      "text": "别再如此冷漠"
+    },
+    {
+      "avg_logprob": -0.298021,
+      "compression_ratio": 0.990826,
+      "end": 14549.0,
+      "no_speech_prob": 0.0,
+      "start": 14547.0,
+      "text": "请来吧"
+    },
+    {
+      "avg_logprob": -0.298021,
+      "compression_ratio": 0.990826,
+      "end": 14552.6,
+      "no_speech_prob": 0.0,
+      "start": 14549.0,
+      "text": "保抢所有懦弱"
+    },
+    {
+      "avg_logprob": -0.445357,
+      "compression_ratio": 0.830769,
+      "end": 14557.8,
+      "no_speech_prob": 0.0,
+      "start": 14552.6,
+      "text": "只为能借我足千人手"
+    },
+    {
+      "avg_logprob": -0.445357,
+      "compression_ratio": 0.830769,
+      "end": 14564.6,
+      "no_speech_prob": 0.0,
+      "start": 14557.8,
+      "text": "要埋葬那些恶的中空"
+    },
+    {
+      "avg_logprob": -0.325514,
+      "compression_ratio": 0.980198,
+      "end": 14566.6,
+      "no_speech_prob": 0.0,
+      "start": 14564.6,
+      "text": "牙齿全把落"
+    },
+    {
+      "avg_logprob": -0.325514,
+      "compression_ratio": 0.980198,
+      "end": 14569.8,
+      "no_speech_prob": 0.0,
+      "start": 14566.6,
+      "text": "牙齿全把落"
+    },
+    {
+      "avg_logprob": -0.325514,
+      "compression_ratio": 0.980198,
+      "end": 14572.6,
+      "no_speech_prob": 0.0,
+      "start": 14569.8,
+      "text": "铁锁已斑驳"
+    },
+    {
+      "avg_logprob": -0.325514,
+      "compression_ratio": 0.980198,
+      "end": 14578.6,
+      "no_speech_prob": 0.0,
+      "start": 14572.6,
+      "text": "这就是我的一生"
+    },
+    {
+      "avg_logprob": -0.325514,
+      "compression_ratio": 0.980198,
+      "end": 14581.8,
+      "no_speech_prob": 0.0,
+      "start": 14578.6,
+      "text": "同胞快醒来"
+    },
+    {
+      "avg_logprob": -0.325514,
+      "compression_ratio": 0.980198,
+      "end": 14585.8,
+      "no_speech_prob": 0.0,
+      "start": 14581.8,
+      "text": "从此要站着我"
+    },
+    {
+      "avg_logprob": -0.912802,
+      "compression_ratio": 1.235294,
+      "end": 14593.0,
+      "no_speech_prob": 0.0,
+      "start": 14585.8,
+      "text": "我们打罪的结果"
+    },
+    {
+      "avg_logprob": -0.912802,
+      "compression_ratio": 1.235294,
+      "end": 14599.0,
+      "no_speech_prob": 0.0,
+      "start": 14593.0,
+      "text": "我们打罪的结果"
+    },
+    {
+      "avg_logprob": -1.584317,
+      "compression_ratio": 3.671429,
+      "end": 14600.0,
+      "no_speech_prob": 0.0,
+      "start": 14599.0,
+      "text": "我น兴lt的了"
+    },
+    {
+      "avg_logprob": -1.584317,
+      "compression_ratio": 3.671429,
+      "end": 14600.4,
+      "no_speech_prob": 0.0,
+      "start": 14600.0,
+      "text": "我以之人"
+    },
+    {
+      "avg_logprob": -1.584317,
+      "compression_ratio": 3.671429,
+      "end": 14600.6,
+      "no_speech_prob": 0.0,
+      "start": 14600.4,
+      "text": "不迷不乱"
+    },
+    {
+      "avg_logprob": -1.584317,
+      "compression_ratio": 3.671429,
+      "end": 14600.96,
+      "no_speech_prob": 0.0,
+      "start": 14600.6,
+      "text": "我扫的"
+    },
+    {
+      "avg_logprob": -1.584317,
+      "compression_ratio": 3.671429,
+      "end": 14601.2,
+      "no_speech_prob": 0.0,
+      "start": 14600.96,
+      "text": "我扫的"
+    },
+    {
+      "avg_logprob": -1.584317,
+      "compression_ratio": 3.671429,
+      "end": 14601.46,
+      "no_speech_prob": 0.0,
+      "start": 14601.2,
+      "text": "我扫的"
+    },
+    {
+      "avg_logprob": -1.584317,
+      "compression_ratio": 3.671429,
+      "end": 14601.72,
+      "no_speech_prob": 0.0,
+      "start": 14601.46,
+      "text": "我扫的"
+    },
+    {
+      "avg_logprob": -1.584317,
+      "compression_ratio": 3.671429,
+      "end": 14601.92,
+      "no_speech_prob": 0.0,
+      "start": 14601.72,
+      "text": "我扫的"
+    },
+    {
+      "avg_logprob": -1.584317,
+      "compression_ratio": 3.671429,
+      "end": 14602.08,
+      "no_speech_prob": 0.0,
+      "start": 14601.92,
+      "text": "我扫的"
+    },
+    {
+      "avg_logprob": -1.584317,
+      "compression_ratio": 3.671429,
+      "end": 14602.36,
+      "no_speech_prob": 0.0,
+      "start": 14602.08,
+      "text": "我扫的"
+    },
+    {
+      "avg_logprob": -1.584317,
+      "compression_ratio": 3.671429,
+      "end": 14602.64,
+      "no_speech_prob": 0.0,
+      "start": 14602.36,
+      "text": "我扫的"
+    },
+    {
+      "avg_logprob": -1.584317,
+      "compression_ratio": 3.671429,
+      "end": 14602.84,
+      "no_speech_prob": 0.0,
+      "start": 14602.64,
+      "text": "我扫的"
+    },
+    {
+      "avg_logprob": -1.584317,
+      "compression_ratio": 3.671429,
+      "end": 14603.0,
+      "no_speech_prob": 0.0,
+      "start": 14602.84,
+      "text": "我扫的"
+    },
+    {
+      "avg_logprob": -1.584317,
+      "compression_ratio": 3.671429,
+      "end": 14603.2,
+      "no_speech_prob": 0.0,
+      "start": 14603.0,
+      "text": "我扫的"
+    },
+    {
+      "avg_logprob": -1.584317,
+      "compression_ratio": 3.671429,
+      "end": 14603.44,
+      "no_speech_prob": 0.0,
+      "start": 14603.2,
+      "text": "我扫的"
+    },
+    {
+      "avg_logprob": -1.584317,
+      "compression_ratio": 3.671429,
+      "end": 14603.64,
+      "no_speech_prob": 0.0,
+      "start": 14603.44,
+      "text": "我扫的"
+    },
+    {
+      "avg_logprob": -1.584317,
+      "compression_ratio": 3.671429,
+      "end": 14603.8,
+      "no_speech_prob": 0.0,
+      "start": 14603.64,
+      "text": "我扫的"
+    },
+    {
+      "avg_logprob": -1.584317,
+      "compression_ratio": 3.671429,
+      "end": 14604.0,
+      "no_speech_prob": 0.0,
+      "start": 14603.8,
+      "text": "我扫的"
+    },
+    {
+      "avg_logprob": -1.584317,
+      "compression_ratio": 3.671429,
+      "end": 14604.16,
+      "no_speech_prob": 0.0,
+      "start": 14604.0,
+      "text": "我扫的"
+    },
+    {
+      "avg_logprob": -1.584317,
+      "compression_ratio": 3.671429,
+      "end": 14604.28,
+      "no_speech_prob": 0.0,
+      "start": 14604.16,
+      "text": "我扫的"
+    },
+    {
+      "avg_logprob": -1.584317,
+      "compression_ratio": 3.671429,
+      "end": 14604.44,
+      "no_speech_prob": 0.0,
+      "start": 14604.28,
+      "text": "我扫的"
+    },
+    {
+      "avg_logprob": -1.584317,
+      "compression_ratio": 3.671429,
+      "end": 14604.56,
+      "no_speech_prob": 0.0,
+      "start": 14604.44,
+      "text": "我扫的"
+    },
+    {
+      "avg_logprob": -1.584317,
+      "compression_ratio": 3.671429,
+      "end": 14604.68,
+      "no_speech_prob": 0.0,
+      "start": 14604.56,
+      "text": "我扫的"
+    },
+    {
+      "avg_logprob": -1.584317,
+      "compression_ratio": 3.671429,
+      "end": 14604.76,
+      "no_speech_prob": 0.0,
+      "start": 14604.68,
+      "text": "我扫的"
+    },
+    {
+      "avg_logprob": -1.584317,
+      "compression_ratio": 3.671429,
+      "end": 14604.86,
+      "no_speech_prob": 0.0,
+      "start": 14604.76,
+      "text": "我扫的"
+    },
+    {
+      "avg_logprob": -1.584317,
+      "compression_ratio": 3.671429,
+      "end": 14605.14,
+      "no_speech_prob": 0.0,
+      "start": 14604.86,
+      "text": "accol"
+    },
+    {
+      "avg_logprob": -1.584317,
+      "compression_ratio": 3.671429,
+      "end": 14605.24,
+      "no_speech_prob": 0.0,
+      "start": 14605.14,
+      "text": "我扫的"
+    },
+    {
+      "avg_logprob": -1.584317,
+      "compression_ratio": 3.671429,
+      "end": 14605.26,
+      "no_speech_prob": 0.0,
+      "start": 14605.24,
+      "text": "的"
+    },
+    {
+      "avg_logprob": -0.098852,
+      "compression_ratio": 0.851351,
+      "end": 14658.98,
+      "no_speech_prob": 0.0,
+      "start": 14629.0,
+      "text": "请不吝点赞 订阅 转发 打赏支持明镜与点点栏目"
+    }
+  ],
+  "text": "我受尽了折磨这个世界不要我请来吧别再如此冷漠请来吧朋友说有懦弱只为能借我足千人手要埋葬那些恶的中空牙齿全把落切锁已斑驳这就是我的一生你若不醒来还在梦里游走又是第一座足口啊啊我本话已多被拐遍山中送此情人永相隔就近二十年我受尽了折磨这个世界不要我请来吧别再如此冷漠请来吧好酒说有懦弱只为能借我足千人手要埋葬那些恶的中空请来吧别再如此冷漠请来吧保抢所有懦弱只为能借我足千人手要埋葬那些恶的中空牙齿全把落牙齿全把落铁锁已斑驳这就是我的一生同胞快醒来从此要站着我我们打罪的结果我们打罪的结果我น兴lt的了我以之人不迷不乱我扫的我扫的我扫的我扫的我扫的我扫的我扫的我扫的我扫的我扫的我扫的我扫的我扫的我扫的我扫的我扫的我扫的我扫的我扫的我扫的我扫的我扫的 accol我扫的的请不吝点赞 订阅 转发 打赏支持明镜与点点栏目"
+}
