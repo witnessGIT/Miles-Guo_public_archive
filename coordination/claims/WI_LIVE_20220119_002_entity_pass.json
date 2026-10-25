@@ -1,9 +1,9 @@
 {
   "task_id": "WI_LIVE_20220119_002_entity_pass",
-  "agent_id": "github-actions-cloud-entity-39899010666",
-  "claimed_at": "2026-10-23T04:14:29.353672+00:00",
-  "base_commit": "b5223b19b435be5dab980d005d5202dccbfd36f5",
-  "status": "released",
+  "agent_id": "github-actions-cloud-entity-40160376389",
+  "claimed_at": "2026-10-25T04:06:03.089468+00:00",
+  "base_commit": "f6a4037fc6a75474d238b0e51ad8f7a3beca305b",
+  "status": "in_progress",
   "workflow_mode": "continuous-worker-v2",
   "claim_protocol": "claim-protocol-v2",
   "entry_mode": "work",
@@ -21,8 +21,6 @@
     "WI_LIVE_20220119_002_segment_split"
   ],
   "scope": "Extract speakers, people, organizations, places and mentioned entities.",
-  "reclaimed_expired_claim": false,
-  "static_claim_lease_hours": 24,
-  "released_at": "2026-10-23T12:13:23.721073+00:00",
-  "release_reason": "GitHub Actions entity run 39899010666 was cancelled by the hosted platform after nearly six hours before publishing outputs; retryable cancellation, not missing content"
+  "reclaimed_expired_claim": true,
+  "static_claim_lease_hours": 24
 }
