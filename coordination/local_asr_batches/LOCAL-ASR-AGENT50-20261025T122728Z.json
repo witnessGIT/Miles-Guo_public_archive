@@ -62,7 +62,9 @@
     "LIVE_20220430_002",
     "LIVE_20221003_001",
     "LIVE_20220318_002",
-    "LIVE_20220913_002"
+    "LIVE_20220913_002",
+    "LIVE_20230116_001",
+    "LIVE_20220314_001"
   ],
   "next_live_id": null,
   "completed_live_ids": [
@@ -115,9 +117,16 @@
   ],
   "failed_or_deferred_live_ids": [
     "LIVE_20220420_002",
-    "LIVE_20230127_001",
+    "LIVE_20230127_001"
+  ],
+  "tail_review_completed_live_ids": [
     "LIVE_20230116_001",
     "LIVE_20220314_001"
   ],
-  "notes": "Fixed logical batch completed for the normal queue: 46 videos passed all four stages and 4 quality failures remain explicitly deferred in corpus_tail. The deferred videos were not retried during ordinary-queue closeout. Revalidate stage-specific cloud IDs and effective claims before any later tail review; never expand this list."
+  "tail_review_still_deferred_live_ids": [
+    "LIVE_20220420_002",
+    "LIVE_20230127_001"
+  ],
+  "tail_review_completed_at": "2026-10-25T21:51:00Z",
+  "notes": "Fixed logical batch completed: 46 normal-queue videos and 2 corpus-tail recoveries passed all four stages. LIVE_20220420_002 remains deferred after two independent captures produced only identical stock-credit hallucinations. LIVE_20230127_001 remains deferred after its second conservative 60-second PCM decode still rendered song/non-speech as garbled multilingual text; bad current transcript files were removed. Never expand this list."
 }
