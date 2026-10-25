@@ -21,7 +21,7 @@
   "processing_location": "codex-local-mlx-whisper",
   "processing_path": "/private/tmp/miles-local-asr-agent50/LIVE_20230127_001.ogg",
   "quality": {
-    "gate_status": "pass",
+    "gate_status": "deferred_review",
     "metrics": {
       "audio_duration_sec": 566.897,
       "characters_per_minute": 209.138,
@@ -37,7 +37,9 @@
       "text_character_count": 1976
     },
     "quality_score": 0.9737,
-    "reasons": [],
+    "reasons": [
+      "manual_review_substantial_music_or_non_speech_hallucination"
+    ],
     "schema_version": "cloud-asr-quality-v1",
     "warnings": []
   },
