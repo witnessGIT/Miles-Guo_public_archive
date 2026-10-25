@@ -1,0 +1,16 @@
+{
+  "task_id": "WI_LIVE_20230130_002_segment_split",
+  "agent_id": "codex-local-asr-agent50-20261023",
+  "completed_at": "2026-10-25T12:47:09.071627+00:00",
+  "result_commit": "c185c74549329f4e628d1777e85e24be85904d2a",
+  "outputs": [
+    "data/current/live_segments/asr_live_20230130_002.jsonl"
+  ],
+  "validation": "6 natural segments from 75 ordered cues; explicit no-substantive-content handling for opening fragment/music gap; agent-reviewed boundaries, summaries, uncertainty notes and topics; machine transcript unverified",
+  "workflow_mode": "continuous-worker-v2",
+  "claim_protocol": "claim-protocol-v2",
+  "entry_mode": "work",
+  "continue_after_finish": true,
+  "finish_prerequisites_revalidated": true,
+  "notes": "Task completed only after re-checking the latest repository dependency contract. Under continuous-worker-v2, refresh repository state and claim the next eligible task unless a documented stop condition applies."
+}
