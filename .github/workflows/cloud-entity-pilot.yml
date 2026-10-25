@@ -11,6 +11,10 @@ on:
         description: Optional comma-separated LIVE ids shared with the key-point batch
         required: false
         default: ''
+      item_timeout_sec:
+        description: Per-video timeout before releasing its claim for a later retry
+        required: false
+        default: '2700'
 
 permissions:
   contents: write
@@ -56,4 +60,5 @@ jobs:
             --repo "$GITHUB_WORKSPACE" \
             --batch-size '${{ inputs.batch_size }}' \
             --live-ids '${{ inputs.live_ids }}' \
+            --item-timeout-sec '${{ inputs.item_timeout_sec }}' \
             --agent-id "github-actions-cloud-entity-${GITHUB_RUN_ID}"
