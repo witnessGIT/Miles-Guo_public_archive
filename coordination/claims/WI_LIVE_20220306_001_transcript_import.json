@@ -1,0 +1,26 @@
+{
+  "task_id": "WI_LIVE_20220306_001_transcript_import",
+  "agent_id": "github-actions-cloud-asr-40192475636",
+  "claimed_at": "2026-10-25T12:19:56.715452+00:00",
+  "base_commit": "5f7b5ff11feb1e47199dfc4fad8dfbe03f5a3e36",
+  "status": "in_progress",
+  "workflow_mode": "continuous-worker-v2",
+  "claim_protocol": "claim-protocol-v2",
+  "entry_mode": "work",
+  "continue_after_finish": true,
+  "stage": "transcript_import",
+  "case_id": null,
+  "live_id": "LIVE_20220306_001",
+  "kind": "live_work_item",
+  "source_candidate_id": null,
+  "review_generation": null,
+  "review_claim_timeout_hours": null,
+  "review_state_before_claim": null,
+  "candidate_review_contract": null,
+  "depends_on_at_claim": [
+    "WI_LIVE_20220306_001_metadata_fill"
+  ],
+  "scope": "Import source transcript or ASR text without overwriting original text.",
+  "reclaimed_expired_claim": false,
+  "static_claim_lease_hours": 24
+}
