@@ -3,7 +3,7 @@
   "batch_id": "LOCAL-ASR-AGENT50-20261023T0043Z",
   "agent_id": "codex-local-asr-agent50-20261023",
   "created_at": "2026-10-23T00:43:00Z",
-  "status": "in_progress",
+  "status": "completed",
   "entry_mode": "work",
   "claim_protocol": "claim-protocol-v2",
   "selection_policy": "shortest known-duration eligible normal-queue items; excludes effective claims, completed transcript tasks, 24-hour retry cooldown, corpus_tail, and current Cloud ASR Pilot claims",
@@ -60,7 +60,7 @@
     "LIVE_20221101_001",
     "LIVE_20220427_002"
   ],
-  "next_live_id": "LIVE_20220122_002",
+  "next_live_id": null,
   "completed_live_ids": [
     "LIVE_20220119_002",
     "LIVE_20220215_002",
@@ -95,7 +95,8 @@
     "LIVE_20220929_003",
     "LIVE_20230107_002",
     "LIVE_20221101_001",
-    "LIVE_20220427_002"
+    "LIVE_20220427_002",
+    "LIVE_20220122_002"
   ],
   "failed_or_deferred_live_ids": [
     "LIVE_20220114_002",
@@ -114,5 +115,6 @@
     "LIVE_20211225_006",
     "LIVE_20220129_001"
   ],
-  "notes": "Fixed logical batch for immediate local Agent processing and later agent-50 automation continuation. Revalidate eligibility and claim ownership before every item."
+  "completed_at": "2026-10-25T11:38:30Z",
+  "notes": "Fixed 50-video batch closed after 35 four-stage completions and 15 quality/source deferrals. Deferred items remain auditable corpus-tail work and were not counted as completed."
 }
