@@ -1,0 +1,16 @@
+{
+  "task_id": "WI_LIVE_20230107_002_segment_split",
+  "agent_id": "codex-local-asr-agent50-20261023",
+  "completed_at": "2026-10-25T08:31:45.168613+00:00",
+  "result_commit": "cf74eed86",
+  "outputs": [
+    "data/current/live_segments/asr_live_20230107_002.jsonl"
+  ],
+  "validation": "9 agent-reviewed natural topic segments spanning 0.0-279.68s from 122 ordered machine-ASR cues; machine_unverified; medical claims remain attributed to speaker and require evidence review downstream",
+  "workflow_mode": "continuous-worker-v2",
+  "claim_protocol": "claim-protocol-v2",
+  "entry_mode": "work",
+  "continue_after_finish": true,
+  "finish_prerequisites_revalidated": true,
+  "notes": "Task completed only after re-checking the latest repository dependency contract. Under continuous-worker-v2, refresh repository state and claim the next eligible task unless a documented stop condition applies."
+}
