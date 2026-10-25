@@ -3,7 +3,7 @@
   "agent_id": "github-actions-cloud-key-points-40136846076",
   "claimed_at": "2026-10-25T01:56:53.770402+00:00",
   "base_commit": "a0757bf2dc7d166143ce27e6c527adea26511644",
-  "status": "in_progress",
+  "status": "released",
   "workflow_mode": "continuous-worker-v2",
   "claim_protocol": "claim-protocol-v2",
   "entry_mode": "work",
@@ -22,5 +22,7 @@
   ],
   "scope": "Create evidence-grounded neutral key points and controlled topic assignments.",
   "reclaimed_expired_claim": false,
-  "static_claim_lease_hours": 24
+  "static_claim_lease_hours": 24,
+  "released_at": "2026-10-25T04:01:28.530059+00:00",
+  "release_reason": "GitHub Actions run 40136846076 was cancelled by the hosted platform after nearly six hours before publishing this item; retryable cancellation, not missing content"
 }
