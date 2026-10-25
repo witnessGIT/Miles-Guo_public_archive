@@ -1,0 +1,17 @@
+{
+  "task_id": "WI_LIVE_20221111_001_key_points_topics",
+  "agent_id": "codex-local-asr-agent50-20261023",
+  "completed_at": "2026-10-25T16:39:17.846747+00:00",
+  "result_commit": "73fe640f1aa8d726f85ead99fa00e318d7a2cdee",
+  "outputs": [
+    "data/current/segment_key_points/machine_live_20221111_001.jsonl",
+    "data/current/segment_topics/machine_live_20221111_001.jsonl"
+  ],
+  "validation": "46 evidence-grounded variable key points and 18 controlled topic assignments manually reviewed against 228 timestamped cues; quotes exact; predictions and allegations attributed; build_db and validate_db OK with global playback warning only; 146 tests passed",
+  "workflow_mode": "continuous-worker-v2",
+  "claim_protocol": "claim-protocol-v2",
+  "entry_mode": "work",
+  "continue_after_finish": true,
+  "finish_prerequisites_revalidated": true,
+  "notes": "Task completed only after re-checking the latest repository dependency contract. Under continuous-worker-v2, refresh repository state and claim the next eligible task unless a documented stop condition applies."
+}
