@@ -1,0 +1,18 @@
+{
+  "task_id": "WI_LIVE_20230107_002_key_points_topics",
+  "agent_id": "codex-local-asr-agent50-20261023",
+  "completed_at": "2026-10-25T08:37:30.000000+00:00",
+  "result_commit": "c4f7c8254",
+  "outputs": [
+    "data/current/live_segments/asr_live_20230107_002.jsonl",
+    "data/current/segment_key_points/machine_live_20230107_002.jsonl",
+    "data/current/segment_topics/machine_live_20230107_002.jsonl"
+  ],
+  "validation": "35 exact-evidence, agent-reviewed machine key points across all 9 segments; 17 controlled topic links; medical anecdotes and uncertain drug-name ASR explicitly attributed and flagged as unverified; build_db/validate_db/full 146 tests OK",
+  "workflow_mode": "continuous-worker-v2",
+  "claim_protocol": "claim-protocol-v2",
+  "entry_mode": "work",
+  "continue_after_finish": true,
+  "finish_prerequisites_revalidated": true,
+  "notes": "Task completed only after re-checking the latest repository dependency contract. Under continuous-worker-v2, refresh repository state and claim the next eligible task unless a documented stop condition applies."
+}
