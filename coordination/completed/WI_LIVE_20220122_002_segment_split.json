@@ -1,0 +1,14 @@
+{
+  "task_id": "WI_LIVE_20220122_002_segment_split",
+  "agent_id": "codex-local-asr-agent50-20261023",
+  "completed_at": "2026-10-25T11:34:20.000000+00:00",
+  "result_commit": "ef0c67e41",
+  "outputs": ["data/current/live_segments/asr_live_20220122_002.jsonl"],
+  "validation": "4 agent-reviewed natural topic segments derived from 46 timestamped machine cues; ordered, non-overlapping, SHA-256 verified; uncertain machine wording explicitly retained and labeled",
+  "workflow_mode": "continuous-worker-v2",
+  "claim_protocol": "claim-protocol-v2",
+  "entry_mode": "work",
+  "continue_after_finish": true,
+  "finish_prerequisites_revalidated": true,
+  "notes": "Natural boundaries separate domestic economic claims, Winter Olympics commentary, and two scheduling announcements; no fixed-count splitting was used."
+}
