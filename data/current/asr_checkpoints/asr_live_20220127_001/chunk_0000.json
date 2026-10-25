@@ -1,0 +1,264 @@
+{
+  "chunk_audio_sha256": "1dec25dcbd5229b6a2ec694201738ec793fb74470ba28be09a71f442f47688d3",
+  "chunk_index": 0,
+  "completed_at": "2026-10-25T02:22:55Z",
+  "language": "zh",
+  "live_id": "LIVE_20220127_001",
+  "media_committed_to_git": false,
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "offset_sec": 0,
+  "paid_api_used": false,
+  "processing_location": "github-hosted-macos-arm64",
+  "schema_version": "cloud-asr-chunk-v1",
+  "segments": [
+    {
+      "avg_logprob": -0.512356,
+      "compression_ratio": 0.694444,
+      "end": 29.98,
+      "no_speech_prob": 0.0,
+      "start": 0.0,
+      "text": "字幕志愿者 李宗盛"
+    },
+    {
+      "avg_logprob": -0.411459,
+      "compression_ratio": 0.5,
+      "end": 59.98,
+      "no_speech_prob": 0.0,
+      "start": 30.0,
+      "text": "李宗盛"
+    },
+    {
+      "avg_logprob": -0.196531,
+      "compression_ratio": 0.5,
+      "end": 89.98,
+      "no_speech_prob": 0.0,
+      "start": 60.0,
+      "text": "李宗盛"
+    },
+    {
+      "avg_logprob": -0.114665,
+      "compression_ratio": 0.5,
+      "end": 119.98,
+      "no_speech_prob": 0.0,
+      "start": 90.0,
+      "text": "李宗盛"
+    },
+    {
+      "avg_logprob": -0.101874,
+      "compression_ratio": 0.5,
+      "end": 149.96,
+      "no_speech_prob": 0.0,
+      "start": 119.98,
+      "text": "李宗盛"
+    },
+    {
+      "avg_logprob": -0.055296,
+      "compression_ratio": 0.5,
+      "end": 179.94,
+      "no_speech_prob": 0.0,
+      "start": 149.96,
+      "text": "李宗盛"
+    },
+    {
+      "avg_logprob": -0.069186,
+      "compression_ratio": 0.5,
+      "end": 209.92,
+      "no_speech_prob": 0.0,
+      "start": 179.94,
+      "text": "李宗盛"
+    },
+    {
+      "avg_logprob": -0.136854,
+      "compression_ratio": 0.5,
+      "end": 239.9,
+      "no_speech_prob": 0.0,
+      "start": 209.92,
+      "text": "李宗盛"
+    },
+    {
+      "avg_logprob": -0.044871,
+      "compression_ratio": 0.5,
+      "end": 269.88,
+      "no_speech_prob": 0.0,
+      "start": 239.9,
+      "text": "李宗盛"
+    },
+    {
+      "avg_logprob": -0.088488,
+      "compression_ratio": 0.5,
+      "end": 299.86,
+      "no_speech_prob": 0.0,
+      "start": 269.88,
+      "text": "李宗盛"
+    },
+    {
+      "avg_logprob": -0.051598,
+      "compression_ratio": 0.5,
+      "end": 329.84,
+      "no_speech_prob": 0.0,
+      "start": 299.86,
+      "text": "李宗盛"
+    },
+    {
+      "avg_logprob": -0.090337,
+      "compression_ratio": 0.5,
+      "end": 359.82,
+      "no_speech_prob": 0.0,
+      "start": 329.84,
+      "text": "李宗盛"
+    },
+    {
+      "avg_logprob": -0.13003,
+      "compression_ratio": 0.5,
+      "end": 389.8,
+      "no_speech_prob": 0.0,
+      "start": 359.82,
+      "text": "李宗盛"
+    },
+    {
+      "avg_logprob": -0.071194,
+      "compression_ratio": 0.5,
+      "end": 419.78,
+      "no_speech_prob": 0.0,
+      "start": 389.8,
+      "text": "李宗盛"
+    },
+    {
+      "avg_logprob": -0.063069,
+      "compression_ratio": 0.5,
+      "end": 449.76,
+      "no_speech_prob": 0.0,
+      "start": 419.78,
+      "text": "李宗盛"
+    },
+    {
+      "avg_logprob": -0.036689,
+      "compression_ratio": 0.5,
+      "end": 479.74,
+      "no_speech_prob": 0.0,
+      "start": 449.76,
+      "text": "李宗盛"
+    },
+    {
+      "avg_logprob": -0.066362,
+      "compression_ratio": 0.5,
+      "end": 509.72,
+      "no_speech_prob": 0.0,
+      "start": 479.74,
+      "text": "李宗盛"
+    },
+    {
+      "avg_logprob": -0.045026,
+      "compression_ratio": 0.5,
+      "end": 539.7,
+      "no_speech_prob": 0.0,
+      "start": 509.72,
+      "text": "李宗盛"
+    },
+    {
+      "avg_logprob": -0.049741,
+      "compression_ratio": 0.5,
+      "end": 569.68,
+      "no_speech_prob": 0.0,
+      "start": 539.7,
+      "text": "李宗盛"
+    },
+    {
+      "avg_logprob": -0.064739,
+      "compression_ratio": 0.5,
+      "end": 599.66,
+      "no_speech_prob": 0.0,
+      "start": 569.68,
+      "text": "李宗盛"
+    },
+    {
+      "avg_logprob": -0.088469,
+      "compression_ratio": 0.5,
+      "end": 629.64,
+      "no_speech_prob": 0.0,
+      "start": 599.66,
+      "text": "李宗盛"
+    },
+    {
+      "avg_logprob": -0.063377,
+      "compression_ratio": 0.5,
+      "end": 659.64,
+      "no_speech_prob": 0.0,
+      "start": 629.66,
+      "text": "李宗盛"
+    },
+    {
+      "avg_logprob": -0.10527,
+      "compression_ratio": 0.5,
+      "end": 689.64,
+      "no_speech_prob": 0.0,
+      "start": 659.66,
+      "text": "李宗盛"
+    },
+    {
+      "avg_logprob": -0.102684,
+      "compression_ratio": 0.5,
+      "end": 719.64,
+      "no_speech_prob": 0.0,
+      "start": 689.66,
+      "text": "李宗盛"
+    },
+    {
+      "avg_logprob": -0.036342,
+      "compression_ratio": 0.5,
+      "end": 749.64,
+      "no_speech_prob": 0.0,
+      "start": 719.66,
+      "text": "李宗盛"
+    },
+    {
+      "avg_logprob": -0.078571,
+      "compression_ratio": 0.5,
+      "end": 779.62,
+      "no_speech_prob": 0.0,
+      "start": 749.64,
+      "text": "李宗盛"
+    },
+    {
+      "avg_logprob": -0.051877,
+      "compression_ratio": 0.5,
+      "end": 809.6,
+      "no_speech_prob": 0.0,
+      "start": 779.62,
+      "text": "李宗盛"
+    },
+    {
+      "avg_logprob": -0.036829,
+      "compression_ratio": 0.5,
+      "end": 839.58,
+      "no_speech_prob": 0.0,
+      "start": 809.6,
+      "text": "李宗盛"
+    },
+    {
+      "avg_logprob": -0.031562,
+      "compression_ratio": 0.5,
+      "end": 869.56,
+      "no_speech_prob": 0.0,
+      "start": 839.58,
+      "text": "李宗盛"
+    },
+    {
+      "avg_logprob": -0.052626,
+      "compression_ratio": 0.5,
+      "end": 899.54,
+      "no_speech_prob": 0.0,
+      "start": 869.56,
+      "text": "李宗盛"
+    },
+    {
+      "avg_logprob": -0.035943,
+      "compression_ratio": 0.5,
+      "end": 929.52,
+      "no_speech_prob": 0.0,
+      "start": 899.54,
+      "text": "李宗盛"
+    }
+  ],
+  "text": "字幕志愿者 李宗盛李宗盛李宗盛李宗盛李宗盛李宗盛李宗盛李宗盛李宗盛李宗盛李宗盛李宗盛李宗盛李宗盛李宗盛李宗盛李宗盛李宗盛李宗盛李宗盛李宗盛李宗盛李宗盛李宗盛李宗盛李宗盛李宗盛李宗盛李宗盛李宗盛李宗盛"
+}

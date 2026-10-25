@@ -1,0 +1,1392 @@
+{
+  "chunk_audio_sha256": "88741c5ea73e1978240428647e9872dbfca63dcf0dcd12cbb03005da6a567358",
+  "chunk_index": 0,
+  "completed_at": "2026-10-25T05:25:30Z",
+  "language": "zh",
+  "live_id": "LIVE_20220204_001",
+  "media_committed_to_git": false,
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "offset_sec": 0,
+  "paid_api_used": false,
+  "processing_location": "github-hosted-macos-arm64",
+  "schema_version": "cloud-asr-chunk-v1",
+  "segments": [
+    {
+      "avg_logprob": -0.110633,
+      "compression_ratio": 0.851351,
+      "end": 29.98,
+      "no_speech_prob": 0.0,
+      "start": 0.0,
+      "text": "请不吝点赞 订阅 转发 打赏支持明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.169694,
+      "compression_ratio": 0.724138,
+      "end": 59.98,
+      "no_speech_prob": 0.0,
+      "start": 30.0,
+      "text": "明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.065847,
+      "compression_ratio": 0.724138,
+      "end": 89.98,
+      "no_speech_prob": 0.0,
+      "start": 60.0,
+      "text": "明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.110219,
+      "compression_ratio": 0.724138,
+      "end": 119.98,
+      "no_speech_prob": 0.0,
+      "start": 90.0,
+      "text": "明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.149841,
+      "compression_ratio": 0.724138,
+      "end": 122.0,
+      "no_speech_prob": 0.0,
+      "start": 120.0,
+      "text": "明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.107415,
+      "compression_ratio": 10.885714,
+      "end": 152.0,
+      "no_speech_prob": 0.0,
+      "start": 150.0,
+      "text": "明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.107415,
+      "compression_ratio": 10.885714,
+      "end": 153.5,
+      "no_speech_prob": 0.0,
+      "start": 152.0,
+      "text": "明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.107415,
+      "compression_ratio": 10.885714,
+      "end": 154.0,
+      "no_speech_prob": 0.0,
+      "start": 153.5,
+      "text": "明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.107415,
+      "compression_ratio": 10.885714,
+      "end": 156.0,
+      "no_speech_prob": 0.0,
+      "start": 154.0,
+      "text": "明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.107415,
+      "compression_ratio": 10.885714,
+      "end": 157.0,
+      "no_speech_prob": 0.0,
+      "start": 156.0,
+      "text": "明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.107415,
+      "compression_ratio": 10.885714,
+      "end": 158.0,
+      "no_speech_prob": 0.0,
+      "start": 157.0,
+      "text": "明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.107415,
+      "compression_ratio": 10.885714,
+      "end": 159.0,
+      "no_speech_prob": 0.0,
+      "start": 158.0,
+      "text": "明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.107415,
+      "compression_ratio": 10.885714,
+      "end": 160.0,
+      "no_speech_prob": 0.0,
+      "start": 159.0,
+      "text": "明镜与点栏目"
+    },
+    {
+      "avg_logprob": -0.107415,
+      "compression_ratio": 10.885714,
+      "end": 161.0,
+      "no_speech_prob": 0.0,
+      "start": 160.0,
+      "text": "明镜与点栏目"
+    },
+    {
+      "avg_logprob": -0.107415,
+      "compression_ratio": 10.885714,
+      "end": 162.0,
+      "no_speech_prob": 0.0,
+      "start": 161.0,
+      "text": "明镜与点栏目"
+    },
+    {
+      "avg_logprob": -0.110633,
+      "compression_ratio": 0.851351,
+      "end": 191.98,
+      "no_speech_prob": 0.0,
+      "start": 162.0,
+      "text": "请不吝点赞 订阅 转发 打赏支持明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.169694,
+      "compression_ratio": 0.724138,
+      "end": 221.98,
+      "no_speech_prob": 0.0,
+      "start": 192.0,
+      "text": "明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.065847,
+      "compression_ratio": 0.724138,
+      "end": 251.98,
+      "no_speech_prob": 0.0,
+      "start": 222.0,
+      "text": "明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.110219,
+      "compression_ratio": 0.724138,
+      "end": 281.98,
+      "no_speech_prob": 0.0,
+      "start": 252.0,
+      "text": "明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.149841,
+      "compression_ratio": 0.724138,
+      "end": 284.0,
+      "no_speech_prob": 0.0,
+      "start": 282.0,
+      "text": "明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.107415,
+      "compression_ratio": 10.885714,
+      "end": 314.0,
+      "no_speech_prob": 0.0,
+      "start": 312.0,
+      "text": "明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.107415,
+      "compression_ratio": 10.885714,
+      "end": 315.5,
+      "no_speech_prob": 0.0,
+      "start": 314.0,
+      "text": "明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.107415,
+      "compression_ratio": 10.885714,
+      "end": 316.0,
+      "no_speech_prob": 0.0,
+      "start": 315.5,
+      "text": "明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.107415,
+      "compression_ratio": 10.885714,
+      "end": 318.0,
+      "no_speech_prob": 0.0,
+      "start": 316.0,
+      "text": "明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.107415,
+      "compression_ratio": 10.885714,
+      "end": 319.0,
+      "no_speech_prob": 0.0,
+      "start": 318.0,
+      "text": "明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.107415,
+      "compression_ratio": 10.885714,
+      "end": 320.0,
+      "no_speech_prob": 0.0,
+      "start": 319.0,
+      "text": "明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.107415,
+      "compression_ratio": 10.885714,
+      "end": 321.0,
+      "no_speech_prob": 0.0,
+      "start": 320.0,
+      "text": "明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.107415,
+      "compression_ratio": 10.885714,
+      "end": 322.0,
+      "no_speech_prob": 0.0,
+      "start": 321.0,
+      "text": "明镜与点栏目"
+    },
+    {
+      "avg_logprob": -0.107415,
+      "compression_ratio": 10.885714,
+      "end": 323.0,
+      "no_speech_prob": 0.0,
+      "start": 322.0,
+      "text": "明镜与点栏目"
+    },
+    {
+      "avg_logprob": -0.107415,
+      "compression_ratio": 10.885714,
+      "end": 324.0,
+      "no_speech_prob": 0.0,
+      "start": 323.0,
+      "text": "明镜与点栏目"
+    },
+    {
+      "avg_logprob": -0.110633,
+      "compression_ratio": 0.851351,
+      "end": 353.98,
+      "no_speech_prob": 0.0,
+      "start": 324.0,
+      "text": "请不吝点赞 订阅 转发 打赏支持明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.169694,
+      "compression_ratio": 0.724138,
+      "end": 383.98,
+      "no_speech_prob": 0.0,
+      "start": 354.0,
+      "text": "明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.065847,
+      "compression_ratio": 0.724138,
+      "end": 413.98,
+      "no_speech_prob": 0.0,
+      "start": 384.0,
+      "text": "明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.110219,
+      "compression_ratio": 0.724138,
+      "end": 443.98,
+      "no_speech_prob": 0.0,
+      "start": 414.0,
+      "text": "明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.149841,
+      "compression_ratio": 0.724138,
+      "end": 446.0,
+      "no_speech_prob": 0.0,
+      "start": 444.0,
+      "text": "明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.107415,
+      "compression_ratio": 10.885714,
+      "end": 476.0,
+      "no_speech_prob": 0.0,
+      "start": 474.0,
+      "text": "明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.107415,
+      "compression_ratio": 10.885714,
+      "end": 477.5,
+      "no_speech_prob": 0.0,
+      "start": 476.0,
+      "text": "明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.107415,
+      "compression_ratio": 10.885714,
+      "end": 478.0,
+      "no_speech_prob": 0.0,
+      "start": 477.5,
+      "text": "明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.107415,
+      "compression_ratio": 10.885714,
+      "end": 480.0,
+      "no_speech_prob": 0.0,
+      "start": 478.0,
+      "text": "明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.107415,
+      "compression_ratio": 10.885714,
+      "end": 481.0,
+      "no_speech_prob": 0.0,
+      "start": 480.0,
+      "text": "明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.107415,
+      "compression_ratio": 10.885714,
+      "end": 482.0,
+      "no_speech_prob": 0.0,
+      "start": 481.0,
+      "text": "明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.107415,
+      "compression_ratio": 10.885714,
+      "end": 483.0,
+      "no_speech_prob": 0.0,
+      "start": 482.0,
+      "text": "明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.107415,
+      "compression_ratio": 10.885714,
+      "end": 484.0,
+      "no_speech_prob": 0.0,
+      "start": 483.0,
+      "text": "明镜与点栏目"
+    },
+    {
+      "avg_logprob": -0.107415,
+      "compression_ratio": 10.885714,
+      "end": 485.0,
+      "no_speech_prob": 0.0,
+      "start": 484.0,
+      "text": "明镜与点栏目"
+    },
+    {
+      "avg_logprob": -0.107415,
+      "compression_ratio": 10.885714,
+      "end": 486.0,
+      "no_speech_prob": 0.0,
+      "start": 485.0,
+      "text": "明镜与点栏目"
+    },
+    {
+      "avg_logprob": -0.110633,
+      "compression_ratio": 0.851351,
+      "end": 515.98,
+      "no_speech_prob": 0.0,
+      "start": 486.0,
+      "text": "请不吝点赞 订阅 转发 打赏支持明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.058667,
+      "compression_ratio": 0.851351,
+      "end": 545.98,
+      "no_speech_prob": 0.0,
+      "start": 516.0,
+      "text": "请不吝点赞 订阅 转发 打赏支持明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.37936,
+      "compression_ratio": 0.838235,
+      "end": 552.0,
+      "no_speech_prob": 0.0,
+      "start": 546.0,
+      "text": "不知一谁能共"
+    },
+    {
+      "avg_logprob": -0.37936,
+      "compression_ratio": 0.838235,
+      "end": 558.0,
+      "no_speech_prob": 0.0,
+      "start": 552.0,
+      "text": "多少秘密在其中"
+    },
+    {
+      "avg_logprob": -0.37936,
+      "compression_ratio": 0.838235,
+      "end": 563.0,
+      "no_speech_prob": 0.0,
+      "start": 558.0,
+      "text": "欲数无人能懂"
+    },
+    {
+      "avg_logprob": -0.285753,
+      "compression_ratio": 0.765957,
+      "end": 569.0,
+      "no_speech_prob": 0.0,
+      "start": 563.0,
+      "text": "窗外更深入中"
+    },
+    {
+      "avg_logprob": -0.285753,
+      "compression_ratio": 0.765957,
+      "end": 573.0,
+      "no_speech_prob": 0.0,
+      "start": 569.0,
+      "text": "今夜落花成中"
+    },
+    {
+      "avg_logprob": -0.197661,
+      "compression_ratio": 0.65625,
+      "end": 579.0,
+      "no_speech_prob": 0.0,
+      "start": 573.0,
+      "text": "春来春去居屋中"
+    },
+    {
+      "avg_logprob": -0.226532,
+      "compression_ratio": 0.62069,
+      "end": 585.0,
+      "no_speech_prob": 0.0,
+      "start": 579.0,
+      "text": "徒留一脸幽默"
+    },
+    {
+      "avg_logprob": -0.254001,
+      "compression_ratio": 0.666667,
+      "end": 591.0,
+      "no_speech_prob": 0.0,
+      "start": 585.0,
+      "text": "谁能借我亲中"
+    },
+    {
+      "avg_logprob": -0.176585,
+      "compression_ratio": 0.830769,
+      "end": 597.0,
+      "no_speech_prob": 0.0,
+      "start": 591.0,
+      "text": "是谁带来苦痛"
+    },
+    {
+      "avg_logprob": -0.176585,
+      "compression_ratio": 0.830769,
+      "end": 602.0,
+      "no_speech_prob": 0.0,
+      "start": 597.0,
+      "text": "多少分在其中"
+    },
+    {
+      "avg_logprob": -0.176585,
+      "compression_ratio": 0.830769,
+      "end": 607.0,
+      "no_speech_prob": 0.0,
+      "start": 602.0,
+      "text": "唯有战友能懂"
+    },
+    {
+      "avg_logprob": -0.374602,
+      "compression_ratio": 1.839286,
+      "end": 611.0,
+      "no_speech_prob": 0.0,
+      "start": 607.0,
+      "text": "怎么样 怎么样 怎么样 怎么样 怎么样 啊"
+    },
+    {
+      "avg_logprob": -0.374602,
+      "compression_ratio": 1.839286,
+      "end": 613.0,
+      "no_speech_prob": 0.0,
+      "start": 611.0,
+      "text": "怎么样 兄弟姐妹妹 啊"
+    },
+    {
+      "avg_logprob": -0.374602,
+      "compression_ratio": 1.839286,
+      "end": 615.0,
+      "no_speech_prob": 0.0,
+      "start": 613.0,
+      "text": "这啥子怎么样啊"
+    },
+    {
+      "avg_logprob": -0.466965,
+      "compression_ratio": 0.792453,
+      "end": 621.0,
+      "no_speech_prob": 0.0,
+      "start": 615.0,
+      "text": "谁愿意欺格灭工"
+    },
+    {
+      "avg_logprob": -0.466965,
+      "compression_ratio": 0.792453,
+      "end": 627.0,
+      "no_speech_prob": 0.0,
+      "start": 621.0,
+      "text": "打破千年的牢笼"
+    },
+    {
+      "avg_logprob": -0.339426,
+      "compression_ratio": 0.65625,
+      "end": 633.0,
+      "no_speech_prob": 0.0,
+      "start": 627.0,
+      "text": "中华儿女多英雄"
+    },
+    {
+      "avg_logprob": -0.284683,
+      "compression_ratio": 0.65625,
+      "end": 639.0,
+      "no_speech_prob": 0.0,
+      "start": 633.0,
+      "text": "今朝叛古必相逢"
+    },
+    {
+      "avg_logprob": -3.404193,
+      "compression_ratio": 1.009709,
+      "end": 644.0,
+      "no_speech_prob": 0.0,
+      "start": 639.0,
+      "text": "都能做出 minds"
+    },
+    {
+      "avg_logprob": -3.404193,
+      "compression_ratio": 1.009709,
+      "end": 646.0,
+      "no_speech_prob": 0.0,
+      "start": 644.0,
+      "text": "例えば11年"
+    },
+    {
+      "avg_logprob": -3.404193,
+      "compression_ratio": 1.009709,
+      "end": 647.8,
+      "no_speech_prob": 0.0,
+      "start": 646.0,
+      "text": "称次行"
+    },
+    {
+      "avg_logprob": -3.404193,
+      "compression_ratio": 1.009709,
+      "end": 649.0,
+      "no_speech_prob": 0.0,
+      "start": 648.0,
+      "text": "撑屋都能做出"
+    },
+    {
+      "avg_logprob": -3.404193,
+      "compression_ratio": 1.009709,
+      "end": 650.0,
+      "no_speech_prob": 0.0,
+      "start": 649.0,
+      "text": "只可以用"
+    },
+    {
+      "avg_logprob": -3.404193,
+      "compression_ratio": 1.009709,
+      "end": 651.0,
+      "no_speech_prob": 0.0,
+      "start": 650.0,
+      "text": "走称次行"
+    },
+    {
+      "avg_logprob": -3.404193,
+      "compression_ratio": 1.009709,
+      "end": 652.0,
+      "no_speech_prob": 0.0,
+      "start": 651.0,
+      "text": "《其中华灰》"
+    },
+    {
+      "avg_logprob": -0.107775,
+      "compression_ratio": 37.166667,
+      "end": 682.0,
+      "no_speech_prob": 0.0,
+      "start": 652.0,
+      "text": "啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦"
+    },
+    {
+      "avg_logprob": -0.401673,
+      "compression_ratio": 1.35426,
+      "end": 683.16,
+      "no_speech_prob": 0.0,
+      "start": 682.0,
+      "text": "就是這個扣子啊"
+    },
+    {
+      "avg_logprob": -0.401673,
+      "compression_ratio": 1.35426,
+      "end": 685.4,
+      "no_speech_prob": 0.0,
+      "start": 683.16,
+      "text": "這外國人這個扣子是怎麼明白的"
+    },
+    {
+      "avg_logprob": -0.401673,
+      "compression_ratio": 1.35426,
+      "end": 687.2,
+      "no_speech_prob": 0.0,
+      "start": 685.4,
+      "text": "老自動脫衣"
+    },
+    {
+      "avg_logprob": -0.401673,
+      "compression_ratio": 1.35426,
+      "end": 689.1,
+      "no_speech_prob": 0.0,
+      "start": 688.1,
+      "text": "自動脫"
+    },
+    {
+      "avg_logprob": -0.401673,
+      "compression_ratio": 1.35426,
+      "end": 690.3,
+      "no_speech_prob": 0.0,
+      "start": 689.4,
+      "text": "自動脫"
+    },
+    {
+      "avg_logprob": -0.401673,
+      "compression_ratio": 1.35426,
+      "end": 692.24,
+      "no_speech_prob": 0.0,
+      "start": 691.2,
+      "text": "哎呀我這嘴怎麼"
+    },
+    {
+      "avg_logprob": -0.401673,
+      "compression_ratio": 1.35426,
+      "end": 693.2,
+      "no_speech_prob": 0.0,
+      "start": 692.24,
+      "text": "嘴咱這樣啊"
+    },
+    {
+      "avg_logprob": -0.401673,
+      "compression_ratio": 1.35426,
+      "end": 700.4,
+      "no_speech_prob": 0.0,
+      "start": 697.56,
+      "text": "哎呀這個雖然是一晚上沒睡覺"
+    },
+    {
+      "avg_logprob": -0.401673,
+      "compression_ratio": 1.35426,
+      "end": 703.3,
+      "no_speech_prob": 0.0,
+      "start": 700.4,
+      "text": "但是精神非常的好啊"
+    },
+    {
+      "avg_logprob": -0.401673,
+      "compression_ratio": 1.35426,
+      "end": 705.5,
+      "no_speech_prob": 0.0,
+      "start": 703.3,
+      "text": "24號兄弟姐妹們大家好啊"
+    },
+    {
+      "avg_logprob": -0.401673,
+      "compression_ratio": 1.35426,
+      "end": 707.9,
+      "no_speech_prob": 0.0,
+      "start": 706.0,
+      "text": "這個機會晚上睡覺啊"
+    },
+    {
+      "avg_logprob": -0.401673,
+      "compression_ratio": 1.35426,
+      "end": 710.0,
+      "no_speech_prob": 0.0,
+      "start": 707.9,
+      "text": "從四點鐘好消息到現在"
+    },
+    {
+      "avg_logprob": -0.401673,
+      "compression_ratio": 1.35426,
+      "end": 711.7,
+      "no_speech_prob": 0.0,
+      "start": 710.4,
+      "text": "沒完沒了啊"
+    },
+    {
+      "avg_logprob": -0.444087,
+      "compression_ratio": 1.181347,
+      "end": 714.4,
+      "no_speech_prob": 0.0,
+      "start": 712.0,
+      "text": "這好消息弄得我也睡不著覺啊"
+    },
+    {
+      "avg_logprob": -0.444087,
+      "compression_ratio": 1.181347,
+      "end": 715.4,
+      "no_speech_prob": 0.0,
+      "start": 714.4,
+      "text": "你說啊"
+    },
+    {
+      "avg_logprob": -0.444087,
+      "compression_ratio": 1.181347,
+      "end": 720.8,
+      "no_speech_prob": 0.0,
+      "start": 720.0,
+      "text": "這啥意思"
+    },
+    {
+      "avg_logprob": -0.444087,
+      "compression_ratio": 1.181347,
+      "end": 726.3,
+      "no_speech_prob": 0.0,
+      "start": 724.7,
+      "text": "東奧會開幕式"
+    },
+    {
+      "avg_logprob": -0.444087,
+      "compression_ratio": 1.181347,
+      "end": 727.8,
+      "no_speech_prob": 0.0,
+      "start": 726.3,
+      "text": "大火車司機說"
+    },
+    {
+      "avg_logprob": -0.444087,
+      "compression_ratio": 1.181347,
+      "end": 730.2,
+      "no_speech_prob": 0.0,
+      "start": 728.3,
+      "text": "韓國酒店沒有光衣"
+    },
+    {
+      "avg_logprob": -0.444087,
+      "compression_ratio": 1.181347,
+      "end": 731.1,
+      "no_speech_prob": 0.0,
+      "start": 730.2,
+      "text": "一片起黑了"
+    },
+    {
+      "avg_logprob": -0.444087,
+      "compression_ratio": 1.181347,
+      "end": 732.5,
+      "no_speech_prob": 0.0,
+      "start": 731.1,
+      "text": "老大帽是垃圾了"
+    },
+    {
+      "avg_logprob": -0.444087,
+      "compression_ratio": 1.181347,
+      "end": 733.6,
+      "no_speech_prob": 0.0,
+      "start": 732.5,
+      "text": "太好聽了"
+    },
+    {
+      "avg_logprob": -0.444087,
+      "compression_ratio": 1.181347,
+      "end": 735.0,
+      "no_speech_prob": 0.0,
+      "start": 734.4,
+      "text": "是吧"
+    },
+    {
+      "avg_logprob": -0.444087,
+      "compression_ratio": 1.181347,
+      "end": 739.2,
+      "no_speech_prob": 0.0,
+      "start": 735.6,
+      "text": "這個韓國酒店龍頭一片黑的"
+    },
+    {
+      "avg_logprob": -0.444087,
+      "compression_ratio": 1.181347,
+      "end": 740.8,
+      "no_speech_prob": 0.0,
+      "start": 739.2,
+      "text": "裡面全是特警"
+    },
+    {
+      "avg_logprob": -0.717821,
+      "compression_ratio": 1.0,
+      "end": 742.2,
+      "no_speech_prob": 0.0,
+      "start": 740.8,
+      "text": "全是特警啊"
+    },
+    {
+      "avg_logprob": -0.717821,
+      "compression_ratio": 1.0,
+      "end": 745.0,
+      "no_speech_prob": 0.0,
+      "start": 742.2,
+      "text": "七星有天現在起了全是特警啊"
+    },
+    {
+      "avg_logprob": -0.717821,
+      "compression_ratio": 1.0,
+      "end": 747.9,
+      "no_speech_prob": 0.0,
+      "start": 746.2,
+      "text": "很多人都在問"
+    },
+    {
+      "avg_logprob": -0.538871,
+      "compression_ratio": 0.956522,
+      "end": 751.3,
+      "no_speech_prob": 0.0,
+      "start": 747.9,
+      "text": "韓國龍頭怎麼成了龜頭呢"
+    },
+    {
+      "avg_logprob": -0.538871,
+      "compression_ratio": 0.956522,
+      "end": 752.8,
+      "no_speech_prob": 0.0,
+      "start": 751.3,
+      "text": "成了包頭呢"
+    },
+    {
+      "avg_logprob": -0.538871,
+      "compression_ratio": 0.956522,
+      "end": 754.5,
+      "no_speech_prob": 0.0,
+      "start": 753.6,
+      "text": "好啊"
+    },
+    {
+      "avg_logprob": -0.538871,
+      "compression_ratio": 0.956522,
+      "end": 762.8,
+      "no_speech_prob": 0.0,
+      "start": 761.7,
+      "text": "呆若木雞"
+    },
+    {
+      "avg_logprob": -0.711437,
+      "compression_ratio": 0.968504,
+      "end": 764.9,
+      "no_speech_prob": 0.0,
+      "start": 762.8,
+      "text": "西川的一身黑"
+    },
+    {
+      "avg_logprob": -0.711437,
+      "compression_ratio": 0.968504,
+      "end": 766.2,
+      "no_speech_prob": 0.0,
+      "start": 764.9,
+      "text": "呆若木雞是吧"
+    },
+    {
+      "avg_logprob": -0.711437,
+      "compression_ratio": 0.968504,
+      "end": 767.2,
+      "no_speech_prob": 0.0,
+      "start": 766.2,
+      "text": "嗯"
+    },
+    {
+      "avg_logprob": -0.711437,
+      "compression_ratio": 0.968504,
+      "end": 770.6,
+      "no_speech_prob": 0.0,
+      "start": 769.4,
+      "text": "然後啥這個"
+    },
+    {
+      "avg_logprob": -0.711437,
+      "compression_ratio": 0.968504,
+      "end": 774.9,
+      "no_speech_prob": 0.0,
+      "start": 771.6,
+      "text": "所有的那個大戰友們都到下面去留言啊"
+    },
+    {
+      "avg_logprob": -0.711437,
+      "compression_ratio": 0.968504,
+      "end": 776.2,
+      "no_speech_prob": 0.0,
+      "start": 774.9,
+      "text": "他們海外的CTT"
+    },
+    {
+      "avg_logprob": -0.518343,
+      "compression_ratio": 1.215686,
+      "end": 778.6,
+      "no_speech_prob": 0.0,
+      "start": 776.2,
+      "text": "一百一百一十八個人看"
+    },
+    {
+      "avg_logprob": -0.518343,
+      "compression_ratio": 1.215686,
+      "end": 780.0,
+      "no_speech_prob": 0.0,
+      "start": 778.6,
+      "text": "然後下面罵他們"
+    },
+    {
+      "avg_logprob": -0.518343,
+      "compression_ratio": 1.215686,
+      "end": 781.4,
+      "no_speech_prob": 0.0,
+      "start": 780.0,
+      "text": "發到傷了傷不及"
+    },
+    {
+      "avg_logprob": -0.518343,
+      "compression_ratio": 1.215686,
+      "end": 785.1,
+      "no_speech_prob": 0.0,
+      "start": 781.9,
+      "text": "誰是說全力以赴戰友們去跟他們下面的原理啊"
+    },
+    {
+      "avg_logprob": -0.518343,
+      "compression_ratio": 1.215686,
+      "end": 788.0,
+      "no_speech_prob": 0.0,
+      "start": 785.6,
+      "text": "罵這幫孫子去詛咒他們去啊"
+    },
+    {
+      "avg_logprob": -0.518343,
+      "compression_ratio": 1.215686,
+      "end": 797.6,
+      "no_speech_prob": 0.0,
+      "start": 796.6,
+      "text": "呆若木雛"
+    },
+    {
+      "avg_logprob": -0.518343,
+      "compression_ratio": 1.215686,
+      "end": 800.3,
+      "no_speech_prob": 0.0,
+      "start": 799.9,
+      "text": "哎呀"
+    },
+    {
+      "avg_logprob": -0.431413,
+      "compression_ratio": 1.150376,
+      "end": 802.1,
+      "no_speech_prob": 0.0,
+      "start": 800.3,
+      "text": "我得尿了這習近平啊"
+    },
+    {
+      "avg_logprob": -0.431413,
+      "compression_ratio": 1.150376,
+      "end": 803.0,
+      "no_speech_prob": 0.0,
+      "start": 802.1,
+      "text": "習近平啊"
+    },
+    {
+      "avg_logprob": -0.431413,
+      "compression_ratio": 1.150376,
+      "end": 804.3,
+      "no_speech_prob": 0.0,
+      "start": 803.0,
+      "text": "這會慘大發了"
+    },
+    {
+      "avg_logprob": -0.431413,
+      "compression_ratio": 1.150376,
+      "end": 811.1,
+      "no_speech_prob": 0.0,
+      "start": 808.4,
+      "text": "我知道冬奧會開成冬元會啊"
+    },
+    {
+      "avg_logprob": -0.431413,
+      "compression_ratio": 1.150376,
+      "end": 813.1,
+      "no_speech_prob": 0.0,
+      "start": 811.1,
+      "text": "我沒想到開那麼差"
+    },
+    {
+      "avg_logprob": -0.431413,
+      "compression_ratio": 1.150376,
+      "end": 815.4,
+      "no_speech_prob": 0.0,
+      "start": 813.4,
+      "text": "這還沒開始得出那麼多事"
+    },
+    {
+      "avg_logprob": -0.431413,
+      "compression_ratio": 1.150376,
+      "end": 819.7,
+      "no_speech_prob": 0.0,
+      "start": 818.9,
+      "text": "哎"
+    },
+    {
+      "avg_logprob": -0.323998,
+      "compression_ratio": 1.264865,
+      "end": 821.1,
+      "no_speech_prob": 0.0,
+      "start": 819.7,
+      "text": "咋弄了"
+    },
+    {
+      "avg_logprob": -0.323998,
+      "compression_ratio": 1.264865,
+      "end": 822.0,
+      "no_speech_prob": 0.0,
+      "start": 821.1,
+      "text": "咋弄了"
+    },
+    {
+      "avg_logprob": -0.323998,
+      "compression_ratio": 1.264865,
+      "end": 824.8,
+      "no_speech_prob": 0.0,
+      "start": 822.5,
+      "text": "他看到那個變成龜頭的龍頭"
+    },
+    {
+      "avg_logprob": -0.323998,
+      "compression_ratio": 1.264865,
+      "end": 826.9,
+      "no_speech_prob": 0.0,
+      "start": 824.8,
+      "text": "他做何感想啊"
+    },
+    {
+      "avg_logprob": -0.323998,
+      "compression_ratio": 1.264865,
+      "end": 832.0,
+      "no_speech_prob": 0.0,
+      "start": 830.6,
+      "text": "整個現場啊"
+    },
+    {
+      "avg_logprob": -0.323998,
+      "compression_ratio": 1.264865,
+      "end": 833.5,
+      "no_speech_prob": 0.0,
+      "start": 832.2,
+      "text": "一片哀紅"
+    },
+    {
+      "avg_logprob": -0.323998,
+      "compression_ratio": 1.264865,
+      "end": 835.8,
+      "no_speech_prob": 0.0,
+      "start": 834.7,
+      "text": "從過去的"
+    },
+    {
+      "avg_logprob": -0.323998,
+      "compression_ratio": 1.264865,
+      "end": 837.5,
+      "no_speech_prob": 0.0,
+      "start": 836.2,
+      "text": "兩個半小時"
+    },
+    {
+      "avg_logprob": -0.323998,
+      "compression_ratio": 1.264865,
+      "end": 838.5,
+      "no_speech_prob": 0.0,
+      "start": 837.5,
+      "text": "縮減成"
+    },
+    {
+      "avg_logprob": -0.323998,
+      "compression_ratio": 1.264865,
+      "end": 840.7,
+      "no_speech_prob": 0.0,
+      "start": 838.8,
+      "text": "所謂的一小時四十分鐘"
+    },
+    {
+      "avg_logprob": -0.323998,
+      "compression_ratio": 1.264865,
+      "end": 842.9,
+      "no_speech_prob": 0.0,
+      "start": 841.2,
+      "text": "現在時間說還要短"
+    },
+    {
+      "avg_logprob": -0.323998,
+      "compression_ratio": 1.264865,
+      "end": 844.5,
+      "no_speech_prob": 0.0,
+      "start": 843.7,
+      "text": "你說咋弄嗎"
+    },
+    {
+      "avg_logprob": -0.323998,
+      "compression_ratio": 1.264865,
+      "end": 845.5,
+      "no_speech_prob": 0.0,
+      "start": 844.5,
+      "text": "出大事了"
+    },
+    {
+      "avg_logprob": -0.323998,
+      "compression_ratio": 1.264865,
+      "end": 846.5,
+      "no_speech_prob": 0.0,
+      "start": 845.5,
+      "text": "出大事了"
+    },
+    {
+      "avg_logprob": -0.323998,
+      "compression_ratio": 1.264865,
+      "end": 849.3,
+      "no_speech_prob": 0.0,
+      "start": 848.8,
+      "text": "完了"
+    },
+    {
+      "avg_logprob": -0.247408,
+      "compression_ratio": 1.310345,
+      "end": 852.6,
+      "no_speech_prob": 0.0,
+      "start": 850.6,
+      "text": "現在我要擔心的是台灣呢"
+    },
+    {
+      "avg_logprob": -0.247408,
+      "compression_ratio": 1.310345,
+      "end": 853.3,
+      "no_speech_prob": 0.0,
+      "start": 852.6,
+      "text": "台灣呢"
+    },
+    {
+      "avg_logprob": -0.247408,
+      "compression_ratio": 1.310345,
+      "end": 854.3,
+      "no_speech_prob": 0.0,
+      "start": 853.3,
+      "text": "兄弟姐妹們"
+    },
+    {
+      "avg_logprob": -0.247408,
+      "compression_ratio": 1.310345,
+      "end": 855.2,
+      "no_speech_prob": 0.0,
+      "start": 854.3,
+      "text": "台灣呢"
+    },
+    {
+      "avg_logprob": -0.247408,
+      "compression_ratio": 1.310345,
+      "end": 858.4,
+      "no_speech_prob": 0.0,
+      "start": 857.7,
+      "text": "哎呀"
+    },
+    {
+      "avg_logprob": -0.247408,
+      "compression_ratio": 1.310345,
+      "end": 859.9,
+      "no_speech_prob": 0.0,
+      "start": 858.5,
+      "text": "台灣呢"
+    },
+    {
+      "avg_logprob": -0.247408,
+      "compression_ratio": 1.310345,
+      "end": 864.5,
+      "no_speech_prob": 0.0,
+      "start": 862.1,
+      "text": "各國使團來之前"
+    },
+    {
+      "avg_logprob": -0.247408,
+      "compression_ratio": 1.310345,
+      "end": 865.9,
+      "no_speech_prob": 0.0,
+      "start": 864.5,
+      "text": "無處刁難"
+    },
+    {
+      "avg_logprob": -0.247408,
+      "compression_ratio": 1.310345,
+      "end": 867.3,
+      "no_speech_prob": 0.0,
+      "start": 866.2,
+      "text": "到了以後"
+    },
+    {
+      "avg_logprob": -0.247408,
+      "compression_ratio": 1.310345,
+      "end": 869.2,
+      "no_speech_prob": 0.0,
+      "start": 867.3,
+      "text": "現在是困難重重"
+    },
+    {
+      "avg_logprob": -0.247408,
+      "compression_ratio": 1.310345,
+      "end": 870.8,
+      "no_speech_prob": 0.0,
+      "start": 869.6,
+      "text": "然後現在是"
+    },
+    {
+      "avg_logprob": -0.247408,
+      "compression_ratio": 1.310345,
+      "end": 872.0,
+      "no_speech_prob": 0.0,
+      "start": 870.8,
+      "text": "各個威脅"
+    },
+    {
+      "avg_logprob": -0.247408,
+      "compression_ratio": 1.310345,
+      "end": 873.5,
+      "no_speech_prob": 0.0,
+      "start": 872.0,
+      "text": "跟黑幫似的"
+    },
+    {
+      "avg_logprob": -0.247408,
+      "compression_ratio": 1.310345,
+      "end": 876.3,
+      "no_speech_prob": 0.0,
+      "start": 874.4,
+      "text": "中央警衛局的哥們說完了"
+    },
+    {
+      "avg_logprob": -0.247408,
+      "compression_ratio": 1.310345,
+      "end": 877.4,
+      "no_speech_prob": 0.0,
+      "start": 876.9,
+      "text": "七哥"
+    },
+    {
+      "avg_logprob": -0.364305,
+      "compression_ratio": 1.404624,
+      "end": 878.0,
+      "no_speech_prob": 0.0,
+      "start": 877.4,
+      "text": "這些人"
+    },
+    {
+      "avg_logprob": -0.364305,
+      "compression_ratio": 1.404624,
+      "end": 878.9,
+      "no_speech_prob": 0.0,
+      "start": 878.0,
+      "text": "簡直就是"
+    },
+    {
+      "avg_logprob": -0.364305,
+      "compression_ratio": 1.404624,
+      "end": 879.7,
+      "no_speech_prob": 0.0,
+      "start": 878.9,
+      "text": "來的這些人"
+    },
+    {
+      "avg_logprob": -0.364305,
+      "compression_ratio": 1.404624,
+      "end": 881.5,
+      "no_speech_prob": 0.0,
+      "start": 879.7,
+      "text": "哪來是參加中央會來了"
+    },
+    {
+      "avg_logprob": -0.364305,
+      "compression_ratio": 1.404624,
+      "end": 883.7,
+      "no_speech_prob": 0.0,
+      "start": 882.0,
+      "text": "全部都是來要錢來了"
+    },
+    {
+      "avg_logprob": -0.364305,
+      "compression_ratio": 1.404624,
+      "end": 884.8,
+      "no_speech_prob": 0.0,
+      "start": 884.0,
+      "text": "都是要帳鬼"
+    },
+    {
+      "avg_logprob": -0.364305,
+      "compression_ratio": 1.404624,
+      "end": 886.5,
+      "no_speech_prob": 0.0,
+      "start": 885.7,
+      "text": "動物動物就威脅"
+    },
+    {
+      "avg_logprob": -0.364305,
+      "compression_ratio": 1.404624,
+      "end": 887.2,
+      "no_speech_prob": 0.0,
+      "start": 886.5,
+      "text": "你信不信"
+    },
+    {
+      "avg_logprob": -0.364305,
+      "compression_ratio": 1.404624,
+      "end": 888.6,
+      "no_speech_prob": 0.0,
+      "start": 887.2,
+      "text": "我們現在開飛機回去"
+    },
+    {
+      "avg_logprob": -0.364305,
+      "compression_ratio": 1.404624,
+      "end": 891.7,
+      "no_speech_prob": 0.0,
+      "start": 891.0,
+      "text": "哇塞"
+    },
+    {
+      "avg_logprob": -0.364305,
+      "compression_ratio": 1.404624,
+      "end": 892.7,
+      "no_speech_prob": 0.0,
+      "start": 891.7,
+      "text": "簡直是了"
+    },
+    {
+      "avg_logprob": -0.364305,
+      "compression_ratio": 1.404624,
+      "end": 893.6,
+      "no_speech_prob": 0.0,
+      "start": 892.7,
+      "text": "哎呀"
+    },
+    {
+      "avg_logprob": -0.364305,
+      "compression_ratio": 1.404624,
+      "end": 896.1,
+      "no_speech_prob": 0.0,
+      "start": 895.2,
+      "text": "動物動物就說"
+    },
+    {
+      "avg_logprob": -0.364305,
+      "compression_ratio": 1.404624,
+      "end": 897.0,
+      "no_speech_prob": 0.0,
+      "start": 896.3,
+      "text": "信不信"
+    },
+    {
+      "avg_logprob": -0.364305,
+      "compression_ratio": 1.404624,
+      "end": 898.3,
+      "no_speech_prob": 0.0,
+      "start": 897.0,
+      "text": "不行我們開飛回去"
+    },
+    {
+      "avg_logprob": -0.575192,
+      "compression_ratio": 22.448276,
+      "end": 905.0,
+      "no_speech_prob": 0.0,
+      "start": 898.3,
+      "text": "先omp"
+    },
+    {
+      "avg_logprob": -0.575192,
+      "compression_ratio": 22.448276,
+      "end": 906.1,
+      "no_speech_prob": 0.0,
+      "start": 905.2,
+      "text": "再走"
+    }
+  ],
+  "text": "请不吝点赞 订阅 转发 打赏支持明镜与点点栏目明镜与点点栏目明镜与点点栏目明镜与点点栏目明镜与点点栏目明镜与点点栏目明镜与点点栏目明镜与点点栏目明镜与点点栏目明镜与点点栏目明镜与点点栏目明镜与点点栏目明镜与点栏目明镜与点栏目明镜与点栏目请不吝点赞 订阅 转发 打赏支持明镜与点点栏目明镜与点点栏目明镜与点点栏目明镜与点点栏目明镜与点点栏目明镜与点点栏目明镜与点点栏目明镜与点点栏目明镜与点点栏目明镜与点点栏目明镜与点点栏目明镜与点点栏目明镜与点栏目明镜与点栏目明镜与点栏目请不吝点赞 订阅 转发 打赏支持明镜与点点栏目明镜与点点栏目明镜与点点栏目明镜与点点栏目明镜与点点栏目明镜与点点栏目明镜与点点栏目明镜与点点栏目明镜与点点栏目明镜与点点栏目明镜与点点栏目明镜与点点栏目明镜与点栏目明镜与点栏目明镜与点栏目请不吝点赞 订阅 转发 打赏支持明镜与点点栏目请不吝点赞 订阅 转发 打赏支持明镜与点点栏目不知一谁能共多少秘密在其中欲数无人能懂窗外更深入中今夜落花成中春来春去居屋中徒留一脸幽默谁能借我亲中是谁带来苦痛多少分在其中唯有战友能懂怎么样 怎么样 怎么样 怎么样 怎么样 啊怎么样 兄弟姐妹妹 啊这啥子怎么样啊谁愿意欺格灭工打破千年的牢笼中华儿女多英雄今朝叛古必相逢都能做出 minds例えば11年称次行撑屋都能做出只可以用走称次行《其中华灰》啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦就是這個扣子啊這外國人這個扣子是怎麼明白的老自動脫衣自動脫自動脫哎呀我這嘴怎麼嘴咱這樣啊哎呀這個雖然是一晚上沒睡覺但是精神非常的好啊24號兄弟姐妹們大家好啊這個機會晚上睡覺啊從四點鐘好消息到現在沒完沒了啊這好消息弄得我也睡不著覺啊你說啊這啥意思東奧會開幕式大火車司機說韓國酒店沒有光衣一片起黑了老大帽是垃圾了太好聽了是吧這個韓國酒店龍頭一片黑的裡面全是特警全是特警啊七星有天現在起了全是特警啊很多人都在問韓國龍頭怎麼成了龜頭呢成了包頭呢好啊呆若木雞西川的一身黑呆若木雞是吧嗯然後啥這個所有的那個大戰友們都到下面去留言啊他們海外的CTT一百一百一十八個人看然後下面罵他們發到傷了傷不及誰是說全力以赴戰友們去跟他們下面的原理啊罵這幫孫子去詛咒他們去啊呆若木雛哎呀我得尿了這習近平啊習近平啊這會慘大發了我知道冬奧會開成冬元會啊我沒想到開那麼差這還沒開始得出那麼多事哎咋弄了咋弄了他看到那個變成龜頭的龍頭他做何感想啊整個現場啊一片哀紅從過去的兩個半小時縮減成所謂的一小時四十分鐘現在時間說還要短你說咋弄嗎出大事了出大事了完了現在我要擔心的是台灣呢台灣呢兄弟姐妹們台灣呢哎呀台灣呢各國使團來之前無處刁難到了以後現在是困難重重然後現在是各個威脅跟黑幫似的中央警衛局的哥們說完了七哥這些人簡直就是來的這些人哪來是參加中央會來了全部都是來要錢來了都是要帳鬼動物動物就威脅你信不信我們現在開飛機回去哇塞簡直是了哎呀動物動物就說信不信不行我們開飛回去先omp再走"
+}
