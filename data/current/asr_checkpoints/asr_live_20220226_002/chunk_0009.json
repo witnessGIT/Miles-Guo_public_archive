@@ -1,0 +1,32 @@
+{
+  "chunk_audio_sha256": "3d0fa728dfa284251692393f81f7fd273975b2d8b250a90b507df167b0e59b9f",
+  "chunk_index": 9,
+  "completed_at": "2026-10-25T13:59:24Z",
+  "language": "zh",
+  "live_id": "LIVE_20220226_002",
+  "media_committed_to_git": false,
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "offset_sec": 8100,
+  "paid_api_used": false,
+  "processing_location": "github-hosted-macos-arm64",
+  "schema_version": "cloud-asr-chunk-v1",
+  "segments": [
+    {
+      "avg_logprob": -0.217628,
+      "compression_ratio": 0.875,
+      "end": 8129.98,
+      "no_speech_prob": 0.0,
+      "start": 8100.0,
+      "text": "优优独播剧场——YoYo Television Series Exclusive"
+    },
+    {
+      "avg_logprob": -0.147277,
+      "compression_ratio": 0.875,
+      "end": 8159.98,
+      "no_speech_prob": 0.0,
+      "start": 8130.0,
+      "text": "优优独播剧场——YoYo Television Series Exclusive"
+    }
+  ],
+  "text": "优优独播剧场——YoYo Television Series Exclusive优优独播剧场——YoYo Television Series Exclusive"
+}
