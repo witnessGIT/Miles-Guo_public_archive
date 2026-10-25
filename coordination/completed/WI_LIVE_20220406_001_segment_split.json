@@ -1,0 +1,16 @@
+{
+  "task_id": "WI_LIVE_20220406_001_segment_split",
+  "agent_id": "codex-local-asr-agent50-20261023",
+  "completed_at": "2026-10-25T12:40:38.709247+00:00",
+  "result_commit": "9a32d958e17d8ddbdabf705983b32f97d543b9c5",
+  "outputs": [
+    "data/current/live_segments/asr_live_20220406_001.jsonl"
+  ],
+  "validation": "4 natural topic segments generated from 96 ordered cues; timing and text coverage preserved; agent-reviewed headlines, summaries, and topics; source transcript remains machine-generated and unverified",
+  "workflow_mode": "continuous-worker-v2",
+  "claim_protocol": "claim-protocol-v2",
+  "entry_mode": "work",
+  "continue_after_finish": true,
+  "finish_prerequisites_revalidated": true,
+  "notes": "Task completed only after re-checking the latest repository dependency contract. Under continuous-worker-v2, refresh repository state and claim the next eligible task unless a documented stop condition applies."
+}
