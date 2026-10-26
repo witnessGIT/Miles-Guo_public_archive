@@ -1,0 +1,656 @@
+{
+  "chunk_audio_sha256": "54ff0dddc3a494a40fb6a4f233c12acb33b44180c447a47963a48e2d58197333",
+  "chunk_index": 25,
+  "completed_at": "2026-10-26T06:52:12Z",
+  "language": "zh",
+  "live_id": "LIVE_20220201_001",
+  "media_committed_to_git": false,
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "offset_sec": 22500,
+  "paid_api_used": false,
+  "processing_location": "github-hosted-macos-arm64",
+  "schema_version": "cloud-asr-chunk-v1",
+  "segments": [
+    {
+      "avg_logprob": -0.962658,
+      "compression_ratio": 0.710526,
+      "end": 22501.0,
+      "no_speech_prob": 0.0,
+      "start": 22500.0,
+      "text": "啊"
+    },
+    {
+      "avg_logprob": -0.962658,
+      "compression_ratio": 0.710526,
+      "end": 22507.0,
+      "no_speech_prob": 0.0,
+      "start": 22501.0,
+      "text": "追随著心中的希望"
+    },
+    {
+      "avg_logprob": -0.734468,
+      "compression_ratio": 1.928571,
+      "end": 22533.0,
+      "no_speech_prob": 0.0,
+      "start": 22530.0,
+      "text": "啊"
+    },
+    {
+      "avg_logprob": -0.734468,
+      "compression_ratio": 1.928571,
+      "end": 22537.0,
+      "no_speech_prob": 0.0,
+      "start": 22533.0,
+      "text": "啊"
+    },
+    {
+      "avg_logprob": -0.734468,
+      "compression_ratio": 1.928571,
+      "end": 22540.0,
+      "no_speech_prob": 0.0,
+      "start": 22537.0,
+      "text": "啊"
+    },
+    {
+      "avg_logprob": -0.734468,
+      "compression_ratio": 1.928571,
+      "end": 22543.0,
+      "no_speech_prob": 0.0,
+      "start": 22540.0,
+      "text": "啊"
+    },
+    {
+      "avg_logprob": -0.734468,
+      "compression_ratio": 1.928571,
+      "end": 22546.0,
+      "no_speech_prob": 0.0,
+      "start": 22543.0,
+      "text": "啊"
+    },
+    {
+      "avg_logprob": -0.734468,
+      "compression_ratio": 1.928571,
+      "end": 22548.0,
+      "no_speech_prob": 0.0,
+      "start": 22546.0,
+      "text": "啊"
+    },
+    {
+      "avg_logprob": -0.734468,
+      "compression_ratio": 1.928571,
+      "end": 22550.0,
+      "no_speech_prob": 0.0,
+      "start": 22548.0,
+      "text": "啊"
+    },
+    {
+      "avg_logprob": -0.734468,
+      "compression_ratio": 1.928571,
+      "end": 22552.0,
+      "no_speech_prob": 0.0,
+      "start": 22550.0,
+      "text": "啊"
+    },
+    {
+      "avg_logprob": -0.734468,
+      "compression_ratio": 1.928571,
+      "end": 22556.0,
+      "no_speech_prob": 0.0,
+      "start": 22552.0,
+      "text": "啊"
+    },
+    {
+      "avg_logprob": -0.40575,
+      "compression_ratio": 2.357143,
+      "end": 22563.0,
+      "no_speech_prob": 0.0,
+      "start": 22556.0,
+      "text": "啊"
+    },
+    {
+      "avg_logprob": -0.40575,
+      "compression_ratio": 2.357143,
+      "end": 22566.0,
+      "no_speech_prob": 0.0,
+      "start": 22563.0,
+      "text": "啊"
+    },
+    {
+      "avg_logprob": -0.40575,
+      "compression_ratio": 2.357143,
+      "end": 22568.0,
+      "no_speech_prob": 0.0,
+      "start": 22566.0,
+      "text": "啊"
+    },
+    {
+      "avg_logprob": -0.40575,
+      "compression_ratio": 2.357143,
+      "end": 22570.0,
+      "no_speech_prob": 0.0,
+      "start": 22568.0,
+      "text": "啊"
+    },
+    {
+      "avg_logprob": -0.40575,
+      "compression_ratio": 2.357143,
+      "end": 22572.0,
+      "no_speech_prob": 0.0,
+      "start": 22570.0,
+      "text": "啊"
+    },
+    {
+      "avg_logprob": -0.40575,
+      "compression_ratio": 2.357143,
+      "end": 22574.0,
+      "no_speech_prob": 0.0,
+      "start": 22572.0,
+      "text": "啊"
+    },
+    {
+      "avg_logprob": -0.40575,
+      "compression_ratio": 2.357143,
+      "end": 22576.0,
+      "no_speech_prob": 0.0,
+      "start": 22574.0,
+      "text": "啊"
+    },
+    {
+      "avg_logprob": -0.40575,
+      "compression_ratio": 2.357143,
+      "end": 22578.0,
+      "no_speech_prob": 0.0,
+      "start": 22576.0,
+      "text": "啊"
+    },
+    {
+      "avg_logprob": -0.40575,
+      "compression_ratio": 2.357143,
+      "end": 22580.0,
+      "no_speech_prob": 0.0,
+      "start": 22578.0,
+      "text": "啊"
+    },
+    {
+      "avg_logprob": -0.40575,
+      "compression_ratio": 2.357143,
+      "end": 22582.0,
+      "no_speech_prob": 0.0,
+      "start": 22580.0,
+      "text": "啊"
+    },
+    {
+      "avg_logprob": -0.40575,
+      "compression_ratio": 2.357143,
+      "end": 22584.0,
+      "no_speech_prob": 0.0,
+      "start": 22582.0,
+      "text": "啊"
+    },
+    {
+      "avg_logprob": -0.353547,
+      "compression_ratio": 2.142857,
+      "end": 22586.0,
+      "no_speech_prob": 0.0,
+      "start": 22584.0,
+      "text": "啊"
+    },
+    {
+      "avg_logprob": -0.353547,
+      "compression_ratio": 2.142857,
+      "end": 22588.0,
+      "no_speech_prob": 0.0,
+      "start": 22586.0,
+      "text": "啊"
+    },
+    {
+      "avg_logprob": -0.353547,
+      "compression_ratio": 2.142857,
+      "end": 22590.0,
+      "no_speech_prob": 0.0,
+      "start": 22588.0,
+      "text": "啊"
+    },
+    {
+      "avg_logprob": -0.353547,
+      "compression_ratio": 2.142857,
+      "end": 22592.0,
+      "no_speech_prob": 0.0,
+      "start": 22590.0,
+      "text": "啊"
+    },
+    {
+      "avg_logprob": -0.353547,
+      "compression_ratio": 2.142857,
+      "end": 22594.0,
+      "no_speech_prob": 0.0,
+      "start": 22592.0,
+      "text": "啊"
+    },
+    {
+      "avg_logprob": -0.353547,
+      "compression_ratio": 2.142857,
+      "end": 22596.0,
+      "no_speech_prob": 0.0,
+      "start": 22594.0,
+      "text": "啊"
+    },
+    {
+      "avg_logprob": -0.353547,
+      "compression_ratio": 2.142857,
+      "end": 22598.0,
+      "no_speech_prob": 0.0,
+      "start": 22596.0,
+      "text": "啊"
+    },
+    {
+      "avg_logprob": -0.353547,
+      "compression_ratio": 2.142857,
+      "end": 22600.0,
+      "no_speech_prob": 0.0,
+      "start": 22598.0,
+      "text": "啊"
+    },
+    {
+      "avg_logprob": -0.353547,
+      "compression_ratio": 2.142857,
+      "end": 22602.0,
+      "no_speech_prob": 0.0,
+      "start": 22600.0,
+      "text": "啊"
+    },
+    {
+      "avg_logprob": -0.353547,
+      "compression_ratio": 2.142857,
+      "end": 22604.0,
+      "no_speech_prob": 0.0,
+      "start": 22602.0,
+      "text": "啊"
+    },
+    {
+      "avg_logprob": -0.260727,
+      "compression_ratio": 4.714286,
+      "end": 22606.0,
+      "no_speech_prob": 0.0,
+      "start": 22604.0,
+      "text": "啊"
+    },
+    {
+      "avg_logprob": -0.260727,
+      "compression_ratio": 4.714286,
+      "end": 22608.0,
+      "no_speech_prob": 0.0,
+      "start": 22606.0,
+      "text": "啊"
+    },
+    {
+      "avg_logprob": -0.260727,
+      "compression_ratio": 4.714286,
+      "end": 22610.0,
+      "no_speech_prob": 0.0,
+      "start": 22608.0,
+      "text": "啊"
+    },
+    {
+      "avg_logprob": -0.260727,
+      "compression_ratio": 4.714286,
+      "end": 22612.0,
+      "no_speech_prob": 0.0,
+      "start": 22610.0,
+      "text": "啊"
+    },
+    {
+      "avg_logprob": -0.260727,
+      "compression_ratio": 4.714286,
+      "end": 22614.0,
+      "no_speech_prob": 0.0,
+      "start": 22612.0,
+      "text": "啊"
+    },
+    {
+      "avg_logprob": -0.260727,
+      "compression_ratio": 4.714286,
+      "end": 22616.0,
+      "no_speech_prob": 0.0,
+      "start": 22614.0,
+      "text": "啊"
+    },
+    {
+      "avg_logprob": -0.260727,
+      "compression_ratio": 4.714286,
+      "end": 22618.0,
+      "no_speech_prob": 0.0,
+      "start": 22616.0,
+      "text": "啊"
+    },
+    {
+      "avg_logprob": -0.260727,
+      "compression_ratio": 4.714286,
+      "end": 22619.0,
+      "no_speech_prob": 0.0,
+      "start": 22618.0,
+      "text": "啊"
+    },
+    {
+      "avg_logprob": -0.260727,
+      "compression_ratio": 4.714286,
+      "end": 22620.0,
+      "no_speech_prob": 0.0,
+      "start": 22619.0,
+      "text": "啊"
+    },
+    {
+      "avg_logprob": -0.260727,
+      "compression_ratio": 4.714286,
+      "end": 22621.0,
+      "no_speech_prob": 0.0,
+      "start": 22620.0,
+      "text": "啊"
+    },
+    {
+      "avg_logprob": -0.260727,
+      "compression_ratio": 4.714286,
+      "end": 22622.0,
+      "no_speech_prob": 0.0,
+      "start": 22621.0,
+      "text": "啊"
+    },
+    {
+      "avg_logprob": -0.260727,
+      "compression_ratio": 4.714286,
+      "end": 22623.0,
+      "no_speech_prob": 0.0,
+      "start": 22622.0,
+      "text": "啊"
+    },
+    {
+      "avg_logprob": -0.260727,
+      "compression_ratio": 4.714286,
+      "end": 22624.0,
+      "no_speech_prob": 0.0,
+      "start": 22623.0,
+      "text": "啊"
+    },
+    {
+      "avg_logprob": -0.260727,
+      "compression_ratio": 4.714286,
+      "end": 22625.0,
+      "no_speech_prob": 0.0,
+      "start": 22624.0,
+      "text": "啊"
+    },
+    {
+      "avg_logprob": -0.260727,
+      "compression_ratio": 4.714286,
+      "end": 22626.0,
+      "no_speech_prob": 0.0,
+      "start": 22625.0,
+      "text": "啊"
+    },
+    {
+      "avg_logprob": -0.260727,
+      "compression_ratio": 4.714286,
+      "end": 22627.0,
+      "no_speech_prob": 0.0,
+      "start": 22626.0,
+      "text": "啊"
+    },
+    {
+      "avg_logprob": -0.260727,
+      "compression_ratio": 4.714286,
+      "end": 22628.0,
+      "no_speech_prob": 0.0,
+      "start": 22627.0,
+      "text": "啊"
+    },
+    {
+      "avg_logprob": -0.260727,
+      "compression_ratio": 4.714286,
+      "end": 22629.0,
+      "no_speech_prob": 0.0,
+      "start": 22628.0,
+      "text": "啊"
+    },
+    {
+      "avg_logprob": -0.260727,
+      "compression_ratio": 4.714286,
+      "end": 22630.0,
+      "no_speech_prob": 0.0,
+      "start": 22629.0,
+      "text": "啊"
+    },
+    {
+      "avg_logprob": -0.260727,
+      "compression_ratio": 4.714286,
+      "end": 22631.0,
+      "no_speech_prob": 0.0,
+      "start": 22630.0,
+      "text": "啊"
+    },
+    {
+      "avg_logprob": -0.260727,
+      "compression_ratio": 4.714286,
+      "end": 22632.0,
+      "no_speech_prob": 0.0,
+      "start": 22631.0,
+      "text": "啊"
+    },
+    {
+      "avg_logprob": -0.260727,
+      "compression_ratio": 4.714286,
+      "end": 22633.0,
+      "no_speech_prob": 0.0,
+      "start": 22632.0,
+      "text": "啊"
+    },
+    {
+      "avg_logprob": -0.32659,
+      "compression_ratio": 0.738095,
+      "end": 22662.98,
+      "no_speech_prob": 0.0,
+      "start": 22633.0,
+      "text": "中文字幕志愿者 李宗盛"
+    },
+    {
+      "avg_logprob": -0.046617,
+      "compression_ratio": 0.738095,
+      "end": 22692.98,
+      "no_speech_prob": 0.0,
+      "start": 22663.0,
+      "text": "中文字幕志愿者 李宗盛"
+    },
+    {
+      "avg_logprob": -0.089235,
+      "compression_ratio": 0.738095,
+      "end": 22722.98,
+      "no_speech_prob": 0.0,
+      "start": 22693.0,
+      "text": "中文字幕志愿者 李宗盛"
+    },
+    {
+      "avg_logprob": -0.042449,
+      "compression_ratio": 0.738095,
+      "end": 22752.98,
+      "no_speech_prob": 0.0,
+      "start": 22723.0,
+      "text": "中文字幕志愿者 李宗盛"
+    },
+    {
+      "avg_logprob": -0.071547,
+      "compression_ratio": 0.738095,
+      "end": 22782.96,
+      "no_speech_prob": 0.0,
+      "start": 22752.98,
+      "text": "中文字幕志愿者 李宗盛"
+    },
+    {
+      "avg_logprob": -0.065635,
+      "compression_ratio": 0.738095,
+      "end": 22812.94,
+      "no_speech_prob": 0.0,
+      "start": 22782.96,
+      "text": "中文字幕志愿者 李宗盛"
+    },
+    {
+      "avg_logprob": -0.074764,
+      "compression_ratio": 0.738095,
+      "end": 22842.92,
+      "no_speech_prob": 0.0,
+      "start": 22812.94,
+      "text": "中文字幕志愿者 李宗盛"
+    },
+    {
+      "avg_logprob": -0.138333,
+      "compression_ratio": 0.738095,
+      "end": 22872.9,
+      "no_speech_prob": 0.0,
+      "start": 22842.92,
+      "text": "中文字幕志愿者 李宗盛"
+    },
+    {
+      "avg_logprob": -0.182355,
+      "compression_ratio": 0.738095,
+      "end": 22902.88,
+      "no_speech_prob": 0.0,
+      "start": 22872.9,
+      "text": "中文字幕志愿者 李宗盛"
+    },
+    {
+      "avg_logprob": -0.132395,
+      "compression_ratio": 0.738095,
+      "end": 22932.88,
+      "no_speech_prob": 0.0,
+      "start": 22902.9,
+      "text": "中文字幕志愿者 李宗盛"
+    },
+    {
+      "avg_logprob": -0.142749,
+      "compression_ratio": 0.738095,
+      "end": 22962.88,
+      "no_speech_prob": 0.0,
+      "start": 22932.9,
+      "text": "中文字幕志愿者 李宗盛"
+    },
+    {
+      "avg_logprob": -0.072394,
+      "compression_ratio": 0.738095,
+      "end": 22992.88,
+      "no_speech_prob": 0.0,
+      "start": 22962.9,
+      "text": "中文字幕志愿者 李宗盛"
+    },
+    {
+      "avg_logprob": -0.091919,
+      "compression_ratio": 0.738095,
+      "end": 23022.86,
+      "no_speech_prob": 0.0,
+      "start": 22992.88,
+      "text": "中文字幕志愿者 李宗盛"
+    },
+    {
+      "avg_logprob": -0.064647,
+      "compression_ratio": 0.738095,
+      "end": 23052.86,
+      "no_speech_prob": 0.0,
+      "start": 23022.88,
+      "text": "中文字幕志愿者 李宗盛"
+    },
+    {
+      "avg_logprob": -0.037495,
+      "compression_ratio": 0.738095,
+      "end": 23082.86,
+      "no_speech_prob": 0.0,
+      "start": 23052.88,
+      "text": "中文字幕志愿者 李宗盛"
+    },
+    {
+      "avg_logprob": -0.063431,
+      "compression_ratio": 0.738095,
+      "end": 23112.86,
+      "no_speech_prob": 0.0,
+      "start": 23082.88,
+      "text": "中文字幕志愿者 李宗盛"
+    },
+    {
+      "avg_logprob": -0.070725,
+      "compression_ratio": 0.738095,
+      "end": 23142.84,
+      "no_speech_prob": 0.0,
+      "start": 23112.86,
+      "text": "中文字幕志愿者 李宗盛"
+    },
+    {
+      "avg_logprob": -0.035199,
+      "compression_ratio": 0.738095,
+      "end": 23172.84,
+      "no_speech_prob": 0.0,
+      "start": 23142.86,
+      "text": "中文字幕志愿者 李宗盛"
+    },
+    {
+      "avg_logprob": -0.166742,
+      "compression_ratio": 0.738095,
+      "end": 23202.82,
+      "no_speech_prob": 0.0,
+      "start": 23172.84,
+      "text": "中文字幕志愿者 李宗盛"
+    },
+    {
+      "avg_logprob": -0.070688,
+      "compression_ratio": 0.738095,
+      "end": 23232.82,
+      "no_speech_prob": 0.0,
+      "start": 23202.84,
+      "text": "中文字幕志愿者 李宗盛"
+    },
+    {
+      "avg_logprob": -0.09531,
+      "compression_ratio": 0.738095,
+      "end": 23262.82,
+      "no_speech_prob": 0.0,
+      "start": 23232.84,
+      "text": "中文字幕志愿者 李宗盛"
+    },
+    {
+      "avg_logprob": -0.05922,
+      "compression_ratio": 0.738095,
+      "end": 23292.8,
+      "no_speech_prob": 0.0,
+      "start": 23262.82,
+      "text": "中文字幕志愿者 李宗盛"
+    },
+    {
+      "avg_logprob": -0.071617,
+      "compression_ratio": 0.738095,
+      "end": 23322.78,
+      "no_speech_prob": 0.0,
+      "start": 23292.8,
+      "text": "中文字幕志愿者 李宗盛"
+    },
+    {
+      "avg_logprob": -0.140697,
+      "compression_ratio": 0.738095,
+      "end": 23352.78,
+      "no_speech_prob": 0.0,
+      "start": 23322.8,
+      "text": "中文字幕志愿者 李宗盛"
+    },
+    {
+      "avg_logprob": -0.117747,
+      "compression_ratio": 0.738095,
+      "end": 23382.78,
+      "no_speech_prob": 0.0,
+      "start": 23352.8,
+      "text": "中文字幕志愿者 李宗盛"
+    },
+    {
+      "avg_logprob": -0.097679,
+      "compression_ratio": 0.738095,
+      "end": 23412.78,
+      "no_speech_prob": 0.0,
+      "start": 23382.8,
+      "text": "中文字幕志愿者 李宗盛"
+    }
+  ],
+  "text": "啊追随著心中的希望啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊中文字幕志愿者 李宗盛中文字幕志愿者 李宗盛中文字幕志愿者 李宗盛中文字幕志愿者 李宗盛中文字幕志愿者 李宗盛中文字幕志愿者 李宗盛中文字幕志愿者 李宗盛中文字幕志愿者 李宗盛中文字幕志愿者 李宗盛中文字幕志愿者 李宗盛中文字幕志愿者 李宗盛中文字幕志愿者 李宗盛中文字幕志愿者 李宗盛中文字幕志愿者 李宗盛中文字幕志愿者 李宗盛中文字幕志愿者 李宗盛中文字幕志愿者 李宗盛中文字幕志愿者 李宗盛中文字幕志愿者 李宗盛中文字幕志愿者 李宗盛中文字幕志愿者 李宗盛中文字幕志愿者 李宗盛中文字幕志愿者 李宗盛中文字幕志愿者 李宗盛中文字幕志愿者 李宗盛中文字幕志愿者 李宗盛"
+}
