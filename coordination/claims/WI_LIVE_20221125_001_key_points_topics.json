@@ -3,7 +3,7 @@
   "agent_id": "codex-local-asr-agent50-20261026",
   "claimed_at": "2026-10-26T05:47:20Z",
   "base_commit": "ec8a87c6a4",
-  "status": "in_progress",
+  "status": "released",
   "workflow_mode": "continuous-worker-v2",
   "claim_protocol": "claim-protocol-v2",
   "entry_mode": "work",
@@ -22,5 +22,7 @@
   ],
   "scope": "Create evidence-grounded neutral key points and controlled topic assignments.",
   "reclaimed_expired_claim": false,
-  "static_claim_lease_hours": 24
+  "static_claim_lease_hours": 24,
+  "released_at": "2026-10-26T05:49:00Z",
+  "release_reason": "Single permitted local Qwen attempt failed the strict quality gate: only 6/8 natural segments were enriched, with two parse errors and two skipped/invalid segments. Sampling also found semantic overreach, including converting a quoted plan to make a surprise trip to Saudi Arabia into a claim that the trip itself was to conduct a surprise attack. Generated key-point/topic files discarded; deterministic natural segments restored. Transcript, cue, and segment stages remain completed; key-point stage deferred to tail."
 }
