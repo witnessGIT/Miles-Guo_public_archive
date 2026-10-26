@@ -1,0 +1,26 @@
+{
+  "task_id": "WI_LIVE_20220811_002_key_points_topics",
+  "agent_id": "codex-local-asr-agent50-20261026",
+  "claimed_at": "2026-10-26T02:55:41.703408+00:00",
+  "base_commit": "1d11bef90b4f3e52f5d6d6ee9aed099151f2ff62",
+  "status": "in_progress",
+  "workflow_mode": "continuous-worker-v2",
+  "claim_protocol": "claim-protocol-v2",
+  "entry_mode": "work",
+  "continue_after_finish": true,
+  "stage": "key_points_topics",
+  "case_id": null,
+  "live_id": "LIVE_20220811_002",
+  "kind": "live_work_item",
+  "source_candidate_id": null,
+  "review_generation": null,
+  "review_claim_timeout_hours": null,
+  "review_state_before_claim": null,
+  "candidate_review_contract": null,
+  "depends_on_at_claim": [
+    "WI_LIVE_20220811_002_segment_split"
+  ],
+  "scope": "Create evidence-grounded neutral key points and controlled topic assignments.",
+  "reclaimed_expired_claim": false,
+  "static_claim_lease_hours": 24
+}
