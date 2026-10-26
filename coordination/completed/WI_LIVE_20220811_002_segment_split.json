@@ -1,0 +1,16 @@
+{
+  "task_id": "WI_LIVE_20220811_002_segment_split",
+  "agent_id": "codex-local-asr-agent50-20261026",
+  "completed_at": "2026-10-26T02:55:36.614253+00:00",
+  "result_commit": "c721abe720dcf09b9f42544e74f58cdf5ef6e73a",
+  "outputs": [
+    "data/current/live_segments/asr_live_20220811_002.jsonl"
+  ],
+  "validation": "Built 6 variable-length natural segments from 104 cues using pause and safety boundaries; monotonic 0.0-585.16 sec coverage; sampled boundaries preserve market, trade, financial-fraud, Hong Kong, and closing themes.",
+  "workflow_mode": "continuous-worker-v2",
+  "claim_protocol": "claim-protocol-v2",
+  "entry_mode": "work",
+  "continue_after_finish": true,
+  "finish_prerequisites_revalidated": true,
+  "notes": "Task completed only after re-checking the latest repository dependency contract. Under continuous-worker-v2, refresh repository state and claim the next eligible task unless a documented stop condition applies."
+}
