@@ -3,7 +3,7 @@
   "agent_id": "codex-local-asr-agent50-20261026",
   "claimed_at": "2026-10-26T05:04:00+00:00",
   "base_commit": "db75b2ab2",
-  "status": "in_progress",
+  "status": "released",
   "workflow_mode": "continuous-worker-v2",
   "claim_protocol": "claim-protocol-v2",
   "entry_mode": "work",
@@ -22,5 +22,7 @@
   ],
   "scope": "Import source transcript or ASR text without overwriting original text.",
   "reclaimed_expired_claim": false,
-  "static_claim_lease_hours": 24
+  "static_claim_lease_hours": 24,
+  "released_at": "2026-10-26T05:03:20+00:00",
+  "release_reason": "Manual beginning/middle/end evidence audit caught a long hallucination loop missed by the automatic gate: the first three cues spanning 0-89.98 seconds repeat '字幕志愿者 李宗盛'. Generated ASR artifacts discarded; evidence retained in the ASR attempt record and item deferred to corpus_tail without entering cue or segment stages."
 }
