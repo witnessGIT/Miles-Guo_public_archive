@@ -1,0 +1,18 @@
+{
+  "task_id": "WI_LIVE_20230125_001_key_points_topics",
+  "agent_id": "codex-local-asr-agent50-20261026",
+  "completed_at": "2026-10-26T00:50:59.786632+00:00",
+  "result_commit": "536f7c68ba0a1db1c11ea608e4daca58966fa35b",
+  "outputs": [
+    "data/current/live_segments/asr_live_20230125_001.jsonl",
+    "data/current/segment_key_points/machine_live_20230125_001.jsonl",
+    "data/current/segment_topics/machine_live_20230125_001.jsonl"
+  ],
+  "validation": "build_db.py and validate_db.py passed; 146 tests passed; human evidence audit removed 23 ambiguous, micro-fragment, misattributed, or over-inferred candidates; 34 grounded key points and 17 topic links retained; named allegations explicitly attributed to the speaker",
+  "workflow_mode": "continuous-worker-v2",
+  "claim_protocol": "claim-protocol-v2",
+  "entry_mode": "work",
+  "continue_after_finish": true,
+  "finish_prerequisites_revalidated": true,
+  "notes": "Task completed only after re-checking the latest repository dependency contract. Under continuous-worker-v2, refresh repository state and claim the next eligible task unless a documented stop condition applies."
+}
