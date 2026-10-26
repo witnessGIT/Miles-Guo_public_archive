@@ -3,7 +3,7 @@
   "agent_id": "codex-local-asr-agent50-20261026",
   "claimed_at": "2026-10-26T00:26:59.095760+00:00",
   "base_commit": "454068cc4cde7cc68a7d8d5d9c6e225cbd1ffd7f",
-  "status": "in_progress",
+  "status": "released",
   "workflow_mode": "continuous-worker-v2",
   "claim_protocol": "claim-protocol-v2",
   "entry_mode": "work",
@@ -22,5 +22,7 @@
   ],
   "scope": "Import source transcript or ASR text without overwriting original text.",
   "reclaimed_expired_claim": false,
-  "static_claim_lease_hours": 24
+  "static_claim_lease_hours": 24,
+  "released_at": "2026-10-26T00:32:50.496457+00:00",
+  "release_reason": "Manual quality audit rejected final mixed-language cue ending 15.489 seconds beyond decoded audio; evidence retained for corpus-tail review and no downstream stages generated"
 }
