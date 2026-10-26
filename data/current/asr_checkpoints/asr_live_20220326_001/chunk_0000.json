@@ -1,0 +1,256 @@
+{
+  "chunk_audio_sha256": "a711bd0bcee3386acbd4a9cf8525bea8b1caaaf657661b08258b34c7a901c845",
+  "chunk_index": 0,
+  "completed_at": "2026-10-26T03:00:09Z",
+  "language": "zh",
+  "live_id": "LIVE_20220326_001",
+  "media_committed_to_git": false,
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "offset_sec": 0,
+  "paid_api_used": false,
+  "processing_location": "github-hosted-macos-arm64",
+  "schema_version": "cloud-asr-chunk-v1",
+  "segments": [
+    {
+      "avg_logprob": -0.107469,
+      "compression_ratio": 0.851351,
+      "end": 29.98,
+      "no_speech_prob": 0.0,
+      "start": 0.0,
+      "text": "请不吝点赞 订阅 转发 打赏支持明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.216324,
+      "compression_ratio": 0.724138,
+      "end": 59.98,
+      "no_speech_prob": 0.0,
+      "start": 30.0,
+      "text": "明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.062658,
+      "compression_ratio": 0.724138,
+      "end": 89.98,
+      "no_speech_prob": 0.0,
+      "start": 60.0,
+      "text": "明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.086367,
+      "compression_ratio": 0.724138,
+      "end": 119.96,
+      "no_speech_prob": 0.0,
+      "start": 89.98,
+      "text": "明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.137806,
+      "compression_ratio": 0.724138,
+      "end": 149.94,
+      "no_speech_prob": 0.0,
+      "start": 119.96,
+      "text": "明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.209492,
+      "compression_ratio": 0.724138,
+      "end": 179.92,
+      "no_speech_prob": 0.0,
+      "start": 149.94,
+      "text": "明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.226417,
+      "compression_ratio": 0.724138,
+      "end": 209.9,
+      "no_speech_prob": 0.0,
+      "start": 179.92,
+      "text": "明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.233142,
+      "compression_ratio": 0.724138,
+      "end": 239.9,
+      "no_speech_prob": 0.0,
+      "start": 209.92,
+      "text": "明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.037721,
+      "compression_ratio": 0.724138,
+      "end": 269.9,
+      "no_speech_prob": 0.0,
+      "start": 239.92,
+      "text": "明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.290051,
+      "compression_ratio": 0.724138,
+      "end": 299.9,
+      "no_speech_prob": 0.0,
+      "start": 269.92,
+      "text": "明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.254004,
+      "compression_ratio": 0.724138,
+      "end": 329.9,
+      "no_speech_prob": 0.0,
+      "start": 299.92,
+      "text": "明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.193156,
+      "compression_ratio": 0.666667,
+      "end": 359.9,
+      "no_speech_prob": 0.0,
+      "start": 329.92,
+      "text": "明镜与点栏目"
+    },
+    {
+      "avg_logprob": -0.179949,
+      "compression_ratio": 0.666667,
+      "end": 389.88,
+      "no_speech_prob": 0.0,
+      "start": 359.9,
+      "text": "明镜与点栏目"
+    },
+    {
+      "avg_logprob": -0.139224,
+      "compression_ratio": 0.666667,
+      "end": 419.86,
+      "no_speech_prob": 0.0,
+      "start": 389.88,
+      "text": "明镜与点栏目"
+    },
+    {
+      "avg_logprob": -0.190142,
+      "compression_ratio": 0.666667,
+      "end": 449.84,
+      "no_speech_prob": 0.0,
+      "start": 419.86,
+      "text": "明镜与点栏目"
+    },
+    {
+      "avg_logprob": -0.159009,
+      "compression_ratio": 0.666667,
+      "end": 479.82,
+      "no_speech_prob": 0.0,
+      "start": 449.84,
+      "text": "明镜与点栏目"
+    },
+    {
+      "avg_logprob": -0.129847,
+      "compression_ratio": 0.666667,
+      "end": 509.8,
+      "no_speech_prob": 0.0,
+      "start": 479.82,
+      "text": "明镜与点栏目"
+    },
+    {
+      "avg_logprob": -0.126972,
+      "compression_ratio": 0.666667,
+      "end": 539.78,
+      "no_speech_prob": 0.0,
+      "start": 509.8,
+      "text": "明镜与点栏目"
+    },
+    {
+      "avg_logprob": -0.091321,
+      "compression_ratio": 0.666667,
+      "end": 569.76,
+      "no_speech_prob": 0.0,
+      "start": 539.78,
+      "text": "明镜与点栏目"
+    },
+    {
+      "avg_logprob": -0.079936,
+      "compression_ratio": 0.666667,
+      "end": 629.74,
+      "no_speech_prob": 0.0,
+      "start": 599.76,
+      "text": "明镜与点栏目"
+    },
+    {
+      "avg_logprob": -0.094818,
+      "compression_ratio": 0.666667,
+      "end": 659.72,
+      "no_speech_prob": 0.0,
+      "start": 629.74,
+      "text": "明镜与点栏目"
+    },
+    {
+      "avg_logprob": -0.082013,
+      "compression_ratio": 0.666667,
+      "end": 689.7,
+      "no_speech_prob": 0.0,
+      "start": 659.72,
+      "text": "明镜与点栏目"
+    },
+    {
+      "avg_logprob": -0.065079,
+      "compression_ratio": 0.666667,
+      "end": 719.68,
+      "no_speech_prob": 0.0,
+      "start": 689.7,
+      "text": "明镜与点栏目"
+    },
+    {
+      "avg_logprob": -0.064946,
+      "compression_ratio": 0.666667,
+      "end": 749.66,
+      "no_speech_prob": 0.0,
+      "start": 719.68,
+      "text": "明镜与点栏目"
+    },
+    {
+      "avg_logprob": -0.087188,
+      "compression_ratio": 0.666667,
+      "end": 779.64,
+      "no_speech_prob": 0.0,
+      "start": 749.66,
+      "text": "明镜与点栏目"
+    },
+    {
+      "avg_logprob": -0.104187,
+      "compression_ratio": 0.666667,
+      "end": 809.62,
+      "no_speech_prob": 0.0,
+      "start": 779.64,
+      "text": "明镜与点栏目"
+    },
+    {
+      "avg_logprob": -0.082393,
+      "compression_ratio": 0.666667,
+      "end": 839.6,
+      "no_speech_prob": 0.0,
+      "start": 809.62,
+      "text": "明镜与点栏目"
+    },
+    {
+      "avg_logprob": -0.095715,
+      "compression_ratio": 0.666667,
+      "end": 869.58,
+      "no_speech_prob": 0.0,
+      "start": 839.6,
+      "text": "明镜与点栏目"
+    },
+    {
+      "avg_logprob": -0.101251,
+      "compression_ratio": 0.666667,
+      "end": 899.56,
+      "no_speech_prob": 0.0,
+      "start": 869.58,
+      "text": "明镜与点栏目"
+    },
+    {
+      "avg_logprob": -0.11389,
+      "compression_ratio": 0.666667,
+      "end": 900.01,
+      "no_speech_prob": 0.0,
+      "start": 899.56,
+      "text": "明镜与点栏目"
+    }
+  ],
+  "text": "请不吝点赞 订阅 转发 打赏支持明镜与点点栏目明镜与点点栏目明镜与点点栏目明镜与点点栏目明镜与点点栏目明镜与点点栏目明镜与点点栏目明镜与点点栏目明镜与点点栏目明镜与点点栏目明镜与点点栏目明镜与点栏目明镜与点栏目明镜与点栏目明镜与点栏目明镜与点栏目明镜与点栏目明镜与点栏目明镜与点栏目明镜与点栏目明镜与点栏目明镜与点栏目明镜与点栏目明镜与点栏目明镜与点栏目明镜与点栏目明镜与点栏目明镜与点栏目明镜与点栏目明镜与点栏目"
+}

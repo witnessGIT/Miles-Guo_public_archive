@@ -1,0 +1,4384 @@
+{
+  "chunk_audio_sha256": "ab1a11cda8b89110ae034db39efe8b325bae0b94f9baf035f76c155bde81bd4b",
+  "chunk_index": 4,
+  "completed_at": "2026-10-26T05:26:45Z",
+  "language": "zh",
+  "live_id": "LIVE_20220403_001",
+  "media_committed_to_git": false,
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "offset_sec": 3600,
+  "paid_api_used": false,
+  "processing_location": "github-hosted-macos-arm64",
+  "schema_version": "cloud-asr-chunk-v1",
+  "segments": [
+    {
+      "avg_logprob": -0.536535,
+      "compression_ratio": 1.069767,
+      "end": 3604.36,
+      "no_speech_prob": 0.0,
+      "start": 3600.0,
+      "text": "我又喝咖啡了"
+    },
+    {
+      "avg_logprob": -0.536535,
+      "compression_ratio": 1.069767,
+      "end": 3605.64,
+      "no_speech_prob": 0.0,
+      "start": 3604.36,
+      "text": "文子医生"
+    },
+    {
+      "avg_logprob": -0.536535,
+      "compression_ratio": 1.069767,
+      "end": 3610.24,
+      "no_speech_prob": 0.0,
+      "start": 3605.64,
+      "text": "没声音了"
+    },
+    {
+      "avg_logprob": -0.536535,
+      "compression_ratio": 1.069767,
+      "end": 3612.54,
+      "no_speech_prob": 0.0,
+      "start": 3610.24,
+      "text": "是哪哪不是外啊"
+    },
+    {
+      "avg_logprob": -0.536535,
+      "compression_ratio": 1.069767,
+      "end": 3613.56,
+      "no_speech_prob": 0.0,
+      "start": 3612.54,
+      "text": "好"
+    },
+    {
+      "avg_logprob": -0.536535,
+      "compression_ratio": 1.069767,
+      "end": 3618.04,
+      "no_speech_prob": 0.0,
+      "start": 3613.56,
+      "text": "前线跟七哥还要互"
+    },
+    {
+      "avg_logprob": -0.536535,
+      "compression_ratio": 1.069767,
+      "end": 3621.66,
+      "no_speech_prob": 0.0,
+      "start": 3618.04,
+      "text": "前线可以听到我们吗"
+    },
+    {
+      "avg_logprob": -0.536535,
+      "compression_ratio": 1.069767,
+      "end": 3624.2,
+      "no_speech_prob": 0.0,
+      "start": 3621.66,
+      "text": "文科说几句互动"
+    },
+    {
+      "avg_logprob": -0.212549,
+      "compression_ratio": 1.32093,
+      "end": 3630.02,
+      "no_speech_prob": 0.0,
+      "start": 3624.2,
+      "text": "听不见了"
+    },
+    {
+      "avg_logprob": -0.212549,
+      "compression_ratio": 1.32093,
+      "end": 3632.08,
+      "no_speech_prob": 0.0,
+      "start": 3630.02,
+      "text": "明道一走就没声音了"
+    },
+    {
+      "avg_logprob": -0.212549,
+      "compression_ratio": 1.32093,
+      "end": 3634.18,
+      "no_speech_prob": 0.0,
+      "start": 3632.08,
+      "text": "我刚才好像听一嗓子"
+    },
+    {
+      "avg_logprob": -0.212549,
+      "compression_ratio": 1.32093,
+      "end": 3635.96,
+      "no_speech_prob": 0.0,
+      "start": 3634.18,
+      "text": "正一小Sara在那儿嗷嗷的喊"
+    },
+    {
+      "avg_logprob": -0.212549,
+      "compression_ratio": 1.32093,
+      "end": 3637.68,
+      "no_speech_prob": 0.0,
+      "start": 3635.96,
+      "text": "就是东北人那种"
+    },
+    {
+      "avg_logprob": -0.212549,
+      "compression_ratio": 1.32093,
+      "end": 3639.7,
+      "no_speech_prob": 0.0,
+      "start": 3637.68,
+      "text": "咋的了东北啊什么的"
+    },
+    {
+      "avg_logprob": -0.212549,
+      "compression_ratio": 1.32093,
+      "end": 3641.5,
+      "no_speech_prob": 0.0,
+      "start": 3639.7,
+      "text": "可以听见吗七哥"
+    },
+    {
+      "avg_logprob": -0.212549,
+      "compression_ratio": 1.32093,
+      "end": 3642.88,
+      "no_speech_prob": 0.0,
+      "start": 3641.5,
+      "text": "可以听见了"
+    },
+    {
+      "avg_logprob": -0.212549,
+      "compression_ratio": 1.32093,
+      "end": 3644.48,
+      "no_speech_prob": 0.0,
+      "start": 3642.88,
+      "text": "一说小Sara就来声音"
+    },
+    {
+      "avg_logprob": -0.212549,
+      "compression_ratio": 1.32093,
+      "end": 3645.08,
+      "no_speech_prob": 0.0,
+      "start": 3644.48,
+      "text": "可以听见吗"
+    },
+    {
+      "avg_logprob": -0.212549,
+      "compression_ratio": 1.32093,
+      "end": 3650.6,
+      "no_speech_prob": 0.0,
+      "start": 3645.08,
+      "text": "我们前线就是继续完善"
+    },
+    {
+      "avg_logprob": -0.212549,
+      "compression_ratio": 1.32093,
+      "end": 3652.88,
+      "no_speech_prob": 0.0,
+      "start": 3650.6,
+      "text": "咱们这边的营地的工作"
+    },
+    {
+      "avg_logprob": -0.095733,
+      "compression_ratio": 1.443609,
+      "end": 3654.62,
+      "no_speech_prob": 0.0,
+      "start": 3652.88,
+      "text": "以及在这边"
+    },
+    {
+      "avg_logprob": -0.095733,
+      "compression_ratio": 1.443609,
+      "end": 3656.78,
+      "no_speech_prob": 0.0,
+      "start": 3654.62,
+      "text": "我们把这个安全这一块"
+    },
+    {
+      "avg_logprob": -0.095733,
+      "compression_ratio": 1.443609,
+      "end": 3658.96,
+      "no_speech_prob": 0.0,
+      "start": 3656.78,
+      "text": "我们也继续的做好"
+    },
+    {
+      "avg_logprob": -0.095733,
+      "compression_ratio": 1.443609,
+      "end": 3660.9,
+      "no_speech_prob": 0.0,
+      "start": 3658.96,
+      "text": "包括我们这些营地的"
+    },
+    {
+      "avg_logprob": -0.095733,
+      "compression_ratio": 1.443609,
+      "end": 3661.94,
+      "no_speech_prob": 0.0,
+      "start": 3660.9,
+      "text": "这些汽油啊"
+    },
+    {
+      "avg_logprob": -0.095733,
+      "compression_ratio": 1.443609,
+      "end": 3664.36,
+      "no_speech_prob": 0.0,
+      "start": 3661.94,
+      "text": "这些油料给发电机供油的"
+    },
+    {
+      "avg_logprob": -0.095733,
+      "compression_ratio": 1.443609,
+      "end": 3666.9,
+      "no_speech_prob": 0.0,
+      "start": 3664.36,
+      "text": "我们也进行了这个相关的整理"
+    },
+    {
+      "avg_logprob": -0.095733,
+      "compression_ratio": 1.443609,
+      "end": 3668.56,
+      "no_speech_prob": 0.0,
+      "start": 3666.9,
+      "text": "以及放到一个安全的一个场地"
+    },
+    {
+      "avg_logprob": -0.095733,
+      "compression_ratio": 1.443609,
+      "end": 3671.02,
+      "no_speech_prob": 0.0,
+      "start": 3668.56,
+      "text": "避免发生一些不必要的麻烦"
+    },
+    {
+      "avg_logprob": -0.095733,
+      "compression_ratio": 1.443609,
+      "end": 3673.4,
+      "no_speech_prob": 0.0,
+      "start": 3671.02,
+      "text": "那么我们今天的营地"
+    },
+    {
+      "avg_logprob": -0.095733,
+      "compression_ratio": 1.443609,
+      "end": 3675.62,
+      "no_speech_prob": 0.0,
+      "start": 3673.4,
+      "text": "外面是非常的冷"
+    },
+    {
+      "avg_logprob": -0.095733,
+      "compression_ratio": 1.443609,
+      "end": 3677.62,
+      "no_speech_prob": 0.0,
+      "start": 3675.62,
+      "text": "昨天还有雪"
+    },
+    {
+      "avg_logprob": -0.095733,
+      "compression_ratio": 1.443609,
+      "end": 3679.04,
+      "no_speech_prob": 0.0,
+      "start": 3677.62,
+      "text": "一片白茫茫的"
+    },
+    {
+      "avg_logprob": -0.095733,
+      "compression_ratio": 1.443609,
+      "end": 3680.2,
+      "no_speech_prob": 0.0,
+      "start": 3679.04,
+      "text": "但是我们的战友"
+    },
+    {
+      "avg_logprob": -0.095733,
+      "compression_ratio": 1.443609,
+      "end": 3682.16,
+      "no_speech_prob": 0.0,
+      "start": 3680.2,
+      "text": "继续还在这里坚守"
+    },
+    {
+      "avg_logprob": -0.129676,
+      "compression_ratio": 1.468619,
+      "end": 3685.64,
+      "no_speech_prob": 0.0,
+      "start": 3682.16,
+      "text": "甚至我们今天路人兄弟呢"
+    },
+    {
+      "avg_logprob": -0.129676,
+      "compression_ratio": 1.468619,
+      "end": 3687.66,
+      "no_speech_prob": 0.0,
+      "start": 3685.64,
+      "text": "就是说早班的"
+    },
+    {
+      "avg_logprob": -0.129676,
+      "compression_ratio": 1.468619,
+      "end": 3689.78,
+      "no_speech_prob": 0.0,
+      "start": 3687.66,
+      "text": "他说我们看我们人比较少"
+    },
+    {
+      "avg_logprob": -0.129676,
+      "compression_ratio": 1.468619,
+      "end": 3691.9,
+      "no_speech_prob": 0.0,
+      "start": 3689.78,
+      "text": "他说他现在早班上完了"
+    },
+    {
+      "avg_logprob": -0.129676,
+      "compression_ratio": 1.468619,
+      "end": 3693.18,
+      "no_speech_prob": 0.0,
+      "start": 3691.9,
+      "text": "午班还接着上"
+    },
+    {
+      "avg_logprob": -0.129676,
+      "compression_ratio": 1.468619,
+      "end": 3695.64,
+      "no_speech_prob": 0.0,
+      "start": 3693.18,
+      "text": "他说跟着我们一起继续战斗"
+    },
+    {
+      "avg_logprob": -0.129676,
+      "compression_ratio": 1.468619,
+      "end": 3698.4,
+      "no_speech_prob": 0.0,
+      "start": 3695.64,
+      "text": "然后现场"
+    },
+    {
+      "avg_logprob": -0.129676,
+      "compression_ratio": 1.468619,
+      "end": 3699.3,
+      "no_speech_prob": 0.0,
+      "start": 3698.4,
+      "text": "现场呢"
+    },
+    {
+      "avg_logprob": -0.129676,
+      "compression_ratio": 1.468619,
+      "end": 3700.98,
+      "no_speech_prob": 0.0,
+      "start": 3699.3,
+      "text": "今天也是有非常多的"
+    },
+    {
+      "avg_logprob": -0.129676,
+      "compression_ratio": 1.468619,
+      "end": 3703.98,
+      "no_speech_prob": 0.0,
+      "start": 3700.98,
+      "text": "你不能这么人家要干"
+    },
+    {
+      "avg_logprob": -0.129676,
+      "compression_ratio": 1.468619,
+      "end": 3705.08,
+      "no_speech_prob": 0.0,
+      "start": 3703.98,
+      "text": "你就让人家干的"
+    },
+    {
+      "avg_logprob": -0.129676,
+      "compression_ratio": 1.468619,
+      "end": 3706.92,
+      "no_speech_prob": 0.0,
+      "start": 3705.08,
+      "text": "你就是这路人"
+    },
+    {
+      "avg_logprob": -0.129676,
+      "compression_ratio": 1.468619,
+      "end": 3708.36,
+      "no_speech_prob": 0.0,
+      "start": 3706.92,
+      "text": "他就是傻乎乎的"
+    },
+    {
+      "avg_logprob": -0.129676,
+      "compression_ratio": 1.468619,
+      "end": 3709.14,
+      "no_speech_prob": 0.0,
+      "start": 3708.36,
+      "text": "你接这么干"
+    },
+    {
+      "avg_logprob": -0.129676,
+      "compression_ratio": 1.468619,
+      "end": 3710.36,
+      "no_speech_prob": 0.0,
+      "start": 3709.14,
+      "text": "你身体就受不了了"
+    },
+    {
+      "avg_logprob": -0.129676,
+      "compression_ratio": 1.468619,
+      "end": 3711.04,
+      "no_speech_prob": 0.0,
+      "start": 3710.36,
+      "text": "兄弟啊"
+    },
+    {
+      "avg_logprob": -0.206259,
+      "compression_ratio": 1.393204,
+      "end": 3715.64,
+      "no_speech_prob": 0.0,
+      "start": 3712.16,
+      "text": "没问题没问题"
+    },
+    {
+      "avg_logprob": -0.206259,
+      "compression_ratio": 1.393204,
+      "end": 3716.16,
+      "no_speech_prob": 0.0,
+      "start": 3715.64,
+      "text": "七哥"
+    },
+    {
+      "avg_logprob": -0.206259,
+      "compression_ratio": 1.393204,
+      "end": 3717.64,
+      "no_speech_prob": 0.0,
+      "start": 3716.16,
+      "text": "七哥没问题没问题"
+    },
+    {
+      "avg_logprob": -0.206259,
+      "compression_ratio": 1.393204,
+      "end": 3720.38,
+      "no_speech_prob": 0.0,
+      "start": 3717.64,
+      "text": "我们都是经过病毒考验过来的人"
+    },
+    {
+      "avg_logprob": -0.206259,
+      "compression_ratio": 1.393204,
+      "end": 3722.66,
+      "no_speech_prob": 0.0,
+      "start": 3720.38,
+      "text": "这个一点问题都没有"
+    },
+    {
+      "avg_logprob": -0.206259,
+      "compression_ratio": 1.393204,
+      "end": 3724.52,
+      "no_speech_prob": 0.0,
+      "start": 3722.66,
+      "text": "现在我们分成两班"
+    },
+    {
+      "avg_logprob": -0.206259,
+      "compression_ratio": 1.393204,
+      "end": 3726.62,
+      "no_speech_prob": 0.0,
+      "start": 3724.52,
+      "text": "按说应该是比较轻松一点"
+    },
+    {
+      "avg_logprob": -0.206259,
+      "compression_ratio": 1.393204,
+      "end": 3727.38,
+      "no_speech_prob": 0.0,
+      "start": 3726.62,
+      "text": "不像以前"
+    },
+    {
+      "avg_logprob": -0.206259,
+      "compression_ratio": 1.393204,
+      "end": 3729.26,
+      "no_speech_prob": 0.0,
+      "start": 3727.38,
+      "text": "像文科这个"
+    },
+    {
+      "avg_logprob": -0.206259,
+      "compression_ratio": 1.393204,
+      "end": 3732.04,
+      "no_speech_prob": 0.0,
+      "start": 3729.26,
+      "text": "曾经36个小时的"
+    },
+    {
+      "avg_logprob": -0.206259,
+      "compression_ratio": 1.393204,
+      "end": 3733.58,
+      "no_speech_prob": 0.0,
+      "start": 3732.04,
+      "text": "这个非常非常的"
+    },
+    {
+      "avg_logprob": -0.206259,
+      "compression_ratio": 1.393204,
+      "end": 3733.84,
+      "no_speech_prob": 0.0,
+      "start": 3733.58,
+      "text": "这个"
+    },
+    {
+      "avg_logprob": -0.206259,
+      "compression_ratio": 1.393204,
+      "end": 3734.44,
+      "no_speech_prob": 0.0,
+      "start": 3733.84,
+      "text": "这个是"
+    },
+    {
+      "avg_logprob": -0.206259,
+      "compression_ratio": 1.393204,
+      "end": 3737.48,
+      "no_speech_prob": 0.0,
+      "start": 3734.44,
+      "text": "可能我们第一批染病的"
+    },
+    {
+      "avg_logprob": -0.168706,
+      "compression_ratio": 1.269231,
+      "end": 3739.22,
+      "no_speech_prob": 0.0,
+      "start": 3737.48,
+      "text": "都跟这个有很大关系"
+    },
+    {
+      "avg_logprob": -0.168706,
+      "compression_ratio": 1.269231,
+      "end": 3742.06,
+      "no_speech_prob": 0.0,
+      "start": 3739.22,
+      "text": "是"
+    },
+    {
+      "avg_logprob": -0.168706,
+      "compression_ratio": 1.269231,
+      "end": 3743.38,
+      "no_speech_prob": 0.0,
+      "start": 3742.06,
+      "text": "我们现在"
+    },
+    {
+      "avg_logprob": -0.168706,
+      "compression_ratio": 1.269231,
+      "end": 3744.2,
+      "no_speech_prob": 0.0,
+      "start": 3743.38,
+      "text": "七哥您放心"
+    },
+    {
+      "avg_logprob": -0.168706,
+      "compression_ratio": 1.269231,
+      "end": 3745.84,
+      "no_speech_prob": 0.0,
+      "start": 3744.2,
+      "text": "就是我们每天就是"
+    },
+    {
+      "avg_logprob": -0.168706,
+      "compression_ratio": 1.269231,
+      "end": 3750.08,
+      "no_speech_prob": 0.0,
+      "start": 3745.84,
+      "text": "我们现在是每天上来工作的一天之后"
+    },
+    {
+      "avg_logprob": -0.168706,
+      "compression_ratio": 1.269231,
+      "end": 3751.86,
+      "no_speech_prob": 0.0,
+      "start": 3750.08,
+      "text": "我们会第二天会休息"
+    },
+    {
+      "avg_logprob": -0.168706,
+      "compression_ratio": 1.269231,
+      "end": 3753.24,
+      "no_speech_prob": 0.0,
+      "start": 3751.86,
+      "text": "然后下一班人"
+    },
+    {
+      "avg_logprob": -0.168706,
+      "compression_ratio": 1.269231,
+      "end": 3755.22,
+      "no_speech_prob": 0.0,
+      "start": 3753.24,
+      "text": "咱们就是轮番上阵"
+    },
+    {
+      "avg_logprob": -0.159787,
+      "compression_ratio": 1.25,
+      "end": 3756.9,
+      "no_speech_prob": 0.0,
+      "start": 3755.22,
+      "text": "所以说保证每一个战友"
+    },
+    {
+      "avg_logprob": -0.159787,
+      "compression_ratio": 1.25,
+      "end": 3758.42,
+      "no_speech_prob": 0.0,
+      "start": 3756.9,
+      "text": "能够得到充分的休息"
+    },
+    {
+      "avg_logprob": -0.159787,
+      "compression_ratio": 1.25,
+      "end": 3759.14,
+      "no_speech_prob": 0.0,
+      "start": 3758.42,
+      "text": "在一个"
+    },
+    {
+      "avg_logprob": -0.159787,
+      "compression_ratio": 1.25,
+      "end": 3760.76,
+      "no_speech_prob": 0.0,
+      "start": 3759.14,
+      "text": "就是完全"
+    },
+    {
+      "avg_logprob": -0.159787,
+      "compression_ratio": 1.25,
+      "end": 3762.68,
+      "no_speech_prob": 0.0,
+      "start": 3760.76,
+      "text": "非常好的一个状态下去"
+    },
+    {
+      "avg_logprob": -0.159787,
+      "compression_ratio": 1.25,
+      "end": 3764.3,
+      "no_speech_prob": 0.0,
+      "start": 3762.68,
+      "text": "进行一个救援工作"
+    },
+    {
+      "avg_logprob": -0.159787,
+      "compression_ratio": 1.25,
+      "end": 3768.9,
+      "no_speech_prob": 0.0,
+      "start": 3764.3,
+      "text": "另外一个就是文科"
+    },
+    {
+      "avg_logprob": -0.159787,
+      "compression_ratio": 1.25,
+      "end": 3771.18,
+      "no_speech_prob": 0.0,
+      "start": 3768.9,
+      "text": "你现在看到这些难民的情况"
+    },
+    {
+      "avg_logprob": -0.159787,
+      "compression_ratio": 1.25,
+      "end": 3774.16,
+      "no_speech_prob": 0.0,
+      "start": 3771.18,
+      "text": "和这个现场的这个管理啊"
+    },
+    {
+      "avg_logprob": -0.186963,
+      "compression_ratio": 1.441048,
+      "end": 3776.1,
+      "no_speech_prob": 0.0,
+      "start": 3774.16,
+      "text": "是不是跟以前有很大的改变呢"
+    },
+    {
+      "avg_logprob": -0.186963,
+      "compression_ratio": 1.441048,
+      "end": 3780.46,
+      "no_speech_prob": 0.0,
+      "start": 3776.1,
+      "text": "我们刚来的时候"
+    },
+    {
+      "avg_logprob": -0.186963,
+      "compression_ratio": 1.441048,
+      "end": 3781.42,
+      "no_speech_prob": 0.0,
+      "start": 3780.46,
+      "text": "其实我们"
+    },
+    {
+      "avg_logprob": -0.186963,
+      "compression_ratio": 1.441048,
+      "end": 3782.32,
+      "no_speech_prob": 0.0,
+      "start": 3781.42,
+      "text": "就是"
+    },
+    {
+      "avg_logprob": -0.186963,
+      "compression_ratio": 1.441048,
+      "end": 3784.22,
+      "no_speech_prob": 0.0,
+      "start": 3782.32,
+      "text": "非常的匆忙"
+    },
+    {
+      "avg_logprob": -0.186963,
+      "compression_ratio": 1.441048,
+      "end": 3784.6,
+      "no_speech_prob": 0.0,
+      "start": 3784.22,
+      "text": "因为"
+    },
+    {
+      "avg_logprob": -0.186963,
+      "compression_ratio": 1.441048,
+      "end": 3785.56,
+      "no_speech_prob": 0.0,
+      "start": 3784.6,
+      "text": "所以说呢"
+    },
+    {
+      "avg_logprob": -0.186963,
+      "compression_ratio": 1.441048,
+      "end": 3786.28,
+      "no_speech_prob": 0.0,
+      "start": 3785.56,
+      "text": "现在呢"
+    },
+    {
+      "avg_logprob": -0.186963,
+      "compression_ratio": 1.441048,
+      "end": 3786.8,
+      "no_speech_prob": 0.0,
+      "start": 3786.28,
+      "text": "就是我们"
+    },
+    {
+      "avg_logprob": -0.186963,
+      "compression_ratio": 1.441048,
+      "end": 3787.64,
+      "no_speech_prob": 0.0,
+      "start": 3786.8,
+      "text": "整个"
+    },
+    {
+      "avg_logprob": -0.186963,
+      "compression_ratio": 1.441048,
+      "end": 3788.88,
+      "no_speech_prob": 0.0,
+      "start": 3787.64,
+      "text": "这个营地的组"
+    },
+    {
+      "avg_logprob": -0.186963,
+      "compression_ratio": 1.441048,
+      "end": 3790.3,
+      "no_speech_prob": 0.0,
+      "start": 3788.88,
+      "text": "这个营地"
+    },
+    {
+      "avg_logprob": -0.186963,
+      "compression_ratio": 1.441048,
+      "end": 3790.96,
+      "no_speech_prob": 0.0,
+      "start": 3790.3,
+      "text": "就是非常的"
+    },
+    {
+      "avg_logprob": -0.186963,
+      "compression_ratio": 1.441048,
+      "end": 3793.18,
+      "no_speech_prob": 0.0,
+      "start": 3790.96,
+      "text": "完善了已经"
+    },
+    {
+      "avg_logprob": -0.186963,
+      "compression_ratio": 1.441048,
+      "end": 3795.32,
+      "no_speech_prob": 0.0,
+      "start": 3793.18,
+      "text": "我们也是像建房子一样的"
+    },
+    {
+      "avg_logprob": -0.186963,
+      "compression_ratio": 1.441048,
+      "end": 3795.88,
+      "no_speech_prob": 0.0,
+      "start": 3795.32,
+      "text": "逐步的"
+    },
+    {
+      "avg_logprob": -0.186963,
+      "compression_ratio": 1.441048,
+      "end": 3797.24,
+      "no_speech_prob": 0.0,
+      "start": 3795.88,
+      "text": "搞装修一样的"
+    },
+    {
+      "avg_logprob": -0.186963,
+      "compression_ratio": 1.441048,
+      "end": 3798.32,
+      "no_speech_prob": 0.0,
+      "start": 3797.24,
+      "text": "逐步的慢慢的"
+    },
+    {
+      "avg_logprob": -0.186963,
+      "compression_ratio": 1.441048,
+      "end": 3799.7,
+      "no_speech_prob": 0.0,
+      "start": 3798.32,
+      "text": "从无到有"
+    },
+    {
+      "avg_logprob": -0.186963,
+      "compression_ratio": 1.441048,
+      "end": 3800.82,
+      "no_speech_prob": 0.0,
+      "start": 3799.7,
+      "text": "从有到金"
+    },
+    {
+      "avg_logprob": -0.186963,
+      "compression_ratio": 1.441048,
+      "end": 3802.36,
+      "no_speech_prob": 0.0,
+      "start": 3800.82,
+      "text": "那然后呢"
+    },
+    {
+      "avg_logprob": -0.186963,
+      "compression_ratio": 1.441048,
+      "end": 3804.04,
+      "no_speech_prob": 0.0,
+      "start": 3802.36,
+      "text": "整个营地这边"
+    },
+    {
+      "avg_logprob": -0.128889,
+      "compression_ratio": 1.364706,
+      "end": 3806.38,
+      "no_speech_prob": 0.0,
+      "start": 3804.04,
+      "text": "他们的这个组织方"
+    },
+    {
+      "avg_logprob": -0.128889,
+      "compression_ratio": 1.364706,
+      "end": 3807.14,
+      "no_speech_prob": 0.0,
+      "start": 3806.38,
+      "text": "也是跟我们"
+    },
+    {
+      "avg_logprob": -0.128889,
+      "compression_ratio": 1.364706,
+      "end": 3808.4,
+      "no_speech_prob": 0.0,
+      "start": 3807.14,
+      "text": "各种NGO组织"
+    },
+    {
+      "avg_logprob": -0.128889,
+      "compression_ratio": 1.364706,
+      "end": 3809.48,
+      "no_speech_prob": 0.0,
+      "start": 3808.4,
+      "text": "跟我们非常的"
+    },
+    {
+      "avg_logprob": -0.128889,
+      "compression_ratio": 1.364706,
+      "end": 3810.8,
+      "no_speech_prob": 0.0,
+      "start": 3809.48,
+      "text": "密切的合作"
+    },
+    {
+      "avg_logprob": -0.128889,
+      "compression_ratio": 1.364706,
+      "end": 3811.66,
+      "no_speech_prob": 0.0,
+      "start": 3810.8,
+      "text": "也"
+    },
+    {
+      "avg_logprob": -0.128889,
+      "compression_ratio": 1.364706,
+      "end": 3813.16,
+      "no_speech_prob": 0.0,
+      "start": 3811.66,
+      "text": "因为在这个营地"
+    },
+    {
+      "avg_logprob": -0.128889,
+      "compression_ratio": 1.364706,
+      "end": 3815.2,
+      "no_speech_prob": 0.0,
+      "start": 3813.16,
+      "text": "其实是有一些间谍"
+    },
+    {
+      "avg_logprob": -0.128889,
+      "compression_ratio": 1.364706,
+      "end": 3816.58,
+      "no_speech_prob": 0.0,
+      "start": 3815.2,
+      "text": "还有一些人贩子"
+    },
+    {
+      "avg_logprob": -0.128889,
+      "compression_ratio": 1.364706,
+      "end": 3817.94,
+      "no_speech_prob": 0.0,
+      "start": 3816.58,
+      "text": "甚至是"
+    },
+    {
+      "avg_logprob": -0.128889,
+      "compression_ratio": 1.364706,
+      "end": 3819.0,
+      "no_speech_prob": 0.0,
+      "start": 3817.94,
+      "text": "前几天"
+    },
+    {
+      "avg_logprob": -0.128889,
+      "compression_ratio": 1.364706,
+      "end": 3820.0,
+      "no_speech_prob": 0.0,
+      "start": 3819.0,
+      "text": "有一个"
+    },
+    {
+      "avg_logprob": -0.128889,
+      "compression_ratio": 1.364706,
+      "end": 3821.92,
+      "no_speech_prob": 0.0,
+      "start": 3820.0,
+      "text": "不明身份的人"
+    },
+    {
+      "avg_logprob": -0.128889,
+      "compression_ratio": 1.364706,
+      "end": 3822.58,
+      "no_speech_prob": 0.0,
+      "start": 3821.92,
+      "text": "他冒充"
+    },
+    {
+      "avg_logprob": -0.128889,
+      "compression_ratio": 1.364706,
+      "end": 3823.7,
+      "no_speech_prob": 0.0,
+      "start": 3822.58,
+      "text": "出租车司机"
+    },
+    {
+      "avg_logprob": -0.128889,
+      "compression_ratio": 1.364706,
+      "end": 3825.94,
+      "no_speech_prob": 0.0,
+      "start": 3823.7,
+      "text": "在另外一个组织的"
+    },
+    {
+      "avg_logprob": -0.128889,
+      "compression_ratio": 1.364706,
+      "end": 3827.14,
+      "no_speech_prob": 0.0,
+      "start": 3825.94,
+      "text": "这个帐篷里面出现"
+    },
+    {
+      "avg_logprob": -0.128889,
+      "compression_ratio": 1.364706,
+      "end": 3828.12,
+      "no_speech_prob": 0.0,
+      "start": 3827.14,
+      "text": "然后呢"
+    },
+    {
+      "avg_logprob": -0.128889,
+      "compression_ratio": 1.364706,
+      "end": 3829.68,
+      "no_speech_prob": 0.0,
+      "start": 3828.12,
+      "text": "被人家举报"
+    },
+    {
+      "avg_logprob": -0.128889,
+      "compression_ratio": 1.364706,
+      "end": 3830.44,
+      "no_speech_prob": 0.0,
+      "start": 3829.68,
+      "text": "然后就"
+    },
+    {
+      "avg_logprob": -0.128889,
+      "compression_ratio": 1.364706,
+      "end": 3831.78,
+      "no_speech_prob": 0.0,
+      "start": 3830.44,
+      "text": "让警察带走了"
+    },
+    {
+      "avg_logprob": -0.128889,
+      "compression_ratio": 1.364706,
+      "end": 3833.4,
+      "no_speech_prob": 0.0,
+      "start": 3831.78,
+      "text": "也是一个可疑人员"
+    },
+    {
+      "avg_logprob": -0.161056,
+      "compression_ratio": 1.423077,
+      "end": 3834.44,
+      "no_speech_prob": 0.0,
+      "start": 3833.4,
+      "text": "那么所以说"
+    },
+    {
+      "avg_logprob": -0.161056,
+      "compression_ratio": 1.423077,
+      "end": 3835.04,
+      "no_speech_prob": 0.0,
+      "start": 3834.44,
+      "text": "整个营地"
+    },
+    {
+      "avg_logprob": -0.161056,
+      "compression_ratio": 1.423077,
+      "end": 3836.66,
+      "no_speech_prob": 0.0,
+      "start": 3835.04,
+      "text": "其实是在一个"
+    },
+    {
+      "avg_logprob": -0.161056,
+      "compression_ratio": 1.423077,
+      "end": 3839.46,
+      "no_speech_prob": 0.0,
+      "start": 3836.66,
+      "text": "就是逐渐的"
+    },
+    {
+      "avg_logprob": -0.161056,
+      "compression_ratio": 1.423077,
+      "end": 3839.94,
+      "no_speech_prob": 0.0,
+      "start": 3839.46,
+      "text": "各个"
+    },
+    {
+      "avg_logprob": -0.161056,
+      "compression_ratio": 1.423077,
+      "end": 3840.92,
+      "no_speech_prob": 0.0,
+      "start": 3839.94,
+      "text": "各个国际组织"
+    },
+    {
+      "avg_logprob": -0.161056,
+      "compression_ratio": 1.423077,
+      "end": 3841.72,
+      "no_speech_prob": 0.0,
+      "start": 3840.92,
+      "text": "都是进行一个"
+    },
+    {
+      "avg_logprob": -0.161056,
+      "compression_ratio": 1.423077,
+      "end": 3843.36,
+      "no_speech_prob": 0.0,
+      "start": 3841.72,
+      "text": "相对的去完善"
+    },
+    {
+      "avg_logprob": -0.161056,
+      "compression_ratio": 1.423077,
+      "end": 3844.9,
+      "no_speech_prob": 0.0,
+      "start": 3843.36,
+      "text": "以及规章制度"
+    },
+    {
+      "avg_logprob": -0.161056,
+      "compression_ratio": 1.423077,
+      "end": 3845.5,
+      "no_speech_prob": 0.0,
+      "start": 3844.9,
+      "text": "以及管理"
+    },
+    {
+      "avg_logprob": -0.161056,
+      "compression_ratio": 1.423077,
+      "end": 3846.58,
+      "no_speech_prob": 0.0,
+      "start": 3845.5,
+      "text": "那么我们现在"
+    },
+    {
+      "avg_logprob": -0.161056,
+      "compression_ratio": 1.423077,
+      "end": 3848.26,
+      "no_speech_prob": 0.0,
+      "start": 3846.58,
+      "text": "其实在整个营地里面"
+    },
+    {
+      "avg_logprob": -0.161056,
+      "compression_ratio": 1.423077,
+      "end": 3849.74,
+      "no_speech_prob": 0.0,
+      "start": 3848.26,
+      "text": "是做得最好的"
+    },
+    {
+      "avg_logprob": -0.161056,
+      "compression_ratio": 1.423077,
+      "end": 3851.34,
+      "no_speech_prob": 0.0,
+      "start": 3849.74,
+      "text": "所有的我们的"
+    },
+    {
+      "avg_logprob": -0.161056,
+      "compression_ratio": 1.423077,
+      "end": 3852.84,
+      "no_speech_prob": 0.0,
+      "start": 3851.34,
+      "text": "战友的"
+    },
+    {
+      "avg_logprob": -0.161056,
+      "compression_ratio": 1.423077,
+      "end": 3853.38,
+      "no_speech_prob": 0.0,
+      "start": 3852.84,
+      "text": "着装"
+    },
+    {
+      "avg_logprob": -0.161056,
+      "compression_ratio": 1.423077,
+      "end": 3854.7,
+      "no_speech_prob": 0.0,
+      "start": 3853.38,
+      "text": "统一的一个形象"
+    },
+    {
+      "avg_logprob": -0.161056,
+      "compression_ratio": 1.423077,
+      "end": 3856.3,
+      "no_speech_prob": 0.0,
+      "start": 3854.7,
+      "text": "然后我们的"
+    },
+    {
+      "avg_logprob": -0.161056,
+      "compression_ratio": 1.423077,
+      "end": 3857.42,
+      "no_speech_prob": 0.0,
+      "start": 3856.3,
+      "text": "所有的硬件设施"
+    },
+    {
+      "avg_logprob": -0.161056,
+      "compression_ratio": 1.423077,
+      "end": 3858.62,
+      "no_speech_prob": 0.0,
+      "start": 3857.42,
+      "text": "提供难民的"
+    },
+    {
+      "avg_logprob": -0.161056,
+      "compression_ratio": 1.423077,
+      "end": 3859.6,
+      "no_speech_prob": 0.0,
+      "start": 3858.62,
+      "text": "所有的帮助"
+    },
+    {
+      "avg_logprob": -0.133056,
+      "compression_ratio": 1.518072,
+      "end": 3860.56,
+      "no_speech_prob": 0.0,
+      "start": 3859.6,
+      "text": "甚至现在"
+    },
+    {
+      "avg_logprob": -0.133056,
+      "compression_ratio": 1.518072,
+      "end": 3861.96,
+      "no_speech_prob": 0.0,
+      "start": 3860.56,
+      "text": "当地的这些"
+    },
+    {
+      "avg_logprob": -0.133056,
+      "compression_ratio": 1.518072,
+      "end": 3863.36,
+      "no_speech_prob": 0.0,
+      "start": 3861.96,
+      "text": "营地的各种组织"
+    },
+    {
+      "avg_logprob": -0.133056,
+      "compression_ratio": 1.518072,
+      "end": 3865.24,
+      "no_speech_prob": 0.0,
+      "start": 3863.36,
+      "text": "他们还要求我们来帮助"
+    },
+    {
+      "avg_logprob": -0.133056,
+      "compression_ratio": 1.518072,
+      "end": 3866.64,
+      "no_speech_prob": 0.0,
+      "start": 3865.24,
+      "text": "甚至"
+    },
+    {
+      "avg_logprob": -0.133056,
+      "compression_ratio": 1.518072,
+      "end": 3867.5,
+      "no_speech_prob": 0.0,
+      "start": 3866.64,
+      "text": "问我们"
+    },
+    {
+      "avg_logprob": -0.133056,
+      "compression_ratio": 1.518072,
+      "end": 3868.62,
+      "no_speech_prob": 0.0,
+      "start": 3867.5,
+      "text": "希望我们能够"
+    },
+    {
+      "avg_logprob": -0.133056,
+      "compression_ratio": 1.518072,
+      "end": 3870.38,
+      "no_speech_prob": 0.0,
+      "start": 3868.62,
+      "text": "给他们提供一些物资设施"
+    },
+    {
+      "avg_logprob": -0.133056,
+      "compression_ratio": 1.518072,
+      "end": 3871.86,
+      "no_speech_prob": 0.0,
+      "start": 3870.38,
+      "text": "这些国际组织"
+    },
+    {
+      "avg_logprob": -0.133056,
+      "compression_ratio": 1.518072,
+      "end": 3873.12,
+      "no_speech_prob": 0.0,
+      "start": 3871.86,
+      "text": "其实没有一个"
+    },
+    {
+      "avg_logprob": -0.133056,
+      "compression_ratio": 1.518072,
+      "end": 3874.98,
+      "no_speech_prob": 0.0,
+      "start": 3873.12,
+      "text": "能够像我们这样"
+    },
+    {
+      "avg_logprob": -0.133056,
+      "compression_ratio": 1.518072,
+      "end": 3875.64,
+      "no_speech_prob": 0.0,
+      "start": 3874.98,
+      "text": "有实力"
+    },
+    {
+      "avg_logprob": -0.133056,
+      "compression_ratio": 1.518072,
+      "end": 3877.04,
+      "no_speech_prob": 0.0,
+      "start": 3875.64,
+      "text": "有能力去进行"
+    },
+    {
+      "avg_logprob": -0.133056,
+      "compression_ratio": 1.518072,
+      "end": 3877.84,
+      "no_speech_prob": 0.0,
+      "start": 3877.04,
+      "text": "这样一次"
+    },
+    {
+      "avg_logprob": -0.133056,
+      "compression_ratio": 1.518072,
+      "end": 3879.04,
+      "no_speech_prob": 0.0,
+      "start": 3877.84,
+      "text": "救援的"
+    },
+    {
+      "avg_logprob": -0.133056,
+      "compression_ratio": 1.518072,
+      "end": 3879.8,
+      "no_speech_prob": 0.0,
+      "start": 3879.04,
+      "text": "其实我们"
+    },
+    {
+      "avg_logprob": -0.133056,
+      "compression_ratio": 1.518072,
+      "end": 3880.78,
+      "no_speech_prob": 0.0,
+      "start": 3879.8,
+      "text": "其实现在是"
+    },
+    {
+      "avg_logprob": -0.133056,
+      "compression_ratio": 1.518072,
+      "end": 3882.16,
+      "no_speech_prob": 0.0,
+      "start": 3880.78,
+      "text": "一个非专业的组织"
+    },
+    {
+      "avg_logprob": -0.133056,
+      "compression_ratio": 1.518072,
+      "end": 3882.76,
+      "no_speech_prob": 0.0,
+      "start": 3882.16,
+      "text": "做的一个"
+    },
+    {
+      "avg_logprob": -0.133056,
+      "compression_ratio": 1.518072,
+      "end": 3883.62,
+      "no_speech_prob": 0.0,
+      "start": 3882.76,
+      "text": "比专业组织"
+    },
+    {
+      "avg_logprob": -0.133056,
+      "compression_ratio": 1.518072,
+      "end": 3884.56,
+      "no_speech_prob": 0.0,
+      "start": 3883.62,
+      "text": "做的还要棒的"
+    },
+    {
+      "avg_logprob": -0.133056,
+      "compression_ratio": 1.518072,
+      "end": 3885.6,
+      "no_speech_prob": 0.0,
+      "start": 3884.56,
+      "text": "这一件事情"
+    },
+    {
+      "avg_logprob": -0.133056,
+      "compression_ratio": 1.518072,
+      "end": 3887.06,
+      "no_speech_prob": 0.0,
+      "start": 3885.6,
+      "text": "谢谢奇哥"
+    },
+    {
+      "avg_logprob": -0.133056,
+      "compression_ratio": 1.518072,
+      "end": 3887.64,
+      "no_speech_prob": 0.0,
+      "start": 3887.06,
+      "text": "这个"
+    },
+    {
+      "avg_logprob": -0.208304,
+      "compression_ratio": 1.325397,
+      "end": 3888.94,
+      "no_speech_prob": 0.0,
+      "start": 3887.64,
+      "text": "文科"
+    },
+    {
+      "avg_logprob": -0.208304,
+      "compression_ratio": 1.325397,
+      "end": 3890.38,
+      "no_speech_prob": 0.0,
+      "start": 3888.94,
+      "text": "这个特别特别好"
+    },
+    {
+      "avg_logprob": -0.208304,
+      "compression_ratio": 1.325397,
+      "end": 3890.7,
+      "no_speech_prob": 0.0,
+      "start": 3890.38,
+      "text": "这个"
+    },
+    {
+      "avg_logprob": -0.208304,
+      "compression_ratio": 1.325397,
+      "end": 3892.4,
+      "no_speech_prob": 0.0,
+      "start": 3890.7,
+      "text": "你呀"
+    },
+    {
+      "avg_logprob": -0.208304,
+      "compression_ratio": 1.325397,
+      "end": 3892.94,
+      "no_speech_prob": 0.0,
+      "start": 3892.4,
+      "text": "你"
+    },
+    {
+      "avg_logprob": -0.208304,
+      "compression_ratio": 1.325397,
+      "end": 3893.78,
+      "no_speech_prob": 0.0,
+      "start": 3892.94,
+      "text": "小Sara"
+    },
+    {
+      "avg_logprob": -0.208304,
+      "compression_ratio": 1.325397,
+      "end": 3895.22,
+      "no_speech_prob": 0.0,
+      "start": 3893.78,
+      "text": "还有文耀"
+    },
+    {
+      "avg_logprob": -0.208304,
+      "compression_ratio": 1.325397,
+      "end": 3896.48,
+      "no_speech_prob": 0.0,
+      "start": 3895.22,
+      "text": "大卫"
+    },
+    {
+      "avg_logprob": -0.208304,
+      "compression_ratio": 1.325397,
+      "end": 3897.54,
+      "no_speech_prob": 0.0,
+      "start": 3896.48,
+      "text": "你们这些"
+    },
+    {
+      "avg_logprob": -0.208304,
+      "compression_ratio": 1.325397,
+      "end": 3898.4,
+      "no_speech_prob": 0.0,
+      "start": 3897.54,
+      "text": "都是耳中能详"
+    },
+    {
+      "avg_logprob": -0.208304,
+      "compression_ratio": 1.325397,
+      "end": 3898.92,
+      "no_speech_prob": 0.0,
+      "start": 3898.4,
+      "text": "在国内"
+    },
+    {
+      "avg_logprob": -0.208304,
+      "compression_ratio": 1.325397,
+      "end": 3899.9,
+      "no_speech_prob": 0.0,
+      "start": 3898.92,
+      "text": "现在已经出了名了"
+    },
+    {
+      "avg_logprob": -0.208304,
+      "compression_ratio": 1.325397,
+      "end": 3901.04,
+      "no_speech_prob": 0.0,
+      "start": 3899.9,
+      "text": "已经出名了"
+    },
+    {
+      "avg_logprob": -0.208304,
+      "compression_ratio": 1.325397,
+      "end": 3902.54,
+      "no_speech_prob": 0.0,
+      "start": 3901.04,
+      "text": "我原来的"
+    },
+    {
+      "avg_logprob": -0.208304,
+      "compression_ratio": 1.325397,
+      "end": 3903.96,
+      "no_speech_prob": 0.0,
+      "start": 3902.54,
+      "text": "在吉林涅矿的"
+    },
+    {
+      "avg_logprob": -0.208304,
+      "compression_ratio": 1.325397,
+      "end": 3905.16,
+      "no_speech_prob": 0.0,
+      "start": 3903.96,
+      "text": "中学的女同学"
+    },
+    {
+      "avg_logprob": -0.208304,
+      "compression_ratio": 1.325397,
+      "end": 3907.38,
+      "no_speech_prob": 0.0,
+      "start": 3905.16,
+      "text": "头两下给我发信息"
+    },
+    {
+      "avg_logprob": -0.208304,
+      "compression_ratio": 1.325397,
+      "end": 3908.3,
+      "no_speech_prob": 0.0,
+      "start": 3907.38,
+      "text": "说奇哥"
+    },
+    {
+      "avg_logprob": -0.208304,
+      "compression_ratio": 1.325397,
+      "end": 3909.2,
+      "no_speech_prob": 0.0,
+      "start": 3908.3,
+      "text": "你还记得我吗"
+    },
+    {
+      "avg_logprob": -0.208304,
+      "compression_ratio": 1.325397,
+      "end": 3910.38,
+      "no_speech_prob": 0.0,
+      "start": 3909.2,
+      "text": "我跟你一起"
+    },
+    {
+      "avg_logprob": -0.208304,
+      "compression_ratio": 1.325397,
+      "end": 3911.12,
+      "no_speech_prob": 0.0,
+      "start": 3910.38,
+      "text": "掏家桥"
+    },
+    {
+      "avg_logprob": -0.208304,
+      "compression_ratio": 1.325397,
+      "end": 3912.28,
+      "no_speech_prob": 0.0,
+      "start": 3911.12,
+      "text": "叫掏家桥"
+    },
+    {
+      "avg_logprob": -0.208304,
+      "compression_ratio": 1.325397,
+      "end": 3913.36,
+      "no_speech_prob": 0.0,
+      "start": 3912.28,
+      "text": "掏鸟"
+    },
+    {
+      "avg_logprob": -0.208304,
+      "compression_ratio": 1.325397,
+      "end": 3914.48,
+      "no_speech_prob": 0.0,
+      "start": 3913.36,
+      "text": "小的时候"
+    },
+    {
+      "avg_logprob": -0.208304,
+      "compression_ratio": 1.325397,
+      "end": 3916.12,
+      "no_speech_prob": 0.0,
+      "start": 3914.48,
+      "text": "掏完家桥以后"
+    },
+    {
+      "avg_logprob": -0.208304,
+      "compression_ratio": 1.325397,
+      "end": 3916.6,
+      "no_speech_prob": 0.0,
+      "start": 3916.12,
+      "text": "你点上"
+    },
+    {
+      "avg_logprob": -0.208304,
+      "compression_ratio": 1.325397,
+      "end": 3917.2,
+      "no_speech_prob": 0.0,
+      "start": 3916.6,
+      "text": "放上油"
+    },
+    {
+      "avg_logprob": -0.444431,
+      "compression_ratio": 1.337449,
+      "end": 3918.8,
+      "no_speech_prob": 0.0,
+      "start": 3917.2,
+      "text": "你把那鸟给点着了"
+    },
+    {
+      "avg_logprob": -0.444431,
+      "compression_ratio": 1.337449,
+      "end": 3919.9,
+      "no_speech_prob": 0.0,
+      "start": 3918.8,
+      "text": "这会儿鸟飞了"
+    },
+    {
+      "avg_logprob": -0.444431,
+      "compression_ratio": 1.337449,
+      "end": 3921.2,
+      "no_speech_prob": 0.0,
+      "start": 3919.9,
+      "text": "把那房子给着了"
+    },
+    {
+      "avg_logprob": -0.444431,
+      "compression_ratio": 1.337449,
+      "end": 3922.96,
+      "no_speech_prob": 0.0,
+      "start": 3921.2,
+      "text": "我说我想起来了"
+    },
+    {
+      "avg_logprob": -0.444431,
+      "compression_ratio": 1.337449,
+      "end": 3923.96,
+      "no_speech_prob": 0.0,
+      "start": 3922.96,
+      "text": "我想起来了"
+    },
+    {
+      "avg_logprob": -0.444431,
+      "compression_ratio": 1.337449,
+      "end": 3926.1,
+      "no_speech_prob": 0.0,
+      "start": 3923.96,
+      "text": "说我现在看你们直播"
+    },
+    {
+      "avg_logprob": -0.444431,
+      "compression_ratio": 1.337449,
+      "end": 3928.4,
+      "no_speech_prob": 0.0,
+      "start": 3926.1,
+      "text": "就是到乌克兰前线救人"
+    },
+    {
+      "avg_logprob": -0.444431,
+      "compression_ratio": 1.337449,
+      "end": 3931.14,
+      "no_speech_prob": 0.0,
+      "start": 3928.4,
+      "text": "打过来说了好多人名字"
+    },
+    {
+      "avg_logprob": -0.444431,
+      "compression_ratio": 1.337449,
+      "end": 3932.24,
+      "no_speech_prob": 0.0,
+      "start": 3931.14,
+      "text": "说了一大串"
+    },
+    {
+      "avg_logprob": -0.444431,
+      "compression_ratio": 1.337449,
+      "end": 3934.76,
+      "no_speech_prob": 0.0,
+      "start": 3932.24,
+      "text": "说我特别特别感动"
+    },
+    {
+      "avg_logprob": -0.444431,
+      "compression_ratio": 1.337449,
+      "end": 3935.86,
+      "no_speech_prob": 0.0,
+      "start": 3934.76,
+      "text": "就跟真一小Sara"
+    },
+    {
+      "avg_logprob": -0.444431,
+      "compression_ratio": 1.337449,
+      "end": 3938.94,
+      "no_speech_prob": 0.0,
+      "start": 3935.86,
+      "text": "她姐妹一样说话的口音"
+    },
+    {
+      "avg_logprob": -0.444431,
+      "compression_ratio": 1.337449,
+      "end": 3940.0,
+      "no_speech_prob": 0.0,
+      "start": 3938.94,
+      "text": "就是那哈的"
+    },
+    {
+      "avg_logprob": -0.444431,
+      "compression_ratio": 1.337449,
+      "end": 3940.4,
+      "no_speech_prob": 0.0,
+      "start": 3940.0,
+      "text": "是吧"
+    },
+    {
+      "avg_logprob": -0.444431,
+      "compression_ratio": 1.337449,
+      "end": 3941.56,
+      "no_speech_prob": 0.0,
+      "start": 3940.4,
+      "text": "我的老感动了"
+    },
+    {
+      "avg_logprob": -0.444431,
+      "compression_ratio": 1.337449,
+      "end": 3941.9,
+      "no_speech_prob": 0.0,
+      "start": 3941.56,
+      "text": "是吧"
+    },
+    {
+      "avg_logprob": -0.444431,
+      "compression_ratio": 1.337449,
+      "end": 3942.5,
+      "no_speech_prob": 0.0,
+      "start": 3941.9,
+      "text": "奇哥"
+    },
+    {
+      "avg_logprob": -0.273787,
+      "compression_ratio": 1.304348,
+      "end": 3946.16,
+      "no_speech_prob": 0.0,
+      "start": 3942.5,
+      "text": "然后她嫁给了一个外国人"
+    },
+    {
+      "avg_logprob": -0.273787,
+      "compression_ratio": 1.304348,
+      "end": 3948.84,
+      "no_speech_prob": 0.0,
+      "start": 3946.16,
+      "text": "她已经有孙子孙女了"
+    },
+    {
+      "avg_logprob": -0.273787,
+      "compression_ratio": 1.304348,
+      "end": 3951.4,
+      "no_speech_prob": 0.0,
+      "start": 3948.84,
+      "text": "而且看到我们的救人"
+    },
+    {
+      "avg_logprob": -0.273787,
+      "compression_ratio": 1.304348,
+      "end": 3952.5,
+      "no_speech_prob": 0.0,
+      "start": 3951.4,
+      "text": "她最大感触"
+    },
+    {
+      "avg_logprob": -0.273787,
+      "compression_ratio": 1.304348,
+      "end": 3954.5,
+      "no_speech_prob": 0.0,
+      "start": 3952.5,
+      "text": "她说她在她家地位正高"
+    },
+    {
+      "avg_logprob": -0.273787,
+      "compression_ratio": 1.304348,
+      "end": 3957.4,
+      "no_speech_prob": 0.0,
+      "start": 3954.5,
+      "text": "说你们中国人还会救人呢"
+    },
+    {
+      "avg_logprob": -0.273787,
+      "compression_ratio": 1.304348,
+      "end": 3960.2,
+      "no_speech_prob": 0.0,
+      "start": 3957.4,
+      "text": "你们的人还会救人"
+    },
+    {
+      "avg_logprob": -0.273787,
+      "compression_ratio": 1.304348,
+      "end": 3961.46,
+      "no_speech_prob": 0.0,
+      "start": 3960.2,
+      "text": "你们都会吃人呢"
+    },
+    {
+      "avg_logprob": -0.202085,
+      "compression_ratio": 1.398406,
+      "end": 3963.16,
+      "no_speech_prob": 0.0,
+      "start": 3961.46,
+      "text": "你们只会骗人呢"
+    },
+    {
+      "avg_logprob": -0.202085,
+      "compression_ratio": 1.398406,
+      "end": 3965.92,
+      "no_speech_prob": 0.0,
+      "start": 3963.16,
+      "text": "你们啥时候会救人呢"
+    },
+    {
+      "avg_logprob": -0.202085,
+      "compression_ratio": 1.398406,
+      "end": 3968.52,
+      "no_speech_prob": 0.0,
+      "start": 3965.92,
+      "text": "感动了我这老同学"
+    },
+    {
+      "avg_logprob": -0.202085,
+      "compression_ratio": 1.398406,
+      "end": 3969.46,
+      "no_speech_prob": 0.0,
+      "start": 3968.52,
+      "text": "我告诉你"
+    },
+    {
+      "avg_logprob": -0.202085,
+      "compression_ratio": 1.398406,
+      "end": 3971.16,
+      "no_speech_prob": 0.0,
+      "start": 3969.46,
+      "text": "这头就是我七哥"
+    },
+    {
+      "avg_logprob": -0.202085,
+      "compression_ratio": 1.398406,
+      "end": 3972.46,
+      "no_speech_prob": 0.0,
+      "start": 3971.16,
+      "text": "我同学"
+    },
+    {
+      "avg_logprob": -0.202085,
+      "compression_ratio": 1.398406,
+      "end": 3975.16,
+      "no_speech_prob": 0.0,
+      "start": 3972.46,
+      "text": "俺俩差点都进过玉米地"
+    },
+    {
+      "avg_logprob": -0.202085,
+      "compression_ratio": 1.398406,
+      "end": 3978.02,
+      "no_speech_prob": 0.0,
+      "start": 3975.16,
+      "text": "这人家人家说不信你"
+    },
+    {
+      "avg_logprob": -0.202085,
+      "compression_ratio": 1.398406,
+      "end": 3978.8,
+      "no_speech_prob": 0.0,
+      "start": 3978.02,
+      "text": "吹啥你"
+    },
+    {
+      "avg_logprob": -0.202085,
+      "compression_ratio": 1.398406,
+      "end": 3979.8,
+      "no_speech_prob": 0.0,
+      "start": 3978.8,
+      "text": "我还郭文贵"
+    },
+    {
+      "avg_logprob": -0.202085,
+      "compression_ratio": 1.398406,
+      "end": 3981.6,
+      "no_speech_prob": 0.0,
+      "start": 3979.8,
+      "text": "差点跟你进玉米地"
+    },
+    {
+      "avg_logprob": -0.202085,
+      "compression_ratio": 1.398406,
+      "end": 3982.86,
+      "no_speech_prob": 0.0,
+      "start": 3981.6,
+      "text": "就你这样的呀"
+    },
+    {
+      "avg_logprob": -0.202085,
+      "compression_ratio": 1.398406,
+      "end": 3983.8,
+      "no_speech_prob": 0.0,
+      "start": 3982.86,
+      "text": "人家不相信吗"
+    },
+    {
+      "avg_logprob": -0.202085,
+      "compression_ratio": 1.398406,
+      "end": 3985.26,
+      "no_speech_prob": 0.0,
+      "start": 3983.8,
+      "text": "最后跟我联络上"
+    },
+    {
+      "avg_logprob": -0.202085,
+      "compression_ratio": 1.398406,
+      "end": 3986.06,
+      "no_speech_prob": 0.0,
+      "start": 3985.26,
+      "text": "我说视频视频"
+    },
+    {
+      "avg_logprob": -0.202085,
+      "compression_ratio": 1.398406,
+      "end": 3987.76,
+      "no_speech_prob": 0.0,
+      "start": 3986.06,
+      "text": "我说这绝对的啊"
+    },
+    {
+      "avg_logprob": -0.202085,
+      "compression_ratio": 1.398406,
+      "end": 3989.06,
+      "no_speech_prob": 0.0,
+      "start": 3987.76,
+      "text": "这个当年我说"
+    },
+    {
+      "avg_logprob": -0.202085,
+      "compression_ratio": 1.398406,
+      "end": 3990.3,
+      "no_speech_prob": 0.0,
+      "start": 3989.06,
+      "text": "吉林念旷中学"
+    },
+    {
+      "avg_logprob": -0.158586,
+      "compression_ratio": 1.347656,
+      "end": 3991.96,
+      "no_speech_prob": 0.0,
+      "start": 3990.3,
+      "text": "我当时"
+    },
+    {
+      "avg_logprob": -0.158586,
+      "compression_ratio": 1.347656,
+      "end": 3993.1,
+      "no_speech_prob": 0.0,
+      "start": 3991.96,
+      "text": "我说我是在赵家沟"
+    },
+    {
+      "avg_logprob": -0.158586,
+      "compression_ratio": 1.347656,
+      "end": 3995.06,
+      "no_speech_prob": 0.0,
+      "start": 3993.1,
+      "text": "他属于高级分子"
+    },
+    {
+      "avg_logprob": -0.158586,
+      "compression_ratio": 1.347656,
+      "end": 3996.2,
+      "no_speech_prob": 0.0,
+      "start": 3995.06,
+      "text": "我属于低级分子"
+    },
+    {
+      "avg_logprob": -0.158586,
+      "compression_ratio": 1.347656,
+      "end": 3997.7,
+      "no_speech_prob": 0.0,
+      "start": 3996.2,
+      "text": "跟我玩的时候"
+    },
+    {
+      "avg_logprob": -0.158586,
+      "compression_ratio": 1.347656,
+      "end": 3998.64,
+      "no_speech_prob": 0.0,
+      "start": 3997.7,
+      "text": "我在小学"
+    },
+    {
+      "avg_logprob": -0.158586,
+      "compression_ratio": 1.347656,
+      "end": 3999.56,
+      "no_speech_prob": 0.0,
+      "start": 3998.64,
+      "text": "北京龙小学"
+    },
+    {
+      "avg_logprob": -0.158586,
+      "compression_ratio": 1.347656,
+      "end": 4001.06,
+      "no_speech_prob": 0.0,
+      "start": 3999.56,
+      "text": "差点进玉米地"
+    },
+    {
+      "avg_logprob": -0.158586,
+      "compression_ratio": 1.347656,
+      "end": 4001.76,
+      "no_speech_prob": 0.0,
+      "start": 4001.06,
+      "text": "他比我大"
+    },
+    {
+      "avg_logprob": -0.158586,
+      "compression_ratio": 1.347656,
+      "end": 4003.8,
+      "no_speech_prob": 0.0,
+      "start": 4001.76,
+      "text": "我说所以说就没跟他进得了"
+    },
+    {
+      "avg_logprob": -0.158586,
+      "compression_ratio": 1.347656,
+      "end": 4005.36,
+      "no_speech_prob": 0.0,
+      "start": 4003.8,
+      "text": "后来我被"
+    },
+    {
+      "avg_logprob": -0.158586,
+      "compression_ratio": 1.347656,
+      "end": 4007.2,
+      "no_speech_prob": 0.0,
+      "start": 4005.36,
+      "text": "被他认识的人拿下"
+    },
+    {
+      "avg_logprob": -0.158586,
+      "compression_ratio": 1.347656,
+      "end": 4008.0,
+      "no_speech_prob": 0.0,
+      "start": 4007.2,
+      "text": "进了玉米地"
+    },
+    {
+      "avg_logprob": -0.158586,
+      "compression_ratio": 1.347656,
+      "end": 4010.12,
+      "no_speech_prob": 0.0,
+      "start": 4008.0,
+      "text": "他这个外国丈夫"
+    },
+    {
+      "avg_logprob": -0.158586,
+      "compression_ratio": 1.347656,
+      "end": 4011.42,
+      "no_speech_prob": 0.0,
+      "start": 4010.12,
+      "text": "讲流利的普通话"
+    },
+    {
+      "avg_logprob": -0.158586,
+      "compression_ratio": 1.347656,
+      "end": 4012.88,
+      "no_speech_prob": 0.0,
+      "start": 4011.42,
+      "text": "在哈尔滨军工"
+    },
+    {
+      "avg_logprob": -0.158586,
+      "compression_ratio": 1.347656,
+      "end": 4013.9,
+      "no_speech_prob": 0.0,
+      "start": 4012.88,
+      "text": "待着的"
+    },
+    {
+      "avg_logprob": -0.158586,
+      "compression_ratio": 1.347656,
+      "end": 4016.74,
+      "no_speech_prob": 0.0,
+      "start": 4013.9,
+      "text": "是原来的俄罗斯人"
+    },
+    {
+      "avg_logprob": -0.158586,
+      "compression_ratio": 1.347656,
+      "end": 4018.46,
+      "no_speech_prob": 0.0,
+      "start": 4016.74,
+      "text": "生在乌克兰"
+    },
+    {
+      "avg_logprob": -0.166292,
+      "compression_ratio": 1.237113,
+      "end": 4023.44,
+      "no_speech_prob": 0.0,
+      "start": 4020.3,
+      "text": "你去想想现在你们在前线意味着什么"
+    },
+    {
+      "avg_logprob": -0.166292,
+      "compression_ratio": 1.237113,
+      "end": 4028.1,
+      "no_speech_prob": 0.0,
+      "start": 4023.44,
+      "text": "一个生在乌克兰的俄罗斯人到了哈尔滨军工"
+    },
+    {
+      "avg_logprob": -0.166292,
+      "compression_ratio": 1.237113,
+      "end": 4029.56,
+      "no_speech_prob": 0.0,
+      "start": 4028.1,
+      "text": "帮助中共搞武器"
+    },
+    {
+      "avg_logprob": -0.166292,
+      "compression_ratio": 1.237113,
+      "end": 4032.2,
+      "no_speech_prob": 0.0,
+      "start": 4029.56,
+      "text": "然后娶了一东北的女人"
+    },
+    {
+      "avg_logprob": -0.166292,
+      "compression_ratio": 1.237113,
+      "end": 4034.6,
+      "no_speech_prob": 0.0,
+      "start": 4032.2,
+      "text": "已经子孙三代了"
+    },
+    {
+      "avg_logprob": -0.166292,
+      "compression_ratio": 1.237113,
+      "end": 4036.96,
+      "no_speech_prob": 0.0,
+      "start": 4034.6,
+      "text": "然后看到你们就救乌克兰"
+    },
+    {
+      "avg_logprob": -0.166292,
+      "compression_ratio": 1.237113,
+      "end": 4037.84,
+      "no_speech_prob": 0.0,
+      "start": 4036.96,
+      "text": "他感动了"
+    },
+    {
+      "avg_logprob": -0.166292,
+      "compression_ratio": 1.237113,
+      "end": 4039.14,
+      "no_speech_prob": 0.0,
+      "start": 4037.84,
+      "text": "竟然找到七哥"
+    },
+    {
+      "avg_logprob": -0.161359,
+      "compression_ratio": 1.316794,
+      "end": 4042.92,
+      "no_speech_prob": 0.0,
+      "start": 4039.14,
+      "text": "你想这种故事多可怕呀"
+    },
+    {
+      "avg_logprob": -0.161359,
+      "compression_ratio": 1.316794,
+      "end": 4043.6,
+      "no_speech_prob": 0.0,
+      "start": 4042.92,
+      "text": "兄弟兄妹们"
+    },
+    {
+      "avg_logprob": -0.161359,
+      "compression_ratio": 1.316794,
+      "end": 4045.42,
+      "no_speech_prob": 0.0,
+      "start": 4043.6,
+      "text": "人呐作恶行蚕"
+    },
+    {
+      "avg_logprob": -0.161359,
+      "compression_ratio": 1.316794,
+      "end": 4046.74,
+      "no_speech_prob": 0.0,
+      "start": 4045.42,
+      "text": "他都记着呢"
+    },
+    {
+      "avg_logprob": -0.161359,
+      "compression_ratio": 1.316794,
+      "end": 4049.08,
+      "no_speech_prob": 0.0,
+      "start": 4046.74,
+      "text": "你说文子现在整的样"
+    },
+    {
+      "avg_logprob": -0.161359,
+      "compression_ratio": 1.316794,
+      "end": 4051.2,
+      "no_speech_prob": 0.0,
+      "start": 4049.08,
+      "text": "今天我看着文子的小辫子整的"
+    },
+    {
+      "avg_logprob": -0.161359,
+      "compression_ratio": 1.316794,
+      "end": 4052.9,
+      "no_speech_prob": 0.0,
+      "start": 4051.2,
+      "text": "越倒是越年轻"
+    },
+    {
+      "avg_logprob": -0.161359,
+      "compression_ratio": 1.316794,
+      "end": 4054.18,
+      "no_speech_prob": 0.0,
+      "start": 4052.9,
+      "text": "你知道七哥活不活了"
+    },
+    {
+      "avg_logprob": -0.161359,
+      "compression_ratio": 1.316794,
+      "end": 4055.2,
+      "no_speech_prob": 0.0,
+      "start": 4054.18,
+      "text": "这个没机会了都"
+    },
+    {
+      "avg_logprob": -0.161359,
+      "compression_ratio": 1.316794,
+      "end": 4057.52,
+      "no_speech_prob": 0.0,
+      "start": 4055.2,
+      "text": "就是这救人的人都那么好看"
+    },
+    {
+      "avg_logprob": -0.161359,
+      "compression_ratio": 1.316794,
+      "end": 4059.74,
+      "no_speech_prob": 0.0,
+      "start": 4057.52,
+      "text": "所以你现在想文子和医疗主"
+    },
+    {
+      "avg_logprob": -0.161359,
+      "compression_ratio": 1.316794,
+      "end": 4060.8,
+      "no_speech_prob": 0.0,
+      "start": 4059.74,
+      "text": "救这么多战友"
+    },
+    {
+      "avg_logprob": -0.161359,
+      "compression_ratio": 1.316794,
+      "end": 4061.5,
+      "no_speech_prob": 0.0,
+      "start": 4060.8,
+      "text": "你去想想"
+    },
+    {
+      "avg_logprob": -0.161359,
+      "compression_ratio": 1.316794,
+      "end": 4063.5,
+      "no_speech_prob": 0.0,
+      "start": 4061.5,
+      "text": "你们未来可能不记得七哥"
+    },
+    {
+      "avg_logprob": -0.345544,
+      "compression_ratio": 1.178723,
+      "end": 4067.86,
+      "no_speech_prob": 0.0,
+      "start": 4063.5,
+      "text": "但你记得文子曾经给你吃过药"
+    },
+    {
+      "avg_logprob": -0.345544,
+      "compression_ratio": 1.178723,
+      "end": 4068.46,
+      "no_speech_prob": 0.0,
+      "start": 4067.86,
+      "text": "这真的是"
+    },
+    {
+      "avg_logprob": -0.345544,
+      "compression_ratio": 1.178723,
+      "end": 4069.26,
+      "no_speech_prob": 0.0,
+      "start": 4068.46,
+      "text": "这是多么"
+    },
+    {
+      "avg_logprob": -0.345544,
+      "compression_ratio": 1.178723,
+      "end": 4073.6,
+      "no_speech_prob": 0.0,
+      "start": 4069.26,
+      "text": "说我们每时每刻都在改变自己的人生"
+    },
+    {
+      "avg_logprob": -0.345544,
+      "compression_ratio": 1.178723,
+      "end": 4076.2,
+      "no_speech_prob": 0.0,
+      "start": 4073.6,
+      "text": "你们在前线的这种救援"
+    },
+    {
+      "avg_logprob": -0.345544,
+      "compression_ratio": 1.178723,
+      "end": 4077.0,
+      "no_speech_prob": 0.0,
+      "start": 4076.2,
+      "text": "你去想想"
+    },
+    {
+      "avg_logprob": -0.345544,
+      "compression_ratio": 1.178723,
+      "end": 4082.44,
+      "no_speech_prob": 0.0,
+      "start": 4077.0,
+      "text": "影响多少中国人国际婚姻在海外的形象啊"
+    },
+    {
+      "avg_logprob": -0.345544,
+      "compression_ratio": 1.178723,
+      "end": 4083.64,
+      "no_speech_prob": 0.0,
+      "start": 4082.44,
+      "text": "你想想"
+    },
+    {
+      "avg_logprob": -0.345544,
+      "compression_ratio": 1.178723,
+      "end": 4084.86,
+      "no_speech_prob": 0.0,
+      "start": 4083.64,
+      "text": "啊"
+    },
+    {
+      "avg_logprob": -0.345544,
+      "compression_ratio": 1.178723,
+      "end": 4087.04,
+      "no_speech_prob": 0.0,
+      "start": 4084.86,
+      "text": "就这那天精良"
+    },
+    {
+      "avg_logprob": -0.345544,
+      "compression_ratio": 1.178723,
+      "end": 4089.16,
+      "no_speech_prob": 0.0,
+      "start": 4087.04,
+      "text": "最搞笑的地方"
+    },
+    {
+      "avg_logprob": -0.345544,
+      "compression_ratio": 1.178723,
+      "end": 4089.76,
+      "no_speech_prob": 0.0,
+      "start": 4089.16,
+      "text": "I like that"
+    },
+    {
+      "avg_logprob": -0.345544,
+      "compression_ratio": 1.178723,
+      "end": 4091.34,
+      "no_speech_prob": 0.0,
+      "start": 4089.76,
+      "text": "I like that"
+    },
+    {
+      "avg_logprob": -0.271182,
+      "compression_ratio": 1.27476,
+      "end": 4095.3,
+      "no_speech_prob": 0.0,
+      "start": 4091.34,
+      "text": "我喜欢这个当的China Care Party的英文"
+    },
+    {
+      "avg_logprob": -0.271182,
+      "compression_ratio": 1.27476,
+      "end": 4095.88,
+      "no_speech_prob": 0.0,
+      "start": 4095.3,
+      "text": "是吧"
+    },
+    {
+      "avg_logprob": -0.271182,
+      "compression_ratio": 1.27476,
+      "end": 4099.0,
+      "no_speech_prob": 0.0,
+      "start": 4095.88,
+      "text": "你想这么多么记忆深刻呀"
+    },
+    {
+      "avg_logprob": -0.271182,
+      "compression_ratio": 1.27476,
+      "end": 4101.98,
+      "no_speech_prob": 0.0,
+      "start": 4099.0,
+      "text": "你们这边这个马甲每时每刻都传承着光芒"
+    },
+    {
+      "avg_logprob": -0.271182,
+      "compression_ratio": 1.27476,
+      "end": 4103.78,
+      "no_speech_prob": 0.0,
+      "start": 4101.98,
+      "text": "其实给我要马甲人那堆"
+    },
+    {
+      "avg_logprob": -0.271182,
+      "compression_ratio": 1.27476,
+      "end": 4104.7,
+      "no_speech_prob": 0.0,
+      "start": 4103.78,
+      "text": "我跟你讲"
+    },
+    {
+      "avg_logprob": -0.271182,
+      "compression_ratio": 1.27476,
+      "end": 4106.28,
+      "no_speech_prob": 0.0,
+      "start": 4104.7,
+      "text": "就在我这个住的"
+    },
+    {
+      "avg_logprob": -0.271182,
+      "compression_ratio": 1.27476,
+      "end": 4108.74,
+      "no_speech_prob": 0.0,
+      "start": 4106.28,
+      "text": "Sharon旁边一个超级牛叉的人"
+    },
+    {
+      "avg_logprob": -0.271182,
+      "compression_ratio": 1.27476,
+      "end": 4110.74,
+      "no_speech_prob": 0.0,
+      "start": 4108.74,
+      "text": "世界级的大佬"
+    },
+    {
+      "avg_logprob": -0.271182,
+      "compression_ratio": 1.27476,
+      "end": 4111.3,
+      "no_speech_prob": 0.0,
+      "start": 4110.74,
+      "text": "金融国"
+    },
+    {
+      "avg_logprob": -0.271182,
+      "compression_ratio": 1.27476,
+      "end": 4112.24,
+      "no_speech_prob": 0.0,
+      "start": 4111.3,
+      "text": "华尔街大佬之一"
+    },
+    {
+      "avg_logprob": -0.271182,
+      "compression_ratio": 1.27476,
+      "end": 4114.7,
+      "no_speech_prob": 0.0,
+      "start": 4112.24,
+      "text": "都是你们每天在报上看到的人"
+    },
+    {
+      "avg_logprob": -0.271182,
+      "compression_ratio": 1.27476,
+      "end": 4116.34,
+      "no_speech_prob": 0.0,
+      "start": 4114.7,
+      "text": "说Miles"
+    },
+    {
+      "avg_logprob": -0.271182,
+      "compression_ratio": 1.27476,
+      "end": 4117.74,
+      "no_speech_prob": 0.0,
+      "start": 4116.34,
+      "text": "你要给我几个马甲"
+    },
+    {
+      "avg_logprob": -0.271182,
+      "compression_ratio": 1.27476,
+      "end": 4119.98,
+      "no_speech_prob": 0.0,
+      "start": 4117.74,
+      "text": "我的孙子要你的马甲"
+    },
+    {
+      "avg_logprob": -0.271182,
+      "compression_ratio": 1.27476,
+      "end": 4120.94,
+      "no_speech_prob": 0.0,
+      "start": 4119.98,
+      "text": "我说为什么"
+    },
+    {
+      "avg_logprob": -0.157419,
+      "compression_ratio": 1.423529,
+      "end": 4123.48,
+      "no_speech_prob": 0.0,
+      "start": 4120.94,
+      "text": "他说那个太棒了"
+    },
+    {
+      "avg_logprob": -0.157419,
+      "compression_ratio": 1.423529,
+      "end": 4125.48,
+      "no_speech_prob": 0.0,
+      "start": 4123.48,
+      "text": "他原来是绝对共产党的"
+    },
+    {
+      "avg_logprob": -0.157419,
+      "compression_ratio": 1.423529,
+      "end": 4127.9,
+      "no_speech_prob": 0.0,
+      "start": 4125.48,
+      "text": "那是他把共产党当爹的我跟你说"
+    },
+    {
+      "avg_logprob": -0.157419,
+      "compression_ratio": 1.423529,
+      "end": 4128.68,
+      "no_speech_prob": 0.0,
+      "start": 4127.9,
+      "text": "除了桥水"
+    },
+    {
+      "avg_logprob": -0.157419,
+      "compression_ratio": 1.423529,
+      "end": 4130.78,
+      "no_speech_prob": 0.0,
+      "start": 4128.68,
+      "text": "他就是老二的投资到中共国的"
+    },
+    {
+      "avg_logprob": -0.157419,
+      "compression_ratio": 1.423529,
+      "end": 4132.98,
+      "no_speech_prob": 0.0,
+      "start": 4130.78,
+      "text": "原海航投资者之一"
+    },
+    {
+      "avg_logprob": -0.157419,
+      "compression_ratio": 1.423529,
+      "end": 4135.6,
+      "no_speech_prob": 0.0,
+      "start": 4132.98,
+      "text": "最早投资者"
+    },
+    {
+      "avg_logprob": -0.157419,
+      "compression_ratio": 1.423529,
+      "end": 4137.84,
+      "no_speech_prob": 0.0,
+      "start": 4135.6,
+      "text": "现在跟我们暴力革命一起了"
+    },
+    {
+      "avg_logprob": -0.157419,
+      "compression_ratio": 1.423529,
+      "end": 4141.4,
+      "no_speech_prob": 0.0,
+      "start": 4137.84,
+      "text": "他都在看我们支持乌克兰"
+    },
+    {
+      "avg_logprob": -0.157419,
+      "compression_ratio": 1.423529,
+      "end": 4143.94,
+      "no_speech_prob": 0.0,
+      "start": 4141.4,
+      "text": "他说你们支持乌克兰这个是为了什么"
+    },
+    {
+      "avg_logprob": -0.157419,
+      "compression_ratio": 1.423529,
+      "end": 4144.94,
+      "no_speech_prob": 0.0,
+      "start": 4143.94,
+      "text": "我说天"
+    },
+    {
+      "avg_logprob": -0.157419,
+      "compression_ratio": 1.423529,
+      "end": 4147.8,
+      "no_speech_prob": 0.0,
+      "start": 4144.94,
+      "text": "向天地许诺没有任何的目的"
+    },
+    {
+      "avg_logprob": -0.157419,
+      "compression_ratio": 1.423529,
+      "end": 4148.88,
+      "no_speech_prob": 0.0,
+      "start": 4147.8,
+      "text": "没有任何利益"
+    },
+    {
+      "avg_logprob": -0.304334,
+      "compression_ratio": 1.122302,
+      "end": 4152.42,
+      "no_speech_prob": 0.0,
+      "start": 4148.88,
+      "text": "就是让人知道我们不能被共产党代表"
+    },
+    {
+      "avg_logprob": -0.304334,
+      "compression_ratio": 1.122302,
+      "end": 4154.84,
+      "no_speech_prob": 0.0,
+      "start": 4152.42,
+      "text": "我们是要干掉共产党的中国人"
+    },
+    {
+      "avg_logprob": -0.304334,
+      "compression_ratio": 1.122302,
+      "end": 4156.62,
+      "no_speech_prob": 0.0,
+      "start": 4154.84,
+      "text": "我们防止在海外排华"
+    },
+    {
+      "avg_logprob": -0.304334,
+      "compression_ratio": 1.122302,
+      "end": 4157.42,
+      "no_speech_prob": 0.0,
+      "start": 4156.62,
+      "text": "就这么简单"
+    },
+    {
+      "avg_logprob": -0.304334,
+      "compression_ratio": 1.122302,
+      "end": 4158.42,
+      "no_speech_prob": 0.0,
+      "start": 4157.42,
+      "text": "其他啥都没有"
+    },
+    {
+      "avg_logprob": -0.304334,
+      "compression_ratio": 1.122302,
+      "end": 4159.84,
+      "no_speech_prob": 0.0,
+      "start": 4158.42,
+      "text": "没有人"
+    },
+    {
+      "avg_logprob": -0.246259,
+      "compression_ratio": 1.0,
+      "end": 4163.38,
+      "no_speech_prob": 0.0,
+      "start": 4159.84,
+      "text": "我说像我一样每天提心吊胆的我的战友兄弟姐妹"
+    },
+    {
+      "avg_logprob": -0.246259,
+      "compression_ratio": 1.0,
+      "end": 4165.38,
+      "no_speech_prob": 0.0,
+      "start": 4163.38,
+      "text": "被送到前线去"
+    },
+    {
+      "avg_logprob": -0.246259,
+      "compression_ratio": 1.0,
+      "end": 4166.38,
+      "no_speech_prob": 0.0,
+      "start": 4165.38,
+      "text": "面对战争"
+    },
+    {
+      "avg_logprob": -0.246259,
+      "compression_ratio": 1.0,
+      "end": 4167.58,
+      "no_speech_prob": 0.0,
+      "start": 4166.38,
+      "text": "是不是啊"
+    },
+    {
+      "avg_logprob": -0.500556,
+      "compression_ratio": 2.052632,
+      "end": 4171.12,
+      "no_speech_prob": 0.0,
+      "start": 4167.58,
+      "text": "面对着这个病毒的这个这个这个这个这个这个这个这个这个"
+    },
+    {
+      "avg_logprob": -0.258616,
+      "compression_ratio": 1.220096,
+      "end": 4172.86,
+      "no_speech_prob": 0.0,
+      "start": 4171.12,
+      "text": "染上病毒的危险和侵略"
+    },
+    {
+      "avg_logprob": -0.258616,
+      "compression_ratio": 1.220096,
+      "end": 4173.66,
+      "no_speech_prob": 0.0,
+      "start": 4172.86,
+      "text": "啊"
+    },
+    {
+      "avg_logprob": -0.258616,
+      "compression_ratio": 1.220096,
+      "end": 4175.66,
+      "no_speech_prob": 0.0,
+      "start": 4173.66,
+      "text": "我们还要受人批评"
+    },
+    {
+      "avg_logprob": -0.258616,
+      "compression_ratio": 1.220096,
+      "end": 4178.28,
+      "no_speech_prob": 0.0,
+      "start": 4175.66,
+      "text": "我说我们就一个目的"
+    },
+    {
+      "avg_logprob": -0.258616,
+      "compression_ratio": 1.220096,
+      "end": 4182.02,
+      "no_speech_prob": 0.0,
+      "start": 4178.28,
+      "text": "就是要宣传新中国联邦和法治基金"
+    },
+    {
+      "avg_logprob": -0.258616,
+      "compression_ratio": 1.220096,
+      "end": 4185.08,
+      "no_speech_prob": 0.0,
+      "start": 4182.02,
+      "text": "和我们和中国共产党不一样的地方"
+    },
+    {
+      "avg_logprob": -0.258616,
+      "compression_ratio": 1.220096,
+      "end": 4185.86,
+      "no_speech_prob": 0.0,
+      "start": 4185.08,
+      "text": "就这么简单"
+    },
+    {
+      "avg_logprob": -0.258616,
+      "compression_ratio": 1.220096,
+      "end": 4187.08,
+      "no_speech_prob": 0.0,
+      "start": 4185.86,
+      "text": "感动的不得了"
+    },
+    {
+      "avg_logprob": -0.258616,
+      "compression_ratio": 1.220096,
+      "end": 4190.36,
+      "no_speech_prob": 0.0,
+      "start": 4187.08,
+      "text": "他为啥为啥你直到现在变了你知道吗"
+    },
+    {
+      "avg_logprob": -0.176688,
+      "compression_ratio": 1.268182,
+      "end": 4193.82,
+      "no_speech_prob": 0.0,
+      "start": 4190.36,
+      "text": "儿子在英国读书"
+    },
+    {
+      "avg_logprob": -0.176688,
+      "compression_ratio": 1.268182,
+      "end": 4196.5,
+      "no_speech_prob": 0.0,
+      "start": 4193.82,
+      "text": "他要去英国参加仪式"
+    },
+    {
+      "avg_logprob": -0.176688,
+      "compression_ratio": 1.268182,
+      "end": 4197.88,
+      "no_speech_prob": 0.0,
+      "start": 4196.5,
+      "text": "必须打疫苗"
+    },
+    {
+      "avg_logprob": -0.176688,
+      "compression_ratio": 1.268182,
+      "end": 4199.32,
+      "no_speech_prob": 0.0,
+      "start": 4197.88,
+      "text": "只打了一针"
+    },
+    {
+      "avg_logprob": -0.176688,
+      "compression_ratio": 1.268182,
+      "end": 4200.52,
+      "no_speech_prob": 0.0,
+      "start": 4199.32,
+      "text": "回来办贪"
+    },
+    {
+      "avg_logprob": -0.176688,
+      "compression_ratio": 1.268182,
+      "end": 4203.9,
+      "no_speech_prob": 0.0,
+      "start": 4200.52,
+      "text": "这个牛叉的人物"
+    },
+    {
+      "avg_logprob": -0.176688,
+      "compression_ratio": 1.268182,
+      "end": 4204.48,
+      "no_speech_prob": 0.0,
+      "start": 4203.9,
+      "text": "大家都知道"
+    },
+    {
+      "avg_logprob": -0.176688,
+      "compression_ratio": 1.268182,
+      "end": 4206.98,
+      "no_speech_prob": 0.0,
+      "start": 4204.48,
+      "text": "他广这个曼哈顿多少学校"
+    },
+    {
+      "avg_logprob": -0.176688,
+      "compression_ratio": 1.268182,
+      "end": 4208.5,
+      "no_speech_prob": 0.0,
+      "start": 4206.98,
+      "text": "多少医院都他捐款"
+    },
+    {
+      "avg_logprob": -0.176688,
+      "compression_ratio": 1.268182,
+      "end": 4210.3,
+      "no_speech_prob": 0.0,
+      "start": 4208.5,
+      "text": "这回把他给救了"
+    },
+    {
+      "avg_logprob": -0.176688,
+      "compression_ratio": 1.268182,
+      "end": 4211.78,
+      "no_speech_prob": 0.0,
+      "start": 4210.3,
+      "text": "结果一去"
+    },
+    {
+      "avg_logprob": -0.176688,
+      "compression_ratio": 1.268182,
+      "end": 4213.14,
+      "no_speech_prob": 0.0,
+      "start": 4211.78,
+      "text": "人家人家一看"
+    },
+    {
+      "avg_logprob": -0.176688,
+      "compression_ratio": 1.268182,
+      "end": 4214.28,
+      "no_speech_prob": 0.0,
+      "start": 4213.14,
+      "text": "一个护士"
+    },
+    {
+      "avg_logprob": -0.176688,
+      "compression_ratio": 1.268182,
+      "end": 4216.1,
+      "no_speech_prob": 0.0,
+      "start": 4214.28,
+      "text": "说你就是这个"
+    },
+    {
+      "avg_logprob": -0.176688,
+      "compression_ratio": 1.268182,
+      "end": 4218.3,
+      "no_speech_prob": 0.0,
+      "start": 4216.1,
+      "text": "疫苗反应证"
+    },
+    {
+      "avg_logprob": -0.230798,
+      "compression_ratio": 1.29572,
+      "end": 4221.18,
+      "no_speech_prob": 0.0,
+      "start": 4218.3,
+      "text": "最后是把他按到了医院里"
+    },
+    {
+      "avg_logprob": -0.230798,
+      "compression_ratio": 1.29572,
+      "end": 4223.42,
+      "no_speech_prob": 0.0,
+      "start": 4221.18,
+      "text": "给他所有的血液洗毒"
+    },
+    {
+      "avg_logprob": -0.230798,
+      "compression_ratio": 1.29572,
+      "end": 4224.86,
+      "no_speech_prob": 0.0,
+      "start": 4223.42,
+      "text": "在ICU呆了几天"
+    },
+    {
+      "avg_logprob": -0.230798,
+      "compression_ratio": 1.29572,
+      "end": 4225.7,
+      "no_speech_prob": 0.0,
+      "start": 4224.86,
+      "text": "差点死在里边"
+    },
+    {
+      "avg_logprob": -0.230798,
+      "compression_ratio": 1.29572,
+      "end": 4228.46,
+      "no_speech_prob": 0.0,
+      "start": 4225.7,
+      "text": "这就是病毒"
+    },
+    {
+      "avg_logprob": -0.230798,
+      "compression_ratio": 1.29572,
+      "end": 4229.46,
+      "no_speech_prob": 0.0,
+      "start": 4228.46,
+      "text": "这是疫苗"
+    },
+    {
+      "avg_logprob": -0.230798,
+      "compression_ratio": 1.29572,
+      "end": 4230.36,
+      "no_speech_prob": 0.0,
+      "start": 4229.46,
+      "text": "这个综合症"
+    },
+    {
+      "avg_logprob": -0.230798,
+      "compression_ratio": 1.29572,
+      "end": 4232.32,
+      "no_speech_prob": 0.0,
+      "start": 4230.36,
+      "text": "现在看"
+    },
+    {
+      "avg_logprob": -0.230798,
+      "compression_ratio": 1.29572,
+      "end": 4233.6,
+      "no_speech_prob": 0.0,
+      "start": 4232.32,
+      "text": "都在看这个"
+    },
+    {
+      "avg_logprob": -0.230798,
+      "compression_ratio": 1.29572,
+      "end": 4234.82,
+      "no_speech_prob": 0.0,
+      "start": 4233.6,
+      "text": "这个咱们乌克兰直播"
+    },
+    {
+      "avg_logprob": -0.230798,
+      "compression_ratio": 1.29572,
+      "end": 4236.24,
+      "no_speech_prob": 0.0,
+      "start": 4234.82,
+      "text": "都在看咱们前线"
+    },
+    {
+      "avg_logprob": -0.230798,
+      "compression_ratio": 1.29572,
+      "end": 4240.0,
+      "no_speech_prob": 0.0,
+      "start": 4236.24,
+      "text": "我想跟你说的事情"
+    },
+    {
+      "avg_logprob": -0.230798,
+      "compression_ratio": 1.29572,
+      "end": 4240.84,
+      "no_speech_prob": 0.0,
+      "start": 4240.0,
+      "text": "兄弟姐妹们"
+    },
+    {
+      "avg_logprob": -0.230798,
+      "compression_ratio": 1.29572,
+      "end": 4241.8,
+      "no_speech_prob": 0.0,
+      "start": 4240.84,
+      "text": "就是我讲这个"
+    },
+    {
+      "avg_logprob": -0.230798,
+      "compression_ratio": 1.29572,
+      "end": 4242.96,
+      "no_speech_prob": 0.0,
+      "start": 4241.8,
+      "text": "师男再帅"
+    },
+    {
+      "avg_logprob": -0.230798,
+      "compression_ratio": 1.29572,
+      "end": 4244.06,
+      "no_speech_prob": 0.0,
+      "start": 4242.96,
+      "text": "他声音再好听"
+    },
+    {
+      "avg_logprob": -0.230798,
+      "compression_ratio": 1.29572,
+      "end": 4245.48,
+      "no_speech_prob": 0.0,
+      "start": 4244.06,
+      "text": "他讲不出这些"
+    },
+    {
+      "avg_logprob": -0.230798,
+      "compression_ratio": 1.29572,
+      "end": 4247.56,
+      "no_speech_prob": 0.0,
+      "start": 4245.48,
+      "text": "我是亲身经历"
+    },
+    {
+      "avg_logprob": -0.236391,
+      "compression_ratio": 1.433036,
+      "end": 4250.22,
+      "no_speech_prob": 0.0,
+      "start": 4248.3,
+      "text": "这是故事"
+    },
+    {
+      "avg_logprob": -0.236391,
+      "compression_ratio": 1.433036,
+      "end": 4252.02,
+      "no_speech_prob": 0.0,
+      "start": 4250.22,
+      "text": "这就是你们现场做到的"
+    },
+    {
+      "avg_logprob": -0.236391,
+      "compression_ratio": 1.433036,
+      "end": 4253.34,
+      "no_speech_prob": 0.0,
+      "start": 4252.02,
+      "text": "你们那个帐篷"
+    },
+    {
+      "avg_logprob": -0.236391,
+      "compression_ratio": 1.433036,
+      "end": 4254.68,
+      "no_speech_prob": 0.0,
+      "start": 4253.34,
+      "text": "绝对就像"
+    },
+    {
+      "avg_logprob": -0.236391,
+      "compression_ratio": 1.433036,
+      "end": 4256.74,
+      "no_speech_prob": 0.0,
+      "start": 4254.68,
+      "text": "贾平凹"
+    },
+    {
+      "avg_logprob": -0.236391,
+      "compression_ratio": 1.433036,
+      "end": 4257.9,
+      "no_speech_prob": 0.0,
+      "start": 4256.74,
+      "text": "贾平凹是什么"
+    },
+    {
+      "avg_logprob": -0.236391,
+      "compression_ratio": 1.433036,
+      "end": 4258.86,
+      "no_speech_prob": 0.0,
+      "start": 4257.9,
+      "text": "写的那本书"
+    },
+    {
+      "avg_logprob": -0.236391,
+      "compression_ratio": 1.433036,
+      "end": 4260.56,
+      "no_speech_prob": 0.0,
+      "start": 4258.86,
+      "text": "就是那个写的新疆"
+    },
+    {
+      "avg_logprob": -0.236391,
+      "compression_ratio": 1.433036,
+      "end": 4262.98,
+      "no_speech_prob": 0.0,
+      "start": 4260.56,
+      "text": "在黑暗中的一盏灯一样"
+    },
+    {
+      "avg_logprob": -0.236391,
+      "compression_ratio": 1.433036,
+      "end": 4263.5,
+      "no_speech_prob": 0.0,
+      "start": 4262.98,
+      "text": "看着"
+    },
+    {
+      "avg_logprob": -0.236391,
+      "compression_ratio": 1.433036,
+      "end": 4264.8,
+      "no_speech_prob": 0.0,
+      "start": 4263.5,
+      "text": "在那个"
+    },
+    {
+      "avg_logprob": -0.236391,
+      "compression_ratio": 1.433036,
+      "end": 4267.26,
+      "no_speech_prob": 0.0,
+      "start": 4264.8,
+      "text": "所有的土房子里边"
+    },
+    {
+      "avg_logprob": -0.236391,
+      "compression_ratio": 1.433036,
+      "end": 4268.5,
+      "no_speech_prob": 0.0,
+      "start": 4267.26,
+      "text": "挖出了一个房子"
+    },
+    {
+      "avg_logprob": -0.236391,
+      "compression_ratio": 1.433036,
+      "end": 4269.64,
+      "no_speech_prob": 0.0,
+      "start": 4268.5,
+      "text": "房子里边点着一个灯"
+    },
+    {
+      "avg_logprob": -0.236391,
+      "compression_ratio": 1.433036,
+      "end": 4271.06,
+      "no_speech_prob": 0.0,
+      "start": 4269.64,
+      "text": "我看到小说"
+    },
+    {
+      "avg_logprob": -0.236391,
+      "compression_ratio": 1.433036,
+      "end": 4272.6,
+      "no_speech_prob": 0.0,
+      "start": 4271.06,
+      "text": "我觉得你们就是那盏灯"
+    },
+    {
+      "avg_logprob": -0.236391,
+      "compression_ratio": 1.433036,
+      "end": 4275.6,
+      "no_speech_prob": 0.0,
+      "start": 4272.6,
+      "text": "西北人还有希望"
+    },
+    {
+      "avg_logprob": -0.121077,
+      "compression_ratio": 1.267857,
+      "end": 4280.9,
+      "no_speech_prob": 0.0,
+      "start": 4275.6,
+      "text": "最后是记者找到那盏灯"
+    },
+    {
+      "avg_logprob": -0.121077,
+      "compression_ratio": 1.267857,
+      "end": 4282.98,
+      "no_speech_prob": 0.0,
+      "start": 4280.9,
+      "text": "听到了里边啪啪啪声"
+    },
+    {
+      "avg_logprob": -0.121077,
+      "compression_ratio": 1.267857,
+      "end": 4286.12,
+      "no_speech_prob": 0.0,
+      "start": 4282.98,
+      "text": "原来人类还有希望"
+    },
+    {
+      "avg_logprob": -0.121077,
+      "compression_ratio": 1.267857,
+      "end": 4287.84,
+      "no_speech_prob": 0.0,
+      "start": 4286.12,
+      "text": "在这种黑暗中"
+    },
+    {
+      "avg_logprob": -0.121077,
+      "compression_ratio": 1.267857,
+      "end": 4289.9,
+      "no_speech_prob": 0.0,
+      "start": 4287.84,
+      "text": "在这种所谓的窑洞里"
+    },
+    {
+      "avg_logprob": -0.121077,
+      "compression_ratio": 1.267857,
+      "end": 4292.6,
+      "no_speech_prob": 0.0,
+      "start": 4289.9,
+      "text": "还有啪啪啪的声"
+    },
+    {
+      "avg_logprob": -0.121077,
+      "compression_ratio": 1.267857,
+      "end": 4295.14,
+      "no_speech_prob": 0.0,
+      "start": 4292.6,
+      "text": "这个时候发现"
+    },
+    {
+      "avg_logprob": -0.121077,
+      "compression_ratio": 1.267857,
+      "end": 4296.04,
+      "no_speech_prob": 0.0,
+      "start": 4295.14,
+      "text": "啪啪啪的声"
+    },
+    {
+      "avg_logprob": -0.121077,
+      "compression_ratio": 1.267857,
+      "end": 4297.6,
+      "no_speech_prob": 0.0,
+      "start": 4296.04,
+      "text": "是给人类带来温暖"
+    },
+    {
+      "avg_logprob": -0.121077,
+      "compression_ratio": 1.267857,
+      "end": 4299.12,
+      "no_speech_prob": 0.0,
+      "start": 4297.6,
+      "text": "叫繁殖"
+    },
+    {
+      "avg_logprob": -0.115048,
+      "compression_ratio": 1.357759,
+      "end": 4303.34,
+      "no_speech_prob": 0.0,
+      "start": 4299.12,
+      "text": "希望繁殖的越多越好"
+    },
+    {
+      "avg_logprob": -0.115048,
+      "compression_ratio": 1.357759,
+      "end": 4305.0,
+      "no_speech_prob": 0.0,
+      "start": 4303.34,
+      "text": "但是灾难的繁殖"
+    },
+    {
+      "avg_logprob": -0.115048,
+      "compression_ratio": 1.357759,
+      "end": 4307.5,
+      "no_speech_prob": 0.0,
+      "start": 4305.0,
+      "text": "它也同样会造就希望"
+    },
+    {
+      "avg_logprob": -0.115048,
+      "compression_ratio": 1.357759,
+      "end": 4309.96,
+      "no_speech_prob": 0.0,
+      "start": 4307.5,
+      "text": "今天你们在那"
+    },
+    {
+      "avg_logprob": -0.115048,
+      "compression_ratio": 1.357759,
+      "end": 4311.42,
+      "no_speech_prob": 0.0,
+      "start": 4309.96,
+      "text": "唯一的是不能啪啪啪"
+    },
+    {
+      "avg_logprob": -0.115048,
+      "compression_ratio": 1.357759,
+      "end": 4313.34,
+      "no_speech_prob": 0.0,
+      "start": 4311.42,
+      "text": "但是你们的形象"
+    },
+    {
+      "avg_logprob": -0.115048,
+      "compression_ratio": 1.357759,
+      "end": 4315.96,
+      "no_speech_prob": 0.0,
+      "start": 4313.34,
+      "text": "却是绝对给世界带来了希望"
+    },
+    {
+      "avg_logprob": -0.115048,
+      "compression_ratio": 1.357759,
+      "end": 4318.16,
+      "no_speech_prob": 0.0,
+      "start": 4315.96,
+      "text": "特别给海外中文带来了希望"
+    },
+    {
+      "avg_logprob": -0.115048,
+      "compression_ratio": 1.357759,
+      "end": 4320.92,
+      "no_speech_prob": 0.0,
+      "start": 4318.16,
+      "text": "真的是忠心的感谢"
+    },
+    {
+      "avg_logprob": -0.115048,
+      "compression_ratio": 1.357759,
+      "end": 4322.74,
+      "no_speech_prob": 0.0,
+      "start": 4320.92,
+      "text": "用什么话都无法表达"
+    },
+    {
+      "avg_logprob": -0.115048,
+      "compression_ratio": 1.357759,
+      "end": 4324.0,
+      "no_speech_prob": 0.0,
+      "start": 4322.74,
+      "text": "战友们对你们的感激"
+    },
+    {
+      "avg_logprob": -0.115048,
+      "compression_ratio": 1.357759,
+      "end": 4326.24,
+      "no_speech_prob": 0.0,
+      "start": 4324.0,
+      "text": "任何忽视前线战友"
+    },
+    {
+      "avg_logprob": -0.23829,
+      "compression_ratio": 1.266949,
+      "end": 4329.56,
+      "no_speech_prob": 0.0,
+      "start": 4326.24,
+      "text": "在24小时随时面临着这种生命危险"
+    },
+    {
+      "avg_logprob": -0.23829,
+      "compression_ratio": 1.266949,
+      "end": 4330.54,
+      "no_speech_prob": 0.0,
+      "start": 4329.56,
+      "text": "病毒危险的人"
+    },
+    {
+      "avg_logprob": -0.23829,
+      "compression_ratio": 1.266949,
+      "end": 4332.2,
+      "no_speech_prob": 0.0,
+      "start": 4330.54,
+      "text": "他不配做我们兄弟姐们"
+    },
+    {
+      "avg_logprob": -0.23829,
+      "compression_ratio": 1.266949,
+      "end": 4335.44,
+      "no_speech_prob": 0.0,
+      "start": 4332.2,
+      "text": "如果你们需要"
+    },
+    {
+      "avg_logprob": -0.23829,
+      "compression_ratio": 1.266949,
+      "end": 4337.22,
+      "no_speech_prob": 0.0,
+      "start": 4335.44,
+      "text": "七哥愿意以身相许"
+    },
+    {
+      "avg_logprob": -0.23829,
+      "compression_ratio": 1.266949,
+      "end": 4338.98,
+      "no_speech_prob": 0.0,
+      "start": 4337.22,
+      "text": "除非你们不需要"
+    },
+    {
+      "avg_logprob": -0.23829,
+      "compression_ratio": 1.266949,
+      "end": 4340.22,
+      "no_speech_prob": 0.0,
+      "start": 4338.98,
+      "text": "男的就别嫁了"
+    },
+    {
+      "avg_logprob": -0.23829,
+      "compression_ratio": 1.266949,
+      "end": 4341.24,
+      "no_speech_prob": 0.0,
+      "start": 4340.22,
+      "text": "主要欢迎女士"
+    },
+    {
+      "avg_logprob": -0.23829,
+      "compression_ratio": 1.266949,
+      "end": 4341.82,
+      "no_speech_prob": 0.0,
+      "start": 4341.24,
+      "text": "谢谢"
+    },
+    {
+      "avg_logprob": -0.23829,
+      "compression_ratio": 1.266949,
+      "end": 4348.56,
+      "no_speech_prob": 0.0,
+      "start": 4341.82,
+      "text": "感谢七哥"
+    },
+    {
+      "avg_logprob": -0.23829,
+      "compression_ratio": 1.266949,
+      "end": 4349.24,
+      "no_speech_prob": 0.0,
+      "start": 4348.56,
+      "text": "感谢七哥"
+    },
+    {
+      "avg_logprob": -0.23829,
+      "compression_ratio": 1.266949,
+      "end": 4351.78,
+      "no_speech_prob": 0.0,
+      "start": 4349.24,
+      "text": "今天您在这"
+    },
+    {
+      "avg_logprob": -0.23829,
+      "compression_ratio": 1.266949,
+      "end": 4353.5,
+      "no_speech_prob": 0.0,
+      "start": 4351.78,
+      "text": "前一截是吗"
+    },
+    {
+      "avg_logprob": -0.23829,
+      "compression_ratio": 1.266949,
+      "end": 4355.98,
+      "no_speech_prob": 0.0,
+      "start": 4353.5,
+      "text": "接下来我要跟你们说一下疫苗的问题"
+    },
+    {
+      "avg_logprob": -0.333949,
+      "compression_ratio": 1.62439,
+      "end": 4358.1,
+      "no_speech_prob": 0.0,
+      "start": 4355.98,
+      "text": "我要接着今天说说疫苗的问题"
+    },
+    {
+      "avg_logprob": -0.333949,
+      "compression_ratio": 1.62439,
+      "end": 4358.98,
+      "no_speech_prob": 0.0,
+      "start": 4358.1,
+      "text": "救人的事"
+    },
+    {
+      "avg_logprob": -0.333949,
+      "compression_ratio": 1.62439,
+      "end": 4359.7,
+      "no_speech_prob": 0.0,
+      "start": 4358.98,
+      "text": "好的"
+    },
+    {
+      "avg_logprob": -0.333949,
+      "compression_ratio": 1.62439,
+      "end": 4360.86,
+      "no_speech_prob": 0.0,
+      "start": 4359.7,
+      "text": "好的"
+    },
+    {
+      "avg_logprob": -0.333949,
+      "compression_ratio": 1.62439,
+      "end": 4363.18,
+      "no_speech_prob": 0.0,
+      "start": 4360.86,
+      "text": "七哥那给我们讲讲吧"
+    },
+    {
+      "avg_logprob": -0.333949,
+      "compression_ratio": 1.62439,
+      "end": 4366.16,
+      "no_speech_prob": 0.0,
+      "start": 4363.18,
+      "text": "那文科谢谢了"
+    },
+    {
+      "avg_logprob": -0.333949,
+      "compression_ratio": 1.62439,
+      "end": 4366.66,
+      "no_speech_prob": 0.0,
+      "start": 4366.16,
+      "text": "谢谢了"
+    },
+    {
+      "avg_logprob": -0.333949,
+      "compression_ratio": 1.62439,
+      "end": 4367.6,
+      "no_speech_prob": 0.0,
+      "start": 4366.66,
+      "text": "兄弟姐们谢谢了"
+    },
+    {
+      "avg_logprob": -0.333949,
+      "compression_ratio": 1.62439,
+      "end": 4368.7,
+      "no_speech_prob": 0.0,
+      "start": 4367.6,
+      "text": "谢谢了"
+    },
+    {
+      "avg_logprob": -0.333949,
+      "compression_ratio": 1.62439,
+      "end": 4369.92,
+      "no_speech_prob": 0.0,
+      "start": 4368.7,
+      "text": "路人谢谢了"
+    },
+    {
+      "avg_logprob": -0.333949,
+      "compression_ratio": 1.62439,
+      "end": 4371.96,
+      "no_speech_prob": 0.0,
+      "start": 4369.92,
+      "text": "乐花谢了"
+    },
+    {
+      "avg_logprob": -0.333949,
+      "compression_ratio": 1.62439,
+      "end": 4372.42,
+      "no_speech_prob": 0.0,
+      "start": 4371.96,
+      "text": "谢了"
+    },
+    {
+      "avg_logprob": -0.333949,
+      "compression_ratio": 1.62439,
+      "end": 4374.12,
+      "no_speech_prob": 0.0,
+      "start": 4372.42,
+      "text": "谢了"
+    },
+    {
+      "avg_logprob": -0.333949,
+      "compression_ratio": 1.62439,
+      "end": 4375.86,
+      "no_speech_prob": 0.0,
+      "start": 4374.12,
+      "text": "给所有的兄弟姐们带好"
+    },
+    {
+      "avg_logprob": -0.333949,
+      "compression_ratio": 1.62439,
+      "end": 4378.9,
+      "no_speech_prob": 0.0,
+      "start": 4375.86,
+      "text": "带我拥抱所有的前线的兄弟姐们"
+    },
+    {
+      "avg_logprob": -0.333949,
+      "compression_ratio": 1.62439,
+      "end": 4379.36,
+      "no_speech_prob": 0.0,
+      "start": 4378.9,
+      "text": "文耀"
+    },
+    {
+      "avg_logprob": -0.333949,
+      "compression_ratio": 1.62439,
+      "end": 4380.14,
+      "no_speech_prob": 0.0,
+      "start": 4379.36,
+      "text": "正义小三"
+    },
+    {
+      "avg_logprob": -0.333949,
+      "compression_ratio": 1.62439,
+      "end": 4381.24,
+      "no_speech_prob": 0.0,
+      "start": 4380.14,
+      "text": "所有的兄弟姐们谢谢"
+    },
+    {
+      "avg_logprob": -0.333949,
+      "compression_ratio": 1.62439,
+      "end": 4381.66,
+      "no_speech_prob": 0.0,
+      "start": 4381.24,
+      "text": "好"
+    },
+    {
+      "avg_logprob": -0.333949,
+      "compression_ratio": 1.62439,
+      "end": 4385.96,
+      "no_speech_prob": 0.0,
+      "start": 4381.66,
+      "text": "那我说一下的这个"
+    },
+    {
+      "avg_logprob": -0.521326,
+      "compression_ratio": 1.397516,
+      "end": 4387.2,
+      "no_speech_prob": 0.0,
+      "start": 4385.96,
+      "text": "疫苗的问题好不好"
+    },
+    {
+      "avg_logprob": -0.521326,
+      "compression_ratio": 1.397516,
+      "end": 4388.08,
+      "no_speech_prob": 0.0,
+      "start": 4387.2,
+      "text": "施南主持人"
+    },
+    {
+      "avg_logprob": -0.521326,
+      "compression_ratio": 1.397516,
+      "end": 4390.04,
+      "no_speech_prob": 0.0,
+      "start": 4388.08,
+      "text": "请"
+    },
+    {
+      "avg_logprob": -0.521326,
+      "compression_ratio": 1.397516,
+      "end": 4390.64,
+      "no_speech_prob": 0.0,
+      "start": 4390.04,
+      "text": "七哥"
+    },
+    {
+      "avg_logprob": -0.521326,
+      "compression_ratio": 1.397516,
+      "end": 4392.58,
+      "no_speech_prob": 0.0,
+      "start": 4390.64,
+      "text": "好"
+    },
+    {
+      "avg_logprob": -0.521326,
+      "compression_ratio": 1.397516,
+      "end": 4393.46,
+      "no_speech_prob": 0.0,
+      "start": 4392.58,
+      "text": "这个"
+    },
+    {
+      "avg_logprob": -0.521326,
+      "compression_ratio": 1.397516,
+      "end": 4395.26,
+      "no_speech_prob": 0.0,
+      "start": 4393.46,
+      "text": "今天大家要记住啊"
+    },
+    {
+      "avg_logprob": -0.521326,
+      "compression_ratio": 1.397516,
+      "end": 4395.72,
+      "no_speech_prob": 0.0,
+      "start": 4395.26,
+      "text": "这个"
+    },
+    {
+      "avg_logprob": -0.521326,
+      "compression_ratio": 1.397516,
+      "end": 4399.12,
+      "no_speech_prob": 0.0,
+      "start": 4395.72,
+      "text": "大家说疫苗反应是什么"
+    },
+    {
+      "avg_logprob": -0.521326,
+      "compression_ratio": 1.397516,
+      "end": 4400.46,
+      "no_speech_prob": 0.0,
+      "start": 4399.12,
+      "text": "我刚才看到有留言啊"
+    },
+    {
+      "avg_logprob": -0.521326,
+      "compression_ratio": 1.397516,
+      "end": 4402.3,
+      "no_speech_prob": 0.0,
+      "start": 4400.46,
+      "text": "说这个疫苗反应是什么"
+    },
+    {
+      "avg_logprob": -0.521326,
+      "compression_ratio": 1.397516,
+      "end": 4404.44,
+      "no_speech_prob": 0.0,
+      "start": 4402.3,
+      "text": "疫苗反应就是病毒啥反应"
+    },
+    {
+      "avg_logprob": -0.521326,
+      "compression_ratio": 1.397516,
+      "end": 4405.44,
+      "no_speech_prob": 0.0,
+      "start": 4404.44,
+      "text": "疫苗就啥反应"
+    },
+    {
+      "avg_logprob": -0.308134,
+      "compression_ratio": 1.219178,
+      "end": 4409.82,
+      "no_speech_prob": 0.0,
+      "start": 4405.44,
+      "text": "这多简单的道理"
+    },
+    {
+      "avg_logprob": -0.308134,
+      "compression_ratio": 1.219178,
+      "end": 4411.4,
+      "no_speech_prob": 0.0,
+      "start": 4409.82,
+      "text": "战友们就这你们还问"
+    },
+    {
+      "avg_logprob": -0.308134,
+      "compression_ratio": 1.219178,
+      "end": 4414.36,
+      "no_speech_prob": 0.0,
+      "start": 4411.4,
+      "text": "那说明你没有真正的看一直爆料革命的直播"
+    },
+    {
+      "avg_logprob": -0.308134,
+      "compression_ratio": 1.219178,
+      "end": 4417.02,
+      "no_speech_prob": 0.0,
+      "start": 4414.36,
+      "text": "这对你来讲绝对是灾难"
+    },
+    {
+      "avg_logprob": -0.308134,
+      "compression_ratio": 1.219178,
+      "end": 4419.86,
+      "no_speech_prob": 0.0,
+      "start": 4417.02,
+      "text": "什么叫疫苗"
+    },
+    {
+      "avg_logprob": -0.308134,
+      "compression_ratio": 1.219178,
+      "end": 4421.78,
+      "no_speech_prob": 0.0,
+      "start": 4419.86,
+      "text": "疫苗就是毒"
+    },
+    {
+      "avg_logprob": -0.308134,
+      "compression_ratio": 1.219178,
+      "end": 4423.68,
+      "no_speech_prob": 0.0,
+      "start": 4421.78,
+      "text": "打在你身里的毒"
+    },
+    {
+      "avg_logprob": -0.308134,
+      "compression_ratio": 1.219178,
+      "end": 4427.86,
+      "no_speech_prob": 0.0,
+      "start": 4423.68,
+      "text": "七一林潘石拽一国也是打疫苗的"
+    },
+    {
+      "avg_logprob": -0.308134,
+      "compression_ratio": 1.219178,
+      "end": 4428.86,
+      "no_speech_prob": 0.0,
+      "start": 4427.86,
+      "text": "都打啊"
+    },
+    {
+      "avg_logprob": -0.308134,
+      "compression_ratio": 1.219178,
+      "end": 4429.52,
+      "no_speech_prob": 0.0,
+      "start": 4428.86,
+      "text": "全打了"
+    },
+    {
+      "avg_logprob": -0.308134,
+      "compression_ratio": 1.219178,
+      "end": 4432.82,
+      "no_speech_prob": 0.0,
+      "start": 4429.52,
+      "text": "我可以告诉大家"
+    },
+    {
+      "avg_logprob": -0.195713,
+      "compression_ratio": 0.99,
+      "end": 4435.06,
+      "no_speech_prob": 0.0,
+      "start": 4432.82,
+      "text": "你们要强烈的意识到"
+    },
+    {
+      "avg_logprob": -0.195713,
+      "compression_ratio": 0.99,
+      "end": 4438.62,
+      "no_speech_prob": 0.0,
+      "start": 4435.06,
+      "text": "打了疫苗的人就是病毒携带者"
+    },
+    {
+      "avg_logprob": -0.195713,
+      "compression_ratio": 0.99,
+      "end": 4442.94,
+      "no_speech_prob": 0.0,
+      "start": 4438.62,
+      "text": "而且反应和疫苗一模一样"
+    },
+    {
+      "avg_logprob": -0.161533,
+      "compression_ratio": 1.299213,
+      "end": 4445.82,
+      "no_speech_prob": 0.0,
+      "start": 4442.94,
+      "text": "那么现在你看到的在香港"
+    },
+    {
+      "avg_logprob": -0.161533,
+      "compression_ratio": 1.299213,
+      "end": 4447.48,
+      "no_speech_prob": 0.0,
+      "start": 4445.82,
+      "text": "在吉林长春在上海"
+    },
+    {
+      "avg_logprob": -0.161533,
+      "compression_ratio": 1.299213,
+      "end": 4449.06,
+      "no_speech_prob": 0.0,
+      "start": 4447.48,
+      "text": "在深圳发生的事情"
+    },
+    {
+      "avg_logprob": -0.161533,
+      "compression_ratio": 1.299213,
+      "end": 4451.28,
+      "no_speech_prob": 0.0,
+      "start": 4449.06,
+      "text": "共产党已经完全明白"
+    },
+    {
+      "avg_logprob": -0.161533,
+      "compression_ratio": 1.299213,
+      "end": 4453.06,
+      "no_speech_prob": 0.0,
+      "start": 4451.28,
+      "text": "这就是疫苗反应"
+    },
+    {
+      "avg_logprob": -0.161533,
+      "compression_ratio": 1.299213,
+      "end": 4455.56,
+      "no_speech_prob": 0.0,
+      "start": 4453.06,
+      "text": "所以说在前线的一生"
+    },
+    {
+      "avg_logprob": -0.161533,
+      "compression_ratio": 1.299213,
+      "end": 4457.82,
+      "no_speech_prob": 0.0,
+      "start": 4455.56,
+      "text": "包括头两天啊"
+    },
+    {
+      "avg_logprob": -0.161533,
+      "compression_ratio": 1.299213,
+      "end": 4459.66,
+      "no_speech_prob": 0.0,
+      "start": 4457.82,
+      "text": "发出的这个识问"
+    },
+    {
+      "avg_logprob": -0.161533,
+      "compression_ratio": 1.299213,
+      "end": 4461.1,
+      "no_speech_prob": 0.0,
+      "start": 4459.66,
+      "text": "识问听说是"
+    },
+    {
+      "avg_logprob": -0.161533,
+      "compression_ratio": 1.299213,
+      "end": 4462.74,
+      "no_speech_prob": 0.0,
+      "start": 4461.1,
+      "text": "有人说是张文宏"
+    },
+    {
+      "avg_logprob": -0.161533,
+      "compression_ratio": 1.299213,
+      "end": 4464.98,
+      "no_speech_prob": 0.0,
+      "start": 4462.74,
+      "text": "已经是张文宏被免职了"
+    },
+    {
+      "avg_logprob": -0.161533,
+      "compression_ratio": 1.299213,
+      "end": 4467.44,
+      "no_speech_prob": 0.0,
+      "start": 4464.98,
+      "text": "上海CDC主任张文宏"
+    },
+    {
+      "avg_logprob": -0.161533,
+      "compression_ratio": 1.299213,
+      "end": 4469.28,
+      "no_speech_prob": 0.0,
+      "start": 4467.44,
+      "text": "他鼓刀子写了"
+    },
+    {
+      "avg_logprob": -0.161533,
+      "compression_ratio": 1.299213,
+      "end": 4470.74,
+      "no_speech_prob": 0.0,
+      "start": 4469.28,
+      "text": "我觉得他们是冤枉他"
+    },
+    {
+      "avg_logprob": -0.147957,
+      "compression_ratio": 1.285714,
+      "end": 4474.2,
+      "no_speech_prob": 0.0,
+      "start": 4470.74,
+      "text": "但是那识问是有道理的"
+    },
+    {
+      "avg_logprob": -0.147957,
+      "compression_ratio": 1.285714,
+      "end": 4474.78,
+      "no_speech_prob": 0.0,
+      "start": 4474.2,
+      "text": "那识问"
+    },
+    {
+      "avg_logprob": -0.147957,
+      "compression_ratio": 1.285714,
+      "end": 4477.74,
+      "no_speech_prob": 0.0,
+      "start": 4474.78,
+      "text": "基本的常识和逻辑"
+    },
+    {
+      "avg_logprob": -0.147957,
+      "compression_ratio": 1.285714,
+      "end": 4480.82,
+      "no_speech_prob": 0.0,
+      "start": 4477.74,
+      "text": "现在我第一次说"
+    },
+    {
+      "avg_logprob": -0.147957,
+      "compression_ratio": 1.285714,
+      "end": 4482.28,
+      "no_speech_prob": 0.0,
+      "start": 4480.82,
+      "text": "我认为国内这个隔离"
+    },
+    {
+      "avg_logprob": -0.147957,
+      "compression_ratio": 1.285714,
+      "end": 4483.82,
+      "no_speech_prob": 0.0,
+      "start": 4482.28,
+      "text": "隔离措施"
+    },
+    {
+      "avg_logprob": -0.147957,
+      "compression_ratio": 1.285714,
+      "end": 4486.7,
+      "no_speech_prob": 0.0,
+      "start": 4483.82,
+      "text": "是在为疫苗灾难到来之前"
+    },
+    {
+      "avg_logprob": -0.147957,
+      "compression_ratio": 1.285714,
+      "end": 4488.5,
+      "no_speech_prob": 0.0,
+      "start": 4486.7,
+      "text": "做所谓的全民总动员"
+    },
+    {
+      "avg_logprob": -0.147957,
+      "compression_ratio": 1.285714,
+      "end": 4491.74,
+      "no_speech_prob": 0.0,
+      "start": 4488.5,
+      "text": "这里边有政治了"
+    },
+    {
+      "avg_logprob": -0.147957,
+      "compression_ratio": 1.285714,
+      "end": 4494.78,
+      "no_speech_prob": 0.0,
+      "start": 4491.74,
+      "text": "这里边兄弟姐妹们就有政治了"
+    },
+    {
+      "avg_logprob": -0.147957,
+      "compression_ratio": 1.285714,
+      "end": 4496.86,
+      "no_speech_prob": 0.0,
+      "start": 4494.78,
+      "text": "没有政治是不可能的"
+    },
+    {
+      "avg_logprob": -1.102416,
+      "compression_ratio": 5.415094,
+      "end": 4500.28,
+      "no_speech_prob": 0.0,
+      "start": 4496.86,
+      "text": "那只知道这个人生吧"
+    },
+    {
+      "avg_logprob": -1.102416,
+      "compression_ratio": 5.415094,
+      "end": 4502.0,
+      "no_speech_prob": 0.0,
+      "start": 4500.32,
+      "text": "阿 caps"
+    },
+    {
+      "avg_logprob": -1.102416,
+      "compression_ratio": 5.415094,
+      "end": 4502.94,
+      "no_speech_prob": 0.0,
+      "start": 4502.0,
+      "text": "阿碧"
+    },
+    {
+      "avg_logprob": -1.102416,
+      "compression_ratio": 5.415094,
+      "end": 4504.04,
+      "no_speech_prob": 0.0,
+      "start": 4502.94,
+      "text": "阿碧"
+    },
+    {
+      "avg_logprob": -1.102416,
+      "compression_ratio": 5.415094,
+      "end": 4504.98,
+      "no_speech_prob": 0.0,
+      "start": 4504.04,
+      "text": "阿碧"
+    },
+    {
+      "avg_logprob": -1.102416,
+      "compression_ratio": 5.415094,
+      "end": 4505.9,
+      "no_speech_prob": 0.0,
+      "start": 4504.98,
+      "text": "阿碧"
+    },
+    {
+      "avg_logprob": -1.102416,
+      "compression_ratio": 5.415094,
+      "end": 4506.56,
+      "no_speech_prob": 0.0,
+      "start": 4505.9,
+      "text": "阿碧"
+    },
+    {
+      "avg_logprob": -1.102416,
+      "compression_ratio": 5.415094,
+      "end": 4507.24,
+      "no_speech_prob": 0.0,
+      "start": 4506.56,
+      "text": "阿碧"
+    },
+    {
+      "avg_logprob": -1.102416,
+      "compression_ratio": 5.415094,
+      "end": 4507.9,
+      "no_speech_prob": 0.0,
+      "start": 4507.24,
+      "text": "阿碧"
+    },
+    {
+      "avg_logprob": -1.102416,
+      "compression_ratio": 5.415094,
+      "end": 4508.4,
+      "no_speech_prob": 0.0,
+      "start": 4507.9,
+      "text": "阿碧"
+    },
+    {
+      "avg_logprob": -1.102416,
+      "compression_ratio": 5.415094,
+      "end": 4509.04,
+      "no_speech_prob": 0.0,
+      "start": 4508.4,
+      "text": "阿碧"
+    },
+    {
+      "avg_logprob": -1.102416,
+      "compression_ratio": 5.415094,
+      "end": 4509.68,
+      "no_speech_prob": 0.0,
+      "start": 4509.04,
+      "text": "阿碧"
+    },
+    {
+      "avg_logprob": -1.102416,
+      "compression_ratio": 5.415094,
+      "end": 4510.08,
+      "no_speech_prob": 0.0,
+      "start": 4509.68,
+      "text": "阿碧"
+    },
+    {
+      "avg_logprob": -1.102416,
+      "compression_ratio": 5.415094,
+      "end": 4510.6,
+      "no_speech_prob": 0.0,
+      "start": 4510.08,
+      "text": "阿碧"
+    },
+    {
+      "avg_logprob": -1.102416,
+      "compression_ratio": 5.415094,
+      "end": 4511.1,
+      "no_speech_prob": 0.0,
+      "start": 4510.6,
+      "text": "阿碧"
+    },
+    {
+      "avg_logprob": -1.102416,
+      "compression_ratio": 5.415094,
+      "end": 4511.66,
+      "no_speech_prob": 0.0,
+      "start": 4511.1,
+      "text": "阿碧"
+    },
+    {
+      "avg_logprob": -1.102416,
+      "compression_ratio": 5.415094,
+      "end": 4512.1,
+      "no_speech_prob": 0.0,
+      "start": 4511.66,
+      "text": "阿碧"
+    },
+    {
+      "avg_logprob": -1.102416,
+      "compression_ratio": 5.415094,
+      "end": 4512.64,
+      "no_speech_prob": 0.0,
+      "start": 4512.1,
+      "text": "阿碧"
+    },
+    {
+      "avg_logprob": -1.102416,
+      "compression_ratio": 5.415094,
+      "end": 4513.22,
+      "no_speech_prob": 0.0,
+      "start": 4512.64,
+      "text": "阿碧"
+    },
+    {
+      "avg_logprob": -1.102416,
+      "compression_ratio": 5.415094,
+      "end": 4513.7,
+      "no_speech_prob": 0.0,
+      "start": 4513.22,
+      "text": "阿碧"
+    },
+    {
+      "avg_logprob": -1.102416,
+      "compression_ratio": 5.415094,
+      "end": 4514.2,
+      "no_speech_prob": 0.0,
+      "start": 4513.7,
+      "text": "阿碧"
+    },
+    {
+      "avg_logprob": -1.102416,
+      "compression_ratio": 5.415094,
+      "end": 4514.68,
+      "no_speech_prob": 0.0,
+      "start": 4514.2,
+      "text": "阿碧"
+    },
+    {
+      "avg_logprob": -1.102416,
+      "compression_ratio": 5.415094,
+      "end": 4515.14,
+      "no_speech_prob": 0.0,
+      "start": 4514.68,
+      "text": "阿碧"
+    },
+    {
+      "avg_logprob": -1.102416,
+      "compression_ratio": 5.415094,
+      "end": 4515.64,
+      "no_speech_prob": 0.0,
+      "start": 4515.14,
+      "text": "阿碧"
+    },
+    {
+      "avg_logprob": -1.102416,
+      "compression_ratio": 5.415094,
+      "end": 4515.82,
+      "no_speech_prob": 0.0,
+      "start": 4515.64,
+      "text": "阿碧"
+    },
+    {
+      "avg_logprob": -1.102416,
+      "compression_ratio": 5.415094,
+      "end": 4516.24,
+      "no_speech_prob": 0.0,
+      "start": 4515.82,
+      "text": "阿碧"
+    },
+    {
+      "avg_logprob": -1.102416,
+      "compression_ratio": 5.415094,
+      "end": 4516.68,
+      "no_speech_prob": 0.0,
+      "start": 4516.24,
+      "text": "阿碧"
+    },
+    {
+      "avg_logprob": -1.102416,
+      "compression_ratio": 5.415094,
+      "end": 4517.12,
+      "no_speech_prob": 0.0,
+      "start": 4516.68,
+      "text": "阿碧"
+    },
+    {
+      "avg_logprob": -1.102416,
+      "compression_ratio": 5.415094,
+      "end": 4517.5,
+      "no_speech_prob": 0.0,
+      "start": 4517.12,
+      "text": "阿碧"
+    },
+    {
+      "avg_logprob": -1.102416,
+      "compression_ratio": 5.415094,
+      "end": 4517.9,
+      "no_speech_prob": 0.0,
+      "start": 4517.52,
+      "text": "阿碧"
+    },
+    {
+      "avg_logprob": -1.102416,
+      "compression_ratio": 5.415094,
+      "end": 4518.52,
+      "no_speech_prob": 0.0,
+      "start": 4517.9,
+      "text": "阿碧"
+    },
+    {
+      "avg_logprob": -1.102416,
+      "compression_ratio": 5.415094,
+      "end": 4519.02,
+      "no_speech_prob": 0.0,
+      "start": 4518.52,
+      "text": "阿碧"
+    },
+    {
+      "avg_logprob": -1.102416,
+      "compression_ratio": 5.415094,
+      "end": 4519.56,
+      "no_speech_prob": 0.0,
+      "start": 4519.02,
+      "text": "阿碧"
+    },
+    {
+      "avg_logprob": -1.102416,
+      "compression_ratio": 5.415094,
+      "end": 4520.14,
+      "no_speech_prob": 0.0,
+      "start": 4519.56,
+      "text": "阿碧"
+    },
+    {
+      "avg_logprob": -1.102416,
+      "compression_ratio": 5.415094,
+      "end": 4520.76,
+      "no_speech_prob": 0.0,
+      "start": 4520.14,
+      "text": "阿碧"
+    },
+    {
+      "avg_logprob": -1.102416,
+      "compression_ratio": 5.415094,
+      "end": 4521.26,
+      "no_speech_prob": 0.0,
+      "start": 4520.76,
+      "text": "阿碧"
+    },
+    {
+      "avg_logprob": -1.102416,
+      "compression_ratio": 5.415094,
+      "end": 4521.76,
+      "no_speech_prob": 0.0,
+      "start": 4521.26,
+      "text": "阿碧"
+    },
+    {
+      "avg_logprob": -1.102416,
+      "compression_ratio": 5.415094,
+      "end": 4522.26,
+      "no_speech_prob": 0.0,
+      "start": 4521.76,
+      "text": "阿碧"
+    },
+    {
+      "avg_logprob": -1.102416,
+      "compression_ratio": 5.415094,
+      "end": 4522.7,
+      "no_speech_prob": 0.0,
+      "start": 4522.26,
+      "text": "阿碧"
+    },
+    {
+      "avg_logprob": -1.102416,
+      "compression_ratio": 5.415094,
+      "end": 4522.88,
+      "no_speech_prob": 0.0,
+      "start": 4522.7,
+      "text": "阿碧"
+    },
+    {
+      "avg_logprob": -1.102416,
+      "compression_ratio": 5.415094,
+      "end": 4523.12,
+      "no_speech_prob": 0.0,
+      "start": 4522.88,
+      "text": "阿碧"
+    },
+    {
+      "avg_logprob": -1.102416,
+      "compression_ratio": 5.415094,
+      "end": 4523.32,
+      "no_speech_prob": 0.0,
+      "start": 4523.12,
+      "text": "阿碧"
+    },
+    {
+      "avg_logprob": -1.102416,
+      "compression_ratio": 5.415094,
+      "end": 4523.62,
+      "no_speech_prob": 0.0,
+      "start": 4523.32,
+      "text": "阿碧"
+    }
+  ],
+  "text": "我又喝咖啡了文子医生没声音了是哪哪不是外啊好前线跟七哥还要互前线可以听到我们吗文科说几句互动听不见了明道一走就没声音了我刚才好像听一嗓子正一小Sara在那儿嗷嗷的喊就是东北人那种咋的了东北啊什么的可以听见吗七哥可以听见了一说小Sara就来声音可以听见吗我们前线就是继续完善咱们这边的营地的工作以及在这边我们把这个安全这一块我们也继续的做好包括我们这些营地的这些汽油啊这些油料给发电机供油的我们也进行了这个相关的整理以及放到一个安全的一个场地避免发生一些不必要的麻烦那么我们今天的营地外面是非常的冷昨天还有雪一片白茫茫的但是我们的战友继续还在这里坚守甚至我们今天路人兄弟呢就是说早班的他说我们看我们人比较少他说他现在早班上完了午班还接着上他说跟着我们一起继续战斗然后现场现场呢今天也是有非常多的你不能这么人家要干你就让人家干的你就是这路人他就是傻乎乎的你接这么干你身体就受不了了兄弟啊没问题没问题七哥七哥没问题没问题我们都是经过病毒考验过来的人这个一点问题都没有现在我们分成两班按说应该是比较轻松一点不像以前像文科这个曾经36个小时的这个非常非常的这个这个是可能我们第一批染病的都跟这个有很大关系是我们现在七哥您放心就是我们每天就是我们现在是每天上来工作的一天之后我们会第二天会休息然后下一班人咱们就是轮番上阵所以说保证每一个战友能够得到充分的休息在一个就是完全非常好的一个状态下去进行一个救援工作另外一个就是文科你现在看到这些难民的情况和这个现场的这个管理啊是不是跟以前有很大的改变呢我们刚来的时候其实我们就是非常的匆忙因为所以说呢现在呢就是我们整个这个营地的组这个营地就是非常的完善了已经我们也是像建房子一样的逐步的搞装修一样的逐步的慢慢的从无到有从有到金那然后呢整个营地这边他们的这个组织方也是跟我们各种NGO组织跟我们非常的密切的合作也因为在这个营地其实是有一些间谍还有一些人贩子甚至是前几天有一个不明身份的人他冒充出租车司机在另外一个组织的这个帐篷里面出现然后呢被人家举报然后就让警察带走了也是一个可疑人员那么所以说整个营地其实是在一个就是逐渐的各个各个国际组织都是进行一个相对的去完善以及规章制度以及管理那么我们现在其实在整个营地里面是做得最好的所有的我们的战友的着装统一的一个形象然后我们的所有的硬件设施提供难民的所有的帮助甚至现在当地的这些营地的各种组织他们还要求我们来帮助甚至问我们希望我们能够给他们提供一些物资设施这些国际组织其实没有一个能够像我们这样有实力有能力去进行这样一次救援的其实我们其实现在是一个非专业的组织做的一个比专业组织做的还要棒的这一件事情谢谢奇哥这个文科这个特别特别好这个你呀你小Sara还有文耀大卫你们这些都是耳中能详在国内现在已经出了名了已经出名了我原来的在吉林涅矿的中学的女同学头两下给我发信息说奇哥你还记得我吗我跟你一起掏家桥叫掏家桥掏鸟小的时候掏完家桥以后你点上放上油你把那鸟给点着了这会儿鸟飞了把那房子给着了我说我想起来了我想起来了说我现在看你们直播就是到乌克兰前线救人打过来说了好多人名字说了一大串说我特别特别感动就跟真一小Sara她姐妹一样说话的口音就是那哈的是吧我的老感动了是吧奇哥然后她嫁给了一个外国人她已经有孙子孙女了而且看到我们的救人她最大感触她说她在她家地位正高说你们中国人还会救人呢你们的人还会救人你们都会吃人呢你们只会骗人呢你们啥时候会救人呢感动了我这老同学我告诉你这头就是我七哥我同学俺俩差点都进过玉米地这人家人家说不信你吹啥你我还郭文贵差点跟你进玉米地就你这样的呀人家不相信吗最后跟我联络上我说视频视频我说这绝对的啊这个当年我说吉林念旷中学我当时我说我是在赵家沟他属于高级分子我属于低级分子跟我玩的时候我在小学北京龙小学差点进玉米地他比我大我说所以说就没跟他进得了后来我被被他认识的人拿下进了玉米地他这个外国丈夫讲流利的普通话在哈尔滨军工待着的是原来的俄罗斯人生在乌克兰你去想想现在你们在前线意味着什么一个生在乌克兰的俄罗斯人到了哈尔滨军工帮助中共搞武器然后娶了一东北的女人已经子孙三代了然后看到你们就救乌克兰他感动了竟然找到七哥你想这种故事多可怕呀兄弟兄妹们人呐作恶行蚕他都记着呢你说文子现在整的样今天我看着文子的小辫子整的越倒是越年轻你知道七哥活不活了这个没机会了都就是这救人的人都那么好看所以你现在想文子和医疗主救这么多战友你去想想你们未来可能不记得七哥但你记得文子曾经给你吃过药这真的是这是多么说我们每时每刻都在改变自己的人生你们在前线的这种救援你去想想影响多少中国人国际婚姻在海外的形象啊你想想啊就这那天精良最搞笑的地方I like thatI like that我喜欢这个当的China Care Party的英文是吧你想这么多么记忆深刻呀你们这边这个马甲每时每刻都传承着光芒其实给我要马甲人那堆我跟你讲就在我这个住的Sharon旁边一个超级牛叉的人世界级的大佬金融国华尔街大佬之一都是你们每天在报上看到的人说Miles你要给我几个马甲我的孙子要你的马甲我说为什么他说那个太棒了他原来是绝对共产党的那是他把共产党当爹的我跟你说除了桥水他就是老二的投资到中共国的原海航投资者之一最早投资者现在跟我们暴力革命一起了他都在看我们支持乌克兰他说你们支持乌克兰这个是为了什么我说天向天地许诺没有任何的目的没有任何利益就是让人知道我们不能被共产党代表我们是要干掉共产党的中国人我们防止在海外排华就这么简单其他啥都没有没有人我说像我一样每天提心吊胆的我的战友兄弟姐妹被送到前线去面对战争是不是啊面对着这个病毒的这个这个这个这个这个这个这个这个这个染上病毒的危险和侵略啊我们还要受人批评我说我们就一个目的就是要宣传新中国联邦和法治基金和我们和中国共产党不一样的地方就这么简单感动的不得了他为啥为啥你直到现在变了你知道吗儿子在英国读书他要去英国参加仪式必须打疫苗只打了一针回来办贪这个牛叉的人物大家都知道他广这个曼哈顿多少学校多少医院都他捐款这回把他给救了结果一去人家人家一看一个护士说你就是这个疫苗反应证最后是把他按到了医院里给他所有的血液洗毒在ICU呆了几天差点死在里边这就是病毒这是疫苗这个综合症现在看都在看这个这个咱们乌克兰直播都在看咱们前线我想跟你说的事情兄弟姐妹们就是我讲这个师男再帅他声音再好听他讲不出这些我是亲身经历这是故事这就是你们现场做到的你们那个帐篷绝对就像贾平凹贾平凹是什么写的那本书就是那个写的新疆在黑暗中的一盏灯一样看着在那个所有的土房子里边挖出了一个房子房子里边点着一个灯我看到小说我觉得你们就是那盏灯西北人还有希望最后是记者找到那盏灯听到了里边啪啪啪声原来人类还有希望在这种黑暗中在这种所谓的窑洞里还有啪啪啪的声这个时候发现啪啪啪的声是给人类带来温暖叫繁殖希望繁殖的越多越好但是灾难的繁殖它也同样会造就希望今天你们在那唯一的是不能啪啪啪但是你们的形象却是绝对给世界带来了希望特别给海外中文带来了希望真的是忠心的感谢用什么话都无法表达战友们对你们的感激任何忽视前线战友在24小时随时面临着这种生命危险病毒危险的人他不配做我们兄弟姐们如果你们需要七哥愿意以身相许除非你们不需要男的就别嫁了主要欢迎女士谢谢感谢七哥感谢七哥今天您在这前一截是吗接下来我要跟你们说一下疫苗的问题我要接着今天说说疫苗的问题救人的事好的好的七哥那给我们讲讲吧那文科谢谢了谢谢了兄弟姐们谢谢了谢谢了路人谢谢了乐花谢了谢了谢了给所有的兄弟姐们带好带我拥抱所有的前线的兄弟姐们文耀正义小三所有的兄弟姐们谢谢好那我说一下的这个疫苗的问题好不好施南主持人请七哥好这个今天大家要记住啊这个大家说疫苗反应是什么我刚才看到有留言啊说这个疫苗反应是什么疫苗反应就是病毒啥反应疫苗就啥反应这多简单的道理战友们就这你们还问那说明你没有真正的看一直爆料革命的直播这对你来讲绝对是灾难什么叫疫苗疫苗就是毒打在你身里的毒七一林潘石拽一国也是打疫苗的都打啊全打了我可以告诉大家你们要强烈的意识到打了疫苗的人就是病毒携带者而且反应和疫苗一模一样那么现在你看到的在香港在吉林长春在上海在深圳发生的事情共产党已经完全明白这就是疫苗反应所以说在前线的一生包括头两天啊发出的这个识问识问听说是有人说是张文宏已经是张文宏被免职了上海CDC主任张文宏他鼓刀子写了我觉得他们是冤枉他但是那识问是有道理的那识问基本的常识和逻辑现在我第一次说我认为国内这个隔离隔离措施是在为疫苗灾难到来之前做所谓的全民总动员这里边有政治了这里边兄弟姐妹们就有政治了没有政治是不可能的那只知道这个人生吧阿 caps阿碧阿碧阿碧阿碧阿碧阿碧阿碧阿碧阿碧阿碧阿碧阿碧阿碧阿碧阿碧阿碧阿碧阿碧阿碧阿碧阿碧阿碧阿碧阿碧阿碧阿碧阿碧阿碧阿碧阿碧阿碧阿碧阿碧阿碧阿碧阿碧阿碧阿碧阿碧阿碧阿碧"
+}

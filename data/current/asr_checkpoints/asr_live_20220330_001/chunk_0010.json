@@ -1,0 +1,3120 @@
+{
+  "chunk_audio_sha256": "4b6e0891600bb9a6a03b92162f0a6e98ec3a04de4d7f6351f0634a5da4f8692d",
+  "chunk_index": 10,
+  "completed_at": "2026-10-26T04:51:45Z",
+  "language": "zh",
+  "live_id": "LIVE_20220330_001",
+  "media_committed_to_git": false,
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "offset_sec": 9000,
+  "paid_api_used": false,
+  "processing_location": "github-hosted-macos-arm64",
+  "schema_version": "cloud-asr-chunk-v1",
+  "segments": [
+    {
+      "avg_logprob": -0.120754,
+      "compression_ratio": 1.623881,
+      "end": 9003.5,
+      "no_speech_prob": 0.0,
+      "start": 9000.0,
+      "text": "他在这个在他达到这个P7岗位之前的时候"
+    },
+    {
+      "avg_logprob": -0.120754,
+      "compression_ratio": 1.623881,
+      "end": 9005.5,
+      "no_speech_prob": 0.0,
+      "start": 9003.5,
+      "text": "他是买了这个300万的房子"
+    },
+    {
+      "avg_logprob": -0.120754,
+      "compression_ratio": 1.623881,
+      "end": 9007.36,
+      "no_speech_prob": 0.0,
+      "start": 9005.5,
+      "text": "然后在这个这个杭州"
+    },
+    {
+      "avg_logprob": -0.120754,
+      "compression_ratio": 1.623881,
+      "end": 9010.52,
+      "no_speech_prob": 0.0,
+      "start": 9007.36,
+      "text": "他当时的时候就是两口子加在一起"
+    },
+    {
+      "avg_logprob": -0.120754,
+      "compression_ratio": 1.623881,
+      "end": 9012.54,
+      "no_speech_prob": 0.0,
+      "start": 9010.52,
+      "text": "然后每个每年的年收入"
+    },
+    {
+      "avg_logprob": -0.120754,
+      "compression_ratio": 1.623881,
+      "end": 9014.52,
+      "no_speech_prob": 0.0,
+      "start": 9012.54,
+      "text": "大概有个几十万二三十万"
+    },
+    {
+      "avg_logprob": -0.120754,
+      "compression_ratio": 1.623881,
+      "end": 9016.48,
+      "no_speech_prob": 0.0,
+      "start": 9014.52,
+      "text": "他们还那个房子觉得还是可以的"
+    },
+    {
+      "avg_logprob": -0.120754,
+      "compression_ratio": 1.623881,
+      "end": 9018.72,
+      "no_speech_prob": 0.0,
+      "start": 9016.48,
+      "text": "所以他们一直在供这个房子"
+    },
+    {
+      "avg_logprob": -0.120754,
+      "compression_ratio": 1.623881,
+      "end": 9020.3,
+      "no_speech_prob": 0.0,
+      "start": 9018.72,
+      "text": "等到他到了P7这个岗位的时候"
+    },
+    {
+      "avg_logprob": -0.120754,
+      "compression_ratio": 1.623881,
+      "end": 9021.62,
+      "no_speech_prob": 0.0,
+      "start": 9020.3,
+      "text": "他跟他老婆的年薪"
+    },
+    {
+      "avg_logprob": -0.120754,
+      "compression_ratio": 1.623881,
+      "end": 9022.74,
+      "no_speech_prob": 0.0,
+      "start": 9021.62,
+      "text": "基本上除了税后之外"
+    },
+    {
+      "avg_logprob": -0.120754,
+      "compression_ratio": 1.623881,
+      "end": 9023.68,
+      "no_speech_prob": 0.0,
+      "start": 9022.74,
+      "text": "大概能达到60万"
+    },
+    {
+      "avg_logprob": -0.120754,
+      "compression_ratio": 1.623881,
+      "end": 9024.5,
+      "no_speech_prob": 0.0,
+      "start": 9023.68,
+      "text": "所以那个时候"
+    },
+    {
+      "avg_logprob": -0.120754,
+      "compression_ratio": 1.623881,
+      "end": 9026.68,
+      "no_speech_prob": 0.0,
+      "start": 9024.5,
+      "text": "他就觉得他的生活条件可以去改善一下"
+    },
+    {
+      "avg_logprob": -0.120754,
+      "compression_ratio": 1.623881,
+      "end": 9028.08,
+      "no_speech_prob": 0.0,
+      "start": 9026.68,
+      "text": "他就买了一个1000万的房子"
+    },
+    {
+      "avg_logprob": -0.120754,
+      "compression_ratio": 1.623881,
+      "end": 9029.98,
+      "no_speech_prob": 0.0,
+      "start": 9028.08,
+      "text": "把他现在这个房子卖掉了"
+    },
+    {
+      "avg_logprob": -0.09879,
+      "compression_ratio": 1.653374,
+      "end": 9031.68,
+      "no_speech_prob": 0.0,
+      "start": 9029.98,
+      "text": "把他每个月去供这个1000万的房子"
+    },
+    {
+      "avg_logprob": -0.09879,
+      "compression_ratio": 1.653374,
+      "end": 9033.64,
+      "no_speech_prob": 0.0,
+      "start": 9031.68,
+      "text": "结果就是因为这次大厂裁员的时候"
+    },
+    {
+      "avg_logprob": -0.09879,
+      "compression_ratio": 1.653374,
+      "end": 9034.92,
+      "no_speech_prob": 0.0,
+      "start": 9033.64,
+      "text": "他被裁掉了"
+    },
+    {
+      "avg_logprob": -0.09879,
+      "compression_ratio": 1.653374,
+      "end": 9037.14,
+      "no_speech_prob": 0.0,
+      "start": 9034.92,
+      "text": "突然间家里面的经济全都断了"
+    },
+    {
+      "avg_logprob": -0.09879,
+      "compression_ratio": 1.653374,
+      "end": 9038.72,
+      "no_speech_prob": 0.0,
+      "start": 9037.14,
+      "text": "这个时候他就想要说"
+    },
+    {
+      "avg_logprob": -0.09879,
+      "compression_ratio": 1.653374,
+      "end": 9040.26,
+      "no_speech_prob": 0.0,
+      "start": 9038.72,
+      "text": "这个房子我肯定是供不起的"
+    },
+    {
+      "avg_logprob": -0.09879,
+      "compression_ratio": 1.653374,
+      "end": 9042.38,
+      "no_speech_prob": 0.0,
+      "start": 9040.26,
+      "text": "这个供不起的时候我就要去卖房子了"
+    },
+    {
+      "avg_logprob": -0.09879,
+      "compression_ratio": 1.653374,
+      "end": 9043.58,
+      "no_speech_prob": 0.0,
+      "start": 9042.38,
+      "text": "他卖房子的时候就发现"
+    },
+    {
+      "avg_logprob": -0.09879,
+      "compression_ratio": 1.653374,
+      "end": 9045.48,
+      "no_speech_prob": 0.0,
+      "start": 9043.58,
+      "text": "这个房子已经不止原来的1000万了"
+    },
+    {
+      "avg_logprob": -0.09879,
+      "compression_ratio": 1.653374,
+      "end": 9046.42,
+      "no_speech_prob": 0.0,
+      "start": 9045.48,
+      "text": "只能卖出700万"
+    },
+    {
+      "avg_logprob": -0.09879,
+      "compression_ratio": 1.653374,
+      "end": 9047.42,
+      "no_speech_prob": 0.0,
+      "start": 9046.42,
+      "text": "那这样的话"
+    },
+    {
+      "avg_logprob": -0.09879,
+      "compression_ratio": 1.653374,
+      "end": 9048.62,
+      "no_speech_prob": 0.0,
+      "start": 9047.42,
+      "text": "他原来贷款的时候"
+    },
+    {
+      "avg_logprob": -0.09879,
+      "compression_ratio": 1.653374,
+      "end": 9050.5,
+      "no_speech_prob": 0.0,
+      "start": 9048.62,
+      "text": "贷款额就已经达到了700万"
+    },
+    {
+      "avg_logprob": -0.09879,
+      "compression_ratio": 1.653374,
+      "end": 9053.64,
+      "no_speech_prob": 0.0,
+      "start": 9050.5,
+      "text": "所以这就是他这个房子已经供不应求"
+    },
+    {
+      "avg_logprob": -0.09879,
+      "compression_ratio": 1.653374,
+      "end": 9055.48,
+      "no_speech_prob": 0.0,
+      "start": 9053.64,
+      "text": "已经供不上了"
+    },
+    {
+      "avg_logprob": -0.09879,
+      "compression_ratio": 1.653374,
+      "end": 9057.66,
+      "no_speech_prob": 0.0,
+      "start": 9055.48,
+      "text": "而且他这个即使是"
+    },
+    {
+      "avg_logprob": -0.09879,
+      "compression_ratio": 1.653374,
+      "end": 9059.48,
+      "no_speech_prob": 0.0,
+      "start": 9057.66,
+      "text": "把他房子现在处理掉的话"
+    },
+    {
+      "avg_logprob": -0.092699,
+      "compression_ratio": 1.571429,
+      "end": 9061.22,
+      "no_speech_prob": 0.0,
+      "start": 9059.48,
+      "text": "他也是相当于一分钱也没有"
+    },
+    {
+      "avg_logprob": -0.092699,
+      "compression_ratio": 1.571429,
+      "end": 9064.12,
+      "no_speech_prob": 0.0,
+      "start": 9061.22,
+      "text": "回到了他最开始进哪里之前的那个状态"
+    },
+    {
+      "avg_logprob": -0.092699,
+      "compression_ratio": 1.571429,
+      "end": 9065.36,
+      "no_speech_prob": 0.0,
+      "start": 9064.12,
+      "text": "就是又没有工作"
+    },
+    {
+      "avg_logprob": -0.092699,
+      "compression_ratio": 1.571429,
+      "end": 9066.54,
+      "no_speech_prob": 0.0,
+      "start": 9065.36,
+      "text": "又没有存款"
+    },
+    {
+      "avg_logprob": -0.092699,
+      "compression_ratio": 1.571429,
+      "end": 9067.24,
+      "no_speech_prob": 0.0,
+      "start": 9066.54,
+      "text": "又没有房"
+    },
+    {
+      "avg_logprob": -0.092699,
+      "compression_ratio": 1.571429,
+      "end": 9068.84,
+      "no_speech_prob": 0.0,
+      "start": 9067.24,
+      "text": "所以一切都回到了原点"
+    },
+    {
+      "avg_logprob": -0.092699,
+      "compression_ratio": 1.571429,
+      "end": 9070.92,
+      "no_speech_prob": 0.0,
+      "start": 9068.84,
+      "text": "而这个时候他家里面"
+    },
+    {
+      "avg_logprob": -0.092699,
+      "compression_ratio": 1.571429,
+      "end": 9072.74,
+      "no_speech_prob": 0.0,
+      "start": 9070.92,
+      "text": "这个有了老婆"
+    },
+    {
+      "avg_logprob": -0.092699,
+      "compression_ratio": 1.571429,
+      "end": 9073.46,
+      "no_speech_prob": 0.0,
+      "start": 9072.74,
+      "text": "有了孩子"
+    },
+    {
+      "avg_logprob": -0.092699,
+      "compression_ratio": 1.571429,
+      "end": 9074.56,
+      "no_speech_prob": 0.0,
+      "start": 9073.46,
+      "text": "而且还有好几个孩子"
+    },
+    {
+      "avg_logprob": -0.092699,
+      "compression_ratio": 1.571429,
+      "end": 9075.42,
+      "no_speech_prob": 0.0,
+      "start": 9074.56,
+      "text": "所以这个时候"
+    },
+    {
+      "avg_logprob": -0.092699,
+      "compression_ratio": 1.571429,
+      "end": 9077.08,
+      "no_speech_prob": 0.0,
+      "start": 9075.42,
+      "text": "他的这个负担是很重的"
+    },
+    {
+      "avg_logprob": -0.092699,
+      "compression_ratio": 1.571429,
+      "end": 9077.56,
+      "no_speech_prob": 0.0,
+      "start": 9077.08,
+      "text": "这个事情"
+    },
+    {
+      "avg_logprob": -0.092699,
+      "compression_ratio": 1.571429,
+      "end": 9078.86,
+      "no_speech_prob": 0.0,
+      "start": 9077.56,
+      "text": "我们不去讨论他的真实性"
+    },
+    {
+      "avg_logprob": -0.092699,
+      "compression_ratio": 1.571429,
+      "end": 9079.6,
+      "no_speech_prob": 0.0,
+      "start": 9078.86,
+      "text": "但是这样的事情"
+    },
+    {
+      "avg_logprob": -0.092699,
+      "compression_ratio": 1.571429,
+      "end": 9080.82,
+      "no_speech_prob": 0.0,
+      "start": 9079.6,
+      "text": "我相信绝对会发生的"
+    },
+    {
+      "avg_logprob": -0.092699,
+      "compression_ratio": 1.571429,
+      "end": 9082.42,
+      "no_speech_prob": 0.0,
+      "start": 9080.82,
+      "text": "而且这个道理是相通的"
+    },
+    {
+      "avg_logprob": -0.092699,
+      "compression_ratio": 1.571429,
+      "end": 9084.6,
+      "no_speech_prob": 0.0,
+      "start": 9082.42,
+      "text": "真的是有可能发生这样的事情的"
+    },
+    {
+      "avg_logprob": -0.183861,
+      "compression_ratio": 1.416309,
+      "end": 9087.16,
+      "no_speech_prob": 0.0,
+      "start": 9084.6,
+      "text": "所以那个时候的话很多人是走投无路的"
+    },
+    {
+      "avg_logprob": -0.183861,
+      "compression_ratio": 1.416309,
+      "end": 9091.26,
+      "no_speech_prob": 0.0,
+      "start": 9087.16,
+      "text": "而且是所有的这些年的薪水都会付出东流的"
+    },
+    {
+      "avg_logprob": -0.183861,
+      "compression_ratio": 1.416309,
+      "end": 9093.12,
+      "no_speech_prob": 0.0,
+      "start": 9091.26,
+      "text": "而在这个情况下呢"
+    },
+    {
+      "avg_logprob": -0.183861,
+      "compression_ratio": 1.416309,
+      "end": 9095.74,
+      "no_speech_prob": 0.0,
+      "start": 9093.12,
+      "text": "我们这些人除了这些大厂的裁员之外"
+    },
+    {
+      "avg_logprob": -0.183861,
+      "compression_ratio": 1.416309,
+      "end": 9099.16,
+      "no_speech_prob": 0.0,
+      "start": 9095.74,
+      "text": "不要以为这些小厂就没有没有问题了"
+    },
+    {
+      "avg_logprob": -0.183861,
+      "compression_ratio": 1.416309,
+      "end": 9100.8,
+      "no_speech_prob": 0.0,
+      "start": 9099.16,
+      "text": "这所谓大厂裁员小厂事业"
+    },
+    {
+      "avg_logprob": -0.183861,
+      "compression_ratio": 1.416309,
+      "end": 9102.84,
+      "no_speech_prob": 0.0,
+      "start": 9100.8,
+      "text": "就是因为大厂的这些人会自降身段的"
+    },
+    {
+      "avg_logprob": -0.183861,
+      "compression_ratio": 1.416309,
+      "end": 9104.28,
+      "no_speech_prob": 0.0,
+      "start": 9102.84,
+      "text": "他会到这些小厂"
+    },
+    {
+      "avg_logprob": -0.202597,
+      "compression_ratio": 1.522936,
+      "end": 9105.36,
+      "no_speech_prob": 0.0,
+      "start": 9104.28,
+      "text": "就像那个"
+    },
+    {
+      "avg_logprob": -0.202597,
+      "compression_ratio": 1.522936,
+      "end": 9108.06,
+      "no_speech_prob": 0.0,
+      "start": 9105.36,
+      "text": "那个马云一直说的哈"
+    },
+    {
+      "avg_logprob": -0.202597,
+      "compression_ratio": 1.522936,
+      "end": 9109.86,
+      "no_speech_prob": 0.0,
+      "start": 9108.06,
+      "text": "马云说每年我们财掉的人"
+    },
+    {
+      "avg_logprob": -0.202597,
+      "compression_ratio": 1.522936,
+      "end": 9111.42,
+      "no_speech_prob": 0.0,
+      "start": 9109.86,
+      "text": "就是为社会做贡献的"
+    },
+    {
+      "avg_logprob": -0.202597,
+      "compression_ratio": 1.522936,
+      "end": 9113.84,
+      "no_speech_prob": 0.0,
+      "start": 9111.42,
+      "text": "为了社会诉讼那个优质人才"
+    },
+    {
+      "avg_logprob": -0.202597,
+      "compression_ratio": 1.522936,
+      "end": 9117.66,
+      "no_speech_prob": 0.0,
+      "start": 9113.84,
+      "text": "把这个裁员说的非常的这个冠冕堂皇"
+    },
+    {
+      "avg_logprob": -0.202597,
+      "compression_ratio": 1.522936,
+      "end": 9119.64,
+      "no_speech_prob": 0.0,
+      "start": 9117.66,
+      "text": "所以这些人到了社会上之后"
+    },
+    {
+      "avg_logprob": -0.202597,
+      "compression_ratio": 1.522936,
+      "end": 9121.18,
+      "no_speech_prob": 0.0,
+      "start": 9119.64,
+      "text": "他会降低自己的身价的"
+    },
+    {
+      "avg_logprob": -0.202597,
+      "compression_ratio": 1.522936,
+      "end": 9123.18,
+      "no_speech_prob": 0.0,
+      "start": 9121.18,
+      "text": "然后你所有这些小厂的老板们"
+    },
+    {
+      "avg_logprob": -0.202597,
+      "compression_ratio": 1.522936,
+      "end": 9124.78,
+      "no_speech_prob": 0.0,
+      "start": 9123.18,
+      "text": "他如果是雇这样的人的话"
+    },
+    {
+      "avg_logprob": -0.202597,
+      "compression_ratio": 1.522936,
+      "end": 9125.76,
+      "no_speech_prob": 0.0,
+      "start": 9124.78,
+      "text": "又便宜了"
+    },
+    {
+      "avg_logprob": -0.202597,
+      "compression_ratio": 1.522936,
+      "end": 9127.64,
+      "no_speech_prob": 0.0,
+      "start": 9125.76,
+      "text": "而且就是能力又比你强"
+    },
+    {
+      "avg_logprob": -0.202597,
+      "compression_ratio": 1.522936,
+      "end": 9129.56,
+      "no_speech_prob": 0.0,
+      "start": 9127.64,
+      "text": "而且他的精力又多的话"
+    },
+    {
+      "avg_logprob": -0.202597,
+      "compression_ratio": 1.522936,
+      "end": 9132.06,
+      "no_speech_prob": 0.0,
+      "start": 9129.56,
+      "text": "那小厂的员工自然而然就会被莫为淘汰掉"
+    },
+    {
+      "avg_logprob": -0.202597,
+      "compression_ratio": 1.522936,
+      "end": 9134.16,
+      "no_speech_prob": 0.0,
+      "start": 9132.06,
+      "text": "那这样的话就是一层一层的再往下传达"
+    },
+    {
+      "avg_logprob": -0.178861,
+      "compression_ratio": 1.643963,
+      "end": 9136.56,
+      "no_speech_prob": 0.0,
+      "start": 9134.16,
+      "text": "所以就是为什么说大厂太远小厂在失眠"
+    },
+    {
+      "avg_logprob": -0.178861,
+      "compression_ratio": 1.643963,
+      "end": 9139.78,
+      "no_speech_prob": 0.0,
+      "start": 9136.56,
+      "text": "所以每一个人都是在这个链条里面逃不掉的"
+    },
+    {
+      "avg_logprob": -0.178861,
+      "compression_ratio": 1.643963,
+      "end": 9141.14,
+      "no_speech_prob": 0.0,
+      "start": 9139.78,
+      "text": "所以在这种情况下的话"
+    },
+    {
+      "avg_logprob": -0.178861,
+      "compression_ratio": 1.643963,
+      "end": 9143.58,
+      "no_speech_prob": 0.0,
+      "start": 9141.14,
+      "text": "我想说上次直播的时候"
+    },
+    {
+      "avg_logprob": -0.178861,
+      "compression_ratio": 1.643963,
+      "end": 9146.58,
+      "no_speech_prob": 0.0,
+      "start": 9143.58,
+      "text": "我说我这个不成不强的性格可以得到了很多"
+    },
+    {
+      "avg_logprob": -0.178861,
+      "compression_ratio": 1.643963,
+      "end": 9147.84,
+      "no_speech_prob": 0.0,
+      "start": 9146.58,
+      "text": "现在已经得到了很多"
+    },
+    {
+      "avg_logprob": -0.178861,
+      "compression_ratio": 1.643963,
+      "end": 9149.1,
+      "no_speech_prob": 0.0,
+      "start": 9147.84,
+      "text": "然后很多人说我是幸运的"
+    },
+    {
+      "avg_logprob": -0.178861,
+      "compression_ratio": 1.643963,
+      "end": 9152.92,
+      "no_speech_prob": 0.0,
+      "start": 9149.1,
+      "text": "其实我想说我们每一个能够看到七个大直播"
+    },
+    {
+      "avg_logprob": -0.178861,
+      "compression_ratio": 1.643963,
+      "end": 9153.84,
+      "no_speech_prob": 0.0,
+      "start": 9152.92,
+      "text": "不用你参加爆料"
+    },
+    {
+      "avg_logprob": -0.178861,
+      "compression_ratio": 1.643963,
+      "end": 9155.28,
+      "no_speech_prob": 0.0,
+      "start": 9153.84,
+      "text": "每一个看到大直播的人"
+    },
+    {
+      "avg_logprob": -0.178861,
+      "compression_ratio": 1.643963,
+      "end": 9156.44,
+      "no_speech_prob": 0.0,
+      "start": 9155.28,
+      "text": "看到七个爆料的人"
+    },
+    {
+      "avg_logprob": -0.178861,
+      "compression_ratio": 1.643963,
+      "end": 9157.74,
+      "no_speech_prob": 0.0,
+      "start": 9156.44,
+      "text": "你都是幸运的"
+    },
+    {
+      "avg_logprob": -0.178861,
+      "compression_ratio": 1.643963,
+      "end": 9159.5,
+      "no_speech_prob": 0.0,
+      "start": 9157.74,
+      "text": "这个幸运摆在每个人的面前"
+    },
+    {
+      "avg_logprob": -0.178861,
+      "compression_ratio": 1.643963,
+      "end": 9161.88,
+      "no_speech_prob": 0.0,
+      "start": 9159.5,
+      "text": "幸不幸运主要是在于你选不选择"
+    },
+    {
+      "avg_logprob": -0.178861,
+      "compression_ratio": 1.643963,
+      "end": 9162.84,
+      "no_speech_prob": 0.0,
+      "start": 9161.88,
+      "text": "你选择了相信"
+    },
+    {
+      "avg_logprob": -0.159119,
+      "compression_ratio": 1.455556,
+      "end": 9165.24,
+      "no_speech_prob": 0.0,
+      "start": 9162.84,
+      "text": "你选择了跟随去听这些"
+    },
+    {
+      "avg_logprob": -0.159119,
+      "compression_ratio": 1.455556,
+      "end": 9166.74,
+      "no_speech_prob": 0.0,
+      "start": 9165.24,
+      "text": "这些七个的劝导的话"
+    },
+    {
+      "avg_logprob": -0.159119,
+      "compression_ratio": 1.455556,
+      "end": 9168.78,
+      "no_speech_prob": 0.0,
+      "start": 9166.74,
+      "text": "那你现在就可以在这场"
+    },
+    {
+      "avg_logprob": -0.159119,
+      "compression_ratio": 1.455556,
+      "end": 9171.58,
+      "no_speech_prob": 0.0,
+      "start": 9168.78,
+      "text": "比如说裁员或者是在这个房地产崩塌这个时候"
+    },
+    {
+      "avg_logprob": -0.159119,
+      "compression_ratio": 1.455556,
+      "end": 9174.0,
+      "no_speech_prob": 0.0,
+      "start": 9171.58,
+      "text": "你可以把手里面的房产提前处理掉"
+    },
+    {
+      "avg_logprob": -0.159119,
+      "compression_ratio": 1.455556,
+      "end": 9176.04,
+      "no_speech_prob": 0.0,
+      "start": 9174.0,
+      "text": "我相信我们爆料革命真正相信七个的人"
+    },
+    {
+      "avg_logprob": -0.159119,
+      "compression_ratio": 1.455556,
+      "end": 9178.2,
+      "no_speech_prob": 0.0,
+      "start": 9176.04,
+      "text": "每一个人的手里面把大直的房产都已经处理掉了"
+    },
+    {
+      "avg_logprob": -0.159119,
+      "compression_ratio": 1.455556,
+      "end": 9179.36,
+      "no_speech_prob": 0.0,
+      "start": 9178.2,
+      "text": "资产都处理掉了"
+    },
+    {
+      "avg_logprob": -0.159119,
+      "compression_ratio": 1.455556,
+      "end": 9181.36,
+      "no_speech_prob": 0.0,
+      "start": 9179.36,
+      "text": "那这样的话我们不光是躲避了这一层"
+    },
+    {
+      "avg_logprob": -0.159119,
+      "compression_ratio": 1.455556,
+      "end": 9182.7,
+      "no_speech_prob": 0.0,
+      "start": 9181.36,
+      "text": "而且我们无描"
+    },
+    {
+      "avg_logprob": -0.180572,
+      "compression_ratio": 1.468013,
+      "end": 9185.1,
+      "no_speech_prob": 0.0,
+      "start": 9182.7,
+      "text": "我们要是用这些钱再去买了币"
+    },
+    {
+      "avg_logprob": -0.180572,
+      "compression_ratio": 1.468013,
+      "end": 9186.6,
+      "no_speech_prob": 0.0,
+      "start": 9185.1,
+      "text": "再去投资了G系列的话"
+    },
+    {
+      "avg_logprob": -0.180572,
+      "compression_ratio": 1.468013,
+      "end": 9188.2,
+      "no_speech_prob": 0.0,
+      "start": 9186.6,
+      "text": "现在在这场风波当中"
+    },
+    {
+      "avg_logprob": -0.180572,
+      "compression_ratio": 1.468013,
+      "end": 9190.44,
+      "no_speech_prob": 0.0,
+      "start": 9188.2,
+      "text": "我们是最安稳的一群人"
+    },
+    {
+      "avg_logprob": -0.180572,
+      "compression_ratio": 1.468013,
+      "end": 9192.04,
+      "no_speech_prob": 0.0,
+      "start": 9190.44,
+      "text": "所以机会一直都是在那里"
+    },
+    {
+      "avg_logprob": -0.180572,
+      "compression_ratio": 1.468013,
+      "end": 9193.3,
+      "no_speech_prob": 0.0,
+      "start": 9192.04,
+      "text": "只是你选不选择而已"
+    },
+    {
+      "avg_logprob": -0.180572,
+      "compression_ratio": 1.468013,
+      "end": 9194.9,
+      "no_speech_prob": 0.0,
+      "start": 9193.3,
+      "text": "所以这就是我一直想说的"
+    },
+    {
+      "avg_logprob": -0.180572,
+      "compression_ratio": 1.468013,
+      "end": 9196.3,
+      "no_speech_prob": 0.0,
+      "start": 9194.9,
+      "text": "就是我们不是说"
+    },
+    {
+      "avg_logprob": -0.180572,
+      "compression_ratio": 1.468013,
+      "end": 9199.1,
+      "no_speech_prob": 0.0,
+      "start": 9196.3,
+      "text": "光是某一个人或者我们出境的这些人幸运"
+    },
+    {
+      "avg_logprob": -0.180572,
+      "compression_ratio": 1.468013,
+      "end": 9200.82,
+      "no_speech_prob": 0.0,
+      "start": 9199.1,
+      "text": "而是我们所有的这些战友"
+    },
+    {
+      "avg_logprob": -0.180572,
+      "compression_ratio": 1.468013,
+      "end": 9201.64,
+      "no_speech_prob": 0.0,
+      "start": 9200.82,
+      "text": "所有的人"
+    },
+    {
+      "avg_logprob": -0.180572,
+      "compression_ratio": 1.468013,
+      "end": 9202.42,
+      "no_speech_prob": 0.0,
+      "start": 9201.64,
+      "text": "你们"
+    },
+    {
+      "avg_logprob": -0.180572,
+      "compression_ratio": 1.468013,
+      "end": 9204.6,
+      "no_speech_prob": 0.0,
+      "start": 9202.42,
+      "text": "我们这个直播是放在网上的"
+    },
+    {
+      "avg_logprob": -0.180572,
+      "compression_ratio": 1.468013,
+      "end": 9205.44,
+      "no_speech_prob": 0.0,
+      "start": 9204.6,
+      "text": "是可以公开的"
+    },
+    {
+      "avg_logprob": -0.180572,
+      "compression_ratio": 1.468013,
+      "end": 9206.66,
+      "no_speech_prob": 0.0,
+      "start": 9205.44,
+      "text": "不是在一个小团体范围内"
+    },
+    {
+      "avg_logprob": -0.177762,
+      "compression_ratio": 1.431655,
+      "end": 9208.62,
+      "no_speech_prob": 0.0,
+      "start": 9206.66,
+      "text": "所以每个人都有机会接触这些"
+    },
+    {
+      "avg_logprob": -0.177762,
+      "compression_ratio": 1.431655,
+      "end": 9210.36,
+      "no_speech_prob": 0.0,
+      "start": 9208.62,
+      "text": "而接触到了选不选择"
+    },
+    {
+      "avg_logprob": -0.177762,
+      "compression_ratio": 1.431655,
+      "end": 9212.4,
+      "no_speech_prob": 0.0,
+      "start": 9210.36,
+      "text": "甚至有的人像陆大头这样的"
+    },
+    {
+      "avg_logprob": -0.177762,
+      "compression_ratio": 1.431655,
+      "end": 9213.96,
+      "no_speech_prob": 0.0,
+      "start": 9212.4,
+      "text": "还选择去跟我们相组"
+    },
+    {
+      "avg_logprob": -0.177762,
+      "compression_ratio": 1.431655,
+      "end": 9215.04,
+      "no_speech_prob": 0.0,
+      "start": 9213.96,
+      "text": "跟我们去做对抗的"
+    },
+    {
+      "avg_logprob": -0.177762,
+      "compression_ratio": 1.431655,
+      "end": 9216.96,
+      "no_speech_prob": 0.0,
+      "start": 9215.04,
+      "text": "那一点办法也没有"
+    },
+    {
+      "avg_logprob": -0.177762,
+      "compression_ratio": 1.431655,
+      "end": 9220.08,
+      "no_speech_prob": 0.0,
+      "start": 9216.96,
+      "text": "所以这个真正的机会摆在每个人的面前"
+    },
+    {
+      "avg_logprob": -0.177762,
+      "compression_ratio": 1.431655,
+      "end": 9221.52,
+      "no_speech_prob": 0.0,
+      "start": 9220.08,
+      "text": "希望每个人都可以珍惜的"
+    },
+    {
+      "avg_logprob": -0.177762,
+      "compression_ratio": 1.431655,
+      "end": 9222.74,
+      "no_speech_prob": 0.0,
+      "start": 9221.52,
+      "text": "好 针对这个话题"
+    },
+    {
+      "avg_logprob": -0.177762,
+      "compression_ratio": 1.431655,
+      "end": 9225.78,
+      "no_speech_prob": 0.0,
+      "start": 9222.74,
+      "text": "我们各位嘉宾还有什么需要分享的吗"
+    },
+    {
+      "avg_logprob": -0.177762,
+      "compression_ratio": 1.431655,
+      "end": 9229.54,
+      "no_speech_prob": 0.0,
+      "start": 9225.78,
+      "text": "好的 非常感谢"
+    },
+    {
+      "avg_logprob": -0.177762,
+      "compression_ratio": 1.431655,
+      "end": 9230.58,
+      "no_speech_prob": 0.0,
+      "start": 9229.54,
+      "text": "讲一下这个话题没有"
+    },
+    {
+      "avg_logprob": -0.177762,
+      "compression_ratio": 1.431655,
+      "end": 9235.18,
+      "no_speech_prob": 0.0,
+      "start": 9230.58,
+      "text": "就回应一下这个"
+    },
+    {
+      "avg_logprob": -0.173614,
+      "compression_ratio": 1.443548,
+      "end": 9237.94,
+      "no_speech_prob": 0.0,
+      "start": 9235.18,
+      "text": "没关系"
+    },
+    {
+      "avg_logprob": -0.173614,
+      "compression_ratio": 1.443548,
+      "end": 9241.4,
+      "no_speech_prob": 0.0,
+      "start": 9237.94,
+      "text": "我是想回应一下Rachel的这个"
+    },
+    {
+      "avg_logprob": -0.173614,
+      "compression_ratio": 1.443548,
+      "end": 9245.6,
+      "no_speech_prob": 0.0,
+      "start": 9241.4,
+      "text": "对 我想回应一下Rachel的关于这个PAG的事情"
+    },
+    {
+      "avg_logprob": -0.173614,
+      "compression_ratio": 1.443548,
+      "end": 9246.96,
+      "no_speech_prob": 0.0,
+      "start": 9245.6,
+      "text": "我是觉得说这个"
+    },
+    {
+      "avg_logprob": -0.173614,
+      "compression_ratio": 1.443548,
+      "end": 9248.38,
+      "no_speech_prob": 0.0,
+      "start": 9246.96,
+      "text": "善伟健啊"
+    },
+    {
+      "avg_logprob": -0.173614,
+      "compression_ratio": 1.443548,
+      "end": 9251.28,
+      "no_speech_prob": 0.0,
+      "start": 9248.38,
+      "text": "就是当人家都是有钱人对吧"
+    },
+    {
+      "avg_logprob": -0.173614,
+      "compression_ratio": 1.443548,
+      "end": 9253.1,
+      "no_speech_prob": 0.0,
+      "start": 9251.28,
+      "text": "当人家问郭文人你追求什么东西"
+    },
+    {
+      "avg_logprob": -0.173614,
+      "compression_ratio": 1.443548,
+      "end": 9256.38,
+      "no_speech_prob": 0.0,
+      "start": 9253.1,
+      "text": "郭文人会说我追求中国人的民族自由和信仰"
+    },
+    {
+      "avg_logprob": -0.173614,
+      "compression_ratio": 1.443548,
+      "end": 9259.68,
+      "no_speech_prob": 0.0,
+      "start": 9256.38,
+      "text": "然后这个人家问善伟健你追求什么"
+    },
+    {
+      "avg_logprob": -0.173614,
+      "compression_ratio": 1.443548,
+      "end": 9260.98,
+      "no_speech_prob": 0.0,
+      "start": 9259.68,
+      "text": "我追求钱和女人"
+    },
+    {
+      "avg_logprob": -0.173614,
+      "compression_ratio": 1.443548,
+      "end": 9262.42,
+      "no_speech_prob": 0.0,
+      "start": 9260.98,
+      "text": "我觉得高下立线啊"
+    },
+    {
+      "avg_logprob": -0.225949,
+      "compression_ratio": 1.123077,
+      "end": 9267.64,
+      "no_speech_prob": 0.0,
+      "start": 9262.42,
+      "text": "然后就一个就会被真的人家重新抵发出来的这种尊敬"
+    },
+    {
+      "avg_logprob": -0.225949,
+      "compression_ratio": 1.123077,
+      "end": 9271.18,
+      "no_speech_prob": 0.0,
+      "start": 9267.64,
+      "text": "一个就是真的善伟健这个就是垃圾"
+    },
+    {
+      "avg_logprob": -0.225949,
+      "compression_ratio": 1.123077,
+      "end": 9272.84,
+      "no_speech_prob": 0.0,
+      "start": 9271.18,
+      "text": "我觉得PAG就是垃圾"
+    },
+    {
+      "avg_logprob": -0.225949,
+      "compression_ratio": 1.123077,
+      "end": 9273.26,
+      "no_speech_prob": 0.0,
+      "start": 9272.84,
+      "text": "OK"
+    },
+    {
+      "avg_logprob": -0.225949,
+      "compression_ratio": 1.123077,
+      "end": 9276.5,
+      "no_speech_prob": 0.0,
+      "start": 9273.26,
+      "text": "好的"
+    },
+    {
+      "avg_logprob": -0.243779,
+      "compression_ratio": 1.346369,
+      "end": 9279.26,
+      "no_speech_prob": 0.0,
+      "start": 9276.5,
+      "text": "那我们这个就进行下一个话题"
+    },
+    {
+      "avg_logprob": -0.243779,
+      "compression_ratio": 1.346369,
+      "end": 9284.72,
+      "no_speech_prob": 0.0,
+      "start": 9279.26,
+      "text": "我们下一个话题是我们关于这个HP在GFashion上的这个应用程序的一个演示"
+    },
+    {
+      "avg_logprob": -0.243779,
+      "compression_ratio": 1.346369,
+      "end": 9290.66,
+      "no_speech_prob": 0.0,
+      "start": 9284.72,
+      "text": "然后这个话题我们有请非常丰富的经验丰富的这个菲菲女士给我们讲解一下这个PPT"
+    },
+    {
+      "avg_logprob": -0.353296,
+      "compression_ratio": 0.988636,
+      "end": 9295.0,
+      "no_speech_prob": 0.0,
+      "start": 9290.66,
+      "text": "好谢谢"
+    },
+    {
+      "avg_logprob": -0.353296,
+      "compression_ratio": 0.988636,
+      "end": 9300.3,
+      "no_speech_prob": 0.0,
+      "start": 9295.0,
+      "text": "我也是刚刚看到这个PPT我也没有丰富的经验就刚刚买过一次"
+    },
+    {
+      "avg_logprob": -0.245876,
+      "compression_ratio": 0.94898,
+      "end": 9303.3,
+      "no_speech_prob": 0.0,
+      "start": 9300.3,
+      "text": "先是说是撰稿是小福利"
+    },
+    {
+      "avg_logprob": -0.245876,
+      "compression_ratio": 0.94898,
+      "end": 9304.2,
+      "no_speech_prob": 0.0,
+      "start": 9303.3,
+      "text": "然后文学"
+    },
+    {
+      "avg_logprob": -0.245876,
+      "compression_ratio": 0.94898,
+      "end": 9305.52,
+      "no_speech_prob": 0.0,
+      "start": 9304.2,
+      "text": "然后美工是Maggie"
+    },
+    {
+      "avg_logprob": -0.245876,
+      "compression_ratio": 0.94898,
+      "end": 9308.52,
+      "no_speech_prob": 0.0,
+      "start": 9305.52,
+      "text": "书法是沙漠之花好下业"
+    },
+    {
+      "avg_logprob": -0.206699,
+      "compression_ratio": 1.191176,
+      "end": 9314.46,
+      "no_speech_prob": 0.0,
+      "start": 9308.52,
+      "text": "嗯对这一步对吧"
+    },
+    {
+      "avg_logprob": -0.206699,
+      "compression_ratio": 1.191176,
+      "end": 9317.9,
+      "no_speech_prob": 0.0,
+      "start": 9314.46,
+      "text": "大家很多人都找不到这一步就是你点了这个衣服"
+    },
+    {
+      "avg_logprob": -0.206699,
+      "compression_ratio": 1.191176,
+      "end": 9321.06,
+      "no_speech_prob": 0.0,
+      "start": 9317.9,
+      "text": "他先会其实会先跳出来一个支付界面"
+    },
+    {
+      "avg_logprob": -0.206699,
+      "compression_ratio": 1.191176,
+      "end": 9324.74,
+      "no_speech_prob": 0.0,
+      "start": 9321.06,
+      "text": "然后呢你一直要 continue continue continue"
+    },
+    {
+      "avg_logprob": -0.206699,
+      "compression_ratio": 1.191176,
+      "end": 9329.58,
+      "no_speech_prob": 0.0,
+      "start": 9324.74,
+      "text": "然后到把你所有的那个就是运输信息全部弄好了"
+    },
+    {
+      "avg_logprob": -0.261348,
+      "compression_ratio": 1.488281,
+      "end": 9331.32,
+      "no_speech_prob": 0.0,
+      "start": 9329.58,
+      "text": "然后这里会跳出来一个HP"
+    },
+    {
+      "avg_logprob": -0.261348,
+      "compression_ratio": 1.488281,
+      "end": 9332.72,
+      "no_speech_prob": 0.0,
+      "start": 9331.32,
+      "text": "然后你就点这个HP"
+    },
+    {
+      "avg_logprob": -0.261348,
+      "compression_ratio": 1.488281,
+      "end": 9336.92,
+      "no_speech_prob": 0.0,
+      "start": 9336.42,
+      "text": "下一页"
+    },
+    {
+      "avg_logprob": -0.261348,
+      "compression_ratio": 1.488281,
+      "end": 9339.12,
+      "no_speech_prob": 0.0,
+      "start": 9338.42,
+      "text": "嗯"
+    },
+    {
+      "avg_logprob": -0.261348,
+      "compression_ratio": 1.488281,
+      "end": 9343.64,
+      "no_speech_prob": 0.0,
+      "start": 9339.88,
+      "text": "这里其实我出来的时候他会有一个小的滚动条"
+    },
+    {
+      "avg_logprob": -0.261348,
+      "compression_ratio": 1.488281,
+      "end": 9345.72,
+      "no_speech_prob": 0.0,
+      "start": 9343.64,
+      "text": "然后那个滚动条会pop out出来"
+    },
+    {
+      "avg_logprob": -0.261348,
+      "compression_ratio": 1.488281,
+      "end": 9347.94,
+      "no_speech_prob": 0.0,
+      "start": 9345.72,
+      "text": "就是呃这个二维码"
+    },
+    {
+      "avg_logprob": -0.261348,
+      "compression_ratio": 1.488281,
+      "end": 9350.76,
+      "no_speech_prob": 0.0,
+      "start": 9347.94,
+      "text": "因为你点了那个HP以后他会就告诉你一句话"
+    },
+    {
+      "avg_logprob": -0.261348,
+      "compression_ratio": 1.488281,
+      "end": 9353.34,
+      "no_speech_prob": 0.0,
+      "start": 9350.76,
+      "text": "你说让你去拿那个手机的那个二维码"
+    },
+    {
+      "avg_logprob": -0.261348,
+      "compression_ratio": 1.488281,
+      "end": 9355.54,
+      "no_speech_prob": 0.0,
+      "start": 9353.34,
+      "text": "手机的HP去扫这个二维码"
+    },
+    {
+      "avg_logprob": -0.261348,
+      "compression_ratio": 1.488281,
+      "end": 9357.84,
+      "no_speech_prob": 0.0,
+      "start": 9355.54,
+      "text": "然后你一扫扫完你的支付就完成了"
+    },
+    {
+      "avg_logprob": -0.261348,
+      "compression_ratio": 1.488281,
+      "end": 9359.44,
+      "no_speech_prob": 0.0,
+      "start": 9358.44,
+      "text": "嗯下一页"
+    },
+    {
+      "avg_logprob": -0.292147,
+      "compression_ratio": 1.397906,
+      "end": 9365.58,
+      "no_speech_prob": 0.0,
+      "start": 9359.58,
+      "text": "对对对就拿这个二维码这个点一下"
+    },
+    {
+      "avg_logprob": -0.292147,
+      "compression_ratio": 1.397906,
+      "end": 9368.88,
+      "no_speech_prob": 0.0,
+      "start": 9365.58,
+      "text": "然后去扫一下用那个账上去去拍一下就完成了"
+    },
+    {
+      "avg_logprob": -0.292147,
+      "compression_ratio": 1.397906,
+      "end": 9375.02,
+      "no_speech_prob": 0.0,
+      "start": 9373.02,
+      "text": "嗯就完成了好了"
+    },
+    {
+      "avg_logprob": -0.292147,
+      "compression_ratio": 1.397906,
+      "end": 9376.74,
+      "no_speech_prob": 0.0,
+      "start": 9376.24,
+      "text": "没了"
+    },
+    {
+      "avg_logprob": -0.292147,
+      "compression_ratio": 1.397906,
+      "end": 9382.94,
+      "no_speech_prob": 0.0,
+      "start": 9378.18,
+      "text": "哎对你这里会看到这个扣款的这个记录啊什么的"
+    },
+    {
+      "avg_logprob": -0.292147,
+      "compression_ratio": 1.397906,
+      "end": 9385.08,
+      "no_speech_prob": 0.0,
+      "start": 9383.28,
+      "text": "然后就完成了反正就很快"
+    },
+    {
+      "avg_logprob": -0.292147,
+      "compression_ratio": 1.397906,
+      "end": 9387.68,
+      "no_speech_prob": 0.0,
+      "start": 9385.58,
+      "text": "这个我觉得我们应该都搞明白"
+    },
+    {
+      "avg_logprob": -0.246347,
+      "compression_ratio": 1.220513,
+      "end": 9390.44,
+      "no_speech_prob": 0.0,
+      "start": 9387.68,
+      "text": "用HP付款对喜币的重要意义"
+    },
+    {
+      "avg_logprob": -0.246347,
+      "compression_ratio": 1.220513,
+      "end": 9393.68,
+      "no_speech_prob": 0.0,
+      "start": 9390.44,
+      "text": "是HP全面进入集发行支付标志着喜币"
+    },
+    {
+      "avg_logprob": -0.246347,
+      "compression_ratio": 1.220513,
+      "end": 9395.68,
+      "no_speech_prob": 0.0,
+      "start": 9393.68,
+      "text": "真正进入集生态"
+    },
+    {
+      "avg_logprob": -0.246347,
+      "compression_ratio": 1.220513,
+      "end": 9397.68,
+      "no_speech_prob": 0.0,
+      "start": 9395.68,
+      "text": "嗯的流通领域"
+    },
+    {
+      "avg_logprob": -0.246347,
+      "compression_ratio": 1.220513,
+      "end": 9401.62,
+      "no_speech_prob": 0.0,
+      "start": 9397.68,
+      "text": "然后HDO不用换成美元直接零成本秒到之"
+    },
+    {
+      "avg_logprob": -0.246347,
+      "compression_ratio": 1.220513,
+      "end": 9403.12,
+      "no_speech_prob": 0.0,
+      "start": 9401.62,
+      "text": "呃账支付"
+    },
+    {
+      "avg_logprob": -0.246347,
+      "compression_ratio": 1.220513,
+      "end": 9407.14,
+      "no_speech_prob": 0.0,
+      "start": 9403.12,
+      "text": "有利于HDO资金池的稳定有利于喜币的价格"
+    },
+    {
+      "avg_logprob": -0.202081,
+      "compression_ratio": 0.980583,
+      "end": 9409.9,
+      "no_speech_prob": 0.0,
+      "start": 9407.14,
+      "text": "然后30货币的价值在于流通"
+    },
+    {
+      "avg_logprob": -0.202081,
+      "compression_ratio": 0.980583,
+      "end": 9415.14,
+      "no_speech_prob": 0.0,
+      "start": 9409.9,
+      "text": "HDO的交易额会百倍反映到喜币的价值上好"
+    },
+    {
+      "avg_logprob": -0.202081,
+      "compression_ratio": 0.980583,
+      "end": 9416.14,
+      "no_speech_prob": 0.0,
+      "start": 9415.14,
+      "text": "好下一页"
+    },
+    {
+      "avg_logprob": -0.444088,
+      "compression_ratio": 0.883333,
+      "end": 9420.94,
+      "no_speech_prob": 0.0,
+      "start": 9416.14,
+      "text": "谢谢啊感谢殷喜农场"
+    },
+    {
+      "avg_logprob": -0.444088,
+      "compression_ratio": 0.883333,
+      "end": 9423.04,
+      "no_speech_prob": 0.0,
+      "start": 9420.94,
+      "text": "DC农场蜜番和香草山"
+    },
+    {
+      "avg_logprob": -0.171723,
+      "compression_ratio": 1.241026,
+      "end": 9425.8,
+      "no_speech_prob": 0.0,
+      "start": 9423.04,
+      "text": "嗯主持人"
+    },
+    {
+      "avg_logprob": -0.171723,
+      "compression_ratio": 1.241026,
+      "end": 9427.38,
+      "no_speech_prob": 0.0,
+      "start": 9425.8,
+      "text": "好的非常感谢飞飞"
+    },
+    {
+      "avg_logprob": -0.171723,
+      "compression_ratio": 1.241026,
+      "end": 9430.04,
+      "no_speech_prob": 0.0,
+      "start": 9427.38,
+      "text": "对然后那个我刚才看到确实有战友在提醒哈"
+    },
+    {
+      "avg_logprob": -0.171723,
+      "compression_ratio": 1.241026,
+      "end": 9435.78,
+      "no_speech_prob": 0.0,
+      "start": 9430.04,
+      "text": "就是每次这个我们七哥大直播的时候在12点之前要有一个祈祷的这个仪式哈"
+    },
+    {
+      "avg_logprob": -0.171723,
+      "compression_ratio": 1.241026,
+      "end": 9438.28,
+      "no_speech_prob": 0.0,
+      "start": 9435.78,
+      "text": "这个我们虽然第一次没有七哥的大直播"
+    },
+    {
+      "avg_logprob": -0.187085,
+      "compression_ratio": 1.506757,
+      "end": 9440.02,
+      "no_speech_prob": 0.0,
+      "start": 9438.28,
+      "text": "但是我们这个传统也不要忘掉"
+    },
+    {
+      "avg_logprob": -0.187085,
+      "compression_ratio": 1.506757,
+      "end": 9442.28,
+      "no_speech_prob": 0.0,
+      "start": 9440.02,
+      "text": "然后我们在这个12点之前"
+    },
+    {
+      "avg_logprob": -0.187085,
+      "compression_ratio": 1.506757,
+      "end": 9444.02,
+      "no_speech_prob": 0.0,
+      "start": 9442.28,
+      "text": "然后我们先做一个祈祷"
+    },
+    {
+      "avg_logprob": -0.187085,
+      "compression_ratio": 1.506757,
+      "end": 9446.88,
+      "no_speech_prob": 0.0,
+      "start": 9444.02,
+      "text": "祈祷我们保佑全世界的这个我们的华人"
+    },
+    {
+      "avg_logprob": -0.187085,
+      "compression_ratio": 1.506757,
+      "end": 9449.02,
+      "no_speech_prob": 0.0,
+      "start": 9446.88,
+      "text": "然后包括保佑我们前线的这些战友"
+    },
+    {
+      "avg_logprob": -0.187085,
+      "compression_ratio": 1.506757,
+      "end": 9452.52,
+      "no_speech_prob": 0.0,
+      "start": 9449.02,
+      "text": "然后保佑我们每一个为正义世界在不断奋斗的人"
+    },
+    {
+      "avg_logprob": -0.187085,
+      "compression_ratio": 1.506757,
+      "end": 9454.52,
+      "no_speech_prob": 0.0,
+      "start": 9452.52,
+      "text": "好谢谢大家我们一起祈祷"
+    },
+    {
+      "avg_logprob": -0.187085,
+      "compression_ratio": 1.506757,
+      "end": 9458.64,
+      "no_speech_prob": 0.0,
+      "start": 9454.52,
+      "text": "嗯好的其实刚才我在PP之前我想说"
+    },
+    {
+      "avg_logprob": -0.187085,
+      "compression_ratio": 1.506757,
+      "end": 9459.74,
+      "no_speech_prob": 0.0,
+      "start": 9458.64,
+      "text": "但是我可能避麦了"
+    },
+    {
+      "avg_logprob": -0.187085,
+      "compression_ratio": 1.506757,
+      "end": 9462.14,
+      "no_speech_prob": 0.0,
+      "start": 9459.74,
+      "text": "然后我发现我说话声音传不出去"
+    },
+    {
+      "avg_logprob": -0.187085,
+      "compression_ratio": 1.506757,
+      "end": 9463.94,
+      "no_speech_prob": 0.0,
+      "start": 9462.14,
+      "text": "对我也想着问题了"
+    },
+    {
+      "avg_logprob": -0.187085,
+      "compression_ratio": 1.506757,
+      "end": 9466.14,
+      "no_speech_prob": 0.0,
+      "start": 9463.94,
+      "text": "现在是11点37分"
+    },
+    {
+      "avg_logprob": -0.075837,
+      "compression_ratio": 1.505102,
+      "end": 9471.04,
+      "no_speech_prob": 0.0,
+      "start": 9466.14,
+      "text": "那我们一起来为我们75亿的全世界的同胞"
+    },
+    {
+      "avg_logprob": -0.075837,
+      "compression_ratio": 1.505102,
+      "end": 9473.68,
+      "no_speech_prob": 0.0,
+      "start": 9471.04,
+      "text": "为我们14亿的中国同胞"
+    },
+    {
+      "avg_logprob": -0.075837,
+      "compression_ratio": 1.505102,
+      "end": 9476.58,
+      "no_speech_prob": 0.0,
+      "start": 9473.68,
+      "text": "为在救援前线的所有的战友"
+    },
+    {
+      "avg_logprob": -0.075837,
+      "compression_ratio": 1.505102,
+      "end": 9478.76,
+      "no_speech_prob": 0.0,
+      "start": 9476.58,
+      "text": "所有的战友和他们的家人"
+    },
+    {
+      "avg_logprob": -0.075837,
+      "compression_ratio": 1.505102,
+      "end": 9481.36,
+      "no_speech_prob": 0.0,
+      "start": 9478.76,
+      "text": "还有乌克兰所有的人们"
+    },
+    {
+      "avg_logprob": -0.075837,
+      "compression_ratio": 1.505102,
+      "end": 9486.8,
+      "no_speech_prob": 0.0,
+      "start": 9481.36,
+      "text": "还有在俄乌战争中受到伤害的所有的全球的同胞"
+    },
+    {
+      "avg_logprob": -0.075837,
+      "compression_ratio": 1.505102,
+      "end": 9491.78,
+      "no_speech_prob": 0.0,
+      "start": 9486.8,
+      "text": "为我们台湾香港西藏和新疆的同胞祈福"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 2.0,
+      "end": 9493.78,
+      "no_speech_prob": 0.0,
+      "start": 9491.78,
+      "text": "好�好"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 2.0,
+      "end": 9494.56,
+      "no_speech_prob": 0.0,
+      "start": 9493.78,
+      "text": "好"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 2.0,
+      "end": 9494.78,
+      "no_speech_prob": 0.0,
+      "start": 9494.56,
+      "text": "好"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 2.0,
+      "end": 9495.06,
+      "no_speech_prob": 0.0,
+      "start": 9494.78,
+      "text": "好"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 2.0,
+      "end": 9495.32,
+      "no_speech_prob": 0.0,
+      "start": 9495.06,
+      "text": "好"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 2.0,
+      "end": 9495.58,
+      "no_speech_prob": 0.0,
+      "start": 9495.32,
+      "text": "好"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 2.0,
+      "end": 9495.72,
+      "no_speech_prob": 0.0,
+      "start": 9495.58,
+      "text": "好"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 2.0,
+      "end": 9495.98,
+      "no_speech_prob": 0.0,
+      "start": 9495.72,
+      "text": "好"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 2.0,
+      "end": 9496.28,
+      "no_speech_prob": 0.0,
+      "start": 9495.98,
+      "text": "好"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 2.0,
+      "end": 9496.56,
+      "no_speech_prob": 0.0,
+      "start": 9496.28,
+      "text": "好"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 2.0,
+      "end": 9496.68,
+      "no_speech_prob": 0.0,
+      "start": 9496.56,
+      "text": "好"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 2.0,
+      "end": 9496.76,
+      "no_speech_prob": 0.0,
+      "start": 9496.68,
+      "text": "好"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 2.0,
+      "end": 9496.88,
+      "no_speech_prob": 0.0,
+      "start": 9496.76,
+      "text": "好"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 2.0,
+      "end": 9497.02,
+      "no_speech_prob": 0.0,
+      "start": 9496.88,
+      "text": "好"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 2.0,
+      "end": 9497.22,
+      "no_speech_prob": 0.0,
+      "start": 9497.02,
+      "text": "communication"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 2.0,
+      "end": 9497.24,
+      "no_speech_prob": 0.0,
+      "start": 9497.22,
+      "text": "好"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 2.0,
+      "end": 9497.28,
+      "no_speech_prob": 0.0,
+      "start": 9497.24,
+      "text": "好"
+    },
+    {
+      "avg_logprob": -0.245547,
+      "compression_ratio": 1.201342,
+      "end": 9533.42,
+      "no_speech_prob": 0.0,
+      "start": 9521.78,
+      "text": "阿彌陀佛"
+    },
+    {
+      "avg_logprob": -0.245547,
+      "compression_ratio": 1.201342,
+      "end": 9535.54,
+      "no_speech_prob": 0.0,
+      "start": 9533.42,
+      "text": "谢谢大家"
+    },
+    {
+      "avg_logprob": -0.245547,
+      "compression_ratio": 1.201342,
+      "end": 9540.88,
+      "no_speech_prob": 0.0,
+      "start": 9535.54,
+      "text": "好的 非常感谢"
+    },
+    {
+      "avg_logprob": -0.245547,
+      "compression_ratio": 1.201342,
+      "end": 9542.6,
+      "no_speech_prob": 0.0,
+      "start": 9540.88,
+      "text": "我们这个祈福一事完事"
+    },
+    {
+      "avg_logprob": -0.245547,
+      "compression_ratio": 1.201342,
+      "end": 9544.6,
+      "no_speech_prob": 0.0,
+      "start": 9542.6,
+      "text": "然后我们现在有请入水女士"
+    },
+    {
+      "avg_logprob": -0.245547,
+      "compression_ratio": 1.201342,
+      "end": 9545.92,
+      "no_speech_prob": 0.0,
+      "start": 9544.6,
+      "text": "给我们讲解一下这个PPT"
+    },
+    {
+      "avg_logprob": -0.245547,
+      "compression_ratio": 1.201342,
+      "end": 9546.26,
+      "no_speech_prob": 0.0,
+      "start": 9545.92,
+      "text": "谢谢"
+    },
+    {
+      "avg_logprob": -0.245547,
+      "compression_ratio": 1.201342,
+      "end": 9548.48,
+      "no_speech_prob": 0.0,
+      "start": 9546.26,
+      "text": "好的 谢谢"
+    },
+    {
+      "avg_logprob": -0.245547,
+      "compression_ratio": 1.201342,
+      "end": 9550.1,
+      "no_speech_prob": 0.0,
+      "start": 9548.48,
+      "text": "因为看到这个PPT"
+    },
+    {
+      "avg_logprob": -0.101638,
+      "compression_ratio": 1.509158,
+      "end": 9551.78,
+      "no_speech_prob": 0.0,
+      "start": 9550.1,
+      "text": "就是说到我们这个席"
+    },
+    {
+      "avg_logprob": -0.101638,
+      "compression_ratio": 1.509158,
+      "end": 9554.9,
+      "no_speech_prob": 0.0,
+      "start": 9551.78,
+      "text": "然后说到它的支付这一块"
+    },
+    {
+      "avg_logprob": -0.101638,
+      "compression_ratio": 1.509158,
+      "end": 9557.76,
+      "no_speech_prob": 0.0,
+      "start": 9554.9,
+      "text": "那就是从我们从货币来谈"
+    },
+    {
+      "avg_logprob": -0.101638,
+      "compression_ratio": 1.509158,
+      "end": 9560.06,
+      "no_speech_prob": 0.0,
+      "start": 9557.76,
+      "text": "大家都知道这个传统的货币"
+    },
+    {
+      "avg_logprob": -0.101638,
+      "compression_ratio": 1.509158,
+      "end": 9563.08,
+      "no_speech_prob": 0.0,
+      "start": 9560.06,
+      "text": "它定义为它是具有三个功能的"
+    },
+    {
+      "avg_logprob": -0.101638,
+      "compression_ratio": 1.509158,
+      "end": 9564.66,
+      "no_speech_prob": 0.0,
+      "start": 9563.08,
+      "text": "一个这个交易的媒介"
+    },
+    {
+      "avg_logprob": -0.101638,
+      "compression_ratio": 1.509158,
+      "end": 9565.84,
+      "no_speech_prob": 0.0,
+      "start": 9564.66,
+      "text": "然后记账单位"
+    },
+    {
+      "avg_logprob": -0.101638,
+      "compression_ratio": 1.509158,
+      "end": 9567.4,
+      "no_speech_prob": 0.0,
+      "start": 9565.84,
+      "text": "还有它的价值储藏"
+    },
+    {
+      "avg_logprob": -0.101638,
+      "compression_ratio": 1.509158,
+      "end": 9569.24,
+      "no_speech_prob": 0.0,
+      "start": 9567.4,
+      "text": "那席币作为我们的货币"
+    },
+    {
+      "avg_logprob": -0.101638,
+      "compression_ratio": 1.509158,
+      "end": 9571.76,
+      "no_speech_prob": 0.0,
+      "start": 9569.24,
+      "text": "它也要充当一个交换的媒介"
+    },
+    {
+      "avg_logprob": -0.101638,
+      "compression_ratio": 1.509158,
+      "end": 9572.52,
+      "no_speech_prob": 0.0,
+      "start": 9571.76,
+      "text": "记账单位"
+    },
+    {
+      "avg_logprob": -0.101638,
+      "compression_ratio": 1.509158,
+      "end": 9575.06,
+      "no_speech_prob": 0.0,
+      "start": 9572.52,
+      "text": "还有这个价值的储藏的功能"
+    },
+    {
+      "avg_logprob": -0.101638,
+      "compression_ratio": 1.509158,
+      "end": 9577.72,
+      "no_speech_prob": 0.0,
+      "start": 9575.06,
+      "text": "那么你在购买这个Defense的过程中"
+    },
+    {
+      "avg_logprob": -0.101638,
+      "compression_ratio": 1.509158,
+      "end": 9579.18,
+      "no_speech_prob": 0.0,
+      "start": 9577.72,
+      "text": "它的运作方式"
+    },
+    {
+      "avg_logprob": -0.096237,
+      "compression_ratio": 1.359606,
+      "end": 9581.6,
+      "no_speech_prob": 0.0,
+      "start": 9579.18,
+      "text": "就类似于这个实际的货币"
+    },
+    {
+      "avg_logprob": -0.096237,
+      "compression_ratio": 1.359606,
+      "end": 9584.04,
+      "no_speech_prob": 0.0,
+      "start": 9581.6,
+      "text": "就像那种有法律地位的一些货币"
+    },
+    {
+      "avg_logprob": -0.096237,
+      "compression_ratio": 1.359606,
+      "end": 9585.38,
+      "no_speech_prob": 0.0,
+      "start": 9584.04,
+      "text": "在流通中使用"
+    },
+    {
+      "avg_logprob": -0.096237,
+      "compression_ratio": 1.359606,
+      "end": 9588.1,
+      "no_speech_prob": 0.0,
+      "start": 9585.38,
+      "text": "并且可以作为一个交换媒介的那种货币的"
+    },
+    {
+      "avg_logprob": -0.096237,
+      "compression_ratio": 1.359606,
+      "end": 9589.82,
+      "no_speech_prob": 0.0,
+      "start": 9588.1,
+      "text": "一个广泛的使用"
+    },
+    {
+      "avg_logprob": -0.096237,
+      "compression_ratio": 1.359606,
+      "end": 9593.26,
+      "no_speech_prob": 0.0,
+      "start": 9589.82,
+      "text": "这样它就增加了这个洗币和洗美元的功能"
+    },
+    {
+      "avg_logprob": -0.096237,
+      "compression_ratio": 1.359606,
+      "end": 9595.9,
+      "no_speech_prob": 0.0,
+      "start": 9593.26,
+      "text": "也提供了咱们洗币的一个内在的一个价值"
+    },
+    {
+      "avg_logprob": -0.141207,
+      "compression_ratio": 1.16129,
+      "end": 9599.52,
+      "no_speech_prob": 0.0,
+      "start": 9595.9,
+      "text": "那洗币呢可以在使用者之间是进行交易的"
+    },
+    {
+      "avg_logprob": -0.141207,
+      "compression_ratio": 1.16129,
+      "end": 9602.92,
+      "no_speech_prob": 0.0,
+      "start": 9599.52,
+      "text": "并且同时它场外也可以是与像美元呀欧元"
+    },
+    {
+      "avg_logprob": -0.141207,
+      "compression_ratio": 1.16129,
+      "end": 9606.6,
+      "no_speech_prob": 0.0,
+      "start": 9602.92,
+      "text": "或者像其他的一些法币进行兑换的"
+    },
+    {
+      "avg_logprob": -0.141207,
+      "compression_ratio": 1.16129,
+      "end": 9608.46,
+      "no_speech_prob": 0.0,
+      "start": 9606.6,
+      "text": "那现在我们大家都知道了"
+    },
+    {
+      "avg_logprob": -0.141207,
+      "compression_ratio": 1.16129,
+      "end": 9609.52,
+      "no_speech_prob": 0.0,
+      "start": 9608.46,
+      "text": "像这个HPay"
+    },
+    {
+      "avg_logprob": -0.141207,
+      "compression_ratio": 1.16129,
+      "end": 9610.16,
+      "no_speech_prob": 0.0,
+      "start": 9609.52,
+      "text": "咱们的HPay"
+    },
+    {
+      "avg_logprob": -0.141207,
+      "compression_ratio": 1.16129,
+      "end": 9610.88,
+      "no_speech_prob": 0.0,
+      "start": 9610.16,
+      "text": "咱们的洗币"
+    },
+    {
+      "avg_logprob": -0.141207,
+      "compression_ratio": 1.16129,
+      "end": 9612.64,
+      "no_speech_prob": 0.0,
+      "start": 9610.88,
+      "text": "已经在和这个Defense"
+    },
+    {
+      "avg_logprob": -0.113805,
+      "compression_ratio": 1.407407,
+      "end": 9616.1,
+      "no_speech_prob": 0.0,
+      "start": 9612.64,
+      "text": "还有包括咱们GClub都已经在无缝对接了"
+    },
+    {
+      "avg_logprob": -0.113805,
+      "compression_ratio": 1.407407,
+      "end": 9617.22,
+      "no_speech_prob": 0.0,
+      "start": 9616.1,
+      "text": "那么这一个对接"
+    },
+    {
+      "avg_logprob": -0.113805,
+      "compression_ratio": 1.407407,
+      "end": 9621.2,
+      "no_speech_prob": 0.0,
+      "start": 9617.22,
+      "text": "其实它就打通了这个硕子货币的一个实体的交易和流通"
+    },
+    {
+      "avg_logprob": -0.113805,
+      "compression_ratio": 1.407407,
+      "end": 9626.16,
+      "no_speech_prob": 0.0,
+      "start": 9621.2,
+      "text": "也为咱们这个洗币下一步成为这个国际的货币"
+    },
+    {
+      "avg_logprob": -0.113805,
+      "compression_ratio": 1.407407,
+      "end": 9628.46,
+      "no_speech_prob": 0.0,
+      "start": 9626.16,
+      "text": "迈出了一个非常坚实的基础"
+    },
+    {
+      "avg_logprob": -0.113805,
+      "compression_ratio": 1.407407,
+      "end": 9629.86,
+      "no_speech_prob": 0.0,
+      "start": 9628.46,
+      "text": "其实我们大家都知道"
+    },
+    {
+      "avg_logprob": -0.113805,
+      "compression_ratio": 1.407407,
+      "end": 9632.26,
+      "no_speech_prob": 0.0,
+      "start": 9629.86,
+      "text": "咱们的这个洗币一个中心化的管理"
+    },
+    {
+      "avg_logprob": -0.113805,
+      "compression_ratio": 1.407407,
+      "end": 9635.38,
+      "no_speech_prob": 0.0,
+      "start": 9632.26,
+      "text": "还有去中心化的这个加密技术"
+    },
+    {
+      "avg_logprob": -0.113805,
+      "compression_ratio": 1.407407,
+      "end": 9637.24,
+      "no_speech_prob": 0.0,
+      "start": 9635.38,
+      "text": "保证了它的安全和隐私"
+    },
+    {
+      "avg_logprob": -0.161203,
+      "compression_ratio": 1.373702,
+      "end": 9640.3,
+      "no_speech_prob": 0.0,
+      "start": 9637.24,
+      "text": "也杜绝了违法的这个洗钱的这种行为"
+    },
+    {
+      "avg_logprob": -0.161203,
+      "compression_ratio": 1.373702,
+      "end": 9643.38,
+      "no_speech_prob": 0.0,
+      "start": 9640.3,
+      "text": "尤其是咱们20%的这个黄金锚定"
+    },
+    {
+      "avg_logprob": -0.161203,
+      "compression_ratio": 1.373702,
+      "end": 9645.78,
+      "no_speech_prob": 0.0,
+      "start": 9643.38,
+      "text": "那现在它和咱们G松菜圈的"
+    },
+    {
+      "avg_logprob": -0.161203,
+      "compression_ratio": 1.373702,
+      "end": 9647.08,
+      "no_speech_prob": 0.0,
+      "start": 9645.78,
+      "text": "像G繁衡GClub"
+    },
+    {
+      "avg_logprob": -0.161203,
+      "compression_ratio": 1.373702,
+      "end": 9649.84,
+      "no_speech_prob": 0.0,
+      "start": 9647.08,
+      "text": "那我相信还有这个未来的像G毛"
+    },
+    {
+      "avg_logprob": -0.161203,
+      "compression_ratio": 1.373702,
+      "end": 9651.12,
+      "no_speech_prob": 0.0,
+      "start": 9649.84,
+      "text": "G物流G保险"
+    },
+    {
+      "avg_logprob": -0.161203,
+      "compression_ratio": 1.373702,
+      "end": 9654.18,
+      "no_speech_prob": 0.0,
+      "start": 9651.12,
+      "text": "还有后续更多的会和我们合作的一些"
+    },
+    {
+      "avg_logprob": -0.161203,
+      "compression_ratio": 1.373702,
+      "end": 9657.64,
+      "no_speech_prob": 0.0,
+      "start": 9654.18,
+      "text": "和合作的一些商家的那些商业的活动"
+    },
+    {
+      "avg_logprob": -0.161203,
+      "compression_ratio": 1.373702,
+      "end": 9659.2,
+      "no_speech_prob": 0.0,
+      "start": 9657.64,
+      "text": "来支撑它的价值"
+    },
+    {
+      "avg_logprob": -0.161203,
+      "compression_ratio": 1.373702,
+      "end": 9660.28,
+      "no_speech_prob": 0.0,
+      "start": 9659.2,
+      "text": "那它的这个"
+    },
+    {
+      "avg_logprob": -0.161203,
+      "compression_ratio": 1.373702,
+      "end": 9663.44,
+      "no_speech_prob": 0.0,
+      "start": 9660.28,
+      "text": "它的这个前景是非常无限的"
+    },
+    {
+      "avg_logprob": -0.161203,
+      "compression_ratio": 1.373702,
+      "end": 9665.54,
+      "no_speech_prob": 0.0,
+      "start": 9663.44,
+      "text": "七哥其实一直在强调了咱们的"
+    },
+    {
+      "avg_logprob": -0.115059,
+      "compression_ratio": 1.371622,
+      "end": 9668.88,
+      "no_speech_prob": 0.0,
+      "start": 9665.54,
+      "text": "洗币的铜飞它是那个有三个因素的"
+    },
+    {
+      "avg_logprob": -0.115059,
+      "compression_ratio": 1.371622,
+      "end": 9670.28,
+      "no_speech_prob": 0.0,
+      "start": 9668.88,
+      "text": "那即将发送的"
+    },
+    {
+      "avg_logprob": -0.115059,
+      "compression_ratio": 1.371622,
+      "end": 9672.18,
+      "no_speech_prob": 0.0,
+      "start": 9670.28,
+      "text": "就是我们未来我们也很期待的"
+    },
+    {
+      "avg_logprob": -0.115059,
+      "compression_ratio": 1.371622,
+      "end": 9673.72,
+      "no_speech_prob": 0.0,
+      "start": 9672.18,
+      "text": "那即将就会应该会发送"
+    },
+    {
+      "avg_logprob": -0.115059,
+      "compression_ratio": 1.371622,
+      "end": 9675.82,
+      "no_speech_prob": 0.0,
+      "start": 9673.72,
+      "text": "就是一些主权国家的认可"
+    },
+    {
+      "avg_logprob": -0.115059,
+      "compression_ratio": 1.371622,
+      "end": 9679.76,
+      "no_speech_prob": 0.0,
+      "start": 9675.82,
+      "text": "然后大额投资和这个HPay"
+    },
+    {
+      "avg_logprob": -0.115059,
+      "compression_ratio": 1.371622,
+      "end": 9681.7,
+      "no_speech_prob": 0.0,
+      "start": 9679.76,
+      "text": "咱们洗支付的一个全面实用"
+    },
+    {
+      "avg_logprob": -0.115059,
+      "compression_ratio": 1.371622,
+      "end": 9683.38,
+      "no_speech_prob": 0.0,
+      "start": 9681.7,
+      "text": "然后HPay在G翻上的"
+    },
+    {
+      "avg_logprob": -0.115059,
+      "compression_ratio": 1.371622,
+      "end": 9685.58,
+      "no_speech_prob": 0.0,
+      "start": 9683.38,
+      "text": "就是目前在G翻上的应用"
+    },
+    {
+      "avg_logprob": -0.115059,
+      "compression_ratio": 1.371622,
+      "end": 9687.9,
+      "no_speech_prob": 0.0,
+      "start": 9685.58,
+      "text": "已经表明了这个虚拟"
+    },
+    {
+      "avg_logprob": -0.115059,
+      "compression_ratio": 1.371622,
+      "end": 9690.84,
+      "no_speech_prob": 0.0,
+      "start": 9687.9,
+      "text": "咱们这个硕子币在实体交易的一个运行"
+    },
+    {
+      "avg_logprob": -0.115059,
+      "compression_ratio": 1.371622,
+      "end": 9694.1,
+      "no_speech_prob": 0.0,
+      "start": 9690.84,
+      "text": "也避免了第三方的监管或者掠夺"
+    },
+    {
+      "avg_logprob": -0.234836,
+      "compression_ratio": 1.280632,
+      "end": 9697.44,
+      "no_speech_prob": 0.0,
+      "start": 9694.1,
+      "text": "它是没有物理行为去中心化的一个加密"
+    },
+    {
+      "avg_logprob": -0.234836,
+      "compression_ratio": 1.280632,
+      "end": 9698.84,
+      "no_speech_prob": 0.0,
+      "start": 9697.44,
+      "text": "这个支付系统"
+    },
+    {
+      "avg_logprob": -0.234836,
+      "compression_ratio": 1.280632,
+      "end": 9701.44,
+      "no_speech_prob": 0.0,
+      "start": 9698.84,
+      "text": "真正可以说做到了支付无国界"
+    },
+    {
+      "avg_logprob": -0.234836,
+      "compression_ratio": 1.280632,
+      "end": 9703.74,
+      "no_speech_prob": 0.0,
+      "start": 9701.44,
+      "text": "我相信它会刺激更多的"
+    },
+    {
+      "avg_logprob": -0.234836,
+      "compression_ratio": 1.280632,
+      "end": 9705.58,
+      "no_speech_prob": 0.0,
+      "start": 9703.74,
+      "text": "有松的力量来加入进来"
+    },
+    {
+      "avg_logprob": -0.234836,
+      "compression_ratio": 1.280632,
+      "end": 9708.44,
+      "no_speech_prob": 0.0,
+      "start": 9705.58,
+      "text": "那其实像今天咱们坐在这边的"
+    },
+    {
+      "avg_logprob": -0.234836,
+      "compression_ratio": 1.280632,
+      "end": 9709.44,
+      "no_speech_prob": 0.0,
+      "start": 9708.44,
+      "text": "飞飞人羞"
+    },
+    {
+      "avg_logprob": -0.234836,
+      "compression_ratio": 1.280632,
+      "end": 9712.56,
+      "no_speech_prob": 0.0,
+      "start": 9709.44,
+      "text": "你可能看到咱们现在这两个帅哥"
+    },
+    {
+      "avg_logprob": -0.234836,
+      "compression_ratio": 1.280632,
+      "end": 9714.78,
+      "no_speech_prob": 0.0,
+      "start": 9712.56,
+      "text": "那我想如果说"
+    },
+    {
+      "avg_logprob": -0.234836,
+      "compression_ratio": 1.280632,
+      "end": 9719.22,
+      "no_speech_prob": 0.0,
+      "start": 9714.78,
+      "text": "咱们的文空它拥有全世界所有的币"
+    },
+    {
+      "avg_logprob": -0.218549,
+      "compression_ratio": 1.300885,
+      "end": 9723.56,
+      "no_speech_prob": 0.0,
+      "start": 9719.22,
+      "text": "美元 日元 欧元 什么比特币 狗币 火币什么的"
+    },
+    {
+      "avg_logprob": -0.218549,
+      "compression_ratio": 1.300885,
+      "end": 9724.96,
+      "no_speech_prob": 0.0,
+      "start": 9723.56,
+      "text": "咱们的文宾呢"
+    },
+    {
+      "avg_logprob": -0.218549,
+      "compression_ratio": 1.300885,
+      "end": 9726.36,
+      "no_speech_prob": 0.0,
+      "start": 9724.96,
+      "text": "但它没有其他东西"
+    },
+    {
+      "avg_logprob": -0.218549,
+      "compression_ratio": 1.300885,
+      "end": 9727.26,
+      "no_speech_prob": 0.0,
+      "start": 9726.36,
+      "text": "咱们的文宾呢"
+    },
+    {
+      "avg_logprob": -0.218549,
+      "compression_ratio": 1.300885,
+      "end": 9730.86,
+      "no_speech_prob": 0.0,
+      "start": 9727.26,
+      "text": "它拥有全世界所有的食物的财富"
+    },
+    {
+      "avg_logprob": -0.218549,
+      "compression_ratio": 1.300885,
+      "end": 9734.56,
+      "no_speech_prob": 0.0,
+      "start": 9730.86,
+      "text": "什么好吃 豪宅 弯流 大金链子 金银珠宝什么的"
+    },
+    {
+      "avg_logprob": -0.218549,
+      "compression_ratio": 1.300885,
+      "end": 9736.56,
+      "no_speech_prob": 0.0,
+      "start": 9734.56,
+      "text": "高档衣服这些财富"
+    },
+    {
+      "avg_logprob": -0.218549,
+      "compression_ratio": 1.300885,
+      "end": 9740.68,
+      "no_speech_prob": 0.0,
+      "start": 9736.56,
+      "text": "那你会觉得它两人谁是真正的富豪呢"
+    },
+    {
+      "avg_logprob": -0.65816,
+      "compression_ratio": 1.211009,
+      "end": 9747.68,
+      "no_speech_prob": 0.0,
+      "start": 9740.68,
+      "text": "我觉得肯定是文宾的"
+    },
+    {
+      "avg_logprob": -0.65816,
+      "compression_ratio": 1.211009,
+      "end": 9751.92,
+      "no_speech_prob": 0.0,
+      "start": 9747.68,
+      "text": "我超长得好看的"
+    },
+    {
+      "avg_logprob": -0.65816,
+      "compression_ratio": 1.211009,
+      "end": 9753.42,
+      "no_speech_prob": 0.0,
+      "start": 9751.92,
+      "text": "那那飞飞说长得好看的"
+    },
+    {
+      "avg_logprob": -0.65816,
+      "compression_ratio": 1.211009,
+      "end": 9754.82,
+      "no_speech_prob": 0.0,
+      "start": 9753.42,
+      "text": "你还是哪一个"
+    },
+    {
+      "avg_logprob": -0.65816,
+      "compression_ratio": 1.211009,
+      "end": 9761.14,
+      "no_speech_prob": 0.0,
+      "start": 9754.82,
+      "text": "其实我觉得"
+    },
+    {
+      "avg_logprob": -0.65816,
+      "compression_ratio": 1.211009,
+      "end": 9765.24,
+      "no_speech_prob": 0.0,
+      "start": 9761.14,
+      "text": "我觉得"
+    },
+    {
+      "avg_logprob": -0.65816,
+      "compression_ratio": 1.211009,
+      "end": 9767.94,
+      "no_speech_prob": 0.0,
+      "start": 9765.24,
+      "text": "你们在听"
+    },
+    {
+      "avg_logprob": -0.28027,
+      "compression_ratio": 1.328185,
+      "end": 9770.64,
+      "no_speech_prob": 0.0,
+      "start": 9767.94,
+      "text": "我觉得应该是文空嘛"
+    },
+    {
+      "avg_logprob": -0.28027,
+      "compression_ratio": 1.328185,
+      "end": 9774.84,
+      "no_speech_prob": 0.0,
+      "start": 9770.64,
+      "text": "因为比如说像现在比如说有疫苗灾难什么"
+    },
+    {
+      "avg_logprob": -0.28027,
+      "compression_ratio": 1.328185,
+      "end": 9776.24,
+      "no_speech_prob": 0.0,
+      "start": 9774.84,
+      "text": "灾难来年的时候"
+    },
+    {
+      "avg_logprob": -0.28027,
+      "compression_ratio": 1.328185,
+      "end": 9778.28,
+      "no_speech_prob": 0.0,
+      "start": 9776.24,
+      "text": "那文空拥有着好多币呀"
+    },
+    {
+      "avg_logprob": -0.28027,
+      "compression_ratio": 1.328185,
+      "end": 9779.18,
+      "no_speech_prob": 0.0,
+      "start": 9778.28,
+      "text": "它可以买很多"
+    },
+    {
+      "avg_logprob": -0.28027,
+      "compression_ratio": 1.328185,
+      "end": 9780.98,
+      "no_speech_prob": 0.0,
+      "start": 9779.18,
+      "text": "它有钱什么都可以买到"
+    },
+    {
+      "avg_logprob": -0.28027,
+      "compression_ratio": 1.328185,
+      "end": 9784.46,
+      "no_speech_prob": 0.0,
+      "start": 9780.98,
+      "text": "那个像我们的文明"
+    },
+    {
+      "avg_logprob": -0.28027,
+      "compression_ratio": 1.328185,
+      "end": 9786.02,
+      "no_speech_prob": 0.0,
+      "start": 9784.46,
+      "text": "它有那么多的东西"
+    },
+    {
+      "avg_logprob": -0.28027,
+      "compression_ratio": 1.328185,
+      "end": 9787.36,
+      "no_speech_prob": 0.0,
+      "start": 9786.02,
+      "text": "好吃 好窄 弯流"
+    },
+    {
+      "avg_logprob": -0.28027,
+      "compression_ratio": 1.328185,
+      "end": 9788.82,
+      "no_speech_prob": 0.0,
+      "start": 9787.36,
+      "text": "它没有流通货币"
+    },
+    {
+      "avg_logprob": -0.28027,
+      "compression_ratio": 1.328185,
+      "end": 9790.6,
+      "no_speech_prob": 0.0,
+      "start": 9788.82,
+      "text": "然后吃都吃完了"
+    },
+    {
+      "avg_logprob": -0.28027,
+      "compression_ratio": 1.328185,
+      "end": 9792.46,
+      "no_speech_prob": 0.0,
+      "start": 9790.6,
+      "text": "饿在家里怎么办呢"
+    },
+    {
+      "avg_logprob": -0.28027,
+      "compression_ratio": 1.328185,
+      "end": 9794.2,
+      "no_speech_prob": 0.0,
+      "start": 9792.46,
+      "text": "对吧"
+    },
+    {
+      "avg_logprob": -0.28027,
+      "compression_ratio": 1.328185,
+      "end": 9797.1,
+      "no_speech_prob": 0.0,
+      "start": 9794.2,
+      "text": "长得好看不想用了"
+    },
+    {
+      "avg_logprob": -0.24848,
+      "compression_ratio": 1.554054,
+      "end": 9799.8,
+      "no_speech_prob": 0.0,
+      "start": 9797.1,
+      "text": "靠脸吃分"
+    },
+    {
+      "avg_logprob": -0.24848,
+      "compression_ratio": 1.554054,
+      "end": 9800.8,
+      "no_speech_prob": 0.0,
+      "start": 9799.8,
+      "text": "靠脸吃分"
+    },
+    {
+      "avg_logprob": -0.24848,
+      "compression_ratio": 1.554054,
+      "end": 9804.0,
+      "no_speech_prob": 0.0,
+      "start": 9800.8,
+      "text": "所以就是说这个货币的流通"
+    },
+    {
+      "avg_logprob": -0.24848,
+      "compression_ratio": 1.554054,
+      "end": 9805.4,
+      "no_speech_prob": 0.0,
+      "start": 9804.0,
+      "text": "还有它的交易量"
+    },
+    {
+      "avg_logprob": -0.24848,
+      "compression_ratio": 1.554054,
+      "end": 9807.44,
+      "no_speech_prob": 0.0,
+      "start": 9805.4,
+      "text": "还有让更多的人来使用它"
+    },
+    {
+      "avg_logprob": -0.24848,
+      "compression_ratio": 1.554054,
+      "end": 9809.54,
+      "no_speech_prob": 0.0,
+      "start": 9807.44,
+      "text": "是那个非常非常重要的"
+    },
+    {
+      "avg_logprob": -0.24848,
+      "compression_ratio": 1.554054,
+      "end": 9812.44,
+      "no_speech_prob": 0.0,
+      "start": 9809.54,
+      "text": "这个中大这个咱们说的货币的交易量"
+    },
+    {
+      "avg_logprob": -0.24848,
+      "compression_ratio": 1.554054,
+      "end": 9815.96,
+      "no_speech_prob": 0.0,
+      "start": 9812.44,
+      "text": "还有让更多的人来深度的大范围的"
+    },
+    {
+      "avg_logprob": -0.24848,
+      "compression_ratio": 1.554054,
+      "end": 9816.86,
+      "no_speech_prob": 0.0,
+      "start": 9815.96,
+      "text": "来广泛的使用"
+    },
+    {
+      "avg_logprob": -0.24848,
+      "compression_ratio": 1.554054,
+      "end": 9819.32,
+      "no_speech_prob": 0.0,
+      "start": 9816.86,
+      "text": "让参与的人越来越多"
+    },
+    {
+      "avg_logprob": -0.24848,
+      "compression_ratio": 1.554054,
+      "end": 9821.36,
+      "no_speech_prob": 0.0,
+      "start": 9819.32,
+      "text": "然后这个币的这个价格它也会"
+    },
+    {
+      "avg_logprob": -0.24848,
+      "compression_ratio": 1.554054,
+      "end": 9824.0,
+      "no_speech_prob": 0.0,
+      "start": 9821.36,
+      "text": "那个相对的更稳定"
+    },
+    {
+      "avg_logprob": -0.118823,
+      "compression_ratio": 1.448276,
+      "end": 9828.9,
+      "no_speech_prob": 0.0,
+      "start": 9824.0,
+      "text": "其实像那个比特币它当时能引起来咱们大众的关注"
+    },
+    {
+      "avg_logprob": -0.118823,
+      "compression_ratio": 1.448276,
+      "end": 9830.9,
+      "no_speech_prob": 0.0,
+      "start": 9828.9,
+      "text": "就是因为它的第一笔"
+    },
+    {
+      "avg_logprob": -0.118823,
+      "compression_ratio": 1.448276,
+      "end": 9833.14,
+      "no_speech_prob": 0.0,
+      "start": 9830.9,
+      "text": "当时在生活中重交的一个交易"
+    },
+    {
+      "avg_logprob": -0.118823,
+      "compression_ratio": 1.448276,
+      "end": 9835.98,
+      "no_speech_prob": 0.0,
+      "start": 9833.14,
+      "text": "才引发的那个大家的一个关注"
+    },
+    {
+      "avg_logprob": -0.118823,
+      "compression_ratio": 1.448276,
+      "end": 9838.02,
+      "no_speech_prob": 0.0,
+      "start": 9835.98,
+      "text": "所以你说美元是钱"
+    },
+    {
+      "avg_logprob": -0.118823,
+      "compression_ratio": 1.448276,
+      "end": 9839.24,
+      "no_speech_prob": 0.0,
+      "start": 9838.02,
+      "text": "然后金银财宝是钱"
+    },
+    {
+      "avg_logprob": -0.118823,
+      "compression_ratio": 1.448276,
+      "end": 9840.94,
+      "no_speech_prob": 0.0,
+      "start": 9839.24,
+      "text": "它们为什么能成为钱"
+    },
+    {
+      "avg_logprob": -0.118823,
+      "compression_ratio": 1.448276,
+      "end": 9842.36,
+      "no_speech_prob": 0.0,
+      "start": 9840.94,
+      "text": "就是因为它们有价值"
+    },
+    {
+      "avg_logprob": -0.118823,
+      "compression_ratio": 1.448276,
+      "end": 9844.48,
+      "no_speech_prob": 0.0,
+      "start": 9842.36,
+      "text": "或者说它们有那个政府的背书"
+    },
+    {
+      "avg_logprob": -0.118823,
+      "compression_ratio": 1.448276,
+      "end": 9846.22,
+      "no_speech_prob": 0.0,
+      "start": 9844.48,
+      "text": "但是有价值的东西多了"
+    },
+    {
+      "avg_logprob": -0.118823,
+      "compression_ratio": 1.448276,
+      "end": 9848.26,
+      "no_speech_prob": 0.0,
+      "start": 9846.22,
+      "text": "为什么只有这些品种成为了钱"
+    },
+    {
+      "avg_logprob": -0.118823,
+      "compression_ratio": 1.448276,
+      "end": 9850.62,
+      "no_speech_prob": 0.0,
+      "start": 9848.26,
+      "text": "那答案其实我们都很容易想到"
+    },
+    {
+      "avg_logprob": -0.167278,
+      "compression_ratio": 1.5,
+      "end": 9852.82,
+      "no_speech_prob": 0.0,
+      "start": 9850.62,
+      "text": "因为人民普遍认同它的价值"
+    },
+    {
+      "avg_logprob": -0.167278,
+      "compression_ratio": 1.5,
+      "end": 9854.86,
+      "no_speech_prob": 0.0,
+      "start": 9852.82,
+      "text": "其他的东西就是越来越价值"
+    },
+    {
+      "avg_logprob": -0.167278,
+      "compression_ratio": 1.5,
+      "end": 9857.52,
+      "no_speech_prob": 0.0,
+      "start": 9854.86,
+      "text": "它很难读到大家就是普遍的认同"
+    },
+    {
+      "avg_logprob": -0.167278,
+      "compression_ratio": 1.5,
+      "end": 9859.52,
+      "no_speech_prob": 0.0,
+      "start": 9857.52,
+      "text": "就是它就没办法成为钱"
+    },
+    {
+      "avg_logprob": -0.167278,
+      "compression_ratio": 1.5,
+      "end": 9861.26,
+      "no_speech_prob": 0.0,
+      "start": 9859.52,
+      "text": "你比如说像邮票的价值"
+    },
+    {
+      "avg_logprob": -0.167278,
+      "compression_ratio": 1.5,
+      "end": 9862.76,
+      "no_speech_prob": 0.0,
+      "start": 9861.26,
+      "text": "它就没有普遍的认同"
+    },
+    {
+      "avg_logprob": -0.167278,
+      "compression_ratio": 1.5,
+      "end": 9863.94,
+      "no_speech_prob": 0.0,
+      "start": 9862.76,
+      "text": "除了极有爱好者"
+    },
+    {
+      "avg_logprob": -0.167278,
+      "compression_ratio": 1.5,
+      "end": 9865.56,
+      "no_speech_prob": 0.0,
+      "start": 9863.94,
+      "text": "其他地方它不能当前硬"
+    },
+    {
+      "avg_logprob": -0.167278,
+      "compression_ratio": 1.5,
+      "end": 9867.78,
+      "no_speech_prob": 0.0,
+      "start": 9865.56,
+      "text": "那一般来说你认同的人越多"
+    },
+    {
+      "avg_logprob": -0.167278,
+      "compression_ratio": 1.5,
+      "end": 9869.94,
+      "no_speech_prob": 0.0,
+      "start": 9867.78,
+      "text": "这种钱的价值它就会越高"
+    },
+    {
+      "avg_logprob": -0.167278,
+      "compression_ratio": 1.5,
+      "end": 9872.14,
+      "no_speech_prob": 0.0,
+      "start": 9869.94,
+      "text": "就像人民币它离开了中国"
+    },
+    {
+      "avg_logprob": -0.167278,
+      "compression_ratio": 1.5,
+      "end": 9873.54,
+      "no_speech_prob": 0.0,
+      "start": 9872.14,
+      "text": "就没人相信它的购买力"
+    },
+    {
+      "avg_logprob": -0.167278,
+      "compression_ratio": 1.5,
+      "end": 9876.18,
+      "no_speech_prob": 0.0,
+      "start": 9873.54,
+      "text": "那全世界呢都相信美元的价值"
+    },
+    {
+      "avg_logprob": -0.172094,
+      "compression_ratio": 1.367089,
+      "end": 9880.22,
+      "no_speech_prob": 0.0,
+      "start": 9876.18,
+      "text": "所以全世界人就是都会愿意适应它"
+    },
+    {
+      "avg_logprob": -0.172094,
+      "compression_ratio": 1.367089,
+      "end": 9882.76,
+      "no_speech_prob": 0.0,
+      "start": 9880.22,
+      "text": "它在全世界的地位是非常高的"
+    },
+    {
+      "avg_logprob": -0.172094,
+      "compression_ratio": 1.367089,
+      "end": 9884.72,
+      "no_speech_prob": 0.0,
+      "start": 9882.76,
+      "text": "那我记得前几天就是"
+    },
+    {
+      "avg_logprob": -0.172094,
+      "compression_ratio": 1.367089,
+      "end": 9886.5,
+      "no_speech_prob": 0.0,
+      "start": 9884.72,
+      "text": "我们有个群里有个战友"
+    },
+    {
+      "avg_logprob": -0.172094,
+      "compression_ratio": 1.367089,
+      "end": 9887.96,
+      "no_speech_prob": 0.0,
+      "start": 9886.5,
+      "text": "好像是一个哪个战友"
+    },
+    {
+      "avg_logprob": -0.172094,
+      "compression_ratio": 1.367089,
+      "end": 9889.16,
+      "no_speech_prob": 0.0,
+      "start": 9887.96,
+      "text": "他当时说的非常好"
+    },
+    {
+      "avg_logprob": -0.172094,
+      "compression_ratio": 1.367089,
+      "end": 9892.26,
+      "no_speech_prob": 0.0,
+      "start": 9889.16,
+      "text": "他说如果大家都不去适应的话"
+    },
+    {
+      "avg_logprob": -0.172094,
+      "compression_ratio": 1.367089,
+      "end": 9894.04,
+      "no_speech_prob": 0.0,
+      "start": 9892.26,
+      "text": "那么四面上流通的货币量"
+    },
+    {
+      "avg_logprob": -0.172094,
+      "compression_ratio": 1.367089,
+      "end": 9895.76,
+      "no_speech_prob": 0.0,
+      "start": 9894.04,
+      "text": "它就会很少"
+    },
+    {
+      "avg_logprob": -0.172094,
+      "compression_ratio": 1.367089,
+      "end": 9899.34,
+      "no_speech_prob": 0.0,
+      "start": 9895.76,
+      "text": "那也就是传说的那种就是通货紧缩"
+    },
+    {
+      "avg_logprob": -6.663403,
+      "compression_ratio": 0.775,
+      "end": 9900.48,
+      "no_speech_prob": 0.0,
+      "start": 9899.34,
+      "text": "ども吸引出来"
+    },
+    {
+      "avg_logprob": -6.663403,
+      "compression_ratio": 0.775,
+      "end": 9903.84,
+      "no_speech_prob": 0.0,
+      "start": 9900.48,
+      "text": "nett rejoice"
+    }
+  ],
+  "text": "他在这个在他达到这个P7岗位之前的时候他是买了这个300万的房子然后在这个这个杭州他当时的时候就是两口子加在一起然后每个每年的年收入大概有个几十万二三十万他们还那个房子觉得还是可以的所以他们一直在供这个房子等到他到了P7这个岗位的时候他跟他老婆的年薪基本上除了税后之外大概能达到60万所以那个时候他就觉得他的生活条件可以去改善一下他就买了一个1000万的房子把他现在这个房子卖掉了把他每个月去供这个1000万的房子结果就是因为这次大厂裁员的时候他被裁掉了突然间家里面的经济全都断了这个时候他就想要说这个房子我肯定是供不起的这个供不起的时候我就要去卖房子了他卖房子的时候就发现这个房子已经不止原来的1000万了只能卖出700万那这样的话他原来贷款的时候贷款额就已经达到了700万所以这就是他这个房子已经供不应求已经供不上了而且他这个即使是把他房子现在处理掉的话他也是相当于一分钱也没有回到了他最开始进哪里之前的那个状态就是又没有工作又没有存款又没有房所以一切都回到了原点而这个时候他家里面这个有了老婆有了孩子而且还有好几个孩子所以这个时候他的这个负担是很重的这个事情我们不去讨论他的真实性但是这样的事情我相信绝对会发生的而且这个道理是相通的真的是有可能发生这样的事情的所以那个时候的话很多人是走投无路的而且是所有的这些年的薪水都会付出东流的而在这个情况下呢我们这些人除了这些大厂的裁员之外不要以为这些小厂就没有没有问题了这所谓大厂裁员小厂事业就是因为大厂的这些人会自降身段的他会到这些小厂就像那个那个马云一直说的哈马云说每年我们财掉的人就是为社会做贡献的为了社会诉讼那个优质人才把这个裁员说的非常的这个冠冕堂皇所以这些人到了社会上之后他会降低自己的身价的然后你所有这些小厂的老板们他如果是雇这样的人的话又便宜了而且就是能力又比你强而且他的精力又多的话那小厂的员工自然而然就会被莫为淘汰掉那这样的话就是一层一层的再往下传达所以就是为什么说大厂太远小厂在失眠所以每一个人都是在这个链条里面逃不掉的所以在这种情况下的话我想说上次直播的时候我说我这个不成不强的性格可以得到了很多现在已经得到了很多然后很多人说我是幸运的其实我想说我们每一个能够看到七个大直播不用你参加爆料每一个看到大直播的人看到七个爆料的人你都是幸运的这个幸运摆在每个人的面前幸不幸运主要是在于你选不选择你选择了相信你选择了跟随去听这些这些七个的劝导的话那你现在就可以在这场比如说裁员或者是在这个房地产崩塌这个时候你可以把手里面的房产提前处理掉我相信我们爆料革命真正相信七个的人每一个人的手里面把大直的房产都已经处理掉了资产都处理掉了那这样的话我们不光是躲避了这一层而且我们无描我们要是用这些钱再去买了币再去投资了G系列的话现在在这场风波当中我们是最安稳的一群人所以机会一直都是在那里只是你选不选择而已所以这就是我一直想说的就是我们不是说光是某一个人或者我们出境的这些人幸运而是我们所有的这些战友所有的人你们我们这个直播是放在网上的是可以公开的不是在一个小团体范围内所以每个人都有机会接触这些而接触到了选不选择甚至有的人像陆大头这样的还选择去跟我们相组跟我们去做对抗的那一点办法也没有所以这个真正的机会摆在每个人的面前希望每个人都可以珍惜的好 针对这个话题我们各位嘉宾还有什么需要分享的吗好的 非常感谢讲一下这个话题没有就回应一下这个没关系我是想回应一下Rachel的这个对 我想回应一下Rachel的关于这个PAG的事情我是觉得说这个善伟健啊就是当人家都是有钱人对吧当人家问郭文人你追求什么东西郭文人会说我追求中国人的民族自由和信仰然后这个人家问善伟健你追求什么我追求钱和女人我觉得高下立线啊然后就一个就会被真的人家重新抵发出来的这种尊敬一个就是真的善伟健这个就是垃圾我觉得PAG就是垃圾OK好的那我们这个就进行下一个话题我们下一个话题是我们关于这个HP在GFashion上的这个应用程序的一个演示然后这个话题我们有请非常丰富的经验丰富的这个菲菲女士给我们讲解一下这个PPT好谢谢我也是刚刚看到这个PPT我也没有丰富的经验就刚刚买过一次先是说是撰稿是小福利然后文学然后美工是Maggie书法是沙漠之花好下业嗯对这一步对吧大家很多人都找不到这一步就是你点了这个衣服他先会其实会先跳出来一个支付界面然后呢你一直要 continue continue continue然后到把你所有的那个就是运输信息全部弄好了然后这里会跳出来一个HP然后你就点这个HP下一页嗯这里其实我出来的时候他会有一个小的滚动条然后那个滚动条会pop out出来就是呃这个二维码因为你点了那个HP以后他会就告诉你一句话你说让你去拿那个手机的那个二维码手机的HP去扫这个二维码然后你一扫扫完你的支付就完成了嗯下一页对对对就拿这个二维码这个点一下然后去扫一下用那个账上去去拍一下就完成了嗯就完成了好了没了哎对你这里会看到这个扣款的这个记录啊什么的然后就完成了反正就很快这个我觉得我们应该都搞明白用HP付款对喜币的重要意义是HP全面进入集发行支付标志着喜币真正进入集生态嗯的流通领域然后HDO不用换成美元直接零成本秒到之呃账支付有利于HDO资金池的稳定有利于喜币的价格然后30货币的价值在于流通HDO的交易额会百倍反映到喜币的价值上好好下一页谢谢啊感谢殷喜农场DC农场蜜番和香草山嗯主持人好的非常感谢飞飞对然后那个我刚才看到确实有战友在提醒哈就是每次这个我们七哥大直播的时候在12点之前要有一个祈祷的这个仪式哈这个我们虽然第一次没有七哥的大直播但是我们这个传统也不要忘掉然后我们在这个12点之前然后我们先做一个祈祷祈祷我们保佑全世界的这个我们的华人然后包括保佑我们前线的这些战友然后保佑我们每一个为正义世界在不断奋斗的人好谢谢大家我们一起祈祷嗯好的其实刚才我在PP之前我想说但是我可能避麦了然后我发现我说话声音传不出去对我也想着问题了现在是11点37分那我们一起来为我们75亿的全世界的同胞为我们14亿的中国同胞为在救援前线的所有的战友所有的战友和他们的家人还有乌克兰所有的人们还有在俄乌战争中受到伤害的所有的全球的同胞为我们台湾香港西藏和新疆的同胞祈福好�好好好好好好好好好好好好好好 communication好好阿彌陀佛谢谢大家好的 非常感谢我们这个祈福一事完事然后我们现在有请入水女士给我们讲解一下这个PPT谢谢好的 谢谢因为看到这个PPT就是说到我们这个席然后说到它的支付这一块那就是从我们从货币来谈大家都知道这个传统的货币它定义为它是具有三个功能的一个这个交易的媒介然后记账单位还有它的价值储藏那席币作为我们的货币它也要充当一个交换的媒介记账单位还有这个价值的储藏的功能那么你在购买这个Defense的过程中它的运作方式就类似于这个实际的货币就像那种有法律地位的一些货币在流通中使用并且可以作为一个交换媒介的那种货币的一个广泛的使用这样它就增加了这个洗币和洗美元的功能也提供了咱们洗币的一个内在的一个价值那洗币呢可以在使用者之间是进行交易的并且同时它场外也可以是与像美元呀欧元或者像其他的一些法币进行兑换的那现在我们大家都知道了像这个HPay咱们的HPay咱们的洗币已经在和这个Defense还有包括咱们GClub都已经在无缝对接了那么这一个对接其实它就打通了这个硕子货币的一个实体的交易和流通也为咱们这个洗币下一步成为这个国际的货币迈出了一个非常坚实的基础其实我们大家都知道咱们的这个洗币一个中心化的管理还有去中心化的这个加密技术保证了它的安全和隐私也杜绝了违法的这个洗钱的这种行为尤其是咱们20%的这个黄金锚定那现在它和咱们G松菜圈的像G繁衡GClub那我相信还有这个未来的像G毛G物流G保险还有后续更多的会和我们合作的一些和合作的一些商家的那些商业的活动来支撑它的价值那它的这个它的这个前景是非常无限的七哥其实一直在强调了咱们的洗币的铜飞它是那个有三个因素的那即将发送的就是我们未来我们也很期待的那即将就会应该会发送就是一些主权国家的认可然后大额投资和这个HPay咱们洗支付的一个全面实用然后HPay在G翻上的就是目前在G翻上的应用已经表明了这个虚拟咱们这个硕子币在实体交易的一个运行也避免了第三方的监管或者掠夺它是没有物理行为去中心化的一个加密这个支付系统真正可以说做到了支付无国界我相信它会刺激更多的有松的力量来加入进来那其实像今天咱们坐在这边的飞飞人羞你可能看到咱们现在这两个帅哥那我想如果说咱们的文空它拥有全世界所有的币美元 日元 欧元 什么比特币 狗币 火币什么的咱们的文宾呢但它没有其他东西咱们的文宾呢它拥有全世界所有的食物的财富什么好吃 豪宅 弯流 大金链子 金银珠宝什么的高档衣服这些财富那你会觉得它两人谁是真正的富豪呢我觉得肯定是文宾的我超长得好看的那那飞飞说长得好看的你还是哪一个其实我觉得我觉得你们在听我觉得应该是文空嘛因为比如说像现在比如说有疫苗灾难什么灾难来年的时候那文空拥有着好多币呀它可以买很多它有钱什么都可以买到那个像我们的文明它有那么多的东西好吃 好窄 弯流它没有流通货币然后吃都吃完了饿在家里怎么办呢对吧长得好看不想用了靠脸吃分靠脸吃分所以就是说这个货币的流通还有它的交易量还有让更多的人来使用它是那个非常非常重要的这个中大这个咱们说的货币的交易量还有让更多的人来深度的大范围的来广泛的使用让参与的人越来越多然后这个币的这个价格它也会那个相对的更稳定其实像那个比特币它当时能引起来咱们大众的关注就是因为它的第一笔当时在生活中重交的一个交易才引发的那个大家的一个关注所以你说美元是钱然后金银财宝是钱它们为什么能成为钱就是因为它们有价值或者说它们有那个政府的背书但是有价值的东西多了为什么只有这些品种成为了钱那答案其实我们都很容易想到因为人民普遍认同它的价值其他的东西就是越来越价值它很难读到大家就是普遍的认同就是它就没办法成为钱你比如说像邮票的价值它就没有普遍的认同除了极有爱好者其他地方它不能当前硬那一般来说你认同的人越多这种钱的价值它就会越高就像人民币它离开了中国就没人相信它的购买力那全世界呢都相信美元的价值所以全世界人就是都会愿意适应它它在全世界的地位是非常高的那我记得前几天就是我们有个群里有个战友好像是一个哪个战友他当时说的非常好他说如果大家都不去适应的话那么四面上流通的货币量它就会很少那也就是传说的那种就是通货紧缩ども吸引出来 nett rejoice"
+}

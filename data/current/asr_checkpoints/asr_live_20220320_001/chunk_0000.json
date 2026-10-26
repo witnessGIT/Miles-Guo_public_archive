@@ -1,0 +1,2384 @@
+{
+  "chunk_audio_sha256": "377523a2f31b7acf1f42df899a946bcb43b566c1f6c75a0c9bfde822162e424b",
+  "chunk_index": 0,
+  "completed_at": "2026-10-26T01:19:16Z",
+  "language": "zh",
+  "live_id": "LIVE_20220320_001",
+  "media_committed_to_git": false,
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "offset_sec": 0,
+  "paid_api_used": false,
+  "processing_location": "github-hosted-macos-arm64",
+  "schema_version": "cloud-asr-chunk-v1",
+  "segments": [
+    {
+      "avg_logprob": -0.479965,
+      "compression_ratio": 0.694444,
+      "end": 29.98,
+      "no_speech_prob": 0.0,
+      "start": 0.0,
+      "text": "字幕志愿者 李宗盛"
+    },
+    {
+      "avg_logprob": -0.147929,
+      "compression_ratio": 1.58457,
+      "end": 34.48,
+      "no_speech_prob": 0.0,
+      "start": 29.98,
+      "text": "It's been headlines for a while, but it hasn't gone away. Far from it, as new data shows."
+    },
+    {
+      "avg_logprob": -0.147929,
+      "compression_ratio": 1.58457,
+      "end": 39.02,
+      "no_speech_prob": 0.0,
+      "start": 34.82,
+      "text": "According to the latest results from the Office for National Statistics Infection Survey,"
+    },
+    {
+      "avg_logprob": -0.147929,
+      "compression_ratio": 1.58457,
+      "end": 44.82,
+      "no_speech_prob": 0.0,
+      "start": 39.34,
+      "text": "more than three and a quarter million people in the UK had COVID in the week ending March the 12th."
+    },
+    {
+      "avg_logprob": -0.147929,
+      "compression_ratio": 1.58457,
+      "end": 47.38,
+      "no_speech_prob": 0.0,
+      "start": 45.02,
+      "text": "That's about one in every 21 people."
+    },
+    {
+      "avg_logprob": -0.147929,
+      "compression_ratio": 1.58457,
+      "end": 51.1,
+      "no_speech_prob": 0.0,
+      "start": 47.72,
+      "text": "And after a steady fall in cases in the first two months of the year,"
+    },
+    {
+      "avg_logprob": -0.147929,
+      "compression_ratio": 1.58457,
+      "end": 55.62,
+      "no_speech_prob": 0.0,
+      "start": 51.32,
+      "text": "the prevalence has been increasing through March, and the O number is rising too."
+    },
+    {
+      "avg_logprob": -0.147929,
+      "compression_ratio": 1.58457,
+      "end": 57.08,
+      "no_speech_prob": 0.0,
+      "start": 55.84,
+      "text": "So what's going on?"
+    },
+    {
+      "avg_logprob": -0.147929,
+      "compression_ratio": 1.58457,
+      "end": 59.84,
+      "no_speech_prob": 0.0,
+      "start": 57.08,
+      "text": "Well, for a start, our behaviour has relaxed."
+    },
+    {
+      "avg_logprob": -0.104655,
+      "compression_ratio": 1.559387,
+      "end": 64.44,
+      "no_speech_prob": 0.0,
+      "start": 59.98,
+      "text": "The lifting of Plan B at the end of January led to a decline in face masks,"
+    },
+    {
+      "avg_logprob": -0.104655,
+      "compression_ratio": 1.559387,
+      "end": 68.02,
+      "no_speech_prob": 0.0,
+      "start": 64.58,
+      "text": "lateral flow tests, social distancing and self-isolation."
+    },
+    {
+      "avg_logprob": -0.104655,
+      "compression_ratio": 1.559387,
+      "end": 70.9,
+      "no_speech_prob": 0.0,
+      "start": 68.38,
+      "text": "And those trends accelerated at the end of February,"
+    },
+    {
+      "avg_logprob": -0.104655,
+      "compression_ratio": 1.559387,
+      "end": 74.4,
+      "no_speech_prob": 0.0,
+      "start": 70.94,
+      "text": "when the Prime Minister outlined his plan to live with COVID."
+    },
+    {
+      "avg_logprob": -0.104655,
+      "compression_ratio": 1.559387,
+      "end": 77.86,
+      "no_speech_prob": 0.0,
+      "start": 74.86,
+      "text": "And that all gives the virus more opportunities to spread."
+    },
+    {
+      "avg_logprob": -0.104655,
+      "compression_ratio": 1.559387,
+      "end": 80.26,
+      "no_speech_prob": 0.0,
+      "start": 78.2,
+      "text": "But the virus has changed too."
+    },
+    {
+      "avg_logprob": -0.104655,
+      "compression_ratio": 1.559387,
+      "end": 85.14,
+      "no_speech_prob": 0.0,
+      "start": 80.7,
+      "text": "At the start of the year, the original Omicron variant, called BA.1,"
+    },
+    {
+      "avg_logprob": -0.237155,
+      "compression_ratio": 1.298013,
+      "end": 87.74,
+      "no_speech_prob": 0.0,
+      "start": 85.14,
+      "text": "accounted for almost all COVID cases."
+    },
+    {
+      "avg_logprob": -0.237155,
+      "compression_ratio": 1.298013,
+      "end": 93.84,
+      "no_speech_prob": 0.0,
+      "start": 87.74,
+      "text": "But in mid-February, its closely related spin-off called BA.2, here in light blue,"
+    },
+    {
+      "avg_logprob": -0.237155,
+      "compression_ratio": 1.298013,
+      "end": 100.04,
+      "no_speech_prob": 0.0,
+      "start": 93.98,
+      "text": "began to take off and take over, now accounting for more than 75% of cases."
+    },
+    {
+      "avg_logprob": -0.281204,
+      "compression_ratio": 1.458763,
+      "end": 105.14,
+      "no_speech_prob": 0.0,
+      "start": 100.04,
+      "text": "The two viruses are so similar, some scientists call it sister variants."
+    },
+    {
+      "avg_logprob": -0.281204,
+      "compression_ratio": 1.458763,
+      "end": 110.04,
+      "no_speech_prob": 0.0,
+      "start": 105.5,
+      "text": "But BA.2 is 1.4 times more infectious."
+    },
+    {
+      "avg_logprob": -0.281204,
+      "compression_ratio": 1.458763,
+      "end": 115.2,
+      "no_speech_prob": 0.0,
+      "start": 110.7,
+      "text": "And that's a fucking booster that's driving up cases here in the UK,"
+    },
+    {
+      "avg_logprob": -0.281204,
+      "compression_ratio": 1.458763,
+      "end": 117.26,
+      "no_speech_prob": 0.0,
+      "start": 115.58,
+      "text": "as well as hospital admissions."
+    },
+    {
+      "avg_logprob": -0.281204,
+      "compression_ratio": 1.458763,
+      "end": 122.24,
+      "no_speech_prob": 0.0,
+      "start": 117.84,
+      "text": "While in earlier waves there was a lag between people getting infected"
+    },
+    {
+      "avg_logprob": -0.294204,
+      "compression_ratio": 1.596413,
+      "end": 128.24,
+      "no_speech_prob": 0.0,
+      "start": 122.24,
+      "text": "and then needing emergency care, this time the rise in cases and hospitalisations happen"
+    },
+    {
+      "avg_logprob": -0.294204,
+      "compression_ratio": 1.596413,
+      "end": 129.68,
+      "no_speech_prob": 0.0,
+      "start": 128.24,
+      "text": "at the same time."
+    },
+    {
+      "avg_logprob": -0.294204,
+      "compression_ratio": 1.596413,
+      "end": 133.42,
+      "no_speech_prob": 0.0,
+      "start": 130.0,
+      "text": "It suggests many patients are going into hospital with the virus,"
+    },
+    {
+      "avg_logprob": -0.294204,
+      "compression_ratio": 1.596413,
+      "end": 135.24,
+      "no_speech_prob": 0.0,
+      "start": 133.72,
+      "text": "not because of the virus."
+    },
+    {
+      "avg_logprob": -0.294204,
+      "compression_ratio": 1.596413,
+      "end": 137.08,
+      "no_speech_prob": 0.0,
+      "start": 135.56,
+      "text": "It's still disruptive for the NHS,"
+    },
+    {
+      "avg_logprob": -0.294204,
+      "compression_ratio": 1.596413,
+      "end": 140.72,
+      "no_speech_prob": 0.0,
+      "start": 137.74,
+      "text": "but public health experts say the rise should be short-lived."
+    },
+    {
+      "avg_logprob": -0.294204,
+      "compression_ratio": 1.596413,
+      "end": 148.42,
+      "no_speech_prob": 0.0,
+      "start": 146.28,
+      "text": "I've had the President's call this morning with President G."
+    },
+    {
+      "avg_logprob": -0.25443,
+      "compression_ratio": 1.662069,
+      "end": 153.46,
+      "no_speech_prob": 0.0,
+      "start": 148.42,
+      "text": "and President G. Does the White House now have a sense of whether or not China"
+    },
+    {
+      "avg_logprob": -0.25443,
+      "compression_ratio": 1.662069,
+      "end": 158.82,
+      "no_speech_prob": 0.0,
+      "start": 153.46,
+      "text": "has decided whether to assist Russia backfill its supplies"
+    },
+    {
+      "avg_logprob": -0.25443,
+      "compression_ratio": 1.662069,
+      "end": 162.92,
+      "no_speech_prob": 0.0,
+      "start": 158.82,
+      "text": "and fulfill its request for materiel its support of its invading Ukraine?"
+    },
+    {
+      "avg_logprob": -0.25443,
+      "compression_ratio": 1.662069,
+      "end": 166.34,
+      "no_speech_prob": 0.0,
+      "start": 163.42,
+      "text": "Well, I'm not going to give an assessment of that from here."
+    },
+    {
+      "avg_logprob": -0.25443,
+      "compression_ratio": 1.662069,
+      "end": 169.42,
+      "no_speech_prob": 0.0,
+      "start": 166.48,
+      "text": "What I can tell you is that the majority of this call,"
+    },
+    {
+      "avg_logprob": -0.25443,
+      "compression_ratio": 1.662069,
+      "end": 171.52,
+      "no_speech_prob": 0.0,
+      "start": 169.54,
+      "text": "as I think you heard, you saw in the readout,"
+    },
+    {
+      "avg_logprob": -0.25443,
+      "compression_ratio": 1.662069,
+      "end": 173.54,
+      "no_speech_prob": 0.0,
+      "start": 171.58,
+      "text": "and you heard, I think, on the call we just did,"
+    },
+    {
+      "avg_logprob": -0.25443,
+      "compression_ratio": 1.662069,
+      "end": 178.28,
+      "no_speech_prob": 0.0,
+      "start": 173.86,
+      "text": "but was focused on Russia's unprovoked invasion of Ukraine,"
+    },
+    {
+      "avg_logprob": -0.163892,
+      "compression_ratio": 1.688406,
+      "end": 181.96,
+      "no_speech_prob": 0.0,
+      "start": 178.42,
+      "text": "the President spent the vast majority of the nearly two hours"
+    },
+    {
+      "avg_logprob": -0.163892,
+      "compression_ratio": 1.688406,
+      "end": 185.48,
+      "no_speech_prob": 0.0,
+      "start": 181.96,
+      "text": "was spent with the President outlining the views of the United States"
+    },
+    {
+      "avg_logprob": -0.163892,
+      "compression_ratio": 1.688406,
+      "end": 187.54,
+      "no_speech_prob": 0.0,
+      "start": 185.48,
+      "text": "and our allies and partners on this crisis,"
+    },
+    {
+      "avg_logprob": -0.163892,
+      "compression_ratio": 1.688406,
+      "end": 191.6,
+      "no_speech_prob": 0.0,
+      "start": 187.86,
+      "text": "including a detailed overview of efforts to prevent"
+    },
+    {
+      "avg_logprob": -0.163892,
+      "compression_ratio": 1.688406,
+      "end": 192.82,
+      "no_speech_prob": 0.0,
+      "start": 191.6,
+      "text": "and then respond to the invasion,"
+    },
+    {
+      "avg_logprob": -0.163892,
+      "compression_ratio": 1.688406,
+      "end": 194.8,
+      "no_speech_prob": 0.0,
+      "start": 193.1,
+      "text": "how we got here, steps we've taken,"
+    },
+    {
+      "avg_logprob": -0.163892,
+      "compression_ratio": 1.688406,
+      "end": 197.04,
+      "no_speech_prob": 0.0,
+      "start": 195.28,
+      "text": "where we've gone, and why."
+    },
+    {
+      "avg_logprob": -0.163892,
+      "compression_ratio": 1.688406,
+      "end": 200.42,
+      "no_speech_prob": 0.0,
+      "start": 197.82,
+      "text": "And, of course, as was also noted in the readout,"
+    },
+    {
+      "avg_logprob": -0.163892,
+      "compression_ratio": 1.688406,
+      "end": 201.3,
+      "no_speech_prob": 0.0,
+      "start": 200.48,
+      "text": "but let me just reiterate,"
+    },
+    {
+      "avg_logprob": -0.163892,
+      "compression_ratio": 1.688406,
+      "end": 205.94,
+      "no_speech_prob": 0.0,
+      "start": 201.72,
+      "text": "he also conveyed and described the implications and consequences"
+    },
+    {
+      "avg_logprob": -0.389253,
+      "compression_ratio": 1.166667,
+      "end": 208.7,
+      "no_speech_prob": 0.0,
+      "start": 205.94,
+      "text": "if China provides material support to Russia."
+    },
+    {
+      "avg_logprob": -0.389253,
+      "compression_ratio": 1.166667,
+      "end": 211.9,
+      "no_speech_prob": 0.0,
+      "start": 209.0,
+      "text": "But, again, I'm not going to provide any additional assessment from here."
+    },
+    {
+      "avg_logprob": -2.028134,
+      "compression_ratio": 2.058036,
+      "end": 216.62,
+      "no_speech_prob": 0.0,
+      "start": 211.9,
+      "text": "And I want to tell you that all of you here are still doing this here."
+    },
+    {
+      "avg_logprob": -2.028134,
+      "compression_ratio": 2.058036,
+      "end": 217.98,
+      "no_speech_prob": 0.0,
+      "start": 217.0,
+      "text": "It's time to meet you,"
+    },
+    {
+      "avg_logprob": -2.028134,
+      "compression_ratio": 2.058036,
+      "end": 219.22,
+      "no_speech_prob": 0.0,
+      "start": 218.22,
+      "text": "it's time to talk to you,"
+    },
+    {
+      "avg_logprob": -2.028134,
+      "compression_ratio": 2.058036,
+      "end": 221.36,
+      "no_speech_prob": 0.0,
+      "start": 219.34,
+      "text": "it's time to repair the entire property"
+    },
+    {
+      "avg_logprob": -2.028134,
+      "compression_ratio": 2.058036,
+      "end": 223.2,
+      "no_speech_prob": 0.0,
+      "start": 221.96,
+      "text": "and puissance for Ukraine."
+    },
+    {
+      "avg_logprob": -2.028134,
+      "compression_ratio": 2.058036,
+      "end": 226.46,
+      "no_speech_prob": 0.0,
+      "start": 223.66,
+      "text": "And I want to tell you that there are now people about what you should hear."
+    },
+    {
+      "avg_logprob": -2.028134,
+      "compression_ratio": 2.058036,
+      "end": 228.26,
+      "no_speech_prob": 0.0,
+      "start": 226.84,
+      "text": "especially in Moscow,"
+    },
+    {
+      "avg_logprob": -2.028134,
+      "compression_ratio": 2.058036,
+      "end": 230.02,
+      "no_speech_prob": 0.0,
+      "start": 228.4,
+      "text": "it's time to meet you,"
+    },
+    {
+      "avg_logprob": -2.028134,
+      "compression_ratio": 2.058036,
+      "end": 231.62,
+      "no_speech_prob": 0.0,
+      "start": 230.44,
+      "text": "it's time to talk to you,"
+    },
+    {
+      "avg_logprob": -2.028134,
+      "compression_ratio": 2.058036,
+      "end": 233.0,
+      "no_speech_prob": 0.0,
+      "start": 231.82,
+      "text": "it's time to enhance you and respect and sanitary"
+    },
+    {
+      "avg_logprob": -2.028134,
+      "compression_ratio": 2.058036,
+      "end": 235.18,
+      "no_speech_prob": 0.0,
+      "start": 233.1,
+      "text": "and einfachness for Ukraine."
+    },
+    {
+      "avg_logprob": -2.028134,
+      "compression_ratio": 2.058036,
+      "end": 237.16,
+      "no_speech_prob": 0.0,
+      "start": 235.32,
+      "text": "And if you will see your suffering for Ukraine,"
+    },
+    {
+      "avg_logprob": -0.984524,
+      "compression_ratio": 1.88587,
+      "end": 243.16,
+      "no_speech_prob": 0.0,
+      "start": 237.16,
+      "text": "否则,不然而是不足以多年,你不足以多年, чтобы扶持人"
+    },
+    {
+      "avg_logprob": -0.984524,
+      "compression_ratio": 1.88587,
+      "end": 245.32,
+      "no_speech_prob": 0.0,
+      "start": 243.16,
+      "text": "今天在 Москве,出嘲笑了很多言語"
+    },
+    {
+      "avg_logprob": -0.984524,
+      "compression_ratio": 1.88587,
+      "end": 251.16,
+      "no_speech_prob": 0.0,
+      "start": 245.32,
+      "text": "在几天上,几天上,几天上,几天上,几天上,几天上,几天上"
+    },
+    {
+      "avg_logprob": -0.984524,
+      "compression_ratio": 1.88587,
+      "end": 254.16,
+      "no_speech_prob": 0.0,
+      "start": 251.16,
+      "text": "我希望你回顧一下,一件事"
+    },
+    {
+      "avg_logprob": -0.984524,
+      "compression_ratio": 1.88587,
+      "end": 258.16,
+      "no_speech_prob": 0.0,
+      "start": 254.16,
+      "text": "我认为,在整个人的行動,几天上,几天上,几天上"
+    },
+    {
+      "avg_logprob": -0.984524,
+      "compression_ratio": 1.88587,
+      "end": 264.16,
+      "no_speech_prob": 0.0,
+      "start": 258.16,
+      "text": "几天上,几天上,几天上,几天上,几天上,几天上"
+    },
+    {
+      "avg_logprob": -0.303481,
+      "compression_ratio": 7.482143,
+      "end": 270.16,
+      "no_speech_prob": 0.0,
+      "start": 264.16,
+      "text": "2005天上,几天上,几天上,几天上,几天上,几天上,几天上…"
+    },
+    {
+      "avg_logprob": -0.303481,
+      "compression_ratio": 7.482143,
+      "end": 276.16,
+      "no_speech_prob": 0.0,
+      "start": 270.16,
+      "text": "Então,几天上,几天上,几天上,几天上,几天上,几天上,几天上…"
+    },
+    {
+      "avg_logprob": -0.303481,
+      "compression_ratio": 7.482143,
+      "end": 281.16,
+      "no_speech_prob": 0.0,
+      "start": 276.16,
+      "text": "几天上,几天上,几天上,几天上,几天上,几天上,几天上…"
+    },
+    {
+      "avg_logprob": -0.303481,
+      "compression_ratio": 7.482143,
+      "end": 285.16,
+      "no_speech_prob": 0.0,
+      "start": 281.16,
+      "text": "几天上,几天上,几天上,几天上,几天上,几天上…"
+    },
+    {
+      "avg_logprob": -0.303481,
+      "compression_ratio": 7.482143,
+      "end": 288.16,
+      "no_speech_prob": 0.0,
+      "start": 285.16,
+      "text": "几天上,几天上,几天上,几天上…"
+    },
+    {
+      "avg_logprob": -0.303481,
+      "compression_ratio": 7.482143,
+      "end": 291.16,
+      "no_speech_prob": 0.0,
+      "start": 288.16,
+      "text": "几天上,几天上,几天上…几天上…"
+    },
+    {
+      "avg_logprob": -0.303481,
+      "compression_ratio": 7.482143,
+      "end": 293.16,
+      "no_speech_prob": 0.0,
+      "start": 291.16,
+      "text": "几天上,几天上…几天上…几天上…"
+    },
+    {
+      "avg_logprob": -2.138686,
+      "compression_ratio": 0.625,
+      "end": 294.96,
+      "no_speech_prob": 0.0,
+      "start": 293.16,
+      "text": "通過第二次"
+    },
+    {
+      "avg_logprob": -1.766661,
+      "compression_ratio": 1.24031,
+      "end": 334.22,
+      "no_speech_prob": 0.0,
+      "start": 323.16,
+      "text": "Change,\""
+    },
+    {
+      "avg_logprob": -1.766661,
+      "compression_ratio": 1.24031,
+      "end": 337.54,
+      "no_speech_prob": 0.0,
+      "start": 334.22,
+      "text": "China"
+    },
+    {
+      "avg_logprob": -1.766661,
+      "compression_ratio": 1.24031,
+      "end": 339.48,
+      "no_speech_prob": 0.0,
+      "start": 337.54,
+      "text": "Russia"
+    },
+    {
+      "avg_logprob": -1.766661,
+      "compression_ratio": 1.24031,
+      "end": 341.78,
+      "no_speech_prob": 0.0,
+      "start": 339.48,
+      "text": "today extended its air"
+    },
+    {
+      "avg_logprob": -1.766661,
+      "compression_ratio": 1.24031,
+      "end": 343.84,
+      "no_speech_prob": 0.0,
+      "start": 341.78,
+      "text": "to NATO territory."
+    },
+    {
+      "avg_logprob": -1.766661,
+      "compression_ratio": 1.24031,
+      "end": 345.8,
+      "no_speech_prob": 0.0,
+      "start": 343.84,
+      "text": "authorities claim Russian"
+    },
+    {
+      "avg_logprob": -1.766661,
+      "compression_ratio": 1.24031,
+      "end": 347.84,
+      "no_speech_prob": 0.0,
+      "start": 345.8,
+      "text": "fired from the Black Sea"
+    },
+    {
+      "avg_logprob": -1.766661,
+      "compression_ratio": 1.24031,
+      "end": 349.84,
+      "no_speech_prob": 0.0,
+      "start": 347.84,
+      "text": "medical repair facility"
+    },
+    {
+      "avg_logprob": -1.766661,
+      "compression_ratio": 1.24031,
+      "end": 351.88,
+      "no_speech_prob": 0.0,
+      "start": 349.84,
+      "text": "city of Lviv near the"
+    },
+    {
+      "avg_logprob": -0.757686,
+      "compression_ratio": 2.346774,
+      "end": 353.88,
+      "no_speech_prob": 0.0,
+      "start": 351.88,
+      "text": "香港人的反应是不一样的"
+    },
+    {
+      "avg_logprob": -0.757686,
+      "compression_ratio": 2.346774,
+      "end": 356.88,
+      "no_speech_prob": 0.0,
+      "start": 353.88,
+      "text": "但是韩国和其他国家的关系"
+    },
+    {
+      "avg_logprob": -0.757686,
+      "compression_ratio": 2.346774,
+      "end": 358.88,
+      "no_speech_prob": 0.0,
+      "start": 356.88,
+      "text": "是一部分的争论"
+    },
+    {
+      "avg_logprob": -0.757686,
+      "compression_ratio": 2.346774,
+      "end": 360.88,
+      "no_speech_prob": 0.0,
+      "start": 358.88,
+      "text": "政府总统的决定"
+    },
+    {
+      "avg_logprob": -0.757686,
+      "compression_ratio": 2.346774,
+      "end": 361.88,
+      "no_speech_prob": 0.0,
+      "start": 360.88,
+      "text": "政府总统的决定"
+    },
+    {
+      "avg_logprob": -0.757686,
+      "compression_ratio": 2.346774,
+      "end": 363.88,
+      "no_speech_prob": 0.0,
+      "start": 361.88,
+      "text": "是决定的决定"
+    },
+    {
+      "avg_logprob": -0.757686,
+      "compression_ratio": 2.346774,
+      "end": 365.88,
+      "no_speech_prob": 0.0,
+      "start": 363.88,
+      "text": "决定的决定"
+    },
+    {
+      "avg_logprob": -0.757686,
+      "compression_ratio": 2.346774,
+      "end": 367.88,
+      "no_speech_prob": 0.0,
+      "start": 365.88,
+      "text": "决定的决定"
+    },
+    {
+      "avg_logprob": -0.757686,
+      "compression_ratio": 2.346774,
+      "end": 369.88,
+      "no_speech_prob": 0.0,
+      "start": 367.88,
+      "text": "决定的决定"
+    },
+    {
+      "avg_logprob": -0.757686,
+      "compression_ratio": 2.346774,
+      "end": 371.88,
+      "no_speech_prob": 0.0,
+      "start": 369.88,
+      "text": "决定决定决定"
+    },
+    {
+      "avg_logprob": -0.757686,
+      "compression_ratio": 2.346774,
+      "end": 373.88,
+      "no_speech_prob": 0.0,
+      "start": 371.88,
+      "text": "决定决定决定"
+    },
+    {
+      "avg_logprob": -0.757686,
+      "compression_ratio": 2.346774,
+      "end": 375.88,
+      "no_speech_prob": 0.0,
+      "start": 373.88,
+      "text": "决定决定决定"
+    },
+    {
+      "avg_logprob": -0.757686,
+      "compression_ratio": 2.346774,
+      "end": 377.88,
+      "no_speech_prob": 0.0,
+      "start": 375.88,
+      "text": "决定决定决定"
+    },
+    {
+      "avg_logprob": -0.757686,
+      "compression_ratio": 2.346774,
+      "end": 379.88,
+      "no_speech_prob": 0.0,
+      "start": 377.88,
+      "text": "决定决定决定决定"
+    },
+    {
+      "avg_logprob": -3.384819,
+      "compression_ratio": 1.082051,
+      "end": 381.98,
+      "no_speech_prob": 0.0,
+      "start": 379.88,
+      "text": "已对非 Lynás"
+    },
+    {
+      "avg_logprob": -3.384819,
+      "compression_ratio": 1.082051,
+      "end": 383.88,
+      "no_speech_prob": 0.0,
+      "start": 381.98,
+      "text": "mai稀网本事者"
+    },
+    {
+      "avg_logprob": -3.384819,
+      "compression_ratio": 1.082051,
+      "end": 385.88,
+      "no_speech_prob": 0.0,
+      "start": 383.88,
+      "text": "都会新闻自主要"
+    },
+    {
+      "avg_logprob": -3.384819,
+      "compression_ratio": 1.082051,
+      "end": 387.64,
+      "no_speech_prob": 0.0,
+      "start": 385.88,
+      "text": "糟糕"
+    },
+    {
+      "avg_logprob": -3.384819,
+      "compression_ratio": 1.082051,
+      "end": 389.68,
+      "no_speech_prob": 0.0,
+      "start": 387.64,
+      "text": "現在主要 sta稿"
+    },
+    {
+      "avg_logprob": -3.384819,
+      "compression_ratio": 1.082051,
+      "end": 391.44,
+      "no_speech_prob": 0.0,
+      "start": 389.68,
+      "text": "韩国本事领主要"
+    },
+    {
+      "avg_logprob": -3.384819,
+      "compression_ratio": 1.082051,
+      "end": 393.14,
+      "no_speech_prob": 0.0,
+      "start": 391.44,
+      "text": "穿重言"
+    },
+    {
+      "avg_logprob": -3.384819,
+      "compression_ratio": 1.082051,
+      "end": 395.02,
+      "no_speech_prob": 0.0,
+      "start": 393.14,
+      "text": "De方法"
+    },
+    {
+      "avg_logprob": -3.384819,
+      "compression_ratio": 1.082051,
+      "end": 397.5,
+      "no_speech_prob": 0.0,
+      "start": 395.02,
+      "text": "Un言"
+    },
+    {
+      "avg_logprob": -3.384819,
+      "compression_ratio": 1.082051,
+      "end": 399.2,
+      "no_speech_prob": 0.0,
+      "start": 397.5,
+      "text": "明自主要"
+    },
+    {
+      "avg_logprob": -3.384819,
+      "compression_ratio": 1.082051,
+      "end": 401.2,
+      "no_speech_prob": 0.0,
+      "start": 399.2,
+      "text": "成立决定决定决定"
+    },
+    {
+      "avg_logprob": -3.384819,
+      "compression_ratio": 1.082051,
+      "end": 403.12,
+      "no_speech_prob": 0.0,
+      "start": 401.2,
+      "text": "称元"
+    },
+    {
+      "avg_logprob": -3.384819,
+      "compression_ratio": 1.082051,
+      "end": 403.9,
+      "no_speech_prob": 0.0,
+      "start": 403.12,
+      "text": "М艺"
+    },
+    {
+      "avg_logprob": -3.384819,
+      "compression_ratio": 1.082051,
+      "end": 405.44,
+      "no_speech_prob": 0.0,
+      "start": 403.9,
+      "text": "它继续"
+    },
+    {
+      "avg_logprob": -3.384819,
+      "compression_ratio": 1.082051,
+      "end": 407.02,
+      "no_speech_prob": 0.0,
+      "start": 405.44,
+      "text": "democracy"
+    },
+    {
+      "avg_logprob": -3.384819,
+      "compression_ratio": 1.082051,
+      "end": 408.04,
+      "no_speech_prob": 0.0,
+      "start": 407.02,
+      "text": "我们继续"
+    },
+    {
+      "avg_logprob": -3.384819,
+      "compression_ratio": 1.082051,
+      "end": 409.12,
+      "no_speech_prob": 0.0,
+      "start": 408.04,
+      "text": "этим"
+    },
+    {
+      "avg_logprob": -0.183032,
+      "compression_ratio": 1.619658,
+      "end": 416.12,
+      "no_speech_prob": 0.0,
+      "start": 409.12,
+      "text": "Russia may be planning to use chemical or biological agents against the ukrainian people"
+    },
+    {
+      "avg_logprob": -0.183032,
+      "compression_ratio": 1.619658,
+      "end": 423.12,
+      "no_speech_prob": 0.0,
+      "start": 419.12,
+      "text": "proof of the heavy toll high gas prices are taking on americans"
+    },
+    {
+      "avg_logprob": -0.183032,
+      "compression_ratio": 1.619658,
+      "end": 428.12,
+      "no_speech_prob": 0.0,
+      "start": 423.12,
+      "text": "thousands of drivers in chicago waited in line for hours thursday to get a free fill up"
+    },
+    {
+      "avg_logprob": -0.183032,
+      "compression_ratio": 1.619658,
+      "end": 431.12,
+      "no_speech_prob": 0.0,
+      "start": 428.12,
+      "text": "i've been out here since five o'clock this morning"
+    },
+    {
+      "avg_logprob": -0.183032,
+      "compression_ratio": 1.619658,
+      "end": 437.12,
+      "no_speech_prob": 0.0,
+      "start": 431.12,
+      "text": "a local businessman donated two hundred thousand dollars in gas to stations across the city"
+    },
+    {
+      "avg_logprob": -0.124057,
+      "compression_ratio": 1.646552,
+      "end": 439.12,
+      "no_speech_prob": 0.0,
+      "start": 437.12,
+      "text": "and he says he'll do it again"
+    },
+    {
+      "avg_logprob": -0.124057,
+      "compression_ratio": 1.646552,
+      "end": 443.12,
+      "no_speech_prob": 0.0,
+      "start": 439.12,
+      "text": "he is a blessing and i thank everybody that put their efforts to help you know"
+    },
+    {
+      "avg_logprob": -0.124057,
+      "compression_ratio": 1.646552,
+      "end": 447.12,
+      "no_speech_prob": 0.0,
+      "start": 443.12,
+      "text": "it comes as americans brace for even higher prices at the pump"
+    },
+    {
+      "avg_logprob": -0.124057,
+      "compression_ratio": 1.646552,
+      "end": 453.12,
+      "no_speech_prob": 0.0,
+      "start": 447.12,
+      "text": "oil prices climbed eight percent thursday due to growing supply concerns stemming from the war in ukraine"
+    },
+    {
+      "avg_logprob": -0.124057,
+      "compression_ratio": 1.646552,
+      "end": 460.12,
+      "no_speech_prob": 0.0,
+      "start": 453.12,
+      "text": "the international energy agency warns by april global markets could see the biggest supply crisis in decades"
+    },
+    {
+      "avg_logprob": -0.143862,
+      "compression_ratio": 1.566667,
+      "end": 470.12,
+      "no_speech_prob": 0.0,
+      "start": 460.12,
+      "text": "in california gas prices now average 578 a gallon to offer relief some state lawmakers are now proposing a 400"
+    },
+    {
+      "avg_logprob": -0.143862,
+      "compression_ratio": 1.566667,
+      "end": 472.12,
+      "no_speech_prob": 0.0,
+      "start": 470.12,
+      "text": "dollar rebate for every taxpayer"
+    },
+    {
+      "avg_logprob": -0.143862,
+      "compression_ratio": 1.566667,
+      "end": 480.12,
+      "no_speech_prob": 0.0,
+      "start": 474.12,
+      "text": "high gas prices also affecting how kids get to school with some districts now relying on a limited number of"
+    },
+    {
+      "avg_logprob": -0.143862,
+      "compression_ratio": 1.566667,
+      "end": 484.12,
+      "no_speech_prob": 0.0,
+      "start": 480.12,
+      "text": "hybrid and electric buses having those options really allows us to continue on"
+    },
+    {
+      "avg_logprob": -0.122594,
+      "compression_ratio": 1.40625,
+      "end": 498.12,
+      "no_speech_prob": 0.0,
+      "start": 484.12,
+      "text": "and days after uber and lyft announced fuel surcharges amazon flex drivers who use their own vehicles to make deliveries are now demanding higher pay to offset the pain at the pump"
+    },
+    {
+      "avg_logprob": -1.848348,
+      "compression_ratio": 3.893443,
+      "end": 500.12,
+      "no_speech_prob": 0.0,
+      "start": 498.12,
+      "text": "how coche spot"
+    },
+    {
+      "avg_logprob": -1.848348,
+      "compression_ratio": 3.893443,
+      "end": 501.12,
+      "no_speech_prob": 0.0,
+      "start": 500.12,
+      "text": "??"
+    },
+    {
+      "avg_logprob": -1.848348,
+      "compression_ratio": 3.893443,
+      "end": 502.12,
+      "no_speech_prob": 0.0,
+      "start": 501.12,
+      "text": "ida case"
+    },
+    {
+      "avg_logprob": -1.848348,
+      "compression_ratio": 3.893443,
+      "end": 503.12,
+      "no_speech_prob": 0.0,
+      "start": 502.12,
+      "text": "key"
+    },
+    {
+      "avg_logprob": -1.848348,
+      "compression_ratio": 3.893443,
+      "end": 504.12,
+      "no_speech_prob": 0.0,
+      "start": 503.12,
+      "text": "ros having been turned out"
+    },
+    {
+      "avg_logprob": -1.848348,
+      "compression_ratio": 3.893443,
+      "end": 505.12,
+      "no_speech_prob": 0.0,
+      "start": 504.12,
+      "text": "of how much food from ph content"
+    },
+    {
+      "avg_logprob": -1.848348,
+      "compression_ratio": 3.893443,
+      "end": 506.12,
+      "no_speech_prob": 0.0,
+      "start": 505.12,
+      "text": "poche"
+    },
+    {
+      "avg_logprob": -1.848348,
+      "compression_ratio": 3.893443,
+      "end": 508.12,
+      "no_speech_prob": 0.0,
+      "start": 506.12,
+      "text": "of how much food from phony"
+    },
+    {
+      "avg_logprob": -1.848348,
+      "compression_ratio": 3.893443,
+      "end": 509.44,
+      "no_speech_prob": 0.0,
+      "start": 508.12,
+      "text": "flang"
+    },
+    {
+      "avg_logprob": -1.848348,
+      "compression_ratio": 3.893443,
+      "end": 511.08,
+      "no_speech_prob": 0.0,
+      "start": 509.44,
+      "text": "me"
+    },
+    {
+      "avg_logprob": -1.848348,
+      "compression_ratio": 3.893443,
+      "end": 512.4,
+      "no_speech_prob": 0.0,
+      "start": 511.08,
+      "text": "of how much food from phony"
+    },
+    {
+      "avg_logprob": -1.848348,
+      "compression_ratio": 3.893443,
+      "end": 514.08,
+      "no_speech_prob": 0.0,
+      "start": 512.4,
+      "text": "of how much food from phony"
+    },
+    {
+      "avg_logprob": -1.848348,
+      "compression_ratio": 3.893443,
+      "end": 515.98,
+      "no_speech_prob": 0.0,
+      "start": 514.08,
+      "text": "of how much food from phony"
+    },
+    {
+      "avg_logprob": -1.848348,
+      "compression_ratio": 3.893443,
+      "end": 517.42,
+      "no_speech_prob": 0.0,
+      "start": 515.98,
+      "text": "of how much food from phony"
+    },
+    {
+      "avg_logprob": -1.848348,
+      "compression_ratio": 3.893443,
+      "end": 518.82,
+      "no_speech_prob": 0.0,
+      "start": 517.42,
+      "text": "of how much food from phony"
+    },
+    {
+      "avg_logprob": -1.848348,
+      "compression_ratio": 3.893443,
+      "end": 520.36,
+      "no_speech_prob": 0.0,
+      "start": 518.82,
+      "text": "of how much food from phony"
+    },
+    {
+      "avg_logprob": -1.848348,
+      "compression_ratio": 3.893443,
+      "end": 521.92,
+      "no_speech_prob": 0.0,
+      "start": 520.36,
+      "text": "of how much food from phony"
+    },
+    {
+      "avg_logprob": -1.848348,
+      "compression_ratio": 3.893443,
+      "end": 523.42,
+      "no_speech_prob": 0.0,
+      "start": 521.92,
+      "text": "of how much food from phony"
+    },
+    {
+      "avg_logprob": -1.848348,
+      "compression_ratio": 3.893443,
+      "end": 524.94,
+      "no_speech_prob": 0.0,
+      "start": 523.42,
+      "text": "of how much food from phony"
+    },
+    {
+      "avg_logprob": -1.848348,
+      "compression_ratio": 3.893443,
+      "end": 526.3,
+      "no_speech_prob": 0.0,
+      "start": 524.94,
+      "text": "of how much food from phony"
+    },
+    {
+      "avg_logprob": -1.848348,
+      "compression_ratio": 3.893443,
+      "end": 527.0,
+      "no_speech_prob": 0.0,
+      "start": 526.3,
+      "text": "of how much food from phony"
+    },
+    {
+      "avg_logprob": -1.848348,
+      "compression_ratio": 3.893443,
+      "end": 527.54,
+      "no_speech_prob": 0.0,
+      "start": 527.0,
+      "text": "of how much food from phony"
+    },
+    {
+      "avg_logprob": -1.848348,
+      "compression_ratio": 3.893443,
+      "end": 527.94,
+      "no_speech_prob": 0.0,
+      "start": 527.54,
+      "text": "通 After when phony people"
+    },
+    {
+      "avg_logprob": -0.107601,
+      "compression_ratio": 1.481928,
+      "end": 531.24,
+      "no_speech_prob": 0.0,
+      "start": 527.94,
+      "text": "我们法治基金的接电话的义工"
+    },
+    {
+      "avg_logprob": -0.107601,
+      "compression_ratio": 1.481928,
+      "end": 533.82,
+      "no_speech_prob": 0.0,
+      "start": 531.24,
+      "text": "就是接收到一个电话"
+    },
+    {
+      "avg_logprob": -0.107601,
+      "compression_ratio": 1.481928,
+      "end": 535.62,
+      "no_speech_prob": 0.0,
+      "start": 533.82,
+      "text": "这是一个德国人"
+    },
+    {
+      "avg_logprob": -0.107601,
+      "compression_ratio": 1.481928,
+      "end": 537.78,
+      "no_speech_prob": 0.0,
+      "start": 535.62,
+      "text": "他是住在德国的南部"
+    },
+    {
+      "avg_logprob": -0.107601,
+      "compression_ratio": 1.481928,
+      "end": 540.56,
+      "no_speech_prob": 0.0,
+      "start": 537.78,
+      "text": "他呢就是给我们法治基金就打电话"
+    },
+    {
+      "avg_logprob": -0.107601,
+      "compression_ratio": 1.481928,
+      "end": 543.7,
+      "no_speech_prob": 0.0,
+      "start": 540.56,
+      "text": "他说我住在距离乌克兰边境的"
+    },
+    {
+      "avg_logprob": -0.107601,
+      "compression_ratio": 1.481928,
+      "end": 546.4,
+      "no_speech_prob": 0.0,
+      "start": 543.7,
+      "text": "800公里的一个南部的德国"
+    },
+    {
+      "avg_logprob": -0.107601,
+      "compression_ratio": 1.481928,
+      "end": 548.38,
+      "no_speech_prob": 0.0,
+      "start": 546.4,
+      "text": "说我的太太是个华人"
+    },
+    {
+      "avg_logprob": -0.107601,
+      "compression_ratio": 1.481928,
+      "end": 551.0,
+      "no_speech_prob": 0.0,
+      "start": 548.38,
+      "text": "我太太在社交媒体上看到了"
+    },
+    {
+      "avg_logprob": -0.107601,
+      "compression_ratio": 1.481928,
+      "end": 552.08,
+      "no_speech_prob": 0.0,
+      "start": 551.0,
+      "text": "你们新中国人"
+    },
+    {
+      "avg_logprob": -0.107601,
+      "compression_ratio": 1.481928,
+      "end": 554.9,
+      "no_speech_prob": 0.0,
+      "start": 552.08,
+      "text": "在这次人道主义的救援当中"
+    },
+    {
+      "avg_logprob": -0.107601,
+      "compression_ratio": 1.481928,
+      "end": 556.56,
+      "no_speech_prob": 0.0,
+      "start": 554.9,
+      "text": "就是你们的表现"
+    },
+    {
+      "avg_logprob": -0.076664,
+      "compression_ratio": 1.484536,
+      "end": 558.64,
+      "no_speech_prob": 0.0,
+      "start": 556.56,
+      "text": "他的太太非常的感动"
+    },
+    {
+      "avg_logprob": -0.076664,
+      "compression_ratio": 1.484536,
+      "end": 561.4,
+      "no_speech_prob": 0.0,
+      "start": 558.64,
+      "text": "因为作为一个生活在海外的华人"
+    },
+    {
+      "avg_logprob": -0.076664,
+      "compression_ratio": 1.484536,
+      "end": 563.02,
+      "no_speech_prob": 0.0,
+      "start": 561.4,
+      "text": "我想可能很多的华人"
+    },
+    {
+      "avg_logprob": -0.076664,
+      "compression_ratio": 1.484536,
+      "end": 564.68,
+      "no_speech_prob": 0.0,
+      "start": 563.02,
+      "text": "都没有见过这种场面"
+    },
+    {
+      "avg_logprob": -0.076664,
+      "compression_ratio": 1.484536,
+      "end": 567.7,
+      "no_speech_prob": 0.0,
+      "start": 564.68,
+      "text": "所以就是生活在德国南部的一个华人"
+    },
+    {
+      "avg_logprob": -0.076664,
+      "compression_ratio": 1.484536,
+      "end": 570.24,
+      "no_speech_prob": 0.0,
+      "start": 567.7,
+      "text": "所以他跟他的德国的先生的话呢"
+    },
+    {
+      "avg_logprob": -0.076664,
+      "compression_ratio": 1.484536,
+      "end": 572.52,
+      "no_speech_prob": 0.0,
+      "start": 570.24,
+      "text": "就主动联系到我们法治基金"
+    },
+    {
+      "avg_logprob": -0.076664,
+      "compression_ratio": 1.484536,
+      "end": 575.0,
+      "no_speech_prob": 0.0,
+      "start": 572.52,
+      "text": "他们说我们能够为你们做些什么"
+    },
+    {
+      "avg_logprob": -0.076664,
+      "compression_ratio": 1.484536,
+      "end": 577.42,
+      "no_speech_prob": 0.0,
+      "start": 575.0,
+      "text": "我们也想参与这次法治基金"
+    },
+    {
+      "avg_logprob": -0.076664,
+      "compression_ratio": 1.484536,
+      "end": 578.54,
+      "no_speech_prob": 0.0,
+      "start": 577.42,
+      "text": "和新中国联邦"
+    },
+    {
+      "avg_logprob": -0.076664,
+      "compression_ratio": 1.484536,
+      "end": 582.22,
+      "no_speech_prob": 0.0,
+      "start": 578.54,
+      "text": "在这次乌克兰这个紧急救援当中的"
+    },
+    {
+      "avg_logprob": -0.076664,
+      "compression_ratio": 1.484536,
+      "end": 584.1,
+      "no_speech_prob": 0.0,
+      "start": 582.22,
+      "text": "这么一个营救的活动"
+    },
+    {
+      "avg_logprob": -0.076664,
+      "compression_ratio": 1.484536,
+      "end": 585.22,
+      "no_speech_prob": 0.0,
+      "start": 584.1,
+      "text": "所以的话呢"
+    },
+    {
+      "avg_logprob": -0.117122,
+      "compression_ratio": 1.296875,
+      "end": 587.12,
+      "no_speech_prob": 0.0,
+      "start": 585.22,
+      "text": "这只是其中的一例"
+    },
+    {
+      "avg_logprob": -0.117122,
+      "compression_ratio": 1.296875,
+      "end": 588.68,
+      "no_speech_prob": 0.0,
+      "start": 587.12,
+      "text": "然后今天早晨的话呢"
+    },
+    {
+      "avg_logprob": -0.117122,
+      "compression_ratio": 1.296875,
+      "end": 590.04,
+      "no_speech_prob": 0.0,
+      "start": 588.68,
+      "text": "我来的比较早"
+    },
+    {
+      "avg_logprob": -0.117122,
+      "compression_ratio": 1.296875,
+      "end": 591.06,
+      "no_speech_prob": 0.0,
+      "start": 590.04,
+      "text": "在八点钟的时候"
+    },
+    {
+      "avg_logprob": -0.117122,
+      "compression_ratio": 1.296875,
+      "end": 594.22,
+      "no_speech_prob": 0.0,
+      "start": 591.06,
+      "text": "我看到一个华人的一个面孔呢"
+    },
+    {
+      "avg_logprob": -0.117122,
+      "compression_ratio": 1.296875,
+      "end": 598.3,
+      "no_speech_prob": 0.0,
+      "start": 594.22,
+      "text": "他也是来到我们法治基金的一个大帐篷前面的话呢"
+    },
+    {
+      "avg_logprob": -0.117122,
+      "compression_ratio": 1.296875,
+      "end": 602.26,
+      "no_speech_prob": 0.0,
+      "start": 598.3,
+      "text": "帮助我们整理这个难民的这个救援的物资"
+    },
+    {
+      "avg_logprob": -0.157922,
+      "compression_ratio": 1.2125,
+      "end": 607.3,
+      "no_speech_prob": 0.0,
+      "start": 602.26,
+      "text": "这个小伙子大概是我看也就是30岁出头吧"
+    },
+    {
+      "avg_logprob": -0.157922,
+      "compression_ratio": 1.2125,
+      "end": 610.22,
+      "no_speech_prob": 0.0,
+      "start": 607.3,
+      "text": "他是一个长的是华人的面孔"
+    },
+    {
+      "avg_logprob": -0.157922,
+      "compression_ratio": 1.2125,
+      "end": 611.68,
+      "no_speech_prob": 0.0,
+      "start": 610.22,
+      "text": "所以我就很好奇"
+    },
+    {
+      "avg_logprob": -0.157922,
+      "compression_ratio": 1.2125,
+      "end": 613.88,
+      "no_speech_prob": 0.0,
+      "start": 611.68,
+      "text": "我就问他是从哪里来"
+    },
+    {
+      "avg_logprob": -0.157922,
+      "compression_ratio": 1.2125,
+      "end": 616.5,
+      "no_speech_prob": 0.0,
+      "start": 613.88,
+      "text": "他是从美国德州来的"
+    },
+    {
+      "avg_logprob": -0.157922,
+      "compression_ratio": 1.2125,
+      "end": 619.5,
+      "no_speech_prob": 0.0,
+      "start": 616.5,
+      "text": "他的爸爸是大陆的华人"
+    },
+    {
+      "avg_logprob": -0.161436,
+      "compression_ratio": 1.182573,
+      "end": 622.16,
+      "no_speech_prob": 0.0,
+      "start": 619.5,
+      "text": "妈妈是从台湾来的华人"
+    },
+    {
+      "avg_logprob": -0.161436,
+      "compression_ratio": 1.182573,
+      "end": 625.92,
+      "no_speech_prob": 0.0,
+      "start": 622.16,
+      "text": "所以他是出生在美国的一个华人"
+    },
+    {
+      "avg_logprob": -0.161436,
+      "compression_ratio": 1.182573,
+      "end": 629.38,
+      "no_speech_prob": 0.0,
+      "start": 625.92,
+      "text": "叫做ABC就是American Born Chinese"
+    },
+    {
+      "avg_logprob": -0.161436,
+      "compression_ratio": 1.182573,
+      "end": 630.66,
+      "no_speech_prob": 0.0,
+      "start": 629.38,
+      "text": "所以的话呢"
+    },
+    {
+      "avg_logprob": -0.161436,
+      "compression_ratio": 1.182573,
+      "end": 632.06,
+      "no_speech_prob": 0.0,
+      "start": 630.66,
+      "text": "他是从美国呢"
+    },
+    {
+      "avg_logprob": -0.161436,
+      "compression_ratio": 1.182573,
+      "end": 633.38,
+      "no_speech_prob": 0.0,
+      "start": 632.06,
+      "text": "飞到这个波兰"
+    },
+    {
+      "avg_logprob": -0.161436,
+      "compression_ratio": 1.182573,
+      "end": 636.4,
+      "no_speech_prob": 0.0,
+      "start": 633.38,
+      "text": "他想参加这次那个人道的救援的行动"
+    },
+    {
+      "avg_logprob": -0.161436,
+      "compression_ratio": 1.182573,
+      "end": 640.44,
+      "no_speech_prob": 0.0,
+      "start": 636.4,
+      "text": "然后就看见我们法治基金和新中国联邦的这个大牌子"
+    },
+    {
+      "avg_logprob": -0.161436,
+      "compression_ratio": 1.182573,
+      "end": 641.2,
+      "no_speech_prob": 0.0,
+      "start": 640.44,
+      "text": "然后呢"
+    },
+    {
+      "avg_logprob": -0.129809,
+      "compression_ratio": 1.540541,
+      "end": 643.76,
+      "no_speech_prob": 0.0,
+      "start": 641.2,
+      "text": "他在家里是讲中文的"
+    },
+    {
+      "avg_logprob": -0.129809,
+      "compression_ratio": 1.540541,
+      "end": 646.26,
+      "no_speech_prob": 0.0,
+      "start": 643.76,
+      "text": "所以他能够认得我们的那个中国字"
+    },
+    {
+      "avg_logprob": -0.129809,
+      "compression_ratio": 1.540541,
+      "end": 647.54,
+      "no_speech_prob": 0.0,
+      "start": 646.26,
+      "text": "所以他就有念出"
+    },
+    {
+      "avg_logprob": -0.129809,
+      "compression_ratio": 1.540541,
+      "end": 649.76,
+      "no_speech_prob": 0.0,
+      "start": 647.54,
+      "text": "他说这是新中国联邦法治基金"
+    },
+    {
+      "avg_logprob": -0.129809,
+      "compression_ratio": 1.540541,
+      "end": 650.9,
+      "no_speech_prob": 0.0,
+      "start": 649.76,
+      "text": "所以他说的"
+    },
+    {
+      "avg_logprob": -0.129809,
+      "compression_ratio": 1.540541,
+      "end": 652.66,
+      "no_speech_prob": 0.0,
+      "start": 650.9,
+      "text": "你们做得太好了"
+    },
+    {
+      "avg_logprob": -0.129809,
+      "compression_ratio": 1.540541,
+      "end": 654.76,
+      "no_speech_prob": 0.0,
+      "start": 652.66,
+      "text": "所以他就主动的"
+    },
+    {
+      "avg_logprob": -0.129809,
+      "compression_ratio": 1.540541,
+      "end": 656.16,
+      "no_speech_prob": 0.0,
+      "start": 654.76,
+      "text": "就是帮助我们"
+    },
+    {
+      "avg_logprob": -0.129809,
+      "compression_ratio": 1.540541,
+      "end": 659.68,
+      "no_speech_prob": 0.0,
+      "start": 656.16,
+      "text": "在这个大帐篷前面去帮我们的忙"
+    },
+    {
+      "avg_logprob": -0.129809,
+      "compression_ratio": 1.540541,
+      "end": 661.16,
+      "no_speech_prob": 0.0,
+      "start": 659.68,
+      "text": "所以我有采访到他"
+    },
+    {
+      "avg_logprob": -0.129809,
+      "compression_ratio": 1.540541,
+      "end": 662.44,
+      "no_speech_prob": 0.0,
+      "start": 661.16,
+      "text": "他说呢"
+    },
+    {
+      "avg_logprob": -0.129809,
+      "compression_ratio": 1.540541,
+      "end": 665.04,
+      "no_speech_prob": 0.0,
+      "start": 662.44,
+      "text": "这次你们法治基金和新中国联邦"
+    },
+    {
+      "avg_logprob": -0.129809,
+      "compression_ratio": 1.540541,
+      "end": 666.5,
+      "no_speech_prob": 0.0,
+      "start": 665.04,
+      "text": "你们是真的是"
+    },
+    {
+      "avg_logprob": -0.129809,
+      "compression_ratio": 1.540541,
+      "end": 670.76,
+      "no_speech_prob": 0.0,
+      "start": 666.5,
+      "text": "这是一次人道主义的一个非政治的一个行动"
+    },
+    {
+      "avg_logprob": -0.073629,
+      "compression_ratio": 1.483871,
+      "end": 673.86,
+      "no_speech_prob": 0.0,
+      "start": 670.76,
+      "text": "所以他是作为一个华人的这个第二代"
+    },
+    {
+      "avg_logprob": -0.073629,
+      "compression_ratio": 1.483871,
+      "end": 675.24,
+      "no_speech_prob": 0.0,
+      "start": 673.86,
+      "text": "他感到非常的骄傲"
+    },
+    {
+      "avg_logprob": -0.073629,
+      "compression_ratio": 1.483871,
+      "end": 675.56,
+      "no_speech_prob": 0.0,
+      "start": 675.24,
+      "text": "所以呢"
+    },
+    {
+      "avg_logprob": -0.073629,
+      "compression_ratio": 1.483871,
+      "end": 679.32,
+      "no_speech_prob": 0.0,
+      "start": 675.56,
+      "text": "他也这个加入了我们的这个这个义工的团队"
+    },
+    {
+      "avg_logprob": -0.073629,
+      "compression_ratio": 1.483871,
+      "end": 682.8,
+      "no_speech_prob": 0.0,
+      "start": 679.32,
+      "text": "而且他很高兴接受我们的采访"
+    },
+    {
+      "avg_logprob": -0.073629,
+      "compression_ratio": 1.483871,
+      "end": 687.14,
+      "no_speech_prob": 0.0,
+      "start": 682.8,
+      "text": "所以的话他也是知道我们法治基金和新中国联邦"
+    },
+    {
+      "avg_logprob": -0.073629,
+      "compression_ratio": 1.483871,
+      "end": 689.68,
+      "no_speech_prob": 0.0,
+      "start": 687.14,
+      "text": "我们代表的是真正的中国人"
+    },
+    {
+      "avg_logprob": -0.073629,
+      "compression_ratio": 1.483871,
+      "end": 692.7,
+      "no_speech_prob": 0.0,
+      "start": 689.68,
+      "text": "而且我们是要推翻邪恶的中国共产党"
+    },
+    {
+      "avg_logprob": -0.073629,
+      "compression_ratio": 1.483871,
+      "end": 697.46,
+      "no_speech_prob": 0.0,
+      "start": 692.7,
+      "text": "然后我们是支持香港人民的追求自由法治的社会"
+    },
+    {
+      "avg_logprob": -0.073629,
+      "compression_ratio": 1.483871,
+      "end": 699.08,
+      "no_speech_prob": 0.0,
+      "start": 697.46,
+      "text": "我们也支持台湾人民"
+    },
+    {
+      "avg_logprob": -0.069949,
+      "compression_ratio": 1.361538,
+      "end": 703.32,
+      "no_speech_prob": 0.0,
+      "start": 699.08,
+      "text": "他们享有这个民主自由和法治的这个权利"
+    },
+    {
+      "avg_logprob": -0.069949,
+      "compression_ratio": 1.361538,
+      "end": 705.68,
+      "no_speech_prob": 0.0,
+      "start": 703.32,
+      "text": "我们跟乌克兰人民站在一起"
+    },
+    {
+      "avg_logprob": -0.069949,
+      "compression_ratio": 1.361538,
+      "end": 706.52,
+      "no_speech_prob": 0.0,
+      "start": 705.68,
+      "text": "所以的话呢"
+    },
+    {
+      "avg_logprob": -0.069949,
+      "compression_ratio": 1.361538,
+      "end": 709.58,
+      "no_speech_prob": 0.0,
+      "start": 706.52,
+      "text": "今天我们看到的这个新的这个亮点"
+    },
+    {
+      "avg_logprob": -0.069949,
+      "compression_ratio": 1.361538,
+      "end": 712.26,
+      "no_speech_prob": 0.0,
+      "start": 709.58,
+      "text": "就是全球的华人开始关注"
+    },
+    {
+      "avg_logprob": -0.069949,
+      "compression_ratio": 1.361538,
+      "end": 714.6,
+      "no_speech_prob": 0.0,
+      "start": 712.26,
+      "text": "这次法治基金和新中国联邦"
+    },
+    {
+      "avg_logprob": -0.069949,
+      "compression_ratio": 1.361538,
+      "end": 718.06,
+      "no_speech_prob": 0.0,
+      "start": 714.6,
+      "text": "在米迪卡的这个整个人道主义救援的行动"
+    },
+    {
+      "avg_logprob": -0.069949,
+      "compression_ratio": 1.361538,
+      "end": 720.54,
+      "no_speech_prob": 0.0,
+      "start": 718.06,
+      "text": "因为他们看到了社交媒体上的传播"
+    },
+    {
+      "avg_logprob": -0.069949,
+      "compression_ratio": 1.361538,
+      "end": 723.68,
+      "no_speech_prob": 0.0,
+      "start": 720.54,
+      "text": "现在很多人都在传这件事情"
+    },
+    {
+      "avg_logprob": -0.153398,
+      "compression_ratio": 1.06015,
+      "end": 727.92,
+      "no_speech_prob": 0.0,
+      "start": 723.68,
+      "text": "所以的话呢在不经意之间这个米迪卡的这个国际难民营"
+    },
+    {
+      "avg_logprob": -0.153398,
+      "compression_ratio": 1.06015,
+      "end": 732.92,
+      "no_speech_prob": 0.0,
+      "start": 727.92,
+      "text": "已经变成了一个汇聚全球正义力量的一个反共的阵营"
+    },
+    {
+      "avg_logprob": -0.341422,
+      "compression_ratio": 1.075,
+      "end": 734.16,
+      "no_speech_prob": 0.0,
+      "start": 732.92,
+      "text": "谢谢"
+    },
+    {
+      "avg_logprob": -0.341422,
+      "compression_ratio": 1.075,
+      "end": 749.16,
+      "no_speech_prob": 0.0,
+      "start": 734.16,
+      "text": "今天晚上大家看到了我们第一辆大巴一共三辆"
+    },
+    {
+      "avg_logprob": -0.341422,
+      "compression_ratio": 1.075,
+      "end": 752.08,
+      "no_speech_prob": 0.0,
+      "start": 749.16,
+      "text": "第一辆大巴来接在乌克兰的那里面啊"
+    },
+    {
+      "avg_logprob": -0.341422,
+      "compression_ratio": 1.075,
+      "end": 752.98,
+      "no_speech_prob": 0.0,
+      "start": 752.08,
+      "text": "已经回来了"
+    },
+    {
+      "avg_logprob": -0.131036,
+      "compression_ratio": 1.431579,
+      "end": 757.76,
+      "no_speech_prob": 0.0,
+      "start": 752.98,
+      "text": "今天呢我们也有这个几位战友康福回来归队"
+    },
+    {
+      "avg_logprob": -0.131036,
+      "compression_ratio": 1.431579,
+      "end": 760.62,
+      "no_speech_prob": 0.0,
+      "start": 757.76,
+      "text": "所以大家看我们的摄像机画面"
+    },
+    {
+      "avg_logprob": -0.131036,
+      "compression_ratio": 1.431579,
+      "end": 763.56,
+      "no_speech_prob": 0.0,
+      "start": 760.62,
+      "text": "我们也是多角度多个这个画面背景也都出来了"
+    },
+    {
+      "avg_logprob": -0.131036,
+      "compression_ratio": 1.431579,
+      "end": 765.58,
+      "no_speech_prob": 0.0,
+      "start": 763.56,
+      "text": "就大家经过这段的调整"
+    },
+    {
+      "avg_logprob": -0.131036,
+      "compression_ratio": 1.431579,
+      "end": 766.56,
+      "no_speech_prob": 0.0,
+      "start": 765.58,
+      "text": "就很战友们都很辛苦"
+    },
+    {
+      "avg_logprob": -0.131036,
+      "compression_ratio": 1.431579,
+      "end": 767.62,
+      "no_speech_prob": 0.0,
+      "start": 766.56,
+      "text": "有的感染了"
+    },
+    {
+      "avg_logprob": -0.131036,
+      "compression_ratio": 1.431579,
+      "end": 769.54,
+      "no_speech_prob": 0.0,
+      "start": 767.62,
+      "text": "现在还有在观察期的"
+    },
+    {
+      "avg_logprob": -0.131036,
+      "compression_ratio": 1.431579,
+      "end": 771.36,
+      "no_speech_prob": 0.0,
+      "start": 769.54,
+      "text": "但是康福以后"
+    },
+    {
+      "avg_logprob": -0.131036,
+      "compression_ratio": 1.431579,
+      "end": 775.18,
+      "no_speech_prob": 0.0,
+      "start": 771.36,
+      "text": "我们都精力满满回到这个工作室岗位上"
+    },
+    {
+      "avg_logprob": -0.131036,
+      "compression_ratio": 1.431579,
+      "end": 777.9,
+      "no_speech_prob": 0.0,
+      "start": 775.18,
+      "text": "这个穿着绿马甲的这个呢"
+    },
+    {
+      "avg_logprob": -0.131036,
+      "compression_ratio": 1.431579,
+      "end": 779.48,
+      "no_speech_prob": 0.0,
+      "start": 777.9,
+      "text": "大家看背对着我呢"
+    },
+    {
+      "avg_logprob": -0.131036,
+      "compression_ratio": 1.431579,
+      "end": 782.1,
+      "no_speech_prob": 0.0,
+      "start": 779.48,
+      "text": "它是波兰当地的义工"
+    },
+    {
+      "avg_logprob": -0.103025,
+      "compression_ratio": 1.462366,
+      "end": 785.58,
+      "no_speech_prob": 0.0,
+      "start": 782.1,
+      "text": "那么我们这次法治基金新中国联邦的救援行动呢"
+    },
+    {
+      "avg_logprob": -0.103025,
+      "compression_ratio": 1.462366,
+      "end": 789.5,
+      "no_speech_prob": 0.0,
+      "start": 785.58,
+      "text": "也得到了波兰当地的这种民间的吧"
+    },
+    {
+      "avg_logprob": -0.103025,
+      "compression_ratio": 1.462366,
+      "end": 792.38,
+      "no_speech_prob": 0.0,
+      "start": 789.5,
+      "text": "各界组织的这种认可和赞赏"
+    },
+    {
+      "avg_logprob": -0.103025,
+      "compression_ratio": 1.462366,
+      "end": 795.38,
+      "no_speech_prob": 0.0,
+      "start": 792.38,
+      "text": "那么我们和他们其实已经展开了多次合作"
+    },
+    {
+      "avg_logprob": -0.103025,
+      "compression_ratio": 1.462366,
+      "end": 800.06,
+      "no_speech_prob": 0.0,
+      "start": 795.38,
+      "text": "所以这次咱们新中国联邦法治基金的援救善举"
+    },
+    {
+      "avg_logprob": -0.103025,
+      "compression_ratio": 1.462366,
+      "end": 802.18,
+      "no_speech_prob": 0.0,
+      "start": 800.06,
+      "text": "得到了当地人的普遍认可"
+    },
+    {
+      "avg_logprob": -0.103025,
+      "compression_ratio": 1.462366,
+      "end": 803.88,
+      "no_speech_prob": 0.0,
+      "start": 802.18,
+      "text": "他们特别感动"
+    },
+    {
+      "avg_logprob": -0.103025,
+      "compression_ratio": 1.462366,
+      "end": 805.5,
+      "no_speech_prob": 0.0,
+      "start": 803.88,
+      "text": "为我们束大拇指点赞"
+    },
+    {
+      "avg_logprob": -0.103025,
+      "compression_ratio": 1.462366,
+      "end": 807.52,
+      "no_speech_prob": 0.0,
+      "start": 805.5,
+      "text": "所以呢每天我们来到这里工作"
+    },
+    {
+      "avg_logprob": -0.103025,
+      "compression_ratio": 1.462366,
+      "end": 810.68,
+      "no_speech_prob": 0.0,
+      "start": 807.52,
+      "text": "也是充满了这种信心爱心"
+    },
+    {
+      "avg_logprob": -0.225113,
+      "compression_ratio": 1.0,
+      "end": 812.52,
+      "no_speech_prob": 0.0,
+      "start": 810.68,
+      "text": "还有呢这种这种正能量"
+    },
+    {
+      "avg_logprob": -0.225113,
+      "compression_ratio": 1.0,
+      "end": 815.32,
+      "no_speech_prob": 0.0,
+      "start": 812.52,
+      "text": "当然看着他们你心里很揪心你知道吗"
+    },
+    {
+      "avg_logprob": -0.225113,
+      "compression_ratio": 1.0,
+      "end": 817.02,
+      "no_speech_prob": 0.0,
+      "start": 815.32,
+      "text": "特别希望这个世界没有战争"
+    },
+    {
+      "avg_logprob": -0.225113,
+      "compression_ratio": 1.0,
+      "end": 817.72,
+      "no_speech_prob": 0.0,
+      "start": 817.02,
+      "text": "只是和平"
+    },
+    {
+      "avg_logprob": -0.118396,
+      "compression_ratio": 1.20297,
+      "end": 831.8,
+      "no_speech_prob": 0.0,
+      "start": 817.72,
+      "text": "我们现在是在那个波兰的边境"
+    },
+    {
+      "avg_logprob": -0.118396,
+      "compression_ratio": 1.20297,
+      "end": 833.94,
+      "no_speech_prob": 0.0,
+      "start": 831.8,
+      "text": "米提卡的国际难民营救中心"
+    },
+    {
+      "avg_logprob": -0.118396,
+      "compression_ratio": 1.20297,
+      "end": 837.46,
+      "no_speech_prob": 0.0,
+      "start": 833.94,
+      "text": "现在是那个星期六的早晨大概十点钟"
+    },
+    {
+      "avg_logprob": -0.118396,
+      "compression_ratio": 1.20297,
+      "end": 842.58,
+      "no_speech_prob": 0.0,
+      "start": 837.46,
+      "text": "我们这边的法治基金和新中国的这个联邦的大帐篷前面呢"
+    },
+    {
+      "avg_logprob": -0.118396,
+      "compression_ratio": 1.20297,
+      "end": 845.86,
+      "no_speech_prob": 0.0,
+      "start": 842.58,
+      "text": "聚集了有很多从世界各地来的义工"
+    },
+    {
+      "avg_logprob": -0.051064,
+      "compression_ratio": 1.34296,
+      "end": 849.1,
+      "no_speech_prob": 0.0,
+      "start": 845.86,
+      "text": "他们都对我们新中国联邦和法治基金"
+    },
+    {
+      "avg_logprob": -0.051064,
+      "compression_ratio": 1.34296,
+      "end": 853.3,
+      "no_speech_prob": 0.0,
+      "start": 849.1,
+      "text": "我们这次的人道主义的救援的这种行动感到非常的震惊"
+    },
+    {
+      "avg_logprob": -0.051064,
+      "compression_ratio": 1.34296,
+      "end": 856.84,
+      "no_speech_prob": 0.0,
+      "start": 853.3,
+      "text": "所以他们有很多话想跟我们的观众朋友们分享"
+    },
+    {
+      "avg_logprob": -0.051064,
+      "compression_ratio": 1.34296,
+      "end": 858.46,
+      "no_speech_prob": 0.0,
+      "start": 856.84,
+      "text": "好了现在我们来采访"
+    },
+    {
+      "avg_logprob": -0.051064,
+      "compression_ratio": 1.34296,
+      "end": 862.92,
+      "no_speech_prob": 0.0,
+      "start": 858.46,
+      "text": "这是一位就是前美国军队的一个军人"
+    },
+    {
+      "avg_logprob": -0.051064,
+      "compression_ratio": 1.34296,
+      "end": 866.1,
+      "no_speech_prob": 0.0,
+      "start": 862.92,
+      "text": "他是去过伊拉克的那个前线战争"
+    },
+    {
+      "avg_logprob": -0.051064,
+      "compression_ratio": 1.34296,
+      "end": 868.6,
+      "no_speech_prob": 0.0,
+      "start": 866.1,
+      "text": "他今天呢也是来到我们这边呢"
+    },
+    {
+      "avg_logprob": -0.051064,
+      "compression_ratio": 1.34296,
+      "end": 871.7,
+      "no_speech_prob": 0.0,
+      "start": 868.6,
+      "text": "参与这个义工的援救的行动"
+    },
+    {
+      "avg_logprob": -0.759124,
+      "compression_ratio": 1.574257,
+      "end": 872.94,
+      "no_speech_prob": 0.0,
+      "start": 871.7,
+      "text": "我们来采访他一下"
+    },
+    {
+      "avg_logprob": -0.759124,
+      "compression_ratio": 1.574257,
+      "end": 875.94,
+      "no_speech_prob": 0.0,
+      "start": 872.94,
+      "text": "哈喽 您好吗"
+    },
+    {
+      "avg_logprob": -0.759124,
+      "compression_ratio": 1.574257,
+      "end": 878.44,
+      "no_speech_prob": 0.0,
+      "start": 875.94,
+      "text": "您可以告诉我您的名字吗"
+    },
+    {
+      "avg_logprob": -0.759124,
+      "compression_ratio": 1.574257,
+      "end": 879.14,
+      "no_speech_prob": 0.0,
+      "start": 878.44,
+      "text": "您是从美国军队的地方吗"
+    },
+    {
+      "avg_logprob": -0.759124,
+      "compression_ratio": 1.574257,
+      "end": 881.26,
+      "no_speech_prob": 0.0,
+      "start": 879.14,
+      "text": "L 美国军队的地方"
+    },
+    {
+      "avg_logprob": -0.759124,
+      "compression_ratio": 1.574257,
+      "end": 882.06,
+      "no_speech_prob": 0.0,
+      "start": 881.26,
+      "text": "美国军队的地方"
+    },
+    {
+      "avg_logprob": -0.759124,
+      "compression_ratio": 1.574257,
+      "end": 884.44,
+      "no_speech_prob": 0.0,
+      "start": 882.06,
+      "text": "您是什么带来到米提卡"
+    },
+    {
+      "avg_logprob": -0.759124,
+      "compression_ratio": 1.574257,
+      "end": 888.94,
+      "no_speech_prob": 0.0,
+      "start": 884.44,
+      "text": "和这种人生命运动的行动"
+    },
+    {
+      "avg_logprob": -0.759124,
+      "compression_ratio": 1.574257,
+      "end": 889.94,
+      "no_speech_prob": 0.0,
+      "start": 888.94,
+      "text": "这是帮助的"
+    },
+    {
+      "avg_logprob": -0.759124,
+      "compression_ratio": 1.574257,
+      "end": 891.86,
+      "no_speech_prob": 0.0,
+      "start": 889.94,
+      "text": "这是一个原理的"
+    },
+    {
+      "avg_logprob": -0.759124,
+      "compression_ratio": 1.574257,
+      "end": 893.06,
+      "no_speech_prob": 0.0,
+      "start": 891.86,
+      "text": "如果您可以帮助"
+    },
+    {
+      "avg_logprob": -0.759124,
+      "compression_ratio": 1.574257,
+      "end": 893.76,
+      "no_speech_prob": 0.0,
+      "start": 893.06,
+      "text": "帮助"
+    },
+    {
+      "avg_logprob": -0.759124,
+      "compression_ratio": 1.574257,
+      "end": 894.64,
+      "no_speech_prob": 0.0,
+      "start": 893.76,
+      "text": "我可以帮助"
+    },
+    {
+      "avg_logprob": -0.759124,
+      "compression_ratio": 1.574257,
+      "end": 895.6,
+      "no_speech_prob": 0.0,
+      "start": 894.64,
+      "text": "在这一刻"
+    },
+    {
+      "avg_logprob": -0.759124,
+      "compression_ratio": 1.574257,
+      "end": 896.3,
+      "no_speech_prob": 0.0,
+      "start": 895.6,
+      "text": "我可以帮助"
+    },
+    {
+      "avg_logprob": -4.816515,
+      "compression_ratio": 0.384615,
+      "end": 900.02,
+      "no_speech_prob": 0.0,
+      "start": 896.3,
+      "text": "stone"
+    }
+  ],
+  "text": "字幕志愿者 李宗盛 It's been headlines for a while, but it hasn't gone away. Far from it, as new data shows. According to the latest results from the Office for National Statistics Infection Survey, more than three and a quarter million people in the UK had COVID in the week ending March the 12th. That's about one in every 21 people. And after a steady fall in cases in the first two months of the year, the prevalence has been increasing through March, and the O number is rising too. So what's going on? Well, for a start, our behaviour has relaxed. The lifting of Plan B at the end of January led to a decline in face masks, lateral flow tests, social distancing and self-isolation. And those trends accelerated at the end of February, when the Prime Minister outlined his plan to live with COVID. And that all gives the virus more opportunities to spread. But the virus has changed too. At the start of the year, the original Omicron variant, called BA.1, accounted for almost all COVID cases. But in mid-February, its closely related spin-off called BA.2, here in light blue, began to take off and take over, now accounting for more than 75% of cases. The two viruses are so similar, some scientists call it sister variants. But BA.2 is 1.4 times more infectious. And that's a fucking booster that's driving up cases here in the UK, as well as hospital admissions. While in earlier waves there was a lag between people getting infected and then needing emergency care, this time the rise in cases and hospitalisations happen at the same time. It suggests many patients are going into hospital with the virus, not because of the virus. It's still disruptive for the NHS, but public health experts say the rise should be short-lived. I've had the President's call this morning with President G. and President G. Does the White House now have a sense of whether or not China has decided whether to assist Russia backfill its supplies and fulfill its request for materiel its support of its invading Ukraine? Well, I'm not going to give an assessment of that from here. What I can tell you is that the majority of this call, as I think you heard, you saw in the readout, and you heard, I think, on the call we just did, but was focused on Russia's unprovoked invasion of Ukraine, the President spent the vast majority of the nearly two hours was spent with the President outlining the views of the United States and our allies and partners on this crisis, including a detailed overview of efforts to prevent and then respond to the invasion, how we got here, steps we've taken, where we've gone, and why. And, of course, as was also noted in the readout, but let me just reiterate, he also conveyed and described the implications and consequences if China provides material support to Russia. But, again, I'm not going to provide any additional assessment from here. And I want to tell you that all of you here are still doing this here. It's time to meet you, it's time to talk to you, it's time to repair the entire property and puissance for Ukraine. And I want to tell you that there are now people about what you should hear. especially in Moscow, it's time to meet you, it's time to talk to you, it's time to enhance you and respect and sanitary and einfachness for Ukraine. And if you will see your suffering for Ukraine,否则,不然而是不足以多年,你不足以多年, чтобы扶持人今天在 Москве,出嘲笑了很多言語在几天上,几天上,几天上,几天上,几天上,几天上,几天上我希望你回顧一下,一件事我认为,在整个人的行動,几天上,几天上,几天上几天上,几天上,几天上,几天上,几天上,几天上2005天上,几天上,几天上,几天上,几天上,几天上,几天上… Então,几天上,几天上,几天上,几天上,几天上,几天上,几天上…几天上,几天上,几天上,几天上,几天上,几天上,几天上…几天上,几天上,几天上,几天上,几天上,几天上…几天上,几天上,几天上,几天上…几天上,几天上,几天上…几天上…几天上,几天上…几天上…几天上…通過第二次 Change,\" China Russia today extended its air to NATO territory. authorities claim Russian fired from the Black Sea medical repair facility city of Lviv near the香港人的反应是不一样的但是韩国和其他国家的关系是一部分的争论政府总统的决定政府总统的决定是决定的决定决定的决定决定的决定决定的决定决定决定决定决定决定决定决定决定决定决定决定决定决定决定决定决定已对非 Lynás mai稀网本事者都会新闻自主要糟糕現在主要 sta稿韩国本事领主要穿重言De方法Un言明自主要成立决定决定决定称元М艺它继续 democracy我们继续 этимRussia may be planning to use chemical or biological agents against the ukrainian peopleproof of the heavy toll high gas prices are taking on americansthousands of drivers in chicago waited in line for hours thursday to get a free fill upi've been out here since five o'clock this morninga local businessman donated two hundred thousand dollars in gas to stations across the cityand he says he'll do it againhe is a blessing and i thank everybody that put their efforts to help you knowit comes as americans brace for even higher prices at the pumpoil prices climbed eight percent thursday due to growing supply concerns stemming from the war in ukrainethe international energy agency warns by april global markets could see the biggest supply crisis in decadesin california gas prices now average 578 a gallon to offer relief some state lawmakers are now proposing a 400 dollar rebate for every taxpayerhigh gas prices also affecting how kids get to school with some districts now relying on a limited number ofhybrid and electric buses having those options really allows us to continue onand days after uber and lyft announced fuel surcharges amazon flex drivers who use their own vehicles to make deliveries are now demanding higher pay to offset the pain at the pumphow coche spot??ida casekeyros having been turned outof how much food from ph contentpocheof how much food from phonyflangmeof how much food from phonyof how much food from phonyof how much food from phonyof how much food from phonyof how much food from phonyof how much food from phonyof how much food from phonyof how much food from phonyof how much food from phonyof how much food from phonyof how much food from phonyof how much food from phony通 After when phony people我们法治基金的接电话的义工就是接收到一个电话这是一个德国人他是住在德国的南部他呢就是给我们法治基金就打电话他说我住在距离乌克兰边境的800公里的一个南部的德国说我的太太是个华人我太太在社交媒体上看到了你们新中国人在这次人道主义的救援当中就是你们的表现他的太太非常的感动因为作为一个生活在海外的华人我想可能很多的华人都没有见过这种场面所以就是生活在德国南部的一个华人所以他跟他的德国的先生的话呢就主动联系到我们法治基金他们说我们能够为你们做些什么我们也想参与这次法治基金和新中国联邦在这次乌克兰这个紧急救援当中的这么一个营救的活动所以的话呢这只是其中的一例然后今天早晨的话呢我来的比较早在八点钟的时候我看到一个华人的一个面孔呢他也是来到我们法治基金的一个大帐篷前面的话呢帮助我们整理这个难民的这个救援的物资这个小伙子大概是我看也就是30岁出头吧他是一个长的是华人的面孔所以我就很好奇我就问他是从哪里来他是从美国德州来的他的爸爸是大陆的华人妈妈是从台湾来的华人所以他是出生在美国的一个华人叫做ABC就是American Born Chinese所以的话呢他是从美国呢飞到这个波兰他想参加这次那个人道的救援的行动然后就看见我们法治基金和新中国联邦的这个大牌子然后呢他在家里是讲中文的所以他能够认得我们的那个中国字所以他就有念出他说这是新中国联邦法治基金所以他说的你们做得太好了所以他就主动的就是帮助我们在这个大帐篷前面去帮我们的忙所以我有采访到他他说呢这次你们法治基金和新中国联邦你们是真的是这是一次人道主义的一个非政治的一个行动所以他是作为一个华人的这个第二代他感到非常的骄傲所以呢他也这个加入了我们的这个这个义工的团队而且他很高兴接受我们的采访所以的话他也是知道我们法治基金和新中国联邦我们代表的是真正的中国人而且我们是要推翻邪恶的中国共产党然后我们是支持香港人民的追求自由法治的社会我们也支持台湾人民他们享有这个民主自由和法治的这个权利我们跟乌克兰人民站在一起所以的话呢今天我们看到的这个新的这个亮点就是全球的华人开始关注这次法治基金和新中国联邦在米迪卡的这个整个人道主义救援的行动因为他们看到了社交媒体上的传播现在很多人都在传这件事情所以的话呢在不经意之间这个米迪卡的这个国际难民营已经变成了一个汇聚全球正义力量的一个反共的阵营谢谢今天晚上大家看到了我们第一辆大巴一共三辆第一辆大巴来接在乌克兰的那里面啊已经回来了今天呢我们也有这个几位战友康福回来归队所以大家看我们的摄像机画面我们也是多角度多个这个画面背景也都出来了就大家经过这段的调整就很战友们都很辛苦有的感染了现在还有在观察期的但是康福以后我们都精力满满回到这个工作室岗位上这个穿着绿马甲的这个呢大家看背对着我呢它是波兰当地的义工那么我们这次法治基金新中国联邦的救援行动呢也得到了波兰当地的这种民间的吧各界组织的这种认可和赞赏那么我们和他们其实已经展开了多次合作所以这次咱们新中国联邦法治基金的援救善举得到了当地人的普遍认可他们特别感动为我们束大拇指点赞所以呢每天我们来到这里工作也是充满了这种信心爱心还有呢这种这种正能量当然看着他们你心里很揪心你知道吗特别希望这个世界没有战争只是和平我们现在是在那个波兰的边境米提卡的国际难民营救中心现在是那个星期六的早晨大概十点钟我们这边的法治基金和新中国的这个联邦的大帐篷前面呢聚集了有很多从世界各地来的义工他们都对我们新中国联邦和法治基金我们这次的人道主义的救援的这种行动感到非常的震惊所以他们有很多话想跟我们的观众朋友们分享好了现在我们来采访这是一位就是前美国军队的一个军人他是去过伊拉克的那个前线战争他今天呢也是来到我们这边呢参与这个义工的援救的行动我们来采访他一下哈喽 您好吗您可以告诉我您的名字吗您是从美国军队的地方吗L 美国军队的地方美国军队的地方您是什么带来到米提卡和这种人生命运动的行动这是帮助的这是一个原理的如果您可以帮助帮助我可以帮助在这一刻我可以帮助stone"
+}
