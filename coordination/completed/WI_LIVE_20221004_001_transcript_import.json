@@ -1,0 +1,9 @@
+{
+  "task_id": "WI_LIVE_20221004_001_transcript_import",
+  "agent_id": "codex-local-asr-agent50-20261026",
+  "completed_at": "2026-10-26T06:47:00Z",
+  "result_commit": "851e7c2697b7e09c29a0a42663c9b3b88683a58e",
+  "outputs": ["data/current/transcript_versions/asr_live_20221004_001.jsonl", "data/current/transcript_cues/asr_live_20221004_001.jsonl", "data/current/live_segments/asr_live_20221004_001.jsonl", "data/current/asr_manifests/asr_live_20221004_001.json"],
+  "validation": "MLX Whisper gate passed: 351 cues, 2071 chars, 208.193 chars/min, 0.995729 end coverage, zero invalid timestamps or flagged repetition; beginning/middle/end audit coherent with only scattered natural filler tokens and no persistent microtoken or hallucination loop; machine-unverified retained",
+  "workflow_mode": "continuous-worker-v2", "claim_protocol": "claim-protocol-v2", "entry_mode": "work", "continue_after_finish": true, "finish_prerequisites_revalidated": true
+}
