@@ -3,7 +3,7 @@
   "agent_id": "codex-local-asr-agent50-20261026",
   "claimed_at": "2026-10-26T02:02:54.579098+00:00",
   "base_commit": "7598bf513230f7eba48139640b5c7a6e2b2b580e",
-  "status": "in_progress",
+  "status": "released",
   "workflow_mode": "continuous-worker-v2",
   "claim_protocol": "claim-protocol-v2",
   "entry_mode": "work",
@@ -22,5 +22,7 @@
   ],
   "scope": "Create evidence-grounded neutral key points and controlled topic assignments.",
   "reclaimed_expired_claim": false,
-  "static_claim_lease_hours": 24
+  "static_claim_lease_hours": 24,
+  "released_at": "2026-10-26T02:05:00.387194+00:00",
+  "release_reason": "Local Qwen extraction failed quality gate: only 8/10 segments covered, two parse errors, and multiple health/vaccine and political points altered or overstated the evidence. Invalid outputs were discarded; transcript, cues, and natural segments remain completed and valid. Retry requires complete human evidence reconstruction or a more reliable grounded model."
 }
