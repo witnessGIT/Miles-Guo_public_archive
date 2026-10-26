@@ -1,0 +1,16 @@
+{
+  "audio_duration_sec": 13366.321,
+  "audio_sha256": "e9ea78b81322f583d554a7572bba04d92ae4fc6ae5473ba9b4855e8333567c06",
+  "audio_size_bytes": 52201368,
+  "chunk_duration_sec": 900,
+  "live_id": "LIVE_20220506_001",
+  "media_asset_id": "MA_RUMBLE_V5AEVLH_20220506_1",
+  "media_committed_to_git": false,
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "paid_api_used": false,
+  "processing_location": "github-hosted-macos-arm64",
+  "resume_validation": "per_chunk_pcm_wav_sha256",
+  "schema_version": "cloud-asr-checkpoint-set-v1",
+  "source_id": "SRC_RUMBLE_V5AEVLH_20220506_1",
+  "source_url": "https://rumble.com/v5aevlh-20220506-1.html"
+}

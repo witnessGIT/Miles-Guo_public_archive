@@ -1,0 +1,960 @@
+{
+  "chunk_audio_sha256": "5636f95cd8e15131b5b13bf5cd41d37caebc93dfc99093da3ea25e14e23e3359",
+  "chunk_index": 0,
+  "completed_at": "2026-10-26T09:35:55Z",
+  "language": "zh",
+  "live_id": "LIVE_20220419_001",
+  "media_committed_to_git": false,
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "offset_sec": 0,
+  "paid_api_used": false,
+  "processing_location": "github-hosted-macos-arm64",
+  "schema_version": "cloud-asr-chunk-v1",
+  "segments": [
+    {
+      "avg_logprob": -0.793322,
+      "compression_ratio": 0.571429,
+      "end": 29.98,
+      "no_speech_prob": 0.0,
+      "start": 0.0,
+      "text": "谢谢大家"
+    },
+    {
+      "avg_logprob": -0.419557,
+      "compression_ratio": 0.571429,
+      "end": 59.98,
+      "no_speech_prob": 0.0,
+      "start": 30.0,
+      "text": "谢谢大家"
+    },
+    {
+      "avg_logprob": -0.265699,
+      "compression_ratio": 0.571429,
+      "end": 89.98,
+      "no_speech_prob": 0.0,
+      "start": 60.0,
+      "text": "谢谢大家"
+    },
+    {
+      "avg_logprob": -0.357371,
+      "compression_ratio": 0.571429,
+      "end": 119.98,
+      "no_speech_prob": 0.0,
+      "start": 90.0,
+      "text": "谢谢大家"
+    },
+    {
+      "avg_logprob": -0.363093,
+      "compression_ratio": 0.571429,
+      "end": 149.98,
+      "no_speech_prob": 0.0,
+      "start": 120.0,
+      "text": "谢谢大家"
+    },
+    {
+      "avg_logprob": -0.391764,
+      "compression_ratio": 0.571429,
+      "end": 179.98,
+      "no_speech_prob": 0.0,
+      "start": 150.0,
+      "text": "谢谢大家"
+    },
+    {
+      "avg_logprob": -0.289487,
+      "compression_ratio": 0.571429,
+      "end": 209.96,
+      "no_speech_prob": 0.0,
+      "start": 179.98,
+      "text": "谢谢大家"
+    },
+    {
+      "avg_logprob": -0.330644,
+      "compression_ratio": 0.571429,
+      "end": 239.94,
+      "no_speech_prob": 0.0,
+      "start": 209.96,
+      "text": "谢谢大家"
+    },
+    {
+      "avg_logprob": -0.517003,
+      "compression_ratio": 0.571429,
+      "end": 269.92,
+      "no_speech_prob": 0.0,
+      "start": 239.94,
+      "text": "谢谢大家"
+    },
+    {
+      "avg_logprob": -0.423055,
+      "compression_ratio": 0.571429,
+      "end": 359.92,
+      "no_speech_prob": 0.0,
+      "start": 329.94,
+      "text": "谢谢大家"
+    },
+    {
+      "avg_logprob": -0.450984,
+      "compression_ratio": 0.5,
+      "end": 389.9,
+      "no_speech_prob": 0.0,
+      "start": 359.92,
+      "text": "请来吧"
+    },
+    {
+      "avg_logprob": -0.42296,
+      "compression_ratio": 0.694444,
+      "end": 391.8,
+      "no_speech_prob": 0.0,
+      "start": 389.9,
+      "text": "北京时间晚上9点钟"
+    },
+    {
+      "avg_logprob": -0.290984,
+      "compression_ratio": 1.232143,
+      "end": 422.42,
+      "no_speech_prob": 0.0,
+      "start": 419.9,
+      "text": "跟着共产党走进火葬场"
+    },
+    {
+      "avg_logprob": -0.290984,
+      "compression_ratio": 1.232143,
+      "end": 424.5,
+      "no_speech_prob": 0.0,
+      "start": 422.42,
+      "text": "关键让你走进火葬场的便宜"
+    },
+    {
+      "avg_logprob": -0.290984,
+      "compression_ratio": 1.232143,
+      "end": 425.88,
+      "no_speech_prob": 0.0,
+      "start": 424.5,
+      "text": "跟着共产党"
+    },
+    {
+      "avg_logprob": -0.290984,
+      "compression_ratio": 1.232143,
+      "end": 427.9,
+      "no_speech_prob": 0.0,
+      "start": 425.88,
+      "text": "就让你在火葬场门口转下"
+    },
+    {
+      "avg_logprob": -0.290984,
+      "compression_ratio": 1.232143,
+      "end": 429.44,
+      "no_speech_prob": 0.0,
+      "start": 427.9,
+      "text": "叫你死不了活不了"
+    },
+    {
+      "avg_logprob": -0.762817,
+      "compression_ratio": 0.571429,
+      "end": 459.42,
+      "no_speech_prob": 0.0,
+      "start": 429.44,
+      "text": "美国之音"
+    },
+    {
+      "avg_logprob": -0.247212,
+      "compression_ratio": 1.378378,
+      "end": 461.72,
+      "no_speech_prob": 0.0,
+      "start": 459.42,
+      "text": "直播那么在今天的特别节目中"
+    },
+    {
+      "avg_logprob": -0.247212,
+      "compression_ratio": 1.378378,
+      "end": 465.06,
+      "no_speech_prob": 0.0,
+      "start": 461.98,
+      "text": "美国之音就来专访这位新闻焦点人物"
+    },
+    {
+      "avg_logprob": -0.247212,
+      "compression_ratio": 1.378378,
+      "end": 465.82,
+      "no_speech_prob": 0.0,
+      "start": 465.3,
+      "text": "郭文贵"
+    },
+    {
+      "avg_logprob": -0.247212,
+      "compression_ratio": 1.378378,
+      "end": 467.62,
+      "no_speech_prob": 0.0,
+      "start": 466.08,
+      "text": "郭文贵向美国之音承诺"
+    },
+    {
+      "avg_logprob": -0.247212,
+      "compression_ratio": 1.378378,
+      "end": 469.92,
+      "no_speech_prob": 0.0,
+      "start": 467.86,
+      "text": "他将带来核爆级别的爆料"
+    },
+    {
+      "avg_logprob": -0.247212,
+      "compression_ratio": 1.378378,
+      "end": 471.2,
+      "no_speech_prob": 0.0,
+      "start": 470.42,
+      "text": "没有人知道"
+    },
+    {
+      "avg_logprob": -0.247212,
+      "compression_ratio": 1.378378,
+      "end": 475.3,
+      "no_speech_prob": 0.0,
+      "start": 471.46,
+      "text": "郭文贵的爆料将指向哪个层次和级别的中共"
+    },
+    {
+      "avg_logprob": -0.247212,
+      "compression_ratio": 1.378378,
+      "end": 475.8,
+      "no_speech_prob": 0.0,
+      "start": 475.54,
+      "text": "卫外"
+    },
+    {
+      "avg_logprob": -0.247212,
+      "compression_ratio": 1.378378,
+      "end": 476.58,
+      "no_speech_prob": 0.0,
+      "start": 476.06,
+      "text": "必须爆料"
+    },
+    {
+      "avg_logprob": -0.247212,
+      "compression_ratio": 1.378378,
+      "end": 477.6,
+      "no_speech_prob": 0.0,
+      "start": 476.82,
+      "text": "那么这就是为什么"
+    },
+    {
+      "avg_logprob": -0.247212,
+      "compression_ratio": 1.378378,
+      "end": 479.64,
+      "no_speech_prob": 0.0,
+      "start": 477.86,
+      "text": "我说要把王岐山这个书记这个事情"
+    },
+    {
+      "avg_logprob": -0.247212,
+      "compression_ratio": 1.378378,
+      "end": 481.18,
+      "no_speech_prob": 0.0,
+      "start": 479.9,
+      "text": "直接给说出来的原因吗"
+    },
+    {
+      "avg_logprob": -0.247212,
+      "compression_ratio": 1.378378,
+      "end": 484.26,
+      "no_speech_prob": 0.0,
+      "start": 484.0,
+      "text": "对不起"
+    },
+    {
+      "avg_logprob": -0.247212,
+      "compression_ratio": 1.378378,
+      "end": 485.78,
+      "no_speech_prob": 0.0,
+      "start": 484.5,
+      "text": "现在就先先得"
+    },
+    {
+      "avg_logprob": -0.247212,
+      "compression_ratio": 1.378378,
+      "end": 486.82,
+      "no_speech_prob": 0.0,
+      "start": 486.04,
+      "text": "造证给停止了"
+    },
+    {
+      "avg_logprob": -0.247212,
+      "compression_ratio": 1.378378,
+      "end": 488.6,
+      "no_speech_prob": 0.0,
+      "start": 487.84,
+      "text": "我们先停止"
+    },
+    {
+      "avg_logprob": -0.147548,
+      "compression_ratio": 1.092593,
+      "end": 498.32,
+      "no_speech_prob": 0.0,
+      "start": 488.6,
+      "text": "这是郭文贵首次在海外直面自由媒体接受采访"
+    },
+    {
+      "avg_logprob": -0.147548,
+      "compression_ratio": 1.092593,
+      "end": 505.24,
+      "no_speech_prob": 0.0,
+      "start": 504.22,
+      "text": "各位听众各位观众"
+    },
+    {
+      "avg_logprob": -0.147548,
+      "compression_ratio": 1.092593,
+      "end": 506.52,
+      "no_speech_prob": 0.0,
+      "start": 505.5,
+      "text": "真的非常对不起"
+    },
+    {
+      "avg_logprob": -0.147548,
+      "compression_ratio": 1.092593,
+      "end": 507.8,
+      "no_speech_prob": 0.0,
+      "start": 506.78,
+      "text": "因为某种原因"
+    },
+    {
+      "avg_logprob": -0.147548,
+      "compression_ratio": 1.092593,
+      "end": 509.6,
+      "no_speech_prob": 0.0,
+      "start": 508.06,
+      "text": "我们直播必须停止"
+    },
+    {
+      "avg_logprob": -0.147548,
+      "compression_ratio": 1.092593,
+      "end": 512.16,
+      "no_speech_prob": 0.0,
+      "start": 510.1,
+      "text": "向大家表示深深的道歉"
+    },
+    {
+      "avg_logprob": -0.253252,
+      "compression_ratio": 1.138554,
+      "end": 518.82,
+      "no_speech_prob": 0.0,
+      "start": 512.16,
+      "text": "国内的很多战友呢"
+    },
+    {
+      "avg_logprob": -0.253252,
+      "compression_ratio": 1.138554,
+      "end": 521.64,
+      "no_speech_prob": 0.0,
+      "start": 519.32,
+      "text": "因为他们深深的记住了419"
+    },
+    {
+      "avg_logprob": -0.253252,
+      "compression_ratio": 1.138554,
+      "end": 524.7,
+      "no_speech_prob": 0.0,
+      "start": 521.88,
+      "text": "还有很多人开始关注爆料革命"
+    },
+    {
+      "avg_logprob": -0.253252,
+      "compression_ratio": 1.138554,
+      "end": 526.76,
+      "no_speech_prob": 0.0,
+      "start": 524.96,
+      "text": "关注七哥是因为419"
+    },
+    {
+      "avg_logprob": -0.253252,
+      "compression_ratio": 1.138554,
+      "end": 528.54,
+      "no_speech_prob": 0.0,
+      "start": 527.26,
+      "text": "419那一天"
+    },
+    {
+      "avg_logprob": -0.253252,
+      "compression_ratio": 1.138554,
+      "end": 531.88,
+      "no_speech_prob": 0.0,
+      "start": 531.1,
+      "text": "对我来讲"
+    },
+    {
+      "avg_logprob": -0.253252,
+      "compression_ratio": 1.138554,
+      "end": 534.68,
+      "no_speech_prob": 0.0,
+      "start": 532.12,
+      "text": "那个真的是过去的郭文贵已经没了"
+    },
+    {
+      "avg_logprob": -0.421719,
+      "compression_ratio": 1.010526,
+      "end": 535.44,
+      "no_speech_prob": 0.0,
+      "start": 534.68,
+      "text": "419"
+    },
+    {
+      "avg_logprob": -0.421719,
+      "compression_ratio": 1.010526,
+      "end": 542.62,
+      "no_speech_prob": 0.0,
+      "start": 540.06,
+      "text": "419一定会成为一个伟大的日子"
+    },
+    {
+      "avg_logprob": -0.421719,
+      "compression_ratio": 1.010526,
+      "end": 544.4,
+      "no_speech_prob": 0.0,
+      "start": 543.12,
+      "text": "它将成为"
+    },
+    {
+      "avg_logprob": -0.421719,
+      "compression_ratio": 1.010526,
+      "end": 548.0,
+      "no_speech_prob": 0.0,
+      "start": 544.66,
+      "text": "中美关系历史上一个重大的事件"
+    },
+    {
+      "avg_logprob": -3.788082,
+      "compression_ratio": 0.2,
+      "end": 578.0,
+      "no_speech_prob": 0.0,
+      "start": 548.0,
+      "text": "о"
+    },
+    {
+      "avg_logprob": -0.775117,
+      "compression_ratio": 0.857143,
+      "end": 588.0,
+      "no_speech_prob": 0.0,
+      "start": 578.0,
+      "text": "啊"
+    },
+    {
+      "avg_logprob": -0.775117,
+      "compression_ratio": 0.857143,
+      "end": 592.0,
+      "no_speech_prob": 0.0,
+      "start": 588.0,
+      "text": "啊"
+    },
+    {
+      "avg_logprob": -0.775117,
+      "compression_ratio": 0.857143,
+      "end": 598.0,
+      "no_speech_prob": 0.0,
+      "start": 592.0,
+      "text": "啊"
+    },
+    {
+      "avg_logprob": -0.775117,
+      "compression_ratio": 0.857143,
+      "end": 604.0,
+      "no_speech_prob": 0.0,
+      "start": 598.0,
+      "text": "啊"
+    },
+    {
+      "avg_logprob": -0.338966,
+      "compression_ratio": 0.887755,
+      "end": 610.0,
+      "no_speech_prob": 0.0,
+      "start": 604.0,
+      "text": "啊"
+    },
+    {
+      "avg_logprob": -0.338966,
+      "compression_ratio": 0.887755,
+      "end": 614.0,
+      "no_speech_prob": 0.0,
+      "start": 610.0,
+      "text": "我奔華已多"
+    },
+    {
+      "avg_logprob": -0.338966,
+      "compression_ratio": 0.887755,
+      "end": 617.0,
+      "no_speech_prob": 0.0,
+      "start": 614.0,
+      "text": "被怪遍山中"
+    },
+    {
+      "avg_logprob": -0.338966,
+      "compression_ratio": 0.887755,
+      "end": 623.0,
+      "no_speech_prob": 0.0,
+      "start": 617.0,
+      "text": "從此情人永相可"
+    },
+    {
+      "avg_logprob": -0.338966,
+      "compression_ratio": 0.887755,
+      "end": 626.0,
+      "no_speech_prob": 0.0,
+      "start": 623.0,
+      "text": "求今二十年"
+    },
+    {
+      "avg_logprob": -0.338966,
+      "compression_ratio": 0.887755,
+      "end": 630.0,
+      "no_speech_prob": 0.0,
+      "start": 626.0,
+      "text": "我受盡了折磨"
+    },
+    {
+      "avg_logprob": -0.3778,
+      "compression_ratio": 1.0,
+      "end": 635.0,
+      "no_speech_prob": 0.0,
+      "start": 630.0,
+      "text": "這個世界不要我"
+    },
+    {
+      "avg_logprob": -0.3778,
+      "compression_ratio": 1.0,
+      "end": 637.0,
+      "no_speech_prob": 0.0,
+      "start": 635.0,
+      "text": "請來吧"
+    },
+    {
+      "avg_logprob": -0.3778,
+      "compression_ratio": 1.0,
+      "end": 641.0,
+      "no_speech_prob": 0.0,
+      "start": 637.0,
+      "text": "別再如此冷漠"
+    },
+    {
+      "avg_logprob": -0.3778,
+      "compression_ratio": 1.0,
+      "end": 643.0,
+      "no_speech_prob": 0.0,
+      "start": 641.0,
+      "text": "請來吧"
+    },
+    {
+      "avg_logprob": -0.3778,
+      "compression_ratio": 1.0,
+      "end": 647.0,
+      "no_speech_prob": 0.0,
+      "start": 643.0,
+      "text": "光頭說有多弱"
+    },
+    {
+      "avg_logprob": -0.3778,
+      "compression_ratio": 1.0,
+      "end": 650.0,
+      "no_speech_prob": 0.0,
+      "start": 647.0,
+      "text": "只為能"
+    },
+    {
+      "avg_logprob": -0.3778,
+      "compression_ratio": 1.0,
+      "end": 654.0,
+      "no_speech_prob": 0.0,
+      "start": 650.0,
+      "text": "進我出情人手"
+    },
+    {
+      "avg_logprob": -0.281125,
+      "compression_ratio": 0.876404,
+      "end": 661.0,
+      "no_speech_prob": 0.0,
+      "start": 654.0,
+      "text": "要埋葬那些惡的中空"
+    },
+    {
+      "avg_logprob": -0.281125,
+      "compression_ratio": 0.876404,
+      "end": 664.0,
+      "no_speech_prob": 0.0,
+      "start": 661.0,
+      "text": "牙齒全八落"
+    },
+    {
+      "avg_logprob": -0.281125,
+      "compression_ratio": 0.876404,
+      "end": 667.0,
+      "no_speech_prob": 0.0,
+      "start": 664.0,
+      "text": "鐵鎖已斑駁"
+    },
+    {
+      "avg_logprob": -0.281125,
+      "compression_ratio": 0.876404,
+      "end": 672.0,
+      "no_speech_prob": 0.0,
+      "start": 667.0,
+      "text": "這就是我的一生"
+    },
+    {
+      "avg_logprob": -0.386849,
+      "compression_ratio": 0.830769,
+      "end": 677.0,
+      "no_speech_prob": 0.0,
+      "start": 672.0,
+      "text": "你若不醒來"
+    },
+    {
+      "avg_logprob": -0.386849,
+      "compression_ratio": 0.830769,
+      "end": 680.0,
+      "no_speech_prob": 0.0,
+      "start": 677.0,
+      "text": "還在夢裡要走"
+    },
+    {
+      "avg_logprob": -0.386849,
+      "compression_ratio": 0.830769,
+      "end": 686.0,
+      "no_speech_prob": 0.0,
+      "start": 680.0,
+      "text": "又是第一座築口"
+    },
+    {
+      "avg_logprob": -1.429995,
+      "compression_ratio": 3.861111,
+      "end": 687.0,
+      "no_speech_prob": 0.0,
+      "start": 686.0,
+      "text": "尤啡"
+    },
+    {
+      "avg_logprob": -1.429995,
+      "compression_ratio": 3.861111,
+      "end": 687.9,
+      "no_speech_prob": 0.0,
+      "start": 687.0,
+      "text": "stem"
+    },
+    {
+      "avg_logprob": -1.429995,
+      "compression_ratio": 3.861111,
+      "end": 687.9,
+      "no_speech_prob": 0.0,
+      "start": 687.9,
+      "text": "嬣"
+    },
+    {
+      "avg_logprob": -1.429995,
+      "compression_ratio": 3.861111,
+      "end": 687.76,
+      "no_speech_prob": 0.0,
+      "start": 687.0,
+      "text": "穡"
+    },
+    {
+      "avg_logprob": -1.429995,
+      "compression_ratio": 3.861111,
+      "end": 687.88,
+      "no_speech_prob": 0.0,
+      "start": 687.76,
+      "text": "嬣"
+    },
+    {
+      "avg_logprob": -1.429995,
+      "compression_ratio": 3.861111,
+      "end": 687.94,
+      "no_speech_prob": 0.0,
+      "start": 687.88,
+      "text": "嬣"
+    },
+    {
+      "avg_logprob": -1.429995,
+      "compression_ratio": 3.861111,
+      "end": 687.94,
+      "no_speech_prob": 0.0,
+      "start": 687.94,
+      "text": "嬣"
+    },
+    {
+      "avg_logprob": -1.429995,
+      "compression_ratio": 3.861111,
+      "end": 687.96,
+      "no_speech_prob": 0.0,
+      "start": 687.88,
+      "text": "嬣"
+    },
+    {
+      "avg_logprob": -0.159286,
+      "compression_ratio": 17.153846,
+      "end": 717.96,
+      "no_speech_prob": 0.0,
+      "start": 687.96,
+      "text": "U.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A"
+    },
+    {
+      "avg_logprob": -0.648031,
+      "compression_ratio": 0.918182,
+      "end": 724.96,
+      "no_speech_prob": 0.0,
+      "start": 717.96,
+      "text": "从自己人永相隔"
+    },
+    {
+      "avg_logprob": -0.648031,
+      "compression_ratio": 0.918182,
+      "end": 731.96,
+      "no_speech_prob": 0.0,
+      "start": 724.96,
+      "text": "就近二十年 我受尽了这梦"
+    },
+    {
+      "avg_logprob": -0.648031,
+      "compression_ratio": 0.918182,
+      "end": 736.96,
+      "no_speech_prob": 0.0,
+      "start": 731.96,
+      "text": "把我全都要我"
+    },
+    {
+      "avg_logprob": -0.648031,
+      "compression_ratio": 0.918182,
+      "end": 743.96,
+      "no_speech_prob": 0.0,
+      "start": 736.96,
+      "text": "醒来吧 别再如此冷漠"
+    },
+    {
+      "avg_logprob": -0.384263,
+      "compression_ratio": 0.991379,
+      "end": 749.96,
+      "no_speech_prob": 0.0,
+      "start": 743.96,
+      "text": "醒来吧 跑掉所有懦弱"
+    },
+    {
+      "avg_logprob": -0.384263,
+      "compression_ratio": 0.991379,
+      "end": 755.96,
+      "no_speech_prob": 0.0,
+      "start": 749.96,
+      "text": "只为了 接着他住亲人手"
+    },
+    {
+      "avg_logprob": -0.384263,
+      "compression_ratio": 0.991379,
+      "end": 761.96,
+      "no_speech_prob": 0.0,
+      "start": 755.96,
+      "text": "要来找 那些何一种口"
+    },
+    {
+      "avg_logprob": -0.384263,
+      "compression_ratio": 0.991379,
+      "end": 771.96,
+      "no_speech_prob": 0.0,
+      "start": 765.96,
+      "text": "醒来吧 别再如此冷漠"
+    },
+    {
+      "avg_logprob": -0.196124,
+      "compression_ratio": 0.884211,
+      "end": 777.96,
+      "no_speech_prob": 0.0,
+      "start": 771.96,
+      "text": "醒来吧 跑掉所有懦弱"
+    },
+    {
+      "avg_logprob": -0.196124,
+      "compression_ratio": 0.884211,
+      "end": 783.96,
+      "no_speech_prob": 0.0,
+      "start": 777.96,
+      "text": "只为能 接我住亲人手"
+    },
+    {
+      "avg_logprob": -0.196124,
+      "compression_ratio": 0.884211,
+      "end": 789.96,
+      "no_speech_prob": 0.0,
+      "start": 783.96,
+      "text": "要埋葬 那些恶的痛苦"
+    },
+    {
+      "avg_logprob": -0.496607,
+      "compression_ratio": 0.825397,
+      "end": 795.96,
+      "no_speech_prob": 0.0,
+      "start": 789.96,
+      "text": "牙齿全把路 铁锁已斑隔"
+    },
+    {
+      "avg_logprob": -0.496607,
+      "compression_ratio": 0.825397,
+      "end": 799.96,
+      "no_speech_prob": 0.0,
+      "start": 795.96,
+      "text": "这就是我的遗憾"
+    },
+    {
+      "avg_logprob": -0.309175,
+      "compression_ratio": 0.825397,
+      "end": 805.96,
+      "no_speech_prob": 0.0,
+      "start": 799.96,
+      "text": "就是我的遗憾"
+    },
+    {
+      "avg_logprob": -0.309175,
+      "compression_ratio": 0.825397,
+      "end": 811.96,
+      "no_speech_prob": 0.0,
+      "start": 805.96,
+      "text": "从宝贵醒来 从自要站着我"
+    },
+    {
+      "avg_logprob": -0.751187,
+      "compression_ratio": 0.65625,
+      "end": 817.96,
+      "no_speech_prob": 0.0,
+      "start": 811.96,
+      "text": "我们打罪着铁锁"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 0.68,
+      "end": 818.3,
+      "no_speech_prob": 0.0,
+      "start": 817.96,
+      "text": "是 D"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 0.68,
+      "end": 819.96,
+      "no_speech_prob": 0.0,
+      "start": 818.3,
+      "text": "MK"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 0.68,
+      "end": 819.96,
+      "no_speech_prob": 0.0,
+      "start": 818.1,
+      "text": "graj"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 0.68,
+      "end": 819.96,
+      "no_speech_prob": 0.0,
+      "start": 819.96,
+      "text": "B"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 0.68,
+      "end": 819.8,
+      "no_speech_prob": 0.0,
+      "start": 818.96,
+      "text": "3"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 0.68,
+      "end": 819.96,
+      "no_speech_prob": 0.0,
+      "start": 819.8,
+      "text": "0"
+    },
+    {
+      "avg_logprob": -0.157592,
+      "compression_ratio": 1.340909,
+      "end": 855.74,
+      "no_speech_prob": 0.0,
+      "start": 847.96,
+      "text": "尊敬的全球的观众朋友们 传友们 大家早上好 中午好 晚上好"
+    },
+    {
+      "avg_logprob": -0.157592,
+      "compression_ratio": 1.340909,
+      "end": 860.14,
+      "no_speech_prob": 0.0,
+      "start": 855.74,
+      "text": "欢迎大家来到这个419 VOA断波事件的五周年纪念日"
+    },
+    {
+      "avg_logprob": -0.157592,
+      "compression_ratio": 1.340909,
+      "end": 863.62,
+      "no_speech_prob": 0.0,
+      "start": 860.14,
+      "text": "那我是今天的主持人小新 今天非常非常荣幸可以和七哥在一起"
+    },
+    {
+      "avg_logprob": -0.157592,
+      "compression_ratio": 1.340909,
+      "end": 866.74,
+      "no_speech_prob": 0.0,
+      "start": 863.62,
+      "text": "我们来回顾这五年经历过的点点滴滴"
+    },
+    {
+      "avg_logprob": -0.157592,
+      "compression_ratio": 1.340909,
+      "end": 868.98,
+      "no_speech_prob": 0.0,
+      "start": 866.74,
+      "text": "那首先七哥你给大家说两句"
+    },
+    {
+      "avg_logprob": -0.157592,
+      "compression_ratio": 1.340909,
+      "end": 872.82,
+      "no_speech_prob": 0.0,
+      "start": 868.98,
+      "text": "小新好 小新好 曾经在也都好"
+    },
+    {
+      "avg_logprob": -0.157592,
+      "compression_ratio": 1.340909,
+      "end": 877.34,
+      "no_speech_prob": 0.0,
+      "start": 872.82,
+      "text": "还有我在我们身边现在正在辛勤工作的我们的小白"
+    },
+    {
+      "avg_logprob": -0.355386,
+      "compression_ratio": 1.14557,
+      "end": 886.1,
+      "no_speech_prob": 0.0,
+      "start": 877.34,
+      "text": "我们的长岛市长阿甘 瑞秋 王子 罗伊 田田"
+    },
+    {
+      "avg_logprob": -0.355386,
+      "compression_ratio": 1.14557,
+      "end": 890.1,
+      "no_speech_prob": 0.0,
+      "start": 886.1,
+      "text": "还有这个谁 小新 小小 小小 小小"
+    },
+    {
+      "avg_logprob": -0.355386,
+      "compression_ratio": 1.14557,
+      "end": 892.34,
+      "no_speech_prob": 0.0,
+      "start": 890.1,
+      "text": "我们今天是个超级团队"
+    },
+    {
+      "avg_logprob": -0.355386,
+      "compression_ratio": 1.14557,
+      "end": 898.82,
+      "no_speech_prob": 0.0,
+      "start": 892.34,
+      "text": "今天是419 5年纪念日的咱们一个直播活动"
+    }
+  ],
+  "text": "谢谢大家谢谢大家谢谢大家谢谢大家谢谢大家谢谢大家谢谢大家谢谢大家谢谢大家谢谢大家请来吧北京时间晚上9点钟跟着共产党走进火葬场关键让你走进火葬场的便宜跟着共产党就让你在火葬场门口转下叫你死不了活不了美国之音直播那么在今天的特别节目中美国之音就来专访这位新闻焦点人物郭文贵郭文贵向美国之音承诺他将带来核爆级别的爆料没有人知道郭文贵的爆料将指向哪个层次和级别的中共卫外必须爆料那么这就是为什么我说要把王岐山这个书记这个事情直接给说出来的原因吗对不起现在就先先得造证给停止了我们先停止这是郭文贵首次在海外直面自由媒体接受采访各位听众各位观众真的非常对不起因为某种原因我们直播必须停止向大家表示深深的道歉国内的很多战友呢因为他们深深的记住了419还有很多人开始关注爆料革命关注七哥是因为419419那一天对我来讲那个真的是过去的郭文贵已经没了419419一定会成为一个伟大的日子它将成为中美关系历史上一个重大的事件о啊啊啊啊啊我奔華已多被怪遍山中從此情人永相可求今二十年我受盡了折磨這個世界不要我請來吧別再如此冷漠請來吧光頭說有多弱只為能進我出情人手要埋葬那些惡的中空牙齒全八落鐵鎖已斑駁這就是我的一生你若不醒來還在夢裡要走又是第一座築口尤啡stem嬣穡嬣嬣嬣嬣U.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A.A从自己人永相隔就近二十年 我受尽了这梦把我全都要我醒来吧 别再如此冷漠醒来吧 跑掉所有懦弱只为了 接着他住亲人手要来找 那些何一种口醒来吧 别再如此冷漠醒来吧 跑掉所有懦弱只为能 接我住亲人手要埋葬 那些恶的痛苦牙齿全把路 铁锁已斑隔这就是我的遗憾就是我的遗憾从宝贵醒来 从自要站着我我们打罪着铁锁是 DMK grajB30尊敬的全球的观众朋友们 传友们 大家早上好 中午好 晚上好欢迎大家来到这个419 VOA断波事件的五周年纪念日那我是今天的主持人小新 今天非常非常荣幸可以和七哥在一起我们来回顾这五年经历过的点点滴滴那首先七哥你给大家说两句小新好 小新好 曾经在也都好还有我在我们身边现在正在辛勤工作的我们的小白我们的长岛市长阿甘 瑞秋 王子 罗伊 田田还有这个谁 小新 小小 小小 小小我们今天是个超级团队今天是419 5年纪念日的咱们一个直播活动"
+}

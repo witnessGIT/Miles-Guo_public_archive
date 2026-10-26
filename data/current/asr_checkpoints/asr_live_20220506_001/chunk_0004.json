@@ -1,0 +1,3520 @@
+{
+  "chunk_audio_sha256": "4953cd623983aff0a160ddbc183d254d9beccc3e47ca3b32c2f009cd2f619890",
+  "chunk_index": 4,
+  "completed_at": "2026-10-26T12:29:52Z",
+  "language": "zh",
+  "live_id": "LIVE_20220506_001",
+  "media_committed_to_git": false,
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "offset_sec": 3600,
+  "paid_api_used": false,
+  "processing_location": "github-hosted-macos-arm64",
+  "schema_version": "cloud-asr-chunk-v1",
+  "segments": [
+    {
+      "avg_logprob": -0.315992,
+      "compression_ratio": 1.246914,
+      "end": 3605.4,
+      "no_speech_prob": 0.0,
+      "start": 3600.0,
+      "text": "当年全世界GDP多少?加在一起才5000多亿"
+    },
+    {
+      "avg_logprob": -0.315992,
+      "compression_ratio": 1.246914,
+      "end": 3608.8,
+      "no_speech_prob": 0.0,
+      "start": 3606.3,
+      "text": "美国就占了一半,2000多亿"
+    },
+    {
+      "avg_logprob": -0.315992,
+      "compression_ratio": 1.246914,
+      "end": 3614.8,
+      "no_speech_prob": 0.0,
+      "start": 3609.7,
+      "text": "今天的人类是多少?130万亿美元呐"
+    },
+    {
+      "avg_logprob": -0.315992,
+      "compression_ratio": 1.246914,
+      "end": 3621.5,
+      "no_speech_prob": 0.0,
+      "start": 3615.7,
+      "text": "130万亿除以这个1万亿是130倍呀"
+    },
+    {
+      "avg_logprob": -0.315992,
+      "compression_ratio": 1.246914,
+      "end": 3626.0,
+      "no_speech_prob": 0.0,
+      "start": 3622.9,
+      "text": "人口涨了多少?人口涨了3.5倍"
+    },
+    {
+      "avg_logprob": -0.212887,
+      "compression_ratio": 1.285141,
+      "end": 3631.3,
+      "no_speech_prob": 0.0,
+      "start": 3626.0,
+      "text": "经济GDP增长了多少?130倍,135倍"
+    },
+    {
+      "avg_logprob": -0.212887,
+      "compression_ratio": 1.285141,
+      "end": 3637.9,
+      "no_speech_prob": 0.0,
+      "start": 3633.0,
+      "text": "二战之后干什么了?二战的结束,经济大衰退,经济大解调"
+    },
+    {
+      "avg_logprob": -0.212887,
+      "compression_ratio": 1.285141,
+      "end": 3641.4,
+      "no_speech_prob": 0.0,
+      "start": 3637.9,
+      "text": "第一件事,英国坚持金本位开始了"
+    },
+    {
+      "avg_logprob": -0.212887,
+      "compression_ratio": 1.285141,
+      "end": 3647.4,
+      "no_speech_prob": 0.0,
+      "start": 3641.4,
+      "text": "我要金本位,银本位,夸一下子银行,大量的收缩"
+    },
+    {
+      "avg_logprob": -0.212887,
+      "compression_ratio": 1.285141,
+      "end": 3649.3,
+      "no_speech_prob": 0.0,
+      "start": 3647.4,
+      "text": "造成了全球的通缩"
+    },
+    {
+      "avg_logprob": -0.212887,
+      "compression_ratio": 1.285141,
+      "end": 3652.2,
+      "no_speech_prob": 0.0,
+      "start": 3649.3,
+      "text": "全球的通缩,这时候突然间粮食"
+    },
+    {
+      "avg_logprob": -0.212887,
+      "compression_ratio": 1.285141,
+      "end": 3655.8,
+      "no_speech_prob": 0.0,
+      "start": 3652.2,
+      "text": "第一就是粮食,第二就是工业材料"
+    },
+    {
+      "avg_logprob": -0.214672,
+      "compression_ratio": 1.174699,
+      "end": 3657.6,
+      "no_speech_prob": 0.0,
+      "start": 3655.8,
+      "text": "实行了各国保守"
+    },
+    {
+      "avg_logprob": -0.214672,
+      "compression_ratio": 1.174699,
+      "end": 3659.9,
+      "no_speech_prob": 0.0,
+      "start": 3657.6,
+      "text": "哄抬物价,造成通缩"
+    },
+    {
+      "avg_logprob": -0.214672,
+      "compression_ratio": 1.174699,
+      "end": 3664.8,
+      "no_speech_prob": 0.0,
+      "start": 3659.9,
+      "text": "然后所有的大宗物品,所有价格猛涨"
+    },
+    {
+      "avg_logprob": -0.214672,
+      "compression_ratio": 1.174699,
+      "end": 3667.7,
+      "no_speech_prob": 0.0,
+      "start": 3664.8,
+      "text": "这个时候经济叫通缩"
+    },
+    {
+      "avg_logprob": -0.214672,
+      "compression_ratio": 1.174699,
+      "end": 3672.0,
+      "no_speech_prob": 0.0,
+      "start": 3667.7,
+      "text": "局部通缩导致了东欧,北欧"
+    },
+    {
+      "avg_logprob": -0.214672,
+      "compression_ratio": 1.174699,
+      "end": 3675.1,
+      "no_speech_prob": 0.0,
+      "start": 3672.0,
+      "text": "各国之间出了各种税务政策"
+    },
+    {
+      "avg_logprob": -0.214672,
+      "compression_ratio": 1.174699,
+      "end": 3676.1,
+      "no_speech_prob": 0.0,
+      "start": 3675.1,
+      "text": "加税"
+    },
+    {
+      "avg_logprob": -0.219242,
+      "compression_ratio": 1.226277,
+      "end": 3680.2,
+      "no_speech_prob": 0.0,
+      "start": 3676.1,
+      "text": "一加税银行,完了,企业不生活了,不干活了"
+    },
+    {
+      "avg_logprob": -0.219242,
+      "compression_ratio": 1.226277,
+      "end": 3681.3,
+      "no_speech_prob": 0.0,
+      "start": 3680.2,
+      "text": "中小企业就没了"
+    },
+    {
+      "avg_logprob": -0.219242,
+      "compression_ratio": 1.226277,
+      "end": 3688.0,
+      "no_speech_prob": 0.0,
+      "start": 3683.3,
+      "text": "银行的钱是越来越多,是越存款,是这个银行钱越少"
+    },
+    {
+      "avg_logprob": -0.219242,
+      "compression_ratio": 1.226277,
+      "end": 3690.1,
+      "no_speech_prob": 0.0,
+      "start": 3688.0,
+      "text": "越贷款,企业越不发展"
+    },
+    {
+      "avg_logprob": -0.312025,
+      "compression_ratio": 1.232432,
+      "end": 3691.9,
+      "no_speech_prob": 0.0,
+      "start": 3690.1,
+      "text": "叫通缩"
+    },
+    {
+      "avg_logprob": -0.312025,
+      "compression_ratio": 1.232432,
+      "end": 3693.9,
+      "no_speech_prob": 0.0,
+      "start": 3691.9,
+      "text": "英国搞了个金本位"
+    },
+    {
+      "avg_logprob": -0.312025,
+      "compression_ratio": 1.232432,
+      "end": 3696.7,
+      "no_speech_prob": 0.0,
+      "start": 3693.9,
+      "text": "最后是,大家经济不行了,二战开始了"
+    },
+    {
+      "avg_logprob": -0.312025,
+      "compression_ratio": 1.232432,
+      "end": 3698.8,
+      "no_speech_prob": 0.0,
+      "start": 3696.7,
+      "text": "大萧桥开始,长期开始"
+    },
+    {
+      "avg_logprob": -0.312025,
+      "compression_ratio": 1.232432,
+      "end": 3700.1,
+      "no_speech_prob": 0.0,
+      "start": 3698.8,
+      "text": "罗斯福政策"
+    },
+    {
+      "avg_logprob": -0.312025,
+      "compression_ratio": 1.232432,
+      "end": 3701.1,
+      "no_speech_prob": 0.0,
+      "start": 3700.1,
+      "text": "胡福"
+    },
+    {
+      "avg_logprob": -0.312025,
+      "compression_ratio": 1.232432,
+      "end": 3702.9,
+      "no_speech_prob": 0.0,
+      "start": 3701.1,
+      "text": "堪恩斯主义来了"
+    },
+    {
+      "avg_logprob": -0.312025,
+      "compression_ratio": 1.232432,
+      "end": 3705.9,
+      "no_speech_prob": 0.0,
+      "start": 3702.9,
+      "text": "堪恩斯主义讲的大摔条那边"
+    },
+    {
+      "avg_logprob": -0.312025,
+      "compression_ratio": 1.232432,
+      "end": 3707.9,
+      "no_speech_prob": 0.0,
+      "start": 3705.9,
+      "text": "讲的最主要的是什么呀"
+    },
+    {
+      "avg_logprob": -0.312025,
+      "compression_ratio": 1.232432,
+      "end": 3708.7,
+      "no_speech_prob": 0.0,
+      "start": 3707.9,
+      "text": "是不是啊"
+    },
+    {
+      "avg_logprob": -0.170516,
+      "compression_ratio": 1.355072,
+      "end": 3711.3,
+      "no_speech_prob": 0.0,
+      "start": 3708.7,
+      "text": "就是银行和贷款和流通的关系"
+    },
+    {
+      "avg_logprob": -0.170516,
+      "compression_ratio": 1.355072,
+      "end": 3712.3,
+      "no_speech_prob": 0.0,
+      "start": 3711.3,
+      "text": "就咱说的M2"
+    },
+    {
+      "avg_logprob": -0.170516,
+      "compression_ratio": 1.355072,
+      "end": 3716.5,
+      "no_speech_prob": 0.0,
+      "start": 3713.8,
+      "text": "堪恩斯主义在那个一度时机好像很牛叉"
+    },
+    {
+      "avg_logprob": -0.170516,
+      "compression_ratio": 1.355072,
+      "end": 3717.7,
+      "no_speech_prob": 0.0,
+      "start": 3716.5,
+      "text": "现在看着胡扯的事情"
+    },
+    {
+      "avg_logprob": -0.170516,
+      "compression_ratio": 1.355072,
+      "end": 3719.3,
+      "no_speech_prob": 0.0,
+      "start": 3718.9,
+      "text": "是不是啊"
+    },
+    {
+      "avg_logprob": -0.170516,
+      "compression_ratio": 1.355072,
+      "end": 3722.7,
+      "no_speech_prob": 0.0,
+      "start": 3719.9,
+      "text": "但是这就是英国的堪恩斯主义和美国的堪恩斯主义"
+    },
+    {
+      "avg_logprob": -0.170516,
+      "compression_ratio": 1.355072,
+      "end": 3723.8,
+      "no_speech_prob": 0.0,
+      "start": 3722.7,
+      "text": "是完全两回事的"
+    },
+    {
+      "avg_logprob": -0.170516,
+      "compression_ratio": 1.355072,
+      "end": 3727.0,
+      "no_speech_prob": 0.0,
+      "start": 3724.8,
+      "text": "然后最后是把美国最后没办法"
+    },
+    {
+      "avg_logprob": -0.170516,
+      "compression_ratio": 1.355072,
+      "end": 3730.2,
+      "no_speech_prob": 0.0,
+      "start": 3727.5,
+      "text": "相继宣布取消了金本位"
+    },
+    {
+      "avg_logprob": -0.170516,
+      "compression_ratio": 1.355072,
+      "end": 3736.1,
+      "no_speech_prob": 0.0,
+      "start": 3731.7,
+      "text": "开始了印刷货币的信用本币的这个人类的时代"
+    },
+    {
+      "avg_logprob": -0.170516,
+      "compression_ratio": 1.355072,
+      "end": 3737.1,
+      "no_speech_prob": 0.0,
+      "start": 3736.1,
+      "text": "一直到今天"
+    },
+    {
+      "avg_logprob": -0.211539,
+      "compression_ratio": 1.2625,
+      "end": 3742.6,
+      "no_speech_prob": 0.0,
+      "start": 3738.7,
+      "text": "那么接下来俄乌战争会给我们带来什么"
+    },
+    {
+      "avg_logprob": -0.211539,
+      "compression_ratio": 1.2625,
+      "end": 3743.5,
+      "no_speech_prob": 0.0,
+      "start": 3742.6,
+      "text": "我告诉大家"
+    },
+    {
+      "avg_logprob": -0.211539,
+      "compression_ratio": 1.2625,
+      "end": 3745.2,
+      "no_speech_prob": 0.0,
+      "start": 3744.7,
+      "text": "记住"
+    },
+    {
+      "avg_logprob": -0.211539,
+      "compression_ratio": 1.2625,
+      "end": 3747.7,
+      "no_speech_prob": 0.0,
+      "start": 3746.2,
+      "text": "就是第一条"
+    },
+    {
+      "avg_logprob": -0.211539,
+      "compression_ratio": 1.2625,
+      "end": 3750.6,
+      "no_speech_prob": 0.0,
+      "start": 3748.3,
+      "text": "所有你生活的必需品"
+    },
+    {
+      "avg_logprob": -0.211539,
+      "compression_ratio": 1.2625,
+      "end": 3753.6,
+      "no_speech_prob": 0.0,
+      "start": 3752.0,
+      "text": "是你现在最重要的"
+    },
+    {
+      "avg_logprob": -0.211539,
+      "compression_ratio": 1.2625,
+      "end": 3754.4,
+      "no_speech_prob": 0.0,
+      "start": 3753.8,
+      "text": "就是什么"
+    },
+    {
+      "avg_logprob": -0.211539,
+      "compression_ratio": 1.2625,
+      "end": 3755.3,
+      "no_speech_prob": 0.0,
+      "start": 3754.8,
+      "text": "粮食"
+    },
+    {
+      "avg_logprob": -0.211539,
+      "compression_ratio": 1.2625,
+      "end": 3756.3,
+      "no_speech_prob": 0.0,
+      "start": 3755.3,
+      "text": "你吃的东西"
+    },
+    {
+      "avg_logprob": -0.211539,
+      "compression_ratio": 1.2625,
+      "end": 3757.3,
+      "no_speech_prob": 0.0,
+      "start": 3756.8,
+      "text": "水"
+    },
+    {
+      "avg_logprob": -0.211539,
+      "compression_ratio": 1.2625,
+      "end": 3760.6,
+      "no_speech_prob": 0.0,
+      "start": 3759.2,
+      "text": "必须的生产材料"
+    },
+    {
+      "avg_logprob": -0.211539,
+      "compression_ratio": 1.2625,
+      "end": 3762.4,
+      "no_speech_prob": 0.0,
+      "start": 3760.6,
+      "text": "刚才PPT里有个计划讲的很好"
+    },
+    {
+      "avg_logprob": -0.211539,
+      "compression_ratio": 1.2625,
+      "end": 3763.3,
+      "no_speech_prob": 0.0,
+      "start": 3762.6,
+      "text": "叫蜡烛"
+    },
+    {
+      "avg_logprob": -0.211539,
+      "compression_ratio": 1.2625,
+      "end": 3766.9,
+      "no_speech_prob": 0.0,
+      "start": 3764.9,
+      "text": "蜡烛将成为你很重要的东西"
+    },
+    {
+      "avg_logprob": -0.211539,
+      "compression_ratio": 1.2625,
+      "end": 3768.6,
+      "no_speech_prob": 0.0,
+      "start": 3766.9,
+      "text": "关键说你能活着晚上"
+    },
+    {
+      "avg_logprob": -0.359887,
+      "compression_ratio": 1.283019,
+      "end": 3769.8,
+      "no_speech_prob": 0.0,
+      "start": 3768.7,
+      "text": "那有个蜡烛"
+    },
+    {
+      "avg_logprob": -0.359887,
+      "compression_ratio": 1.283019,
+      "end": 3772.6,
+      "no_speech_prob": 0.0,
+      "start": 3771.6,
+      "text": "火柴"
+    },
+    {
+      "avg_logprob": -0.359887,
+      "compression_ratio": 1.283019,
+      "end": 3774.6,
+      "no_speech_prob": 0.0,
+      "start": 3773.6,
+      "text": "你别想天然气了"
+    },
+    {
+      "avg_logprob": -0.359887,
+      "compression_ratio": 1.283019,
+      "end": 3776.6,
+      "no_speech_prob": 0.0,
+      "start": 3774.6,
+      "text": "那是对你来讲比钻石都珍贵"
+    },
+    {
+      "avg_logprob": -0.359887,
+      "compression_ratio": 1.283019,
+      "end": 3778.2,
+      "no_speech_prob": 0.0,
+      "start": 3776.7,
+      "text": "你就整点什么柴火"
+    },
+    {
+      "avg_logprob": -0.359887,
+      "compression_ratio": 1.283019,
+      "end": 3779.2,
+      "no_speech_prob": 0.0,
+      "start": 3778.3,
+      "text": "什么牛屎啊"
+    },
+    {
+      "avg_logprob": -0.359887,
+      "compression_ratio": 1.283019,
+      "end": 3779.6,
+      "no_speech_prob": 0.0,
+      "start": 3779.2,
+      "text": "羊屎啊"
+    },
+    {
+      "avg_logprob": -0.359887,
+      "compression_ratio": 1.283019,
+      "end": 3781.1,
+      "no_speech_prob": 0.0,
+      "start": 3779.6,
+      "text": "不是小羊的屎啊"
+    },
+    {
+      "avg_logprob": -0.359887,
+      "compression_ratio": 1.283019,
+      "end": 3781.6,
+      "no_speech_prob": 0.0,
+      "start": 3781.1,
+      "text": "你别想"
+    },
+    {
+      "avg_logprob": -0.359887,
+      "compression_ratio": 1.283019,
+      "end": 3782.6,
+      "no_speech_prob": 0.0,
+      "start": 3781.6,
+      "text": "小羊的屎啊"
+    },
+    {
+      "avg_logprob": -0.359887,
+      "compression_ratio": 1.283019,
+      "end": 3784.6,
+      "no_speech_prob": 0.0,
+      "start": 3782.6,
+      "text": "你弄点饭煮煮都不错了啊"
+    },
+    {
+      "avg_logprob": -0.274409,
+      "compression_ratio": 1.361702,
+      "end": 3786.5,
+      "no_speech_prob": 0.0,
+      "start": 3784.6,
+      "text": "就是生活必需品"
+    },
+    {
+      "avg_logprob": -0.274409,
+      "compression_ratio": 1.361702,
+      "end": 3788.5,
+      "no_speech_prob": 0.0,
+      "start": 3786.5,
+      "text": "就是最原始的必需品"
+    },
+    {
+      "avg_logprob": -0.274409,
+      "compression_ratio": 1.361702,
+      "end": 3792.5,
+      "no_speech_prob": 0.0,
+      "start": 3788.5,
+      "text": "就是最原始的必需品"
+    },
+    {
+      "avg_logprob": -0.274409,
+      "compression_ratio": 1.361702,
+      "end": 3794.5,
+      "no_speech_prob": 0.0,
+      "start": 3792.5,
+      "text": "绝对是俄乌战争告诉你一个"
+    },
+    {
+      "avg_logprob": -0.274409,
+      "compression_ratio": 1.361702,
+      "end": 3796.5,
+      "no_speech_prob": 0.0,
+      "start": 3794.5,
+      "text": "乌克兰粮食大国"
+    },
+    {
+      "avg_logprob": -0.274409,
+      "compression_ratio": 1.361702,
+      "end": 3798.5,
+      "no_speech_prob": 0.0,
+      "start": 3796.5,
+      "text": "俄罗斯是粮食大国"
+    },
+    {
+      "avg_logprob": -0.274409,
+      "compression_ratio": 1.361702,
+      "end": 3802.5,
+      "no_speech_prob": 0.0,
+      "start": 3798.5,
+      "text": "今天他已经开始处备粮食了"
+    },
+    {
+      "avg_logprob": -0.213155,
+      "compression_ratio": 1.093023,
+      "end": 3806.4,
+      "no_speech_prob": 0.0,
+      "start": 3802.5,
+      "text": "这为什么共产党现在大量的要大家少吃"
+    },
+    {
+      "avg_logprob": -0.213155,
+      "compression_ratio": 1.093023,
+      "end": 3807.4,
+      "no_speech_prob": 0.0,
+      "start": 3806.4,
+      "text": "别浪费"
+    },
+    {
+      "avg_logprob": -0.213155,
+      "compression_ratio": 1.093023,
+      "end": 3810.4,
+      "no_speech_prob": 0.0,
+      "start": 3807.4,
+      "text": "而且要控制粮食"
+    },
+    {
+      "avg_logprob": -0.213155,
+      "compression_ratio": 1.093023,
+      "end": 3813.4,
+      "no_speech_prob": 0.0,
+      "start": 3810.4,
+      "text": "而且要做好粮食灾难到来的时候"
+    },
+    {
+      "avg_logprob": -0.213155,
+      "compression_ratio": 1.093023,
+      "end": 3815.6,
+      "no_speech_prob": 0.0,
+      "start": 3813.4,
+      "text": "有粮食中国水"
+    },
+    {
+      "avg_logprob": -0.260753,
+      "compression_ratio": 1.432099,
+      "end": 3816.6,
+      "no_speech_prob": 0.0,
+      "start": 3815.6,
+      "text": "中国水"
+    },
+    {
+      "avg_logprob": -0.260753,
+      "compression_ratio": 1.432099,
+      "end": 3818.5,
+      "no_speech_prob": 0.0,
+      "start": 3816.6,
+      "text": "你使劲啥水都敢喝"
+    },
+    {
+      "avg_logprob": -0.260753,
+      "compression_ratio": 1.432099,
+      "end": 3819.5,
+      "no_speech_prob": 0.0,
+      "start": 3818.5,
+      "text": "脏水也敢喝"
+    },
+    {
+      "avg_logprob": -0.260753,
+      "compression_ratio": 1.432099,
+      "end": 3821.0,
+      "no_speech_prob": 0.0,
+      "start": 3819.5,
+      "text": "接下来是什么"
+    },
+    {
+      "avg_logprob": -0.260753,
+      "compression_ratio": 1.432099,
+      "end": 3822.5,
+      "no_speech_prob": 0.0,
+      "start": 3821.0,
+      "text": "有粮食有水有什么"
+    },
+    {
+      "avg_logprob": -0.260753,
+      "compression_ratio": 1.432099,
+      "end": 3824.0,
+      "no_speech_prob": 0.0,
+      "start": 3822.5,
+      "text": "医疗"
+    },
+    {
+      "avg_logprob": -0.260753,
+      "compression_ratio": 1.432099,
+      "end": 3826.5,
+      "no_speech_prob": 0.0,
+      "start": 3824.0,
+      "text": "有点病有点头疼发症"
+    },
+    {
+      "avg_logprob": -0.260753,
+      "compression_ratio": 1.432099,
+      "end": 3827.5,
+      "no_speech_prob": 0.0,
+      "start": 3826.5,
+      "text": "你得看病啊"
+    },
+    {
+      "avg_logprob": -0.260753,
+      "compression_ratio": 1.432099,
+      "end": 3829.5,
+      "no_speech_prob": 0.0,
+      "start": 3827.5,
+      "text": "没有医生你得吃药啊"
+    },
+    {
+      "avg_logprob": -0.260753,
+      "compression_ratio": 1.432099,
+      "end": 3832.5,
+      "no_speech_prob": 0.0,
+      "start": 3829.5,
+      "text": "生活必需品"
+    },
+    {
+      "avg_logprob": -0.260753,
+      "compression_ratio": 1.432099,
+      "end": 3834.0,
+      "no_speech_prob": 0.0,
+      "start": 3832.5,
+      "text": "接下来是什么"
+    },
+    {
+      "avg_logprob": -0.260753,
+      "compression_ratio": 1.432099,
+      "end": 3835.0,
+      "no_speech_prob": 0.0,
+      "start": 3834.0,
+      "text": "老年人"
+    },
+    {
+      "avg_logprob": -0.260753,
+      "compression_ratio": 1.432099,
+      "end": 3839.0,
+      "no_speech_prob": 0.0,
+      "start": 3835.0,
+      "text": "是这个战争时期老年人是国家最不喜欢的"
+    },
+    {
+      "avg_logprob": -0.260753,
+      "compression_ratio": 1.432099,
+      "end": 3841.5,
+      "no_speech_prob": 0.0,
+      "start": 3839.0,
+      "text": "所以我跟那个日本朋友说"
+    },
+    {
+      "avg_logprob": -0.260753,
+      "compression_ratio": 1.432099,
+      "end": 3843.0,
+      "no_speech_prob": 0.0,
+      "start": 3841.5,
+      "text": "我说你说当时日本死人"
+    },
+    {
+      "avg_logprob": -0.260753,
+      "compression_ratio": 1.432099,
+      "end": 3844.5,
+      "no_speech_prob": 0.0,
+      "start": 3843.0,
+      "text": "死最多是什么人吗"
+    },
+    {
+      "avg_logprob": -0.280012,
+      "compression_ratio": 1.458824,
+      "end": 3845.8,
+      "no_speech_prob": 0.0,
+      "start": 3844.5,
+      "text": "当然说男人"
+    },
+    {
+      "avg_logprob": -0.280012,
+      "compression_ratio": 1.458824,
+      "end": 3846.4,
+      "no_speech_prob": 0.0,
+      "start": 3845.8,
+      "text": "我说不对"
+    },
+    {
+      "avg_logprob": -0.280012,
+      "compression_ratio": 1.458824,
+      "end": 3847.4,
+      "no_speech_prob": 0.0,
+      "start": 3846.4,
+      "text": "是老年人"
+    },
+    {
+      "avg_logprob": -0.280012,
+      "compression_ratio": 1.458824,
+      "end": 3851.4,
+      "no_speech_prob": 0.0,
+      "start": 3847.4,
+      "text": "日本当时的这个这个"
+    },
+    {
+      "avg_logprob": -0.280012,
+      "compression_ratio": 1.458824,
+      "end": 3853.4,
+      "no_speech_prob": 0.0,
+      "start": 3851.4,
+      "text": "生孩子的什么程度"
+    },
+    {
+      "avg_logprob": -0.280012,
+      "compression_ratio": 1.458824,
+      "end": 3854.4,
+      "no_speech_prob": 0.0,
+      "start": 3853.4,
+      "text": "严格讲从这点看"
+    },
+    {
+      "avg_logprob": -0.280012,
+      "compression_ratio": 1.458824,
+      "end": 3855.0,
+      "no_speech_prob": 0.0,
+      "start": 3854.4,
+      "text": "日本啊"
+    },
+    {
+      "avg_logprob": -0.280012,
+      "compression_ratio": 1.458824,
+      "end": 3857.4,
+      "no_speech_prob": 0.0,
+      "start": 3855.0,
+      "text": "很多人都是共同的地业"
+    },
+    {
+      "avg_logprob": -0.280012,
+      "compression_ratio": 1.458824,
+      "end": 3859.4,
+      "no_speech_prob": 0.0,
+      "start": 3857.4,
+      "text": "因为男人都战死了嘛"
+    },
+    {
+      "avg_logprob": -0.280012,
+      "compression_ratio": 1.458824,
+      "end": 3860.4,
+      "no_speech_prob": 0.0,
+      "start": 3859.4,
+      "text": "都是女人嘛"
+    },
+    {
+      "avg_logprob": -0.280012,
+      "compression_ratio": 1.458824,
+      "end": 3862.4,
+      "no_speech_prob": 0.0,
+      "start": 3860.4,
+      "text": "就一个男人生了很多孩子都不知道"
+    },
+    {
+      "avg_logprob": -0.280012,
+      "compression_ratio": 1.458824,
+      "end": 3863.7,
+      "no_speech_prob": 0.0,
+      "start": 3862.4,
+      "text": "就跟"
+    },
+    {
+      "avg_logprob": -0.280012,
+      "compression_ratio": 1.458824,
+      "end": 3864.8,
+      "no_speech_prob": 0.0,
+      "start": 3863.7,
+      "text": "那就日本叫什么"
+    },
+    {
+      "avg_logprob": -0.280012,
+      "compression_ratio": 1.458824,
+      "end": 3866.2,
+      "no_speech_prob": 0.0,
+      "start": 3864.8,
+      "text": "叫县下屋"
+    },
+    {
+      "avg_logprob": -0.280012,
+      "compression_ratio": 1.458824,
+      "end": 3868.1,
+      "no_speech_prob": 0.0,
+      "start": 3866.2,
+      "text": "啥叫县下屋啊"
+    },
+    {
+      "avg_logprob": -0.280012,
+      "compression_ratio": 1.458824,
+      "end": 3870.1,
+      "no_speech_prob": 0.0,
+      "start": 3868.1,
+      "text": "就不是今天的网络的县"
+    },
+    {
+      "avg_logprob": -0.280012,
+      "compression_ratio": 1.458824,
+      "end": 3872.1,
+      "no_speech_prob": 0.0,
+      "start": 3870.1,
+      "text": "就是在日本沿线"
+    },
+    {
+      "avg_logprob": -0.280012,
+      "compression_ratio": 1.458824,
+      "end": 3874.0,
+      "no_speech_prob": 0.0,
+      "start": 3872.1,
+      "text": "就是那些所有的那个"
+    },
+    {
+      "avg_logprob": -0.25161,
+      "compression_ratio": 1.405204,
+      "end": 3874.9,
+      "no_speech_prob": 0.0,
+      "start": 3874.0,
+      "text": "路旁边"
+    },
+    {
+      "avg_logprob": -0.25161,
+      "compression_ratio": 1.405204,
+      "end": 3877.4,
+      "no_speech_prob": 0.0,
+      "start": 3874.9,
+      "text": "就是像咱们说现在男人"
+    },
+    {
+      "avg_logprob": -0.25161,
+      "compression_ratio": 1.405204,
+      "end": 3878.6,
+      "no_speech_prob": 0.0,
+      "start": 3877.4,
+      "text": "小杨最喜欢的"
+    },
+    {
+      "avg_logprob": -0.25161,
+      "compression_ratio": 1.405204,
+      "end": 3880.1,
+      "no_speech_prob": 0.0,
+      "start": 3878.6,
+      "text": "就是咱们云南现在有的"
+    },
+    {
+      "avg_logprob": -0.25161,
+      "compression_ratio": 1.405204,
+      "end": 3880.9,
+      "no_speech_prob": 0.0,
+      "start": 3880.1,
+      "text": "叫做什么"
+    },
+    {
+      "avg_logprob": -0.25161,
+      "compression_ratio": 1.405204,
+      "end": 3881.9,
+      "no_speech_prob": 0.0,
+      "start": 3880.9,
+      "text": "走婚"
+    },
+    {
+      "avg_logprob": -0.25161,
+      "compression_ratio": 1.405204,
+      "end": 3882.9,
+      "no_speech_prob": 0.0,
+      "start": 3881.9,
+      "text": "是吧"
+    },
+    {
+      "avg_logprob": -0.25161,
+      "compression_ratio": 1.405204,
+      "end": 3883.9,
+      "no_speech_prob": 0.0,
+      "start": 3882.9,
+      "text": "有女的"
+    },
+    {
+      "avg_logprob": -0.25161,
+      "compression_ratio": 1.405204,
+      "end": 3885.4,
+      "no_speech_prob": 0.0,
+      "start": 3883.9,
+      "text": "晚上一敲门进去了"
+    },
+    {
+      "avg_logprob": -0.25161,
+      "compression_ratio": 1.405204,
+      "end": 3886.9,
+      "no_speech_prob": 0.0,
+      "start": 3885.4,
+      "text": "你看如水开门了"
+    },
+    {
+      "avg_logprob": -0.25161,
+      "compression_ratio": 1.405204,
+      "end": 3888.2,
+      "no_speech_prob": 0.0,
+      "start": 3886.9,
+      "text": "啊欢迎啊"
+    },
+    {
+      "avg_logprob": -0.25161,
+      "compression_ratio": 1.405204,
+      "end": 3889.3,
+      "no_speech_prob": 0.0,
+      "start": 3888.2,
+      "text": "小杨哥进来吧"
+    },
+    {
+      "avg_logprob": -0.25161,
+      "compression_ratio": 1.405204,
+      "end": 3890.9,
+      "no_speech_prob": 0.0,
+      "start": 3889.3,
+      "text": "灯一关"
+    },
+    {
+      "avg_logprob": -0.25161,
+      "compression_ratio": 1.405204,
+      "end": 3892.4,
+      "no_speech_prob": 0.0,
+      "start": 3890.9,
+      "text": "咱俩就休休了"
+    },
+    {
+      "avg_logprob": -0.25161,
+      "compression_ratio": 1.405204,
+      "end": 3893.4,
+      "no_speech_prob": 0.0,
+      "start": 3892.4,
+      "text": "休休完"
+    },
+    {
+      "avg_logprob": -0.25161,
+      "compression_ratio": 1.405204,
+      "end": 3894.4,
+      "no_speech_prob": 0.0,
+      "start": 3893.4,
+      "text": "早上起来给你做好饭"
+    },
+    {
+      "avg_logprob": -0.25161,
+      "compression_ratio": 1.405204,
+      "end": 3895.3,
+      "no_speech_prob": 0.0,
+      "start": 3894.4,
+      "text": "煮两个鸡蛋"
+    },
+    {
+      "avg_logprob": -0.25161,
+      "compression_ratio": 1.405204,
+      "end": 3895.9,
+      "no_speech_prob": 0.0,
+      "start": 3895.3,
+      "text": "核包蛋是吧"
+    },
+    {
+      "avg_logprob": -0.25161,
+      "compression_ratio": 1.405204,
+      "end": 3897.7,
+      "no_speech_prob": 0.0,
+      "start": 3895.9,
+      "text": "然后给你拍拍你的屁股"
+    },
+    {
+      "avg_logprob": -0.25161,
+      "compression_ratio": 1.405204,
+      "end": 3898.8,
+      "no_speech_prob": 0.0,
+      "start": 3897.7,
+      "text": "把裤子给你提上"
+    },
+    {
+      "avg_logprob": -0.25161,
+      "compression_ratio": 1.405204,
+      "end": 3899.9,
+      "no_speech_prob": 0.0,
+      "start": 3898.8,
+      "text": "走啊小杨哥"
+    },
+    {
+      "avg_logprob": -0.25161,
+      "compression_ratio": 1.405204,
+      "end": 3901.4,
+      "no_speech_prob": 0.0,
+      "start": 3899.9,
+      "text": "小杨哥晃了定走了"
+    },
+    {
+      "avg_logprob": -0.471079,
+      "compression_ratio": 1.246988,
+      "end": 3903.8,
+      "no_speech_prob": 0.0,
+      "start": 3901.4,
+      "text": "走下一站就在那里面一家去了"
+    },
+    {
+      "avg_logprob": -0.471079,
+      "compression_ratio": 1.246988,
+      "end": 3905.0,
+      "no_speech_prob": 0.0,
+      "start": 3903.8,
+      "text": "就像那个中阳一样"
+    },
+    {
+      "avg_logprob": -0.471079,
+      "compression_ratio": 1.246988,
+      "end": 3906.0,
+      "no_speech_prob": 0.0,
+      "start": 3905.0,
+      "text": "你知道吗"
+    },
+    {
+      "avg_logprob": -0.471079,
+      "compression_ratio": 1.246988,
+      "end": 3907.8,
+      "no_speech_prob": 0.0,
+      "start": 3906.0,
+      "text": "就很多日本人都是"
+    },
+    {
+      "avg_logprob": -0.471079,
+      "compression_ratio": 1.246988,
+      "end": 3909.2,
+      "no_speech_prob": 0.0,
+      "start": 3907.8,
+      "text": "他都不知道他爹是谁"
+    },
+    {
+      "avg_logprob": -0.471079,
+      "compression_ratio": 1.246988,
+      "end": 3910.5,
+      "no_speech_prob": 0.0,
+      "start": 3909.2,
+      "text": "为什么男人都在那里"
+    },
+    {
+      "avg_logprob": -0.471079,
+      "compression_ratio": 1.246988,
+      "end": 3912.1,
+      "no_speech_prob": 0.0,
+      "start": 3910.5,
+      "text": "男人是稀有货呀"
+    },
+    {
+      "avg_logprob": -0.471079,
+      "compression_ratio": 1.246988,
+      "end": 3913.8,
+      "no_speech_prob": 0.0,
+      "start": 3912.1,
+      "text": "啊"
+    },
+    {
+      "avg_logprob": -0.471079,
+      "compression_ratio": 1.246988,
+      "end": 3915.2,
+      "no_speech_prob": 0.0,
+      "start": 3913.8,
+      "text": "那么老男人呢"
+    },
+    {
+      "avg_logprob": -0.471079,
+      "compression_ratio": 1.246988,
+      "end": 3916.3,
+      "no_speech_prob": 0.0,
+      "start": 3915.2,
+      "text": "像你小杨"
+    },
+    {
+      "avg_logprob": -0.398566,
+      "compression_ratio": 1.309091,
+      "end": 3918.9,
+      "no_speech_prob": 0.0,
+      "start": 3916.3,
+      "text": "一如水一开门"
+    },
+    {
+      "avg_logprob": -0.398566,
+      "compression_ratio": 1.309091,
+      "end": 3921.2,
+      "no_speech_prob": 0.0,
+      "start": 3918.9,
+      "text": "像羊那大胡子拉张的"
+    },
+    {
+      "avg_logprob": -0.398566,
+      "compression_ratio": 1.309091,
+      "end": 3922.7,
+      "no_speech_prob": 0.0,
+      "start": 3921.2,
+      "text": "给我晚饭是吧"
+    },
+    {
+      "avg_logprob": -0.398566,
+      "compression_ratio": 1.309091,
+      "end": 3923.5,
+      "no_speech_prob": 0.0,
+      "start": 3922.7,
+      "text": "像如水"
+    },
+    {
+      "avg_logprob": -0.398566,
+      "compression_ratio": 1.309091,
+      "end": 3924.9,
+      "no_speech_prob": 0.0,
+      "start": 3923.5,
+      "text": "两大巴上滚蛋"
+    },
+    {
+      "avg_logprob": -0.398566,
+      "compression_ratio": 1.309091,
+      "end": 3926.5,
+      "no_speech_prob": 0.0,
+      "start": 3924.9,
+      "text": "你已经没有性能力了"
+    },
+    {
+      "avg_logprob": -0.398566,
+      "compression_ratio": 1.309091,
+      "end": 3927.7,
+      "no_speech_prob": 0.0,
+      "start": 3926.5,
+      "text": "滚一边去走婚去"
+    },
+    {
+      "avg_logprob": -0.398566,
+      "compression_ratio": 1.309091,
+      "end": 3928.3,
+      "no_speech_prob": 0.0,
+      "start": 3927.7,
+      "text": "是吧"
+    },
+    {
+      "avg_logprob": -0.398566,
+      "compression_ratio": 1.309091,
+      "end": 3929.9,
+      "no_speech_prob": 0.0,
+      "start": 3928.3,
+      "text": "两大嘴巴给你扇一边去了"
+    },
+    {
+      "avg_logprob": -0.398566,
+      "compression_ratio": 1.309091,
+      "end": 3930.9,
+      "no_speech_prob": 0.0,
+      "start": 3929.9,
+      "text": "胡的拉叉的"
+    },
+    {
+      "avg_logprob": -0.398566,
+      "compression_ratio": 1.309091,
+      "end": 3931.5,
+      "no_speech_prob": 0.0,
+      "start": 3930.9,
+      "text": "是不是"
+    },
+    {
+      "avg_logprob": -0.398566,
+      "compression_ratio": 1.309091,
+      "end": 3932.9,
+      "no_speech_prob": 0.0,
+      "start": 3931.5,
+      "text": "完全不能动了"
+    },
+    {
+      "avg_logprob": -0.398566,
+      "compression_ratio": 1.309091,
+      "end": 3934.3,
+      "no_speech_prob": 0.0,
+      "start": 3932.9,
+      "text": "我还养你干啥呀"
+    },
+    {
+      "avg_logprob": -0.398566,
+      "compression_ratio": 1.309091,
+      "end": 3936.8,
+      "no_speech_prob": 0.0,
+      "start": 3934.3,
+      "text": "那个时候老年人很多在工厂"
+    },
+    {
+      "avg_logprob": -0.398566,
+      "compression_ratio": 1.309091,
+      "end": 3937.5,
+      "no_speech_prob": 0.0,
+      "start": 3936.8,
+      "text": "饿死"
+    },
+    {
+      "avg_logprob": -0.398566,
+      "compression_ratio": 1.309091,
+      "end": 3938.3,
+      "no_speech_prob": 0.0,
+      "start": 3937.5,
+      "text": "病死"
+    },
+    {
+      "avg_logprob": -0.241949,
+      "compression_ratio": 1.290698,
+      "end": 3941.6,
+      "no_speech_prob": 0.0,
+      "start": 3938.3,
+      "text": "老年人死亡率是日本有史最高的"
+    },
+    {
+      "avg_logprob": -0.241949,
+      "compression_ratio": 1.290698,
+      "end": 3946.7,
+      "no_speech_prob": 0.0,
+      "start": 3944.5,
+      "text": "这就是共产党今天要你打疫苗啊"
+    },
+    {
+      "avg_logprob": -0.241949,
+      "compression_ratio": 1.290698,
+      "end": 3947.9,
+      "no_speech_prob": 0.0,
+      "start": 3946.7,
+      "text": "老年人打给你钱"
+    },
+    {
+      "avg_logprob": -0.241949,
+      "compression_ratio": 1.290698,
+      "end": 3948.5,
+      "no_speech_prob": 0.0,
+      "start": 3947.9,
+      "text": "你敢去死"
+    },
+    {
+      "avg_logprob": -0.241949,
+      "compression_ratio": 1.290698,
+      "end": 3950.3,
+      "no_speech_prob": 0.0,
+      "start": 3948.5,
+      "text": "别浪费我的资源"
+    },
+    {
+      "avg_logprob": -0.241949,
+      "compression_ratio": 1.290698,
+      "end": 3953.4,
+      "no_speech_prob": 0.0,
+      "start": 3950.3,
+      "text": "老人院的人还没死呢"
+    },
+    {
+      "avg_logprob": -0.241949,
+      "compression_ratio": 1.290698,
+      "end": 3954.7,
+      "no_speech_prob": 0.0,
+      "start": 3953.4,
+      "text": "就包到火灶上去了"
+    },
+    {
+      "avg_logprob": -0.241949,
+      "compression_ratio": 1.290698,
+      "end": 3956.8,
+      "no_speech_prob": 0.0,
+      "start": 3955.5,
+      "text": "我要在几年前说"
+    },
+    {
+      "avg_logprob": -0.241949,
+      "compression_ratio": 1.290698,
+      "end": 3957.6,
+      "no_speech_prob": 0.0,
+      "start": 3956.8,
+      "text": "你们相信吗"
+    },
+    {
+      "avg_logprob": -0.241949,
+      "compression_ratio": 1.290698,
+      "end": 3958.6,
+      "no_speech_prob": 0.0,
+      "start": 3957.6,
+      "text": "你们觉得我放屁"
+    },
+    {
+      "avg_logprob": -0.241949,
+      "compression_ratio": 1.290698,
+      "end": 3960.6,
+      "no_speech_prob": 0.0,
+      "start": 3959.8,
+      "text": "武汉"
+    },
+    {
+      "avg_logprob": -0.241949,
+      "compression_ratio": 1.290698,
+      "end": 3961.7,
+      "no_speech_prob": 0.0,
+      "start": 3961.2,
+      "text": "七个"
+    },
+    {
+      "avg_logprob": -0.241949,
+      "compression_ratio": 1.290698,
+      "end": 3963.0,
+      "no_speech_prob": 0.0,
+      "start": 3961.7,
+      "text": "第一个告诉全人类"
+    },
+    {
+      "avg_logprob": -0.241949,
+      "compression_ratio": 1.290698,
+      "end": 3963.6,
+      "no_speech_prob": 0.0,
+      "start": 3963.0,
+      "text": "我说看看"
+    },
+    {
+      "avg_logprob": -0.241949,
+      "compression_ratio": 1.290698,
+      "end": 3966.1,
+      "no_speech_prob": 0.0,
+      "start": 3964.1,
+      "text": "武汉哪地方最火"
+    },
+    {
+      "avg_logprob": -0.241949,
+      "compression_ratio": 1.290698,
+      "end": 3967.7,
+      "no_speech_prob": 0.0,
+      "start": 3966.5,
+      "text": "只死了六个人"
+    },
+    {
+      "avg_logprob": -0.182843,
+      "compression_ratio": 1.378571,
+      "end": 3969.4,
+      "no_speech_prob": 0.0,
+      "start": 3967.7,
+      "text": "在火葬场24小时"
+    },
+    {
+      "avg_logprob": -0.182843,
+      "compression_ratio": 1.378571,
+      "end": 3970.7,
+      "no_speech_prob": 0.0,
+      "start": 3969.4,
+      "text": "把炉子都烧化了"
+    },
+    {
+      "avg_logprob": -0.182843,
+      "compression_ratio": 1.378571,
+      "end": 3972.6,
+      "no_speech_prob": 0.0,
+      "start": 3971.6,
+      "text": "炉子不够用了"
+    },
+    {
+      "avg_logprob": -0.182843,
+      "compression_ratio": 1.378571,
+      "end": 3974.5,
+      "no_speech_prob": 0.0,
+      "start": 3972.6,
+      "text": "在全国用来了气化炉"
+    },
+    {
+      "avg_logprob": -0.182843,
+      "compression_ratio": 1.378571,
+      "end": 3978.0,
+      "no_speech_prob": 0.0,
+      "start": 3976.1,
+      "text": "你就能只死了三百个人"
+    },
+    {
+      "avg_logprob": -0.182843,
+      "compression_ratio": 1.378571,
+      "end": 3979.1,
+      "no_speech_prob": 0.0,
+      "start": 3978.0,
+      "text": "你信不武汉当时"
+    },
+    {
+      "avg_logprob": -0.182843,
+      "compression_ratio": 1.378571,
+      "end": 3980.6,
+      "no_speech_prob": 0.0,
+      "start": 3979.4,
+      "text": "现在有人爆出来了"
+    },
+    {
+      "avg_logprob": -0.182843,
+      "compression_ratio": 1.378571,
+      "end": 3982.7,
+      "no_speech_prob": 0.0,
+      "start": 3980.6,
+      "text": "当时的武汉把很多老年人"
+    },
+    {
+      "avg_logprob": -0.182843,
+      "compression_ratio": 1.378571,
+      "end": 3983.7,
+      "no_speech_prob": 0.0,
+      "start": 3982.7,
+      "text": "所谓染上病毒"
+    },
+    {
+      "avg_logprob": -0.182843,
+      "compression_ratio": 1.378571,
+      "end": 3985.2,
+      "no_speech_prob": 0.0,
+      "start": 3983.7,
+      "text": "打包直接过去了"
+    },
+    {
+      "avg_logprob": -0.182843,
+      "compression_ratio": 1.378571,
+      "end": 3987.3,
+      "no_speech_prob": 0.0,
+      "start": 3986.2,
+      "text": "你七哥没有说过"
+    },
+    {
+      "avg_logprob": -0.182843,
+      "compression_ratio": 1.378571,
+      "end": 3989.7,
+      "no_speech_prob": 0.0,
+      "start": 3987.9,
+      "text": "咱武汉在火葬场的战友告诉我"
+    },
+    {
+      "avg_logprob": -0.182843,
+      "compression_ratio": 1.378571,
+      "end": 3990.4,
+      "no_speech_prob": 0.0,
+      "start": 3989.7,
+      "text": "七哥"
+    },
+    {
+      "avg_logprob": -0.182843,
+      "compression_ratio": 1.378571,
+      "end": 3992.3,
+      "no_speech_prob": 0.0,
+      "start": 3990.9,
+      "text": "那个战友现在已经很抱歉"
+    },
+    {
+      "avg_logprob": -0.182843,
+      "compression_ratio": 1.378571,
+      "end": 3993.3,
+      "no_speech_prob": 0.0,
+      "start": 3992.3,
+      "text": "已经离世了"
+    },
+    {
+      "avg_logprob": -0.182843,
+      "compression_ratio": 1.378571,
+      "end": 3995.9,
+      "no_speech_prob": 0.0,
+      "start": 3993.8,
+      "text": "我怀疑他是被共产党长做掉了"
+    },
+    {
+      "avg_logprob": -0.263829,
+      "compression_ratio": 1.370229,
+      "end": 3998.4,
+      "no_speech_prob": 0.0,
+      "start": 3995.9,
+      "text": "他当时给我发了视频"
+    },
+    {
+      "avg_logprob": -0.263829,
+      "compression_ratio": 1.370229,
+      "end": 4000.8,
+      "no_speech_prob": 0.0,
+      "start": 3999.1,
+      "text": "我相当怀疑当时视频"
+    },
+    {
+      "avg_logprob": -0.263829,
+      "compression_ratio": 1.370229,
+      "end": 4001.7,
+      "no_speech_prob": 0.0,
+      "start": 4000.8,
+      "text": "我说是真是假"
+    },
+    {
+      "avg_logprob": -0.263829,
+      "compression_ratio": 1.370229,
+      "end": 4002.5,
+      "no_speech_prob": 0.0,
+      "start": 4002.1,
+      "text": "他说七哥"
+    },
+    {
+      "avg_logprob": -0.263829,
+      "compression_ratio": 1.370229,
+      "end": 4002.9,
+      "no_speech_prob": 0.0,
+      "start": 4002.5,
+      "text": "你知道吗"
+    },
+    {
+      "avg_logprob": -0.263829,
+      "compression_ratio": 1.370229,
+      "end": 4004.7,
+      "no_speech_prob": 0.0,
+      "start": 4002.9,
+      "text": "活人都拿来给火葬了"
+    },
+    {
+      "avg_logprob": -0.263829,
+      "compression_ratio": 1.370229,
+      "end": 4005.9,
+      "no_speech_prob": 0.0,
+      "start": 4005.4,
+      "text": "这一句话"
+    },
+    {
+      "avg_logprob": -0.263829,
+      "compression_ratio": 1.370229,
+      "end": 4006.3,
+      "no_speech_prob": 0.0,
+      "start": 4005.9,
+      "text": "把我吓了"
+    },
+    {
+      "avg_logprob": -0.263829,
+      "compression_ratio": 1.370229,
+      "end": 4007.4,
+      "no_speech_prob": 0.0,
+      "start": 4006.3,
+      "text": "我不敢用这视频了"
+    },
+    {
+      "avg_logprob": -0.263829,
+      "compression_ratio": 1.370229,
+      "end": 4009.0,
+      "no_speech_prob": 0.0,
+      "start": 4008.2,
+      "text": "我说你告诉我"
+    },
+    {
+      "avg_logprob": -0.263829,
+      "compression_ratio": 1.370229,
+      "end": 4011.2,
+      "no_speech_prob": 0.0,
+      "start": 4009.0,
+      "text": "说火葬场24小时烧人"
+    },
+    {
+      "avg_logprob": -0.263829,
+      "compression_ratio": 1.370229,
+      "end": 4012.7,
+      "no_speech_prob": 0.0,
+      "start": 4011.6,
+      "text": "这已经很吓人了"
+    },
+    {
+      "avg_logprob": -0.263829,
+      "compression_ratio": 1.370229,
+      "end": 4015.2,
+      "no_speech_prob": 0.0,
+      "start": 4013.3,
+      "text": "我在通过技术上看"
+    },
+    {
+      "avg_logprob": -0.263829,
+      "compression_ratio": 1.370229,
+      "end": 4015.8,
+      "no_speech_prob": 0.0,
+      "start": 4015.2,
+      "text": "确实"
+    },
+    {
+      "avg_logprob": -0.263829,
+      "compression_ratio": 1.370229,
+      "end": 4019.0,
+      "no_speech_prob": 0.0,
+      "start": 4016.0,
+      "text": "武汉黄石作为的火葬场生意好得一塌糊涂"
+    },
+    {
+      "avg_logprob": -0.263829,
+      "compression_ratio": 1.370229,
+      "end": 4020.4,
+      "no_speech_prob": 0.0,
+      "start": 4019.8,
+      "text": "你再说"
+    },
+    {
+      "avg_logprob": -0.263829,
+      "compression_ratio": 1.370229,
+      "end": 4021.3,
+      "no_speech_prob": 0.0,
+      "start": 4020.4,
+      "text": "烧活人"
+    },
+    {
+      "avg_logprob": -0.263829,
+      "compression_ratio": 1.370229,
+      "end": 4022.4,
+      "no_speech_prob": 0.0,
+      "start": 4021.3,
+      "text": "我就不敢相信了"
+    },
+    {
+      "avg_logprob": -0.214497,
+      "compression_ratio": 1.276018,
+      "end": 4026.9,
+      "no_speech_prob": 0.0,
+      "start": 4022.4,
+      "text": "但是现在事实证明老年人就是活着被给烧了"
+    },
+    {
+      "avg_logprob": -0.214497,
+      "compression_ratio": 1.276018,
+      "end": 4029.0,
+      "no_speech_prob": 0.0,
+      "start": 4027.8,
+      "text": "这个现在视频已经出来了"
+    },
+    {
+      "avg_logprob": -0.214497,
+      "compression_ratio": 1.276018,
+      "end": 4033.1,
+      "no_speech_prob": 0.0,
+      "start": 4029.8,
+      "text": "就共产党是有组织性的毁掉老年人和残疾人"
+    },
+    {
+      "avg_logprob": -0.214497,
+      "compression_ratio": 1.276018,
+      "end": 4036.7,
+      "no_speech_prob": 0.0,
+      "start": 4034.3,
+      "text": "那么俄乌战争今天看的是什么"
+    },
+    {
+      "avg_logprob": -0.214497,
+      "compression_ratio": 1.276018,
+      "end": 4039.1,
+      "no_speech_prob": 0.0,
+      "start": 4037.0,
+      "text": "乌克兰的前线也不希望"
+    },
+    {
+      "avg_logprob": -0.214497,
+      "compression_ratio": 1.276018,
+      "end": 4039.9,
+      "no_speech_prob": 0.0,
+      "start": 4039.5,
+      "text": "是吧"
+    },
+    {
+      "avg_logprob": -0.214497,
+      "compression_ratio": 1.276018,
+      "end": 4041.1,
+      "no_speech_prob": 0.0,
+      "start": 4039.9,
+      "text": "老年人上前线去"
+    },
+    {
+      "avg_logprob": -0.214497,
+      "compression_ratio": 1.276018,
+      "end": 4044.3,
+      "no_speech_prob": 0.0,
+      "start": 4042.9,
+      "text": "俄罗斯更是如此"
+    },
+    {
+      "avg_logprob": -0.214497,
+      "compression_ratio": 1.276018,
+      "end": 4047.3,
+      "no_speech_prob": 0.0,
+      "start": 4046.2,
+      "text": "这个时候征兵"
+    },
+    {
+      "avg_logprob": -0.231447,
+      "compression_ratio": 1.288889,
+      "end": 4049.0,
+      "no_speech_prob": 0.0,
+      "start": 4047.3,
+      "text": "你看到征兵啊"
+    },
+    {
+      "avg_logprob": -0.231447,
+      "compression_ratio": 1.288889,
+      "end": 4052.2,
+      "no_speech_prob": 0.0,
+      "start": 4049.0,
+      "text": "当时俄罗斯征兵征多少人知道吗"
+    },
+    {
+      "avg_logprob": -0.231447,
+      "compression_ratio": 1.288889,
+      "end": 4054.2,
+      "no_speech_prob": 0.0,
+      "start": 4052.7,
+      "text": "上千万人"
+    },
+    {
+      "avg_logprob": -0.231447,
+      "compression_ratio": 1.288889,
+      "end": 4056.6,
+      "no_speech_prob": 0.0,
+      "start": 4055.4,
+      "text": "一千多万"
+    },
+    {
+      "avg_logprob": -0.231447,
+      "compression_ratio": 1.288889,
+      "end": 4061.0,
+      "no_speech_prob": 0.0,
+      "start": 4058.0,
+      "text": "美国征兵四百万就新征兵员"
+    },
+    {
+      "avg_logprob": -0.231447,
+      "compression_ratio": 1.288889,
+      "end": 4064.1,
+      "no_speech_prob": 0.0,
+      "start": 4062.3,
+      "text": "德国征兵也上千万"
+    },
+    {
+      "avg_logprob": -0.231447,
+      "compression_ratio": 1.288889,
+      "end": 4066.8,
+      "no_speech_prob": 0.0,
+      "start": 4064.7,
+      "text": "平均六个人就一个兵员"
+    },
+    {
+      "avg_logprob": -0.201266,
+      "compression_ratio": 1.348837,
+      "end": 4071.7,
+      "no_speech_prob": 0.0,
+      "start": 4066.8,
+      "text": "英国人在大日布洛帝国全球性的什么印度啊"
+    },
+    {
+      "avg_logprob": -0.201266,
+      "compression_ratio": 1.348837,
+      "end": 4072.4,
+      "no_speech_prob": 0.0,
+      "start": 4071.7,
+      "text": "巴基斯坦"
+    },
+    {
+      "avg_logprob": -0.201266,
+      "compression_ratio": 1.348837,
+      "end": 4073.0,
+      "no_speech_prob": 0.0,
+      "start": 4072.4,
+      "text": "非洲啊"
+    },
+    {
+      "avg_logprob": -0.201266,
+      "compression_ratio": 1.348837,
+      "end": 4074.2,
+      "no_speech_prob": 0.0,
+      "start": 4073.2,
+      "text": "所有的属地征兵"
+    },
+    {
+      "avg_logprob": -0.201266,
+      "compression_ratio": 1.348837,
+      "end": 4076.4,
+      "no_speech_prob": 0.0,
+      "start": 4074.9,
+      "text": "也征兵了几百万上千万"
+    },
+    {
+      "avg_logprob": -0.201266,
+      "compression_ratio": 1.348837,
+      "end": 4077.7,
+      "no_speech_prob": 0.0,
+      "start": 4076.4,
+      "text": "大英帝国给打没个球了"
+    },
+    {
+      "avg_logprob": -0.201266,
+      "compression_ratio": 1.348837,
+      "end": 4081.8,
+      "no_speech_prob": 0.0,
+      "start": 4080.2,
+      "text": "中国征兵多少人知道吗"
+    },
+    {
+      "avg_logprob": -0.201266,
+      "compression_ratio": 1.348837,
+      "end": 4083.6,
+      "no_speech_prob": 0.0,
+      "start": 4082.6,
+      "text": "去查查历史去"
+    },
+    {
+      "avg_logprob": -0.201266,
+      "compression_ratio": 1.348837,
+      "end": 4089.4,
+      "no_speech_prob": 0.0,
+      "start": 4085.8,
+      "text": "中国这个民族从真的是从历史到今天"
+    },
+    {
+      "avg_logprob": -0.201266,
+      "compression_ratio": 1.348837,
+      "end": 4093.7,
+      "no_speech_prob": 0.0,
+      "start": 4089.4,
+      "text": "除了自己人杀自己人的所谓的内杀内耗之外"
+    },
+    {
+      "avg_logprob": -0.201266,
+      "compression_ratio": 1.348837,
+      "end": 4096.1,
+      "no_speech_prob": 0.0,
+      "start": 4093.7,
+      "text": "没有人类上异常像样的战争"
+    },
+    {
+      "avg_logprob": -0.212053,
+      "compression_ratio": 1.401747,
+      "end": 4097.1,
+      "no_speech_prob": 0.0,
+      "start": 4096.1,
+      "text": "对外的"
+    },
+    {
+      "avg_logprob": -0.212053,
+      "compression_ratio": 1.401747,
+      "end": 4101.0,
+      "no_speech_prob": 0.0,
+      "start": 4098.1,
+      "text": "更从来没有一个保护过自己民主的战争"
+    },
+    {
+      "avg_logprob": -0.212053,
+      "compression_ratio": 1.401747,
+      "end": 4102.7,
+      "no_speech_prob": 0.0,
+      "start": 4101.0,
+      "text": "只有家族之争"
+    },
+    {
+      "avg_logprob": -0.212053,
+      "compression_ratio": 1.401747,
+      "end": 4103.9,
+      "no_speech_prob": 0.0,
+      "start": 4102.7,
+      "text": "就内杀"
+    },
+    {
+      "avg_logprob": -0.212053,
+      "compression_ratio": 1.401747,
+      "end": 4107.2,
+      "no_speech_prob": 0.0,
+      "start": 4103.9,
+      "text": "从来没有保护过外战"
+    },
+    {
+      "avg_logprob": -0.212053,
+      "compression_ratio": 1.401747,
+      "end": 4111.0,
+      "no_speech_prob": 0.0,
+      "start": 4108.9,
+      "text": "今天共产党更是一帮流氓骗子"
+    },
+    {
+      "avg_logprob": -0.212053,
+      "compression_ratio": 1.401747,
+      "end": 4114.3,
+      "no_speech_prob": 0.0,
+      "start": 4112.1,
+      "text": "而共产党发动了这场战争"
+    },
+    {
+      "avg_logprob": -0.212053,
+      "compression_ratio": 1.401747,
+      "end": 4116.4,
+      "no_speech_prob": 0.0,
+      "start": 4114.3,
+      "text": "它是发动由它说了算"
+    },
+    {
+      "avg_logprob": -0.212053,
+      "compression_ratio": 1.401747,
+      "end": 4118.6,
+      "no_speech_prob": 0.0,
+      "start": 4116.9,
+      "text": "什么时候停止它说了真不算"
+    },
+    {
+      "avg_logprob": -0.212053,
+      "compression_ratio": 1.401747,
+      "end": 4119.9,
+      "no_speech_prob": 0.0,
+      "start": 4118.6,
+      "text": "是由美国人说了算"
+    },
+    {
+      "avg_logprob": -0.212053,
+      "compression_ratio": 1.401747,
+      "end": 4121.1,
+      "no_speech_prob": 0.0,
+      "start": 4120.2,
+      "text": "就像慈禧"
+    },
+    {
+      "avg_logprob": -0.212053,
+      "compression_ratio": 1.401747,
+      "end": 4123.2,
+      "no_speech_prob": 0.0,
+      "start": 4121.7,
+      "text": "发动了所谓的对美"
+    },
+    {
+      "avg_logprob": -0.212053,
+      "compression_ratio": 1.401747,
+      "end": 4124.0,
+      "no_speech_prob": 0.0,
+      "start": 4123.2,
+      "text": "对苏"
+    },
+    {
+      "avg_logprob": -0.212053,
+      "compression_ratio": 1.401747,
+      "end": 4125.1,
+      "no_speech_prob": 0.0,
+      "start": 4124.0,
+      "text": "对俄"
+    },
+    {
+      "avg_logprob": -0.333811,
+      "compression_ratio": 1.276243,
+      "end": 4127.4,
+      "no_speech_prob": 0.0,
+      "start": 4125.1,
+      "text": "对全球的这个八国联军战争"
+    },
+    {
+      "avg_logprob": -0.333811,
+      "compression_ratio": 1.276243,
+      "end": 4129.5,
+      "no_speech_prob": 0.0,
+      "start": 4128.1,
+      "text": "但是停止它说了不算"
+    },
+    {
+      "avg_logprob": -0.333811,
+      "compression_ratio": 1.276243,
+      "end": 4130.8,
+      "no_speech_prob": 0.0,
+      "start": 4129.5,
+      "text": "直到把它谎上打乱"
+    },
+    {
+      "avg_logprob": -0.333811,
+      "compression_ratio": 1.276243,
+      "end": 4134.4,
+      "no_speech_prob": 0.0,
+      "start": 4132.4,
+      "text": "俄乌战争是告诉你什么"
+    },
+    {
+      "avg_logprob": -0.333811,
+      "compression_ratio": 1.276243,
+      "end": 4135.9,
+      "no_speech_prob": 0.0,
+      "start": 4134.7,
+      "text": "不是洪秀全"
+    },
+    {
+      "avg_logprob": -0.333811,
+      "compression_ratio": 1.276243,
+      "end": 4137.3,
+      "no_speech_prob": 0.0,
+      "start": 4136.5,
+      "text": "不是李秀"
+    },
+    {
+      "avg_logprob": -0.333811,
+      "compression_ratio": 1.276243,
+      "end": 4138.0,
+      "no_speech_prob": 0.0,
+      "start": 4137.3,
+      "text": "李志诚"
+    },
+    {
+      "avg_logprob": -0.333811,
+      "compression_ratio": 1.276243,
+      "end": 4144.7,
+      "no_speech_prob": 0.0,
+      "start": 4139.3,
+      "text": "共产党再也不是玩了一个又一个慈禧式的一个时代的愚蠢的"
+    },
+    {
+      "avg_logprob": -0.291359,
+      "compression_ratio": 0.851351,
+      "end": 4147.0,
+      "no_speech_prob": 0.0,
+      "start": 4144.7,
+      "text": "向全人类发动战争"
+    },
+    {
+      "avg_logprob": -0.291359,
+      "compression_ratio": 0.851351,
+      "end": 4148.0,
+      "no_speech_prob": 0.0,
+      "start": 4147.0,
+      "text": "冠状病毒"
+    },
+    {
+      "avg_logprob": -0.291359,
+      "compression_ratio": 0.851351,
+      "end": 4149.0,
+      "no_speech_prob": 0.0,
+      "start": 4148.0,
+      "text": "经济挑战"
+    },
+    {
+      "avg_logprob": -0.291359,
+      "compression_ratio": 0.851351,
+      "end": 4150.1,
+      "no_speech_prob": 0.0,
+      "start": 4149.0,
+      "text": "领导全世界"
+    },
+    {
+      "avg_logprob": -0.429119,
+      "compression_ratio": 1.16185,
+      "end": 4152.4,
+      "no_speech_prob": 0.0,
+      "start": 4150.1,
+      "text": "为什么小杨知道吗"
+    },
+    {
+      "avg_logprob": -0.429119,
+      "compression_ratio": 1.16185,
+      "end": 4155.1,
+      "no_speech_prob": 0.0,
+      "start": 4152.4,
+      "text": "今天我们原来谈过莫德尔定律"
+    },
+    {
+      "avg_logprob": -0.429119,
+      "compression_ratio": 1.16185,
+      "end": 4157.0,
+      "no_speech_prob": 0.0,
+      "start": 4155.1,
+      "text": "这是习写就在这轮到我了"
+    },
+    {
+      "avg_logprob": -0.429119,
+      "compression_ratio": 1.16185,
+      "end": 4157.9,
+      "no_speech_prob": 0.0,
+      "start": 4157.0,
+      "text": "第二个"
+    },
+    {
+      "avg_logprob": -0.429119,
+      "compression_ratio": 1.16185,
+      "end": 4160.3,
+      "no_speech_prob": 0.0,
+      "start": 4157.9,
+      "text": "第二次世界大战"
+    },
+    {
+      "avg_logprob": -0.429119,
+      "compression_ratio": 1.16185,
+      "end": 4162.4,
+      "no_speech_prob": 0.0,
+      "start": 4160.4,
+      "text": "之前是谁跟谁先战的"
+    },
+    {
+      "avg_logprob": -0.429119,
+      "compression_ratio": 1.16185,
+      "end": 4164.4,
+      "no_speech_prob": 0.0,
+      "start": 4163.4,
+      "text": "大家记住"
+    },
+    {
+      "avg_logprob": -0.429119,
+      "compression_ratio": 1.16185,
+      "end": 4166.0,
+      "no_speech_prob": 0.0,
+      "start": 4164.4,
+      "text": "经济自由化"
+    },
+    {
+      "avg_logprob": -0.429119,
+      "compression_ratio": 1.16185,
+      "end": 4167.4,
+      "no_speech_prob": 0.0,
+      "start": 4166.0,
+      "text": "市场追求自由化"
+    },
+    {
+      "avg_logprob": -0.192921,
+      "compression_ratio": 1.371795,
+      "end": 4170.9,
+      "no_speech_prob": 0.0,
+      "start": 4167.4,
+      "text": "货币英镑是全球货币"
+    },
+    {
+      "avg_logprob": -0.192921,
+      "compression_ratio": 1.371795,
+      "end": 4172.0,
+      "no_speech_prob": 0.0,
+      "start": 4170.9,
+      "text": "金本位"
+    },
+    {
+      "avg_logprob": -0.192921,
+      "compression_ratio": 1.371795,
+      "end": 4174.5,
+      "no_speech_prob": 0.0,
+      "start": 4172.6,
+      "text": "然后呢很多货币出来挑战的"
+    },
+    {
+      "avg_logprob": -0.192921,
+      "compression_ratio": 1.371795,
+      "end": 4178.8,
+      "no_speech_prob": 0.0,
+      "start": 4175.2,
+      "text": "然后开始从英德法"
+    },
+    {
+      "avg_logprob": -0.192921,
+      "compression_ratio": 1.371795,
+      "end": 4183.8,
+      "no_speech_prob": 0.0,
+      "start": 4179.4,
+      "text": "这几个开始战导致日本亚洲出来全战"
+    },
+    {
+      "avg_logprob": -0.192921,
+      "compression_ratio": 1.371795,
+      "end": 4185.4,
+      "no_speech_prob": 0.0,
+      "start": 4184.6,
+      "text": "最后全部卷进去"
+    },
+    {
+      "avg_logprob": -0.192921,
+      "compression_ratio": 1.371795,
+      "end": 4186.7,
+      "no_speech_prob": 0.0,
+      "start": 4185.4,
+      "text": "包括当时的澳大利亚"
+    },
+    {
+      "avg_logprob": -0.192921,
+      "compression_ratio": 1.371795,
+      "end": 4188.1,
+      "no_speech_prob": 0.0,
+      "start": 4186.7,
+      "text": "然后美国在里边"
+    },
+    {
+      "avg_logprob": -0.192921,
+      "compression_ratio": 1.371795,
+      "end": 4190.4,
+      "no_speech_prob": 0.0,
+      "start": 4188.1,
+      "text": "美国已经是世界强国了"
+    },
+    {
+      "avg_logprob": -0.192921,
+      "compression_ratio": 1.371795,
+      "end": 4193.3,
+      "no_speech_prob": 0.0,
+      "start": 4192.0,
+      "text": "而且美国最后也参战"
+    },
+    {
+      "avg_logprob": -0.192921,
+      "compression_ratio": 1.371795,
+      "end": 4195.8,
+      "no_speech_prob": 0.0,
+      "start": 4194.3,
+      "text": "打完以后把英国打没了"
+    },
+    {
+      "avg_logprob": -0.192921,
+      "compression_ratio": 1.371795,
+      "end": 4197.3,
+      "no_speech_prob": 0.0,
+      "start": 4196.3,
+      "text": "然后美国强大了"
+    },
+    {
+      "avg_logprob": -0.188781,
+      "compression_ratio": 1.294416,
+      "end": 4198.8,
+      "no_speech_prob": 0.0,
+      "start": 4198.2,
+      "text": "哎"
+    },
+    {
+      "avg_logprob": -0.188781,
+      "compression_ratio": 1.294416,
+      "end": 4200.6,
+      "no_speech_prob": 0.0,
+      "start": 4198.8,
+      "text": "现在共产党的王沪宁"
+    },
+    {
+      "avg_logprob": -0.188781,
+      "compression_ratio": 1.294416,
+      "end": 4202.6,
+      "no_speech_prob": 0.0,
+      "start": 4201.4,
+      "text": "习太阳"
+    },
+    {
+      "avg_logprob": -0.188781,
+      "compression_ratio": 1.294416,
+      "end": 4206.3,
+      "no_speech_prob": 0.0,
+      "start": 4202.6,
+      "text": "觉得中国现在处在二战时的美国地位"
+    },
+    {
+      "avg_logprob": -0.188781,
+      "compression_ratio": 1.294416,
+      "end": 4210.3,
+      "no_speech_prob": 0.0,
+      "start": 4208.4,
+      "text": "只要是世界大战"
+    },
+    {
+      "avg_logprob": -0.188781,
+      "compression_ratio": 1.294416,
+      "end": 4213.9,
+      "no_speech_prob": 0.0,
+      "start": 4211.7,
+      "text": "美国就会布英国的后尘"
+    },
+    {
+      "avg_logprob": -0.188781,
+      "compression_ratio": 1.294416,
+      "end": 4216.3,
+      "no_speech_prob": 0.0,
+      "start": 4215.2,
+      "text": "美元会被打垮"
+    },
+    {
+      "avg_logprob": -0.188781,
+      "compression_ratio": 1.294416,
+      "end": 4221.9,
+      "no_speech_prob": 0.0,
+      "start": 4217.4,
+      "text": "把美国二战时的一世界一半以上的GDP"
+    },
+    {
+      "avg_logprob": -0.188781,
+      "compression_ratio": 1.294416,
+      "end": 4223.7,
+      "no_speech_prob": 0.0,
+      "start": 4221.9,
+      "text": "和工业产值和文明"
+    },
+    {
+      "avg_logprob": -0.188781,
+      "compression_ratio": 1.294416,
+      "end": 4225.7,
+      "no_speech_prob": 0.0,
+      "start": 4224.5,
+      "text": "现在已经四分之一了"
+    },
+    {
+      "avg_logprob": -0.335524,
+      "compression_ratio": 1.178571,
+      "end": 4227.9,
+      "no_speech_prob": 0.0,
+      "start": 4225.7,
+      "text": "而且美国的吸毒"
+    },
+    {
+      "avg_logprob": -0.335524,
+      "compression_ratio": 1.178571,
+      "end": 4229.9,
+      "no_speech_prob": 0.0,
+      "start": 4227.9,
+      "text": "和美国的两党之争"
+    },
+    {
+      "avg_logprob": -0.335524,
+      "compression_ratio": 1.178571,
+      "end": 4231.9,
+      "no_speech_prob": 0.0,
+      "start": 4229.9,
+      "text": "和美国在全球的竞争力"
+    },
+    {
+      "avg_logprob": -0.335524,
+      "compression_ratio": 1.178571,
+      "end": 4232.6,
+      "no_speech_prob": 0.0,
+      "start": 4231.9,
+      "text": "都在"
+    },
+    {
+      "avg_logprob": -0.335524,
+      "compression_ratio": 1.178571,
+      "end": 4234.6,
+      "no_speech_prob": 0.0,
+      "start": 4232.6,
+      "text": "都是跟二战不能相提并论了"
+    },
+    {
+      "avg_logprob": -0.335524,
+      "compression_ratio": 1.178571,
+      "end": 4237.0,
+      "no_speech_prob": 0.0,
+      "start": 4234.6,
+      "text": "而中国人觉得"
+    },
+    {
+      "avg_logprob": -0.335524,
+      "compression_ratio": 1.178571,
+      "end": 4238.8,
+      "no_speech_prob": 0.0,
+      "start": 4237.0,
+      "text": "中国现在我已经是一半"
+    },
+    {
+      "avg_logprob": -0.37301,
+      "compression_ratio": 1.227273,
+      "end": 4241.0,
+      "no_speech_prob": 0.0,
+      "start": 4238.8,
+      "text": "我是世界第二大经济体"
+    },
+    {
+      "avg_logprob": -0.37301,
+      "compression_ratio": 1.227273,
+      "end": 4243.7,
+      "no_speech_prob": 0.0,
+      "start": 4242.0,
+      "text": "我是世界第一大市场"
+    },
+    {
+      "avg_logprob": -0.37301,
+      "compression_ratio": 1.227273,
+      "end": 4246.2,
+      "no_speech_prob": 0.0,
+      "start": 4244.7,
+      "text": "我是最多的人口"
+    },
+    {
+      "avg_logprob": -0.37301,
+      "compression_ratio": 1.227273,
+      "end": 4247.5,
+      "no_speech_prob": 0.0,
+      "start": 4246.8,
+      "text": "消费国"
+    },
+    {
+      "avg_logprob": -0.37301,
+      "compression_ratio": 1.227273,
+      "end": 4250.0,
+      "no_speech_prob": 0.0,
+      "start": 4248.4,
+      "text": "一旦世界开战"
+    },
+    {
+      "avg_logprob": -0.37301,
+      "compression_ratio": 1.227273,
+      "end": 4252.4,
+      "no_speech_prob": 0.0,
+      "start": 4250.7,
+      "text": "我就会把美元干掉"
+    },
+    {
+      "avg_logprob": -0.37301,
+      "compression_ratio": 1.227273,
+      "end": 4254.4,
+      "no_speech_prob": 0.0,
+      "start": 4252.9,
+      "text": "我人民币就成为天下第一"
+    },
+    {
+      "avg_logprob": -0.335781,
+      "compression_ratio": 1.20297,
+      "end": 4257.6,
+      "no_speech_prob": 0.0,
+      "start": 4254.4,
+      "text": "那现在第一个怎么打呢"
+    },
+    {
+      "avg_logprob": -0.335781,
+      "compression_ratio": 1.20297,
+      "end": 4259.3,
+      "no_speech_prob": 0.0,
+      "start": 4257.6,
+      "text": "就像二战以前一样"
+    },
+    {
+      "avg_logprob": -0.335781,
+      "compression_ratio": 1.20297,
+      "end": 4261.0,
+      "no_speech_prob": 0.0,
+      "start": 4259.3,
+      "text": "我和普京结盟"
+    },
+    {
+      "avg_logprob": -0.335781,
+      "compression_ratio": 1.20297,
+      "end": 4263.3,
+      "no_speech_prob": 0.0,
+      "start": 4261.5,
+      "text": "普京先干乌克兰"
+    },
+    {
+      "avg_logprob": -0.335781,
+      "compression_ratio": 1.20297,
+      "end": 4264.6,
+      "no_speech_prob": 0.0,
+      "start": 4263.3,
+      "text": "我干台湾"
+    },
+    {
+      "avg_logprob": -0.335781,
+      "compression_ratio": 1.20297,
+      "end": 4267.8,
+      "no_speech_prob": 0.0,
+      "start": 4266.3,
+      "text": "或者我引耳不发"
+    },
+    {
+      "avg_logprob": -0.335781,
+      "compression_ratio": 1.20297,
+      "end": 4268.8,
+      "no_speech_prob": 0.0,
+      "start": 4267.8,
+      "text": "我从贸易上"
+    },
+    {
+      "avg_logprob": -0.335781,
+      "compression_ratio": 1.20297,
+      "end": 4270.8,
+      "no_speech_prob": 0.0,
+      "start": 4268.8,
+      "text": "经济上挑战美国和世界"
+    },
+    {
+      "avg_logprob": -0.335781,
+      "compression_ratio": 1.20297,
+      "end": 4272.3,
+      "no_speech_prob": 0.0,
+      "start": 4271.6,
+      "text": "大家看到"
+    },
+    {
+      "avg_logprob": -0.335781,
+      "compression_ratio": 1.20297,
+      "end": 4272.6,
+      "no_speech_prob": 0.0,
+      "start": 4272.3,
+      "text": "俄乌"
+    },
+    {
+      "avg_logprob": -0.335781,
+      "compression_ratio": 1.20297,
+      "end": 4274.6,
+      "no_speech_prob": 0.0,
+      "start": 4272.6,
+      "text": "一开战"
+    },
+    {
+      "avg_logprob": -0.335781,
+      "compression_ratio": 1.20297,
+      "end": 4275.6,
+      "no_speech_prob": 0.0,
+      "start": 4274.6,
+      "text": "引来了人类有史上"
+    },
+    {
+      "avg_logprob": -0.335781,
+      "compression_ratio": 1.20297,
+      "end": 4277.3,
+      "no_speech_prob": 0.0,
+      "start": 4275.6,
+      "text": "四十几国开战呢"
+    },
+    {
+      "avg_logprob": -0.310448,
+      "compression_ratio": 1.361345,
+      "end": 4278.6,
+      "no_speech_prob": 0.0,
+      "start": 4277.3,
+      "text": "当时的时候"
+    },
+    {
+      "avg_logprob": -0.310448,
+      "compression_ratio": 1.361345,
+      "end": 4279.4,
+      "no_speech_prob": 0.0,
+      "start": 4278.6,
+      "text": "二战之前"
+    },
+    {
+      "avg_logprob": -0.310448,
+      "compression_ratio": 1.361345,
+      "end": 4280.7,
+      "no_speech_prob": 0.0,
+      "start": 4279.4,
+      "text": "一开始只有几个国家"
+    },
+    {
+      "avg_logprob": -0.310448,
+      "compression_ratio": 1.361345,
+      "end": 4281.7,
+      "no_speech_prob": 0.0,
+      "start": 4280.7,
+      "text": "最后二三十个国家"
+    },
+    {
+      "avg_logprob": -0.310448,
+      "compression_ratio": 1.361345,
+      "end": 4282.9,
+      "no_speech_prob": 0.0,
+      "start": 4281.7,
+      "text": "最后联盟就开始了"
+    },
+    {
+      "avg_logprob": -0.310448,
+      "compression_ratio": 1.361345,
+      "end": 4283.8,
+      "no_speech_prob": 0.0,
+      "start": 4282.9,
+      "text": "结束的时候"
+    },
+    {
+      "avg_logprob": -0.310448,
+      "compression_ratio": 1.361345,
+      "end": 4286.0,
+      "no_speech_prob": 0.0,
+      "start": 4283.8,
+      "text": "现在已经远远超过二战了"
+    },
+    {
+      "avg_logprob": -0.310448,
+      "compression_ratio": 1.361345,
+      "end": 4288.6,
+      "no_speech_prob": 0.0,
+      "start": 4287.8,
+      "text": "那么现在"
+    },
+    {
+      "avg_logprob": -0.310448,
+      "compression_ratio": 1.361345,
+      "end": 4289.1,
+      "no_speech_prob": 0.0,
+      "start": 4288.6,
+      "text": "习"
+    },
+    {
+      "avg_logprob": -0.310448,
+      "compression_ratio": 1.361345,
+      "end": 4291.9,
+      "no_speech_prob": 0.0,
+      "start": 4289.1,
+      "text": "习太阳一看到现在俄乌战争"
+    },
+    {
+      "avg_logprob": -0.310448,
+      "compression_ratio": 1.361345,
+      "end": 4294.1,
+      "no_speech_prob": 0.0,
+      "start": 4292.5,
+      "text": "他更加相信自己"
+    },
+    {
+      "avg_logprob": -0.310448,
+      "compression_ratio": 1.361345,
+      "end": 4295.6,
+      "no_speech_prob": 0.0,
+      "start": 4294.1,
+      "text": "符合末日经历"
+    },
+    {
+      "avg_logprob": -0.310448,
+      "compression_ratio": 1.361345,
+      "end": 4297.9,
+      "no_speech_prob": 0.0,
+      "start": 4296.9,
+      "text": "更重要的事情"
+    },
+    {
+      "avg_logprob": -0.310448,
+      "compression_ratio": 1.361345,
+      "end": 4300.1,
+      "no_speech_prob": 0.0,
+      "start": 4297.9,
+      "text": "他相信了轴心文明"
+    },
+    {
+      "avg_logprob": -0.310448,
+      "compression_ratio": 1.361345,
+      "end": 4303.6,
+      "no_speech_prob": 0.0,
+      "start": 4302.3,
+      "text": "他觉得轴心"
+    },
+    {
+      "avg_logprob": -0.310448,
+      "compression_ratio": 1.361345,
+      "end": 4305.9,
+      "no_speech_prob": 0.0,
+      "start": 4303.9,
+      "text": "回到了我儒家的天下"
+    },
+    {
+      "avg_logprob": -0.297181,
+      "compression_ratio": 1.277778,
+      "end": 4307.6,
+      "no_speech_prob": 0.0,
+      "start": 4305.9,
+      "text": "我东方的天下"
+    },
+    {
+      "avg_logprob": -0.297181,
+      "compression_ratio": 1.277778,
+      "end": 4309.1,
+      "no_speech_prob": 0.0,
+      "start": 4307.6,
+      "text": "我共产党的天下"
+    },
+    {
+      "avg_logprob": -0.297181,
+      "compression_ratio": 1.277778,
+      "end": 4310.3,
+      "no_speech_prob": 0.0,
+      "start": 4309.1,
+      "text": "美国人必亡"
+    },
+    {
+      "avg_logprob": -0.297181,
+      "compression_ratio": 1.277778,
+      "end": 4312.5,
+      "no_speech_prob": 0.0,
+      "start": 4311.7,
+      "text": "欧洲必亡"
+    },
+    {
+      "avg_logprob": -0.297181,
+      "compression_ratio": 1.277778,
+      "end": 4318.2,
+      "no_speech_prob": 0.0,
+      "start": 4315.0,
+      "text": "这个结局就是二战术的"
+    },
+    {
+      "avg_logprob": -0.297181,
+      "compression_ratio": 1.277778,
+      "end": 4319.5,
+      "no_speech_prob": 0.0,
+      "start": 4318.2,
+      "text": "日本和德国"
+    },
+    {
+      "avg_logprob": -0.297181,
+      "compression_ratio": 1.277778,
+      "end": 4323.2,
+      "no_speech_prob": 0.0,
+      "start": 4321.6,
+      "text": "而且深信习相信"
+    },
+    {
+      "avg_logprob": -0.297181,
+      "compression_ratio": 1.277778,
+      "end": 4324.4,
+      "no_speech_prob": 0.0,
+      "start": 4323.2,
+      "text": "我打完这一仗"
+    },
+    {
+      "avg_logprob": -0.297181,
+      "compression_ratio": 1.277778,
+      "end": 4327.1,
+      "no_speech_prob": 0.0,
+      "start": 4325.0,
+      "text": "日本战后的恢复多快呀"
+    },
+    {
+      "avg_logprob": -0.297181,
+      "compression_ratio": 1.277778,
+      "end": 4328.1,
+      "no_speech_prob": 0.0,
+      "start": 4327.6,
+      "text": "是吧"
+    },
+    {
+      "avg_logprob": -0.297181,
+      "compression_ratio": 1.277778,
+      "end": 4330.2,
+      "no_speech_prob": 0.0,
+      "start": 4328.1,
+      "text": "马上就把战前的经济"
+    },
+    {
+      "avg_logprob": -0.297181,
+      "compression_ratio": 1.277778,
+      "end": 4332.4,
+      "no_speech_prob": 0.0,
+      "start": 4330.2,
+      "text": "丰田什么都起来了"
+    },
+    {
+      "avg_logprob": -0.297181,
+      "compression_ratio": 1.277778,
+      "end": 4333.5,
+      "no_speech_prob": 0.0,
+      "start": 4332.4,
+      "text": "德国的宝马"
+    },
+    {
+      "avg_logprob": -0.297181,
+      "compression_ratio": 1.277778,
+      "end": 4334.1,
+      "no_speech_prob": 0.0,
+      "start": 4333.5,
+      "text": "西门子"
+    },
+    {
+      "avg_logprob": -0.297181,
+      "compression_ratio": 1.277778,
+      "end": 4334.5,
+      "no_speech_prob": 0.0,
+      "start": 4334.1,
+      "text": "哇"
+    },
+    {
+      "avg_logprob": -0.297181,
+      "compression_ratio": 1.277778,
+      "end": 4335.2,
+      "no_speech_prob": 0.0,
+      "start": 4334.5,
+      "text": "全起来了"
+    },
+    {
+      "avg_logprob": -0.251371,
+      "compression_ratio": 1.32,
+      "end": 4336.3,
+      "no_speech_prob": 0.0,
+      "start": 4335.2,
+      "text": "战争经济"
+    },
+    {
+      "avg_logprob": -0.251371,
+      "compression_ratio": 1.32,
+      "end": 4337.0,
+      "no_speech_prob": 0.0,
+      "start": 4336.3,
+      "text": "战争文明"
+    },
+    {
+      "avg_logprob": -0.251371,
+      "compression_ratio": 1.32,
+      "end": 4337.8,
+      "no_speech_prob": 0.0,
+      "start": 4337.0,
+      "text": "全发动起来了"
+    },
+    {
+      "avg_logprob": -0.251371,
+      "compression_ratio": 1.32,
+      "end": 4339.3,
+      "no_speech_prob": 0.0,
+      "start": 4337.8,
+      "text": "他把他中国这个"
+    },
+    {
+      "avg_logprob": -0.251371,
+      "compression_ratio": 1.32,
+      "end": 4340.6,
+      "no_speech_prob": 0.0,
+      "start": 4339.3,
+      "text": "所有的一些理位"
+    },
+    {
+      "avg_logprob": -0.251371,
+      "compression_ratio": 1.32,
+      "end": 4342.6,
+      "no_speech_prob": 0.0,
+      "start": 4340.6,
+      "text": "他会成为战后的德国"
+    },
+    {
+      "avg_logprob": -0.251371,
+      "compression_ratio": 1.32,
+      "end": 4344.7,
+      "no_speech_prob": 0.0,
+      "start": 4342.6,
+      "text": "和日本的工业生产能力"
+    },
+    {
+      "avg_logprob": -0.251371,
+      "compression_ratio": 1.32,
+      "end": 4345.9,
+      "no_speech_prob": 0.0,
+      "start": 4344.7,
+      "text": "和恢复速度"
+    },
+    {
+      "avg_logprob": -0.251371,
+      "compression_ratio": 1.32,
+      "end": 4348.1,
+      "no_speech_prob": 0.0,
+      "start": 4345.9,
+      "text": "然后他会认为自己是"
+    },
+    {
+      "avg_logprob": -0.251371,
+      "compression_ratio": 1.32,
+      "end": 4350.3,
+      "no_speech_prob": 0.0,
+      "start": 4348.8,
+      "text": "打二战后的美国"
+    },
+    {
+      "avg_logprob": -0.251371,
+      "compression_ratio": 1.32,
+      "end": 4351.3,
+      "no_speech_prob": 0.0,
+      "start": 4350.3,
+      "text": "英国倒下去"
+    },
+    {
+      "avg_logprob": -0.251371,
+      "compression_ratio": 1.32,
+      "end": 4352.6,
+      "no_speech_prob": 0.0,
+      "start": 4351.3,
+      "text": "然后美国是英国"
+    },
+    {
+      "avg_logprob": -0.251371,
+      "compression_ratio": 1.32,
+      "end": 4354.0,
+      "no_speech_prob": 0.0,
+      "start": 4352.6,
+      "text": "他深信不疑"
+    },
+    {
+      "avg_logprob": -0.251371,
+      "compression_ratio": 1.32,
+      "end": 4356.6,
+      "no_speech_prob": 0.0,
+      "start": 4355.7,
+      "text": "那俄乌战争"
+    },
+    {
+      "avg_logprob": -0.251371,
+      "compression_ratio": 1.32,
+      "end": 4358.4,
+      "no_speech_prob": 0.0,
+      "start": 4356.6,
+      "text": "给我们带来第二个问题是什么"
+    },
+    {
+      "avg_logprob": -0.251371,
+      "compression_ratio": 1.32,
+      "end": 4359.6,
+      "no_speech_prob": 0.0,
+      "start": 4358.6,
+      "text": "我可以告诉大家"
+    },
+    {
+      "avg_logprob": -0.256355,
+      "compression_ratio": 1.242038,
+      "end": 4363.6,
+      "no_speech_prob": 0.0,
+      "start": 4359.6,
+      "text": "只要中国人现在不消灭中国共产党"
+    },
+    {
+      "avg_logprob": -0.256355,
+      "compression_ratio": 1.242038,
+      "end": 4368.0,
+      "no_speech_prob": 0.0,
+      "start": 4364.4,
+      "text": "中国人会成为人类上有史以来"
+    },
+    {
+      "avg_logprob": -0.256355,
+      "compression_ratio": 1.242038,
+      "end": 4369.4,
+      "no_speech_prob": 0.0,
+      "start": 4368.0,
+      "text": "两个最大牺牲品"
+    },
+    {
+      "avg_logprob": -0.256355,
+      "compression_ratio": 1.242038,
+      "end": 4374.1,
+      "no_speech_prob": 0.0,
+      "start": 4372.0,
+      "text": "经济上的大萧条之后的"
+    },
+    {
+      "avg_logprob": -0.256355,
+      "compression_ratio": 1.242038,
+      "end": 4378.0,
+      "no_speech_prob": 0.0,
+      "start": 4375.3,
+      "text": "中国人人吃人的社会长期的"
+    },
+    {
+      "avg_logprob": -0.256355,
+      "compression_ratio": 1.242038,
+      "end": 4380.2,
+      "no_speech_prob": 0.0,
+      "start": 4378.7,
+      "text": "不是五年不是十年"
+    },
+    {
+      "avg_logprob": -0.255621,
+      "compression_ratio": 1.311927,
+      "end": 4382.9,
+      "no_speech_prob": 0.0,
+      "start": 4380.2,
+      "text": "是N年都无法恢复的"
+    },
+    {
+      "avg_logprob": -0.255621,
+      "compression_ratio": 1.311927,
+      "end": 4384.8,
+      "no_speech_prob": 0.0,
+      "start": 4383.8,
+      "text": "缺粮食"
+    },
+    {
+      "avg_logprob": -0.255621,
+      "compression_ratio": 1.311927,
+      "end": 4386.3,
+      "no_speech_prob": 0.0,
+      "start": 4384.8,
+      "text": "缺生存条件"
+    },
+    {
+      "avg_logprob": -0.255621,
+      "compression_ratio": 1.311927,
+      "end": 4389.0,
+      "no_speech_prob": 0.0,
+      "start": 4387.4,
+      "text": "根本不可能有政府"
+    },
+    {
+      "avg_logprob": -0.255621,
+      "compression_ratio": 1.311927,
+      "end": 4390.6,
+      "no_speech_prob": 0.0,
+      "start": 4389.6,
+      "text": "无政府状态"
+    },
+    {
+      "avg_logprob": -0.255621,
+      "compression_ratio": 1.311927,
+      "end": 4392.0,
+      "no_speech_prob": 0.0,
+      "start": 4390.6,
+      "text": "军阀主义"
+    },
+    {
+      "avg_logprob": -0.255621,
+      "compression_ratio": 1.311927,
+      "end": 4393.2,
+      "no_speech_prob": 0.0,
+      "start": 4392.0,
+      "text": "没有军阀了"
+    },
+    {
+      "avg_logprob": -0.255621,
+      "compression_ratio": 1.311927,
+      "end": 4394.0,
+      "no_speech_prob": 0.0,
+      "start": 4393.2,
+      "text": "只有流氓"
+    },
+    {
+      "avg_logprob": -0.255621,
+      "compression_ratio": 1.311927,
+      "end": 4396.0,
+      "no_speech_prob": 0.0,
+      "start": 4395.4,
+      "text": "经济上"
+    },
+    {
+      "avg_logprob": -0.255621,
+      "compression_ratio": 1.311927,
+      "end": 4397.2,
+      "no_speech_prob": 0.0,
+      "start": 4396.5,
+      "text": "军事上"
+    },
+    {
+      "avg_logprob": -0.255621,
+      "compression_ratio": 1.311927,
+      "end": 4397.9,
+      "no_speech_prob": 0.0,
+      "start": 4397.2,
+      "text": "政治上"
+    },
+    {
+      "avg_logprob": -0.255621,
+      "compression_ratio": 1.311927,
+      "end": 4399.1,
+      "no_speech_prob": 0.0,
+      "start": 4397.9,
+      "text": "经济上还会到什么程度"
+    },
+    {
+      "avg_logprob": -0.255621,
+      "compression_ratio": 1.311927,
+      "end": 4399.8,
+      "no_speech_prob": 0.0,
+      "start": 4399.4,
+      "text": "我告诉你"
+    },
+    {
+      "avg_logprob": -0.255621,
+      "compression_ratio": 1.311927,
+      "end": 4401.8,
+      "no_speech_prob": 0.0,
+      "start": 4399.8,
+      "text": "不可能你是战后的美国"
+    },
+    {
+      "avg_logprob": -0.255621,
+      "compression_ratio": 1.311927,
+      "end": 4403.1,
+      "no_speech_prob": 0.0,
+      "start": 4401.8,
+      "text": "什么你成为霸权"
+    },
+    {
+      "avg_logprob": -0.255621,
+      "compression_ratio": 1.311927,
+      "end": 4405.4,
+      "no_speech_prob": 0.0,
+      "start": 4403.5,
+      "text": "因为现代的军事"
+    },
+    {
+      "avg_logprob": -0.255621,
+      "compression_ratio": 1.311927,
+      "end": 4406.7,
+      "no_speech_prob": 0.0,
+      "start": 4406.0,
+      "text": "科技"
+    },
+    {
+      "avg_logprob": -0.255621,
+      "compression_ratio": 1.311927,
+      "end": 4407.6,
+      "no_speech_prob": 0.0,
+      "start": 4406.7,
+      "text": "军事力量"
+    },
+    {
+      "avg_logprob": -0.155093,
+      "compression_ratio": 1.483019,
+      "end": 4409.8,
+      "no_speech_prob": 0.0,
+      "start": 4407.6,
+      "text": "美国和欧洲人打共产党"
+    },
+    {
+      "avg_logprob": -0.155093,
+      "compression_ratio": 1.483019,
+      "end": 4413.4,
+      "no_speech_prob": 0.0,
+      "start": 4409.8,
+      "text": "就像今天俄罗斯在乌克兰的丢人线一样"
+    },
+    {
+      "avg_logprob": -0.155093,
+      "compression_ratio": 1.483019,
+      "end": 4415.9,
+      "no_speech_prob": 0.0,
+      "start": 4413.9,
+      "text": "是你拿菜刀的人挑战一个"
+    },
+    {
+      "avg_logprob": -0.155093,
+      "compression_ratio": 1.483019,
+      "end": 4417.0,
+      "no_speech_prob": 0.0,
+      "start": 4415.9,
+      "text": "拿着瞄准"
+    },
+    {
+      "avg_logprob": -0.155093,
+      "compression_ratio": 1.483019,
+      "end": 4419.3,
+      "no_speech_prob": 0.0,
+      "start": 4417.0,
+      "text": "红外线瞄准镜枪的人在挑战"
+    },
+    {
+      "avg_logprob": -0.155093,
+      "compression_ratio": 1.483019,
+      "end": 4423.5,
+      "no_speech_prob": 0.0,
+      "start": 4421.5,
+      "text": "最后中国人会死很多很多人"
+    },
+    {
+      "avg_logprob": -0.155093,
+      "compression_ratio": 1.483019,
+      "end": 4426.6,
+      "no_speech_prob": 0.0,
+      "start": 4424.3,
+      "text": "而中国人会在全世界上成为什么"
+    },
+    {
+      "avg_logprob": -0.155093,
+      "compression_ratio": 1.483019,
+      "end": 4428.8,
+      "no_speech_prob": 0.0,
+      "start": 4427.5,
+      "text": "美国最黑暗的历史"
+    },
+    {
+      "avg_logprob": -0.155093,
+      "compression_ratio": 1.483019,
+      "end": 4429.9,
+      "no_speech_prob": 0.0,
+      "start": 4428.8,
+      "text": "我认为不是黑奴"
+    },
+    {
+      "avg_logprob": -0.155093,
+      "compression_ratio": 1.483019,
+      "end": 4433.1,
+      "no_speech_prob": 0.0,
+      "start": 4431.4,
+      "text": "我认为美国最黑暗的历史"
+    },
+    {
+      "avg_logprob": -0.155093,
+      "compression_ratio": 1.483019,
+      "end": 4433.9,
+      "no_speech_prob": 0.0,
+      "start": 4433.1,
+      "text": "让你不知道了"
+    },
+    {
+      "avg_logprob": -0.155093,
+      "compression_ratio": 1.483019,
+      "end": 4435.3,
+      "no_speech_prob": 0.0,
+      "start": 4433.9,
+      "text": "也是很多人忽视掉的"
+    },
+    {
+      "avg_logprob": -0.155093,
+      "compression_ratio": 1.483019,
+      "end": 4436.9,
+      "no_speech_prob": 0.0,
+      "start": 4435.3,
+      "text": "这是美国的仇恶的历史"
+    },
+    {
+      "avg_logprob": -0.240495,
+      "compression_ratio": 1.363636,
+      "end": 4442.1,
+      "no_speech_prob": 0.0,
+      "start": 4436.9,
+      "text": "当年的二战后的日本在美国的集中营发生的事情"
+    },
+    {
+      "avg_logprob": -0.240495,
+      "compression_ratio": 1.363636,
+      "end": 4447.6,
+      "no_speech_prob": 0.0,
+      "start": 4444.5,
+      "text": "日侨在美国的事情是美国的指路"
+    },
+    {
+      "avg_logprob": -0.240495,
+      "compression_ratio": 1.363636,
+      "end": 4449.7,
+      "no_speech_prob": 0.0,
+      "start": 4448.6,
+      "text": "我担心的事情"
+    },
+    {
+      "avg_logprob": -0.240495,
+      "compression_ratio": 1.363636,
+      "end": 4454.2,
+      "no_speech_prob": 0.0,
+      "start": 4450.6,
+      "text": "海外的中国人就会遭受到印尼排华"
+    },
+    {
+      "avg_logprob": -0.240495,
+      "compression_ratio": 1.363636,
+      "end": 4456.5,
+      "no_speech_prob": 0.0,
+      "start": 4454.9,
+      "text": "在美国的日侨的下场"
+    },
+    {
+      "avg_logprob": -0.260414,
+      "compression_ratio": 0.90411,
+      "end": 4460.7,
+      "no_speech_prob": 0.0,
+      "start": 4456.5,
+      "text": "中国的社会会发生人吃人"
+    },
+    {
+      "avg_logprob": -0.260414,
+      "compression_ratio": 0.90411,
+      "end": 4462.7,
+      "no_speech_prob": 0.0,
+      "start": 4461.7,
+      "text": "你就不用想"
+    },
+    {
+      "avg_logprob": -0.260414,
+      "compression_ratio": 0.90411,
+      "end": 4465.2,
+      "no_speech_prob": 0.0,
+      "start": 4464.0,
+      "text": "如果你不相信"
+    },
+    {
+      "avg_logprob": -0.31544,
+      "compression_ratio": 1.235294,
+      "end": 4466.9,
+      "no_speech_prob": 0.0,
+      "start": 4465.2,
+      "text": "咱们走着看"
+    },
+    {
+      "avg_logprob": -0.31544,
+      "compression_ratio": 1.235294,
+      "end": 4468.5,
+      "no_speech_prob": 0.0,
+      "start": 4466.9,
+      "text": "我先说到这儿啊"
+    },
+    {
+      "avg_logprob": -0.31544,
+      "compression_ratio": 1.235294,
+      "end": 4469.6,
+      "no_speech_prob": 0.0,
+      "start": 4468.5,
+      "text": "你俩接着说说"
+    },
+    {
+      "avg_logprob": -0.31544,
+      "compression_ratio": 1.235294,
+      "end": 4471.0,
+      "no_speech_prob": 0.0,
+      "start": 4469.6,
+      "text": "咱接着还谈着话题啊"
+    },
+    {
+      "avg_logprob": -0.31544,
+      "compression_ratio": 1.235294,
+      "end": 4471.3,
+      "no_speech_prob": 0.0,
+      "start": 4471.0,
+      "text": "谢谢"
+    },
+    {
+      "avg_logprob": -0.31544,
+      "compression_ratio": 1.235294,
+      "end": 4475.3,
+      "no_speech_prob": 0.0,
+      "start": 4471.3,
+      "text": "好的啊"
+    },
+    {
+      "avg_logprob": -0.31544,
+      "compression_ratio": 1.235294,
+      "end": 4476.0,
+      "no_speech_prob": 0.0,
+      "start": 4475.3,
+      "text": "那郭先生"
+    },
+    {
+      "avg_logprob": -0.31544,
+      "compression_ratio": 1.235294,
+      "end": 4478.2,
+      "no_speech_prob": 0.0,
+      "start": 4476.0,
+      "text": "我在听郭先生七哥啊"
+    },
+    {
+      "avg_logprob": -0.31544,
+      "compression_ratio": 1.235294,
+      "end": 4479.2,
+      "no_speech_prob": 0.0,
+      "start": 4478.2,
+      "text": "刚才描述这个"
+    },
+    {
+      "avg_logprob": -0.31544,
+      "compression_ratio": 1.235294,
+      "end": 4481.9,
+      "no_speech_prob": 0.0,
+      "start": 4479.2,
+      "text": "这一切的这个景象的时候啊"
+    },
+    {
+      "avg_logprob": -0.139112,
+      "compression_ratio": 1.078125,
+      "end": 4483.3,
+      "no_speech_prob": 0.0,
+      "start": 4481.9,
+      "text": "我有战友留言说"
+    },
+    {
+      "avg_logprob": -0.139112,
+      "compression_ratio": 1.078125,
+      "end": 4485.9,
+      "no_speech_prob": 0.0,
+      "start": 4483.3,
+      "text": "为什么我的那个表情这么痛苦啊"
+    },
+    {
+      "avg_logprob": -0.139112,
+      "compression_ratio": 1.078125,
+      "end": 4488.4,
+      "no_speech_prob": 0.0,
+      "start": 4485.9,
+      "text": "确实我就是在眼前啊"
+    },
+    {
+      "avg_logprob": -0.139112,
+      "compression_ratio": 1.078125,
+      "end": 4489.6,
+      "no_speech_prob": 0.0,
+      "start": 4488.4,
+      "text": "就是这样出现了"
+    },
+    {
+      "avg_logprob": -0.139112,
+      "compression_ratio": 1.078125,
+      "end": 4491.6,
+      "no_speech_prob": 0.0,
+      "start": 4489.6,
+      "text": "就是这一切的画面啊"
+    },
+    {
+      "avg_logprob": -0.161205,
+      "compression_ratio": 1.033613,
+      "end": 4493.3,
+      "no_speech_prob": 0.0,
+      "start": 4491.6,
+      "text": "因为我做时评啊"
+    },
+    {
+      "avg_logprob": -0.161205,
+      "compression_ratio": 1.033613,
+      "end": 4494.1,
+      "no_speech_prob": 0.0,
+      "start": 4493.3,
+      "text": "很多的新闻"
+    },
+    {
+      "avg_logprob": -0.161205,
+      "compression_ratio": 1.033613,
+      "end": 4495.6,
+      "no_speech_prob": 0.0,
+      "start": 4494.1,
+      "text": "包括现在乌克兰这个"
+    },
+    {
+      "avg_logprob": -0.161205,
+      "compression_ratio": 1.033613,
+      "end": 4497.6,
+      "no_speech_prob": 0.0,
+      "start": 4496.2,
+      "text": "这些被毁掉的啊"
+    },
+    {
+      "avg_logprob": -0.161205,
+      "compression_ratio": 1.033613,
+      "end": 4500.0,
+      "no_speech_prob": 0.0,
+      "start": 4497.6,
+      "text": "被俄军毁掉这些城市的残缘段"
+    }
+  ],
+  "text": "当年全世界GDP多少?加在一起才5000多亿美国就占了一半,2000多亿今天的人类是多少?130万亿美元呐130万亿除以这个1万亿是130倍呀人口涨了多少?人口涨了3.5倍经济GDP增长了多少?130倍,135倍二战之后干什么了?二战的结束,经济大衰退,经济大解调第一件事,英国坚持金本位开始了我要金本位,银本位,夸一下子银行,大量的收缩造成了全球的通缩全球的通缩,这时候突然间粮食第一就是粮食,第二就是工业材料实行了各国保守哄抬物价,造成通缩然后所有的大宗物品,所有价格猛涨这个时候经济叫通缩局部通缩导致了东欧,北欧各国之间出了各种税务政策加税一加税银行,完了,企业不生活了,不干活了中小企业就没了银行的钱是越来越多,是越存款,是这个银行钱越少越贷款,企业越不发展叫通缩英国搞了个金本位最后是,大家经济不行了,二战开始了大萧桥开始,长期开始罗斯福政策胡福堪恩斯主义来了堪恩斯主义讲的大摔条那边讲的最主要的是什么呀是不是啊就是银行和贷款和流通的关系就咱说的M2堪恩斯主义在那个一度时机好像很牛叉现在看着胡扯的事情是不是啊但是这就是英国的堪恩斯主义和美国的堪恩斯主义是完全两回事的然后最后是把美国最后没办法相继宣布取消了金本位开始了印刷货币的信用本币的这个人类的时代一直到今天那么接下来俄乌战争会给我们带来什么我告诉大家记住就是第一条所有你生活的必需品是你现在最重要的就是什么粮食你吃的东西水必须的生产材料刚才PPT里有个计划讲的很好叫蜡烛蜡烛将成为你很重要的东西关键说你能活着晚上那有个蜡烛火柴你别想天然气了那是对你来讲比钻石都珍贵你就整点什么柴火什么牛屎啊羊屎啊不是小羊的屎啊你别想小羊的屎啊你弄点饭煮煮都不错了啊就是生活必需品就是最原始的必需品就是最原始的必需品绝对是俄乌战争告诉你一个乌克兰粮食大国俄罗斯是粮食大国今天他已经开始处备粮食了这为什么共产党现在大量的要大家少吃别浪费而且要控制粮食而且要做好粮食灾难到来的时候有粮食中国水中国水你使劲啥水都敢喝脏水也敢喝接下来是什么有粮食有水有什么医疗有点病有点头疼发症你得看病啊没有医生你得吃药啊生活必需品接下来是什么老年人是这个战争时期老年人是国家最不喜欢的所以我跟那个日本朋友说我说你说当时日本死人死最多是什么人吗当然说男人我说不对是老年人日本当时的这个这个生孩子的什么程度严格讲从这点看日本啊很多人都是共同的地业因为男人都战死了嘛都是女人嘛就一个男人生了很多孩子都不知道就跟那就日本叫什么叫县下屋啥叫县下屋啊就不是今天的网络的县就是在日本沿线就是那些所有的那个路旁边就是像咱们说现在男人小杨最喜欢的就是咱们云南现在有的叫做什么走婚是吧有女的晚上一敲门进去了你看如水开门了啊欢迎啊小杨哥进来吧灯一关咱俩就休休了休休完早上起来给你做好饭煮两个鸡蛋核包蛋是吧然后给你拍拍你的屁股把裤子给你提上走啊小杨哥小杨哥晃了定走了走下一站就在那里面一家去了就像那个中阳一样你知道吗就很多日本人都是他都不知道他爹是谁为什么男人都在那里男人是稀有货呀啊那么老男人呢像你小杨一如水一开门像羊那大胡子拉张的给我晚饭是吧像如水两大巴上滚蛋你已经没有性能力了滚一边去走婚去是吧两大嘴巴给你扇一边去了胡的拉叉的是不是完全不能动了我还养你干啥呀那个时候老年人很多在工厂饿死病死老年人死亡率是日本有史最高的这就是共产党今天要你打疫苗啊老年人打给你钱你敢去死别浪费我的资源老人院的人还没死呢就包到火灶上去了我要在几年前说你们相信吗你们觉得我放屁武汉七个第一个告诉全人类我说看看武汉哪地方最火只死了六个人在火葬场24小时把炉子都烧化了炉子不够用了在全国用来了气化炉你就能只死了三百个人你信不武汉当时现在有人爆出来了当时的武汉把很多老年人所谓染上病毒打包直接过去了你七哥没有说过咱武汉在火葬场的战友告诉我七哥那个战友现在已经很抱歉已经离世了我怀疑他是被共产党长做掉了他当时给我发了视频我相当怀疑当时视频我说是真是假他说七哥你知道吗活人都拿来给火葬了这一句话把我吓了我不敢用这视频了我说你告诉我说火葬场24小时烧人这已经很吓人了我在通过技术上看确实武汉黄石作为的火葬场生意好得一塌糊涂你再说烧活人我就不敢相信了但是现在事实证明老年人就是活着被给烧了这个现在视频已经出来了就共产党是有组织性的毁掉老年人和残疾人那么俄乌战争今天看的是什么乌克兰的前线也不希望是吧老年人上前线去俄罗斯更是如此这个时候征兵你看到征兵啊当时俄罗斯征兵征多少人知道吗上千万人一千多万美国征兵四百万就新征兵员德国征兵也上千万平均六个人就一个兵员英国人在大日布洛帝国全球性的什么印度啊巴基斯坦非洲啊所有的属地征兵也征兵了几百万上千万大英帝国给打没个球了中国征兵多少人知道吗去查查历史去中国这个民族从真的是从历史到今天除了自己人杀自己人的所谓的内杀内耗之外没有人类上异常像样的战争对外的更从来没有一个保护过自己民主的战争只有家族之争就内杀从来没有保护过外战今天共产党更是一帮流氓骗子而共产党发动了这场战争它是发动由它说了算什么时候停止它说了真不算是由美国人说了算就像慈禧发动了所谓的对美对苏对俄对全球的这个八国联军战争但是停止它说了不算直到把它谎上打乱俄乌战争是告诉你什么不是洪秀全不是李秀李志诚共产党再也不是玩了一个又一个慈禧式的一个时代的愚蠢的向全人类发动战争冠状病毒经济挑战领导全世界为什么小杨知道吗今天我们原来谈过莫德尔定律这是习写就在这轮到我了第二个第二次世界大战之前是谁跟谁先战的大家记住经济自由化市场追求自由化货币英镑是全球货币金本位然后呢很多货币出来挑战的然后开始从英德法这几个开始战导致日本亚洲出来全战最后全部卷进去包括当时的澳大利亚然后美国在里边美国已经是世界强国了而且美国最后也参战打完以后把英国打没了然后美国强大了哎现在共产党的王沪宁习太阳觉得中国现在处在二战时的美国地位只要是世界大战美国就会布英国的后尘美元会被打垮把美国二战时的一世界一半以上的GDP和工业产值和文明现在已经四分之一了而且美国的吸毒和美国的两党之争和美国在全球的竞争力都在都是跟二战不能相提并论了而中国人觉得中国现在我已经是一半我是世界第二大经济体我是世界第一大市场我是最多的人口消费国一旦世界开战我就会把美元干掉我人民币就成为天下第一那现在第一个怎么打呢就像二战以前一样我和普京结盟普京先干乌克兰我干台湾或者我引耳不发我从贸易上经济上挑战美国和世界大家看到俄乌一开战引来了人类有史上四十几国开战呢当时的时候二战之前一开始只有几个国家最后二三十个国家最后联盟就开始了结束的时候现在已经远远超过二战了那么现在习习太阳一看到现在俄乌战争他更加相信自己符合末日经历更重要的事情他相信了轴心文明他觉得轴心回到了我儒家的天下我东方的天下我共产党的天下美国人必亡欧洲必亡这个结局就是二战术的日本和德国而且深信习相信我打完这一仗日本战后的恢复多快呀是吧马上就把战前的经济丰田什么都起来了德国的宝马西门子哇全起来了战争经济战争文明全发动起来了他把他中国这个所有的一些理位他会成为战后的德国和日本的工业生产能力和恢复速度然后他会认为自己是打二战后的美国英国倒下去然后美国是英国他深信不疑那俄乌战争给我们带来第二个问题是什么我可以告诉大家只要中国人现在不消灭中国共产党中国人会成为人类上有史以来两个最大牺牲品经济上的大萧条之后的中国人人吃人的社会长期的不是五年不是十年是N年都无法恢复的缺粮食缺生存条件根本不可能有政府无政府状态军阀主义没有军阀了只有流氓经济上军事上政治上经济上还会到什么程度我告诉你不可能你是战后的美国什么你成为霸权因为现代的军事科技军事力量美国和欧洲人打共产党就像今天俄罗斯在乌克兰的丢人线一样是你拿菜刀的人挑战一个拿着瞄准红外线瞄准镜枪的人在挑战最后中国人会死很多很多人而中国人会在全世界上成为什么美国最黑暗的历史我认为不是黑奴我认为美国最黑暗的历史让你不知道了也是很多人忽视掉的这是美国的仇恶的历史当年的二战后的日本在美国的集中营发生的事情日侨在美国的事情是美国的指路我担心的事情海外的中国人就会遭受到印尼排华在美国的日侨的下场中国的社会会发生人吃人你就不用想如果你不相信咱们走着看我先说到这儿啊你俩接着说说咱接着还谈着话题啊谢谢好的啊那郭先生我在听郭先生七哥啊刚才描述这个这一切的这个景象的时候啊我有战友留言说为什么我的那个表情这么痛苦啊确实我就是在眼前啊就是这样出现了就是这一切的画面啊因为我做时评啊很多的新闻包括现在乌克兰这个这些被毁掉的啊被俄军毁掉这些城市的残缘段"
+}
