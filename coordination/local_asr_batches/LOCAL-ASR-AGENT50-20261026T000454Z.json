@@ -121,36 +121,37 @@
   ],
   "notes": "Fixed logical batch; never expand this list. Claims are created and published one item at a time immediately before processing.",
   "last_window": {
-    "started_at": "2026-10-26T13:26:01Z",
-    "ended_at": "2026-10-26T13:44:10Z",
-    "attempted_unique_videos": 4,
-    "transcript_cue_segment_completed": 2,
+    "started_at": "2026-10-26T15:39:20Z",
+    "ended_at": "2026-10-26T17:17:10Z",
+    "attempted_unique_videos": 2,
+    "transcript_cue_segment_completed": 0,
     "four_stage_completed": 0,
     "key_points_completed": 0,
-    "failed_or_released_stages": 4,
-    "tail_deferred_videos": 4,
+    "failed_or_released_stages": 2,
+    "tail_deferred_videos": 2,
     "cooldown_skipped_videos": 1,
-    "audio_duration_sec": 2330.266,
-    "download_elapsed_sec_known": 60.055,
+    "source_temporarily_unavailable_videos": 1,
+    "audio_duration_sec": 1180.514,
+    "download_elapsed_sec_known": 4478.35,
     "download_elapsed_unavailable_for": [
-      "LIVE_20220324_001"
+      "LIVE_20220913_003"
     ],
-    "pure_asr_inference_sec_known": 2.064,
+    "pure_asr_inference_sec_known": 0.0,
     "pure_asr_inference_unavailable_for": [
-      "LIVE_20220324_001"
+      "LIVE_20220913_003",
+      "LIVE_20230107_001"
     ],
-    "structured_pipeline_elapsed_sec_known": 65.763,
+    "structured_pipeline_elapsed_sec_known": 18.74,
     "structured_pipeline_elapsed_unavailable_for": [
-      "LIVE_20220324_001"
+      "LIVE_20230107_001"
     ],
-    "window_elapsed_sec": 1089,
-    "known_inference_rtf": 0.001177,
-    "known_inference_realtime_multiple": 849.726,
-    "published_commits": 27,
+    "window_elapsed_sec": 5870,
+    "known_inference_rtf": null,
+    "known_inference_realtime_multiple": null,
+    "published_commits": 5,
     "quality_failures": {
-      "key_points_incomplete_or_invalid": 2,
       "asr_max_resume_exhausted_repetition_hallucination": 1,
-      "asr_max_resume_exhausted_out_of_bounds_tail": 1
+      "source_extraction_stall_before_decode": 1
     },
     "next_live_id": "LIVE_20221104_001"
   }
