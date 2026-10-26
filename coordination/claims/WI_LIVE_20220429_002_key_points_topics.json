@@ -3,7 +3,7 @@
   "agent_id": "codex-local-asr-agent50-20261026",
   "claimed_at": "2026-10-26T02:48:25.502501+00:00",
   "base_commit": "4487f9f4632ed88727d94995c66027e64bfd6273",
-  "status": "in_progress",
+  "status": "released",
   "workflow_mode": "continuous-worker-v2",
   "claim_protocol": "claim-protocol-v2",
   "entry_mode": "work",
@@ -22,5 +22,7 @@
   ],
   "scope": "Create evidence-grounded neutral key points and controlled topic assignments.",
   "reclaimed_expired_claim": false,
-  "static_claim_lease_hours": 24
+  "static_claim_lease_hours": 24,
+  "released_at": "2026-10-26T02:50:12.146221+00:00",
+  "release_reason": "Local Qwen output failed quality gate: only 6/8 segments enriched with substantive segment 5 omitted; parse_errors=1 and model_empty=1. A critical subject error stated Qige was killed although the cited sentence says Liao Guoxun was killed, and several significance fields added unsupported policy/legal interpretations. Generated key-point/topic files discarded; deterministic natural segments restored. Transcript, cue, and segment stages remain completed; key-point stage deferred to tail."
 }
