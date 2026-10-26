@@ -1,0 +1,712 @@
+{
+  "chunk_audio_sha256": "16e885632f6126907b596290e56a404c4cb2b4034bf32448e066e1c0a9dcef97",
+  "chunk_index": 0,
+  "completed_at": "2026-10-26T14:02:47Z",
+  "language": "zh",
+  "live_id": "LIVE_20220510_001",
+  "media_committed_to_git": false,
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "offset_sec": 0,
+  "paid_api_used": false,
+  "processing_location": "github-hosted-macos-arm64",
+  "schema_version": "cloud-asr-chunk-v1",
+  "segments": [
+    {
+      "avg_logprob": -0.126248,
+      "compression_ratio": 0.851351,
+      "end": 29.98,
+      "no_speech_prob": 0.0,
+      "start": 0.0,
+      "text": "请不吝点赞 订阅 转发 打赏支持明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.054225,
+      "compression_ratio": 0.851351,
+      "end": 59.98,
+      "no_speech_prob": 0.0,
+      "start": 30.0,
+      "text": "请不吝点赞 订阅 转发 打赏支持明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.051093,
+      "compression_ratio": 0.851351,
+      "end": 89.98,
+      "no_speech_prob": 0.0,
+      "start": 60.0,
+      "text": "请不吝点赞 订阅 转发 打赏支持明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.094096,
+      "compression_ratio": 0.851351,
+      "end": 119.98,
+      "no_speech_prob": 0.0,
+      "start": 90.0,
+      "text": "请不吝点赞 订阅 转发 打赏支持明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.077158,
+      "compression_ratio": 0.851351,
+      "end": 149.98,
+      "no_speech_prob": 0.0,
+      "start": 120.0,
+      "text": "请不吝点赞 订阅 转发 打赏支持明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.067746,
+      "compression_ratio": 1.636364,
+      "end": 152.0,
+      "no_speech_prob": 0.0,
+      "start": 150.0,
+      "text": "请不吝点赞 订阅 转发 打赏支持明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.067746,
+      "compression_ratio": 1.636364,
+      "end": 154.0,
+      "no_speech_prob": 0.0,
+      "start": 152.0,
+      "text": "请不吝点赞 订阅 转发 打赏支持明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.044901,
+      "compression_ratio": 1.636364,
+      "end": 156.0,
+      "no_speech_prob": 0.0,
+      "start": 154.0,
+      "text": "请不吝点赞 订阅 转发 打赏支持明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.044901,
+      "compression_ratio": 1.636364,
+      "end": 158.0,
+      "no_speech_prob": 0.0,
+      "start": 156.0,
+      "text": "请不吝点赞 订阅 转发 打赏支持明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.040655,
+      "compression_ratio": 1.636364,
+      "end": 160.0,
+      "no_speech_prob": 0.0,
+      "start": 158.0,
+      "text": "请不吝点赞 订阅 转发 打赏支持明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.040655,
+      "compression_ratio": 1.636364,
+      "end": 162.0,
+      "no_speech_prob": 0.0,
+      "start": 160.0,
+      "text": "请不吝点赞 订阅 转发 打赏支持明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.113775,
+      "compression_ratio": 0.851351,
+      "end": 168.0,
+      "no_speech_prob": 0.0,
+      "start": 162.0,
+      "text": "请不吝点赞 订阅 转发 打赏支持明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.10331,
+      "compression_ratio": 0.851351,
+      "end": 197.98,
+      "no_speech_prob": 0.0,
+      "start": 168.0,
+      "text": "请不吝点赞 订阅 转发 打赏支持明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.0505,
+      "compression_ratio": 0.851351,
+      "end": 227.98,
+      "no_speech_prob": 0.0,
+      "start": 198.0,
+      "text": "请不吝点赞 订阅 转发 打赏支持明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.043924,
+      "compression_ratio": 0.851351,
+      "end": 257.98,
+      "no_speech_prob": 0.0,
+      "start": 228.0,
+      "text": "请不吝点赞 订阅 转发 打赏支持明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.05041,
+      "compression_ratio": 0.851351,
+      "end": 287.98,
+      "no_speech_prob": 0.0,
+      "start": 258.0,
+      "text": "请不吝点赞 订阅 转发 打赏支持明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.080543,
+      "compression_ratio": 1.636364,
+      "end": 290.0,
+      "no_speech_prob": 0.0,
+      "start": 288.0,
+      "text": "请不吝点赞 订阅 转发 打赏支持明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.080543,
+      "compression_ratio": 1.636364,
+      "end": 292.0,
+      "no_speech_prob": 0.0,
+      "start": 290.0,
+      "text": "请不吝点赞 订阅 转发 打赏支持明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.058154,
+      "compression_ratio": 0.851351,
+      "end": 296.0,
+      "no_speech_prob": 0.0,
+      "start": 292.0,
+      "text": "请不吝点赞 订阅 转发 打赏支持明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.053534,
+      "compression_ratio": 0.851351,
+      "end": 300.0,
+      "no_speech_prob": 0.0,
+      "start": 296.0,
+      "text": "请不吝点赞 订阅 转发 打赏支持明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.055779,
+      "compression_ratio": 0.851351,
+      "end": 304.0,
+      "no_speech_prob": 0.0,
+      "start": 300.0,
+      "text": "请不吝点赞 订阅 转发 打赏支持明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.038843,
+      "compression_ratio": 1.636364,
+      "end": 308.0,
+      "no_speech_prob": 0.0,
+      "start": 304.0,
+      "text": "请不吝点赞 订阅 转发 打赏支持明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.038843,
+      "compression_ratio": 1.636364,
+      "end": 310.0,
+      "no_speech_prob": 0.0,
+      "start": 308.0,
+      "text": "请不吝点赞 订阅 转发 打赏支持明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -1.656091,
+      "compression_ratio": 1.972093,
+      "end": 312.0,
+      "no_speech_prob": 0.0,
+      "start": 310.0,
+      "text": "多了 准备的aya 订阅 转发 打赏支持明镜与点栏目"
+    },
+    {
+      "avg_logprob": -1.656091,
+      "compression_ratio": 1.972093,
+      "end": 312.32,
+      "no_speech_prob": 0.0,
+      "start": 312.0,
+      "text": "既有个人 智的大广的ipporol"
+    },
+    {
+      "avg_logprob": -1.656091,
+      "compression_ratio": 1.972093,
+      "end": 313.0,
+      "no_speech_prob": 0.0,
+      "start": 312.32,
+      "text": "启点赞 订阅 转发 打赏支持明镜与点栏目"
+    },
+    {
+      "avg_logprob": -1.656091,
+      "compression_ratio": 1.972093,
+      "end": 314.0,
+      "no_speech_prob": 0.0,
+      "start": 313.0,
+      "text": "既有个人 杰 订阅 转发 打赏支持明镜与点栏目"
+    },
+    {
+      "avg_logprob": -1.656091,
+      "compression_ratio": 1.972093,
+      "end": 315.0,
+      "no_speech_prob": 0.0,
+      "start": 314.0,
+      "text": "既有个人 斋亡 订阅 转发 打赏支持明镜与点栏目"
+    },
+    {
+      "avg_logprob": -1.656091,
+      "compression_ratio": 1.972093,
+      "end": 316.0,
+      "no_speech_prob": 0.0,
+      "start": 315.0,
+      "text": "就好 赢 订阅 转发 打赏支持明镜与点栏目"
+    },
+    {
+      "avg_logprob": -1.656091,
+      "compression_ratio": 1.972093,
+      "end": 317.0,
+      "no_speech_prob": 0.0,
+      "start": 316.0,
+      "text": "有多是 kere 厬旨 » 下不吝点赏 España"
+    },
+    {
+      "avg_logprob": -1.656091,
+      "compression_ratio": 1.972093,
+      "end": 318.0,
+      "no_speech_prob": 0.0,
+      "start": 317.0,
+      "text": "order 下是产 下不吝点赏 organiz戏"
+    },
+    {
+      "avg_logprob": -0.105104,
+      "compression_ratio": 0.851351,
+      "end": 369.98,
+      "no_speech_prob": 0.0,
+      "start": 340.0,
+      "text": "请不吝点赞 订阅 转发 打赏支持明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.048957,
+      "compression_ratio": 0.851351,
+      "end": 399.98,
+      "no_speech_prob": 0.0,
+      "start": 370.0,
+      "text": "请不吝点赞 订阅 转发 打赏支持明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.047947,
+      "compression_ratio": 0.851351,
+      "end": 429.98,
+      "no_speech_prob": 0.0,
+      "start": 400.0,
+      "text": "请不吝点赞 订阅 转发 打赏支持明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.061847,
+      "compression_ratio": 0.851351,
+      "end": 459.98,
+      "no_speech_prob": 0.0,
+      "start": 430.0,
+      "text": "请不吝点赞 订阅 转发 打赏支持明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.074963,
+      "compression_ratio": 0.851351,
+      "end": 489.98,
+      "no_speech_prob": 0.0,
+      "start": 460.0,
+      "text": "请不吝点赞 订阅 转发 打赏支持明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.065864,
+      "compression_ratio": 1.636364,
+      "end": 492.0,
+      "no_speech_prob": 0.0,
+      "start": 490.0,
+      "text": "请不吝点赞 订阅 转发 打赏支持明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.065864,
+      "compression_ratio": 1.636364,
+      "end": 494.0,
+      "no_speech_prob": 0.0,
+      "start": 492.0,
+      "text": "请不吝点赞 订阅 转发 打赏支持明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.046904,
+      "compression_ratio": 1.636364,
+      "end": 496.0,
+      "no_speech_prob": 0.0,
+      "start": 494.0,
+      "text": "请不吝点赞 订阅 转发 打赏支持明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.046904,
+      "compression_ratio": 1.636364,
+      "end": 498.0,
+      "no_speech_prob": 0.0,
+      "start": 496.0,
+      "text": "请不吝点赞 订阅 转发 打赏支持明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.053561,
+      "compression_ratio": 0.851351,
+      "end": 502.0,
+      "no_speech_prob": 0.0,
+      "start": 498.0,
+      "text": "请不吝点赞 订阅 转发 打赏支持明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.0436,
+      "compression_ratio": 1.636364,
+      "end": 506.0,
+      "no_speech_prob": 0.0,
+      "start": 502.0,
+      "text": "请不吝点赞 订阅 转发 打赏支持明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.0436,
+      "compression_ratio": 1.636364,
+      "end": 508.0,
+      "no_speech_prob": 0.0,
+      "start": 506.0,
+      "text": "请不吝点赞 订阅 转发 打赏支持明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.118838,
+      "compression_ratio": 5.25,
+      "end": 510.0,
+      "no_speech_prob": 0.0,
+      "start": 508.0,
+      "text": "要不吝点赞 订阅 转发 打赏支持明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.118838,
+      "compression_ratio": 5.25,
+      "end": 511.0,
+      "no_speech_prob": 0.0,
+      "start": 510.0,
+      "text": "要不吝点赞 订阅 转发 打赏支持明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.118838,
+      "compression_ratio": 5.25,
+      "end": 512.0,
+      "no_speech_prob": 0.0,
+      "start": 511.0,
+      "text": "要不吝点赞 订阅 转发 打赏支持明镜与点栏目"
+    },
+    {
+      "avg_logprob": -0.118838,
+      "compression_ratio": 5.25,
+      "end": 513.0,
+      "no_speech_prob": 0.0,
+      "start": 512.0,
+      "text": "要不吝点赞 订阅 转发 打赏支持明镜与点栏目"
+    },
+    {
+      "avg_logprob": -0.118838,
+      "compression_ratio": 5.25,
+      "end": 514.0,
+      "no_speech_prob": 0.0,
+      "start": 513.0,
+      "text": "要不吝点赞 订阅 转发 打赏支持明镜与点栏目"
+    },
+    {
+      "avg_logprob": -0.108978,
+      "compression_ratio": 0.851351,
+      "end": 543.98,
+      "no_speech_prob": 0.0,
+      "start": 514.0,
+      "text": "请不吝点赞 订阅 转发 打赏支持明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.051909,
+      "compression_ratio": 0.851351,
+      "end": 573.98,
+      "no_speech_prob": 0.0,
+      "start": 544.0,
+      "text": "请不吝点赞 订阅 转发 打赏支持明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.046528,
+      "compression_ratio": 0.851351,
+      "end": 603.98,
+      "no_speech_prob": 0.0,
+      "start": 574.0,
+      "text": "请不吝点赞 订阅 转发 打赏支持明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.062412,
+      "compression_ratio": 0.851351,
+      "end": 633.98,
+      "no_speech_prob": 0.0,
+      "start": 604.0,
+      "text": "请不吝点赞 订阅 转发 打赏支持明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.068955,
+      "compression_ratio": 1.636364,
+      "end": 636.0,
+      "no_speech_prob": 0.0,
+      "start": 634.0,
+      "text": "请不吝点赞 订阅 转发 打赏支持明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.068955,
+      "compression_ratio": 1.636364,
+      "end": 638.0,
+      "no_speech_prob": 0.0,
+      "start": 636.0,
+      "text": "请不吝点赞 订阅 转发 打赏支持明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.048772,
+      "compression_ratio": 1.636364,
+      "end": 640.0,
+      "no_speech_prob": 0.0,
+      "start": 638.0,
+      "text": "请不吝点赞 订阅 转发 打赏支持明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.048772,
+      "compression_ratio": 1.636364,
+      "end": 642.0,
+      "no_speech_prob": 0.0,
+      "start": 640.0,
+      "text": "请不吝点赞 订阅 转发 打赏支持明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.054598,
+      "compression_ratio": 0.851351,
+      "end": 646.0,
+      "no_speech_prob": 0.0,
+      "start": 642.0,
+      "text": "请不吝点赞 订阅 转发 打赏支持明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.067466,
+      "compression_ratio": 0.851351,
+      "end": 650.0,
+      "no_speech_prob": 0.0,
+      "start": 646.0,
+      "text": "请不吝点赞 订阅 转发 打赏支持明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.040091,
+      "compression_ratio": 1.636364,
+      "end": 654.0,
+      "no_speech_prob": 0.0,
+      "start": 650.0,
+      "text": "请不吝点赞 订阅 转发 打赏支持明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.040091,
+      "compression_ratio": 1.636364,
+      "end": 656.0,
+      "no_speech_prob": 0.0,
+      "start": 654.0,
+      "text": "请不吝点赞 订阅 转发 打赏支持明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -1.110112,
+      "compression_ratio": 2.668712,
+      "end": 658.0,
+      "no_speech_prob": 0.0,
+      "start": 656.0,
+      "text": "多吨 转发 打赏支持明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -1.110112,
+      "compression_ratio": 2.668712,
+      "end": 659.0,
+      "no_speech_prob": 0.0,
+      "start": 658.0,
+      "text": "уж亡 转发 打赏支持明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -1.110112,
+      "compression_ratio": 2.668712,
+      "end": 660.0,
+      "no_speech_prob": 0.0,
+      "start": 659.0,
+      "text": "既有目 人的忌 转发 打赏支持明镜与点栏目"
+    },
+    {
+      "avg_logprob": -1.110112,
+      "compression_ratio": 2.668712,
+      "end": 661.0,
+      "no_speech_prob": 0.0,
+      "start": 660.0,
+      "text": "可 打赏支持明镜与点栏目"
+    },
+    {
+      "avg_logprob": -1.110112,
+      "compression_ratio": 2.668712,
+      "end": 662.0,
+      "no_speech_prob": 0.0,
+      "start": 661.0,
+      "text": "sex  tele 人的忌 转发 打赏支持明镜与点栏目"
+    },
+    {
+      "avg_logprob": -1.110112,
+      "compression_ratio": 2.668712,
+      "end": 663.0,
+      "no_speech_prob": 0.0,
+      "start": 662.0,
+      "text": "参与点栏目"
+    },
+    {
+      "avg_logprob": -1.110112,
+      "compression_ratio": 2.668712,
+      "end": 664.0,
+      "no_speech_prob": 0.0,
+      "start": 663.0,
+      "text": "amazing 人的忌 订阅 转发 打赏支持明镜与点栏目"
+    },
+    {
+      "avg_logprob": -1.110112,
+      "compression_ratio": 2.668712,
+      "end": 665.0,
+      "no_speech_prob": 0.0,
+      "start": 664.0,
+      "text": "是的 人的忌 带戏 being"
+    },
+    {
+      "avg_logprob": -0.132925,
+      "compression_ratio": 0.851351,
+      "end": 694.98,
+      "no_speech_prob": 0.0,
+      "start": 665.0,
+      "text": "请不吝点赞 订阅 转发 打赏支持明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.133113,
+      "compression_ratio": 0.851351,
+      "end": 724.98,
+      "no_speech_prob": 0.0,
+      "start": 695.0,
+      "text": "请不吝点赞 订阅 转发 打赏支持明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.037962,
+      "compression_ratio": 0.851351,
+      "end": 754.98,
+      "no_speech_prob": 0.0,
+      "start": 725.0,
+      "text": "请不吝点赞 订阅 转发 打赏支持明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.04922,
+      "compression_ratio": 0.851351,
+      "end": 784.98,
+      "no_speech_prob": 0.0,
+      "start": 755.0,
+      "text": "请不吝点赞 订阅 转发 打赏支持明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.061875,
+      "compression_ratio": 0.851351,
+      "end": 814.98,
+      "no_speech_prob": 0.0,
+      "start": 785.0,
+      "text": "请不吝点赞 订阅 转发 打赏支持明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.076866,
+      "compression_ratio": 0.851351,
+      "end": 844.98,
+      "no_speech_prob": 0.0,
+      "start": 815.0,
+      "text": "请不吝点赞 订阅 转发 打赏支持明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.065269,
+      "compression_ratio": 1.636364,
+      "end": 847.0,
+      "no_speech_prob": 0.0,
+      "start": 845.0,
+      "text": "请不吝点赞 订阅 转发 打赏支持明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.065269,
+      "compression_ratio": 1.636364,
+      "end": 849.0,
+      "no_speech_prob": 0.0,
+      "start": 847.0,
+      "text": "请不吝点赞 订阅 转发 打赏支持明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.053627,
+      "compression_ratio": 0.851351,
+      "end": 853.0,
+      "no_speech_prob": 0.0,
+      "start": 849.0,
+      "text": "请不吝点赞 订阅 转发 打赏支持明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.052251,
+      "compression_ratio": 0.851351,
+      "end": 857.0,
+      "no_speech_prob": 0.0,
+      "start": 853.0,
+      "text": "请不吝点赞 订阅 转发 打赏支持明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.0568,
+      "compression_ratio": 0.851351,
+      "end": 861.0,
+      "no_speech_prob": 0.0,
+      "start": 857.0,
+      "text": "请不吝点赞 订阅 转发 打赏支持明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.043646,
+      "compression_ratio": 1.636364,
+      "end": 865.0,
+      "no_speech_prob": 0.0,
+      "start": 861.0,
+      "text": "请不吝点赞 订阅 转发 打赏支持明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.043646,
+      "compression_ratio": 1.636364,
+      "end": 867.0,
+      "no_speech_prob": 0.0,
+      "start": 865.0,
+      "text": "请不吝点赞 订阅 转发 打赏支持明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -1.327551,
+      "compression_ratio": 2.15625,
+      "end": 869.0,
+      "no_speech_prob": 0.0,
+      "start": 867.0,
+      "text": "详尤 转发 打赏支持明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -1.327551,
+      "compression_ratio": 2.15625,
+      "end": 870.84,
+      "no_speech_prob": 0.0,
+      "start": 869.0,
+      "text": "详尤 转发 打赏支持明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -1.327551,
+      "compression_ratio": 2.15625,
+      "end": 872.0,
+      "no_speech_prob": 0.0,
+      "start": 871.0,
+      "text": "既有 drivers 靳大人与点栏目"
+    },
+    {
+      "avg_logprob": -1.327551,
+      "compression_ratio": 2.15625,
+      "end": 873.0,
+      "no_speech_prob": 0.0,
+      "start": 872.0,
+      "text": "在呆 转发 打赏支持明镜与点栏目"
+    },
+    {
+      "avg_logprob": -1.327551,
+      "compression_ratio": 2.15625,
+      "end": 874.0,
+      "no_speech_prob": 0.0,
+      "start": 873.0,
+      "text": "と吝点赞 订阅 转发 打赏支持明镜与点栏目"
+    },
+    {
+      "avg_logprob": -0.125769,
+      "compression_ratio": 0.851351,
+      "end": 903.98,
+      "no_speech_prob": 0.0,
+      "start": 874.0,
+      "text": "请不吝点赞 订阅 转发 打赏支持明镜与点点栏目"
+    }
+  ],
+  "text": "请不吝点赞 订阅 转发 打赏支持明镜与点点栏目请不吝点赞 订阅 转发 打赏支持明镜与点点栏目请不吝点赞 订阅 转发 打赏支持明镜与点点栏目请不吝点赞 订阅 转发 打赏支持明镜与点点栏目请不吝点赞 订阅 转发 打赏支持明镜与点点栏目请不吝点赞 订阅 转发 打赏支持明镜与点点栏目请不吝点赞 订阅 转发 打赏支持明镜与点点栏目请不吝点赞 订阅 转发 打赏支持明镜与点点栏目请不吝点赞 订阅 转发 打赏支持明镜与点点栏目请不吝点赞 订阅 转发 打赏支持明镜与点点栏目请不吝点赞 订阅 转发 打赏支持明镜与点点栏目请不吝点赞 订阅 转发 打赏支持明镜与点点栏目请不吝点赞 订阅 转发 打赏支持明镜与点点栏目请不吝点赞 订阅 转发 打赏支持明镜与点点栏目请不吝点赞 订阅 转发 打赏支持明镜与点点栏目请不吝点赞 订阅 转发 打赏支持明镜与点点栏目请不吝点赞 订阅 转发 打赏支持明镜与点点栏目请不吝点赞 订阅 转发 打赏支持明镜与点点栏目请不吝点赞 订阅 转发 打赏支持明镜与点点栏目请不吝点赞 订阅 转发 打赏支持明镜与点点栏目请不吝点赞 订阅 转发 打赏支持明镜与点点栏目请不吝点赞 订阅 转发 打赏支持明镜与点点栏目请不吝点赞 订阅 转发 打赏支持明镜与点点栏目多了 准备的aya 订阅 转发 打赏支持明镜与点栏目既有个人 智的大广的ipporol启点赞 订阅 转发 打赏支持明镜与点栏目既有个人 杰 订阅 转发 打赏支持明镜与点栏目既有个人 斋亡 订阅 转发 打赏支持明镜与点栏目就好 赢 订阅 转发 打赏支持明镜与点栏目有多是 kere 厬旨 » 下不吝点赏 España order 下是产 下不吝点赏 organiz戏请不吝点赞 订阅 转发 打赏支持明镜与点点栏目请不吝点赞 订阅 转发 打赏支持明镜与点点栏目请不吝点赞 订阅 转发 打赏支持明镜与点点栏目请不吝点赞 订阅 转发 打赏支持明镜与点点栏目请不吝点赞 订阅 转发 打赏支持明镜与点点栏目请不吝点赞 订阅 转发 打赏支持明镜与点点栏目请不吝点赞 订阅 转发 打赏支持明镜与点点栏目请不吝点赞 订阅 转发 打赏支持明镜与点点栏目请不吝点赞 订阅 转发 打赏支持明镜与点点栏目请不吝点赞 订阅 转发 打赏支持明镜与点点栏目请不吝点赞 订阅 转发 打赏支持明镜与点点栏目请不吝点赞 订阅 转发 打赏支持明镜与点点栏目要不吝点赞 订阅 转发 打赏支持明镜与点点栏目要不吝点赞 订阅 转发 打赏支持明镜与点点栏目要不吝点赞 订阅 转发 打赏支持明镜与点栏目要不吝点赞 订阅 转发 打赏支持明镜与点栏目要不吝点赞 订阅 转发 打赏支持明镜与点栏目请不吝点赞 订阅 转发 打赏支持明镜与点点栏目请不吝点赞 订阅 转发 打赏支持明镜与点点栏目请不吝点赞 订阅 转发 打赏支持明镜与点点栏目请不吝点赞 订阅 转发 打赏支持明镜与点点栏目请不吝点赞 订阅 转发 打赏支持明镜与点点栏目请不吝点赞 订阅 转发 打赏支持明镜与点点栏目请不吝点赞 订阅 转发 打赏支持明镜与点点栏目请不吝点赞 订阅 转发 打赏支持明镜与点点栏目请不吝点赞 订阅 转发 打赏支持明镜与点点栏目请不吝点赞 订阅 转发 打赏支持明镜与点点栏目请不吝点赞 订阅 转发 打赏支持明镜与点点栏目请不吝点赞 订阅 转发 打赏支持明镜与点点栏目多吨 转发 打赏支持明镜与点点栏目уж亡 转发 打赏支持明镜与点点栏目既有目 人的忌 转发 打赏支持明镜与点栏目可 打赏支持明镜与点栏目 sex  tele 人的忌 转发 打赏支持明镜与点栏目参与点栏目 amazing 人的忌 订阅 转发 打赏支持明镜与点栏目是的 人的忌 带戏 being请不吝点赞 订阅 转发 打赏支持明镜与点点栏目请不吝点赞 订阅 转发 打赏支持明镜与点点栏目请不吝点赞 订阅 转发 打赏支持明镜与点点栏目请不吝点赞 订阅 转发 打赏支持明镜与点点栏目请不吝点赞 订阅 转发 打赏支持明镜与点点栏目请不吝点赞 订阅 转发 打赏支持明镜与点点栏目请不吝点赞 订阅 转发 打赏支持明镜与点点栏目请不吝点赞 订阅 转发 打赏支持明镜与点点栏目请不吝点赞 订阅 转发 打赏支持明镜与点点栏目请不吝点赞 订阅 转发 打赏支持明镜与点点栏目请不吝点赞 订阅 转发 打赏支持明镜与点点栏目请不吝点赞 订阅 转发 打赏支持明镜与点点栏目请不吝点赞 订阅 转发 打赏支持明镜与点点栏目详尤 转发 打赏支持明镜与点点栏目详尤 转发 打赏支持明镜与点点栏目既有 drivers 靳大人与点栏目在呆 转发 打赏支持明镜与点栏目と吝点赞 订阅 转发 打赏支持明镜与点栏目请不吝点赞 订阅 转发 打赏支持明镜与点点栏目"
+}
