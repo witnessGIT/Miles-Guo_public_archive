@@ -1,9 +1,9 @@
 {
   "task_id": "WI_LIVE_20211124_001_entity_pass",
-  "agent_id": "github-actions-cloud-entity-40160376389",
-  "claimed_at": "2026-10-25T04:04:06.060873+00:00",
-  "base_commit": "f6a4037fc6a75474d238b0e51ad8f7a3beca305b",
-  "status": "released",
+  "agent_id": "github-actions-cloud-entity-40357556452",
+  "claimed_at": "2026-10-26T17:38:20.057182+00:00",
+  "base_commit": "a33ab96b47bbe64627e65cd32bf66a356e9fa78f",
+  "status": "in_progress",
   "workflow_mode": "continuous-worker-v2",
   "claim_protocol": "claim-protocol-v2",
   "entry_mode": "work",
@@ -22,7 +22,5 @@
   ],
   "scope": "Extract speakers, people, organizations, places and mentioned entities.",
   "reclaimed_expired_claim": true,
-  "static_claim_lease_hours": 24,
-  "released_at": "2026-10-25T10:01:42.159390+00:00",
-  "release_reason": "GitHub Actions run 40160376389 was cancelled by the hosted platform before entity processing completed; retryable infrastructure cancellation, not missing content."
+  "static_claim_lease_hours": 24
 }
