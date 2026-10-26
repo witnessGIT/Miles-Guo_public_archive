@@ -1,0 +1,18 @@
+{
+  "task_id": "WI_LIVE_20230130_001_key_points_topics",
+  "agent_id": "codex-local-asr-agent50-20261026",
+  "completed_at": "2026-10-26T01:39:53.014269+00:00",
+  "result_commit": "dd1d25ffabd11001dcb219988f90b60bf02f4378",
+  "outputs": [
+    "data/current/live_segments/asr_live_20230130_001.jsonl",
+    "data/current/segment_key_points/machine_live_20230130_001.jsonl",
+    "data/current/segment_topics/machine_live_20230130_001.jsonl"
+  ],
+  "validation": "build_db.py and validate_db.py passed; 146 tests passed; model retry still left four of six segments uncovered, so a human evidence audit added exact-quote grounded points for all five substantive segments; 27 key points and 13 controlled topic links; outro-only segment intentionally has no key points",
+  "workflow_mode": "continuous-worker-v2",
+  "claim_protocol": "claim-protocol-v2",
+  "entry_mode": "work",
+  "continue_after_finish": true,
+  "finish_prerequisites_revalidated": true,
+  "notes": "Task completed only after re-checking the latest repository dependency contract. Under continuous-worker-v2, refresh repository state and claim the next eligible task unless a documented stop condition applies."
+}
