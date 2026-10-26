@@ -2,13 +2,28 @@
   "deferred_reason": "machine transcript failed dictation, timing, coverage, or hallucination quality gates",
   "deferred_until_corpus_tail": true,
   "error": "machine transcript did not pass conservative ASR quality gates",
-  "generated_at": "2026-10-26T00:26:43Z",
+  "generated_at": "2026-10-26T13:29:04Z",
+  "attempt_history": [
+    {
+      "attempt": 1,
+      "generated_at": "2026-10-26T00:26:43Z",
+      "result": "quality_failed",
+      "reason": "probable_repetition_or_hallucination"
+    },
+    {
+      "attempt": 2,
+      "generated_at": "2026-10-26T13:29:04Z",
+      "result": "quality_failed",
+      "reason": "probable_repetition_or_hallucination",
+      "checkpoint_reused_after_pcm_sha256_validation": true
+    }
+  ],
   "live_id": "LIVE_20220324_001",
   "media_asset_id": "MA_C2_GETTR_FCB845F00E2F",
   "media_committed_to_git": false,
   "model": "mlx-community/whisper-large-v3-turbo",
   "paid_api_used": false,
-  "processing_location": "local-apple-silicon-mlx",
+  "processing_location": "codex-local-apple-silicon-agent50",
   "quality": {
     "gate_status": "deferred_review",
     "metrics": {
@@ -33,6 +48,8 @@
     "warnings": []
   },
   "retry_queue": "corpus_tail",
+  "resume_attempt_count": 2,
+  "resume_exhausted": true,
   "schema_version": "cloud-asr-attempt-v1",
   "source_id": "SRC_C2_GETTR_FCB845F00E2F",
   "source_url": "https://gettr.com/post/p11mkh81816",
