@@ -2,7 +2,22 @@
   "deferred_reason": "machine transcript failed dictation, timing, coverage, or hallucination quality gates",
   "deferred_until_corpus_tail": true,
   "error": "machine transcript did not pass conservative ASR quality gates",
-  "generated_at": "2026-10-26T05:06:38Z",
+  "generated_at": "2026-10-26T15:39:41Z",
+  "attempt_history": [
+    {
+      "attempt": 1,
+      "generated_at": "2026-10-26T05:06:38Z",
+      "result": "quality_failed",
+      "reason": "probable_repetition_or_hallucination"
+    },
+    {
+      "attempt": 2,
+      "generated_at": "2026-10-26T15:39:41Z",
+      "result": "quality_failed",
+      "reason": "probable_repetition_or_hallucination",
+      "checkpoint_reused_after_pcm_sha256_validation": true
+    }
+  ],
   "live_id": "LIVE_20220913_003",
   "media_asset_id": "MA_GETTR_P1QQWGP9276",
   "media_committed_to_git": false,
@@ -33,6 +48,8 @@
     "warnings": []
   },
   "retry_queue": "corpus_tail",
+  "resume_attempt_count": 2,
+  "resume_exhausted": true,
   "schema_version": "cloud-asr-attempt-v1",
   "source_id": "SRC_GETTR_P1QQWGP9276",
   "source_url": "https://gettr.com/post/p1qqwgp9276",
