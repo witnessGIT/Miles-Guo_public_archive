@@ -62,7 +62,7 @@
     "LIVE_20230131_001",
     "LIVE_20230207_001"
   ],
-  "next_live_id": "LIVE_20221119_001",
+  "next_live_id": "LIVE_20230307_001",
   "completed_live_ids": [
     "LIVE_20220412_001",
     "LIVE_20220322_001",
@@ -98,39 +98,35 @@
     "LIVE_20221125_001",
     "LIVE_20221230_001",
     "LIVE_20220905_001",
-    "LIVE_20221116_001"
+    "LIVE_20221116_001",
+    "LIVE_20221119_001"
   ],
   "notes": "Fixed logical batch; never expand this list. Claims are created and published one item at a time immediately before processing.",
   "last_window": {
-    "started_at": "2026-10-26T04:27:41Z",
-    "ended_at": "2026-10-26T05:16:10Z",
-    "attempted_unique_videos": 7,
-    "transcript_cue_segment_completed": 3,
+    "started_at": "2026-10-26T05:26:31Z",
+    "ended_at": "2026-10-26T06:18:18Z",
+    "attempted_unique_videos": 6,
+    "transcript_cue_segment_completed": 4,
     "four_stage_completed": 0,
     "key_points_completed": 0,
-    "failed_or_released_stages": 7,
-    "tail_deferred_videos": 7,
-    "audio_duration_sec": 4122.05,
-    "download_elapsed_sec_known": 1450.197,
-    "download_elapsed_unavailable_for": [
-      "LIVE_20220913_003"
-    ],
-    "pure_asr_inference_sec_known": 139.409,
-    "pure_asr_inference_unavailable_for": [
-      "LIVE_20220913_003"
-    ],
-    "structured_pipeline_elapsed_sec_known": 1598.731,
-    "structured_pipeline_elapsed_unavailable_for": [
-      "LIVE_20220913_003"
-    ],
-    "window_elapsed_sec": 2909,
-    "known_inference_rtf": 0.03382,
-    "known_inference_realtime_multiple": 29.568,
+    "failed_or_released_stages": 6,
+    "tail_deferred_videos": 6,
+    "audio_duration_sec": 3561.426,
+    "download_elapsed_sec_known": 1331.036,
+    "download_elapsed_unavailable_for": [],
+    "pure_asr_inference_sec_known": 120.847,
+    "pure_asr_inference_unavailable_for": [],
+    "structured_pipeline_elapsed_sec_known": 1460.69,
+    "structured_pipeline_elapsed_unavailable_for": [],
+    "window_elapsed_sec": 3107,
+    "known_inference_rtf": 0.033932,
+    "known_inference_realtime_multiple": 29.471,
+    "published_commits": 34,
     "quality_failures": {
-      "key_points_incomplete_or_invalid": 3,
-      "manual_asr_hallucination_loop": 3,
-      "automatic_asr_repetition_hallucination_gate": 1
+      "key_points_incomplete_or_invalid": 4,
+      "manual_asr_trailing_subtitle_microtoken_loop": 1,
+      "manual_asr_repeated_multicue_microtoken_loop": 1
     },
-    "next_live_id": "LIVE_20220914_001"
+    "next_live_id": "LIVE_20230307_001"
   }
 }
