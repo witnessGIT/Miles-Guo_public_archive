@@ -1,0 +1,16 @@
+{
+  "task_id": "WI_LIVE_20230124_001_segment_split",
+  "agent_id": "codex-local-asr-agent50-20261026",
+  "completed_at": "2026-10-26T04:02:00+00:00",
+  "result_commit": "be8498c156076ff70fb87c853c087e1ad42380eb",
+  "outputs": [
+    "data/current/live_segments/asr_live_20230124_001.jsonl"
+  ],
+  "validation": "Built 10 variable-length natural segments from 251 cues using question, discourse, pause, and safety boundaries; monotonic timed coverage through 587.24 sec with short silence/filtered intervals; sampled boundaries preserve spending cuts, common-prosperity claims, overseas investment, Hong Kong finance, digital currency, Taiwan, and closing themes.",
+  "workflow_mode": "continuous-worker-v2",
+  "claim_protocol": "claim-protocol-v2",
+  "entry_mode": "work",
+  "continue_after_finish": true,
+  "finish_prerequisites_revalidated": true,
+  "notes": "Task completed only after re-checking the latest repository dependency contract. Under continuous-worker-v2, refresh repository state and claim the next eligible task unless a documented stop condition applies."
+}
