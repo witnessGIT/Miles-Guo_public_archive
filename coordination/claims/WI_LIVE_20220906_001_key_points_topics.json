@@ -3,7 +3,7 @@
   "agent_id": "codex-local-asr-agent50-20261026",
   "claimed_at": "2026-10-26T13:34:25.768880+00:00",
   "base_commit": "482b7e2e61124a62d6e97167be54be1fa6c123b1",
-  "status": "in_progress",
+  "status": "released",
   "workflow_mode": "continuous-worker-v2",
   "claim_protocol": "claim-protocol-v2",
   "entry_mode": "work",
@@ -22,5 +22,7 @@
   ],
   "scope": "Create evidence-grounded neutral key points and controlled topic assignments.",
   "reclaimed_expired_claim": false,
-  "static_claim_lease_hours": 24
+  "static_claim_lease_hours": 24,
+  "released_at": "2026-10-26T13:36:39.205373+00:00",
+  "release_reason": "Single strict local Qwen attempt failed key-point quality gate: 3 of 8 segments were skipped due parse errors, leaving incomplete coverage; generated key-point/topic outputs discarded and deterministic natural segments restored; no retry or threshold relaxation performed"
 }
