@@ -3,7 +3,7 @@
   "agent_id": "codex-local-asr-agent50-20261026",
   "claimed_at": "2026-10-26T02:31:43.559218+00:00",
   "base_commit": "cdd4f29935197952668687d08edd904ec41e902e",
-  "status": "in_progress",
+  "status": "released",
   "workflow_mode": "continuous-worker-v2",
   "claim_protocol": "claim-protocol-v2",
   "entry_mode": "work",
@@ -22,5 +22,7 @@
   ],
   "scope": "Create evidence-grounded neutral key points and controlled topic assignments.",
   "reclaimed_expired_claim": false,
-  "static_claim_lease_hours": 24
+  "static_claim_lease_hours": 24,
+  "released_at": "2026-10-26T02:34:01.992544+00:00",
+  "release_reason": "Local Qwen output failed quality gate: only 7/10 segments enriched (segments 0,2,7 rejected/skipped), parse_errors=1, rejected_all=2, forced_retries=3; multiple point/significance fields added unsupported interpretations or broadened evidence (e.g. market instability/volatility and health/investment glosses absent from quoted evidence). Generated key-point/topic files discarded; deterministic natural segments restored. Transcript, cue, and segment stages remain completed; key-point stage deferred to tail."
 }
