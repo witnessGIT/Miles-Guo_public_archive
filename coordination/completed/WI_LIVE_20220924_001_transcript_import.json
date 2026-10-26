@@ -1,0 +1,19 @@
+{
+  "task_id": "WI_LIVE_20220924_001_transcript_import",
+  "agent_id": "codex-local-asr-agent50-20261026",
+  "completed_at": "2026-10-26T18:50:05.518006+00:00",
+  "result_commit": "437b4d814e7f118937da3970c16d2dfd1ae11c05",
+  "outputs": [
+    "data/current/transcript_versions/asr_live_20220924_001.jsonl",
+    "data/current/transcript_cues/asr_live_20220924_001.jsonl",
+    "data/current/live_segments/asr_live_20220924_001.jsonl",
+    "data/current/asr_manifests/asr_live_20220924_001.json"
+  ],
+  "validation": "Recovered from SHA-256-validated decoded PCM checkpoint; removed exactly nine trailing dash micro-token hallucinations spanning 587.9-605.9 sec; 160 legal cues remain through 587.9 sec for 592.497 sec audio; automatic gate 1.0, density 235.242 chars/min, repetition 0, invalid timestamps 0, end coverage 0.992241; beginning/middle/end manually sampled and coherent; machine-generated and unverified.",
+  "workflow_mode": "continuous-worker-v2",
+  "claim_protocol": "claim-protocol-v2",
+  "entry_mode": "work",
+  "continue_after_finish": true,
+  "finish_prerequisites_revalidated": true,
+  "notes": "Task completed only after re-checking the latest repository dependency contract. Under continuous-worker-v2, refresh repository state and claim the next eligible task unless a documented stop condition applies."
+}
