@@ -1,0 +1,16 @@
+{
+  "task_id": "WI_LIVE_20220813_001_segment_split",
+  "agent_id": "codex-local-asr-agent50-20261026",
+  "completed_at": "2026-10-26T03:03:18.714397+00:00",
+  "result_commit": "a92508475123bcde25f133e35a931ce85ca87643",
+  "outputs": [
+    "data/current/live_segments/asr_live_20220813_001.jsonl"
+  ],
+  "validation": "Built 11 variable-length natural segments from 253 cues using question, pause, and safety boundaries; monotonic 0.0-585.08 sec coverage; sampled boundaries preserve decoupling, CCP influence, US-dollar strategy, US visit, and closing themes.",
+  "workflow_mode": "continuous-worker-v2",
+  "claim_protocol": "claim-protocol-v2",
+  "entry_mode": "work",
+  "continue_after_finish": true,
+  "finish_prerequisites_revalidated": true,
+  "notes": "Task completed only after re-checking the latest repository dependency contract. Under continuous-worker-v2, refresh repository state and claim the next eligible task unless a documented stop condition applies."
+}
