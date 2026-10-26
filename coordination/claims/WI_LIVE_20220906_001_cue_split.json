@@ -3,7 +3,7 @@
   "agent_id": "codex-local-asr-agent50-20261026",
   "claimed_at": "2026-10-26T04:50:40+00:00",
   "base_commit": "0c0fc9ff3",
-  "status": "in_progress",
+  "status": "released",
   "workflow_mode": "continuous-worker-v2",
   "claim_protocol": "claim-protocol-v2",
   "entry_mode": "work",
@@ -22,5 +22,7 @@
   ],
   "scope": "Split transcript into sentence/subtitle cues using natural sentence/time boundaries.",
   "reclaimed_expired_claim": false,
-  "static_claim_lease_hours": 24
+  "static_claim_lease_hours": 24,
+  "released_at": "2026-10-26T04:52:20+00:00",
+  "release_reason": "Upstream ASR failed manual hallucination-loop audit; cue output withdrawn and item deferred to corpus_tail."
 }
