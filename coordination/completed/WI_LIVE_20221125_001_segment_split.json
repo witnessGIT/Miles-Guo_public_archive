@@ -1,0 +1,16 @@
+{
+  "task_id": "WI_LIVE_20221125_001_segment_split",
+  "agent_id": "codex-local-asr-agent50-20261026",
+  "completed_at": "2026-10-26T05:47:00Z",
+  "result_commit": "19025778ef8ec87a82ab44cdf3d1656678beb35b",
+  "outputs": [
+    "data/current/live_segments/asr_live_20221125_001.jsonl"
+  ],
+  "validation": "Built 8 variable-length natural segments from 263 cues using transcript, discourse, question, pause, and safety boundaries; monotonic timed coverage through 583.8 sec; sampled boundaries preserve the opening Saudi visit discussion, domestic lockdown claims, planned-economy discussion, oil and dollar claims, Taiwan and regional conflict claims, and closing personnel remarks.",
+  "workflow_mode": "continuous-worker-v2",
+  "claim_protocol": "claim-protocol-v2",
+  "entry_mode": "work",
+  "continue_after_finish": true,
+  "finish_prerequisites_revalidated": true,
+  "notes": "Task completed only after re-checking the latest repository dependency contract. Under continuous-worker-v2, refresh repository state and claim the next eligible task unless a documented stop condition applies."
+}
