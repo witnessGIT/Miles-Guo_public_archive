@@ -1,9 +1,9 @@
 {
   "task_id": "WI_LIVE_20220404_001_transcript_import",
   "agent_id": "codex-local-asr-agent50-20261026",
-  "claimed_at": "2026-10-26T00:26:59.095760+00:00",
-  "base_commit": "454068cc4cde7cc68a7d8d5d9c6e225cbd1ffd7f",
-  "status": "released",
+  "claimed_at": "2026-10-26T13:29:56.489071+00:00",
+  "base_commit": "d78923940a34efc6de6cf36309b551ef8eacd1b9",
+  "status": "in_progress",
   "workflow_mode": "continuous-worker-v2",
   "claim_protocol": "claim-protocol-v2",
   "entry_mode": "work",
@@ -21,8 +21,6 @@
     "WI_LIVE_20220404_001_metadata_fill"
   ],
   "scope": "Import source transcript or ASR text without overwriting original text.",
-  "reclaimed_expired_claim": false,
-  "static_claim_lease_hours": 24,
-  "released_at": "2026-10-26T00:32:50.496457+00:00",
-  "release_reason": "Manual quality audit rejected final mixed-language cue ending 15.489 seconds beyond decoded audio; evidence retained for corpus-tail review and no downstream stages generated"
+  "reclaimed_expired_claim": true,
+  "static_claim_lease_hours": 24
 }
