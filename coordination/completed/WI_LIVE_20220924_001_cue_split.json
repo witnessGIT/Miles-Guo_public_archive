@@ -1,0 +1,16 @@
+{
+  "task_id": "WI_LIVE_20220924_001_cue_split",
+  "agent_id": "codex-local-asr-agent50-20261026",
+  "completed_at": "2026-10-26T19:06:48.802839+00:00",
+  "result_commit": "223da74eb8430b75ac6d47e50adc0ebea6d9699c",
+  "outputs": [
+    "data/current/transcript_cues/asr_live_20220924_001.jsonl"
+  ],
+  "validation": "160 sentence-level ASR cues retained after strict trailing hallucination filter; cue indices contiguous 0-159; timestamps monotonic and legal from 0.0 through 587.9 sec within 592.497 sec audio; no dash-only cues; beginning/middle/end manually sampled.",
+  "workflow_mode": "continuous-worker-v2",
+  "claim_protocol": "claim-protocol-v2",
+  "entry_mode": "work",
+  "continue_after_finish": true,
+  "finish_prerequisites_revalidated": true,
+  "notes": "Task completed only after re-checking the latest repository dependency contract. Under continuous-worker-v2, refresh repository state and claim the next eligible task unless a documented stop condition applies."
+}
