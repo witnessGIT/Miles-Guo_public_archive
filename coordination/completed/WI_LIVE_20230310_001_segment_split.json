@@ -1,0 +1,16 @@
+{
+  "task_id": "WI_LIVE_20230310_001_segment_split",
+  "agent_id": "codex-local-asr-agent50-20261026",
+  "completed_at": "2026-10-26T04:44:00+00:00",
+  "result_commit": "3eb1e5ac03e95cc7004f93ccc48f02cec9eb6117",
+  "outputs": [
+    "data/current/live_segments/asr_live_20230310_001.jsonl"
+  ],
+  "validation": "Built 6 variable-length natural segments from 225 cues using transcript, discourse, pause, and safety boundaries; monotonic timed coverage through 587.8 sec with one short silence interval; sampled boundaries preserve the opening political commentary, interview claims, virus-origin allegations, vaccine discussion, and closing call for investigation.",
+  "workflow_mode": "continuous-worker-v2",
+  "claim_protocol": "claim-protocol-v2",
+  "entry_mode": "work",
+  "continue_after_finish": true,
+  "finish_prerequisites_revalidated": true,
+  "notes": "Task completed only after re-checking the latest repository dependency contract. Under continuous-worker-v2, refresh repository state and claim the next eligible task unless a documented stop condition applies."
+}
