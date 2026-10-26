@@ -3,7 +3,7 @@
   "agent_id": "codex-local-asr-agent50-20261026",
   "claimed_at": "2026-10-26T03:34:00+00:00",
   "base_commit": "1385451b6",
-  "status": "in_progress",
+  "status": "released",
   "workflow_mode": "continuous-worker-v2",
   "claim_protocol": "claim-protocol-v2",
   "entry_mode": "work",
@@ -22,5 +22,7 @@
   ],
   "scope": "Create evidence-grounded neutral key points and controlled topic assignments.",
   "reclaimed_expired_claim": false,
-  "static_claim_lease_hours": 24
+  "static_claim_lease_hours": 24,
+  "released_at": "2026-10-26T03:36:00+00:00",
+  "release_reason": "Local Qwen output failed quality gate: only 4/7 natural segments enriched, with three parse errors and forced retry; the omitted segments contain major economic, geopolitical, and media themes. Several generated interpretations/topics were unsupported or materially misclassified (including treating a personal-name utterance as a payment system and assigning the Russia/RMB segment to law/justice). Generated key-point/topic files discarded; deterministic natural segments restored. Transcript, cue, and segment stages remain completed; key-point stage deferred to tail."
 }
