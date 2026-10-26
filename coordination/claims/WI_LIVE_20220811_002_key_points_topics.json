@@ -3,7 +3,7 @@
   "agent_id": "codex-local-asr-agent50-20261026",
   "claimed_at": "2026-10-26T02:55:41.703408+00:00",
   "base_commit": "1d11bef90b4f3e52f5d6d6ee9aed099151f2ff62",
-  "status": "in_progress",
+  "status": "released",
   "workflow_mode": "continuous-worker-v2",
   "claim_protocol": "claim-protocol-v2",
   "entry_mode": "work",
@@ -22,5 +22,7 @@
   ],
   "scope": "Create evidence-grounded neutral key points and controlled topic assignments.",
   "reclaimed_expired_claim": false,
-  "static_claim_lease_hours": 24
+  "static_claim_lease_hours": 24,
+  "released_at": "2026-10-26T02:57:17.348531+00:00",
+  "release_reason": "Local Qwen output failed quality gate: only 3/6 segments enriched (15 points total), with three parse errors and half of the video missing from detailed coverage. Incomplete output cannot represent the full timed transcript. Generated key-point/topic files discarded; deterministic natural segments restored. Transcript, cue, and segment stages remain completed; key-point stage deferred to tail."
 }
