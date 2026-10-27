@@ -1,0 +1,1360 @@
+{
+  "chunk_audio_sha256": "8fb1ce1f642c2e606df033a7d17c48f7789e31aa56f0b2ba0f5b4b97fe2988da",
+  "chunk_index": 0,
+  "completed_at": "2026-10-27T00:17:36Z",
+  "language": "zh",
+  "live_id": "LIVE_20220529_001",
+  "media_committed_to_git": false,
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "offset_sec": 0,
+  "paid_api_used": false,
+  "processing_location": "github-hosted-macos-arm64",
+  "schema_version": "cloud-asr-chunk-v1",
+  "segments": [
+    {
+      "avg_logprob": -0.126905,
+      "compression_ratio": 0.851351,
+      "end": 29.98,
+      "no_speech_prob": 0.0,
+      "start": 0.0,
+      "text": "请不吝点赞 订阅 转发 打赏支持明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.038793,
+      "compression_ratio": 0.851351,
+      "end": 59.98,
+      "no_speech_prob": 0.0,
+      "start": 30.0,
+      "text": "请不吝点赞 订阅 转发 打赏支持明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.086876,
+      "compression_ratio": 0.851351,
+      "end": 89.98,
+      "no_speech_prob": 0.0,
+      "start": 60.0,
+      "text": "请不吝点赞 订阅 转发 打赏支持明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.141697,
+      "compression_ratio": 0.851351,
+      "end": 119.96,
+      "no_speech_prob": 0.0,
+      "start": 89.98,
+      "text": "请不吝点赞 订阅 转发 打赏支持明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.220979,
+      "compression_ratio": 0.724138,
+      "end": 149.96,
+      "no_speech_prob": 0.0,
+      "start": 119.98,
+      "text": "明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.199486,
+      "compression_ratio": 0.724138,
+      "end": 179.96,
+      "no_speech_prob": 0.0,
+      "start": 149.98,
+      "text": "明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.210171,
+      "compression_ratio": 1.3125,
+      "end": 181.96,
+      "no_speech_prob": 0.0,
+      "start": 179.96,
+      "text": "明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.210171,
+      "compression_ratio": 1.3125,
+      "end": 183.96,
+      "no_speech_prob": 0.0,
+      "start": 181.96,
+      "text": "明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.128097,
+      "compression_ratio": 1.3125,
+      "end": 185.96,
+      "no_speech_prob": 0.0,
+      "start": 183.96,
+      "text": "明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.128097,
+      "compression_ratio": 1.3125,
+      "end": 187.96,
+      "no_speech_prob": 0.0,
+      "start": 185.96,
+      "text": "明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.095151,
+      "compression_ratio": 1.3125,
+      "end": 189.96,
+      "no_speech_prob": 0.0,
+      "start": 187.96,
+      "text": "明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.095151,
+      "compression_ratio": 1.3125,
+      "end": 191.96,
+      "no_speech_prob": 0.0,
+      "start": 189.96,
+      "text": "明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.070873,
+      "compression_ratio": 1.3125,
+      "end": 193.96,
+      "no_speech_prob": 0.0,
+      "start": 191.96,
+      "text": "明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.070873,
+      "compression_ratio": 1.3125,
+      "end": 195.96,
+      "no_speech_prob": 0.0,
+      "start": 193.96,
+      "text": "明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.098095,
+      "compression_ratio": 1.3125,
+      "end": 197.96,
+      "no_speech_prob": 0.0,
+      "start": 195.96,
+      "text": "明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.098095,
+      "compression_ratio": 1.3125,
+      "end": 199.96,
+      "no_speech_prob": 0.0,
+      "start": 197.96,
+      "text": "明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.094382,
+      "compression_ratio": 1.3125,
+      "end": 201.96,
+      "no_speech_prob": 0.0,
+      "start": 199.96,
+      "text": "明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.094382,
+      "compression_ratio": 1.3125,
+      "end": 203.96,
+      "no_speech_prob": 0.0,
+      "start": 201.96,
+      "text": "明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.082591,
+      "compression_ratio": 1.96875,
+      "end": 205.96,
+      "no_speech_prob": 0.0,
+      "start": 203.96,
+      "text": "明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.082591,
+      "compression_ratio": 1.96875,
+      "end": 207.96,
+      "no_speech_prob": 0.0,
+      "start": 205.96,
+      "text": "明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.082591,
+      "compression_ratio": 1.96875,
+      "end": 209.96,
+      "no_speech_prob": 0.0,
+      "start": 207.96,
+      "text": "明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.058348,
+      "compression_ratio": 1.96875,
+      "end": 211.96,
+      "no_speech_prob": 0.0,
+      "start": 209.96,
+      "text": "明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.058348,
+      "compression_ratio": 1.96875,
+      "end": 213.96,
+      "no_speech_prob": 0.0,
+      "start": 211.96,
+      "text": "明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.058348,
+      "compression_ratio": 1.96875,
+      "end": 215.96,
+      "no_speech_prob": 0.0,
+      "start": 213.96,
+      "text": "明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.693891,
+      "compression_ratio": 3.9375,
+      "end": 218.44,
+      "no_speech_prob": 0.0,
+      "start": 215.96,
+      "text": "明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.693891,
+      "compression_ratio": 3.9375,
+      "end": 221.26,
+      "no_speech_prob": 0.0,
+      "start": 218.92,
+      "text": "明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.693891,
+      "compression_ratio": 3.9375,
+      "end": 224.1,
+      "no_speech_prob": 0.0,
+      "start": 221.96,
+      "text": "明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.693891,
+      "compression_ratio": 3.9375,
+      "end": 227.96,
+      "no_speech_prob": 0.0,
+      "start": 224.96,
+      "text": "明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.693891,
+      "compression_ratio": 3.9375,
+      "end": 230.3,
+      "no_speech_prob": 0.0,
+      "start": 227.96,
+      "text": "明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.693891,
+      "compression_ratio": 3.9375,
+      "end": 233.96,
+      "no_speech_prob": 0.0,
+      "start": 230.9,
+      "text": "明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.081818,
+      "compression_ratio": 22.35,
+      "end": 263.96,
+      "no_speech_prob": 0.0,
+      "start": 233.96,
+      "text": "疫苗疫苗疫苗疫苗疫苗疫苗疫苗疫苗疫苗疫苗疫苗疫苗疫苗疫苗疫苗疫苗疫苗疫苗疫苗疫苗疫苗疫苗疫苗疫苗疫苗疫苗疫苗疫苗疫苗疫苗疫苗疫苗疫苗疫苗疫苗疫苗疫苗疫苗疫苗疫苗疫苗疫苗疫苗疫苗疫苗疫苗疫苗疫苗疫苗疫苗疫苗疫苗疫苗疫苗疫苗疫苗疫苗疫苗疫苗疫苗疫苗疫苗疫苗疫苗疫苗疫苗疫苗疫苗疫苗疫苗疫苗疫苗疫苗疫苗疫"
+    },
+    {
+      "avg_logprob": -0.224447,
+      "compression_ratio": 19.171429,
+      "end": 293.96,
+      "no_speech_prob": 0.0,
+      "start": 263.96,
+      "text": "しか Kohме濟取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取"
+    },
+    {
+      "avg_logprob": -4.258921,
+      "compression_ratio": 0.5,
+      "end": 319.14,
+      "no_speech_prob": 0.0,
+      "start": 293.96,
+      "text": "请假期"
+    },
+    {
+      "avg_logprob": -5.996392,
+      "compression_ratio": 0.731707,
+      "end": 327.3,
+      "no_speech_prob": 0.0,
+      "start": 319.14,
+      "text": "不能帶來了"
+    },
+    {
+      "avg_logprob": -5.996392,
+      "compression_ratio": 0.731707,
+      "end": 342.34,
+      "no_speech_prob": 0.0,
+      "start": 337.14,
+      "text": "決定數네요"
+    },
+    {
+      "avg_logprob": -0.886586,
+      "compression_ratio": 2.347826,
+      "end": 344.34,
+      "no_speech_prob": 0.0,
+      "start": 342.34,
+      "text": "有些人的胸口感染症"
+    },
+    {
+      "avg_logprob": -0.886586,
+      "compression_ratio": 2.347826,
+      "end": 346.34,
+      "no_speech_prob": 0.0,
+      "start": 344.34,
+      "text": "有些人的胸口感染症"
+    },
+    {
+      "avg_logprob": -0.886586,
+      "compression_ratio": 2.347826,
+      "end": 348.34,
+      "no_speech_prob": 0.0,
+      "start": 346.34,
+      "text": "和胸口感染症"
+    },
+    {
+      "avg_logprob": -0.886586,
+      "compression_ratio": 2.347826,
+      "end": 350.34,
+      "no_speech_prob": 0.0,
+      "start": 348.34,
+      "text": "和胸口感染症"
+    },
+    {
+      "avg_logprob": -0.886586,
+      "compression_ratio": 2.347826,
+      "end": 352.34,
+      "no_speech_prob": 0.0,
+      "start": 350.34,
+      "text": "和胸口感染症"
+    },
+    {
+      "avg_logprob": -4.760025,
+      "compression_ratio": 0.717949,
+      "end": 367.54,
+      "no_speech_prob": 0.0,
+      "start": 352.34,
+      "text": "速消防止 真的假需要"
+    },
+    {
+      "avg_logprob": -0.288305,
+      "compression_ratio": 0.738095,
+      "end": 397.52,
+      "no_speech_prob": 0.0,
+      "start": 367.54,
+      "text": "中文字幕志愿者 李宗盛"
+    },
+    {
+      "avg_logprob": -0.053135,
+      "compression_ratio": 0.738095,
+      "end": 427.52,
+      "no_speech_prob": 0.0,
+      "start": 397.54,
+      "text": "中文字幕志愿者 李宗盛"
+    },
+    {
+      "avg_logprob": -0.122929,
+      "compression_ratio": 0.738095,
+      "end": 457.52,
+      "no_speech_prob": 0.0,
+      "start": 427.54,
+      "text": "中文字幕志愿者 李宗盛"
+    },
+    {
+      "avg_logprob": -0.108815,
+      "compression_ratio": 1.294479,
+      "end": 460.66,
+      "no_speech_prob": 0.0,
+      "start": 457.54,
+      "text": "《Heaven避风港》是一档定时有效及医学科普"
+    },
+    {
+      "avg_logprob": -0.108815,
+      "compression_ratio": 1.294479,
+      "end": 464.44,
+      "no_speech_prob": 0.0,
+      "start": 460.66,
+      "text": "病案分析 治疗咨询和心理疏导的直播节目"
+    },
+    {
+      "avg_logprob": -0.108815,
+      "compression_ratio": 1.294479,
+      "end": 466.42,
+      "no_speech_prob": 0.0,
+      "start": 464.44,
+      "text": "除了每期丰富的主题内容以外"
+    },
+    {
+      "avg_logprob": -0.108815,
+      "compression_ratio": 1.294479,
+      "end": 470.88,
+      "no_speech_prob": 0.0,
+      "start": 466.42,
+      "text": "埃格里斯医生还会在节目中对现场学问的观众进行健康指导"
+    },
+    {
+      "avg_logprob": -0.108815,
+      "compression_ratio": 1.294479,
+      "end": 472.54,
+      "no_speech_prob": 0.0,
+      "start": 470.88,
+      "text": "有需要问诊的观众朋友们"
+    },
+    {
+      "avg_logprob": -0.108815,
+      "compression_ratio": 1.294479,
+      "end": 474.48,
+      "no_speech_prob": 0.0,
+      "start": 472.54,
+      "text": "可千万不要错过我们的节目时间"
+    },
+    {
+      "avg_logprob": -0.108815,
+      "compression_ratio": 1.294479,
+      "end": 478.98,
+      "no_speech_prob": 0.0,
+      "start": 474.48,
+      "text": "我们的节目直播时间是美东时间的每周246下午3点"
+    },
+    {
+      "avg_logprob": -0.108815,
+      "compression_ratio": 1.294479,
+      "end": 483.08,
+      "no_speech_prob": 0.0,
+      "start": 478.98,
+      "text": "本期是文贵先生大直播的避风港特别专场"
+    },
+    {
+      "avg_logprob": -0.072085,
+      "compression_ratio": 1.194313,
+      "end": 488.62,
+      "no_speech_prob": 0.0,
+      "start": 483.08,
+      "text": "非常非常荣幸避风港节目能够在这个大直播平台上进行直播"
+    },
+    {
+      "avg_logprob": -0.072085,
+      "compression_ratio": 1.194313,
+      "end": 489.92,
+      "no_speech_prob": 0.0,
+      "start": 488.62,
+      "text": "非常非常感谢"
+    },
+    {
+      "avg_logprob": -0.072085,
+      "compression_ratio": 1.194313,
+      "end": 493.56,
+      "no_speech_prob": 0.0,
+      "start": 489.92,
+      "text": "首先有请我们爆料革命空中诊所的主治医生"
+    },
+    {
+      "avg_logprob": -0.072085,
+      "compression_ratio": 1.194313,
+      "end": 495.88,
+      "no_speech_prob": 0.0,
+      "start": 493.56,
+      "text": "及美丽与智慧于一身"
+    },
+    {
+      "avg_logprob": -0.072085,
+      "compression_ratio": 1.194313,
+      "end": 496.96,
+      "no_speech_prob": 0.0,
+      "start": 495.88,
+      "text": "知性温柔"
+    },
+    {
+      "avg_logprob": -0.072085,
+      "compression_ratio": 1.194313,
+      "end": 498.82,
+      "no_speech_prob": 0.0,
+      "start": 496.96,
+      "text": "勇于挑战邪恶势力"
+    },
+    {
+      "avg_logprob": -0.072085,
+      "compression_ratio": 1.194313,
+      "end": 500.7,
+      "no_speech_prob": 0.0,
+      "start": 498.82,
+      "text": "为信仰而战的埃格里斯医生"
+    },
+    {
+      "avg_logprob": -0.117553,
+      "compression_ratio": 1.31058,
+      "end": 504.42,
+      "no_speech_prob": 0.0,
+      "start": 500.7,
+      "text": "谢谢威廉王的隆重推出"
+    },
+    {
+      "avg_logprob": -0.117553,
+      "compression_ratio": 1.31058,
+      "end": 506.88,
+      "no_speech_prob": 0.0,
+      "start": 504.42,
+      "text": "全球的战友观众朋友们大家好"
+    },
+    {
+      "avg_logprob": -0.117553,
+      "compression_ratio": 1.31058,
+      "end": 510.92,
+      "no_speech_prob": 0.0,
+      "start": 506.88,
+      "text": "很感恩能和大家一起在这里面对人类历史上最大的挑战"
+    },
+    {
+      "avg_logprob": -0.117553,
+      "compression_ratio": 1.31058,
+      "end": 512.66,
+      "no_speech_prob": 0.0,
+      "start": 510.92,
+      "text": "让我们更多的关注健康"
+    },
+    {
+      "avg_logprob": -0.117553,
+      "compression_ratio": 1.31058,
+      "end": 514.92,
+      "no_speech_prob": 0.0,
+      "start": 512.66,
+      "text": "探求并传播生命的真相"
+    },
+    {
+      "avg_logprob": -0.117553,
+      "compression_ratio": 1.31058,
+      "end": 517.18,
+      "no_speech_prob": 0.0,
+      "start": 514.92,
+      "text": "找寻最适合自己的治愈良方"
+    },
+    {
+      "avg_logprob": -0.117553,
+      "compression_ratio": 1.31058,
+      "end": 520.0,
+      "no_speech_prob": 0.0,
+      "start": 517.18,
+      "text": "这期有文贵先生坐诊"
+    },
+    {
+      "avg_logprob": -0.117553,
+      "compression_ratio": 1.31058,
+      "end": 522.3,
+      "no_speech_prob": 0.0,
+      "start": 520.0,
+      "text": "相信一定是一场精彩封城"
+    },
+    {
+      "avg_logprob": -0.117553,
+      "compression_ratio": 1.31058,
+      "end": 524.04,
+      "no_speech_prob": 0.0,
+      "start": 522.3,
+      "text": "并难忘的直播盛演"
+    },
+    {
+      "avg_logprob": -0.117553,
+      "compression_ratio": 1.31058,
+      "end": 525.86,
+      "no_speech_prob": 0.0,
+      "start": 524.04,
+      "text": "好的"
+    },
+    {
+      "avg_logprob": -0.117553,
+      "compression_ratio": 1.31058,
+      "end": 529.06,
+      "no_speech_prob": 0.0,
+      "start": 525.86,
+      "text": "接下来呢让我们隆重请出爆料革命的发起人"
+    },
+    {
+      "avg_logprob": -0.138829,
+      "compression_ratio": 1.3,
+      "end": 533.14,
+      "no_speech_prob": 0.0,
+      "start": 529.06,
+      "text": "在全世界范围内第一个说出病毒和疫苗真相"
+    },
+    {
+      "avg_logprob": -0.138829,
+      "compression_ratio": 1.3,
+      "end": 536.6,
+      "no_speech_prob": 0.0,
+      "start": 533.14,
+      "text": "瞬间摇滚巨星等多重身份的文贵先生"
+    },
+    {
+      "avg_logprob": -0.138829,
+      "compression_ratio": 1.3,
+      "end": 537.62,
+      "no_speech_prob": 0.0,
+      "start": 536.6,
+      "text": "欢迎"
+    },
+    {
+      "avg_logprob": -0.138829,
+      "compression_ratio": 1.3,
+      "end": 542.32,
+      "no_speech_prob": 0.0,
+      "start": 537.62,
+      "text": "尊敬的战友们好"
+    },
+    {
+      "avg_logprob": -0.138829,
+      "compression_ratio": 1.3,
+      "end": 544.52,
+      "no_speech_prob": 0.0,
+      "start": 542.32,
+      "text": "埃格里斯医生好"
+    },
+    {
+      "avg_logprob": -0.138829,
+      "compression_ratio": 1.3,
+      "end": 546.14,
+      "no_speech_prob": 0.0,
+      "start": 544.52,
+      "text": "威廉王兄弟好"
+    },
+    {
+      "avg_logprob": -0.138829,
+      "compression_ratio": 1.3,
+      "end": 548.2,
+      "no_speech_prob": 0.0,
+      "start": 546.14,
+      "text": "非常荣幸参与今天"
+    },
+    {
+      "avg_logprob": -0.138829,
+      "compression_ratio": 1.3,
+      "end": 550.46,
+      "no_speech_prob": 0.0,
+      "start": 548.2,
+      "text": "避风港不是避风堂"
+    },
+    {
+      "avg_logprob": -0.138829,
+      "compression_ratio": 1.3,
+      "end": 551.78,
+      "no_speech_prob": 0.0,
+      "start": 550.46,
+      "text": "我老说避风堂"
+    },
+    {
+      "avg_logprob": -0.138829,
+      "compression_ratio": 1.3,
+      "end": 553.5,
+      "no_speech_prob": 0.0,
+      "start": 551.78,
+      "text": "我一说就说避风堂"
+    },
+    {
+      "avg_logprob": -0.138829,
+      "compression_ratio": 1.3,
+      "end": 554.88,
+      "no_speech_prob": 0.0,
+      "start": 553.5,
+      "text": "就进了海鲜餐厅了"
+    },
+    {
+      "avg_logprob": -0.138829,
+      "compression_ratio": 1.3,
+      "end": 556.9,
+      "no_speech_prob": 0.0,
+      "start": 554.88,
+      "text": "避风港包场节目"
+    },
+    {
+      "avg_logprob": -0.138829,
+      "compression_ratio": 1.3,
+      "end": 557.24,
+      "no_speech_prob": 0.0,
+      "start": 556.9,
+      "text": "谢谢"
+    },
+    {
+      "avg_logprob": -0.274342,
+      "compression_ratio": 1.0,
+      "end": 558.92,
+      "no_speech_prob": 0.0,
+      "start": 557.24,
+      "text": "好"
+    },
+    {
+      "avg_logprob": -0.274342,
+      "compression_ratio": 1.0,
+      "end": 559.98,
+      "no_speech_prob": 0.0,
+      "start": 558.92,
+      "text": "谢谢七哥"
+    },
+    {
+      "avg_logprob": -0.274342,
+      "compression_ratio": 1.0,
+      "end": 560.7,
+      "no_speech_prob": 0.0,
+      "start": 559.98,
+      "text": "哇"
+    },
+    {
+      "avg_logprob": -0.274342,
+      "compression_ratio": 1.0,
+      "end": 561.32,
+      "no_speech_prob": 0.0,
+      "start": 560.7,
+      "text": "好"
+    },
+    {
+      "avg_logprob": -0.274342,
+      "compression_ratio": 1.0,
+      "end": 563.72,
+      "no_speech_prob": 0.0,
+      "start": 561.32,
+      "text": "接下来我们正式进入节目的第一个环节"
+    },
+    {
+      "avg_logprob": -0.274342,
+      "compression_ratio": 1.0,
+      "end": 564.8,
+      "no_speech_prob": 0.0,
+      "start": 563.72,
+      "text": "风起云涌"
+    },
+    {
+      "avg_logprob": -0.274342,
+      "compression_ratio": 1.0,
+      "end": 582.14,
+      "no_speech_prob": 0.0,
+      "start": 564.8,
+      "text": "好"
+    },
+    {
+      "avg_logprob": -0.274342,
+      "compression_ratio": 1.0,
+      "end": 584.24,
+      "no_speech_prob": 0.0,
+      "start": 582.14,
+      "text": "我们先来看一条国际新闻"
+    },
+    {
+      "avg_logprob": -0.087204,
+      "compression_ratio": 1.229508,
+      "end": 587.56,
+      "no_speech_prob": 0.0,
+      "start": 584.24,
+      "text": "追责疫苗强制民众开始法律反击"
+    },
+    {
+      "avg_logprob": -0.087204,
+      "compression_ratio": 1.229508,
+      "end": 588.72,
+      "no_speech_prob": 0.0,
+      "start": 587.56,
+      "text": "近日"
+    },
+    {
+      "avg_logprob": -0.087204,
+      "compression_ratio": 1.229508,
+      "end": 601.64,
+      "no_speech_prob": 0.0,
+      "start": 588.72,
+      "text": "一家美国律师事务所代表美国自由飞行者协会与阿特拉斯航空公司的员工在佛罗里达州的南区法院对该航空公司的疫苗强制令提起诉讼"
+    },
+    {
+      "avg_logprob": -0.112408,
+      "compression_ratio": 1.153439,
+      "end": 617.52,
+      "no_speech_prob": 0.0,
+      "start": 601.64,
+      "text": "并还将起诉全美18家主要的航空公司以及美国联邦航空管理局和交通部认为他们对于航空领域所进行的疫苗强制令侵犯了员工们宪法所赋予的自由还有宗教和医疗自由"
+    },
+    {
+      "avg_logprob": -0.090659,
+      "compression_ratio": 1.072848,
+      "end": 628.52,
+      "no_speech_prob": 0.0,
+      "start": 617.52,
+      "text": "这事很大相关的细节呢我就不在这一一表述了目前法律诉讼已经提交了所有的原告都期待能够立刻解除新冠疫苗的强制措施"
+    },
+    {
+      "avg_logprob": -0.083519,
+      "compression_ratio": 1.282759,
+      "end": 647.52,
+      "no_speech_prob": 0.0,
+      "start": 628.52,
+      "text": "另外呢近日有更有500余名的美国现役军人作为原告在德州的东区联邦法院就军队强制疫苗令对现任美国国防部长奥斯丁国防部食品药品监督管理局也就是FDA卫生部与这个公众服务部提起了诉讼啊"
+    },
+    {
+      "avg_logprob": -0.083519,
+      "compression_ratio": 1.282759,
+      "end": 656.52,
+      "no_speech_prob": 0.0,
+      "start": 647.52,
+      "text": "目前美国越来越多的行业各行各业的民众依法对之前和现在还在进行疫苗强制令进行反击"
+    },
+    {
+      "avg_logprob": -0.063387,
+      "compression_ratio": 1.259786,
+      "end": 668.52,
+      "no_speech_prob": 0.0,
+      "start": 656.52,
+      "text": "有望彻底结束新冠疫苗在全美各层面的强制措施并对之前的强制措施执行的人员进行追责让我们拭目以待事后的后续发展"
+    },
+    {
+      "avg_logprob": -0.063387,
+      "compression_ratio": 1.259786,
+      "end": 673.52,
+      "no_speech_prob": 0.0,
+      "start": 668.52,
+      "text": "我想先请问埃格里斯医生从医学角度您怎么看这个新闻"
+    },
+    {
+      "avg_logprob": -0.063387,
+      "compression_ratio": 1.259786,
+      "end": 682.52,
+      "no_speech_prob": 0.0,
+      "start": 673.52,
+      "text": "现在大面积疫苗接种后严重复反应高发时的多数一贯相信民选政府的西方民众就开始犹豫观望"
+    },
+    {
+      "avg_logprob": -0.047069,
+      "compression_ratio": 1.140704,
+      "end": 686.52,
+      "no_speech_prob": 0.0,
+      "start": 682.52,
+      "text": "有的甚至开始反抗政府的不合理的强制疫苗接种政策"
+    },
+    {
+      "avg_logprob": -0.047069,
+      "compression_ratio": 1.140704,
+      "end": 691.52,
+      "no_speech_prob": 0.0,
+      "start": 686.52,
+      "text": "至今美国还有7420万民众没有接种过一剂新冠疫苗"
+    },
+    {
+      "avg_logprob": -0.047069,
+      "compression_ratio": 1.140704,
+      "end": 694.52,
+      "no_speech_prob": 0.0,
+      "start": 691.52,
+      "text": "那占了美国人口总数的将近21%左右"
+    },
+    {
+      "avg_logprob": -0.047069,
+      "compression_ratio": 1.140704,
+      "end": 697.52,
+      "no_speech_prob": 0.0,
+      "start": 694.52,
+      "text": "当然其中有2000多万是五岁以下的儿童"
+    },
+    {
+      "avg_logprob": -0.145452,
+      "compression_ratio": 1.144796,
+      "end": 706.52,
+      "no_speech_prob": 0.0,
+      "start": 697.52,
+      "text": "但是也有1.57亿的美国人也将近一半的美国人决定不再继续听从CDC的敦促或者胁迫"
+    },
+    {
+      "avg_logprob": -0.145452,
+      "compression_ratio": 1.144796,
+      "end": 708.52,
+      "no_speech_prob": 0.0,
+      "start": 706.52,
+      "text": "表示不愿意再接种加强症"
+    },
+    {
+      "avg_logprob": -0.145452,
+      "compression_ratio": 1.144796,
+      "end": 711.52,
+      "no_speech_prob": 0.0,
+      "start": 708.52,
+      "text": "民众可以被主流媒体蒙骗一时但是"
+    },
+    {
+      "avg_logprob": -0.145452,
+      "compression_ratio": 1.144796,
+      "end": 715.52,
+      "no_speech_prob": 0.0,
+      "start": 711.52,
+      "text": "是面一个倒下的或者健康出问题的这些亲戚朋友邻居"
+    },
+    {
+      "avg_logprob": -0.17321,
+      "compression_ratio": 1.167488,
+      "end": 719.52,
+      "no_speech_prob": 0.0,
+      "start": 715.52,
+      "text": "不可能不对有独立思考难内的人产生疑虑"
+    },
+    {
+      "avg_logprob": -0.17321,
+      "compression_ratio": 1.167488,
+      "end": 721.52,
+      "no_speech_prob": 0.0,
+      "start": 719.52,
+      "text": "所以疫苗强制政策难以为及"
+    },
+    {
+      "avg_logprob": -0.17321,
+      "compression_ratio": 1.167488,
+      "end": 724.52,
+      "no_speech_prob": 0.0,
+      "start": 721.52,
+      "text": "疫苗商的原定计划肯定要遭受挫折"
+    },
+    {
+      "avg_logprob": -0.17321,
+      "compression_ratio": 1.167488,
+      "end": 727.52,
+      "no_speech_prob": 0.0,
+      "start": 724.52,
+      "text": "所以莫丹娜的首席执行官就开始发牢骚"
+    },
+    {
+      "avg_logprob": -0.17321,
+      "compression_ratio": 1.167488,
+      "end": 731.52,
+      "no_speech_prob": 0.0,
+      "start": 727.52,
+      "text": "我们也有个视频与大家分享导播期切入"
+    },
+    {
+      "avg_logprob": -0.17837,
+      "compression_ratio": 0.822581,
+      "end": 760.52,
+      "no_speech_prob": 0.0,
+      "start": 731.52,
+      "text": "这位莫德纳首席执行官叫斯特凡塞曼尔"
+    },
+    {
+      "avg_logprob": -0.119134,
+      "compression_ratio": 1.314176,
+      "end": 765.52,
+      "no_speech_prob": 0.0,
+      "start": 760.52,
+      "text": "他抱怨不得不扔掉三千多万极的中共病毒疫苗"
+    },
+    {
+      "avg_logprob": -0.119134,
+      "compression_ratio": 1.314176,
+      "end": 767.52,
+      "no_speech_prob": 0.0,
+      "start": 765.52,
+      "text": "因为没人要 没人敢要"
+    },
+    {
+      "avg_logprob": -0.119134,
+      "compression_ratio": 1.314176,
+      "end": 770.52,
+      "no_speech_prob": 0.0,
+      "start": 767.52,
+      "text": "但还是有个别极端掌权者"
+    },
+    {
+      "avg_logprob": -0.119134,
+      "compression_ratio": 1.314176,
+      "end": 773.52,
+      "no_speech_prob": 0.0,
+      "start": 770.52,
+      "text": "除了中共以外那是加拿大的小土豆"
+    },
+    {
+      "avg_logprob": -0.119134,
+      "compression_ratio": 1.314176,
+      "end": 775.52,
+      "no_speech_prob": 0.0,
+      "start": 773.52,
+      "text": "我们看看他说了些什么"
+    },
+    {
+      "avg_logprob": -0.119134,
+      "compression_ratio": 1.314176,
+      "end": 776.52,
+      "no_speech_prob": 0.0,
+      "start": 775.52,
+      "text": "导播请切入这个"
+    },
+    {
+      "avg_logprob": -0.119134,
+      "compression_ratio": 1.314176,
+      "end": 778.52,
+      "no_speech_prob": 0.0,
+      "start": 776.52,
+      "text": "我们还有没有这个视频"
+    },
+    {
+      "avg_logprob": -0.119134,
+      "compression_ratio": 1.314176,
+      "end": 779.52,
+      "no_speech_prob": 0.0,
+      "start": 778.52,
+      "text": "这个视频没有了"
+    },
+    {
+      "avg_logprob": -0.119134,
+      "compression_ratio": 1.314176,
+      "end": 781.52,
+      "no_speech_prob": 0.0,
+      "start": 779.52,
+      "text": "那没关系"
+    },
+    {
+      "avg_logprob": -0.119134,
+      "compression_ratio": 1.314176,
+      "end": 786.52,
+      "no_speech_prob": 0.0,
+      "start": 781.52,
+      "text": "总之小土豆它是执行像金正恩一样的风格的政策"
+    },
+    {
+      "avg_logprob": -0.136111,
+      "compression_ratio": 1.134328,
+      "end": 788.52,
+      "no_speech_prob": 0.0,
+      "start": 786.52,
+      "text": "它是如鼠夹增"
+    },
+    {
+      "avg_logprob": -0.136111,
+      "compression_ratio": 1.134328,
+      "end": 791.52,
+      "no_speech_prob": 0.0,
+      "start": 788.52,
+      "text": "将纳税人的钱都拿去购买各种各样的疫苗"
+    },
+    {
+      "avg_logprob": -0.136111,
+      "compression_ratio": 1.134328,
+      "end": 792.52,
+      "no_speech_prob": 0.0,
+      "start": 791.52,
+      "text": "从辉瑞强生那里"
+    },
+    {
+      "avg_logprob": -0.136111,
+      "compression_ratio": 1.134328,
+      "end": 793.52,
+      "no_speech_prob": 0.0,
+      "start": 792.52,
+      "text": "最近订购了很多"
+    },
+    {
+      "avg_logprob": -0.136111,
+      "compression_ratio": 1.134328,
+      "end": 798.52,
+      "no_speech_prob": 0.0,
+      "start": 793.52,
+      "text": "所以这时候希望国际黑客组织行动起来"
+    },
+    {
+      "avg_logprob": -0.136111,
+      "compression_ratio": 1.134328,
+      "end": 802.52,
+      "no_speech_prob": 0.0,
+      "start": 798.52,
+      "text": "政府政客操作疫苗生意背后一定有很肮脏的声音"
+    },
+    {
+      "avg_logprob": -0.10656,
+      "compression_ratio": 1.369128,
+      "end": 805.52,
+      "no_speech_prob": 0.0,
+      "start": 802.52,
+      "text": "威廉强我是习惯此时让你点评的"
+    },
+    {
+      "avg_logprob": -0.10656,
+      "compression_ratio": 1.369128,
+      "end": 806.52,
+      "no_speech_prob": 0.0,
+      "start": 805.52,
+      "text": "文贵先生稍后"
+    },
+    {
+      "avg_logprob": -0.10656,
+      "compression_ratio": 1.369128,
+      "end": 810.52,
+      "no_speech_prob": 0.0,
+      "start": 806.52,
+      "text": "我的点评就由文贵先生来了"
+    },
+    {
+      "avg_logprob": -0.10656,
+      "compression_ratio": 1.369128,
+      "end": 814.52,
+      "no_speech_prob": 0.0,
+      "start": 810.52,
+      "text": "非常感谢埃格丽斯医生您从医学的角度上来解读"
+    },
+    {
+      "avg_logprob": -0.10656,
+      "compression_ratio": 1.369128,
+      "end": 816.52,
+      "no_speech_prob": 0.0,
+      "start": 814.52,
+      "text": "我想请问文贵先生"
+    },
+    {
+      "avg_logprob": -0.10656,
+      "compression_ratio": 1.369128,
+      "end": 818.52,
+      "no_speech_prob": 0.0,
+      "start": 816.52,
+      "text": "我注意到您昨天的盖特置顶"
+    },
+    {
+      "avg_logprob": -0.10656,
+      "compression_ratio": 1.369128,
+      "end": 822.52,
+      "no_speech_prob": 0.0,
+      "start": 818.52,
+      "text": "也给我们揭示了疫苗强制即将结束的信息"
+    },
+    {
+      "avg_logprob": -0.10656,
+      "compression_ratio": 1.369128,
+      "end": 824.52,
+      "no_speech_prob": 0.0,
+      "start": 822.52,
+      "text": "我想请您从更深的层次"
+    },
+    {
+      "avg_logprob": -0.10656,
+      "compression_ratio": 1.369128,
+      "end": 826.52,
+      "no_speech_prob": 0.0,
+      "start": 824.52,
+      "text": "对于现在国际上的疫苗状况"
+    },
+    {
+      "avg_logprob": -0.10656,
+      "compression_ratio": 1.369128,
+      "end": 830.52,
+      "no_speech_prob": 0.0,
+      "start": 826.52,
+      "text": "民众的态度以及觉醒这方面来进行更深的解读和评论"
+    },
+    {
+      "avg_logprob": -0.177732,
+      "compression_ratio": 1.231405,
+      "end": 832.52,
+      "no_speech_prob": 0.0,
+      "start": 830.52,
+      "text": "文贵先生"
+    },
+    {
+      "avg_logprob": -0.177732,
+      "compression_ratio": 1.231405,
+      "end": 834.52,
+      "no_speech_prob": 0.0,
+      "start": 832.52,
+      "text": "谢谢维连王兄的信息"
+    },
+    {
+      "avg_logprob": -0.177732,
+      "compression_ratio": 1.231405,
+      "end": 836.52,
+      "no_speech_prob": 0.0,
+      "start": 834.52,
+      "text": "埃格丽斯医生"
+    },
+    {
+      "avg_logprob": -0.177732,
+      "compression_ratio": 1.231405,
+      "end": 840.52,
+      "no_speech_prob": 0.0,
+      "start": 836.52,
+      "text": "我刚才就看了你们前面做的小的短片视频特别棒"
+    },
+    {
+      "avg_logprob": -0.177732,
+      "compression_ratio": 1.231405,
+      "end": 842.52,
+      "no_speech_prob": 0.0,
+      "start": 840.52,
+      "text": "谢谢咱们的Tony导演"
+    },
+    {
+      "avg_logprob": -0.177732,
+      "compression_ratio": 1.231405,
+      "end": 848.52,
+      "no_speech_prob": 0.0,
+      "start": 842.52,
+      "text": "还有所有的后面的做PPT和做参考资料的小视频的战友们"
+    },
+    {
+      "avg_logprob": -0.177732,
+      "compression_ratio": 1.231405,
+      "end": 850.52,
+      "no_speech_prob": 0.0,
+      "start": 848.52,
+      "text": "都特别棒"
+    },
+    {
+      "avg_logprob": -0.177732,
+      "compression_ratio": 1.231405,
+      "end": 854.52,
+      "no_speech_prob": 0.0,
+      "start": 850.52,
+      "text": "这个我们看每一秒过去这个镜头的时候"
+    },
+    {
+      "avg_logprob": -0.177732,
+      "compression_ratio": 1.231405,
+      "end": 856.52,
+      "no_speech_prob": 0.0,
+      "start": 854.52,
+      "text": "他是用亿万人"
+    },
+    {
+      "avg_logprob": -0.138126,
+      "compression_ratio": 1.218905,
+      "end": 860.52,
+      "no_speech_prob": 0.0,
+      "start": 856.52,
+      "text": "甚至全球75亿人的生命安全作为代价"
+    },
+    {
+      "avg_logprob": -0.138126,
+      "compression_ratio": 1.218905,
+      "end": 862.52,
+      "no_speech_prob": 0.0,
+      "start": 860.52,
+      "text": "才换来了这样的一个结果"
+    },
+    {
+      "avg_logprob": -0.138126,
+      "compression_ratio": 1.218905,
+      "end": 864.52,
+      "no_speech_prob": 0.0,
+      "start": 862.52,
+      "text": "特别是那个飞机那个照片"
+    },
+    {
+      "avg_logprob": -0.138126,
+      "compression_ratio": 1.218905,
+      "end": 866.52,
+      "no_speech_prob": 0.0,
+      "start": 864.52,
+      "text": "如果任何有一个社会常识的人"
+    },
+    {
+      "avg_logprob": -0.138126,
+      "compression_ratio": 1.218905,
+      "end": 868.52,
+      "no_speech_prob": 0.0,
+      "start": 866.52,
+      "text": "想一想你坐飞机"
+    },
+    {
+      "avg_logprob": -0.138126,
+      "compression_ratio": 1.218905,
+      "end": 870.52,
+      "no_speech_prob": 0.0,
+      "start": 868.52,
+      "text": "飞机在天上开树"
+    },
+    {
+      "avg_logprob": -0.138126,
+      "compression_ratio": 1.218905,
+      "end": 872.52,
+      "no_speech_prob": 0.0,
+      "start": 870.52,
+      "text": "打着疫苗的人危险"
+    },
+    {
+      "avg_logprob": -0.138126,
+      "compression_ratio": 1.218905,
+      "end": 874.52,
+      "no_speech_prob": 0.0,
+      "start": 872.52,
+      "text": "它就会导致什么结果"
+    },
+    {
+      "avg_logprob": -0.115419,
+      "compression_ratio": 1.359551,
+      "end": 876.52,
+      "no_speech_prob": 0.0,
+      "start": 874.52,
+      "text": "飞机掉下来是飞机上人死"
+    },
+    {
+      "avg_logprob": -0.115419,
+      "compression_ratio": 1.359551,
+      "end": 878.52,
+      "no_speech_prob": 0.0,
+      "start": 876.52,
+      "text": "然后掉下来砸着谁你也不知道"
+    },
+    {
+      "avg_logprob": -0.115419,
+      "compression_ratio": 1.359551,
+      "end": 880.52,
+      "no_speech_prob": 0.0,
+      "start": 878.52,
+      "text": "而且飞机是带着35吨的燃油在天上飞"
+    },
+    {
+      "avg_logprob": -0.115419,
+      "compression_ratio": 1.359551,
+      "end": 882.52,
+      "no_speech_prob": 0.0,
+      "start": 880.52,
+      "text": "它不是个子弹"
+    },
+    {
+      "avg_logprob": -0.115419,
+      "compression_ratio": 1.359551,
+      "end": 884.52,
+      "no_speech_prob": 0.0,
+      "start": 882.52,
+      "text": "它是个导弹"
+    },
+    {
+      "avg_logprob": -0.115419,
+      "compression_ratio": 1.359551,
+      "end": 886.52,
+      "no_speech_prob": 0.0,
+      "start": 884.52,
+      "text": "而且每天在全世界上万架飞机在天上飞着"
+    },
+    {
+      "avg_logprob": -0.115419,
+      "compression_ratio": 1.359551,
+      "end": 888.52,
+      "no_speech_prob": 0.0,
+      "start": 886.52,
+      "text": "那就上万架导弹都有可能是"
+    },
+    {
+      "avg_logprob": -5.001137,
+      "compression_ratio": 0.922414,
+      "end": 902.52,
+      "no_speech_prob": 0.0,
+      "start": 888.52,
+      "text": "只是百万架飞机 Punkt investigating"
+    },
+    {
+      "avg_logprob": -5.001137,
+      "compression_ratio": 0.922414,
+      "end": 908.52,
+      "no_speech_prob": 0.0,
+      "start": 902.52,
+      "text": "让数学には数学一直世界 Practice"
+    },
+    {
+      "avg_logprob": -5.001137,
+      "compression_ratio": 0.922414,
+      "end": 912.8,
+      "no_speech_prob": 0.0,
+      "start": 908.52,
+      "text": "以及ículo百科技巧"
+    }
+  ],
+  "text": "请不吝点赞 订阅 转发 打赏支持明镜与点点栏目请不吝点赞 订阅 转发 打赏支持明镜与点点栏目请不吝点赞 订阅 转发 打赏支持明镜与点点栏目请不吝点赞 订阅 转发 打赏支持明镜与点点栏目明镜与点点栏目明镜与点点栏目明镜与点点栏目明镜与点点栏目明镜与点点栏目明镜与点点栏目明镜与点点栏目明镜与点点栏目明镜与点点栏目明镜与点点栏目明镜与点点栏目明镜与点点栏目明镜与点点栏目明镜与点点栏目明镜与点点栏目明镜与点点栏目明镜与点点栏目明镜与点点栏目明镜与点点栏目明镜与点点栏目明镜与点点栏目明镜与点点栏目明镜与点点栏目明镜与点点栏目明镜与点点栏目明镜与点点栏目疫苗疫苗疫苗疫苗疫苗疫苗疫苗疫苗疫苗疫苗疫苗疫苗疫苗疫苗疫苗疫苗疫苗疫苗疫苗疫苗疫苗疫苗疫苗疫苗疫苗疫苗疫苗疫苗疫苗疫苗疫苗疫苗疫苗疫苗疫苗疫苗疫苗疫苗疫苗疫苗疫苗疫苗疫苗疫苗疫苗疫苗疫苗疫苗疫苗疫苗疫苗疫苗疫苗疫苗疫苗疫苗疫苗疫苗疫苗疫苗疫苗疫苗疫苗疫苗疫苗疫苗疫苗疫苗疫苗疫苗疫苗疫苗疫苗疫苗疫しか Kohме濟取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取取请假期不能帶來了決定數네요有些人的胸口感染症有些人的胸口感染症和胸口感染症和胸口感染症和胸口感染症速消防止 真的假需要中文字幕志愿者 李宗盛中文字幕志愿者 李宗盛中文字幕志愿者 李宗盛《Heaven避风港》是一档定时有效及医学科普病案分析 治疗咨询和心理疏导的直播节目除了每期丰富的主题内容以外埃格里斯医生还会在节目中对现场学问的观众进行健康指导有需要问诊的观众朋友们可千万不要错过我们的节目时间我们的节目直播时间是美东时间的每周246下午3点本期是文贵先生大直播的避风港特别专场非常非常荣幸避风港节目能够在这个大直播平台上进行直播非常非常感谢首先有请我们爆料革命空中诊所的主治医生及美丽与智慧于一身知性温柔勇于挑战邪恶势力为信仰而战的埃格里斯医生谢谢威廉王的隆重推出全球的战友观众朋友们大家好很感恩能和大家一起在这里面对人类历史上最大的挑战让我们更多的关注健康探求并传播生命的真相找寻最适合自己的治愈良方这期有文贵先生坐诊相信一定是一场精彩封城并难忘的直播盛演好的接下来呢让我们隆重请出爆料革命的发起人在全世界范围内第一个说出病毒和疫苗真相瞬间摇滚巨星等多重身份的文贵先生欢迎尊敬的战友们好埃格里斯医生好威廉王兄弟好非常荣幸参与今天避风港不是避风堂我老说避风堂我一说就说避风堂就进了海鲜餐厅了避风港包场节目谢谢好谢谢七哥哇好接下来我们正式进入节目的第一个环节风起云涌好我们先来看一条国际新闻追责疫苗强制民众开始法律反击近日一家美国律师事务所代表美国自由飞行者协会与阿特拉斯航空公司的员工在佛罗里达州的南区法院对该航空公司的疫苗强制令提起诉讼并还将起诉全美18家主要的航空公司以及美国联邦航空管理局和交通部认为他们对于航空领域所进行的疫苗强制令侵犯了员工们宪法所赋予的自由还有宗教和医疗自由这事很大相关的细节呢我就不在这一一表述了目前法律诉讼已经提交了所有的原告都期待能够立刻解除新冠疫苗的强制措施另外呢近日有更有500余名的美国现役军人作为原告在德州的东区联邦法院就军队强制疫苗令对现任美国国防部长奥斯丁国防部食品药品监督管理局也就是FDA卫生部与这个公众服务部提起了诉讼啊目前美国越来越多的行业各行各业的民众依法对之前和现在还在进行疫苗强制令进行反击有望彻底结束新冠疫苗在全美各层面的强制措施并对之前的强制措施执行的人员进行追责让我们拭目以待事后的后续发展我想先请问埃格里斯医生从医学角度您怎么看这个新闻现在大面积疫苗接种后严重复反应高发时的多数一贯相信民选政府的西方民众就开始犹豫观望有的甚至开始反抗政府的不合理的强制疫苗接种政策至今美国还有7420万民众没有接种过一剂新冠疫苗那占了美国人口总数的将近21%左右当然其中有2000多万是五岁以下的儿童但是也有1.57亿的美国人也将近一半的美国人决定不再继续听从CDC的敦促或者胁迫表示不愿意再接种加强症民众可以被主流媒体蒙骗一时但是是面一个倒下的或者健康出问题的这些亲戚朋友邻居不可能不对有独立思考难内的人产生疑虑所以疫苗强制政策难以为及疫苗商的原定计划肯定要遭受挫折所以莫丹娜的首席执行官就开始发牢骚我们也有个视频与大家分享导播期切入这位莫德纳首席执行官叫斯特凡塞曼尔他抱怨不得不扔掉三千多万极的中共病毒疫苗因为没人要 没人敢要但还是有个别极端掌权者除了中共以外那是加拿大的小土豆我们看看他说了些什么导播请切入这个我们还有没有这个视频这个视频没有了那没关系总之小土豆它是执行像金正恩一样的风格的政策它是如鼠夹增将纳税人的钱都拿去购买各种各样的疫苗从辉瑞强生那里最近订购了很多所以这时候希望国际黑客组织行动起来政府政客操作疫苗生意背后一定有很肮脏的声音威廉强我是习惯此时让你点评的文贵先生稍后我的点评就由文贵先生来了非常感谢埃格丽斯医生您从医学的角度上来解读我想请问文贵先生我注意到您昨天的盖特置顶也给我们揭示了疫苗强制即将结束的信息我想请您从更深的层次对于现在国际上的疫苗状况民众的态度以及觉醒这方面来进行更深的解读和评论文贵先生谢谢维连王兄的信息埃格丽斯医生我刚才就看了你们前面做的小的短片视频特别棒谢谢咱们的Tony导演还有所有的后面的做PPT和做参考资料的小视频的战友们都特别棒这个我们看每一秒过去这个镜头的时候他是用亿万人甚至全球75亿人的生命安全作为代价才换来了这样的一个结果特别是那个飞机那个照片如果任何有一个社会常识的人想一想你坐飞机飞机在天上开树打着疫苗的人危险它就会导致什么结果飞机掉下来是飞机上人死然后掉下来砸着谁你也不知道而且飞机是带着35吨的燃油在天上飞它不是个子弹它是个导弹而且每天在全世界上万架飞机在天上飞着那就上万架导弹都有可能是只是百万架飞机 Punkt investigating让数学には数学一直世界 Practice以及ículo百科技巧"
+}
