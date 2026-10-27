@@ -1,0 +1,72 @@
+{
+  "chunk_audio_sha256": "e76e469903b16360c5099f2497db2db12d27af82266b583d072d908a57c5b8e7",
+  "chunk_index": 23,
+  "completed_at": "2026-10-27T06:44:00Z",
+  "language": "zh",
+  "live_id": "LIVE_20220326_001",
+  "media_committed_to_git": false,
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "offset_sec": 20700,
+  "paid_api_used": false,
+  "processing_location": "github-hosted-macos-arm64",
+  "schema_version": "cloud-asr-chunk-v1",
+  "segments": [
+    {
+      "avg_logprob": -2.958404,
+      "compression_ratio": 1.666667,
+      "end": 20708.22,
+      "no_speech_prob": 0.0,
+      "start": 20700.0,
+      "text": "기лад聖gas"
+    },
+    {
+      "avg_logprob": -2.958404,
+      "compression_ratio": 1.666667,
+      "end": 20712.54,
+      "no_speech_prob": 0.0,
+      "start": 20708.22,
+      "text": "高度感"
+    },
+    {
+      "avg_logprob": -2.958404,
+      "compression_ratio": 1.666667,
+      "end": 20717.1,
+      "no_speech_prob": 0.0,
+      "start": 20712.54,
+      "text": "高度感"
+    },
+    {
+      "avg_logprob": -2.958404,
+      "compression_ratio": 1.666667,
+      "end": 20720.86,
+      "no_speech_prob": 0.0,
+      "start": 20717.1,
+      "text": "高度感"
+    },
+    {
+      "avg_logprob": -2.958404,
+      "compression_ratio": 1.666667,
+      "end": 20724.52,
+      "no_speech_prob": 0.0,
+      "start": 20720.86,
+      "text": "高度感"
+    },
+    {
+      "avg_logprob": -2.958404,
+      "compression_ratio": 1.666667,
+      "end": 20727.76,
+      "no_speech_prob": 0.0,
+      "start": 20724.52,
+      "text": "高度感"
+    },
+    {
+      "avg_logprob": -0.139841,
+      "compression_ratio": 0.875,
+      "end": 20757.74,
+      "no_speech_prob": 0.0,
+      "start": 20727.76,
+      "text": "优优独播剧场——YoYo Television Series Exclusive"
+    }
+  ],
+  "text": "기лад聖gas高度感高度感高度感高度感高度感优优独播剧场——YoYo Television Series Exclusive"
+}
