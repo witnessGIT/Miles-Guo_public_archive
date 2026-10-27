@@ -121,37 +121,36 @@
   ],
   "notes": "Fixed logical batch; never expand this list. Claims are created and published one item at a time immediately before processing.",
   "last_window": {
-    "started_at": "2026-10-26T17:36:49Z",
-    "ended_at": "2026-10-26T20:53:28Z",
+    "started_at": "2026-10-27T13:08:47Z",
+    "ended_at": "2026-10-27T14:25:44Z",
     "attempted_unique_videos": 1,
-    "transcript_cue_segment_completed": 1,
+    "transcript_cue_segment_completed": 0,
     "four_stage_completed": 0,
     "key_points_completed": 0,
     "failed_or_released_stages": 1,
-    "tail_deferred_videos": 1,
+    "tail_deferred_videos": 0,
     "cooldown_skipped_videos": 0,
-    "source_temporarily_unavailable_videos": 0,
-    "audio_duration_sec": 592.497,
-    "download_elapsed_sec_known": 27.338,
+    "source_temporarily_unavailable_videos": 1,
+    "audio_duration_sec": 0,
+    "download_elapsed_sec_known": 186.0,
     "download_elapsed_unavailable_for": [],
-    "pure_asr_inference_sec_known": 0.669,
-    "pure_asr_inference_unavailable_for": [],
-    "structured_pipeline_elapsed_sec_known": 29.684,
-    "structured_pipeline_elapsed_unavailable_for": [],
-    "asr_job_wall_elapsed_sec": 965.09,
-    "key_points_attempt_wall_elapsed_sec": 2095.08,
-    "window_elapsed_sec": 11799,
-    "known_inference_rtf": 0.001129,
-    "known_inference_realtime_multiple": 885.646,
-    "published_commits": 11,
-    "quality_failures": {
-      "key_points_incomplete_segment_coverage_parse_errors": 1
-    },
-    "completed_three_stage_live_ids": [
-      "LIVE_20220924_001"
+    "pure_asr_inference_sec_known": 0,
+    "pure_asr_inference_unavailable_for": [
+      "LIVE_20221104_001"
     ],
-    "released_key_points_live_ids": [
-      "LIVE_20220924_001"
+    "structured_pipeline_elapsed_sec_known": 186.0,
+    "structured_pipeline_elapsed_unavailable_for": [],
+    "asr_job_wall_elapsed_sec": 186.0,
+    "key_points_attempt_wall_elapsed_sec": 0,
+    "window_elapsed_sec": 4617,
+    "known_inference_rtf": null,
+    "known_inference_realtime_multiple": null,
+    "published_commits": 2,
+    "quality_failures": {},
+    "completed_three_stage_live_ids": [],
+    "released_key_points_live_ids": [],
+    "source_temporarily_unavailable_live_ids": [
+      "LIVE_20221104_001"
     ],
     "next_live_id": "LIVE_20221104_001"
   }

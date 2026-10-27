@@ -3,7 +3,7 @@
   "agent_id": "codex-local-asr-agent50-20261026",
   "claimed_at": "2026-10-27T13:08:41.606456+00:00",
   "base_commit": "4dfabe609645d699fb03173e7b345803823d0060",
-  "status": "in_progress",
+  "status": "released",
   "workflow_mode": "continuous-worker-v2",
   "claim_protocol": "claim-protocol-v2",
   "entry_mode": "work",
@@ -22,5 +22,7 @@
   ],
   "scope": "Import source transcript or ASR text without overwriting original text.",
   "reclaimed_expired_claim": true,
-  "static_claim_lease_hours": 24
+  "static_claim_lease_hours": 24,
+  "released_at": "2026-10-27T14:25:38.684076+00:00",
+  "release_reason": "retryable source extraction stall: second check reached 1048576-byte partial OGG then stopped for over two minutes; no decode or inference occurred; not counted as checkpoint resume failure and media not marked missing"
 }
