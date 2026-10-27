@@ -1,0 +1,984 @@
+{
+  "chunk_audio_sha256": "66ace7031f64dc2ef85187f3692750755f8ae6b4fca20a9d8b40eb48b84b5766",
+  "chunk_index": 0,
+  "completed_at": "2026-10-27T03:50:10Z",
+  "language": "zh",
+  "live_id": "LIVE_20220610_001",
+  "media_committed_to_git": false,
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "offset_sec": 0,
+  "paid_api_used": false,
+  "processing_location": "github-hosted-macos-arm64",
+  "schema_version": "cloud-asr-chunk-v1",
+  "segments": [
+    {
+      "avg_logprob": -0.094046,
+      "compression_ratio": 0.851351,
+      "end": 29.98,
+      "no_speech_prob": 0.0,
+      "start": 0.0,
+      "text": "请不吝点赞 订阅 转发 打赏支持明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.144439,
+      "compression_ratio": 1.543307,
+      "end": 48.0,
+      "no_speech_prob": 0.0,
+      "start": 30.0,
+      "text": "Welcome to China in Focus. I'm Tiffany Meyer. It's been 33 years since the Chinese Communist Party deployed its army and slaughtered students protesting for a better China. This year, the slogan, It's my duty and a bike have become icons used to commemorate the event. Let's take a look."
+    },
+    {
+      "avg_logprob": -0.144439,
+      "compression_ratio": 1.543307,
+      "end": 56.28,
+      "no_speech_prob": 0.0,
+      "start": 50.0,
+      "text": "Saturday marked a busy day for Chinese internet censors, the 33rd anniversary of the Tiananmen massacre."
+    },
+    {
+      "avg_logprob": -0.099102,
+      "compression_ratio": 1.463636,
+      "end": 72.34,
+      "no_speech_prob": 0.0,
+      "start": 60.0,
+      "text": "On the night of June 4, 1989, Chinese troops opened fire to end the student-led anti-corruption and democracy protests. It happened in and around Tiananmen Square, the center of Beijing."
+    },
+    {
+      "avg_logprob": -0.099102,
+      "compression_ratio": 1.463636,
+      "end": 80.42,
+      "no_speech_prob": 0.0,
+      "start": 73.0,
+      "text": "China has never provided a full death toll for the event, but rights groups and witnesses say the figures could run into the thousands."
+    },
+    {
+      "avg_logprob": -0.073536,
+      "compression_ratio": 1.570048,
+      "end": 92.9,
+      "no_speech_prob": 0.0,
+      "start": 80.42,
+      "text": "On its anniversary this past Saturday, anything referencing the incident appeared to get blocked on Chinese social media. Any post giving the slightest hint or mention of the day also got instantly deleted."
+    },
+    {
+      "avg_logprob": -0.073536,
+      "compression_ratio": 1.570048,
+      "end": 100.42,
+      "no_speech_prob": 0.0,
+      "start": 93.46,
+      "text": "Days before the anniversary, many platforms in China blocked users from changing their usernames and profile pictures."
+    },
+    {
+      "avg_logprob": -0.17528,
+      "compression_ratio": 1.40884,
+      "end": 111.42,
+      "no_speech_prob": 0.0,
+      "start": 100.42,
+      "text": "And on the eve of the anniversary, reports say many users still tried to avoid authorities' censorship to commemorate the day. Some started sharing the slogan, It's my duty, online."
+    },
+    {
+      "avg_logprob": -0.17528,
+      "compression_ratio": 1.40884,
+      "end": 118.42,
+      "no_speech_prob": 0.0,
+      "start": 111.42,
+      "text": "We're going to march to Tiananmen Square. Why? Why do you think? My duty."
+    },
+    {
+      "avg_logprob": -0.117369,
+      "compression_ratio": 1.465587,
+      "end": 128.98,
+      "no_speech_prob": 0.0,
+      "start": 118.42,
+      "text": "That phrase came from an anonymous student who participated in the protests 33 years ago. That's how he responded to being asked why he planned to march at Tiananmen Square."
+    },
+    {
+      "avg_logprob": -0.117369,
+      "compression_ratio": 1.465587,
+      "end": 134.44,
+      "no_speech_prob": 0.0,
+      "start": 129.42,
+      "text": "He was riding a bike at the time. A BBC documentary captured the dialogue."
+    },
+    {
+      "avg_logprob": -0.117369,
+      "compression_ratio": 1.465587,
+      "end": 142.56,
+      "no_speech_prob": 0.0,
+      "start": 135.2,
+      "text": "Now, some users on Chinese social media platform Weibo have started sharing those words, alongside bicycle icons."
+    },
+    {
+      "avg_logprob": -0.155788,
+      "compression_ratio": 1.605809,
+      "end": 151.06,
+      "no_speech_prob": 0.0,
+      "start": 142.56,
+      "text": "One post garnered over a hundred bike icons and a number of reposts. But Beijing's censorship organs seemed to react quickly."
+    },
+    {
+      "avg_logprob": -0.155788,
+      "compression_ratio": 1.605809,
+      "end": 161.56,
+      "no_speech_prob": 0.0,
+      "start": 151.56,
+      "text": "Posts related to the slogan, It's my duty, started vanishing from social media. Even those including just the word duty. That was on the eve of the anniversary."
+    },
+    {
+      "avg_logprob": -0.155788,
+      "compression_ratio": 1.605809,
+      "end": 168.5,
+      "no_speech_prob": 0.0,
+      "start": 161.56,
+      "text": "Beijing's censorship machine acted quickly, and almost all related online posts disappeared by dawn."
+    },
+    {
+      "avg_logprob": -0.148101,
+      "compression_ratio": 1.502732,
+      "end": 179.5,
+      "no_speech_prob": 0.0,
+      "start": 168.5,
+      "text": "Liu Lipeng worked as a Weibo censor in China. He said in previous years, hundreds or thousands of keywords were usually censored during the June 4th anniversary."
+    },
+    {
+      "avg_logprob": -0.148101,
+      "compression_ratio": 1.502732,
+      "end": 185.5,
+      "no_speech_prob": 0.0,
+      "start": 179.5,
+      "text": "And noted that there were as many as hundreds of thousands of keyword combinations on the social media blacklist."
+    },
+    {
+      "avg_logprob": -0.181946,
+      "compression_ratio": 1.402715,
+      "end": 195.06,
+      "no_speech_prob": 0.0,
+      "start": 185.5,
+      "text": "The victims of communism Memorial Foundation opened its 1989 Tiananmen Square exhibit on Friday for the anniversary of the massacre."
+    },
+    {
+      "avg_logprob": -0.181946,
+      "compression_ratio": 1.402715,
+      "end": 198.34,
+      "no_speech_prob": 0.0,
+      "start": 195.5,
+      "text": "NTD's Melina Weiskup brings us the story."
+    },
+    {
+      "avg_logprob": -0.181946,
+      "compression_ratio": 1.402715,
+      "end": 208.24,
+      "no_speech_prob": 0.0,
+      "start": 199.5,
+      "text": "Artifacts include students' tents, letters from jailed democracy activists, and a painting of the youngest victim, only nine years old."
+    },
+    {
+      "avg_logprob": -0.066311,
+      "compression_ratio": 1.698039,
+      "end": 221.24,
+      "no_speech_prob": 0.0,
+      "start": 208.24,
+      "text": "A spokesperson told us that most Americans don't know that the Chinese communist regime crushed student protesters in 1989 for demanding human rights and basic freedoms."
+    },
+    {
+      "avg_logprob": -0.066311,
+      "compression_ratio": 1.698039,
+      "end": 227.24,
+      "no_speech_prob": 0.0,
+      "start": 221.24,
+      "text": "The disproportionate and unbelievable and violent response that they were met with from the Chinese government,"
+    },
+    {
+      "avg_logprob": -0.066311,
+      "compression_ratio": 1.698039,
+      "end": 237.24,
+      "no_speech_prob": 0.0,
+      "start": 227.24,
+      "text": "which was that thousands of tanks came out onto the streets of Tiananmen and crushed these students in their demands that they were making for freedom."
+    },
+    {
+      "avg_logprob": -0.078839,
+      "compression_ratio": 1.535055,
+      "end": 242.24,
+      "no_speech_prob": 0.0,
+      "start": 237.24,
+      "text": "She says that many Americans, millennials in particular, do not understand communism."
+    },
+    {
+      "avg_logprob": -0.078839,
+      "compression_ratio": 1.535055,
+      "end": 248.24,
+      "no_speech_prob": 0.0,
+      "start": 242.24,
+      "text": "In a poll conducted by her organization, about one-third preferred to live in a socialist system."
+    },
+    {
+      "avg_logprob": -0.078839,
+      "compression_ratio": 1.535055,
+      "end": 256.24,
+      "no_speech_prob": 0.0,
+      "start": 248.24,
+      "text": "About half did not know that Mao Zedong was responsible for tens of millions of deaths through famine."
+    },
+    {
+      "avg_logprob": -0.078839,
+      "compression_ratio": 1.535055,
+      "end": 259.24,
+      "no_speech_prob": 0.0,
+      "start": 256.24,
+      "text": "The Tiananmen massacre is a censored topic in China."
+    },
+    {
+      "avg_logprob": -0.078839,
+      "compression_ratio": 1.535055,
+      "end": 264.24,
+      "no_speech_prob": 0.0,
+      "start": 259.24,
+      "text": "Mothers of Tiananmen collected photos of about 200 students who were killed,"
+    },
+    {
+      "avg_logprob": -0.092,
+      "compression_ratio": 1.462264,
+      "end": 268.24,
+      "no_speech_prob": 0.0,
+      "start": 264.24,
+      "text": "but the real number of deaths is believed to be in the thousands."
+    },
+    {
+      "avg_logprob": -0.092,
+      "compression_ratio": 1.462264,
+      "end": 277.24,
+      "no_speech_prob": 0.0,
+      "start": 268.24,
+      "text": "I think an important message is that people can't take freedom for granted and to know about the brave struggle of those who have fought for it."
+    },
+    {
+      "avg_logprob": -0.092,
+      "compression_ratio": 1.462264,
+      "end": 284.24,
+      "no_speech_prob": 0.0,
+      "start": 277.24,
+      "text": "The Victims of Communism Museum memorializes over 100 million people murdered by communist regimes."
+    },
+    {
+      "avg_logprob": -0.070642,
+      "compression_ratio": 1.379487,
+      "end": 299.24,
+      "no_speech_prob": 0.0,
+      "start": 284.24,
+      "text": "China's ride-hailing giant Didi Chuxing will say goodbye to the U.S. stock market in June, just one year after its public debut on Wall Street."
+    },
+    {
+      "avg_logprob": -0.070642,
+      "compression_ratio": 1.379487,
+      "end": 307.24,
+      "no_speech_prob": 0.0,
+      "start": 299.24,
+      "text": "According to Apollo News, Didi announced that it officially applied to the U.S. Securities and Exchange Commission on June 2."
+    },
+    {
+      "avg_logprob": -0.036891,
+      "compression_ratio": 1.506977,
+      "end": 311.24,
+      "no_speech_prob": 0.0,
+      "start": 307.24,
+      "text": "Ten days later, the company would delist its shares on the New York Stock Exchange."
+    },
+    {
+      "avg_logprob": -0.036891,
+      "compression_ratio": 1.506977,
+      "end": 317.24,
+      "no_speech_prob": 0.0,
+      "start": 311.24,
+      "text": "Didi's announcement comes after it held an extraordinary shareholders meeting on May 23."
+    },
+    {
+      "avg_logprob": -0.036891,
+      "compression_ratio": 1.506977,
+      "end": 323.24,
+      "no_speech_prob": 0.0,
+      "start": 317.24,
+      "text": "At the meeting, 96% of its stakeholders voted in favor of delisting from the U.S."
+    },
+    {
+      "avg_logprob": -0.036891,
+      "compression_ratio": 1.506977,
+      "end": 327.24,
+      "no_speech_prob": 0.0,
+      "start": 323.24,
+      "text": "Didi then submitted the delisting application to the U.S. regulators."
+    },
+    {
+      "avg_logprob": -0.022965,
+      "compression_ratio": 1.465021,
+      "end": 340.24,
+      "no_speech_prob": 0.0,
+      "start": 327.24,
+      "text": "Didi made its debut on the New York Stock Exchange on June 30, 2021, marking the biggest IPO of a Chinese company on an American exchange since Alibaba's listing in 2014."
+    },
+    {
+      "avg_logprob": -0.022965,
+      "compression_ratio": 1.465021,
+      "end": 352.24,
+      "no_speech_prob": 0.0,
+      "start": 340.24,
+      "text": "Didi insisted on listing in the U.S. market on the eve of the 100th anniversary of the Chinese Communist Party, which took place on July 1, regardless of official doubts and objections."
+    },
+    {
+      "avg_logprob": -0.038861,
+      "compression_ratio": 1.571429,
+      "end": 359.24,
+      "no_speech_prob": 0.0,
+      "start": 352.24,
+      "text": "Its listing angered the top officials of the communist regime, who were worried about national security and public interest."
+    },
+    {
+      "avg_logprob": -0.038861,
+      "compression_ratio": 1.571429,
+      "end": 369.24,
+      "no_speech_prob": 0.0,
+      "start": 359.24,
+      "text": "Soon after its IPO, the Chinese authorities decided to launch a probe into Didi for allegedly violating its data privacy and national security laws."
+    },
+    {
+      "avg_logprob": -0.038861,
+      "compression_ratio": 1.571429,
+      "end": 375.24,
+      "no_speech_prob": 0.0,
+      "start": 369.24,
+      "text": "The government agencies raided Didi offices for a cybersecurity review a few weeks later."
+    },
+    {
+      "avg_logprob": -0.062847,
+      "compression_ratio": 1.514768,
+      "end": 383.24,
+      "no_speech_prob": 0.0,
+      "start": 375.24,
+      "text": "Last year, the Cyberspace Administration of China also ordered app stores to remove 25 apps operated by Didi Chuxing."
+    },
+    {
+      "avg_logprob": -0.062847,
+      "compression_ratio": 1.514768,
+      "end": 387.24,
+      "no_speech_prob": 0.0,
+      "start": 383.24,
+      "text": "The authorities demanded Didi stop registering new users."
+    },
+    {
+      "avg_logprob": -0.062847,
+      "compression_ratio": 1.514768,
+      "end": 399.24,
+      "no_speech_prob": 0.0,
+      "start": 387.24,
+      "text": "The move was part of the regulators' 2021 broader crackdown on technology giants and Internet giants, who have amassed troves of confidential data that authorities consider sensitive."
+    },
+    {
+      "avg_logprob": -0.063721,
+      "compression_ratio": 1.600823,
+      "end": 405.24,
+      "no_speech_prob": 0.0,
+      "start": 399.24,
+      "text": "As the Wall Street Journal reported on June 6, China is preparing to conclude the probe into Didi."
+    },
+    {
+      "avg_logprob": -0.063721,
+      "compression_ratio": 1.600823,
+      "end": 413.24,
+      "no_speech_prob": 0.0,
+      "start": 405.24,
+      "text": "The journal citing sources said that the authorities plan to allow Didi mobile apps back on domestic app stores as early as this week."
+    },
+    {
+      "avg_logprob": -0.063721,
+      "compression_ratio": 1.600823,
+      "end": 425.24,
+      "no_speech_prob": 0.0,
+      "start": 413.24,
+      "text": "Besides Didi, the regulators also plan to allow logistics platform Manbang Group and workplace information platform Kanjuan.com to relist their app stores."
+    },
+    {
+      "avg_logprob": -0.092785,
+      "compression_ratio": 1.539924,
+      "end": 432.24,
+      "no_speech_prob": 0.0,
+      "start": 425.24,
+      "text": "These steps are the latest sign that China wants to spur economic activity, including from the country's beleaguered tech giants."
+    },
+    {
+      "avg_logprob": -0.092785,
+      "compression_ratio": 1.539924,
+      "end": 440.24,
+      "no_speech_prob": 0.0,
+      "start": 432.24,
+      "text": "We begin this broadcast with a news alert coming in."
+    },
+    {
+      "avg_logprob": -0.092785,
+      "compression_ratio": 1.539924,
+      "end": 447.24,
+      "no_speech_prob": 0.0,
+      "start": 440.24,
+      "text": "A Chinese military plane has crashed in a residential area in central China, killing at least one person and injuring two others."
+    },
+    {
+      "avg_logprob": -0.092785,
+      "compression_ratio": 1.539924,
+      "end": 449.24,
+      "no_speech_prob": 0.0,
+      "start": 447.24,
+      "text": "Some more details coming in."
+    },
+    {
+      "avg_logprob": -0.092785,
+      "compression_ratio": 1.539924,
+      "end": 452.24,
+      "no_speech_prob": 0.0,
+      "start": 449.24,
+      "text": "The plane was a People's Liberation Army Air Force J7 aircraft."
+    },
+    {
+      "avg_logprob": -0.078427,
+      "compression_ratio": 1.497382,
+      "end": 456.24,
+      "no_speech_prob": 0.0,
+      "start": 452.24,
+      "text": "It was on a training mission in Hubei province when it crashed."
+    },
+    {
+      "avg_logprob": -0.078427,
+      "compression_ratio": 1.497382,
+      "end": 461.24,
+      "no_speech_prob": 0.0,
+      "start": 456.24,
+      "text": "The pilot managed to eject out safely, but the crash has damaged several houses."
+    },
+    {
+      "avg_logprob": -0.078427,
+      "compression_ratio": 1.497382,
+      "end": 465.24,
+      "no_speech_prob": 0.0,
+      "start": 461.24,
+      "text": "Both the pilot and injured civilians were sent to hospitals."
+    },
+    {
+      "avg_logprob": -0.078427,
+      "compression_ratio": 1.497382,
+      "end": 472.24,
+      "no_speech_prob": 0.0,
+      "start": 465.24,
+      "text": "Several videos circulating on social media showing houses on fire in the region."
+    },
+    {
+      "avg_logprob": -0.08361,
+      "compression_ratio": 1.393617,
+      "end": 481.24,
+      "no_speech_prob": 0.0,
+      "start": 472.24,
+      "text": "The cause of the crash and related casualties is under investigation as of now, with emergency response teams underway."
+    },
+    {
+      "avg_logprob": -0.08361,
+      "compression_ratio": 1.393617,
+      "end": 489.24,
+      "no_speech_prob": 0.0,
+      "start": 481.24,
+      "text": "In March this year, a civil aircraft crashed in the southern province of Guangxi, killing 132 people in China's worst air disaster in decades."
+    },
+    {
+      "avg_logprob": -0.149464,
+      "compression_ratio": 1.40884,
+      "end": 493.24,
+      "no_speech_prob": 0.0,
+      "start": 489.24,
+      "text": "China's civil aviation authority did not immediately find any reason for that incident."
+    },
+    {
+      "avg_logprob": -0.149464,
+      "compression_ratio": 1.40884,
+      "end": 504.24,
+      "no_speech_prob": 0.0,
+      "start": 493.24,
+      "text": "They have said that the investigation is ongoing, but reports say that US investigators believe someone on board crashed the American-made Boeing 737-800 deliberately."
+    },
+    {
+      "avg_logprob": -0.259,
+      "compression_ratio": 1.211111,
+      "end": 511.24,
+      "no_speech_prob": 0.0,
+      "start": 504.24,
+      "text": "This is a developing story and we will continue to track all updates and get them to you as soon as possible."
+    },
+    {
+      "avg_logprob": -0.0996,
+      "compression_ratio": 1.309524,
+      "end": 524.24,
+      "no_speech_prob": 0.0,
+      "start": 511.24,
+      "text": "The United States has approved the sale of ship parts to Taiwan worth $120 million."
+    },
+    {
+      "avg_logprob": -0.0996,
+      "compression_ratio": 1.309524,
+      "end": 529.24,
+      "no_speech_prob": 0.0,
+      "start": 524.24,
+      "text": "The step comes amid rising threats of a Chinese invasion of the island of Taiwan."
+    },
+    {
+      "avg_logprob": -0.064318,
+      "compression_ratio": 1.666667,
+      "end": 538.24,
+      "no_speech_prob": 0.0,
+      "start": 529.24,
+      "text": "Taiwan's defence ministry says that the step could ensure combat readiness in the face of China's frequent activities near the island."
+    },
+    {
+      "avg_logprob": -0.064318,
+      "compression_ratio": 1.666667,
+      "end": 542.24,
+      "no_speech_prob": 0.0,
+      "start": 538.24,
+      "text": "The US defence security cooperation agency issued a statement."
+    },
+    {
+      "avg_logprob": -0.064318,
+      "compression_ratio": 1.666667,
+      "end": 549.24,
+      "no_speech_prob": 0.0,
+      "start": 542.24,
+      "text": "It said that the sale covered unclassified spare and repair parts for ships and ship systems."
+    },
+    {
+      "avg_logprob": -0.064318,
+      "compression_ratio": 1.666667,
+      "end": 553.24,
+      "no_speech_prob": 0.0,
+      "start": 549.24,
+      "text": "It also includes logistical and technical assistance."
+    },
+    {
+      "avg_logprob": -0.064318,
+      "compression_ratio": 1.666667,
+      "end": 558.24,
+      "no_speech_prob": 0.0,
+      "start": 553.24,
+      "text": "The US says that the proposed sale will contribute to Taiwan's surface vessel fleet."
+    },
+    {
+      "avg_logprob": -0.053742,
+      "compression_ratio": 1.615942,
+      "end": 563.24,
+      "no_speech_prob": 0.0,
+      "start": 558.24,
+      "text": "It will also enhance its ability to meet current and future threats."
+    },
+    {
+      "avg_logprob": -0.053742,
+      "compression_ratio": 1.615942,
+      "end": 569.24,
+      "no_speech_prob": 0.0,
+      "start": 563.24,
+      "text": "According to Taiwan's defence ministry, the deal is expected to come into effect within one month."
+    },
+    {
+      "avg_logprob": -0.053742,
+      "compression_ratio": 1.615942,
+      "end": 575.24,
+      "no_speech_prob": 0.0,
+      "start": 569.24,
+      "text": "Neither of the two sides have given details of what kind of parts Taiwan will be receiving."
+    },
+    {
+      "avg_logprob": -0.053742,
+      "compression_ratio": 1.615942,
+      "end": 580.24,
+      "no_speech_prob": 0.0,
+      "start": 575.24,
+      "text": "Most of Taiwan's main warships have been designed and made in the United States."
+    },
+    {
+      "avg_logprob": -0.053742,
+      "compression_ratio": 1.615942,
+      "end": 587.24,
+      "no_speech_prob": 0.0,
+      "start": 580.24,
+      "text": "Taiwan has time and again complained of repeated missions by China's air force into its air defence zone."
+    },
+    {
+      "avg_logprob": -0.218109,
+      "compression_ratio": 0.945946,
+      "end": 593.24,
+      "no_speech_prob": 0.0,
+      "start": 588.24,
+      "text": "China's navy has also been conducting regular missions near to Taiwan."
+    },
+    {
+      "avg_logprob": -0.167761,
+      "compression_ratio": 1.302326,
+      "end": 606.24,
+      "no_speech_prob": 0.0,
+      "start": 593.24,
+      "text": "Elon Musk threatening to pull out of the Twitter deal over this."
+    },
+    {
+      "avg_logprob": -0.167761,
+      "compression_ratio": 1.302326,
+      "end": 610.24,
+      "no_speech_prob": 0.0,
+      "start": 606.24,
+      "text": "The billionaire claiming the company is refusing to provide information on the number of fake accounts."
+    },
+    {
+      "avg_logprob": -0.082171,
+      "compression_ratio": 1.751111,
+      "end": 613.24,
+      "no_speech_prob": 0.0,
+      "start": 610.24,
+      "text": "A letter sent to Twitter yesterday from his lawyer reads in part, quote,"
+    },
+    {
+      "avg_logprob": -0.082171,
+      "compression_ratio": 1.751111,
+      "end": 618.24,
+      "no_speech_prob": 0.0,
+      "start": 613.24,
+      "text": "Mr. Musk believes the company is actively resisting and thwarting his information rights."
+    },
+    {
+      "avg_logprob": -0.082171,
+      "compression_ratio": 1.751111,
+      "end": 623.24,
+      "no_speech_prob": 0.0,
+      "start": 618.24,
+      "text": "He reserves all rights resulting therefrom, including his right not to consummate the transaction."
+    },
+    {
+      "avg_logprob": -0.082171,
+      "compression_ratio": 1.751111,
+      "end": 630.24,
+      "no_speech_prob": 0.0,
+      "start": 623.24,
+      "text": "However, Twitter says that it has and will continue to cooperatively share information with Mr. Musk and consummate the transaction."
+    },
+    {
+      "avg_logprob": -0.065087,
+      "compression_ratio": 1.578059,
+      "end": 637.24,
+      "no_speech_prob": 0.0,
+      "start": 630.24,
+      "text": "We intend to close the transaction and enforce the merger agreement at the agreed upon price and terms."
+    },
+    {
+      "avg_logprob": -0.065087,
+      "compression_ratio": 1.578059,
+      "end": 642.24,
+      "no_speech_prob": 0.0,
+      "start": 637.24,
+      "text": "Kara Frederick is a research fellow for technology policy at the Heritage Foundation."
+    },
+    {
+      "avg_logprob": -0.065087,
+      "compression_ratio": 1.578059,
+      "end": 645.24,
+      "no_speech_prob": 0.0,
+      "start": 642.24,
+      "text": "Former Facebook intelligence analyst joins us now."
+    },
+    {
+      "avg_logprob": -0.065087,
+      "compression_ratio": 1.578059,
+      "end": 648.24,
+      "no_speech_prob": 0.0,
+      "start": 645.24,
+      "text": "Kara, what does all of this mean and what does it mean for the deal?"
+    },
+    {
+      "avg_logprob": -0.065087,
+      "compression_ratio": 1.578059,
+      "end": 649.24,
+      "no_speech_prob": 0.0,
+      "start": 648.24,
+      "text": "Is it going to close?"
+    },
+    {
+      "avg_logprob": -0.065087,
+      "compression_ratio": 1.578059,
+      "end": 653.24,
+      "no_speech_prob": 0.0,
+      "start": 649.24,
+      "text": "You know, Carly, I'm of two minds on this."
+    },
+    {
+      "avg_logprob": -0.05601,
+      "compression_ratio": 1.800797,
+      "end": 662.24,
+      "no_speech_prob": 0.0,
+      "start": 653.24,
+      "text": "I think Elon Musk, he could be setting himself up to walk away or second thought, he could be setting himself up for more advantageous terms."
+    },
+    {
+      "avg_logprob": -0.05601,
+      "compression_ratio": 1.800797,
+      "end": 671.24,
+      "no_speech_prob": 0.0,
+      "start": 662.24,
+      "text": "You know, in my estimation, you don't become the richest man in the world without doing your due diligence, without, you know, not just giving your money away."
+    },
+    {
+      "avg_logprob": -0.05601,
+      "compression_ratio": 1.800797,
+      "end": 675.24,
+      "no_speech_prob": 0.0,
+      "start": 671.24,
+      "text": "So he's trying to figure out what exactly he's getting for his money."
+    },
+    {
+      "avg_logprob": -0.05601,
+      "compression_ratio": 1.800797,
+      "end": 680.24,
+      "no_speech_prob": 0.0,
+      "start": 675.24,
+      "text": "So, you know, he could be, again, setting himself up to get a discount, frankly."
+    },
+    {
+      "avg_logprob": -0.058157,
+      "compression_ratio": 1.697819,
+      "end": 683.24,
+      "no_speech_prob": 0.0,
+      "start": 680.24,
+      "text": "And the deal, it looks a bit squishy at this point."
+    },
+    {
+      "avg_logprob": -0.058157,
+      "compression_ratio": 1.697819,
+      "end": 693.24,
+      "no_speech_prob": 0.0,
+      "start": 683.24,
+      "text": "I am worried that it, as the lawyers say, not going to be consummated, because if you look at what it took to get to this point initially, the board, it swallowed a poison pill."
+    },
+    {
+      "avg_logprob": -0.058157,
+      "compression_ratio": 1.697819,
+      "end": 701.24,
+      "no_speech_prob": 0.0,
+      "start": 693.24,
+      "text": "They had to be dragged kicking and screaming to do the right thing under the threat of lawsuits for not doing their fiduciary duty by their shareholders."
+    },
+    {
+      "avg_logprob": -0.058157,
+      "compression_ratio": 1.697819,
+      "end": 706.24,
+      "no_speech_prob": 0.0,
+      "start": 701.24,
+      "text": "So in my estimation, I'm a little worried about this deal actually going through."
+    },
+    {
+      "avg_logprob": -0.058157,
+      "compression_ratio": 1.697819,
+      "end": 708.24,
+      "no_speech_prob": 0.0,
+      "start": 706.24,
+      "text": "We view this all through Musk's perspective."
+    },
+    {
+      "avg_logprob": -0.058157,
+      "compression_ratio": 1.697819,
+      "end": 709.24,
+      "no_speech_prob": 0.0,
+      "start": 708.24,
+      "text": "I want to look at it from Twitter."
+    },
+    {
+      "avg_logprob": -0.065245,
+      "compression_ratio": 1.438889,
+      "end": 716.24,
+      "no_speech_prob": 0.0,
+      "start": 709.24,
+      "text": "If Twitter is not trying to hide something, then why not just hand over the number of bots and be done with it?"
+    },
+    {
+      "avg_logprob": -0.065245,
+      "compression_ratio": 1.438889,
+      "end": 718.24,
+      "no_speech_prob": 0.0,
+      "start": 716.24,
+      "text": "That's a good question."
+    },
+    {
+      "avg_logprob": -0.065245,
+      "compression_ratio": 1.438889,
+      "end": 725.24,
+      "no_speech_prob": 0.0,
+      "start": 718.24,
+      "text": "And I think it really speaks to the fact that these companies, they shroud themselves in claims of proprietary information."
+    },
+    {
+      "avg_logprob": -0.063801,
+      "compression_ratio": 1.515528,
+      "end": 734.24,
+      "no_speech_prob": 0.0,
+      "start": 725.24,
+      "text": "There's a black box when it comes to a lot of the things that they do, like their algorithmic impacts and practices and how these algorithms work."
+    },
+    {
+      "avg_logprob": -0.063801,
+      "compression_ratio": 1.515528,
+      "end": 740.24,
+      "no_speech_prob": 0.0,
+      "start": 734.24,
+      "text": "So it just, it really speaks to the broader nature of these companies and how secretive they are."
+    },
+    {
+      "avg_logprob": -0.136584,
+      "compression_ratio": 1.335616,
+      "end": 749.24,
+      "no_speech_prob": 0.0,
+      "start": 740.24,
+      "text": "that Agrawal, the CEO basically said, we can't reveal how many bots there are because that would necessitate publishing private information."
+    },
+    {
+      "avg_logprob": -0.136584,
+      "compression_ratio": 1.335616,
+      "end": 751.24,
+      "no_speech_prob": 0.0,
+      "start": 749.24,
+      "text": "And we absolutely can't do that."
+    },
+    {
+      "avg_logprob": -0.136584,
+      "compression_ratio": 1.335616,
+      "end": 752.24,
+      "no_speech_prob": 0.0,
+      "start": 751.24,
+      "text": "Why can't they do it?"
+    },
+    {
+      "avg_logprob": -0.228973,
+      "compression_ratio": 1.345794,
+      "end": 753.24,
+      "no_speech_prob": 0.0,
+      "start": 752.24,
+      "text": "that transparency was supposed to be a thing."
+    },
+    {
+      "avg_logprob": -0.228973,
+      "compression_ratio": 1.345794,
+      "end": 759.24,
+      "no_speech_prob": 0.0,
+      "start": 753.24,
+      "text": "It speaks to the fact that these companies need to be more transparent in general overall, period."
+    },
+    {
+      "avg_logprob": -3.723248,
+      "compression_ratio": 1.283688,
+      "end": 768.24,
+      "no_speech_prob": 0.0,
+      "start": 759.24,
+      "text": "Like what if they take care of their bodies and set them up in general in general the models of actors and�리協会 where they need to rest and manage their educational machines?"
+    },
+    {
+      "avg_logprob": -0.192134,
+      "compression_ratio": 1.171429,
+      "end": 770.24,
+      "no_speech_prob": 0.0,
+      "start": 768.24,
+      "text": "都要先在这边下班"
+    },
+    {
+      "avg_logprob": -0.192134,
+      "compression_ratio": 1.171429,
+      "end": 772.24,
+      "no_speech_prob": 0.0,
+      "start": 770.24,
+      "text": "都要先做核酸"
+    },
+    {
+      "avg_logprob": -0.192134,
+      "compression_ratio": 1.171429,
+      "end": 775.24,
+      "no_speech_prob": 0.0,
+      "start": 772.24,
+      "text": "不做完核酸不能走出这鞋子楼"
+    },
+    {
+      "avg_logprob": -0.192134,
+      "compression_ratio": 1.171429,
+      "end": 778.24,
+      "no_speech_prob": 0.0,
+      "start": 775.24,
+      "text": "排队从这个鞋子楼里面排到外面"
+    },
+    {
+      "avg_logprob": -0.204718,
+      "compression_ratio": 0.851351,
+      "end": 828.22,
+      "no_speech_prob": 0.0,
+      "start": 798.24,
+      "text": "请不吝点赞 订阅 转发 打赏支持明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.618086,
+      "compression_ratio": 0.578947,
+      "end": 858.22,
+      "no_speech_prob": 0.0,
+      "start": 828.24,
+      "text": "Zither Harp"
+    },
+    {
+      "avg_logprob": -0.50898,
+      "compression_ratio": 0.981481,
+      "end": 864.24,
+      "no_speech_prob": 0.0,
+      "start": 858.24,
+      "text": "Zither Harp"
+    },
+    {
+      "avg_logprob": -0.50898,
+      "compression_ratio": 0.981481,
+      "end": 868.24,
+      "no_speech_prob": 0.0,
+      "start": 864.24,
+      "text": "Zither Harp"
+    },
+    {
+      "avg_logprob": -0.50898,
+      "compression_ratio": 0.981481,
+      "end": 877.24,
+      "no_speech_prob": 0.0,
+      "start": 868.24,
+      "text": "我奔花一朵 为快遍山中"
+    },
+    {
+      "avg_logprob": -0.446269,
+      "compression_ratio": 0.914286,
+      "end": 883.24,
+      "no_speech_prob": 0.0,
+      "start": 877.24,
+      "text": "从此亲人永相隔"
+    },
+    {
+      "avg_logprob": -0.446269,
+      "compression_ratio": 0.914286,
+      "end": 890.24,
+      "no_speech_prob": 0.0,
+      "start": 883.24,
+      "text": "就近二十年我收尽了折磨"
+    },
+    {
+      "avg_logprob": -0.446269,
+      "compression_ratio": 0.914286,
+      "end": 895.24,
+      "no_speech_prob": 0.0,
+      "start": 890.24,
+      "text": "这个世界不要我"
+    },
+    {
+      "avg_logprob": -0.446269,
+      "compression_ratio": 0.914286,
+      "end": 900.0,
+      "no_speech_prob": 0.0,
+      "start": 895.24,
+      "text": "请来吧别太拥挤"
+    }
+  ],
+  "text": "请不吝点赞 订阅 转发 打赏支持明镜与点点栏目 Welcome to China in Focus. I'm Tiffany Meyer. It's been 33 years since the Chinese Communist Party deployed its army and slaughtered students protesting for a better China. This year, the slogan, It's my duty and a bike have become icons used to commemorate the event. Let's take a look. Saturday marked a busy day for Chinese internet censors, the 33rd anniversary of the Tiananmen massacre. On the night of June 4, 1989, Chinese troops opened fire to end the student-led anti-corruption and democracy protests. It happened in and around Tiananmen Square, the center of Beijing. China has never provided a full death toll for the event, but rights groups and witnesses say the figures could run into the thousands. On its anniversary this past Saturday, anything referencing the incident appeared to get blocked on Chinese social media. Any post giving the slightest hint or mention of the day also got instantly deleted. Days before the anniversary, many platforms in China blocked users from changing their usernames and profile pictures. And on the eve of the anniversary, reports say many users still tried to avoid authorities' censorship to commemorate the day. Some started sharing the slogan, It's my duty, online. We're going to march to Tiananmen Square. Why? Why do you think? My duty. That phrase came from an anonymous student who participated in the protests 33 years ago. That's how he responded to being asked why he planned to march at Tiananmen Square. He was riding a bike at the time. A BBC documentary captured the dialogue. Now, some users on Chinese social media platform Weibo have started sharing those words, alongside bicycle icons. One post garnered over a hundred bike icons and a number of reposts. But Beijing's censorship organs seemed to react quickly. Posts related to the slogan, It's my duty, started vanishing from social media. Even those including just the word duty. That was on the eve of the anniversary. Beijing's censorship machine acted quickly, and almost all related online posts disappeared by dawn. Liu Lipeng worked as a Weibo censor in China. He said in previous years, hundreds or thousands of keywords were usually censored during the June 4th anniversary. And noted that there were as many as hundreds of thousands of keyword combinations on the social media blacklist. The victims of communism Memorial Foundation opened its 1989 Tiananmen Square exhibit on Friday for the anniversary of the massacre. NTD's Melina Weiskup brings us the story. Artifacts include students' tents, letters from jailed democracy activists, and a painting of the youngest victim, only nine years old. A spokesperson told us that most Americans don't know that the Chinese communist regime crushed student protesters in 1989 for demanding human rights and basic freedoms. The disproportionate and unbelievable and violent response that they were met with from the Chinese government, which was that thousands of tanks came out onto the streets of Tiananmen and crushed these students in their demands that they were making for freedom. She says that many Americans, millennials in particular, do not understand communism. In a poll conducted by her organization, about one-third preferred to live in a socialist system. About half did not know that Mao Zedong was responsible for tens of millions of deaths through famine. The Tiananmen massacre is a censored topic in China. Mothers of Tiananmen collected photos of about 200 students who were killed, but the real number of deaths is believed to be in the thousands. I think an important message is that people can't take freedom for granted and to know about the brave struggle of those who have fought for it. The Victims of Communism Museum memorializes over 100 million people murdered by communist regimes. China's ride-hailing giant Didi Chuxing will say goodbye to the U.S. stock market in June, just one year after its public debut on Wall Street. According to Apollo News, Didi announced that it officially applied to the U.S. Securities and Exchange Commission on June 2. Ten days later, the company would delist its shares on the New York Stock Exchange. Didi's announcement comes after it held an extraordinary shareholders meeting on May 23. At the meeting, 96% of its stakeholders voted in favor of delisting from the U.S. Didi then submitted the delisting application to the U.S. regulators. Didi made its debut on the New York Stock Exchange on June 30, 2021, marking the biggest IPO of a Chinese company on an American exchange since Alibaba's listing in 2014. Didi insisted on listing in the U.S. market on the eve of the 100th anniversary of the Chinese Communist Party, which took place on July 1, regardless of official doubts and objections. Its listing angered the top officials of the communist regime, who were worried about national security and public interest. Soon after its IPO, the Chinese authorities decided to launch a probe into Didi for allegedly violating its data privacy and national security laws. The government agencies raided Didi offices for a cybersecurity review a few weeks later. Last year, the Cyberspace Administration of China also ordered app stores to remove 25 apps operated by Didi Chuxing. The authorities demanded Didi stop registering new users. The move was part of the regulators' 2021 broader crackdown on technology giants and Internet giants, who have amassed troves of confidential data that authorities consider sensitive. As the Wall Street Journal reported on June 6, China is preparing to conclude the probe into Didi. The journal citing sources said that the authorities plan to allow Didi mobile apps back on domestic app stores as early as this week. Besides Didi, the regulators also plan to allow logistics platform Manbang Group and workplace information platform Kanjuan.com to relist their app stores. These steps are the latest sign that China wants to spur economic activity, including from the country's beleaguered tech giants. We begin this broadcast with a news alert coming in. A Chinese military plane has crashed in a residential area in central China, killing at least one person and injuring two others. Some more details coming in. The plane was a People's Liberation Army Air Force J7 aircraft. It was on a training mission in Hubei province when it crashed. The pilot managed to eject out safely, but the crash has damaged several houses. Both the pilot and injured civilians were sent to hospitals. Several videos circulating on social media showing houses on fire in the region. The cause of the crash and related casualties is under investigation as of now, with emergency response teams underway. In March this year, a civil aircraft crashed in the southern province of Guangxi, killing 132 people in China's worst air disaster in decades. China's civil aviation authority did not immediately find any reason for that incident. They have said that the investigation is ongoing, but reports say that US investigators believe someone on board crashed the American-made Boeing 737-800 deliberately. This is a developing story and we will continue to track all updates and get them to you as soon as possible. The United States has approved the sale of ship parts to Taiwan worth $120 million. The step comes amid rising threats of a Chinese invasion of the island of Taiwan. Taiwan's defence ministry says that the step could ensure combat readiness in the face of China's frequent activities near the island. The US defence security cooperation agency issued a statement. It said that the sale covered unclassified spare and repair parts for ships and ship systems. It also includes logistical and technical assistance. The US says that the proposed sale will contribute to Taiwan's surface vessel fleet. It will also enhance its ability to meet current and future threats. According to Taiwan's defence ministry, the deal is expected to come into effect within one month. Neither of the two sides have given details of what kind of parts Taiwan will be receiving. Most of Taiwan's main warships have been designed and made in the United States. Taiwan has time and again complained of repeated missions by China's air force into its air defence zone. China's navy has also been conducting regular missions near to Taiwan. Elon Musk threatening to pull out of the Twitter deal over this. The billionaire claiming the company is refusing to provide information on the number of fake accounts. A letter sent to Twitter yesterday from his lawyer reads in part, quote, Mr. Musk believes the company is actively resisting and thwarting his information rights. He reserves all rights resulting therefrom, including his right not to consummate the transaction. However, Twitter says that it has and will continue to cooperatively share information with Mr. Musk and consummate the transaction. We intend to close the transaction and enforce the merger agreement at the agreed upon price and terms. Kara Frederick is a research fellow for technology policy at the Heritage Foundation. Former Facebook intelligence analyst joins us now. Kara, what does all of this mean and what does it mean for the deal? Is it going to close? You know, Carly, I'm of two minds on this. I think Elon Musk, he could be setting himself up to walk away or second thought, he could be setting himself up for more advantageous terms. You know, in my estimation, you don't become the richest man in the world without doing your due diligence, without, you know, not just giving your money away. So he's trying to figure out what exactly he's getting for his money. So, you know, he could be, again, setting himself up to get a discount, frankly. And the deal, it looks a bit squishy at this point. I am worried that it, as the lawyers say, not going to be consummated, because if you look at what it took to get to this point initially, the board, it swallowed a poison pill. They had to be dragged kicking and screaming to do the right thing under the threat of lawsuits for not doing their fiduciary duty by their shareholders. So in my estimation, I'm a little worried about this deal actually going through. We view this all through Musk's perspective. I want to look at it from Twitter. If Twitter is not trying to hide something, then why not just hand over the number of bots and be done with it? That's a good question. And I think it really speaks to the fact that these companies, they shroud themselves in claims of proprietary information. There's a black box when it comes to a lot of the things that they do, like their algorithmic impacts and practices and how these algorithms work. So it just, it really speaks to the broader nature of these companies and how secretive they are. that Agrawal, the CEO basically said, we can't reveal how many bots there are because that would necessitate publishing private information. And we absolutely can't do that. Why can't they do it? that transparency was supposed to be a thing. It speaks to the fact that these companies need to be more transparent in general overall, period. Like what if they take care of their bodies and set them up in general in general the models of actors and�리協会 where they need to rest and manage their educational machines?都要先在这边下班都要先做核酸不做完核酸不能走出这鞋子楼排队从这个鞋子楼里面排到外面请不吝点赞 订阅 转发 打赏支持明镜与点点栏目Zither HarpZither HarpZither Harp我奔花一朵 为快遍山中从此亲人永相隔就近二十年我收尽了折磨这个世界不要我请来吧别太拥挤"
+}

@@ -1,0 +1,2888 @@
+{
+  "chunk_audio_sha256": "37b3289dbc07cc8613372df3b6f6f8fab2bfc9774919e0189f0076123ec25241",
+  "chunk_index": 0,
+  "completed_at": "2026-10-27T02:51:16Z",
+  "language": "zh",
+  "live_id": "LIVE_20220605_001",
+  "media_committed_to_git": false,
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "offset_sec": 0,
+  "paid_api_used": false,
+  "processing_location": "github-hosted-macos-arm64",
+  "schema_version": "cloud-asr-chunk-v1",
+  "segments": [
+    {
+      "avg_logprob": -0.794654,
+      "compression_ratio": 0.571429,
+      "end": 29.98,
+      "no_speech_prob": 0.0,
+      "start": 0.0,
+      "text": "谢谢大家"
+    },
+    {
+      "avg_logprob": -0.10015,
+      "compression_ratio": 0.571429,
+      "end": 59.98,
+      "no_speech_prob": 0.0,
+      "start": 30.0,
+      "text": "谢谢大家"
+    },
+    {
+      "avg_logprob": -0.137586,
+      "compression_ratio": 0.571429,
+      "end": 89.98,
+      "no_speech_prob": 0.0,
+      "start": 60.0,
+      "text": "谢谢大家"
+    },
+    {
+      "avg_logprob": -0.303232,
+      "compression_ratio": 0.571429,
+      "end": 119.98,
+      "no_speech_prob": 0.0,
+      "start": 90.0,
+      "text": "谢谢大家"
+    },
+    {
+      "avg_logprob": -0.384396,
+      "compression_ratio": 0.571429,
+      "end": 149.96,
+      "no_speech_prob": 0.0,
+      "start": 119.98,
+      "text": "谢谢大家"
+    },
+    {
+      "avg_logprob": -0.354357,
+      "compression_ratio": 0.571429,
+      "end": 209.94,
+      "no_speech_prob": 0.0,
+      "start": 179.96,
+      "text": "谢谢大家"
+    },
+    {
+      "avg_logprob": -0.36375,
+      "compression_ratio": 0.571429,
+      "end": 239.92,
+      "no_speech_prob": 0.0,
+      "start": 209.94,
+      "text": "谢谢大家"
+    },
+    {
+      "avg_logprob": -0.309516,
+      "compression_ratio": 0.571429,
+      "end": 269.9,
+      "no_speech_prob": 0.0,
+      "start": 239.92,
+      "text": "谢谢大家"
+    },
+    {
+      "avg_logprob": -0.46013,
+      "compression_ratio": 0.571429,
+      "end": 299.88,
+      "no_speech_prob": 0.0,
+      "start": 269.9,
+      "text": "谢谢大家"
+    },
+    {
+      "avg_logprob": -0.223714,
+      "compression_ratio": 1.114504,
+      "end": 303.58,
+      "no_speech_prob": 0.0,
+      "start": 299.88,
+      "text": "你们问我回答咱就今天的方式"
+    },
+    {
+      "avg_logprob": -0.223714,
+      "compression_ratio": 1.114504,
+      "end": 305.8,
+      "no_speech_prob": 0.0,
+      "start": 303.58,
+      "text": "现在开始啊咱没有选择的啊"
+    },
+    {
+      "avg_logprob": -0.223714,
+      "compression_ratio": 1.114504,
+      "end": 307.68,
+      "no_speech_prob": 0.0,
+      "start": 305.8,
+      "text": "咱现在从20开始就这么转"
+    },
+    {
+      "avg_logprob": -0.223714,
+      "compression_ratio": 1.114504,
+      "end": 309.82,
+      "no_speech_prob": 0.0,
+      "start": 307.68,
+      "text": "顺势这转公平的"
+    },
+    {
+      "avg_logprob": -0.223714,
+      "compression_ratio": 1.114504,
+      "end": 311.66,
+      "no_speech_prob": 0.0,
+      "start": 309.82,
+      "text": "你问完我回答"
+    },
+    {
+      "avg_logprob": -0.306212,
+      "compression_ratio": 1.179487,
+      "end": 312.36,
+      "no_speech_prob": 0.0,
+      "start": 311.66,
+      "text": "想问啥"
+    },
+    {
+      "avg_logprob": -0.306212,
+      "compression_ratio": 1.179487,
+      "end": 313.26,
+      "no_speech_prob": 0.0,
+      "start": 312.36,
+      "text": "想问啥说啥"
+    },
+    {
+      "avg_logprob": -0.306212,
+      "compression_ratio": 1.179487,
+      "end": 314.44,
+      "no_speech_prob": 0.0,
+      "start": 313.26,
+      "text": "想问啥"
+    },
+    {
+      "avg_logprob": -0.306212,
+      "compression_ratio": 1.179487,
+      "end": 315.36,
+      "no_speech_prob": 0.0,
+      "start": 314.44,
+      "text": "想"
+    },
+    {
+      "avg_logprob": -0.306212,
+      "compression_ratio": 1.179487,
+      "end": 317.58,
+      "no_speech_prob": 0.0,
+      "start": 315.36,
+      "text": "你要问的就是那很官方的问题我就不回答"
+    },
+    {
+      "avg_logprob": -0.306212,
+      "compression_ratio": 1.179487,
+      "end": 320.06,
+      "no_speech_prob": 0.0,
+      "start": 317.58,
+      "text": "我的沉默就表示我反抗"
+    },
+    {
+      "avg_logprob": -0.306212,
+      "compression_ratio": 1.179487,
+      "end": 323.04,
+      "no_speech_prob": 0.0,
+      "start": 320.06,
+      "text": "开始吧"
+    },
+    {
+      "avg_logprob": -4.84352,
+      "compression_ratio": 0.923729,
+      "end": 332.34,
+      "no_speech_prob": 0.0,
+      "start": 323.04,
+      "text": "我 occasions loud gun"
+    },
+    {
+      "avg_logprob": -4.84352,
+      "compression_ratio": 0.923729,
+      "end": 334.26,
+      "no_speech_prob": 0.0,
+      "start": 332.34,
+      "text": "Max Cart suit mi although我早肯定人聋会和老师"
+    },
+    {
+      "avg_logprob": -4.84352,
+      "compression_ratio": 0.923729,
+      "end": 334.9,
+      "no_speech_prob": 0.0,
+      "start": 334.26,
+      "text": "但是我早日用来走"
+    },
+    {
+      "avg_logprob": -4.84352,
+      "compression_ratio": 0.923729,
+      "end": 334.9,
+      "no_speech_prob": 0.0,
+      "start": 334.9,
+      "text": "вот"
+    },
+    {
+      "avg_logprob": -0.418112,
+      "compression_ratio": 1.331081,
+      "end": 336.16,
+      "no_speech_prob": 0.0,
+      "start": 334.82,
+      "text": "早餐我特別隆重啊"
+    },
+    {
+      "avg_logprob": -0.418112,
+      "compression_ratio": 1.331081,
+      "end": 338.46,
+      "no_speech_prob": 0.0,
+      "start": 336.68,
+      "text": "回答你一定要記住"
+    },
+    {
+      "avg_logprob": -0.418112,
+      "compression_ratio": 1.331081,
+      "end": 340.58,
+      "no_speech_prob": 0.0,
+      "start": 338.46,
+      "text": "你可以不吃午餐 可以不吃晚餐"
+    },
+    {
+      "avg_logprob": -0.418112,
+      "compression_ratio": 1.331081,
+      "end": 342.02,
+      "no_speech_prob": 0.0,
+      "start": 340.58,
+      "text": "一定要吃早餐"
+    },
+    {
+      "avg_logprob": -0.418112,
+      "compression_ratio": 1.331081,
+      "end": 343.48,
+      "no_speech_prob": 0.0,
+      "start": 342.28,
+      "text": "但早餐不是早上吃的"
+    },
+    {
+      "avg_logprob": -0.418112,
+      "compression_ratio": 1.331081,
+      "end": 345.86,
+      "no_speech_prob": 0.0,
+      "start": 343.48,
+      "text": "我早上醒來 我告訴我很多次"
+    },
+    {
+      "avg_logprob": -0.418112,
+      "compression_ratio": 1.331081,
+      "end": 347.42,
+      "no_speech_prob": 0.0,
+      "start": 346.42,
+      "text": "特別是你們"
+    },
+    {
+      "avg_logprob": -0.418112,
+      "compression_ratio": 1.331081,
+      "end": 349.26,
+      "no_speech_prob": 0.0,
+      "start": 347.42,
+      "text": "一定要相信 Uncle Miles"
+    },
+    {
+      "avg_logprob": -0.418112,
+      "compression_ratio": 1.331081,
+      "end": 351.98,
+      "no_speech_prob": 0.0,
+      "start": 349.26,
+      "text": "這是我人生跟無數個富豪"
+    },
+    {
+      "avg_logprob": -0.418112,
+      "compression_ratio": 1.331081,
+      "end": 356.12,
+      "no_speech_prob": 0.0,
+      "start": 351.98,
+      "text": "皇帝 政治家 流氓 黑社會打交道的結果"
+    },
+    {
+      "avg_logprob": -0.418112,
+      "compression_ratio": 1.331081,
+      "end": 357.82,
+      "no_speech_prob": 0.0,
+      "start": 356.12,
+      "text": "總結出來的 對你們適用"
+    },
+    {
+      "avg_logprob": -0.418112,
+      "compression_ratio": 1.331081,
+      "end": 359.96,
+      "no_speech_prob": 0.0,
+      "start": 358.02,
+      "text": "早上醒來 第一件事 進去"
+    },
+    {
+      "avg_logprob": -0.418112,
+      "compression_ratio": 1.331081,
+      "end": 362.28,
+      "no_speech_prob": 0.0,
+      "start": 359.96,
+      "text": "馬上 就 千萬別猛起床"
+    },
+    {
+      "avg_logprob": -0.418112,
+      "compression_ratio": 1.331081,
+      "end": 363.56,
+      "no_speech_prob": 0.0,
+      "start": 362.56,
+      "text": "呼吸"
+    },
+    {
+      "avg_logprob": -0.60608,
+      "compression_ratio": 1.373188,
+      "end": 366.36,
+      "no_speech_prob": 0.0,
+      "start": 363.56,
+      "text": "十九八七六三十六"
+    },
+    {
+      "avg_logprob": -0.60608,
+      "compression_ratio": 1.373188,
+      "end": 368.92,
+      "no_speech_prob": 0.0,
+      "start": 366.36,
+      "text": "你是信什麼教 你就念你的神"
+    },
+    {
+      "avg_logprob": -0.60608,
+      "compression_ratio": 1.373188,
+      "end": 370.42,
+      "no_speech_prob": 0.0,
+      "start": 368.92,
+      "text": "你信佛 就念佛"
+    },
+    {
+      "avg_logprob": -0.60608,
+      "compression_ratio": 1.373188,
+      "end": 372.82,
+      "no_speech_prob": 0.0,
+      "start": 370.42,
+      "text": "然後呼吸 就這一天開始"
+    },
+    {
+      "avg_logprob": -0.60608,
+      "compression_ratio": 1.373188,
+      "end": 373.82,
+      "no_speech_prob": 0.0,
+      "start": 372.82,
+      "text": "進洗腦間漱口"
+    },
+    {
+      "avg_logprob": -0.60608,
+      "compression_ratio": 1.373188,
+      "end": 375.3,
+      "no_speech_prob": 0.0,
+      "start": 373.82,
+      "text": "不用刷牙 漱口"
+    },
+    {
+      "avg_logprob": -0.60608,
+      "compression_ratio": 1.373188,
+      "end": 377.12,
+      "no_speech_prob": 0.0,
+      "start": 375.3,
+      "text": "把漱口漱乾淨"
+    },
+    {
+      "avg_logprob": -0.60608,
+      "compression_ratio": 1.373188,
+      "end": 378.36,
+      "no_speech_prob": 0.0,
+      "start": 377.12,
+      "text": "誰咒下去"
+    },
+    {
+      "avg_logprob": -0.60608,
+      "compression_ratio": 1.373188,
+      "end": 379.82,
+      "no_speech_prob": 0.0,
+      "start": 378.36,
+      "text": "一杯溫水"
+    },
+    {
+      "avg_logprob": -0.60608,
+      "compression_ratio": 1.373188,
+      "end": 381.6,
+      "no_speech_prob": 0.0,
+      "start": 379.82,
+      "text": "就是這麼一杯"
+    },
+    {
+      "avg_logprob": -0.60608,
+      "compression_ratio": 1.373188,
+      "end": 382.74,
+      "no_speech_prob": 0.0,
+      "start": 381.6,
+      "text": "喝掉了"
+    },
+    {
+      "avg_logprob": -0.60608,
+      "compression_ratio": 1.373188,
+      "end": 384.56,
+      "no_speech_prob": 0.0,
+      "start": 382.74,
+      "text": "文保浪仔這兒是藝術生懂的"
+    },
+    {
+      "avg_logprob": -0.60608,
+      "compression_ratio": 1.373188,
+      "end": 385.58,
+      "no_speech_prob": 0.0,
+      "start": 384.56,
+      "text": "喝掉以後"
+    },
+    {
+      "avg_logprob": -0.60608,
+      "compression_ratio": 1.373188,
+      "end": 387.62,
+      "no_speech_prob": 0.0,
+      "start": 385.58,
+      "text": "一定吃一個非常喜歡的蘋果"
+    },
+    {
+      "avg_logprob": -0.60608,
+      "compression_ratio": 1.373188,
+      "end": 388.82,
+      "no_speech_prob": 0.0,
+      "start": 387.62,
+      "text": "一定要帶皮"
+    },
+    {
+      "avg_logprob": -0.60608,
+      "compression_ratio": 1.373188,
+      "end": 390.2,
+      "no_speech_prob": 0.0,
+      "start": 388.82,
+      "text": "把蘋果吃到這是我的早餐"
+    },
+    {
+      "avg_logprob": -0.60608,
+      "compression_ratio": 1.373188,
+      "end": 391.2,
+      "no_speech_prob": 0.0,
+      "start": 390.2,
+      "text": "開始"
+    },
+    {
+      "avg_logprob": -0.60608,
+      "compression_ratio": 1.373188,
+      "end": 392.5,
+      "no_speech_prob": 0.0,
+      "start": 391.2,
+      "text": "然後我就會去刷牙"
+    },
+    {
+      "avg_logprob": -0.292129,
+      "compression_ratio": 1.47331,
+      "end": 395.96,
+      "no_speech_prob": 0.0,
+      "start": 392.5,
+      "text": "你看 过去没有了 过去只刷牙 是吧"
+    },
+    {
+      "avg_logprob": -0.292129,
+      "compression_ratio": 1.47331,
+      "end": 400.12,
+      "no_speech_prob": 0.0,
+      "start": 395.96,
+      "text": "现在又是洗眼睛 刷牙 洗鼻子"
+    },
+    {
+      "avg_logprob": -0.292129,
+      "compression_ratio": 1.47331,
+      "end": 403.12,
+      "no_speech_prob": 0.0,
+      "start": 400.12,
+      "text": "这一套活很麻烦的 还刮胡子"
+    },
+    {
+      "avg_logprob": -0.292129,
+      "compression_ratio": 1.47331,
+      "end": 406.32,
+      "no_speech_prob": 0.0,
+      "start": 403.12,
+      "text": "所以我这很多事 我这时候就要看手机了"
+    },
+    {
+      "avg_logprob": -0.292129,
+      "compression_ratio": 1.47331,
+      "end": 408.26,
+      "no_speech_prob": 0.0,
+      "start": 406.32,
+      "text": "这个完了以后 我去锻炼去"
+    },
+    {
+      "avg_logprob": -0.292129,
+      "compression_ratio": 1.47331,
+      "end": 412.82,
+      "no_speech_prob": 0.0,
+      "start": 408.26,
+      "text": "锻炼完以后 我现在的早上是两根海参是必须吃的"
+    },
+    {
+      "avg_logprob": -0.292129,
+      "compression_ratio": 1.47331,
+      "end": 416.56,
+      "no_speech_prob": 0.0,
+      "start": 412.82,
+      "text": "你们现在太早了 你吃完以后你们都会乘强奸犯的"
+    },
+    {
+      "avg_logprob": -0.292129,
+      "compression_ratio": 1.47331,
+      "end": 419.72,
+      "no_speech_prob": 0.0,
+      "start": 416.56,
+      "text": "这是不可以的 这太小 对不起啊"
+    },
+    {
+      "avg_logprob": -0.292129,
+      "compression_ratio": 1.47331,
+      "end": 422.48,
+      "no_speech_prob": 0.0,
+      "start": 419.72,
+      "text": "你们不要去吃 25岁以后可以吃"
+    },
+    {
+      "avg_logprob": -0.320492,
+      "compression_ratio": 1.38806,
+      "end": 426.48,
+      "no_speech_prob": 0.0,
+      "start": 422.48,
+      "text": "但是你这个时候吃完最好吃点非常好的"
+    },
+    {
+      "avg_logprob": -0.320492,
+      "compression_ratio": 1.38806,
+      "end": 429.92,
+      "no_speech_prob": 0.0,
+      "start": 426.48,
+      "text": "荞麦呀 酸奶呀 这都可以呀"
+    },
+    {
+      "avg_logprob": -0.320492,
+      "compression_ratio": 1.38806,
+      "end": 433.58,
+      "no_speech_prob": 0.0,
+      "start": 429.92,
+      "text": "还有一些香蕉呀 这些东西要补一点能量"
+    },
+    {
+      "avg_logprob": -0.320492,
+      "compression_ratio": 1.38806,
+      "end": 435.24,
+      "no_speech_prob": 0.0,
+      "start": 433.58,
+      "text": "一定要吃水果的东西"
+    },
+    {
+      "avg_logprob": -0.320492,
+      "compression_ratio": 1.38806,
+      "end": 438.86,
+      "no_speech_prob": 0.0,
+      "start": 435.24,
+      "text": "最好是青菜汁 运动完吃这些东西"
+    },
+    {
+      "avg_logprob": -0.320492,
+      "compression_ratio": 1.38806,
+      "end": 442.42,
+      "no_speech_prob": 0.0,
+      "start": 438.86,
+      "text": "这就是早餐我觉得这是你最好运动完吃的"
+    },
+    {
+      "avg_logprob": -0.320492,
+      "compression_ratio": 1.38806,
+      "end": 445.8,
+      "no_speech_prob": 0.0,
+      "start": 442.42,
+      "text": "如果是你们不愿意吃早餐的话"
+    },
+    {
+      "avg_logprob": -0.320492,
+      "compression_ratio": 1.38806,
+      "end": 449.34,
+      "no_speech_prob": 0.0,
+      "start": 445.8,
+      "text": "最好是早午餐一起吃 叫Bronche"
+    },
+    {
+      "avg_logprob": -0.320492,
+      "compression_ratio": 1.38806,
+      "end": 452.14,
+      "no_speech_prob": 0.0,
+      "start": 449.34,
+      "text": "我看过最健康的西班牙人"
+    },
+    {
+      "avg_logprob": -0.171891,
+      "compression_ratio": 1.290155,
+      "end": 456.14,
+      "no_speech_prob": 0.0,
+      "start": 452.14,
+      "text": "因为我不了解西班牙人为什么他们每天晚上吃饭吃到12点还能活那么长寿"
+    },
+    {
+      "avg_logprob": -0.171891,
+      "compression_ratio": 1.290155,
+      "end": 458.14,
+      "no_speech_prob": 0.0,
+      "start": 456.14,
+      "text": "平均80几岁"
+    },
+    {
+      "avg_logprob": -0.171891,
+      "compression_ratio": 1.290155,
+      "end": 459.58,
+      "no_speech_prob": 0.0,
+      "start": 458.14,
+      "text": "一个是橄榄油"
+    },
+    {
+      "avg_logprob": -0.171891,
+      "compression_ratio": 1.290155,
+      "end": 461.58,
+      "no_speech_prob": 0.0,
+      "start": 459.58,
+      "text": "一个喝红酒"
+    },
+    {
+      "avg_logprob": -0.171891,
+      "compression_ratio": 1.290155,
+      "end": 465.18,
+      "no_speech_prob": 0.0,
+      "start": 461.58,
+      "text": "一个就是他吃棒吃 他不吃早午餐"
+    },
+    {
+      "avg_logprob": -0.171891,
+      "compression_ratio": 1.290155,
+      "end": 469.14,
+      "no_speech_prob": 0.0,
+      "start": 465.18,
+      "text": "他不是不吃早餐和午餐 他只把早餐和午餐一起吃"
+    },
+    {
+      "avg_logprob": -0.230108,
+      "compression_ratio": 1.471204,
+      "end": 474.14,
+      "no_speech_prob": 0.0,
+      "start": 469.14,
+      "text": "所以对你们健康千万记住孩子没有比你们健康最重要的"
+    },
+    {
+      "avg_logprob": -0.230108,
+      "compression_ratio": 1.471204,
+      "end": 477.14,
+      "no_speech_prob": 0.0,
+      "start": 474.14,
+      "text": "爹妈也不重要一定是你的健康最重要"
+    },
+    {
+      "avg_logprob": -0.230108,
+      "compression_ratio": 1.471204,
+      "end": 478.58,
+      "no_speech_prob": 0.0,
+      "start": 477.14,
+      "text": "健康完再安全"
+    },
+    {
+      "avg_logprob": -0.230108,
+      "compression_ratio": 1.471204,
+      "end": 481.58,
+      "no_speech_prob": 0.0,
+      "start": 478.58,
+      "text": "你不健康你安全有什么用啊 都病人躺在病床上 是吧"
+    },
+    {
+      "avg_logprob": -0.230108,
+      "compression_ratio": 1.471204,
+      "end": 485.14,
+      "no_speech_prob": 0.0,
+      "start": 481.58,
+      "text": "你有健康了不安全 你进监狱了 你有什么用啊 什么都没了"
+    },
+    {
+      "avg_logprob": -0.277707,
+      "compression_ratio": 1.034483,
+      "end": 489.14,
+      "no_speech_prob": 0.0,
+      "start": 485.14,
+      "text": "这两样是一生的一切 超过父母 超过一切"
+    },
+    {
+      "avg_logprob": -0.277707,
+      "compression_ratio": 1.034483,
+      "end": 493.14,
+      "no_speech_prob": 0.0,
+      "start": 489.14,
+      "text": "二次你要听这句话 你可以试一试"
+    },
+    {
+      "avg_logprob": -0.277707,
+      "compression_ratio": 1.034483,
+      "end": 495.14,
+      "no_speech_prob": 0.0,
+      "start": 493.14,
+      "text": "明天开始我监督你"
+    },
+    {
+      "avg_logprob": -0.271171,
+      "compression_ratio": 1.408088,
+      "end": 499.14,
+      "no_speech_prob": 0.0,
+      "start": 495.14,
+      "text": "我们每天也是早上吃苹果喝酒"
+    },
+    {
+      "avg_logprob": -0.271171,
+      "compression_ratio": 1.408088,
+      "end": 500.14,
+      "no_speech_prob": 0.0,
+      "start": 499.14,
+      "text": "是吧"
+    },
+    {
+      "avg_logprob": -0.271171,
+      "compression_ratio": 1.408088,
+      "end": 502.14,
+      "no_speech_prob": 0.0,
+      "start": 500.14,
+      "text": "我们每天早上吃苹果喝酒"
+    },
+    {
+      "avg_logprob": -0.271171,
+      "compression_ratio": 1.408088,
+      "end": 503.14,
+      "no_speech_prob": 0.0,
+      "start": 502.14,
+      "text": "所以那么漂亮"
+    },
+    {
+      "avg_logprob": -0.271171,
+      "compression_ratio": 1.408088,
+      "end": 504.14,
+      "no_speech_prob": 0.0,
+      "start": 503.14,
+      "text": "谢谢"
+    },
+    {
+      "avg_logprob": -0.271171,
+      "compression_ratio": 1.408088,
+      "end": 505.14,
+      "no_speech_prob": 0.0,
+      "start": 504.14,
+      "text": "那么也精气神"
+    },
+    {
+      "avg_logprob": -0.271171,
+      "compression_ratio": 1.408088,
+      "end": 507.14,
+      "no_speech_prob": 0.0,
+      "start": 505.14,
+      "text": "你的"
+    },
+    {
+      "avg_logprob": -0.271171,
+      "compression_ratio": 1.408088,
+      "end": 510.14,
+      "no_speech_prob": 0.0,
+      "start": 507.14,
+      "text": "好的 我也没有想要特别好的问题"
+    },
+    {
+      "avg_logprob": -0.271171,
+      "compression_ratio": 1.408088,
+      "end": 514.14,
+      "no_speech_prob": 0.0,
+      "start": 510.14,
+      "text": "但是作为一个年轻人活在现在混乱的世界里"
+    },
+    {
+      "avg_logprob": -0.271171,
+      "compression_ratio": 1.408088,
+      "end": 516.14,
+      "no_speech_prob": 0.0,
+      "start": 514.14,
+      "text": "我发现每天的"
+    },
+    {
+      "avg_logprob": -0.271171,
+      "compression_ratio": 1.408088,
+      "end": 517.14,
+      "no_speech_prob": 0.0,
+      "start": 516.14,
+      "text": "好像你很大说的"
+    },
+    {
+      "avg_logprob": -0.271171,
+      "compression_ratio": 1.408088,
+      "end": 520.14,
+      "no_speech_prob": 0.0,
+      "start": 517.14,
+      "text": "没有没有 就是每一天我发现就是"
+    },
+    {
+      "avg_logprob": -0.271171,
+      "compression_ratio": 1.408088,
+      "end": 522.14,
+      "no_speech_prob": 0.0,
+      "start": 520.14,
+      "text": "比如说拿一个很简单的例子"
+    },
+    {
+      "avg_logprob": -0.271171,
+      "compression_ratio": 1.408088,
+      "end": 524.14,
+      "no_speech_prob": 0.0,
+      "start": 522.14,
+      "text": "现在的社交媒体 比如说Facebook"
+    },
+    {
+      "avg_logprob": -0.068839,
+      "compression_ratio": 1.412162,
+      "end": 526.14,
+      "no_speech_prob": 0.0,
+      "start": 524.14,
+      "text": "它这些大公司 巨大的社交媒体"
+    },
+    {
+      "avg_logprob": -0.068839,
+      "compression_ratio": 1.412162,
+      "end": 529.14,
+      "no_speech_prob": 0.0,
+      "start": 526.14,
+      "text": "给每个年轻人都灌输了很多很多"
+    },
+    {
+      "avg_logprob": -0.068839,
+      "compression_ratio": 1.412162,
+      "end": 531.14,
+      "no_speech_prob": 0.0,
+      "start": 529.14,
+      "text": "他们想要给你灌输的思想"
+    },
+    {
+      "avg_logprob": -0.068839,
+      "compression_ratio": 1.412162,
+      "end": 534.14,
+      "no_speech_prob": 0.0,
+      "start": 531.14,
+      "text": "那么在这样的世界"
+    },
+    {
+      "avg_logprob": -0.068839,
+      "compression_ratio": 1.412162,
+      "end": 535.14,
+      "no_speech_prob": 0.0,
+      "start": 534.14,
+      "text": "2022年这样的世界"
+    },
+    {
+      "avg_logprob": -0.068839,
+      "compression_ratio": 1.412162,
+      "end": 536.14,
+      "no_speech_prob": 0.0,
+      "start": 535.14,
+      "text": "有共产党的影响"
+    },
+    {
+      "avg_logprob": -0.068839,
+      "compression_ratio": 1.412162,
+      "end": 537.14,
+      "no_speech_prob": 0.0,
+      "start": 536.14,
+      "text": "有这么多邪恶的影响"
+    },
+    {
+      "avg_logprob": -0.068839,
+      "compression_ratio": 1.412162,
+      "end": 540.14,
+      "no_speech_prob": 0.0,
+      "start": 537.14,
+      "text": "我们这些年轻人最需要警惕的东西是什么"
+    },
+    {
+      "avg_logprob": -0.068839,
+      "compression_ratio": 1.412162,
+      "end": 544.14,
+      "no_speech_prob": 0.0,
+      "start": 540.14,
+      "text": "然后我们如何抵抗这些诱惑 这些干扰"
+    },
+    {
+      "avg_logprob": -0.068839,
+      "compression_ratio": 1.412162,
+      "end": 547.14,
+      "no_speech_prob": 0.0,
+      "start": 544.14,
+      "text": "哎呀 这个话题实际上很简单"
+    },
+    {
+      "avg_logprob": -0.068839,
+      "compression_ratio": 1.412162,
+      "end": 550.14,
+      "no_speech_prob": 0.0,
+      "start": 547.14,
+      "text": "没有比你们再幸福的了"
+    },
+    {
+      "avg_logprob": -0.068839,
+      "compression_ratio": 1.412162,
+      "end": 552.14,
+      "no_speech_prob": 0.0,
+      "start": 550.14,
+      "text": "因为是活在个社交媒体的时代"
+    },
+    {
+      "avg_logprob": -0.13993,
+      "compression_ratio": 1.310526,
+      "end": 555.14,
+      "no_speech_prob": 0.0,
+      "start": 552.14,
+      "text": "在社交媒体上生存"
+    },
+    {
+      "avg_logprob": -0.13993,
+      "compression_ratio": 1.310526,
+      "end": 557.14,
+      "no_speech_prob": 0.0,
+      "start": 555.14,
+      "text": "就等同意在垃圾堆里边"
+    },
+    {
+      "avg_logprob": -0.13993,
+      "compression_ratio": 1.310526,
+      "end": 560.14,
+      "no_speech_prob": 0.0,
+      "start": 557.14,
+      "text": "去找出自己的钻石"
+    },
+    {
+      "avg_logprob": -0.13993,
+      "compression_ratio": 1.310526,
+      "end": 562.14,
+      "no_speech_prob": 0.0,
+      "start": 560.14,
+      "text": "你要在里边老巴拉的找"
+    },
+    {
+      "avg_logprob": -0.13993,
+      "compression_ratio": 1.310526,
+      "end": 564.14,
+      "no_speech_prob": 0.0,
+      "start": 562.14,
+      "text": "你永远找不到钻石"
+    },
+    {
+      "avg_logprob": -0.13993,
+      "compression_ratio": 1.310526,
+      "end": 566.14,
+      "no_speech_prob": 0.0,
+      "start": 564.14,
+      "text": "你就成垃圾了"
+    },
+    {
+      "avg_logprob": -0.13993,
+      "compression_ratio": 1.310526,
+      "end": 568.14,
+      "no_speech_prob": 0.0,
+      "start": 566.14,
+      "text": "如何找到自己的钻石呢"
+    },
+    {
+      "avg_logprob": -0.13993,
+      "compression_ratio": 1.310526,
+      "end": 570.14,
+      "no_speech_prob": 0.0,
+      "start": 568.14,
+      "text": "这是确实需要智慧"
+    },
+    {
+      "avg_logprob": -0.13993,
+      "compression_ratio": 1.310526,
+      "end": 572.14,
+      "no_speech_prob": 0.0,
+      "start": 570.14,
+      "text": "这个需要你绝对的一个人生最高的"
+    },
+    {
+      "avg_logprob": -0.166386,
+      "compression_ratio": 1.46875,
+      "end": 573.14,
+      "no_speech_prob": 0.0,
+      "start": 572.14,
+      "text": "控制"
+    },
+    {
+      "avg_logprob": -0.166386,
+      "compression_ratio": 1.46875,
+      "end": 575.14,
+      "no_speech_prob": 0.0,
+      "start": 573.14,
+      "text": "就我每天我看什么一定是有限制"
+    },
+    {
+      "avg_logprob": -0.166386,
+      "compression_ratio": 1.46875,
+      "end": 577.14,
+      "no_speech_prob": 0.0,
+      "start": 575.14,
+      "text": "你看我每天你看跟你们在一起"
+    },
+    {
+      "avg_logprob": -0.166386,
+      "compression_ratio": 1.46875,
+      "end": 578.14,
+      "no_speech_prob": 0.0,
+      "start": 577.14,
+      "text": "我不会耽误我"
+    },
+    {
+      "avg_logprob": -0.166386,
+      "compression_ratio": 1.46875,
+      "end": 580.14,
+      "no_speech_prob": 0.0,
+      "start": 578.14,
+      "text": "影响我办这些事情"
+    },
+    {
+      "avg_logprob": -0.166386,
+      "compression_ratio": 1.46875,
+      "end": 582.14,
+      "no_speech_prob": 0.0,
+      "start": 580.14,
+      "text": "就是我一定告诉我"
+    },
+    {
+      "avg_logprob": -0.166386,
+      "compression_ratio": 1.46875,
+      "end": 583.14,
+      "no_speech_prob": 0.0,
+      "start": 582.14,
+      "text": "今天我要看的新闻"
+    },
+    {
+      "avg_logprob": -0.166386,
+      "compression_ratio": 1.46875,
+      "end": 584.14,
+      "no_speech_prob": 0.0,
+      "start": 583.14,
+      "text": "我一定要看完它"
+    },
+    {
+      "avg_logprob": -0.166386,
+      "compression_ratio": 1.46875,
+      "end": 586.14,
+      "no_speech_prob": 0.0,
+      "start": 584.14,
+      "text": "就像我看书一样"
+    },
+    {
+      "avg_logprob": -0.166386,
+      "compression_ratio": 1.46875,
+      "end": 587.14,
+      "no_speech_prob": 0.0,
+      "start": 586.14,
+      "text": "我在车上"
+    },
+    {
+      "avg_logprob": -0.166386,
+      "compression_ratio": 1.46875,
+      "end": 588.14,
+      "no_speech_prob": 0.0,
+      "start": 587.14,
+      "text": "我今天看这本书"
+    },
+    {
+      "avg_logprob": -0.166386,
+      "compression_ratio": 1.46875,
+      "end": 589.14,
+      "no_speech_prob": 0.0,
+      "start": 588.14,
+      "text": "我在车上哗哗翻完"
+    },
+    {
+      "avg_logprob": -0.131624,
+      "compression_ratio": 1.418519,
+      "end": 591.14,
+      "no_speech_prob": 0.0,
+      "start": 589.14,
+      "text": "我把重点看完我搞懂了"
+    },
+    {
+      "avg_logprob": -0.131624,
+      "compression_ratio": 1.418519,
+      "end": 592.14,
+      "no_speech_prob": 0.0,
+      "start": 591.14,
+      "text": "我过来再翻一遍"
+    },
+    {
+      "avg_logprob": -0.131624,
+      "compression_ratio": 1.418519,
+      "end": 593.14,
+      "no_speech_prob": 0.0,
+      "start": 592.14,
+      "text": "我再搞懂"
+    },
+    {
+      "avg_logprob": -0.131624,
+      "compression_ratio": 1.418519,
+      "end": 594.14,
+      "no_speech_prob": 0.0,
+      "start": 593.14,
+      "text": "这书就过去了"
+    },
+    {
+      "avg_logprob": -0.131624,
+      "compression_ratio": 1.418519,
+      "end": 595.14,
+      "no_speech_prob": 0.0,
+      "start": 594.14,
+      "text": "就扔了"
+    },
+    {
+      "avg_logprob": -0.131624,
+      "compression_ratio": 1.418519,
+      "end": 597.14,
+      "no_speech_prob": 0.0,
+      "start": 595.14,
+      "text": "那么你看Facebook也好"
+    },
+    {
+      "avg_logprob": -0.131624,
+      "compression_ratio": 1.418519,
+      "end": 598.14,
+      "no_speech_prob": 0.0,
+      "start": 597.14,
+      "text": "上社交媒体"
+    },
+    {
+      "avg_logprob": -0.131624,
+      "compression_ratio": 1.418519,
+      "end": 600.14,
+      "no_speech_prob": 0.0,
+      "start": 598.14,
+      "text": "你不能老这么滑"
+    },
+    {
+      "avg_logprob": -0.131624,
+      "compression_ratio": 1.418519,
+      "end": 601.14,
+      "no_speech_prob": 0.0,
+      "start": 600.14,
+      "text": "那永远滑不完"
+    },
+    {
+      "avg_logprob": -0.131624,
+      "compression_ratio": 1.418519,
+      "end": 603.14,
+      "no_speech_prob": 0.0,
+      "start": 601.14,
+      "text": "这要你命的那是"
+    },
+    {
+      "avg_logprob": -0.131624,
+      "compression_ratio": 1.418519,
+      "end": 604.14,
+      "no_speech_prob": 0.0,
+      "start": 603.14,
+      "text": "是吧"
+    },
+    {
+      "avg_logprob": -0.131624,
+      "compression_ratio": 1.418519,
+      "end": 605.14,
+      "no_speech_prob": 0.0,
+      "start": 604.14,
+      "text": "你关心啥你先说"
+    },
+    {
+      "avg_logprob": -0.131624,
+      "compression_ratio": 1.418519,
+      "end": 606.14,
+      "no_speech_prob": 0.0,
+      "start": 605.14,
+      "text": "对吧"
+    },
+    {
+      "avg_logprob": -0.131624,
+      "compression_ratio": 1.418519,
+      "end": 607.14,
+      "no_speech_prob": 0.0,
+      "start": 606.14,
+      "text": "你关心什么你要扔"
+    },
+    {
+      "avg_logprob": -0.131624,
+      "compression_ratio": 1.418519,
+      "end": 608.14,
+      "no_speech_prob": 0.0,
+      "start": 607.14,
+      "text": "不要什么"
+    },
+    {
+      "avg_logprob": -0.131624,
+      "compression_ratio": 1.418519,
+      "end": 610.14,
+      "no_speech_prob": 0.0,
+      "start": 608.14,
+      "text": "你就把它设置好"
+    },
+    {
+      "avg_logprob": -0.131624,
+      "compression_ratio": 1.418519,
+      "end": 611.14,
+      "no_speech_prob": 0.0,
+      "start": 610.14,
+      "text": "是你关心的"
+    },
+    {
+      "avg_logprob": -0.131624,
+      "compression_ratio": 1.418519,
+      "end": 612.14,
+      "no_speech_prob": 0.0,
+      "start": 611.14,
+      "text": "然后大概一下"
+    },
+    {
+      "avg_logprob": -0.131624,
+      "compression_ratio": 1.418519,
+      "end": 613.14,
+      "no_speech_prob": 0.0,
+      "start": 612.14,
+      "text": "你捋一下就过去了"
+    },
+    {
+      "avg_logprob": -0.131624,
+      "compression_ratio": 1.418519,
+      "end": 615.14,
+      "no_speech_prob": 0.0,
+      "start": 613.14,
+      "text": "就不要太走心"
+    },
+    {
+      "avg_logprob": -0.131624,
+      "compression_ratio": 1.418519,
+      "end": 617.14,
+      "no_speech_prob": 0.0,
+      "start": 615.14,
+      "text": "哎有亮点就会牺牲你"
+    },
+    {
+      "avg_logprob": -0.162193,
+      "compression_ratio": 1.407643,
+      "end": 618.14,
+      "no_speech_prob": 0.0,
+      "start": 617.14,
+      "text": "这个时间一定要控制"
+    },
+    {
+      "avg_logprob": -0.162193,
+      "compression_ratio": 1.407643,
+      "end": 619.14,
+      "no_speech_prob": 0.0,
+      "start": 618.14,
+      "text": "我每天半小时"
+    },
+    {
+      "avg_logprob": -0.162193,
+      "compression_ratio": 1.407643,
+      "end": 620.14,
+      "no_speech_prob": 0.0,
+      "start": 619.14,
+      "text": "一小时一定不能过"
+    },
+    {
+      "avg_logprob": -0.162193,
+      "compression_ratio": 1.407643,
+      "end": 622.14,
+      "no_speech_prob": 0.0,
+      "start": 620.14,
+      "text": "你可以分五次和六次看"
+    },
+    {
+      "avg_logprob": -0.162193,
+      "compression_ratio": 1.407643,
+      "end": 624.14,
+      "no_speech_prob": 0.0,
+      "start": 622.14,
+      "text": "但你绝对不能过"
+    },
+    {
+      "avg_logprob": -0.162193,
+      "compression_ratio": 1.407643,
+      "end": 626.14,
+      "no_speech_prob": 0.0,
+      "start": 624.14,
+      "text": "就每天一定记住手机是要放下的"
+    },
+    {
+      "avg_logprob": -0.162193,
+      "compression_ratio": 1.407643,
+      "end": 628.14,
+      "no_speech_prob": 0.0,
+      "start": 626.14,
+      "text": "而且看着东西"
+    },
+    {
+      "avg_logprob": -0.162193,
+      "compression_ratio": 1.407643,
+      "end": 629.14,
+      "no_speech_prob": 0.0,
+      "start": 628.14,
+      "text": "你像那个谁"
+    },
+    {
+      "avg_logprob": -0.162193,
+      "compression_ratio": 1.407643,
+      "end": 630.14,
+      "no_speech_prob": 0.0,
+      "start": 629.14,
+      "text": "二次他喜欢Fansion"
+    },
+    {
+      "avg_logprob": -0.162193,
+      "compression_ratio": 1.407643,
+      "end": 631.14,
+      "no_speech_prob": 0.0,
+      "start": 630.14,
+      "text": "你到那个名牌师"
+    },
+    {
+      "avg_logprob": -0.162193,
+      "compression_ratio": 1.407643,
+      "end": 633.14,
+      "no_speech_prob": 0.0,
+      "start": 631.14,
+      "text": "一个品牌你可以花一天"
+    },
+    {
+      "avg_logprob": -0.162193,
+      "compression_ratio": 1.407643,
+      "end": 634.14,
+      "no_speech_prob": 0.0,
+      "start": 633.14,
+      "text": "你不用离开的"
+    },
+    {
+      "avg_logprob": -0.162193,
+      "compression_ratio": 1.407643,
+      "end": 635.14,
+      "no_speech_prob": 0.0,
+      "start": 634.14,
+      "text": "他可以杀掉你的"
+    },
+    {
+      "avg_logprob": -0.162193,
+      "compression_ratio": 1.407643,
+      "end": 636.14,
+      "no_speech_prob": 0.0,
+      "start": 635.14,
+      "text": "对吧"
+    },
+    {
+      "avg_logprob": -0.162193,
+      "compression_ratio": 1.407643,
+      "end": 637.14,
+      "no_speech_prob": 0.0,
+      "start": 636.14,
+      "text": "你就是"
+    },
+    {
+      "avg_logprob": -0.162193,
+      "compression_ratio": 1.407643,
+      "end": 638.14,
+      "no_speech_prob": 0.0,
+      "start": 637.14,
+      "text": "你放心"
+    },
+    {
+      "avg_logprob": -0.162193,
+      "compression_ratio": 1.407643,
+      "end": 640.14,
+      "no_speech_prob": 0.0,
+      "start": 638.14,
+      "text": "所有的品牌"
+    },
+    {
+      "avg_logprob": -0.162193,
+      "compression_ratio": 1.407643,
+      "end": 642.14,
+      "no_speech_prob": 0.0,
+      "start": 640.14,
+      "text": "他一年就那么几样东西"
+    },
+    {
+      "avg_logprob": -0.162193,
+      "compression_ratio": 1.407643,
+      "end": 644.14,
+      "no_speech_prob": 0.0,
+      "start": 642.14,
+      "text": "你大概看一看"
+    },
+    {
+      "avg_logprob": -0.162193,
+      "compression_ratio": 1.407643,
+      "end": 645.14,
+      "no_speech_prob": 0.0,
+      "start": 644.14,
+      "text": "搂一搂差不多就行了"
+    },
+    {
+      "avg_logprob": -0.162193,
+      "compression_ratio": 1.407643,
+      "end": 647.14,
+      "no_speech_prob": 0.0,
+      "start": 645.14,
+      "text": "但是你多看"
+    },
+    {
+      "avg_logprob": -0.172103,
+      "compression_ratio": 1.308244,
+      "end": 648.14,
+      "no_speech_prob": 0.0,
+      "start": 647.14,
+      "text": "这几家总比在一家"
+    },
+    {
+      "avg_logprob": -0.172103,
+      "compression_ratio": 1.308244,
+      "end": 649.14,
+      "no_speech_prob": 0.0,
+      "start": 648.14,
+      "text": "这么成年还是好"
+    },
+    {
+      "avg_logprob": -0.172103,
+      "compression_ratio": 1.308244,
+      "end": 651.14,
+      "no_speech_prob": 0.0,
+      "start": 649.14,
+      "text": "过去的人说"
+    },
+    {
+      "avg_logprob": -0.172103,
+      "compression_ratio": 1.308244,
+      "end": 655.14,
+      "no_speech_prob": 0.0,
+      "start": 651.14,
+      "text": "什么细节是魔鬼"
+    },
+    {
+      "avg_logprob": -0.172103,
+      "compression_ratio": 1.308244,
+      "end": 656.14,
+      "no_speech_prob": 0.0,
+      "start": 655.14,
+      "text": "还在干大事"
+    },
+    {
+      "avg_logprob": -0.172103,
+      "compression_ratio": 1.308244,
+      "end": 657.14,
+      "no_speech_prob": 0.0,
+      "start": 656.14,
+      "text": "现在我告诉你"
+    },
+    {
+      "avg_logprob": -0.172103,
+      "compression_ratio": 1.308244,
+      "end": 658.14,
+      "no_speech_prob": 0.0,
+      "start": 657.14,
+      "text": "现在你懂得"
+    },
+    {
+      "avg_logprob": -0.172103,
+      "compression_ratio": 1.308244,
+      "end": 660.14,
+      "no_speech_prob": 0.0,
+      "start": 658.14,
+      "text": "在大众找到的"
+    },
+    {
+      "avg_logprob": -0.172103,
+      "compression_ratio": 1.308244,
+      "end": 661.14,
+      "no_speech_prob": 0.0,
+      "start": 660.14,
+      "text": "你要的"
+    },
+    {
+      "avg_logprob": -0.172103,
+      "compression_ratio": 1.308244,
+      "end": 663.14,
+      "no_speech_prob": 0.0,
+      "start": 661.14,
+      "text": "你才是为王"
+    },
+    {
+      "avg_logprob": -0.172103,
+      "compression_ratio": 1.308244,
+      "end": 665.14,
+      "no_speech_prob": 0.0,
+      "start": 663.14,
+      "text": "所以不要在垃圾堆里边"
+    },
+    {
+      "avg_logprob": -0.172103,
+      "compression_ratio": 1.308244,
+      "end": 666.14,
+      "no_speech_prob": 0.0,
+      "start": 665.14,
+      "text": "一直扒拉"
+    },
+    {
+      "avg_logprob": -0.172103,
+      "compression_ratio": 1.308244,
+      "end": 667.14,
+      "no_speech_prob": 0.0,
+      "start": 666.14,
+      "text": "你就要瞄准"
+    },
+    {
+      "avg_logprob": -0.172103,
+      "compression_ratio": 1.308244,
+      "end": 668.14,
+      "no_speech_prob": 0.0,
+      "start": 667.14,
+      "text": "我就会找到东西"
+    },
+    {
+      "avg_logprob": -0.172103,
+      "compression_ratio": 1.308244,
+      "end": 669.14,
+      "no_speech_prob": 0.0,
+      "start": 668.14,
+      "text": "扒拉几家没有"
+    },
+    {
+      "avg_logprob": -0.172103,
+      "compression_ratio": 1.308244,
+      "end": 670.14,
+      "no_speech_prob": 0.0,
+      "start": 669.14,
+      "text": "我就走了"
+    },
+    {
+      "avg_logprob": -0.172103,
+      "compression_ratio": 1.308244,
+      "end": 671.14,
+      "no_speech_prob": 0.0,
+      "start": 670.14,
+      "text": "我总会找到的"
+    },
+    {
+      "avg_logprob": -0.172103,
+      "compression_ratio": 1.308244,
+      "end": 673.14,
+      "no_speech_prob": 0.0,
+      "start": 671.14,
+      "text": "但关键是你的时间要分配"
+    },
+    {
+      "avg_logprob": -0.172103,
+      "compression_ratio": 1.308244,
+      "end": 675.14,
+      "no_speech_prob": 0.0,
+      "start": 673.14,
+      "text": "而且我建议Facebook这种实体"
+    },
+    {
+      "avg_logprob": -0.192625,
+      "compression_ratio": 1.078431,
+      "end": 677.14,
+      "no_speech_prob": 0.0,
+      "start": 675.14,
+      "text": "还有推特"
+    },
+    {
+      "avg_logprob": -0.192625,
+      "compression_ratio": 1.078431,
+      "end": 678.14,
+      "no_speech_prob": 0.0,
+      "start": 677.14,
+      "text": "还有Instagram"
+    },
+    {
+      "avg_logprob": -0.192625,
+      "compression_ratio": 1.078431,
+      "end": 680.14,
+      "no_speech_prob": 0.0,
+      "start": 678.14,
+      "text": "这都是要命的东西"
+    },
+    {
+      "avg_logprob": -0.192625,
+      "compression_ratio": 1.078431,
+      "end": 681.14,
+      "no_speech_prob": 0.0,
+      "start": 680.14,
+      "text": "要命的东西"
+    },
+    {
+      "avg_logprob": -0.192625,
+      "compression_ratio": 1.078431,
+      "end": 684.14,
+      "no_speech_prob": 0.0,
+      "start": 681.14,
+      "text": "这个东西一定要控制世界"
+    },
+    {
+      "avg_logprob": -0.192625,
+      "compression_ratio": 1.078431,
+      "end": 685.14,
+      "no_speech_prob": 0.0,
+      "start": 684.14,
+      "text": "然后呢"
+    },
+    {
+      "avg_logprob": -0.192625,
+      "compression_ratio": 1.078431,
+      "end": 687.14,
+      "no_speech_prob": 0.0,
+      "start": 685.14,
+      "text": "我觉得你可以多看几家"
+    },
+    {
+      "avg_logprob": -0.192625,
+      "compression_ratio": 1.078431,
+      "end": 689.14,
+      "no_speech_prob": 0.0,
+      "start": 687.14,
+      "text": "关键你感兴趣的是啥"
+    },
+    {
+      "avg_logprob": -0.176371,
+      "compression_ratio": 1.608108,
+      "end": 692.14,
+      "no_speech_prob": 0.0,
+      "start": 689.14,
+      "text": "你像我过去看的"
+    },
+    {
+      "avg_logprob": -0.176371,
+      "compression_ratio": 1.608108,
+      "end": 694.14,
+      "no_speech_prob": 0.0,
+      "start": 692.14,
+      "text": "过去的人以为我是爱黄色"
+    },
+    {
+      "avg_logprob": -0.176371,
+      "compression_ratio": 1.608108,
+      "end": 695.14,
+      "no_speech_prob": 0.0,
+      "start": 694.14,
+      "text": "我爱看模特"
+    },
+    {
+      "avg_logprob": -0.176371,
+      "compression_ratio": 1.608108,
+      "end": 696.14,
+      "no_speech_prob": 0.0,
+      "start": 695.14,
+      "text": "模特秀是吧"
+    },
+    {
+      "avg_logprob": -0.176371,
+      "compression_ratio": 1.608108,
+      "end": 698.14,
+      "no_speech_prob": 0.0,
+      "start": 696.14,
+      "text": "我看的是时尚"
+    },
+    {
+      "avg_logprob": -0.176371,
+      "compression_ratio": 1.608108,
+      "end": 699.14,
+      "no_speech_prob": 0.0,
+      "start": 698.14,
+      "text": "但我局"
+    },
+    {
+      "avg_logprob": -0.176371,
+      "compression_ratio": 1.608108,
+      "end": 700.14,
+      "no_speech_prob": 0.0,
+      "start": 699.14,
+      "text": "任何模特秀"
+    },
+    {
+      "avg_logprob": -0.176371,
+      "compression_ratio": 1.608108,
+      "end": 701.14,
+      "no_speech_prob": 0.0,
+      "start": 700.14,
+      "text": "我不会去看"
+    },
+    {
+      "avg_logprob": -0.176371,
+      "compression_ratio": 1.608108,
+      "end": 702.14,
+      "no_speech_prob": 0.0,
+      "start": 701.14,
+      "text": "从头看的完"
+    },
+    {
+      "avg_logprob": -0.176371,
+      "compression_ratio": 1.608108,
+      "end": 703.14,
+      "no_speech_prob": 0.0,
+      "start": 702.14,
+      "text": "我不会的"
+    },
+    {
+      "avg_logprob": -0.176371,
+      "compression_ratio": 1.608108,
+      "end": 704.14,
+      "no_speech_prob": 0.0,
+      "start": 703.14,
+      "text": "我划一下"
+    },
+    {
+      "avg_logprob": -0.176371,
+      "compression_ratio": 1.608108,
+      "end": 705.14,
+      "no_speech_prob": 0.0,
+      "start": 704.14,
+      "text": "就那几个模特"
+    },
+    {
+      "avg_logprob": -0.176371,
+      "compression_ratio": 1.608108,
+      "end": 707.14,
+      "no_speech_prob": 0.0,
+      "start": 705.14,
+      "text": "我前面看一看"
+    },
+    {
+      "avg_logprob": -0.176371,
+      "compression_ratio": 1.608108,
+      "end": 708.14,
+      "no_speech_prob": 0.0,
+      "start": 707.14,
+      "text": "然后中间我划一下"
+    },
+    {
+      "avg_logprob": -0.176371,
+      "compression_ratio": 1.608108,
+      "end": 709.14,
+      "no_speech_prob": 0.0,
+      "start": 708.14,
+      "text": "后面看一看"
+    },
+    {
+      "avg_logprob": -0.176371,
+      "compression_ratio": 1.608108,
+      "end": 710.14,
+      "no_speech_prob": 0.0,
+      "start": 709.14,
+      "text": "结束了"
+    },
+    {
+      "avg_logprob": -0.176371,
+      "compression_ratio": 1.608108,
+      "end": 712.14,
+      "no_speech_prob": 0.0,
+      "start": 711.14,
+      "text": "我就不会"
+    },
+    {
+      "avg_logprob": -0.176371,
+      "compression_ratio": 1.608108,
+      "end": 713.14,
+      "no_speech_prob": 0.0,
+      "start": 712.14,
+      "text": "我不会给像二十年"
+    },
+    {
+      "avg_logprob": -0.176371,
+      "compression_ratio": 1.608108,
+      "end": 714.14,
+      "no_speech_prob": 0.0,
+      "start": 713.14,
+      "text": "你们去看完的"
+    },
+    {
+      "avg_logprob": -0.176371,
+      "compression_ratio": 1.608108,
+      "end": 715.14,
+      "no_speech_prob": 0.0,
+      "start": 714.14,
+      "text": "我不会看完的"
+    },
+    {
+      "avg_logprob": -0.176371,
+      "compression_ratio": 1.608108,
+      "end": 716.14,
+      "no_speech_prob": 0.0,
+      "start": 715.14,
+      "text": "它就那几个重点"
+    },
+    {
+      "avg_logprob": -0.154099,
+      "compression_ratio": 1.512097,
+      "end": 718.14,
+      "no_speech_prob": 0.0,
+      "start": 716.14,
+      "text": "我干嘛浪费那么多时间"
+    },
+    {
+      "avg_logprob": -0.154099,
+      "compression_ratio": 1.512097,
+      "end": 719.14,
+      "no_speech_prob": 0.0,
+      "start": 718.14,
+      "text": "那么你"
+    },
+    {
+      "avg_logprob": -0.154099,
+      "compression_ratio": 1.512097,
+      "end": 720.14,
+      "no_speech_prob": 0.0,
+      "start": 719.14,
+      "text": "你感兴趣什么现在"
+    },
+    {
+      "avg_logprob": -0.154099,
+      "compression_ratio": 1.512097,
+      "end": 722.14,
+      "no_speech_prob": 0.0,
+      "start": 720.14,
+      "text": "就是灭共"
+    },
+    {
+      "avg_logprob": -0.154099,
+      "compression_ratio": 1.512097,
+      "end": 723.14,
+      "no_speech_prob": 0.0,
+      "start": 722.14,
+      "text": "我现在感兴趣"
+    },
+    {
+      "avg_logprob": -0.154099,
+      "compression_ratio": 1.512097,
+      "end": 724.14,
+      "no_speech_prob": 0.0,
+      "start": 723.14,
+      "text": "你太大"
+    },
+    {
+      "avg_logprob": -0.154099,
+      "compression_ratio": 1.512097,
+      "end": 725.14,
+      "no_speech_prob": 0.0,
+      "start": 724.14,
+      "text": "你太小了"
+    },
+    {
+      "avg_logprob": -0.154099,
+      "compression_ratio": 1.512097,
+      "end": 726.14,
+      "no_speech_prob": 0.0,
+      "start": 725.14,
+      "text": "你跟你爹灭共可以这么说"
+    },
+    {
+      "avg_logprob": -0.154099,
+      "compression_ratio": 1.512097,
+      "end": 728.14,
+      "no_speech_prob": 0.0,
+      "start": 726.14,
+      "text": "你灭共现在不能成为你的全部"
+    },
+    {
+      "avg_logprob": -0.154099,
+      "compression_ratio": 1.512097,
+      "end": 730.14,
+      "no_speech_prob": 0.0,
+      "start": 728.14,
+      "text": "你的生活爱好"
+    },
+    {
+      "avg_logprob": -0.154099,
+      "compression_ratio": 1.512097,
+      "end": 731.14,
+      "no_speech_prob": 0.0,
+      "start": 730.14,
+      "text": "你是什么"
+    },
+    {
+      "avg_logprob": -0.154099,
+      "compression_ratio": 1.512097,
+      "end": 732.14,
+      "no_speech_prob": 0.0,
+      "start": 731.14,
+      "text": "除了灭共"
+    },
+    {
+      "avg_logprob": -0.154099,
+      "compression_ratio": 1.512097,
+      "end": 733.14,
+      "no_speech_prob": 0.0,
+      "start": 732.14,
+      "text": "你不能老板"
+    },
+    {
+      "avg_logprob": -0.154099,
+      "compression_ratio": 1.512097,
+      "end": 734.14,
+      "no_speech_prob": 0.0,
+      "start": 733.14,
+      "text": "你们太小了"
+    },
+    {
+      "avg_logprob": -0.154099,
+      "compression_ratio": 1.512097,
+      "end": 735.14,
+      "no_speech_prob": 0.0,
+      "start": 734.14,
+      "text": "不是"
+    },
+    {
+      "avg_logprob": -0.154099,
+      "compression_ratio": 1.512097,
+      "end": 736.14,
+      "no_speech_prob": 0.0,
+      "start": 735.14,
+      "text": "当我说到我"
+    },
+    {
+      "avg_logprob": -0.154099,
+      "compression_ratio": 1.512097,
+      "end": 737.14,
+      "no_speech_prob": 0.0,
+      "start": 736.14,
+      "text": "我现在最重要的事情"
+    },
+    {
+      "avg_logprob": -0.154099,
+      "compression_ratio": 1.512097,
+      "end": 738.14,
+      "no_speech_prob": 0.0,
+      "start": 737.14,
+      "text": "是灭共"
+    },
+    {
+      "avg_logprob": -0.154099,
+      "compression_ratio": 1.512097,
+      "end": 739.14,
+      "no_speech_prob": 0.0,
+      "start": 738.14,
+      "text": "我不是在开玩笑"
+    },
+    {
+      "avg_logprob": -0.154099,
+      "compression_ratio": 1.512097,
+      "end": 740.14,
+      "no_speech_prob": 0.0,
+      "start": 739.14,
+      "text": "我也不是很官方"
+    },
+    {
+      "avg_logprob": -0.088285,
+      "compression_ratio": 1.510135,
+      "end": 741.14,
+      "no_speech_prob": 0.0,
+      "start": 740.14,
+      "text": "因为我的家人"
+    },
+    {
+      "avg_logprob": -0.088285,
+      "compression_ratio": 1.510135,
+      "end": 743.14,
+      "no_speech_prob": 0.0,
+      "start": 741.14,
+      "text": "包括我的童年"
+    },
+    {
+      "avg_logprob": -0.088285,
+      "compression_ratio": 1.510135,
+      "end": 744.14,
+      "no_speech_prob": 0.0,
+      "start": 743.14,
+      "text": "就是我当时十一岁"
+    },
+    {
+      "avg_logprob": -0.088285,
+      "compression_ratio": 1.510135,
+      "end": 745.14,
+      "no_speech_prob": 0.0,
+      "start": 744.14,
+      "text": "当时被赶"
+    },
+    {
+      "avg_logprob": -0.088285,
+      "compression_ratio": 1.510135,
+      "end": 746.14,
+      "no_speech_prob": 0.0,
+      "start": 745.14,
+      "text": "就是从中国"
+    },
+    {
+      "avg_logprob": -0.088285,
+      "compression_ratio": 1.510135,
+      "end": 748.14,
+      "no_speech_prob": 0.0,
+      "start": 746.14,
+      "text": "被共产党赶出家园的时候"
+    },
+    {
+      "avg_logprob": -0.088285,
+      "compression_ratio": 1.510135,
+      "end": 750.14,
+      "no_speech_prob": 0.0,
+      "start": 748.14,
+      "text": "那种打击是非常巨大的"
+    },
+    {
+      "avg_logprob": -0.088285,
+      "compression_ratio": 1.510135,
+      "end": 751.14,
+      "no_speech_prob": 0.0,
+      "start": 750.14,
+      "text": "对我的心理产生"
+    },
+    {
+      "avg_logprob": -0.088285,
+      "compression_ratio": 1.510135,
+      "end": 753.14,
+      "no_speech_prob": 0.0,
+      "start": 751.14,
+      "text": "你这是要报仇在家灭共"
+    },
+    {
+      "avg_logprob": -0.088285,
+      "compression_ratio": 1.510135,
+      "end": 755.14,
+      "no_speech_prob": 0.0,
+      "start": 753.14,
+      "text": "但如果您说就是日常生活"
+    },
+    {
+      "avg_logprob": -0.088285,
+      "compression_ratio": 1.510135,
+      "end": 756.14,
+      "no_speech_prob": 0.0,
+      "start": 755.14,
+      "text": "轻松的东西"
+    },
+    {
+      "avg_logprob": -0.088285,
+      "compression_ratio": 1.510135,
+      "end": 757.14,
+      "no_speech_prob": 0.0,
+      "start": 756.14,
+      "text": "我喜欢什么"
+    },
+    {
+      "avg_logprob": -0.088285,
+      "compression_ratio": 1.510135,
+      "end": 758.14,
+      "no_speech_prob": 0.0,
+      "start": 757.14,
+      "text": "我比较喜欢电子游戏"
+    },
+    {
+      "avg_logprob": -0.088285,
+      "compression_ratio": 1.510135,
+      "end": 761.14,
+      "no_speech_prob": 0.0,
+      "start": 758.14,
+      "text": "然后一些搞笑视频"
+    },
+    {
+      "avg_logprob": -0.088285,
+      "compression_ratio": 1.510135,
+      "end": 762.14,
+      "no_speech_prob": 0.0,
+      "start": 761.14,
+      "text": "这些我比较喜欢"
+    },
+    {
+      "avg_logprob": -0.088285,
+      "compression_ratio": 1.510135,
+      "end": 763.14,
+      "no_speech_prob": 0.0,
+      "start": 762.14,
+      "text": "然后一些猫猫狗狗"
+    },
+    {
+      "avg_logprob": -0.088285,
+      "compression_ratio": 1.510135,
+      "end": 764.14,
+      "no_speech_prob": 0.0,
+      "start": 763.14,
+      "text": "这种轻松一些的东西"
+    },
+    {
+      "avg_logprob": -0.088285,
+      "compression_ratio": 1.510135,
+      "end": 766.14,
+      "no_speech_prob": 0.0,
+      "start": 764.14,
+      "text": "给我的生活能带来一些"
+    },
+    {
+      "avg_logprob": -0.088285,
+      "compression_ratio": 1.510135,
+      "end": 769.14,
+      "no_speech_prob": 0.0,
+      "start": 766.14,
+      "text": "一些就是一些逃避吧"
+    },
+    {
+      "avg_logprob": -0.163379,
+      "compression_ratio": 1.449324,
+      "end": 770.14,
+      "no_speech_prob": 0.0,
+      "start": 769.14,
+      "text": "可以这么说"
+    },
+    {
+      "avg_logprob": -0.163379,
+      "compression_ratio": 1.449324,
+      "end": 771.14,
+      "no_speech_prob": 0.0,
+      "start": 770.14,
+      "text": "也很健康啊"
+    },
+    {
+      "avg_logprob": -0.163379,
+      "compression_ratio": 1.449324,
+      "end": 772.14,
+      "no_speech_prob": 0.0,
+      "start": 771.14,
+      "text": "非常健康"
+    },
+    {
+      "avg_logprob": -0.163379,
+      "compression_ratio": 1.449324,
+      "end": 773.14,
+      "no_speech_prob": 0.0,
+      "start": 772.14,
+      "text": "不叫逃避很健康"
+    },
+    {
+      "avg_logprob": -0.163379,
+      "compression_ratio": 1.449324,
+      "end": 774.14,
+      "no_speech_prob": 0.0,
+      "start": 773.14,
+      "text": "每个人都在逃避"
+    },
+    {
+      "avg_logprob": -0.163379,
+      "compression_ratio": 1.449324,
+      "end": 776.14,
+      "no_speech_prob": 0.0,
+      "start": 774.14,
+      "text": "连教皇都看什么"
+    },
+    {
+      "avg_logprob": -0.163379,
+      "compression_ratio": 1.449324,
+      "end": 777.14,
+      "no_speech_prob": 0.0,
+      "start": 776.14,
+      "text": "你懂得吗"
+    },
+    {
+      "avg_logprob": -0.163379,
+      "compression_ratio": 1.449324,
+      "end": 779.14,
+      "no_speech_prob": 0.0,
+      "start": 777.14,
+      "text": "所有的教皇晚上回家"
+    },
+    {
+      "avg_logprob": -0.163379,
+      "compression_ratio": 1.449324,
+      "end": 780.14,
+      "no_speech_prob": 0.0,
+      "start": 779.14,
+      "text": "全是听音乐"
+    },
+    {
+      "avg_logprob": -0.163379,
+      "compression_ratio": 1.449324,
+      "end": 781.14,
+      "no_speech_prob": 0.0,
+      "start": 780.14,
+      "text": "摇滚音乐"
+    },
+    {
+      "avg_logprob": -0.163379,
+      "compression_ratio": 1.449324,
+      "end": 782.14,
+      "no_speech_prob": 0.0,
+      "start": 781.14,
+      "text": "他们原来不知道"
+    },
+    {
+      "avg_logprob": -0.163379,
+      "compression_ratio": 1.449324,
+      "end": 783.14,
+      "no_speech_prob": 0.0,
+      "start": 782.14,
+      "text": "是听音乐的"
+    },
+    {
+      "avg_logprob": -0.163379,
+      "compression_ratio": 1.449324,
+      "end": 784.14,
+      "no_speech_prob": 0.0,
+      "start": 783.14,
+      "text": "地下音乐"
+    },
+    {
+      "avg_logprob": -0.163379,
+      "compression_ratio": 1.449324,
+      "end": 786.14,
+      "no_speech_prob": 0.0,
+      "start": 784.14,
+      "text": "摇滚音乐"
+    },
+    {
+      "avg_logprob": -0.163379,
+      "compression_ratio": 1.449324,
+      "end": 787.14,
+      "no_speech_prob": 0.0,
+      "start": 786.14,
+      "text": "黄天"
+    },
+    {
+      "avg_logprob": -0.163379,
+      "compression_ratio": 1.449324,
+      "end": 788.14,
+      "no_speech_prob": 0.0,
+      "start": 787.14,
+      "text": "教皇看最多"
+    },
+    {
+      "avg_logprob": -0.163379,
+      "compression_ratio": 1.449324,
+      "end": 789.14,
+      "no_speech_prob": 0.0,
+      "start": 788.14,
+      "text": "天啊"
+    },
+    {
+      "avg_logprob": -0.163379,
+      "compression_ratio": 1.449324,
+      "end": 790.14,
+      "no_speech_prob": 0.0,
+      "start": 789.14,
+      "text": "这个料爆的有点大"
+    },
+    {
+      "avg_logprob": -0.163379,
+      "compression_ratio": 1.449324,
+      "end": 791.14,
+      "no_speech_prob": 0.0,
+      "start": 790.14,
+      "text": "这是绝对的"
+    },
+    {
+      "avg_logprob": -0.163379,
+      "compression_ratio": 1.449324,
+      "end": 792.14,
+      "no_speech_prob": 0.0,
+      "start": 791.14,
+      "text": "这是故事不一定开玩笑的"
+    },
+    {
+      "avg_logprob": -0.163379,
+      "compression_ratio": 1.449324,
+      "end": 793.14,
+      "no_speech_prob": 0.0,
+      "start": 792.14,
+      "text": "一定"
+    },
+    {
+      "avg_logprob": -0.163379,
+      "compression_ratio": 1.449324,
+      "end": 794.14,
+      "no_speech_prob": 0.0,
+      "start": 793.14,
+      "text": "你看到拍照"
+    },
+    {
+      "avg_logprob": -0.163379,
+      "compression_ratio": 1.449324,
+      "end": 795.14,
+      "no_speech_prob": 0.0,
+      "start": 794.14,
+      "text": "你回看电影"
+    },
+    {
+      "avg_logprob": -0.163379,
+      "compression_ratio": 1.449324,
+      "end": 796.14,
+      "no_speech_prob": 0.0,
+      "start": 795.14,
+      "text": "我建议你们"
+    },
+    {
+      "avg_logprob": -0.163379,
+      "compression_ratio": 1.449324,
+      "end": 797.14,
+      "no_speech_prob": 0.0,
+      "start": 796.14,
+      "text": "一定要记住"
+    },
+    {
+      "avg_logprob": -0.163379,
+      "compression_ratio": 1.449324,
+      "end": 798.14,
+      "no_speech_prob": 0.0,
+      "start": 797.14,
+      "text": "每周给自己两个东西要看"
+    },
+    {
+      "avg_logprob": -0.117784,
+      "compression_ratio": 1.491429,
+      "end": 800.14,
+      "no_speech_prob": 0.0,
+      "start": 798.14,
+      "text": "看一个纪录片"
+    },
+    {
+      "avg_logprob": -0.117784,
+      "compression_ratio": 1.491429,
+      "end": 802.14,
+      "no_speech_prob": 0.0,
+      "start": 800.14,
+      "text": "千万别看乱拍的片"
+    },
+    {
+      "avg_logprob": -0.117784,
+      "compression_ratio": 1.491429,
+      "end": 803.14,
+      "no_speech_prob": 0.0,
+      "start": 802.14,
+      "text": "看一个纪录片"
+    },
+    {
+      "avg_logprob": -0.117784,
+      "compression_ratio": 1.491429,
+      "end": 804.14,
+      "no_speech_prob": 0.0,
+      "start": 803.14,
+      "text": "因为纪录片"
+    },
+    {
+      "avg_logprob": -0.117784,
+      "compression_ratio": 1.491429,
+      "end": 806.14,
+      "no_speech_prob": 0.0,
+      "start": 804.14,
+      "text": "绝大多数还是有事实的嘛"
+    },
+    {
+      "avg_logprob": -0.117784,
+      "compression_ratio": 1.491429,
+      "end": 808.14,
+      "no_speech_prob": 0.0,
+      "start": 806.14,
+      "text": "所以你们不要乱看乱片"
+    },
+    {
+      "avg_logprob": -0.117784,
+      "compression_ratio": 1.491429,
+      "end": 809.14,
+      "no_speech_prob": 0.0,
+      "start": 808.14,
+      "text": "看个纪录片"
+    },
+    {
+      "avg_logprob": -0.117784,
+      "compression_ratio": 1.491429,
+      "end": 810.14,
+      "no_speech_prob": 0.0,
+      "start": 809.14,
+      "text": "是一个"
+    },
+    {
+      "avg_logprob": -0.117784,
+      "compression_ratio": 1.491429,
+      "end": 813.14,
+      "no_speech_prob": 0.0,
+      "start": 810.14,
+      "text": "听上几首最新的歌"
+    },
+    {
+      "avg_logprob": -0.117784,
+      "compression_ratio": 1.491429,
+      "end": 814.14,
+      "no_speech_prob": 0.0,
+      "start": 813.14,
+      "text": "最新的歌"
+    },
+    {
+      "avg_logprob": -0.117784,
+      "compression_ratio": 1.491429,
+      "end": 815.14,
+      "no_speech_prob": 0.0,
+      "start": 814.14,
+      "text": "最新的歌"
+    },
+    {
+      "avg_logprob": -0.117784,
+      "compression_ratio": 1.491429,
+      "end": 816.14,
+      "no_speech_prob": 0.0,
+      "start": 815.14,
+      "text": "不管喜不愿"
+    },
+    {
+      "avg_logprob": -0.117784,
+      "compression_ratio": 1.491429,
+      "end": 817.14,
+      "no_speech_prob": 0.0,
+      "start": 816.14,
+      "text": "都试试尝试它"
+    },
+    {
+      "avg_logprob": -0.117784,
+      "compression_ratio": 1.491429,
+      "end": 818.14,
+      "no_speech_prob": 0.0,
+      "start": 817.14,
+      "text": "这是个时代嘛"
+    },
+    {
+      "avg_logprob": -0.1659,
+      "compression_ratio": 1.297674,
+      "end": 819.14,
+      "no_speech_prob": 0.0,
+      "start": 818.14,
+      "text": "然后呢"
+    },
+    {
+      "avg_logprob": -0.1659,
+      "compression_ratio": 1.297674,
+      "end": 820.14,
+      "no_speech_prob": 0.0,
+      "start": 819.14,
+      "text": "有时间的话"
+    },
+    {
+      "avg_logprob": -0.1659,
+      "compression_ratio": 1.297674,
+      "end": 822.14,
+      "no_speech_prob": 0.0,
+      "start": 820.14,
+      "text": "你们小孩不喜欢古典音乐"
+    },
+    {
+      "avg_logprob": -0.1659,
+      "compression_ratio": 1.297674,
+      "end": 823.14,
+      "no_speech_prob": 0.0,
+      "start": 822.14,
+      "text": "这是玩古典音乐"
+    },
+    {
+      "avg_logprob": -0.1659,
+      "compression_ratio": 1.297674,
+      "end": 825.14,
+      "no_speech_prob": 0.0,
+      "start": 823.14,
+      "text": "我觉得你可以尝试再听一些古典音乐"
+    },
+    {
+      "avg_logprob": -0.1659,
+      "compression_ratio": 1.297674,
+      "end": 826.14,
+      "no_speech_prob": 0.0,
+      "start": 825.14,
+      "text": "这是一个"
+    },
+    {
+      "avg_logprob": -0.1659,
+      "compression_ratio": 1.297674,
+      "end": 829.14,
+      "no_speech_prob": 0.0,
+      "start": 826.14,
+      "text": "这个距离和时光的一个浓缩的办法"
+    },
+    {
+      "avg_logprob": -0.1659,
+      "compression_ratio": 1.297674,
+      "end": 831.14,
+      "no_speech_prob": 0.0,
+      "start": 829.14,
+      "text": "因为你在看电影的时候呢"
+    },
+    {
+      "avg_logprob": -0.1659,
+      "compression_ratio": 1.297674,
+      "end": 832.14,
+      "no_speech_prob": 0.0,
+      "start": 831.14,
+      "text": "它会给你很多灵感"
+    },
+    {
+      "avg_logprob": -0.1659,
+      "compression_ratio": 1.297674,
+      "end": 833.14,
+      "no_speech_prob": 0.0,
+      "start": 832.14,
+      "text": "就你说转移啊"
+    },
+    {
+      "avg_logprob": -0.1659,
+      "compression_ratio": 1.297674,
+      "end": 835.14,
+      "no_speech_prob": 0.0,
+      "start": 833.14,
+      "text": "灵感的都会来的"
+    },
+    {
+      "avg_logprob": -0.141171,
+      "compression_ratio": 1.416974,
+      "end": 837.14,
+      "no_speech_prob": 0.0,
+      "start": 835.14,
+      "text": "我不管多忙"
+    },
+    {
+      "avg_logprob": -0.141171,
+      "compression_ratio": 1.416974,
+      "end": 838.14,
+      "no_speech_prob": 0.0,
+      "start": 837.14,
+      "text": "一定看电影"
+    },
+    {
+      "avg_logprob": -0.141171,
+      "compression_ratio": 1.416974,
+      "end": 841.14,
+      "no_speech_prob": 0.0,
+      "start": 838.14,
+      "text": "这个屋里有人可以证明"
+    },
+    {
+      "avg_logprob": -0.141171,
+      "compression_ratio": 1.416974,
+      "end": 842.14,
+      "no_speech_prob": 0.0,
+      "start": 841.14,
+      "text": "专门负责给我看电影的"
+    },
+    {
+      "avg_logprob": -0.141171,
+      "compression_ratio": 1.416974,
+      "end": 843.14,
+      "no_speech_prob": 0.0,
+      "start": 842.14,
+      "text": "就这个"
+    },
+    {
+      "avg_logprob": -0.141171,
+      "compression_ratio": 1.416974,
+      "end": 846.14,
+      "no_speech_prob": 0.0,
+      "start": 843.14,
+      "text": "他就负责给我"
+    },
+    {
+      "avg_logprob": -0.141171,
+      "compression_ratio": 1.416974,
+      "end": 847.14,
+      "no_speech_prob": 0.0,
+      "start": 846.14,
+      "text": "把电影准备好"
+    },
+    {
+      "avg_logprob": -0.141171,
+      "compression_ratio": 1.416974,
+      "end": 848.14,
+      "no_speech_prob": 0.0,
+      "start": 847.14,
+      "text": "我到电影院啪一个人看"
+    },
+    {
+      "avg_logprob": -0.141171,
+      "compression_ratio": 1.416974,
+      "end": 849.14,
+      "no_speech_prob": 0.0,
+      "start": 848.14,
+      "text": "看"
+    },
+    {
+      "avg_logprob": -0.141171,
+      "compression_ratio": 1.416974,
+      "end": 850.14,
+      "no_speech_prob": 0.0,
+      "start": 849.14,
+      "text": "是吧"
+    },
+    {
+      "avg_logprob": -0.141171,
+      "compression_ratio": 1.416974,
+      "end": 852.14,
+      "no_speech_prob": 0.0,
+      "start": 850.14,
+      "text": "而这个中间我是绝对不看手机的"
+    },
+    {
+      "avg_logprob": -0.141171,
+      "compression_ratio": 1.416974,
+      "end": 853.14,
+      "no_speech_prob": 0.0,
+      "start": 852.14,
+      "text": "我认真地看"
+    },
+    {
+      "avg_logprob": -0.141171,
+      "compression_ratio": 1.416974,
+      "end": 854.14,
+      "no_speech_prob": 0.0,
+      "start": 853.14,
+      "text": "我看完还会思考"
+    },
+    {
+      "avg_logprob": -0.141171,
+      "compression_ratio": 1.416974,
+      "end": 856.14,
+      "no_speech_prob": 0.0,
+      "start": 854.14,
+      "text": "甚至有时候我再回来会露一遍"
+    },
+    {
+      "avg_logprob": -0.141171,
+      "compression_ratio": 1.416974,
+      "end": 858.14,
+      "no_speech_prob": 0.0,
+      "start": 856.14,
+      "text": "说我见你们要看看电影"
+    },
+    {
+      "avg_logprob": -0.141171,
+      "compression_ratio": 1.416974,
+      "end": 859.14,
+      "no_speech_prob": 0.0,
+      "start": 858.14,
+      "text": "然后呢"
+    },
+    {
+      "avg_logprob": -0.141171,
+      "compression_ratio": 1.416974,
+      "end": 860.14,
+      "no_speech_prob": 0.0,
+      "start": 859.14,
+      "text": "听点好的音乐"
+    },
+    {
+      "avg_logprob": -0.141171,
+      "compression_ratio": 1.416974,
+      "end": 862.14,
+      "no_speech_prob": 0.0,
+      "start": 860.14,
+      "text": "音乐这个东西"
+    },
+    {
+      "avg_logprob": -0.141171,
+      "compression_ratio": 1.416974,
+      "end": 863.14,
+      "no_speech_prob": 0.0,
+      "start": 862.14,
+      "text": "它力量太大了"
+    },
+    {
+      "avg_logprob": -0.154113,
+      "compression_ratio": 1.388889,
+      "end": 865.14,
+      "no_speech_prob": 0.0,
+      "start": 863.14,
+      "text": "包括有时候听点古典音乐"
+    },
+    {
+      "avg_logprob": -0.154113,
+      "compression_ratio": 1.388889,
+      "end": 866.14,
+      "no_speech_prob": 0.0,
+      "start": 865.14,
+      "text": "你会让你很舒服"
+    },
+    {
+      "avg_logprob": -0.154113,
+      "compression_ratio": 1.388889,
+      "end": 867.14,
+      "no_speech_prob": 0.0,
+      "start": 866.14,
+      "text": "对"
+    },
+    {
+      "avg_logprob": -0.154113,
+      "compression_ratio": 1.388889,
+      "end": 868.14,
+      "no_speech_prob": 0.0,
+      "start": 867.14,
+      "text": "而且你现在要灭共的"
+    },
+    {
+      "avg_logprob": -0.154113,
+      "compression_ratio": 1.388889,
+      "end": 870.14,
+      "no_speech_prob": 0.0,
+      "start": 868.14,
+      "text": "最好办法你要强大"
+    },
+    {
+      "avg_logprob": -0.154113,
+      "compression_ratio": 1.388889,
+      "end": 872.14,
+      "no_speech_prob": 0.0,
+      "start": 870.14,
+      "text": "你告诉我你看你刚才那些生活"
+    },
+    {
+      "avg_logprob": -0.154113,
+      "compression_ratio": 1.388889,
+      "end": 873.14,
+      "no_speech_prob": 0.0,
+      "start": 872.14,
+      "text": "怎么能帮你灭共呢"
+    },
+    {
+      "avg_logprob": -0.154113,
+      "compression_ratio": 1.388889,
+      "end": 875.14,
+      "no_speech_prob": 0.0,
+      "start": 873.14,
+      "text": "你什么也帮不了你啊"
+    },
+    {
+      "avg_logprob": -0.154113,
+      "compression_ratio": 1.388889,
+      "end": 876.14,
+      "no_speech_prob": 0.0,
+      "start": 875.14,
+      "text": "是的"
+    },
+    {
+      "avg_logprob": -0.154113,
+      "compression_ratio": 1.388889,
+      "end": 877.14,
+      "no_speech_prob": 0.0,
+      "start": 876.14,
+      "text": "对啊"
+    },
+    {
+      "avg_logprob": -0.154113,
+      "compression_ratio": 1.388889,
+      "end": 879.14,
+      "no_speech_prob": 0.0,
+      "start": 877.14,
+      "text": "你没钱怎么灭共啊"
+    },
+    {
+      "avg_logprob": -0.154113,
+      "compression_ratio": 1.388889,
+      "end": 880.14,
+      "no_speech_prob": 0.0,
+      "start": 879.14,
+      "text": "你没有权力"
+    },
+    {
+      "avg_logprob": -0.154113,
+      "compression_ratio": 1.388889,
+      "end": 881.14,
+      "no_speech_prob": 0.0,
+      "start": 880.14,
+      "text": "没有能力"
+    },
+    {
+      "avg_logprob": -0.154113,
+      "compression_ratio": 1.388889,
+      "end": 882.14,
+      "no_speech_prob": 0.0,
+      "start": 881.14,
+      "text": "你咋灭共啊"
+    },
+    {
+      "avg_logprob": -0.154113,
+      "compression_ratio": 1.388889,
+      "end": 884.14,
+      "no_speech_prob": 0.0,
+      "start": 882.14,
+      "text": "我觉得就是像我这个年龄"
+    },
+    {
+      "avg_logprob": -0.154113,
+      "compression_ratio": 1.388889,
+      "end": 885.14,
+      "no_speech_prob": 0.0,
+      "start": 884.14,
+      "text": "我今年20岁了"
+    },
+    {
+      "avg_logprob": -0.154113,
+      "compression_ratio": 1.388889,
+      "end": 886.14,
+      "no_speech_prob": 0.0,
+      "start": 885.14,
+      "text": "快21"
+    },
+    {
+      "avg_logprob": -0.154113,
+      "compression_ratio": 1.388889,
+      "end": 887.14,
+      "no_speech_prob": 0.0,
+      "start": 886.14,
+      "text": "实际很大了你已经"
+    },
+    {
+      "avg_logprob": -0.154113,
+      "compression_ratio": 1.388889,
+      "end": 889.14,
+      "no_speech_prob": 0.0,
+      "start": 887.14,
+      "text": "你今天混在这有点不对劲"
+    },
+    {
+      "avg_logprob": -0.154113,
+      "compression_ratio": 1.388889,
+      "end": 890.14,
+      "no_speech_prob": 0.0,
+      "start": 889.14,
+      "text": "哈哈"
+    },
+    {
+      "avg_logprob": -0.256145,
+      "compression_ratio": 1.095745,
+      "end": 895.14,
+      "no_speech_prob": 0.0,
+      "start": 890.14,
+      "text": "记住20岁的时候我儿子都已经是多大了都已经"
+    },
+    {
+      "avg_logprob": -0.256145,
+      "compression_ratio": 1.095745,
+      "end": 896.14,
+      "no_speech_prob": 0.0,
+      "start": 895.14,
+      "text": "我儿子四岁了"
+    },
+    {
+      "avg_logprob": -0.256145,
+      "compression_ratio": 1.095745,
+      "end": 899.14,
+      "no_speech_prob": 0.0,
+      "start": 896.14,
+      "text": "我16岁当爹啊"
+    },
+    {
+      "avg_logprob": -0.256145,
+      "compression_ratio": 1.095745,
+      "end": 900.14,
+      "no_speech_prob": 0.0,
+      "start": 899.14,
+      "text": "对对对"
+    }
+  ],
+  "text": "谢谢大家谢谢大家谢谢大家谢谢大家谢谢大家谢谢大家谢谢大家谢谢大家谢谢大家你们问我回答咱就今天的方式现在开始啊咱没有选择的啊咱现在从20开始就这么转顺势这转公平的你问完我回答想问啥想问啥说啥想问啥想你要问的就是那很官方的问题我就不回答我的沉默就表示我反抗开始吧我 occasions loud gun Max Cart suit mi although我早肯定人聋会和老师但是我早日用来走 вот早餐我特別隆重啊回答你一定要記住你可以不吃午餐 可以不吃晚餐一定要吃早餐但早餐不是早上吃的我早上醒來 我告訴我很多次特別是你們一定要相信 Uncle Miles這是我人生跟無數個富豪皇帝 政治家 流氓 黑社會打交道的結果總結出來的 對你們適用早上醒來 第一件事 進去馬上 就 千萬別猛起床呼吸十九八七六三十六你是信什麼教 你就念你的神你信佛 就念佛然後呼吸 就這一天開始進洗腦間漱口不用刷牙 漱口把漱口漱乾淨誰咒下去一杯溫水就是這麼一杯喝掉了文保浪仔這兒是藝術生懂的喝掉以後一定吃一個非常喜歡的蘋果一定要帶皮把蘋果吃到這是我的早餐開始然後我就會去刷牙你看 过去没有了 过去只刷牙 是吧现在又是洗眼睛 刷牙 洗鼻子这一套活很麻烦的 还刮胡子所以我这很多事 我这时候就要看手机了这个完了以后 我去锻炼去锻炼完以后 我现在的早上是两根海参是必须吃的你们现在太早了 你吃完以后你们都会乘强奸犯的这是不可以的 这太小 对不起啊你们不要去吃 25岁以后可以吃但是你这个时候吃完最好吃点非常好的荞麦呀 酸奶呀 这都可以呀还有一些香蕉呀 这些东西要补一点能量一定要吃水果的东西最好是青菜汁 运动完吃这些东西这就是早餐我觉得这是你最好运动完吃的如果是你们不愿意吃早餐的话最好是早午餐一起吃 叫Bronche我看过最健康的西班牙人因为我不了解西班牙人为什么他们每天晚上吃饭吃到12点还能活那么长寿平均80几岁一个是橄榄油一个喝红酒一个就是他吃棒吃 他不吃早午餐他不是不吃早餐和午餐 他只把早餐和午餐一起吃所以对你们健康千万记住孩子没有比你们健康最重要的爹妈也不重要一定是你的健康最重要健康完再安全你不健康你安全有什么用啊 都病人躺在病床上 是吧你有健康了不安全 你进监狱了 你有什么用啊 什么都没了这两样是一生的一切 超过父母 超过一切二次你要听这句话 你可以试一试明天开始我监督你我们每天也是早上吃苹果喝酒是吧我们每天早上吃苹果喝酒所以那么漂亮谢谢那么也精气神你的好的 我也没有想要特别好的问题但是作为一个年轻人活在现在混乱的世界里我发现每天的好像你很大说的没有没有 就是每一天我发现就是比如说拿一个很简单的例子现在的社交媒体 比如说Facebook它这些大公司 巨大的社交媒体给每个年轻人都灌输了很多很多他们想要给你灌输的思想那么在这样的世界2022年这样的世界有共产党的影响有这么多邪恶的影响我们这些年轻人最需要警惕的东西是什么然后我们如何抵抗这些诱惑 这些干扰哎呀 这个话题实际上很简单没有比你们再幸福的了因为是活在个社交媒体的时代在社交媒体上生存就等同意在垃圾堆里边去找出自己的钻石你要在里边老巴拉的找你永远找不到钻石你就成垃圾了如何找到自己的钻石呢这是确实需要智慧这个需要你绝对的一个人生最高的控制就我每天我看什么一定是有限制你看我每天你看跟你们在一起我不会耽误我影响我办这些事情就是我一定告诉我今天我要看的新闻我一定要看完它就像我看书一样我在车上我今天看这本书我在车上哗哗翻完我把重点看完我搞懂了我过来再翻一遍我再搞懂这书就过去了就扔了那么你看Facebook也好上社交媒体你不能老这么滑那永远滑不完这要你命的那是是吧你关心啥你先说对吧你关心什么你要扔不要什么你就把它设置好是你关心的然后大概一下你捋一下就过去了就不要太走心哎有亮点就会牺牲你这个时间一定要控制我每天半小时一小时一定不能过你可以分五次和六次看但你绝对不能过就每天一定记住手机是要放下的而且看着东西你像那个谁二次他喜欢Fansion你到那个名牌师一个品牌你可以花一天你不用离开的他可以杀掉你的对吧你就是你放心所有的品牌他一年就那么几样东西你大概看一看搂一搂差不多就行了但是你多看这几家总比在一家这么成年还是好过去的人说什么细节是魔鬼还在干大事现在我告诉你现在你懂得在大众找到的你要的你才是为王所以不要在垃圾堆里边一直扒拉你就要瞄准我就会找到东西扒拉几家没有我就走了我总会找到的但关键是你的时间要分配而且我建议Facebook这种实体还有推特还有Instagram这都是要命的东西要命的东西这个东西一定要控制世界然后呢我觉得你可以多看几家关键你感兴趣的是啥你像我过去看的过去的人以为我是爱黄色我爱看模特模特秀是吧我看的是时尚但我局任何模特秀我不会去看从头看的完我不会的我划一下就那几个模特我前面看一看然后中间我划一下后面看一看结束了我就不会我不会给像二十年你们去看完的我不会看完的它就那几个重点我干嘛浪费那么多时间那么你你感兴趣什么现在就是灭共我现在感兴趣你太大你太小了你跟你爹灭共可以这么说你灭共现在不能成为你的全部你的生活爱好你是什么除了灭共你不能老板你们太小了不是当我说到我我现在最重要的事情是灭共我不是在开玩笑我也不是很官方因为我的家人包括我的童年就是我当时十一岁当时被赶就是从中国被共产党赶出家园的时候那种打击是非常巨大的对我的心理产生你这是要报仇在家灭共但如果您说就是日常生活轻松的东西我喜欢什么我比较喜欢电子游戏然后一些搞笑视频这些我比较喜欢然后一些猫猫狗狗这种轻松一些的东西给我的生活能带来一些一些就是一些逃避吧可以这么说也很健康啊非常健康不叫逃避很健康每个人都在逃避连教皇都看什么你懂得吗所有的教皇晚上回家全是听音乐摇滚音乐他们原来不知道是听音乐的地下音乐摇滚音乐黄天教皇看最多天啊这个料爆的有点大这是绝对的这是故事不一定开玩笑的一定你看到拍照你回看电影我建议你们一定要记住每周给自己两个东西要看看一个纪录片千万别看乱拍的片看一个纪录片因为纪录片绝大多数还是有事实的嘛所以你们不要乱看乱片看个纪录片是一个听上几首最新的歌最新的歌最新的歌不管喜不愿都试试尝试它这是个时代嘛然后呢有时间的话你们小孩不喜欢古典音乐这是玩古典音乐我觉得你可以尝试再听一些古典音乐这是一个这个距离和时光的一个浓缩的办法因为你在看电影的时候呢它会给你很多灵感就你说转移啊灵感的都会来的我不管多忙一定看电影这个屋里有人可以证明专门负责给我看电影的就这个他就负责给我把电影准备好我到电影院啪一个人看看是吧而这个中间我是绝对不看手机的我认真地看我看完还会思考甚至有时候我再回来会露一遍说我见你们要看看电影然后呢听点好的音乐音乐这个东西它力量太大了包括有时候听点古典音乐你会让你很舒服对而且你现在要灭共的最好办法你要强大你告诉我你看你刚才那些生活怎么能帮你灭共呢你什么也帮不了你啊是的对啊你没钱怎么灭共啊你没有权力没有能力你咋灭共啊我觉得就是像我这个年龄我今年20岁了快21实际很大了你已经你今天混在这有点不对劲哈哈记住20岁的时候我儿子都已经是多大了都已经我儿子四岁了我16岁当爹啊对对对"
+}
