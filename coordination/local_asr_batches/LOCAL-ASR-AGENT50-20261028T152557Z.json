@@ -62,7 +62,7 @@
     "LIVE_20230111_001",
     "LIVE_20230129_001"
   ],
-  "next_live_id": "LIVE_20230213_001",
+  "next_live_id": "LIVE_20221008_001",
   "completed_live_ids": [
     "LIVE_20230313_001",
     "LIVE_20221011_001",
@@ -70,13 +70,14 @@
     "LIVE_20221112_001",
     "LIVE_20221124_001",
     "LIVE_20230126_001",
-    "LIVE_20230205_001"
+    "LIVE_20230205_001",
+    "LIVE_20230213_001"
   ],
   "failed_or_deferred_live_ids": [],
   "retry_pending_live_ids": [],
   "last_window": {
-    "started_at": "2026-10-28T20:26:40Z",
-    "ended_at": "2026-10-28T20:35:43Z",
+    "started_at": "2026-10-28T21:26:41Z",
+    "ended_at": "2026-10-28T21:38:14Z",
     "attempted_unique_videos": 1,
     "transcript_cue_segment_completed": 1,
     "four_stage_completed": 1,
@@ -85,35 +86,35 @@
     "tail_deferred_videos": 0,
     "cooldown_skipped_videos": 0,
     "source_temporarily_unavailable_videos": 0,
-    "audio_duration_sec": 598.876,
-    "download_elapsed_sec_known": 150.321,
+    "audio_duration_sec": 598.087,
+    "download_elapsed_sec_known": 268.115,
     "download_elapsed_unavailable_for": [],
-    "pure_asr_inference_sec_known": 18.544,
+    "pure_asr_inference_sec_known": 17.463,
     "pure_asr_inference_unavailable_for": [],
-    "structured_pipeline_elapsed_sec_known": 170.014,
+    "structured_pipeline_elapsed_sec_known": 287.136,
     "structured_pipeline_elapsed_unavailable_for": [],
-    "asr_job_wall_elapsed_sec": 170.014,
-    "key_points_attempt_wall_elapsed_sec": 110.0,
-    "window_elapsed_sec": 543.0,
-    "known_inference_rtf": 0.030965,
-    "known_inference_realtime_multiple": 32.294,
-    "published_commits": 7,
+    "asr_job_wall_elapsed_sec": 287.136,
+    "key_points_attempt_wall_elapsed_sec": 83.0,
+    "window_elapsed_sec": 693.0,
+    "known_inference_rtf": 0.029198,
+    "known_inference_realtime_multiple": 34.249,
+    "published_commits": 8,
     "quality_failures": {},
     "completed_three_stage_live_ids": [
-      "LIVE_20230205_001"
+      "LIVE_20230213_001"
     ],
     "completed_four_stage_live_ids": [
-      "LIVE_20230205_001"
+      "LIVE_20230213_001"
     ],
     "released_key_points_live_ids": [],
     "source_temporarily_unavailable_live_ids": [],
-    "next_live_id": "LIVE_20230213_001",
+    "next_live_id": "LIVE_20221008_001",
     "key_point_stats": {
-      "natural_segments": 7,
-      "key_points": 26,
-      "topic_links": 10,
-      "skipped_or_invalid": 3,
-      "parse_errors": 3,
+      "natural_segments": 6,
+      "key_points": 25,
+      "topic_links": 11,
+      "skipped_or_invalid": 2,
+      "parse_errors": 2,
       "forced_retries": 1,
       "outcome": "enriched"
     }
