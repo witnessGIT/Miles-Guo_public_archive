@@ -1,0 +1,48 @@
+{
+  "chunk_audio_sha256": "5696b565d6ce58dd9afe54830a559f1946905657a7aa9ec9cdeb343262b44d69",
+  "chunk_index": 4,
+  "completed_at": "2026-10-28T20:38:47Z",
+  "language": "zh",
+  "live_id": "LIVE_20220919_001",
+  "media_committed_to_git": false,
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "offset_sec": 3600,
+  "paid_api_used": false,
+  "processing_location": "github-hosted-macos-arm64",
+  "schema_version": "cloud-asr-chunk-v1",
+  "segments": [
+    {
+      "avg_logprob": -0.531302,
+      "compression_ratio": 0.571429,
+      "end": 3629.98,
+      "no_speech_prob": 0.0,
+      "start": 3600.0,
+      "text": "感谢观看"
+    },
+    {
+      "avg_logprob": -0.393174,
+      "compression_ratio": 0.904762,
+      "end": 3639.98,
+      "no_speech_prob": 0.0,
+      "start": 3630.0,
+      "text": "阿弥陀佛万佛万神"
+    },
+    {
+      "avg_logprob": -0.393174,
+      "compression_ratio": 0.904762,
+      "end": 3643.44,
+      "no_speech_prob": 0.0,
+      "start": 3639.98,
+      "text": "傻得不法了"
+    },
+    {
+      "avg_logprob": -0.393174,
+      "compression_ratio": 0.904762,
+      "end": 3646.3,
+      "no_speech_prob": 0.0,
+      "start": 3643.44,
+      "text": "按去开会去喽"
+    }
+  ],
+  "text": "感谢观看阿弥陀佛万佛万神傻得不法了按去开会去喽"
+}

@@ -1,0 +1,136 @@
+{
+  "chunk_audio_sha256": "7c71cbf8168f5cf51041a10ed557bf136b2e922b6742af404c877ea476260ff3",
+  "chunk_index": 7,
+  "completed_at": "2026-10-28T21:23:54Z",
+  "language": "zh",
+  "live_id": "LIVE_20220923_001",
+  "media_committed_to_git": false,
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "offset_sec": 6300,
+  "paid_api_used": false,
+  "processing_location": "github-hosted-macos-arm64",
+  "schema_version": "cloud-asr-chunk-v1",
+  "segments": [
+    {
+      "avg_logprob": -0.187822,
+      "compression_ratio": 1.033613,
+      "end": 6304.0,
+      "no_speech_prob": 0.0,
+      "start": 6300.0,
+      "text": "我真的好孤单"
+    },
+    {
+      "avg_logprob": -0.187822,
+      "compression_ratio": 1.033613,
+      "end": 6307.0,
+      "no_speech_prob": 0.0,
+      "start": 6304.0,
+      "text": "我的心好慌乱"
+    },
+    {
+      "avg_logprob": -0.187822,
+      "compression_ratio": 1.033613,
+      "end": 6311.0,
+      "no_speech_prob": 0.0,
+      "start": 6307.0,
+      "text": "不知怎么办"
+    },
+    {
+      "avg_logprob": -0.187822,
+      "compression_ratio": 1.033613,
+      "end": 6315.0,
+      "no_speech_prob": 0.0,
+      "start": 6311.0,
+      "text": "没有占有我的日子"
+    },
+    {
+      "avg_logprob": -0.187822,
+      "compression_ratio": 1.033613,
+      "end": 6319.0,
+      "no_speech_prob": 0.0,
+      "start": 6315.0,
+      "text": "我真的好茂然"
+    },
+    {
+      "avg_logprob": -0.187822,
+      "compression_ratio": 1.033613,
+      "end": 6325.0,
+      "no_speech_prob": 0.0,
+      "start": 6319.0,
+      "text": "整天就像丢了灵魂一般"
+    },
+    {
+      "avg_logprob": -0.064543,
+      "compression_ratio": 1.043478,
+      "end": 6330.0,
+      "no_speech_prob": 0.0,
+      "start": 6325.0,
+      "text": "没有你陪伴"
+    },
+    {
+      "avg_logprob": -0.064543,
+      "compression_ratio": 1.043478,
+      "end": 6334.0,
+      "no_speech_prob": 0.0,
+      "start": 6330.0,
+      "text": "我真的好孤单"
+    },
+    {
+      "avg_logprob": -0.064543,
+      "compression_ratio": 1.043478,
+      "end": 6336.0,
+      "no_speech_prob": 0.0,
+      "start": 6334.0,
+      "text": "我的心好慌乱"
+    },
+    {
+      "avg_logprob": -0.064543,
+      "compression_ratio": 1.043478,
+      "end": 6340.0,
+      "no_speech_prob": 0.0,
+      "start": 6336.0,
+      "text": "不知怎么办"
+    },
+    {
+      "avg_logprob": -0.064543,
+      "compression_ratio": 1.043478,
+      "end": 6344.0,
+      "no_speech_prob": 0.0,
+      "start": 6340.0,
+      "text": "你们不在身边"
+    },
+    {
+      "avg_logprob": -0.064543,
+      "compression_ratio": 1.043478,
+      "end": 6348.0,
+      "no_speech_prob": 0.0,
+      "start": 6344.0,
+      "text": "真的好不习惯"
+    },
+    {
+      "avg_logprob": -0.064543,
+      "compression_ratio": 1.043478,
+      "end": 6351.0,
+      "no_speech_prob": 0.0,
+      "start": 6348.0,
+      "text": "我的泪已流干"
+    },
+    {
+      "avg_logprob": -0.365196,
+      "compression_ratio": 0.652174,
+      "end": 6356.0,
+      "no_speech_prob": 0.0,
+      "start": 6351.0,
+      "text": "你们关不关"
+    },
+    {
+      "avg_logprob": -4.754678,
+      "compression_ratio": 0.428571,
+      "end": 6390.24,
+      "no_speech_prob": 0.0,
+      "start": 6381.0,
+      "text": "обы"
+    }
+  ],
+  "text": "我真的好孤单我的心好慌乱不知怎么办没有占有我的日子我真的好茂然整天就像丢了灵魂一般没有你陪伴我真的好孤单我的心好慌乱不知怎么办你们不在身边真的好不习惯我的泪已流干你们关不关обы"
+}

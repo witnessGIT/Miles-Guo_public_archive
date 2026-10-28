@@ -1,0 +1,2376 @@
+{
+  "chunk_audio_sha256": "312abc67b2aae34cb2bc590851e6aeb65adb28f85124f0fe761cbd0dbaa36591",
+  "chunk_index": 3,
+  "completed_at": "2026-10-28T22:21:22Z",
+  "language": "zh",
+  "live_id": "LIVE_20220929_001",
+  "media_committed_to_git": false,
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "offset_sec": 2700,
+  "paid_api_used": false,
+  "processing_location": "github-hosted-macos-arm64",
+  "schema_version": "cloud-asr-chunk-v1",
+  "segments": [
+    {
+      "avg_logprob": -0.273639,
+      "compression_ratio": 1.40458,
+      "end": 2702.4,
+      "no_speech_prob": 0.0,
+      "start": 2700.0,
+      "text": "哈伊迪斯 我可以说一下他的名字"
+    },
+    {
+      "avg_logprob": -0.273639,
+      "compression_ratio": 1.40458,
+      "end": 2703.56,
+      "no_speech_prob": 0.0,
+      "start": 2702.4,
+      "text": "现在已经跑了"
+    },
+    {
+      "avg_logprob": -0.273639,
+      "compression_ratio": 1.40458,
+      "end": 2707.76,
+      "no_speech_prob": 0.0,
+      "start": 2703.56,
+      "text": "这个医生因为我给他打个电话"
+    },
+    {
+      "avg_logprob": -0.273639,
+      "compression_ratio": 1.40458,
+      "end": 2709.0,
+      "no_speech_prob": 0.0,
+      "start": 2707.76,
+      "text": "我说你在哪"
+    },
+    {
+      "avg_logprob": -0.273639,
+      "compression_ratio": 1.40458,
+      "end": 2711.1,
+      "no_speech_prob": 0.0,
+      "start": 2709.0,
+      "text": "他说我刚从伊朗回来"
+    },
+    {
+      "avg_logprob": -0.273639,
+      "compression_ratio": 1.40458,
+      "end": 2712.5,
+      "no_speech_prob": 0.0,
+      "start": 2711.1,
+      "text": "我现在回伦敦"
+    },
+    {
+      "avg_logprob": -0.273639,
+      "compression_ratio": 1.40458,
+      "end": 2714.1,
+      "no_speech_prob": 0.0,
+      "start": 2712.5,
+      "text": "能不能有时间见个面"
+    },
+    {
+      "avg_logprob": -0.273639,
+      "compression_ratio": 1.40458,
+      "end": 2720.0,
+      "no_speech_prob": 0.0,
+      "start": 2714.1,
+      "text": "他就是介绍土耳其那个医生给当时戴安娜王妃的"
+    },
+    {
+      "avg_logprob": -0.273639,
+      "compression_ratio": 1.40458,
+      "end": 2725.5,
+      "no_speech_prob": 0.0,
+      "start": 2720.0,
+      "text": "戴安娜王妃当时深爱的是土耳其籍的一个英国医生"
+    },
+    {
+      "avg_logprob": -0.273639,
+      "compression_ratio": 1.40458,
+      "end": 2727.6,
+      "no_speech_prob": 0.0,
+      "start": 2725.5,
+      "text": "这爱到真的是真爱啊"
+    },
+    {
+      "avg_logprob": -0.273639,
+      "compression_ratio": 1.40458,
+      "end": 2729.5,
+      "no_speech_prob": 0.0,
+      "start": 2727.6,
+      "text": "真爱真爱 爱得疯了"
+    },
+    {
+      "avg_logprob": -0.183883,
+      "compression_ratio": 1.462069,
+      "end": 2732.5,
+      "no_speech_prob": 0.0,
+      "start": 2729.5,
+      "text": "但是他害怕 他不敢跟他来往"
+    },
+    {
+      "avg_logprob": -0.183883,
+      "compression_ratio": 1.462069,
+      "end": 2736.5,
+      "no_speech_prob": 0.0,
+      "start": 2732.5,
+      "text": "他有时候约会就约到这个伊朗籍的医生下去"
+    },
+    {
+      "avg_logprob": -0.183883,
+      "compression_ratio": 1.462069,
+      "end": 2738.5,
+      "no_speech_prob": 0.0,
+      "start": 2736.5,
+      "text": "哈迪 哈迪到那去"
+    },
+    {
+      "avg_logprob": -0.183883,
+      "compression_ratio": 1.462069,
+      "end": 2742.5,
+      "no_speech_prob": 0.0,
+      "start": 2738.5,
+      "text": "最后就这个哥们就是整个的就是不敢碰他了"
+    },
+    {
+      "avg_logprob": -0.183883,
+      "compression_ratio": 1.462069,
+      "end": 2743.5,
+      "no_speech_prob": 0.0,
+      "start": 2742.5,
+      "text": "就土耳其一生吓跑了"
+    },
+    {
+      "avg_logprob": -0.183883,
+      "compression_ratio": 1.462069,
+      "end": 2745.5,
+      "no_speech_prob": 0.0,
+      "start": 2743.5,
+      "text": "去泰国 去新加坡 不敢回来了"
+    },
+    {
+      "avg_logprob": -0.183883,
+      "compression_ratio": 1.462069,
+      "end": 2748.5,
+      "no_speech_prob": 0.0,
+      "start": 2745.5,
+      "text": "就戴安娜老找他 说你给我找他 你给我找回来"
+    },
+    {
+      "avg_logprob": -0.183883,
+      "compression_ratio": 1.462069,
+      "end": 2751.5,
+      "no_speech_prob": 0.0,
+      "start": 2748.5,
+      "text": "在这种情况下戴安娜很生气"
+    },
+    {
+      "avg_logprob": -0.183883,
+      "compression_ratio": 1.462069,
+      "end": 2754.5,
+      "no_speech_prob": 0.0,
+      "start": 2751.5,
+      "text": "就为了让这个男的生气 这个男的也爱他"
+    },
+    {
+      "avg_logprob": -0.183883,
+      "compression_ratio": 1.462069,
+      "end": 2758.5,
+      "no_speech_prob": 0.0,
+      "start": 2754.5,
+      "text": "就爱上了哈罗斯的拉法耶王子"
+    },
+    {
+      "avg_logprob": -0.157842,
+      "compression_ratio": 1.289474,
+      "end": 2762.5,
+      "no_speech_prob": 0.0,
+      "start": 2759.5,
+      "text": "爱上这个英女皇很不高兴 皇谁不高兴啊"
+    },
+    {
+      "avg_logprob": -0.157842,
+      "compression_ratio": 1.289474,
+      "end": 2765.5,
+      "no_speech_prob": 0.0,
+      "start": 2762.5,
+      "text": "然后呢这个时候就是英国毛首相"
+    },
+    {
+      "avg_logprob": -0.157842,
+      "compression_ratio": 1.289474,
+      "end": 2766.5,
+      "no_speech_prob": 0.0,
+      "start": 2765.5,
+      "text": "我不说是谁了 咱们的朋友"
+    },
+    {
+      "avg_logprob": -0.157842,
+      "compression_ratio": 1.289474,
+      "end": 2770.5,
+      "no_speech_prob": 0.0,
+      "start": 2766.5,
+      "text": "就约了戴安娜去这个瑞兹饭店"
+    },
+    {
+      "avg_logprob": -0.157842,
+      "compression_ratio": 1.289474,
+      "end": 2772.5,
+      "no_speech_prob": 0.0,
+      "start": 2770.5,
+      "text": "白天后面吃完饭以后"
+    },
+    {
+      "avg_logprob": -0.157842,
+      "compression_ratio": 1.289474,
+      "end": 2774.5,
+      "no_speech_prob": 0.0,
+      "start": 2772.5,
+      "text": "戴安娜说咱俩走走我在后面"
+    },
+    {
+      "avg_logprob": -0.157842,
+      "compression_ratio": 1.289474,
+      "end": 2775.5,
+      "no_speech_prob": 0.0,
+      "start": 2774.5,
+      "text": "他就去走走"
+    },
+    {
+      "avg_logprob": -0.171404,
+      "compression_ratio": 1.312195,
+      "end": 2781.5,
+      "no_speech_prob": 0.0,
+      "start": 2775.5,
+      "text": "这位当时的首相说 你不要跟这个拉法耶这个家伙在一起"
+    },
+    {
+      "avg_logprob": -0.171404,
+      "compression_ratio": 1.312195,
+      "end": 2783.5,
+      "no_speech_prob": 0.0,
+      "start": 2781.5,
+      "text": "为什么 他在西中"
+    },
+    {
+      "avg_logprob": -0.171404,
+      "compression_ratio": 1.312195,
+      "end": 2786.5,
+      "no_speech_prob": 0.0,
+      "start": 2783.5,
+      "text": "哇 戴安娜老闆很不高兴 你怎么这么说呢 你有什么证据吗"
+    },
+    {
+      "avg_logprob": -0.171404,
+      "compression_ratio": 1.312195,
+      "end": 2790.5,
+      "no_speech_prob": 0.0,
+      "start": 2786.5,
+      "text": "他说 我知道你爱谁谁谁 人家不敢爱你"
+    },
+    {
+      "avg_logprob": -0.171404,
+      "compression_ratio": 1.312195,
+      "end": 2793.5,
+      "no_speech_prob": 0.0,
+      "start": 2790.5,
+      "text": "这个你爱他也不是真的 你别玩这个火"
+    },
+    {
+      "avg_logprob": -0.180066,
+      "compression_ratio": 1.32973,
+      "end": 2796.5,
+      "no_speech_prob": 0.0,
+      "start": 2793.5,
+      "text": "这是戴安娜死前的一个月"
+    },
+    {
+      "avg_logprob": -0.180066,
+      "compression_ratio": 1.32973,
+      "end": 2802.5,
+      "no_speech_prob": 0.0,
+      "start": 2796.5,
+      "text": "这个土耳其的医生的故事和这个伊朗医生的故事"
+    },
+    {
+      "avg_logprob": -0.180066,
+      "compression_ratio": 1.32973,
+      "end": 2805.5,
+      "no_speech_prob": 0.0,
+      "start": 2802.5,
+      "text": "这真的是很有意思 他是哈美内伊的医生"
+    },
+    {
+      "avg_logprob": -0.180066,
+      "compression_ratio": 1.32973,
+      "end": 2810.5,
+      "no_speech_prob": 0.0,
+      "start": 2805.5,
+      "text": "我说你现在回英国 我说你不觉得现在你的老板"
+    },
+    {
+      "avg_logprob": -0.180066,
+      "compression_ratio": 1.32973,
+      "end": 2812.5,
+      "no_speech_prob": 0.0,
+      "start": 2810.5,
+      "text": "现在身体快不行了 哈哈大笑"
+    },
+    {
+      "avg_logprob": -0.315068,
+      "compression_ratio": 1.353116,
+      "end": 2815.5,
+      "no_speech_prob": 0.0,
+      "start": 2812.5,
+      "text": "他说 你懂的 哇塞"
+    },
+    {
+      "avg_logprob": -0.315068,
+      "compression_ratio": 1.353116,
+      "end": 2817.5,
+      "no_speech_prob": 0.0,
+      "start": 2815.5,
+      "text": "当时那时候咱都说你懂的话"
+    },
+    {
+      "avg_logprob": -0.315068,
+      "compression_ratio": 1.353116,
+      "end": 2819.5,
+      "no_speech_prob": 0.0,
+      "start": 2817.5,
+      "text": "比共产党说的我早多少年 是吧 你懂的"
+    },
+    {
+      "avg_logprob": -0.315068,
+      "compression_ratio": 1.353116,
+      "end": 2821.5,
+      "no_speech_prob": 0.0,
+      "start": 2819.5,
+      "text": "他说 你懂的"
+    },
+    {
+      "avg_logprob": -0.315068,
+      "compression_ratio": 1.353116,
+      "end": 2823.5,
+      "no_speech_prob": 0.0,
+      "start": 2821.5,
+      "text": "回去的时候我帮你按摩按摩你的背部"
+    },
+    {
+      "avg_logprob": -0.315068,
+      "compression_ratio": 1.353116,
+      "end": 2825.5,
+      "no_speech_prob": 0.0,
+      "start": 2823.5,
+      "text": "他说 你来着见面说"
+    },
+    {
+      "avg_logprob": -0.315068,
+      "compression_ratio": 1.353116,
+      "end": 2827.5,
+      "no_speech_prob": 0.0,
+      "start": 2825.5,
+      "text": "所以我断定 还没得意味着"
+    },
+    {
+      "avg_logprob": -0.315068,
+      "compression_ratio": 1.353116,
+      "end": 2830.5,
+      "no_speech_prob": 0.0,
+      "start": 2827.5,
+      "text": "我说 赶快 收拾手"
+    },
+    {
+      "avg_logprob": -0.315068,
+      "compression_ratio": 1.353116,
+      "end": 2833.5,
+      "no_speech_prob": 0.0,
+      "start": 2830.5,
+      "text": "结果从那以后这些小王子的小公主"
+    },
+    {
+      "avg_logprob": -0.315068,
+      "compression_ratio": 1.353116,
+      "end": 2835.5,
+      "no_speech_prob": 0.0,
+      "start": 2833.5,
+      "text": "丢了这个 Uncle Mouth 佩服无底头地"
+    },
+    {
+      "avg_logprob": -0.315068,
+      "compression_ratio": 1.353116,
+      "end": 2837.5,
+      "no_speech_prob": 0.0,
+      "start": 2835.5,
+      "text": "只有你知道的 都不会这么一词"
+    },
+    {
+      "avg_logprob": -0.315068,
+      "compression_ratio": 1.353116,
+      "end": 2839.5,
+      "no_speech_prob": 0.0,
+      "start": 2837.5,
+      "text": "你看咱这一手的信息"
+    },
+    {
+      "avg_logprob": -0.315068,
+      "compression_ratio": 1.353116,
+      "end": 2842.5,
+      "no_speech_prob": 0.0,
+      "start": 2839.5,
+      "text": "而且我告诉他说 大纳王妃爱的不是"
+    },
+    {
+      "avg_logprob": -0.262999,
+      "compression_ratio": 1.409722,
+      "end": 2848.5,
+      "no_speech_prob": 0.0,
+      "start": 2842.5,
+      "text": "这个拉法耶 而且车祸绝对不是什么女皇杀的"
+    },
+    {
+      "avg_logprob": -0.262999,
+      "compression_ratio": 1.409722,
+      "end": 2851.5,
+      "no_speech_prob": 0.0,
+      "start": 2848.5,
+      "text": "就是他吸了毒了 从瑞兹范出来"
+    },
+    {
+      "avg_logprob": -0.262999,
+      "compression_ratio": 1.409722,
+      "end": 2854.5,
+      "no_speech_prob": 0.0,
+      "start": 2851.5,
+      "text": "他这个去搂他 就这样想着你啊"
+    },
+    {
+      "avg_logprob": -0.262999,
+      "compression_ratio": 1.409722,
+      "end": 2856.5,
+      "no_speech_prob": 0.0,
+      "start": 2854.5,
+      "text": "不好意思啊 我占着便宜啊"
+    },
+    {
+      "avg_logprob": -0.262999,
+      "compression_ratio": 1.409722,
+      "end": 2859.5,
+      "no_speech_prob": 0.0,
+      "start": 2856.5,
+      "text": "这样搂你的时候 你在车上 你可这中间有东西吗"
+    },
+    {
+      "avg_logprob": -0.262999,
+      "compression_ratio": 1.409722,
+      "end": 2863.5,
+      "no_speech_prob": 0.0,
+      "start": 2859.5,
+      "text": "你就说 有人嘛 就是你老是动作太大了"
+    },
+    {
+      "avg_logprob": -0.262999,
+      "compression_ratio": 1.409722,
+      "end": 2867.5,
+      "no_speech_prob": 0.0,
+      "start": 2863.5,
+      "text": "我这还抽毒了 一搂 一下就搂到那个司机脖子上去了"
+    },
+    {
+      "avg_logprob": -0.262999,
+      "compression_ratio": 1.409722,
+      "end": 2871.5,
+      "no_speech_prob": 0.0,
+      "start": 2867.5,
+      "text": "司机 啪 就给装上去了 绝对就是这个故事"
+    },
+    {
+      "avg_logprob": -0.286497,
+      "compression_ratio": 1.265432,
+      "end": 2874.5,
+      "no_speech_prob": 0.0,
+      "start": 2871.5,
+      "text": "就是吸毒导致的疯狂的 动手动脚的"
+    },
+    {
+      "avg_logprob": -0.286497,
+      "compression_ratio": 1.265432,
+      "end": 2877.5,
+      "no_speech_prob": 0.0,
+      "start": 2874.5,
+      "text": "所以人家老是 你别老动脚 都假的"
+    },
+    {
+      "avg_logprob": -0.286497,
+      "compression_ratio": 1.265432,
+      "end": 2881.5,
+      "no_speech_prob": 0.0,
+      "start": 2877.5,
+      "text": "自己老看人家定啥的 你撞着脖子了 张老师"
+    },
+    {
+      "avg_logprob": -0.286497,
+      "compression_ratio": 1.265432,
+      "end": 2885.5,
+      "no_speech_prob": 0.0,
+      "start": 2881.5,
+      "text": "所以说 你经常在车上跟着老是 你别老邪子看"
+    },
+    {
+      "avg_logprob": -0.192838,
+      "compression_ratio": 1.256831,
+      "end": 2889.5,
+      "no_speech_prob": 0.0,
+      "start": 2885.5,
+      "text": "所以说丹娜王菲特事件跟着两个一生都有关系"
+    },
+    {
+      "avg_logprob": -0.192838,
+      "compression_ratio": 1.256831,
+      "end": 2895.5,
+      "no_speech_prob": 0.0,
+      "start": 2889.5,
+      "text": "一生几乎是全世界了解人隐私最直接"
+    },
+    {
+      "avg_logprob": -0.192838,
+      "compression_ratio": 1.256831,
+      "end": 2898.5,
+      "no_speech_prob": 0.0,
+      "start": 2895.5,
+      "text": "不管你什么鸟人 你来了 你得脱光"
+    },
+    {
+      "avg_logprob": -0.192838,
+      "compression_ratio": 1.256831,
+      "end": 2901.5,
+      "no_speech_prob": 0.0,
+      "start": 2898.5,
+      "text": "也不管你是宗教主义 还是教父 还是教爷的 是吧"
+    },
+    {
+      "avg_logprob": -0.192838,
+      "compression_ratio": 1.256831,
+      "end": 2903.5,
+      "no_speech_prob": 0.0,
+      "start": 2901.5,
+      "text": "你都得脱光"
+    },
+    {
+      "avg_logprob": -0.236341,
+      "compression_ratio": 1.215116,
+      "end": 2908.5,
+      "no_speech_prob": 0.0,
+      "start": 2903.5,
+      "text": "那么最近 我高度关注刚需后的普京"
+    },
+    {
+      "avg_logprob": -0.236341,
+      "compression_ratio": 1.215116,
+      "end": 2911.5,
+      "no_speech_prob": 0.0,
+      "start": 2908.5,
+      "text": "我现在我们习太阳都缺朋友啊 是吧"
+    },
+    {
+      "avg_logprob": -0.236341,
+      "compression_ratio": 1.215116,
+      "end": 2914.5,
+      "no_speech_prob": 0.0,
+      "start": 2911.5,
+      "text": "我得看谁是他朋友啊 咱就扫了汉美丽一"
+    },
+    {
+      "avg_logprob": -0.236341,
+      "compression_ratio": 1.215116,
+      "end": 2920.5,
+      "no_speech_prob": 0.0,
+      "start": 2915.5,
+      "text": "现在我刚才已经说完了 前奏说完了 现在严肃点啊"
+    },
+    {
+      "avg_logprob": -0.068764,
+      "compression_ratio": 1.486957,
+      "end": 2926.5,
+      "no_speech_prob": 0.0,
+      "start": 2920.5,
+      "text": "现在爆料 现在我们全世界的爆料革命的战友们"
+    },
+    {
+      "avg_logprob": -0.068764,
+      "compression_ratio": 1.486957,
+      "end": 2929.5,
+      "no_speech_prob": 0.0,
+      "start": 2926.5,
+      "text": "新中国联邦 我是郭文贵"
+    },
+    {
+      "avg_logprob": -0.068764,
+      "compression_ratio": 1.486957,
+      "end": 2933.5,
+      "no_speech_prob": 0.0,
+      "start": 2929.5,
+      "text": "我的右边是我们新中国联邦爆料革命的秘书长"
+    },
+    {
+      "avg_logprob": -0.068764,
+      "compression_ratio": 1.486957,
+      "end": 2939.5,
+      "no_speech_prob": 0.0,
+      "start": 2933.5,
+      "text": "全球的秘书长 我的左边是我们形象代表"
+    },
+    {
+      "avg_logprob": -0.068764,
+      "compression_ratio": 1.486957,
+      "end": 2942.5,
+      "no_speech_prob": 0.0,
+      "start": 2939.5,
+      "text": "Niko小姐 是我们的媒体发言人"
+    },
+    {
+      "avg_logprob": -0.068764,
+      "compression_ratio": 1.486957,
+      "end": 2947.5,
+      "no_speech_prob": 0.0,
+      "start": 2942.5,
+      "text": "是我们的媒体主持人 今天很荣幸在这里向全世界宣布"
+    },
+    {
+      "avg_logprob": -0.068764,
+      "compression_ratio": 1.486957,
+      "end": 2949.5,
+      "no_speech_prob": 0.0,
+      "start": 2947.5,
+      "text": "郭文贵本人负很多责任"
+    },
+    {
+      "avg_logprob": -1.058842,
+      "compression_ratio": 1.21097,
+      "end": 2954.5,
+      "no_speech_prob": 0.0,
+      "start": 2949.5,
+      "text": "也可以负一切因此爆料所有的责任"
+    },
+    {
+      "avg_logprob": -1.058842,
+      "compression_ratio": 1.21097,
+      "end": 2955.5,
+      "no_speech_prob": 0.0,
+      "start": 2954.5,
+      "text": "我对真相负责"
+    },
+    {
+      "avg_logprob": -1.058842,
+      "compression_ratio": 1.21097,
+      "end": 2960.5,
+      "no_speech_prob": 0.0,
+      "start": 2955.5,
+      "text": "我向全世界报一个影响人类命运"
+    },
+    {
+      "avg_logprob": -1.058842,
+      "compression_ratio": 1.21097,
+      "end": 2963.5,
+      "no_speech_prob": 0.0,
+      "start": 2960.5,
+      "text": "和我们每个人的息息相关"
+    },
+    {
+      "avg_logprob": -1.058842,
+      "compression_ratio": 1.21097,
+      "end": 2965.5,
+      "no_speech_prob": 0.0,
+      "start": 2963.5,
+      "text": "宗教主义 我认为在世界上"
+    },
+    {
+      "avg_logprob": -1.058842,
+      "compression_ratio": 1.21097,
+      "end": 2968.5,
+      "no_speech_prob": 0.0,
+      "start": 2965.5,
+      "text": "最后一个土建将会消失"
+    },
+    {
+      "avg_logprob": -1.058842,
+      "compression_ratio": 1.21097,
+      "end": 2971.5,
+      "no_speech_prob": 0.0,
+      "start": 2968.5,
+      "text": "就是汉美内伊即将完蛋"
+    },
+    {
+      "avg_logprob": -1.058842,
+      "compression_ratio": 1.21097,
+      "end": 2972.5,
+      "no_speech_prob": 0.0,
+      "start": 2971.5,
+      "text": "为什么"
+    },
+    {
+      "avg_logprob": -1.058842,
+      "compression_ratio": 1.21097,
+      "end": 2973.5,
+      "no_speech_prob": 0.0,
+      "start": 2972.5,
+      "text": "我再服从谁头头"
+    },
+    {
+      "avg_logprob": -1.058842,
+      "compression_ratio": 1.21097,
+      "end": 2978.5,
+      "no_speech_prob": 0.0,
+      "start": 2974.5,
+      "text": "ğan倍内伊りました"
+    },
+    {
+      "avg_logprob": -0.185348,
+      "compression_ratio": 1.287402,
+      "end": 2980.42,
+      "no_speech_prob": 0.0,
+      "start": 2978.5,
+      "text": "我跟你无仇无冤"
+    },
+    {
+      "avg_logprob": -0.185348,
+      "compression_ratio": 1.287402,
+      "end": 2982.92,
+      "no_speech_prob": 0.0,
+      "start": 2980.42,
+      "text": "恰恰的你的家族很多都是朋友"
+    },
+    {
+      "avg_logprob": -0.185348,
+      "compression_ratio": 1.287402,
+      "end": 2985.64,
+      "no_speech_prob": 0.0,
+      "start": 2982.92,
+      "text": "但是由于你是人类的公主"
+    },
+    {
+      "avg_logprob": -0.185348,
+      "compression_ratio": 1.287402,
+      "end": 2989.48,
+      "no_speech_prob": 0.0,
+      "start": 2985.64,
+      "text": "由于你和共产党的这个邪教主持的合作"
+    },
+    {
+      "avg_logprob": -0.185348,
+      "compression_ratio": 1.287402,
+      "end": 2992.72,
+      "no_speech_prob": 0.0,
+      "start": 2989.48,
+      "text": "在世界和平和正义面前"
+    },
+    {
+      "avg_logprob": -0.185348,
+      "compression_ratio": 1.287402,
+      "end": 2995.24,
+      "no_speech_prob": 0.0,
+      "start": 2992.72,
+      "text": "我们要选择和平和正义"
+    },
+    {
+      "avg_logprob": -0.185348,
+      "compression_ratio": 1.287402,
+      "end": 2997.4,
+      "no_speech_prob": 0.0,
+      "start": 2995.24,
+      "text": "我现在给大家报告的事情"
+    },
+    {
+      "avg_logprob": -0.185348,
+      "compression_ratio": 1.287402,
+      "end": 3003.22,
+      "no_speech_prob": 0.0,
+      "start": 2997.4,
+      "text": "哈美内伊先生是7月26号的下午"
+    },
+    {
+      "avg_logprob": -0.185348,
+      "compression_ratio": 1.287402,
+      "end": 3008.5,
+      "no_speech_prob": 0.0,
+      "start": 3003.22,
+      "text": "开始心脏心肌炎导致的心脏衰竭的手术"
+    },
+    {
+      "avg_logprob": -0.255987,
+      "compression_ratio": 1.348718,
+      "end": 3010.18,
+      "no_speech_prob": 0.0,
+      "start": 3008.5,
+      "text": "这个手术呢"
+    },
+    {
+      "avg_logprob": -0.255987,
+      "compression_ratio": 1.348718,
+      "end": 3014.92,
+      "no_speech_prob": 0.0,
+      "start": 3010.18,
+      "text": "就要做了整个的要启动搭桥各种复杂手术"
+    },
+    {
+      "avg_logprob": -0.255987,
+      "compression_ratio": 1.348718,
+      "end": 3021.6,
+      "no_speech_prob": 0.0,
+      "start": 3014.92,
+      "text": "到9月27号早上做了很多小时手术"
+    },
+    {
+      "avg_logprob": -0.255987,
+      "compression_ratio": 1.348718,
+      "end": 3022.68,
+      "no_speech_prob": 0.0,
+      "start": 3021.6,
+      "text": "没有做完"
+    },
+    {
+      "avg_logprob": -0.255987,
+      "compression_ratio": 1.348718,
+      "end": 3024.44,
+      "no_speech_prob": 0.0,
+      "start": 3022.68,
+      "text": "到27号到现在"
+    },
+    {
+      "avg_logprob": -0.255987,
+      "compression_ratio": 1.348718,
+      "end": 3028.48,
+      "no_speech_prob": 0.0,
+      "start": 3024.44,
+      "text": "到时候就是我下午的就是纽约时间一个小时"
+    },
+    {
+      "avg_logprob": -0.255987,
+      "compression_ratio": 1.348718,
+      "end": 3029.78,
+      "no_speech_prob": 0.0,
+      "start": 3028.48,
+      "text": "也就是现在爆料"
+    },
+    {
+      "avg_logprob": -0.255987,
+      "compression_ratio": 1.348718,
+      "end": 3035.56,
+      "no_speech_prob": 0.0,
+      "start": 3029.78,
+      "text": "就9月29号的纽约时间12点到1点期间"
+    },
+    {
+      "avg_logprob": -0.24172,
+      "compression_ratio": 1.237864,
+      "end": 3038.82,
+      "no_speech_prob": 0.0,
+      "start": 3035.56,
+      "text": "他们所有的医疗小组做出了决定"
+    },
+    {
+      "avg_logprob": -0.24172,
+      "compression_ratio": 1.237864,
+      "end": 3041.98,
+      "no_speech_prob": 0.0,
+      "start": 3038.82,
+      "text": "哈美内伊的心脏不可能恢复"
+    },
+    {
+      "avg_logprob": -0.24172,
+      "compression_ratio": 1.237864,
+      "end": 3045.12,
+      "no_speech_prob": 0.0,
+      "start": 3041.98,
+      "text": "让大家准备公告死亡后的情况"
+    },
+    {
+      "avg_logprob": -0.24172,
+      "compression_ratio": 1.237864,
+      "end": 3048.36,
+      "no_speech_prob": 0.0,
+      "start": 3045.12,
+      "text": "我可以保证这个消息"
+    },
+    {
+      "avg_logprob": -0.24172,
+      "compression_ratio": 1.237864,
+      "end": 3049.9,
+      "no_speech_prob": 0.0,
+      "start": 3048.36,
+      "text": "在我今天说之前"
+    },
+    {
+      "avg_logprob": -0.24172,
+      "compression_ratio": 1.237864,
+      "end": 3052.24,
+      "no_speech_prob": 0.0,
+      "start": 3049.9,
+      "text": "全世界没有包括伊朗人"
+    },
+    {
+      "avg_logprob": -0.24172,
+      "compression_ratio": 1.237864,
+      "end": 3054.78,
+      "no_speech_prob": 0.0,
+      "start": 3052.24,
+      "text": "没有任何人知道所有的强情"
+    },
+    {
+      "avg_logprob": -0.24172,
+      "compression_ratio": 1.237864,
+      "end": 3055.9,
+      "no_speech_prob": 0.0,
+      "start": 3054.78,
+      "text": "我可以让大家负责"
+    },
+    {
+      "avg_logprob": -0.215005,
+      "compression_ratio": 1.266355,
+      "end": 3058.66,
+      "no_speech_prob": 0.0,
+      "start": 3055.9,
+      "text": "他只有1%的机会他能活过来"
+    },
+    {
+      "avg_logprob": -0.215005,
+      "compression_ratio": 1.266355,
+      "end": 3063.16,
+      "no_speech_prob": 0.0,
+      "start": 3058.66,
+      "text": "99%的机会他会在未来的不会超过48小时"
+    },
+    {
+      "avg_logprob": -0.215005,
+      "compression_ratio": 1.266355,
+      "end": 3064.58,
+      "no_speech_prob": 0.0,
+      "start": 3063.16,
+      "text": "会宣布他的死性"
+    },
+    {
+      "avg_logprob": -0.215005,
+      "compression_ratio": 1.266355,
+      "end": 3066.04,
+      "no_speech_prob": 0.0,
+      "start": 3064.58,
+      "text": "这对犹太人"
+    },
+    {
+      "avg_logprob": -0.215005,
+      "compression_ratio": 1.266355,
+      "end": 3068.16,
+      "no_speech_prob": 0.0,
+      "start": 3066.04,
+      "text": "我们尊敬的犹太文明"
+    },
+    {
+      "avg_logprob": -0.215005,
+      "compression_ratio": 1.266355,
+      "end": 3071.34,
+      "no_speech_prob": 0.0,
+      "start": 3068.16,
+      "text": "犹太世界是一个绝对好消息"
+    },
+    {
+      "avg_logprob": -0.215005,
+      "compression_ratio": 1.266355,
+      "end": 3073.46,
+      "no_speech_prob": 0.0,
+      "start": 3071.34,
+      "text": "对待整个霍斯姆海峡"
+    },
+    {
+      "avg_logprob": -0.215005,
+      "compression_ratio": 1.266355,
+      "end": 3076.08,
+      "no_speech_prob": 0.0,
+      "start": 3073.46,
+      "text": "整个中东国家的和平"
+    },
+    {
+      "avg_logprob": -0.215005,
+      "compression_ratio": 1.266355,
+      "end": 3078.64,
+      "no_speech_prob": 0.0,
+      "start": 3076.08,
+      "text": "这是个上天次与最好消息"
+    },
+    {
+      "avg_logprob": -0.132631,
+      "compression_ratio": 1.275701,
+      "end": 3084.22,
+      "no_speech_prob": 0.0,
+      "start": 3078.64,
+      "text": "对待消灭中国共产党和普京的独裁主义"
+    },
+    {
+      "avg_logprob": -0.132631,
+      "compression_ratio": 1.275701,
+      "end": 3086.56,
+      "no_speech_prob": 0.0,
+      "start": 3084.22,
+      "text": "和乌克兰的战争拯救乌克兰"
+    },
+    {
+      "avg_logprob": -0.132631,
+      "compression_ratio": 1.275701,
+      "end": 3092.02,
+      "no_speech_prob": 0.0,
+      "start": 3086.56,
+      "text": "和共产党打造的所谓的铁三角和邪恶的五国"
+    },
+    {
+      "avg_logprob": -0.132631,
+      "compression_ratio": 1.275701,
+      "end": 3096.14,
+      "no_speech_prob": 0.0,
+      "start": 3092.02,
+      "text": "来反对西方的文明"
+    },
+    {
+      "avg_logprob": -0.132631,
+      "compression_ratio": 1.275701,
+      "end": 3098.44,
+      "no_speech_prob": 0.0,
+      "start": 3096.14,
+      "text": "以反对美国为借口的"
+    },
+    {
+      "avg_logprob": -0.132631,
+      "compression_ratio": 1.275701,
+      "end": 3100.2,
+      "no_speech_prob": 0.0,
+      "start": 3098.44,
+      "text": "现在造成的事件"
+    },
+    {
+      "avg_logprob": -0.132631,
+      "compression_ratio": 1.275701,
+      "end": 3104.04,
+      "no_speech_prob": 0.0,
+      "start": 3100.2,
+      "text": "整个的核阴影下的这种世界大战机上发生的"
+    },
+    {
+      "avg_logprob": -0.202342,
+      "compression_ratio": 1.307393,
+      "end": 3108.22,
+      "no_speech_prob": 0.0,
+      "start": 3104.04,
+      "text": "这种情况我认为这是上天给我们的恩赐"
+    },
+    {
+      "avg_logprob": -0.202342,
+      "compression_ratio": 1.307393,
+      "end": 3111.54,
+      "no_speech_prob": 0.0,
+      "start": 3108.22,
+      "text": "哈美尼一的整个的鸽屁"
+    },
+    {
+      "avg_logprob": -0.202342,
+      "compression_ratio": 1.307393,
+      "end": 3112.72,
+      "no_speech_prob": 0.0,
+      "start": 3111.54,
+      "text": "整个的灭亡"
+    },
+    {
+      "avg_logprob": -0.202342,
+      "compression_ratio": 1.307393,
+      "end": 3117.72,
+      "no_speech_prob": 0.0,
+      "start": 3112.72,
+      "text": "直接会把习、普、哈、铁三角彻底打过"
+    },
+    {
+      "avg_logprob": -0.202342,
+      "compression_ratio": 1.307393,
+      "end": 3119.34,
+      "no_speech_prob": 0.0,
+      "start": 3117.72,
+      "text": "随着他的灭亡"
+    },
+    {
+      "avg_logprob": -0.202342,
+      "compression_ratio": 1.307393,
+      "end": 3123.9,
+      "no_speech_prob": 0.0,
+      "start": 3119.34,
+      "text": "伊朗日冰我相信会走向真正他们渴望的民主"
+    },
+    {
+      "avg_logprob": -0.202342,
+      "compression_ratio": 1.307393,
+      "end": 3126.62,
+      "no_speech_prob": 0.0,
+      "start": 3123.9,
+      "text": "你走不走资本主义社会跟我没关系"
+    },
+    {
+      "avg_logprob": -0.202342,
+      "compression_ratio": 1.307393,
+      "end": 3129.28,
+      "no_speech_prob": 0.0,
+      "start": 3126.62,
+      "text": "但我希望是能尊重人性的"
+    },
+    {
+      "avg_logprob": -0.202342,
+      "compression_ratio": 1.307393,
+      "end": 3132.42,
+      "no_speech_prob": 0.0,
+      "start": 3129.28,
+      "text": "让我们尊敬的整个波斯文化"
+    },
+    {
+      "avg_logprob": -0.171069,
+      "compression_ratio": 1.308511,
+      "end": 3134.22,
+      "no_speech_prob": 0.0,
+      "start": 3132.42,
+      "text": "还有我伊朗的很多朋友"
+    },
+    {
+      "avg_logprob": -0.171069,
+      "compression_ratio": 1.308511,
+      "end": 3137.04,
+      "no_speech_prob": 0.0,
+      "start": 3134.22,
+      "text": "还有伊朗的那些文明人"
+    },
+    {
+      "avg_logprob": -0.171069,
+      "compression_ratio": 1.308511,
+      "end": 3140.82,
+      "no_speech_prob": 0.0,
+      "start": 3137.04,
+      "text": "还有一个真的我们最尊敬的以色列人"
+    },
+    {
+      "avg_logprob": -0.171069,
+      "compression_ratio": 1.308511,
+      "end": 3144.06,
+      "no_speech_prob": 0.0,
+      "start": 3140.82,
+      "text": "能减少恐惧减少战争得到解放"
+    },
+    {
+      "avg_logprob": -0.171069,
+      "compression_ratio": 1.308511,
+      "end": 3146.02,
+      "no_speech_prob": 0.0,
+      "start": 3144.06,
+      "text": "更重要的事情也能把对面的说法"
+    },
+    {
+      "avg_logprob": -0.171069,
+      "compression_ratio": 1.308511,
+      "end": 3148.92,
+      "no_speech_prob": 0.0,
+      "start": 3146.02,
+      "text": "UAE呀科威特呀"
+    },
+    {
+      "avg_logprob": -0.171069,
+      "compression_ratio": 1.308511,
+      "end": 3153.18,
+      "no_speech_prob": 0.0,
+      "start": 3148.92,
+      "text": "包括整个的周围国家彻底从阴影中解放出来"
+    },
+    {
+      "avg_logprob": -0.171069,
+      "compression_ratio": 1.308511,
+      "end": 3156.04,
+      "no_speech_prob": 0.0,
+      "start": 3153.18,
+      "text": "这对所谓的迅尼亚大马仕格"
+    },
+    {
+      "avg_logprob": -0.171069,
+      "compression_ratio": 1.308511,
+      "end": 3157.38,
+      "no_speech_prob": 0.0,
+      "start": 3156.04,
+      "text": "包括也门"
+    },
+    {
+      "avg_logprob": -0.171069,
+      "compression_ratio": 1.308511,
+      "end": 3160.66,
+      "no_speech_prob": 0.0,
+      "start": 3157.38,
+      "text": "大家都记住也会解放很多被绑架的这些奴隶"
+    },
+    {
+      "avg_logprob": -0.183734,
+      "compression_ratio": 1.255172,
+      "end": 3162.46,
+      "no_speech_prob": 0.0,
+      "start": 3160.66,
+      "text": "哈美内伊的宗教主义"
+    },
+    {
+      "avg_logprob": -0.183734,
+      "compression_ratio": 1.255172,
+      "end": 3165.28,
+      "no_speech_prob": 0.0,
+      "start": 3162.46,
+      "text": "直接影响了十几亿的穆斯林宗教人士"
+    },
+    {
+      "avg_logprob": -0.183734,
+      "compression_ratio": 1.255172,
+      "end": 3172.18,
+      "no_speech_prob": 0.0,
+      "start": 3166.28,
+      "text": "他的形象一个人就代表了16亿的全世界的穆斯林人士"
+    },
+    {
+      "avg_logprob": -0.183734,
+      "compression_ratio": 1.255172,
+      "end": 3175.46,
+      "no_speech_prob": 0.0,
+      "start": 3172.84,
+      "text": "让世界上对穆斯林人士不友好"
+    },
+    {
+      "avg_logprob": -0.230093,
+      "compression_ratio": 1.303922,
+      "end": 3179.42,
+      "no_speech_prob": 0.0,
+      "start": 3175.46,
+      "text": "我认为他的宗教的主义的灭亡代表性的这个灭亡"
+    },
+    {
+      "avg_logprob": -0.230093,
+      "compression_ratio": 1.303922,
+      "end": 3181.7,
+      "no_speech_prob": 0.0,
+      "start": 3179.42,
+      "text": "是全世界重新认识穆斯林"
+    },
+    {
+      "avg_logprob": -0.230093,
+      "compression_ratio": 1.303922,
+      "end": 3184.02,
+      "no_speech_prob": 0.0,
+      "start": 3181.7,
+      "text": "就像共产党灭亡了"
+    },
+    {
+      "avg_logprob": -0.230093,
+      "compression_ratio": 1.303922,
+      "end": 3187.34,
+      "no_speech_prob": 0.0,
+      "start": 3184.02,
+      "text": "然后完全去他该去的被消灭了"
+    },
+    {
+      "avg_logprob": -0.230093,
+      "compression_ratio": 1.303922,
+      "end": 3191.66,
+      "no_speech_prob": 0.0,
+      "start": 3187.34,
+      "text": "中国14亿中国人会回到一个正常的社会国际舞台"
+    },
+    {
+      "avg_logprob": -0.230093,
+      "compression_ratio": 1.303922,
+      "end": 3194.66,
+      "no_speech_prob": 0.0,
+      "start": 3191.66,
+      "text": "而不应该被这个共产党所代表一样"
+    },
+    {
+      "avg_logprob": -0.283812,
+      "compression_ratio": 1.029851,
+      "end": 3197.04,
+      "no_speech_prob": 0.0,
+      "start": 3194.66,
+      "text": "我认为这是人类最好的时间"
+    },
+    {
+      "avg_logprob": -0.283812,
+      "compression_ratio": 1.029851,
+      "end": 3200.04,
+      "no_speech_prob": 0.0,
+      "start": 3197.04,
+      "text": "新中国联邦绝对负一切责任"
+    },
+    {
+      "avg_logprob": -0.283812,
+      "compression_ratio": 1.029851,
+      "end": 3201.2,
+      "no_speech_prob": 0.0,
+      "start": 3200.04,
+      "text": "像哈美内伊先生"
+    },
+    {
+      "avg_logprob": -0.283812,
+      "compression_ratio": 1.029851,
+      "end": 3202.58,
+      "no_speech_prob": 0.0,
+      "start": 3201.2,
+      "text": "我们祝福你"
+    },
+    {
+      "avg_logprob": -0.283812,
+      "compression_ratio": 1.029851,
+      "end": 3203.88,
+      "no_speech_prob": 0.0,
+      "start": 3202.58,
+      "text": "永垂不朽"
+    },
+    {
+      "avg_logprob": -0.283812,
+      "compression_ratio": 1.029851,
+      "end": 3204.96,
+      "no_speech_prob": 0.0,
+      "start": 3203.88,
+      "text": "早日归天"
+    },
+    {
+      "avg_logprob": -0.283812,
+      "compression_ratio": 1.029851,
+      "end": 3205.74,
+      "no_speech_prob": 0.0,
+      "start": 3204.96,
+      "text": "谢谢"
+    },
+    {
+      "avg_logprob": -0.361448,
+      "compression_ratio": 1.433628,
+      "end": 3206.74,
+      "no_speech_prob": 0.0,
+      "start": 3205.74,
+      "text": "谢谢"
+    },
+    {
+      "avg_logprob": -0.361448,
+      "compression_ratio": 1.433628,
+      "end": 3207.74,
+      "no_speech_prob": 0.0,
+      "start": 3206.74,
+      "text": "谢谢"
+    },
+    {
+      "avg_logprob": -0.361448,
+      "compression_ratio": 1.433628,
+      "end": 3208.74,
+      "no_speech_prob": 0.0,
+      "start": 3207.74,
+      "text": "谢谢"
+    },
+    {
+      "avg_logprob": -0.361448,
+      "compression_ratio": 1.433628,
+      "end": 3209.74,
+      "no_speech_prob": 0.0,
+      "start": 3208.74,
+      "text": "谢谢"
+    },
+    {
+      "avg_logprob": -0.361448,
+      "compression_ratio": 1.433628,
+      "end": 3210.74,
+      "no_speech_prob": 0.0,
+      "start": 3209.74,
+      "text": "谢谢"
+    },
+    {
+      "avg_logprob": -0.361448,
+      "compression_ratio": 1.433628,
+      "end": 3211.74,
+      "no_speech_prob": 0.0,
+      "start": 3210.74,
+      "text": "张宝哥"
+    },
+    {
+      "avg_logprob": -0.361448,
+      "compression_ratio": 1.433628,
+      "end": 3212.74,
+      "no_speech_prob": 0.0,
+      "start": 3211.74,
+      "text": "现在还在跳吗"
+    },
+    {
+      "avg_logprob": -0.361448,
+      "compression_ratio": 1.433628,
+      "end": 3213.74,
+      "no_speech_prob": 0.0,
+      "start": 3212.74,
+      "text": "很快跳"
+    },
+    {
+      "avg_logprob": -0.361448,
+      "compression_ratio": 1.433628,
+      "end": 3214.74,
+      "no_speech_prob": 0.0,
+      "start": 3213.74,
+      "text": "是"
+    },
+    {
+      "avg_logprob": -0.361448,
+      "compression_ratio": 1.433628,
+      "end": 3216.74,
+      "no_speech_prob": 0.0,
+      "start": 3214.74,
+      "text": "你也假讲吧"
+    },
+    {
+      "avg_logprob": -0.361448,
+      "compression_ratio": 1.433628,
+      "end": 3218.74,
+      "no_speech_prob": 0.0,
+      "start": 3216.74,
+      "text": "这个确实很震撼"
+    },
+    {
+      "avg_logprob": -0.361448,
+      "compression_ratio": 1.433628,
+      "end": 3219.74,
+      "no_speech_prob": 0.0,
+      "start": 3218.74,
+      "text": "也很"
+    },
+    {
+      "avg_logprob": -0.361448,
+      "compression_ratio": 1.433628,
+      "end": 3222.74,
+      "no_speech_prob": 0.0,
+      "start": 3219.74,
+      "text": "很荣幸今天在这一刻跟齐哥一起来听"
+    },
+    {
+      "avg_logprob": -0.361448,
+      "compression_ratio": 1.433628,
+      "end": 3225.74,
+      "no_speech_prob": 0.0,
+      "start": 3222.74,
+      "text": "但确实也是影响世界命运的"
+    },
+    {
+      "avg_logprob": -0.361448,
+      "compression_ratio": 1.433628,
+      "end": 3228.74,
+      "no_speech_prob": 0.0,
+      "start": 3225.74,
+      "text": "我确实我自己没有理解这么高"
+    },
+    {
+      "avg_logprob": -0.361448,
+      "compression_ratio": 1.433628,
+      "end": 3231.74,
+      "no_speech_prob": 0.0,
+      "start": 3228.74,
+      "text": "就是他这个人会对全世界影响会这么大"
+    },
+    {
+      "avg_logprob": -0.361448,
+      "compression_ratio": 1.433628,
+      "end": 3234.74,
+      "no_speech_prob": 0.0,
+      "start": 3231.74,
+      "text": "但是刚才听齐哥讲了以后"
+    },
+    {
+      "avg_logprob": -0.10716,
+      "compression_ratio": 1.419048,
+      "end": 3235.74,
+      "no_speech_prob": 0.0,
+      "start": 3234.74,
+      "text": "我感觉确实是"
+    },
+    {
+      "avg_logprob": -0.10716,
+      "compression_ratio": 1.419048,
+      "end": 3237.74,
+      "no_speech_prob": 0.0,
+      "start": 3235.74,
+      "text": "就是他这个宗教的影响实在是太深"
+    },
+    {
+      "avg_logprob": -0.10716,
+      "compression_ratio": 1.419048,
+      "end": 3239.74,
+      "no_speech_prob": 0.0,
+      "start": 3237.74,
+      "text": "而且很长时间"
+    },
+    {
+      "avg_logprob": -0.10716,
+      "compression_ratio": 1.419048,
+      "end": 3241.74,
+      "no_speech_prob": 0.0,
+      "start": 3239.74,
+      "text": "光是哈美内伊在位应该几十年吧"
+    },
+    {
+      "avg_logprob": -0.10716,
+      "compression_ratio": 1.419048,
+      "end": 3242.74,
+      "no_speech_prob": 0.0,
+      "start": 3241.74,
+      "text": "嗯"
+    },
+    {
+      "avg_logprob": -0.10716,
+      "compression_ratio": 1.419048,
+      "end": 3245.74,
+      "no_speech_prob": 0.0,
+      "start": 3242.74,
+      "text": "几十年那么在整个这个文化里面"
+    },
+    {
+      "avg_logprob": -0.10716,
+      "compression_ratio": 1.419048,
+      "end": 3247.74,
+      "no_speech_prob": 0.0,
+      "start": 3245.74,
+      "text": "确实影响根深蒂固"
+    },
+    {
+      "avg_logprob": -0.10716,
+      "compression_ratio": 1.419048,
+      "end": 3250.74,
+      "no_speech_prob": 0.0,
+      "start": 3247.74,
+      "text": "也是伊朗人为什么在七八十年代"
+    },
+    {
+      "avg_logprob": -0.10716,
+      "compression_ratio": 1.419048,
+      "end": 3252.74,
+      "no_speech_prob": 0.0,
+      "start": 3250.74,
+      "text": "跟着美国西方国家一样"
+    },
+    {
+      "avg_logprob": -0.10716,
+      "compression_ratio": 1.419048,
+      "end": 3254.74,
+      "no_speech_prob": 0.0,
+      "start": 3252.74,
+      "text": "但是后来就紧接着就是"
+    },
+    {
+      "avg_logprob": -0.10716,
+      "compression_ratio": 1.419048,
+      "end": 3256.74,
+      "no_speech_prob": 0.0,
+      "start": 3254.74,
+      "text": "进入了一个独裁体制里面"
+    },
+    {
+      "avg_logprob": -0.10716,
+      "compression_ratio": 1.419048,
+      "end": 3258.74,
+      "no_speech_prob": 0.0,
+      "start": 3256.74,
+      "text": "所以这个人给不仅伊朗人民"
+    },
+    {
+      "avg_logprob": -0.10716,
+      "compression_ratio": 1.419048,
+      "end": 3261.74,
+      "no_speech_prob": 0.0,
+      "start": 3258.74,
+      "text": "给周围的所有的国家都造成了这个危害"
+    },
+    {
+      "avg_logprob": -0.10716,
+      "compression_ratio": 1.419048,
+      "end": 3263.74,
+      "no_speech_prob": 0.0,
+      "start": 3261.74,
+      "text": "就像现在共产党一样的"
+    },
+    {
+      "avg_logprob": -0.10716,
+      "compression_ratio": 1.419048,
+      "end": 3264.74,
+      "no_speech_prob": 0.0,
+      "start": 3263.74,
+      "text": "对"
+    },
+    {
+      "avg_logprob": -0.297938,
+      "compression_ratio": 1.118644,
+      "end": 3266.74,
+      "no_speech_prob": 0.0,
+      "start": 3264.74,
+      "text": "感受还是确实心跳比较苦"
+    },
+    {
+      "avg_logprob": -0.297938,
+      "compression_ratio": 1.118644,
+      "end": 3267.74,
+      "no_speech_prob": 0.0,
+      "start": 3266.74,
+      "text": "哈哈哈哈"
+    },
+    {
+      "avg_logprob": -0.297938,
+      "compression_ratio": 1.118644,
+      "end": 3268.74,
+      "no_speech_prob": 0.0,
+      "start": 3267.74,
+      "text": "好"
+    },
+    {
+      "avg_logprob": -0.297938,
+      "compression_ratio": 1.118644,
+      "end": 3269.74,
+      "no_speech_prob": 0.0,
+      "start": 3268.74,
+      "text": "妮可啊"
+    },
+    {
+      "avg_logprob": -0.297938,
+      "compression_ratio": 1.118644,
+      "end": 3270.74,
+      "no_speech_prob": 0.0,
+      "start": 3269.74,
+      "text": "你这初中都毕业了"
+    },
+    {
+      "avg_logprob": -0.297938,
+      "compression_ratio": 1.118644,
+      "end": 3271.74,
+      "no_speech_prob": 0.0,
+      "start": 3270.74,
+      "text": "你说说"
+    },
+    {
+      "avg_logprob": -0.297938,
+      "compression_ratio": 1.118644,
+      "end": 3272.74,
+      "no_speech_prob": 0.0,
+      "start": 3271.74,
+      "text": "哈哈哈哈"
+    },
+    {
+      "avg_logprob": -0.297938,
+      "compression_ratio": 1.118644,
+      "end": 3274.74,
+      "no_speech_prob": 0.0,
+      "start": 3272.74,
+      "text": "我知道就是最近呢"
+    },
+    {
+      "avg_logprob": -0.122256,
+      "compression_ratio": 1.226415,
+      "end": 3278.74,
+      "no_speech_prob": 0.0,
+      "start": 3274.74,
+      "text": "在伊朗十几个城市都有爆发大规模的"
+    },
+    {
+      "avg_logprob": -0.122256,
+      "compression_ratio": 1.226415,
+      "end": 3284.74,
+      "no_speech_prob": 0.0,
+      "start": 3278.74,
+      "text": "由女性为主的一个就是反对独裁的这么一个街头的运动"
+    },
+    {
+      "avg_logprob": -0.122256,
+      "compression_ratio": 1.226415,
+      "end": 3288.74,
+      "no_speech_prob": 0.0,
+      "start": 3284.74,
+      "text": "它的起因呢就是有一位二十岁的一个伊朗的女"
+    },
+    {
+      "avg_logprob": -0.122256,
+      "compression_ratio": 1.226415,
+      "end": 3290.74,
+      "no_speech_prob": 0.0,
+      "start": 3288.74,
+      "text": "就是女生吧"
+    },
+    {
+      "avg_logprob": -0.170816,
+      "compression_ratio": 1.134615,
+      "end": 3293.74,
+      "no_speech_prob": 0.0,
+      "start": 3290.74,
+      "text": "她因为走出这个德黑兰地铁的时候"
+    },
+    {
+      "avg_logprob": -0.170816,
+      "compression_ratio": 1.134615,
+      "end": 3296.74,
+      "no_speech_prob": 0.0,
+      "start": 3293.74,
+      "text": "她那个包头就是没有包炎"
+    },
+    {
+      "avg_logprob": -0.170816,
+      "compression_ratio": 1.134615,
+      "end": 3298.74,
+      "no_speech_prob": 0.0,
+      "start": 3296.74,
+      "text": "然后就被警察给抓到拘留所"
+    },
+    {
+      "avg_logprob": -0.170816,
+      "compression_ratio": 1.134615,
+      "end": 3299.74,
+      "no_speech_prob": 0.0,
+      "start": 3298.74,
+      "text": "然后呢"
+    },
+    {
+      "avg_logprob": -0.170816,
+      "compression_ratio": 1.134615,
+      "end": 3301.74,
+      "no_speech_prob": 0.0,
+      "start": 3299.74,
+      "text": "对她进行了三天的再教育"
+    },
+    {
+      "avg_logprob": -0.170816,
+      "compression_ratio": 1.134615,
+      "end": 3303.74,
+      "no_speech_prob": 0.0,
+      "start": 3301.74,
+      "text": "然后她就死掉了"
+    },
+    {
+      "avg_logprob": -0.090827,
+      "compression_ratio": 1.171598,
+      "end": 3305.74,
+      "no_speech_prob": 0.0,
+      "start": 3303.74,
+      "text": "所以就因为这个事情呢"
+    },
+    {
+      "avg_logprob": -0.090827,
+      "compression_ratio": 1.171598,
+      "end": 3307.74,
+      "no_speech_prob": 0.0,
+      "start": 3305.74,
+      "text": "引发伊朗大规模的"
+    },
+    {
+      "avg_logprob": -0.090827,
+      "compression_ratio": 1.171598,
+      "end": 3310.74,
+      "no_speech_prob": 0.0,
+      "start": 3307.74,
+      "text": "以女性为主的反独裁的运动"
+    },
+    {
+      "avg_logprob": -0.090827,
+      "compression_ratio": 1.171598,
+      "end": 3311.74,
+      "no_speech_prob": 0.0,
+      "start": 3310.74,
+      "text": "所以现在呢"
+    },
+    {
+      "avg_logprob": -0.090827,
+      "compression_ratio": 1.171598,
+      "end": 3312.74,
+      "no_speech_prob": 0.0,
+      "start": 3311.74,
+      "text": "我们知道"
+    },
+    {
+      "avg_logprob": -0.090827,
+      "compression_ratio": 1.171598,
+      "end": 3315.74,
+      "no_speech_prob": 0.0,
+      "start": 3312.74,
+      "text": "现在我看到有美联社和纽约时报"
+    },
+    {
+      "avg_logprob": -0.090827,
+      "compression_ratio": 1.171598,
+      "end": 3318.74,
+      "no_speech_prob": 0.0,
+      "start": 3315.74,
+      "text": "还有世界各大的媒体都有报道"
+    },
+    {
+      "avg_logprob": -0.083717,
+      "compression_ratio": 1.445344,
+      "end": 3321.74,
+      "no_speech_prob": 0.0,
+      "start": 3318.74,
+      "text": "很多伊朗的女性她们走上街头"
+    },
+    {
+      "avg_logprob": -0.083717,
+      "compression_ratio": 1.445344,
+      "end": 3327.74,
+      "no_speech_prob": 0.0,
+      "start": 3321.74,
+      "text": "然后把这个头上那个包头就是包头的那东西给拆开"
+    },
+    {
+      "avg_logprob": -0.083717,
+      "compression_ratio": 1.445344,
+      "end": 3329.74,
+      "no_speech_prob": 0.0,
+      "start": 3327.74,
+      "text": "她们就觉得我们受够了"
+    },
+    {
+      "avg_logprob": -0.083717,
+      "compression_ratio": 1.445344,
+      "end": 3334.74,
+      "no_speech_prob": 0.0,
+      "start": 3329.74,
+      "text": "而且她们的这个反抗的这个矛头直指哈美内衣"
+    },
+    {
+      "avg_logprob": -0.083717,
+      "compression_ratio": 1.445344,
+      "end": 3337.74,
+      "no_speech_prob": 0.0,
+      "start": 3334.74,
+      "text": "她们觉得是一个独裁的一个政权"
+    },
+    {
+      "avg_logprob": -0.083717,
+      "compression_ratio": 1.445344,
+      "end": 3339.74,
+      "no_speech_prob": 0.0,
+      "start": 3337.74,
+      "text": "剥夺了一个女性作为一个人性"
+    },
+    {
+      "avg_logprob": -0.083717,
+      "compression_ratio": 1.445344,
+      "end": 3342.74,
+      "no_speech_prob": 0.0,
+      "start": 3339.74,
+      "text": "最就是女性都是爱美的嘛"
+    },
+    {
+      "avg_logprob": -0.083717,
+      "compression_ratio": 1.445344,
+      "end": 3346.74,
+      "no_speech_prob": 0.0,
+      "start": 3342.74,
+      "text": "都是喜欢露出自己的头发或者是皮肤"
+    },
+    {
+      "avg_logprob": -0.101472,
+      "compression_ratio": 1.299611,
+      "end": 3349.74,
+      "no_speech_prob": 0.0,
+      "start": 3346.74,
+      "text": "但是现在她们就是因为露一点点头发"
+    },
+    {
+      "avg_logprob": -0.101472,
+      "compression_ratio": 1.299611,
+      "end": 3351.74,
+      "no_speech_prob": 0.0,
+      "start": 3349.74,
+      "text": "就会被弄死"
+    },
+    {
+      "avg_logprob": -0.101472,
+      "compression_ratio": 1.299611,
+      "end": 3356.74,
+      "no_speech_prob": 0.0,
+      "start": 3351.74,
+      "text": "就像中共对西藏的这个人的那种残害"
+    },
+    {
+      "avg_logprob": -0.101472,
+      "compression_ratio": 1.299611,
+      "end": 3357.74,
+      "no_speech_prob": 0.0,
+      "start": 3356.74,
+      "text": "大家看到这个图片"
+    },
+    {
+      "avg_logprob": -0.101472,
+      "compression_ratio": 1.299611,
+      "end": 3362.74,
+      "no_speech_prob": 0.0,
+      "start": 3357.74,
+      "text": "就是伊朗人现在高喊独裁者去死"
+    },
+    {
+      "avg_logprob": -0.101472,
+      "compression_ratio": 1.299611,
+      "end": 3363.74,
+      "no_speech_prob": 0.0,
+      "start": 3362.74,
+      "text": "头巾去死"
+    },
+    {
+      "avg_logprob": -0.101472,
+      "compression_ratio": 1.299611,
+      "end": 3368.74,
+      "no_speech_prob": 0.0,
+      "start": 3363.74,
+      "text": "我觉得就是让我就想到了当时在香港的运动"
+    },
+    {
+      "avg_logprob": -0.101472,
+      "compression_ratio": 1.299611,
+      "end": 3375.74,
+      "no_speech_prob": 0.0,
+      "start": 3368.74,
+      "text": "还有就是郭先生从2017年开始率领所有的中国人去灭共的这样的一个"
+    },
+    {
+      "avg_logprob": -0.10691,
+      "compression_ratio": 1.374302,
+      "end": 3378.74,
+      "no_speech_prob": 0.0,
+      "start": 3375.74,
+      "text": "所以我觉得这个世界真的是变化非常大"
+    },
+    {
+      "avg_logprob": -0.10691,
+      "compression_ratio": 1.374302,
+      "end": 3385.74,
+      "no_speech_prob": 0.0,
+      "start": 3378.74,
+      "text": "我们确实所处在的一个是一个就是改天换地的这么一个的世界"
+    },
+    {
+      "avg_logprob": -0.10691,
+      "compression_ratio": 1.374302,
+      "end": 3394.74,
+      "no_speech_prob": 0.0,
+      "start": 3385.74,
+      "text": "从英女王前几天过世她带走的一个世界和哈美内衣所带走的一个世界是完全是不一样的"
+    },
+    {
+      "avg_logprob": -0.049355,
+      "compression_ratio": 1.294118,
+      "end": 3401.74,
+      "no_speech_prob": 0.0,
+      "start": 3394.74,
+      "text": "那我真的是感到就是新中国联邦在这个世界动荡的时候真的是一盏明灯"
+    },
+    {
+      "avg_logprob": -0.049355,
+      "compression_ratio": 1.294118,
+      "end": 3409.74,
+      "no_speech_prob": 0.0,
+      "start": 3401.74,
+      "text": "因为如果不是新中国联邦告诉全世界中共是最邪恶的邪恶轴心国的那个中心的话"
+    },
+    {
+      "avg_logprob": -0.057284,
+      "compression_ratio": 1.122581,
+      "end": 3416.74,
+      "no_speech_prob": 0.0,
+      "start": 3409.74,
+      "text": "几乎没有人会知道就是世界上所有的罪恶的来源都来自于中国共产党"
+    },
+    {
+      "avg_logprob": -0.057284,
+      "compression_ratio": 1.122581,
+      "end": 3422.74,
+      "no_speech_prob": 0.0,
+      "start": 3416.74,
+      "text": "而这一切世界正在觉醒就是五年前郭先生冒着自己的生命的危险"
+    },
+    {
+      "avg_logprob": -0.069519,
+      "compression_ratio": 1.278947,
+      "end": 3428.74,
+      "no_speech_prob": 0.0,
+      "start": 3422.74,
+      "text": "然后就是拉开这个就是就是扯开这个黑幕中的这个东西"
+    },
+    {
+      "avg_logprob": -0.069519,
+      "compression_ratio": 1.278947,
+      "end": 3431.74,
+      "no_speech_prob": 0.0,
+      "start": 3428.74,
+      "text": "让大家看到让世界看到真相"
+    },
+    {
+      "avg_logprob": -0.069519,
+      "compression_ratio": 1.278947,
+      "end": 3434.74,
+      "no_speech_prob": 0.0,
+      "start": 3431.74,
+      "text": "所以谢谢郭先生您为我们"
+    },
+    {
+      "avg_logprob": -0.069519,
+      "compression_ratio": 1.278947,
+      "end": 3439.74,
+      "no_speech_prob": 0.0,
+      "start": 3434.74,
+      "text": "我觉得今天的伊朗人如果听到这段视频和郭先生的爆料"
+    },
+    {
+      "avg_logprob": -0.069519,
+      "compression_ratio": 1.278947,
+      "end": 3441.74,
+      "no_speech_prob": 0.0,
+      "start": 3439.74,
+      "text": "他们也会非常感谢你的"
+    },
+    {
+      "avg_logprob": -0.079952,
+      "compression_ratio": 1.306667,
+      "end": 3450.74,
+      "no_speech_prob": 0.0,
+      "start": 3441.74,
+      "text": "因为我觉得没有就是世界上所有受极权迫害的人都知道我们中国人"
+    },
+    {
+      "avg_logprob": -0.079952,
+      "compression_ratio": 1.306667,
+      "end": 3458.74,
+      "no_speech_prob": 0.0,
+      "start": 3450.74,
+      "text": "不管是俄罗斯人还是伊朗人我们所面临的敌人是共同的就是一个邪恶的独裁的政权"
+    },
+    {
+      "avg_logprob": -0.079952,
+      "compression_ratio": 1.306667,
+      "end": 3465.74,
+      "no_speech_prob": 0.0,
+      "start": 3458.74,
+      "text": "而所有的这些邪恶的轴心他们是在一起的就像郭先生您刚才讲的那个铁三角"
+    },
+    {
+      "avg_logprob": -0.13351,
+      "compression_ratio": 1.411765,
+      "end": 3470.74,
+      "no_speech_prob": 0.0,
+      "start": 3465.74,
+      "text": "有这个普京啊还有这个哈梅内衣还有中共"
+    },
+    {
+      "avg_logprob": -0.13351,
+      "compression_ratio": 1.411765,
+      "end": 3476.74,
+      "no_speech_prob": 0.0,
+      "start": 3470.74,
+      "text": "所以我觉得那两个都倒了这个世界能够重建光明的时候也快到了"
+    },
+    {
+      "avg_logprob": -0.13351,
+      "compression_ratio": 1.411765,
+      "end": 3484.74,
+      "no_speech_prob": 0.0,
+      "start": 3476.74,
+      "text": "你以后刚才说的特别重要就是我们是真的是对女性是完全是不一样的尊重"
+    },
+    {
+      "avg_logprob": -0.13351,
+      "compression_ratio": 1.411765,
+      "end": 3489.74,
+      "no_speech_prob": 0.0,
+      "start": 3484.74,
+      "text": "我们从爆料革命第一天就是从杨改兰女士还有我的母亲"
+    },
+    {
+      "avg_logprob": -0.13351,
+      "compression_ratio": 1.411765,
+      "end": 3494.74,
+      "no_speech_prob": 0.0,
+      "start": 3489.74,
+      "text": "还有这个我们看到了还有我们钥匙兰啊等种的活着的这个是"
+    },
+    {
+      "avg_logprob": -0.071652,
+      "compression_ratio": 1.336842,
+      "end": 3499.74,
+      "no_speech_prob": 0.0,
+      "start": 3494.74,
+      "text": "这个是自愿的不自愿的就是这种女性被死被不尊重的啊"
+    },
+    {
+      "avg_logprob": -0.071652,
+      "compression_ratio": 1.336842,
+      "end": 3503.74,
+      "no_speech_prob": 0.0,
+      "start": 3499.74,
+      "text": "这个在伊朗看到这个我们是绝对受不了的"
+    },
+    {
+      "avg_logprob": -0.071652,
+      "compression_ratio": 1.336842,
+      "end": 3506.74,
+      "no_speech_prob": 0.0,
+      "start": 3503.74,
+      "text": "那么另外一个咱们全球农场的战友们呢"
+    },
+    {
+      "avg_logprob": -0.071652,
+      "compression_ratio": 1.336842,
+      "end": 3510.74,
+      "no_speech_prob": 0.0,
+      "start": 3506.74,
+      "text": "就此时此刻应该把刚才那一段呢用这个阿拉伯文啊"
+    },
+    {
+      "avg_logprob": -0.071652,
+      "compression_ratio": 1.336842,
+      "end": 3513.74,
+      "no_speech_prob": 0.0,
+      "start": 3510.74,
+      "text": "伊朗的语言啊英文啊赶快做成各种视频"
+    },
+    {
+      "avg_logprob": -0.071652,
+      "compression_ratio": 1.336842,
+      "end": 3517.74,
+      "no_speech_prob": 0.0,
+      "start": 3513.74,
+      "text": "分享到所有的全世界社交媒体平台上去"
+    },
+    {
+      "avg_logprob": -0.071652,
+      "compression_ratio": 1.336842,
+      "end": 3520.74,
+      "no_speech_prob": 0.0,
+      "start": 3517.74,
+      "text": "而且伊朗人知道我的人很多"
+    },
+    {
+      "avg_logprob": -0.103366,
+      "compression_ratio": 1.365385,
+      "end": 3525.74,
+      "no_speech_prob": 0.0,
+      "start": 3520.74,
+      "text": "就是当初一开始我的推特还有盖特"
+    },
+    {
+      "avg_logprob": -0.103366,
+      "compression_ratio": 1.365385,
+      "end": 3528.74,
+      "no_speech_prob": 0.0,
+      "start": 3525.74,
+      "text": "不是那什么那个YouTube关注量很多是来自伊朗的"
+    },
+    {
+      "avg_logprob": -0.103366,
+      "compression_ratio": 1.365385,
+      "end": 3530.74,
+      "no_speech_prob": 0.0,
+      "start": 3528.74,
+      "text": "因为很多伊朗到中国做生意"
+    },
+    {
+      "avg_logprob": -0.103366,
+      "compression_ratio": 1.365385,
+      "end": 3533.74,
+      "no_speech_prob": 0.0,
+      "start": 3530.74,
+      "text": "他们在中国做生意很早就知道我"
+    },
+    {
+      "avg_logprob": -0.103366,
+      "compression_ratio": 1.365385,
+      "end": 3534.74,
+      "no_speech_prob": 0.0,
+      "start": 3533.74,
+      "text": "而且他们都知道盘古"
+    },
+    {
+      "avg_logprob": -0.103366,
+      "compression_ratio": 1.365385,
+      "end": 3539.74,
+      "no_speech_prob": 0.0,
+      "start": 3534.74,
+      "text": "而且是这个伊朗在欧洲人的在中东人很多也都知道我"
+    },
+    {
+      "avg_logprob": -0.103366,
+      "compression_ratio": 1.365385,
+      "end": 3544.74,
+      "no_speech_prob": 0.0,
+      "start": 3539.74,
+      "text": "所以说这个我在伊朗人心目中是有位置有形象有知名度的"
+    },
+    {
+      "avg_logprob": -0.093985,
+      "compression_ratio": 1.344262,
+      "end": 3548.74,
+      "no_speech_prob": 0.0,
+      "start": 3544.74,
+      "text": "让他们更多的人知道呢早日能救更多的人"
+    },
+    {
+      "avg_logprob": -0.093985,
+      "compression_ratio": 1.344262,
+      "end": 3550.74,
+      "no_speech_prob": 0.0,
+      "start": 3548.74,
+      "text": "所以大家尽量的传播"
+    },
+    {
+      "avg_logprob": -0.093985,
+      "compression_ratio": 1.344262,
+      "end": 3552.74,
+      "no_speech_prob": 0.0,
+      "start": 3550.74,
+      "text": "这绝对这个传播是救人的啊"
+    },
+    {
+      "avg_logprob": -0.093985,
+      "compression_ratio": 1.344262,
+      "end": 3556.74,
+      "no_speech_prob": 0.0,
+      "start": 3552.74,
+      "text": "而且咱们这个绝对是负责任的啊这是负责任的"
+    },
+    {
+      "avg_logprob": -0.093985,
+      "compression_ratio": 1.344262,
+      "end": 3558.74,
+      "no_speech_prob": 0.0,
+      "start": 3556.74,
+      "text": "我认为它几乎是没有可能的"
+    },
+    {
+      "avg_logprob": -0.093985,
+      "compression_ratio": 1.344262,
+      "end": 3561.74,
+      "no_speech_prob": 0.0,
+      "start": 3558.74,
+      "text": "我们通过三方的信息作证"
+    },
+    {
+      "avg_logprob": -0.133085,
+      "compression_ratio": 1.516854,
+      "end": 3566.74,
+      "no_speech_prob": 0.0,
+      "start": 3561.74,
+      "text": "他身边的护卫他家庭的这个资产在移动情况"
+    },
+    {
+      "avg_logprob": -0.133085,
+      "compression_ratio": 1.516854,
+      "end": 3568.74,
+      "no_speech_prob": 0.0,
+      "start": 3566.74,
+      "text": "还有他的私人一生"
+    },
+    {
+      "avg_logprob": -0.133085,
+      "compression_ratio": 1.516854,
+      "end": 3572.74,
+      "no_speech_prob": 0.0,
+      "start": 3568.74,
+      "text": "这个私人一生这个他的移动和动的情况"
+    },
+    {
+      "avg_logprob": -0.133085,
+      "compression_ratio": 1.516854,
+      "end": 3574.74,
+      "no_speech_prob": 0.0,
+      "start": 3572.74,
+      "text": "几乎我在一直关注着啊"
+    },
+    {
+      "avg_logprob": -0.133085,
+      "compression_ratio": 1.516854,
+      "end": 3578.74,
+      "no_speech_prob": 0.0,
+      "start": 3574.74,
+      "text": "因为你要了解这些这些人啊"
+    },
+    {
+      "avg_logprob": -0.133085,
+      "compression_ratio": 1.516854,
+      "end": 3580.74,
+      "no_speech_prob": 0.0,
+      "start": 3578.74,
+      "text": "特别这些老不要脸的对吧"
+    },
+    {
+      "avg_logprob": -0.133085,
+      "compression_ratio": 1.516854,
+      "end": 3581.74,
+      "no_speech_prob": 0.0,
+      "start": 3580.74,
+      "text": "你就关注他的一生"
+    },
+    {
+      "avg_logprob": -0.133085,
+      "compression_ratio": 1.516854,
+      "end": 3583.74,
+      "no_speech_prob": 0.0,
+      "start": 3581.74,
+      "text": "你再关注他生吃气已经不管用了"
+    },
+    {
+      "avg_logprob": -0.133085,
+      "compression_ratio": 1.516854,
+      "end": 3584.74,
+      "no_speech_prob": 0.0,
+      "start": 3583.74,
+      "text": "他不行了是吧"
+    },
+    {
+      "avg_logprob": -0.133085,
+      "compression_ratio": 1.516854,
+      "end": 3586.74,
+      "no_speech_prob": 0.0,
+      "start": 3584.74,
+      "text": "你吃海果完吃多少也不行了"
+    },
+    {
+      "avg_logprob": -0.133085,
+      "compression_ratio": 1.516854,
+      "end": 3589.74,
+      "no_speech_prob": 0.0,
+      "start": 3586.74,
+      "text": "但是他那个命保的就是一生他是离不了的"
+    },
+    {
+      "avg_logprob": -0.08203,
+      "compression_ratio": 1.140496,
+      "end": 3592.74,
+      "no_speech_prob": 0.0,
+      "start": 3589.74,
+      "text": "而且不是因为他权力大"
+    },
+    {
+      "avg_logprob": -0.08203,
+      "compression_ratio": 1.140496,
+      "end": 3594.74,
+      "no_speech_prob": 0.0,
+      "start": 3592.74,
+      "text": "他就能找出几个好医生"
+    },
+    {
+      "avg_logprob": -0.08203,
+      "compression_ratio": 1.140496,
+      "end": 3596.74,
+      "no_speech_prob": 0.0,
+      "start": 3594.74,
+      "text": "实际上就那几个好医生"
+    },
+    {
+      "avg_logprob": -0.08203,
+      "compression_ratio": 1.140496,
+      "end": 3598.74,
+      "no_speech_prob": 0.0,
+      "start": 3596.74,
+      "text": "你要了解国际游戏的话"
+    },
+    {
+      "avg_logprob": -0.08203,
+      "compression_ratio": 1.140496,
+      "end": 3599.74,
+      "no_speech_prob": 0.0,
+      "start": 3598.74,
+      "text": "你就要了解到"
+    }
+  ],
+  "text": "哈伊迪斯 我可以说一下他的名字现在已经跑了这个医生因为我给他打个电话我说你在哪他说我刚从伊朗回来我现在回伦敦能不能有时间见个面他就是介绍土耳其那个医生给当时戴安娜王妃的戴安娜王妃当时深爱的是土耳其籍的一个英国医生这爱到真的是真爱啊真爱真爱 爱得疯了但是他害怕 他不敢跟他来往他有时候约会就约到这个伊朗籍的医生下去哈迪 哈迪到那去最后就这个哥们就是整个的就是不敢碰他了就土耳其一生吓跑了去泰国 去新加坡 不敢回来了就戴安娜老找他 说你给我找他 你给我找回来在这种情况下戴安娜很生气就为了让这个男的生气 这个男的也爱他就爱上了哈罗斯的拉法耶王子爱上这个英女皇很不高兴 皇谁不高兴啊然后呢这个时候就是英国毛首相我不说是谁了 咱们的朋友就约了戴安娜去这个瑞兹饭店白天后面吃完饭以后戴安娜说咱俩走走我在后面他就去走走这位当时的首相说 你不要跟这个拉法耶这个家伙在一起为什么 他在西中哇 戴安娜老闆很不高兴 你怎么这么说呢 你有什么证据吗他说 我知道你爱谁谁谁 人家不敢爱你这个你爱他也不是真的 你别玩这个火这是戴安娜死前的一个月这个土耳其的医生的故事和这个伊朗医生的故事这真的是很有意思 他是哈美内伊的医生我说你现在回英国 我说你不觉得现在你的老板现在身体快不行了 哈哈大笑他说 你懂的 哇塞当时那时候咱都说你懂的话比共产党说的我早多少年 是吧 你懂的他说 你懂的回去的时候我帮你按摩按摩你的背部他说 你来着见面说所以我断定 还没得意味着我说 赶快 收拾手结果从那以后这些小王子的小公主丢了这个 Uncle Mouth 佩服无底头地只有你知道的 都不会这么一词你看咱这一手的信息而且我告诉他说 大纳王妃爱的不是这个拉法耶 而且车祸绝对不是什么女皇杀的就是他吸了毒了 从瑞兹范出来他这个去搂他 就这样想着你啊不好意思啊 我占着便宜啊这样搂你的时候 你在车上 你可这中间有东西吗你就说 有人嘛 就是你老是动作太大了我这还抽毒了 一搂 一下就搂到那个司机脖子上去了司机 啪 就给装上去了 绝对就是这个故事就是吸毒导致的疯狂的 动手动脚的所以人家老是 你别老动脚 都假的自己老看人家定啥的 你撞着脖子了 张老师所以说 你经常在车上跟着老是 你别老邪子看所以说丹娜王菲特事件跟着两个一生都有关系一生几乎是全世界了解人隐私最直接不管你什么鸟人 你来了 你得脱光也不管你是宗教主义 还是教父 还是教爷的 是吧你都得脱光那么最近 我高度关注刚需后的普京我现在我们习太阳都缺朋友啊 是吧我得看谁是他朋友啊 咱就扫了汉美丽一现在我刚才已经说完了 前奏说完了 现在严肃点啊现在爆料 现在我们全世界的爆料革命的战友们新中国联邦 我是郭文贵我的右边是我们新中国联邦爆料革命的秘书长全球的秘书长 我的左边是我们形象代表Niko小姐 是我们的媒体发言人是我们的媒体主持人 今天很荣幸在这里向全世界宣布郭文贵本人负很多责任也可以负一切因此爆料所有的责任我对真相负责我向全世界报一个影响人类命运和我们每个人的息息相关宗教主义 我认为在世界上最后一个土建将会消失就是汉美内伊即将完蛋为什么我再服从谁头头ğan倍内伊りました我跟你无仇无冤恰恰的你的家族很多都是朋友但是由于你是人类的公主由于你和共产党的这个邪教主持的合作在世界和平和正义面前我们要选择和平和正义我现在给大家报告的事情哈美内伊先生是7月26号的下午开始心脏心肌炎导致的心脏衰竭的手术这个手术呢就要做了整个的要启动搭桥各种复杂手术到9月27号早上做了很多小时手术没有做完到27号到现在到时候就是我下午的就是纽约时间一个小时也就是现在爆料就9月29号的纽约时间12点到1点期间他们所有的医疗小组做出了决定哈美内伊的心脏不可能恢复让大家准备公告死亡后的情况我可以保证这个消息在我今天说之前全世界没有包括伊朗人没有任何人知道所有的强情我可以让大家负责他只有1%的机会他能活过来99%的机会他会在未来的不会超过48小时会宣布他的死性这对犹太人我们尊敬的犹太文明犹太世界是一个绝对好消息对待整个霍斯姆海峡整个中东国家的和平这是个上天次与最好消息对待消灭中国共产党和普京的独裁主义和乌克兰的战争拯救乌克兰和共产党打造的所谓的铁三角和邪恶的五国来反对西方的文明以反对美国为借口的现在造成的事件整个的核阴影下的这种世界大战机上发生的这种情况我认为这是上天给我们的恩赐哈美尼一的整个的鸽屁整个的灭亡直接会把习、普、哈、铁三角彻底打过随着他的灭亡伊朗日冰我相信会走向真正他们渴望的民主你走不走资本主义社会跟我没关系但我希望是能尊重人性的让我们尊敬的整个波斯文化还有我伊朗的很多朋友还有伊朗的那些文明人还有一个真的我们最尊敬的以色列人能减少恐惧减少战争得到解放更重要的事情也能把对面的说法UAE呀科威特呀包括整个的周围国家彻底从阴影中解放出来这对所谓的迅尼亚大马仕格包括也门大家都记住也会解放很多被绑架的这些奴隶哈美内伊的宗教主义直接影响了十几亿的穆斯林宗教人士他的形象一个人就代表了16亿的全世界的穆斯林人士让世界上对穆斯林人士不友好我认为他的宗教的主义的灭亡代表性的这个灭亡是全世界重新认识穆斯林就像共产党灭亡了然后完全去他该去的被消灭了中国14亿中国人会回到一个正常的社会国际舞台而不应该被这个共产党所代表一样我认为这是人类最好的时间新中国联邦绝对负一切责任像哈美内伊先生我们祝福你永垂不朽早日归天谢谢谢谢谢谢谢谢谢谢谢谢张宝哥现在还在跳吗很快跳是你也假讲吧这个确实很震撼也很很荣幸今天在这一刻跟齐哥一起来听但确实也是影响世界命运的我确实我自己没有理解这么高就是他这个人会对全世界影响会这么大但是刚才听齐哥讲了以后我感觉确实是就是他这个宗教的影响实在是太深而且很长时间光是哈美内伊在位应该几十年吧嗯几十年那么在整个这个文化里面确实影响根深蒂固也是伊朗人为什么在七八十年代跟着美国西方国家一样但是后来就紧接着就是进入了一个独裁体制里面所以这个人给不仅伊朗人民给周围的所有的国家都造成了这个危害就像现在共产党一样的对感受还是确实心跳比较苦哈哈哈哈好妮可啊你这初中都毕业了你说说哈哈哈哈我知道就是最近呢在伊朗十几个城市都有爆发大规模的由女性为主的一个就是反对独裁的这么一个街头的运动它的起因呢就是有一位二十岁的一个伊朗的女就是女生吧她因为走出这个德黑兰地铁的时候她那个包头就是没有包炎然后就被警察给抓到拘留所然后呢对她进行了三天的再教育然后她就死掉了所以就因为这个事情呢引发伊朗大规模的以女性为主的反独裁的运动所以现在呢我们知道现在我看到有美联社和纽约时报还有世界各大的媒体都有报道很多伊朗的女性她们走上街头然后把这个头上那个包头就是包头的那东西给拆开她们就觉得我们受够了而且她们的这个反抗的这个矛头直指哈美内衣她们觉得是一个独裁的一个政权剥夺了一个女性作为一个人性最就是女性都是爱美的嘛都是喜欢露出自己的头发或者是皮肤但是现在她们就是因为露一点点头发就会被弄死就像中共对西藏的这个人的那种残害大家看到这个图片就是伊朗人现在高喊独裁者去死头巾去死我觉得就是让我就想到了当时在香港的运动还有就是郭先生从2017年开始率领所有的中国人去灭共的这样的一个所以我觉得这个世界真的是变化非常大我们确实所处在的一个是一个就是改天换地的这么一个的世界从英女王前几天过世她带走的一个世界和哈美内衣所带走的一个世界是完全是不一样的那我真的是感到就是新中国联邦在这个世界动荡的时候真的是一盏明灯因为如果不是新中国联邦告诉全世界中共是最邪恶的邪恶轴心国的那个中心的话几乎没有人会知道就是世界上所有的罪恶的来源都来自于中国共产党而这一切世界正在觉醒就是五年前郭先生冒着自己的生命的危险然后就是拉开这个就是就是扯开这个黑幕中的这个东西让大家看到让世界看到真相所以谢谢郭先生您为我们我觉得今天的伊朗人如果听到这段视频和郭先生的爆料他们也会非常感谢你的因为我觉得没有就是世界上所有受极权迫害的人都知道我们中国人不管是俄罗斯人还是伊朗人我们所面临的敌人是共同的就是一个邪恶的独裁的政权而所有的这些邪恶的轴心他们是在一起的就像郭先生您刚才讲的那个铁三角有这个普京啊还有这个哈梅内衣还有中共所以我觉得那两个都倒了这个世界能够重建光明的时候也快到了你以后刚才说的特别重要就是我们是真的是对女性是完全是不一样的尊重我们从爆料革命第一天就是从杨改兰女士还有我的母亲还有这个我们看到了还有我们钥匙兰啊等种的活着的这个是这个是自愿的不自愿的就是这种女性被死被不尊重的啊这个在伊朗看到这个我们是绝对受不了的那么另外一个咱们全球农场的战友们呢就此时此刻应该把刚才那一段呢用这个阿拉伯文啊伊朗的语言啊英文啊赶快做成各种视频分享到所有的全世界社交媒体平台上去而且伊朗人知道我的人很多就是当初一开始我的推特还有盖特不是那什么那个YouTube关注量很多是来自伊朗的因为很多伊朗到中国做生意他们在中国做生意很早就知道我而且他们都知道盘古而且是这个伊朗在欧洲人的在中东人很多也都知道我所以说这个我在伊朗人心目中是有位置有形象有知名度的让他们更多的人知道呢早日能救更多的人所以大家尽量的传播这绝对这个传播是救人的啊而且咱们这个绝对是负责任的啊这是负责任的我认为它几乎是没有可能的我们通过三方的信息作证他身边的护卫他家庭的这个资产在移动情况还有他的私人一生这个私人一生这个他的移动和动的情况几乎我在一直关注着啊因为你要了解这些这些人啊特别这些老不要脸的对吧你就关注他的一生你再关注他生吃气已经不管用了他不行了是吧你吃海果完吃多少也不行了但是他那个命保的就是一生他是离不了的而且不是因为他权力大他就能找出几个好医生实际上就那几个好医生你要了解国际游戏的话你就要了解到"
+}

@@ -1,0 +1,2648 @@
+{
+  "chunk_audio_sha256": "d0886d9771dd6a2be0ff1b041c56a8445812f4796e84874e21d96b84dd236aa4",
+  "chunk_index": 0,
+  "completed_at": "2026-10-28T21:28:29Z",
+  "language": "zh",
+  "live_id": "LIVE_20220925_001",
+  "media_committed_to_git": false,
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "offset_sec": 0,
+  "paid_api_used": false,
+  "processing_location": "github-hosted-macos-arm64",
+  "schema_version": "cloud-asr-chunk-v1",
+  "segments": [
+    {
+      "avg_logprob": -0.382601,
+      "compression_ratio": 0.775,
+      "end": 29.98,
+      "no_speech_prob": 0.0,
+      "start": 0.0,
+      "text": "中文字幕志愿者 杨茜茜"
+    },
+    {
+      "avg_logprob": -0.276074,
+      "compression_ratio": 0.775,
+      "end": 59.98,
+      "no_speech_prob": 0.0,
+      "start": 30.0,
+      "text": "中文字幕志愿者 杨茜茜"
+    },
+    {
+      "avg_logprob": -0.254118,
+      "compression_ratio": 0.892857,
+      "end": 63.82,
+      "no_speech_prob": 0.0,
+      "start": 60.0,
+      "text": "思念的孤单"
+    },
+    {
+      "avg_logprob": -0.254118,
+      "compression_ratio": 0.892857,
+      "end": 72.0,
+      "no_speech_prob": 0.0,
+      "start": 63.82,
+      "text": "想起的狂欢总是很短暂"
+    },
+    {
+      "avg_logprob": -0.254118,
+      "compression_ratio": 0.892857,
+      "end": 78.72,
+      "no_speech_prob": 0.0,
+      "start": 72.0,
+      "text": "占有的怀抱总让我温暖"
+    },
+    {
+      "avg_logprob": -0.245186,
+      "compression_ratio": 0.84507,
+      "end": 87.66,
+      "no_speech_prob": 0.0,
+      "start": 78.72,
+      "text": "无聊的回忆让人很心烦"
+    },
+    {
+      "avg_logprob": -0.245186,
+      "compression_ratio": 0.84507,
+      "end": 90.72,
+      "no_speech_prob": 0.0,
+      "start": 87.66,
+      "text": "我又想你了"
+    },
+    {
+      "avg_logprob": -0.245186,
+      "compression_ratio": 0.84507,
+      "end": 96.54,
+      "no_speech_prob": 0.0,
+      "start": 90.72,
+      "text": "占有在那端"
+    },
+    {
+      "avg_logprob": -0.294111,
+      "compression_ratio": 0.945652,
+      "end": 100.36,
+      "no_speech_prob": 0.0,
+      "start": 96.54,
+      "text": "没有你陪伴"
+    },
+    {
+      "avg_logprob": -0.294111,
+      "compression_ratio": 0.945652,
+      "end": 104.36,
+      "no_speech_prob": 0.0,
+      "start": 100.36,
+      "text": "我真的好孤单"
+    },
+    {
+      "avg_logprob": -0.294111,
+      "compression_ratio": 0.945652,
+      "end": 106.62,
+      "no_speech_prob": 0.0,
+      "start": 104.36,
+      "text": "我的心好慌乱"
+    },
+    {
+      "avg_logprob": -0.294111,
+      "compression_ratio": 0.945652,
+      "end": 110.36,
+      "no_speech_prob": 0.0,
+      "start": 106.62,
+      "text": "不知怎么办"
+    },
+    {
+      "avg_logprob": -0.294111,
+      "compression_ratio": 0.945652,
+      "end": 114.36,
+      "no_speech_prob": 0.0,
+      "start": 110.36,
+      "text": "没有占有的日子"
+    },
+    {
+      "avg_logprob": -0.208549,
+      "compression_ratio": 0.931034,
+      "end": 118.18,
+      "no_speech_prob": 0.0,
+      "start": 114.36,
+      "text": "我真的好茫然"
+    },
+    {
+      "avg_logprob": -0.208549,
+      "compression_ratio": 0.931034,
+      "end": 124.36,
+      "no_speech_prob": 0.0,
+      "start": 118.18,
+      "text": "整天就像丢了灵魂一半"
+    },
+    {
+      "avg_logprob": -0.208549,
+      "compression_ratio": 0.931034,
+      "end": 128.36,
+      "no_speech_prob": 0.0,
+      "start": 124.36,
+      "text": "没有你陪伴"
+    },
+    {
+      "avg_logprob": -0.208549,
+      "compression_ratio": 0.931034,
+      "end": 132.36,
+      "no_speech_prob": 0.0,
+      "start": 128.36,
+      "text": "我真的好孤单"
+    },
+    {
+      "avg_logprob": -0.300884,
+      "compression_ratio": 0.884615,
+      "end": 134.36,
+      "no_speech_prob": 0.0,
+      "start": 132.36,
+      "text": "我的心好慌乱"
+    },
+    {
+      "avg_logprob": -0.300884,
+      "compression_ratio": 0.884615,
+      "end": 139.36,
+      "no_speech_prob": 0.0,
+      "start": 134.36,
+      "text": "不知怎么办"
+    },
+    {
+      "avg_logprob": -0.300884,
+      "compression_ratio": 0.884615,
+      "end": 143.36,
+      "no_speech_prob": 0.0,
+      "start": 139.36,
+      "text": "你们不在身边"
+    },
+    {
+      "avg_logprob": -0.300884,
+      "compression_ratio": 0.884615,
+      "end": 147.36,
+      "no_speech_prob": 0.0,
+      "start": 143.36,
+      "text": "真的好不习惯"
+    },
+    {
+      "avg_logprob": -0.395132,
+      "compression_ratio": 0.75,
+      "end": 150.36,
+      "no_speech_prob": 0.0,
+      "start": 147.36,
+      "text": "我的泪已流干"
+    },
+    {
+      "avg_logprob": -0.395132,
+      "compression_ratio": 0.75,
+      "end": 153.18,
+      "no_speech_prob": 0.0,
+      "start": 150.36,
+      "text": "你们管不管"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 11.763158,
+      "end": 154.82,
+      "no_speech_prob": 0.0,
+      "start": 153.18,
+      "text": "我真是你"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 11.763158,
+      "end": 155.18,
+      "no_speech_prob": 0.0,
+      "start": 154.82,
+      "text": "我真是你"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 11.763158,
+      "end": 155.66,
+      "no_speech_prob": 0.0,
+      "start": 155.18,
+      "text": "我真是你"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 11.763158,
+      "end": 156.18,
+      "no_speech_prob": 0.0,
+      "start": 155.66,
+      "text": "我真是你"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 11.763158,
+      "end": 156.66,
+      "no_speech_prob": 0.0,
+      "start": 156.18,
+      "text": "我真是你"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 11.763158,
+      "end": 157.02,
+      "no_speech_prob": 0.0,
+      "start": 156.66,
+      "text": "我真是你"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 11.763158,
+      "end": 157.26,
+      "no_speech_prob": 0.0,
+      "start": 157.02,
+      "text": "我真是你"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 11.763158,
+      "end": 157.6,
+      "no_speech_prob": 0.0,
+      "start": 157.26,
+      "text": "我真是你"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 11.763158,
+      "end": 157.94,
+      "no_speech_prob": 0.0,
+      "start": 157.6,
+      "text": "我真是你"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 11.763158,
+      "end": 158.16,
+      "no_speech_prob": 0.0,
+      "start": 157.94,
+      "text": "我真是你"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 11.763158,
+      "end": 158.38,
+      "no_speech_prob": 0.0,
+      "start": 158.16,
+      "text": "我真是你"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 11.763158,
+      "end": 158.56,
+      "no_speech_prob": 0.0,
+      "start": 158.38,
+      "text": "我真是你"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 11.763158,
+      "end": 158.74,
+      "no_speech_prob": 0.0,
+      "start": 158.56,
+      "text": "我真是你"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 11.763158,
+      "end": 158.88,
+      "no_speech_prob": 0.0,
+      "start": 158.74,
+      "text": "我真是你"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 11.763158,
+      "end": 158.96,
+      "no_speech_prob": 0.0,
+      "start": 158.88,
+      "text": "我真是你"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 11.763158,
+      "end": 159.04,
+      "no_speech_prob": 0.0,
+      "start": 158.96,
+      "text": "我真是你"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 11.763158,
+      "end": 159.14,
+      "no_speech_prob": 0.0,
+      "start": 159.04,
+      "text": "我真是你"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 11.763158,
+      "end": 159.22,
+      "no_speech_prob": 0.0,
+      "start": 159.14,
+      "text": "我真是你"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 11.763158,
+      "end": 159.42,
+      "no_speech_prob": 0.0,
+      "start": 159.22,
+      "text": "我真是你"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 11.763158,
+      "end": 159.64,
+      "no_speech_prob": 0.0,
+      "start": 159.42,
+      "text": "我真是你"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 11.763158,
+      "end": 159.9,
+      "no_speech_prob": 0.0,
+      "start": 159.64,
+      "text": "我真是你"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 11.763158,
+      "end": 160.14,
+      "no_speech_prob": 0.0,
+      "start": 159.9,
+      "text": "我真是你"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 11.763158,
+      "end": 160.44,
+      "no_speech_prob": 0.0,
+      "start": 160.14,
+      "text": "我真是你"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 11.763158,
+      "end": 160.68,
+      "no_speech_prob": 0.0,
+      "start": 160.44,
+      "text": "我真是你"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 11.763158,
+      "end": 160.82,
+      "no_speech_prob": 0.0,
+      "start": 160.68,
+      "text": "我真是你"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 11.763158,
+      "end": 160.92,
+      "no_speech_prob": 0.0,
+      "start": 160.82,
+      "text": "我真是你"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 11.763158,
+      "end": 161.04,
+      "no_speech_prob": 0.0,
+      "start": 160.92,
+      "text": "我真是你"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 11.763158,
+      "end": 161.14,
+      "no_speech_prob": 0.0,
+      "start": 161.04,
+      "text": "我真是你"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 11.763158,
+      "end": 161.3,
+      "no_speech_prob": 0.0,
+      "start": 161.14,
+      "text": "我真是你"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 11.763158,
+      "end": 161.44,
+      "no_speech_prob": 0.0,
+      "start": 161.3,
+      "text": "我真是你"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 11.763158,
+      "end": 161.5,
+      "no_speech_prob": 0.0,
+      "start": 161.44,
+      "text": "ushing up"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 11.763158,
+      "end": 161.62,
+      "no_speech_prob": 0.0,
+      "start": 161.5,
+      "text": "我真是你"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 11.763158,
+      "end": 161.8,
+      "no_speech_prob": 0.0,
+      "start": 161.62,
+      "text": "我真是你"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 11.763158,
+      "end": 161.96,
+      "no_speech_prob": 0.0,
+      "start": 161.8,
+      "text": "我真是你"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 11.763158,
+      "end": 162.14,
+      "no_speech_prob": 0.0,
+      "start": 161.96,
+      "text": "我真是你"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 11.763158,
+      "end": 162.32,
+      "no_speech_prob": 0.0,
+      "start": 162.14,
+      "text": "我真是你"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 11.763158,
+      "end": 162.5,
+      "no_speech_prob": 0.0,
+      "start": 162.32,
+      "text": "我真是你"
+    },
+    {
+      "avg_logprob": -0.616762,
+      "compression_ratio": 0.64,
+      "end": 192.48,
+      "no_speech_prob": 0.0,
+      "start": 162.5,
+      "text": "作曲 李宗盛"
+    },
+    {
+      "avg_logprob": -0.304187,
+      "compression_ratio": 1.0,
+      "end": 196.7,
+      "no_speech_prob": 0.0,
+      "start": 192.48,
+      "text": "天亮黑暗赶不走孤单"
+    },
+    {
+      "avg_logprob": -0.304187,
+      "compression_ratio": 1.0,
+      "end": 205.62,
+      "no_speech_prob": 0.0,
+      "start": 196.7,
+      "text": "午夜和白天不停地转换"
+    },
+    {
+      "avg_logprob": -0.304187,
+      "compression_ratio": 1.0,
+      "end": 213.24,
+      "no_speech_prob": 0.0,
+      "start": 205.62,
+      "text": "游走在街头思念的孤单"
+    },
+    {
+      "avg_logprob": -0.304187,
+      "compression_ratio": 1.0,
+      "end": 220.48,
+      "no_speech_prob": 0.0,
+      "start": 213.24,
+      "text": "想起的狂欢总是很短暂"
+    },
+    {
+      "avg_logprob": -0.299815,
+      "compression_ratio": 0.947368,
+      "end": 228.06,
+      "no_speech_prob": 0.0,
+      "start": 222.48,
+      "text": "转油的怀抱总让我温暖"
+    },
+    {
+      "avg_logprob": -0.299815,
+      "compression_ratio": 0.947368,
+      "end": 236.74,
+      "no_speech_prob": 0.0,
+      "start": 228.06,
+      "text": "无聊的回忆让人很心烦"
+    },
+    {
+      "avg_logprob": -0.299815,
+      "compression_ratio": 0.947368,
+      "end": 240.4,
+      "no_speech_prob": 0.0,
+      "start": 236.74,
+      "text": "我又想你了"
+    },
+    {
+      "avg_logprob": -0.299815,
+      "compression_ratio": 0.947368,
+      "end": 244.48,
+      "no_speech_prob": 0.0,
+      "start": 240.4,
+      "text": "转油在那端"
+    },
+    {
+      "avg_logprob": -0.251862,
+      "compression_ratio": 1.08,
+      "end": 250.06,
+      "no_speech_prob": 0.0,
+      "start": 244.48,
+      "text": "没有你陪伴我"
+    },
+    {
+      "avg_logprob": -0.251862,
+      "compression_ratio": 1.08,
+      "end": 252.76,
+      "no_speech_prob": 0.0,
+      "start": 250.06,
+      "text": "真的好孤单"
+    },
+    {
+      "avg_logprob": -0.251862,
+      "compression_ratio": 1.08,
+      "end": 255.7,
+      "no_speech_prob": 0.0,
+      "start": 252.76,
+      "text": "我的心好慌乱"
+    },
+    {
+      "avg_logprob": -0.251862,
+      "compression_ratio": 1.08,
+      "end": 258.64,
+      "no_speech_prob": 0.0,
+      "start": 255.7,
+      "text": "不知怎么办"
+    },
+    {
+      "avg_logprob": -0.251862,
+      "compression_ratio": 1.08,
+      "end": 263.48,
+      "no_speech_prob": 0.0,
+      "start": 258.64,
+      "text": "没有占有我的日子"
+    },
+    {
+      "avg_logprob": -0.251862,
+      "compression_ratio": 1.08,
+      "end": 267.76,
+      "no_speech_prob": 0.0,
+      "start": 263.48,
+      "text": "我真的好茂然"
+    },
+    {
+      "avg_logprob": -0.191706,
+      "compression_ratio": 0.851351,
+      "end": 273.34,
+      "no_speech_prob": 0.0,
+      "start": 267.76,
+      "text": "整天就像丢了灵魂一般"
+    },
+    {
+      "avg_logprob": -0.191706,
+      "compression_ratio": 0.851351,
+      "end": 281.84,
+      "no_speech_prob": 0.0,
+      "start": 273.34,
+      "text": "没有你陪伴我真的好孤单"
+    },
+    {
+      "avg_logprob": -0.247839,
+      "compression_ratio": 0.956044,
+      "end": 284.84,
+      "no_speech_prob": 0.0,
+      "start": 281.84,
+      "text": "我的心好慌乱"
+    },
+    {
+      "avg_logprob": -0.247839,
+      "compression_ratio": 0.956044,
+      "end": 287.84,
+      "no_speech_prob": 0.0,
+      "start": 284.84,
+      "text": "不知怎么办"
+    },
+    {
+      "avg_logprob": -0.247839,
+      "compression_ratio": 0.956044,
+      "end": 292.7,
+      "no_speech_prob": 0.0,
+      "start": 287.84,
+      "text": "你们不在身边"
+    },
+    {
+      "avg_logprob": -0.247839,
+      "compression_ratio": 0.956044,
+      "end": 296.3,
+      "no_speech_prob": 0.0,
+      "start": 292.7,
+      "text": "真的好不习惯"
+    },
+    {
+      "avg_logprob": -0.247839,
+      "compression_ratio": 0.956044,
+      "end": 299.34,
+      "no_speech_prob": 0.0,
+      "start": 296.3,
+      "text": "我的泪已流干"
+    },
+    {
+      "avg_logprob": -0.682802,
+      "compression_ratio": 1.8,
+      "end": 301.34,
+      "no_speech_prob": 0.0,
+      "start": 299.34,
+      "text": "你们管不管"
+    },
+    {
+      "avg_logprob": -0.682802,
+      "compression_ratio": 1.8,
+      "end": 302.34,
+      "no_speech_prob": 0.0,
+      "start": 301.34,
+      "text": "你们管不管"
+    },
+    {
+      "avg_logprob": -0.682802,
+      "compression_ratio": 1.8,
+      "end": 306.34,
+      "no_speech_prob": 0.0,
+      "start": 302.34,
+      "text": "你们管不管"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 6.514706,
+      "end": 307.34,
+      "no_speech_prob": 0.0,
+      "start": 306.34,
+      "text": "我这就好宣uan"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 6.514706,
+      "end": 308.3,
+      "no_speech_prob": 0.0,
+      "start": 307.34,
+      "text": "我很耻"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 6.514706,
+      "end": 308.34,
+      "no_speech_prob": 0.0,
+      "start": 308.3,
+      "text": "不愿ui"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 6.514706,
+      "end": 308.92,
+      "no_speech_prob": 0.0,
+      "start": 308.34,
+      "text": "我看不下"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 6.514706,
+      "end": 309.28,
+      "no_speech_prob": 0.0,
+      "start": 308.92,
+      "text": "我看不下"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 6.514706,
+      "end": 309.42,
+      "no_speech_prob": 0.0,
+      "start": 309.28,
+      "text": "我看不下"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 6.514706,
+      "end": 309.78,
+      "no_speech_prob": 0.0,
+      "start": 309.42,
+      "text": "我看不下"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 6.514706,
+      "end": 310.1,
+      "no_speech_prob": 0.0,
+      "start": 309.78,
+      "text": "我看不下"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 6.514706,
+      "end": 310.34,
+      "no_speech_prob": 0.0,
+      "start": 310.1,
+      "text": "我看不下"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 6.514706,
+      "end": 310.76,
+      "no_speech_prob": 0.0,
+      "start": 310.34,
+      "text": "我看不下"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 6.514706,
+      "end": 311.02,
+      "no_speech_prob": 0.0,
+      "start": 310.76,
+      "text": "我看不下"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 6.514706,
+      "end": 311.24,
+      "no_speech_prob": 0.0,
+      "start": 311.02,
+      "text": "我看不下"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 6.514706,
+      "end": 311.34,
+      "no_speech_prob": 0.0,
+      "start": 311.24,
+      "text": "我看不下"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 6.514706,
+      "end": 311.46,
+      "no_speech_prob": 0.0,
+      "start": 311.34,
+      "text": "我看不下"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 6.514706,
+      "end": 311.62,
+      "no_speech_prob": 0.0,
+      "start": 311.46,
+      "text": "我看不下"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 6.514706,
+      "end": 311.74,
+      "no_speech_prob": 0.0,
+      "start": 311.62,
+      "text": "我看不下"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 6.514706,
+      "end": 311.88,
+      "no_speech_prob": 0.0,
+      "start": 311.74,
+      "text": "我看不下"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 6.514706,
+      "end": 311.96,
+      "no_speech_prob": 0.0,
+      "start": 311.88,
+      "text": "我看不下"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 6.514706,
+      "end": 312.1,
+      "no_speech_prob": 0.0,
+      "start": 311.96,
+      "text": "我看不下"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 6.514706,
+      "end": 312.24,
+      "no_speech_prob": 0.0,
+      "start": 312.1,
+      "text": "我看不下"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 6.514706,
+      "end": 312.42,
+      "no_speech_prob": 0.0,
+      "start": 312.24,
+      "text": "我看不下"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 6.514706,
+      "end": 312.66,
+      "no_speech_prob": 0.0,
+      "start": 312.42,
+      "text": "我看不下"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 6.514706,
+      "end": 312.82,
+      "no_speech_prob": 0.0,
+      "start": 312.66,
+      "text": "我看不下"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 6.514706,
+      "end": 312.96,
+      "no_speech_prob": 0.0,
+      "start": 312.82,
+      "text": "我看不下"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 6.514706,
+      "end": 313.1,
+      "no_speech_prob": 0.0,
+      "start": 312.96,
+      "text": "我看不下"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 6.514706,
+      "end": 313.28,
+      "no_speech_prob": 0.0,
+      "start": 313.1,
+      "text": "我看不下"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 6.514706,
+      "end": 313.46,
+      "no_speech_prob": 0.0,
+      "start": 313.28,
+      "text": "我看不下"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 6.514706,
+      "end": 313.64,
+      "no_speech_prob": 0.0,
+      "start": 313.46,
+      "text": "我看不下"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 6.514706,
+      "end": 313.82,
+      "no_speech_prob": 0.0,
+      "start": 313.64,
+      "text": "我看不下"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 6.514706,
+      "end": 313.96,
+      "no_speech_prob": 0.0,
+      "start": 313.82,
+      "text": "我看不下"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 6.514706,
+      "end": 314.06,
+      "no_speech_prob": 0.0,
+      "start": 313.96,
+      "text": "我看不下"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 6.514706,
+      "end": 314.24,
+      "no_speech_prob": 0.0,
+      "start": 314.06,
+      "text": "我看不下"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 6.514706,
+      "end": 314.46,
+      "no_speech_prob": 0.0,
+      "start": 314.24,
+      "text": "我看不下"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 6.514706,
+      "end": 314.6,
+      "no_speech_prob": 0.0,
+      "start": 314.46,
+      "text": "我看不下"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 6.514706,
+      "end": 314.68,
+      "no_speech_prob": 0.0,
+      "start": 314.6,
+      "text": "ushing我看不下"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 6.514706,
+      "end": 314.8,
+      "no_speech_prob": 0.0,
+      "start": 314.68,
+      "text": "ushing我看不下"
+    },
+    {
+      "avg_logprob": -0.16601,
+      "compression_ratio": 0.875,
+      "end": 344.78,
+      "no_speech_prob": 0.0,
+      "start": 314.8,
+      "text": "优优独播剧场——YoYo Television Series Exclusive"
+    },
+    {
+      "avg_logprob": -0.58755,
+      "compression_ratio": 0.578947,
+      "end": 374.78,
+      "no_speech_prob": 0.0,
+      "start": 344.8,
+      "text": "Zither Harp"
+    },
+    {
+      "avg_logprob": -0.352181,
+      "compression_ratio": 0.578947,
+      "end": 404.78,
+      "no_speech_prob": 0.0,
+      "start": 374.8,
+      "text": "Zither Harp"
+    },
+    {
+      "avg_logprob": -0.591986,
+      "compression_ratio": 1.069892,
+      "end": 406.78,
+      "no_speech_prob": 0.0,
+      "start": 404.78,
+      "text": "Zither Harp"
+    },
+    {
+      "avg_logprob": -0.591986,
+      "compression_ratio": 1.069892,
+      "end": 408.78,
+      "no_speech_prob": 0.0,
+      "start": 406.78,
+      "text": "Zither Harp"
+    },
+    {
+      "avg_logprob": -0.591986,
+      "compression_ratio": 1.069892,
+      "end": 410.48,
+      "no_speech_prob": 0.0,
+      "start": 408.78,
+      "text": "纷纷扬扬飞满天"
+    },
+    {
+      "avg_logprob": -0.591986,
+      "compression_ratio": 1.069892,
+      "end": 412.5,
+      "no_speech_prob": 0.0,
+      "start": 410.48,
+      "text": "你把真相带到了人间"
+    },
+    {
+      "avg_logprob": -0.591986,
+      "compression_ratio": 1.069892,
+      "end": 414.98,
+      "no_speech_prob": 0.0,
+      "start": 412.5,
+      "text": "奉陪千分炮气象深重"
+    },
+    {
+      "avg_logprob": -0.591986,
+      "compression_ratio": 1.069892,
+      "end": 416.54,
+      "no_speech_prob": 0.0,
+      "start": 414.98,
+      "text": "傲壤一片的模样"
+    },
+    {
+      "avg_logprob": -0.591986,
+      "compression_ratio": 1.069892,
+      "end": 418.46,
+      "no_speech_prob": 0.0,
+      "start": 416.54,
+      "text": "最多争足以断交"
+    },
+    {
+      "avg_logprob": -0.591986,
+      "compression_ratio": 1.069892,
+      "end": 420.54,
+      "no_speech_prob": 0.0,
+      "start": 418.46,
+      "text": "全世界现实别不逃"
+    },
+    {
+      "avg_logprob": -0.591986,
+      "compression_ratio": 1.069892,
+      "end": 422.44,
+      "no_speech_prob": 0.0,
+      "start": 420.54,
+      "text": "三道大门都打开"
+    },
+    {
+      "avg_logprob": -0.591986,
+      "compression_ratio": 1.069892,
+      "end": 424.06,
+      "no_speech_prob": 0.0,
+      "start": 422.44,
+      "text": "终不死期待"
+    },
+    {
+      "avg_logprob": -0.479048,
+      "compression_ratio": 2.0,
+      "end": 428.06,
+      "no_speech_prob": 0.0,
+      "start": 424.06,
+      "text": "Zither Harp"
+    },
+    {
+      "avg_logprob": -0.479048,
+      "compression_ratio": 2.0,
+      "end": 432.06,
+      "no_speech_prob": 0.0,
+      "start": 428.06,
+      "text": "Zither Harp"
+    },
+    {
+      "avg_logprob": -0.479048,
+      "compression_ratio": 2.0,
+      "end": 436.06,
+      "no_speech_prob": 0.0,
+      "start": 432.06,
+      "text": "Zither Harp"
+    },
+    {
+      "avg_logprob": -0.479048,
+      "compression_ratio": 2.0,
+      "end": 438.06,
+      "no_speech_prob": 0.0,
+      "start": 436.06,
+      "text": "Zither Harp"
+    },
+    {
+      "avg_logprob": -0.396819,
+      "compression_ratio": 0.865385,
+      "end": 444.06,
+      "no_speech_prob": 0.0,
+      "start": 438.06,
+      "text": "我爱你"
+    },
+    {
+      "avg_logprob": -0.396819,
+      "compression_ratio": 0.865385,
+      "end": 448.06,
+      "no_speech_prob": 0.0,
+      "start": 444.06,
+      "text": "夜空的雪"
+    },
+    {
+      "avg_logprob": -0.396819,
+      "compression_ratio": 0.865385,
+      "end": 452.06,
+      "no_speech_prob": 0.0,
+      "start": 448.06,
+      "text": "红红烈烈"
+    },
+    {
+      "avg_logprob": -0.396819,
+      "compression_ratio": 0.865385,
+      "end": 455.06,
+      "no_speech_prob": 0.0,
+      "start": 452.06,
+      "text": "漫山遍野"
+    },
+    {
+      "avg_logprob": -0.513221,
+      "compression_ratio": 0.9375,
+      "end": 459.06,
+      "no_speech_prob": 0.0,
+      "start": 455.06,
+      "text": "你用自己的无瑕的身体"
+    },
+    {
+      "avg_logprob": -0.513221,
+      "compression_ratio": 0.9375,
+      "end": 463.06,
+      "no_speech_prob": 0.0,
+      "start": 459.06,
+      "text": "竟花被谎言笼罩的世界"
+    },
+    {
+      "avg_logprob": -0.513221,
+      "compression_ratio": 0.9375,
+      "end": 467.06,
+      "no_speech_prob": 0.0,
+      "start": 463.06,
+      "text": "你把真相"
+    },
+    {
+      "avg_logprob": -0.513221,
+      "compression_ratio": 0.9375,
+      "end": 471.06,
+      "no_speech_prob": 0.0,
+      "start": 467.06,
+      "text": "转接给了人间"
+    },
+    {
+      "avg_logprob": -0.671787,
+      "compression_ratio": 1.038462,
+      "end": 473.06,
+      "no_speech_prob": 0.0,
+      "start": 471.06,
+      "text": "晚清的无尽"
+    },
+    {
+      "avg_logprob": -0.671787,
+      "compression_ratio": 1.038462,
+      "end": 475.06,
+      "no_speech_prob": 0.0,
+      "start": 473.06,
+      "text": "晚清的无尽"
+    },
+    {
+      "avg_logprob": -0.671787,
+      "compression_ratio": 1.038462,
+      "end": 477.06,
+      "no_speech_prob": 0.0,
+      "start": 475.06,
+      "text": "你每年"
+    },
+    {
+      "avg_logprob": -0.671787,
+      "compression_ratio": 1.038462,
+      "end": 479.06,
+      "no_speech_prob": 0.0,
+      "start": 477.06,
+      "text": "沉睡的心天"
+    },
+    {
+      "avg_logprob": -0.538426,
+      "compression_ratio": 0.875,
+      "end": 481.06,
+      "no_speech_prob": 0.0,
+      "start": 479.06,
+      "text": "啊"
+    },
+    {
+      "avg_logprob": -0.538426,
+      "compression_ratio": 0.875,
+      "end": 485.06,
+      "no_speech_prob": 0.0,
+      "start": 481.06,
+      "text": "啊"
+    },
+    {
+      "avg_logprob": -0.538426,
+      "compression_ratio": 0.875,
+      "end": 488.06,
+      "no_speech_prob": 0.0,
+      "start": 485.06,
+      "text": "我爱你"
+    },
+    {
+      "avg_logprob": -0.538426,
+      "compression_ratio": 0.875,
+      "end": 493.06,
+      "no_speech_prob": 0.0,
+      "start": 488.06,
+      "text": "啊"
+    },
+    {
+      "avg_logprob": -0.538426,
+      "compression_ratio": 0.875,
+      "end": 496.06,
+      "no_speech_prob": 0.0,
+      "start": 493.06,
+      "text": "夜空的雪"
+    },
+    {
+      "avg_logprob": -0.538426,
+      "compression_ratio": 0.875,
+      "end": 499.06,
+      "no_speech_prob": 0.0,
+      "start": 496.06,
+      "text": "白飞的雪"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 4.236559,
+      "end": 500.7,
+      "no_speech_prob": 0.0,
+      "start": 499.06,
+      "text": "我爱你"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 4.236559,
+      "end": 501.06,
+      "no_speech_prob": 0.0,
+      "start": 500.7,
+      "text": "我爱你"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 4.236559,
+      "end": 501.7,
+      "no_speech_prob": 0.0,
+      "start": 501.06,
+      "text": "我爱你"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 4.236559,
+      "end": 502.06,
+      "no_speech_prob": 0.0,
+      "start": 501.7,
+      "text": "我爱你"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 4.236559,
+      "end": 502.22,
+      "no_speech_prob": 0.0,
+      "start": 502.06,
+      "text": "我爱你"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 4.236559,
+      "end": 502.54,
+      "no_speech_prob": 0.0,
+      "start": 502.22,
+      "text": "我爱你"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 4.236559,
+      "end": 502.78,
+      "no_speech_prob": 0.0,
+      "start": 502.54,
+      "text": "我爱你"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 4.236559,
+      "end": 502.94,
+      "no_speech_prob": 0.0,
+      "start": 502.78,
+      "text": "我爱你"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 4.236559,
+      "end": 503.08,
+      "no_speech_prob": 0.0,
+      "start": 502.94,
+      "text": "我爱你"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 4.236559,
+      "end": 503.26,
+      "no_speech_prob": 0.0,
+      "start": 503.08,
+      "text": "我爱你"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 4.236559,
+      "end": 503.54,
+      "no_speech_prob": 0.0,
+      "start": 503.26,
+      "text": "我爱你"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 4.236559,
+      "end": 503.78,
+      "no_speech_prob": 0.0,
+      "start": 503.54,
+      "text": "我爱你"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 4.236559,
+      "end": 503.98,
+      "no_speech_prob": 0.0,
+      "start": 503.78,
+      "text": "我爱你"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 4.236559,
+      "end": 504.14,
+      "no_speech_prob": 0.0,
+      "start": 503.98,
+      "text": "我爱你"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 4.236559,
+      "end": 504.22,
+      "no_speech_prob": 0.0,
+      "start": 504.14,
+      "text": "我爱你"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 4.236559,
+      "end": 504.34,
+      "no_speech_prob": 0.0,
+      "start": 504.22,
+      "text": "我爱你"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 4.236559,
+      "end": 504.42,
+      "no_speech_prob": 0.0,
+      "start": 504.34,
+      "text": "我爱你"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 4.236559,
+      "end": 504.5,
+      "no_speech_prob": 0.0,
+      "start": 504.42,
+      "text": "我爱你"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 4.236559,
+      "end": 504.62,
+      "no_speech_prob": 0.0,
+      "start": 504.5,
+      "text": "我爱你"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 4.236559,
+      "end": 504.72,
+      "no_speech_prob": 0.0,
+      "start": 504.62,
+      "text": "我爱你"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 4.236559,
+      "end": 504.84,
+      "no_speech_prob": 0.0,
+      "start": 504.72,
+      "text": "我爱你"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 4.236559,
+      "end": 504.96,
+      "no_speech_prob": 0.0,
+      "start": 504.84,
+      "text": "我爱你"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 4.236559,
+      "end": 505.1,
+      "no_speech_prob": 0.0,
+      "start": 504.96,
+      "text": "我爱你"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 4.236559,
+      "end": 505.34,
+      "no_speech_prob": 0.0,
+      "start": 505.1,
+      "text": "我爱你"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 4.236559,
+      "end": 505.6,
+      "no_speech_prob": 0.0,
+      "start": 505.34,
+      "text": "我爱你"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 4.236559,
+      "end": 505.76,
+      "no_speech_prob": 0.0,
+      "start": 505.6,
+      "text": "我爱你"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 4.236559,
+      "end": 505.94,
+      "no_speech_prob": 0.0,
+      "start": 505.76,
+      "text": "我爱你"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 4.236559,
+      "end": 506.12,
+      "no_speech_prob": 0.0,
+      "start": 505.94,
+      "text": "我爱你"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 4.236559,
+      "end": 506.26,
+      "no_speech_prob": 0.0,
+      "start": 506.12,
+      "text": "我爱你"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 4.236559,
+      "end": 506.44,
+      "no_speech_prob": 0.0,
+      "start": 506.26,
+      "text": "我爱你"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 4.236559,
+      "end": 506.58,
+      "no_speech_prob": 0.0,
+      "start": 506.44,
+      "text": "我爱你"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 4.236559,
+      "end": 506.7,
+      "no_speech_prob": 0.0,
+      "start": 506.58,
+      "text": "我爱你"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 4.236559,
+      "end": 506.78,
+      "no_speech_prob": 0.0,
+      "start": 506.7,
+      "text": "的你"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 4.236559,
+      "end": 506.8,
+      "no_speech_prob": 0.0,
+      "start": 506.78,
+      "text": "我爱你"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 4.236559,
+      "end": 507.12,
+      "no_speech_prob": 0.0,
+      "start": 506.8,
+      "text": "是你"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 4.236559,
+      "end": 507.12,
+      "no_speech_prob": 0.0,
+      "start": 507.12,
+      "text": "whenęs"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 4.236559,
+      "end": 507.02,
+      "no_speech_prob": 0.0,
+      "start": 504.96,
+      "text": "me"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 4.236559,
+      "end": 507.22,
+      "no_speech_prob": 0.0,
+      "start": 507.02,
+      "text": "我爱你"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 4.236559,
+      "end": 507.32,
+      "no_speech_prob": 0.0,
+      "start": 507.22,
+      "text": "ushing hoische我愛你"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 4.236559,
+      "end": 507.88,
+      "no_speech_prob": 0.0,
+      "start": 507.32,
+      "text": "act same"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 4.236559,
+      "end": 508.02,
+      "no_speech_prob": 0.0,
+      "start": 507.88,
+      "text": "'ve you"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 4.236559,
+      "end": 508.38,
+      "no_speech_prob": 0.0,
+      "start": 508.02,
+      "text": "und have you"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 4.236559,
+      "end": 508.38,
+      "no_speech_prob": 0.0,
+      "start": 508.38,
+      "text": "this"
+    },
+    {
+      "avg_logprob": -0.169465,
+      "compression_ratio": 0.875,
+      "end": 559.04,
+      "no_speech_prob": 0.0,
+      "start": 529.06,
+      "text": "优优独播剧场——YoYo Television Series Exclusive"
+    },
+    {
+      "avg_logprob": -0.454446,
+      "compression_ratio": 1.059406,
+      "end": 572.06,
+      "no_speech_prob": 0.0,
+      "start": 559.06,
+      "text": "我爱你 戴北的雪"
+    },
+    {
+      "avg_logprob": -0.454446,
+      "compression_ratio": 1.059406,
+      "end": 580.06,
+      "no_speech_prob": 0.0,
+      "start": 572.06,
+      "text": "迢迢杂杂 漫天边野"
+    },
+    {
+      "avg_logprob": -0.454446,
+      "compression_ratio": 1.059406,
+      "end": 584.06,
+      "no_speech_prob": 0.0,
+      "start": 580.06,
+      "text": "你的游足是那样的轻盈"
+    },
+    {
+      "avg_logprob": -0.454446,
+      "compression_ratio": 1.059406,
+      "end": 588.06,
+      "no_speech_prob": 0.0,
+      "start": 584.06,
+      "text": "你的心地是那样的尊贴"
+    },
+    {
+      "avg_logprob": -0.409539,
+      "compression_ratio": 0.974684,
+      "end": 596.06,
+      "no_speech_prob": 0.0,
+      "start": 588.06,
+      "text": "你是少年 哪儿终非你战友"
+    },
+    {
+      "avg_logprob": -0.409539,
+      "compression_ratio": 0.974684,
+      "end": 601.06,
+      "no_speech_prob": 0.0,
+      "start": 596.06,
+      "text": "你是少年 排除你之间"
+    },
+    {
+      "avg_logprob": -0.409539,
+      "compression_ratio": 0.974684,
+      "end": 605.06,
+      "no_speech_prob": 0.0,
+      "start": 601.06,
+      "text": "灭空的世界"
+    },
+    {
+      "avg_logprob": -3.109995,
+      "compression_ratio": 1.028777,
+      "end": 607.06,
+      "no_speech_prob": 0.0,
+      "start": 605.06,
+      "text": "凡丶扬扬扬飞满天"
+    },
+    {
+      "avg_logprob": -3.109995,
+      "compression_ratio": 1.028777,
+      "end": 609.06,
+      "no_speech_prob": 0.0,
+      "start": 607.06,
+      "text": "你赶人选大到的迁迹"
+    },
+    {
+      "avg_logprob": -3.109995,
+      "compression_ratio": 1.028777,
+      "end": 610.14,
+      "no_speech_prob": 0.0,
+      "start": 609.06,
+      "text": "迷ube 倩佯"
+    },
+    {
+      "avg_logprob": -3.109995,
+      "compression_ratio": 1.028777,
+      "end": 610.82,
+      "no_speech_prob": 0.0,
+      "start": 610.06,
+      "text": "任一邦"
+    },
+    {
+      "avg_logprob": -3.109995,
+      "compression_ratio": 1.028777,
+      "end": 612.02,
+      "no_speech_prob": 0.0,
+      "start": 611.06,
+      "text": "呻 邸 吱戴 仰佯"
+    },
+    {
+      "avg_logprob": -3.109995,
+      "compression_ratio": 1.028777,
+      "end": 613.02,
+      "no_speech_prob": 0.0,
+      "start": 612.02,
+      "text": "903"
+    },
+    {
+      "avg_logprob": -3.109995,
+      "compression_ratio": 1.028777,
+      "end": 613.06,
+      "no_speech_prob": 0.0,
+      "start": 613.02,
+      "text": "ог 吱戴 仰佯"
+    },
+    {
+      "avg_logprob": -3.109995,
+      "compression_ratio": 1.028777,
+      "end": 613.06,
+      "no_speech_prob": 0.0,
+      "start": 613.06,
+      "text": "O"
+    },
+    {
+      "avg_logprob": -0.686306,
+      "compression_ratio": 0.945205,
+      "end": 622.26,
+      "no_speech_prob": 0.0,
+      "start": 613.06,
+      "text": "9月25号"
+    },
+    {
+      "avg_logprob": -0.686306,
+      "compression_ratio": 0.945205,
+      "end": 634.44,
+      "no_speech_prob": 0.0,
+      "start": 622.26,
+      "text": "9月25号"
+    },
+    {
+      "avg_logprob": -0.686306,
+      "compression_ratio": 0.945205,
+      "end": 638.72,
+      "no_speech_prob": 0.0,
+      "start": 634.44,
+      "text": "我今天早上又睡过了"
+    },
+    {
+      "avg_logprob": -0.686306,
+      "compression_ratio": 0.945205,
+      "end": 642.54,
+      "no_speech_prob": 0.0,
+      "start": 638.72,
+      "text": "赶快再把我叫醒了"
+    },
+    {
+      "avg_logprob": -0.20271,
+      "compression_ratio": 1.409836,
+      "end": 644.54,
+      "no_speech_prob": 0.0,
+      "start": 642.54,
+      "text": "低能光荡就趴在这了"
+    },
+    {
+      "avg_logprob": -0.20271,
+      "compression_ratio": 1.409836,
+      "end": 646.92,
+      "no_speech_prob": 0.0,
+      "start": 644.54,
+      "text": "今天早上又睡过了"
+    },
+    {
+      "avg_logprob": -0.20271,
+      "compression_ratio": 1.409836,
+      "end": 654.24,
+      "no_speech_prob": 0.0,
+      "start": 646.92,
+      "text": "昨天晚上是喝一位咱们的老战友通话"
+    },
+    {
+      "avg_logprob": -0.20271,
+      "compression_ratio": 1.409836,
+      "end": 657.48,
+      "no_speech_prob": 0.0,
+      "start": 654.24,
+      "text": "我竟然忘了他曾经的身份"
+    },
+    {
+      "avg_logprob": -0.20271,
+      "compression_ratio": 1.409836,
+      "end": 661.94,
+      "no_speech_prob": 0.0,
+      "start": 657.48,
+      "text": "这位老战友曾经的身份是中国谈判专家"
+    },
+    {
+      "avg_logprob": -0.20271,
+      "compression_ratio": 1.409836,
+      "end": 665.34,
+      "no_speech_prob": 0.0,
+      "start": 661.94,
+      "text": "后来到了政法委"
+    },
+    {
+      "avg_logprob": -0.20271,
+      "compression_ratio": 1.409836,
+      "end": 667.9,
+      "no_speech_prob": 0.0,
+      "start": 665.34,
+      "text": "我忘了他曾经的谈判专家"
+    },
+    {
+      "avg_logprob": -0.20271,
+      "compression_ratio": 1.409836,
+      "end": 670.62,
+      "no_speech_prob": 0.0,
+      "start": 667.9,
+      "text": "结果这谈判专家"
+    },
+    {
+      "avg_logprob": -0.167595,
+      "compression_ratio": 1.176471,
+      "end": 672.94,
+      "no_speech_prob": 0.0,
+      "start": 670.62,
+      "text": "最近的几次谈话"
+    },
+    {
+      "avg_logprob": -0.167595,
+      "compression_ratio": 1.176471,
+      "end": 675.0,
+      "no_speech_prob": 0.0,
+      "start": 672.94,
+      "text": "我发现给我用招了"
+    },
+    {
+      "avg_logprob": -0.167595,
+      "compression_ratio": 1.176471,
+      "end": 676.0,
+      "no_speech_prob": 0.0,
+      "start": 675.0,
+      "text": "用招了"
+    },
+    {
+      "avg_logprob": -0.167595,
+      "compression_ratio": 1.176471,
+      "end": 678.62,
+      "no_speech_prob": 0.0,
+      "start": 676.0,
+      "text": "谈判专家的目的就是要"
+    },
+    {
+      "avg_logprob": -0.167595,
+      "compression_ratio": 1.176471,
+      "end": 680.82,
+      "no_speech_prob": 0.0,
+      "start": 678.62,
+      "text": "用事实"
+    },
+    {
+      "avg_logprob": -0.167595,
+      "compression_ratio": 1.176471,
+      "end": 682.34,
+      "no_speech_prob": 0.0,
+      "start": 680.82,
+      "text": "讲故事"
+    },
+    {
+      "avg_logprob": -0.167595,
+      "compression_ratio": 1.176471,
+      "end": 684.12,
+      "no_speech_prob": 0.0,
+      "start": 682.34,
+      "text": "告诉七哥"
+    },
+    {
+      "avg_logprob": -0.167595,
+      "compression_ratio": 1.176471,
+      "end": 685.16,
+      "no_speech_prob": 0.0,
+      "start": 684.12,
+      "text": "所谓中国"
+    },
+    {
+      "avg_logprob": -0.167595,
+      "compression_ratio": 1.176471,
+      "end": 687.04,
+      "no_speech_prob": 0.0,
+      "start": 685.16,
+      "text": "共产党还会再有几年"
+    },
+    {
+      "avg_logprob": -0.167595,
+      "compression_ratio": 1.176471,
+      "end": 688.58,
+      "no_speech_prob": 0.0,
+      "start": 687.04,
+      "text": "还会再干几年"
+    },
+    {
+      "avg_logprob": -0.167595,
+      "compression_ratio": 1.176471,
+      "end": 689.42,
+      "no_speech_prob": 0.0,
+      "start": 688.58,
+      "text": "对不起"
+    },
+    {
+      "avg_logprob": -0.624212,
+      "compression_ratio": 0.792453,
+      "end": 692.74,
+      "no_speech_prob": 0.0,
+      "start": 689.42,
+      "text": "这现在敏感老厉害了"
+    },
+    {
+      "avg_logprob": -0.624212,
+      "compression_ratio": 0.792453,
+      "end": 707.74,
+      "no_speech_prob": 0.0,
+      "start": 692.74,
+      "text": "这还挺热的"
+    },
+    {
+      "avg_logprob": -0.524835,
+      "compression_ratio": 0.571429,
+      "end": 726.12,
+      "no_speech_prob": 0.0,
+      "start": 707.74,
+      "text": "谈判专家"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.247312,
+      "end": 728.12,
+      "no_speech_prob": 0.0,
+      "start": 726.12,
+      "text": "谈判专家的主题是什么呢"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.247312,
+      "end": 729.5,
+      "no_speech_prob": 0.0,
+      "start": 728.12,
+      "text": "中共国"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.247312,
+      "end": 732.5,
+      "no_speech_prob": 0.0,
+      "start": 729.5,
+      "text": "中共国"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.247312,
+      "end": 734.12,
+      "no_speech_prob": 0.0,
+      "start": 732.5,
+      "text": "还会有几年"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.247312,
+      "end": 737.12,
+      "no_speech_prob": 0.0,
+      "start": 734.12,
+      "text": "最起码他认为还有个三五年是有的"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.247312,
+      "end": 739.44,
+      "no_speech_prob": 0.0,
+      "start": 737.12,
+      "text": "再超过十年是肯定没了"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.247312,
+      "end": 740.44,
+      "no_speech_prob": 0.0,
+      "start": 739.44,
+      "text": "然后呢"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.247312,
+      "end": 742.44,
+      "no_speech_prob": 0.0,
+      "start": 740.44,
+      "text": "他的论点"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.247312,
+      "end": 744.5,
+      "no_speech_prob": 0.0,
+      "start": 742.44,
+      "text": "如何如何如何"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.247312,
+      "end": 745.5,
+      "no_speech_prob": 0.0,
+      "start": 744.5,
+      "text": "!而且呢"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.247312,
+      "end": 746.5,
+      "no_speech_prob": 0.0,
+      "start": 745.5,
+      "text": "他的口气"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.247312,
+      "end": 749.12,
+      "no_speech_prob": 0.0,
+      "start": 746.5,
+      "text": "都是非常听得你很舒服"
+    },
+    {
+      "avg_logprob": -0.307431,
+      "compression_ratio": 1.26,
+      "end": 750.12,
+      "no_speech_prob": 0.0,
+      "start": 749.12,
+      "text": "舒服是吧"
+    },
+    {
+      "avg_logprob": -0.307431,
+      "compression_ratio": 1.26,
+      "end": 752.12,
+      "no_speech_prob": 0.0,
+      "start": 750.12,
+      "text": "哎呀这个"
+    },
+    {
+      "avg_logprob": -0.307431,
+      "compression_ratio": 1.26,
+      "end": 754.12,
+      "no_speech_prob": 0.0,
+      "start": 752.12,
+      "text": "文贵呀"
+    },
+    {
+      "avg_logprob": -0.307431,
+      "compression_ratio": 1.26,
+      "end": 756.12,
+      "no_speech_prob": 0.0,
+      "start": 754.12,
+      "text": "你可是了不起呀"
+    },
+    {
+      "avg_logprob": -0.307431,
+      "compression_ratio": 1.26,
+      "end": 757.5,
+      "no_speech_prob": 0.0,
+      "start": 756.12,
+      "text": "唤醒了"
+    },
+    {
+      "avg_logprob": -0.307431,
+      "compression_ratio": 1.26,
+      "end": 760.12,
+      "no_speech_prob": 0.0,
+      "start": 757.5,
+      "text": "亿万华夏儿女呀"
+    },
+    {
+      "avg_logprob": -0.307431,
+      "compression_ratio": 1.26,
+      "end": 763.12,
+      "no_speech_prob": 0.0,
+      "start": 760.12,
+      "text": "你可了不起呀"
+    },
+    {
+      "avg_logprob": -0.307431,
+      "compression_ratio": 1.26,
+      "end": 766.12,
+      "no_speech_prob": 0.0,
+      "start": 763.12,
+      "text": "你在世界上掀起的这场"
+    },
+    {
+      "avg_logprob": -0.307431,
+      "compression_ratio": 1.26,
+      "end": 768.12,
+      "no_speech_prob": 0.0,
+      "start": 766.12,
+      "text": "华人的革命"
+    },
+    {
+      "avg_logprob": -0.307431,
+      "compression_ratio": 1.26,
+      "end": 770.12,
+      "no_speech_prob": 0.0,
+      "start": 768.12,
+      "text": "追求民主自由的革命"
+    },
+    {
+      "avg_logprob": -0.307431,
+      "compression_ratio": 1.26,
+      "end": 772.12,
+      "no_speech_prob": 0.0,
+      "start": 770.12,
+      "text": "震撼了世界"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.319048,
+      "end": 773.12,
+      "no_speech_prob": 0.0,
+      "start": 772.12,
+      "text": "哎呀"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.319048,
+      "end": 775.12,
+      "no_speech_prob": 0.0,
+      "start": 773.12,
+      "text": "然后呢"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.319048,
+      "end": 776.12,
+      "no_speech_prob": 0.0,
+      "start": 775.12,
+      "text": "总是说"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.319048,
+      "end": 777.12,
+      "no_speech_prob": 0.0,
+      "start": 776.12,
+      "text": "哎呀这个这个"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.319048,
+      "end": 779.12,
+      "no_speech_prob": 0.0,
+      "start": 777.12,
+      "text": "谁谁谁谈到你呀"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.319048,
+      "end": 781.12,
+      "no_speech_prob": 0.0,
+      "start": 779.12,
+      "text": "他不佩服啊"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.319048,
+      "end": 782.12,
+      "no_speech_prob": 0.0,
+      "start": 781.12,
+      "text": "私下里说呀"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.319048,
+      "end": 785.12,
+      "no_speech_prob": 0.0,
+      "start": 782.12,
+      "text": "这个文贵一个人干的事情"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.319048,
+      "end": 790.12,
+      "no_speech_prob": 0.0,
+      "start": 785.12,
+      "text": "盯这个亿万的所谓的专业政治家"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.319048,
+      "end": 792.12,
+      "no_speech_prob": 0.0,
+      "start": 790.12,
+      "text": "文贵干的事情"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.319048,
+      "end": 795.12,
+      "no_speech_prob": 0.0,
+      "start": 792.12,
+      "text": "如何如何对中华民族有什么意义"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.319048,
+      "end": 797.12,
+      "no_speech_prob": 0.0,
+      "start": 795.12,
+      "text": "!我都忘了"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.319048,
+      "end": 798.12,
+      "no_speech_prob": 0.0,
+      "start": 797.12,
+      "text": "是吧"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.319048,
+      "end": 801.12,
+      "no_speech_prob": 0.0,
+      "start": 798.12,
+      "text": "一年来经常问寒问暖的"
+    },
+    {
+      "avg_logprob": -0.123177,
+      "compression_ratio": 1.476923,
+      "end": 803.12,
+      "no_speech_prob": 0.0,
+      "start": 801.12,
+      "text": "然后呢"
+    },
+    {
+      "avg_logprob": -0.123177,
+      "compression_ratio": 1.476923,
+      "end": 805.12,
+      "no_speech_prob": 0.0,
+      "start": 803.12,
+      "text": "说你看看这个清零政策"
+    },
+    {
+      "avg_logprob": -0.123177,
+      "compression_ratio": 1.476923,
+      "end": 806.12,
+      "no_speech_prob": 0.0,
+      "start": 805.12,
+      "text": "你说得好啊"
+    },
+    {
+      "avg_logprob": -0.123177,
+      "compression_ratio": 1.476923,
+      "end": 808.12,
+      "no_speech_prob": 0.0,
+      "start": 806.12,
+      "text": "这个清零政策是不理智的"
+    },
+    {
+      "avg_logprob": -0.123177,
+      "compression_ratio": 1.476923,
+      "end": 812.12,
+      "no_speech_prob": 0.0,
+      "start": 809.12,
+      "text": "这个清零政策你说得对呀"
+    },
+    {
+      "avg_logprob": -0.123177,
+      "compression_ratio": 1.476923,
+      "end": 814.12,
+      "no_speech_prob": 0.0,
+      "start": 812.12,
+      "text": "你看这个欧美"
+    },
+    {
+      "avg_logprob": -0.123177,
+      "compression_ratio": 1.476923,
+      "end": 816.12,
+      "no_speech_prob": 0.0,
+      "start": 814.12,
+      "text": "在你的这个呼吁下"
+    },
+    {
+      "avg_logprob": -0.123177,
+      "compression_ratio": 1.476923,
+      "end": 817.12,
+      "no_speech_prob": 0.0,
+      "start": 816.12,
+      "text": "逐渐看清形势"
+    },
+    {
+      "avg_logprob": -0.123177,
+      "compression_ratio": 1.476923,
+      "end": 819.12,
+      "no_speech_prob": 0.0,
+      "start": 817.12,
+      "text": "我都忘了"
+    },
+    {
+      "avg_logprob": -0.123177,
+      "compression_ratio": 1.476923,
+      "end": 820.12,
+      "no_speech_prob": 0.0,
+      "start": 819.12,
+      "text": "这一年时间"
+    },
+    {
+      "avg_logprob": -0.123177,
+      "compression_ratio": 1.476923,
+      "end": 821.12,
+      "no_speech_prob": 0.0,
+      "start": 820.12,
+      "text": "广是赞扬了"
+    },
+    {
+      "avg_logprob": -0.123177,
+      "compression_ratio": 1.476923,
+      "end": 825.12,
+      "no_speech_prob": 0.0,
+      "start": 821.12,
+      "text": "我以为把他拿下了呢"
+    },
+    {
+      "avg_logprob": -0.123177,
+      "compression_ratio": 1.476923,
+      "end": 826.12,
+      "no_speech_prob": 0.0,
+      "start": 825.12,
+      "text": "是吧"
+    },
+    {
+      "avg_logprob": -0.123177,
+      "compression_ratio": 1.476923,
+      "end": 827.12,
+      "no_speech_prob": 0.0,
+      "start": 826.12,
+      "text": "我以为"
+    },
+    {
+      "avg_logprob": -0.123177,
+      "compression_ratio": 1.476923,
+      "end": 830.12,
+      "no_speech_prob": 0.0,
+      "start": 827.12,
+      "text": "真是他已经被我给"
+    },
+    {
+      "avg_logprob": -0.13761,
+      "compression_ratio": 1.219251,
+      "end": 833.12,
+      "no_speech_prob": 0.0,
+      "start": 830.12,
+      "text": "彻底的给纠正过来"
+    },
+    {
+      "avg_logprob": -0.13761,
+      "compression_ratio": 1.219251,
+      "end": 834.12,
+      "no_speech_prob": 0.0,
+      "start": 833.12,
+      "text": "或者是"
+    },
+    {
+      "avg_logprob": -0.13761,
+      "compression_ratio": 1.219251,
+      "end": 837.12,
+      "no_speech_prob": 0.0,
+      "start": 834.12,
+      "text": "我已经是唤醒了这个魔鬼世界的人了"
+    },
+    {
+      "avg_logprob": -0.13761,
+      "compression_ratio": 1.219251,
+      "end": 838.12,
+      "no_speech_prob": 0.0,
+      "start": 837.12,
+      "text": "是吧"
+    },
+    {
+      "avg_logprob": -0.13761,
+      "compression_ratio": 1.219251,
+      "end": 840.12,
+      "no_speech_prob": 0.0,
+      "start": 839.12,
+      "text": "这是七哥的感觉"
+    },
+    {
+      "avg_logprob": -0.13761,
+      "compression_ratio": 1.219251,
+      "end": 843.12,
+      "no_speech_prob": 0.0,
+      "start": 841.12,
+      "text": "但是昨天和前天的通话"
+    },
+    {
+      "avg_logprob": -0.13761,
+      "compression_ratio": 1.219251,
+      "end": 844.12,
+      "no_speech_prob": 0.0,
+      "start": 843.12,
+      "text": "这个"
+    },
+    {
+      "avg_logprob": -0.13761,
+      "compression_ratio": 1.219251,
+      "end": 846.12,
+      "no_speech_prob": 0.0,
+      "start": 844.12,
+      "text": "就不对劲了"
+    },
+    {
+      "avg_logprob": -0.13761,
+      "compression_ratio": 1.219251,
+      "end": 849.12,
+      "no_speech_prob": 0.0,
+      "start": 846.12,
+      "text": "他还真是帮了咱们战友忙"
+    },
+    {
+      "avg_logprob": -0.13761,
+      "compression_ratio": 1.219251,
+      "end": 851.12,
+      "no_speech_prob": 0.0,
+      "start": 849.12,
+      "text": "有战友被喝茶"
+    },
+    {
+      "avg_logprob": -0.13761,
+      "compression_ratio": 1.219251,
+      "end": 852.12,
+      "no_speech_prob": 0.0,
+      "start": 851.12,
+      "text": "他真给说话了"
+    },
+    {
+      "avg_logprob": -0.130001,
+      "compression_ratio": 1.223684,
+      "end": 854.12,
+      "no_speech_prob": 0.0,
+      "start": 852.12,
+      "text": "说话了"
+    },
+    {
+      "avg_logprob": -0.130001,
+      "compression_ratio": 1.223684,
+      "end": 855.12,
+      "no_speech_prob": 0.0,
+      "start": 854.12,
+      "text": "说话了以后"
+    },
+    {
+      "avg_logprob": -0.130001,
+      "compression_ratio": 1.223684,
+      "end": 856.12,
+      "no_speech_prob": 0.0,
+      "start": 855.12,
+      "text": "还真放出来了"
+    },
+    {
+      "avg_logprob": -0.130001,
+      "compression_ratio": 1.223684,
+      "end": 859.12,
+      "no_speech_prob": 0.0,
+      "start": 856.12,
+      "text": "但是这两天这个苗头不对劲了"
+    },
+    {
+      "avg_logprob": -0.130001,
+      "compression_ratio": 1.223684,
+      "end": 861.12,
+      "no_speech_prob": 0.0,
+      "start": 859.12,
+      "text": "这两天苗头就是"
+    },
+    {
+      "avg_logprob": -0.130001,
+      "compression_ratio": 1.223684,
+      "end": 863.12,
+      "no_speech_prob": 0.0,
+      "start": 861.12,
+      "text": "共产党还有有几年"
+    },
+    {
+      "avg_logprob": -0.130001,
+      "compression_ratio": 1.223684,
+      "end": 865.12,
+      "no_speech_prob": 0.0,
+      "start": 863.12,
+      "text": "为啥有几年"
+    },
+    {
+      "avg_logprob": -0.130001,
+      "compression_ratio": 1.223684,
+      "end": 867.12,
+      "no_speech_prob": 0.0,
+      "start": 865.12,
+      "text": "他给我挤了一下子"
+    },
+    {
+      "avg_logprob": -0.130001,
+      "compression_ratio": 1.223684,
+      "end": 868.12,
+      "no_speech_prob": 0.0,
+      "start": 867.12,
+      "text": "罗马尼亚"
+    },
+    {
+      "avg_logprob": -0.130001,
+      "compression_ratio": 1.223684,
+      "end": 869.12,
+      "no_speech_prob": 0.0,
+      "start": 868.12,
+      "text": "伊拉克"
+    },
+    {
+      "avg_logprob": -0.185341,
+      "compression_ratio": 1.325581,
+      "end": 874.12,
+      "no_speech_prob": 0.0,
+      "start": 869.12,
+      "text": "他说就是你七个你看你说这些国家"
+    },
+    {
+      "avg_logprob": -0.185341,
+      "compression_ratio": 1.325581,
+      "end": 875.12,
+      "no_speech_prob": 0.0,
+      "start": 874.12,
+      "text": "是吧"
+    },
+    {
+      "avg_logprob": -0.185341,
+      "compression_ratio": 1.325581,
+      "end": 878.12,
+      "no_speech_prob": 0.0,
+      "start": 875.12,
+      "text": "虽然都是亲共最后都被干掉了"
+    },
+    {
+      "avg_logprob": -0.185341,
+      "compression_ratio": 1.325581,
+      "end": 880.12,
+      "no_speech_prob": 0.0,
+      "start": 879.12,
+      "text": "是吧"
+    },
+    {
+      "avg_logprob": -0.185341,
+      "compression_ratio": 1.325581,
+      "end": 882.12,
+      "no_speech_prob": 0.0,
+      "start": 880.12,
+      "text": "但是哪个不是都最后折腾八年十年"
+    },
+    {
+      "avg_logprob": -0.185341,
+      "compression_ratio": 1.325581,
+      "end": 884.12,
+      "no_speech_prob": 0.0,
+      "start": 882.12,
+      "text": "是吧"
+    },
+    {
+      "avg_logprob": -0.185341,
+      "compression_ratio": 1.325581,
+      "end": 886.12,
+      "no_speech_prob": 0.0,
+      "start": 884.12,
+      "text": "他说我是想支持你啊"
+    },
+    {
+      "avg_logprob": -0.185341,
+      "compression_ratio": 1.325581,
+      "end": 887.12,
+      "no_speech_prob": 0.0,
+      "start": 886.12,
+      "text": "他我这一把年龄了"
+    },
+    {
+      "avg_logprob": -0.185341,
+      "compression_ratio": 1.325581,
+      "end": 890.12,
+      "no_speech_prob": 0.0,
+      "start": 887.12,
+      "text": "都快六十岁的人了"
+    },
+    {
+      "avg_logprob": -0.185341,
+      "compression_ratio": 1.325581,
+      "end": 891.12,
+      "no_speech_prob": 0.0,
+      "start": 890.12,
+      "text": "是吧"
+    },
+    {
+      "avg_logprob": -0.130686,
+      "compression_ratio": 1.125,
+      "end": 893.12,
+      "no_speech_prob": 0.0,
+      "start": 891.12,
+      "text": "我上哪去啊"
+    },
+    {
+      "avg_logprob": -0.130686,
+      "compression_ratio": 1.125,
+      "end": 895.12,
+      "no_speech_prob": 0.0,
+      "start": 893.12,
+      "text": "我只能在这个主子里边"
+    },
+    {
+      "avg_logprob": -0.130686,
+      "compression_ratio": 1.125,
+      "end": 897.12,
+      "no_speech_prob": 0.0,
+      "start": 895.12,
+      "text": "在这个主子里边捞点"
+    },
+    {
+      "avg_logprob": -0.130686,
+      "compression_ratio": 1.125,
+      "end": 898.12,
+      "no_speech_prob": 0.0,
+      "start": 897.12,
+      "text": "吃点穿点用点"
+    },
+    {
+      "avg_logprob": -0.130686,
+      "compression_ratio": 1.125,
+      "end": 900.12,
+      "no_speech_prob": 0.0,
+      "start": 898.12,
+      "text": "还有一家人呢"
+    }
+  ],
+  "text": "中文字幕志愿者 杨茜茜中文字幕志愿者 杨茜茜思念的孤单想起的狂欢总是很短暂占有的怀抱总让我温暖无聊的回忆让人很心烦我又想你了占有在那端没有你陪伴我真的好孤单我的心好慌乱不知怎么办没有占有的日子我真的好茫然整天就像丢了灵魂一半没有你陪伴我真的好孤单我的心好慌乱不知怎么办你们不在身边真的好不习惯我的泪已流干你们管不管我真是你我真是你我真是你我真是你我真是你我真是你我真是你我真是你我真是你我真是你我真是你我真是你我真是你我真是你我真是你我真是你我真是你我真是你我真是你我真是你我真是你我真是你我真是你我真是你我真是你我真是你我真是你我真是你我真是你我真是你ushing up我真是你我真是你我真是你我真是你我真是你我真是你作曲 李宗盛天亮黑暗赶不走孤单午夜和白天不停地转换游走在街头思念的孤单想起的狂欢总是很短暂转油的怀抱总让我温暖无聊的回忆让人很心烦我又想你了转油在那端没有你陪伴我真的好孤单我的心好慌乱不知怎么办没有占有我的日子我真的好茂然整天就像丢了灵魂一般没有你陪伴我真的好孤单我的心好慌乱不知怎么办你们不在身边真的好不习惯我的泪已流干你们管不管你们管不管你们管不管我这就好宣uan我很耻不愿ui我看不下我看不下我看不下我看不下我看不下我看不下我看不下我看不下我看不下我看不下我看不下我看不下我看不下我看不下我看不下我看不下我看不下我看不下我看不下我看不下我看不下我看不下我看不下我看不下我看不下我看不下我看不下我看不下我看不下我看不下我看不下ushing我看不下ushing我看不下优优独播剧场——YoYo Television Series ExclusiveZither HarpZither HarpZither HarpZither Harp纷纷扬扬飞满天你把真相带到了人间奉陪千分炮气象深重傲壤一片的模样最多争足以断交全世界现实别不逃三道大门都打开终不死期待Zither HarpZither HarpZither HarpZither Harp我爱你夜空的雪红红烈烈漫山遍野你用自己的无瑕的身体竟花被谎言笼罩的世界你把真相转接给了人间晚清的无尽晚清的无尽你每年沉睡的心天啊啊我爱你啊夜空的雪白飞的雪我爱你我爱你我爱你我爱你我爱你我爱你我爱你我爱你我爱你我爱你我爱你我爱你我爱你我爱你我爱你我爱你我爱你我爱你我爱你我爱你我爱你我爱你我爱你我爱你我爱你我爱你我爱你我爱你我爱你我爱你我爱你我爱你的你我爱你是你 whenęs me我爱你ushing hoische我愛你act same've you und have you this优优独播剧场——YoYo Television Series Exclusive我爱你 戴北的雪迢迢杂杂 漫天边野你的游足是那样的轻盈你的心地是那样的尊贴你是少年 哪儿终非你战友你是少年 排除你之间灭空的世界凡丶扬扬扬飞满天你赶人选大到的迁迹迷ube 倩佯任一邦呻 邸 吱戴 仰佯903ог 吱戴 仰佯O9月25号9月25号我今天早上又睡过了赶快再把我叫醒了低能光荡就趴在这了今天早上又睡过了昨天晚上是喝一位咱们的老战友通话我竟然忘了他曾经的身份这位老战友曾经的身份是中国谈判专家后来到了政法委我忘了他曾经的谈判专家结果这谈判专家最近的几次谈话我发现给我用招了用招了谈判专家的目的就是要用事实讲故事告诉七哥所谓中国共产党还会再有几年还会再干几年对不起这现在敏感老厉害了这还挺热的谈判专家谈判专家的主题是什么呢中共国中共国还会有几年最起码他认为还有个三五年是有的再超过十年是肯定没了然后呢他的论点如何如何如何!而且呢他的口气都是非常听得你很舒服舒服是吧哎呀这个文贵呀你可是了不起呀唤醒了亿万华夏儿女呀你可了不起呀你在世界上掀起的这场华人的革命追求民主自由的革命震撼了世界哎呀然后呢总是说哎呀这个这个谁谁谁谈到你呀他不佩服啊私下里说呀这个文贵一个人干的事情盯这个亿万的所谓的专业政治家文贵干的事情如何如何对中华民族有什么意义!我都忘了是吧一年来经常问寒问暖的然后呢说你看看这个清零政策你说得好啊这个清零政策是不理智的这个清零政策你说得对呀你看这个欧美在你的这个呼吁下逐渐看清形势我都忘了这一年时间广是赞扬了我以为把他拿下了呢是吧我以为真是他已经被我给彻底的给纠正过来或者是我已经是唤醒了这个魔鬼世界的人了是吧这是七哥的感觉但是昨天和前天的通话这个就不对劲了他还真是帮了咱们战友忙有战友被喝茶他真给说话了说话了说话了以后还真放出来了但是这两天这个苗头不对劲了这两天苗头就是共产党还有有几年为啥有几年他给我挤了一下子罗马尼亚伊拉克他说就是你七个你看你说这些国家是吧虽然都是亲共最后都被干掉了是吧但是哪个不是都最后折腾八年十年是吧他说我是想支持你啊他我这一把年龄了都快六十岁的人了是吧我上哪去啊我只能在这个主子里边在这个主子里边捞点吃点穿点用点还有一家人呢"
+}
