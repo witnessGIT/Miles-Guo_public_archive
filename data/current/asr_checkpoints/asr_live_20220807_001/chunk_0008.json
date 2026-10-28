@@ -1,0 +1,3440 @@
+{
+  "chunk_audio_sha256": "96d7fcfcb0b1ee3b2e18033c7cf9a1a4d7524833c1850086deb85f7334621d6b",
+  "chunk_index": 8,
+  "completed_at": "2026-10-28T10:12:08Z",
+  "language": "zh",
+  "live_id": "LIVE_20220807_001",
+  "media_committed_to_git": false,
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "offset_sec": 7200,
+  "paid_api_used": false,
+  "processing_location": "github-hosted-macos-arm64",
+  "schema_version": "cloud-asr-chunk-v1",
+  "segments": [
+    {
+      "avg_logprob": -0.233122,
+      "compression_ratio": 0.851351,
+      "end": 7229.98,
+      "no_speech_prob": 0.0,
+      "start": 7200.0,
+      "text": "请不吝点赞 订阅 转发 打赏支持明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.167108,
+      "compression_ratio": 0.851351,
+      "end": 7259.98,
+      "no_speech_prob": 0.0,
+      "start": 7230.0,
+      "text": "请不吝点赞 订阅 转发 打赏支持明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.219342,
+      "compression_ratio": 0.957447,
+      "end": 7278.98,
+      "no_speech_prob": 0.0,
+      "start": 7259.98,
+      "text": "历史铭记"
+    },
+    {
+      "avg_logprob": -0.219342,
+      "compression_ratio": 0.957447,
+      "end": 7279.74,
+      "no_speech_prob": 0.0,
+      "start": 7278.98,
+      "text": "文化"
+    },
+    {
+      "avg_logprob": -0.219342,
+      "compression_ratio": 0.957447,
+      "end": 7280.48,
+      "no_speech_prob": 0.0,
+      "start": 7279.74,
+      "text": "萧萧"
+    },
+    {
+      "avg_logprob": -0.219342,
+      "compression_ratio": 0.957447,
+      "end": 7282.1,
+      "no_speech_prob": 0.0,
+      "start": 7280.48,
+      "text": "古修"
+    },
+    {
+      "avg_logprob": -0.219342,
+      "compression_ratio": 0.957447,
+      "end": 7283.58,
+      "no_speech_prob": 0.0,
+      "start": 7282.1,
+      "text": "文成"
+    },
+    {
+      "avg_logprob": -0.219342,
+      "compression_ratio": 0.957447,
+      "end": 7284.5,
+      "no_speech_prob": 0.0,
+      "start": 7283.58,
+      "text": "勺子兴"
+    },
+    {
+      "avg_logprob": -0.219342,
+      "compression_ratio": 0.957447,
+      "end": 7285.34,
+      "no_speech_prob": 0.0,
+      "start": 7284.5,
+      "text": "高作型"
+    },
+    {
+      "avg_logprob": -0.219342,
+      "compression_ratio": 0.957447,
+      "end": 7286.48,
+      "no_speech_prob": 0.0,
+      "start": 7285.34,
+      "text": "老皮匠"
+    },
+    {
+      "avg_logprob": -0.219342,
+      "compression_ratio": 0.957447,
+      "end": 7288.46,
+      "no_speech_prob": 0.0,
+      "start": 7286.48,
+      "text": "自由女灯"
+    },
+    {
+      "avg_logprob": -0.219342,
+      "compression_ratio": 0.957447,
+      "end": 7289.18,
+      "no_speech_prob": 0.0,
+      "start": 7288.46,
+      "text": "江玉山"
+    },
+    {
+      "avg_logprob": -0.219342,
+      "compression_ratio": 0.957447,
+      "end": 7289.7,
+      "no_speech_prob": 0.0,
+      "start": 7289.18,
+      "text": "悠悠"
+    },
+    {
+      "avg_logprob": -0.382149,
+      "compression_ratio": 1.074286,
+      "end": 7291.22,
+      "no_speech_prob": 0.0,
+      "start": 7289.7,
+      "text": "高作型"
+    },
+    {
+      "avg_logprob": -0.382149,
+      "compression_ratio": 1.074286,
+      "end": 7292.52,
+      "no_speech_prob": 0.0,
+      "start": 7291.22,
+      "text": "自由女神"
+    },
+    {
+      "avg_logprob": -0.382149,
+      "compression_ratio": 1.074286,
+      "end": 7293.12,
+      "no_speech_prob": 0.0,
+      "start": 7292.52,
+      "text": "文东"
+    },
+    {
+      "avg_logprob": -0.382149,
+      "compression_ratio": 1.074286,
+      "end": 7294.32,
+      "no_speech_prob": 0.0,
+      "start": 7293.12,
+      "text": "大马"
+    },
+    {
+      "avg_logprob": -0.382149,
+      "compression_ratio": 1.074286,
+      "end": 7296.08,
+      "no_speech_prob": 0.0,
+      "start": 7294.32,
+      "text": "小淳不淳"
+    },
+    {
+      "avg_logprob": -0.382149,
+      "compression_ratio": 1.074286,
+      "end": 7297.98,
+      "no_speech_prob": 0.0,
+      "start": 7296.08,
+      "text": "向日葵"
+    },
+    {
+      "avg_logprob": -0.382149,
+      "compression_ratio": 1.074286,
+      "end": 7298.72,
+      "no_speech_prob": 0.0,
+      "start": 7297.98,
+      "text": "石榴"
+    },
+    {
+      "avg_logprob": -0.382149,
+      "compression_ratio": 1.074286,
+      "end": 7300.5,
+      "no_speech_prob": 0.0,
+      "start": 7298.72,
+      "text": "Robin"
+    },
+    {
+      "avg_logprob": -0.382149,
+      "compression_ratio": 1.074286,
+      "end": 7302.0,
+      "no_speech_prob": 0.0,
+      "start": 7300.5,
+      "text": "雪飞文化"
+    },
+    {
+      "avg_logprob": -0.382149,
+      "compression_ratio": 1.074286,
+      "end": 7303.22,
+      "no_speech_prob": 0.0,
+      "start": 7302.0,
+      "text": "豹之兰"
+    },
+    {
+      "avg_logprob": -0.382149,
+      "compression_ratio": 1.074286,
+      "end": 7306.14,
+      "no_speech_prob": 0.0,
+      "start": 7303.22,
+      "text": "姬姬高明"
+    },
+    {
+      "avg_logprob": -0.382149,
+      "compression_ratio": 1.074286,
+      "end": 7308.24,
+      "no_speech_prob": 0.0,
+      "start": 7306.14,
+      "text": "灭贡小哥"
+    },
+    {
+      "avg_logprob": -0.382149,
+      "compression_ratio": 1.074286,
+      "end": 7310.38,
+      "no_speech_prob": 0.0,
+      "start": 7308.24,
+      "text": "七七四十九"
+    },
+    {
+      "avg_logprob": -0.382149,
+      "compression_ratio": 1.074286,
+      "end": 7311.36,
+      "no_speech_prob": 0.0,
+      "start": 7310.38,
+      "text": "三母"
+    },
+    {
+      "avg_logprob": -0.382149,
+      "compression_ratio": 1.074286,
+      "end": 7312.28,
+      "no_speech_prob": 0.0,
+      "start": 7311.36,
+      "text": "海之兰"
+    },
+    {
+      "avg_logprob": -0.382149,
+      "compression_ratio": 1.074286,
+      "end": 7313.84,
+      "no_speech_prob": 0.0,
+      "start": 7312.28,
+      "text": "跟着没名字"
+    },
+    {
+      "avg_logprob": -0.382149,
+      "compression_ratio": 1.074286,
+      "end": 7314.8,
+      "no_speech_prob": 0.0,
+      "start": 7313.84,
+      "text": "三母兄来了"
+    },
+    {
+      "avg_logprob": -0.382149,
+      "compression_ratio": 1.074286,
+      "end": 7316.68,
+      "no_speech_prob": 0.0,
+      "start": 7314.8,
+      "text": "英兵"
+    },
+    {
+      "avg_logprob": -0.382149,
+      "compression_ratio": 1.074286,
+      "end": 7317.8,
+      "no_speech_prob": 0.0,
+      "start": 7316.68,
+      "text": "那天"
+    },
+    {
+      "avg_logprob": -0.382149,
+      "compression_ratio": 1.074286,
+      "end": 7318.18,
+      "no_speech_prob": 0.0,
+      "start": 7317.8,
+      "text": "这个"
+    },
+    {
+      "avg_logprob": -0.277615,
+      "compression_ratio": 1.246753,
+      "end": 7319.2,
+      "no_speech_prob": 0.0,
+      "start": 7318.18,
+      "text": "这个"
+    },
+    {
+      "avg_logprob": -0.277615,
+      "compression_ratio": 1.246753,
+      "end": 7319.68,
+      "no_speech_prob": 0.0,
+      "start": 7319.2,
+      "text": "三母"
+    },
+    {
+      "avg_logprob": -0.277615,
+      "compression_ratio": 1.246753,
+      "end": 7321.0,
+      "no_speech_prob": 0.0,
+      "start": 7319.68,
+      "text": "那天给他留英文"
+    },
+    {
+      "avg_logprob": -0.277615,
+      "compression_ratio": 1.246753,
+      "end": 7321.76,
+      "no_speech_prob": 0.0,
+      "start": 7321.0,
+      "text": "飞飞秀的时候"
+    },
+    {
+      "avg_logprob": -0.277615,
+      "compression_ratio": 1.246753,
+      "end": 7323.04,
+      "no_speech_prob": 0.0,
+      "start": 7321.76,
+      "text": "留英文不是我写的"
+    },
+    {
+      "avg_logprob": -0.277615,
+      "compression_ratio": 1.246753,
+      "end": 7325.02,
+      "no_speech_prob": 0.0,
+      "start": 7323.04,
+      "text": "这是一个我家人写的"
+    },
+    {
+      "avg_logprob": -0.277615,
+      "compression_ratio": 1.246753,
+      "end": 7326.18,
+      "no_speech_prob": 0.0,
+      "start": 7325.02,
+      "text": "所以叫三母"
+    },
+    {
+      "avg_logprob": -0.277615,
+      "compression_ratio": 1.246753,
+      "end": 7327.12,
+      "no_speech_prob": 0.0,
+      "start": 7326.18,
+      "text": "安寇三母"
+    },
+    {
+      "avg_logprob": -0.277615,
+      "compression_ratio": 1.246753,
+      "end": 7329.2,
+      "no_speech_prob": 0.0,
+      "start": 7327.12,
+      "text": "而且他跟三母握过手"
+    },
+    {
+      "avg_logprob": -0.277615,
+      "compression_ratio": 1.246753,
+      "end": 7331.08,
+      "no_speech_prob": 0.0,
+      "start": 7329.2,
+      "text": "说三母的手特别软"
+    },
+    {
+      "avg_logprob": -0.277615,
+      "compression_ratio": 1.246753,
+      "end": 7331.92,
+      "no_speech_prob": 0.0,
+      "start": 7331.08,
+      "text": "超级性感"
+    },
+    {
+      "avg_logprob": -0.530729,
+      "compression_ratio": 0.920455,
+      "end": 7333.4,
+      "no_speech_prob": 0.0,
+      "start": 7331.92,
+      "text": "后来他就留言"
+    },
+    {
+      "avg_logprob": -0.530729,
+      "compression_ratio": 0.920455,
+      "end": 7334.74,
+      "no_speech_prob": 0.0,
+      "start": 7333.4,
+      "text": "安寇三母"
+    },
+    {
+      "avg_logprob": -0.530729,
+      "compression_ratio": 0.920455,
+      "end": 7337.78,
+      "no_speech_prob": 0.0,
+      "start": 7334.74,
+      "text": "但三母不知道他是谁"
+    },
+    {
+      "avg_logprob": -0.530729,
+      "compression_ratio": 0.920455,
+      "end": 7338.92,
+      "no_speech_prob": 0.0,
+      "start": 7337.78,
+      "text": "当时就在做一起了"
+    },
+    {
+      "avg_logprob": -2.386903,
+      "compression_ratio": 3.358491,
+      "end": 7339.52,
+      "no_speech_prob": 0.0,
+      "start": 7338.92,
+      "text": "你很惦 Or"
+    },
+    {
+      "avg_logprob": -2.386903,
+      "compression_ratio": 3.358491,
+      "end": 7339.72,
+      "no_speech_prob": 0.0,
+      "start": 7339.52,
+      "text": "我看"
+    },
+    {
+      "avg_logprob": -2.386903,
+      "compression_ratio": 3.358491,
+      "end": 7339.92,
+      "no_speech_prob": 0.0,
+      "start": 7339.58,
+      "text": "begin"
+    },
+    {
+      "avg_logprob": -2.386903,
+      "compression_ratio": 3.358491,
+      "end": 7340.02,
+      "no_speech_prob": 0.0,
+      "start": 7339.92,
+      "text": "我看"
+    },
+    {
+      "avg_logprob": -2.386903,
+      "compression_ratio": 3.358491,
+      "end": 7340.28,
+      "no_speech_prob": 0.0,
+      "start": 7340.02,
+      "text": "我看"
+    },
+    {
+      "avg_logprob": -2.386903,
+      "compression_ratio": 3.358491,
+      "end": 7340.46,
+      "no_speech_prob": 0.0,
+      "start": 7340.28,
+      "text": "ana"
+    },
+    {
+      "avg_logprob": -2.386903,
+      "compression_ratio": 3.358491,
+      "end": 7340.66,
+      "no_speech_prob": 0.0,
+      "start": 7340.46,
+      "text": "我看"
+    },
+    {
+      "avg_logprob": -2.386903,
+      "compression_ratio": 3.358491,
+      "end": 7340.92,
+      "no_speech_prob": 0.0,
+      "start": 7340.66,
+      "text": "我看"
+    },
+    {
+      "avg_logprob": -2.386903,
+      "compression_ratio": 3.358491,
+      "end": 7341.12,
+      "no_speech_prob": 0.0,
+      "start": 7340.92,
+      "text": "我看"
+    },
+    {
+      "avg_logprob": -2.386903,
+      "compression_ratio": 3.358491,
+      "end": 7341.36,
+      "no_speech_prob": 0.0,
+      "start": 7341.12,
+      "text": "我看"
+    },
+    {
+      "avg_logprob": -2.386903,
+      "compression_ratio": 3.358491,
+      "end": 7341.5,
+      "no_speech_prob": 0.0,
+      "start": 7341.36,
+      "text": "我看"
+    },
+    {
+      "avg_logprob": -2.386903,
+      "compression_ratio": 3.358491,
+      "end": 7341.68,
+      "no_speech_prob": 0.0,
+      "start": 7341.5,
+      "text": "我看"
+    },
+    {
+      "avg_logprob": -2.386903,
+      "compression_ratio": 3.358491,
+      "end": 7341.78,
+      "no_speech_prob": 0.0,
+      "start": 7341.68,
+      "text": "我看"
+    },
+    {
+      "avg_logprob": -2.386903,
+      "compression_ratio": 3.358491,
+      "end": 7341.88,
+      "no_speech_prob": 0.0,
+      "start": 7341.78,
+      "text": "我看"
+    },
+    {
+      "avg_logprob": -2.386903,
+      "compression_ratio": 3.358491,
+      "end": 7342.04,
+      "no_speech_prob": 0.0,
+      "start": 7341.88,
+      "text": "我看"
+    },
+    {
+      "avg_logprob": -2.386903,
+      "compression_ratio": 3.358491,
+      "end": 7342.26,
+      "no_speech_prob": 0.0,
+      "start": 7342.04,
+      "text": "我看"
+    },
+    {
+      "avg_logprob": -2.386903,
+      "compression_ratio": 3.358491,
+      "end": 7342.54,
+      "no_speech_prob": 0.0,
+      "start": 7342.26,
+      "text": "我看"
+    },
+    {
+      "avg_logprob": -2.386903,
+      "compression_ratio": 3.358491,
+      "end": 7342.8,
+      "no_speech_prob": 0.0,
+      "start": 7342.54,
+      "text": "我看"
+    },
+    {
+      "avg_logprob": -2.386903,
+      "compression_ratio": 3.358491,
+      "end": 7343.04,
+      "no_speech_prob": 0.0,
+      "start": 7342.8,
+      "text": "我看"
+    },
+    {
+      "avg_logprob": -2.386903,
+      "compression_ratio": 3.358491,
+      "end": 7343.28,
+      "no_speech_prob": 0.0,
+      "start": 7343.04,
+      "text": "我看"
+    },
+    {
+      "avg_logprob": -2.386903,
+      "compression_ratio": 3.358491,
+      "end": 7343.44,
+      "no_speech_prob": 0.0,
+      "start": 7343.28,
+      "text": "我看"
+    },
+    {
+      "avg_logprob": -2.386903,
+      "compression_ratio": 3.358491,
+      "end": 7343.66,
+      "no_speech_prob": 0.0,
+      "start": 7343.44,
+      "text": "我看"
+    },
+    {
+      "avg_logprob": -2.386903,
+      "compression_ratio": 3.358491,
+      "end": 7343.78,
+      "no_speech_prob": 0.0,
+      "start": 7343.66,
+      "text": "我看"
+    },
+    {
+      "avg_logprob": -2.386903,
+      "compression_ratio": 3.358491,
+      "end": 7343.88,
+      "no_speech_prob": 0.0,
+      "start": 7343.78,
+      "text": "我看"
+    },
+    {
+      "avg_logprob": -2.386903,
+      "compression_ratio": 3.358491,
+      "end": 7343.88,
+      "no_speech_prob": 0.0,
+      "start": 7343.88,
+      "text": "Ten"
+    },
+    {
+      "avg_logprob": -2.386903,
+      "compression_ratio": 3.358491,
+      "end": 7344.08,
+      "no_speech_prob": 0.0,
+      "start": 7343.86,
+      "text": "有"
+    },
+    {
+      "avg_logprob": -2.386903,
+      "compression_ratio": 3.358491,
+      "end": 7344.24,
+      "no_speech_prob": 0.0,
+      "start": 7344.02,
+      "text": "我看"
+    },
+    {
+      "avg_logprob": -2.386903,
+      "compression_ratio": 3.358491,
+      "end": 7344.4,
+      "no_speech_prob": 0.0,
+      "start": 7344.24,
+      "text": "我看"
+    },
+    {
+      "avg_logprob": -2.386903,
+      "compression_ratio": 3.358491,
+      "end": 7344.52,
+      "no_speech_prob": 0.0,
+      "start": 7344.4,
+      "text": "我看"
+    },
+    {
+      "avg_logprob": -2.386903,
+      "compression_ratio": 3.358491,
+      "end": 7344.6,
+      "no_speech_prob": 0.0,
+      "start": 7344.52,
+      "text": "我看"
+    },
+    {
+      "avg_logprob": -0.511247,
+      "compression_ratio": 1.18932,
+      "end": 7349.34,
+      "no_speech_prob": 0.0,
+      "start": 7344.6,
+      "text": "春風 春風 潘魯灣兄弟 路過的風"
+    },
+    {
+      "avg_logprob": -0.511247,
+      "compression_ratio": 1.18932,
+      "end": 7351.84,
+      "no_speech_prob": 0.0,
+      "start": 7349.34,
+      "text": "七七 龍小寶"
+    },
+    {
+      "avg_logprob": -0.511247,
+      "compression_ratio": 1.18932,
+      "end": 7354.84,
+      "no_speech_prob": 0.0,
+      "start": 7353.92,
+      "text": "太棒了"
+    },
+    {
+      "avg_logprob": -0.511247,
+      "compression_ratio": 1.18932,
+      "end": 7358.1,
+      "no_speech_prob": 0.0,
+      "start": 7354.84,
+      "text": "今天的直播這個感覺特別好 特別好"
+    },
+    {
+      "avg_logprob": -0.511247,
+      "compression_ratio": 1.18932,
+      "end": 7360.72,
+      "no_speech_prob": 0.0,
+      "start": 7358.1,
+      "text": "希望兄弟姐妹們咱們就是"
+    },
+    {
+      "avg_logprob": -0.511247,
+      "compression_ratio": 1.18932,
+      "end": 7362.68,
+      "no_speech_prob": 0.0,
+      "start": 7360.72,
+      "text": "非常重要啊"
+    },
+    {
+      "avg_logprob": -0.511247,
+      "compression_ratio": 1.18932,
+      "end": 7364.4,
+      "no_speech_prob": 0.0,
+      "start": 7362.68,
+      "text": "再次感謝整個的"
+    },
+    {
+      "avg_logprob": -0.511247,
+      "compression_ratio": 1.18932,
+      "end": 7367.84,
+      "no_speech_prob": 0.0,
+      "start": 7364.4,
+      "text": "我們的小福利 三漂先生"
+    },
+    {
+      "avg_logprob": -0.511247,
+      "compression_ratio": 1.18932,
+      "end": 7372.16,
+      "no_speech_prob": 0.0,
+      "start": 7367.84,
+      "text": "泰山老兄 頑童整理 三張"
+    },
+    {
+      "avg_logprob": -0.492234,
+      "compression_ratio": 1.207792,
+      "end": 7374.92,
+      "no_speech_prob": 0.0,
+      "start": 7372.16,
+      "text": "太棒了 太棒了"
+    },
+    {
+      "avg_logprob": -0.492234,
+      "compression_ratio": 1.207792,
+      "end": 7377.44,
+      "no_speech_prob": 0.0,
+      "start": 7374.92,
+      "text": "傻都不佛了"
+    },
+    {
+      "avg_logprob": -0.492234,
+      "compression_ratio": 1.207792,
+      "end": 7386.84,
+      "no_speech_prob": 0.0,
+      "start": 7385.44,
+      "text": "接下來"
+    },
+    {
+      "avg_logprob": -0.492234,
+      "compression_ratio": 1.207792,
+      "end": 7389.48,
+      "no_speech_prob": 0.0,
+      "start": 7386.84,
+      "text": "臺灣的問題 我再說一句"
+    },
+    {
+      "avg_logprob": -0.492234,
+      "compression_ratio": 1.207792,
+      "end": 7391.76,
+      "no_speech_prob": 0.0,
+      "start": 7389.48,
+      "text": "臺灣的問題會是一個"
+    },
+    {
+      "avg_logprob": -0.492234,
+      "compression_ratio": 1.207792,
+      "end": 7393.96,
+      "no_speech_prob": 0.0,
+      "start": 7391.76,
+      "text": "死不死活不活"
+    },
+    {
+      "avg_logprob": -0.492234,
+      "compression_ratio": 1.207792,
+      "end": 7396.76,
+      "no_speech_prob": 0.0,
+      "start": 7393.96,
+      "text": "別以為說美國什麼"
+    },
+    {
+      "avg_logprob": -0.492234,
+      "compression_ratio": 1.207792,
+      "end": 7401.08,
+      "no_speech_prob": 0.0,
+      "start": 7396.76,
+      "text": "中共不接美國電話來 扯蛋的事兒"
+    },
+    {
+      "avg_logprob": -0.329828,
+      "compression_ratio": 1.204348,
+      "end": 7404.92,
+      "no_speech_prob": 0.0,
+      "start": 7402.16,
+      "text": "美國就希望你共產黨現在走向瘋狂"
+    },
+    {
+      "avg_logprob": -0.329828,
+      "compression_ratio": 1.204348,
+      "end": 7407.92,
+      "no_speech_prob": 0.0,
+      "start": 7404.92,
+      "text": "就希望你封鎖臺灣"
+    },
+    {
+      "avg_logprob": -0.329828,
+      "compression_ratio": 1.204348,
+      "end": 7410.6,
+      "no_speech_prob": 0.0,
+      "start": 7407.92,
+      "text": "誰告訴大家的"
+    },
+    {
+      "avg_logprob": -0.329828,
+      "compression_ratio": 1.204348,
+      "end": 7413.44,
+      "no_speech_prob": 0.0,
+      "start": 7410.6,
+      "text": "從今年三月份 七個說"
+    },
+    {
+      "avg_logprob": -0.329828,
+      "compression_ratio": 1.204348,
+      "end": 7414.44,
+      "no_speech_prob": 0.0,
+      "start": 7413.44,
+      "text": "Nancy Pelosi"
+    },
+    {
+      "avg_logprob": -0.329828,
+      "compression_ratio": 1.204348,
+      "end": 7416.44,
+      "no_speech_prob": 0.0,
+      "start": 7414.44,
+      "text": "要訪問臺灣"
+    },
+    {
+      "avg_logprob": -0.329828,
+      "compression_ratio": 1.204348,
+      "end": 7418.28,
+      "no_speech_prob": 0.0,
+      "start": 7416.44,
+      "text": "連美國人都罵我"
+    },
+    {
+      "avg_logprob": -0.329828,
+      "compression_ratio": 1.204348,
+      "end": 7420.6,
+      "no_speech_prob": 0.0,
+      "start": 7418.28,
+      "text": "歐洲人都罵我"
+    },
+    {
+      "avg_logprob": -0.329828,
+      "compression_ratio": 1.204348,
+      "end": 7422.64,
+      "no_speech_prob": 0.0,
+      "start": 7420.6,
+      "text": "我們歐洲的團隊說"
+    },
+    {
+      "avg_logprob": -0.329828,
+      "compression_ratio": 1.204348,
+      "end": 7424.12,
+      "no_speech_prob": 0.0,
+      "start": 7422.64,
+      "text": "郭先生 你這不能"
+    },
+    {
+      "avg_logprob": -0.329828,
+      "compression_ratio": 1.204348,
+      "end": 7426.56,
+      "no_speech_prob": 0.0,
+      "start": 7424.12,
+      "text": "這太大了 我們都不知道 你怎麼會知道"
+    },
+    {
+      "avg_logprob": -0.337122,
+      "compression_ratio": 1.388889,
+      "end": 7430.32,
+      "no_speech_prob": 0.0,
+      "start": 7426.56,
+      "text": "這全是歐洲人 都是歐洲的政治家族"
+    },
+    {
+      "avg_logprob": -0.337122,
+      "compression_ratio": 1.388889,
+      "end": 7436.04,
+      "no_speech_prob": 0.0,
+      "start": 7430.32,
+      "text": "後來我說是 我說四月份去不了"
+    },
+    {
+      "avg_logprob": -0.337122,
+      "compression_ratio": 1.388889,
+      "end": 7438.04,
+      "no_speech_prob": 0.0,
+      "start": 7436.04,
+      "text": "共產黨哀求人家"
+    },
+    {
+      "avg_logprob": -0.337122,
+      "compression_ratio": 1.388889,
+      "end": 7439.36,
+      "no_speech_prob": 0.0,
+      "start": 7438.04,
+      "text": "八月份行不行"
+    },
+    {
+      "avg_logprob": -0.337122,
+      "compression_ratio": 1.388889,
+      "end": 7440.64,
+      "no_speech_prob": 0.0,
+      "start": 7439.36,
+      "text": "六月份或八月份"
+    },
+    {
+      "avg_logprob": -0.337122,
+      "compression_ratio": 1.388889,
+      "end": 7442.44,
+      "no_speech_prob": 0.0,
+      "start": 7440.64,
+      "text": "結果六月份大家知道"
+    },
+    {
+      "avg_logprob": -0.337122,
+      "compression_ratio": 1.388889,
+      "end": 7444.32,
+      "no_speech_prob": 0.0,
+      "start": 7442.44,
+      "text": "陽性最後八月份去了"
+    },
+    {
+      "avg_logprob": -0.337122,
+      "compression_ratio": 1.388889,
+      "end": 7446.32,
+      "no_speech_prob": 0.0,
+      "start": 7444.32,
+      "text": "我再告訴大家"
+    },
+    {
+      "avg_logprob": -0.337122,
+      "compression_ratio": 1.388889,
+      "end": 7448.32,
+      "no_speech_prob": 0.0,
+      "start": 7446.32,
+      "text": "今天再告訴大家一個"
+    },
+    {
+      "avg_logprob": -0.337122,
+      "compression_ratio": 1.388889,
+      "end": 7450.36,
+      "no_speech_prob": 0.0,
+      "start": 7448.32,
+      "text": "你可能無法相信的事實"
+    },
+    {
+      "avg_logprob": -0.178339,
+      "compression_ratio": 1.199187,
+      "end": 7454.08,
+      "no_speech_prob": 0.0,
+      "start": 7450.36,
+      "text": "你可能很難相信的"
+    },
+    {
+      "avg_logprob": -0.178339,
+      "compression_ratio": 1.199187,
+      "end": 7455.88,
+      "no_speech_prob": 0.0,
+      "start": 7454.08,
+      "text": "我再告訴大家 關於臺灣"
+    },
+    {
+      "avg_logprob": -0.178339,
+      "compression_ratio": 1.199187,
+      "end": 7459.36,
+      "no_speech_prob": 0.0,
+      "start": 7455.88,
+      "text": "就臺灣的賣台賊"
+    },
+    {
+      "avg_logprob": -0.178339,
+      "compression_ratio": 1.199187,
+      "end": 7462.56,
+      "no_speech_prob": 0.0,
+      "start": 7459.36,
+      "text": "能把臺灣的蔡英文總統"
+    },
+    {
+      "avg_logprob": -0.178339,
+      "compression_ratio": 1.199187,
+      "end": 7463.72,
+      "no_speech_prob": 0.0,
+      "start": 7462.56,
+      "text": "和Nancy Pelosi訪台"
+    },
+    {
+      "avg_logprob": -0.178339,
+      "compression_ratio": 1.199187,
+      "end": 7465.0,
+      "no_speech_prob": 0.0,
+      "start": 7463.72,
+      "text": "所有的習事情"
+    },
+    {
+      "avg_logprob": -0.178339,
+      "compression_ratio": 1.199187,
+      "end": 7467.12,
+      "no_speech_prob": 0.0,
+      "start": 7465.0,
+      "text": "即時地告訴了中共"
+    },
+    {
+      "avg_logprob": -0.178339,
+      "compression_ratio": 1.199187,
+      "end": 7469.86,
+      "no_speech_prob": 0.0,
+      "start": 7467.12,
+      "text": "而且給中共出爛招"
+    },
+    {
+      "avg_logprob": -0.178339,
+      "compression_ratio": 1.199187,
+      "end": 7472.5,
+      "no_speech_prob": 0.0,
+      "start": 7469.86,
+      "text": "你要禁止臺灣的一切"
+    },
+    {
+      "avg_logprob": -0.178339,
+      "compression_ratio": 1.199187,
+      "end": 7474.04,
+      "no_speech_prob": 0.0,
+      "start": 7472.5,
+      "text": "什麼鳳梨酥啊"
+    },
+    {
+      "avg_logprob": -0.178339,
+      "compression_ratio": 1.199187,
+      "end": 7475.7,
+      "no_speech_prob": 0.0,
+      "start": 7474.04,
+      "text": "什麼水果啊"
+    },
+    {
+      "avg_logprob": -0.178339,
+      "compression_ratio": 1.199187,
+      "end": 7477.36,
+      "no_speech_prob": 0.0,
+      "start": 7475.7,
+      "text": "什麼東西進大陸啊"
+    },
+    {
+      "avg_logprob": -0.178339,
+      "compression_ratio": 1.199187,
+      "end": 7478.26,
+      "no_speech_prob": 0.0,
+      "start": 7477.36,
+      "text": "他們就會跪下"
+    },
+    {
+      "avg_logprob": -0.361775,
+      "compression_ratio": 1.222689,
+      "end": 7481.62,
+      "no_speech_prob": 0.0,
+      "start": 7478.26,
+      "text": "臺灣在朝興城"
+    },
+    {
+      "avg_logprob": -0.361775,
+      "compression_ratio": 1.222689,
+      "end": 7483.62,
+      "no_speech_prob": 0.0,
+      "start": 7481.62,
+      "text": "捐了一億美元之後"
+    },
+    {
+      "avg_logprob": -0.361775,
+      "compression_ratio": 1.222689,
+      "end": 7484.86,
+      "no_speech_prob": 0.0,
+      "start": 7483.62,
+      "text": "竟然有人說"
+    },
+    {
+      "avg_logprob": -0.361775,
+      "compression_ratio": 1.222689,
+      "end": 7486.86,
+      "no_speech_prob": 0.0,
+      "start": 7484.86,
+      "text": "你們要開始懲罰臺灣"
+    },
+    {
+      "avg_logprob": -0.361775,
+      "compression_ratio": 1.222689,
+      "end": 7488.46,
+      "no_speech_prob": 0.0,
+      "start": 7486.86,
+      "text": "讓它會跪下"
+    },
+    {
+      "avg_logprob": -0.361775,
+      "compression_ratio": 1.222689,
+      "end": 7490.26,
+      "no_speech_prob": 0.0,
+      "start": 7488.46,
+      "text": "什麼這原材料"
+    },
+    {
+      "avg_logprob": -0.361775,
+      "compression_ratio": 1.222689,
+      "end": 7492.66,
+      "no_speech_prob": 0.0,
+      "start": 7490.26,
+      "text": "那簡直是摟到爆了"
+    },
+    {
+      "avg_logprob": -0.361775,
+      "compression_ratio": 1.222689,
+      "end": 7495.14,
+      "no_speech_prob": 0.0,
+      "start": 7492.66,
+      "text": "但這一切"
+    },
+    {
+      "avg_logprob": -0.361775,
+      "compression_ratio": 1.222689,
+      "end": 7497.06,
+      "no_speech_prob": 0.0,
+      "start": 7495.14,
+      "text": "共產黨得到的信息"
+    },
+    {
+      "avg_logprob": -0.361775,
+      "compression_ratio": 1.222689,
+      "end": 7498.46,
+      "no_speech_prob": 0.0,
+      "start": 7497.06,
+      "text": "同樣美國都知道"
+    },
+    {
+      "avg_logprob": -0.361775,
+      "compression_ratio": 1.222689,
+      "end": 7500.06,
+      "no_speech_prob": 0.0,
+      "start": 7498.46,
+      "text": "就是美國是建立的"
+    },
+    {
+      "avg_logprob": -0.361775,
+      "compression_ratio": 1.222689,
+      "end": 7503.06,
+      "no_speech_prob": 0.0,
+      "start": 7500.06,
+      "text": "臺灣和大陸之間情報最高端"
+    },
+    {
+      "avg_logprob": -0.361775,
+      "compression_ratio": 1.222689,
+      "end": 7505.26,
+      "no_speech_prob": 0.0,
+      "start": 7503.06,
+      "text": "當然分享給澳大利亞日本"
+    },
+    {
+      "avg_logprob": -0.236745,
+      "compression_ratio": 1.086614,
+      "end": 7512.12,
+      "no_speech_prob": 0.0,
+      "start": 7505.26,
+      "text": "所以共產黨想對臺灣的行動"
+    },
+    {
+      "avg_logprob": -0.236745,
+      "compression_ratio": 1.086614,
+      "end": 7513.0,
+      "no_speech_prob": 0.0,
+      "start": 7512.12,
+      "text": "想封鎖臺灣"
+    },
+    {
+      "avg_logprob": -0.236745,
+      "compression_ratio": 1.086614,
+      "end": 7516.46,
+      "no_speech_prob": 0.0,
+      "start": 7513.0,
+      "text": "在黨內引起了巨大的起義"
+    },
+    {
+      "avg_logprob": -0.236745,
+      "compression_ratio": 1.086614,
+      "end": 7519.16,
+      "no_speech_prob": 0.0,
+      "start": 7516.46,
+      "text": "它如果真的封鎖臺灣"
+    },
+    {
+      "avg_logprob": -0.236745,
+      "compression_ratio": 1.086614,
+      "end": 7521.62,
+      "no_speech_prob": 0.0,
+      "start": 7519.16,
+      "text": "美軍高興還罷不得呢"
+    },
+    {
+      "avg_logprob": -0.39208,
+      "compression_ratio": 1.12,
+      "end": 7526.98,
+      "no_speech_prob": 0.0,
+      "start": 7521.62,
+      "text": "美日澳一定行動"
+    },
+    {
+      "avg_logprob": -0.39208,
+      "compression_ratio": 1.12,
+      "end": 7527.86,
+      "no_speech_prob": 0.0,
+      "start": 7526.98,
+      "text": "把它剷平"
+    },
+    {
+      "avg_logprob": -0.39208,
+      "compression_ratio": 1.12,
+      "end": 7529.92,
+      "no_speech_prob": 0.0,
+      "start": 7527.86,
+      "text": "它封不封臺灣"
+    },
+    {
+      "avg_logprob": -0.39208,
+      "compression_ratio": 1.12,
+      "end": 7531.02,
+      "no_speech_prob": 0.0,
+      "start": 7529.92,
+      "text": "都會把他南海"
+    },
+    {
+      "avg_logprob": -0.39208,
+      "compression_ratio": 1.12,
+      "end": 7533.42,
+      "no_speech_prob": 0.0,
+      "start": 7531.02,
+      "text": "把他建那個破島給他幹掉"
+    },
+    {
+      "avg_logprob": -0.39208,
+      "compression_ratio": 1.12,
+      "end": 7535.48,
+      "no_speech_prob": 0.0,
+      "start": 7533.42,
+      "text": "然後馬六甲"
+    },
+    {
+      "avg_logprob": -0.39208,
+      "compression_ratio": 1.12,
+      "end": 7536.98,
+      "no_speech_prob": 0.0,
+      "start": 7535.48,
+      "text": "海峽所有的石油"
+    },
+    {
+      "avg_logprob": -0.39208,
+      "compression_ratio": 1.12,
+      "end": 7538.92,
+      "no_speech_prob": 0.0,
+      "start": 7536.98,
+      "text": "整個運輸圈全給他打破"
+    },
+    {
+      "avg_logprob": -0.302695,
+      "compression_ratio": 1.363636,
+      "end": 7541.78,
+      "no_speech_prob": 0.0,
+      "start": 7538.92,
+      "text": "然後讓臺灣人事實上的獨立"
+    },
+    {
+      "avg_logprob": -0.302695,
+      "compression_ratio": 1.363636,
+      "end": 7543.66,
+      "no_speech_prob": 0.0,
+      "start": 7541.78,
+      "text": "誰告訴我"
+    },
+    {
+      "avg_logprob": -0.302695,
+      "compression_ratio": 1.363636,
+      "end": 7545.78,
+      "no_speech_prob": 0.0,
+      "start": 7543.66,
+      "text": "李根浩"
+    },
+    {
+      "avg_logprob": -0.302695,
+      "compression_ratio": 1.363636,
+      "end": 7546.66,
+      "no_speech_prob": 0.0,
+      "start": 7545.78,
+      "text": "我今天最後告訴大家"
+    },
+    {
+      "avg_logprob": -0.302695,
+      "compression_ratio": 1.363636,
+      "end": 7548.66,
+      "no_speech_prob": 0.0,
+      "start": 7546.66,
+      "text": "注意李根浩"
+    },
+    {
+      "avg_logprob": -0.302695,
+      "compression_ratio": 1.363636,
+      "end": 7550.72,
+      "no_speech_prob": 0.0,
+      "start": 7548.66,
+      "text": "別看李根浩現在待在臺灣"
+    },
+    {
+      "avg_logprob": -0.302695,
+      "compression_ratio": 1.363636,
+      "end": 7552.26,
+      "no_speech_prob": 0.0,
+      "start": 7550.72,
+      "text": "跪一段就會離開"
+    },
+    {
+      "avg_logprob": -0.302695,
+      "compression_ratio": 1.363636,
+      "end": 7554.08,
+      "no_speech_prob": 0.0,
+      "start": 7552.26,
+      "text": "離開以後再殺回回馬槍"
+    },
+    {
+      "avg_logprob": -0.302695,
+      "compression_ratio": 1.363636,
+      "end": 7557.12,
+      "no_speech_prob": 0.0,
+      "start": 7554.08,
+      "text": "李根浩就希望共產黨來碰瓷了"
+    },
+    {
+      "avg_logprob": -0.302695,
+      "compression_ratio": 1.363636,
+      "end": 7560.48,
+      "no_speech_prob": 0.0,
+      "start": 7557.12,
+      "text": "而且李根浩周圍的護衛艦查一查"
+    },
+    {
+      "avg_logprob": -0.302695,
+      "compression_ratio": 1.363636,
+      "end": 7562.58,
+      "no_speech_prob": 0.0,
+      "start": 7560.48,
+      "text": "和李根浩的戰略武器查一查"
+    },
+    {
+      "avg_logprob": -0.387681,
+      "compression_ratio": 1.273438,
+      "end": 7564.88,
+      "no_speech_prob": 0.0,
+      "start": 7562.58,
+      "text": "還有現在美軍派往"
+    },
+    {
+      "avg_logprob": -0.387681,
+      "compression_ratio": 1.273438,
+      "end": 7569.94,
+      "no_speech_prob": 0.0,
+      "start": 7564.88,
+      "text": "臺灣海峽東海南海的武器有什麼變化"
+    },
+    {
+      "avg_logprob": -0.387681,
+      "compression_ratio": 1.273438,
+      "end": 7571.44,
+      "no_speech_prob": 0.0,
+      "start": 7569.94,
+      "text": "你很難想"
+    },
+    {
+      "avg_logprob": -0.387681,
+      "compression_ratio": 1.273438,
+      "end": 7573.04,
+      "no_speech_prob": 0.0,
+      "start": 7571.44,
+      "text": "就在美國在全世界"
+    },
+    {
+      "avg_logprob": -0.387681,
+      "compression_ratio": 1.273438,
+      "end": 7575.04,
+      "no_speech_prob": 0.0,
+      "start": 7573.04,
+      "text": "所有媒體上說"
+    },
+    {
+      "avg_logprob": -0.387681,
+      "compression_ratio": 1.273438,
+      "end": 7576.72,
+      "no_speech_prob": 0.0,
+      "start": 7575.04,
+      "text": "中共不理我們吶"
+    },
+    {
+      "avg_logprob": -0.387681,
+      "compression_ratio": 1.273438,
+      "end": 7578.14,
+      "no_speech_prob": 0.0,
+      "start": 7576.72,
+      "text": "不接我們電話呀"
+    },
+    {
+      "avg_logprob": -0.387681,
+      "compression_ratio": 1.273438,
+      "end": 7579.22,
+      "no_speech_prob": 0.0,
+      "start": 7578.14,
+      "text": "不配合呀"
+    },
+    {
+      "avg_logprob": -0.387681,
+      "compression_ratio": 1.273438,
+      "end": 7580.82,
+      "no_speech_prob": 0.0,
+      "start": 7579.22,
+      "text": "我求求你了中共"
+    },
+    {
+      "avg_logprob": -0.387681,
+      "compression_ratio": 1.273438,
+      "end": 7582.38,
+      "no_speech_prob": 0.0,
+      "start": 7580.82,
+      "text": "接我電話吧"
+    },
+    {
+      "avg_logprob": -0.387681,
+      "compression_ratio": 1.273438,
+      "end": 7585.52,
+      "no_speech_prob": 0.0,
+      "start": 7582.38,
+      "text": "就像奈斯普羅斯的議長到臺灣一樣"
+    },
+    {
+      "avg_logprob": -0.387681,
+      "compression_ratio": 1.273438,
+      "end": 7587.34,
+      "no_speech_prob": 0.0,
+      "start": 7585.52,
+      "text": "中共當官員說"
+    },
+    {
+      "avg_logprob": -0.387681,
+      "compression_ratio": 1.273438,
+      "end": 7588.14,
+      "no_speech_prob": 0.0,
+      "start": 7587.34,
+      "text": "你知道嗎"
+    },
+    {
+      "avg_logprob": -0.387681,
+      "compression_ratio": 1.273438,
+      "end": 7588.94,
+      "no_speech_prob": 0.0,
+      "start": 7588.14,
+      "text": "Nancy"
+    },
+    {
+      "avg_logprob": -0.387681,
+      "compression_ratio": 1.273438,
+      "end": 7591.54,
+      "no_speech_prob": 0.0,
+      "start": 7588.94,
+      "text": "各種渠道向中共來交易"
+    },
+    {
+      "avg_logprob": -0.343333,
+      "compression_ratio": 1.348178,
+      "end": 7594.3,
+      "no_speech_prob": 0.0,
+      "start": 7591.54,
+      "text": "釋放民運人士就可以不來臺灣"
+    },
+    {
+      "avg_logprob": -0.343333,
+      "compression_ratio": 1.348178,
+      "end": 7597.78,
+      "no_speech_prob": 0.0,
+      "start": 7595.44,
+      "text": "就是共產黨這種自淫自騙"
+    },
+    {
+      "avg_logprob": -0.343333,
+      "compression_ratio": 1.348178,
+      "end": 7598.94,
+      "no_speech_prob": 0.0,
+      "start": 7597.78,
+      "text": "互相欺騙"
+    },
+    {
+      "avg_logprob": -0.343333,
+      "compression_ratio": 1.348178,
+      "end": 7600.3,
+      "no_speech_prob": 0.0,
+      "start": 7598.94,
+      "text": "你都能看明白"
+    },
+    {
+      "avg_logprob": -0.343333,
+      "compression_ratio": 1.348178,
+      "end": 7602.84,
+      "no_speech_prob": 0.0,
+      "start": 7601.9,
+      "text": "接下來"
+    },
+    {
+      "avg_logprob": -0.343333,
+      "compression_ratio": 1.348178,
+      "end": 7605.58,
+      "no_speech_prob": 0.0,
+      "start": 7602.84,
+      "text": "人家美國就順著你這個排打"
+    },
+    {
+      "avg_logprob": -0.343333,
+      "compression_ratio": 1.348178,
+      "end": 7607.28,
+      "no_speech_prob": 0.0,
+      "start": 7605.58,
+      "text": "讓你這個民族主義"
+    },
+    {
+      "avg_logprob": -0.343333,
+      "compression_ratio": 1.348178,
+      "end": 7609.14,
+      "no_speech_prob": 0.0,
+      "start": 7607.28,
+      "text": "那小粉紅們打自己的臉"
+    },
+    {
+      "avg_logprob": -0.343333,
+      "compression_ratio": 1.348178,
+      "end": 7610.04,
+      "no_speech_prob": 0.0,
+      "start": 7609.14,
+      "text": "抽自己的臉"
+    },
+    {
+      "avg_logprob": -0.343333,
+      "compression_ratio": 1.348178,
+      "end": 7611.14,
+      "no_speech_prob": 0.0,
+      "start": 7610.04,
+      "text": "你抽吧"
+    },
+    {
+      "avg_logprob": -0.343333,
+      "compression_ratio": 1.348178,
+      "end": 7612.24,
+      "no_speech_prob": 0.0,
+      "start": 7611.14,
+      "text": "你等著吧"
+    },
+    {
+      "avg_logprob": -0.343333,
+      "compression_ratio": 1.348178,
+      "end": 7613.34,
+      "no_speech_prob": 0.0,
+      "start": 7612.24,
+      "text": "你只要有臉抽"
+    },
+    {
+      "avg_logprob": -0.343333,
+      "compression_ratio": 1.348178,
+      "end": 7614.74,
+      "no_speech_prob": 0.0,
+      "start": 7613.34,
+      "text": "說明你還活著"
+    },
+    {
+      "avg_logprob": -0.343333,
+      "compression_ratio": 1.348178,
+      "end": 7618.24,
+      "no_speech_prob": 0.0,
+      "start": 7614.74,
+      "text": "希望你還有幾次抽你的臉"
+    },
+    {
+      "avg_logprob": -0.343333,
+      "compression_ratio": 1.348178,
+      "end": 7620.0,
+      "no_speech_prob": 0.0,
+      "start": 7618.24,
+      "text": "無知愚蠢的"
+    },
+    {
+      "avg_logprob": -0.343333,
+      "compression_ratio": 1.348178,
+      "end": 7621.08,
+      "no_speech_prob": 0.0,
+      "start": 7620.0,
+      "text": "代殺的豬"
+    },
+    {
+      "avg_logprob": -0.390983,
+      "compression_ratio": 1.18,
+      "end": 7622.64,
+      "no_speech_prob": 0.0,
+      "start": 7621.08,
+      "text": "你不知道你咋回事呢"
+    },
+    {
+      "avg_logprob": -0.390983,
+      "compression_ratio": 1.18,
+      "end": 7623.84,
+      "no_speech_prob": 0.0,
+      "start": 7622.64,
+      "text": "你連處奴都不配"
+    },
+    {
+      "avg_logprob": -0.390983,
+      "compression_ratio": 1.18,
+      "end": 7627.32,
+      "no_speech_prob": 0.0,
+      "start": 7624.84,
+      "text": "你要明白一個道理"
+    },
+    {
+      "avg_logprob": -0.390983,
+      "compression_ratio": 1.18,
+      "end": 7629.32,
+      "no_speech_prob": 0.0,
+      "start": 7627.32,
+      "text": "任何國家的人民"
+    },
+    {
+      "avg_logprob": -0.390983,
+      "compression_ratio": 1.18,
+      "end": 7631.92,
+      "no_speech_prob": 0.0,
+      "start": 7629.32,
+      "text": "他所忠於的土地和國家"
+    },
+    {
+      "avg_logprob": -0.390983,
+      "compression_ratio": 1.18,
+      "end": 7634.98,
+      "no_speech_prob": 0.0,
+      "start": 7631.92,
+      "text": "是他那塊土地和上天賦予的人權"
+    },
+    {
+      "avg_logprob": -0.390983,
+      "compression_ratio": 1.18,
+      "end": 7636.22,
+      "no_speech_prob": 0.0,
+      "start": 7634.98,
+      "text": "天命人壽"
+    },
+    {
+      "avg_logprob": -0.364193,
+      "compression_ratio": 1.159091,
+      "end": 7641.56,
+      "no_speech_prob": 0.0,
+      "start": 7636.22,
+      "text": "這個中間不存在任何黨任何組織高於你的父母"
+    },
+    {
+      "avg_logprob": -0.364193,
+      "compression_ratio": 1.159091,
+      "end": 7643.06,
+      "no_speech_prob": 0.0,
+      "start": 7641.56,
+      "text": "高於你的人權"
+    },
+    {
+      "avg_logprob": -0.364193,
+      "compression_ratio": 1.159091,
+      "end": 7646.46,
+      "no_speech_prob": 0.0,
+      "start": 7643.06,
+      "text": "而共產黨讓你說爹親娘親不如黨親"
+    },
+    {
+      "avg_logprob": -0.364193,
+      "compression_ratio": 1.159091,
+      "end": 7648.88,
+      "no_speech_prob": 0.0,
+      "start": 7646.46,
+      "text": "我耳你八倍蠕如共產黨"
+    },
+    {
+      "avg_logprob": -0.347381,
+      "compression_ratio": 1.112903,
+      "end": 7650.44,
+      "no_speech_prob": 0.0,
+      "start": 7648.88,
+      "text": "是吧"
+    },
+    {
+      "avg_logprob": -0.347381,
+      "compression_ratio": 1.112903,
+      "end": 7652.52,
+      "no_speech_prob": 0.0,
+      "start": 7650.44,
+      "text": "這是慘無人道的"
+    },
+    {
+      "avg_logprob": -0.347381,
+      "compression_ratio": 1.112903,
+      "end": 7654.12,
+      "no_speech_prob": 0.0,
+      "start": 7652.52,
+      "text": "什麼叫爹親娘親不是黨親"
+    },
+    {
+      "avg_logprob": -0.347381,
+      "compression_ratio": 1.112903,
+      "end": 7657.12,
+      "no_speech_prob": 0.0,
+      "start": 7654.12,
+      "text": "你爹你媽呢"
+    },
+    {
+      "avg_logprob": -0.347381,
+      "compression_ratio": 1.112903,
+      "end": 7659.12,
+      "no_speech_prob": 0.0,
+      "start": 7657.12,
+      "text": "你這石頭上蹦出來的"
+    },
+    {
+      "avg_logprob": -0.347381,
+      "compression_ratio": 1.112903,
+      "end": 7662.48,
+      "no_speech_prob": 0.0,
+      "start": 7659.12,
+      "text": "這個世界沒有比爹親娘親的"
+    },
+    {
+      "avg_logprob": -0.338533,
+      "compression_ratio": 1.206897,
+      "end": 7667.54,
+      "no_speech_prob": 0.0,
+      "start": 7662.48,
+      "text": "這就是兄弟姐妹們要記住"
+    },
+    {
+      "avg_logprob": -0.338533,
+      "compression_ratio": 1.206897,
+      "end": 7670.98,
+      "no_speech_prob": 0.0,
+      "start": 7667.54,
+      "text": "這些小粉紅還有所有中國人民要起碼嘗試你不懂"
+    },
+    {
+      "avg_logprob": -0.338533,
+      "compression_ratio": 1.206897,
+      "end": 7676.38,
+      "no_speech_prob": 0.0,
+      "start": 7672.58,
+      "text": "一個不論任何黨派任何宗教不要爹娘的"
+    },
+    {
+      "avg_logprob": -0.338533,
+      "compression_ratio": 1.206897,
+      "end": 7679.32,
+      "no_speech_prob": 0.0,
+      "start": 7676.38,
+      "text": "不要老公要丈夫要家人要孩子的"
+    },
+    {
+      "avg_logprob": -0.338533,
+      "compression_ratio": 1.206897,
+      "end": 7680.54,
+      "no_speech_prob": 0.0,
+      "start": 7679.32,
+      "text": "你就是個媽媽蛋"
+    },
+    {
+      "avg_logprob": -0.259436,
+      "compression_ratio": 1.303797,
+      "end": 7686.18,
+      "no_speech_prob": 0.0,
+      "start": 7680.54,
+      "text": "老天一定會消滅這些邪惡的組織的"
+    },
+    {
+      "avg_logprob": -0.259436,
+      "compression_ratio": 1.303797,
+      "end": 7689.9,
+      "no_speech_prob": 0.0,
+      "start": 7686.18,
+      "text": "數字化時代會讓很多邪惡消失在人間"
+    },
+    {
+      "avg_logprob": -0.259436,
+      "compression_ratio": 1.303797,
+      "end": 7691.7,
+      "no_speech_prob": 0.0,
+      "start": 7689.9,
+      "text": "而且就是兩三年的事"
+    },
+    {
+      "avg_logprob": -0.259436,
+      "compression_ratio": 1.303797,
+      "end": 7693.9,
+      "no_speech_prob": 0.0,
+      "start": 7691.7,
+      "text": "不會有多長時間"
+    },
+    {
+      "avg_logprob": -0.259436,
+      "compression_ratio": 1.303797,
+      "end": 7697.78,
+      "no_speech_prob": 0.0,
+      "start": 7693.9,
+      "text": "新中國聯邦人最重要的是愛自己的戰友"
+    },
+    {
+      "avg_logprob": -0.259436,
+      "compression_ratio": 1.303797,
+      "end": 7699.9,
+      "no_speech_prob": 0.0,
+      "start": 7697.78,
+      "text": "忠於自己的危真不破"
+    },
+    {
+      "avg_logprob": -0.259436,
+      "compression_ratio": 1.303797,
+      "end": 7703.58,
+      "no_speech_prob": 0.0,
+      "start": 7699.9,
+      "text": "發自內心的相信"
+    },
+    {
+      "avg_logprob": -0.259436,
+      "compression_ratio": 1.303797,
+      "end": 7705.2,
+      "no_speech_prob": 0.0,
+      "start": 7703.58,
+      "text": "只有消滅共產黨"
+    },
+    {
+      "avg_logprob": -0.259436,
+      "compression_ratio": 1.303797,
+      "end": 7706.7,
+      "no_speech_prob": 0.0,
+      "start": 7705.2,
+      "text": "我們就是世界最牛的人"
+    },
+    {
+      "avg_logprob": -0.259436,
+      "compression_ratio": 1.303797,
+      "end": 7709.14,
+      "no_speech_prob": 0.0,
+      "start": 7706.7,
+      "text": "吳苗吳苗吳苗"
+    },
+    {
+      "avg_logprob": -0.230372,
+      "compression_ratio": 1.493562,
+      "end": 7712.18,
+      "no_speech_prob": 0.0,
+      "start": 7709.14,
+      "text": "你有戰友"
+    },
+    {
+      "avg_logprob": -0.230372,
+      "compression_ratio": 1.493562,
+      "end": 7713.38,
+      "no_speech_prob": 0.0,
+      "start": 7712.18,
+      "text": "你有一個新的國家"
+    },
+    {
+      "avg_logprob": -0.230372,
+      "compression_ratio": 1.493562,
+      "end": 7716.88,
+      "no_speech_prob": 0.0,
+      "start": 7713.38,
+      "text": "我們不希望任何人來認可我們"
+    },
+    {
+      "avg_logprob": -0.230372,
+      "compression_ratio": 1.493562,
+      "end": 7719.2,
+      "no_speech_prob": 0.0,
+      "start": 7716.88,
+      "text": "我們只希望中國人認可我們"
+    },
+    {
+      "avg_logprob": -0.230372,
+      "compression_ratio": 1.493562,
+      "end": 7722.34,
+      "no_speech_prob": 0.0,
+      "start": 7719.2,
+      "text": "我們希望得到中國同胞的承認"
+    },
+    {
+      "avg_logprob": -0.230372,
+      "compression_ratio": 1.493562,
+      "end": 7723.6,
+      "no_speech_prob": 0.0,
+      "start": 7722.34,
+      "text": "這是首要重要"
+    },
+    {
+      "avg_logprob": -0.230372,
+      "compression_ratio": 1.493562,
+      "end": 7726.2,
+      "no_speech_prob": 0.0,
+      "start": 7723.6,
+      "text": "全世界都認可我們新中聯邦"
+    },
+    {
+      "avg_logprob": -0.230372,
+      "compression_ratio": 1.493562,
+      "end": 7727.6,
+      "no_speech_prob": 0.0,
+      "start": 7726.2,
+      "text": "中國人恨我們有用嗎"
+    },
+    {
+      "avg_logprob": -0.230372,
+      "compression_ratio": 1.493562,
+      "end": 7731.28,
+      "no_speech_prob": 0.0,
+      "start": 7727.6,
+      "text": "很多中國人過去的幾十年"
+    },
+    {
+      "avg_logprob": -0.230372,
+      "compression_ratio": 1.493562,
+      "end": 7732.2,
+      "no_speech_prob": 0.0,
+      "start": 7731.28,
+      "text": "自動的魔道"
+    },
+    {
+      "avg_logprob": -0.230372,
+      "compression_ratio": 1.493562,
+      "end": 7734.2,
+      "no_speech_prob": 0.0,
+      "start": 7732.2,
+      "text": "以為得洋人加持"
+    },
+    {
+      "avg_logprob": -0.230372,
+      "compression_ratio": 1.493562,
+      "end": 7734.94,
+      "no_speech_prob": 0.0,
+      "start": 7734.2,
+      "text": "你就會成功"
+    },
+    {
+      "avg_logprob": -0.230372,
+      "compression_ratio": 1.493562,
+      "end": 7735.48,
+      "no_speech_prob": 0.0,
+      "start": 7734.94,
+      "text": "胡扯"
+    },
+    {
+      "avg_logprob": -0.230372,
+      "compression_ratio": 1.493562,
+      "end": 7738.5,
+      "no_speech_prob": 0.0,
+      "start": 7735.48,
+      "text": "只有得到中國人認可"
+    },
+    {
+      "avg_logprob": -0.370452,
+      "compression_ratio": 1.064516,
+      "end": 7740.36,
+      "no_speech_prob": 0.0,
+      "start": 7738.5,
+      "text": "我們才有未來"
+    },
+    {
+      "avg_logprob": -0.370452,
+      "compression_ratio": 1.064516,
+      "end": 7742.54,
+      "no_speech_prob": 0.0,
+      "start": 7740.36,
+      "text": "而且靠的就是我們未來的"
+    },
+    {
+      "avg_logprob": -0.370452,
+      "compression_ratio": 1.064516,
+      "end": 7743.9,
+      "no_speech_prob": 0.0,
+      "start": 7742.54,
+      "text": "數字貨幣"
+    },
+    {
+      "avg_logprob": -0.370452,
+      "compression_ratio": 1.064516,
+      "end": 7746.24,
+      "no_speech_prob": 0.0,
+      "start": 7743.9,
+      "text": "數字媒體"
+    },
+    {
+      "avg_logprob": -0.370452,
+      "compression_ratio": 1.064516,
+      "end": 7747.86,
+      "no_speech_prob": 0.0,
+      "start": 7746.24,
+      "text": "數字通信"
+    },
+    {
+      "avg_logprob": -0.370452,
+      "compression_ratio": 1.064516,
+      "end": 7748.56,
+      "no_speech_prob": 0.0,
+      "start": 7747.86,
+      "text": "數字科技"
+    },
+    {
+      "avg_logprob": -0.279937,
+      "compression_ratio": 1.025,
+      "end": 7754.56,
+      "no_speech_prob": 0.0,
+      "start": 7748.56,
+      "text": "不能再讓中國人衝倒大清朝的負責"
+    },
+    {
+      "avg_logprob": -0.279937,
+      "compression_ratio": 1.025,
+      "end": 7759.3,
+      "no_speech_prob": 0.0,
+      "start": 7754.56,
+      "text": "我們要走在人類的科技的文明的最前端"
+    },
+    {
+      "avg_logprob": -0.279937,
+      "compression_ratio": 1.025,
+      "end": 7761.3,
+      "no_speech_prob": 0.0,
+      "start": 7759.3,
+      "text": "人家美國人都拍宇宙"
+    },
+    {
+      "avg_logprob": -0.46289,
+      "compression_ratio": 1.231788,
+      "end": 7765.34,
+      "no_speech_prob": 0.0,
+      "start": 7761.3,
+      "text": "360億光年前的照片都出來了"
+    },
+    {
+      "avg_logprob": -0.46289,
+      "compression_ratio": 1.231788,
+      "end": 7767.0,
+      "no_speech_prob": 0.0,
+      "start": 7765.34,
+      "text": "中國還圓珠筆"
+    },
+    {
+      "avg_logprob": -0.46289,
+      "compression_ratio": 1.231788,
+      "end": 7767.9,
+      "no_speech_prob": 0.0,
+      "start": 7767.0,
+      "text": "心都搞不出來"
+    },
+    {
+      "avg_logprob": -0.46289,
+      "compression_ratio": 1.231788,
+      "end": 7769.16,
+      "no_speech_prob": 0.0,
+      "start": 7767.9,
+      "text": "馬桶蓋都搞不出來"
+    },
+    {
+      "avg_logprob": -0.46289,
+      "compression_ratio": 1.231788,
+      "end": 7770.36,
+      "no_speech_prob": 0.0,
+      "start": 7769.16,
+      "text": "你還談什麼"
+    },
+    {
+      "avg_logprob": -0.46289,
+      "compression_ratio": 1.231788,
+      "end": 7771.74,
+      "no_speech_prob": 0.0,
+      "start": 7770.36,
+      "text": "一談就是什麼"
+    },
+    {
+      "avg_logprob": -0.46289,
+      "compression_ratio": 1.231788,
+      "end": 7772.94,
+      "no_speech_prob": 0.0,
+      "start": 7771.74,
+      "text": "福西啊"
+    },
+    {
+      "avg_logprob": -0.46289,
+      "compression_ratio": 1.231788,
+      "end": 7773.44,
+      "no_speech_prob": 0.0,
+      "start": 7772.94,
+      "text": "什麼什麼"
+    },
+    {
+      "avg_logprob": -0.46289,
+      "compression_ratio": 1.231788,
+      "end": 7774.16,
+      "no_speech_prob": 0.0,
+      "start": 7773.44,
+      "text": "遠古啊"
+    },
+    {
+      "avg_logprob": -0.46289,
+      "compression_ratio": 1.231788,
+      "end": 7774.44,
+      "no_speech_prob": 0.0,
+      "start": 7774.16,
+      "text": "什麼"
+    },
+    {
+      "avg_logprob": -0.46289,
+      "compression_ratio": 1.231788,
+      "end": 7775.54,
+      "no_speech_prob": 0.0,
+      "start": 7774.44,
+      "text": "周恩王啊"
+    },
+    {
+      "avg_logprob": -0.46289,
+      "compression_ratio": 1.231788,
+      "end": 7777.16,
+      "no_speech_prob": 0.0,
+      "start": 7775.54,
+      "text": "談啥啊"
+    },
+    {
+      "avg_logprob": -0.385793,
+      "compression_ratio": 1.248447,
+      "end": 7778.46,
+      "no_speech_prob": 0.0,
+      "start": 7777.16,
+      "text": "他什麼孔子"
+    },
+    {
+      "avg_logprob": -0.385793,
+      "compression_ratio": 1.248447,
+      "end": 7778.8,
+      "no_speech_prob": 0.0,
+      "start": 7778.46,
+      "text": "老子"
+    },
+    {
+      "avg_logprob": -0.385793,
+      "compression_ratio": 1.248447,
+      "end": 7779.56,
+      "no_speech_prob": 0.0,
+      "start": 7778.8,
+      "text": "你談什麼啊"
+    },
+    {
+      "avg_logprob": -0.385793,
+      "compression_ratio": 1.248447,
+      "end": 7779.86,
+      "no_speech_prob": 0.0,
+      "start": 7779.56,
+      "text": "你"
+    },
+    {
+      "avg_logprob": -0.385793,
+      "compression_ratio": 1.248447,
+      "end": 7782.7,
+      "no_speech_prob": 0.0,
+      "start": 7779.86,
+      "text": "什麼人類的宇宙的密碼"
+    },
+    {
+      "avg_logprob": -0.385793,
+      "compression_ratio": 1.248447,
+      "end": 7783.56,
+      "no_speech_prob": 0.0,
+      "start": 7782.7,
+      "text": "你大爺來的"
+    },
+    {
+      "avg_logprob": -0.385793,
+      "compression_ratio": 1.248447,
+      "end": 7785.02,
+      "no_speech_prob": 0.0,
+      "start": 7783.56,
+      "text": "連個台灣問題都解決不了"
+    },
+    {
+      "avg_logprob": -0.385793,
+      "compression_ratio": 1.248447,
+      "end": 7787.06,
+      "no_speech_prob": 0.0,
+      "start": 7785.02,
+      "text": "香港你都接受不了"
+    },
+    {
+      "avg_logprob": -0.385793,
+      "compression_ratio": 1.248447,
+      "end": 7788.66,
+      "no_speech_prob": 0.0,
+      "start": 7787.06,
+      "text": "你心中如此之狹隘"
+    },
+    {
+      "avg_logprob": -0.385793,
+      "compression_ratio": 1.248447,
+      "end": 7790.3,
+      "no_speech_prob": 0.0,
+      "start": 7788.66,
+      "text": "你還這麼宇宙密碼"
+    },
+    {
+      "avg_logprob": -0.385793,
+      "compression_ratio": 1.248447,
+      "end": 7791.1,
+      "no_speech_prob": 0.0,
+      "start": 7790.3,
+      "text": "你瘋了吧"
+    },
+    {
+      "avg_logprob": -0.747127,
+      "compression_ratio": 0.571429,
+      "end": 7793.1,
+      "no_speech_prob": 0.0,
+      "start": 7791.1,
+      "text": "你簡直是"
+    },
+    {
+      "avg_logprob": -0.417351,
+      "compression_ratio": 1.183784,
+      "end": 7821.6,
+      "no_speech_prob": 0.0,
+      "start": 7821.1,
+      "text": "好"
+    },
+    {
+      "avg_logprob": -0.417351,
+      "compression_ratio": 1.183784,
+      "end": 7822.1,
+      "no_speech_prob": 0.0,
+      "start": 7821.6,
+      "text": "好"
+    },
+    {
+      "avg_logprob": -0.417351,
+      "compression_ratio": 1.183784,
+      "end": 7828.1,
+      "no_speech_prob": 0.0,
+      "start": 7822.1,
+      "text": "哎呀"
+    },
+    {
+      "avg_logprob": -0.417351,
+      "compression_ratio": 1.183784,
+      "end": 7831.1,
+      "no_speech_prob": 0.0,
+      "start": 7828.1,
+      "text": "先大的國質啊"
+    },
+    {
+      "avg_logprob": -0.417351,
+      "compression_ratio": 1.183784,
+      "end": 7832.1,
+      "no_speech_prob": 0.0,
+      "start": 7831.1,
+      "text": "太奢侈了吧"
+    },
+    {
+      "avg_logprob": -0.417351,
+      "compression_ratio": 1.183784,
+      "end": 7835.1,
+      "no_speech_prob": 0.0,
+      "start": 7832.1,
+      "text": "弄點大陸的化學就喝就不錯了"
+    },
+    {
+      "avg_logprob": -0.417351,
+      "compression_ratio": 1.183784,
+      "end": 7836.1,
+      "no_speech_prob": 0.0,
+      "start": 7835.1,
+      "text": "文風"
+    },
+    {
+      "avg_logprob": -0.417351,
+      "compression_ratio": 1.183784,
+      "end": 7838.1,
+      "no_speech_prob": 0.0,
+      "start": 7836.1,
+      "text": "另外一個文風啊"
+    },
+    {
+      "avg_logprob": -0.417351,
+      "compression_ratio": 1.183784,
+      "end": 7840.1,
+      "no_speech_prob": 0.0,
+      "start": 7838.1,
+      "text": "打不死的小魚"
+    },
+    {
+      "avg_logprob": -0.417351,
+      "compression_ratio": 1.183784,
+      "end": 7842.1,
+      "no_speech_prob": 0.0,
+      "start": 7840.1,
+      "text": "小鬧不鬧在戰場上的弟兄"
+    },
+    {
+      "avg_logprob": -0.417351,
+      "compression_ratio": 1.183784,
+      "end": 7843.6,
+      "no_speech_prob": 0.0,
+      "start": 7842.1,
+      "text": "跟著維美教練"
+    },
+    {
+      "avg_logprob": -0.417351,
+      "compression_ratio": 1.183784,
+      "end": 7845.1,
+      "no_speech_prob": 0.0,
+      "start": 7843.6,
+      "text": "去滅共"
+    },
+    {
+      "avg_logprob": -0.417351,
+      "compression_ratio": 1.183784,
+      "end": 7847.1,
+      "no_speech_prob": 0.0,
+      "start": 7845.1,
+      "text": "火燒什麼沒看明白啊"
+    },
+    {
+      "avg_logprob": -0.417351,
+      "compression_ratio": 1.183784,
+      "end": 7849.1,
+      "no_speech_prob": 0.0,
+      "start": 7847.1,
+      "text": "啊"
+    },
+    {
+      "avg_logprob": -0.12755,
+      "compression_ratio": 0.982301,
+      "end": 7851.1,
+      "no_speech_prob": 0.0,
+      "start": 7849.1,
+      "text": "啊"
+    },
+    {
+      "avg_logprob": -0.12755,
+      "compression_ratio": 0.982301,
+      "end": 7852.1,
+      "no_speech_prob": 0.0,
+      "start": 7851.1,
+      "text": "兄弟姐妹們"
+    },
+    {
+      "avg_logprob": -0.12755,
+      "compression_ratio": 0.982301,
+      "end": 7853.1,
+      "no_speech_prob": 0.0,
+      "start": 7852.1,
+      "text": "今天的直播很愉快"
+    },
+    {
+      "avg_logprob": -0.12755,
+      "compression_ratio": 0.982301,
+      "end": 7854.1,
+      "no_speech_prob": 0.0,
+      "start": 7853.1,
+      "text": "咱們"
+    },
+    {
+      "avg_logprob": -0.12755,
+      "compression_ratio": 0.982301,
+      "end": 7855.1,
+      "no_speech_prob": 0.0,
+      "start": 7854.1,
+      "text": "星期三見"
+    },
+    {
+      "avg_logprob": -0.12755,
+      "compression_ratio": 0.982301,
+      "end": 7856.1,
+      "no_speech_prob": 0.0,
+      "start": 7855.1,
+      "text": "好吧"
+    },
+    {
+      "avg_logprob": -0.12755,
+      "compression_ratio": 0.982301,
+      "end": 7857.1,
+      "no_speech_prob": 0.0,
+      "start": 7856.1,
+      "text": "大家別忘了"
+    },
+    {
+      "avg_logprob": -0.12755,
+      "compression_ratio": 0.982301,
+      "end": 7859.1,
+      "no_speech_prob": 0.0,
+      "start": 7857.1,
+      "text": "不滅共啥都沒有啊"
+    },
+    {
+      "avg_logprob": -0.12755,
+      "compression_ratio": 0.982301,
+      "end": 7860.1,
+      "no_speech_prob": 0.0,
+      "start": 7859.1,
+      "text": "再見"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 12.318182,
+      "end": 7880.1,
+      "no_speech_prob": 0.0,
+      "start": 7879.1,
+      "text": "好"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 12.318182,
+      "end": 7880.8,
+      "no_speech_prob": 0.0,
+      "start": 7880.1,
+      "text": "好"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 12.318182,
+      "end": 7881.1,
+      "no_speech_prob": 0.0,
+      "start": 7880.8,
+      "text": "好"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 12.318182,
+      "end": 7881.7,
+      "no_speech_prob": 0.0,
+      "start": 7881.1,
+      "text": "好"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 12.318182,
+      "end": 7882.1,
+      "no_speech_prob": 0.0,
+      "start": 7881.7,
+      "text": "好"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 12.318182,
+      "end": 7882.68,
+      "no_speech_prob": 0.0,
+      "start": 7882.1,
+      "text": "好"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 12.318182,
+      "end": 7883.04,
+      "no_speech_prob": 0.0,
+      "start": 7882.68,
+      "text": "好"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 12.318182,
+      "end": 7883.1,
+      "no_speech_prob": 0.0,
+      "start": 7883.04,
+      "text": "好"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 12.318182,
+      "end": 7883.54,
+      "no_speech_prob": 0.0,
+      "start": 7883.1,
+      "text": "好"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 12.318182,
+      "end": 7883.98,
+      "no_speech_prob": 0.0,
+      "start": 7883.6,
+      "text": "好"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 12.318182,
+      "end": 7884.1,
+      "no_speech_prob": 0.0,
+      "start": 7884.08,
+      "text": "好"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 12.318182,
+      "end": 7884.4,
+      "no_speech_prob": 0.0,
+      "start": 7884.1,
+      "text": "好"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 12.318182,
+      "end": 7884.7,
+      "no_speech_prob": 0.0,
+      "start": 7884.48,
+      "text": "好"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 12.318182,
+      "end": 7884.98,
+      "no_speech_prob": 0.0,
+      "start": 7884.8,
+      "text": "cket"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 12.318182,
+      "end": 7885.1,
+      "no_speech_prob": 0.0,
+      "start": 7885.1,
+      "text": "好"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 12.318182,
+      "end": 7885.2,
+      "no_speech_prob": 0.0,
+      "start": 7885.1,
+      "text": "好"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 12.318182,
+      "end": 7885.38,
+      "no_speech_prob": 0.0,
+      "start": 7885.1,
+      "text": "好"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 12.318182,
+      "end": 7885.98,
+      "no_speech_prob": 0.0,
+      "start": 7885.58,
+      "text": "cket"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 12.318182,
+      "end": 7886.08,
+      "no_speech_prob": 0.0,
+      "start": 7886.08,
+      "text": "cket"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 12.318182,
+      "end": 7886.18,
+      "no_speech_prob": 0.0,
+      "start": 7886.1,
+      "text": "cket"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 12.318182,
+      "end": 7886.52,
+      "no_speech_prob": 0.0,
+      "start": 7886.1,
+      "text": "cket"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 12.318182,
+      "end": 7886.74,
+      "no_speech_prob": 0.0,
+      "start": 7886.56,
+      "text": "cket"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 12.318182,
+      "end": 7886.92,
+      "no_speech_prob": 0.0,
+      "start": 7886.82,
+      "text": "cket"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 12.318182,
+      "end": 7886.98,
+      "no_speech_prob": 0.0,
+      "start": 7886.92,
+      "text": "cket"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 12.318182,
+      "end": 7887.02,
+      "no_speech_prob": 0.0,
+      "start": 7886.98,
+      "text": "cket"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 12.318182,
+      "end": 7887.04,
+      "no_speech_prob": 0.0,
+      "start": 7887.02,
+      "text": "cket"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 12.318182,
+      "end": 7887.06,
+      "no_speech_prob": 0.0,
+      "start": 7887.04,
+      "text": "cket"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 12.318182,
+      "end": 7887.1,
+      "no_speech_prob": 0.0,
+      "start": 7887.06,
+      "text": "cket"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 12.318182,
+      "end": 7887.14,
+      "no_speech_prob": 0.0,
+      "start": 7887.1,
+      "text": "cket"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 12.318182,
+      "end": 7887.42,
+      "no_speech_prob": 0.0,
+      "start": 7887.1,
+      "text": "cket"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 12.318182,
+      "end": 7887.48,
+      "no_speech_prob": 0.0,
+      "start": 7887.42,
+      "text": "cket"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 12.318182,
+      "end": 7887.66,
+      "no_speech_prob": 0.0,
+      "start": 7887.48,
+      "text": "cket"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 12.318182,
+      "end": 7887.78,
+      "no_speech_prob": 0.0,
+      "start": 7887.66,
+      "text": "cket"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 12.318182,
+      "end": 7887.86,
+      "no_speech_prob": 0.0,
+      "start": 7887.78,
+      "text": "cket"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 12.318182,
+      "end": 7887.9,
+      "no_speech_prob": 0.0,
+      "start": 7887.86,
+      "text": "cket"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 12.318182,
+      "end": 7887.94,
+      "no_speech_prob": 0.0,
+      "start": 7887.9,
+      "text": "cket"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 12.318182,
+      "end": 7888.02,
+      "no_speech_prob": 0.0,
+      "start": 7887.94,
+      "text": "cket"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 12.318182,
+      "end": 7888.04,
+      "no_speech_prob": 0.0,
+      "start": 7888.02,
+      "text": "cket"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 12.318182,
+      "end": 7888.14,
+      "no_speech_prob": 0.0,
+      "start": 7888.04,
+      "text": "cket"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 12.318182,
+      "end": 7888.32,
+      "no_speech_prob": 0.0,
+      "start": 7888.14,
+      "text": "cket"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 12.318182,
+      "end": 7888.52,
+      "no_speech_prob": 0.0,
+      "start": 7888.22,
+      "text": "cket"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 12.318182,
+      "end": 7888.66,
+      "no_speech_prob": 0.0,
+      "start": 7888.5,
+      "text": "cket"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 12.318182,
+      "end": 7888.72,
+      "no_speech_prob": 0.0,
+      "start": 7888.66,
+      "text": "cket"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 12.318182,
+      "end": 7888.78,
+      "no_speech_prob": 0.0,
+      "start": 7888.72,
+      "text": "cket"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 12.318182,
+      "end": 7888.86,
+      "no_speech_prob": 0.0,
+      "start": 7888.78,
+      "text": "cket"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 12.318182,
+      "end": 7888.98,
+      "no_speech_prob": 0.0,
+      "start": 7888.86,
+      "text": "cket"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 12.318182,
+      "end": 7889.06,
+      "no_speech_prob": 0.0,
+      "start": 7888.98,
+      "text": "cket"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 12.318182,
+      "end": 7889.1,
+      "no_speech_prob": 0.0,
+      "start": 7889.06,
+      "text": "cket"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 12.318182,
+      "end": 7889.16,
+      "no_speech_prob": 0.0,
+      "start": 7889.1,
+      "text": "cket"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 12.318182,
+      "end": 7889.38,
+      "no_speech_prob": 0.0,
+      "start": 7889.16,
+      "text": "cket"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 12.318182,
+      "end": 7889.48,
+      "no_speech_prob": 0.0,
+      "start": 7889.42,
+      "text": "cket"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 12.318182,
+      "end": 7889.64,
+      "no_speech_prob": 0.0,
+      "start": 7889.48,
+      "text": "cket"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 12.318182,
+      "end": 7889.76,
+      "no_speech_prob": 0.0,
+      "start": 7889.64,
+      "text": "cket"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 12.318182,
+      "end": 7889.86,
+      "no_speech_prob": 0.0,
+      "start": 7889.76,
+      "text": "cket"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 12.318182,
+      "end": 7889.94,
+      "no_speech_prob": 0.0,
+      "start": 7889.86,
+      "text": "cket"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 12.318182,
+      "end": 7889.98,
+      "no_speech_prob": 0.0,
+      "start": 7889.94,
+      "text": "cket"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 12.318182,
+      "end": 7890.0,
+      "no_speech_prob": 0.0,
+      "start": 7889.98,
+      "text": "cket"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 12.318182,
+      "end": 7890.06,
+      "no_speech_prob": 0.0,
+      "start": 7890.0,
+      "text": "cket"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 12.318182,
+      "end": 7890.16,
+      "no_speech_prob": 0.0,
+      "start": 7890.06,
+      "text": "cket"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 12.318182,
+      "end": 7890.26,
+      "no_speech_prob": 0.0,
+      "start": 7890.16,
+      "text": "cket"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 12.318182,
+      "end": 7890.4,
+      "no_speech_prob": 0.0,
+      "start": 7890.26,
+      "text": "cket"
+    },
+    {
+      "avg_logprob": -0.740265,
+      "compression_ratio": 1.008,
+      "end": 7914.9,
+      "no_speech_prob": 0.0,
+      "start": 7909.1,
+      "text": "一時路別免斷"
+    },
+    {
+      "avg_logprob": -0.740265,
+      "compression_ratio": 1.008,
+      "end": 7921.3,
+      "no_speech_prob": 0.0,
+      "start": 7914.9,
+      "text": "若人是既夢 陪你水漫漫"
+    },
+    {
+      "avg_logprob": -0.740265,
+      "compression_ratio": 1.008,
+      "end": 7926.3,
+      "no_speech_prob": 0.0,
+      "start": 7921.3,
+      "text": "無分有替一場就操人"
+    },
+    {
+      "avg_logprob": -0.740265,
+      "compression_ratio": 1.008,
+      "end": 7932.3,
+      "no_speech_prob": 0.0,
+      "start": 7926.3,
+      "text": "人生 可比是海上的風浪"
+    },
+    {
+      "avg_logprob": -0.740265,
+      "compression_ratio": 1.008,
+      "end": 7938.3,
+      "no_speech_prob": 0.0,
+      "start": 7932.3,
+      "text": "有時既 有時路"
+    },
+    {
+      "avg_logprob": -0.895778,
+      "compression_ratio": 0.926316,
+      "end": 7947.3,
+      "no_speech_prob": 0.0,
+      "start": 7938.3,
+      "text": "好運 海運輪 總也要照去甘來命"
+    },
+    {
+      "avg_logprob": -0.895778,
+      "compression_ratio": 0.926316,
+      "end": 7952.7,
+      "no_speech_prob": 0.0,
+      "start": 7947.3,
+      "text": "三分天主定 一分可怕拼"
+    },
+    {
+      "avg_logprob": -0.895778,
+      "compression_ratio": 0.926316,
+      "end": 7959.3,
+      "no_speech_prob": 0.0,
+      "start": 7952.7,
+      "text": "愛定 吃會定"
+    },
+    {
+      "avg_logprob": -0.397427,
+      "compression_ratio": 0.970297,
+      "end": 7979.3,
+      "no_speech_prob": 0.0,
+      "start": 7968.3,
+      "text": "一時是一面願望 一時路別免斷"
+    },
+    {
+      "avg_logprob": -0.397427,
+      "compression_ratio": 0.970297,
+      "end": 7986.3,
+      "no_speech_prob": 0.0,
+      "start": 7979.3,
+      "text": "若人是既夢 陪你水漫漫"
+    },
+    {
+      "avg_logprob": -0.397427,
+      "compression_ratio": 0.970297,
+      "end": 7991.3,
+      "no_speech_prob": 0.0,
+      "start": 7986.3,
+      "text": "無分有替一場就操人"
+    },
+    {
+      "avg_logprob": -0.260603,
+      "compression_ratio": 0.926316,
+      "end": 7997.3,
+      "no_speech_prob": 0.0,
+      "start": 7991.3,
+      "text": "人生 可比是海上的風浪"
+    },
+    {
+      "avg_logprob": -0.260603,
+      "compression_ratio": 0.926316,
+      "end": 8003.3,
+      "no_speech_prob": 0.0,
+      "start": 7997.3,
+      "text": "有時既 有時路"
+    },
+    {
+      "avg_logprob": -0.260603,
+      "compression_ratio": 0.926316,
+      "end": 8010.3,
+      "no_speech_prob": 0.0,
+      "start": 8003.3,
+      "text": "好運 愛運 總也要照去甘來聽"
+    },
+    {
+      "avg_logprob": -0.292475,
+      "compression_ratio": 0.909091,
+      "end": 8018.3,
+      "no_speech_prob": 0.0,
+      "start": 8010.3,
+      "text": "三分天主定 一分可怕拼"
+    },
+    {
+      "avg_logprob": -0.292475,
+      "compression_ratio": 0.909091,
+      "end": 8023.3,
+      "no_speech_prob": 0.0,
+      "start": 8018.3,
+      "text": "愛拼 愛吃會拼"
+    },
+    {
+      "avg_logprob": -0.583517,
+      "compression_ratio": 1.166667,
+      "end": 8032.3,
+      "no_speech_prob": 0.0,
+      "start": 8023.3,
+      "text": "一時是一面願望 一時路別免斷"
+    },
+    {
+      "avg_logprob": -0.583517,
+      "compression_ratio": 1.166667,
+      "end": 8033.3,
+      "no_speech_prob": 0.0,
+      "start": 8032.3,
+      "text": "一時路 免斷 免斷"
+    },
+    {
+      "avg_logprob": -1.198994,
+      "compression_ratio": 3.993103,
+      "end": 8035.3,
+      "no_speech_prob": 0.0,
+      "start": 8033.3,
+      "text": "你一年願望 人家是一中的那"
+    },
+    {
+      "avg_logprob": -1.198994,
+      "compression_ratio": 3.993103,
+      "end": 8036.3,
+      "no_speech_prob": 0.0,
+      "start": 8035.3,
+      "text": "一到佳 乃兺 迪你一到佬"
+    },
+    {
+      "avg_logprob": -1.198994,
+      "compression_ratio": 3.993103,
+      "end": 8037.3,
+      "no_speech_prob": 0.0,
+      "start": 8036.3,
+      "text": "你 看不可 Davo 兵斷"
+    },
+    {
+      "avg_logprob": -1.198994,
+      "compression_ratio": 3.993103,
+      "end": 8038.06,
+      "no_speech_prob": 0.0,
+      "start": 8037.3,
+      "text": "你 看不可有 card 個好機"
+    },
+    {
+      "avg_logprob": -1.198994,
+      "compression_ratio": 3.993103,
+      "end": 8038.3,
+      "no_speech_prob": 0.0,
+      "start": 8038.06,
+      "text": "你 看不可不可 love"
+    },
+    {
+      "avg_logprob": -1.198994,
+      "compression_ratio": 3.993103,
+      "end": 8039.3,
+      "no_speech_prob": 0.0,
+      "start": 8038.3,
+      "text": "你 看不可不可…"
+    },
+    {
+      "avg_logprob": -1.809231,
+      "compression_ratio": 1.936073,
+      "end": 8044.68,
+      "no_speech_prob": 0.0,
+      "start": 8039.3,
+      "text": "一漫大 麥眶的巡 travel"
+    },
+    {
+      "avg_logprob": -1.809231,
+      "compression_ratio": 1.936073,
+      "end": 8056.14,
+      "no_speech_prob": 0.0,
+      "start": 8046.08,
+      "text": "這人想 可怡是海上的 不然有時旁有時路"
+    },
+    {
+      "avg_logprob": -1.809231,
+      "compression_ratio": 1.936073,
+      "end": 8061.76,
+      "no_speech_prob": 0.0,
+      "start": 8057.22,
+      "text": "好 convers 歸倩 做邺 changes the way to the day"
+    },
+    {
+      "avg_logprob": -1.809231,
+      "compression_ratio": 1.936073,
+      "end": 8064.76,
+      "no_speech_prob": 0.0,
+      "start": 8061.76,
+      "text": "說不斷亡的一年 沒在這人 很可惡"
+    },
+    {
+      "avg_logprob": -1.809231,
+      "compression_ratio": 1.936073,
+      "end": 8065.36,
+      "no_speech_prob": 0.0,
+      "start": 8064.76,
+      "text": "來逢 可惡 可惡 可惡 可惡"
+    },
+    {
+      "avg_logprob": -1.809231,
+      "compression_ratio": 1.936073,
+      "end": 8065.6,
+      "no_speech_prob": 0.0,
+      "start": 8065.36,
+      "text": "有這來的 可惡 可惡 可惡 可惡"
+    },
+    {
+      "avg_logprob": -1.809231,
+      "compression_ratio": 1.936073,
+      "end": 8065.82,
+      "no_speech_prob": 0.0,
+      "start": 8065.6,
+      "text": "復 可惡 可惡 可惡 可惡 可惡 可惡"
+    },
+    {
+      "avg_logprob": -1.809231,
+      "compression_ratio": 1.936073,
+      "end": 8065.9,
+      "no_speech_prob": 0.0,
+      "start": 8065.82,
+      "text": "復 可惡 可惡 可惡 可惡 可惡 可惡 可惡"
+    },
+    {
+      "avg_logprob": -1.809231,
+      "compression_ratio": 1.936073,
+      "end": 8065.9,
+      "no_speech_prob": 0.0,
+      "start": 8065.9,
+      "text": "好亡 可惡 可惡 可惡 可惡 可惡 可惡 可惡 可惡"
+    },
+    {
+      "avg_logprob": -0.719239,
+      "compression_ratio": 0.90566,
+      "end": 8077.86,
+      "no_speech_prob": 0.0,
+      "start": 8065.86,
+      "text": "三分天主定 一分可打拼 愛拼 吃會拼"
+    },
+    {
+      "avg_logprob": -1.332105,
+      "compression_ratio": 4.694915,
+      "end": 8098.62,
+      "no_speech_prob": 0.0,
+      "start": 8095.86,
+      "text": "research 寧大 Ent ér 怦"
+    },
+    {
+      "avg_logprob": -1.332105,
+      "compression_ratio": 4.694915,
+      "end": 8099.6,
+      "no_speech_prob": 0.0,
+      "start": 8098.62,
+      "text": "好 歸 哲"
+    },
+    {
+      "avg_logprob": -1.332105,
+      "compression_ratio": 4.694915,
+      "end": 8100.32,
+      "no_speech_prob": 0.0,
+      "start": 8099.6,
+      "text": "好 哲 哲"
+    },
+    {
+      "avg_logprob": -1.332105,
+      "compression_ratio": 4.694915,
+      "end": 8100.9,
+      "no_speech_prob": 0.0,
+      "start": 8100.32,
+      "text": "好 哲 哲"
+    },
+    {
+      "avg_logprob": -1.332105,
+      "compression_ratio": 4.694915,
+      "end": 8101.32,
+      "no_speech_prob": 0.0,
+      "start": 8100.9,
+      "text": "好 哲"
+    },
+    {
+      "avg_logprob": -1.332105,
+      "compression_ratio": 4.694915,
+      "end": 8101.8,
+      "no_speech_prob": 0.0,
+      "start": 8101.32,
+      "text": "好 哲"
+    },
+    {
+      "avg_logprob": -1.332105,
+      "compression_ratio": 4.694915,
+      "end": 8102.26,
+      "no_speech_prob": 0.0,
+      "start": 8101.8,
+      "text": "好 哲"
+    },
+    {
+      "avg_logprob": -1.332105,
+      "compression_ratio": 4.694915,
+      "end": 8102.62,
+      "no_speech_prob": 0.0,
+      "start": 8102.26,
+      "text": "好 哲"
+    },
+    {
+      "avg_logprob": -1.332105,
+      "compression_ratio": 4.694915,
+      "end": 8102.9,
+      "no_speech_prob": 0.0,
+      "start": 8102.62,
+      "text": "好 哲"
+    },
+    {
+      "avg_logprob": -1.332105,
+      "compression_ratio": 4.694915,
+      "end": 8103.26,
+      "no_speech_prob": 0.0,
+      "start": 8102.9,
+      "text": "好 哲"
+    },
+    {
+      "avg_logprob": -1.332105,
+      "compression_ratio": 4.694915,
+      "end": 8103.56,
+      "no_speech_prob": 0.0,
+      "start": 8103.26,
+      "text": "好 哲"
+    },
+    {
+      "avg_logprob": -1.332105,
+      "compression_ratio": 4.694915,
+      "end": 8103.96,
+      "no_speech_prob": 0.0,
+      "start": 8103.56,
+      "text": "好 哲"
+    },
+    {
+      "avg_logprob": -1.332105,
+      "compression_ratio": 4.694915,
+      "end": 8104.22,
+      "no_speech_prob": 0.0,
+      "start": 8103.96,
+      "text": "好 哲"
+    },
+    {
+      "avg_logprob": -1.332105,
+      "compression_ratio": 4.694915,
+      "end": 8104.48,
+      "no_speech_prob": 0.0,
+      "start": 8104.22,
+      "text": "好 哲"
+    },
+    {
+      "avg_logprob": -1.332105,
+      "compression_ratio": 4.694915,
+      "end": 8104.72,
+      "no_speech_prob": 0.0,
+      "start": 8104.48,
+      "text": "好 哲"
+    },
+    {
+      "avg_logprob": -1.332105,
+      "compression_ratio": 4.694915,
+      "end": 8104.96,
+      "no_speech_prob": 0.0,
+      "start": 8104.72,
+      "text": "好 哲"
+    },
+    {
+      "avg_logprob": -1.332105,
+      "compression_ratio": 4.694915,
+      "end": 8105.2,
+      "no_speech_prob": 0.0,
+      "start": 8104.96,
+      "text": "好 哲"
+    },
+    {
+      "avg_logprob": -1.332105,
+      "compression_ratio": 4.694915,
+      "end": 8105.42,
+      "no_speech_prob": 0.0,
+      "start": 8105.2,
+      "text": "好 哲"
+    },
+    {
+      "avg_logprob": -1.332105,
+      "compression_ratio": 4.694915,
+      "end": 8105.72,
+      "no_speech_prob": 0.0,
+      "start": 8105.42,
+      "text": "好 哲"
+    },
+    {
+      "avg_logprob": -1.332105,
+      "compression_ratio": 4.694915,
+      "end": 8106.06,
+      "no_speech_prob": 0.0,
+      "start": 8105.72,
+      "text": "好 哲"
+    },
+    {
+      "avg_logprob": -1.332105,
+      "compression_ratio": 4.694915,
+      "end": 8106.22,
+      "no_speech_prob": 0.0,
+      "start": 8106.06,
+      "text": "好 哲"
+    },
+    {
+      "avg_logprob": -1.332105,
+      "compression_ratio": 4.694915,
+      "end": 8106.34,
+      "no_speech_prob": 0.0,
+      "start": 8106.22,
+      "text": "好 哲"
+    },
+    {
+      "avg_logprob": -1.332105,
+      "compression_ratio": 4.694915,
+      "end": 8106.5,
+      "no_speech_prob": 0.0,
+      "start": 8106.34,
+      "text": "好 哲"
+    },
+    {
+      "avg_logprob": -1.332105,
+      "compression_ratio": 4.694915,
+      "end": 8106.7,
+      "no_speech_prob": 0.0,
+      "start": 8106.5,
+      "text": "好 哲"
+    },
+    {
+      "avg_logprob": -1.332105,
+      "compression_ratio": 4.694915,
+      "end": 8106.9,
+      "no_speech_prob": 0.0,
+      "start": 8106.7,
+      "text": "好 哲"
+    },
+    {
+      "avg_logprob": -1.332105,
+      "compression_ratio": 4.694915,
+      "end": 8107.08,
+      "no_speech_prob": 0.0,
+      "start": 8106.9,
+      "text": "好 哲"
+    },
+    {
+      "avg_logprob": -1.332105,
+      "compression_ratio": 4.694915,
+      "end": 8107.26,
+      "no_speech_prob": 0.0,
+      "start": 8107.08,
+      "text": "好 哲"
+    },
+    {
+      "avg_logprob": -1.332105,
+      "compression_ratio": 4.694915,
+      "end": 8107.46,
+      "no_speech_prob": 0.0,
+      "start": 8107.26,
+      "text": "好 哲"
+    },
+    {
+      "avg_logprob": -1.332105,
+      "compression_ratio": 4.694915,
+      "end": 8107.7,
+      "no_speech_prob": 0.0,
+      "start": 8107.46,
+      "text": "好 哲"
+    },
+    {
+      "avg_logprob": -1.332105,
+      "compression_ratio": 4.694915,
+      "end": 8108.02,
+      "no_speech_prob": 0.0,
+      "start": 8107.7,
+      "text": "好 哲"
+    },
+    {
+      "avg_logprob": -1.332105,
+      "compression_ratio": 4.694915,
+      "end": 8108.14,
+      "no_speech_prob": 0.0,
+      "start": 8108.02,
+      "text": "好 哲"
+    },
+    {
+      "avg_logprob": -1.332105,
+      "compression_ratio": 4.694915,
+      "end": 8108.24,
+      "no_speech_prob": 0.0,
+      "start": 8108.14,
+      "text": "好 哲"
+    },
+    {
+      "avg_logprob": -1.332105,
+      "compression_ratio": 4.694915,
+      "end": 8108.34,
+      "no_speech_prob": 0.0,
+      "start": 8108.24,
+      "text": "好 哲"
+    },
+    {
+      "avg_logprob": -1.332105,
+      "compression_ratio": 4.694915,
+      "end": 8108.46,
+      "no_speech_prob": 0.0,
+      "start": 8108.34,
+      "text": "好 哲"
+    }
+  ],
+  "text": "请不吝点赞 订阅 转发 打赏支持明镜与点点栏目请不吝点赞 订阅 转发 打赏支持明镜与点点栏目历史铭记文化萧萧古修文成勺子兴高作型老皮匠自由女灯江玉山悠悠高作型自由女神文东大马小淳不淳向日葵石榴Robin雪飞文化豹之兰姬姬高明灭贡小哥七七四十九三母海之兰跟着没名字三母兄来了英兵那天这个这个三母那天给他留英文飞飞秀的时候留英文不是我写的这是一个我家人写的所以叫三母安寇三母而且他跟三母握过手说三母的手特别软超级性感后来他就留言安寇三母但三母不知道他是谁当时就在做一起了你很惦 Or我看 begin我看我看ana我看我看我看我看我看我看我看我看我看我看我看我看我看我看我看我看我看我看 Ten有我看我看我看我看春風 春風 潘魯灣兄弟 路過的風七七 龍小寶太棒了今天的直播這個感覺特別好 特別好希望兄弟姐妹們咱們就是非常重要啊再次感謝整個的我們的小福利 三漂先生泰山老兄 頑童整理 三張太棒了 太棒了傻都不佛了接下來臺灣的問題 我再說一句臺灣的問題會是一個死不死活不活別以為說美國什麼中共不接美國電話來 扯蛋的事兒美國就希望你共產黨現在走向瘋狂就希望你封鎖臺灣誰告訴大家的從今年三月份 七個說Nancy Pelosi要訪問臺灣連美國人都罵我歐洲人都罵我我們歐洲的團隊說郭先生 你這不能這太大了 我們都不知道 你怎麼會知道這全是歐洲人 都是歐洲的政治家族後來我說是 我說四月份去不了共產黨哀求人家八月份行不行六月份或八月份結果六月份大家知道陽性最後八月份去了我再告訴大家今天再告訴大家一個你可能無法相信的事實你可能很難相信的我再告訴大家 關於臺灣就臺灣的賣台賊能把臺灣的蔡英文總統和Nancy Pelosi訪台所有的習事情即時地告訴了中共而且給中共出爛招你要禁止臺灣的一切什麼鳳梨酥啊什麼水果啊什麼東西進大陸啊他們就會跪下臺灣在朝興城捐了一億美元之後竟然有人說你們要開始懲罰臺灣讓它會跪下什麼這原材料那簡直是摟到爆了但這一切共產黨得到的信息同樣美國都知道就是美國是建立的臺灣和大陸之間情報最高端當然分享給澳大利亞日本所以共產黨想對臺灣的行動想封鎖臺灣在黨內引起了巨大的起義它如果真的封鎖臺灣美軍高興還罷不得呢美日澳一定行動把它剷平它封不封臺灣都會把他南海把他建那個破島給他幹掉然後馬六甲海峽所有的石油整個運輸圈全給他打破然後讓臺灣人事實上的獨立誰告訴我李根浩我今天最後告訴大家注意李根浩別看李根浩現在待在臺灣跪一段就會離開離開以後再殺回回馬槍李根浩就希望共產黨來碰瓷了而且李根浩周圍的護衛艦查一查和李根浩的戰略武器查一查還有現在美軍派往臺灣海峽東海南海的武器有什麼變化你很難想就在美國在全世界所有媒體上說中共不理我們吶不接我們電話呀不配合呀我求求你了中共接我電話吧就像奈斯普羅斯的議長到臺灣一樣中共當官員說你知道嗎Nancy各種渠道向中共來交易釋放民運人士就可以不來臺灣就是共產黨這種自淫自騙互相欺騙你都能看明白接下來人家美國就順著你這個排打讓你這個民族主義那小粉紅們打自己的臉抽自己的臉你抽吧你等著吧你只要有臉抽說明你還活著希望你還有幾次抽你的臉無知愚蠢的代殺的豬你不知道你咋回事呢你連處奴都不配你要明白一個道理任何國家的人民他所忠於的土地和國家是他那塊土地和上天賦予的人權天命人壽這個中間不存在任何黨任何組織高於你的父母高於你的人權而共產黨讓你說爹親娘親不如黨親我耳你八倍蠕如共產黨是吧這是慘無人道的什麼叫爹親娘親不是黨親你爹你媽呢你這石頭上蹦出來的這個世界沒有比爹親娘親的這就是兄弟姐妹們要記住這些小粉紅還有所有中國人民要起碼嘗試你不懂一個不論任何黨派任何宗教不要爹娘的不要老公要丈夫要家人要孩子的你就是個媽媽蛋老天一定會消滅這些邪惡的組織的數字化時代會讓很多邪惡消失在人間而且就是兩三年的事不會有多長時間新中國聯邦人最重要的是愛自己的戰友忠於自己的危真不破發自內心的相信只有消滅共產黨我們就是世界最牛的人吳苗吳苗吳苗你有戰友你有一個新的國家我們不希望任何人來認可我們我們只希望中國人認可我們我們希望得到中國同胞的承認這是首要重要全世界都認可我們新中聯邦中國人恨我們有用嗎很多中國人過去的幾十年自動的魔道以為得洋人加持你就會成功胡扯只有得到中國人認可我們才有未來而且靠的就是我們未來的數字貨幣數字媒體數字通信數字科技不能再讓中國人衝倒大清朝的負責我們要走在人類的科技的文明的最前端人家美國人都拍宇宙360億光年前的照片都出來了中國還圓珠筆心都搞不出來馬桶蓋都搞不出來你還談什麼一談就是什麼福西啊什麼什麼遠古啊什麼周恩王啊談啥啊他什麼孔子老子你談什麼啊你什麼人類的宇宙的密碼你大爺來的連個台灣問題都解決不了香港你都接受不了你心中如此之狹隘你還這麼宇宙密碼你瘋了吧你簡直是好好哎呀先大的國質啊太奢侈了吧弄點大陸的化學就喝就不錯了文風另外一個文風啊打不死的小魚小鬧不鬧在戰場上的弟兄跟著維美教練去滅共火燒什麼沒看明白啊啊啊兄弟姐妹們今天的直播很愉快咱們星期三見好吧大家別忘了不滅共啥都沒有啊再見好好好好好好好好好好好好好cket好好好cketcketcketcketcketcketcketcketcketcketcketcketcketcketcketcketcketcketcketcketcketcketcketcketcketcketcketcketcketcketcketcketcketcketcketcketcketcketcketcketcketcketcketcket一時路別免斷若人是既夢 陪你水漫漫無分有替一場就操人人生 可比是海上的風浪有時既 有時路好運 海運輪 總也要照去甘來命三分天主定 一分可怕拼愛定 吃會定一時是一面願望 一時路別免斷若人是既夢 陪你水漫漫無分有替一場就操人人生 可比是海上的風浪有時既 有時路好運 愛運 總也要照去甘來聽三分天主定 一分可怕拼愛拼 愛吃會拼一時是一面願望 一時路別免斷一時路 免斷 免斷你一年願望 人家是一中的那一到佳 乃兺 迪你一到佬你 看不可 Davo 兵斷你 看不可有 card 個好機你 看不可不可 love你 看不可不可…一漫大 麥眶的巡 travel這人想 可怡是海上的 不然有時旁有時路好 convers 歸倩 做邺 changes the way to the day說不斷亡的一年 沒在這人 很可惡來逢 可惡 可惡 可惡 可惡有這來的 可惡 可惡 可惡 可惡復 可惡 可惡 可惡 可惡 可惡 可惡復 可惡 可惡 可惡 可惡 可惡 可惡 可惡好亡 可惡 可惡 可惡 可惡 可惡 可惡 可惡 可惡三分天主定 一分可打拼 愛拼 吃會拼 research 寧大 Ent ér 怦好 歸 哲好 哲 哲好 哲 哲好 哲好 哲好 哲好 哲好 哲好 哲好 哲好 哲好 哲好 哲好 哲好 哲好 哲好 哲好 哲好 哲好 哲好 哲好 哲好 哲好 哲好 哲好 哲好 哲好 哲好 哲好 哲好 哲好 哲好 哲"
+}
