@@ -1,0 +1,1376 @@
+{
+  "chunk_audio_sha256": "1858ca840a11a9fee4662c5a863274e1ff64fbab4002372564a16864490dfb7d",
+  "chunk_index": 5,
+  "completed_at": "2026-10-28T16:53:22Z",
+  "language": "zh",
+  "live_id": "LIVE_20220910_001",
+  "media_committed_to_git": false,
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "offset_sec": 4500,
+  "paid_api_used": false,
+  "processing_location": "github-hosted-macos-arm64",
+  "schema_version": "cloud-asr-chunk-v1",
+  "segments": [
+    {
+      "avg_logprob": -0.499034,
+      "compression_ratio": 0.891089,
+      "end": 4507.68,
+      "no_speech_prob": 0.0,
+      "start": 4500.0,
+      "text": "天开 神主臣服善恶"
+    },
+    {
+      "avg_logprob": -0.499034,
+      "compression_ratio": 0.891089,
+      "end": 4517.28,
+      "no_speech_prob": 0.0,
+      "start": 4507.68,
+      "text": "诺雅迎舟后明 日月有安排"
+    },
+    {
+      "avg_logprob": -0.499034,
+      "compression_ratio": 0.891089,
+      "end": 4529.98,
+      "no_speech_prob": 0.0,
+      "start": 4517.28,
+      "text": "我真逃生梦 烦鸟总乎才"
+    },
+    {
+      "avg_logprob": -0.500472,
+      "compression_ratio": 0.897196,
+      "end": 4539.2,
+      "no_speech_prob": 0.0,
+      "start": 4529.98,
+      "text": "草江湖 修世道随重来"
+    },
+    {
+      "avg_logprob": -0.500472,
+      "compression_ratio": 0.897196,
+      "end": 4549.06,
+      "no_speech_prob": 0.0,
+      "start": 4539.2,
+      "text": "星辰会落平野 今未恋载"
+    },
+    {
+      "avg_logprob": -0.500472,
+      "compression_ratio": 0.897196,
+      "end": 4553.6,
+      "no_speech_prob": 0.0,
+      "start": 4549.06,
+      "text": "守我高宁一马 且待此行两种"
+    },
+    {
+      "avg_logprob": -0.501234,
+      "compression_ratio": 0.851852,
+      "end": 4562.82,
+      "no_speech_prob": 0.0,
+      "start": 4553.6,
+      "text": "还不过情怀 若守彩虹月"
+    },
+    {
+      "avg_logprob": -0.501234,
+      "compression_ratio": 0.851852,
+      "end": 4568.82,
+      "no_speech_prob": 0.0,
+      "start": 4562.82,
+      "text": "还不作心海"
+    },
+    {
+      "avg_logprob": -0.578389,
+      "compression_ratio": 0.738095,
+      "end": 4578.04,
+      "no_speech_prob": 0.0,
+      "start": 4568.82,
+      "text": "万种风沉醉 千丈浪重迈"
+    },
+    {
+      "avg_logprob": -0.104381,
+      "compression_ratio": 0.738095,
+      "end": 4587.26,
+      "no_speech_prob": 0.0,
+      "start": 4578.04,
+      "text": "万种风沉醉 千丈浪重迈"
+    },
+    {
+      "avg_logprob": -0.122592,
+      "compression_ratio": 0.738095,
+      "end": 4596.48,
+      "no_speech_prob": 0.0,
+      "start": 4587.26,
+      "text": "万种风沉醉 千丈浪重迈"
+    },
+    {
+      "avg_logprob": -0.572798,
+      "compression_ratio": 0.88172,
+      "end": 4605.7,
+      "no_speech_prob": 0.0,
+      "start": 4596.48,
+      "text": "明天开 诸风飞里 寒水 昂首解天开"
+    },
+    {
+      "avg_logprob": -0.228544,
+      "compression_ratio": 1.028986,
+      "end": 4614.92,
+      "no_speech_prob": 0.0,
+      "start": 4605.7,
+      "text": "神主臣服善恶 神主臣服善恶"
+    },
+    {
+      "avg_logprob": -0.228544,
+      "compression_ratio": 1.028986,
+      "end": 4618.92,
+      "no_speech_prob": 0.0,
+      "start": 4614.92,
+      "text": "诺雅迎舟后明 日月有安排"
+    },
+    {
+      "avg_logprob": -0.396505,
+      "compression_ratio": 0.796296,
+      "end": 4628.14,
+      "no_speech_prob": 0.0,
+      "start": 4618.92,
+      "text": "也要安排 我真逃生梦"
+    },
+    {
+      "avg_logprob": -0.396505,
+      "compression_ratio": 0.796296,
+      "end": 4635.14,
+      "no_speech_prob": 0.0,
+      "start": 4628.14,
+      "text": "翻鸟总不猜"
+    },
+    {
+      "avg_logprob": -0.394894,
+      "compression_ratio": 0.835821,
+      "end": 4644.36,
+      "no_speech_prob": 0.0,
+      "start": 4635.14,
+      "text": "草江湖 千丈浪重来"
+    },
+    {
+      "avg_logprob": -0.394894,
+      "compression_ratio": 0.835821,
+      "end": 4654.36,
+      "no_speech_prob": 0.0,
+      "start": 4644.36,
+      "text": "星辰会落平野 今未恋载"
+    },
+    {
+      "avg_logprob": -0.412653,
+      "compression_ratio": 0.929204,
+      "end": 4658.96,
+      "no_speech_prob": 0.0,
+      "start": 4654.36,
+      "text": "少我高宁一马 且待此行两种"
+    },
+    {
+      "avg_logprob": -0.412653,
+      "compression_ratio": 0.929204,
+      "end": 4667.92,
+      "no_speech_prob": 0.0,
+      "start": 4658.96,
+      "text": "光天的情怀 若守彩虹月"
+    },
+    {
+      "avg_logprob": -0.412653,
+      "compression_ratio": 0.929204,
+      "end": 4674.58,
+      "no_speech_prob": 0.0,
+      "start": 4667.92,
+      "text": "光顾作心海"
+    },
+    {
+      "avg_logprob": -0.412653,
+      "compression_ratio": 0.929204,
+      "end": 4681.24,
+      "no_speech_prob": 0.0,
+      "start": 4674.58,
+      "text": "草江湖 修世道随"
+    },
+    {
+      "avg_logprob": -0.321547,
+      "compression_ratio": 0.921739,
+      "end": 4693.78,
+      "no_speech_prob": 0.0,
+      "start": 4681.24,
+      "text": "从来 星辰平落平野 今未恋载"
+    },
+    {
+      "avg_logprob": -0.321547,
+      "compression_ratio": 0.921739,
+      "end": 4698.4,
+      "no_speech_prob": 0.0,
+      "start": 4693.78,
+      "text": "守我高宁一马 且待此行两种"
+    },
+    {
+      "avg_logprob": -0.321547,
+      "compression_ratio": 0.921739,
+      "end": 4707.1,
+      "no_speech_prob": 0.0,
+      "start": 4698.4,
+      "text": "光天的情怀 若守彩虹月"
+    },
+    {
+      "avg_logprob": -0.463177,
+      "compression_ratio": 1.022727,
+      "end": 4713.5,
+      "no_speech_prob": 0.0,
+      "start": 4707.1,
+      "text": "光顾作心海"
+    },
+    {
+      "avg_logprob": -0.463177,
+      "compression_ratio": 1.022727,
+      "end": 4718.1,
+      "no_speech_prob": 0.0,
+      "start": 4713.5,
+      "text": "若守彩虹月"
+    },
+    {
+      "avg_logprob": -0.463177,
+      "compression_ratio": 1.022727,
+      "end": 4729.1,
+      "no_speech_prob": 0.0,
+      "start": 4718.1,
+      "text": "光顾作心海"
+    },
+    {
+      "avg_logprob": -0.301729,
+      "compression_ratio": 1.069444,
+      "end": 4737.1,
+      "no_speech_prob": 0.0,
+      "start": 4729.1,
+      "text": "若守彩虹月"
+    },
+    {
+      "avg_logprob": -0.301729,
+      "compression_ratio": 1.069444,
+      "end": 4739.1,
+      "no_speech_prob": 0.0,
+      "start": 4737.1,
+      "text": "听 每次听到这种动人的歌"
+    },
+    {
+      "avg_logprob": -0.301729,
+      "compression_ratio": 1.069444,
+      "end": 4740.1,
+      "no_speech_prob": 0.0,
+      "start": 4739.1,
+      "text": "都要摸一摸耳朵"
+    },
+    {
+      "avg_logprob": -0.301729,
+      "compression_ratio": 1.069444,
+      "end": 4743.18,
+      "no_speech_prob": 0.0,
+      "start": 4740.1,
+      "text": "因为耳朵好像怀孕了"
+    },
+    {
+      "avg_logprob": -0.301729,
+      "compression_ratio": 1.069444,
+      "end": 4747.54,
+      "no_speech_prob": 0.0,
+      "start": 4743.18,
+      "text": "太感谢文艺给我们带来的这个美妙的歌声了"
+    },
+    {
+      "avg_logprob": -0.230876,
+      "compression_ratio": 1.14433,
+      "end": 4751.84,
+      "no_speech_prob": 0.0,
+      "start": 4747.54,
+      "text": "每次听到文艺唱歌真的是心潮澎湃"
+    },
+    {
+      "avg_logprob": -0.230876,
+      "compression_ratio": 1.14433,
+      "end": 4753.54,
+      "no_speech_prob": 0.0,
+      "start": 4751.84,
+      "text": "而且动人"
+    },
+    {
+      "avg_logprob": -0.230876,
+      "compression_ratio": 1.14433,
+      "end": 4755.54,
+      "no_speech_prob": 0.0,
+      "start": 4753.54,
+      "text": "加上美丽的外表"
+    },
+    {
+      "avg_logprob": -0.230876,
+      "compression_ratio": 1.14433,
+      "end": 4760.34,
+      "no_speech_prob": 0.0,
+      "start": 4755.54,
+      "text": "简直是一幅美丽的这个诗歌和画面在眼前"
+    },
+    {
+      "avg_logprob": -0.230876,
+      "compression_ratio": 1.14433,
+      "end": 4765.54,
+      "no_speech_prob": 0.0,
+      "start": 4760.34,
+      "text": "那么我们今天中秋节其实有一个很重要的事情"
+    },
+    {
+      "avg_logprob": -0.230876,
+      "compression_ratio": 1.14433,
+      "end": 4767.94,
+      "no_speech_prob": 0.0,
+      "start": 4765.54,
+      "text": "就是吃月饼"
+    },
+    {
+      "avg_logprob": -0.230876,
+      "compression_ratio": 1.14433,
+      "end": 4770.34,
+      "no_speech_prob": 0.0,
+      "start": 4767.94,
+      "text": "那对于月饼"
+    },
+    {
+      "avg_logprob": -0.131273,
+      "compression_ratio": 1.459075,
+      "end": 4772.34,
+      "no_speech_prob": 0.0,
+      "start": 4770.34,
+      "text": "菲仙你有多少了解"
+    },
+    {
+      "avg_logprob": -0.131273,
+      "compression_ratio": 1.459075,
+      "end": 4775.34,
+      "no_speech_prob": 0.0,
+      "start": 4772.34,
+      "text": "我其实了解的不太多"
+    },
+    {
+      "avg_logprob": -0.131273,
+      "compression_ratio": 1.459075,
+      "end": 4779.34,
+      "no_speech_prob": 0.0,
+      "start": 4775.34,
+      "text": "但是我知道的是今天在我们的3C的现场上"
+    },
+    {
+      "avg_logprob": -0.131273,
+      "compression_ratio": 1.459075,
+      "end": 4781.34,
+      "no_speech_prob": 0.0,
+      "start": 4779.34,
+      "text": "其实我们有很多很多战友"
+    },
+    {
+      "avg_logprob": -0.131273,
+      "compression_ratio": 1.459075,
+      "end": 4782.34,
+      "no_speech_prob": 0.0,
+      "start": 4781.34,
+      "text": "今天都是赶到了纽约的现场"
+    },
+    {
+      "avg_logprob": -0.131273,
+      "compression_ratio": 1.459075,
+      "end": 4784.34,
+      "no_speech_prob": 0.0,
+      "start": 4782.34,
+      "text": "然后和大家一起去团聚"
+    },
+    {
+      "avg_logprob": -0.131273,
+      "compression_ratio": 1.459075,
+      "end": 4786.34,
+      "no_speech_prob": 0.0,
+      "start": 4784.34,
+      "text": "那在去年的时候"
+    },
+    {
+      "avg_logprob": -0.131273,
+      "compression_ratio": 1.459075,
+      "end": 4789.34,
+      "no_speech_prob": 0.0,
+      "start": 4786.34,
+      "text": "其实我们两个人是不在这个办公室的"
+    },
+    {
+      "avg_logprob": -0.131273,
+      "compression_ratio": 1.459075,
+      "end": 4791.34,
+      "no_speech_prob": 0.0,
+      "start": 4789.34,
+      "text": "但是去年的时候"
+    },
+    {
+      "avg_logprob": -0.131273,
+      "compression_ratio": 1.459075,
+      "end": 4792.34,
+      "no_speech_prob": 0.0,
+      "start": 4791.34,
+      "text": "郭先生还特意"
+    },
+    {
+      "avg_logprob": -0.131273,
+      "compression_ratio": 1.459075,
+      "end": 4795.34,
+      "no_speech_prob": 0.0,
+      "start": 4792.34,
+      "text": "嘱托了现场的一些工作人员的战友"
+    },
+    {
+      "avg_logprob": -0.131273,
+      "compression_ratio": 1.459075,
+      "end": 4797.34,
+      "no_speech_prob": 0.0,
+      "start": 4795.34,
+      "text": "然后在工作结束的时候"
+    },
+    {
+      "avg_logprob": -0.131273,
+      "compression_ratio": 1.459075,
+      "end": 4799.34,
+      "no_speech_prob": 0.0,
+      "start": 4797.34,
+      "text": "给我们送月饼过来"
+    },
+    {
+      "avg_logprob": -0.051328,
+      "compression_ratio": 1.569892,
+      "end": 4801.34,
+      "no_speech_prob": 0.0,
+      "start": 4799.34,
+      "text": "然后来祝福这个中秋"
+    },
+    {
+      "avg_logprob": -0.051328,
+      "compression_ratio": 1.569892,
+      "end": 4803.34,
+      "no_speech_prob": 0.0,
+      "start": 4801.34,
+      "text": "那今年郭先生也是特别为很多的"
+    },
+    {
+      "avg_logprob": -0.051328,
+      "compression_ratio": 1.569892,
+      "end": 4805.34,
+      "no_speech_prob": 0.0,
+      "start": 4803.34,
+      "text": "在现场工作的战友们"
+    },
+    {
+      "avg_logprob": -0.051328,
+      "compression_ratio": 1.569892,
+      "end": 4807.34,
+      "no_speech_prob": 0.0,
+      "start": 4805.34,
+      "text": "然后都准备了这样的一个月饼"
+    },
+    {
+      "avg_logprob": -0.051328,
+      "compression_ratio": 1.569892,
+      "end": 4808.34,
+      "no_speech_prob": 0.0,
+      "start": 4807.34,
+      "text": "所以趁这样的一个机会"
+    },
+    {
+      "avg_logprob": -0.051328,
+      "compression_ratio": 1.569892,
+      "end": 4810.34,
+      "no_speech_prob": 0.0,
+      "start": 4808.34,
+      "text": "我们可以给大家看一下"
+    },
+    {
+      "avg_logprob": -0.051328,
+      "compression_ratio": 1.569892,
+      "end": 4814.34,
+      "no_speech_prob": 0.0,
+      "start": 4810.34,
+      "text": "这个是郭先生给很多在现场工作人员的"
+    },
+    {
+      "avg_logprob": -0.051328,
+      "compression_ratio": 1.569892,
+      "end": 4817.34,
+      "no_speech_prob": 0.0,
+      "start": 4814.34,
+      "text": "这些战友准备的这样半导酒店的这个月饼"
+    },
+    {
+      "avg_logprob": -0.051328,
+      "compression_ratio": 1.569892,
+      "end": 4820.34,
+      "no_speech_prob": 0.0,
+      "start": 4817.34,
+      "text": "然后大家都知道"
+    },
+    {
+      "avg_logprob": -0.051328,
+      "compression_ratio": 1.569892,
+      "end": 4822.34,
+      "no_speech_prob": 0.0,
+      "start": 4820.34,
+      "text": "就其实如果是在纽约生活过的话"
+    },
+    {
+      "avg_logprob": -0.051328,
+      "compression_ratio": 1.569892,
+      "end": 4824.34,
+      "no_speech_prob": 0.0,
+      "start": 4822.34,
+      "text": "其实像半导酒店的月饼"
+    },
+    {
+      "avg_logprob": -0.051328,
+      "compression_ratio": 1.569892,
+      "end": 4827.34,
+      "no_speech_prob": 0.0,
+      "start": 4824.34,
+      "text": "郭先生他们都是提前要半年去订购"
+    },
+    {
+      "avg_logprob": -0.107619,
+      "compression_ratio": 1.464286,
+      "end": 4830.34,
+      "no_speech_prob": 0.0,
+      "start": 4827.34,
+      "text": "然后也是专门为战友去订购的这样的一批"
+    },
+    {
+      "avg_logprob": -0.107619,
+      "compression_ratio": 1.464286,
+      "end": 4831.34,
+      "no_speech_prob": 0.0,
+      "start": 4830.34,
+      "text": "然后也有"
+    },
+    {
+      "avg_logprob": -0.107619,
+      "compression_ratio": 1.464286,
+      "end": 4833.34,
+      "no_speech_prob": 0.0,
+      "start": 4831.34,
+      "text": "包括也有来自Lady M的一些特别的月饼"
+    },
+    {
+      "avg_logprob": -0.107619,
+      "compression_ratio": 1.464286,
+      "end": 4837.34,
+      "no_speech_prob": 0.0,
+      "start": 4833.34,
+      "text": "所以我们希望能够把这样的一份"
+    },
+    {
+      "avg_logprob": -0.107619,
+      "compression_ratio": 1.464286,
+      "end": 4840.34,
+      "no_speech_prob": 0.0,
+      "start": 4837.34,
+      "text": "郭先生对战友的这样的一份心意都分享给大家"
+    },
+    {
+      "avg_logprob": -0.107619,
+      "compression_ratio": 1.464286,
+      "end": 4842.34,
+      "no_speech_prob": 0.0,
+      "start": 4841.34,
+      "text": "也让大家"
+    },
+    {
+      "avg_logprob": -0.107619,
+      "compression_ratio": 1.464286,
+      "end": 4843.34,
+      "no_speech_prob": 0.0,
+      "start": 4842.34,
+      "text": "其实新中国联邦人"
+    },
+    {
+      "avg_logprob": -0.107619,
+      "compression_ratio": 1.464286,
+      "end": 4845.34,
+      "no_speech_prob": 0.0,
+      "start": 4843.34,
+      "text": "郭先生对所有的战友"
+    },
+    {
+      "avg_logprob": -0.107619,
+      "compression_ratio": 1.464286,
+      "end": 4846.34,
+      "no_speech_prob": 0.0,
+      "start": 4845.34,
+      "text": "他的心意都是一样的"
+    },
+    {
+      "avg_logprob": -0.107619,
+      "compression_ratio": 1.464286,
+      "end": 4849.34,
+      "no_speech_prob": 0.0,
+      "start": 4846.34,
+      "text": "然后我们也希望有更多更多的战友能和我们一起"
+    },
+    {
+      "avg_logprob": -0.129931,
+      "compression_ratio": 0.923077,
+      "end": 4851.34,
+      "no_speech_prob": 0.0,
+      "start": 4849.34,
+      "text": "然后站到台前来"
+    },
+    {
+      "avg_logprob": -0.129931,
+      "compression_ratio": 0.923077,
+      "end": 4855.34,
+      "no_speech_prob": 0.0,
+      "start": 4851.34,
+      "text": "然后更多的为报道革命和新中国联邦来做这样的一份努力"
+    },
+    {
+      "avg_logprob": -0.109407,
+      "compression_ratio": 1.44958,
+      "end": 4857.34,
+      "no_speech_prob": 0.0,
+      "start": 4855.34,
+      "text": "对"
+    },
+    {
+      "avg_logprob": -0.109407,
+      "compression_ratio": 1.44958,
+      "end": 4859.34,
+      "no_speech_prob": 0.0,
+      "start": 4857.34,
+      "text": "那在月饼里面"
+    },
+    {
+      "avg_logprob": -0.109407,
+      "compression_ratio": 1.44958,
+      "end": 4860.34,
+      "no_speech_prob": 0.0,
+      "start": 4859.34,
+      "text": "其实我们也是"
+    },
+    {
+      "avg_logprob": -0.109407,
+      "compression_ratio": 1.44958,
+      "end": 4861.34,
+      "no_speech_prob": 0.0,
+      "start": 4860.34,
+      "text": "中国有很多不同的地区"
+    },
+    {
+      "avg_logprob": -0.109407,
+      "compression_ratio": 1.44958,
+      "end": 4862.34,
+      "no_speech_prob": 0.0,
+      "start": 4861.34,
+      "text": "不同的文化"
+    },
+    {
+      "avg_logprob": -0.109407,
+      "compression_ratio": 1.44958,
+      "end": 4864.34,
+      "no_speech_prob": 0.0,
+      "start": 4862.34,
+      "text": "也有不同对于月饼的习俗"
+    },
+    {
+      "avg_logprob": -0.109407,
+      "compression_ratio": 1.44958,
+      "end": 4866.34,
+      "no_speech_prob": 0.0,
+      "start": 4864.34,
+      "text": "那么想要更好的了解月饼呢"
+    },
+    {
+      "avg_logprob": -0.109407,
+      "compression_ratio": 1.44958,
+      "end": 4868.34,
+      "no_speech_prob": 0.0,
+      "start": 4866.34,
+      "text": "肯定不是从我们这儿了解了"
+    },
+    {
+      "avg_logprob": -0.109407,
+      "compression_ratio": 1.44958,
+      "end": 4870.34,
+      "no_speech_prob": 0.0,
+      "start": 4868.34,
+      "text": "那接下来的这个视频呢"
+    },
+    {
+      "avg_logprob": -0.109407,
+      "compression_ratio": 1.44958,
+      "end": 4872.34,
+      "no_speech_prob": 0.0,
+      "start": 4870.34,
+      "text": "可能会帮助大家更好的去了解一下"
+    },
+    {
+      "avg_logprob": -0.109407,
+      "compression_ratio": 1.44958,
+      "end": 4874.34,
+      "no_speech_prob": 0.0,
+      "start": 4872.34,
+      "text": "中国这个月饼的文化"
+    },
+    {
+      "avg_logprob": -0.109407,
+      "compression_ratio": 1.44958,
+      "end": 4876.34,
+      "no_speech_prob": 0.0,
+      "start": 4874.34,
+      "text": "月饼有什么样不一样的"
+    },
+    {
+      "avg_logprob": -0.109407,
+      "compression_ratio": 1.44958,
+      "end": 4878.34,
+      "no_speech_prob": 0.0,
+      "start": 4876.34,
+      "text": "之间的分别和分类"
+    },
+    {
+      "avg_logprob": -0.085,
+      "compression_ratio": 0.94186,
+      "end": 4880.34,
+      "no_speech_prob": 0.0,
+      "start": 4878.34,
+      "text": "中国这个月饼的文化"
+    },
+    {
+      "avg_logprob": -0.085,
+      "compression_ratio": 0.94186,
+      "end": 4882.34,
+      "no_speech_prob": 0.0,
+      "start": 4880.34,
+      "text": "月饼有什么样不一样的"
+    },
+    {
+      "avg_logprob": -0.085,
+      "compression_ratio": 0.94186,
+      "end": 4884.34,
+      "no_speech_prob": 0.0,
+      "start": 4882.34,
+      "text": "之间的分别和分类"
+    },
+    {
+      "avg_logprob": -0.101097,
+      "compression_ratio": 0.875,
+      "end": 4968.32,
+      "no_speech_prob": 0.0,
+      "start": 4938.34,
+      "text": "优优独播剧场——YoYo Television Series Exclusive"
+    },
+    {
+      "avg_logprob": -0.068723,
+      "compression_ratio": 0.875,
+      "end": 4998.32,
+      "no_speech_prob": 0.0,
+      "start": 4968.34,
+      "text": "优优独播剧场——YoYo Television Series Exclusive"
+    },
+    {
+      "avg_logprob": -0.017345,
+      "compression_ratio": 0.875,
+      "end": 5028.32,
+      "no_speech_prob": 0.0,
+      "start": 4998.34,
+      "text": "优优独播剧场——YoYo Television Series Exclusive"
+    },
+    {
+      "avg_logprob": -0.367288,
+      "compression_ratio": 0.792453,
+      "end": 5030.32,
+      "no_speech_prob": 0.0,
+      "start": 5028.32,
+      "text": "Zither Harp"
+    },
+    {
+      "avg_logprob": -0.367288,
+      "compression_ratio": 0.792453,
+      "end": 5049.98,
+      "no_speech_prob": 0.0,
+      "start": 5030.32,
+      "text": "哦 月光洒在每个人心上"
+    },
+    {
+      "avg_logprob": -0.168468,
+      "compression_ratio": 0.858974,
+      "end": 5055.98,
+      "no_speech_prob": 0.0,
+      "start": 5049.98,
+      "text": "让回家的路有方向"
+    },
+    {
+      "avg_logprob": -0.168468,
+      "compression_ratio": 0.858974,
+      "end": 5067.98,
+      "no_speech_prob": 0.0,
+      "start": 5055.98,
+      "text": "哦 离开太久的故乡和老去的殿娘"
+    },
+    {
+      "avg_logprob": -0.147422,
+      "compression_ratio": 0.936842,
+      "end": 5075.98,
+      "no_speech_prob": 0.0,
+      "start": 5067.98,
+      "text": "哦 迎着月色散落的光芒"
+    },
+    {
+      "avg_logprob": -0.147422,
+      "compression_ratio": 0.936842,
+      "end": 5081.98,
+      "no_speech_prob": 0.0,
+      "start": 5075.98,
+      "text": "把古老的歌谣情声唱"
+    },
+    {
+      "avg_logprob": -0.147422,
+      "compression_ratio": 0.936842,
+      "end": 5088.98,
+      "no_speech_prob": 0.0,
+      "start": 5081.98,
+      "text": "哦 无论走到任何的地方"
+    },
+    {
+      "avg_logprob": -0.112744,
+      "compression_ratio": 1.012987,
+      "end": 5094.98,
+      "no_speech_prob": 0.0,
+      "start": 5088.98,
+      "text": "都忘不了故乡"
+    },
+    {
+      "avg_logprob": -0.112744,
+      "compression_ratio": 1.012987,
+      "end": 5098.98,
+      "no_speech_prob": 0.0,
+      "start": 5094.98,
+      "text": "是什么力量"
+    },
+    {
+      "avg_logprob": -0.112744,
+      "compression_ratio": 1.012987,
+      "end": 5102.98,
+      "no_speech_prob": 0.0,
+      "start": 5098.98,
+      "text": "让我们坚强"
+    },
+    {
+      "avg_logprob": -0.112744,
+      "compression_ratio": 1.012987,
+      "end": 5104.98,
+      "no_speech_prob": 0.0,
+      "start": 5102.98,
+      "text": "是什么离去"
+    },
+    {
+      "avg_logprob": -0.112744,
+      "compression_ratio": 1.012987,
+      "end": 5108.98,
+      "no_speech_prob": 0.0,
+      "start": 5104.98,
+      "text": "让我们悲伤"
+    },
+    {
+      "avg_logprob": -0.357725,
+      "compression_ratio": 1.229508,
+      "end": 5110.98,
+      "no_speech_prob": 0.0,
+      "start": 5108.98,
+      "text": "是什么感受"
+    },
+    {
+      "avg_logprob": -0.357725,
+      "compression_ratio": 1.229508,
+      "end": 5112.98,
+      "no_speech_prob": 0.0,
+      "start": 5110.98,
+      "text": "是什么感受"
+    },
+    {
+      "avg_logprob": -0.357725,
+      "compression_ratio": 1.229508,
+      "end": 5114.98,
+      "no_speech_prob": 0.0,
+      "start": 5112.98,
+      "text": "让我们坚强"
+    },
+    {
+      "avg_logprob": -0.357725,
+      "compression_ratio": 1.229508,
+      "end": 5116.98,
+      "no_speech_prob": 0.0,
+      "start": 5114.98,
+      "text": "是什么结束"
+    },
+    {
+      "avg_logprob": -0.357725,
+      "compression_ratio": 1.229508,
+      "end": 5118.98,
+      "no_speech_prob": 0.0,
+      "start": 5116.98,
+      "text": "让我们成长"
+    },
+    {
+      "avg_logprob": -0.30204,
+      "compression_ratio": 0.65625,
+      "end": 5120.98,
+      "no_speech_prob": 0.0,
+      "start": 5118.98,
+      "text": "结束"
+    },
+    {
+      "avg_logprob": -0.30204,
+      "compression_ratio": 0.65625,
+      "end": 5124.98,
+      "no_speech_prob": 0.0,
+      "start": 5120.98,
+      "text": "让我们成长"
+    },
+    {
+      "avg_logprob": -4.722925,
+      "compression_ratio": 0.428571,
+      "end": 5154.96,
+      "no_speech_prob": 0.0,
+      "start": 5124.98,
+      "text": "Export"
+    },
+    {
+      "avg_logprob": -0.279886,
+      "compression_ratio": 0.942149,
+      "end": 5163.96,
+      "no_speech_prob": 0.0,
+      "start": 5154.96,
+      "text": "光芒 把古老的歌謠 輕聲唱"
+    },
+    {
+      "avg_logprob": -0.279886,
+      "compression_ratio": 0.942149,
+      "end": 5170.46,
+      "no_speech_prob": 0.0,
+      "start": 5163.96,
+      "text": "喔無論走到任何的地方"
+    },
+    {
+      "avg_logprob": -0.279886,
+      "compression_ratio": 0.942149,
+      "end": 5176.96,
+      "no_speech_prob": 0.0,
+      "start": 5170.46,
+      "text": "都忘不了故鄉"
+    },
+    {
+      "avg_logprob": -0.279886,
+      "compression_ratio": 0.942149,
+      "end": 5183.96,
+      "no_speech_prob": 0.0,
+      "start": 5176.96,
+      "text": "是信仰力量 讓我們堅強"
+    },
+    {
+      "avg_logprob": -0.307952,
+      "compression_ratio": 1.108108,
+      "end": 5189.96,
+      "no_speech_prob": 0.0,
+      "start": 5183.96,
+      "text": "是情人不解 讓我們悲傷"
+    },
+    {
+      "avg_logprob": -0.307952,
+      "compression_ratio": 1.108108,
+      "end": 5196.96,
+      "no_speech_prob": 0.0,
+      "start": 5189.96,
+      "text": "是為人不破 讓我們堅當"
+    },
+    {
+      "avg_logprob": -0.307952,
+      "compression_ratio": 1.108108,
+      "end": 5203.96,
+      "no_speech_prob": 0.0,
+      "start": 5196.96,
+      "text": "是極權皆是讓我們承受"
+    },
+    {
+      "avg_logprob": -0.307952,
+      "compression_ratio": 1.108108,
+      "end": 5209.96,
+      "no_speech_prob": 0.0,
+      "start": 5203.96,
+      "text": "權力的欲望 讓他們瘋狂"
+    },
+    {
+      "avg_logprob": -0.214425,
+      "compression_ratio": 0.94898,
+      "end": 5215.96,
+      "no_speech_prob": 0.0,
+      "start": 5209.96,
+      "text": "真相的距離 讓我們守望"
+    },
+    {
+      "avg_logprob": -0.214425,
+      "compression_ratio": 0.94898,
+      "end": 5222.96,
+      "no_speech_prob": 0.0,
+      "start": 5215.96,
+      "text": "豐富的謊言 讓頭髮幻想"
+    },
+    {
+      "avg_logprob": -0.214425,
+      "compression_ratio": 0.94898,
+      "end": 5229.96,
+      "no_speech_prob": 0.0,
+      "start": 5222.96,
+      "text": "心中過年榜 讓未來明朗"
+    },
+    {
+      "avg_logprob": -0.320259,
+      "compression_ratio": 0.825397,
+      "end": 5239.96,
+      "no_speech_prob": 0.0,
+      "start": 5229.96,
+      "text": "月亮高高掛在了天上"
+    },
+    {
+      "avg_logprob": -0.320259,
+      "compression_ratio": 0.825397,
+      "end": 5245.96,
+      "no_speech_prob": 0.0,
+      "start": 5239.96,
+      "text": "為思想的人 朝著亮"
+    },
+    {
+      "avg_logprob": -0.458877,
+      "compression_ratio": 0.796296,
+      "end": 5259.96,
+      "no_speech_prob": 0.0,
+      "start": 5245.96,
+      "text": "離開太久的故鄉 早日滅宮殿殿娘"
+    },
+    {
+      "avg_logprob": -0.150663,
+      "compression_ratio": 0.807018,
+      "end": 5273.96,
+      "no_speech_prob": 0.0,
+      "start": 5259.96,
+      "text": "離開了太久的故鄉 早日滅宮殿殿娘"
+    },
+    {
+      "avg_logprob": -0.984718,
+      "compression_ratio": 0.784314,
+      "end": 5279.96,
+      "no_speech_prob": 0.0,
+      "start": 5273.96,
+      "text": "全球的愛情人 早日滅宮殿殿娘"
+    },
+    {
+      "avg_logprob": -0.52486,
+      "compression_ratio": 0.928571,
+      "end": 5293.96,
+      "no_speech_prob": 0.0,
+      "start": 5279.96,
+      "text": "全球的觀眾大家好 我是悟空"
+    },
+    {
+      "avg_logprob": -0.52486,
+      "compression_ratio": 0.928571,
+      "end": 5295.96,
+      "no_speech_prob": 0.0,
+      "start": 5293.96,
+      "text": "我是洛伊 中秋家姐好"
+    },
+    {
+      "avg_logprob": -0.331603,
+      "compression_ratio": 2.196891,
+      "end": 5297.96,
+      "no_speech_prob": 0.0,
+      "start": 5295.96,
+      "text": "剛剛文空佔有的一首歌"
+    },
+    {
+      "avg_logprob": -0.331603,
+      "compression_ratio": 2.196891,
+      "end": 5299.96,
+      "no_speech_prob": 0.0,
+      "start": 5297.96,
+      "text": "是甚麼讓我們遠離家鄉"
+    },
+    {
+      "avg_logprob": -0.331603,
+      "compression_ratio": 2.196891,
+      "end": 5301.96,
+      "no_speech_prob": 0.0,
+      "start": 5299.96,
+      "text": "是甚麼讓我們又充滿了信仰"
+    },
+    {
+      "avg_logprob": -0.331603,
+      "compression_ratio": 2.196891,
+      "end": 5303.96,
+      "no_speech_prob": 0.0,
+      "start": 5301.96,
+      "text": "所以今天 只是中秋家姐之際"
+    },
+    {
+      "avg_logprob": -0.331603,
+      "compression_ratio": 2.196891,
+      "end": 5305.96,
+      "no_speech_prob": 0.0,
+      "start": 5303.96,
+      "text": "我跟大家一起回顧一下"
+    },
+    {
+      "avg_logprob": -0.331603,
+      "compression_ratio": 2.196891,
+      "end": 5307.96,
+      "no_speech_prob": 0.0,
+      "start": 5305.96,
+      "text": "我們曾經的已已往往"
+    },
+    {
+      "avg_logprob": -0.331603,
+      "compression_ratio": 2.196891,
+      "end": 5309.96,
+      "no_speech_prob": 0.0,
+      "start": 5307.96,
+      "text": "是的 隨著這首樂觀"
+    },
+    {
+      "avg_logprob": -0.331603,
+      "compression_ratio": 2.196891,
+      "end": 5310.96,
+      "no_speech_prob": 0.0,
+      "start": 5309.96,
+      "text": "我們也有的一首歌"
+    },
+    {
+      "avg_logprob": -0.331603,
+      "compression_ratio": 2.196891,
+      "end": 5312.96,
+      "no_speech_prob": 0.0,
+      "start": 5310.96,
+      "text": "是甚麼讓我們遠離家鄉"
+    },
+    {
+      "avg_logprob": -0.331603,
+      "compression_ratio": 2.196891,
+      "end": 5313.96,
+      "no_speech_prob": 0.0,
+      "start": 5312.96,
+      "text": "是甚麼讓我們又充滿了信仰"
+    },
+    {
+      "avg_logprob": -0.331603,
+      "compression_ratio": 2.196891,
+      "end": 5315.96,
+      "no_speech_prob": 0.0,
+      "start": 5313.96,
+      "text": "所以今天 只是中秋家節之際"
+    },
+    {
+      "avg_logprob": -0.331603,
+      "compression_ratio": 2.196891,
+      "end": 5317.96,
+      "no_speech_prob": 0.0,
+      "start": 5315.96,
+      "text": "我跟大家一起回顧一下"
+    },
+    {
+      "avg_logprob": -0.331603,
+      "compression_ratio": 2.196891,
+      "end": 5319.96,
+      "no_speech_prob": 0.0,
+      "start": 5317.96,
+      "text": "我們曾經的已已往往"
+    },
+    {
+      "avg_logprob": -0.331603,
+      "compression_ratio": 2.196891,
+      "end": 5321.96,
+      "no_speech_prob": 0.0,
+      "start": 5319.96,
+      "text": "是的 隨著這首樂觀"
+    },
+    {
+      "avg_logprob": -0.204775,
+      "compression_ratio": 1.185393,
+      "end": 5323.96,
+      "no_speech_prob": 0.0,
+      "start": 5321.96,
+      "text": "我們今天的中秋特別節目"
+    },
+    {
+      "avg_logprob": -0.204775,
+      "compression_ratio": 1.185393,
+      "end": 5324.96,
+      "no_speech_prob": 0.0,
+      "start": 5323.96,
+      "text": "也進入到了第二個環節"
+    },
+    {
+      "avg_logprob": -0.204775,
+      "compression_ratio": 1.185393,
+      "end": 5325.96,
+      "no_speech_prob": 0.0,
+      "start": 5324.96,
+      "text": "升華上天的使命"
+    },
+    {
+      "avg_logprob": -0.204775,
+      "compression_ratio": 1.185393,
+      "end": 5327.96,
+      "no_speech_prob": 0.0,
+      "start": 5325.96,
+      "text": "那麼我先來一段轉場的視頻"
+    },
+    {
+      "avg_logprob": -0.204775,
+      "compression_ratio": 1.185393,
+      "end": 5328.96,
+      "no_speech_prob": 0.0,
+      "start": 5327.96,
+      "text": "然後看一下五年前"
+    },
+    {
+      "avg_logprob": -0.204775,
+      "compression_ratio": 1.185393,
+      "end": 5329.96,
+      "no_speech_prob": 0.0,
+      "start": 5328.96,
+      "text": "郭先生的節的一個回顧"
+    },
+    {
+      "avg_logprob": -0.204775,
+      "compression_ratio": 1.185393,
+      "end": 5331.96,
+      "no_speech_prob": 0.0,
+      "start": 5329.96,
+      "text": "謝謝 請大家欣賞"
+    },
+    {
+      "avg_logprob": -0.204775,
+      "compression_ratio": 1.185393,
+      "end": 5333.96,
+      "no_speech_prob": 0.0,
+      "start": 5331.96,
+      "text": "請大家欣賞"
+    },
+    {
+      "avg_logprob": -0.752041,
+      "compression_ratio": 1.509434,
+      "end": 5345.96,
+      "no_speech_prob": 0.0,
+      "start": 5333.96,
+      "text": "今天又值中國的 這個中秋夏節"
+    },
+    {
+      "avg_logprob": -0.752041,
+      "compression_ratio": 1.509434,
+      "end": 5351.96,
+      "no_speech_prob": 0.0,
+      "start": 5345.96,
+      "text": "今天又值中國的 這個中秋夏節"
+    },
+    {
+      "avg_logprob": -0.313561,
+      "compression_ratio": 1.265625,
+      "end": 5363.22,
+      "no_speech_prob": 0.0,
+      "start": 5351.96,
+      "text": "今天又值中國的這個中秋假節"
+    },
+    {
+      "avg_logprob": -0.313561,
+      "compression_ratio": 1.265625,
+      "end": 5366.04,
+      "no_speech_prob": 0.0,
+      "start": 5363.22,
+      "text": "文貴在此"
+    },
+    {
+      "avg_logprob": -0.313561,
+      "compression_ratio": 1.265625,
+      "end": 5368.26,
+      "no_speech_prob": 0.0,
+      "start": 5366.04,
+      "text": "莊嚴的"
+    },
+    {
+      "avg_logprob": -0.313561,
+      "compression_ratio": 1.265625,
+      "end": 5373.62,
+      "no_speech_prob": 0.0,
+      "start": 5368.26,
+      "text": "向所有的推友和所有的華人"
+    },
+    {
+      "avg_logprob": -0.313561,
+      "compression_ratio": 1.265625,
+      "end": 5376.3,
+      "no_speech_prob": 0.0,
+      "start": 5373.62,
+      "text": "和所有的推友們"
+    },
+    {
+      "avg_logprob": -0.313561,
+      "compression_ratio": 1.265625,
+      "end": 5378.22,
+      "no_speech_prob": 0.0,
+      "start": 5376.3,
+      "text": "和所有華人的家人們"
+    },
+    {
+      "avg_logprob": -0.313561,
+      "compression_ratio": 1.265625,
+      "end": 5379.9,
+      "no_speech_prob": 0.0,
+      "start": 5378.22,
+      "text": "向你們道一聲"
+    },
+    {
+      "avg_logprob": -0.229909,
+      "compression_ratio": 1.008621,
+      "end": 5382.14,
+      "no_speech_prob": 0.0,
+      "start": 5379.9,
+      "text": "中秋節快樂"
+    },
+    {
+      "avg_logprob": -0.229909,
+      "compression_ratio": 1.008621,
+      "end": 5387.84,
+      "no_speech_prob": 0.0,
+      "start": 5382.14,
+      "text": "雖然有些海外的"
+    },
+    {
+      "avg_logprob": -0.229909,
+      "compression_ratio": 1.008621,
+      "end": 5391.46,
+      "no_speech_prob": 0.0,
+      "start": 5387.84,
+      "text": "像我一樣的同胞們"
+    },
+    {
+      "avg_logprob": -0.229909,
+      "compression_ratio": 1.008621,
+      "end": 5396.64,
+      "no_speech_prob": 0.0,
+      "start": 5391.46,
+      "text": "和我們的民運人士"
+    },
+    {
+      "avg_logprob": -0.229909,
+      "compression_ratio": 1.008621,
+      "end": 5399.98,
+      "no_speech_prob": 0.0,
+      "start": 5396.64,
+      "text": "和我們追求民主自由法治"
+    }
+  ],
+  "text": "天开 神主臣服善恶诺雅迎舟后明 日月有安排我真逃生梦 烦鸟总乎才草江湖 修世道随重来星辰会落平野 今未恋载守我高宁一马 且待此行两种还不过情怀 若守彩虹月还不作心海万种风沉醉 千丈浪重迈万种风沉醉 千丈浪重迈万种风沉醉 千丈浪重迈明天开 诸风飞里 寒水 昂首解天开神主臣服善恶 神主臣服善恶诺雅迎舟后明 日月有安排也要安排 我真逃生梦翻鸟总不猜草江湖 千丈浪重来星辰会落平野 今未恋载少我高宁一马 且待此行两种光天的情怀 若守彩虹月光顾作心海草江湖 修世道随从来 星辰平落平野 今未恋载守我高宁一马 且待此行两种光天的情怀 若守彩虹月光顾作心海若守彩虹月光顾作心海若守彩虹月听 每次听到这种动人的歌都要摸一摸耳朵因为耳朵好像怀孕了太感谢文艺给我们带来的这个美妙的歌声了每次听到文艺唱歌真的是心潮澎湃而且动人加上美丽的外表简直是一幅美丽的这个诗歌和画面在眼前那么我们今天中秋节其实有一个很重要的事情就是吃月饼那对于月饼菲仙你有多少了解我其实了解的不太多但是我知道的是今天在我们的3C的现场上其实我们有很多很多战友今天都是赶到了纽约的现场然后和大家一起去团聚那在去年的时候其实我们两个人是不在这个办公室的但是去年的时候郭先生还特意嘱托了现场的一些工作人员的战友然后在工作结束的时候给我们送月饼过来然后来祝福这个中秋那今年郭先生也是特别为很多的在现场工作的战友们然后都准备了这样的一个月饼所以趁这样的一个机会我们可以给大家看一下这个是郭先生给很多在现场工作人员的这些战友准备的这样半导酒店的这个月饼然后大家都知道就其实如果是在纽约生活过的话其实像半导酒店的月饼郭先生他们都是提前要半年去订购然后也是专门为战友去订购的这样的一批然后也有包括也有来自Lady M的一些特别的月饼所以我们希望能够把这样的一份郭先生对战友的这样的一份心意都分享给大家也让大家其实新中国联邦人郭先生对所有的战友他的心意都是一样的然后我们也希望有更多更多的战友能和我们一起然后站到台前来然后更多的为报道革命和新中国联邦来做这样的一份努力对那在月饼里面其实我们也是中国有很多不同的地区不同的文化也有不同对于月饼的习俗那么想要更好的了解月饼呢肯定不是从我们这儿了解了那接下来的这个视频呢可能会帮助大家更好的去了解一下中国这个月饼的文化月饼有什么样不一样的之间的分别和分类中国这个月饼的文化月饼有什么样不一样的之间的分别和分类优优独播剧场——YoYo Television Series Exclusive优优独播剧场——YoYo Television Series Exclusive优优独播剧场——YoYo Television Series ExclusiveZither Harp哦 月光洒在每个人心上让回家的路有方向哦 离开太久的故乡和老去的殿娘哦 迎着月色散落的光芒把古老的歌谣情声唱哦 无论走到任何的地方都忘不了故乡是什么力量让我们坚强是什么离去让我们悲伤是什么感受是什么感受让我们坚强是什么结束让我们成长结束让我们成长 Export光芒 把古老的歌謠 輕聲唱喔無論走到任何的地方都忘不了故鄉是信仰力量 讓我們堅強是情人不解 讓我們悲傷是為人不破 讓我們堅當是極權皆是讓我們承受權力的欲望 讓他們瘋狂真相的距離 讓我們守望豐富的謊言 讓頭髮幻想心中過年榜 讓未來明朗月亮高高掛在了天上為思想的人 朝著亮離開太久的故鄉 早日滅宮殿殿娘離開了太久的故鄉 早日滅宮殿殿娘全球的愛情人 早日滅宮殿殿娘全球的觀眾大家好 我是悟空我是洛伊 中秋家姐好剛剛文空佔有的一首歌是甚麼讓我們遠離家鄉是甚麼讓我們又充滿了信仰所以今天 只是中秋家姐之際我跟大家一起回顧一下我們曾經的已已往往是的 隨著這首樂觀我們也有的一首歌是甚麼讓我們遠離家鄉是甚麼讓我們又充滿了信仰所以今天 只是中秋家節之際我跟大家一起回顧一下我們曾經的已已往往是的 隨著這首樂觀我們今天的中秋特別節目也進入到了第二個環節升華上天的使命那麼我先來一段轉場的視頻然後看一下五年前郭先生的節的一個回顧謝謝 請大家欣賞請大家欣賞今天又值中國的 這個中秋夏節今天又值中國的 這個中秋夏節今天又值中國的這個中秋假節文貴在此莊嚴的向所有的推友和所有的華人和所有的推友們和所有華人的家人們向你們道一聲中秋節快樂雖然有些海外的像我一樣的同胞們和我們的民運人士和我們追求民主自由法治"
+}

@@ -1,0 +1,752 @@
+{
+  "chunk_audio_sha256": "234c99e0be4797ee97dc4ee237455c53c0a545eee420d397d735c92414d144ed",
+  "chunk_index": 5,
+  "completed_at": "2026-10-28T19:00:37Z",
+  "language": "zh",
+  "live_id": "LIVE_20220918_001",
+  "media_committed_to_git": false,
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "offset_sec": 4500,
+  "paid_api_used": false,
+  "processing_location": "github-hosted-macos-arm64",
+  "schema_version": "cloud-asr-chunk-v1",
+  "segments": [
+    {
+      "avg_logprob": -0.789463,
+      "compression_ratio": 0.571429,
+      "end": 4529.98,
+      "no_speech_prob": 0.0,
+      "start": 4500.0,
+      "text": "谢谢大家"
+    },
+    {
+      "avg_logprob": -0.191361,
+      "compression_ratio": 1.2,
+      "end": 4543.48,
+      "no_speech_prob": 0.0,
+      "start": 4530.0,
+      "text": "阿弥陀佛"
+    },
+    {
+      "avg_logprob": -0.191361,
+      "compression_ratio": 1.2,
+      "end": 4550.22,
+      "no_speech_prob": 0.0,
+      "start": 4543.48,
+      "text": "阿弥陀佛"
+    },
+    {
+      "avg_logprob": -0.191361,
+      "compression_ratio": 1.2,
+      "end": 4554.6,
+      "no_speech_prob": 0.0,
+      "start": 4550.22,
+      "text": "我再次的感谢在俄罗斯的朋友们"
+    },
+    {
+      "avg_logprob": -0.191361,
+      "compression_ratio": 1.2,
+      "end": 4558.26,
+      "no_speech_prob": 0.0,
+      "start": 4554.6,
+      "text": "还有给我们提供这个信息的所有朋友们"
+    },
+    {
+      "avg_logprob": -0.191361,
+      "compression_ratio": 1.2,
+      "end": 4559.72,
+      "no_speech_prob": 0.0,
+      "start": 4558.26,
+      "text": "你们提供的信息"
+    },
+    {
+      "avg_logprob": -0.103852,
+      "compression_ratio": 1.303571,
+      "end": 4561.78,
+      "no_speech_prob": 0.0,
+      "start": 4559.72,
+      "text": "我相信经过一年后"
+    },
+    {
+      "avg_logprob": -0.103852,
+      "compression_ratio": 1.303571,
+      "end": 4563.2,
+      "no_speech_prob": 0.0,
+      "start": 4561.78,
+      "text": "被验证后"
+    },
+    {
+      "avg_logprob": -0.103852,
+      "compression_ratio": 1.303571,
+      "end": 4565.34,
+      "no_speech_prob": 0.0,
+      "start": 4563.2,
+      "text": "我相信会拯救很多人"
+    },
+    {
+      "avg_logprob": -0.103852,
+      "compression_ratio": 1.303571,
+      "end": 4568.34,
+      "no_speech_prob": 0.0,
+      "start": 4565.34,
+      "text": "我相信很多国家情报机关"
+    },
+    {
+      "avg_logprob": -0.103852,
+      "compression_ratio": 1.303571,
+      "end": 4571.1,
+      "no_speech_prob": 0.0,
+      "start": 4568.34,
+      "text": "和国家军事机关"
+    },
+    {
+      "avg_logprob": -0.103852,
+      "compression_ratio": 1.303571,
+      "end": 4573.54,
+      "no_speech_prob": 0.0,
+      "start": 4571.1,
+      "text": "相关国家得到验证后"
+    },
+    {
+      "avg_logprob": -0.103852,
+      "compression_ratio": 1.303571,
+      "end": 4578.64,
+      "no_speech_prob": 0.0,
+      "start": 4573.54,
+      "text": "将有助于防范普京最后的疯狂"
+    },
+    {
+      "avg_logprob": -0.103852,
+      "compression_ratio": 1.303571,
+      "end": 4582.9,
+      "no_speech_prob": 0.0,
+      "start": 4578.64,
+      "text": "同时制定普京和习近平本人"
+    },
+    {
+      "avg_logprob": -0.243222,
+      "compression_ratio": 1.06383,
+      "end": 4584.7,
+      "no_speech_prob": 0.0,
+      "start": 4582.9,
+      "text": "这次见面后"
+    },
+    {
+      "avg_logprob": -0.243222,
+      "compression_ratio": 1.06383,
+      "end": 4591.52,
+      "no_speech_prob": 0.0,
+      "start": 4584.7,
+      "text": "普京已经和习近平本人交流了关于他病情的这个整个情况"
+    },
+    {
+      "avg_logprob": -0.243222,
+      "compression_ratio": 1.06383,
+      "end": 4593.58,
+      "no_speech_prob": 0.0,
+      "start": 4591.52,
+      "text": "而且普京明确告诉了习"
+    },
+    {
+      "avg_logprob": -0.243222,
+      "compression_ratio": 1.06383,
+      "end": 4596.32,
+      "no_speech_prob": 0.0,
+      "start": 4593.58,
+      "text": "说他的病是没有问题的"
+    },
+    {
+      "avg_logprob": -0.300306,
+      "compression_ratio": 1.061947,
+      "end": 4599.8,
+      "no_speech_prob": 0.0,
+      "start": 4596.32,
+      "text": "坚持几年没问题"
+    },
+    {
+      "avg_logprob": -0.300306,
+      "compression_ratio": 1.061947,
+      "end": 4604.66,
+      "no_speech_prob": 0.0,
+      "start": 4599.8,
+      "text": "但是我相信习近平本人已经知道他十字不多"
+    },
+    {
+      "avg_logprob": -0.300306,
+      "compression_ratio": 1.061947,
+      "end": 4607.7,
+      "no_speech_prob": 0.0,
+      "start": 4604.66,
+      "text": "我相信习近平先生本人正在安排"
+    },
+    {
+      "avg_logprob": -0.358111,
+      "compression_ratio": 1.0,
+      "end": 4609.18,
+      "no_speech_prob": 0.0,
+      "start": 4607.7,
+      "text": "土王后的后世"
+    },
+    {
+      "avg_logprob": -0.358111,
+      "compression_ratio": 1.0,
+      "end": 4615.32,
+      "no_speech_prob": 0.0,
+      "start": 4611.18,
+      "text": "这会加速习近平在中国国内"
+    },
+    {
+      "avg_logprob": -0.358111,
+      "compression_ratio": 1.0,
+      "end": 4617.32,
+      "no_speech_prob": 0.0,
+      "start": 4615.32,
+      "text": "加强独裁统治"
+    },
+    {
+      "avg_logprob": -0.358111,
+      "compression_ratio": 1.0,
+      "end": 4619.32,
+      "no_speech_prob": 0.0,
+      "start": 4617.32,
+      "text": "加强社会维稳"
+    },
+    {
+      "avg_logprob": -0.358111,
+      "compression_ratio": 1.0,
+      "end": 4622.32,
+      "no_speech_prob": 0.0,
+      "start": 4619.32,
+      "text": "加快攻打台湾"
+    },
+    {
+      "avg_logprob": -0.132955,
+      "compression_ratio": 1.265823,
+      "end": 4625.4,
+      "no_speech_prob": 0.0,
+      "start": 4622.32,
+      "text": "而且我深信"
+    },
+    {
+      "avg_logprob": -0.132955,
+      "compression_ratio": 1.265823,
+      "end": 4628.98,
+      "no_speech_prob": 0.0,
+      "start": 4625.4,
+      "text": "很快中共就跟俄罗斯会出现裂痕"
+    },
+    {
+      "avg_logprob": -0.132955,
+      "compression_ratio": 1.265823,
+      "end": 4631.94,
+      "no_speech_prob": 0.0,
+      "start": 4628.98,
+      "text": "这种裂痕"
+    },
+    {
+      "avg_logprob": -0.132955,
+      "compression_ratio": 1.265823,
+      "end": 4635.08,
+      "no_speech_prob": 0.0,
+      "start": 4631.94,
+      "text": "会加速中国内部的隔离清零"
+    },
+    {
+      "avg_logprob": -0.132955,
+      "compression_ratio": 1.265823,
+      "end": 4637.02,
+      "no_speech_prob": 0.0,
+      "start": 4635.08,
+      "text": "社会这种"
+    },
+    {
+      "avg_logprob": -0.132955,
+      "compression_ratio": 1.265823,
+      "end": 4640.5,
+      "no_speech_prob": 0.0,
+      "start": 4637.02,
+      "text": "所有给习近平和共产党带来的各种挑战"
+    },
+    {
+      "avg_logprob": -0.132955,
+      "compression_ratio": 1.265823,
+      "end": 4642.0,
+      "no_speech_prob": 0.0,
+      "start": 4640.5,
+      "text": "他们唯一的手段"
+    },
+    {
+      "avg_logprob": -0.132955,
+      "compression_ratio": 1.265823,
+      "end": 4643.84,
+      "no_speech_prob": 0.0,
+      "start": 4642.0,
+      "text": "就是统治压迫中国人民"
+    },
+    {
+      "avg_logprob": -0.132955,
+      "compression_ratio": 1.265823,
+      "end": 4646.94,
+      "no_speech_prob": 0.0,
+      "start": 4643.84,
+      "text": "中国人民近期内会有更苦"
+    },
+    {
+      "avg_logprob": -0.132955,
+      "compression_ratio": 1.265823,
+      "end": 4648.72,
+      "no_speech_prob": 0.0,
+      "start": 4646.94,
+      "text": "更可怕的日子"
+    },
+    {
+      "avg_logprob": -0.132955,
+      "compression_ratio": 1.265823,
+      "end": 4651.0,
+      "no_speech_prob": 0.0,
+      "start": 4648.72,
+      "text": "但是这是黎明前的黑暗"
+    },
+    {
+      "avg_logprob": -0.144223,
+      "compression_ratio": 1.208145,
+      "end": 4653.1,
+      "no_speech_prob": 0.0,
+      "start": 4651.0,
+      "text": "希望所有的同胞们"
+    },
+    {
+      "avg_logprob": -0.144223,
+      "compression_ratio": 1.208145,
+      "end": 4658.46,
+      "no_speech_prob": 0.0,
+      "start": 4653.1,
+      "text": "你们能活到阳光出来的那一刻"
+    },
+    {
+      "avg_logprob": -0.144223,
+      "compression_ratio": 1.208145,
+      "end": 4660.86,
+      "no_speech_prob": 0.0,
+      "start": 4658.46,
+      "text": "不要死亡在黑暗里"
+    },
+    {
+      "avg_logprob": -0.144223,
+      "compression_ratio": 1.208145,
+      "end": 4664.14,
+      "no_speech_prob": 0.0,
+      "start": 4660.86,
+      "text": "世界我认为这次是巨变"
+    },
+    {
+      "avg_logprob": -0.144223,
+      "compression_ratio": 1.208145,
+      "end": 4668.66,
+      "no_speech_prob": 0.0,
+      "start": 4664.14,
+      "text": "同时也因为有上帝正义之手"
+    },
+    {
+      "avg_logprob": -0.144223,
+      "compression_ratio": 1.208145,
+      "end": 4672.92,
+      "no_speech_prob": 0.0,
+      "start": 4668.66,
+      "text": "会把普京和习近平和共产党"
+    },
+    {
+      "avg_logprob": -0.144223,
+      "compression_ratio": 1.208145,
+      "end": 4673.98,
+      "no_speech_prob": 0.0,
+      "start": 4672.92,
+      "text": "和俄罗斯这些"
+    },
+    {
+      "avg_logprob": -0.144223,
+      "compression_ratio": 1.208145,
+      "end": 4676.86,
+      "no_speech_prob": 0.0,
+      "start": 4673.98,
+      "text": "所有的这些盗国组织"
+    },
+    {
+      "avg_logprob": -0.144223,
+      "compression_ratio": 1.208145,
+      "end": 4678.26,
+      "no_speech_prob": 0.0,
+      "start": 4676.86,
+      "text": "彻底残除"
+    },
+    {
+      "avg_logprob": -0.144223,
+      "compression_ratio": 1.208145,
+      "end": 4680.12,
+      "no_speech_prob": 0.0,
+      "start": 4678.26,
+      "text": "还世界一个公平"
+    },
+    {
+      "avg_logprob": -0.342512,
+      "compression_ratio": 0.857143,
+      "end": 4681.32,
+      "no_speech_prob": 0.0,
+      "start": 4680.12,
+      "text": "还世界一个和平"
+    },
+    {
+      "avg_logprob": -0.342512,
+      "compression_ratio": 0.857143,
+      "end": 4684.28,
+      "no_speech_prob": 0.0,
+      "start": 4681.32,
+      "text": "一切都已经开始了"
+    },
+    {
+      "avg_logprob": -0.342512,
+      "compression_ratio": 0.857143,
+      "end": 4685.22,
+      "no_speech_prob": 0.0,
+      "start": 4684.28,
+      "text": "谢谢兄弟姐妹们"
+    },
+    {
+      "avg_logprob": -0.394065,
+      "compression_ratio": 0.830769,
+      "end": 4734.22,
+      "no_speech_prob": 0.0,
+      "start": 4715.22,
+      "text": "黄黄的夜晚霓虹灯璀"
+    },
+    {
+      "avg_logprob": -0.394065,
+      "compression_ratio": 0.830769,
+      "end": 4742.22,
+      "no_speech_prob": 0.0,
+      "start": 4734.22,
+      "text": "点亮黑暗赶不走孤单"
+    },
+    {
+      "avg_logprob": -0.118515,
+      "compression_ratio": 0.9375,
+      "end": 4750.22,
+      "no_speech_prob": 0.0,
+      "start": 4742.22,
+      "text": "午夜和白天不停地转换"
+    },
+    {
+      "avg_logprob": -0.118515,
+      "compression_ratio": 0.9375,
+      "end": 4759.22,
+      "no_speech_prob": 0.0,
+      "start": 4750.22,
+      "text": "游走在街头思念的孤单"
+    },
+    {
+      "avg_logprob": -0.118515,
+      "compression_ratio": 0.9375,
+      "end": 4766.22,
+      "no_speech_prob": 0.0,
+      "start": 4759.22,
+      "text": "想起的宽欢总是很短暂"
+    },
+    {
+      "avg_logprob": -0.084451,
+      "compression_ratio": 0.84507,
+      "end": 4774.22,
+      "no_speech_prob": 0.0,
+      "start": 4766.22,
+      "text": "占有的怀抱总让我温暖"
+    },
+    {
+      "avg_logprob": -0.084451,
+      "compression_ratio": 0.84507,
+      "end": 4781.22,
+      "no_speech_prob": 0.0,
+      "start": 4774.22,
+      "text": "无聊的回忆让人很心烦"
+    },
+    {
+      "avg_logprob": -0.129557,
+      "compression_ratio": 0.855263,
+      "end": 4791.22,
+      "no_speech_prob": 0.0,
+      "start": 4781.22,
+      "text": "我又想你了 占有在哪端"
+    },
+    {
+      "avg_logprob": -0.129557,
+      "compression_ratio": 0.855263,
+      "end": 4797.22,
+      "no_speech_prob": 0.0,
+      "start": 4791.22,
+      "text": "没有你陪伴 我真的好孤单"
+    },
+    {
+      "avg_logprob": -0.096187,
+      "compression_ratio": 0.920354,
+      "end": 4805.22,
+      "no_speech_prob": 0.0,
+      "start": 4797.22,
+      "text": "我的心好慌乱 不知怎么办"
+    },
+    {
+      "avg_logprob": -0.096187,
+      "compression_ratio": 0.920354,
+      "end": 4812.22,
+      "no_speech_prob": 0.0,
+      "start": 4805.22,
+      "text": "没有占有的日子 我真的好茫然"
+    },
+    {
+      "avg_logprob": -0.096187,
+      "compression_ratio": 0.920354,
+      "end": 4819.22,
+      "no_speech_prob": 0.0,
+      "start": 4812.22,
+      "text": "整天就像丢了灵魂一半"
+    },
+    {
+      "avg_logprob": -0.072383,
+      "compression_ratio": 0.990566,
+      "end": 4826.22,
+      "no_speech_prob": 0.0,
+      "start": 4819.22,
+      "text": "没有你陪伴 我真的好孤单"
+    },
+    {
+      "avg_logprob": -0.072383,
+      "compression_ratio": 0.990566,
+      "end": 4832.22,
+      "no_speech_prob": 0.0,
+      "start": 4826.22,
+      "text": "我的心好慌乱 不知怎么办"
+    },
+    {
+      "avg_logprob": -0.072383,
+      "compression_ratio": 0.990566,
+      "end": 4840.22,
+      "no_speech_prob": 0.0,
+      "start": 4832.22,
+      "text": "你们不在身边 真的好不习惯"
+    },
+    {
+      "avg_logprob": -0.285549,
+      "compression_ratio": 0.755556,
+      "end": 4850.22,
+      "no_speech_prob": 0.0,
+      "start": 4840.22,
+      "text": "我的泪已流干 你们管不管"
+    },
+    {
+      "avg_logprob": -4.684477,
+      "compression_ratio": 0.272727,
+      "end": 4880.22,
+      "no_speech_prob": 0.0,
+      "start": 4850.22,
+      "text": "2%!"
+    },
+    {
+      "avg_logprob": -0.40344,
+      "compression_ratio": 0.944444,
+      "end": 4885.56,
+      "no_speech_prob": 0.0,
+      "start": 4880.22,
+      "text": "黎红灯最散"
+    },
+    {
+      "avg_logprob": -0.40344,
+      "compression_ratio": 0.944444,
+      "end": 4887.32,
+      "no_speech_prob": 0.0,
+      "start": 4885.56,
+      "text": "点亮黑暗"
+    },
+    {
+      "avg_logprob": -0.40344,
+      "compression_ratio": 0.944444,
+      "end": 4892.86,
+      "no_speech_prob": 0.0,
+      "start": 4887.32,
+      "text": "赶不走孤单"
+    },
+    {
+      "avg_logprob": -0.40344,
+      "compression_ratio": 0.944444,
+      "end": 4896.46,
+      "no_speech_prob": 0.0,
+      "start": 4892.86,
+      "text": "午夜和白天"
+    },
+    {
+      "avg_logprob": -0.40344,
+      "compression_ratio": 0.944444,
+      "end": 4900.12,
+      "no_speech_prob": 0.0,
+      "start": 4896.46,
+      "text": "不停的转换"
+    },
+    {
+      "avg_logprob": -0.40344,
+      "compression_ratio": 0.944444,
+      "end": 4903.66,
+      "no_speech_prob": 0.0,
+      "start": 4900.12,
+      "text": "游走在街头"
+    },
+    {
+      "avg_logprob": -0.40344,
+      "compression_ratio": 0.944444,
+      "end": 4909.16,
+      "no_speech_prob": 0.0,
+      "start": 4903.66,
+      "text": "思念的孤单"
+    },
+    {
+      "avg_logprob": -0.16247,
+      "compression_ratio": 0.957447,
+      "end": 4916.42,
+      "no_speech_prob": 0.0,
+      "start": 4909.16,
+      "text": "想起的狂欢总是很短暂"
+    },
+    {
+      "avg_logprob": -0.16247,
+      "compression_ratio": 0.957447,
+      "end": 4923.72,
+      "no_speech_prob": 0.0,
+      "start": 4916.42,
+      "text": "占有的怀抱总让我温暖"
+    },
+    {
+      "avg_logprob": -0.16247,
+      "compression_ratio": 0.957447,
+      "end": 4931.0,
+      "no_speech_prob": 0.0,
+      "start": 4923.72,
+      "text": "无聊的回忆让人很心烦"
+    },
+    {
+      "avg_logprob": -0.34158,
+      "compression_ratio": 0.731707,
+      "end": 4934.56,
+      "no_speech_prob": 0.0,
+      "start": 4931.0,
+      "text": "我又想你了"
+    },
+    {
+      "avg_logprob": -0.34158,
+      "compression_ratio": 0.731707,
+      "end": 4938.26,
+      "no_speech_prob": 0.0,
+      "start": 4934.56,
+      "text": "占有在那端"
+    },
+    {
+      "avg_logprob": -0.14658,
+      "compression_ratio": 0.75,
+      "end": 4945.52,
+      "no_speech_prob": 0.0,
+      "start": 4938.26,
+      "text": "没有你陪伴我真的好孤单"
+    },
+    {
+      "avg_logprob": -0.275575,
+      "compression_ratio": 0.954545,
+      "end": 4952.78,
+      "no_speech_prob": 0.0,
+      "start": 4945.52,
+      "text": "我的心好慌乱不知怎么办"
+    },
+    {
+      "avg_logprob": -0.275575,
+      "compression_ratio": 0.954545,
+      "end": 4956.52,
+      "no_speech_prob": 0.0,
+      "start": 4952.78,
+      "text": "没有占有我的日子"
+    },
+    {
+      "avg_logprob": -0.275575,
+      "compression_ratio": 0.954545,
+      "end": 4960.78,
+      "no_speech_prob": 0.0,
+      "start": 4956.52,
+      "text": "我真的好茫然"
+    },
+    {
+      "avg_logprob": -0.275575,
+      "compression_ratio": 0.954545,
+      "end": 4966.78,
+      "no_speech_prob": 0.0,
+      "start": 4960.78,
+      "text": "整天就像丢了灵魂一般"
+    },
+    {
+      "avg_logprob": -0.184367,
+      "compression_ratio": 0.75,
+      "end": 4974.04,
+      "no_speech_prob": 0.0,
+      "start": 4966.78,
+      "text": "没有你陪伴我真的好孤单"
+    },
+    {
+      "avg_logprob": -0.328971,
+      "compression_ratio": 0.884615,
+      "end": 4981.3,
+      "no_speech_prob": 0.0,
+      "start": 4974.04,
+      "text": "我的心好慌乱不知怎么办"
+    },
+    {
+      "avg_logprob": -0.328971,
+      "compression_ratio": 0.884615,
+      "end": 4985.04,
+      "no_speech_prob": 0.0,
+      "start": 4981.3,
+      "text": "你们不在身边"
+    },
+    {
+      "avg_logprob": -0.328971,
+      "compression_ratio": 0.884615,
+      "end": 4989.04,
+      "no_speech_prob": 0.0,
+      "start": 4985.04,
+      "text": "真的好不习惯"
+    },
+    {
+      "avg_logprob": -0.830769,
+      "compression_ratio": 0.822581,
+      "end": 4990.04,
+      "no_speech_prob": 0.0,
+      "start": 4989.04,
+      "text": "我都不在身边"
+    },
+    {
+      "avg_logprob": -0.830769,
+      "compression_ratio": 0.822581,
+      "end": 4992.04,
+      "no_speech_prob": 0.0,
+      "start": 4990.04,
+      "text": "我的泪已流干"
+    },
+    {
+      "avg_logprob": -0.830769,
+      "compression_ratio": 0.822581,
+      "end": 4996.04,
+      "no_speech_prob": 0.0,
+      "start": 4992.04,
+      "text": "你们管不管"
+    },
+    {
+      "avg_logprob": -3.801354,
+      "compression_ratio": 0.111111,
+      "end": 5019.95,
+      "no_speech_prob": 0.0,
+      "start": 4996.04,
+      "text": "?"
+    }
+  ],
+  "text": "谢谢大家阿弥陀佛阿弥陀佛我再次的感谢在俄罗斯的朋友们还有给我们提供这个信息的所有朋友们你们提供的信息我相信经过一年后被验证后我相信会拯救很多人我相信很多国家情报机关和国家军事机关相关国家得到验证后将有助于防范普京最后的疯狂同时制定普京和习近平本人这次见面后普京已经和习近平本人交流了关于他病情的这个整个情况而且普京明确告诉了习说他的病是没有问题的坚持几年没问题但是我相信习近平本人已经知道他十字不多我相信习近平先生本人正在安排土王后的后世这会加速习近平在中国国内加强独裁统治加强社会维稳加快攻打台湾而且我深信很快中共就跟俄罗斯会出现裂痕这种裂痕会加速中国内部的隔离清零社会这种所有给习近平和共产党带来的各种挑战他们唯一的手段就是统治压迫中国人民中国人民近期内会有更苦更可怕的日子但是这是黎明前的黑暗希望所有的同胞们你们能活到阳光出来的那一刻不要死亡在黑暗里世界我认为这次是巨变同时也因为有上帝正义之手会把普京和习近平和共产党和俄罗斯这些所有的这些盗国组织彻底残除还世界一个公平还世界一个和平一切都已经开始了谢谢兄弟姐妹们黄黄的夜晚霓虹灯璀点亮黑暗赶不走孤单午夜和白天不停地转换游走在街头思念的孤单想起的宽欢总是很短暂占有的怀抱总让我温暖无聊的回忆让人很心烦我又想你了 占有在哪端没有你陪伴 我真的好孤单我的心好慌乱 不知怎么办没有占有的日子 我真的好茫然整天就像丢了灵魂一半没有你陪伴 我真的好孤单我的心好慌乱 不知怎么办你们不在身边 真的好不习惯我的泪已流干 你们管不管2%!黎红灯最散点亮黑暗赶不走孤单午夜和白天不停的转换游走在街头思念的孤单想起的狂欢总是很短暂占有的怀抱总让我温暖无聊的回忆让人很心烦我又想你了占有在那端没有你陪伴我真的好孤单我的心好慌乱不知怎么办没有占有我的日子我真的好茫然整天就像丢了灵魂一般没有你陪伴我真的好孤单我的心好慌乱不知怎么办你们不在身边真的好不习惯我都不在身边我的泪已流干你们管不管?"
+}

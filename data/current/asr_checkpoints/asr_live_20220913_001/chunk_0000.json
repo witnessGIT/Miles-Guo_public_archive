@@ -1,0 +1,2024 @@
+{
+  "chunk_audio_sha256": "c417cdbec31575cdcbb3e2f27c7654dbc9e68f4c0f7536e0c0503b34337edc98",
+  "chunk_index": 0,
+  "completed_at": "2026-10-28T18:06:25Z",
+  "language": "zh",
+  "live_id": "LIVE_20220913_001",
+  "media_committed_to_git": false,
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "offset_sec": 0,
+  "paid_api_used": false,
+  "processing_location": "github-hosted-macos-arm64",
+  "schema_version": "cloud-asr-chunk-v1",
+  "segments": [
+    {
+      "avg_logprob": -0.766927,
+      "compression_ratio": 0.571429,
+      "end": 29.98,
+      "no_speech_prob": 0.0,
+      "start": 0.0,
+      "text": "谢谢大家"
+    },
+    {
+      "avg_logprob": -0.318093,
+      "compression_ratio": 0.571429,
+      "end": 59.98,
+      "no_speech_prob": 0.0,
+      "start": 30.0,
+      "text": "谢谢大家"
+    },
+    {
+      "avg_logprob": -0.684602,
+      "compression_ratio": 0.571429,
+      "end": 89.98,
+      "no_speech_prob": 0.0,
+      "start": 60.0,
+      "text": "欢迎订阅"
+    },
+    {
+      "avg_logprob": -0.341387,
+      "compression_ratio": 0.84507,
+      "end": 92.48,
+      "no_speech_prob": 0.0,
+      "start": 89.98,
+      "text": "游走在街头"
+    },
+    {
+      "avg_logprob": -0.341387,
+      "compression_ratio": 0.84507,
+      "end": 96.12,
+      "no_speech_prob": 0.0,
+      "start": 92.48,
+      "text": "思念的孤单"
+    },
+    {
+      "avg_logprob": -0.341387,
+      "compression_ratio": 0.84507,
+      "end": 103.48,
+      "no_speech_prob": 0.0,
+      "start": 96.12,
+      "text": "想起的狂欢总是很短暂"
+    },
+    {
+      "avg_logprob": -0.176113,
+      "compression_ratio": 0.84507,
+      "end": 111.08,
+      "no_speech_prob": 0.0,
+      "start": 103.48,
+      "text": "战友的怀抱总让我温暖"
+    },
+    {
+      "avg_logprob": -0.176113,
+      "compression_ratio": 0.84507,
+      "end": 120.04,
+      "no_speech_prob": 0.0,
+      "start": 111.08,
+      "text": "无聊的回忆让人很心烦"
+    },
+    {
+      "avg_logprob": -0.309364,
+      "compression_ratio": 0.851351,
+      "end": 123.54,
+      "no_speech_prob": 0.0,
+      "start": 120.04,
+      "text": "我又想你了"
+    },
+    {
+      "avg_logprob": -0.309364,
+      "compression_ratio": 0.851351,
+      "end": 127.64,
+      "no_speech_prob": 0.0,
+      "start": 123.54,
+      "text": "战友在哪端"
+    },
+    {
+      "avg_logprob": -0.309364,
+      "compression_ratio": 0.851351,
+      "end": 132.48,
+      "no_speech_prob": 0.0,
+      "start": 127.64,
+      "text": "没有你陪伴"
+    },
+    {
+      "avg_logprob": -0.309364,
+      "compression_ratio": 0.851351,
+      "end": 136.32,
+      "no_speech_prob": 0.0,
+      "start": 132.48,
+      "text": "我真的好孤单"
+    },
+    {
+      "avg_logprob": -0.256406,
+      "compression_ratio": 0.888889,
+      "end": 141.92,
+      "no_speech_prob": 0.0,
+      "start": 136.32,
+      "text": "我的心好慌乱不知怎么办"
+    },
+    {
+      "avg_logprob": -0.256406,
+      "compression_ratio": 0.888889,
+      "end": 146.78,
+      "no_speech_prob": 0.0,
+      "start": 141.92,
+      "text": "没有战友的日子"
+    },
+    {
+      "avg_logprob": -0.256406,
+      "compression_ratio": 0.888889,
+      "end": 151.04,
+      "no_speech_prob": 0.0,
+      "start": 146.78,
+      "text": "我真的好茫然"
+    },
+    {
+      "avg_logprob": -0.246227,
+      "compression_ratio": 0.851351,
+      "end": 158.64,
+      "no_speech_prob": 0.0,
+      "start": 151.04,
+      "text": "整天就像丢了灵魂一半"
+    },
+    {
+      "avg_logprob": -0.246227,
+      "compression_ratio": 0.851351,
+      "end": 161.54,
+      "no_speech_prob": 0.0,
+      "start": 158.64,
+      "text": "没有你陪伴"
+    },
+    {
+      "avg_logprob": -0.246227,
+      "compression_ratio": 0.851351,
+      "end": 165.44,
+      "no_speech_prob": 0.0,
+      "start": 161.54,
+      "text": "我真的好孤单"
+    },
+    {
+      "avg_logprob": -0.210866,
+      "compression_ratio": 0.884615,
+      "end": 171.04,
+      "no_speech_prob": 0.0,
+      "start": 165.44,
+      "text": "我的心好慌乱不知怎么办"
+    },
+    {
+      "avg_logprob": -0.210866,
+      "compression_ratio": 0.884615,
+      "end": 175.94,
+      "no_speech_prob": 0.0,
+      "start": 171.04,
+      "text": "你们不在身边"
+    },
+    {
+      "avg_logprob": -0.210866,
+      "compression_ratio": 0.884615,
+      "end": 179.74,
+      "no_speech_prob": 0.0,
+      "start": 175.94,
+      "text": "真的好不习惯"
+    },
+    {
+      "avg_logprob": -0.385058,
+      "compression_ratio": 0.75,
+      "end": 182.64,
+      "no_speech_prob": 0.0,
+      "start": 179.74,
+      "text": "我的泪已流干"
+    },
+    {
+      "avg_logprob": -0.385058,
+      "compression_ratio": 0.75,
+      "end": 185.18,
+      "no_speech_prob": 0.0,
+      "start": 182.64,
+      "text": "你们管不管"
+    },
+    {
+      "avg_logprob": -5.025723,
+      "compression_ratio": 0.62069,
+      "end": 201.24,
+      "no_speech_prob": 0.0,
+      "start": 185.18,
+      "text": "你知道便留望"
+    },
+    {
+      "avg_logprob": -0.621096,
+      "compression_ratio": 0.788462,
+      "end": 217.24,
+      "no_speech_prob": 0.0,
+      "start": 201.24,
+      "text": "Zither Harp"
+    },
+    {
+      "avg_logprob": -0.621096,
+      "compression_ratio": 0.788462,
+      "end": 224.24,
+      "no_speech_prob": 0.0,
+      "start": 217.24,
+      "text": "风豪的夜晚霓虹灯最伤"
+    },
+    {
+      "avg_logprob": -0.145668,
+      "compression_ratio": 0.945652,
+      "end": 231.24,
+      "no_speech_prob": 0.0,
+      "start": 224.24,
+      "text": "天亮黑暗干不走孤单"
+    },
+    {
+      "avg_logprob": -0.145668,
+      "compression_ratio": 0.945652,
+      "end": 238.24,
+      "no_speech_prob": 0.0,
+      "start": 231.24,
+      "text": "午夜和白天不停的转换"
+    },
+    {
+      "avg_logprob": -0.145668,
+      "compression_ratio": 0.945652,
+      "end": 247.24,
+      "no_speech_prob": 0.0,
+      "start": 238.24,
+      "text": "游走在街头四面的孤单"
+    },
+    {
+      "avg_logprob": -0.083203,
+      "compression_ratio": 0.957447,
+      "end": 254.24,
+      "no_speech_prob": 0.0,
+      "start": 247.24,
+      "text": "想起的狂欢总是很短暂"
+    },
+    {
+      "avg_logprob": -0.083203,
+      "compression_ratio": 0.957447,
+      "end": 261.24,
+      "no_speech_prob": 0.0,
+      "start": 254.24,
+      "text": "占有的怀抱总让我温暖"
+    },
+    {
+      "avg_logprob": -0.083203,
+      "compression_ratio": 0.957447,
+      "end": 269.24,
+      "no_speech_prob": 0.0,
+      "start": 261.24,
+      "text": "无聊的回忆让人很心烦"
+    },
+    {
+      "avg_logprob": -0.1091,
+      "compression_ratio": 0.96,
+      "end": 273.24,
+      "no_speech_prob": 0.0,
+      "start": 269.24,
+      "text": "我又想你了"
+    },
+    {
+      "avg_logprob": -0.1091,
+      "compression_ratio": 0.96,
+      "end": 278.24,
+      "no_speech_prob": 0.0,
+      "start": 273.24,
+      "text": "占有在那端"
+    },
+    {
+      "avg_logprob": -0.1091,
+      "compression_ratio": 0.96,
+      "end": 281.24,
+      "no_speech_prob": 0.0,
+      "start": 278.24,
+      "text": "没有你陪伴"
+    },
+    {
+      "avg_logprob": -0.1091,
+      "compression_ratio": 0.96,
+      "end": 285.24,
+      "no_speech_prob": 0.0,
+      "start": 281.24,
+      "text": "我真的好孤单"
+    },
+    {
+      "avg_logprob": -0.1091,
+      "compression_ratio": 0.96,
+      "end": 288.24,
+      "no_speech_prob": 0.0,
+      "start": 285.24,
+      "text": "我的心好慌乱"
+    },
+    {
+      "avg_logprob": -0.1091,
+      "compression_ratio": 0.96,
+      "end": 292.24,
+      "no_speech_prob": 0.0,
+      "start": 288.24,
+      "text": "不知怎么办"
+    },
+    {
+      "avg_logprob": -0.134154,
+      "compression_ratio": 1.086614,
+      "end": 295.24,
+      "no_speech_prob": 0.0,
+      "start": 292.24,
+      "text": "没有占有我的日子"
+    },
+    {
+      "avg_logprob": -0.134154,
+      "compression_ratio": 1.086614,
+      "end": 299.24,
+      "no_speech_prob": 0.0,
+      "start": 295.24,
+      "text": "我真的好茂然"
+    },
+    {
+      "avg_logprob": -0.134154,
+      "compression_ratio": 1.086614,
+      "end": 305.24,
+      "no_speech_prob": 0.0,
+      "start": 299.24,
+      "text": "整天就像丢了灵魂一半"
+    },
+    {
+      "avg_logprob": -0.134154,
+      "compression_ratio": 1.086614,
+      "end": 310.24,
+      "no_speech_prob": 0.0,
+      "start": 305.24,
+      "text": "没有你陪伴"
+    },
+    {
+      "avg_logprob": -0.134154,
+      "compression_ratio": 1.086614,
+      "end": 313.24,
+      "no_speech_prob": 0.0,
+      "start": 310.24,
+      "text": "我真的好孤单"
+    },
+    {
+      "avg_logprob": -0.134154,
+      "compression_ratio": 1.086614,
+      "end": 316.24,
+      "no_speech_prob": 0.0,
+      "start": 313.24,
+      "text": "我的心好慌乱"
+    },
+    {
+      "avg_logprob": -0.134154,
+      "compression_ratio": 1.086614,
+      "end": 319.24,
+      "no_speech_prob": 0.0,
+      "start": 316.24,
+      "text": "不知怎么办"
+    },
+    {
+      "avg_logprob": -0.171547,
+      "compression_ratio": 0.916667,
+      "end": 325.24,
+      "no_speech_prob": 0.0,
+      "start": 319.24,
+      "text": "你们不在身边"
+    },
+    {
+      "avg_logprob": -0.171547,
+      "compression_ratio": 0.916667,
+      "end": 329.24,
+      "no_speech_prob": 0.0,
+      "start": 325.24,
+      "text": "真的好不习惯"
+    },
+    {
+      "avg_logprob": -0.171547,
+      "compression_ratio": 0.916667,
+      "end": 331.24,
+      "no_speech_prob": 0.0,
+      "start": 329.24,
+      "text": "我的泪流干"
+    },
+    {
+      "avg_logprob": -0.171547,
+      "compression_ratio": 0.916667,
+      "end": 335.24,
+      "no_speech_prob": 0.0,
+      "start": 331.24,
+      "text": "你们管不管"
+    },
+    {
+      "avg_logprob": -4.779417,
+      "compression_ratio": 0.84507,
+      "end": 349.24,
+      "no_speech_prob": 0.0,
+      "start": 335.24,
+      "text": "你们不能听 vaz Mol体"
+    },
+    {
+      "avg_logprob": -4.779417,
+      "compression_ratio": 0.84507,
+      "end": 352.24,
+      "no_speech_prob": 0.0,
+      "start": 349.24,
+      "text": "你要éch曲"
+    },
+    {
+      "avg_logprob": -4.779417,
+      "compression_ratio": 0.84507,
+      "end": 357.24,
+      "no_speech_prob": 0.0,
+      "start": 352.24,
+      "text": "谁无声"
+    },
+    {
+      "avg_logprob": -4.779417,
+      "compression_ratio": 0.84507,
+      "end": 361.24,
+      "no_speech_prob": 0.0,
+      "start": 357.24,
+      "text": "Technically"
+    },
+    {
+      "avg_logprob": -0.543742,
+      "compression_ratio": 0.694444,
+      "end": 391.22,
+      "no_speech_prob": 0.0,
+      "start": 361.24,
+      "text": "字幕志愿者 李宗盛"
+    },
+    {
+      "avg_logprob": -0.275652,
+      "compression_ratio": 1.267782,
+      "end": 393.88,
+      "no_speech_prob": 0.0,
+      "start": 391.24,
+      "text": "9月13号尊敬的战友们好"
+    },
+    {
+      "avg_logprob": -0.275652,
+      "compression_ratio": 1.267782,
+      "end": 398.24,
+      "no_speech_prob": 0.0,
+      "start": 393.88,
+      "text": "七哥好久没有在这个3C直播了"
+    },
+    {
+      "avg_logprob": -0.275652,
+      "compression_ratio": 1.267782,
+      "end": 402.02,
+      "no_speech_prob": 0.0,
+      "start": 398.24,
+      "text": "哎呀我这衣服好好的怎么知道你给我弄得周周八八的呀"
+    },
+    {
+      "avg_logprob": -0.275652,
+      "compression_ratio": 1.267782,
+      "end": 406.24,
+      "no_speech_prob": 0.0,
+      "start": 402.02,
+      "text": "你两口子咋把我丑化成这样啊"
+    },
+    {
+      "avg_logprob": -0.275652,
+      "compression_ratio": 1.267782,
+      "end": 408.88,
+      "no_speech_prob": 0.0,
+      "start": 406.24,
+      "text": "这不咋看我像要饭的呀"
+    },
+    {
+      "avg_logprob": -0.275652,
+      "compression_ratio": 1.267782,
+      "end": 411.46,
+      "no_speech_prob": 0.0,
+      "start": 408.88,
+      "text": "所以币价大迭呀"
+    },
+    {
+      "avg_logprob": -0.275652,
+      "compression_ratio": 1.267782,
+      "end": 414.88,
+      "no_speech_prob": 0.0,
+      "start": 411.46,
+      "text": "好像有点涨啊"
+    },
+    {
+      "avg_logprob": -0.275652,
+      "compression_ratio": 1.267782,
+      "end": 416.7,
+      "no_speech_prob": 0.0,
+      "start": 414.88,
+      "text": "尊敬战友们好 9月13号"
+    },
+    {
+      "avg_logprob": -0.275652,
+      "compression_ratio": 1.267782,
+      "end": 419.68,
+      "no_speech_prob": 0.0,
+      "start": 416.7,
+      "text": "今天是七哥突然直播"
+    },
+    {
+      "avg_logprob": -0.150204,
+      "compression_ratio": 1.306513,
+      "end": 422.32,
+      "no_speech_prob": 0.0,
+      "start": 419.68,
+      "text": "就是因为明天上午的星期三大直播"
+    },
+    {
+      "avg_logprob": -0.150204,
+      "compression_ratio": 1.306513,
+      "end": 425.16,
+      "no_speech_prob": 0.0,
+      "start": 422.32,
+      "text": "因为明天上午开律师的会议"
+    },
+    {
+      "avg_logprob": -0.150204,
+      "compression_ratio": 1.306513,
+      "end": 428.44,
+      "no_speech_prob": 0.0,
+      "start": 425.16,
+      "text": "还有另外一个案子叫deposition"
+    },
+    {
+      "avg_logprob": -0.150204,
+      "compression_ratio": 1.306513,
+      "end": 431.8,
+      "no_speech_prob": 0.0,
+      "start": 428.44,
+      "text": "所以说我就是得尊重律师"
+    },
+    {
+      "avg_logprob": -0.150204,
+      "compression_ratio": 1.306513,
+      "end": 433.54,
+      "no_speech_prob": 0.0,
+      "start": 431.8,
+      "text": "还有法律第一重要"
+    },
+    {
+      "avg_logprob": -0.150204,
+      "compression_ratio": 1.306513,
+      "end": 436.7,
+      "no_speech_prob": 0.0,
+      "start": 433.54,
+      "text": "所以说呢我就决定今天把明天的直播"
+    },
+    {
+      "avg_logprob": -0.150204,
+      "compression_ratio": 1.306513,
+      "end": 437.98,
+      "no_speech_prob": 0.0,
+      "start": 436.7,
+      "text": "提前给播了"
+    },
+    {
+      "avg_logprob": -0.150204,
+      "compression_ratio": 1.306513,
+      "end": 440.22,
+      "no_speech_prob": 0.0,
+      "start": 437.98,
+      "text": "但我好久已经没在这直播了"
+    },
+    {
+      "avg_logprob": -0.150204,
+      "compression_ratio": 1.306513,
+      "end": 442.22,
+      "no_speech_prob": 0.0,
+      "start": 440.22,
+      "text": "都让那个Niko给占领了"
+    },
+    {
+      "avg_logprob": -0.150204,
+      "compression_ratio": 1.306513,
+      "end": 445.84,
+      "no_speech_prob": 0.0,
+      "start": 442.22,
+      "text": "我发现我这回来以后私诚熟悉"
+    },
+    {
+      "avg_logprob": -0.298042,
+      "compression_ratio": 1.251366,
+      "end": 448.48,
+      "no_speech_prob": 0.0,
+      "start": 445.84,
+      "text": "但是有感觉不一样啊"
+    },
+    {
+      "avg_logprob": -0.298042,
+      "compression_ratio": 1.251366,
+      "end": 450.48,
+      "no_speech_prob": 0.0,
+      "start": 448.48,
+      "text": "设备多了啊"
+    },
+    {
+      "avg_logprob": -0.298042,
+      "compression_ratio": 1.251366,
+      "end": 452.44,
+      "no_speech_prob": 0.0,
+      "start": 450.48,
+      "text": "人这个现在专业人士多了"
+    },
+    {
+      "avg_logprob": -0.298042,
+      "compression_ratio": 1.251366,
+      "end": 454.6,
+      "no_speech_prob": 0.0,
+      "start": 452.44,
+      "text": "我的西装整的皱巴了是吧"
+    },
+    {
+      "avg_logprob": -0.298042,
+      "compression_ratio": 1.251366,
+      "end": 457.6,
+      "no_speech_prob": 0.0,
+      "start": 454.6,
+      "text": "然后呢Niko越来越年轻七哥越来越老"
+    },
+    {
+      "avg_logprob": -0.298042,
+      "compression_ratio": 1.251366,
+      "end": 462.32,
+      "no_speech_prob": 0.0,
+      "start": 457.6,
+      "text": "然后村长现在不像村长了已经不是副市长到省长了已经啊"
+    },
+    {
+      "avg_logprob": -0.187142,
+      "compression_ratio": 1.25,
+      "end": 467.96,
+      "no_speech_prob": 0.0,
+      "start": 462.32,
+      "text": "然后今天这里感到无限的温馨大家庭的感觉很开心"
+    },
+    {
+      "avg_logprob": -0.187142,
+      "compression_ratio": 1.25,
+      "end": 473.96,
+      "no_speech_prob": 0.0,
+      "start": 467.96,
+      "text": "今天从早上大家知道从四点钟到现在吃了一顿饭啊"
+    },
+    {
+      "avg_logprob": -0.187142,
+      "compression_ratio": 1.25,
+      "end": 477.08,
+      "no_speech_prob": 0.0,
+      "start": 473.96,
+      "text": "我这是午饭都没吃晚饭也不想吃了啊"
+    },
+    {
+      "avg_logprob": -0.187142,
+      "compression_ratio": 1.25,
+      "end": 484.52,
+      "no_speech_prob": 0.0,
+      "start": 477.08,
+      "text": "然后呢看到喜悲从昨天前天到今天我盼望是跌到十块钱啊"
+    },
+    {
+      "avg_logprob": -0.225126,
+      "compression_ratio": 1.317073,
+      "end": 488.16,
+      "no_speech_prob": 0.0,
+      "start": 484.52,
+      "text": "我咋叛叠说一下就跌不了啊"
+    },
+    {
+      "avg_logprob": -0.225126,
+      "compression_ratio": 1.317073,
+      "end": 493.16,
+      "no_speech_prob": 0.0,
+      "start": 488.16,
+      "text": "刚才我们这个喊两嗓子战友们这直接还有涨上去了"
+    },
+    {
+      "avg_logprob": -0.225126,
+      "compression_ratio": 1.317073,
+      "end": 496.28,
+      "no_speech_prob": 0.0,
+      "start": 493.16,
+      "text": "本来我以为还会跌呢结果又涨上去了"
+    },
+    {
+      "avg_logprob": -0.225126,
+      "compression_ratio": 1.317073,
+      "end": 496.88,
+      "no_speech_prob": 0.0,
+      "start": 496.28,
+      "text": "嗯"
+    },
+    {
+      "avg_logprob": -0.225126,
+      "compression_ratio": 1.317073,
+      "end": 498.48,
+      "no_speech_prob": 0.0,
+      "start": 496.88,
+      "text": "咱先别聊币呢啊"
+    },
+    {
+      "avg_logprob": -0.225126,
+      "compression_ratio": 1.317073,
+      "end": 500.72,
+      "no_speech_prob": 0.0,
+      "start": 498.48,
+      "text": "看看今天的直播中这个币会什么样"
+    },
+    {
+      "avg_logprob": -0.225126,
+      "compression_ratio": 1.317073,
+      "end": 505.82,
+      "no_speech_prob": 0.0,
+      "start": 500.72,
+      "text": "咱们聊点跟这个币有更深远关系的啊"
+    },
+    {
+      "avg_logprob": -0.225126,
+      "compression_ratio": 1.317073,
+      "end": 511.28,
+      "no_speech_prob": 0.0,
+      "start": 505.82,
+      "text": "就是现在即将发生的哈萨克斯坦乌斯别克坦"
+    },
+    {
+      "avg_logprob": -0.193436,
+      "compression_ratio": 1.445455,
+      "end": 519.08,
+      "no_speech_prob": 0.0,
+      "start": 511.28,
+      "text": "大家知道啊我们这个乌斯别克坦刚刚也就是大概在一小时以前"
+    },
+    {
+      "avg_logprob": -0.193436,
+      "compression_ratio": 1.445455,
+      "end": 524.48,
+      "no_speech_prob": 0.0,
+      "start": 519.08,
+      "text": "乌斯别克坦的一位女的这个接待官啊"
+    },
+    {
+      "avg_logprob": -0.193436,
+      "compression_ratio": 1.445455,
+      "end": 525.48,
+      "no_speech_prob": 0.0,
+      "start": 524.48,
+      "text": "给我发信息"
+    },
+    {
+      "avg_logprob": -0.193436,
+      "compression_ratio": 1.445455,
+      "end": 526.52,
+      "no_speech_prob": 0.0,
+      "start": 525.48,
+      "text": "他说你看我准备啥呢"
+    },
+    {
+      "avg_logprob": -0.193436,
+      "compression_ratio": 1.445455,
+      "end": 527.8,
+      "no_speech_prob": 0.0,
+      "start": 526.52,
+      "text": "我说准备啥呢"
+    },
+    {
+      "avg_logprob": -0.193436,
+      "compression_ratio": 1.445455,
+      "end": 530.28,
+      "no_speech_prob": 0.0,
+      "start": 527.8,
+      "text": "我说啥呀这是啊"
+    },
+    {
+      "avg_logprob": -0.193436,
+      "compression_ratio": 1.445455,
+      "end": 533.24,
+      "no_speech_prob": 0.0,
+      "start": 530.28,
+      "text": "场面接待习太阳啊"
+    },
+    {
+      "avg_logprob": -0.193436,
+      "compression_ratio": 1.445455,
+      "end": 538.12,
+      "no_speech_prob": 0.0,
+      "start": 533.24,
+      "text": "我说你你那个表哥不是在哈萨克斯坦吗"
+    },
+    {
+      "avg_logprob": -0.193436,
+      "compression_ratio": 1.445455,
+      "end": 538.8,
+      "no_speech_prob": 0.0,
+      "start": 538.12,
+      "text": "他说是啊"
+    },
+    {
+      "avg_logprob": -0.193436,
+      "compression_ratio": 1.445455,
+      "end": 540.36,
+      "no_speech_prob": 0.0,
+      "start": 538.8,
+      "text": "你还记得这事呢"
+    },
+    {
+      "avg_logprob": -0.188481,
+      "compression_ratio": 1.268908,
+      "end": 543.36,
+      "no_speech_prob": 0.0,
+      "start": 540.36,
+      "text": "我说你跟你表哥要结婚当年没结成"
+    },
+    {
+      "avg_logprob": -0.188481,
+      "compression_ratio": 1.268908,
+      "end": 545.92,
+      "no_speech_prob": 0.0,
+      "start": 543.36,
+      "text": "他就被镇定到了"
+    },
+    {
+      "avg_logprob": -0.188481,
+      "compression_ratio": 1.268908,
+      "end": 549.36,
+      "no_speech_prob": 0.0,
+      "start": 545.92,
+      "text": "他说Miles哥你这个脑子简直不是人的脑子"
+    },
+    {
+      "avg_logprob": -0.188481,
+      "compression_ratio": 1.268908,
+      "end": 551.36,
+      "no_speech_prob": 0.0,
+      "start": 549.36,
+      "text": "多长时间你还记得"
+    },
+    {
+      "avg_logprob": -0.188481,
+      "compression_ratio": 1.268908,
+      "end": 553.36,
+      "no_speech_prob": 0.0,
+      "start": 551.36,
+      "text": "我说你表哥的名字我还都记得呢"
+    },
+    {
+      "avg_logprob": -0.188481,
+      "compression_ratio": 1.268908,
+      "end": 554.16,
+      "no_speech_prob": 0.0,
+      "start": 553.36,
+      "text": "啊"
+    },
+    {
+      "avg_logprob": -0.188481,
+      "compression_ratio": 1.268908,
+      "end": 556.32,
+      "no_speech_prob": 0.0,
+      "start": 554.16,
+      "text": "我这一说我吓一大跳"
+    },
+    {
+      "avg_logprob": -0.188481,
+      "compression_ratio": 1.268908,
+      "end": 557.7,
+      "no_speech_prob": 0.0,
+      "start": 556.32,
+      "text": "他说你知道吗"
+    },
+    {
+      "avg_logprob": -0.188481,
+      "compression_ratio": 1.268908,
+      "end": 561.7,
+      "no_speech_prob": 0.0,
+      "start": 557.7,
+      "text": "我表哥在哈萨克斯坦福泽接待其太阳"
+    },
+    {
+      "avg_logprob": -0.188481,
+      "compression_ratio": 1.268908,
+      "end": 564.36,
+      "no_speech_prob": 0.0,
+      "start": 561.7,
+      "text": "就这么伟大的事"
+    },
+    {
+      "avg_logprob": -0.277217,
+      "compression_ratio": 1.303665,
+      "end": 566.36,
+      "no_speech_prob": 0.0,
+      "start": 564.36,
+      "text": "我在两小时以前"
+    },
+    {
+      "avg_logprob": -0.277217,
+      "compression_ratio": 1.303665,
+      "end": 569.92,
+      "no_speech_prob": 0.0,
+      "start": 566.36,
+      "text": "哎两小时三小时我给我们的夏七冬啊"
+    },
+    {
+      "avg_logprob": -0.277217,
+      "compression_ratio": 1.303665,
+      "end": 570.92,
+      "no_speech_prob": 0.0,
+      "start": 569.92,
+      "text": "夏省长啊"
+    },
+    {
+      "avg_logprob": -0.277217,
+      "compression_ratio": 1.303665,
+      "end": 571.92,
+      "no_speech_prob": 0.0,
+      "start": 570.92,
+      "text": "副省长啊"
+    },
+    {
+      "avg_logprob": -0.277217,
+      "compression_ratio": 1.303665,
+      "end": 574.36,
+      "no_speech_prob": 0.0,
+      "start": 571.92,
+      "text": "别说可能今天要直播"
+    },
+    {
+      "avg_logprob": -0.277217,
+      "compression_ratio": 1.303665,
+      "end": 578.36,
+      "no_speech_prob": 0.0,
+      "start": 574.36,
+      "text": "就说完以后我跟律师开完会收到这信息"
+    },
+    {
+      "avg_logprob": -0.277217,
+      "compression_ratio": 1.303665,
+      "end": 579.36,
+      "no_speech_prob": 0.0,
+      "start": 578.36,
+      "text": "你们都笑什么呀"
+    },
+    {
+      "avg_logprob": -0.277217,
+      "compression_ratio": 1.303665,
+      "end": 580.36,
+      "no_speech_prob": 0.0,
+      "start": 579.36,
+      "text": "这你们都是见证人啊"
+    },
+    {
+      "avg_logprob": -0.277217,
+      "compression_ratio": 1.303665,
+      "end": 581.36,
+      "no_speech_prob": 0.0,
+      "start": 580.36,
+      "text": "这就来了"
+    },
+    {
+      "avg_logprob": -0.277217,
+      "compression_ratio": 1.303665,
+      "end": 582.92,
+      "no_speech_prob": 0.0,
+      "start": 581.36,
+      "text": "这老天爷安排"
+    },
+    {
+      "avg_logprob": -0.179643,
+      "compression_ratio": 1.333333,
+      "end": 583.92,
+      "no_speech_prob": 0.0,
+      "start": 582.92,
+      "text": "是不是啊"
+    },
+    {
+      "avg_logprob": -0.179643,
+      "compression_ratio": 1.333333,
+      "end": 585.92,
+      "no_speech_prob": 0.0,
+      "start": 583.92,
+      "text": "今天晚上直播我都不知道说啥"
+    },
+    {
+      "avg_logprob": -0.179643,
+      "compression_ratio": 1.333333,
+      "end": 587.92,
+      "no_speech_prob": 0.0,
+      "start": 585.92,
+      "text": "这就来话题了是吧"
+    },
+    {
+      "avg_logprob": -0.179643,
+      "compression_ratio": 1.333333,
+      "end": 591.92,
+      "no_speech_prob": 0.0,
+      "start": 587.92,
+      "text": "洗太阳访问乌斯别克斯坦哈萨斯坦"
+    },
+    {
+      "avg_logprob": -0.179643,
+      "compression_ratio": 1.333333,
+      "end": 592.92,
+      "no_speech_prob": 0.0,
+      "start": 591.92,
+      "text": "谁接待"
+    },
+    {
+      "avg_logprob": -0.179643,
+      "compression_ratio": 1.333333,
+      "end": 594.92,
+      "no_speech_prob": 0.0,
+      "start": 592.92,
+      "text": "我们的战友"
+    },
+    {
+      "avg_logprob": -0.179643,
+      "compression_ratio": 1.333333,
+      "end": 597.92,
+      "no_speech_prob": 0.0,
+      "start": 594.92,
+      "text": "表兄弟表妹"
+    },
+    {
+      "avg_logprob": -0.179643,
+      "compression_ratio": 1.333333,
+      "end": 600.92,
+      "no_speech_prob": 0.0,
+      "start": 597.92,
+      "text": "你若不相信咱往下边看"
+    },
+    {
+      "avg_logprob": -0.179643,
+      "compression_ratio": 1.333333,
+      "end": 601.92,
+      "no_speech_prob": 0.0,
+      "start": 600.92,
+      "text": "是吧"
+    },
+    {
+      "avg_logprob": -0.179643,
+      "compression_ratio": 1.333333,
+      "end": 603.92,
+      "no_speech_prob": 0.0,
+      "start": 601.92,
+      "text": "看啥呢"
+    },
+    {
+      "avg_logprob": -0.179643,
+      "compression_ratio": 1.333333,
+      "end": 606.92,
+      "no_speech_prob": 0.0,
+      "start": 603.92,
+      "text": "你们知道到乌斯别克斯坦哈萨斯坦"
+    },
+    {
+      "avg_logprob": -0.179643,
+      "compression_ratio": 1.333333,
+      "end": 608.92,
+      "no_speech_prob": 0.0,
+      "start": 606.92,
+      "text": "我现在给你数数时间表"
+    },
+    {
+      "avg_logprob": -0.179643,
+      "compression_ratio": 1.333333,
+      "end": 610.92,
+      "no_speech_prob": 0.0,
+      "start": 608.92,
+      "text": "如果我要是未来"
+    },
+    {
+      "avg_logprob": -0.166359,
+      "compression_ratio": 1.401639,
+      "end": 613.92,
+      "no_speech_prob": 0.0,
+      "start": 610.92,
+      "text": "在未来几天的差一分钟"
+    },
+    {
+      "avg_logprob": -0.166359,
+      "compression_ratio": 1.401639,
+      "end": 614.92,
+      "no_speech_prob": 0.0,
+      "start": 613.92,
+      "text": "习太阳你找我身上"
+    },
+    {
+      "avg_logprob": -0.166359,
+      "compression_ratio": 1.401639,
+      "end": 618.92,
+      "no_speech_prob": 0.0,
+      "start": 616.92,
+      "text": "这不是爆尿了"
+    },
+    {
+      "avg_logprob": -0.166359,
+      "compression_ratio": 1.401639,
+      "end": 620.92,
+      "no_speech_prob": 0.0,
+      "start": 618.92,
+      "text": "这是爆吹泡"
+    },
+    {
+      "avg_logprob": -0.166359,
+      "compression_ratio": 1.401639,
+      "end": 622.92,
+      "no_speech_prob": 0.0,
+      "start": 621.92,
+      "text": "啥叫吹泡知道吗"
+    },
+    {
+      "avg_logprob": -0.166359,
+      "compression_ratio": 1.401639,
+      "end": 623.92,
+      "no_speech_prob": 0.0,
+      "start": 622.92,
+      "text": "就是肾"
+    },
+    {
+      "avg_logprob": -0.166359,
+      "compression_ratio": 1.401639,
+      "end": 626.92,
+      "no_speech_prob": 0.0,
+      "start": 623.92,
+      "text": "就是那个憋尿的那个尿胆"
+    },
+    {
+      "avg_logprob": -0.166359,
+      "compression_ratio": 1.401639,
+      "end": 627.92,
+      "no_speech_prob": 0.0,
+      "start": 626.92,
+      "text": "我小的时候"
+    },
+    {
+      "avg_logprob": -0.166359,
+      "compression_ratio": 1.401639,
+      "end": 628.92,
+      "no_speech_prob": 0.0,
+      "start": 627.92,
+      "text": "这旁边杀猪"
+    },
+    {
+      "avg_logprob": -0.166359,
+      "compression_ratio": 1.401639,
+      "end": 629.92,
+      "no_speech_prob": 0.0,
+      "start": 628.92,
+      "text": "每年过年都杀猪嘛"
+    },
+    {
+      "avg_logprob": -0.166359,
+      "compression_ratio": 1.401639,
+      "end": 631.92,
+      "no_speech_prob": 0.0,
+      "start": 629.92,
+      "text": "杀完猪以后我最等待的是"
+    },
+    {
+      "avg_logprob": -0.166359,
+      "compression_ratio": 1.401639,
+      "end": 634.92,
+      "no_speech_prob": 0.0,
+      "start": 631.92,
+      "text": "就是杀猪的把那个吹泡拿出来"
+    },
+    {
+      "avg_logprob": -0.166359,
+      "compression_ratio": 1.401639,
+      "end": 636.92,
+      "no_speech_prob": 0.0,
+      "start": 634.92,
+      "text": "你们有这事不想说啊"
+    },
+    {
+      "avg_logprob": -0.166359,
+      "compression_ratio": 1.401639,
+      "end": 637.92,
+      "no_speech_prob": 0.0,
+      "start": 636.92,
+      "text": "吹大了是吧"
+    },
+    {
+      "avg_logprob": -0.166359,
+      "compression_ratio": 1.401639,
+      "end": 638.92,
+      "no_speech_prob": 0.0,
+      "start": 637.92,
+      "text": "吹得很大"
+    },
+    {
+      "avg_logprob": -0.166359,
+      "compression_ratio": 1.401639,
+      "end": 639.92,
+      "no_speech_prob": 0.0,
+      "start": 638.92,
+      "text": "吹完以后"
+    },
+    {
+      "avg_logprob": -0.175628,
+      "compression_ratio": 1.216667,
+      "end": 642.92,
+      "no_speech_prob": 0.0,
+      "start": 639.92,
+      "text": "记上过两天一应"
+    },
+    {
+      "avg_logprob": -0.175628,
+      "compression_ratio": 1.216667,
+      "end": 643.92,
+      "no_speech_prob": 0.0,
+      "start": 642.92,
+      "text": "敲着玩"
+    },
+    {
+      "avg_logprob": -0.175628,
+      "compression_ratio": 1.216667,
+      "end": 645.92,
+      "no_speech_prob": 0.0,
+      "start": 643.92,
+      "text": "那叫做猪吹泡"
+    },
+    {
+      "avg_logprob": -0.175628,
+      "compression_ratio": 1.216667,
+      "end": 647.92,
+      "no_speech_prob": 0.0,
+      "start": 645.92,
+      "text": "是吧"
+    },
+    {
+      "avg_logprob": -0.175628,
+      "compression_ratio": 1.216667,
+      "end": 650.92,
+      "no_speech_prob": 0.0,
+      "start": 647.92,
+      "text": "现在你就当我现在是吹那个猪的尿袋呢"
+    },
+    {
+      "avg_logprob": -0.175628,
+      "compression_ratio": 1.216667,
+      "end": 651.92,
+      "no_speech_prob": 0.0,
+      "start": 650.92,
+      "text": "吹泡"
+    },
+    {
+      "avg_logprob": -0.175628,
+      "compression_ratio": 1.216667,
+      "end": 652.92,
+      "no_speech_prob": 0.0,
+      "start": 651.92,
+      "text": "看看能不能"
+    },
+    {
+      "avg_logprob": -0.175628,
+      "compression_ratio": 1.216667,
+      "end": 655.92,
+      "no_speech_prob": 0.0,
+      "start": 652.92,
+      "text": "就未来不超过一百个小时"
+    },
+    {
+      "avg_logprob": -0.175628,
+      "compression_ratio": 1.216667,
+      "end": 656.92,
+      "no_speech_prob": 0.0,
+      "start": 655.92,
+      "text": "你都能验证"
+    },
+    {
+      "avg_logprob": -0.175628,
+      "compression_ratio": 1.216667,
+      "end": 659.92,
+      "no_speech_prob": 0.0,
+      "start": 656.92,
+      "text": "看看我们的爆料革命的力量在哪里"
+    },
+    {
+      "avg_logprob": -0.162315,
+      "compression_ratio": 1.169118,
+      "end": 661.92,
+      "no_speech_prob": 0.0,
+      "start": 659.92,
+      "text": "不管你席太阳"
+    },
+    {
+      "avg_logprob": -0.162315,
+      "compression_ratio": 1.169118,
+      "end": 663.92,
+      "no_speech_prob": 0.0,
+      "start": 661.92,
+      "text": "只要你别脱离银河系"
+    },
+    {
+      "avg_logprob": -0.162315,
+      "compression_ratio": 1.169118,
+      "end": 665.92,
+      "no_speech_prob": 0.0,
+      "start": 663.92,
+      "text": "咱就知道你干啥"
+    },
+    {
+      "avg_logprob": -0.162315,
+      "compression_ratio": 1.169118,
+      "end": 668.92,
+      "no_speech_prob": 0.0,
+      "start": 665.92,
+      "text": "你不用撅屁股我就知道你拉什么事"
+    },
+    {
+      "avg_logprob": -0.162315,
+      "compression_ratio": 1.169118,
+      "end": 671.92,
+      "no_speech_prob": 0.0,
+      "start": 669.92,
+      "text": "还没撅屁股咱就知道了是吧"
+    },
+    {
+      "avg_logprob": -0.162315,
+      "compression_ratio": 1.169118,
+      "end": 672.92,
+      "no_speech_prob": 0.0,
+      "start": 671.92,
+      "text": "包括飞机"
+    },
+    {
+      "avg_logprob": -0.198865,
+      "compression_ratio": 1.145833,
+      "end": 674.92,
+      "no_speech_prob": 0.0,
+      "start": 672.92,
+      "text": "哇塞"
+    },
+    {
+      "avg_logprob": -0.198865,
+      "compression_ratio": 1.145833,
+      "end": 676.92,
+      "no_speech_prob": 0.0,
+      "start": 674.92,
+      "text": "他表哥一会我打过他表哥说"
+    },
+    {
+      "avg_logprob": -0.198865,
+      "compression_ratio": 1.145833,
+      "end": 678.92,
+      "no_speech_prob": 0.0,
+      "start": 676.92,
+      "text": "我正在安排战机护航"
+    },
+    {
+      "avg_logprob": -0.198865,
+      "compression_ratio": 1.145833,
+      "end": 680.92,
+      "no_speech_prob": 0.0,
+      "start": 678.92,
+      "text": "半飞"
+    },
+    {
+      "avg_logprob": -0.198865,
+      "compression_ratio": 1.145833,
+      "end": 683.92,
+      "no_speech_prob": 0.0,
+      "start": 681.92,
+      "text": "而且半飞的飞机号"
+    },
+    {
+      "avg_logprob": -0.198865,
+      "compression_ratio": 1.145833,
+      "end": 684.92,
+      "no_speech_prob": 0.0,
+      "start": 683.92,
+      "text": "尾号就是带七"
+    },
+    {
+      "avg_logprob": -0.198865,
+      "compression_ratio": 1.145833,
+      "end": 686.92,
+      "no_speech_prob": 0.0,
+      "start": 684.92,
+      "text": "咱不行来看着啊"
+    },
+    {
+      "avg_logprob": -0.198865,
+      "compression_ratio": 1.145833,
+      "end": 687.92,
+      "no_speech_prob": 0.0,
+      "start": 686.92,
+      "text": "他要不带七"
+    },
+    {
+      "avg_logprob": -0.142865,
+      "compression_ratio": 1.394834,
+      "end": 689.92,
+      "no_speech_prob": 0.0,
+      "start": 687.92,
+      "text": "你们就把我变成吹包给我吹了"
+    },
+    {
+      "avg_logprob": -0.142865,
+      "compression_ratio": 1.394834,
+      "end": 691.92,
+      "no_speech_prob": 0.0,
+      "start": 689.92,
+      "text": "而且尾号就带七"
+    },
+    {
+      "avg_logprob": -0.142865,
+      "compression_ratio": 1.394834,
+      "end": 692.92,
+      "no_speech_prob": 0.0,
+      "start": 691.92,
+      "text": "我说"
+    },
+    {
+      "avg_logprob": -0.142865,
+      "compression_ratio": 1.394834,
+      "end": 694.92,
+      "no_speech_prob": 0.0,
+      "start": 692.92,
+      "text": "哥们儿你这啥意思啊"
+    },
+    {
+      "avg_logprob": -0.142865,
+      "compression_ratio": 1.394834,
+      "end": 696.92,
+      "no_speech_prob": 0.0,
+      "start": 694.92,
+      "text": "他说我知道你喜欢七"
+    },
+    {
+      "avg_logprob": -0.142865,
+      "compression_ratio": 1.394834,
+      "end": 697.92,
+      "no_speech_prob": 0.0,
+      "start": 696.92,
+      "text": "我就给带七啊"
+    },
+    {
+      "avg_logprob": -0.142865,
+      "compression_ratio": 1.394834,
+      "end": 699.92,
+      "no_speech_prob": 0.0,
+      "start": 697.92,
+      "text": "但是这个人你知道"
+    },
+    {
+      "avg_logprob": -0.142865,
+      "compression_ratio": 1.394834,
+      "end": 702.92,
+      "no_speech_prob": 0.0,
+      "start": 699.92,
+      "text": "他是一个脑子里边就是完全的官僚的政治家庭"
+    },
+    {
+      "avg_logprob": -0.142865,
+      "compression_ratio": 1.394834,
+      "end": 705.92,
+      "no_speech_prob": 0.0,
+      "start": 703.92,
+      "text": "他当年就是在海南跟我认识啊"
+    },
+    {
+      "avg_logprob": -0.142865,
+      "compression_ratio": 1.394834,
+      "end": 708.92,
+      "no_speech_prob": 0.0,
+      "start": 705.92,
+      "text": "当时搞什么博鳌论坛"
+    },
+    {
+      "avg_logprob": -0.142865,
+      "compression_ratio": 1.394834,
+      "end": 710.92,
+      "no_speech_prob": 0.0,
+      "start": 708.92,
+      "text": "龙永图跟他非常好"
+    },
+    {
+      "avg_logprob": -0.142865,
+      "compression_ratio": 1.394834,
+      "end": 712.92,
+      "no_speech_prob": 0.0,
+      "start": 710.92,
+      "text": "跟我介绍龙永图介绍的啊"
+    },
+    {
+      "avg_logprob": -0.142865,
+      "compression_ratio": 1.394834,
+      "end": 714.92,
+      "no_speech_prob": 0.0,
+      "start": 712.92,
+      "text": "跟吴怡的秘书很好"
+    },
+    {
+      "avg_logprob": -0.142865,
+      "compression_ratio": 1.394834,
+      "end": 716.92,
+      "no_speech_prob": 0.0,
+      "start": 714.92,
+      "text": "也很好"
+    },
+    {
+      "avg_logprob": -0.129975,
+      "compression_ratio": 1.416,
+      "end": 718.92,
+      "no_speech_prob": 0.0,
+      "start": 716.92,
+      "text": "他说跟我出去喝酒"
+    },
+    {
+      "avg_logprob": -0.129975,
+      "compression_ratio": 1.416,
+      "end": 721.92,
+      "no_speech_prob": 0.0,
+      "start": 718.92,
+      "text": "就是典型的哈萨克斯坦的官僚家族"
+    },
+    {
+      "avg_logprob": -0.129975,
+      "compression_ratio": 1.416,
+      "end": 725.92,
+      "no_speech_prob": 0.0,
+      "start": 722.92,
+      "text": "就他要不是这个官僚家族这么浪漫"
+    },
+    {
+      "avg_logprob": -0.129975,
+      "compression_ratio": 1.416,
+      "end": 726.92,
+      "no_speech_prob": 0.0,
+      "start": 725.92,
+      "text": "这么死板"
+    },
+    {
+      "avg_logprob": -0.129975,
+      "compression_ratio": 1.416,
+      "end": 728.92,
+      "no_speech_prob": 0.0,
+      "start": 726.92,
+      "text": "他不会想跟他表妹结婚"
+    },
+    {
+      "avg_logprob": -0.129975,
+      "compression_ratio": 1.416,
+      "end": 730.92,
+      "no_speech_prob": 0.0,
+      "start": 728.92,
+      "text": "他表妹是乌斯别格坦的"
+    },
+    {
+      "avg_logprob": -0.129975,
+      "compression_ratio": 1.416,
+      "end": 732.92,
+      "no_speech_prob": 0.0,
+      "start": 730.92,
+      "text": "人家家里边一个贵族"
+    },
+    {
+      "avg_logprob": -0.129975,
+      "compression_ratio": 1.416,
+      "end": 735.92,
+      "no_speech_prob": 0.0,
+      "start": 733.92,
+      "text": "表妹是真漂亮"
+    },
+    {
+      "avg_logprob": -0.129975,
+      "compression_ratio": 1.416,
+      "end": 737.92,
+      "no_speech_prob": 0.0,
+      "start": 735.92,
+      "text": "这个哥们儿长得有点外瓜里嫂一样"
+    },
+    {
+      "avg_logprob": -0.129975,
+      "compression_ratio": 1.416,
+      "end": 738.92,
+      "no_speech_prob": 0.0,
+      "start": 737.92,
+      "text": "你知道吗"
+    },
+    {
+      "avg_logprob": -0.129975,
+      "compression_ratio": 1.416,
+      "end": 739.92,
+      "no_speech_prob": 0.0,
+      "start": 738.92,
+      "text": "最后人家是"
+    },
+    {
+      "avg_logprob": -0.129975,
+      "compression_ratio": 1.416,
+      "end": 742.92,
+      "no_speech_prob": 0.0,
+      "start": 739.92,
+      "text": "他家人不同意啊"
+    },
+    {
+      "avg_logprob": -0.129975,
+      "compression_ratio": 1.416,
+      "end": 744.92,
+      "no_speech_prob": 0.0,
+      "start": 742.92,
+      "text": "最后就是舅舅家不同意"
+    },
+    {
+      "avg_logprob": -0.1306,
+      "compression_ratio": 1.184713,
+      "end": 747.92,
+      "no_speech_prob": 0.0,
+      "start": 744.92,
+      "text": "就给他完全给他锯掉了"
+    },
+    {
+      "avg_logprob": -0.1306,
+      "compression_ratio": 1.184713,
+      "end": 750.92,
+      "no_speech_prob": 0.0,
+      "start": 747.92,
+      "text": "到现在这哥们一想到现在战友认识啊"
+    },
+    {
+      "avg_logprob": -0.1306,
+      "compression_ratio": 1.184713,
+      "end": 753.92,
+      "no_speech_prob": 0.0,
+      "start": 750.92,
+      "text": "这俩人都是绝对支持我们的"
+    },
+    {
+      "avg_logprob": -0.1306,
+      "compression_ratio": 1.184713,
+      "end": 754.92,
+      "no_speech_prob": 0.0,
+      "start": 753.92,
+      "text": "但他说我们很痛苦"
+    },
+    {
+      "avg_logprob": -0.1306,
+      "compression_ratio": 1.184713,
+      "end": 758.92,
+      "no_speech_prob": 0.0,
+      "start": 754.92,
+      "text": "每天都看着我们领导跟共产党跟勾兑"
+    },
+    {
+      "avg_logprob": -0.150511,
+      "compression_ratio": 1.240223,
+      "end": 764.92,
+      "no_speech_prob": 0.0,
+      "start": 758.92,
+      "text": "结果现在习太阳一千天的握什么握心肠胆"
+    },
+    {
+      "avg_logprob": -0.150511,
+      "compression_ratio": 1.240223,
+      "end": 768.92,
+      "no_speech_prob": 0.0,
+      "start": 764.92,
+      "text": "然后是拼命的推广核糖核酸"
+    },
+    {
+      "avg_logprob": -0.150511,
+      "compression_ratio": 1.240223,
+      "end": 771.92,
+      "no_speech_prob": 0.0,
+      "start": 768.92,
+      "text": "核糖核酸推广完了一千天啊"
+    },
+    {
+      "avg_logprob": -0.150511,
+      "compression_ratio": 1.240223,
+      "end": 774.92,
+      "no_speech_prob": 0.0,
+      "start": 771.92,
+      "text": "从上海到重庆到四川"
+    },
+    {
+      "avg_logprob": -0.150511,
+      "compression_ratio": 1.240223,
+      "end": 778.92,
+      "no_speech_prob": 0.0,
+      "start": 774.92,
+      "text": "现在直接飞乌斯别格斯坦哈萨克斯坦都落到斩首去了"
+    },
+    {
+      "avg_logprob": -0.125904,
+      "compression_ratio": 1.227273,
+      "end": 780.92,
+      "no_speech_prob": 0.0,
+      "start": 778.92,
+      "text": "是吧"
+    },
+    {
+      "avg_logprob": -0.125904,
+      "compression_ratio": 1.227273,
+      "end": 783.92,
+      "no_speech_prob": 0.0,
+      "start": 780.92,
+      "text": "现在是这个吴王已经在那等着了"
+    },
+    {
+      "avg_logprob": -0.125904,
+      "compression_ratio": 1.227273,
+      "end": 786.92,
+      "no_speech_prob": 0.0,
+      "start": 783.92,
+      "text": "吴王等着谁死谁亡啊"
+    },
+    {
+      "avg_logprob": -0.125904,
+      "compression_ratio": 1.227273,
+      "end": 787.92,
+      "no_speech_prob": 0.0,
+      "start": 786.92,
+      "text": "咱走着看"
+    },
+    {
+      "avg_logprob": -0.125904,
+      "compression_ratio": 1.227273,
+      "end": 788.92,
+      "no_speech_prob": 0.0,
+      "start": 787.92,
+      "text": "我可以告诉大家的"
+    },
+    {
+      "avg_logprob": -0.125904,
+      "compression_ratio": 1.227273,
+      "end": 790.92,
+      "no_speech_prob": 0.0,
+      "start": 788.92,
+      "text": "这次半飞的飞机当中"
+    },
+    {
+      "avg_logprob": -0.125904,
+      "compression_ratio": 1.227273,
+      "end": 793.92,
+      "no_speech_prob": 0.0,
+      "start": 790.92,
+      "text": "其中有一个要求就是绝对的"
+    },
+    {
+      "avg_logprob": -0.125904,
+      "compression_ratio": 1.227273,
+      "end": 798.92,
+      "no_speech_prob": 0.0,
+      "start": 793.92,
+      "text": "中方有人中方的空军飞行员半飞"
+    },
+    {
+      "avg_logprob": -0.254084,
+      "compression_ratio": 1.266332,
+      "end": 805.92,
+      "no_speech_prob": 0.0,
+      "start": 798.92,
+      "text": "第一料今天报的就是中方要求中国的飞行员"
+    },
+    {
+      "avg_logprob": -0.254084,
+      "compression_ratio": 1.266332,
+      "end": 809.92,
+      "no_speech_prob": 0.0,
+      "start": 805.92,
+      "text": "哎啥意思啊"
+    },
+    {
+      "avg_logprob": -0.254084,
+      "compression_ratio": 1.266332,
+      "end": 812.92,
+      "no_speech_prob": 0.0,
+      "start": 809.92,
+      "text": "掌声吗都是你把电视台下没了"
+    },
+    {
+      "avg_logprob": -0.254084,
+      "compression_ratio": 1.266332,
+      "end": 815.92,
+      "no_speech_prob": 0.0,
+      "start": 812.92,
+      "text": "是吧"
+    },
+    {
+      "avg_logprob": -0.254084,
+      "compression_ratio": 1.266332,
+      "end": 817.92,
+      "no_speech_prob": 0.0,
+      "start": 815.92,
+      "text": "23块3了我塞"
+    },
+    {
+      "avg_logprob": -0.254084,
+      "compression_ratio": 1.266332,
+      "end": 818.92,
+      "no_speech_prob": 0.0,
+      "start": 817.92,
+      "text": "哎这谁让你放出来的"
+    },
+    {
+      "avg_logprob": -0.254084,
+      "compression_ratio": 1.266332,
+      "end": 821.92,
+      "no_speech_prob": 0.0,
+      "start": 818.92,
+      "text": "你看看你看看你看看"
+    },
+    {
+      "avg_logprob": -0.254084,
+      "compression_ratio": 1.266332,
+      "end": 824.92,
+      "no_speech_prob": 0.0,
+      "start": 821.92,
+      "text": "这小小你又开始砸锅了不开始"
+    },
+    {
+      "avg_logprob": -0.254084,
+      "compression_ratio": 1.266332,
+      "end": 827.92,
+      "no_speech_prob": 0.0,
+      "start": 824.92,
+      "text": "我没说呢你就开始了"
+    },
+    {
+      "avg_logprob": -0.13637,
+      "compression_ratio": 1.445596,
+      "end": 829.92,
+      "no_speech_prob": 0.0,
+      "start": 827.92,
+      "text": "完了完了完了"
+    },
+    {
+      "avg_logprob": -0.13637,
+      "compression_ratio": 1.445596,
+      "end": 832.92,
+      "no_speech_prob": 0.0,
+      "start": 829.92,
+      "text": "没有墨镜的这个地方实在是不行啊"
+    },
+    {
+      "avg_logprob": -0.13637,
+      "compression_ratio": 1.445596,
+      "end": 840.92,
+      "no_speech_prob": 0.0,
+      "start": 836.92,
+      "text": "小小你今天这个错误犯的跟那天不是一般的小"
+    },
+    {
+      "avg_logprob": -0.13637,
+      "compression_ratio": 1.445596,
+      "end": 844.92,
+      "no_speech_prob": 0.0,
+      "start": 840.92,
+      "text": "这村长刚声称市长声称省长你就犯这错误"
+    },
+    {
+      "avg_logprob": -0.13637,
+      "compression_ratio": 1.445596,
+      "end": 850.92,
+      "no_speech_prob": 0.0,
+      "start": 847.92,
+      "text": "你看看你看这错误生长"
+    },
+    {
+      "avg_logprob": -0.13637,
+      "compression_ratio": 1.445596,
+      "end": 853.92,
+      "no_speech_prob": 0.0,
+      "start": 850.92,
+      "text": "这按照共产党的说就直接被双规了"
+    },
+    {
+      "avg_logprob": -0.13637,
+      "compression_ratio": 1.445596,
+      "end": 855.92,
+      "no_speech_prob": 0.0,
+      "start": 853.92,
+      "text": "是不是啊直接被双规"
+    },
+    {
+      "avg_logprob": -0.208088,
+      "compression_ratio": 1.226277,
+      "end": 857.92,
+      "no_speech_prob": 0.0,
+      "start": 855.92,
+      "text": "现在既然他已经放出了一个了"
+    },
+    {
+      "avg_logprob": -0.208088,
+      "compression_ratio": 1.226277,
+      "end": 860.92,
+      "no_speech_prob": 0.0,
+      "start": 857.92,
+      "text": "咱就完了咱就将错就错吧"
+    },
+    {
+      "avg_logprob": -0.208088,
+      "compression_ratio": 1.226277,
+      "end": 861.92,
+      "no_speech_prob": 0.0,
+      "start": 860.92,
+      "text": "是吧"
+    },
+    {
+      "avg_logprob": -0.208088,
+      "compression_ratio": 1.226277,
+      "end": 862.92,
+      "no_speech_prob": 0.0,
+      "start": 861.92,
+      "text": "我现在给大家讲啊"
+    },
+    {
+      "avg_logprob": -0.208088,
+      "compression_ratio": 1.226277,
+      "end": 865.92,
+      "no_speech_prob": 0.0,
+      "start": 862.92,
+      "text": "大家你把刚才那个放出来吧"
+    },
+    {
+      "avg_logprob": -0.208088,
+      "compression_ratio": 1.226277,
+      "end": 867.92,
+      "no_speech_prob": 0.0,
+      "start": 865.92,
+      "text": "你刚才错误的放出那个"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.084507,
+      "end": 879.92,
+      "no_speech_prob": 0.0,
+      "start": 867.92,
+      "text": "啊据这位表哥说啊哈萨克斯坦将售给徐太阳啊"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.084507,
+      "end": 881.92,
+      "no_speech_prob": 0.0,
+      "start": 880.92,
+      "text": "叫做金英勋章"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.084507,
+      "end": 885.92,
+      "no_speech_prob": 0.0,
+      "start": 882.92,
+      "text": "!金英勋章就我所知给江泽民啊"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.084507,
+      "end": 888.92,
+      "no_speech_prob": 0.0,
+      "start": 885.92,
+      "text": "胡锦涛啊什么土耳其啊是吧"
+    },
+    {
+      "avg_logprob": -0.171927,
+      "compression_ratio": 1.016529,
+      "end": 891.92,
+      "no_speech_prob": 0.0,
+      "start": 888.92,
+      "text": "说总统啊这些人都办法过"
+    },
+    {
+      "avg_logprob": -0.171927,
+      "compression_ratio": 1.016529,
+      "end": 893.92,
+      "no_speech_prob": 0.0,
+      "start": 892.92,
+      "text": "还有什么叶利钦"
+    },
+    {
+      "avg_logprob": -0.171927,
+      "compression_ratio": 1.016529,
+      "end": 897.92,
+      "no_speech_prob": 0.0,
+      "start": 894.92,
+      "text": "我特喜欢叶利钦推翻苏联后获得这个勋章"
+    },
+    {
+      "avg_logprob": -0.171927,
+      "compression_ratio": 1.016529,
+      "end": 898.92,
+      "no_speech_prob": 0.0,
+      "start": 897.92,
+      "text": "现在习主席"
+    },
+    {
+      "avg_logprob": -0.438938,
+      "compression_ratio": 1.111111,
+      "end": 899.92,
+      "no_speech_prob": 0.0,
+      "start": 898.92,
+      "text": "现在习主席"
+    },
+    {
+      "avg_logprob": -0.438938,
+      "compression_ratio": 1.111111,
+      "end": 900.92,
+      "no_speech_prob": 0.0,
+      "start": 899.92,
+      "text": "现在习主席"
+    }
+  ],
+  "text": "谢谢大家谢谢大家欢迎订阅游走在街头思念的孤单想起的狂欢总是很短暂战友的怀抱总让我温暖无聊的回忆让人很心烦我又想你了战友在哪端没有你陪伴我真的好孤单我的心好慌乱不知怎么办没有战友的日子我真的好茫然整天就像丢了灵魂一半没有你陪伴我真的好孤单我的心好慌乱不知怎么办你们不在身边真的好不习惯我的泪已流干你们管不管你知道便留望Zither Harp风豪的夜晚霓虹灯最伤天亮黑暗干不走孤单午夜和白天不停的转换游走在街头四面的孤单想起的狂欢总是很短暂占有的怀抱总让我温暖无聊的回忆让人很心烦我又想你了占有在那端没有你陪伴我真的好孤单我的心好慌乱不知怎么办没有占有我的日子我真的好茂然整天就像丢了灵魂一半没有你陪伴我真的好孤单我的心好慌乱不知怎么办你们不在身边真的好不习惯我的泪流干你们管不管你们不能听 vaz Mol体你要éch曲谁无声 Technically字幕志愿者 李宗盛9月13号尊敬的战友们好七哥好久没有在这个3C直播了哎呀我这衣服好好的怎么知道你给我弄得周周八八的呀你两口子咋把我丑化成这样啊这不咋看我像要饭的呀所以币价大迭呀好像有点涨啊尊敬战友们好 9月13号今天是七哥突然直播就是因为明天上午的星期三大直播因为明天上午开律师的会议还有另外一个案子叫deposition所以说我就是得尊重律师还有法律第一重要所以说呢我就决定今天把明天的直播提前给播了但我好久已经没在这直播了都让那个Niko给占领了我发现我这回来以后私诚熟悉但是有感觉不一样啊设备多了啊人这个现在专业人士多了我的西装整的皱巴了是吧然后呢Niko越来越年轻七哥越来越老然后村长现在不像村长了已经不是副市长到省长了已经啊然后今天这里感到无限的温馨大家庭的感觉很开心今天从早上大家知道从四点钟到现在吃了一顿饭啊我这是午饭都没吃晚饭也不想吃了啊然后呢看到喜悲从昨天前天到今天我盼望是跌到十块钱啊我咋叛叠说一下就跌不了啊刚才我们这个喊两嗓子战友们这直接还有涨上去了本来我以为还会跌呢结果又涨上去了嗯咱先别聊币呢啊看看今天的直播中这个币会什么样咱们聊点跟这个币有更深远关系的啊就是现在即将发生的哈萨克斯坦乌斯别克坦大家知道啊我们这个乌斯别克坦刚刚也就是大概在一小时以前乌斯别克坦的一位女的这个接待官啊给我发信息他说你看我准备啥呢我说准备啥呢我说啥呀这是啊场面接待习太阳啊我说你你那个表哥不是在哈萨克斯坦吗他说是啊你还记得这事呢我说你跟你表哥要结婚当年没结成他就被镇定到了他说Miles哥你这个脑子简直不是人的脑子多长时间你还记得我说你表哥的名字我还都记得呢啊我这一说我吓一大跳他说你知道吗我表哥在哈萨克斯坦福泽接待其太阳就这么伟大的事我在两小时以前哎两小时三小时我给我们的夏七冬啊夏省长啊副省长啊别说可能今天要直播就说完以后我跟律师开完会收到这信息你们都笑什么呀这你们都是见证人啊这就来了这老天爷安排是不是啊今天晚上直播我都不知道说啥这就来话题了是吧洗太阳访问乌斯别克斯坦哈萨斯坦谁接待我们的战友表兄弟表妹你若不相信咱往下边看是吧看啥呢你们知道到乌斯别克斯坦哈萨斯坦我现在给你数数时间表如果我要是未来在未来几天的差一分钟习太阳你找我身上这不是爆尿了这是爆吹泡啥叫吹泡知道吗就是肾就是那个憋尿的那个尿胆我小的时候这旁边杀猪每年过年都杀猪嘛杀完猪以后我最等待的是就是杀猪的把那个吹泡拿出来你们有这事不想说啊吹大了是吧吹得很大吹完以后记上过两天一应敲着玩那叫做猪吹泡是吧现在你就当我现在是吹那个猪的尿袋呢吹泡看看能不能就未来不超过一百个小时你都能验证看看我们的爆料革命的力量在哪里不管你席太阳只要你别脱离银河系咱就知道你干啥你不用撅屁股我就知道你拉什么事还没撅屁股咱就知道了是吧包括飞机哇塞他表哥一会我打过他表哥说我正在安排战机护航半飞而且半飞的飞机号尾号就是带七咱不行来看着啊他要不带七你们就把我变成吹包给我吹了而且尾号就带七我说哥们儿你这啥意思啊他说我知道你喜欢七我就给带七啊但是这个人你知道他是一个脑子里边就是完全的官僚的政治家庭他当年就是在海南跟我认识啊当时搞什么博鳌论坛龙永图跟他非常好跟我介绍龙永图介绍的啊跟吴怡的秘书很好也很好他说跟我出去喝酒就是典型的哈萨克斯坦的官僚家族就他要不是这个官僚家族这么浪漫这么死板他不会想跟他表妹结婚他表妹是乌斯别格坦的人家家里边一个贵族表妹是真漂亮这个哥们儿长得有点外瓜里嫂一样你知道吗最后人家是他家人不同意啊最后就是舅舅家不同意就给他完全给他锯掉了到现在这哥们一想到现在战友认识啊这俩人都是绝对支持我们的但他说我们很痛苦每天都看着我们领导跟共产党跟勾兑结果现在习太阳一千天的握什么握心肠胆然后是拼命的推广核糖核酸核糖核酸推广完了一千天啊从上海到重庆到四川现在直接飞乌斯别格斯坦哈萨克斯坦都落到斩首去了是吧现在是这个吴王已经在那等着了吴王等着谁死谁亡啊咱走着看我可以告诉大家的这次半飞的飞机当中其中有一个要求就是绝对的中方有人中方的空军飞行员半飞第一料今天报的就是中方要求中国的飞行员哎啥意思啊掌声吗都是你把电视台下没了是吧23块3了我塞哎这谁让你放出来的你看看你看看你看看这小小你又开始砸锅了不开始我没说呢你就开始了完了完了完了没有墨镜的这个地方实在是不行啊小小你今天这个错误犯的跟那天不是一般的小这村长刚声称市长声称省长你就犯这错误你看看你看这错误生长这按照共产党的说就直接被双规了是不是啊直接被双规现在既然他已经放出了一个了咱就完了咱就将错就错吧是吧我现在给大家讲啊大家你把刚才那个放出来吧你刚才错误的放出那个啊据这位表哥说啊哈萨克斯坦将售给徐太阳啊叫做金英勋章!金英勋章就我所知给江泽民啊胡锦涛啊什么土耳其啊是吧说总统啊这些人都办法过还有什么叶利钦我特喜欢叶利钦推翻苏联后获得这个勋章现在习主席现在习主席现在习主席"
+}

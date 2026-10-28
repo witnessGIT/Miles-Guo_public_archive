@@ -1,0 +1,712 @@
+{
+  "chunk_audio_sha256": "1917afb489bdf68d503307d12d43d80b79508b108c7b6cd5031515785a6354e0",
+  "chunk_index": 17,
+  "completed_at": "2026-10-28T17:24:24Z",
+  "language": "zh",
+  "live_id": "LIVE_20220910_001",
+  "media_committed_to_git": false,
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "offset_sec": 15300,
+  "paid_api_used": false,
+  "processing_location": "github-hosted-macos-arm64",
+  "schema_version": "cloud-asr-chunk-v1",
+  "segments": [
+    {
+      "avg_logprob": -0.345706,
+      "compression_ratio": 1.0,
+      "end": 15305.96,
+      "no_speech_prob": 0.0,
+      "start": 15300.0,
+      "text": "回忆让人很心烦"
+    },
+    {
+      "avg_logprob": -0.345706,
+      "compression_ratio": 1.0,
+      "end": 15309.56,
+      "no_speech_prob": 0.0,
+      "start": 15305.96,
+      "text": "我又想你了"
+    },
+    {
+      "avg_logprob": -0.345706,
+      "compression_ratio": 1.0,
+      "end": 15315.06,
+      "no_speech_prob": 0.0,
+      "start": 15309.56,
+      "text": "占有在哪端"
+    },
+    {
+      "avg_logprob": -0.345706,
+      "compression_ratio": 1.0,
+      "end": 15317.76,
+      "no_speech_prob": 0.0,
+      "start": 15315.06,
+      "text": "没有你陪伴"
+    },
+    {
+      "avg_logprob": -0.345706,
+      "compression_ratio": 1.0,
+      "end": 15321.84,
+      "no_speech_prob": 0.0,
+      "start": 15317.76,
+      "text": "我真的好孤单"
+    },
+    {
+      "avg_logprob": -0.345706,
+      "compression_ratio": 1.0,
+      "end": 15324.1,
+      "no_speech_prob": 0.0,
+      "start": 15321.84,
+      "text": "我的心好慌乱"
+    },
+    {
+      "avg_logprob": -0.345706,
+      "compression_ratio": 1.0,
+      "end": 15329.16,
+      "no_speech_prob": 0.0,
+      "start": 15324.1,
+      "text": "不知怎么办"
+    },
+    {
+      "avg_logprob": -0.223514,
+      "compression_ratio": 1.071429,
+      "end": 15332.76,
+      "no_speech_prob": 0.0,
+      "start": 15329.16,
+      "text": "没有占有的日子"
+    },
+    {
+      "avg_logprob": -0.223514,
+      "compression_ratio": 1.071429,
+      "end": 15336.42,
+      "no_speech_prob": 0.0,
+      "start": 15332.76,
+      "text": "我真的好茫然"
+    },
+    {
+      "avg_logprob": -0.223514,
+      "compression_ratio": 1.071429,
+      "end": 15344.1,
+      "no_speech_prob": 0.0,
+      "start": 15336.42,
+      "text": "整天就像丢了灵魂一半"
+    },
+    {
+      "avg_logprob": -0.223514,
+      "compression_ratio": 1.071429,
+      "end": 15346.86,
+      "no_speech_prob": 0.0,
+      "start": 15344.1,
+      "text": "没有你陪伴"
+    },
+    {
+      "avg_logprob": -0.223514,
+      "compression_ratio": 1.071429,
+      "end": 15350.92,
+      "no_speech_prob": 0.0,
+      "start": 15346.86,
+      "text": "我真的好孤单"
+    },
+    {
+      "avg_logprob": -0.223514,
+      "compression_ratio": 1.071429,
+      "end": 15353.16,
+      "no_speech_prob": 0.0,
+      "start": 15350.92,
+      "text": "我的心好慌乱"
+    },
+    {
+      "avg_logprob": -0.223514,
+      "compression_ratio": 1.071429,
+      "end": 15358.2,
+      "no_speech_prob": 0.0,
+      "start": 15353.16,
+      "text": "不知怎么办"
+    },
+    {
+      "avg_logprob": -0.144349,
+      "compression_ratio": 0.765957,
+      "end": 15361.8,
+      "no_speech_prob": 0.0,
+      "start": 15358.2,
+      "text": "你们不在身边"
+    },
+    {
+      "avg_logprob": -0.144349,
+      "compression_ratio": 0.765957,
+      "end": 15365.46,
+      "no_speech_prob": 0.0,
+      "start": 15361.8,
+      "text": "人都毫无习惯"
+    },
+    {
+      "avg_logprob": -0.378897,
+      "compression_ratio": 0.75,
+      "end": 15367.56,
+      "no_speech_prob": 0.0,
+      "start": 15365.46,
+      "text": "我的泪已流干"
+    },
+    {
+      "avg_logprob": -0.378897,
+      "compression_ratio": 0.75,
+      "end": 15371.06,
+      "no_speech_prob": 0.0,
+      "start": 15367.56,
+      "text": "你们管不管"
+    },
+    {
+      "avg_logprob": -6.810277,
+      "compression_ratio": 0.428571,
+      "end": 15385.72,
+      "no_speech_prob": 0.0,
+      "start": 15371.66,
+      "text": "回去"
+    },
+    {
+      "avg_logprob": -0.684754,
+      "compression_ratio": 0.731707,
+      "end": 15406.72,
+      "no_speech_prob": 0.0,
+      "start": 15385.72,
+      "text": "风黄的夜晚霓虹灯水散"
+    },
+    {
+      "avg_logprob": -0.172107,
+      "compression_ratio": 0.945652,
+      "end": 15416.72,
+      "no_speech_prob": 0.0,
+      "start": 15406.72,
+      "text": "天亮黑暗赶不走孤单"
+    },
+    {
+      "avg_logprob": -0.172107,
+      "compression_ratio": 0.945652,
+      "end": 15423.72,
+      "no_speech_prob": 0.0,
+      "start": 15416.72,
+      "text": "午夜和白天不停的转换"
+    },
+    {
+      "avg_logprob": -0.172107,
+      "compression_ratio": 0.945652,
+      "end": 15432.72,
+      "no_speech_prob": 0.0,
+      "start": 15423.72,
+      "text": "游走在街头四面的孤单"
+    },
+    {
+      "avg_logprob": -0.07073,
+      "compression_ratio": 0.957447,
+      "end": 15439.72,
+      "no_speech_prob": 0.0,
+      "start": 15432.72,
+      "text": "想起的狂欢总是很短暂"
+    },
+    {
+      "avg_logprob": -0.07073,
+      "compression_ratio": 0.957447,
+      "end": 15446.72,
+      "no_speech_prob": 0.0,
+      "start": 15439.72,
+      "text": "占有的怀抱总让我温暖"
+    },
+    {
+      "avg_logprob": -0.07073,
+      "compression_ratio": 0.957447,
+      "end": 15453.72,
+      "no_speech_prob": 0.0,
+      "start": 15446.72,
+      "text": "无聊的回忆让人很心烦"
+    },
+    {
+      "avg_logprob": -0.224576,
+      "compression_ratio": 0.853333,
+      "end": 15460.72,
+      "no_speech_prob": 0.0,
+      "start": 15453.72,
+      "text": "我又想你了 占有在那端"
+    },
+    {
+      "avg_logprob": -0.224576,
+      "compression_ratio": 0.853333,
+      "end": 15468.72,
+      "no_speech_prob": 0.0,
+      "start": 15460.72,
+      "text": "没有你陪伴我真的好孤单"
+    },
+    {
+      "avg_logprob": -0.214623,
+      "compression_ratio": 0.903509,
+      "end": 15475.72,
+      "no_speech_prob": 0.0,
+      "start": 15468.72,
+      "text": "我的心好慌乱不知怎么办"
+    },
+    {
+      "avg_logprob": -0.214623,
+      "compression_ratio": 0.903509,
+      "end": 15483.72,
+      "no_speech_prob": 0.0,
+      "start": 15475.72,
+      "text": "没有占有的日子 我真的好茫然"
+    },
+    {
+      "avg_logprob": -0.214623,
+      "compression_ratio": 0.903509,
+      "end": 15489.72,
+      "no_speech_prob": 0.0,
+      "start": 15483.72,
+      "text": "整天就像丢了灵魂一半"
+    },
+    {
+      "avg_logprob": -0.112371,
+      "compression_ratio": 1.269231,
+      "end": 15496.72,
+      "no_speech_prob": 0.0,
+      "start": 15489.72,
+      "text": "没有你陪伴我真的好孤单"
+    },
+    {
+      "avg_logprob": -0.112371,
+      "compression_ratio": 1.269231,
+      "end": 15498.72,
+      "no_speech_prob": 0.0,
+      "start": 15496.72,
+      "text": "没有你陪伴我真的好孤单"
+    },
+    {
+      "avg_logprob": -0.112371,
+      "compression_ratio": 1.269231,
+      "end": 15504.72,
+      "no_speech_prob": 0.0,
+      "start": 15498.72,
+      "text": "我的心好慌乱不知怎么办"
+    },
+    {
+      "avg_logprob": -0.1745,
+      "compression_ratio": 0.922078,
+      "end": 15513.72,
+      "no_speech_prob": 0.0,
+      "start": 15504.72,
+      "text": "你们不在身边 真的好不习惯"
+    },
+    {
+      "avg_logprob": -0.1745,
+      "compression_ratio": 0.922078,
+      "end": 15519.72,
+      "no_speech_prob": 0.0,
+      "start": 15513.72,
+      "text": "我的泪已流干 你们管不管"
+    },
+    {
+      "avg_logprob": -6.586161,
+      "compression_ratio": 0.428571,
+      "end": 15534.78,
+      "no_speech_prob": 0.0,
+      "start": 15519.74,
+      "text": "马马"
+    },
+    {
+      "avg_logprob": -0.141985,
+      "compression_ratio": 0.875,
+      "end": 15564.76,
+      "no_speech_prob": 0.0,
+      "start": 15534.78,
+      "text": "优优独播剧场——YoYo Television Series Exclusive"
+    },
+    {
+      "avg_logprob": -0.19533,
+      "compression_ratio": 0.875,
+      "end": 15594.76,
+      "no_speech_prob": 0.0,
+      "start": 15564.78,
+      "text": "优优独播剧场——YoYo Television Series Exclusive"
+    },
+    {
+      "avg_logprob": -0.109649,
+      "compression_ratio": 0.875,
+      "end": 15624.76,
+      "no_speech_prob": 0.0,
+      "start": 15594.78,
+      "text": "优优独播剧场——YoYo Television Series Exclusive"
+    },
+    {
+      "avg_logprob": -0.079503,
+      "compression_ratio": 0.875,
+      "end": 15654.74,
+      "no_speech_prob": 0.0,
+      "start": 15624.76,
+      "text": "优优独播剧场——YoYo Television Series Exclusive"
+    },
+    {
+      "avg_logprob": -0.094131,
+      "compression_ratio": 0.875,
+      "end": 15684.72,
+      "no_speech_prob": 0.0,
+      "start": 15654.74,
+      "text": "优优独播剧场——YoYo Television Series Exclusive"
+    },
+    {
+      "avg_logprob": -0.044418,
+      "compression_ratio": 0.875,
+      "end": 15714.7,
+      "no_speech_prob": 0.0,
+      "start": 15684.72,
+      "text": "优优独播剧场——YoYo Television Series Exclusive"
+    },
+    {
+      "avg_logprob": -0.053849,
+      "compression_ratio": 0.875,
+      "end": 15744.68,
+      "no_speech_prob": 0.0,
+      "start": 15714.7,
+      "text": "优优独播剧场——YoYo Television Series Exclusive"
+    },
+    {
+      "avg_logprob": -0.074036,
+      "compression_ratio": 0.875,
+      "end": 15774.66,
+      "no_speech_prob": 0.0,
+      "start": 15744.68,
+      "text": "优优独播剧场——YoYo Television Series Exclusive"
+    },
+    {
+      "avg_logprob": -0.092313,
+      "compression_ratio": 0.875,
+      "end": 15804.64,
+      "no_speech_prob": 0.0,
+      "start": 15774.66,
+      "text": "优优独播剧场——YoYo Television Series Exclusive"
+    },
+    {
+      "avg_logprob": -0.065139,
+      "compression_ratio": 0.875,
+      "end": 15834.62,
+      "no_speech_prob": 0.0,
+      "start": 15804.64,
+      "text": "优优独播剧场——YoYo Television Series Exclusive"
+    },
+    {
+      "avg_logprob": -0.075611,
+      "compression_ratio": 0.875,
+      "end": 15864.6,
+      "no_speech_prob": 0.0,
+      "start": 15834.62,
+      "text": "优优独播剧场——YoYo Television Series Exclusive"
+    },
+    {
+      "avg_logprob": -0.062341,
+      "compression_ratio": 0.875,
+      "end": 15894.58,
+      "no_speech_prob": 0.0,
+      "start": 15864.6,
+      "text": "优优独播剧场——YoYo Television Series Exclusive"
+    },
+    {
+      "avg_logprob": -0.063725,
+      "compression_ratio": 0.875,
+      "end": 15924.56,
+      "no_speech_prob": 0.0,
+      "start": 15894.58,
+      "text": "优优独播剧场——YoYo Television Series Exclusive"
+    },
+    {
+      "avg_logprob": -0.120352,
+      "compression_ratio": 0.875,
+      "end": 15954.56,
+      "no_speech_prob": 0.0,
+      "start": 15924.58,
+      "text": "优优独播剧场——YoYo Television Series Exclusive"
+    },
+    {
+      "avg_logprob": -0.193323,
+      "compression_ratio": 1.623037,
+      "end": 15956.56,
+      "no_speech_prob": 0.0,
+      "start": 15954.56,
+      "text": "祝大家中秋快乐 阅优独播剧场——YoYo Television Series Exclusive"
+    },
+    {
+      "avg_logprob": -0.193323,
+      "compression_ratio": 1.623037,
+      "end": 15957.56,
+      "no_speech_prob": 0.0,
+      "start": 15956.56,
+      "text": "优独播剧场——YoYo Television Series Exclusive"
+    },
+    {
+      "avg_logprob": -0.193323,
+      "compression_ratio": 1.623037,
+      "end": 15961.56,
+      "no_speech_prob": 0.0,
+      "start": 15957.56,
+      "text": "我们希望今年中秋是最后一个CCP还存在的中秋"
+    },
+    {
+      "avg_logprob": -0.193323,
+      "compression_ratio": 1.623037,
+      "end": 15961.56,
+      "no_speech_prob": 0.0,
+      "start": 15961.56,
+      "text": "也我们一起期待明年的中秋将是一个没有CCP大家阅优独播剧场——YoYo Television Series Exclusive"
+    },
+    {
+      "avg_logprob": -0.098902,
+      "compression_ratio": 2.372222,
+      "end": 15958.56,
+      "no_speech_prob": 0.0,
+      "start": 15956.56,
+      "text": "大家阅优独播剧场——YoYo Television Series Exclusive"
+    },
+    {
+      "avg_logprob": -0.098902,
+      "compression_ratio": 2.372222,
+      "end": 15959.56,
+      "no_speech_prob": 0.0,
+      "start": 15958.56,
+      "text": "大家阅优独播剧场——YoYo Television Series Exclusive"
+    },
+    {
+      "avg_logprob": -0.098902,
+      "compression_ratio": 2.372222,
+      "end": 15960.56,
+      "no_speech_prob": 0.0,
+      "start": 15959.56,
+      "text": "大家阅优独播剧场——YoYo Television Series Exclusive"
+    },
+    {
+      "avg_logprob": -0.098902,
+      "compression_ratio": 2.372222,
+      "end": 15961.56,
+      "no_speech_prob": 0.0,
+      "start": 15960.56,
+      "text": "我们希望今年中秋是最后一个CCP还存在的中秋"
+    },
+    {
+      "avg_logprob": -0.098902,
+      "compression_ratio": 2.372222,
+      "end": 15962.56,
+      "no_speech_prob": 0.0,
+      "start": 15961.56,
+      "text": "也我们一起期待明年的中秋将是一个没有CCP大家阅优独播剧场——YoYo Television Series Exclusive"
+    },
+    {
+      "avg_logprob": -0.106537,
+      "compression_ratio": 2.287879,
+      "end": 15966.56,
+      "no_speech_prob": 0.0,
+      "start": 15962.56,
+      "text": "我们一起期待明年的中秋将是一个没有CCP大家阅优独播剧场——YoYo Television Series Exclusive"
+    },
+    {
+      "avg_logprob": -0.106537,
+      "compression_ratio": 2.287879,
+      "end": 15967.56,
+      "no_speech_prob": 0.0,
+      "start": 15966.56,
+      "text": "大家阅优独播剧场——YoYo Television Series Exclusive"
+    },
+    {
+      "avg_logprob": -0.106537,
+      "compression_ratio": 2.287879,
+      "end": 15968.56,
+      "no_speech_prob": 0.0,
+      "start": 15967.56,
+      "text": "大家阅优独播剧场——YoYo Television Series Exclusive"
+    },
+    {
+      "avg_logprob": -0.106537,
+      "compression_ratio": 2.287879,
+      "end": 15969.56,
+      "no_speech_prob": 0.0,
+      "start": 15968.56,
+      "text": "大家阅优独播剧场——YoYo Television Series Exclusive"
+    },
+    {
+      "avg_logprob": -0.169355,
+      "compression_ratio": 1.330357,
+      "end": 15973.56,
+      "no_speech_prob": 0.0,
+      "start": 15969.56,
+      "text": "祝愿新中国联邦的战友们"
+    },
+    {
+      "avg_logprob": -0.169355,
+      "compression_ratio": 1.330357,
+      "end": 15979.56,
+      "no_speech_prob": 0.0,
+      "start": 15973.56,
+      "text": "2022年中秋佳节快乐 团团圆圆"
+    },
+    {
+      "avg_logprob": -0.169355,
+      "compression_ratio": 1.330357,
+      "end": 15980.56,
+      "no_speech_prob": 0.0,
+      "start": 15979.56,
+      "text": "各位战友们大家好"
+    },
+    {
+      "avg_logprob": -0.169355,
+      "compression_ratio": 1.330357,
+      "end": 15983.56,
+      "no_speech_prob": 0.0,
+      "start": 15980.56,
+      "text": "欢迎收看新中国联邦新闻"
+    },
+    {
+      "avg_logprob": -0.169355,
+      "compression_ratio": 1.330357,
+      "end": 15986.56,
+      "no_speech_prob": 0.0,
+      "start": 15983.56,
+      "text": "我是消灭邪恶之后共产党的新中国人"
+    },
+    {
+      "avg_logprob": -0.169355,
+      "compression_ratio": 1.330357,
+      "end": 15987.56,
+      "no_speech_prob": 0.0,
+      "start": 15986.56,
+      "text": "日关于旧"
+    },
+    {
+      "avg_logprob": -0.169355,
+      "compression_ratio": 1.330357,
+      "end": 15991.56,
+      "no_speech_prob": 0.0,
+      "start": 15987.56,
+      "text": "今天是2022年9月10日 星期六"
+    },
+    {
+      "avg_logprob": -0.169355,
+      "compression_ratio": 1.330357,
+      "end": 15994.56,
+      "no_speech_prob": 0.0,
+      "start": 15991.56,
+      "text": "今天是我们的中秋佳节"
+    },
+    {
+      "avg_logprob": -0.169355,
+      "compression_ratio": 1.330357,
+      "end": 15998.56,
+      "no_speech_prob": 0.0,
+      "start": 15994.56,
+      "text": "这次是我想起了通通波的水调歌头"
+    },
+    {
+      "avg_logprob": -0.215421,
+      "compression_ratio": 1.118644,
+      "end": 16002.56,
+      "no_speech_prob": 0.0,
+      "start": 15998.56,
+      "text": "明月几时有 八九问几天"
+    },
+    {
+      "avg_logprob": -0.215421,
+      "compression_ratio": 1.118644,
+      "end": 16007.56,
+      "no_speech_prob": 0.0,
+      "start": 16002.56,
+      "text": "不知天上公雀 今兴是何年"
+    },
+    {
+      "avg_logprob": -0.215421,
+      "compression_ratio": 1.118644,
+      "end": 16012.56,
+      "no_speech_prob": 0.0,
+      "start": 16007.56,
+      "text": "人有悲欢离合 月有阴情圆缺"
+    },
+    {
+      "avg_logprob": -0.215421,
+      "compression_ratio": 1.118644,
+      "end": 16019.56,
+      "no_speech_prob": 0.0,
+      "start": 16012.56,
+      "text": "此时故男权 但愿人长久 千里共成绝"
+    },
+    {
+      "avg_logprob": -0.215421,
+      "compression_ratio": 1.118644,
+      "end": 16024.56,
+      "no_speech_prob": 0.0,
+      "start": 16019.56,
+      "text": "我想坚定地回答 并不必独目伤怀地说"
+    },
+    {
+      "avg_logprob": -0.269267,
+      "compression_ratio": 0.97619,
+      "end": 16030.56,
+      "no_speech_prob": 0.0,
+      "start": 16024.56,
+      "text": "新兴是灭共年 八九敬战友"
+    },
+    {
+      "avg_logprob": -0.269267,
+      "compression_ratio": 0.97619,
+      "end": 16037.56,
+      "no_speech_prob": 0.0,
+      "start": 16030.56,
+      "text": "好气一冲天 怒火 图共北 新兴灭共年"
+    },
+    {
+      "avg_logprob": -0.176939,
+      "compression_ratio": 0.896104,
+      "end": 16042.56,
+      "no_speech_prob": 0.0,
+      "start": 16037.56,
+      "text": "我们是消灭邪恶中国共产党的新中国人"
+    },
+    {
+      "avg_logprob": -0.176939,
+      "compression_ratio": 0.896104,
+      "end": 16044.56,
+      "no_speech_prob": 0.0,
+      "start": 16042.56,
+      "text": "中秋佳节快乐"
+    },
+    {
+      "avg_logprob": -0.834534,
+      "compression_ratio": 0.666667,
+      "end": 16046.56,
+      "no_speech_prob": 0.0,
+      "start": 16044.56,
+      "text": "我们下节快乐"
+    },
+    {
+      "avg_logprob": -5.972076,
+      "compression_ratio": 0.272727,
+      "end": 16092.48,
+      "no_speech_prob": 0.0,
+      "start": 16074.56,
+      "text": "Dul"
+    },
+    {
+      "avg_logprob": -0.159544,
+      "compression_ratio": 0.875,
+      "end": 16122.46,
+      "no_speech_prob": 0.0,
+      "start": 16092.48,
+      "text": "优优独播剧场——YoYo Television Series Exclusive"
+    },
+    {
+      "avg_logprob": -0.209197,
+      "compression_ratio": 0.875,
+      "end": 16128.1,
+      "no_speech_prob": 0.0,
+      "start": 16122.48,
+      "text": "优优独播剧场——YoYo Television Series Exclusive"
+    },
+    {
+      "avg_logprob": -0.065414,
+      "compression_ratio": 0.875,
+      "end": 16182.46,
+      "no_speech_prob": 0.0,
+      "start": 16152.48,
+      "text": "优优独播剧场——YoYo Television Series Exclusive"
+    }
+  ],
+  "text": "回忆让人很心烦我又想你了占有在哪端没有你陪伴我真的好孤单我的心好慌乱不知怎么办没有占有的日子我真的好茫然整天就像丢了灵魂一半没有你陪伴我真的好孤单我的心好慌乱不知怎么办你们不在身边人都毫无习惯我的泪已流干你们管不管回去风黄的夜晚霓虹灯水散天亮黑暗赶不走孤单午夜和白天不停的转换游走在街头四面的孤单想起的狂欢总是很短暂占有的怀抱总让我温暖无聊的回忆让人很心烦我又想你了 占有在那端没有你陪伴我真的好孤单我的心好慌乱不知怎么办没有占有的日子 我真的好茫然整天就像丢了灵魂一半没有你陪伴我真的好孤单没有你陪伴我真的好孤单我的心好慌乱不知怎么办你们不在身边 真的好不习惯我的泪已流干 你们管不管马马优优独播剧场——YoYo Television Series Exclusive优优独播剧场——YoYo Television Series Exclusive优优独播剧场——YoYo Television Series Exclusive优优独播剧场——YoYo Television Series Exclusive优优独播剧场——YoYo Television Series Exclusive优优独播剧场——YoYo Television Series Exclusive优优独播剧场——YoYo Television Series Exclusive优优独播剧场——YoYo Television Series Exclusive优优独播剧场——YoYo Television Series Exclusive优优独播剧场——YoYo Television Series Exclusive优优独播剧场——YoYo Television Series Exclusive优优独播剧场——YoYo Television Series Exclusive优优独播剧场——YoYo Television Series Exclusive优优独播剧场——YoYo Television Series Exclusive祝大家中秋快乐 阅优独播剧场——YoYo Television Series Exclusive优独播剧场——YoYo Television Series Exclusive我们希望今年中秋是最后一个CCP还存在的中秋也我们一起期待明年的中秋将是一个没有CCP大家阅优独播剧场——YoYo Television Series Exclusive大家阅优独播剧场——YoYo Television Series Exclusive大家阅优独播剧场——YoYo Television Series Exclusive大家阅优独播剧场——YoYo Television Series Exclusive我们希望今年中秋是最后一个CCP还存在的中秋也我们一起期待明年的中秋将是一个没有CCP大家阅优独播剧场——YoYo Television Series Exclusive我们一起期待明年的中秋将是一个没有CCP大家阅优独播剧场——YoYo Television Series Exclusive大家阅优独播剧场——YoYo Television Series Exclusive大家阅优独播剧场——YoYo Television Series Exclusive大家阅优独播剧场——YoYo Television Series Exclusive祝愿新中国联邦的战友们2022年中秋佳节快乐 团团圆圆各位战友们大家好欢迎收看新中国联邦新闻我是消灭邪恶之后共产党的新中国人日关于旧今天是2022年9月10日 星期六今天是我们的中秋佳节这次是我想起了通通波的水调歌头明月几时有 八九问几天不知天上公雀 今兴是何年人有悲欢离合 月有阴情圆缺此时故男权 但愿人长久 千里共成绝我想坚定地回答 并不必独目伤怀地说新兴是灭共年 八九敬战友好气一冲天 怒火 图共北 新兴灭共年我们是消灭邪恶中国共产党的新中国人中秋佳节快乐我们下节快乐 Dul优优独播剧场——YoYo Television Series Exclusive优优独播剧场——YoYo Television Series Exclusive优优独播剧场——YoYo Television Series Exclusive"
+}

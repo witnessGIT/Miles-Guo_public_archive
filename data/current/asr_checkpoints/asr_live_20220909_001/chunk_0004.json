@@ -1,0 +1,3336 @@
+{
+  "chunk_audio_sha256": "60b43ccb13034314e7a9d0528e6a590315d2de7d4a243f0b8b6219baf64dd1bf",
+  "chunk_index": 4,
+  "completed_at": "2026-10-28T16:33:51Z",
+  "language": "zh",
+  "live_id": "LIVE_20220909_001",
+  "media_committed_to_git": false,
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "offset_sec": 3600,
+  "paid_api_used": false,
+  "processing_location": "github-hosted-macos-arm64",
+  "schema_version": "cloud-asr-chunk-v1",
+  "segments": [
+    {
+      "avg_logprob": -0.310461,
+      "compression_ratio": 1.423729,
+      "end": 3606.34,
+      "no_speech_prob": 0.0,
+      "start": 3600.0,
+      "text": "七哥提前在這裡呢,祝所有的兄弟姐妹們家人們中秋節快樂!"
+    },
+    {
+      "avg_logprob": -0.310461,
+      "compression_ratio": 1.423729,
+      "end": 3612.62,
+      "no_speech_prob": 0.0,
+      "start": 3606.34,
+      "text": "衷心的希望啊,所有的戰友們中秋節多和家人在一起,"
+    },
+    {
+      "avg_logprob": -0.310461,
+      "compression_ratio": 1.423729,
+      "end": 3619.86,
+      "no_speech_prob": 0.0,
+      "start": 3612.62,
+      "text": "有耐心的跟家人在一起吃點兒、喝點兒、花錢,別不捨得花!"
+    },
+    {
+      "avg_logprob": -0.310461,
+      "compression_ratio": 1.423729,
+      "end": 3622.22,
+      "no_speech_prob": 0.0,
+      "start": 3619.86,
+      "text": "錢不花的永遠不是你的!"
+    },
+    {
+      "avg_logprob": -0.310461,
+      "compression_ratio": 1.423729,
+      "end": 3629.34,
+      "no_speech_prob": 0.0,
+      "start": 3622.22,
+      "text": "花點兒錢,跟家裡邊相聚相聚,所有的戰友們那天應該把精力放在"
+    },
+    {
+      "avg_logprob": -0.23731,
+      "compression_ratio": 1.279793,
+      "end": 3641.88,
+      "no_speech_prob": 0.0,
+      "start": 3629.34,
+      "text": "和家人相聚上,和陪伴家人上,認真地坐在那裡邊,聽聽音樂,看看月亮,賞賞月!"
+    },
+    {
+      "avg_logprob": -0.23731,
+      "compression_ratio": 1.279793,
+      "end": 3651.1,
+      "no_speech_prob": 0.0,
+      "start": 3641.88,
+      "text": "所以說我是明天和後天主要是陪你七嫂,現在我是被你七嫂包養的,"
+    },
+    {
+      "avg_logprob": -0.23731,
+      "compression_ratio": 1.279793,
+      "end": 3656.5,
+      "no_speech_prob": 0.0,
+      "start": 3651.1,
+      "text": "連吃飯喝水都是歸你七嫂子,都給你七嫂子付錢!"
+    },
+    {
+      "avg_logprob": -0.310265,
+      "compression_ratio": 1.241611,
+      "end": 3660.34,
+      "no_speech_prob": 0.0,
+      "start": 3656.5,
+      "text": "所以說我是被你七嫂子包養的,按照包養的規定,"
+    },
+    {
+      "avg_logprob": -0.310265,
+      "compression_ratio": 1.241611,
+      "end": 3662.84,
+      "no_speech_prob": 0.0,
+      "start": 3660.34,
+      "text": "我也得伺候伺候你七嫂子,是吧?"
+    },
+    {
+      "avg_logprob": -0.310265,
+      "compression_ratio": 1.241611,
+      "end": 3670.04,
+      "no_speech_prob": 0.0,
+      "start": 3662.84,
+      "text": "所以說,決定坐在那兒,人五人六的,在那兒,賞月啊!"
+    },
+    {
+      "avg_logprob": -0.310265,
+      "compression_ratio": 1.241611,
+      "end": 3674.22,
+      "no_speech_prob": 0.0,
+      "start": 3670.04,
+      "text": "賞月啊!什麼?"
+    },
+    {
+      "avg_logprob": -0.406003,
+      "compression_ratio": 1.057971,
+      "end": 3680.56,
+      "no_speech_prob": 0.0,
+      "start": 3674.22,
+      "text": "床前明月逛,一世地霜霜!"
+    },
+    {
+      "avg_logprob": -0.406003,
+      "compression_ratio": 1.057971,
+      "end": 3686.56,
+      "no_speech_prob": 0.0,
+      "start": 3680.56,
+      "text": "巨頭望明月,低頭思故鄉!"
+    },
+    {
+      "avg_logprob": -0.406003,
+      "compression_ratio": 1.057971,
+      "end": 3689.84,
+      "no_speech_prob": 0.0,
+      "start": 3686.56,
+      "text": "給你七嫂子,因詩作詞!"
+    },
+    {
+      "avg_logprob": -0.406003,
+      "compression_ratio": 1.057971,
+      "end": 3693.68,
+      "no_speech_prob": 0.0,
+      "start": 3689.84,
+      "text": "然後準備拿點毛筆字,然後倒是兩下子啊!"
+    },
+    {
+      "avg_logprob": -0.434094,
+      "compression_ratio": 1.076336,
+      "end": 3700.06,
+      "no_speech_prob": 0.0,
+      "start": 3693.68,
+      "text": "到這個後天911就陪你七嫂子搞點浪漫,是吧?"
+    },
+    {
+      "avg_logprob": -0.434094,
+      "compression_ratio": 1.076336,
+      "end": 3706.22,
+      "no_speech_prob": 0.0,
+      "start": 3700.06,
+      "text": "給你七嫂子吹吹肩,捏捏葛脯吹腿,"
+    },
+    {
+      "avg_logprob": -0.434094,
+      "compression_ratio": 1.076336,
+      "end": 3710.4,
+      "no_speech_prob": 0.0,
+      "start": 3707.02,
+      "text": "然後在那兒表達表達愛意,是吧?"
+    },
+    {
+      "avg_logprob": -0.240642,
+      "compression_ratio": 1.30531,
+      "end": 3712.4,
+      "no_speech_prob": 0.0,
+      "start": 3710.4,
+      "text": "方便說也雙修一下"
+    },
+    {
+      "avg_logprob": -0.240642,
+      "compression_ratio": 1.30531,
+      "end": 3718.4,
+      "no_speech_prob": 0.0,
+      "start": 3716.4,
+      "text": "這真是老不要臉的"
+    },
+    {
+      "avg_logprob": -0.240642,
+      "compression_ratio": 1.30531,
+      "end": 3720.4,
+      "no_speech_prob": 0.0,
+      "start": 3719.4,
+      "text": "開玩笑"
+    },
+    {
+      "avg_logprob": -0.240642,
+      "compression_ratio": 1.30531,
+      "end": 3722.4,
+      "no_speech_prob": 0.0,
+      "start": 3720.4,
+      "text": "所以說反正開心吧"
+    },
+    {
+      "avg_logprob": -0.240642,
+      "compression_ratio": 1.30531,
+      "end": 3724.4,
+      "no_speech_prob": 0.0,
+      "start": 3722.4,
+      "text": "開心開心開心"
+    },
+    {
+      "avg_logprob": -0.240642,
+      "compression_ratio": 1.30531,
+      "end": 3726.4,
+      "no_speech_prob": 0.0,
+      "start": 3724.4,
+      "text": "然後呢這個"
+    },
+    {
+      "avg_logprob": -0.240642,
+      "compression_ratio": 1.30531,
+      "end": 3728.4,
+      "no_speech_prob": 0.0,
+      "start": 3726.4,
+      "text": "明天我得抽根雪茄"
+    },
+    {
+      "avg_logprob": -0.240642,
+      "compression_ratio": 1.30531,
+      "end": 3730.4,
+      "no_speech_prob": 0.0,
+      "start": 3728.4,
+      "text": "後天我得抽根雪茄"
+    },
+    {
+      "avg_logprob": -0.240642,
+      "compression_ratio": 1.30531,
+      "end": 3732.4,
+      "no_speech_prob": 0.0,
+      "start": 3730.4,
+      "text": "兄弟姐妹們你們誰都別拉我啊"
+    },
+    {
+      "avg_logprob": -0.240642,
+      "compression_ratio": 1.30531,
+      "end": 3734.4,
+      "no_speech_prob": 0.0,
+      "start": 3732.4,
+      "text": "誰都別攔我啊"
+    },
+    {
+      "avg_logprob": -0.240642,
+      "compression_ratio": 1.30531,
+      "end": 3736.4,
+      "no_speech_prob": 0.0,
+      "start": 3734.4,
+      "text": "然後呢咱現在的那個"
+    },
+    {
+      "avg_logprob": -0.240642,
+      "compression_ratio": 1.30531,
+      "end": 3739.4,
+      "no_speech_prob": 0.0,
+      "start": 3736.4,
+      "text": "整個鳳慶黃的歌已經在YouTube上上線了"
+    },
+    {
+      "avg_logprob": -0.145628,
+      "compression_ratio": 1.291304,
+      "end": 3742.4,
+      "no_speech_prob": 0.0,
+      "start": 3739.4,
+      "text": "然後呢接下來就iTunes蘋果上線"
+    },
+    {
+      "avg_logprob": -0.145628,
+      "compression_ratio": 1.291304,
+      "end": 3744.4,
+      "no_speech_prob": 0.0,
+      "start": 3742.4,
+      "text": "然後打榜"
+    },
+    {
+      "avg_logprob": -0.145628,
+      "compression_ratio": 1.291304,
+      "end": 3748.4,
+      "no_speech_prob": 0.0,
+      "start": 3745.4,
+      "text": "這個時間上線是天意的安排"
+    },
+    {
+      "avg_logprob": -0.145628,
+      "compression_ratio": 1.291304,
+      "end": 3749.4,
+      "no_speech_prob": 0.0,
+      "start": 3748.4,
+      "text": "天意的安排"
+    },
+    {
+      "avg_logprob": -0.145628,
+      "compression_ratio": 1.291304,
+      "end": 3751.4,
+      "no_speech_prob": 0.0,
+      "start": 3749.4,
+      "text": "鳳慶黃上線"
+    },
+    {
+      "avg_logprob": -0.145628,
+      "compression_ratio": 1.291304,
+      "end": 3754.4,
+      "no_speech_prob": 0.0,
+      "start": 3751.4,
+      "text": "是偉大的女王過世的時刻"
+    },
+    {
+      "avg_logprob": -0.145628,
+      "compression_ratio": 1.291304,
+      "end": 3756.4,
+      "no_speech_prob": 0.0,
+      "start": 3754.4,
+      "text": "同時上的線"
+    },
+    {
+      "avg_logprob": -0.145628,
+      "compression_ratio": 1.291304,
+      "end": 3760.4,
+      "no_speech_prob": 0.0,
+      "start": 3756.4,
+      "text": "又趕上了這個中國的中秋節"
+    },
+    {
+      "avg_logprob": -0.145628,
+      "compression_ratio": 1.291304,
+      "end": 3762.4,
+      "no_speech_prob": 0.0,
+      "start": 3760.4,
+      "text": "這個是完全沒有刻意的啊"
+    },
+    {
+      "avg_logprob": -0.145628,
+      "compression_ratio": 1.291304,
+      "end": 3765.4,
+      "no_speech_prob": 0.0,
+      "start": 3762.4,
+      "text": "又趕到了一個我和你起草的結婚紀念日"
+    },
+    {
+      "avg_logprob": -0.145628,
+      "compression_ratio": 1.291304,
+      "end": 3767.4,
+      "no_speech_prob": 0.0,
+      "start": 3765.4,
+      "text": "又趕上911"
+    },
+    {
+      "avg_logprob": -0.168419,
+      "compression_ratio": 1.243243,
+      "end": 3771.4,
+      "no_speech_prob": 0.0,
+      "start": 3767.4,
+      "text": "還跟歷史上的殺人魔頭毛澤東9月9號去世"
+    },
+    {
+      "avg_logprob": -0.168419,
+      "compression_ratio": 1.243243,
+      "end": 3772.4,
+      "no_speech_prob": 0.0,
+      "start": 3771.4,
+      "text": "今天"
+    },
+    {
+      "avg_logprob": -0.168419,
+      "compression_ratio": 1.243243,
+      "end": 3774.4,
+      "no_speech_prob": 0.0,
+      "start": 3773.4,
+      "text": "我的天"
+    },
+    {
+      "avg_logprob": -0.168419,
+      "compression_ratio": 1.243243,
+      "end": 3775.4,
+      "no_speech_prob": 0.0,
+      "start": 3774.4,
+      "text": "想想今天啊"
+    },
+    {
+      "avg_logprob": -0.168419,
+      "compression_ratio": 1.243243,
+      "end": 3778.4,
+      "no_speech_prob": 0.0,
+      "start": 3776.4,
+      "text": "這個這都多少年了是吧"
+    },
+    {
+      "avg_logprob": -0.168419,
+      "compression_ratio": 1.243243,
+      "end": 3781.4,
+      "no_speech_prob": 0.0,
+      "start": 3779.4,
+      "text": "多少年了毛澤東試試啊"
+    },
+    {
+      "avg_logprob": -0.168419,
+      "compression_ratio": 1.243243,
+      "end": 3784.4,
+      "no_speech_prob": 0.0,
+      "start": 3781.4,
+      "text": "當年我都記得我娘在那哭啊"
+    },
+    {
+      "avg_logprob": -0.168419,
+      "compression_ratio": 1.243243,
+      "end": 3786.4,
+      "no_speech_prob": 0.0,
+      "start": 3784.4,
+      "text": "那時候拿了口罩"
+    },
+    {
+      "avg_logprob": -0.168419,
+      "compression_ratio": 1.243243,
+      "end": 3788.4,
+      "no_speech_prob": 0.0,
+      "start": 3786.4,
+      "text": "改成那個白花別在這兒"
+    },
+    {
+      "avg_logprob": -0.209357,
+      "compression_ratio": 1.291139,
+      "end": 3792.4,
+      "no_speech_prob": 0.0,
+      "start": 3788.4,
+      "text": "還有那個那個什麼黑布啊"
+    },
+    {
+      "avg_logprob": -0.209357,
+      "compression_ratio": 1.291139,
+      "end": 3793.4,
+      "no_speech_prob": 0.0,
+      "start": 3792.4,
+      "text": "到處都是"
+    },
+    {
+      "avg_logprob": -0.209357,
+      "compression_ratio": 1.291139,
+      "end": 3795.4,
+      "no_speech_prob": 0.0,
+      "start": 3793.4,
+      "text": "家裡的飯都沒得吃啊"
+    },
+    {
+      "avg_logprob": -0.209357,
+      "compression_ratio": 1.291139,
+      "end": 3798.4,
+      "no_speech_prob": 0.0,
+      "start": 3796.4,
+      "text": "還有錢做花"
+    },
+    {
+      "avg_logprob": -0.209357,
+      "compression_ratio": 1.291139,
+      "end": 3799.4,
+      "no_speech_prob": 0.0,
+      "start": 3798.4,
+      "text": "還有做靈堂"
+    },
+    {
+      "avg_logprob": -0.209357,
+      "compression_ratio": 1.291139,
+      "end": 3801.4,
+      "no_speech_prob": 0.0,
+      "start": 3799.4,
+      "text": "那我們那隊裡邊人啊"
+    },
+    {
+      "avg_logprob": -0.209357,
+      "compression_ratio": 1.291139,
+      "end": 3802.4,
+      "no_speech_prob": 0.0,
+      "start": 3801.4,
+      "text": "生產隊的人都哭啊"
+    },
+    {
+      "avg_logprob": -0.209357,
+      "compression_ratio": 1.291139,
+      "end": 3804.4,
+      "no_speech_prob": 0.0,
+      "start": 3802.4,
+      "text": "我娘也去哭啊"
+    },
+    {
+      "avg_logprob": -0.209357,
+      "compression_ratio": 1.291139,
+      "end": 3806.4,
+      "no_speech_prob": 0.0,
+      "start": 3804.4,
+      "text": "我就問我娘"
+    },
+    {
+      "avg_logprob": -0.209357,
+      "compression_ratio": 1.291139,
+      "end": 3807.4,
+      "no_speech_prob": 0.0,
+      "start": 3806.4,
+      "text": "你怎麼老哭呢"
+    },
+    {
+      "avg_logprob": -0.230739,
+      "compression_ratio": 1.418919,
+      "end": 3809.4,
+      "no_speech_prob": 0.0,
+      "start": 3807.4,
+      "text": "最後娘說我想你老爺了"
+    },
+    {
+      "avg_logprob": -0.230739,
+      "compression_ratio": 1.418919,
+      "end": 3811.4,
+      "no_speech_prob": 0.0,
+      "start": 3809.4,
+      "text": "唉呀"
+    },
+    {
+      "avg_logprob": -0.230739,
+      "compression_ratio": 1.418919,
+      "end": 3813.4,
+      "no_speech_prob": 0.0,
+      "start": 3811.4,
+      "text": "我記得當時是火車"
+    },
+    {
+      "avg_logprob": -0.230739,
+      "compression_ratio": 1.418919,
+      "end": 3815.4,
+      "no_speech_prob": 0.0,
+      "start": 3813.4,
+      "text": "我們家旁邊有火車站"
+    },
+    {
+      "avg_logprob": -0.230739,
+      "compression_ratio": 1.418919,
+      "end": 3817.4,
+      "no_speech_prob": 0.0,
+      "start": 3815.4,
+      "text": "紅旗嶺有火車呀"
+    },
+    {
+      "avg_logprob": -0.230739,
+      "compression_ratio": 1.418919,
+      "end": 3818.4,
+      "no_speech_prob": 0.0,
+      "start": 3817.4,
+      "text": "那時候"
+    },
+    {
+      "avg_logprob": -0.230739,
+      "compression_ratio": 1.418919,
+      "end": 3820.4,
+      "no_speech_prob": 0.0,
+      "start": 3818.4,
+      "text": "我們那時候很先進好不好"
+    },
+    {
+      "avg_logprob": -0.230739,
+      "compression_ratio": 1.418919,
+      "end": 3822.4,
+      "no_speech_prob": 0.0,
+      "start": 3820.4,
+      "text": "我待在那地方"
+    },
+    {
+      "avg_logprob": -0.230739,
+      "compression_ratio": 1.418919,
+      "end": 3823.4,
+      "no_speech_prob": 0.0,
+      "start": 3822.4,
+      "text": "吉林的紅旗嶺"
+    },
+    {
+      "avg_logprob": -0.230739,
+      "compression_ratio": 1.418919,
+      "end": 3824.4,
+      "no_speech_prob": 0.0,
+      "start": 3823.4,
+      "text": "鎳礦是很先進的"
+    },
+    {
+      "avg_logprob": -0.230739,
+      "compression_ratio": 1.418919,
+      "end": 3826.4,
+      "no_speech_prob": 0.0,
+      "start": 3824.4,
+      "text": "有蝌蚪機"
+    },
+    {
+      "avg_logprob": -0.230739,
+      "compression_ratio": 1.418919,
+      "end": 3827.4,
+      "no_speech_prob": 0.0,
+      "start": 3826.4,
+      "text": "有火車"
+    },
+    {
+      "avg_logprob": -0.230739,
+      "compression_ratio": 1.418919,
+      "end": 3830.4,
+      "no_speech_prob": 0.0,
+      "start": 3827.4,
+      "text": "都是很多穿的也很陽氣"
+    },
+    {
+      "avg_logprob": -0.230739,
+      "compression_ratio": 1.418919,
+      "end": 3832.4,
+      "no_speech_prob": 0.0,
+      "start": 3830.4,
+      "text": "我們都發喝汽水呀那時候"
+    },
+    {
+      "avg_logprob": -0.230739,
+      "compression_ratio": 1.418919,
+      "end": 3834.4,
+      "no_speech_prob": 0.0,
+      "start": 3832.4,
+      "text": "到山多老家了我猜"
+    },
+    {
+      "avg_logprob": -0.151805,
+      "compression_ratio": 1.315508,
+      "end": 3836.4,
+      "no_speech_prob": 0.0,
+      "start": 3834.4,
+      "text": "全成牆"
+    },
+    {
+      "avg_logprob": -0.151805,
+      "compression_ratio": 1.315508,
+      "end": 3837.4,
+      "no_speech_prob": 0.0,
+      "start": 3836.4,
+      "text": "是吧"
+    },
+    {
+      "avg_logprob": -0.151805,
+      "compression_ratio": 1.315508,
+      "end": 3838.4,
+      "no_speech_prob": 0.0,
+      "start": 3837.4,
+      "text": "吃了地瓜乾"
+    },
+    {
+      "avg_logprob": -0.151805,
+      "compression_ratio": 1.315508,
+      "end": 3840.4,
+      "no_speech_prob": 0.0,
+      "start": 3838.4,
+      "text": "連電都沒有"
+    },
+    {
+      "avg_logprob": -0.151805,
+      "compression_ratio": 1.315508,
+      "end": 3842.4,
+      "no_speech_prob": 0.0,
+      "start": 3840.4,
+      "text": "多可憐"
+    },
+    {
+      "avg_logprob": -0.151805,
+      "compression_ratio": 1.315508,
+      "end": 3843.4,
+      "no_speech_prob": 0.0,
+      "start": 3842.4,
+      "text": "山東這個地方"
+    },
+    {
+      "avg_logprob": -0.151805,
+      "compression_ratio": 1.315508,
+      "end": 3845.4,
+      "no_speech_prob": 0.0,
+      "start": 3843.4,
+      "text": "魯西這個地方"
+    },
+    {
+      "avg_logprob": -0.151805,
+      "compression_ratio": 1.315508,
+      "end": 3847.4,
+      "no_speech_prob": 0.0,
+      "start": 3845.4,
+      "text": "我認為是從頭到尾"
+    },
+    {
+      "avg_logprob": -0.151805,
+      "compression_ratio": 1.315508,
+      "end": 3850.4,
+      "no_speech_prob": 0.0,
+      "start": 3847.4,
+      "text": "這就是人類上最窮最落後的地方"
+    },
+    {
+      "avg_logprob": -0.151805,
+      "compression_ratio": 1.315508,
+      "end": 3854.4,
+      "no_speech_prob": 0.0,
+      "start": 3851.4,
+      "text": "魯西還有河南的東部"
+    },
+    {
+      "avg_logprob": -0.151805,
+      "compression_ratio": 1.315508,
+      "end": 3856.4,
+      "no_speech_prob": 0.0,
+      "start": 3854.4,
+      "text": "就河南"
+    },
+    {
+      "avg_logprob": -0.151805,
+      "compression_ratio": 1.315508,
+      "end": 3858.4,
+      "no_speech_prob": 0.0,
+      "start": 3856.4,
+      "text": "山東魯西"
+    },
+    {
+      "avg_logprob": -0.151805,
+      "compression_ratio": 1.315508,
+      "end": 3859.4,
+      "no_speech_prob": 0.0,
+      "start": 3858.4,
+      "text": "陝西"
+    },
+    {
+      "avg_logprob": -0.151805,
+      "compression_ratio": 1.315508,
+      "end": 3860.4,
+      "no_speech_prob": 0.0,
+      "start": 3859.4,
+      "text": "山西"
+    },
+    {
+      "avg_logprob": -0.151805,
+      "compression_ratio": 1.315508,
+      "end": 3861.4,
+      "no_speech_prob": 0.0,
+      "start": 3860.4,
+      "text": "哇塞"
+    },
+    {
+      "avg_logprob": -0.151805,
+      "compression_ratio": 1.315508,
+      "end": 3862.4,
+      "no_speech_prob": 0.0,
+      "start": 3861.4,
+      "text": "這是所謂中華文明"
+    },
+    {
+      "avg_logprob": -0.136741,
+      "compression_ratio": 1.417021,
+      "end": 3864.4,
+      "no_speech_prob": 0.0,
+      "start": 3862.4,
+      "text": "這真的是一個不是人帶的地方"
+    },
+    {
+      "avg_logprob": -0.136741,
+      "compression_ratio": 1.417021,
+      "end": 3865.4,
+      "no_speech_prob": 0.0,
+      "start": 3864.4,
+      "text": "要山沒山"
+    },
+    {
+      "avg_logprob": -0.136741,
+      "compression_ratio": 1.417021,
+      "end": 3866.4,
+      "no_speech_prob": 0.0,
+      "start": 3865.4,
+      "text": "要水沒水"
+    },
+    {
+      "avg_logprob": -0.136741,
+      "compression_ratio": 1.417021,
+      "end": 3868.4,
+      "no_speech_prob": 0.0,
+      "start": 3866.4,
+      "text": "啥也沒求有"
+    },
+    {
+      "avg_logprob": -0.136741,
+      "compression_ratio": 1.417021,
+      "end": 3871.4,
+      "no_speech_prob": 0.0,
+      "start": 3868.4,
+      "text": "就我老家那個地方平不邋遢"
+    },
+    {
+      "avg_logprob": -0.136741,
+      "compression_ratio": 1.417021,
+      "end": 3874.4,
+      "no_speech_prob": 0.0,
+      "start": 3871.4,
+      "text": "一個秦始皇大堤是最高的了"
+    },
+    {
+      "avg_logprob": -0.136741,
+      "compression_ratio": 1.417021,
+      "end": 3876.4,
+      "no_speech_prob": 0.0,
+      "start": 3874.4,
+      "text": "大概也就是十幾米高"
+    },
+    {
+      "avg_logprob": -0.136741,
+      "compression_ratio": 1.417021,
+      "end": 3879.4,
+      "no_speech_prob": 0.0,
+      "start": 3877.4,
+      "text": "你啥也沒有那個破地方"
+    },
+    {
+      "avg_logprob": -0.136741,
+      "compression_ratio": 1.417021,
+      "end": 3881.4,
+      "no_speech_prob": 0.0,
+      "start": 3879.4,
+      "text": "所以我回到老家以後"
+    },
+    {
+      "avg_logprob": -0.136741,
+      "compression_ratio": 1.417021,
+      "end": 3882.4,
+      "no_speech_prob": 0.0,
+      "start": 3881.4,
+      "text": "就跟倒是地獄一樣"
+    },
+    {
+      "avg_logprob": -0.136741,
+      "compression_ratio": 1.417021,
+      "end": 3883.4,
+      "no_speech_prob": 0.0,
+      "start": 3882.4,
+      "text": "在山東老家"
+    },
+    {
+      "avg_logprob": -0.136741,
+      "compression_ratio": 1.417021,
+      "end": 3885.4,
+      "no_speech_prob": 0.0,
+      "start": 3883.4,
+      "text": "我回到老家唯一的件事"
+    },
+    {
+      "avg_logprob": -0.136741,
+      "compression_ratio": 1.417021,
+      "end": 3887.4,
+      "no_speech_prob": 0.0,
+      "start": 3885.4,
+      "text": "就是把你七嫂子找到了"
+    },
+    {
+      "avg_logprob": -0.198133,
+      "compression_ratio": 1.227273,
+      "end": 3891.4,
+      "no_speech_prob": 0.0,
+      "start": 3887.4,
+      "text": "所以我這山東這個遼城啊"
+    },
+    {
+      "avg_logprob": -0.198133,
+      "compression_ratio": 1.227273,
+      "end": 3893.4,
+      "no_speech_prob": 0.0,
+      "start": 3891.4,
+      "text": "這個深陷魯西啊"
+    },
+    {
+      "avg_logprob": -0.198133,
+      "compression_ratio": 1.227273,
+      "end": 3894.4,
+      "no_speech_prob": 0.0,
+      "start": 3893.4,
+      "text": "我恨之入骨"
+    },
+    {
+      "avg_logprob": -0.198133,
+      "compression_ratio": 1.227273,
+      "end": 3896.4,
+      "no_speech_prob": 0.0,
+      "start": 3895.4,
+      "text": "不會有如果的"
+    },
+    {
+      "avg_logprob": -0.198133,
+      "compression_ratio": 1.227273,
+      "end": 3897.4,
+      "no_speech_prob": 0.0,
+      "start": 3896.4,
+      "text": "也不會有未來"
+    },
+    {
+      "avg_logprob": -0.198133,
+      "compression_ratio": 1.227273,
+      "end": 3900.4,
+      "no_speech_prob": 0.0,
+      "start": 3897.4,
+      "text": "就我這一萬萬輩子都不想去那個地方"
+    },
+    {
+      "avg_logprob": -0.198133,
+      "compression_ratio": 1.227273,
+      "end": 3902.4,
+      "no_speech_prob": 0.0,
+      "start": 3901.4,
+      "text": "然後河南"
+    },
+    {
+      "avg_logprob": -0.198133,
+      "compression_ratio": 1.227273,
+      "end": 3905.4,
+      "no_speech_prob": 0.0,
+      "start": 3902.4,
+      "text": "你到河南去了什麼開封啊"
+    },
+    {
+      "avg_logprob": -0.198133,
+      "compression_ratio": 1.227273,
+      "end": 3906.4,
+      "no_speech_prob": 0.0,
+      "start": 3905.4,
+      "text": "洛陽啊"
+    },
+    {
+      "avg_logprob": -0.198133,
+      "compression_ratio": 1.227273,
+      "end": 3907.4,
+      "no_speech_prob": 0.0,
+      "start": 3906.4,
+      "text": "周口啊"
+    },
+    {
+      "avg_logprob": -0.117763,
+      "compression_ratio": 1.486957,
+      "end": 3908.4,
+      "no_speech_prob": 0.0,
+      "start": 3907.4,
+      "text": "周口啊"
+    },
+    {
+      "avg_logprob": -0.117763,
+      "compression_ratio": 1.486957,
+      "end": 3909.4,
+      "no_speech_prob": 0.0,
+      "start": 3908.4,
+      "text": "周馬店啊"
+    },
+    {
+      "avg_logprob": -0.117763,
+      "compression_ratio": 1.486957,
+      "end": 3911.4,
+      "no_speech_prob": 0.0,
+      "start": 3909.4,
+      "text": "那簡直是人間的地獄"
+    },
+    {
+      "avg_logprob": -0.117763,
+      "compression_ratio": 1.486957,
+      "end": 3913.4,
+      "no_speech_prob": 0.0,
+      "start": 3911.4,
+      "text": "活在沙漠裡都比活那好"
+    },
+    {
+      "avg_logprob": -0.117763,
+      "compression_ratio": 1.486957,
+      "end": 3915.4,
+      "no_speech_prob": 0.0,
+      "start": 3913.4,
+      "text": "沙漠裡還有個蜥蜴呢"
+    },
+    {
+      "avg_logprob": -0.117763,
+      "compression_ratio": 1.486957,
+      "end": 3916.4,
+      "no_speech_prob": 0.0,
+      "start": 3915.4,
+      "text": "是不是"
+    },
+    {
+      "avg_logprob": -0.117763,
+      "compression_ratio": 1.486957,
+      "end": 3917.4,
+      "no_speech_prob": 0.0,
+      "start": 3916.4,
+      "text": "那有個屁啊"
+    },
+    {
+      "avg_logprob": -0.117763,
+      "compression_ratio": 1.486957,
+      "end": 3918.4,
+      "no_speech_prob": 0.0,
+      "start": 3917.4,
+      "text": "那個地方"
+    },
+    {
+      "avg_logprob": -0.117763,
+      "compression_ratio": 1.486957,
+      "end": 3919.4,
+      "no_speech_prob": 0.0,
+      "start": 3918.4,
+      "text": "除了水災就水災"
+    },
+    {
+      "avg_logprob": -0.117763,
+      "compression_ratio": 1.486957,
+      "end": 3920.4,
+      "no_speech_prob": 0.0,
+      "start": 3919.4,
+      "text": "要地沒地"
+    },
+    {
+      "avg_logprob": -0.117763,
+      "compression_ratio": 1.486957,
+      "end": 3921.4,
+      "no_speech_prob": 0.0,
+      "start": 3920.4,
+      "text": "要糧食沒糧食"
+    },
+    {
+      "avg_logprob": -0.117763,
+      "compression_ratio": 1.486957,
+      "end": 3922.4,
+      "no_speech_prob": 0.0,
+      "start": 3921.4,
+      "text": "要水果沒水果"
+    },
+    {
+      "avg_logprob": -0.117763,
+      "compression_ratio": 1.486957,
+      "end": 3924.4,
+      "no_speech_prob": 0.0,
+      "start": 3922.4,
+      "text": "山不清水不秀"
+    },
+    {
+      "avg_logprob": -0.117763,
+      "compression_ratio": 1.486957,
+      "end": 3925.4,
+      "no_speech_prob": 0.0,
+      "start": 3924.4,
+      "text": "那個地方是"
+    },
+    {
+      "avg_logprob": -0.117763,
+      "compression_ratio": 1.486957,
+      "end": 3926.4,
+      "no_speech_prob": 0.0,
+      "start": 3925.4,
+      "text": "要山沒山"
+    },
+    {
+      "avg_logprob": -0.117763,
+      "compression_ratio": 1.486957,
+      "end": 3927.4,
+      "no_speech_prob": 0.0,
+      "start": 3926.4,
+      "text": "要水沒水"
+    },
+    {
+      "avg_logprob": -0.117763,
+      "compression_ratio": 1.486957,
+      "end": 3929.4,
+      "no_speech_prob": 0.0,
+      "start": 3927.4,
+      "text": "有水是渾水"
+    },
+    {
+      "avg_logprob": -0.117763,
+      "compression_ratio": 1.486957,
+      "end": 3931.4,
+      "no_speech_prob": 0.0,
+      "start": 3929.4,
+      "text": "要山是山丘埋葬人的"
+    },
+    {
+      "avg_logprob": -0.117763,
+      "compression_ratio": 1.486957,
+      "end": 3932.4,
+      "no_speech_prob": 0.0,
+      "start": 3931.4,
+      "text": "全是墓地"
+    },
+    {
+      "avg_logprob": -0.117763,
+      "compression_ratio": 1.486957,
+      "end": 3935.4,
+      "no_speech_prob": 0.0,
+      "start": 3932.4,
+      "text": "沒有什麼好東西"
+    },
+    {
+      "avg_logprob": -0.133574,
+      "compression_ratio": 1.346939,
+      "end": 3938.4,
+      "no_speech_prob": 0.0,
+      "start": 3935.4,
+      "text": "熊山惡水這詞不能形容他們的地方"
+    },
+    {
+      "avg_logprob": -0.133574,
+      "compression_ratio": 1.346939,
+      "end": 3940.4,
+      "no_speech_prob": 0.0,
+      "start": 3938.4,
+      "text": "那是惡山"
+    },
+    {
+      "avg_logprob": -0.133574,
+      "compression_ratio": 1.346939,
+      "end": 3941.4,
+      "no_speech_prob": 0.0,
+      "start": 3940.4,
+      "text": "臭水"
+    },
+    {
+      "avg_logprob": -0.133574,
+      "compression_ratio": 1.346939,
+      "end": 3942.4,
+      "no_speech_prob": 0.0,
+      "start": 3941.4,
+      "text": "哎呀"
+    },
+    {
+      "avg_logprob": -0.133574,
+      "compression_ratio": 1.346939,
+      "end": 3945.4,
+      "no_speech_prob": 0.0,
+      "start": 3942.4,
+      "text": "所謂中華中原文明啊"
+    },
+    {
+      "avg_logprob": -0.133574,
+      "compression_ratio": 1.346939,
+      "end": 3946.4,
+      "no_speech_prob": 0.0,
+      "start": 3945.4,
+      "text": "這歷史很偉大"
+    },
+    {
+      "avg_logprob": -0.133574,
+      "compression_ratio": 1.346939,
+      "end": 3949.4,
+      "no_speech_prob": 0.0,
+      "start": 3946.4,
+      "text": "但是你看現在真的是糟透了"
+    },
+    {
+      "avg_logprob": -0.133574,
+      "compression_ratio": 1.346939,
+      "end": 3950.4,
+      "no_speech_prob": 0.0,
+      "start": 3949.4,
+      "text": "糟透了"
+    },
+    {
+      "avg_logprob": -0.133574,
+      "compression_ratio": 1.346939,
+      "end": 3952.4,
+      "no_speech_prob": 0.0,
+      "start": 3951.4,
+      "text": "然後東北"
+    },
+    {
+      "avg_logprob": -0.133574,
+      "compression_ratio": 1.346939,
+      "end": 3955.4,
+      "no_speech_prob": 0.0,
+      "start": 3952.4,
+      "text": "當時我在東北的時候看了毛澤東過世"
+    },
+    {
+      "avg_logprob": -0.133574,
+      "compression_ratio": 1.346939,
+      "end": 3956.4,
+      "no_speech_prob": 0.0,
+      "start": 3955.4,
+      "text": "火車啊"
+    },
+    {
+      "avg_logprob": -0.133574,
+      "compression_ratio": 1.346939,
+      "end": 3957.4,
+      "no_speech_prob": 0.0,
+      "start": 3956.4,
+      "text": "然後呢"
+    },
+    {
+      "avg_logprob": -0.133574,
+      "compression_ratio": 1.346939,
+      "end": 3958.4,
+      "no_speech_prob": 0.0,
+      "start": 3957.4,
+      "text": "後來就是"
+    },
+    {
+      "avg_logprob": -0.133574,
+      "compression_ratio": 1.346939,
+      "end": 3961.4,
+      "no_speech_prob": 0.0,
+      "start": 3958.4,
+      "text": "從我回山東老家"
+    },
+    {
+      "avg_logprob": -0.133574,
+      "compression_ratio": 1.346939,
+      "end": 3963.4,
+      "no_speech_prob": 0.0,
+      "start": 3961.4,
+      "text": "那時候我才多大你現在要"
+    },
+    {
+      "avg_logprob": -0.133574,
+      "compression_ratio": 1.346939,
+      "end": 3964.4,
+      "no_speech_prob": 0.0,
+      "start": 3963.4,
+      "text": "那時候我是七歲八歲"
+    },
+    {
+      "avg_logprob": -0.198242,
+      "compression_ratio": 1.521127,
+      "end": 3965.4,
+      "no_speech_prob": 0.0,
+      "start": 3964.4,
+      "text": "我七歲八歲"
+    },
+    {
+      "avg_logprob": -0.198242,
+      "compression_ratio": 1.521127,
+      "end": 3966.4,
+      "no_speech_prob": 0.0,
+      "start": 3965.4,
+      "text": "毛澤東哪年死的"
+    },
+    {
+      "avg_logprob": -0.198242,
+      "compression_ratio": 1.521127,
+      "end": 3967.4,
+      "no_speech_prob": 0.0,
+      "start": 3966.4,
+      "text": "毛澤東哪年死的"
+    },
+    {
+      "avg_logprob": -0.198242,
+      "compression_ratio": 1.521127,
+      "end": 3968.4,
+      "no_speech_prob": 0.0,
+      "start": 3967.4,
+      "text": "毛澤東哪年死的"
+    },
+    {
+      "avg_logprob": -0.198242,
+      "compression_ratio": 1.521127,
+      "end": 3970.4,
+      "no_speech_prob": 0.0,
+      "start": 3968.4,
+      "text": "我七八歲的時候吧"
+    },
+    {
+      "avg_logprob": -0.198242,
+      "compression_ratio": 1.521127,
+      "end": 3971.4,
+      "no_speech_prob": 0.0,
+      "start": 3970.4,
+      "text": "六七歲的時候"
+    },
+    {
+      "avg_logprob": -0.198242,
+      "compression_ratio": 1.521127,
+      "end": 3974.4,
+      "no_speech_prob": 0.0,
+      "start": 3971.4,
+      "text": "王阿虎你告訴我回老家"
+    },
+    {
+      "avg_logprob": -0.198242,
+      "compression_ratio": 1.521127,
+      "end": 3977.4,
+      "no_speech_prob": 0.0,
+      "start": 3974.4,
+      "text": "我在唐山大地震旁邊的火車道旁邊唐山"
+    },
+    {
+      "avg_logprob": -0.198242,
+      "compression_ratio": 1.521127,
+      "end": 3979.4,
+      "no_speech_prob": 0.0,
+      "start": 3977.4,
+      "text": "全埋在這小坟頭啊"
+    },
+    {
+      "avg_logprob": -0.198242,
+      "compression_ratio": 1.521127,
+      "end": 3980.4,
+      "no_speech_prob": 0.0,
+      "start": 3979.4,
+      "text": "你就看不完"
+    },
+    {
+      "avg_logprob": -0.198242,
+      "compression_ratio": 1.521127,
+      "end": 3981.4,
+      "no_speech_prob": 0.0,
+      "start": 3980.4,
+      "text": "都是那小坟頭"
+    },
+    {
+      "avg_logprob": -0.198242,
+      "compression_ratio": 1.521127,
+      "end": 3983.4,
+      "no_speech_prob": 0.0,
+      "start": 3981.4,
+      "text": "壓著這張紙"
+    },
+    {
+      "avg_logprob": -0.198242,
+      "compression_ratio": 1.521127,
+      "end": 3984.4,
+      "no_speech_prob": 0.0,
+      "start": 3983.4,
+      "text": "哎呀"
+    },
+    {
+      "avg_logprob": -0.198242,
+      "compression_ratio": 1.521127,
+      "end": 3985.4,
+      "no_speech_prob": 0.0,
+      "start": 3984.4,
+      "text": "太可怕了"
+    },
+    {
+      "avg_logprob": -0.198242,
+      "compression_ratio": 1.521127,
+      "end": 3987.4,
+      "no_speech_prob": 0.0,
+      "start": 3985.4,
+      "text": "中國人太悲哀了"
+    },
+    {
+      "avg_logprob": -0.198242,
+      "compression_ratio": 1.521127,
+      "end": 3989.4,
+      "no_speech_prob": 0.0,
+      "start": 3987.4,
+      "text": "太悲哀了"
+    },
+    {
+      "avg_logprob": -0.294955,
+      "compression_ratio": 1.216216,
+      "end": 3993.4,
+      "no_speech_prob": 0.0,
+      "start": 3989.4,
+      "text": "所以說我今天啊"
+    },
+    {
+      "avg_logprob": -0.294955,
+      "compression_ratio": 1.216216,
+      "end": 3995.4,
+      "no_speech_prob": 0.0,
+      "start": 3993.4,
+      "text": "昨天我真是有一個主動的事兒"
+    },
+    {
+      "avg_logprob": -0.294955,
+      "compression_ratio": 1.216216,
+      "end": 3997.4,
+      "no_speech_prob": 0.0,
+      "start": 3995.4,
+      "text": "有一個很主動的事兒啊"
+    },
+    {
+      "avg_logprob": -0.294955,
+      "compression_ratio": 1.216216,
+      "end": 3999.4,
+      "no_speech_prob": 0.0,
+      "start": 3997.4,
+      "text": "就是"
+    },
+    {
+      "avg_logprob": -0.294955,
+      "compression_ratio": 1.216216,
+      "end": 4001.4,
+      "no_speech_prob": 0.0,
+      "start": 3999.4,
+      "text": "昨天晚上"
+    },
+    {
+      "avg_logprob": -0.294955,
+      "compression_ratio": 1.216216,
+      "end": 4002.4,
+      "no_speech_prob": 0.0,
+      "start": 4001.4,
+      "text": "大概一點多吧"
+    },
+    {
+      "avg_logprob": -0.294955,
+      "compression_ratio": 1.216216,
+      "end": 4003.4,
+      "no_speech_prob": 0.0,
+      "start": 4002.4,
+      "text": "一點多"
+    },
+    {
+      "avg_logprob": -0.21618,
+      "compression_ratio": 1.31405,
+      "end": 4006.4,
+      "no_speech_prob": 0.0,
+      "start": 4003.4,
+      "text": "我們有兩家戰友"
+    },
+    {
+      "avg_logprob": -0.21618,
+      "compression_ratio": 1.31405,
+      "end": 4008.4,
+      "no_speech_prob": 0.0,
+      "start": 4006.4,
+      "text": "剛剛從國內出來"
+    },
+    {
+      "avg_logprob": -0.21618,
+      "compression_ratio": 1.31405,
+      "end": 4010.4,
+      "no_speech_prob": 0.0,
+      "start": 4008.4,
+      "text": "到了俄羅斯"
+    },
+    {
+      "avg_logprob": -0.21618,
+      "compression_ratio": 1.31405,
+      "end": 4012.4,
+      "no_speech_prob": 0.0,
+      "start": 4010.4,
+      "text": "到了俄羅斯啊"
+    },
+    {
+      "avg_logprob": -0.21618,
+      "compression_ratio": 1.31405,
+      "end": 4017.4,
+      "no_speech_prob": 0.0,
+      "start": 4012.4,
+      "text": "然後到了俄羅斯以後他就可以了"
+    },
+    {
+      "avg_logprob": -0.21618,
+      "compression_ratio": 1.31405,
+      "end": 4019.4,
+      "no_speech_prob": 0.0,
+      "start": 4017.4,
+      "text": "因為他有家人在俄羅斯"
+    },
+    {
+      "avg_logprob": -0.21618,
+      "compression_ratio": 1.31405,
+      "end": 4021.4,
+      "no_speech_prob": 0.0,
+      "start": 4019.4,
+      "text": "他敢出說"
+    },
+    {
+      "avg_logprob": -0.145432,
+      "compression_ratio": 1.313253,
+      "end": 4025.4,
+      "no_speech_prob": 0.0,
+      "start": 4021.4,
+      "text": "我寧可為俄羅斯死在俄烏戰場上去"
+    },
+    {
+      "avg_logprob": -0.145432,
+      "compression_ratio": 1.313253,
+      "end": 4028.4,
+      "no_speech_prob": 0.0,
+      "start": 4026.4,
+      "text": "我也不會回中共國了"
+    },
+    {
+      "avg_logprob": -0.145432,
+      "compression_ratio": 1.313253,
+      "end": 4031.4,
+      "no_speech_prob": 0.0,
+      "start": 4029.4,
+      "text": "咱們這個戰友從哪出去呢"
+    },
+    {
+      "avg_logprob": -0.145432,
+      "compression_ratio": 1.313253,
+      "end": 4033.4,
+      "no_speech_prob": 0.0,
+      "start": 4031.4,
+      "text": "是最富饒的蘇州"
+    },
+    {
+      "avg_logprob": -0.145432,
+      "compression_ratio": 1.313253,
+      "end": 4036.4,
+      "no_speech_prob": 0.0,
+      "start": 4035.4,
+      "text": "蘇州出去的"
+    },
+    {
+      "avg_logprob": -0.145432,
+      "compression_ratio": 1.313253,
+      "end": 4038.4,
+      "no_speech_prob": 0.0,
+      "start": 4037.4,
+      "text": "哎呀"
+    },
+    {
+      "avg_logprob": -0.145432,
+      "compression_ratio": 1.313253,
+      "end": 4039.4,
+      "no_speech_prob": 0.0,
+      "start": 4038.4,
+      "text": "我說你才出去幾天呢"
+    },
+    {
+      "avg_logprob": -0.145432,
+      "compression_ratio": 1.313253,
+      "end": 4041.4,
+      "no_speech_prob": 0.0,
+      "start": 4039.4,
+      "text": "還幾小時都算不上嗎"
+    },
+    {
+      "avg_logprob": -0.145432,
+      "compression_ratio": 1.313253,
+      "end": 4042.4,
+      "no_speech_prob": 0.0,
+      "start": 4041.4,
+      "text": "你咋這麼說"
+    },
+    {
+      "avg_logprob": -0.145432,
+      "compression_ratio": 1.313253,
+      "end": 4043.4,
+      "no_speech_prob": 0.0,
+      "start": 4042.4,
+      "text": "他說我到這來"
+    },
+    {
+      "avg_logprob": -0.145432,
+      "compression_ratio": 1.313253,
+      "end": 4045.4,
+      "no_speech_prob": 0.0,
+      "start": 4043.4,
+      "text": "我最起碼感覺這個天地"
+    },
+    {
+      "avg_logprob": -0.145432,
+      "compression_ratio": 1.313253,
+      "end": 4046.4,
+      "no_speech_prob": 0.0,
+      "start": 4045.4,
+      "text": "空氣"
+    },
+    {
+      "avg_logprob": -0.145432,
+      "compression_ratio": 1.313253,
+      "end": 4048.4,
+      "no_speech_prob": 0.0,
+      "start": 4046.4,
+      "text": "還有這裡老百姓對我的友好"
+    },
+    {
+      "avg_logprob": -0.145432,
+      "compression_ratio": 1.313253,
+      "end": 4050.4,
+      "no_speech_prob": 0.0,
+      "start": 4048.4,
+      "text": "我覺得我是個人"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.304167,
+      "end": 4052.4,
+      "no_speech_prob": 0.0,
+      "start": 4050.4,
+      "text": "他就我這這個富豪"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.304167,
+      "end": 4053.4,
+      "no_speech_prob": 0.0,
+      "start": 4052.4,
+      "text": "我在國內"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.304167,
+      "end": 4055.4,
+      "no_speech_prob": 0.0,
+      "start": 4053.4,
+      "text": "我不是個人"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.304167,
+      "end": 4056.4,
+      "no_speech_prob": 0.0,
+      "start": 4055.4,
+      "text": "我家裡有十幾台車"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.304167,
+      "end": 4058.4,
+      "no_speech_prob": 0.0,
+      "start": 4056.4,
+      "text": "咱這個戰友出去啊"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.304167,
+      "end": 4059.4,
+      "no_speech_prob": 0.0,
+      "start": 4058.4,
+      "text": "戰友出去"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.304167,
+      "end": 4060.4,
+      "no_speech_prob": 0.0,
+      "start": 4059.4,
+      "text": "咱家是開工廠的"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.304167,
+      "end": 4063.4,
+      "no_speech_prob": 0.0,
+      "start": 4061.4,
+      "text": "所有因為這兩年扣給他"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.304167,
+      "end": 4064.4,
+      "no_speech_prob": 0.0,
+      "start": 4063.4,
+      "text": "貸的款還不了"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.304167,
+      "end": 4069.4,
+      "no_speech_prob": 0.0,
+      "start": 4066.4,
+      "text": "就銀行的叫他做假賬假貸款"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.304167,
+      "end": 4070.4,
+      "no_speech_prob": 0.0,
+      "start": 4069.4,
+      "text": "!要回扣"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.304167,
+      "end": 4071.4,
+      "no_speech_prob": 0.0,
+      "start": 4070.4,
+      "text": "天天賠償回扣"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.304167,
+      "end": 4075.4,
+      "no_speech_prob": 0.0,
+      "start": 4072.4,
+      "text": "警察說要調查他什麼銀行詐騙"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.304167,
+      "end": 4079.4,
+      "no_speech_prob": 0.0,
+      "start": 4076.4,
+      "text": "他的幾千個工人的員工"
+    },
+    {
+      "avg_logprob": -0.190983,
+      "compression_ratio": 1.252941,
+      "end": 4081.4,
+      "no_speech_prob": 0.0,
+      "start": 4079.4,
+      "text": "天天要弄死他"
+    },
+    {
+      "avg_logprob": -0.190983,
+      "compression_ratio": 1.252941,
+      "end": 4083.4,
+      "no_speech_prob": 0.0,
+      "start": 4082.4,
+      "text": "他說我愛我啥事兒了"
+    },
+    {
+      "avg_logprob": -0.190983,
+      "compression_ratio": 1.252941,
+      "end": 4085.4,
+      "no_speech_prob": 0.0,
+      "start": 4083.4,
+      "text": "你說我這空氣又不是我做的"
+    },
+    {
+      "avg_logprob": -0.190983,
+      "compression_ratio": 1.252941,
+      "end": 4087.4,
+      "no_speech_prob": 0.0,
+      "start": 4085.4,
+      "text": "你讓我天天是核酸"
+    },
+    {
+      "avg_logprob": -0.190983,
+      "compression_ratio": 1.252941,
+      "end": 4088.4,
+      "no_speech_prob": 0.0,
+      "start": 4087.4,
+      "text": "我工廠我開不了"
+    },
+    {
+      "avg_logprob": -0.190983,
+      "compression_ratio": 1.252941,
+      "end": 4089.4,
+      "no_speech_prob": 0.0,
+      "start": 4088.4,
+      "text": "我不跑我怎麼辦"
+    },
+    {
+      "avg_logprob": -0.190983,
+      "compression_ratio": 1.252941,
+      "end": 4092.4,
+      "no_speech_prob": 0.0,
+      "start": 4089.4,
+      "text": "他媚夫是當地公安局的副局長"
+    },
+    {
+      "avg_logprob": -0.190983,
+      "compression_ratio": 1.252941,
+      "end": 4096.4,
+      "no_speech_prob": 0.0,
+      "start": 4093.4,
+      "text": "說得了咱們全跑得了"
+    },
+    {
+      "avg_logprob": -0.124922,
+      "compression_ratio": 1.278409,
+      "end": 4099.4,
+      "no_speech_prob": 0.0,
+      "start": 4096.4,
+      "text": "所以說這兩天就給跑出去了"
+    },
+    {
+      "avg_logprob": -0.124922,
+      "compression_ratio": 1.278409,
+      "end": 4102.4,
+      "no_speech_prob": 0.0,
+      "start": 4100.4,
+      "text": "公安局的一家人家"
+    },
+    {
+      "avg_logprob": -0.124922,
+      "compression_ratio": 1.278409,
+      "end": 4105.4,
+      "no_speech_prob": 0.0,
+      "start": 4102.4,
+      "text": "開工廠的當地富豪一家人家"
+    },
+    {
+      "avg_logprob": -0.124922,
+      "compression_ratio": 1.278409,
+      "end": 4107.4,
+      "no_speech_prob": 0.0,
+      "start": 4105.4,
+      "text": "就因為這核糖核酸"
+    },
+    {
+      "avg_logprob": -0.124922,
+      "compression_ratio": 1.278409,
+      "end": 4108.4,
+      "no_speech_prob": 0.0,
+      "start": 4107.4,
+      "text": "事到全家跑了"
+    },
+    {
+      "avg_logprob": -0.124922,
+      "compression_ratio": 1.278409,
+      "end": 4109.4,
+      "no_speech_prob": 0.0,
+      "start": 4108.4,
+      "text": "說到俄羅斯"
+    },
+    {
+      "avg_logprob": -0.124922,
+      "compression_ratio": 1.278409,
+      "end": 4110.4,
+      "no_speech_prob": 0.0,
+      "start": 4109.4,
+      "text": "願意為俄羅斯戰死"
+    },
+    {
+      "avg_logprob": -0.124922,
+      "compression_ratio": 1.278409,
+      "end": 4112.4,
+      "no_speech_prob": 0.0,
+      "start": 4110.4,
+      "text": "也不願意回中共國"
+    },
+    {
+      "avg_logprob": -0.124922,
+      "compression_ratio": 1.278409,
+      "end": 4114.4,
+      "no_speech_prob": 0.0,
+      "start": 4112.4,
+      "text": "這是蘇州跑出去的"
+    },
+    {
+      "avg_logprob": -0.15887,
+      "compression_ratio": 1.236967,
+      "end": 4118.4,
+      "no_speech_prob": 0.0,
+      "start": 4114.4,
+      "text": "那我那窮困的老家山東河南呢"
+    },
+    {
+      "avg_logprob": -0.15887,
+      "compression_ratio": 1.236967,
+      "end": 4121.4,
+      "no_speech_prob": 0.0,
+      "start": 4120.4,
+      "text": "中國人哪"
+    },
+    {
+      "avg_logprob": -0.15887,
+      "compression_ratio": 1.236967,
+      "end": 4123.4,
+      "no_speech_prob": 0.0,
+      "start": 4122.4,
+      "text": "最可怕的是"
+    },
+    {
+      "avg_logprob": -0.15887,
+      "compression_ratio": 1.236967,
+      "end": 4125.4,
+      "no_speech_prob": 0.0,
+      "start": 4123.4,
+      "text": "人把你變成了畜生奴隸"
+    },
+    {
+      "avg_logprob": -0.15887,
+      "compression_ratio": 1.236967,
+      "end": 4126.4,
+      "no_speech_prob": 0.0,
+      "start": 4125.4,
+      "text": "你還不知道"
+    },
+    {
+      "avg_logprob": -0.15887,
+      "compression_ratio": 1.236967,
+      "end": 4128.4,
+      "no_speech_prob": 0.0,
+      "start": 4127.4,
+      "text": "你像東北麒麟啊"
+    },
+    {
+      "avg_logprob": -0.15887,
+      "compression_ratio": 1.236967,
+      "end": 4130.4,
+      "no_speech_prob": 0.0,
+      "start": 4128.4,
+      "text": "什麼黑龍江遼寧啊"
+    },
+    {
+      "avg_logprob": -0.15887,
+      "compression_ratio": 1.236967,
+      "end": 4131.4,
+      "no_speech_prob": 0.0,
+      "start": 4130.4,
+      "text": "你能幹啥呀"
+    },
+    {
+      "avg_logprob": -0.15887,
+      "compression_ratio": 1.236967,
+      "end": 4132.4,
+      "no_speech_prob": 0.0,
+      "start": 4131.4,
+      "text": "吃點黃豆"
+    },
+    {
+      "avg_logprob": -0.15887,
+      "compression_ratio": 1.236967,
+      "end": 4134.4,
+      "no_speech_prob": 0.0,
+      "start": 4133.4,
+      "text": "吃點大鍋菜"
+    },
+    {
+      "avg_logprob": -0.15887,
+      "compression_ratio": 1.236967,
+      "end": 4135.4,
+      "no_speech_prob": 0.0,
+      "start": 4134.4,
+      "text": "燉點豆角"
+    },
+    {
+      "avg_logprob": -0.15887,
+      "compression_ratio": 1.236967,
+      "end": 4136.4,
+      "no_speech_prob": 0.0,
+      "start": 4135.4,
+      "text": "煎焦乾豆腐"
+    },
+    {
+      "avg_logprob": -0.15887,
+      "compression_ratio": 1.236967,
+      "end": 4138.4,
+      "no_speech_prob": 0.0,
+      "start": 4137.4,
+      "text": "吃點饅頭"
+    },
+    {
+      "avg_logprob": -0.15887,
+      "compression_ratio": 1.236967,
+      "end": 4139.4,
+      "no_speech_prob": 0.0,
+      "start": 4138.4,
+      "text": "吃點燉魚頭"
+    },
+    {
+      "avg_logprob": -0.15887,
+      "compression_ratio": 1.236967,
+      "end": 4140.4,
+      "no_speech_prob": 0.0,
+      "start": 4139.4,
+      "text": "燉大鴨"
+    },
+    {
+      "avg_logprob": -0.206027,
+      "compression_ratio": 1.276243,
+      "end": 4142.4,
+      "no_speech_prob": 0.0,
+      "start": 4140.4,
+      "text": "你能吃啥呀"
+    },
+    {
+      "avg_logprob": -0.206027,
+      "compression_ratio": 1.276243,
+      "end": 4144.4,
+      "no_speech_prob": 0.0,
+      "start": 4142.4,
+      "text": "一半鹽一半肉"
+    },
+    {
+      "avg_logprob": -0.206027,
+      "compression_ratio": 1.276243,
+      "end": 4148.4,
+      "no_speech_prob": 0.0,
+      "start": 4145.4,
+      "text": "這是東北的話"
+    },
+    {
+      "avg_logprob": -0.206027,
+      "compression_ratio": 1.276243,
+      "end": 4151.4,
+      "no_speech_prob": 0.0,
+      "start": 4148.4,
+      "text": "最後吃完以後全身都是病"
+    },
+    {
+      "avg_logprob": -0.206027,
+      "compression_ratio": 1.276243,
+      "end": 4153.4,
+      "no_speech_prob": 0.0,
+      "start": 4152.4,
+      "text": "是吧"
+    },
+    {
+      "avg_logprob": -0.206027,
+      "compression_ratio": 1.276243,
+      "end": 4158.4,
+      "no_speech_prob": 0.0,
+      "start": 4156.4,
+      "text": "最後中北人混個啥呀"
+    },
+    {
+      "avg_logprob": -0.206027,
+      "compression_ratio": 1.276243,
+      "end": 4159.4,
+      "no_speech_prob": 0.0,
+      "start": 4158.4,
+      "text": "精神生活沒有"
+    },
+    {
+      "avg_logprob": -0.206027,
+      "compression_ratio": 1.276243,
+      "end": 4160.4,
+      "no_speech_prob": 0.0,
+      "start": 4159.4,
+      "text": "健康沒有"
+    },
+    {
+      "avg_logprob": -0.206027,
+      "compression_ratio": 1.276243,
+      "end": 4163.4,
+      "no_speech_prob": 0.0,
+      "start": 4161.4,
+      "text": "就是一個奴隸"
+    },
+    {
+      "avg_logprob": -0.206027,
+      "compression_ratio": 1.276243,
+      "end": 4165.4,
+      "no_speech_prob": 0.0,
+      "start": 4164.4,
+      "text": "然後就等死嘛"
+    },
+    {
+      "avg_logprob": -0.206027,
+      "compression_ratio": 1.276243,
+      "end": 4166.4,
+      "no_speech_prob": 0.0,
+      "start": 4165.4,
+      "text": "死了死不起"
+    },
+    {
+      "avg_logprob": -0.206027,
+      "compression_ratio": 1.276243,
+      "end": 4167.4,
+      "no_speech_prob": 0.0,
+      "start": 4166.4,
+      "text": "棺材板買不起"
+    },
+    {
+      "avg_logprob": -0.206027,
+      "compression_ratio": 1.276243,
+      "end": 4168.4,
+      "no_speech_prob": 0.0,
+      "start": 4167.4,
+      "text": "墓地買不起"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.231183,
+      "end": 4169.4,
+      "no_speech_prob": 0.0,
+      "start": 4168.4,
+      "text": "墓地買不起"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.231183,
+      "end": 4171.4,
+      "no_speech_prob": 0.0,
+      "start": 4170.4,
+      "text": "現在東北的山都很大"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.231183,
+      "end": 4173.4,
+      "no_speech_prob": 0.0,
+      "start": 4171.4,
+      "text": "你敢埋個墳試試去呀"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.231183,
+      "end": 4175.4,
+      "no_speech_prob": 0.0,
+      "start": 4174.4,
+      "text": "竟然東北三省埋墳"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.231183,
+      "end": 4177.4,
+      "no_speech_prob": 0.0,
+      "start": 4176.4,
+      "text": "現在要開始挖墳"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.231183,
+      "end": 4178.4,
+      "no_speech_prob": 0.0,
+      "start": 4177.4,
+      "text": "東北三省要挖墳"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.231183,
+      "end": 4181.4,
+      "no_speech_prob": 0.0,
+      "start": 4179.4,
+      "text": "藤山藤出綠地"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.231183,
+      "end": 4186.4,
+      "no_speech_prob": 0.0,
+      "start": 4184.4,
+      "text": "所以這共產黨的作惡太瘋狂了"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.231183,
+      "end": 4187.4,
+      "no_speech_prob": 0.0,
+      "start": 4186.4,
+      "text": "現在你能想想嗎"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.231183,
+      "end": 4189.4,
+      "no_speech_prob": 0.0,
+      "start": 4188.4,
+      "text": "還有一星期"
+    },
+    {
+      "avg_logprob": -0.198598,
+      "compression_ratio": 1.283133,
+      "end": 4190.4,
+      "no_speech_prob": 0.0,
+      "start": 4189.4,
+      "text": "習太陽要出訪"
+    },
+    {
+      "avg_logprob": -0.198598,
+      "compression_ratio": 1.283133,
+      "end": 4191.4,
+      "no_speech_prob": 0.0,
+      "start": 4190.4,
+      "text": "出擊"
+    },
+    {
+      "avg_logprob": -0.198598,
+      "compression_ratio": 1.283133,
+      "end": 4193.4,
+      "no_speech_prob": 0.0,
+      "start": 4191.4,
+      "text": "開啟人類的新文明"
+    },
+    {
+      "avg_logprob": -0.198598,
+      "compression_ratio": 1.283133,
+      "end": 4197.4,
+      "no_speech_prob": 0.0,
+      "start": 4194.4,
+      "text": "以上核組織代替中國"
+    },
+    {
+      "avg_logprob": -0.198598,
+      "compression_ratio": 1.283133,
+      "end": 4198.4,
+      "no_speech_prob": 0.0,
+      "start": 4197.4,
+      "text": "代替聯合國"
+    },
+    {
+      "avg_logprob": -0.198598,
+      "compression_ratio": 1.283133,
+      "end": 4201.4,
+      "no_speech_prob": 0.0,
+      "start": 4199.4,
+      "text": "挑戰美國美元地位"
+    },
+    {
+      "avg_logprob": -0.198598,
+      "compression_ratio": 1.283133,
+      "end": 4203.4,
+      "no_speech_prob": 0.0,
+      "start": 4202.4,
+      "text": "要在美國"
+    },
+    {
+      "avg_logprob": -0.198598,
+      "compression_ratio": 1.283133,
+      "end": 4207.4,
+      "no_speech_prob": 0.0,
+      "start": 4203.4,
+      "text": "要把俄烏戰爭變成美國的墓地"
+    },
+    {
+      "avg_logprob": -0.198598,
+      "compression_ratio": 1.283133,
+      "end": 4208.4,
+      "no_speech_prob": 0.0,
+      "start": 4207.4,
+      "text": "墳地"
+    },
+    {
+      "avg_logprob": -0.198598,
+      "compression_ratio": 1.283133,
+      "end": 4213.4,
+      "no_speech_prob": 0.0,
+      "start": 4210.4,
+      "text": "要把烏克蘭變成美國歐洲的墳地"
+    },
+    {
+      "avg_logprob": -0.205672,
+      "compression_ratio": 1.218182,
+      "end": 4218.4,
+      "no_speech_prob": 0.0,
+      "start": 4213.4,
+      "text": "要打響對美對歐的一戰"
+    },
+    {
+      "avg_logprob": -0.205672,
+      "compression_ratio": 1.218182,
+      "end": 4220.4,
+      "no_speech_prob": 0.0,
+      "start": 4219.4,
+      "text": "美國人"
+    },
+    {
+      "avg_logprob": -0.205672,
+      "compression_ratio": 1.218182,
+      "end": 4222.4,
+      "no_speech_prob": 0.0,
+      "start": 4220.4,
+      "text": "歐洲人真的覺得他不是全明白的"
+    },
+    {
+      "avg_logprob": -0.205672,
+      "compression_ratio": 1.218182,
+      "end": 4226.4,
+      "no_speech_prob": 0.0,
+      "start": 4223.4,
+      "text": "他認為人民幣從俄羅斯"
+    },
+    {
+      "avg_logprob": -0.205672,
+      "compression_ratio": 1.218182,
+      "end": 4227.4,
+      "no_speech_prob": 0.0,
+      "start": 4226.4,
+      "text": "然後到中東"
+    },
+    {
+      "avg_logprob": -0.205672,
+      "compression_ratio": 1.218182,
+      "end": 4229.4,
+      "no_speech_prob": 0.0,
+      "start": 4228.4,
+      "text": "是吧"
+    },
+    {
+      "avg_logprob": -0.205672,
+      "compression_ratio": 1.218182,
+      "end": 4230.4,
+      "no_speech_prob": 0.0,
+      "start": 4229.4,
+      "text": "大家看到了嗎"
+    },
+    {
+      "avg_logprob": -0.205672,
+      "compression_ratio": 1.218182,
+      "end": 4232.4,
+      "no_speech_prob": 0.0,
+      "start": 4231.4,
+      "text": "然後呢"
+    },
+    {
+      "avg_logprob": -0.205672,
+      "compression_ratio": 1.218182,
+      "end": 4233.4,
+      "no_speech_prob": 0.0,
+      "start": 4232.4,
+      "text": "咔嚓到非洲"
+    },
+    {
+      "avg_logprob": -0.205672,
+      "compression_ratio": 1.218182,
+      "end": 4235.4,
+      "no_speech_prob": 0.0,
+      "start": 4234.4,
+      "text": "人民幣國際化"
+    },
+    {
+      "avg_logprob": -0.146294,
+      "compression_ratio": 1.427313,
+      "end": 4236.4,
+      "no_speech_prob": 0.0,
+      "start": 4235.4,
+      "text": "人民幣國際化"
+    },
+    {
+      "avg_logprob": -0.146294,
+      "compression_ratio": 1.427313,
+      "end": 4238.4,
+      "no_speech_prob": 0.0,
+      "start": 4237.4,
+      "text": "很多國家會脫離美元"
+    },
+    {
+      "avg_logprob": -0.146294,
+      "compression_ratio": 1.427313,
+      "end": 4239.4,
+      "no_speech_prob": 0.0,
+      "start": 4238.4,
+      "text": "這是肯定的"
+    },
+    {
+      "avg_logprob": -0.146294,
+      "compression_ratio": 1.427313,
+      "end": 4242.4,
+      "no_speech_prob": 0.0,
+      "start": 4241.4,
+      "text": "然後說數字化人民幣"
+    },
+    {
+      "avg_logprob": -0.146294,
+      "compression_ratio": 1.427313,
+      "end": 4243.4,
+      "no_speech_prob": 0.0,
+      "start": 4242.4,
+      "text": "統治人類"
+    },
+    {
+      "avg_logprob": -0.146294,
+      "compression_ratio": 1.427313,
+      "end": 4245.4,
+      "no_speech_prob": 0.0,
+      "start": 4244.4,
+      "text": "幹掉美元"
+    },
+    {
+      "avg_logprob": -0.146294,
+      "compression_ratio": 1.427313,
+      "end": 4247.4,
+      "no_speech_prob": 0.0,
+      "start": 4246.4,
+      "text": "你咋弄啊"
+    },
+    {
+      "avg_logprob": -0.146294,
+      "compression_ratio": 1.427313,
+      "end": 4248.4,
+      "no_speech_prob": 0.0,
+      "start": 4247.4,
+      "text": "你說"
+    },
+    {
+      "avg_logprob": -0.146294,
+      "compression_ratio": 1.427313,
+      "end": 4249.4,
+      "no_speech_prob": 0.0,
+      "start": 4248.4,
+      "text": "你咋弄啊"
+    },
+    {
+      "avg_logprob": -0.146294,
+      "compression_ratio": 1.427313,
+      "end": 4251.4,
+      "no_speech_prob": 0.0,
+      "start": 4250.4,
+      "text": "這雄心壯膽"
+    },
+    {
+      "avg_logprob": -0.146294,
+      "compression_ratio": 1.427313,
+      "end": 4252.4,
+      "no_speech_prob": 0.0,
+      "start": 4251.4,
+      "text": "這這還了得了"
+    },
+    {
+      "avg_logprob": -0.146294,
+      "compression_ratio": 1.427313,
+      "end": 4253.4,
+      "no_speech_prob": 0.0,
+      "start": 4252.4,
+      "text": "是吧"
+    },
+    {
+      "avg_logprob": -0.146294,
+      "compression_ratio": 1.427313,
+      "end": 4254.4,
+      "no_speech_prob": 0.0,
+      "start": 4253.4,
+      "text": "但是最後付出的"
+    },
+    {
+      "avg_logprob": -0.146294,
+      "compression_ratio": 1.427313,
+      "end": 4255.4,
+      "no_speech_prob": 0.0,
+      "start": 4254.4,
+      "text": "就是中國老百姓"
+    },
+    {
+      "avg_logprob": -0.146294,
+      "compression_ratio": 1.427313,
+      "end": 4257.4,
+      "no_speech_prob": 0.0,
+      "start": 4256.4,
+      "text": "死的是中國老百姓"
+    },
+    {
+      "avg_logprob": -0.146294,
+      "compression_ratio": 1.427313,
+      "end": 4258.4,
+      "no_speech_prob": 0.0,
+      "start": 4257.4,
+      "text": "窮的是中國老百姓"
+    },
+    {
+      "avg_logprob": -0.146294,
+      "compression_ratio": 1.427313,
+      "end": 4262.4,
+      "no_speech_prob": 0.0,
+      "start": 4261.4,
+      "text": "那開工廠"
+    },
+    {
+      "avg_logprob": -0.146294,
+      "compression_ratio": 1.427313,
+      "end": 4264.4,
+      "no_speech_prob": 0.0,
+      "start": 4262.4,
+      "text": "一年賺上億的工廠的咱戰友"
+    },
+    {
+      "avg_logprob": -0.143661,
+      "compression_ratio": 1.279621,
+      "end": 4266.4,
+      "no_speech_prob": 0.0,
+      "start": 4264.4,
+      "text": "都逃離了中共國"
+    },
+    {
+      "avg_logprob": -0.143661,
+      "compression_ratio": 1.279621,
+      "end": 4268.4,
+      "no_speech_prob": 0.0,
+      "start": 4267.4,
+      "text": "公安局的局長"
+    },
+    {
+      "avg_logprob": -0.143661,
+      "compression_ratio": 1.279621,
+      "end": 4269.4,
+      "no_speech_prob": 0.0,
+      "start": 4268.4,
+      "text": "逃離了中共國"
+    },
+    {
+      "avg_logprob": -0.143661,
+      "compression_ratio": 1.279621,
+      "end": 4273.4,
+      "no_speech_prob": 0.0,
+      "start": 4270.4,
+      "text": "你說中國老百姓咋過呢"
+    },
+    {
+      "avg_logprob": -0.143661,
+      "compression_ratio": 1.279621,
+      "end": 4277.4,
+      "no_speech_prob": 0.0,
+      "start": 4274.4,
+      "text": "我一個過去的一個員工"
+    },
+    {
+      "avg_logprob": -0.143661,
+      "compression_ratio": 1.279621,
+      "end": 4279.4,
+      "no_speech_prob": 0.0,
+      "start": 4278.4,
+      "text": "到了深圳"
+    },
+    {
+      "avg_logprob": -0.143661,
+      "compression_ratio": 1.279621,
+      "end": 4281.4,
+      "no_speech_prob": 0.0,
+      "start": 4280.4,
+      "text": "當年啊"
+    },
+    {
+      "avg_logprob": -0.143661,
+      "compression_ratio": 1.279621,
+      "end": 4283.4,
+      "no_speech_prob": 0.0,
+      "start": 4281.4,
+      "text": "他是做藝術設計"
+    },
+    {
+      "avg_logprob": -0.143661,
+      "compression_ratio": 1.279621,
+      "end": 4285.4,
+      "no_speech_prob": 0.0,
+      "start": 4284.4,
+      "text": "後來做廣告"
+    },
+    {
+      "avg_logprob": -0.143661,
+      "compression_ratio": 1.279621,
+      "end": 4286.4,
+      "no_speech_prob": 0.0,
+      "start": 4285.4,
+      "text": "做房產代理"
+    },
+    {
+      "avg_logprob": -0.143661,
+      "compression_ratio": 1.279621,
+      "end": 4290.4,
+      "no_speech_prob": 0.0,
+      "start": 4286.4,
+      "text": "在深圳買了幾十個商業商鋪"
+    },
+    {
+      "avg_logprob": -0.143661,
+      "compression_ratio": 1.279621,
+      "end": 4292.4,
+      "no_speech_prob": 0.0,
+      "start": 4290.4,
+      "text": "那時候牛得不得了"
+    },
+    {
+      "avg_logprob": -0.143661,
+      "compression_ratio": 1.279621,
+      "end": 4293.4,
+      "no_speech_prob": 0.0,
+      "start": 4292.4,
+      "text": "跟我見面的時候"
+    },
+    {
+      "avg_logprob": -0.168936,
+      "compression_ratio": 1.218182,
+      "end": 4295.4,
+      "no_speech_prob": 0.0,
+      "start": 4293.4,
+      "text": "這小子竟然是幹"
+    },
+    {
+      "avg_logprob": -0.168936,
+      "compression_ratio": 1.218182,
+      "end": 4297.4,
+      "no_speech_prob": 0.0,
+      "start": 4295.4,
+      "text": "一個我曾經的員工"
+    },
+    {
+      "avg_logprob": -0.168936,
+      "compression_ratio": 1.218182,
+      "end": 4298.4,
+      "no_speech_prob": 0.0,
+      "start": 4297.4,
+      "text": "說"
+    },
+    {
+      "avg_logprob": -0.168936,
+      "compression_ratio": 1.218182,
+      "end": 4299.4,
+      "no_speech_prob": 0.0,
+      "start": 4298.4,
+      "text": "先生"
+    },
+    {
+      "avg_logprob": -0.168936,
+      "compression_ratio": 1.218182,
+      "end": 4301.4,
+      "no_speech_prob": 0.0,
+      "start": 4299.4,
+      "text": "我曾經羨慕你抽血架"
+    },
+    {
+      "avg_logprob": -0.168936,
+      "compression_ratio": 1.218182,
+      "end": 4303.4,
+      "no_speech_prob": 0.0,
+      "start": 4301.4,
+      "text": "你能不能跟我抽根血架"
+    },
+    {
+      "avg_logprob": -0.168936,
+      "compression_ratio": 1.218182,
+      "end": 4304.4,
+      "no_speech_prob": 0.0,
+      "start": 4303.4,
+      "text": "我帶給你"
+    },
+    {
+      "avg_logprob": -0.168936,
+      "compression_ratio": 1.218182,
+      "end": 4305.4,
+      "no_speech_prob": 0.0,
+      "start": 4304.4,
+      "text": "我可以啊"
+    },
+    {
+      "avg_logprob": -0.168936,
+      "compression_ratio": 1.218182,
+      "end": 4307.4,
+      "no_speech_prob": 0.0,
+      "start": 4305.4,
+      "text": "他買了個真的很好的血架"
+    },
+    {
+      "avg_logprob": -0.168936,
+      "compression_ratio": 1.218182,
+      "end": 4309.4,
+      "no_speech_prob": 0.0,
+      "start": 4307.4,
+      "text": "兩萬多美金一根啊"
+    },
+    {
+      "avg_logprob": -0.168936,
+      "compression_ratio": 1.218182,
+      "end": 4310.4,
+      "no_speech_prob": 0.0,
+      "start": 4309.4,
+      "text": "老血架"
+    },
+    {
+      "avg_logprob": -0.315701,
+      "compression_ratio": 1.055866,
+      "end": 4312.4,
+      "no_speech_prob": 0.0,
+      "start": 4310.4,
+      "text": "是"
+    },
+    {
+      "avg_logprob": -0.315701,
+      "compression_ratio": 1.055866,
+      "end": 4314.4,
+      "no_speech_prob": 0.0,
+      "start": 4312.4,
+      "text": "戴維道夫"
+    },
+    {
+      "avg_logprob": -0.315701,
+      "compression_ratio": 1.055866,
+      "end": 4316.4,
+      "no_speech_prob": 0.0,
+      "start": 4314.4,
+      "text": "給英國"
+    },
+    {
+      "avg_logprob": -0.315701,
+      "compression_ratio": 1.055866,
+      "end": 4318.4,
+      "no_speech_prob": 0.0,
+      "start": 4316.4,
+      "text": "Y Club做的"
+    },
+    {
+      "avg_logprob": -0.315701,
+      "compression_ratio": 1.055866,
+      "end": 4320.4,
+      "no_speech_prob": 0.0,
+      "start": 4318.4,
+      "text": "大概做了一千多指"
+    },
+    {
+      "avg_logprob": -0.315701,
+      "compression_ratio": 1.055866,
+      "end": 4321.4,
+      "no_speech_prob": 0.0,
+      "start": 4320.4,
+      "text": "全世界啊"
+    },
+    {
+      "avg_logprob": -0.315701,
+      "compression_ratio": 1.055866,
+      "end": 4323.4,
+      "no_speech_prob": 0.0,
+      "start": 4321.4,
+      "text": "這都是大概七八十年前了"
+    },
+    {
+      "avg_logprob": -0.315701,
+      "compression_ratio": 1.055866,
+      "end": 4324.4,
+      "no_speech_prob": 0.0,
+      "start": 4323.4,
+      "text": "你現在買一支回來"
+    },
+    {
+      "avg_logprob": -0.315701,
+      "compression_ratio": 1.055866,
+      "end": 4325.4,
+      "no_speech_prob": 0.0,
+      "start": 4324.4,
+      "text": "兩萬美金"
+    },
+    {
+      "avg_logprob": -0.315701,
+      "compression_ratio": 1.055866,
+      "end": 4326.4,
+      "no_speech_prob": 0.0,
+      "start": 4325.4,
+      "text": "我很感謝"
+    },
+    {
+      "avg_logprob": -0.315701,
+      "compression_ratio": 1.055866,
+      "end": 4328.4,
+      "no_speech_prob": 0.0,
+      "start": 4326.4,
+      "text": "他說我能不能跟你一起抽"
+    },
+    {
+      "avg_logprob": -0.264042,
+      "compression_ratio": 1.095652,
+      "end": 4330.4,
+      "no_speech_prob": 0.0,
+      "start": 4328.4,
+      "text": "當然了"
+    },
+    {
+      "avg_logprob": -0.264042,
+      "compression_ratio": 1.095652,
+      "end": 4331.4,
+      "no_speech_prob": 0.0,
+      "start": 4330.4,
+      "text": "一起抽"
+    },
+    {
+      "avg_logprob": -0.264042,
+      "compression_ratio": 1.095652,
+      "end": 4332.4,
+      "no_speech_prob": 0.0,
+      "start": 4331.4,
+      "text": "一人啊兩一根抽上了"
+    },
+    {
+      "avg_logprob": -0.264042,
+      "compression_ratio": 1.095652,
+      "end": 4336.4,
+      "no_speech_prob": 0.0,
+      "start": 4334.4,
+      "text": "他已經留胡子了啊"
+    },
+    {
+      "avg_logprob": -0.264042,
+      "compression_ratio": 1.095652,
+      "end": 4338.4,
+      "no_speech_prob": 0.0,
+      "start": 4336.4,
+      "text": "當時在我們當普通員工的時候"
+    },
+    {
+      "avg_logprob": -0.264042,
+      "compression_ratio": 1.095652,
+      "end": 4340.4,
+      "no_speech_prob": 0.0,
+      "start": 4338.4,
+      "text": "很普通的小孩"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.024793,
+      "end": 4342.4,
+      "no_speech_prob": 0.0,
+      "start": 4340.4,
+      "text": "後來做地產代理到深圳"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.024793,
+      "end": 4344.4,
+      "no_speech_prob": 0.0,
+      "start": 4342.4,
+      "text": "賺錢"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.024793,
+      "end": 4346.4,
+      "no_speech_prob": 0.0,
+      "start": 4344.4,
+      "text": "然後曲了哥還有本事的媳婦"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.024793,
+      "end": 4348.4,
+      "no_speech_prob": 0.0,
+      "start": 4346.4,
+      "text": "也是做策劃的"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.024793,
+      "end": 4350.4,
+      "no_speech_prob": 0.0,
+      "start": 4348.4,
+      "text": "然後也留了胡子"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.024793,
+      "end": 4352.4,
+      "no_speech_prob": 0.0,
+      "start": 4350.4,
+      "text": "留著胡子"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.024793,
+      "end": 4353.4,
+      "no_speech_prob": 0.0,
+      "start": 4352.4,
+      "text": "!"
+    },
+    {
+      "avg_logprob": -0.178616,
+      "compression_ratio": 1.330435,
+      "end": 4354.4,
+      "no_speech_prob": 0.0,
+      "start": 4353.4,
+      "text": "哎呀呀給我抽血架"
+    },
+    {
+      "avg_logprob": -0.178616,
+      "compression_ratio": 1.330435,
+      "end": 4355.4,
+      "no_speech_prob": 0.0,
+      "start": 4354.4,
+      "text": "抽完油的時候"
+    },
+    {
+      "avg_logprob": -0.178616,
+      "compression_ratio": 1.330435,
+      "end": 4356.4,
+      "no_speech_prob": 0.0,
+      "start": 4355.4,
+      "text": "郭先生"
+    },
+    {
+      "avg_logprob": -0.178616,
+      "compression_ratio": 1.330435,
+      "end": 4359.4,
+      "no_speech_prob": 0.0,
+      "start": 4356.4,
+      "text": "你對我現在這有啥建議呢"
+    },
+    {
+      "avg_logprob": -0.178616,
+      "compression_ratio": 1.330435,
+      "end": 4361.4,
+      "no_speech_prob": 0.0,
+      "start": 4359.4,
+      "text": "我說我建議你就是最好"
+    },
+    {
+      "avg_logprob": -0.178616,
+      "compression_ratio": 1.330435,
+      "end": 4363.4,
+      "no_speech_prob": 0.0,
+      "start": 4361.4,
+      "text": "離開深圳"
+    },
+    {
+      "avg_logprob": -0.178616,
+      "compression_ratio": 1.330435,
+      "end": 4366.4,
+      "no_speech_prob": 0.0,
+      "start": 4365.4,
+      "text": "我帶著你還小"
+    },
+    {
+      "avg_logprob": -0.178616,
+      "compression_ratio": 1.330435,
+      "end": 4368.4,
+      "no_speech_prob": 0.0,
+      "start": 4366.4,
+      "text": "帶著孩子到國外去"
+    },
+    {
+      "avg_logprob": -0.178616,
+      "compression_ratio": 1.330435,
+      "end": 4371.4,
+      "no_speech_prob": 0.0,
+      "start": 4369.4,
+      "text": "他說我去了很多國家"
+    },
+    {
+      "avg_logprob": -0.178616,
+      "compression_ratio": 1.330435,
+      "end": 4372.4,
+      "no_speech_prob": 0.0,
+      "start": 4371.4,
+      "text": "加拿大很無聊"
+    },
+    {
+      "avg_logprob": -0.178616,
+      "compression_ratio": 1.330435,
+      "end": 4374.4,
+      "no_speech_prob": 0.0,
+      "start": 4373.4,
+      "text": "瑞士也無聊"
+    },
+    {
+      "avg_logprob": -0.178616,
+      "compression_ratio": 1.330435,
+      "end": 4376.4,
+      "no_speech_prob": 0.0,
+      "start": 4374.4,
+      "text": "英國也無聊"
+    },
+    {
+      "avg_logprob": -0.178616,
+      "compression_ratio": 1.330435,
+      "end": 4377.4,
+      "no_speech_prob": 0.0,
+      "start": 4376.4,
+      "text": "我英語也不好"
+    },
+    {
+      "avg_logprob": -0.178616,
+      "compression_ratio": 1.330435,
+      "end": 4379.4,
+      "no_speech_prob": 0.0,
+      "start": 4377.4,
+      "text": "我媳婦不願待在國外"
+    },
+    {
+      "avg_logprob": -0.178616,
+      "compression_ratio": 1.330435,
+      "end": 4381.4,
+      "no_speech_prob": 0.0,
+      "start": 4379.4,
+      "text": "幾乎還在深圳"
+    },
+    {
+      "avg_logprob": -0.160667,
+      "compression_ratio": 1.26087,
+      "end": 4383.4,
+      "no_speech_prob": 0.0,
+      "start": 4381.4,
+      "text": "我那哪怕你去啊"
+    },
+    {
+      "avg_logprob": -0.160667,
+      "compression_ratio": 1.26087,
+      "end": 4385.4,
+      "no_speech_prob": 0.0,
+      "start": 4383.4,
+      "text": "東南亞國家都不要帶著深圳"
+    },
+    {
+      "avg_logprob": -0.160667,
+      "compression_ratio": 1.26087,
+      "end": 4386.4,
+      "no_speech_prob": 0.0,
+      "start": 4385.4,
+      "text": "他我想去香港"
+    },
+    {
+      "avg_logprob": -0.160667,
+      "compression_ratio": 1.26087,
+      "end": 4388.4,
+      "no_speech_prob": 0.0,
+      "start": 4386.4,
+      "text": "我說香港跟深圳沒啥區別"
+    },
+    {
+      "avg_logprob": -0.160667,
+      "compression_ratio": 1.26087,
+      "end": 4389.4,
+      "no_speech_prob": 0.0,
+      "start": 4388.4,
+      "text": "聽我的"
+    },
+    {
+      "avg_logprob": -0.160667,
+      "compression_ratio": 1.26087,
+      "end": 4392.4,
+      "no_speech_prob": 0.0,
+      "start": 4389.4,
+      "text": "後來他生了三孩子"
+    },
+    {
+      "avg_logprob": -0.160667,
+      "compression_ratio": 1.26087,
+      "end": 4396.4,
+      "no_speech_prob": 0.0,
+      "start": 4393.4,
+      "text": "有了所謂的二三十億的資產"
+    },
+    {
+      "avg_logprob": -0.160667,
+      "compression_ratio": 1.26087,
+      "end": 4400.4,
+      "no_speech_prob": 0.0,
+      "start": 4398.4,
+      "text": "現在怎麼樣知道嗎"
+    },
+    {
+      "avg_logprob": -0.160667,
+      "compression_ratio": 1.26087,
+      "end": 4402.4,
+      "no_speech_prob": 0.0,
+      "start": 4401.4,
+      "text": "現在怎麼樣"
+    },
+    {
+      "avg_logprob": -0.160667,
+      "compression_ratio": 1.26087,
+      "end": 4406.4,
+      "no_speech_prob": 0.0,
+      "start": 4403.4,
+      "text": "現在欠債欠了三十多個億"
+    },
+    {
+      "avg_logprob": -0.160667,
+      "compression_ratio": 1.26087,
+      "end": 4409.4,
+      "no_speech_prob": 0.0,
+      "start": 4408.4,
+      "text": "買恒大房"
+    },
+    {
+      "avg_logprob": -0.123292,
+      "compression_ratio": 1.151163,
+      "end": 4411.4,
+      "no_speech_prob": 0.0,
+      "start": 4409.4,
+      "text": "買萬科的房子"
+    },
+    {
+      "avg_logprob": -0.123292,
+      "compression_ratio": 1.151163,
+      "end": 4413.4,
+      "no_speech_prob": 0.0,
+      "start": 4412.4,
+      "text": "炒房"
+    },
+    {
+      "avg_logprob": -0.123292,
+      "compression_ratio": 1.151163,
+      "end": 4415.4,
+      "no_speech_prob": 0.0,
+      "start": 4414.4,
+      "text": "貸款"
+    },
+    {
+      "avg_logprob": -0.123292,
+      "compression_ratio": 1.151163,
+      "end": 4417.4,
+      "no_speech_prob": 0.0,
+      "start": 4415.4,
+      "text": "所有的家產全賣光"
+    },
+    {
+      "avg_logprob": -0.123292,
+      "compression_ratio": 1.151163,
+      "end": 4418.4,
+      "no_speech_prob": 0.0,
+      "start": 4417.4,
+      "text": "欠人二三十個億"
+    },
+    {
+      "avg_logprob": -0.123292,
+      "compression_ratio": 1.151163,
+      "end": 4420.4,
+      "no_speech_prob": 0.0,
+      "start": 4418.4,
+      "text": "現在被限制出境"
+    },
+    {
+      "avg_logprob": -0.123292,
+      "compression_ratio": 1.151163,
+      "end": 4421.4,
+      "no_speech_prob": 0.0,
+      "start": 4420.4,
+      "text": "全家限制出境"
+    },
+    {
+      "avg_logprob": -0.123292,
+      "compression_ratio": 1.151163,
+      "end": 4424.4,
+      "no_speech_prob": 0.0,
+      "start": 4422.4,
+      "text": "媳婦瘋了"
+    },
+    {
+      "avg_logprob": -0.123292,
+      "compression_ratio": 1.151163,
+      "end": 4428.4,
+      "no_speech_prob": 0.0,
+      "start": 4426.4,
+      "text": "長大的孩子在國外"
+    },
+    {
+      "avg_logprob": -0.123292,
+      "compression_ratio": 1.151163,
+      "end": 4429.4,
+      "no_speech_prob": 0.0,
+      "start": 4428.4,
+      "text": "國都不回"
+    },
+    {
+      "avg_logprob": -0.123292,
+      "compression_ratio": 1.151163,
+      "end": 4435.4,
+      "no_speech_prob": 0.0,
+      "start": 4433.4,
+      "text": "他那個半喇的英文也沒練好"
+    },
+    {
+      "avg_logprob": -0.147873,
+      "compression_ratio": 1.151685,
+      "end": 4437.4,
+      "no_speech_prob": 0.0,
+      "start": 4435.4,
+      "text": "想出國也出不了"
+    },
+    {
+      "avg_logprob": -0.147873,
+      "compression_ratio": 1.151685,
+      "end": 4441.4,
+      "no_speech_prob": 0.0,
+      "start": 4439.4,
+      "text": "這是我看到N個"
+    },
+    {
+      "avg_logprob": -0.147873,
+      "compression_ratio": 1.151685,
+      "end": 4443.4,
+      "no_speech_prob": 0.0,
+      "start": 4442.4,
+      "text": "在中國所謂"
+    },
+    {
+      "avg_logprob": -0.147873,
+      "compression_ratio": 1.151685,
+      "end": 4445.4,
+      "no_speech_prob": 0.0,
+      "start": 4443.4,
+      "text": "勵志發財以後的傾家當產"
+    },
+    {
+      "avg_logprob": -0.147873,
+      "compression_ratio": 1.151685,
+      "end": 4448.4,
+      "no_speech_prob": 0.0,
+      "start": 4446.4,
+      "text": "這個世界從來沒富有過"
+    },
+    {
+      "avg_logprob": -0.147873,
+      "compression_ratio": 1.151685,
+      "end": 4450.4,
+      "no_speech_prob": 0.0,
+      "start": 4449.4,
+      "text": "可能還不是壞事"
+    },
+    {
+      "avg_logprob": -0.147873,
+      "compression_ratio": 1.151685,
+      "end": 4452.4,
+      "no_speech_prob": 0.0,
+      "start": 4451.4,
+      "text": "但是你富有過"
+    },
+    {
+      "avg_logprob": -0.147873,
+      "compression_ratio": 1.151685,
+      "end": 4453.4,
+      "no_speech_prob": 0.0,
+      "start": 4452.4,
+      "text": "你要能回到地上"
+    },
+    {
+      "avg_logprob": -0.147873,
+      "compression_ratio": 1.151685,
+      "end": 4455.4,
+      "no_speech_prob": 0.0,
+      "start": 4453.4,
+      "text": "還能過貧窮生活很難"
+    },
+    {
+      "avg_logprob": -0.160803,
+      "compression_ratio": 1.271186,
+      "end": 4460.4,
+      "no_speech_prob": 0.0,
+      "start": 4455.4,
+      "text": "現在你七哥就被你七嫂子包養的"
+    },
+    {
+      "avg_logprob": -0.160803,
+      "compression_ratio": 1.271186,
+      "end": 4462.4,
+      "no_speech_prob": 0.0,
+      "start": 4461.4,
+      "text": "是吧"
+    },
+    {
+      "avg_logprob": -0.160803,
+      "compression_ratio": 1.271186,
+      "end": 4464.4,
+      "no_speech_prob": 0.0,
+      "start": 4463.4,
+      "text": "很難哪"
+    },
+    {
+      "avg_logprob": -0.160803,
+      "compression_ratio": 1.271186,
+      "end": 4467.4,
+      "no_speech_prob": 0.0,
+      "start": 4465.4,
+      "text": "所以說你看看中共國是啥樣"
+    },
+    {
+      "avg_logprob": -0.160803,
+      "compression_ratio": 1.271186,
+      "end": 4468.4,
+      "no_speech_prob": 0.0,
+      "start": 4467.4,
+      "text": "然後這銀行"
+    },
+    {
+      "avg_logprob": -0.160803,
+      "compression_ratio": 1.271186,
+      "end": 4470.4,
+      "no_speech_prob": 0.0,
+      "start": 4468.4,
+      "text": "我好幾個哥們投了銀行股的"
+    },
+    {
+      "avg_logprob": -0.160803,
+      "compression_ratio": 1.271186,
+      "end": 4473.4,
+      "no_speech_prob": 0.0,
+      "start": 4471.4,
+      "text": "現在不僅把銀行股給封了"
+    },
+    {
+      "avg_logprob": -0.160803,
+      "compression_ratio": 1.271186,
+      "end": 4475.4,
+      "no_speech_prob": 0.0,
+      "start": 4473.4,
+      "text": "你得按照銀行的股份"
+    },
+    {
+      "avg_logprob": -0.160803,
+      "compression_ratio": 1.271186,
+      "end": 4477.4,
+      "no_speech_prob": 0.0,
+      "start": 4476.4,
+      "text": "你得拿錢"
+    },
+    {
+      "avg_logprob": -0.115966,
+      "compression_ratio": 1.284153,
+      "end": 4479.4,
+      "no_speech_prob": 0.0,
+      "start": 4477.4,
+      "text": "你聽說過這事兒嗎"
+    },
+    {
+      "avg_logprob": -0.115966,
+      "compression_ratio": 1.284153,
+      "end": 4482.4,
+      "no_speech_prob": 0.0,
+      "start": 4481.4,
+      "text": "南京商業銀行"
+    },
+    {
+      "avg_logprob": -0.115966,
+      "compression_ratio": 1.284153,
+      "end": 4483.4,
+      "no_speech_prob": 0.0,
+      "start": 4482.4,
+      "text": "我一哥們"
+    },
+    {
+      "avg_logprob": -0.115966,
+      "compression_ratio": 1.284153,
+      "end": 4485.4,
+      "no_speech_prob": 0.0,
+      "start": 4484.4,
+      "text": "投了南京商業銀行"
+    },
+    {
+      "avg_logprob": -0.115966,
+      "compression_ratio": 1.284153,
+      "end": 4486.4,
+      "no_speech_prob": 0.0,
+      "start": 4485.4,
+      "text": "3.5%的股份"
+    },
+    {
+      "avg_logprob": -0.115966,
+      "compression_ratio": 1.284153,
+      "end": 4489.4,
+      "no_speech_prob": 0.0,
+      "start": 4487.4,
+      "text": "當年找了李源潮特批"
+    },
+    {
+      "avg_logprob": -0.115966,
+      "compression_ratio": 1.284153,
+      "end": 4492.4,
+      "no_speech_prob": 0.0,
+      "start": 4490.4,
+      "text": "在李源潮已經玩球蛋了"
+    },
+    {
+      "avg_logprob": -0.115966,
+      "compression_ratio": 1.284153,
+      "end": 4494.4,
+      "no_speech_prob": 0.0,
+      "start": 4493.4,
+      "text": "李源潮特批"
+    },
+    {
+      "avg_logprob": -0.115966,
+      "compression_ratio": 1.284153,
+      "end": 4496.4,
+      "no_speech_prob": 0.0,
+      "start": 4494.4,
+      "text": "為了陪李源潮的兒子到美國來上學"
+    },
+    {
+      "avg_logprob": -0.115966,
+      "compression_ratio": 1.284153,
+      "end": 4499.4,
+      "no_speech_prob": 0.0,
+      "start": 4497.4,
+      "text": "找進一關係搭上"
+    }
+  ],
+  "text": "七哥提前在這裡呢,祝所有的兄弟姐妹們家人們中秋節快樂!衷心的希望啊,所有的戰友們中秋節多和家人在一起,有耐心的跟家人在一起吃點兒、喝點兒、花錢,別不捨得花!錢不花的永遠不是你的!花點兒錢,跟家裡邊相聚相聚,所有的戰友們那天應該把精力放在和家人相聚上,和陪伴家人上,認真地坐在那裡邊,聽聽音樂,看看月亮,賞賞月!所以說我是明天和後天主要是陪你七嫂,現在我是被你七嫂包養的,連吃飯喝水都是歸你七嫂子,都給你七嫂子付錢!所以說我是被你七嫂子包養的,按照包養的規定,我也得伺候伺候你七嫂子,是吧?所以說,決定坐在那兒,人五人六的,在那兒,賞月啊!賞月啊!什麼?床前明月逛,一世地霜霜!巨頭望明月,低頭思故鄉!給你七嫂子,因詩作詞!然後準備拿點毛筆字,然後倒是兩下子啊!到這個後天911就陪你七嫂子搞點浪漫,是吧?給你七嫂子吹吹肩,捏捏葛脯吹腿,然後在那兒表達表達愛意,是吧?方便說也雙修一下這真是老不要臉的開玩笑所以說反正開心吧開心開心開心然後呢這個明天我得抽根雪茄後天我得抽根雪茄兄弟姐妹們你們誰都別拉我啊誰都別攔我啊然後呢咱現在的那個整個鳳慶黃的歌已經在YouTube上上線了然後呢接下來就iTunes蘋果上線然後打榜這個時間上線是天意的安排天意的安排鳳慶黃上線是偉大的女王過世的時刻同時上的線又趕上了這個中國的中秋節這個是完全沒有刻意的啊又趕到了一個我和你起草的結婚紀念日又趕上911還跟歷史上的殺人魔頭毛澤東9月9號去世今天我的天想想今天啊這個這都多少年了是吧多少年了毛澤東試試啊當年我都記得我娘在那哭啊那時候拿了口罩改成那個白花別在這兒還有那個那個什麼黑布啊到處都是家裡的飯都沒得吃啊還有錢做花還有做靈堂那我們那隊裡邊人啊生產隊的人都哭啊我娘也去哭啊我就問我娘你怎麼老哭呢最後娘說我想你老爺了唉呀我記得當時是火車我們家旁邊有火車站紅旗嶺有火車呀那時候我們那時候很先進好不好我待在那地方吉林的紅旗嶺鎳礦是很先進的有蝌蚪機有火車都是很多穿的也很陽氣我們都發喝汽水呀那時候到山多老家了我猜全成牆是吧吃了地瓜乾連電都沒有多可憐山東這個地方魯西這個地方我認為是從頭到尾這就是人類上最窮最落後的地方魯西還有河南的東部就河南山東魯西陝西山西哇塞這是所謂中華文明這真的是一個不是人帶的地方要山沒山要水沒水啥也沒求有就我老家那個地方平不邋遢一個秦始皇大堤是最高的了大概也就是十幾米高你啥也沒有那個破地方所以我回到老家以後就跟倒是地獄一樣在山東老家我回到老家唯一的件事就是把你七嫂子找到了所以我這山東這個遼城啊這個深陷魯西啊我恨之入骨不會有如果的也不會有未來就我這一萬萬輩子都不想去那個地方然後河南你到河南去了什麼開封啊洛陽啊周口啊周口啊周馬店啊那簡直是人間的地獄活在沙漠裡都比活那好沙漠裡還有個蜥蜴呢是不是那有個屁啊那個地方除了水災就水災要地沒地要糧食沒糧食要水果沒水果山不清水不秀那個地方是要山沒山要水沒水有水是渾水要山是山丘埋葬人的全是墓地沒有什麼好東西熊山惡水這詞不能形容他們的地方那是惡山臭水哎呀所謂中華中原文明啊這歷史很偉大但是你看現在真的是糟透了糟透了然後東北當時我在東北的時候看了毛澤東過世火車啊然後呢後來就是從我回山東老家那時候我才多大你現在要那時候我是七歲八歲我七歲八歲毛澤東哪年死的毛澤東哪年死的毛澤東哪年死的我七八歲的時候吧六七歲的時候王阿虎你告訴我回老家我在唐山大地震旁邊的火車道旁邊唐山全埋在這小坟頭啊你就看不完都是那小坟頭壓著這張紙哎呀太可怕了中國人太悲哀了太悲哀了所以說我今天啊昨天我真是有一個主動的事兒有一個很主動的事兒啊就是昨天晚上大概一點多吧一點多我們有兩家戰友剛剛從國內出來到了俄羅斯到了俄羅斯啊然後到了俄羅斯以後他就可以了因為他有家人在俄羅斯他敢出說我寧可為俄羅斯死在俄烏戰場上去我也不會回中共國了咱們這個戰友從哪出去呢是最富饒的蘇州蘇州出去的哎呀我說你才出去幾天呢還幾小時都算不上嗎你咋這麼說他說我到這來我最起碼感覺這個天地空氣還有這裡老百姓對我的友好我覺得我是個人他就我這這個富豪我在國內我不是個人我家裡有十幾台車咱這個戰友出去啊戰友出去咱家是開工廠的所有因為這兩年扣給他貸的款還不了就銀行的叫他做假賬假貸款!要回扣天天賠償回扣警察說要調查他什麼銀行詐騙他的幾千個工人的員工天天要弄死他他說我愛我啥事兒了你說我這空氣又不是我做的你讓我天天是核酸我工廠我開不了我不跑我怎麼辦他媚夫是當地公安局的副局長說得了咱們全跑得了所以說這兩天就給跑出去了公安局的一家人家開工廠的當地富豪一家人家就因為這核糖核酸事到全家跑了說到俄羅斯願意為俄羅斯戰死也不願意回中共國這是蘇州跑出去的那我那窮困的老家山東河南呢中國人哪最可怕的是人把你變成了畜生奴隸你還不知道你像東北麒麟啊什麼黑龍江遼寧啊你能幹啥呀吃點黃豆吃點大鍋菜燉點豆角煎焦乾豆腐吃點饅頭吃點燉魚頭燉大鴨你能吃啥呀一半鹽一半肉這是東北的話最後吃完以後全身都是病是吧最後中北人混個啥呀精神生活沒有健康沒有就是一個奴隸然後就等死嘛死了死不起棺材板買不起墓地買不起墓地買不起現在東北的山都很大你敢埋個墳試試去呀竟然東北三省埋墳現在要開始挖墳東北三省要挖墳藤山藤出綠地所以這共產黨的作惡太瘋狂了現在你能想想嗎還有一星期習太陽要出訪出擊開啟人類的新文明以上核組織代替中國代替聯合國挑戰美國美元地位要在美國要把俄烏戰爭變成美國的墓地墳地要把烏克蘭變成美國歐洲的墳地要打響對美對歐的一戰美國人歐洲人真的覺得他不是全明白的他認為人民幣從俄羅斯然後到中東是吧大家看到了嗎然後呢咔嚓到非洲人民幣國際化人民幣國際化很多國家會脫離美元這是肯定的然後說數字化人民幣統治人類幹掉美元你咋弄啊你說你咋弄啊這雄心壯膽這這還了得了是吧但是最後付出的就是中國老百姓死的是中國老百姓窮的是中國老百姓那開工廠一年賺上億的工廠的咱戰友都逃離了中共國公安局的局長逃離了中共國你說中國老百姓咋過呢我一個過去的一個員工到了深圳當年啊他是做藝術設計後來做廣告做房產代理在深圳買了幾十個商業商鋪那時候牛得不得了跟我見面的時候這小子竟然是幹一個我曾經的員工說先生我曾經羨慕你抽血架你能不能跟我抽根血架我帶給你我可以啊他買了個真的很好的血架兩萬多美金一根啊老血架是戴維道夫給英國Y Club做的大概做了一千多指全世界啊這都是大概七八十年前了你現在買一支回來兩萬美金我很感謝他說我能不能跟你一起抽當然了一起抽一人啊兩一根抽上了他已經留胡子了啊當時在我們當普通員工的時候很普通的小孩後來做地產代理到深圳賺錢然後曲了哥還有本事的媳婦也是做策劃的然後也留了胡子留著胡子!哎呀呀給我抽血架抽完油的時候郭先生你對我現在這有啥建議呢我說我建議你就是最好離開深圳我帶著你還小帶著孩子到國外去他說我去了很多國家加拿大很無聊瑞士也無聊英國也無聊我英語也不好我媳婦不願待在國外幾乎還在深圳我那哪怕你去啊東南亞國家都不要帶著深圳他我想去香港我說香港跟深圳沒啥區別聽我的後來他生了三孩子有了所謂的二三十億的資產現在怎麼樣知道嗎現在怎麼樣現在欠債欠了三十多個億買恒大房買萬科的房子炒房貸款所有的家產全賣光欠人二三十個億現在被限制出境全家限制出境媳婦瘋了長大的孩子在國外國都不回他那個半喇的英文也沒練好想出國也出不了這是我看到N個在中國所謂勵志發財以後的傾家當產這個世界從來沒富有過可能還不是壞事但是你富有過你要能回到地上還能過貧窮生活很難現在你七哥就被你七嫂子包養的是吧很難哪所以說你看看中共國是啥樣然後這銀行我好幾個哥們投了銀行股的現在不僅把銀行股給封了你得按照銀行的股份你得拿錢你聽說過這事兒嗎南京商業銀行我一哥們投了南京商業銀行3.5%的股份當年找了李源潮特批在李源潮已經玩球蛋了李源潮特批為了陪李源潮的兒子到美國來上學找進一關係搭上"
+}
