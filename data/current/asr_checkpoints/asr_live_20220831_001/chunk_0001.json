@@ -1,0 +1,1616 @@
+{
+  "chunk_audio_sha256": "e69e10c580101d87fd0db9e002d8ecd3c74946c4965aee9fa0e01746baf56852",
+  "chunk_index": 1,
+  "completed_at": "2026-10-28T14:12:04Z",
+  "language": "zh",
+  "live_id": "LIVE_20220831_001",
+  "media_committed_to_git": false,
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "offset_sec": 900,
+  "paid_api_used": false,
+  "processing_location": "github-hosted-macos-arm64",
+  "schema_version": "cloud-asr-chunk-v1",
+  "segments": [
+    {
+      "avg_logprob": -0.375042,
+      "compression_ratio": 0.961165,
+      "end": 906.24,
+      "no_speech_prob": 0.0,
+      "start": 900.0,
+      "text": "这世界有那么多人"
+    },
+    {
+      "avg_logprob": -0.375042,
+      "compression_ratio": 0.961165,
+      "end": 913.32,
+      "no_speech_prob": 0.0,
+      "start": 906.24,
+      "text": "多幸运我有个我们"
+    },
+    {
+      "avg_logprob": -0.375042,
+      "compression_ratio": 0.961165,
+      "end": 919.52,
+      "no_speech_prob": 0.0,
+      "start": 913.32,
+      "text": "这悠者命运中的晨昏"
+    },
+    {
+      "avg_logprob": -0.375042,
+      "compression_ratio": 0.961165,
+      "end": 927.06,
+      "no_speech_prob": 0.0,
+      "start": 919.52,
+      "text": "常让我往远方出生"
+    },
+    {
+      "avg_logprob": -0.412345,
+      "compression_ratio": 0.955752,
+      "end": 933.84,
+      "no_speech_prob": 0.0,
+      "start": 927.06,
+      "text": "灰树叶飘转在池塘"
+    },
+    {
+      "avg_logprob": -0.412345,
+      "compression_ratio": 0.955752,
+      "end": 938.76,
+      "no_speech_prob": 0.0,
+      "start": 933.84,
+      "text": "看飞机哄的一声去远"
+    },
+    {
+      "avg_logprob": -0.412345,
+      "compression_ratio": 0.955752,
+      "end": 943.74,
+      "no_speech_prob": 0.0,
+      "start": 938.76,
+      "text": "想光影的长老"
+    },
+    {
+      "avg_logprob": -0.412345,
+      "compression_ratio": 0.955752,
+      "end": 946.34,
+      "no_speech_prob": 0.0,
+      "start": 943.74,
+      "text": "脚步升脚让"
+    },
+    {
+      "avg_logprob": -0.412345,
+      "compression_ratio": 0.955752,
+      "end": 953.82,
+      "no_speech_prob": 0.0,
+      "start": 946.34,
+      "text": "等一辆无人的坑道"
+    },
+    {
+      "avg_logprob": -0.462717,
+      "compression_ratio": 0.918367,
+      "end": 960.6,
+      "no_speech_prob": 0.0,
+      "start": 953.82,
+      "text": "晚风中生活 几只从前了"
+    },
+    {
+      "avg_logprob": -0.462717,
+      "compression_ratio": 0.918367,
+      "end": 967.26,
+      "no_speech_prob": 0.0,
+      "start": 960.6,
+      "text": "飞驰中旋转 已不见我了"
+    },
+    {
+      "avg_logprob": -0.462717,
+      "compression_ratio": 0.918367,
+      "end": 974.38,
+      "no_speech_prob": 0.0,
+      "start": 967.26,
+      "text": "远光中走来 一身晴朗"
+    },
+    {
+      "avg_logprob": -0.412145,
+      "compression_ratio": 0.898734,
+      "end": 984.16,
+      "no_speech_prob": 0.0,
+      "start": 974.38,
+      "text": "身旁那么多人 可世界不声不响"
+    },
+    {
+      "avg_logprob": -0.412145,
+      "compression_ratio": 0.898734,
+      "end": 990.66,
+      "no_speech_prob": 0.0,
+      "start": 984.16,
+      "text": "小声中复光 几张旧默哑"
+    },
+    {
+      "avg_logprob": -0.183014,
+      "compression_ratio": 0.849315,
+      "end": 997.44,
+      "no_speech_prob": 0.0,
+      "start": 990.66,
+      "text": "留在梦天里 永远不散场"
+    },
+    {
+      "avg_logprob": -0.183014,
+      "compression_ratio": 0.849315,
+      "end": 1004.4,
+      "no_speech_prob": 0.0,
+      "start": 997.44,
+      "text": "暖光中醒来 好多话要唱"
+    },
+    {
+      "avg_logprob": -0.452152,
+      "compression_ratio": 0.826923,
+      "end": 1015.18,
+      "no_speech_prob": 0.0,
+      "start": 1004.4,
+      "text": "这世界那么多人 可是他不声不响"
+    },
+    {
+      "avg_logprob": -0.313606,
+      "compression_ratio": 0.819672,
+      "end": 1029.96,
+      "no_speech_prob": 0.0,
+      "start": 1015.18,
+      "text": "这世界有那么多人 活在我 飞扬的青春"
+    },
+    {
+      "avg_logprob": -0.463256,
+      "compression_ratio": 0.835821,
+      "end": 1036.74,
+      "no_speech_prob": 0.0,
+      "start": 1029.96,
+      "text": "在泪水里 静止过的长温"
+    },
+    {
+      "avg_logprob": -0.463256,
+      "compression_ratio": 0.835821,
+      "end": 1042.74,
+      "no_speech_prob": 0.0,
+      "start": 1036.74,
+      "text": "常让我 下那像猪神"
+    },
+    {
+      "avg_logprob": -7.160686,
+      "compression_ratio": 0.78125,
+      "end": 1046.34,
+      "no_speech_prob": 0.0,
+      "start": 1042.74,
+      "text": "缘挺ssa"
+    },
+    {
+      "avg_logprob": -7.160686,
+      "compression_ratio": 0.78125,
+      "end": 1055.22,
+      "no_speech_prob": 0.0,
+      "start": 1052.38,
+      "text": "挺 εν handler"
+    },
+    {
+      "avg_logprob": -0.659645,
+      "compression_ratio": 0.796296,
+      "end": 1060.22,
+      "no_speech_prob": 0.0,
+      "start": 1055.22,
+      "text": "作詞曲 李宗盛"
+    },
+    {
+      "avg_logprob": -0.659645,
+      "compression_ratio": 0.796296,
+      "end": 1078.22,
+      "no_speech_prob": 0.0,
+      "start": 1072.22,
+      "text": "這世界有那麼多人"
+    },
+    {
+      "avg_logprob": -0.192572,
+      "compression_ratio": 0.899083,
+      "end": 1085.22,
+      "no_speech_prob": 0.0,
+      "start": 1078.22,
+      "text": "人群裡 唱著一扇門"
+    },
+    {
+      "avg_logprob": -0.192572,
+      "compression_ratio": 0.899083,
+      "end": 1091.22,
+      "no_speech_prob": 0.0,
+      "start": 1085.22,
+      "text": "我迷夢的眼睛裡長存"
+    },
+    {
+      "avg_logprob": -0.192572,
+      "compression_ratio": 0.899083,
+      "end": 1098.22,
+      "no_speech_prob": 0.0,
+      "start": 1091.22,
+      "text": "初見你 藍色清晨"
+    },
+    {
+      "avg_logprob": -0.192572,
+      "compression_ratio": 0.899083,
+      "end": 1104.22,
+      "no_speech_prob": 0.0,
+      "start": 1098.22,
+      "text": "這世界有那麼多人"
+    },
+    {
+      "avg_logprob": -0.225663,
+      "compression_ratio": 0.895349,
+      "end": 1111.22,
+      "no_speech_prob": 0.0,
+      "start": 1104.22,
+      "text": "若幸運 我有個我們"
+    },
+    {
+      "avg_logprob": -0.225663,
+      "compression_ratio": 0.895349,
+      "end": 1118.22,
+      "no_speech_prob": 0.0,
+      "start": 1111.22,
+      "text": "這悠長命運中的晨晨"
+    },
+    {
+      "avg_logprob": -0.225663,
+      "compression_ratio": 0.895349,
+      "end": 1124.22,
+      "no_speech_prob": 0.0,
+      "start": 1118.22,
+      "text": "常讓我 往遠方出身"
+    },
+    {
+      "avg_logprob": -0.372843,
+      "compression_ratio": 0.964286,
+      "end": 1132.22,
+      "no_speech_prob": 0.0,
+      "start": 1124.22,
+      "text": "揮樹葉飄轉在池塘"
+    },
+    {
+      "avg_logprob": -0.372843,
+      "compression_ratio": 0.964286,
+      "end": 1138.22,
+      "no_speech_prob": 0.0,
+      "start": 1132.22,
+      "text": "看飛機哄的一聲去遠"
+    },
+    {
+      "avg_logprob": -0.372843,
+      "compression_ratio": 0.964286,
+      "end": 1142.22,
+      "no_speech_prob": 0.0,
+      "start": 1138.22,
+      "text": "像光陰的長廊"
+    },
+    {
+      "avg_logprob": -0.372843,
+      "compression_ratio": 0.964286,
+      "end": 1145.22,
+      "no_speech_prob": 0.0,
+      "start": 1142.22,
+      "text": "腳步聲叫嚷"
+    },
+    {
+      "avg_logprob": -0.372843,
+      "compression_ratio": 0.964286,
+      "end": 1152.22,
+      "no_speech_prob": 0.0,
+      "start": 1145.22,
+      "text": "燈一亮無人的空望"
+    },
+    {
+      "avg_logprob": -0.364344,
+      "compression_ratio": 0.939394,
+      "end": 1159.22,
+      "no_speech_prob": 0.0,
+      "start": 1152.22,
+      "text": "萬風中山光 幾針從前啊"
+    },
+    {
+      "avg_logprob": -0.364344,
+      "compression_ratio": 0.939394,
+      "end": 1165.22,
+      "no_speech_prob": 0.0,
+      "start": 1159.22,
+      "text": "飛驰中旋轉 已不見了啊"
+    },
+    {
+      "avg_logprob": -0.364344,
+      "compression_ratio": 0.939394,
+      "end": 1172.22,
+      "no_speech_prob": 0.0,
+      "start": 1165.22,
+      "text": "遠光中走來 你一聲晴朗"
+    },
+    {
+      "avg_logprob": -0.414754,
+      "compression_ratio": 1.04918,
+      "end": 1182.22,
+      "no_speech_prob": 0.0,
+      "start": 1172.22,
+      "text": "身旁那麼多人 可世界不常不想"
+    },
+    {
+      "avg_logprob": -0.414754,
+      "compression_ratio": 1.04918,
+      "end": 1190.22,
+      "no_speech_prob": 0.0,
+      "start": 1182.22,
+      "text": "這世界有那麼多人"
+    },
+    {
+      "avg_logprob": -0.222765,
+      "compression_ratio": 1.146067,
+      "end": 1192.22,
+      "no_speech_prob": 0.0,
+      "start": 1190.22,
+      "text": "多幸運 我有個我們"
+    },
+    {
+      "avg_logprob": -0.222765,
+      "compression_ratio": 1.146067,
+      "end": 1197.22,
+      "no_speech_prob": 0.0,
+      "start": 1192.22,
+      "text": "多幸運 我有個我們"
+    },
+    {
+      "avg_logprob": -0.222765,
+      "compression_ratio": 1.146067,
+      "end": 1204.22,
+      "no_speech_prob": 0.0,
+      "start": 1197.22,
+      "text": "這悠長命運中的晨晨"
+    },
+    {
+      "avg_logprob": -0.222765,
+      "compression_ratio": 1.146067,
+      "end": 1209.22,
+      "no_speech_prob": 0.0,
+      "start": 1204.22,
+      "text": "常讓我 往遠方出身"
+    },
+    {
+      "avg_logprob": -0.24921,
+      "compression_ratio": 0.8625,
+      "end": 1219.22,
+      "no_speech_prob": 0.0,
+      "start": 1209.22,
+      "text": "為樹葉飄轉在池塘"
+    },
+    {
+      "avg_logprob": -0.24921,
+      "compression_ratio": 0.8625,
+      "end": 1224.22,
+      "no_speech_prob": 0.0,
+      "start": 1219.22,
+      "text": "看飛機哄的一聲去遠"
+    },
+    {
+      "avg_logprob": -0.24921,
+      "compression_ratio": 0.8625,
+      "end": 1229.22,
+      "no_speech_prob": 0.0,
+      "start": 1224.22,
+      "text": "像光陰的長廊"
+    },
+    {
+      "avg_logprob": -0.317382,
+      "compression_ratio": 1.104348,
+      "end": 1231.22,
+      "no_speech_prob": 0.0,
+      "start": 1229.22,
+      "text": "腳步聲叫嚷 燈一亮"
+    },
+    {
+      "avg_logprob": -0.317382,
+      "compression_ratio": 1.104348,
+      "end": 1233.22,
+      "no_speech_prob": 0.0,
+      "start": 1231.22,
+      "text": "腳步聲叫嚷 燈一亮"
+    },
+    {
+      "avg_logprob": -0.317382,
+      "compression_ratio": 1.104348,
+      "end": 1236.22,
+      "no_speech_prob": 0.0,
+      "start": 1233.22,
+      "text": "無人的坑道"
+    },
+    {
+      "avg_logprob": -0.317382,
+      "compression_ratio": 1.104348,
+      "end": 1242.22,
+      "no_speech_prob": 0.0,
+      "start": 1236.22,
+      "text": "萬風中山光 幾針從前啊"
+    },
+    {
+      "avg_logprob": -0.317382,
+      "compression_ratio": 1.104348,
+      "end": 1244.22,
+      "no_speech_prob": 0.0,
+      "start": 1242.22,
+      "text": "飛驰中旋轉 已不見我啊"
+    },
+    {
+      "avg_logprob": -0.233488,
+      "compression_ratio": 1.04,
+      "end": 1247.22,
+      "no_speech_prob": 0.0,
+      "start": 1244.22,
+      "text": "風中山光 幾針從前啊"
+    },
+    {
+      "avg_logprob": -0.233488,
+      "compression_ratio": 1.04,
+      "end": 1252.22,
+      "no_speech_prob": 0.0,
+      "start": 1247.22,
+      "text": "飛驰中旋轉 已不見我啊"
+    },
+    {
+      "avg_logprob": -0.233488,
+      "compression_ratio": 1.04,
+      "end": 1259.22,
+      "no_speech_prob": 0.0,
+      "start": 1252.22,
+      "text": "遠光中走來 你一聲晴朗"
+    },
+    {
+      "avg_logprob": -0.233488,
+      "compression_ratio": 1.04,
+      "end": 1264.22,
+      "no_speech_prob": 0.0,
+      "start": 1259.22,
+      "text": "身旁那麼多人 可世界不見我啊"
+    },
+    {
+      "avg_logprob": -0.177289,
+      "compression_ratio": 1.445783,
+      "end": 1269.22,
+      "no_speech_prob": 0.0,
+      "start": 1264.22,
+      "text": "哎呀 戰友們好 戰友們好"
+    },
+    {
+      "avg_logprob": -0.177289,
+      "compression_ratio": 1.445783,
+      "end": 1274.22,
+      "no_speech_prob": 0.0,
+      "start": 1269.22,
+      "text": "8月31號 開始直播了"
+    },
+    {
+      "avg_logprob": -0.177289,
+      "compression_ratio": 1.445783,
+      "end": 1276.22,
+      "no_speech_prob": 0.0,
+      "start": 1274.22,
+      "text": "開始直播了啊"
+    },
+    {
+      "avg_logprob": -0.177289,
+      "compression_ratio": 1.445783,
+      "end": 1278.22,
+      "no_speech_prob": 0.0,
+      "start": 1276.22,
+      "text": "真經的 戰友們好 戰友們好"
+    },
+    {
+      "avg_logprob": -0.177289,
+      "compression_ratio": 1.445783,
+      "end": 1280.22,
+      "no_speech_prob": 0.0,
+      "start": 1278.22,
+      "text": "能看到嗎 聲音怎麼樣"
+    },
+    {
+      "avg_logprob": -0.177289,
+      "compression_ratio": 1.445783,
+      "end": 1284.22,
+      "no_speech_prob": 0.0,
+      "start": 1281.22,
+      "text": "我們這個直播在咱們這個"
+    },
+    {
+      "avg_logprob": -0.177289,
+      "compression_ratio": 1.445783,
+      "end": 1287.22,
+      "no_speech_prob": 0.0,
+      "start": 1284.22,
+      "text": "WhatsApp群啊 我在這兒開著手機呢"
+    },
+    {
+      "avg_logprob": -0.177289,
+      "compression_ratio": 1.445783,
+      "end": 1289.22,
+      "no_speech_prob": 0.0,
+      "start": 1287.22,
+      "text": "我在這兒開著手機呢"
+    },
+    {
+      "avg_logprob": -0.247061,
+      "compression_ratio": 1.200935,
+      "end": 1300.22,
+      "no_speech_prob": 0.0,
+      "start": 1289.22,
+      "text": "今天是外面陽光明媚 天氣簡直是"
+    },
+    {
+      "avg_logprob": -0.247061,
+      "compression_ratio": 1.200935,
+      "end": 1303.22,
+      "no_speech_prob": 0.0,
+      "start": 1300.22,
+      "text": "這是一個攝像機的局限啊"
+    },
+    {
+      "avg_logprob": -0.247061,
+      "compression_ratio": 1.200935,
+      "end": 1306.22,
+      "no_speech_prob": 0.0,
+      "start": 1303.22,
+      "text": "不能把這個外面的整個這個"
+    },
+    {
+      "avg_logprob": -0.247061,
+      "compression_ratio": 1.200935,
+      "end": 1308.22,
+      "no_speech_prob": 0.0,
+      "start": 1306.22,
+      "text": "我喜歡的景觀分享給戰友們"
+    },
+    {
+      "avg_logprob": -0.247061,
+      "compression_ratio": 1.200935,
+      "end": 1310.22,
+      "no_speech_prob": 0.0,
+      "start": 1308.22,
+      "text": "我早上看在那兒 太漂亮了"
+    },
+    {
+      "avg_logprob": -0.247061,
+      "compression_ratio": 1.200935,
+      "end": 1313.22,
+      "no_speech_prob": 0.0,
+      "start": 1310.22,
+      "text": "怎麼讓飛驰中戰友們 沒辦法"
+    },
+    {
+      "avg_logprob": -0.247061,
+      "compression_ratio": 1.200935,
+      "end": 1318.22,
+      "no_speech_prob": 0.0,
+      "start": 1315.22,
+      "text": "戰友老皮將 肯尼亞 海上旗艦"
+    },
+    {
+      "avg_logprob": -0.338137,
+      "compression_ratio": 1.246377,
+      "end": 1323.22,
+      "no_speech_prob": 0.0,
+      "start": 1318.22,
+      "text": "老黑 招換 水晶 雲水 拆穗艾米利"
+    },
+    {
+      "avg_logprob": -0.338137,
+      "compression_ratio": 1.246377,
+      "end": 1326.22,
+      "no_speech_prob": 0.0,
+      "start": 1323.22,
+      "text": "臺灣農場的高作型 陳希 雅雲 夫提如下"
+    },
+    {
+      "avg_logprob": -0.338137,
+      "compression_ratio": 1.246377,
+      "end": 1329.22,
+      "no_speech_prob": 0.0,
+      "start": 1326.22,
+      "text": "愛雨光 天煉朗 牧村仔衣"
+    },
+    {
+      "avg_logprob": -0.338137,
+      "compression_ratio": 1.246377,
+      "end": 1332.22,
+      "no_speech_prob": 0.0,
+      "start": 1329.22,
+      "text": "寧南 石頭簡布 雅鐵南農場的開著"
+    },
+    {
+      "avg_logprob": -0.338137,
+      "compression_ratio": 1.246377,
+      "end": 1337.22,
+      "no_speech_prob": 0.0,
+      "start": 1332.22,
+      "text": "牧村文煌 冰冰和我來上修 風吹奶招啊"
+    },
+    {
+      "avg_logprob": -0.338137,
+      "compression_ratio": 1.246377,
+      "end": 1343.22,
+      "no_speech_prob": 0.0,
+      "start": 1337.22,
+      "text": "風吹奶招 高作型啊 我的天哪"
+    },
+    {
+      "avg_logprob": -0.327815,
+      "compression_ratio": 1.465753,
+      "end": 1351.22,
+      "no_speech_prob": 0.0,
+      "start": 1343.22,
+      "text": "安永 安永 西哥好 安永 安永 安永"
+    },
+    {
+      "avg_logprob": -0.327815,
+      "compression_ratio": 1.465753,
+      "end": 1353.22,
+      "no_speech_prob": 0.0,
+      "start": 1351.22,
+      "text": "你要調旁邊那個300個"
+    },
+    {
+      "avg_logprob": -0.327815,
+      "compression_ratio": 1.465753,
+      "end": 1355.22,
+      "no_speech_prob": 0.0,
+      "start": 1353.22,
+      "text": "調那個聲音 我就會看到"
+    },
+    {
+      "avg_logprob": -0.327815,
+      "compression_ratio": 1.465753,
+      "end": 1357.22,
+      "no_speech_prob": 0.0,
+      "start": 1355.22,
+      "text": "是聲音有問題嗎"
+    },
+    {
+      "avg_logprob": -0.327815,
+      "compression_ratio": 1.465753,
+      "end": 1359.22,
+      "no_speech_prob": 0.0,
+      "start": 1357.22,
+      "text": "是沒有聲音 是嗎"
+    },
+    {
+      "avg_logprob": -0.327815,
+      "compression_ratio": 1.465753,
+      "end": 1361.22,
+      "no_speech_prob": 0.0,
+      "start": 1359.22,
+      "text": "哇哇哇哇哇"
+    },
+    {
+      "avg_logprob": -0.327815,
+      "compression_ratio": 1.465753,
+      "end": 1364.22,
+      "no_speech_prob": 0.0,
+      "start": 1361.22,
+      "text": "你要調那個300個市場那個問題"
+    },
+    {
+      "avg_logprob": -0.327815,
+      "compression_ratio": 1.465753,
+      "end": 1366.22,
+      "no_speech_prob": 0.0,
+      "start": 1364.22,
+      "text": "誰沒問題吧"
+    },
+    {
+      "avg_logprob": -0.216925,
+      "compression_ratio": 1.679487,
+      "end": 1372.22,
+      "no_speech_prob": 0.0,
+      "start": 1366.22,
+      "text": "聲音很遠 有電雜音 還有電雜音"
+    },
+    {
+      "avg_logprob": -0.216925,
+      "compression_ratio": 1.679487,
+      "end": 1374.22,
+      "no_speech_prob": 0.0,
+      "start": 1372.22,
+      "text": "還有電雜音呢 還有電雜音呢"
+    },
+    {
+      "avg_logprob": -0.216925,
+      "compression_ratio": 1.679487,
+      "end": 1376.22,
+      "no_speech_prob": 0.0,
+      "start": 1374.22,
+      "text": "哇塞"
+    },
+    {
+      "avg_logprob": -0.216925,
+      "compression_ratio": 1.679487,
+      "end": 1380.22,
+      "no_speech_prob": 0.0,
+      "start": 1376.22,
+      "text": "還有電雜音呢 聲音有點空旺啊 哇塞"
+    },
+    {
+      "avg_logprob": -0.268222,
+      "compression_ratio": 1.10101,
+      "end": 1382.22,
+      "no_speech_prob": 0.0,
+      "start": 1380.22,
+      "text": "哇塞"
+    },
+    {
+      "avg_logprob": -0.268222,
+      "compression_ratio": 1.10101,
+      "end": 1384.22,
+      "no_speech_prob": 0.0,
+      "start": 1382.22,
+      "text": "哇塞"
+    },
+    {
+      "avg_logprob": -0.268222,
+      "compression_ratio": 1.10101,
+      "end": 1398.22,
+      "no_speech_prob": 0.0,
+      "start": 1384.22,
+      "text": "我沒開麥克風就剛才你沒開你的麥克風"
+    },
+    {
+      "avg_logprob": -0.268222,
+      "compression_ratio": 1.10101,
+      "end": 1400.22,
+      "no_speech_prob": 0.0,
+      "start": 1398.22,
+      "text": "你知道嗎 你用的是電腦的聲音"
+    },
+    {
+      "avg_logprob": -0.268222,
+      "compression_ratio": 1.10101,
+      "end": 1404.22,
+      "no_speech_prob": 0.0,
+      "start": 1400.22,
+      "text": "天哪"
+    },
+    {
+      "avg_logprob": -0.320897,
+      "compression_ratio": 1.479592,
+      "end": 1410.22,
+      "no_speech_prob": 0.0,
+      "start": 1404.22,
+      "text": "現在可以了吧 現在可以了吧"
+    },
+    {
+      "avg_logprob": -0.320897,
+      "compression_ratio": 1.479592,
+      "end": 1414.22,
+      "no_speech_prob": 0.0,
+      "start": 1410.22,
+      "text": "現在可以了吧"
+    },
+    {
+      "avg_logprob": -0.320897,
+      "compression_ratio": 1.479592,
+      "end": 1420.22,
+      "no_speech_prob": 0.0,
+      "start": 1418.22,
+      "text": "就是那個時場要變成350那個"
+    },
+    {
+      "avg_logprob": -0.320897,
+      "compression_ratio": 1.479592,
+      "end": 1422.22,
+      "no_speech_prob": 0.0,
+      "start": 1420.22,
+      "text": "那個"
+    },
+    {
+      "avg_logprob": -0.320897,
+      "compression_ratio": 1.479592,
+      "end": 1424.22,
+      "no_speech_prob": 0.0,
+      "start": 1422.22,
+      "text": "就那個那個時場後面那個"
+    },
+    {
+      "avg_logprob": -0.320897,
+      "compression_ratio": 1.479592,
+      "end": 1426.22,
+      "no_speech_prob": 0.0,
+      "start": 1424.22,
+      "text": "漸變的"
+    },
+    {
+      "avg_logprob": -0.320897,
+      "compression_ratio": 1.479592,
+      "end": 1428.22,
+      "no_speech_prob": 0.0,
+      "start": 1426.22,
+      "text": "對啊"
+    },
+    {
+      "avg_logprob": -0.287661,
+      "compression_ratio": 1.636943,
+      "end": 1430.22,
+      "no_speech_prob": 0.0,
+      "start": 1428.22,
+      "text": "現在可以了吧 聲音"
+    },
+    {
+      "avg_logprob": -0.287661,
+      "compression_ratio": 1.636943,
+      "end": 1432.22,
+      "no_speech_prob": 0.0,
+      "start": 1430.22,
+      "text": "現在可以了吧 聲音"
+    },
+    {
+      "avg_logprob": -0.287661,
+      "compression_ratio": 1.636943,
+      "end": 1435.22,
+      "no_speech_prob": 0.0,
+      "start": 1432.22,
+      "text": "好了嗎 聲音"
+    },
+    {
+      "avg_logprob": -0.287661,
+      "compression_ratio": 1.636943,
+      "end": 1436.22,
+      "no_speech_prob": 0.0,
+      "start": 1435.22,
+      "text": "好了嗎 聲音"
+    },
+    {
+      "avg_logprob": -0.287661,
+      "compression_ratio": 1.636943,
+      "end": 1437.22,
+      "no_speech_prob": 0.0,
+      "start": 1436.22,
+      "text": "好了嗎 還有回音嗎"
+    },
+    {
+      "avg_logprob": -0.287661,
+      "compression_ratio": 1.636943,
+      "end": 1442.22,
+      "no_speech_prob": 0.0,
+      "start": 1437.22,
+      "text": "秋天了 應該沒連上"
+    },
+    {
+      "avg_logprob": -0.287661,
+      "compression_ratio": 1.636943,
+      "end": 1444.22,
+      "no_speech_prob": 0.0,
+      "start": 1442.22,
+      "text": "剛才說 阿甘說"
+    },
+    {
+      "avg_logprob": -0.287661,
+      "compression_ratio": 1.636943,
+      "end": 1445.22,
+      "no_speech_prob": 0.0,
+      "start": 1444.22,
+      "text": "阿甘 阿甘"
+    },
+    {
+      "avg_logprob": -0.287661,
+      "compression_ratio": 1.636943,
+      "end": 1447.22,
+      "no_speech_prob": 0.0,
+      "start": 1445.22,
+      "text": "阿甘"
+    },
+    {
+      "avg_logprob": -0.287661,
+      "compression_ratio": 1.636943,
+      "end": 1448.22,
+      "no_speech_prob": 0.0,
+      "start": 1447.22,
+      "text": "阿甘"
+    },
+    {
+      "avg_logprob": -0.287661,
+      "compression_ratio": 1.636943,
+      "end": 1449.22,
+      "no_speech_prob": 0.0,
+      "start": 1448.22,
+      "text": "阿甘在這看著了啊"
+    },
+    {
+      "avg_logprob": -0.287661,
+      "compression_ratio": 1.636943,
+      "end": 1452.22,
+      "no_speech_prob": 0.0,
+      "start": 1449.22,
+      "text": "不是風街聲音太"
+    },
+    {
+      "avg_logprob": -0.287661,
+      "compression_ratio": 1.636943,
+      "end": 1454.22,
+      "no_speech_prob": 0.0,
+      "start": 1452.22,
+      "text": "現在可以了啊"
+    },
+    {
+      "avg_logprob": -0.287661,
+      "compression_ratio": 1.636943,
+      "end": 1455.22,
+      "no_speech_prob": 0.0,
+      "start": 1454.22,
+      "text": "剛才這沒有條"
+    },
+    {
+      "avg_logprob": -0.242727,
+      "compression_ratio": 1.165854,
+      "end": 1459.22,
+      "no_speech_prob": 0.0,
+      "start": 1455.22,
+      "text": "他給直接給放到那個"
+    },
+    {
+      "avg_logprob": -0.242727,
+      "compression_ratio": 1.165854,
+      "end": 1460.22,
+      "no_speech_prob": 0.0,
+      "start": 1459.22,
+      "text": "攝像機上去了"
+    },
+    {
+      "avg_logprob": -0.242727,
+      "compression_ratio": 1.165854,
+      "end": 1463.22,
+      "no_speech_prob": 0.0,
+      "start": 1460.22,
+      "text": "這就是這些小孩你看看"
+    },
+    {
+      "avg_logprob": -0.242727,
+      "compression_ratio": 1.165854,
+      "end": 1465.22,
+      "no_speech_prob": 0.0,
+      "start": 1463.22,
+      "text": "好了聲音 瑞秋說好了"
+    },
+    {
+      "avg_logprob": -0.242727,
+      "compression_ratio": 1.165854,
+      "end": 1466.22,
+      "no_speech_prob": 0.0,
+      "start": 1465.22,
+      "text": "瑞秋說好了"
+    },
+    {
+      "avg_logprob": -0.242727,
+      "compression_ratio": 1.165854,
+      "end": 1468.22,
+      "no_speech_prob": 0.0,
+      "start": 1466.22,
+      "text": "好 再來一遍"
+    },
+    {
+      "avg_logprob": -0.242727,
+      "compression_ratio": 1.165854,
+      "end": 1471.22,
+      "no_speech_prob": 0.0,
+      "start": 1469.22,
+      "text": "尊敬的戰友們好"
+    },
+    {
+      "avg_logprob": -0.242727,
+      "compression_ratio": 1.165854,
+      "end": 1472.22,
+      "no_speech_prob": 0.0,
+      "start": 1471.22,
+      "text": "8月31號啊"
+    },
+    {
+      "avg_logprob": -0.242727,
+      "compression_ratio": 1.165854,
+      "end": 1477.22,
+      "no_speech_prob": 0.0,
+      "start": 1472.22,
+      "text": "妙妙 文俊 霹雳 春風"
+    },
+    {
+      "avg_logprob": -0.242727,
+      "compression_ratio": 1.165854,
+      "end": 1482.22,
+      "no_speech_prob": 0.0,
+      "start": 1477.22,
+      "text": "微群服 展昭 小靜不靜 小皮皮寧南"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.063725,
+      "end": 1485.22,
+      "no_speech_prob": 0.0,
+      "start": 1482.22,
+      "text": "東京櫻花團的Jully5858自由飛翔"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.063725,
+      "end": 1488.22,
+      "no_speech_prob": 0.0,
+      "start": 1485.22,
+      "text": "阿牛小哥 娜蘭英"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.063725,
+      "end": 1490.22,
+      "no_speech_prob": 0.0,
+      "start": 1488.22,
+      "text": "艾倫 馬斯克火猴"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.063725,
+      "end": 1492.22,
+      "no_speech_prob": 0.0,
+      "start": 1490.22,
+      "text": "樂 微船儀式小蝴蝶自由女神"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.063725,
+      "end": 1495.22,
+      "no_speech_prob": 0.0,
+      "start": 1492.22,
+      "text": "范佩西 菩提樹下"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.063725,
+      "end": 1498.22,
+      "no_speech_prob": 0.0,
+      "start": 1495.22,
+      "text": "!小皮皮CC"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.063725,
+      "end": 1502.22,
+      "no_speech_prob": 0.0,
+      "start": 1498.22,
+      "text": "海之蘭自在獨行玉米滴滴大姐"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.063725,
+      "end": 1505.22,
+      "no_speech_prob": 0.0,
+      "start": 1502.22,
+      "text": "自由飛翔無人知曉"
+    },
+    {
+      "avg_logprob": -0.269676,
+      "compression_ratio": 1.192513,
+      "end": 1507.22,
+      "no_speech_prob": 0.0,
+      "start": 1505.22,
+      "text": "阿瑞典小小哥"
+    },
+    {
+      "avg_logprob": -0.269676,
+      "compression_ratio": 1.192513,
+      "end": 1508.22,
+      "no_speech_prob": 0.0,
+      "start": 1507.22,
+      "text": "平安亮亮"
+    },
+    {
+      "avg_logprob": -0.269676,
+      "compression_ratio": 1.192513,
+      "end": 1509.22,
+      "no_speech_prob": 0.0,
+      "start": 1508.22,
+      "text": "伊北小卓"
+    },
+    {
+      "avg_logprob": -0.269676,
+      "compression_ratio": 1.192513,
+      "end": 1513.22,
+      "no_speech_prob": 0.0,
+      "start": 1509.22,
+      "text": "夢蒲頭"
+    },
+    {
+      "avg_logprob": -0.269676,
+      "compression_ratio": 1.192513,
+      "end": 1515.22,
+      "no_speech_prob": 0.0,
+      "start": 1513.22,
+      "text": "汪星魔法師召喚"
+    },
+    {
+      "avg_logprob": -0.269676,
+      "compression_ratio": 1.192513,
+      "end": 1516.22,
+      "no_speech_prob": 0.0,
+      "start": 1515.22,
+      "text": "九夢"
+    },
+    {
+      "avg_logprob": -0.269676,
+      "compression_ratio": 1.192513,
+      "end": 1517.22,
+      "no_speech_prob": 0.0,
+      "start": 1516.22,
+      "text": "七號碧"
+    },
+    {
+      "avg_logprob": -0.269676,
+      "compression_ratio": 1.192513,
+      "end": 1518.22,
+      "no_speech_prob": 0.0,
+      "start": 1517.22,
+      "text": "廣東榮"
+    },
+    {
+      "avg_logprob": -0.269676,
+      "compression_ratio": 1.192513,
+      "end": 1519.22,
+      "no_speech_prob": 0.0,
+      "start": 1518.22,
+      "text": "柯陳"
+    },
+    {
+      "avg_logprob": -0.269676,
+      "compression_ratio": 1.192513,
+      "end": 1520.22,
+      "no_speech_prob": 0.0,
+      "start": 1519.22,
+      "text": "現在行了啊"
+    },
+    {
+      "avg_logprob": -0.269676,
+      "compression_ratio": 1.192513,
+      "end": 1522.22,
+      "no_speech_prob": 0.0,
+      "start": 1521.22,
+      "text": "剛才就沒開"
+    },
+    {
+      "avg_logprob": -0.269676,
+      "compression_ratio": 1.192513,
+      "end": 1523.22,
+      "no_speech_prob": 0.0,
+      "start": 1522.22,
+      "text": "就沒開"
+    },
+    {
+      "avg_logprob": -0.269676,
+      "compression_ratio": 1.192513,
+      "end": 1524.22,
+      "no_speech_prob": 0.0,
+      "start": 1523.22,
+      "text": "就沒開"
+    },
+    {
+      "avg_logprob": -0.269676,
+      "compression_ratio": 1.192513,
+      "end": 1525.22,
+      "no_speech_prob": 0.0,
+      "start": 1524.22,
+      "text": "你咋弄"
+    },
+    {
+      "avg_logprob": -0.269676,
+      "compression_ratio": 1.192513,
+      "end": 1529.22,
+      "no_speech_prob": 0.0,
+      "start": 1528.22,
+      "text": "這iPad怎麼還挺檢查"
+    },
+    {
+      "avg_logprob": -0.269676,
+      "compression_ratio": 1.192513,
+      "end": 1531.22,
+      "no_speech_prob": 0.0,
+      "start": 1529.22,
+      "text": "我的網絡這咋的"
+    },
+    {
+      "avg_logprob": -0.269676,
+      "compression_ratio": 1.192513,
+      "end": 1532.22,
+      "no_speech_prob": 0.0,
+      "start": 1531.22,
+      "text": "這網絡好的呢"
+    },
+    {
+      "avg_logprob": -0.293328,
+      "compression_ratio": 1.08,
+      "end": 1538.22,
+      "no_speech_prob": 0.0,
+      "start": 1532.22,
+      "text": "窩窩頭子真香人"
+    },
+    {
+      "avg_logprob": -0.293328,
+      "compression_ratio": 1.08,
+      "end": 1543.22,
+      "no_speech_prob": 0.0,
+      "start": 1538.22,
+      "text": "遙遠的詩歌天道"
+    },
+    {
+      "avg_logprob": -0.293328,
+      "compression_ratio": 1.08,
+      "end": 1546.22,
+      "no_speech_prob": 0.0,
+      "start": 1543.22,
+      "text": "斯蒂芬郭秋山文浪"
+    },
+    {
+      "avg_logprob": -0.293328,
+      "compression_ratio": 1.08,
+      "end": 1548.22,
+      "no_speech_prob": 0.0,
+      "start": 1547.22,
+      "text": "兄弟姐妹們"
+    },
+    {
+      "avg_logprob": -0.293328,
+      "compression_ratio": 1.08,
+      "end": 1550.22,
+      "no_speech_prob": 0.0,
+      "start": 1548.22,
+      "text": "剛剛我們今天是比較早啊"
+    },
+    {
+      "avg_logprob": -0.293328,
+      "compression_ratio": 1.08,
+      "end": 1552.22,
+      "no_speech_prob": 0.0,
+      "start": 1550.22,
+      "text": "一醒了六點鐘啊"
+    },
+    {
+      "avg_logprob": -0.293328,
+      "compression_ratio": 1.08,
+      "end": 1554.22,
+      "no_speech_prob": 0.0,
+      "start": 1552.22,
+      "text": "我們三票先生"
+    },
+    {
+      "avg_logprob": -0.293328,
+      "compression_ratio": 1.08,
+      "end": 1556.22,
+      "no_speech_prob": 0.0,
+      "start": 1554.22,
+      "text": "感謝啊"
+    },
+    {
+      "avg_logprob": -0.51538,
+      "compression_ratio": 1.461538,
+      "end": 1564.22,
+      "no_speech_prob": 0.0,
+      "start": 1562.22,
+      "text": "感謝啊"
+    },
+    {
+      "avg_logprob": -0.51538,
+      "compression_ratio": 1.461538,
+      "end": 1568.22,
+      "no_speech_prob": 0.0,
+      "start": 1566.22,
+      "text": "三票先生"
+    },
+    {
+      "avg_logprob": -0.51538,
+      "compression_ratio": 1.461538,
+      "end": 1569.22,
+      "no_speech_prob": 0.0,
+      "start": 1568.22,
+      "text": "顔同"
+    },
+    {
+      "avg_logprob": -0.51538,
+      "compression_ratio": 1.461538,
+      "end": 1571.22,
+      "no_speech_prob": 0.0,
+      "start": 1569.22,
+      "text": "顔同"
+    },
+    {
+      "avg_logprob": -0.51538,
+      "compression_ratio": 1.461538,
+      "end": 1572.22,
+      "no_speech_prob": 0.0,
+      "start": 1571.22,
+      "text": "顔同"
+    },
+    {
+      "avg_logprob": -0.51538,
+      "compression_ratio": 1.461538,
+      "end": 1574.22,
+      "no_speech_prob": 0.0,
+      "start": 1572.22,
+      "text": "顔同"
+    },
+    {
+      "avg_logprob": -0.51538,
+      "compression_ratio": 1.461538,
+      "end": 1575.22,
+      "no_speech_prob": 0.0,
+      "start": 1574.22,
+      "text": "顔同"
+    },
+    {
+      "avg_logprob": -0.51538,
+      "compression_ratio": 1.461538,
+      "end": 1576.22,
+      "no_speech_prob": 0.0,
+      "start": 1575.22,
+      "text": "顔同"
+    },
+    {
+      "avg_logprob": -3.360384,
+      "compression_ratio": 0.272727,
+      "end": 1602.22,
+      "no_speech_prob": 0.0,
+      "start": 1576.22,
+      "text": "菜"
+    },
+    {
+      "avg_logprob": -0.63686,
+      "compression_ratio": 1.1,
+      "end": 1607.62,
+      "no_speech_prob": 0.0,
+      "start": 1606.22,
+      "text": "那么大的事 是吧"
+    },
+    {
+      "avg_logprob": -0.63686,
+      "compression_ratio": 1.1,
+      "end": 1612.32,
+      "no_speech_prob": 0.0,
+      "start": 1611.26,
+      "text": "要不然不舒服"
+    },
+    {
+      "avg_logprob": -0.63686,
+      "compression_ratio": 1.1,
+      "end": 1630.26,
+      "no_speech_prob": 0.0,
+      "start": 1628.42,
+      "text": "我觉得有点白呀"
+    },
+    {
+      "avg_logprob": -0.63686,
+      "compression_ratio": 1.1,
+      "end": 1632.48,
+      "no_speech_prob": 0.0,
+      "start": 1631.08,
+      "text": "白不吃咧的"
+    },
+    {
+      "avg_logprob": -0.63686,
+      "compression_ratio": 1.1,
+      "end": 1636.08,
+      "no_speech_prob": 0.0,
+      "start": 1634.32,
+      "text": "我觉得有点白 我得调下去"
+    },
+    {
+      "avg_logprob": -0.646197,
+      "compression_ratio": 1.175,
+      "end": 1639.22,
+      "no_speech_prob": 0.0,
+      "start": 1636.22,
+      "text": "有点白 有点白 太白"
+    },
+    {
+      "avg_logprob": -0.646197,
+      "compression_ratio": 1.175,
+      "end": 1642.22,
+      "no_speech_prob": 0.0,
+      "start": 1639.22,
+      "text": "我觉得有点太白"
+    },
+    {
+      "avg_logprob": -0.439079,
+      "compression_ratio": 1.045455,
+      "end": 1676.22,
+      "no_speech_prob": 0.0,
+      "start": 1666.22,
+      "text": "哎我的妈呀 这太黑了吧"
+    },
+    {
+      "avg_logprob": -0.439079,
+      "compression_ratio": 1.045455,
+      "end": 1679.22,
+      "no_speech_prob": 0.0,
+      "start": 1678.22,
+      "text": "这太黑了吧"
+    },
+    {
+      "avg_logprob": -0.90666,
+      "compression_ratio": 0.571429,
+      "end": 1680.22,
+      "no_speech_prob": 0.0,
+      "start": 1679.22,
+      "text": "这太黑了"
+    },
+    {
+      "avg_logprob": -0.253161,
+      "compression_ratio": 1.235294,
+      "end": 1723.22,
+      "no_speech_prob": 0.0,
+      "start": 1709.22,
+      "text": "这也有点太黑啊"
+    },
+    {
+      "avg_logprob": -0.253161,
+      "compression_ratio": 1.235294,
+      "end": 1725.22,
+      "no_speech_prob": 0.0,
+      "start": 1723.22,
+      "text": "这也有点太黑啊"
+    },
+    {
+      "avg_logprob": -0.414334,
+      "compression_ratio": 0.65625,
+      "end": 1727.22,
+      "no_speech_prob": 0.0,
+      "start": 1725.22,
+      "text": "这也有点太黑啊"
+    },
+    {
+      "avg_logprob": -0.216258,
+      "compression_ratio": 1.008696,
+      "end": 1761.22,
+      "no_speech_prob": 0.0,
+      "start": 1755.22,
+      "text": "我觉得刚才太白了 我调了一下"
+    },
+    {
+      "avg_logprob": -0.216258,
+      "compression_ratio": 1.008696,
+      "end": 1763.22,
+      "no_speech_prob": 0.0,
+      "start": 1761.22,
+      "text": "这个有点稍微有点太暗啊"
+    },
+    {
+      "avg_logprob": -0.216258,
+      "compression_ratio": 1.008696,
+      "end": 1767.22,
+      "no_speech_prob": 0.0,
+      "start": 1764.22,
+      "text": "你再调一下 这才真实的颜色现在"
+    },
+    {
+      "avg_logprob": -0.263856,
+      "compression_ratio": 1.208955,
+      "end": 1770.22,
+      "no_speech_prob": 0.0,
+      "start": 1767.22,
+      "text": "再亮一点点 再亮一点点 好吧"
+    },
+    {
+      "avg_logprob": -0.263856,
+      "compression_ratio": 1.208955,
+      "end": 1775.22,
+      "no_speech_prob": 0.0,
+      "start": 1773.22,
+      "text": "现在怎么样啊 公平"
+    },
+    {
+      "avg_logprob": -0.263856,
+      "compression_ratio": 1.208955,
+      "end": 1777.22,
+      "no_speech_prob": 0.0,
+      "start": 1775.22,
+      "text": "Rachel"
+    },
+    {
+      "avg_logprob": -0.263856,
+      "compression_ratio": 1.208955,
+      "end": 1779.22,
+      "no_speech_prob": 0.0,
+      "start": 1777.22,
+      "text": "怎么样啊"
+    },
+    {
+      "avg_logprob": -0.553063,
+      "compression_ratio": 0.954023,
+      "end": 1781.22,
+      "no_speech_prob": 0.0,
+      "start": 1779.22,
+      "text": "现在我觉得还好一点啊"
+    },
+    {
+      "avg_logprob": -0.553063,
+      "compression_ratio": 0.954023,
+      "end": 1782.22,
+      "no_speech_prob": 0.0,
+      "start": 1781.22,
+      "text": "刚才那"
+    },
+    {
+      "avg_logprob": -0.553063,
+      "compression_ratio": 0.954023,
+      "end": 1783.22,
+      "no_speech_prob": 0.0,
+      "start": 1782.22,
+      "text": "焦距最好了 是吧"
+    },
+    {
+      "avg_logprob": -0.553063,
+      "compression_ratio": 0.954023,
+      "end": 1784.22,
+      "no_speech_prob": 0.0,
+      "start": 1783.22,
+      "text": "对吧"
+    },
+    {
+      "avg_logprob": -0.553063,
+      "compression_ratio": 0.954023,
+      "end": 1785.22,
+      "no_speech_prob": 0.0,
+      "start": 1784.22,
+      "text": "好"
+    },
+    {
+      "avg_logprob": -0.553063,
+      "compression_ratio": 0.954023,
+      "end": 1786.22,
+      "no_speech_prob": 0.0,
+      "start": 1785.22,
+      "text": "谢谢 谢谢"
+    },
+    {
+      "avg_logprob": -0.33767,
+      "compression_ratio": 0.978495,
+      "end": 1788.22,
+      "no_speech_prob": 0.0,
+      "start": 1786.22,
+      "text": "中共啊 第一个啊 咱们六个问号啊"
+    },
+    {
+      "avg_logprob": -0.33767,
+      "compression_ratio": 0.978495,
+      "end": 1789.22,
+      "no_speech_prob": 0.0,
+      "start": 1788.22,
+      "text": "三票完同泰山整理 8月31号"
+    },
+    {
+      "avg_logprob": -0.33767,
+      "compression_ratio": 0.978495,
+      "end": 1791.22,
+      "no_speech_prob": 0.0,
+      "start": 1789.22,
+      "text": "第一 中共"
+    },
+    {
+      "avg_logprob": -0.339399,
+      "compression_ratio": 1.021505,
+      "end": 1794.22,
+      "no_speech_prob": 0.0,
+      "start": 1791.22,
+      "text": "第一 中共 第一个啊 咱们六个问号啊"
+    },
+    {
+      "avg_logprob": -0.339399,
+      "compression_ratio": 1.021505,
+      "end": 1797.22,
+      "no_speech_prob": 0.0,
+      "start": 1794.22,
+      "text": "三票完同泰山整理 8月31号"
+    },
+    {
+      "avg_logprob": -0.339399,
+      "compression_ratio": 1.021505,
+      "end": 1800.22,
+      "no_speech_prob": 0.0,
+      "start": 1797.22,
+      "text": "第一 中共"
+    }
+  ],
+  "text": "这世界有那么多人多幸运我有个我们这悠者命运中的晨昏常让我往远方出生灰树叶飘转在池塘看飞机哄的一声去远想光影的长老脚步升脚让等一辆无人的坑道晚风中生活 几只从前了飞驰中旋转 已不见我了远光中走来 一身晴朗身旁那么多人 可世界不声不响小声中复光 几张旧默哑留在梦天里 永远不散场暖光中醒来 好多话要唱这世界那么多人 可是他不声不响这世界有那么多人 活在我 飞扬的青春在泪水里 静止过的长温常让我 下那像猪神缘挺ssa挺 εν handler作詞曲 李宗盛這世界有那麼多人人群裡 唱著一扇門我迷夢的眼睛裡長存初見你 藍色清晨這世界有那麼多人若幸運 我有個我們這悠長命運中的晨晨常讓我 往遠方出身揮樹葉飄轉在池塘看飛機哄的一聲去遠像光陰的長廊腳步聲叫嚷燈一亮無人的空望萬風中山光 幾針從前啊飛驰中旋轉 已不見了啊遠光中走來 你一聲晴朗身旁那麼多人 可世界不常不想這世界有那麼多人多幸運 我有個我們多幸運 我有個我們這悠長命運中的晨晨常讓我 往遠方出身為樹葉飄轉在池塘看飛機哄的一聲去遠像光陰的長廊腳步聲叫嚷 燈一亮腳步聲叫嚷 燈一亮無人的坑道萬風中山光 幾針從前啊飛驰中旋轉 已不見我啊風中山光 幾針從前啊飛驰中旋轉 已不見我啊遠光中走來 你一聲晴朗身旁那麼多人 可世界不見我啊哎呀 戰友們好 戰友們好8月31號 開始直播了開始直播了啊真經的 戰友們好 戰友們好能看到嗎 聲音怎麼樣我們這個直播在咱們這個WhatsApp群啊 我在這兒開著手機呢我在這兒開著手機呢今天是外面陽光明媚 天氣簡直是這是一個攝像機的局限啊不能把這個外面的整個這個我喜歡的景觀分享給戰友們我早上看在那兒 太漂亮了怎麼讓飛驰中戰友們 沒辦法戰友老皮將 肯尼亞 海上旗艦老黑 招換 水晶 雲水 拆穗艾米利臺灣農場的高作型 陳希 雅雲 夫提如下愛雨光 天煉朗 牧村仔衣寧南 石頭簡布 雅鐵南農場的開著牧村文煌 冰冰和我來上修 風吹奶招啊風吹奶招 高作型啊 我的天哪安永 安永 西哥好 安永 安永 安永你要調旁邊那個300個調那個聲音 我就會看到是聲音有問題嗎是沒有聲音 是嗎哇哇哇哇哇你要調那個300個市場那個問題誰沒問題吧聲音很遠 有電雜音 還有電雜音還有電雜音呢 還有電雜音呢哇塞還有電雜音呢 聲音有點空旺啊 哇塞哇塞哇塞我沒開麥克風就剛才你沒開你的麥克風你知道嗎 你用的是電腦的聲音天哪現在可以了吧 現在可以了吧現在可以了吧就是那個時場要變成350那個那個就那個那個時場後面那個漸變的對啊現在可以了吧 聲音現在可以了吧 聲音好了嗎 聲音好了嗎 聲音好了嗎 還有回音嗎秋天了 應該沒連上剛才說 阿甘說阿甘 阿甘阿甘阿甘阿甘在這看著了啊不是風街聲音太現在可以了啊剛才這沒有條他給直接給放到那個攝像機上去了這就是這些小孩你看看好了聲音 瑞秋說好了瑞秋說好了好 再來一遍尊敬的戰友們好8月31號啊妙妙 文俊 霹雳 春風微群服 展昭 小靜不靜 小皮皮寧南東京櫻花團的Jully5858自由飛翔阿牛小哥 娜蘭英艾倫 馬斯克火猴樂 微船儀式小蝴蝶自由女神范佩西 菩提樹下!小皮皮CC海之蘭自在獨行玉米滴滴大姐自由飛翔無人知曉阿瑞典小小哥平安亮亮伊北小卓夢蒲頭汪星魔法師召喚九夢七號碧廣東榮柯陳現在行了啊剛才就沒開就沒開就沒開你咋弄這iPad怎麼還挺檢查我的網絡這咋的這網絡好的呢窩窩頭子真香人遙遠的詩歌天道斯蒂芬郭秋山文浪兄弟姐妹們剛剛我們今天是比較早啊一醒了六點鐘啊我們三票先生感謝啊感謝啊三票先生顔同顔同顔同顔同顔同顔同菜那么大的事 是吧要不然不舒服我觉得有点白呀白不吃咧的我觉得有点白 我得调下去有点白 有点白 太白我觉得有点太白哎我的妈呀 这太黑了吧这太黑了吧这太黑了这也有点太黑啊这也有点太黑啊这也有点太黑啊我觉得刚才太白了 我调了一下这个有点稍微有点太暗啊你再调一下 这才真实的颜色现在再亮一点点 再亮一点点 好吧现在怎么样啊 公平Rachel怎么样啊现在我觉得还好一点啊刚才那焦距最好了 是吧对吧好谢谢 谢谢中共啊 第一个啊 咱们六个问号啊三票完同泰山整理 8月31号第一 中共第一 中共 第一个啊 咱们六个问号啊三票完同泰山整理 8月31号第一 中共"
+}

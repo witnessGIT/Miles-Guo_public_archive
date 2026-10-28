@@ -1,0 +1,928 @@
+{
+  "chunk_audio_sha256": "ce785a3cfa0945d0a7d67c59bdc35a196620158cff0c3547bf5b8742107dcdbb",
+  "chunk_index": 7,
+  "completed_at": "2026-10-28T12:26:47Z",
+  "language": "zh",
+  "live_id": "LIVE_20220814_001",
+  "media_committed_to_git": false,
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "offset_sec": 6300,
+  "paid_api_used": false,
+  "processing_location": "github-hosted-macos-arm64",
+  "schema_version": "cloud-asr-chunk-v1",
+  "segments": [
+    {
+      "avg_logprob": -0.586892,
+      "compression_ratio": 0.571429,
+      "end": 6329.98,
+      "no_speech_prob": 0.0,
+      "start": 6300.0,
+      "text": "共产党的"
+    },
+    {
+      "avg_logprob": -0.608695,
+      "compression_ratio": 0.571429,
+      "end": 6359.98,
+      "no_speech_prob": 0.0,
+      "start": 6330.0,
+      "text": "共产党的"
+    },
+    {
+      "avg_logprob": -0.080987,
+      "compression_ratio": 0.571429,
+      "end": 6389.98,
+      "no_speech_prob": 0.0,
+      "start": 6360.0,
+      "text": "共产党的"
+    },
+    {
+      "avg_logprob": -0.186927,
+      "compression_ratio": 0.571429,
+      "end": 6419.98,
+      "no_speech_prob": 0.0,
+      "start": 6390.0,
+      "text": "共产党的"
+    },
+    {
+      "avg_logprob": -0.404082,
+      "compression_ratio": 0.571429,
+      "end": 6449.96,
+      "no_speech_prob": 0.0,
+      "start": 6419.98,
+      "text": "共产党的"
+    },
+    {
+      "avg_logprob": -0.246556,
+      "compression_ratio": 0.571429,
+      "end": 6479.96,
+      "no_speech_prob": 0.0,
+      "start": 6449.98,
+      "text": "共产党的"
+    },
+    {
+      "avg_logprob": -0.341644,
+      "compression_ratio": 1.0,
+      "end": 6481.96,
+      "no_speech_prob": 0.0,
+      "start": 6479.96,
+      "text": "共产党的"
+    },
+    {
+      "avg_logprob": -0.341644,
+      "compression_ratio": 1.0,
+      "end": 6485.96,
+      "no_speech_prob": 0.0,
+      "start": 6481.96,
+      "text": "共产党的"
+    },
+    {
+      "avg_logprob": -0.173561,
+      "compression_ratio": 2.0,
+      "end": 6487.96,
+      "no_speech_prob": 0.0,
+      "start": 6485.96,
+      "text": "共产党的"
+    },
+    {
+      "avg_logprob": -0.173561,
+      "compression_ratio": 2.0,
+      "end": 6489.96,
+      "no_speech_prob": 0.0,
+      "start": 6487.96,
+      "text": "共产党的"
+    },
+    {
+      "avg_logprob": -0.173561,
+      "compression_ratio": 2.0,
+      "end": 6491.96,
+      "no_speech_prob": 0.0,
+      "start": 6489.96,
+      "text": "共产党的"
+    },
+    {
+      "avg_logprob": -0.157314,
+      "compression_ratio": 1.06015,
+      "end": 6523.96,
+      "no_speech_prob": 0.0,
+      "start": 6521.96,
+      "text": "老百姓还能有好吗"
+    },
+    {
+      "avg_logprob": -0.157314,
+      "compression_ratio": 1.06015,
+      "end": 6527.96,
+      "no_speech_prob": 0.0,
+      "start": 6523.96,
+      "text": "一想想习近平一个中国政法委就靠一个吴征"
+    },
+    {
+      "avg_logprob": -0.157314,
+      "compression_ratio": 1.06015,
+      "end": 6529.96,
+      "no_speech_prob": 0.0,
+      "start": 6527.96,
+      "text": "胡舒立"
+    },
+    {
+      "avg_logprob": -0.157314,
+      "compression_ratio": 1.06015,
+      "end": 6531.96,
+      "no_speech_prob": 0.0,
+      "start": 6529.96,
+      "text": "一靠七年来对付齐哥"
+    },
+    {
+      "avg_logprob": -0.157314,
+      "compression_ratio": 1.06015,
+      "end": 6533.96,
+      "no_speech_prob": 0.0,
+      "start": 6531.96,
+      "text": "他从来没想过"
+    },
+    {
+      "avg_logprob": -0.171297,
+      "compression_ratio": 0.984733,
+      "end": 6537.96,
+      "no_speech_prob": 0.0,
+      "start": 6533.96,
+      "text": "所有这些灾难就是来自吴征和洋岚"
+    },
+    {
+      "avg_logprob": -0.171297,
+      "compression_ratio": 0.984733,
+      "end": 6539.96,
+      "no_speech_prob": 0.0,
+      "start": 6537.96,
+      "text": "就来自胡舒立"
+    },
+    {
+      "avg_logprob": -0.171297,
+      "compression_ratio": 0.984733,
+      "end": 6541.96,
+      "no_speech_prob": 0.0,
+      "start": 6539.96,
+      "text": "而且他们对PAG"
+    },
+    {
+      "avg_logprob": -0.171297,
+      "compression_ratio": 0.984733,
+      "end": 6543.96,
+      "no_speech_prob": 0.0,
+      "start": 6541.96,
+      "text": "这样的基金和普衡"
+    },
+    {
+      "avg_logprob": -0.171297,
+      "compression_ratio": 0.984733,
+      "end": 6545.96,
+      "no_speech_prob": 0.0,
+      "start": 6543.96,
+      "text": "利用共产党的利益"
+    },
+    {
+      "avg_logprob": -0.097571,
+      "compression_ratio": 1.122302,
+      "end": 6547.96,
+      "no_speech_prob": 0.0,
+      "start": 6545.96,
+      "text": "在骗共产党的时候"
+    },
+    {
+      "avg_logprob": -0.097571,
+      "compression_ratio": 1.122302,
+      "end": 6549.96,
+      "no_speech_prob": 0.0,
+      "start": 6547.96,
+      "text": "他拿共产党一百块钱"
+    },
+    {
+      "avg_logprob": -0.097571,
+      "compression_ratio": 1.122302,
+      "end": 6551.96,
+      "no_speech_prob": 0.0,
+      "start": 6549.96,
+      "text": "他给这人分一块钱都不错"
+    },
+    {
+      "avg_logprob": -0.097571,
+      "compression_ratio": 1.122302,
+      "end": 6553.96,
+      "no_speech_prob": 0.0,
+      "start": 6551.96,
+      "text": "所以这个体制和这个国家的邪恶"
+    },
+    {
+      "avg_logprob": -0.097571,
+      "compression_ratio": 1.122302,
+      "end": 6555.96,
+      "no_speech_prob": 0.0,
+      "start": 6553.96,
+      "text": "是用长语是没法形容的"
+    },
+    {
+      "avg_logprob": -0.077328,
+      "compression_ratio": 1.060976,
+      "end": 6557.96,
+      "no_speech_prob": 0.0,
+      "start": 6555.96,
+      "text": "好"
+    },
+    {
+      "avg_logprob": -0.077328,
+      "compression_ratio": 1.060976,
+      "end": 6559.96,
+      "no_speech_prob": 0.0,
+      "start": 6557.96,
+      "text": "兄弟姐妹们现在是9点57分"
+    },
+    {
+      "avg_logprob": -0.077328,
+      "compression_ratio": 1.060976,
+      "end": 6563.96,
+      "no_speech_prob": 0.0,
+      "start": 6559.96,
+      "text": "我们一起为全世界的75亿同类"
+    },
+    {
+      "avg_logprob": -0.077328,
+      "compression_ratio": 1.060976,
+      "end": 6565.96,
+      "no_speech_prob": 0.0,
+      "start": 6563.96,
+      "text": "14亿新中国联邦的同胞"
+    },
+    {
+      "avg_logprob": -0.077328,
+      "compression_ratio": 1.060976,
+      "end": 6567.96,
+      "no_speech_prob": 0.0,
+      "start": 6565.96,
+      "text": "爆料革命战友和家人"
+    },
+    {
+      "avg_logprob": -0.077328,
+      "compression_ratio": 1.060976,
+      "end": 6569.96,
+      "no_speech_prob": 0.0,
+      "start": 6567.96,
+      "text": "台湾 香港"
+    },
+    {
+      "avg_logprob": -0.077328,
+      "compression_ratio": 1.060976,
+      "end": 6571.96,
+      "no_speech_prob": 0.0,
+      "start": 6569.96,
+      "text": "西藏 新疆的同胞们祈福"
+    },
+    {
+      "avg_logprob": -6.252034,
+      "compression_ratio": 0.784314,
+      "end": 6603.64,
+      "no_speech_prob": 0.0,
+      "start": 6585.96,
+      "text": "总体经文息"
+    },
+    {
+      "avg_logprob": -6.252034,
+      "compression_ratio": 0.784314,
+      "end": 6610.1,
+      "no_speech_prob": 0.0,
+      "start": 6605.56,
+      "text": "細年的基本进product"
+    },
+    {
+      "avg_logprob": -0.764524,
+      "compression_ratio": 0.571429,
+      "end": 6640.08,
+      "no_speech_prob": 0.0,
+      "start": 6610.1,
+      "text": "谢谢大家"
+    },
+    {
+      "avg_logprob": -0.226661,
+      "compression_ratio": 1.342105,
+      "end": 6645.62,
+      "no_speech_prob": 0.0,
+      "start": 6640.1,
+      "text": "阿弥陀佛"
+    },
+    {
+      "avg_logprob": -0.226661,
+      "compression_ratio": 1.342105,
+      "end": 6650.64,
+      "no_speech_prob": 0.0,
+      "start": 6645.62,
+      "text": "好"
+    },
+    {
+      "avg_logprob": -0.226661,
+      "compression_ratio": 1.342105,
+      "end": 6653.44,
+      "no_speech_prob": 0.0,
+      "start": 6650.64,
+      "text": "咱今天因为我要找直播"
+    },
+    {
+      "avg_logprob": -0.226661,
+      "compression_ratio": 1.342105,
+      "end": 6656.34,
+      "no_speech_prob": 0.0,
+      "start": 6653.44,
+      "text": "找直播完考虑国内战友的看"
+    },
+    {
+      "avg_logprob": -0.226661,
+      "compression_ratio": 1.342105,
+      "end": 6657.3,
+      "no_speech_prob": 0.0,
+      "start": 6656.34,
+      "text": "然后呢"
+    },
+    {
+      "avg_logprob": -0.226661,
+      "compression_ratio": 1.342105,
+      "end": 6657.98,
+      "no_speech_prob": 0.0,
+      "start": 6657.3,
+      "text": "我今天呢"
+    },
+    {
+      "avg_logprob": -0.226661,
+      "compression_ratio": 1.342105,
+      "end": 6659.58,
+      "no_speech_prob": 0.0,
+      "start": 6657.98,
+      "text": "一会我要开好多好多会"
+    },
+    {
+      "avg_logprob": -0.226661,
+      "compression_ratio": 1.342105,
+      "end": 6661.34,
+      "no_speech_prob": 0.0,
+      "start": 6659.58,
+      "text": "所以我们今天呢"
+    },
+    {
+      "avg_logprob": -0.226661,
+      "compression_ratio": 1.342105,
+      "end": 6662.98,
+      "no_speech_prob": 0.0,
+      "start": 6661.34,
+      "text": "就到这为止"
+    },
+    {
+      "avg_logprob": -0.226661,
+      "compression_ratio": 1.342105,
+      "end": 6664.12,
+      "no_speech_prob": 0.0,
+      "start": 6662.98,
+      "text": "到这为止"
+    },
+    {
+      "avg_logprob": -0.226661,
+      "compression_ratio": 1.342105,
+      "end": 6665.7,
+      "no_speech_prob": 0.0,
+      "start": 6664.12,
+      "text": "我在两分钟"
+    },
+    {
+      "avg_logprob": -0.226661,
+      "compression_ratio": 1.342105,
+      "end": 6666.5,
+      "no_speech_prob": 0.0,
+      "start": 6665.7,
+      "text": "两分钟"
+    },
+    {
+      "avg_logprob": -0.277178,
+      "compression_ratio": 1.084577,
+      "end": 6667.74,
+      "no_speech_prob": 0.0,
+      "start": 6666.5,
+      "text": "幽谷"
+    },
+    {
+      "avg_logprob": -0.277178,
+      "compression_ratio": 1.084577,
+      "end": 6668.6,
+      "no_speech_prob": 0.0,
+      "start": 6667.74,
+      "text": "闪电"
+    },
+    {
+      "avg_logprob": -0.277178,
+      "compression_ratio": 1.084577,
+      "end": 6669.32,
+      "no_speech_prob": 0.0,
+      "start": 6668.6,
+      "text": "蟹润"
+    },
+    {
+      "avg_logprob": -0.277178,
+      "compression_ratio": 1.084577,
+      "end": 6670.32,
+      "no_speech_prob": 0.0,
+      "start": 6669.32,
+      "text": "蚂蚁的脚印"
+    },
+    {
+      "avg_logprob": -0.277178,
+      "compression_ratio": 1.084577,
+      "end": 6670.84,
+      "no_speech_prob": 0.0,
+      "start": 6670.32,
+      "text": "Wife"
+    },
+    {
+      "avg_logprob": -0.277178,
+      "compression_ratio": 1.084577,
+      "end": 6672.06,
+      "no_speech_prob": 0.0,
+      "start": 6670.84,
+      "text": "远山的红叶"
+    },
+    {
+      "avg_logprob": -0.277178,
+      "compression_ratio": 1.084577,
+      "end": 6674.56,
+      "no_speech_prob": 0.0,
+      "start": 6672.06,
+      "text": "马诺吉诺比利"
+    },
+    {
+      "avg_logprob": -0.277178,
+      "compression_ratio": 1.084577,
+      "end": 6675.62,
+      "no_speech_prob": 0.0,
+      "start": 6674.56,
+      "text": "小铁匠"
+    },
+    {
+      "avg_logprob": -0.277178,
+      "compression_ratio": 1.084577,
+      "end": 6677.16,
+      "no_speech_prob": 0.0,
+      "start": 6675.62,
+      "text": "香草山的小川"
+    },
+    {
+      "avg_logprob": -0.277178,
+      "compression_ratio": 1.084577,
+      "end": 6678.06,
+      "no_speech_prob": 0.0,
+      "start": 6677.16,
+      "text": "Live"
+    },
+    {
+      "avg_logprob": -0.277178,
+      "compression_ratio": 1.084577,
+      "end": 6678.92,
+      "no_speech_prob": 0.0,
+      "start": 6678.06,
+      "text": "平安亮亮"
+    },
+    {
+      "avg_logprob": -0.277178,
+      "compression_ratio": 1.084577,
+      "end": 6679.56,
+      "no_speech_prob": 0.0,
+      "start": 6678.92,
+      "text": "阿拉丁"
+    },
+    {
+      "avg_logprob": -0.277178,
+      "compression_ratio": 1.084577,
+      "end": 6680.2,
+      "no_speech_prob": 0.0,
+      "start": 6679.56,
+      "text": "先客来"
+    },
+    {
+      "avg_logprob": -0.277178,
+      "compression_ratio": 1.084577,
+      "end": 6680.86,
+      "no_speech_prob": 0.0,
+      "start": 6680.2,
+      "text": "土乒乓"
+    },
+    {
+      "avg_logprob": -0.277178,
+      "compression_ratio": 1.084577,
+      "end": 6682.06,
+      "no_speech_prob": 0.0,
+      "start": 6680.86,
+      "text": "小丝花"
+    },
+    {
+      "avg_logprob": -0.277178,
+      "compression_ratio": 1.084577,
+      "end": 6682.5,
+      "no_speech_prob": 0.0,
+      "start": 6682.06,
+      "text": "Wife"
+    },
+    {
+      "avg_logprob": -0.277178,
+      "compression_ratio": 1.084577,
+      "end": 6683.8,
+      "no_speech_prob": 0.0,
+      "start": 6682.5,
+      "text": "平安"
+    },
+    {
+      "avg_logprob": -0.277178,
+      "compression_ratio": 1.084577,
+      "end": 6685.62,
+      "no_speech_prob": 0.0,
+      "start": 6683.8,
+      "text": "文奇"
+    },
+    {
+      "avg_logprob": -0.277178,
+      "compression_ratio": 1.084577,
+      "end": 6686.54,
+      "no_speech_prob": 0.0,
+      "start": 6685.62,
+      "text": "Mr.7"
+    },
+    {
+      "avg_logprob": -0.277178,
+      "compression_ratio": 1.084577,
+      "end": 6688.88,
+      "no_speech_prob": 0.0,
+      "start": 6686.54,
+      "text": "老田"
+    },
+    {
+      "avg_logprob": -0.277178,
+      "compression_ratio": 1.084577,
+      "end": 6691.34,
+      "no_speech_prob": 0.0,
+      "start": 6688.88,
+      "text": "东京樱花团的文艺"
+    },
+    {
+      "avg_logprob": -0.277178,
+      "compression_ratio": 1.084577,
+      "end": 6692.18,
+      "no_speech_prob": 0.0,
+      "start": 6691.34,
+      "text": "Toyle"
+    },
+    {
+      "avg_logprob": -0.277178,
+      "compression_ratio": 1.084577,
+      "end": 6693.8,
+      "no_speech_prob": 0.0,
+      "start": 6692.18,
+      "text": "文奇Mr.7"
+    },
+    {
+      "avg_logprob": -0.277178,
+      "compression_ratio": 1.084577,
+      "end": 6694.62,
+      "no_speech_prob": 0.0,
+      "start": 6693.8,
+      "text": "Wolf"
+    },
+    {
+      "avg_logprob": -0.297936,
+      "compression_ratio": 1.177143,
+      "end": 6695.96,
+      "no_speech_prob": 0.0,
+      "start": 6694.62,
+      "text": "平安亮亮"
+    },
+    {
+      "avg_logprob": -0.297936,
+      "compression_ratio": 1.177143,
+      "end": 6697.3,
+      "no_speech_prob": 0.0,
+      "start": 6695.96,
+      "text": "一饮三千"
+    },
+    {
+      "avg_logprob": -0.297936,
+      "compression_ratio": 1.177143,
+      "end": 6698.08,
+      "no_speech_prob": 0.0,
+      "start": 6697.3,
+      "text": "大面包"
+    },
+    {
+      "avg_logprob": -0.297936,
+      "compression_ratio": 1.177143,
+      "end": 6699.86,
+      "no_speech_prob": 0.0,
+      "start": 6698.08,
+      "text": "这是什么"
+    },
+    {
+      "avg_logprob": -0.297936,
+      "compression_ratio": 1.177143,
+      "end": 6700.88,
+      "no_speech_prob": 0.0,
+      "start": 6699.86,
+      "text": "霹雳大侠"
+    },
+    {
+      "avg_logprob": -0.297936,
+      "compression_ratio": 1.177143,
+      "end": 6701.68,
+      "no_speech_prob": 0.0,
+      "start": 6700.88,
+      "text": "新鲜空气"
+    },
+    {
+      "avg_logprob": -0.297936,
+      "compression_ratio": 1.177143,
+      "end": 6703.06,
+      "no_speech_prob": 0.0,
+      "start": 6701.68,
+      "text": "古修古修古修"
+    },
+    {
+      "avg_logprob": -0.297936,
+      "compression_ratio": 1.177143,
+      "end": 6704.3,
+      "no_speech_prob": 0.0,
+      "start": 6703.06,
+      "text": "还得念念古修"
+    },
+    {
+      "avg_logprob": -0.297936,
+      "compression_ratio": 1.177143,
+      "end": 6705.68,
+      "no_speech_prob": 0.0,
+      "start": 6704.3,
+      "text": "新北大雄"
+    },
+    {
+      "avg_logprob": -0.297936,
+      "compression_ratio": 1.177143,
+      "end": 6706.36,
+      "no_speech_prob": 0.0,
+      "start": 6705.68,
+      "text": "Blue Line"
+    },
+    {
+      "avg_logprob": -0.297936,
+      "compression_ratio": 1.177143,
+      "end": 6708.16,
+      "no_speech_prob": 0.0,
+      "start": 6706.36,
+      "text": "平安亮亮"
+    },
+    {
+      "avg_logprob": -0.297936,
+      "compression_ratio": 1.177143,
+      "end": 6708.98,
+      "no_speech_prob": 0.0,
+      "start": 6708.16,
+      "text": "蓝精灵"
+    },
+    {
+      "avg_logprob": -0.297936,
+      "compression_ratio": 1.177143,
+      "end": 6710.82,
+      "no_speech_prob": 0.0,
+      "start": 6708.98,
+      "text": "直不到"
+    },
+    {
+      "avg_logprob": -0.297936,
+      "compression_ratio": 1.177143,
+      "end": 6711.62,
+      "no_speech_prob": 0.0,
+      "start": 6710.82,
+      "text": "David"
+    },
+    {
+      "avg_logprob": -0.297936,
+      "compression_ratio": 1.177143,
+      "end": 6712.44,
+      "no_speech_prob": 0.0,
+      "start": 6711.62,
+      "text": "酸酸乳"
+    },
+    {
+      "avg_logprob": -0.297936,
+      "compression_ratio": 1.177143,
+      "end": 6716.64,
+      "no_speech_prob": 0.0,
+      "start": 6712.44,
+      "text": "太好了"
+    },
+    {
+      "avg_logprob": -0.297936,
+      "compression_ratio": 1.177143,
+      "end": 6717.4,
+      "no_speech_prob": 0.0,
+      "start": 6716.64,
+      "text": "太好了"
+    },
+    {
+      "avg_logprob": -0.297936,
+      "compression_ratio": 1.177143,
+      "end": 6719.98,
+      "no_speech_prob": 0.0,
+      "start": 6717.4,
+      "text": "文黄"
+    },
+    {
+      "avg_logprob": -0.297936,
+      "compression_ratio": 1.177143,
+      "end": 6720.78,
+      "no_speech_prob": 0.0,
+      "start": 6719.98,
+      "text": "文黄"
+    },
+    {
+      "avg_logprob": -0.297936,
+      "compression_ratio": 1.177143,
+      "end": 6724.6,
+      "no_speech_prob": 0.0,
+      "start": 6720.78,
+      "text": "大家"
+    },
+    {
+      "avg_logprob": -0.389449,
+      "compression_ratio": 1.3125,
+      "end": 6726.08,
+      "no_speech_prob": 0.0,
+      "start": 6724.6,
+      "text": "听完歌结束"
+    },
+    {
+      "avg_logprob": -0.389449,
+      "compression_ratio": 1.3125,
+      "end": 6728.06,
+      "no_speech_prob": 0.0,
+      "start": 6726.08,
+      "text": "下周三见"
+    },
+    {
+      "avg_logprob": -0.389449,
+      "compression_ratio": 1.3125,
+      "end": 6730.56,
+      "no_speech_prob": 0.0,
+      "start": 6728.06,
+      "text": "我再告诉大家"
+    },
+    {
+      "avg_logprob": -0.389449,
+      "compression_ratio": 1.3125,
+      "end": 6731.7,
+      "no_speech_prob": 0.0,
+      "start": 6730.56,
+      "text": "一定要小心病毒"
+    },
+    {
+      "avg_logprob": -0.389449,
+      "compression_ratio": 1.3125,
+      "end": 6733.92,
+      "no_speech_prob": 0.0,
+      "start": 6731.7,
+      "text": "一定要小心病毒"
+    },
+    {
+      "avg_logprob": -0.389449,
+      "compression_ratio": 1.3125,
+      "end": 6735.22,
+      "no_speech_prob": 0.0,
+      "start": 6733.92,
+      "text": "一定要小心"
+    },
+    {
+      "avg_logprob": -0.389449,
+      "compression_ratio": 1.3125,
+      "end": 6735.92,
+      "no_speech_prob": 0.0,
+      "start": 6735.22,
+      "text": "微真不破"
+    },
+    {
+      "avg_logprob": -0.389449,
+      "compression_ratio": 1.3125,
+      "end": 6736.56,
+      "no_speech_prob": 0.0,
+      "start": 6735.92,
+      "text": "007"
+    },
+    {
+      "avg_logprob": -0.389449,
+      "compression_ratio": 1.3125,
+      "end": 6738.08,
+      "no_speech_prob": 0.0,
+      "start": 6736.56,
+      "text": "横行默示录"
+    },
+    {
+      "avg_logprob": -0.389449,
+      "compression_ratio": 1.3125,
+      "end": 6740.74,
+      "no_speech_prob": 0.0,
+      "start": 6738.08,
+      "text": "一定要小心病毒"
+    },
+    {
+      "avg_logprob": -0.389449,
+      "compression_ratio": 1.3125,
+      "end": 6742.5,
+      "no_speech_prob": 0.0,
+      "start": 6740.74,
+      "text": "傻都不否了"
+    },
+    {
+      "avg_logprob": -5.204181,
+      "compression_ratio": 0.571429,
+      "end": 6758.94,
+      "no_speech_prob": 0.0,
+      "start": 6742.5,
+      "text": "因为即进"
+    },
+    {
+      "avg_logprob": -6.404017,
+      "compression_ratio": 0.959184,
+      "end": 6769.98,
+      "no_speech_prob": 0.0,
+      "start": 6758.94,
+      "text": "sufficiently продолж perseverering"
+    },
+    {
+      "avg_logprob": -6.404017,
+      "compression_ratio": 0.959184,
+      "end": 6777.16,
+      "no_speech_prob": 0.0,
+      "start": 6770.7,
+      "text": "只是世界每次往往でき足"
+    },
+    {
+      "avg_logprob": -6.404017,
+      "compression_ratio": 0.959184,
+      "end": 6782.8,
+      "no_speech_prob": 0.0,
+      "start": 6777.46,
+      "text": "只是 encouragement"
+    },
+    {
+      "avg_logprob": -0.735789,
+      "compression_ratio": 0.945946,
+      "end": 6787.8,
+      "no_speech_prob": 0.0,
+      "start": 6782.8,
+      "text": "一旗希望 陪你嘴漫漫"
+    },
+    {
+      "avg_logprob": -0.735789,
+      "compression_ratio": 0.945946,
+      "end": 6792.8,
+      "no_speech_prob": 0.0,
+      "start": 6787.8,
+      "text": "無分有替親像描槽人"
+    },
+    {
+      "avg_logprob": -0.735789,
+      "compression_ratio": 0.945946,
+      "end": 6798.8,
+      "no_speech_prob": 0.0,
+      "start": 6792.8,
+      "text": "人生 可比是海上的風龍"
+    },
+    {
+      "avg_logprob": -0.735789,
+      "compression_ratio": 0.945946,
+      "end": 6804.8,
+      "no_speech_prob": 0.0,
+      "start": 6798.8,
+      "text": "有時旗 有時路"
+    },
+    {
+      "avg_logprob": -0.792169,
+      "compression_ratio": 0.928571,
+      "end": 6812.8,
+      "no_speech_prob": 0.0,
+      "start": 6804.8,
+      "text": "好雨 海雨雨 總也要照去江來見"
+    },
+    {
+      "avg_logprob": -0.792169,
+      "compression_ratio": 0.928571,
+      "end": 6818.8,
+      "no_speech_prob": 0.0,
+      "start": 6812.8,
+      "text": "三分天主定 七分空下定"
+    },
+    {
+      "avg_logprob": -0.792169,
+      "compression_ratio": 0.928571,
+      "end": 6819.8,
+      "no_speech_prob": 0.0,
+      "start": 6818.8,
+      "text": "愛定"
+    }
+  ],
+  "text": "共产党的共产党的共产党的共产党的共产党的共产党的共产党的共产党的共产党的共产党的共产党的老百姓还能有好吗一想想习近平一个中国政法委就靠一个吴征胡舒立一靠七年来对付齐哥他从来没想过所有这些灾难就是来自吴征和洋岚就来自胡舒立而且他们对PAG这样的基金和普衡利用共产党的利益在骗共产党的时候他拿共产党一百块钱他给这人分一块钱都不错所以这个体制和这个国家的邪恶是用长语是没法形容的好兄弟姐妹们现在是9点57分我们一起为全世界的75亿同类14亿新中国联邦的同胞爆料革命战友和家人台湾 香港西藏 新疆的同胞们祈福总体经文息細年的基本进product谢谢大家阿弥陀佛好咱今天因为我要找直播找直播完考虑国内战友的看然后呢我今天呢一会我要开好多好多会所以我们今天呢就到这为止到这为止我在两分钟两分钟幽谷闪电蟹润蚂蚁的脚印Wife远山的红叶马诺吉诺比利小铁匠香草山的小川Live平安亮亮阿拉丁先客来土乒乓小丝花Wife平安文奇Mr.7老田东京樱花团的文艺Toyle文奇Mr.7Wolf平安亮亮一饮三千大面包这是什么霹雳大侠新鲜空气古修古修古修还得念念古修新北大雄Blue Line平安亮亮蓝精灵直不到David酸酸乳太好了太好了文黄文黄大家听完歌结束下周三见我再告诉大家一定要小心病毒一定要小心病毒一定要小心微真不破007横行默示录一定要小心病毒傻都不否了因为即进 sufficiently продолж perseverering只是世界每次往往でき足只是 encouragement一旗希望 陪你嘴漫漫無分有替親像描槽人人生 可比是海上的風龍有時旗 有時路好雨 海雨雨 總也要照去江來見三分天主定 七分空下定愛定"
+}

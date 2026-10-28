@@ -1,0 +1,40 @@
+{
+  "chunk_audio_sha256": "5f2df1fa33f8722e8cb32d3f960f6030faf9bab2cb22348133e1dbbf60ea6977",
+  "chunk_index": 8,
+  "completed_at": "2026-10-28T12:45:28Z",
+  "language": "zh",
+  "live_id": "LIVE_20220817_001",
+  "media_committed_to_git": false,
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "offset_sec": 7200,
+  "paid_api_used": false,
+  "processing_location": "github-hosted-macos-arm64",
+  "schema_version": "cloud-asr-chunk-v1",
+  "segments": [
+    {
+      "avg_logprob": -0.840426,
+      "compression_ratio": 0.94,
+      "end": 7209.0,
+      "no_speech_prob": 0.0,
+      "start": 7200.0,
+      "text": "喔 喔 無路 拍運 總也要照去港來走"
+    },
+    {
+      "avg_logprob": -0.840426,
+      "compression_ratio": 0.94,
+      "end": 7221.0,
+      "no_speech_prob": 0.0,
+      "start": 7209.0,
+      "text": "三分幾支定 一分可打拼 愛拼 吃會贏"
+    },
+    {
+      "avg_logprob": -0.198834,
+      "compression_ratio": 11.71875,
+      "end": 7259.95,
+      "no_speech_prob": 0.0,
+      "start": 7230.0,
+      "text": "三分残酷喔 殆酷喔 殆酷喔 殆酷喔 殆酷喔 殆酷喔 殆酷喔 殆酷喔 殆酷喔 殆酷喔 殆酷喔 殆酷喔 殆酷喔 殆酷喔 殆酷喔 殆酷喔 殆酷喔 殆酷喔 殆酷喔 殆酷喔 殆酷喔 殆酷喔 殆酷喔 殆酷喔 殆酷喔 殆酷喔 殆酷喔 殆酷喔 殆酷喔 殆酷喔 殆酷喔 殆酷喔 殆酷喔 殆酷喔 殆酷喔 殆酷喔 殆酷喔"
+    }
+  ],
+  "text": "喔 喔 無路 拍運 總也要照去港來走三分幾支定 一分可打拼 愛拼 吃會贏三分残酷喔 殆酷喔 殆酷喔 殆酷喔 殆酷喔 殆酷喔 殆酷喔 殆酷喔 殆酷喔 殆酷喔 殆酷喔 殆酷喔 殆酷喔 殆酷喔 殆酷喔 殆酷喔 殆酷喔 殆酷喔 殆酷喔 殆酷喔 殆酷喔 殆酷喔 殆酷喔 殆酷喔 殆酷喔 殆酷喔 殆酷喔 殆酷喔 殆酷喔 殆酷喔 殆酷喔 殆酷喔 殆酷喔 殆酷喔 殆酷喔 殆酷喔 殆酷喔"
+}

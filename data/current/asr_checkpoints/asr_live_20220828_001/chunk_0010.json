@@ -1,0 +1,96 @@
+{
+  "chunk_audio_sha256": "cc38e7872905b4be917e4a314d26c116ea93412e2ec9c9cc0490b3ce6c2e7dd3",
+  "chunk_index": 10,
+  "completed_at": "2026-10-28T14:03:43Z",
+  "language": "zh",
+  "live_id": "LIVE_20220828_001",
+  "media_committed_to_git": false,
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "offset_sec": 9000,
+  "paid_api_used": false,
+  "processing_location": "github-hosted-macos-arm64",
+  "schema_version": "cloud-asr-chunk-v1",
+  "segments": [
+    {
+      "avg_logprob": -0.477788,
+      "compression_ratio": 1.212644,
+      "end": 9004.8,
+      "no_speech_prob": 0.0,
+      "start": 9000.0,
+      "text": "不灭恶当时不朽"
+    },
+    {
+      "avg_logprob": -0.477788,
+      "compression_ratio": 1.212644,
+      "end": 9009.6,
+      "no_speech_prob": 0.0,
+      "start": 9004.8,
+      "text": "春天一与九州"
+    },
+    {
+      "avg_logprob": -0.477788,
+      "compression_ratio": 1.212644,
+      "end": 9014.4,
+      "no_speech_prob": 0.0,
+      "start": 9009.6,
+      "text": "真心灭功跟我走"
+    },
+    {
+      "avg_logprob": -0.477788,
+      "compression_ratio": 1.212644,
+      "end": 9018.1,
+      "no_speech_prob": 0.0,
+      "start": 9014.4,
+      "text": "好久啊好久啊好久"
+    },
+    {
+      "avg_logprob": -0.477788,
+      "compression_ratio": 1.212644,
+      "end": 9021.4,
+      "no_speech_prob": 0.0,
+      "start": 9019.1,
+      "text": "七个年前 顾飞传的权利"
+    },
+    {
+      "avg_logprob": -0.477788,
+      "compression_ratio": 1.212644,
+      "end": 9023.9,
+      "no_speech_prob": 0.0,
+      "start": 9021.4,
+      "text": "如今已久自恋在中国大帝"
+    },
+    {
+      "avg_logprob": -0.477788,
+      "compression_ratio": 1.212644,
+      "end": 9025.2,
+      "no_speech_prob": 0.0,
+      "start": 9023.9,
+      "text": "他关天关地"
+    },
+    {
+      "avg_logprob": -0.477788,
+      "compression_ratio": 1.212644,
+      "end": 9028.0,
+      "no_speech_prob": 0.0,
+      "start": 9025.2,
+      "text": "他们的恐惧是我们的武器"
+    },
+    {
+      "avg_logprob": -0.477788,
+      "compression_ratio": 1.212644,
+      "end": 9029.8,
+      "no_speech_prob": 0.0,
+      "start": 9028.0,
+      "text": "我们的胜利"
+    },
+    {
+      "avg_logprob": -4.130016,
+      "compression_ratio": 0.428571,
+      "end": 9057.8,
+      "no_speech_prob": 0.0,
+      "start": 9029.8,
+      "text": "张刻"
+    }
+  ],
+  "text": "不灭恶当时不朽春天一与九州真心灭功跟我走好久啊好久啊好久七个年前 顾飞传的权利如今已久自恋在中国大帝他关天关地他们的恐惧是我们的武器我们的胜利张刻"
+}

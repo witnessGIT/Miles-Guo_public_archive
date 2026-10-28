@@ -1,0 +1,32 @@
+{
+  "chunk_audio_sha256": "6da79eafe46c554f95527ebfeea8d44ccbd87d841100f80f4dbade2450d423bd",
+  "chunk_index": 2,
+  "completed_at": "2026-10-28T14:34:59Z",
+  "language": "zh",
+  "live_id": "LIVE_20220831_002",
+  "media_committed_to_git": false,
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "offset_sec": 1800,
+  "paid_api_used": false,
+  "processing_location": "github-hosted-macos-arm64",
+  "schema_version": "cloud-asr-chunk-v1",
+  "segments": [
+    {
+      "avg_logprob": -0.559011,
+      "compression_ratio": 0.825397,
+      "end": 1804.0,
+      "no_speech_prob": 0.0,
+      "start": 1800.0,
+      "text": "还有十几秒 我要控制半分时间"
+    },
+    {
+      "avg_logprob": -0.559011,
+      "compression_ratio": 0.825397,
+      "end": 1811.0,
+      "no_speech_prob": 0.0,
+      "start": 1809.0,
+      "text": "星期天见"
+    }
+  ],
+  "text": "还有十几秒 我要控制半分时间星期天见"
+}

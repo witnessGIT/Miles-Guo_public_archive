@@ -1,0 +1,2080 @@
+{
+  "chunk_audio_sha256": "fdcd6e085e5a14651c5b455a8f40e0c6ec6f05e0c559732dc027825f71b2be29",
+  "chunk_index": 20,
+  "completed_at": "2026-10-28T12:03:06Z",
+  "language": "zh",
+  "live_id": "LIVE_20220703_001",
+  "media_committed_to_git": false,
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "offset_sec": 18000,
+  "paid_api_used": false,
+  "processing_location": "github-hosted-macos-arm64",
+  "schema_version": "cloud-asr-chunk-v1",
+  "segments": [
+    {
+      "avg_logprob": -0.365627,
+      "compression_ratio": 1.219178,
+      "end": 18004.1,
+      "no_speech_prob": 0.0,
+      "start": 18000.0,
+      "text": "所有的 你已經生產出來的 你不要訂那麼高價"
+    },
+    {
+      "avg_logprob": -0.365627,
+      "compression_ratio": 1.219178,
+      "end": 18010.5,
+      "no_speech_prob": 0.0,
+      "start": 18005.5,
+      "text": "這個價大家買不起 也不捨得買 是吧"
+    },
+    {
+      "avg_logprob": -0.365627,
+      "compression_ratio": 1.219178,
+      "end": 18016.4,
+      "no_speech_prob": 0.0,
+      "start": 18011.4,
+      "text": "那怎麼辦呢 我說你把這個成本價給G Club會員"
+    },
+    {
+      "avg_logprob": -0.365627,
+      "compression_ratio": 1.219178,
+      "end": 18020.3,
+      "no_speech_prob": 0.0,
+      "start": 18016.5,
+      "text": "你G Club都是戰友嘛 當然他啥叫成本 大家記住"
+    },
+    {
+      "avg_logprob": -0.365627,
+      "compression_ratio": 1.219178,
+      "end": 18025.6,
+      "no_speech_prob": 0.0,
+      "start": 18020.3,
+      "text": "成本是廠家生產了這個T恤 100美金"
+    },
+    {
+      "avg_logprob": -0.215028,
+      "compression_ratio": 1.310345,
+      "end": 18031.9,
+      "no_speech_prob": 0.0,
+      "start": 18025.6,
+      "text": "加上運費 加上工資 加上所有的辦公室成本 是吧"
+    },
+    {
+      "avg_logprob": -0.215028,
+      "compression_ratio": 1.310345,
+      "end": 18034.4,
+      "no_speech_prob": 0.0,
+      "start": 18031.9,
+      "text": "這叫成本 對吧 大哥 這個是大家都懂的吧"
+    },
+    {
+      "avg_logprob": -0.215028,
+      "compression_ratio": 1.310345,
+      "end": 18037.4,
+      "no_speech_prob": 0.0,
+      "start": 18034.4,
+      "text": "說這叫成本價 那是多少錢呢"
+    },
+    {
+      "avg_logprob": -0.215028,
+      "compression_ratio": 1.310345,
+      "end": 18040.8,
+      "no_speech_prob": 0.0,
+      "start": 18037.4,
+      "text": "就他上面給我舉個例子 一個4000美金的衣服"
+    },
+    {
+      "avg_logprob": -0.215028,
+      "compression_ratio": 1.310345,
+      "end": 18045.3,
+      "no_speech_prob": 0.0,
+      "start": 18040.8,
+      "text": "他大概最起碼得賣給你2000到2500"
+    },
+    {
+      "avg_logprob": -0.215028,
+      "compression_ratio": 1.310345,
+      "end": 18051.8,
+      "no_speech_prob": 0.0,
+      "start": 18045.3,
+      "text": "就是原來的價錢4000 戰友們5萬卡的人打了5折"
+    },
+    {
+      "avg_logprob": -0.215028,
+      "compression_ratio": 1.310345,
+      "end": 18053.9,
+      "no_speech_prob": 0.0,
+      "start": 18051.8,
+      "text": "他基本上賠錢或者不掙錢"
+    },
+    {
+      "avg_logprob": -0.236839,
+      "compression_ratio": 1.364372,
+      "end": 18058.5,
+      "no_speech_prob": 0.0,
+      "start": 18053.9,
+      "text": "但就這戰友也買不起 也太貴 是吧"
+    },
+    {
+      "avg_logprob": -0.236839,
+      "compression_ratio": 1.364372,
+      "end": 18061.0,
+      "no_speech_prob": 0.0,
+      "start": 18058.5,
+      "text": "就連你們這有幣的人也覺得太貴"
+    },
+    {
+      "avg_logprob": -0.236839,
+      "compression_ratio": 1.364372,
+      "end": 18063.7,
+      "no_speech_prob": 0.0,
+      "start": 18061.0,
+      "text": "怎麼辦 我說你把這個成本的定義呢"
+    },
+    {
+      "avg_logprob": -0.236839,
+      "compression_ratio": 1.364372,
+      "end": 18067.5,
+      "no_speech_prob": 0.0,
+      "start": 18063.7,
+      "text": "就是淨成本 就是廠家生產多少錢"
+    },
+    {
+      "avg_logprob": -0.236839,
+      "compression_ratio": 1.364372,
+      "end": 18070.1,
+      "no_speech_prob": 0.0,
+      "start": 18067.5,
+      "text": "直接成本 你給拿出來"
+    },
+    {
+      "avg_logprob": -0.236839,
+      "compression_ratio": 1.364372,
+      "end": 18073.0,
+      "no_speech_prob": 0.0,
+      "start": 18070.1,
+      "text": "那他當然就是覺得這是瘋狂 是吧"
+    },
+    {
+      "avg_logprob": -0.236839,
+      "compression_ratio": 1.364372,
+      "end": 18076.8,
+      "no_speech_prob": 0.0,
+      "start": 18073.0,
+      "text": "我說你這樣生產100塊錢 比如說99塊"
+    },
+    {
+      "avg_logprob": -0.236839,
+      "compression_ratio": 1.364372,
+      "end": 18080.1,
+      "no_speech_prob": 0.0,
+      "start": 18076.8,
+      "text": "你就是把這個運費加上 就這麼直接"
+    },
+    {
+      "avg_logprob": -0.304109,
+      "compression_ratio": 1.136364,
+      "end": 18083.1,
+      "no_speech_prob": 0.0,
+      "start": 18080.1,
+      "text": "只限G Club會員 不限社會"
+    },
+    {
+      "avg_logprob": -0.304109,
+      "compression_ratio": 1.136364,
+      "end": 18088.2,
+      "no_speech_prob": 0.0,
+      "start": 18084.7,
+      "text": "這樣的話給三周 讓戰友們來選擇"
+    },
+    {
+      "avg_logprob": -0.304109,
+      "compression_ratio": 1.136364,
+      "end": 18092.2,
+      "no_speech_prob": 0.0,
+      "start": 18089.2,
+      "text": "最後是他們同意了 很兇奮啊 同意了"
+    },
+    {
+      "avg_logprob": -0.304109,
+      "compression_ratio": 1.136364,
+      "end": 18093.7,
+      "no_speech_prob": 0.0,
+      "start": 18092.2,
+      "text": "這樣的話什麼概念呢"
+    },
+    {
+      "avg_logprob": -0.304109,
+      "compression_ratio": 1.136364,
+      "end": 18097.9,
+      "no_speech_prob": 0.0,
+      "start": 18093.7,
+      "text": "大概也就是說現在的 你就是原來的價格"
+    },
+    {
+      "avg_logprob": -0.315064,
+      "compression_ratio": 1.246575,
+      "end": 18101.4,
+      "no_speech_prob": 0.0,
+      "start": 18097.9,
+      "text": "你看啊 他公佈出來 今天或明天"
+    },
+    {
+      "avg_logprob": -0.315064,
+      "compression_ratio": 1.246575,
+      "end": 18102.8,
+      "no_speech_prob": 0.0,
+      "start": 18101.4,
+      "text": "我不知道有沒有公佈出來 基本上"
+    },
+    {
+      "avg_logprob": -0.315064,
+      "compression_ratio": 1.246575,
+      "end": 18105.0,
+      "no_speech_prob": 0.0,
+      "start": 18102.8,
+      "text": "上面比如說 4000的"
+    },
+    {
+      "avg_logprob": -0.315064,
+      "compression_ratio": 1.246575,
+      "end": 18109.1,
+      "no_speech_prob": 0.0,
+      "start": 18105.0,
+      "text": "他可能就變成了 1000 或者是 800 600 這個價格"
+    },
+    {
+      "avg_logprob": -0.315064,
+      "compression_ratio": 1.246575,
+      "end": 18111.5,
+      "no_speech_prob": 0.0,
+      "start": 18109.1,
+      "text": "他就是完全是廠家生產的價格"
+    },
+    {
+      "avg_logprob": -0.315064,
+      "compression_ratio": 1.246575,
+      "end": 18114.0,
+      "no_speech_prob": 0.0,
+      "start": 18111.5,
+      "text": "這不能造假 造假是欺騙啊"
+    },
+    {
+      "avg_logprob": -0.315064,
+      "compression_ratio": 1.246575,
+      "end": 18115.6,
+      "no_speech_prob": 0.0,
+      "start": 18114.0,
+      "text": "這絕對商業欺騙是不可以的"
+    },
+    {
+      "avg_logprob": -0.288048,
+      "compression_ratio": 1.369963,
+      "end": 18117.6,
+      "no_speech_prob": 0.0,
+      "start": 18115.6,
+      "text": "不可能中國人說馬雲"
+    },
+    {
+      "avg_logprob": -0.288048,
+      "compression_ratio": 1.369963,
+      "end": 18120.4,
+      "no_speech_prob": 0.0,
+      "start": 18117.6,
+      "text": "啊 我這是成本價 100塊錢 實際是10塊錢"
+    },
+    {
+      "avg_logprob": -0.288048,
+      "compression_ratio": 1.369963,
+      "end": 18122.7,
+      "no_speech_prob": 0.0,
+      "start": 18120.4,
+      "text": "不可能 我在這說他們做的時候"
+    },
+    {
+      "avg_logprob": -0.288048,
+      "compression_ratio": 1.369963,
+      "end": 18124.1,
+      "no_speech_prob": 0.0,
+      "start": 18122.7,
+      "text": "那絕對是形式詐騙"
+    },
+    {
+      "avg_logprob": -0.288048,
+      "compression_ratio": 1.369963,
+      "end": 18126.5,
+      "no_speech_prob": 0.0,
+      "start": 18124.1,
+      "text": "這在西方絕對是形式詐騙"
+    },
+    {
+      "avg_logprob": -0.288048,
+      "compression_ratio": 1.369963,
+      "end": 18129.2,
+      "no_speech_prob": 0.0,
+      "start": 18126.5,
+      "text": "走到天下海角都可以告你"
+    },
+    {
+      "avg_logprob": -0.288048,
+      "compression_ratio": 1.369963,
+      "end": 18130.7,
+      "no_speech_prob": 0.0,
+      "start": 18129.2,
+      "text": "是多少錢就是多少錢"
+    },
+    {
+      "avg_logprob": -0.288048,
+      "compression_ratio": 1.369963,
+      "end": 18134.2,
+      "no_speech_prob": 0.0,
+      "start": 18130.7,
+      "text": "拿出來僅供G Club會員買"
+    },
+    {
+      "avg_logprob": -0.288048,
+      "compression_ratio": 1.369963,
+      "end": 18135.9,
+      "no_speech_prob": 0.0,
+      "start": 18134.2,
+      "text": "G Club會員怎麼買呢"
+    },
+    {
+      "avg_logprob": -0.288048,
+      "compression_ratio": 1.369963,
+      "end": 18138.0,
+      "no_speech_prob": 0.0,
+      "start": 18135.9,
+      "text": "5萬的5折 4萬的4折"
+    },
+    {
+      "avg_logprob": -0.288048,
+      "compression_ratio": 1.369963,
+      "end": 18141.6,
+      "no_speech_prob": 0.0,
+      "start": 18138.2,
+      "text": "不可能是1萬的也5折 是不可能的啊"
+    },
+    {
+      "avg_logprob": -0.288048,
+      "compression_ratio": 1.369963,
+      "end": 18143.7,
+      "no_speech_prob": 0.0,
+      "start": 18141.6,
+      "text": "另外僅限三周"
+    },
+    {
+      "avg_logprob": -0.223699,
+      "compression_ratio": 1.33218,
+      "end": 18146.7,
+      "no_speech_prob": 0.0,
+      "start": 18143.7,
+      "text": "還有一個僅限G Club會員"
+    },
+    {
+      "avg_logprob": -0.223699,
+      "compression_ratio": 1.33218,
+      "end": 18148.9,
+      "no_speech_prob": 0.0,
+      "start": 18146.7,
+      "text": "你不是G Club會員是不可能的"
+    },
+    {
+      "avg_logprob": -0.223699,
+      "compression_ratio": 1.33218,
+      "end": 18151.0,
+      "no_speech_prob": 0.0,
+      "start": 18148.9,
+      "text": "這是G Club會員擁有的利益"
+    },
+    {
+      "avg_logprob": -0.223699,
+      "compression_ratio": 1.33218,
+      "end": 18153.1,
+      "no_speech_prob": 0.0,
+      "start": 18151.0,
+      "text": "還有一個 這些東西"
+    },
+    {
+      "avg_logprob": -0.223699,
+      "compression_ratio": 1.33218,
+      "end": 18155.5,
+      "no_speech_prob": 0.0,
+      "start": 18153.1,
+      "text": "所有的你來上網選擇完以後"
+    },
+    {
+      "avg_logprob": -0.223699,
+      "compression_ratio": 1.33218,
+      "end": 18157.5,
+      "no_speech_prob": 0.0,
+      "start": 18155.5,
+      "text": "現在HP好像這兩天有問題"
+    },
+    {
+      "avg_logprob": -0.223699,
+      "compression_ratio": 1.33218,
+      "end": 18159.9,
+      "no_speech_prob": 0.0,
+      "start": 18157.5,
+      "text": "因為現在場外交易達到了"
+    },
+    {
+      "avg_logprob": -0.223699,
+      "compression_ratio": 1.33218,
+      "end": 18162.6,
+      "no_speech_prob": 0.0,
+      "start": 18159.9,
+      "text": "這個實際交易的N倍"
+    },
+    {
+      "avg_logprob": -0.223699,
+      "compression_ratio": 1.33218,
+      "end": 18166.3,
+      "no_speech_prob": 0.0,
+      "start": 18162.6,
+      "text": "所以說HP現在就是技術問題的暫停"
+    },
+    {
+      "avg_logprob": -0.223699,
+      "compression_ratio": 1.33218,
+      "end": 18167.5,
+      "no_speech_prob": 0.0,
+      "start": 18166.3,
+      "text": "隨時可以恢復"
+    },
+    {
+      "avg_logprob": -0.223699,
+      "compression_ratio": 1.33218,
+      "end": 18170.3,
+      "no_speech_prob": 0.0,
+      "start": 18167.5,
+      "text": "但是買用HDO買的呢 沒問題"
+    },
+    {
+      "avg_logprob": -0.223699,
+      "compression_ratio": 1.33218,
+      "end": 18173.4,
+      "no_speech_prob": 0.0,
+      "start": 18170.3,
+      "text": "你給各農場或跟長島市場聯繫"
+    },
+    {
+      "avg_logprob": -0.42775,
+      "compression_ratio": 1.213333,
+      "end": 18176.4,
+      "no_speech_prob": 0.0,
+      "start": 18173.4,
+      "text": "專門有個團隊 給你記帳就可以"
+    },
+    {
+      "avg_logprob": -0.42775,
+      "compression_ratio": 1.213333,
+      "end": 18178.9,
+      "no_speech_prob": 0.0,
+      "start": 18176.4,
+      "text": "比如說2Pack"
+    },
+    {
+      "avg_logprob": -0.42775,
+      "compression_ratio": 1.213333,
+      "end": 18181.0,
+      "no_speech_prob": 0.0,
+      "start": 18178.9,
+      "text": "我現在HP不能用"
+    },
+    {
+      "avg_logprob": -0.42775,
+      "compression_ratio": 1.213333,
+      "end": 18183.7,
+      "no_speech_prob": 0.0,
+      "start": 18181.0,
+      "text": "我買10件T-鞋 一錢我錢記帳就可以了"
+    },
+    {
+      "avg_logprob": -0.42775,
+      "compression_ratio": 1.213333,
+      "end": 18186.3,
+      "no_speech_prob": 0.0,
+      "start": 18183.7,
+      "text": "你們都可以記帳 你們跟帥服"
+    },
+    {
+      "avg_logprob": -0.42775,
+      "compression_ratio": 1.213333,
+      "end": 18187.6,
+      "no_speech_prob": 0.0,
+      "start": 18186.3,
+      "text": "你們都可以記帳了"
+    },
+    {
+      "avg_logprob": -0.299132,
+      "compression_ratio": 1.421277,
+      "end": 18189.6,
+      "no_speech_prob": 0.0,
+      "start": 18187.6,
+      "text": "請給我問一個問題"
+    },
+    {
+      "avg_logprob": -0.299132,
+      "compression_ratio": 1.421277,
+      "end": 18190.6,
+      "no_speech_prob": 0.0,
+      "start": 18189.6,
+      "text": "請"
+    },
+    {
+      "avg_logprob": -0.299132,
+      "compression_ratio": 1.421277,
+      "end": 18191.6,
+      "no_speech_prob": 0.0,
+      "start": 18190.6,
+      "text": "請"
+    },
+    {
+      "avg_logprob": -0.299132,
+      "compression_ratio": 1.421277,
+      "end": 18193.3,
+      "no_speech_prob": 0.0,
+      "start": 18191.6,
+      "text": "就是因為我這人比較虧嘛"
+    },
+    {
+      "avg_logprob": -0.299132,
+      "compression_ratio": 1.421277,
+      "end": 18194.5,
+      "no_speech_prob": 0.0,
+      "start": 18193.3,
+      "text": "因為我喜歡自己去試"
+    },
+    {
+      "avg_logprob": -0.299132,
+      "compression_ratio": 1.421277,
+      "end": 18195.9,
+      "no_speech_prob": 0.0,
+      "start": 18194.5,
+      "text": "我可以直接去米蘭去嗎"
+    },
+    {
+      "avg_logprob": -0.299132,
+      "compression_ratio": 1.421277,
+      "end": 18198.8,
+      "no_speech_prob": 0.0,
+      "start": 18195.9,
+      "text": "因為試起來他們家人也想跟我們組團去那邊"
+    },
+    {
+      "avg_logprob": -0.299132,
+      "compression_ratio": 1.421277,
+      "end": 18201.6,
+      "no_speech_prob": 0.0,
+      "start": 18198.8,
+      "text": "完全沒有問題啊"
+    },
+    {
+      "avg_logprob": -0.299132,
+      "compression_ratio": 1.421277,
+      "end": 18204.1,
+      "no_speech_prob": 0.0,
+      "start": 18201.6,
+      "text": "紐約現場的找長島市場"
+    },
+    {
+      "avg_logprob": -0.299132,
+      "compression_ratio": 1.421277,
+      "end": 18206.9,
+      "no_speech_prob": 0.0,
+      "start": 18204.1,
+      "text": "米蘭現場的也安排現場"
+    },
+    {
+      "avg_logprob": -0.299132,
+      "compression_ratio": 1.421277,
+      "end": 18209.4,
+      "no_speech_prob": 0.0,
+      "start": 18206.9,
+      "text": "也安排現場啊 長島市場會給你們安排"
+    },
+    {
+      "avg_logprob": -0.299132,
+      "compression_ratio": 1.421277,
+      "end": 18210.9,
+      "no_speech_prob": 0.0,
+      "start": 18209.4,
+      "text": "可以到米蘭現場試吧"
+    },
+    {
+      "avg_logprob": -0.297734,
+      "compression_ratio": 1.291045,
+      "end": 18212.9,
+      "no_speech_prob": 0.0,
+      "start": 18210.9,
+      "text": "全部大家記住"
+    },
+    {
+      "avg_logprob": -0.297734,
+      "compression_ratio": 1.291045,
+      "end": 18214.5,
+      "no_speech_prob": 0.0,
+      "start": 18212.9,
+      "text": "都去軍隊"
+    },
+    {
+      "avg_logprob": -0.297734,
+      "compression_ratio": 1.291045,
+      "end": 18217.5,
+      "no_speech_prob": 0.0,
+      "start": 18214.5,
+      "text": "我可以告訴大家 你們幾乎不可能再有這樣的機會"
+    },
+    {
+      "avg_logprob": -0.297734,
+      "compression_ratio": 1.291045,
+      "end": 18222.5,
+      "no_speech_prob": 0.0,
+      "start": 18218.3,
+      "text": "我是今天承擔法律責任告訴你 是直接成本"
+    },
+    {
+      "avg_logprob": -0.297734,
+      "compression_ratio": 1.291045,
+      "end": 18228.9,
+      "no_speech_prob": 0.0,
+      "start": 18223.3,
+      "text": "也就是說原來的市價的18%到25%之間"
+    },
+    {
+      "avg_logprob": -0.297734,
+      "compression_ratio": 1.291045,
+      "end": 18230.4,
+      "no_speech_prob": 0.0,
+      "start": 18229.3,
+      "text": "不可能在什麼的"
+    },
+    {
+      "avg_logprob": -0.297734,
+      "compression_ratio": 1.291045,
+      "end": 18233.0,
+      "no_speech_prob": 0.0,
+      "start": 18230.4,
+      "text": "而且所有東西你們知道什麼生產的 你都可以看得出來"
+    },
+    {
+      "avg_logprob": -0.297734,
+      "compression_ratio": 1.291045,
+      "end": 18236.9,
+      "no_speech_prob": 0.0,
+      "start": 18233.0,
+      "text": "廠家都知道都是意大利的 沒有一件是中國產的"
+    },
+    {
+      "avg_logprob": -0.258238,
+      "compression_ratio": 1.227758,
+      "end": 18239.1,
+      "no_speech_prob": 0.0,
+      "start": 18236.9,
+      "text": "而且全世界最好的品牌的"
+    },
+    {
+      "avg_logprob": -0.258238,
+      "compression_ratio": 1.227758,
+      "end": 18241.9,
+      "no_speech_prob": 0.0,
+      "start": 18239.1,
+      "text": "這個時候有的貨呢 量很少"
+    },
+    {
+      "avg_logprob": -0.258238,
+      "compression_ratio": 1.227758,
+      "end": 18245.5,
+      "no_speech_prob": 0.0,
+      "start": 18241.9,
+      "text": "你看到一共兩萬多件 帽子就五千件"
+    },
+    {
+      "avg_logprob": -0.258238,
+      "compression_ratio": 1.227758,
+      "end": 18248.5,
+      "no_speech_prob": 0.0,
+      "start": 18245.5,
+      "text": "內褲也得有一兩千件 是吧"
+    },
+    {
+      "avg_logprob": -0.258238,
+      "compression_ratio": 1.227758,
+      "end": 18252.1,
+      "no_speech_prob": 0.0,
+      "start": 18248.5,
+      "text": "它加起來沒多少件 瞬間就可能就沒了"
+    },
+    {
+      "avg_logprob": -0.258238,
+      "compression_ratio": 1.227758,
+      "end": 18256.3,
+      "no_speech_prob": 0.0,
+      "start": 18252.1,
+      "text": "那麼這是給G Club會員的利益"
+    },
+    {
+      "avg_logprob": -0.258238,
+      "compression_ratio": 1.227758,
+      "end": 18261.3,
+      "no_speech_prob": 0.0,
+      "start": 18256.3,
+      "text": "更重要的是滿足那些戰友們 還沒有激發身的人"
+    },
+    {
+      "avg_logprob": -0.258238,
+      "compression_ratio": 1.227758,
+      "end": 18264.1,
+      "no_speech_prob": 0.0,
+      "start": 18261.3,
+      "text": "這是最重要的考慮 讓他們能買得很舒服"
+    },
+    {
+      "avg_logprob": -0.25371,
+      "compression_ratio": 1.319703,
+      "end": 18267.1,
+      "no_speech_prob": 0.0,
+      "start": 18264.1,
+      "text": "你要圖牌給你四千的 覺得他有給我買一件"
+    },
+    {
+      "avg_logprob": -0.25371,
+      "compression_ratio": 1.319703,
+      "end": 18270.1,
+      "no_speech_prob": 0.0,
+      "start": 18267.1,
+      "text": "但是你說800塊錢 600塊錢 700塊錢"
+    },
+    {
+      "avg_logprob": -0.25371,
+      "compression_ratio": 1.319703,
+      "end": 18274.1,
+      "no_speech_prob": 0.0,
+      "start": 18270.1,
+      "text": "在歐洲隨便買一件東西都是幾百塊錢 是吧"
+    },
+    {
+      "avg_logprob": -0.25371,
+      "compression_ratio": 1.319703,
+      "end": 18278.1,
+      "no_speech_prob": 0.0,
+      "start": 18274.1,
+      "text": "就買了 就這樣的東西 現在就是三週"
+    },
+    {
+      "avg_logprob": -0.25371,
+      "compression_ratio": 1.319703,
+      "end": 18282.1,
+      "no_speech_prob": 0.0,
+      "start": 18279.1,
+      "text": "更重要的是美國7月4號是美國的國慶節"
+    },
+    {
+      "avg_logprob": -0.25371,
+      "compression_ratio": 1.319703,
+      "end": 18284.7,
+      "no_speech_prob": 0.0,
+      "start": 18282.1,
+      "text": "從7月4號迎接美國國慶"
+    },
+    {
+      "avg_logprob": -0.25371,
+      "compression_ratio": 1.319703,
+      "end": 18289.3,
+      "no_speech_prob": 0.0,
+      "start": 18284.7,
+      "text": "也是咱喜避上市以來最大的利益輸送"
+    },
+    {
+      "avg_logprob": -0.25371,
+      "compression_ratio": 1.319703,
+      "end": 18292.3,
+      "no_speech_prob": 0.0,
+      "start": 18289.3,
+      "text": "和咱們G Club會員的利益"
+    },
+    {
+      "avg_logprob": -0.204582,
+      "compression_ratio": 1.432039,
+      "end": 18295.3,
+      "no_speech_prob": 0.0,
+      "start": 18292.3,
+      "text": "大家別忘了 你們買這個幾乎都是白給的"
+    },
+    {
+      "avg_logprob": -0.204582,
+      "compression_ratio": 1.432039,
+      "end": 18298.3,
+      "no_speech_prob": 0.0,
+      "start": 18295.3,
+      "text": "800美金就是幾個幣啊 是不是啊"
+    },
+    {
+      "avg_logprob": -0.204582,
+      "compression_ratio": 1.432039,
+      "end": 18300.3,
+      "no_speech_prob": 0.0,
+      "start": 18298.3,
+      "text": "20個幣 是不是啊"
+    },
+    {
+      "avg_logprob": -0.204582,
+      "compression_ratio": 1.432039,
+      "end": 18303.3,
+      "no_speech_prob": 0.0,
+      "start": 18300.3,
+      "text": "20個幣就是你花了兩塊美金 是不是啊"
+    },
+    {
+      "avg_logprob": -0.204582,
+      "compression_ratio": 1.432039,
+      "end": 18306.3,
+      "no_speech_prob": 0.0,
+      "start": 18303.3,
+      "text": "兩塊美金買的 缺心眼的嘛 這不是嘛"
+    },
+    {
+      "avg_logprob": -0.204582,
+      "compression_ratio": 1.432039,
+      "end": 18310.3,
+      "no_speech_prob": 0.0,
+      "start": 18306.3,
+      "text": "你別老講的我今天 我還買了衣服"
+    },
+    {
+      "avg_logprob": -0.204582,
+      "compression_ratio": 1.432039,
+      "end": 18312.3,
+      "no_speech_prob": 0.0,
+      "start": 18310.3,
+      "text": "我還想用用幣 那是不可能的 是吧"
+    },
+    {
+      "avg_logprob": -0.254219,
+      "compression_ratio": 1.409266,
+      "end": 18314.3,
+      "no_speech_prob": 0.0,
+      "start": 18312.3,
+      "text": "那不可能 就像我你們講過一個"
+    },
+    {
+      "avg_logprob": -0.254219,
+      "compression_ratio": 1.409266,
+      "end": 18316.3,
+      "no_speech_prob": 0.0,
+      "start": 18314.3,
+      "text": "當年這不對的我哥的不對的一個笑話"
+    },
+    {
+      "avg_logprob": -0.254219,
+      "compression_ratio": 1.409266,
+      "end": 18319.3,
+      "no_speech_prob": 0.0,
+      "start": 18316.3,
+      "text": "丟了50塊錢 最後哭哭哭了半天了"
+    },
+    {
+      "avg_logprob": -0.254219,
+      "compression_ratio": 1.409266,
+      "end": 18322.3,
+      "no_speech_prob": 0.0,
+      "start": 18319.3,
+      "text": "領導說我給你這50塊錢算了 還哭 還哭啥"
+    },
+    {
+      "avg_logprob": -0.254219,
+      "compression_ratio": 1.409266,
+      "end": 18326.3,
+      "no_speech_prob": 0.0,
+      "start": 18322.3,
+      "text": "說如果我那50塊不丟不就成100塊錢了嗎 是吧"
+    },
+    {
+      "avg_logprob": -0.254219,
+      "compression_ratio": 1.409266,
+      "end": 18329.3,
+      "no_speech_prob": 0.0,
+      "start": 18326.3,
+      "text": "那你不能這麼算上 我還想要激翻任"
+    },
+    {
+      "avg_logprob": -0.254219,
+      "compression_ratio": 1.409266,
+      "end": 18331.3,
+      "no_speech_prob": 0.0,
+      "start": 18329.3,
+      "text": "我還不想沒幣 那不可能的 是吧"
+    },
+    {
+      "avg_logprob": -0.254219,
+      "compression_ratio": 1.409266,
+      "end": 18334.3,
+      "no_speech_prob": 0.0,
+      "start": 18331.3,
+      "text": "那麽現在你擁有這樣的激翻任"
+    },
+    {
+      "avg_logprob": -0.180346,
+      "compression_ratio": 1.520134,
+      "end": 18338.3,
+      "no_speech_prob": 0.0,
+      "start": 18334.3,
+      "text": "這是咱們戰友絕大多 我看不了"
+    },
+    {
+      "avg_logprob": -0.180346,
+      "compression_ratio": 1.520134,
+      "end": 18340.3,
+      "no_speech_prob": 0.0,
+      "start": 18338.3,
+      "text": "你看今天這個直播 如果你們都穿激翻任"
+    },
+    {
+      "avg_logprob": -0.180346,
+      "compression_ratio": 1.520134,
+      "end": 18343.3,
+      "no_speech_prob": 0.0,
+      "start": 18340.3,
+      "text": "我心情又不一樣 是吧"
+    },
+    {
+      "avg_logprob": -0.180346,
+      "compression_ratio": 1.520134,
+      "end": 18345.3,
+      "no_speech_prob": 0.0,
+      "start": 18343.3,
+      "text": "你看 武漢韶韶是激翻任 我看明白了"
+    },
+    {
+      "avg_logprob": -0.180346,
+      "compression_ratio": 1.520134,
+      "end": 18348.3,
+      "no_speech_prob": 0.0,
+      "start": 18345.3,
+      "text": "但是你看到艾琳老師 你看又是帽子又是啥子"
+    },
+    {
+      "avg_logprob": -0.180346,
+      "compression_ratio": 1.520134,
+      "end": 18350.3,
+      "no_speech_prob": 0.0,
+      "start": 18348.3,
+      "text": "你看大根 你看 你們幾個就沒有"
+    },
+    {
+      "avg_logprob": -0.180346,
+      "compression_ratio": 1.520134,
+      "end": 18354.3,
+      "no_speech_prob": 0.0,
+      "start": 18350.3,
+      "text": "咱希望更多的人有 而且激翻任的核心目標"
+    },
+    {
+      "avg_logprob": -0.180346,
+      "compression_ratio": 1.520134,
+      "end": 18356.3,
+      "no_speech_prob": 0.0,
+      "start": 18354.3,
+      "text": "主要是為戰友服務的"
+    },
+    {
+      "avg_logprob": -0.180346,
+      "compression_ratio": 1.520134,
+      "end": 18359.3,
+      "no_speech_prob": 0.0,
+      "start": 18356.3,
+      "text": "你看我今天 我這你看了一件 這是個"
+    },
+    {
+      "avg_logprob": -0.180346,
+      "compression_ratio": 1.520134,
+      "end": 18362.3,
+      "no_speech_prob": 0.0,
+      "start": 18359.3,
+      "text": "昨天晚上拿著讓我今天穿的 這是讓我試穿的"
+    },
+    {
+      "avg_logprob": -0.241395,
+      "compression_ratio": 1.479705,
+      "end": 18364.3,
+      "no_speech_prob": 0.0,
+      "start": 18362.3,
+      "text": "我試穿的 我試了幾套 你看"
+    },
+    {
+      "avg_logprob": -0.241395,
+      "compression_ratio": 1.479705,
+      "end": 18366.3,
+      "no_speech_prob": 0.0,
+      "start": 18364.3,
+      "text": "剛才那天你看到花文一樣 那是新的"
+    },
+    {
+      "avg_logprob": -0.241395,
+      "compression_ratio": 1.479705,
+      "end": 18370.3,
+      "no_speech_prob": 0.0,
+      "start": 18366.3,
+      "text": "都在那個範圍內 都在那個範圍內的"
+    },
+    {
+      "avg_logprob": -0.241395,
+      "compression_ratio": 1.479705,
+      "end": 18372.7,
+      "no_speech_prob": 0.0,
+      "start": 18370.3,
+      "text": "然後我今天早上我也找激翻任"
+    },
+    {
+      "avg_logprob": -0.241395,
+      "compression_ratio": 1.479705,
+      "end": 18378.3,
+      "no_speech_prob": 0.0,
+      "start": 18372.7,
+      "text": "我說這國內有戰友 給我發信息七哥 我全包了"
+    },
+    {
+      "avg_logprob": -0.241395,
+      "compression_ratio": 1.479705,
+      "end": 18383.3,
+      "no_speech_prob": 0.0,
+      "start": 18378.3,
+      "text": "好幾個戰友 我全包了 不管多少"
+    },
+    {
+      "avg_logprob": -0.241395,
+      "compression_ratio": 1.479705,
+      "end": 18386.3,
+      "no_speech_prob": 0.0,
+      "start": 18383.3,
+      "text": "我說你全包了 那別的戰友呢"
+    },
+    {
+      "avg_logprob": -0.241395,
+      "compression_ratio": 1.479705,
+      "end": 18389.3,
+      "no_speech_prob": 0.0,
+      "start": 18386.3,
+      "text": "哎 我多出點錢 我說你這就不叫戰友了"
+    },
+    {
+      "avg_logprob": -0.241395,
+      "compression_ratio": 1.479705,
+      "end": 18391.3,
+      "no_speech_prob": 0.0,
+      "start": 18389.3,
+      "text": "這激翻是不是給你一個人量身兵糧的"
+    },
+    {
+      "avg_logprob": -0.172479,
+      "compression_ratio": 1.334559,
+      "end": 18393.3,
+      "no_speech_prob": 0.0,
+      "start": 18391.3,
+      "text": "現在這個戰友肯定也在看直播"
+    },
+    {
+      "avg_logprob": -0.172479,
+      "compression_ratio": 1.334559,
+      "end": 18398.3,
+      "no_speech_prob": 0.0,
+      "start": 18393.3,
+      "text": "我說你都包了 一共就是不到千八萬美元的事兒"
+    },
+    {
+      "avg_logprob": -0.172479,
+      "compression_ratio": 1.334559,
+      "end": 18400.3,
+      "no_speech_prob": 0.0,
+      "start": 18398.3,
+      "text": "你都包了 那其他戰友要那賣啥呀"
+    },
+    {
+      "avg_logprob": -0.172479,
+      "compression_ratio": 1.334559,
+      "end": 18405.3,
+      "no_speech_prob": 0.0,
+      "start": 18400.3,
+      "text": "永遠 G Club 不可以讓任何人獨享任何的利益"
+    },
+    {
+      "avg_logprob": -0.172479,
+      "compression_ratio": 1.334559,
+      "end": 18409.3,
+      "no_speech_prob": 0.0,
+      "start": 18405.3,
+      "text": "這屬於 G Club 全體會員的利益"
+    },
+    {
+      "avg_logprob": -0.172479,
+      "compression_ratio": 1.334559,
+      "end": 18413.3,
+      "no_speech_prob": 0.0,
+      "start": 18409.3,
+      "text": "我回答很多戰友 過發言我沒給你回啊"
+    },
+    {
+      "avg_logprob": -0.172479,
+      "compression_ratio": 1.334559,
+      "end": 18417.3,
+      "no_speech_prob": 0.0,
+      "start": 18413.3,
+      "text": "包括新加坡的 包括日本的戰友說你要全包啊 那是不可能的"
+    },
+    {
+      "avg_logprob": -0.27358,
+      "compression_ratio": 1.127778,
+      "end": 18421.3,
+      "no_speech_prob": 0.0,
+      "start": 18417.3,
+      "text": "這必須是戰友 僅限 G Club 會員"
+    },
+    {
+      "avg_logprob": -0.27358,
+      "compression_ratio": 1.127778,
+      "end": 18424.3,
+      "no_speech_prob": 0.0,
+      "start": 18421.3,
+      "text": "你都包你 拜個明天休 我全是老 我全贏"
+    },
+    {
+      "avg_logprob": -0.27358,
+      "compression_ratio": 1.127778,
+      "end": 18426.3,
+      "no_speech_prob": 0.0,
+      "start": 18424.3,
+      "text": "那不行 你不能這樣 你得給戰友留個機會啊"
+    },
+    {
+      "avg_logprob": -0.27358,
+      "compression_ratio": 1.127778,
+      "end": 18432.3,
+      "no_speech_prob": 0.0,
+      "start": 18426.3,
+      "text": "這關於 贏美國國慶 G 翻身 G Club 利益大放送"
+    },
+    {
+      "avg_logprob": -0.185266,
+      "compression_ratio": 1.325123,
+      "end": 18436.3,
+      "no_speech_prob": 0.0,
+      "start": 18432.3,
+      "text": "不叫折扣 我最討厭的詞 這可不是折扣"
+    },
+    {
+      "avg_logprob": -0.185266,
+      "compression_ratio": 1.325123,
+      "end": 18439.3,
+      "no_speech_prob": 0.0,
+      "start": 18436.3,
+      "text": "還有我們那一杯小酌在群裡發啥"
+    },
+    {
+      "avg_logprob": -0.185266,
+      "compression_ratio": 1.325123,
+      "end": 18444.3,
+      "no_speech_prob": 0.0,
+      "start": 18439.3,
+      "text": "叫什麼 吐血大甩賣 誰給你甩賣呢 一共多少件啊"
+    },
+    {
+      "avg_logprob": -0.185266,
+      "compression_ratio": 1.325123,
+      "end": 18449.3,
+      "no_speech_prob": 0.0,
+      "start": 18444.3,
+      "text": "誰給誰吐血呀 你吐血你拿兩美金你給我吐一次我看看"
+    },
+    {
+      "avg_logprob": -0.185266,
+      "compression_ratio": 1.325123,
+      "end": 18453.3,
+      "no_speech_prob": 0.0,
+      "start": 18449.3,
+      "text": "你給我吐兩次 我天天吐 是不是啊"
+    },
+    {
+      "avg_logprob": -0.137884,
+      "compression_ratio": 1.355856,
+      "end": 18456.3,
+      "no_speech_prob": 0.0,
+      "start": 18453.3,
+      "text": "你拿兩美金買一個 買一個兩千美金的東西 我吐"
+    },
+    {
+      "avg_logprob": -0.137884,
+      "compression_ratio": 1.355856,
+      "end": 18460.3,
+      "no_speech_prob": 0.0,
+      "start": 18456.3,
+      "text": "我吐吐吐 天天吐 對吧"
+    },
+    {
+      "avg_logprob": -0.137884,
+      "compression_ratio": 1.355856,
+      "end": 18464.3,
+      "no_speech_prob": 0.0,
+      "start": 18460.3,
+      "text": "這是利益 這是僅限 G Club 會員的利益"
+    },
+    {
+      "avg_logprob": -0.137884,
+      "compression_ratio": 1.355856,
+      "end": 18469.3,
+      "no_speech_prob": 0.0,
+      "start": 18464.3,
+      "text": "就像一個咱們戰友在日本去買了個鳳凰的車"
+    },
+    {
+      "avg_logprob": -0.137884,
+      "compression_ratio": 1.355856,
+      "end": 18473.3,
+      "no_speech_prob": 0.0,
+      "start": 18469.3,
+      "text": "他給我買了個二手鳳凰啊 我來日本多年"
+    },
+    {
+      "avg_logprob": -0.137884,
+      "compression_ratio": 1.355856,
+      "end": 18478.3,
+      "no_speech_prob": 0.0,
+      "start": 18473.3,
+      "text": "就喜歡日本的鳳凰車 總統皇帝車 天皇車"
+    },
+    {
+      "avg_logprob": -0.188182,
+      "compression_ratio": 1.370079,
+      "end": 18482.3,
+      "no_speech_prob": 0.0,
+      "start": 18478.3,
+      "text": "他說 我買不起啊 我這回買二手鳳凰的老款呢 就特別好"
+    },
+    {
+      "avg_logprob": -0.188182,
+      "compression_ratio": 1.370079,
+      "end": 18484.3,
+      "no_speech_prob": 0.0,
+      "start": 18482.3,
+      "text": "更值錢 比現在還貴"
+    },
+    {
+      "avg_logprob": -0.188182,
+      "compression_ratio": 1.370079,
+      "end": 18487.3,
+      "no_speech_prob": 0.0,
+      "start": 18484.3,
+      "text": "他說 我加一騎我花了四千個幣"
+    },
+    {
+      "avg_logprob": -0.188182,
+      "compression_ratio": 1.370079,
+      "end": 18492.3,
+      "no_speech_prob": 0.0,
+      "start": 18487.3,
+      "text": "而且這個日本人就要幣 不要任何什麼日元也不要什麼"
+    },
+    {
+      "avg_logprob": -0.188182,
+      "compression_ratio": 1.370079,
+      "end": 18495.3,
+      "no_speech_prob": 0.0,
+      "start": 18492.3,
+      "text": "我就要你幣 四千個幣給你"
+    },
+    {
+      "avg_logprob": -0.188182,
+      "compression_ratio": 1.370079,
+      "end": 18501.3,
+      "no_speech_prob": 0.0,
+      "start": 18497.3,
+      "text": "開上日本的天皇的鳳凰車 鳥大了"
+    },
+    {
+      "avg_logprob": -0.188182,
+      "compression_ratio": 1.370079,
+      "end": 18505.3,
+      "no_speech_prob": 0.0,
+      "start": 18501.3,
+      "text": "給我發 這個戰友現在肯定在視頻"
+    },
+    {
+      "avg_logprob": -0.188182,
+      "compression_ratio": 1.370079,
+      "end": 18506.3,
+      "no_speech_prob": 0.0,
+      "start": 18505.3,
+      "text": "我問了他一句話"
+    },
+    {
+      "avg_logprob": -0.166021,
+      "compression_ratio": 1.3125,
+      "end": 18509.3,
+      "no_speech_prob": 0.0,
+      "start": 18506.3,
+      "text": "我說 你花了四千個幣 你花多少錢"
+    },
+    {
+      "avg_logprob": -0.166021,
+      "compression_ratio": 1.3125,
+      "end": 18512.3,
+      "no_speech_prob": 0.0,
+      "start": 18509.3,
+      "text": "他說七個 我做義工 我得了兩萬個幣"
+    },
+    {
+      "avg_logprob": -0.166021,
+      "compression_ratio": 1.3125,
+      "end": 18519.3,
+      "no_speech_prob": 0.0,
+      "start": 18514.3,
+      "text": "那你想想的 買幾個鳳凰車 對吧"
+    },
+    {
+      "avg_logprob": -0.166021,
+      "compression_ratio": 1.3125,
+      "end": 18523.3,
+      "no_speech_prob": 0.0,
+      "start": 18519.3,
+      "text": "他說我現在每周去吃一個 帶著家人去吃那個"
+    },
+    {
+      "avg_logprob": -0.166021,
+      "compression_ratio": 1.3125,
+      "end": 18528.3,
+      "no_speech_prob": 0.0,
+      "start": 18523.3,
+      "text": "我最愛吃的 過去吃不起的壽司 所謂百年壽司店"
+    },
+    {
+      "avg_logprob": -0.151859,
+      "compression_ratio": 1.02381,
+      "end": 18536.3,
+      "no_speech_prob": 0.0,
+      "start": 18528.3,
+      "text": "這就是真正的新中國聯邦給戰友帶來紮紮實實的利益"
+    },
+    {
+      "avg_logprob": -0.151859,
+      "compression_ratio": 1.02381,
+      "end": 18541.3,
+      "no_speech_prob": 0.0,
+      "start": 18536.3,
+      "text": "加不了 是吧 這是最關鍵的 韓國的好幾個戰友"
+    },
+    {
+      "avg_logprob": -0.300058,
+      "compression_ratio": 1.233918,
+      "end": 18546.3,
+      "no_speech_prob": 0.0,
+      "start": 18541.3,
+      "text": "你現在卡爾斯麥斯 曹子欣 你不能老幹 你得跟那個朴司令工作"
+    },
+    {
+      "avg_logprob": -0.300058,
+      "compression_ratio": 1.233918,
+      "end": 18551.3,
+      "no_speech_prob": 0.0,
+      "start": 18547.3,
+      "text": "卡爾斯麥斯 還有什麼溫暖姐姐 這些人必須進監獄的"
+    },
+    {
+      "avg_logprob": -0.300058,
+      "compression_ratio": 1.233918,
+      "end": 18555.3,
+      "no_speech_prob": 0.0,
+      "start": 18551.3,
+      "text": "像個九指一 他必須進監獄 陸大腦袋還有石耀岩"
+    },
+    {
+      "avg_logprob": -0.141709,
+      "compression_ratio": 1.455253,
+      "end": 18560.3,
+      "no_speech_prob": 0.0,
+      "start": 18555.3,
+      "text": "他騙你不能老在這塊上直播 你得跟朴司令工作"
+    },
+    {
+      "avg_logprob": -0.141709,
+      "compression_ratio": 1.455253,
+      "end": 18565.3,
+      "no_speech_prob": 0.0,
+      "start": 18560.3,
+      "text": "你得走向前線去 他騙了戰友的錢 他必須吐出來"
+    },
+    {
+      "avg_logprob": -0.141709,
+      "compression_ratio": 1.455253,
+      "end": 18569.3,
+      "no_speech_prob": 0.0,
+      "start": 18566.3,
+      "text": "那有韓國的戰友也是買了車 是吧"
+    },
+    {
+      "avg_logprob": -0.141709,
+      "compression_ratio": 1.455253,
+      "end": 18573.3,
+      "no_speech_prob": 0.0,
+      "start": 18569.3,
+      "text": "這給我發信息 我說你能不能去幫幫朴司令"
+    },
+    {
+      "avg_logprob": -0.141709,
+      "compression_ratio": 1.455253,
+      "end": 18578.3,
+      "no_speech_prob": 0.0,
+      "start": 18573.3,
+      "text": "把戰友的利益給阻回來 你們韓國的任何人"
+    },
+    {
+      "avg_logprob": -0.141709,
+      "compression_ratio": 1.455253,
+      "end": 18581.3,
+      "no_speech_prob": 0.0,
+      "start": 18578.3,
+      "text": "只要不幫助戰友把錢追回來 你們都不是好戰友"
+    },
+    {
+      "avg_logprob": -0.141709,
+      "compression_ratio": 1.455253,
+      "end": 18585.3,
+      "no_speech_prob": 0.0,
+      "start": 18581.3,
+      "text": "任何人騙了戰友 他走遍天氣"
+    },
+    {
+      "avg_logprob": -0.19472,
+      "compression_ratio": 1.35461,
+      "end": 18589.3,
+      "no_speech_prob": 0.0,
+      "start": 18585.3,
+      "text": "天涯海角 365年都不拉倒 朋友說365天"
+    },
+    {
+      "avg_logprob": -0.19472,
+      "compression_ratio": 1.35461,
+      "end": 18592.3,
+      "no_speech_prob": 0.0,
+      "start": 18589.3,
+      "text": "不信就試試 是不是"
+    },
+    {
+      "avg_logprob": -0.19472,
+      "compression_ratio": 1.35461,
+      "end": 18595.3,
+      "no_speech_prob": 0.0,
+      "start": 18592.3,
+      "text": "那他騙了錢 他必須進監獄 我都沒有出手"
+    },
+    {
+      "avg_logprob": -0.19472,
+      "compression_ratio": 1.35461,
+      "end": 18598.3,
+      "no_speech_prob": 0.0,
+      "start": 18595.3,
+      "text": "如果你們告訴我韓國人說 七哥我們做不了了 你出手"
+    },
+    {
+      "avg_logprob": -0.19472,
+      "compression_ratio": 1.35461,
+      "end": 18601.3,
+      "no_speech_prob": 0.0,
+      "start": 18598.3,
+      "text": "我如果三個月不把人送進去 我郭文貴消失"
+    },
+    {
+      "avg_logprob": -0.19472,
+      "compression_ratio": 1.35461,
+      "end": 18605.3,
+      "no_speech_prob": 0.0,
+      "start": 18602.3,
+      "text": "七哥在韓國的力量你不用懷疑吧"
+    },
+    {
+      "avg_logprob": -0.19472,
+      "compression_ratio": 1.35461,
+      "end": 18609.3,
+      "no_speech_prob": 0.0,
+      "start": 18606.3,
+      "text": "他動不著運用不著我吧 對吧"
+    },
+    {
+      "avg_logprob": -0.19472,
+      "compression_ratio": 1.35461,
+      "end": 18612.3,
+      "no_speech_prob": 0.0,
+      "start": 18609.3,
+      "text": "曹子欣你必須出手 你和你七子和白日本人"
+    },
+    {
+      "avg_logprob": -0.20285,
+      "compression_ratio": 1.169811,
+      "end": 18615.3,
+      "no_speech_prob": 0.0,
+      "start": 18612.3,
+      "text": "你不能老上直播 你必須得跟朴司令一起工作"
+    },
+    {
+      "avg_logprob": -0.20285,
+      "compression_ratio": 1.169811,
+      "end": 18619.3,
+      "no_speech_prob": 0.0,
+      "start": 18615.3,
+      "text": "韓國的戰友 你們不把CrossMatch什麼溫暖姐姐"
+    },
+    {
+      "avg_logprob": -0.20285,
+      "compression_ratio": 1.169811,
+      "end": 18622.3,
+      "no_speech_prob": 0.0,
+      "start": 18619.3,
+      "text": "這些送進監獄去 下一步的躺平壁沒有你們的"
+    },
+    {
+      "avg_logprob": -0.20285,
+      "compression_ratio": 1.169811,
+      "end": 18628.3,
+      "no_speech_prob": 0.0,
+      "start": 18622.3,
+      "text": "一個都不會有你們的 你們有最大的機會接下來就是躺平壁"
+    },
+    {
+      "avg_logprob": -0.28815,
+      "compression_ratio": 1.259259,
+      "end": 18632.3,
+      "no_speech_prob": 0.0,
+      "start": 18628.3,
+      "text": "所有義工 所有使用蓋特 所有人就是躺平壁"
+    },
+    {
+      "avg_logprob": -0.28815,
+      "compression_ratio": 1.259259,
+      "end": 18635.3,
+      "no_speech_prob": 0.0,
+      "start": 18632.3,
+      "text": "一定要記住 不要錯過這個機會"
+    },
+    {
+      "avg_logprob": -0.28815,
+      "compression_ratio": 1.259259,
+      "end": 18641.3,
+      "no_speech_prob": 0.0,
+      "start": 18636.3,
+      "text": "就像這個明天這個大放送 這個大放送一樣"
+    },
+    {
+      "avg_logprob": -0.28815,
+      "compression_ratio": 1.259259,
+      "end": 18647.3,
+      "no_speech_prob": 0.0,
+      "start": 18641.3,
+      "text": "僅限G Club會員 不是說天下人 就你那兩個人一下不就沒了嗎 是不是"
+    },
+    {
+      "avg_logprob": -0.173533,
+      "compression_ratio": 1.254032,
+      "end": 18653.3,
+      "no_speech_prob": 0.0,
+      "start": 18647.3,
+      "text": "就那些明星的 人家明星就發一個推就行 那都是幾百萬幾千萬粉絲"
+    },
+    {
+      "avg_logprob": -0.173533,
+      "compression_ratio": 1.254032,
+      "end": 18657.3,
+      "no_speech_prob": 0.0,
+      "start": 18653.3,
+      "text": "發一個推 用我名字去買去 這只一分鐘就沒了"
+    },
+    {
+      "avg_logprob": -0.173533,
+      "compression_ratio": 1.254032,
+      "end": 18660.3,
+      "no_speech_prob": 0.0,
+      "start": 18658.3,
+      "text": "是吧 我們不能這麼做"
+    },
+    {
+      "avg_logprob": -0.173533,
+      "compression_ratio": 1.254032,
+      "end": 18664.3,
+      "no_speech_prob": 0.0,
+      "start": 18660.3,
+      "text": "就是G Club會員的利益 不要忘了"
+    },
+    {
+      "avg_logprob": -0.173533,
+      "compression_ratio": 1.254032,
+      "end": 18667.3,
+      "no_speech_prob": 0.0,
+      "start": 18664.3,
+      "text": "這是一個積翻身的 還有啥要我忘了的"
+    },
+    {
+      "avg_logprob": -0.173533,
+      "compression_ratio": 1.254032,
+      "end": 18671.3,
+      "no_speech_prob": 0.0,
+      "start": 18667.3,
+      "text": "小福利還有墨鏡 大哥你看提醒我一下"
+    },
+    {
+      "avg_logprob": -0.222882,
+      "compression_ratio": 1.227074,
+      "end": 18678.3,
+      "no_speech_prob": 0.0,
+      "start": 18671.3,
+      "text": "我只是覺得絕對堅持不了三週 看能不能堅持三天都是個問號"
+    },
+    {
+      "avg_logprob": -0.222882,
+      "compression_ratio": 1.227074,
+      "end": 18683.3,
+      "no_speech_prob": 0.0,
+      "start": 18678.3,
+      "text": "所以說特別沒有買的 就是還沒有G Fashion的"
+    },
+    {
+      "avg_logprob": -0.222882,
+      "compression_ratio": 1.227074,
+      "end": 18688.3,
+      "no_speech_prob": 0.0,
+      "start": 18683.3,
+      "text": "明天第一時間趕快下手 我個人覺得建議"
+    },
+    {
+      "avg_logprob": -0.222882,
+      "compression_ratio": 1.227074,
+      "end": 18692.3,
+      "no_speech_prob": 0.0,
+      "start": 18688.3,
+      "text": "所以說這是我說的 另一塊的話"
+    },
+    {
+      "avg_logprob": -0.222882,
+      "compression_ratio": 1.227074,
+      "end": 18697.3,
+      "no_speech_prob": 0.0,
+      "start": 18692.3,
+      "text": "覺得剛剛您說的那個例子 只要洗壁賣車的"
+    },
+    {
+      "avg_logprob": -0.295659,
+      "compression_ratio": 1.307692,
+      "end": 18703.3,
+      "no_speech_prob": 0.0,
+      "start": 18697.3,
+      "text": "總感覺這個賣的金 盯著洗壁過來的"
+    },
+    {
+      "avg_logprob": -0.295659,
+      "compression_ratio": 1.307692,
+      "end": 18704.3,
+      "no_speech_prob": 0.0,
+      "start": 18703.3,
+      "text": "然後最後我想"
+    },
+    {
+      "avg_logprob": -0.295659,
+      "compression_ratio": 1.307692,
+      "end": 18707.3,
+      "no_speech_prob": 0.0,
+      "start": 18704.3,
+      "text": "只要壁不要現金 聰明"
+    },
+    {
+      "avg_logprob": -0.295659,
+      "compression_ratio": 1.307692,
+      "end": 18711.3,
+      "no_speech_prob": 0.0,
+      "start": 18707.3,
+      "text": "就是啊 典型的買都沒有賣的金 給我的感覺"
+    },
+    {
+      "avg_logprob": -0.295659,
+      "compression_ratio": 1.307692,
+      "end": 18713.3,
+      "no_speech_prob": 0.0,
+      "start": 18711.3,
+      "text": "這個盯著洗壁過來的"
+    },
+    {
+      "avg_logprob": -0.295659,
+      "compression_ratio": 1.307692,
+      "end": 18718.3,
+      "no_speech_prob": 0.0,
+      "start": 18713.3,
+      "text": "最後我還想說一句 感謝那位趙澤弟"
+    },
+    {
+      "avg_logprob": -0.173283,
+      "compression_ratio": 1.3,
+      "end": 18722.3,
+      "no_speech_prob": 0.0,
+      "start": 18718.3,
+      "text": "就是您剛剛說的那一位 就是擁有萬寶路的"
+    },
+    {
+      "avg_logprob": -0.173283,
+      "compression_ratio": 1.3,
+      "end": 18727.3,
+      "no_speech_prob": 0.0,
+      "start": 18722.3,
+      "text": "然後而且建議七哥以及我們戒煙"
+    },
+    {
+      "avg_logprob": -0.173283,
+      "compression_ratio": 1.3,
+      "end": 18732.3,
+      "no_speech_prob": 0.0,
+      "start": 18727.3,
+      "text": "就是不管怎麼樣 為這次戒煙行動說了兩句話的那位趙澤弟"
+    },
+    {
+      "avg_logprob": -0.173283,
+      "compression_ratio": 1.3,
+      "end": 18736.3,
+      "no_speech_prob": 0.0,
+      "start": 18732.3,
+      "text": "我覺得因為他擁有萬寶路還讓人戒煙"
+    },
+    {
+      "avg_logprob": -0.173283,
+      "compression_ratio": 1.3,
+      "end": 18741.3,
+      "no_speech_prob": 0.0,
+      "start": 18736.3,
+      "text": "能做到這一點還是我覺得 我們應該感謝一下 謝謝"
+    },
+    {
+      "avg_logprob": -0.160803,
+      "compression_ratio": 1.292683,
+      "end": 18746.3,
+      "no_speech_prob": 0.0,
+      "start": 18741.3,
+      "text": "我說到這 我大根你還記得七哥直播你記得最清楚的"
+    },
+    {
+      "avg_logprob": -0.160803,
+      "compression_ratio": 1.292683,
+      "end": 18751.3,
+      "no_speech_prob": 0.0,
+      "start": 18746.3,
+      "text": "你記得曾經我直播說到德國參加萬寶路的煙場"
+    },
+    {
+      "avg_logprob": -0.160803,
+      "compression_ratio": 1.292683,
+      "end": 18757.3,
+      "no_speech_prob": 0.0,
+      "start": 18751.3,
+      "text": "德國的地下室 幾百米深 上面全是綠地"
+    },
+    {
+      "avg_logprob": -0.160803,
+      "compression_ratio": 1.292683,
+      "end": 18761.3,
+      "no_speech_prob": 0.0,
+      "start": 18757.3,
+      "text": "全是綠地 花園 下面是煙場"
+    },
+    {
+      "avg_logprob": -0.261879,
+      "compression_ratio": 1.341912,
+      "end": 18765.3,
+      "no_speech_prob": 0.0,
+      "start": 18761.3,
+      "text": "哇塞 那簡直那無煙工業 那是北京市政府我要去考察去"
+    },
+    {
+      "avg_logprob": -0.261879,
+      "compression_ratio": 1.341912,
+      "end": 18769.3,
+      "no_speech_prob": 0.0,
+      "start": 18765.3,
+      "text": "您都玩那個了 就是這位姐妹兒的"
+    },
+    {
+      "avg_logprob": -0.261879,
+      "compression_ratio": 1.341912,
+      "end": 18774.3,
+      "no_speech_prob": 0.0,
+      "start": 18769.3,
+      "text": "他們知道這煙都害人的 而且中國是世界最大的"
+    },
+    {
+      "avg_logprob": -0.261879,
+      "compression_ratio": 1.341912,
+      "end": 18780.3,
+      "no_speech_prob": 0.0,
+      "start": 18774.3,
+      "text": "就是這種所謂的捲煙的市場 而且是世界上最貴的"
+    },
+    {
+      "avg_logprob": -0.261879,
+      "compression_ratio": 1.341912,
+      "end": 18784.3,
+      "no_speech_prob": 0.0,
+      "start": 18780.3,
+      "text": "我真的很感謝他 所以說你看到那個艾林老師"
+    },
+    {
+      "avg_logprob": -0.261879,
+      "compression_ratio": 1.341912,
+      "end": 18789.3,
+      "no_speech_prob": 0.0,
+      "start": 18784.3,
+      "text": "她拿了煙 嗒嗒嗒抽害老班長 那要命的還有你大根兒"
+    },
+    {
+      "avg_logprob": -0.230399,
+      "compression_ratio": 1.533333,
+      "end": 18793.3,
+      "no_speech_prob": 0.0,
+      "start": 18789.3,
+      "text": "人家都說說 這說明這裡邊有很多我們不知道的禍害"
+    },
+    {
+      "avg_logprob": -0.230399,
+      "compression_ratio": 1.533333,
+      "end": 18798.3,
+      "no_speech_prob": 0.0,
+      "start": 18793.3,
+      "text": "現在這個人的這個生育的問題 很多跟煙是有關係的 和環境污染"
+    },
+    {
+      "avg_logprob": -0.230399,
+      "compression_ratio": 1.533333,
+      "end": 18802.3,
+      "no_speech_prob": 0.0,
+      "start": 18798.3,
+      "text": "很多是跟這個有關係 包括這個"
+    },
+    {
+      "avg_logprob": -0.230399,
+      "compression_ratio": 1.533333,
+      "end": 18808.3,
+      "no_speech_prob": 0.0,
+      "start": 18802.3,
+      "text": "很多人就生出了孩子 有天生的這種奇形啊 怪胎啊"
+    },
+    {
+      "avg_logprob": -0.230399,
+      "compression_ratio": 1.533333,
+      "end": 18812.3,
+      "no_speech_prob": 0.0,
+      "start": 18808.3,
+      "text": "跟這都有關係的 只是咱沒法說 人家沒法問"
+    },
+    {
+      "avg_logprob": -0.230399,
+      "compression_ratio": 1.533333,
+      "end": 18814.3,
+      "no_speech_prob": 0.0,
+      "start": 18812.3,
+      "text": "就你大根兒你肯定問 是吧"
+    },
+    {
+      "avg_logprob": -0.230399,
+      "compression_ratio": 1.533333,
+      "end": 18817.3,
+      "no_speech_prob": 0.0,
+      "start": 18814.3,
+      "text": "就是跟人家大叫就你不能這麼問 你問人家對人家就不尊重了"
+    },
+    {
+      "avg_logprob": -0.230399,
+      "compression_ratio": 1.533333,
+      "end": 18819.3,
+      "no_speech_prob": 0.0,
+      "start": 18817.3,
+      "text": "不能問 啊"
+    },
+    {
+      "avg_logprob": -0.235872,
+      "compression_ratio": 1.182243,
+      "end": 18823.3,
+      "no_speech_prob": 0.0,
+      "start": 18819.3,
+      "text": "所以說這是真的 你說的很對 很感謝他"
+    },
+    {
+      "avg_logprob": -0.235872,
+      "compression_ratio": 1.182243,
+      "end": 18825.3,
+      "no_speech_prob": 0.0,
+      "start": 18823.3,
+      "text": "七哥 我可以最後問一個問題嗎"
+    },
+    {
+      "avg_logprob": -0.235872,
+      "compression_ratio": 1.182243,
+      "end": 18826.3,
+      "no_speech_prob": 0.0,
+      "start": 18825.3,
+      "text": "行"
+    },
+    {
+      "avg_logprob": -0.235872,
+      "compression_ratio": 1.182243,
+      "end": 18830.3,
+      "no_speech_prob": 0.0,
+      "start": 18826.3,
+      "text": "因為我很喜歡F1 因為我昨天剛好在GK卡收到F1"
+    },
+    {
+      "avg_logprob": -0.235872,
+      "compression_ratio": 1.182243,
+      "end": 18836.3,
+      "no_speech_prob": 0.0,
+      "start": 18830.3,
+      "text": "就是明年2023年在奔駛主持車對我看到有一個那種"
+    },
+    {
+      "avg_logprob": -0.235872,
+      "compression_ratio": 1.182243,
+      "end": 18840.3,
+      "no_speech_prob": 0.0,
+      "start": 18836.3,
+      "text": "GK卡的那種促銷 就是跟F1合作"
+    },
+    {
+      "avg_logprob": -0.158768,
+      "compression_ratio": 1.276498,
+      "end": 18843.3,
+      "no_speech_prob": 0.0,
+      "start": 18840.3,
+      "text": "你能幫我們說一下這意義位置什麼嗎"
+    },
+    {
+      "avg_logprob": -0.158768,
+      "compression_ratio": 1.276498,
+      "end": 18847.3,
+      "no_speech_prob": 0.0,
+      "start": 18843.3,
+      "text": "因為你之前就在摩納哥說過F1跟GK卡"
+    },
+    {
+      "avg_logprob": -0.158768,
+      "compression_ratio": 1.276498,
+      "end": 18851.3,
+      "no_speech_prob": 0.0,
+      "start": 18847.3,
+      "text": "因為我非常非常喜歡F1 然後我的夢想"
+    },
+    {
+      "avg_logprob": -0.158768,
+      "compression_ratio": 1.276498,
+      "end": 18854.3,
+      "no_speech_prob": 0.0,
+      "start": 18851.3,
+      "text": "因為我有很多興趣愛好 七哥說我會之後會怎麼樣怎麼樣"
+    },
+    {
+      "avg_logprob": -0.158768,
+      "compression_ratio": 1.276498,
+      "end": 18857.3,
+      "no_speech_prob": 0.0,
+      "start": 18854.3,
+      "text": "其實我想跟你說 我有信仰 我有自己的興趣愛好"
+    },
+    {
+      "avg_logprob": -0.358802,
+      "compression_ratio": 1.059259,
+      "end": 18862.3,
+      "no_speech_prob": 0.0,
+      "start": 18857.3,
+      "text": "我很想去F1 就跟車手零距離接觸在那裡面"
+    },
+    {
+      "avg_logprob": -0.358802,
+      "compression_ratio": 1.059259,
+      "end": 18867.3,
+      "no_speech_prob": 0.0,
+      "start": 18862.3,
+      "text": "這麼等 我想知道一下七哥說一下這個意味的什麼"
+    },
+    {
+      "avg_logprob": -0.358802,
+      "compression_ratio": 1.059259,
+      "end": 18869.3,
+      "no_speech_prob": 0.0,
+      "start": 18868.3,
+      "text": "G卡卡的意味的什麼"
+    },
+    {
+      "avg_logprob": -0.153621,
+      "compression_ratio": 1.276423,
+      "end": 18874.3,
+      "no_speech_prob": 0.0,
+      "start": 18869.3,
+      "text": "本來呀 今年的F1是給GK會員要發很多票要去的"
+    },
+    {
+      "avg_logprob": -0.153621,
+      "compression_ratio": 1.276423,
+      "end": 18876.3,
+      "no_speech_prob": 0.0,
+      "start": 18874.3,
+      "text": "然後我強烈拒絕"
+    },
+    {
+      "avg_logprob": -0.153621,
+      "compression_ratio": 1.276423,
+      "end": 18879.3,
+      "no_speech_prob": 0.0,
+      "start": 18876.3,
+      "text": "原因最根本的問題就是"
+    },
+    {
+      "avg_logprob": -0.153621,
+      "compression_ratio": 1.276423,
+      "end": 18882.3,
+      "no_speech_prob": 0.0,
+      "start": 18879.3,
+      "text": "你知道F1那塊幾乎這些人都是我的好朋友"
+    },
+    {
+      "avg_logprob": -0.153621,
+      "compression_ratio": 1.276423,
+      "end": 18886.3,
+      "no_speech_prob": 0.0,
+      "start": 18882.3,
+      "text": "幾乎 F1的創始人就是我的好朋友"
+    },
+    {
+      "avg_logprob": -0.153621,
+      "compression_ratio": 1.276423,
+      "end": 18891.3,
+      "no_speech_prob": 0.0,
+      "start": 18887.3,
+      "text": "最好的朋友 跟我家是一強之隔"
+    },
+    {
+      "avg_logprob": -0.153621,
+      "compression_ratio": 1.276423,
+      "end": 18894.3,
+      "no_speech_prob": 0.0,
+      "start": 18892.3,
+      "text": "在英國就是一強之隔"
+    },
+    {
+      "avg_logprob": -0.153621,
+      "compression_ratio": 1.276423,
+      "end": 18897.3,
+      "no_speech_prob": 0.0,
+      "start": 18894.3,
+      "text": "老人家90多歲 這兩天惹他麻煩了"
+    },
+    {
+      "avg_logprob": -0.161097,
+      "compression_ratio": 0.710526,
+      "end": 18900.3,
+      "no_speech_prob": 0.0,
+      "start": 18897.3,
+      "text": "說普京是最偉大的人"
+    }
+  ],
+  "text": "所有的 你已經生產出來的 你不要訂那麼高價這個價大家買不起 也不捨得買 是吧那怎麼辦呢 我說你把這個成本價給G Club會員你G Club都是戰友嘛 當然他啥叫成本 大家記住成本是廠家生產了這個T恤 100美金加上運費 加上工資 加上所有的辦公室成本 是吧這叫成本 對吧 大哥 這個是大家都懂的吧說這叫成本價 那是多少錢呢就他上面給我舉個例子 一個4000美金的衣服他大概最起碼得賣給你2000到2500就是原來的價錢4000 戰友們5萬卡的人打了5折他基本上賠錢或者不掙錢但就這戰友也買不起 也太貴 是吧就連你們這有幣的人也覺得太貴怎麼辦 我說你把這個成本的定義呢就是淨成本 就是廠家生產多少錢直接成本 你給拿出來那他當然就是覺得這是瘋狂 是吧我說你這樣生產100塊錢 比如說99塊你就是把這個運費加上 就這麼直接只限G Club會員 不限社會這樣的話給三周 讓戰友們來選擇最後是他們同意了 很兇奮啊 同意了這樣的話什麼概念呢大概也就是說現在的 你就是原來的價格你看啊 他公佈出來 今天或明天我不知道有沒有公佈出來 基本上上面比如說 4000的他可能就變成了 1000 或者是 800 600 這個價格他就是完全是廠家生產的價格這不能造假 造假是欺騙啊這絕對商業欺騙是不可以的不可能中國人說馬雲啊 我這是成本價 100塊錢 實際是10塊錢不可能 我在這說他們做的時候那絕對是形式詐騙這在西方絕對是形式詐騙走到天下海角都可以告你是多少錢就是多少錢拿出來僅供G Club會員買G Club會員怎麼買呢5萬的5折 4萬的4折不可能是1萬的也5折 是不可能的啊另外僅限三周還有一個僅限G Club會員你不是G Club會員是不可能的這是G Club會員擁有的利益還有一個 這些東西所有的你來上網選擇完以後現在HP好像這兩天有問題因為現在場外交易達到了這個實際交易的N倍所以說HP現在就是技術問題的暫停隨時可以恢復但是買用HDO買的呢 沒問題你給各農場或跟長島市場聯繫專門有個團隊 給你記帳就可以比如說2Pack我現在HP不能用我買10件T-鞋 一錢我錢記帳就可以了你們都可以記帳 你們跟帥服你們都可以記帳了請給我問一個問題請請就是因為我這人比較虧嘛因為我喜歡自己去試我可以直接去米蘭去嗎因為試起來他們家人也想跟我們組團去那邊完全沒有問題啊紐約現場的找長島市場米蘭現場的也安排現場也安排現場啊 長島市場會給你們安排可以到米蘭現場試吧全部大家記住都去軍隊我可以告訴大家 你們幾乎不可能再有這樣的機會我是今天承擔法律責任告訴你 是直接成本也就是說原來的市價的18%到25%之間不可能在什麼的而且所有東西你們知道什麼生產的 你都可以看得出來廠家都知道都是意大利的 沒有一件是中國產的而且全世界最好的品牌的這個時候有的貨呢 量很少你看到一共兩萬多件 帽子就五千件內褲也得有一兩千件 是吧它加起來沒多少件 瞬間就可能就沒了那麼這是給G Club會員的利益更重要的是滿足那些戰友們 還沒有激發身的人這是最重要的考慮 讓他們能買得很舒服你要圖牌給你四千的 覺得他有給我買一件但是你說800塊錢 600塊錢 700塊錢在歐洲隨便買一件東西都是幾百塊錢 是吧就買了 就這樣的東西 現在就是三週更重要的是美國7月4號是美國的國慶節從7月4號迎接美國國慶也是咱喜避上市以來最大的利益輸送和咱們G Club會員的利益大家別忘了 你們買這個幾乎都是白給的800美金就是幾個幣啊 是不是啊20個幣 是不是啊20個幣就是你花了兩塊美金 是不是啊兩塊美金買的 缺心眼的嘛 這不是嘛你別老講的我今天 我還買了衣服我還想用用幣 那是不可能的 是吧那不可能 就像我你們講過一個當年這不對的我哥的不對的一個笑話丟了50塊錢 最後哭哭哭了半天了領導說我給你這50塊錢算了 還哭 還哭啥說如果我那50塊不丟不就成100塊錢了嗎 是吧那你不能這麼算上 我還想要激翻任我還不想沒幣 那不可能的 是吧那麽現在你擁有這樣的激翻任這是咱們戰友絕大多 我看不了你看今天這個直播 如果你們都穿激翻任我心情又不一樣 是吧你看 武漢韶韶是激翻任 我看明白了但是你看到艾琳老師 你看又是帽子又是啥子你看大根 你看 你們幾個就沒有咱希望更多的人有 而且激翻任的核心目標主要是為戰友服務的你看我今天 我這你看了一件 這是個昨天晚上拿著讓我今天穿的 這是讓我試穿的我試穿的 我試了幾套 你看剛才那天你看到花文一樣 那是新的都在那個範圍內 都在那個範圍內的然後我今天早上我也找激翻任我說這國內有戰友 給我發信息七哥 我全包了好幾個戰友 我全包了 不管多少我說你全包了 那別的戰友呢哎 我多出點錢 我說你這就不叫戰友了這激翻是不是給你一個人量身兵糧的現在這個戰友肯定也在看直播我說你都包了 一共就是不到千八萬美元的事兒你都包了 那其他戰友要那賣啥呀永遠 G Club 不可以讓任何人獨享任何的利益這屬於 G Club 全體會員的利益我回答很多戰友 過發言我沒給你回啊包括新加坡的 包括日本的戰友說你要全包啊 那是不可能的這必須是戰友 僅限 G Club 會員你都包你 拜個明天休 我全是老 我全贏那不行 你不能這樣 你得給戰友留個機會啊這關於 贏美國國慶 G 翻身 G Club 利益大放送不叫折扣 我最討厭的詞 這可不是折扣還有我們那一杯小酌在群裡發啥叫什麼 吐血大甩賣 誰給你甩賣呢 一共多少件啊誰給誰吐血呀 你吐血你拿兩美金你給我吐一次我看看你給我吐兩次 我天天吐 是不是啊你拿兩美金買一個 買一個兩千美金的東西 我吐我吐吐吐 天天吐 對吧這是利益 這是僅限 G Club 會員的利益就像一個咱們戰友在日本去買了個鳳凰的車他給我買了個二手鳳凰啊 我來日本多年就喜歡日本的鳳凰車 總統皇帝車 天皇車他說 我買不起啊 我這回買二手鳳凰的老款呢 就特別好更值錢 比現在還貴他說 我加一騎我花了四千個幣而且這個日本人就要幣 不要任何什麼日元也不要什麼我就要你幣 四千個幣給你開上日本的天皇的鳳凰車 鳥大了給我發 這個戰友現在肯定在視頻我問了他一句話我說 你花了四千個幣 你花多少錢他說七個 我做義工 我得了兩萬個幣那你想想的 買幾個鳳凰車 對吧他說我現在每周去吃一個 帶著家人去吃那個我最愛吃的 過去吃不起的壽司 所謂百年壽司店這就是真正的新中國聯邦給戰友帶來紮紮實實的利益加不了 是吧 這是最關鍵的 韓國的好幾個戰友你現在卡爾斯麥斯 曹子欣 你不能老幹 你得跟那個朴司令工作卡爾斯麥斯 還有什麼溫暖姐姐 這些人必須進監獄的像個九指一 他必須進監獄 陸大腦袋還有石耀岩他騙你不能老在這塊上直播 你得跟朴司令工作你得走向前線去 他騙了戰友的錢 他必須吐出來那有韓國的戰友也是買了車 是吧這給我發信息 我說你能不能去幫幫朴司令把戰友的利益給阻回來 你們韓國的任何人只要不幫助戰友把錢追回來 你們都不是好戰友任何人騙了戰友 他走遍天氣天涯海角 365年都不拉倒 朋友說365天不信就試試 是不是那他騙了錢 他必須進監獄 我都沒有出手如果你們告訴我韓國人說 七哥我們做不了了 你出手我如果三個月不把人送進去 我郭文貴消失七哥在韓國的力量你不用懷疑吧他動不著運用不著我吧 對吧曹子欣你必須出手 你和你七子和白日本人你不能老上直播 你必須得跟朴司令一起工作韓國的戰友 你們不把CrossMatch什麼溫暖姐姐這些送進監獄去 下一步的躺平壁沒有你們的一個都不會有你們的 你們有最大的機會接下來就是躺平壁所有義工 所有使用蓋特 所有人就是躺平壁一定要記住 不要錯過這個機會就像這個明天這個大放送 這個大放送一樣僅限G Club會員 不是說天下人 就你那兩個人一下不就沒了嗎 是不是就那些明星的 人家明星就發一個推就行 那都是幾百萬幾千萬粉絲發一個推 用我名字去買去 這只一分鐘就沒了是吧 我們不能這麼做就是G Club會員的利益 不要忘了這是一個積翻身的 還有啥要我忘了的小福利還有墨鏡 大哥你看提醒我一下我只是覺得絕對堅持不了三週 看能不能堅持三天都是個問號所以說特別沒有買的 就是還沒有G Fashion的明天第一時間趕快下手 我個人覺得建議所以說這是我說的 另一塊的話覺得剛剛您說的那個例子 只要洗壁賣車的總感覺這個賣的金 盯著洗壁過來的然後最後我想只要壁不要現金 聰明就是啊 典型的買都沒有賣的金 給我的感覺這個盯著洗壁過來的最後我還想說一句 感謝那位趙澤弟就是您剛剛說的那一位 就是擁有萬寶路的然後而且建議七哥以及我們戒煙就是不管怎麼樣 為這次戒煙行動說了兩句話的那位趙澤弟我覺得因為他擁有萬寶路還讓人戒煙能做到這一點還是我覺得 我們應該感謝一下 謝謝我說到這 我大根你還記得七哥直播你記得最清楚的你記得曾經我直播說到德國參加萬寶路的煙場德國的地下室 幾百米深 上面全是綠地全是綠地 花園 下面是煙場哇塞 那簡直那無煙工業 那是北京市政府我要去考察去您都玩那個了 就是這位姐妹兒的他們知道這煙都害人的 而且中國是世界最大的就是這種所謂的捲煙的市場 而且是世界上最貴的我真的很感謝他 所以說你看到那個艾林老師她拿了煙 嗒嗒嗒抽害老班長 那要命的還有你大根兒人家都說說 這說明這裡邊有很多我們不知道的禍害現在這個人的這個生育的問題 很多跟煙是有關係的 和環境污染很多是跟這個有關係 包括這個很多人就生出了孩子 有天生的這種奇形啊 怪胎啊跟這都有關係的 只是咱沒法說 人家沒法問就你大根兒你肯定問 是吧就是跟人家大叫就你不能這麼問 你問人家對人家就不尊重了不能問 啊所以說這是真的 你說的很對 很感謝他七哥 我可以最後問一個問題嗎行因為我很喜歡F1 因為我昨天剛好在GK卡收到F1就是明年2023年在奔駛主持車對我看到有一個那種GK卡的那種促銷 就是跟F1合作你能幫我們說一下這意義位置什麼嗎因為你之前就在摩納哥說過F1跟GK卡因為我非常非常喜歡F1 然後我的夢想因為我有很多興趣愛好 七哥說我會之後會怎麼樣怎麼樣其實我想跟你說 我有信仰 我有自己的興趣愛好我很想去F1 就跟車手零距離接觸在那裡面這麼等 我想知道一下七哥說一下這個意味的什麼G卡卡的意味的什麼本來呀 今年的F1是給GK會員要發很多票要去的然後我強烈拒絕原因最根本的問題就是你知道F1那塊幾乎這些人都是我的好朋友幾乎 F1的創始人就是我的好朋友最好的朋友 跟我家是一強之隔在英國就是一強之隔老人家90多歲 這兩天惹他麻煩了說普京是最偉大的人"
+}
