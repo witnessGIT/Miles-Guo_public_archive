@@ -1,0 +1,16 @@
+{
+  "task_id": "WI_LIVE_20230205_001_segment_split",
+  "agent_id": "codex-local-asr-agent50-20261028",
+  "completed_at": "2026-10-28T20:30:55.616563+00:00",
+  "result_commit": "a7b70e3fec491532add8b39edc86d3fc1664f215",
+  "outputs": [
+    "data/current/live_segments/asr_live_20230205_001.jsonl"
+  ],
+  "validation": "7 natural machine segments from 233 timestamped cues; coverage 0.0-599.06 sec; nonempty and ordered; build_db OK; validate_db OK; full 146 tests OK",
+  "workflow_mode": "continuous-worker-v2",
+  "claim_protocol": "claim-protocol-v2",
+  "entry_mode": "work",
+  "continue_after_finish": true,
+  "finish_prerequisites_revalidated": true,
+  "notes": "Task completed only after re-checking the latest repository dependency contract. Under continuous-worker-v2, refresh repository state and claim the next eligible task unless a documented stop condition applies."
+}
