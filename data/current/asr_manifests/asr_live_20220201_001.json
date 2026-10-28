@@ -1,0 +1,61 @@
+{
+  "audio_duration_sec": 43215.859,
+  "audio_sha256": "746cba1c2a45d911997fa5e4975819b3f7eb436b3f5f8c6897d81d53b16b291c",
+  "audio_size_bytes": 169897605,
+  "chunk_count": 49,
+  "chunk_duration_sec": 900,
+  "cue_count": 15513,
+  "download_elapsed_sec": 420.701,
+  "generated_at": "2026-10-28T00:09:36Z",
+  "language": "zh",
+  "live_id": "LIVE_20220201_001",
+  "media_asset_id": "MA_C2_RUMBLE_0A707EC9DD58",
+  "media_committed_to_git": false,
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "model_load_elapsed_sec": 10.282,
+  "paid_api_used": false,
+  "path_persistence": "ephemeral_deleted_after_job",
+  "peak_rss_bytes": 1141407744,
+  "pipeline_started_at": "2026-10-27T23:22:25Z",
+  "processing_elapsed_sec": 2397.865,
+  "processing_location": "github-hosted-macos-arm64",
+  "processing_path": "/Users/runner/work/_temp/miles-guo-asr/LIVE_20220201_001.ogg",
+  "quality": {
+    "gate_status": "pass",
+    "metrics": {
+      "audio_duration_sec": 43215.859,
+      "characters_per_minute": 188.47,
+      "confidence_segment_count": 15513,
+      "end_coverage_ratio": 0.999967,
+      "filtered_hallucination_segment_count": 1232,
+      "high_compression_segment_count": 33,
+      "high_no_speech_segment_count": 0,
+      "invalid_timestamp_count": 0,
+      "low_confidence_segment_count": 128,
+      "repeated_text_ratio": 0.048916,
+      "segment_count": 15513,
+      "text_character_count": 135748
+    },
+    "quality_score": 0.9829,
+    "reasons": [],
+    "schema_version": "cloud-asr-quality-v1",
+    "warnings": []
+  },
+  "resolved_media_url": "https://hugh.cdn.rumble.cloud/video/s8/2/T/g/H/p/TgHpt.oaa.mp4",
+  "resumed_chunk_count": 34,
+  "schema_version": "cloud-asr-result-v1",
+  "segment_count": 15513,
+  "software": "mlx-whisper",
+  "source_attempt_errors": [
+    {
+      "asset_id": "MA_C2_GETTR_A44CB0AA4601",
+      "error": "Command '['ffmpeg', '-nostdin', '-hide_banner', '-loglevel', 'warning', '-y', '-user_agent', 'curl/8.7.1', '-i', 'https://stream.video.gettr.com/yXUO6WdwGrIxJGp4oSEi022DyPjrmCPaitXOyeA7a5Bw.m3u8', '-vn', '-ac', '1', '-ar', '16000', '-c:a', 'libopus', '-b:a', '32k', '-f', 'ogg', '/Users/runner/work/_temp/miles-guo-asr/LIVE_20220201_001.ogg.partial']' returned non-zero exit status 8."
+    }
+  ],
+  "source_id": "SRC_C2_RUMBLE_0A707EC9DD58",
+  "source_url": "https://rumble.com/v5c7gz1-20220201-1.html",
+  "status": "transcribed",
+  "structured_result_elapsed_sec": 2830.76,
+  "transcript_version_id": "TR_LIVE_20220201_001_asr_raw_zh_001",
+  "verification_level": "machine_unverified"
+}

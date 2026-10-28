@@ -1,0 +1,24 @@
+{
+  "chunk_audio_sha256": "2c745fdaf7d21f9d8fdc663e4e4956b76571e60ed8a28c2257d77b0f6a359d55",
+  "chunk_index": 17,
+  "completed_at": "2026-10-28T02:33:45Z",
+  "language": "zh",
+  "live_id": "LIVE_20220710_001",
+  "media_committed_to_git": false,
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "offset_sec": 15300,
+  "paid_api_used": false,
+  "processing_location": "github-hosted-macos-arm64",
+  "schema_version": "cloud-asr-chunk-v1",
+  "segments": [
+    {
+      "avg_logprob": -0.114629,
+      "compression_ratio": 0.851351,
+      "end": 15329.98,
+      "no_speech_prob": 0.0,
+      "start": 15300.0,
+      "text": "请不吝点赞 订阅 转发 打赏支持明镜与点点栏目"
+    }
+  ],
+  "text": "请不吝点赞 订阅 转发 打赏支持明镜与点点栏目"
+}

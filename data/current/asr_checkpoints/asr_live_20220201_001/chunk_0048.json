@@ -1,0 +1,56 @@
+{
+  "chunk_audio_sha256": "5025113db4ddcce7e2dc9178f8aae97dc20642139b47cda243c53c676118f33c",
+  "chunk_index": 48,
+  "completed_at": "2026-10-28T00:09:34Z",
+  "language": "zh",
+  "live_id": "LIVE_20220201_001",
+  "media_committed_to_git": false,
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "offset_sec": 43200,
+  "paid_api_used": false,
+  "processing_location": "github-hosted-macos-arm64",
+  "schema_version": "cloud-asr-chunk-v1",
+  "segments": [
+    {
+      "avg_logprob": -0.365209,
+      "compression_ratio": 1.225806,
+      "end": 43203.0,
+      "no_speech_prob": 0.0,
+      "start": 43200.0,
+      "text": "他把郭宝昌半点看不见"
+    },
+    {
+      "avg_logprob": -0.365209,
+      "compression_ratio": 1.225806,
+      "end": 43206.24,
+      "no_speech_prob": 0.0,
+      "start": 43203.0,
+      "text": "说这个小子小气的酒都是假的"
+    },
+    {
+      "avg_logprob": -0.365209,
+      "compression_ratio": 1.225806,
+      "end": 43208.44,
+      "no_speech_prob": 0.0,
+      "start": 43206.24,
+      "text": "给人天天喝什么辣非酒全假的"
+    },
+    {
+      "avg_logprob": -0.365209,
+      "compression_ratio": 1.225806,
+      "end": 43211.48,
+      "no_speech_prob": 0.0,
+      "start": 43208.44,
+      "text": "后来整个小辣非都是这小子整出来的"
+    },
+    {
+      "avg_logprob": -0.365209,
+      "compression_ratio": 1.225806,
+      "end": 43214.44,
+      "no_speech_prob": 0.0,
+      "start": 43211.48,
+      "text": "小气至极 复旦出来的小丑"
+    }
+  ],
+  "text": "他把郭宝昌半点看不见说这个小子小气的酒都是假的给人天天喝什么辣非酒全假的后来整个小辣非都是这小子整出来的小气至极 复旦出来的小丑"
+}
