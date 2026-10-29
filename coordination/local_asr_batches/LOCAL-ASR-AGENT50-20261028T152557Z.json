@@ -62,7 +62,7 @@
     "LIVE_20230111_001",
     "LIVE_20230129_001"
   ],
-  "next_live_id": "LIVE_20221126_001",
+  "next_live_id": "LIVE_20221129_001",
   "completed_live_ids": [
     "LIVE_20230313_001",
     "LIVE_20221011_001",
@@ -75,13 +75,14 @@
     "LIVE_20221008_001",
     "LIVE_20221014_001",
     "LIVE_20221024_002",
-    "LIVE_20221107_001"
+    "LIVE_20221107_001",
+    "LIVE_20221126_001"
   ],
   "failed_or_deferred_live_ids": [],
   "retry_pending_live_ids": [],
   "last_window": {
-    "started_at": "2026-10-29T01:25:11Z",
-    "ended_at": "2026-10-29T01:42:00Z",
+    "started_at": "2026-10-29T02:25:12Z",
+    "ended_at": "2026-10-29T02:38:30Z",
     "attempted_unique_videos": 1,
     "transcript_cue_segment_completed": 1,
     "four_stage_completed": 1,
@@ -90,39 +91,37 @@
     "tail_deferred_videos": 0,
     "cooldown_skipped_videos": 0,
     "source_temporarily_unavailable_videos": 0,
-    "audio_duration_sec": 599.708,
-    "download_elapsed_sec_known": 185.734,
+    "audio_duration_sec": 599.836,
+    "download_elapsed_sec_known": 239.348,
     "download_elapsed_unavailable_for": [],
-    "pure_asr_inference_sec_known": 26.743,
+    "pure_asr_inference_sec_known": 20.761,
     "pure_asr_inference_unavailable_for": [],
-    "structured_pipeline_elapsed_sec_known": 214.078,
+    "structured_pipeline_elapsed_sec_known": 261.603,
     "structured_pipeline_elapsed_unavailable_for": [],
-    "asr_job_wall_elapsed_sec": 214.078,
-    "key_points_attempt_wall_elapsed_sec": 238.0,
-    "window_elapsed_sec": 1009.0,
-    "known_inference_rtf": 0.044594,
-    "known_inference_realtime_multiple": 22.425,
-    "published_commits": 8,
-    "quality_failures": {
-      "decoder_tail_filtered": "5 contiguous extreme-low-confidence suffix cues beyond the valid audio tail were conservatively removed; 1 earlier decoder-loop cue had already been filtered; post-filter quality gate passed"
-    },
+    "asr_job_wall_elapsed_sec": 261.603,
+    "key_points_attempt_wall_elapsed_sec": 202.0,
+    "window_elapsed_sec": 798.0,
+    "known_inference_rtf": 0.034611,
+    "known_inference_realtime_multiple": 28.892,
+    "published_commits": 9,
+    "quality_failures": {},
     "completed_three_stage_live_ids": [
-      "LIVE_20221107_001"
+      "LIVE_20221126_001"
     ],
     "completed_four_stage_live_ids": [
-      "LIVE_20221107_001"
+      "LIVE_20221126_001"
     ],
     "released_key_points_live_ids": [],
     "source_temporarily_unavailable_live_ids": [],
-    "next_live_id": "LIVE_20221126_001",
+    "next_live_id": "LIVE_20221129_001",
     "key_point_stats": {
-      "natural_segments": 11,
-      "key_points": 70,
-      "topic_links": 20,
-      "skipped_or_invalid": 0,
+      "natural_segments": 8,
+      "key_points": 59,
+      "topic_links": 19,
+      "skipped_or_invalid": 1,
       "parse_errors": 0,
-      "forced_retries": 2,
-      "grounded_supplement_points": 2,
+      "forced_retries": 1,
+      "grounded_supplement_points": 0,
       "outcome": "enriched"
     }
   },
