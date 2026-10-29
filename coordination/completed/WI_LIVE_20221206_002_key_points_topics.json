@@ -1,0 +1,17 @@
+{
+  "task_id": "WI_LIVE_20221206_002_key_points_topics",
+  "agent_id": "codex-local-asr-agent50-20261028",
+  "completed_at": "2026-10-29T04:39:43.722620+00:00",
+  "result_commit": "e554e51d996999ca760dd377b0adaa370eb549bf",
+  "outputs": [
+    "data/current/segment_key_points/machine_live_20221206_002.jsonl",
+    "data/current/segment_topics/machine_live_20221206_002.jsonl"
+  ],
+  "validation": "Generated 64 detailed evidence-grounded key points and 17 controlled topic links across all 7 natural segments using local Qwen2.5 7B with extended generation; skipped_or_invalid 0, parse_errors 0, model_empty 0, rejected_all 0. No paid API or token. build_db and validate_db passed; 148 tests passed.",
+  "workflow_mode": "continuous-worker-v2",
+  "claim_protocol": "claim-protocol-v2",
+  "entry_mode": "work",
+  "continue_after_finish": true,
+  "finish_prerequisites_revalidated": true,
+  "notes": "Task completed only after re-checking the latest repository dependency contract. Under continuous-worker-v2, refresh repository state and claim the next eligible task unless a documented stop condition applies."
+}
