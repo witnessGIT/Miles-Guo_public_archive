@@ -1,0 +1,624 @@
+{
+  "chunk_audio_sha256": "f0d1d55e6b98d52d4d17c320f621ded9153f1cd2cda33e3abbedcd2755318421",
+  "chunk_index": 10,
+  "completed_at": "2026-10-29T18:38:34Z",
+  "language": "zh",
+  "live_id": "LIVE_20230101_001",
+  "media_committed_to_git": false,
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "offset_sec": 9000,
+  "paid_api_used": false,
+  "processing_location": "github-hosted-macos-arm64",
+  "schema_version": "cloud-asr-chunk-v1",
+  "segments": [
+    {
+      "avg_logprob": -0.347637,
+      "compression_ratio": 0.947368,
+      "end": 9007.76,
+      "no_speech_prob": 0.0,
+      "start": 9000.0,
+      "text": "灰树叶飘转在池塘"
+    },
+    {
+      "avg_logprob": -0.347637,
+      "compression_ratio": 0.947368,
+      "end": 9014.26,
+      "no_speech_prob": 0.0,
+      "start": 9007.76,
+      "text": "看飞机空的一生去远墙"
+    },
+    {
+      "avg_logprob": -0.347637,
+      "compression_ratio": 0.947368,
+      "end": 9018.0,
+      "no_speech_prob": 0.0,
+      "start": 9014.26,
+      "text": "光阴的长廊"
+    },
+    {
+      "avg_logprob": -0.347637,
+      "compression_ratio": 0.947368,
+      "end": 9020.94,
+      "no_speech_prob": 0.0,
+      "start": 9018.0,
+      "text": "脚步声叫嚷"
+    },
+    {
+      "avg_logprob": -0.347637,
+      "compression_ratio": 0.947368,
+      "end": 9027.12,
+      "no_speech_prob": 0.0,
+      "start": 9020.94,
+      "text": "灯一亮无人的空荡"
+    },
+    {
+      "avg_logprob": -0.356068,
+      "compression_ratio": 0.992308,
+      "end": 9031.82,
+      "no_speech_prob": 0.0,
+      "start": 9027.12,
+      "text": "晚风中山过"
+    },
+    {
+      "avg_logprob": -0.356068,
+      "compression_ratio": 0.992308,
+      "end": 9034.76,
+      "no_speech_prob": 0.0,
+      "start": 9031.82,
+      "text": "几阵从前那"
+    },
+    {
+      "avg_logprob": -0.356068,
+      "compression_ratio": 0.992308,
+      "end": 9038.36,
+      "no_speech_prob": 0.0,
+      "start": 9034.76,
+      "text": "飞驰中旋转"
+    },
+    {
+      "avg_logprob": -0.356068,
+      "compression_ratio": 0.992308,
+      "end": 9041.36,
+      "no_speech_prob": 0.0,
+      "start": 9038.36,
+      "text": "已不见了吗"
+    },
+    {
+      "avg_logprob": -0.356068,
+      "compression_ratio": 0.992308,
+      "end": 9045.24,
+      "no_speech_prob": 0.0,
+      "start": 9041.36,
+      "text": "远光中走来"
+    },
+    {
+      "avg_logprob": -0.356068,
+      "compression_ratio": 0.992308,
+      "end": 9047.94,
+      "no_speech_prob": 0.0,
+      "start": 9045.24,
+      "text": "你一生晴朗"
+    },
+    {
+      "avg_logprob": -0.356068,
+      "compression_ratio": 0.992308,
+      "end": 9051.86,
+      "no_speech_prob": 0.0,
+      "start": 9047.94,
+      "text": "身旁那么多人"
+    },
+    {
+      "avg_logprob": -0.356068,
+      "compression_ratio": 0.992308,
+      "end": 9056.24,
+      "no_speech_prob": 0.0,
+      "start": 9051.86,
+      "text": "可世界不声不响"
+    },
+    {
+      "avg_logprob": -0.37856,
+      "compression_ratio": 0.857143,
+      "end": 9066.24,
+      "no_speech_prob": 0.0,
+      "start": 9056.24,
+      "text": "这世界有那么多人"
+    },
+    {
+      "avg_logprob": -0.37856,
+      "compression_ratio": 0.857143,
+      "end": 9072.52,
+      "no_speech_prob": 0.0,
+      "start": 9066.24,
+      "text": "多幸运我有个我们"
+    },
+    {
+      "avg_logprob": -0.318076,
+      "compression_ratio": 0.710526,
+      "end": 9082.52,
+      "no_speech_prob": 0.0,
+      "start": 9072.52,
+      "text": "这悠长命运中的晨昏"
+    },
+    {
+      "avg_logprob": -0.352783,
+      "compression_ratio": 0.8625,
+      "end": 9085.52,
+      "no_speech_prob": 0.0,
+      "start": 9082.52,
+      "text": "望远方出身"
+    },
+    {
+      "avg_logprob": -0.352783,
+      "compression_ratio": 0.8625,
+      "end": 9093.52,
+      "no_speech_prob": 0.0,
+      "start": 9085.52,
+      "text": "回树叶飘转在池塘"
+    },
+    {
+      "avg_logprob": -0.352783,
+      "compression_ratio": 0.8625,
+      "end": 9099.52,
+      "no_speech_prob": 0.0,
+      "start": 9093.52,
+      "text": "看飞机空的一生去远墙"
+    },
+    {
+      "avg_logprob": -0.26456,
+      "compression_ratio": 0.84507,
+      "end": 9104.52,
+      "no_speech_prob": 0.0,
+      "start": 9099.52,
+      "text": "远墙光阴的长廊"
+    },
+    {
+      "avg_logprob": -0.26456,
+      "compression_ratio": 0.84507,
+      "end": 9107.52,
+      "no_speech_prob": 0.0,
+      "start": 9104.52,
+      "text": "脚步声叫嚷"
+    },
+    {
+      "avg_logprob": -0.26456,
+      "compression_ratio": 0.84507,
+      "end": 9113.52,
+      "no_speech_prob": 0.0,
+      "start": 9107.52,
+      "text": "灯一亮无人的空荡"
+    },
+    {
+      "avg_logprob": -0.410744,
+      "compression_ratio": 1.013514,
+      "end": 9120.52,
+      "no_speech_prob": 0.0,
+      "start": 9113.52,
+      "text": "晚风中山过"
+    },
+    {
+      "avg_logprob": -0.410744,
+      "compression_ratio": 1.013514,
+      "end": 9121.52,
+      "no_speech_prob": 0.0,
+      "start": 9120.52,
+      "text": "晚风中山过"
+    },
+    {
+      "avg_logprob": -0.410744,
+      "compression_ratio": 1.013514,
+      "end": 9124.52,
+      "no_speech_prob": 0.0,
+      "start": 9121.52,
+      "text": "急阵从前那"
+    },
+    {
+      "avg_logprob": -0.410744,
+      "compression_ratio": 1.013514,
+      "end": 9127.52,
+      "no_speech_prob": 0.0,
+      "start": 9124.52,
+      "text": "飞驰中旋转"
+    },
+    {
+      "avg_logprob": -0.410744,
+      "compression_ratio": 1.013514,
+      "end": 9130.52,
+      "no_speech_prob": 0.0,
+      "start": 9127.52,
+      "text": "已不见了吗"
+    },
+    {
+      "avg_logprob": -0.421804,
+      "compression_ratio": 0.915789,
+      "end": 9131.52,
+      "no_speech_prob": 0.0,
+      "start": 9130.52,
+      "text": "远光阴的长廊"
+    },
+    {
+      "avg_logprob": -0.421804,
+      "compression_ratio": 0.915789,
+      "end": 9134.52,
+      "no_speech_prob": 0.0,
+      "start": 9131.52,
+      "text": "远光中走来"
+    },
+    {
+      "avg_logprob": -0.421804,
+      "compression_ratio": 0.915789,
+      "end": 9137.52,
+      "no_speech_prob": 0.0,
+      "start": 9134.52,
+      "text": "你一生晴朗"
+    },
+    {
+      "avg_logprob": -0.421804,
+      "compression_ratio": 0.915789,
+      "end": 9140.52,
+      "no_speech_prob": 0.0,
+      "start": 9137.52,
+      "text": "身旁那么多人"
+    },
+    {
+      "avg_logprob": -0.421804,
+      "compression_ratio": 0.915789,
+      "end": 9145.52,
+      "no_speech_prob": 0.0,
+      "start": 9140.52,
+      "text": "可世界不声不响"
+    },
+    {
+      "avg_logprob": -0.624208,
+      "compression_ratio": 0.940299,
+      "end": 9146.52,
+      "no_speech_prob": 0.0,
+      "start": 9145.52,
+      "text": "不响"
+    },
+    {
+      "avg_logprob": -0.624208,
+      "compression_ratio": 0.940299,
+      "end": 9147.52,
+      "no_speech_prob": 0.0,
+      "start": 9146.52,
+      "text": "不响"
+    },
+    {
+      "avg_logprob": -0.624208,
+      "compression_ratio": 0.940299,
+      "end": 9148.52,
+      "no_speech_prob": 0.0,
+      "start": 9147.52,
+      "text": "不响"
+    },
+    {
+      "avg_logprob": -0.624208,
+      "compression_ratio": 0.940299,
+      "end": 9151.52,
+      "no_speech_prob": 0.0,
+      "start": 9148.52,
+      "text": "悄声中浮过"
+    },
+    {
+      "avg_logprob": -0.624208,
+      "compression_ratio": 0.940299,
+      "end": 9153.52,
+      "no_speech_prob": 0.0,
+      "start": 9151.52,
+      "text": "几场旧模样"
+    },
+    {
+      "avg_logprob": -0.624208,
+      "compression_ratio": 0.940299,
+      "end": 9157.52,
+      "no_speech_prob": 0.0,
+      "start": 9153.52,
+      "text": "留在梦天里"
+    },
+    {
+      "avg_logprob": -0.301079,
+      "compression_ratio": 1.39604,
+      "end": 9159.52,
+      "no_speech_prob": 0.0,
+      "start": 9157.52,
+      "text": "永远不散场"
+    },
+    {
+      "avg_logprob": -0.301079,
+      "compression_ratio": 1.39604,
+      "end": 9160.52,
+      "no_speech_prob": 0.0,
+      "start": 9159.52,
+      "text": "永远不散场"
+    },
+    {
+      "avg_logprob": -0.301079,
+      "compression_ratio": 1.39604,
+      "end": 9164.52,
+      "no_speech_prob": 0.0,
+      "start": 9160.52,
+      "text": "暖光中心里"
+    },
+    {
+      "avg_logprob": -0.301079,
+      "compression_ratio": 1.39604,
+      "end": 9167.52,
+      "no_speech_prob": 0.0,
+      "start": 9164.52,
+      "text": "好多话要讲"
+    },
+    {
+      "avg_logprob": -0.301079,
+      "compression_ratio": 1.39604,
+      "end": 9174.52,
+      "no_speech_prob": 0.0,
+      "start": 9167.52,
+      "text": "世界那么多人"
+    },
+    {
+      "avg_logprob": -0.301079,
+      "compression_ratio": 1.39604,
+      "end": 9178.52,
+      "no_speech_prob": 0.0,
+      "start": 9174.52,
+      "text": "可是他不声不响"
+    },
+    {
+      "avg_logprob": -0.301079,
+      "compression_ratio": 1.39604,
+      "end": 9179.52,
+      "no_speech_prob": 0.0,
+      "start": 9178.52,
+      "text": "这世界那么多人"
+    },
+    {
+      "avg_logprob": -0.301079,
+      "compression_ratio": 1.39604,
+      "end": 9183.52,
+      "no_speech_prob": 0.0,
+      "start": 9179.52,
+      "text": "可是他不声不响"
+    },
+    {
+      "avg_logprob": -0.240896,
+      "compression_ratio": 0.951923,
+      "end": 9188.52,
+      "no_speech_prob": 0.0,
+      "start": 9183.52,
+      "text": "这世界有那么多人"
+    },
+    {
+      "avg_logprob": -0.240896,
+      "compression_ratio": 0.951923,
+      "end": 9195.52,
+      "no_speech_prob": 0.0,
+      "start": 9188.52,
+      "text": "活在我飞扬的青春"
+    },
+    {
+      "avg_logprob": -0.240896,
+      "compression_ratio": 0.951923,
+      "end": 9201.52,
+      "no_speech_prob": 0.0,
+      "start": 9195.52,
+      "text": "在泪水里"
+    },
+    {
+      "avg_logprob": -0.240896,
+      "compression_ratio": 0.951923,
+      "end": 9205.52,
+      "no_speech_prob": 0.0,
+      "start": 9201.52,
+      "text": "侵蚀过的沉稳"
+    },
+    {
+      "avg_logprob": -0.240896,
+      "compression_ratio": 0.951923,
+      "end": 9211.52,
+      "no_speech_prob": 0.0,
+      "start": 9205.52,
+      "text": "常让我相啊相处"
+    },
+    {
+      "avg_logprob": -0.815274,
+      "compression_ratio": 0.75,
+      "end": 9221.52,
+      "no_speech_prob": 0.0,
+      "start": 9211.52,
+      "text": "无声"
+    },
+    {
+      "avg_logprob": -0.815274,
+      "compression_ratio": 0.75,
+      "end": 9229.52,
+      "no_speech_prob": 0.0,
+      "start": 9227.52,
+      "text": "再次祝大家"
+    },
+    {
+      "avg_logprob": -0.815274,
+      "compression_ratio": 0.75,
+      "end": 9231.52,
+      "no_speech_prob": 0.0,
+      "start": 9229.52,
+      "text": "新年快乐"
+    },
+    {
+      "avg_logprob": -6.944566,
+      "compression_ratio": 0.428571,
+      "end": 9289.56,
+      "no_speech_prob": 0.0,
+      "start": 9262.2,
+      "text": "爸爸"
+    },
+    {
+      "avg_logprob": -6.942264,
+      "compression_ratio": 0.428571,
+      "end": 9311.34,
+      "no_speech_prob": 0.0,
+      "start": 9290.5,
+      "text": "爸爸"
+    },
+    {
+      "avg_logprob": -0.565092,
+      "compression_ratio": 0.738095,
+      "end": 9341.32,
+      "no_speech_prob": 0.0,
+      "start": 9311.34,
+      "text": "中文字幕志愿者 李宗盛"
+    },
+    {
+      "avg_logprob": -0.065532,
+      "compression_ratio": 0.738095,
+      "end": 9371.32,
+      "no_speech_prob": 0.0,
+      "start": 9341.34,
+      "text": "中文字幕志愿者 李宗盛"
+    },
+    {
+      "avg_logprob": -0.037156,
+      "compression_ratio": 0.738095,
+      "end": 9401.32,
+      "no_speech_prob": 0.0,
+      "start": 9371.34,
+      "text": "中文字幕志愿者 李宗盛"
+    },
+    {
+      "avg_logprob": -0.103921,
+      "compression_ratio": 0.738095,
+      "end": 9431.32,
+      "no_speech_prob": 0.0,
+      "start": 9401.34,
+      "text": "中文字幕志愿者 李宗盛"
+    },
+    {
+      "avg_logprob": -0.129988,
+      "compression_ratio": 0.738095,
+      "end": 9461.3,
+      "no_speech_prob": 0.0,
+      "start": 9431.32,
+      "text": "中文字幕志愿者 李宗盛"
+    },
+    {
+      "avg_logprob": -0.091783,
+      "compression_ratio": 0.738095,
+      "end": 9491.28,
+      "no_speech_prob": 0.0,
+      "start": 9461.3,
+      "text": "中文字幕志愿者 李宗盛"
+    },
+    {
+      "avg_logprob": -0.117785,
+      "compression_ratio": 0.738095,
+      "end": 9521.26,
+      "no_speech_prob": 0.0,
+      "start": 9491.28,
+      "text": "中文字幕志愿者 李宗盛"
+    },
+    {
+      "avg_logprob": -0.160852,
+      "compression_ratio": 0.738095,
+      "end": 9551.26,
+      "no_speech_prob": 0.0,
+      "start": 9521.28,
+      "text": "中文字幕志愿者 李宗盛"
+    },
+    {
+      "avg_logprob": -0.092876,
+      "compression_ratio": 0.738095,
+      "end": 9581.24,
+      "no_speech_prob": 0.0,
+      "start": 9551.26,
+      "text": "中文字幕志愿者 李宗盛"
+    },
+    {
+      "avg_logprob": -0.134569,
+      "compression_ratio": 0.738095,
+      "end": 9611.24,
+      "no_speech_prob": 0.0,
+      "start": 9581.26,
+      "text": "中文字幕志愿者 李宗盛"
+    },
+    {
+      "avg_logprob": -0.081644,
+      "compression_ratio": 0.738095,
+      "end": 9641.24,
+      "no_speech_prob": 0.0,
+      "start": 9611.26,
+      "text": "中文字幕志愿者 李宗盛"
+    },
+    {
+      "avg_logprob": -0.07959,
+      "compression_ratio": 0.738095,
+      "end": 9671.24,
+      "no_speech_prob": 0.0,
+      "start": 9641.26,
+      "text": "中文字幕志愿者 李宗盛"
+    },
+    {
+      "avg_logprob": -0.073525,
+      "compression_ratio": 0.738095,
+      "end": 9701.22,
+      "no_speech_prob": 0.0,
+      "start": 9671.24,
+      "text": "中文字幕志愿者 李宗盛"
+    },
+    {
+      "avg_logprob": -0.110866,
+      "compression_ratio": 0.738095,
+      "end": 9731.2,
+      "no_speech_prob": 0.0,
+      "start": 9701.22,
+      "text": "中文字幕志愿者 李宗盛"
+    },
+    {
+      "avg_logprob": -0.053357,
+      "compression_ratio": 0.738095,
+      "end": 9761.18,
+      "no_speech_prob": 0.0,
+      "start": 9731.2,
+      "text": "中文字幕志愿者 李宗盛"
+    },
+    {
+      "avg_logprob": -0.017223,
+      "compression_ratio": 0.738095,
+      "end": 9791.16,
+      "no_speech_prob": 0.0,
+      "start": 9761.18,
+      "text": "中文字幕志愿者 李宗盛"
+    },
+    {
+      "avg_logprob": -0.027075,
+      "compression_ratio": 0.738095,
+      "end": 9821.14,
+      "no_speech_prob": 0.0,
+      "start": 9791.16,
+      "text": "中文字幕志愿者 李宗盛"
+    },
+    {
+      "avg_logprob": -0.032635,
+      "compression_ratio": 0.738095,
+      "end": 9851.12,
+      "no_speech_prob": 0.0,
+      "start": 9821.14,
+      "text": "中文字幕志愿者 李宗盛"
+    },
+    {
+      "avg_logprob": -0.028799,
+      "compression_ratio": 0.738095,
+      "end": 9881.1,
+      "no_speech_prob": 0.0,
+      "start": 9851.12,
+      "text": "中文字幕志愿者 李宗盛"
+    },
+    {
+      "avg_logprob": -0.050553,
+      "compression_ratio": 0.738095,
+      "end": 9911.1,
+      "no_speech_prob": 0.0,
+      "start": 9881.12,
+      "text": "中文字幕志愿者 李宗盛"
+    }
+  ],
+  "text": "灰树叶飘转在池塘看飞机空的一生去远墙光阴的长廊脚步声叫嚷灯一亮无人的空荡晚风中山过几阵从前那飞驰中旋转已不见了吗远光中走来你一生晴朗身旁那么多人可世界不声不响这世界有那么多人多幸运我有个我们这悠长命运中的晨昏望远方出身回树叶飘转在池塘看飞机空的一生去远墙远墙光阴的长廊脚步声叫嚷灯一亮无人的空荡晚风中山过晚风中山过急阵从前那飞驰中旋转已不见了吗远光阴的长廊远光中走来你一生晴朗身旁那么多人可世界不声不响不响不响不响悄声中浮过几场旧模样留在梦天里永远不散场永远不散场暖光中心里好多话要讲世界那么多人可是他不声不响这世界那么多人可是他不声不响这世界有那么多人活在我飞扬的青春在泪水里侵蚀过的沉稳常让我相啊相处无声再次祝大家新年快乐爸爸爸爸中文字幕志愿者 李宗盛中文字幕志愿者 李宗盛中文字幕志愿者 李宗盛中文字幕志愿者 李宗盛中文字幕志愿者 李宗盛中文字幕志愿者 李宗盛中文字幕志愿者 李宗盛中文字幕志愿者 李宗盛中文字幕志愿者 李宗盛中文字幕志愿者 李宗盛中文字幕志愿者 李宗盛中文字幕志愿者 李宗盛中文字幕志愿者 李宗盛中文字幕志愿者 李宗盛中文字幕志愿者 李宗盛中文字幕志愿者 李宗盛中文字幕志愿者 李宗盛中文字幕志愿者 李宗盛中文字幕志愿者 李宗盛中文字幕志愿者 李宗盛"
+}

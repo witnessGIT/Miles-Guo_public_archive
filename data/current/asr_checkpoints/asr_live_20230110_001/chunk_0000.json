@@ -1,0 +1,2928 @@
+{
+  "chunk_audio_sha256": "806e31a058948da613e3550b38cca753beae281e070aa9fe9262cef25e52f146",
+  "chunk_index": 0,
+  "completed_at": "2026-10-29T21:01:26Z",
+  "language": "zh",
+  "live_id": "LIVE_20230110_001",
+  "media_committed_to_git": false,
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "offset_sec": 0,
+  "paid_api_used": false,
+  "processing_location": "github-hosted-macos-arm64",
+  "schema_version": "cloud-asr-chunk-v1",
+  "segments": [
+    {
+      "avg_logprob": -0.123723,
+      "compression_ratio": 0.851351,
+      "end": 29.98,
+      "no_speech_prob": 0.0,
+      "start": 0.0,
+      "text": "请不吝点赞 订阅 转发 打赏支持明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.33145,
+      "compression_ratio": 0.724138,
+      "end": 59.98,
+      "no_speech_prob": 0.0,
+      "start": 30.0,
+      "text": "明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.096528,
+      "compression_ratio": 0.724138,
+      "end": 89.98,
+      "no_speech_prob": 0.0,
+      "start": 60.0,
+      "text": "明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.192852,
+      "compression_ratio": 0.724138,
+      "end": 119.96,
+      "no_speech_prob": 0.0,
+      "start": 89.98,
+      "text": "明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.181002,
+      "compression_ratio": 0.724138,
+      "end": 149.96,
+      "no_speech_prob": 0.0,
+      "start": 119.98,
+      "text": "明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.335915,
+      "compression_ratio": 0.724138,
+      "end": 153.98,
+      "no_speech_prob": 0.0,
+      "start": 149.98,
+      "text": "明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.159238,
+      "compression_ratio": 0.724138,
+      "end": 157.98,
+      "no_speech_prob": 0.0,
+      "start": 153.98,
+      "text": "明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.131952,
+      "compression_ratio": 0.724138,
+      "end": 161.98,
+      "no_speech_prob": 0.0,
+      "start": 157.98,
+      "text": "明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.119857,
+      "compression_ratio": 0.724138,
+      "end": 165.98,
+      "no_speech_prob": 0.0,
+      "start": 161.98,
+      "text": "明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.09807,
+      "compression_ratio": 1.3125,
+      "end": 169.98,
+      "no_speech_prob": 0.0,
+      "start": 165.98,
+      "text": "明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.09807,
+      "compression_ratio": 1.3125,
+      "end": 171.98,
+      "no_speech_prob": 0.0,
+      "start": 169.98,
+      "text": "明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.129895,
+      "compression_ratio": 9.166667,
+      "end": 175.98,
+      "no_speech_prob": 0.0,
+      "start": 171.98,
+      "text": "明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.129895,
+      "compression_ratio": 9.166667,
+      "end": 177.98,
+      "no_speech_prob": 0.0,
+      "start": 175.98,
+      "text": "明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.129895,
+      "compression_ratio": 9.166667,
+      "end": 179.98,
+      "no_speech_prob": 0.0,
+      "start": 177.98,
+      "text": "明镜与点栏目"
+    },
+    {
+      "avg_logprob": -0.129895,
+      "compression_ratio": 9.166667,
+      "end": 180.98,
+      "no_speech_prob": 0.0,
+      "start": 179.98,
+      "text": "明镜与点栏目"
+    },
+    {
+      "avg_logprob": -0.129895,
+      "compression_ratio": 9.166667,
+      "end": 181.98,
+      "no_speech_prob": 0.0,
+      "start": 180.98,
+      "text": "明镜与点栏目"
+    },
+    {
+      "avg_logprob": -0.129895,
+      "compression_ratio": 9.166667,
+      "end": 182.48,
+      "no_speech_prob": 0.0,
+      "start": 181.98,
+      "text": "明镜与点栏目"
+    },
+    {
+      "avg_logprob": -0.676703,
+      "compression_ratio": 1.26383,
+      "end": 184.48,
+      "no_speech_prob": 0.0,
+      "start": 182.48,
+      "text": "好酒啊好酒"
+    },
+    {
+      "avg_logprob": -0.676703,
+      "compression_ratio": 1.26383,
+      "end": 188.12,
+      "no_speech_prob": 0.0,
+      "start": 184.48,
+      "text": "中心将天酒找到你的手"
+    },
+    {
+      "avg_logprob": -0.676703,
+      "compression_ratio": 1.26383,
+      "end": 190.58,
+      "no_speech_prob": 0.0,
+      "start": 188.12,
+      "text": "天南地面图与我便是战友"
+    },
+    {
+      "avg_logprob": -0.676703,
+      "compression_ratio": 1.26383,
+      "end": 191.78,
+      "no_speech_prob": 0.0,
+      "start": 190.58,
+      "text": "我可平时走肉"
+    },
+    {
+      "avg_logprob": -0.676703,
+      "compression_ratio": 1.26383,
+      "end": 192.98,
+      "no_speech_prob": 0.0,
+      "start": 191.78,
+      "text": "炕成不可下落"
+    },
+    {
+      "avg_logprob": -0.676703,
+      "compression_ratio": 1.26383,
+      "end": 195.28,
+      "no_speech_prob": 0.0,
+      "start": 192.98,
+      "text": "传播天下不可黑夜海中"
+    },
+    {
+      "avg_logprob": -0.676703,
+      "compression_ratio": 1.26383,
+      "end": 196.98,
+      "no_speech_prob": 0.0,
+      "start": 195.28,
+      "text": "干了小碗酒好清楚"
+    },
+    {
+      "avg_logprob": -0.676703,
+      "compression_ratio": 1.26383,
+      "end": 200.08,
+      "no_speech_prob": 0.0,
+      "start": 196.98,
+      "text": "当心头死的未来是我找到的理由"
+    },
+    {
+      "avg_logprob": -0.676703,
+      "compression_ratio": 1.26383,
+      "end": 201.38,
+      "no_speech_prob": 0.0,
+      "start": 200.08,
+      "text": "顺其爱还请求"
+    },
+    {
+      "avg_logprob": -0.676703,
+      "compression_ratio": 1.26383,
+      "end": 202.48,
+      "no_speech_prob": 0.0,
+      "start": 201.38,
+      "text": "不爱去套戴脑"
+    },
+    {
+      "avg_logprob": -0.676703,
+      "compression_ratio": 1.26383,
+      "end": 204.98,
+      "no_speech_prob": 0.0,
+      "start": 202.48,
+      "text": "为自由变成功不言不休"
+    },
+    {
+      "avg_logprob": -0.676703,
+      "compression_ratio": 1.26383,
+      "end": 209.08,
+      "no_speech_prob": 0.0,
+      "start": 204.98,
+      "text": "爆料革命这碗酒"
+    },
+    {
+      "avg_logprob": -0.295781,
+      "compression_ratio": 0.84507,
+      "end": 215.08,
+      "no_speech_prob": 0.0,
+      "start": 209.08,
+      "text": "敬天敬敌敬战友"
+    },
+    {
+      "avg_logprob": -0.295781,
+      "compression_ratio": 0.84507,
+      "end": 217.68,
+      "no_speech_prob": 0.0,
+      "start": 215.08,
+      "text": "新中国联邦人"
+    },
+    {
+      "avg_logprob": -0.295781,
+      "compression_ratio": 0.84507,
+      "end": 219.98,
+      "no_speech_prob": 0.0,
+      "start": 217.68,
+      "text": "永不回奴"
+    },
+    {
+      "avg_logprob": -0.295781,
+      "compression_ratio": 0.84507,
+      "end": 223.08,
+      "no_speech_prob": 0.0,
+      "start": 219.98,
+      "text": "跟我走"
+    },
+    {
+      "avg_logprob": -0.553597,
+      "compression_ratio": 2.142857,
+      "end": 241.08,
+      "no_speech_prob": 0.0,
+      "start": 239.08,
+      "text": "好酒啊"
+    },
+    {
+      "avg_logprob": -0.553597,
+      "compression_ratio": 2.142857,
+      "end": 243.08,
+      "no_speech_prob": 0.0,
+      "start": 241.08,
+      "text": "好酒啊"
+    },
+    {
+      "avg_logprob": -0.553597,
+      "compression_ratio": 2.142857,
+      "end": 245.08,
+      "no_speech_prob": 0.0,
+      "start": 243.08,
+      "text": "好酒啊"
+    },
+    {
+      "avg_logprob": -0.553597,
+      "compression_ratio": 2.142857,
+      "end": 247.08,
+      "no_speech_prob": 0.0,
+      "start": 245.08,
+      "text": "好酒啊"
+    },
+    {
+      "avg_logprob": -0.553597,
+      "compression_ratio": 2.142857,
+      "end": 249.08,
+      "no_speech_prob": 0.0,
+      "start": 247.08,
+      "text": "好酒啊"
+    },
+    {
+      "avg_logprob": -0.685825,
+      "compression_ratio": 10.714286,
+      "end": 253.22,
+      "no_speech_prob": 0.0,
+      "start": 249.08,
+      "text": "宝贝"
+    },
+    {
+      "avg_logprob": -0.685825,
+      "compression_ratio": 10.714286,
+      "end": 255.08,
+      "no_speech_prob": 0.0,
+      "start": 253.22,
+      "text": "宝贝"
+    },
+    {
+      "avg_logprob": -0.685825,
+      "compression_ratio": 10.714286,
+      "end": 256.08,
+      "no_speech_prob": 0.0,
+      "start": 255.08,
+      "text": "宝贝"
+    },
+    {
+      "avg_logprob": -0.685825,
+      "compression_ratio": 10.714286,
+      "end": 257.08,
+      "no_speech_prob": 0.0,
+      "start": 256.08,
+      "text": "宝贝"
+    },
+    {
+      "avg_logprob": -0.685825,
+      "compression_ratio": 10.714286,
+      "end": 258.08,
+      "no_speech_prob": 0.0,
+      "start": 257.08,
+      "text": "宝贝"
+    },
+    {
+      "avg_logprob": -0.685825,
+      "compression_ratio": 10.714286,
+      "end": 259.08,
+      "no_speech_prob": 0.0,
+      "start": 258.08,
+      "text": "宝贝"
+    },
+    {
+      "avg_logprob": -0.685825,
+      "compression_ratio": 10.714286,
+      "end": 259.18,
+      "no_speech_prob": 0.0,
+      "start": 259.08,
+      "text": "宝贝"
+    },
+    {
+      "avg_logprob": -0.685825,
+      "compression_ratio": 10.714286,
+      "end": 259.94,
+      "no_speech_prob": 0.0,
+      "start": 259.18,
+      "text": "宝贝"
+    },
+    {
+      "avg_logprob": -0.685825,
+      "compression_ratio": 10.714286,
+      "end": 260.54,
+      "no_speech_prob": 0.0,
+      "start": 259.94,
+      "text": "宝贝"
+    },
+    {
+      "avg_logprob": -0.685825,
+      "compression_ratio": 10.714286,
+      "end": 261.38,
+      "no_speech_prob": 0.0,
+      "start": 260.54,
+      "text": "宝贝"
+    },
+    {
+      "avg_logprob": -0.685825,
+      "compression_ratio": 10.714286,
+      "end": 262.06,
+      "no_speech_prob": 0.0,
+      "start": 261.38,
+      "text": "宝贝"
+    },
+    {
+      "avg_logprob": -0.685825,
+      "compression_ratio": 10.714286,
+      "end": 262.7,
+      "no_speech_prob": 0.0,
+      "start": 262.06,
+      "text": "宝贝"
+    },
+    {
+      "avg_logprob": -0.685825,
+      "compression_ratio": 10.714286,
+      "end": 263.22,
+      "no_speech_prob": 0.0,
+      "start": 262.7,
+      "text": "宝贝"
+    },
+    {
+      "avg_logprob": -0.685825,
+      "compression_ratio": 10.714286,
+      "end": 263.48,
+      "no_speech_prob": 0.0,
+      "start": 263.22,
+      "text": "宝贝"
+    },
+    {
+      "avg_logprob": -0.685825,
+      "compression_ratio": 10.714286,
+      "end": 263.74,
+      "no_speech_prob": 0.0,
+      "start": 263.48,
+      "text": "宝贝"
+    },
+    {
+      "avg_logprob": -0.685825,
+      "compression_ratio": 10.714286,
+      "end": 264.02,
+      "no_speech_prob": 0.0,
+      "start": 263.74,
+      "text": "宝贝"
+    },
+    {
+      "avg_logprob": -0.685825,
+      "compression_ratio": 10.714286,
+      "end": 264.3,
+      "no_speech_prob": 0.0,
+      "start": 264.02,
+      "text": "宝贝"
+    },
+    {
+      "avg_logprob": -0.685825,
+      "compression_ratio": 10.714286,
+      "end": 264.8,
+      "no_speech_prob": 0.0,
+      "start": 264.3,
+      "text": "宝贝"
+    },
+    {
+      "avg_logprob": -0.685825,
+      "compression_ratio": 10.714286,
+      "end": 265.34,
+      "no_speech_prob": 0.0,
+      "start": 264.8,
+      "text": "宝贝"
+    },
+    {
+      "avg_logprob": -0.685825,
+      "compression_ratio": 10.714286,
+      "end": 265.68,
+      "no_speech_prob": 0.0,
+      "start": 265.34,
+      "text": "宝贝"
+    },
+    {
+      "avg_logprob": -0.685825,
+      "compression_ratio": 10.714286,
+      "end": 265.94,
+      "no_speech_prob": 0.0,
+      "start": 265.68,
+      "text": "宝贝"
+    },
+    {
+      "avg_logprob": -0.685825,
+      "compression_ratio": 10.714286,
+      "end": 266.32,
+      "no_speech_prob": 0.0,
+      "start": 265.94,
+      "text": "宝贝"
+    },
+    {
+      "avg_logprob": -0.685825,
+      "compression_ratio": 10.714286,
+      "end": 266.78,
+      "no_speech_prob": 0.0,
+      "start": 266.32,
+      "text": "宝贝"
+    },
+    {
+      "avg_logprob": -0.685825,
+      "compression_ratio": 10.714286,
+      "end": 267.22,
+      "no_speech_prob": 0.0,
+      "start": 266.78,
+      "text": "宝贝"
+    },
+    {
+      "avg_logprob": -0.685825,
+      "compression_ratio": 10.714286,
+      "end": 267.44,
+      "no_speech_prob": 0.0,
+      "start": 267.22,
+      "text": "宝贝"
+    },
+    {
+      "avg_logprob": -0.685825,
+      "compression_ratio": 10.714286,
+      "end": 267.72,
+      "no_speech_prob": 0.0,
+      "start": 267.44,
+      "text": "宝贝"
+    },
+    {
+      "avg_logprob": -0.685825,
+      "compression_ratio": 10.714286,
+      "end": 267.88,
+      "no_speech_prob": 0.0,
+      "start": 267.72,
+      "text": "宝贝"
+    },
+    {
+      "avg_logprob": -0.685825,
+      "compression_ratio": 10.714286,
+      "end": 268.12,
+      "no_speech_prob": 0.0,
+      "start": 267.88,
+      "text": "宝贝"
+    },
+    {
+      "avg_logprob": -0.685825,
+      "compression_ratio": 10.714286,
+      "end": 268.34,
+      "no_speech_prob": 0.0,
+      "start": 268.12,
+      "text": "宝贝"
+    },
+    {
+      "avg_logprob": -0.685825,
+      "compression_ratio": 10.714286,
+      "end": 268.64,
+      "no_speech_prob": 0.0,
+      "start": 268.34,
+      "text": "宝贝"
+    },
+    {
+      "avg_logprob": -0.685825,
+      "compression_ratio": 10.714286,
+      "end": 268.86,
+      "no_speech_prob": 0.0,
+      "start": 268.64,
+      "text": "宝贝"
+    },
+    {
+      "avg_logprob": -0.685825,
+      "compression_ratio": 10.714286,
+      "end": 269.24,
+      "no_speech_prob": 0.0,
+      "start": 268.86,
+      "text": "宝贝"
+    },
+    {
+      "avg_logprob": -0.685825,
+      "compression_ratio": 10.714286,
+      "end": 269.46,
+      "no_speech_prob": 0.0,
+      "start": 269.24,
+      "text": "宝贝"
+    },
+    {
+      "avg_logprob": -0.685825,
+      "compression_ratio": 10.714286,
+      "end": 269.74,
+      "no_speech_prob": 0.0,
+      "start": 269.46,
+      "text": "宝贝"
+    },
+    {
+      "avg_logprob": -0.685825,
+      "compression_ratio": 10.714286,
+      "end": 270.16,
+      "no_speech_prob": 0.0,
+      "start": 269.74,
+      "text": "宝贝"
+    },
+    {
+      "avg_logprob": -0.685825,
+      "compression_ratio": 10.714286,
+      "end": 270.44,
+      "no_speech_prob": 0.0,
+      "start": 270.16,
+      "text": "宝贝"
+    },
+    {
+      "avg_logprob": -0.685825,
+      "compression_ratio": 10.714286,
+      "end": 270.8,
+      "no_speech_prob": 0.0,
+      "start": 270.44,
+      "text": "宝贝"
+    },
+    {
+      "avg_logprob": -1.110228,
+      "compression_ratio": 8.071429,
+      "end": 274.18,
+      "no_speech_prob": 0.0,
+      "start": 270.8,
+      "text": "最新兵的地补"
+    },
+    {
+      "avg_logprob": -1.110228,
+      "compression_ratio": 8.071429,
+      "end": 276.02,
+      "no_speech_prob": 0.0,
+      "start": 274.2,
+      "text": "生殖吧"
+    },
+    {
+      "avg_logprob": -1.110228,
+      "compression_ratio": 8.071429,
+      "end": 277.56,
+      "no_speech_prob": 0.0,
+      "start": 276.04,
+      "text": "生殖吧"
+    },
+    {
+      "avg_logprob": -1.110228,
+      "compression_ratio": 8.071429,
+      "end": 279.04,
+      "no_speech_prob": 0.0,
+      "start": 277.58,
+      "text": "生殖吧"
+    },
+    {
+      "avg_logprob": -1.110228,
+      "compression_ratio": 8.071429,
+      "end": 280.28,
+      "no_speech_prob": 0.0,
+      "start": 279.06,
+      "text": "生殖吧"
+    },
+    {
+      "avg_logprob": -1.110228,
+      "compression_ratio": 8.071429,
+      "end": 281.8,
+      "no_speech_prob": 0.0,
+      "start": 280.3,
+      "text": "生殖吧"
+    },
+    {
+      "avg_logprob": -1.110228,
+      "compression_ratio": 8.071429,
+      "end": 283.06,
+      "no_speech_prob": 0.0,
+      "start": 281.82,
+      "text": "生殖吧"
+    },
+    {
+      "avg_logprob": -1.110228,
+      "compression_ratio": 8.071429,
+      "end": 284.1,
+      "no_speech_prob": 0.0,
+      "start": 283.08,
+      "text": "生殖吧"
+    },
+    {
+      "avg_logprob": -1.110228,
+      "compression_ratio": 8.071429,
+      "end": 285.08,
+      "no_speech_prob": 0.0,
+      "start": 284.12,
+      "text": "生殖吧"
+    },
+    {
+      "avg_logprob": -1.110228,
+      "compression_ratio": 8.071429,
+      "end": 286.0,
+      "no_speech_prob": 0.0,
+      "start": 285.1,
+      "text": "生殖吧"
+    },
+    {
+      "avg_logprob": -1.110228,
+      "compression_ratio": 8.071429,
+      "end": 286.58,
+      "no_speech_prob": 0.0,
+      "start": 286.02,
+      "text": "生殖吧"
+    },
+    {
+      "avg_logprob": -1.110228,
+      "compression_ratio": 8.071429,
+      "end": 287.3,
+      "no_speech_prob": 0.0,
+      "start": 286.6,
+      "text": "生殖吧"
+    },
+    {
+      "avg_logprob": -1.110228,
+      "compression_ratio": 8.071429,
+      "end": 287.92,
+      "no_speech_prob": 0.0,
+      "start": 287.32,
+      "text": "生殖吧"
+    },
+    {
+      "avg_logprob": -1.110228,
+      "compression_ratio": 8.071429,
+      "end": 288.72,
+      "no_speech_prob": 0.0,
+      "start": 287.94,
+      "text": "生殖吧"
+    },
+    {
+      "avg_logprob": -1.110228,
+      "compression_ratio": 8.071429,
+      "end": 289.46,
+      "no_speech_prob": 0.0,
+      "start": 288.74,
+      "text": "生殖吧"
+    },
+    {
+      "avg_logprob": -1.110228,
+      "compression_ratio": 8.071429,
+      "end": 290.1,
+      "no_speech_prob": 0.0,
+      "start": 289.48,
+      "text": "生殖吧"
+    },
+    {
+      "avg_logprob": -1.110228,
+      "compression_ratio": 8.071429,
+      "end": 290.6,
+      "no_speech_prob": 0.0,
+      "start": 290.12,
+      "text": "生殖吧"
+    },
+    {
+      "avg_logprob": -1.110228,
+      "compression_ratio": 8.071429,
+      "end": 291.1,
+      "no_speech_prob": 0.0,
+      "start": 290.62,
+      "text": "生殖吧"
+    },
+    {
+      "avg_logprob": -1.110228,
+      "compression_ratio": 8.071429,
+      "end": 291.64,
+      "no_speech_prob": 0.0,
+      "start": 291.12,
+      "text": "生殖吧"
+    },
+    {
+      "avg_logprob": -1.110228,
+      "compression_ratio": 8.071429,
+      "end": 292.18,
+      "no_speech_prob": 0.0,
+      "start": 291.66,
+      "text": "生殖吧"
+    },
+    {
+      "avg_logprob": -1.110228,
+      "compression_ratio": 8.071429,
+      "end": 292.7,
+      "no_speech_prob": 0.0,
+      "start": 292.2,
+      "text": "生殖吧"
+    },
+    {
+      "avg_logprob": -1.110228,
+      "compression_ratio": 8.071429,
+      "end": 293.38,
+      "no_speech_prob": 0.0,
+      "start": 292.72,
+      "text": "生殖吧"
+    },
+    {
+      "avg_logprob": -1.110228,
+      "compression_ratio": 8.071429,
+      "end": 293.94,
+      "no_speech_prob": 0.0,
+      "start": 293.4,
+      "text": "生殖吧"
+    },
+    {
+      "avg_logprob": -1.110228,
+      "compression_ratio": 8.071429,
+      "end": 294.48,
+      "no_speech_prob": 0.0,
+      "start": 293.96,
+      "text": "生殖吧"
+    },
+    {
+      "avg_logprob": -1.110228,
+      "compression_ratio": 8.071429,
+      "end": 295.14,
+      "no_speech_prob": 0.0,
+      "start": 294.5,
+      "text": "生殖吧"
+    },
+    {
+      "avg_logprob": -1.110228,
+      "compression_ratio": 8.071429,
+      "end": 295.66,
+      "no_speech_prob": 0.0,
+      "start": 295.16,
+      "text": "生殖吧"
+    },
+    {
+      "avg_logprob": -1.110228,
+      "compression_ratio": 8.071429,
+      "end": 296.22,
+      "no_speech_prob": 0.0,
+      "start": 295.68,
+      "text": "生殖吧"
+    },
+    {
+      "avg_logprob": -1.110228,
+      "compression_ratio": 8.071429,
+      "end": 296.74,
+      "no_speech_prob": 0.0,
+      "start": 296.24,
+      "text": "生殖吧"
+    },
+    {
+      "avg_logprob": -1.110228,
+      "compression_ratio": 8.071429,
+      "end": 297.2,
+      "no_speech_prob": 0.0,
+      "start": 296.76,
+      "text": "生殖吧"
+    },
+    {
+      "avg_logprob": -1.110228,
+      "compression_ratio": 8.071429,
+      "end": 297.64,
+      "no_speech_prob": 0.0,
+      "start": 297.22,
+      "text": "生殖吧"
+    },
+    {
+      "avg_logprob": -1.110228,
+      "compression_ratio": 8.071429,
+      "end": 297.98,
+      "no_speech_prob": 0.0,
+      "start": 297.66,
+      "text": "生殖吧"
+    },
+    {
+      "avg_logprob": -1.110228,
+      "compression_ratio": 8.071429,
+      "end": 298.24,
+      "no_speech_prob": 0.0,
+      "start": 298.0,
+      "text": "生殖吧"
+    },
+    {
+      "avg_logprob": -1.110228,
+      "compression_ratio": 8.071429,
+      "end": 298.5,
+      "no_speech_prob": 0.0,
+      "start": 298.26,
+      "text": "生殖吧"
+    },
+    {
+      "avg_logprob": -1.110228,
+      "compression_ratio": 8.071429,
+      "end": 298.7,
+      "no_speech_prob": 0.0,
+      "start": 298.52,
+      "text": "生殖吧"
+    },
+    {
+      "avg_logprob": -1.110228,
+      "compression_ratio": 8.071429,
+      "end": 298.98,
+      "no_speech_prob": 0.0,
+      "start": 298.72,
+      "text": "生殖吧"
+    },
+    {
+      "avg_logprob": -1.110228,
+      "compression_ratio": 8.071429,
+      "end": 299.26,
+      "no_speech_prob": 0.0,
+      "start": 299.0,
+      "text": "生殖吧"
+    },
+    {
+      "avg_logprob": -0.524307,
+      "compression_ratio": 1.021739,
+      "end": 300.26,
+      "no_speech_prob": 0.0,
+      "start": 299.26,
+      "text": "你认了吗"
+    },
+    {
+      "avg_logprob": -0.524307,
+      "compression_ratio": 1.021739,
+      "end": 303.26,
+      "no_speech_prob": 0.0,
+      "start": 301.26,
+      "text": "行动 行动 行动"
+    },
+    {
+      "avg_logprob": -0.524307,
+      "compression_ratio": 1.021739,
+      "end": 305.26,
+      "no_speech_prob": 0.0,
+      "start": 304.26,
+      "text": "中共已完了"
+    },
+    {
+      "avg_logprob": -0.771167,
+      "compression_ratio": 12.521739,
+      "end": 330.86,
+      "no_speech_prob": 0.0,
+      "start": 329.26,
+      "text": "补凉好"
+    },
+    {
+      "avg_logprob": -0.771167,
+      "compression_ratio": 12.521739,
+      "end": 331.86,
+      "no_speech_prob": 0.0,
+      "start": 330.86,
+      "text": "补凉好"
+    },
+    {
+      "avg_logprob": -0.771167,
+      "compression_ratio": 12.521739,
+      "end": 332.92,
+      "no_speech_prob": 0.0,
+      "start": 331.86,
+      "text": "补凉好"
+    },
+    {
+      "avg_logprob": -0.771167,
+      "compression_ratio": 12.521739,
+      "end": 333.92,
+      "no_speech_prob": 0.0,
+      "start": 332.92,
+      "text": "补凉好"
+    },
+    {
+      "avg_logprob": -0.771167,
+      "compression_ratio": 12.521739,
+      "end": 334.86,
+      "no_speech_prob": 0.0,
+      "start": 333.92,
+      "text": "补凉好"
+    },
+    {
+      "avg_logprob": -0.771167,
+      "compression_ratio": 12.521739,
+      "end": 335.82,
+      "no_speech_prob": 0.0,
+      "start": 334.86,
+      "text": "补凉好"
+    },
+    {
+      "avg_logprob": -0.771167,
+      "compression_ratio": 12.521739,
+      "end": 336.76,
+      "no_speech_prob": 0.0,
+      "start": 335.82,
+      "text": "补凉好"
+    },
+    {
+      "avg_logprob": -0.771167,
+      "compression_ratio": 12.521739,
+      "end": 337.68,
+      "no_speech_prob": 0.0,
+      "start": 336.76,
+      "text": "补凉好"
+    },
+    {
+      "avg_logprob": -0.771167,
+      "compression_ratio": 12.521739,
+      "end": 338.36,
+      "no_speech_prob": 0.0,
+      "start": 337.68,
+      "text": "补凉好"
+    },
+    {
+      "avg_logprob": -0.771167,
+      "compression_ratio": 12.521739,
+      "end": 339.2,
+      "no_speech_prob": 0.0,
+      "start": 338.36,
+      "text": "补凉好"
+    },
+    {
+      "avg_logprob": -0.771167,
+      "compression_ratio": 12.521739,
+      "end": 339.92,
+      "no_speech_prob": 0.0,
+      "start": 339.2,
+      "text": "补凉好"
+    },
+    {
+      "avg_logprob": -0.771167,
+      "compression_ratio": 12.521739,
+      "end": 340.56,
+      "no_speech_prob": 0.0,
+      "start": 339.92,
+      "text": "补凉好"
+    },
+    {
+      "avg_logprob": -0.771167,
+      "compression_ratio": 12.521739,
+      "end": 341.44,
+      "no_speech_prob": 0.0,
+      "start": 340.56,
+      "text": "补凉好"
+    },
+    {
+      "avg_logprob": -0.771167,
+      "compression_ratio": 12.521739,
+      "end": 342.06,
+      "no_speech_prob": 0.0,
+      "start": 341.44,
+      "text": "补凉好"
+    },
+    {
+      "avg_logprob": -0.771167,
+      "compression_ratio": 12.521739,
+      "end": 342.68,
+      "no_speech_prob": 0.0,
+      "start": 342.06,
+      "text": "补凉好"
+    },
+    {
+      "avg_logprob": -0.771167,
+      "compression_ratio": 12.521739,
+      "end": 343.32,
+      "no_speech_prob": 0.0,
+      "start": 342.68,
+      "text": "补凉好"
+    },
+    {
+      "avg_logprob": -0.771167,
+      "compression_ratio": 12.521739,
+      "end": 343.94,
+      "no_speech_prob": 0.0,
+      "start": 343.32,
+      "text": "补凉好"
+    },
+    {
+      "avg_logprob": -0.771167,
+      "compression_ratio": 12.521739,
+      "end": 344.48,
+      "no_speech_prob": 0.0,
+      "start": 343.94,
+      "text": "补凉好"
+    },
+    {
+      "avg_logprob": -0.771167,
+      "compression_ratio": 12.521739,
+      "end": 345.1,
+      "no_speech_prob": 0.0,
+      "start": 344.48,
+      "text": "补凉好"
+    },
+    {
+      "avg_logprob": -0.771167,
+      "compression_ratio": 12.521739,
+      "end": 345.62,
+      "no_speech_prob": 0.0,
+      "start": 345.1,
+      "text": "补凉好"
+    },
+    {
+      "avg_logprob": -0.771167,
+      "compression_ratio": 12.521739,
+      "end": 346.12,
+      "no_speech_prob": 0.0,
+      "start": 345.62,
+      "text": "补凉好"
+    },
+    {
+      "avg_logprob": -0.771167,
+      "compression_ratio": 12.521739,
+      "end": 346.64,
+      "no_speech_prob": 0.0,
+      "start": 346.12,
+      "text": "补凉好"
+    },
+    {
+      "avg_logprob": -0.771167,
+      "compression_ratio": 12.521739,
+      "end": 347.16,
+      "no_speech_prob": 0.0,
+      "start": 346.64,
+      "text": "补凉好"
+    },
+    {
+      "avg_logprob": -0.771167,
+      "compression_ratio": 12.521739,
+      "end": 347.62,
+      "no_speech_prob": 0.0,
+      "start": 347.16,
+      "text": "补凉好"
+    },
+    {
+      "avg_logprob": -0.771167,
+      "compression_ratio": 12.521739,
+      "end": 347.92,
+      "no_speech_prob": 0.0,
+      "start": 347.62,
+      "text": "补凉好"
+    },
+    {
+      "avg_logprob": -0.771167,
+      "compression_ratio": 12.521739,
+      "end": 348.36,
+      "no_speech_prob": 0.0,
+      "start": 347.92,
+      "text": "补凉好"
+    },
+    {
+      "avg_logprob": -0.771167,
+      "compression_ratio": 12.521739,
+      "end": 349.0,
+      "no_speech_prob": 0.0,
+      "start": 348.36,
+      "text": "补凉好"
+    },
+    {
+      "avg_logprob": -0.771167,
+      "compression_ratio": 12.521739,
+      "end": 349.32,
+      "no_speech_prob": 0.0,
+      "start": 349.0,
+      "text": "补凉好"
+    },
+    {
+      "avg_logprob": -0.771167,
+      "compression_ratio": 12.521739,
+      "end": 349.74,
+      "no_speech_prob": 0.0,
+      "start": 349.32,
+      "text": "补凉好"
+    },
+    {
+      "avg_logprob": -0.771167,
+      "compression_ratio": 12.521739,
+      "end": 350.16,
+      "no_speech_prob": 0.0,
+      "start": 349.74,
+      "text": "补凉好"
+    },
+    {
+      "avg_logprob": -0.771167,
+      "compression_ratio": 12.521739,
+      "end": 350.64,
+      "no_speech_prob": 0.0,
+      "start": 350.16,
+      "text": "补凉好"
+    },
+    {
+      "avg_logprob": -0.771167,
+      "compression_ratio": 12.521739,
+      "end": 351.06,
+      "no_speech_prob": 0.0,
+      "start": 350.64,
+      "text": "补凉好"
+    },
+    {
+      "avg_logprob": -0.385386,
+      "compression_ratio": 1.710526,
+      "end": 360.26,
+      "no_speech_prob": 0.0,
+      "start": 359.26,
+      "text": "CCP"
+    },
+    {
+      "avg_logprob": -0.385386,
+      "compression_ratio": 1.710526,
+      "end": 363.14,
+      "no_speech_prob": 0.0,
+      "start": 360.26,
+      "text": "They have all lied for too long"
+    },
+    {
+      "avg_logprob": -0.385386,
+      "compression_ratio": 1.710526,
+      "end": 365.78,
+      "no_speech_prob": 0.0,
+      "start": 363.14,
+      "text": "We will end what they do wrong"
+    },
+    {
+      "avg_logprob": -0.385386,
+      "compression_ratio": 1.710526,
+      "end": 367.78,
+      "no_speech_prob": 0.0,
+      "start": 365.78,
+      "text": "Spread the word of the wrong"
+    },
+    {
+      "avg_logprob": -0.385386,
+      "compression_ratio": 1.710526,
+      "end": 370.16,
+      "no_speech_prob": 0.0,
+      "start": 367.78,
+      "text": "Come let's take down the CCP"
+    },
+    {
+      "avg_logprob": -0.385386,
+      "compression_ratio": 1.710526,
+      "end": 373.66,
+      "no_speech_prob": 0.0,
+      "start": 370.16,
+      "text": "The bullet's dry a little longer"
+    },
+    {
+      "avg_logprob": -0.385386,
+      "compression_ratio": 1.710526,
+      "end": 376.32,
+      "no_speech_prob": 0.0,
+      "start": 373.66,
+      "text": "And you will surrender"
+    },
+    {
+      "avg_logprob": -0.385386,
+      "compression_ratio": 1.710526,
+      "end": 380.76,
+      "no_speech_prob": 0.0,
+      "start": 376.32,
+      "text": "The bullet's dry a little longer"
+    },
+    {
+      "avg_logprob": -0.385386,
+      "compression_ratio": 1.710526,
+      "end": 383.8,
+      "no_speech_prob": 0.0,
+      "start": 380.76,
+      "text": "We will have freedom to live"
+    },
+    {
+      "avg_logprob": -0.385386,
+      "compression_ratio": 1.710526,
+      "end": 386.44,
+      "no_speech_prob": 0.0,
+      "start": 383.8,
+      "text": "We will win your surrender"
+    },
+    {
+      "avg_logprob": -0.735514,
+      "compression_ratio": 1.602339,
+      "end": 393.48,
+      "no_speech_prob": 0.0,
+      "start": 389.26,
+      "text": "Let the bullet's dry a little longer"
+    },
+    {
+      "avg_logprob": -0.735514,
+      "compression_ratio": 1.602339,
+      "end": 394.6,
+      "no_speech_prob": 0.0,
+      "start": 393.48,
+      "text": "China"
+    },
+    {
+      "avg_logprob": -0.735514,
+      "compression_ratio": 1.602339,
+      "end": 396.94,
+      "no_speech_prob": 0.0,
+      "start": 394.6,
+      "text": "Let the bullet's dry a little longer"
+    },
+    {
+      "avg_logprob": -0.735514,
+      "compression_ratio": 1.602339,
+      "end": 398.66,
+      "no_speech_prob": 0.0,
+      "start": 396.94,
+      "text": "Let the bullet's dry a little longer"
+    },
+    {
+      "avg_logprob": -0.735514,
+      "compression_ratio": 1.602339,
+      "end": 399.52,
+      "no_speech_prob": 0.0,
+      "start": 398.66,
+      "text": "China"
+    },
+    {
+      "avg_logprob": -0.735514,
+      "compression_ratio": 1.602339,
+      "end": 401.14,
+      "no_speech_prob": 0.0,
+      "start": 399.52,
+      "text": "Let the bullet's dry a little longer"
+    },
+    {
+      "avg_logprob": -0.735514,
+      "compression_ratio": 1.602339,
+      "end": 401.96,
+      "no_speech_prob": 0.0,
+      "start": 401.14,
+      "text": "Stand me"
+    },
+    {
+      "avg_logprob": -0.735514,
+      "compression_ratio": 1.602339,
+      "end": 403.64,
+      "no_speech_prob": 0.0,
+      "start": 401.96,
+      "text": "中國共產黨"
+    },
+    {
+      "avg_logprob": -0.735514,
+      "compression_ratio": 1.602339,
+      "end": 406.18,
+      "no_speech_prob": 0.0,
+      "start": 403.64,
+      "text": "這個CCP"
+    },
+    {
+      "avg_logprob": -0.735514,
+      "compression_ratio": 1.602339,
+      "end": 408.68,
+      "no_speech_prob": 0.0,
+      "start": 406.18,
+      "text": "還能讓我們遠離恐懼"
+    },
+    {
+      "avg_logprob": -0.735514,
+      "compression_ratio": 1.602339,
+      "end": 411.52,
+      "no_speech_prob": 0.0,
+      "start": 408.68,
+      "text": "Pick up the CCP"
+    },
+    {
+      "avg_logprob": -0.735514,
+      "compression_ratio": 1.602339,
+      "end": 414.64,
+      "no_speech_prob": 0.0,
+      "start": 411.52,
+      "text": "They tried to scare the nation"
+    },
+    {
+      "avg_logprob": -0.735514,
+      "compression_ratio": 1.602339,
+      "end": 418.46,
+      "no_speech_prob": 0.0,
+      "start": 414.64,
+      "text": "With fabrication"
+    },
+    {
+      "avg_logprob": -0.353029,
+      "compression_ratio": 1.680952,
+      "end": 419.68,
+      "no_speech_prob": 0.0,
+      "start": 418.46,
+      "text": "So we see through the lies"
+    },
+    {
+      "avg_logprob": -0.353029,
+      "compression_ratio": 1.680952,
+      "end": 420.26,
+      "no_speech_prob": 0.0,
+      "start": 419.68,
+      "text": "We won't fall"
+    },
+    {
+      "avg_logprob": -0.353029,
+      "compression_ratio": 1.680952,
+      "end": 421.46,
+      "no_speech_prob": 0.0,
+      "start": 420.26,
+      "text": "We will fight you back"
+    },
+    {
+      "avg_logprob": -0.353029,
+      "compression_ratio": 1.680952,
+      "end": 422.68,
+      "no_speech_prob": 0.0,
+      "start": 421.46,
+      "text": "Police corruption"
+    },
+    {
+      "avg_logprob": -0.353029,
+      "compression_ratio": 1.680952,
+      "end": 425.68,
+      "no_speech_prob": 0.0,
+      "start": 422.68,
+      "text": "With crooked assumption"
+    },
+    {
+      "avg_logprob": -0.353029,
+      "compression_ratio": 1.680952,
+      "end": 428.14,
+      "no_speech_prob": 0.0,
+      "start": 425.68,
+      "text": "They ran our lives"
+    },
+    {
+      "avg_logprob": -0.353029,
+      "compression_ratio": 1.680952,
+      "end": 429.08,
+      "no_speech_prob": 0.0,
+      "start": 428.14,
+      "text": "But no more"
+    },
+    {
+      "avg_logprob": -0.353029,
+      "compression_ratio": 1.680952,
+      "end": 429.68,
+      "no_speech_prob": 0.0,
+      "start": 429.08,
+      "text": "We will win"
+    },
+    {
+      "avg_logprob": -0.353029,
+      "compression_ratio": 1.680952,
+      "end": 431.68,
+      "no_speech_prob": 0.0,
+      "start": 429.68,
+      "text": "We will take down the CCP"
+    },
+    {
+      "avg_logprob": -0.353029,
+      "compression_ratio": 1.680952,
+      "end": 433.94,
+      "no_speech_prob": 0.0,
+      "start": 431.68,
+      "text": "Spread the word all through Hong Kong"
+    },
+    {
+      "avg_logprob": -0.353029,
+      "compression_ratio": 1.680952,
+      "end": 436.68,
+      "no_speech_prob": 0.0,
+      "start": 433.94,
+      "text": "We will fight till they're all gone"
+    },
+    {
+      "avg_logprob": -0.353029,
+      "compression_ratio": 1.680952,
+      "end": 438.68,
+      "no_speech_prob": 0.0,
+      "start": 436.68,
+      "text": "We rejoice when there's no more"
+    },
+    {
+      "avg_logprob": -0.353029,
+      "compression_ratio": 1.680952,
+      "end": 441.52,
+      "no_speech_prob": 0.0,
+      "start": 438.68,
+      "text": "Let's take down the CCP"
+    },
+    {
+      "avg_logprob": -0.353029,
+      "compression_ratio": 1.680952,
+      "end": 444.06,
+      "no_speech_prob": 0.0,
+      "start": 441.52,
+      "text": "They have all lied for too long"
+    },
+    {
+      "avg_logprob": -0.353029,
+      "compression_ratio": 1.680952,
+      "end": 446.68,
+      "no_speech_prob": 0.0,
+      "start": 444.06,
+      "text": "We will end what they do wrong"
+    },
+    {
+      "avg_logprob": -0.274264,
+      "compression_ratio": 1.88189,
+      "end": 448.9,
+      "no_speech_prob": 0.0,
+      "start": 446.68,
+      "text": "Spread the word of the Hong Kong"
+    },
+    {
+      "avg_logprob": -0.274264,
+      "compression_ratio": 1.88189,
+      "end": 450.9,
+      "no_speech_prob": 0.0,
+      "start": 448.9,
+      "text": "Let's take down the CCP"
+    },
+    {
+      "avg_logprob": -0.274264,
+      "compression_ratio": 1.88189,
+      "end": 454.9,
+      "no_speech_prob": 0.0,
+      "start": 450.9,
+      "text": "Let the bullet's dry a little longer"
+    },
+    {
+      "avg_logprob": -0.274264,
+      "compression_ratio": 1.88189,
+      "end": 459.9,
+      "no_speech_prob": 0.0,
+      "start": 454.9,
+      "text": "And you will surrender"
+    },
+    {
+      "avg_logprob": -0.274264,
+      "compression_ratio": 1.88189,
+      "end": 461.9,
+      "no_speech_prob": 0.0,
+      "start": 459.9,
+      "text": "Let the bullet's dry a little longer"
+    },
+    {
+      "avg_logprob": -0.274264,
+      "compression_ratio": 1.88189,
+      "end": 464.62,
+      "no_speech_prob": 0.0,
+      "start": 461.9,
+      "text": "We will have freedom to live"
+    },
+    {
+      "avg_logprob": -0.274264,
+      "compression_ratio": 1.88189,
+      "end": 469.9,
+      "no_speech_prob": 0.0,
+      "start": 464.62,
+      "text": "We will win your surrender"
+    },
+    {
+      "avg_logprob": -0.274264,
+      "compression_ratio": 1.88189,
+      "end": 471.9,
+      "no_speech_prob": 0.0,
+      "start": 469.9,
+      "text": "Let the bullet's dry a little longer"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 13.542373,
+      "end": 473.82,
+      "no_speech_prob": 0.0,
+      "start": 471.9,
+      "text": "Let the bullet's dry a little longer"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 13.542373,
+      "end": 474.16,
+      "no_speech_prob": 0.0,
+      "start": 473.82,
+      "text": "Let the bullet's dry a little longer"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 13.542373,
+      "end": 474.7,
+      "no_speech_prob": 0.0,
+      "start": 474.16,
+      "text": "Let the bullet's dry a little longer"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 13.542373,
+      "end": 475.66,
+      "no_speech_prob": 0.0,
+      "start": 474.7,
+      "text": "Let the bullet's dry a little longer"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 13.542373,
+      "end": 476.4,
+      "no_speech_prob": 0.0,
+      "start": 475.66,
+      "text": "Let the bullet's dry a little longer"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 13.542373,
+      "end": 476.94,
+      "no_speech_prob": 0.0,
+      "start": 476.4,
+      "text": "Let the bullet's dry a little longer"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 13.542373,
+      "end": 477.5,
+      "no_speech_prob": 0.0,
+      "start": 476.94,
+      "text": "Let the bullet's dry a little longer"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 13.542373,
+      "end": 478.04,
+      "no_speech_prob": 0.0,
+      "start": 477.5,
+      "text": "Let the bullet's dry a little longer"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 13.542373,
+      "end": 478.62,
+      "no_speech_prob": 0.0,
+      "start": 478.04,
+      "text": "Let the bullet's dry a little longer"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 13.542373,
+      "end": 479.08,
+      "no_speech_prob": 0.0,
+      "start": 478.62,
+      "text": "Let the bullet's dry a little longer"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 13.542373,
+      "end": 479.52,
+      "no_speech_prob": 0.0,
+      "start": 479.08,
+      "text": "Let the bullet's dry a little longer"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 13.542373,
+      "end": 479.84,
+      "no_speech_prob": 0.0,
+      "start": 479.52,
+      "text": "Let the bullet's dry a little longer"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 13.542373,
+      "end": 480.34,
+      "no_speech_prob": 0.0,
+      "start": 479.84,
+      "text": "Let the bullet's dry a little longer"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 13.542373,
+      "end": 480.78,
+      "no_speech_prob": 0.0,
+      "start": 480.34,
+      "text": "Let the bullet's dry a little longer"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 13.542373,
+      "end": 481.28,
+      "no_speech_prob": 0.0,
+      "start": 480.78,
+      "text": "Let the bullet's dry a little longer"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 13.542373,
+      "end": 481.66,
+      "no_speech_prob": 0.0,
+      "start": 481.28,
+      "text": "Let the bullet's dry a little longer"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 13.542373,
+      "end": 481.82,
+      "no_speech_prob": 0.0,
+      "start": 481.66,
+      "text": "Let the bullet's dry a little longer"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 13.542373,
+      "end": 482.08,
+      "no_speech_prob": 0.0,
+      "start": 481.82,
+      "text": "Let the bullet's dry a little longer"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 13.542373,
+      "end": 482.38,
+      "no_speech_prob": 0.0,
+      "start": 482.08,
+      "text": "Let the bullet's dry a little longer"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 13.542373,
+      "end": 482.68,
+      "no_speech_prob": 0.0,
+      "start": 482.38,
+      "text": "Let the bullet's dry a little longer"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 13.542373,
+      "end": 482.92,
+      "no_speech_prob": 0.0,
+      "start": 482.68,
+      "text": "Let the bullet's dry a little longer"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 13.542373,
+      "end": 483.04,
+      "no_speech_prob": 0.0,
+      "start": 482.92,
+      "text": "Let the bullet's dry a little longer"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 2.0,
+      "end": 485.04,
+      "no_speech_prob": 0.0,
+      "start": 483.04,
+      "text": "!"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 2.0,
+      "end": 487.04,
+      "no_speech_prob": 0.0,
+      "start": 485.04,
+      "text": "!"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 2.0,
+      "end": 489.04,
+      "no_speech_prob": 0.0,
+      "start": 487.04,
+      "text": "!"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 2.0,
+      "end": 491.04,
+      "no_speech_prob": 0.0,
+      "start": 489.04,
+      "text": "!"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 2.0,
+      "end": 493.04,
+      "no_speech_prob": 0.0,
+      "start": 491.04,
+      "text": "!"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 2.0,
+      "end": 495.04,
+      "no_speech_prob": 0.0,
+      "start": 493.04,
+      "text": "!"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 2.0,
+      "end": 497.04,
+      "no_speech_prob": 0.0,
+      "start": 495.04,
+      "text": "!"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 2.0,
+      "end": 499.04,
+      "no_speech_prob": 0.0,
+      "start": 497.04,
+      "text": "!"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 2.0,
+      "end": 501.04,
+      "no_speech_prob": 0.0,
+      "start": 499.04,
+      "text": "!"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 2.0,
+      "end": 503.04,
+      "no_speech_prob": 0.0,
+      "start": 501.04,
+      "text": "!"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 2.0,
+      "end": 505.04,
+      "no_speech_prob": 0.0,
+      "start": 503.04,
+      "text": "!"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 2.0,
+      "end": 507.04,
+      "no_speech_prob": 0.0,
+      "start": 505.04,
+      "text": "!"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 2.0,
+      "end": 509.04,
+      "no_speech_prob": 0.0,
+      "start": 507.04,
+      "text": "!"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 2.0,
+      "end": 511.04,
+      "no_speech_prob": 0.0,
+      "start": 509.04,
+      "text": "!"
+    },
+    {
+      "avg_logprob": -0.290243,
+      "compression_ratio": 1.454545,
+      "end": 515.04,
+      "no_speech_prob": 0.0,
+      "start": 513.04,
+      "text": "!"
+    },
+    {
+      "avg_logprob": -0.290243,
+      "compression_ratio": 1.454545,
+      "end": 517.04,
+      "no_speech_prob": 0.0,
+      "start": 515.04,
+      "text": "!"
+    },
+    {
+      "avg_logprob": -0.290243,
+      "compression_ratio": 1.454545,
+      "end": 519.04,
+      "no_speech_prob": 0.0,
+      "start": 517.04,
+      "text": "!"
+    },
+    {
+      "avg_logprob": -0.290243,
+      "compression_ratio": 1.454545,
+      "end": 521.04,
+      "no_speech_prob": 0.0,
+      "start": 519.04,
+      "text": "!"
+    },
+    {
+      "avg_logprob": -0.290243,
+      "compression_ratio": 1.454545,
+      "end": 523.04,
+      "no_speech_prob": 0.0,
+      "start": 521.04,
+      "text": "!"
+    },
+    {
+      "avg_logprob": -0.290243,
+      "compression_ratio": 1.454545,
+      "end": 525.04,
+      "no_speech_prob": 0.0,
+      "start": 523.04,
+      "text": "!"
+    },
+    {
+      "avg_logprob": -0.290243,
+      "compression_ratio": 1.454545,
+      "end": 527.04,
+      "no_speech_prob": 0.0,
+      "start": 525.04,
+      "text": "!"
+    },
+    {
+      "avg_logprob": -0.290243,
+      "compression_ratio": 1.454545,
+      "end": 529.04,
+      "no_speech_prob": 0.0,
+      "start": 527.04,
+      "text": "!"
+    },
+    {
+      "avg_logprob": -0.290243,
+      "compression_ratio": 1.454545,
+      "end": 531.04,
+      "no_speech_prob": 0.0,
+      "start": 529.04,
+      "text": "!"
+    },
+    {
+      "avg_logprob": -0.290243,
+      "compression_ratio": 1.454545,
+      "end": 533.04,
+      "no_speech_prob": 0.0,
+      "start": 531.04,
+      "text": "!"
+    },
+    {
+      "avg_logprob": -0.290243,
+      "compression_ratio": 1.454545,
+      "end": 535.04,
+      "no_speech_prob": 0.0,
+      "start": 533.04,
+      "text": "!"
+    },
+    {
+      "avg_logprob": -0.290243,
+      "compression_ratio": 1.454545,
+      "end": 537.04,
+      "no_speech_prob": 0.0,
+      "start": 535.04,
+      "text": "!"
+    },
+    {
+      "avg_logprob": -0.290243,
+      "compression_ratio": 1.454545,
+      "end": 539.04,
+      "no_speech_prob": 0.0,
+      "start": 537.04,
+      "text": "!"
+    },
+    {
+      "avg_logprob": -0.290243,
+      "compression_ratio": 1.454545,
+      "end": 541.04,
+      "no_speech_prob": 0.0,
+      "start": 539.04,
+      "text": "!"
+    },
+    {
+      "avg_logprob": -0.212228,
+      "compression_ratio": 1.636364,
+      "end": 545.04,
+      "no_speech_prob": 0.0,
+      "start": 543.04,
+      "text": "!"
+    },
+    {
+      "avg_logprob": -0.212228,
+      "compression_ratio": 1.636364,
+      "end": 547.04,
+      "no_speech_prob": 0.0,
+      "start": 545.04,
+      "text": "!"
+    },
+    {
+      "avg_logprob": -0.212228,
+      "compression_ratio": 1.636364,
+      "end": 549.04,
+      "no_speech_prob": 0.0,
+      "start": 547.04,
+      "text": "!"
+    },
+    {
+      "avg_logprob": -0.212228,
+      "compression_ratio": 1.636364,
+      "end": 551.04,
+      "no_speech_prob": 0.0,
+      "start": 549.04,
+      "text": "!"
+    },
+    {
+      "avg_logprob": -0.212228,
+      "compression_ratio": 1.636364,
+      "end": 553.04,
+      "no_speech_prob": 0.0,
+      "start": 551.04,
+      "text": "!"
+    },
+    {
+      "avg_logprob": -0.212228,
+      "compression_ratio": 1.636364,
+      "end": 555.04,
+      "no_speech_prob": 0.0,
+      "start": 553.04,
+      "text": "!"
+    },
+    {
+      "avg_logprob": -0.212228,
+      "compression_ratio": 1.636364,
+      "end": 557.04,
+      "no_speech_prob": 0.0,
+      "start": 555.04,
+      "text": "!"
+    },
+    {
+      "avg_logprob": -0.212228,
+      "compression_ratio": 1.636364,
+      "end": 559.04,
+      "no_speech_prob": 0.0,
+      "start": 557.04,
+      "text": "!"
+    },
+    {
+      "avg_logprob": -0.212228,
+      "compression_ratio": 1.636364,
+      "end": 561.04,
+      "no_speech_prob": 0.0,
+      "start": 559.04,
+      "text": "!"
+    },
+    {
+      "avg_logprob": -0.212228,
+      "compression_ratio": 1.636364,
+      "end": 563.04,
+      "no_speech_prob": 0.0,
+      "start": 561.04,
+      "text": "!"
+    },
+    {
+      "avg_logprob": -0.212228,
+      "compression_ratio": 1.636364,
+      "end": 565.04,
+      "no_speech_prob": 0.0,
+      "start": 563.04,
+      "text": "!"
+    },
+    {
+      "avg_logprob": -0.212228,
+      "compression_ratio": 1.636364,
+      "end": 567.04,
+      "no_speech_prob": 0.0,
+      "start": 565.04,
+      "text": "!"
+    },
+    {
+      "avg_logprob": -0.212228,
+      "compression_ratio": 1.636364,
+      "end": 569.04,
+      "no_speech_prob": 0.0,
+      "start": 567.04,
+      "text": "!"
+    },
+    {
+      "avg_logprob": -0.212228,
+      "compression_ratio": 1.636364,
+      "end": 571.04,
+      "no_speech_prob": 0.0,
+      "start": 569.04,
+      "text": "!"
+    },
+    {
+      "avg_logprob": -0.234288,
+      "compression_ratio": 1.818182,
+      "end": 575.04,
+      "no_speech_prob": 0.0,
+      "start": 573.04,
+      "text": "!"
+    },
+    {
+      "avg_logprob": -0.234288,
+      "compression_ratio": 1.818182,
+      "end": 577.04,
+      "no_speech_prob": 0.0,
+      "start": 575.04,
+      "text": "!"
+    },
+    {
+      "avg_logprob": -0.234288,
+      "compression_ratio": 1.818182,
+      "end": 579.04,
+      "no_speech_prob": 0.0,
+      "start": 577.04,
+      "text": "!"
+    },
+    {
+      "avg_logprob": -0.234288,
+      "compression_ratio": 1.818182,
+      "end": 581.04,
+      "no_speech_prob": 0.0,
+      "start": 579.04,
+      "text": "!"
+    },
+    {
+      "avg_logprob": -0.234288,
+      "compression_ratio": 1.818182,
+      "end": 583.04,
+      "no_speech_prob": 0.0,
+      "start": 581.04,
+      "text": "!"
+    },
+    {
+      "avg_logprob": -0.234288,
+      "compression_ratio": 1.818182,
+      "end": 585.04,
+      "no_speech_prob": 0.0,
+      "start": 583.04,
+      "text": "!"
+    },
+    {
+      "avg_logprob": -0.234288,
+      "compression_ratio": 1.818182,
+      "end": 587.04,
+      "no_speech_prob": 0.0,
+      "start": 585.04,
+      "text": "!"
+    },
+    {
+      "avg_logprob": -0.234288,
+      "compression_ratio": 1.818182,
+      "end": 589.04,
+      "no_speech_prob": 0.0,
+      "start": 587.04,
+      "text": "!"
+    },
+    {
+      "avg_logprob": -0.234288,
+      "compression_ratio": 1.818182,
+      "end": 591.04,
+      "no_speech_prob": 0.0,
+      "start": 589.04,
+      "text": "!"
+    },
+    {
+      "avg_logprob": -0.234288,
+      "compression_ratio": 1.818182,
+      "end": 593.04,
+      "no_speech_prob": 0.0,
+      "start": 591.04,
+      "text": "!"
+    },
+    {
+      "avg_logprob": -0.234288,
+      "compression_ratio": 1.818182,
+      "end": 595.04,
+      "no_speech_prob": 0.0,
+      "start": 593.04,
+      "text": "!"
+    },
+    {
+      "avg_logprob": -0.234288,
+      "compression_ratio": 1.818182,
+      "end": 597.04,
+      "no_speech_prob": 0.0,
+      "start": 595.04,
+      "text": "!"
+    },
+    {
+      "avg_logprob": -0.234288,
+      "compression_ratio": 1.818182,
+      "end": 599.04,
+      "no_speech_prob": 0.0,
+      "start": 597.04,
+      "text": "!"
+    },
+    {
+      "avg_logprob": -0.234288,
+      "compression_ratio": 1.818182,
+      "end": 601.04,
+      "no_speech_prob": 0.0,
+      "start": 599.04,
+      "text": "!"
+    },
+    {
+      "avg_logprob": -0.479046,
+      "compression_ratio": 5.083333,
+      "end": 605.04,
+      "no_speech_prob": 0.0,
+      "start": 603.04,
+      "text": "!"
+    },
+    {
+      "avg_logprob": -0.479046,
+      "compression_ratio": 5.083333,
+      "end": 606.04,
+      "no_speech_prob": 0.0,
+      "start": 605.04,
+      "text": "!"
+    },
+    {
+      "avg_logprob": -0.479046,
+      "compression_ratio": 5.083333,
+      "end": 607.04,
+      "no_speech_prob": 0.0,
+      "start": 606.04,
+      "text": "!"
+    },
+    {
+      "avg_logprob": -0.479046,
+      "compression_ratio": 5.083333,
+      "end": 609.04,
+      "no_speech_prob": 0.0,
+      "start": 607.04,
+      "text": "!"
+    },
+    {
+      "avg_logprob": -0.479046,
+      "compression_ratio": 5.083333,
+      "end": 610.02,
+      "no_speech_prob": 0.0,
+      "start": 609.04,
+      "text": "!"
+    },
+    {
+      "avg_logprob": -0.479046,
+      "compression_ratio": 5.083333,
+      "end": 610.08,
+      "no_speech_prob": 0.0,
+      "start": 610.08,
+      "text": "!"
+    },
+    {
+      "avg_logprob": -0.524653,
+      "compression_ratio": 0.87037,
+      "end": 654.04,
+      "no_speech_prob": 0.0,
+      "start": 633.04,
+      "text": "我爱你 别动地雪"
+    },
+    {
+      "avg_logprob": -0.524653,
+      "compression_ratio": 0.87037,
+      "end": 661.04,
+      "no_speech_prob": 0.0,
+      "start": 654.04,
+      "text": "红红烈烈 满山遍野"
+    },
+    {
+      "avg_logprob": -0.479486,
+      "compression_ratio": 0.984962,
+      "end": 665.04,
+      "no_speech_prob": 0.0,
+      "start": 661.04,
+      "text": "你用自己的无瑕的身体"
+    },
+    {
+      "avg_logprob": -0.479486,
+      "compression_ratio": 0.984962,
+      "end": 669.04,
+      "no_speech_prob": 0.0,
+      "start": 665.04,
+      "text": "情话被谎言笼罩的世界"
+    },
+    {
+      "avg_logprob": -0.479486,
+      "compression_ratio": 0.984962,
+      "end": 677.04,
+      "no_speech_prob": 0.0,
+      "start": 669.04,
+      "text": "你把真相 传绝给了人间"
+    },
+    {
+      "avg_logprob": -0.479486,
+      "compression_ratio": 0.984962,
+      "end": 685.04,
+      "no_speech_prob": 0.0,
+      "start": 677.04,
+      "text": "欢迎那无尽的美业 沉睡的晴天"
+    },
+    {
+      "avg_logprob": -0.380371,
+      "compression_ratio": 0.866667,
+      "end": 707.04,
+      "no_speech_prob": 0.0,
+      "start": 685.04,
+      "text": "啊 我爱你 别动地雪 白眉地雪"
+    },
+    {
+      "avg_logprob": -1.927077,
+      "compression_ratio": 0.818182,
+      "end": 711.04,
+      "no_speech_prob": 0.0,
+      "start": 707.04,
+      "text": "啊ный"
+    },
+    {
+      "avg_logprob": -1.927077,
+      "compression_ratio": 0.818182,
+      "end": 714.04,
+      "no_speech_prob": 0.0,
+      "start": 711.04,
+      "text": "啊"
+    },
+    {
+      "avg_logprob": -1.927077,
+      "compression_ratio": 0.818182,
+      "end": 717.04,
+      "no_speech_prob": 0.0,
+      "start": 714.04,
+      "text": "啊"
+    },
+    {
+      "avg_logprob": -1.927077,
+      "compression_ratio": 0.818182,
+      "end": 719.04,
+      "no_speech_prob": 0.0,
+      "start": 717.04,
+      "text": "啊"
+    },
+    {
+      "avg_logprob": -0.723034,
+      "compression_ratio": 0.578947,
+      "end": 749.02,
+      "no_speech_prob": 0.0,
+      "start": 719.04,
+      "text": "Zither Harp"
+    },
+    {
+      "avg_logprob": -0.273407,
+      "compression_ratio": 0.578947,
+      "end": 779.02,
+      "no_speech_prob": 0.0,
+      "start": 749.04,
+      "text": "Zither Harp"
+    },
+    {
+      "avg_logprob": -0.630817,
+      "compression_ratio": 17.0,
+      "end": 781.04,
+      "no_speech_prob": 0.0,
+      "start": 779.04,
+      "text": "Zither Harp"
+    },
+    {
+      "avg_logprob": -0.630817,
+      "compression_ratio": 17.0,
+      "end": 782.7,
+      "no_speech_prob": 0.0,
+      "start": 781.04,
+      "text": "Zither Harp"
+    },
+    {
+      "avg_logprob": -0.630817,
+      "compression_ratio": 17.0,
+      "end": 784.52,
+      "no_speech_prob": 0.0,
+      "start": 782.7,
+      "text": "Zither Harp"
+    },
+    {
+      "avg_logprob": -0.630817,
+      "compression_ratio": 17.0,
+      "end": 785.42,
+      "no_speech_prob": 0.0,
+      "start": 784.52,
+      "text": "Zither Harp"
+    },
+    {
+      "avg_logprob": -0.630817,
+      "compression_ratio": 17.0,
+      "end": 786.38,
+      "no_speech_prob": 0.0,
+      "start": 785.42,
+      "text": "Zither Harp"
+    },
+    {
+      "avg_logprob": -0.630817,
+      "compression_ratio": 17.0,
+      "end": 787.04,
+      "no_speech_prob": 0.0,
+      "start": 786.38,
+      "text": "Zither Harp"
+    },
+    {
+      "avg_logprob": -0.630817,
+      "compression_ratio": 17.0,
+      "end": 788.04,
+      "no_speech_prob": 0.0,
+      "start": 787.04,
+      "text": "Zither Harp"
+    },
+    {
+      "avg_logprob": -0.630817,
+      "compression_ratio": 17.0,
+      "end": 788.92,
+      "no_speech_prob": 0.0,
+      "start": 788.04,
+      "text": "Zither Harp"
+    },
+    {
+      "avg_logprob": -0.630817,
+      "compression_ratio": 17.0,
+      "end": 789.72,
+      "no_speech_prob": 0.0,
+      "start": 788.92,
+      "text": "Zither Harp"
+    },
+    {
+      "avg_logprob": -0.630817,
+      "compression_ratio": 17.0,
+      "end": 790.46,
+      "no_speech_prob": 0.0,
+      "start": 789.72,
+      "text": "Zither Harp"
+    },
+    {
+      "avg_logprob": -0.630817,
+      "compression_ratio": 17.0,
+      "end": 791.02,
+      "no_speech_prob": 0.0,
+      "start": 790.46,
+      "text": "Zither Harp"
+    },
+    {
+      "avg_logprob": -0.630817,
+      "compression_ratio": 17.0,
+      "end": 791.04,
+      "no_speech_prob": 0.0,
+      "start": 791.02,
+      "text": "Zither Harp"
+    },
+    {
+      "avg_logprob": -0.630817,
+      "compression_ratio": 17.0,
+      "end": 791.46,
+      "no_speech_prob": 0.0,
+      "start": 791.04,
+      "text": "Zither Harp"
+    },
+    {
+      "avg_logprob": -0.630817,
+      "compression_ratio": 17.0,
+      "end": 792.04,
+      "no_speech_prob": 0.0,
+      "start": 791.46,
+      "text": "Zither Harp"
+    },
+    {
+      "avg_logprob": -0.630817,
+      "compression_ratio": 17.0,
+      "end": 792.52,
+      "no_speech_prob": 0.0,
+      "start": 792.04,
+      "text": "Zither Harp"
+    },
+    {
+      "avg_logprob": -0.630817,
+      "compression_ratio": 17.0,
+      "end": 793.02,
+      "no_speech_prob": 0.0,
+      "start": 792.52,
+      "text": "Zither Harp"
+    },
+    {
+      "avg_logprob": -0.630817,
+      "compression_ratio": 17.0,
+      "end": 793.48,
+      "no_speech_prob": 0.0,
+      "start": 793.02,
+      "text": "Zither Harp"
+    },
+    {
+      "avg_logprob": -0.630817,
+      "compression_ratio": 17.0,
+      "end": 794.04,
+      "no_speech_prob": 0.0,
+      "start": 793.48,
+      "text": "Zither Harp"
+    },
+    {
+      "avg_logprob": -0.630817,
+      "compression_ratio": 17.0,
+      "end": 794.42,
+      "no_speech_prob": 0.0,
+      "start": 794.04,
+      "text": "Zither Harp"
+    },
+    {
+      "avg_logprob": -0.630817,
+      "compression_ratio": 17.0,
+      "end": 794.92,
+      "no_speech_prob": 0.0,
+      "start": 794.42,
+      "text": "Zither Harp"
+    },
+    {
+      "avg_logprob": -0.630817,
+      "compression_ratio": 17.0,
+      "end": 795.04,
+      "no_speech_prob": 0.0,
+      "start": 794.92,
+      "text": "Zither Harp"
+    },
+    {
+      "avg_logprob": -0.630817,
+      "compression_ratio": 17.0,
+      "end": 795.3,
+      "no_speech_prob": 0.0,
+      "start": 795.04,
+      "text": "Zither Harp"
+    },
+    {
+      "avg_logprob": -0.630817,
+      "compression_ratio": 17.0,
+      "end": 796.02,
+      "no_speech_prob": 0.0,
+      "start": 795.3,
+      "text": "Zither Harp"
+    },
+    {
+      "avg_logprob": -0.630817,
+      "compression_ratio": 17.0,
+      "end": 796.4,
+      "no_speech_prob": 0.0,
+      "start": 796.02,
+      "text": "Zither Harp"
+    },
+    {
+      "avg_logprob": -0.630817,
+      "compression_ratio": 17.0,
+      "end": 796.82,
+      "no_speech_prob": 0.0,
+      "start": 796.4,
+      "text": "Zither Harp"
+    },
+    {
+      "avg_logprob": -0.630817,
+      "compression_ratio": 17.0,
+      "end": 797.04,
+      "no_speech_prob": 0.0,
+      "start": 796.82,
+      "text": "Zither Harp"
+    },
+    {
+      "avg_logprob": -0.630817,
+      "compression_ratio": 17.0,
+      "end": 797.34,
+      "no_speech_prob": 0.0,
+      "start": 797.04,
+      "text": "Zither Harp"
+    },
+    {
+      "avg_logprob": -0.630817,
+      "compression_ratio": 17.0,
+      "end": 797.96,
+      "no_speech_prob": 0.0,
+      "start": 797.34,
+      "text": "Zither Harp"
+    },
+    {
+      "avg_logprob": -0.630817,
+      "compression_ratio": 17.0,
+      "end": 798.04,
+      "no_speech_prob": 0.0,
+      "start": 797.96,
+      "text": "Zither Harp"
+    },
+    {
+      "avg_logprob": -0.630817,
+      "compression_ratio": 17.0,
+      "end": 798.28,
+      "no_speech_prob": 0.0,
+      "start": 798.04,
+      "text": "Zither Harp"
+    },
+    {
+      "avg_logprob": -0.630817,
+      "compression_ratio": 17.0,
+      "end": 798.62,
+      "no_speech_prob": 0.0,
+      "start": 798.28,
+      "text": "Zither Harp"
+    },
+    {
+      "avg_logprob": -0.630817,
+      "compression_ratio": 17.0,
+      "end": 798.94,
+      "no_speech_prob": 0.0,
+      "start": 798.62,
+      "text": "Zither Harp"
+    },
+    {
+      "avg_logprob": -0.630817,
+      "compression_ratio": 17.0,
+      "end": 799.04,
+      "no_speech_prob": 0.0,
+      "start": 798.94,
+      "text": "Zither Harp"
+    },
+    {
+      "avg_logprob": -0.630817,
+      "compression_ratio": 17.0,
+      "end": 799.5,
+      "no_speech_prob": 0.0,
+      "start": 799.04,
+      "text": "Zither Harp"
+    },
+    {
+      "avg_logprob": -0.630817,
+      "compression_ratio": 17.0,
+      "end": 800.1,
+      "no_speech_prob": 0.0,
+      "start": 799.5,
+      "text": "Zither Harp"
+    },
+    {
+      "avg_logprob": -0.630817,
+      "compression_ratio": 17.0,
+      "end": 800.46,
+      "no_speech_prob": 0.0,
+      "start": 800.1,
+      "text": "Zither Harp"
+    },
+    {
+      "avg_logprob": -0.630817,
+      "compression_ratio": 17.0,
+      "end": 800.84,
+      "no_speech_prob": 0.0,
+      "start": 800.46,
+      "text": "Zither Harp"
+    },
+    {
+      "avg_logprob": -0.390587,
+      "compression_ratio": 1.229167,
+      "end": 802.84,
+      "no_speech_prob": 0.0,
+      "start": 800.84,
+      "text": "啊"
+    },
+    {
+      "avg_logprob": -0.390587,
+      "compression_ratio": 1.229167,
+      "end": 805.84,
+      "no_speech_prob": 0.0,
+      "start": 802.84,
+      "text": "既是在马背上"
+    },
+    {
+      "avg_logprob": -0.390587,
+      "compression_ratio": 1.229167,
+      "end": 809.84,
+      "no_speech_prob": 0.0,
+      "start": 805.84,
+      "text": "有影处理在我肩膀"
+    },
+    {
+      "avg_logprob": -0.390587,
+      "compression_ratio": 1.229167,
+      "end": 812.84,
+      "no_speech_prob": 0.0,
+      "start": 809.84,
+      "text": "一生在战场"
+    },
+    {
+      "avg_logprob": -0.390587,
+      "compression_ratio": 1.229167,
+      "end": 814.84,
+      "no_speech_prob": 0.0,
+      "start": 812.84,
+      "text": "是我的荣耀"
+    },
+    {
+      "avg_logprob": -0.390587,
+      "compression_ratio": 1.229167,
+      "end": 816.84,
+      "no_speech_prob": 0.0,
+      "start": 814.84,
+      "text": "哎哟哎哟哎哟"
+    },
+    {
+      "avg_logprob": -0.390587,
+      "compression_ratio": 1.229167,
+      "end": 817.84,
+      "no_speech_prob": 0.0,
+      "start": 816.84,
+      "text": "哎哟哎哟"
+    },
+    {
+      "avg_logprob": -0.390587,
+      "compression_ratio": 1.229167,
+      "end": 820.84,
+      "no_speech_prob": 0.0,
+      "start": 817.84,
+      "text": "伟大的朝圣殿"
+    },
+    {
+      "avg_logprob": -0.390587,
+      "compression_ratio": 1.229167,
+      "end": 823.84,
+      "no_speech_prob": 0.0,
+      "start": 820.84,
+      "text": "我都欢迎你重来"
+    },
+    {
+      "avg_logprob": -0.390587,
+      "compression_ratio": 1.229167,
+      "end": 826.84,
+      "no_speech_prob": 0.0,
+      "start": 823.84,
+      "text": "我们是个草原"
+    },
+    {
+      "avg_logprob": -0.390587,
+      "compression_ratio": 1.229167,
+      "end": 829.84,
+      "no_speech_prob": 0.0,
+      "start": 826.84,
+      "text": "真正的主人"
+    },
+    {
+      "avg_logprob": -0.632011,
+      "compression_ratio": 1.478873,
+      "end": 831.84,
+      "no_speech_prob": 0.0,
+      "start": 829.84,
+      "text": "我都没有我没有我没有"
+    },
+    {
+      "avg_logprob": -0.632011,
+      "compression_ratio": 1.478873,
+      "end": 832.84,
+      "no_speech_prob": 0.0,
+      "start": 831.84,
+      "text": "我都没有我没有"
+    },
+    {
+      "avg_logprob": -0.632011,
+      "compression_ratio": 1.478873,
+      "end": 848.84,
+      "no_speech_prob": 0.0,
+      "start": 846.84,
+      "text": "属谁独以我们的兄弟"
+    },
+    {
+      "avg_logprob": -0.632011,
+      "compression_ratio": 1.478873,
+      "end": 854.84,
+      "no_speech_prob": 0.0,
+      "start": 851.84,
+      "text": "属谁狗人我们的亲戟"
+    },
+    {
+      "avg_logprob": -0.737428,
+      "compression_ratio": 1.461538,
+      "end": 859.84,
+      "no_speech_prob": 0.0,
+      "start": 854.84,
+      "text": "属谁狗人我们不见留爱"
+    },
+    {
+      "avg_logprob": -0.737428,
+      "compression_ratio": 1.461538,
+      "end": 861.84,
+      "no_speech_prob": 0.0,
+      "start": 859.84,
+      "text": "属谁狗人我们不见留爱"
+    },
+    {
+      "avg_logprob": -0.737428,
+      "compression_ratio": 1.461538,
+      "end": 865.84,
+      "no_speech_prob": 0.0,
+      "start": 862.84,
+      "text": "属谁狗人我们孩子们希望"
+    },
+    {
+      "avg_logprob": -0.737428,
+      "compression_ratio": 1.461538,
+      "end": 871.84,
+      "no_speech_prob": 0.0,
+      "start": 868.84,
+      "text": "我还能留下来啊"
+    },
+    {
+      "avg_logprob": -0.152319,
+      "compression_ratio": 11.72093,
+      "end": 873.84,
+      "no_speech_prob": 0.0,
+      "start": 871.84,
+      "text": "属谁狗人我们不见得"
+    },
+    {
+      "avg_logprob": -0.152319,
+      "compression_ratio": 11.72093,
+      "end": 874.84,
+      "no_speech_prob": 0.0,
+      "start": 873.84,
+      "text": "属谁狗人我们不见得"
+    },
+    {
+      "avg_logprob": -0.152319,
+      "compression_ratio": 11.72093,
+      "end": 875.84,
+      "no_speech_prob": 0.0,
+      "start": 874.84,
+      "text": "属谁狗人我们不见得"
+    },
+    {
+      "avg_logprob": -0.152319,
+      "compression_ratio": 11.72093,
+      "end": 876.84,
+      "no_speech_prob": 0.0,
+      "start": 875.84,
+      "text": "属谁狗人我们不见得"
+    },
+    {
+      "avg_logprob": -0.152319,
+      "compression_ratio": 11.72093,
+      "end": 877.84,
+      "no_speech_prob": 0.0,
+      "start": 876.84,
+      "text": "属谁狗人我们不见得"
+    },
+    {
+      "avg_logprob": -0.152319,
+      "compression_ratio": 11.72093,
+      "end": 878.84,
+      "no_speech_prob": 0.0,
+      "start": 877.84,
+      "text": "属谁狗人我们不见得"
+    },
+    {
+      "avg_logprob": -0.152319,
+      "compression_ratio": 11.72093,
+      "end": 879.84,
+      "no_speech_prob": 0.0,
+      "start": 878.84,
+      "text": "属谁狗人我们不见得"
+    },
+    {
+      "avg_logprob": -0.152319,
+      "compression_ratio": 11.72093,
+      "end": 880.84,
+      "no_speech_prob": 0.0,
+      "start": 879.84,
+      "text": "属谁狗人我们不见得"
+    },
+    {
+      "avg_logprob": -0.152319,
+      "compression_ratio": 11.72093,
+      "end": 881.84,
+      "no_speech_prob": 0.0,
+      "start": 880.84,
+      "text": "属谁狗人我们不见得"
+    },
+    {
+      "avg_logprob": -0.152319,
+      "compression_ratio": 11.72093,
+      "end": 882.84,
+      "no_speech_prob": 0.0,
+      "start": 881.84,
+      "text": "属谁狗人我们不见得"
+    },
+    {
+      "avg_logprob": -0.152319,
+      "compression_ratio": 11.72093,
+      "end": 883.84,
+      "no_speech_prob": 0.0,
+      "start": 882.84,
+      "text": "属谁狗人我们不见得"
+    },
+    {
+      "avg_logprob": -0.152319,
+      "compression_ratio": 11.72093,
+      "end": 884.84,
+      "no_speech_prob": 0.0,
+      "start": 883.84,
+      "text": "属谁狗人我们不见得"
+    },
+    {
+      "avg_logprob": -0.152319,
+      "compression_ratio": 11.72093,
+      "end": 885.84,
+      "no_speech_prob": 0.0,
+      "start": 884.84,
+      "text": "属谁狗人我们不见得"
+    },
+    {
+      "avg_logprob": -0.152319,
+      "compression_ratio": 11.72093,
+      "end": 886.84,
+      "no_speech_prob": 0.0,
+      "start": 885.84,
+      "text": "属谁狗人我们不见得"
+    },
+    {
+      "avg_logprob": -0.152319,
+      "compression_ratio": 11.72093,
+      "end": 887.84,
+      "no_speech_prob": 0.0,
+      "start": 886.84,
+      "text": "属谁狗人我们不见得"
+    },
+    {
+      "avg_logprob": -0.152319,
+      "compression_ratio": 11.72093,
+      "end": 888.84,
+      "no_speech_prob": 0.0,
+      "start": 887.84,
+      "text": "属谁狗人我们不见得"
+    },
+    {
+      "avg_logprob": -0.152319,
+      "compression_ratio": 11.72093,
+      "end": 889.84,
+      "no_speech_prob": 0.0,
+      "start": 888.84,
+      "text": "属谁狗人我们不见得"
+    },
+    {
+      "avg_logprob": -0.152319,
+      "compression_ratio": 11.72093,
+      "end": 890.84,
+      "no_speech_prob": 0.0,
+      "start": 889.84,
+      "text": "属谁狗人我们不见得"
+    },
+    {
+      "avg_logprob": -0.445674,
+      "compression_ratio": 0.694444,
+      "end": 920.82,
+      "no_speech_prob": 0.0,
+      "start": 890.84,
+      "text": "字幕志愿者 李宗盛"
+    }
+  ],
+  "text": "请不吝点赞 订阅 转发 打赏支持明镜与点点栏目明镜与点点栏目明镜与点点栏目明镜与点点栏目明镜与点点栏目明镜与点点栏目明镜与点点栏目明镜与点点栏目明镜与点点栏目明镜与点点栏目明镜与点点栏目明镜与点点栏目明镜与点点栏目明镜与点栏目明镜与点栏目明镜与点栏目明镜与点栏目好酒啊好酒中心将天酒找到你的手天南地面图与我便是战友我可平时走肉炕成不可下落传播天下不可黑夜海中干了小碗酒好清楚当心头死的未来是我找到的理由顺其爱还请求不爱去套戴脑为自由变成功不言不休爆料革命这碗酒敬天敬敌敬战友新中国联邦人永不回奴跟我走好酒啊好酒啊好酒啊好酒啊好酒啊宝贝宝贝宝贝宝贝宝贝宝贝宝贝宝贝宝贝宝贝宝贝宝贝宝贝宝贝宝贝宝贝宝贝宝贝宝贝宝贝宝贝宝贝宝贝宝贝宝贝宝贝宝贝宝贝宝贝宝贝宝贝宝贝宝贝宝贝宝贝宝贝宝贝最新兵的地补生殖吧生殖吧生殖吧生殖吧生殖吧生殖吧生殖吧生殖吧生殖吧生殖吧生殖吧生殖吧生殖吧生殖吧生殖吧生殖吧生殖吧生殖吧生殖吧生殖吧生殖吧生殖吧生殖吧生殖吧生殖吧生殖吧生殖吧生殖吧生殖吧生殖吧生殖吧生殖吧生殖吧生殖吧生殖吧你认了吗行动 行动 行动中共已完了补凉好补凉好补凉好补凉好补凉好补凉好补凉好补凉好补凉好补凉好补凉好补凉好补凉好补凉好补凉好补凉好补凉好补凉好补凉好补凉好补凉好补凉好补凉好补凉好补凉好补凉好补凉好补凉好补凉好补凉好补凉好补凉好CCPThey have all lied for too longWe will end what they do wrongSpread the word of the wrongCome let's take down the CCPThe bullet's dry a little longerAnd you will surrenderThe bullet's dry a little longerWe will have freedom to liveWe will win your surrenderLet the bullet's dry a little longerChinaLet the bullet's dry a little longerLet the bullet's dry a little longerChinaLet the bullet's dry a little longerStand me中國共產黨這個CCP還能讓我們遠離恐懼Pick up the CCPThey tried to scare the nationWith fabricationSo we see through the liesWe won't fallWe will fight you backPolice corruptionWith crooked assumptionThey ran our livesBut no moreWe will winWe will take down the CCPSpread the word all through Hong KongWe will fight till they're all goneWe rejoice when there's no moreLet's take down the CCPThey have all lied for too longWe will end what they do wrongSpread the word of the Hong KongLet's take down the CCPLet the bullet's dry a little longerAnd you will surrenderLet the bullet's dry a little longerWe will have freedom to liveWe will win your surrenderLet the bullet's dry a little longerLet the bullet's dry a little longerLet the bullet's dry a little longerLet the bullet's dry a little longerLet the bullet's dry a little longerLet the bullet's dry a little longerLet the bullet's dry a little longerLet the bullet's dry a little longerLet the bullet's dry a little longerLet the bullet's dry a little longerLet the bullet's dry a little longerLet the bullet's dry a little longerLet the bullet's dry a little longerLet the bullet's dry a little longerLet the bullet's dry a little longerLet the bullet's dry a little longerLet the bullet's dry a little longerLet the bullet's dry a little longerLet the bullet's dry a little longerLet the bullet's dry a little longerLet the bullet's dry a little longerLet the bullet's dry a little longerLet the bullet's dry a little longer!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!我爱你 别动地雪红红烈烈 满山遍野你用自己的无瑕的身体情话被谎言笼罩的世界你把真相 传绝给了人间欢迎那无尽的美业 沉睡的晴天啊 我爱你 别动地雪 白眉地雪啊ный啊啊啊Zither HarpZither HarpZither HarpZither HarpZither HarpZither HarpZither HarpZither HarpZither HarpZither HarpZither HarpZither HarpZither HarpZither HarpZither HarpZither HarpZither HarpZither HarpZither HarpZither HarpZither HarpZither HarpZither HarpZither HarpZither HarpZither HarpZither HarpZither HarpZither HarpZither HarpZither HarpZither HarpZither HarpZither HarpZither HarpZither HarpZither HarpZither HarpZither Harp啊既是在马背上有影处理在我肩膀一生在战场是我的荣耀哎哟哎哟哎哟哎哟哎哟伟大的朝圣殿我都欢迎你重来我们是个草原真正的主人我都没有我没有我没有我都没有我没有属谁独以我们的兄弟属谁狗人我们的亲戟属谁狗人我们不见留爱属谁狗人我们不见留爱属谁狗人我们孩子们希望我还能留下来啊属谁狗人我们不见得属谁狗人我们不见得属谁狗人我们不见得属谁狗人我们不见得属谁狗人我们不见得属谁狗人我们不见得属谁狗人我们不见得属谁狗人我们不见得属谁狗人我们不见得属谁狗人我们不见得属谁狗人我们不见得属谁狗人我们不见得属谁狗人我们不见得属谁狗人我们不见得属谁狗人我们不见得属谁狗人我们不见得属谁狗人我们不见得属谁狗人我们不见得字幕志愿者 李宗盛"
+}

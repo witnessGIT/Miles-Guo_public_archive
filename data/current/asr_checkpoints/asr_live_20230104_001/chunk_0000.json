@@ -1,0 +1,1272 @@
+{
+  "chunk_audio_sha256": "0c5117a8e9d5b1b3ef7bbbff205ee77013cd2ebaf2db979d0ddbeafcf4fc4fba",
+  "chunk_index": 0,
+  "completed_at": "2026-10-29T19:53:54Z",
+  "language": "zh",
+  "live_id": "LIVE_20230104_001",
+  "media_committed_to_git": false,
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "offset_sec": 0,
+  "paid_api_used": false,
+  "processing_location": "github-hosted-macos-arm64",
+  "schema_version": "cloud-asr-chunk-v1",
+  "segments": [
+    {
+      "avg_logprob": -0.118318,
+      "compression_ratio": 0.851351,
+      "end": 29.98,
+      "no_speech_prob": 0.0,
+      "start": 0.0,
+      "text": "请不吝点赞 订阅 转发 打赏支持明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.375632,
+      "compression_ratio": 0.785714,
+      "end": 59.98,
+      "no_speech_prob": 0.0,
+      "start": 30.0,
+      "text": "打赏支持明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.369383,
+      "compression_ratio": 0.785714,
+      "end": 70.0,
+      "no_speech_prob": 0.0,
+      "start": 60.0,
+      "text": "打赏支持明镜与点点栏目"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 2.4,
+      "end": 70.44,
+      "no_speech_prob": 0.0,
+      "start": 70.0,
+      "text": "um"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 2.4,
+      "end": 71.0,
+      "no_speech_prob": 0.0,
+      "start": 70.44,
+      "text": "i"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 2.4,
+      "end": 71.06,
+      "no_speech_prob": 0.0,
+      "start": 71.0,
+      "text": "b"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 2.4,
+      "end": 71.34,
+      "no_speech_prob": 0.0,
+      "start": 71.06,
+      "text": "a"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 2.4,
+      "end": 71.48,
+      "no_speech_prob": 0.0,
+      "start": 71.34,
+      "text": "b"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 2.4,
+      "end": 71.62,
+      "no_speech_prob": 0.0,
+      "start": 71.48,
+      "text": "b"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 2.4,
+      "end": 71.7,
+      "no_speech_prob": 0.0,
+      "start": 71.62,
+      "text": "b"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 2.4,
+      "end": 71.74,
+      "no_speech_prob": 0.0,
+      "start": 71.7,
+      "text": "b"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 2.4,
+      "end": 71.76,
+      "no_speech_prob": 0.0,
+      "start": 71.74,
+      "text": "b"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 2.4,
+      "end": 71.78,
+      "no_speech_prob": 0.0,
+      "start": 71.76,
+      "text": "b"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 2.4,
+      "end": 72.0,
+      "no_speech_prob": 0.0,
+      "start": 71.78,
+      "text": "gin"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 2.4,
+      "end": 72.0,
+      "no_speech_prob": 0.0,
+      "start": 72.0,
+      "text": "b"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 2.4,
+      "end": 71.88,
+      "no_speech_prob": 0.0,
+      "start": 71.86,
+      "text": "b"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 2.4,
+      "end": 71.92,
+      "no_speech_prob": 0.0,
+      "start": 71.88,
+      "text": "b"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 2.4,
+      "end": 71.96,
+      "no_speech_prob": 0.0,
+      "start": 71.92,
+      "text": "b"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 2.4,
+      "end": 71.98,
+      "no_speech_prob": 0.0,
+      "start": 71.96,
+      "text": "b"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 2.4,
+      "end": 72.0,
+      "no_speech_prob": 0.0,
+      "start": 71.98,
+      "text": "b"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 2.4,
+      "end": 72.52,
+      "no_speech_prob": 0.0,
+      "start": 72.0,
+      "text": "gin"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 2.4,
+      "end": 72.56,
+      "no_speech_prob": 0.0,
+      "start": 72.52,
+      "text": "gin"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 2.4,
+      "end": 72.56,
+      "no_speech_prob": 0.0,
+      "start": 72.56,
+      "text": "gin"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 2.4,
+      "end": 72.22,
+      "no_speech_prob": 0.0,
+      "start": 72.22,
+      "text": "gin"
+    },
+    {
+      "avg_logprob": -0.276703,
+      "compression_ratio": 14.866667,
+      "end": 130.0,
+      "no_speech_prob": 0.0,
+      "start": 100.0,
+      "text": "没有考慮过身体过程度过程度过程度过程度过程度过程度过程度过程度过程度过程度过程度过程度过程度过程度过程度过程度过程度过程度过程度过程度过程度过程度过程度过程度过程度过程度过程度过程度过程度过程度过程度过程度过程度过程度过程度过程度过程度过程度过程度过程度过程度过程度过程度过程度过程度过程度过程度过程度过程度过程度过程度过程度过程度过程度过程度过程度过程度过程度过程度过程度过程度过程度过程度过程度过程度过程度过程度过程度过程度过程度过程度过程度"
+    },
+    {
+      "avg_logprob": -5.535319,
+      "compression_ratio": 1.0,
+      "end": 134.44,
+      "no_speech_prob": 0.0,
+      "start": 130.0,
+      "text": "AV�mill summarize IT improveUS 2021"
+    },
+    {
+      "avg_logprob": -5.535319,
+      "compression_ratio": 1.0,
+      "end": 136.8,
+      "no_speech_prob": 0.0,
+      "start": 134.84,
+      "text": "問題 SC很棒"
+    },
+    {
+      "avg_logprob": -5.535319,
+      "compression_ratio": 1.0,
+      "end": 140.1,
+      "no_speech_prob": 0.0,
+      "start": 137.3,
+      "text": "問題發展"
+    },
+    {
+      "avg_logprob": -5.535319,
+      "compression_ratio": 1.0,
+      "end": 142.76,
+      "no_speech_prob": 0.0,
+      "start": 141.0,
+      "text": "電視"
+    },
+    {
+      "avg_logprob": -5.535319,
+      "compression_ratio": 1.0,
+      "end": 147.0,
+      "no_speech_prob": 0.0,
+      "start": 144.16,
+      "text": "被保存一次"
+    },
+    {
+      "avg_logprob": -5.535319,
+      "compression_ratio": 1.0,
+      "end": 149.84,
+      "no_speech_prob": 0.0,
+      "start": 148.16,
+      "text": "通常"
+    },
+    {
+      "avg_logprob": -5.535319,
+      "compression_ratio": 1.0,
+      "end": 152.86,
+      "no_speech_prob": 0.0,
+      "start": 150.84,
+      "text": "由於"
+    },
+    {
+      "avg_logprob": -5.535319,
+      "compression_ratio": 1.0,
+      "end": 155.32,
+      "no_speech_prob": 0.0,
+      "start": 153.8,
+      "text": "重要"
+    },
+    {
+      "avg_logprob": -5.535319,
+      "compression_ratio": 1.0,
+      "end": 159.16,
+      "no_speech_prob": 0.0,
+      "start": 156.52,
+      "text": "保存一次"
+    },
+    {
+      "avg_logprob": -4.751517,
+      "compression_ratio": 0.949153,
+      "end": 166.36,
+      "no_speech_prob": 0.0,
+      "start": 159.16,
+      "text": "世界上各国国超越海贸市"
+    },
+    {
+      "avg_logprob": -4.751517,
+      "compression_ratio": 0.949153,
+      "end": 174.56,
+      "no_speech_prob": 0.0,
+      "start": 168.74,
+      "text": "世界上贸易您公司"
+    },
+    {
+      "avg_logprob": -4.751517,
+      "compression_ratio": 0.949153,
+      "end": 182.44,
+      "no_speech_prob": 0.0,
+      "start": 176.7,
+      "text": "现在 CDC Pete到了也是"
+    },
+    {
+      "avg_logprob": -4.751517,
+      "compression_ratio": 0.949153,
+      "end": 185.78,
+      "no_speech_prob": 0.0,
+      "start": 183.14,
+      "text": "收入里 ink棺开"
+    },
+    {
+      "avg_logprob": -4.751517,
+      "compression_ratio": 0.949153,
+      "end": 187.72,
+      "no_speech_prob": 0.0,
+      "start": 186.18,
+      "text": "regardez"
+    },
+    {
+      "avg_logprob": -0.310587,
+      "compression_ratio": 1.546961,
+      "end": 194.52,
+      "no_speech_prob": 0.0,
+      "start": 187.72,
+      "text": "delicate year to have grade three or serious adverse events or depth so it's we're now sitting"
+    },
+    {
+      "avg_logprob": -0.310587,
+      "compression_ratio": 1.546961,
+      "end": 202.52,
+      "no_speech_prob": 0.0,
+      "start": 194.52,
+      "text": "on a really a tidal wave of data that that support this in terms of uh the uh consternation"
+    },
+    {
+      "avg_logprob": -0.310587,
+      "compression_ratio": 1.546961,
+      "end": 209.88,
+      "no_speech_prob": 0.0,
+      "start": 202.52,
+      "text": "about how this took place please keep in mind event 201 involved the cia it was funded by the"
+    },
+    {
+      "avg_logprob": -4.727476,
+      "compression_ratio": 1.021739,
+      "end": 217.92,
+      "no_speech_prob": 0.0,
+      "start": 209.88,
+      "text": "世界中主導 dazuолж壇文化"
+    },
+    {
+      "avg_logprob": -4.727476,
+      "compression_ratio": 1.021739,
+      "end": 224.7,
+      "no_speech_prob": 0.0,
+      "start": 218.08,
+      "text": "世界中主導也是"
+    },
+    {
+      "avg_logprob": -4.727476,
+      "compression_ratio": 1.021739,
+      "end": 230.64,
+      "no_speech_prob": 0.0,
+      "start": 224.94,
+      "text": "日本文化山豚"
+    },
+    {
+      "avg_logprob": -4.727476,
+      "compression_ratio": 1.021739,
+      "end": 234.12,
+      "no_speech_prob": 0.0,
+      "start": 230.92,
+      "text": "obesity tract"
+    },
+    {
+      "avg_logprob": -4.727476,
+      "compression_ratio": 1.021739,
+      "end": 236.88,
+      "no_speech_prob": 0.0,
+      "start": 234.44,
+      "text": "确記"
+    },
+    {
+      "avg_logprob": -0.64574,
+      "compression_ratio": 0.738095,
+      "end": 269.86,
+      "no_speech_prob": 0.0,
+      "start": 239.88,
+      "text": "中文字幕志愿者 李宗盛"
+    },
+    {
+      "avg_logprob": -0.593234,
+      "compression_ratio": 0.5,
+      "end": 299.86,
+      "no_speech_prob": 0.0,
+      "start": 269.88,
+      "text": "李宗盛"
+    },
+    {
+      "avg_logprob": -0.154283,
+      "compression_ratio": 0.5,
+      "end": 329.86,
+      "no_speech_prob": 0.0,
+      "start": 299.88,
+      "text": "李宗盛"
+    },
+    {
+      "avg_logprob": -0.152106,
+      "compression_ratio": 0.5,
+      "end": 359.84,
+      "no_speech_prob": 0.0,
+      "start": 329.86,
+      "text": "李宗盛"
+    },
+    {
+      "avg_logprob": -0.114956,
+      "compression_ratio": 1.259259,
+      "end": 371.0,
+      "no_speech_prob": 0.0,
+      "start": 359.84,
+      "text": "In his first public comment since the change in policy, President Xi Jinping called in a New Year's address for more effort and unity as China enters a, quote, new phase."
+    },
+    {
+      "avg_logprob": -0.174642,
+      "compression_ratio": 1.232,
+      "end": 381.42,
+      "no_speech_prob": 0.0,
+      "start": 371.0,
+      "text": "China reported one new COVID-19 death in the mainland for December 31st, the same as a day earlier, the Chinese Center for Disease Control said on Sunday."
+    },
+    {
+      "avg_logprob": -0.081692,
+      "compression_ratio": 1.350318,
+      "end": 389.68,
+      "no_speech_prob": 0.0,
+      "start": 381.42,
+      "text": "The accumulated official death toll in China now stands at 5,249, far lower than in other large countries."
+    },
+    {
+      "avg_logprob": -0.081692,
+      "compression_ratio": 1.350318,
+      "end": 395.5,
+      "no_speech_prob": 0.0,
+      "start": 390.18,
+      "text": "The government has rejected claims that it has deliberately underreported the total number of fatalities."
+    },
+    {
+      "avg_logprob": -0.131047,
+      "compression_ratio": 1.2,
+      "end": 411.36,
+      "no_speech_prob": 0.0,
+      "start": 395.5,
+      "text": "Another gigantic, shocking tragedy, a huge story broken by the War Room Daily Cloud, Pfizer documents research volunteers under the leadership of Amy Kelly."
+    },
+    {
+      "avg_logprob": -0.165812,
+      "compression_ratio": 1.024096,
+      "end": 418.68,
+      "no_speech_prob": 0.0,
+      "start": 411.36,
+      "text": "This is a post-marketing team report three stroke system organ class review of 5.3.6."
+    },
+    {
+      "avg_logprob": -0.223994,
+      "compression_ratio": 1.293103,
+      "end": 423.76,
+      "no_speech_prob": 0.0,
+      "start": 418.68,
+      "text": "and the headline is another mass murder that Pfizer brought about."
+    },
+    {
+      "avg_logprob": -0.223994,
+      "compression_ratio": 1.293103,
+      "end": 430.94,
+      "no_speech_prob": 0.0,
+      "start": 424.76,
+      "text": "There are two categories of strokes in the Pfizer documents, both of them horrific."
+    },
+    {
+      "avg_logprob": -0.204009,
+      "compression_ratio": 1.488189,
+      "end": 433.94,
+      "no_speech_prob": 0.0,
+      "start": 430.94,
+      "text": "in this adverse event category."
+    },
+    {
+      "avg_logprob": -0.204009,
+      "compression_ratio": 1.488189,
+      "end": 445.12,
+      "no_speech_prob": 0.0,
+      "start": 433.94,
+      "text": "One is bleeding around the brain, other is clotting in and around the brain and strokes that involve venous pulls within the skull, both very serious events."
+    },
+    {
+      "avg_logprob": -0.209078,
+      "compression_ratio": 1.541436,
+      "end": 465.34,
+      "no_speech_prob": 0.0,
+      "start": 445.12,
+      "text": "The Pfizer documents show that starting in December of 2020, meaning when everybody from the president on down was saying safe and effective and then into 2021, new administration, that that president, the spokesmodels, the heads of the CDC and the FDA saying safe and effective."
+    },
+    {
+      "avg_logprob": -0.256363,
+      "compression_ratio": 1.548387,
+      "end": 480.3,
+      "no_speech_prob": 0.0,
+      "start": 465.34,
+      "text": "Pfizer knew that within 41 days after the rollout, this is post-marketing, 275 subjects sustained strokes of those one in five died."
+    },
+    {
+      "avg_logprob": -0.256363,
+      "compression_ratio": 1.548387,
+      "end": 486.78,
+      "no_speech_prob": 0.0,
+      "start": 481.74,
+      "text": "Half of the strokes took place within 48 hours after injection."
+    },
+    {
+      "avg_logprob": -0.256363,
+      "compression_ratio": 1.548387,
+      "end": 491.04,
+      "no_speech_prob": 0.0,
+      "start": 487.28,
+      "text": "So 61 people died of stroke."
+    },
+    {
+      "avg_logprob": -0.256363,
+      "compression_ratio": 1.548387,
+      "end": 494.96,
+      "no_speech_prob": 0.0,
+      "start": 491.04,
+      "text": "And again, half the strokes were two days after the injection."
+    },
+    {
+      "avg_logprob": -0.231835,
+      "compression_ratio": 1.660156,
+      "end": 495.28,
+      "no_speech_prob": 0.0,
+      "start": 494.96,
+      "text": "Okay."
+    },
+    {
+      "avg_logprob": -0.231835,
+      "compression_ratio": 1.660156,
+      "end": 501.7,
+      "no_speech_prob": 0.0,
+      "start": 495.76,
+      "text": "Emergency use authorization was the key to actually let this go because normally this process takes 10 years."
+    },
+    {
+      "avg_logprob": -0.231835,
+      "compression_ratio": 1.660156,
+      "end": 504.22,
+      "no_speech_prob": 0.0,
+      "start": 502.4,
+      "text": "People in a pandemic say, hey, we got to do all this."
+    },
+    {
+      "avg_logprob": -0.231835,
+      "compression_ratio": 1.660156,
+      "end": 504.74,
+      "no_speech_prob": 0.0,
+      "start": 504.26,
+      "text": "We got to do this."
+    },
+    {
+      "avg_logprob": -0.231835,
+      "compression_ratio": 1.660156,
+      "end": 508.76,
+      "no_speech_prob": 0.0,
+      "start": 504.8,
+      "text": "We got to have like a, you know, a Trinity program for the A-bomb to do it."
+    },
+    {
+      "avg_logprob": -0.231835,
+      "compression_ratio": 1.660156,
+      "end": 516.66,
+      "no_speech_prob": 0.0,
+      "start": 509.66,
+      "text": "The emergency use authorization process approved this unanimously."
+    },
+    {
+      "avg_logprob": -0.231835,
+      "compression_ratio": 1.660156,
+      "end": 518.18,
+      "no_speech_prob": 0.0,
+      "start": 517.18,
+      "text": "Am I incorrect?"
+    },
+    {
+      "avg_logprob": -0.231835,
+      "compression_ratio": 1.660156,
+      "end": 523.34,
+      "no_speech_prob": 0.0,
+      "start": 518.18,
+      "text": "The FDA and their advisory council both unanimously seeing what that are you."
+    },
+    {
+      "avg_logprob": -0.193114,
+      "compression_ratio": 1.311111,
+      "end": 535.86,
+      "no_speech_prob": 0.0,
+      "start": 523.34,
+      "text": "Are you saying Pfizer didn't show this, these documents to the FDA and CDC or that the CDC and the FDA saw it and still gave emergency use authorization for this vaccine?"
+    },
+    {
+      "avg_logprob": -0.193114,
+      "compression_ratio": 1.311111,
+      "end": 536.4,
+      "no_speech_prob": 0.0,
+      "start": 535.86,
+      "text": "Ma'am."
+    },
+    {
+      "avg_logprob": -0.262108,
+      "compression_ratio": 1.277372,
+      "end": 538.94,
+      "no_speech_prob": 0.0,
+      "start": 536.4,
+      "text": "It's worse than that, Steve."
+    },
+    {
+      "avg_logprob": -0.262108,
+      "compression_ratio": 1.277372,
+      "end": 543.54,
+      "no_speech_prob": 0.0,
+      "start": 539.36,
+      "text": "December 2020, they had the emergency use authorization."
+    },
+    {
+      "avg_logprob": -0.262108,
+      "compression_ratio": 1.277372,
+      "end": 549.96,
+      "no_speech_prob": 0.0,
+      "start": 544.08,
+      "text": "Every one of these documents on which this report is based was in the custody of the FDA."
+    },
+    {
+      "avg_logprob": -0.153538,
+      "compression_ratio": 1.44186,
+      "end": 554.82,
+      "no_speech_prob": 0.0,
+      "start": 549.96,
+      "text": "The White House would have known about it, certainly in the new administration."
+    },
+    {
+      "avg_logprob": -0.153538,
+      "compression_ratio": 1.44186,
+      "end": 568.02,
+      "no_speech_prob": 0.0,
+      "start": 555.82,
+      "text": "And yet with the emergency use authorization, as they're watching people die, as they're watching 61 bodies pile up, Pfizer concludes there's no serious adverse events."
+    },
+    {
+      "avg_logprob": -0.166813,
+      "compression_ratio": 1.452555,
+      "end": 576.0,
+      "no_speech_prob": 0.0,
+      "start": 568.02,
+      "text": "61 people dead, one in five of the people who sustained stroke events, half of those stroke events within two days after injection."
+    },
+    {
+      "avg_logprob": -0.166813,
+      "compression_ratio": 1.452555,
+      "end": 580.08,
+      "no_speech_prob": 0.0,
+      "start": 576.4,
+      "text": "This is just two countries, 41 days after rollout, they kept going."
+    },
+    {
+      "avg_logprob": -0.186242,
+      "compression_ratio": 1.527174,
+      "end": 592.1,
+      "no_speech_prob": 0.0,
+      "start": 580.08,
+      "text": "A U.S. Secretary of State, Anthony Blinken held talks with incoming Chinese Foreign Minister, Xinjiang."
+    },
+    {
+      "avg_logprob": -0.186242,
+      "compression_ratio": 1.527174,
+      "end": 596.58,
+      "no_speech_prob": 0.0,
+      "start": 593.02,
+      "text": "Days after China announced Xin as the new Foreign Minister."
+    },
+    {
+      "avg_logprob": -0.186242,
+      "compression_ratio": 1.527174,
+      "end": 603.4,
+      "no_speech_prob": 0.0,
+      "start": 597.12,
+      "text": "Taking to Twitter, Blinken said that he held talks with Xin over the phone as he departs Washington for his new role."
+    },
+    {
+      "avg_logprob": -0.117617,
+      "compression_ratio": 1.609319,
+      "end": 608.46,
+      "no_speech_prob": 0.0,
+      "start": 603.4,
+      "text": "The two discussed U.S.-China relationships and maintaining open lines of communication."
+    },
+    {
+      "avg_logprob": -0.117617,
+      "compression_ratio": 1.609319,
+      "end": 614.14,
+      "no_speech_prob": 0.0,
+      "start": 608.92,
+      "text": "The talks come just before Xin leaves for China to take up his new post as Foreign Minister."
+    },
+    {
+      "avg_logprob": -0.117617,
+      "compression_ratio": 1.609319,
+      "end": 619.02,
+      "no_speech_prob": 0.0,
+      "start": 614.5,
+      "text": "Xin replaced Wang Yi, who had been Foreign Minister for the past decade."
+    },
+    {
+      "avg_logprob": -0.117617,
+      "compression_ratio": 1.609319,
+      "end": 626.38,
+      "no_speech_prob": 0.0,
+      "start": 619.02,
+      "text": "As of October last year, Wang has been promoted to the Politburo of the Chinese Communist Party."
+    },
+    {
+      "avg_logprob": -0.117617,
+      "compression_ratio": 1.609319,
+      "end": 632.8,
+      "no_speech_prob": 0.0,
+      "start": 626.72,
+      "text": "Wang Sinyo corresponds to the rising tensions and between the two nations amid issues with Taiwan."
+    },
+    {
+      "avg_logprob": -0.177634,
+      "compression_ratio": 1.5,
+      "end": 642.88,
+      "no_speech_prob": 0.0,
+      "start": 633.4,
+      "text": "Wang is now expected to play an important role in the Chinese foreign policy as Xin takes his place and looks forward to building better relations between the two superpowers."
+    },
+    {
+      "avg_logprob": -0.177634,
+      "compression_ratio": 1.5,
+      "end": 656.78,
+      "no_speech_prob": 0.0,
+      "start": 650.3,
+      "text": "Joining me now to react is KT McFarlane, former Deputy National Security Advisor, author of Revolution Trump."
+    },
+    {
+      "avg_logprob": -0.177634,
+      "compression_ratio": 1.5,
+      "end": 659.74,
+      "no_speech_prob": 0.0,
+      "start": 657.3,
+      "text": "KT, what a pleasure to see you in person here in studio."
+    },
+    {
+      "avg_logprob": -0.177634,
+      "compression_ratio": 1.5,
+      "end": 660.9,
+      "no_speech_prob": 0.0,
+      "start": 659.96,
+      "text": "Happy New Year to you."
+    },
+    {
+      "avg_logprob": -0.177634,
+      "compression_ratio": 1.5,
+      "end": 662.46,
+      "no_speech_prob": 0.0,
+      "start": 661.28,
+      "text": "All right, what's China up to?"
+    },
+    {
+      "avg_logprob": -0.148265,
+      "compression_ratio": 1.621818,
+      "end": 670.8,
+      "no_speech_prob": 0.0,
+      "start": 662.46,
+      "text": "Ooh, China has every intention of becoming the new superpower in the world, replacing the United States and then rewriting the rules of order to its advantage."
+    },
+    {
+      "avg_logprob": -0.148265,
+      "compression_ratio": 1.621818,
+      "end": 672.78,
+      "no_speech_prob": 0.0,
+      "start": 671.04,
+      "text": "And it's making no secret about it."
+    },
+    {
+      "avg_logprob": -0.148265,
+      "compression_ratio": 1.621818,
+      "end": 679.14,
+      "no_speech_prob": 0.0,
+      "start": 672.8,
+      "text": "It plans to do this economically, technologically, militarily, culturally, politically, diplomatically, and it's well in its way."
+    },
+    {
+      "avg_logprob": -0.148265,
+      "compression_ratio": 1.621818,
+      "end": 682.94,
+      "no_speech_prob": 0.0,
+      "start": 679.3,
+      "text": "But they are right now getting slammed by COVID."
+    },
+    {
+      "avg_logprob": -0.148265,
+      "compression_ratio": 1.621818,
+      "end": 687.54,
+      "no_speech_prob": 0.0,
+      "start": 683.1,
+      "text": "They ripped the bandage off of that stupid zero COVID policy they have."
+    },
+    {
+      "avg_logprob": -0.128139,
+      "compression_ratio": 1.333333,
+      "end": 690.4,
+      "no_speech_prob": 0.0,
+      "start": 687.54,
+      "text": "And they're stuck now with hospitals that are overrun."
+    },
+    {
+      "avg_logprob": -0.128139,
+      "compression_ratio": 1.333333,
+      "end": 692.88,
+      "no_speech_prob": 0.0,
+      "start": 690.68,
+      "text": "They might have more than a million people die."
+    },
+    {
+      "avg_logprob": -0.128139,
+      "compression_ratio": 1.333333,
+      "end": 696.08,
+      "no_speech_prob": 0.0,
+      "start": 693.02,
+      "text": "Isn't that going to affect their ability to do anything outside their border?"
+    },
+    {
+      "avg_logprob": -0.12836,
+      "compression_ratio": 1.535545,
+      "end": 698.34,
+      "no_speech_prob": 0.0,
+      "start": 696.08,
+      "text": "Oh, I think that actually it might have the opposite effect."
+    },
+    {
+      "avg_logprob": -0.12836,
+      "compression_ratio": 1.535545,
+      "end": 703.62,
+      "no_speech_prob": 0.0,
+      "start": 698.72,
+      "text": "You know, Lenin, it was actually Lenin who said, basically, if you have a problem at home, create a problem abroad."
+    },
+    {
+      "avg_logprob": -0.12836,
+      "compression_ratio": 1.535545,
+      "end": 708.12,
+      "no_speech_prob": 0.0,
+      "start": 703.72,
+      "text": "And then people will focus on the problem abroad and they'll accept what's happening at home."
+    },
+    {
+      "avg_logprob": -0.12836,
+      "compression_ratio": 1.535545,
+      "end": 711.42,
+      "no_speech_prob": 0.0,
+      "start": 708.42,
+      "text": "So I think Xi Jinping becomes more dangerous in 2023."
+    },
+    {
+      "avg_logprob": -0.115002,
+      "compression_ratio": 1.625387,
+      "end": 718.58,
+      "no_speech_prob": 0.0,
+      "start": 711.42,
+      "text": "And a problem at home, I mean, to put it in that phrase, when over a million people might die as a result of this COVID?"
+    },
+    {
+      "avg_logprob": -0.115002,
+      "compression_ratio": 1.625387,
+      "end": 719.5,
+      "no_speech_prob": 0.0,
+      "start": 718.58,
+      "text": "Yeah, but here's what happened."
+    },
+    {
+      "avg_logprob": -0.115002,
+      "compression_ratio": 1.625387,
+      "end": 725.86,
+      "no_speech_prob": 0.0,
+      "start": 719.64,
+      "text": "You know, because China and Xi Jinping said, look, we're the guys who understand how to have an effective government."
+    },
+    {
+      "avg_logprob": -0.115002,
+      "compression_ratio": 1.625387,
+      "end": 729.96,
+      "no_speech_prob": 0.0,
+      "start": 725.98,
+      "text": "Authoritarian government is how to deal with the modern world and COVID crisis, et cetera, et cetera."
+    },
+    {
+      "avg_logprob": -0.115002,
+      "compression_ratio": 1.625387,
+      "end": 736.74,
+      "no_speech_prob": 0.0,
+      "start": 730.16,
+      "text": "They have no social safety net in the sense of health care that would be what we would consider adequate health care."
+    },
+    {
+      "avg_logprob": -0.115002,
+      "compression_ratio": 1.625387,
+      "end": 738.68,
+      "no_speech_prob": 0.0,
+      "start": 737.06,
+      "text": "Their hospitals are being overrun."
+    },
+    {
+      "avg_logprob": -0.117914,
+      "compression_ratio": 1.900322,
+      "end": 739.98,
+      "no_speech_prob": 0.0,
+      "start": 738.68,
+      "text": "And they have an alternative."
+    },
+    {
+      "avg_logprob": -0.117914,
+      "compression_ratio": 1.900322,
+      "end": 741.82,
+      "no_speech_prob": 0.0,
+      "start": 740.12,
+      "text": "Can they lock the whole society down again?"
+    },
+    {
+      "avg_logprob": -0.117914,
+      "compression_ratio": 1.900322,
+      "end": 745.82,
+      "no_speech_prob": 0.0,
+      "start": 742.08,
+      "text": "They're having massive demonstrations and protests when they lock the people down."
+    },
+    {
+      "avg_logprob": -0.117914,
+      "compression_ratio": 1.900322,
+      "end": 749.14,
+      "no_speech_prob": 0.0,
+      "start": 745.88,
+      "text": "And they don't just lock them down and say, we're going to give you a slap on the wrist."
+    },
+    {
+      "avg_logprob": -0.117914,
+      "compression_ratio": 1.900322,
+      "end": 753.46,
+      "no_speech_prob": 0.0,
+      "start": 749.4,
+      "text": "I mean, they are having guns and people and guns going door to door to say, we'll shoot you."
+    },
+    {
+      "avg_logprob": -0.117914,
+      "compression_ratio": 1.900322,
+      "end": 756.06,
+      "no_speech_prob": 0.0,
+      "start": 753.46,
+      "text": "They may not care about the humanity of this."
+    },
+    {
+      "avg_logprob": -0.117914,
+      "compression_ratio": 1.900322,
+      "end": 761.54,
+      "no_speech_prob": 0.0,
+      "start": 756.3,
+      "text": "I mean, to us, thousands of people dying would be something we'd have to stop the nation for."
+    },
+    {
+      "avg_logprob": -0.117914,
+      "compression_ratio": 1.900322,
+      "end": 764.04,
+      "no_speech_prob": 0.0,
+      "start": 761.6,
+      "text": "To them, a million people, that's just a number."
+    },
+    {
+      "avg_logprob": -0.117914,
+      "compression_ratio": 1.900322,
+      "end": 765.48,
+      "no_speech_prob": 0.0,
+      "start": 764.14,
+      "text": "It's just a statistic."
+    },
+    {
+      "avg_logprob": -0.117914,
+      "compression_ratio": 1.900322,
+      "end": 768.04,
+      "no_speech_prob": 0.0,
+      "start": 765.98,
+      "text": "However, they do care about the economy."
+    },
+    {
+      "avg_logprob": -0.104828,
+      "compression_ratio": 1.673611,
+      "end": 776.52,
+      "no_speech_prob": 0.0,
+      "start": 768.04,
+      "text": "And they may have to shut down a lot of these, particularly the foreign companies that they have, the foreign manufacturing centers they have."
+    },
+    {
+      "avg_logprob": -0.104828,
+      "compression_ratio": 1.673611,
+      "end": 784.12,
+      "no_speech_prob": 0.0,
+      "start": 776.62,
+      "text": "So, I mean, this could seriously affect their ability financially to, for example, their designs on Taiwan."
+    },
+    {
+      "avg_logprob": -0.104828,
+      "compression_ratio": 1.673611,
+      "end": 788.86,
+      "no_speech_prob": 0.0,
+      "start": 784.34,
+      "text": "They might not be able to do in 2023 what they had been planning to do earlier in 2022."
+    },
+    {
+      "avg_logprob": -0.104828,
+      "compression_ratio": 1.673611,
+      "end": 789.06,
+      "no_speech_prob": 0.0,
+      "start": 788.86,
+      "text": "That's right."
+    },
+    {
+      "avg_logprob": -0.104828,
+      "compression_ratio": 1.673611,
+      "end": 795.04,
+      "no_speech_prob": 0.0,
+      "start": 789.06,
+      "text": "The knock-on effects of this COVID crisis will be big because not only will they have problems when they shut down their economy,"
+    },
+    {
+      "avg_logprob": -0.153804,
+      "compression_ratio": 1.660465,
+      "end": 799.8,
+      "no_speech_prob": 0.0,
+      "start": 795.04,
+      "text": "but other companies and countries are looking to say, we can't reliably do business in China."
+    },
+    {
+      "avg_logprob": -0.153804,
+      "compression_ratio": 1.660465,
+      "end": 803.46,
+      "no_speech_prob": 0.0,
+      "start": 800.06,
+      "text": "We also have the idea that the United States is having an economic competition."
+    },
+    {
+      "avg_logprob": -0.153804,
+      "compression_ratio": 1.660465,
+      "end": 805.46,
+      "no_speech_prob": 0.0,
+      "start": 803.72,
+      "text": "Maybe it's time to move our stuff out of China."
+    },
+    {
+      "avg_logprob": -0.153804,
+      "compression_ratio": 1.660465,
+      "end": 806.9,
+      "no_speech_prob": 0.0,
+      "start": 805.58,
+      "text": "Maybe we move to Southeast Asia."
+    },
+    {
+      "avg_logprob": -0.153804,
+      "compression_ratio": 1.660465,
+      "end": 808.64,
+      "no_speech_prob": 0.0,
+      "start": 807.26,
+      "text": "Maybe we move to South America."
+    },
+    {
+      "avg_logprob": -0.153804,
+      "compression_ratio": 1.660465,
+      "end": 810.34,
+      "no_speech_prob": 0.0,
+      "start": 808.92,
+      "text": "But maybe we just move out of China."
+    },
+    {
+      "avg_logprob": -0.153804,
+      "compression_ratio": 1.660465,
+      "end": 812.56,
+      "no_speech_prob": 0.0,
+      "start": 810.72,
+      "text": "So, I think that's also going on."
+    },
+    {
+      "avg_logprob": -0.134077,
+      "compression_ratio": 1.659836,
+      "end": 822.18,
+      "no_speech_prob": 0.0,
+      "start": 812.56,
+      "text": "But Xi Jinping has made it very clear that he plans to have China have complete sovereignty over Taiwan while he is president."
+    },
+    {
+      "avg_logprob": -0.134077,
+      "compression_ratio": 1.659836,
+      "end": 823.52,
+      "no_speech_prob": 0.0,
+      "start": 822.38,
+      "text": "And he's in his 70s."
+    },
+    {
+      "avg_logprob": -0.134077,
+      "compression_ratio": 1.659836,
+      "end": 825.5,
+      "no_speech_prob": 0.0,
+      "start": 823.52,
+      "text": "So, he doesn't have a whole lot of time left."
+    },
+    {
+      "avg_logprob": -0.134077,
+      "compression_ratio": 1.659836,
+      "end": 828.56,
+      "no_speech_prob": 0.0,
+      "start": 825.76,
+      "text": "But he's got a calendar and he's planning to do it."
+    },
+    {
+      "avg_logprob": -0.134077,
+      "compression_ratio": 1.659836,
+      "end": 832.76,
+      "no_speech_prob": 0.0,
+      "start": 828.64,
+      "text": "And whether it's this year or next year or the next two or three years, but it's not 20 years from now."
+    },
+    {
+      "avg_logprob": -0.134077,
+      "compression_ratio": 1.659836,
+      "end": 833.64,
+      "no_speech_prob": 0.0,
+      "start": 832.82,
+      "text": "So, he's on the move."
+    },
+    {
+      "avg_logprob": -0.134077,
+      "compression_ratio": 1.659836,
+      "end": 835.28,
+      "no_speech_prob": 0.0,
+      "start": 833.8,
+      "text": "And he does now have Russian oil."
+    },
+    {
+      "avg_logprob": -0.133587,
+      "compression_ratio": 1.586957,
+      "end": 841.04,
+      "no_speech_prob": 0.0,
+      "start": 835.28,
+      "text": "I mean, the Russians are saying, okay, fine, we'll sell our oil to China, maybe at a little discount."
+    },
+    {
+      "avg_logprob": -0.133587,
+      "compression_ratio": 1.586957,
+      "end": 846.64,
+      "no_speech_prob": 0.0,
+      "start": 841.14,
+      "text": "But the fact is they can offload the oil that they can't necessarily sell in Europe anymore."
+    },
+    {
+      "avg_logprob": -0.133587,
+      "compression_ratio": 1.586957,
+      "end": 854.18,
+      "no_speech_prob": 0.0,
+      "start": 847.78,
+      "text": "And today, you had this extraordinary video conference between President Xi and President Putin."
+    },
+    {
+      "avg_logprob": -0.133587,
+      "compression_ratio": 1.586957,
+      "end": 860.74,
+      "no_speech_prob": 0.0,
+      "start": 855.46,
+      "text": "And I'm just, they were talking about a new world order that will be led by their two countries."
+    },
+    {
+      "avg_logprob": -0.133587,
+      "compression_ratio": 1.586957,
+      "end": 863.46,
+      "no_speech_prob": 0.0,
+      "start": 860.88,
+      "text": "I mean, what's, how serious do you take all this?"
+    },
+    {
+      "avg_logprob": -0.138733,
+      "compression_ratio": 1.695925,
+      "end": 872.26,
+      "no_speech_prob": 0.0,
+      "start": 863.46,
+      "text": "When I was in the Nixon, Ford, and Reagan administrations, the whole thought of a Sino-Soviet, Chinese-Russian alliance is what drove American foreign policy."
+    },
+    {
+      "avg_logprob": -0.138733,
+      "compression_ratio": 1.695925,
+      "end": 873.96,
+      "no_speech_prob": 0.0,
+      "start": 872.52,
+      "text": "We knew that was the nightmare scenario."
+    },
+    {
+      "avg_logprob": -0.138733,
+      "compression_ratio": 1.695925,
+      "end": 878.74,
+      "no_speech_prob": 0.0,
+      "start": 874.32,
+      "text": "In those days, we thought that the Soviet Union was the dominant partner and China the junior partner."
+    },
+    {
+      "avg_logprob": -0.138733,
+      "compression_ratio": 1.695925,
+      "end": 880.7,
+      "no_speech_prob": 0.0,
+      "start": 879.06,
+      "text": "Now, they plan to flip it on its head."
+    },
+    {
+      "avg_logprob": -0.138733,
+      "compression_ratio": 1.695925,
+      "end": 889.64,
+      "no_speech_prob": 0.0,
+      "start": 880.7,
+      "text": "And the combination, just think about this, it's the combination of Chinese technology, Chinese money, Russian military, and Russian natural resources."
+    },
+    {
+      "avg_logprob": -0.138733,
+      "compression_ratio": 1.695925,
+      "end": 892.8,
+      "no_speech_prob": 0.0,
+      "start": 889.86,
+      "text": "That is a very potent and powerful combination."
+    },
+    {
+      "avg_logprob": -0.350384,
+      "compression_ratio": 1.213115,
+      "end": 895.1,
+      "no_speech_prob": 0.0,
+      "start": 892.8,
+      "text": "But that union never happened during the Cold War."
+    },
+    {
+      "avg_logprob": -0.350384,
+      "compression_ratio": 1.213115,
+      "end": 896.5,
+      "no_speech_prob": 0.0,
+      "start": 895.28,
+      "text": "In fact, they fought."
+    },
+    {
+      "avg_logprob": -0.350384,
+      "compression_ratio": 1.213115,
+      "end": 899.8,
+      "no_speech_prob": 0.0,
+      "start": 896.88,
+      "text": "And you even wrote a PhD thesis about that fight back in the United States."
+    }
+  ],
+  "text": "请不吝点赞 订阅 转发 打赏支持明镜与点点栏目 打赏支持明镜与点点栏目 打赏支持明镜与点点栏目umibabbbbbbginbbbbbbgingingingin没有考慮过身体过程度过程度过程度过程度过程度过程度过程度过程度过程度过程度过程度过程度过程度过程度过程度过程度过程度过程度过程度过程度过程度过程度过程度过程度过程度过程度过程度过程度过程度过程度过程度过程度过程度过程度过程度过程度过程度过程度过程度过程度过程度过程度过程度过程度过程度过程度过程度过程度过程度过程度过程度过程度过程度过程度过程度过程度过程度过程度过程度过程度过程度过程度过程度过程度过程度过程度过程度过程度过程度过程度过程度过程度 AV�mill summarize IT improveUS 2021問題 SC很棒問題發展電視被保存一次通常由於重要保存一次世界上各国国超越海贸市世界上贸易您公司现在 CDC Pete到了也是收入里 ink棺开 regardez delicate year to have grade three or serious adverse events or depth so it's we're now sitting on a really a tidal wave of data that that support this in terms of uh the uh consternation about how this took place please keep in mind event 201 involved the cia it was funded by the世界中主導 dazuолж壇文化世界中主導也是日本文化山豚 obesity tract确記中文字幕志愿者 李宗盛 李宗盛 李宗盛 李宗盛 In his first public comment since the change in policy, President Xi Jinping called in a New Year's address for more effort and unity as China enters a, quote, new phase. China reported one new COVID-19 death in the mainland for December 31st, the same as a day earlier, the Chinese Center for Disease Control said on Sunday. The accumulated official death toll in China now stands at 5,249, far lower than in other large countries. The government has rejected claims that it has deliberately underreported the total number of fatalities. Another gigantic, shocking tragedy, a huge story broken by the War Room Daily Cloud, Pfizer documents research volunteers under the leadership of Amy Kelly. This is a post-marketing team report three stroke system organ class review of 5.3.6. and the headline is another mass murder that Pfizer brought about. There are two categories of strokes in the Pfizer documents, both of them horrific. in this adverse event category. One is bleeding around the brain, other is clotting in and around the brain and strokes that involve venous pulls within the skull, both very serious events. The Pfizer documents show that starting in December of 2020, meaning when everybody from the president on down was saying safe and effective and then into 2021, new administration, that that president, the spokesmodels, the heads of the CDC and the FDA saying safe and effective. Pfizer knew that within 41 days after the rollout, this is post-marketing, 275 subjects sustained strokes of those one in five died. Half of the strokes took place within 48 hours after injection. So 61 people died of stroke. And again, half the strokes were two days after the injection. Okay. Emergency use authorization was the key to actually let this go because normally this process takes 10 years. People in a pandemic say, hey, we got to do all this. We got to do this. We got to have like a, you know, a Trinity program for the A-bomb to do it. The emergency use authorization process approved this unanimously. Am I incorrect? The FDA and their advisory council both unanimously seeing what that are you. Are you saying Pfizer didn't show this, these documents to the FDA and CDC or that the CDC and the FDA saw it and still gave emergency use authorization for this vaccine? Ma'am. It's worse than that, Steve. December 2020, they had the emergency use authorization. Every one of these documents on which this report is based was in the custody of the FDA. The White House would have known about it, certainly in the new administration. And yet with the emergency use authorization, as they're watching people die, as they're watching 61 bodies pile up, Pfizer concludes there's no serious adverse events. 61 people dead, one in five of the people who sustained stroke events, half of those stroke events within two days after injection. This is just two countries, 41 days after rollout, they kept going. A U.S. Secretary of State, Anthony Blinken held talks with incoming Chinese Foreign Minister, Xinjiang. Days after China announced Xin as the new Foreign Minister. Taking to Twitter, Blinken said that he held talks with Xin over the phone as he departs Washington for his new role. The two discussed U.S.-China relationships and maintaining open lines of communication. The talks come just before Xin leaves for China to take up his new post as Foreign Minister. Xin replaced Wang Yi, who had been Foreign Minister for the past decade. As of October last year, Wang has been promoted to the Politburo of the Chinese Communist Party. Wang Sinyo corresponds to the rising tensions and between the two nations amid issues with Taiwan. Wang is now expected to play an important role in the Chinese foreign policy as Xin takes his place and looks forward to building better relations between the two superpowers. Joining me now to react is KT McFarlane, former Deputy National Security Advisor, author of Revolution Trump. KT, what a pleasure to see you in person here in studio. Happy New Year to you. All right, what's China up to? Ooh, China has every intention of becoming the new superpower in the world, replacing the United States and then rewriting the rules of order to its advantage. And it's making no secret about it. It plans to do this economically, technologically, militarily, culturally, politically, diplomatically, and it's well in its way. But they are right now getting slammed by COVID. They ripped the bandage off of that stupid zero COVID policy they have. And they're stuck now with hospitals that are overrun. They might have more than a million people die. Isn't that going to affect their ability to do anything outside their border? Oh, I think that actually it might have the opposite effect. You know, Lenin, it was actually Lenin who said, basically, if you have a problem at home, create a problem abroad. And then people will focus on the problem abroad and they'll accept what's happening at home. So I think Xi Jinping becomes more dangerous in 2023. And a problem at home, I mean, to put it in that phrase, when over a million people might die as a result of this COVID? Yeah, but here's what happened. You know, because China and Xi Jinping said, look, we're the guys who understand how to have an effective government. Authoritarian government is how to deal with the modern world and COVID crisis, et cetera, et cetera. They have no social safety net in the sense of health care that would be what we would consider adequate health care. Their hospitals are being overrun. And they have an alternative. Can they lock the whole society down again? They're having massive demonstrations and protests when they lock the people down. And they don't just lock them down and say, we're going to give you a slap on the wrist. I mean, they are having guns and people and guns going door to door to say, we'll shoot you. They may not care about the humanity of this. I mean, to us, thousands of people dying would be something we'd have to stop the nation for. To them, a million people, that's just a number. It's just a statistic. However, they do care about the economy. And they may have to shut down a lot of these, particularly the foreign companies that they have, the foreign manufacturing centers they have. So, I mean, this could seriously affect their ability financially to, for example, their designs on Taiwan. They might not be able to do in 2023 what they had been planning to do earlier in 2022. That's right. The knock-on effects of this COVID crisis will be big because not only will they have problems when they shut down their economy, but other companies and countries are looking to say, we can't reliably do business in China. We also have the idea that the United States is having an economic competition. Maybe it's time to move our stuff out of China. Maybe we move to Southeast Asia. Maybe we move to South America. But maybe we just move out of China. So, I think that's also going on. But Xi Jinping has made it very clear that he plans to have China have complete sovereignty over Taiwan while he is president. And he's in his 70s. So, he doesn't have a whole lot of time left. But he's got a calendar and he's planning to do it. And whether it's this year or next year or the next two or three years, but it's not 20 years from now. So, he's on the move. And he does now have Russian oil. I mean, the Russians are saying, okay, fine, we'll sell our oil to China, maybe at a little discount. But the fact is they can offload the oil that they can't necessarily sell in Europe anymore. And today, you had this extraordinary video conference between President Xi and President Putin. And I'm just, they were talking about a new world order that will be led by their two countries. I mean, what's, how serious do you take all this? When I was in the Nixon, Ford, and Reagan administrations, the whole thought of a Sino-Soviet, Chinese-Russian alliance is what drove American foreign policy. We knew that was the nightmare scenario. In those days, we thought that the Soviet Union was the dominant partner and China the junior partner. Now, they plan to flip it on its head. And the combination, just think about this, it's the combination of Chinese technology, Chinese money, Russian military, and Russian natural resources. That is a very potent and powerful combination. But that union never happened during the Cold War. In fact, they fought. And you even wrote a PhD thesis about that fight back in the United States."
+}
