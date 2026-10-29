@@ -1,0 +1,16 @@
+{
+  "task_id": "WI_LIVE_20230214_001_segment_split",
+  "agent_id": "codex-local-asr-agent50-20261028",
+  "completed_at": "2026-10-29T06:33:54.103837+00:00",
+  "result_commit": "2e5d615028f6d74e199539d7d468970374066b93",
+  "outputs": [
+    "data/current/live_segments/asr_live_20230214_001.jsonl"
+  ],
+  "validation": "Created 9 natural topic/event/quote segments from all 337 quality-gated cues with preserved time ranges. build_db and validate_db passed; 148 tests passed.",
+  "workflow_mode": "continuous-worker-v2",
+  "claim_protocol": "claim-protocol-v2",
+  "entry_mode": "work",
+  "continue_after_finish": true,
+  "finish_prerequisites_revalidated": true,
+  "notes": "Task completed only after re-checking the latest repository dependency contract. Under continuous-worker-v2, refresh repository state and claim the next eligible task unless a documented stop condition applies."
+}
