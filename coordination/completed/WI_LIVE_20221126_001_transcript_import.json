@@ -1,0 +1,19 @@
+{
+  "task_id": "WI_LIVE_20221126_001_transcript_import",
+  "agent_id": "codex-local-asr-agent50-20261028",
+  "completed_at": "2026-10-29T02:31:17.885522+00:00",
+  "result_commit": "42499a69da2aad9366481af513a4d29c43298f16",
+  "outputs": [
+    "data/current/transcript_versions/asr_live_20221126_001.jsonl",
+    "data/current/transcript_cues/asr_live_20221126_001.jsonl",
+    "data/current/live_segments/asr_live_20221126_001.jsonl",
+    "data/current/asr_manifests/asr_live_20221126_001.json"
+  ],
+  "validation": "MLX-Whisper machine ASR, not human checked; 325 cues; duration 599.836s; end coverage 0.996606; quality score 0.9974; no quality failures; manual tail review coherent through 597.8s; build_db and validate_db passed; 148 tests passed.",
+  "workflow_mode": "continuous-worker-v2",
+  "claim_protocol": "claim-protocol-v2",
+  "entry_mode": "work",
+  "continue_after_finish": true,
+  "finish_prerequisites_revalidated": true,
+  "notes": "Task completed only after re-checking the latest repository dependency contract. Under continuous-worker-v2, refresh repository state and claim the next eligible task unless a documented stop condition applies."
+}
