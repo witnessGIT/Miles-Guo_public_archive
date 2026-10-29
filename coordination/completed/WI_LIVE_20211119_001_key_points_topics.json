@@ -1,0 +1,19 @@
+{
+  "task_id": "WI_LIVE_20211119_001_key_points_topics",
+  "agent_id": "github-actions-cloud-key-points-40846300883",
+  "completed_at": "2026-10-29T13:14:46.299964+00:00",
+  "result_commit": "4866b57f198e69c4cbad93ad0a8243f9c1dadbb9",
+  "outputs": [
+    "data/current/live_segments/asr_live_20211119_001.jsonl",
+    "data/current/segment_key_points/machine_live_20211119_001.jsonl",
+    "data/current/segment_topics/machine_live_20211119_001.jsonl",
+    "data/current/topics/controlled_taxonomy_v1.jsonl"
+  ],
+  "validation": "No substantive content identified after all natural segments returned no key points; build_db/validate_db/full tests OK; machine status",
+  "workflow_mode": "continuous-worker-v2",
+  "claim_protocol": "claim-protocol-v2",
+  "entry_mode": "work",
+  "continue_after_finish": true,
+  "finish_prerequisites_revalidated": true,
+  "notes": "Task completed only after re-checking the latest repository dependency contract. Under continuous-worker-v2, refresh repository state and claim the next eligible task unless a documented stop condition applies."
+}
