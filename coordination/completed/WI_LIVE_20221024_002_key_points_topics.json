@@ -1,0 +1,19 @@
+{
+  "task_id": "WI_LIVE_20221024_002_key_points_topics",
+  "agent_id": "codex-local-asr-agent50-20261028",
+  "completed_at": "2026-10-29T00:42:21.086587+00:00",
+  "result_commit": "98a8a86e71bc4d38ba7edf419db61940e0640264",
+  "outputs": [
+    "data/current/live_segments/asr_live_20221024_002.jsonl",
+    "data/current/segment_key_points/machine_live_20221024_002.jsonl",
+    "data/current/segment_topics/machine_live_20221024_002.jsonl",
+    "data/current/topics/controlled_taxonomy_v1.jsonl"
+  ],
+  "validation": "Local Qwen2.5-7B-Instruct-4bit grounded enrichment plus evidence-grounded supplement for one substantive model-empty segment: 9/9 natural segments covered; 56 evidence-grounded variable-count key points; 18 controlled topic links; all evidence spans exact; build_db OK; validate_db OK; full 146 tests OK",
+  "workflow_mode": "continuous-worker-v2",
+  "claim_protocol": "claim-protocol-v2",
+  "entry_mode": "work",
+  "continue_after_finish": true,
+  "finish_prerequisites_revalidated": true,
+  "notes": "Task completed only after re-checking the latest repository dependency contract. Under continuous-worker-v2, refresh repository state and claim the next eligible task unless a documented stop condition applies."
+}
