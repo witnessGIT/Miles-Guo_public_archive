@@ -1,0 +1,2560 @@
+{
+  "chunk_audio_sha256": "91c7410c27ed5f304a86d6cd07cc2b606cd075e7f4ead3c92b54a7fe407ed25c",
+  "chunk_index": 0,
+  "completed_at": "2026-10-29T08:17:36Z",
+  "language": "zh",
+  "live_id": "LIVE_20221012_001",
+  "media_committed_to_git": false,
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "offset_sec": 0,
+  "paid_api_used": false,
+  "processing_location": "github-hosted-macos-arm64",
+  "schema_version": "cloud-asr-chunk-v1",
+  "segments": [
+    {
+      "avg_logprob": -0.098004,
+      "compression_ratio": 12.5,
+      "end": 30.0,
+      "no_speech_prob": 0.0,
+      "start": 0.0,
+      "text": "≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡�"
+    },
+    {
+      "avg_logprob": -2.220715,
+      "compression_ratio": 3.518987,
+      "end": 31.34,
+      "no_speech_prob": 0.0,
+      "start": 30.0,
+      "text": "我认带的我误 auf,"
+    },
+    {
+      "avg_logprob": -2.220715,
+      "compression_ratio": 3.518987,
+      "end": 32.42,
+      "no_speech_prob": 0.0,
+      "start": 31.34,
+      "text": "stein的一年褶 yourind"
+    },
+    {
+      "avg_logprob": -2.220715,
+      "compression_ratio": 3.518987,
+      "end": 33.1,
+      "no_speech_prob": 0.0,
+      "start": 32.42,
+      "text": "是一旦的一旦是"
+    },
+    {
+      "avg_logprob": -2.220715,
+      "compression_ratio": 3.518987,
+      "end": 34.08,
+      "no_speech_prob": 0.0,
+      "start": 33.1,
+      "text": "的人是你迫的 test"
+    },
+    {
+      "avg_logprob": -2.220715,
+      "compression_ratio": 3.518987,
+      "end": 34.58,
+      "no_speech_prob": 0.0,
+      "start": 34.08,
+      "text": "是你 sun the need"
+    },
+    {
+      "avg_logprob": -2.220715,
+      "compression_ratio": 3.518987,
+      "end": 34.58,
+      "no_speech_prob": 0.0,
+      "start": 34.58,
+      "text": "never And the has"
+    },
+    {
+      "avg_logprob": -2.220715,
+      "compression_ratio": 3.518987,
+      "end": 34.54,
+      "no_speech_prob": 0.0,
+      "start": 34.48,
+      "text": "I have the time you have"
+    },
+    {
+      "avg_logprob": -2.220715,
+      "compression_ratio": 3.518987,
+      "end": 34.64,
+      "no_speech_prob": 0.0,
+      "start": 34.54,
+      "text": "the world"
+    },
+    {
+      "avg_logprob": -2.220715,
+      "compression_ratio": 3.518987,
+      "end": 34.8,
+      "no_speech_prob": 0.0,
+      "start": 34.64,
+      "text": "I have the time to be"
+    },
+    {
+      "avg_logprob": -2.220715,
+      "compression_ratio": 3.518987,
+      "end": 34.96,
+      "no_speech_prob": 0.0,
+      "start": 34.8,
+      "text": "theiv you have the time"
+    },
+    {
+      "avg_logprob": -2.220715,
+      "compression_ratio": 3.518987,
+      "end": 34.96,
+      "no_speech_prob": 0.0,
+      "start": 34.96,
+      "text": "the time to be"
+    },
+    {
+      "avg_logprob": -2.220715,
+      "compression_ratio": 3.518987,
+      "end": 34.94,
+      "no_speech_prob": 0.0,
+      "start": 34.9,
+      "text": "the time to be"
+    },
+    {
+      "avg_logprob": -2.220715,
+      "compression_ratio": 3.518987,
+      "end": 35.0,
+      "no_speech_prob": 0.0,
+      "start": 34.94,
+      "text": "the time to be"
+    },
+    {
+      "avg_logprob": -2.220715,
+      "compression_ratio": 3.518987,
+      "end": 35.08,
+      "no_speech_prob": 0.0,
+      "start": 35.0,
+      "text": "the time to be"
+    },
+    {
+      "avg_logprob": -2.220715,
+      "compression_ratio": 3.518987,
+      "end": 35.14,
+      "no_speech_prob": 0.0,
+      "start": 35.08,
+      "text": "the time to be"
+    },
+    {
+      "avg_logprob": -2.220715,
+      "compression_ratio": 3.518987,
+      "end": 35.18,
+      "no_speech_prob": 0.0,
+      "start": 35.14,
+      "text": "the time to be"
+    },
+    {
+      "avg_logprob": -2.220715,
+      "compression_ratio": 3.518987,
+      "end": 35.24,
+      "no_speech_prob": 0.0,
+      "start": 35.18,
+      "text": "the time to be"
+    },
+    {
+      "avg_logprob": -2.220715,
+      "compression_ratio": 3.518987,
+      "end": 35.3,
+      "no_speech_prob": 0.0,
+      "start": 35.24,
+      "text": "the time to be"
+    },
+    {
+      "avg_logprob": -2.220715,
+      "compression_ratio": 3.518987,
+      "end": 35.34,
+      "no_speech_prob": 0.0,
+      "start": 35.3,
+      "text": "the time to be"
+    },
+    {
+      "avg_logprob": -2.220715,
+      "compression_ratio": 3.518987,
+      "end": 35.38,
+      "no_speech_prob": 0.0,
+      "start": 35.34,
+      "text": "the time to be"
+    },
+    {
+      "avg_logprob": -2.220715,
+      "compression_ratio": 3.518987,
+      "end": 35.4,
+      "no_speech_prob": 0.0,
+      "start": 35.38,
+      "text": "the time to be"
+    },
+    {
+      "avg_logprob": -2.220715,
+      "compression_ratio": 3.518987,
+      "end": 35.44,
+      "no_speech_prob": 0.0,
+      "start": 35.4,
+      "text": "the time to be"
+    },
+    {
+      "avg_logprob": -2.220715,
+      "compression_ratio": 3.518987,
+      "end": 35.5,
+      "no_speech_prob": 0.0,
+      "start": 35.44,
+      "text": "the time to be"
+    },
+    {
+      "avg_logprob": -2.220715,
+      "compression_ratio": 3.518987,
+      "end": 35.52,
+      "no_speech_prob": 0.0,
+      "start": 35.5,
+      "text": "the time to be"
+    },
+    {
+      "avg_logprob": -2.220715,
+      "compression_ratio": 3.518987,
+      "end": 35.54,
+      "no_speech_prob": 0.0,
+      "start": 35.52,
+      "text": "the time to be"
+    },
+    {
+      "avg_logprob": -2.220715,
+      "compression_ratio": 3.518987,
+      "end": 35.6,
+      "no_speech_prob": 0.0,
+      "start": 35.54,
+      "text": "the time to be"
+    },
+    {
+      "avg_logprob": -2.220715,
+      "compression_ratio": 3.518987,
+      "end": 35.64,
+      "no_speech_prob": 0.0,
+      "start": 35.6,
+      "text": "the time to be"
+    },
+    {
+      "avg_logprob": -2.220715,
+      "compression_ratio": 3.518987,
+      "end": 35.7,
+      "no_speech_prob": 0.0,
+      "start": 35.64,
+      "text": "the time to be"
+    },
+    {
+      "avg_logprob": -2.220715,
+      "compression_ratio": 3.518987,
+      "end": 35.78,
+      "no_speech_prob": 0.0,
+      "start": 35.7,
+      "text": "the time to be"
+    },
+    {
+      "avg_logprob": -2.220715,
+      "compression_ratio": 3.518987,
+      "end": 35.86,
+      "no_speech_prob": 0.0,
+      "start": 35.78,
+      "text": "the time to be"
+    },
+    {
+      "avg_logprob": -2.220715,
+      "compression_ratio": 3.518987,
+      "end": 35.9,
+      "no_speech_prob": 0.0,
+      "start": 35.86,
+      "text": "the time to be"
+    },
+    {
+      "avg_logprob": -1.828965,
+      "compression_ratio": 3.254545,
+      "end": 37.82,
+      "no_speech_prob": 0.0,
+      "start": 35.9,
+      "text": "一遲了好御御的邦逻"
+    },
+    {
+      "avg_logprob": -1.828965,
+      "compression_ratio": 3.254545,
+      "end": 41.02,
+      "no_speech_prob": 0.0,
+      "start": 38.36,
+      "text": "這就有ext夥你一遮的規 Luge 遮的一 Euro 乍"
+    },
+    {
+      "avg_logprob": -1.828965,
+      "compression_ratio": 3.254545,
+      "end": 42.14,
+      "no_speech_prob": 0.0,
+      "start": 41.02,
+      "text": "的奥奥 become"
+    },
+    {
+      "avg_logprob": -1.828965,
+      "compression_ratio": 3.254545,
+      "end": 42.5,
+      "no_speech_prob": 0.0,
+      "start": 42.14,
+      "text": "是佩的奥夥"
+    },
+    {
+      "avg_logprob": -1.828965,
+      "compression_ratio": 3.254545,
+      "end": 42.78,
+      "no_speech_prob": 0.0,
+      "start": 42.5,
+      "text": "是佩的奥夥"
+    },
+    {
+      "avg_logprob": -1.828965,
+      "compression_ratio": 3.254545,
+      "end": 43.14,
+      "no_speech_prob": 0.0,
+      "start": 42.78,
+      "text": "是佩的奥夥"
+    },
+    {
+      "avg_logprob": -1.828965,
+      "compression_ratio": 3.254545,
+      "end": 43.34,
+      "no_speech_prob": 0.0,
+      "start": 43.14,
+      "text": "是佩的奥夥"
+    },
+    {
+      "avg_logprob": -1.828965,
+      "compression_ratio": 3.254545,
+      "end": 43.36,
+      "no_speech_prob": 0.0,
+      "start": 43.34,
+      "text": "是佩的奥夥"
+    },
+    {
+      "avg_logprob": -1.828965,
+      "compression_ratio": 3.254545,
+      "end": 43.38,
+      "no_speech_prob": 0.0,
+      "start": 43.36,
+      "text": "是佩的奥夥"
+    },
+    {
+      "avg_logprob": -1.828965,
+      "compression_ratio": 3.254545,
+      "end": 43.38,
+      "no_speech_prob": 0.0,
+      "start": 43.38,
+      "text": "是佩的奥夥"
+    },
+    {
+      "avg_logprob": -1.828965,
+      "compression_ratio": 3.254545,
+      "end": 43.36,
+      "no_speech_prob": 0.0,
+      "start": 43.32,
+      "text": "是佩的奥夥"
+    },
+    {
+      "avg_logprob": -1.828965,
+      "compression_ratio": 3.254545,
+      "end": 43.4,
+      "no_speech_prob": 0.0,
+      "start": 43.36,
+      "text": "是佩的奥夥"
+    },
+    {
+      "avg_logprob": -1.828965,
+      "compression_ratio": 3.254545,
+      "end": 43.42,
+      "no_speech_prob": 0.0,
+      "start": 43.4,
+      "text": "是佩的奥夥"
+    },
+    {
+      "avg_logprob": -1.828965,
+      "compression_ratio": 3.254545,
+      "end": 43.44,
+      "no_speech_prob": 0.0,
+      "start": 43.42,
+      "text": "是佩的奥夥"
+    },
+    {
+      "avg_logprob": -1.828965,
+      "compression_ratio": 3.254545,
+      "end": 43.48,
+      "no_speech_prob": 0.0,
+      "start": 43.44,
+      "text": "是佩的奥夥"
+    },
+    {
+      "avg_logprob": -1.828965,
+      "compression_ratio": 3.254545,
+      "end": 43.54,
+      "no_speech_prob": 0.0,
+      "start": 43.48,
+      "text": "是佩的奥夥"
+    },
+    {
+      "avg_logprob": -1.828965,
+      "compression_ratio": 3.254545,
+      "end": 43.6,
+      "no_speech_prob": 0.0,
+      "start": 43.54,
+      "text": "是佩的奥夥"
+    },
+    {
+      "avg_logprob": -1.828965,
+      "compression_ratio": 3.254545,
+      "end": 43.64,
+      "no_speech_prob": 0.0,
+      "start": 43.6,
+      "text": "是佩的奥夥"
+    },
+    {
+      "avg_logprob": -1.021961,
+      "compression_ratio": 10.068493,
+      "end": 46.48,
+      "no_speech_prob": 0.0,
+      "start": 43.64,
+      "text": "我以下ily seconder a I have a very good question"
+    },
+    {
+      "avg_logprob": -1.021961,
+      "compression_ratio": 10.068493,
+      "end": 47.84,
+      "no_speech_prob": 0.0,
+      "start": 46.48,
+      "text": "to you, I have a very good question"
+    },
+    {
+      "avg_logprob": -1.021961,
+      "compression_ratio": 10.068493,
+      "end": 48.88,
+      "no_speech_prob": 0.0,
+      "start": 47.84,
+      "text": "to you, I have a very good question"
+    },
+    {
+      "avg_logprob": -1.021961,
+      "compression_ratio": 10.068493,
+      "end": 49.84,
+      "no_speech_prob": 0.0,
+      "start": 48.88,
+      "text": "to you, I have a very good question"
+    },
+    {
+      "avg_logprob": -1.021961,
+      "compression_ratio": 10.068493,
+      "end": 50.56,
+      "no_speech_prob": 0.0,
+      "start": 49.84,
+      "text": "to you, I have a very good question"
+    },
+    {
+      "avg_logprob": -1.021961,
+      "compression_ratio": 10.068493,
+      "end": 51.24,
+      "no_speech_prob": 0.0,
+      "start": 50.56,
+      "text": "to you, I have a very good question"
+    },
+    {
+      "avg_logprob": -1.021961,
+      "compression_ratio": 10.068493,
+      "end": 51.84,
+      "no_speech_prob": 0.0,
+      "start": 51.24,
+      "text": "to you, I have a very good question"
+    },
+    {
+      "avg_logprob": -1.021961,
+      "compression_ratio": 10.068493,
+      "end": 52.28,
+      "no_speech_prob": 0.0,
+      "start": 51.84,
+      "text": "to you, I have a very good question"
+    },
+    {
+      "avg_logprob": -1.021961,
+      "compression_ratio": 10.068493,
+      "end": 52.8,
+      "no_speech_prob": 0.0,
+      "start": 52.28,
+      "text": "to you, I have a very good question"
+    },
+    {
+      "avg_logprob": -1.021961,
+      "compression_ratio": 10.068493,
+      "end": 53.36,
+      "no_speech_prob": 0.0,
+      "start": 52.8,
+      "text": "to you, I have a very good question"
+    },
+    {
+      "avg_logprob": -1.021961,
+      "compression_ratio": 10.068493,
+      "end": 53.84,
+      "no_speech_prob": 0.0,
+      "start": 53.36,
+      "text": "to you, I have a very good question"
+    },
+    {
+      "avg_logprob": -1.021961,
+      "compression_ratio": 10.068493,
+      "end": 54.24,
+      "no_speech_prob": 0.0,
+      "start": 53.84,
+      "text": "to you, I have a very good question"
+    },
+    {
+      "avg_logprob": -1.021961,
+      "compression_ratio": 10.068493,
+      "end": 54.56,
+      "no_speech_prob": 0.0,
+      "start": 54.24,
+      "text": "to you, I have a very good question"
+    },
+    {
+      "avg_logprob": -1.021961,
+      "compression_ratio": 10.068493,
+      "end": 54.88,
+      "no_speech_prob": 0.0,
+      "start": 54.56,
+      "text": "to you, I have a very good question"
+    },
+    {
+      "avg_logprob": -1.021961,
+      "compression_ratio": 10.068493,
+      "end": 55.18,
+      "no_speech_prob": 0.0,
+      "start": 54.88,
+      "text": "to you, I have a very good question"
+    },
+    {
+      "avg_logprob": -1.021961,
+      "compression_ratio": 10.068493,
+      "end": 55.56,
+      "no_speech_prob": 0.0,
+      "start": 55.18,
+      "text": "to you, I have a very good question"
+    },
+    {
+      "avg_logprob": -1.021961,
+      "compression_ratio": 10.068493,
+      "end": 55.84,
+      "no_speech_prob": 0.0,
+      "start": 55.56,
+      "text": "to you, I have a very good question"
+    },
+    {
+      "avg_logprob": -1.021961,
+      "compression_ratio": 10.068493,
+      "end": 56.08,
+      "no_speech_prob": 0.0,
+      "start": 55.84,
+      "text": "to you, I have a very good question"
+    },
+    {
+      "avg_logprob": -1.021961,
+      "compression_ratio": 10.068493,
+      "end": 56.28,
+      "no_speech_prob": 0.0,
+      "start": 56.08,
+      "text": "to you, I have a very good question"
+    },
+    {
+      "avg_logprob": -1.021961,
+      "compression_ratio": 10.068493,
+      "end": 56.52,
+      "no_speech_prob": 0.0,
+      "start": 56.28,
+      "text": "to you, I have a very good question"
+    },
+    {
+      "avg_logprob": -2.054386,
+      "compression_ratio": 2.582418,
+      "end": 76.92,
+      "no_speech_prob": 0.0,
+      "start": 73.64,
+      "text": "的不迫 遵叨 仵丢 的 仪丢 的 仪丢 。"
+    },
+    {
+      "avg_logprob": -2.054386,
+      "compression_ratio": 2.582418,
+      "end": 77.44,
+      "no_speech_prob": 0.0,
+      "start": 76.92,
+      "text": "的 仪丢 。"
+    },
+    {
+      "avg_logprob": -2.054386,
+      "compression_ratio": 2.582418,
+      "end": 78.18,
+      "no_speech_prob": 0.0,
+      "start": 77.44,
+      "text": "是 g 仪 。"
+    },
+    {
+      "avg_logprob": -2.054386,
+      "compression_ratio": 2.582418,
+      "end": 78.22,
+      "no_speech_prob": 0.0,
+      "start": 78.18,
+      "text": "是 仪 。"
+    },
+    {
+      "avg_logprob": -2.054386,
+      "compression_ratio": 2.582418,
+      "end": 78.22,
+      "no_speech_prob": 0.0,
+      "start": 78.22,
+      "text": "是 仪 。"
+    },
+    {
+      "avg_logprob": -2.054386,
+      "compression_ratio": 2.582418,
+      "end": 78.18,
+      "no_speech_prob": 0.0,
+      "start": 78.16,
+      "text": "是 仪 。"
+    },
+    {
+      "avg_logprob": -2.054386,
+      "compression_ratio": 2.582418,
+      "end": 78.22,
+      "no_speech_prob": 0.0,
+      "start": 78.18,
+      "text": "是 仪 。"
+    },
+    {
+      "avg_logprob": -2.054386,
+      "compression_ratio": 2.582418,
+      "end": 78.24,
+      "no_speech_prob": 0.0,
+      "start": 78.22,
+      "text": "是 仪 。"
+    },
+    {
+      "avg_logprob": -2.054386,
+      "compression_ratio": 2.582418,
+      "end": 78.3,
+      "no_speech_prob": 0.0,
+      "start": 78.24,
+      "text": "是 仪 。"
+    },
+    {
+      "avg_logprob": -2.054386,
+      "compression_ratio": 2.582418,
+      "end": 78.36,
+      "no_speech_prob": 0.0,
+      "start": 78.3,
+      "text": "是 仪 。"
+    },
+    {
+      "avg_logprob": -2.054386,
+      "compression_ratio": 2.582418,
+      "end": 78.46,
+      "no_speech_prob": 0.0,
+      "start": 78.36,
+      "text": "是 仪 。"
+    },
+    {
+      "avg_logprob": -2.054386,
+      "compression_ratio": 2.582418,
+      "end": 78.54,
+      "no_speech_prob": 0.0,
+      "start": 78.46,
+      "text": "是 仪 。"
+    },
+    {
+      "avg_logprob": -2.054386,
+      "compression_ratio": 2.582418,
+      "end": 78.62,
+      "no_speech_prob": 0.0,
+      "start": 78.54,
+      "text": "ismXL."
+    },
+    {
+      "avg_logprob": -2.054386,
+      "compression_ratio": 2.582418,
+      "end": 78.64,
+      "no_speech_prob": 0.0,
+      "start": 78.62,
+      "text": "。"
+    },
+    {
+      "avg_logprob": -2.054386,
+      "compression_ratio": 2.582418,
+      "end": 78.72,
+      "no_speech_prob": 0.0,
+      "start": 78.64,
+      "text": "R.C."
+    },
+    {
+      "avg_logprob": -2.054386,
+      "compression_ratio": 2.582418,
+      "end": 78.72,
+      "no_speech_prob": 0.0,
+      "start": 78.72,
+      "text": "G."
+    },
+    {
+      "avg_logprob": -2.054386,
+      "compression_ratio": 2.582418,
+      "end": 78.76,
+      "no_speech_prob": 0.0,
+      "start": 78.7,
+      "text": "F."
+    },
+    {
+      "avg_logprob": -2.054386,
+      "compression_ratio": 2.582418,
+      "end": 78.82,
+      "no_speech_prob": 0.0,
+      "start": 78.76,
+      "text": "B."
+    },
+    {
+      "avg_logprob": -2.054386,
+      "compression_ratio": 2.582418,
+      "end": 78.88,
+      "no_speech_prob": 0.0,
+      "start": 78.82,
+      "text": "B."
+    },
+    {
+      "avg_logprob": -2.054386,
+      "compression_ratio": 2.582418,
+      "end": 78.92,
+      "no_speech_prob": 0.0,
+      "start": 78.88,
+      "text": "A."
+    },
+    {
+      "avg_logprob": -2.054386,
+      "compression_ratio": 2.582418,
+      "end": 78.94,
+      "no_speech_prob": 0.0,
+      "start": 78.92,
+      "text": "A."
+    },
+    {
+      "avg_logprob": -2.054386,
+      "compression_ratio": 2.582418,
+      "end": 79.02,
+      "no_speech_prob": 0.0,
+      "start": 78.94,
+      "text": "B."
+    },
+    {
+      "avg_logprob": -2.054386,
+      "compression_ratio": 2.582418,
+      "end": 79.02,
+      "no_speech_prob": 0.0,
+      "start": 79.02,
+      "text": "A."
+    },
+    {
+      "avg_logprob": -2.054386,
+      "compression_ratio": 2.582418,
+      "end": 79.0,
+      "no_speech_prob": 0.0,
+      "start": 78.96,
+      "text": "A."
+    },
+    {
+      "avg_logprob": -2.054386,
+      "compression_ratio": 2.582418,
+      "end": 79.02,
+      "no_speech_prob": 0.0,
+      "start": 79.0,
+      "text": "A."
+    },
+    {
+      "avg_logprob": -2.054386,
+      "compression_ratio": 2.582418,
+      "end": 79.04,
+      "no_speech_prob": 0.0,
+      "start": 79.02,
+      "text": "A."
+    },
+    {
+      "avg_logprob": -2.054386,
+      "compression_ratio": 2.582418,
+      "end": 79.08,
+      "no_speech_prob": 0.0,
+      "start": 79.04,
+      "text": "A."
+    },
+    {
+      "avg_logprob": -2.054386,
+      "compression_ratio": 2.582418,
+      "end": 79.1,
+      "no_speech_prob": 0.0,
+      "start": 79.08,
+      "text": "A."
+    },
+    {
+      "avg_logprob": -0.228802,
+      "compression_ratio": 17.515152,
+      "end": 133.64,
+      "no_speech_prob": 0.0,
+      "start": 103.64,
+      "text": "oh, my man, I was a man, I was a man, I was a man, I was a man, I was a man, I was a man, I was a man, I was a man, I was a man, I was a man, I was a man, I was a man, I was a man, I was a man, I was a man, I was a man, I was a man, I was a man, I was a man, I was a man, I was a man, I was a man, I was a man, I was a man, I was a man, I was a man, I was a man, I was a man, I was a man, I was a man, I was a man, I was a man, I was a man, I was a man, I was a man, I was a man, I was a man, I was a man, I was a man, I was a man, I was a man, I was a man, I was a man, I was a"
+    },
+    {
+      "avg_logprob": -0.190386,
+      "compression_ratio": 1.577982,
+      "end": 153.84,
+      "no_speech_prob": 0.0,
+      "start": 133.64,
+      "text": "Yeah, that's right. So they head into the party Congress, which starts on Sunday, with some economic headwinds, perhaps political tailwinds, obviously, as Xi Jinping will most likely secure that president's defying third consecutive term, as they got rid of the term limits for the top man, as well as potentially the age, retirement age limit."
+    },
+    {
+      "avg_logprob": -0.164606,
+      "compression_ratio": 1.597015,
+      "end": 165.26,
+      "no_speech_prob": 0.0,
+      "start": 153.84,
+      "text": "So that political agenda for Xi Jinping will probably, you know, include some of his successes, trumpeting the successes of COVID-0,"
+    },
+    {
+      "avg_logprob": -0.164606,
+      "compression_ratio": 1.597015,
+      "end": 171.84,
+      "no_speech_prob": 0.0,
+      "start": 165.32,
+      "text": "even though there are signs that the society across China is starting to get really weary about these lockdowns"
+    },
+    {
+      "avg_logprob": -0.164606,
+      "compression_ratio": 1.597015,
+      "end": 178.36,
+      "no_speech_prob": 0.0,
+      "start": 172.36,
+      "text": "and the ongoing COVID-0 policies, or static management, as they call it, in China."
+    },
+    {
+      "avg_logprob": -0.164606,
+      "compression_ratio": 1.597015,
+      "end": 183.74,
+      "no_speech_prob": 0.0,
+      "start": 178.36,
+      "text": "But what's happening this week is the plenum, and essentially they are getting their ducks in a row,"
+    },
+    {
+      "avg_logprob": -1.01559,
+      "compression_ratio": 6.707317,
+      "end": 185.02,
+      "no_speech_prob": 0.0,
+      "start": 183.84,
+      "text": "的\"."
+    },
+    {
+      "avg_logprob": -1.01559,
+      "compression_ratio": 6.707317,
+      "end": 185.58,
+      "no_speech_prob": 0.0,
+      "start": 185.02,
+      "text": "pos."
+    },
+    {
+      "avg_logprob": -1.01559,
+      "compression_ratio": 6.707317,
+      "end": 185.84,
+      "no_speech_prob": 0.0,
+      "start": 185.58,
+      "text": "ist."
+    },
+    {
+      "avg_logprob": -1.01559,
+      "compression_ratio": 6.707317,
+      "end": 186.6,
+      "no_speech_prob": 0.0,
+      "start": 185.84,
+      "text": "并不兴 sec."
+    },
+    {
+      "avg_logprob": -1.01559,
+      "compression_ratio": 6.707317,
+      "end": 186.86,
+      "no_speech_prob": 0.0,
+      "start": 186.6,
+      "text": "并不兴."
+    },
+    {
+      "avg_logprob": -1.01559,
+      "compression_ratio": 6.707317,
+      "end": 187.26,
+      "no_speech_prob": 0.0,
+      "start": 186.86,
+      "text": "并不兴."
+    },
+    {
+      "avg_logprob": -1.01559,
+      "compression_ratio": 6.707317,
+      "end": 187.62,
+      "no_speech_prob": 0.0,
+      "start": 187.26,
+      "text": "并不兴."
+    },
+    {
+      "avg_logprob": -1.01559,
+      "compression_ratio": 6.707317,
+      "end": 187.84,
+      "no_speech_prob": 0.0,
+      "start": 187.62,
+      "text": "并不兴."
+    },
+    {
+      "avg_logprob": -1.01559,
+      "compression_ratio": 6.707317,
+      "end": 188.08,
+      "no_speech_prob": 0.0,
+      "start": 187.84,
+      "text": "并不兴."
+    },
+    {
+      "avg_logprob": -1.01559,
+      "compression_ratio": 6.707317,
+      "end": 188.18,
+      "no_speech_prob": 0.0,
+      "start": 188.08,
+      "text": "并不兴."
+    },
+    {
+      "avg_logprob": -1.01559,
+      "compression_ratio": 6.707317,
+      "end": 188.34,
+      "no_speech_prob": 0.0,
+      "start": 188.18,
+      "text": "并不兴."
+    },
+    {
+      "avg_logprob": -1.01559,
+      "compression_ratio": 6.707317,
+      "end": 188.58,
+      "no_speech_prob": 0.0,
+      "start": 188.34,
+      "text": "并不兴."
+    },
+    {
+      "avg_logprob": -1.01559,
+      "compression_ratio": 6.707317,
+      "end": 188.88,
+      "no_speech_prob": 0.0,
+      "start": 188.58,
+      "text": "并不兴."
+    },
+    {
+      "avg_logprob": -1.01559,
+      "compression_ratio": 6.707317,
+      "end": 189.14,
+      "no_speech_prob": 0.0,
+      "start": 188.88,
+      "text": "并不兴."
+    },
+    {
+      "avg_logprob": -1.01559,
+      "compression_ratio": 6.707317,
+      "end": 189.4,
+      "no_speech_prob": 0.0,
+      "start": 189.14,
+      "text": "并不兴."
+    },
+    {
+      "avg_logprob": -1.01559,
+      "compression_ratio": 6.707317,
+      "end": 189.56,
+      "no_speech_prob": 0.0,
+      "start": 189.4,
+      "text": "并不兴."
+    },
+    {
+      "avg_logprob": -1.01559,
+      "compression_ratio": 6.707317,
+      "end": 189.74,
+      "no_speech_prob": 0.0,
+      "start": 189.56,
+      "text": "并不兴."
+    },
+    {
+      "avg_logprob": -1.01559,
+      "compression_ratio": 6.707317,
+      "end": 189.9,
+      "no_speech_prob": 0.0,
+      "start": 189.74,
+      "text": "并不兴."
+    },
+    {
+      "avg_logprob": -1.01559,
+      "compression_ratio": 6.707317,
+      "end": 190.02,
+      "no_speech_prob": 0.0,
+      "start": 189.9,
+      "text": "并不兴."
+    },
+    {
+      "avg_logprob": -1.01559,
+      "compression_ratio": 6.707317,
+      "end": 190.1,
+      "no_speech_prob": 0.0,
+      "start": 190.02,
+      "text": "并不兴."
+    },
+    {
+      "avg_logprob": -1.01559,
+      "compression_ratio": 6.707317,
+      "end": 190.16,
+      "no_speech_prob": 0.0,
+      "start": 190.1,
+      "text": "并不兴."
+    },
+    {
+      "avg_logprob": -1.01559,
+      "compression_ratio": 6.707317,
+      "end": 190.3,
+      "no_speech_prob": 0.0,
+      "start": 190.16,
+      "text": "并不兴."
+    },
+    {
+      "avg_logprob": -1.01559,
+      "compression_ratio": 6.707317,
+      "end": 190.5,
+      "no_speech_prob": 0.0,
+      "start": 190.3,
+      "text": "并不兴."
+    },
+    {
+      "avg_logprob": -1.01559,
+      "compression_ratio": 6.707317,
+      "end": 190.72,
+      "no_speech_prob": 0.0,
+      "start": 190.5,
+      "text": "并不兴."
+    },
+    {
+      "avg_logprob": -1.01559,
+      "compression_ratio": 6.707317,
+      "end": 191.0,
+      "no_speech_prob": 0.0,
+      "start": 190.72,
+      "text": "并不兴."
+    },
+    {
+      "avg_logprob": -1.01559,
+      "compression_ratio": 6.707317,
+      "end": 191.22,
+      "no_speech_prob": 0.0,
+      "start": 191.0,
+      "text": "并不兴."
+    },
+    {
+      "avg_logprob": -0.421285,
+      "compression_ratio": 5.962963,
+      "end": 221.22,
+      "no_speech_prob": 0.0,
+      "start": 191.22,
+      "text": "是一批是一批 could 批ult 批的 could a 批 the 批 批 批 批 批 批 批 批 批 批 批 批 批 批 批 批 批 批 批 批 批 批 批 批 批 批 批 批 批 批 批 批 批 批 批 批 批 批 批 批 批 批 批 批 批 批 批 批 批 批 批 批 批 批 批 批 批 批 批 批 批 批 批 批 批 批 �"
+    },
+    {
+      "avg_logprob": -0.481514,
+      "compression_ratio": 1.528497,
+      "end": 224.98,
+      "no_speech_prob": 0.0,
+      "start": 221.22,
+      "text": "Cinema box sales, tourism revenue down some 26%."
+    },
+    {
+      "avg_logprob": -0.481514,
+      "compression_ratio": 1.528497,
+      "end": 238.26,
+      "no_speech_prob": 0.0,
+      "start": 226.26,
+      "text": "Yeah, what I can say is that the data set definitely released a sluggish trend for the consumption with the consumption data in the holiday."
+    },
+    {
+      "avg_logprob": -0.481514,
+      "compression_ratio": 1.528497,
+      "end": 246.02,
+      "no_speech_prob": 0.0,
+      "start": 238.58,
+      "text": "So, yeah, as you said, everything was done, and especially in the travel related spending by the household."
+    },
+    {
+      "avg_logprob": -0.288188,
+      "compression_ratio": 1.5,
+      "end": 257.58,
+      "no_speech_prob": 0.0,
+      "start": 246.02,
+      "text": "And obviously people were avoiding long distance trip because of the concern over the possible constraint by the COVID-19."
+    },
+    {
+      "avg_logprob": -0.288188,
+      "compression_ratio": 1.5,
+      "end": 262.9,
+      "no_speech_prob": 0.0,
+      "start": 257.94,
+      "text": "And, you know, that is what we saw in the market in the holiday."
+    },
+    {
+      "avg_logprob": -0.288188,
+      "compression_ratio": 1.5,
+      "end": 271.14,
+      "no_speech_prob": 0.0,
+      "start": 265.06,
+      "text": "And when it comes to the Taixing PMI numbers that we got over the weekend, we're back in contraction."
+    },
+    {
+      "avg_logprob": -0.288188,
+      "compression_ratio": 1.5,
+      "end": 274.34,
+      "no_speech_prob": 0.0,
+      "start": 271.14,
+      "text": "What did you see as some of the biggest drags that we saw?"
+    },
+    {
+      "avg_logprob": -0.266334,
+      "compression_ratio": 1.576087,
+      "end": 282.26,
+      "no_speech_prob": 0.0,
+      "start": 274.34,
+      "text": "Yeah, definitely for Taixing because that was mainly the small business and the food service sector."
+    },
+    {
+      "avg_logprob": -0.266334,
+      "compression_ratio": 1.576087,
+      "end": 289.02,
+      "no_speech_prob": 0.0,
+      "start": 282.9,
+      "text": "That was the part that impacted the harvest in China's economy."
+    },
+    {
+      "avg_logprob": -0.266334,
+      "compression_ratio": 1.576087,
+      "end": 299.26,
+      "no_speech_prob": 0.0,
+      "start": 289.02,
+      "text": "So that was not a surprise to me because everyone knows that the economy, particularly in the servicing sector, things are bad."
+    },
+    {
+      "avg_logprob": -0.623193,
+      "compression_ratio": 19.186047,
+      "end": 334.34,
+      "no_speech_prob": 0.0,
+      "start": 304.34,
+      "text": "Iro to the woulds, to the very good, the very good, the very good, the very good, the very good, the very good, the very good, the very good, the very good, the very good, the very good, the very good, the very good, the very good, the very good, the very good, the very good, the very good, the very good, the very good, the very good, the very good, the very good, the very good, the very good, the very good, the very good, the very good, the very good, the very good, the very good, the very good, the very good, the very good, the very good, the very good, the very good, the very good, the very good, the very good, the very good, the very good, the very good, the very good, the very good, the very good, the very good, the very good, the very good, the very good, the very good, the very good, the very good, the very"
+    },
+    {
+      "avg_logprob": -1.482942,
+      "compression_ratio": 5.085714,
+      "end": 336.82,
+      "no_speech_prob": 0.0,
+      "start": 334.34,
+      "text": "逢复亡是一 fald 人的一并不ни是一 recognose"
+    },
+    {
+      "avg_logprob": -1.482942,
+      "compression_ratio": 5.085714,
+      "end": 337.32,
+      "no_speech_prob": 0.0,
+      "start": 337.12,
+      "text": "不一圆"
+    },
+    {
+      "avg_logprob": -1.482942,
+      "compression_ratio": 5.085714,
+      "end": 337.62,
+      "no_speech_prob": 0.0,
+      "start": 337.32,
+      "text": "不一圆"
+    },
+    {
+      "avg_logprob": -1.482942,
+      "compression_ratio": 5.085714,
+      "end": 338.18,
+      "no_speech_prob": 0.0,
+      "start": 337.6,
+      "text": "不一圆"
+    },
+    {
+      "avg_logprob": -1.482942,
+      "compression_ratio": 5.085714,
+      "end": 338.6,
+      "no_speech_prob": 0.0,
+      "start": 338.18,
+      "text": "不一圆"
+    },
+    {
+      "avg_logprob": -1.482942,
+      "compression_ratio": 5.085714,
+      "end": 338.88,
+      "no_speech_prob": 0.0,
+      "start": 338.6,
+      "text": "不一圆"
+    },
+    {
+      "avg_logprob": -1.482942,
+      "compression_ratio": 5.085714,
+      "end": 339.38,
+      "no_speech_prob": 0.0,
+      "start": 338.88,
+      "text": "不一圆"
+    },
+    {
+      "avg_logprob": -1.482942,
+      "compression_ratio": 5.085714,
+      "end": 339.82,
+      "no_speech_prob": 0.0,
+      "start": 339.38,
+      "text": "不一圆"
+    },
+    {
+      "avg_logprob": -1.482942,
+      "compression_ratio": 5.085714,
+      "end": 340.1,
+      "no_speech_prob": 0.0,
+      "start": 339.82,
+      "text": "不一圆"
+    },
+    {
+      "avg_logprob": -1.482942,
+      "compression_ratio": 5.085714,
+      "end": 340.34,
+      "no_speech_prob": 0.0,
+      "start": 340.1,
+      "text": "不一圆"
+    },
+    {
+      "avg_logprob": -1.482942,
+      "compression_ratio": 5.085714,
+      "end": 340.54,
+      "no_speech_prob": 0.0,
+      "start": 340.34,
+      "text": "不一圆"
+    },
+    {
+      "avg_logprob": -1.482942,
+      "compression_ratio": 5.085714,
+      "end": 340.64,
+      "no_speech_prob": 0.0,
+      "start": 340.54,
+      "text": "不一圆"
+    },
+    {
+      "avg_logprob": -1.482942,
+      "compression_ratio": 5.085714,
+      "end": 340.72,
+      "no_speech_prob": 0.0,
+      "start": 340.64,
+      "text": "不一圆"
+    },
+    {
+      "avg_logprob": -1.482942,
+      "compression_ratio": 5.085714,
+      "end": 340.8,
+      "no_speech_prob": 0.0,
+      "start": 340.72,
+      "text": "不一圆"
+    },
+    {
+      "avg_logprob": -1.482942,
+      "compression_ratio": 5.085714,
+      "end": 340.92,
+      "no_speech_prob": 0.0,
+      "start": 340.8,
+      "text": "不一圆"
+    },
+    {
+      "avg_logprob": -1.482942,
+      "compression_ratio": 5.085714,
+      "end": 341.04,
+      "no_speech_prob": 0.0,
+      "start": 340.92,
+      "text": "不一圆"
+    },
+    {
+      "avg_logprob": -1.482942,
+      "compression_ratio": 5.085714,
+      "end": 341.18,
+      "no_speech_prob": 0.0,
+      "start": 341.04,
+      "text": "不一圆"
+    },
+    {
+      "avg_logprob": -1.482942,
+      "compression_ratio": 5.085714,
+      "end": 341.44,
+      "no_speech_prob": 0.0,
+      "start": 341.18,
+      "text": "不一圆"
+    },
+    {
+      "avg_logprob": -1.482942,
+      "compression_ratio": 5.085714,
+      "end": 341.72,
+      "no_speech_prob": 0.0,
+      "start": 341.44,
+      "text": "不一圆"
+    },
+    {
+      "avg_logprob": -1.482942,
+      "compression_ratio": 5.085714,
+      "end": 342.04,
+      "no_speech_prob": 0.0,
+      "start": 341.72,
+      "text": "不一圆"
+    },
+    {
+      "avg_logprob": -1.482942,
+      "compression_ratio": 5.085714,
+      "end": 342.26,
+      "no_speech_prob": 0.0,
+      "start": 342.04,
+      "text": "不一圆"
+    },
+    {
+      "avg_logprob": -1.482942,
+      "compression_ratio": 5.085714,
+      "end": 342.5,
+      "no_speech_prob": 0.0,
+      "start": 342.26,
+      "text": "不一圆"
+    },
+    {
+      "avg_logprob": -1.482942,
+      "compression_ratio": 5.085714,
+      "end": 342.66,
+      "no_speech_prob": 0.0,
+      "start": 342.5,
+      "text": "不一圆"
+    },
+    {
+      "avg_logprob": -1.482942,
+      "compression_ratio": 5.085714,
+      "end": 342.78,
+      "no_speech_prob": 0.0,
+      "start": 342.66,
+      "text": "不一圆"
+    },
+    {
+      "avg_logprob": -1.482942,
+      "compression_ratio": 5.085714,
+      "end": 342.92,
+      "no_speech_prob": 0.0,
+      "start": 342.78,
+      "text": "不一圆"
+    },
+    {
+      "avg_logprob": -1.482942,
+      "compression_ratio": 5.085714,
+      "end": 343.06,
+      "no_speech_prob": 0.0,
+      "start": 342.92,
+      "text": "不一圆"
+    },
+    {
+      "avg_logprob": -1.482942,
+      "compression_ratio": 5.085714,
+      "end": 343.36,
+      "no_speech_prob": 0.0,
+      "start": 343.06,
+      "text": "不一圆"
+    },
+    {
+      "avg_logprob": -1.482942,
+      "compression_ratio": 5.085714,
+      "end": 343.72,
+      "no_speech_prob": 0.0,
+      "start": 343.36,
+      "text": "不一圆"
+    },
+    {
+      "avg_logprob": -1.482942,
+      "compression_ratio": 5.085714,
+      "end": 344.04,
+      "no_speech_prob": 0.0,
+      "start": 343.72,
+      "text": "不一圆"
+    },
+    {
+      "avg_logprob": -1.482942,
+      "compression_ratio": 5.085714,
+      "end": 344.22,
+      "no_speech_prob": 0.0,
+      "start": 344.04,
+      "text": "不一圆"
+    },
+    {
+      "avg_logprob": -1.482942,
+      "compression_ratio": 5.085714,
+      "end": 344.38,
+      "no_speech_prob": 0.0,
+      "start": 344.22,
+      "text": "不一圆"
+    },
+    {
+      "avg_logprob": -1.482942,
+      "compression_ratio": 5.085714,
+      "end": 344.52,
+      "no_speech_prob": 0.0,
+      "start": 344.38,
+      "text": "不一圆"
+    },
+    {
+      "avg_logprob": -1.482942,
+      "compression_ratio": 5.085714,
+      "end": 344.6,
+      "no_speech_prob": 0.0,
+      "start": 344.52,
+      "text": "不一圆"
+    },
+    {
+      "avg_logprob": -1.482942,
+      "compression_ratio": 5.085714,
+      "end": 344.68,
+      "no_speech_prob": 0.0,
+      "start": 344.6,
+      "text": "不一圆"
+    },
+    {
+      "avg_logprob": -0.529187,
+      "compression_ratio": 1.502564,
+      "end": 348.94,
+      "no_speech_prob": 0.0,
+      "start": 344.68,
+      "text": "China's been firing warning shots at this self-governing island,"
+    },
+    {
+      "avg_logprob": -0.529187,
+      "compression_ratio": 1.502564,
+      "end": 352.92,
+      "no_speech_prob": 0.0,
+      "start": 349.14,
+      "text": "making incursions into Taiwanese airspace."
+    },
+    {
+      "avg_logprob": -0.529187,
+      "compression_ratio": 1.502564,
+      "end": 358.32,
+      "no_speech_prob": 0.0,
+      "start": 354.92,
+      "text": "Beijing views it as a breakaway province."
+    },
+    {
+      "avg_logprob": -0.529187,
+      "compression_ratio": 1.502564,
+      "end": 360.16,
+      "no_speech_prob": 0.0,
+      "start": 358.32,
+      "text": "It needs to get back."
+    },
+    {
+      "avg_logprob": -0.529187,
+      "compression_ratio": 1.502564,
+      "end": 371.1,
+      "no_speech_prob": 0.0,
+      "start": 365.42,
+      "text": "Taiwan says its military drills are not a reaction to China's recent moves,"
+    },
+    {
+      "avg_logprob": -0.529187,
+      "compression_ratio": 1.502564,
+      "end": 374.18,
+      "no_speech_prob": 0.0,
+      "start": 371.24,
+      "text": "but Taiwan also knows in the current climate,"
+    },
+    {
+      "avg_logprob": -1.381093,
+      "compression_ratio": 2.387324,
+      "end": 376.84,
+      "no_speech_prob": 0.0,
+      "start": 374.68,
+      "text": "不 stri won, 以兴了不兴."
+    },
+    {
+      "avg_logprob": -1.381093,
+      "compression_ratio": 2.387324,
+      "end": 378.58,
+      "no_speech_prob": 0.0,
+      "start": 376.92,
+      "text": "一 Dan 书 书 眨丧 宣佳 宣佳 宣佳 宣佳"
+    },
+    {
+      "avg_logprob": -1.381093,
+      "compression_ratio": 2.387324,
+      "end": 378.62,
+      "no_speech_prob": 0.0,
+      "start": 378.62,
+      "text": "不兴 宣佳 宣佳 宣佳 宣佳 宣佳"
+    },
+    {
+      "avg_logprob": -1.381093,
+      "compression_ratio": 2.387324,
+      "end": 378.6,
+      "no_speech_prob": 0.0,
+      "start": 378.6,
+      "text": "不兴 宣佳 宣佳 宣佳 宣佳 宣佳 宣佳"
+    },
+    {
+      "avg_logprob": -1.381093,
+      "compression_ratio": 2.387324,
+      "end": 380.04,
+      "no_speech_prob": 0.0,
+      "start": 378.56,
+      "text": "At the presidential office, 兴丧 宣佳, 宣佳 宣佳"
+    },
+    {
+      "avg_logprob": -1.381093,
+      "compression_ratio": 2.387324,
+      "end": 381.26,
+      "no_speech_prob": 0.0,
+      "start": 380.04,
+      "text": "some theater, 召丧"
+    },
+    {
+      "avg_logprob": -1.381093,
+      "compression_ratio": 2.387324,
+      "end": 381.94,
+      "no_speech_prob": 0.0,
+      "start": 381.26,
+      "text": "se 佳 宣佳, 宣佳, 宣佳, 宣佳"
+    },
+    {
+      "avg_logprob": -1.381093,
+      "compression_ratio": 2.387324,
+      "end": 382.38,
+      "no_speech_prob": 0.0,
+      "start": 381.94,
+      "text": "is 佳 宣佳, 宣佳, 宣佳, 宣佳"
+    },
+    {
+      "avg_logprob": -1.584774,
+      "compression_ratio": 2.186813,
+      "end": 383.5,
+      "no_speech_prob": 0.0,
+      "start": 382.38,
+      "text": "if  mounten  built-in 了"
+    },
+    {
+      "avg_logprob": -1.584774,
+      "compression_ratio": 2.186813,
+      "end": 383.94,
+      "no_speech_prob": 0.0,
+      "start": 383.5,
+      "text": "able 了"
+    },
+    {
+      "avg_logprob": -1.584774,
+      "compression_ratio": 2.186813,
+      "end": 385.62,
+      "no_speech_prob": 0.0,
+      "start": 383.94,
+      "text": "y t ood-m 逢-m  enc oud-m ister-m ices"
+    },
+    {
+      "avg_logprob": -1.584774,
+      "compression_ratio": 2.186813,
+      "end": 386.56,
+      "no_speech_prob": 0.0,
+      "start": 385.62,
+      "text": "l-m 亥 亢 亢 亢 亢 亢 亢 亢 亢 亢 亢 亢 亢 亢"
+    },
+    {
+      "avg_logprob": -1.584774,
+      "compression_ratio": 2.186813,
+      "end": 387.04,
+      "no_speech_prob": 0.0,
+      "start": 386.56,
+      "text": "d0"
+    },
+    {
+      "avg_logprob": -1.584774,
+      "compression_ratio": 2.186813,
+      "end": 387.22,
+      "no_speech_prob": 0.0,
+      "start": 387.04,
+      "text": "bghf"
+    },
+    {
+      "avg_logprob": -1.584774,
+      "compression_ratio": 2.186813,
+      "end": 387.26,
+      "no_speech_prob": 0.0,
+      "start": 387.22,
+      "text": "bf"
+    },
+    {
+      "avg_logprob": -1.584774,
+      "compression_ratio": 2.186813,
+      "end": 387.3,
+      "no_speech_prob": 0.0,
+      "start": 387.26,
+      "text": "bf"
+    },
+    {
+      "avg_logprob": -1.280869,
+      "compression_ratio": 2.614173,
+      "end": 390.9,
+      "no_speech_prob": 0.0,
+      "start": 387.3,
+      "text": "這年一年ю,不甦的迫逹养 ч Not  national security"
+    },
+    {
+      "avg_logprob": -1.280869,
+      "compression_ratio": 2.614173,
+      "end": 394.58,
+      "no_speech_prob": 0.0,
+      "start": 390.9,
+      "text": "這 message,是 protect soil, protect country"
+    },
+    {
+      "avg_logprob": -1.280869,
+      "compression_ratio": 2.614173,
+      "end": 394.88,
+      "no_speech_prob": 0.0,
+      "start": 394.58,
+      "text": "不甦?"
+    },
+    {
+      "avg_logprob": -1.280869,
+      "compression_ratio": 2.614173,
+      "end": 396.08,
+      "no_speech_prob": 0.0,
+      "start": 394.88,
+      "text": "不甦?不甦?不甦?"
+    },
+    {
+      "avg_logprob": -1.280869,
+      "compression_ratio": 2.614173,
+      "end": 396.68,
+      "no_speech_prob": 0.0,
+      "start": 396.08,
+      "text": "不甦?不甦?"
+    },
+    {
+      "avg_logprob": -1.280869,
+      "compression_ratio": 2.614173,
+      "end": 397.38,
+      "no_speech_prob": 0.0,
+      "start": 396.68,
+      "text": "不甦?不甦?"
+    },
+    {
+      "avg_logprob": -1.280869,
+      "compression_ratio": 2.614173,
+      "end": 397.94,
+      "no_speech_prob": 0.0,
+      "start": 397.38,
+      "text": "不甦?不甦?"
+    },
+    {
+      "avg_logprob": -1.280869,
+      "compression_ratio": 2.614173,
+      "end": 398.34,
+      "no_speech_prob": 0.0,
+      "start": 397.94,
+      "text": "不甦?"
+    },
+    {
+      "avg_logprob": -1.280869,
+      "compression_ratio": 2.614173,
+      "end": 398.46,
+      "no_speech_prob": 0.0,
+      "start": 398.34,
+      "text": "不甦?"
+    },
+    {
+      "avg_logprob": -1.280869,
+      "compression_ratio": 2.614173,
+      "end": 398.5,
+      "no_speech_prob": 0.0,
+      "start": 398.46,
+      "text": "不甦?"
+    },
+    {
+      "avg_logprob": -1.280869,
+      "compression_ratio": 2.614173,
+      "end": 398.52,
+      "no_speech_prob": 0.0,
+      "start": 398.5,
+      "text": "不甦?"
+    },
+    {
+      "avg_logprob": -1.280869,
+      "compression_ratio": 2.614173,
+      "end": 398.54,
+      "no_speech_prob": 0.0,
+      "start": 398.52,
+      "text": "不甦?"
+    },
+    {
+      "avg_logprob": -0.914387,
+      "compression_ratio": 3.25,
+      "end": 400.84,
+      "no_speech_prob": 0.0,
+      "start": 398.54,
+      "text": "在他执书, 麥긋, 河一尺 室丰 书 1  ener plys"
+    },
+    {
+      "avg_logprob": -0.446213,
+      "compression_ratio": 12.681159,
+      "end": 401.88,
+      "no_speech_prob": 0.0,
+      "start": 400.84,
+      "text": "which is a very good thing,"
+    },
+    {
+      "avg_logprob": -0.446213,
+      "compression_ratio": 12.681159,
+      "end": 402.88,
+      "no_speech_prob": 0.0,
+      "start": 401.88,
+      "text": "and the way the other can be in the way"
+    },
+    {
+      "avg_logprob": -0.230955,
+      "compression_ratio": 14.190476,
+      "end": 432.88,
+      "no_speech_prob": 0.0,
+      "start": 402.88,
+      "text": "ikin a ndk ndk ndk ndk ndk ndk ndk ndk ndk ndk ndk ndk ndk ndk ndk ndk ndk ndk ndk ndk ndk ndk ndk ndk ndk ndk ndk ndk ndk ndk ndk ndk ndk ndk ndk ndk ndk ndk ndk ndk ndk ndk ndk ndk ndk ndk ndk ndk ndk ndk ndk ndk ndk ndk ndk ndk ndk ndk ndk ndk ndk ndk ndk ndk ndk ndk ndk ndk ndk ndk ndk ndk ndk"
+    },
+    {
+      "avg_logprob": -0.560797,
+      "compression_ratio": 0.84375,
+      "end": 462.86,
+      "no_speech_prob": 0.0,
+      "start": 432.88,
+      "text": "优优优独播剧场——"
+    },
+    {
+      "avg_logprob": -0.107405,
+      "compression_ratio": 1.728,
+      "end": 472.64,
+      "no_speech_prob": 0.0,
+      "start": 462.88,
+      "text": "And those allies need to understand the range of risk, according to one man trying to teach every citizen in Taiwan how to protect their community."
+    },
+    {
+      "avg_logprob": -0.107405,
+      "compression_ratio": 1.728,
+      "end": 479.02,
+      "no_speech_prob": 0.0,
+      "start": 473.64,
+      "text": "Everything Taiwan is dealing with right now is beginning to be replicated around the world."
+    },
+    {
+      "avg_logprob": -0.107405,
+      "compression_ratio": 1.728,
+      "end": 491.86,
+      "no_speech_prob": 0.0,
+      "start": 479.8,
+      "text": "Everything Taiwan has experienced over the last few decades from China, the economic coercion, the intellectual property theft, the interference into our democratic system, into our elections."
+    },
+    {
+      "avg_logprob": -0.164424,
+      "compression_ratio": 1.343284,
+      "end": 494.96,
+      "no_speech_prob": 0.0,
+      "start": 491.86,
+      "text": "We're seeing that happening everywhere else."
+    },
+    {
+      "avg_logprob": -0.164424,
+      "compression_ratio": 1.343284,
+      "end": 502.0,
+      "no_speech_prob": 0.0,
+      "start": 496.36,
+      "text": "If Taiwan was attacked, the supply chain that runs the world could grind to a halt."
+    },
+    {
+      "avg_logprob": -0.164424,
+      "compression_ratio": 1.343284,
+      "end": 504.86,
+      "no_speech_prob": 0.0,
+      "start": 502.48,
+      "text": "The island produces most of the world's microchips."
+    },
+    {
+      "avg_logprob": -0.356245,
+      "compression_ratio": 1.401639,
+      "end": 509.0,
+      "no_speech_prob": 0.0,
+      "start": 504.86,
+      "text": "What's happening here is about more than the threat of war."
+    },
+    {
+      "avg_logprob": -0.356245,
+      "compression_ratio": 1.401639,
+      "end": 512.0,
+      "no_speech_prob": 0.0,
+      "start": 509.0,
+      "text": "It's about where the balance of power in the world rests."
+    },
+    {
+      "avg_logprob": -0.356245,
+      "compression_ratio": 1.401639,
+      "end": 516.24,
+      "no_speech_prob": 0.0,
+      "start": 512.0,
+      "text": "And that balance of power looks increasingly fragile."
+    },
+    {
+      "avg_logprob": -0.246664,
+      "compression_ratio": 0.887097,
+      "end": 522.0,
+      "no_speech_prob": 0.0,
+      "start": 516.24,
+      "text": "An all-out invasion would take huge manpower and money."
+    },
+    {
+      "avg_logprob": -0.171895,
+      "compression_ratio": 1.117647,
+      "end": 531.86,
+      "no_speech_prob": 0.0,
+      "start": 522.0,
+      "text": "For now, China's pursuit of reunification seems far more focused on striking fear than targets."
+    },
+    {
+      "avg_logprob": -0.114916,
+      "compression_ratio": 1.427928,
+      "end": 543.58,
+      "no_speech_prob": 0.0,
+      "start": 531.86,
+      "text": "As China braces for the 20th National Congress with bated breath, COVID rages again."
+    },
+    {
+      "avg_logprob": -0.114916,
+      "compression_ratio": 1.427928,
+      "end": 550.08,
+      "no_speech_prob": 0.0,
+      "start": 543.58,
+      "text": "As Bloomberg reported, on October 9, the country recorded more than 1,800 cases nationwide."
+    },
+    {
+      "avg_logprob": -0.114916,
+      "compression_ratio": 1.427928,
+      "end": 559.18,
+      "no_speech_prob": 0.0,
+      "start": 550.5,
+      "text": "That was a jump from over 1,600 infections from the day before, with Inner Mongolia and the Xinjiang region continuing to be the epicenters."
+    },
+    {
+      "avg_logprob": -0.114855,
+      "compression_ratio": 1.423469,
+      "end": 565.58,
+      "no_speech_prob": 0.0,
+      "start": 559.18,
+      "text": "The Financial Times notes that China's pandemic situation worsened after the National Day Golden Week holiday."
+    },
+    {
+      "avg_logprob": -0.114855,
+      "compression_ratio": 1.423469,
+      "end": 575.74,
+      "no_speech_prob": 0.0,
+      "start": 565.58,
+      "text": "The number of cases expanded even as more lockdowns were launched, with tourist hubs welcoming a significant number of visitors, despite officials' calls not to travel."
+    },
+    {
+      "avg_logprob": -0.147141,
+      "compression_ratio": 1.405556,
+      "end": 584.44,
+      "no_speech_prob": 0.0,
+      "start": 575.74,
+      "text": "The rebounding cases are expected to add more strains to the preparation for the upcoming Party Congress, which has been scheduled for October 16."
+    },
+    {
+      "avg_logprob": -0.147141,
+      "compression_ratio": 1.405556,
+      "end": 591.02,
+      "no_speech_prob": 0.0,
+      "start": 584.44,
+      "text": "Beijing, where the Congress will be held, saw cases reaching the highest monthly rate, with 14 infections."
+    },
+    {
+      "avg_logprob": -0.09486,
+      "compression_ratio": 1.631579,
+      "end": 596.66,
+      "no_speech_prob": 0.0,
+      "start": 591.02,
+      "text": "As officials are under pressure to secure the crucial event, more stringent measures have been imposed."
+    },
+    {
+      "avg_logprob": -0.09486,
+      "compression_ratio": 1.631579,
+      "end": 602.72,
+      "no_speech_prob": 0.0,
+      "start": 596.66,
+      "text": "FT reports that this includes restricting interprovincial travel to stop residents from entering the capital."
+    },
+    {
+      "avg_logprob": -0.09486,
+      "compression_ratio": 1.631579,
+      "end": 612.92,
+      "no_speech_prob": 0.0,
+      "start": 602.72,
+      "text": "According to the South China Morning Post, tens of thousands of people have been stunned after being denied the green code that would allow them to book a trip out of their visiting places."
+    },
+    {
+      "avg_logprob": -0.245707,
+      "compression_ratio": 1.480702,
+      "end": 618.24,
+      "no_speech_prob": 0.0,
+      "start": 612.92,
+      "text": "The Post quotes one person saying, I'm in a risk-free area in Inner Mongolia."
+    },
+    {
+      "avg_logprob": -0.245707,
+      "compression_ratio": 1.480702,
+      "end": 619.82,
+      "no_speech_prob": 0.0,
+      "start": 618.24,
+      "text": "No COVID outbreaks."
+    },
+    {
+      "avg_logprob": -0.245707,
+      "compression_ratio": 1.480702,
+      "end": 621.32,
+      "no_speech_prob": 0.0,
+      "start": 619.82,
+      "text": "No close contacts."
+    },
+    {
+      "avg_logprob": -0.245707,
+      "compression_ratio": 1.480702,
+      "end": 624.92,
+      "no_speech_prob": 0.0,
+      "start": 621.32,
+      "text": "PCR test conducted every day in the past week."
+    },
+    {
+      "avg_logprob": -0.245707,
+      "compression_ratio": 1.480702,
+      "end": 626.6,
+      "no_speech_prob": 0.0,
+      "start": 624.92,
+      "text": "Why can't I go to Beijing?"
+    },
+    {
+      "avg_logprob": -0.245707,
+      "compression_ratio": 1.480702,
+      "end": 630.44,
+      "no_speech_prob": 0.0,
+      "start": 626.6,
+      "text": "Even a city without any infection has also been locked up."
+    },
+    {
+      "avg_logprob": -0.245707,
+      "compression_ratio": 1.480702,
+      "end": 636.8,
+      "no_speech_prob": 0.0,
+      "start": 630.44,
+      "text": "Bloomberg reports that Yongji city of China's Shanxi province has been closed since October 7,"
+    },
+    {
+      "avg_logprob": -0.245707,
+      "compression_ratio": 1.480702,
+      "end": 640.88,
+      "no_speech_prob": 0.0,
+      "start": 636.8,
+      "text": "effectively keeping visitors from leaving for their homes after the vacation."
+    },
+    {
+      "avg_logprob": -0.188009,
+      "compression_ratio": 1.530973,
+      "end": 658.64,
+      "no_speech_prob": 0.0,
+      "start": 642.92,
+      "text": "President Xi Jinping looks set to secure an unprecedented third term in office, cementing his status as China's most powerful leader since Mao Zedong."
+    },
+    {
+      "avg_logprob": -0.188009,
+      "compression_ratio": 1.530973,
+      "end": 663.2,
+      "no_speech_prob": 0.0,
+      "start": 658.64,
+      "text": "Xi has been the head of the Communist Party in China's military for a decade."
+    },
+    {
+      "avg_logprob": -0.188009,
+      "compression_ratio": 1.530973,
+      "end": 670.24,
+      "no_speech_prob": 0.0,
+      "start": 663.2,
+      "text": "In that time, he has moved China from a tradition of collective leadership to what is now seen as supreme leadership."
+    },
+    {
+      "avg_logprob": -0.209609,
+      "compression_ratio": 1.29078,
+      "end": 674.24,
+      "no_speech_prob": 0.0,
+      "start": 670.24,
+      "text": "Let's take a look at how he managed to amass so much control."
+    },
+    {
+      "avg_logprob": -0.209609,
+      "compression_ratio": 1.29078,
+      "end": 688.96,
+      "no_speech_prob": 0.0,
+      "start": 680.24,
+      "text": "On entering office in 2012, Xi undertook a sweeping campaign to purge officials deemed disloyal, corrupt or ineffective."
+    },
+    {
+      "avg_logprob": -0.396199,
+      "compression_ratio": 1.407821,
+      "end": 696.96,
+      "no_speech_prob": 0.0,
+      "start": 688.96,
+      "text": "Xi Jinping, the former former Chongqing party chief, Bo Xilai."
+    },
+    {
+      "avg_logprob": -0.396199,
+      "compression_ratio": 1.407821,
+      "end": 704.68,
+      "no_speech_prob": 0.0,
+      "start": 696.96,
+      "text": "Xi then built his power base by filling the vacant posts with allies, all the while expanding the state's economic role."
+    },
+    {
+      "avg_logprob": -0.396199,
+      "compression_ratio": 1.407821,
+      "end": 709.96,
+      "no_speech_prob": 0.0,
+      "start": 704.68,
+      "text": "As of April this year, 4.7 million officials have been investigated."
+    },
+    {
+      "avg_logprob": -0.128066,
+      "compression_ratio": 1.407186,
+      "end": 718.96,
+      "no_speech_prob": 0.0,
+      "start": 709.96,
+      "text": "Xi has also asserted control over party propaganda, telling state media in 2016 that their surname is the Communist Party."
+    },
+    {
+      "avg_logprob": -0.128066,
+      "compression_ratio": 1.407186,
+      "end": 725.96,
+      "no_speech_prob": 0.0,
+      "start": 718.96,
+      "text": "Since then, media freedoms have steadily decreased under Xi, while Xi-related propaganda has steadily increased."
+    },
+    {
+      "avg_logprob": -0.107541,
+      "compression_ratio": 1.301887,
+      "end": 741.96,
+      "no_speech_prob": 0.0,
+      "start": 725.96,
+      "text": "One of Xi's key moves to amass power came six years into his presidency in 2018, when he amended the country's constitution to abolish term limits."
+    },
+    {
+      "avg_logprob": -0.107541,
+      "compression_ratio": 1.301887,
+      "end": 745.96,
+      "no_speech_prob": 0.0,
+      "start": 741.96,
+      "text": "There's now no obstacle to the 69-year-old ruling for life."
+    },
+    {
+      "avg_logprob": -0.108715,
+      "compression_ratio": 1.33121,
+      "end": 755.96,
+      "no_speech_prob": 0.0,
+      "start": 745.96,
+      "text": "A year before that, he had amended the party constitution to include Xi Jinping's thought on socialism with Chinese characteristics."
+    },
+    {
+      "avg_logprob": -0.108715,
+      "compression_ratio": 1.33121,
+      "end": 760.96,
+      "no_speech_prob": 0.0,
+      "start": 755.96,
+      "text": "Having an eponymous ideology put him on par only with Mao and Deng Xiaoping."
+    },
+    {
+      "avg_logprob": -0.861459,
+      "compression_ratio": 12.0,
+      "end": 761.96,
+      "no_speech_prob": 0.0,
+      "start": 760.96,
+      "text": "The impasset in the world."
+    },
+    {
+      "avg_logprob": -0.861459,
+      "compression_ratio": 12.0,
+      "end": 762.76,
+      "no_speech_prob": 0.0,
+      "start": 761.96,
+      "text": "The impasset in the world."
+    },
+    {
+      "avg_logprob": -0.861459,
+      "compression_ratio": 12.0,
+      "end": 762.96,
+      "no_speech_prob": 0.0,
+      "start": 762.76,
+      "text": "The impasset in the world."
+    },
+    {
+      "avg_logprob": -0.861459,
+      "compression_ratio": 12.0,
+      "end": 763.76,
+      "no_speech_prob": 0.0,
+      "start": 762.96,
+      "text": "The impasset in the world."
+    },
+    {
+      "avg_logprob": -0.861459,
+      "compression_ratio": 12.0,
+      "end": 763.96,
+      "no_speech_prob": 0.0,
+      "start": 763.76,
+      "text": "The impasset in the world."
+    },
+    {
+      "avg_logprob": -0.861459,
+      "compression_ratio": 12.0,
+      "end": 764.76,
+      "no_speech_prob": 0.0,
+      "start": 763.96,
+      "text": "The impasset in the world."
+    },
+    {
+      "avg_logprob": -0.861459,
+      "compression_ratio": 12.0,
+      "end": 764.84,
+      "no_speech_prob": 0.0,
+      "start": 764.76,
+      "text": "The impasset in the world."
+    },
+    {
+      "avg_logprob": -0.861459,
+      "compression_ratio": 12.0,
+      "end": 765.16,
+      "no_speech_prob": 0.0,
+      "start": 764.84,
+      "text": "The impasset in the world."
+    },
+    {
+      "avg_logprob": -0.861459,
+      "compression_ratio": 12.0,
+      "end": 765.52,
+      "no_speech_prob": 0.0,
+      "start": 765.16,
+      "text": "The impasset in the world."
+    },
+    {
+      "avg_logprob": -0.861459,
+      "compression_ratio": 12.0,
+      "end": 765.6,
+      "no_speech_prob": 0.0,
+      "start": 765.52,
+      "text": "The impasset in the world."
+    },
+    {
+      "avg_logprob": -0.861459,
+      "compression_ratio": 12.0,
+      "end": 765.78,
+      "no_speech_prob": 0.0,
+      "start": 765.6,
+      "text": "The impasset in the world."
+    },
+    {
+      "avg_logprob": -0.861459,
+      "compression_ratio": 12.0,
+      "end": 766.06,
+      "no_speech_prob": 0.0,
+      "start": 765.78,
+      "text": "The impasset in the world."
+    },
+    {
+      "avg_logprob": -0.861459,
+      "compression_ratio": 12.0,
+      "end": 766.16,
+      "no_speech_prob": 0.0,
+      "start": 766.06,
+      "text": "The impasset in the world."
+    },
+    {
+      "avg_logprob": -0.861459,
+      "compression_ratio": 12.0,
+      "end": 766.26,
+      "no_speech_prob": 0.0,
+      "start": 766.16,
+      "text": "The impasset in the world."
+    },
+    {
+      "avg_logprob": -0.861459,
+      "compression_ratio": 12.0,
+      "end": 766.52,
+      "no_speech_prob": 0.0,
+      "start": 766.26,
+      "text": "The impasset in the world."
+    },
+    {
+      "avg_logprob": -0.861459,
+      "compression_ratio": 12.0,
+      "end": 766.58,
+      "no_speech_prob": 0.0,
+      "start": 766.52,
+      "text": "The impasset in the world."
+    },
+    {
+      "avg_logprob": -0.861459,
+      "compression_ratio": 12.0,
+      "end": 766.76,
+      "no_speech_prob": 0.0,
+      "start": 766.58,
+      "text": "The impasset in the world."
+    },
+    {
+      "avg_logprob": -0.861459,
+      "compression_ratio": 12.0,
+      "end": 766.98,
+      "no_speech_prob": 0.0,
+      "start": 766.76,
+      "text": "The impasset in the world."
+    },
+    {
+      "avg_logprob": -0.861459,
+      "compression_ratio": 12.0,
+      "end": 767.18,
+      "no_speech_prob": 0.0,
+      "start": 766.98,
+      "text": "The impasset in the world."
+    },
+    {
+      "avg_logprob": -0.861459,
+      "compression_ratio": 12.0,
+      "end": 767.32,
+      "no_speech_prob": 0.0,
+      "start": 767.18,
+      "text": "The impasset in the world."
+    },
+    {
+      "avg_logprob": -0.861459,
+      "compression_ratio": 12.0,
+      "end": 767.44,
+      "no_speech_prob": 0.0,
+      "start": 767.32,
+      "text": "So, the impasset in the world."
+    },
+    {
+      "avg_logprob": -0.194038,
+      "compression_ratio": 1.028436,
+      "end": 773.44,
+      "no_speech_prob": 0.0,
+      "start": 767.44,
+      "text": "保留採取一切必要措施的选项"
+    },
+    {
+      "avg_logprob": -0.194038,
+      "compression_ratio": 1.028436,
+      "end": 779.44,
+      "no_speech_prob": 0.0,
+      "start": 773.44,
+      "text": "针对的是外部势力干涉"
+    },
+    {
+      "avg_logprob": -0.194038,
+      "compression_ratio": 1.028436,
+      "end": 787.44,
+      "no_speech_prob": 0.0,
+      "start": 779.44,
+      "text": "和极少数台独分裂分子及其分裂活动"
+    },
+    {
+      "avg_logprob": -0.194038,
+      "compression_ratio": 1.028436,
+      "end": 789.44,
+      "no_speech_prob": 0.0,
+      "start": 787.44,
+      "text": "Xi has tightened control of the military"
+    },
+    {
+      "avg_logprob": -0.194038,
+      "compression_ratio": 1.028436,
+      "end": 793.44,
+      "no_speech_prob": 0.0,
+      "start": 789.44,
+      "text": "by initiating sweeping reforms and retrenchment from 2015."
+    },
+    {
+      "avg_logprob": -0.371831,
+      "compression_ratio": 2.394531,
+      "end": 797.44,
+      "no_speech_prob": 0.0,
+      "start": 793.44,
+      "text": "He's also been increasing assertive on the world stage,"
+    },
+    {
+      "avg_logprob": -0.371831,
+      "compression_ratio": 2.394531,
+      "end": 799.44,
+      "no_speech_prob": 0.0,
+      "start": 797.44,
+      "text": "continuing his support for Russia's Vladimir Putin"
+    },
+    {
+      "avg_logprob": -0.371831,
+      "compression_ratio": 2.394531,
+      "end": 801.44,
+      "no_speech_prob": 0.0,
+      "start": 799.44,
+      "text": "despite the invasion of Ukraine,"
+    },
+    {
+      "avg_logprob": -0.371831,
+      "compression_ratio": 2.394531,
+      "end": 803.44,
+      "no_speech_prob": 0.0,
+      "start": 801.44,
+      "text": "intense fine pressure to seize Taiwan"
+    },
+    {
+      "avg_logprob": -0.371831,
+      "compression_ratio": 2.394531,
+      "end": 805.44,
+      "no_speech_prob": 0.0,
+      "start": 803.44,
+      "text": "and a certain control over Hong Kong."
+    },
+    {
+      "avg_logprob": -0.371831,
+      "compression_ratio": 2.394531,
+      "end": 811.44,
+      "no_speech_prob": 0.0,
+      "start": 805.44,
+      "text": "China cannot weaken its quasi-reliance with the Putin, with Russia."
+    },
+    {
+      "avg_logprob": -0.371831,
+      "compression_ratio": 2.394531,
+      "end": 813.44,
+      "no_speech_prob": 0.0,
+      "start": 811.44,
+      "text": "China does have many friends around the world"
+    },
+    {
+      "avg_logprob": -0.371831,
+      "compression_ratio": 2.394531,
+      "end": 816.44,
+      "no_speech_prob": 0.0,
+      "start": 813.44,
+      "text": "and putting is one of those most trustworthy friends"
+    },
+    {
+      "avg_logprob": -0.501447,
+      "compression_ratio": 4.317647,
+      "end": 817.72,
+      "no_speech_prob": 0.0,
+      "start": 816.44,
+      "text": "有適所的乡、乡丶。"
+    },
+    {
+      "avg_logprob": -0.501447,
+      "compression_ratio": 4.317647,
+      "end": 819.96,
+      "no_speech_prob": 0.0,
+      "start": 817.72,
+      "text": "between is one of those a."
+    },
+    {
+      "avg_logprob": -0.325552,
+      "compression_ratio": 13.078431,
+      "end": 849.96,
+      "no_speech_prob": 0.0,
+      "start": 819.96,
+      "text": "我ир是大了尼的家人、一人、一人、一人、一人、一人、一人、一人、一人、一人、一人、一人、一人、一人、一人、一人、一人、一人、一人、一人、一人、一人、一人、一人、一人、一人、一人、一人、一人、一人、一人、一人、一人、一人、一人、一人、一人、一人、一人、一人、一人、一人、一人、一人、一人、一人、一人、一人、一人、一人、一人、一人、一人、一人、一人、一人、一人、一人、一人、一人、一人、一人、一人、一人、一人、一人、一人、一人、一人、一人、一人、一人"
+    },
+    {
+      "avg_logprob": -0.155652,
+      "compression_ratio": 1.565041,
+      "end": 860.46,
+      "no_speech_prob": 0.0,
+      "start": 849.96,
+      "text": "I think Jamie Dimon basically has the facts correct"
+    },
+    {
+      "avg_logprob": -0.155652,
+      "compression_ratio": 1.565041,
+      "end": 864.5,
+      "no_speech_prob": 0.0,
+      "start": 860.46,
+      "text": "that global capital markets are right now in absolute turmoil"
+    },
+    {
+      "avg_logprob": -0.155652,
+      "compression_ratio": 1.565041,
+      "end": 866.0,
+      "no_speech_prob": 0.0,
+      "start": 864.5,
+      "text": "and to prove that point if we can"
+    },
+    {
+      "avg_logprob": -0.155652,
+      "compression_ratio": 1.565041,
+      "end": 867.46,
+      "no_speech_prob": 0.0,
+      "start": 866.0,
+      "text": "let's pull up chart number one"
+    },
+    {
+      "avg_logprob": -0.155652,
+      "compression_ratio": 1.565041,
+      "end": 869.28,
+      "no_speech_prob": 0.0,
+      "start": 867.46,
+      "text": "I want to show Taiwan Semiconductor"
+    },
+    {
+      "avg_logprob": -0.155652,
+      "compression_ratio": 1.565041,
+      "end": 871.84,
+      "no_speech_prob": 0.0,
+      "start": 869.28,
+      "text": "this is a company that I've mentioned previously on the show"
+    },
+    {
+      "avg_logprob": -0.155652,
+      "compression_ratio": 1.565041,
+      "end": 873.96,
+      "no_speech_prob": 0.0,
+      "start": 871.84,
+      "text": "because it's not just important for the global economy"
+    },
+    {
+      "avg_logprob": -0.155652,
+      "compression_ratio": 1.565041,
+      "end": 875.88,
+      "no_speech_prob": 0.0,
+      "start": 873.96,
+      "text": "but also for national security issues"
+    },
+    {
+      "avg_logprob": -0.155652,
+      "compression_ratio": 1.565041,
+      "end": 877.18,
+      "no_speech_prob": 0.0,
+      "start": 875.88,
+      "text": "as they relate to Taiwan"
+    },
+    {
+      "avg_logprob": -0.133706,
+      "compression_ratio": 1.526316,
+      "end": 880.18,
+      "no_speech_prob": 0.0,
+      "start": 877.18,
+      "text": "that is one year back of Taiwan Semiconductor"
+    },
+    {
+      "avg_logprob": -0.133706,
+      "compression_ratio": 1.526316,
+      "end": 881.62,
+      "no_speech_prob": 0.0,
+      "start": 880.18,
+      "text": "it trades here in the United States"
+    },
+    {
+      "avg_logprob": -0.133706,
+      "compression_ratio": 1.526316,
+      "end": 884.12,
+      "no_speech_prob": 0.0,
+      "start": 881.62,
+      "text": "that's a US version of TSM"
+    },
+    {
+      "avg_logprob": -0.133706,
+      "compression_ratio": 1.526316,
+      "end": 885.3,
+      "no_speech_prob": 0.0,
+      "start": 884.12,
+      "text": "as you can see"
+    },
+    {
+      "avg_logprob": -0.133706,
+      "compression_ratio": 1.526316,
+      "end": 885.86,
+      "no_speech_prob": 0.0,
+      "start": 885.3,
+      "text": "and by the way"
+    },
+    {
+      "avg_logprob": -0.133706,
+      "compression_ratio": 1.526316,
+      "end": 887.04,
+      "no_speech_prob": 0.0,
+      "start": 885.86,
+      "text": "when I made this chart"
+    },
+    {
+      "avg_logprob": -0.133706,
+      "compression_ratio": 1.526316,
+      "end": 889.14,
+      "no_speech_prob": 0.0,
+      "start": 887.04,
+      "text": "the low yesterday was 6701"
+    },
+    {
+      "avg_logprob": -0.133706,
+      "compression_ratio": 1.526316,
+      "end": 890.14,
+      "no_speech_prob": 0.0,
+      "start": 889.14,
+      "text": "it has now opened up"
+    },
+    {
+      "avg_logprob": -0.133706,
+      "compression_ratio": 1.526316,
+      "end": 893.1,
+      "no_speech_prob": 0.0,
+      "start": 890.14,
+      "text": "it is 6% lower on the day today"
+    },
+    {
+      "avg_logprob": -0.133706,
+      "compression_ratio": 1.526316,
+      "end": 894.62,
+      "no_speech_prob": 0.0,
+      "start": 893.1,
+      "text": "so we're all the way down to 64"
+    },
+    {
+      "avg_logprob": -0.133706,
+      "compression_ratio": 1.526316,
+      "end": 897.38,
+      "no_speech_prob": 0.0,
+      "start": 894.62,
+      "text": "from 145 roughly a year ago"
+    },
+    {
+      "avg_logprob": -0.133706,
+      "compression_ratio": 1.526316,
+      "end": 898.56,
+      "no_speech_prob": 0.0,
+      "start": 897.38,
+      "text": "at the beginning of this year actually"
+    },
+    {
+      "avg_logprob": -0.133706,
+      "compression_ratio": 1.526316,
+      "end": 899.9,
+      "no_speech_prob": 0.0,
+      "start": 898.56,
+      "text": "all the way down to"
+    },
+    {
+      "avg_logprob": -3.046635,
+      "compression_ratio": 0.384615,
+      "end": 900.26,
+      "no_speech_prob": 0.0,
+      "start": 899.9,
+      "text": "i you"
+    }
+  ],
+  "text": "≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡�我认带的我误 auf, stein的一年褶 yourind是一旦的一旦是的人是你迫的 test是你 sun the need never And the has I have the time you have the world I have the time to be theiv you have the time the time to be the time to be the time to be the time to be the time to be the time to be the time to be the time to be the time to be the time to be the time to be the time to be the time to be the time to be the time to be the time to be the time to be the time to be the time to be the time to be the time to be一遲了好御御的邦逻這就有ext夥你一遮的規 Luge 遮的一 Euro 乍的奥奥 become是佩的奥夥是佩的奥夥是佩的奥夥是佩的奥夥是佩的奥夥是佩的奥夥是佩的奥夥是佩的奥夥是佩的奥夥是佩的奥夥是佩的奥夥是佩的奥夥是佩的奥夥是佩的奥夥是佩的奥夥我以下ily seconder a I have a very good question to you, I have a very good question to you, I have a very good question to you, I have a very good question to you, I have a very good question to you, I have a very good question to you, I have a very good question to you, I have a very good question to you, I have a very good question to you, I have a very good question to you, I have a very good question to you, I have a very good question to you, I have a very good question to you, I have a very good question to you, I have a very good question to you, I have a very good question to you, I have a very good question to you, I have a very good question to you, I have a very good question to you, I have a very good question的不迫 遵叨 仵丢 的 仪丢 的 仪丢 。的 仪丢 。是 g 仪 。是 仪 。是 仪 。是 仪 。是 仪 。是 仪 。是 仪 。是 仪 。是 仪 。是 仪 。ismXL. 。R.C.G.F.B.B.A.A.B.A.A.A.A.A.A.oh, my man, I was a man, I was a man, I was a man, I was a man, I was a man, I was a man, I was a man, I was a man, I was a man, I was a man, I was a man, I was a man, I was a man, I was a man, I was a man, I was a man, I was a man, I was a man, I was a man, I was a man, I was a man, I was a man, I was a man, I was a man, I was a man, I was a man, I was a man, I was a man, I was a man, I was a man, I was a man, I was a man, I was a man, I was a man, I was a man, I was a man, I was a man, I was a man, I was a man, I was a man, I was a man, I was a man, I was a man, I was a Yeah, that's right. So they head into the party Congress, which starts on Sunday, with some economic headwinds, perhaps political tailwinds, obviously, as Xi Jinping will most likely secure that president's defying third consecutive term, as they got rid of the term limits for the top man, as well as potentially the age, retirement age limit. So that political agenda for Xi Jinping will probably, you know, include some of his successes, trumpeting the successes of COVID-0, even though there are signs that the society across China is starting to get really weary about these lockdowns and the ongoing COVID-0 policies, or static management, as they call it, in China. But what's happening this week is the plenum, and essentially they are getting their ducks in a row,的\". pos.ist. 并不兴 sec. 并不兴. 并不兴. 并不兴. 并不兴. 并不兴. 并不兴. 并不兴. 并不兴. 并不兴. 并不兴. 并不兴. 并不兴. 并不兴. 并不兴. 并不兴. 并不兴. 并不兴. 并不兴. 并不兴. 并不兴. 并不兴. 并不兴.是一批是一批 could 批ult 批的 could a 批 the 批 批 批 批 批 批 批 批 批 批 批 批 批 批 批 批 批 批 批 批 批 批 批 批 批 批 批 批 批 批 批 批 批 批 批 批 批 批 批 批 批 批 批 批 批 批 批 批 批 批 批 批 批 批 批 批 批 批 批 批 批 批 批 批 批 批 �Cinema box sales, tourism revenue down some 26%.Yeah, what I can say is that the data set definitely released a sluggish trend for the consumption with the consumption data in the holiday.So, yeah, as you said, everything was done, and especially in the travel related spending by the household.And obviously people were avoiding long distance trip because of the concern over the possible constraint by the COVID-19.And, you know, that is what we saw in the market in the holiday.And when it comes to the Taixing PMI numbers that we got over the weekend, we're back in contraction.What did you see as some of the biggest drags that we saw?Yeah, definitely for Taixing because that was mainly the small business and the food service sector.That was the part that impacted the harvest in China's economy.So that was not a surprise to me because everyone knows that the economy, particularly in the servicing sector, things are bad.Iro to the woulds, to the very good, the very good, the very good, the very good, the very good, the very good, the very good, the very good, the very good, the very good, the very good, the very good, the very good, the very good, the very good, the very good, the very good, the very good, the very good, the very good, the very good, the very good, the very good, the very good, the very good, the very good, the very good, the very good, the very good, the very good, the very good, the very good, the very good, the very good, the very good, the very good, the very good, the very good, the very good, the very good, the very good, the very good, the very good, the very good, the very good, the very good, the very good, the very good, the very good, the very good, the very good, the very good, the very good, the very逢复亡是一 fald 人的一并不ни是一 recognose不一圆不一圆不一圆不一圆不一圆不一圆不一圆不一圆不一圆不一圆不一圆不一圆不一圆不一圆不一圆不一圆不一圆不一圆不一圆不一圆不一圆不一圆不一圆不一圆不一圆不一圆不一圆不一圆不一圆不一圆不一圆不一圆不一圆 China's been firing warning shots at this self-governing island, making incursions into Taiwanese airspace. Beijing views it as a breakaway province. It needs to get back. Taiwan says its military drills are not a reaction to China's recent moves, but Taiwan also knows in the current climate,不 stri won, 以兴了不兴.一 Dan 书 书 眨丧 宣佳 宣佳 宣佳 宣佳不兴 宣佳 宣佳 宣佳 宣佳 宣佳不兴 宣佳 宣佳 宣佳 宣佳 宣佳 宣佳 At the presidential office, 兴丧 宣佳, 宣佳 宣佳 some theater, 召丧 se 佳 宣佳, 宣佳, 宣佳, 宣佳 is 佳 宣佳, 宣佳, 宣佳, 宣佳if  mounten  built-in 了able 了y t ood-m 逢-m  enc oud-m ister-m icesl-m 亥 亢 亢 亢 亢 亢 亢 亢 亢 亢 亢 亢 亢 亢d0bghfbfbf這年一年ю,不甦的迫逹养 ч Not  national security這 message,是 protect soil, protect country不甦?不甦?不甦?不甦?不甦?不甦?不甦?不甦?不甦?不甦?不甦?不甦?不甦?不甦?不甦?在他执书, 麥긋, 河一尺 室丰 书 1  ener plys which is a very good thing, and the way the other can be in the wayikin a ndk ndk ndk ndk ndk ndk ndk ndk ndk ndk ndk ndk ndk ndk ndk ndk ndk ndk ndk ndk ndk ndk ndk ndk ndk ndk ndk ndk ndk ndk ndk ndk ndk ndk ndk ndk ndk ndk ndk ndk ndk ndk ndk ndk ndk ndk ndk ndk ndk ndk ndk ndk ndk ndk ndk ndk ndk ndk ndk ndk ndk ndk ndk ndk ndk ndk ndk ndk ndk ndk ndk ndk ndk 优优优独播剧场—— And those allies need to understand the range of risk, according to one man trying to teach every citizen in Taiwan how to protect their community. Everything Taiwan is dealing with right now is beginning to be replicated around the world. Everything Taiwan has experienced over the last few decades from China, the economic coercion, the intellectual property theft, the interference into our democratic system, into our elections. We're seeing that happening everywhere else. If Taiwan was attacked, the supply chain that runs the world could grind to a halt. The island produces most of the world's microchips. What's happening here is about more than the threat of war. It's about where the balance of power in the world rests. And that balance of power looks increasingly fragile. An all-out invasion would take huge manpower and money. For now, China's pursuit of reunification seems far more focused on striking fear than targets. As China braces for the 20th National Congress with bated breath, COVID rages again. As Bloomberg reported, on October 9, the country recorded more than 1,800 cases nationwide. That was a jump from over 1,600 infections from the day before, with Inner Mongolia and the Xinjiang region continuing to be the epicenters. The Financial Times notes that China's pandemic situation worsened after the National Day Golden Week holiday. The number of cases expanded even as more lockdowns were launched, with tourist hubs welcoming a significant number of visitors, despite officials' calls not to travel. The rebounding cases are expected to add more strains to the preparation for the upcoming Party Congress, which has been scheduled for October 16. Beijing, where the Congress will be held, saw cases reaching the highest monthly rate, with 14 infections. As officials are under pressure to secure the crucial event, more stringent measures have been imposed. FT reports that this includes restricting interprovincial travel to stop residents from entering the capital. According to the South China Morning Post, tens of thousands of people have been stunned after being denied the green code that would allow them to book a trip out of their visiting places. The Post quotes one person saying, I'm in a risk-free area in Inner Mongolia. No COVID outbreaks. No close contacts. PCR test conducted every day in the past week. Why can't I go to Beijing? Even a city without any infection has also been locked up. Bloomberg reports that Yongji city of China's Shanxi province has been closed since October 7, effectively keeping visitors from leaving for their homes after the vacation. President Xi Jinping looks set to secure an unprecedented third term in office, cementing his status as China's most powerful leader since Mao Zedong. Xi has been the head of the Communist Party in China's military for a decade. In that time, he has moved China from a tradition of collective leadership to what is now seen as supreme leadership. Let's take a look at how he managed to amass so much control. On entering office in 2012, Xi undertook a sweeping campaign to purge officials deemed disloyal, corrupt or ineffective. Xi Jinping, the former former Chongqing party chief, Bo Xilai. Xi then built his power base by filling the vacant posts with allies, all the while expanding the state's economic role. As of April this year, 4.7 million officials have been investigated. Xi has also asserted control over party propaganda, telling state media in 2016 that their surname is the Communist Party. Since then, media freedoms have steadily decreased under Xi, while Xi-related propaganda has steadily increased. One of Xi's key moves to amass power came six years into his presidency in 2018, when he amended the country's constitution to abolish term limits. There's now no obstacle to the 69-year-old ruling for life. A year before that, he had amended the party constitution to include Xi Jinping's thought on socialism with Chinese characteristics. Having an eponymous ideology put him on par only with Mao and Deng Xiaoping. The impasset in the world. The impasset in the world. The impasset in the world. The impasset in the world. The impasset in the world. The impasset in the world. The impasset in the world. The impasset in the world. The impasset in the world. The impasset in the world. The impasset in the world. The impasset in the world. The impasset in the world. The impasset in the world. The impasset in the world. The impasset in the world. The impasset in the world. The impasset in the world. The impasset in the world. The impasset in the world. So, the impasset in the world.保留採取一切必要措施的选项针对的是外部势力干涉和极少数台独分裂分子及其分裂活动 Xi has tightened control of the military by initiating sweeping reforms and retrenchment from 2015. He's also been increasing assertive on the world stage, continuing his support for Russia's Vladimir Putin despite the invasion of Ukraine, intense fine pressure to seize Taiwan and a certain control over Hong Kong. China cannot weaken its quasi-reliance with the Putin, with Russia. China does have many friends around the world and putting is one of those most trustworthy friends有適所的乡、乡丶。 between is one of those a.我ир是大了尼的家人、一人、一人、一人、一人、一人、一人、一人、一人、一人、一人、一人、一人、一人、一人、一人、一人、一人、一人、一人、一人、一人、一人、一人、一人、一人、一人、一人、一人、一人、一人、一人、一人、一人、一人、一人、一人、一人、一人、一人、一人、一人、一人、一人、一人、一人、一人、一人、一人、一人、一人、一人、一人、一人、一人、一人、一人、一人、一人、一人、一人、一人、一人、一人、一人、一人、一人、一人、一人、一人、一人、一人I think Jamie Dimon basically has the facts correctthat global capital markets are right now in absolute turmoiland to prove that point if we canlet's pull up chart number oneI want to show Taiwan Semiconductorthis is a company that I've mentioned previously on the showbecause it's not just important for the global economybut also for national security issuesas they relate to Taiwanthat is one year back of Taiwan Semiconductorit trades here in the United Statesthat's a US version of TSMas you can seeand by the waywhen I made this chartthe low yesterday was 6701it has now opened upit is 6% lower on the day todayso we're all the way down to 64from 145 roughly a year agoat the beginning of this year actuallyall the way down toi you"
+}

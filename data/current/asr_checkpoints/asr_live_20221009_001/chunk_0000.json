@@ -1,0 +1,1336 @@
+{
+  "chunk_audio_sha256": "8549b3e244c6bbaebac0842927ef04ba14d877482ad9123ccd336e91d26df898",
+  "chunk_index": 0,
+  "completed_at": "2026-10-29T07:47:29Z",
+  "language": "zh",
+  "live_id": "LIVE_20221009_001",
+  "media_committed_to_git": false,
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "offset_sec": 0,
+  "paid_api_used": false,
+  "processing_location": "github-hosted-macos-arm64",
+  "schema_version": "cloud-asr-chunk-v1",
+  "segments": [
+    {
+      "avg_logprob": -0.525137,
+      "compression_ratio": 1.099174,
+      "end": 22.52,
+      "no_speech_prob": 0.0,
+      "start": 0.0,
+      "text": "新疆人在新疆"
+    },
+    {
+      "avg_logprob": -0.525137,
+      "compression_ratio": 1.099174,
+      "end": 27.44,
+      "no_speech_prob": 0.0,
+      "start": 22.52,
+      "text": "have imposed the most severe lockdown yet in the region of 22 million people."
+    },
+    {
+      "avg_logprob": -0.525137,
+      "compression_ratio": 1.099174,
+      "end": 29.64,
+      "no_speech_prob": 0.0,
+      "start": 27.44,
+      "text": "Everyone is confined to their homes."
+    },
+    {
+      "avg_logprob": -0.075043,
+      "compression_ratio": 1.627907,
+      "end": 32.36,
+      "no_speech_prob": 0.0,
+      "start": 29.64,
+      "text": "All types of public transport are suspended."
+    },
+    {
+      "avg_logprob": -0.075043,
+      "compression_ratio": 1.627907,
+      "end": 35.06,
+      "no_speech_prob": 0.0,
+      "start": 32.36,
+      "text": "More than 90% of flights have been canceled."
+    },
+    {
+      "avg_logprob": -0.075043,
+      "compression_ratio": 1.627907,
+      "end": 39.72,
+      "no_speech_prob": 0.0,
+      "start": 35.06,
+      "text": "The Xinjiang Authority's announcement states that the current epidemic in Xinjiang is a"
+    },
+    {
+      "avg_logprob": -0.075043,
+      "compression_ratio": 1.627907,
+      "end": 45.54,
+      "no_speech_prob": 0.0,
+      "start": 39.72,
+      "text": "significant public health emergency, spreading at a fast speed and infecting the largest number"
+    },
+    {
+      "avg_logprob": -0.075043,
+      "compression_ratio": 1.627907,
+      "end": 46.54,
+      "no_speech_prob": 0.0,
+      "start": 45.54,
+      "text": "of people."
+    },
+    {
+      "avg_logprob": -0.075043,
+      "compression_ratio": 1.627907,
+      "end": 51.96,
+      "no_speech_prob": 0.0,
+      "start": 46.54,
+      "text": "However, the Associated Press said that the number of infections in Xinjiang does not require"
+    },
+    {
+      "avg_logprob": -0.075043,
+      "compression_ratio": 1.627907,
+      "end": 54.74,
+      "no_speech_prob": 0.0,
+      "start": 51.96,
+      "text": "such strong epidemic prevention measures."
+    },
+    {
+      "avg_logprob": -0.091298,
+      "compression_ratio": 1.456221,
+      "end": 60.2,
+      "no_speech_prob": 0.0,
+      "start": 54.74,
+      "text": "China's National Health Commission reported 97 new cases in the past day in Xinjiang."
+    },
+    {
+      "avg_logprob": -0.091298,
+      "compression_ratio": 1.456221,
+      "end": 64.02,
+      "no_speech_prob": 0.0,
+      "start": 60.2,
+      "text": "This number is not controversial compared to many countries in the world."
+    },
+    {
+      "avg_logprob": -0.091298,
+      "compression_ratio": 1.456221,
+      "end": 70.14,
+      "no_speech_prob": 0.0,
+      "start": 64.02,
+      "text": "On October 4, Urumqi announced that people should not move during the epidemic control period."
+    },
+    {
+      "avg_logprob": -0.091298,
+      "compression_ratio": 1.456221,
+      "end": 73.84,
+      "no_speech_prob": 0.0,
+      "start": 70.14,
+      "text": "Chinese media also called it the most rigid going-out policy."
+    },
+    {
+      "avg_logprob": -0.103956,
+      "compression_ratio": 1.53202,
+      "end": 79.3,
+      "no_speech_prob": 0.0,
+      "start": 73.84,
+      "text": "The authorities also stressed the need to strengthen controls at airports and train stations."
+    },
+    {
+      "avg_logprob": -0.103956,
+      "compression_ratio": 1.53202,
+      "end": 84.98,
+      "no_speech_prob": 0.0,
+      "start": 79.3,
+      "text": "All out-of-town trains, interprovincial buses, and most flights were suspended pending further"
+    },
+    {
+      "avg_logprob": -0.103956,
+      "compression_ratio": 1.53202,
+      "end": 85.98,
+      "no_speech_prob": 0.0,
+      "start": 84.98,
+      "text": "notice."
+    },
+    {
+      "avg_logprob": -0.103956,
+      "compression_ratio": 1.53202,
+      "end": 93.3,
+      "no_speech_prob": 0.0,
+      "start": 85.98,
+      "text": "According to CNN, 97% of outbound flights and 95% of inbound flights at Urumqi Airport were"
+    },
+    {
+      "avg_logprob": -0.103956,
+      "compression_ratio": 1.53202,
+      "end": 95.18,
+      "no_speech_prob": 0.0,
+      "start": 93.3,
+      "text": "canceled on October 5."
+    },
+    {
+      "avg_logprob": -0.102705,
+      "compression_ratio": 1.503401,
+      "end": 100.64,
+      "no_speech_prob": 0.0,
+      "start": 95.18,
+      "text": "Many analysts pointed out that authorities insisted on clearing and closing the city to safeguard"
+    },
+    {
+      "avg_logprob": -0.102705,
+      "compression_ratio": 1.503401,
+      "end": 102.56,
+      "no_speech_prob": 0.0,
+      "start": 100.64,
+      "text": "the authorities' reputation."
+    },
+    {
+      "avg_logprob": -0.102705,
+      "compression_ratio": 1.503401,
+      "end": 107.7,
+      "no_speech_prob": 0.0,
+      "start": 102.56,
+      "text": "It was intentionally strengthening social control through epidemic prevention and control, use"
+    },
+    {
+      "avg_logprob": -0.416139,
+      "compression_ratio": 1.085714,
+      "end": 114.7,
+      "no_speech_prob": 0.0,
+      "start": 107.7,
+      "text": "the health code to precisely control the public and ensure social stability."
+    },
+    {
+      "avg_logprob": -0.376158,
+      "compression_ratio": 1.465753,
+      "end": 115.7,
+      "no_speech_prob": 0.0,
+      "start": 114.7,
+      "text": "to the public and ensure social stability."
+    },
+    {
+      "avg_logprob": -0.376158,
+      "compression_ratio": 1.465753,
+      "end": 122.16,
+      "no_speech_prob": 0.0,
+      "start": 115.7,
+      "text": "The Iranian regime is a state sponsor of terrorism."
+    },
+    {
+      "avg_logprob": -0.376158,
+      "compression_ratio": 1.465753,
+      "end": 128.06,
+      "no_speech_prob": 0.0,
+      "start": 122.16,
+      "text": "It is repressive, theocratic, and misogynist."
+    },
+    {
+      "avg_logprob": -0.376158,
+      "compression_ratio": 1.465753,
+      "end": 132.0,
+      "no_speech_prob": 0.0,
+      "start": 128.06,
+      "text": "The IRGC leadership are terrorists."
+    },
+    {
+      "avg_logprob": -0.376158,
+      "compression_ratio": 1.465753,
+      "end": 135.7,
+      "no_speech_prob": 0.0,
+      "start": 132.0,
+      "text": "The IRGC is a terrorist organization."
+    },
+    {
+      "avg_logprob": -0.099919,
+      "compression_ratio": 1.458333,
+      "end": 145.04,
+      "no_speech_prob": 0.0,
+      "start": 135.7,
+      "text": "Today, by listing the IRGC under IRPA, and indeed by listing the broader leadership of the"
+    },
+    {
+      "avg_logprob": -0.099919,
+      "compression_ratio": 1.458333,
+      "end": 152.94,
+      "no_speech_prob": 0.0,
+      "start": 145.04,
+      "text": "Iranian regime, we are formally recognizing that fact and acting accordingly."
+    },
+    {
+      "avg_logprob": -0.099919,
+      "compression_ratio": 1.458333,
+      "end": 160.98,
+      "no_speech_prob": 0.0,
+      "start": 152.94,
+      "text": "More than 10,000 senior members of this terrorist organization will be banned from ever setting"
+    },
+    {
+      "avg_logprob": -0.099919,
+      "compression_ratio": 1.458333,
+      "end": 163.7,
+      "no_speech_prob": 0.0,
+      "start": 160.98,
+      "text": "foot in Canada."
+    },
+    {
+      "avg_logprob": -0.075003,
+      "compression_ratio": 1.516304,
+      "end": 172.58,
+      "no_speech_prob": 0.0,
+      "start": 163.7,
+      "text": "Anyone on this list will be sanctioned and prohibited from doing business or hiding their assets here."
+    },
+    {
+      "avg_logprob": -0.075003,
+      "compression_ratio": 1.516304,
+      "end": 179.34,
+      "no_speech_prob": 0.0,
+      "start": 172.58,
+      "text": "We will strengthen our crackdown on Iranian money laundering in Canada."
+    },
+    {
+      "avg_logprob": -0.075003,
+      "compression_ratio": 1.516304,
+      "end": 187.94,
+      "no_speech_prob": 0.0,
+      "start": 179.34,
+      "text": "We will not tolerate financial transactions with Iran that are associated with the IRGC and"
+    },
+    {
+      "avg_logprob": -0.075003,
+      "compression_ratio": 1.516304,
+      "end": 188.76,
+      "no_speech_prob": 0.0,
+      "start": 187.94,
+      "text": "its proxies."
+    },
+    {
+      "avg_logprob": -0.177424,
+      "compression_ratio": 1.467433,
+      "end": 201.58,
+      "no_speech_prob": 0.0,
+      "start": 193.7,
+      "text": "The IRGC has been surging against the wand this year, up about 12% since January 1st."
+    },
+    {
+      "avg_logprob": -0.177424,
+      "compression_ratio": 1.467433,
+      "end": 204.58,
+      "no_speech_prob": 0.0,
+      "start": 201.58,
+      "text": "That's helped our next guest, who has a big bet on a weaker wand."
+    },
+    {
+      "avg_logprob": -0.177424,
+      "compression_ratio": 1.467433,
+      "end": 208.58,
+      "no_speech_prob": 0.0,
+      "start": 204.58,
+      "text": "Joining us right now is Crescent Capital founder, CIO, and CEO Kevin Smith."
+    },
+    {
+      "avg_logprob": -0.177424,
+      "compression_ratio": 1.467433,
+      "end": 212.58,
+      "no_speech_prob": 0.0,
+      "start": 208.58,
+      "text": "Crescent Capital has $300 million in assets under management."
+    },
+    {
+      "avg_logprob": -0.177424,
+      "compression_ratio": 1.467433,
+      "end": 219.52,
+      "no_speech_prob": 0.0,
+      "start": 212.58,
+      "text": "His global macro hedge fund up, we should say, 34% year-to-date in what has been a tough one."
+    },
+    {
+      "avg_logprob": -0.345559,
+      "compression_ratio": 1.170213,
+      "end": 221.28,
+      "no_speech_prob": 0.0,
+      "start": 219.52,
+      "text": "Kevin, nice to see you."
+    },
+    {
+      "avg_logprob": -0.345559,
+      "compression_ratio": 1.170213,
+      "end": 226.4,
+      "no_speech_prob": 0.0,
+      "start": 221.28,
+      "text": "Tell us about this bet and how long do you think you can keep it on for at this point?"
+    },
+    {
+      "avg_logprob": -0.241208,
+      "compression_ratio": 1.076087,
+      "end": 231.4,
+      "no_speech_prob": 0.0,
+      "start": 226.4,
+      "text": "Well, this is a trade we've had on for quite some time, actually."
+    },
+    {
+      "avg_logprob": -0.241208,
+      "compression_ratio": 1.076087,
+      "end": 233.44,
+      "no_speech_prob": 0.0,
+      "start": 231.4,
+      "text": "It really started for us in 2015."
+    },
+    {
+      "avg_logprob": -0.202814,
+      "compression_ratio": 1.493976,
+      "end": 241.32,
+      "no_speech_prob": 0.0,
+      "start": 233.44,
+      "text": "And we've been playing it in a kind of a Nassim Tlaib kind of a strategy with a put option,"
+    },
+    {
+      "avg_logprob": -0.202814,
+      "compression_ratio": 1.493976,
+      "end": 244.32,
+      "no_speech_prob": 0.0,
+      "start": 241.32,
+      "text": "looking for a black swan event."
+    },
+    {
+      "avg_logprob": -0.202814,
+      "compression_ratio": 1.493976,
+      "end": 253.32,
+      "no_speech_prob": 0.0,
+      "start": 244.32,
+      "text": "And we haven't had that black swan yet, but we have had a pretty steady devaluation of the yuan over these last eight years."
+    },
+    {
+      "avg_logprob": -0.22956,
+      "compression_ratio": 1.53012,
+      "end": 257.2,
+      "no_speech_prob": 0.0,
+      "start": 253.32,
+      "text": "And we've made money on it five out of the last eight years."
+    },
+    {
+      "avg_logprob": -0.22956,
+      "compression_ratio": 1.53012,
+      "end": 264.2,
+      "no_speech_prob": 0.0,
+      "start": 257.2,
+      "text": "But we think the real big devaluation, the more serious crisis is still coming."
+    },
+    {
+      "avg_logprob": -0.22956,
+      "compression_ratio": 1.53012,
+      "end": 267.2,
+      "no_speech_prob": 0.0,
+      "start": 264.2,
+      "text": "A serious crisis in China?"
+    },
+    {
+      "avg_logprob": -0.22956,
+      "compression_ratio": 1.53012,
+      "end": 270.2,
+      "no_speech_prob": 0.0,
+      "start": 267.2,
+      "text": "Well, a currency crisis."
+    },
+    {
+      "avg_logprob": -0.22956,
+      "compression_ratio": 1.53012,
+      "end": 274.2,
+      "no_speech_prob": 0.0,
+      "start": 270.2,
+      "text": "Really, we think of it as a twin banking and currency crisis."
+    },
+    {
+      "avg_logprob": -0.245473,
+      "compression_ratio": 1.471204,
+      "end": 284.72,
+      "no_speech_prob": 0.0,
+      "start": 274.2,
+      "text": "And if you look at the banking assets in China, they have grown sevenfold since the global financial crisis."
+    },
+    {
+      "avg_logprob": -0.245473,
+      "compression_ratio": 1.471204,
+      "end": 288.24,
+      "no_speech_prob": 0.0,
+      "start": 284.72,
+      "text": "Sevenfold over the last 14 years."
+    },
+    {
+      "avg_logprob": -0.245473,
+      "compression_ratio": 1.471204,
+      "end": 291.96,
+      "no_speech_prob": 0.0,
+      "start": 288.24,
+      "text": "And this is really something that's done."
+    },
+    {
+      "avg_logprob": -0.245473,
+      "compression_ratio": 1.471204,
+      "end": 298.2,
+      "no_speech_prob": 0.0,
+      "start": 291.96,
+      "text": "We've never seen this before in any major country for any major currency anywhere on the planet."
+    },
+    {
+      "avg_logprob": -0.179075,
+      "compression_ratio": 1.544304,
+      "end": 302.08,
+      "no_speech_prob": 0.0,
+      "start": 298.2,
+      "text": "So what if you're not buying this?"
+    },
+    {
+      "avg_logprob": -0.179075,
+      "compression_ratio": 1.544304,
+      "end": 304.04,
+      "no_speech_prob": 0.0,
+      "start": 302.08,
+      "text": "I mean, it sounds like you like gold, too, right?"
+    },
+    {
+      "avg_logprob": -0.179075,
+      "compression_ratio": 1.544304,
+      "end": 310.84,
+      "no_speech_prob": 0.0,
+      "start": 306.0,
+      "text": "We are we're big fans of precious metals at Crescat."
+    },
+    {
+      "avg_logprob": -0.179075,
+      "compression_ratio": 1.544304,
+      "end": 314.36,
+      "no_speech_prob": 0.0,
+      "start": 310.84,
+      "text": "We have what we call the macro trade of the century right now."
+    },
+    {
+      "avg_logprob": -0.179075,
+      "compression_ratio": 1.544304,
+      "end": 318.68,
+      "no_speech_prob": 0.0,
+      "start": 314.36,
+      "text": "And that is really being long inflation hedge assets."
+    },
+    {
+      "avg_logprob": -0.179075,
+      "compression_ratio": 1.544304,
+      "end": 327.04,
+      "no_speech_prob": 0.0,
+      "start": 319.08,
+      "text": "Gold, of course, qualifies first and foremost, being short, long duration financial assets that are overvalued."
+    },
+    {
+      "avg_logprob": -0.159752,
+      "compression_ratio": 1.884848,
+      "end": 333.2,
+      "no_speech_prob": 0.0,
+      "start": 327.04,
+      "text": "And then, you know, and then we want to be we want to be actually long the dollar."
+    },
+    {
+      "avg_logprob": -0.159752,
+      "compression_ratio": 1.884848,
+      "end": 337.72,
+      "no_speech_prob": 0.0,
+      "start": 333.2,
+      "text": "We want to be short, you know, long duration assets."
+    },
+    {
+      "avg_logprob": -0.159752,
+      "compression_ratio": 1.884848,
+      "end": 338.72,
+      "no_speech_prob": 0.0,
+      "start": 337.72,
+      "text": "We want to be long gold."
+    },
+    {
+      "avg_logprob": -0.159752,
+      "compression_ratio": 1.884848,
+      "end": 344.24,
+      "no_speech_prob": 0.0,
+      "start": 338.72,
+      "text": "But we want to be long gold in the in the fiat currencies that are the most overvalued on the planet."
+    },
+    {
+      "avg_logprob": -0.159752,
+      "compression_ratio": 1.884848,
+      "end": 347.36,
+      "no_speech_prob": 0.0,
+      "start": 344.24,
+      "text": "To us right now, that's, you know, that's China."
+    },
+    {
+      "avg_logprob": -0.922304,
+      "compression_ratio": 0.555556,
+      "end": 377.34,
+      "no_speech_prob": 0.0,
+      "start": 347.36,
+      "text": "Thank you."
+    },
+    {
+      "avg_logprob": -0.98024,
+      "compression_ratio": 1.454545,
+      "end": 379.36,
+      "no_speech_prob": 0.0,
+      "start": 377.36,
+      "text": "Thank you."
+    },
+    {
+      "avg_logprob": -3.173217,
+      "compression_ratio": 0.384615,
+      "end": 425.36,
+      "no_speech_prob": 0.0,
+      "start": 407.36,
+      "text": "Think"
+    },
+    {
+      "avg_logprob": -0.139195,
+      "compression_ratio": 0.851351,
+      "end": 455.34,
+      "no_speech_prob": 0.0,
+      "start": 425.36,
+      "text": "请不吝点赞 订阅 转发 打赏支持明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.112588,
+      "compression_ratio": 0.851351,
+      "end": 485.34,
+      "no_speech_prob": 0.0,
+      "start": 455.36,
+      "text": "请不吝点赞 订阅 转发 打赏支持明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.207181,
+      "compression_ratio": 0.851351,
+      "end": 495.36,
+      "no_speech_prob": 0.0,
+      "start": 485.36,
+      "text": "请不吝点赞 订阅 转发 打赏支持明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.111652,
+      "compression_ratio": 0.851351,
+      "end": 505.36,
+      "no_speech_prob": 0.0,
+      "start": 495.36,
+      "text": "请不吝点赞 订阅 转发 打赏支持明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.152567,
+      "compression_ratio": 1.639344,
+      "end": 538.04,
+      "no_speech_prob": 0.0,
+      "start": 535.36,
+      "text": "that Russia can in fact field in the Ukrainian peninsula."
+    },
+    {
+      "avg_logprob": -0.152567,
+      "compression_ratio": 1.639344,
+      "end": 541.82,
+      "no_speech_prob": 0.0,
+      "start": 538.78,
+      "text": "Russia's defence ministry has said that the troops fighting in southern Ukraine"
+    },
+    {
+      "avg_logprob": -0.152567,
+      "compression_ratio": 1.639344,
+      "end": 546.24,
+      "no_speech_prob": 0.0,
+      "start": 541.82,
+      "text": "can get all of their supplies that they need using the other existing sea routes."
+    },
+    {
+      "avg_logprob": -0.152567,
+      "compression_ratio": 1.639344,
+      "end": 550.4,
+      "no_speech_prob": 0.0,
+      "start": 547.36,
+      "text": "An advisor to Ukrainian President Volodymyr Zelensky in fact put out this tweet"
+    },
+    {
+      "avg_logprob": -0.152567,
+      "compression_ratio": 1.639344,
+      "end": 552.22,
+      "no_speech_prob": 0.0,
+      "start": 550.4,
+      "text": "saying that the bridge was just the beginning."
+    },
+    {
+      "avg_logprob": -0.152567,
+      "compression_ratio": 1.639344,
+      "end": 555.18,
+      "no_speech_prob": 0.0,
+      "start": 552.64,
+      "text": "Ukraine hasn't claimed responsibility for the attack,"
+    },
+    {
+      "avg_logprob": -0.135152,
+      "compression_ratio": 1.618677,
+      "end": 559.48,
+      "no_speech_prob": 0.0,
+      "start": 555.18,
+      "text": "but the gloating that is seen in the Ukrainian Twitter handles"
+    },
+    {
+      "avg_logprob": -0.135152,
+      "compression_ratio": 1.618677,
+      "end": 564.3,
+      "no_speech_prob": 0.0,
+      "start": 559.48,
+      "text": "quite clearly points to the fact that Ukraine may have something to do with it"
+    },
+    {
+      "avg_logprob": -0.135152,
+      "compression_ratio": 1.618677,
+      "end": 568.44,
+      "no_speech_prob": 0.0,
+      "start": 564.3,
+      "text": "as it turned out in the case when the airfields in Crimea"
+    },
+    {
+      "avg_logprob": -0.135152,
+      "compression_ratio": 1.618677,
+      "end": 570.56,
+      "no_speech_prob": 0.0,
+      "start": 568.44,
+      "text": "had been attacked by Ukraine in the first week of September."
+    },
+    {
+      "avg_logprob": -0.135152,
+      "compression_ratio": 1.618677,
+      "end": 573.8,
+      "no_speech_prob": 0.0,
+      "start": 571.28,
+      "text": "The Secretary of the National Security and Defence Council of Ukraine"
+    },
+    {
+      "avg_logprob": -0.135152,
+      "compression_ratio": 1.618677,
+      "end": 576.18,
+      "no_speech_prob": 0.0,
+      "start": 573.8,
+      "text": "posted a video of the bridge burning along with a song."
+    },
+    {
+      "avg_logprob": -0.135152,
+      "compression_ratio": 1.618677,
+      "end": 577.68,
+      "no_speech_prob": 0.0,
+      "start": 576.34,
+      "text": "Happy birthday Mr. President."
+    },
+    {
+      "avg_logprob": -0.326919,
+      "compression_ratio": 1.411111,
+      "end": 579.2,
+      "no_speech_prob": 0.0,
+      "start": 577.68,
+      "text": "Marlin Monroe."
+    },
+    {
+      "avg_logprob": -0.326919,
+      "compression_ratio": 1.411111,
+      "end": 582.1,
+      "no_speech_prob": 0.0,
+      "start": 579.38,
+      "text": "He was of course here referring to the Russian President Vladimir Putin."
+    },
+    {
+      "avg_logprob": -0.326919,
+      "compression_ratio": 1.411111,
+      "end": 594.26,
+      "no_speech_prob": 0.0,
+      "start": 591.88,
+      "text": "Meanwhile, Ukrainians in Kyiv were seen taking pictures"
+    },
+    {
+      "avg_logprob": -0.326919,
+      "compression_ratio": 1.411111,
+      "end": 597.28,
+      "no_speech_prob": 0.0,
+      "start": 594.26,
+      "text": "with a painting that showed the Kirsch bridge on fire."
+    },
+    {
+      "avg_logprob": -0.326919,
+      "compression_ratio": 1.411111,
+      "end": 599.72,
+      "no_speech_prob": 0.0,
+      "start": 597.52,
+      "text": "They were pretty jubilant after the bridge was damaged."
+    },
+    {
+      "avg_logprob": -0.257992,
+      "compression_ratio": 1.351351,
+      "end": 618.2,
+      "no_speech_prob": 0.0,
+      "start": 599.72,
+      "text": "The Kirsch bridge links the Russian mainland to the Crimean Peninsula."
+    },
+    {
+      "avg_logprob": -0.257992,
+      "compression_ratio": 1.351351,
+      "end": 620.88,
+      "no_speech_prob": 0.0,
+      "start": 618.34,
+      "text": "It was personally inaugurated by Putin in 2018."
+    },
+    {
+      "avg_logprob": -0.257992,
+      "compression_ratio": 1.351351,
+      "end": 624.92,
+      "no_speech_prob": 0.0,
+      "start": 620.88,
+      "text": "The damage to the bridge comes as Russia continues to suffer a crisis in Ukraine."
+    },
+    {
+      "avg_logprob": -0.141335,
+      "compression_ratio": 1.622951,
+      "end": 628.56,
+      "no_speech_prob": 0.0,
+      "start": 624.92,
+      "text": "And Ukraine's counter-offensive has in fact led them to recapturing"
+    },
+    {
+      "avg_logprob": -0.141335,
+      "compression_ratio": 1.622951,
+      "end": 631.92,
+      "no_speech_prob": 0.0,
+      "start": 628.56,
+      "text": "the Russian-held territory in the east and also in the south."
+    },
+    {
+      "avg_logprob": -0.141335,
+      "compression_ratio": 1.622951,
+      "end": 635.5,
+      "no_speech_prob": 0.0,
+      "start": 632.68,
+      "text": "Now Moscow has appointed a new general to lead the Ukrainian offensive"
+    },
+    {
+      "avg_logprob": -0.141335,
+      "compression_ratio": 1.622951,
+      "end": 639.72,
+      "no_speech_prob": 0.0,
+      "start": 635.5,
+      "text": "and Russia's defence ministry has announced that Air Force General Sergei Surkovin"
+    },
+    {
+      "avg_logprob": -0.141335,
+      "compression_ratio": 1.622951,
+      "end": 642.78,
+      "no_speech_prob": 0.0,
+      "start": 639.72,
+      "text": "will be leading the forces in Ukraine."
+    },
+    {
+      "avg_logprob": -0.141335,
+      "compression_ratio": 1.622951,
+      "end": 647.68,
+      "no_speech_prob": 0.0,
+      "start": 643.4,
+      "text": "The 55-year-old has in fact led Russia's Air and Space Forces since 2017."
+    },
+    {
+      "avg_logprob": -0.154184,
+      "compression_ratio": 1.550607,
+      "end": 657.24,
+      "no_speech_prob": 0.0,
+      "start": 647.68,
+      "text": "Meanwhile, the United States has warned Hong Kong that its reputation"
+    },
+    {
+      "avg_logprob": -0.154184,
+      "compression_ratio": 1.550607,
+      "end": 659.82,
+      "no_speech_prob": 0.0,
+      "start": 657.24,
+      "text": "as a financial hub could in fact be seriously damaged"
+    },
+    {
+      "avg_logprob": -0.154184,
+      "compression_ratio": 1.550607,
+      "end": 663.74,
+      "no_speech_prob": 0.0,
+      "start": 659.82,
+      "text": "if it continues to give safe haven to people who are awaiting sanctions."
+    },
+    {
+      "avg_logprob": -0.154184,
+      "compression_ratio": 1.550607,
+      "end": 667.9,
+      "no_speech_prob": 0.0,
+      "start": 664.64,
+      "text": "And this comes after the city said that it would not take any action"
+    },
+    {
+      "avg_logprob": -0.154184,
+      "compression_ratio": 1.550607,
+      "end": 670.46,
+      "no_speech_prob": 0.0,
+      "start": 667.9,
+      "text": "against a super-yacht owned by a Russian tycoon"
+    },
+    {
+      "avg_logprob": -0.154184,
+      "compression_ratio": 1.550607,
+      "end": 673.26,
+      "no_speech_prob": 0.0,
+      "start": 670.46,
+      "text": "who is said to be very close to the Russian President Vladimir Putin."
+    },
+    {
+      "avg_logprob": -0.148503,
+      "compression_ratio": 1.533333,
+      "end": 680.02,
+      "no_speech_prob": 0.0,
+      "start": 673.26,
+      "text": "The Nord is a $500 million luxury yacht owned by the Russian billionaire Alexei Mordechov."
+    },
+    {
+      "avg_logprob": -0.148503,
+      "compression_ratio": 1.533333,
+      "end": 685.28,
+      "no_speech_prob": 0.0,
+      "start": 680.78,
+      "text": "The 142-metre-long super-yacht has two helipads, a cinema hall"
+    },
+    {
+      "avg_logprob": -0.148503,
+      "compression_ratio": 1.533333,
+      "end": 688.36,
+      "no_speech_prob": 0.0,
+      "start": 685.28,
+      "text": "and also more than a dozen luxury cabins."
+    },
+    {
+      "avg_logprob": -0.148503,
+      "compression_ratio": 1.533333,
+      "end": 692.8,
+      "no_speech_prob": 0.0,
+      "start": 689.2,
+      "text": "It arrived in Hong Kong waters earlier in the week from Vladivostok."
+    },
+    {
+      "avg_logprob": -0.148503,
+      "compression_ratio": 1.533333,
+      "end": 696.12,
+      "no_speech_prob": 0.0,
+      "start": 693.46,
+      "text": "The Mordechov is under sanctions from Ukraine's allies"
+    },
+    {
+      "avg_logprob": -0.148503,
+      "compression_ratio": 1.533333,
+      "end": 698.48,
+      "no_speech_prob": 0.0,
+      "start": 696.12,
+      "text": "because of his proximity to Putin"
+    },
+    {
+      "avg_logprob": -0.148503,
+      "compression_ratio": 1.533333,
+      "end": 700.78,
+      "no_speech_prob": 0.0,
+      "start": 698.48,
+      "text": "and he is said to be one of the several Russian billionaires"
+    },
+    {
+      "avg_logprob": -0.161109,
+      "compression_ratio": 1.72043,
+      "end": 703.7,
+      "no_speech_prob": 0.0,
+      "start": 700.78,
+      "text": "who's close to Putin to be put on sanctions."
+    },
+    {
+      "avg_logprob": -0.161109,
+      "compression_ratio": 1.72043,
+      "end": 707.18,
+      "no_speech_prob": 0.0,
+      "start": 704.96,
+      "text": "The yachts have been seized in countries around the world."
+    },
+    {
+      "avg_logprob": -0.161109,
+      "compression_ratio": 1.72043,
+      "end": 710.76,
+      "no_speech_prob": 0.0,
+      "start": 707.34,
+      "text": "A different yacht owned Mordechov was held by Italy in the month of March."
+    },
+    {
+      "avg_logprob": -0.161109,
+      "compression_ratio": 1.72043,
+      "end": 713.44,
+      "no_speech_prob": 0.0,
+      "start": 711.4,
+      "text": "And on Friday, Hong Kong also released a statement"
+    },
+    {
+      "avg_logprob": -0.161109,
+      "compression_ratio": 1.72043,
+      "end": 715.82,
+      "no_speech_prob": 0.0,
+      "start": 713.44,
+      "text": "that said that while it does implement the UN sanctions,"
+    },
+    {
+      "avg_logprob": -0.161109,
+      "compression_ratio": 1.72043,
+      "end": 720.72,
+      "no_speech_prob": 0.0,
+      "start": 716.3,
+      "text": "it could not enforce those imposed unilaterally by countries or blocs."
+    },
+    {
+      "avg_logprob": -0.161109,
+      "compression_ratio": 1.72043,
+      "end": 723.78,
+      "no_speech_prob": 0.0,
+      "start": 721.52,
+      "text": "Russia has so far refused to condemn Russia's invasion..."
+    },
+    {
+      "avg_logprob": -0.161109,
+      "compression_ratio": 1.72043,
+      "end": 726.88,
+      "no_speech_prob": 0.0,
+      "start": 724.3,
+      "text": "China has so far refused to condemn Russia's invasion of Ukraine"
+    },
+    {
+      "avg_logprob": -0.131219,
+      "compression_ratio": 1.693694,
+      "end": 731.48,
+      "no_speech_prob": 0.0,
+      "start": 726.88,
+      "text": "and the United States has said that the transparency of Hong Kong's business environment"
+    },
+    {
+      "avg_logprob": -0.131219,
+      "compression_ratio": 1.693694,
+      "end": 735.26,
+      "no_speech_prob": 0.0,
+      "start": 731.48,
+      "text": "is a serious question because it is possible for individuals"
+    },
+    {
+      "avg_logprob": -0.131219,
+      "compression_ratio": 1.693694,
+      "end": 740.04,
+      "no_speech_prob": 0.0,
+      "start": 735.26,
+      "text": "fleeing sanctions that have been imposed on Russia to the safe haven in the city."
+    },
+    {
+      "avg_logprob": -0.131219,
+      "compression_ratio": 1.693694,
+      "end": 744.1,
+      "no_speech_prob": 0.0,
+      "start": 740.56,
+      "text": "The United States has also said that Hong Kong's reputation as a financial center"
+    },
+    {
+      "avg_logprob": -0.131219,
+      "compression_ratio": 1.693694,
+      "end": 747.24,
+      "no_speech_prob": 0.0,
+      "start": 744.1,
+      "text": "depended on its adherence to international laws and standards."
+    },
+    {
+      "avg_logprob": -0.146491,
+      "compression_ratio": 1.650376,
+      "end": 757.38,
+      "no_speech_prob": 0.0,
+      "start": 747.24,
+      "text": "For the first time, Apple has been asking its suppliers to move AirPods and Beats headphone"
+    },
+    {
+      "avg_logprob": -0.146491,
+      "compression_ratio": 1.650376,
+      "end": 758.66,
+      "no_speech_prob": 0.0,
+      "start": 757.38,
+      "text": "manufacturing to India."
+    },
+    {
+      "avg_logprob": -0.146491,
+      "compression_ratio": 1.650376,
+      "end": 763.48,
+      "no_speech_prob": 0.0,
+      "start": 759.06,
+      "text": "The move comes after Apple is diversifying away from China to reduce supply chain disruptions"
+    },
+    {
+      "avg_logprob": -0.146491,
+      "compression_ratio": 1.650376,
+      "end": 766.84,
+      "no_speech_prob": 0.0,
+      "start": 763.48,
+      "text": "caused by its strict zero-COVID policy and tensions with the U.S."
+    },
+    {
+      "avg_logprob": -0.146491,
+      "compression_ratio": 1.650376,
+      "end": 772.66,
+      "no_speech_prob": 0.0,
+      "start": 767.26,
+      "text": "Sources from Nikkei Asia said that the information comes from two of Apple suppliers and from Apple itself."
+    },
+    {
+      "avg_logprob": -0.146491,
+      "compression_ratio": 1.650376,
+      "end": 775.4,
+      "no_speech_prob": 0.0,
+      "start": 773.1,
+      "text": "According to three sources familiar with the situation,"
+    },
+    {
+      "avg_logprob": -0.20122,
+      "compression_ratio": 1.655172,
+      "end": 779.9,
+      "no_speech_prob": 0.0,
+      "start": 775.4,
+      "text": "Apple has been discussing raising production in India as early as next year with suppliers."
+    },
+    {
+      "avg_logprob": -0.20122,
+      "compression_ratio": 1.655172,
+      "end": 782.54,
+      "no_speech_prob": 0.0,
+      "start": 780.5,
+      "text": "The plan includes key acoustics devices."
+    },
+    {
+      "avg_logprob": -0.20122,
+      "compression_ratio": 1.655172,
+      "end": 788.22,
+      "no_speech_prob": 0.0,
+      "start": 783.08,
+      "text": "Similarly, iPhone's largest assembler, Foxconn, also plans to manufacture Beats headphones in India."
+    },
+    {
+      "avg_logprob": -0.20122,
+      "compression_ratio": 1.655172,
+      "end": 790.34,
+      "no_speech_prob": 0.0,
+      "start": 788.48,
+      "text": "It expects to produce AirPods there as well."
+    },
+    {
+      "avg_logprob": -0.20122,
+      "compression_ratio": 1.655172,
+      "end": 794.06,
+      "no_speech_prob": 0.0,
+      "start": 790.72,
+      "text": "Luxshare Precision Industry and its affiliates, another Apple supplier,"
+    },
+    {
+      "avg_logprob": -0.20122,
+      "compression_ratio": 1.655172,
+      "end": 796.22,
+      "no_speech_prob": 0.0,
+      "start": 794.24,
+      "text": "aim to make AirPods in India too."
+    },
+    {
+      "avg_logprob": -0.20122,
+      "compression_ratio": 1.655172,
+      "end": 799.72,
+      "no_speech_prob": 0.0,
+      "start": 796.5,
+      "text": "The company already makes AirPods for Apple in Vietnam and China."
+    },
+    {
+      "avg_logprob": -0.20122,
+      "compression_ratio": 1.655172,
+      "end": 803.48,
+      "no_speech_prob": 0.0,
+      "start": 800.16,
+      "text": "More than 70 million AirPods are shipped annually, second only to the iPhone."
+    },
+    {
+      "avg_logprob": -0.136926,
+      "compression_ratio": 1.587121,
+      "end": 808.76,
+      "no_speech_prob": 0.0,
+      "start": 803.48,
+      "text": "Its production shifted from China to Vietnam in 2019 amid the U.S.-China tariff war."
+    },
+    {
+      "avg_logprob": -0.136926,
+      "compression_ratio": 1.587121,
+      "end": 812.06,
+      "no_speech_prob": 0.0,
+      "start": 808.76,
+      "text": "It was one of the first Apple items mass-produced outside of China."
+    },
+    {
+      "avg_logprob": -0.136926,
+      "compression_ratio": 1.587121,
+      "end": 817.76,
+      "no_speech_prob": 0.0,
+      "start": 812.54,
+      "text": "In terms of Beats headphones, sources from Nikkei Asia said most Beats productions now stay in Vietnam."
+    },
+    {
+      "avg_logprob": -0.136926,
+      "compression_ratio": 1.587121,
+      "end": 822.02,
+      "no_speech_prob": 0.0,
+      "start": 817.76,
+      "text": "AirPods and Beats manufacturing in India would expand Apple's production foothold there,"
+    },
+    {
+      "avg_logprob": -0.136926,
+      "compression_ratio": 1.587121,
+      "end": 825.2,
+      "no_speech_prob": 0.0,
+      "start": 822.02,
+      "text": "where the latest iPhone will be made, according to a recent announcement."
+    },
+    {
+      "avg_logprob": -0.163593,
+      "compression_ratio": 1.531707,
+      "end": 829.88,
+      "no_speech_prob": 0.0,
+      "start": 825.2,
+      "text": "Notably, Apple began having older iPhone models produced in India by Wishtron in 2017,"
+    },
+    {
+      "avg_logprob": -0.163593,
+      "compression_ratio": 1.531707,
+      "end": 832.46,
+      "no_speech_prob": 0.0,
+      "start": 829.88,
+      "text": "but has boosted its manufacturing since last year."
+    },
+    {
+      "avg_logprob": -0.163593,
+      "compression_ratio": 1.531707,
+      "end": 836.66,
+      "no_speech_prob": 0.0,
+      "start": 832.46,
+      "text": "In addition, Apple initially manufactured in India to serve the vast local market,"
+    },
+    {
+      "avg_logprob": -0.163593,
+      "compression_ratio": 1.531707,
+      "end": 841.1,
+      "no_speech_prob": 0.0,
+      "start": 836.66,
+      "text": "but is now growing the country as a strategic production center to serve markets like Europe."
+    },
+    {
+      "avg_logprob": -0.18685,
+      "compression_ratio": 1.492462,
+      "end": 850.64,
+      "no_speech_prob": 0.0,
+      "start": 841.1,
+      "text": "China's bond market has been bleeding as the world's second-largest economy is slowing down rapidly,"
+    },
+    {
+      "avg_logprob": -0.18685,
+      "compression_ratio": 1.492462,
+      "end": 852.68,
+      "no_speech_prob": 0.0,
+      "start": 850.64,
+      "text": "pushing capital to other destinations."
+    },
+    {
+      "avg_logprob": -0.18685,
+      "compression_ratio": 1.492462,
+      "end": 859.22,
+      "no_speech_prob": 0.0,
+      "start": 852.68,
+      "text": "Reuters cited the latest Institute of International Finance data, reporting that capital outflows from"
+    },
+    {
+      "avg_logprob": -0.18685,
+      "compression_ratio": 1.492462,
+      "end": 862.58,
+      "no_speech_prob": 0.0,
+      "start": 859.22,
+      "text": "China's bond market reached $1.4 billion in September."
+    },
+    {
+      "avg_logprob": -0.153355,
+      "compression_ratio": 1.701149,
+      "end": 867.8,
+      "no_speech_prob": 0.0,
+      "start": 862.58,
+      "text": "Over the past eight months, China's debt markets evaporated a total of $98.2 billion,"
+    },
+    {
+      "avg_logprob": -0.153355,
+      "compression_ratio": 1.701149,
+      "end": 869.96,
+      "no_speech_prob": 0.0,
+      "start": 867.8,
+      "text": "mainly due to the economic slowdown."
+    },
+    {
+      "avg_logprob": -0.153355,
+      "compression_ratio": 1.701149,
+      "end": 874.64,
+      "no_speech_prob": 0.0,
+      "start": 869.96,
+      "text": "International investors have lost confidence in China and pulled capital from this market due"
+    },
+    {
+      "avg_logprob": -0.153355,
+      "compression_ratio": 1.701149,
+      "end": 879.26,
+      "no_speech_prob": 0.0,
+      "start": 874.64,
+      "text": "to the COVID pandemic, the lockdowns and faltering housing market, and other issues which led to"
+    },
+    {
+      "avg_logprob": -0.153355,
+      "compression_ratio": 1.701149,
+      "end": 880.22,
+      "no_speech_prob": 0.0,
+      "start": 879.26,
+      "text": "the economic downturn."
+    },
+    {
+      "avg_logprob": -0.153355,
+      "compression_ratio": 1.701149,
+      "end": 884.66,
+      "no_speech_prob": 0.0,
+      "start": 880.22,
+      "text": "The latest data pointed to further cooling of the economy, with China's industrial production"
+    },
+    {
+      "avg_logprob": -0.153355,
+      "compression_ratio": 1.701149,
+      "end": 887.48,
+      "no_speech_prob": 0.0,
+      "start": 884.66,
+      "text": "barely growing in September and the service sector slowing."
+    },
+    {
+      "avg_logprob": -0.153355,
+      "compression_ratio": 1.701149,
+      "end": 892.28,
+      "no_speech_prob": 0.0,
+      "start": 887.48,
+      "text": "In addition, the economy is still struggling amid pandemic control measures and weaker global demand."
+    },
+    {
+      "avg_logprob": -0.192601,
+      "compression_ratio": 1.232759,
+      "end": 897.2,
+      "no_speech_prob": 0.0,
+      "start": 892.58,
+      "text": "According to Mark Reed, head of fixed-income desk research at Mijuho Securities Asia,"
+    },
+    {
+      "avg_logprob": -0.192601,
+      "compression_ratio": 1.232759,
+      "end": 900.08,
+      "no_speech_prob": 0.0,
+      "start": 897.2,
+      "text": "there is another driver of the selldown in Chinese bonds."
+    }
+  ],
+  "text": "新疆人在新疆 have imposed the most severe lockdown yet in the region of 22 million people. Everyone is confined to their homes. All types of public transport are suspended. More than 90% of flights have been canceled. The Xinjiang Authority's announcement states that the current epidemic in Xinjiang is a significant public health emergency, spreading at a fast speed and infecting the largest number of people. However, the Associated Press said that the number of infections in Xinjiang does not require such strong epidemic prevention measures. China's National Health Commission reported 97 new cases in the past day in Xinjiang. This number is not controversial compared to many countries in the world. On October 4, Urumqi announced that people should not move during the epidemic control period. Chinese media also called it the most rigid going-out policy. The authorities also stressed the need to strengthen controls at airports and train stations. All out-of-town trains, interprovincial buses, and most flights were suspended pending further notice. According to CNN, 97% of outbound flights and 95% of inbound flights at Urumqi Airport were canceled on October 5. Many analysts pointed out that authorities insisted on clearing and closing the city to safeguard the authorities' reputation. It was intentionally strengthening social control through epidemic prevention and control, use the health code to precisely control the public and ensure social stability. to the public and ensure social stability. The Iranian regime is a state sponsor of terrorism. It is repressive, theocratic, and misogynist. The IRGC leadership are terrorists. The IRGC is a terrorist organization. Today, by listing the IRGC under IRPA, and indeed by listing the broader leadership of the Iranian regime, we are formally recognizing that fact and acting accordingly. More than 10,000 senior members of this terrorist organization will be banned from ever setting foot in Canada. Anyone on this list will be sanctioned and prohibited from doing business or hiding their assets here. We will strengthen our crackdown on Iranian money laundering in Canada. We will not tolerate financial transactions with Iran that are associated with the IRGC and its proxies. The IRGC has been surging against the wand this year, up about 12% since January 1st. That's helped our next guest, who has a big bet on a weaker wand. Joining us right now is Crescent Capital founder, CIO, and CEO Kevin Smith. Crescent Capital has $300 million in assets under management. His global macro hedge fund up, we should say, 34% year-to-date in what has been a tough one. Kevin, nice to see you. Tell us about this bet and how long do you think you can keep it on for at this point? Well, this is a trade we've had on for quite some time, actually. It really started for us in 2015. And we've been playing it in a kind of a Nassim Tlaib kind of a strategy with a put option, looking for a black swan event. And we haven't had that black swan yet, but we have had a pretty steady devaluation of the yuan over these last eight years. And we've made money on it five out of the last eight years. But we think the real big devaluation, the more serious crisis is still coming. A serious crisis in China? Well, a currency crisis. Really, we think of it as a twin banking and currency crisis. And if you look at the banking assets in China, they have grown sevenfold since the global financial crisis. Sevenfold over the last 14 years. And this is really something that's done. We've never seen this before in any major country for any major currency anywhere on the planet. So what if you're not buying this? I mean, it sounds like you like gold, too, right? We are we're big fans of precious metals at Crescat. We have what we call the macro trade of the century right now. And that is really being long inflation hedge assets. Gold, of course, qualifies first and foremost, being short, long duration financial assets that are overvalued. And then, you know, and then we want to be we want to be actually long the dollar. We want to be short, you know, long duration assets. We want to be long gold. But we want to be long gold in the in the fiat currencies that are the most overvalued on the planet. To us right now, that's, you know, that's China. Thank you. Thank you. Think请不吝点赞 订阅 转发 打赏支持明镜与点点栏目请不吝点赞 订阅 转发 打赏支持明镜与点点栏目请不吝点赞 订阅 转发 打赏支持明镜与点点栏目请不吝点赞 订阅 转发 打赏支持明镜与点点栏目 that Russia can in fact field in the Ukrainian peninsula. Russia's defence ministry has said that the troops fighting in southern Ukraine can get all of their supplies that they need using the other existing sea routes. An advisor to Ukrainian President Volodymyr Zelensky in fact put out this tweet saying that the bridge was just the beginning. Ukraine hasn't claimed responsibility for the attack, but the gloating that is seen in the Ukrainian Twitter handles quite clearly points to the fact that Ukraine may have something to do with it as it turned out in the case when the airfields in Crimea had been attacked by Ukraine in the first week of September. The Secretary of the National Security and Defence Council of Ukraine posted a video of the bridge burning along with a song. Happy birthday Mr. President. Marlin Monroe. He was of course here referring to the Russian President Vladimir Putin. Meanwhile, Ukrainians in Kyiv were seen taking pictures with a painting that showed the Kirsch bridge on fire. They were pretty jubilant after the bridge was damaged. The Kirsch bridge links the Russian mainland to the Crimean Peninsula. It was personally inaugurated by Putin in 2018. The damage to the bridge comes as Russia continues to suffer a crisis in Ukraine. And Ukraine's counter-offensive has in fact led them to recapturing the Russian-held territory in the east and also in the south. Now Moscow has appointed a new general to lead the Ukrainian offensive and Russia's defence ministry has announced that Air Force General Sergei Surkovin will be leading the forces in Ukraine. The 55-year-old has in fact led Russia's Air and Space Forces since 2017. Meanwhile, the United States has warned Hong Kong that its reputation as a financial hub could in fact be seriously damaged if it continues to give safe haven to people who are awaiting sanctions. And this comes after the city said that it would not take any action against a super-yacht owned by a Russian tycoon who is said to be very close to the Russian President Vladimir Putin. The Nord is a $500 million luxury yacht owned by the Russian billionaire Alexei Mordechov. The 142-metre-long super-yacht has two helipads, a cinema hall and also more than a dozen luxury cabins. It arrived in Hong Kong waters earlier in the week from Vladivostok. The Mordechov is under sanctions from Ukraine's allies because of his proximity to Putin and he is said to be one of the several Russian billionaires who's close to Putin to be put on sanctions. The yachts have been seized in countries around the world. A different yacht owned Mordechov was held by Italy in the month of March. And on Friday, Hong Kong also released a statement that said that while it does implement the UN sanctions, it could not enforce those imposed unilaterally by countries or blocs. Russia has so far refused to condemn Russia's invasion... China has so far refused to condemn Russia's invasion of Ukraine and the United States has said that the transparency of Hong Kong's business environment is a serious question because it is possible for individuals fleeing sanctions that have been imposed on Russia to the safe haven in the city. The United States has also said that Hong Kong's reputation as a financial center depended on its adherence to international laws and standards. For the first time, Apple has been asking its suppliers to move AirPods and Beats headphone manufacturing to India. The move comes after Apple is diversifying away from China to reduce supply chain disruptions caused by its strict zero-COVID policy and tensions with the U.S. Sources from Nikkei Asia said that the information comes from two of Apple suppliers and from Apple itself. According to three sources familiar with the situation, Apple has been discussing raising production in India as early as next year with suppliers. The plan includes key acoustics devices. Similarly, iPhone's largest assembler, Foxconn, also plans to manufacture Beats headphones in India. It expects to produce AirPods there as well. Luxshare Precision Industry and its affiliates, another Apple supplier, aim to make AirPods in India too. The company already makes AirPods for Apple in Vietnam and China. More than 70 million AirPods are shipped annually, second only to the iPhone. Its production shifted from China to Vietnam in 2019 amid the U.S.-China tariff war. It was one of the first Apple items mass-produced outside of China. In terms of Beats headphones, sources from Nikkei Asia said most Beats productions now stay in Vietnam. AirPods and Beats manufacturing in India would expand Apple's production foothold there, where the latest iPhone will be made, according to a recent announcement. Notably, Apple began having older iPhone models produced in India by Wishtron in 2017, but has boosted its manufacturing since last year. In addition, Apple initially manufactured in India to serve the vast local market, but is now growing the country as a strategic production center to serve markets like Europe. China's bond market has been bleeding as the world's second-largest economy is slowing down rapidly, pushing capital to other destinations. Reuters cited the latest Institute of International Finance data, reporting that capital outflows from China's bond market reached $1.4 billion in September. Over the past eight months, China's debt markets evaporated a total of $98.2 billion, mainly due to the economic slowdown. International investors have lost confidence in China and pulled capital from this market due to the COVID pandemic, the lockdowns and faltering housing market, and other issues which led to the economic downturn. The latest data pointed to further cooling of the economy, with China's industrial production barely growing in September and the service sector slowing. In addition, the economy is still struggling amid pandemic control measures and weaker global demand. According to Mark Reed, head of fixed-income desk research at Mijuho Securities Asia, there is another driver of the selldown in Chinese bonds."
+}

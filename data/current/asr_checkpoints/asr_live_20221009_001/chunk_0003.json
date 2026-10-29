@@ -1,0 +1,3272 @@
+{
+  "chunk_audio_sha256": "a18d411f0c4f2dfbd880c951f0e5a42a9bef6a8ef96c1ff258c0b46afcea8a16",
+  "chunk_index": 3,
+  "completed_at": "2026-10-29T07:53:53Z",
+  "language": "zh",
+  "live_id": "LIVE_20221009_001",
+  "media_committed_to_git": false,
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "offset_sec": 2700,
+  "paid_api_used": false,
+  "processing_location": "github-hosted-macos-arm64",
+  "schema_version": "cloud-asr-chunk-v1",
+  "segments": [
+    {
+      "avg_logprob": -0.124904,
+      "compression_ratio": 1.95814,
+      "end": 2702.0,
+      "no_speech_prob": 0.0,
+      "start": 2700.0,
+      "text": "你家安全了我家就不安全了"
+    },
+    {
+      "avg_logprob": -0.124904,
+      "compression_ratio": 1.95814,
+      "end": 2706.0,
+      "no_speech_prob": 0.0,
+      "start": 2703.0,
+      "text": "没有一个概念说你家安全我家也安全"
+    },
+    {
+      "avg_logprob": -0.124904,
+      "compression_ratio": 1.95814,
+      "end": 2708.0,
+      "no_speech_prob": 0.0,
+      "start": 2706.0,
+      "text": "你家更好我家更好 错了"
+    },
+    {
+      "avg_logprob": -0.124904,
+      "compression_ratio": 1.95814,
+      "end": 2710.0,
+      "no_speech_prob": 0.0,
+      "start": 2708.0,
+      "text": "你家不死人我家就死人"
+    },
+    {
+      "avg_logprob": -0.124904,
+      "compression_ratio": 1.95814,
+      "end": 2712.0,
+      "no_speech_prob": 0.0,
+      "start": 2710.0,
+      "text": "你家不贫穷我家就贫穷"
+    },
+    {
+      "avg_logprob": -0.124904,
+      "compression_ratio": 1.95814,
+      "end": 2713.0,
+      "no_speech_prob": 0.0,
+      "start": 2712.0,
+      "text": "反过来说了"
+    },
+    {
+      "avg_logprob": -0.124904,
+      "compression_ratio": 1.95814,
+      "end": 2715.0,
+      "no_speech_prob": 0.0,
+      "start": 2713.0,
+      "text": "你家死人了我家就不用死人"
+    },
+    {
+      "avg_logprob": -0.124904,
+      "compression_ratio": 1.95814,
+      "end": 2717.0,
+      "no_speech_prob": 0.0,
+      "start": 2715.0,
+      "text": "你家贫穷了我家就不用贫穷"
+    },
+    {
+      "avg_logprob": -0.124904,
+      "compression_ratio": 1.95814,
+      "end": 2720.0,
+      "no_speech_prob": 0.0,
+      "start": 2718.0,
+      "text": "什么叫社会主义啊"
+    },
+    {
+      "avg_logprob": -0.124904,
+      "compression_ratio": 1.95814,
+      "end": 2723.0,
+      "no_speech_prob": 0.0,
+      "start": 2720.0,
+      "text": "一切都是国家和政府的叫社会主义"
+    },
+    {
+      "avg_logprob": -0.124904,
+      "compression_ratio": 1.95814,
+      "end": 2725.0,
+      "no_speech_prob": 0.0,
+      "start": 2723.0,
+      "text": "什么叫资本主义啊"
+    },
+    {
+      "avg_logprob": -0.124904,
+      "compression_ratio": 1.95814,
+      "end": 2727.0,
+      "no_speech_prob": 0.0,
+      "start": 2725.0,
+      "text": "什么都是你个人的都叫资本主义"
+    },
+    {
+      "avg_logprob": -0.124904,
+      "compression_ratio": 1.95814,
+      "end": 2729.0,
+      "no_speech_prob": 0.0,
+      "start": 2728.0,
+      "text": "什么叫民主社会啊"
+    },
+    {
+      "avg_logprob": -0.088029,
+      "compression_ratio": 1.671642,
+      "end": 2732.0,
+      "no_speech_prob": 0.0,
+      "start": 2729.0,
+      "text": "就是什么都是老百姓个人的"
+    },
+    {
+      "avg_logprob": -0.088029,
+      "compression_ratio": 1.671642,
+      "end": 2735.0,
+      "no_speech_prob": 0.0,
+      "start": 2732.0,
+      "text": "包括生殖记包括钱包括家包括房子"
+    },
+    {
+      "avg_logprob": -0.088029,
+      "compression_ratio": 1.671642,
+      "end": 2737.0,
+      "no_speech_prob": 0.0,
+      "start": 2735.0,
+      "text": "什么叫做共产主义啊"
+    },
+    {
+      "avg_logprob": -0.088029,
+      "compression_ratio": 1.671642,
+      "end": 2739.0,
+      "no_speech_prob": 0.0,
+      "start": 2737.0,
+      "text": "一切东西都是政府的"
+    },
+    {
+      "avg_logprob": -0.088029,
+      "compression_ratio": 1.671642,
+      "end": 2741.0,
+      "no_speech_prob": 0.0,
+      "start": 2739.0,
+      "text": "包括你爹你娘包括是你的资产"
+    },
+    {
+      "avg_logprob": -0.088029,
+      "compression_ratio": 1.671642,
+      "end": 2746.0,
+      "no_speech_prob": 0.0,
+      "start": 2743.0,
+      "text": "在共产主义社会主义生存的关系是什么"
+    },
+    {
+      "avg_logprob": -0.088029,
+      "compression_ratio": 1.671642,
+      "end": 2750.0,
+      "no_speech_prob": 0.0,
+      "start": 2748.0,
+      "text": "生存的资本是什么"
+    },
+    {
+      "avg_logprob": -0.088029,
+      "compression_ratio": 1.671642,
+      "end": 2755.0,
+      "no_speech_prob": 0.0,
+      "start": 2751.0,
+      "text": "生存的资本和方法就是叫关系"
+    },
+    {
+      "avg_logprob": -0.088029,
+      "compression_ratio": 1.671642,
+      "end": 2758.0,
+      "no_speech_prob": 0.0,
+      "start": 2755.0,
+      "text": "关系主义有关系有主义有关系有价值"
+    },
+    {
+      "avg_logprob": -0.159664,
+      "compression_ratio": 1.258065,
+      "end": 2762.0,
+      "no_speech_prob": 0.0,
+      "start": 2758.0,
+      "text": "关系就是就是什么资本的核心的核心就是权利"
+    },
+    {
+      "avg_logprob": -0.159664,
+      "compression_ratio": 1.258065,
+      "end": 2766.0,
+      "no_speech_prob": 0.0,
+      "start": 2764.0,
+      "text": "在民主社会是什么是劳动啊"
+    },
+    {
+      "avg_logprob": -0.159664,
+      "compression_ratio": 1.258065,
+      "end": 2768.0,
+      "no_speech_prob": 0.0,
+      "start": 2766.0,
+      "text": "智慧平衡啊"
+    },
+    {
+      "avg_logprob": -0.159664,
+      "compression_ratio": 1.258065,
+      "end": 2770.0,
+      "no_speech_prob": 0.0,
+      "start": 2768.0,
+      "text": "所以说他们不懂的"
+    },
+    {
+      "avg_logprob": -0.159664,
+      "compression_ratio": 1.258065,
+      "end": 2773.0,
+      "no_speech_prob": 0.0,
+      "start": 2770.0,
+      "text": "那么到底打不打台湾"
+    },
+    {
+      "avg_logprob": -0.159664,
+      "compression_ratio": 1.258065,
+      "end": 2776.0,
+      "no_speech_prob": 0.0,
+      "start": 2774.0,
+      "text": "大家走着看一定会打台湾"
+    },
+    {
+      "avg_logprob": -0.178941,
+      "compression_ratio": 1.22293,
+      "end": 2780.0,
+      "no_speech_prob": 0.0,
+      "start": 2776.0,
+      "text": "还有一个大家要看到一个最根本的问题"
+    },
+    {
+      "avg_logprob": -0.178941,
+      "compression_ratio": 1.22293,
+      "end": 2781.0,
+      "no_speech_prob": 0.0,
+      "start": 2780.0,
+      "text": "国际形势啊"
+    },
+    {
+      "avg_logprob": -0.178941,
+      "compression_ratio": 1.22293,
+      "end": 2783.0,
+      "no_speech_prob": 0.0,
+      "start": 2782.0,
+      "text": "俄乌危机"
+    },
+    {
+      "avg_logprob": -0.178941,
+      "compression_ratio": 1.22293,
+      "end": 2785.0,
+      "no_speech_prob": 0.0,
+      "start": 2784.0,
+      "text": "还有伊朗"
+    },
+    {
+      "avg_logprob": -0.178941,
+      "compression_ratio": 1.22293,
+      "end": 2787.0,
+      "no_speech_prob": 0.0,
+      "start": 2785.0,
+      "text": "几乎是共产党最大的就是这"
+    },
+    {
+      "avg_logprob": -0.178941,
+      "compression_ratio": 1.22293,
+      "end": 2793.0,
+      "no_speech_prob": 0.0,
+      "start": 2788.0,
+      "text": "就是就是俄罗斯伊朗北朝鲜的小小屁孩小国家是吧"
+    },
+    {
+      "avg_logprob": -0.197001,
+      "compression_ratio": 1.24,
+      "end": 2795.0,
+      "no_speech_prob": 0.0,
+      "start": 2793.0,
+      "text": "俄乌战争大势一去"
+    },
+    {
+      "avg_logprob": -0.197001,
+      "compression_ratio": 1.24,
+      "end": 2797.0,
+      "no_speech_prob": 0.0,
+      "start": 2795.0,
+      "text": "百分之一百"
+    },
+    {
+      "avg_logprob": -0.197001,
+      "compression_ratio": 1.24,
+      "end": 2799.0,
+      "no_speech_prob": 0.0,
+      "start": 2797.0,
+      "text": "郭文贵给你保证"
+    },
+    {
+      "avg_logprob": -0.197001,
+      "compression_ratio": 1.24,
+      "end": 2801.0,
+      "no_speech_prob": 0.0,
+      "start": 2799.0,
+      "text": "普京肛门"
+    },
+    {
+      "avg_logprob": -0.197001,
+      "compression_ratio": 1.24,
+      "end": 2802.0,
+      "no_speech_prob": 0.0,
+      "start": 2801.0,
+      "text": "臨状癌"
+    },
+    {
+      "avg_logprob": -0.197001,
+      "compression_ratio": 1.24,
+      "end": 2803.0,
+      "no_speech_prob": 0.0,
+      "start": 2802.0,
+      "text": "十日不多"
+    },
+    {
+      "avg_logprob": -0.197001,
+      "compression_ratio": 1.24,
+      "end": 2807.0,
+      "no_speech_prob": 0.0,
+      "start": 2803.0,
+      "text": "我永远愿意为我这个"
+    },
+    {
+      "avg_logprob": -0.197001,
+      "compression_ratio": 1.24,
+      "end": 2810.0,
+      "no_speech_prob": 0.0,
+      "start": 2807.0,
+      "text": "真这个情报负一百分之一万的责任"
+    },
+    {
+      "avg_logprob": -0.197001,
+      "compression_ratio": 1.24,
+      "end": 2811.0,
+      "no_speech_prob": 0.0,
+      "start": 2810.0,
+      "text": "百分之一的责任"
+    },
+    {
+      "avg_logprob": -0.230326,
+      "compression_ratio": 1.212121,
+      "end": 2816.0,
+      "no_speech_prob": 0.0,
+      "start": 2811.0,
+      "text": "如果我要有错了我要受一切之刑罚"
+    },
+    {
+      "avg_logprob": -0.230326,
+      "compression_ratio": 1.212121,
+      "end": 2821.0,
+      "no_speech_prob": 0.0,
+      "start": 2817.0,
+      "text": "第二个哈美尼伊百分之百万求大了"
+    },
+    {
+      "avg_logprob": -0.230326,
+      "compression_ratio": 1.212121,
+      "end": 2827.0,
+      "no_speech_prob": 0.0,
+      "start": 2822.0,
+      "text": "9月26号心脏手术基本完蛋"
+    },
+    {
+      "avg_logprob": -0.230326,
+      "compression_ratio": 1.212121,
+      "end": 2831.0,
+      "no_speech_prob": 0.0,
+      "start": 2828.0,
+      "text": "我前天下午前天下午我长到哥"
+    },
+    {
+      "avg_logprob": -0.230326,
+      "compression_ratio": 1.212121,
+      "end": 2833.0,
+      "no_speech_prob": 0.0,
+      "start": 2831.0,
+      "text": "我们那个七番人直播的时候给Niko"
+    },
+    {
+      "avg_logprob": -0.230326,
+      "compression_ratio": 1.212121,
+      "end": 2838.0,
+      "no_speech_prob": 0.0,
+      "start": 2834.0,
+      "text": "在这之前我给咱们的哈美尼伊的"
+    },
+    {
+      "avg_logprob": -0.230326,
+      "compression_ratio": 1.212121,
+      "end": 2840.0,
+      "no_speech_prob": 0.0,
+      "start": 2838.0,
+      "text": "最重要的这个情报提供者"
+    },
+    {
+      "avg_logprob": -0.1278,
+      "compression_ratio": 1.412556,
+      "end": 2844.0,
+      "no_speech_prob": 0.0,
+      "start": 2840.0,
+      "text": "我说哈美尼伊是不是真的是在棺材里活了"
+    },
+    {
+      "avg_logprob": -0.1278,
+      "compression_ratio": 1.412556,
+      "end": 2847.0,
+      "no_speech_prob": 0.0,
+      "start": 2845.0,
+      "text": "这个哥们好久没混戏"
+    },
+    {
+      "avg_logprob": -0.1278,
+      "compression_ratio": 1.412556,
+      "end": 2851.0,
+      "no_speech_prob": 0.0,
+      "start": 2847.0,
+      "text": "就说郭先生你跟我说的话我百分之百相信"
+    },
+    {
+      "avg_logprob": -0.1278,
+      "compression_ratio": 1.412556,
+      "end": 2854.0,
+      "no_speech_prob": 0.0,
+      "start": 2852.0,
+      "text": "我和你这么多年交道我跟你说的话"
+    },
+    {
+      "avg_logprob": -0.1278,
+      "compression_ratio": 1.412556,
+      "end": 2856.0,
+      "no_speech_prob": 0.0,
+      "start": 2854.0,
+      "text": "没有一次是假的"
+    },
+    {
+      "avg_logprob": -0.1278,
+      "compression_ratio": 1.412556,
+      "end": 2858.0,
+      "no_speech_prob": 0.0,
+      "start": 2856.0,
+      "text": "这一次是一样的"
+    },
+    {
+      "avg_logprob": -0.1278,
+      "compression_ratio": 1.412556,
+      "end": 2863.0,
+      "no_speech_prob": 0.0,
+      "start": 2861.0,
+      "text": "哈美尼伊绝对完了"
+    },
+    {
+      "avg_logprob": -0.1278,
+      "compression_ratio": 1.412556,
+      "end": 2864.0,
+      "no_speech_prob": 0.0,
+      "start": 2863.0,
+      "text": "是吧"
+    },
+    {
+      "avg_logprob": -0.1278,
+      "compression_ratio": 1.412556,
+      "end": 2865.0,
+      "no_speech_prob": 0.0,
+      "start": 2864.0,
+      "text": "哈美尼伊完了"
+    },
+    {
+      "avg_logprob": -0.1278,
+      "compression_ratio": 1.412556,
+      "end": 2867.0,
+      "no_speech_prob": 0.0,
+      "start": 2865.0,
+      "text": "俄罗斯的普京完了"
+    },
+    {
+      "avg_logprob": -0.1278,
+      "compression_ratio": 1.412556,
+      "end": 2869.0,
+      "no_speech_prob": 0.0,
+      "start": 2867.0,
+      "text": "俄罗斯被解体了"
+    },
+    {
+      "avg_logprob": -0.276972,
+      "compression_ratio": 1.102564,
+      "end": 2870.0,
+      "no_speech_prob": 0.0,
+      "start": 2869.0,
+      "text": "伊朗肯定完了"
+    },
+    {
+      "avg_logprob": -0.276972,
+      "compression_ratio": 1.102564,
+      "end": 2871.0,
+      "no_speech_prob": 0.0,
+      "start": 2870.0,
+      "text": "啊"
+    },
+    {
+      "avg_logprob": -0.276972,
+      "compression_ratio": 1.102564,
+      "end": 2872.0,
+      "no_speech_prob": 0.0,
+      "start": 2871.0,
+      "text": "或者是很可能"
+    },
+    {
+      "avg_logprob": -0.276972,
+      "compression_ratio": 1.102564,
+      "end": 2874.0,
+      "no_speech_prob": 0.0,
+      "start": 2872.0,
+      "text": "诸家回家民主的社会"
+    },
+    {
+      "avg_logprob": -0.276972,
+      "compression_ratio": 1.102564,
+      "end": 2877.0,
+      "no_speech_prob": 0.0,
+      "start": 2875.0,
+      "text": "我就纳闷了金山帮能干啥呢"
+    },
+    {
+      "avg_logprob": -0.276972,
+      "compression_ratio": 1.102564,
+      "end": 2879.0,
+      "no_speech_prob": 0.0,
+      "start": 2878.0,
+      "text": "金山帮能干啥呀"
+    },
+    {
+      "avg_logprob": -0.276972,
+      "compression_ratio": 1.102564,
+      "end": 2881.0,
+      "no_speech_prob": 0.0,
+      "start": 2880.0,
+      "text": "是吧"
+    },
+    {
+      "avg_logprob": -0.140136,
+      "compression_ratio": 1.016129,
+      "end": 2891.0,
+      "no_speech_prob": 0.0,
+      "start": 2881.0,
+      "text": "我从来不认为美国和南韩有意志会主动的去把北韩北朝鲜给灭了"
+    },
+    {
+      "avg_logprob": -0.140136,
+      "compression_ratio": 1.016129,
+      "end": 2892.0,
+      "no_speech_prob": 0.0,
+      "start": 2891.0,
+      "text": "给收过来啊"
+    },
+    {
+      "avg_logprob": -0.140136,
+      "compression_ratio": 1.016129,
+      "end": 2894.0,
+      "no_speech_prob": 0.0,
+      "start": 2892.0,
+      "text": "但是我最近我有感觉"
+    },
+    {
+      "avg_logprob": -0.136131,
+      "compression_ratio": 1.1,
+      "end": 2904.0,
+      "no_speech_prob": 0.0,
+      "start": 2894.0,
+      "text": "美国被南韩在小金山帮他在不断的得瑟继续挑战底线"
+    },
+    {
+      "avg_logprob": -0.136131,
+      "compression_ratio": 1.1,
+      "end": 2907.0,
+      "no_speech_prob": 0.0,
+      "start": 2904.0,
+      "text": "还想重启他的核反应堆"
+    },
+    {
+      "avg_logprob": -0.136131,
+      "compression_ratio": 1.1,
+      "end": 2909.0,
+      "no_speech_prob": 0.0,
+      "start": 2907.0,
+      "text": "由于俄乌战争"
+    },
+    {
+      "avg_logprob": -0.136131,
+      "compression_ratio": 1.1,
+      "end": 2912.0,
+      "no_speech_prob": 0.0,
+      "start": 2909.0,
+      "text": "乌克兰激发了南韩人民的自信和斗志"
+    },
+    {
+      "avg_logprob": -0.147428,
+      "compression_ratio": 1.03125,
+      "end": 2917.0,
+      "no_speech_prob": 0.0,
+      "start": 2912.0,
+      "text": "永远活在那所谓的百万门的大炮前面"
+    },
+    {
+      "avg_logprob": -0.147428,
+      "compression_ratio": 1.03125,
+      "end": 2919.0,
+      "no_speech_prob": 0.0,
+      "start": 2917.0,
+      "text": "还不如他搞一下呢"
+    },
+    {
+      "avg_logprob": -0.147428,
+      "compression_ratio": 1.03125,
+      "end": 2920.0,
+      "no_speech_prob": 0.0,
+      "start": 2919.0,
+      "text": "是吧"
+    },
+    {
+      "avg_logprob": -0.147428,
+      "compression_ratio": 1.03125,
+      "end": 2922.0,
+      "no_speech_prob": 0.0,
+      "start": 2920.0,
+      "text": "绝对的大大的"
+    },
+    {
+      "avg_logprob": -0.147428,
+      "compression_ratio": 1.03125,
+      "end": 2926.0,
+      "no_speech_prob": 0.0,
+      "start": 2922.0,
+      "text": "强大了南韩防卫自己的信心"
+    },
+    {
+      "avg_logprob": -0.128809,
+      "compression_ratio": 1.202765,
+      "end": 2930.0,
+      "no_speech_prob": 0.0,
+      "start": 2926.0,
+      "text": "说不得哪一会儿就醒来北朝鲜结放了"
+    },
+    {
+      "avg_logprob": -0.128809,
+      "compression_ratio": 1.202765,
+      "end": 2935.0,
+      "no_speech_prob": 0.0,
+      "start": 2932.0,
+      "text": "如果我是南韩总统我一定这么干"
+    },
+    {
+      "avg_logprob": -0.128809,
+      "compression_ratio": 1.202765,
+      "end": 2938.0,
+      "no_speech_prob": 0.0,
+      "start": 2937.0,
+      "text": "我不等你来了"
+    },
+    {
+      "avg_logprob": -0.128809,
+      "compression_ratio": 1.202765,
+      "end": 2941.0,
+      "no_speech_prob": 0.0,
+      "start": 2938.0,
+      "text": "我天天活着你百万大炮下面威胁我"
+    },
+    {
+      "avg_logprob": -0.128809,
+      "compression_ratio": 1.202765,
+      "end": 2942.0,
+      "no_speech_prob": 0.0,
+      "start": 2941.0,
+      "text": "老子主动出击"
+    },
+    {
+      "avg_logprob": -0.128809,
+      "compression_ratio": 1.202765,
+      "end": 2943.0,
+      "no_speech_prob": 0.0,
+      "start": 2942.0,
+      "text": "是吧"
+    },
+    {
+      "avg_logprob": -0.128809,
+      "compression_ratio": 1.202765,
+      "end": 2945.0,
+      "no_speech_prob": 0.0,
+      "start": 2943.0,
+      "text": "多好的机会啊"
+    },
+    {
+      "avg_logprob": -0.128809,
+      "compression_ratio": 1.202765,
+      "end": 2948.0,
+      "no_speech_prob": 0.0,
+      "start": 2946.0,
+      "text": "如果北韩再被拿下"
+    },
+    {
+      "avg_logprob": -0.128809,
+      "compression_ratio": 1.202765,
+      "end": 2949.0,
+      "no_speech_prob": 0.0,
+      "start": 2948.0,
+      "text": "我就纳闷的"
+    },
+    {
+      "avg_logprob": -0.128809,
+      "compression_ratio": 1.202765,
+      "end": 2950.0,
+      "no_speech_prob": 0.0,
+      "start": 2949.0,
+      "text": "共产党你靠啥呀"
+    },
+    {
+      "avg_logprob": -0.128809,
+      "compression_ratio": 1.202765,
+      "end": 2951.0,
+      "no_speech_prob": 0.0,
+      "start": 2950.0,
+      "text": "对吧"
+    },
+    {
+      "avg_logprob": -2.079028,
+      "compression_ratio": 0.272727,
+      "end": 2968.0,
+      "no_speech_prob": 0.0,
+      "start": 2956.0,
+      "text": "嗯"
+    },
+    {
+      "avg_logprob": -0.156762,
+      "compression_ratio": 30.272727,
+      "end": 2985.76,
+      "no_speech_prob": 0.0,
+      "start": 2968.0,
+      "text": "trades"
+    },
+    {
+      "avg_logprob": -0.554091,
+      "compression_ratio": 1.14966,
+      "end": 2987.76,
+      "no_speech_prob": 0.0,
+      "start": 2985.76,
+      "text": "嗯 要我換了"
+    },
+    {
+      "avg_logprob": -0.554091,
+      "compression_ratio": 1.14966,
+      "end": 3003.9,
+      "no_speech_prob": 0.0,
+      "start": 3002.4,
+      "text": "所以說 兄弟姐妹們"
+    },
+    {
+      "avg_logprob": -0.554091,
+      "compression_ratio": 1.14966,
+      "end": 3008.76,
+      "no_speech_prob": 0.0,
+      "start": 3004.4,
+      "text": "這個西方的這個認為呀 是非常非常錯誤的"
+    },
+    {
+      "avg_logprob": -0.554091,
+      "compression_ratio": 1.14966,
+      "end": 3011.36,
+      "no_speech_prob": 0.0,
+      "start": 3009.24,
+      "text": "但同時我們也可以看到啊"
+    },
+    {
+      "avg_logprob": -0.554091,
+      "compression_ratio": 1.14966,
+      "end": 3014.24,
+      "no_speech_prob": 0.0,
+      "start": 3011.78,
+      "text": "就是說 西方這種認知的錯誤呢"
+    },
+    {
+      "avg_logprob": -0.345542,
+      "compression_ratio": 1.265823,
+      "end": 3019.74,
+      "no_speech_prob": 0.0,
+      "start": 3014.24,
+      "text": "某種程度上我認為是科學的 也是好事 為什麼"
+    },
+    {
+      "avg_logprob": -0.345542,
+      "compression_ratio": 1.265823,
+      "end": 3024.64,
+      "no_speech_prob": 0.0,
+      "start": 3020.38,
+      "text": "這就像一個發生某件事情 它需要多種因素"
+    },
+    {
+      "avg_logprob": -0.345542,
+      "compression_ratio": 1.265823,
+      "end": 3029.64,
+      "no_speech_prob": 0.0,
+      "start": 3025.24,
+      "text": "它等到他們做出雙方戰略性的錯誤決定的時候"
+    },
+    {
+      "avg_logprob": -0.345542,
+      "compression_ratio": 1.265823,
+      "end": 3033.64,
+      "no_speech_prob": 0.0,
+      "start": 3029.64,
+      "text": "就像普京 以為三天就能拿下烏克蘭"
+    },
+    {
+      "avg_logprob": -0.345542,
+      "compression_ratio": 1.265823,
+      "end": 3036.14,
+      "no_speech_prob": 0.0,
+      "start": 3033.64,
+      "text": "但是這咱們爆料哥們是好事"
+    },
+    {
+      "avg_logprob": -0.345542,
+      "compression_ratio": 1.265823,
+      "end": 3041.64,
+      "no_speech_prob": 0.0,
+      "start": 3037.24,
+      "text": "普京弱了 習就危險 共產黨就危險"
+    },
+    {
+      "avg_logprob": -0.338438,
+      "compression_ratio": 1.161765,
+      "end": 3045.94,
+      "no_speech_prob": 0.0,
+      "start": 3041.64,
+      "text": "那麼他們雙方的判斷錯誤在台灣問題上 對我們是好事"
+    },
+    {
+      "avg_logprob": -0.338438,
+      "compression_ratio": 1.161765,
+      "end": 3047.64,
+      "no_speech_prob": 0.0,
+      "start": 3045.94,
+      "text": "對我們是好事"
+    },
+    {
+      "avg_logprob": -0.338438,
+      "compression_ratio": 1.161765,
+      "end": 3052.04,
+      "no_speech_prob": 0.0,
+      "start": 3047.64,
+      "text": "我們呢 就會想得更偉大 更正確 是吧"
+    },
+    {
+      "avg_logprob": -0.338438,
+      "compression_ratio": 1.161765,
+      "end": 3054.04,
+      "no_speech_prob": 0.0,
+      "start": 3052.04,
+      "text": "有啥不好啦 是吧"
+    },
+    {
+      "avg_logprob": -0.255805,
+      "compression_ratio": 1.210762,
+      "end": 3057.54,
+      "no_speech_prob": 0.0,
+      "start": 3054.04,
+      "text": "所以說 大家走著看啊 還有我相信"
+    },
+    {
+      "avg_logprob": -0.255805,
+      "compression_ratio": 1.210762,
+      "end": 3061.74,
+      "no_speech_prob": 0.0,
+      "start": 3057.54,
+      "text": "打台灣的機率 我認為是一定會打的 而且會很快"
+    },
+    {
+      "avg_logprob": -0.255805,
+      "compression_ratio": 1.210762,
+      "end": 3065.94,
+      "no_speech_prob": 0.0,
+      "start": 3062.44,
+      "text": "西方的所謂的軍事專家呀 那些情報啊 都是亂扯的"
+    },
+    {
+      "avg_logprob": -0.255805,
+      "compression_ratio": 1.210762,
+      "end": 3069.64,
+      "no_speech_prob": 0.0,
+      "start": 3066.44,
+      "text": "沒有一個情報 可以讓你瞭解中國共產黨"
+    },
+    {
+      "avg_logprob": -0.255805,
+      "compression_ratio": 1.210762,
+      "end": 3072.84,
+      "no_speech_prob": 0.0,
+      "start": 3069.64,
+      "text": "還有 習太陽的內心世界了 只有我們"
+    },
+    {
+      "avg_logprob": -0.173914,
+      "compression_ratio": 1.218341,
+      "end": 3076.24,
+      "no_speech_prob": 0.0,
+      "start": 3072.84,
+      "text": "第三個問題"
+    },
+    {
+      "avg_logprob": -0.173914,
+      "compression_ratio": 1.218341,
+      "end": 3080.44,
+      "no_speech_prob": 0.0,
+      "start": 3076.24,
+      "text": "馬斯克最近在接受金融時報採訪時說"
+    },
+    {
+      "avg_logprob": -0.173914,
+      "compression_ratio": 1.218341,
+      "end": 3083.24,
+      "no_speech_prob": 0.0,
+      "start": 3080.44,
+      "text": "建立台灣特別行政區"
+    },
+    {
+      "avg_logprob": -0.173914,
+      "compression_ratio": 1.218341,
+      "end": 3088.44,
+      "no_speech_prob": 0.0,
+      "start": 3083.24,
+      "text": "前不久還就克里米亞和烏克蘭公投發表評論"
+    },
+    {
+      "avg_logprob": -0.173914,
+      "compression_ratio": 1.218341,
+      "end": 3093.14,
+      "no_speech_prob": 0.0,
+      "start": 3088.44,
+      "text": "他說中共要求他保證不在中共國提供星鏈通訊服務"
+    },
+    {
+      "avg_logprob": -0.173914,
+      "compression_ratio": 1.218341,
+      "end": 3095.74,
+      "no_speech_prob": 0.0,
+      "start": 3093.14,
+      "text": "七哥是否方便評論一下"
+    },
+    {
+      "avg_logprob": -0.173914,
+      "compression_ratio": 1.218341,
+      "end": 3098.74,
+      "no_speech_prob": 0.0,
+      "start": 3095.74,
+      "text": "馬斯克受中共的影響有多大"
+    },
+    {
+      "avg_logprob": -0.234494,
+      "compression_ratio": 1.29386,
+      "end": 3102.14,
+      "no_speech_prob": 0.0,
+      "start": 3098.74,
+      "text": "他的行為是否會影響其他星鏈公司"
+    },
+    {
+      "avg_logprob": -0.234494,
+      "compression_ratio": 1.29386,
+      "end": 3105.34,
+      "no_speech_prob": 0.0,
+      "start": 3102.14,
+      "text": "作為中國人提供星鏈的通訊服務呢"
+    },
+    {
+      "avg_logprob": -0.234494,
+      "compression_ratio": 1.29386,
+      "end": 3106.34,
+      "no_speech_prob": 0.0,
+      "start": 3105.34,
+      "text": "呵呵"
+    },
+    {
+      "avg_logprob": -0.234494,
+      "compression_ratio": 1.29386,
+      "end": 3113.74,
+      "no_speech_prob": 0.0,
+      "start": 3110.34,
+      "text": "兄弟姐妹們 七哥每次大直播的跟戰友們"
+    },
+    {
+      "avg_logprob": -0.234494,
+      "compression_ratio": 1.29386,
+      "end": 3115.54,
+      "no_speech_prob": 0.0,
+      "start": 3113.74,
+      "text": "這種神交的感覺啊"
+    },
+    {
+      "avg_logprob": -0.234494,
+      "compression_ratio": 1.29386,
+      "end": 3118.54,
+      "no_speech_prob": 0.0,
+      "start": 3115.54,
+      "text": "我不知道有多少戰友你們能感受到"
+    },
+    {
+      "avg_logprob": -0.234494,
+      "compression_ratio": 1.29386,
+      "end": 3122.34,
+      "no_speech_prob": 0.0,
+      "start": 3118.54,
+      "text": "反正我是一有大直播"
+    },
+    {
+      "avg_logprob": -0.234494,
+      "compression_ratio": 1.29386,
+      "end": 3124.74,
+      "no_speech_prob": 0.0,
+      "start": 3122.34,
+      "text": "我心情就很激動"
+    },
+    {
+      "avg_logprob": -0.234494,
+      "compression_ratio": 1.29386,
+      "end": 3127.84,
+      "no_speech_prob": 0.0,
+      "start": 3124.74,
+      "text": "一有大直播我就很興奮"
+    },
+    {
+      "avg_logprob": -0.359955,
+      "compression_ratio": 1.181818,
+      "end": 3131.24,
+      "no_speech_prob": 0.0,
+      "start": 3127.84,
+      "text": "昨天晚上雖然我起床五次吧"
+    },
+    {
+      "avg_logprob": -0.359955,
+      "compression_ratio": 1.181818,
+      "end": 3132.24,
+      "no_speech_prob": 0.0,
+      "start": 3131.24,
+      "text": "五次啊"
+    },
+    {
+      "avg_logprob": -0.359955,
+      "compression_ratio": 1.181818,
+      "end": 3135.44,
+      "no_speech_prob": 0.0,
+      "start": 3132.24,
+      "text": "但是我真的是很興奮很興奮啊"
+    },
+    {
+      "avg_logprob": -0.359955,
+      "compression_ratio": 1.181818,
+      "end": 3137.44,
+      "no_speech_prob": 0.0,
+      "start": 3136.44,
+      "text": "就是"
+    },
+    {
+      "avg_logprob": -0.359955,
+      "compression_ratio": 1.181818,
+      "end": 3139.14,
+      "no_speech_prob": 0.0,
+      "start": 3138.04,
+      "text": "每次"
+    },
+    {
+      "avg_logprob": -0.359955,
+      "compression_ratio": 1.181818,
+      "end": 3139.84,
+      "no_speech_prob": 0.0,
+      "start": 3139.14,
+      "text": "啊"
+    },
+    {
+      "avg_logprob": -0.359955,
+      "compression_ratio": 1.181818,
+      "end": 3140.24,
+      "no_speech_prob": 0.0,
+      "start": 3139.84,
+      "text": "大"
+    },
+    {
+      "avg_logprob": -0.359955,
+      "compression_ratio": 1.181818,
+      "end": 3142.24,
+      "no_speech_prob": 0.0,
+      "start": 3140.24,
+      "text": "準備大直播的時候"
+    },
+    {
+      "avg_logprob": -0.359955,
+      "compression_ratio": 1.181818,
+      "end": 3145.04,
+      "no_speech_prob": 0.0,
+      "start": 3142.24,
+      "text": "就像一場約會一樣啊"
+    },
+    {
+      "avg_logprob": -0.359955,
+      "compression_ratio": 1.181818,
+      "end": 3146.24,
+      "no_speech_prob": 0.0,
+      "start": 3145.64,
+      "text": "啊"
+    },
+    {
+      "avg_logprob": -0.359282,
+      "compression_ratio": 1.175,
+      "end": 3146.84,
+      "no_speech_prob": 0.0,
+      "start": 3146.24,
+      "text": "啊"
+    },
+    {
+      "avg_logprob": -0.359282,
+      "compression_ratio": 1.175,
+      "end": 3147.64,
+      "no_speech_prob": 0.0,
+      "start": 3146.84,
+      "text": "跟一個"
+    },
+    {
+      "avg_logprob": -0.359282,
+      "compression_ratio": 1.175,
+      "end": 3149.64,
+      "no_speech_prob": 0.0,
+      "start": 3147.64,
+      "text": "久違見面的知己"
+    },
+    {
+      "avg_logprob": -0.359282,
+      "compression_ratio": 1.175,
+      "end": 3150.64,
+      "no_speech_prob": 0.0,
+      "start": 3149.64,
+      "text": "啊"
+    },
+    {
+      "avg_logprob": -0.359282,
+      "compression_ratio": 1.175,
+      "end": 3152.64,
+      "no_speech_prob": 0.0,
+      "start": 3150.64,
+      "text": "要神交啊"
+    },
+    {
+      "avg_logprob": -0.359282,
+      "compression_ratio": 1.175,
+      "end": 3154.64,
+      "no_speech_prob": 0.0,
+      "start": 3152.64,
+      "text": "要兩目相對"
+    },
+    {
+      "avg_logprob": -0.359282,
+      "compression_ratio": 1.175,
+      "end": 3155.84,
+      "no_speech_prob": 0.0,
+      "start": 3154.64,
+      "text": "是吧"
+    },
+    {
+      "avg_logprob": -0.359282,
+      "compression_ratio": 1.175,
+      "end": 3158.64,
+      "no_speech_prob": 0.0,
+      "start": 3155.84,
+      "text": "然後覆摸著你的臉"
+    },
+    {
+      "avg_logprob": -0.359282,
+      "compression_ratio": 1.175,
+      "end": 3159.64,
+      "no_speech_prob": 0.0,
+      "start": 3158.64,
+      "text": "臉龐"
+    },
+    {
+      "avg_logprob": -0.359282,
+      "compression_ratio": 1.175,
+      "end": 3160.64,
+      "no_speech_prob": 0.0,
+      "start": 3159.64,
+      "text": "啊"
+    },
+    {
+      "avg_logprob": -0.359282,
+      "compression_ratio": 1.175,
+      "end": 3162.64,
+      "no_speech_prob": 0.0,
+      "start": 3160.64,
+      "text": "然後覆摸著你的頭髮"
+    },
+    {
+      "avg_logprob": -0.369415,
+      "compression_ratio": 1.131579,
+      "end": 3163.24,
+      "no_speech_prob": 0.0,
+      "start": 3162.64,
+      "text": "啊"
+    },
+    {
+      "avg_logprob": -0.369415,
+      "compression_ratio": 1.131579,
+      "end": 3164.04,
+      "no_speech_prob": 0.0,
+      "start": 3163.24,
+      "text": "慢慢的"
+    },
+    {
+      "avg_logprob": -0.369415,
+      "compression_ratio": 1.131579,
+      "end": 3165.04,
+      "no_speech_prob": 0.0,
+      "start": 3164.04,
+      "text": "慢慢的"
+    },
+    {
+      "avg_logprob": -0.369415,
+      "compression_ratio": 1.131579,
+      "end": 3167.04,
+      "no_speech_prob": 0.0,
+      "start": 3165.04,
+      "text": "親吻你的嘴唇"
+    },
+    {
+      "avg_logprob": -0.369415,
+      "compression_ratio": 1.131579,
+      "end": 3168.04,
+      "no_speech_prob": 0.0,
+      "start": 3167.04,
+      "text": "啊"
+    },
+    {
+      "avg_logprob": -0.369415,
+      "compression_ratio": 1.131579,
+      "end": 3169.04,
+      "no_speech_prob": 0.0,
+      "start": 3168.04,
+      "text": "然後呢"
+    },
+    {
+      "avg_logprob": -0.369415,
+      "compression_ratio": 1.131579,
+      "end": 3170.24,
+      "no_speech_prob": 0.0,
+      "start": 3169.04,
+      "text": "閉上眼睛"
+    },
+    {
+      "avg_logprob": -0.369415,
+      "compression_ratio": 1.131579,
+      "end": 3172.04,
+      "no_speech_prob": 0.0,
+      "start": 3170.24,
+      "text": "感受對方的溫度"
+    },
+    {
+      "avg_logprob": -0.369415,
+      "compression_ratio": 1.131579,
+      "end": 3172.64,
+      "no_speech_prob": 0.0,
+      "start": 3172.04,
+      "text": "啊"
+    },
+    {
+      "avg_logprob": -0.369415,
+      "compression_ratio": 1.131579,
+      "end": 3173.64,
+      "no_speech_prob": 0.0,
+      "start": 3172.64,
+      "text": "然後呢"
+    },
+    {
+      "avg_logprob": -0.369415,
+      "compression_ratio": 1.131579,
+      "end": 3176.04,
+      "no_speech_prob": 0.0,
+      "start": 3173.64,
+      "text": "盡情的釋放自己的感情"
+    },
+    {
+      "avg_logprob": -0.371811,
+      "compression_ratio": 1.105263,
+      "end": 3177.44,
+      "no_speech_prob": 0.0,
+      "start": 3176.04,
+      "text": "哭啊"
+    },
+    {
+      "avg_logprob": -0.371811,
+      "compression_ratio": 1.105263,
+      "end": 3178.04,
+      "no_speech_prob": 0.0,
+      "start": 3177.44,
+      "text": "笑啊"
+    },
+    {
+      "avg_logprob": -0.371811,
+      "compression_ratio": 1.105263,
+      "end": 3178.44,
+      "no_speech_prob": 0.0,
+      "start": 3178.04,
+      "text": "感動啊"
+    },
+    {
+      "avg_logprob": -0.371811,
+      "compression_ratio": 1.105263,
+      "end": 3179.44,
+      "no_speech_prob": 0.0,
+      "start": 3178.44,
+      "text": "然後呢"
+    },
+    {
+      "avg_logprob": -0.371811,
+      "compression_ratio": 1.105263,
+      "end": 3181.44,
+      "no_speech_prob": 0.0,
+      "start": 3179.44,
+      "text": "對天啊"
+    },
+    {
+      "avg_logprob": -0.371811,
+      "compression_ratio": 1.105263,
+      "end": 3182.44,
+      "no_speech_prob": 0.0,
+      "start": 3181.44,
+      "text": "因私"
+    },
+    {
+      "avg_logprob": -0.371811,
+      "compression_ratio": 1.105263,
+      "end": 3183.44,
+      "no_speech_prob": 0.0,
+      "start": 3182.44,
+      "text": "因失"
+    },
+    {
+      "avg_logprob": -0.371811,
+      "compression_ratio": 1.105263,
+      "end": 3185.44,
+      "no_speech_prob": 0.0,
+      "start": 3183.44,
+      "text": "做詞"
+    },
+    {
+      "avg_logprob": -0.371811,
+      "compression_ratio": 1.105263,
+      "end": 3186.44,
+      "no_speech_prob": 0.0,
+      "start": 3185.44,
+      "text": "是吧"
+    },
+    {
+      "avg_logprob": -0.371811,
+      "compression_ratio": 1.105263,
+      "end": 3188.44,
+      "no_speech_prob": 0.0,
+      "start": 3186.44,
+      "text": "甚至不會說也得弄幾個是吧"
+    },
+    {
+      "avg_logprob": -0.371811,
+      "compression_ratio": 1.105263,
+      "end": 3189.44,
+      "no_speech_prob": 0.0,
+      "start": 3188.44,
+      "text": "改面杖子"
+    },
+    {
+      "avg_logprob": -0.371811,
+      "compression_ratio": 1.105263,
+      "end": 3191.44,
+      "no_speech_prob": 0.0,
+      "start": 3189.44,
+      "text": "麵條"
+    },
+    {
+      "avg_logprob": -0.371811,
+      "compression_ratio": 1.105263,
+      "end": 3192.44,
+      "no_speech_prob": 0.0,
+      "start": 3191.44,
+      "text": "蘋果"
+    },
+    {
+      "avg_logprob": -0.371811,
+      "compression_ratio": 1.105263,
+      "end": 3193.44,
+      "no_speech_prob": 0.0,
+      "start": 3192.44,
+      "text": "也亂喊兩嗓子"
+    },
+    {
+      "avg_logprob": -0.304478,
+      "compression_ratio": 1.360465,
+      "end": 3194.84,
+      "no_speech_prob": 0.0,
+      "start": 3193.44,
+      "text": "對著大地"
+    },
+    {
+      "avg_logprob": -0.304478,
+      "compression_ratio": 1.360465,
+      "end": 3196.24,
+      "no_speech_prob": 0.0,
+      "start": 3194.84,
+      "text": "低聲的聲音"
+    },
+    {
+      "avg_logprob": -0.304478,
+      "compression_ratio": 1.360465,
+      "end": 3196.84,
+      "no_speech_prob": 0.0,
+      "start": 3196.24,
+      "text": "啊"
+    },
+    {
+      "avg_logprob": -0.304478,
+      "compression_ratio": 1.360465,
+      "end": 3199.84,
+      "no_speech_prob": 0.0,
+      "start": 3196.84,
+      "text": "說出自己的擔心和痛苦和恐懼"
+    },
+    {
+      "avg_logprob": -0.304478,
+      "compression_ratio": 1.360465,
+      "end": 3200.64,
+      "no_speech_prob": 0.0,
+      "start": 3199.84,
+      "text": "啊"
+    },
+    {
+      "avg_logprob": -0.304478,
+      "compression_ratio": 1.360465,
+      "end": 3201.84,
+      "no_speech_prob": 0.0,
+      "start": 3200.64,
+      "text": "這種感覺啊"
+    },
+    {
+      "avg_logprob": -0.304478,
+      "compression_ratio": 1.360465,
+      "end": 3203.64,
+      "no_speech_prob": 0.0,
+      "start": 3201.84,
+      "text": "就像跟情人約會一樣"
+    },
+    {
+      "avg_logprob": -0.304478,
+      "compression_ratio": 1.360465,
+      "end": 3203.84,
+      "no_speech_prob": 0.0,
+      "start": 3203.64,
+      "text": "啊"
+    },
+    {
+      "avg_logprob": -0.304478,
+      "compression_ratio": 1.360465,
+      "end": 3206.24,
+      "no_speech_prob": 0.0,
+      "start": 3203.84,
+      "text": "當然後半後半路就別說了啊"
+    },
+    {
+      "avg_logprob": -0.304478,
+      "compression_ratio": 1.360465,
+      "end": 3208.84,
+      "no_speech_prob": 0.0,
+      "start": 3206.24,
+      "text": "就是比較身體上出大汗的事了啊"
+    },
+    {
+      "avg_logprob": -0.304478,
+      "compression_ratio": 1.360465,
+      "end": 3211.44,
+      "no_speech_prob": 0.0,
+      "start": 3208.84,
+      "text": "所以說兄弟姐妹們"
+    },
+    {
+      "avg_logprob": -0.304478,
+      "compression_ratio": 1.360465,
+      "end": 3213.84,
+      "no_speech_prob": 0.0,
+      "start": 3211.44,
+      "text": "就像你們談這個問題的時候呢"
+    },
+    {
+      "avg_logprob": -0.304478,
+      "compression_ratio": 1.360465,
+      "end": 3214.84,
+      "no_speech_prob": 0.0,
+      "start": 3213.84,
+      "text": "我最想"
+    },
+    {
+      "avg_logprob": -0.304478,
+      "compression_ratio": 1.360465,
+      "end": 3216.44,
+      "no_speech_prob": 0.0,
+      "start": 3214.84,
+      "text": "大家就是"
+    },
+    {
+      "avg_logprob": -0.304478,
+      "compression_ratio": 1.360465,
+      "end": 3217.64,
+      "no_speech_prob": 0.0,
+      "start": 3216.44,
+      "text": "大家這個問題"
+    },
+    {
+      "avg_logprob": -0.304478,
+      "compression_ratio": 1.360465,
+      "end": 3219.84,
+      "no_speech_prob": 0.0,
+      "start": 3217.64,
+      "text": "我們的三票老亨"
+    },
+    {
+      "avg_logprob": -0.304478,
+      "compression_ratio": 1.360465,
+      "end": 3221.44,
+      "no_speech_prob": 0.0,
+      "start": 3219.84,
+      "text": "泰山兄啊"
+    },
+    {
+      "avg_logprob": -0.304478,
+      "compression_ratio": 1.360465,
+      "end": 3222.84,
+      "no_speech_prob": 0.0,
+      "start": 3221.44,
+      "text": "還有我們的頑童"
+    },
+    {
+      "avg_logprob": -0.288477,
+      "compression_ratio": 1.283951,
+      "end": 3224.44,
+      "no_speech_prob": 0.0,
+      "start": 3222.84,
+      "text": "就整理都特別好"
+    },
+    {
+      "avg_logprob": -0.288477,
+      "compression_ratio": 1.283951,
+      "end": 3225.64,
+      "no_speech_prob": 0.0,
+      "start": 3224.44,
+      "text": "每次都是不一樣"
+    },
+    {
+      "avg_logprob": -0.288477,
+      "compression_ratio": 1.283951,
+      "end": 3226.84,
+      "no_speech_prob": 0.0,
+      "start": 3225.64,
+      "text": "都抓住重點"
+    },
+    {
+      "avg_logprob": -0.288477,
+      "compression_ratio": 1.283951,
+      "end": 3228.44,
+      "no_speech_prob": 0.0,
+      "start": 3226.84,
+      "text": "而且都很棒的啊"
+    },
+    {
+      "avg_logprob": -0.288477,
+      "compression_ratio": 1.283951,
+      "end": 3230.44,
+      "no_speech_prob": 0.0,
+      "start": 3228.44,
+      "text": "站位很高啊"
+    },
+    {
+      "avg_logprob": -0.288477,
+      "compression_ratio": 1.283951,
+      "end": 3233.04,
+      "no_speech_prob": 0.0,
+      "start": 3230.44,
+      "text": "甚至他答案"
+    },
+    {
+      "avg_logprob": -0.288477,
+      "compression_ratio": 1.283951,
+      "end": 3235.04,
+      "no_speech_prob": 0.0,
+      "start": 3233.04,
+      "text": "他們知道的答案比我還高"
+    },
+    {
+      "avg_logprob": -0.288477,
+      "compression_ratio": 1.283951,
+      "end": 3236.64,
+      "no_speech_prob": 0.0,
+      "start": 3235.04,
+      "text": "只是我的嘴嘛"
+    },
+    {
+      "avg_logprob": -0.288477,
+      "compression_ratio": 1.283951,
+      "end": 3238.84,
+      "no_speech_prob": 0.0,
+      "start": 3236.64,
+      "text": "就利用我的嘴說說就可能啊"
+    },
+    {
+      "avg_logprob": -0.288477,
+      "compression_ratio": 1.283951,
+      "end": 3240.84,
+      "no_speech_prob": 0.0,
+      "start": 3238.84,
+      "text": "我這人比較不要臉"
+    },
+    {
+      "avg_logprob": -0.288477,
+      "compression_ratio": 1.283951,
+      "end": 3242.24,
+      "no_speech_prob": 0.0,
+      "start": 3240.84,
+      "text": "敢說"
+    },
+    {
+      "avg_logprob": -0.288477,
+      "compression_ratio": 1.283951,
+      "end": 3243.04,
+      "no_speech_prob": 0.0,
+      "start": 3242.24,
+      "text": "那"
+    },
+    {
+      "avg_logprob": -0.288477,
+      "compression_ratio": 1.283951,
+      "end": 3244.04,
+      "no_speech_prob": 0.0,
+      "start": 3243.04,
+      "text": "那麼"
+    },
+    {
+      "avg_logprob": -0.288477,
+      "compression_ratio": 1.283951,
+      "end": 3246.24,
+      "no_speech_prob": 0.0,
+      "start": 3244.04,
+      "text": "這個答案實際上非常簡單"
+    },
+    {
+      "avg_logprob": -0.288477,
+      "compression_ratio": 1.283951,
+      "end": 3248.24,
+      "no_speech_prob": 0.0,
+      "start": 3246.24,
+      "text": "你覺得"
+    },
+    {
+      "avg_logprob": -0.288477,
+      "compression_ratio": 1.283951,
+      "end": 3249.84,
+      "no_speech_prob": 0.0,
+      "start": 3248.24,
+      "text": "艾倫馬斯克的目的在幹什麼"
+    },
+    {
+      "avg_logprob": -0.305381,
+      "compression_ratio": 1.107692,
+      "end": 3251.44,
+      "no_speech_prob": 0.0,
+      "start": 3249.84,
+      "text": "嘛"
+    },
+    {
+      "avg_logprob": -0.305381,
+      "compression_ratio": 1.107692,
+      "end": 3255.24,
+      "no_speech_prob": 0.0,
+      "start": 3251.44,
+      "text": "艾倫馬斯克擁有了世界上所有的美女"
+    },
+    {
+      "avg_logprob": -0.305381,
+      "compression_ratio": 1.107692,
+      "end": 3258.44,
+      "no_speech_prob": 0.0,
+      "start": 3256.44,
+      "text": "他已經被意為超人"
+    },
+    {
+      "avg_logprob": -0.305381,
+      "compression_ratio": 1.107692,
+      "end": 3265.84,
+      "no_speech_prob": 0.0,
+      "start": 3260.44,
+      "text": "他的私人公司的財產啊高過你知道的所有的上市公司"
+    },
+    {
+      "avg_logprob": -0.223709,
+      "compression_ratio": 0.991304,
+      "end": 3271.44,
+      "no_speech_prob": 0.0,
+      "start": 3265.84,
+      "text": "他在科技上一定是神奇的人物啊"
+    },
+    {
+      "avg_logprob": -0.223709,
+      "compression_ratio": 0.991304,
+      "end": 3275.44,
+      "no_speech_prob": 0.0,
+      "start": 3271.44,
+      "text": "你覺得艾倫馬斯克做這些事情一切為了什麼"
+    },
+    {
+      "avg_logprob": -0.223709,
+      "compression_ratio": 0.991304,
+      "end": 3276.44,
+      "no_speech_prob": 0.0,
+      "start": 3275.44,
+      "text": "我想看留言"
+    },
+    {
+      "avg_logprob": -0.422173,
+      "compression_ratio": 1.0,
+      "end": 3277.44,
+      "no_speech_prob": 0.0,
+      "start": 3276.44,
+      "text": "兄弟姐妹們"
+    },
+    {
+      "avg_logprob": -0.422173,
+      "compression_ratio": 1.0,
+      "end": 3284.04,
+      "no_speech_prob": 0.0,
+      "start": 3283.04,
+      "text": "啊"
+    },
+    {
+      "avg_logprob": -0.422173,
+      "compression_ratio": 1.0,
+      "end": 3285.04,
+      "no_speech_prob": 0.0,
+      "start": 3284.04,
+      "text": "他想幹什麼"
+    },
+    {
+      "avg_logprob": -0.422173,
+      "compression_ratio": 1.0,
+      "end": 3290.04,
+      "no_speech_prob": 0.0,
+      "start": 3289.04,
+      "text": "他的星鏈"
+    },
+    {
+      "avg_logprob": -0.422173,
+      "compression_ratio": 1.0,
+      "end": 3295.04,
+      "no_speech_prob": 0.0,
+      "start": 3292.04,
+      "text": "共產黨不讓他保證不能在中國用星鏈"
+    },
+    {
+      "avg_logprob": -0.422173,
+      "compression_ratio": 1.0,
+      "end": 3298.04,
+      "no_speech_prob": 0.0,
+      "start": 3295.04,
+      "text": "他收買推特私有化"
+    },
+    {
+      "avg_logprob": -0.283042,
+      "compression_ratio": 1.150235,
+      "end": 3299.04,
+      "no_speech_prob": 0.0,
+      "start": 3298.04,
+      "text": "啊"
+    },
+    {
+      "avg_logprob": -0.283042,
+      "compression_ratio": 1.150235,
+      "end": 3299.64,
+      "no_speech_prob": 0.0,
+      "start": 3299.04,
+      "text": "Spicy"
+    },
+    {
+      "avg_logprob": -0.283042,
+      "compression_ratio": 1.150235,
+      "end": 3300.64,
+      "no_speech_prob": 0.0,
+      "start": 3299.64,
+      "text": "腦鏈"
+    },
+    {
+      "avg_logprob": -0.283042,
+      "compression_ratio": 1.150235,
+      "end": 3303.44,
+      "no_speech_prob": 0.0,
+      "start": 3301.84,
+      "text": "地下工程轉地機"
+    },
+    {
+      "avg_logprob": -0.283042,
+      "compression_ratio": 1.150235,
+      "end": 3305.04,
+      "no_speech_prob": 0.0,
+      "start": 3303.44,
+      "text": "都是私人公司"
+    },
+    {
+      "avg_logprob": -0.283042,
+      "compression_ratio": 1.150235,
+      "end": 3307.64,
+      "no_speech_prob": 0.0,
+      "start": 3307.04,
+      "text": "啊"
+    },
+    {
+      "avg_logprob": -0.283042,
+      "compression_ratio": 1.150235,
+      "end": 3308.64,
+      "no_speech_prob": 0.0,
+      "start": 3307.64,
+      "text": "兄弟姐妹們"
+    },
+    {
+      "avg_logprob": -0.283042,
+      "compression_ratio": 1.150235,
+      "end": 3310.24,
+      "no_speech_prob": 0.0,
+      "start": 3308.64,
+      "text": "他在核心目的是幹什麼"
+    },
+    {
+      "avg_logprob": -0.283042,
+      "compression_ratio": 1.150235,
+      "end": 3311.24,
+      "no_speech_prob": 0.0,
+      "start": 3310.24,
+      "text": "是他瘋了嗎"
+    },
+    {
+      "avg_logprob": -0.283042,
+      "compression_ratio": 1.150235,
+      "end": 3313.64,
+      "no_speech_prob": 0.0,
+      "start": 3312.84,
+      "text": "還是他"
+    },
+    {
+      "avg_logprob": -0.283042,
+      "compression_ratio": 1.150235,
+      "end": 3316.24,
+      "no_speech_prob": 0.0,
+      "start": 3313.64,
+      "text": "他參與了烏克蘭的所謂的"
+    },
+    {
+      "avg_logprob": -0.283042,
+      "compression_ratio": 1.150235,
+      "end": 3317.44,
+      "no_speech_prob": 0.0,
+      "start": 3316.24,
+      "text": "戰爭調節"
+    },
+    {
+      "avg_logprob": -0.283042,
+      "compression_ratio": 1.150235,
+      "end": 3318.44,
+      "no_speech_prob": 0.0,
+      "start": 3317.44,
+      "text": "地域政治"
+    },
+    {
+      "avg_logprob": -0.283042,
+      "compression_ratio": 1.150235,
+      "end": 3320.84,
+      "no_speech_prob": 0.0,
+      "start": 3318.44,
+      "text": "跟共產黨講述啊"
+    },
+    {
+      "avg_logprob": -0.283042,
+      "compression_ratio": 1.150235,
+      "end": 3323.64,
+      "no_speech_prob": 0.0,
+      "start": 3321.84,
+      "text": "批評美國民主黨"
+    },
+    {
+      "avg_logprob": -0.283042,
+      "compression_ratio": 1.150235,
+      "end": 3326.24,
+      "no_speech_prob": 0.0,
+      "start": 3324.64,
+      "text": "支持美國共和黨"
+    },
+    {
+      "avg_logprob": -0.267838,
+      "compression_ratio": 1.177419,
+      "end": 3327.84,
+      "no_speech_prob": 0.0,
+      "start": 3326.24,
+      "text": "他想幹啥"
+    },
+    {
+      "avg_logprob": -0.267838,
+      "compression_ratio": 1.177419,
+      "end": 3333.64,
+      "no_speech_prob": 0.0,
+      "start": 3333.24,
+      "text": "啊"
+    },
+    {
+      "avg_logprob": -0.267838,
+      "compression_ratio": 1.177419,
+      "end": 3336.84,
+      "no_speech_prob": 0.0,
+      "start": 3335.44,
+      "text": "我看看大家想幹啥"
+    },
+    {
+      "avg_logprob": -0.267838,
+      "compression_ratio": 1.177419,
+      "end": 3339.24,
+      "no_speech_prob": 0.0,
+      "start": 3337.44,
+      "text": "為了以後忽悠中共嗎"
+    },
+    {
+      "avg_logprob": -0.267838,
+      "compression_ratio": 1.177419,
+      "end": 3341.64,
+      "no_speech_prob": 0.0,
+      "start": 3339.24,
+      "text": "一切為了孩子撤回投資"
+    },
+    {
+      "avg_logprob": -0.267838,
+      "compression_ratio": 1.177419,
+      "end": 3344.44,
+      "no_speech_prob": 0.0,
+      "start": 3343.44,
+      "text": "上太空嗎"
+    },
+    {
+      "avg_logprob": -0.267838,
+      "compression_ratio": 1.177419,
+      "end": 3345.34,
+      "no_speech_prob": 0.0,
+      "start": 3344.44,
+      "text": "自我為神"
+    },
+    {
+      "avg_logprob": -0.267838,
+      "compression_ratio": 1.177419,
+      "end": 3346.04,
+      "no_speech_prob": 0.0,
+      "start": 3345.34,
+      "text": "安全"
+    },
+    {
+      "avg_logprob": -0.267838,
+      "compression_ratio": 1.177419,
+      "end": 3347.04,
+      "no_speech_prob": 0.0,
+      "start": 3346.04,
+      "text": "世界和平"
+    },
+    {
+      "avg_logprob": -0.267838,
+      "compression_ratio": 1.177419,
+      "end": 3349.24,
+      "no_speech_prob": 0.0,
+      "start": 3348.04,
+      "text": "和平才是商人"
+    },
+    {
+      "avg_logprob": -0.267838,
+      "compression_ratio": 1.177419,
+      "end": 3351.44,
+      "no_speech_prob": 0.0,
+      "start": 3349.24,
+      "text": "生命的長度普及滅共"
+    },
+    {
+      "avg_logprob": -0.267838,
+      "compression_ratio": 1.177419,
+      "end": 3353.34,
+      "no_speech_prob": 0.0,
+      "start": 3352.24,
+      "text": "推倒防火牆"
+    },
+    {
+      "avg_logprob": -0.267838,
+      "compression_ratio": 1.177419,
+      "end": 3355.44,
+      "no_speech_prob": 0.0,
+      "start": 3353.74,
+      "text": "拖世間消滅獨裁"
+    },
+    {
+      "avg_logprob": -0.431947,
+      "compression_ratio": 1.224242,
+      "end": 3357.24,
+      "no_speech_prob": 0.0,
+      "start": 3356.24,
+      "text": "啊"
+    },
+    {
+      "avg_logprob": -0.431947,
+      "compression_ratio": 1.224242,
+      "end": 3357.84,
+      "no_speech_prob": 0.0,
+      "start": 3357.24,
+      "text": "中國市場"
+    },
+    {
+      "avg_logprob": -0.431947,
+      "compression_ratio": 1.224242,
+      "end": 3358.84,
+      "no_speech_prob": 0.0,
+      "start": 3357.84,
+      "text": "統治全世界"
+    },
+    {
+      "avg_logprob": -0.431947,
+      "compression_ratio": 1.224242,
+      "end": 3361.84,
+      "no_speech_prob": 0.0,
+      "start": 3360.64,
+      "text": "他在麻痹中共"
+    },
+    {
+      "avg_logprob": -0.431947,
+      "compression_ratio": 1.224242,
+      "end": 3362.44,
+      "no_speech_prob": 0.0,
+      "start": 3361.84,
+      "text": "政治"
+    },
+    {
+      "avg_logprob": -0.431947,
+      "compression_ratio": 1.224242,
+      "end": 3362.84,
+      "no_speech_prob": 0.0,
+      "start": 3362.44,
+      "text": "政治"
+    },
+    {
+      "avg_logprob": -0.431947,
+      "compression_ratio": 1.224242,
+      "end": 3363.44,
+      "no_speech_prob": 0.0,
+      "start": 3362.84,
+      "text": "政治"
+    },
+    {
+      "avg_logprob": -0.431947,
+      "compression_ratio": 1.224242,
+      "end": 3363.64,
+      "no_speech_prob": 0.0,
+      "start": 3363.44,
+      "text": "啊"
+    },
+    {
+      "avg_logprob": -0.431947,
+      "compression_ratio": 1.224242,
+      "end": 3363.84,
+      "no_speech_prob": 0.0,
+      "start": 3363.64,
+      "text": "Rock"
+    },
+    {
+      "avg_logprob": -0.431947,
+      "compression_ratio": 1.224242,
+      "end": 3364.64,
+      "no_speech_prob": 0.0,
+      "start": 3363.84,
+      "text": "叫政治"
+    },
+    {
+      "avg_logprob": -0.431947,
+      "compression_ratio": 1.224242,
+      "end": 3366.24,
+      "no_speech_prob": 0.0,
+      "start": 3365.14,
+      "text": "飛天洪珠俠"
+    },
+    {
+      "avg_logprob": -0.431947,
+      "compression_ratio": 1.224242,
+      "end": 3367.24,
+      "no_speech_prob": 0.0,
+      "start": 3366.24,
+      "text": "緩兵之計"
+    },
+    {
+      "avg_logprob": -0.431947,
+      "compression_ratio": 1.224242,
+      "end": 3368.04,
+      "no_speech_prob": 0.0,
+      "start": 3367.24,
+      "text": "小灰灰"
+    },
+    {
+      "avg_logprob": -0.431947,
+      "compression_ratio": 1.224242,
+      "end": 3368.84,
+      "no_speech_prob": 0.0,
+      "start": 3368.04,
+      "text": "釣魚之法"
+    },
+    {
+      "avg_logprob": -0.431947,
+      "compression_ratio": 1.224242,
+      "end": 3369.34,
+      "no_speech_prob": 0.0,
+      "start": 3368.84,
+      "text": "啊"
+    },
+    {
+      "avg_logprob": -0.431947,
+      "compression_ratio": 1.224242,
+      "end": 3370.04,
+      "no_speech_prob": 0.0,
+      "start": 3369.34,
+      "text": "天下圍攻"
+    },
+    {
+      "avg_logprob": -0.431947,
+      "compression_ratio": 1.224242,
+      "end": 3371.64,
+      "no_speech_prob": 0.0,
+      "start": 3370.04,
+      "text": "講的是政治啦"
+    },
+    {
+      "avg_logprob": -0.431947,
+      "compression_ratio": 1.224242,
+      "end": 3372.44,
+      "no_speech_prob": 0.0,
+      "start": 3371.64,
+      "text": "政治啦"
+    },
+    {
+      "avg_logprob": -0.431947,
+      "compression_ratio": 1.224242,
+      "end": 3373.04,
+      "no_speech_prob": 0.0,
+      "start": 3372.44,
+      "text": "政治"
+    },
+    {
+      "avg_logprob": -0.431947,
+      "compression_ratio": 1.224242,
+      "end": 3374.64,
+      "no_speech_prob": 0.0,
+      "start": 3373.04,
+      "text": "政治是什麼呢"
+    },
+    {
+      "avg_logprob": -0.431947,
+      "compression_ratio": 1.224242,
+      "end": 3376.04,
+      "no_speech_prob": 0.0,
+      "start": 3375.44,
+      "text": "生意"
+    },
+    {
+      "avg_logprob": -0.454144,
+      "compression_ratio": 1.0,
+      "end": 3377.04,
+      "no_speech_prob": 0.0,
+      "start": 3376.04,
+      "text": "滅共"
+    },
+    {
+      "avg_logprob": -0.454144,
+      "compression_ratio": 1.0,
+      "end": 3378.24,
+      "no_speech_prob": 0.0,
+      "start": 3377.04,
+      "text": "金山頭"
+    },
+    {
+      "avg_logprob": -0.454144,
+      "compression_ratio": 1.0,
+      "end": 3378.64,
+      "no_speech_prob": 0.0,
+      "start": 3378.24,
+      "text": "改變世界"
+    },
+    {
+      "avg_logprob": -0.454144,
+      "compression_ratio": 1.0,
+      "end": 3381.44,
+      "no_speech_prob": 0.0,
+      "start": 3378.64,
+      "text": "被抓住積極"
+    },
+    {
+      "avg_logprob": -0.454144,
+      "compression_ratio": 1.0,
+      "end": 3381.64,
+      "no_speech_prob": 0.0,
+      "start": 3381.44,
+      "text": "啊"
+    },
+    {
+      "avg_logprob": -0.454144,
+      "compression_ratio": 1.0,
+      "end": 3384.64,
+      "no_speech_prob": 0.0,
+      "start": 3381.64,
+      "text": "絕大多數戰友說的就是為了利益"
+    },
+    {
+      "avg_logprob": -0.454144,
+      "compression_ratio": 1.0,
+      "end": 3386.04,
+      "no_speech_prob": 0.0,
+      "start": 3384.64,
+      "text": "為了名義"
+    },
+    {
+      "avg_logprob": -0.454144,
+      "compression_ratio": 1.0,
+      "end": 3386.64,
+      "no_speech_prob": 0.0,
+      "start": 3386.04,
+      "text": "啊"
+    },
+    {
+      "avg_logprob": -0.454144,
+      "compression_ratio": 1.0,
+      "end": 3387.64,
+      "no_speech_prob": 0.0,
+      "start": 3386.64,
+      "text": "啊"
+    },
+    {
+      "avg_logprob": -0.454144,
+      "compression_ratio": 1.0,
+      "end": 3388.04,
+      "no_speech_prob": 0.0,
+      "start": 3387.64,
+      "text": "啊"
+    },
+    {
+      "avg_logprob": -0.454144,
+      "compression_ratio": 1.0,
+      "end": 3388.64,
+      "no_speech_prob": 0.0,
+      "start": 3388.04,
+      "text": "這個是"
+    },
+    {
+      "avg_logprob": -0.280269,
+      "compression_ratio": 1.5,
+      "end": 3390.24,
+      "no_speech_prob": 0.0,
+      "start": 3388.64,
+      "text": "情懷比較多"
+    },
+    {
+      "avg_logprob": -0.280269,
+      "compression_ratio": 1.5,
+      "end": 3391.24,
+      "no_speech_prob": 0.0,
+      "start": 3390.24,
+      "text": "是吧"
+    },
+    {
+      "avg_logprob": -0.280269,
+      "compression_ratio": 1.5,
+      "end": 3393.24,
+      "no_speech_prob": 0.0,
+      "start": 3391.24,
+      "text": "還有說馬斯克是騙的"
+    },
+    {
+      "avg_logprob": -0.280269,
+      "compression_ratio": 1.5,
+      "end": 3394.24,
+      "no_speech_prob": 0.0,
+      "start": 3393.24,
+      "text": "那絕對不對"
+    },
+    {
+      "avg_logprob": -0.280269,
+      "compression_ratio": 1.5,
+      "end": 3395.64,
+      "no_speech_prob": 0.0,
+      "start": 3394.24,
+      "text": "馬斯克絕對不是騙的"
+    },
+    {
+      "avg_logprob": -0.280269,
+      "compression_ratio": 1.5,
+      "end": 3397.84,
+      "no_speech_prob": 0.0,
+      "start": 3395.64,
+      "text": "馬斯克絕對不是騙的啊"
+    },
+    {
+      "avg_logprob": -0.280269,
+      "compression_ratio": 1.5,
+      "end": 3401.24,
+      "no_speech_prob": 0.0,
+      "start": 3399.24,
+      "text": "馬斯克絕對是個神人啊"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.311224,
+      "end": 3402.54,
+      "no_speech_prob": 0.0,
+      "start": 3401.84,
+      "text": "上海工廠"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.311224,
+      "end": 3403.84,
+      "no_speech_prob": 0.0,
+      "start": 3402.54,
+      "text": "上海工廠跟烏克蘭"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.311224,
+      "end": 3405.64,
+      "no_speech_prob": 0.0,
+      "start": 3404.14,
+      "text": "他俄烏他想幹什麼呀"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.311224,
+      "end": 3410.04,
+      "no_speech_prob": 0.0,
+      "start": 3409.14,
+      "text": "競選總統"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.311224,
+      "end": 3411.44,
+      "no_speech_prob": 0.0,
+      "start": 3410.04,
+      "text": "USLI"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.311224,
+      "end": 3412.44,
+      "no_speech_prob": 0.0,
+      "start": 3411.44,
+      "text": "東京櫻花團"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.311224,
+      "end": 3414.44,
+      "no_speech_prob": 0.0,
+      "start": 3412.44,
+      "text": "USLI"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.311224,
+      "end": 3415.24,
+      "no_speech_prob": 0.0,
+      "start": 3414.44,
+      "text": "競選總統"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.311224,
+      "end": 3415.64,
+      "no_speech_prob": 0.0,
+      "start": 3415.24,
+      "text": "啊"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.311224,
+      "end": 3416.64,
+      "no_speech_prob": 0.0,
+      "start": 3415.84,
+      "text": "克里夫"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.311224,
+      "end": 3417.74,
+      "no_speech_prob": 0.0,
+      "start": 3416.64,
+      "text": "克里夫"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.311224,
+      "end": 3418.74,
+      "no_speech_prob": 0.0,
+      "start": 3417.74,
+      "text": "也叫參選"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.311224,
+      "end": 3421.24,
+      "no_speech_prob": 0.0,
+      "start": 3419.84,
+      "text": "Google 4競選"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.311224,
+      "end": 3422.64,
+      "no_speech_prob": 0.0,
+      "start": 3421.44,
+      "text": "自在遊行總統"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.311224,
+      "end": 3423.24,
+      "no_speech_prob": 0.0,
+      "start": 3422.64,
+      "text": "靠譜啦"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.311224,
+      "end": 3423.84,
+      "no_speech_prob": 0.0,
+      "start": 3423.24,
+      "text": "靠譜啦"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.311224,
+      "end": 3424.54,
+      "no_speech_prob": 0.0,
+      "start": 3423.84,
+      "text": "信仰"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.311224,
+      "end": 3425.64,
+      "no_speech_prob": 0.0,
+      "start": 3424.54,
+      "text": "沒有什麼信仰的事"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.311224,
+      "end": 3427.14,
+      "no_speech_prob": 0.0,
+      "start": 3426.74,
+      "text": "啊"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.311224,
+      "end": 3428.14,
+      "no_speech_prob": 0.0,
+      "start": 3427.14,
+      "text": "沒有什麼信仰"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.311224,
+      "end": 3429.84,
+      "no_speech_prob": 0.0,
+      "start": 3428.84,
+      "text": "不要喊啊"
+    },
+    {
+      "avg_logprob": -0.324429,
+      "compression_ratio": 1.327434,
+      "end": 3430.34,
+      "no_speech_prob": 0.0,
+      "start": 3429.84,
+      "text": "啊"
+    },
+    {
+      "avg_logprob": -0.324429,
+      "compression_ratio": 1.327434,
+      "end": 3431.64,
+      "no_speech_prob": 0.0,
+      "start": 3430.34,
+      "text": "戰友們還是了不得的"
+    },
+    {
+      "avg_logprob": -0.324429,
+      "compression_ratio": 1.327434,
+      "end": 3432.94,
+      "no_speech_prob": 0.0,
+      "start": 3432.54,
+      "text": "對了"
+    },
+    {
+      "avg_logprob": -0.324429,
+      "compression_ratio": 1.327434,
+      "end": 3435.94,
+      "no_speech_prob": 0.0,
+      "start": 3433.84,
+      "text": "艾倫·馬斯克所有今天啊"
+    },
+    {
+      "avg_logprob": -0.324429,
+      "compression_ratio": 1.327434,
+      "end": 3437.54,
+      "no_speech_prob": 0.0,
+      "start": 3435.94,
+      "text": "包括SEN1001啊"
+    },
+    {
+      "avg_logprob": -0.324429,
+      "compression_ratio": 1.327434,
+      "end": 3437.94,
+      "no_speech_prob": 0.0,
+      "start": 3437.54,
+      "text": "就說了"
+    },
+    {
+      "avg_logprob": -0.324429,
+      "compression_ratio": 1.327434,
+      "end": 3439.04,
+      "no_speech_prob": 0.0,
+      "start": 3437.94,
+      "text": "是競選總統"
+    },
+    {
+      "avg_logprob": -0.324429,
+      "compression_ratio": 1.327434,
+      "end": 3440.34,
+      "no_speech_prob": 0.0,
+      "start": 3439.04,
+      "text": "大家最後說對了"
+    },
+    {
+      "avg_logprob": -0.324429,
+      "compression_ratio": 1.327434,
+      "end": 3441.24,
+      "no_speech_prob": 0.0,
+      "start": 3440.84,
+      "text": "一家"
+    },
+    {
+      "avg_logprob": -0.324429,
+      "compression_ratio": 1.327434,
+      "end": 3443.54,
+      "no_speech_prob": 0.0,
+      "start": 3441.24,
+      "text": "火星的事就別相信他扯淡的事"
+    },
+    {
+      "avg_logprob": -0.324429,
+      "compression_ratio": 1.327434,
+      "end": 3444.94,
+      "no_speech_prob": 0.0,
+      "start": 3443.54,
+      "text": "扯淡的事"
+    },
+    {
+      "avg_logprob": -0.324429,
+      "compression_ratio": 1.327434,
+      "end": 3447.84,
+      "no_speech_prob": 0.0,
+      "start": 3446.14,
+      "text": "火星的事沒人真的相信"
+    },
+    {
+      "avg_logprob": -0.324429,
+      "compression_ratio": 1.327434,
+      "end": 3451.34,
+      "no_speech_prob": 0.0,
+      "start": 3448.94,
+      "text": "在地球上的事就描繪描繪火星啊"
+    },
+    {
+      "avg_logprob": -0.324429,
+      "compression_ratio": 1.327434,
+      "end": 3453.94,
+      "no_speech_prob": 0.0,
+      "start": 3453.24,
+      "text": "告訴大家"
+    },
+    {
+      "avg_logprob": -0.324429,
+      "compression_ratio": 1.327434,
+      "end": 3456.04,
+      "no_speech_prob": 0.0,
+      "start": 3453.94,
+      "text": "一切都是為了政治競選"
+    },
+    {
+      "avg_logprob": -0.310361,
+      "compression_ratio": 1.305,
+      "end": 3457.74,
+      "no_speech_prob": 0.0,
+      "start": 3456.04,
+      "text": "啊"
+    },
+    {
+      "avg_logprob": -0.310361,
+      "compression_ratio": 1.305,
+      "end": 3460.04,
+      "no_speech_prob": 0.0,
+      "start": 3458.64,
+      "text": "都是為了競選總統"
+    },
+    {
+      "avg_logprob": -0.310361,
+      "compression_ratio": 1.305,
+      "end": 3461.54,
+      "no_speech_prob": 0.0,
+      "start": 3461.24,
+      "text": "啊"
+    },
+    {
+      "avg_logprob": -0.310361,
+      "compression_ratio": 1.305,
+      "end": 3462.54,
+      "no_speech_prob": 0.0,
+      "start": 3461.54,
+      "text": "他買推特"
+    },
+    {
+      "avg_logprob": -0.310361,
+      "compression_ratio": 1.305,
+      "end": 3464.24,
+      "no_speech_prob": 0.0,
+      "start": 3462.94,
+      "text": "他現在參與的"
+    },
+    {
+      "avg_logprob": -0.310361,
+      "compression_ratio": 1.305,
+      "end": 3466.14,
+      "no_speech_prob": 0.0,
+      "start": 3464.54,
+      "text": "俄烏戰爭的調停"
+    },
+    {
+      "avg_logprob": -0.310361,
+      "compression_ratio": 1.305,
+      "end": 3466.94,
+      "no_speech_prob": 0.0,
+      "start": 3466.44,
+      "text": "建議"
+    },
+    {
+      "avg_logprob": -0.310361,
+      "compression_ratio": 1.305,
+      "end": 3469.34,
+      "no_speech_prob": 0.0,
+      "start": 3467.44,
+      "text": "對台灣的特別行政區"
+    },
+    {
+      "avg_logprob": -0.310361,
+      "compression_ratio": 1.305,
+      "end": 3471.34,
+      "no_speech_prob": 0.0,
+      "start": 3469.64,
+      "text": "都是為了為他想當總統"
+    },
+    {
+      "avg_logprob": -0.310361,
+      "compression_ratio": 1.305,
+      "end": 3473.24,
+      "no_speech_prob": 0.0,
+      "start": 3471.94,
+      "text": "想競選啊"
+    },
+    {
+      "avg_logprob": -0.310361,
+      "compression_ratio": 1.305,
+      "end": 3474.94,
+      "no_speech_prob": 0.0,
+      "start": 3473.54,
+      "text": "要體現自己的"
+    },
+    {
+      "avg_logprob": -0.310361,
+      "compression_ratio": 1.305,
+      "end": 3475.54,
+      "no_speech_prob": 0.0,
+      "start": 3475.34,
+      "text": "啊"
+    },
+    {
+      "avg_logprob": -0.310361,
+      "compression_ratio": 1.305,
+      "end": 3477.94,
+      "no_speech_prob": 0.0,
+      "start": 3475.54,
+      "text": "這個整個的政治能力和政治見解"
+    },
+    {
+      "avg_logprob": -0.310361,
+      "compression_ratio": 1.305,
+      "end": 3480.14,
+      "no_speech_prob": 0.0,
+      "start": 3479.04,
+      "text": "那經過"
+    },
+    {
+      "avg_logprob": -0.310361,
+      "compression_ratio": 1.305,
+      "end": 3482.24,
+      "no_speech_prob": 0.0,
+      "start": 3480.34,
+      "text": "如果俄烏戰爭啊"
+    },
+    {
+      "avg_logprob": -0.310361,
+      "compression_ratio": 1.305,
+      "end": 3484.14,
+      "no_speech_prob": 0.0,
+      "start": 3482.44,
+      "text": "他成功的"
+    },
+    {
+      "avg_logprob": -0.346269,
+      "compression_ratio": 1.361345,
+      "end": 3485.64,
+      "no_speech_prob": 0.0,
+      "start": 3484.14,
+      "text": "勸和解下來"
+    },
+    {
+      "avg_logprob": -0.346269,
+      "compression_ratio": 1.361345,
+      "end": 3487.14,
+      "no_speech_prob": 0.0,
+      "start": 3485.64,
+      "text": "一定能獲諾貝爾獎"
+    },
+    {
+      "avg_logprob": -0.346269,
+      "compression_ratio": 1.361345,
+      "end": 3490.84,
+      "no_speech_prob": 0.0,
+      "start": 3488.14,
+      "text": "一定會有大大的有利他競選總統"
+    },
+    {
+      "avg_logprob": -0.346269,
+      "compression_ratio": 1.361345,
+      "end": 3493.24,
+      "no_speech_prob": 0.0,
+      "start": 3492.54,
+      "text": "同樣"
+    },
+    {
+      "avg_logprob": -0.346269,
+      "compression_ratio": 1.361345,
+      "end": 3495.04,
+      "no_speech_prob": 0.0,
+      "start": 3493.54,
+      "text": "那兩個地區的啊"
+    },
+    {
+      "avg_logprob": -0.346269,
+      "compression_ratio": 1.361345,
+      "end": 3497.04,
+      "no_speech_prob": 0.0,
+      "start": 3495.34,
+      "text": "那個生意他也拿下來了"
+    },
+    {
+      "avg_logprob": -0.346269,
+      "compression_ratio": 1.361345,
+      "end": 3498.84,
+      "no_speech_prob": 0.0,
+      "start": 3497.94,
+      "text": "中共國啊"
+    },
+    {
+      "avg_logprob": -0.346269,
+      "compression_ratio": 1.361345,
+      "end": 3500.64,
+      "no_speech_prob": 0.0,
+      "start": 3499.44,
+      "text": "中國共產黨他不"
+    },
+    {
+      "avg_logprob": -0.346269,
+      "compression_ratio": 1.361345,
+      "end": 3502.84,
+      "no_speech_prob": 0.0,
+      "start": 3500.64,
+      "text": "不要保證他不要用天亮啊"
+    },
+    {
+      "avg_logprob": -0.346269,
+      "compression_ratio": 1.361345,
+      "end": 3502.94,
+      "no_speech_prob": 0.0,
+      "start": 3502.84,
+      "text": "啊"
+    },
+    {
+      "avg_logprob": -0.346269,
+      "compression_ratio": 1.361345,
+      "end": 3504.14,
+      "no_speech_prob": 0.0,
+      "start": 3502.94,
+      "text": "就是我給你利益"
+    },
+    {
+      "avg_logprob": -0.346269,
+      "compression_ratio": 1.361345,
+      "end": 3505.34,
+      "no_speech_prob": 0.0,
+      "start": 3504.14,
+      "text": "我也幫你競選總統"
+    },
+    {
+      "avg_logprob": -0.346269,
+      "compression_ratio": 1.361345,
+      "end": 3507.44,
+      "no_speech_prob": 0.0,
+      "start": 3506.14,
+      "text": "台灣的問題也一樣"
+    },
+    {
+      "avg_logprob": -0.346269,
+      "compression_ratio": 1.361345,
+      "end": 3509.64,
+      "no_speech_prob": 0.0,
+      "start": 3507.74,
+      "text": "就是他是一箭三雕"
+    },
+    {
+      "avg_logprob": -0.346269,
+      "compression_ratio": 1.361345,
+      "end": 3512.24,
+      "no_speech_prob": 0.0,
+      "start": 3510.44,
+      "text": "既想選總統搞政治"
+    },
+    {
+      "avg_logprob": -0.447374,
+      "compression_ratio": 1.160221,
+      "end": 3512.74,
+      "no_speech_prob": 0.0,
+      "start": 3512.24,
+      "text": "啊"
+    },
+    {
+      "avg_logprob": -0.447374,
+      "compression_ratio": 1.160221,
+      "end": 3514.74,
+      "no_speech_prob": 0.0,
+      "start": 3512.84,
+      "text": "還想佔領市場賺錢"
+    },
+    {
+      "avg_logprob": -0.447374,
+      "compression_ratio": 1.160221,
+      "end": 3516.74,
+      "no_speech_prob": 0.0,
+      "start": 3515.24,
+      "text": "第三啊"
+    },
+    {
+      "avg_logprob": -0.447374,
+      "compression_ratio": 1.160221,
+      "end": 3518.44,
+      "no_speech_prob": 0.0,
+      "start": 3516.94,
+      "text": "給自己啊"
+    },
+    {
+      "avg_logprob": -0.447374,
+      "compression_ratio": 1.160221,
+      "end": 3520.14,
+      "no_speech_prob": 0.0,
+      "start": 3518.54,
+      "text": "就是留下更多的"
+    },
+    {
+      "avg_logprob": -0.447374,
+      "compression_ratio": 1.160221,
+      "end": 3522.14,
+      "no_speech_prob": 0.0,
+      "start": 3520.34,
+      "text": "所謂的超越"
+    },
+    {
+      "avg_logprob": -0.447374,
+      "compression_ratio": 1.160221,
+      "end": 3524.24,
+      "no_speech_prob": 0.0,
+      "start": 3522.44,
+      "text": "市場經濟的"
+    },
+    {
+      "avg_logprob": -0.447374,
+      "compression_ratio": 1.160221,
+      "end": 3526.24,
+      "no_speech_prob": 0.0,
+      "start": 3524.54,
+      "text": "一個回旋的空間"
+    },
+    {
+      "avg_logprob": -0.447374,
+      "compression_ratio": 1.160221,
+      "end": 3529.04,
+      "no_speech_prob": 0.0,
+      "start": 3526.84,
+      "text": "這是這是真正最危險的"
+    },
+    {
+      "avg_logprob": -0.447374,
+      "compression_ratio": 1.160221,
+      "end": 3531.04,
+      "no_speech_prob": 0.0,
+      "start": 3530.74,
+      "text": "啊"
+    },
+    {
+      "avg_logprob": -0.447374,
+      "compression_ratio": 1.160221,
+      "end": 3531.74,
+      "no_speech_prob": 0.0,
+      "start": 3531.14,
+      "text": "這個"
+    },
+    {
+      "avg_logprob": -0.447374,
+      "compression_ratio": 1.160221,
+      "end": 3532.54,
+      "no_speech_prob": 0.0,
+      "start": 3531.74,
+      "text": "艾雷馬斯克先生"
+    },
+    {
+      "avg_logprob": -0.447374,
+      "compression_ratio": 1.160221,
+      "end": 3533.74,
+      "no_speech_prob": 0.0,
+      "start": 3532.54,
+      "text": "我不知道他是怎麼想的"
+    },
+    {
+      "avg_logprob": -0.336394,
+      "compression_ratio": 1.534884,
+      "end": 3536.74,
+      "no_speech_prob": 0.0,
+      "start": 3533.74,
+      "text": "當這個世界又想要政權"
+    },
+    {
+      "avg_logprob": -0.336394,
+      "compression_ratio": 1.534884,
+      "end": 3539.44,
+      "no_speech_prob": 0.0,
+      "start": 3536.74,
+      "text": "還想要世界的經濟控制大權"
+    },
+    {
+      "avg_logprob": -0.336394,
+      "compression_ratio": 1.534884,
+      "end": 3540.94,
+      "no_speech_prob": 0.0,
+      "start": 3539.44,
+      "text": "從人類到今天"
+    },
+    {
+      "avg_logprob": -0.336394,
+      "compression_ratio": 1.534884,
+      "end": 3543.24,
+      "no_speech_prob": 0.0,
+      "start": 3541.44,
+      "text": "基本上沒有一個成功的"
+    },
+    {
+      "avg_logprob": -0.336394,
+      "compression_ratio": 1.534884,
+      "end": 3545.74,
+      "no_speech_prob": 0.0,
+      "start": 3544.54,
+      "text": "沒有一個成功的"
+    },
+    {
+      "avg_logprob": -0.336394,
+      "compression_ratio": 1.534884,
+      "end": 3549.24,
+      "no_speech_prob": 0.0,
+      "start": 3546.54,
+      "text": "就說我還想要情懷要信仰"
+    },
+    {
+      "avg_logprob": -0.336394,
+      "compression_ratio": 1.534884,
+      "end": 3552.04,
+      "no_speech_prob": 0.0,
+      "start": 3549.74,
+      "text": "我還想要權力統治人類和國家"
+    },
+    {
+      "avg_logprob": -0.336394,
+      "compression_ratio": 1.534884,
+      "end": 3554.14,
+      "no_speech_prob": 0.0,
+      "start": 3552.04,
+      "text": "幾乎沒有一個成功的"
+    },
+    {
+      "avg_logprob": -0.336394,
+      "compression_ratio": 1.534884,
+      "end": 3556.24,
+      "no_speech_prob": 0.0,
+      "start": 3554.74,
+      "text": "大家請我找一個成功的"
+    },
+    {
+      "avg_logprob": -0.430869,
+      "compression_ratio": 1.321053,
+      "end": 3556.74,
+      "no_speech_prob": 0.0,
+      "start": 3556.24,
+      "text": "啊"
+    },
+    {
+      "avg_logprob": -0.430869,
+      "compression_ratio": 1.321053,
+      "end": 3560.74,
+      "no_speech_prob": 0.0,
+      "start": 3556.74,
+      "text": "他這個更大了"
+    },
+    {
+      "avg_logprob": -0.430869,
+      "compression_ratio": 1.321053,
+      "end": 3562.24,
+      "no_speech_prob": 0.0,
+      "start": 3560.74,
+      "text": "我不但要政治"
+    },
+    {
+      "avg_logprob": -0.430869,
+      "compression_ratio": 1.321053,
+      "end": 3563.44,
+      "no_speech_prob": 0.0,
+      "start": 3562.24,
+      "text": "要市場"
+    },
+    {
+      "avg_logprob": -0.430869,
+      "compression_ratio": 1.321053,
+      "end": 3565.14,
+      "no_speech_prob": 0.0,
+      "start": 3563.94,
+      "text": "我還要容易"
+    },
+    {
+      "avg_logprob": -0.430869,
+      "compression_ratio": 1.321053,
+      "end": 3566.54,
+      "no_speech_prob": 0.0,
+      "start": 3565.64,
+      "text": "這個在人類上"
+    },
+    {
+      "avg_logprob": -0.430869,
+      "compression_ratio": 1.321053,
+      "end": 3567.04,
+      "no_speech_prob": 0.0,
+      "start": 3566.54,
+      "text": "在地"
+    },
+    {
+      "avg_logprob": -0.430869,
+      "compression_ratio": 1.321053,
+      "end": 3569.44,
+      "no_speech_prob": 0.0,
+      "start": 3567.04,
+      "text": "在20萬年的人類"
+    },
+    {
+      "avg_logprob": -0.430869,
+      "compression_ratio": 1.321053,
+      "end": 3571.04,
+      "no_speech_prob": 0.0,
+      "start": 3570.74,
+      "text": "啊"
+    },
+    {
+      "avg_logprob": -0.430869,
+      "compression_ratio": 1.321053,
+      "end": 3573.44,
+      "no_speech_prob": 0.0,
+      "start": 3571.24,
+      "text": "幾十萬一年的地球"
+    },
+    {
+      "avg_logprob": -0.430869,
+      "compression_ratio": 1.321053,
+      "end": 3574.94,
+      "no_speech_prob": 0.0,
+      "start": 3574.04,
+      "text": "沒有發生過"
+    },
+    {
+      "avg_logprob": -0.430869,
+      "compression_ratio": 1.321053,
+      "end": 3576.44,
+      "no_speech_prob": 0.0,
+      "start": 3576.04,
+      "text": "啊"
+    },
+    {
+      "avg_logprob": -0.430869,
+      "compression_ratio": 1.321053,
+      "end": 3579.04,
+      "no_speech_prob": 0.0,
+      "start": 3577.54,
+      "text": "這個就他不在美國出生"
+    },
+    {
+      "avg_logprob": -0.430869,
+      "compression_ratio": 1.321053,
+      "end": 3579.64,
+      "no_speech_prob": 0.0,
+      "start": 3579.04,
+      "text": "不用想"
+    },
+    {
+      "avg_logprob": -0.430869,
+      "compression_ratio": 1.321053,
+      "end": 3580.54,
+      "no_speech_prob": 0.0,
+      "start": 3579.64,
+      "text": "不在美國出生"
+    },
+    {
+      "avg_logprob": -0.430869,
+      "compression_ratio": 1.321053,
+      "end": 3581.54,
+      "no_speech_prob": 0.0,
+      "start": 3580.54,
+      "text": "他也可以突破的"
+    },
+    {
+      "avg_logprob": -0.430869,
+      "compression_ratio": 1.321053,
+      "end": 3582.74,
+      "no_speech_prob": 0.0,
+      "start": 3581.54,
+      "text": "可以修改憲法的"
+    },
+    {
+      "avg_logprob": -0.349609,
+      "compression_ratio": 1.234286,
+      "end": 3584.54,
+      "no_speech_prob": 0.0,
+      "start": 3582.74,
+      "text": "然後他可以控制一個人"
+    },
+    {
+      "avg_logprob": -0.349609,
+      "compression_ratio": 1.234286,
+      "end": 3585.84,
+      "no_speech_prob": 0.0,
+      "start": 3584.84,
+      "text": "來去選總統的"
+    },
+    {
+      "avg_logprob": -0.349609,
+      "compression_ratio": 1.234286,
+      "end": 3587.34,
+      "no_speech_prob": 0.0,
+      "start": 3586.54,
+      "text": "都沒有問題的"
+    },
+    {
+      "avg_logprob": -0.349609,
+      "compression_ratio": 1.234286,
+      "end": 3588.74,
+      "no_speech_prob": 0.0,
+      "start": 3587.84,
+      "text": "他要權力嘛"
+    },
+    {
+      "avg_logprob": -0.349609,
+      "compression_ratio": 1.234286,
+      "end": 3590.04,
+      "no_speech_prob": 0.0,
+      "start": 3589.64,
+      "text": "是吧"
+    },
+    {
+      "avg_logprob": -0.349609,
+      "compression_ratio": 1.234286,
+      "end": 3591.84,
+      "no_speech_prob": 0.0,
+      "start": 3590.34,
+      "text": "你要中期選舉完以後"
+    },
+    {
+      "avg_logprob": -0.349609,
+      "compression_ratio": 1.234286,
+      "end": 3594.54,
+      "no_speech_prob": 0.0,
+      "start": 3592.84,
+      "text": "誰是美國最有權力的人呢"
+    },
+    {
+      "avg_logprob": -0.349609,
+      "compression_ratio": 1.234286,
+      "end": 3596.74,
+      "no_speech_prob": 0.0,
+      "start": 3594.84,
+      "text": "一定不是站在那個講臺上的人"
+    },
+    {
+      "avg_logprob": -0.349609,
+      "compression_ratio": 1.234286,
+      "end": 3597.14,
+      "no_speech_prob": 0.0,
+      "start": 3596.84,
+      "text": "是吧"
+    },
+    {
+      "avg_logprob": -0.349609,
+      "compression_ratio": 1.234286,
+      "end": 3599.64,
+      "no_speech_prob": 0.0,
+      "start": 3598.74,
+      "text": "這是我覺得"
+    },
+    {
+      "avg_logprob": -0.349609,
+      "compression_ratio": 1.234286,
+      "end": 3599.94,
+      "no_speech_prob": 0.0,
+      "start": 3599.64,
+      "text": "我覺得"
+    }
+  ],
+  "text": "你家安全了我家就不安全了没有一个概念说你家安全我家也安全你家更好我家更好 错了你家不死人我家就死人你家不贫穷我家就贫穷反过来说了你家死人了我家就不用死人你家贫穷了我家就不用贫穷什么叫社会主义啊一切都是国家和政府的叫社会主义什么叫资本主义啊什么都是你个人的都叫资本主义什么叫民主社会啊就是什么都是老百姓个人的包括生殖记包括钱包括家包括房子什么叫做共产主义啊一切东西都是政府的包括你爹你娘包括是你的资产在共产主义社会主义生存的关系是什么生存的资本是什么生存的资本和方法就是叫关系关系主义有关系有主义有关系有价值关系就是就是什么资本的核心的核心就是权利在民主社会是什么是劳动啊智慧平衡啊所以说他们不懂的那么到底打不打台湾大家走着看一定会打台湾还有一个大家要看到一个最根本的问题国际形势啊俄乌危机还有伊朗几乎是共产党最大的就是这就是就是俄罗斯伊朗北朝鲜的小小屁孩小国家是吧俄乌战争大势一去百分之一百郭文贵给你保证普京肛门臨状癌十日不多我永远愿意为我这个真这个情报负一百分之一万的责任百分之一的责任如果我要有错了我要受一切之刑罚第二个哈美尼伊百分之百万求大了9月26号心脏手术基本完蛋我前天下午前天下午我长到哥我们那个七番人直播的时候给Niko在这之前我给咱们的哈美尼伊的最重要的这个情报提供者我说哈美尼伊是不是真的是在棺材里活了这个哥们好久没混戏就说郭先生你跟我说的话我百分之百相信我和你这么多年交道我跟你说的话没有一次是假的这一次是一样的哈美尼伊绝对完了是吧哈美尼伊完了俄罗斯的普京完了俄罗斯被解体了伊朗肯定完了啊或者是很可能诸家回家民主的社会我就纳闷了金山帮能干啥呢金山帮能干啥呀是吧我从来不认为美国和南韩有意志会主动的去把北韩北朝鲜给灭了给收过来啊但是我最近我有感觉美国被南韩在小金山帮他在不断的得瑟继续挑战底线还想重启他的核反应堆由于俄乌战争乌克兰激发了南韩人民的自信和斗志永远活在那所谓的百万门的大炮前面还不如他搞一下呢是吧绝对的大大的强大了南韩防卫自己的信心说不得哪一会儿就醒来北朝鲜结放了如果我是南韩总统我一定这么干我不等你来了我天天活着你百万大炮下面威胁我老子主动出击是吧多好的机会啊如果北韩再被拿下我就纳闷的共产党你靠啥呀对吧嗯 trades嗯 要我換了所以說 兄弟姐妹們這個西方的這個認為呀 是非常非常錯誤的但同時我們也可以看到啊就是說 西方這種認知的錯誤呢某種程度上我認為是科學的 也是好事 為什麼這就像一個發生某件事情 它需要多種因素它等到他們做出雙方戰略性的錯誤決定的時候就像普京 以為三天就能拿下烏克蘭但是這咱們爆料哥們是好事普京弱了 習就危險 共產黨就危險那麼他們雙方的判斷錯誤在台灣問題上 對我們是好事對我們是好事我們呢 就會想得更偉大 更正確 是吧有啥不好啦 是吧所以說 大家走著看啊 還有我相信打台灣的機率 我認為是一定會打的 而且會很快西方的所謂的軍事專家呀 那些情報啊 都是亂扯的沒有一個情報 可以讓你瞭解中國共產黨還有 習太陽的內心世界了 只有我們第三個問題馬斯克最近在接受金融時報採訪時說建立台灣特別行政區前不久還就克里米亞和烏克蘭公投發表評論他說中共要求他保證不在中共國提供星鏈通訊服務七哥是否方便評論一下馬斯克受中共的影響有多大他的行為是否會影響其他星鏈公司作為中國人提供星鏈的通訊服務呢呵呵兄弟姐妹們 七哥每次大直播的跟戰友們這種神交的感覺啊我不知道有多少戰友你們能感受到反正我是一有大直播我心情就很激動一有大直播我就很興奮昨天晚上雖然我起床五次吧五次啊但是我真的是很興奮很興奮啊就是每次啊大準備大直播的時候就像一場約會一樣啊啊啊跟一個久違見面的知己啊要神交啊要兩目相對是吧然後覆摸著你的臉臉龐啊然後覆摸著你的頭髮啊慢慢的慢慢的親吻你的嘴唇啊然後呢閉上眼睛感受對方的溫度啊然後呢盡情的釋放自己的感情哭啊笑啊感動啊然後呢對天啊因私因失做詞是吧甚至不會說也得弄幾個是吧改面杖子麵條蘋果也亂喊兩嗓子對著大地低聲的聲音啊說出自己的擔心和痛苦和恐懼啊這種感覺啊就像跟情人約會一樣啊當然後半後半路就別說了啊就是比較身體上出大汗的事了啊所以說兄弟姐妹們就像你們談這個問題的時候呢我最想大家就是大家這個問題我們的三票老亨泰山兄啊還有我們的頑童就整理都特別好每次都是不一樣都抓住重點而且都很棒的啊站位很高啊甚至他答案他們知道的答案比我還高只是我的嘴嘛就利用我的嘴說說就可能啊我這人比較不要臉敢說那那麼這個答案實際上非常簡單你覺得艾倫馬斯克的目的在幹什麼嘛艾倫馬斯克擁有了世界上所有的美女他已經被意為超人他的私人公司的財產啊高過你知道的所有的上市公司他在科技上一定是神奇的人物啊你覺得艾倫馬斯克做這些事情一切為了什麼我想看留言兄弟姐妹們啊他想幹什麼他的星鏈共產黨不讓他保證不能在中國用星鏈他收買推特私有化啊Spicy腦鏈地下工程轉地機都是私人公司啊兄弟姐妹們他在核心目的是幹什麼是他瘋了嗎還是他他參與了烏克蘭的所謂的戰爭調節地域政治跟共產黨講述啊批評美國民主黨支持美國共和黨他想幹啥啊我看看大家想幹啥為了以後忽悠中共嗎一切為了孩子撤回投資上太空嗎自我為神安全世界和平和平才是商人生命的長度普及滅共推倒防火牆拖世間消滅獨裁啊中國市場統治全世界他在麻痹中共政治政治政治啊Rock叫政治飛天洪珠俠緩兵之計小灰灰釣魚之法啊天下圍攻講的是政治啦政治啦政治政治是什麼呢生意滅共金山頭改變世界被抓住積極啊絕大多數戰友說的就是為了利益為了名義啊啊啊這個是情懷比較多是吧還有說馬斯克是騙的那絕對不對馬斯克絕對不是騙的馬斯克絕對不是騙的啊馬斯克絕對是個神人啊上海工廠上海工廠跟烏克蘭他俄烏他想幹什麼呀競選總統USLI東京櫻花團USLI競選總統啊克里夫克里夫也叫參選Google 4競選自在遊行總統靠譜啦靠譜啦信仰沒有什麼信仰的事啊沒有什麼信仰不要喊啊啊戰友們還是了不得的對了艾倫·馬斯克所有今天啊包括SEN1001啊就說了是競選總統大家最後說對了一家火星的事就別相信他扯淡的事扯淡的事火星的事沒人真的相信在地球上的事就描繪描繪火星啊告訴大家一切都是為了政治競選啊都是為了競選總統啊他買推特他現在參與的俄烏戰爭的調停建議對台灣的特別行政區都是為了為他想當總統想競選啊要體現自己的啊這個整個的政治能力和政治見解那經過如果俄烏戰爭啊他成功的勸和解下來一定能獲諾貝爾獎一定會有大大的有利他競選總統同樣那兩個地區的啊那個生意他也拿下來了中共國啊中國共產黨他不不要保證他不要用天亮啊啊就是我給你利益我也幫你競選總統台灣的問題也一樣就是他是一箭三雕既想選總統搞政治啊還想佔領市場賺錢第三啊給自己啊就是留下更多的所謂的超越市場經濟的一個回旋的空間這是這是真正最危險的啊這個艾雷馬斯克先生我不知道他是怎麼想的當這個世界又想要政權還想要世界的經濟控制大權從人類到今天基本上沒有一個成功的沒有一個成功的就說我還想要情懷要信仰我還想要權力統治人類和國家幾乎沒有一個成功的大家請我找一個成功的啊他這個更大了我不但要政治要市場我還要容易這個在人類上在地在20萬年的人類啊幾十萬一年的地球沒有發生過啊這個就他不在美國出生不用想不在美國出生他也可以突破的可以修改憲法的然後他可以控制一個人來去選總統的都沒有問題的他要權力嘛是吧你要中期選舉完以後誰是美國最有權力的人呢一定不是站在那個講臺上的人是吧這是我覺得我覺得"
+}
