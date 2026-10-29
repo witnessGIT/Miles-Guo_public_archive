@@ -1,0 +1,424 @@
+{
+  "chunk_audio_sha256": "6555620b9debe74fd4ec04f85a7739c292f34d61d236e76c29482b5529823bbb",
+  "chunk_index": 7,
+  "completed_at": "2026-10-29T13:35:03Z",
+  "language": "zh",
+  "live_id": "LIVE_20221123_002",
+  "media_committed_to_git": false,
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "offset_sec": 6300,
+  "paid_api_used": false,
+  "processing_location": "github-hosted-macos-arm64",
+  "schema_version": "cloud-asr-chunk-v1",
+  "segments": [
+    {
+      "avg_logprob": -0.427707,
+      "compression_ratio": 1.512605,
+      "end": 6301.9,
+      "no_speech_prob": 0.0,
+      "start": 6300.0,
+      "text": "年年旅"
+    },
+    {
+      "avg_logprob": -0.427707,
+      "compression_ratio": 1.512605,
+      "end": 6305.7,
+      "no_speech_prob": 0.0,
+      "start": 6301.9,
+      "text": "看到了没了就想到你"
+    },
+    {
+      "avg_logprob": -0.427707,
+      "compression_ratio": 1.512605,
+      "end": 6307.6,
+      "no_speech_prob": 0.0,
+      "start": 6305.7,
+      "text": "没了没了"
+    },
+    {
+      "avg_logprob": -0.427707,
+      "compression_ratio": 1.512605,
+      "end": 6309.54,
+      "no_speech_prob": 0.0,
+      "start": 6307.6,
+      "text": "我爱你"
+    },
+    {
+      "avg_logprob": -0.427707,
+      "compression_ratio": 1.512605,
+      "end": 6312.0,
+      "no_speech_prob": 0.0,
+      "start": 6309.54,
+      "text": "你想兰花的早日"
+    },
+    {
+      "avg_logprob": -0.427707,
+      "compression_ratio": 1.512605,
+      "end": 6313.34,
+      "no_speech_prob": 0.0,
+      "start": 6312.0,
+      "text": "你"
+    },
+    {
+      "avg_logprob": -0.427707,
+      "compression_ratio": 1.512605,
+      "end": 6317.16,
+      "no_speech_prob": 0.0,
+      "start": 6313.34,
+      "text": "你想没花的年年旅"
+    },
+    {
+      "avg_logprob": -0.427707,
+      "compression_ratio": 1.512605,
+      "end": 6321.0,
+      "no_speech_prob": 0.0,
+      "start": 6317.16,
+      "text": "看到了没了就想到你"
+    },
+    {
+      "avg_logprob": -0.427707,
+      "compression_ratio": 1.512605,
+      "end": 6324.76,
+      "no_speech_prob": 0.0,
+      "start": 6321.0,
+      "text": "我要永远的爱护你"
+    },
+    {
+      "avg_logprob": -0.427707,
+      "compression_ratio": 1.512605,
+      "end": 6328.56,
+      "no_speech_prob": 0.0,
+      "start": 6324.76,
+      "text": "因为你没了有气息"
+    },
+    {
+      "avg_logprob": -0.298522,
+      "compression_ratio": 1.180328,
+      "end": 6332.4,
+      "no_speech_prob": 0.0,
+      "start": 6328.56,
+      "text": "我要永远的伴着你"
+    },
+    {
+      "avg_logprob": -0.298522,
+      "compression_ratio": 1.180328,
+      "end": 6336.2,
+      "no_speech_prob": 0.0,
+      "start": 6332.4,
+      "text": "今生今世又在一起"
+    },
+    {
+      "avg_logprob": -0.298522,
+      "compression_ratio": 1.180328,
+      "end": 6340.02,
+      "no_speech_prob": 0.0,
+      "start": 6336.2,
+      "text": "没了没了我爱你"
+    },
+    {
+      "avg_logprob": -0.298522,
+      "compression_ratio": 1.180328,
+      "end": 6343.56,
+      "no_speech_prob": 0.0,
+      "start": 6340.02,
+      "text": "你想兰花的早日"
+    },
+    {
+      "avg_logprob": -0.298522,
+      "compression_ratio": 1.180328,
+      "end": 6343.86,
+      "no_speech_prob": 0.0,
+      "start": 6343.56,
+      "text": "你"
+    },
+    {
+      "avg_logprob": -0.298522,
+      "compression_ratio": 1.180328,
+      "end": 6347.62,
+      "no_speech_prob": 0.0,
+      "start": 6343.86,
+      "text": "你想没花的年年旅"
+    },
+    {
+      "avg_logprob": -0.298522,
+      "compression_ratio": 1.180328,
+      "end": 6351.56,
+      "no_speech_prob": 0.0,
+      "start": 6347.62,
+      "text": "看到了没了就想到你"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 2.318182,
+      "end": 6360.22,
+      "no_speech_prob": 0.0,
+      "start": 6358.56,
+      "text": "你"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 2.318182,
+      "end": 6360.9,
+      "no_speech_prob": 0.0,
+      "start": 6360.22,
+      "text": "你"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 2.318182,
+      "end": 6361.82,
+      "no_speech_prob": 0.0,
+      "start": 6360.9,
+      "text": "你"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 2.318182,
+      "end": 6362.7,
+      "no_speech_prob": 0.0,
+      "start": 6361.82,
+      "text": "你"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 2.318182,
+      "end": 6363.7,
+      "no_speech_prob": 0.0,
+      "start": 6362.7,
+      "text": "你"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 2.318182,
+      "end": 6364.32,
+      "no_speech_prob": 0.0,
+      "start": 6363.7,
+      "text": "你"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 2.318182,
+      "end": 6364.76,
+      "no_speech_prob": 0.0,
+      "start": 6364.32,
+      "text": "你"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 2.318182,
+      "end": 6365.4,
+      "no_speech_prob": 0.0,
+      "start": 6364.76,
+      "text": "你"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 2.318182,
+      "end": 6365.9,
+      "no_speech_prob": 0.0,
+      "start": 6365.4,
+      "text": "你"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 2.318182,
+      "end": 6366.32,
+      "no_speech_prob": 0.0,
+      "start": 6365.9,
+      "text": "你"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 2.318182,
+      "end": 6366.96,
+      "no_speech_prob": 0.0,
+      "start": 6366.32,
+      "text": "你"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 2.318182,
+      "end": 6367.62,
+      "no_speech_prob": 0.0,
+      "start": 6366.96,
+      "text": "你"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 2.318182,
+      "end": 6368.06,
+      "no_speech_prob": 0.0,
+      "start": 6367.62,
+      "text": "örper"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 2.318182,
+      "end": 6368.36,
+      "no_speech_prob": 0.0,
+      "start": 6368.06,
+      "text": "你"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 2.318182,
+      "end": 6368.6,
+      "no_speech_prob": 0.0,
+      "start": 6368.36,
+      "text": "你"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 2.318182,
+      "end": 6369.1,
+      "no_speech_prob": 0.0,
+      "start": 6368.6,
+      "text": "你"
+    },
+    {
+      "avg_logprob": -0.322561,
+      "compression_ratio": 1.139535,
+      "end": 6385.06,
+      "no_speech_prob": 0.0,
+      "start": 6369.1,
+      "text": "梅兰 梅兰 我爱你"
+    },
+    {
+      "avg_logprob": -0.322561,
+      "compression_ratio": 1.139535,
+      "end": 6388.82,
+      "no_speech_prob": 0.0,
+      "start": 6385.06,
+      "text": "你像兰花的早日迷"
+    },
+    {
+      "avg_logprob": -0.322561,
+      "compression_ratio": 1.139535,
+      "end": 6392.6,
+      "no_speech_prob": 0.0,
+      "start": 6388.82,
+      "text": "你像梅花的年年绿"
+    },
+    {
+      "avg_logprob": -0.322561,
+      "compression_ratio": 1.139535,
+      "end": 6396.78,
+      "no_speech_prob": 0.0,
+      "start": 6392.6,
+      "text": "看到了梅兰就想到你"
+    },
+    {
+      "avg_logprob": -0.235061,
+      "compression_ratio": 1.293333,
+      "end": 6400.34,
+      "no_speech_prob": 0.0,
+      "start": 6396.78,
+      "text": "梅兰 梅兰 我爱你"
+    },
+    {
+      "avg_logprob": -0.235061,
+      "compression_ratio": 1.293333,
+      "end": 6404.16,
+      "no_speech_prob": 0.0,
+      "start": 6400.34,
+      "text": "你像兰花的早日迷"
+    },
+    {
+      "avg_logprob": -0.235061,
+      "compression_ratio": 1.293333,
+      "end": 6407.84,
+      "no_speech_prob": 0.0,
+      "start": 6404.16,
+      "text": "你像梅花的年年绿"
+    },
+    {
+      "avg_logprob": -0.235061,
+      "compression_ratio": 1.293333,
+      "end": 6412.02,
+      "no_speech_prob": 0.0,
+      "start": 6407.84,
+      "text": "看到了梅兰就想到你"
+    },
+    {
+      "avg_logprob": -0.235061,
+      "compression_ratio": 1.293333,
+      "end": 6415.62,
+      "no_speech_prob": 0.0,
+      "start": 6412.02,
+      "text": "我要永远地爱护你"
+    },
+    {
+      "avg_logprob": -0.235061,
+      "compression_ratio": 1.293333,
+      "end": 6419.26,
+      "no_speech_prob": 0.0,
+      "start": 6415.62,
+      "text": "因为你梅兰有栖息"
+    },
+    {
+      "avg_logprob": -0.235061,
+      "compression_ratio": 1.293333,
+      "end": 6423.36,
+      "no_speech_prob": 0.0,
+      "start": 6419.26,
+      "text": "我要永远地伴着你"
+    },
+    {
+      "avg_logprob": -0.235061,
+      "compression_ratio": 1.293333,
+      "end": 6426.7,
+      "no_speech_prob": 0.0,
+      "start": 6423.36,
+      "text": "今生今世又在一起"
+    },
+    {
+      "avg_logprob": -0.116791,
+      "compression_ratio": 1.139535,
+      "end": 6430.26,
+      "no_speech_prob": 0.0,
+      "start": 6426.7,
+      "text": "梅兰 梅兰 我爱你"
+    },
+    {
+      "avg_logprob": -0.116791,
+      "compression_ratio": 1.139535,
+      "end": 6434.08,
+      "no_speech_prob": 0.0,
+      "start": 6430.26,
+      "text": "你像兰花的早日迷"
+    },
+    {
+      "avg_logprob": -0.116791,
+      "compression_ratio": 1.139535,
+      "end": 6437.76,
+      "no_speech_prob": 0.0,
+      "start": 6434.08,
+      "text": "你像梅花的年年绿"
+    },
+    {
+      "avg_logprob": -0.116791,
+      "compression_ratio": 1.139535,
+      "end": 6442.26,
+      "no_speech_prob": 0.0,
+      "start": 6437.76,
+      "text": "看到了梅兰就想到你"
+    },
+    {
+      "avg_logprob": -4.382225,
+      "compression_ratio": 0.571429,
+      "end": 6457.78,
+      "no_speech_prob": 0.0,
+      "start": 6442.26,
+      "text": "空夜活动"
+    },
+    {
+      "avg_logprob": -0.265178,
+      "compression_ratio": 0.875,
+      "end": 6487.76,
+      "no_speech_prob": 0.0,
+      "start": 6457.78,
+      "text": "优优独播剧场——YoYo Television Series Exclusive"
+    }
+  ],
+  "text": "年年旅看到了没了就想到你没了没了我爱你你想兰花的早日你你想没花的年年旅看到了没了就想到你我要永远的爱护你因为你没了有气息我要永远的伴着你今生今世又在一起没了没了我爱你你想兰花的早日你你想没花的年年旅看到了没了就想到你你你你你你你你你你你你你örper你你你梅兰 梅兰 我爱你你像兰花的早日迷你像梅花的年年绿看到了梅兰就想到你梅兰 梅兰 我爱你你像兰花的早日迷你像梅花的年年绿看到了梅兰就想到你我要永远地爱护你因为你梅兰有栖息我要永远地伴着你今生今世又在一起梅兰 梅兰 我爱你你像兰花的早日迷你像梅花的年年绿看到了梅兰就想到你空夜活动优优独播剧场——YoYo Television Series Exclusive"
+}

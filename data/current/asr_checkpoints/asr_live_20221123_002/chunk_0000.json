@@ -1,0 +1,2880 @@
+{
+  "chunk_audio_sha256": "99b3dff7ff76d32abba318e2623bb153f91facba63e2813c0098d08c385c39ff",
+  "chunk_index": 0,
+  "completed_at": "2026-10-29T13:18:45Z",
+  "language": "zh",
+  "live_id": "LIVE_20221123_002",
+  "media_committed_to_git": false,
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "offset_sec": 0,
+  "paid_api_used": false,
+  "processing_location": "github-hosted-macos-arm64",
+  "schema_version": "cloud-asr-chunk-v1",
+  "segments": [
+    {
+      "avg_logprob": -0.809336,
+      "compression_ratio": 0.96875,
+      "end": 10.0,
+      "no_speech_prob": 0.0,
+      "start": 0.0,
+      "text": "《非诚勿扰》"
+    },
+    {
+      "avg_logprob": -0.809336,
+      "compression_ratio": 0.96875,
+      "end": 14.0,
+      "no_speech_prob": 0.0,
+      "start": 12.5,
+      "text": "哎呦我的妈呀"
+    },
+    {
+      "avg_logprob": -0.809336,
+      "compression_ratio": 0.96875,
+      "end": 17.0,
+      "no_speech_prob": 0.0,
+      "start": 14.7,
+      "text": "我正讲的点上来"
+    },
+    {
+      "avg_logprob": -0.809336,
+      "compression_ratio": 0.96875,
+      "end": 23.0,
+      "no_speech_prob": 0.0,
+      "start": 21.5,
+      "text": "这很可怕啊"
+    },
+    {
+      "avg_logprob": -0.809336,
+      "compression_ratio": 0.96875,
+      "end": 26.0,
+      "no_speech_prob": 0.0,
+      "start": 24.0,
+      "text": "这百分之百黑的"
+    },
+    {
+      "avg_logprob": -0.383122,
+      "compression_ratio": 0.827586,
+      "end": 32.0,
+      "no_speech_prob": 0.0,
+      "start": 30.0,
+      "text": "来了好像回来了啊"
+    },
+    {
+      "avg_logprob": -2.942501,
+      "compression_ratio": 0.813559,
+      "end": 66.0,
+      "no_speech_prob": 0.0,
+      "start": 60.0,
+      "text": "由你们喝 improves"
+    },
+    {
+      "avg_logprob": -2.942501,
+      "compression_ratio": 0.813559,
+      "end": 78.0,
+      "no_speech_prob": 0.0,
+      "start": 68.7,
+      "text": "被黑断了兄弟姐妹们"
+    },
+    {
+      "avg_logprob": -0.310561,
+      "compression_ratio": 2.0,
+      "end": 81.0,
+      "no_speech_prob": 0.0,
+      "start": 78.0,
+      "text": "来了吗?算了吗?"
+    },
+    {
+      "avg_logprob": -0.310561,
+      "compression_ratio": 2.0,
+      "end": 84.0,
+      "no_speech_prob": 0.0,
+      "start": 81.0,
+      "text": "被黑断了兄弟姐妹们"
+    },
+    {
+      "avg_logprob": -0.310561,
+      "compression_ratio": 2.0,
+      "end": 88.0,
+      "no_speech_prob": 0.0,
+      "start": 84.0,
+      "text": "被黑断了 被黑断了 被黑断了 兄弟姐妹们"
+    },
+    {
+      "avg_logprob": -0.310561,
+      "compression_ratio": 2.0,
+      "end": 92.0,
+      "no_speech_prob": 0.0,
+      "start": 88.0,
+      "text": "被黑断了 被黑断了 被黑断了 兄弟姐妹们"
+    },
+    {
+      "avg_logprob": -0.310561,
+      "compression_ratio": 2.0,
+      "end": 103.0,
+      "no_speech_prob": 0.0,
+      "start": 94.0,
+      "text": "伟大的习主席 现在你在那里"
+    },
+    {
+      "avg_logprob": -0.243434,
+      "compression_ratio": 1.315789,
+      "end": 108.0,
+      "no_speech_prob": 0.0,
+      "start": 103.0,
+      "text": "拜托拜托你 别黑过老七"
+    },
+    {
+      "avg_logprob": -0.243434,
+      "compression_ratio": 1.315789,
+      "end": 112.0,
+      "no_speech_prob": 0.0,
+      "start": 108.0,
+      "text": "过老七是你的好兄弟"
+    },
+    {
+      "avg_logprob": -0.243434,
+      "compression_ratio": 1.315789,
+      "end": 117.0,
+      "no_speech_prob": 0.0,
+      "start": 114.0,
+      "text": "你黑我干嘛啊?你说你黑我干嘛嘛?"
+    },
+    {
+      "avg_logprob": -0.243434,
+      "compression_ratio": 1.315789,
+      "end": 119.0,
+      "no_speech_prob": 0.0,
+      "start": 117.0,
+      "text": "习主席 有用吗?"
+    },
+    {
+      "avg_logprob": -0.243434,
+      "compression_ratio": 1.315789,
+      "end": 127.0,
+      "no_speech_prob": 0.0,
+      "start": 123.0,
+      "text": "你说我的手机WhatsApp给我黑没了"
+    },
+    {
+      "avg_logprob": -0.243434,
+      "compression_ratio": 1.315789,
+      "end": 130.0,
+      "no_speech_prob": 0.0,
+      "start": 127.0,
+      "text": "我来下载WhatsApp都下载不了"
+    },
+    {
+      "avg_logprob": -0.243434,
+      "compression_ratio": 1.315789,
+      "end": 132.0,
+      "no_speech_prob": 0.0,
+      "start": 130.0,
+      "text": "我这下载就下载不了"
+    },
+    {
+      "avg_logprob": -0.21512,
+      "compression_ratio": 1.111888,
+      "end": 136.0,
+      "no_speech_prob": 0.0,
+      "start": 132.0,
+      "text": "全部过清空 手机还老开不了机"
+    },
+    {
+      "avg_logprob": -0.21512,
+      "compression_ratio": 1.111888,
+      "end": 138.0,
+      "no_speech_prob": 0.0,
+      "start": 136.0,
+      "text": "这直播一下吧 你老黑我"
+    },
+    {
+      "avg_logprob": -0.21512,
+      "compression_ratio": 1.111888,
+      "end": 140.0,
+      "no_speech_prob": 0.0,
+      "start": 139.0,
+      "text": "哎呀"
+    },
+    {
+      "avg_logprob": -0.21512,
+      "compression_ratio": 1.111888,
+      "end": 149.0,
+      "no_speech_prob": 0.0,
+      "start": 141.0,
+      "text": "伟大的习主席 你是全宇宙最扭叉的"
+    },
+    {
+      "avg_logprob": -0.21512,
+      "compression_ratio": 1.111888,
+      "end": 156.0,
+      "no_speech_prob": 0.0,
+      "start": 150.0,
+      "text": "你为什么还要黑这个国老七"
+    },
+    {
+      "avg_logprob": -0.234956,
+      "compression_ratio": 0.933333,
+      "end": 160.0,
+      "no_speech_prob": 0.0,
+      "start": 156.0,
+      "text": "拜托啦 你别这么傻"
+    },
+    {
+      "avg_logprob": -0.234956,
+      "compression_ratio": 0.933333,
+      "end": 168.0,
+      "no_speech_prob": 0.0,
+      "start": 165.0,
+      "text": "好了 兄弟姐妹们 集取佛 集取佛啊"
+    },
+    {
+      "avg_logprob": -0.166544,
+      "compression_ratio": 1.36646,
+      "end": 172.0,
+      "no_speech_prob": 0.0,
+      "start": 168.0,
+      "text": "就共产党现在真的是 你说你疯狂"
+    },
+    {
+      "avg_logprob": -0.166544,
+      "compression_ratio": 1.36646,
+      "end": 175.0,
+      "no_speech_prob": 0.0,
+      "start": 172.0,
+      "text": "我这手机都没法弄了 没法弄了啊"
+    },
+    {
+      "avg_logprob": -0.166544,
+      "compression_ratio": 1.36646,
+      "end": 178.0,
+      "no_speech_prob": 0.0,
+      "start": 175.0,
+      "text": "我到哪哪被黑客 我去人家律师楼"
+    },
+    {
+      "avg_logprob": -0.166544,
+      "compression_ratio": 1.36646,
+      "end": 180.0,
+      "no_speech_prob": 0.0,
+      "start": 178.0,
+      "text": "律师楼 门锁不管用"
+    },
+    {
+      "avg_logprob": -0.166544,
+      "compression_ratio": 1.36646,
+      "end": 183.0,
+      "no_speech_prob": 0.0,
+      "start": 180.0,
+      "text": "你说去人家律师楼人家电脑被黑"
+    },
+    {
+      "avg_logprob": -0.166544,
+      "compression_ratio": 1.36646,
+      "end": 186.0,
+      "no_speech_prob": 0.0,
+      "start": 184.0,
+      "text": "我到哪哪都被黑啊"
+    },
+    {
+      "avg_logprob": -0.223051,
+      "compression_ratio": 1.061224,
+      "end": 189.0,
+      "no_speech_prob": 0.0,
+      "start": 186.0,
+      "text": "然后呢 这回到伊朗去啊"
+    },
+    {
+      "avg_logprob": -0.223051,
+      "compression_ratio": 1.061224,
+      "end": 192.0,
+      "no_speech_prob": 0.0,
+      "start": 189.0,
+      "text": "主要是北朝鲜 这帮孙子"
+    },
+    {
+      "avg_logprob": -0.223051,
+      "compression_ratio": 1.061224,
+      "end": 194.0,
+      "no_speech_prob": 0.0,
+      "start": 192.0,
+      "text": "北朝鲜的导弹系统"
+    },
+    {
+      "avg_logprob": -0.223051,
+      "compression_ratio": 1.061224,
+      "end": 196.0,
+      "no_speech_prob": 0.0,
+      "start": 194.0,
+      "text": "记住啊 共产党的东风15"
+    },
+    {
+      "avg_logprob": -0.223051,
+      "compression_ratio": 1.061224,
+      "end": 200.0,
+      "no_speech_prob": 0.0,
+      "start": 196.0,
+      "text": "和41系统和41D A"
+    },
+    {
+      "avg_logprob": -0.223051,
+      "compression_ratio": 1.061224,
+      "end": 202.0,
+      "no_speech_prob": 0.0,
+      "start": 200.0,
+      "text": "是不会在外放的"
+    },
+    {
+      "avg_logprob": -0.105794,
+      "compression_ratio": 1.24,
+      "end": 205.0,
+      "no_speech_prob": 0.0,
+      "start": 202.0,
+      "text": "但就在短短的过去的二十几个月"
+    },
+    {
+      "avg_logprob": -0.105794,
+      "compression_ratio": 1.24,
+      "end": 207.0,
+      "no_speech_prob": 0.0,
+      "start": 205.0,
+      "text": "也就是病毒期间"
+    },
+    {
+      "avg_logprob": -0.105794,
+      "compression_ratio": 1.24,
+      "end": 210.0,
+      "no_speech_prob": 0.0,
+      "start": 207.0,
+      "text": "共产党大量的对导弹技术"
+    },
+    {
+      "avg_logprob": -0.105794,
+      "compression_ratio": 1.24,
+      "end": 216.0,
+      "no_speech_prob": 0.0,
+      "start": 211.0,
+      "text": "叫做不设任何门槛的进行对外"
+    },
+    {
+      "avg_logprob": -0.105794,
+      "compression_ratio": 1.24,
+      "end": 221.0,
+      "no_speech_prob": 0.0,
+      "start": 217.0,
+      "text": "扩张式的在海外建生产基地"
+    },
+    {
+      "avg_logprob": -0.105794,
+      "compression_ratio": 1.24,
+      "end": 224.0,
+      "no_speech_prob": 0.0,
+      "start": 222.0,
+      "text": "我告诉大家啊 都拿几个地方啊"
+    },
+    {
+      "avg_logprob": -0.105794,
+      "compression_ratio": 1.24,
+      "end": 228.0,
+      "no_speech_prob": 0.0,
+      "start": 224.0,
+      "text": "北朝鲜 有100多个人的队伍"
+    },
+    {
+      "avg_logprob": -0.105794,
+      "compression_ratio": 1.24,
+      "end": 231.0,
+      "no_speech_prob": 0.0,
+      "start": 228.0,
+      "text": "包括北朝鲜 建导弹造导弹"
+    },
+    {
+      "avg_logprob": -0.148133,
+      "compression_ratio": 1.385,
+      "end": 235.0,
+      "no_speech_prob": 0.0,
+      "start": 231.0,
+      "text": "发射车 发射架 陆机 海机"
+    },
+    {
+      "avg_logprob": -0.148133,
+      "compression_ratio": 1.385,
+      "end": 239.0,
+      "no_speech_prob": 0.0,
+      "start": 236.0,
+      "text": "还有地机 就是地下子"
+    },
+    {
+      "avg_logprob": -0.148133,
+      "compression_ratio": 1.385,
+      "end": 243.0,
+      "no_speech_prob": 0.0,
+      "start": 240.0,
+      "text": "就用车开着 拉着导弹"
+    },
+    {
+      "avg_logprob": -0.148133,
+      "compression_ratio": 1.385,
+      "end": 244.0,
+      "no_speech_prob": 0.0,
+      "start": 243.0,
+      "text": "马路上可以发"
+    },
+    {
+      "avg_logprob": -0.148133,
+      "compression_ratio": 1.385,
+      "end": 246.0,
+      "no_speech_prob": 0.0,
+      "start": 244.0,
+      "text": "开着开着一停 唰就出去了"
+    },
+    {
+      "avg_logprob": -0.148133,
+      "compression_ratio": 1.385,
+      "end": 247.0,
+      "no_speech_prob": 0.0,
+      "start": 246.0,
+      "text": "弄一发 是吧"
+    },
+    {
+      "avg_logprob": -0.148133,
+      "compression_ratio": 1.385,
+      "end": 250.0,
+      "no_speech_prob": 0.0,
+      "start": 247.0,
+      "text": "这叫什么 走着走着来一炮"
+    },
+    {
+      "avg_logprob": -0.148133,
+      "compression_ratio": 1.385,
+      "end": 253.0,
+      "no_speech_prob": 0.0,
+      "start": 250.0,
+      "text": "然后呢 在火车上来一炮"
+    },
+    {
+      "avg_logprob": -0.148133,
+      "compression_ratio": 1.385,
+      "end": 257.0,
+      "no_speech_prob": 0.0,
+      "start": 255.0,
+      "text": "在水里边船上来一炮"
+    },
+    {
+      "avg_logprob": -0.148133,
+      "compression_ratio": 1.385,
+      "end": 260.0,
+      "no_speech_prob": 0.0,
+      "start": 257.0,
+      "text": "潜水底 水底能来一炮"
+    },
+    {
+      "avg_logprob": -0.111159,
+      "compression_ratio": 0.977528,
+      "end": 263.0,
+      "no_speech_prob": 0.0,
+      "start": 260.0,
+      "text": "这大量扩展"
+    },
+    {
+      "avg_logprob": -0.111159,
+      "compression_ratio": 0.977528,
+      "end": 266.0,
+      "no_speech_prob": 0.0,
+      "start": 263.0,
+      "text": "这就叫全面开放"
+    },
+    {
+      "avg_logprob": -0.111159,
+      "compression_ratio": 0.977528,
+      "end": 268.0,
+      "no_speech_prob": 0.0,
+      "start": 266.0,
+      "text": "对战略伙伴"
+    },
+    {
+      "avg_logprob": -0.111159,
+      "compression_ratio": 0.977528,
+      "end": 270.0,
+      "no_speech_prob": 0.0,
+      "start": 268.0,
+      "text": "全天候战略伙伴的导弹系统"
+    },
+    {
+      "avg_logprob": -0.131014,
+      "compression_ratio": 1.248276,
+      "end": 274.0,
+      "no_speech_prob": 0.0,
+      "start": 270.0,
+      "text": "我向天发誓 美国百分之百"
+    },
+    {
+      "avg_logprob": -0.131014,
+      "compression_ratio": 1.248276,
+      "end": 276.0,
+      "no_speech_prob": 0.0,
+      "start": 274.0,
+      "text": "他不会全面知道"
+    },
+    {
+      "avg_logprob": -0.131014,
+      "compression_ratio": 1.248276,
+      "end": 279.0,
+      "no_speech_prob": 0.0,
+      "start": 276.0,
+      "text": "但是我在这之前跟美国人都说过"
+    },
+    {
+      "avg_logprob": -0.131014,
+      "compression_ratio": 1.248276,
+      "end": 280.0,
+      "no_speech_prob": 0.0,
+      "start": 279.0,
+      "text": "他们不信的"
+    },
+    {
+      "avg_logprob": -0.131014,
+      "compression_ratio": 1.248276,
+      "end": 282.0,
+      "no_speech_prob": 0.0,
+      "start": 280.0,
+      "text": "他们不信"
+    },
+    {
+      "avg_logprob": -0.131014,
+      "compression_ratio": 1.248276,
+      "end": 284.0,
+      "no_speech_prob": 0.0,
+      "start": 282.0,
+      "text": "但是未来他们会信的"
+    },
+    {
+      "avg_logprob": -0.131014,
+      "compression_ratio": 1.248276,
+      "end": 286.0,
+      "no_speech_prob": 0.0,
+      "start": 284.0,
+      "text": "我相信他们最后会信的"
+    },
+    {
+      "avg_logprob": -0.220772,
+      "compression_ratio": 1.131313,
+      "end": 288.0,
+      "no_speech_prob": 0.0,
+      "start": 286.0,
+      "text": "因为他真的会来了"
+    },
+    {
+      "avg_logprob": -0.220772,
+      "compression_ratio": 1.131313,
+      "end": 289.0,
+      "no_speech_prob": 0.0,
+      "start": 288.0,
+      "text": "因为他真的会来了"
+    },
+    {
+      "avg_logprob": -0.220772,
+      "compression_ratio": 1.131313,
+      "end": 294.0,
+      "no_speech_prob": 0.0,
+      "start": 292.0,
+      "text": "然后 第二个地方是哪里"
+    },
+    {
+      "avg_logprob": -0.220772,
+      "compression_ratio": 1.131313,
+      "end": 296.0,
+      "no_speech_prob": 0.0,
+      "start": 294.0,
+      "text": "伊朗"
+    },
+    {
+      "avg_logprob": -0.220772,
+      "compression_ratio": 1.131313,
+      "end": 298.0,
+      "no_speech_prob": 0.0,
+      "start": 296.0,
+      "text": "无人机"
+    },
+    {
+      "avg_logprob": -0.220772,
+      "compression_ratio": 1.131313,
+      "end": 300.0,
+      "no_speech_prob": 0.0,
+      "start": 298.0,
+      "text": "导弹"
+    },
+    {
+      "avg_logprob": -0.220772,
+      "compression_ratio": 1.131313,
+      "end": 301.0,
+      "no_speech_prob": 0.0,
+      "start": 300.0,
+      "text": "全面开始"
+    },
+    {
+      "avg_logprob": -0.158923,
+      "compression_ratio": 0.987805,
+      "end": 307.0,
+      "no_speech_prob": 0.0,
+      "start": 301.0,
+      "text": "接下来更重要的沙特"
+    },
+    {
+      "avg_logprob": -0.158923,
+      "compression_ratio": 0.987805,
+      "end": 309.0,
+      "no_speech_prob": 0.0,
+      "start": 307.0,
+      "text": "沙特的导弹"
+    },
+    {
+      "avg_logprob": -0.158923,
+      "compression_ratio": 0.987805,
+      "end": 311.0,
+      "no_speech_prob": 0.0,
+      "start": 309.0,
+      "text": "会让美国惊天的"
+    },
+    {
+      "avg_logprob": -0.158923,
+      "compression_ratio": 0.987805,
+      "end": 313.0,
+      "no_speech_prob": 0.0,
+      "start": 311.0,
+      "text": "它会吓死美国"
+    },
+    {
+      "avg_logprob": -0.262494,
+      "compression_ratio": 0.927835,
+      "end": 315.0,
+      "no_speech_prob": 0.0,
+      "start": 313.0,
+      "text": "给沙特的导弹"
+    },
+    {
+      "avg_logprob": -0.262494,
+      "compression_ratio": 0.927835,
+      "end": 316.0,
+      "no_speech_prob": 0.0,
+      "start": 315.0,
+      "text": "不仅给这个"
+    },
+    {
+      "avg_logprob": -0.262494,
+      "compression_ratio": 0.927835,
+      "end": 317.0,
+      "no_speech_prob": 0.0,
+      "start": 316.0,
+      "text": "一定是长城导弹"
+    },
+    {
+      "avg_logprob": -0.262494,
+      "compression_ratio": 0.927835,
+      "end": 319.0,
+      "no_speech_prob": 0.0,
+      "start": 317.0,
+      "text": "能打到美国奔土"
+    },
+    {
+      "avg_logprob": -0.262494,
+      "compression_ratio": 0.927835,
+      "end": 321.0,
+      "no_speech_prob": 0.0,
+      "start": 319.0,
+      "text": "走着看"
+    },
+    {
+      "avg_logprob": -0.262494,
+      "compression_ratio": 0.927835,
+      "end": 322.0,
+      "no_speech_prob": 0.0,
+      "start": 321.0,
+      "text": "然后"
+    },
+    {
+      "avg_logprob": -0.550305,
+      "compression_ratio": 1.69802,
+      "end": 323.0,
+      "no_speech_prob": 0.0,
+      "start": 322.0,
+      "text": "双弹"
+    },
+    {
+      "avg_logprob": -0.550305,
+      "compression_ratio": 1.69802,
+      "end": 324.0,
+      "no_speech_prob": 0.0,
+      "start": 323.0,
+      "text": "双弹"
+    },
+    {
+      "avg_logprob": -0.550305,
+      "compression_ratio": 1.69802,
+      "end": 325.0,
+      "no_speech_prob": 0.0,
+      "start": 324.0,
+      "text": "沙特"
+    },
+    {
+      "avg_logprob": -0.550305,
+      "compression_ratio": 1.69802,
+      "end": 326.0,
+      "no_speech_prob": 0.0,
+      "start": 325.0,
+      "text": "有大量的无人机"
+    },
+    {
+      "avg_logprob": -0.550305,
+      "compression_ratio": 1.69802,
+      "end": 327.0,
+      "no_speech_prob": 0.0,
+      "start": 326.0,
+      "text": "沙特会有无人机"
+    },
+    {
+      "avg_logprob": -0.550305,
+      "compression_ratio": 1.69802,
+      "end": 328.0,
+      "no_speech_prob": 0.0,
+      "start": 327.0,
+      "text": "已经有了"
+    },
+    {
+      "avg_logprob": -0.550305,
+      "compression_ratio": 1.69802,
+      "end": 330.0,
+      "no_speech_prob": 0.0,
+      "start": 328.0,
+      "text": "大量的生产无人机"
+    },
+    {
+      "avg_logprob": -0.550305,
+      "compression_ratio": 1.69802,
+      "end": 331.0,
+      "no_speech_prob": 0.0,
+      "start": 330.0,
+      "text": "伊朗无人机"
+    },
+    {
+      "avg_logprob": -0.550305,
+      "compression_ratio": 1.69802,
+      "end": 332.0,
+      "no_speech_prob": 0.0,
+      "start": 331.0,
+      "text": "北朝鲜下一个量"
+    },
+    {
+      "avg_logprob": -0.550305,
+      "compression_ratio": 1.69802,
+      "end": 333.0,
+      "no_speech_prob": 0.0,
+      "start": 332.0,
+      "text": "在世界亮相的"
+    },
+    {
+      "avg_logprob": -0.550305,
+      "compression_ratio": 1.69802,
+      "end": 334.0,
+      "no_speech_prob": 0.0,
+      "start": 333.0,
+      "text": "接下来"
+    },
+    {
+      "avg_logprob": -0.550305,
+      "compression_ratio": 1.69802,
+      "end": 335.0,
+      "no_speech_prob": 0.0,
+      "start": 334.0,
+      "text": "很快"
+    },
+    {
+      "avg_logprob": -0.550305,
+      "compression_ratio": 1.69802,
+      "end": 337.0,
+      "no_speech_prob": 0.0,
+      "start": 335.0,
+      "text": "北朝鲜上全世界亮相的"
+    },
+    {
+      "avg_logprob": -0.550305,
+      "compression_ratio": 1.69802,
+      "end": 338.0,
+      "no_speech_prob": 0.0,
+      "start": 337.0,
+      "text": "无人机"
+    },
+    {
+      "avg_logprob": -0.550305,
+      "compression_ratio": 1.69802,
+      "end": 339.0,
+      "no_speech_prob": 0.0,
+      "start": 338.0,
+      "text": "包括大量采购的"
+    },
+    {
+      "avg_logprob": -0.550305,
+      "compression_ratio": 1.69802,
+      "end": 340.0,
+      "no_speech_prob": 0.0,
+      "start": 339.0,
+      "text": "中国产的"
+    },
+    {
+      "avg_logprob": -0.550305,
+      "compression_ratio": 1.69802,
+      "end": 341.0,
+      "no_speech_prob": 0.0,
+      "start": 340.0,
+      "text": "所谓歼15的"
+    },
+    {
+      "avg_logprob": -0.550305,
+      "compression_ratio": 1.69802,
+      "end": 342.0,
+      "no_speech_prob": 0.0,
+      "start": 341.0,
+      "text": "加强机"
+    },
+    {
+      "avg_logprob": -0.550305,
+      "compression_ratio": 1.69802,
+      "end": 343.0,
+      "no_speech_prob": 0.0,
+      "start": 342.0,
+      "text": "啊"
+    },
+    {
+      "avg_logprob": -0.550305,
+      "compression_ratio": 1.69802,
+      "end": 343.96,
+      "no_speech_prob": 0.0,
+      "start": 343.0,
+      "text": "这架"
+    },
+    {
+      "avg_logprob": -0.550305,
+      "compression_ratio": 1.69802,
+      "end": 344.96,
+      "no_speech_prob": 0.0,
+      "start": 343.96,
+      "text": "那这架"
+    },
+    {
+      "avg_logprob": -0.550305,
+      "compression_ratio": 1.69802,
+      "end": 345.96,
+      "no_speech_prob": 0.0,
+      "start": 344.96,
+      "text": "在本来"
+    },
+    {
+      "avg_logprob": -0.550305,
+      "compression_ratio": 1.69802,
+      "end": 346.88,
+      "no_speech_prob": 0.0,
+      "start": 345.96,
+      "text": "他这架"
+    },
+    {
+      "avg_logprob": -0.550305,
+      "compression_ratio": 1.69802,
+      "end": 347.96,
+      "no_speech_prob": 0.0,
+      "start": 346.88,
+      "text": "大量采购的"
+    },
+    {
+      "avg_logprob": -0.550305,
+      "compression_ratio": 1.69802,
+      "end": 348.96,
+      "no_speech_prob": 0.0,
+      "start": 347.96,
+      "text": "所谓歼15的"
+    },
+    {
+      "avg_logprob": -0.550305,
+      "compression_ratio": 1.69802,
+      "end": 349.96,
+      "no_speech_prob": 0.0,
+      "start": 348.96,
+      "text": "加强机"
+    },
+    {
+      "avg_logprob": -0.550305,
+      "compression_ratio": 1.69802,
+      "end": 350.96,
+      "no_speech_prob": 0.0,
+      "start": 349.96,
+      "text": "啊"
+    },
+    {
+      "avg_logprob": -0.181688,
+      "compression_ratio": 1.329897,
+      "end": 355.32,
+      "no_speech_prob": 0.0,
+      "start": 350.96,
+      "text": "几百架不是几十架给北朝鲜"
+    },
+    {
+      "avg_logprob": -0.181688,
+      "compression_ratio": 1.329897,
+      "end": 359.66,
+      "no_speech_prob": 0.0,
+      "start": 355.32,
+      "text": "北朝鲜有这个尖击机有导弹"
+    },
+    {
+      "avg_logprob": -0.181688,
+      "compression_ratio": 1.329897,
+      "end": 364.78,
+      "no_speech_prob": 0.0,
+      "start": 359.66,
+      "text": "核武器就是随便马上核武器核技术"
+    },
+    {
+      "avg_logprob": -0.181688,
+      "compression_ratio": 1.329897,
+      "end": 368.98,
+      "no_speech_prob": 0.0,
+      "start": 364.78,
+      "text": "大量的就会给伊朗北朝鲜沙特"
+    },
+    {
+      "avg_logprob": -0.181688,
+      "compression_ratio": 1.329897,
+      "end": 374.0,
+      "no_speech_prob": 0.0,
+      "start": 368.98,
+      "text": "下一个就是从现在开始起"
+    },
+    {
+      "avg_logprob": -0.181688,
+      "compression_ratio": 1.329897,
+      "end": 376.46,
+      "no_speech_prob": 0.0,
+      "start": 374.0,
+      "text": "人类上将面临最大的问题"
+    },
+    {
+      "avg_logprob": -0.181688,
+      "compression_ratio": 1.329897,
+      "end": 378.56,
+      "no_speech_prob": 0.0,
+      "start": 376.46,
+      "text": "沙特如果有了核武器你打败"
+    },
+    {
+      "avg_logprob": -0.192761,
+      "compression_ratio": 1.291391,
+      "end": 382.56,
+      "no_speech_prob": 0.0,
+      "start": 378.56,
+      "text": "核扩散导弹扩散"
+    },
+    {
+      "avg_logprob": -0.192761,
+      "compression_ratio": 1.291391,
+      "end": 384.8,
+      "no_speech_prob": 0.0,
+      "start": 382.56,
+      "text": "原来所谓的短程啊"
+    },
+    {
+      "avg_logprob": -0.192761,
+      "compression_ratio": 1.291391,
+      "end": 385.8,
+      "no_speech_prob": 0.0,
+      "start": 384.8,
+      "text": "一百五十公里以内"
+    },
+    {
+      "avg_logprob": -0.192761,
+      "compression_ratio": 1.291391,
+      "end": 389.56,
+      "no_speech_prob": 0.0,
+      "start": 385.8,
+      "text": "现在完全是一万公里的导弹都给你"
+    },
+    {
+      "avg_logprob": -0.192761,
+      "compression_ratio": 1.291391,
+      "end": 398.82,
+      "no_speech_prob": 0.0,
+      "start": 389.56,
+      "text": "所以说用导弹"
+    },
+    {
+      "avg_logprob": -0.192761,
+      "compression_ratio": 1.291391,
+      "end": 401.56,
+      "no_speech_prob": 0.0,
+      "start": 398.82,
+      "text": "用核武器核技术"
+    },
+    {
+      "avg_logprob": -0.192761,
+      "compression_ratio": 1.291391,
+      "end": 403.4,
+      "no_speech_prob": 0.0,
+      "start": 401.56,
+      "text": "无人机无人机生产技术"
+    },
+    {
+      "avg_logprob": -0.192761,
+      "compression_ratio": 1.291391,
+      "end": 404.72,
+      "no_speech_prob": 0.0,
+      "start": 403.4,
+      "text": "授权生产"
+    },
+    {
+      "avg_logprob": -0.171555,
+      "compression_ratio": 1.243902,
+      "end": 408.72,
+      "no_speech_prob": 0.0,
+      "start": 404.72,
+      "text": "当美国醒过来的时候"
+    },
+    {
+      "avg_logprob": -0.171555,
+      "compression_ratio": 1.243902,
+      "end": 410.96,
+      "no_speech_prob": 0.0,
+      "start": 408.72,
+      "text": "美国在亚太的所谓的印太的战略部队"
+    },
+    {
+      "avg_logprob": -0.171555,
+      "compression_ratio": 1.243902,
+      "end": 412.96,
+      "no_speech_prob": 0.0,
+      "start": 410.96,
+      "text": "那都是早的啊"
+    },
+    {
+      "avg_logprob": -0.171555,
+      "compression_ratio": 1.243902,
+      "end": 416.72,
+      "no_speech_prob": 0.0,
+      "start": 412.96,
+      "text": "所以说伊朗所去的军机是干什么去了"
+    },
+    {
+      "avg_logprob": -0.171555,
+      "compression_ratio": 1.243902,
+      "end": 420.72,
+      "no_speech_prob": 0.0,
+      "start": 416.72,
+      "text": "是最高端的无人机和导弹技术的"
+    },
+    {
+      "avg_logprob": -0.171555,
+      "compression_ratio": 1.243902,
+      "end": 423.72,
+      "no_speech_prob": 0.0,
+      "start": 420.72,
+      "text": "技术和专业人员"
+    },
+    {
+      "avg_logprob": -0.163047,
+      "compression_ratio": 1.235294,
+      "end": 426.72,
+      "no_speech_prob": 0.0,
+      "start": 423.72,
+      "text": "还有现在在整个维稳上"
+    },
+    {
+      "avg_logprob": -0.163047,
+      "compression_ratio": 1.235294,
+      "end": 428.72,
+      "no_speech_prob": 0.0,
+      "start": 426.72,
+      "text": "整个中共维稳的东西"
+    },
+    {
+      "avg_logprob": -0.163047,
+      "compression_ratio": 1.235294,
+      "end": 429.96,
+      "no_speech_prob": 0.0,
+      "start": 428.72,
+      "text": "几乎全给了伊朗"
+    },
+    {
+      "avg_logprob": -0.163047,
+      "compression_ratio": 1.235294,
+      "end": 432.96,
+      "no_speech_prob": 0.0,
+      "start": 429.96,
+      "text": "然后正在帮助伊朗建立一个独立的通信系统"
+    },
+    {
+      "avg_logprob": -0.163047,
+      "compression_ratio": 1.235294,
+      "end": 434.72,
+      "no_speech_prob": 0.0,
+      "start": 432.96,
+      "text": "包括沙特"
+    },
+    {
+      "avg_logprob": -0.163047,
+      "compression_ratio": 1.235294,
+      "end": 437.72,
+      "no_speech_prob": 0.0,
+      "start": 436.72,
+      "text": "事很大呀"
+    },
+    {
+      "avg_logprob": -0.163047,
+      "compression_ratio": 1.235294,
+      "end": 439.72,
+      "no_speech_prob": 0.0,
+      "start": 437.72,
+      "text": "事很大"
+    },
+    {
+      "avg_logprob": -0.163047,
+      "compression_ratio": 1.235294,
+      "end": 441.72,
+      "no_speech_prob": 0.0,
+      "start": 439.72,
+      "text": "第三"
+    },
+    {
+      "avg_logprob": -0.163047,
+      "compression_ratio": 1.235294,
+      "end": 443.72,
+      "no_speech_prob": 0.0,
+      "start": 441.72,
+      "text": "世界最大的数字货币交易所"
+    },
+    {
+      "avg_logprob": -0.129992,
+      "compression_ratio": 1.157303,
+      "end": 445.72,
+      "no_speech_prob": 0.0,
+      "start": 443.72,
+      "text": "FTS"
+    },
+    {
+      "avg_logprob": -0.129992,
+      "compression_ratio": 1.157303,
+      "end": 447.72,
+      "no_speech_prob": 0.0,
+      "start": 445.72,
+      "text": "你挪用客户资金"
+    },
+    {
+      "avg_logprob": -0.129992,
+      "compression_ratio": 1.157303,
+      "end": 451.72,
+      "no_speech_prob": 0.0,
+      "start": 447.72,
+      "text": "被黑客窃取数字货币申请破产了"
+    },
+    {
+      "avg_logprob": -0.129992,
+      "compression_ratio": 1.157303,
+      "end": 454.72,
+      "no_speech_prob": 0.0,
+      "start": 451.72,
+      "text": "22日法庭举行首场听证会"
+    },
+    {
+      "avg_logprob": -0.129992,
+      "compression_ratio": 1.157303,
+      "end": 455.72,
+      "no_speech_prob": 0.0,
+      "start": 454.72,
+      "text": "请问七哥"
+    },
+    {
+      "avg_logprob": -0.129992,
+      "compression_ratio": 1.157303,
+      "end": 460.72,
+      "no_speech_prob": 0.0,
+      "start": 455.72,
+      "text": "今后全球数字货币市场将会迎来什么样的惊涛骇浪"
+    },
+    {
+      "avg_logprob": -0.129992,
+      "compression_ratio": 1.157303,
+      "end": 462.72,
+      "no_speech_prob": 0.0,
+      "start": 460.72,
+      "text": "安全负责任的数字货币"
+    },
+    {
+      "avg_logprob": -0.099991,
+      "compression_ratio": 1.212766,
+      "end": 465.72,
+      "no_speech_prob": 0.0,
+      "start": 462.72,
+      "text": "在未来金融世界将会起到怎么样的丁海深圳作用"
+    },
+    {
+      "avg_logprob": -0.099991,
+      "compression_ratio": 1.212766,
+      "end": 466.72,
+      "no_speech_prob": 0.0,
+      "start": 465.72,
+      "text": "谢谢"
+    },
+    {
+      "avg_logprob": -0.099991,
+      "compression_ratio": 1.212766,
+      "end": 467.72,
+      "no_speech_prob": 0.0,
+      "start": 466.72,
+      "text": "第一个"
+    },
+    {
+      "avg_logprob": -0.099991,
+      "compression_ratio": 1.212766,
+      "end": 471.72,
+      "no_speech_prob": 0.0,
+      "start": 467.72,
+      "text": "FTS所谓黑客的黑手数币全胡扯"
+    },
+    {
+      "avg_logprob": -0.099991,
+      "compression_ratio": 1.212766,
+      "end": 473.72,
+      "no_speech_prob": 0.0,
+      "start": 471.72,
+      "text": "自导自演"
+    },
+    {
+      "avg_logprob": -0.099991,
+      "compression_ratio": 1.212766,
+      "end": 474.72,
+      "no_speech_prob": 0.0,
+      "start": 473.72,
+      "text": "完全胡说八道"
+    },
+    {
+      "avg_logprob": -0.099991,
+      "compression_ratio": 1.212766,
+      "end": 479.72,
+      "no_speech_prob": 0.0,
+      "start": 474.72,
+      "text": "他挪用客户资金是蓄意的"
+    },
+    {
+      "avg_logprob": -0.099991,
+      "compression_ratio": 1.212766,
+      "end": 481.72,
+      "no_speech_prob": 0.0,
+      "start": 479.72,
+      "text": "恶意的诈骗犯罪行为"
+    },
+    {
+      "avg_logprob": -0.099991,
+      "compression_ratio": 1.212766,
+      "end": 483.72,
+      "no_speech_prob": 0.0,
+      "start": 481.72,
+      "text": "甭说数字货币"
+    },
+    {
+      "avg_logprob": -0.099991,
+      "compression_ratio": 1.212766,
+      "end": 484.72,
+      "no_speech_prob": 0.0,
+      "start": 483.72,
+      "text": "法币"
+    },
+    {
+      "avg_logprob": -0.099991,
+      "compression_ratio": 1.212766,
+      "end": 485.72,
+      "no_speech_prob": 0.0,
+      "start": 484.72,
+      "text": "傻币"
+    },
+    {
+      "avg_logprob": -0.099991,
+      "compression_ratio": 1.212766,
+      "end": 486.72,
+      "no_speech_prob": 0.0,
+      "start": 485.72,
+      "text": "什么币"
+    },
+    {
+      "avg_logprob": -0.099991,
+      "compression_ratio": 1.212766,
+      "end": 491.72,
+      "no_speech_prob": 0.0,
+      "start": 487.72,
+      "text": "你这个运行商和运行者想骗人"
+    },
+    {
+      "avg_logprob": -0.093305,
+      "compression_ratio": 1.253165,
+      "end": 494.72,
+      "no_speech_prob": 0.0,
+      "start": 491.72,
+      "text": "那谁也没有任何系统让你好"
+    },
+    {
+      "avg_logprob": -0.093305,
+      "compression_ratio": 1.253165,
+      "end": 496.72,
+      "no_speech_prob": 0.0,
+      "start": 494.72,
+      "text": "这跟数字货币没半毛关系"
+    },
+    {
+      "avg_logprob": -0.093305,
+      "compression_ratio": 1.253165,
+      "end": 498.72,
+      "no_speech_prob": 0.0,
+      "start": 496.72,
+      "text": "他们一帮犯罪分子"
+    },
+    {
+      "avg_logprob": -0.093305,
+      "compression_ratio": 1.253165,
+      "end": 500.72,
+      "no_speech_prob": 0.0,
+      "start": 498.72,
+      "text": "然后币安更是如此"
+    },
+    {
+      "avg_logprob": -0.093305,
+      "compression_ratio": 1.253165,
+      "end": 503.72,
+      "no_speech_prob": 0.0,
+      "start": 500.72,
+      "text": "人家说币安是行走的炸弹"
+    },
+    {
+      "avg_logprob": -0.093305,
+      "compression_ratio": 1.253165,
+      "end": 505.72,
+      "no_speech_prob": 0.0,
+      "start": 503.72,
+      "text": "我说那你太看得起了"
+    },
+    {
+      "avg_logprob": -0.093305,
+      "compression_ratio": 1.253165,
+      "end": 512.72,
+      "no_speech_prob": 0.0,
+      "start": 505.72,
+      "text": "币安是共产党设置好在西方世界的金融定时炸弹"
+    },
+    {
+      "avg_logprob": -0.093305,
+      "compression_ratio": 1.253165,
+      "end": 519.72,
+      "no_speech_prob": 0.0,
+      "start": 513.72,
+      "text": "昨天炸那些老百姓贪婪的想当富豪的老百姓"
+    },
+    {
+      "avg_logprob": -0.155034,
+      "compression_ratio": 1.3,
+      "end": 521.72,
+      "no_speech_prob": 0.0,
+      "start": 519.72,
+      "text": "像我们战友当中很多人连约翰"
+    },
+    {
+      "avg_logprob": -0.155034,
+      "compression_ratio": 1.3,
+      "end": 525.72,
+      "no_speech_prob": 0.0,
+      "start": 521.72,
+      "text": "约翰哥哥都去买那个什么币安的币"
+    },
+    {
+      "avg_logprob": -0.155034,
+      "compression_ratio": 1.3,
+      "end": 528.72,
+      "no_speech_prob": 0.0,
+      "start": 525.72,
+      "text": "连我们小飞象都买币安的币"
+    },
+    {
+      "avg_logprob": -0.155034,
+      "compression_ratio": 1.3,
+      "end": 532.72,
+      "no_speech_prob": 0.0,
+      "start": 528.72,
+      "text": "就梦想着就是自己下一把堵能发大财子"
+    },
+    {
+      "avg_logprob": -0.155034,
+      "compression_ratio": 1.3,
+      "end": 534.72,
+      "no_speech_prob": 0.0,
+      "start": 532.72,
+      "text": "就炸死你们了这回"
+    },
+    {
+      "avg_logprob": -0.155034,
+      "compression_ratio": 1.3,
+      "end": 536.72,
+      "no_speech_prob": 0.0,
+      "start": 534.72,
+      "text": "然后就炸死那些什么大马西啊"
+    },
+    {
+      "avg_logprob": -0.155034,
+      "compression_ratio": 1.3,
+      "end": 537.72,
+      "no_speech_prob": 0.0,
+      "start": 536.72,
+      "text": "是吧"
+    },
+    {
+      "avg_logprob": -0.155034,
+      "compression_ratio": 1.3,
+      "end": 538.72,
+      "no_speech_prob": 0.0,
+      "start": 537.72,
+      "text": "新加坡啊"
+    },
+    {
+      "avg_logprob": -0.155034,
+      "compression_ratio": 1.3,
+      "end": 539.72,
+      "no_speech_prob": 0.0,
+      "start": 538.72,
+      "text": "是吧"
+    },
+    {
+      "avg_logprob": -0.155034,
+      "compression_ratio": 1.3,
+      "end": 540.72,
+      "no_speech_prob": 0.0,
+      "start": 539.72,
+      "text": "养老基金啊"
+    },
+    {
+      "avg_logprob": -0.101402,
+      "compression_ratio": 1.25,
+      "end": 544.72,
+      "no_speech_prob": 0.0,
+      "start": 540.72,
+      "text": "还有像那些所谓贪婪的在床上躺的"
+    },
+    {
+      "avg_logprob": -0.101402,
+      "compression_ratio": 1.25,
+      "end": 545.72,
+      "no_speech_prob": 0.0,
+      "start": 544.72,
+      "text": "已经都插着管子了"
+    },
+    {
+      "avg_logprob": -0.101402,
+      "compression_ratio": 1.25,
+      "end": 549.72,
+      "no_speech_prob": 0.0,
+      "start": 545.72,
+      "text": "还梦想着再活一千年的那些老杂毛们"
+    },
+    {
+      "avg_logprob": -0.101402,
+      "compression_ratio": 1.25,
+      "end": 550.72,
+      "no_speech_prob": 0.0,
+      "start": 549.72,
+      "text": "肯定炸死你"
+    },
+    {
+      "avg_logprob": -0.101402,
+      "compression_ratio": 1.25,
+      "end": 553.72,
+      "no_speech_prob": 0.0,
+      "start": 550.72,
+      "text": "准备好就是骗你的"
+    },
+    {
+      "avg_logprob": -0.101402,
+      "compression_ratio": 1.25,
+      "end": 555.72,
+      "no_speech_prob": 0.0,
+      "start": 553.72,
+      "text": "数字货币市场"
+    },
+    {
+      "avg_logprob": -0.101402,
+      "compression_ratio": 1.25,
+      "end": 558.72,
+      "no_speech_prob": 0.0,
+      "start": 555.72,
+      "text": "负责任的数字货币一定是人类的未来"
+    },
+    {
+      "avg_logprob": -0.101402,
+      "compression_ratio": 1.25,
+      "end": 562.72,
+      "no_speech_prob": 0.0,
+      "start": 558.72,
+      "text": "现在在世上交易的9200多家"
+    },
+    {
+      "avg_logprob": -0.101402,
+      "compression_ratio": 1.25,
+      "end": 564.72,
+      "no_speech_prob": 0.0,
+      "start": 562.72,
+      "text": "这个数字货币全球"
+    },
+    {
+      "avg_logprob": -0.098101,
+      "compression_ratio": 1.325342,
+      "end": 566.72,
+      "no_speech_prob": 0.0,
+      "start": 564.72,
+      "text": "原来是大概是一万一千家"
+    },
+    {
+      "avg_logprob": -0.098101,
+      "compression_ratio": 1.325342,
+      "end": 568.72,
+      "no_speech_prob": 0.0,
+      "start": 566.72,
+      "text": "现在一万一万二千家"
+    },
+    {
+      "avg_logprob": -0.098101,
+      "compression_ratio": 1.325342,
+      "end": 569.72,
+      "no_speech_prob": 0.0,
+      "start": 568.72,
+      "text": "现在剩了9200多家"
+    },
+    {
+      "avg_logprob": -0.098101,
+      "compression_ratio": 1.325342,
+      "end": 571.72,
+      "no_speech_prob": 0.0,
+      "start": 569.72,
+      "text": "全球上一万四千家货币"
+    },
+    {
+      "avg_logprob": -0.098101,
+      "compression_ratio": 1.325342,
+      "end": 572.72,
+      "no_speech_prob": 0.0,
+      "start": 571.72,
+      "text": "原来两万多家"
+    },
+    {
+      "avg_logprob": -0.098101,
+      "compression_ratio": 1.325342,
+      "end": 574.72,
+      "no_speech_prob": 0.0,
+      "start": 572.72,
+      "text": "最后我认为剩下不会超过五家"
+    },
+    {
+      "avg_logprob": -0.098101,
+      "compression_ratio": 1.325342,
+      "end": 576.72,
+      "no_speech_prob": 0.0,
+      "start": 574.72,
+      "text": "基本全都结束"
+    },
+    {
+      "avg_logprob": -0.098101,
+      "compression_ratio": 1.325342,
+      "end": 578.72,
+      "no_speech_prob": 0.0,
+      "start": 576.72,
+      "text": "比特币最后一定会归零"
+    },
+    {
+      "avg_logprob": -0.098101,
+      "compression_ratio": 1.325342,
+      "end": 581.72,
+      "no_speech_prob": 0.0,
+      "start": 578.72,
+      "text": "包括以太币都有可能归零"
+    },
+    {
+      "avg_logprob": -0.098101,
+      "compression_ratio": 1.325342,
+      "end": 584.72,
+      "no_speech_prob": 0.0,
+      "start": 581.72,
+      "text": "Coinbase这些几乎都会没有"
+    },
+    {
+      "avg_logprob": -0.098101,
+      "compression_ratio": 1.325342,
+      "end": 585.72,
+      "no_speech_prob": 0.0,
+      "start": 584.72,
+      "text": "大家记住"
+    },
+    {
+      "avg_logprob": -0.098101,
+      "compression_ratio": 1.325342,
+      "end": 588.72,
+      "no_speech_prob": 0.0,
+      "start": 586.72,
+      "text": "我到现在我就纳闷"
+    },
+    {
+      "avg_logprob": -0.098101,
+      "compression_ratio": 1.325342,
+      "end": 590.72,
+      "no_speech_prob": 0.0,
+      "start": 588.72,
+      "text": "世界上谁不比郭文贵聪明啊"
+    },
+    {
+      "avg_logprob": -0.098101,
+      "compression_ratio": 1.325342,
+      "end": 592.72,
+      "no_speech_prob": 0.0,
+      "start": 590.72,
+      "text": "什么人不比文贵独自书多"
+    },
+    {
+      "avg_logprob": -0.082486,
+      "compression_ratio": 1.417431,
+      "end": 594.72,
+      "no_speech_prob": 0.0,
+      "start": 592.72,
+      "text": "什么人不比郭文贵牛叉啊"
+    },
+    {
+      "avg_logprob": -0.082486,
+      "compression_ratio": 1.417431,
+      "end": 595.72,
+      "no_speech_prob": 0.0,
+      "start": 594.72,
+      "text": "是吧"
+    },
+    {
+      "avg_logprob": -0.082486,
+      "compression_ratio": 1.417431,
+      "end": 596.72,
+      "no_speech_prob": 0.0,
+      "start": 595.72,
+      "text": "郭文贵算个毛啊"
+    },
+    {
+      "avg_logprob": -0.082486,
+      "compression_ratio": 1.417431,
+      "end": 599.72,
+      "no_speech_prob": 0.0,
+      "start": 596.72,
+      "text": "但是为什么全世界都没搞明白一件事情"
+    },
+    {
+      "avg_logprob": -0.082486,
+      "compression_ratio": 1.417431,
+      "end": 602.72,
+      "no_speech_prob": 0.0,
+      "start": 600.72,
+      "text": "搞数字货币的"
+    },
+    {
+      "avg_logprob": -0.082486,
+      "compression_ratio": 1.417431,
+      "end": 604.72,
+      "no_speech_prob": 0.0,
+      "start": 602.72,
+      "text": "你买的这些FTX"
+    },
+    {
+      "avg_logprob": -0.082486,
+      "compression_ratio": 1.417431,
+      "end": 606.72,
+      "no_speech_prob": 0.0,
+      "start": 604.72,
+      "text": "你买的这些货币"
+    },
+    {
+      "avg_logprob": -0.082486,
+      "compression_ratio": 1.417431,
+      "end": 609.72,
+      "no_speech_prob": 0.0,
+      "start": 606.72,
+      "text": "你买的是叫交易所"
+    },
+    {
+      "avg_logprob": -0.082486,
+      "compression_ratio": 1.417431,
+      "end": 612.72,
+      "no_speech_prob": 0.0,
+      "start": 609.72,
+      "text": "你买的不是货币"
+    },
+    {
+      "avg_logprob": -0.082486,
+      "compression_ratio": 1.417431,
+      "end": 615.72,
+      "no_speech_prob": 0.0,
+      "start": 612.72,
+      "text": "FTX里边给你搞的是交易所"
+    },
+    {
+      "avg_logprob": -0.082486,
+      "compression_ratio": 1.417431,
+      "end": 618.72,
+      "no_speech_prob": 0.0,
+      "start": 615.72,
+      "text": "连那机构投资者都是投资的交易所"
+    },
+    {
+      "avg_logprob": -0.082486,
+      "compression_ratio": 1.417431,
+      "end": 621.72,
+      "no_speech_prob": 0.0,
+      "start": 618.72,
+      "text": "你要买他的币"
+    },
+    {
+      "avg_logprob": -0.095316,
+      "compression_ratio": 1.323144,
+      "end": 623.72,
+      "no_speech_prob": 0.0,
+      "start": 621.72,
+      "text": "如果买他的币的话"
+    },
+    {
+      "avg_logprob": -0.095316,
+      "compression_ratio": 1.323144,
+      "end": 624.72,
+      "no_speech_prob": 0.0,
+      "start": 623.72,
+      "text": "他应该有保证"
+    },
+    {
+      "avg_logprob": -0.095316,
+      "compression_ratio": 1.323144,
+      "end": 625.72,
+      "no_speech_prob": 0.0,
+      "start": 624.72,
+      "text": "是吧"
+    },
+    {
+      "avg_logprob": -0.095316,
+      "compression_ratio": 1.323144,
+      "end": 627.72,
+      "no_speech_prob": 0.0,
+      "start": 625.72,
+      "text": "他的资金要动用了"
+    },
+    {
+      "avg_logprob": -0.095316,
+      "compression_ratio": 1.323144,
+      "end": 629.72,
+      "no_speech_prob": 0.0,
+      "start": 627.72,
+      "text": "他应该承担什么责任"
+    },
+    {
+      "avg_logprob": -0.095316,
+      "compression_ratio": 1.323144,
+      "end": 630.72,
+      "no_speech_prob": 0.0,
+      "start": 629.72,
+      "text": "刑事责任"
+    },
+    {
+      "avg_logprob": -0.095316,
+      "compression_ratio": 1.323144,
+      "end": 631.72,
+      "no_speech_prob": 0.0,
+      "start": 630.72,
+      "text": "那还用开庭吗"
+    },
+    {
+      "avg_logprob": -0.095316,
+      "compression_ratio": 1.323144,
+      "end": 632.72,
+      "no_speech_prob": 0.0,
+      "start": 631.72,
+      "text": "开什么庭啊"
+    },
+    {
+      "avg_logprob": -0.095316,
+      "compression_ratio": 1.323144,
+      "end": 635.72,
+      "no_speech_prob": 0.0,
+      "start": 634.72,
+      "text": "对吧"
+    },
+    {
+      "avg_logprob": -0.095316,
+      "compression_ratio": 1.323144,
+      "end": 637.72,
+      "no_speech_prob": 0.0,
+      "start": 636.72,
+      "text": "多简单"
+    },
+    {
+      "avg_logprob": -0.095316,
+      "compression_ratio": 1.323144,
+      "end": 639.72,
+      "no_speech_prob": 0.0,
+      "start": 637.72,
+      "text": "你买交易所的股份"
+    },
+    {
+      "avg_logprob": -0.095316,
+      "compression_ratio": 1.323144,
+      "end": 640.72,
+      "no_speech_prob": 0.0,
+      "start": 639.72,
+      "text": "和投资交易所"
+    },
+    {
+      "avg_logprob": -0.095316,
+      "compression_ratio": 1.323144,
+      "end": 642.72,
+      "no_speech_prob": 0.0,
+      "start": 640.72,
+      "text": "和买这个币"
+    },
+    {
+      "avg_logprob": -0.095316,
+      "compression_ratio": 1.323144,
+      "end": 643.72,
+      "no_speech_prob": 0.0,
+      "start": 642.72,
+      "text": "两回事儿"
+    },
+    {
+      "avg_logprob": -0.095316,
+      "compression_ratio": 1.323144,
+      "end": 645.72,
+      "no_speech_prob": 0.0,
+      "start": 643.72,
+      "text": "买币如果人白皮书给你写了"
+    },
+    {
+      "avg_logprob": -0.095316,
+      "compression_ratio": 1.323144,
+      "end": 646.72,
+      "no_speech_prob": 0.0,
+      "start": 645.72,
+      "text": "我这玩意啥也没有"
+    },
+    {
+      "avg_logprob": -0.095316,
+      "compression_ratio": 1.323144,
+      "end": 647.72,
+      "no_speech_prob": 0.0,
+      "start": 646.72,
+      "text": "你爱买就买"
+    },
+    {
+      "avg_logprob": -0.111539,
+      "compression_ratio": 1.344828,
+      "end": 649.72,
+      "no_speech_prob": 0.0,
+      "start": 647.72,
+      "text": "那你活该你赔了"
+    },
+    {
+      "avg_logprob": -0.111539,
+      "compression_ratio": 1.344828,
+      "end": 651.72,
+      "no_speech_prob": 0.0,
+      "start": 649.72,
+      "text": "现在的数字货币"
+    },
+    {
+      "avg_logprob": -0.111539,
+      "compression_ratio": 1.344828,
+      "end": 653.72,
+      "no_speech_prob": 0.0,
+      "start": 651.72,
+      "text": "全球的数字货币都是玩什么"
+    },
+    {
+      "avg_logprob": -0.111539,
+      "compression_ratio": 1.344828,
+      "end": 654.72,
+      "no_speech_prob": 0.0,
+      "start": 653.72,
+      "text": "什么也没有"
+    },
+    {
+      "avg_logprob": -0.111539,
+      "compression_ratio": 1.344828,
+      "end": 655.72,
+      "no_speech_prob": 0.0,
+      "start": 654.72,
+      "text": "我就跟你说明白了"
+    },
+    {
+      "avg_logprob": -0.111539,
+      "compression_ratio": 1.344828,
+      "end": 657.72,
+      "no_speech_prob": 0.0,
+      "start": 655.72,
+      "text": "我就是在这边写这个区块链"
+    },
+    {
+      "avg_logprob": -0.111539,
+      "compression_ratio": 1.344828,
+      "end": 660.72,
+      "no_speech_prob": 0.0,
+      "start": 657.72,
+      "text": "你多安全的区块链"
+    },
+    {
+      "avg_logprob": -0.111539,
+      "compression_ratio": 1.344828,
+      "end": 662.72,
+      "no_speech_prob": 0.0,
+      "start": 660.72,
+      "text": "如果他没有锚定价值"
+    },
+    {
+      "avg_logprob": -0.111539,
+      "compression_ratio": 1.344828,
+      "end": 665.72,
+      "no_speech_prob": 0.0,
+      "start": 662.72,
+      "text": "或者他没有一个避险机制"
+    },
+    {
+      "avg_logprob": -0.111539,
+      "compression_ratio": 1.344828,
+      "end": 669.72,
+      "no_speech_prob": 0.0,
+      "start": 665.72,
+      "text": "或者这个币不能明确告诉你"
+    },
+    {
+      "avg_logprob": -0.095719,
+      "compression_ratio": 1.319588,
+      "end": 671.72,
+      "no_speech_prob": 0.0,
+      "start": 669.72,
+      "text": "他升职的基本点"
+    },
+    {
+      "avg_logprob": -0.095719,
+      "compression_ratio": 1.319588,
+      "end": 672.72,
+      "no_speech_prob": 0.0,
+      "start": 671.72,
+      "text": "谁炒作"
+    },
+    {
+      "avg_logprob": -0.095719,
+      "compression_ratio": 1.319588,
+      "end": 673.72,
+      "no_speech_prob": 0.0,
+      "start": 672.72,
+      "text": "你跟他炒作"
+    },
+    {
+      "avg_logprob": -0.095719,
+      "compression_ratio": 1.319588,
+      "end": 674.72,
+      "no_speech_prob": 0.0,
+      "start": 673.72,
+      "text": "你被骗了"
+    },
+    {
+      "avg_logprob": -0.095719,
+      "compression_ratio": 1.319588,
+      "end": 675.72,
+      "no_speech_prob": 0.0,
+      "start": 674.72,
+      "text": "你活该"
+    },
+    {
+      "avg_logprob": -0.095719,
+      "compression_ratio": 1.319588,
+      "end": 678.72,
+      "no_speech_prob": 0.0,
+      "start": 676.72,
+      "text": "而全人类的数字货币"
+    },
+    {
+      "avg_logprob": -0.095719,
+      "compression_ratio": 1.319588,
+      "end": 682.72,
+      "no_speech_prob": 0.0,
+      "start": 678.72,
+      "text": "99.9999999999"
+    },
+    {
+      "avg_logprob": -0.095719,
+      "compression_ratio": 1.319588,
+      "end": 684.72,
+      "no_speech_prob": 0.0,
+      "start": 683.72,
+      "text": "是吧"
+    },
+    {
+      "avg_logprob": -0.095719,
+      "compression_ratio": 1.319588,
+      "end": 686.72,
+      "no_speech_prob": 0.0,
+      "start": 684.72,
+      "text": "他是没有任何所谓的可"
+    },
+    {
+      "avg_logprob": -0.095719,
+      "compression_ratio": 1.319588,
+      "end": 688.72,
+      "no_speech_prob": 0.0,
+      "start": 686.72,
+      "text": "跟法币"
+    },
+    {
+      "avg_logprob": -0.095719,
+      "compression_ratio": 1.319588,
+      "end": 689.72,
+      "no_speech_prob": 0.0,
+      "start": 688.72,
+      "text": "原来法币"
+    },
+    {
+      "avg_logprob": -0.095719,
+      "compression_ratio": 1.319588,
+      "end": 690.72,
+      "no_speech_prob": 0.0,
+      "start": 689.72,
+      "text": "也不是现在的法币"
+    },
+    {
+      "avg_logprob": -0.095719,
+      "compression_ratio": 1.319588,
+      "end": 692.72,
+      "no_speech_prob": 0.0,
+      "start": 690.72,
+      "text": "有锚定价值的东西"
+    },
+    {
+      "avg_logprob": -0.095719,
+      "compression_ratio": 1.319588,
+      "end": 694.72,
+      "no_speech_prob": 0.0,
+      "start": 692.72,
+      "text": "全都是骗人的嘛"
+    },
+    {
+      "avg_logprob": -0.095719,
+      "compression_ratio": 1.319588,
+      "end": 695.72,
+      "no_speech_prob": 0.0,
+      "start": 694.72,
+      "text": "对吧"
+    },
+    {
+      "avg_logprob": -0.095719,
+      "compression_ratio": 1.319588,
+      "end": 696.72,
+      "no_speech_prob": 0.0,
+      "start": 695.72,
+      "text": "都是骗人的嘛"
+    },
+    {
+      "avg_logprob": -0.131169,
+      "compression_ratio": 1.34375,
+      "end": 699.72,
+      "no_speech_prob": 0.0,
+      "start": 696.72,
+      "text": "你像HCN洗币"
+    },
+    {
+      "avg_logprob": -0.131169,
+      "compression_ratio": 1.34375,
+      "end": 702.72,
+      "no_speech_prob": 0.0,
+      "start": 699.72,
+      "text": "你买了洗币是一毛钱一只"
+    },
+    {
+      "avg_logprob": -0.131169,
+      "compression_ratio": 1.34375,
+      "end": 704.72,
+      "no_speech_prob": 0.0,
+      "start": 702.72,
+      "text": "也就是说"
+    },
+    {
+      "avg_logprob": -0.131169,
+      "compression_ratio": 1.34375,
+      "end": 706.72,
+      "no_speech_prob": 0.0,
+      "start": 704.72,
+      "text": "一毛钱买了洗币"
+    },
+    {
+      "avg_logprob": -0.131169,
+      "compression_ratio": 1.34375,
+      "end": 707.72,
+      "no_speech_prob": 0.0,
+      "start": 706.72,
+      "text": "他只要涨的钱"
+    },
+    {
+      "avg_logprob": -0.131169,
+      "compression_ratio": 1.34375,
+      "end": 708.72,
+      "no_speech_prob": 0.0,
+      "start": 707.72,
+      "text": "你能卖出去就是你赚的"
+    },
+    {
+      "avg_logprob": -0.131169,
+      "compression_ratio": 1.34375,
+      "end": 711.72,
+      "no_speech_prob": 0.0,
+      "start": 710.72,
+      "text": "剩下你再炒"
+    },
+    {
+      "avg_logprob": -0.131169,
+      "compression_ratio": 1.34375,
+      "end": 712.72,
+      "no_speech_prob": 0.0,
+      "start": 711.72,
+      "text": "那叫炒币"
+    },
+    {
+      "avg_logprob": -0.131169,
+      "compression_ratio": 1.34375,
+      "end": 714.72,
+      "no_speech_prob": 0.0,
+      "start": 712.72,
+      "text": "那不叫买币"
+    },
+    {
+      "avg_logprob": -0.131169,
+      "compression_ratio": 1.34375,
+      "end": 715.72,
+      "no_speech_prob": 0.0,
+      "start": 714.72,
+      "text": "那叫炒币"
+    },
+    {
+      "avg_logprob": -0.131169,
+      "compression_ratio": 1.34375,
+      "end": 717.72,
+      "no_speech_prob": 0.0,
+      "start": 715.72,
+      "text": "是吧"
+    },
+    {
+      "avg_logprob": -0.131169,
+      "compression_ratio": 1.34375,
+      "end": 719.72,
+      "no_speech_prob": 0.0,
+      "start": 717.72,
+      "text": "你卖完币以后去哪呢"
+    },
+    {
+      "avg_logprob": -0.131169,
+      "compression_ratio": 1.34375,
+      "end": 721.72,
+      "no_speech_prob": 0.0,
+      "start": 719.72,
+      "text": "他有个HDO"
+    },
+    {
+      "avg_logprob": -0.131169,
+      "compression_ratio": 1.34375,
+      "end": 724.72,
+      "no_speech_prob": 0.0,
+      "start": 721.72,
+      "text": "HDO是百分之百一块美元"
+    },
+    {
+      "avg_logprob": -0.116522,
+      "compression_ratio": 1.205479,
+      "end": 726.72,
+      "no_speech_prob": 0.0,
+      "start": 724.72,
+      "text": "对一个HDO"
+    },
+    {
+      "avg_logprob": -0.116522,
+      "compression_ratio": 1.205479,
+      "end": 729.72,
+      "no_speech_prob": 0.0,
+      "start": 726.72,
+      "text": "这个钱是百分之一万不能动的"
+    },
+    {
+      "avg_logprob": -0.116522,
+      "compression_ratio": 1.205479,
+      "end": 731.72,
+      "no_speech_prob": 0.0,
+      "start": 729.72,
+      "text": "洗帘主他任何动作"
+    },
+    {
+      "avg_logprob": -0.116522,
+      "compression_ratio": 1.205479,
+      "end": 733.72,
+      "no_speech_prob": 0.0,
+      "start": 731.72,
+      "text": "他写明就叫刑事犯罪"
+    },
+    {
+      "avg_logprob": -0.116522,
+      "compression_ratio": 1.205479,
+      "end": 735.72,
+      "no_speech_prob": 0.0,
+      "start": 733.72,
+      "text": "他就是诈骗"
+    },
+    {
+      "avg_logprob": -0.116522,
+      "compression_ratio": 1.205479,
+      "end": 736.72,
+      "no_speech_prob": 0.0,
+      "start": 735.72,
+      "text": "什么被黑客了"
+    },
+    {
+      "avg_logprob": -0.116522,
+      "compression_ratio": 1.205479,
+      "end": 738.72,
+      "no_speech_prob": 0.0,
+      "start": 736.72,
+      "text": "你黑客你自己拿钱你补上"
+    },
+    {
+      "avg_logprob": -0.116522,
+      "compression_ratio": 1.205479,
+      "end": 740.72,
+      "no_speech_prob": 0.0,
+      "start": 738.72,
+      "text": "对吧"
+    },
+    {
+      "avg_logprob": -0.116522,
+      "compression_ratio": 1.205479,
+      "end": 742.72,
+      "no_speech_prob": 0.0,
+      "start": 740.72,
+      "text": "所以任何战友你HDO少了"
+    },
+    {
+      "avg_logprob": -0.116522,
+      "compression_ratio": 1.205479,
+      "end": 744.72,
+      "no_speech_prob": 0.0,
+      "start": 742.72,
+      "text": "郭文贵要不负责"
+    },
+    {
+      "avg_logprob": -0.116522,
+      "compression_ratio": 1.205479,
+      "end": 745.72,
+      "no_speech_prob": 0.0,
+      "start": 744.72,
+      "text": "你该把我砍了"
+    },
+    {
+      "avg_logprob": -0.116522,
+      "compression_ratio": 1.205479,
+      "end": 747.72,
+      "no_speech_prob": 0.0,
+      "start": 745.72,
+      "text": "大家懂我意思吗"
+    },
+    {
+      "avg_logprob": -0.208877,
+      "compression_ratio": 1.251799,
+      "end": 749.72,
+      "no_speech_prob": 0.0,
+      "start": 747.72,
+      "text": "HDO就是HDO了"
+    },
+    {
+      "avg_logprob": -0.208877,
+      "compression_ratio": 1.251799,
+      "end": 753.72,
+      "no_speech_prob": 0.0,
+      "start": 749.72,
+      "text": "你买的那个币就是一毛钱"
+    },
+    {
+      "avg_logprob": -0.208877,
+      "compression_ratio": 1.251799,
+      "end": 755.72,
+      "no_speech_prob": 0.0,
+      "start": 753.72,
+      "text": "如果低一毛钱了"
+    },
+    {
+      "avg_logprob": -0.208877,
+      "compression_ratio": 1.251799,
+      "end": 756.72,
+      "no_speech_prob": 0.0,
+      "start": 755.72,
+      "text": "低一毛钱了"
+    },
+    {
+      "avg_logprob": -0.208877,
+      "compression_ratio": 1.251799,
+      "end": 757.72,
+      "no_speech_prob": 0.0,
+      "start": 756.72,
+      "text": "那个币就没了"
+    },
+    {
+      "avg_logprob": -0.208877,
+      "compression_ratio": 1.251799,
+      "end": 758.72,
+      "no_speech_prob": 0.0,
+      "start": 757.72,
+      "text": "那就是出事了"
+    },
+    {
+      "avg_logprob": -0.208877,
+      "compression_ratio": 1.251799,
+      "end": 760.72,
+      "no_speech_prob": 0.0,
+      "start": 758.72,
+      "text": "你被偷住币你得赔我"
+    },
+    {
+      "avg_logprob": -0.208877,
+      "compression_ratio": 1.251799,
+      "end": 762.72,
+      "no_speech_prob": 0.0,
+      "start": 760.72,
+      "text": "而任何其他数字货币"
+    },
+    {
+      "avg_logprob": -0.167738,
+      "compression_ratio": 0.84507,
+      "end": 773.72,
+      "no_speech_prob": 0.0,
+      "start": 762.72,
+      "text": "全部都是"
+    },
+    {
+      "avg_logprob": -0.167738,
+      "compression_ratio": 0.84507,
+      "end": 776.72,
+      "no_speech_prob": 0.0,
+      "start": 773.72,
+      "text": "就是所谓的浮动币"
+    },
+    {
+      "avg_logprob": -0.167738,
+      "compression_ratio": 0.84507,
+      "end": 778.72,
+      "no_speech_prob": 0.0,
+      "start": 776.72,
+      "text": "没有任何交易价值"
+    },
+    {
+      "avg_logprob": -0.143493,
+      "compression_ratio": 1.320988,
+      "end": 780.72,
+      "no_speech_prob": 0.0,
+      "start": 778.72,
+      "text": "是吧"
+    },
+    {
+      "avg_logprob": -0.143493,
+      "compression_ratio": 1.320988,
+      "end": 782.72,
+      "no_speech_prob": 0.0,
+      "start": 780.72,
+      "text": "你像接下来躺平币"
+    },
+    {
+      "avg_logprob": -0.143493,
+      "compression_ratio": 1.320988,
+      "end": 785.72,
+      "no_speech_prob": 0.0,
+      "start": 782.72,
+      "text": "躺平币要上线以后"
+    },
+    {
+      "avg_logprob": -0.143493,
+      "compression_ratio": 1.320988,
+      "end": 787.72,
+      "no_speech_prob": 0.0,
+      "start": 785.72,
+      "text": "它叫浮动币"
+    },
+    {
+      "avg_logprob": -0.143493,
+      "compression_ratio": 1.320988,
+      "end": 788.72,
+      "no_speech_prob": 0.0,
+      "start": 787.72,
+      "text": "公链币"
+    },
+    {
+      "avg_logprob": -0.143493,
+      "compression_ratio": 1.320988,
+      "end": 792.72,
+      "no_speech_prob": 0.0,
+      "start": 788.72,
+      "text": "他给你可能是一块美金一万个"
+    },
+    {
+      "avg_logprob": -0.143493,
+      "compression_ratio": 1.320988,
+      "end": 793.72,
+      "no_speech_prob": 0.0,
+      "start": 792.72,
+      "text": "是吧"
+    },
+    {
+      "avg_logprob": -0.143493,
+      "compression_ratio": 1.320988,
+      "end": 795.72,
+      "no_speech_prob": 0.0,
+      "start": 793.72,
+      "text": "当你买这个币的时候"
+    },
+    {
+      "avg_logprob": -0.143493,
+      "compression_ratio": 1.320988,
+      "end": 796.72,
+      "no_speech_prob": 0.0,
+      "start": 795.72,
+      "text": "就是你知道"
+    },
+    {
+      "avg_logprob": -0.143493,
+      "compression_ratio": 1.320988,
+      "end": 797.72,
+      "no_speech_prob": 0.0,
+      "start": 796.72,
+      "text": "你花了一块美金"
+    },
+    {
+      "avg_logprob": -0.143493,
+      "compression_ratio": 1.320988,
+      "end": 798.72,
+      "no_speech_prob": 0.0,
+      "start": 797.72,
+      "text": "买了一万个币"
+    },
+    {
+      "avg_logprob": -0.143493,
+      "compression_ratio": 1.320988,
+      "end": 800.72,
+      "no_speech_prob": 0.0,
+      "start": 798.72,
+      "text": "当有人在市场上"
+    },
+    {
+      "avg_logprob": -0.143493,
+      "compression_ratio": 1.320988,
+      "end": 801.72,
+      "no_speech_prob": 0.0,
+      "start": 800.72,
+      "text": "在盖特啊"
+    },
+    {
+      "avg_logprob": -0.143493,
+      "compression_ratio": 1.320988,
+      "end": 802.72,
+      "no_speech_prob": 0.0,
+      "start": 801.72,
+      "text": "还是在什么"
+    },
+    {
+      "avg_logprob": -0.143493,
+      "compression_ratio": 1.320988,
+      "end": 803.72,
+      "no_speech_prob": 0.0,
+      "start": 802.72,
+      "text": "G club啊"
+    },
+    {
+      "avg_logprob": -0.143493,
+      "compression_ratio": 1.320988,
+      "end": 805.72,
+      "no_speech_prob": 0.0,
+      "start": 803.72,
+      "text": "任何地方使用的时候"
+    },
+    {
+      "avg_logprob": -0.143493,
+      "compression_ratio": 1.320988,
+      "end": 807.72,
+      "no_speech_prob": 0.0,
+      "start": 805.72,
+      "text": "有人给出了多余的一块钱"
+    },
+    {
+      "avg_logprob": -0.123311,
+      "compression_ratio": 1.328,
+      "end": 811.72,
+      "no_speech_prob": 0.0,
+      "start": 807.72,
+      "text": "比如说人家一块钱变成了"
+    },
+    {
+      "avg_logprob": -0.123311,
+      "compression_ratio": 1.328,
+      "end": 813.72,
+      "no_speech_prob": 0.0,
+      "start": 811.72,
+      "text": "一百个币一千个币"
+    },
+    {
+      "avg_logprob": -0.123311,
+      "compression_ratio": 1.328,
+      "end": 814.72,
+      "no_speech_prob": 0.0,
+      "start": 813.72,
+      "text": "你就赚了"
+    },
+    {
+      "avg_logprob": -0.123311,
+      "compression_ratio": 1.328,
+      "end": 816.72,
+      "no_speech_prob": 0.0,
+      "start": 814.72,
+      "text": "当那个东西丢下来"
+    },
+    {
+      "avg_logprob": -0.123311,
+      "compression_ratio": 1.328,
+      "end": 818.72,
+      "no_speech_prob": 0.0,
+      "start": 816.72,
+      "text": "就跟你在买彩片"
+    },
+    {
+      "avg_logprob": -0.123311,
+      "compression_ratio": 1.328,
+      "end": 819.72,
+      "no_speech_prob": 0.0,
+      "start": 818.72,
+      "text": "没什么两样"
+    },
+    {
+      "avg_logprob": -0.123311,
+      "compression_ratio": 1.328,
+      "end": 822.72,
+      "no_speech_prob": 0.0,
+      "start": 819.72,
+      "text": "但是你那个钱"
+    },
+    {
+      "avg_logprob": -0.123311,
+      "compression_ratio": 1.328,
+      "end": 823.72,
+      "no_speech_prob": 0.0,
+      "start": 822.72,
+      "text": "如果卖完以后"
+    },
+    {
+      "avg_logprob": -0.123311,
+      "compression_ratio": 1.328,
+      "end": 824.72,
+      "no_speech_prob": 0.0,
+      "start": 823.72,
+      "text": "换成了美元"
+    },
+    {
+      "avg_logprob": -0.123311,
+      "compression_ratio": 1.328,
+      "end": 825.72,
+      "no_speech_prob": 0.0,
+      "start": 824.72,
+      "text": "或者喜欧元"
+    },
+    {
+      "avg_logprob": -0.123311,
+      "compression_ratio": 1.328,
+      "end": 826.72,
+      "no_speech_prob": 0.0,
+      "start": 825.72,
+      "text": "或者换成了什么什么"
+    },
+    {
+      "avg_logprob": -0.123311,
+      "compression_ratio": 1.328,
+      "end": 827.72,
+      "no_speech_prob": 0.0,
+      "start": 826.72,
+      "text": "比特币"
+    },
+    {
+      "avg_logprob": -0.123311,
+      "compression_ratio": 1.328,
+      "end": 830.72,
+      "no_speech_prob": 0.0,
+      "start": 827.72,
+      "text": "那个你是不可剥夺的"
+    },
+    {
+      "avg_logprob": -0.123311,
+      "compression_ratio": 1.328,
+      "end": 832.72,
+      "no_speech_prob": 0.0,
+      "start": 830.72,
+      "text": "而FD交易所"
+    },
+    {
+      "avg_logprob": -0.123311,
+      "compression_ratio": 1.328,
+      "end": 833.72,
+      "no_speech_prob": 0.0,
+      "start": 832.72,
+      "text": "就是把大家"
+    },
+    {
+      "avg_logprob": -0.123311,
+      "compression_ratio": 1.328,
+      "end": 835.72,
+      "no_speech_prob": 0.0,
+      "start": 833.72,
+      "text": "所有人给弄到进来"
+    },
+    {
+      "avg_logprob": -0.123311,
+      "compression_ratio": 1.328,
+      "end": 836.72,
+      "no_speech_prob": 0.0,
+      "start": 835.72,
+      "text": "买了一个所谓的"
+    },
+    {
+      "avg_logprob": -0.120494,
+      "compression_ratio": 1.166667,
+      "end": 838.72,
+      "no_speech_prob": 0.0,
+      "start": 836.72,
+      "text": "FTX"
+    },
+    {
+      "avg_logprob": -0.120494,
+      "compression_ratio": 1.166667,
+      "end": 839.72,
+      "no_speech_prob": 0.0,
+      "start": 838.72,
+      "text": "他整了一堆币"
+    },
+    {
+      "avg_logprob": -0.120494,
+      "compression_ratio": 1.166667,
+      "end": 840.72,
+      "no_speech_prob": 0.0,
+      "start": 839.72,
+      "text": "让你买"
+    },
+    {
+      "avg_logprob": -0.120494,
+      "compression_ratio": 1.166667,
+      "end": 841.72,
+      "no_speech_prob": 0.0,
+      "start": 840.72,
+      "text": "就把你的钱给你拿走"
+    },
+    {
+      "avg_logprob": -0.120494,
+      "compression_ratio": 1.166667,
+      "end": 842.72,
+      "no_speech_prob": 0.0,
+      "start": 841.72,
+      "text": "偷走了"
+    },
+    {
+      "avg_logprob": -0.120494,
+      "compression_ratio": 1.166667,
+      "end": 843.72,
+      "no_speech_prob": 0.0,
+      "start": 842.72,
+      "text": "这叫犯罪"
+    },
+    {
+      "avg_logprob": -0.120494,
+      "compression_ratio": 1.166667,
+      "end": 845.72,
+      "no_speech_prob": 0.0,
+      "start": 843.72,
+      "text": "跟数字货币没关系"
+    },
+    {
+      "avg_logprob": -0.120494,
+      "compression_ratio": 1.166667,
+      "end": 847.72,
+      "no_speech_prob": 0.0,
+      "start": 845.72,
+      "text": "数字货币未来最重要的问题"
+    },
+    {
+      "avg_logprob": -0.120494,
+      "compression_ratio": 1.166667,
+      "end": 849.72,
+      "no_speech_prob": 0.0,
+      "start": 847.72,
+      "text": "去中心化"
+    },
+    {
+      "avg_logprob": -0.120494,
+      "compression_ratio": 1.166667,
+      "end": 851.72,
+      "no_speech_prob": 0.0,
+      "start": 849.72,
+      "text": "去中心化就是中间商"
+    },
+    {
+      "avg_logprob": -0.120494,
+      "compression_ratio": 1.166667,
+      "end": 852.72,
+      "no_speech_prob": 0.0,
+      "start": 851.72,
+      "text": "就是政府"
+    },
+    {
+      "avg_logprob": -0.181245,
+      "compression_ratio": 1.22807,
+      "end": 853.72,
+      "no_speech_prob": 0.0,
+      "start": 852.72,
+      "text": "财政部"
+    },
+    {
+      "avg_logprob": -0.181245,
+      "compression_ratio": 1.22807,
+      "end": 854.72,
+      "no_speech_prob": 0.0,
+      "start": 853.72,
+      "text": "还有"
+    },
+    {
+      "avg_logprob": -0.181245,
+      "compression_ratio": 1.22807,
+      "end": 856.72,
+      "no_speech_prob": 0.0,
+      "start": 854.72,
+      "text": "所谓的各国银行"
+    },
+    {
+      "avg_logprob": -0.181245,
+      "compression_ratio": 1.22807,
+      "end": 860.72,
+      "no_speech_prob": 0.0,
+      "start": 856.72,
+      "text": "他就是把这个印了钞票"
+    },
+    {
+      "avg_logprob": -0.181245,
+      "compression_ratio": 1.22807,
+      "end": 861.72,
+      "no_speech_prob": 0.0,
+      "start": 860.72,
+      "text": "告诉你说"
+    },
+    {
+      "avg_logprob": -0.181245,
+      "compression_ratio": 1.22807,
+      "end": 865.72,
+      "no_speech_prob": 0.0,
+      "start": 861.72,
+      "text": "让你可以买水买油买气"
+    },
+    {
+      "avg_logprob": -0.181245,
+      "compression_ratio": 1.22807,
+      "end": 867.72,
+      "no_speech_prob": 0.0,
+      "start": 865.72,
+      "text": "你可以支付孩子的学费"
+    },
+    {
+      "avg_logprob": -0.181245,
+      "compression_ratio": 1.22807,
+      "end": 869.72,
+      "no_speech_prob": 0.0,
+      "start": 867.72,
+      "text": "这个定价全在他手里吧"
+    },
+    {
+      "avg_logprob": -0.181245,
+      "compression_ratio": 1.22807,
+      "end": 871.72,
+      "no_speech_prob": 0.0,
+      "start": 869.72,
+      "text": "印多少币他说了算"
+    },
+    {
+      "avg_logprob": -0.181245,
+      "compression_ratio": 1.22807,
+      "end": 873.72,
+      "no_speech_prob": 0.0,
+      "start": 871.72,
+      "text": "花哪他说了算"
+    },
+    {
+      "avg_logprob": -0.099486,
+      "compression_ratio": 1.287736,
+      "end": 877.72,
+      "no_speech_prob": 0.0,
+      "start": 873.72,
+      "text": "这个中间当最终的叫末端消费者"
+    },
+    {
+      "avg_logprob": -0.099486,
+      "compression_ratio": 1.287736,
+      "end": 881.72,
+      "no_speech_prob": 0.0,
+      "start": 877.72,
+      "text": "当这个你和劳动力生产力贸易交换的时候"
+    },
+    {
+      "avg_logprob": -0.099486,
+      "compression_ratio": 1.287736,
+      "end": 883.72,
+      "no_speech_prob": 0.0,
+      "start": 881.72,
+      "text": "他中间还收你的费用"
+    },
+    {
+      "avg_logprob": -0.099486,
+      "compression_ratio": 1.287736,
+      "end": 884.72,
+      "no_speech_prob": 0.0,
+      "start": 883.72,
+      "text": "也就是叫印钞票"
+    },
+    {
+      "avg_logprob": -0.099486,
+      "compression_ratio": 1.287736,
+      "end": 889.72,
+      "no_speech_prob": 0.0,
+      "start": 886.72,
+      "text": "那么数字货币去掉这个政府的中心化"
+    },
+    {
+      "avg_logprob": -0.099486,
+      "compression_ratio": 1.287736,
+      "end": 891.72,
+      "no_speech_prob": 0.0,
+      "start": 889.72,
+      "text": "就这个人印了币"
+    },
+    {
+      "avg_logprob": -0.099486,
+      "compression_ratio": 1.287736,
+      "end": 895.72,
+      "no_speech_prob": 0.0,
+      "start": 891.72,
+      "text": "当任何一方接受这个币的价值和你兑换的时候"
+    },
+    {
+      "avg_logprob": -0.217587,
+      "compression_ratio": 0.792453,
+      "end": 899.72,
+      "no_speech_prob": 0.0,
+      "start": 895.72,
+      "text": "他说中间是没有交易费的很低的"
+    }
+  ],
+  "text": "《非诚勿扰》哎呦我的妈呀我正讲的点上来这很可怕啊这百分之百黑的来了好像回来了啊由你们喝 improves被黑断了兄弟姐妹们来了吗?算了吗?被黑断了兄弟姐妹们被黑断了 被黑断了 被黑断了 兄弟姐妹们被黑断了 被黑断了 被黑断了 兄弟姐妹们伟大的习主席 现在你在那里拜托拜托你 别黑过老七过老七是你的好兄弟你黑我干嘛啊?你说你黑我干嘛嘛?习主席 有用吗?你说我的手机WhatsApp给我黑没了我来下载WhatsApp都下载不了我这下载就下载不了全部过清空 手机还老开不了机这直播一下吧 你老黑我哎呀伟大的习主席 你是全宇宙最扭叉的你为什么还要黑这个国老七拜托啦 你别这么傻好了 兄弟姐妹们 集取佛 集取佛啊就共产党现在真的是 你说你疯狂我这手机都没法弄了 没法弄了啊我到哪哪被黑客 我去人家律师楼律师楼 门锁不管用你说去人家律师楼人家电脑被黑我到哪哪都被黑啊然后呢 这回到伊朗去啊主要是北朝鲜 这帮孙子北朝鲜的导弹系统记住啊 共产党的东风15和41系统和41D A是不会在外放的但就在短短的过去的二十几个月也就是病毒期间共产党大量的对导弹技术叫做不设任何门槛的进行对外扩张式的在海外建生产基地我告诉大家啊 都拿几个地方啊北朝鲜 有100多个人的队伍包括北朝鲜 建导弹造导弹发射车 发射架 陆机 海机还有地机 就是地下子就用车开着 拉着导弹马路上可以发开着开着一停 唰就出去了弄一发 是吧这叫什么 走着走着来一炮然后呢 在火车上来一炮在水里边船上来一炮潜水底 水底能来一炮这大量扩展这就叫全面开放对战略伙伴全天候战略伙伴的导弹系统我向天发誓 美国百分之百他不会全面知道但是我在这之前跟美国人都说过他们不信的他们不信但是未来他们会信的我相信他们最后会信的因为他真的会来了因为他真的会来了然后 第二个地方是哪里伊朗无人机导弹全面开始接下来更重要的沙特沙特的导弹会让美国惊天的它会吓死美国给沙特的导弹不仅给这个一定是长城导弹能打到美国奔土走着看然后双弹双弹沙特有大量的无人机沙特会有无人机已经有了大量的生产无人机伊朗无人机北朝鲜下一个量在世界亮相的接下来很快北朝鲜上全世界亮相的无人机包括大量采购的中国产的所谓歼15的加强机啊这架那这架在本来他这架大量采购的所谓歼15的加强机啊几百架不是几十架给北朝鲜北朝鲜有这个尖击机有导弹核武器就是随便马上核武器核技术大量的就会给伊朗北朝鲜沙特下一个就是从现在开始起人类上将面临最大的问题沙特如果有了核武器你打败核扩散导弹扩散原来所谓的短程啊一百五十公里以内现在完全是一万公里的导弹都给你所以说用导弹用核武器核技术无人机无人机生产技术授权生产当美国醒过来的时候美国在亚太的所谓的印太的战略部队那都是早的啊所以说伊朗所去的军机是干什么去了是最高端的无人机和导弹技术的技术和专业人员还有现在在整个维稳上整个中共维稳的东西几乎全给了伊朗然后正在帮助伊朗建立一个独立的通信系统包括沙特事很大呀事很大第三世界最大的数字货币交易所FTS你挪用客户资金被黑客窃取数字货币申请破产了22日法庭举行首场听证会请问七哥今后全球数字货币市场将会迎来什么样的惊涛骇浪安全负责任的数字货币在未来金融世界将会起到怎么样的丁海深圳作用谢谢第一个FTS所谓黑客的黑手数币全胡扯自导自演完全胡说八道他挪用客户资金是蓄意的恶意的诈骗犯罪行为甭说数字货币法币傻币什么币你这个运行商和运行者想骗人那谁也没有任何系统让你好这跟数字货币没半毛关系他们一帮犯罪分子然后币安更是如此人家说币安是行走的炸弹我说那你太看得起了币安是共产党设置好在西方世界的金融定时炸弹昨天炸那些老百姓贪婪的想当富豪的老百姓像我们战友当中很多人连约翰约翰哥哥都去买那个什么币安的币连我们小飞象都买币安的币就梦想着就是自己下一把堵能发大财子就炸死你们了这回然后就炸死那些什么大马西啊是吧新加坡啊是吧养老基金啊还有像那些所谓贪婪的在床上躺的已经都插着管子了还梦想着再活一千年的那些老杂毛们肯定炸死你准备好就是骗你的数字货币市场负责任的数字货币一定是人类的未来现在在世上交易的9200多家这个数字货币全球原来是大概是一万一千家现在一万一万二千家现在剩了9200多家全球上一万四千家货币原来两万多家最后我认为剩下不会超过五家基本全都结束比特币最后一定会归零包括以太币都有可能归零Coinbase这些几乎都会没有大家记住我到现在我就纳闷世界上谁不比郭文贵聪明啊什么人不比文贵独自书多什么人不比郭文贵牛叉啊是吧郭文贵算个毛啊但是为什么全世界都没搞明白一件事情搞数字货币的你买的这些FTX你买的这些货币你买的是叫交易所你买的不是货币FTX里边给你搞的是交易所连那机构投资者都是投资的交易所你要买他的币如果买他的币的话他应该有保证是吧他的资金要动用了他应该承担什么责任刑事责任那还用开庭吗开什么庭啊对吧多简单你买交易所的股份和投资交易所和买这个币两回事儿买币如果人白皮书给你写了我这玩意啥也没有你爱买就买那你活该你赔了现在的数字货币全球的数字货币都是玩什么什么也没有我就跟你说明白了我就是在这边写这个区块链你多安全的区块链如果他没有锚定价值或者他没有一个避险机制或者这个币不能明确告诉你他升职的基本点谁炒作你跟他炒作你被骗了你活该而全人类的数字货币99.9999999999是吧他是没有任何所谓的可跟法币原来法币也不是现在的法币有锚定价值的东西全都是骗人的嘛对吧都是骗人的嘛你像HCN洗币你买了洗币是一毛钱一只也就是说一毛钱买了洗币他只要涨的钱你能卖出去就是你赚的剩下你再炒那叫炒币那不叫买币那叫炒币是吧你卖完币以后去哪呢他有个HDOHDO是百分之百一块美元对一个HDO这个钱是百分之一万不能动的洗帘主他任何动作他写明就叫刑事犯罪他就是诈骗什么被黑客了你黑客你自己拿钱你补上对吧所以任何战友你HDO少了郭文贵要不负责你该把我砍了大家懂我意思吗HDO就是HDO了你买的那个币就是一毛钱如果低一毛钱了低一毛钱了那个币就没了那就是出事了你被偷住币你得赔我而任何其他数字货币全部都是就是所谓的浮动币没有任何交易价值是吧你像接下来躺平币躺平币要上线以后它叫浮动币公链币他给你可能是一块美金一万个是吧当你买这个币的时候就是你知道你花了一块美金买了一万个币当有人在市场上在盖特啊还是在什么G club啊任何地方使用的时候有人给出了多余的一块钱比如说人家一块钱变成了一百个币一千个币你就赚了当那个东西丢下来就跟你在买彩片没什么两样但是你那个钱如果卖完以后换成了美元或者喜欧元或者换成了什么什么比特币那个你是不可剥夺的而FD交易所就是把大家所有人给弄到进来买了一个所谓的FTX他整了一堆币让你买就把你的钱给你拿走偷走了这叫犯罪跟数字货币没关系数字货币未来最重要的问题去中心化去中心化就是中间商就是政府财政部还有所谓的各国银行他就是把这个印了钞票告诉你说让你可以买水买油买气你可以支付孩子的学费这个定价全在他手里吧印多少币他说了算花哪他说了算这个中间当最终的叫末端消费者当这个你和劳动力生产力贸易交换的时候他中间还收你的费用也就是叫印钞票那么数字货币去掉这个政府的中心化就这个人印了币当任何一方接受这个币的价值和你兑换的时候他说中间是没有交易费的很低的"
+}
