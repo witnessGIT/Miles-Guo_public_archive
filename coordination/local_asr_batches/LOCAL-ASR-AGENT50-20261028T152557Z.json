@@ -62,7 +62,7 @@
     "LIVE_20230111_001",
     "LIVE_20230129_001"
   ],
-  "next_live_id": "LIVE_20221007_002",
+  "next_live_id": "LIVE_20221010_001",
   "completed_live_ids": [
     "LIVE_20230313_001",
     "LIVE_20221011_001",
@@ -81,13 +81,14 @@
     "LIVE_20221206_002",
     "LIVE_20230103_001",
     "LIVE_20230214_001",
-    "LIVE_20220927_001"
+    "LIVE_20220927_001",
+    "LIVE_20221007_002"
   ],
   "failed_or_deferred_live_ids": [],
   "retry_pending_live_ids": [],
   "last_window": {
-    "started_at": "2026-10-29T07:26:41Z",
-    "ended_at": "2026-10-29T07:35:16Z",
+    "started_at": "2026-10-29T09:26:14Z",
+    "ended_at": "2026-10-29T09:33:36Z",
     "attempted_unique_videos": 1,
     "transcript_cue_segment_completed": 0,
     "four_stage_completed": 1,
@@ -96,37 +97,37 @@
     "tail_deferred_videos": 0,
     "cooldown_skipped_videos": 0,
     "source_temporarily_unavailable_videos": 0,
-    "audio_duration_sec": 600.966,
-    "download_elapsed_sec_known": 0.0,
+    "audio_duration_sec": 600.22,
+    "download_elapsed_sec_known": 68.293,
     "download_elapsed_unavailable_for": [],
-    "pure_asr_inference_sec_known": 0.0,
+    "pure_asr_inference_sec_known": 71.027,
     "pure_asr_inference_unavailable_for": [],
-    "structured_pipeline_elapsed_sec_known": 0.0,
+    "structured_pipeline_elapsed_sec_known": 143.746,
     "structured_pipeline_elapsed_unavailable_for": [],
     "asr_job_wall_elapsed_sec": 0.0,
-    "key_points_attempt_wall_elapsed_sec": 202.3,
-    "window_elapsed_sec": 515.0,
-    "known_inference_rtf": null,
-    "known_inference_realtime_multiple": null,
+    "key_points_attempt_wall_elapsed_sec": 208.85,
+    "window_elapsed_sec": 442.0,
+    "known_inference_rtf": 0.11834,
+    "known_inference_realtime_multiple": 8.4501,
     "published_commits": 4,
     "quality_failures": {
-      "model_rejected_segment_recovered": "One substantive segment remained unaccepted after a 3072-token retry; four exact-span machine-grounded supplements restored complete segment coverage before validation."
+      "model_empty_non_substantive_segment_recovered": "One 62-character camera/leg aside remained empty after a 3072-token retry; one conservative exact-span machine-grounded supplement restored complete segment coverage before validation."
     },
     "completed_three_stage_live_ids": [],
     "completed_four_stage_live_ids": [
-      "LIVE_20220927_001"
+      "LIVE_20221007_002"
     ],
     "released_key_points_live_ids": [],
     "source_temporarily_unavailable_live_ids": [],
-    "next_live_id": "LIVE_20221007_002",
+    "next_live_id": "LIVE_20221010_001",
     "key_point_stats": {
       "natural_segments": 10,
-      "key_points": 61,
-      "topic_links": 24,
+      "key_points": 59,
+      "topic_links": 27,
       "skipped_or_invalid": 0,
       "parse_errors": 0,
       "forced_retries": 2,
-      "grounded_supplement_points": 4,
+      "grounded_supplement_points": 1,
       "outcome": "enriched"
     }
   },
