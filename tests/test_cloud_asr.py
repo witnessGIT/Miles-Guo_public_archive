@@ -14,12 +14,37 @@ from scripts.cloud_asr_item import (
     output_paths,
     publish,
     remove_joint_low_confidence_repetition,
+    remove_trailing_low_confidence_tail,
     sha256_file,
     transcribe_chunked,
 )
 
 
 class CloudAsrOutputTests(unittest.TestCase):
+    def test_tail_filter_removes_only_extreme_low_confidence_suffix(self) -> None:
+        segments = [
+            {"start_sec": 0.0, "end_sec": 50.0, "text": "正文", "avg_logprob": -0.2},
+            {"start_sec": 95.0, "end_sec": 99.0, "text": "正常结尾", "avg_logprob": -0.4},
+            {"start_sec": 99.0, "end_sec": 105.0, "text": "坏尾一", "avg_logprob": -5.1},
+            {"start_sec": 105.0, "end_sec": 108.0, "text": "坏尾二", "avg_logprob": -5.1},
+        ]
+
+        filtered, removed = remove_trailing_low_confidence_tail(segments, 100.0)
+
+        self.assertEqual(removed, 2)
+        self.assertEqual([item["text"] for item in filtered], ["正文", "正常结尾"])
+
+    def test_tail_filter_preserves_low_confidence_segment_away_from_end(self) -> None:
+        segments = [
+            {"start_sec": 10.0, "end_sec": 12.0, "text": "困难语音", "avg_logprob": -5.1},
+            {"start_sec": 98.0, "end_sec": 100.0, "text": "正常结尾", "avg_logprob": -0.4},
+        ]
+
+        filtered, removed = remove_trailing_low_confidence_tail(segments, 100.0)
+
+        self.assertEqual(removed, 0)
+        self.assertEqual(filtered, segments)
+
     def test_hallucination_filter_removes_decoder_loops_conservatively(self) -> None:
         segments = [
             {"text": "保留正常语音", "avg_logprob": -0.3, "compression_ratio": 1.2},

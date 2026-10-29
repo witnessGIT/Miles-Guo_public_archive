@@ -82,7 +82,7 @@ def assess_transcript_quality(
         except (TypeError, ValueError):
             invalid_timestamps += 1
             continue
-        if start < 0 or end < start or end > duration_sec + 30:
+        if start < 0 or end < start or end > duration_sec + 2:
             invalid_timestamps += 1
         last_cue_end = max(last_cue_end, end)
         avg_logprob = item.get("avg_logprob")
@@ -259,6 +259,29 @@ def remove_joint_low_confidence_repetition(
         if index not in remove_indexes
     ]
     return kept, len(remove_indexes)
+
+
+def remove_trailing_low_confidence_tail(
+    segments: list[dict[str, Any]], duration_sec: float,
+) -> tuple[list[dict[str, Any]], int]:
+    """Remove only a contiguous, clearly failed decoder suffix near audio end."""
+    cutoff = len(segments)
+    for index in range(len(segments) - 1, -1, -1):
+        segment = segments[index]
+        try:
+            start = float(segment.get("start_sec"))
+            end = float(segment.get("end_sec"))
+            avg_logprob = float(segment.get("avg_logprob"))
+        except (TypeError, ValueError):
+            break
+        near_end = start >= max(0.0, duration_sec - 60.0)
+        extreme_low_confidence = avg_logprob < -3.0
+        out_of_bounds = end > duration_sec + 2.0
+        if near_end and (extreme_low_confidence or out_of_bounds):
+            cutoff = index
+            continue
+        break
+    return segments[:cutoff], len(segments) - cutoff
 
 
 def write_json(path: Path, payload: dict[str, Any]) -> None:
@@ -669,6 +692,10 @@ def main() -> int:
         segments, filtered_hallucination_segments = remove_joint_low_confidence_repetition(
             segments
         )
+        segments, filtered_tail_segments = remove_trailing_low_confidence_tail(
+            segments, duration_sec
+        )
+        filtered_hallucination_segments += filtered_tail_segments
         payload = {
             "schema_version": "cloud-asr-result-v1", "live_id": args.live_id,
             "status": "transcribed", "source_id": asset["source_id"], "media_asset_id": asset["id"],
