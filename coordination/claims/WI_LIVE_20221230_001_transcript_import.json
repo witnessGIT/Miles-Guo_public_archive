@@ -1,11 +1,9 @@
 {
   "task_id": "WI_LIVE_20221230_001_transcript_import",
-  "agent_id": "codex-local-asr-agent50-20261026",
-  "claimed_at": "2026-10-26T05:50:00Z",
-  "base_commit": "9d89e22b68",
-  "status": "released",
-  "released_at": "2026-10-26T05:55:00Z",
-  "release_reason": "manual quality audit rejected persistent repeated multi-cue and micro-token hallucination loops at 455-483 and 499-513 seconds; invalid outputs discarded and item deferred to corpus_tail",
+  "agent_id": "github-actions-cloud-asr-40919833857",
+  "claimed_at": "2026-10-29T17:26:16.680709+00:00",
+  "base_commit": "4121281d8870612617d7079180295af4a6e7f71d",
+  "status": "in_progress",
   "workflow_mode": "continuous-worker-v2",
   "claim_protocol": "claim-protocol-v2",
   "entry_mode": "work",
@@ -23,6 +21,6 @@
     "WI_LIVE_20221230_001_metadata_fill"
   ],
   "scope": "Import source transcript or ASR text without overwriting original text.",
-  "reclaimed_expired_claim": false,
+  "reclaimed_expired_claim": true,
   "static_claim_lease_hours": 24
 }
