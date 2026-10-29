@@ -1,0 +1,536 @@
+{
+  "chunk_audio_sha256": "777e139a432a7bcf9b6712caf2011b524a23bd9adc74b8a68b8c1b549f2ad83d",
+  "chunk_index": 0,
+  "completed_at": "2026-10-29T03:50:33Z",
+  "language": "zh",
+  "live_id": "LIVE_20221026_001",
+  "media_committed_to_git": false,
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "offset_sec": 0,
+  "paid_api_used": false,
+  "processing_location": "github-hosted-macos-arm64",
+  "schema_version": "cloud-asr-chunk-v1",
+  "segments": [
+    {
+      "avg_logprob": -0.789639,
+      "compression_ratio": 0.571429,
+      "end": 29.98,
+      "no_speech_prob": 0.0,
+      "start": 0.0,
+      "text": "谢谢大家"
+    },
+    {
+      "avg_logprob": -0.063383,
+      "compression_ratio": 0.571429,
+      "end": 59.98,
+      "no_speech_prob": 0.0,
+      "start": 30.0,
+      "text": "谢谢大家"
+    },
+    {
+      "avg_logprob": -0.121863,
+      "compression_ratio": 0.571429,
+      "end": 89.98,
+      "no_speech_prob": 0.0,
+      "start": 60.0,
+      "text": "谢谢大家"
+    },
+    {
+      "avg_logprob": -0.171427,
+      "compression_ratio": 0.571429,
+      "end": 119.98,
+      "no_speech_prob": 0.0,
+      "start": 90.0,
+      "text": "谢谢大家"
+    },
+    {
+      "avg_logprob": -0.166127,
+      "compression_ratio": 0.571429,
+      "end": 149.98,
+      "no_speech_prob": 0.0,
+      "start": 120.0,
+      "text": "谢谢大家"
+    },
+    {
+      "avg_logprob": -0.174742,
+      "compression_ratio": 0.571429,
+      "end": 179.98,
+      "no_speech_prob": 0.0,
+      "start": 150.0,
+      "text": "谢谢大家"
+    },
+    {
+      "avg_logprob": -0.207437,
+      "compression_ratio": 0.571429,
+      "end": 209.98,
+      "no_speech_prob": 0.0,
+      "start": 180.0,
+      "text": "谢谢大家"
+    },
+    {
+      "avg_logprob": -0.259551,
+      "compression_ratio": 0.571429,
+      "end": 239.98,
+      "no_speech_prob": 0.0,
+      "start": 210.0,
+      "text": "谢谢大家"
+    },
+    {
+      "avg_logprob": -0.317661,
+      "compression_ratio": 0.571429,
+      "end": 269.98,
+      "no_speech_prob": 0.0,
+      "start": 240.0,
+      "text": "谢谢大家"
+    },
+    {
+      "avg_logprob": -0.388426,
+      "compression_ratio": 0.571429,
+      "end": 299.98,
+      "no_speech_prob": 0.0,
+      "start": 270.0,
+      "text": "谢谢大家"
+    },
+    {
+      "avg_logprob": -0.516142,
+      "compression_ratio": 0.571429,
+      "end": 449.98,
+      "no_speech_prob": 0.0,
+      "start": 420.0,
+      "text": "谢谢大家"
+    },
+    {
+      "avg_logprob": -0.393379,
+      "compression_ratio": 0.822581,
+      "end": 481.98,
+      "no_speech_prob": 0.0,
+      "start": 479.98,
+      "text": "建议都不让提了"
+    },
+    {
+      "avg_logprob": -0.393379,
+      "compression_ratio": 0.822581,
+      "end": 485.68,
+      "no_speech_prob": 0.0,
+      "start": 481.98,
+      "text": "我一般不跟人说心里话"
+    },
+    {
+      "avg_logprob": -0.56645,
+      "compression_ratio": 0.5,
+      "end": 515.66,
+      "no_speech_prob": 0.0,
+      "start": 485.68,
+      "text": "我一样"
+    },
+    {
+      "avg_logprob": -0.420371,
+      "compression_ratio": 0.571429,
+      "end": 545.64,
+      "no_speech_prob": 0.0,
+      "start": 515.66,
+      "text": "下不为例"
+    },
+    {
+      "avg_logprob": -0.666096,
+      "compression_ratio": 0.571429,
+      "end": 547.64,
+      "no_speech_prob": 0.0,
+      "start": 545.64,
+      "text": "你过来啊"
+    },
+    {
+      "avg_logprob": -0.402895,
+      "compression_ratio": 0.571429,
+      "end": 549.64,
+      "no_speech_prob": 0.0,
+      "start": 547.64,
+      "text": "你过来啊"
+    },
+    {
+      "avg_logprob": -0.735622,
+      "compression_ratio": 0.625,
+      "end": 579.62,
+      "no_speech_prob": 0.0,
+      "start": 549.64,
+      "text": "你不记得吗"
+    },
+    {
+      "avg_logprob": -2.471774,
+      "compression_ratio": 0.272727,
+      "end": 701.62,
+      "no_speech_prob": 0.0,
+      "start": 699.62,
+      "text": "吧"
+    },
+    {
+      "avg_logprob": -4.480178,
+      "compression_ratio": 1.043478,
+      "end": 741.46,
+      "no_speech_prob": 0.0,
+      "start": 729.62,
+      "text": "如果你看到你的 approaching Egypt牙"
+    },
+    {
+      "avg_logprob": -4.480178,
+      "compression_ratio": 1.043478,
+      "end": 743.74,
+      "no_speech_prob": 0.0,
+      "start": 741.46,
+      "text": "他打 Deus嗎 chless能溝通過"
+    },
+    {
+      "avg_logprob": -4.480178,
+      "compression_ratio": 1.043478,
+      "end": 745.22,
+      "no_speech_prob": 0.0,
+      "start": 743.74,
+      "text": "過哥哥不要把前輪"
+    },
+    {
+      "avg_logprob": -4.480178,
+      "compression_ratio": 1.043478,
+      "end": 747.4,
+      "no_speech_prob": 0.0,
+      "start": 745.22,
+      "text": "老前輪覺得老前輪"
+    },
+    {
+      "avg_logprob": -4.480178,
+      "compression_ratio": 1.043478,
+      "end": 749.2,
+      "no_speech_prob": 0.0,
+      "start": 747.4,
+      "text": "郎 Project tunnel"
+    },
+    {
+      "avg_logprob": -4.480178,
+      "compression_ratio": 1.043478,
+      "end": 750.78,
+      "no_speech_prob": 0.0,
+      "start": 749.2,
+      "text": "怎麼怎 multi"
+    },
+    {
+      "avg_logprob": -4.480178,
+      "compression_ratio": 1.043478,
+      "end": 752.24,
+      "no_speech_prob": 0.0,
+      "start": 750.78,
+      "text": "傾氣"
+    },
+    {
+      "avg_logprob": -4.480178,
+      "compression_ratio": 1.043478,
+      "end": 753.62,
+      "no_speech_prob": 0.0,
+      "start": 752.24,
+      "text": "像新mem Buddh"
+    },
+    {
+      "avg_logprob": -4.480178,
+      "compression_ratio": 1.043478,
+      "end": 755.46,
+      "no_speech_prob": 0.0,
+      "start": 753.62,
+      "text": "現在新世代400"
+    },
+    {
+      "avg_logprob": -4.480178,
+      "compression_ratio": 1.043478,
+      "end": 757.0,
+      "no_speech_prob": 0.0,
+      "start": 755.46,
+      "text": "從中國"
+    },
+    {
+      "avg_logprob": -4.480178,
+      "compression_ratio": 1.043478,
+      "end": 759.12,
+      "no_speech_prob": 0.0,
+      "start": 757.0,
+      "text": "從早自身"
+    },
+    {
+      "avg_logprob": -0.077029,
+      "compression_ratio": 31.857143,
+      "end": 789.12,
+      "no_speech_prob": 0.0,
+      "start": 759.12,
+      "text": "和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和"
+    },
+    {
+      "avg_logprob": -0.67245,
+      "compression_ratio": 1.594017,
+      "end": 793.14,
+      "no_speech_prob": 0.0,
+      "start": 789.12,
+      "text": "idays that we have for the next uh… probably the next"
+    },
+    {
+      "avg_logprob": -0.67245,
+      "compression_ratio": 1.594017,
+      "end": 805.08,
+      "no_speech_prob": 0.0,
+      "start": 795.82,
+      "text": "zee has cemented uh… his place as a 21st century emperor of china uh… he has eliminated term limits"
+    },
+    {
+      "avg_logprob": -0.67245,
+      "compression_ratio": 1.594017,
+      "end": 811.78,
+      "no_speech_prob": 0.0,
+      "start": 805.08,
+      "text": "uh… so essentially he is dictator for life now he's told his military uh… to rapidly modernize"
+    },
+    {
+      "avg_logprob": -0.67245,
+      "compression_ratio": 1.594017,
+      "end": 814.5,
+      "no_speech_prob": 0.0,
+      "start": 811.78,
+      "text": "to prepare for war by 2027"
+    },
+    {
+      "avg_logprob": -0.67245,
+      "compression_ratio": 1.594017,
+      "end": 818.96,
+      "no_speech_prob": 0.0,
+      "start": 814.5,
+      "text": "so that's a warning from the florida veteran congressman michael waltz now as president"
+    },
+    {
+      "avg_logprob": -5.279402,
+      "compression_ratio": 0.923077,
+      "end": 826.44,
+      "no_speech_prob": 0.0,
+      "start": 818.96,
+      "text": "煎 Chi因為雙方iments匯"
+    },
+    {
+      "avg_logprob": -5.279402,
+      "compression_ratio": 0.923077,
+      "end": 831.46,
+      "no_speech_prob": 0.0,
+      "start": 826.52,
+      "text": "祇 Lee現在《 naz contest》"
+    },
+    {
+      "avg_logprob": -5.279402,
+      "compression_ratio": 0.923077,
+      "end": 835.92,
+      "no_speech_prob": 0.0,
+      "start": 831.58,
+      "text": "合作出成長安餐"
+    },
+    {
+      "avg_logprob": -5.279402,
+      "compression_ratio": 0.923077,
+      "end": 838.02,
+      "no_speech_prob": 0.0,
+      "start": 836.42,
+      "text": "而言"
+    },
+    {
+      "avg_logprob": -5.279402,
+      "compression_ratio": 0.923077,
+      "end": 839.18,
+      "no_speech_prob": 0.0,
+      "start": 838.26,
+      "text": "哪裏"
+    },
+    {
+      "avg_logprob": -5.279402,
+      "compression_ratio": 0.923077,
+      "end": 840.5,
+      "no_speech_prob": 0.0,
+      "start": 839.22,
+      "text": "learnt"
+    },
+    {
+      "avg_logprob": -5.279402,
+      "compression_ratio": 0.923077,
+      "end": 842.32,
+      "no_speech_prob": 0.0,
+      "start": 840.72,
+      "text": "溜記"
+    },
+    {
+      "avg_logprob": -5.279402,
+      "compression_ratio": 0.923077,
+      "end": 843.72,
+      "no_speech_prob": 0.0,
+      "start": 842.42,
+      "text": "記者"
+    },
+    {
+      "avg_logprob": -5.279402,
+      "compression_ratio": 0.923077,
+      "end": 844.86,
+      "no_speech_prob": 0.0,
+      "start": 843.9,
+      "text": "ふ Tai"
+    },
+    {
+      "avg_logprob": -5.279402,
+      "compression_ratio": 0.923077,
+      "end": 846.46,
+      "no_speech_prob": 0.0,
+      "start": 845.02,
+      "text": "implies"
+    },
+    {
+      "avg_logprob": -5.279402,
+      "compression_ratio": 0.923077,
+      "end": 847.72,
+      "no_speech_prob": 0.0,
+      "start": 846.56,
+      "text": "總結"
+    },
+    {
+      "avg_logprob": -2.384664,
+      "compression_ratio": 2.405172,
+      "end": 849.72,
+      "no_speech_prob": 0.0,
+      "start": 847.72,
+      "text": "而多 trave一個問題"
+    },
+    {
+      "avg_logprob": -2.384664,
+      "compression_ratio": 2.405172,
+      "end": 851.78,
+      "no_speech_prob": 0.0,
+      "start": 849.82,
+      "text": "若果年無言 tiOK嗎"
+    },
+    {
+      "avg_logprob": -2.384664,
+      "compression_ratio": 2.405172,
+      "end": 853.66,
+      "no_speech_prob": 0.0,
+      "start": 851.92,
+      "text": "高度那位女性"
+    },
+    {
+      "avg_logprob": -2.384664,
+      "compression_ratio": 2.405172,
+      "end": 855.82,
+      "no_speech_prob": 0.0,
+      "start": 855.12,
+      "text": "飲食"
+    },
+    {
+      "avg_logprob": -2.384664,
+      "compression_ratio": 2.405172,
+      "end": 857.36,
+      "no_speech_prob": 0.0,
+      "start": 855.92,
+      "text": "當地公共同比"
+    },
+    {
+      "avg_logprob": -2.384664,
+      "compression_ratio": 2.405172,
+      "end": 858.82,
+      "no_speech_prob": 0.0,
+      "start": 857.46,
+      "text": "當地公共同比"
+    },
+    {
+      "avg_logprob": -2.384664,
+      "compression_ratio": 2.405172,
+      "end": 860.36,
+      "no_speech_prob": 0.0,
+      "start": 858.92,
+      "text": "當地公共同比"
+    },
+    {
+      "avg_logprob": -2.384664,
+      "compression_ratio": 2.405172,
+      "end": 861.76,
+      "no_speech_prob": 0.0,
+      "start": 860.46,
+      "text": "當地公共同比"
+    },
+    {
+      "avg_logprob": -2.384664,
+      "compression_ratio": 2.405172,
+      "end": 863.2,
+      "no_speech_prob": 0.0,
+      "start": 861.86,
+      "text": "當地公共同比"
+    },
+    {
+      "avg_logprob": -2.384664,
+      "compression_ratio": 2.405172,
+      "end": 864.76,
+      "no_speech_prob": 0.0,
+      "start": 863.3,
+      "text": "當地公共同比"
+    },
+    {
+      "avg_logprob": -2.384664,
+      "compression_ratio": 2.405172,
+      "end": 866.38,
+      "no_speech_prob": 0.0,
+      "start": 864.86,
+      "text": "當地公共同比"
+    },
+    {
+      "avg_logprob": -2.384664,
+      "compression_ratio": 2.405172,
+      "end": 868.82,
+      "no_speech_prob": 0.0,
+      "start": 866.48,
+      "text": "當地公共同比"
+    },
+    {
+      "avg_logprob": -2.384664,
+      "compression_ratio": 2.405172,
+      "end": 869.98,
+      "no_speech_prob": 0.0,
+      "start": 868.96,
+      "text": "高度"
+    },
+    {
+      "avg_logprob": -2.384664,
+      "compression_ratio": 2.405172,
+      "end": 871.78,
+      "no_speech_prob": 0.0,
+      "start": 870.08,
+      "text": "當地公共同比"
+    },
+    {
+      "avg_logprob": -2.384664,
+      "compression_ratio": 2.405172,
+      "end": 873.12,
+      "no_speech_prob": 0.0,
+      "start": 871.92,
+      "text": "AAAA"
+    },
+    {
+      "avg_logprob": -2.384664,
+      "compression_ratio": 2.405172,
+      "end": 874.88,
+      "no_speech_prob": 0.0,
+      "start": 873.26,
+      "text": "當地公共同比"
+    },
+    {
+      "avg_logprob": -2.384664,
+      "compression_ratio": 2.405172,
+      "end": 876.96,
+      "no_speech_prob": 0.0,
+      "start": 875.02,
+      "text": "當地公共同比"
+    },
+    {
+      "avg_logprob": -0.786132,
+      "compression_ratio": 0.738095,
+      "end": 906.94,
+      "no_speech_prob": 0.0,
+      "start": 876.96,
+      "text": "中文字幕志愿者 李宗盛"
+    }
+  ],
+  "text": "谢谢大家谢谢大家谢谢大家谢谢大家谢谢大家谢谢大家谢谢大家谢谢大家谢谢大家谢谢大家谢谢大家建议都不让提了我一般不跟人说心里话我一样下不为例你过来啊你过来啊你不记得吗吧如果你看到你的 approaching Egypt牙他打 Deus嗎 chless能溝通過過哥哥不要把前輪老前輪覺得老前輪郎 Project tunnel怎麼怎 multi傾氣像新mem Buddh現在新世代400從中國從早自身和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和共和idays that we have for the next uh… probably the next zee has cemented uh… his place as a 21st century emperor of china uh… he has eliminated term limits uh… so essentially he is dictator for life now he's told his military uh… to rapidly modernize to prepare for war by 2027 so that's a warning from the florida veteran congressman michael waltz now as president煎 Chi因為雙方iments匯祇 Lee現在《 naz contest》合作出成長安餐而言哪裏 learnt溜記記者ふ Tai implies總結而多 trave一個問題若果年無言 tiOK嗎高度那位女性飲食當地公共同比當地公共同比當地公共同比當地公共同比當地公共同比當地公共同比當地公共同比當地公共同比高度當地公共同比AAAA當地公共同比當地公共同比中文字幕志愿者 李宗盛"
+}

@@ -1,0 +1,1384 @@
+{
+  "chunk_audio_sha256": "23295bd72a34217f0eaa59330064b6b8b792951327b688a59acc51c1aef9cf2b",
+  "chunk_index": 0,
+  "completed_at": "2026-10-29T00:33:38Z",
+  "language": "zh",
+  "live_id": "LIVE_20221005_001",
+  "media_committed_to_git": false,
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "offset_sec": 0,
+  "paid_api_used": false,
+  "processing_location": "github-hosted-macos-arm64",
+  "schema_version": "cloud-asr-chunk-v1",
+  "segments": [
+    {
+      "avg_logprob": -0.122383,
+      "compression_ratio": 0.851351,
+      "end": 29.98,
+      "no_speech_prob": 0.0,
+      "start": 0.0,
+      "text": "请不吝点赞 订阅 转发 打赏支持明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.409446,
+      "compression_ratio": 0.784314,
+      "end": 59.98,
+      "no_speech_prob": 0.0,
+      "start": 30.0,
+      "text": "转发 打赏支持明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.246414,
+      "compression_ratio": 1.583012,
+      "end": 63.94,
+      "no_speech_prob": 0.0,
+      "start": 60.0,
+      "text": "The global tech industry will depend 40% less on the Chinese supply chain."
+    },
+    {
+      "avg_logprob": -0.246414,
+      "compression_ratio": 1.583012,
+      "end": 68.82,
+      "no_speech_prob": 0.0,
+      "start": 63.94,
+      "text": "According to Bloomberg, tech giants like Apple are becoming less dependent on China."
+    },
+    {
+      "avg_logprob": -0.246414,
+      "compression_ratio": 1.583012,
+      "end": 73.72,
+      "no_speech_prob": 0.0,
+      "start": 68.82,
+      "text": "For example, Apple has shifted part of its iPhone 14's production line to India."
+    },
+    {
+      "avg_logprob": -0.246414,
+      "compression_ratio": 1.583012,
+      "end": 78.7,
+      "no_speech_prob": 0.0,
+      "start": 73.72,
+      "text": "However, most of the iPhone production, up to 98%, is still made in China."
+    },
+    {
+      "avg_logprob": -0.246414,
+      "compression_ratio": 1.583012,
+      "end": 84.3,
+      "no_speech_prob": 0.0,
+      "start": 78.7,
+      "text": "And it will take Apple eight years to move 10% of its production capacity outside the country."
+    },
+    {
+      "avg_logprob": -0.465473,
+      "compression_ratio": 1.50173,
+      "end": 90.5,
+      "no_speech_prob": 0.0,
+      "start": 84.3,
+      "text": "在2030年,在2030年, the global tech industry will reduce its dependents on China by 20%-40%"
+    },
+    {
+      "avg_logprob": -0.465473,
+      "compression_ratio": 1.50173,
+      "end": 97.5,
+      "no_speech_prob": 0.0,
+      "start": 90.5,
+      "text": "。 In addition, in 10 years, hardware and electronics companies can be 20%-30% less dependent on the country."
+    },
+    {
+      "avg_logprob": -0.465473,
+      "compression_ratio": 1.50173,
+      "end": 105.66,
+      "no_speech_prob": 0.0,
+      "start": 97.5,
+      "text": "According to Bloomberg, supply chain decoupling is no easy task, because it involves finding a replacement for all local component suppliers,"
+    },
+    {
+      "avg_logprob": -0.465473,
+      "compression_ratio": 1.50173,
+      "end": 111.3,
+      "no_speech_prob": 0.0,
+      "start": 105.66,
+      "text": "not to mention modern and efficient transport, communication, and electricity supplies."
+    },
+    {
+      "avg_logprob": -0.213919,
+      "compression_ratio": 1.549242,
+      "end": 116.42,
+      "no_speech_prob": 0.0,
+      "start": 111.3,
+      "text": "Bloomberg analysts Steven Tseng and Wu Jin-ho said in a report,"
+    },
+    {
+      "avg_logprob": -0.213919,
+      "compression_ratio": 1.549242,
+      "end": 120.42,
+      "no_speech_prob": 0.0,
+      "start": 116.42,
+      "text": "with China accounting for 70% of global smartphone manufacturing"
+    },
+    {
+      "avg_logprob": -0.213919,
+      "compression_ratio": 1.549242,
+      "end": 124.74,
+      "no_speech_prob": 0.0,
+      "start": 120.42,
+      "text": "and leading Chinese vendors accounting for nearly half of global shipments,"
+    },
+    {
+      "avg_logprob": -0.213919,
+      "compression_ratio": 1.549242,
+      "end": 129.06,
+      "no_speech_prob": 0.0,
+      "start": 124.74,
+      "text": "the region has a well-developed supply chain, which will be tough to replicate,"
+    },
+    {
+      "avg_logprob": -0.213919,
+      "compression_ratio": 1.549242,
+      "end": 131.7,
+      "no_speech_prob": 0.0,
+      "start": 129.06,
+      "text": "and one Apple could lose access to if it moves."
+    },
+    {
+      "avg_logprob": -0.213919,
+      "compression_ratio": 1.549242,
+      "end": 141.14,
+      "no_speech_prob": 0.0,
+      "start": 136.66,
+      "text": "As the world's largest exporter, China's growth depends less on its internal"
+    },
+    {
+      "avg_logprob": -0.055753,
+      "compression_ratio": 1.490196,
+      "end": 146.5,
+      "no_speech_prob": 0.0,
+      "start": 141.14,
+      "text": "conditions than on events in the United States and Europe. And because China supplies goods heavily"
+    },
+    {
+      "avg_logprob": -0.055753,
+      "compression_ratio": 1.490196,
+      "end": 152.66,
+      "no_speech_prob": 0.0,
+      "start": 146.5,
+      "text": "elsewhere in Asia, such places like South Korea and Taiwan have reflected China's export issues."
+    },
+    {
+      "avg_logprob": -0.055753,
+      "compression_ratio": 1.490196,
+      "end": 158.02,
+      "no_speech_prob": 0.0,
+      "start": 152.66,
+      "text": "The overall image coming out of this interaction indicates a slowdown, if not a recession."
+    },
+    {
+      "avg_logprob": -0.055753,
+      "compression_ratio": 1.490196,
+      "end": 164.58,
+      "no_speech_prob": 0.0,
+      "start": 158.02,
+      "text": "The latest message from S&P Global's World Purchasing Managers Index, or PMI, is weakness."
+    },
+    {
+      "avg_logprob": -0.055753,
+      "compression_ratio": 1.490196,
+      "end": 170.26,
+      "no_speech_prob": 0.0,
+      "start": 164.58,
+      "text": "Its total manufacturing and service activity index dropped to 49.3 in August."
+    },
+    {
+      "avg_logprob": -0.068087,
+      "compression_ratio": 1.463878,
+      "end": 176.42,
+      "no_speech_prob": 0.0,
+      "start": 170.26,
+      "text": "That is down from 50.8 recorded in July and under the 50 mark that distinguishes between"
+    },
+    {
+      "avg_logprob": -0.068087,
+      "compression_ratio": 1.463878,
+      "end": 182.5,
+      "no_speech_prob": 0.0,
+      "start": 176.42,
+      "text": "expansion and contraction. Chinese exports reflect the global slump. According to Beijing's General"
+    },
+    {
+      "avg_logprob": -0.068087,
+      "compression_ratio": 1.463878,
+      "end": 191.22,
+      "no_speech_prob": 0.0,
+      "start": 182.5,
+      "text": "Administration of Customs, general goods exports in August were $314.9 billion, only 7.1% above"
+    },
+    {
+      "avg_logprob": -0.068087,
+      "compression_ratio": 1.463878,
+      "end": 197.46,
+      "no_speech_prob": 0.0,
+      "start": 191.22,
+      "text": "year-ago levels. The August number was the worst since last spring's lockdown-oppressed performance."
+    },
+    {
+      "avg_logprob": -0.060345,
+      "compression_ratio": 1.505929,
+      "end": 202.1,
+      "no_speech_prob": 0.0,
+      "start": 197.46,
+      "text": "Part of the shortage comes from production interruptions within China, caused by drought,"
+    },
+    {
+      "avg_logprob": -0.060345,
+      "compression_ratio": 1.505929,
+      "end": 207.54,
+      "no_speech_prob": 0.0,
+      "start": 202.1,
+      "text": "heatwaves, and occasional power outages. All of these problems have put a hitch in that economy's"
+    },
+    {
+      "avg_logprob": -0.060345,
+      "compression_ratio": 1.505929,
+      "end": 212.9,
+      "no_speech_prob": 0.0,
+      "start": 207.54,
+      "text": "great export machine. COVID lockdowns, though less severe than earlier in the year, have also"
+    },
+    {
+      "avg_logprob": -0.060345,
+      "compression_ratio": 1.505929,
+      "end": 219.3,
+      "no_speech_prob": 0.0,
+      "start": 212.9,
+      "text": "disrupted goods and services flows. According to reporting from Nomura Institute, some 49 cities in"
+    },
+    {
+      "avg_logprob": -0.076778,
+      "compression_ratio": 1.501901,
+      "end": 225.62,
+      "no_speech_prob": 0.0,
+      "start": 219.3,
+      "text": "and China face lockdowns of various levels of unique controls. But primarily, China's export shortfall"
+    },
+    {
+      "avg_logprob": -0.076778,
+      "compression_ratio": 1.501901,
+      "end": 231.7,
+      "no_speech_prob": 0.0,
+      "start": 225.62,
+      "text": "reflects factors of faraway origin. From the United States and Europe, the once powerful post-COVID"
+    },
+    {
+      "avg_logprob": -0.076778,
+      "compression_ratio": 1.501901,
+      "end": 238.9,
+      "no_speech_prob": 0.0,
+      "start": 231.7,
+      "text": "revival has run its course in the U.S. and Canada. Chinese exports to the U.S. fell 3.8% in August,"
+    },
+    {
+      "avg_logprob": -0.076778,
+      "compression_ratio": 1.501901,
+      "end": 245.3,
+      "no_speech_prob": 0.0,
+      "start": 238.9,
+      "text": "a complete change from July's 11% increase. Europe, China's most significant export partner,"
+    },
+    {
+      "avg_logprob": -0.052422,
+      "compression_ratio": 1.53668,
+      "end": 251.14,
+      "no_speech_prob": 0.0,
+      "start": 245.3,
+      "text": "is experiencing a severe economic slowdown due to the soaring price of energy, as Russia restricts"
+    },
+    {
+      "avg_logprob": -0.052422,
+      "compression_ratio": 1.53668,
+      "end": 257.7,
+      "no_speech_prob": 0.0,
+      "start": 251.14,
+      "text": "the flow of all-important natural gas to the EU. Unlike the outright fall in exports to the U.S.,"
+    },
+    {
+      "avg_logprob": -0.052422,
+      "compression_ratio": 1.53668,
+      "end": 264.9,
+      "no_speech_prob": 0.0,
+      "start": 257.7,
+      "text": "Chinese sales in Europe increased in August. But the 11.1% increase over year-ago marks was sharply"
+    },
+    {
+      "avg_logprob": -0.052422,
+      "compression_ratio": 1.53668,
+      "end": 272.34,
+      "no_speech_prob": 0.0,
+      "start": 264.9,
+      "text": "down from July's 23.1% gain. China's downturn has spread because its exports depend heavily on a flow"
+    },
+    {
+      "avg_logprob": -0.047245,
+      "compression_ratio": 1.583658,
+      "end": 277.86,
+      "no_speech_prob": 0.0,
+      "start": 272.34,
+      "text": "of components from other parts of Asia. South Korea's semiconductor exports to China decreased in"
+    },
+    {
+      "avg_logprob": -0.047245,
+      "compression_ratio": 1.583658,
+      "end": 283.62,
+      "no_speech_prob": 0.0,
+      "start": 277.86,
+      "text": "August for the first time since April 2020 at the peak of the pandemic. Taiwan's shipments to China"
+    },
+    {
+      "avg_logprob": -0.047245,
+      "compression_ratio": 1.583658,
+      "end": 289.86,
+      "no_speech_prob": 0.0,
+      "start": 283.62,
+      "text": "decreased by 9% in August below the same month last year. There is reason to expect relief from China's"
+    },
+    {
+      "avg_logprob": -0.047245,
+      "compression_ratio": 1.583658,
+      "end": 296.34,
+      "no_speech_prob": 0.0,
+      "start": 289.86,
+      "text": "heatwave, its drought, and the electricity shortages, but not in the scarcity coming out of North America"
+    },
+    {
+      "avg_logprob": -0.110049,
+      "compression_ratio": 1.545455,
+      "end": 302.42,
+      "no_speech_prob": 0.0,
+      "start": 296.34,
+      "text": "and Europe. Indeed, central banks in Canada, the U.S., and Europe have raised interest rates and"
+    },
+    {
+      "avg_logprob": -0.110049,
+      "compression_ratio": 1.545455,
+      "end": 308.18,
+      "no_speech_prob": 0.0,
+      "start": 302.42,
+      "text": "otherwise tightened monetary policy to regain control of inflation. There is every reason to consider"
+    },
+    {
+      "avg_logprob": -0.110049,
+      "compression_ratio": 1.545455,
+      "end": 312.34,
+      "no_speech_prob": 0.0,
+      "start": 308.18,
+      "text": "still more constrained economic conditions in these critical markets for China,"
+    },
+    {
+      "avg_logprob": -0.110049,
+      "compression_ratio": 1.545455,
+      "end": 322.82,
+      "no_speech_prob": 0.0,
+      "start": 312.34,
+      "text": "as well as more negative spillover effects elsewhere in Asia."
+    },
+    {
+      "avg_logprob": -0.107138,
+      "compression_ratio": 1.242537,
+      "end": 335.22,
+      "no_speech_prob": 0.0,
+      "start": 326.34,
+      "text": "韩国和美国空军战机周二进行了轰炸演习,以应对朝鲜最新的中型弹道导弹发射。"
+    },
+    {
+      "avg_logprob": -0.107138,
+      "compression_ratio": 1.242537,
+      "end": 343.78,
+      "no_speech_prob": 0.0,
+      "start": 335.22,
+      "text": "官员说,一架韩国F-15K战斗机向西海、黄海无人居住的指导目标投掷了两枚精确炸弹。"
+    },
+    {
+      "avg_logprob": -0.107138,
+      "compression_ratio": 1.242537,
+      "end": 352.02,
+      "no_speech_prob": 0.0,
+      "start": 343.78,
+      "text": "另外,韩国参谋长联席会议周三表示,韩国和美国军队还向海面发射了多发导弹作为回应。"
+    },
+    {
+      "avg_logprob": -0.918814,
+      "compression_ratio": 0.75,
+      "end": 382.0,
+      "no_speech_prob": 0.0,
+      "start": 352.02,
+      "text": "韩国和美国军队"
+    },
+    {
+      "avg_logprob": -3.504438,
+      "compression_ratio": 1.160338,
+      "end": 391.52,
+      "no_speech_prob": 0.0,
+      "start": 382.0,
+      "text": "韩国和美国军队裡承加更新aj baseball操作为 antes公司他没有提告做这个 Wei inspir言义 proven"
+    },
+    {
+      "avg_logprob": -3.504438,
+      "compression_ratio": 1.160338,
+      "end": 396.6,
+      "no_speech_prob": 0.0,
+      "start": 391.52,
+      "text": "社会和美国军队竟用力オーブーパ资stat检至这个星期平台会议 Hallelujah,"
+    },
+    {
+      "avg_logprob": -3.504438,
+      "compression_ratio": 1.160338,
+      "end": 400.08,
+      "no_speech_prob": 0.0,
+      "start": 396.6,
+      "text": "独立国和美国军队竟用力賓水平台会议spray之后。"
+    },
+    {
+      "avg_logprob": -5.978308,
+      "compression_ratio": 0.969543,
+      "end": 403.54,
+      "no_speech_prob": 0.0,
+      "start": 400.08,
+      "text": "香港法提供性 multiply dennια"
+    },
+    {
+      "avg_logprob": -5.978308,
+      "compression_ratio": 0.969543,
+      "end": 406.72,
+      "no_speech_prob": 0.0,
+      "start": 403.62,
+      "text": "国情 sistemi finde insect ragique"
+    },
+    {
+      "avg_logprob": -5.978308,
+      "compression_ratio": 0.969543,
+      "end": 409.44,
+      "no_speech_prob": 0.0,
+      "start": 406.8,
+      "text": "理由 заб從自己油管理"
+    },
+    {
+      "avg_logprob": -5.978308,
+      "compression_ratio": 0.969543,
+      "end": 412.04,
+      "no_speech_prob": 0.0,
+      "start": 409.52,
+      "text": "öglichアターナ ну да"
+    },
+    {
+      "avg_logprob": -5.978308,
+      "compression_ratio": 0.969543,
+      "end": 413.58,
+      "no_speech_prob": 0.0,
+      "start": 412.12,
+      "text": "oui"
+    },
+    {
+      "avg_logprob": -5.978308,
+      "compression_ratio": 0.969543,
+      "end": 416.12,
+      "no_speech_prob": 0.0,
+      "start": 413.72,
+      "text": "當 gens生色"
+    },
+    {
+      "avg_logprob": -5.978308,
+      "compression_ratio": 0.969543,
+      "end": 418.74,
+      "no_speech_prob": 0.0,
+      "start": 416.2,
+      "text": "把 Beckwith"
+    },
+    {
+      "avg_logprob": -5.978308,
+      "compression_ratio": 0.969543,
+      "end": 420.36,
+      "no_speech_prob": 0.0,
+      "start": 418.82,
+      "text": "那麼"
+    },
+    {
+      "avg_logprob": -5.978308,
+      "compression_ratio": 0.969543,
+      "end": 422.12,
+      "no_speech_prob": 0.0,
+      "start": 420.48,
+      "text": "Detroit"
+    },
+    {
+      "avg_logprob": -5.978308,
+      "compression_ratio": 0.969543,
+      "end": 423.9,
+      "no_speech_prob": 0.0,
+      "start": 422.3,
+      "text": "Storm"
+    },
+    {
+      "avg_logprob": -5.978308,
+      "compression_ratio": 0.969543,
+      "end": 425.5,
+      "no_speech_prob": 0.0,
+      "start": 424.26,
+      "text": "те"
+    },
+    {
+      "avg_logprob": -5.978308,
+      "compression_ratio": 0.969543,
+      "end": 427.38,
+      "no_speech_prob": 0.0,
+      "start": 425.8,
+      "text": "làm"
+    },
+    {
+      "avg_logprob": -0.336615,
+      "compression_ratio": 1.635246,
+      "end": 430.52,
+      "no_speech_prob": 0.0,
+      "start": 427.38,
+      "text": "LEDGE AND MEMORY CHIP PRODUCTION IN CHINA"
+    },
+    {
+      "avg_logprob": -0.336615,
+      "compression_ratio": 1.635246,
+      "end": 434.02,
+      "no_speech_prob": 0.0,
+      "start": 430.52,
+      "text": "AND ALSO WILL RESTRICT ACCESS TO CHIPS USED IN SUPERCOMPUTING"
+    },
+    {
+      "avg_logprob": -0.336615,
+      "compression_ratio": 1.635246,
+      "end": 436.14,
+      "no_speech_prob": 0.0,
+      "start": 434.02,
+      "text": "AND ARTIFICIAL INTELLIGENCE."
+    },
+    {
+      "avg_logprob": -0.336615,
+      "compression_ratio": 1.635246,
+      "end": 441.0,
+      "no_speech_prob": 0.0,
+      "start": 436.14,
+      "text": "AGAIN, WE HAD THOSE RULES LAST MONTH, I BELIEVE IT WAS IN EARLY SEPTEMBER."
+    },
+    {
+      "avg_logprob": -0.336615,
+      "compression_ratio": 1.635246,
+      "end": 445.0,
+      "no_speech_prob": 0.0,
+      "start": 441.0,
+      "text": "ESSENTIALLY THESE NEW GUIDELINES WILL CODIFY"
+    },
+    {
+      "avg_logprob": -0.336615,
+      "compression_ratio": 1.635246,
+      "end": 448.52,
+      "no_speech_prob": 0.0,
+      "start": 445.0,
+      "text": "THOSE EXPORT RESTRICTIONS THAT WERE RECENTLY IMPOSED ON NVIDIA"
+    },
+    {
+      "avg_logprob": -0.336615,
+      "compression_ratio": 1.635246,
+      "end": 450.4,
+      "no_speech_prob": 0.0,
+      "start": 448.52,
+      "text": "AND ALSO AMD."
+    },
+    {
+      "avg_logprob": -0.336615,
+      "compression_ratio": 1.635246,
+      "end": 456.18,
+      "no_speech_prob": 0.0,
+      "start": 450.4,
+      "text": "NVIDIA HAS ABOUT 95% SHARE OF THE HIGH-END AI ACCELERATOR CHIP MARKET"
+    },
+    {
+      "avg_logprob": -0.252474,
+      "compression_ratio": 1.549801,
+      "end": 458.18,
+      "no_speech_prob": 0.0,
+      "start": 456.18,
+      "text": "and AMD has the rest."
+    },
+    {
+      "avg_logprob": -0.252474,
+      "compression_ratio": 1.549801,
+      "end": 460.18,
+      "no_speech_prob": 0.0,
+      "start": 458.18,
+      "text": "So this does potentially"
+    },
+    {
+      "avg_logprob": -0.252474,
+      "compression_ratio": 1.549801,
+      "end": 464.58,
+      "no_speech_prob": 0.0,
+      "start": 461.34,
+      "text": "what levy a severe blow to China's ambitions"
+    },
+    {
+      "avg_logprob": -0.252474,
+      "compression_ratio": 1.549801,
+      "end": 467.06,
+      "no_speech_prob": 0.0,
+      "start": 464.58,
+      "text": "in the AI space and other supercomputing areas."
+    },
+    {
+      "avg_logprob": -0.252474,
+      "compression_ratio": 1.549801,
+      "end": 471.74,
+      "no_speech_prob": 0.0,
+      "start": 468.58,
+      "text": "So Steve, how different or tougher are these new rules"
+    },
+    {
+      "avg_logprob": -0.252474,
+      "compression_ratio": 1.549801,
+      "end": 473.38,
+      "no_speech_prob": 0.0,
+      "start": 471.74,
+      "text": "than what's currently in place?"
+    },
+    {
+      "avg_logprob": -0.252474,
+      "compression_ratio": 1.549801,
+      "end": 478.94,
+      "no_speech_prob": 0.0,
+      "start": 474.78,
+      "text": "Yeah, well, right now there is under certain circumstances,"
+    },
+    {
+      "avg_logprob": -0.252474,
+      "compression_ratio": 1.549801,
+      "end": 482.42,
+      "no_speech_prob": 0.0,
+      "start": 478.94,
+      "text": "of course, US chip technologies can be exported to China."
+    },
+    {
+      "avg_logprob": -0.252474,
+      "compression_ratio": 1.549801,
+      "end": 485.94,
+      "no_speech_prob": 0.0,
+      "start": 482.42,
+      "text": "But in the lower end technologies, lower end"
+    },
+    {
+      "avg_logprob": -0.186219,
+      "compression_ratio": 1.595668,
+      "end": 488.1,
+      "no_speech_prob": 0.0,
+      "start": 485.94,
+      "text": "I should say than 14 nanometer."
+    },
+    {
+      "avg_logprob": -0.186219,
+      "compression_ratio": 1.595668,
+      "end": 491.5,
+      "no_speech_prob": 0.0,
+      "start": 488.1,
+      "text": "Essentially, under current guidelines, US based chip equipment makers"
+    },
+    {
+      "avg_logprob": -0.186219,
+      "compression_ratio": 1.595668,
+      "end": 494.54,
+      "no_speech_prob": 0.0,
+      "start": 491.78,
+      "text": "of the equipment makers like Applied Materials or AMAT,"
+    },
+    {
+      "avg_logprob": -0.186219,
+      "compression_ratio": 1.595668,
+      "end": 497.1,
+      "no_speech_prob": 0.0,
+      "start": 494.54,
+      "text": "they've been allowed to sell machinery to China"
+    },
+    {
+      "avg_logprob": -0.186219,
+      "compression_ratio": 1.595668,
+      "end": 500.7,
+      "no_speech_prob": 0.0,
+      "start": 497.7,
+      "text": "or equip some Chinese companies with machinery to produce less"
+    },
+    {
+      "avg_logprob": -0.186219,
+      "compression_ratio": 1.595668,
+      "end": 503.18,
+      "no_speech_prob": 0.0,
+      "start": 500.98,
+      "text": "less advanced semiconductors."
+    },
+    {
+      "avg_logprob": -0.186219,
+      "compression_ratio": 1.595668,
+      "end": 506.5,
+      "no_speech_prob": 0.0,
+      "start": 503.18,
+      "text": "What this will likely do is codify or formalize"
+    },
+    {
+      "avg_logprob": -0.186219,
+      "compression_ratio": 1.595668,
+      "end": 508.5,
+      "no_speech_prob": 0.0,
+      "start": 506.9,
+      "text": "these export restrictions."
+    },
+    {
+      "avg_logprob": -0.186219,
+      "compression_ratio": 1.595668,
+      "end": 513.78,
+      "no_speech_prob": 0.0,
+      "start": 508.5,
+      "text": "The new steps will take on the technology to make those 14 nanometer"
+    },
+    {
+      "avg_logprob": -0.462075,
+      "compression_ratio": 1.669291,
+      "end": 516.34,
+      "no_speech_prob": 0.0,
+      "start": 513.78,
+      "text": "and then the new rules will be considered chips or better."
+    },
+    {
+      "avg_logprob": -0.462075,
+      "compression_ratio": 1.669291,
+      "end": 517.34,
+      "no_speech_prob": 0.0,
+      "start": 516.34,
+      "text": "And again, that is key to China's ambitions."
+    },
+    {
+      "avg_logprob": -0.462075,
+      "compression_ratio": 1.669291,
+      "end": 521.14,
+      "no_speech_prob": 0.0,
+      "start": 517.34,
+      "text": "Now, prior actions, this is going to be these new rules are going to be"
+    },
+    {
+      "avg_logprob": -0.462075,
+      "compression_ratio": 1.669291,
+      "end": 524.38,
+      "no_speech_prob": 0.0,
+      "start": 521.14,
+      "text": "levied or announced by the Commerce Department."
+    },
+    {
+      "avg_logprob": -0.462075,
+      "compression_ratio": 1.669291,
+      "end": 528.54,
+      "no_speech_prob": 0.0,
+      "start": 524.38,
+      "text": "Previous steps that have been made by members of Congress,"
+    },
+    {
+      "avg_logprob": -0.462075,
+      "compression_ratio": 1.669291,
+      "end": 532.94,
+      "no_speech_prob": 0.0,
+      "start": 528.54,
+      "text": "they've really taken action on national security grounds like Huawei."
+    },
+    {
+      "avg_logprob": -0.462075,
+      "compression_ratio": 1.669291,
+      "end": 537.38,
+      "no_speech_prob": 0.0,
+      "start": 532.94,
+      "text": "This potentially by the Commerce Department would essentially formalize"
+    },
+    {
+      "avg_logprob": -0.175498,
+      "compression_ratio": 1.534884,
+      "end": 541.38,
+      "no_speech_prob": 0.0,
+      "start": 537.38,
+      "text": "the governing of these export restrictions on advanced technologies."
+    },
+    {
+      "avg_logprob": -0.175498,
+      "compression_ratio": 1.534884,
+      "end": 544.22,
+      "no_speech_prob": 0.0,
+      "start": 541.38,
+      "text": "So we'll have to see what's in the, you know, the proof will be in the pudding"
+    },
+    {
+      "avg_logprob": -0.175498,
+      "compression_ratio": 1.534884,
+      "end": 545.78,
+      "no_speech_prob": 0.0,
+      "start": 544.22,
+      "text": "in the wording of these new rules."
+    },
+    {
+      "avg_logprob": -0.175498,
+      "compression_ratio": 1.534884,
+      "end": 549.78,
+      "no_speech_prob": 0.0,
+      "start": 545.78,
+      "text": "But it'd be interesting to see later this week if and when they do announce them."
+    },
+    {
+      "avg_logprob": -0.180991,
+      "compression_ratio": 1.393548,
+      "end": 589.7,
+      "no_speech_prob": 0.0,
+      "start": 567.38,
+      "text": "According to CNN, a notorious Chinese hacking group indicted in 2020 has accelerated its hacking"
+    },
+    {
+      "avg_logprob": -0.180991,
+      "compression_ratio": 1.393548,
+      "end": 590.9,
+      "no_speech_prob": 0.0,
+      "start": 589.7,
+      "text": "operations this year."
+    },
+    {
+      "avg_logprob": -0.180991,
+      "compression_ratio": 1.393548,
+      "end": 596.26,
+      "no_speech_prob": 0.0,
+      "start": 590.9,
+      "text": "The group aims at sensitive data from government and business entities in the U.S. and many other"
+    },
+    {
+      "avg_logprob": -0.06459,
+      "compression_ratio": 1.599349,
+      "end": 602.66,
+      "no_speech_prob": 0.0,
+      "start": 596.26,
+      "text": "countries. The news outlet cited Chris McConkie, an expert from consulting firm PricewaterhouseCoopers."
+    },
+    {
+      "avg_logprob": -0.06459,
+      "compression_ratio": 1.599349,
+      "end": 608.58,
+      "no_speech_prob": 0.0,
+      "start": 602.66,
+      "text": "McConkie said the hacker group targeted multiple U.S. entities last year, including government agencies"
+    },
+    {
+      "avg_logprob": -0.06459,
+      "compression_ratio": 1.599349,
+      "end": 614.58,
+      "no_speech_prob": 0.0,
+      "start": 608.58,
+      "text": "and tech companies. McConkie noted that hackers infiltrate networks for data on foreign or trade"
+    },
+    {
+      "avg_logprob": -0.06459,
+      "compression_ratio": 1.599349,
+      "end": 619.94,
+      "no_speech_prob": 0.0,
+      "start": 614.58,
+      "text": "policy and cryptocurrency. He believes these intruders have managed to breach several entities"
+    },
+    {
+      "avg_logprob": -0.06459,
+      "compression_ratio": 1.599349,
+      "end": 625.54,
+      "no_speech_prob": 0.0,
+      "start": 619.94,
+      "text": "due to their vast-scale operations. And at least 25 countries have been targeted this year."
+    },
+    {
+      "avg_logprob": -0.089464,
+      "compression_ratio": 1.516729,
+      "end": 626.74,
+      "no_speech_prob": 0.0,
+      "start": 625.54,
+      "text": "He told CNN,"
+    },
+    {
+      "avg_logprob": -0.089464,
+      "compression_ratio": 1.516729,
+      "end": 631.78,
+      "no_speech_prob": 0.0,
+      "start": 626.74,
+      "text": "They are, by far, the most active and globally impactful hacking group that we track at the minute."
+    },
+    {
+      "avg_logprob": -0.089464,
+      "compression_ratio": 1.516729,
+      "end": 638.9,
+      "no_speech_prob": 0.0,
+      "start": 631.78,
+      "text": "In 2020, five Chinese cyber hackers in the notorious hacking group ATP41 were indicted for allegedly"
+    },
+    {
+      "avg_logprob": -0.089464,
+      "compression_ratio": 1.516729,
+      "end": 645.38,
+      "no_speech_prob": 0.0,
+      "start": 638.9,
+      "text": "intruding on over 100 companies, organizations, and people in the U.S. and other countries via"
+    },
+    {
+      "avg_logprob": -0.089464,
+      "compression_ratio": 1.516729,
+      "end": 650.82,
+      "no_speech_prob": 0.0,
+      "start": 645.38,
+      "text": "sophisticated hacking techniques. As part of state-backed espionage, China's hackers have long been"
+    },
+    {
+      "avg_logprob": -0.085171,
+      "compression_ratio": 1.458937,
+      "end": 657.54,
+      "no_speech_prob": 0.0,
+      "start": 650.82,
+      "text": "targeting U.S. and Western allies to steal trade secrets, advanced military technology, and intelligence,"
+    },
+    {
+      "avg_logprob": -0.085171,
+      "compression_ratio": 1.458937,
+      "end": 662.98,
+      "no_speech_prob": 0.0,
+      "start": 657.54,
+      "text": "among others. Earlier this year, FBI Director Christopher Wray accused Beijing of stealing"
+    },
+    {
+      "avg_logprob": -0.085171,
+      "compression_ratio": 1.458937,
+      "end": 668.74,
+      "no_speech_prob": 0.0,
+      "start": 662.98,
+      "text": "American technology and innovation, saying, There's just no country that presents a broader threat to our"
+    },
+    {
+      "avg_logprob": -4.832353,
+      "compression_ratio": 1.494382,
+      "end": 675.3,
+      "no_speech_prob": 0.0,
+      "start": 668.74,
+      "text": "technology. His chief scientist wrote about finding scapegoat messages or equity scientists are"
+    },
+    {
+      "avg_logprob": -4.832353,
+      "compression_ratio": 1.494382,
+      "end": 680.58,
+      "no_speech_prob": 0.0,
+      "start": 675.3,
+      "text": "potentially exposed to having global retail connections in China and pushing major"
+    },
+    {
+      "avg_logprob": -4.832353,
+      "compression_ratio": 1.494382,
+      "end": 682.9,
+      "no_speech_prob": 0.0,
+      "start": 680.58,
+      "text": "disappearances that might end up getting needed on another demand for global movements."
+    },
+    {
+      "avg_logprob": -3.983802,
+      "compression_ratio": 1.211382,
+      "end": 686.04,
+      "no_speech_prob": 0.0,
+      "start": 682.9,
+      "text": "全由於此發展目的是關於此動機 alla體驗"
+    },
+    {
+      "avg_logprob": -3.983802,
+      "compression_ratio": 1.211382,
+      "end": 689.42,
+      "no_speech_prob": 0.0,
+      "start": 686.04,
+      "text": "政策電影機uche記者 Ahh EMOL"
+    },
+    {
+      "avg_logprob": -3.983802,
+      "compression_ratio": 1.211382,
+      "end": 694.26,
+      "no_speech_prob": 0.0,
+      "start": 689.42,
+      "text": "電腦通常進行美國學習特選hoo"
+    },
+    {
+      "avg_logprob": -3.983802,
+      "compression_ratio": 1.211382,
+      "end": 697.44,
+      "no_speech_prob": 0.0,
+      "start": 694.26,
+      "text": "電腦通常進行另一籍"
+    },
+    {
+      "avg_logprob": -3.983802,
+      "compression_ratio": 1.211382,
+      "end": 699.24,
+      "no_speech_prob": 0.0,
+      "start": 697.44,
+      "text": "電腦通常進行"
+    },
+    {
+      "avg_logprob": -3.983802,
+      "compression_ratio": 1.211382,
+      "end": 701.98,
+      "no_speech_prob": 0.0,
+      "start": 699.24,
+      "text": "中國原無把風格威 Introduían"
+    },
+    {
+      "avg_logprob": -3.983802,
+      "compression_ratio": 1.211382,
+      "end": 704.4,
+      "no_speech_prob": 0.0,
+      "start": 701.98,
+      "text": "發法公立特選合"
+    },
+    {
+      "avg_logprob": -3.983802,
+      "compression_ratio": 1.211382,
+      "end": 706.42,
+      "no_speech_prob": 0.0,
+      "start": 704.4,
+      "text": "中國特選民共進行"
+    },
+    {
+      "avg_logprob": -3.983802,
+      "compression_ratio": 1.211382,
+      "end": 707.84,
+      "no_speech_prob": 0.0,
+      "start": 706.42,
+      "text": "從 Somebody ó양"
+    },
+    {
+      "avg_logprob": -3.983802,
+      "compression_ratio": 1.211382,
+      "end": 709.3,
+      "no_speech_prob": 0.0,
+      "start": 707.84,
+      "text": "中國特選民"
+    },
+    {
+      "avg_logprob": -3.983802,
+      "compression_ratio": 1.211382,
+      "end": 710.68,
+      "no_speech_prob": 0.0,
+      "start": 709.3,
+      "text": "支 exploring"
+    },
+    {
+      "avg_logprob": -0.172076,
+      "compression_ratio": 1.501859,
+      "end": 714.2,
+      "no_speech_prob": 0.0,
+      "start": 710.68,
+      "text": "Asian and Australian organizations since early 2013."
+    },
+    {
+      "avg_logprob": -0.172076,
+      "compression_ratio": 1.501859,
+      "end": 726.56,
+      "no_speech_prob": 0.0,
+      "start": 721.4,
+      "text": "The war in Ukraine is just one of the issues the Central Intelligence Agency is closely monitoring."
+    },
+    {
+      "avg_logprob": -0.172076,
+      "compression_ratio": 1.501859,
+      "end": 729.74,
+      "no_speech_prob": 0.0,
+      "start": 727.1,
+      "text": "The CIA is marking its 75th anniversary this year,"
+    },
+    {
+      "avg_logprob": -0.172076,
+      "compression_ratio": 1.501859,
+      "end": 733.44,
+      "no_speech_prob": 0.0,
+      "start": 729.84,
+      "text": "so we visited the headquarters at Langley to speak with Director William Burns"
+    },
+    {
+      "avg_logprob": -0.172076,
+      "compression_ratio": 1.501859,
+      "end": 738.0,
+      "no_speech_prob": 0.0,
+      "start": 733.44,
+      "text": "and asked him if Putin is concerned about the advances Ukraine's military is making"
+    },
+    {
+      "avg_logprob": -0.172076,
+      "compression_ratio": 1.501859,
+      "end": 740.5,
+      "no_speech_prob": 0.0,
+      "start": 738.0,
+      "text": "as hundreds of thousands flee Russia."
+    },
+    {
+      "avg_logprob": -0.134065,
+      "compression_ratio": 1.690184,
+      "end": 745.52,
+      "no_speech_prob": 0.0,
+      "start": 741.44,
+      "text": "It's got to be concerned, not just about what's happening on the battlefield in Ukraine,"
+    },
+    {
+      "avg_logprob": -0.134065,
+      "compression_ratio": 1.690184,
+      "end": 747.76,
+      "no_speech_prob": 0.0,
+      "start": 745.64,
+      "text": "what's happening at home and what's happening internationally."
+    },
+    {
+      "avg_logprob": -0.134065,
+      "compression_ratio": 1.690184,
+      "end": 753.54,
+      "no_speech_prob": 0.0,
+      "start": 748.42,
+      "text": "You know, he stood next to Xi Jinping last February, just before the war started,"
+    },
+    {
+      "avg_logprob": -0.134065,
+      "compression_ratio": 1.690184,
+      "end": 756.04,
+      "no_speech_prob": 0.0,
+      "start": 753.6,
+      "text": "and they proclaimed a friendship without limits."
+    },
+    {
+      "avg_logprob": -0.134065,
+      "compression_ratio": 1.690184,
+      "end": 759.34,
+      "no_speech_prob": 0.0,
+      "start": 756.66,
+      "text": "Well, it turns out that that friendship has some limits, too."
+    },
+    {
+      "avg_logprob": -0.134065,
+      "compression_ratio": 1.690184,
+      "end": 764.3,
+      "no_speech_prob": 0.0,
+      "start": 759.48,
+      "text": "I mean, the Chinese have controlled their enthusiasm for Russia's conduct of this war."
+    },
+    {
+      "avg_logprob": -0.134065,
+      "compression_ratio": 1.690184,
+      "end": 769.18,
+      "no_speech_prob": 0.0,
+      "start": 764.8,
+      "text": "They haven't provided the kind of military support that Putin had been looking for as well,"
+    },
+    {
+      "avg_logprob": -0.134065,
+      "compression_ratio": 1.690184,
+      "end": 770.34,
+      "no_speech_prob": 0.0,
+      "start": 769.18,
+      "text": "so he's got to be troubled."
+    },
+    {
+      "avg_logprob": -0.174169,
+      "compression_ratio": 1.529412,
+      "end": 775.04,
+      "no_speech_prob": 0.0,
+      "start": 770.68,
+      "text": "by what he sees, but he's also stubbornly confident in his own judgments."
+    },
+    {
+      "avg_logprob": -0.174169,
+      "compression_ratio": 1.529412,
+      "end": 777.16,
+      "no_speech_prob": 0.0,
+      "start": 775.24,
+      "text": "He believes he's tougher than anybody else."
+    },
+    {
+      "avg_logprob": -0.174169,
+      "compression_ratio": 1.529412,
+      "end": 779.5,
+      "no_speech_prob": 0.0,
+      "start": 777.42,
+      "text": "You make it sound like he's even more dangerous."
+    },
+    {
+      "avg_logprob": -0.174169,
+      "compression_ratio": 1.529412,
+      "end": 783.22,
+      "no_speech_prob": 0.0,
+      "start": 779.84,
+      "text": "Putin cornered, Putin who feels his back against the wall,"
+    },
+    {
+      "avg_logprob": -0.174169,
+      "compression_ratio": 1.529412,
+      "end": 785.42,
+      "no_speech_prob": 0.0,
+      "start": 783.36,
+      "text": "can be quite dangerous and reckless."
+    },
+    {
+      "avg_logprob": -0.174169,
+      "compression_ratio": 1.529412,
+      "end": 789.68,
+      "no_speech_prob": 0.0,
+      "start": 785.58,
+      "text": "And we saw, you know, the flawed assumptions that he's made before the war."
+    },
+    {
+      "avg_logprob": -0.1732,
+      "compression_ratio": 1.373984,
+      "end": 798.68,
+      "no_speech_prob": 0.0,
+      "start": 789.68,
+      "text": "I think he's basing his approach now on equally flawed assumptions, where he thinks he can tough it out with the Ukrainians and with the United States and with the West."
+    },
+    {
+      "avg_logprob": -0.155112,
+      "compression_ratio": 0.935484,
+      "end": 803.04,
+      "no_speech_prob": 0.0,
+      "start": 798.68,
+      "text": "How closely is China watching what's happening in Ukraine?"
+    },
+    {
+      "avg_logprob": -0.142711,
+      "compression_ratio": 1.0,
+      "end": 807.96,
+      "no_speech_prob": 0.0,
+      "start": 803.04,
+      "text": "Oh, I think President Xi is watching what's happening in Ukraine like a hawk."
+    },
+    {
+      "avg_logprob": -0.121139,
+      "compression_ratio": 1.454023,
+      "end": 812.32,
+      "no_speech_prob": 0.0,
+      "start": 807.96,
+      "text": "I think he's been sobered to some extent by the poor performance of the Russian military."
+    },
+    {
+      "avg_logprob": -0.121139,
+      "compression_ratio": 1.454023,
+      "end": 822.32,
+      "no_speech_prob": 0.0,
+      "start": 812.32,
+      "text": "The Chinese leadership is also looking at what happens when you stage an invasion and the people you're invading resist with a lot of courage and tenacity as well."
+    },
+    {
+      "avg_logprob": -0.177087,
+      "compression_ratio": 1.522613,
+      "end": 828.56,
+      "no_speech_prob": 0.0,
+      "start": 822.32,
+      "text": "So I think all of that has been sobering and in some ways unsettling for the Chinese leadership."
+    },
+    {
+      "avg_logprob": -0.177087,
+      "compression_ratio": 1.522613,
+      "end": 833.4,
+      "no_speech_prob": 0.0,
+      "start": 829.06,
+      "text": "You mean it could sober President Xi's ambitions with Taiwan?"
+    },
+    {
+      "avg_logprob": -0.177087,
+      "compression_ratio": 1.522613,
+      "end": 834.64,
+      "no_speech_prob": 0.0,
+      "start": 833.8,
+      "text": "I think it could."
+    },
+    {
+      "avg_logprob": -0.177087,
+      "compression_ratio": 1.522613,
+      "end": 842.46,
+      "no_speech_prob": 0.0,
+      "start": 834.78,
+      "text": "President Xi insists today that while he is firmly committed to unification, in other words, to achieving control over Taiwan,"
+    },
+    {
+      "avg_logprob": -0.088017,
+      "compression_ratio": 1.547511,
+      "end": 847.76,
+      "no_speech_prob": 0.0,
+      "start": 842.46,
+      "text": "that his preferences to pursue means to achieve that short of the use of force."
+    },
+    {
+      "avg_logprob": -0.088017,
+      "compression_ratio": 1.547511,
+      "end": 856.56,
+      "no_speech_prob": 0.0,
+      "start": 847.76,
+      "text": "But he's also instructed his military, we know, to be prepared no later than 2027 to conduct a successful invasion of Taiwan."
+    },
+    {
+      "avg_logprob": -0.088017,
+      "compression_ratio": 1.547511,
+      "end": 864.5,
+      "no_speech_prob": 0.0,
+      "start": 856.82,
+      "text": "So the reality, at least as we see it, is that the further you get into this decade, the greater the risks rise of a potential conflict."
+    },
+    {
+      "avg_logprob": -0.182541,
+      "compression_ratio": 1.628253,
+      "end": 878.48,
+      "no_speech_prob": 0.0,
+      "start": 872.46,
+      "text": "The numbers of myocarditis undoubtedly are grossly underreported."
+    },
+    {
+      "avg_logprob": -0.182541,
+      "compression_ratio": 1.628253,
+      "end": 881.8,
+      "no_speech_prob": 0.0,
+      "start": 878.84,
+      "text": "Everything we're seeing right now is the tip of the iceberg."
+    },
+    {
+      "avg_logprob": -0.182541,
+      "compression_ratio": 1.628253,
+      "end": 885.7,
+      "no_speech_prob": 0.0,
+      "start": 882.32,
+      "text": "It's going to get worse if more young people take the vaccines."
+    },
+    {
+      "avg_logprob": -0.182541,
+      "compression_ratio": 1.628253,
+      "end": 888.44,
+      "no_speech_prob": 0.0,
+      "start": 885.98,
+      "text": "It seems to be explosive after shot number two."
+    },
+    {
+      "avg_logprob": -0.182541,
+      "compression_ratio": 1.628253,
+      "end": 893.94,
+      "no_speech_prob": 0.0,
+      "start": 888.96,
+      "text": "And then the risks of death that can occur as the heart becomes scarred and the arrhythmias,"
+    },
+    {
+      "avg_logprob": -0.182541,
+      "compression_ratio": 1.628253,
+      "end": 899.48,
+      "no_speech_prob": 0.0,
+      "start": 894.04,
+      "text": "ventricular tachycardia, ventricular fibrillation, those risks may be enduring over time."
+    },
+    {
+      "avg_logprob": -0.182541,
+      "compression_ratio": 1.628253,
+      "end": 900.46,
+      "no_speech_prob": 0.0,
+      "start": 899.6,
+      "text": "We are seeing..."
+    }
+  ],
+  "text": "请不吝点赞 订阅 转发 打赏支持明镜与点点栏目 转发 打赏支持明镜与点点栏目 The global tech industry will depend 40% less on the Chinese supply chain. According to Bloomberg, tech giants like Apple are becoming less dependent on China. For example, Apple has shifted part of its iPhone 14's production line to India. However, most of the iPhone production, up to 98%, is still made in China. And it will take Apple eight years to move 10% of its production capacity outside the country.在2030年,在2030年, the global tech industry will reduce its dependents on China by 20%-40%。 In addition, in 10 years, hardware and electronics companies can be 20%-30% less dependent on the country. According to Bloomberg, supply chain decoupling is no easy task, because it involves finding a replacement for all local component suppliers, not to mention modern and efficient transport, communication, and electricity supplies. Bloomberg analysts Steven Tseng and Wu Jin-ho said in a report, with China accounting for 70% of global smartphone manufacturing and leading Chinese vendors accounting for nearly half of global shipments, the region has a well-developed supply chain, which will be tough to replicate, and one Apple could lose access to if it moves. As the world's largest exporter, China's growth depends less on its internal conditions than on events in the United States and Europe. And because China supplies goods heavily elsewhere in Asia, such places like South Korea and Taiwan have reflected China's export issues. The overall image coming out of this interaction indicates a slowdown, if not a recession. The latest message from S&P Global's World Purchasing Managers Index, or PMI, is weakness. Its total manufacturing and service activity index dropped to 49.3 in August. That is down from 50.8 recorded in July and under the 50 mark that distinguishes between expansion and contraction. Chinese exports reflect the global slump. According to Beijing's General Administration of Customs, general goods exports in August were $314.9 billion, only 7.1% above year-ago levels. The August number was the worst since last spring's lockdown-oppressed performance. Part of the shortage comes from production interruptions within China, caused by drought, heatwaves, and occasional power outages. All of these problems have put a hitch in that economy's great export machine. COVID lockdowns, though less severe than earlier in the year, have also disrupted goods and services flows. According to reporting from Nomura Institute, some 49 cities in and China face lockdowns of various levels of unique controls. But primarily, China's export shortfall reflects factors of faraway origin. From the United States and Europe, the once powerful post-COVID revival has run its course in the U.S. and Canada. Chinese exports to the U.S. fell 3.8% in August, a complete change from July's 11% increase. Europe, China's most significant export partner, is experiencing a severe economic slowdown due to the soaring price of energy, as Russia restricts the flow of all-important natural gas to the EU. Unlike the outright fall in exports to the U.S., Chinese sales in Europe increased in August. But the 11.1% increase over year-ago marks was sharply down from July's 23.1% gain. China's downturn has spread because its exports depend heavily on a flow of components from other parts of Asia. South Korea's semiconductor exports to China decreased in August for the first time since April 2020 at the peak of the pandemic. Taiwan's shipments to China decreased by 9% in August below the same month last year. There is reason to expect relief from China's heatwave, its drought, and the electricity shortages, but not in the scarcity coming out of North America and Europe. Indeed, central banks in Canada, the U.S., and Europe have raised interest rates and otherwise tightened monetary policy to regain control of inflation. There is every reason to consider still more constrained economic conditions in these critical markets for China, as well as more negative spillover effects elsewhere in Asia.韩国和美国空军战机周二进行了轰炸演习,以应对朝鲜最新的中型弹道导弹发射。官员说,一架韩国F-15K战斗机向西海、黄海无人居住的指导目标投掷了两枚精确炸弹。另外,韩国参谋长联席会议周三表示,韩国和美国军队还向海面发射了多发导弹作为回应。韩国和美国军队韩国和美国军队裡承加更新aj baseball操作为 antes公司他没有提告做这个 Wei inspir言义 proven社会和美国军队竟用力オーブーパ资stat检至这个星期平台会议 Hallelujah,独立国和美国军队竟用力賓水平台会议spray之后。香港法提供性 multiply dennια国情 sistemi finde insect ragique理由 заб從自己油管理öglichアターナ ну да oui當 gens生色把 Beckwith那麼 Detroit Storm те làmLEDGE AND MEMORY CHIP PRODUCTION IN CHINA AND ALSO WILL RESTRICT ACCESS TO CHIPS USED IN SUPERCOMPUTING AND ARTIFICIAL INTELLIGENCE. AGAIN, WE HAD THOSE RULES LAST MONTH, I BELIEVE IT WAS IN EARLY SEPTEMBER. ESSENTIALLY THESE NEW GUIDELINES WILL CODIFY THOSE EXPORT RESTRICTIONS THAT WERE RECENTLY IMPOSED ON NVIDIA AND ALSO AMD. NVIDIA HAS ABOUT 95% SHARE OF THE HIGH-END AI ACCELERATOR CHIP MARKET and AMD has the rest. So this does potentially what levy a severe blow to China's ambitions in the AI space and other supercomputing areas. So Steve, how different or tougher are these new rules than what's currently in place? Yeah, well, right now there is under certain circumstances, of course, US chip technologies can be exported to China. But in the lower end technologies, lower end I should say than 14 nanometer. Essentially, under current guidelines, US based chip equipment makers of the equipment makers like Applied Materials or AMAT, they've been allowed to sell machinery to China or equip some Chinese companies with machinery to produce less less advanced semiconductors. What this will likely do is codify or formalize these export restrictions. The new steps will take on the technology to make those 14 nanometer and then the new rules will be considered chips or better. And again, that is key to China's ambitions. Now, prior actions, this is going to be these new rules are going to be levied or announced by the Commerce Department. Previous steps that have been made by members of Congress, they've really taken action on national security grounds like Huawei. This potentially by the Commerce Department would essentially formalize the governing of these export restrictions on advanced technologies. So we'll have to see what's in the, you know, the proof will be in the pudding in the wording of these new rules. But it'd be interesting to see later this week if and when they do announce them. According to CNN, a notorious Chinese hacking group indicted in 2020 has accelerated its hacking operations this year. The group aims at sensitive data from government and business entities in the U.S. and many other countries. The news outlet cited Chris McConkie, an expert from consulting firm PricewaterhouseCoopers. McConkie said the hacker group targeted multiple U.S. entities last year, including government agencies and tech companies. McConkie noted that hackers infiltrate networks for data on foreign or trade policy and cryptocurrency. He believes these intruders have managed to breach several entities due to their vast-scale operations. And at least 25 countries have been targeted this year. He told CNN, They are, by far, the most active and globally impactful hacking group that we track at the minute. In 2020, five Chinese cyber hackers in the notorious hacking group ATP41 were indicted for allegedly intruding on over 100 companies, organizations, and people in the U.S. and other countries via sophisticated hacking techniques. As part of state-backed espionage, China's hackers have long been targeting U.S. and Western allies to steal trade secrets, advanced military technology, and intelligence, among others. Earlier this year, FBI Director Christopher Wray accused Beijing of stealing American technology and innovation, saying, There's just no country that presents a broader threat to our technology. His chief scientist wrote about finding scapegoat messages or equity scientists are potentially exposed to having global retail connections in China and pushing major disappearances that might end up getting needed on another demand for global movements.全由於此發展目的是關於此動機 alla體驗政策電影機uche記者 Ahh EMOL電腦通常進行美國學習特選hoo電腦通常進行另一籍電腦通常進行中國原無把風格威 Introduían發法公立特選合中國特選民共進行從 Somebody ó양中國特選民支 exploringAsian and Australian organizations since early 2013. The war in Ukraine is just one of the issues the Central Intelligence Agency is closely monitoring. The CIA is marking its 75th anniversary this year, so we visited the headquarters at Langley to speak with Director William Burns and asked him if Putin is concerned about the advances Ukraine's military is making as hundreds of thousands flee Russia. It's got to be concerned, not just about what's happening on the battlefield in Ukraine, what's happening at home and what's happening internationally. You know, he stood next to Xi Jinping last February, just before the war started, and they proclaimed a friendship without limits. Well, it turns out that that friendship has some limits, too. I mean, the Chinese have controlled their enthusiasm for Russia's conduct of this war. They haven't provided the kind of military support that Putin had been looking for as well, so he's got to be troubled. by what he sees, but he's also stubbornly confident in his own judgments. He believes he's tougher than anybody else. You make it sound like he's even more dangerous. Putin cornered, Putin who feels his back against the wall, can be quite dangerous and reckless. And we saw, you know, the flawed assumptions that he's made before the war. I think he's basing his approach now on equally flawed assumptions, where he thinks he can tough it out with the Ukrainians and with the United States and with the West. How closely is China watching what's happening in Ukraine? Oh, I think President Xi is watching what's happening in Ukraine like a hawk. I think he's been sobered to some extent by the poor performance of the Russian military. The Chinese leadership is also looking at what happens when you stage an invasion and the people you're invading resist with a lot of courage and tenacity as well. So I think all of that has been sobering and in some ways unsettling for the Chinese leadership. You mean it could sober President Xi's ambitions with Taiwan? I think it could. President Xi insists today that while he is firmly committed to unification, in other words, to achieving control over Taiwan, that his preferences to pursue means to achieve that short of the use of force. But he's also instructed his military, we know, to be prepared no later than 2027 to conduct a successful invasion of Taiwan. So the reality, at least as we see it, is that the further you get into this decade, the greater the risks rise of a potential conflict. The numbers of myocarditis undoubtedly are grossly underreported. Everything we're seeing right now is the tip of the iceberg. It's going to get worse if more young people take the vaccines. It seems to be explosive after shot number two. And then the risks of death that can occur as the heart becomes scarred and the arrhythmias, ventricular tachycardia, ventricular fibrillation, those risks may be enduring over time. We are seeing..."
+}
