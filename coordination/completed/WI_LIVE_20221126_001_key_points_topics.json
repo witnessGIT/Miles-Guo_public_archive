@@ -1,0 +1,17 @@
+{
+  "task_id": "WI_LIVE_20221126_001_key_points_topics",
+  "agent_id": "codex-local-asr-agent50-20261028",
+  "completed_at": "2026-10-29T02:38:18.381823+00:00",
+  "result_commit": "92b70088d13af7cfb378e5262fcd1fa922e1f788",
+  "outputs": [
+    "data/current/segment_key_points/machine_live_20221126_001.jsonl",
+    "data/current/segment_topics/machine_live_20221126_001.jsonl"
+  ],
+  "validation": "Generated 59 detailed evidence-grounded key points and 19 controlled topic links across 7 substantive natural segments; the only model-empty segment was a 2-character closing phrase (好嗎) and was conservatively left without invented points. Local Qwen2.5 7B, no paid API or token. build_db and validate_db passed; 148 tests passed.",
+  "workflow_mode": "continuous-worker-v2",
+  "claim_protocol": "claim-protocol-v2",
+  "entry_mode": "work",
+  "continue_after_finish": true,
+  "finish_prerequisites_revalidated": true,
+  "notes": "Task completed only after re-checking the latest repository dependency contract. Under continuous-worker-v2, refresh repository state and claim the next eligible task unless a documented stop condition applies."
+}
