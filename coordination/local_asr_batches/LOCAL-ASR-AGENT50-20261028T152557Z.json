@@ -62,7 +62,7 @@
     "LIVE_20230111_001",
     "LIVE_20230129_001"
   ],
-  "next_live_id": "LIVE_20221010_001",
+  "next_live_id": "LIVE_20221017_002",
   "completed_live_ids": [
     "LIVE_20230313_001",
     "LIVE_20221011_001",
@@ -82,13 +82,14 @@
     "LIVE_20230103_001",
     "LIVE_20230214_001",
     "LIVE_20220927_001",
-    "LIVE_20221007_002"
+    "LIVE_20221007_002",
+    "LIVE_20221010_001"
   ],
   "failed_or_deferred_live_ids": [],
   "retry_pending_live_ids": [],
   "last_window": {
-    "started_at": "2026-10-29T09:26:14Z",
-    "ended_at": "2026-10-29T09:33:36Z",
+    "started_at": "2026-10-29T10:26:13Z",
+    "ended_at": "2026-10-29T10:31:35Z",
     "attempted_unique_videos": 1,
     "transcript_cue_segment_completed": 0,
     "four_stage_completed": 1,
@@ -97,37 +98,35 @@
     "tail_deferred_videos": 0,
     "cooldown_skipped_videos": 0,
     "source_temporarily_unavailable_videos": 0,
-    "audio_duration_sec": 600.22,
-    "download_elapsed_sec_known": 68.293,
+    "audio_duration_sec": 600.838,
+    "download_elapsed_sec_known": 63.303,
     "download_elapsed_unavailable_for": [],
-    "pure_asr_inference_sec_known": 71.027,
+    "pure_asr_inference_sec_known": 75.044,
     "pure_asr_inference_unavailable_for": [],
-    "structured_pipeline_elapsed_sec_known": 143.746,
+    "structured_pipeline_elapsed_sec_known": 142.994,
     "structured_pipeline_elapsed_unavailable_for": [],
     "asr_job_wall_elapsed_sec": 0.0,
-    "key_points_attempt_wall_elapsed_sec": 208.85,
-    "window_elapsed_sec": 442.0,
-    "known_inference_rtf": 0.11834,
-    "known_inference_realtime_multiple": 8.4501,
+    "key_points_attempt_wall_elapsed_sec": 176.24,
+    "window_elapsed_sec": 322.0,
+    "known_inference_rtf": 0.1249,
+    "known_inference_realtime_multiple": 8.0065,
     "published_commits": 4,
-    "quality_failures": {
-      "model_empty_non_substantive_segment_recovered": "One 62-character camera/leg aside remained empty after a 3072-token retry; one conservative exact-span machine-grounded supplement restored complete segment coverage before validation."
-    },
+    "quality_failures": {},
     "completed_three_stage_live_ids": [],
     "completed_four_stage_live_ids": [
-      "LIVE_20221007_002"
+      "LIVE_20221010_001"
     ],
     "released_key_points_live_ids": [],
     "source_temporarily_unavailable_live_ids": [],
-    "next_live_id": "LIVE_20221010_001",
+    "next_live_id": "LIVE_20221017_002",
     "key_point_stats": {
-      "natural_segments": 10,
-      "key_points": 59,
-      "topic_links": 27,
+      "natural_segments": 7,
+      "key_points": 47,
+      "topic_links": 19,
       "skipped_or_invalid": 0,
       "parse_errors": 0,
       "forced_retries": 2,
-      "grounded_supplement_points": 1,
+      "grounded_supplement_points": 0,
       "outcome": "enriched"
     }
   },
