@@ -3,7 +3,7 @@
   "agent_id": "github-actions-cloud-entity-41076680775",
   "claimed_at": "2026-10-30T18:18:03.338265+00:00",
   "base_commit": "320ffe0cc8dbf2aa2a1e14eb7c5a20a4d7736402",
-  "status": "in_progress",
+  "status": "released",
   "workflow_mode": "continuous-worker-v2",
   "claim_protocol": "claim-protocol-v2",
   "entry_mode": "work",
@@ -22,5 +22,7 @@
   ],
   "scope": "Extract speakers, people, organizations, places and mentioned entities.",
   "reclaimed_expired_claim": false,
-  "static_claim_lease_hours": 24
+  "static_claim_lease_hours": 24,
+  "released_at": "2026-10-30T20:38:31.958292+00:00",
+  "release_reason": "Cloud entity result and completion record were published successfully by run 41076680775; release successful claim."
 }
