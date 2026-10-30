@@ -1,9 +1,9 @@
 {
   "task_id": "WI_LIVE_20220419_001_entity_pass",
-  "agent_id": "github-actions-cloud-entity-40936304067",
-  "claimed_at": "2026-10-29T19:23:16.998529+00:00",
-  "base_commit": "2c531f03f3964bcac8df4749d4c553a530de5d1a",
-  "status": "released",
+  "agent_id": "github-actions-cloud-entity-41135979203",
+  "claimed_at": "2026-10-30T22:58:02.159427+00:00",
+  "base_commit": "85726e7707b73b569d84956ce40b7a4b65bd3b47",
+  "status": "in_progress",
   "workflow_mode": "continuous-worker-v2",
   "claim_protocol": "claim-protocol-v2",
   "entry_mode": "work",
@@ -21,8 +21,6 @@
     "WI_LIVE_20220419_001_segment_split"
   ],
   "scope": "Extract speakers, people, organizations, places and mentioned entities.",
-  "reclaimed_expired_claim": false,
-  "static_claim_lease_hours": 24,
-  "released_at": "2026-10-29T20:03:09.915352+00:00",
-  "release_reason": "Overlapping entity run 40936304067 was force-cancelled to preserve the older key-point run; no completion record was published, so retain this task for retry."
+  "reclaimed_expired_claim": true,
+  "static_claim_lease_hours": 24
 }
