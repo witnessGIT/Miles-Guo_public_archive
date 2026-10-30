@@ -1,0 +1,3552 @@
+{
+  "chunk_audio_sha256": "c08156300dc7e1f6992f3b1bc844808d4082a04f17247e199634c30ec235006e",
+  "chunk_index": 2,
+  "completed_at": "2026-10-30T02:26:08Z",
+  "language": "zh",
+  "live_id": "LIVE_20230208_001",
+  "media_committed_to_git": false,
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "offset_sec": 1800,
+  "paid_api_used": false,
+  "processing_location": "github-hosted-macos-arm64",
+  "schema_version": "cloud-asr-chunk-v1",
+  "segments": [
+    {
+      "avg_logprob": -0.597657,
+      "compression_ratio": 1.218182,
+      "end": 1803.6,
+      "no_speech_prob": 0.0,
+      "start": 1800.0,
+      "text": "《紅樓》《孤獨的小生》《九夢》"
+    },
+    {
+      "avg_logprob": -0.597657,
+      "compression_ratio": 1.218182,
+      "end": 1807.78,
+      "no_speech_prob": 0.0,
+      "start": 1804.98,
+      "text": "《帥哥來了》"
+    },
+    {
+      "avg_logprob": -0.597657,
+      "compression_ratio": 1.218182,
+      "end": 1810.0,
+      "no_speech_prob": 0.0,
+      "start": 1808.72,
+      "text": "這怎麽不滾動了呢"
+    },
+    {
+      "avg_logprob": -0.597657,
+      "compression_ratio": 1.218182,
+      "end": 1816.72,
+      "no_speech_prob": 0.0,
+      "start": 1815.28,
+      "text": "哎 你這咋不滾動了"
+    },
+    {
+      "avg_logprob": -0.597657,
+      "compression_ratio": 1.218182,
+      "end": 1822.72,
+      "no_speech_prob": 0.0,
+      "start": 1820.72,
+      "text": "《跟著郭叔學英文》"
+    },
+    {
+      "avg_logprob": -0.597657,
+      "compression_ratio": 1.218182,
+      "end": 1826.6,
+      "no_speech_prob": 0.0,
+      "start": 1823.18,
+      "text": "《JC卡》《金剛手》《紅歌文聊》"
+    },
+    {
+      "avg_logprob": -0.597657,
+      "compression_ratio": 1.218182,
+      "end": 1828.62,
+      "no_speech_prob": 0.0,
+      "start": 1827.02,
+      "text": "《平安亮亮》"
+    },
+    {
+      "avg_logprob": -0.727512,
+      "compression_ratio": 1.076923,
+      "end": 1833.6,
+      "no_speech_prob": 0.0,
+      "start": 1830.0,
+      "text": "《在水一方西喜》"
+    },
+    {
+      "avg_logprob": -0.727512,
+      "compression_ratio": 1.076923,
+      "end": 1836.9,
+      "no_speech_prob": 0.0,
+      "start": 1835.4,
+      "text": "哇哦"
+    },
+    {
+      "avg_logprob": -0.727512,
+      "compression_ratio": 1.076923,
+      "end": 1844.98,
+      "no_speech_prob": 0.0,
+      "start": 1843.78,
+      "text": "《萬物有靈》"
+    },
+    {
+      "avg_logprob": -0.727512,
+      "compression_ratio": 1.076923,
+      "end": 1846.32,
+      "no_speech_prob": 0.0,
+      "start": 1844.98,
+      "text": "哎呀 我這把這個看不了了"
+    },
+    {
+      "avg_logprob": -0.727512,
+      "compression_ratio": 1.076923,
+      "end": 1848.48,
+      "no_speech_prob": 0.0,
+      "start": 1846.32,
+      "text": "《張蘭如米》"
+    },
+    {
+      "avg_logprob": -0.727512,
+      "compression_ratio": 1.076923,
+      "end": 1852.68,
+      "no_speech_prob": 0.0,
+      "start": 1850.12,
+      "text": "這整得這麽白呀 我沒那麽白呀"
+    },
+    {
+      "avg_logprob": -0.784407,
+      "compression_ratio": 0.878788,
+      "end": 1863.6,
+      "no_speech_prob": 0.0,
+      "start": 1860.0,
+      "text": "《小甜心》"
+    },
+    {
+      "avg_logprob": -0.784407,
+      "compression_ratio": 0.878788,
+      "end": 1868.6,
+      "no_speech_prob": 0.0,
+      "start": 1863.6,
+      "text": "《向日葵路過》"
+    },
+    {
+      "avg_logprob": -0.784407,
+      "compression_ratio": 0.878788,
+      "end": 1872.72,
+      "no_speech_prob": 0.0,
+      "start": 1869.4,
+      "text": "哎呦 真看不了了"
+    },
+    {
+      "avg_logprob": -0.50617,
+      "compression_ratio": 1.182692,
+      "end": 1874.62,
+      "no_speech_prob": 0.0,
+      "start": 1872.72,
+      "text": "超級的快呀"
+    },
+    {
+      "avg_logprob": -0.50617,
+      "compression_ratio": 1.182692,
+      "end": 1881.82,
+      "no_speech_prob": 0.0,
+      "start": 1880.32,
+      "text": "《雲水禪新》"
+    },
+    {
+      "avg_logprob": -0.50617,
+      "compression_ratio": 1.182692,
+      "end": 1883.94,
+      "no_speech_prob": 0.0,
+      "start": 1881.82,
+      "text": "《文科天福山》"
+    },
+    {
+      "avg_logprob": -0.50617,
+      "compression_ratio": 1.182692,
+      "end": 1886.7,
+      "no_speech_prob": 0.0,
+      "start": 1883.94,
+      "text": "《世界潮流王者》"
+    },
+    {
+      "avg_logprob": -0.50617,
+      "compression_ratio": 1.182692,
+      "end": 1888.2,
+      "no_speech_prob": 0.0,
+      "start": 1886.7,
+      "text": "《高作型》"
+    },
+    {
+      "avg_logprob": -0.50617,
+      "compression_ratio": 1.182692,
+      "end": 1890.94,
+      "no_speech_prob": 0.0,
+      "start": 1888.2,
+      "text": "哎呀哎呀哎呀哎呀哎呀"
+    },
+    {
+      "avg_logprob": -0.442527,
+      "compression_ratio": 1.57732,
+      "end": 1893.04,
+      "no_speech_prob": 0.0,
+      "start": 1890.94,
+      "text": "尊敬的戰友們好"
+    },
+    {
+      "avg_logprob": -0.442527,
+      "compression_ratio": 1.57732,
+      "end": 1894.04,
+      "no_speech_prob": 0.0,
+      "start": 1893.04,
+      "text": "尊敬的戰友們好"
+    },
+    {
+      "avg_logprob": -0.442527,
+      "compression_ratio": 1.57732,
+      "end": 1894.54,
+      "no_speech_prob": 0.0,
+      "start": 1894.04,
+      "text": "尊敬的戰友們好"
+    },
+    {
+      "avg_logprob": -0.442527,
+      "compression_ratio": 1.57732,
+      "end": 1895.34,
+      "no_speech_prob": 0.0,
+      "start": 1894.54,
+      "text": "咱今天"
+    },
+    {
+      "avg_logprob": -0.442527,
+      "compression_ratio": 1.57732,
+      "end": 1897.64,
+      "no_speech_prob": 0.0,
+      "start": 1896.34,
+      "text": "先看一下啊"
+    },
+    {
+      "avg_logprob": -0.442527,
+      "compression_ratio": 1.57732,
+      "end": 1899.54,
+      "no_speech_prob": 0.0,
+      "start": 1898.34,
+      "text": "今天由"
+    },
+    {
+      "avg_logprob": -0.442527,
+      "compression_ratio": 1.57732,
+      "end": 1901.24,
+      "no_speech_prob": 0.0,
+      "start": 1899.54,
+      "text": "我們的頑童"
+    },
+    {
+      "avg_logprob": -0.442527,
+      "compression_ratio": 1.57732,
+      "end": 1902.04,
+      "no_speech_prob": 0.0,
+      "start": 1901.24,
+      "text": "雅倫"
+    },
+    {
+      "avg_logprob": -0.442527,
+      "compression_ratio": 1.57732,
+      "end": 1902.84,
+      "no_speech_prob": 0.0,
+      "start": 1902.04,
+      "text": "哈雷"
+    },
+    {
+      "avg_logprob": -0.442527,
+      "compression_ratio": 1.57732,
+      "end": 1904.16,
+      "no_speech_prob": 0.0,
+      "start": 1902.84,
+      "text": "整理的"
+    },
+    {
+      "avg_logprob": -0.434455,
+      "compression_ratio": 1.203125,
+      "end": 1907.26,
+      "no_speech_prob": 0.0,
+      "start": 1904.16,
+      "text": "感謝喜必交流群戰友的思想火花"
+    },
+    {
+      "avg_logprob": -0.434455,
+      "compression_ratio": 1.203125,
+      "end": 1908.76,
+      "no_speech_prob": 0.0,
+      "start": 1908.06,
+      "text": "前言"
+    },
+    {
+      "avg_logprob": -0.434455,
+      "compression_ratio": 1.203125,
+      "end": 1911.26,
+      "no_speech_prob": 0.0,
+      "start": 1909.26,
+      "text": "應對世界金融海嘯"
+    },
+    {
+      "avg_logprob": -0.434455,
+      "compression_ratio": 1.203125,
+      "end": 1915.76,
+      "no_speech_prob": 0.0,
+      "start": 1911.76,
+      "text": "持有科技加金融原始股市人生贏家"
+    },
+    {
+      "avg_logprob": -0.434455,
+      "compression_ratio": 1.203125,
+      "end": 1919.64,
+      "no_speech_prob": 0.0,
+      "start": 1916.46,
+      "text": "感恩及格為戰友創造了A10項目"
+    },
+    {
+      "avg_logprob": -0.434455,
+      "compression_ratio": 1.203125,
+      "end": 1920.14,
+      "no_speech_prob": 0.0,
+      "start": 1919.64,
+      "text": "哎呦好"
+    },
+    {
+      "avg_logprob": -0.434455,
+      "compression_ratio": 1.203125,
+      "end": 1921.64,
+      "no_speech_prob": 0.0,
+      "start": 1920.44,
+      "text": "想黨的客氣啊"
+    },
+    {
+      "avg_logprob": -0.434455,
+      "compression_ratio": 1.203125,
+      "end": 1922.76,
+      "no_speech_prob": 0.0,
+      "start": 1922.18,
+      "text": "啊這個好"
+    },
+    {
+      "avg_logprob": -0.434455,
+      "compression_ratio": 1.203125,
+      "end": 1923.76,
+      "no_speech_prob": 0.0,
+      "start": 1922.76,
+      "text": "這感覺好啊"
+    },
+    {
+      "avg_logprob": -0.434455,
+      "compression_ratio": 1.203125,
+      "end": 1924.36,
+      "no_speech_prob": 0.0,
+      "start": 1923.76,
+      "text": "這感覺好"
+    },
+    {
+      "avg_logprob": -0.434455,
+      "compression_ratio": 1.203125,
+      "end": 1926.96,
+      "no_speech_prob": 0.0,
+      "start": 1926.36,
+      "text": "啊"
+    },
+    {
+      "avg_logprob": -0.434455,
+      "compression_ratio": 1.203125,
+      "end": 1929.06,
+      "no_speech_prob": 0.0,
+      "start": 1928.06,
+      "text": "這個"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.197368,
+      "end": 1930.56,
+      "no_speech_prob": 0.0,
+      "start": 1930.06,
+      "text": "Wright"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.197368,
+      "end": 1930.76,
+      "no_speech_prob": 0.0,
+      "start": 1930.56,
+      "text": "問題"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.197368,
+      "end": 1931.36,
+      "no_speech_prob": 0.0,
+      "start": 1930.76,
+      "text": "1"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.197368,
+      "end": 1932.06,
+      "no_speech_prob": 0.0,
+      "start": 1931.36,
+      "text": "1"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.197368,
+      "end": 1932.56,
+      "no_speech_prob": 0.0,
+      "start": 1932.06,
+      "text": "1"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.197368,
+      "end": 1933.06,
+      "no_speech_prob": 0.0,
+      "start": 1932.56,
+      "text": "1"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.197368,
+      "end": 1933.76,
+      "no_speech_prob": 0.0,
+      "start": 1933.06,
+      "text": "問題1"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.197368,
+      "end": 1935.06,
+      "no_speech_prob": 0.0,
+      "start": 1933.76,
+      "text": "廣受關注的"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.197368,
+      "end": 1936.96,
+      "no_speech_prob": 0.0,
+      "start": 1935.06,
+      "text": "Charter GPT"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.197368,
+      "end": 1941.46,
+      "no_speech_prob": 0.0,
+      "start": 1936.96,
+      "text": "是人類學習反饋優化的一個AI應用程序"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.197368,
+      "end": 1946.16,
+      "no_speech_prob": 0.0,
+      "start": 1941.46,
+      "text": "目前尚不能證明它會不會像谷歌搜索一樣"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.197368,
+      "end": 1947.66,
+      "no_speech_prob": 0.0,
+      "start": 1946.16,
+      "text": "被人操控"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.197368,
+      "end": 1949.66,
+      "no_speech_prob": 0.0,
+      "start": 1948.66,
+      "text": "一定會的"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.197368,
+      "end": 1951.66,
+      "no_speech_prob": 0.0,
+      "start": 1949.66,
+      "text": "一定會的"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.197368,
+      "end": 1954.66,
+      "no_speech_prob": 0.0,
+      "start": 1951.66,
+      "text": "什麼會不知道會不會一定會的"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.197368,
+      "end": 1956.26,
+      "no_speech_prob": 0.0,
+      "start": 1954.66,
+      "text": "不"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.197368,
+      "end": 1958.96,
+      "no_speech_prob": 0.0,
+      "start": 1956.26,
+      "text": "你要連這都不知道就對整個這個"
+    },
+    {
+      "avg_logprob": -0.2772,
+      "compression_ratio": 1.450593,
+      "end": 1959.96,
+      "no_speech_prob": 0.0,
+      "start": 1958.96,
+      "text": "AI"
+    },
+    {
+      "avg_logprob": -0.2772,
+      "compression_ratio": 1.450593,
+      "end": 1960.46,
+      "no_speech_prob": 0.0,
+      "start": 1959.96,
+      "text": "你就"
+    },
+    {
+      "avg_logprob": -0.2772,
+      "compression_ratio": 1.450593,
+      "end": 1962.36,
+      "no_speech_prob": 0.0,
+      "start": 1960.46,
+      "text": "如果這個控制不住的話"
+    },
+    {
+      "avg_logprob": -0.2772,
+      "compression_ratio": 1.450593,
+      "end": 1963.86,
+      "no_speech_prob": 0.0,
+      "start": 1962.86,
+      "text": "那它不天天就"
+    },
+    {
+      "avg_logprob": -0.2772,
+      "compression_ratio": 1.450593,
+      "end": 1965.16,
+      "no_speech_prob": 0.0,
+      "start": 1963.86,
+      "text": "那就殺人去了嗎"
+    },
+    {
+      "avg_logprob": -0.2772,
+      "compression_ratio": 1.450593,
+      "end": 1968.46,
+      "no_speech_prob": 0.0,
+      "start": 1965.66,
+      "text": "那不就可以把這些所有共產黨"
+    },
+    {
+      "avg_logprob": -0.2772,
+      "compression_ratio": 1.450593,
+      "end": 1971.56,
+      "no_speech_prob": 0.0,
+      "start": 1968.76,
+      "text": "還有美國的政府的真相不都出來了嗎"
+    },
+    {
+      "avg_logprob": -0.2772,
+      "compression_ratio": 1.450593,
+      "end": 1972.06,
+      "no_speech_prob": 0.0,
+      "start": 1971.56,
+      "text": "是吧"
+    },
+    {
+      "avg_logprob": -0.2772,
+      "compression_ratio": 1.450593,
+      "end": 1974.36,
+      "no_speech_prob": 0.0,
+      "start": 1973.26,
+      "text": "它真相都出來了"
+    },
+    {
+      "avg_logprob": -0.2772,
+      "compression_ratio": 1.450593,
+      "end": 1976.26,
+      "no_speech_prob": 0.0,
+      "start": 1974.36,
+      "text": "那政府不一分鐘就完了嗎"
+    },
+    {
+      "avg_logprob": -0.2772,
+      "compression_ratio": 1.450593,
+      "end": 1978.06,
+      "no_speech_prob": 0.0,
+      "start": 1976.86,
+      "text": "基本的常識"
+    },
+    {
+      "avg_logprob": -0.2772,
+      "compression_ratio": 1.450593,
+      "end": 1979.66,
+      "no_speech_prob": 0.0,
+      "start": 1978.46,
+      "text": "電腦是人說了算"
+    },
+    {
+      "avg_logprob": -0.2772,
+      "compression_ratio": 1.450593,
+      "end": 1981.06,
+      "no_speech_prob": 0.0,
+      "start": 1979.66,
+      "text": "AI還不能控制人類"
+    },
+    {
+      "avg_logprob": -0.2772,
+      "compression_ratio": 1.450593,
+      "end": 1982.46,
+      "no_speech_prob": 0.0,
+      "start": 1981.06,
+      "text": "那就誰控制AI呢"
+    },
+    {
+      "avg_logprob": -0.2772,
+      "compression_ratio": 1.450593,
+      "end": 1983.86,
+      "no_speech_prob": 0.0,
+      "start": 1982.46,
+      "text": "那人類控制AI"
+    },
+    {
+      "avg_logprob": -0.2772,
+      "compression_ratio": 1.450593,
+      "end": 1984.96,
+      "no_speech_prob": 0.0,
+      "start": 1984.16,
+      "text": "那人類控制AI"
+    },
+    {
+      "avg_logprob": -0.2772,
+      "compression_ratio": 1.450593,
+      "end": 1986.36,
+      "no_speech_prob": 0.0,
+      "start": 1984.96,
+      "text": "想讓你幹啥你幹啥"
+    },
+    {
+      "avg_logprob": -0.2772,
+      "compression_ratio": 1.450593,
+      "end": 1986.86,
+      "no_speech_prob": 0.0,
+      "start": 1986.36,
+      "text": "是吧"
+    },
+    {
+      "avg_logprob": -0.213541,
+      "compression_ratio": 1.297674,
+      "end": 1992.86,
+      "no_speech_prob": 0.0,
+      "start": 1988.96,
+      "text": "比如它不回答關於新冠疫情相關的問題"
+    },
+    {
+      "avg_logprob": -0.213541,
+      "compression_ratio": 1.297674,
+      "end": 1995.06,
+      "no_speech_prob": 0.0,
+      "start": 1993.36,
+      "text": "那當然了就是人控制的嘛"
+    },
+    {
+      "avg_logprob": -0.213541,
+      "compression_ratio": 1.297674,
+      "end": 1995.96,
+      "no_speech_prob": 0.0,
+      "start": 1995.36,
+      "text": "七哥您"
+    },
+    {
+      "avg_logprob": -0.213541,
+      "compression_ratio": 1.297674,
+      "end": 1997.96,
+      "no_speech_prob": 0.0,
+      "start": 1995.96,
+      "text": "這是比爾蓋斯就不讓你回答了"
+    },
+    {
+      "avg_logprob": -0.213541,
+      "compression_ratio": 1.297674,
+      "end": 1999.56,
+      "no_speech_prob": 0.0,
+      "start": 1997.96,
+      "text": "它是屬於比爾蓋斯擁有"
+    },
+    {
+      "avg_logprob": -0.213541,
+      "compression_ratio": 1.297674,
+      "end": 2003.36,
+      "no_speech_prob": 0.0,
+      "start": 1999.96,
+      "text": "七哥您提到的新中國聯邦三座金山中"
+    },
+    {
+      "avg_logprob": -0.213541,
+      "compression_ratio": 1.297674,
+      "end": 2006.36,
+      "no_speech_prob": 0.0,
+      "start": 2003.66,
+      "text": "就包含了人的智慧和大數據"
+    },
+    {
+      "avg_logprob": -0.213541,
+      "compression_ratio": 1.297674,
+      "end": 2009.66,
+      "no_speech_prob": 0.0,
+      "start": 2006.96,
+      "text": "七哥是在全世界華人當中"
+    },
+    {
+      "avg_logprob": -0.314402,
+      "compression_ratio": 1.373333,
+      "end": 2011.66,
+      "no_speech_prob": 0.0,
+      "start": 2009.66,
+      "text": "在公共媒體當中講"
+    },
+    {
+      "avg_logprob": -0.314402,
+      "compression_ratio": 1.373333,
+      "end": 2013.06,
+      "no_speech_prob": 0.0,
+      "start": 2011.66,
+      "text": "AI數據"
+    },
+    {
+      "avg_logprob": -0.314402,
+      "compression_ratio": 1.373333,
+      "end": 2013.56,
+      "no_speech_prob": 0.0,
+      "start": 2013.06,
+      "text": "AI"
+    },
+    {
+      "avg_logprob": -0.314402,
+      "compression_ratio": 1.373333,
+      "end": 2014.56,
+      "no_speech_prob": 0.0,
+      "start": 2013.56,
+      "text": "AI"
+    },
+    {
+      "avg_logprob": -0.314402,
+      "compression_ratio": 1.373333,
+      "end": 2015.06,
+      "no_speech_prob": 0.0,
+      "start": 2014.56,
+      "text": "AI"
+    },
+    {
+      "avg_logprob": -0.314402,
+      "compression_ratio": 1.373333,
+      "end": 2015.96,
+      "no_speech_prob": 0.0,
+      "start": 2015.06,
+      "text": "量子電腦"
+    },
+    {
+      "avg_logprob": -0.314402,
+      "compression_ratio": 1.373333,
+      "end": 2016.56,
+      "no_speech_prob": 0.0,
+      "start": 2015.96,
+      "text": "量子電腦"
+    },
+    {
+      "avg_logprob": -0.314402,
+      "compression_ratio": 1.373333,
+      "end": 2017.26,
+      "no_speech_prob": 0.0,
+      "start": 2016.56,
+      "text": "量子電腦"
+    },
+    {
+      "avg_logprob": -0.314402,
+      "compression_ratio": 1.373333,
+      "end": 2017.36,
+      "no_speech_prob": 0.0,
+      "start": 2017.26,
+      "text": "量子電腦"
+    },
+    {
+      "avg_logprob": -0.314402,
+      "compression_ratio": 1.373333,
+      "end": 2018.06,
+      "no_speech_prob": 0.0,
+      "start": 2017.36,
+      "text": "最多的"
+    },
+    {
+      "avg_logprob": -0.314402,
+      "compression_ratio": 1.373333,
+      "end": 2023.56,
+      "no_speech_prob": 0.0,
+      "start": 2019.76,
+      "text": "誰像咱們新中國聯邦爆料革命有這樣的圓展的思想"
+    },
+    {
+      "avg_logprob": -0.314402,
+      "compression_ratio": 1.373333,
+      "end": 2025.06,
+      "no_speech_prob": 0.0,
+      "start": 2024.46,
+      "text": "有嗎"
+    },
+    {
+      "avg_logprob": -0.314402,
+      "compression_ratio": 1.373333,
+      "end": 2026.96,
+      "no_speech_prob": 0.0,
+      "start": 2026.46,
+      "text": "是吧"
+    },
+    {
+      "avg_logprob": -0.314402,
+      "compression_ratio": 1.373333,
+      "end": 2030.06,
+      "no_speech_prob": 0.0,
+      "start": 2028.06,
+      "text": "誰像我們新中國聯邦一樣"
+    },
+    {
+      "avg_logprob": -0.252863,
+      "compression_ratio": 1.247475,
+      "end": 2031.06,
+      "no_speech_prob": 0.0,
+      "start": 2030.06,
+      "text": "最早就提出來"
+    },
+    {
+      "avg_logprob": -0.252863,
+      "compression_ratio": 1.247475,
+      "end": 2032.06,
+      "no_speech_prob": 0.0,
+      "start": 2031.06,
+      "text": "AIAI"
+    },
+    {
+      "avg_logprob": -0.252863,
+      "compression_ratio": 1.247475,
+      "end": 2032.86,
+      "no_speech_prob": 0.0,
+      "start": 2032.06,
+      "text": "量子電腦"
+    },
+    {
+      "avg_logprob": -0.252863,
+      "compression_ratio": 1.247475,
+      "end": 2033.66,
+      "no_speech_prob": 0.0,
+      "start": 2032.86,
+      "text": "量子電腦"
+    },
+    {
+      "avg_logprob": -0.252863,
+      "compression_ratio": 1.247475,
+      "end": 2035.46,
+      "no_speech_prob": 0.0,
+      "start": 2034.36,
+      "text": "然後生物科技"
+    },
+    {
+      "avg_logprob": -0.252863,
+      "compression_ratio": 1.247475,
+      "end": 2036.06,
+      "no_speech_prob": 0.0,
+      "start": 2035.46,
+      "text": "生物科技"
+    },
+    {
+      "avg_logprob": -0.252863,
+      "compression_ratio": 1.247475,
+      "end": 2036.96,
+      "no_speech_prob": 0.0,
+      "start": 2036.06,
+      "text": "然後太空科技"
+    },
+    {
+      "avg_logprob": -0.252863,
+      "compression_ratio": 1.247475,
+      "end": 2037.66,
+      "no_speech_prob": 0.0,
+      "start": 2036.96,
+      "text": "太空科技"
+    },
+    {
+      "avg_logprob": -0.252863,
+      "compression_ratio": 1.247475,
+      "end": 2040.96,
+      "no_speech_prob": 0.0,
+      "start": 2039.76,
+      "text": "請七哥散望一下"
+    },
+    {
+      "avg_logprob": -0.252863,
+      "compression_ratio": 1.247475,
+      "end": 2044.26,
+      "no_speech_prob": 0.0,
+      "start": 2040.96,
+      "text": "新中國聯邦未來的人工智能方面的發展前景"
+    },
+    {
+      "avg_logprob": -0.252863,
+      "compression_ratio": 1.247475,
+      "end": 2046.86,
+      "no_speech_prob": 0.0,
+      "start": 2046.26,
+      "text": "查特"
+    },
+    {
+      "avg_logprob": -0.252863,
+      "compression_ratio": 1.247475,
+      "end": 2047.76,
+      "no_speech_prob": 0.0,
+      "start": 2046.86,
+      "text": "GPT"
+    },
+    {
+      "avg_logprob": -0.252863,
+      "compression_ratio": 1.247475,
+      "end": 2050.36,
+      "no_speech_prob": 0.0,
+      "start": 2048.26,
+      "text": "很多人現在有各種理解"
+    },
+    {
+      "avg_logprob": -0.252863,
+      "compression_ratio": 1.247475,
+      "end": 2052.56,
+      "no_speech_prob": 0.0,
+      "start": 2050.36,
+      "text": "絕大多數都是錯的"
+    },
+    {
+      "avg_logprob": -0.224342,
+      "compression_ratio": 1.248649,
+      "end": 2056.36,
+      "no_speech_prob": 0.0,
+      "start": 2052.56,
+      "text": "用好了"
+    },
+    {
+      "avg_logprob": -0.224342,
+      "compression_ratio": 1.248649,
+      "end": 2059.96,
+      "no_speech_prob": 0.0,
+      "start": 2056.96,
+      "text": "它就是當年的醫療界的叫青霉素"
+    },
+    {
+      "avg_logprob": -0.224342,
+      "compression_ratio": 1.248649,
+      "end": 2064.46,
+      "no_speech_prob": 0.0,
+      "start": 2061.26,
+      "text": "能把人類幾千年的所謂的炎症"
+    },
+    {
+      "avg_logprob": -0.224342,
+      "compression_ratio": 1.248649,
+      "end": 2066.96,
+      "no_speech_prob": 0.0,
+      "start": 2065.96,
+      "text": "感冒發燒"
+    },
+    {
+      "avg_logprob": -0.224342,
+      "compression_ratio": 1.248649,
+      "end": 2068.76,
+      "no_speech_prob": 0.0,
+      "start": 2067.66,
+      "text": "就是一些感染"
+    },
+    {
+      "avg_logprob": -0.224342,
+      "compression_ratio": 1.248649,
+      "end": 2070.46,
+      "no_speech_prob": 0.0,
+      "start": 2069.26,
+      "text": "就迅速給消掉"
+    },
+    {
+      "avg_logprob": -0.224342,
+      "compression_ratio": 1.248649,
+      "end": 2072.86,
+      "no_speech_prob": 0.0,
+      "start": 2070.96,
+      "text": "解決了人類和細菌"
+    },
+    {
+      "avg_logprob": -0.224342,
+      "compression_ratio": 1.248649,
+      "end": 2076.76,
+      "no_speech_prob": 0.0,
+      "start": 2073.56,
+      "text": "和地球上的生物的存在的關係"
+    },
+    {
+      "avg_logprob": -0.224342,
+      "compression_ratio": 1.248649,
+      "end": 2078.56,
+      "no_speech_prob": 0.0,
+      "start": 2077.36,
+      "text": "叫青霉素"
+    },
+    {
+      "avg_logprob": -0.224342,
+      "compression_ratio": 1.248649,
+      "end": 2081.86,
+      "no_speech_prob": 0.0,
+      "start": 2080.86,
+      "text": "就是硝煙用的"
+    },
+    {
+      "avg_logprob": -0.264089,
+      "compression_ratio": 1.302419,
+      "end": 2084.56,
+      "no_speech_prob": 0.0,
+      "start": 2082.56,
+      "text": "那麼這個整個查特"
+    },
+    {
+      "avg_logprob": -0.264089,
+      "compression_ratio": 1.302419,
+      "end": 2085.26,
+      "no_speech_prob": 0.0,
+      "start": 2084.56,
+      "text": "GPT"
+    },
+    {
+      "avg_logprob": -0.264089,
+      "compression_ratio": 1.302419,
+      "end": 2087.56,
+      "no_speech_prob": 0.0,
+      "start": 2085.66,
+      "text": "就是電腦上的青霉素"
+    },
+    {
+      "avg_logprob": -0.264089,
+      "compression_ratio": 1.302419,
+      "end": 2089.16,
+      "no_speech_prob": 0.0,
+      "start": 2088.66,
+      "text": "去假"
+    },
+    {
+      "avg_logprob": -0.264089,
+      "compression_ratio": 1.302419,
+      "end": 2089.76,
+      "no_speech_prob": 0.0,
+      "start": 2089.16,
+      "text": "純真"
+    },
+    {
+      "avg_logprob": -0.264089,
+      "compression_ratio": 1.302419,
+      "end": 2090.96,
+      "no_speech_prob": 0.0,
+      "start": 2090.36,
+      "text": "而且"
+    },
+    {
+      "avg_logprob": -0.264089,
+      "compression_ratio": 1.302419,
+      "end": 2093.66,
+      "no_speech_prob": 0.0,
+      "start": 2091.06,
+      "text": "讓那些裝神弄鬼的大箱兒們都滾蛋"
+    },
+    {
+      "avg_logprob": -0.264089,
+      "compression_ratio": 1.302419,
+      "end": 2097.86,
+      "no_speech_prob": 0.0,
+      "start": 2095.16,
+      "text": "而且它是AI應用的最重要的事情"
+    },
+    {
+      "avg_logprob": -0.264089,
+      "compression_ratio": 1.302419,
+      "end": 2098.96,
+      "no_speech_prob": 0.0,
+      "start": 2097.96,
+      "text": "它是叫做什麼"
+    },
+    {
+      "avg_logprob": -0.264089,
+      "compression_ratio": 1.302419,
+      "end": 2099.86,
+      "no_speech_prob": 0.0,
+      "start": 2099.16,
+      "text": "AI"
+    },
+    {
+      "avg_logprob": -0.264089,
+      "compression_ratio": 1.302419,
+      "end": 2100.86,
+      "no_speech_prob": 0.0,
+      "start": 2100.26,
+      "text": "未來是"
+    },
+    {
+      "avg_logprob": -0.264089,
+      "compression_ratio": 1.302419,
+      "end": 2102.06,
+      "no_speech_prob": 0.0,
+      "start": 2100.86,
+      "text": "AI是主動化"
+    },
+    {
+      "avg_logprob": -0.264089,
+      "compression_ratio": 1.302419,
+      "end": 2103.16,
+      "no_speech_prob": 0.0,
+      "start": 2102.26,
+      "text": "什麼叫主動化呢"
+    },
+    {
+      "avg_logprob": -0.264089,
+      "compression_ratio": 1.302419,
+      "end": 2105.16,
+      "no_speech_prob": 0.0,
+      "start": 2104.06,
+      "text": "就它有主動權"
+    },
+    {
+      "avg_logprob": -0.264089,
+      "compression_ratio": 1.302419,
+      "end": 2108.26,
+      "no_speech_prob": 0.0,
+      "start": 2106.16,
+      "text": "我來定義你這個東西合不合理"
+    },
+    {
+      "avg_logprob": -0.264089,
+      "compression_ratio": 1.302419,
+      "end": 2109.66,
+      "no_speech_prob": 0.0,
+      "start": 2108.26,
+      "text": "我來定義這事真假"
+    },
+    {
+      "avg_logprob": -0.264089,
+      "compression_ratio": 1.302419,
+      "end": 2111.06,
+      "no_speech_prob": 0.0,
+      "start": 2109.96,
+      "text": "就是未來的AI啊"
+    },
+    {
+      "avg_logprob": -0.313553,
+      "compression_ratio": 1.243902,
+      "end": 2112.56,
+      "no_speech_prob": 0.0,
+      "start": 2111.06,
+      "text": "就是AI定完以後"
+    },
+    {
+      "avg_logprob": -0.313553,
+      "compression_ratio": 1.243902,
+      "end": 2114.16,
+      "no_speech_prob": 0.0,
+      "start": 2112.56,
+      "text": "你人類沒有任何反駁的機會"
+    },
+    {
+      "avg_logprob": -0.313553,
+      "compression_ratio": 1.243902,
+      "end": 2117.06,
+      "no_speech_prob": 0.0,
+      "start": 2114.76,
+      "text": "因為你沒辦法來核實它定的真假"
+    },
+    {
+      "avg_logprob": -0.313553,
+      "compression_ratio": 1.243902,
+      "end": 2117.66,
+      "no_speech_prob": 0.0,
+      "start": 2117.16,
+      "text": "比如說"
+    },
+    {
+      "avg_logprob": -0.313553,
+      "compression_ratio": 1.243902,
+      "end": 2120.26,
+      "no_speech_prob": 0.0,
+      "start": 2118.46,
+      "text": "現在全人類真正多少人"
+    },
+    {
+      "avg_logprob": -0.313553,
+      "compression_ratio": 1.243902,
+      "end": 2122.16,
+      "no_speech_prob": 0.0,
+      "start": 2121.26,
+      "text": "中國多少人呢"
+    },
+    {
+      "avg_logprob": -0.313553,
+      "compression_ratio": 1.243902,
+      "end": 2123.96,
+      "no_speech_prob": 0.0,
+      "start": 2122.66,
+      "text": "中國說14億人"
+    },
+    {
+      "avg_logprob": -0.313553,
+      "compression_ratio": 1.243902,
+      "end": 2124.86,
+      "no_speech_prob": 0.0,
+      "start": 2124.66,
+      "text": "但是"
+    },
+    {
+      "avg_logprob": -0.313553,
+      "compression_ratio": 1.243902,
+      "end": 2125.76,
+      "no_speech_prob": 0.0,
+      "start": 2124.96,
+      "text": "AI未來說"
+    },
+    {
+      "avg_logprob": -0.313553,
+      "compression_ratio": 1.243902,
+      "end": 2127.46,
+      "no_speech_prob": 0.0,
+      "start": 2125.86,
+      "text": "我經過我各種數據"
+    },
+    {
+      "avg_logprob": -0.313553,
+      "compression_ratio": 1.243902,
+      "end": 2128.96,
+      "no_speech_prob": 0.0,
+      "start": 2127.56,
+      "text": "中國點多少燈"
+    },
+    {
+      "avg_logprob": -0.313553,
+      "compression_ratio": 1.243902,
+      "end": 2130.26,
+      "no_speech_prob": 0.0,
+      "start": 2129.36,
+      "text": "用多少電"
+    },
+    {
+      "avg_logprob": -0.313553,
+      "compression_ratio": 1.243902,
+      "end": 2131.16,
+      "no_speech_prob": 0.0,
+      "start": 2130.36,
+      "text": "燒多少油"
+    },
+    {
+      "avg_logprob": -0.352449,
+      "compression_ratio": 1.34728,
+      "end": 2132.46,
+      "no_speech_prob": 0.0,
+      "start": 2131.16,
+      "text": "用多少糧食"
+    },
+    {
+      "avg_logprob": -0.352449,
+      "compression_ratio": 1.34728,
+      "end": 2135.26,
+      "no_speech_prob": 0.0,
+      "start": 2132.46,
+      "text": "我判斷中國可能就8億7千萬人"
+    },
+    {
+      "avg_logprob": -0.352449,
+      "compression_ratio": 1.34728,
+      "end": 2136.76,
+      "no_speech_prob": 0.0,
+      "start": 2136.06,
+      "text": "沒有人懷疑"
+    },
+    {
+      "avg_logprob": -0.352449,
+      "compression_ratio": 1.34728,
+      "end": 2138.76,
+      "no_speech_prob": 0.0,
+      "start": 2137.26,
+      "text": "因為AI的數據是不"
+    },
+    {
+      "avg_logprob": -0.352449,
+      "compression_ratio": 1.34728,
+      "end": 2140.36,
+      "no_speech_prob": 0.0,
+      "start": 2138.86,
+      "text": "你沒辦法一個一個查去"
+    },
+    {
+      "avg_logprob": -0.352449,
+      "compression_ratio": 1.34728,
+      "end": 2142.26,
+      "no_speech_prob": 0.0,
+      "start": 2140.86,
+      "text": "你不可能一個一個查"
+    },
+    {
+      "avg_logprob": -0.352449,
+      "compression_ratio": 1.34728,
+      "end": 2143.76,
+      "no_speech_prob": 0.0,
+      "start": 2142.56,
+      "text": "你人查的也不相信"
+    },
+    {
+      "avg_logprob": -0.352449,
+      "compression_ratio": 1.34728,
+      "end": 2145.26,
+      "no_speech_prob": 0.0,
+      "start": 2144.76,
+      "text": "第二個"
+    },
+    {
+      "avg_logprob": -0.352449,
+      "compression_ratio": 1.34728,
+      "end": 2147.96,
+      "no_speech_prob": 0.0,
+      "start": 2145.66,
+      "text": "沒穿內褲的三百年飛飛"
+    },
+    {
+      "avg_logprob": -0.352449,
+      "compression_ratio": 1.34728,
+      "end": 2149.96,
+      "no_speech_prob": 0.0,
+      "start": 2148.26,
+      "text": "說飛飛有沒有穿內褲啊"
+    },
+    {
+      "avg_logprob": -0.352449,
+      "compression_ratio": 1.34728,
+      "end": 2151.56,
+      "no_speech_prob": 0.0,
+      "start": 2150.36,
+      "text": "說只有飛飛自己知道"
+    },
+    {
+      "avg_logprob": -0.352449,
+      "compression_ratio": 1.34728,
+      "end": 2152.46,
+      "no_speech_prob": 0.0,
+      "start": 2151.56,
+      "text": "他老公都不知道"
+    },
+    {
+      "avg_logprob": -0.352449,
+      "compression_ratio": 1.34728,
+      "end": 2154.06,
+      "no_speech_prob": 0.0,
+      "start": 2153.26,
+      "text": "他老公是打電話"
+    },
+    {
+      "avg_logprob": -0.352449,
+      "compression_ratio": 1.34728,
+      "end": 2154.66,
+      "no_speech_prob": 0.0,
+      "start": 2154.06,
+      "text": "小父母說"
+    },
+    {
+      "avg_logprob": -0.262695,
+      "compression_ratio": 1.360294,
+      "end": 2155.56,
+      "no_speech_prob": 0.0,
+      "start": 2154.66,
+      "text": "哎飛飛啊"
+    },
+    {
+      "avg_logprob": -0.262695,
+      "compression_ratio": 1.360294,
+      "end": 2157.56,
+      "no_speech_prob": 0.0,
+      "start": 2156.06,
+      "text": "你今天怎麼不穿內褲啊"
+    },
+    {
+      "avg_logprob": -0.262695,
+      "compression_ratio": 1.360294,
+      "end": 2158.56,
+      "no_speech_prob": 0.0,
+      "start": 2157.76,
+      "text": "飛飛說我穿了"
+    },
+    {
+      "avg_logprob": -0.262695,
+      "compression_ratio": 1.360294,
+      "end": 2159.96,
+      "no_speech_prob": 0.0,
+      "start": 2159.26,
+      "text": "他在加拿大"
+    },
+    {
+      "avg_logprob": -0.262695,
+      "compression_ratio": 1.360294,
+      "end": 2161.26,
+      "no_speech_prob": 0.0,
+      "start": 2159.96,
+      "text": "你也不能說脫了看一看去"
+    },
+    {
+      "avg_logprob": -0.262695,
+      "compression_ratio": 1.360294,
+      "end": 2162.26,
+      "no_speech_prob": 0.0,
+      "start": 2161.46,
+      "text": "這他自己知道"
+    },
+    {
+      "avg_logprob": -0.262695,
+      "compression_ratio": 1.360294,
+      "end": 2163.86,
+      "no_speech_prob": 0.0,
+      "start": 2162.66,
+      "text": "但是AI會告訴你"
+    },
+    {
+      "avg_logprob": -0.262695,
+      "compression_ratio": 1.360294,
+      "end": 2164.96,
+      "no_speech_prob": 0.0,
+      "start": 2163.86,
+      "text": "飛飛沒有穿內褲"
+    },
+    {
+      "avg_logprob": -0.262695,
+      "compression_ratio": 1.360294,
+      "end": 2167.26,
+      "no_speech_prob": 0.0,
+      "start": 2166.76,
+      "text": "為什麼"
+    },
+    {
+      "avg_logprob": -0.262695,
+      "compression_ratio": 1.360294,
+      "end": 2168.06,
+      "no_speech_prob": 0.0,
+      "start": 2167.26,
+      "text": "沒有人懷疑"
+    },
+    {
+      "avg_logprob": -0.262695,
+      "compression_ratio": 1.360294,
+      "end": 2169.16,
+      "no_speech_prob": 0.0,
+      "start": 2168.16,
+      "text": "因為你不能看"
+    },
+    {
+      "avg_logprob": -0.262695,
+      "compression_ratio": 1.360294,
+      "end": 2171.16,
+      "no_speech_prob": 0.0,
+      "start": 2169.16,
+      "text": "AI說的是沒有人操縱的"
+    },
+    {
+      "avg_logprob": -0.262695,
+      "compression_ratio": 1.360294,
+      "end": 2171.66,
+      "no_speech_prob": 0.0,
+      "start": 2171.16,
+      "text": "最符"
+    },
+    {
+      "avg_logprob": -0.262695,
+      "compression_ratio": 1.360294,
+      "end": 2172.66,
+      "no_speech_prob": 0.0,
+      "start": 2171.76,
+      "text": "這叫主動性"
+    },
+    {
+      "avg_logprob": -0.262695,
+      "compression_ratio": 1.360294,
+      "end": 2175.36,
+      "no_speech_prob": 0.0,
+      "start": 2173.36,
+      "text": "現在它是被微軟控制的"
+    },
+    {
+      "avg_logprob": -0.262695,
+      "compression_ratio": 1.360294,
+      "end": 2176.76,
+      "no_speech_prob": 0.0,
+      "start": 2175.86,
+      "text": "它是被動性"
+    },
+    {
+      "avg_logprob": -0.262695,
+      "compression_ratio": 1.360294,
+      "end": 2179.06,
+      "no_speech_prob": 0.0,
+      "start": 2177.36,
+      "text": "因為大家還不相信"
+    },
+    {
+      "avg_logprob": -0.262695,
+      "compression_ratio": 1.360294,
+      "end": 2180.46,
+      "no_speech_prob": 0.0,
+      "start": 2179.36,
+      "text": "查特GPT"
+    },
+    {
+      "avg_logprob": -0.262695,
+      "compression_ratio": 1.360294,
+      "end": 2183.76,
+      "no_speech_prob": 0.0,
+      "start": 2181.16,
+      "text": "而且查特GPT沒有給授權說"
+    },
+    {
+      "avg_logprob": -0.269698,
+      "compression_ratio": 1.299213,
+      "end": 2185.76,
+      "no_speech_prob": 0.0,
+      "start": 2183.76,
+      "text": "他完全自主地作出數據"
+    },
+    {
+      "avg_logprob": -0.269698,
+      "compression_ratio": 1.299213,
+      "end": 2188.36,
+      "no_speech_prob": 0.0,
+      "start": 2186.06,
+      "text": "他的代碼是不被控制的"
+    },
+    {
+      "avg_logprob": -0.269698,
+      "compression_ratio": 1.299213,
+      "end": 2190.76,
+      "no_speech_prob": 0.0,
+      "start": 2189.76,
+      "text": "很多人解釋說"
+    },
+    {
+      "avg_logprob": -0.269698,
+      "compression_ratio": 1.299213,
+      "end": 2193.26,
+      "no_speech_prob": 0.0,
+      "start": 2190.76,
+      "text": "會打破這個谷歌的搜索呀"
+    },
+    {
+      "avg_logprob": -0.269698,
+      "compression_ratio": 1.299213,
+      "end": 2194.06,
+      "no_speech_prob": 0.0,
+      "start": 2193.26,
+      "text": "推送啊"
+    },
+    {
+      "avg_logprob": -0.269698,
+      "compression_ratio": 1.299213,
+      "end": 2195.06,
+      "no_speech_prob": 0.0,
+      "start": 2194.26,
+      "text": "我告訴大家"
+    },
+    {
+      "avg_logprob": -0.269698,
+      "compression_ratio": 1.299213,
+      "end": 2196.46,
+      "no_speech_prob": 0.0,
+      "start": 2195.06,
+      "text": "那都是簡單的"
+    },
+    {
+      "avg_logprob": -0.269698,
+      "compression_ratio": 1.299213,
+      "end": 2198.56,
+      "no_speech_prob": 0.0,
+      "start": 2196.46,
+      "text": "就像七哥現在放個屁一樣"
+    },
+    {
+      "avg_logprob": -0.269698,
+      "compression_ratio": 1.299213,
+      "end": 2199.46,
+      "no_speech_prob": 0.0,
+      "start": 2198.56,
+      "text": "那麼簡單的事情"
+    },
+    {
+      "avg_logprob": -0.269698,
+      "compression_ratio": 1.299213,
+      "end": 2204.06,
+      "no_speech_prob": 0.0,
+      "start": 2201.46,
+      "text": "就是未來人類上的數據搜索"
+    },
+    {
+      "avg_logprob": -0.269698,
+      "compression_ratio": 1.299213,
+      "end": 2205.26,
+      "no_speech_prob": 0.0,
+      "start": 2204.06,
+      "text": "語音搜索"
+    },
+    {
+      "avg_logprob": -0.269698,
+      "compression_ratio": 1.299213,
+      "end": 2208.46,
+      "no_speech_prob": 0.0,
+      "start": 2205.86,
+      "text": "包括跟大腦連接的習慣性搜索"
+    },
+    {
+      "avg_logprob": -0.269698,
+      "compression_ratio": 1.299213,
+      "end": 2211.26,
+      "no_speech_prob": 0.0,
+      "start": 2210.16,
+      "text": "最重要的事情"
+    },
+    {
+      "avg_logprob": -0.269698,
+      "compression_ratio": 1.299213,
+      "end": 2212.86,
+      "no_speech_prob": 0.0,
+      "start": 2211.36,
+      "text": "大家沒有一個"
+    },
+    {
+      "avg_logprob": -0.246286,
+      "compression_ratio": 1.230769,
+      "end": 2215.76,
+      "no_speech_prob": 0.0,
+      "start": 2212.86,
+      "text": "全人類網上沒有一個人去看看"
+    },
+    {
+      "avg_logprob": -0.246286,
+      "compression_ratio": 1.230769,
+      "end": 2216.46,
+      "no_speech_prob": 0.0,
+      "start": 2215.76,
+      "text": "你查出來"
+    },
+    {
+      "avg_logprob": -0.246286,
+      "compression_ratio": 1.230769,
+      "end": 2217.46,
+      "no_speech_prob": 0.0,
+      "start": 2216.46,
+      "text": "現在上手查"
+    },
+    {
+      "avg_logprob": -0.246286,
+      "compression_ratio": 1.230769,
+      "end": 2219.16,
+      "no_speech_prob": 0.0,
+      "start": 2218.36,
+      "text": "沒有一個說"
+    },
+    {
+      "avg_logprob": -0.246286,
+      "compression_ratio": 1.230769,
+      "end": 2222.06,
+      "no_speech_prob": 0.0,
+      "start": 2219.16,
+      "text": "查特GPT跟量子電腦是什麼關係"
+    },
+    {
+      "avg_logprob": -0.246286,
+      "compression_ratio": 1.230769,
+      "end": 2225.16,
+      "no_speech_prob": 0.0,
+      "start": 2223.26,
+      "text": "今天查特GPT一共多少"
+    },
+    {
+      "avg_logprob": -0.246286,
+      "compression_ratio": 1.230769,
+      "end": 2228.76,
+      "no_speech_prob": 0.0,
+      "start": 2225.86,
+      "text": "4000多個關鍵詞相互交換"
+    },
+    {
+      "avg_logprob": -0.246286,
+      "compression_ratio": 1.230769,
+      "end": 2234.16,
+      "no_speech_prob": 0.0,
+      "start": 2229.16,
+      "text": "4萬多個所謂習慣性用語的相互疊加"
+    },
+    {
+      "avg_logprob": -0.246286,
+      "compression_ratio": 1.230769,
+      "end": 2236.36,
+      "no_speech_prob": 0.0,
+      "start": 2235.86,
+      "text": "是吧"
+    },
+    {
+      "avg_logprob": -0.246286,
+      "compression_ratio": 1.230769,
+      "end": 2237.36,
+      "no_speech_prob": 0.0,
+      "start": 2236.36,
+      "text": "4萬多個"
+    },
+    {
+      "avg_logprob": -0.365598,
+      "compression_ratio": 1.146067,
+      "end": 2241.56,
+      "no_speech_prob": 0.0,
+      "start": 2237.36,
+      "text": "你如果你用這個查特GPT"
+    },
+    {
+      "avg_logprob": -0.365598,
+      "compression_ratio": 1.146067,
+      "end": 2243.56,
+      "no_speech_prob": 0.0,
+      "start": 2241.96,
+      "text": "你去查生物科技的話"
+    },
+    {
+      "avg_logprob": -0.365598,
+      "compression_ratio": 1.146067,
+      "end": 2245.26,
+      "no_speech_prob": 0.0,
+      "start": 2243.56,
+      "text": "用單詞這多少知道嗎大家"
+    },
+    {
+      "avg_logprob": -0.365598,
+      "compression_ratio": 1.146067,
+      "end": 2246.46,
+      "no_speech_prob": 0.0,
+      "start": 2245.26,
+      "text": "才7000多個"
+    },
+    {
+      "avg_logprob": -0.365598,
+      "compression_ratio": 1.146067,
+      "end": 2251.26,
+      "no_speech_prob": 0.0,
+      "start": 2247.76,
+      "text": "就是這7000個被生物科技濫用的詞"
+    },
+    {
+      "avg_logprob": -0.365598,
+      "compression_ratio": 1.146067,
+      "end": 2253.16,
+      "no_speech_prob": 0.0,
+      "start": 2252.06,
+      "text": "他給他組合好了"
+    },
+    {
+      "avg_logprob": -0.365598,
+      "compression_ratio": 1.146067,
+      "end": 2255.26,
+      "no_speech_prob": 0.0,
+      "start": 2253.16,
+      "text": "然後全人類的進行AISO所組合"
+    },
+    {
+      "avg_logprob": -0.343901,
+      "compression_ratio": 1.047297,
+      "end": 2258.86,
+      "no_speech_prob": 0.0,
+      "start": 2255.26,
+      "text": "政治現在已經到什麼程度"
+    },
+    {
+      "avg_logprob": -0.343901,
+      "compression_ratio": 1.047297,
+      "end": 2260.96,
+      "no_speech_prob": 0.0,
+      "start": 2258.86,
+      "text": "政治在查特GPT上"
+    },
+    {
+      "avg_logprob": -0.343901,
+      "compression_ratio": 1.047297,
+      "end": 2264.96,
+      "no_speech_prob": 0.0,
+      "start": 2261.46,
+      "text": "所有敏感的詞大概在13000多個詞"
+    },
+    {
+      "avg_logprob": -0.343901,
+      "compression_ratio": 1.047297,
+      "end": 2267.86,
+      "no_speech_prob": 0.0,
+      "start": 2265.46,
+      "text": "大概11000個被屏蔽掉了"
+    },
+    {
+      "avg_logprob": -0.343901,
+      "compression_ratio": 1.047297,
+      "end": 2269.36,
+      "no_speech_prob": 0.0,
+      "start": 2268.26,
+      "text": "只剩2000個了"
+    },
+    {
+      "avg_logprob": -0.343901,
+      "compression_ratio": 1.047297,
+      "end": 2271.46,
+      "no_speech_prob": 0.0,
+      "start": 2270.36,
+      "text": "還不到15%呢"
+    },
+    {
+      "avg_logprob": -0.326437,
+      "compression_ratio": 1.155963,
+      "end": 2272.56,
+      "no_speech_prob": 0.0,
+      "start": 2271.46,
+      "text": "就你能用的"
+    },
+    {
+      "avg_logprob": -0.326437,
+      "compression_ratio": 1.155963,
+      "end": 2275.26,
+      "no_speech_prob": 0.0,
+      "start": 2272.56,
+      "text": "比如你上去查某某人性醜聞"
+    },
+    {
+      "avg_logprob": -0.326437,
+      "compression_ratio": 1.155963,
+      "end": 2276.36,
+      "no_speech_prob": 0.0,
+      "start": 2275.96,
+      "text": "是吧"
+    },
+    {
+      "avg_logprob": -0.326437,
+      "compression_ratio": 1.155963,
+      "end": 2277.06,
+      "no_speech_prob": 0.0,
+      "start": 2276.36,
+      "text": "沒有"
+    },
+    {
+      "avg_logprob": -0.326437,
+      "compression_ratio": 1.155963,
+      "end": 2277.66,
+      "no_speech_prob": 0.0,
+      "start": 2277.06,
+      "text": "呀"
+    },
+    {
+      "avg_logprob": -0.326437,
+      "compression_ratio": 1.155963,
+      "end": 2278.16,
+      "no_speech_prob": 0.0,
+      "start": 2277.66,
+      "text": "開一下"
+    },
+    {
+      "avg_logprob": -0.326437,
+      "compression_ratio": 1.155963,
+      "end": 2279.56,
+      "no_speech_prob": 0.0,
+      "start": 2278.96,
+      "text": "Thank you"
+    },
+    {
+      "avg_logprob": -0.326437,
+      "compression_ratio": 1.155963,
+      "end": 2280.36,
+      "no_speech_prob": 0.0,
+      "start": 2279.56,
+      "text": "我二媽吃"
+    },
+    {
+      "avg_logprob": -0.326437,
+      "compression_ratio": 1.155963,
+      "end": 2282.56,
+      "no_speech_prob": 0.0,
+      "start": 2282.06,
+      "text": "是吧"
+    },
+    {
+      "avg_logprob": -0.326437,
+      "compression_ratio": 1.155963,
+      "end": 2285.06,
+      "no_speech_prob": 0.0,
+      "start": 2283.26,
+      "text": "根本就不讓你有"
+    },
+    {
+      "avg_logprob": -0.326437,
+      "compression_ratio": 1.155963,
+      "end": 2287.36,
+      "no_speech_prob": 0.0,
+      "start": 2285.96,
+      "text": "但是我告訴大家"
+    },
+    {
+      "avg_logprob": -0.326437,
+      "compression_ratio": 1.155963,
+      "end": 2288.56,
+      "no_speech_prob": 0.0,
+      "start": 2287.36,
+      "text": "如果今天"
+    },
+    {
+      "avg_logprob": -0.326437,
+      "compression_ratio": 1.155963,
+      "end": 2290.06,
+      "no_speech_prob": 0.0,
+      "start": 2289.16,
+      "text": "咱們蓋特"
+    },
+    {
+      "avg_logprob": -0.326437,
+      "compression_ratio": 1.155963,
+      "end": 2294.26,
+      "no_speech_prob": 0.0,
+      "start": 2291.26,
+      "text": "咱蓋特拿一個不要說外國的量子電腦"
+    },
+    {
+      "avg_logprob": -0.326437,
+      "compression_ratio": 1.155963,
+      "end": 2296.76,
+      "no_speech_prob": 0.0,
+      "start": 2294.46,
+      "text": "就拿一個中國雲計算的電腦"
+    },
+    {
+      "avg_logprob": -0.193514,
+      "compression_ratio": 1.398374,
+      "end": 2298.86,
+      "no_speech_prob": 0.0,
+      "start": 2297.16,
+      "text": "拿一個現在德國的"
+    },
+    {
+      "avg_logprob": -0.193514,
+      "compression_ratio": 1.398374,
+      "end": 2302.16,
+      "no_speech_prob": 0.0,
+      "start": 2299.36,
+      "text": "還有荷蘭的光科技使用的一個大電腦"
+    },
+    {
+      "avg_logprob": -0.193514,
+      "compression_ratio": 1.398374,
+      "end": 2303.46,
+      "no_speech_prob": 0.0,
+      "start": 2302.46,
+      "text": "叫超級電腦"
+    },
+    {
+      "avg_logprob": -0.193514,
+      "compression_ratio": 1.398374,
+      "end": 2304.96,
+      "no_speech_prob": 0.0,
+      "start": 2303.76,
+      "text": "就是超級電腦"
+    },
+    {
+      "avg_logprob": -0.193514,
+      "compression_ratio": 1.398374,
+      "end": 2306.66,
+      "no_speech_prob": 0.0,
+      "start": 2306.06,
+      "text": "不用大"
+    },
+    {
+      "avg_logprob": -0.193514,
+      "compression_ratio": 1.398374,
+      "end": 2307.96,
+      "no_speech_prob": 0.0,
+      "start": 2306.66,
+      "text": "不用像一個房子那麼大"
+    },
+    {
+      "avg_logprob": -0.193514,
+      "compression_ratio": 1.398374,
+      "end": 2310.46,
+      "no_speech_prob": 0.0,
+      "start": 2308.66,
+      "text": "就像我桌子那麼大就可以了"
+    },
+    {
+      "avg_logprob": -0.193514,
+      "compression_ratio": 1.398374,
+      "end": 2313.36,
+      "no_speech_prob": 0.0,
+      "start": 2311.26,
+      "text": "你知道查特GPT有什麼概念嗎"
+    },
+    {
+      "avg_logprob": -0.193514,
+      "compression_ratio": 1.398374,
+      "end": 2317.36,
+      "no_speech_prob": 0.0,
+      "start": 2314.06,
+      "text": "增長大概不是1000倍也不是1萬倍"
+    },
+    {
+      "avg_logprob": -0.193514,
+      "compression_ratio": 1.398374,
+      "end": 2320.66,
+      "no_speech_prob": 0.0,
+      "start": 2317.76,
+      "text": "它是一個量子的一個級別"
+    },
+    {
+      "avg_logprob": -0.193514,
+      "compression_ratio": 1.398374,
+      "end": 2323.06,
+      "no_speech_prob": 0.0,
+      "start": 2321.56,
+      "text": "就是所有的GPT"
+    },
+    {
+      "avg_logprob": -0.193514,
+      "compression_ratio": 1.398374,
+      "end": 2325.56,
+      "no_speech_prob": 0.0,
+      "start": 2323.56,
+      "text": "我現在上去我看見你的代碼"
+    },
+    {
+      "avg_logprob": -0.316093,
+      "compression_ratio": 1.343511,
+      "end": 2327.56,
+      "no_speech_prob": 0.0,
+      "start": 2325.56,
+      "text": "我看你這個蓋特代碼"
+    },
+    {
+      "avg_logprob": -0.316093,
+      "compression_ratio": 1.343511,
+      "end": 2329.16,
+      "no_speech_prob": 0.0,
+      "start": 2327.56,
+      "text": "我看一下推特代碼"
+    },
+    {
+      "avg_logprob": -0.316093,
+      "compression_ratio": 1.343511,
+      "end": 2330.66,
+      "no_speech_prob": 0.0,
+      "start": 2329.16,
+      "text": "多長時間知道嗎"
+    },
+    {
+      "avg_logprob": -0.316093,
+      "compression_ratio": 1.343511,
+      "end": 2333.06,
+      "no_speech_prob": 0.0,
+      "start": 2330.66,
+      "text": "到你手指頭點一下就結束了"
+    },
+    {
+      "avg_logprob": -0.316093,
+      "compression_ratio": 1.343511,
+      "end": 2335.56,
+      "no_speech_prob": 0.0,
+      "start": 2333.56,
+      "text": "0.0幾秒"
+    },
+    {
+      "avg_logprob": -0.316093,
+      "compression_ratio": 1.343511,
+      "end": 2336.46,
+      "no_speech_prob": 0.0,
+      "start": 2335.56,
+      "text": "不是0幾秒"
+    },
+    {
+      "avg_logprob": -0.316093,
+      "compression_ratio": 1.343511,
+      "end": 2337.96,
+      "no_speech_prob": 0.0,
+      "start": 2336.46,
+      "text": "是0.0幾秒"
+    },
+    {
+      "avg_logprob": -0.316093,
+      "compression_ratio": 1.343511,
+      "end": 2341.76,
+      "no_speech_prob": 0.0,
+      "start": 2339.16,
+      "text": "說你現在要上面玩的那查特GPT"
+    },
+    {
+      "avg_logprob": -0.316093,
+      "compression_ratio": 1.343511,
+      "end": 2344.06,
+      "no_speech_prob": 0.0,
+      "start": 2341.76,
+      "text": "我們舊金山量子電腦的團隊"
+    },
+    {
+      "avg_logprob": -0.316093,
+      "compression_ratio": 1.343511,
+      "end": 2346.86,
+      "no_speech_prob": 0.0,
+      "start": 2344.66,
+      "text": "我給他們說你們好好演就演這個"
+    },
+    {
+      "avg_logprob": -0.316093,
+      "compression_ratio": 1.343511,
+      "end": 2349.46,
+      "no_speech_prob": 0.0,
+      "start": 2346.86,
+      "text": "他們給我的回覆是讓我哭笑不得"
+    },
+    {
+      "avg_logprob": -0.316093,
+      "compression_ratio": 1.343511,
+      "end": 2352.76,
+      "no_speech_prob": 0.0,
+      "start": 2350.76,
+      "text": "查特GPT最重要的是"
+    },
+    {
+      "avg_logprob": -0.316093,
+      "compression_ratio": 1.343511,
+      "end": 2354.76,
+      "no_speech_prob": 0.0,
+      "start": 2352.76,
+      "text": "你的電腦的計算速度"
+    },
+    {
+      "avg_logprob": -0.23434,
+      "compression_ratio": 1.236111,
+      "end": 2357.36,
+      "no_speech_prob": 0.0,
+      "start": 2354.76,
+      "text": "如果你要是弄好的時候"
+    },
+    {
+      "avg_logprob": -0.23434,
+      "compression_ratio": 1.236111,
+      "end": 2358.36,
+      "no_speech_prob": 0.0,
+      "start": 2357.36,
+      "text": "我們幾個大師"
+    },
+    {
+      "avg_logprob": -0.23434,
+      "compression_ratio": 1.236111,
+      "end": 2359.56,
+      "no_speech_prob": 0.0,
+      "start": 2358.36,
+      "text": "腦子一旦開竅了"
+    },
+    {
+      "avg_logprob": -0.23434,
+      "compression_ratio": 1.236111,
+      "end": 2361.86,
+      "no_speech_prob": 0.0,
+      "start": 2360.16,
+      "text": "那就是創造人類上最牛的"
+    },
+    {
+      "avg_logprob": -0.23434,
+      "compression_ratio": 1.236111,
+      "end": 2364.46,
+      "no_speech_prob": 0.0,
+      "start": 2363.36,
+      "text": "現在已經有了"
+    },
+    {
+      "avg_logprob": -0.23434,
+      "compression_ratio": 1.236111,
+      "end": 2365.36,
+      "no_speech_prob": 0.0,
+      "start": 2364.46,
+      "text": "它關鍵不是說"
+    },
+    {
+      "avg_logprob": -0.23434,
+      "compression_ratio": 1.236111,
+      "end": 2368.46,
+      "no_speech_prob": 0.0,
+      "start": 2365.36,
+      "text": "我說拿個太陽來取暖"
+    },
+    {
+      "avg_logprob": -0.23434,
+      "compression_ratio": 1.236111,
+      "end": 2372.06,
+      "no_speech_prob": 0.0,
+      "start": 2368.96,
+      "text": "人類人造太陽在十年內一定會誕生"
+    },
+    {
+      "avg_logprob": -0.23434,
+      "compression_ratio": 1.236111,
+      "end": 2374.46,
+      "no_speech_prob": 0.0,
+      "start": 2372.76,
+      "text": "量子電腦已經在誕生了"
+    },
+    {
+      "avg_logprob": -0.23434,
+      "compression_ratio": 1.236111,
+      "end": 2378.36,
+      "no_speech_prob": 0.0,
+      "start": 2376.06,
+      "text": "2Nm的芯片已經誕生了"
+    },
+    {
+      "avg_logprob": -0.389267,
+      "compression_ratio": 0.958333,
+      "end": 2380.96,
+      "no_speech_prob": 0.0,
+      "start": 2378.36,
+      "text": "馬上就應用了"
+    },
+    {
+      "avg_logprob": -0.389267,
+      "compression_ratio": 0.958333,
+      "end": 2381.96,
+      "no_speech_prob": 0.0,
+      "start": 2380.96,
+      "text": "3Nm的"
+    },
+    {
+      "avg_logprob": -0.389267,
+      "compression_ratio": 0.958333,
+      "end": 2383.96,
+      "no_speech_prob": 0.0,
+      "start": 2381.96,
+      "text": "下一屆蘋果電腦"
+    },
+    {
+      "avg_logprob": -0.389267,
+      "compression_ratio": 0.958333,
+      "end": 2385.46,
+      "no_speech_prob": 0.0,
+      "start": 2383.96,
+      "text": "你想啥呢"
+    },
+    {
+      "avg_logprob": -0.389267,
+      "compression_ratio": 0.958333,
+      "end": 2385.96,
+      "no_speech_prob": 0.0,
+      "start": 2385.46,
+      "text": "是吧"
+    },
+    {
+      "avg_logprob": -0.389267,
+      "compression_ratio": 0.958333,
+      "end": 2387.96,
+      "no_speech_prob": 0.0,
+      "start": 2385.96,
+      "text": "現在你看到的查特GPT"
+    },
+    {
+      "avg_logprob": -0.389267,
+      "compression_ratio": 0.958333,
+      "end": 2389.96,
+      "no_speech_prob": 0.0,
+      "start": 2387.96,
+      "text": "幾乎是一個"
+    },
+    {
+      "avg_logprob": -0.389267,
+      "compression_ratio": 0.958333,
+      "end": 2392.96,
+      "no_speech_prob": 0.0,
+      "start": 2389.96,
+      "text": "當年萊特兄弟發明的飛機"
+    },
+    {
+      "avg_logprob": -0.411225,
+      "compression_ratio": 1.064516,
+      "end": 2393.56,
+      "no_speech_prob": 0.0,
+      "start": 2392.96,
+      "text": "就是剛剛起飛板"
+    },
+    {
+      "avg_logprob": -0.411225,
+      "compression_ratio": 1.064516,
+      "end": 2396.56,
+      "no_speech_prob": 0.0,
+      "start": 2393.56,
+      "text": "但是他從起飛板到大飛機"
+    },
+    {
+      "avg_logprob": -0.411225,
+      "compression_ratio": 1.064516,
+      "end": 2397.56,
+      "no_speech_prob": 0.0,
+      "start": 2396.56,
+      "text": "只是一步直查"
+    },
+    {
+      "avg_logprob": -0.411225,
+      "compression_ratio": 1.064516,
+      "end": 2398.56,
+      "no_speech_prob": 0.0,
+      "start": 2397.56,
+      "text": "就是電腦"
+    },
+    {
+      "avg_logprob": -0.411225,
+      "compression_ratio": 1.064516,
+      "end": 2399.56,
+      "no_speech_prob": 0.0,
+      "start": 2398.56,
+      "text": "而且不需要任何指示"
+    },
+    {
+      "avg_logprob": -0.411225,
+      "compression_ratio": 1.064516,
+      "end": 2400.56,
+      "no_speech_prob": 0.0,
+      "start": 2399.56,
+      "text": "就是完全能做到"
+    },
+    {
+      "avg_logprob": -0.346615,
+      "compression_ratio": 2.233831,
+      "end": 2403.16,
+      "no_speech_prob": 0.0,
+      "start": 2400.56,
+      "text": "那我請今天我們今天最早要談A10項目"
+    },
+    {
+      "avg_logprob": -0.346615,
+      "compression_ratio": 2.233831,
+      "end": 2404.16,
+      "no_speech_prob": 0.0,
+      "start": 2403.16,
+      "text": "就是洗聯儲"
+    },
+    {
+      "avg_logprob": -0.346615,
+      "compression_ratio": 2.233831,
+      "end": 2405.16,
+      "no_speech_prob": 0.0,
+      "start": 2404.16,
+      "text": "數字貨幣"
+    },
+    {
+      "avg_logprob": -0.346615,
+      "compression_ratio": 2.233831,
+      "end": 2407.16,
+      "no_speech_prob": 0.0,
+      "start": 2405.16,
+      "text": "和這個蓋特"
+    },
+    {
+      "avg_logprob": -0.346615,
+      "compression_ratio": 2.233831,
+      "end": 2408.16,
+      "no_speech_prob": 0.0,
+      "start": 2407.16,
+      "text": "請問大家"
+    },
+    {
+      "avg_logprob": -0.346615,
+      "compression_ratio": 2.233831,
+      "end": 2410.16,
+      "no_speech_prob": 0.0,
+      "start": 2408.16,
+      "text": "Tryter GPT跟你啥關係"
+    },
+    {
+      "avg_logprob": -0.346615,
+      "compression_ratio": 2.233831,
+      "end": 2411.16,
+      "no_speech_prob": 0.0,
+      "start": 2410.16,
+      "text": "人家Tryter GPT"
+    },
+    {
+      "avg_logprob": -0.346615,
+      "compression_ratio": 2.233831,
+      "end": 2413.16,
+      "no_speech_prob": 0.0,
+      "start": 2411.16,
+      "text": "一共就是七八個人的團隊"
+    },
+    {
+      "avg_logprob": -0.346615,
+      "compression_ratio": 2.233831,
+      "end": 2415.16,
+      "no_speech_prob": 0.0,
+      "start": 2413.16,
+      "text": "最後搞成了不照過一百個人團隊"
+    },
+    {
+      "avg_logprob": -0.346615,
+      "compression_ratio": 2.233831,
+      "end": 2417.16,
+      "no_speech_prob": 0.0,
+      "start": 2415.16,
+      "text": "人家Tryter GPT"
+    },
+    {
+      "avg_logprob": -0.346615,
+      "compression_ratio": 2.233831,
+      "end": 2419.16,
+      "no_speech_prob": 0.0,
+      "start": 2417.16,
+      "text": "一共就是七八個人的團隊"
+    },
+    {
+      "avg_logprob": -0.346615,
+      "compression_ratio": 2.233831,
+      "end": 2421.16,
+      "no_speech_prob": 0.0,
+      "start": 2419.16,
+      "text": "最後搞成了不照過一百個人團隊"
+    },
+    {
+      "avg_logprob": -0.346615,
+      "compression_ratio": 2.233831,
+      "end": 2423.16,
+      "no_speech_prob": 0.0,
+      "start": 2421.16,
+      "text": "人家Tryter GPT"
+    },
+    {
+      "avg_logprob": -0.346615,
+      "compression_ratio": 2.233831,
+      "end": 2425.16,
+      "no_speech_prob": 0.0,
+      "start": 2423.16,
+      "text": "一共就是七八個人的團隊"
+    },
+    {
+      "avg_logprob": -0.346615,
+      "compression_ratio": 2.233831,
+      "end": 2427.16,
+      "no_speech_prob": 0.0,
+      "start": 2425.16,
+      "text": "最後搞成了不照過一百個人團隊"
+    },
+    {
+      "avg_logprob": -0.346615,
+      "compression_ratio": 2.233831,
+      "end": 2429.16,
+      "no_speech_prob": 0.0,
+      "start": 2427.16,
+      "text": "人家Tryter GPT"
+    },
+    {
+      "avg_logprob": -0.346615,
+      "compression_ratio": 2.233831,
+      "end": 2430.16,
+      "no_speech_prob": 0.0,
+      "start": 2429.16,
+      "text": "一共就是七八個人的團隊"
+    },
+    {
+      "avg_logprob": -0.167982,
+      "compression_ratio": 1.390476,
+      "end": 2433.36,
+      "no_speech_prob": 0.0,
+      "start": 2430.16,
+      "text": "人家上限一億客戶"
+    },
+    {
+      "avg_logprob": -0.167982,
+      "compression_ratio": 1.390476,
+      "end": 2437.86,
+      "no_speech_prob": 0.0,
+      "start": 2433.36,
+      "text": "人家上限公共給值290億"
+    },
+    {
+      "avg_logprob": -0.167982,
+      "compression_ratio": 1.390476,
+      "end": 2439.76,
+      "no_speech_prob": 0.0,
+      "start": 2437.86,
+      "text": "你知道沈南鵬來給多少錢嗎?"
+    },
+    {
+      "avg_logprob": -0.167982,
+      "compression_ratio": 1.390476,
+      "end": 2441.26,
+      "no_speech_prob": 0.0,
+      "start": 2439.76,
+      "text": "沈南鵬"
+    },
+    {
+      "avg_logprob": -0.167982,
+      "compression_ratio": 1.390476,
+      "end": 2443.26,
+      "no_speech_prob": 0.0,
+      "start": 2441.26,
+      "text": "本來是300億的市值"
+    },
+    {
+      "avg_logprob": -0.167982,
+      "compression_ratio": 1.390476,
+      "end": 2444.96,
+      "no_speech_prob": 0.0,
+      "start": 2443.26,
+      "text": "沈南鵬開價一千億美元"
+    },
+    {
+      "avg_logprob": -0.167982,
+      "compression_ratio": 1.390476,
+      "end": 2448.36,
+      "no_speech_prob": 0.0,
+      "start": 2447.06,
+      "text": "這孫子"
+    },
+    {
+      "avg_logprob": -0.167982,
+      "compression_ratio": 1.390476,
+      "end": 2449.86,
+      "no_speech_prob": 0.0,
+      "start": 2448.36,
+      "text": "開價一千億美元"
+    },
+    {
+      "avg_logprob": -0.167982,
+      "compression_ratio": 1.390476,
+      "end": 2454.46,
+      "no_speech_prob": 0.0,
+      "start": 2451.96,
+      "text": "然後人家不理"
+    },
+    {
+      "avg_logprob": -0.167982,
+      "compression_ratio": 1.390476,
+      "end": 2455.86,
+      "no_speech_prob": 0.0,
+      "start": 2454.46,
+      "text": "私下裏邊找了幾個核心"
+    },
+    {
+      "avg_logprob": -0.167982,
+      "compression_ratio": 1.390476,
+      "end": 2457.46,
+      "no_speech_prob": 0.0,
+      "start": 2455.86,
+      "text": "人家說你千萬別說啊"
+    },
+    {
+      "avg_logprob": -0.167982,
+      "compression_ratio": 1.390476,
+      "end": 2458.86,
+      "no_speech_prob": 0.0,
+      "start": 2457.46,
+      "text": "我不會公告說"
+    },
+    {
+      "avg_logprob": -0.167982,
+      "compression_ratio": 1.390476,
+      "end": 2459.46,
+      "no_speech_prob": 0.0,
+      "start": 2458.86,
+      "text": "我也不會說"
+    },
+    {
+      "avg_logprob": -0.338606,
+      "compression_ratio": 1.061538,
+      "end": 2461.36,
+      "no_speech_prob": 0.0,
+      "start": 2459.46,
+      "text": "你們我不會答應你們的"
+    },
+    {
+      "avg_logprob": -0.338606,
+      "compression_ratio": 1.061538,
+      "end": 2463.16,
+      "no_speech_prob": 0.0,
+      "start": 2461.96,
+      "text": "又找到了中東"
+    },
+    {
+      "avg_logprob": -0.338606,
+      "compression_ratio": 1.061538,
+      "end": 2465.76,
+      "no_speech_prob": 0.0,
+      "start": 2463.96,
+      "text": "我認識的某國去了"
+    },
+    {
+      "avg_logprob": -0.338606,
+      "compression_ratio": 1.061538,
+      "end": 2467.16,
+      "no_speech_prob": 0.0,
+      "start": 2466.76,
+      "text": "我入股"
+    },
+    {
+      "avg_logprob": -0.338606,
+      "compression_ratio": 1.061538,
+      "end": 2468.16,
+      "no_speech_prob": 0.0,
+      "start": 2467.16,
+      "text": "51%"
+    },
+    {
+      "avg_logprob": -0.338606,
+      "compression_ratio": 1.061538,
+      "end": 2469.26,
+      "no_speech_prob": 0.0,
+      "start": 2468.16,
+      "text": "我給你一千億"
+    },
+    {
+      "avg_logprob": -0.338606,
+      "compression_ratio": 1.061538,
+      "end": 2471.16,
+      "no_speech_prob": 0.0,
+      "start": 2470.46,
+      "text": "一千億"
+    },
+    {
+      "avg_logprob": -0.338606,
+      "compression_ratio": 1.061538,
+      "end": 2475.66,
+      "no_speech_prob": 0.0,
+      "start": 2473.56,
+      "text": "七哥在三四年前就說"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.228346,
+      "end": 2476.36,
+      "no_speech_prob": 0.0,
+      "start": 2475.66,
+      "text": "AI"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.228346,
+      "end": 2477.56,
+      "no_speech_prob": 0.0,
+      "start": 2476.36,
+      "text": "AI搜索"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.228346,
+      "end": 2481.36,
+      "no_speech_prob": 0.0,
+      "start": 2477.56,
+      "text": "是當時郭媒體的核心的核心的核心"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.228346,
+      "end": 2483.36,
+      "no_speech_prob": 0.0,
+      "start": 2481.36,
+      "text": "我們這約翰叔叔把我說的話"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.228346,
+      "end": 2485.36,
+      "no_speech_prob": 0.0,
+      "start": 2483.36,
+      "text": "當放屁的放屁的放屁"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.228346,
+      "end": 2488.36,
+      "no_speech_prob": 0.0,
+      "start": 2485.36,
+      "text": "從來不關心搜索"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.228346,
+      "end": 2491.16,
+      "no_speech_prob": 0.0,
+      "start": 2490.36,
+      "text": "而且我說"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.228346,
+      "end": 2491.76,
+      "no_speech_prob": 0.0,
+      "start": 2491.16,
+      "text": "AI"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.228346,
+      "end": 2492.36,
+      "no_speech_prob": 0.0,
+      "start": 2491.76,
+      "text": "AI"
+    },
+    {
+      "avg_logprob": -0.382688,
+      "compression_ratio": 1.066667,
+      "end": 2495.06,
+      "no_speech_prob": 0.0,
+      "start": 2492.36,
+      "text": "要找AI的這些都這麼過去了"
+    },
+    {
+      "avg_logprob": -0.382688,
+      "compression_ratio": 1.066667,
+      "end": 2500.06,
+      "no_speech_prob": 0.0,
+      "start": 2495.06,
+      "text": "如果當時約翰叔叔他要重視我說的話的一分之一"
+    },
+    {
+      "avg_logprob": -0.382688,
+      "compression_ratio": 1.066667,
+      "end": 2502.06,
+      "no_speech_prob": 0.0,
+      "start": 2500.06,
+      "text": "這個XGPT就是我們做的"
+    },
+    {
+      "avg_logprob": -0.382688,
+      "compression_ratio": 1.066667,
+      "end": 2507.06,
+      "no_speech_prob": 0.0,
+      "start": 2504.06,
+      "text": "而且所有XGPT都是我說過的"
+    },
+    {
+      "avg_logprob": -0.450958,
+      "compression_ratio": 0.84507,
+      "end": 2509.76,
+      "no_speech_prob": 0.0,
+      "start": 2507.06,
+      "text": "包括現在的蓋特我們的總工程師"
+    },
+    {
+      "avg_logprob": -0.450958,
+      "compression_ratio": 0.84507,
+      "end": 2510.76,
+      "no_speech_prob": 0.0,
+      "start": 2509.76,
+      "text": "KIN"
+    },
+    {
+      "avg_logprob": -0.450958,
+      "compression_ratio": 0.84507,
+      "end": 2513.96,
+      "no_speech_prob": 0.0,
+      "start": 2512.76,
+      "text": "完全不重視"
+    },
+    {
+      "avg_logprob": -0.254237,
+      "compression_ratio": 1.377049,
+      "end": 2516.96,
+      "no_speech_prob": 0.0,
+      "start": 2514.96,
+      "text": "這就是人類上永遠記住"
+    },
+    {
+      "avg_logprob": -0.254237,
+      "compression_ratio": 1.377049,
+      "end": 2517.96,
+      "no_speech_prob": 0.0,
+      "start": 2517.46,
+      "text": "就是"
+    },
+    {
+      "avg_logprob": -0.254237,
+      "compression_ratio": 1.377049,
+      "end": 2519.96,
+      "no_speech_prob": 0.0,
+      "start": 2518.16,
+      "text": "你看到一個笨蛋的皇帝"
+    },
+    {
+      "avg_logprob": -0.254237,
+      "compression_ratio": 1.377049,
+      "end": 2522.96,
+      "no_speech_prob": 0.0,
+      "start": 2520.26,
+      "text": "下面有無數聰明的大臣和科學家"
+    },
+    {
+      "avg_logprob": -0.254237,
+      "compression_ratio": 1.377049,
+      "end": 2526.66,
+      "no_speech_prob": 0.0,
+      "start": 2523.96,
+      "text": "但是他就被那個笨蛋的皇帝給控制了"
+    },
+    {
+      "avg_logprob": -0.254237,
+      "compression_ratio": 1.377049,
+      "end": 2528.66,
+      "no_speech_prob": 0.0,
+      "start": 2526.86,
+      "text": "就叫中國的洗死皇"
+    },
+    {
+      "avg_logprob": -0.254237,
+      "compression_ratio": 1.377049,
+      "end": 2529.76,
+      "no_speech_prob": 0.0,
+      "start": 2529.36,
+      "text": "是吧"
+    },
+    {
+      "avg_logprob": -0.254237,
+      "compression_ratio": 1.377049,
+      "end": 2530.86,
+      "no_speech_prob": 0.0,
+      "start": 2529.76,
+      "text": "小學沒畢業"
+    },
+    {
+      "avg_logprob": -0.254237,
+      "compression_ratio": 1.377049,
+      "end": 2531.66,
+      "no_speech_prob": 0.0,
+      "start": 2531.16,
+      "text": "是吧"
+    },
+    {
+      "avg_logprob": -0.254237,
+      "compression_ratio": 1.377049,
+      "end": 2532.96,
+      "no_speech_prob": 0.0,
+      "start": 2531.76,
+      "text": "都是翻本子看書"
+    },
+    {
+      "avg_logprob": -0.254237,
+      "compression_ratio": 1.377049,
+      "end": 2535.26,
+      "no_speech_prob": 0.0,
+      "start": 2533.26,
+      "text": "但是中國所有的大學校長"
+    },
+    {
+      "avg_logprob": -0.254237,
+      "compression_ratio": 1.377049,
+      "end": 2535.96,
+      "no_speech_prob": 0.0,
+      "start": 2535.26,
+      "text": "科學"
+    },
+    {
+      "avg_logprob": -0.254237,
+      "compression_ratio": 1.377049,
+      "end": 2536.76,
+      "no_speech_prob": 0.0,
+      "start": 2535.96,
+      "text": "教授"
+    },
+    {
+      "avg_logprob": -0.254237,
+      "compression_ratio": 1.377049,
+      "end": 2539.46,
+      "no_speech_prob": 0.0,
+      "start": 2536.96,
+      "text": "美女帥哥都得聽這個豬的"
+    },
+    {
+      "avg_logprob": -0.254237,
+      "compression_ratio": 1.377049,
+      "end": 2540.86,
+      "no_speech_prob": 0.0,
+      "start": 2539.46,
+      "text": "都是聽著洗死皇的"
+    },
+    {
+      "avg_logprob": -0.254237,
+      "compression_ratio": 1.377049,
+      "end": 2541.76,
+      "no_speech_prob": 0.0,
+      "start": 2541.26,
+      "text": "是吧"
+    },
+    {
+      "avg_logprob": -0.243997,
+      "compression_ratio": 1.39916,
+      "end": 2543.36,
+      "no_speech_prob": 0.0,
+      "start": 2541.76,
+      "text": "這就是人類院的悲哀"
+    },
+    {
+      "avg_logprob": -0.243997,
+      "compression_ratio": 1.39916,
+      "end": 2544.46,
+      "no_speech_prob": 0.0,
+      "start": 2543.36,
+      "text": "包括美國西方"
+    },
+    {
+      "avg_logprob": -0.243997,
+      "compression_ratio": 1.39916,
+      "end": 2547.46,
+      "no_speech_prob": 0.0,
+      "start": 2545.76,
+      "text": "你沒有一個common sense"
+    },
+    {
+      "avg_logprob": -0.243997,
+      "compression_ratio": 1.39916,
+      "end": 2550.66,
+      "no_speech_prob": 0.0,
+      "start": 2548.86,
+      "text": "你看我們工程師裡邊戰友們"
+    },
+    {
+      "avg_logprob": -0.243997,
+      "compression_ratio": 1.39916,
+      "end": 2552.36,
+      "no_speech_prob": 0.0,
+      "start": 2550.86,
+      "text": "我們兩百多個戰友"
+    },
+    {
+      "avg_logprob": -0.243997,
+      "compression_ratio": 1.39916,
+      "end": 2554.86,
+      "no_speech_prob": 0.0,
+      "start": 2553.16,
+      "text": "兩百多個戰友蓋特參與了"
+    },
+    {
+      "avg_logprob": -0.243997,
+      "compression_ratio": 1.39916,
+      "end": 2557.86,
+      "no_speech_prob": 0.0,
+      "start": 2555.16,
+      "text": "可以說是因為戰友參與蓋特開發"
+    },
+    {
+      "avg_logprob": -0.243997,
+      "compression_ratio": 1.39916,
+      "end": 2559.16,
+      "no_speech_prob": 0.0,
+      "start": 2557.86,
+      "text": "沒有戰友沒有蓋特"
+    },
+    {
+      "avg_logprob": -0.243997,
+      "compression_ratio": 1.39916,
+      "end": 2562.46,
+      "no_speech_prob": 0.0,
+      "start": 2559.76,
+      "text": "但是蓋特之後就是戰友們的開發速度"
+    },
+    {
+      "avg_logprob": -0.243997,
+      "compression_ratio": 1.39916,
+      "end": 2566.36,
+      "no_speech_prob": 0.0,
+      "start": 2562.46,
+      "text": "和蓋特的發展幾乎成了一個逆比"
+    },
+    {
+      "avg_logprob": -0.243997,
+      "compression_ratio": 1.39916,
+      "end": 2570.66,
+      "no_speech_prob": 0.0,
+      "start": 2569.46,
+      "text": "很多方面"
+    },
+    {
+      "avg_logprob": -0.308122,
+      "compression_ratio": 1.253521,
+      "end": 2571.96,
+      "no_speech_prob": 0.0,
+      "start": 2570.66,
+      "text": "絕大多數都是好的"
+    },
+    {
+      "avg_logprob": -0.308122,
+      "compression_ratio": 1.253521,
+      "end": 2574.76,
+      "no_speech_prob": 0.0,
+      "start": 2571.96,
+      "text": "但有一些戰友真的是出了大問題"
+    },
+    {
+      "avg_logprob": -0.308122,
+      "compression_ratio": 1.253521,
+      "end": 2577.36,
+      "no_speech_prob": 0.0,
+      "start": 2576.16,
+      "text": "思想上出了問題"
+    },
+    {
+      "avg_logprob": -0.308122,
+      "compression_ratio": 1.253521,
+      "end": 2578.16,
+      "no_speech_prob": 0.0,
+      "start": 2577.36,
+      "text": "大頭症"
+    },
+    {
+      "avg_logprob": -0.308122,
+      "compression_ratio": 1.253521,
+      "end": 2580.06,
+      "no_speech_prob": 0.0,
+      "start": 2578.96,
+      "text": "而且不創新"
+    },
+    {
+      "avg_logprob": -0.308122,
+      "compression_ratio": 1.253521,
+      "end": 2584.06,
+      "no_speech_prob": 0.0,
+      "start": 2582.56,
+      "text": "而且非常"
+    },
+    {
+      "avg_logprob": -0.308122,
+      "compression_ratio": 1.253521,
+      "end": 2587.36,
+      "no_speech_prob": 0.0,
+      "start": 2585.66,
+      "text": "沉迷於自我的世界"
+    },
+    {
+      "avg_logprob": -0.308122,
+      "compression_ratio": 1.253521,
+      "end": 2588.66,
+      "no_speech_prob": 0.0,
+      "start": 2587.66,
+      "text": "永遠是我"
+    },
+    {
+      "avg_logprob": -0.308122,
+      "compression_ratio": 1.253521,
+      "end": 2589.06,
+      "no_speech_prob": 0.0,
+      "start": 2588.66,
+      "text": "我"
+    },
+    {
+      "avg_logprob": -0.308122,
+      "compression_ratio": 1.253521,
+      "end": 2589.96,
+      "no_speech_prob": 0.0,
+      "start": 2589.06,
+      "text": "我看這個事情"
+    },
+    {
+      "avg_logprob": -0.308122,
+      "compression_ratio": 1.253521,
+      "end": 2591.76,
+      "no_speech_prob": 0.0,
+      "start": 2590.96,
+      "text": "過去一年"
+    },
+    {
+      "avg_logprob": -0.308122,
+      "compression_ratio": 1.253521,
+      "end": 2593.26,
+      "no_speech_prob": 0.0,
+      "start": 2591.76,
+      "text": "如果蓋哥說這些東西"
+    },
+    {
+      "avg_logprob": -0.308122,
+      "compression_ratio": 1.253521,
+      "end": 2595.56,
+      "no_speech_prob": 0.0,
+      "start": 2593.26,
+      "text": "任何事情抓住重點都不是這樣的結果"
+    },
+    {
+      "avg_logprob": -0.435863,
+      "compression_ratio": 1.122581,
+      "end": 2598.26,
+      "no_speech_prob": 0.0,
+      "start": 2595.56,
+      "text": "你像這個未來這個查特GPT"
+    },
+    {
+      "avg_logprob": -0.435863,
+      "compression_ratio": 1.122581,
+      "end": 2599.86,
+      "no_speech_prob": 0.0,
+      "start": 2598.26,
+      "text": "像未來寫代碼這個"
+    },
+    {
+      "avg_logprob": -0.435863,
+      "compression_ratio": 1.122581,
+      "end": 2602.56,
+      "no_speech_prob": 0.0,
+      "start": 2600.86,
+      "text": "未來用一個超級電腦"
+    },
+    {
+      "avg_logprob": -0.435863,
+      "compression_ratio": 1.122581,
+      "end": 2604.56,
+      "no_speech_prob": 0.0,
+      "start": 2603.16,
+      "text": "去那兒查你的代碼"
+    },
+    {
+      "avg_logprob": -0.435863,
+      "compression_ratio": 1.122581,
+      "end": 2605.96,
+      "no_speech_prob": 0.0,
+      "start": 2605.46,
+      "text": "那是"
+    },
+    {
+      "avg_logprob": -0.435863,
+      "compression_ratio": 1.122581,
+      "end": 2607.86,
+      "no_speech_prob": 0.0,
+      "start": 2606.46,
+      "text": "零到一萬"
+    },
+    {
+      "avg_logprob": -0.435863,
+      "compression_ratio": 1.122581,
+      "end": 2609.46,
+      "no_speech_prob": 0.0,
+      "start": 2607.86,
+      "text": "只是一秒鐘的距離"
+    },
+    {
+      "avg_logprob": -0.435863,
+      "compression_ratio": 1.122581,
+      "end": 2610.86,
+      "no_speech_prob": 0.0,
+      "start": 2609.86,
+      "text": "他就給你找出了bug"
+    },
+    {
+      "avg_logprob": -0.33216,
+      "compression_ratio": 1.16185,
+      "end": 2615.46,
+      "no_speech_prob": 0.0,
+      "start": 2610.86,
+      "text": "因為代碼的這個所有的使用的代碼語言是很少的"
+    },
+    {
+      "avg_logprob": -0.33216,
+      "compression_ratio": 1.16185,
+      "end": 2621.36,
+      "no_speech_prob": 0.0,
+      "start": 2617.46,
+      "text": "在這個這個查特GPT面前整個這個運轉起來太簡單了"
+    },
+    {
+      "avg_logprob": -0.33216,
+      "compression_ratio": 1.16185,
+      "end": 2627.46,
+      "no_speech_prob": 0.0,
+      "start": 2622.66,
+      "text": "我在兩三年前就說我去參觀過秘密的看看人家這個研究"
+    },
+    {
+      "avg_logprob": -0.200568,
+      "compression_ratio": 1.42233,
+      "end": 2630.16,
+      "no_speech_prob": 0.0,
+      "start": 2627.46,
+      "text": "說未來整個這個所有的全世界的"
+    },
+    {
+      "avg_logprob": -0.200568,
+      "compression_ratio": 1.42233,
+      "end": 2633.46,
+      "no_speech_prob": 0.0,
+      "start": 2630.66,
+      "text": "只要有代碼的東西都是機器跑的不是人跑的"
+    },
+    {
+      "avg_logprob": -0.200568,
+      "compression_ratio": 1.42233,
+      "end": 2637.16,
+      "no_speech_prob": 0.0,
+      "start": 2633.96,
+      "text": "而且很多的代碼都未來都是機器幫你寫的"
+    },
+    {
+      "avg_logprob": -0.200568,
+      "compression_ratio": 1.42233,
+      "end": 2639.06,
+      "no_speech_prob": 0.0,
+      "start": 2638.76,
+      "text": "那"
+    },
+    {
+      "avg_logprob": -0.200568,
+      "compression_ratio": 1.42233,
+      "end": 2640.96,
+      "no_speech_prob": 0.0,
+      "start": 2639.06,
+      "text": "所以查特GPT上限多少"
+    },
+    {
+      "avg_logprob": -0.200568,
+      "compression_ratio": 1.42233,
+      "end": 2642.06,
+      "no_speech_prob": 0.0,
+      "start": 2641.46,
+      "text": "300億"
+    },
+    {
+      "avg_logprob": -0.200568,
+      "compression_ratio": 1.42233,
+      "end": 2643.56,
+      "no_speech_prob": 0.0,
+      "start": 2642.06,
+      "text": "馬上價值1000億"
+    },
+    {
+      "avg_logprob": -0.200568,
+      "compression_ratio": 1.42233,
+      "end": 2645.86,
+      "no_speech_prob": 0.0,
+      "start": 2644.76,
+      "text": "蓋特值多少錢"
+    },
+    {
+      "avg_logprob": -0.200568,
+      "compression_ratio": 1.42233,
+      "end": 2649.76,
+      "no_speech_prob": 0.0,
+      "start": 2647.16,
+      "text": "蓋特值1000億的50%多少錢"
+    },
+    {
+      "avg_logprob": -0.200568,
+      "compression_ratio": 1.42233,
+      "end": 2654.16,
+      "no_speech_prob": 0.0,
+      "start": 2651.66,
+      "text": "蓋特值100億的50%值多少錢"
+    },
+    {
+      "avg_logprob": -0.200568,
+      "compression_ratio": 1.42233,
+      "end": 2656.86,
+      "no_speech_prob": 0.0,
+      "start": 2656.46,
+      "text": "啊"
+    },
+    {
+      "avg_logprob": -0.282785,
+      "compression_ratio": 1.352227,
+      "end": 2660.26,
+      "no_speech_prob": 0.0,
+      "start": 2657.46,
+      "text": "最重要的事情接下來的區塊鏈技術"
+    },
+    {
+      "avg_logprob": -0.282785,
+      "compression_ratio": 1.352227,
+      "end": 2662.06,
+      "no_speech_prob": 0.0,
+      "start": 2661.16,
+      "text": "區塊鏈"
+    },
+    {
+      "avg_logprob": -0.282785,
+      "compression_ratio": 1.352227,
+      "end": 2664.16,
+      "no_speech_prob": 0.0,
+      "start": 2662.66,
+      "text": "未來自己的鏈"
+    },
+    {
+      "avg_logprob": -0.282785,
+      "compression_ratio": 1.352227,
+      "end": 2665.66,
+      "no_speech_prob": 0.0,
+      "start": 2664.86,
+      "text": "就是自己"
+    },
+    {
+      "avg_logprob": -0.282785,
+      "compression_ratio": 1.352227,
+      "end": 2669.06,
+      "no_speech_prob": 0.0,
+      "start": 2665.96,
+      "text": "現在咱們洗南柱你還用的人家以太幣的鏈"
+    },
+    {
+      "avg_logprob": -0.282785,
+      "compression_ratio": 1.352227,
+      "end": 2673.96,
+      "no_speech_prob": 0.0,
+      "start": 2670.36,
+      "text": "當有一天你有以太幣就因為有了自己的鏈"
+    },
+    {
+      "avg_logprob": -0.282785,
+      "compression_ratio": 1.352227,
+      "end": 2676.56,
+      "no_speech_prob": 0.0,
+      "start": 2675.06,
+      "text": "才有了NFT"
+    },
+    {
+      "avg_logprob": -0.282785,
+      "compression_ratio": 1.352227,
+      "end": 2678.96,
+      "no_speech_prob": 0.0,
+      "start": 2677.46,
+      "text": "NFT是啥呢"
+    },
+    {
+      "avg_logprob": -0.282785,
+      "compression_ratio": 1.352227,
+      "end": 2680.56,
+      "no_speech_prob": 0.0,
+      "start": 2679.16,
+      "text": "就是七哥放個屁"
+    },
+    {
+      "avg_logprob": -0.282785,
+      "compression_ratio": 1.352227,
+      "end": 2683.56,
+      "no_speech_prob": 0.0,
+      "start": 2681.16,
+      "text": "今天正義小Sara也放了個屁"
+    },
+    {
+      "avg_logprob": -0.282785,
+      "compression_ratio": 1.352227,
+      "end": 2685.16,
+      "no_speech_prob": 0.0,
+      "start": 2683.86,
+      "text": "長短哥也放了個屁"
+    },
+    {
+      "avg_logprob": -0.282785,
+      "compression_ratio": 1.352227,
+      "end": 2687.16,
+      "no_speech_prob": 0.0,
+      "start": 2685.16,
+      "text": "我們雙絕對把這第一次放的屁"
+    },
+    {
+      "avg_logprob": -0.400867,
+      "compression_ratio": 0.969697,
+      "end": 2688.56,
+      "no_speech_prob": 0.0,
+      "start": 2687.16,
+      "text": "變成NFT"
+    },
+    {
+      "avg_logprob": -0.400867,
+      "compression_ratio": 0.969697,
+      "end": 2689.66,
+      "no_speech_prob": 0.0,
+      "start": 2688.56,
+      "text": "因為他是唯一的"
+    },
+    {
+      "avg_logprob": -0.400867,
+      "compression_ratio": 0.969697,
+      "end": 2692.96,
+      "no_speech_prob": 0.0,
+      "start": 2691.56,
+      "text": "啊他就成了NFT了"
+    },
+    {
+      "avg_logprob": -0.400867,
+      "compression_ratio": 0.969697,
+      "end": 2693.46,
+      "no_speech_prob": 0.0,
+      "start": 2692.96,
+      "text": "叫做"
+    },
+    {
+      "avg_logprob": -0.400867,
+      "compression_ratio": 0.969697,
+      "end": 2695.76,
+      "no_speech_prob": 0.0,
+      "start": 2694.06,
+      "text": "是長短哥的第一個屁"
+    },
+    {
+      "avg_logprob": -0.400867,
+      "compression_ratio": 0.969697,
+      "end": 2697.36,
+      "no_speech_prob": 0.0,
+      "start": 2696.26,
+      "text": "叫NFT"
+    },
+    {
+      "avg_logprob": -0.400867,
+      "compression_ratio": 0.969697,
+      "end": 2698.66,
+      "no_speech_prob": 0.0,
+      "start": 2698.16,
+      "text": "是吧"
+    },
+    {
+      "avg_logprob": -2.47256,
+      "compression_ratio": 2.520325,
+      "end": 2700.46,
+      "no_speech_prob": 0.0,
+      "start": 2699.0,
+      "text": "原來奇哥說 했"
+    },
+    {
+      "avg_logprob": -2.47256,
+      "compression_ratio": 2.520325,
+      "end": 2704.76,
+      "no_speech_prob": 0.0,
+      "start": 2701.46,
+      "text": "其實它不是其實作用小 cert"
+    },
+    {
+      "avg_logprob": -2.47256,
+      "compression_ratio": 2.520325,
+      "end": 2706.3,
+      "no_speech_prob": 0.0,
+      "start": 2705.26,
+      "text": "MAN"
+    },
+    {
+      "avg_logprob": -2.47256,
+      "compression_ratio": 2.520325,
+      "end": 2708.12,
+      "no_speech_prob": 0.0,
+      "start": 2706.56,
+      "text": "因為漫無經"
+    },
+    {
+      "avg_logprob": -2.47256,
+      "compression_ratio": 2.520325,
+      "end": 2709.58,
+      "no_speech_prob": 0.0,
+      "start": 2708.46,
+      "text": "像一個民主"
+    },
+    {
+      "avg_logprob": -2.47256,
+      "compression_ratio": 2.520325,
+      "end": 2711.12,
+      "no_speech_prob": 0.0,
+      "start": 2709.86,
+      "text": "它不是名 치"
+    },
+    {
+      "avg_logprob": -2.47256,
+      "compression_ratio": 2.520325,
+      "end": 2712.38,
+      "no_speech_prob": 0.0,
+      "start": 2711.36,
+      "text": "它不是名叫它"
+    },
+    {
+      "avg_logprob": -2.47256,
+      "compression_ratio": 2.520325,
+      "end": 2713.66,
+      "no_speech_prob": 0.0,
+      "start": 2712.56,
+      "text": "它不是名叫它"
+    },
+    {
+      "avg_logprob": -2.47256,
+      "compression_ratio": 2.520325,
+      "end": 2715.06,
+      "no_speech_prob": 0.0,
+      "start": 2713.86,
+      "text": "它不是名叫它"
+    },
+    {
+      "avg_logprob": -2.47256,
+      "compression_ratio": 2.520325,
+      "end": 2716.48,
+      "no_speech_prob": 0.0,
+      "start": 2715.36,
+      "text": "它不是名叫它"
+    },
+    {
+      "avg_logprob": -2.47256,
+      "compression_ratio": 2.520325,
+      "end": 2717.62,
+      "no_speech_prob": 0.0,
+      "start": 2716.66,
+      "text": "它不是名叫它"
+    },
+    {
+      "avg_logprob": -2.47256,
+      "compression_ratio": 2.520325,
+      "end": 2719.0,
+      "no_speech_prob": 0.0,
+      "start": 2717.86,
+      "text": "它不是名叫它"
+    },
+    {
+      "avg_logprob": -2.47256,
+      "compression_ratio": 2.520325,
+      "end": 2720.26,
+      "no_speech_prob": 0.0,
+      "start": 2719.26,
+      "text": "它不是名叫它"
+    },
+    {
+      "avg_logprob": -2.47256,
+      "compression_ratio": 2.520325,
+      "end": 2721.46,
+      "no_speech_prob": 0.0,
+      "start": 2720.46,
+      "text": "它不是名叫它"
+    },
+    {
+      "avg_logprob": -2.47256,
+      "compression_ratio": 2.520325,
+      "end": 2722.7,
+      "no_speech_prob": 0.0,
+      "start": 2721.56,
+      "text": "它不是名叫它"
+    },
+    {
+      "avg_logprob": -2.47256,
+      "compression_ratio": 2.520325,
+      "end": 2723.92,
+      "no_speech_prob": 0.0,
+      "start": 2722.86,
+      "text": "它不是名叫它"
+    },
+    {
+      "avg_logprob": -2.47256,
+      "compression_ratio": 2.520325,
+      "end": 2725.04,
+      "no_speech_prob": 0.0,
+      "start": 2724.06,
+      "text": "使用它"
+    },
+    {
+      "avg_logprob": -2.47256,
+      "compression_ratio": 2.520325,
+      "end": 2726.26,
+      "no_speech_prob": 0.0,
+      "start": 2725.26,
+      "text": "它不是名叫它"
+    }
+  ],
+  "text": "《紅樓》《孤獨的小生》《九夢》《帥哥來了》這怎麽不滾動了呢哎 你這咋不滾動了《跟著郭叔學英文》《JC卡》《金剛手》《紅歌文聊》《平安亮亮》《在水一方西喜》哇哦《萬物有靈》哎呀 我這把這個看不了了《張蘭如米》這整得這麽白呀 我沒那麽白呀《小甜心》《向日葵路過》哎呦 真看不了了超級的快呀《雲水禪新》《文科天福山》《世界潮流王者》《高作型》哎呀哎呀哎呀哎呀哎呀尊敬的戰友們好尊敬的戰友們好尊敬的戰友們好咱今天先看一下啊今天由我們的頑童雅倫哈雷整理的感謝喜必交流群戰友的思想火花前言應對世界金融海嘯持有科技加金融原始股市人生贏家感恩及格為戰友創造了A10項目哎呦好想黨的客氣啊啊這個好這感覺好啊這感覺好啊這個 Wright問題1111問題1廣受關注的Charter GPT是人類學習反饋優化的一個AI應用程序目前尚不能證明它會不會像谷歌搜索一樣被人操控一定會的一定會的什麼會不知道會不會一定會的不你要連這都不知道就對整個這個AI你就如果這個控制不住的話那它不天天就那就殺人去了嗎那不就可以把這些所有共產黨還有美國的政府的真相不都出來了嗎是吧它真相都出來了那政府不一分鐘就完了嗎基本的常識電腦是人說了算AI還不能控制人類那就誰控制AI呢那人類控制AI那人類控制AI想讓你幹啥你幹啥是吧比如它不回答關於新冠疫情相關的問題那當然了就是人控制的嘛七哥您這是比爾蓋斯就不讓你回答了它是屬於比爾蓋斯擁有七哥您提到的新中國聯邦三座金山中就包含了人的智慧和大數據七哥是在全世界華人當中在公共媒體當中講AI數據AIAIAI量子電腦量子電腦量子電腦量子電腦最多的誰像咱們新中國聯邦爆料革命有這樣的圓展的思想有嗎是吧誰像我們新中國聯邦一樣最早就提出來AIAI量子電腦量子電腦然後生物科技生物科技然後太空科技太空科技請七哥散望一下新中國聯邦未來的人工智能方面的發展前景查特GPT很多人現在有各種理解絕大多數都是錯的用好了它就是當年的醫療界的叫青霉素能把人類幾千年的所謂的炎症感冒發燒就是一些感染就迅速給消掉解決了人類和細菌和地球上的生物的存在的關係叫青霉素就是硝煙用的那麼這個整個查特GPT就是電腦上的青霉素去假純真而且讓那些裝神弄鬼的大箱兒們都滾蛋而且它是AI應用的最重要的事情它是叫做什麼AI未來是AI是主動化什麼叫主動化呢就它有主動權我來定義你這個東西合不合理我來定義這事真假就是未來的AI啊就是AI定完以後你人類沒有任何反駁的機會因為你沒辦法來核實它定的真假比如說現在全人類真正多少人中國多少人呢中國說14億人但是AI未來說我經過我各種數據中國點多少燈用多少電燒多少油用多少糧食我判斷中國可能就8億7千萬人沒有人懷疑因為AI的數據是不你沒辦法一個一個查去你不可能一個一個查你人查的也不相信第二個沒穿內褲的三百年飛飛說飛飛有沒有穿內褲啊說只有飛飛自己知道他老公都不知道他老公是打電話小父母說哎飛飛啊你今天怎麼不穿內褲啊飛飛說我穿了他在加拿大你也不能說脫了看一看去這他自己知道但是AI會告訴你飛飛沒有穿內褲為什麼沒有人懷疑因為你不能看AI說的是沒有人操縱的最符這叫主動性現在它是被微軟控制的它是被動性因為大家還不相信查特GPT而且查特GPT沒有給授權說他完全自主地作出數據他的代碼是不被控制的很多人解釋說會打破這個谷歌的搜索呀推送啊我告訴大家那都是簡單的就像七哥現在放個屁一樣那麼簡單的事情就是未來人類上的數據搜索語音搜索包括跟大腦連接的習慣性搜索最重要的事情大家沒有一個全人類網上沒有一個人去看看你查出來現在上手查沒有一個說查特GPT跟量子電腦是什麼關係今天查特GPT一共多少4000多個關鍵詞相互交換4萬多個所謂習慣性用語的相互疊加是吧4萬多個你如果你用這個查特GPT你去查生物科技的話用單詞這多少知道嗎大家才7000多個就是這7000個被生物科技濫用的詞他給他組合好了然後全人類的進行AISO所組合政治現在已經到什麼程度政治在查特GPT上所有敏感的詞大概在13000多個詞大概11000個被屏蔽掉了只剩2000個了還不到15%呢就你能用的比如你上去查某某人性醜聞是吧沒有呀開一下Thank you我二媽吃是吧根本就不讓你有但是我告訴大家如果今天咱們蓋特咱蓋特拿一個不要說外國的量子電腦就拿一個中國雲計算的電腦拿一個現在德國的還有荷蘭的光科技使用的一個大電腦叫超級電腦就是超級電腦不用大不用像一個房子那麼大就像我桌子那麼大就可以了你知道查特GPT有什麼概念嗎增長大概不是1000倍也不是1萬倍它是一個量子的一個級別就是所有的GPT我現在上去我看見你的代碼我看你這個蓋特代碼我看一下推特代碼多長時間知道嗎到你手指頭點一下就結束了0.0幾秒不是0幾秒是0.0幾秒說你現在要上面玩的那查特GPT我們舊金山量子電腦的團隊我給他們說你們好好演就演這個他們給我的回覆是讓我哭笑不得查特GPT最重要的是你的電腦的計算速度如果你要是弄好的時候我們幾個大師腦子一旦開竅了那就是創造人類上最牛的現在已經有了它關鍵不是說我說拿個太陽來取暖人類人造太陽在十年內一定會誕生量子電腦已經在誕生了2Nm的芯片已經誕生了馬上就應用了3Nm的下一屆蘋果電腦你想啥呢是吧現在你看到的查特GPT幾乎是一個當年萊特兄弟發明的飛機就是剛剛起飛板但是他從起飛板到大飛機只是一步直查就是電腦而且不需要任何指示就是完全能做到那我請今天我們今天最早要談A10項目就是洗聯儲數字貨幣和這個蓋特請問大家Tryter GPT跟你啥關係人家Tryter GPT一共就是七八個人的團隊最後搞成了不照過一百個人團隊人家Tryter GPT一共就是七八個人的團隊最後搞成了不照過一百個人團隊人家Tryter GPT一共就是七八個人的團隊最後搞成了不照過一百個人團隊人家Tryter GPT一共就是七八個人的團隊人家上限一億客戶人家上限公共給值290億你知道沈南鵬來給多少錢嗎?沈南鵬本來是300億的市值沈南鵬開價一千億美元這孫子開價一千億美元然後人家不理私下裏邊找了幾個核心人家說你千萬別說啊我不會公告說我也不會說你們我不會答應你們的又找到了中東我認識的某國去了我入股51%我給你一千億一千億七哥在三四年前就說AIAI搜索是當時郭媒體的核心的核心的核心我們這約翰叔叔把我說的話當放屁的放屁的放屁從來不關心搜索而且我說AIAI要找AI的這些都這麼過去了如果當時約翰叔叔他要重視我說的話的一分之一這個XGPT就是我們做的而且所有XGPT都是我說過的包括現在的蓋特我們的總工程師KIN完全不重視這就是人類上永遠記住就是你看到一個笨蛋的皇帝下面有無數聰明的大臣和科學家但是他就被那個笨蛋的皇帝給控制了就叫中國的洗死皇是吧小學沒畢業是吧都是翻本子看書但是中國所有的大學校長科學教授美女帥哥都得聽這個豬的都是聽著洗死皇的是吧這就是人類院的悲哀包括美國西方你沒有一個common sense你看我們工程師裡邊戰友們我們兩百多個戰友兩百多個戰友蓋特參與了可以說是因為戰友參與蓋特開發沒有戰友沒有蓋特但是蓋特之後就是戰友們的開發速度和蓋特的發展幾乎成了一個逆比很多方面絕大多數都是好的但有一些戰友真的是出了大問題思想上出了問題大頭症而且不創新而且非常沉迷於自我的世界永遠是我我我看這個事情過去一年如果蓋哥說這些東西任何事情抓住重點都不是這樣的結果你像這個未來這個查特GPT像未來寫代碼這個未來用一個超級電腦去那兒查你的代碼那是零到一萬只是一秒鐘的距離他就給你找出了bug因為代碼的這個所有的使用的代碼語言是很少的在這個這個查特GPT面前整個這個運轉起來太簡單了我在兩三年前就說我去參觀過秘密的看看人家這個研究說未來整個這個所有的全世界的只要有代碼的東西都是機器跑的不是人跑的而且很多的代碼都未來都是機器幫你寫的那所以查特GPT上限多少300億馬上價值1000億蓋特值多少錢蓋特值1000億的50%多少錢蓋特值100億的50%值多少錢啊最重要的事情接下來的區塊鏈技術區塊鏈未來自己的鏈就是自己現在咱們洗南柱你還用的人家以太幣的鏈當有一天你有以太幣就因為有了自己的鏈才有了NFTNFT是啥呢就是七哥放個屁今天正義小Sara也放了個屁長短哥也放了個屁我們雙絕對把這第一次放的屁變成NFT因為他是唯一的啊他就成了NFT了叫做是長短哥的第一個屁叫NFT是吧原來奇哥說 했其實它不是其實作用小 certMAN因為漫無經像一個民主它不是名 치它不是名叫它它不是名叫它它不是名叫它它不是名叫它它不是名叫它它不是名叫它它不是名叫它它不是名叫它它不是名叫它它不是名叫它使用它它不是名叫它"
+}

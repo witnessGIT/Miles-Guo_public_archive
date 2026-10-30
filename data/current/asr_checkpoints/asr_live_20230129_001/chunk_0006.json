@@ -1,0 +1,1840 @@
+{
+  "chunk_audio_sha256": "98a72457fb5d2aeda275bb5d72ff88cda65b6335fb47d8b634311853eb5db635",
+  "chunk_index": 6,
+  "completed_at": "2026-10-30T01:34:25Z",
+  "language": "zh",
+  "live_id": "LIVE_20230129_001",
+  "media_committed_to_git": false,
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "offset_sec": 5400,
+  "paid_api_used": false,
+  "processing_location": "github-hosted-macos-arm64",
+  "schema_version": "cloud-asr-chunk-v1",
+  "segments": [
+    {
+      "avg_logprob": -0.122503,
+      "compression_ratio": 0.851351,
+      "end": 5429.98,
+      "no_speech_prob": 0.0,
+      "start": 5400.0,
+      "text": "请不吝点赞 订阅 转发 打赏支持明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.176804,
+      "compression_ratio": 0.724138,
+      "end": 5459.98,
+      "no_speech_prob": 0.0,
+      "start": 5430.0,
+      "text": "明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.068072,
+      "compression_ratio": 0.724138,
+      "end": 5489.98,
+      "no_speech_prob": 0.0,
+      "start": 5460.0,
+      "text": "明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.10926,
+      "compression_ratio": 0.724138,
+      "end": 5519.98,
+      "no_speech_prob": 0.0,
+      "start": 5490.0,
+      "text": "明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.142734,
+      "compression_ratio": 0.724138,
+      "end": 5549.98,
+      "no_speech_prob": 0.0,
+      "start": 5520.0,
+      "text": "明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.13918,
+      "compression_ratio": 0.724138,
+      "end": 5552.0,
+      "no_speech_prob": 0.0,
+      "start": 5550.0,
+      "text": "明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.062761,
+      "compression_ratio": 0.724138,
+      "end": 5582.0,
+      "no_speech_prob": 0.0,
+      "start": 5580.0,
+      "text": "明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.05626,
+      "compression_ratio": 0.724138,
+      "end": 5612.0,
+      "no_speech_prob": 0.0,
+      "start": 5610.0,
+      "text": "明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.051675,
+      "compression_ratio": 0.724138,
+      "end": 5642.0,
+      "no_speech_prob": 0.0,
+      "start": 5640.0,
+      "text": "明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.051785,
+      "compression_ratio": 0.724138,
+      "end": 5672.0,
+      "no_speech_prob": 0.0,
+      "start": 5670.0,
+      "text": "明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.060042,
+      "compression_ratio": 0.724138,
+      "end": 5702.0,
+      "no_speech_prob": 0.0,
+      "start": 5700.0,
+      "text": "明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.064488,
+      "compression_ratio": 0.724138,
+      "end": 5732.0,
+      "no_speech_prob": 0.0,
+      "start": 5730.0,
+      "text": "明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.084004,
+      "compression_ratio": 0.724138,
+      "end": 5762.0,
+      "no_speech_prob": 0.0,
+      "start": 5760.0,
+      "text": "明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.079747,
+      "compression_ratio": 0.724138,
+      "end": 5792.0,
+      "no_speech_prob": 0.0,
+      "start": 5790.0,
+      "text": "明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.19044,
+      "compression_ratio": 3.9375,
+      "end": 5823.0,
+      "no_speech_prob": 0.0,
+      "start": 5820.0,
+      "text": "明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.19044,
+      "compression_ratio": 3.9375,
+      "end": 5826.0,
+      "no_speech_prob": 0.0,
+      "start": 5823.0,
+      "text": "明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.19044,
+      "compression_ratio": 3.9375,
+      "end": 5828.0,
+      "no_speech_prob": 0.0,
+      "start": 5826.0,
+      "text": "明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.19044,
+      "compression_ratio": 3.9375,
+      "end": 5830.0,
+      "no_speech_prob": 0.0,
+      "start": 5828.0,
+      "text": "明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.19044,
+      "compression_ratio": 3.9375,
+      "end": 5832.0,
+      "no_speech_prob": 0.0,
+      "start": 5830.0,
+      "text": "明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.19044,
+      "compression_ratio": 3.9375,
+      "end": 5834.0,
+      "no_speech_prob": 0.0,
+      "start": 5832.0,
+      "text": "明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.481459,
+      "compression_ratio": 1.766467,
+      "end": 5836.0,
+      "no_speech_prob": 0.0,
+      "start": 5834.0,
+      "text": "第2次 《奴隶的战友》"
+    },
+    {
+      "avg_logprob": -0.481459,
+      "compression_ratio": 1.766467,
+      "end": 5838.0,
+      "no_speech_prob": 0.0,
+      "start": 5836.0,
+      "text": "第2次 《奴隶的战友》"
+    },
+    {
+      "avg_logprob": -0.481459,
+      "compression_ratio": 1.766467,
+      "end": 5840.0,
+      "no_speech_prob": 0.0,
+      "start": 5838.0,
+      "text": "第2次 《奴隶的战友》"
+    },
+    {
+      "avg_logprob": -0.481459,
+      "compression_ratio": 1.766467,
+      "end": 5842.0,
+      "no_speech_prob": 0.0,
+      "start": 5840.0,
+      "text": "第2次 《奴隶的战友》"
+    },
+    {
+      "avg_logprob": -0.481459,
+      "compression_ratio": 1.766467,
+      "end": 5844.0,
+      "no_speech_prob": 0.0,
+      "start": 5842.0,
+      "text": "哎呀!笨人呐!"
+    },
+    {
+      "avg_logprob": -0.481459,
+      "compression_ratio": 1.766467,
+      "end": 5845.0,
+      "no_speech_prob": 0.0,
+      "start": 5844.0,
+      "text": "笨人呐!"
+    },
+    {
+      "avg_logprob": -0.481459,
+      "compression_ratio": 1.766467,
+      "end": 5847.0,
+      "no_speech_prob": 0.0,
+      "start": 5845.0,
+      "text": "这些鬼子们"
+    },
+    {
+      "avg_logprob": -0.481459,
+      "compression_ratio": 1.766467,
+      "end": 5849.0,
+      "no_speech_prob": 0.0,
+      "start": 5847.0,
+      "text": "这些鬼子们就是拿着这个"
+    },
+    {
+      "avg_logprob": -0.481459,
+      "compression_ratio": 1.766467,
+      "end": 5850.0,
+      "no_speech_prob": 0.0,
+      "start": 5849.0,
+      "text": "拿着那个"
+    },
+    {
+      "avg_logprob": -0.481459,
+      "compression_ratio": 1.766467,
+      "end": 5851.0,
+      "no_speech_prob": 0.0,
+      "start": 5850.0,
+      "text": "来给我们整"
+    },
+    {
+      "avg_logprob": -0.481459,
+      "compression_ratio": 1.766467,
+      "end": 5854.0,
+      "no_speech_prob": 0.0,
+      "start": 5851.0,
+      "text": "啊!他们整"
+    },
+    {
+      "avg_logprob": -0.481459,
+      "compression_ratio": 1.766467,
+      "end": 5856.0,
+      "no_speech_prob": 0.0,
+      "start": 5854.0,
+      "text": "所以说现在啊"
+    },
+    {
+      "avg_logprob": -0.481459,
+      "compression_ratio": 1.766467,
+      "end": 5860.0,
+      "no_speech_prob": 0.0,
+      "start": 5856.0,
+      "text": "好几个俄罗斯的战友"
+    },
+    {
+      "avg_logprob": -0.481459,
+      "compression_ratio": 1.766467,
+      "end": 5861.0,
+      "no_speech_prob": 0.0,
+      "start": 5860.0,
+      "text": "昨天晚上"
+    },
+    {
+      "avg_logprob": -0.481459,
+      "compression_ratio": 1.766467,
+      "end": 5862.0,
+      "no_speech_prob": 0.0,
+      "start": 5861.0,
+      "text": "哎呀!"
+    },
+    {
+      "avg_logprob": -0.107254,
+      "compression_ratio": 1.288043,
+      "end": 5864.0,
+      "no_speech_prob": 0.0,
+      "start": 5862.0,
+      "text": "说Miles啊!"
+    },
+    {
+      "avg_logprob": -0.107254,
+      "compression_ratio": 1.288043,
+      "end": 5867.0,
+      "no_speech_prob": 0.0,
+      "start": 5864.0,
+      "text": "俄罗斯烧人烧的跟中共国一样"
+    },
+    {
+      "avg_logprob": -0.107254,
+      "compression_ratio": 1.288043,
+      "end": 5870.0,
+      "no_speech_prob": 0.0,
+      "start": 5867.0,
+      "text": "火葬场也是满了"
+    },
+    {
+      "avg_logprob": -0.107254,
+      "compression_ratio": 1.288043,
+      "end": 5872.0,
+      "no_speech_prob": 0.0,
+      "start": 5870.0,
+      "text": "到处大街上烧人呐!"
+    },
+    {
+      "avg_logprob": -0.107254,
+      "compression_ratio": 1.288043,
+      "end": 5876.0,
+      "no_speech_prob": 0.0,
+      "start": 5872.0,
+      "text": "俄罗斯烧人这件事情意味着什么?"
+    },
+    {
+      "avg_logprob": -0.107254,
+      "compression_ratio": 1.288043,
+      "end": 5879.0,
+      "no_speech_prob": 0.0,
+      "start": 5876.0,
+      "text": "意味着什么?战友们"
+    },
+    {
+      "avg_logprob": -0.107254,
+      "compression_ratio": 1.288043,
+      "end": 5885.0,
+      "no_speech_prob": 0.0,
+      "start": 5882.0,
+      "text": "今天我们谈到了习近平的恐惧"
+    },
+    {
+      "avg_logprob": -0.107254,
+      "compression_ratio": 1.288043,
+      "end": 5891.0,
+      "no_speech_prob": 0.0,
+      "start": 5887.0,
+      "text": "我们谈到了共产党的恐惧"
+    },
+    {
+      "avg_logprob": -0.157783,
+      "compression_ratio": 1.146893,
+      "end": 5893.0,
+      "no_speech_prob": 0.0,
+      "start": 5892.0,
+      "text": "查资产"
+    },
+    {
+      "avg_logprob": -0.157783,
+      "compression_ratio": 1.146893,
+      "end": 5895.0,
+      "no_speech_prob": 0.0,
+      "start": 5894.0,
+      "text": "封资产"
+    },
+    {
+      "avg_logprob": -0.157783,
+      "compression_ratio": 1.146893,
+      "end": 5898.0,
+      "no_speech_prob": 0.0,
+      "start": 5896.0,
+      "text": "最恐惧是他们有钱"
+    },
+    {
+      "avg_logprob": -0.157783,
+      "compression_ratio": 1.146893,
+      "end": 5900.0,
+      "no_speech_prob": 0.0,
+      "start": 5898.0,
+      "text": "海外的90%以上的钱是"
+    },
+    {
+      "avg_logprob": -0.157783,
+      "compression_ratio": 1.146893,
+      "end": 5902.0,
+      "no_speech_prob": 0.0,
+      "start": 5900.0,
+      "text": "中南坑老子阿毛"
+    },
+    {
+      "avg_logprob": -0.157783,
+      "compression_ratio": 1.146893,
+      "end": 5903.0,
+      "no_speech_prob": 0.0,
+      "start": 5902.0,
+      "text": "共产党们"
+    },
+    {
+      "avg_logprob": -0.157783,
+      "compression_ratio": 1.146893,
+      "end": 5904.0,
+      "no_speech_prob": 0.0,
+      "start": 5903.0,
+      "text": "对吧!"
+    },
+    {
+      "avg_logprob": -0.157783,
+      "compression_ratio": 1.146893,
+      "end": 5907.0,
+      "no_speech_prob": 0.0,
+      "start": 5904.0,
+      "text": "还有一个中国最近政法大抓捕"
+    },
+    {
+      "avg_logprob": -0.157783,
+      "compression_ratio": 1.146893,
+      "end": 5909.0,
+      "no_speech_prob": 0.0,
+      "start": 5908.0,
+      "text": "是吧!"
+    },
+    {
+      "avg_logprob": -0.157783,
+      "compression_ratio": 1.146893,
+      "end": 5910.0,
+      "no_speech_prob": 0.0,
+      "start": 5909.0,
+      "text": "大抓捕!"
+    },
+    {
+      "avg_logprob": -0.157783,
+      "compression_ratio": 1.146893,
+      "end": 5913.0,
+      "no_speech_prob": 0.0,
+      "start": 5911.0,
+      "text": "然后资金大逃亡!"
+    },
+    {
+      "avg_logprob": -0.157783,
+      "compression_ratio": 1.146893,
+      "end": 5915.0,
+      "no_speech_prob": 0.0,
+      "start": 5913.0,
+      "text": "疫苗大赔偿!"
+    },
+    {
+      "avg_logprob": -0.198132,
+      "compression_ratio": 1.074534,
+      "end": 5918.0,
+      "no_speech_prob": 0.0,
+      "start": 5915.0,
+      "text": "白纸革命火焰运动"
+    },
+    {
+      "avg_logprob": -0.198132,
+      "compression_ratio": 1.074534,
+      "end": 5921.0,
+      "no_speech_prob": 0.0,
+      "start": 5919.0,
+      "text": "然后对台湾攻不攻台呀!"
+    },
+    {
+      "avg_logprob": -0.198132,
+      "compression_ratio": 1.074534,
+      "end": 5925.0,
+      "no_speech_prob": 0.0,
+      "start": 5923.0,
+      "text": "麦根斯又要马上到"
+    },
+    {
+      "avg_logprob": -0.198132,
+      "compression_ratio": 1.074534,
+      "end": 5928.0,
+      "no_speech_prob": 0.0,
+      "start": 5926.0,
+      "text": "中国的人况死人那么多"
+    },
+    {
+      "avg_logprob": -0.198132,
+      "compression_ratio": 1.074534,
+      "end": 5929.0,
+      "no_speech_prob": 0.0,
+      "start": 5928.0,
+      "text": "死多少人呢?"
+    },
+    {
+      "avg_logprob": -0.198132,
+      "compression_ratio": 1.074534,
+      "end": 5930.0,
+      "no_speech_prob": 0.0,
+      "start": 5929.0,
+      "text": "我告诉大家"
+    },
+    {
+      "avg_logprob": -0.198132,
+      "compression_ratio": 1.074534,
+      "end": 5934.0,
+      "no_speech_prob": 0.0,
+      "start": 5931.0,
+      "text": "上星期的内部的统计数据"
+    },
+    {
+      "avg_logprob": -0.172789,
+      "compression_ratio": 1.015625,
+      "end": 5938.0,
+      "no_speech_prob": 0.0,
+      "start": 5934.0,
+      "text": "说一共死亡是震惊的"
+    },
+    {
+      "avg_logprob": -0.172789,
+      "compression_ratio": 1.015625,
+      "end": 5942.0,
+      "no_speech_prob": 0.0,
+      "start": 5939.0,
+      "text": "真实数据是3.7%"
+    },
+    {
+      "avg_logprob": -0.172789,
+      "compression_ratio": 1.015625,
+      "end": 5946.0,
+      "no_speech_prob": 0.0,
+      "start": 5945.0,
+      "text": "3.7%"
+    },
+    {
+      "avg_logprob": -0.172789,
+      "compression_ratio": 1.015625,
+      "end": 5948.0,
+      "no_speech_prob": 0.0,
+      "start": 5946.0,
+      "text": "死了多少人呢?"
+    },
+    {
+      "avg_logprob": -0.172789,
+      "compression_ratio": 1.015625,
+      "end": 5950.0,
+      "no_speech_prob": 0.0,
+      "start": 5948.0,
+      "text": "死了2900多万"
+    },
+    {
+      "avg_logprob": -0.172789,
+      "compression_ratio": 1.015625,
+      "end": 5955.0,
+      "no_speech_prob": 0.0,
+      "start": 5952.0,
+      "text": "所以中国绝对不是14亿人口"
+    },
+    {
+      "avg_logprob": -0.172789,
+      "compression_ratio": 1.015625,
+      "end": 5957.0,
+      "no_speech_prob": 0.0,
+      "start": 5955.0,
+      "text": "3.72900万"
+    },
+    {
+      "avg_logprob": -0.132786,
+      "compression_ratio": 1.217617,
+      "end": 5959.0,
+      "no_speech_prob": 0.0,
+      "start": 5957.0,
+      "text": "这是中国到现在死的人"
+    },
+    {
+      "avg_logprob": -0.132786,
+      "compression_ratio": 1.217617,
+      "end": 5961.0,
+      "no_speech_prob": 0.0,
+      "start": 5960.0,
+      "text": "记住我今天说的话"
+    },
+    {
+      "avg_logprob": -0.132786,
+      "compression_ratio": 1.217617,
+      "end": 5963.0,
+      "no_speech_prob": 0.0,
+      "start": 5961.0,
+      "text": "共产党在这次"
+    },
+    {
+      "avg_logprob": -0.132786,
+      "compression_ratio": 1.217617,
+      "end": 5966.0,
+      "no_speech_prob": 0.0,
+      "start": 5964.0,
+      "text": "这次的整个的大灾难"
+    },
+    {
+      "avg_logprob": -0.132786,
+      "compression_ratio": 1.217617,
+      "end": 5970.0,
+      "no_speech_prob": 0.0,
+      "start": 5967.0,
+      "text": "隔离清零以后的政治上的大屠杀"
+    },
+    {
+      "avg_logprob": -0.132786,
+      "compression_ratio": 1.217617,
+      "end": 5973.0,
+      "no_speech_prob": 0.0,
+      "start": 5972.0,
+      "text": "大屠杀!"
+    },
+    {
+      "avg_logprob": -0.132786,
+      "compression_ratio": 1.217617,
+      "end": 5976.0,
+      "no_speech_prob": 0.0,
+      "start": 5974.0,
+      "text": "2900万人死去"
+    },
+    {
+      "avg_logprob": -0.132786,
+      "compression_ratio": 1.217617,
+      "end": 5979.0,
+      "no_speech_prob": 0.0,
+      "start": 5978.0,
+      "text": "3.7%"
+    },
+    {
+      "avg_logprob": -0.132786,
+      "compression_ratio": 1.217617,
+      "end": 5980.0,
+      "no_speech_prob": 0.0,
+      "start": 5979.0,
+      "text": "你算是中国有多少人吧?"
+    },
+    {
+      "avg_logprob": -0.132786,
+      "compression_ratio": 1.217617,
+      "end": 5985.0,
+      "no_speech_prob": 0.0,
+      "start": 5983.0,
+      "text": "然后中国的人况就少了嘛"
+    },
+    {
+      "avg_logprob": -0.111097,
+      "compression_ratio": 1.288703,
+      "end": 5987.0,
+      "no_speech_prob": 0.0,
+      "start": 5985.0,
+      "text": "少了2900万人况嘛"
+    },
+    {
+      "avg_logprob": -0.111097,
+      "compression_ratio": 1.288703,
+      "end": 5992.0,
+      "no_speech_prob": 0.0,
+      "start": 5991.0,
+      "text": "所以说现在共产党"
+    },
+    {
+      "avg_logprob": -0.111097,
+      "compression_ratio": 1.288703,
+      "end": 5994.0,
+      "no_speech_prob": 0.0,
+      "start": 5992.0,
+      "text": "为什么习近平恐惧"
+    },
+    {
+      "avg_logprob": -0.111097,
+      "compression_ratio": 1.288703,
+      "end": 5997.0,
+      "no_speech_prob": 0.0,
+      "start": 5995.0,
+      "text": "疫苗大灾难死了2900万"
+    },
+    {
+      "avg_logprob": -0.111097,
+      "compression_ratio": 1.288703,
+      "end": 6000.0,
+      "no_speech_prob": 0.0,
+      "start": 5998.0,
+      "text": "这个病毒大灾难"
+    },
+    {
+      "avg_logprob": -0.111097,
+      "compression_ratio": 1.288703,
+      "end": 6001.0,
+      "no_speech_prob": 0.0,
+      "start": 6000.0,
+      "text": "是他搞的2900万"
+    },
+    {
+      "avg_logprob": -0.111097,
+      "compression_ratio": 1.288703,
+      "end": 6002.0,
+      "no_speech_prob": 0.0,
+      "start": 6001.0,
+      "text": "这些人不给他算账吗?"
+    },
+    {
+      "avg_logprob": -0.111097,
+      "compression_ratio": 1.288703,
+      "end": 6006.0,
+      "no_speech_prob": 0.0,
+      "start": 6003.0,
+      "text": "还要面临到更大的疫苗灾难"
+    },
+    {
+      "avg_logprob": -0.111097,
+      "compression_ratio": 1.288703,
+      "end": 6010.0,
+      "no_speech_prob": 0.0,
+      "start": 6007.0,
+      "text": "然后现在麦肯斯马上要突袭登台"
+    },
+    {
+      "avg_logprob": -0.111097,
+      "compression_ratio": 1.288703,
+      "end": 6013.0,
+      "no_speech_prob": 0.0,
+      "start": 6011.0,
+      "text": "还要把南海和台湾放在一起说"
+    },
+    {
+      "avg_logprob": -0.111097,
+      "compression_ratio": 1.288703,
+      "end": 6014.0,
+      "no_speech_prob": 0.0,
+      "start": 6013.0,
+      "text": "和香港一起说"
+    },
+    {
+      "avg_logprob": -0.122589,
+      "compression_ratio": 1.26,
+      "end": 6017.0,
+      "no_speech_prob": 0.0,
+      "start": 6015.0,
+      "text": "然后更夸张的是吧"
+    },
+    {
+      "avg_logprob": -0.122589,
+      "compression_ratio": 1.26,
+      "end": 6018.0,
+      "no_speech_prob": 0.0,
+      "start": 6017.0,
+      "text": "中国人况减少"
+    },
+    {
+      "avg_logprob": -0.122589,
+      "compression_ratio": 1.26,
+      "end": 6022.0,
+      "no_speech_prob": 0.0,
+      "start": 6019.0,
+      "text": "然后海外他家人所有人资产要被查封"
+    },
+    {
+      "avg_logprob": -0.122589,
+      "compression_ratio": 1.26,
+      "end": 6024.0,
+      "no_speech_prob": 0.0,
+      "start": 6023.0,
+      "text": "是吧"
+    },
+    {
+      "avg_logprob": -0.122589,
+      "compression_ratio": 1.26,
+      "end": 6026.0,
+      "no_speech_prob": 0.0,
+      "start": 6024.0,
+      "text": "而且中国金融机构也要被查封"
+    },
+    {
+      "avg_logprob": -0.122589,
+      "compression_ratio": 1.26,
+      "end": 6029.0,
+      "no_speech_prob": 0.0,
+      "start": 6027.0,
+      "text": "海外的所有的这些基金"
+    },
+    {
+      "avg_logprob": -0.122589,
+      "compression_ratio": 1.26,
+      "end": 6031.0,
+      "no_speech_prob": 0.0,
+      "start": 6030.0,
+      "text": "都要查封"
+    },
+    {
+      "avg_logprob": -0.122589,
+      "compression_ratio": 1.26,
+      "end": 6033.0,
+      "no_speech_prob": 0.0,
+      "start": 6032.0,
+      "text": "砸弄砸弄"
+    },
+    {
+      "avg_logprob": -0.158584,
+      "compression_ratio": 1.067308,
+      "end": 6037.0,
+      "no_speech_prob": 0.0,
+      "start": 6033.0,
+      "text": "所以习近平的恐惧和共产党的恐惧"
+    },
+    {
+      "avg_logprob": -0.158584,
+      "compression_ratio": 1.067308,
+      "end": 6039.0,
+      "no_speech_prob": 0.0,
+      "start": 6038.0,
+      "text": "就是要没钱了"
+    },
+    {
+      "avg_logprob": -0.158584,
+      "compression_ratio": 1.067308,
+      "end": 6041.0,
+      "no_speech_prob": 0.0,
+      "start": 6040.0,
+      "text": "美国佬动真的了"
+    },
+    {
+      "avg_logprob": -0.158584,
+      "compression_ratio": 1.067308,
+      "end": 6044.0,
+      "no_speech_prob": 0.0,
+      "start": 6042.0,
+      "text": "全球封锁共产党资产"
+    },
+    {
+      "avg_logprob": -0.248824,
+      "compression_ratio": 1.04,
+      "end": 6045.0,
+      "no_speech_prob": 0.0,
+      "start": 6044.0,
+      "text": "所以"
+    },
+    {
+      "avg_logprob": -0.248824,
+      "compression_ratio": 1.04,
+      "end": 6047.0,
+      "no_speech_prob": 0.0,
+      "start": 6045.0,
+      "text": "第四个问题"
+    },
+    {
+      "avg_logprob": -0.248824,
+      "compression_ratio": 1.04,
+      "end": 6056.0,
+      "no_speech_prob": 0.0,
+      "start": 6047.0,
+      "text": "1月28日美国日本荷兰就主指向中国出口先进芯片"
+    },
+    {
+      "avg_logprob": -0.248824,
+      "compression_ratio": 1.04,
+      "end": 6058.0,
+      "no_speech_prob": 0.0,
+      "start": 6057.0,
+      "text": "及制造设备达成协议"
+    },
+    {
+      "avg_logprob": -0.248824,
+      "compression_ratio": 1.04,
+      "end": 6062.0,
+      "no_speech_prob": 0.0,
+      "start": 6059.0,
+      "text": "这将制约中共在高科技领域的发展"
+    },
+    {
+      "avg_logprob": -0.143838,
+      "compression_ratio": 1.008264,
+      "end": 6064.0,
+      "no_speech_prob": 0.0,
+      "start": 6062.0,
+      "text": "请问七哥"
+    },
+    {
+      "avg_logprob": -0.143838,
+      "compression_ratio": 1.008264,
+      "end": 6068.0,
+      "no_speech_prob": 0.0,
+      "start": 6064.0,
+      "text": "对中共的打击最先会提前的哪些方面"
+    },
+    {
+      "avg_logprob": -0.143838,
+      "compression_ratio": 1.008264,
+      "end": 6070.0,
+      "no_speech_prob": 0.0,
+      "start": 6069.0,
+      "text": "所有的中共国"
+    },
+    {
+      "avg_logprob": -0.143838,
+      "compression_ratio": 1.008264,
+      "end": 6074.0,
+      "no_speech_prob": 0.0,
+      "start": 6071.0,
+      "text": "芯片大概能撑到今年7月份到8月份"
+    },
+    {
+      "avg_logprob": -0.130227,
+      "compression_ratio": 1.31746,
+      "end": 6080.0,
+      "no_speech_prob": 0.0,
+      "start": 6075.0,
+      "text": "接下来所有中国的高端设备芯片软件"
+    },
+    {
+      "avg_logprob": -0.130227,
+      "compression_ratio": 1.31746,
+      "end": 6083.0,
+      "no_speech_prob": 0.0,
+      "start": 6080.0,
+      "text": "包括航空航天的这些技术"
+    },
+    {
+      "avg_logprob": -0.130227,
+      "compression_ratio": 1.31746,
+      "end": 6087.0,
+      "no_speech_prob": 0.0,
+      "start": 6086.0,
+      "text": "特别是快车"
+    },
+    {
+      "avg_logprob": -0.130227,
+      "compression_ratio": 1.31746,
+      "end": 6089.0,
+      "no_speech_prob": 0.0,
+      "start": 6088.0,
+      "text": "中国大型电脑"
+    },
+    {
+      "avg_logprob": -0.130227,
+      "compression_ratio": 1.31746,
+      "end": 6093.0,
+      "no_speech_prob": 0.0,
+      "start": 6090.0,
+      "text": "中国的所有的生物科技"
+    },
+    {
+      "avg_logprob": -0.130227,
+      "compression_ratio": 1.31746,
+      "end": 6095.0,
+      "no_speech_prob": 0.0,
+      "start": 6094.0,
+      "text": "核电厂"
+    },
+    {
+      "avg_logprob": -0.130227,
+      "compression_ratio": 1.31746,
+      "end": 6096.0,
+      "no_speech_prob": 0.0,
+      "start": 6095.0,
+      "text": "所有都会出问题"
+    },
+    {
+      "avg_logprob": -0.130227,
+      "compression_ratio": 1.31746,
+      "end": 6100.0,
+      "no_speech_prob": 0.0,
+      "start": 6097.0,
+      "text": "而且中共这次出问题是北朝鲜的"
+    },
+    {
+      "avg_logprob": -0.130227,
+      "compression_ratio": 1.31746,
+      "end": 6101.0,
+      "no_speech_prob": 0.0,
+      "start": 6100.0,
+      "text": "北朝鲜是"
+    },
+    {
+      "avg_logprob": -0.130227,
+      "compression_ratio": 1.31746,
+      "end": 6103.0,
+      "no_speech_prob": 0.0,
+      "start": 6102.0,
+      "text": "过去它是拖拉机"
+    },
+    {
+      "avg_logprob": -0.149197,
+      "compression_ratio": 1.220532,
+      "end": 6105.0,
+      "no_speech_prob": 0.0,
+      "start": 6103.0,
+      "text": "它最多胡阿塞不好了"
+    },
+    {
+      "avg_logprob": -0.149197,
+      "compression_ratio": 1.220532,
+      "end": 6106.0,
+      "no_speech_prob": 0.0,
+      "start": 6105.0,
+      "text": "油不够了"
+    },
+    {
+      "avg_logprob": -0.149197,
+      "compression_ratio": 1.220532,
+      "end": 6108.0,
+      "no_speech_prob": 0.0,
+      "start": 6107.0,
+      "text": "它现在中共国毕竟"
+    },
+    {
+      "avg_logprob": -0.149197,
+      "compression_ratio": 1.220532,
+      "end": 6110.0,
+      "no_speech_prob": 0.0,
+      "start": 6108.0,
+      "text": "毕竟用的开的是飞机在那天上的"
+    },
+    {
+      "avg_logprob": -0.149197,
+      "compression_ratio": 1.220532,
+      "end": 6112.0,
+      "no_speech_prob": 0.0,
+      "start": 6111.0,
+      "text": "所以它不能允许就掉下来了"
+    },
+    {
+      "avg_logprob": -0.149197,
+      "compression_ratio": 1.220532,
+      "end": 6114.0,
+      "no_speech_prob": 0.0,
+      "start": 6113.0,
+      "text": "危险"
+    },
+    {
+      "avg_logprob": -0.149197,
+      "compression_ratio": 1.220532,
+      "end": 6117.0,
+      "no_speech_prob": 0.0,
+      "start": 6116.0,
+      "text": "会非常糟糕"
+    },
+    {
+      "avg_logprob": -0.149197,
+      "compression_ratio": 1.220532,
+      "end": 6118.0,
+      "no_speech_prob": 0.0,
+      "start": 6117.0,
+      "text": "对中国的所有交通"
+    },
+    {
+      "avg_logprob": -0.149197,
+      "compression_ratio": 1.220532,
+      "end": 6124.0,
+      "no_speech_prob": 0.0,
+      "start": 6123.0,
+      "text": "整个社会的高端系统"
+    },
+    {
+      "avg_logprob": -0.149197,
+      "compression_ratio": 1.220532,
+      "end": 6127.0,
+      "no_speech_prob": 0.0,
+      "start": 6125.0,
+      "text": "特别是练钢厂"
+    },
+    {
+      "avg_logprob": -0.149197,
+      "compression_ratio": 1.220532,
+      "end": 6129.0,
+      "no_speech_prob": 0.0,
+      "start": 6128.0,
+      "text": "是这些地方"
+    },
+    {
+      "avg_logprob": -0.149197,
+      "compression_ratio": 1.220532,
+      "end": 6130.0,
+      "no_speech_prob": 0.0,
+      "start": 6129.0,
+      "text": "大型芯片控制的"
+    },
+    {
+      "avg_logprob": -0.149197,
+      "compression_ratio": 1.220532,
+      "end": 6131.0,
+      "no_speech_prob": 0.0,
+      "start": 6130.0,
+      "text": "都将出事"
+    },
+    {
+      "avg_logprob": -0.191379,
+      "compression_ratio": 1.107143,
+      "end": 6133.0,
+      "no_speech_prob": 0.0,
+      "start": 6131.0,
+      "text": "社会会动乱到什么程度呢"
+    },
+    {
+      "avg_logprob": -0.191379,
+      "compression_ratio": 1.107143,
+      "end": 6135.0,
+      "no_speech_prob": 0.0,
+      "start": 6133.0,
+      "text": "比世界末日还可怕"
+    },
+    {
+      "avg_logprob": -0.191379,
+      "compression_ratio": 1.107143,
+      "end": 6141.0,
+      "no_speech_prob": 0.0,
+      "start": 6140.0,
+      "text": "这是第四个"
+    },
+    {
+      "avg_logprob": -0.191379,
+      "compression_ratio": 1.107143,
+      "end": 6142.0,
+      "no_speech_prob": 0.0,
+      "start": 6141.0,
+      "text": "第五"
+    },
+    {
+      "avg_logprob": -0.191379,
+      "compression_ratio": 1.107143,
+      "end": 6144.0,
+      "no_speech_prob": 0.0,
+      "start": 6142.0,
+      "text": "七哥您在视频中透露"
+    },
+    {
+      "avg_logprob": -0.191379,
+      "compression_ratio": 1.107143,
+      "end": 6146.0,
+      "no_speech_prob": 0.0,
+      "start": 6144.0,
+      "text": "盖特币上市以后"
+    },
+    {
+      "avg_logprob": -0.191379,
+      "compression_ratio": 1.107143,
+      "end": 6148.0,
+      "no_speech_prob": 0.0,
+      "start": 6146.0,
+      "text": "道长送了几个意味生长字"
+    },
+    {
+      "avg_logprob": -0.191379,
+      "compression_ratio": 1.107143,
+      "end": 6150.0,
+      "no_speech_prob": 0.0,
+      "start": 6148.0,
+      "text": "七哥请方便分享一下"
+    },
+    {
+      "avg_logprob": -0.394915,
+      "compression_ratio": 0.851351,
+      "end": 6152.0,
+      "no_speech_prob": 0.0,
+      "start": 6150.0,
+      "text": "在这儿呢"
+    },
+    {
+      "avg_logprob": -0.394915,
+      "compression_ratio": 0.851351,
+      "end": 6153.0,
+      "no_speech_prob": 0.0,
+      "start": 6152.0,
+      "text": "有问了"
+    },
+    {
+      "avg_logprob": -0.394915,
+      "compression_ratio": 0.851351,
+      "end": 6154.0,
+      "no_speech_prob": 0.0,
+      "start": 6153.0,
+      "text": "哎呀哈"
+    },
+    {
+      "avg_logprob": -0.394915,
+      "compression_ratio": 0.851351,
+      "end": 6155.0,
+      "no_speech_prob": 0.0,
+      "start": 6154.0,
+      "text": "我还准备了"
+    },
+    {
+      "avg_logprob": -0.394915,
+      "compression_ratio": 0.851351,
+      "end": 6159.0,
+      "no_speech_prob": 0.0,
+      "start": 6158.0,
+      "text": "道长说"
+    },
+    {
+      "avg_logprob": -0.394915,
+      "compression_ratio": 0.851351,
+      "end": 6161.0,
+      "no_speech_prob": 0.0,
+      "start": 6160.0,
+      "text": "为什么"
+    },
+    {
+      "avg_logprob": -0.273366,
+      "compression_ratio": 0.985075,
+      "end": 6163.0,
+      "no_speech_prob": 0.0,
+      "start": 6161.0,
+      "text": "这次"
+    },
+    {
+      "avg_logprob": -0.273366,
+      "compression_ratio": 0.985075,
+      "end": 6165.0,
+      "no_speech_prob": 0.0,
+      "start": 6163.0,
+      "text": "Guy特康音直播"
+    },
+    {
+      "avg_logprob": -0.273366,
+      "compression_ratio": 0.985075,
+      "end": 6167.0,
+      "no_speech_prob": 0.0,
+      "start": 6165.0,
+      "text": "我建议你下午"
+    },
+    {
+      "avg_logprob": -0.273366,
+      "compression_ratio": 0.985075,
+      "end": 6169.0,
+      "no_speech_prob": 0.0,
+      "start": 6168.0,
+      "text": "你不听"
+    },
+    {
+      "avg_logprob": -0.273366,
+      "compression_ratio": 0.985075,
+      "end": 6171.0,
+      "no_speech_prob": 0.0,
+      "start": 6170.0,
+      "text": "说"
+    },
+    {
+      "avg_logprob": -0.273366,
+      "compression_ratio": 0.985075,
+      "end": 6172.0,
+      "no_speech_prob": 0.0,
+      "start": 6171.0,
+      "text": "一定不要忘了"
+    },
+    {
+      "avg_logprob": -0.273366,
+      "compression_ratio": 0.985075,
+      "end": 6173.0,
+      "no_speech_prob": 0.0,
+      "start": 6172.0,
+      "text": "时间"
+    },
+    {
+      "avg_logprob": -0.273366,
+      "compression_ratio": 0.985075,
+      "end": 6175.0,
+      "no_speech_prob": 0.0,
+      "start": 6174.0,
+      "text": "文字"
+    },
+    {
+      "avg_logprob": -0.273366,
+      "compression_ratio": 0.985075,
+      "end": 6178.0,
+      "no_speech_prob": 0.0,
+      "start": 6176.0,
+      "text": "都是上天给我们的密码"
+    },
+    {
+      "avg_logprob": -0.273366,
+      "compression_ratio": 0.985075,
+      "end": 6182.0,
+      "no_speech_prob": 0.0,
+      "start": 6180.0,
+      "text": "没有时间观念"
+    },
+    {
+      "avg_logprob": -0.194871,
+      "compression_ratio": 1.192053,
+      "end": 6184.0,
+      "no_speech_prob": 0.0,
+      "start": 6182.0,
+      "text": "就是对上天的无知"
+    },
+    {
+      "avg_logprob": -0.194871,
+      "compression_ratio": 1.192053,
+      "end": 6187.0,
+      "no_speech_prob": 0.0,
+      "start": 6184.0,
+      "text": "对文字"
+    },
+    {
+      "avg_logprob": -0.194871,
+      "compression_ratio": 1.192053,
+      "end": 6190.0,
+      "no_speech_prob": 0.0,
+      "start": 6188.0,
+      "text": "和各种信息的不了解"
+    },
+    {
+      "avg_logprob": -0.194871,
+      "compression_ratio": 1.192053,
+      "end": 6193.0,
+      "no_speech_prob": 0.0,
+      "start": 6191.0,
+      "text": "就是对自己"
+    },
+    {
+      "avg_logprob": -0.194871,
+      "compression_ratio": 1.192053,
+      "end": 6194.0,
+      "no_speech_prob": 0.0,
+      "start": 6193.0,
+      "text": "以及对社会"
+    },
+    {
+      "avg_logprob": -0.194871,
+      "compression_ratio": 1.192053,
+      "end": 6196.0,
+      "no_speech_prob": 0.0,
+      "start": 6195.0,
+      "text": "包括自己的生存环境"
+    },
+    {
+      "avg_logprob": -0.194871,
+      "compression_ratio": 1.192053,
+      "end": 6197.0,
+      "no_speech_prob": 0.0,
+      "start": 6196.0,
+      "text": "都是伤害"
+    },
+    {
+      "avg_logprob": -0.194871,
+      "compression_ratio": 1.192053,
+      "end": 6200.0,
+      "no_speech_prob": 0.0,
+      "start": 6198.0,
+      "text": "他说道教的无为"
+    },
+    {
+      "avg_logprob": -0.194871,
+      "compression_ratio": 1.192053,
+      "end": 6202.0,
+      "no_speech_prob": 0.0,
+      "start": 6201.0,
+      "text": "啊"
+    },
+    {
+      "avg_logprob": -0.194871,
+      "compression_ratio": 1.192053,
+      "end": 6204.0,
+      "no_speech_prob": 0.0,
+      "start": 6203.0,
+      "text": "无为不是什么都不干"
+    },
+    {
+      "avg_logprob": -0.184007,
+      "compression_ratio": 1.271429,
+      "end": 6205.0,
+      "no_speech_prob": 0.0,
+      "start": 6204.0,
+      "text": "无为"
+    },
+    {
+      "avg_logprob": -0.184007,
+      "compression_ratio": 1.271429,
+      "end": 6207.0,
+      "no_speech_prob": 0.0,
+      "start": 6205.0,
+      "text": "首先就是不要和天"
+    },
+    {
+      "avg_logprob": -0.184007,
+      "compression_ratio": 1.271429,
+      "end": 6208.0,
+      "no_speech_prob": 0.0,
+      "start": 6207.0,
+      "text": "地"
+    },
+    {
+      "avg_logprob": -0.184007,
+      "compression_ratio": 1.271429,
+      "end": 6210.0,
+      "no_speech_prob": 0.0,
+      "start": 6208.0,
+      "text": "自然"
+    },
+    {
+      "avg_logprob": -0.184007,
+      "compression_ratio": 1.271429,
+      "end": 6212.0,
+      "no_speech_prob": 0.0,
+      "start": 6211.0,
+      "text": "去斗"
+    },
+    {
+      "avg_logprob": -0.184007,
+      "compression_ratio": 1.271429,
+      "end": 6213.0,
+      "no_speech_prob": 0.0,
+      "start": 6212.0,
+      "text": "你是不可能的"
+    },
+    {
+      "avg_logprob": -0.184007,
+      "compression_ratio": 1.271429,
+      "end": 6214.0,
+      "no_speech_prob": 0.0,
+      "start": 6213.0,
+      "text": "追寻"
+    },
+    {
+      "avg_logprob": -0.184007,
+      "compression_ratio": 1.271429,
+      "end": 6216.0,
+      "no_speech_prob": 0.0,
+      "start": 6215.0,
+      "text": "和利用"
+    },
+    {
+      "avg_logprob": -0.184007,
+      "compression_ratio": 1.271429,
+      "end": 6217.0,
+      "no_speech_prob": 0.0,
+      "start": 6216.0,
+      "text": "天地之间的密码"
+    },
+    {
+      "avg_logprob": -0.184007,
+      "compression_ratio": 1.271429,
+      "end": 6220.0,
+      "no_speech_prob": 0.0,
+      "start": 6218.0,
+      "text": "这是最智慧的法门"
+    },
+    {
+      "avg_logprob": -0.184007,
+      "compression_ratio": 1.271429,
+      "end": 6222.0,
+      "no_speech_prob": 0.0,
+      "start": 6221.0,
+      "text": "所以呢"
+    },
+    {
+      "avg_logprob": -0.184007,
+      "compression_ratio": 1.271429,
+      "end": 6223.0,
+      "no_speech_prob": 0.0,
+      "start": 6222.0,
+      "text": "这一次呢"
+    },
+    {
+      "avg_logprob": -0.184007,
+      "compression_ratio": 1.271429,
+      "end": 6224.0,
+      "no_speech_prob": 0.0,
+      "start": 6223.0,
+      "text": "我们"
+    },
+    {
+      "avg_logprob": -0.184007,
+      "compression_ratio": 1.271429,
+      "end": 6225.0,
+      "no_speech_prob": 0.0,
+      "start": 6224.0,
+      "text": "御树"
+    },
+    {
+      "avg_logprob": -0.184007,
+      "compression_ratio": 1.271429,
+      "end": 6226.0,
+      "no_speech_prob": 0.0,
+      "start": 6225.0,
+      "text": "犯了这个错误"
+    },
+    {
+      "avg_logprob": -0.184007,
+      "compression_ratio": 1.271429,
+      "end": 6227.0,
+      "no_speech_prob": 0.0,
+      "start": 6226.0,
+      "text": "叫御答"
+    },
+    {
+      "avg_logprob": -0.184007,
+      "compression_ratio": 1.271429,
+      "end": 6228.0,
+      "no_speech_prob": 0.0,
+      "start": 6227.0,
+      "text": "御树遮不答"
+    },
+    {
+      "avg_logprob": -0.184007,
+      "compression_ratio": 1.271429,
+      "end": 6230.0,
+      "no_speech_prob": 0.0,
+      "start": 6228.0,
+      "text": "说在错误的时间"
+    },
+    {
+      "avg_logprob": -0.184007,
+      "compression_ratio": 1.271429,
+      "end": 6232.0,
+      "no_speech_prob": 0.0,
+      "start": 6231.0,
+      "text": "过急的做出决定"
+    },
+    {
+      "avg_logprob": -0.184007,
+      "compression_ratio": 1.271429,
+      "end": 6233.0,
+      "no_speech_prob": 0.0,
+      "start": 6232.0,
+      "text": "必将付出代价"
+    },
+    {
+      "avg_logprob": -0.098276,
+      "compression_ratio": 1.402985,
+      "end": 6236.0,
+      "no_speech_prob": 0.0,
+      "start": 6233.0,
+      "text": "拿错了钥匙"
+    },
+    {
+      "avg_logprob": -0.098276,
+      "compression_ratio": 1.402985,
+      "end": 6237.0,
+      "no_speech_prob": 0.0,
+      "start": 6236.0,
+      "text": "开错了门"
+    },
+    {
+      "avg_logprob": -0.098276,
+      "compression_ratio": 1.402985,
+      "end": 6239.0,
+      "no_speech_prob": 0.0,
+      "start": 6238.0,
+      "text": "用错了力"
+    },
+    {
+      "avg_logprob": -0.098276,
+      "compression_ratio": 1.402985,
+      "end": 6241.0,
+      "no_speech_prob": 0.0,
+      "start": 6240.0,
+      "text": "这是很夸张的"
+    },
+    {
+      "avg_logprob": -0.098276,
+      "compression_ratio": 1.402985,
+      "end": 6243.0,
+      "no_speech_prob": 0.0,
+      "start": 6242.0,
+      "text": "那么"
+    },
+    {
+      "avg_logprob": -0.098276,
+      "compression_ratio": 1.402985,
+      "end": 6244.0,
+      "no_speech_prob": 0.0,
+      "start": 6243.0,
+      "text": "另外一个呢"
+    },
+    {
+      "avg_logprob": -0.098276,
+      "compression_ratio": 1.402985,
+      "end": 6246.0,
+      "no_speech_prob": 0.0,
+      "start": 6245.0,
+      "text": "他说文贵"
+    },
+    {
+      "avg_logprob": -0.098276,
+      "compression_ratio": 1.402985,
+      "end": 6247.0,
+      "no_speech_prob": 0.0,
+      "start": 6246.0,
+      "text": "记得第一次啊"
+    },
+    {
+      "avg_logprob": -0.098276,
+      "compression_ratio": 1.402985,
+      "end": 6248.0,
+      "no_speech_prob": 0.0,
+      "start": 6247.0,
+      "text": "跟你文贵谈的时候"
+    },
+    {
+      "avg_logprob": -0.098276,
+      "compression_ratio": 1.402985,
+      "end": 6249.0,
+      "no_speech_prob": 0.0,
+      "start": 6248.0,
+      "text": "谈禅宗"
+    },
+    {
+      "avg_logprob": -0.098276,
+      "compression_ratio": 1.402985,
+      "end": 6251.0,
+      "no_speech_prob": 0.0,
+      "start": 6250.0,
+      "text": "是文贵"
+    },
+    {
+      "avg_logprob": -0.098276,
+      "compression_ratio": 1.402985,
+      "end": 6252.0,
+      "no_speech_prob": 0.0,
+      "start": 6251.0,
+      "text": "我谈的是灵性的世界"
+    },
+    {
+      "avg_logprob": -0.098276,
+      "compression_ratio": 1.402985,
+      "end": 6254.0,
+      "no_speech_prob": 0.0,
+      "start": 6253.0,
+      "text": "他谈的是"
+    },
+    {
+      "avg_logprob": -0.098276,
+      "compression_ratio": 1.402985,
+      "end": 6256.0,
+      "no_speech_prob": 0.0,
+      "start": 6254.0,
+      "text": "道法自然的世界"
+    },
+    {
+      "avg_logprob": -0.098276,
+      "compression_ratio": 1.402985,
+      "end": 6257.0,
+      "no_speech_prob": 0.0,
+      "start": 6256.0,
+      "text": "无为的世界"
+    },
+    {
+      "avg_logprob": -0.098276,
+      "compression_ratio": 1.402985,
+      "end": 6259.0,
+      "no_speech_prob": 0.0,
+      "start": 6258.0,
+      "text": "那么"
+    },
+    {
+      "avg_logprob": -0.098276,
+      "compression_ratio": 1.402985,
+      "end": 6260.0,
+      "no_speech_prob": 0.0,
+      "start": 6259.0,
+      "text": "我当时讲的"
+    },
+    {
+      "avg_logprob": -0.098276,
+      "compression_ratio": 1.402985,
+      "end": 6261.0,
+      "no_speech_prob": 0.0,
+      "start": 6260.0,
+      "text": "我记得很清楚"
+    },
+    {
+      "avg_logprob": -0.098276,
+      "compression_ratio": 1.402985,
+      "end": 6262.0,
+      "no_speech_prob": 0.0,
+      "start": 6261.0,
+      "text": "我说禅宗"
+    },
+    {
+      "avg_logprob": -0.143456,
+      "compression_ratio": 1.272321,
+      "end": 6264.0,
+      "no_speech_prob": 0.0,
+      "start": 6262.0,
+      "text": "禅宗非常重要的是"
+    },
+    {
+      "avg_logprob": -0.143456,
+      "compression_ratio": 1.272321,
+      "end": 6265.0,
+      "no_speech_prob": 0.0,
+      "start": 6264.0,
+      "text": "不建议多少"
+    },
+    {
+      "avg_logprob": -0.143456,
+      "compression_ratio": 1.272321,
+      "end": 6266.0,
+      "no_speech_prob": 0.0,
+      "start": 6265.0,
+      "text": "这经那经"
+    },
+    {
+      "avg_logprob": -0.143456,
+      "compression_ratio": 1.272321,
+      "end": 6267.0,
+      "no_speech_prob": 0.0,
+      "start": 6266.0,
+      "text": "甚至是避开"
+    },
+    {
+      "avg_logprob": -0.143456,
+      "compression_ratio": 1.272321,
+      "end": 6271.0,
+      "no_speech_prob": 0.0,
+      "start": 6269.0,
+      "text": "对禅宗的解释的误会"
+    },
+    {
+      "avg_logprob": -0.143456,
+      "compression_ratio": 1.272321,
+      "end": 6273.0,
+      "no_speech_prob": 0.0,
+      "start": 6272.0,
+      "text": "和隔离"
+    },
+    {
+      "avg_logprob": -0.143456,
+      "compression_ratio": 1.272321,
+      "end": 6274.0,
+      "no_speech_prob": 0.0,
+      "start": 6273.0,
+      "text": "特别是文字强"
+    },
+    {
+      "avg_logprob": -0.143456,
+      "compression_ratio": 1.272321,
+      "end": 6276.0,
+      "no_speech_prob": 0.0,
+      "start": 6274.0,
+      "text": "这个文字本身就是魔道"
+    },
+    {
+      "avg_logprob": -0.143456,
+      "compression_ratio": 1.272321,
+      "end": 6279.0,
+      "no_speech_prob": 0.0,
+      "start": 6278.0,
+      "text": "然后"
+    },
+    {
+      "avg_logprob": -0.143456,
+      "compression_ratio": 1.272321,
+      "end": 6280.0,
+      "no_speech_prob": 0.0,
+      "start": 6279.0,
+      "text": "那时候道长说"
+    },
+    {
+      "avg_logprob": -0.143456,
+      "compression_ratio": 1.272321,
+      "end": 6281.0,
+      "no_speech_prob": 0.0,
+      "start": 6280.0,
+      "text": "哎呀你这小伙子可以啊"
+    },
+    {
+      "avg_logprob": -0.143456,
+      "compression_ratio": 1.272321,
+      "end": 6282.0,
+      "no_speech_prob": 0.0,
+      "start": 6281.0,
+      "text": "聊了半天"
+    },
+    {
+      "avg_logprob": -0.143456,
+      "compression_ratio": 1.272321,
+      "end": 6283.0,
+      "no_speech_prob": 0.0,
+      "start": 6282.0,
+      "text": "禅宗是不愿意"
+    },
+    {
+      "avg_logprob": -0.143456,
+      "compression_ratio": 1.272321,
+      "end": 6286.0,
+      "no_speech_prob": 0.0,
+      "start": 6284.0,
+      "text": "禅宗最好让你不要用文字来"
+    },
+    {
+      "avg_logprob": -0.143456,
+      "compression_ratio": 1.272321,
+      "end": 6287.0,
+      "no_speech_prob": 0.0,
+      "start": 6286.0,
+      "text": "来送经"
+    },
+    {
+      "avg_logprob": -0.125487,
+      "compression_ratio": 1.314286,
+      "end": 6291.0,
+      "no_speech_prob": 0.0,
+      "start": 6287.0,
+      "text": "文字是无法解释禅宗的那种秘密的"
+    },
+    {
+      "avg_logprob": -0.125487,
+      "compression_ratio": 1.314286,
+      "end": 6294.0,
+      "no_speech_prob": 0.0,
+      "start": 6292.0,
+      "text": "文字是无法解释禅宗的"
+    },
+    {
+      "avg_logprob": -0.125487,
+      "compression_ratio": 1.314286,
+      "end": 6296.0,
+      "no_speech_prob": 0.0,
+      "start": 6294.0,
+      "text": "禅宗既不是教"
+    },
+    {
+      "avg_logprob": -0.125487,
+      "compression_ratio": 1.314286,
+      "end": 6297.0,
+      "no_speech_prob": 0.0,
+      "start": 6296.0,
+      "text": "它也不是哲学"
+    },
+    {
+      "avg_logprob": -0.125487,
+      "compression_ratio": 1.314286,
+      "end": 6299.0,
+      "no_speech_prob": 0.0,
+      "start": 6297.0,
+      "text": "禅宗是告诉你真正的"
+    },
+    {
+      "avg_logprob": -0.62527,
+      "compression_ratio": 0.65625,
+      "end": 6300.0,
+      "no_speech_prob": 0.0,
+      "start": 6299.0,
+      "text": "是告诉你真正的"
+    }
+  ],
+  "text": "请不吝点赞 订阅 转发 打赏支持明镜与点点栏目明镜与点点栏目明镜与点点栏目明镜与点点栏目明镜与点点栏目明镜与点点栏目明镜与点点栏目明镜与点点栏目明镜与点点栏目明镜与点点栏目明镜与点点栏目明镜与点点栏目明镜与点点栏目明镜与点点栏目明镜与点点栏目明镜与点点栏目明镜与点点栏目明镜与点点栏目明镜与点点栏目明镜与点点栏目第2次 《奴隶的战友》第2次 《奴隶的战友》第2次 《奴隶的战友》第2次 《奴隶的战友》哎呀!笨人呐!笨人呐!这些鬼子们这些鬼子们就是拿着这个拿着那个来给我们整啊!他们整所以说现在啊好几个俄罗斯的战友昨天晚上哎呀!说Miles啊!俄罗斯烧人烧的跟中共国一样火葬场也是满了到处大街上烧人呐!俄罗斯烧人这件事情意味着什么?意味着什么?战友们今天我们谈到了习近平的恐惧我们谈到了共产党的恐惧查资产封资产最恐惧是他们有钱海外的90%以上的钱是中南坑老子阿毛共产党们对吧!还有一个中国最近政法大抓捕是吧!大抓捕!然后资金大逃亡!疫苗大赔偿!白纸革命火焰运动然后对台湾攻不攻台呀!麦根斯又要马上到中国的人况死人那么多死多少人呢?我告诉大家上星期的内部的统计数据说一共死亡是震惊的真实数据是3.7%3.7%死了多少人呢?死了2900多万所以中国绝对不是14亿人口3.72900万这是中国到现在死的人记住我今天说的话共产党在这次这次的整个的大灾难隔离清零以后的政治上的大屠杀大屠杀!2900万人死去3.7%你算是中国有多少人吧?然后中国的人况就少了嘛少了2900万人况嘛所以说现在共产党为什么习近平恐惧疫苗大灾难死了2900万这个病毒大灾难是他搞的2900万这些人不给他算账吗?还要面临到更大的疫苗灾难然后现在麦肯斯马上要突袭登台还要把南海和台湾放在一起说和香港一起说然后更夸张的是吧中国人况减少然后海外他家人所有人资产要被查封是吧而且中国金融机构也要被查封海外的所有的这些基金都要查封砸弄砸弄所以习近平的恐惧和共产党的恐惧就是要没钱了美国佬动真的了全球封锁共产党资产所以第四个问题1月28日美国日本荷兰就主指向中国出口先进芯片及制造设备达成协议这将制约中共在高科技领域的发展请问七哥对中共的打击最先会提前的哪些方面所有的中共国芯片大概能撑到今年7月份到8月份接下来所有中国的高端设备芯片软件包括航空航天的这些技术特别是快车中国大型电脑中国的所有的生物科技核电厂所有都会出问题而且中共这次出问题是北朝鲜的北朝鲜是过去它是拖拉机它最多胡阿塞不好了油不够了它现在中共国毕竟毕竟用的开的是飞机在那天上的所以它不能允许就掉下来了危险会非常糟糕对中国的所有交通整个社会的高端系统特别是练钢厂是这些地方大型芯片控制的都将出事社会会动乱到什么程度呢比世界末日还可怕这是第四个第五七哥您在视频中透露盖特币上市以后道长送了几个意味生长字七哥请方便分享一下在这儿呢有问了哎呀哈我还准备了道长说为什么这次Guy特康音直播我建议你下午你不听说一定不要忘了时间文字都是上天给我们的密码没有时间观念就是对上天的无知对文字和各种信息的不了解就是对自己以及对社会包括自己的生存环境都是伤害他说道教的无为啊无为不是什么都不干无为首先就是不要和天地自然去斗你是不可能的追寻和利用天地之间的密码这是最智慧的法门所以呢这一次呢我们御树犯了这个错误叫御答御树遮不答说在错误的时间过急的做出决定必将付出代价拿错了钥匙开错了门用错了力这是很夸张的那么另外一个呢他说文贵记得第一次啊跟你文贵谈的时候谈禅宗是文贵我谈的是灵性的世界他谈的是道法自然的世界无为的世界那么我当时讲的我记得很清楚我说禅宗禅宗非常重要的是不建议多少这经那经甚至是避开对禅宗的解释的误会和隔离特别是文字强这个文字本身就是魔道然后那时候道长说哎呀你这小伙子可以啊聊了半天禅宗是不愿意禅宗最好让你不要用文字来来送经文字是无法解释禅宗的那种秘密的文字是无法解释禅宗的禅宗既不是教它也不是哲学禅宗是告诉你真正的是告诉你真正的"
+}

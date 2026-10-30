@@ -1,0 +1,2320 @@
+{
+  "chunk_audio_sha256": "378041e0798fd666cb3e646f966bd3fc0e3138dade4ee041d57888f7eebb7c83",
+  "chunk_index": 0,
+  "completed_at": "2026-10-30T00:37:11Z",
+  "language": "zh",
+  "live_id": "LIVE_20230122_001",
+  "media_committed_to_git": false,
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "offset_sec": 0,
+  "paid_api_used": false,
+  "processing_location": "github-hosted-macos-arm64",
+  "schema_version": "cloud-asr-chunk-v1",
+  "segments": [
+    {
+      "avg_logprob": -0.114598,
+      "compression_ratio": 0.851351,
+      "end": 29.98,
+      "no_speech_prob": 0.0,
+      "start": 0.0,
+      "text": "请不吝点赞 订阅 转发 打赏支持明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.19945,
+      "compression_ratio": 0.724138,
+      "end": 59.98,
+      "no_speech_prob": 0.0,
+      "start": 30.0,
+      "text": "明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.139693,
+      "compression_ratio": 0.724138,
+      "end": 89.98,
+      "no_speech_prob": 0.0,
+      "start": 60.0,
+      "text": "明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.184871,
+      "compression_ratio": 0.724138,
+      "end": 119.96,
+      "no_speech_prob": 0.0,
+      "start": 89.98,
+      "text": "明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.101967,
+      "compression_ratio": 0.724138,
+      "end": 149.94,
+      "no_speech_prob": 0.0,
+      "start": 119.96,
+      "text": "明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.374886,
+      "compression_ratio": 0.724138,
+      "end": 177.94,
+      "no_speech_prob": 0.0,
+      "start": 149.94,
+      "text": "明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.132602,
+      "compression_ratio": 1.3125,
+      "end": 179.94,
+      "no_speech_prob": 0.0,
+      "start": 177.94,
+      "text": "明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.132602,
+      "compression_ratio": 1.3125,
+      "end": 181.94,
+      "no_speech_prob": 0.0,
+      "start": 179.94,
+      "text": "明镜与点点栏目"
+    },
+    {
+      "avg_logprob": -0.148487,
+      "compression_ratio": 0.666667,
+      "end": 185.94,
+      "no_speech_prob": 0.0,
+      "start": 181.94,
+      "text": "明镜与点栏目"
+    },
+    {
+      "avg_logprob": -0.09741,
+      "compression_ratio": 0.666667,
+      "end": 189.94,
+      "no_speech_prob": 0.0,
+      "start": 185.94,
+      "text": "明镜与点栏目"
+    },
+    {
+      "avg_logprob": -0.052179,
+      "compression_ratio": 0.666667,
+      "end": 193.94,
+      "no_speech_prob": 0.0,
+      "start": 189.94,
+      "text": "明镜与点栏目"
+    },
+    {
+      "avg_logprob": -0.137305,
+      "compression_ratio": 0.666667,
+      "end": 197.94,
+      "no_speech_prob": 0.0,
+      "start": 193.94,
+      "text": "明镜与点栏目"
+    },
+    {
+      "avg_logprob": -0.099896,
+      "compression_ratio": 0.666667,
+      "end": 201.94,
+      "no_speech_prob": 0.0,
+      "start": 197.94,
+      "text": "明镜与点栏目"
+    },
+    {
+      "avg_logprob": -0.177343,
+      "compression_ratio": 0.666667,
+      "end": 205.94,
+      "no_speech_prob": 0.0,
+      "start": 201.94,
+      "text": "明镜与点栏目"
+    },
+    {
+      "avg_logprob": -0.076032,
+      "compression_ratio": 0.666667,
+      "end": 209.94,
+      "no_speech_prob": 0.0,
+      "start": 205.94,
+      "text": "明镜与点栏目"
+    },
+    {
+      "avg_logprob": -0.135875,
+      "compression_ratio": 0.666667,
+      "end": 213.94,
+      "no_speech_prob": 0.0,
+      "start": 209.94,
+      "text": "明镜与点栏目"
+    },
+    {
+      "avg_logprob": -0.113891,
+      "compression_ratio": 0.666667,
+      "end": 217.94,
+      "no_speech_prob": 0.0,
+      "start": 213.94,
+      "text": "明镜与点栏目"
+    },
+    {
+      "avg_logprob": -0.131178,
+      "compression_ratio": 0.666667,
+      "end": 221.94,
+      "no_speech_prob": 0.0,
+      "start": 217.94,
+      "text": "明镜与点栏目"
+    },
+    {
+      "avg_logprob": -0.084236,
+      "compression_ratio": 1.741935,
+      "end": 225.94,
+      "no_speech_prob": 0.0,
+      "start": 221.94,
+      "text": "明镜与点栏目"
+    },
+    {
+      "avg_logprob": -0.084236,
+      "compression_ratio": 1.741935,
+      "end": 227.94,
+      "no_speech_prob": 0.0,
+      "start": 225.94,
+      "text": "明镜与点栏目"
+    },
+    {
+      "avg_logprob": -0.219134,
+      "compression_ratio": 1.741935,
+      "end": 233.94,
+      "no_speech_prob": 0.0,
+      "start": 227.94,
+      "text": "明镜与点栏目"
+    },
+    {
+      "avg_logprob": -0.219134,
+      "compression_ratio": 1.741935,
+      "end": 235.94,
+      "no_speech_prob": 0.0,
+      "start": 233.94,
+      "text": "明镜与点栏目"
+    },
+    {
+      "avg_logprob": -0.219134,
+      "compression_ratio": 1.741935,
+      "end": 237.94,
+      "no_speech_prob": 0.0,
+      "start": 235.94,
+      "text": "明镜与点栏目"
+    },
+    {
+      "avg_logprob": -0.20491,
+      "compression_ratio": 1.868687,
+      "end": 239.94,
+      "no_speech_prob": 0.0,
+      "start": 237.94,
+      "text": "我们有自己的诺亚方舟"
+    },
+    {
+      "avg_logprob": -0.20491,
+      "compression_ratio": 1.868687,
+      "end": 242.94,
+      "no_speech_prob": 0.0,
+      "start": 239.94,
+      "text": "我们今年就会奔向一个崭新的主题"
+    },
+    {
+      "avg_logprob": -0.20491,
+      "compression_ratio": 1.868687,
+      "end": 244.94,
+      "no_speech_prob": 0.0,
+      "start": 242.94,
+      "text": "希望2023"
+    },
+    {
+      "avg_logprob": -0.20491,
+      "compression_ratio": 1.868687,
+      "end": 247.94,
+      "no_speech_prob": 0.0,
+      "start": 245.94,
+      "text": "希望2023"
+    },
+    {
+      "avg_logprob": -0.20491,
+      "compression_ratio": 1.868687,
+      "end": 250.94,
+      "no_speech_prob": 0.0,
+      "start": 247.94,
+      "text": "希望2023"
+    },
+    {
+      "avg_logprob": -0.20491,
+      "compression_ratio": 1.868687,
+      "end": 252.94,
+      "no_speech_prob": 0.0,
+      "start": 250.94,
+      "text": "希望2023"
+    },
+    {
+      "avg_logprob": -0.20491,
+      "compression_ratio": 1.868687,
+      "end": 254.94,
+      "no_speech_prob": 0.0,
+      "start": 252.94,
+      "text": "希望2023"
+    },
+    {
+      "avg_logprob": -0.20491,
+      "compression_ratio": 1.868687,
+      "end": 256.94,
+      "no_speech_prob": 0.0,
+      "start": 254.94,
+      "text": "希望2023"
+    },
+    {
+      "avg_logprob": -0.20491,
+      "compression_ratio": 1.868687,
+      "end": 258.94,
+      "no_speech_prob": 0.0,
+      "start": 256.94,
+      "text": "希望2023"
+    },
+    {
+      "avg_logprob": -0.20491,
+      "compression_ratio": 1.868687,
+      "end": 260.94,
+      "no_speech_prob": 0.0,
+      "start": 258.94,
+      "text": "希望2023"
+    },
+    {
+      "avg_logprob": -0.20491,
+      "compression_ratio": 1.868687,
+      "end": 262.94,
+      "no_speech_prob": 0.0,
+      "start": 260.94,
+      "text": "希望2023"
+    },
+    {
+      "avg_logprob": -0.20491,
+      "compression_ratio": 1.868687,
+      "end": 264.94,
+      "no_speech_prob": 0.0,
+      "start": 262.94,
+      "text": "希望2023"
+    },
+    {
+      "avg_logprob": -0.20491,
+      "compression_ratio": 1.868687,
+      "end": 266.94,
+      "no_speech_prob": 0.0,
+      "start": 264.94,
+      "text": "希望2023"
+    },
+    {
+      "avg_logprob": -0.733524,
+      "compression_ratio": 2.160714,
+      "end": 269.94,
+      "no_speech_prob": 0.0,
+      "start": 266.94,
+      "text": "希望2023"
+    },
+    {
+      "avg_logprob": -0.733524,
+      "compression_ratio": 2.160714,
+      "end": 272.94,
+      "no_speech_prob": 0.0,
+      "start": 270.94,
+      "text": "希望2023"
+    },
+    {
+      "avg_logprob": -0.733524,
+      "compression_ratio": 2.160714,
+      "end": 274.94,
+      "no_speech_prob": 0.0,
+      "start": 272.94,
+      "text": "除息快乐"
+    },
+    {
+      "avg_logprob": -0.733524,
+      "compression_ratio": 2.160714,
+      "end": 276.94,
+      "no_speech_prob": 0.0,
+      "start": 274.94,
+      "text": "希望2023"
+    },
+    {
+      "avg_logprob": -0.733524,
+      "compression_ratio": 2.160714,
+      "end": 278.94,
+      "no_speech_prob": 0.0,
+      "start": 276.94,
+      "text": "希望2023"
+    },
+    {
+      "avg_logprob": -0.733524,
+      "compression_ratio": 2.160714,
+      "end": 280.94,
+      "no_speech_prob": 0.0,
+      "start": 278.94,
+      "text": "希望2023"
+    },
+    {
+      "avg_logprob": -0.733524,
+      "compression_ratio": 2.160714,
+      "end": 283.94,
+      "no_speech_prob": 0.0,
+      "start": 280.94,
+      "text": "希望2023"
+    },
+    {
+      "avg_logprob": -0.733524,
+      "compression_ratio": 2.160714,
+      "end": 285.94,
+      "no_speech_prob": 0.0,
+      "start": 283.94,
+      "text": "希望2023"
+    },
+    {
+      "avg_logprob": -0.733524,
+      "compression_ratio": 2.160714,
+      "end": 287.94,
+      "no_speech_prob": 0.0,
+      "start": 285.94,
+      "text": "希望2023"
+    },
+    {
+      "avg_logprob": -0.733524,
+      "compression_ratio": 2.160714,
+      "end": 290.44,
+      "no_speech_prob": 0.0,
+      "start": 288.44,
+      "text": "空 2023"
+    },
+    {
+      "avg_logprob": -0.733524,
+      "compression_ratio": 2.160714,
+      "end": 292.94,
+      "no_speech_prob": 0.0,
+      "start": 290.44,
+      "text": "쓰고2023"
+    },
+    {
+      "avg_logprob": -0.733524,
+      "compression_ratio": 2.160714,
+      "end": 294.94,
+      "no_speech_prob": 0.0,
+      "start": 292.94,
+      "text": "希望2023"
+    },
+    {
+      "avg_logprob": -0.215486,
+      "compression_ratio": 1.366197,
+      "end": 296.94,
+      "no_speech_prob": 0.0,
+      "start": 294.94,
+      "text": "希望2023"
+    },
+    {
+      "avg_logprob": -0.215486,
+      "compression_ratio": 1.366197,
+      "end": 298.94,
+      "no_speech_prob": 0.0,
+      "start": 296.94,
+      "text": "希望2023"
+    },
+    {
+      "avg_logprob": -0.215486,
+      "compression_ratio": 1.366197,
+      "end": 300.94,
+      "no_speech_prob": 0.0,
+      "start": 298.94,
+      "text": "希望2023"
+    },
+    {
+      "avg_logprob": -0.215486,
+      "compression_ratio": 1.366197,
+      "end": 302.94,
+      "no_speech_prob": 0.0,
+      "start": 300.94,
+      "text": "希望2023"
+    },
+    {
+      "avg_logprob": -0.215486,
+      "compression_ratio": 1.366197,
+      "end": 306.94,
+      "no_speech_prob": 0.0,
+      "start": 305.94,
+      "text": "妹妹"
+    },
+    {
+      "avg_logprob": -0.215486,
+      "compression_ratio": 1.366197,
+      "end": 308.94,
+      "no_speech_prob": 0.0,
+      "start": 306.94,
+      "text": "希望2023"
+    },
+    {
+      "avg_logprob": -0.215486,
+      "compression_ratio": 1.366197,
+      "end": 309.94,
+      "no_speech_prob": 0.0,
+      "start": 308.94,
+      "text": "弟弟"
+    },
+    {
+      "avg_logprob": -0.215486,
+      "compression_ratio": 1.366197,
+      "end": 310.94,
+      "no_speech_prob": 0.0,
+      "start": 309.94,
+      "text": "希望2023"
+    },
+    {
+      "avg_logprob": -0.215486,
+      "compression_ratio": 1.366197,
+      "end": 312.94,
+      "no_speech_prob": 0.0,
+      "start": 310.94,
+      "text": "希望2023"
+    },
+    {
+      "avg_logprob": -0.215486,
+      "compression_ratio": 1.366197,
+      "end": 318.94,
+      "no_speech_prob": 0.0,
+      "start": 312.94,
+      "text": "好,那现在让我们非常隆重的邮请新中国联邦的创始人"
+    },
+    {
+      "avg_logprob": -0.215486,
+      "compression_ratio": 1.366197,
+      "end": 320.94,
+      "no_speech_prob": 0.0,
+      "start": 318.94,
+      "text": "我们战友们最喜欢的郭文贵先生"
+    },
+    {
+      "avg_logprob": -0.298165,
+      "compression_ratio": 1.213115,
+      "end": 324.94,
+      "no_speech_prob": 0.0,
+      "start": 320.94,
+      "text": "指引大家最棒的邮好"
+    },
+    {
+      "avg_logprob": -0.298165,
+      "compression_ratio": 1.213115,
+      "end": 334.94,
+      "no_speech_prob": 0.0,
+      "start": 332.94,
+      "text": "郭先生还没过来"
+    },
+    {
+      "avg_logprob": -0.298165,
+      "compression_ratio": 1.213115,
+      "end": 336.94,
+      "no_speech_prob": 0.0,
+      "start": 334.94,
+      "text": "那我们先简单说一下"
+    },
+    {
+      "avg_logprob": -0.298165,
+      "compression_ratio": 1.213115,
+      "end": 340.94,
+      "no_speech_prob": 0.0,
+      "start": 336.94,
+      "text": "就是我们最近大家也看到了就是"
+    },
+    {
+      "avg_logprob": -0.298165,
+      "compression_ratio": 1.213115,
+      "end": 342.94,
+      "no_speech_prob": 0.0,
+      "start": 340.94,
+      "text": "我是英雄的节目"
+    },
+    {
+      "avg_logprob": -0.298165,
+      "compression_ratio": 1.213115,
+      "end": 344.94,
+      "no_speech_prob": 0.0,
+      "start": 342.94,
+      "text": "我不知道什么像参加了"
+    },
+    {
+      "avg_logprob": -0.298165,
+      "compression_ratio": 1.213115,
+      "end": 346.94,
+      "no_speech_prob": 0.0,
+      "start": 344.94,
+      "text": "但是整体的感受是怎么样"
+    },
+    {
+      "avg_logprob": -0.298165,
+      "compression_ratio": 1.213115,
+      "end": 348.94,
+      "no_speech_prob": 0.0,
+      "start": 346.94,
+      "text": "我觉得就是很棒"
+    },
+    {
+      "avg_logprob": -0.123827,
+      "compression_ratio": 1.401639,
+      "end": 350.94,
+      "no_speech_prob": 0.0,
+      "start": 348.94,
+      "text": "从第一季的时候"
+    },
+    {
+      "avg_logprob": -0.123827,
+      "compression_ratio": 1.401639,
+      "end": 352.94,
+      "no_speech_prob": 0.0,
+      "start": 350.94,
+      "text": "我记得那个时候还是GTV"
+    },
+    {
+      "avg_logprob": -0.123827,
+      "compression_ratio": 1.401639,
+      "end": 354.94,
+      "no_speech_prob": 0.0,
+      "start": 352.94,
+      "text": "然后大家每一个人连线的时候磕磕绊绊的"
+    },
+    {
+      "avg_logprob": -0.123827,
+      "compression_ratio": 1.401639,
+      "end": 356.94,
+      "no_speech_prob": 0.0,
+      "start": 354.94,
+      "text": "然后戴着耳机"
+    },
+    {
+      "avg_logprob": -0.123827,
+      "compression_ratio": 1.401639,
+      "end": 360.94,
+      "no_speech_prob": 0.0,
+      "start": 356.94,
+      "text": "然后一直到现在我们已经可以办一个现场的"
+    },
+    {
+      "avg_logprob": -0.123827,
+      "compression_ratio": 1.401639,
+      "end": 362.94,
+      "no_speech_prob": 0.0,
+      "start": 360.94,
+      "text": "然后有将近快就是"
+    },
+    {
+      "avg_logprob": -0.123827,
+      "compression_ratio": 1.401639,
+      "end": 364.94,
+      "no_speech_prob": 0.0,
+      "start": 362.94,
+      "text": "五十号快一百来人的这样的一个现场"
+    },
+    {
+      "avg_logprob": -0.123827,
+      "compression_ratio": 1.401639,
+      "end": 366.94,
+      "no_speech_prob": 0.0,
+      "start": 364.94,
+      "text": "线下的一个音乐的这样的一个活动"
+    },
+    {
+      "avg_logprob": -0.123827,
+      "compression_ratio": 1.401639,
+      "end": 370.94,
+      "no_speech_prob": 0.0,
+      "start": 366.94,
+      "text": "我昨天还专门去看了CCP的那个冲碗"
+    },
+    {
+      "avg_logprob": -0.123995,
+      "compression_ratio": 1.181818,
+      "end": 372.94,
+      "no_speech_prob": 0.0,
+      "start": 370.94,
+      "text": "然后他和朋友聊天"
+    },
+    {
+      "avg_logprob": -0.123995,
+      "compression_ratio": 1.181818,
+      "end": 374.94,
+      "no_speech_prob": 0.0,
+      "start": 372.94,
+      "text": "然后朋友都跟我说"
+    },
+    {
+      "avg_logprob": -0.123995,
+      "compression_ratio": 1.181818,
+      "end": 376.94,
+      "no_speech_prob": 0.0,
+      "start": 374.94,
+      "text": "今年很多地方台都拒绝转播"
+    },
+    {
+      "avg_logprob": -0.123995,
+      "compression_ratio": 1.181818,
+      "end": 378.94,
+      "no_speech_prob": 0.0,
+      "start": 376.94,
+      "text": "CCP的冲碗"
+    },
+    {
+      "avg_logprob": -0.123995,
+      "compression_ratio": 1.181818,
+      "end": 380.94,
+      "no_speech_prob": 0.0,
+      "start": 378.94,
+      "text": "我觉得这也是一个非常重要的一个信号"
+    },
+    {
+      "avg_logprob": -0.123995,
+      "compression_ratio": 1.181818,
+      "end": 384.94,
+      "no_speech_prob": 0.0,
+      "start": 380.94,
+      "text": "然后当我们去对比冲碗的那一个图片"
+    },
+    {
+      "avg_logprob": -0.108115,
+      "compression_ratio": 1.107143,
+      "end": 386.94,
+      "no_speech_prob": 0.0,
+      "start": 384.94,
+      "text": "和我们现场所有的人"
+    },
+    {
+      "avg_logprob": -0.108115,
+      "compression_ratio": 1.107143,
+      "end": 388.94,
+      "no_speech_prob": 0.0,
+      "start": 386.94,
+      "text": "尤其是最后唱完喜马拉雅"
+    },
+    {
+      "avg_logprob": -0.108115,
+      "compression_ratio": 1.107143,
+      "end": 390.94,
+      "no_speech_prob": 0.0,
+      "start": 388.94,
+      "text": "大家高喊"
+    },
+    {
+      "avg_logprob": -0.108115,
+      "compression_ratio": 1.107143,
+      "end": 392.94,
+      "no_speech_prob": 0.0,
+      "start": 390.94,
+      "text": "take downCCP"
+    },
+    {
+      "avg_logprob": -0.108115,
+      "compression_ratio": 1.107143,
+      "end": 394.94,
+      "no_speech_prob": 0.0,
+      "start": 392.94,
+      "text": "共产党你完了的时候"
+    },
+    {
+      "avg_logprob": -0.108115,
+      "compression_ratio": 1.107143,
+      "end": 396.94,
+      "no_speech_prob": 0.0,
+      "start": 394.94,
+      "text": "那种气势和共产党下面那种"
+    },
+    {
+      "avg_logprob": -0.108115,
+      "compression_ratio": 1.107143,
+      "end": 398.94,
+      "no_speech_prob": 0.0,
+      "start": 396.94,
+      "text": "就是假装的那种愉悦"
+    },
+    {
+      "avg_logprob": -0.092198,
+      "compression_ratio": 1.367273,
+      "end": 400.94,
+      "no_speech_prob": 0.0,
+      "start": 398.94,
+      "text": "然后在就是郭先生说的"
+    },
+    {
+      "avg_logprob": -0.092198,
+      "compression_ratio": 1.367273,
+      "end": 402.94,
+      "no_speech_prob": 0.0,
+      "start": 400.94,
+      "text": "诗香遍野的中国下"
+    },
+    {
+      "avg_logprob": -0.092198,
+      "compression_ratio": 1.367273,
+      "end": 404.94,
+      "no_speech_prob": 0.0,
+      "start": 402.94,
+      "text": "还要去庆祝喜悦的时候"
+    },
+    {
+      "avg_logprob": -0.092198,
+      "compression_ratio": 1.367273,
+      "end": 406.94,
+      "no_speech_prob": 0.0,
+      "start": 404.94,
+      "text": "我觉得这是一种天壤之别的对比"
+    },
+    {
+      "avg_logprob": -0.092198,
+      "compression_ratio": 1.367273,
+      "end": 408.94,
+      "no_speech_prob": 0.0,
+      "start": 406.94,
+      "text": "我觉得另外一点的一个感受就是"
+    },
+    {
+      "avg_logprob": -0.092198,
+      "compression_ratio": 1.367273,
+      "end": 412.94,
+      "no_speech_prob": 0.0,
+      "start": 408.94,
+      "text": "当大家都在喊说希望2023的时候"
+    },
+    {
+      "avg_logprob": -0.092198,
+      "compression_ratio": 1.367273,
+      "end": 414.94,
+      "no_speech_prob": 0.0,
+      "start": 412.94,
+      "text": "很多战友的家人"
+    },
+    {
+      "avg_logprob": -0.092198,
+      "compression_ratio": 1.367273,
+      "end": 416.94,
+      "no_speech_prob": 0.0,
+      "start": 414.94,
+      "text": "因为家庭当中有一个战友"
+    },
+    {
+      "avg_logprob": -0.092198,
+      "compression_ratio": 1.367273,
+      "end": 418.94,
+      "no_speech_prob": 0.0,
+      "start": 416.94,
+      "text": "是新中国联邦人"
+    },
+    {
+      "avg_logprob": -0.092198,
+      "compression_ratio": 1.367273,
+      "end": 420.94,
+      "no_speech_prob": 0.0,
+      "start": 418.94,
+      "text": "是暴调革命的战友"
+    },
+    {
+      "avg_logprob": -0.092198,
+      "compression_ratio": 1.367273,
+      "end": 422.94,
+      "no_speech_prob": 0.0,
+      "start": 420.94,
+      "text": "他们一家都被保护"
+    },
+    {
+      "avg_logprob": -0.092198,
+      "compression_ratio": 1.367273,
+      "end": 424.94,
+      "no_speech_prob": 0.0,
+      "start": 422.94,
+      "text": "然后受到了庇佑"
+    },
+    {
+      "avg_logprob": -0.092198,
+      "compression_ratio": 1.367273,
+      "end": 426.94,
+      "no_speech_prob": 0.0,
+      "start": 424.94,
+      "text": "然后在病毒的时候"
+    },
+    {
+      "avg_logprob": -0.105035,
+      "compression_ratio": 1.415966,
+      "end": 428.94,
+      "no_speech_prob": 0.0,
+      "start": 426.94,
+      "text": "在疫苗灾难的时候有药"
+    },
+    {
+      "avg_logprob": -0.105035,
+      "compression_ratio": 1.415966,
+      "end": 430.94,
+      "no_speech_prob": 0.0,
+      "start": 428.94,
+      "text": "然后很多的战友的家人"
+    },
+    {
+      "avg_logprob": -0.105035,
+      "compression_ratio": 1.415966,
+      "end": 432.94,
+      "no_speech_prob": 0.0,
+      "start": 430.94,
+      "text": "因为自己的家人是战友"
+    },
+    {
+      "avg_logprob": -0.105035,
+      "compression_ratio": 1.415966,
+      "end": 434.94,
+      "no_speech_prob": 0.0,
+      "start": 432.94,
+      "text": "都把这个战友"
+    },
+    {
+      "avg_logprob": -0.105035,
+      "compression_ratio": 1.415966,
+      "end": 436.94,
+      "no_speech_prob": 0.0,
+      "start": 434.94,
+      "text": "当成家里当中的这个守护神"
+    },
+    {
+      "avg_logprob": -0.105035,
+      "compression_ratio": 1.415966,
+      "end": 438.94,
+      "no_speech_prob": 0.0,
+      "start": 436.94,
+      "text": "所以我觉得这个是和"
+    },
+    {
+      "avg_logprob": -0.105035,
+      "compression_ratio": 1.415966,
+      "end": 440.94,
+      "no_speech_prob": 0.0,
+      "start": 438.94,
+      "text": "2020年然后战友们"
+    },
+    {
+      "avg_logprob": -0.105035,
+      "compression_ratio": 1.415966,
+      "end": 442.94,
+      "no_speech_prob": 0.0,
+      "start": 440.94,
+      "text": "刚刚开始直播开始录的"
+    },
+    {
+      "avg_logprob": -0.105035,
+      "compression_ratio": 1.415966,
+      "end": 444.94,
+      "no_speech_prob": 0.0,
+      "start": 442.94,
+      "text": "那种孤独"
+    },
+    {
+      "avg_logprob": -0.105035,
+      "compression_ratio": 1.415966,
+      "end": 446.94,
+      "no_speech_prob": 0.0,
+      "start": 444.94,
+      "text": "那种恐惧"
+    },
+    {
+      "avg_logprob": -0.105035,
+      "compression_ratio": 1.415966,
+      "end": 448.94,
+      "no_speech_prob": 0.0,
+      "start": 446.94,
+      "text": "然后那种无助的感觉是截然不同的"
+    },
+    {
+      "avg_logprob": -0.105035,
+      "compression_ratio": 1.415966,
+      "end": 450.94,
+      "no_speech_prob": 0.0,
+      "start": 448.94,
+      "text": "好的"
+    },
+    {
+      "avg_logprob": -0.105035,
+      "compression_ratio": 1.415966,
+      "end": 452.94,
+      "no_speech_prob": 0.0,
+      "start": 450.94,
+      "text": "那个我看那个"
+    },
+    {
+      "avg_logprob": -0.105035,
+      "compression_ratio": 1.415966,
+      "end": 454.94,
+      "no_speech_prob": 0.0,
+      "start": 452.94,
+      "text": "我是英雄那时候"
+    },
+    {
+      "avg_logprob": -0.125156,
+      "compression_ratio": 1.334842,
+      "end": 456.94,
+      "no_speech_prob": 0.0,
+      "start": 454.94,
+      "text": "最激动的又跳又喊"
+    },
+    {
+      "avg_logprob": -0.125156,
+      "compression_ratio": 1.334842,
+      "end": 458.94,
+      "no_speech_prob": 0.0,
+      "start": 456.94,
+      "text": "你讲讲你在现场感受"
+    },
+    {
+      "avg_logprob": -0.125156,
+      "compression_ratio": 1.334842,
+      "end": 462.94,
+      "no_speech_prob": 0.0,
+      "start": 458.94,
+      "text": "我是第一次在现场看到"
+    },
+    {
+      "avg_logprob": -0.125156,
+      "compression_ratio": 1.334842,
+      "end": 464.94,
+      "no_speech_prob": 0.0,
+      "start": 462.94,
+      "text": "我是英雄"
+    },
+    {
+      "avg_logprob": -0.125156,
+      "compression_ratio": 1.334842,
+      "end": 466.94,
+      "no_speech_prob": 0.0,
+      "start": 464.94,
+      "text": "然后呢我有观察到"
+    },
+    {
+      "avg_logprob": -0.125156,
+      "compression_ratio": 1.334842,
+      "end": 468.94,
+      "no_speech_prob": 0.0,
+      "start": 466.94,
+      "text": "就是说我们这次有美国的"
+    },
+    {
+      "avg_logprob": -0.125156,
+      "compression_ratio": 1.334842,
+      "end": 470.94,
+      "no_speech_prob": 0.0,
+      "start": 468.94,
+      "text": "有几个音乐的达人"
+    },
+    {
+      "avg_logprob": -0.125156,
+      "compression_ratio": 1.334842,
+      "end": 472.94,
+      "no_speech_prob": 0.0,
+      "start": 470.94,
+      "text": "他们来到现场的那种感受"
+    },
+    {
+      "avg_logprob": -0.125156,
+      "compression_ratio": 1.334842,
+      "end": 474.94,
+      "no_speech_prob": 0.0,
+      "start": 472.94,
+      "text": "因为我一直跟他们站在一起"
+    },
+    {
+      "avg_logprob": -0.125156,
+      "compression_ratio": 1.334842,
+      "end": 476.94,
+      "no_speech_prob": 0.0,
+      "start": 474.94,
+      "text": "他们就是说"
+    },
+    {
+      "avg_logprob": -0.125156,
+      "compression_ratio": 1.334842,
+      "end": 478.94,
+      "no_speech_prob": 0.0,
+      "start": 476.94,
+      "text": "2023是一个新中国联邦的一个"
+    },
+    {
+      "avg_logprob": -0.146346,
+      "compression_ratio": 1.061538,
+      "end": 480.94,
+      "no_speech_prob": 0.0,
+      "start": 478.94,
+      "text": "为人类开创"
+    },
+    {
+      "avg_logprob": -0.146346,
+      "compression_ratio": 1.061538,
+      "end": 482.94,
+      "no_speech_prob": 0.0,
+      "start": 480.94,
+      "text": "崭新的希望的这一年"
+    },
+    {
+      "avg_logprob": -0.146346,
+      "compression_ratio": 1.061538,
+      "end": 484.94,
+      "no_speech_prob": 0.0,
+      "start": 482.94,
+      "text": "我听到这个话"
+    },
+    {
+      "avg_logprob": -0.146346,
+      "compression_ratio": 1.061538,
+      "end": 486.94,
+      "no_speech_prob": 0.0,
+      "start": 484.94,
+      "text": "从一个西方人的嘴里说出来"
+    },
+    {
+      "avg_logprob": -0.146346,
+      "compression_ratio": 1.061538,
+      "end": 488.94,
+      "no_speech_prob": 0.0,
+      "start": 486.94,
+      "text": "我是很震撼的"
+    },
+    {
+      "avg_logprob": -0.146346,
+      "compression_ratio": 1.061538,
+      "end": 490.94,
+      "no_speech_prob": 0.0,
+      "start": 488.94,
+      "text": "大家知道就是那个"
+    },
+    {
+      "avg_logprob": -0.123471,
+      "compression_ratio": 1.331858,
+      "end": 492.94,
+      "no_speech_prob": 0.0,
+      "start": 490.94,
+      "text": "他唱的那首"
+    },
+    {
+      "avg_logprob": -0.123471,
+      "compression_ratio": 1.331858,
+      "end": 494.94,
+      "no_speech_prob": 0.0,
+      "start": 492.94,
+      "text": "This is a war"
+    },
+    {
+      "avg_logprob": -0.123471,
+      "compression_ratio": 1.331858,
+      "end": 496.94,
+      "no_speech_prob": 0.0,
+      "start": 494.94,
+      "text": "这场战争"
+    },
+    {
+      "avg_logprob": -0.123471,
+      "compression_ratio": 1.331858,
+      "end": 498.94,
+      "no_speech_prob": 0.0,
+      "start": 496.94,
+      "text": "他就说"
+    },
+    {
+      "avg_logprob": -0.123471,
+      "compression_ratio": 1.331858,
+      "end": 500.94,
+      "no_speech_prob": 0.0,
+      "start": 498.94,
+      "text": "发动了一场战争"
+    },
+    {
+      "avg_logprob": -0.123471,
+      "compression_ratio": 1.331858,
+      "end": 502.94,
+      "no_speech_prob": 0.0,
+      "start": 500.94,
+      "text": "针对我们的家庭"
+    },
+    {
+      "avg_logprob": -0.123471,
+      "compression_ratio": 1.331858,
+      "end": 503.94,
+      "no_speech_prob": 0.0,
+      "start": 502.94,
+      "text": "针对我们的孩子"
+    },
+    {
+      "avg_logprob": -0.123471,
+      "compression_ratio": 1.331858,
+      "end": 504.94,
+      "no_speech_prob": 0.0,
+      "start": 503.94,
+      "text": "针对我们的希望"
+    },
+    {
+      "avg_logprob": -0.123471,
+      "compression_ratio": 1.331858,
+      "end": 506.94,
+      "no_speech_prob": 0.0,
+      "start": 504.94,
+      "text": "他有讲到就是说"
+    },
+    {
+      "avg_logprob": -0.123471,
+      "compression_ratio": 1.331858,
+      "end": 508.94,
+      "no_speech_prob": 0.0,
+      "start": 506.94,
+      "text": "中共夺去了你的父亲"
+    },
+    {
+      "avg_logprob": -0.123471,
+      "compression_ratio": 1.331858,
+      "end": 510.94,
+      "no_speech_prob": 0.0,
+      "start": 508.94,
+      "text": "正在洗脑你的儿子和女儿"
+    },
+    {
+      "avg_logprob": -0.123471,
+      "compression_ratio": 1.331858,
+      "end": 512.94,
+      "no_speech_prob": 0.0,
+      "start": 510.94,
+      "text": "然后用毒的药和疫苗"
+    },
+    {
+      "avg_logprob": -0.062353,
+      "compression_ratio": 1.402062,
+      "end": 514.94,
+      "no_speech_prob": 0.0,
+      "start": 512.94,
+      "text": "来强害所有的人类"
+    },
+    {
+      "avg_logprob": -0.062353,
+      "compression_ratio": 1.402062,
+      "end": 516.94,
+      "no_speech_prob": 0.0,
+      "start": 514.94,
+      "text": "所以当他们讲到"
+    },
+    {
+      "avg_logprob": -0.062353,
+      "compression_ratio": 1.402062,
+      "end": 518.94,
+      "no_speech_prob": 0.0,
+      "start": 516.94,
+      "text": "我是英雄"
+    },
+    {
+      "avg_logprob": -0.062353,
+      "compression_ratio": 1.402062,
+      "end": 520.94,
+      "no_speech_prob": 0.0,
+      "start": 518.94,
+      "text": "站在这里的每一个参与"
+    },
+    {
+      "avg_logprob": -0.062353,
+      "compression_ratio": 1.402062,
+      "end": 522.94,
+      "no_speech_prob": 0.0,
+      "start": 520.94,
+      "text": "这个我是英雄的战友"
+    },
+    {
+      "avg_logprob": -0.062353,
+      "compression_ratio": 1.402062,
+      "end": 524.94,
+      "no_speech_prob": 0.0,
+      "start": 522.94,
+      "text": "都是人间的天使的时候"
+    },
+    {
+      "avg_logprob": -0.062353,
+      "compression_ratio": 1.402062,
+      "end": 526.94,
+      "no_speech_prob": 0.0,
+      "start": 524.94,
+      "text": "我当时是非常震撼的"
+    },
+    {
+      "avg_logprob": -0.062353,
+      "compression_ratio": 1.402062,
+      "end": 528.94,
+      "no_speech_prob": 0.0,
+      "start": 526.94,
+      "text": "因为其实我"
+    },
+    {
+      "avg_logprob": -0.062353,
+      "compression_ratio": 1.402062,
+      "end": 530.94,
+      "no_speech_prob": 0.0,
+      "start": 528.94,
+      "text": "虽然是加入爆料革命好几年"
+    },
+    {
+      "avg_logprob": -0.062353,
+      "compression_ratio": 1.402062,
+      "end": 531.94,
+      "no_speech_prob": 0.0,
+      "start": 530.94,
+      "text": "但是我并不知道"
+    },
+    {
+      "avg_logprob": -0.062353,
+      "compression_ratio": 1.402062,
+      "end": 533.94,
+      "no_speech_prob": 0.0,
+      "start": 531.94,
+      "text": "爆料革命真正的意义在哪里"
+    },
+    {
+      "avg_logprob": -0.062353,
+      "compression_ratio": 1.402062,
+      "end": 535.94,
+      "no_speech_prob": 0.0,
+      "start": 533.94,
+      "text": "我也不知道它的影响力有多么大"
+    },
+    {
+      "avg_logprob": -0.062353,
+      "compression_ratio": 1.402062,
+      "end": 538.94,
+      "no_speech_prob": 0.0,
+      "start": 535.94,
+      "text": "当我看到有更多更多的西方人"
+    },
+    {
+      "avg_logprob": -0.062353,
+      "compression_ratio": 1.402062,
+      "end": 541.94,
+      "no_speech_prob": 0.0,
+      "start": 538.94,
+      "text": "他能够把我们爆料革命和新中国联邦"
+    },
+    {
+      "avg_logprob": -0.089168,
+      "compression_ratio": 1.391304,
+      "end": 545.94,
+      "no_speech_prob": 0.0,
+      "start": 541.94,
+      "text": "当成这个世界这个未来的诺亚方舟的时候"
+    },
+    {
+      "avg_logprob": -0.089168,
+      "compression_ratio": 1.391304,
+      "end": 550.94,
+      "no_speech_prob": 0.0,
+      "start": 545.94,
+      "text": "我心里我只有对就是为我自己是个中国人而感到非常的骄傲"
+    },
+    {
+      "avg_logprob": -0.089168,
+      "compression_ratio": 1.391304,
+      "end": 555.94,
+      "no_speech_prob": 0.0,
+      "start": 550.94,
+      "text": "我们这个中国的这个民族走过了这么多深重的灾难和痛苦"
+    },
+    {
+      "avg_logprob": -0.089168,
+      "compression_ratio": 1.391304,
+      "end": 559.94,
+      "no_speech_prob": 0.0,
+      "start": 555.94,
+      "text": "我们这个民族终于出了一个像郭先生这样的人"
+    },
+    {
+      "avg_logprob": -0.089168,
+      "compression_ratio": 1.391304,
+      "end": 562.94,
+      "no_speech_prob": 0.0,
+      "start": 559.94,
+      "text": "不但是带领中国人走向自由"
+    },
+    {
+      "avg_logprob": -0.089168,
+      "compression_ratio": 1.391304,
+      "end": 565.94,
+      "no_speech_prob": 0.0,
+      "start": 562.94,
+      "text": "他还在帮助全世界人摆脱黑暗"
+    },
+    {
+      "avg_logprob": -0.089168,
+      "compression_ratio": 1.391304,
+      "end": 568.94,
+      "no_speech_prob": 0.0,
+      "start": 565.94,
+      "text": "所以这是我最大的一个感受"
+    },
+    {
+      "avg_logprob": -0.089168,
+      "compression_ratio": 1.391304,
+      "end": 569.94,
+      "no_speech_prob": 0.0,
+      "start": 568.94,
+      "text": "好的"
+    },
+    {
+      "avg_logprob": -0.175376,
+      "compression_ratio": 1.302857,
+      "end": 575.94,
+      "no_speech_prob": 0.0,
+      "start": 569.94,
+      "text": "好的"
+    },
+    {
+      "avg_logprob": -0.175376,
+      "compression_ratio": 1.302857,
+      "end": 578.94,
+      "no_speech_prob": 0.0,
+      "start": 575.94,
+      "text": "我我我我这个唱了一句"
+    },
+    {
+      "avg_logprob": -0.175376,
+      "compression_ratio": 1.302857,
+      "end": 580.94,
+      "no_speech_prob": 0.0,
+      "start": 578.94,
+      "text": "但是感受完全不一样"
+    },
+    {
+      "avg_logprob": -0.175376,
+      "compression_ratio": 1.302857,
+      "end": 582.94,
+      "no_speech_prob": 0.0,
+      "start": 580.94,
+      "text": "就过去在下面怎么也找不到调"
+    },
+    {
+      "avg_logprob": -0.175376,
+      "compression_ratio": 1.302857,
+      "end": 584.94,
+      "no_speech_prob": 0.0,
+      "start": 582.94,
+      "text": "然后唱不出那种气势"
+    },
+    {
+      "avg_logprob": -0.175376,
+      "compression_ratio": 1.302857,
+      "end": 586.94,
+      "no_speech_prob": 0.0,
+      "start": 584.94,
+      "text": "但在现场完全因为在前面"
+    },
+    {
+      "avg_logprob": -0.175376,
+      "compression_ratio": 1.302857,
+      "end": 589.94,
+      "no_speech_prob": 0.0,
+      "start": 586.94,
+      "text": "所有的参与的这些战友那种激情那种勇气"
+    },
+    {
+      "avg_logprob": -0.129776,
+      "compression_ratio": 0.920455,
+      "end": 590.94,
+      "no_speech_prob": 0.0,
+      "start": 589.94,
+      "text": "一下子整个就感染了"
+    },
+    {
+      "avg_logprob": -0.129776,
+      "compression_ratio": 0.920455,
+      "end": 594.94,
+      "no_speech_prob": 0.0,
+      "start": 590.94,
+      "text": "所以当天呢我自己感受非常深"
+    },
+    {
+      "avg_logprob": -0.129776,
+      "compression_ratio": 0.920455,
+      "end": 595.94,
+      "no_speech_prob": 0.0,
+      "start": 594.94,
+      "text": "回去了以后"
+    },
+    {
+      "avg_logprob": -0.240859,
+      "compression_ratio": 1.173077,
+      "end": 600.94,
+      "no_speech_prob": 0.0,
+      "start": 595.94,
+      "text": "我久久不能睡睡着就是在想的就咱们这一方啊"
+    },
+    {
+      "avg_logprob": -0.240859,
+      "compression_ratio": 1.173077,
+      "end": 603.94,
+      "no_speech_prob": 0.0,
+      "start": 600.94,
+      "text": "你说过去很多的在我们这次是第一次见面"
+    },
+    {
+      "avg_logprob": -0.240859,
+      "compression_ratio": 1.173077,
+      "end": 604.94,
+      "no_speech_prob": 0.0,
+      "start": 603.94,
+      "text": "第一次相识"
+    },
+    {
+      "avg_logprob": -0.240859,
+      "compression_ratio": 1.173077,
+      "end": 605.94,
+      "no_speech_prob": 0.0,
+      "start": 604.94,
+      "text": "但是一点没有陌生感"
+    },
+    {
+      "avg_logprob": -0.240859,
+      "compression_ratio": 1.173077,
+      "end": 607.94,
+      "no_speech_prob": 0.0,
+      "start": 605.94,
+      "text": "这我想都能感受得到"
+    },
+    {
+      "avg_logprob": -0.126709,
+      "compression_ratio": 0.94898,
+      "end": 611.94,
+      "no_speech_prob": 0.0,
+      "start": 607.94,
+      "text": "然后我们也有同样的信仰在现场我们一起来感受"
+    },
+    {
+      "avg_logprob": -0.126709,
+      "compression_ratio": 0.94898,
+      "end": 613.94,
+      "no_speech_prob": 0.0,
+      "start": 611.94,
+      "text": "大家也了解了更多总部"
+    },
+    {
+      "avg_logprob": -0.206668,
+      "compression_ratio": 1.133333,
+      "end": 616.94,
+      "no_speech_prob": 0.0,
+      "start": 613.94,
+      "text": "我3C这边我们所有的战友是怎么工作的"
+    },
+    {
+      "avg_logprob": -0.206668,
+      "compression_ratio": 1.133333,
+      "end": 617.94,
+      "no_speech_prob": 0.0,
+      "start": 616.94,
+      "text": "然后怎么去组织节目的"
+    },
+    {
+      "avg_logprob": -0.206668,
+      "compression_ratio": 1.133333,
+      "end": 622.94,
+      "no_speech_prob": 0.0,
+      "start": 617.94,
+      "text": "昨天晚上在带在猫本他们一起参观我们的这个直播的这个设备和环节"
+    },
+    {
+      "avg_logprob": -0.099184,
+      "compression_ratio": 1.490683,
+      "end": 627.94,
+      "no_speech_prob": 0.0,
+      "start": 622.94,
+      "text": "就我们跟两年前比我们自己都感受到已经完全不一样"
+    },
+    {
+      "avg_logprob": -0.099184,
+      "compression_ratio": 1.490683,
+      "end": 631.94,
+      "no_speech_prob": 0.0,
+      "start": 627.94,
+      "text": "那咱们战友过来以后也能感受一下我们心中的联邦的进步"
+    },
+    {
+      "avg_logprob": -0.099184,
+      "compression_ratio": 1.490683,
+      "end": 632.94,
+      "no_speech_prob": 0.0,
+      "start": 631.94,
+      "text": "这几年的进步是多的"
+    },
+    {
+      "avg_logprob": -0.099184,
+      "compression_ratio": 1.490683,
+      "end": 635.94,
+      "no_speech_prob": 0.0,
+      "start": 632.94,
+      "text": "两年前我们拿着手机在街上在家里"
+    },
+    {
+      "avg_logprob": -0.099184,
+      "compression_ratio": 1.490683,
+      "end": 639.94,
+      "no_speech_prob": 0.0,
+      "start": 635.94,
+      "text": "现在我们这整套的设备很多人都不知道这是什么都不了解"
+    },
+    {
+      "avg_logprob": -0.099184,
+      "compression_ratio": 1.490683,
+      "end": 645.94,
+      "no_speech_prob": 0.0,
+      "start": 639.94,
+      "text": "甚至我说我们很多的我们最近接触的一些专业电视台的这些主持人过来都很震惊"
+    },
+    {
+      "avg_logprob": -0.099184,
+      "compression_ratio": 1.490683,
+      "end": 649.94,
+      "no_speech_prob": 0.0,
+      "start": 645.94,
+      "text": "就我们居然有这么专业的人和这种专业的设备"
+    },
+    {
+      "avg_logprob": -0.099184,
+      "compression_ratio": 1.490683,
+      "end": 651.94,
+      "no_speech_prob": 0.0,
+      "start": 649.94,
+      "text": "那从这边就看出来"
+    },
+    {
+      "avg_logprob": -0.107385,
+      "compression_ratio": 1.510903,
+      "end": 656.94,
+      "no_speech_prob": 0.0,
+      "start": 651.94,
+      "text": "第二个我想跟大家分享的就是昨天我有信跟我过去20年的这个朋友"
+    },
+    {
+      "avg_logprob": -0.107385,
+      "compression_ratio": 1.510903,
+      "end": 658.94,
+      "no_speech_prob": 0.0,
+      "start": 656.94,
+      "text": "几个家庭朋友一起聊天"
+    },
+    {
+      "avg_logprob": -0.107385,
+      "compression_ratio": 1.510903,
+      "end": 663.94,
+      "no_speech_prob": 0.0,
+      "start": 658.94,
+      "text": "我能感受得出来他们过去短短的半年的改变有多大"
+    },
+    {
+      "avg_logprob": -0.107385,
+      "compression_ratio": 1.510903,
+      "end": 666.94,
+      "no_speech_prob": 0.0,
+      "start": 663.94,
+      "text": "就是一个病毒跟疫苗让他们彻底改变了"
+    },
+    {
+      "avg_logprob": -0.107385,
+      "compression_ratio": 1.510903,
+      "end": 672.94,
+      "no_speech_prob": 0.0,
+      "start": 666.94,
+      "text": "然后当然国内的情况他们有很多也会经常回国去了解了在国内的变化"
+    },
+    {
+      "avg_logprob": -0.107385,
+      "compression_ratio": 1.510903,
+      "end": 675.94,
+      "no_speech_prob": 0.0,
+      "start": 672.94,
+      "text": "他们就感觉到因为他们两年前了解了爆料革命"
+    },
+    {
+      "avg_logprob": -0.107385,
+      "compression_ratio": 1.510903,
+      "end": 677.94,
+      "no_speech_prob": 0.0,
+      "start": 675.94,
+      "text": "我觉得还没那么坚定"
+    },
+    {
+      "avg_logprob": -0.107385,
+      "compression_ratio": 1.510903,
+      "end": 680.94,
+      "no_speech_prob": 0.0,
+      "start": 677.94,
+      "text": "现在他们感受到爆料革命过去两年过去五年给大家带来了"
+    },
+    {
+      "avg_logprob": -0.181637,
+      "compression_ratio": 1.269231,
+      "end": 682.94,
+      "no_speech_prob": 0.0,
+      "start": 680.94,
+      "text": "全部是真实的"
+    },
+    {
+      "avg_logprob": -0.181637,
+      "compression_ratio": 1.269231,
+      "end": 687.94,
+      "no_speech_prob": 0.0,
+      "start": 682.94,
+      "text": "他们现在看到国内的一切的这个深恨变野"
+    },
+    {
+      "avg_logprob": -0.181637,
+      "compression_ratio": 1.269231,
+      "end": 689.94,
+      "no_speech_prob": 0.0,
+      "start": 687.94,
+      "text": "这个病毒疫苗的灾难"
+    },
+    {
+      "avg_logprob": -0.181637,
+      "compression_ratio": 1.269231,
+      "end": 691.94,
+      "no_speech_prob": 0.0,
+      "start": 689.94,
+      "text": "还有共产党的美矿而下"
+    },
+    {
+      "avg_logprob": -0.181637,
+      "compression_ratio": 1.269231,
+      "end": 692.94,
+      "no_speech_prob": 0.0,
+      "start": 691.94,
+      "text": "然后经济灾难"
+    },
+    {
+      "avg_logprob": -0.181637,
+      "compression_ratio": 1.269231,
+      "end": 694.94,
+      "no_speech_prob": 0.0,
+      "start": 692.94,
+      "text": "然后他们很多有企业都是关停"
+    },
+    {
+      "avg_logprob": -0.181637,
+      "compression_ratio": 1.269231,
+      "end": 696.94,
+      "no_speech_prob": 0.0,
+      "start": 694.94,
+      "text": "功能全部是解散"
+    },
+    {
+      "avg_logprob": -0.181637,
+      "compression_ratio": 1.269231,
+      "end": 697.94,
+      "no_speech_prob": 0.0,
+      "start": 696.94,
+      "text": "他们现在才意识到"
+    },
+    {
+      "avg_logprob": -0.100903,
+      "compression_ratio": 1.143885,
+      "end": 701.94,
+      "no_speech_prob": 0.0,
+      "start": 697.94,
+      "text": "这爆料革命过去五年给大家带来的是什么"
+    },
+    {
+      "avg_logprob": -0.100903,
+      "compression_ratio": 1.143885,
+      "end": 703.94,
+      "no_speech_prob": 0.0,
+      "start": 701.94,
+      "text": "给全世界能带来的是什么"
+    },
+    {
+      "avg_logprob": -0.100903,
+      "compression_ratio": 1.143885,
+      "end": 708.94,
+      "no_speech_prob": 0.0,
+      "start": 703.94,
+      "text": "当然我相信未来会有很多像他们这样的一些中国老百姓"
+    },
+    {
+      "avg_logprob": -0.192501,
+      "compression_ratio": 1.253731,
+      "end": 710.94,
+      "no_speech_prob": 0.0,
+      "start": 708.94,
+      "text": "会加入到我们新农党"
+    },
+    {
+      "avg_logprob": -0.192501,
+      "compression_ratio": 1.253731,
+      "end": 713.94,
+      "no_speech_prob": 0.0,
+      "start": 710.94,
+      "text": "因为只有新农党能给大家带来真实"
+    },
+    {
+      "avg_logprob": -0.192501,
+      "compression_ratio": 1.253731,
+      "end": 717.94,
+      "no_speech_prob": 0.0,
+      "start": 713.94,
+      "text": "能给大家提前来预估未来经济"
+    },
+    {
+      "avg_logprob": -0.192501,
+      "compression_ratio": 1.253731,
+      "end": 718.94,
+      "no_speech_prob": 0.0,
+      "start": 717.94,
+      "text": "共产党的走向"
+    },
+    {
+      "avg_logprob": -0.192501,
+      "compression_ratio": 1.253731,
+      "end": 722.94,
+      "no_speech_prob": 0.0,
+      "start": 718.94,
+      "text": "然后我们也会给大家带来财富"
+    },
+    {
+      "avg_logprob": -0.155768,
+      "compression_ratio": 1.424658,
+      "end": 725.94,
+      "no_speech_prob": 0.0,
+      "start": 722.94,
+      "text": "只要你坚信只要你坚定"
+    },
+    {
+      "avg_logprob": -0.155768,
+      "compression_ratio": 1.424658,
+      "end": 730.94,
+      "no_speech_prob": 0.0,
+      "start": 725.94,
+      "text": "所以特别在这个地方也特别感谢所有的战友"
+    },
+    {
+      "avg_logprob": -0.155768,
+      "compression_ratio": 1.424658,
+      "end": 731.94,
+      "no_speech_prob": 0.0,
+      "start": 730.94,
+      "text": "来到现场的战友"
+    },
+    {
+      "avg_logprob": -0.155768,
+      "compression_ratio": 1.424658,
+      "end": 732.94,
+      "no_speech_prob": 0.0,
+      "start": 731.94,
+      "text": "还有我们线下的战友"
+    },
+    {
+      "avg_logprob": -0.155768,
+      "compression_ratio": 1.424658,
+      "end": 735.94,
+      "no_speech_prob": 0.0,
+      "start": 732.94,
+      "text": "在过去的一年始终坚定不移的跟着"
+    },
+    {
+      "avg_logprob": -0.155768,
+      "compression_ratio": 1.424658,
+      "end": 736.94,
+      "no_speech_prob": 0.0,
+      "start": 735.94,
+      "text": "不知道可能跟着新农党能吗"
+    },
+    {
+      "avg_logprob": -0.155768,
+      "compression_ratio": 1.424658,
+      "end": 738.94,
+      "no_speech_prob": 0.0,
+      "start": 736.94,
+      "text": "跟着国县一直在灭空"
+    },
+    {
+      "avg_logprob": -0.155768,
+      "compression_ratio": 1.424658,
+      "end": 741.94,
+      "no_speech_prob": 0.0,
+      "start": 738.94,
+      "text": "而且我们现在是越来越坚定"
+    },
+    {
+      "avg_logprob": -0.155768,
+      "compression_ratio": 1.424658,
+      "end": 742.94,
+      "no_speech_prob": 0.0,
+      "start": 741.94,
+      "text": "信心越来越大"
+    },
+    {
+      "avg_logprob": -0.155768,
+      "compression_ratio": 1.424658,
+      "end": 744.94,
+      "no_speech_prob": 0.0,
+      "start": 742.94,
+      "text": "越来越勇敢"
+    },
+    {
+      "avg_logprob": -0.081058,
+      "compression_ratio": 1.401434,
+      "end": 749.94,
+      "no_speech_prob": 0.0,
+      "start": 744.94,
+      "text": "导哥我还想起就是昨天在这个我是英雄这个打直播"
+    },
+    {
+      "avg_logprob": -0.081058,
+      "compression_ratio": 1.401434,
+      "end": 751.94,
+      "no_speech_prob": 0.0,
+      "start": 749.94,
+      "text": "最让我感动的就是说"
+    },
+    {
+      "avg_logprob": -0.081058,
+      "compression_ratio": 1.401434,
+      "end": 757.94,
+      "no_speech_prob": 0.0,
+      "start": 751.94,
+      "text": "当我看到我们有18岁的14岁的年轻的中国人"
+    },
+    {
+      "avg_logprob": -0.081058,
+      "compression_ratio": 1.401434,
+      "end": 761.94,
+      "no_speech_prob": 0.0,
+      "start": 757.94,
+      "text": "都勇敢的露脸走出来参与这个我是英雄的节目"
+    },
+    {
+      "avg_logprob": -0.081058,
+      "compression_ratio": 1.401434,
+      "end": 763.94,
+      "no_speech_prob": 0.0,
+      "start": 761.94,
+      "text": "还有很多的战友"
+    },
+    {
+      "avg_logprob": -0.081058,
+      "compression_ratio": 1.401434,
+      "end": 765.94,
+      "no_speech_prob": 0.0,
+      "start": 763.94,
+      "text": "爆出了自己的真实的信名"
+    },
+    {
+      "avg_logprob": -0.081058,
+      "compression_ratio": 1.401434,
+      "end": 769.94,
+      "no_speech_prob": 0.0,
+      "start": 765.94,
+      "text": "所以那一刻我就真的感到中国共产党这是他最害怕的"
+    },
+    {
+      "avg_logprob": -0.081058,
+      "compression_ratio": 1.401434,
+      "end": 772.94,
+      "no_speech_prob": 0.0,
+      "start": 769.94,
+      "text": "他最害怕我们每一个中国人堂堂正正的站出来"
+    },
+    {
+      "avg_logprob": -0.069107,
+      "compression_ratio": 1.535714,
+      "end": 776.94,
+      "no_speech_prob": 0.0,
+      "start": 772.94,
+      "text": "说你完了用我们自己最真实的姓名"
+    },
+    {
+      "avg_logprob": -0.069107,
+      "compression_ratio": 1.535714,
+      "end": 779.94,
+      "no_speech_prob": 0.0,
+      "start": 776.94,
+      "text": "用我们最真实的声音来宣布他的死亡"
+    },
+    {
+      "avg_logprob": -0.069107,
+      "compression_ratio": 1.535714,
+      "end": 783.94,
+      "no_speech_prob": 0.0,
+      "start": 779.94,
+      "text": "所以这也是为什么2023是一个充满希望的一年"
+    },
+    {
+      "avg_logprob": -0.069107,
+      "compression_ratio": 1.535714,
+      "end": 786.94,
+      "no_speech_prob": 0.0,
+      "start": 783.94,
+      "text": "因为中国共产党他正在我们的歌声中"
+    },
+    {
+      "avg_logprob": -0.069107,
+      "compression_ratio": 1.535714,
+      "end": 787.94,
+      "no_speech_prob": 0.0,
+      "start": 786.94,
+      "text": "正在我们的直播中"
+    },
+    {
+      "avg_logprob": -0.069107,
+      "compression_ratio": 1.535714,
+      "end": 789.94,
+      "no_speech_prob": 0.0,
+      "start": 787.94,
+      "text": "他正在走向死亡"
+    },
+    {
+      "avg_logprob": -0.069107,
+      "compression_ratio": 1.535714,
+      "end": 793.94,
+      "no_speech_prob": 0.0,
+      "start": 789.94,
+      "text": "我觉得就是最有意思的一点"
+    },
+    {
+      "avg_logprob": -0.069107,
+      "compression_ratio": 1.535714,
+      "end": 796.94,
+      "no_speech_prob": 0.0,
+      "start": 793.94,
+      "text": "就是当大家看着屏幕上每一个人的这个脸庞"
+    },
+    {
+      "avg_logprob": -0.069107,
+      "compression_ratio": 1.535714,
+      "end": 799.94,
+      "no_speech_prob": 0.0,
+      "start": 796.94,
+      "text": "每一个人都有不同的灭共的原因"
+    },
+    {
+      "avg_logprob": -0.069107,
+      "compression_ratio": 1.535714,
+      "end": 800.94,
+      "no_speech_prob": 0.0,
+      "start": 799.94,
+      "text": "然后都有不同的成长"
+    },
+    {
+      "avg_logprob": -0.069107,
+      "compression_ratio": 1.535714,
+      "end": 801.94,
+      "no_speech_prob": 0.0,
+      "start": 800.94,
+      "text": "然后有不同的经历"
+    },
+    {
+      "avg_logprob": -0.089977,
+      "compression_ratio": 1.41,
+      "end": 805.94,
+      "no_speech_prob": 0.0,
+      "start": 801.94,
+      "text": "有不同的在报道革命当中各种各样的选择"
+    },
+    {
+      "avg_logprob": -0.089977,
+      "compression_ratio": 1.41,
+      "end": 807.94,
+      "no_speech_prob": 0.0,
+      "start": 805.94,
+      "text": "但是大家最后都汇集到一起"
+    },
+    {
+      "avg_logprob": -0.089977,
+      "compression_ratio": 1.41,
+      "end": 810.94,
+      "no_speech_prob": 0.0,
+      "start": 807.94,
+      "text": "然后每一个人生活当中的这种不易"
+    },
+    {
+      "avg_logprob": -0.089977,
+      "compression_ratio": 1.41,
+      "end": 812.94,
+      "no_speech_prob": 0.0,
+      "start": 810.94,
+      "text": "然后但是在这一刻就是所有的人"
+    },
+    {
+      "avg_logprob": -0.089977,
+      "compression_ratio": 1.41,
+      "end": 815.94,
+      "no_speech_prob": 0.0,
+      "start": 812.94,
+      "text": "都是把自己生活当中的这个小我去放下"
+    },
+    {
+      "avg_logprob": -0.089977,
+      "compression_ratio": 1.41,
+      "end": 816.94,
+      "no_speech_prob": 0.0,
+      "start": 815.94,
+      "text": "然后站在这里"
+    },
+    {
+      "avg_logprob": -0.089977,
+      "compression_ratio": 1.41,
+      "end": 819.94,
+      "no_speech_prob": 0.0,
+      "start": 816.94,
+      "text": "然后去成就一个真正的一个"
+    },
+    {
+      "avg_logprob": -0.123787,
+      "compression_ratio": 1.292818,
+      "end": 823.94,
+      "no_speech_prob": 0.0,
+      "start": 819.94,
+      "text": "暴露革命的这样的一个成功的一个延续"
+    },
+    {
+      "avg_logprob": -0.123787,
+      "compression_ratio": 1.292818,
+      "end": 828.94,
+      "no_speech_prob": 0.0,
+      "start": 823.94,
+      "text": "我觉得就是就是非常让人感到骄傲跟自豪的一个事情"
+    },
+    {
+      "avg_logprob": -0.123787,
+      "compression_ratio": 1.292818,
+      "end": 831.94,
+      "no_speech_prob": 0.0,
+      "start": 828.94,
+      "text": "然后我知道在现场还有我们至少在这个现场"
+    },
+    {
+      "avg_logprob": -0.123787,
+      "compression_ratio": 1.292818,
+      "end": 834.94,
+      "no_speech_prob": 0.0,
+      "start": 831.94,
+      "text": "我知道是有非常多的法治基金的大额捐款者"
+    },
+    {
+      "avg_logprob": -0.14374,
+      "compression_ratio": 1.363636,
+      "end": 840.94,
+      "no_speech_prob": 0.0,
+      "start": 834.94,
+      "text": "然后也有一些就是孩子他们的爸爸妈妈现在还是在共产党的迫害当中"
+    },
+    {
+      "avg_logprob": -0.14374,
+      "compression_ratio": 1.363636,
+      "end": 844.94,
+      "no_speech_prob": 0.0,
+      "start": 840.94,
+      "text": "但这些孩子他现在也是站在这样的一个现场"
+    },
+    {
+      "avg_logprob": -0.14374,
+      "compression_ratio": 1.363636,
+      "end": 851.94,
+      "no_speech_prob": 0.0,
+      "start": 844.94,
+      "text": "然后包括我觉得那一天我是英雄上还有一个我觉得是也是很有就是意义的一件事情"
+    },
+    {
+      "avg_logprob": -0.21875,
+      "compression_ratio": 1.439394,
+      "end": 854.94,
+      "no_speech_prob": 0.0,
+      "start": 851.94,
+      "text": "就是说青藤发了一个自己的这个新歌"
+    },
+    {
+      "avg_logprob": -0.21875,
+      "compression_ratio": 1.439394,
+      "end": 858.94,
+      "no_speech_prob": 0.0,
+      "start": 854.94,
+      "text": "我就忘了说然后我知道当天这个歌还上了这个QQ音乐"
+    },
+    {
+      "avg_logprob": -0.21875,
+      "compression_ratio": 1.439394,
+      "end": 860.94,
+      "no_speech_prob": 0.0,
+      "start": 858.94,
+      "text": "然后后来"
+    },
+    {
+      "avg_logprob": -0.21875,
+      "compression_ratio": 1.439394,
+      "end": 861.94,
+      "no_speech_prob": 0.0,
+      "start": 860.94,
+      "text": "后来就"
+    },
+    {
+      "avg_logprob": -0.21875,
+      "compression_ratio": 1.439394,
+      "end": 868.94,
+      "no_speech_prob": 0.0,
+      "start": 861.94,
+      "text": "我觉得这是一个很好的一个信号"
+    },
+    {
+      "avg_logprob": -0.21875,
+      "compression_ratio": 1.439394,
+      "end": 871.94,
+      "no_speech_prob": 0.0,
+      "start": 868.94,
+      "text": "因为就是对我们看来可能非常简单的事情"
+    },
+    {
+      "avg_logprob": -0.21875,
+      "compression_ratio": 1.439394,
+      "end": 874.94,
+      "no_speech_prob": 0.0,
+      "start": 871.94,
+      "text": "其实背后可能是有无数的战友"
+    },
+    {
+      "avg_logprob": -0.21875,
+      "compression_ratio": 1.439394,
+      "end": 877.94,
+      "no_speech_prob": 0.0,
+      "start": 874.94,
+      "text": "他们在冒着他们的这个生命危险"
+    },
+    {
+      "avg_logprob": -0.21875,
+      "compression_ratio": 1.439394,
+      "end": 878.94,
+      "no_speech_prob": 0.0,
+      "start": 877.94,
+      "text": "然后在帮助我们"
+    },
+    {
+      "avg_logprob": -0.21875,
+      "compression_ratio": 1.439394,
+      "end": 880.94,
+      "no_speech_prob": 0.0,
+      "start": 878.94,
+      "text": "然后包括当天的直播是非常非常好"
+    },
+    {
+      "avg_logprob": -0.32832,
+      "compression_ratio": 2.260465,
+      "end": 886.94,
+      "no_speech_prob": 0.0,
+      "start": 880.94,
+      "text": "然后我相信整个该特团队他们那一天也是承受了巨大的这种被黑客"
+    },
+    {
+      "avg_logprob": -0.32832,
+      "compression_ratio": 2.260465,
+      "end": 888.94,
+      "no_speech_prob": 0.0,
+      "start": 886.94,
+      "text": "然后各种各样的这种风险"
+    },
+    {
+      "avg_logprob": -0.32832,
+      "compression_ratio": 2.260465,
+      "end": 890.94,
+      "no_speech_prob": 0.0,
+      "start": 888.94,
+      "text": "然后包括还有一些故事是"
+    },
+    {
+      "avg_logprob": -0.32832,
+      "compression_ratio": 2.260465,
+      "end": 893.94,
+      "no_speech_prob": 0.0,
+      "start": 890.94,
+      "text": "看不少看不少在镜头上面说"
+    },
+    {
+      "avg_logprob": -0.32832,
+      "compression_ratio": 2.260465,
+      "end": 896.94,
+      "no_speech_prob": 0.0,
+      "start": 893.94,
+      "text": "然后我们为了要去保护有一些战友的墙"
+    },
+    {
+      "avg_logprob": -0.32832,
+      "compression_ratio": 2.260465,
+      "end": 898.94,
+      "no_speech_prob": 0.0,
+      "start": 896.94,
+      "text": "尤其是墙内战友的这些安全"
+    },
+    {
+      "avg_logprob": -0.32832,
+      "compression_ratio": 2.260465,
+      "end": 899.94,
+      "no_speech_prob": 0.0,
+      "start": 898.94,
+      "text": "我们"
+    },
+    {
+      "avg_logprob": -0.32832,
+      "compression_ratio": 2.260465,
+      "end": 900.94,
+      "no_speech_prob": 0.0,
+      "start": 899.94,
+      "text": "我们"
+    },
+    {
+      "avg_logprob": -0.32832,
+      "compression_ratio": 2.260465,
+      "end": 901.94,
+      "no_speech_prob": 0.0,
+      "start": 900.94,
+      "text": "我们"
+    },
+    {
+      "avg_logprob": -0.32832,
+      "compression_ratio": 2.260465,
+      "end": 902.94,
+      "no_speech_prob": 0.0,
+      "start": 901.94,
+      "text": "我们"
+    },
+    {
+      "avg_logprob": -0.32832,
+      "compression_ratio": 2.260465,
+      "end": 903.94,
+      "no_speech_prob": 0.0,
+      "start": 902.94,
+      "text": "我们"
+    },
+    {
+      "avg_logprob": -0.32832,
+      "compression_ratio": 2.260465,
+      "end": 904.94,
+      "no_speech_prob": 0.0,
+      "start": 903.94,
+      "text": "我们"
+    },
+    {
+      "avg_logprob": -0.32832,
+      "compression_ratio": 2.260465,
+      "end": 905.94,
+      "no_speech_prob": 0.0,
+      "start": 904.94,
+      "text": "我们"
+    },
+    {
+      "avg_logprob": -0.32832,
+      "compression_ratio": 2.260465,
+      "end": 906.94,
+      "no_speech_prob": 0.0,
+      "start": 905.94,
+      "text": "我们"
+    },
+    {
+      "avg_logprob": -0.32832,
+      "compression_ratio": 2.260465,
+      "end": 907.94,
+      "no_speech_prob": 0.0,
+      "start": 906.94,
+      "text": "我们"
+    },
+    {
+      "avg_logprob": -0.32832,
+      "compression_ratio": 2.260465,
+      "end": 908.94,
+      "no_speech_prob": 0.0,
+      "start": 907.94,
+      "text": "我们"
+    }
+  ],
+  "text": "请不吝点赞 订阅 转发 打赏支持明镜与点点栏目明镜与点点栏目明镜与点点栏目明镜与点点栏目明镜与点点栏目明镜与点点栏目明镜与点点栏目明镜与点点栏目明镜与点栏目明镜与点栏目明镜与点栏目明镜与点栏目明镜与点栏目明镜与点栏目明镜与点栏目明镜与点栏目明镜与点栏目明镜与点栏目明镜与点栏目明镜与点栏目明镜与点栏目明镜与点栏目明镜与点栏目我们有自己的诺亚方舟我们今年就会奔向一个崭新的主题希望2023希望2023希望2023希望2023希望2023希望2023希望2023希望2023希望2023希望2023希望2023希望2023希望2023除息快乐希望2023希望2023希望2023希望2023希望2023希望2023空 2023 쓰고2023希望2023希望2023希望2023希望2023希望2023妹妹希望2023弟弟希望2023希望2023好,那现在让我们非常隆重的邮请新中国联邦的创始人我们战友们最喜欢的郭文贵先生指引大家最棒的邮好郭先生还没过来那我们先简单说一下就是我们最近大家也看到了就是我是英雄的节目我不知道什么像参加了但是整体的感受是怎么样我觉得就是很棒从第一季的时候我记得那个时候还是GTV然后大家每一个人连线的时候磕磕绊绊的然后戴着耳机然后一直到现在我们已经可以办一个现场的然后有将近快就是五十号快一百来人的这样的一个现场线下的一个音乐的这样的一个活动我昨天还专门去看了CCP的那个冲碗然后他和朋友聊天然后朋友都跟我说今年很多地方台都拒绝转播CCP的冲碗我觉得这也是一个非常重要的一个信号然后当我们去对比冲碗的那一个图片和我们现场所有的人尤其是最后唱完喜马拉雅大家高喊take downCCP共产党你完了的时候那种气势和共产党下面那种就是假装的那种愉悦然后在就是郭先生说的诗香遍野的中国下还要去庆祝喜悦的时候我觉得这是一种天壤之别的对比我觉得另外一点的一个感受就是当大家都在喊说希望2023的时候很多战友的家人因为家庭当中有一个战友是新中国联邦人是暴调革命的战友他们一家都被保护然后受到了庇佑然后在病毒的时候在疫苗灾难的时候有药然后很多的战友的家人因为自己的家人是战友都把这个战友当成家里当中的这个守护神所以我觉得这个是和2020年然后战友们刚刚开始直播开始录的那种孤独那种恐惧然后那种无助的感觉是截然不同的好的那个我看那个我是英雄那时候最激动的又跳又喊你讲讲你在现场感受我是第一次在现场看到我是英雄然后呢我有观察到就是说我们这次有美国的有几个音乐的达人他们来到现场的那种感受因为我一直跟他们站在一起他们就是说2023是一个新中国联邦的一个为人类开创崭新的希望的这一年我听到这个话从一个西方人的嘴里说出来我是很震撼的大家知道就是那个他唱的那首This is a war这场战争他就说发动了一场战争针对我们的家庭针对我们的孩子针对我们的希望他有讲到就是说中共夺去了你的父亲正在洗脑你的儿子和女儿然后用毒的药和疫苗来强害所有的人类所以当他们讲到我是英雄站在这里的每一个参与这个我是英雄的战友都是人间的天使的时候我当时是非常震撼的因为其实我虽然是加入爆料革命好几年但是我并不知道爆料革命真正的意义在哪里我也不知道它的影响力有多么大当我看到有更多更多的西方人他能够把我们爆料革命和新中国联邦当成这个世界这个未来的诺亚方舟的时候我心里我只有对就是为我自己是个中国人而感到非常的骄傲我们这个中国的这个民族走过了这么多深重的灾难和痛苦我们这个民族终于出了一个像郭先生这样的人不但是带领中国人走向自由他还在帮助全世界人摆脱黑暗所以这是我最大的一个感受好的好的我我我我这个唱了一句但是感受完全不一样就过去在下面怎么也找不到调然后唱不出那种气势但在现场完全因为在前面所有的参与的这些战友那种激情那种勇气一下子整个就感染了所以当天呢我自己感受非常深回去了以后我久久不能睡睡着就是在想的就咱们这一方啊你说过去很多的在我们这次是第一次见面第一次相识但是一点没有陌生感这我想都能感受得到然后我们也有同样的信仰在现场我们一起来感受大家也了解了更多总部我3C这边我们所有的战友是怎么工作的然后怎么去组织节目的昨天晚上在带在猫本他们一起参观我们的这个直播的这个设备和环节就我们跟两年前比我们自己都感受到已经完全不一样那咱们战友过来以后也能感受一下我们心中的联邦的进步这几年的进步是多的两年前我们拿着手机在街上在家里现在我们这整套的设备很多人都不知道这是什么都不了解甚至我说我们很多的我们最近接触的一些专业电视台的这些主持人过来都很震惊就我们居然有这么专业的人和这种专业的设备那从这边就看出来第二个我想跟大家分享的就是昨天我有信跟我过去20年的这个朋友几个家庭朋友一起聊天我能感受得出来他们过去短短的半年的改变有多大就是一个病毒跟疫苗让他们彻底改变了然后当然国内的情况他们有很多也会经常回国去了解了在国内的变化他们就感觉到因为他们两年前了解了爆料革命我觉得还没那么坚定现在他们感受到爆料革命过去两年过去五年给大家带来了全部是真实的他们现在看到国内的一切的这个深恨变野这个病毒疫苗的灾难还有共产党的美矿而下然后经济灾难然后他们很多有企业都是关停功能全部是解散他们现在才意识到这爆料革命过去五年给大家带来的是什么给全世界能带来的是什么当然我相信未来会有很多像他们这样的一些中国老百姓会加入到我们新农党因为只有新农党能给大家带来真实能给大家提前来预估未来经济共产党的走向然后我们也会给大家带来财富只要你坚信只要你坚定所以特别在这个地方也特别感谢所有的战友来到现场的战友还有我们线下的战友在过去的一年始终坚定不移的跟着不知道可能跟着新农党能吗跟着国县一直在灭空而且我们现在是越来越坚定信心越来越大越来越勇敢导哥我还想起就是昨天在这个我是英雄这个打直播最让我感动的就是说当我看到我们有18岁的14岁的年轻的中国人都勇敢的露脸走出来参与这个我是英雄的节目还有很多的战友爆出了自己的真实的信名所以那一刻我就真的感到中国共产党这是他最害怕的他最害怕我们每一个中国人堂堂正正的站出来说你完了用我们自己最真实的姓名用我们最真实的声音来宣布他的死亡所以这也是为什么2023是一个充满希望的一年因为中国共产党他正在我们的歌声中正在我们的直播中他正在走向死亡我觉得就是最有意思的一点就是当大家看着屏幕上每一个人的这个脸庞每一个人都有不同的灭共的原因然后都有不同的成长然后有不同的经历有不同的在报道革命当中各种各样的选择但是大家最后都汇集到一起然后每一个人生活当中的这种不易然后但是在这一刻就是所有的人都是把自己生活当中的这个小我去放下然后站在这里然后去成就一个真正的一个暴露革命的这样的一个成功的一个延续我觉得就是就是非常让人感到骄傲跟自豪的一个事情然后我知道在现场还有我们至少在这个现场我知道是有非常多的法治基金的大额捐款者然后也有一些就是孩子他们的爸爸妈妈现在还是在共产党的迫害当中但这些孩子他现在也是站在这样的一个现场然后包括我觉得那一天我是英雄上还有一个我觉得是也是很有就是意义的一件事情就是说青藤发了一个自己的这个新歌我就忘了说然后我知道当天这个歌还上了这个QQ音乐然后后来后来就我觉得这是一个很好的一个信号因为就是对我们看来可能非常简单的事情其实背后可能是有无数的战友他们在冒着他们的这个生命危险然后在帮助我们然后包括当天的直播是非常非常好然后我相信整个该特团队他们那一天也是承受了巨大的这种被黑客然后各种各样的这种风险然后包括还有一些故事是看不少看不少在镜头上面说然后我们为了要去保护有一些战友的墙尤其是墙内战友的这些安全我们我们我们我们我们我们我们我们我们我们"
+}
