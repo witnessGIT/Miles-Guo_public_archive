@@ -1,0 +1,17 @@
+{
+  "task_id": "WI_LIVE_20230106_002_key_points_topics",
+  "agent_id": "codex-local-asr-agent50-20261028",
+  "completed_at": "2026-10-30T21:06:23.763605+00:00",
+  "result_commit": "83986b31f",
+  "outputs": [
+    "data/current/segment_key_points/machine_live_20230106_002.jsonl",
+    "data/current/segment_topics/machine_live_20230106_002.jsonl"
+  ],
+  "validation": "66/66 natural segments covered; 133 variable-count extractive key points and 90 controlled topic links; every evidence span exactly verified against the machine transcript; build_db OK; validate_db OK with expected playback warning; 148 tests passed",
+  "workflow_mode": "continuous-worker-v2",
+  "claim_protocol": "claim-protocol-v2",
+  "entry_mode": "work",
+  "continue_after_finish": true,
+  "finish_prerequisites_revalidated": true,
+  "notes": "Machine-generated from the completed machine transcript and natural segments; extractive wording preserves source claims without independent fact checking, human correction, or endorsement."
+}
