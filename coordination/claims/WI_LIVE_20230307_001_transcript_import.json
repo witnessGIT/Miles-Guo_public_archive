@@ -1,11 +1,9 @@
 {
   "task_id": "WI_LIVE_20230307_001_transcript_import",
-  "agent_id": "codex-local-asr-agent50-20261026",
-  "claimed_at": "2026-10-26T06:24:00Z",
-  "base_commit": "b8bb7d8e4b729092588b262c751e2bd22a90469f",
-  "status": "released",
-  "released_at": "2026-10-26T06:30:00Z",
-  "release_reason": "manual ASR evidence audit failed: zero-duration punctuation cue; deferred to corpus_tail",
+  "agent_id": "github-actions-cloud-asr-41002009136",
+  "claimed_at": "2026-10-30T04:19:54.820080+00:00",
+  "base_commit": "934f319c96b692c333dbaa625392fcfa458fdb1f",
+  "status": "in_progress",
   "workflow_mode": "continuous-worker-v2",
   "claim_protocol": "claim-protocol-v2",
   "entry_mode": "work",
@@ -16,12 +14,13 @@
   "kind": "live_work_item",
   "source_candidate_id": null,
   "review_generation": null,
+  "review_claim_timeout_hours": null,
   "review_state_before_claim": null,
   "candidate_review_contract": null,
   "depends_on_at_claim": [
     "WI_LIVE_20230307_001_metadata_fill"
   ],
   "scope": "Import source transcript or ASR text without overwriting original text.",
-  "reclaimed_expired_claim": false,
+  "reclaimed_expired_claim": true,
   "static_claim_lease_hours": 24
 }
