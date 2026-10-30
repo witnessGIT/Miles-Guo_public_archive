@@ -1,0 +1,2592 @@
+{
+  "chunk_audio_sha256": "13e8c1112be626c68596268926638dfabfa683763bd3e6775335c0ac7476d19c",
+  "chunk_index": 6,
+  "completed_at": "2026-10-30T07:58:45Z",
+  "language": "zh",
+  "live_id": "LIVE_20230301_001",
+  "media_committed_to_git": false,
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "offset_sec": 5400,
+  "paid_api_used": false,
+  "processing_location": "github-hosted-macos-arm64",
+  "schema_version": "cloud-asr-chunk-v1",
+  "segments": [
+    {
+      "avg_logprob": -0.564308,
+      "compression_ratio": 0.64,
+      "end": 5429.98,
+      "no_speech_prob": 0.0,
+      "start": 5400.0,
+      "text": "词曲 李宗盛"
+    },
+    {
+      "avg_logprob": -0.553529,
+      "compression_ratio": 0.939394,
+      "end": 5437.54,
+      "no_speech_prob": 0.0,
+      "start": 5429.98,
+      "text": "往事只能回味"
+    },
+    {
+      "avg_logprob": -0.553529,
+      "compression_ratio": 0.939394,
+      "end": 5444.62,
+      "no_speech_prob": 0.0,
+      "start": 5437.54,
+      "text": "暂时日欲待入门舞会"
+    },
+    {
+      "avg_logprob": -0.553529,
+      "compression_ratio": 0.939394,
+      "end": 5451.86,
+      "no_speech_prob": 0.0,
+      "start": 5444.62,
+      "text": "日月相伴谁能体会"
+    },
+    {
+      "avg_logprob": -0.553529,
+      "compression_ratio": 0.939394,
+      "end": 5458.9,
+      "no_speech_prob": 0.0,
+      "start": 5451.86,
+      "text": "词计更解无事人非"
+    },
+    {
+      "avg_logprob": -0.48948,
+      "compression_ratio": 0.870968,
+      "end": 5466.46,
+      "no_speech_prob": 0.0,
+      "start": 5458.9,
+      "text": "不知不觉天来心碎"
+    },
+    {
+      "avg_logprob": -0.48948,
+      "compression_ratio": 0.870968,
+      "end": 5473.46,
+      "no_speech_prob": 0.0,
+      "start": 5466.46,
+      "text": "诺人不知已故去还不回"
+    },
+    {
+      "avg_logprob": -0.8087,
+      "compression_ratio": 0.65625,
+      "end": 5481.02,
+      "no_speech_prob": 0.0,
+      "start": 5473.46,
+      "text": "词官人翻语相会"
+    },
+    {
+      "avg_logprob": -0.444352,
+      "compression_ratio": 0.578947,
+      "end": 5488.58,
+      "no_speech_prob": 0.0,
+      "start": 5481.02,
+      "text": "Zither Harp"
+    },
+    {
+      "avg_logprob": -0.481217,
+      "compression_ratio": 0.578947,
+      "end": 5496.14,
+      "no_speech_prob": 0.0,
+      "start": 5488.58,
+      "text": "Zither Harp"
+    },
+    {
+      "avg_logprob": -0.637149,
+      "compression_ratio": 1.2,
+      "end": 5503.7,
+      "no_speech_prob": 0.0,
+      "start": 5496.14,
+      "text": "Zither Harp"
+    },
+    {
+      "avg_logprob": -0.637149,
+      "compression_ratio": 1.2,
+      "end": 5505.7,
+      "no_speech_prob": 0.0,
+      "start": 5503.7,
+      "text": "Zither Harp"
+    },
+    {
+      "avg_logprob": -0.637149,
+      "compression_ratio": 1.2,
+      "end": 5507.78,
+      "no_speech_prob": 0.0,
+      "start": 5505.7,
+      "text": "Zither Harp"
+    },
+    {
+      "avg_logprob": -0.637149,
+      "compression_ratio": 1.2,
+      "end": 5515.7,
+      "no_speech_prob": 0.0,
+      "start": 5507.78,
+      "text": "时光已是永不回"
+    },
+    {
+      "avg_logprob": -0.226557,
+      "compression_ratio": 0.92,
+      "end": 5523.26,
+      "no_speech_prob": 0.0,
+      "start": 5515.7,
+      "text": "暂时只能回味"
+    },
+    {
+      "avg_logprob": -0.226557,
+      "compression_ratio": 0.92,
+      "end": 5530.26,
+      "no_speech_prob": 0.0,
+      "start": 5523.26,
+      "text": "暂时日欲待入门舞会"
+    },
+    {
+      "avg_logprob": -0.226557,
+      "compression_ratio": 0.92,
+      "end": 5537.26,
+      "no_speech_prob": 0.0,
+      "start": 5530.26,
+      "text": "日月相伴谁能体会"
+    },
+    {
+      "avg_logprob": -0.550089,
+      "compression_ratio": 0.813559,
+      "end": 5544.26,
+      "no_speech_prob": 0.0,
+      "start": 5537.26,
+      "text": "人即冷占无事人非"
+    },
+    {
+      "avg_logprob": -0.550089,
+      "compression_ratio": 0.813559,
+      "end": 5551.32,
+      "no_speech_prob": 0.0,
+      "start": 5544.26,
+      "text": "不知不觉天来心碎"
+    },
+    {
+      "avg_logprob": -0.643467,
+      "compression_ratio": 1.038462,
+      "end": 5558.88,
+      "no_speech_prob": 0.0,
+      "start": 5551.32,
+      "text": "故人故事已故去还不回"
+    },
+    {
+      "avg_logprob": -0.643467,
+      "compression_ratio": 1.038462,
+      "end": 5563.88,
+      "no_speech_prob": 0.0,
+      "start": 5558.88,
+      "text": "暂时暂时暂时相会"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.196429,
+      "end": 5565.86,
+      "no_speech_prob": 0.0,
+      "start": 5563.88,
+      "text": "呗"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.196429,
+      "end": 5566.88,
+      "no_speech_prob": 0.0,
+      "start": 5565.86,
+      "text": "patch"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.196429,
+      "end": 5567.88,
+      "no_speech_prob": 0.0,
+      "start": 5566.88,
+      "text": "避免"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.196429,
+      "end": 5568.84,
+      "no_speech_prob": 0.0,
+      "start": 5567.88,
+      "text": "可"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.196429,
+      "end": 5569.44,
+      "no_speech_prob": 0.0,
+      "start": 5568.84,
+      "text": "避免"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.196429,
+      "end": 5570.62,
+      "no_speech_prob": 0.0,
+      "start": 5569.44,
+      "text": "呗"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.196429,
+      "end": 5572.42,
+      "no_speech_prob": 0.0,
+      "start": 5571.44,
+      "text": "patch"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.196429,
+      "end": 5573.44,
+      "no_speech_prob": 0.0,
+      "start": 5572.42,
+      "text": "呗"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.196429,
+      "end": 5573.88,
+      "no_speech_prob": 0.0,
+      "start": 5573.44,
+      "text": "分"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.196429,
+      "end": 5574.34,
+      "no_speech_prob": 0.0,
+      "start": 5573.44,
+      "text": "分"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.196429,
+      "end": 5574.9,
+      "no_speech_prob": 0.0,
+      "start": 5574.34,
+      "text": "分"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.196429,
+      "end": 5575.44,
+      "no_speech_prob": 0.0,
+      "start": 5574.9,
+      "text": "mum"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.196429,
+      "end": 5576.44,
+      "no_speech_prob": 0.0,
+      "start": 5575.44,
+      "text": "patch"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.196429,
+      "end": 5577.12,
+      "no_speech_prob": 0.0,
+      "start": 5576.44,
+      "text": "手"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.196429,
+      "end": 5577.44,
+      "no_speech_prob": 0.0,
+      "start": 5577.12,
+      "text": "做"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.196429,
+      "end": 5577.72,
+      "no_speech_prob": 0.0,
+      "start": 5577.44,
+      "text": "水"
+    },
+    {
+      "avg_logprob": -0.545133,
+      "compression_ratio": 0.94186,
+      "end": 5600.88,
+      "no_speech_prob": 0.0,
+      "start": 5593.88,
+      "text": "春季崩潔 無是人非"
+    },
+    {
+      "avg_logprob": -0.545133,
+      "compression_ratio": 0.94186,
+      "end": 5607.88,
+      "no_speech_prob": 0.0,
+      "start": 5600.88,
+      "text": "不知不覺 天來心碎"
+    },
+    {
+      "avg_logprob": -0.545133,
+      "compression_ratio": 0.94186,
+      "end": 5614.88,
+      "no_speech_prob": 0.0,
+      "start": 5607.88,
+      "text": "故人故事 已故去還不非"
+    },
+    {
+      "avg_logprob": -0.70497,
+      "compression_ratio": 0.710526,
+      "end": 5623.88,
+      "no_speech_prob": 0.0,
+      "start": 5614.88,
+      "text": "天是萬人關於你將會"
+    },
+    {
+      "avg_logprob": -1.068351,
+      "compression_ratio": 4.83871,
+      "end": 5648.88,
+      "no_speech_prob": 0.0,
+      "start": 5644.88,
+      "text": "你對我這旦的困惑"
+    },
+    {
+      "avg_logprob": -1.068351,
+      "compression_ratio": 4.83871,
+      "end": 5649.88,
+      "no_speech_prob": 0.0,
+      "start": 5648.88,
+      "text": "好好"
+    },
+    {
+      "avg_logprob": -1.068351,
+      "compression_ratio": 4.83871,
+      "end": 5650.88,
+      "no_speech_prob": 0.0,
+      "start": 5649.88,
+      "text": "不盡你"
+    },
+    {
+      "avg_logprob": -1.068351,
+      "compression_ratio": 4.83871,
+      "end": 5651.72,
+      "no_speech_prob": 0.0,
+      "start": 5650.88,
+      "text": "不焦尼"
+    },
+    {
+      "avg_logprob": -1.068351,
+      "compression_ratio": 4.83871,
+      "end": 5652.6,
+      "no_speech_prob": 0.0,
+      "start": 5651.72,
+      "text": "不焦尼"
+    },
+    {
+      "avg_logprob": -1.068351,
+      "compression_ratio": 4.83871,
+      "end": 5653.44,
+      "no_speech_prob": 0.0,
+      "start": 5652.6,
+      "text": "不焦尼"
+    },
+    {
+      "avg_logprob": -1.068351,
+      "compression_ratio": 4.83871,
+      "end": 5653.98,
+      "no_speech_prob": 0.0,
+      "start": 5653.44,
+      "text": "不焦尼"
+    },
+    {
+      "avg_logprob": -1.068351,
+      "compression_ratio": 4.83871,
+      "end": 5654.6,
+      "no_speech_prob": 0.0,
+      "start": 5653.98,
+      "text": "不焦尼"
+    },
+    {
+      "avg_logprob": -1.068351,
+      "compression_ratio": 4.83871,
+      "end": 5655.18,
+      "no_speech_prob": 0.0,
+      "start": 5654.6,
+      "text": "不焦尼"
+    },
+    {
+      "avg_logprob": -1.068351,
+      "compression_ratio": 4.83871,
+      "end": 5655.6,
+      "no_speech_prob": 0.0,
+      "start": 5655.18,
+      "text": "不焦尼"
+    },
+    {
+      "avg_logprob": -1.068351,
+      "compression_ratio": 4.83871,
+      "end": 5656.02,
+      "no_speech_prob": 0.0,
+      "start": 5655.6,
+      "text": "不焦尼"
+    },
+    {
+      "avg_logprob": -1.068351,
+      "compression_ratio": 4.83871,
+      "end": 5656.28,
+      "no_speech_prob": 0.0,
+      "start": 5656.02,
+      "text": "不焦尼"
+    },
+    {
+      "avg_logprob": -1.068351,
+      "compression_ratio": 4.83871,
+      "end": 5656.6,
+      "no_speech_prob": 0.0,
+      "start": 5656.28,
+      "text": "不焦尼"
+    },
+    {
+      "avg_logprob": -1.068351,
+      "compression_ratio": 4.83871,
+      "end": 5656.94,
+      "no_speech_prob": 0.0,
+      "start": 5656.6,
+      "text": "不焦尼"
+    },
+    {
+      "avg_logprob": -1.068351,
+      "compression_ratio": 4.83871,
+      "end": 5657.22,
+      "no_speech_prob": 0.0,
+      "start": 5656.94,
+      "text": "不焦尼"
+    },
+    {
+      "avg_logprob": -1.068351,
+      "compression_ratio": 4.83871,
+      "end": 5657.48,
+      "no_speech_prob": 0.0,
+      "start": 5657.22,
+      "text": "不焦尼"
+    },
+    {
+      "avg_logprob": -1.068351,
+      "compression_ratio": 4.83871,
+      "end": 5657.66,
+      "no_speech_prob": 0.0,
+      "start": 5657.48,
+      "text": "不焦尼"
+    },
+    {
+      "avg_logprob": -1.068351,
+      "compression_ratio": 4.83871,
+      "end": 5657.98,
+      "no_speech_prob": 0.0,
+      "start": 5657.66,
+      "text": "不焦尼"
+    },
+    {
+      "avg_logprob": -1.068351,
+      "compression_ratio": 4.83871,
+      "end": 5658.14,
+      "no_speech_prob": 0.0,
+      "start": 5657.98,
+      "text": "不焦尼"
+    },
+    {
+      "avg_logprob": -1.068351,
+      "compression_ratio": 4.83871,
+      "end": 5658.3,
+      "no_speech_prob": 0.0,
+      "start": 5658.14,
+      "text": "不焦尼"
+    },
+    {
+      "avg_logprob": -1.068351,
+      "compression_ratio": 4.83871,
+      "end": 5658.44,
+      "no_speech_prob": 0.0,
+      "start": 5658.3,
+      "text": "不焦尼"
+    },
+    {
+      "avg_logprob": -1.068351,
+      "compression_ratio": 4.83871,
+      "end": 5658.56,
+      "no_speech_prob": 0.0,
+      "start": 5658.44,
+      "text": "不焦尼"
+    },
+    {
+      "avg_logprob": -1.068351,
+      "compression_ratio": 4.83871,
+      "end": 5658.68,
+      "no_speech_prob": 0.0,
+      "start": 5658.56,
+      "text": "不焦尼"
+    },
+    {
+      "avg_logprob": -1.068351,
+      "compression_ratio": 4.83871,
+      "end": 5658.9,
+      "no_speech_prob": 0.0,
+      "start": 5658.68,
+      "text": "不焦尼"
+    },
+    {
+      "avg_logprob": -1.068351,
+      "compression_ratio": 4.83871,
+      "end": 5659.06,
+      "no_speech_prob": 0.0,
+      "start": 5658.9,
+      "text": "不焦尼"
+    },
+    {
+      "avg_logprob": -1.068351,
+      "compression_ratio": 4.83871,
+      "end": 5659.18,
+      "no_speech_prob": 0.0,
+      "start": 5659.06,
+      "text": "不焦尼"
+    },
+    {
+      "avg_logprob": -1.068351,
+      "compression_ratio": 4.83871,
+      "end": 5659.3,
+      "no_speech_prob": 0.0,
+      "start": 5659.18,
+      "text": "不焦尼"
+    },
+    {
+      "avg_logprob": -1.068351,
+      "compression_ratio": 4.83871,
+      "end": 5659.4,
+      "no_speech_prob": 0.0,
+      "start": 5659.3,
+      "text": "不焦尼"
+    },
+    {
+      "avg_logprob": -1.068351,
+      "compression_ratio": 4.83871,
+      "end": 5659.52,
+      "no_speech_prob": 0.0,
+      "start": 5659.4,
+      "text": "不焦尼"
+    },
+    {
+      "avg_logprob": -1.068351,
+      "compression_ratio": 4.83871,
+      "end": 5659.64,
+      "no_speech_prob": 0.0,
+      "start": 5659.52,
+      "text": "不焦尼"
+    },
+    {
+      "avg_logprob": -1.068351,
+      "compression_ratio": 4.83871,
+      "end": 5659.76,
+      "no_speech_prob": 0.0,
+      "start": 5659.64,
+      "text": "不焦尼"
+    },
+    {
+      "avg_logprob": -0.36027,
+      "compression_ratio": 2.040541,
+      "end": 5661.76,
+      "no_speech_prob": 0.0,
+      "start": 5659.76,
+      "text": "作词 李宗盛"
+    },
+    {
+      "avg_logprob": -0.36027,
+      "compression_ratio": 2.040541,
+      "end": 5663.76,
+      "no_speech_prob": 0.0,
+      "start": 5661.76,
+      "text": "作曲 李宗盛"
+    },
+    {
+      "avg_logprob": -0.36027,
+      "compression_ratio": 2.040541,
+      "end": 5665.76,
+      "no_speech_prob": 0.0,
+      "start": 5663.76,
+      "text": "作曲 李宗盛"
+    },
+    {
+      "avg_logprob": -0.36027,
+      "compression_ratio": 2.040541,
+      "end": 5667.76,
+      "no_speech_prob": 0.0,
+      "start": 5665.76,
+      "text": "作曲 李宗盛"
+    },
+    {
+      "avg_logprob": -0.36027,
+      "compression_ratio": 2.040541,
+      "end": 5669.76,
+      "no_speech_prob": 0.0,
+      "start": 5667.76,
+      "text": "作曲 李宗盛"
+    },
+    {
+      "avg_logprob": -0.36027,
+      "compression_ratio": 2.040541,
+      "end": 5671.76,
+      "no_speech_prob": 0.0,
+      "start": 5669.76,
+      "text": "作曲 李宗盛"
+    },
+    {
+      "avg_logprob": -0.36027,
+      "compression_ratio": 2.040541,
+      "end": 5673.76,
+      "no_speech_prob": 0.0,
+      "start": 5671.76,
+      "text": "作曲 李宗盛"
+    },
+    {
+      "avg_logprob": -0.36027,
+      "compression_ratio": 2.040541,
+      "end": 5681.76,
+      "no_speech_prob": 0.0,
+      "start": 5673.76,
+      "text": "世光一世永不悔"
+    },
+    {
+      "avg_logprob": -0.36027,
+      "compression_ratio": 2.040541,
+      "end": 5688.76,
+      "no_speech_prob": 0.0,
+      "start": 5681.76,
+      "text": "往事只能回味"
+    },
+    {
+      "avg_logprob": -0.225126,
+      "compression_ratio": 0.897196,
+      "end": 5696.76,
+      "no_speech_prob": 0.0,
+      "start": 5688.76,
+      "text": "三世欲再入门误会"
+    },
+    {
+      "avg_logprob": -0.225126,
+      "compression_ratio": 0.897196,
+      "end": 5702.76,
+      "no_speech_prob": 0.0,
+      "start": 5696.76,
+      "text": "日月相伴谁能体会"
+    },
+    {
+      "avg_logprob": -0.225126,
+      "compression_ratio": 0.897196,
+      "end": 5710.76,
+      "no_speech_prob": 0.0,
+      "start": 5702.76,
+      "text": "四季耿蝶无是人非"
+    },
+    {
+      "avg_logprob": -0.225126,
+      "compression_ratio": 0.897196,
+      "end": 5716.76,
+      "no_speech_prob": 0.0,
+      "start": 5710.76,
+      "text": "不知不觉天来心碎"
+    },
+    {
+      "avg_logprob": -0.164651,
+      "compression_ratio": 0.838235,
+      "end": 5724.76,
+      "no_speech_prob": 0.0,
+      "start": 5716.76,
+      "text": "古人故事已故去还不回"
+    },
+    {
+      "avg_logprob": -0.164651,
+      "compression_ratio": 0.838235,
+      "end": 5730.76,
+      "no_speech_prob": 0.0,
+      "start": 5724.76,
+      "text": "人世光轮转与您相会"
+    },
+    {
+      "avg_logprob": -0.179993,
+      "compression_ratio": 1.067308,
+      "end": 5734.76,
+      "no_speech_prob": 0.0,
+      "start": 5730.76,
+      "text": "三十年如一载"
+    },
+    {
+      "avg_logprob": -0.179993,
+      "compression_ratio": 1.067308,
+      "end": 5736.76,
+      "no_speech_prob": 0.0,
+      "start": 5734.76,
+      "text": "在东北南嘎拉"
+    },
+    {
+      "avg_logprob": -0.179993,
+      "compression_ratio": 1.067308,
+      "end": 5738.76,
+      "no_speech_prob": 0.0,
+      "start": 5736.76,
+      "text": "到山东老家"
+    },
+    {
+      "avg_logprob": -0.179993,
+      "compression_ratio": 1.067308,
+      "end": 5740.76,
+      "no_speech_prob": 0.0,
+      "start": 5738.76,
+      "text": "再到河南郑州"
+    },
+    {
+      "avg_logprob": -0.179993,
+      "compression_ratio": 1.067308,
+      "end": 5742.76,
+      "no_speech_prob": 0.0,
+      "start": 5740.76,
+      "text": "然后就到北京了"
+    },
+    {
+      "avg_logprob": -0.179993,
+      "compression_ratio": 1.067308,
+      "end": 5744.76,
+      "no_speech_prob": 0.0,
+      "start": 5742.76,
+      "text": "然后走向世界了"
+    },
+    {
+      "avg_logprob": -0.22824,
+      "compression_ratio": 0.947368,
+      "end": 5750.76,
+      "no_speech_prob": 0.0,
+      "start": 5744.76,
+      "text": "就开始了浩荷荡荡"
+    },
+    {
+      "avg_logprob": -0.22824,
+      "compression_ratio": 0.947368,
+      "end": 5752.76,
+      "no_speech_prob": 0.0,
+      "start": 5750.76,
+      "text": "史无前列的"
+    },
+    {
+      "avg_logprob": -0.22824,
+      "compression_ratio": 0.947368,
+      "end": 5754.76,
+      "no_speech_prob": 0.0,
+      "start": 5752.76,
+      "text": "消灭上世界最邪恶的"
+    },
+    {
+      "avg_logprob": -0.22824,
+      "compression_ratio": 0.947368,
+      "end": 5756.76,
+      "no_speech_prob": 0.0,
+      "start": 5754.76,
+      "text": "中国共产党的主力"
+    },
+    {
+      "avg_logprob": -0.240529,
+      "compression_ratio": 1.038095,
+      "end": 5758.76,
+      "no_speech_prob": 0.0,
+      "start": 5756.76,
+      "text": "共产党已经奄奄一息"
+    },
+    {
+      "avg_logprob": -0.240529,
+      "compression_ratio": 1.038095,
+      "end": 5762.76,
+      "no_speech_prob": 0.0,
+      "start": 5758.76,
+      "text": "香港的反送中运动"
+    },
+    {
+      "avg_logprob": -0.240529,
+      "compression_ratio": 1.038095,
+      "end": 5764.76,
+      "no_speech_prob": 0.0,
+      "start": 5762.76,
+      "text": "新疆的大囚禁"
+    },
+    {
+      "avg_logprob": -0.240529,
+      "compression_ratio": 1.038095,
+      "end": 5766.76,
+      "no_speech_prob": 0.0,
+      "start": 5764.76,
+      "text": "新疆的大消失"
+    },
+    {
+      "avg_logprob": -0.240529,
+      "compression_ratio": 1.038095,
+      "end": 5768.76,
+      "no_speech_prob": 0.0,
+      "start": 5766.76,
+      "text": "人道 种族的打灭"
+    },
+    {
+      "avg_logprob": -0.194428,
+      "compression_ratio": 1.12782,
+      "end": 5772.76,
+      "no_speech_prob": 0.0,
+      "start": 5768.76,
+      "text": "令主真相意表"
+    },
+    {
+      "avg_logprob": -0.194428,
+      "compression_ratio": 1.12782,
+      "end": 5776.76,
+      "no_speech_prob": 0.0,
+      "start": 5772.76,
+      "text": "到世界上真正的"
+    },
+    {
+      "avg_logprob": -0.194428,
+      "compression_ratio": 1.12782,
+      "end": 5778.76,
+      "no_speech_prob": 0.0,
+      "start": 5776.76,
+      "text": "蓝金黄"
+    },
+    {
+      "avg_logprob": -0.194428,
+      "compression_ratio": 1.12782,
+      "end": 5780.76,
+      "no_speech_prob": 0.0,
+      "start": 5778.76,
+      "text": "金融超限战"
+    },
+    {
+      "avg_logprob": -0.194428,
+      "compression_ratio": 1.12782,
+      "end": 5782.76,
+      "no_speech_prob": 0.0,
+      "start": 5780.76,
+      "text": "法律超限战的一个个事实"
+    },
+    {
+      "avg_logprob": -0.194428,
+      "compression_ratio": 1.12782,
+      "end": 5784.76,
+      "no_speech_prob": 0.0,
+      "start": 5782.76,
+      "text": "无限的挑战"
+    },
+    {
+      "avg_logprob": -0.194428,
+      "compression_ratio": 1.12782,
+      "end": 5786.76,
+      "no_speech_prob": 0.0,
+      "start": 5784.76,
+      "text": "无限的背叛"
+    },
+    {
+      "avg_logprob": -0.194428,
+      "compression_ratio": 1.12782,
+      "end": 5788.76,
+      "no_speech_prob": 0.0,
+      "start": 5786.76,
+      "text": "奇迹刚刚开始"
+    },
+    {
+      "avg_logprob": -0.338253,
+      "compression_ratio": 0.947368,
+      "end": 5794.76,
+      "no_speech_prob": 0.0,
+      "start": 5788.76,
+      "text": "时光一世永不回"
+    },
+    {
+      "avg_logprob": -0.338253,
+      "compression_ratio": 0.947368,
+      "end": 5802.76,
+      "no_speech_prob": 0.0,
+      "start": 5794.76,
+      "text": "往事只能回味"
+    },
+    {
+      "avg_logprob": -0.338253,
+      "compression_ratio": 0.947368,
+      "end": 5809.76,
+      "no_speech_prob": 0.0,
+      "start": 5802.76,
+      "text": "三十日欲待入门无悔"
+    },
+    {
+      "avg_logprob": -0.338253,
+      "compression_ratio": 0.947368,
+      "end": 5815.76,
+      "no_speech_prob": 0.0,
+      "start": 5809.76,
+      "text": "日月相伴谁能体会"
+    },
+    {
+      "avg_logprob": -0.328007,
+      "compression_ratio": 1.05,
+      "end": 5822.76,
+      "no_speech_prob": 0.0,
+      "start": 5815.76,
+      "text": "四季耿皆无是人非"
+    },
+    {
+      "avg_logprob": -0.328007,
+      "compression_ratio": 1.05,
+      "end": 5828.76,
+      "no_speech_prob": 0.0,
+      "start": 5822.76,
+      "text": "不知不见天了心碎"
+    },
+    {
+      "avg_logprob": -0.328007,
+      "compression_ratio": 1.05,
+      "end": 5837.76,
+      "no_speech_prob": 0.0,
+      "start": 5835.76,
+      "text": "我这歌现在也是"
+    },
+    {
+      "avg_logprob": -0.328007,
+      "compression_ratio": 1.05,
+      "end": 5840.76,
+      "no_speech_prob": 0.0,
+      "start": 5837.76,
+      "text": "水平现在是越来越高"
+    },
+    {
+      "avg_logprob": -0.328007,
+      "compression_ratio": 1.05,
+      "end": 5844.76,
+      "no_speech_prob": 0.0,
+      "start": 5840.76,
+      "text": "最近这个唱歌的水平是"
+    },
+    {
+      "avg_logprob": -0.151086,
+      "compression_ratio": 1.323529,
+      "end": 5846.76,
+      "no_speech_prob": 0.0,
+      "start": 5844.76,
+      "text": "越来越高"
+    },
+    {
+      "avg_logprob": -0.151086,
+      "compression_ratio": 1.323529,
+      "end": 5848.76,
+      "no_speech_prob": 0.0,
+      "start": 5846.76,
+      "text": "刚刚刚刚刚刚刚刚"
+    },
+    {
+      "avg_logprob": -0.151086,
+      "compression_ratio": 1.323529,
+      "end": 5850.76,
+      "no_speech_prob": 0.0,
+      "start": 5848.76,
+      "text": "一系列的好消息"
+    },
+    {
+      "avg_logprob": -0.151086,
+      "compression_ratio": 1.323529,
+      "end": 5852.76,
+      "no_speech_prob": 0.0,
+      "start": 5850.76,
+      "text": "我都不好意思说了"
+    },
+    {
+      "avg_logprob": -0.151086,
+      "compression_ratio": 1.323529,
+      "end": 5854.76,
+      "no_speech_prob": 0.0,
+      "start": 5852.76,
+      "text": "哎呀"
+    },
+    {
+      "avg_logprob": -0.151086,
+      "compression_ratio": 1.323529,
+      "end": 5856.76,
+      "no_speech_prob": 0.0,
+      "start": 5854.76,
+      "text": "咋办呢你说兄弟姐妹们"
+    },
+    {
+      "avg_logprob": -0.151086,
+      "compression_ratio": 1.323529,
+      "end": 5858.76,
+      "no_speech_prob": 0.0,
+      "start": 5856.76,
+      "text": "兄弟姐妹们"
+    },
+    {
+      "avg_logprob": -0.151086,
+      "compression_ratio": 1.323529,
+      "end": 5863.76,
+      "no_speech_prob": 0.0,
+      "start": 5858.76,
+      "text": "人呐一定要记住"
+    },
+    {
+      "avg_logprob": -0.151086,
+      "compression_ratio": 1.323529,
+      "end": 5867.76,
+      "no_speech_prob": 0.0,
+      "start": 5863.76,
+      "text": "关键是你在遇到问题"
+    },
+    {
+      "avg_logprob": -0.151086,
+      "compression_ratio": 1.323529,
+      "end": 5869.76,
+      "no_speech_prob": 0.0,
+      "start": 5867.76,
+      "text": "和遇到人"
+    },
+    {
+      "avg_logprob": -0.151086,
+      "compression_ratio": 1.323529,
+      "end": 5871.76,
+      "no_speech_prob": 0.0,
+      "start": 5869.76,
+      "text": "和遇到不痛快的事的时候"
+    },
+    {
+      "avg_logprob": -0.136744,
+      "compression_ratio": 1.321678,
+      "end": 5873.76,
+      "no_speech_prob": 0.0,
+      "start": 5871.76,
+      "text": "你做出什么样的决定"
+    },
+    {
+      "avg_logprob": -0.136744,
+      "compression_ratio": 1.321678,
+      "end": 5878.76,
+      "no_speech_prob": 0.0,
+      "start": 5873.76,
+      "text": "远比你在你得意的时候做什么决定更重要"
+    },
+    {
+      "avg_logprob": -0.136744,
+      "compression_ratio": 1.321678,
+      "end": 5880.76,
+      "no_speech_prob": 0.0,
+      "start": 5878.76,
+      "text": "但是从任何角度"
+    },
+    {
+      "avg_logprob": -0.136744,
+      "compression_ratio": 1.321678,
+      "end": 5883.76,
+      "no_speech_prob": 0.0,
+      "start": 5880.76,
+      "text": "就是太兴奋的时候不要做大决定"
+    },
+    {
+      "avg_logprob": -0.136744,
+      "compression_ratio": 1.321678,
+      "end": 5886.76,
+      "no_speech_prob": 0.0,
+      "start": 5883.76,
+      "text": "太痛苦的时候不要做什么大的决定"
+    },
+    {
+      "avg_logprob": -0.117653,
+      "compression_ratio": 1.164179,
+      "end": 5888.76,
+      "no_speech_prob": 0.0,
+      "start": 5886.76,
+      "text": "它是有科学道理的"
+    },
+    {
+      "avg_logprob": -0.117653,
+      "compression_ratio": 1.164179,
+      "end": 5890.76,
+      "no_speech_prob": 0.0,
+      "start": 5888.76,
+      "text": "因为在不理智的情况下做的决定"
+    },
+    {
+      "avg_logprob": -0.117653,
+      "compression_ratio": 1.164179,
+      "end": 5892.76,
+      "no_speech_prob": 0.0,
+      "start": 5890.76,
+      "text": "无论是痛苦"
+    },
+    {
+      "avg_logprob": -0.117653,
+      "compression_ratio": 1.164179,
+      "end": 5896.76,
+      "no_speech_prob": 0.0,
+      "start": 5892.76,
+      "text": "还是说快乐之中做的决定都是不对的"
+    },
+    {
+      "avg_logprob": -0.117653,
+      "compression_ratio": 1.164179,
+      "end": 5898.76,
+      "no_speech_prob": 0.0,
+      "start": 5896.76,
+      "text": "对吧"
+    },
+    {
+      "avg_logprob": -0.117653,
+      "compression_ratio": 1.164179,
+      "end": 5902.76,
+      "no_speech_prob": 0.0,
+      "start": 5898.76,
+      "text": "这都是要慎重的"
+    },
+    {
+      "avg_logprob": -0.221129,
+      "compression_ratio": 1.025641,
+      "end": 5903.76,
+      "no_speech_prob": 0.0,
+      "start": 5902.76,
+      "text": "对吧"
+    },
+    {
+      "avg_logprob": -0.221129,
+      "compression_ratio": 1.025641,
+      "end": 5904.76,
+      "no_speech_prob": 0.0,
+      "start": 5903.76,
+      "text": "那么"
+    },
+    {
+      "avg_logprob": -0.221129,
+      "compression_ratio": 1.025641,
+      "end": 5906.76,
+      "no_speech_prob": 0.0,
+      "start": 5904.76,
+      "text": "像这个咱们现在这个"
+    },
+    {
+      "avg_logprob": -0.221129,
+      "compression_ratio": 1.025641,
+      "end": 5908.76,
+      "no_speech_prob": 0.0,
+      "start": 5906.76,
+      "text": "很多这个面对的事情"
+    },
+    {
+      "avg_logprob": -0.221129,
+      "compression_ratio": 1.025641,
+      "end": 5911.76,
+      "no_speech_prob": 0.0,
+      "start": 5908.76,
+      "text": "战友们遇到了各种挑战的时候"
+    },
+    {
+      "avg_logprob": -0.221129,
+      "compression_ratio": 1.025641,
+      "end": 5914.76,
+      "no_speech_prob": 0.0,
+      "start": 5911.76,
+      "text": "总是爱放弃"
+    },
+    {
+      "avg_logprob": -0.204872,
+      "compression_ratio": 0.792453,
+      "end": 5932.76,
+      "no_speech_prob": 0.0,
+      "start": 5914.76,
+      "text": "放弃"
+    },
+    {
+      "avg_logprob": -0.204872,
+      "compression_ratio": 0.792453,
+      "end": 5933.76,
+      "no_speech_prob": 0.0,
+      "start": 5932.76,
+      "text": "抱怨"
+    },
+    {
+      "avg_logprob": -0.204872,
+      "compression_ratio": 0.792453,
+      "end": 5935.76,
+      "no_speech_prob": 0.0,
+      "start": 5933.76,
+      "text": "他对问题没有任何帮助"
+    },
+    {
+      "avg_logprob": -0.208904,
+      "compression_ratio": 1.132653,
+      "end": 5940.76,
+      "no_speech_prob": 0.0,
+      "start": 5935.76,
+      "text": "就像在英国大家知道"
+    },
+    {
+      "avg_logprob": -0.208904,
+      "compression_ratio": 1.132653,
+      "end": 5943.76,
+      "no_speech_prob": 0.0,
+      "start": 5940.76,
+      "text": "英国这个审的案子"
+    },
+    {
+      "avg_logprob": -0.208904,
+      "compression_ratio": 1.132653,
+      "end": 5947.76,
+      "no_speech_prob": 0.0,
+      "start": 5943.76,
+      "text": "可以说是最最重要的就是这个破产案当中"
+    },
+    {
+      "avg_logprob": -0.208904,
+      "compression_ratio": 1.132653,
+      "end": 5949.76,
+      "no_speech_prob": 0.0,
+      "start": 5947.76,
+      "text": "普恒"
+    },
+    {
+      "avg_logprob": -0.208904,
+      "compression_ratio": 1.132653,
+      "end": 5952.76,
+      "no_speech_prob": 0.0,
+      "start": 5949.76,
+      "text": "普恒还有Trust D.Luke"
+    },
+    {
+      "avg_logprob": -0.208904,
+      "compression_ratio": 1.132653,
+      "end": 5954.76,
+      "no_speech_prob": 0.0,
+      "start": 5952.76,
+      "text": "他最想得到的之一"
+    },
+    {
+      "avg_logprob": -0.208904,
+      "compression_ratio": 1.132653,
+      "end": 5956.76,
+      "no_speech_prob": 0.0,
+      "start": 5954.76,
+      "text": "就是把UBS案子他抢走"
+    },
+    {
+      "avg_logprob": -0.208904,
+      "compression_ratio": 1.132653,
+      "end": 5960.76,
+      "no_speech_prob": 0.0,
+      "start": 5956.76,
+      "text": "那个案子的成本是五亿美金"
+    },
+    {
+      "avg_logprob": -0.125904,
+      "compression_ratio": 1.338462,
+      "end": 5965.76,
+      "no_speech_prob": 0.0,
+      "start": 5960.76,
+      "text": "这个A-State和Dumstate要赢过这个案子呢"
+    },
+    {
+      "avg_logprob": -0.125904,
+      "compression_ratio": 1.338462,
+      "end": 5969.76,
+      "no_speech_prob": 0.0,
+      "start": 5965.76,
+      "text": "可能要一二十亿美金的这个索赔"
+    },
+    {
+      "avg_logprob": -0.125904,
+      "compression_ratio": 1.338462,
+      "end": 5971.76,
+      "no_speech_prob": 0.0,
+      "start": 5969.76,
+      "text": "甚至几十亿美金"
+    },
+    {
+      "avg_logprob": -0.125904,
+      "compression_ratio": 1.338462,
+      "end": 5974.76,
+      "no_speech_prob": 0.0,
+      "start": 5971.76,
+      "text": "但这个案子的当时管辖地"
+    },
+    {
+      "avg_logprob": -0.125904,
+      "compression_ratio": 1.338462,
+      "end": 5978.76,
+      "no_speech_prob": 0.0,
+      "start": 5974.76,
+      "text": "就像当时这个太平联盟告奇哥一样"
+    },
+    {
+      "avg_logprob": -0.125904,
+      "compression_ratio": 1.338462,
+      "end": 5981.76,
+      "no_speech_prob": 0.0,
+      "start": 5978.76,
+      "text": "在美国这个管辖地简直是荒唐至极的"
+    },
+    {
+      "avg_logprob": -0.125904,
+      "compression_ratio": 1.338462,
+      "end": 5983.76,
+      "no_speech_prob": 0.0,
+      "start": 5981.76,
+      "text": "没有一件事在美国发生"
+    },
+    {
+      "avg_logprob": -0.125904,
+      "compression_ratio": 1.338462,
+      "end": 5985.76,
+      "no_speech_prob": 0.0,
+      "start": 5983.76,
+      "text": "只有在美国搞了个管辖地的问题"
+    },
+    {
+      "avg_logprob": -0.125904,
+      "compression_ratio": 1.338462,
+      "end": 5989.76,
+      "no_speech_prob": 0.0,
+      "start": 5986.76,
+      "text": "从一个不存在的三千万的担保"
+    },
+    {
+      "avg_logprob": -0.092563,
+      "compression_ratio": 1.182927,
+      "end": 5991.76,
+      "no_speech_prob": 0.0,
+      "start": 5989.76,
+      "text": "变成了三亿美金的罚款"
+    },
+    {
+      "avg_logprob": -0.092563,
+      "compression_ratio": 1.182927,
+      "end": 5994.76,
+      "no_speech_prob": 0.0,
+      "start": 5991.76,
+      "text": "而且太平联盟承认"
+    },
+    {
+      "avg_logprob": -0.092563,
+      "compression_ratio": 1.182927,
+      "end": 5998.76,
+      "no_speech_prob": 0.0,
+      "start": 5994.76,
+      "text": "所有那个过去担保那个事情都还了"
+    },
+    {
+      "avg_logprob": -0.092563,
+      "compression_ratio": 1.182927,
+      "end": 5999.76,
+      "no_speech_prob": 0.0,
+      "start": 5998.76,
+      "text": "还是告我"
+    },
+    {
+      "avg_logprob": -0.092563,
+      "compression_ratio": 1.182927,
+      "end": 6001.76,
+      "no_speech_prob": 0.0,
+      "start": 5999.76,
+      "text": "然后不让我举证"
+    },
+    {
+      "avg_logprob": -0.092563,
+      "compression_ratio": 1.182927,
+      "end": 6002.76,
+      "no_speech_prob": 0.0,
+      "start": 6001.76,
+      "text": "不让我出庭"
+    },
+    {
+      "avg_logprob": -0.092563,
+      "compression_ratio": 1.182927,
+      "end": 6004.76,
+      "no_speech_prob": 0.0,
+      "start": 6002.76,
+      "text": "还搞了个简易判决"
+    },
+    {
+      "avg_logprob": -0.092563,
+      "compression_ratio": 1.182927,
+      "end": 6007.76,
+      "no_speech_prob": 0.0,
+      "start": 6005.76,
+      "text": "都是在美国的渗透啊"
+    },
+    {
+      "avg_logprob": -0.092563,
+      "compression_ratio": 1.182927,
+      "end": 6009.76,
+      "no_speech_prob": 0.0,
+      "start": 6007.76,
+      "text": "但是这个案子"
+    },
+    {
+      "avg_logprob": -0.092563,
+      "compression_ratio": 1.182927,
+      "end": 6010.76,
+      "no_speech_prob": 0.0,
+      "start": 6009.76,
+      "text": "他有一个相关人"
+    },
+    {
+      "avg_logprob": -0.092563,
+      "compression_ratio": 1.182927,
+      "end": 6013.76,
+      "no_speech_prob": 0.0,
+      "start": 6010.76,
+      "text": "就是说人家Dumstate和A-State"
+    },
+    {
+      "avg_logprob": -0.092563,
+      "compression_ratio": 1.182927,
+      "end": 6016.76,
+      "no_speech_prob": 0.0,
+      "start": 6013.76,
+      "text": "告这个UBS的事情"
+    },
+    {
+      "avg_logprob": -0.137849,
+      "compression_ratio": 1.331126,
+      "end": 6021.76,
+      "no_speech_prob": 0.0,
+      "start": 6016.76,
+      "text": "其中我是一个其中个人一个相关方"
+    },
+    {
+      "avg_logprob": -0.137849,
+      "compression_ratio": 1.331126,
+      "end": 6022.76,
+      "no_speech_prob": 0.0,
+      "start": 6021.76,
+      "text": "但是呢"
+    },
+    {
+      "avg_logprob": -0.137849,
+      "compression_ratio": 1.331126,
+      "end": 6023.76,
+      "no_speech_prob": 0.0,
+      "start": 6022.76,
+      "text": "就这个情况"
+    },
+    {
+      "avg_logprob": -0.137849,
+      "compression_ratio": 1.331126,
+      "end": 6024.76,
+      "no_speech_prob": 0.0,
+      "start": 6023.76,
+      "text": "在英国被人家"
+    },
+    {
+      "avg_logprob": -0.137849,
+      "compression_ratio": 1.331126,
+      "end": 6025.76,
+      "no_speech_prob": 0.0,
+      "start": 6024.76,
+      "text": "英国人家就是不管"
+    },
+    {
+      "avg_logprob": -0.137849,
+      "compression_ratio": 1.331126,
+      "end": 6027.76,
+      "no_speech_prob": 0.0,
+      "start": 6025.76,
+      "text": "英国是世界上目前"
+    },
+    {
+      "avg_logprob": -0.137849,
+      "compression_ratio": 1.331126,
+      "end": 6030.76,
+      "no_speech_prob": 0.0,
+      "start": 6027.76,
+      "text": "法律真正有法律的地方只有英国"
+    },
+    {
+      "avg_logprob": -0.137849,
+      "compression_ratio": 1.331126,
+      "end": 6033.76,
+      "no_speech_prob": 0.0,
+      "start": 6031.76,
+      "text": "结果人家英国咔嚓"
+    },
+    {
+      "avg_logprob": -0.126127,
+      "compression_ratio": 1.366667,
+      "end": 6036.76,
+      "no_speech_prob": 0.0,
+      "start": 6033.76,
+      "text": "人家把这案子管辖地定在英国"
+    },
+    {
+      "avg_logprob": -0.126127,
+      "compression_ratio": 1.366667,
+      "end": 6038.76,
+      "no_speech_prob": 0.0,
+      "start": 6036.76,
+      "text": "因为当时这个这笔贷款"
+    },
+    {
+      "avg_logprob": -0.126127,
+      "compression_ratio": 1.366667,
+      "end": 6044.76,
+      "no_speech_prob": 0.0,
+      "start": 6038.76,
+      "text": "当时那个总共是将近七百亿港币的投资"
+    },
+    {
+      "avg_logprob": -0.126127,
+      "compression_ratio": 1.366667,
+      "end": 6046.76,
+      "no_speech_prob": 0.0,
+      "start": 6044.76,
+      "text": "七百亿港币"
+    },
+    {
+      "avg_logprob": -0.126127,
+      "compression_ratio": 1.366667,
+      "end": 6048.76,
+      "no_speech_prob": 0.0,
+      "start": 6046.76,
+      "text": "七百亿港币的总额投资"
+    },
+    {
+      "avg_logprob": -0.126127,
+      "compression_ratio": 1.366667,
+      "end": 6052.76,
+      "no_speech_prob": 0.0,
+      "start": 6048.76,
+      "text": "加在一起将近一千亿港币了"
+    },
+    {
+      "avg_logprob": -0.126127,
+      "compression_ratio": 1.366667,
+      "end": 6054.76,
+      "no_speech_prob": 0.0,
+      "start": 6052.76,
+      "text": "这投资的管辖地"
+    },
+    {
+      "avg_logprob": -0.126127,
+      "compression_ratio": 1.366667,
+      "end": 6056.76,
+      "no_speech_prob": 0.0,
+      "start": 6054.76,
+      "text": "签署地UBS就是伦敦"
+    },
+    {
+      "avg_logprob": -0.1413,
+      "compression_ratio": 1.282258,
+      "end": 6057.76,
+      "no_speech_prob": 0.0,
+      "start": 6056.76,
+      "text": "就是伦敦"
+    },
+    {
+      "avg_logprob": -0.1413,
+      "compression_ratio": 1.282258,
+      "end": 6060.76,
+      "no_speech_prob": 0.0,
+      "start": 6057.76,
+      "text": "就这UBS想把这个案子从英国拿走"
+    },
+    {
+      "avg_logprob": -0.1413,
+      "compression_ratio": 1.282258,
+      "end": 6061.76,
+      "no_speech_prob": 0.0,
+      "start": 6060.76,
+      "text": "拿哪去呢"
+    },
+    {
+      "avg_logprob": -0.1413,
+      "compression_ratio": 1.282258,
+      "end": 6062.76,
+      "no_speech_prob": 0.0,
+      "start": 6061.76,
+      "text": "拿到瑞士去拿去"
+    },
+    {
+      "avg_logprob": -0.1413,
+      "compression_ratio": 1.282258,
+      "end": 6064.76,
+      "no_speech_prob": 0.0,
+      "start": 6062.76,
+      "text": "那瑞士对他有利吗"
+    },
+    {
+      "avg_logprob": -0.1413,
+      "compression_ratio": 1.282258,
+      "end": 6067.76,
+      "no_speech_prob": 0.0,
+      "start": 6065.76,
+      "text": "结果人家英国就把案子给立上了"
+    },
+    {
+      "avg_logprob": -0.1413,
+      "compression_ratio": 1.282258,
+      "end": 6068.76,
+      "no_speech_prob": 0.0,
+      "start": 6067.76,
+      "text": "就在英国管"
+    },
+    {
+      "avg_logprob": -0.1413,
+      "compression_ratio": 1.282258,
+      "end": 6070.76,
+      "no_speech_prob": 0.0,
+      "start": 6068.76,
+      "text": "因此UBS上述"
+    },
+    {
+      "avg_logprob": -0.1413,
+      "compression_ratio": 1.282258,
+      "end": 6072.76,
+      "no_speech_prob": 0.0,
+      "start": 6071.76,
+      "text": "在上述过程当中"
+    },
+    {
+      "avg_logprob": -0.1413,
+      "compression_ratio": 1.282258,
+      "end": 6074.76,
+      "no_speech_prob": 0.0,
+      "start": 6072.76,
+      "text": "Trust D.LOOK来了"
+    },
+    {
+      "avg_logprob": -0.1413,
+      "compression_ratio": 1.282258,
+      "end": 6075.76,
+      "no_speech_prob": 0.0,
+      "start": 6074.76,
+      "text": "就到英国去"
+    },
+    {
+      "avg_logprob": -0.1413,
+      "compression_ratio": 1.282258,
+      "end": 6077.76,
+      "no_speech_prob": 0.0,
+      "start": 6075.76,
+      "text": "要把这个案子接管"
+    },
+    {
+      "avg_logprob": -0.1413,
+      "compression_ratio": 1.282258,
+      "end": 6078.76,
+      "no_speech_prob": 0.0,
+      "start": 6077.76,
+      "text": "他要拿走"
+    },
+    {
+      "avg_logprob": -0.1413,
+      "compression_ratio": 1.282258,
+      "end": 6080.76,
+      "no_speech_prob": 0.0,
+      "start": 6078.76,
+      "text": "这是其中一个目的"
+    },
+    {
+      "avg_logprob": -0.1413,
+      "compression_ratio": 1.282258,
+      "end": 6082.76,
+      "no_speech_prob": 0.0,
+      "start": 6080.76,
+      "text": "结果最后是什么"
+    },
+    {
+      "avg_logprob": -0.128607,
+      "compression_ratio": 1.285714,
+      "end": 6086.76,
+      "no_speech_prob": 0.0,
+      "start": 6082.76,
+      "text": "路克把代表我的律师给发压掉了"
+    },
+    {
+      "avg_logprob": -0.128607,
+      "compression_ratio": 1.285714,
+      "end": 6090.76,
+      "no_speech_prob": 0.0,
+      "start": 6088.76,
+      "text": "然后呢要把这个案子呢"
+    },
+    {
+      "avg_logprob": -0.128607,
+      "compression_ratio": 1.285714,
+      "end": 6092.76,
+      "no_speech_prob": 0.0,
+      "start": 6090.76,
+      "text": "就是要踢到瑞士去"
+    },
+    {
+      "avg_logprob": -0.128607,
+      "compression_ratio": 1.285714,
+      "end": 6094.76,
+      "no_speech_prob": 0.0,
+      "start": 6092.76,
+      "text": "我估计路克这个家伙"
+    },
+    {
+      "avg_logprob": -0.128607,
+      "compression_ratio": 1.285714,
+      "end": 6097.76,
+      "no_speech_prob": 0.0,
+      "start": 6094.76,
+      "text": "去跟这个瑞士UBS沟通"
+    },
+    {
+      "avg_logprob": -0.128607,
+      "compression_ratio": 1.285714,
+      "end": 6099.76,
+      "no_speech_prob": 0.0,
+      "start": 6097.76,
+      "text": "要钱的情况下"
+    },
+    {
+      "avg_logprob": -0.128607,
+      "compression_ratio": 1.285714,
+      "end": 6100.76,
+      "no_speech_prob": 0.0,
+      "start": 6099.76,
+      "text": "人家瑞士说了"
+    },
+    {
+      "avg_logprob": -0.128607,
+      "compression_ratio": 1.285714,
+      "end": 6102.76,
+      "no_speech_prob": 0.0,
+      "start": 6100.76,
+      "text": "郭文贵可以踢出去"
+    },
+    {
+      "avg_logprob": -0.128607,
+      "compression_ratio": 1.285714,
+      "end": 6103.76,
+      "no_speech_prob": 0.0,
+      "start": 6102.76,
+      "text": "那A-State"
+    },
+    {
+      "avg_logprob": -0.128607,
+      "compression_ratio": 1.285714,
+      "end": 6104.76,
+      "no_speech_prob": 0.0,
+      "start": 6103.76,
+      "text": "Dance State"
+    },
+    {
+      "avg_logprob": -0.128607,
+      "compression_ratio": 1.285714,
+      "end": 6106.76,
+      "no_speech_prob": 0.0,
+      "start": 6104.76,
+      "text": "跟郭文贵没关系啊"
+    },
+    {
+      "avg_logprob": -0.128607,
+      "compression_ratio": 1.285714,
+      "end": 6108.76,
+      "no_speech_prob": 0.0,
+      "start": 6106.76,
+      "text": "你怎么能保证这个案子没有呢"
+    },
+    {
+      "avg_logprob": -0.128607,
+      "compression_ratio": 1.285714,
+      "end": 6109.76,
+      "no_speech_prob": 0.0,
+      "start": 6108.76,
+      "text": "就是我UBS"
+    },
+    {
+      "avg_logprob": -0.128607,
+      "compression_ratio": 1.285714,
+      "end": 6110.76,
+      "no_speech_prob": 0.0,
+      "start": 6109.76,
+      "text": "给你钱"
+    },
+    {
+      "avg_logprob": -0.128607,
+      "compression_ratio": 1.285714,
+      "end": 6111.76,
+      "no_speech_prob": 0.0,
+      "start": 6110.76,
+      "text": "怎么能"
+    },
+    {
+      "avg_logprob": -0.099471,
+      "compression_ratio": 1.337349,
+      "end": 6113.76,
+      "no_speech_prob": 0.0,
+      "start": 6111.76,
+      "text": "怎么能"
+    },
+    {
+      "avg_logprob": -0.099471,
+      "compression_ratio": 1.337349,
+      "end": 6115.76,
+      "no_speech_prob": 0.0,
+      "start": 6113.76,
+      "text": "怎么能让这个所有这个案子彻底了结呢"
+    },
+    {
+      "avg_logprob": -0.099471,
+      "compression_ratio": 1.337349,
+      "end": 6116.76,
+      "no_speech_prob": 0.0,
+      "start": 6115.76,
+      "text": "他做不到"
+    },
+    {
+      "avg_logprob": -0.099471,
+      "compression_ratio": 1.337349,
+      "end": 6118.76,
+      "no_speech_prob": 0.0,
+      "start": 6117.76,
+      "text": "大概是上"
+    },
+    {
+      "avg_logprob": -0.099471,
+      "compression_ratio": 1.337349,
+      "end": 6120.76,
+      "no_speech_prob": 0.0,
+      "start": 6118.76,
+      "text": "大概20天前吧"
+    },
+    {
+      "avg_logprob": -0.099471,
+      "compression_ratio": 1.337349,
+      "end": 6121.76,
+      "no_speech_prob": 0.0,
+      "start": 6120.76,
+      "text": "不到一个月的时间"
+    },
+    {
+      "avg_logprob": -0.099471,
+      "compression_ratio": 1.337349,
+      "end": 6122.76,
+      "no_speech_prob": 0.0,
+      "start": 6121.76,
+      "text": "你们没有注意到"
+    },
+    {
+      "avg_logprob": -0.099471,
+      "compression_ratio": 1.337349,
+      "end": 6123.76,
+      "no_speech_prob": 0.0,
+      "start": 6122.76,
+      "text": "他是大直播的"
+    },
+    {
+      "avg_logprob": -0.099471,
+      "compression_ratio": 1.337349,
+      "end": 6125.76,
+      "no_speech_prob": 0.0,
+      "start": 6123.76,
+      "text": "他是在YouTube上直播的"
+    },
+    {
+      "avg_logprob": -0.099471,
+      "compression_ratio": 1.337349,
+      "end": 6126.76,
+      "no_speech_prob": 0.0,
+      "start": 6125.76,
+      "text": "英国大法官"
+    },
+    {
+      "avg_logprob": -0.099471,
+      "compression_ratio": 1.337349,
+      "end": 6129.76,
+      "no_speech_prob": 0.0,
+      "start": 6126.76,
+      "text": "两个最有威望的法官"
+    },
+    {
+      "avg_logprob": -0.099471,
+      "compression_ratio": 1.337349,
+      "end": 6131.76,
+      "no_speech_prob": 0.0,
+      "start": 6129.76,
+      "text": "就是开庭"
+    },
+    {
+      "avg_logprob": -0.099471,
+      "compression_ratio": 1.337349,
+      "end": 6132.76,
+      "no_speech_prob": 0.0,
+      "start": 6131.76,
+      "text": "开庭什么呢"
+    },
+    {
+      "avg_logprob": -0.099471,
+      "compression_ratio": 1.337349,
+      "end": 6134.76,
+      "no_speech_prob": 0.0,
+      "start": 6132.76,
+      "text": "就UBS上述"
+    },
+    {
+      "avg_logprob": -0.099471,
+      "compression_ratio": 1.337349,
+      "end": 6137.76,
+      "no_speech_prob": 0.0,
+      "start": 6134.76,
+      "text": "就反对这个案子留在英国"
+    },
+    {
+      "avg_logprob": -0.099471,
+      "compression_ratio": 1.337349,
+      "end": 6139.76,
+      "no_speech_prob": 0.0,
+      "start": 6137.76,
+      "text": "来审要不要领在英国"
+    },
+    {
+      "avg_logprob": -0.181466,
+      "compression_ratio": 1.089041,
+      "end": 6142.76,
+      "no_speech_prob": 0.0,
+      "start": 6139.76,
+      "text": "在这个案子开审的头一天"
+    },
+    {
+      "avg_logprob": -0.181466,
+      "compression_ratio": 1.089041,
+      "end": 6143.76,
+      "no_speech_prob": 0.0,
+      "start": 6142.76,
+      "text": "陆克"
+    },
+    {
+      "avg_logprob": -0.181466,
+      "compression_ratio": 1.089041,
+      "end": 6145.76,
+      "no_speech_prob": 0.0,
+      "start": 6143.76,
+      "text": "宣布不出席"
+    },
+    {
+      "avg_logprob": -0.181466,
+      "compression_ratio": 1.089041,
+      "end": 6150.76,
+      "no_speech_prob": 0.0,
+      "start": 6145.76,
+      "text": "而且陆克把代表我的律师给翻掉了"
+    },
+    {
+      "avg_logprob": -0.181466,
+      "compression_ratio": 1.089041,
+      "end": 6154.76,
+      "no_speech_prob": 0.0,
+      "start": 6150.76,
+      "text": "多大的事你们都没注意到"
+    },
+    {
+      "avg_logprob": -0.181466,
+      "compression_ratio": 1.089041,
+      "end": 6157.76,
+      "no_speech_prob": 0.0,
+      "start": 6154.76,
+      "text": "结果那天我直播也是"
+    },
+    {
+      "avg_logprob": -0.102951,
+      "compression_ratio": 1.178808,
+      "end": 6159.76,
+      "no_speech_prob": 0.0,
+      "start": 6157.76,
+      "text": "我都没说"
+    },
+    {
+      "avg_logprob": -0.102951,
+      "compression_ratio": 1.178808,
+      "end": 6161.76,
+      "no_speech_prob": 0.0,
+      "start": 6159.76,
+      "text": "结果是开庭了"
+    },
+    {
+      "avg_logprob": -0.102951,
+      "compression_ratio": 1.178808,
+      "end": 6163.76,
+      "no_speech_prob": 0.0,
+      "start": 6161.76,
+      "text": "两个大法官是在YouTube"
+    },
+    {
+      "avg_logprob": -0.102951,
+      "compression_ratio": 1.178808,
+      "end": 6165.76,
+      "no_speech_prob": 0.0,
+      "start": 6163.76,
+      "text": "人家是直播的开庭"
+    },
+    {
+      "avg_logprob": -0.102951,
+      "compression_ratio": 1.178808,
+      "end": 6166.76,
+      "no_speech_prob": 0.0,
+      "start": 6165.76,
+      "text": "最有威望的"
+    },
+    {
+      "avg_logprob": -0.102951,
+      "compression_ratio": 1.178808,
+      "end": 6168.76,
+      "no_speech_prob": 0.0,
+      "start": 6166.76,
+      "text": "全英国最大法官"
+    },
+    {
+      "avg_logprob": -0.102951,
+      "compression_ratio": 1.178808,
+      "end": 6170.76,
+      "no_speech_prob": 0.0,
+      "start": 6168.76,
+      "text": "开完庭"
+    },
+    {
+      "avg_logprob": -0.102951,
+      "compression_ratio": 1.178808,
+      "end": 6172.76,
+      "no_speech_prob": 0.0,
+      "start": 6170.76,
+      "text": "在三个小时前"
+    },
+    {
+      "avg_logprob": -0.102951,
+      "compression_ratio": 1.178808,
+      "end": 6173.76,
+      "no_speech_prob": 0.0,
+      "start": 6172.76,
+      "text": "三个小时前"
+    },
+    {
+      "avg_logprob": -0.102951,
+      "compression_ratio": 1.178808,
+      "end": 6175.76,
+      "no_speech_prob": 0.0,
+      "start": 6173.76,
+      "text": "英国最高法院"
+    },
+    {
+      "avg_logprob": -0.190651,
+      "compression_ratio": 1.285714,
+      "end": 6177.76,
+      "no_speech_prob": 0.0,
+      "start": 6175.76,
+      "text": "两位大法官做出决定"
+    },
+    {
+      "avg_logprob": -0.190651,
+      "compression_ratio": 1.285714,
+      "end": 6178.76,
+      "no_speech_prob": 0.0,
+      "start": 6177.76,
+      "text": "维持原判"
+    },
+    {
+      "avg_logprob": -0.190651,
+      "compression_ratio": 1.285714,
+      "end": 6179.76,
+      "no_speech_prob": 0.0,
+      "start": 6178.76,
+      "text": "维持原判"
+    },
+    {
+      "avg_logprob": -0.190651,
+      "compression_ratio": 1.285714,
+      "end": 6181.76,
+      "no_speech_prob": 0.0,
+      "start": 6179.76,
+      "text": "郭文贵不在这案子"
+    },
+    {
+      "avg_logprob": -0.190651,
+      "compression_ratio": 1.285714,
+      "end": 6182.76,
+      "no_speech_prob": 0.0,
+      "start": 6181.76,
+      "text": "就我已经出局了"
+    },
+    {
+      "avg_logprob": -0.190651,
+      "compression_ratio": 1.285714,
+      "end": 6183.76,
+      "no_speech_prob": 0.0,
+      "start": 6182.76,
+      "text": "但是"
+    },
+    {
+      "avg_logprob": -0.190651,
+      "compression_ratio": 1.285714,
+      "end": 6185.76,
+      "no_speech_prob": 0.0,
+      "start": 6183.76,
+      "text": "A-State和Dance Day的案子"
+    },
+    {
+      "avg_logprob": -0.190651,
+      "compression_ratio": 1.285714,
+      "end": 6186.76,
+      "no_speech_prob": 0.0,
+      "start": 6185.76,
+      "text": "还要留在英国"
+    },
+    {
+      "avg_logprob": -0.190651,
+      "compression_ratio": 1.285714,
+      "end": 6189.76,
+      "no_speech_prob": 0.0,
+      "start": 6188.76,
+      "text": "这说明什么"
+    },
+    {
+      "avg_logprob": -0.190651,
+      "compression_ratio": 1.285714,
+      "end": 6190.76,
+      "no_speech_prob": 0.0,
+      "start": 6189.76,
+      "text": "在美国案子"
+    },
+    {
+      "avg_logprob": -0.190651,
+      "compression_ratio": 1.285714,
+      "end": 6192.76,
+      "no_speech_prob": 0.0,
+      "start": 6190.76,
+      "text": "咱没有一样能赢的"
+    },
+    {
+      "avg_logprob": -0.190651,
+      "compression_ratio": 1.285714,
+      "end": 6193.76,
+      "no_speech_prob": 0.0,
+      "start": 6192.76,
+      "text": "在这个破产案上"
+    },
+    {
+      "avg_logprob": -0.190651,
+      "compression_ratio": 1.285714,
+      "end": 6195.76,
+      "no_speech_prob": 0.0,
+      "start": 6193.76,
+      "text": "没有一样咱能赢的"
+    },
+    {
+      "avg_logprob": -0.190651,
+      "compression_ratio": 1.285714,
+      "end": 6197.76,
+      "no_speech_prob": 0.0,
+      "start": 6195.76,
+      "text": "从南区法院到破产法院"
+    },
+    {
+      "avg_logprob": -0.190651,
+      "compression_ratio": 1.285714,
+      "end": 6198.76,
+      "no_speech_prob": 0.0,
+      "start": 6197.76,
+      "text": "咱说啥呢"
+    },
+    {
+      "avg_logprob": -0.190651,
+      "compression_ratio": 1.285714,
+      "end": 6200.76,
+      "no_speech_prob": 0.0,
+      "start": 6198.76,
+      "text": "No No No No No No No No No"
+    },
+    {
+      "avg_logprob": -0.085597,
+      "compression_ratio": 1.293103,
+      "end": 6202.76,
+      "no_speech_prob": 0.0,
+      "start": 6200.76,
+      "text": "到了英国法院"
+    },
+    {
+      "avg_logprob": -0.085597,
+      "compression_ratio": 1.293103,
+      "end": 6203.76,
+      "no_speech_prob": 0.0,
+      "start": 6202.76,
+      "text": "咱没有一样输的"
+    },
+    {
+      "avg_logprob": -0.085597,
+      "compression_ratio": 1.293103,
+      "end": 6208.76,
+      "no_speech_prob": 0.0,
+      "start": 6206.76,
+      "text": "咋就这么绝对呢"
+    },
+    {
+      "avg_logprob": -0.085597,
+      "compression_ratio": 1.293103,
+      "end": 6212.76,
+      "no_speech_prob": 0.0,
+      "start": 6210.76,
+      "text": "咋就这么奇怪呢"
+    },
+    {
+      "avg_logprob": -0.085597,
+      "compression_ratio": 1.293103,
+      "end": 6216.76,
+      "no_speech_prob": 0.0,
+      "start": 6215.76,
+      "text": "是吧"
+    },
+    {
+      "avg_logprob": -0.085597,
+      "compression_ratio": 1.293103,
+      "end": 6218.76,
+      "no_speech_prob": 0.0,
+      "start": 6216.76,
+      "text": "所以很多人都劝我"
+    },
+    {
+      "avg_logprob": -0.085597,
+      "compression_ratio": 1.293103,
+      "end": 6220.76,
+      "no_speech_prob": 0.0,
+      "start": 6218.76,
+      "text": "哎呀和解呀"
+    },
+    {
+      "avg_logprob": -0.085597,
+      "compression_ratio": 1.293103,
+      "end": 6222.76,
+      "no_speech_prob": 0.0,
+      "start": 6220.76,
+      "text": "咱拿啥和解去"
+    },
+    {
+      "avg_logprob": -0.085597,
+      "compression_ratio": 1.293103,
+      "end": 6223.76,
+      "no_speech_prob": 0.0,
+      "start": 6222.76,
+      "text": "你和共产党"
+    },
+    {
+      "avg_logprob": -0.085597,
+      "compression_ratio": 1.293103,
+      "end": 6224.76,
+      "no_speech_prob": 0.0,
+      "start": 6223.76,
+      "text": "你和这帮人和解"
+    },
+    {
+      "avg_logprob": -0.085597,
+      "compression_ratio": 1.293103,
+      "end": 6226.76,
+      "no_speech_prob": 0.0,
+      "start": 6224.76,
+      "text": "就是跟共产党谈和解"
+    },
+    {
+      "avg_logprob": -0.085597,
+      "compression_ratio": 1.293103,
+      "end": 6228.76,
+      "no_speech_prob": 0.0,
+      "start": 6226.76,
+      "text": "他能放过你吗"
+    },
+    {
+      "avg_logprob": -0.075573,
+      "compression_ratio": 1.191667,
+      "end": 6233.76,
+      "no_speech_prob": 0.0,
+      "start": 6230.76,
+      "text": "你听那些律师说话"
+    },
+    {
+      "avg_logprob": -0.075573,
+      "compression_ratio": 1.191667,
+      "end": 6235.76,
+      "no_speech_prob": 0.0,
+      "start": 6233.76,
+      "text": "那些律师跟你说的话"
+    },
+    {
+      "avg_logprob": -0.075573,
+      "compression_ratio": 1.191667,
+      "end": 6237.76,
+      "no_speech_prob": 0.0,
+      "start": 6235.76,
+      "text": "是站在律师角度说的话"
+    },
+    {
+      "avg_logprob": -0.075573,
+      "compression_ratio": 1.191667,
+      "end": 6239.76,
+      "no_speech_prob": 0.0,
+      "start": 6237.76,
+      "text": "他知道多少"
+    },
+    {
+      "avg_logprob": -0.075573,
+      "compression_ratio": 1.191667,
+      "end": 6240.76,
+      "no_speech_prob": 0.0,
+      "start": 6239.76,
+      "text": "关于爆料革命"
+    },
+    {
+      "avg_logprob": -0.075573,
+      "compression_ratio": 1.191667,
+      "end": 6241.76,
+      "no_speech_prob": 0.0,
+      "start": 6240.76,
+      "text": "新中国联邦"
+    },
+    {
+      "avg_logprob": -0.075573,
+      "compression_ratio": 1.191667,
+      "end": 6243.76,
+      "no_speech_prob": 0.0,
+      "start": 6241.76,
+      "text": "和共产党的事情呢"
+    },
+    {
+      "avg_logprob": -0.075573,
+      "compression_ratio": 1.191667,
+      "end": 6248.76,
+      "no_speech_prob": 0.0,
+      "start": 6247.76,
+      "text": "他到了英国那种骚扰"
+    },
+    {
+      "avg_logprob": -0.075573,
+      "compression_ratio": 1.191667,
+      "end": 6250.76,
+      "no_speech_prob": 0.0,
+      "start": 6248.76,
+      "text": "没有人受得了的"
+    },
+    {
+      "avg_logprob": -0.075573,
+      "compression_ratio": 1.191667,
+      "end": 6251.76,
+      "no_speech_prob": 0.0,
+      "start": 6250.76,
+      "text": "是吧"
+    },
+    {
+      "avg_logprob": -0.075573,
+      "compression_ratio": 1.191667,
+      "end": 6253.76,
+      "no_speech_prob": 0.0,
+      "start": 6251.76,
+      "text": "UBS多有钱呢"
+    },
+    {
+      "avg_logprob": -0.075573,
+      "compression_ratio": 1.191667,
+      "end": 6254.76,
+      "no_speech_prob": 0.0,
+      "start": 6253.76,
+      "text": "我的老天爷呀"
+    },
+    {
+      "avg_logprob": -0.075573,
+      "compression_ratio": 1.191667,
+      "end": 6255.76,
+      "no_speech_prob": 0.0,
+      "start": 6254.76,
+      "text": "是吧"
+    },
+    {
+      "avg_logprob": -0.075573,
+      "compression_ratio": 1.191667,
+      "end": 6258.76,
+      "no_speech_prob": 0.0,
+      "start": 6255.76,
+      "text": "那些人家A-State和Dance Day的律师"
+    },
+    {
+      "avg_logprob": -0.131118,
+      "compression_ratio": 1.220779,
+      "end": 6259.76,
+      "no_speech_prob": 0.0,
+      "start": 6258.76,
+      "text": "还有那当事人"
+    },
+    {
+      "avg_logprob": -0.131118,
+      "compression_ratio": 1.220779,
+      "end": 6260.76,
+      "no_speech_prob": 0.0,
+      "start": 6259.76,
+      "text": "还有那当事人"
+    },
+    {
+      "avg_logprob": -0.131118,
+      "compression_ratio": 1.220779,
+      "end": 6261.76,
+      "no_speech_prob": 0.0,
+      "start": 6260.76,
+      "text": "还有某些基金投资的"
+    },
+    {
+      "avg_logprob": -0.131118,
+      "compression_ratio": 1.220779,
+      "end": 6263.76,
+      "no_speech_prob": 0.0,
+      "start": 6261.76,
+      "text": "说Miles跟他们和解得了"
+    },
+    {
+      "avg_logprob": -0.131118,
+      "compression_ratio": 1.220779,
+      "end": 6264.76,
+      "no_speech_prob": 0.0,
+      "start": 6263.76,
+      "text": "给你几亿美金"
+    },
+    {
+      "avg_logprob": -0.131118,
+      "compression_ratio": 1.220779,
+      "end": 6266.76,
+      "no_speech_prob": 0.0,
+      "start": 6264.76,
+      "text": "我说我说了不算"
+    },
+    {
+      "avg_logprob": -0.131118,
+      "compression_ratio": 1.220779,
+      "end": 6271.76,
+      "no_speech_prob": 0.0,
+      "start": 6269.76,
+      "text": "我说算也不能让你和解"
+    },
+    {
+      "avg_logprob": -0.131118,
+      "compression_ratio": 1.220779,
+      "end": 6274.76,
+      "no_speech_prob": 0.0,
+      "start": 6273.76,
+      "text": "和什么解"
+    },
+    {
+      "avg_logprob": -0.131118,
+      "compression_ratio": 1.220779,
+      "end": 6275.76,
+      "no_speech_prob": 0.0,
+      "start": 6274.76,
+      "text": "哪来的和解"
+    },
+    {
+      "avg_logprob": -0.151622,
+      "compression_ratio": 1.230366,
+      "end": 6281.76,
+      "no_speech_prob": 0.0,
+      "start": 6275.76,
+      "text": "坚持到最后20秒很重要"
+    },
+    {
+      "avg_logprob": -0.151622,
+      "compression_ratio": 1.230366,
+      "end": 6283.76,
+      "no_speech_prob": 0.0,
+      "start": 6281.76,
+      "text": "你不能像小飞侠"
+    },
+    {
+      "avg_logprob": -0.151622,
+      "compression_ratio": 1.230366,
+      "end": 6284.76,
+      "no_speech_prob": 0.0,
+      "start": 6283.76,
+      "text": "这才20多岁"
+    },
+    {
+      "avg_logprob": -0.151622,
+      "compression_ratio": 1.230366,
+      "end": 6285.76,
+      "no_speech_prob": 0.0,
+      "start": 6284.76,
+      "text": "小飞翔那么漂亮"
+    },
+    {
+      "avg_logprob": -0.151622,
+      "compression_ratio": 1.230366,
+      "end": 6286.76,
+      "no_speech_prob": 0.0,
+      "start": 6285.76,
+      "text": "摸着摸着"
+    },
+    {
+      "avg_logprob": -0.151622,
+      "compression_ratio": 1.230366,
+      "end": 6288.76,
+      "no_speech_prob": 0.0,
+      "start": 6286.76,
+      "text": "把小飞翔给摸睡着了"
+    },
+    {
+      "avg_logprob": -0.151622,
+      "compression_ratio": 1.230366,
+      "end": 6289.76,
+      "no_speech_prob": 0.0,
+      "start": 6288.76,
+      "text": "你这叫啥吗"
+    },
+    {
+      "avg_logprob": -0.151622,
+      "compression_ratio": 1.230366,
+      "end": 6290.76,
+      "no_speech_prob": 0.0,
+      "start": 6289.76,
+      "text": "是不是"
+    },
+    {
+      "avg_logprob": -0.151622,
+      "compression_ratio": 1.230366,
+      "end": 6291.76,
+      "no_speech_prob": 0.0,
+      "start": 6290.76,
+      "text": "对吧"
+    },
+    {
+      "avg_logprob": -0.151622,
+      "compression_ratio": 1.230366,
+      "end": 6292.76,
+      "no_speech_prob": 0.0,
+      "start": 6291.76,
+      "text": "现在这故事出名了啊"
+    },
+    {
+      "avg_logprob": -0.151622,
+      "compression_ratio": 1.230366,
+      "end": 6293.76,
+      "no_speech_prob": 0.0,
+      "start": 6292.76,
+      "text": "有梗了"
+    },
+    {
+      "avg_logprob": -0.151622,
+      "compression_ratio": 1.230366,
+      "end": 6294.76,
+      "no_speech_prob": 0.0,
+      "start": 6293.76,
+      "text": "小飞侠"
+    },
+    {
+      "avg_logprob": -0.151622,
+      "compression_ratio": 1.230366,
+      "end": 6297.76,
+      "no_speech_prob": 0.0,
+      "start": 6294.76,
+      "text": "我估计每天晚上都回吃尾哥"
+    },
+    {
+      "avg_logprob": -0.498862,
+      "compression_ratio": 0.625,
+      "end": 6299.76,
+      "no_speech_prob": 0.0,
+      "start": 6297.76,
+      "text": "要证明自己"
+    }
+  ],
+  "text": "词曲 李宗盛往事只能回味暂时日欲待入门舞会日月相伴谁能体会词计更解无事人非不知不觉天来心碎诺人不知已故去还不回词官人翻语相会Zither HarpZither HarpZither HarpZither HarpZither Harp时光已是永不回暂时只能回味暂时日欲待入门舞会日月相伴谁能体会人即冷占无事人非不知不觉天来心碎故人故事已故去还不回暂时暂时暂时相会呗 patch避免可避免呗 patch呗分分分 mum patch手做水春季崩潔 無是人非不知不覺 天來心碎故人故事 已故去還不非天是萬人關於你將會你對我這旦的困惑好好不盡你不焦尼不焦尼不焦尼不焦尼不焦尼不焦尼不焦尼不焦尼不焦尼不焦尼不焦尼不焦尼不焦尼不焦尼不焦尼不焦尼不焦尼不焦尼不焦尼不焦尼不焦尼不焦尼不焦尼不焦尼不焦尼不焦尼不焦尼不焦尼作词 李宗盛作曲 李宗盛作曲 李宗盛作曲 李宗盛作曲 李宗盛作曲 李宗盛作曲 李宗盛世光一世永不悔往事只能回味三世欲再入门误会日月相伴谁能体会四季耿蝶无是人非不知不觉天来心碎古人故事已故去还不回人世光轮转与您相会三十年如一载在东北南嘎拉到山东老家再到河南郑州然后就到北京了然后走向世界了就开始了浩荷荡荡史无前列的消灭上世界最邪恶的中国共产党的主力共产党已经奄奄一息香港的反送中运动新疆的大囚禁新疆的大消失人道 种族的打灭令主真相意表到世界上真正的蓝金黄金融超限战法律超限战的一个个事实无限的挑战无限的背叛奇迹刚刚开始时光一世永不回往事只能回味三十日欲待入门无悔日月相伴谁能体会四季耿皆无是人非不知不见天了心碎我这歌现在也是水平现在是越来越高最近这个唱歌的水平是越来越高刚刚刚刚刚刚刚刚一系列的好消息我都不好意思说了哎呀咋办呢你说兄弟姐妹们兄弟姐妹们人呐一定要记住关键是你在遇到问题和遇到人和遇到不痛快的事的时候你做出什么样的决定远比你在你得意的时候做什么决定更重要但是从任何角度就是太兴奋的时候不要做大决定太痛苦的时候不要做什么大的决定它是有科学道理的因为在不理智的情况下做的决定无论是痛苦还是说快乐之中做的决定都是不对的对吧这都是要慎重的对吧那么像这个咱们现在这个很多这个面对的事情战友们遇到了各种挑战的时候总是爱放弃放弃抱怨他对问题没有任何帮助就像在英国大家知道英国这个审的案子可以说是最最重要的就是这个破产案当中普恒普恒还有Trust D.Luke他最想得到的之一就是把UBS案子他抢走那个案子的成本是五亿美金这个A-State和Dumstate要赢过这个案子呢可能要一二十亿美金的这个索赔甚至几十亿美金但这个案子的当时管辖地就像当时这个太平联盟告奇哥一样在美国这个管辖地简直是荒唐至极的没有一件事在美国发生只有在美国搞了个管辖地的问题从一个不存在的三千万的担保变成了三亿美金的罚款而且太平联盟承认所有那个过去担保那个事情都还了还是告我然后不让我举证不让我出庭还搞了个简易判决都是在美国的渗透啊但是这个案子他有一个相关人就是说人家Dumstate和A-State告这个UBS的事情其中我是一个其中个人一个相关方但是呢就这个情况在英国被人家英国人家就是不管英国是世界上目前法律真正有法律的地方只有英国结果人家英国咔嚓人家把这案子管辖地定在英国因为当时这个这笔贷款当时那个总共是将近七百亿港币的投资七百亿港币七百亿港币的总额投资加在一起将近一千亿港币了这投资的管辖地签署地UBS就是伦敦就是伦敦就这UBS想把这个案子从英国拿走拿哪去呢拿到瑞士去拿去那瑞士对他有利吗结果人家英国就把案子给立上了就在英国管因此UBS上述在上述过程当中Trust D.LOOK来了就到英国去要把这个案子接管他要拿走这是其中一个目的结果最后是什么路克把代表我的律师给发压掉了然后呢要把这个案子呢就是要踢到瑞士去我估计路克这个家伙去跟这个瑞士UBS沟通要钱的情况下人家瑞士说了郭文贵可以踢出去那A-StateDance State跟郭文贵没关系啊你怎么能保证这个案子没有呢就是我UBS给你钱怎么能怎么能怎么能让这个所有这个案子彻底了结呢他做不到大概是上大概20天前吧不到一个月的时间你们没有注意到他是大直播的他是在YouTube上直播的英国大法官两个最有威望的法官就是开庭开庭什么呢就UBS上述就反对这个案子留在英国来审要不要领在英国在这个案子开审的头一天陆克宣布不出席而且陆克把代表我的律师给翻掉了多大的事你们都没注意到结果那天我直播也是我都没说结果是开庭了两个大法官是在YouTube人家是直播的开庭最有威望的全英国最大法官开完庭在三个小时前三个小时前英国最高法院两位大法官做出决定维持原判维持原判郭文贵不在这案子就我已经出局了但是A-State和Dance Day的案子还要留在英国这说明什么在美国案子咱没有一样能赢的在这个破产案上没有一样咱能赢的从南区法院到破产法院咱说啥呢No No No No No No No No No到了英国法院咱没有一样输的咋就这么绝对呢咋就这么奇怪呢是吧所以很多人都劝我哎呀和解呀咱拿啥和解去你和共产党你和这帮人和解就是跟共产党谈和解他能放过你吗你听那些律师说话那些律师跟你说的话是站在律师角度说的话他知道多少关于爆料革命新中国联邦和共产党的事情呢他到了英国那种骚扰没有人受得了的是吧UBS多有钱呢我的老天爷呀是吧那些人家A-State和Dance Day的律师还有那当事人还有那当事人还有某些基金投资的说Miles跟他们和解得了给你几亿美金我说我说了不算我说算也不能让你和解和什么解哪来的和解坚持到最后20秒很重要你不能像小飞侠这才20多岁小飞翔那么漂亮摸着摸着把小飞翔给摸睡着了你这叫啥吗是不是对吧现在这故事出名了啊有梗了小飞侠我估计每天晚上都回吃尾哥要证明自己"
+}

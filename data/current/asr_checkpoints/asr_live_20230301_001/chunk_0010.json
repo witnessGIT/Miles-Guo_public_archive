@@ -1,0 +1,568 @@
+{
+  "chunk_audio_sha256": "632a99dab3008aa612f683c135669b0dd4523e6d1186ea1507f8edda15dd20ab",
+  "chunk_index": 10,
+  "completed_at": "2026-10-30T08:06:47Z",
+  "language": "zh",
+  "live_id": "LIVE_20230301_001",
+  "media_committed_to_git": false,
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "offset_sec": 9000,
+  "paid_api_used": false,
+  "processing_location": "github-hosted-macos-arm64",
+  "schema_version": "cloud-asr-chunk-v1",
+  "segments": [
+    {
+      "avg_logprob": -0.383675,
+      "compression_ratio": 1.34466,
+      "end": 9004.28,
+      "no_speech_prob": 0.0,
+      "start": 9000.0,
+      "text": "很健康 还有中人 我们的中人"
+    },
+    {
+      "avg_logprob": -0.383675,
+      "compression_ratio": 1.34466,
+      "end": 9007.94,
+      "no_speech_prob": 0.0,
+      "start": 9004.28,
+      "text": "爱跳舞的中人 那个中人"
+    },
+    {
+      "avg_logprob": -0.383675,
+      "compression_ratio": 1.34466,
+      "end": 9011.1,
+      "no_speech_prob": 0.0,
+      "start": 9007.94,
+      "text": "那个老厉害了 中人"
+    },
+    {
+      "avg_logprob": -0.383675,
+      "compression_ratio": 1.34466,
+      "end": 9015.28,
+      "no_speech_prob": 0.0,
+      "start": 9011.1,
+      "text": "很多 很多 还有几个混血儿"
+    },
+    {
+      "avg_logprob": -0.383675,
+      "compression_ratio": 1.34466,
+      "end": 9018.62,
+      "no_speech_prob": 0.0,
+      "start": 9015.28,
+      "text": "我们战友的混血儿 都来了"
+    },
+    {
+      "avg_logprob": -0.383675,
+      "compression_ratio": 1.34466,
+      "end": 9022.88,
+      "no_speech_prob": 0.0,
+      "start": 9018.62,
+      "text": "行了 兄弟姐妹们 今天的爆料就到此为止"
+    },
+    {
+      "avg_logprob": -0.383675,
+      "compression_ratio": 1.34466,
+      "end": 9024.6,
+      "no_speech_prob": 0.0,
+      "start": 9022.88,
+      "text": "七哥要给你们挣钱去了"
+    },
+    {
+      "avg_logprob": -0.383675,
+      "compression_ratio": 1.34466,
+      "end": 9028.04,
+      "no_speech_prob": 0.0,
+      "start": 9024.6,
+      "text": "接下来我们要放歌 听歌"
+    },
+    {
+      "avg_logprob": -0.486546,
+      "compression_ratio": 1.162162,
+      "end": 9031.64,
+      "no_speech_prob": 0.0,
+      "start": 9028.04,
+      "text": "这是啥歌啊 摸进房子去了"
+    },
+    {
+      "avg_logprob": -0.486546,
+      "compression_ratio": 1.162162,
+      "end": 9036.54,
+      "no_speech_prob": 0.0,
+      "start": 9034.54,
+      "text": "今天是大日子"
+    },
+    {
+      "avg_logprob": -0.486546,
+      "compression_ratio": 1.162162,
+      "end": 9039.98,
+      "no_speech_prob": 0.0,
+      "start": 9037.68,
+      "text": "兄弟姐妹们 记住今天吧"
+    },
+    {
+      "avg_logprob": -0.486546,
+      "compression_ratio": 1.162162,
+      "end": 9046.26,
+      "no_speech_prob": 0.0,
+      "start": 9042.86,
+      "text": "咱们星期天的直播见"
+    },
+    {
+      "avg_logprob": -0.486546,
+      "compression_ratio": 1.162162,
+      "end": 9053.0,
+      "no_speech_prob": 0.0,
+      "start": 9049.36,
+      "text": "今天七哥有点黄 抱歉了 兄弟姐妹们"
+    },
+    {
+      "avg_logprob": -0.486546,
+      "compression_ratio": 1.162162,
+      "end": 9057.34,
+      "no_speech_prob": 0.0,
+      "start": 9056.16,
+      "text": "灭过那血吧"
+    },
+    {
+      "avg_logprob": -1.198035,
+      "compression_ratio": 4.188889,
+      "end": 9059.38,
+      "no_speech_prob": 0.0,
+      "start": 9058.04,
+      "text": "我下厨的遥兴 带我看 ter你"
+    },
+    {
+      "avg_logprob": -1.198035,
+      "compression_ratio": 4.188889,
+      "end": 9059.8,
+      "no_speech_prob": 0.0,
+      "start": 9059.38,
+      "text": "不在你"
+    },
+    {
+      "avg_logprob": -1.198035,
+      "compression_ratio": 4.188889,
+      "end": 9060.1,
+      "no_speech_prob": 0.0,
+      "start": 9059.8,
+      "text": "我下誨的 fail"
+    },
+    {
+      "avg_logprob": -1.198035,
+      "compression_ratio": 4.188889,
+      "end": 9060.54,
+      "no_speech_prob": 0.0,
+      "start": 9060.1,
+      "text": "我下誨的一遥兴 惨的"
+    },
+    {
+      "avg_logprob": -1.198035,
+      "compression_ratio": 4.188889,
+      "end": 9060.82,
+      "no_speech_prob": 0.0,
+      "start": 9060.54,
+      "text": "我下誨的适寶"
+    },
+    {
+      "avg_logprob": -1.198035,
+      "compression_ratio": 4.188889,
+      "end": 9061.1,
+      "no_speech_prob": 0.0,
+      "start": 9060.82,
+      "text": "我下誨的适寶"
+    },
+    {
+      "avg_logprob": -1.198035,
+      "compression_ratio": 4.188889,
+      "end": 9061.48,
+      "no_speech_prob": 0.0,
+      "start": 9061.1,
+      "text": "我下誨的适寶"
+    },
+    {
+      "avg_logprob": -1.198035,
+      "compression_ratio": 4.188889,
+      "end": 9061.86,
+      "no_speech_prob": 0.0,
+      "start": 9061.48,
+      "text": "我下誨的适寶"
+    },
+    {
+      "avg_logprob": -1.198035,
+      "compression_ratio": 4.188889,
+      "end": 9062.16,
+      "no_speech_prob": 0.0,
+      "start": 9061.86,
+      "text": "我下誨的适寶"
+    },
+    {
+      "avg_logprob": -1.198035,
+      "compression_ratio": 4.188889,
+      "end": 9062.44,
+      "no_speech_prob": 0.0,
+      "start": 9062.16,
+      "text": "我下誨的适寶"
+    },
+    {
+      "avg_logprob": -1.198035,
+      "compression_ratio": 4.188889,
+      "end": 9062.6,
+      "no_speech_prob": 0.0,
+      "start": 9062.44,
+      "text": "我下誨的适寶"
+    },
+    {
+      "avg_logprob": -1.198035,
+      "compression_ratio": 4.188889,
+      "end": 9062.78,
+      "no_speech_prob": 0.0,
+      "start": 9062.6,
+      "text": "我下誨的适寶"
+    },
+    {
+      "avg_logprob": -1.198035,
+      "compression_ratio": 4.188889,
+      "end": 9062.98,
+      "no_speech_prob": 0.0,
+      "start": 9062.78,
+      "text": "我下誨的适寶"
+    },
+    {
+      "avg_logprob": -1.198035,
+      "compression_ratio": 4.188889,
+      "end": 9063.14,
+      "no_speech_prob": 0.0,
+      "start": 9062.98,
+      "text": "我下誨的适寶"
+    },
+    {
+      "avg_logprob": -1.198035,
+      "compression_ratio": 4.188889,
+      "end": 9063.28,
+      "no_speech_prob": 0.0,
+      "start": 9063.14,
+      "text": "我下誨的适寶"
+    },
+    {
+      "avg_logprob": -1.198035,
+      "compression_ratio": 4.188889,
+      "end": 9063.44,
+      "no_speech_prob": 0.0,
+      "start": 9063.28,
+      "text": "我下誨的适寶"
+    },
+    {
+      "avg_logprob": -1.198035,
+      "compression_ratio": 4.188889,
+      "end": 9063.58,
+      "no_speech_prob": 0.0,
+      "start": 9063.44,
+      "text": "我下誨的适寶"
+    },
+    {
+      "avg_logprob": -1.198035,
+      "compression_ratio": 4.188889,
+      "end": 9063.76,
+      "no_speech_prob": 0.0,
+      "start": 9063.58,
+      "text": "我下誨的适寶"
+    },
+    {
+      "avg_logprob": -1.198035,
+      "compression_ratio": 4.188889,
+      "end": 9064.02,
+      "no_speech_prob": 0.0,
+      "start": 9063.76,
+      "text": "我下誨的适寶"
+    },
+    {
+      "avg_logprob": -1.198035,
+      "compression_ratio": 4.188889,
+      "end": 9064.22,
+      "no_speech_prob": 0.0,
+      "start": 9064.02,
+      "text": "我下誨的适寶"
+    },
+    {
+      "avg_logprob": -0.824427,
+      "compression_ratio": 0.5,
+      "end": 9094.2,
+      "no_speech_prob": 0.0,
+      "start": 9064.22,
+      "text": "我爱你"
+    },
+    {
+      "avg_logprob": -0.870695,
+      "compression_ratio": 0.5,
+      "end": 9124.18,
+      "no_speech_prob": 0.0,
+      "start": 9094.2,
+      "text": "我爱你"
+    },
+    {
+      "avg_logprob": -0.328989,
+      "compression_ratio": 0.5,
+      "end": 9154.18,
+      "no_speech_prob": 0.0,
+      "start": 9124.2,
+      "text": "我爱你"
+    },
+    {
+      "avg_logprob": -0.374125,
+      "compression_ratio": 0.846154,
+      "end": 9164.18,
+      "no_speech_prob": 0.0,
+      "start": 9154.18,
+      "text": "我爱你"
+    },
+    {
+      "avg_logprob": -0.374125,
+      "compression_ratio": 0.846154,
+      "end": 9168.18,
+      "no_speech_prob": 0.0,
+      "start": 9164.18,
+      "text": "烈弓的雪"
+    },
+    {
+      "avg_logprob": -0.374125,
+      "compression_ratio": 0.846154,
+      "end": 9172.18,
+      "no_speech_prob": 0.0,
+      "start": 9168.18,
+      "text": "红红烈烈"
+    },
+    {
+      "avg_logprob": -0.356291,
+      "compression_ratio": 0.86747,
+      "end": 9176.18,
+      "no_speech_prob": 0.0,
+      "start": 9172.18,
+      "text": "满山边野"
+    },
+    {
+      "avg_logprob": -0.356291,
+      "compression_ratio": 0.86747,
+      "end": 9180.18,
+      "no_speech_prob": 0.0,
+      "start": 9176.18,
+      "text": "你有自己的无瑕的身体"
+    },
+    {
+      "avg_logprob": -0.356291,
+      "compression_ratio": 0.86747,
+      "end": 9184.18,
+      "no_speech_prob": 0.0,
+      "start": 9180.18,
+      "text": "精华被谎言笼罩的世界"
+    },
+    {
+      "avg_logprob": -0.403174,
+      "compression_ratio": 0.851351,
+      "end": 9188.18,
+      "no_speech_prob": 0.0,
+      "start": 9184.18,
+      "text": "你把真相"
+    },
+    {
+      "avg_logprob": -0.403174,
+      "compression_ratio": 0.851351,
+      "end": 9192.18,
+      "no_speech_prob": 0.0,
+      "start": 9188.18,
+      "text": "钻铁给了人间"
+    },
+    {
+      "avg_logprob": -0.403174,
+      "compression_ratio": 0.851351,
+      "end": 9196.18,
+      "no_speech_prob": 0.0,
+      "start": 9192.18,
+      "text": "唤醒那无尽泪"
+    },
+    {
+      "avg_logprob": -0.403174,
+      "compression_ratio": 0.851351,
+      "end": 9200.18,
+      "no_speech_prob": 0.0,
+      "start": 9196.18,
+      "text": "沉睡的晴天"
+    },
+    {
+      "avg_logprob": -0.533101,
+      "compression_ratio": 0.710526,
+      "end": 9202.18,
+      "no_speech_prob": 0.0,
+      "start": 9200.18,
+      "text": "啊"
+    },
+    {
+      "avg_logprob": -0.533101,
+      "compression_ratio": 0.710526,
+      "end": 9208.18,
+      "no_speech_prob": 0.0,
+      "start": 9202.18,
+      "text": "我爱你"
+    },
+    {
+      "avg_logprob": -0.533101,
+      "compression_ratio": 0.710526,
+      "end": 9210.18,
+      "no_speech_prob": 0.0,
+      "start": 9208.18,
+      "text": "啊"
+    },
+    {
+      "avg_logprob": -0.533101,
+      "compression_ratio": 0.710526,
+      "end": 9216.18,
+      "no_speech_prob": 0.0,
+      "start": 9210.18,
+      "text": "别公的雪"
+    },
+    {
+      "avg_logprob": -0.756399,
+      "compression_ratio": 0.789474,
+      "end": 9222.18,
+      "no_speech_prob": 0.0,
+      "start": 9216.18,
+      "text": "白白白的雪"
+    },
+    {
+      "avg_logprob": -0.68747,
+      "compression_ratio": 2.375,
+      "end": 9224.18,
+      "no_speech_prob": 0.0,
+      "start": 9222.18,
+      "text": "我爱你"
+    },
+    {
+      "avg_logprob": -0.68747,
+      "compression_ratio": 2.375,
+      "end": 9226.18,
+      "no_speech_prob": 0.0,
+      "start": 9224.18,
+      "text": "我爱你"
+    },
+    {
+      "avg_logprob": -0.68747,
+      "compression_ratio": 2.375,
+      "end": 9227.18,
+      "no_speech_prob": 0.0,
+      "start": 9226.18,
+      "text": "你"
+    },
+    {
+      "avg_logprob": -0.68747,
+      "compression_ratio": 2.375,
+      "end": 9228.18,
+      "no_speech_prob": 0.0,
+      "start": 9227.18,
+      "text": "我爱你"
+    },
+    {
+      "avg_logprob": -0.68747,
+      "compression_ratio": 2.375,
+      "end": 9230.18,
+      "no_speech_prob": 0.0,
+      "start": 9228.18,
+      "text": "我爱你"
+    },
+    {
+      "avg_logprob": -0.68747,
+      "compression_ratio": 2.375,
+      "end": 9232.18,
+      "no_speech_prob": 0.0,
+      "start": 9230.18,
+      "text": "我爱你"
+    },
+    {
+      "avg_logprob": -0.68747,
+      "compression_ratio": 2.375,
+      "end": 9234.18,
+      "no_speech_prob": 0.0,
+      "start": 9232.18,
+      "text": "我爱你"
+    },
+    {
+      "avg_logprob": -0.564479,
+      "compression_ratio": 1.071429,
+      "end": 9236.18,
+      "no_speech_prob": 0.0,
+      "start": 9234.18,
+      "text": "啊"
+    },
+    {
+      "avg_logprob": -0.564479,
+      "compression_ratio": 1.071429,
+      "end": 9238.18,
+      "no_speech_prob": 0.0,
+      "start": 9236.18,
+      "text": "啊"
+    },
+    {
+      "avg_logprob": -0.564479,
+      "compression_ratio": 1.071429,
+      "end": 9240.18,
+      "no_speech_prob": 0.0,
+      "start": 9238.18,
+      "text": "啊"
+    },
+    {
+      "avg_logprob": -0.564479,
+      "compression_ratio": 1.071429,
+      "end": 9242.18,
+      "no_speech_prob": 0.0,
+      "start": 9240.18,
+      "text": "啊"
+    },
+    {
+      "avg_logprob": -0.564479,
+      "compression_ratio": 1.071429,
+      "end": 9244.18,
+      "no_speech_prob": 0.0,
+      "start": 9242.18,
+      "text": "啊"
+    },
+    {
+      "avg_logprob": -0.36617,
+      "compression_ratio": 1.071429,
+      "end": 9246.18,
+      "no_speech_prob": 0.0,
+      "start": 9244.18,
+      "text": "啊"
+    },
+    {
+      "avg_logprob": -0.36617,
+      "compression_ratio": 1.071429,
+      "end": 9248.18,
+      "no_speech_prob": 0.0,
+      "start": 9246.18,
+      "text": "啊"
+    },
+    {
+      "avg_logprob": -0.36617,
+      "compression_ratio": 1.071429,
+      "end": 9250.18,
+      "no_speech_prob": 0.0,
+      "start": 9248.18,
+      "text": "啊"
+    },
+    {
+      "avg_logprob": -0.36617,
+      "compression_ratio": 1.071429,
+      "end": 9252.18,
+      "no_speech_prob": 0.0,
+      "start": 9250.18,
+      "text": "啊"
+    },
+    {
+      "avg_logprob": -0.694196,
+      "compression_ratio": 0.631579,
+      "end": 9254.18,
+      "no_speech_prob": 0.0,
+      "start": 9252.18,
+      "text": "我爱你"
+    }
+  ],
+  "text": "很健康 还有中人 我们的中人爱跳舞的中人 那个中人那个老厉害了 中人很多 很多 还有几个混血儿我们战友的混血儿 都来了行了 兄弟姐妹们 今天的爆料就到此为止七哥要给你们挣钱去了接下来我们要放歌 听歌这是啥歌啊 摸进房子去了今天是大日子兄弟姐妹们 记住今天吧咱们星期天的直播见今天七哥有点黄 抱歉了 兄弟姐妹们灭过那血吧我下厨的遥兴 带我看 ter你不在你我下誨的 fail我下誨的一遥兴 惨的我下誨的适寶我下誨的适寶我下誨的适寶我下誨的适寶我下誨的适寶我下誨的适寶我下誨的适寶我下誨的适寶我下誨的适寶我下誨的适寶我下誨的适寶我下誨的适寶我下誨的适寶我下誨的适寶我下誨的适寶我下誨的适寶我爱你我爱你我爱你我爱你烈弓的雪红红烈烈满山边野你有自己的无瑕的身体精华被谎言笼罩的世界你把真相钻铁给了人间唤醒那无尽泪沉睡的晴天啊我爱你啊别公的雪白白白的雪我爱你我爱你你我爱你我爱你我爱你我爱你啊啊啊啊啊啊啊啊啊我爱你"
+}

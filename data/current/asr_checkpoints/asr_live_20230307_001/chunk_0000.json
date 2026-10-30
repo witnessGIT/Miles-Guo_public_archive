@@ -1,0 +1,2488 @@
+{
+  "chunk_audio_sha256": "20a231d3ca5cf39dbf10aacdb98c66e8556b28783feea8bb190e14bd63f6243e",
+  "chunk_index": 0,
+  "completed_at": "2026-10-30T08:42:22Z",
+  "language": "zh",
+  "live_id": "LIVE_20230307_001",
+  "media_committed_to_git": false,
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "offset_sec": 0,
+  "paid_api_used": false,
+  "processing_location": "github-hosted-macos-arm64",
+  "schema_version": "cloud-asr-chunk-v1",
+  "segments": [
+    {
+      "avg_logprob": -0.402868,
+      "compression_ratio": 1.315217,
+      "end": 3.4,
+      "no_speech_prob": 0.0,
+      "start": 0.0,
+      "text": "哦!尊敬的三位好啊!"
+    },
+    {
+      "avg_logprob": -0.402868,
+      "compression_ratio": 1.315217,
+      "end": 6.4,
+      "no_speech_prob": 0.0,
+      "start": 3.9,
+      "text": "今天是3月8號啊!"
+    },
+    {
+      "avg_logprob": -0.402868,
+      "compression_ratio": 1.315217,
+      "end": 8.0,
+      "no_speech_prob": 0.0,
+      "start": 6.6,
+      "text": "7號7號7號!"
+    },
+    {
+      "avg_logprob": -0.402868,
+      "compression_ratio": 1.315217,
+      "end": 9.0,
+      "no_speech_prob": 0.0,
+      "start": 8.2,
+      "text": "哎我天哪!"
+    },
+    {
+      "avg_logprob": -0.402868,
+      "compression_ratio": 1.315217,
+      "end": 10.0,
+      "no_speech_prob": 0.0,
+      "start": 9.4,
+      "text": "7號7號!"
+    },
+    {
+      "avg_logprob": -0.402868,
+      "compression_ratio": 1.315217,
+      "end": 11.6,
+      "no_speech_prob": 0.0,
+      "start": 10.6,
+      "text": "兄弟姐妹們!"
+    },
+    {
+      "avg_logprob": -0.402868,
+      "compression_ratio": 1.315217,
+      "end": 15.3,
+      "no_speech_prob": 0.0,
+      "start": 12.3,
+      "text": "你們看到現在在全世界"
+    },
+    {
+      "avg_logprob": -0.402868,
+      "compression_ratio": 1.315217,
+      "end": 19.5,
+      "no_speech_prob": 0.0,
+      "start": 16.5,
+      "text": "所有的關於疫苗的災難大家感受到了嗎?"
+    },
+    {
+      "avg_logprob": -0.402868,
+      "compression_ratio": 1.315217,
+      "end": 22.2,
+      "no_speech_prob": 0.0,
+      "start": 20.5,
+      "text": "疫苗的災難!"
+    },
+    {
+      "avg_logprob": -0.402868,
+      "compression_ratio": 1.315217,
+      "end": 24.9,
+      "no_speech_prob": 0.0,
+      "start": 24.1,
+      "text": "兄弟姐妹們!"
+    },
+    {
+      "avg_logprob": -0.402868,
+      "compression_ratio": 1.315217,
+      "end": 28.7,
+      "no_speech_prob": 0.0,
+      "start": 25.3,
+      "text": "你能想像在英國的抗疫"
+    },
+    {
+      "avg_logprob": -0.278003,
+      "compression_ratio": 1.2,
+      "end": 34.1,
+      "no_speech_prob": 0.0,
+      "start": 28.7,
+      "text": "在德國正在整個全國上下的恐懼"
+    },
+    {
+      "avg_logprob": -0.278003,
+      "compression_ratio": 1.2,
+      "end": 38.2,
+      "no_speech_prob": 0.0,
+      "start": 34.7,
+      "text": "整個日本國在日本東京之外"
+    },
+    {
+      "avg_logprob": -0.278003,
+      "compression_ratio": 1.2,
+      "end": 39.4,
+      "no_speech_prob": 0.0,
+      "start": 38.2,
+      "text": "除了東京之外"
+    },
+    {
+      "avg_logprob": -0.278003,
+      "compression_ratio": 1.2,
+      "end": 42.9,
+      "no_speech_prob": 0.0,
+      "start": 39.7,
+      "text": "很多那些什麼北海盜的地方"
+    },
+    {
+      "avg_logprob": -0.278003,
+      "compression_ratio": 1.2,
+      "end": 44.7,
+      "no_speech_prob": 0.0,
+      "start": 43.3,
+      "text": "瑟瑟發抖啊!"
+    },
+    {
+      "avg_logprob": -0.278003,
+      "compression_ratio": 1.2,
+      "end": 46.7,
+      "no_speech_prob": 0.0,
+      "start": 45.6,
+      "text": "耶路撒冷!"
+    },
+    {
+      "avg_logprob": -0.278003,
+      "compression_ratio": 1.2,
+      "end": 49.2,
+      "no_speech_prob": 0.0,
+      "start": 48.5,
+      "text": "沙特!"
+    },
+    {
+      "avg_logprob": -0.278003,
+      "compression_ratio": 1.2,
+      "end": 50.7,
+      "no_speech_prob": 0.0,
+      "start": 49.9,
+      "text": "利亞德!"
+    },
+    {
+      "avg_logprob": -0.278003,
+      "compression_ratio": 1.2,
+      "end": 52.3,
+      "no_speech_prob": 0.0,
+      "start": 51.7,
+      "text": "非洲!"
+    },
+    {
+      "avg_logprob": -0.278003,
+      "compression_ratio": 1.2,
+      "end": 53.0,
+      "no_speech_prob": 0.0,
+      "start": 52.3,
+      "text": "開普敦!"
+    },
+    {
+      "avg_logprob": -0.278003,
+      "compression_ratio": 1.2,
+      "end": 58.2,
+      "no_speech_prob": 0.0,
+      "start": 54.9,
+      "text": "你去想想現在打了疫苗的人是什麼感受"
+    },
+    {
+      "avg_logprob": -0.304641,
+      "compression_ratio": 0.970588,
+      "end": 60.2,
+      "no_speech_prob": 0.0,
+      "start": 58.2,
+      "text": "就不要談美國加拿大了!"
+    },
+    {
+      "avg_logprob": -0.304641,
+      "compression_ratio": 0.970588,
+      "end": 64.5,
+      "no_speech_prob": 0.0,
+      "start": 62.2,
+      "text": "兄弟姐妹們!七哥說了幾年了!"
+    },
+    {
+      "avg_logprob": -0.304641,
+      "compression_ratio": 0.970588,
+      "end": 66.5,
+      "no_speech_prob": 0.0,
+      "start": 65.5,
+      "text": "去年!哎呀!"
+    },
+    {
+      "avg_logprob": -0.304641,
+      "compression_ratio": 0.970588,
+      "end": 67.4,
+      "no_speech_prob": 0.0,
+      "start": 66.6,
+      "text": "竟然有人說!"
+    },
+    {
+      "avg_logprob": -0.31562,
+      "compression_ratio": 1.133333,
+      "end": 70.1,
+      "no_speech_prob": 0.0,
+      "start": 67.4,
+      "text": "郭文貴不說這個疫苗災難來"
+    },
+    {
+      "avg_logprob": -0.31562,
+      "compression_ratio": 1.133333,
+      "end": 71.4,
+      "no_speech_prob": 0.0,
+      "start": 70.1,
+      "text": "會什麼樣怎麼樣嗎?"
+    },
+    {
+      "avg_logprob": -0.31562,
+      "compression_ratio": 1.133333,
+      "end": 72.8,
+      "no_speech_prob": 0.0,
+      "start": 71.4,
+      "text": "再沒怎麼樣嗎?"
+    },
+    {
+      "avg_logprob": -0.31562,
+      "compression_ratio": 1.133333,
+      "end": 74.7,
+      "no_speech_prob": 0.0,
+      "start": 73.8,
+      "text": "拜託!"
+    },
+    {
+      "avg_logprob": -0.31562,
+      "compression_ratio": 1.133333,
+      "end": 75.8,
+      "no_speech_prob": 0.0,
+      "start": 74.7,
+      "text": "那你去打兩針去!"
+    },
+    {
+      "avg_logprob": -0.31562,
+      "compression_ratio": 1.133333,
+      "end": 76.9,
+      "no_speech_prob": 0.0,
+      "start": 75.8,
+      "text": "打三針!"
+    },
+    {
+      "avg_logprob": -0.31562,
+      "compression_ratio": 1.133333,
+      "end": 79.4,
+      "no_speech_prob": 0.0,
+      "start": 77.6,
+      "text": "這個世界多恐怖啊!"
+    },
+    {
+      "avg_logprob": -0.31562,
+      "compression_ratio": 1.133333,
+      "end": 80.9,
+      "no_speech_prob": 0.0,
+      "start": 80.1,
+      "text": "第二!"
+    },
+    {
+      "avg_logprob": -0.31562,
+      "compression_ratio": 1.133333,
+      "end": 82.8,
+      "no_speech_prob": 0.0,
+      "start": 81.3,
+      "text": "大家看到現在"
+    },
+    {
+      "avg_logprob": -0.31562,
+      "compression_ratio": 1.133333,
+      "end": 85.6,
+      "no_speech_prob": 0.0,
+      "start": 83.6,
+      "text": "在所有的硅谷"
+    },
+    {
+      "avg_logprob": -0.397411,
+      "compression_ratio": 1.176471,
+      "end": 88.3,
+      "no_speech_prob": 0.0,
+      "start": 85.6,
+      "text": "所有的好萊塢"
+    },
+    {
+      "avg_logprob": -0.397411,
+      "compression_ratio": 1.176471,
+      "end": 90.1,
+      "no_speech_prob": 0.0,
+      "start": 88.9,
+      "text": "所有的華爾街"
+    },
+    {
+      "avg_logprob": -0.397411,
+      "compression_ratio": 1.176471,
+      "end": 92.9,
+      "no_speech_prob": 0.0,
+      "start": 91.1,
+      "text": "睜開你的雙眼"
+    },
+    {
+      "avg_logprob": -0.397411,
+      "compression_ratio": 1.176471,
+      "end": 95.0,
+      "no_speech_prob": 0.0,
+      "start": 93.6,
+      "text": "睡蒙蒙的雙眼"
+    },
+    {
+      "avg_logprob": -0.397411,
+      "compression_ratio": 1.176471,
+      "end": 96.9,
+      "no_speech_prob": 0.0,
+      "start": 95.0,
+      "text": "看看辦公室還有人嗎?"
+    },
+    {
+      "avg_logprob": -0.397411,
+      "compression_ratio": 1.176471,
+      "end": 99.6,
+      "no_speech_prob": 0.0,
+      "start": 97.6,
+      "text": "去看看倫敦金融城"
+    },
+    {
+      "avg_logprob": -0.397411,
+      "compression_ratio": 1.176471,
+      "end": 100.9,
+      "no_speech_prob": 0.0,
+      "start": 99.9,
+      "text": "去看看"
+    },
+    {
+      "avg_logprob": -0.397411,
+      "compression_ratio": 1.176471,
+      "end": 103.7,
+      "no_speech_prob": 0.0,
+      "start": 101.9,
+      "text": "整個的日本動靜"
+    },
+    {
+      "avg_logprob": -0.397411,
+      "compression_ratio": 1.176471,
+      "end": 104.8,
+      "no_speech_prob": 0.0,
+      "start": 104.0,
+      "text": "銀座"
+    },
+    {
+      "avg_logprob": -0.306698,
+      "compression_ratio": 1.358108,
+      "end": 107.6,
+      "no_speech_prob": 0.0,
+      "start": 104.8,
+      "text": "看看德國"
+    },
+    {
+      "avg_logprob": -0.306698,
+      "compression_ratio": 1.358108,
+      "end": 108.3,
+      "no_speech_prob": 0.0,
+      "start": 107.6,
+      "text": "博爾林"
+    },
+    {
+      "avg_logprob": -0.306698,
+      "compression_ratio": 1.358108,
+      "end": 110.6,
+      "no_speech_prob": 0.0,
+      "start": 109.8,
+      "text": "慕尼黑"
+    },
+    {
+      "avg_logprob": -0.306698,
+      "compression_ratio": 1.358108,
+      "end": 114.5,
+      "no_speech_prob": 0.0,
+      "start": 113.3,
+      "text": "去看看兄弟姐妹"
+    },
+    {
+      "avg_logprob": -0.306698,
+      "compression_ratio": 1.358108,
+      "end": 117.5,
+      "no_speech_prob": 0.0,
+      "start": 115.7,
+      "text": "這才是恐怖呢!"
+    },
+    {
+      "avg_logprob": -0.306698,
+      "compression_ratio": 1.358108,
+      "end": 119.9,
+      "no_speech_prob": 0.0,
+      "start": 119.5,
+      "text": "還有"
+    },
+    {
+      "avg_logprob": -0.306698,
+      "compression_ratio": 1.358108,
+      "end": 121.3,
+      "no_speech_prob": 0.0,
+      "start": 120.6,
+      "text": "兄弟姐妹們"
+    },
+    {
+      "avg_logprob": -0.306698,
+      "compression_ratio": 1.358108,
+      "end": 124.3,
+      "no_speech_prob": 0.0,
+      "start": 121.9,
+      "text": "你看看現在世界的電商"
+    },
+    {
+      "avg_logprob": -0.306698,
+      "compression_ratio": 1.358108,
+      "end": 126.0,
+      "no_speech_prob": 0.0,
+      "start": 124.9,
+      "text": "還有商業"
+    },
+    {
+      "avg_logprob": -0.306698,
+      "compression_ratio": 1.358108,
+      "end": 126.8,
+      "no_speech_prob": 0.0,
+      "start": 126.1,
+      "text": "貿易"
+    },
+    {
+      "avg_logprob": -0.306698,
+      "compression_ratio": 1.358108,
+      "end": 127.5,
+      "no_speech_prob": 0.0,
+      "start": 126.8,
+      "text": "碼頭"
+    },
+    {
+      "avg_logprob": -0.306698,
+      "compression_ratio": 1.358108,
+      "end": 129.7,
+      "no_speech_prob": 0.0,
+      "start": 128.5,
+      "text": "全世界的碼頭"
+    },
+    {
+      "avg_logprob": -0.306698,
+      "compression_ratio": 1.358108,
+      "end": 131.7,
+      "no_speech_prob": 0.0,
+      "start": 130.3,
+      "text": "貿易還有人嗎?"
+    },
+    {
+      "avg_logprob": -0.306698,
+      "compression_ratio": 1.358108,
+      "end": 132.7,
+      "no_speech_prob": 0.0,
+      "start": 131.7,
+      "text": "碼頭還有人嗎?"
+    },
+    {
+      "avg_logprob": -0.239004,
+      "compression_ratio": 1.283784,
+      "end": 135.0,
+      "no_speech_prob": 0.0,
+      "start": 132.7,
+      "text": "黑石"
+    },
+    {
+      "avg_logprob": -0.239004,
+      "compression_ratio": 1.283784,
+      "end": 137.3,
+      "no_speech_prob": 0.0,
+      "start": 136.1,
+      "text": "接下來是摩爾根"
+    },
+    {
+      "avg_logprob": -0.239004,
+      "compression_ratio": 1.283784,
+      "end": 140.2,
+      "no_speech_prob": 0.0,
+      "start": 138.4,
+      "text": "接下來是一系列的銀行"
+    },
+    {
+      "avg_logprob": -0.239004,
+      "compression_ratio": 1.283784,
+      "end": 141.9,
+      "no_speech_prob": 0.0,
+      "start": 140.5,
+      "text": "特別這個美國銀行"
+    },
+    {
+      "avg_logprob": -0.239004,
+      "compression_ratio": 1.283784,
+      "end": 143.3,
+      "no_speech_prob": 0.0,
+      "start": 142.3,
+      "text": "給共產黨勾兌的"
+    },
+    {
+      "avg_logprob": -0.239004,
+      "compression_ratio": 1.283784,
+      "end": 146.1,
+      "no_speech_prob": 0.0,
+      "start": 145.3,
+      "text": "加拿大"
+    },
+    {
+      "avg_logprob": -0.239004,
+      "compression_ratio": 1.283784,
+      "end": 146.9,
+      "no_speech_prob": 0.0,
+      "start": 146.1,
+      "text": "澳大利亞"
+    },
+    {
+      "avg_logprob": -0.239004,
+      "compression_ratio": 1.283784,
+      "end": 147.5,
+      "no_speech_prob": 0.0,
+      "start": 146.9,
+      "text": "回去"
+    },
+    {
+      "avg_logprob": -0.239004,
+      "compression_ratio": 1.283784,
+      "end": 149.8,
+      "no_speech_prob": 0.0,
+      "start": 147.8,
+      "text": "學片下倒下去金融機構"
+    },
+    {
+      "avg_logprob": -0.239004,
+      "compression_ratio": 1.283784,
+      "end": 152.0,
+      "no_speech_prob": 0.0,
+      "start": 151.0,
+      "text": "沒有理由"
+    },
+    {
+      "avg_logprob": -0.239004,
+      "compression_ratio": 1.283784,
+      "end": 154.3,
+      "no_speech_prob": 0.0,
+      "start": 152.6,
+      "text": "在他們製造了人類上"
+    },
+    {
+      "avg_logprob": -0.239004,
+      "compression_ratio": 1.283784,
+      "end": 156.0,
+      "no_speech_prob": 0.0,
+      "start": 154.3,
+      "text": "最大的金融監獄"
+    },
+    {
+      "avg_logprob": -0.239004,
+      "compression_ratio": 1.283784,
+      "end": 157.9,
+      "no_speech_prob": 0.0,
+      "start": 156.7,
+      "text": "貿易監獄"
+    },
+    {
+      "avg_logprob": -0.239004,
+      "compression_ratio": 1.283784,
+      "end": 159.3,
+      "no_speech_prob": 0.0,
+      "start": 157.9,
+      "text": "和共產黨勾兌"
+    },
+    {
+      "avg_logprob": -0.239004,
+      "compression_ratio": 1.283784,
+      "end": 160.6,
+      "no_speech_prob": 0.0,
+      "start": 159.5,
+      "text": "把中國人當奴隸"
+    },
+    {
+      "avg_logprob": -0.239004,
+      "compression_ratio": 1.283784,
+      "end": 161.8,
+      "no_speech_prob": 0.0,
+      "start": 160.6,
+      "text": "奴役幾十年"
+    },
+    {
+      "avg_logprob": -0.252223,
+      "compression_ratio": 1.267081,
+      "end": 164.4,
+      "no_speech_prob": 0.0,
+      "start": 161.8,
+      "text": "讓他們過著所謂的美好的生活"
+    },
+    {
+      "avg_logprob": -0.252223,
+      "compression_ratio": 1.267081,
+      "end": 166.4,
+      "no_speech_prob": 0.0,
+      "start": 165.0,
+      "text": "然後看著新疆人"
+    },
+    {
+      "avg_logprob": -0.252223,
+      "compression_ratio": 1.267081,
+      "end": 167.1,
+      "no_speech_prob": 0.0,
+      "start": 166.4,
+      "text": "西藏人"
+    },
+    {
+      "avg_logprob": -0.252223,
+      "compression_ratio": 1.267081,
+      "end": 168.0,
+      "no_speech_prob": 0.0,
+      "start": 167.1,
+      "text": "台灣人"
+    },
+    {
+      "avg_logprob": -0.252223,
+      "compression_ratio": 1.267081,
+      "end": 168.8,
+      "no_speech_prob": 0.0,
+      "start": 168.0,
+      "text": "香港人"
+    },
+    {
+      "avg_logprob": -0.252223,
+      "compression_ratio": 1.267081,
+      "end": 170.0,
+      "no_speech_prob": 0.0,
+      "start": 168.8,
+      "text": "活在恐懼之中"
+    },
+    {
+      "avg_logprob": -0.252223,
+      "compression_ratio": 1.267081,
+      "end": 171.6,
+      "no_speech_prob": 0.0,
+      "start": 171.0,
+      "text": "然後"
+    },
+    {
+      "avg_logprob": -0.252223,
+      "compression_ratio": 1.267081,
+      "end": 173.1,
+      "no_speech_prob": 0.0,
+      "start": 172.2,
+      "text": "繼續下去嗎?"
+    },
+    {
+      "avg_logprob": -0.252223,
+      "compression_ratio": 1.267081,
+      "end": 174.1,
+      "no_speech_prob": 0.0,
+      "start": 173.1,
+      "text": "會繼續下去嗎?"
+    },
+    {
+      "avg_logprob": -0.252223,
+      "compression_ratio": 1.267081,
+      "end": 176.2,
+      "no_speech_prob": 0.0,
+      "start": 174.6,
+      "text": "你製造了這樣的病毒"
+    },
+    {
+      "avg_logprob": -0.252223,
+      "compression_ratio": 1.267081,
+      "end": 177.6,
+      "no_speech_prob": 0.0,
+      "start": 176.2,
+      "text": "這個世界會繼續下去嗎?"
+    },
+    {
+      "avg_logprob": -0.475536,
+      "compression_ratio": 1.220994,
+      "end": 178.6,
+      "no_speech_prob": 0.0,
+      "start": 177.6,
+      "text": "所以說"
+    },
+    {
+      "avg_logprob": -0.475536,
+      "compression_ratio": 1.220994,
+      "end": 180.6,
+      "no_speech_prob": 0.0,
+      "start": 178.6,
+      "text": "所以說"
+    },
+    {
+      "avg_logprob": -0.475536,
+      "compression_ratio": 1.220994,
+      "end": 181.4,
+      "no_speech_prob": 0.0,
+      "start": 180.6,
+      "text": "兄弟姐妹們"
+    },
+    {
+      "avg_logprob": -0.475536,
+      "compression_ratio": 1.220994,
+      "end": 182.7,
+      "no_speech_prob": 0.0,
+      "start": 181.4,
+      "text": "太可怕了"
+    },
+    {
+      "avg_logprob": -0.475536,
+      "compression_ratio": 1.220994,
+      "end": 184.7,
+      "no_speech_prob": 0.0,
+      "start": 183.2,
+      "text": "然後現在共產黨內部"
+    },
+    {
+      "avg_logprob": -0.475536,
+      "compression_ratio": 1.220994,
+      "end": 186.9,
+      "no_speech_prob": 0.0,
+      "start": 185.3,
+      "text": "從昨天到今天很多人"
+    },
+    {
+      "avg_logprob": -0.475536,
+      "compression_ratio": 1.220994,
+      "end": 187.8,
+      "no_speech_prob": 0.0,
+      "start": 187.4,
+      "text": "歐洲人"
+    },
+    {
+      "avg_logprob": -0.475536,
+      "compression_ratio": 1.220994,
+      "end": 188.6,
+      "no_speech_prob": 0.0,
+      "start": 187.8,
+      "text": "美國人都說"
+    },
+    {
+      "avg_logprob": -0.475536,
+      "compression_ratio": 1.220994,
+      "end": 188.9,
+      "no_speech_prob": 0.0,
+      "start": 188.6,
+      "text": "哎呀"
+    },
+    {
+      "avg_logprob": -0.475536,
+      "compression_ratio": 1.220994,
+      "end": 189.0,
+      "no_speech_prob": 0.0,
+      "start": 188.9,
+      "text": "我"
+    },
+    {
+      "avg_logprob": -0.475536,
+      "compression_ratio": 1.220994,
+      "end": 189.6,
+      "no_speech_prob": 0.0,
+      "start": 189.0,
+      "text": "Miles"
+    },
+    {
+      "avg_logprob": -0.475536,
+      "compression_ratio": 1.220994,
+      "end": 191.0,
+      "no_speech_prob": 0.0,
+      "start": 190.2,
+      "text": "我發現"
+    },
+    {
+      "avg_logprob": -0.475536,
+      "compression_ratio": 1.220994,
+      "end": 193.9,
+      "no_speech_prob": 0.0,
+      "start": 191.5,
+      "text": "共產黨真的要準備跟我們開戰呢"
+    },
+    {
+      "avg_logprob": -0.475536,
+      "compression_ratio": 1.220994,
+      "end": 196.3,
+      "no_speech_prob": 0.0,
+      "start": 194.4,
+      "text": "共產黨已經準備好開戰了"
+    },
+    {
+      "avg_logprob": -0.368236,
+      "compression_ratio": 1.065789,
+      "end": 197.9,
+      "no_speech_prob": 0.0,
+      "start": 196.3,
+      "text": "哦天呐"
+    },
+    {
+      "avg_logprob": -0.368236,
+      "compression_ratio": 1.065789,
+      "end": 199.1,
+      "no_speech_prob": 0.0,
+      "start": 198.4,
+      "text": "My God"
+    },
+    {
+      "avg_logprob": -0.368236,
+      "compression_ratio": 1.065789,
+      "end": 201.2,
+      "no_speech_prob": 0.0,
+      "start": 200.1,
+      "text": "他們現在才明白"
+    },
+    {
+      "avg_logprob": -0.368236,
+      "compression_ratio": 1.065789,
+      "end": 203.7,
+      "no_speech_prob": 0.0,
+      "start": 201.6,
+      "text": "共產黨已經準備好跟他們開戰了"
+    },
+    {
+      "avg_logprob": -0.368236,
+      "compression_ratio": 1.065789,
+      "end": 204.9,
+      "no_speech_prob": 0.0,
+      "start": 203.7,
+      "text": "真想跟他們開戰"
+    },
+    {
+      "avg_logprob": -0.368236,
+      "compression_ratio": 1.065789,
+      "end": 206.1,
+      "no_speech_prob": 0.0,
+      "start": 205.3,
+      "text": "等著吧"
+    },
+    {
+      "avg_logprob": -0.368236,
+      "compression_ratio": 1.065789,
+      "end": 208.5,
+      "no_speech_prob": 0.0,
+      "start": 207.8,
+      "text": "貪婪"
+    },
+    {
+      "avg_logprob": -0.368236,
+      "compression_ratio": 1.065789,
+      "end": 209.6,
+      "no_speech_prob": 0.0,
+      "start": 208.9,
+      "text": "無知"
+    },
+    {
+      "avg_logprob": -0.368236,
+      "compression_ratio": 1.065789,
+      "end": 210.4,
+      "no_speech_prob": 0.0,
+      "start": 209.6,
+      "text": "傲慢"
+    },
+    {
+      "avg_logprob": -0.368236,
+      "compression_ratio": 1.065789,
+      "end": 211.2,
+      "no_speech_prob": 0.0,
+      "start": 210.5,
+      "text": "傲慢"
+    },
+    {
+      "avg_logprob": -0.368236,
+      "compression_ratio": 1.065789,
+      "end": 211.9,
+      "no_speech_prob": 0.0,
+      "start": 211.4,
+      "text": "愚蠢"
+    },
+    {
+      "avg_logprob": -0.368236,
+      "compression_ratio": 1.065789,
+      "end": 214.5,
+      "no_speech_prob": 0.0,
+      "start": 212.7,
+      "text": "讓他們迷惑了雙眼"
+    },
+    {
+      "avg_logprob": -0.280813,
+      "compression_ratio": 1.287879,
+      "end": 216.3,
+      "no_speech_prob": 0.0,
+      "start": 214.5,
+      "text": "哎呀"
+    },
+    {
+      "avg_logprob": -0.280813,
+      "compression_ratio": 1.287879,
+      "end": 218.4,
+      "no_speech_prob": 0.0,
+      "start": 217.9,
+      "text": "哎呀"
+    },
+    {
+      "avg_logprob": -0.280813,
+      "compression_ratio": 1.287879,
+      "end": 221.0,
+      "no_speech_prob": 0.0,
+      "start": 218.4,
+      "text": "共產黨這幾天開的秘密會議"
+    },
+    {
+      "avg_logprob": -0.280813,
+      "compression_ratio": 1.287879,
+      "end": 223.7,
+      "no_speech_prob": 0.0,
+      "start": 222.2,
+      "text": "所有的都在準備著什麼"
+    },
+    {
+      "avg_logprob": -0.280813,
+      "compression_ratio": 1.287879,
+      "end": 225.1,
+      "no_speech_prob": 0.0,
+      "start": 223.9,
+      "text": "內部抓人"
+    },
+    {
+      "avg_logprob": -0.280813,
+      "compression_ratio": 1.287879,
+      "end": 226.3,
+      "no_speech_prob": 0.0,
+      "start": 225.5,
+      "text": "不聽話"
+    },
+    {
+      "avg_logprob": -0.280813,
+      "compression_ratio": 1.287879,
+      "end": 227.2,
+      "no_speech_prob": 0.0,
+      "start": 226.3,
+      "text": "不聽指揮"
+    },
+    {
+      "avg_logprob": -0.280813,
+      "compression_ratio": 1.287879,
+      "end": 228.5,
+      "no_speech_prob": 0.0,
+      "start": 227.2,
+      "text": "不願意當炮灰的"
+    },
+    {
+      "avg_logprob": -0.280813,
+      "compression_ratio": 1.287879,
+      "end": 230.8,
+      "no_speech_prob": 0.0,
+      "start": 228.5,
+      "text": "不願意當黨奴的"
+    },
+    {
+      "avg_logprob": -0.280813,
+      "compression_ratio": 1.287879,
+      "end": 232.2,
+      "no_speech_prob": 0.0,
+      "start": 231.1,
+      "text": "統統抓"
+    },
+    {
+      "avg_logprob": -0.280813,
+      "compression_ratio": 1.287879,
+      "end": 233.4,
+      "no_speech_prob": 0.0,
+      "start": 232.2,
+      "text": "統統殺"
+    },
+    {
+      "avg_logprob": -0.280813,
+      "compression_ratio": 1.287879,
+      "end": 236.1,
+      "no_speech_prob": 0.0,
+      "start": 234.3,
+      "text": "所有的錢都歸黨管"
+    },
+    {
+      "avg_logprob": -0.280813,
+      "compression_ratio": 1.287879,
+      "end": 238.8,
+      "no_speech_prob": 0.0,
+      "start": 236.5,
+      "text": "黨一切都聽習死黃的"
+    },
+    {
+      "avg_logprob": -0.280813,
+      "compression_ratio": 1.287879,
+      "end": 241.8,
+      "no_speech_prob": 0.0,
+      "start": 239.6,
+      "text": "還在那兒無知愚蠢呢"
+    },
+    {
+      "avg_logprob": -0.280813,
+      "compression_ratio": 1.287879,
+      "end": 242.3,
+      "no_speech_prob": 0.0,
+      "start": 241.8,
+      "text": "是吧"
+    },
+    {
+      "avg_logprob": -0.348384,
+      "compression_ratio": 1.163636,
+      "end": 249.2,
+      "no_speech_prob": 0.0,
+      "start": 244.5,
+      "text": "習死黃是要把他集於耶穌"
+    },
+    {
+      "avg_logprob": -0.348384,
+      "compression_ratio": 1.163636,
+      "end": 251.2,
+      "no_speech_prob": 0.0,
+      "start": 250.2,
+      "text": "佛祖"
+    },
+    {
+      "avg_logprob": -0.348384,
+      "compression_ratio": 1.163636,
+      "end": 253.2,
+      "no_speech_prob": 0.0,
+      "start": 252.2,
+      "text": "阿拉"
+    },
+    {
+      "avg_logprob": -0.348384,
+      "compression_ratio": 1.163636,
+      "end": 256.6,
+      "no_speech_prob": 0.0,
+      "start": 254.3,
+      "text": "建築於一體的神"
+    },
+    {
+      "avg_logprob": -0.348384,
+      "compression_ratio": 1.163636,
+      "end": 262.0,
+      "no_speech_prob": 0.0,
+      "start": 257.6,
+      "text": "他就成了統治萬佛萬神的最高的神"
+    },
+    {
+      "avg_logprob": -0.348384,
+      "compression_ratio": 1.163636,
+      "end": 267.2,
+      "no_speech_prob": 0.0,
+      "start": 266.2,
+      "text": "而且"
+    },
+    {
+      "avg_logprob": -0.348384,
+      "compression_ratio": 1.163636,
+      "end": 269.3,
+      "no_speech_prob": 0.0,
+      "start": 268.2,
+      "text": "在俄羅斯"
+    },
+    {
+      "avg_logprob": -0.348384,
+      "compression_ratio": 1.163636,
+      "end": 271.3,
+      "no_speech_prob": 0.0,
+      "start": 269.3,
+      "text": "現在美國人經常討論"
+    },
+    {
+      "avg_logprob": -0.348384,
+      "compression_ratio": 1.163636,
+      "end": 274.3,
+      "no_speech_prob": 0.0,
+      "start": 272.1,
+      "text": "共產黨不會去支持俄羅斯的"
+    },
+    {
+      "avg_logprob": -0.57579,
+      "compression_ratio": 0.819672,
+      "end": 275.5,
+      "no_speech_prob": 0.0,
+      "start": 274.5,
+      "text": "走著看"
+    },
+    {
+      "avg_logprob": -0.57579,
+      "compression_ratio": 0.819672,
+      "end": 279.2,
+      "no_speech_prob": 0.0,
+      "start": 276.2,
+      "text": "Murkenstein被嚇到就不敢去台灣了"
+    },
+    {
+      "avg_logprob": -0.352141,
+      "compression_ratio": 1.10596,
+      "end": 281.9,
+      "no_speech_prob": 0.0,
+      "start": 279.2,
+      "text": "共產黨怎麼樣"
+    },
+    {
+      "avg_logprob": -0.352141,
+      "compression_ratio": 1.10596,
+      "end": 282.9,
+      "no_speech_prob": 0.0,
+      "start": 281.9,
+      "text": "是吧"
+    },
+    {
+      "avg_logprob": -0.352141,
+      "compression_ratio": 1.10596,
+      "end": 283.9,
+      "no_speech_prob": 0.0,
+      "start": 282.9,
+      "text": "屢屢得逞"
+    },
+    {
+      "avg_logprob": -0.352141,
+      "compression_ratio": 1.10596,
+      "end": 286.9,
+      "no_speech_prob": 0.0,
+      "start": 283.9,
+      "text": "就像當年希特勒"
+    },
+    {
+      "avg_logprob": -0.352141,
+      "compression_ratio": 1.10596,
+      "end": 287.9,
+      "no_speech_prob": 0.0,
+      "start": 286.9,
+      "text": "3月7號"
+    },
+    {
+      "avg_logprob": -0.352141,
+      "compression_ratio": 1.10596,
+      "end": 289.5,
+      "no_speech_prob": 0.0,
+      "start": 287.9,
+      "text": "跨國萊茵河一樣"
+    },
+    {
+      "avg_logprob": -0.352141,
+      "compression_ratio": 1.10596,
+      "end": 290.9,
+      "no_speech_prob": 0.0,
+      "start": 289.5,
+      "text": "屢屢得逞"
+    },
+    {
+      "avg_logprob": -0.352141,
+      "compression_ratio": 1.10596,
+      "end": 291.9,
+      "no_speech_prob": 0.0,
+      "start": 290.9,
+      "text": "然後就從"
+    },
+    {
+      "avg_logprob": -0.352141,
+      "compression_ratio": 1.10596,
+      "end": 293.9,
+      "no_speech_prob": 0.0,
+      "start": 291.9,
+      "text": "法國意大利"
+    },
+    {
+      "avg_logprob": -0.352141,
+      "compression_ratio": 1.10596,
+      "end": 294.9,
+      "no_speech_prob": 0.0,
+      "start": 293.9,
+      "text": "橫掃歐洲"
+    },
+    {
+      "avg_logprob": -0.352141,
+      "compression_ratio": 1.10596,
+      "end": 295.9,
+      "no_speech_prob": 0.0,
+      "start": 294.9,
+      "text": "是吧"
+    },
+    {
+      "avg_logprob": -0.352141,
+      "compression_ratio": 1.10596,
+      "end": 297.9,
+      "no_speech_prob": 0.0,
+      "start": 295.9,
+      "text": "因為他每次都得逞"
+    },
+    {
+      "avg_logprob": -0.365589,
+      "compression_ratio": 1.241379,
+      "end": 300.6,
+      "no_speech_prob": 0.0,
+      "start": 297.9,
+      "text": "太多的懦弱和無知"
+    },
+    {
+      "avg_logprob": -0.365589,
+      "compression_ratio": 1.241379,
+      "end": 301.6,
+      "no_speech_prob": 0.0,
+      "start": 300.6,
+      "text": "然後現在金融界"
+    },
+    {
+      "avg_logprob": -0.365589,
+      "compression_ratio": 1.241379,
+      "end": 302.6,
+      "no_speech_prob": 0.0,
+      "start": 301.6,
+      "text": "現在金融上"
+    },
+    {
+      "avg_logprob": -0.365589,
+      "compression_ratio": 1.241379,
+      "end": 305.6,
+      "no_speech_prob": 0.0,
+      "start": 302.6,
+      "text": "全世界還有人想到習近平那把錢拿回來了"
+    },
+    {
+      "avg_logprob": -0.365589,
+      "compression_ratio": 1.241379,
+      "end": 306.6,
+      "no_speech_prob": 0.0,
+      "start": 305.6,
+      "text": "習死黃"
+    },
+    {
+      "avg_logprob": -0.365589,
+      "compression_ratio": 1.241379,
+      "end": 307.6,
+      "no_speech_prob": 0.0,
+      "start": 306.6,
+      "text": "想做夢呢"
+    },
+    {
+      "avg_logprob": -0.365589,
+      "compression_ratio": 1.241379,
+      "end": 308.6,
+      "no_speech_prob": 0.0,
+      "start": 307.6,
+      "text": "你"
+    },
+    {
+      "avg_logprob": -0.365589,
+      "compression_ratio": 1.241379,
+      "end": 310.6,
+      "no_speech_prob": 0.0,
+      "start": 308.6,
+      "text": "還有什麼再度開放"
+    },
+    {
+      "avg_logprob": -0.365589,
+      "compression_ratio": 1.241379,
+      "end": 311.6,
+      "no_speech_prob": 0.0,
+      "start": 310.6,
+      "text": "還有人在評論"
+    },
+    {
+      "avg_logprob": -0.365589,
+      "compression_ratio": 1.241379,
+      "end": 314.6,
+      "no_speech_prob": 0.0,
+      "start": 311.6,
+      "text": "習在維是不是真的再度開放"
+    },
+    {
+      "avg_logprob": -0.252499,
+      "compression_ratio": 1.052288,
+      "end": 316.3,
+      "no_speech_prob": 0.0,
+      "start": 314.6,
+      "text": "還有利益"
+    },
+    {
+      "avg_logprob": -0.252499,
+      "compression_ratio": 1.052288,
+      "end": 317.3,
+      "no_speech_prob": 0.0,
+      "start": 316.3,
+      "text": "中國的GDP"
+    },
+    {
+      "avg_logprob": -0.252499,
+      "compression_ratio": 1.052288,
+      "end": 319.0,
+      "no_speech_prob": 0.0,
+      "start": 317.3,
+      "text": "還有5%"
+    },
+    {
+      "avg_logprob": -0.252499,
+      "compression_ratio": 1.052288,
+      "end": 319.9,
+      "no_speech_prob": 0.0,
+      "start": 319.0,
+      "text": "你做夢吧"
+    },
+    {
+      "avg_logprob": -0.252499,
+      "compression_ratio": 1.052288,
+      "end": 321.0,
+      "no_speech_prob": 0.0,
+      "start": 319.9,
+      "text": "你"
+    },
+    {
+      "avg_logprob": -0.252499,
+      "compression_ratio": 1.052288,
+      "end": 321.5,
+      "no_speech_prob": 0.0,
+      "start": 321.0,
+      "text": "戰友們"
+    },
+    {
+      "avg_logprob": -0.252499,
+      "compression_ratio": 1.052288,
+      "end": 322.9,
+      "no_speech_prob": 0.0,
+      "start": 321.5,
+      "text": "這個時候咱們要冷靜"
+    },
+    {
+      "avg_logprob": -0.252499,
+      "compression_ratio": 1.052288,
+      "end": 324.2,
+      "no_speech_prob": 0.0,
+      "start": 322.9,
+      "text": "咱是最大受益者"
+    },
+    {
+      "avg_logprob": -0.252499,
+      "compression_ratio": 1.052288,
+      "end": 330.5,
+      "no_speech_prob": 0.0,
+      "start": 326.6,
+      "text": "這個世界在疫苗面前沒有人是強大的"
+    },
+    {
+      "avg_logprob": -0.252499,
+      "compression_ratio": 1.052288,
+      "end": 331.3,
+      "no_speech_prob": 0.0,
+      "start": 330.5,
+      "text": "任何人"
+    },
+    {
+      "avg_logprob": -0.187437,
+      "compression_ratio": 1.243028,
+      "end": 336.1,
+      "no_speech_prob": 0.0,
+      "start": 331.3,
+      "text": "在經濟危機面前任何人都是很渺小的"
+    },
+    {
+      "avg_logprob": -0.187437,
+      "compression_ratio": 1.243028,
+      "end": 340.1,
+      "no_speech_prob": 0.0,
+      "start": 337.9,
+      "text": "還有現在最重要的要嘗試"
+    },
+    {
+      "avg_logprob": -0.187437,
+      "compression_ratio": 1.243028,
+      "end": 343.9,
+      "no_speech_prob": 0.0,
+      "start": 340.6,
+      "text": "發展我們的整個的A10項目"
+    },
+    {
+      "avg_logprob": -0.187437,
+      "compression_ratio": 1.243028,
+      "end": 346.9,
+      "no_speech_prob": 0.0,
+      "start": 343.9,
+      "text": "G Club卡把戰友們凝聚在一起"
+    },
+    {
+      "avg_logprob": -0.187437,
+      "compression_ratio": 1.243028,
+      "end": 349.5,
+      "no_speech_prob": 0.0,
+      "start": 347.7,
+      "text": "在全世界沒有貨幣的時候"
+    },
+    {
+      "avg_logprob": -0.187437,
+      "compression_ratio": 1.243028,
+      "end": 351.2,
+      "no_speech_prob": 0.0,
+      "start": 349.5,
+      "text": "咱們有自己的貨幣"
+    },
+    {
+      "avg_logprob": -0.187437,
+      "compression_ratio": 1.243028,
+      "end": 352.7,
+      "no_speech_prob": 0.0,
+      "start": 351.2,
+      "text": "有自己的交易所"
+    },
+    {
+      "avg_logprob": -0.187437,
+      "compression_ratio": 1.243028,
+      "end": 357.0,
+      "no_speech_prob": 0.0,
+      "start": 354.4,
+      "text": "你們很多戰友看不慣自己的戰友"
+    },
+    {
+      "avg_logprob": -0.187437,
+      "compression_ratio": 1.243028,
+      "end": 360.7,
+      "no_speech_prob": 0.0,
+      "start": 357.5,
+      "text": "這些戰友是世界上未來最值錢的"
+    },
+    {
+      "avg_logprob": -0.247124,
+      "compression_ratio": 1.274611,
+      "end": 362.4,
+      "no_speech_prob": 0.0,
+      "start": 361.3,
+      "text": "因為他健康"
+    },
+    {
+      "avg_logprob": -0.247124,
+      "compression_ratio": 1.274611,
+      "end": 365.2,
+      "no_speech_prob": 0.0,
+      "start": 362.9,
+      "text": "因為他沒有過去的累贅"
+    },
+    {
+      "avg_logprob": -0.247124,
+      "compression_ratio": 1.274611,
+      "end": 368.7,
+      "no_speech_prob": 0.0,
+      "start": 367.8,
+      "text": "珍惜吧"
+    },
+    {
+      "avg_logprob": -0.247124,
+      "compression_ratio": 1.274611,
+      "end": 372.1,
+      "no_speech_prob": 0.0,
+      "start": 370.3,
+      "text": "很多戰友現在牢騷漫服"
+    },
+    {
+      "avg_logprob": -0.247124,
+      "compression_ratio": 1.274611,
+      "end": 374.2,
+      "no_speech_prob": 0.0,
+      "start": 372.1,
+      "text": "是因為你的標準錯了"
+    },
+    {
+      "avg_logprob": -0.247124,
+      "compression_ratio": 1.274611,
+      "end": 377.0,
+      "no_speech_prob": 0.0,
+      "start": 374.2,
+      "text": "很多人拿著你自己的標準來看戰友"
+    },
+    {
+      "avg_logprob": -0.247124,
+      "compression_ratio": 1.274611,
+      "end": 378.4,
+      "no_speech_prob": 0.0,
+      "start": 377.4,
+      "text": "不要這麼看"
+    },
+    {
+      "avg_logprob": -0.247124,
+      "compression_ratio": 1.274611,
+      "end": 379.6,
+      "no_speech_prob": 0.0,
+      "start": 378.4,
+      "text": "那是無知的"
+    },
+    {
+      "avg_logprob": -0.247124,
+      "compression_ratio": 1.274611,
+      "end": 384.3,
+      "no_speech_prob": 0.0,
+      "start": 382.9,
+      "text": "你看咱們這個件衣服"
+    },
+    {
+      "avg_logprob": -0.247124,
+      "compression_ratio": 1.274611,
+      "end": 385.1,
+      "no_speech_prob": 0.0,
+      "start": 384.6,
+      "text": "人家"
+    },
+    {
+      "avg_logprob": -0.247124,
+      "compression_ratio": 1.274611,
+      "end": 387.1,
+      "no_speech_prob": 0.0,
+      "start": 385.9,
+      "text": "你看這料子"
+    },
+    {
+      "avg_logprob": -0.247124,
+      "compression_ratio": 1.274611,
+      "end": 388.4,
+      "no_speech_prob": 0.0,
+      "start": 387.4,
+      "text": "跟水一樣"
+    },
+    {
+      "avg_logprob": -0.438473,
+      "compression_ratio": 1.22069,
+      "end": 389.7,
+      "no_speech_prob": 0.0,
+      "start": 388.4,
+      "text": "一位"
+    },
+    {
+      "avg_logprob": -0.438473,
+      "compression_ratio": 1.22069,
+      "end": 389.8,
+      "no_speech_prob": 0.0,
+      "start": 389.7,
+      "text": "一位"
+    },
+    {
+      "avg_logprob": -0.438473,
+      "compression_ratio": 1.22069,
+      "end": 390.8,
+      "no_speech_prob": 0.0,
+      "start": 390.1,
+      "text": "法國的"
+    },
+    {
+      "avg_logprob": -0.438473,
+      "compression_ratio": 1.22069,
+      "end": 392.0,
+      "no_speech_prob": 0.0,
+      "start": 391.2,
+      "text": "咱們哥們"
+    },
+    {
+      "avg_logprob": -0.438473,
+      "compression_ratio": 1.22069,
+      "end": 392.9,
+      "no_speech_prob": 0.0,
+      "start": 392.0,
+      "text": "我的朋友穿"
+    },
+    {
+      "avg_logprob": -0.438473,
+      "compression_ratio": 1.22069,
+      "end": 394.1,
+      "no_speech_prob": 0.0,
+      "start": 392.9,
+      "text": "人家穿的感覺"
+    },
+    {
+      "avg_logprob": -0.438473,
+      "compression_ratio": 1.22069,
+      "end": 395.3,
+      "no_speech_prob": 0.0,
+      "start": 394.1,
+      "text": "還有一個日本人一家穿"
+    },
+    {
+      "avg_logprob": -0.438473,
+      "compression_ratio": 1.22069,
+      "end": 396.2,
+      "no_speech_prob": 0.0,
+      "start": 395.8,
+      "text": "是吧"
+    },
+    {
+      "avg_logprob": -0.438473,
+      "compression_ratio": 1.22069,
+      "end": 397.3,
+      "no_speech_prob": 0.0,
+      "start": 396.6,
+      "text": "喀那感覺"
+    },
+    {
+      "avg_logprob": -0.438473,
+      "compression_ratio": 1.22069,
+      "end": 398.4,
+      "no_speech_prob": 0.0,
+      "start": 397.7,
+      "text": "穿的真好"
+    },
+    {
+      "avg_logprob": -0.438473,
+      "compression_ratio": 1.22069,
+      "end": 399.4,
+      "no_speech_prob": 0.0,
+      "start": 398.4,
+      "text": "這個是要穿出"
+    },
+    {
+      "avg_logprob": -0.438473,
+      "compression_ratio": 1.22069,
+      "end": 400.5,
+      "no_speech_prob": 0.0,
+      "start": 399.8,
+      "text": "瀟灑"
+    },
+    {
+      "avg_logprob": -0.438473,
+      "compression_ratio": 1.22069,
+      "end": 401.8,
+      "no_speech_prob": 0.0,
+      "start": 400.7,
+      "text": "浪漫出來的"
+    },
+    {
+      "avg_logprob": -0.438473,
+      "compression_ratio": 1.22069,
+      "end": 402.2,
+      "no_speech_prob": 0.0,
+      "start": 401.8,
+      "text": "你看"
+    },
+    {
+      "avg_logprob": -0.438473,
+      "compression_ratio": 1.22069,
+      "end": 403.7,
+      "no_speech_prob": 0.0,
+      "start": 403.3,
+      "text": "是吧"
+    },
+    {
+      "avg_logprob": -0.491583,
+      "compression_ratio": 1.243243,
+      "end": 407.9,
+      "no_speech_prob": 0.0,
+      "start": 403.7,
+      "text": "你要把它穿的潮洒浪漫出來才可以"
+    },
+    {
+      "avg_logprob": -0.491583,
+      "compression_ratio": 1.243243,
+      "end": 409.6,
+      "no_speech_prob": 0.0,
+      "start": 409.1,
+      "text": "這才是"
+    },
+    {
+      "avg_logprob": -0.491583,
+      "compression_ratio": 1.243243,
+      "end": 411.6,
+      "no_speech_prob": 0.0,
+      "start": 411.4,
+      "text": "是吧"
+    },
+    {
+      "avg_logprob": -0.491583,
+      "compression_ratio": 1.243243,
+      "end": 411.9,
+      "no_speech_prob": 0.0,
+      "start": 411.6,
+      "text": "你看"
+    },
+    {
+      "avg_logprob": -0.491583,
+      "compression_ratio": 1.243243,
+      "end": 414.9,
+      "no_speech_prob": 0.0,
+      "start": 413.5,
+      "text": "這是毒牛啊"
+    },
+    {
+      "avg_logprob": -0.491583,
+      "compression_ratio": 1.243243,
+      "end": 417.1,
+      "no_speech_prob": 0.0,
+      "start": 415.5,
+      "text": "走在海邊"
+    },
+    {
+      "avg_logprob": -0.491583,
+      "compression_ratio": 1.243243,
+      "end": 417.5,
+      "no_speech_prob": 0.0,
+      "start": 417.2,
+      "text": "是吧"
+    },
+    {
+      "avg_logprob": -0.491583,
+      "compression_ratio": 1.243243,
+      "end": 418.4,
+      "no_speech_prob": 0.0,
+      "start": 417.6,
+      "text": "船上"
+    },
+    {
+      "avg_logprob": -0.491583,
+      "compression_ratio": 1.243243,
+      "end": 419.4,
+      "no_speech_prob": 0.0,
+      "start": 418.9,
+      "text": "是吧"
+    },
+    {
+      "avg_logprob": -0.491583,
+      "compression_ratio": 1.243243,
+      "end": 421.3,
+      "no_speech_prob": 0.0,
+      "start": 420.1,
+      "text": "這多浪漫"
+    },
+    {
+      "avg_logprob": -0.491583,
+      "compression_ratio": 1.243243,
+      "end": 421.8,
+      "no_speech_prob": 0.0,
+      "start": 421.3,
+      "text": "你看這個"
+    },
+    {
+      "avg_logprob": -0.491583,
+      "compression_ratio": 1.243243,
+      "end": 422.5,
+      "no_speech_prob": 0.0,
+      "start": 421.9,
+      "text": "是不是"
+    },
+    {
+      "avg_logprob": -0.491583,
+      "compression_ratio": 1.243243,
+      "end": 423.6,
+      "no_speech_prob": 0.0,
+      "start": 423.1,
+      "text": "是不是"
+    },
+    {
+      "avg_logprob": -0.491583,
+      "compression_ratio": 1.243243,
+      "end": 424.5,
+      "no_speech_prob": 0.0,
+      "start": 424.1,
+      "text": "你看"
+    },
+    {
+      "avg_logprob": -0.491583,
+      "compression_ratio": 1.243243,
+      "end": 426.2,
+      "no_speech_prob": 0.0,
+      "start": 425.1,
+      "text": "多Q啊"
+    },
+    {
+      "avg_logprob": -0.491583,
+      "compression_ratio": 1.243243,
+      "end": 429.3,
+      "no_speech_prob": 0.0,
+      "start": 427.7,
+      "text": "珍惜你擁有的"
+    },
+    {
+      "avg_logprob": -0.279368,
+      "compression_ratio": 1.236641,
+      "end": 432.6,
+      "no_speech_prob": 0.0,
+      "start": 429.3,
+      "text": "珍惜你已經擁有了"
+    },
+    {
+      "avg_logprob": -0.279368,
+      "compression_ratio": 1.236641,
+      "end": 434.4,
+      "no_speech_prob": 0.0,
+      "start": 433.8,
+      "text": "所以說"
+    },
+    {
+      "avg_logprob": -0.279368,
+      "compression_ratio": 1.236641,
+      "end": 435.5,
+      "no_speech_prob": 0.0,
+      "start": 434.8,
+      "text": "兄弟姐妹們"
+    },
+    {
+      "avg_logprob": -0.279368,
+      "compression_ratio": 1.236641,
+      "end": 436.8,
+      "no_speech_prob": 0.0,
+      "start": 435.5,
+      "text": "咱們不得意誰得意"
+    },
+    {
+      "avg_logprob": -0.279368,
+      "compression_ratio": 1.236641,
+      "end": 438.6,
+      "no_speech_prob": 0.0,
+      "start": 436.8,
+      "text": "咱們不幸福誰幸福"
+    },
+    {
+      "avg_logprob": -0.279368,
+      "compression_ratio": 1.236641,
+      "end": 439.8,
+      "no_speech_prob": 0.0,
+      "start": 439.2,
+      "text": "咱們"
+    },
+    {
+      "avg_logprob": -0.279368,
+      "compression_ratio": 1.236641,
+      "end": 442.1,
+      "no_speech_prob": 0.0,
+      "start": 440.4,
+      "text": "不去愛戰友誰去愛戰友"
+    },
+    {
+      "avg_logprob": -0.279368,
+      "compression_ratio": 1.236641,
+      "end": 444.7,
+      "no_speech_prob": 0.0,
+      "start": 443.3,
+      "text": "現在你看看全世界媒體"
+    },
+    {
+      "avg_logprob": -0.212012,
+      "compression_ratio": 1.505576,
+      "end": 446.6,
+      "no_speech_prob": 0.0,
+      "start": 445.2,
+      "text": "都在說王八蛋媒體"
+    },
+    {
+      "avg_logprob": -0.212012,
+      "compression_ratio": 1.505576,
+      "end": 447.6,
+      "no_speech_prob": 0.0,
+      "start": 446.6,
+      "text": "啊這個不說實話"
+    },
+    {
+      "avg_logprob": -0.212012,
+      "compression_ratio": 1.505576,
+      "end": 448.5,
+      "no_speech_prob": 0.0,
+      "start": 447.6,
+      "text": "那個不說實話"
+    },
+    {
+      "avg_logprob": -0.212012,
+      "compression_ratio": 1.505576,
+      "end": 449.5,
+      "no_speech_prob": 0.0,
+      "start": 449.0,
+      "text": "可是"
+    },
+    {
+      "avg_logprob": -0.212012,
+      "compression_ratio": 1.505576,
+      "end": 451.4,
+      "no_speech_prob": 0.0,
+      "start": 449.5,
+      "text": "只有咱們蓋特說了實話"
+    },
+    {
+      "avg_logprob": -0.212012,
+      "compression_ratio": 1.505576,
+      "end": 453.1,
+      "no_speech_prob": 0.0,
+      "start": 452.6,
+      "text": "是吧"
+    },
+    {
+      "avg_logprob": -0.212012,
+      "compression_ratio": 1.505576,
+      "end": 454.6,
+      "no_speech_prob": 0.0,
+      "start": 453.4,
+      "text": "這個全世界都在說"
+    },
+    {
+      "avg_logprob": -0.212012,
+      "compression_ratio": 1.505576,
+      "end": 456.1,
+      "no_speech_prob": 0.0,
+      "start": 454.6,
+      "text": "啊全世界都在"
+    },
+    {
+      "avg_logprob": -0.212012,
+      "compression_ratio": 1.505576,
+      "end": 457.2,
+      "no_speech_prob": 0.0,
+      "start": 456.2,
+      "text": "都在充大腦袋啦"
+    },
+    {
+      "avg_logprob": -0.212012,
+      "compression_ratio": 1.505576,
+      "end": 458.3,
+      "no_speech_prob": 0.0,
+      "start": 457.2,
+      "text": "我第一個爆料的"
+    },
+    {
+      "avg_logprob": -0.212012,
+      "compression_ratio": 1.505576,
+      "end": 460.0,
+      "no_speech_prob": 0.0,
+      "start": 458.3,
+      "text": "我第一個反對中國病毒的"
+    },
+    {
+      "avg_logprob": -0.212012,
+      "compression_ratio": 1.505576,
+      "end": 461.4,
+      "no_speech_prob": 0.0,
+      "start": 460.4,
+      "text": "這幫王八蛋呢"
+    },
+    {
+      "avg_logprob": -0.212012,
+      "compression_ratio": 1.505576,
+      "end": 462.6,
+      "no_speech_prob": 0.0,
+      "start": 461.4,
+      "text": "就瞪著眼不要臉"
+    },
+    {
+      "avg_logprob": -0.212012,
+      "compression_ratio": 1.505576,
+      "end": 463.7,
+      "no_speech_prob": 0.0,
+      "start": 462.6,
+      "text": "咱也不跟他們搶"
+    },
+    {
+      "avg_logprob": -0.212012,
+      "compression_ratio": 1.505576,
+      "end": 464.7,
+      "no_speech_prob": 0.0,
+      "start": 464.3,
+      "text": "是吧"
+    },
+    {
+      "avg_logprob": -0.212012,
+      "compression_ratio": 1.505576,
+      "end": 466.4,
+      "no_speech_prob": 0.0,
+      "start": 465.0,
+      "text": "全人類上只有我們"
+    },
+    {
+      "avg_logprob": -0.212012,
+      "compression_ratio": 1.505576,
+      "end": 467.7,
+      "no_speech_prob": 0.0,
+      "start": 466.7,
+      "text": "一直以來"
+    },
+    {
+      "avg_logprob": -0.212012,
+      "compression_ratio": 1.505576,
+      "end": 469.5,
+      "no_speech_prob": 0.0,
+      "start": 467.7,
+      "text": "第一個到現在還在堅持"
+    },
+    {
+      "avg_logprob": -0.212012,
+      "compression_ratio": 1.505576,
+      "end": 470.8,
+      "no_speech_prob": 0.0,
+      "start": 470.4,
+      "text": "是吧"
+    },
+    {
+      "avg_logprob": -0.212012,
+      "compression_ratio": 1.505576,
+      "end": 473.0,
+      "no_speech_prob": 0.0,
+      "start": 472.0,
+      "text": "還有最重要的事情"
+    },
+    {
+      "avg_logprob": -0.212012,
+      "compression_ratio": 1.505576,
+      "end": 474.1,
+      "no_speech_prob": 0.0,
+      "start": 473.0,
+      "text": "在這個災難當中"
+    },
+    {
+      "avg_logprob": -0.229498,
+      "compression_ratio": 1.346341,
+      "end": 475.0,
+      "no_speech_prob": 0.0,
+      "start": 474.1,
+      "text": "我們發展了"
+    },
+    {
+      "avg_logprob": -0.229498,
+      "compression_ratio": 1.346341,
+      "end": 479.6,
+      "no_speech_prob": 0.0,
+      "start": 477.4,
+      "text": "在這人類最黑暗的幾年"
+    },
+    {
+      "avg_logprob": -0.229498,
+      "compression_ratio": 1.346341,
+      "end": 481.4,
+      "no_speech_prob": 0.0,
+      "start": 480.1,
+      "text": "我們受到了"
+    },
+    {
+      "avg_logprob": -0.229498,
+      "compression_ratio": 1.346341,
+      "end": 484.3,
+      "no_speech_prob": 0.0,
+      "start": 482.3,
+      "text": "最大的兩個黑暗勢力"
+    },
+    {
+      "avg_logprob": -0.229498,
+      "compression_ratio": 1.346341,
+      "end": 486.4,
+      "no_speech_prob": 0.0,
+      "start": 484.3,
+      "text": "賣美賊和共產黨的攻擊"
+    },
+    {
+      "avg_logprob": -0.229498,
+      "compression_ratio": 1.346341,
+      "end": 488.4,
+      "no_speech_prob": 0.0,
+      "start": 487.2,
+      "text": "但是我們不但是"
+    },
+    {
+      "avg_logprob": -0.229498,
+      "compression_ratio": 1.346341,
+      "end": 491.2,
+      "no_speech_prob": 0.0,
+      "start": 489.7,
+      "text": "完全的戰勝了他們"
+    },
+    {
+      "avg_logprob": -0.229498,
+      "compression_ratio": 1.346341,
+      "end": 492.2,
+      "no_speech_prob": 0.0,
+      "start": 491.2,
+      "text": "而且我們生存下來"
+    },
+    {
+      "avg_logprob": -0.229498,
+      "compression_ratio": 1.346341,
+      "end": 493.5,
+      "no_speech_prob": 0.0,
+      "start": 492.2,
+      "text": "還得到了發展"
+    },
+    {
+      "avg_logprob": -0.229498,
+      "compression_ratio": 1.346341,
+      "end": 497.8,
+      "no_speech_prob": 0.0,
+      "start": 496.4,
+      "text": "蒼天有眼啊"
+    },
+    {
+      "avg_logprob": -0.229498,
+      "compression_ratio": 1.346341,
+      "end": 499.4,
+      "no_speech_prob": 0.0,
+      "start": 498.0,
+      "text": "用李克強的說"
+    },
+    {
+      "avg_logprob": -0.229498,
+      "compression_ratio": 1.346341,
+      "end": 502.3,
+      "no_speech_prob": 0.0,
+      "start": 499.7,
+      "text": "人在看天在看天在看"
+    },
+    {
+      "avg_logprob": -0.229498,
+      "compression_ratio": 1.346341,
+      "end": 503.7,
+      "no_speech_prob": 0.0,
+      "start": 503.0,
+      "text": "我說的是"
+    },
+    {
+      "avg_logprob": -0.307254,
+      "compression_ratio": 1.322981,
+      "end": 504.8,
+      "no_speech_prob": 0.0,
+      "start": 503.7,
+      "text": "我們是什麽"
+    },
+    {
+      "avg_logprob": -0.307254,
+      "compression_ratio": 1.322981,
+      "end": 505.9,
+      "no_speech_prob": 0.0,
+      "start": 505.0,
+      "text": "我們不是的"
+    },
+    {
+      "avg_logprob": -0.307254,
+      "compression_ratio": 1.322981,
+      "end": 507.0,
+      "no_speech_prob": 0.0,
+      "start": 506.2,
+      "text": "我們是"
+    },
+    {
+      "avg_logprob": -0.307254,
+      "compression_ratio": 1.322981,
+      "end": 508.8,
+      "no_speech_prob": 0.0,
+      "start": 507.7,
+      "text": "不是人在幹"
+    },
+    {
+      "avg_logprob": -0.307254,
+      "compression_ratio": 1.322981,
+      "end": 510.4,
+      "no_speech_prob": 0.0,
+      "start": 508.8,
+      "text": "是我們人在鬥"
+    },
+    {
+      "avg_logprob": -0.307254,
+      "compression_ratio": 1.322981,
+      "end": 513.6,
+      "no_speech_prob": 0.0,
+      "start": 511.9,
+      "text": "是天在支持我們"
+    },
+    {
+      "avg_logprob": -0.307254,
+      "compression_ratio": 1.322981,
+      "end": 515.5,
+      "no_speech_prob": 0.0,
+      "start": 514.7,
+      "text": "天在幫"
+    },
+    {
+      "avg_logprob": -0.307254,
+      "compression_ratio": 1.322981,
+      "end": 517.0,
+      "no_speech_prob": 0.0,
+      "start": 516.5,
+      "text": "是吧"
+    },
+    {
+      "avg_logprob": -0.307254,
+      "compression_ratio": 1.322981,
+      "end": 519.5,
+      "no_speech_prob": 0.0,
+      "start": 517.6,
+      "text": "爆料革命的戰友就這麽牛叉"
+    },
+    {
+      "avg_logprob": -0.307254,
+      "compression_ratio": 1.322981,
+      "end": 522.0,
+      "no_speech_prob": 0.0,
+      "start": 520.3,
+      "text": "所以說這兩天很多人說"
+    },
+    {
+      "avg_logprob": -0.307254,
+      "compression_ratio": 1.322981,
+      "end": 523.6,
+      "no_speech_prob": 0.0,
+      "start": 522.0,
+      "text": "哇你們太牛了"
+    },
+    {
+      "avg_logprob": -0.307254,
+      "compression_ratio": 1.322981,
+      "end": 525.2,
+      "no_speech_prob": 0.0,
+      "start": 523.8,
+      "text": "躲過了疫苗災難"
+    },
+    {
+      "avg_logprob": -0.359694,
+      "compression_ratio": 1.144737,
+      "end": 527.5,
+      "no_speech_prob": 0.0,
+      "start": 525.2,
+      "text": "這是多麽偉大的事情啊"
+    },
+    {
+      "avg_logprob": -0.359694,
+      "compression_ratio": 1.144737,
+      "end": 530.7,
+      "no_speech_prob": 0.0,
+      "start": 527.9,
+      "text": "然後說你們現在還發展這樣的平台"
+    },
+    {
+      "avg_logprob": -0.359694,
+      "compression_ratio": 1.144737,
+      "end": 532.5,
+      "no_speech_prob": 0.0,
+      "start": 531.0,
+      "text": "這麽多機構投資你"
+    },
+    {
+      "avg_logprob": -0.359694,
+      "compression_ratio": 1.144737,
+      "end": 534.2,
+      "no_speech_prob": 0.0,
+      "start": 532.5,
+      "text": "所以說上幾天我給那些投資人說"
+    },
+    {
+      "avg_logprob": -0.359694,
+      "compression_ratio": 1.144737,
+      "end": 536.0,
+      "no_speech_prob": 0.0,
+      "start": 534.7,
+      "text": "你有本事別投我們"
+    },
+    {
+      "avg_logprob": -0.359694,
+      "compression_ratio": 1.144737,
+      "end": 536.5,
+      "no_speech_prob": 0.0,
+      "start": 536.1,
+      "text": "是不是"
+    },
+    {
+      "avg_logprob": -0.456921,
+      "compression_ratio": 1.432432,
+      "end": 538.3,
+      "no_speech_prob": 0.0,
+      "start": 536.5,
+      "text": "我們這些窮戰友"
+    },
+    {
+      "avg_logprob": -0.456921,
+      "compression_ratio": 1.432432,
+      "end": 539.9,
+      "no_speech_prob": 0.0,
+      "start": 538.6,
+      "text": "很多戰友看不起戰友"
+    },
+    {
+      "avg_logprob": -0.456921,
+      "compression_ratio": 1.432432,
+      "end": 544.8,
+      "no_speech_prob": 0.0,
+      "start": 543.7,
+      "text": "看不起窮戰友"
+    },
+    {
+      "avg_logprob": -0.456921,
+      "compression_ratio": 1.432432,
+      "end": 548.4,
+      "no_speech_prob": 0.0,
+      "start": 545.6,
+      "text": "但是機構投資者都沒有看不起窮戰友"
+    },
+    {
+      "avg_logprob": -0.456921,
+      "compression_ratio": 1.432432,
+      "end": 549.8,
+      "no_speech_prob": 0.0,
+      "start": 548.4,
+      "text": "你們就這樣看不起窮戰友"
+    },
+    {
+      "avg_logprob": -0.456921,
+      "compression_ratio": 1.432432,
+      "end": 551.3,
+      "no_speech_prob": 0.0,
+      "start": 550.8,
+      "text": "啊"
+    },
+    {
+      "avg_logprob": -0.456921,
+      "compression_ratio": 1.432432,
+      "end": 552.3,
+      "no_speech_prob": 0.0,
+      "start": 551.8,
+      "text": "是不是"
+    },
+    {
+      "avg_logprob": -0.3608,
+      "compression_ratio": 1.034483,
+      "end": 556.4,
+      "no_speech_prob": 0.0,
+      "start": 552.3,
+      "text": "那些機構投資者現在羨慕死我們了"
+    },
+    {
+      "avg_logprob": -0.3608,
+      "compression_ratio": 1.034483,
+      "end": 557.7,
+      "no_speech_prob": 0.0,
+      "start": 556.6,
+      "text": "有本事別投我們"
+    },
+    {
+      "avg_logprob": -0.3608,
+      "compression_ratio": 1.034483,
+      "end": 559.4,
+      "no_speech_prob": 0.0,
+      "start": 558.8,
+      "text": "對不對"
+    },
+    {
+      "avg_logprob": -0.3608,
+      "compression_ratio": 1.034483,
+      "end": 561.4,
+      "no_speech_prob": 0.0,
+      "start": 560.6,
+      "text": "因為"
+    },
+    {
+      "avg_logprob": -0.3608,
+      "compression_ratio": 1.034483,
+      "end": 563.1,
+      "no_speech_prob": 0.0,
+      "start": 561.8,
+      "text": "我們有著天下"
+    },
+    {
+      "avg_logprob": -0.3608,
+      "compression_ratio": 1.034483,
+      "end": 565.7,
+      "no_speech_prob": 0.0,
+      "start": 563.7,
+      "text": "最最偉大的福報"
+    },
+    {
+      "avg_logprob": -0.279262,
+      "compression_ratio": 1.313364,
+      "end": 567.0,
+      "no_speech_prob": 0.0,
+      "start": 565.7,
+      "text": "沒打疫苗"
+    },
+    {
+      "avg_logprob": -0.279262,
+      "compression_ratio": 1.313364,
+      "end": 569.4,
+      "no_speech_prob": 0.0,
+      "start": 568.0,
+      "text": "沒打疫苗什麽概念"
+    },
+    {
+      "avg_logprob": -0.279262,
+      "compression_ratio": 1.313364,
+      "end": 572.8,
+      "no_speech_prob": 0.0,
+      "start": 570.3,
+      "text": "還有一個我們有自己的發展的平台"
+    },
+    {
+      "avg_logprob": -0.279262,
+      "compression_ratio": 1.313364,
+      "end": 574.6,
+      "no_speech_prob": 0.0,
+      "start": 573.1,
+      "text": "還有這麽多年輕的"
+    },
+    {
+      "avg_logprob": -0.279262,
+      "compression_ratio": 1.313364,
+      "end": 577.2,
+      "no_speech_prob": 0.0,
+      "start": 575.6,
+      "text": "帥氣的美麗的戰友"
+    },
+    {
+      "avg_logprob": -0.279262,
+      "compression_ratio": 1.313364,
+      "end": 578.9,
+      "no_speech_prob": 0.0,
+      "start": 577.5,
+      "text": "那是錢能買來的嗎"
+    },
+    {
+      "avg_logprob": -0.279262,
+      "compression_ratio": 1.313364,
+      "end": 581.8,
+      "no_speech_prob": 0.0,
+      "start": 580.5,
+      "text": "所以說我們的各農場"
+    },
+    {
+      "avg_logprob": -0.279262,
+      "compression_ratio": 1.313364,
+      "end": 584.1,
+      "no_speech_prob": 0.0,
+      "start": 582.4,
+      "text": "抓緊行動兄弟姐妹們"
+    },
+    {
+      "avg_logprob": -0.279262,
+      "compression_ratio": 1.313364,
+      "end": 585.5,
+      "no_speech_prob": 0.0,
+      "start": 584.3,
+      "text": "抓緊行動"
+    },
+    {
+      "avg_logprob": -0.279262,
+      "compression_ratio": 1.313364,
+      "end": 587.5,
+      "no_speech_prob": 0.0,
+      "start": 586.5,
+      "text": "行動"
+    },
+    {
+      "avg_logprob": -0.279262,
+      "compression_ratio": 1.313364,
+      "end": 589.4,
+      "no_speech_prob": 0.0,
+      "start": 588.5,
+      "text": "倒是假了是吧"
+    },
+    {
+      "avg_logprob": -0.279262,
+      "compression_ratio": 1.313364,
+      "end": 590.5,
+      "no_speech_prob": 0.0,
+      "start": 590.1,
+      "text": "行了"
+    },
+    {
+      "avg_logprob": -0.279262,
+      "compression_ratio": 1.313364,
+      "end": 591.9,
+      "no_speech_prob": 0.0,
+      "start": 590.7,
+      "text": "面上去直播在佛吧"
+    },
+    {
+      "avg_logprob": -0.279262,
+      "compression_ratio": 1.313364,
+      "end": 592.8,
+      "no_speech_prob": 0.0,
+      "start": 592.2,
+      "text": "太興奮了"
+    }
+  ],
+  "text": "哦!尊敬的三位好啊!今天是3月8號啊!7號7號7號!哎我天哪!7號7號!兄弟姐妹們!你們看到現在在全世界所有的關於疫苗的災難大家感受到了嗎?疫苗的災難!兄弟姐妹們!你能想像在英國的抗疫在德國正在整個全國上下的恐懼整個日本國在日本東京之外除了東京之外很多那些什麼北海盜的地方瑟瑟發抖啊!耶路撒冷!沙特!利亞德!非洲!開普敦!你去想想現在打了疫苗的人是什麼感受就不要談美國加拿大了!兄弟姐妹們!七哥說了幾年了!去年!哎呀!竟然有人說!郭文貴不說這個疫苗災難來會什麼樣怎麼樣嗎?再沒怎麼樣嗎?拜託!那你去打兩針去!打三針!這個世界多恐怖啊!第二!大家看到現在在所有的硅谷所有的好萊塢所有的華爾街睜開你的雙眼睡蒙蒙的雙眼看看辦公室還有人嗎?去看看倫敦金融城去看看整個的日本動靜銀座看看德國博爾林慕尼黑去看看兄弟姐妹這才是恐怖呢!還有兄弟姐妹們你看看現在世界的電商還有商業貿易碼頭全世界的碼頭貿易還有人嗎?碼頭還有人嗎?黑石接下來是摩爾根接下來是一系列的銀行特別這個美國銀行給共產黨勾兌的加拿大澳大利亞回去學片下倒下去金融機構沒有理由在他們製造了人類上最大的金融監獄貿易監獄和共產黨勾兌把中國人當奴隸奴役幾十年讓他們過著所謂的美好的生活然後看著新疆人西藏人台灣人香港人活在恐懼之中然後繼續下去嗎?會繼續下去嗎?你製造了這樣的病毒這個世界會繼續下去嗎?所以說所以說兄弟姐妹們太可怕了然後現在共產黨內部從昨天到今天很多人歐洲人美國人都說哎呀我Miles我發現共產黨真的要準備跟我們開戰呢共產黨已經準備好開戰了哦天呐My God他們現在才明白共產黨已經準備好跟他們開戰了真想跟他們開戰等著吧貪婪無知傲慢傲慢愚蠢讓他們迷惑了雙眼哎呀哎呀共產黨這幾天開的秘密會議所有的都在準備著什麼內部抓人不聽話不聽指揮不願意當炮灰的不願意當黨奴的統統抓統統殺所有的錢都歸黨管黨一切都聽習死黃的還在那兒無知愚蠢呢是吧習死黃是要把他集於耶穌佛祖阿拉建築於一體的神他就成了統治萬佛萬神的最高的神而且在俄羅斯現在美國人經常討論共產黨不會去支持俄羅斯的走著看Murkenstein被嚇到就不敢去台灣了共產黨怎麼樣是吧屢屢得逞就像當年希特勒3月7號跨國萊茵河一樣屢屢得逞然後就從法國意大利橫掃歐洲是吧因為他每次都得逞太多的懦弱和無知然後現在金融界現在金融上全世界還有人想到習近平那把錢拿回來了習死黃想做夢呢你還有什麼再度開放還有人在評論習在維是不是真的再度開放還有利益中國的GDP還有5%你做夢吧你戰友們這個時候咱們要冷靜咱是最大受益者這個世界在疫苗面前沒有人是強大的任何人在經濟危機面前任何人都是很渺小的還有現在最重要的要嘗試發展我們的整個的A10項目G Club卡把戰友們凝聚在一起在全世界沒有貨幣的時候咱們有自己的貨幣有自己的交易所你們很多戰友看不慣自己的戰友這些戰友是世界上未來最值錢的因為他健康因為他沒有過去的累贅珍惜吧很多戰友現在牢騷漫服是因為你的標準錯了很多人拿著你自己的標準來看戰友不要這麼看那是無知的你看咱們這個件衣服人家你看這料子跟水一樣一位一位法國的咱們哥們我的朋友穿人家穿的感覺還有一個日本人一家穿是吧喀那感覺穿的真好這個是要穿出瀟灑浪漫出來的你看是吧你要把它穿的潮洒浪漫出來才可以這才是是吧你看這是毒牛啊走在海邊是吧船上是吧這多浪漫你看這個是不是是不是你看多Q啊珍惜你擁有的珍惜你已經擁有了所以說兄弟姐妹們咱們不得意誰得意咱們不幸福誰幸福咱們不去愛戰友誰去愛戰友現在你看看全世界媒體都在說王八蛋媒體啊這個不說實話那個不說實話可是只有咱們蓋特說了實話是吧這個全世界都在說啊全世界都在都在充大腦袋啦我第一個爆料的我第一個反對中國病毒的這幫王八蛋呢就瞪著眼不要臉咱也不跟他們搶是吧全人類上只有我們一直以來第一個到現在還在堅持是吧還有最重要的事情在這個災難當中我們發展了在這人類最黑暗的幾年我們受到了最大的兩個黑暗勢力賣美賊和共產黨的攻擊但是我們不但是完全的戰勝了他們而且我們生存下來還得到了發展蒼天有眼啊用李克強的說人在看天在看天在看我說的是我們是什麽我們不是的我們是不是人在幹是我們人在鬥是天在支持我們天在幫是吧爆料革命的戰友就這麽牛叉所以說這兩天很多人說哇你們太牛了躲過了疫苗災難這是多麽偉大的事情啊然後說你們現在還發展這樣的平台這麽多機構投資你所以說上幾天我給那些投資人說你有本事別投我們是不是我們這些窮戰友很多戰友看不起戰友看不起窮戰友但是機構投資者都沒有看不起窮戰友你們就這樣看不起窮戰友啊是不是那些機構投資者現在羨慕死我們了有本事別投我們對不對因為我們有著天下最最偉大的福報沒打疫苗沒打疫苗什麽概念還有一個我們有自己的發展的平台還有這麽多年輕的帥氣的美麗的戰友那是錢能買來的嗎所以說我們的各農場抓緊行動兄弟姐妹們抓緊行動行動倒是假了是吧行了面上去直播在佛吧太興奮了"
+}
