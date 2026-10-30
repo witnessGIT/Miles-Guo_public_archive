@@ -3,7 +3,7 @@
   "agent_id": "github-actions-cloud-key-points-41006027905",
   "claimed_at": "2026-10-30T05:53:39.832295+00:00",
   "base_commit": "29635a8dea3b58e8a2351be0de7d15408b3fc9d5",
-  "status": "in_progress",
+  "status": "released",
   "workflow_mode": "continuous-worker-v2",
   "claim_protocol": "claim-protocol-v2",
   "entry_mode": "work",
@@ -22,5 +22,7 @@
   ],
   "scope": "Create evidence-grounded neutral key points and controlled topic assignments.",
   "reclaimed_expired_claim": false,
-  "static_claim_lease_hours": 24
+  "static_claim_lease_hours": 24,
+  "released_at": "2026-10-30T06:01:27.984262+00:00",
+  "release_reason": "Overlapping newer key-point run 41006027905 was force-cancelled while older entity run 41006027678 remained active; no completion record was published, retained for retry."
 }
