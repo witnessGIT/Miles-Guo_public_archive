@@ -35,7 +35,7 @@ concurrency:
 jobs:
   summarize:
     if: github.actor == 'witnessGIT'
-    runs-on: macos-14
+    runs-on: macos-15
     timeout-minutes: 350
     env:
       HF_HOME: /tmp/miles-guo-hf-cache
