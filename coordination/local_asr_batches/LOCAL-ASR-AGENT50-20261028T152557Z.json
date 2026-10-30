@@ -62,7 +62,7 @@
     "LIVE_20230111_001",
     "LIVE_20230129_001"
   ],
-  "next_live_id": "LIVE_20230106_002",
+  "next_live_id": "LIVE_20230110_001",
   "completed_live_ids": [
     "LIVE_20230313_001",
     "LIVE_20221011_001",
@@ -94,15 +94,16 @@
     "LIVE_20221115_001",
     "LIVE_20221123_001",
     "LIVE_20220919_001",
-    "LIVE_20230309_001"
+    "LIVE_20230309_001",
+    "LIVE_20230106_002"
   ],
   "failed_or_deferred_live_ids": [],
   "retry_pending_live_ids": [
     "LIVE_20221024_001"
   ],
   "last_window": {
-    "started_at": "2026-10-30T12:00:51Z",
-    "ended_at": "2026-10-30T12:04:43Z",
+    "started_at": "2026-10-30T13:14:36Z",
+    "ended_at": "2026-10-30T21:06:23Z",
     "attempted_unique_videos": 1,
     "transcript_cue_segment_completed": 0,
     "four_stage_completed": 1,
@@ -111,35 +112,35 @@
     "tail_deferred_videos": 0,
     "cooldown_skipped_videos": 0,
     "source_temporarily_unavailable_videos": 0,
-    "audio_duration_sec": 600.198,
-    "download_elapsed_sec_known": 81.245,
+    "audio_duration_sec": 3701.247,
+    "download_elapsed_sec_known": 38.062,
     "download_elapsed_unavailable_for": [],
-    "pure_asr_inference_sec_known": 154.432,
+    "pure_asr_inference_sec_known": 522.449,
     "pure_asr_inference_unavailable_for": [],
-    "structured_pipeline_elapsed_sec_known": 240.221,
+    "structured_pipeline_elapsed_sec_known": 564.358,
     "structured_pipeline_elapsed_unavailable_for": [],
-    "asr_job_wall_elapsed_sec": 240.221,
-    "key_points_attempt_wall_elapsed_sec": 230.0,
-    "window_elapsed_sec": 232.0,
-    "known_inference_rtf": 0.2573,
-    "known_inference_realtime_multiple": 3.8865,
+    "asr_job_wall_elapsed_sec": 564.358,
+    "key_points_attempt_wall_elapsed_sec": 471.0,
+    "window_elapsed_sec": 28307.0,
+    "known_inference_rtf": 0.1412,
+    "known_inference_realtime_multiple": 7.0844,
     "published_commits": 4,
     "quality_failures": {},
     "completed_three_stage_live_ids": [],
     "completed_four_stage_live_ids": [
-      "LIVE_20230309_001"
+      "LIVE_20230106_002"
     ],
     "released_key_points_live_ids": [],
     "source_temporarily_unavailable_live_ids": [],
-    "next_live_id": "LIVE_20230106_002",
+    "next_live_id": "LIVE_20230110_001",
     "key_point_stats": {
-      "natural_segments": 9,
-      "key_points": 19,
-      "topic_links": 17,
-      "skipped_or_invalid": 2,
+      "natural_segments": 66,
+      "key_points": 133,
+      "topic_links": 90,
+      "skipped_or_invalid": 0,
       "parse_errors": 0,
       "forced_retries": 0,
-      "grounded_supplement_points": 19,
+      "grounded_supplement_points": 133,
       "outcome": "enriched"
     }
   },
