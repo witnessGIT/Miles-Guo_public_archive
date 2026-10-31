@@ -62,7 +62,7 @@
     "LIVE_20230111_001",
     "LIVE_20230129_001"
   ],
-  "next_live_id": "LIVE_20230108_001",
+  "next_live_id": "LIVE_20220925_001",
   "completed_live_ids": [
     "LIVE_20230313_001",
     "LIVE_20221011_001",
@@ -97,15 +97,16 @@
     "LIVE_20230309_001",
     "LIVE_20230106_002",
     "LIVE_20230110_001",
-    "LIVE_20230204_001"
+    "LIVE_20230204_001",
+    "LIVE_20230108_001"
   ],
   "failed_or_deferred_live_ids": [],
   "retry_pending_live_ids": [
     "LIVE_20221024_001"
   ],
   "last_window": {
-    "started_at": "2026-10-30T23:27:12Z",
-    "ended_at": "2026-10-31T00:00:11Z",
+    "started_at": "2026-10-31T00:27:12Z",
+    "ended_at": "2026-10-31T00:43:58Z",
     "attempted_unique_videos": 1,
     "transcript_cue_segment_completed": 0,
     "four_stage_completed": 1,
@@ -114,35 +115,35 @@
     "tail_deferred_videos": 0,
     "cooldown_skipped_videos": 0,
     "source_temporarily_unavailable_videos": 0,
-    "audio_duration_sec": 4080.07,
-    "download_elapsed_sec_known": 42.786,
+    "audio_duration_sec": 4819.975,
+    "download_elapsed_sec_known": 56.519,
     "download_elapsed_unavailable_for": [],
-    "pure_asr_inference_sec_known": 685.802,
+    "pure_asr_inference_sec_known": 735.982,
     "pure_asr_inference_unavailable_for": [],
-    "structured_pipeline_elapsed_sec_known": 732.899,
+    "structured_pipeline_elapsed_sec_known": 796.53,
     "structured_pipeline_elapsed_unavailable_for": [],
     "asr_job_wall_elapsed_sec": 0.0,
-    "key_points_attempt_wall_elapsed_sec": 1740.0,
-    "window_elapsed_sec": 1979.0,
-    "known_inference_rtf": 0.168086,
-    "known_inference_realtime_multiple": 5.949,
+    "key_points_attempt_wall_elapsed_sec": 840.0,
+    "window_elapsed_sec": 1006.0,
+    "known_inference_rtf": 0.152694,
+    "known_inference_realtime_multiple": 6.549,
     "published_commits": 4,
     "quality_failures": {},
     "completed_three_stage_live_ids": [],
     "completed_four_stage_live_ids": [
-      "LIVE_20230204_001"
+      "LIVE_20230108_001"
     ],
     "released_key_points_live_ids": [],
     "source_temporarily_unavailable_live_ids": [],
-    "next_live_id": "LIVE_20230108_001",
+    "next_live_id": "LIVE_20220925_001",
     "key_point_stats": {
-      "natural_segments": 67,
-      "key_points": 277,
-      "topic_links": 116,
+      "natural_segments": 84,
+      "key_points": 430,
+      "topic_links": 150,
       "skipped_or_invalid": 0,
-      "parse_errors": 34,
-      "forced_retries": 51,
-      "grounded_supplement_points": 41,
+      "parse_errors": 8,
+      "forced_retries": 21,
+      "grounded_supplement_points": 19,
       "outcome": "enriched"
     }
   },
