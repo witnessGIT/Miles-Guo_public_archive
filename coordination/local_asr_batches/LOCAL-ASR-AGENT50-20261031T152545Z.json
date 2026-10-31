@@ -62,7 +62,7 @@
     "LIVE_20221005_001",
     "LIVE_20221113_001"
   ],
-  "next_live_id": "LIVE_20220627_001",
+  "next_live_id": "LIVE_20220907_001",
   "completed_live_ids": [
     "LIVE_20220915_002",
     "LIVE_20220809_001",
@@ -82,17 +82,20 @@
     "LIVE_20220823_001",
     "LIVE_20220714_001",
     "LIVE_20220812_001",
-    "LIVE_20220801_001"
+    "LIVE_20220801_001",
+    "LIVE_20220627_001",
+    "LIVE_20220909_001",
+    "LIVE_20220918_001"
   ],
   "failed_or_deferred_live_ids": [],
   "retry_pending_live_ids": [],
   "last_window": {
-    "started_at": "2026-10-31T16:27:45Z",
-    "ended_at": "2026-10-31T17:22:13Z",
-    "attempted_unique_videos": 6,
+    "started_at": "2026-10-31T17:26:45Z",
+    "ended_at": "2026-10-31T18:07:13Z",
+    "attempted_unique_videos": 4,
     "transcript_cue_segment_completed": 0,
-    "four_stage_completed": 6,
-    "key_points_completed": 6,
+    "four_stage_completed": 3,
+    "key_points_completed": 3,
     "failed_or_released_stages": 0,
     "tail_deferred_videos": 0,
     "cooldown_skipped_videos": 0,
@@ -102,36 +105,33 @@
     "pure_asr_inference_sec_known": 0.0,
     "structured_pipeline_elapsed_sec_known": 0.0,
     "asr_job_wall_elapsed_sec": 0.0,
-    "key_points_attempt_wall_elapsed_sec": 3268.0,
-    "window_elapsed_sec": 3268.0,
+    "key_points_attempt_wall_elapsed_sec": 2428.0,
+    "window_elapsed_sec": 2428.0,
     "known_inference_rtf": null,
     "known_inference_realtime_multiple": null,
-    "published_commits": 13,
+    "published_commits": 8,
     "quality_failures": {},
     "completed_three_stage_live_ids": [],
     "completed_four_stage_live_ids": [
-      "LIVE_20220708_001",
-      "LIVE_20220802_001",
-      "LIVE_20220823_001",
-      "LIVE_20220714_001",
-      "LIVE_20220812_001",
-      "LIVE_20220801_001"
+      "LIVE_20220627_001",
+      "LIVE_20220909_001",
+      "LIVE_20220918_001"
     ],
     "released_key_points_live_ids": [],
     "source_temporarily_unavailable_live_ids": [],
-    "next_live_id": "LIVE_20220627_001",
+    "next_live_id": "LIVE_20220907_001",
     "key_point_stats": {
-      "natural_segments": 305,
-      "key_points": 975,
-      "topic_links": 333,
-      "skipped_or_invalid": 123,
-      "parse_errors": 49,
-      "model_empty": 72,
-      "rejected_all": 2,
-      "forced_retries": 82,
+      "natural_segments": 195,
+      "key_points": 521,
+      "topic_links": 186,
+      "skipped_or_invalid": 100,
+      "parse_errors": 31,
+      "model_empty": 66,
+      "rejected_all": 3,
+      "forced_retries": 84,
       "grounded_supplement_points": 0,
-      "outcome": "6 enriched"
+      "outcome": "3 enriched; LIVE_20220907_001 remains claimed for continuation"
     }
   },
-  "notes": "Fixed logical batch; never expand this list. All 50 items already have quality-gated transcript, cue, and natural-segment dependencies, so this batch begins at key_points_topics. Claims are revalidated, created, and pushed one item at a time immediately before local inference. Two windows completed 19 items; resume at LIVE_20220627_001."
+  "notes": "Fixed logical batch; never expand this list. All 50 items already have quality-gated transcript, cue, and natural-segment dependencies, so this batch begins at key_points_topics. Claims are revalidated, created, and pushed one item at a time immediately before local inference. Three windows completed 22 items; resume the already-published claim for LIVE_20220907_001."
 }
