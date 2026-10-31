@@ -1,64 +1,208 @@
 {
-  "chunk_audio_sha256": "f989fe8f31b7a4ea2120a1792349913eb7d9719fe91ff74523c26be251b021f5",
+  "chunk_audio_sha256": "a6a3ed92c1648bbc4c8bd344c693b025efbbb11b2baecfb4ee4b13d962d514c3",
   "chunk_index": 0,
-  "completed_at": "2026-10-24T15:28:28Z",
+  "completed_at": "2026-10-31T18:31:33Z",
   "language": "zh",
   "live_id": "LIVE_20220208_001",
   "media_committed_to_git": false,
   "model": "mlx-community/whisper-large-v3-turbo",
   "offset_sec": 0,
   "paid_api_used": false,
-  "processing_location": "codex-local-apple-silicon-agent50",
+  "processing_location": "github-hosted-macos-arm64",
   "schema_version": "cloud-asr-chunk-v1",
   "segments": [
     {
-      "avg_logprob": -0.460157,
+      "avg_logprob": -0.70614,
       "compression_ratio": 0.694444,
       "end": 29.98,
       "no_speech_prob": 0.0,
       "start": 0.0,
-      "text": "字幕志愿者 李宗盛"
+      "text": "作詞・作曲 李宗盛"
     },
     {
-      "avg_logprob": -0.048489,
+      "avg_logprob": -0.151851,
       "compression_ratio": 0.694444,
       "end": 59.98,
       "no_speech_prob": 0.0,
       "start": 30.0,
-      "text": "字幕志愿者 李宗盛"
+      "text": "作詞・作曲 李宗盛"
     },
     {
-      "avg_logprob": -0.207164,
-      "compression_ratio": 0.694444,
-      "end": 89.98,
+      "avg_logprob": -0.466073,
+      "compression_ratio": 0.95,
+      "end": 72.0,
       "no_speech_prob": 0.0,
       "start": 60.0,
-      "text": "字幕志愿者 李宗盛"
+      "text": "作詞・作曲 李宗盛"
     },
     {
-      "avg_logprob": -0.157198,
-      "compression_ratio": 0.694444,
-      "end": 119.96,
+      "avg_logprob": -0.466073,
+      "compression_ratio": 0.95,
+      "end": 76.0,
       "no_speech_prob": 0.0,
-      "start": 89.98,
-      "text": "字幕志愿者 李宗盛"
+      "start": 72.0,
+      "text": "展優們 展優們 健身了吧"
     },
     {
-      "avg_logprob": -0.10356,
-      "compression_ratio": 0.694444,
-      "end": 149.96,
+      "avg_logprob": -0.332812,
+      "compression_ratio": 0.770833,
+      "end": 82.0,
       "no_speech_prob": 0.0,
-      "start": 119.98,
-      "text": "字幕志愿者 李宗盛"
+      "start": 76.0,
+      "text": "太酷了 太舒服了"
     },
     {
-      "avg_logprob": -0.179405,
-      "compression_ratio": 0.694444,
-      "end": 179.94,
+      "avg_logprob": -0.332812,
+      "compression_ratio": 0.770833,
+      "end": 88.0,
       "no_speech_prob": 0.0,
-      "start": 149.96,
-      "text": "字幕志愿者 李宗盛"
+      "start": 82.0,
+      "text": "今天好日子"
+    },
+    {
+      "avg_logprob": -0.314401,
+      "compression_ratio": 1.070866,
+      "end": 92.0,
+      "no_speech_prob": 0.0,
+      "start": 88.0,
+      "text": "今天和明天 起個幾個大事兒啊"
+    },
+    {
+      "avg_logprob": -0.314401,
+      "compression_ratio": 1.070866,
+      "end": 96.0,
+      "no_speech_prob": 0.0,
+      "start": 92.0,
+      "text": "要決定 明天直播說吧"
+    },
+    {
+      "avg_logprob": -0.314401,
+      "compression_ratio": 1.070866,
+      "end": 100.0,
+      "no_speech_prob": 0.0,
+      "start": 96.0,
+      "text": "哎呀 真的是 從今天起"
+    },
+    {
+      "avg_logprob": -0.314401,
+      "compression_ratio": 1.070866,
+      "end": 104.0,
+      "no_speech_prob": 0.0,
+      "start": 100.0,
+      "text": "是我前半生和後半生的分水嶺"
+    },
+    {
+      "avg_logprob": -0.215553,
+      "compression_ratio": 1.0875,
+      "end": 110.0,
+      "no_speech_prob": 0.0,
+      "start": 104.0,
+      "text": "前半生都是獲得"
+    },
+    {
+      "avg_logprob": -0.215553,
+      "compression_ratio": 1.0875,
+      "end": 114.0,
+      "no_speech_prob": 0.0,
+      "start": 110.0,
+      "text": "後半生真的是給予"
+    },
+    {
+      "avg_logprob": -0.215553,
+      "compression_ratio": 1.0875,
+      "end": 116.0,
+      "no_speech_prob": 0.0,
+      "start": 114.0,
+      "text": "完全給予啊"
+    },
+    {
+      "avg_logprob": -0.215553,
+      "compression_ratio": 1.0875,
+      "end": 120.0,
+      "no_speech_prob": 0.0,
+      "start": 116.0,
+      "text": "後半生是為他人活著"
+    },
+    {
+      "avg_logprob": -0.121293,
+      "compression_ratio": 0.86747,
+      "end": 124.0,
+      "no_speech_prob": 0.0,
+      "start": 120.0,
+      "text": "前半生是為我活著"
+    },
+    {
+      "avg_logprob": -0.121293,
+      "compression_ratio": 0.86747,
+      "end": 126.0,
+      "no_speech_prob": 0.0,
+      "start": 124.0,
+      "text": "今天是個飛水嶺"
+    },
+    {
+      "avg_logprob": -0.121293,
+      "compression_ratio": 0.86747,
+      "end": 128.0,
+      "no_speech_prob": 0.0,
+      "start": 126.0,
+      "text": "明天早上大直播來說"
+    },
+    {
+      "avg_logprob": -0.29149,
+      "compression_ratio": 1.66,
+      "end": 132.0,
+      "no_speech_prob": 0.0,
+      "start": 128.0,
+      "text": "答事兒 答事兒 答事兒 答事兒"
+    },
+    {
+      "avg_logprob": -0.29149,
+      "compression_ratio": 1.66,
+      "end": 134.0,
+      "no_speech_prob": 0.0,
+      "start": 132.0,
+      "text": "答事兒啊 答事兒啊"
+    },
+    {
+      "avg_logprob": -0.29149,
+      "compression_ratio": 1.66,
+      "end": 136.0,
+      "no_speech_prob": 0.0,
+      "start": 134.0,
+      "text": "行了 要去健身"
+    },
+    {
+      "avg_logprob": -0.349478,
+      "compression_ratio": 1.057471,
+      "end": 138.0,
+      "no_speech_prob": 0.0,
+      "start": 136.0,
+      "text": "戰友們 啊 不健身啊"
+    },
+    {
+      "avg_logprob": -0.349478,
+      "compression_ratio": 1.057471,
+      "end": 142.0,
+      "no_speech_prob": 0.0,
+      "start": 138.0,
+      "text": "不健身啊 太不舒服了"
+    },
+    {
+      "avg_logprob": -0.349478,
+      "compression_ratio": 1.057471,
+      "end": 146.0,
+      "no_speech_prob": 0.0,
+      "start": 142.0,
+      "text": "好習慣一旦發生 啊 太美妙了"
+    },
+    {
+      "avg_logprob": -0.518813,
+      "compression_ratio": 0.64,
+      "end": 160.0,
+      "no_speech_prob": 0.0,
+      "start": 146.0,
+      "text": "啊 面兒得撿"
     }
   ],
-  "text": "字幕志愿者 李宗盛字幕志愿者 李宗盛字幕志愿者 李宗盛字幕志愿者 李宗盛字幕志愿者 李宗盛字幕志愿者 李宗盛"
+  "text": "作詞・作曲 李宗盛作詞・作曲 李宗盛作詞・作曲 李宗盛展優們 展優們 健身了吧太酷了 太舒服了今天好日子今天和明天 起個幾個大事兒啊要決定 明天直播說吧哎呀 真的是 從今天起是我前半生和後半生的分水嶺前半生都是獲得後半生真的是給予完全給予啊後半生是為他人活著前半生是為我活著今天是個飛水嶺明天早上大直播來說答事兒 答事兒 答事兒 答事兒答事兒啊 答事兒啊行了 要去健身戰友們 啊 不健身啊不健身啊 太不舒服了好習慣一旦發生 啊 太美妙了啊 面兒得撿"
 }
