@@ -1,952 +1,688 @@
 {
-  "chunk_audio_sha256": "db2e05c87e5be2a73ea71d08d66f3993ee0d47c6c34c7c5ae2afb15540426c33",
+  "chunk_audio_sha256": "413dcd13bbdd130df22b9733555880816746610b9b3d440c5d77887a501de9a3",
   "chunk_index": 0,
-  "completed_at": "2026-10-24T16:27:03Z",
+  "completed_at": "2026-10-31T09:20:51Z",
   "language": "zh",
   "live_id": "LIVE_20211225_006",
   "media_committed_to_git": false,
   "model": "mlx-community/whisper-large-v3-turbo",
   "offset_sec": 0,
   "paid_api_used": false,
-  "processing_location": "codex-local-apple-silicon-agent50",
+  "processing_location": "github-hosted-macos-arm64",
   "schema_version": "cloud-asr-chunk-v1",
   "segments": [
     {
-      "avg_logprob": -0.339544,
-      "compression_ratio": 1.582011,
+      "avg_logprob": -0.351019,
+      "compression_ratio": 1.647727,
       "end": 2.7,
       "no_speech_prob": 0.0,
       "start": 0.0,
       "text": "来来来来 看看"
     },
     {
-      "avg_logprob": -0.339544,
-      "compression_ratio": 1.582011,
+      "avg_logprob": -0.351019,
+      "compression_ratio": 1.647727,
       "end": 4.7,
       "no_speech_prob": 0.0,
       "start": 3.3,
       "text": "炖的羊肉 羊肉"
     },
     {
-      "avg_logprob": -0.339544,
-      "compression_ratio": 1.582011,
+      "avg_logprob": -0.351019,
+      "compression_ratio": 1.647727,
       "end": 6.8,
       "no_speech_prob": 0.0,
       "start": 5.1,
       "text": "今天炖的羊肉骨头啊"
     },
     {
-      "avg_logprob": -0.339544,
-      "compression_ratio": 1.582011,
+      "avg_logprob": -0.351019,
+      "compression_ratio": 1.647727,
       "end": 9.2,
       "no_speech_prob": 0.0,
       "start": 7.2,
       "text": "这个有今天文家啊"
     },
     {
-      "avg_logprob": -0.339544,
-      "compression_ratio": 1.582011,
+      "avg_logprob": -0.351019,
+      "compression_ratio": 1.647727,
       "end": 11.2,
       "no_speech_prob": 0.0,
       "start": 9.7,
       "text": "还有我们的乳水啊"
     },
     {
-      "avg_logprob": -0.339544,
-      "compression_ratio": 1.582011,
+      "avg_logprob": -0.351019,
+      "compression_ratio": 1.647727,
       "end": 13.3,
       "no_speech_prob": 0.0,
       "start": 11.7,
       "text": "还有这个老凯啊"
     },
     {
-      "avg_logprob": -0.339544,
-      "compression_ratio": 1.582011,
+      "avg_logprob": -0.351019,
+      "compression_ratio": 1.647727,
       "end": 15.7,
       "no_speech_prob": 0.0,
       "start": 13.3,
-      "text": "老凯 还有拉脱啊"
+      "text": "老凯 还有拉磨啊"
     },
     {
-      "avg_logprob": -0.339544,
-      "compression_ratio": 1.582011,
-      "end": 17.1,
-      "no_speech_prob": 0.0,
-      "start": 15.7,
-      "text": "拉脱 反正不吃肉吃的"
-    },
-    {
-      "avg_logprob": -0.339544,
-      "compression_ratio": 1.582011,
+      "avg_logprob": -0.351019,
+      "compression_ratio": 1.647727,
       "end": 17.7,
       "no_speech_prob": 0.0,
-      "start": 17.1,
-      "text": "拉膜"
+      "start": 15.7,
+      "text": "拉磨啊 拉磨啊"
     },
     {
-      "avg_logprob": -0.339544,
-      "compression_ratio": 1.582011,
+      "avg_logprob": -0.351019,
+      "compression_ratio": 1.647727,
       "end": 18.5,
       "no_speech_prob": 0.0,
       "start": 17.7,
-      "text": "拉膜"
+      "text": "拉磨啊"
     },
     {
-      "avg_logprob": -0.339544,
-      "compression_ratio": 1.582011,
-      "end": 19.7,
+      "avg_logprob": -0.351019,
+      "compression_ratio": 1.647727,
+      "end": 20.2,
       "no_speech_prob": 0.0,
       "start": 18.7,
-      "text": "然后呢 豆角"
+      "text": "然后呢 豆角啊"
     },
     {
-      "avg_logprob": -0.339544,
-      "compression_ratio": 1.582011,
+      "avg_logprob": -0.351019,
+      "compression_ratio": 1.647727,
       "end": 21.8,
       "no_speech_prob": 0.0,
       "start": 20.5,
       "text": "真正的好豆角"
     },
     {
-      "avg_logprob": -0.339544,
-      "compression_ratio": 1.582011,
+      "avg_logprob": -0.351019,
+      "compression_ratio": 1.647727,
       "end": 25.5,
       "no_speech_prob": 0.0,
       "start": 23.3,
       "text": "然后这块这个 羊肉 羊肉"
     },
     {
-      "avg_logprob": -0.339544,
-      "compression_ratio": 1.582011,
+      "avg_logprob": -0.351019,
+      "compression_ratio": 1.647727,
       "end": 26.3,
       "no_speech_prob": 0.0,
       "start": 25.5,
       "text": "羊肉啊"
     },
     {
-      "avg_logprob": -0.339544,
-      "compression_ratio": 1.582011,
+      "avg_logprob": -0.351019,
+      "compression_ratio": 1.647727,
       "end": 27.8,
       "no_speech_prob": 0.0,
       "start": 27.2,
       "text": "羊肉糖"
     },
     {
-      "avg_logprob": -0.339544,
-      "compression_ratio": 1.582011,
+      "avg_logprob": -0.351019,
+      "compression_ratio": 1.647727,
       "end": 29.7,
       "no_speech_prob": 0.0,
       "start": 28.3,
       "text": "哎呀 羊肉弯子"
     },
     {
-      "avg_logprob": -0.302533,
-      "compression_ratio": 1.550459,
+      "avg_logprob": -0.293015,
+      "compression_ratio": 1.585586,
       "end": 30.4,
       "no_speech_prob": 0.0,
       "start": 29.7,
-      "text": "酸菜"
+      "text": "这个酸菜"
     },
     {
-      "avg_logprob": -0.302533,
-      "compression_ratio": 1.550459,
-      "end": 33.0,
+      "avg_logprob": -0.293015,
+      "compression_ratio": 1.585586,
+      "end": 33.1,
       "no_speech_prob": 0.0,
       "start": 31.0,
       "text": "这个酸菜太牛了"
     },
     {
-      "avg_logprob": -0.302533,
-      "compression_ratio": 1.550459,
-      "end": 34.2,
+      "avg_logprob": -0.293015,
+      "compression_ratio": 1.585586,
+      "end": 34.3,
       "no_speech_prob": 0.0,
-      "start": 33.0,
+      "start": 33.1,
       "text": "太牛了"
     },
     {
-      "avg_logprob": -0.302533,
-      "compression_ratio": 1.550459,
+      "avg_logprob": -0.293015,
+      "compression_ratio": 1.585586,
       "end": 36.9,
       "no_speech_prob": 0.0,
       "start": 34.9,
       "text": "然后呢 看这个 看这个 看这个"
     },
     {
-      "avg_logprob": -0.302533,
-      "compression_ratio": 1.550459,
+      "avg_logprob": -0.293015,
+      "compression_ratio": 1.585586,
       "end": 38.1,
       "no_speech_prob": 0.0,
       "start": 37.3,
       "text": "看这个啊"
     },
     {
-      "avg_logprob": -0.302533,
-      "compression_ratio": 1.550459,
+      "avg_logprob": -0.293015,
+      "compression_ratio": 1.585586,
       "end": 39.2,
       "no_speech_prob": 0.0,
       "start": 38.4,
       "text": "看这个啊"
     },
     {
-      "avg_logprob": -0.302533,
-      "compression_ratio": 1.550459,
+      "avg_logprob": -0.293015,
+      "compression_ratio": 1.585586,
       "end": 41.5,
       "no_speech_prob": 0.0,
       "start": 39.7,
       "text": "摸摸摸摸摸摸摸摸"
     },
     {
-      "avg_logprob": -0.302533,
-      "compression_ratio": 1.550459,
+      "avg_logprob": -0.293015,
+      "compression_ratio": 1.585586,
       "end": 42.7,
       "no_speech_prob": 0.0,
       "start": 41.7,
       "text": "阿弥陀佛"
     },
     {
-      "avg_logprob": -0.302533,
-      "compression_ratio": 1.550459,
-      "end": 44.5,
+      "avg_logprob": -0.293015,
+      "compression_ratio": 1.585586,
+      "end": 46.1,
       "no_speech_prob": 0.0,
       "start": 43.7,
-      "text": "哦"
+      "text": "哦 乖乖嘞"
     },
     {
-      "avg_logprob": -0.302533,
-      "compression_ratio": 1.550459,
-      "end": 46.2,
-      "no_speech_prob": 0.0,
-      "start": 45.0,
-      "text": "乖乖嘞"
-    },
-    {
-      "avg_logprob": -0.302533,
-      "compression_ratio": 1.550459,
-      "end": 51.0,
+      "avg_logprob": -0.293015,
+      "compression_ratio": 1.585586,
+      "end": 51.1,
       "no_speech_prob": 0.0,
       "start": 49.9,
       "text": "哎呀 香味"
     },
     {
-      "avg_logprob": -0.302533,
-      "compression_ratio": 1.550459,
-      "end": 53.7,
+      "avg_logprob": -0.293015,
+      "compression_ratio": 1.585586,
+      "end": 53.8,
       "no_speech_prob": 0.0,
       "start": 53.0,
       "text": "哦"
     },
     {
-      "avg_logprob": -0.302533,
-      "compression_ratio": 1.550459,
+      "avg_logprob": -0.293015,
+      "compression_ratio": 1.585586,
       "end": 57.9,
       "no_speech_prob": 0.0,
       "start": 57.0,
       "text": "天呐"
     },
     {
-      "avg_logprob": -0.426792,
-      "compression_ratio": 1.62069,
+      "avg_logprob": -0.457705,
+      "compression_ratio": 1.584071,
       "end": 59.6,
       "no_speech_prob": 0.0,
       "start": 57.9,
       "text": "你看这个弹性啊"
     },
     {
-      "avg_logprob": -0.426792,
-      "compression_ratio": 1.62069,
-      "end": 60.9,
+      "avg_logprob": -0.457705,
+      "compression_ratio": 1.584071,
+      "end": 60.8,
       "no_speech_prob": 0.0,
       "start": 59.6,
       "text": "看看这个弹性啊"
     },
     {
-      "avg_logprob": -0.426792,
-      "compression_ratio": 1.62069,
-      "end": 63.6,
+      "avg_logprob": -0.457705,
+      "compression_ratio": 1.584071,
+      "end": 63.4,
       "no_speech_prob": 0.0,
       "start": 61.6,
-      "text": "大家今天看到为啥石膜了吗"
+      "text": "大家今天看到为啥石膜了"
     },
     {
-      "avg_logprob": -0.426792,
-      "compression_ratio": 1.62069,
+      "avg_logprob": -0.457705,
+      "compression_ratio": 1.584071,
       "end": 64.1,
       "no_speech_prob": 0.0,
-      "start": 63.6,
-      "text": "看看"
+      "start": 63.4,
+      "text": "我看看"
     },
     {
-      "avg_logprob": -0.426792,
-      "compression_ratio": 1.62069,
+      "avg_logprob": -0.457705,
+      "compression_ratio": 1.584071,
       "end": 66.3,
       "no_speech_prob": 0.0,
       "start": 65.2,
       "text": "看看这个弹性啊"
     },
     {
-      "avg_logprob": -0.426792,
-      "compression_ratio": 1.62069,
-      "end": 70.4,
+      "avg_logprob": -0.457705,
+      "compression_ratio": 1.584071,
+      "end": 70.3,
       "no_speech_prob": 0.0,
       "start": 69.3,
-      "text": "哇哦"
+      "text": "哇"
     },
     {
-      "avg_logprob": -0.426792,
-      "compression_ratio": 1.62069,
-      "end": 72.6,
+      "avg_logprob": -0.457705,
+      "compression_ratio": 1.584071,
+      "end": 72.5,
       "no_speech_prob": 0.0,
       "start": 71.6,
-      "text": "哇哦"
+      "text": "哇"
     },
     {
-      "avg_logprob": -0.426792,
-      "compression_ratio": 1.62069,
+      "avg_logprob": -0.457705,
+      "compression_ratio": 1.584071,
       "end": 74.9,
       "no_speech_prob": 0.0,
       "start": 73.7,
       "text": "绝了 看看这个"
     },
     {
-      "avg_logprob": -0.426792,
-      "compression_ratio": 1.62069,
+      "avg_logprob": -0.457705,
+      "compression_ratio": 1.584071,
       "end": 76.3,
       "no_speech_prob": 0.0,
-      "start": 75.2,
+      "start": 75.3,
       "text": "你看这个弹性"
     },
     {
-      "avg_logprob": -0.426792,
-      "compression_ratio": 1.62069,
+      "avg_logprob": -0.457705,
+      "compression_ratio": 1.584071,
       "end": 78.6,
       "no_speech_prob": 0.0,
       "start": 77.0,
       "text": "7根是吹牛哦"
     },
     {
-      "avg_logprob": -0.426792,
-      "compression_ratio": 1.62069,
+      "avg_logprob": -0.457705,
+      "compression_ratio": 1.584071,
       "end": 80.5,
       "no_speech_prob": 0.0,
-      "start": 79.2,
+      "start": 79.3,
       "text": "是吹牛哦"
     },
     {
-      "avg_logprob": -0.426792,
-      "compression_ratio": 1.62069,
+      "avg_logprob": -0.457705,
+      "compression_ratio": 1.584071,
       "end": 82.5,
       "no_speech_prob": 0.0,
       "start": 81.4,
-      "text": "哇哦"
+      "text": "哇"
     },
     {
-      "avg_logprob": -0.696713,
-      "compression_ratio": 1.6875,
-      "end": 83.8,
+      "avg_logprob": -0.768264,
+      "compression_ratio": 1.645161,
+      "end": 85.4,
       "no_speech_prob": 0.0,
       "start": 82.5,
       "text": "没有它啊"
     },
     {
-      "avg_logprob": -0.696713,
-      "compression_ratio": 1.6875,
+      "avg_logprob": -0.768264,
+      "compression_ratio": 1.645161,
       "end": 86.2,
       "no_speech_prob": 0.0,
-      "start": 83.8,
+      "start": 85.4,
       "text": "看这个"
     },
     {
-      "avg_logprob": -0.696713,
-      "compression_ratio": 1.6875,
-      "end": 87.7,
+      "avg_logprob": -0.768264,
+      "compression_ratio": 1.645161,
+      "end": 87.4,
       "no_speech_prob": 0.0,
       "start": 86.2,
-      "text": "哇哦"
+      "text": "哇"
     },
     {
-      "avg_logprob": -0.696713,
-      "compression_ratio": 1.6875,
+      "avg_logprob": -0.768264,
+      "compression_ratio": 1.645161,
       "end": 90.5,
       "no_speech_prob": 0.0,
       "start": 89.7,
       "text": "你看看这个弹性"
     },
     {
-      "avg_logprob": -0.696713,
-      "compression_ratio": 1.6875,
+      "avg_logprob": -0.768264,
+      "compression_ratio": 1.645161,
       "end": 91.6,
       "no_speech_prob": 0.0,
       "start": 90.5,
       "text": "你看看这个弹性"
     },
     {
-      "avg_logprob": -0.696713,
-      "compression_ratio": 1.6875,
-      "end": 92.6,
+      "avg_logprob": -0.768264,
+      "compression_ratio": 1.645161,
+      "end": 92.2,
       "no_speech_prob": 0.0,
-      "start": 91.7,
-      "text": "哇哦"
+      "start": 91.6,
+      "text": "哇"
     },
     {
-      "avg_logprob": -0.696713,
-      "compression_ratio": 1.6875,
-      "end": 95.8,
+      "avg_logprob": -0.768264,
+      "compression_ratio": 1.645161,
+      "end": 95.9,
       "no_speech_prob": 0.0,
       "start": 94.9,
       "text": "看看看看看看看看"
     },
     {
-      "avg_logprob": -0.696713,
-      "compression_ratio": 1.6875,
-      "end": 97.5,
+      "avg_logprob": -0.768264,
+      "compression_ratio": 1.645161,
+      "end": 97.4,
       "no_speech_prob": 0.0,
-      "start": 95.8,
+      "start": 95.9,
       "text": "啊"
     },
     {
-      "avg_logprob": -0.696713,
-      "compression_ratio": 1.6875,
+      "avg_logprob": -0.768264,
+      "compression_ratio": 1.645161,
       "end": 99.8,
       "no_speech_prob": 0.0,
-      "start": 98.8,
+      "start": 98.9,
       "text": "哇塞"
     },
     {
-      "avg_logprob": -0.913339,
-      "compression_ratio": 0.794118,
-      "end": 101.1,
+      "avg_logprob": NaN,
+      "compression_ratio": 1.111888,
+      "end": 105.0,
       "no_speech_prob": 0.0,
       "start": 99.8,
       "text": "我掰开一个看看啊"
     },
     {
-      "avg_logprob": -0.913339,
-      "compression_ratio": 0.794118,
-      "end": 102.5,
+      "avg_logprob": NaN,
+      "compression_ratio": 1.111888,
+      "end": 106.4,
       "no_speech_prob": 0.0,
-      "start": 101.5,
-      "text": "呦"
+      "start": 105.8,
+      "text": "嘈"
     },
     {
       "avg_logprob": NaN,
-      "compression_ratio": 2.0625,
-      "end": 104.4,
+      "compression_ratio": 1.111888,
+      "end": 107.5,
       "no_speech_prob": 0.0,
-      "start": 102.5,
-      "text": "看看这个"
+      "start": 107.0,
+      "text": "哎呦"
     },
     {
       "avg_logprob": NaN,
-      "compression_ratio": 2.0625,
-      "end": 106.2,
+      "compression_ratio": 1.111888,
+      "end": 108.4,
       "no_speech_prob": 0.0,
-      "start": 104.9,
-      "text": "看看这个"
+      "start": 107.7,
+      "text": "paradox"
     },
     {
       "avg_logprob": NaN,
-      "compression_ratio": 2.0625,
-      "end": 107.2,
+      "compression_ratio": 1.111888,
+      "end": 109.3,
       "no_speech_prob": 0.0,
-      "start": 106.2,
-      "text": "看看这个"
+      "start": 108.8,
+      "text": "只能太牛了"
     },
     {
       "avg_logprob": NaN,
-      "compression_ratio": 2.0625,
-      "end": 108.8,
+      "compression_ratio": 1.111888,
+      "end": 110.0,
       "no_speech_prob": 0.0,
-      "start": 108.2,
-      "text": "jakim"
+      "start": 109.4,
+      "text": "这个膜"
     },
     {
       "avg_logprob": NaN,
-      "compression_ratio": 2.0625,
-      "end": 110.2,
-      "no_speech_prob": 0.0,
-      "start": 109.2,
-      "text": "jakim"
-    },
-    {
-      "avg_logprob": NaN,
-      "compression_ratio": 3.138298,
-      "end": 112.9,
+      "compression_ratio": 1.111888,
+      "end": 110.4,
       "no_speech_prob": 0.0,
       "start": 110.2,
-      "text": "know"
+      "text": "哦"
     },
     {
       "avg_logprob": NaN,
-      "compression_ratio": 3.138298,
-      "end": 113.6,
+      "compression_ratio": 1.111888,
+      "end": 111.2,
       "no_speech_prob": 0.0,
-      "start": 113.1,
-      "text": "dos"
+      "start": 110.6,
+      "text": "你看��一下"
     },
     {
       "avg_logprob": NaN,
-      "compression_ratio": 3.138298,
-      "end": 113.9,
+      "compression_ratio": 1.111888,
+      "end": 112.1,
       "no_speech_prob": 0.0,
-      "start": 113.7,
-      "text": "呦"
+      "start": 111.4,
+      "text": "非常碰颜"
     },
     {
       "avg_logprob": NaN,
-      "compression_ratio": 3.138298,
-      "end": 114.0,
+      "compression_ratio": 1.111888,
+      "end": 113.02,
       "no_speech_prob": 0.0,
-      "start": 113.9,
-      "text": "呦"
+      "start": 112.3,
+      "text": "像其妖"
     },
     {
       "avg_logprob": NaN,
-      "compression_ratio": 3.138298,
-      "end": 114.4,
+      "compression_ratio": 1.111888,
+      "end": 113.7,
       "no_speech_prob": 0.0,
-      "start": 114.0,
-      "text": "呦"
+      "start": 113.2,
+      "text": "噸"
     },
     {
       "avg_logprob": NaN,
-      "compression_ratio": 3.138298,
-      "end": 114.5,
+      "compression_ratio": 1.111888,
+      "end": 114.28,
       "no_speech_prob": 0.0,
-      "start": 114.4,
-      "text": "呦"
+      "start": 113.8,
+      "text": "穿"
     },
     {
       "avg_logprob": NaN,
-      "compression_ratio": 3.138298,
-      "end": 114.9,
+      "compression_ratio": 1.111888,
+      "end": 114.7,
       "no_speech_prob": 0.0,
-      "start": 114.7,
-      "text": "know"
+      "start": 114.5,
+      "text": "和現在咱们測ย"
     },
     {
       "avg_logprob": NaN,
-      "compression_ratio": 3.138298,
-      "end": 115.3,
+      "compression_ratio": 1.111888,
+      "end": 115.24,
       "no_speech_prob": 0.0,
-      "start": 115.1,
-      "text": "know"
+      "start": 114.8,
+      "text": "成为孔子"
     },
     {
       "avg_logprob": NaN,
-      "compression_ratio": 3.138298,
-      "end": 115.9,
-      "no_speech_prob": 0.0,
-      "start": 115.4,
-      "text": "know"
-    },
-    {
-      "avg_logprob": NaN,
-      "compression_ratio": 3.138298,
+      "compression_ratio": 1.111888,
       "end": 116.0,
       "no_speech_prob": 0.0,
-      "start": 115.9,
-      "text": "know"
+      "start": 115.4,
+      "text": "和我的粿 operator"
     },
     {
       "avg_logprob": NaN,
-      "compression_ratio": 3.138298,
+      "compression_ratio": 1.111888,
       "end": 116.2,
       "no_speech_prob": 0.0,
-      "start": 116.0,
-      "text": "know"
+      "start": 116.1,
+      "text": "есс"
     },
     {
       "avg_logprob": NaN,
-      "compression_ratio": 3.138298,
-      "end": 116.4,
-      "no_speech_prob": 0.0,
-      "start": 116.3,
-      "text": "know"
-    },
-    {
-      "avg_logprob": NaN,
-      "compression_ratio": 3.138298,
-      "end": 116.5,
+      "compression_ratio": 1.111888,
+      "end": 116.8,
       "no_speech_prob": 0.0,
       "start": 116.4,
-      "text": "know"
+      "text": "外測"
     },
     {
       "avg_logprob": NaN,
-      "compression_ratio": 3.138298,
-      "end": 116.7,
+      "compression_ratio": 1.111888,
+      "end": 117.6,
       "no_speech_prob": 0.0,
-      "start": 116.5,
-      "text": "know"
+      "start": 117.0,
+      "text": "entonces"
     },
     {
       "avg_logprob": NaN,
-      "compression_ratio": 3.138298,
-      "end": 117.0,
+      "compression_ratio": 1.111888,
+      "end": 118.1,
       "no_speech_prob": 0.0,
-      "start": 116.9,
-      "text": "know"
+      "start": 117.6,
+      "text": "我们对 Mind"
     },
     {
       "avg_logprob": NaN,
-      "compression_ratio": 3.138298,
-      "end": 117.2,
+      "compression_ratio": 1.111888,
+      "end": 118.76,
       "no_speech_prob": 0.0,
-      "start": 117.1,
-      "text": "know"
+      "start": 118.2,
+      "text": "非常相当其妖"
     },
     {
       "avg_logprob": NaN,
-      "compression_ratio": 3.138298,
-      "end": 117.5,
-      "no_speech_prob": 0.0,
-      "start": 117.3,
-      "text": "know"
-    },
-    {
-      "avg_logprob": NaN,
-      "compression_ratio": 3.138298,
-      "end": 117.9,
-      "no_speech_prob": 0.0,
-      "start": 117.5,
-      "text": "know"
-    },
-    {
-      "avg_logprob": NaN,
-      "compression_ratio": 3.138298,
-      "end": 118.0,
-      "no_speech_prob": 0.0,
-      "start": 117.9,
-      "text": "know"
-    },
-    {
-      "avg_logprob": NaN,
-      "compression_ratio": 3.138298,
-      "end": 118.3,
-      "no_speech_prob": 0.0,
-      "start": 118.0,
-      "text": "know"
-    },
-    {
-      "avg_logprob": NaN,
-      "compression_ratio": 3.138298,
-      "end": 118.5,
-      "no_speech_prob": 0.0,
-      "start": 118.3,
-      "text": "know"
-    },
-    {
-      "avg_logprob": NaN,
-      "compression_ratio": 3.138298,
-      "end": 118.8,
-      "no_speech_prob": 0.0,
-      "start": 118.5,
-      "text": "know"
-    },
-    {
-      "avg_logprob": NaN,
-      "compression_ratio": 3.138298,
-      "end": 118.9,
-      "no_speech_prob": 0.0,
-      "start": 118.8,
-      "text": "know"
-    },
-    {
-      "avg_logprob": NaN,
-      "compression_ratio": 3.138298,
+      "compression_ratio": 1.111888,
       "end": 119.2,
       "no_speech_prob": 0.0,
-      "start": 118.9,
-      "text": "know"
+      "start": 118.8,
+      "text": "样的"
     },
     {
       "avg_logprob": NaN,
-      "compression_ratio": 3.138298,
-      "end": 119.5,
+      "compression_ratio": 1.111888,
+      "end": 119.8,
       "no_speech_prob": 0.0,
-      "start": 119.2,
-      "text": "know"
+      "start": 119.3,
+      "text": "漫吃起ным"
     },
     {
       "avg_logprob": NaN,
-      "compression_ratio": 3.138298,
-      "end": 119.74,
-      "no_speech_prob": 0.0,
-      "start": 119.5,
-      "text": "know"
-    },
-    {
-      "avg_logprob": NaN,
-      "compression_ratio": 3.138298,
-      "end": 119.9,
-      "no_speech_prob": 0.0,
-      "start": 119.74,
-      "text": "know"
-    },
-    {
-      "avg_logprob": NaN,
-      "compression_ratio": 3.138298,
-      "end": 120.1,
-      "no_speech_prob": 0.0,
-      "start": 119.9,
-      "text": "know"
-    },
-    {
-      "avg_logprob": NaN,
-      "compression_ratio": 3.138298,
-      "end": 120.32,
-      "no_speech_prob": 0.0,
-      "start": 120.1,
-      "text": "know"
-    },
-    {
-      "avg_logprob": NaN,
-      "compression_ratio": 3.138298,
+      "compression_ratio": 1.111888,
       "end": 120.5,
       "no_speech_prob": 0.0,
-      "start": 120.4,
-      "text": "know"
+      "start": 119.9,
+      "text": "完 возможно"
     },
     {
       "avg_logprob": NaN,
-      "compression_ratio": 3.138298,
-      "end": 120.6,
-      "no_speech_prob": 0.0,
-      "start": 120.5,
-      "text": "know"
-    },
-    {
-      "avg_logprob": NaN,
-      "compression_ratio": 3.138298,
-      "end": 120.9,
+      "compression_ratio": 1.111888,
+      "end": 121.2,
       "no_speech_prob": 0.0,
       "start": 120.6,
-      "text": "know"
+      "text": "玩什么"
     },
     {
       "avg_logprob": NaN,
-      "compression_ratio": 3.138298,
-      "end": 121.1,
+      "compression_ratio": 1.111888,
+      "end": 121.7,
       "no_speech_prob": 0.0,
-      "start": 120.9,
-      "text": "know"
+      "start": 121.3,
+      "text": "哦"
     },
     {
       "avg_logprob": NaN,
-      "compression_ratio": 3.138298,
-      "end": 121.4,
-      "no_speech_prob": 0.0,
-      "start": 121.0,
-      "text": "know"
-    },
-    {
-      "avg_logprob": NaN,
-      "compression_ratio": 3.138298,
-      "end": 121.8,
-      "no_speech_prob": 0.0,
-      "start": 121.4,
-      "text": "know"
-    },
-    {
-      "avg_logprob": NaN,
-      "compression_ratio": 3.138298,
-      "end": 122.4,
+      "compression_ratio": 1.111888,
+      "end": 122.2,
       "no_speech_prob": 0.0,
       "start": 121.8,
-      "text": "that"
+      "text": "tidak"
     },
     {
       "avg_logprob": NaN,
-      "compression_ratio": 3.138298,
-      "end": 122.9,
+      "compression_ratio": 1.111888,
+      "end": 123.0,
       "no_speech_prob": 0.0,
       "start": 122.4,
-      "text": "know"
+      "text": "lawyer"
     },
     {
       "avg_logprob": NaN,
-      "compression_ratio": 3.138298,
-      "end": 123.4,
+      "compression_ratio": 1.111888,
+      "end": 123.7,
       "no_speech_prob": 0.0,
-      "start": 122.9,
-      "text": "know"
+      "start": 123.1,
+      "text": "和我的粿"
     },
     {
       "avg_logprob": NaN,
-      "compression_ratio": 3.138298,
-      "end": 123.74,
-      "no_speech_prob": 0.0,
-      "start": 123.4,
-      "text": "know"
-    },
-    {
-      "avg_logprob": NaN,
-      "compression_ratio": 3.138298,
-      "end": 123.9,
+      "compression_ratio": 1.111888,
+      "end": 124.7,
       "no_speech_prob": 0.0,
       "start": 123.8,
-      "text": "know"
+      "text": "ک PD"
     },
     {
       "avg_logprob": NaN,
-      "compression_ratio": 3.138298,
-      "end": 124.34,
+      "compression_ratio": 1.111888,
+      "end": 125.2,
       "no_speech_prob": 0.0,
-      "start": 123.9,
-      "text": "думt"
+      "start": 124.7,
+      "text": "今天"
     },
     {
       "avg_logprob": NaN,
-      "compression_ratio": 3.138298,
-      "end": 124.5,
+      "compression_ratio": 1.111888,
+      "end": 126.5,
       "no_speech_prob": 0.0,
-      "start": 124.4,
-      "text": "From"
+      "start": 125.3,
+      "text": "这个cé"
     },
     {
-      "avg_logprob": NaN,
-      "compression_ratio": 3.138298,
-      "end": 124.5,
+      "avg_logprob": -0.709048,
+      "compression_ratio": 0.976744,
+      "end": 140.5,
       "no_speech_prob": 0.0,
-      "start": 124.5,
-      "text": "呃"
+      "start": 126.5,
+      "text": "看看這個,看這就是今天,哎呀我的媽呀。"
     },
     {
-      "avg_logprob": NaN,
-      "compression_ratio": 3.138298,
-      "end": 124.9,
+      "avg_logprob": -0.709048,
+      "compression_ratio": 0.976744,
+      "end": 151.5,
       "no_speech_prob": 0.0,
-      "start": 124.4,
-      "text": "know"
+      "start": 140.5,
+      "text": "真的是探索了,你嘗嘗。"
     },
     {
-      "avg_logprob": NaN,
-      "compression_ratio": 3.138298,
-      "end": 125.1,
+      "avg_logprob": -0.477318,
+      "compression_ratio": 1.0,
+      "end": 161.5,
       "no_speech_prob": 0.0,
-      "start": 124.9,
-      "text": "know"
+      "start": 151.5,
+      "text": "這個香的簡直是,這個戰友們,你看這個Q味,哇,這個麵香。"
     },
     {
-      "avg_logprob": NaN,
-      "compression_ratio": 3.138298,
-      "end": 125.44,
+      "avg_logprob": -0.477318,
+      "compression_ratio": 1.0,
+      "end": 169.5,
       "no_speech_prob": 0.0,
-      "start": 125.1,
-      "text": "know"
+      "start": 161.5,
+      "text": "Unbelievable,太幸福了。"
     },
     {
-      "avg_logprob": NaN,
-      "compression_ratio": 3.138298,
-      "end": 125.9,
+      "avg_logprob": -0.477318,
+      "compression_ratio": 1.0,
+      "end": 171.5,
       "no_speech_prob": 0.0,
-      "start": 125.5,
-      "text": "know"
-    },
-    {
-      "avg_logprob": NaN,
-      "compression_ratio": 3.138298,
-      "end": 126.4,
-      "no_speech_prob": 0.0,
-      "start": 125.9,
-      "text": "know"
-    },
-    {
-      "avg_logprob": NaN,
-      "compression_ratio": 3.138298,
-      "end": 126.9,
-      "no_speech_prob": 0.0,
-      "start": 126.4,
-      "text": "know"
-    },
-    {
-      "avg_logprob": NaN,
-      "compression_ratio": 3.138298,
-      "end": 127.1,
-      "no_speech_prob": 0.0,
-      "start": 126.9,
-      "text": "know"
-    },
-    {
-      "avg_logprob": NaN,
-      "compression_ratio": 3.138298,
-      "end": 127.4,
-      "no_speech_prob": 0.0,
-      "start": 127.0,
-      "text": "includes"
-    },
-    {
-      "avg_logprob": NaN,
-      "compression_ratio": 3.138298,
-      "end": 127.9,
-      "no_speech_prob": 0.0,
-      "start": 127.4,
-      "text": "modern"
-    },
-    {
-      "avg_logprob": NaN,
-      "compression_ratio": 3.138298,
-      "end": 128.4,
-      "no_speech_prob": 0.0,
-      "start": 127.9,
-      "text": "OT"
-    },
-    {
-      "avg_logprob": NaN,
-      "compression_ratio": 3.138298,
-      "end": 128.9,
-      "no_speech_prob": 0.0,
-      "start": 128.4,
-      "text": "know"
-    },
-    {
-      "avg_logprob": NaN,
-      "compression_ratio": 3.138298,
-      "end": 129.1,
-      "no_speech_prob": 0.0,
-      "start": 128.9,
-      "text": "know"
-    },
-    {
-      "avg_logprob": NaN,
-      "compression_ratio": 3.138298,
-      "end": 129.4,
-      "no_speech_prob": 0.0,
-      "start": 129.1,
-      "text": "know"
-    },
-    {
-      "avg_logprob": NaN,
-      "compression_ratio": 3.138298,
-      "end": 129.4,
-      "no_speech_prob": 0.0,
-      "start": 129.4,
-      "text": "太"
-    },
-    {
-      "avg_logprob": NaN,
-      "compression_ratio": 3.138298,
-      "end": 129.0,
-      "no_speech_prob": 0.0,
-      "start": 128.54,
-      "text": "llast"
-    },
-    {
-      "avg_logprob": -0.61932,
-      "compression_ratio": 1.182482,
-      "end": 158.0,
-      "no_speech_prob": 0.0,
-      "start": 129.0,
-      "text": "看看這個,看這就是今天,哎呀我的媽呀,真的是太能了,你嘗嘗,這個箱子簡直是,這個戰友們,你看這個裡面這個Q文在那裡談的,"
-    },
-    {
-      "avg_logprob": -0.390308,
-      "compression_ratio": 0.860759,
-      "end": 173.0,
-      "no_speech_prob": 0.0,
-      "start": 159.0,
-      "text": "哇,這個麵香, unbelievable,太幸福了,一會兒吃過點兒。"
+      "start": 169.5,
+      "text": "一會兒製作店。"
     }
   ],
-  "text": "来来来来 看看炖的羊肉 羊肉今天炖的羊肉骨头啊这个有今天文家啊还有我们的乳水啊还有这个老凯啊老凯 还有拉脱啊拉脱 反正不吃肉吃的拉膜拉膜然后呢 豆角真正的好豆角然后这块这个 羊肉 羊肉羊肉啊羊肉糖哎呀 羊肉弯子酸菜这个酸菜太牛了太牛了然后呢 看这个 看这个 看这个看这个啊看这个啊摸摸摸摸摸摸摸摸阿弥陀佛哦乖乖嘞哎呀 香味哦天呐你看这个弹性啊看看这个弹性啊大家今天看到为啥石膜了吗看看看看这个弹性啊哇哦哇哦绝了 看看这个你看这个弹性7根是吹牛哦是吹牛哦哇哦没有它啊看这个哇哦你看看这个弹性你看看这个弹性哇哦看看看看看看看看啊哇塞我掰开一个看看啊呦看看这个看看这个看看这个 jakim jakimknow dos呦呦呦呦knowknowknowknowknowknowknowknowknowknowknowknowknowknowknowknowknowknowknowknowknowknowknowknowknowknowknowknowknowthatknowknowknowknow думt From呃knowknowknowknowknowknowknow includes modernOTknowknowknow太 llast看看這個,看這就是今天,哎呀我的媽呀,真的是太能了,你嘗嘗,這個箱子簡直是,這個戰友們,你看這個裡面這個Q文在那裡談的,哇,這個麵香, unbelievable,太幸福了,一會兒吃過點兒。"
+  "text": "来来来来 看看炖的羊肉 羊肉今天炖的羊肉骨头啊这个有今天文家啊还有我们的乳水啊还有这个老凯啊老凯 还有拉磨啊拉磨啊 拉磨啊拉磨啊然后呢 豆角啊真正的好豆角然后这块这个 羊肉 羊肉羊肉啊羊肉糖哎呀 羊肉弯子这个酸菜这个酸菜太牛了太牛了然后呢 看这个 看这个 看这个看这个啊看这个啊摸摸摸摸摸摸摸摸阿弥陀佛哦 乖乖嘞哎呀 香味哦天呐你看这个弹性啊看看这个弹性啊大家今天看到为啥石膜了我看看看看这个弹性啊哇哇绝了 看看这个你看这个弹性7根是吹牛哦是吹牛哦哇没有它啊看这个哇你看看这个弹性你看看这个弹性哇看看看看看看看看啊哇塞我掰开一个看看啊嘈哎呦 paradox只能太牛了这个膜哦你看��一下非常碰颜像其妖噸穿和現在咱们測ย成为孔子和我的粿 operatorесс外測 entonces我们对 Mind非常相当其妖样的漫吃起ным完 возможно玩什么哦 tidak lawyer和我的粿ک PD今天这个cé看看這個,看這就是今天,哎呀我的媽呀。真的是探索了,你嘗嘗。這個香的簡直是,這個戰友們,你看這個Q味,哇,這個麵香。Unbelievable,太幸福了。一會兒製作店。"
 }
