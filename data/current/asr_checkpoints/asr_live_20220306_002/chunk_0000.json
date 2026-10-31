@@ -1,144 +1,40 @@
 {
-  "chunk_audio_sha256": "a67c13b87e057648afc93fb8eb0795b497e287f8ca10acbd1c8f805925feb6af",
+  "chunk_audio_sha256": "820dadabf5b52a8f83fafac06d450388cef7f3191b7bb38ae850c85787d1cfac",
   "chunk_index": 0,
-  "completed_at": "2026-10-23T05:46:16Z",
+  "completed_at": "2026-10-31T19:21:48Z",
   "language": "zh",
   "live_id": "LIVE_20220306_002",
   "media_committed_to_git": false,
   "model": "mlx-community/whisper-large-v3-turbo",
   "offset_sec": 0,
   "paid_api_used": false,
-  "processing_location": "codex-local-apple-silicon-agent50",
+  "processing_location": "github-hosted-macos-arm64",
   "schema_version": "cloud-asr-chunk-v1",
   "segments": [
     {
-      "avg_logprob": -2.519524,
-      "compression_ratio": 2.176471,
-      "end": 1.0,
+      "avg_logprob": -0.585763,
+      "compression_ratio": 0.694444,
+      "end": 29.98,
       "no_speech_prob": 0.0,
       "start": 0.0,
-      "text": "1,1,1,0"
+      "text": "字幕志愿者 李宗盛"
     },
     {
-      "avg_logprob": -2.519524,
-      "compression_ratio": 2.176471,
-      "end": 0.9,
-      "no_speech_prob": 0.0,
-      "start": 0.9,
-      "text": "0,0"
-    },
-    {
-      "avg_logprob": -2.519524,
-      "compression_ratio": 2.176471,
-      "end": 0.58,
-      "no_speech_prob": 0.0,
-      "start": 0.58,
-      "text": "0,0"
-    },
-    {
-      "avg_logprob": -2.519524,
-      "compression_ratio": 2.176471,
-      "end": 0.32,
-      "no_speech_prob": 0.0,
-      "start": 0.32,
-      "text": "0,0"
-    },
-    {
-      "avg_logprob": -2.519524,
-      "compression_ratio": 2.176471,
-      "end": 0.2,
-      "no_speech_prob": 0.0,
-      "start": 0.2,
-      "text": "0"
-    },
-    {
-      "avg_logprob": -2.519524,
-      "compression_ratio": 2.176471,
-      "end": 0.08,
-      "no_speech_prob": 0.0,
-      "start": 0.0,
-      "text": "0"
-    },
-    {
-      "avg_logprob": -2.519524,
-      "compression_ratio": 2.176471,
-      "end": 0.06,
-      "no_speech_prob": 0.0,
-      "start": 0.0,
-      "text": "0"
-    },
-    {
-      "avg_logprob": -2.519524,
-      "compression_ratio": 2.176471,
-      "end": 0.04,
-      "no_speech_prob": 0.0,
-      "start": 0.0,
-      "text": "0"
-    },
-    {
-      "avg_logprob": -2.519524,
-      "compression_ratio": 2.176471,
-      "end": 0.04,
-      "no_speech_prob": 0.0,
-      "start": 0.0,
-      "text": "0"
-    },
-    {
-      "avg_logprob": -2.519524,
-      "compression_ratio": 2.176471,
-      "end": 0.04,
-      "no_speech_prob": 0.0,
-      "start": 0.0,
-      "text": "0"
-    },
-    {
-      "avg_logprob": -2.519524,
-      "compression_ratio": 2.176471,
-      "end": 0.04,
-      "no_speech_prob": 0.0,
-      "start": 0.0,
-      "text": "0"
-    },
-    {
-      "avg_logprob": -2.519524,
-      "compression_ratio": 2.176471,
-      "end": 0.04,
-      "no_speech_prob": 0.0,
-      "start": 0.02,
-      "text": "0"
-    },
-    {
-      "avg_logprob": -3.701751,
-      "compression_ratio": 0.272727,
-      "end": 30.24,
+      "avg_logprob": -0.038538,
+      "compression_ratio": 0.694444,
+      "end": 59.98,
       "no_speech_prob": 0.0,
       "start": 30.0,
-      "text": "2"
+      "text": "字幕志愿者 李宗盛"
     },
     {
-      "avg_logprob": -3.701751,
-      "compression_ratio": 0.272727,
-      "end": 30.22,
-      "no_speech_prob": 0.0,
-      "start": 30.22,
-      "text": "1"
-    },
-    {
-      "avg_logprob": -3.701751,
-      "compression_ratio": 0.272727,
-      "end": 30.08,
-      "no_speech_prob": 0.0,
-      "start": 30.08,
-      "text": "1"
-    },
-    {
-      "avg_logprob": -0.471746,
-      "compression_ratio": 12.388889,
-      "end": 77.16,
+      "avg_logprob": -0.148383,
+      "compression_ratio": 0.694444,
+      "end": 89.98,
       "no_speech_prob": 0.0,
       "start": 60.0,
-      "text": "CB,A,A$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$"
+      "text": "字幕志愿者 李宗盛"
     }
   ],
-  "text": "1,1,1,00,00,00,000000000211CB,A,A$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$!$"
+  "text": "字幕志愿者 李宗盛字幕志愿者 李宗盛字幕志愿者 李宗盛"
 }
