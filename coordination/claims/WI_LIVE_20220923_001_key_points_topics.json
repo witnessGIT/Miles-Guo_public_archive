@@ -1,9 +1,9 @@
 {
   "task_id": "WI_LIVE_20220923_001_key_points_topics",
   "agent_id": "codex-local-asr-agent50-20261031",
-  "claimed_at": "2026-10-31T02:27:12.867372+00:00",
-  "base_commit": "02539b4acecfb98153cbe7479963ed8f1d8192d9",
-  "status": "released",
+  "claimed_at": "2026-10-31T02:29:48.135494+00:00",
+  "base_commit": "ec81c2a2ea56b05d50f86bf4b698d47ecd98898a",
+  "status": "in_progress",
   "workflow_mode": "continuous-worker-v2",
   "claim_protocol": "claim-protocol-v2",
   "entry_mode": "work",
@@ -21,8 +21,6 @@
     "WI_LIVE_20220923_001_segment_split"
   ],
   "scope": "Create evidence-grounded neutral key points and controlled topic assignments.",
-  "reclaimed_expired_claim": false,
-  "static_claim_lease_hours": 24,
-  "released_at": "2026-10-31T02:28:45.423370+00:00",
-  "release_reason": "Cloud key-point extraction failed; retained for retry"
+  "reclaimed_expired_claim": true,
+  "static_claim_lease_hours": 24
 }
