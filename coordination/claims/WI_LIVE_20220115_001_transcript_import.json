@@ -3,7 +3,7 @@
   "agent_id": "github-actions-cloud-asr-41209578277",
   "claimed_at": "2026-10-31T14:22:04.087049+00:00",
   "base_commit": "e314724b67dd847a5d46ca1198707e4057e490aa",
-  "status": "in_progress",
+  "status": "released",
   "workflow_mode": "continuous-worker-v2",
   "claim_protocol": "claim-protocol-v2",
   "entry_mode": "work",
@@ -22,5 +22,7 @@
   ],
   "scope": "Import source transcript or ASR text without overwriting original text.",
   "reclaimed_expired_claim": true,
-  "static_claim_lease_hours": 24
+  "static_claim_lease_hours": 24,
+  "released_at": "2026-10-31T15:16:37Z",
+  "release_reason": "Second independent decode failed manual hallucination audit: repeated stock-outro text occupies the first 60 seconds and reappears after the decoded audio boundary. Automatic gate pass is rejected; invalid transcript outputs were removed and the item remains in corpus_tail. Source is reachable and media is not missing."
 }
