@@ -1,9 +1,9 @@
 {
   "task_id": "WI_LIVE_20220208_001_transcript_import",
-  "agent_id": "codex-local-asr-agent50-20261023",
-  "claimed_at": "2026-10-24T15:27:23.108548+00:00",
-  "base_commit": "99bb9de5f9e88ed90c326c9ce8264c80557256cc",
-  "status": "released",
+  "agent_id": "github-actions-cloud-asr-41229415165",
+  "claimed_at": "2026-10-31T18:28:38.454443+00:00",
+  "base_commit": "f332c4e006c794e1ee6acf0ec4addc7f3569006c",
+  "status": "in_progress",
   "workflow_mode": "continuous-worker-v2",
   "claim_protocol": "claim-protocol-v2",
   "entry_mode": "work",
@@ -21,8 +21,6 @@
     "WI_LIVE_20220208_001_metadata_fill"
   ],
   "scope": "Import source transcript or ASR text without overwriting original text.",
-  "reclaimed_expired_claim": false,
-  "static_claim_lease_hours": 24,
-  "released_at": "2026-10-24T15:29:29.976514+00:00",
-  "release_reason": "manual quality audit: six identical long-window stock-credit hallucinations; two PCM-SHA-validated resumes reproduced result; deferred to corpus_tail"
+  "reclaimed_expired_claim": true,
+  "static_claim_lease_hours": 24
 }
