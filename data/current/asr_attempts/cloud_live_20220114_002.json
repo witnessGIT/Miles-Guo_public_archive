@@ -1,14 +1,16 @@
 {
+  "checkpoint_retry_count": 0,
+  "checkpoint_retry_limit": 2,
   "deferred_reason": "machine transcript failed dictation, timing, coverage, or hallucination quality gates",
   "deferred_until_corpus_tail": true,
   "error": "machine transcript did not pass conservative ASR quality gates",
-  "generated_at": "2026-10-23T02:06:45Z",
+  "generated_at": "2026-10-31T13:22:18Z",
   "live_id": "LIVE_20220114_002",
   "media_asset_id": "MA_GETTR_POST_POEAG404D8_C9CA4712",
   "media_committed_to_git": false,
   "model": "mlx-community/whisper-large-v3-turbo",
   "paid_api_used": false,
-  "processing_location": "codex-local-apple-silicon-agent50",
+  "processing_location": "github-hosted-macos-arm64",
   "quality": {
     "gate_status": "deferred_review",
     "metrics": {
