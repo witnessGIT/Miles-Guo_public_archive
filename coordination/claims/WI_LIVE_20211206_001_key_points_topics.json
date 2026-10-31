@@ -1,9 +1,9 @@
 {
   "task_id": "WI_LIVE_20211206_001_key_points_topics",
-  "agent_id": "github-actions-cloud-key-points-41006027905",
-  "claimed_at": "2026-10-30T05:53:39.832295+00:00",
-  "base_commit": "29635a8dea3b58e8a2351be0de7d15408b3fc9d5",
-  "status": "released",
+  "agent_id": "github-actions-cloud-key-points-41187025503",
+  "claimed_at": "2026-10-31T10:57:31.586341+00:00",
+  "base_commit": "ebb75c57ede94a4e69b3c59d4e0c33b4a1847ee7",
+  "status": "in_progress",
   "workflow_mode": "continuous-worker-v2",
   "claim_protocol": "claim-protocol-v2",
   "entry_mode": "work",
@@ -21,8 +21,6 @@
     "WI_LIVE_20211206_001_segment_split"
   ],
   "scope": "Create evidence-grounded neutral key points and controlled topic assignments.",
-  "reclaimed_expired_claim": false,
-  "static_claim_lease_hours": 24,
-  "released_at": "2026-10-30T06:01:27.984262+00:00",
-  "release_reason": "Overlapping newer key-point run 41006027905 was force-cancelled while older entity run 41006027678 remained active; no completion record was published, retained for retry."
+  "reclaimed_expired_claim": true,
+  "static_claim_lease_hours": 24
 }
