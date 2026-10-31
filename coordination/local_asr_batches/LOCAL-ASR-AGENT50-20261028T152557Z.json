@@ -62,7 +62,7 @@
     "LIVE_20230111_001",
     "LIVE_20230129_001"
   ],
-  "next_live_id": "LIVE_20230111_001",
+  "next_live_id": "LIVE_20230129_001",
   "completed_live_ids": [
     "LIVE_20230313_001",
     "LIVE_20221011_001",
@@ -110,15 +110,16 @@
     "LIVE_20221009_001",
     "LIVE_20230104_001",
     "LIVE_20220928_001",
-    "LIVE_20221102_001"
+    "LIVE_20221102_001",
+    "LIVE_20230111_001"
   ],
   "failed_or_deferred_live_ids": [],
   "retry_pending_live_ids": [
     "LIVE_20221024_001"
   ],
   "last_window": {
-    "started_at": "2026-10-31T12:25:45Z",
-    "ended_at": "2026-10-31T12:44:18Z",
+    "started_at": "2026-10-31T13:25:45Z",
+    "ended_at": "2026-10-31T13:50:25Z",
     "attempted_unique_videos": 1,
     "transcript_cue_segment_completed": 0,
     "four_stage_completed": 1,
@@ -130,37 +131,37 @@
     "audio_duration_sec": 0.0,
     "download_elapsed_sec_known": 0.0,
     "download_elapsed_unavailable_for": [
-      "LIVE_20221102_001"
+      "LIVE_20230111_001"
     ],
     "pure_asr_inference_sec_known": 0.0,
     "pure_asr_inference_unavailable_for": [
-      "LIVE_20221102_001"
+      "LIVE_20230111_001"
     ],
     "structured_pipeline_elapsed_sec_known": 0.0,
     "structured_pipeline_elapsed_unavailable_for": [
-      "LIVE_20221102_001"
+      "LIVE_20230111_001"
     ],
     "asr_job_wall_elapsed_sec": 0.0,
-    "key_points_attempt_wall_elapsed_sec": 1093.0,
-    "window_elapsed_sec": 1113.0,
+    "key_points_attempt_wall_elapsed_sec": 1456.0,
+    "window_elapsed_sec": 1480.0,
     "known_inference_rtf": null,
     "known_inference_realtime_multiple": null,
     "published_commits": 3,
     "quality_failures": {},
     "completed_three_stage_live_ids": [],
     "completed_four_stage_live_ids": [
-      "LIVE_20221102_001"
+      "LIVE_20230111_001"
     ],
     "released_key_points_live_ids": [],
     "source_temporarily_unavailable_live_ids": [],
-    "next_live_id": "LIVE_20230111_001",
+    "next_live_id": "LIVE_20230129_001",
     "key_point_stats": {
-      "natural_segments": 101,
-      "key_points": 326,
-      "topic_links": 104,
-      "skipped_or_invalid": 43,
-      "parse_errors": 22,
-      "forced_retries": 29,
+      "natural_segments": 133,
+      "key_points": 539,
+      "topic_links": 191,
+      "skipped_or_invalid": 31,
+      "parse_errors": 21,
+      "forced_retries": 26,
       "grounded_supplement_points": 0,
       "outcome": "enriched"
     }
