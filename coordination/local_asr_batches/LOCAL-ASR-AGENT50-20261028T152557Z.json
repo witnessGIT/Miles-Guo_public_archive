@@ -62,7 +62,7 @@
     "LIVE_20230111_001",
     "LIVE_20230129_001"
   ],
-  "next_live_id": "LIVE_20221123_002",
+  "next_live_id": "LIVE_20230115_001",
   "completed_live_ids": [
     "LIVE_20230313_001",
     "LIVE_20221011_001",
@@ -100,63 +100,60 @@
     "LIVE_20230204_001",
     "LIVE_20230108_001",
     "LIVE_20220925_001",
-    "LIVE_20220923_001"
+    "LIVE_20220923_001",
+    "LIVE_20221123_002"
   ],
   "failed_or_deferred_live_ids": [],
   "retry_pending_live_ids": [
     "LIVE_20221024_001"
   ],
   "last_window": {
-    "started_at": "2026-10-31T02:26:13Z",
-    "ended_at": "2026-10-31T02:50:41Z",
+    "started_at": "2026-10-31T03:25:13Z",
+    "ended_at": "2026-10-31T03:44:58Z",
     "attempted_unique_videos": 1,
     "transcript_cue_segment_completed": 0,
     "four_stage_completed": 1,
     "key_points_completed": 1,
-    "failed_or_released_stages": 1,
+    "failed_or_released_stages": 0,
     "tail_deferred_videos": 0,
     "cooldown_skipped_videos": 0,
     "source_temporarily_unavailable_videos": 0,
     "audio_duration_sec": 0.0,
     "download_elapsed_sec_known": 0.0,
     "download_elapsed_unavailable_for": [
-      "LIVE_20220923_001"
+      "LIVE_20221123_002"
     ],
     "pure_asr_inference_sec_known": 0.0,
     "pure_asr_inference_unavailable_for": [
-      "LIVE_20220923_001"
+      "LIVE_20221123_002"
     ],
     "structured_pipeline_elapsed_sec_known": 0.0,
     "structured_pipeline_elapsed_unavailable_for": [
-      "LIVE_20220923_001"
+      "LIVE_20221123_002"
     ],
     "asr_job_wall_elapsed_sec": 0.0,
-    "key_points_attempt_wall_elapsed_sec": 1264.0,
-    "window_elapsed_sec": 1468.0,
+    "key_points_attempt_wall_elapsed_sec": 1070.0,
+    "window_elapsed_sec": 1185.0,
     "known_inference_rtf": null,
     "known_inference_realtime_multiple": null,
-    "published_commits": 5,
-    "quality_failures": {
-      "missing_local_mlx_lm_runtime": 1
-    },
+    "published_commits": 3,
+    "quality_failures": {},
     "completed_three_stage_live_ids": [],
     "completed_four_stage_live_ids": [
-      "LIVE_20220923_001"
+      "LIVE_20221123_002"
     ],
-    "released_key_points_live_ids": [
-      "LIVE_20220923_001"
-    ],
+    "released_key_points_live_ids": [],
     "source_temporarily_unavailable_live_ids": [],
-    "next_live_id": "LIVE_20221123_002",
+    "next_live_id": "LIVE_20230115_001",
     "key_point_stats": {
-      "natural_segments": 112,
-      "key_points": 413,
-      "topic_links": 126,
-      "skipped_or_invalid": 36,
+      "natural_segments": 102,
+      "key_points": 376,
+      "topic_links": 131,
+      "skipped_or_invalid": 32,
       "parse_errors": 18,
-      "forced_retries": 41,
+      "forced_retries": 27,
       "grounded_supplement_points": 0,
-      "outcome": "enriched_after_runtime_repair"
+      "outcome": "enriched"
     }
   },
   "notes": "Fixed logical batch; never expand this list. Claims are created and published one item at a time immediately before processing."
