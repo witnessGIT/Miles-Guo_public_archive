@@ -1,7 +1,7 @@
 {
-  "chunk_audio_sha256": "77ee9ef3368aef7f83b283a2932b0ecbab00b319a8bb3c40b719b390952b86db",
+  "chunk_audio_sha256": "5d346fb14f5bfce6ad0b3f470d61995d06ca0f003aa36ea8d2b9ec197abee18c",
   "chunk_index": 0,
-  "completed_at": "2026-10-20T15:36:52Z",
+  "completed_at": "2026-10-31T03:28:55Z",
   "language": "zh",
   "live_id": "LIVE_20211101_001",
   "media_committed_to_git": false,
@@ -12,157 +12,250 @@
   "schema_version": "cloud-asr-chunk-v1",
   "segments": [
     {
+      "avg_logprob": -0.289632,
+      "compression_ratio": 0.694444,
       "end": 29.98,
+      "no_speech_prob": 0.0,
       "start": 0.0,
       "text": "字幕志愿者 杨栋梁"
     },
     {
+      "avg_logprob": -0.187086,
+      "compression_ratio": 0.694444,
       "end": 46.04,
+      "no_speech_prob": 0.0,
       "start": 30.0,
       "text": "字幕志愿者 杨栋梁"
     },
     {
+      "avg_logprob": -0.079932,
+      "compression_ratio": 0.694444,
       "end": 89.98,
+      "no_speech_prob": 0.0,
       "start": 60.0,
       "text": "字幕志愿者 杨栋梁"
     },
     {
+      "avg_logprob": -0.15818,
+      "compression_ratio": 0.694444,
       "end": 119.98,
+      "no_speech_prob": 0.0,
       "start": 90.0,
       "text": "字幕志愿者 杨栋梁"
     },
     {
+      "avg_logprob": -0.126896,
+      "compression_ratio": 0.694444,
       "end": 149.96,
+      "no_speech_prob": 0.0,
       "start": 119.98,
       "text": "字幕志愿者 杨栋梁"
     },
     {
+      "avg_logprob": -0.117446,
+      "compression_ratio": 0.694444,
       "end": 179.94,
+      "no_speech_prob": 0.0,
       "start": 149.96,
       "text": "字幕志愿者 杨栋梁"
     },
     {
+      "avg_logprob": -0.105459,
+      "compression_ratio": 0.694444,
       "end": 209.94,
+      "no_speech_prob": 0.0,
       "start": 179.96,
       "text": "字幕志愿者 杨栋梁"
     },
     {
+      "avg_logprob": -0.117849,
+      "compression_ratio": 0.694444,
       "end": 239.94,
+      "no_speech_prob": 0.0,
       "start": 209.96,
       "text": "字幕志愿者 杨栋梁"
     },
     {
+      "avg_logprob": -0.174085,
+      "compression_ratio": 0.694444,
       "end": 269.92,
+      "no_speech_prob": 0.0,
       "start": 239.94,
       "text": "字幕志愿者 杨栋梁"
     },
     {
+      "avg_logprob": -0.121988,
+      "compression_ratio": 0.694444,
       "end": 299.9,
+      "no_speech_prob": 0.0,
       "start": 269.92,
       "text": "字幕志愿者 杨栋梁"
     },
     {
+      "avg_logprob": -0.104364,
+      "compression_ratio": 0.694444,
       "end": 329.88,
+      "no_speech_prob": 0.0,
       "start": 299.9,
       "text": "字幕志愿者 杨栋梁"
     },
     {
+      "avg_logprob": -0.04097,
+      "compression_ratio": 0.694444,
       "end": 359.86,
+      "no_speech_prob": 0.0,
       "start": 329.88,
       "text": "字幕志愿者 杨栋梁"
     },
     {
+      "avg_logprob": -0.036096,
+      "compression_ratio": 0.694444,
       "end": 389.86,
+      "no_speech_prob": 0.0,
       "start": 359.88,
       "text": "字幕志愿者 杨栋梁"
     },
     {
+      "avg_logprob": -0.0345,
+      "compression_ratio": 0.694444,
       "end": 419.86,
+      "no_speech_prob": 0.0,
       "start": 389.88,
       "text": "字幕志愿者 杨栋梁"
     },
     {
+      "avg_logprob": -0.036043,
+      "compression_ratio": 0.694444,
       "end": 449.86,
+      "no_speech_prob": 0.0,
       "start": 419.88,
       "text": "字幕志愿者 杨栋梁"
     },
     {
+      "avg_logprob": -0.088315,
+      "compression_ratio": 0.694444,
       "end": 479.86,
+      "no_speech_prob": 0.0,
       "start": 449.88,
       "text": "字幕志愿者 杨栋梁"
     },
     {
+      "avg_logprob": -0.060895,
+      "compression_ratio": 0.694444,
       "end": 509.86,
+      "no_speech_prob": 0.0,
       "start": 479.88,
       "text": "字幕志愿者 杨栋梁"
     },
     {
+      "avg_logprob": -0.061674,
+      "compression_ratio": 0.694444,
       "end": 539.86,
+      "no_speech_prob": 0.0,
       "start": 509.88,
       "text": "字幕志愿者 杨栋梁"
     },
     {
+      "avg_logprob": -0.025119,
+      "compression_ratio": 0.694444,
       "end": 569.86,
+      "no_speech_prob": 0.0,
       "start": 539.88,
       "text": "字幕志愿者 杨栋梁"
     },
     {
+      "avg_logprob": -0.059934,
+      "compression_ratio": 0.694444,
       "end": 599.84,
+      "no_speech_prob": 0.0,
       "start": 569.86,
       "text": "字幕志愿者 杨栋梁"
     },
     {
+      "avg_logprob": -0.056142,
+      "compression_ratio": 0.694444,
       "end": 629.82,
+      "no_speech_prob": 0.0,
       "start": 599.84,
       "text": "字幕志愿者 杨栋梁"
     },
     {
+      "avg_logprob": -0.072762,
+      "compression_ratio": 0.694444,
       "end": 659.8,
+      "no_speech_prob": 0.0,
       "start": 629.82,
       "text": "字幕志愿者 杨栋梁"
     },
     {
+      "avg_logprob": -0.032175,
+      "compression_ratio": 0.694444,
       "end": 689.78,
+      "no_speech_prob": 0.0,
       "start": 659.8,
       "text": "字幕志愿者 杨栋梁"
     },
     {
+      "avg_logprob": -0.084431,
+      "compression_ratio": 0.694444,
       "end": 719.76,
+      "no_speech_prob": 0.0,
       "start": 689.78,
       "text": "字幕志愿者 杨栋梁"
     },
     {
+      "avg_logprob": -0.116943,
+      "compression_ratio": 0.694444,
       "end": 749.74,
+      "no_speech_prob": 0.0,
       "start": 719.76,
       "text": "字幕志愿者 杨栋梁"
     },
     {
+      "avg_logprob": -0.0664,
+      "compression_ratio": 0.694444,
       "end": 779.72,
+      "no_speech_prob": 0.0,
       "start": 749.74,
       "text": "字幕志愿者 杨栋梁"
     },
     {
+      "avg_logprob": -0.039756,
+      "compression_ratio": 0.694444,
       "end": 809.7,
+      "no_speech_prob": 0.0,
       "start": 779.72,
       "text": "字幕志愿者 杨栋梁"
     },
     {
+      "avg_logprob": -0.059206,
+      "compression_ratio": 0.694444,
       "end": 839.68,
+      "no_speech_prob": 0.0,
       "start": 809.7,
       "text": "字幕志愿者 杨栋梁"
     },
     {
+      "avg_logprob": -0.029317,
+      "compression_ratio": 0.694444,
       "end": 869.66,
+      "no_speech_prob": 0.0,
       "start": 839.68,
       "text": "字幕志愿者 杨栋梁"
     },
     {
+      "avg_logprob": -0.079979,
+      "compression_ratio": 0.694444,
       "end": 899.64,
+      "no_speech_prob": 0.0,
       "start": 869.66,
       "text": "字幕志愿者 杨栋梁"
     },
     {
+      "avg_logprob": -0.086598,
+      "compression_ratio": 0.694444,
       "end": 929.62,
+      "no_speech_prob": 0.0,
       "start": 899.64,
       "text": "字幕志愿者 杨栋梁"
     }
