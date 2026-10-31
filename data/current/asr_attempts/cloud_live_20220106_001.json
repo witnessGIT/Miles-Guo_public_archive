@@ -1,31 +1,33 @@
 {
+  "checkpoint_retry_count": 0,
+  "checkpoint_retry_limit": 2,
   "deferred_reason": "machine transcript failed dictation, timing, coverage, or hallucination quality gates",
   "deferred_until_corpus_tail": true,
   "error": "machine transcript did not pass conservative ASR quality gates",
-  "generated_at": "2026-10-23T05:47:24Z",
+  "generated_at": "2026-10-31T11:20:33Z",
   "live_id": "LIVE_20220106_001",
   "media_asset_id": "MA_GETTR_POST_PMN4B36548_DF8BD067",
   "media_committed_to_git": false,
   "model": "mlx-community/whisper-large-v3-turbo",
   "paid_api_used": false,
-  "processing_location": "codex-local-apple-silicon-agent50",
+  "processing_location": "github-hosted-macos-arm64",
   "quality": {
     "gate_status": "deferred_review",
     "metrics": {
       "audio_duration_sec": 82.46,
-      "characters_per_minute": 12.37,
-      "confidence_segment_count": 4,
-      "end_coverage_ratio": 0.924087,
-      "filtered_hallucination_segment_count": 13,
+      "characters_per_minute": 8.732,
+      "confidence_segment_count": 2,
+      "end_coverage_ratio": 0.048508,
+      "filtered_hallucination_segment_count": 6,
       "high_compression_segment_count": 0,
       "high_no_speech_segment_count": 0,
       "invalid_timestamp_count": 0,
-      "low_confidence_segment_count": 1,
+      "low_confidence_segment_count": 0,
       "repeated_text_ratio": 0.0,
-      "segment_count": 4,
-      "text_character_count": 17
+      "segment_count": 2,
+      "text_character_count": 12
     },
-    "quality_score": 0.6428,
+    "quality_score": 0.6155,
     "reasons": [
       "transcript_too_sparse_for_audio_duration"
     ],

@@ -1,152 +1,80 @@
 {
-  "chunk_audio_sha256": "d2c3d55d588da5de3f5e9a79c2776d244b8682b78e1496643cf4127b7420e9e2",
+  "chunk_audio_sha256": "2c39e651b224d2c2e541e61a3d01222febced9d1aa4bf5ced6b71a28b92dc124",
   "chunk_index": 0,
-  "completed_at": "2026-10-23T05:47:24Z",
+  "completed_at": "2026-10-31T11:20:33Z",
   "language": "zh",
   "live_id": "LIVE_20220106_001",
   "media_committed_to_git": false,
   "model": "mlx-community/whisper-large-v3-turbo",
   "offset_sec": 0,
   "paid_api_used": false,
-  "processing_location": "codex-local-apple-silicon-agent50",
+  "processing_location": "github-hosted-macos-arm64",
   "schema_version": "cloud-asr-chunk-v1",
   "segments": [
     {
-      "avg_logprob": -0.558019,
-      "compression_ratio": 0.823529,
+      "avg_logprob": -0.508355,
+      "compression_ratio": 0.857143,
       "end": 2.0,
       "no_speech_prob": 0.0,
       "start": 0.0,
-      "text": "行動 行動"
+      "text": "行動!行動!"
     },
     {
-      "avg_logprob": -0.558019,
-      "compression_ratio": 0.823529,
+      "avg_logprob": -0.508355,
+      "compression_ratio": 0.857143,
       "end": 4.0,
       "no_speech_prob": 0.0,
       "start": 2.0,
-      "text": "中國已完了"
+      "text": "中國已完了!"
     },
     {
-      "avg_logprob": -6.372008,
-      "compression_ratio": 0.625,
-      "end": 57.2,
+      "avg_logprob": -0.911203,
+      "compression_ratio": 0.466667,
+      "end": 32.0,
       "no_speech_prob": 0.0,
-      "start": 30.5,
-      "text": "政府版限紅"
+      "start": 30.0,
+      "text": "行動!"
     },
     {
-      "avg_logprob": -0.773353,
-      "compression_ratio": 2.04,
-      "end": 58.2,
+      "avg_logprob": -0.453297,
+      "compression_ratio": 1.944444,
+      "end": 62.0,
       "no_speech_prob": 0.0,
-      "start": 57.2,
-      "text": "好"
+      "start": 60.0,
+      "text": "行動!"
     },
     {
-      "avg_logprob": -0.773353,
-      "compression_ratio": 2.04,
-      "end": 59.2,
+      "avg_logprob": -0.453297,
+      "compression_ratio": 1.944444,
+      "end": 68.0,
       "no_speech_prob": 0.0,
-      "start": 58.2,
-      "text": "好"
+      "start": 66.0,
+      "text": "行動!"
     },
     {
-      "avg_logprob": -0.773353,
-      "compression_ratio": 2.04,
-      "end": 68.2,
+      "avg_logprob": -0.453297,
+      "compression_ratio": 1.944444,
+      "end": 72.0,
       "no_speech_prob": 0.0,
-      "start": 67.2,
-      "text": "好"
+      "start": 70.0,
+      "text": "行動!"
     },
     {
-      "avg_logprob": -0.773353,
-      "compression_ratio": 2.04,
-      "end": 71.2,
+      "avg_logprob": -0.453297,
+      "compression_ratio": 1.944444,
+      "end": 76.0,
       "no_speech_prob": 0.0,
-      "start": 70.2,
-      "text": "好"
+      "start": 75.0,
+      "text": "行動!"
     },
     {
-      "avg_logprob": -0.773353,
-      "compression_ratio": 2.04,
-      "end": 76.2,
+      "avg_logprob": -0.453297,
+      "compression_ratio": 1.944444,
+      "end": 78.0,
       "no_speech_prob": 0.0,
-      "start": 75.2,
-      "text": "真的好"
-    },
-    {
-      "avg_logprob": -0.773353,
-      "compression_ratio": 2.04,
-      "end": 78.2,
-      "no_speech_prob": 0.0,
-      "start": 77.2,
-      "text": "好"
-    },
-    {
-      "avg_logprob": -0.773353,
-      "compression_ratio": 2.04,
-      "end": 79.2,
-      "no_speech_prob": 0.0,
-      "start": 78.2,
-      "text": "好"
-    },
-    {
-      "avg_logprob": -0.773353,
-      "compression_ratio": 2.04,
-      "end": 80.2,
-      "no_speech_prob": 0.0,
-      "start": 79.2,
-      "text": "好"
-    },
-    {
-      "avg_logprob": -0.773353,
-      "compression_ratio": 2.04,
-      "end": 81.2,
-      "no_speech_prob": 0.0,
-      "start": 80.2,
-      "text": "好"
-    },
-    {
-      "avg_logprob": -0.773353,
-      "compression_ratio": 2.04,
-      "end": 82.2,
-      "no_speech_prob": 0.0,
-      "start": 81.2,
-      "text": "好"
-    },
-    {
-      "avg_logprob": -0.773353,
-      "compression_ratio": 2.04,
-      "end": 83.2,
-      "no_speech_prob": 0.0,
-      "start": 82.2,
-      "text": "好"
-    },
-    {
-      "avg_logprob": -0.773353,
-      "compression_ratio": 2.04,
-      "end": 84.2,
-      "no_speech_prob": 0.0,
-      "start": 83.2,
-      "text": "好"
-    },
-    {
-      "avg_logprob": -0.773353,
-      "compression_ratio": 2.04,
-      "end": 85.2,
-      "no_speech_prob": 0.0,
-      "start": 84.2,
-      "text": "好"
-    },
-    {
-      "avg_logprob": -0.773353,
-      "compression_ratio": 2.04,
-      "end": 86.2,
-      "no_speech_prob": 0.0,
-      "start": 85.2,
-      "text": "好"
+      "start": 77.0,
+      "text": "行動!"
     }
   ],
-  "text": "行動 行動中國已完了政府版限紅好好好好真的好好好好好好好好好好"
+  "text": "行動!行動!中國已完了!行動!行動!行動!行動!行動!行動!"
 }
