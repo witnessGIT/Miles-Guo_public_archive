@@ -1,18 +1,18 @@
 {
-  "chunk_audio_sha256": "ded8e098a3ad6f369545f5d981d9bd6023708399f05538a1c132c614c4d2999b",
+  "chunk_audio_sha256": "e3aaa52a6b1de78cc5c37efb122c51d70f60ce7fe3d3a4a7d650b52cb1436929",
   "chunk_index": 0,
-  "completed_at": "2026-10-24T13:27:28Z",
+  "completed_at": "2026-10-31T15:24:49Z",
   "language": "zh",
   "live_id": "LIVE_20220117_002",
   "media_committed_to_git": false,
   "model": "mlx-community/whisper-large-v3-turbo",
   "offset_sec": 0,
   "paid_api_used": false,
-  "processing_location": "codex-local-apple-silicon-agent50",
+  "processing_location": "github-hosted-macos-arm64",
   "schema_version": "cloud-asr-chunk-v1",
   "segments": [
     {
-      "avg_logprob": -0.704367,
+      "avg_logprob": -0.694218,
       "compression_ratio": 0.714286,
       "end": 29.98,
       "no_speech_prob": 0.0,
@@ -20,7 +20,7 @@
       "text": "中文字幕——YK"
     },
     {
-      "avg_logprob": -0.085382,
+      "avg_logprob": -0.078958,
       "compression_ratio": 0.714286,
       "end": 59.98,
       "no_speech_prob": 0.0,
@@ -28,85 +28,213 @@
       "text": "中文字幕——YK"
     },
     {
-      "avg_logprob": -0.267069,
-      "compression_ratio": 0.714286,
-      "end": 89.98,
+      "avg_logprob": -1.662003,
+      "compression_ratio": 0.91791,
+      "end": 67.0,
       "no_speech_prob": 0.0,
       "start": 60.0,
       "text": "中文字幕——YK"
     },
     {
-      "avg_logprob": -0.139333,
-      "compression_ratio": 14.705882,
-      "end": 92.0,
+      "avg_logprob": -1.662003,
+      "compression_ratio": 0.91791,
+      "end": 68.4,
       "no_speech_prob": 0.0,
-      "start": 90.0,
-      "text": "中文字幕——YK"
+      "start": 67.1,
+      "text": "CD姐妹们"
     },
     {
-      "avg_logprob": -0.139333,
-      "compression_ratio": 14.705882,
-      "end": 94.0,
+      "avg_logprob": -1.662003,
+      "compression_ratio": 0.91791,
+      "end": 70.82,
       "no_speech_prob": 0.0,
-      "start": 92.0,
-      "text": "中文字幕——YK"
+      "start": 69.0,
+      "text": "要想征服敌人"
     },
     {
-      "avg_logprob": -0.139333,
-      "compression_ratio": 14.705882,
-      "end": 96.0,
+      "avg_logprob": -1.662003,
+      "compression_ratio": 0.91791,
+      "end": 73.22,
       "no_speech_prob": 0.0,
-      "start": 94.0,
-      "text": "中文字幕——YK"
+      "start": 71.12,
+      "text": "你不征服自己呢行吗"
     },
     {
-      "avg_logprob": -0.139333,
-      "compression_ratio": 14.705882,
-      "end": 98.0,
+      "avg_logprob": -1.662003,
+      "compression_ratio": 0.91791,
+      "end": 77.06,
       "no_speech_prob": 0.0,
-      "start": 96.0,
-      "text": "中文字幕——YK"
+      "start": 75.92,
+      "text": "primero"
     },
     {
-      "avg_logprob": -0.139333,
-      "compression_ratio": 14.705882,
-      "end": 100.0,
+      "avg_logprob": -1.662003,
+      "compression_ratio": 0.91791,
+      "end": 78.92,
       "no_speech_prob": 0.0,
-      "start": 98.0,
-      "text": "中文字幕——YK"
+      "start": 77.34,
+      "text": "任何情况下"
     },
     {
-      "avg_logprob": -0.438825,
-      "compression_ratio": 1.079365,
-      "end": 104.24,
+      "avg_logprob": -1.662003,
+      "compression_ratio": 0.91791,
+      "end": 80.86,
       "no_speech_prob": 0.0,
-      "start": 100.0,
-      "text": "散足敌人 消滅敌人 征服敌人"
+      "start": 79.18,
+      "text": "也忘了健身呢"
     },
     {
-      "avg_logprob": -0.438825,
-      "compression_ratio": 1.079365,
-      "end": 109.28,
+      "avg_logprob": -1.662003,
+      "compression_ratio": 0.91791,
+      "end": 83.12,
+      "no_speech_prob": 0.0,
+      "start": 82.22,
+      "text": "kenya"
+    },
+    {
+      "avg_logprob": -0.158373,
+      "compression_ratio": 1.380368,
+      "end": 85.12,
+      "no_speech_prob": 0.0,
+      "start": 83.12,
+      "text": "很多戰友流淚"
+    },
+    {
+      "avg_logprob": -0.158373,
+      "compression_ratio": 1.380368,
+      "end": 87.12,
+      "no_speech_prob": 0.0,
+      "start": 85.12,
+      "text": "流淚"
+    },
+    {
+      "avg_logprob": -0.158373,
+      "compression_ratio": 1.380368,
+      "end": 89.12,
+      "no_speech_prob": 0.0,
+      "start": 87.12,
+      "text": "沒比中國人流再多的"
+    },
+    {
+      "avg_logprob": -0.158373,
+      "compression_ratio": 1.380368,
+      "end": 93.12,
+      "no_speech_prob": 0.0,
+      "start": 91.12,
+      "text": "你只流淚"
+    },
+    {
+      "avg_logprob": -0.158373,
+      "compression_ratio": 1.380368,
+      "end": 95.12,
+      "no_speech_prob": 0.0,
+      "start": 93.12,
+      "text": "你的敵人讓你流血"
+    },
+    {
+      "avg_logprob": -0.158373,
+      "compression_ratio": 1.380368,
+      "end": 97.12,
+      "no_speech_prob": 0.0,
+      "start": 95.12,
+      "text": "你跪下來"
+    },
+    {
+      "avg_logprob": -0.158373,
+      "compression_ratio": 1.380368,
+      "end": 99.12,
+      "no_speech_prob": 0.0,
+      "start": 97.12,
+      "text": "他就打斷你的脊椎"
+    },
+    {
+      "avg_logprob": -0.158373,
+      "compression_ratio": 1.380368,
+      "end": 101.12,
+      "no_speech_prob": 0.0,
+      "start": 99.12,
+      "text": "只有鎮除敵人"
+    },
+    {
+      "avg_logprob": -0.158373,
+      "compression_ratio": 1.380368,
+      "end": 103.12,
+      "no_speech_prob": 0.0,
+      "start": 101.12,
+      "text": "消滅敵人"
+    },
+    {
+      "avg_logprob": -0.158373,
+      "compression_ratio": 1.380368,
+      "end": 105.12,
+      "no_speech_prob": 0.0,
+      "start": 103.12,
+      "text": "征服敵人"
+    },
+    {
+      "avg_logprob": -0.158373,
+      "compression_ratio": 1.380368,
+      "end": 107.12,
       "no_speech_prob": 0.0,
       "start": 105.12,
-      "text": "你才能不流淚 让你家人不流血"
+      "text": "你才能不流淚"
     },
     {
-      "avg_logprob": -0.438825,
-      "compression_ratio": 1.079365,
-      "end": 111.68,
+      "avg_logprob": -0.158373,
+      "compression_ratio": 1.380368,
+      "end": 109.12,
       "no_speech_prob": 0.0,
-      "start": 110.32,
+      "start": 107.12,
+      "text": "讓你家人不流血"
+    },
+    {
+      "avg_logprob": -0.158373,
+      "compression_ratio": 1.380368,
+      "end": 111.12,
+      "no_speech_prob": 0.0,
+      "start": 109.12,
       "text": "那就先征服自己"
     },
     {
-      "avg_logprob": -0.438825,
-      "compression_ratio": 1.079365,
-      "end": 116.48,
+      "avg_logprob": -0.210907,
+      "compression_ratio": 1.211538,
+      "end": 113.12,
       "no_speech_prob": 0.0,
-      "start": 112.4,
-      "text": "兄弟姐妹们 一切都已经开始"
+      "start": 111.12,
+      "text": "兄弟姐妹們"
+    },
+    {
+      "avg_logprob": -0.210907,
+      "compression_ratio": 1.211538,
+      "end": 115.12,
+      "no_speech_prob": 0.0,
+      "start": 113.12,
+      "text": "一切"
+    },
+    {
+      "avg_logprob": -0.210907,
+      "compression_ratio": 1.211538,
+      "end": 117.12,
+      "no_speech_prob": 0.0,
+      "start": 115.12,
+      "text": "都已經開始"
+    },
+    {
+      "avg_logprob": -0.210907,
+      "compression_ratio": 1.211538,
+      "end": 121.12,
+      "no_speech_prob": 0.0,
+      "start": 117.12,
+      "text": "噔噔噔噔噔"
+    },
+    {
+      "avg_logprob": -0.210907,
+      "compression_ratio": 1.211538,
+      "end": 123.12,
+      "no_speech_prob": 0.0,
+      "start": 121.12,
+      "text": "噔噔噔噔"
     }
   ],
-  "text": "中文字幕——YK中文字幕——YK中文字幕——YK中文字幕——YK中文字幕——YK中文字幕——YK中文字幕——YK中文字幕——YK散足敌人 消滅敌人 征服敌人你才能不流淚 让你家人不流血那就先征服自己兄弟姐妹们 一切都已经开始"
+  "text": "中文字幕——YK中文字幕——YK中文字幕——YKCD姐妹们要想征服敌人你不征服自己呢行吗 primero任何情况下也忘了健身呢 kenya很多戰友流淚流淚沒比中國人流再多的你只流淚你的敵人讓你流血你跪下來他就打斷你的脊椎只有鎮除敵人消滅敵人征服敵人你才能不流淚讓你家人不流血那就先征服自己兄弟姐妹們一切都已經開始噔噔噔噔噔噔噔噔噔"
 }
