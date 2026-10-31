@@ -3,7 +3,7 @@
   "batch_id": "LOCAL-ASR-AGENT50-20261028T152557Z",
   "agent_id": "codex-local-asr-agent50-20261028",
   "created_at": "2026-10-28T15:25:57Z",
-  "status": "in_progress",
+  "status": "completed",
   "entry_mode": "work",
   "claim_protocol": "claim-protocol-v2",
   "selection_policy": "shortest known-duration eligible normal-queue items; excludes effective claims, completed transcript tasks, 24-hour retry cooldown, corpus_tail, all prior fixed local batches, active Cloud ASR explicit IDs, and media without available or unknown source assets",
@@ -62,7 +62,7 @@
     "LIVE_20230111_001",
     "LIVE_20230129_001"
   ],
-  "next_live_id": "LIVE_20230129_001",
+  "next_live_id": null,
   "completed_live_ids": [
     "LIVE_20230313_001",
     "LIVE_20221011_001",
@@ -111,19 +111,19 @@
     "LIVE_20230104_001",
     "LIVE_20220928_001",
     "LIVE_20221102_001",
-    "LIVE_20230111_001"
-  ],
-  "failed_or_deferred_live_ids": [],
-  "retry_pending_live_ids": [
+    "LIVE_20230111_001",
+    "LIVE_20230129_001",
     "LIVE_20221024_001"
   ],
+  "failed_or_deferred_live_ids": [],
+  "retry_pending_live_ids": [],
   "last_window": {
-    "started_at": "2026-10-31T13:25:45Z",
-    "ended_at": "2026-10-31T13:50:25Z",
-    "attempted_unique_videos": 1,
+    "started_at": "2026-10-31T14:26:15Z",
+    "ended_at": "2026-10-31T14:51:10Z",
+    "attempted_unique_videos": 2,
     "transcript_cue_segment_completed": 0,
-    "four_stage_completed": 1,
-    "key_points_completed": 1,
+    "four_stage_completed": 2,
+    "key_points_completed": 2,
     "failed_or_released_stages": 0,
     "tail_deferred_videos": 0,
     "cooldown_skipped_videos": 0,
@@ -131,37 +131,41 @@
     "audio_duration_sec": 0.0,
     "download_elapsed_sec_known": 0.0,
     "download_elapsed_unavailable_for": [
-      "LIVE_20230111_001"
+      "LIVE_20230129_001",
+      "LIVE_20221024_001"
     ],
     "pure_asr_inference_sec_known": 0.0,
     "pure_asr_inference_unavailable_for": [
-      "LIVE_20230111_001"
+      "LIVE_20230129_001",
+      "LIVE_20221024_001"
     ],
     "structured_pipeline_elapsed_sec_known": 0.0,
     "structured_pipeline_elapsed_unavailable_for": [
-      "LIVE_20230111_001"
+      "LIVE_20230129_001",
+      "LIVE_20221024_001"
     ],
     "asr_job_wall_elapsed_sec": 0.0,
-    "key_points_attempt_wall_elapsed_sec": 1456.0,
-    "window_elapsed_sec": 1480.0,
+    "key_points_attempt_wall_elapsed_sec": 1480.0,
+    "window_elapsed_sec": 1495.0,
     "known_inference_rtf": null,
     "known_inference_realtime_multiple": null,
-    "published_commits": 3,
+    "published_commits": 5,
     "quality_failures": {},
     "completed_three_stage_live_ids": [],
     "completed_four_stage_live_ids": [
-      "LIVE_20230111_001"
+      "LIVE_20230129_001",
+      "LIVE_20221024_001"
     ],
     "released_key_points_live_ids": [],
     "source_temporarily_unavailable_live_ids": [],
-    "next_live_id": "LIVE_20230129_001",
+    "next_live_id": null,
     "key_point_stats": {
-      "natural_segments": 133,
-      "key_points": 539,
-      "topic_links": 191,
-      "skipped_or_invalid": 31,
-      "parse_errors": 21,
-      "forced_retries": 26,
+      "natural_segments": 138,
+      "key_points": 359,
+      "topic_links": 122,
+      "skipped_or_invalid": 70,
+      "parse_errors": 31,
+      "forced_retries": 23,
       "grounded_supplement_points": 0,
       "outcome": "enriched"
     }
