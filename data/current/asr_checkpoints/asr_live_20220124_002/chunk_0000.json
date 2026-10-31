@@ -1,18 +1,18 @@
 {
-  "chunk_audio_sha256": "29b3132f8eff4de2c6a4d08ee38830ecd2fada402d44c2fe1802df184d11ab25",
+  "chunk_audio_sha256": "94b0b58c0a4465e679f0605e36712033609234821363281146527a2cc9ac20ac",
   "chunk_index": 0,
-  "completed_at": "2026-10-24T13:30:13Z",
+  "completed_at": "2026-10-31T16:30:23Z",
   "language": "zh",
   "live_id": "LIVE_20220124_002",
   "media_committed_to_git": false,
   "model": "mlx-community/whisper-large-v3-turbo",
   "offset_sec": 0,
   "paid_api_used": false,
-  "processing_location": "codex-local-apple-silicon-agent50",
+  "processing_location": "github-hosted-macos-arm64",
   "schema_version": "cloud-asr-chunk-v1",
   "segments": [
     {
-      "avg_logprob": -0.503328,
+      "avg_logprob": -0.515774,
       "compression_ratio": 0.694444,
       "end": 29.98,
       "no_speech_prob": 0.0,
@@ -20,7 +20,7 @@
       "text": "字幕志愿者 李宗盛"
     },
     {
-      "avg_logprob": -0.04139,
+      "avg_logprob": -0.041963,
       "compression_ratio": 0.694444,
       "end": 59.98,
       "no_speech_prob": 0.0,
@@ -28,7 +28,7 @@
       "text": "字幕志愿者 李宗盛"
     },
     {
-      "avg_logprob": -0.204706,
+      "avg_logprob": -0.201048,
       "compression_ratio": 0.694444,
       "end": 89.98,
       "no_speech_prob": 0.0,
@@ -36,7 +36,7 @@
       "text": "字幕志愿者 李宗盛"
     },
     {
-      "avg_logprob": -0.133765,
+      "avg_logprob": -0.145919,
       "compression_ratio": 0.694444,
       "end": 119.96,
       "no_speech_prob": 0.0,
@@ -44,7 +44,7 @@
       "text": "字幕志愿者 李宗盛"
     },
     {
-      "avg_logprob": -0.216468,
+      "avg_logprob": -0.211233,
       "compression_ratio": 0.694444,
       "end": 149.96,
       "no_speech_prob": 0.0,
