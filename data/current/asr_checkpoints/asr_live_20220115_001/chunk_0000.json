@@ -1,18 +1,18 @@
 {
-  "chunk_audio_sha256": "ce19809fbabef4802fdd790f538a27498ac5c084f5748f51b7490efdea49ab76",
+  "chunk_audio_sha256": "ddc083ccbdce3545cade2d1bf1a88b30a08ece82f7deca465599dcb339a6ab34",
   "chunk_index": 0,
-  "completed_at": "2026-10-23T05:51:45Z",
+  "completed_at": "2026-10-31T14:24:45Z",
   "language": "zh",
   "live_id": "LIVE_20220115_001",
   "media_committed_to_git": false,
   "model": "mlx-community/whisper-large-v3-turbo",
   "offset_sec": 0,
   "paid_api_used": false,
-  "processing_location": "codex-local-apple-silicon-agent50",
+  "processing_location": "github-hosted-macos-arm64",
   "schema_version": "cloud-asr-chunk-v1",
   "segments": [
     {
-      "avg_logprob": -0.108529,
+      "avg_logprob": -0.109632,
       "compression_ratio": 0.851351,
       "end": 29.98,
       "no_speech_prob": 0.0,
@@ -20,21 +20,77 @@
       "text": "请不吝点赞 订阅 转发 打赏支持明镜与点点栏目"
     },
     {
-      "avg_logprob": -0.219429,
-      "compression_ratio": 0.724138,
+      "avg_logprob": -0.143438,
+      "compression_ratio": 0.785714,
       "end": 59.98,
       "no_speech_prob": 0.0,
       "start": 30.0,
-      "text": "明镜与点点栏目"
+      "text": "打赏支持明镜与点点栏目"
     },
     {
-      "avg_logprob": -0.191306,
-      "compression_ratio": 0.724138,
-      "end": 89.98,
+      "avg_logprob": -0.798283,
+      "compression_ratio": 0.830769,
+      "end": 63.0,
       "no_speech_prob": 0.0,
       "start": 60.0,
-      "text": "明镜与点点栏目"
+      "text": "一定要运动"
+    },
+    {
+      "avg_logprob": -0.798283,
+      "compression_ratio": 0.830769,
+      "end": 65.0,
+      "no_speech_prob": 0.0,
+      "start": 63.0,
+      "text": "就这几个问题"
+    },
+    {
+      "avg_logprob": -0.798283,
+      "compression_ratio": 0.830769,
+      "end": 69.0,
+      "no_speech_prob": 0.0,
+      "start": 65.0,
+      "text": "真喜好"
+    },
+    {
+      "avg_logprob": -0.798283,
+      "compression_ratio": 0.830769,
+      "end": 76.0,
+      "no_speech_prob": 0.0,
+      "start": 69.0,
+      "text": "15号 9点33"
+    },
+    {
+      "avg_logprob": -0.693749,
+      "compression_ratio": 0.84507,
+      "end": 81.0,
+      "no_speech_prob": 0.0,
+      "start": 76.0,
+      "text": "在上面是我的拔水的照片"
+    },
+    {
+      "avg_logprob": -0.693749,
+      "compression_ratio": 0.84507,
+      "end": 85.0,
+      "no_speech_prob": 0.0,
+      "start": 81.0,
+      "text": "打赏不火了"
+    },
+    {
+      "avg_logprob": -0.693749,
+      "compression_ratio": 0.84507,
+      "end": 86.0,
+      "no_speech_prob": 0.0,
+      "start": 85.0,
+      "text": "把这牛奶"
+    },
+    {
+      "avg_logprob": -0.340104,
+      "compression_ratio": 0.785714,
+      "end": 91.0,
+      "no_speech_prob": 0.0,
+      "start": 86.0,
+      "text": "打赏支持明镜与点点栏目"
     }
   ],
-  "text": "请不吝点赞 订阅 转发 打赏支持明镜与点点栏目明镜与点点栏目明镜与点点栏目"
+  "text": "请不吝点赞 订阅 转发 打赏支持明镜与点点栏目打赏支持明镜与点点栏目一定要运动就这几个问题真喜好15号 9点33在上面是我的拔水的照片打赏不火了把这牛奶打赏支持明镜与点点栏目"
 }
