@@ -1,7 +1,7 @@
 {
-  "chunk_audio_sha256": "2a8efd23336708a0b17b86667378c7f299407ab925cdbd4b6f7dca5d8964908e",
+  "chunk_audio_sha256": "0d5063ca5ee7d9f37d199ff5883f81878f8cbf98e25a7f38632c22f0ebb3d9a5",
   "chunk_index": 15,
-  "completed_at": "2026-10-21T23:43:44Z",
+  "completed_at": "2026-10-31T07:05:54Z",
   "language": "zh",
   "live_id": "LIVE_20211101_002",
   "media_committed_to_git": false,
@@ -12,493 +12,1085 @@
   "schema_version": "cloud-asr-chunk-v1",
   "segments": [
     {
-      "avg_logprob": -0.645979,
-      "compression_ratio": 1.636364,
-      "end": 13501.0,
+      "avg_logprob": -6.083906,
+      "compression_ratio": 0.825397,
+      "end": 13517.72,
       "no_speech_prob": 0.0,
       "start": 13500.0,
-      "text": "1"
+      "text": "以上cade Systems lys就可以取消所有器程式"
     },
     {
-      "avg_logprob": -0.645979,
-      "compression_ratio": 1.636364,
-      "end": 13502.0,
+      "avg_logprob": -0.928577,
+      "compression_ratio": 0.738095,
+      "end": 13547.7,
       "no_speech_prob": 0.0,
-      "start": 13501.0,
-      "text": "1"
+      "start": 13517.72,
+      "text": "未经许可,得翻唱或使用"
     },
     {
-      "avg_logprob": -0.645979,
-      "compression_ratio": 1.636364,
-      "end": 13503.0,
-      "no_speech_prob": 0.0,
-      "start": 13502.0,
-      "text": "1"
-    },
-    {
-      "avg_logprob": -0.645979,
-      "compression_ratio": 1.636364,
-      "end": 13504.0,
-      "no_speech_prob": 0.0,
-      "start": 13503.0,
-      "text": "1"
-    },
-    {
-      "avg_logprob": -0.645979,
-      "compression_ratio": 1.636364,
-      "end": 13505.0,
-      "no_speech_prob": 0.0,
-      "start": 13504.0,
-      "text": "1"
-    },
-    {
-      "avg_logprob": -0.645979,
-      "compression_ratio": 1.636364,
-      "end": 13506.0,
-      "no_speech_prob": 0.0,
-      "start": 13505.0,
-      "text": "1"
-    },
-    {
-      "avg_logprob": -0.645979,
-      "compression_ratio": 1.636364,
-      "end": 13507.0,
-      "no_speech_prob": 0.0,
-      "start": 13506.0,
-      "text": "1"
-    },
-    {
-      "avg_logprob": -0.645979,
-      "compression_ratio": 1.636364,
-      "end": 13508.0,
-      "no_speech_prob": 0.0,
-      "start": 13507.0,
-      "text": "1"
-    },
-    {
-      "avg_logprob": -0.645979,
-      "compression_ratio": 1.636364,
-      "end": 13509.0,
-      "no_speech_prob": 0.0,
-      "start": 13508.0,
-      "text": "1"
-    },
-    {
-      "avg_logprob": -0.645979,
-      "compression_ratio": 1.636364,
-      "end": 13510.0,
-      "no_speech_prob": 0.0,
-      "start": 13509.0,
-      "text": "1"
-    },
-    {
-      "avg_logprob": -0.645979,
-      "compression_ratio": 1.636364,
-      "end": 13511.0,
-      "no_speech_prob": 0.0,
-      "start": 13510.0,
-      "text": "1"
-    },
-    {
-      "avg_logprob": -0.645979,
-      "compression_ratio": 1.636364,
-      "end": 13512.0,
-      "no_speech_prob": 0.0,
-      "start": 13511.0,
-      "text": "1"
-    },
-    {
-      "avg_logprob": -0.645979,
-      "compression_ratio": 1.636364,
-      "end": 13513.0,
-      "no_speech_prob": 0.0,
-      "start": 13512.0,
-      "text": "1"
-    },
-    {
-      "avg_logprob": -0.645979,
-      "compression_ratio": 1.636364,
-      "end": 13514.0,
-      "no_speech_prob": 0.0,
-      "start": 13513.0,
-      "text": "1"
-    },
-    {
-      "avg_logprob": -0.645979,
-      "compression_ratio": 1.636364,
-      "end": 13515.0,
-      "no_speech_prob": 0.0,
-      "start": 13514.0,
-      "text": "1"
-    },
-    {
-      "avg_logprob": -0.349408,
+      "avg_logprob": -0.330244,
       "compression_ratio": 0.757576,
-      "end": 13559.98,
+      "end": 13577.7,
       "no_speech_prob": 0.0,
-      "start": 13530.0,
+      "start": 13547.72,
       "text": "字幕志愿者 杨茜茜"
     },
     {
-      "avg_logprob": -0.040683,
+      "avg_logprob": -0.034642,
       "compression_ratio": 0.757576,
-      "end": 13589.98,
+      "end": 13607.7,
       "no_speech_prob": 0.0,
-      "start": 13560.0,
+      "start": 13577.72,
       "text": "字幕志愿者 杨茜茜"
     },
     {
-      "avg_logprob": -0.054978,
+      "avg_logprob": -0.100279,
       "compression_ratio": 0.757576,
-      "end": 13619.98,
+      "end": 13637.7,
       "no_speech_prob": 0.0,
-      "start": 13590.0,
+      "start": 13607.72,
       "text": "字幕志愿者 杨茜茜"
     },
     {
-      "avg_logprob": -0.077989,
+      "avg_logprob": -0.328762,
       "compression_ratio": 0.757576,
-      "end": 13649.98,
+      "end": 13667.68,
       "no_speech_prob": 0.0,
-      "start": 13620.0,
+      "start": 13637.72,
       "text": "字幕志愿者 杨茜茜"
     },
     {
-      "avg_logprob": -0.120786,
-      "compression_ratio": 2.027027,
-      "end": 13651.98,
+      "avg_logprob": -0.394119,
+      "compression_ratio": 1.022989,
+      "end": 13671.52,
       "no_speech_prob": 0.0,
-      "start": 13649.98,
-      "text": "字幕志愿者 杨茜茜"
+      "start": 13667.68,
+      "text": "您可以放心在我們的平台上管理您的支柴"
     },
     {
-      "avg_logprob": -0.120786,
-      "compression_ratio": 2.027027,
-      "end": 13653.98,
+      "avg_logprob": -0.394119,
+      "compression_ratio": 1.022989,
+      "end": 13675.36,
       "no_speech_prob": 0.0,
-      "start": 13651.98,
-      "text": "字幕志愿者 杨茜茜"
+      "start": 13671.52,
+      "text": "收費幾乎為零 費用避免快捷便利"
     },
     {
-      "avg_logprob": -0.120786,
-      "compression_ratio": 2.027027,
-      "end": 13655.98,
+      "avg_logprob": -0.394119,
+      "compression_ratio": 1.022989,
+      "end": 13680.22,
       "no_speech_prob": 0.0,
-      "start": 13653.98,
-      "text": "字幕志愿者 杨茜茜"
+      "start": 13676.9,
+      "text": "我們正推動變革 成為我們的一份子"
     },
     {
-      "avg_logprob": -0.120831,
-      "compression_ratio": 1.351351,
-      "end": 13657.98,
+      "avg_logprob": -0.394119,
+      "compression_ratio": 1.022989,
+      "end": 13682.28,
       "no_speech_prob": 0.0,
-      "start": 13655.98,
-      "text": "字幕志愿者 杨茜茜"
-    },
-    {
-      "avg_logprob": -0.120831,
-      "compression_ratio": 1.351351,
-      "end": 13659.98,
-      "no_speech_prob": 0.0,
-      "start": 13657.98,
-      "text": "字幕志愿者 杨茜茜"
-    },
-    {
-      "avg_logprob": -0.156407,
-      "compression_ratio": 0.757576,
-      "end": 13663.98,
-      "no_speech_prob": 0.0,
-      "start": 13659.98,
-      "text": "字幕志愿者 杨茜茜"
-    },
-    {
-      "avg_logprob": -0.094264,
-      "compression_ratio": 1.351351,
-      "end": 13665.98,
-      "no_speech_prob": 0.0,
-      "start": 13663.98,
-      "text": "字幕志愿者 杨茜茜"
-    },
-    {
-      "avg_logprob": -0.094264,
-      "compression_ratio": 1.351351,
-      "end": 13667.98,
-      "no_speech_prob": 0.0,
-      "start": 13665.98,
-      "text": "字幕志愿者 杨茜茜"
-    },
-    {
-      "avg_logprob": -0.074679,
-      "compression_ratio": 3.378378,
-      "end": 13671.98,
-      "no_speech_prob": 0.0,
-      "start": 13667.98,
-      "text": "字幕志愿者 杨茜茜"
-    },
-    {
-      "avg_logprob": -0.074679,
-      "compression_ratio": 3.378378,
-      "end": 13673.98,
-      "no_speech_prob": 0.0,
-      "start": 13671.98,
-      "text": "字幕志愿者 杨茜茜"
-    },
-    {
-      "avg_logprob": -0.074679,
-      "compression_ratio": 3.378378,
-      "end": 13675.98,
-      "no_speech_prob": 0.0,
-      "start": 13673.98,
-      "text": "字幕志愿者 杨茜茜"
-    },
-    {
-      "avg_logprob": -0.074679,
-      "compression_ratio": 3.378378,
-      "end": 13677.98,
-      "no_speech_prob": 0.0,
-      "start": 13675.98,
-      "text": "字幕志愿者 杨茜茜"
-    },
-    {
-      "avg_logprob": -0.074679,
-      "compression_ratio": 3.378378,
-      "end": 13679.98,
-      "no_speech_prob": 0.0,
-      "start": 13677.98,
-      "text": "字幕志愿者 杨茜茜"
-    },
-    {
-      "avg_logprob": -0.537681,
-      "compression_ratio": 0.795455,
-      "end": 13681.98,
-      "no_speech_prob": 0.0,
-      "start": 13679.98,
+      "start": 13680.22,
       "text": "一切皆有可能"
     },
     {
-      "avg_logprob": -0.537681,
-      "compression_ratio": 0.795455,
-      "end": 13691.98,
+      "avg_logprob": -0.394119,
+      "compression_ratio": 1.022989,
+      "end": 13692.76,
       "no_speech_prob": 0.0,
-      "start": 13689.98,
+      "start": 13689.96,
       "text": "Himalaya Exchange"
     },
     {
-      "avg_logprob": -3.972476,
-      "compression_ratio": 0.84375,
-      "end": 13717.92,
+      "avg_logprob": -5.025891,
+      "compression_ratio": 0.75,
+      "end": 13715.46,
       "no_speech_prob": 0.0,
-      "start": 13709.98,
-      "text": "等待殖"
+      "start": 13697.68,
+      "text": "裡面整理需求"
     },
     {
-      "avg_logprob": -3.972476,
-      "compression_ratio": 0.84375,
-      "end": 13723.48,
+      "avg_logprob": -5.025891,
+      "compression_ratio": 0.75,
+      "end": 13721.86,
       "no_speech_prob": 0.0,
-      "start": 13720.48,
-      "text": "手run"
+      "start": 13719.06,
+      "text": "等等"
     },
     {
-      "avg_logprob": -3.972476,
-      "compression_ratio": 0.84375,
-      "end": 13729.6,
+      "avg_logprob": -3.300421,
+      "compression_ratio": 0.428571,
+      "end": 13751.76,
       "no_speech_prob": 0.0,
-      "start": 13726.02,
-      "text": "打碎"
+      "start": 13721.86,
+      "text": "妈妈"
     },
     {
-      "avg_logprob": -3.972476,
-      "compression_ratio": 0.84375,
-      "end": 13735.68,
+      "avg_logprob": -6.105768,
+      "compression_ratio": 0.636364,
+      "end": 13763.56,
       "no_speech_prob": 0.0,
-      "start": 13732.0,
-      "text": "打碎"
+      "start": 13751.86,
+      "text": "冷acked pools"
     },
     {
-      "avg_logprob": -0.436049,
-      "compression_ratio": 0.738095,
-      "end": 13765.66,
+      "avg_logprob": -7.211206,
+      "compression_ratio": 0.959596,
+      "end": 13775.04,
       "no_speech_prob": 0.0,
-      "start": 13735.68,
-      "text": "中文字幕志愿者 李宗盛"
+      "start": 13763.56,
+      "text": "裡面未必 Rainbow Раз grupos並未必 Peach Ministries esimerk hijo padre"
     },
     {
-      "avg_logprob": -0.23541,
-      "compression_ratio": 0.738095,
-      "end": 13795.66,
+      "avg_logprob": -7.211206,
+      "compression_ratio": 0.959596,
+      "end": 13785.28,
       "no_speech_prob": 0.0,
-      "start": 13765.68,
-      "text": "中文字幕志愿者 李宗盛"
+      "start": 13784.32,
+      "text": "Allahu państwo"
     },
     {
-      "avg_logprob": -0.081547,
-      "compression_ratio": 0.738095,
-      "end": 13825.66,
+      "avg_logprob": -0.463565,
+      "compression_ratio": 1.155556,
+      "end": 13787.84,
       "no_speech_prob": 0.0,
-      "start": 13795.68,
-      "text": "中文字幕志愿者 李宗盛"
+      "start": 13785.28,
+      "text": "來自中國的黑人即將到"
     },
     {
-      "avg_logprob": -0.138486,
-      "compression_ratio": 0.738095,
-      "end": 13855.64,
+      "avg_logprob": -0.463565,
+      "compression_ratio": 1.155556,
+      "end": 13790.78,
       "no_speech_prob": 0.0,
-      "start": 13825.66,
-      "text": "中文字幕志愿者 李宗盛"
+      "start": 13787.84,
+      "text": "現在我已經在全世界的大船在在一起"
     },
     {
-      "avg_logprob": -0.119157,
-      "compression_ratio": 0.738095,
-      "end": 13885.64,
+      "avg_logprob": -0.463565,
+      "compression_ratio": 1.155556,
+      "end": 13793.34,
       "no_speech_prob": 0.0,
-      "start": 13855.66,
-      "text": "中文字幕志愿者 李宗盛"
+      "start": 13790.78,
+      "text": "我告訴大家 如果大家不面對"
     },
     {
-      "avg_logprob": -0.112546,
-      "compression_ratio": 0.738095,
-      "end": 13915.62,
+      "avg_logprob": -0.463565,
+      "compression_ratio": 1.155556,
+      "end": 13795.32,
       "no_speech_prob": 0.0,
-      "start": 13885.64,
-      "text": "中文字幕志愿者 李宗盛"
+      "start": 13793.34,
+      "text": "這個大船就會你聽到了"
     },
     {
-      "avg_logprob": -0.089085,
-      "compression_ratio": 0.738095,
-      "end": 13945.6,
+      "avg_logprob": -0.463565,
+      "compression_ratio": 1.155556,
+      "end": 13797.74,
       "no_speech_prob": 0.0,
-      "start": 13915.62,
-      "text": "中文字幕志愿者 李宗盛"
+      "start": 13795.32,
+      "text": "撞向冰山的探探尼克號的感覺"
     },
     {
-      "avg_logprob": -0.115578,
-      "compression_ratio": 0.738095,
-      "end": 13975.58,
+      "avg_logprob": -0.463565,
+      "compression_ratio": 1.155556,
+      "end": 13799.74,
       "no_speech_prob": 0.0,
-      "start": 13945.6,
-      "text": "中文字幕志愿者 李宗盛"
+      "start": 13797.74,
+      "text": "最終都要暫無大海"
     },
     {
-      "avg_logprob": -0.086953,
-      "compression_ratio": 0.738095,
-      "end": 14005.56,
+      "avg_logprob": -0.42331,
+      "compression_ratio": 1.145251,
+      "end": 13824.04,
       "no_speech_prob": 0.0,
-      "start": 13975.58,
-      "text": "中文字幕志愿者 李宗盛"
+      "start": 13815.28,
+      "text": "《洗碟》上市的"
     },
     {
-      "avg_logprob": -0.13181,
-      "compression_ratio": 0.738095,
-      "end": 14035.54,
+      "avg_logprob": -0.42331,
+      "compression_ratio": 1.145251,
+      "end": 13827.82,
       "no_speech_prob": 0.0,
-      "start": 14005.56,
-      "text": "中文字幕志愿者 李宗盛"
+      "start": 13824.04,
+      "text": "我們有別人無法拒絕的財富的力量"
     },
     {
-      "avg_logprob": -0.096568,
-      "compression_ratio": 0.738095,
-      "end": 14065.52,
+      "avg_logprob": -0.42331,
+      "compression_ratio": 1.145251,
+      "end": 13831.42,
       "no_speech_prob": 0.0,
-      "start": 14035.54,
-      "text": "中文字幕志愿者 李宗盛"
+      "start": 13827.82,
+      "text": "洗美元 洗碟洗聯儲它的價值巨大"
     },
     {
-      "avg_logprob": -0.084611,
-      "compression_ratio": 0.738095,
-      "end": 14095.5,
+      "avg_logprob": -0.42331,
+      "compression_ratio": 1.145251,
+      "end": 13834.04,
       "no_speech_prob": 0.0,
-      "start": 14065.52,
-      "text": "中文字幕志愿者 李宗盛"
+      "start": 13831.42,
+      "text": "洗美元是橫跨世界"
     },
     {
-      "avg_logprob": -0.157248,
-      "compression_ratio": 0.738095,
+      "avg_logprob": -0.42331,
+      "compression_ratio": 1.145251,
+      "end": 13836.58,
+      "no_speech_prob": 0.0,
+      "start": 13834.04,
+      "text": "你們不知道未來有多遠"
+    },
+    {
+      "avg_logprob": -0.42331,
+      "compression_ratio": 1.145251,
+      "end": 13839.52,
+      "no_speech_prob": 0.0,
+      "start": 13836.58,
+      "text": "沒有人類上任何一個能跟它相比"
+    },
+    {
+      "avg_logprob": -6.138797,
+      "compression_ratio": 0.76087,
+      "end": 13861.88,
+      "no_speech_prob": 0.0,
+      "start": 13845.28,
+      "text": "運命粉紅gran aust Coke"
+    },
+    {
+      "avg_logprob": -6.138797,
+      "compression_ratio": 0.76087,
+      "end": 13868.9,
+      "no_speech_prob": 0.0,
+      "start": 13861.88,
+      "text": "潘布石"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.909091,
+      "end": 13870.9,
+      "no_speech_prob": 0.0,
+      "start": 13868.9,
+      "text": "!"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.909091,
+      "end": 13872.9,
+      "no_speech_prob": 0.0,
+      "start": 13870.9,
+      "text": "!"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.909091,
+      "end": 13874.9,
+      "no_speech_prob": 0.0,
+      "start": 13872.9,
+      "text": "!"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.909091,
+      "end": 13876.9,
+      "no_speech_prob": 0.0,
+      "start": 13874.9,
+      "text": "!"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.909091,
+      "end": 13878.9,
+      "no_speech_prob": 0.0,
+      "start": 13876.9,
+      "text": "!"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.909091,
+      "end": 13880.9,
+      "no_speech_prob": 0.0,
+      "start": 13878.9,
+      "text": "!"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.909091,
+      "end": 13882.9,
+      "no_speech_prob": 0.0,
+      "start": 13880.9,
+      "text": "!"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.909091,
+      "end": 13884.9,
+      "no_speech_prob": 0.0,
+      "start": 13882.9,
+      "text": "!"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.909091,
+      "end": 13886.9,
+      "no_speech_prob": 0.0,
+      "start": 13884.9,
+      "text": "!"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.909091,
+      "end": 13888.9,
+      "no_speech_prob": 0.0,
+      "start": 13886.9,
+      "text": "!"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.909091,
+      "end": 13890.9,
+      "no_speech_prob": 0.0,
+      "start": 13888.9,
+      "text": "!"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.909091,
+      "end": 13892.9,
+      "no_speech_prob": 0.0,
+      "start": 13890.9,
+      "text": "!"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.909091,
+      "end": 13894.9,
+      "no_speech_prob": 0.0,
+      "start": 13892.9,
+      "text": "!"
+    },
+    {
+      "avg_logprob": NaN,
+      "compression_ratio": 1.909091,
+      "end": 13896.9,
+      "no_speech_prob": 0.0,
+      "start": 13894.9,
+      "text": "!"
+    },
+    {
+      "avg_logprob": -0.20512,
+      "compression_ratio": 1.340909,
+      "end": 13900.9,
+      "no_speech_prob": 0.0,
+      "start": 13898.9,
+      "text": "!"
+    },
+    {
+      "avg_logprob": -0.20512,
+      "compression_ratio": 1.340909,
+      "end": 13908.9,
+      "no_speech_prob": 0.0,
+      "start": 13900.9,
+      "text": "Human activities had almost stopped. Who can produce and distribute the supplies?"
+    },
+    {
+      "avg_logprob": -0.20512,
+      "compression_ratio": 1.340909,
+      "end": 13918.9,
+      "no_speech_prob": 0.0,
+      "start": 13908.9,
+      "text": "The world has printed a huge amount of cash, thought that could save our world."
+    },
+    {
+      "avg_logprob": -0.20512,
+      "compression_ratio": 1.340909,
+      "end": 13924.9,
+      "no_speech_prob": 0.0,
+      "start": 13918.9,
+      "text": "The world's debt has exceeded 280 trillion, more than 3.5 times the GDP."
+    },
+    {
+      "avg_logprob": -0.180667,
+      "compression_ratio": 1.489474,
+      "end": 13930.9,
+      "no_speech_prob": 0.0,
+      "start": 13924.9,
+      "text": "The US also keeps breaking the debt limit. Economic conditions are approaching the World War II."
+    },
+    {
+      "avg_logprob": -0.180667,
+      "compression_ratio": 1.489474,
+      "end": 13938.9,
+      "no_speech_prob": 0.0,
+      "start": 13930.9,
+      "text": "Is your money still money? While issuing large amounts of money, at the same time tightening the liquidity."
+    },
+    {
+      "avg_logprob": -0.180667,
+      "compression_ratio": 1.489474,
+      "end": 13946.9,
+      "no_speech_prob": 0.0,
+      "start": 13938.9,
+      "text": "Financial sector freezes accounts for no reason, cancelling your transactions."
+    },
+    {
+      "avg_logprob": -0.224783,
+      "compression_ratio": 1.231481,
+      "end": 13950.9,
+      "no_speech_prob": 0.0,
+      "start": 13946.9,
+      "text": "Our money is in the hands of others."
+    },
+    {
+      "avg_logprob": -0.224783,
+      "compression_ratio": 1.231481,
+      "end": 13952.9,
+      "no_speech_prob": 0.0,
+      "start": 13950.9,
+      "text": "Fight for ourselves."
+    },
+    {
+      "avg_logprob": -0.224783,
+      "compression_ratio": 1.231481,
+      "end": 13956.9,
+      "no_speech_prob": 0.0,
+      "start": 13952.9,
+      "text": "The living people."
+    },
+    {
+      "avg_logprob": -0.224783,
+      "compression_ratio": 1.231481,
+      "end": 13958.9,
+      "no_speech_prob": 0.0,
+      "start": 13956.9,
+      "text": "How to survive."
+    },
+    {
+      "avg_logprob": -0.224783,
+      "compression_ratio": 1.231481,
+      "end": 13964.9,
+      "no_speech_prob": 0.0,
+      "start": 13958.9,
+      "text": "How to deal with the upcoming disasters."
+    },
+    {
+      "avg_logprob": -0.651672,
+      "compression_ratio": 0.882353,
+      "end": 13966.9,
+      "no_speech_prob": 0.0,
+      "start": 13964.9,
+      "text": "The world's new currency."
+    },
+    {
+      "avg_logprob": -0.651672,
+      "compression_ratio": 0.882353,
+      "end": 13970.9,
+      "no_speech_prob": 0.0,
+      "start": 13966.9,
+      "text": "Himalaya coin. HCN."
+    },
+    {
+      "avg_logprob": -0.288697,
+      "compression_ratio": 2.118881,
+      "end": 13972.9,
+      "no_speech_prob": 0.0,
+      "start": 13970.9,
+      "text": "20% gold reserve."
+    },
+    {
+      "avg_logprob": -0.288697,
+      "compression_ratio": 2.118881,
+      "end": 13974.9,
+      "no_speech_prob": 0.0,
+      "start": 13972.9,
+      "text": "Anchoring gold."
+    },
+    {
+      "avg_logprob": -0.288697,
+      "compression_ratio": 2.118881,
+      "end": 13976.9,
+      "no_speech_prob": 0.0,
+      "start": 13974.9,
+      "text": "Open and transparent."
+    },
+    {
+      "avg_logprob": -0.288697,
+      "compression_ratio": 2.118881,
+      "end": 13978.9,
+      "no_speech_prob": 0.0,
+      "start": 13976.9,
+      "text": "No indiscriminate increase in insurance."
+    },
+    {
+      "avg_logprob": -0.288697,
+      "compression_ratio": 2.118881,
+      "end": 13980.9,
+      "no_speech_prob": 0.0,
+      "start": 13978.9,
+      "text": "Strict K by C verification to protect your wealth."
+    },
+    {
+      "avg_logprob": -0.288697,
+      "compression_ratio": 2.118881,
+      "end": 13982.9,
+      "no_speech_prob": 0.0,
+      "start": 13980.9,
+      "text": "The world's new currency."
+    },
+    {
+      "avg_logprob": -0.288697,
+      "compression_ratio": 2.118881,
+      "end": 13984.9,
+      "no_speech_prob": 0.0,
+      "start": 13982.9,
+      "text": "The world's new currency."
+    },
+    {
+      "avg_logprob": -0.288697,
+      "compression_ratio": 2.118881,
+      "end": 13986.9,
+      "no_speech_prob": 0.0,
+      "start": 13984.9,
+      "text": "The world's new currency."
+    },
+    {
+      "avg_logprob": -0.288697,
+      "compression_ratio": 2.118881,
+      "end": 13988.9,
+      "no_speech_prob": 0.0,
+      "start": 13986.9,
+      "text": "The world's new currency."
+    },
+    {
+      "avg_logprob": -0.288697,
+      "compression_ratio": 2.118881,
+      "end": 13990.9,
+      "no_speech_prob": 0.0,
+      "start": 13988.9,
+      "text": "The world's new currency."
+    },
+    {
+      "avg_logprob": -0.288697,
+      "compression_ratio": 2.118881,
+      "end": 13992.9,
+      "no_speech_prob": 0.0,
+      "start": 13990.9,
+      "text": "The world's new currency."
+    },
+    {
+      "avg_logprob": -7.045612,
+      "compression_ratio": 1.042654,
+      "end": 13994.9,
+      "no_speech_prob": 0.0,
+      "start": 13992.9,
+      "text": "fuel currency."
+    },
+    {
+      "avg_logprob": -7.045612,
+      "compression_ratio": 1.042654,
+      "end": 13996.9,
+      "no_speech_prob": 0.0,
+      "start": 13994.9,
+      "text": "Food currency."
+    },
+    {
+      "avg_logprob": -7.045612,
+      "compression_ratio": 1.042654,
+      "end": 13998.9,
+      "no_speech_prob": 0.0,
+      "start": 13996.9,
+      "text": "49% Wall βrs.."
+    },
+    {
+      "avg_logprob": -7.045612,
+      "compression_ratio": 1.042654,
+      "end": 14000.9,
+      "no_speech_prob": 0.0,
+      "start": 13998.9,
+      "text": "regulatoryką百iary Scott Libề소 Bitcoin 설� deceasedיב进步"
+    },
+    {
+      "avg_logprob": -7.045612,
+      "compression_ratio": 1.042654,
+      "end": 14001.9,
+      "no_speech_prob": 0.0,
+      "start": 14000.9,
+      "text": "Tribunal cemetery Bitcoinihuumble maneuver trust"
+    },
+    {
+      "avg_logprob": -7.045612,
+      "compression_ratio": 1.042654,
+      "end": 14003.9,
+      "no_speech_prob": 0.0,
+      "start": 14001.9,
+      "text": "cui slippedlaş統 aftermath"
+    },
+    {
+      "avg_logprob": -7.045612,
+      "compression_ratio": 1.042654,
+      "end": 14018.38,
+      "no_speech_prob": 0.0,
+      "start": 14003.9,
+      "text": "ối"
+    },
+    {
+      "avg_logprob": -0.727701,
+      "compression_ratio": 1.073446,
+      "end": 14026.02,
+      "no_speech_prob": 0.0,
+      "start": 14022.9,
+      "text": "第一句aci Après一次"
+    },
+    {
+      "avg_logprob": -0.727701,
+      "compression_ratio": 1.073446,
+      "end": 14039.22,
+      "no_speech_prob": 0.0,
+      "start": 14037.1,
+      "text": "待到秋来九月八"
+    },
+    {
+      "avg_logprob": -0.727701,
+      "compression_ratio": 1.073446,
+      "end": 14041.56,
+      "no_speech_prob": 0.0,
+      "start": 14039.22,
+      "text": "我花开后摆花纱"
+    },
+    {
+      "avg_logprob": -0.727701,
+      "compression_ratio": 1.073446,
+      "end": 14044.38,
+      "no_speech_prob": 0.0,
+      "start": 14041.56,
+      "text": "喜马拉雅双币系统的绝世设计"
+    },
+    {
+      "avg_logprob": -0.727701,
+      "compression_ratio": 1.073446,
+      "end": 14048.38,
+      "no_speech_prob": 0.0,
+      "start": 14044.38,
+      "text": "注定将成为优于所有其他货币系统的"
+    },
+    {
+      "avg_logprob": -0.727701,
+      "compression_ratio": 1.073446,
+      "end": 14051.22,
+      "no_speech_prob": 0.0,
+      "start": 14048.38,
+      "text": "具有最高价值和幸运的货币"
+    },
+    {
+      "avg_logprob": -0.363231,
+      "compression_ratio": 1.207317,
+      "end": 14053.78,
+      "no_speech_prob": 0.0,
+      "start": 14051.22,
+      "text": "它不但是人类社会摆脱危机"
+    },
+    {
+      "avg_logprob": -0.363231,
+      "compression_ratio": 1.207317,
+      "end": 14055.7,
+      "no_speech_prob": 0.0,
+      "start": 14053.78,
+      "text": "在此发展的诺亚方舟"
+    },
+    {
+      "avg_logprob": -0.363231,
+      "compression_ratio": 1.207317,
+      "end": 14057.94,
+      "no_speech_prob": 0.0,
+      "start": 14055.7,
+      "text": "也将奠定人类社会进一步"
+    },
+    {
+      "avg_logprob": -0.363231,
+      "compression_ratio": 1.207317,
+      "end": 14059.94,
+      "no_speech_prob": 0.0,
+      "start": 14057.94,
+      "text": "改善自我管理制度的基础"
+    },
+    {
+      "avg_logprob": -0.363231,
+      "compression_ratio": 1.207317,
+      "end": 14064.98,
+      "no_speech_prob": 0.0,
+      "start": 14063.82,
+      "text": "祝贺喜帝上市"
+    },
+    {
+      "avg_logprob": -0.363231,
+      "compression_ratio": 1.207317,
+      "end": 14066.94,
+      "no_speech_prob": 0.0,
+      "start": 14064.98,
+      "text": "喜到乐喜连祖位一交"
+    },
+    {
+      "avg_logprob": -0.363231,
+      "compression_ratio": 1.207317,
+      "end": 14071.78,
+      "no_speech_prob": 0.0,
+      "start": 14068.14,
+      "text": "五月花农场战友热烈祝贺喜帝隆重上市"
+    },
+    {
+      "avg_logprob": -0.363231,
+      "compression_ratio": 1.207317,
+      "end": 14072.66,
+      "no_speech_prob": 0.0,
+      "start": 14071.78,
+      "text": "拥有喜帝"
+    },
+    {
+      "avg_logprob": -0.363231,
+      "compression_ratio": 1.207317,
+      "end": 14073.46,
+      "no_speech_prob": 0.0,
+      "start": 14072.66,
+      "text": "拥有自由"
+    },
+    {
+      "avg_logprob": -0.363231,
+      "compression_ratio": 1.207317,
+      "end": 14074.66,
+      "no_speech_prob": 0.0,
+      "start": 14073.46,
+      "text": "拥有美好的未来"
+    },
+    {
+      "avg_logprob": -0.363231,
+      "compression_ratio": 1.207317,
+      "end": 14079.46,
+      "no_speech_prob": 0.0,
+      "start": 14076.1,
+      "text": "Congratulation H$ and Hcoin"
+    },
+    {
+      "avg_logprob": -0.258309,
+      "compression_ratio": 1.280488,
+      "end": 14081.5,
+      "no_speech_prob": 0.0,
+      "start": 14079.46,
+      "text": "祝贺喜帝上市"
+    },
+    {
+      "avg_logprob": -0.258309,
+      "compression_ratio": 1.280488,
+      "end": 14083.98,
+      "no_speech_prob": 0.0,
+      "start": 14081.5,
+      "text": "开创世界金融系统的未来"
+    },
+    {
+      "avg_logprob": -0.258309,
+      "compression_ratio": 1.280488,
+      "end": 14086.26,
+      "no_speech_prob": 0.0,
+      "start": 14083.98,
+      "text": "重逐喜帝上市"
+    },
+    {
+      "avg_logprob": -0.258309,
+      "compression_ratio": 1.280488,
+      "end": 14087.78,
+      "no_speech_prob": 0.0,
+      "start": 14086.26,
+      "text": "芝麻开花"
+    },
+    {
+      "avg_logprob": -0.258309,
+      "compression_ratio": 1.280488,
+      "end": 14088.74,
+      "no_speech_prob": 0.0,
+      "start": 14087.78,
+      "text": "结局高"
+    },
+    {
+      "avg_logprob": -0.258309,
+      "compression_ratio": 1.280488,
+      "end": 14089.5,
+      "no_speech_prob": 0.0,
+      "start": 14088.74,
+      "text": "耶"
+    },
+    {
+      "avg_logprob": -0.258309,
+      "compression_ratio": 1.280488,
+      "end": 14091.7,
+      "no_speech_prob": 0.0,
+      "start": 14089.5,
+      "text": "在这世界格局"
+    },
+    {
+      "avg_logprob": -0.258309,
+      "compression_ratio": 1.280488,
+      "end": 14093.62,
+      "no_speech_prob": 0.0,
+      "start": 14091.7,
+      "text": "金融格局重复之际"
+    },
+    {
+      "avg_logprob": -0.258309,
+      "compression_ratio": 1.280488,
+      "end": 14094.46,
+      "no_speech_prob": 0.0,
+      "start": 14093.62,
+      "text": "喜帝"
+    },
+    {
+      "avg_logprob": -0.258309,
+      "compression_ratio": 1.280488,
+      "end": 14095.42,
+      "no_speech_prob": 0.0,
+      "start": 14094.46,
+      "text": "喜美元"
+    },
+    {
+      "avg_logprob": -0.258309,
+      "compression_ratio": 1.280488,
+      "end": 14096.42,
+      "no_speech_prob": 0.0,
+      "start": 14095.42,
+      "text": "喜莲数"
+    },
+    {
+      "avg_logprob": -0.258309,
+      "compression_ratio": 1.280488,
+      "end": 14097.78,
+      "no_speech_prob": 0.0,
+      "start": 14096.42,
+      "text": "应运而生"
+    },
+    {
+      "avg_logprob": -0.258309,
+      "compression_ratio": 1.280488,
+      "end": 14100.14,
+      "no_speech_prob": 0.0,
+      "start": 14097.78,
+      "text": "祝喜帝上市"
+    },
+    {
+      "avg_logprob": -0.258309,
+      "compression_ratio": 1.280488,
+      "end": 14101.5,
+      "no_speech_prob": 0.0,
+      "start": 14100.14,
+      "text": "新元太太"
+    },
+    {
+      "avg_logprob": -0.258309,
+      "compression_ratio": 1.280488,
+      "end": 14109.08,
+      "no_speech_prob": 0.0,
+      "start": 14101.5,
+      "text": "大鹏一日"
+    },
+    {
+      "avg_logprob": -0.301349,
+      "compression_ratio": 1.047945,
+      "end": 14109.92,
+      "no_speech_prob": 0.0,
+      "start": 14109.08,
+      "text": "是滕风起"
+    },
+    {
+      "avg_logprob": -0.301349,
+      "compression_ratio": 1.047945,
+      "end": 14112.24,
+      "no_speech_prob": 0.0,
+      "start": 14109.92,
+      "text": "扶摇直上九万里"
+    },
+    {
+      "avg_logprob": -0.301349,
+      "compression_ratio": 1.047945,
+      "end": 14114.16,
+      "no_speech_prob": 0.0,
+      "start": 14112.24,
+      "text": "祝贺喜马拉雅双臂"
+    },
+    {
+      "avg_logprob": -0.301349,
+      "compression_ratio": 1.047945,
+      "end": 14115.68,
+      "no_speech_prob": 0.0,
+      "start": 14114.16,
+      "text": "成功上市交易"
+    },
+    {
+      "avg_logprob": -0.301349,
+      "compression_ratio": 1.047945,
+      "end": 14117.96,
+      "no_speech_prob": 0.0,
+      "start": 14115.68,
+      "text": "期待它的彭博发展"
+    },
+    {
+      "avg_logprob": -0.301349,
+      "compression_ratio": 1.047945,
+      "end": 14120.0,
+      "no_speech_prob": 0.0,
+      "start": 14117.96,
+      "text": "助力我们早日灭共"
+    },
+    {
+      "avg_logprob": -0.301349,
+      "compression_ratio": 1.047945,
+      "end": 14122.6,
+      "no_speech_prob": 0.0,
+      "start": 14120.0,
+      "text": "见识美好的新中国联邦"
+    },
+    {
+      "avg_logprob": -0.524103,
+      "compression_ratio": 2.390625,
+      "end": 14123.6,
+      "no_speech_prob": 0.0,
+      "start": 14122.6,
+      "text": "喜马拉雅"
+    },
+    {
+      "avg_logprob": -0.524103,
+      "compression_ratio": 2.390625,
+      "end": 14124.76,
+      "no_speech_prob": 0.0,
+      "start": 14123.6,
+      "text": "喜马拉雅"
+    },
+    {
+      "avg_logprob": -0.524103,
+      "compression_ratio": 2.390625,
       "end": 14125.48,
       "no_speech_prob": 0.0,
-      "start": 14095.5,
-      "text": "中文字幕志愿者 李宗盛"
+      "start": 14124.76,
+      "text": "心中自由"
     },
     {
-      "avg_logprob": -0.060576,
-      "compression_ratio": 0.738095,
-      "end": 14155.48,
+      "avg_logprob": -0.524103,
+      "compression_ratio": 2.390625,
+      "end": 14127.68,
       "no_speech_prob": 0.0,
-      "start": 14125.5,
-      "text": "中文字幕志愿者 李宗盛"
+      "start": 14125.48,
+      "text": "谁是在谣"
     },
     {
-      "avg_logprob": -0.02068,
-      "compression_ratio": 0.738095,
-      "end": 14185.48,
+      "avg_logprob": -0.524103,
+      "compression_ratio": 2.390625,
+      "end": 14130.6,
       "no_speech_prob": 0.0,
-      "start": 14155.5,
-      "text": "中文字幕志愿者 李宗盛"
+      "start": 14127.68,
+      "text": "我们的喜马拉雅"
     },
     {
-      "avg_logprob": -0.029373,
-      "compression_ratio": 0.738095,
-      "end": 14215.46,
+      "avg_logprob": -0.524103,
+      "compression_ratio": 2.390625,
+      "end": 14133.84,
       "no_speech_prob": 0.0,
-      "start": 14185.48,
-      "text": "中文字幕志愿者 李宗盛"
+      "start": 14130.6,
+      "text": "我们的喜马拉雅"
     },
     {
-      "avg_logprob": -0.02162,
-      "compression_ratio": 0.738095,
-      "end": 14245.44,
+      "avg_logprob": -0.524103,
+      "compression_ratio": 2.390625,
+      "end": 14137.04,
       "no_speech_prob": 0.0,
-      "start": 14215.46,
-      "text": "中文字幕志愿者 李宗盛"
+      "start": 14133.84,
+      "text": "我们的喜马拉雅"
     },
     {
-      "avg_logprob": -0.035742,
-      "compression_ratio": 0.738095,
-      "end": 14275.42,
+      "avg_logprob": -0.524103,
+      "compression_ratio": 2.390625,
+      "end": 14140.2,
       "no_speech_prob": 0.0,
-      "start": 14245.44,
-      "text": "中文字幕志愿者 李宗盛"
+      "start": 14137.04,
+      "text": "我们的喜马拉雅"
     },
     {
-      "avg_logprob": -0.039517,
-      "compression_ratio": 0.738095,
-      "end": 14305.4,
+      "avg_logprob": -0.524103,
+      "compression_ratio": 2.390625,
+      "end": 14144.48,
       "no_speech_prob": 0.0,
-      "start": 14275.42,
-      "text": "中文字幕志愿者 李宗盛"
+      "start": 14140.2,
+      "text": "我们的喜马拉雅"
     },
     {
-      "avg_logprob": -0.035709,
-      "compression_ratio": 0.738095,
-      "end": 14335.38,
+      "avg_logprob": -6.02717,
+      "compression_ratio": 0.689655,
+      "end": 14161.02,
       "no_speech_prob": 0.0,
-      "start": 14305.4,
-      "text": "中文字幕志愿者 李宗盛"
+      "start": 14144.48,
+      "text": "福建八福 suction"
     },
     {
-      "avg_logprob": -0.036016,
-      "compression_ratio": 0.738095,
-      "end": 14365.36,
+      "avg_logprob": -5.347205,
+      "compression_ratio": 0.5,
+      "end": 14185.84,
       "no_speech_prob": 0.0,
-      "start": 14335.38,
-      "text": "中文字幕志愿者 李宗盛"
+      "start": 14161.02,
+      "text": "请 Beij"
     },
     {
-      "avg_logprob": -0.030512,
-      "compression_ratio": 0.738095,
-      "end": 14395.34,
+      "avg_logprob": -5.724927,
+      "compression_ratio": 0.5,
+      "end": 14212.24,
       "no_speech_prob": 0.0,
-      "start": 14365.36,
-      "text": "中文字幕志愿者 李宗盛"
+      "start": 14185.84,
+      "text": "初雨急"
     },
     {
-      "avg_logprob": -0.121701,
-      "compression_ratio": 0.738095,
-      "end": 14397.34,
+      "avg_logprob": -4.43004,
+      "compression_ratio": 0.571429,
+      "end": 14230.28,
       "no_speech_prob": 0.0,
-      "start": 14395.34,
-      "text": "中文字幕志愿者 李宗盛"
+      "start": 14212.24,
+      "text": "北京運氣"
+    },
+    {
+      "avg_logprob": -4.414575,
+      "compression_ratio": 0.6,
+      "end": 14258.18,
+      "no_speech_prob": 0.0,
+      "start": 14230.28,
+      "text": "请 shopping"
+    },
+    {
+      "avg_logprob": -0.26053,
+      "compression_ratio": 0.875,
+      "end": 14288.16,
+      "no_speech_prob": 0.0,
+      "start": 14258.18,
+      "text": "优优独播剧场——YoYo Television Series Exclusive"
+    },
+    {
+      "avg_logprob": -0.863312,
+      "compression_ratio": 0.590909,
+      "end": 14318.16,
+      "no_speech_prob": 0.0,
+      "start": 14288.18,
+      "text": "曲 李宗盛"
+    },
+    {
+      "avg_logprob": -0.307893,
+      "compression_ratio": 0.590909,
+      "end": 14348.16,
+      "no_speech_prob": 0.0,
+      "start": 14318.18,
+      "text": "曲 李宗盛"
+    },
+    {
+      "avg_logprob": -0.120431,
+      "compression_ratio": 0.590909,
+      "end": 14378.14,
+      "no_speech_prob": 0.0,
+      "start": 14348.16,
+      "text": "曲 李宗盛"
+    },
+    {
+      "avg_logprob": -0.175473,
+      "compression_ratio": 0.590909,
+      "end": 14408.12,
+      "no_speech_prob": 0.0,
+      "start": 14378.14,
+      "text": "曲 李宗盛"
     }
   ],
-  "text": "111111111111111字幕志愿者 杨茜茜字幕志愿者 杨茜茜字幕志愿者 杨茜茜字幕志愿者 杨茜茜字幕志愿者 杨茜茜字幕志愿者 杨茜茜字幕志愿者 杨茜茜字幕志愿者 杨茜茜字幕志愿者 杨茜茜字幕志愿者 杨茜茜字幕志愿者 杨茜茜字幕志愿者 杨茜茜字幕志愿者 杨茜茜字幕志愿者 杨茜茜字幕志愿者 杨茜茜字幕志愿者 杨茜茜字幕志愿者 杨茜茜一切皆有可能Himalaya Exchange等待殖手run打碎打碎中文字幕志愿者 李宗盛中文字幕志愿者 李宗盛中文字幕志愿者 李宗盛中文字幕志愿者 李宗盛中文字幕志愿者 李宗盛中文字幕志愿者 李宗盛中文字幕志愿者 李宗盛中文字幕志愿者 李宗盛中文字幕志愿者 李宗盛中文字幕志愿者 李宗盛中文字幕志愿者 李宗盛中文字幕志愿者 李宗盛中文字幕志愿者 李宗盛中文字幕志愿者 李宗盛中文字幕志愿者 李宗盛中文字幕志愿者 李宗盛中文字幕志愿者 李宗盛中文字幕志愿者 李宗盛中文字幕志愿者 李宗盛中文字幕志愿者 李宗盛中文字幕志愿者 李宗盛中文字幕志愿者 李宗盛中文字幕志愿者 李宗盛"
+  "text": "以上cade Systems lys就可以取消所有器程式未经许可,得翻唱或使用字幕志愿者 杨茜茜字幕志愿者 杨茜茜字幕志愿者 杨茜茜字幕志愿者 杨茜茜您可以放心在我們的平台上管理您的支柴收費幾乎為零 費用避免快捷便利我們正推動變革 成為我們的一份子一切皆有可能Himalaya Exchange裡面整理需求等等妈妈冷acked pools裡面未必 Rainbow Раз grupos並未必 Peach Ministries esimerk hijo padre Allahu państwo來自中國的黑人即將到現在我已經在全世界的大船在在一起我告訴大家 如果大家不面對這個大船就會你聽到了撞向冰山的探探尼克號的感覺最終都要暫無大海《洗碟》上市的我們有別人無法拒絕的財富的力量洗美元 洗碟洗聯儲它的價值巨大洗美元是橫跨世界你們不知道未來有多遠沒有人類上任何一個能跟它相比運命粉紅gran aust Coke潘布石!!!!!!!!!!!!!!! Human activities had almost stopped. Who can produce and distribute the supplies? The world has printed a huge amount of cash, thought that could save our world. The world's debt has exceeded 280 trillion, more than 3.5 times the GDP. The US also keeps breaking the debt limit. Economic conditions are approaching the World War II. Is your money still money? While issuing large amounts of money, at the same time tightening the liquidity. Financial sector freezes accounts for no reason, cancelling your transactions. Our money is in the hands of others. Fight for ourselves. The living people. How to survive. How to deal with the upcoming disasters. The world's new currency. Himalaya coin. HCN. 20% gold reserve. Anchoring gold. Open and transparent. No indiscriminate increase in insurance. Strict K by C verification to protect your wealth. The world's new currency. The world's new currency. The world's new currency. The world's new currency. The world's new currency. The world's new currency. fuel currency. Food currency. 49% Wall βrs.. regulatoryką百iary Scott Libề소 Bitcoin 설� deceasedיב进步 Tribunal cemetery Bitcoinihuumble maneuver trust cui slippedlaş統 aftermathối第一句aci Après一次待到秋来九月八我花开后摆花纱喜马拉雅双币系统的绝世设计注定将成为优于所有其他货币系统的具有最高价值和幸运的货币它不但是人类社会摆脱危机在此发展的诺亚方舟也将奠定人类社会进一步改善自我管理制度的基础祝贺喜帝上市喜到乐喜连祖位一交五月花农场战友热烈祝贺喜帝隆重上市拥有喜帝拥有自由拥有美好的未来Congratulation H$ and Hcoin祝贺喜帝上市开创世界金融系统的未来重逐喜帝上市芝麻开花结局高耶在这世界格局金融格局重复之际喜帝喜美元喜莲数应运而生祝喜帝上市新元太太大鹏一日是滕风起扶摇直上九万里祝贺喜马拉雅双臂成功上市交易期待它的彭博发展助力我们早日灭共见识美好的新中国联邦喜马拉雅喜马拉雅心中自由谁是在谣我们的喜马拉雅我们的喜马拉雅我们的喜马拉雅我们的喜马拉雅我们的喜马拉雅福建八福 suction请 Beij初雨急北京運氣请 shopping优优独播剧场——YoYo Television Series Exclusive 曲 李宗盛 曲 李宗盛 曲 李宗盛 曲 李宗盛"
 }
