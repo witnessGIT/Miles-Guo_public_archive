@@ -1,432 +1,440 @@
 {
-  "chunk_audio_sha256": "69773659b91852295c87384f9b9fb3dbff25761ce7d26112936fbb2b64efa358",
+  "chunk_audio_sha256": "f1338d973bedf67b54cc5aecc25c76fab291e64bad213e95c955d81cb148d9bf",
   "chunk_index": 0,
-  "completed_at": "2026-10-23T06:27:17Z",
+  "completed_at": "2026-10-31T17:30:52Z",
   "language": "zh",
   "live_id": "LIVE_20220125_003",
   "media_committed_to_git": false,
   "model": "mlx-community/whisper-large-v3-turbo",
   "offset_sec": 0,
   "paid_api_used": false,
-  "processing_location": "codex-local-apple-silicon-agent50",
+  "processing_location": "github-hosted-macos-arm64",
   "schema_version": "cloud-asr-chunk-v1",
   "segments": [
     {
-      "avg_logprob": -0.593412,
-      "compression_ratio": 2.298969,
-      "end": 2.0,
+      "avg_logprob": -3.92088,
+      "compression_ratio": 0.6,
+      "end": 0.14,
       "no_speech_prob": 0.0,
       "start": 0.0,
-      "text": "《十字幕》《十字幕》"
+      "text": "2,0%1%0$$!"
     },
     {
-      "avg_logprob": -0.593412,
-      "compression_ratio": 2.298969,
-      "end": 3.0,
+      "avg_logprob": -3.92088,
+      "compression_ratio": 0.6,
+      "end": 0.12,
       "no_speech_prob": 0.0,
-      "start": 2.0,
-      "text": "《十字幕》"
+      "start": 0.12,
+      "text": "0!"
     },
     {
-      "avg_logprob": -0.593412,
-      "compression_ratio": 2.298969,
-      "end": 4.0,
-      "no_speech_prob": 0.0,
-      "start": 3.0,
-      "text": "《十字幕》"
-    },
-    {
-      "avg_logprob": -0.593412,
-      "compression_ratio": 2.298969,
-      "end": 6.0,
-      "no_speech_prob": 0.0,
-      "start": 4.0,
-      "text": "《十字幕》"
-    },
-    {
-      "avg_logprob": -0.593412,
-      "compression_ratio": 2.298969,
-      "end": 7.0,
-      "no_speech_prob": 0.0,
-      "start": 6.0,
-      "text": "《十字幕》"
-    },
-    {
-      "avg_logprob": -0.593412,
-      "compression_ratio": 2.298969,
-      "end": 8.0,
-      "no_speech_prob": 0.0,
-      "start": 7.0,
-      "text": "你看到没有?"
-    },
-    {
-      "avg_logprob": -0.593412,
-      "compression_ratio": 2.298969,
-      "end": 10.0,
-      "no_speech_prob": 0.0,
-      "start": 8.0,
-      "text": "你看到时间点长"
-    },
-    {
-      "avg_logprob": -0.593412,
-      "compression_ratio": 2.298969,
-      "end": 12.0,
-      "no_speech_prob": 0.0,
-      "start": 10.0,
-      "text": "来到了"
-    },
-    {
-      "avg_logprob": -0.593412,
-      "compression_ratio": 2.298969,
-      "end": 14.0,
-      "no_speech_prob": 0.0,
-      "start": 12.0,
-      "text": "来到了"
-    },
-    {
-      "avg_logprob": -0.593412,
-      "compression_ratio": 2.298969,
-      "end": 16.0,
-      "no_speech_prob": 0.0,
-      "start": 14.0,
-      "text": "你看看这个"
-    },
-    {
-      "avg_logprob": -0.593412,
-      "compression_ratio": 2.298969,
-      "end": 18.0,
-      "no_speech_prob": 0.0,
-      "start": 16.0,
-      "text": "你看看多大"
-    },
-    {
-      "avg_logprob": -0.593412,
-      "compression_ratio": 2.298969,
-      "end": 20.0,
-      "no_speech_prob": 0.0,
-      "start": 18.0,
-      "text": "哇"
-    },
-    {
-      "avg_logprob": -0.593412,
-      "compression_ratio": 2.298969,
-      "end": 24.0,
-      "no_speech_prob": 0.0,
-      "start": 22.0,
-      "text": "你看看多强"
-    },
-    {
-      "avg_logprob": -0.593412,
-      "compression_ratio": 2.298969,
-      "end": 26.0,
-      "no_speech_prob": 0.0,
-      "start": 24.0,
-      "text": "你看看多强"
-    },
-    {
-      "avg_logprob": -0.593412,
-      "compression_ratio": 2.298969,
-      "end": 28.0,
-      "no_speech_prob": 0.0,
-      "start": 26.0,
-      "text": "你看看多强"
-    },
-    {
-      "avg_logprob": -0.592966,
-      "compression_ratio": 1.615385,
-      "end": 30.0,
-      "no_speech_prob": 0.0,
-      "start": 28.0,
-      "text": "多强"
-    },
-    {
-      "avg_logprob": -0.592966,
-      "compression_ratio": 1.615385,
-      "end": 32.0,
+      "avg_logprob": -0.784728,
+      "compression_ratio": 1.451477,
+      "end": 34.88,
       "no_speech_prob": 0.0,
       "start": 30.0,
-      "text": "都被他做了"
+      "text": "这些都是他做的"
     },
     {
-      "avg_logprob": -0.592966,
-      "compression_ratio": 1.615385,
-      "end": 34.0,
+      "avg_logprob": -0.784728,
+      "compression_ratio": 1.451477,
+      "end": 36.04,
       "no_speech_prob": 0.0,
-      "start": 32.0,
-      "text": "我没相信"
+      "start": 34.88,
+      "text": "我不相信"
     },
     {
-      "avg_logprob": -0.592966,
-      "compression_ratio": 1.615385,
-      "end": 36.0,
+      "avg_logprob": -0.784728,
+      "compression_ratio": 1.451477,
+      "end": 37.24,
       "no_speech_prob": 0.0,
-      "start": 34.0,
-      "text": "你看看多强"
+      "start": 36.04,
+      "text": "他吃那些"
     },
     {
-      "avg_logprob": -0.592966,
-      "compression_ratio": 1.615385,
-      "end": 38.0,
+      "avg_logprob": -0.784728,
+      "compression_ratio": 1.451477,
+      "end": 38.8,
       "no_speech_prob": 0.0,
-      "start": 36.0,
-      "text": "你看看多强"
+      "start": 37.24,
+      "text": "看来看"
     },
     {
-      "avg_logprob": -0.592966,
-      "compression_ratio": 1.615385,
-      "end": 40.0,
+      "avg_logprob": -0.784728,
+      "compression_ratio": 1.451477,
+      "end": 40.32,
       "no_speech_prob": 0.0,
-      "start": 38.0,
-      "text": "你看看多强"
+      "start": 38.8,
+      "text": "看来看"
     },
     {
-      "avg_logprob": -0.592966,
-      "compression_ratio": 1.615385,
-      "end": 42.0,
+      "avg_logprob": -0.784728,
+      "compression_ratio": 1.451477,
+      "end": 41.44,
       "no_speech_prob": 0.0,
-      "start": 40.0,
+      "start": 40.32,
       "text": "你来点凉水"
     },
     {
-      "avg_logprob": -0.592966,
-      "compression_ratio": 1.615385,
-      "end": 44.0,
+      "avg_logprob": -0.784728,
+      "compression_ratio": 1.451477,
+      "end": 41.84,
       "no_speech_prob": 0.0,
-      "start": 42.0,
+      "start": 41.44,
+      "text": "傻子"
+    },
+    {
+      "avg_logprob": -0.784728,
+      "compression_ratio": 1.451477,
+      "end": 43.12,
+      "no_speech_prob": 0.0,
+      "start": 41.84,
       "text": "你给我准备点凉水"
     },
     {
-      "avg_logprob": -0.592966,
-      "compression_ratio": 1.615385,
-      "end": 46.0,
+      "avg_logprob": -0.784728,
+      "compression_ratio": 1.451477,
+      "end": 44.8,
       "no_speech_prob": 0.0,
-      "start": 44.0,
-      "text": "你来点凉水"
+      "start": 43.12,
+      "text": "真是凉水"
     },
     {
-      "avg_logprob": -0.592966,
-      "compression_ratio": 1.615385,
-      "end": 48.0,
+      "avg_logprob": -0.784728,
+      "compression_ratio": 1.451477,
+      "end": 47.64,
       "no_speech_prob": 0.0,
-      "start": 46.0,
+      "start": 46.08,
       "text": "今天你倒杯凉水一个老板"
     },
     {
-      "avg_logprob": -0.592966,
-      "compression_ratio": 1.615385,
-      "end": 50.0,
+      "avg_logprob": -0.784728,
+      "compression_ratio": 1.451477,
+      "end": 48.68,
       "no_speech_prob": 0.0,
-      "start": 48.0,
+      "start": 47.64,
       "text": "倒杯凉水"
     },
     {
-      "avg_logprob": -0.592966,
-      "compression_ratio": 1.615385,
-      "end": 52.0,
+      "avg_logprob": -0.784728,
+      "compression_ratio": 1.451477,
+      "end": 49.76,
       "no_speech_prob": 0.0,
-      "start": 50.0,
-      "text": "不是在站手"
+      "start": 48.68,
+      "text": "倒杯凉水是要干什么"
     },
     {
-      "avg_logprob": -0.592966,
-      "compression_ratio": 1.615385,
-      "end": 54.0,
+      "avg_logprob": -0.784728,
+      "compression_ratio": 1.451477,
+      "end": 50.16,
       "no_speech_prob": 0.0,
-      "start": 52.0,
-      "text": "我讲完了的时候你得给我准备凉水"
+      "start": 49.76,
+      "text": "喝吗"
     },
     {
-      "avg_logprob": -0.592966,
-      "compression_ratio": 1.615385,
-      "end": 56.0,
+      "avg_logprob": -0.784728,
+      "compression_ratio": 1.451477,
+      "end": 50.56,
       "no_speech_prob": 0.0,
-      "start": 54.0,
-      "text": "你给我啥子"
+      "start": 50.16,
+      "text": "不是"
     },
     {
-      "avg_logprob": -0.570036,
-      "compression_ratio": 1.074627,
+      "avg_logprob": -0.784728,
+      "compression_ratio": 1.451477,
+      "end": 51.2,
+      "no_speech_prob": 0.0,
+      "start": 50.56,
+      "text": "在战手"
+    },
+    {
+      "avg_logprob": -0.784728,
+      "compression_ratio": 1.451477,
+      "end": 52.08,
+      "no_speech_prob": 0.0,
+      "start": 51.2,
+      "text": "我讲完了的时候"
+    },
+    {
+      "avg_logprob": -0.784728,
+      "compression_ratio": 1.451477,
+      "end": 53.48,
+      "no_speech_prob": 0.0,
+      "start": 52.08,
+      "text": "你得给我准备凉水"
+    },
+    {
+      "avg_logprob": -0.784728,
+      "compression_ratio": 1.451477,
+      "end": 54.8,
+      "no_speech_prob": 0.0,
+      "start": 53.48,
+      "text": "你不给我傻子"
+    },
+    {
+      "avg_logprob": -0.784728,
+      "compression_ratio": 1.451477,
+      "end": 55.76,
+      "no_speech_prob": 0.0,
+      "start": 54.8,
+      "text": "没有人喝"
+    },
+    {
+      "avg_logprob": -0.784728,
+      "compression_ratio": 1.451477,
+      "end": 56.8,
+      "no_speech_prob": 0.0,
+      "start": 55.76,
+      "text": "No service"
+    },
+    {
+      "avg_logprob": -0.784728,
+      "compression_ratio": 1.451477,
       "end": 58.0,
       "no_speech_prob": 0.0,
-      "start": 56.0,
-      "text": "我没有服务"
+      "start": 56.8,
+      "text": "No service"
     },
     {
-      "avg_logprob": -0.570036,
-      "compression_ratio": 1.074627,
-      "end": 60.0,
+      "avg_logprob": -0.784728,
+      "compression_ratio": 1.451477,
+      "end": 59.04,
       "no_speech_prob": 0.0,
       "start": 58.0,
-      "text": "不是要干什么我不知道啊"
+      "text": "不是想要干什么"
     },
     {
-      "avg_logprob": -0.570036,
-      "compression_ratio": 1.074627,
-      "end": 62.0,
+      "avg_logprob": -0.784728,
+      "compression_ratio": 1.451477,
+      "end": 59.96,
       "no_speech_prob": 0.0,
-      "start": 60.0,
-      "text": "哪有往往斩盘子"
+      "start": 59.04,
+      "text": "我不知道啊"
     },
     {
-      "avg_logprob": -0.570036,
-      "compression_ratio": 1.074627,
-      "end": 64.0,
+      "avg_logprob": -0.889395,
+      "compression_ratio": 1.493088,
+      "end": 60.96,
       "no_speech_prob": 0.0,
-      "start": 62.0,
-      "text": "不准备凉水的"
+      "start": 59.96,
+      "text": "这些是"
     },
     {
-      "avg_logprob": -0.570036,
-      "compression_ratio": 1.074627,
-      "end": 66.0,
+      "avg_logprob": -0.889395,
+      "compression_ratio": 1.493088,
+      "end": 63.68,
       "no_speech_prob": 0.0,
-      "start": 64.0,
-      "text": "你们这傻子都不斩"
+      "start": 60.96,
+      "text": "哪有人把我继续不准备凉水的"
     },
     {
-      "avg_logprob": -0.570036,
-      "compression_ratio": 1.074627,
-      "end": 68.0,
+      "avg_logprob": -0.889395,
+      "compression_ratio": 1.493088,
+      "end": 65.36,
       "no_speech_prob": 0.0,
-      "start": 66.0,
+      "start": 63.68,
+      "text": "你们这些傻子都不准备"
+    },
+    {
+      "avg_logprob": -0.889395,
+      "compression_ratio": 1.493088,
+      "end": 66.96,
+      "no_speech_prob": 0.0,
+      "start": 65.36,
+      "text": "哈哈"
+    },
+    {
+      "avg_logprob": -0.889395,
+      "compression_ratio": 1.493088,
+      "end": 68.2,
+      "no_speech_prob": 0.0,
+      "start": 66.96,
       "text": "那是最好的"
     },
     {
-      "avg_logprob": -0.570036,
-      "compression_ratio": 1.074627,
-      "end": 70.0,
+      "avg_logprob": -0.889395,
+      "compression_ratio": 1.493088,
+      "end": 70.6,
       "no_speech_prob": 0.0,
-      "start": 68.0,
-      "text": "是要凉手"
+      "start": 68.2,
+      "text": "是要凉手是吗"
     },
     {
-      "avg_logprob": -0.570036,
-      "compression_ratio": 1.074627,
-      "end": 72.0,
+      "avg_logprob": -0.889395,
+      "compression_ratio": 1.493088,
+      "end": 71.32,
       "no_speech_prob": 0.0,
-      "start": 70.0,
+      "start": 70.6,
       "text": "对啊"
     },
     {
-      "avg_logprob": -0.594786,
-      "compression_ratio": 1.603053,
-      "end": 74.0,
+      "avg_logprob": -0.889395,
+      "compression_ratio": 1.493088,
+      "end": 72.76,
       "no_speech_prob": 0.0,
-      "start": 72.0,
-      "text": "你不必须做食物"
+      "start": 71.32,
+      "text": "开始吃饭"
     },
     {
-      "avg_logprob": -0.594786,
-      "compression_ratio": 1.603053,
-      "end": 76.0,
+      "avg_logprob": -0.889395,
+      "compression_ratio": 1.493088,
+      "end": 73.52,
       "no_speech_prob": 0.0,
-      "start": 74.0,
-      "text": "你不必须做食物"
+      "start": 72.76,
+      "text": "不是这个"
     },
     {
-      "avg_logprob": -0.594786,
-      "compression_ratio": 1.603053,
-      "end": 78.0,
+      "avg_logprob": -0.889395,
+      "compression_ratio": 1.493088,
+      "end": 75.6,
       "no_speech_prob": 0.0,
-      "start": 76.0,
-      "text": "你不必须做食物"
+      "start": 73.52,
+      "text": "你不能做饭"
     },
     {
-      "avg_logprob": -0.594786,
-      "compression_ratio": 1.603053,
-      "end": 80.0,
+      "avg_logprob": -0.889395,
+      "compression_ratio": 1.493088,
+      "end": 76.68,
       "no_speech_prob": 0.0,
-      "start": 78.0,
-      "text": "你不必须做食物"
+      "start": 75.6,
+      "text": "你不太太太"
     },
     {
-      "avg_logprob": -0.594786,
-      "compression_ratio": 1.603053,
-      "end": 82.0,
+      "avg_logprob": -0.889395,
+      "compression_ratio": 1.493088,
+      "end": 77.6,
       "no_speech_prob": 0.0,
-      "start": 80.0,
-      "text": "够不够够够够够"
+      "start": 76.68,
+      "text": "你不太太太"
     },
     {
-      "avg_logprob": -0.594786,
-      "compression_ratio": 1.603053,
-      "end": 84.0,
+      "avg_logprob": -0.889395,
+      "compression_ratio": 1.493088,
+      "end": 78.6,
       "no_speech_prob": 0.0,
-      "start": 82.0,
+      "start": 77.6,
+      "text": "你不太太太"
+    },
+    {
+      "avg_logprob": -0.889395,
+      "compression_ratio": 1.493088,
+      "end": 80.8,
+      "no_speech_prob": 0.0,
+      "start": 78.6,
+      "text": "够不够凉"
+    },
+    {
+      "avg_logprob": -0.889395,
+      "compression_ratio": 1.493088,
+      "end": 81.6,
+      "no_speech_prob": 0.0,
+      "start": 80.8,
+      "text": "我可以放冰箱"
+    },
+    {
+      "avg_logprob": -0.889395,
+      "compression_ratio": 1.493088,
+      "end": 82.8,
+      "no_speech_prob": 0.0,
+      "start": 81.6,
       "text": "好了好了"
     },
     {
-      "avg_logprob": -0.594786,
-      "compression_ratio": 1.603053,
-      "end": 86.0,
+      "avg_logprob": -0.889395,
+      "compression_ratio": 1.493088,
+      "end": 84.12,
       "no_speech_prob": 0.0,
-      "start": 84.0,
+      "start": 82.8,
       "text": "稍微多了两分钟"
     },
     {
-      "avg_logprob": -0.594786,
-      "compression_ratio": 1.603053,
-      "end": 88.0,
+      "avg_logprob": -0.889395,
+      "compression_ratio": 1.493088,
+      "end": 84.6,
       "no_speech_prob": 0.0,
-      "start": 86.0,
-      "text": "你看多了"
-    },
-    {
-      "avg_logprob": -0.594786,
-      "compression_ratio": 1.603053,
-      "end": 90.0,
-      "no_speech_prob": 0.0,
-      "start": 88.0,
-      "text": "因为有更多时间"
-    },
-    {
-      "avg_logprob": -0.594786,
-      "compression_ratio": 1.603053,
-      "end": 92.0,
-      "no_speech_prob": 0.0,
-      "start": 90.0,
-      "text": "我喜欢这个"
-    },
-    {
-      "avg_logprob": -0.594786,
-      "compression_ratio": 1.603053,
-      "end": 94.0,
-      "no_speech_prob": 0.0,
-      "start": 92.0,
+      "start": 84.12,
       "text": "你看看"
     },
     {
-      "avg_logprob": -0.594786,
-      "compression_ratio": 1.603053,
-      "end": 96.0,
+      "avg_logprob": -0.889395,
+      "compression_ratio": 1.493088,
+      "end": 85.0,
       "no_speech_prob": 0.0,
-      "start": 94.0,
-      "text": "很可怕"
+      "start": 84.6,
+      "text": "哇"
     },
     {
-      "avg_logprob": -0.594786,
-      "compression_ratio": 1.603053,
-      "end": 98.0,
+      "avg_logprob": -0.889395,
+      "compression_ratio": 1.493088,
+      "end": 87.92,
       "no_speech_prob": 0.0,
-      "start": 96.0,
-      "text": "完美"
+      "start": 85.0,
+      "text": "因为有点多的时间"
     },
     {
-      "avg_logprob": -0.962018,
-      "compression_ratio": 1.181818,
-      "end": 100.0,
+      "avg_logprob": -0.889395,
+      "compression_ratio": 1.493088,
+      "end": 88.92,
       "no_speech_prob": 0.0,
-      "start": 98.0,
-      "text": "那是超级的"
+      "start": 87.92,
+      "text": "有点多的时间"
     },
     {
-      "avg_logprob": -0.962018,
-      "compression_ratio": 1.181818,
-      "end": 102.0,
+      "avg_logprob": -4.718197,
+      "compression_ratio": 0.869565,
+      "end": 89.04,
       "no_speech_prob": 0.0,
-      "start": 100.0,
-      "text": "好了好了好了好了"
+      "start": 88.92,
+      "text": "尤尤  trying"
+    },
+    {
+      "avg_logprob": -4.718197,
+      "compression_ratio": 0.869565,
+      "end": 89.04,
+      "no_speech_prob": 0.0,
+      "start": 89.04,
+      "text": "ов�"
+    },
+    {
+      "avg_logprob": -4.718197,
+      "compression_ratio": 0.869565,
+      "end": 89.0,
+      "no_speech_prob": 0.0,
+      "start": 88.96,
+      "text": "im"
+    },
+    {
+      "avg_logprob": -4.718197,
+      "compression_ratio": 0.869565,
+      "end": 88.96,
+      "no_speech_prob": 0.0,
+      "start": 88.92,
+      "text": "i red"
+    },
+    {
+      "avg_logprob": -4.718197,
+      "compression_ratio": 0.869565,
+      "end": 88.96,
+      "no_speech_prob": 0.0,
+      "start": 88.96,
+      "text": "i nd"
+    },
+    {
+      "avg_logprob": -4.718197,
+      "compression_ratio": 0.869565,
+      "end": 88.94,
+      "no_speech_prob": 0.0,
+      "start": 88.92,
+      "text": "i on"
+    },
+    {
+      "avg_logprob": -4.718197,
+      "compression_ratio": 0.869565,
+      "end": 88.94,
+      "no_speech_prob": 0.0,
+      "start": 88.94,
+      "text": "h"
     }
   ],
-  "text": "《十字幕》《十字幕》《十字幕》《十字幕》《十字幕》《十字幕》你看到没有?你看到时间点长来到了来到了你看看这个你看看多大哇你看看多强你看看多强你看看多强多强都被他做了我没相信你看看多强你看看多强你看看多强你来点凉水你给我准备点凉水你来点凉水今天你倒杯凉水一个老板倒杯凉水不是在站手我讲完了的时候你得给我准备凉水你给我啥子我没有服务不是要干什么我不知道啊哪有往往斩盘子不准备凉水的你们这傻子都不斩那是最好的是要凉手对啊你不必须做食物你不必须做食物你不必须做食物你不必须做食物够不够够够够够好了好了稍微多了两分钟你看多了因为有更多时间我喜欢这个你看看很可怕完美那是超级的好了好了好了好了"
+  "text": "2,0%1%0$$!0!这些都是他做的我不相信他吃那些看来看看来看你来点凉水傻子你给我准备点凉水真是凉水今天你倒杯凉水一个老板倒杯凉水倒杯凉水是要干什么喝吗不是在战手我讲完了的时候你得给我准备凉水你不给我傻子没有人喝No serviceNo service不是想要干什么我不知道啊这些是哪有人把我继续不准备凉水的你们这些傻子都不准备哈哈那是最好的是要凉手是吗对啊开始吃饭不是这个你不能做饭你不太太太你不太太太你不太太太够不够凉我可以放冰箱好了好了稍微多了两分钟你看看哇因为有点多的时间有点多的时间尤尤  tryingов�imi redi ndi onh"
 }
