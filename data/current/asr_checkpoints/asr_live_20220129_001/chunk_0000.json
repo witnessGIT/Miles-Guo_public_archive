@@ -1,1064 +1,776 @@
 {
-  "chunk_audio_sha256": "f906dbde827a3da6fae09ab3ed21359db2cea4786a6430e29b9a53669be8d80b",
+  "chunk_audio_sha256": "da08d17d288854ac81c2d4a8693e025b19c9fda9c9b4b5a680f4ab226addf8c6",
   "chunk_index": 0,
-  "completed_at": "2026-10-24T19:29:42Z",
+  "completed_at": "2026-10-31T18:23:08Z",
   "language": "zh",
   "live_id": "LIVE_20220129_001",
   "media_committed_to_git": false,
   "model": "mlx-community/whisper-large-v3-turbo",
   "offset_sec": 0,
   "paid_api_used": false,
-  "processing_location": "local-codex-agent-mlx",
+  "processing_location": "github-hosted-macos-arm64",
   "schema_version": "cloud-asr-chunk-v1",
   "segments": [
     {
-      "avg_logprob": -0.638716,
-      "compression_ratio": 2.146154,
-      "end": 1.0,
-      "no_speech_prob": 0.0,
-      "start": 0.0,
-      "text": "我这都是"
-    },
-    {
-      "avg_logprob": -0.638716,
-      "compression_ratio": 2.146154,
+      "avg_logprob": -0.808191,
+      "compression_ratio": 1.488152,
       "end": 2.0,
       "no_speech_prob": 0.0,
-      "start": 1.0,
-      "text": "我这都是"
+      "start": 0.0,
+      "text": "我就是当时他跟我讲"
     },
     {
-      "avg_logprob": -0.638716,
-      "compression_ratio": 2.146154,
-      "end": 3.0,
-      "no_speech_prob": 0.0,
-      "start": 2.0,
-      "text": "我这都是"
-    },
-    {
-      "avg_logprob": -0.638716,
-      "compression_ratio": 2.146154,
+      "avg_logprob": -0.808191,
+      "compression_ratio": 1.488152,
       "end": 4.0,
       "no_speech_prob": 0.0,
-      "start": 3.0,
-      "text": "我这都是"
+      "start": 2.0,
+      "text": "我那个我简直是"
     },
     {
-      "avg_logprob": -0.638716,
-      "compression_ratio": 2.146154,
-      "end": 5.0,
-      "no_speech_prob": 0.0,
-      "start": 4.0,
-      "text": "我这都是"
-    },
-    {
-      "avg_logprob": -0.638716,
-      "compression_ratio": 2.146154,
+      "avg_logprob": -0.808191,
+      "compression_ratio": 1.488152,
       "end": 6.0,
       "no_speech_prob": 0.0,
-      "start": 5.0,
-      "text": "我这都是"
+      "start": 4.0,
+      "text": "我这个他共产党的"
     },
     {
-      "avg_logprob": -0.638716,
-      "compression_ratio": 2.146154,
-      "end": 7.0,
-      "no_speech_prob": 0.0,
-      "start": 6.0,
-      "text": "我这都是"
-    },
-    {
-      "avg_logprob": -0.638716,
-      "compression_ratio": 2.146154,
+      "avg_logprob": -0.808191,
+      "compression_ratio": 1.488152,
       "end": 8.0,
       "no_speech_prob": 0.0,
-      "start": 7.0,
-      "text": "我这都是"
+      "start": 6.0,
+      "text": "这个他我都没有出口"
     },
     {
-      "avg_logprob": -0.638716,
-      "compression_ratio": 2.146154,
+      "avg_logprob": -0.808191,
+      "compression_ratio": 1.488152,
       "end": 9.0,
       "no_speech_prob": 0.0,
       "start": 8.0,
-      "text": "我这都是"
+      "text": "我都没有出口"
     },
     {
-      "avg_logprob": -0.638716,
-      "compression_ratio": 2.146154,
+      "avg_logprob": -0.808191,
+      "compression_ratio": 1.488152,
       "end": 10.0,
       "no_speech_prob": 0.0,
       "start": 9.0,
-      "text": "我这都是"
+      "text": "他都能骗你"
     },
     {
-      "avg_logprob": -0.638716,
-      "compression_ratio": 2.146154,
+      "avg_logprob": -0.808191,
+      "compression_ratio": 1.488152,
       "end": 11.0,
       "no_speech_prob": 0.0,
       "start": 10.0,
-      "text": "我这都是"
+      "text": "你带我去"
     },
     {
-      "avg_logprob": -0.638716,
-      "compression_ratio": 2.146154,
+      "avg_logprob": -0.808191,
+      "compression_ratio": 1.488152,
       "end": 12.0,
       "no_speech_prob": 0.0,
       "start": 11.0,
-      "text": "哎呀"
+      "text": "你想想"
     },
     {
-      "avg_logprob": -0.638716,
-      "compression_ratio": 2.146154,
-      "end": 13.0,
-      "no_speech_prob": 0.0,
-      "start": 12.0,
-      "text": "哎呀"
-    },
-    {
-      "avg_logprob": -0.638716,
-      "compression_ratio": 2.146154,
+      "avg_logprob": -0.808191,
+      "compression_ratio": 1.488152,
       "end": 14.0,
       "no_speech_prob": 0.0,
-      "start": 13.0,
-      "text": "还如雨的"
+      "start": 12.0,
+      "text": "哎呀 还有勇的"
     },
     {
-      "avg_logprob": -0.638716,
-      "compression_ratio": 2.146154,
+      "avg_logprob": -0.808191,
+      "compression_ratio": 1.488152,
       "end": 17.0,
       "no_speech_prob": 0.0,
       "start": 14.0,
       "text": "这个男人就怎么证明他是"
     },
     {
-      "avg_logprob": -0.638716,
-      "compression_ratio": 2.146154,
-      "end": 18.0,
-      "no_speech_prob": 0.0,
-      "start": 17.0,
-      "text": "他就是"
-    },
-    {
-      "avg_logprob": -0.638716,
-      "compression_ratio": 2.146154,
+      "avg_logprob": -0.808191,
+      "compression_ratio": 1.488152,
       "end": 19.0,
       "no_speech_prob": 0.0,
-      "start": 18.0,
-      "text": "啊"
+      "start": 17.0,
+      "text": "我就是这样"
     },
     {
-      "avg_logprob": -0.638716,
-      "compression_ratio": 2.146154,
+      "avg_logprob": -0.808191,
+      "compression_ratio": 1.488152,
       "end": 20.0,
       "no_speech_prob": 0.0,
       "start": 19.0,
-      "text": "我就这样"
+      "text": "哎 你跳会儿"
     },
     {
-      "avg_logprob": -0.638716,
-      "compression_ratio": 2.146154,
+      "avg_logprob": -0.808191,
+      "compression_ratio": 1.488152,
       "end": 21.0,
       "no_speech_prob": 0.0,
       "start": 20.0,
-      "text": "哎"
+      "text": "我都"
     },
     {
-      "avg_logprob": -0.638716,
-      "compression_ratio": 2.146154,
+      "avg_logprob": -0.808191,
+      "compression_ratio": 1.488152,
       "end": 22.0,
       "no_speech_prob": 0.0,
       "start": 21.0,
-      "text": "你跳会儿"
+      "text": "我都"
     },
     {
-      "avg_logprob": -0.638716,
-      "compression_ratio": 2.146154,
+      "avg_logprob": -0.808191,
+      "compression_ratio": 1.488152,
       "end": 23.0,
       "no_speech_prob": 0.0,
       "start": 22.0,
       "text": "我都"
     },
     {
-      "avg_logprob": -0.638716,
-      "compression_ratio": 2.146154,
-      "end": 24.0,
-      "no_speech_prob": 0.0,
-      "start": 23.0,
-      "text": "哎"
-    },
-    {
-      "avg_logprob": -0.638716,
-      "compression_ratio": 2.146154,
-      "end": 25.0,
-      "no_speech_prob": 0.0,
-      "start": 24.0,
-      "text": "我这就是"
-    },
-    {
-      "avg_logprob": -0.638716,
-      "compression_ratio": 2.146154,
+      "avg_logprob": -0.808191,
+      "compression_ratio": 1.488152,
       "end": 26.0,
       "no_speech_prob": 0.0,
-      "start": 25.0,
-      "text": "你"
+      "start": 23.0,
+      "text": "我都在女人一直跟着"
     },
     {
-      "avg_logprob": -0.638716,
-      "compression_ratio": 2.146154,
+      "avg_logprob": -0.808191,
+      "compression_ratio": 1.488152,
       "end": 27.0,
       "no_speech_prob": 0.0,
       "start": 26.0,
-      "text": "我这就是"
-    },
-    {
-      "avg_logprob": -0.638716,
-      "compression_ratio": 2.146154,
-      "end": 28.0,
-      "no_speech_prob": 0.0,
-      "start": 27.0,
       "text": "对吧"
     },
     {
-      "avg_logprob": -0.638716,
-      "compression_ratio": 2.146154,
+      "avg_logprob": -0.808191,
+      "compression_ratio": 1.488152,
+      "end": 28.0,
+      "no_speech_prob": 0.0,
+      "start": 27.0,
+      "text": "真的是的"
+    },
+    {
+      "avg_logprob": -0.808191,
+      "compression_ratio": 1.488152,
       "end": 29.0,
       "no_speech_prob": 0.0,
       "start": 28.0,
-      "text": "这个是"
+      "text": "他就抱着我"
     },
     {
-      "avg_logprob": -0.963245,
-      "compression_ratio": 1.971429,
-      "end": 30.0,
-      "no_speech_prob": 0.0,
-      "start": 29.0,
-      "text": "秩序"
-    },
-    {
-      "avg_logprob": -0.963245,
-      "compression_ratio": 1.971429,
+      "avg_logprob": -1.047246,
+      "compression_ratio": 2.325581,
       "end": 31.0,
       "no_speech_prob": 0.0,
-      "start": 30.0,
-      "text": "他得到我"
+      "start": 29.0,
+      "text": "说iste"
     },
     {
-      "avg_logprob": -0.963245,
-      "compression_ratio": 1.971429,
-      "end": 32.0,
-      "no_speech_prob": 0.0,
-      "start": 31.0,
-      "text": "ulated"
-    },
-    {
-      "avg_logprob": -0.963245,
-      "compression_ratio": 1.971429,
+      "avg_logprob": -1.047246,
+      "compression_ratio": 2.325581,
       "end": 33.0,
       "no_speech_prob": 0.0,
-      "start": 32.0,
-      "text": "努力"
+      "start": 31.0,
+      "text": "这位她都会 seine"
     },
     {
-      "avg_logprob": -0.963245,
-      "compression_ratio": 1.971429,
+      "avg_logprob": -1.047246,
+      "compression_ratio": 2.325581,
       "end": 34.0,
       "no_speech_prob": 0.0,
       "start": 33.0,
-      "text": "对"
+      "text": "笑"
     },
     {
-      "avg_logprob": -0.963245,
-      "compression_ratio": 1.971429,
+      "avg_logprob": -1.047246,
+      "compression_ratio": 2.325581,
       "end": 35.0,
       "no_speech_prob": 0.0,
       "start": 34.0,
-      "text": "but"
+      "text": "笑"
     },
     {
-      "avg_logprob": -0.963245,
-      "compression_ratio": 1.971429,
+      "avg_logprob": -1.047246,
+      "compression_ratio": 2.325581,
       "end": 36.0,
       "no_speech_prob": 0.0,
       "start": 35.0,
-      "text": "他得到我"
+      "text": "笑"
     },
     {
-      "avg_logprob": -0.963245,
-      "compression_ratio": 1.971429,
+      "avg_logprob": -1.047246,
+      "compression_ratio": 2.325581,
       "end": 37.0,
       "no_speech_prob": 0.0,
       "start": 36.0,
-      "text": "再也得到我"
+      "text": "笑"
     },
     {
-      "avg_logprob": -0.963245,
-      "compression_ratio": 1.971429,
+      "avg_logprob": -1.047246,
+      "compression_ratio": 2.325581,
       "end": 38.0,
       "no_speech_prob": 0.0,
       "start": 37.0,
-      "text": "不是"
+      "text": "笑"
     },
     {
-      "avg_logprob": -0.963245,
-      "compression_ratio": 1.971429,
+      "avg_logprob": -1.047246,
+      "compression_ratio": 2.325581,
       "end": 39.0,
       "no_speech_prob": 0.0,
       "start": 38.0,
-      "text": "他得到我"
+      "text": "笑"
     },
     {
-      "avg_logprob": -0.963245,
-      "compression_ratio": 1.971429,
+      "avg_logprob": -1.047246,
+      "compression_ratio": 2.325581,
       "end": 40.0,
       "no_speech_prob": 0.0,
       "start": 39.0,
-      "text": "嗨"
+      "text": "笑"
     },
     {
-      "avg_logprob": -0.963245,
-      "compression_ratio": 1.971429,
+      "avg_logprob": -1.047246,
+      "compression_ratio": 2.325581,
       "end": 41.0,
       "no_speech_prob": 0.0,
       "start": 40.0,
-      "text": "嗨"
+      "text": "笑"
     },
     {
-      "avg_logprob": -0.963245,
-      "compression_ratio": 1.971429,
+      "avg_logprob": -1.047246,
+      "compression_ratio": 2.325581,
       "end": 42.0,
       "no_speech_prob": 0.0,
       "start": 41.0,
-      "text": "嗨"
+      "text": "笑"
     },
     {
-      "avg_logprob": -0.963245,
-      "compression_ratio": 1.971429,
+      "avg_logprob": -1.047246,
+      "compression_ratio": 2.325581,
       "end": 43.0,
       "no_speech_prob": 0.0,
       "start": 42.0,
-      "text": "嗨"
+      "text": "笑"
     },
     {
-      "avg_logprob": -0.963245,
-      "compression_ratio": 1.971429,
+      "avg_logprob": -1.047246,
+      "compression_ratio": 2.325581,
       "end": 44.0,
       "no_speech_prob": 0.0,
       "start": 43.0,
-      "text": "嗨"
+      "text": "笑"
     },
     {
-      "avg_logprob": -0.963245,
-      "compression_ratio": 1.971429,
+      "avg_logprob": -1.047246,
+      "compression_ratio": 2.325581,
       "end": 45.0,
       "no_speech_prob": 0.0,
       "start": 44.0,
-      "text": "嗨"
+      "text": "笑"
     },
     {
-      "avg_logprob": -0.963245,
-      "compression_ratio": 1.971429,
+      "avg_logprob": -1.047246,
+      "compression_ratio": 2.325581,
       "end": 46.0,
       "no_speech_prob": 0.0,
       "start": 45.0,
-      "text": "嗨"
+      "text": "笑"
     },
     {
-      "avg_logprob": -0.963245,
-      "compression_ratio": 1.971429,
+      "avg_logprob": -1.047246,
+      "compression_ratio": 2.325581,
       "end": 47.0,
       "no_speech_prob": 0.0,
       "start": 46.0,
-      "text": "嗨"
+      "text": "笑"
     },
     {
-      "avg_logprob": -0.963245,
-      "compression_ratio": 1.971429,
+      "avg_logprob": -1.047246,
+      "compression_ratio": 2.325581,
       "end": 48.0,
       "no_speech_prob": 0.0,
       "start": 47.0,
-      "text": "嗨"
+      "text": "笑"
     },
     {
-      "avg_logprob": -0.963245,
-      "compression_ratio": 1.971429,
+      "avg_logprob": -1.047246,
+      "compression_ratio": 2.325581,
       "end": 49.0,
       "no_speech_prob": 0.0,
       "start": 48.0,
-      "text": "嗨"
+      "text": "笑"
     },
     {
-      "avg_logprob": -0.963245,
-      "compression_ratio": 1.971429,
+      "avg_logprob": -1.047246,
+      "compression_ratio": 2.325581,
       "end": 50.0,
       "no_speech_prob": 0.0,
       "start": 49.0,
-      "text": "嗨"
+      "text": "笑"
     },
     {
-      "avg_logprob": -0.963245,
-      "compression_ratio": 1.971429,
+      "avg_logprob": -1.047246,
+      "compression_ratio": 2.325581,
       "end": 51.0,
       "no_speech_prob": 0.0,
       "start": 50.0,
-      "text": "嗨"
+      "text": "笑"
     },
     {
-      "avg_logprob": -0.963245,
-      "compression_ratio": 1.971429,
+      "avg_logprob": -1.047246,
+      "compression_ratio": 2.325581,
       "end": 52.0,
       "no_speech_prob": 0.0,
       "start": 51.0,
-      "text": "嗨"
+      "text": "笑"
     },
     {
-      "avg_logprob": -0.963245,
-      "compression_ratio": 1.971429,
+      "avg_logprob": -1.047246,
+      "compression_ratio": 2.325581,
       "end": 53.0,
       "no_speech_prob": 0.0,
       "start": 52.0,
-      "text": "嗨"
+      "text": "笑"
     },
     {
-      "avg_logprob": -0.963245,
-      "compression_ratio": 1.971429,
+      "avg_logprob": -1.047246,
+      "compression_ratio": 2.325581,
       "end": 54.0,
       "no_speech_prob": 0.0,
       "start": 53.0,
-      "text": "嗨"
+      "text": "笑"
     },
     {
-      "avg_logprob": -0.963245,
-      "compression_ratio": 1.971429,
+      "avg_logprob": -1.047246,
+      "compression_ratio": 2.325581,
       "end": 55.0,
       "no_speech_prob": 0.0,
       "start": 54.0,
-      "text": "嗨"
+      "text": "笑"
     },
     {
-      "avg_logprob": -0.963245,
-      "compression_ratio": 1.971429,
+      "avg_logprob": -1.047246,
+      "compression_ratio": 2.325581,
       "end": 56.0,
       "no_speech_prob": 0.0,
       "start": 55.0,
-      "text": "嗨"
+      "text": "笑"
     },
     {
-      "avg_logprob": -0.963245,
-      "compression_ratio": 1.971429,
+      "avg_logprob": -1.047246,
+      "compression_ratio": 2.325581,
       "end": 57.0,
       "no_speech_prob": 0.0,
       "start": 56.0,
-      "text": "嗨"
+      "text": "笑"
     },
     {
-      "avg_logprob": -0.963245,
-      "compression_ratio": 1.971429,
-      "end": 58.0,
-      "no_speech_prob": 0.0,
-      "start": 57.0,
-      "text": "嗨"
-    },
-    {
-      "avg_logprob": -0.781556,
-      "compression_ratio": 0.830769,
-      "end": 60.0,
-      "no_speech_prob": 0.0,
-      "start": 58.0,
-      "text": "东哥"
-    },
-    {
-      "avg_logprob": -0.781556,
-      "compression_ratio": 0.830769,
+      "avg_logprob": -0.800874,
+      "compression_ratio": 0.765957,
       "end": 80.0,
       "no_speech_prob": 0.0,
-      "start": 76.0,
-      "text": "哎呀我的东西一百七颗榜啊"
+      "start": 57.0,
+      "text": "哎呀我的东西一百七颗房啊"
     },
     {
-      "avg_logprob": -0.781556,
-      "compression_ratio": 0.830769,
-      "end": 82.0,
+      "avg_logprob": -0.544391,
+      "compression_ratio": 0.990826,
+      "end": 81.0,
       "no_speech_prob": 0.0,
       "start": 80.0,
-      "text": "很孝子啊"
+      "text": "会笑死吧"
     },
     {
-      "avg_logprob": -0.389633,
-      "compression_ratio": 1.086614,
-      "end": 92.0,
+      "avg_logprob": -0.544391,
+      "compression_ratio": 0.990826,
+      "end": 104.4,
       "no_speech_prob": 0.0,
-      "start": 88.0,
-      "text": "哈哈哈哈"
+      "start": 100.6,
+      "text": "我让东西一位把我笑封了大卫和草原兄弟"
     },
     {
-      "avg_logprob": -0.389633,
-      "compression_ratio": 1.086614,
-      "end": 94.0,
+      "avg_logprob": -0.544391,
+      "compression_ratio": 0.990826,
+      "end": 107.8,
       "no_speech_prob": 0.0,
-      "start": 92.0,
-      "text": "哎呀"
+      "start": 106.4,
+      "text": "这影妹妹咋过去"
     },
     {
-      "avg_logprob": -0.389633,
-      "compression_ratio": 1.086614,
-      "end": 98.0,
+      "avg_logprob": -0.544391,
+      "compression_ratio": 0.990826,
+      "end": 109.2,
       "no_speech_prob": 0.0,
-      "start": 96.0,
-      "text": "哈哈"
+      "start": 108.2,
+      "text": "这每天我得笑死"
     },
     {
-      "avg_logprob": -0.389633,
-      "compression_ratio": 1.086614,
-      "end": 102.0,
-      "no_speech_prob": 0.0,
-      "start": 100.0,
-      "text": "我说东西一位把我笑封了"
-    },
-    {
-      "avg_logprob": -0.389633,
-      "compression_ratio": 1.086614,
-      "end": 104.0,
-      "no_speech_prob": 0.0,
-      "start": 102.0,
-      "text": "大卫和草莫兄弟"
-    },
-    {
-      "avg_logprob": -0.389633,
-      "compression_ratio": 1.086614,
-      "end": 106.0,
-      "no_speech_prob": 0.0,
-      "start": 104.0,
-      "text": "啊"
-    },
-    {
-      "avg_logprob": -0.389633,
-      "compression_ratio": 1.086614,
-      "end": 108.0,
-      "no_speech_prob": 0.0,
-      "start": 106.0,
-      "text": "这影妹被咋过呀"
-    },
-    {
-      "avg_logprob": -0.389633,
-      "compression_ratio": 1.086614,
-      "end": 110.0,
-      "no_speech_prob": 0.0,
-      "start": 108.0,
-      "text": "这每天会得笑死"
-    },
-    {
-      "avg_logprob": -0.389633,
-      "compression_ratio": 1.086614,
-      "end": 112.0,
+      "avg_logprob": -0.20286,
+      "compression_ratio": 1.192982,
+      "end": 113.0,
       "no_speech_prob": 0.0,
       "start": 110.0,
-      "text": "啊"
-    },
-    {
-      "avg_logprob": -0.389633,
-      "compression_ratio": 1.086614,
-      "end": 114.0,
-      "no_speech_prob": 0.0,
-      "start": 112.0,
       "text": "真开心"
     },
     {
-      "avg_logprob": -0.389633,
-      "compression_ratio": 1.086614,
-      "end": 116.0,
-      "no_speech_prob": 0.0,
-      "start": 114.0,
-      "text": "啊"
-    },
-    {
-      "avg_logprob": -0.058343,
-      "compression_ratio": 1.210227,
-      "end": 118.0,
+      "avg_logprob": -0.20286,
+      "compression_ratio": 1.192982,
+      "end": 123.4,
       "no_speech_prob": 0.0,
       "start": 116.0,
-      "text": "这共产党"
+      "text": "这共产党从昨天到今天无数的骚扰美国呀"
     },
     {
-      "avg_logprob": -0.058343,
-      "compression_ratio": 1.210227,
-      "end": 120.0,
-      "no_speech_prob": 0.0,
-      "start": 118.0,
-      "text": "从昨天到今天"
-    },
-    {
-      "avg_logprob": -0.058343,
-      "compression_ratio": 1.210227,
-      "end": 122.0,
-      "no_speech_prob": 0.0,
-      "start": 120.0,
-      "text": "无数的"
-    },
-    {
-      "avg_logprob": -0.058343,
-      "compression_ratio": 1.210227,
-      "end": 124.0,
-      "no_speech_prob": 0.0,
-      "start": 122.0,
-      "text": "骚扰美国呀"
-    },
-    {
-      "avg_logprob": -0.058343,
-      "compression_ratio": 1.210227,
-      "end": 126.0,
-      "no_speech_prob": 0.0,
-      "start": 124.0,
-      "text": "哎求求了"
-    },
-    {
-      "avg_logprob": -0.058343,
-      "compression_ratio": 1.210227,
+      "avg_logprob": -0.20286,
+      "compression_ratio": 1.192982,
       "end": 128.0,
       "no_speech_prob": 0.0,
-      "start": 126.0,
-      "text": "啊什么都好谈"
+      "start": 124.0,
+      "text": "哎求求了什么都好谈"
     },
     {
-      "avg_logprob": -0.058343,
-      "compression_ratio": 1.210227,
+      "avg_logprob": -0.20286,
+      "compression_ratio": 1.192982,
       "end": 131.0,
       "no_speech_prob": 0.0,
-      "start": 128.0,
+      "start": 128.6,
       "text": "我们要共同面对世界问题"
     },
     {
-      "avg_logprob": -0.058343,
-      "compression_ratio": 1.210227,
-      "end": 133.0,
+      "avg_logprob": -0.20286,
+      "compression_ratio": 1.192982,
+      "end": 135.6,
       "no_speech_prob": 0.0,
-      "start": 131.0,
-      "text": "两国领导人"
+      "start": 131.6,
+      "text": "两国领导人恢复两国领导人的所谓的"
     },
     {
-      "avg_logprob": -0.058343,
-      "compression_ratio": 1.210227,
-      "end": 136.0,
+      "avg_logprob": -0.20286,
+      "compression_ratio": 1.192982,
+      "end": 139.8,
       "no_speech_prob": 0.0,
-      "start": 133.0,
-      "text": "恢复两国领导人的所谓的"
+      "start": 136.2,
+      "text": "这个最最重要的个人关系"
     },
     {
-      "avg_logprob": -0.058343,
-      "compression_ratio": 1.210227,
-      "end": 138.0,
-      "no_speech_prob": 0.0,
-      "start": 136.0,
-      "text": "这个最最"
-    },
-    {
-      "avg_logprob": -0.058343,
-      "compression_ratio": 1.210227,
-      "end": 140.0,
-      "no_speech_prob": 0.0,
-      "start": 138.0,
-      "text": "重要的个人关系"
-    },
-    {
-      "avg_logprob": -0.058343,
-      "compression_ratio": 1.210227,
-      "end": 142.0,
+      "avg_logprob": -0.303321,
+      "compression_ratio": 0.939394,
+      "end": 141.8,
       "no_speech_prob": 0.0,
       "start": 140.0,
       "text": "为世界负责"
     },
     {
-      "avg_logprob": -0.214573,
-      "compression_ratio": 1.166667,
-      "end": 143.0,
+      "avg_logprob": -0.303321,
+      "compression_ratio": 0.939394,
+      "end": 143.8,
       "no_speech_prob": 0.0,
-      "start": 142.0,
-      "text": "啊"
+      "start": 142.8,
+      "text": "落实"
     },
     {
-      "avg_logprob": -0.214573,
-      "compression_ratio": 1.166667,
-      "end": 144.0,
+      "avg_logprob": -0.303321,
+      "compression_ratio": 0.939394,
+      "end": 149.6,
       "no_speech_prob": 0.0,
-      "start": 143.0,
-      "text": "若是"
+      "start": 144.4,
+      "text": "拜登总统和习主席的电话视频所决定"
     },
     {
-      "avg_logprob": -0.214573,
-      "compression_ratio": 1.166667,
-      "end": 146.0,
+      "avg_logprob": -0.303321,
+      "compression_ratio": 0.939394,
+      "end": 151.0,
       "no_speech_prob": 0.0,
-      "start": 144.0,
-      "text": "拜登总统和习主席的"
-    },
-    {
-      "avg_logprob": -0.214573,
-      "compression_ratio": 1.166667,
-      "end": 148.0,
-      "no_speech_prob": 0.0,
-      "start": 146.0,
-      "text": "电话视频"
-    },
-    {
-      "avg_logprob": -0.214573,
-      "compression_ratio": 1.166667,
-      "end": 150.0,
-      "no_speech_prob": 0.0,
-      "start": 148.0,
-      "text": "所决定"
-    },
-    {
-      "avg_logprob": -0.214573,
-      "compression_ratio": 1.166667,
-      "end": 152.0,
-      "no_speech_prob": 0.0,
-      "start": 150.0,
+      "start": 150.4,
       "text": "哎呀"
     },
     {
-      "avg_logprob": -0.214573,
-      "compression_ratio": 1.166667,
-      "end": 153.0,
+      "avg_logprob": -0.303321,
+      "compression_ratio": 0.939394,
+      "end": 153.4,
       "no_speech_prob": 0.0,
-      "start": 152.0,
+      "start": 152.2,
       "text": "用美国人话说"
     },
     {
-      "avg_logprob": -0.214573,
-      "compression_ratio": 1.166667,
-      "end": 155.0,
+      "avg_logprob": -0.376693,
+      "compression_ratio": 1.105263,
+      "end": 155.4,
       "no_speech_prob": 0.0,
-      "start": 153.0,
-      "text": "这这共产党就是一流氓"
+      "start": 153.4,
+      "text": "共产党就是一流氓"
     },
     {
-      "avg_logprob": -0.214573,
-      "compression_ratio": 1.166667,
-      "end": 156.0,
+      "avg_logprob": -0.376693,
+      "compression_ratio": 1.105263,
+      "end": 156.6,
       "no_speech_prob": 0.0,
-      "start": 155.0,
+      "start": 156.2,
       "text": "啊"
     },
     {
-      "avg_logprob": -0.214573,
-      "compression_ratio": 1.166667,
-      "end": 158.0,
+      "avg_logprob": -0.376693,
+      "compression_ratio": 1.105263,
+      "end": 158.2,
       "no_speech_prob": 0.0,
-      "start": 156.0,
-      "text": "仰起头就骂你啊"
+      "start": 156.6,
+      "text": "洋起头就骂娘"
     },
     {
-      "avg_logprob": -0.214573,
-      "compression_ratio": 1.166667,
+      "avg_logprob": -0.376693,
+      "compression_ratio": 1.105263,
       "end": 160.0,
       "no_speech_prob": 0.0,
-      "start": 158.0,
+      "start": 158.4,
       "text": "低下头又下跪"
     },
     {
-      "avg_logprob": -0.214573,
-      "compression_ratio": 1.166667,
-      "end": 161.0,
-      "no_speech_prob": 0.0,
-      "start": 160.0,
-      "text": "啊"
-    },
-    {
-      "avg_logprob": -0.214573,
-      "compression_ratio": 1.166667,
-      "end": 162.0,
+      "avg_logprob": -0.376693,
+      "compression_ratio": 1.105263,
+      "end": 162.2,
       "no_speech_prob": 0.0,
       "start": 161.0,
-      "text": "就这帮东西"
+      "text": "啊就这帮东西"
     },
     {
-      "avg_logprob": -0.214573,
-      "compression_ratio": 1.166667,
-      "end": 164.0,
+      "avg_logprob": -0.376693,
+      "compression_ratio": 1.105263,
+      "end": 165.0,
       "no_speech_prob": 0.0,
-      "start": 162.0,
-      "text": "东西说的太尊敬了"
+      "start": 163.0,
+      "text": "东地说的太尊敬了"
     },
     {
-      "avg_logprob": -0.214573,
-      "compression_ratio": 1.166667,
+      "avg_logprob": -0.376693,
+      "compression_ratio": 1.105263,
       "end": 166.0,
       "no_speech_prob": 0.0,
-      "start": 164.0,
+      "start": 165.0,
       "text": "四位环机站"
     },
     {
-      "avg_logprob": -0.263499,
-      "compression_ratio": 0.992126,
-      "end": 168.0,
+      "avg_logprob": -0.376693,
+      "compression_ratio": 1.105263,
+      "end": 168.2,
       "no_speech_prob": 0.0,
-      "start": 166.0,
-      "text": "他说的百分之百真实"
+      "start": 166.6,
+      "text": "他说的百分之百尊敬"
     },
     {
-      "avg_logprob": -0.263499,
-      "compression_ratio": 0.992126,
-      "end": 169.0,
+      "avg_logprob": -0.534511,
+      "compression_ratio": 0.911765,
+      "end": 169.6,
       "no_speech_prob": 0.0,
-      "start": 168.0,
+      "start": 168.2,
       "text": "哎"
     },
     {
-      "avg_logprob": -0.263499,
-      "compression_ratio": 0.992126,
-      "end": 170.0,
+      "avg_logprob": -0.534511,
+      "compression_ratio": 0.911765,
+      "end": 170.6,
       "no_speech_prob": 0.0,
-      "start": 169.0,
+      "start": 169.6,
       "text": "傻子不复了"
     },
     {
-      "avg_logprob": -0.263499,
-      "compression_ratio": 0.992126,
-      "end": 172.0,
+      "avg_logprob": -0.534511,
+      "compression_ratio": 0.911765,
+      "end": 175.6,
       "no_speech_prob": 0.0,
-      "start": 170.0,
-      "text": "啊"
+      "start": 173.2,
+      "text": "现在准备临这个后天的春节联会呢"
     },
     {
-      "avg_logprob": -0.263499,
-      "compression_ratio": 0.992126,
-      "end": 173.0,
+      "avg_logprob": -0.534511,
+      "compression_ratio": 0.911765,
+      "end": 179.2,
       "no_speech_prob": 0.0,
-      "start": 172.0,
-      "text": "现在准备"
-    },
-    {
-      "avg_logprob": -0.263499,
-      "compression_ratio": 0.992126,
-      "end": 175.0,
-      "no_speech_prob": 0.0,
-      "start": 173.0,
-      "text": "这个后天的春节来晚会呢"
-    },
-    {
-      "avg_logprob": -0.263499,
-      "compression_ratio": 0.992126,
-      "end": 177.0,
-      "no_speech_prob": 0.0,
-      "start": 175.0,
-      "text": "啊"
-    },
-    {
-      "avg_logprob": -0.263499,
-      "compression_ratio": 0.992126,
-      "end": 179.0,
-      "no_speech_prob": 0.0,
-      "start": 177.0,
+      "start": 177.8,
       "text": "我有时间跟大家再聊聊"
     },
     {
-      "avg_logprob": -0.677232,
+      "avg_logprob": -0.876107,
       "compression_ratio": 0.727273,
       "end": 181.0,
       "no_speech_prob": 0.0,
-      "start": 179.0,
-      "text": "我干啥了"
+      "start": 180.0,
+      "text": "不干啥了"
     },
     {
-      "avg_logprob": -0.677232,
+      "avg_logprob": -0.876107,
       "compression_ratio": 0.727273,
-      "end": 183.0,
+      "end": 183.6,
       "no_speech_prob": 0.0,
-      "start": 181.0,
+      "start": 182.0,
       "text": "我笑死了"
     },
     {
-      "avg_logprob": -0.428309,
-      "compression_ratio": 5.602941,
-      "end": 184.0,
+      "avg_logprob": -2.677545,
+      "compression_ratio": 2.716049,
+      "end": 184.4,
       "no_speech_prob": 0.0,
-      "start": 183.0,
-      "text": "他说我笑死了"
+      "start": 183.6,
+      "text": "哈哈"
     },
     {
-      "avg_logprob": -0.428309,
-      "compression_ratio": 5.602941,
-      "end": 185.0,
+      "avg_logprob": -2.677545,
+      "compression_ratio": 2.716049,
+      "end": 188.2,
       "no_speech_prob": 0.0,
-      "start": 184.0,
-      "text": "这太么人要咬"
+      "start": 185.3,
+      "text": "还没 Ark"
     },
     {
-      "avg_logprob": -0.428309,
-      "compression_ratio": 5.602941,
-      "end": 186.0,
+      "avg_logprob": -2.677545,
+      "compression_ratio": 2.716049,
+      "end": 190.68,
       "no_speech_prob": 0.0,
-      "start": 185.0,
-      "text": "他说你温柔"
+      "start": 188.8,
+      "text": "她说得心"
     },
     {
-      "avg_logprob": -0.428309,
-      "compression_ratio": 5.602941,
-      "end": 187.0,
+      "avg_logprob": -2.677545,
+      "compression_ratio": 2.716049,
+      "end": 192.28,
       "no_speech_prob": 0.0,
-      "start": 186.0,
-      "text": "他说你温柔"
+      "start": 191.28,
+      "text": "后 Carol"
     },
     {
-      "avg_logprob": -0.428309,
-      "compression_ratio": 5.602941,
-      "end": 188.0,
+      "avg_logprob": -2.677545,
+      "compression_ratio": 2.716049,
+      "end": 193.6,
       "no_speech_prob": 0.0,
-      "start": 187.0,
-      "text": "他说你温柔"
+      "start": 192.68,
+      "text": "我们走时"
     },
     {
-      "avg_logprob": -0.428309,
-      "compression_ratio": 5.602941,
-      "end": 189.0,
-      "no_speech_prob": 0.0,
-      "start": 188.0,
-      "text": "他说你温柔"
-    },
-    {
-      "avg_logprob": -0.428309,
-      "compression_ratio": 5.602941,
-      "end": 190.0,
-      "no_speech_prob": 0.0,
-      "start": 189.0,
-      "text": "他说你温柔"
-    },
-    {
-      "avg_logprob": -0.428309,
-      "compression_ratio": 5.602941,
-      "end": 191.0,
-      "no_speech_prob": 0.0,
-      "start": 190.0,
-      "text": "他说你温柔"
-    },
-    {
-      "avg_logprob": -0.428309,
-      "compression_ratio": 5.602941,
-      "end": 192.0,
-      "no_speech_prob": 0.0,
-      "start": 191.0,
-      "text": "他说你温柔"
-    },
-    {
-      "avg_logprob": -0.428309,
-      "compression_ratio": 5.602941,
-      "end": 193.0,
-      "no_speech_prob": 0.0,
-      "start": 192.0,
-      "text": "他说你温柔"
-    },
-    {
-      "avg_logprob": -0.428309,
-      "compression_ratio": 5.602941,
-      "end": 194.0,
-      "no_speech_prob": 0.0,
-      "start": 193.0,
-      "text": "他说你温柔"
-    },
-    {
-      "avg_logprob": -0.428309,
-      "compression_ratio": 5.602941,
+      "avg_logprob": -2.677545,
+      "compression_ratio": 2.716049,
       "end": 195.0,
       "no_speech_prob": 0.0,
       "start": 194.0,
-      "text": "他说你温柔"
+      "text": "只能放点"
     },
     {
-      "avg_logprob": -0.428309,
-      "compression_ratio": 5.602941,
-      "end": 196.0,
+      "avg_logprob": -2.677545,
+      "compression_ratio": 2.716049,
+      "end": 196.28,
       "no_speech_prob": 0.0,
-      "start": 195.0,
-      "text": "他说你温柔"
+      "start": 195.2,
+      "text": "我们走时"
     },
     {
-      "avg_logprob": -0.428309,
-      "compression_ratio": 5.602941,
-      "end": 197.0,
+      "avg_logprob": -2.677545,
+      "compression_ratio": 2.716049,
+      "end": 197.4,
       "no_speech_prob": 0.0,
-      "start": 196.0,
-      "text": "他说你温柔"
+      "start": 196.4,
+      "text": "我们走时"
     },
     {
-      "avg_logprob": -0.428309,
-      "compression_ratio": 5.602941,
-      "end": 198.0,
+      "avg_logprob": -2.677545,
+      "compression_ratio": 2.716049,
+      "end": 198.32,
       "no_speech_prob": 0.0,
-      "start": 197.0,
-      "text": "他说你温柔"
+      "start": 197.4,
+      "text": "我们走时"
     },
     {
-      "avg_logprob": -0.428309,
-      "compression_ratio": 5.602941,
-      "end": 199.0,
+      "avg_logprob": -2.677545,
+      "compression_ratio": 2.716049,
+      "end": 199.48,
       "no_speech_prob": 0.0,
-      "start": 198.0,
-      "text": "他说你温柔"
+      "start": 198.52,
+      "text": "我们走时"
     },
     {
-      "avg_logprob": -0.428309,
-      "compression_ratio": 5.602941,
-      "end": 200.0,
+      "avg_logprob": -2.677545,
+      "compression_ratio": 2.716049,
+      "end": 200.8,
       "no_speech_prob": 0.0,
-      "start": 199.0,
-      "text": "他说你温柔"
+      "start": 199.72,
+      "text": "我们走时"
     },
     {
-      "avg_logprob": -0.428309,
-      "compression_ratio": 5.602941,
-      "end": 201.0,
-      "no_speech_prob": 0.0,
-      "start": 200.0,
-      "text": "他说你温柔"
-    },
-    {
-      "avg_logprob": -0.428309,
-      "compression_ratio": 5.602941,
-      "end": 202.0,
+      "avg_logprob": -2.677545,
+      "compression_ratio": 2.716049,
+      "end": 201.84,
       "no_speech_prob": 0.0,
       "start": 201.0,
-      "text": "他说你温柔"
+      "text": "我们走时"
     },
     {
-      "avg_logprob": -0.428309,
-      "compression_ratio": 5.602941,
-      "end": 203.0,
+      "avg_logprob": -2.677545,
+      "compression_ratio": 2.716049,
+      "end": 202.78,
       "no_speech_prob": 0.0,
-      "start": 202.0,
-      "text": "他说你温柔"
+      "start": 202.08,
+      "text": "我们走时"
     },
     {
-      "avg_logprob": -0.428309,
-      "compression_ratio": 5.602941,
+      "avg_logprob": -2.677545,
+      "compression_ratio": 2.716049,
       "end": 204.0,
       "no_speech_prob": 0.0,
       "start": 203.0,
-      "text": "他说你温柔"
+      "text": "我们走时"
     },
     {
-      "avg_logprob": -0.428309,
-      "compression_ratio": 5.602941,
-      "end": 205.0,
+      "avg_logprob": -2.677545,
+      "compression_ratio": 2.716049,
+      "end": 205.1,
       "no_speech_prob": 0.0,
-      "start": 204.0,
-      "text": "他说你温柔"
+      "start": 204.2,
+      "text": "我们走时"
     },
     {
-      "avg_logprob": -0.428309,
-      "compression_ratio": 5.602941,
-      "end": 206.0,
+      "avg_logprob": -2.677545,
+      "compression_ratio": 2.716049,
+      "end": 206.28,
       "no_speech_prob": 0.0,
-      "start": 205.0,
-      "text": "他说你温柔"
+      "start": 205.3,
+      "text": "我们走时"
     },
     {
-      "avg_logprob": -0.428309,
-      "compression_ratio": 5.602941,
-      "end": 207.0,
+      "avg_logprob": -2.677545,
+      "compression_ratio": 2.716049,
+      "end": 207.28,
       "no_speech_prob": 0.0,
-      "start": 206.0,
-      "text": "他说你温柔"
+      "start": 206.44,
+      "text": "我们走时"
+    },
+    {
+      "avg_logprob": -2.677545,
+      "compression_ratio": 2.716049,
+      "end": 208.64,
+      "no_speech_prob": 0.0,
+      "start": 207.56,
+      "text": "我们走时"
+    },
+    {
+      "avg_logprob": -2.677545,
+      "compression_ratio": 2.716049,
+      "end": 210.12,
+      "no_speech_prob": 0.0,
+      "start": 208.96,
+      "text": "我们走时"
+    },
+    {
+      "avg_logprob": -2.677545,
+      "compression_ratio": 2.716049,
+      "end": 211.16,
+      "no_speech_prob": 0.0,
+      "start": 210.36,
+      "text": "水"
     }
   ],
-  "text": "我这都是我这都是我这都是我这都是我这都是我这都是我这都是我这都是我这都是我这都是我这都是哎呀哎呀还如雨的这个男人就怎么证明他是他就是啊我就这样哎你跳会儿我都哎我这就是你我这就是对吧这个是秩序他得到我ulated努力对but他得到我再也得到我不是他得到我嗨嗨嗨嗨嗨嗨嗨嗨嗨嗨嗨嗨嗨嗨嗨嗨嗨嗨嗨东哥哎呀我的东西一百七颗榜啊很孝子啊哈哈哈哈哎呀哈哈我说东西一位把我笑封了大卫和草莫兄弟啊这影妹被咋过呀这每天会得笑死啊真开心啊这共产党从昨天到今天无数的骚扰美国呀哎求求了啊什么都好谈我们要共同面对世界问题两国领导人恢复两国领导人的所谓的这个最最重要的个人关系为世界负责啊若是拜登总统和习主席的电话视频所决定哎呀用美国人话说这这共产党就是一流氓啊仰起头就骂你啊低下头又下跪啊就这帮东西东西说的太尊敬了四位环机站他说的百分之百真实哎傻子不复了啊现在准备这个后天的春节来晚会呢啊我有时间跟大家再聊聊我干啥了我笑死了他说我笑死了这太么人要咬他说你温柔他说你温柔他说你温柔他说你温柔他说你温柔他说你温柔他说你温柔他说你温柔他说你温柔他说你温柔他说你温柔他说你温柔他说你温柔他说你温柔他说你温柔他说你温柔他说你温柔他说你温柔他说你温柔他说你温柔他说你温柔他说你温柔"
+  "text": "我就是当时他跟我讲我那个我简直是我这个他共产党的这个他我都没有出口我都没有出口他都能骗你你带我去你想想哎呀 还有勇的这个男人就怎么证明他是我就是这样哎 你跳会儿我都我都我都我都在女人一直跟着对吧真的是的他就抱着我说iste这位她都会 seine笑笑笑笑笑笑笑笑笑笑笑笑笑笑笑笑笑笑笑笑笑笑笑笑哎呀我的东西一百七颗房啊会笑死吧我让东西一位把我笑封了大卫和草原兄弟这影妹妹咋过去这每天我得笑死真开心这共产党从昨天到今天无数的骚扰美国呀哎求求了什么都好谈我们要共同面对世界问题两国领导人恢复两国领导人的所谓的这个最最重要的个人关系为世界负责落实拜登总统和习主席的电话视频所决定哎呀用美国人话说共产党就是一流氓啊洋起头就骂娘低下头又下跪啊就这帮东西东地说的太尊敬了四位环机站他说的百分之百尊敬哎傻子不复了现在准备临这个后天的春节联会呢我有时间跟大家再聊聊不干啥了我笑死了哈哈还没 Ark她说得心后 Carol我们走时只能放点我们走时我们走时我们走时我们走时我们走时我们走时我们走时我们走时我们走时我们走时我们走时我们走时我们走时水"
 }
