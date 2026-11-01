@@ -62,7 +62,7 @@
     "LIVE_20221005_001",
     "LIVE_20221113_001"
   ],
-  "next_live_id": "LIVE_20221019_001",
+  "next_live_id": "LIVE_20220805_001",
   "completed_live_ids": [
     "LIVE_20220915_002",
     "LIVE_20220809_001",
@@ -96,7 +96,8 @@
     "LIVE_20220720_001",
     "LIVE_20220831_001",
     "LIVE_20220724_001",
-    "LIVE_20220615_001"
+    "LIVE_20220615_001",
+    "LIVE_20221019_001"
   ],
   "failed_or_deferred_live_ids": [
     "LIVE_20220901_001"
@@ -105,8 +106,8 @@
     "LIVE_20220901_001"
   ],
   "last_window": {
-    "started_at": "2026-11-01T00:26:18Z",
-    "ended_at": "2026-11-01T00:47:30Z",
+    "started_at": "2026-11-01T01:26:18Z",
+    "ended_at": "2026-11-01T01:51:00Z",
     "attempted_unique_videos": 1,
     "transcript_cue_segment_completed": 0,
     "four_stage_completed": 1,
@@ -120,25 +121,25 @@
     "pure_asr_inference_sec_known": 0.0,
     "structured_pipeline_elapsed_sec_known": 0.0,
     "asr_job_wall_elapsed_sec": 0.0,
-    "key_points_attempt_wall_elapsed_sec": 1209.0,
-    "window_elapsed_sec": 1272.0,
+    "key_points_attempt_wall_elapsed_sec": 1450.0,
+    "window_elapsed_sec": 1482.0,
     "known_inference_rtf": null,
     "known_inference_realtime_multiple": null,
     "published_commits": 2,
     "quality_failures": {},
     "completed_three_stage_live_ids": [],
     "completed_four_stage_live_ids": [
-      "LIVE_20220615_001"
+      "LIVE_20221019_001"
     ],
     "released_key_points_live_ids": [],
     "source_temporarily_unavailable_live_ids": [],
-    "next_live_id": "LIVE_20221019_001",
+    "next_live_id": "LIVE_20220805_001",
     "key_point_stats": {
-      "natural_segments": 100,
-      "key_points": 407,
-      "topic_links": 129,
+      "natural_segments": 116,
+      "key_points": 424,
+      "topic_links": 139,
       "outcome": "1 enriched"
     }
   },
-  "notes": "Fixed logical batch; never expand this list. All 50 items already have quality-gated transcript, cue, and natural-segment dependencies, so this batch begins at key_points_topics. Claims are revalidated, created, and pushed one item at a time immediately before local inference. Eleven windows completed 33 items. LIVE_20220901_001 remains in retry cooldown after the default system Python lacked mlx_lm; local inference continues with the existing Python 3.12 MLX environment. LIVE_20220717_001 and LIVE_20220617_001 are skipped while they remain in the explicit active cloud key-point batch. Resume at LIVE_20221019_001."
+  "notes": "Fixed logical batch; never expand this list. All 50 items already have quality-gated transcript, cue, and natural-segment dependencies, so this batch begins at key_points_topics. Claims are revalidated, created, and pushed one item at a time immediately before local inference. Twelve windows completed 34 items. LIVE_20220901_001 remains in retry cooldown after the default system Python lacked mlx_lm; local inference continues with the existing Python 3.12 MLX environment. LIVE_20220717_001 and LIVE_20220617_001 are skipped while they remain in the explicit active cloud key-point batch. Resume at LIVE_20220805_001."
 }
