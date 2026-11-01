@@ -3,7 +3,7 @@
   "agent_id": "codex-local-asr-agent50-20261031",
   "claimed_at": "2026-11-01T10:43:15.335755+00:00",
   "base_commit": "eab3e9f0778f7478763158f1ecfb705e5e5f6c7b",
-  "status": "in_progress",
+  "status": "released",
   "workflow_mode": "continuous-worker-v2",
   "claim_protocol": "claim-protocol-v2",
   "entry_mode": "work",
@@ -22,5 +22,7 @@
   ],
   "scope": "Create evidence-grounded neutral key points and controlled topic assignments.",
   "reclaimed_expired_claim": false,
-  "static_claim_lease_hours": 24
+  "static_claim_lease_hours": 24,
+  "released_at": "2026-11-01T14:54:06.822296+00:00",
+  "release_reason": "Local MLX key-point extraction exceeded the 7200-second item limit and remained blocked in the isolated worker; interrupted after 3h39m, retained for retry"
 }
