@@ -1,64 +1,200 @@
 {
-  "chunk_audio_sha256": "74b630b4f27638bfc01505c5773c24e1e9902fd305db541051c21f8ec0d7ce63",
+  "chunk_audio_sha256": "f12e7fe3fe1df55e606871b7faccf755b5103b0edf00310e51b89e460b8790f9",
   "chunk_index": 0,
-  "completed_at": "2026-10-23T20:04:30Z",
+  "completed_at": "2026-11-01T18:32:10Z",
   "language": "zh",
   "live_id": "LIVE_20221007_003",
   "media_committed_to_git": false,
   "model": "mlx-community/whisper-large-v3-turbo",
   "offset_sec": 0,
   "paid_api_used": false,
-  "processing_location": "codex-local-apple-silicon-agent50",
+  "processing_location": "github-hosted-macos-arm64",
   "schema_version": "cloud-asr-chunk-v1",
   "segments": [
     {
-      "avg_logprob": -6.290503,
-      "compression_ratio": 0.466667,
-      "end": 8.76,
+      "avg_logprob": NaN,
+      "compression_ratio": 0.111111,
+      "end": 2.0,
       "no_speech_prob": 0.0,
-      "start": 0.64,
-      "text": "Grey"
+      "start": 0.0,
+      "text": "!"
     },
     {
-      "avg_logprob": -6.290503,
-      "compression_ratio": 0.466667,
-      "end": 14.48,
+      "avg_logprob": -3.084108,
+      "compression_ratio": 0.833333,
+      "end": 33.14,
       "no_speech_prob": 0.0,
-      "start": 10.24,
-      "text": "歌"
+      "start": 30.0,
+      "text": "Am I going to show you the best with it?"
     },
     {
-      "avg_logprob": -5.936248,
-      "compression_ratio": 0.590909,
-      "end": 24.8,
+      "avg_logprob": -0.654856,
+      "compression_ratio": 2.094828,
+      "end": 61.0,
       "no_speech_prob": 0.0,
-      "start": 14.48,
-      "text": "性格良ії"
+      "start": 60.0,
+      "text": "我能在家裡"
     },
     {
-      "avg_logprob": -0.653651,
-      "compression_ratio": 0.738095,
-      "end": 54.78,
+      "avg_logprob": -0.654856,
+      "compression_ratio": 2.094828,
+      "end": 63.0,
       "no_speech_prob": 0.0,
-      "start": 24.8,
-      "text": "中文字幕志愿者 李宗盛"
+      "start": 61.0,
+      "text": "全部都已經在心裡"
     },
     {
-      "avg_logprob": -0.06078,
-      "compression_ratio": 0.738095,
-      "end": 84.78,
+      "avg_logprob": -0.654856,
+      "compression_ratio": 2.094828,
+      "end": 64.0,
       "no_speech_prob": 0.0,
-      "start": 54.8,
-      "text": "中文字幕志愿者 李宗盛"
+      "start": 63.0,
+      "text": "今晚會"
     },
     {
-      "avg_logprob": -0.179271,
-      "compression_ratio": 0.738095,
-      "end": 114.78,
+      "avg_logprob": -0.654856,
+      "compression_ratio": 2.094828,
+      "end": 66.0,
       "no_speech_prob": 0.0,
-      "start": 84.8,
-      "text": "中文字幕志愿者 李宗盛"
+      "start": 64.0,
+      "text": "Welcome to the world"
+    },
+    {
+      "avg_logprob": -0.654856,
+      "compression_ratio": 2.094828,
+      "end": 68.0,
+      "no_speech_prob": 0.0,
+      "start": 66.0,
+      "text": "To the new world"
+    },
+    {
+      "avg_logprob": -0.654856,
+      "compression_ratio": 2.094828,
+      "end": 70.0,
+      "no_speech_prob": 0.0,
+      "start": 68.0,
+      "text": "Welcome to the world"
+    },
+    {
+      "avg_logprob": -0.654856,
+      "compression_ratio": 2.094828,
+      "end": 73.0,
+      "no_speech_prob": 0.0,
+      "start": 70.0,
+      "text": "Let's go into the moon"
+    },
+    {
+      "avg_logprob": -0.654856,
+      "compression_ratio": 2.094828,
+      "end": 76.0,
+      "no_speech_prob": 0.0,
+      "start": 73.0,
+      "text": "Welcome to the world"
+    },
+    {
+      "avg_logprob": -0.654856,
+      "compression_ratio": 2.094828,
+      "end": 78.0,
+      "no_speech_prob": 0.0,
+      "start": 76.0,
+      "text": "Welcome to the new world"
+    },
+    {
+      "avg_logprob": -0.654856,
+      "compression_ratio": 2.094828,
+      "end": 80.0,
+      "no_speech_prob": 0.0,
+      "start": 78.0,
+      "text": "Welcome to the world"
+    },
+    {
+      "avg_logprob": -0.654856,
+      "compression_ratio": 2.094828,
+      "end": 83.0,
+      "no_speech_prob": 0.0,
+      "start": 80.0,
+      "text": "Let's go into the moon"
+    },
+    {
+      "avg_logprob": -0.654856,
+      "compression_ratio": 2.094828,
+      "end": 85.0,
+      "no_speech_prob": 0.0,
+      "start": 83.0,
+      "text": "Welcome to the moon"
+    },
+    {
+      "avg_logprob": -0.654856,
+      "compression_ratio": 2.094828,
+      "end": 86.0,
+      "no_speech_prob": 0.0,
+      "start": 85.0,
+      "text": "Yeah"
+    },
+    {
+      "avg_logprob": -0.654856,
+      "compression_ratio": 2.094828,
+      "end": 87.0,
+      "no_speech_prob": 0.0,
+      "start": 86.0,
+      "text": "Yeah"
+    },
+    {
+      "avg_logprob": -0.654856,
+      "compression_ratio": 2.094828,
+      "end": 88.0,
+      "no_speech_prob": 0.0,
+      "start": 87.0,
+      "text": "Yeah"
+    },
+    {
+      "avg_logprob": -0.466324,
+      "compression_ratio": 0.853333,
+      "end": 92.0,
+      "no_speech_prob": 0.0,
+      "start": 88.0,
+      "text": "210個你能夠了吧"
+    },
+    {
+      "avg_logprob": -0.466324,
+      "compression_ratio": 0.853333,
+      "end": 93.0,
+      "no_speech_prob": 0.0,
+      "start": 92.0,
+      "text": "那三毛"
+    },
+    {
+      "avg_logprob": -0.466324,
+      "compression_ratio": 0.853333,
+      "end": 96.0,
+      "no_speech_prob": 0.0,
+      "start": 93.0,
+      "text": "Yeah"
+    },
+    {
+      "avg_logprob": -0.466324,
+      "compression_ratio": 0.853333,
+      "end": 101.0,
+      "no_speech_prob": 0.0,
+      "start": 96.0,
+      "text": "共產黨"
+    },
+    {
+      "avg_logprob": -0.466324,
+      "compression_ratio": 0.853333,
+      "end": 103.0,
+      "no_speech_prob": 0.0,
+      "start": 101.0,
+      "text": "你完蛋了"
+    },
+    {
+      "avg_logprob": -0.466324,
+      "compression_ratio": 0.853333,
+      "end": 105.0,
+      "no_speech_prob": 0.0,
+      "start": 103.0,
+      "text": "不幹啥"
     }
   ],
-  "text": "Grey歌性格良ії中文字幕志愿者 李宗盛中文字幕志愿者 李宗盛中文字幕志愿者 李宗盛"
+  "text": "! Am I going to show you the best with it?我能在家裡全部都已經在心裡今晚會Welcome to the worldTo the new worldWelcome to the worldLet's go into the moonWelcome to the worldWelcome to the new worldWelcome to the worldLet's go into the moonWelcome to the moonYeahYeahYeah210個你能夠了吧那三毛Yeah共產黨你完蛋了不幹啥"
 }
