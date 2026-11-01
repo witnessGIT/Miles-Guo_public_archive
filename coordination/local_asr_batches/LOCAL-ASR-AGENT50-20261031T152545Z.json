@@ -62,7 +62,7 @@
     "LIVE_20221005_001",
     "LIVE_20221113_001"
   ],
-  "next_live_id": "LIVE_20221204_001",
+  "next_live_id": "LIVE_20221005_001",
   "completed_live_ids": [
     "LIVE_20220915_002",
     "LIVE_20220809_001",
@@ -108,15 +108,17 @@
   ],
   "failed_or_deferred_live_ids": [
     "LIVE_20220901_001",
-    "LIVE_20221002_001"
+    "LIVE_20221002_001",
+    "LIVE_20221204_001"
   ],
   "retry_pending_live_ids": [
     "LIVE_20220901_001",
-    "LIVE_20221002_001"
+    "LIVE_20221002_001",
+    "LIVE_20221204_001"
   ],
   "last_window": {
-    "started_at": "2026-11-01T10:41:42Z",
-    "ended_at": "2026-11-01T14:22:07Z",
+    "started_at": "2026-11-01T15:22:07Z",
+    "ended_at": "2026-11-01T17:41:05Z",
     "attempted_unique_videos": 1,
     "transcript_cue_segment_completed": 0,
     "four_stage_completed": 0,
@@ -130,27 +132,27 @@
     "pure_asr_inference_sec_known": 0.0,
     "structured_pipeline_elapsed_sec_known": 0.0,
     "asr_job_wall_elapsed_sec": 0.0,
-    "key_points_attempt_wall_elapsed_sec": 13143.0,
-    "window_elapsed_sec": 13225.0,
+    "key_points_attempt_wall_elapsed_sec": 7200.0,
+    "window_elapsed_sec": 8338.0,
     "known_inference_rtf": null,
     "known_inference_realtime_multiple": null,
     "published_commits": 1,
     "quality_failures": {
-      "key_points_worker_exceeded_timeout_and_blocked": 1
+      "key_points_item_timeout": 1
     },
     "completed_three_stage_live_ids": [],
     "completed_four_stage_live_ids": [],
     "released_key_points_live_ids": [
-      "LIVE_20221002_001"
+      "LIVE_20221204_001"
     ],
     "source_temporarily_unavailable_live_ids": [],
-    "next_live_id": "LIVE_20221204_001",
+    "next_live_id": "LIVE_20221005_001",
     "key_point_stats": {
-      "natural_segments": 113,
+      "natural_segments": 133,
       "key_points": 0,
       "topic_links": 0,
-      "outcome": "1 released for retry after blocked timeout"
+      "outcome": "1 released for retry at item timeout"
     }
   },
-  "notes": "Fixed logical batch; never expand this list. All 50 items already have quality-gated transcript, cue, and natural-segment dependencies, so this batch begins at key_points_topics. Claims are revalidated, created, and pushed one item at a time immediately before local inference. Nineteen windows completed 41 items. LIVE_20220901_001 remains retry pending after the default system Python lacked mlx_lm. LIVE_20221002_001 exceeded its 7200-second item limit and remained blocked in the isolated MLX worker; it was interrupted after 3h39m, released, and retained for retry. LIVE_20220717_001 and LIVE_20220617_001 are skipped while they remain in the explicit active cloud key-point batch. Resume at LIVE_20221204_001."
+  "notes": "Fixed logical batch; never expand this list. All 50 items already have quality-gated transcript, cue, and natural-segment dependencies, so this batch begins at key_points_topics. Claims are revalidated, created, and pushed one item at a time immediately before local inference. Nineteen windows completed 41 items. LIVE_20220901_001 remains retry pending after the default system Python lacked mlx_lm. LIVE_20221002_001 exceeded its item limit and remained blocked; LIVE_20221204_001 reached the 7200-second item limit without a complete result. Both were interrupted, released, and retained for retry. LIVE_20220717_001 and LIVE_20220617_001 are skipped while they remain in the explicit active cloud key-point batch. Resume at LIVE_20221005_001."
 }
