@@ -1,9 +1,9 @@
 {
   "task_id": "WI_LIVE_20210812_002_transcript_import",
-  "agent_id": "github-actions-cloud-asr-41280146187",
-  "claimed_at": "2026-11-01T06:18:34.226628+00:00",
-  "base_commit": "e14c04d303883003225c67e70581e6e5fe062ca0",
-  "status": "released",
+  "agent_id": "github-actions-cloud-asr-41405123430",
+  "claimed_at": "2026-11-02T07:17:49.289215+00:00",
+  "base_commit": "07d46ed5039a18f1d29ae70157114880d0d8c7d3",
+  "status": "in_progress",
   "workflow_mode": "continuous-worker-v2",
   "claim_protocol": "claim-protocol-v2",
   "entry_mode": "work",
@@ -22,7 +22,5 @@
   ],
   "scope": "Import source transcript or ASR text without overwriting original text.",
   "reclaimed_expired_claim": true,
-  "static_claim_lease_hours": 24,
-  "released_at": "2026-11-01T06:22:00.424791+00:00",
-  "release_reason": "GitHub-hosted runner could not complete media access or ASR; retained for retry"
+  "static_claim_lease_hours": 24
 }
