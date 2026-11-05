@@ -1,0 +1,20 @@
+{
+  "schema_version": "source-transcript-import-v1",
+  "status": "imported_source_original",
+  "live_id": "LIVE_20191026_001",
+  "transcript_version_id": "TV_LIVE_20191026_001_51HAOYOU_SOURCE_ORIGINAL_ZH",
+  "source_id": "SRC_51HAOYOU_20191026",
+  "source_url": "https://www.51haoyou.com/discuz/thread-5760.html",
+  "source_title": "文字版：2019年10月26日文贵和战友谈北京局势和四中全会",
+  "source_credit": "战友之声听写组",
+  "retrieved_at": "2026-11-05T04:08:08Z",
+  "text_sha256": "99072b25df044493da9f54973f55213e945bbf99ce8813345688931754b61465",
+  "text_character_count": 4076,
+  "line_count": 30,
+  "processing_method": "verified_source_original_import_no_asr",
+  "processing_path": "public HTML post body id=postmessage_84408 -> line-preserving HTML text extraction -> header removal through publication date",
+  "paid_api_used": false,
+  "asr_used": false,
+  "media_committed_to_git": false,
+  "verification_level": "source_attributed_not_playback_verified"
+}
