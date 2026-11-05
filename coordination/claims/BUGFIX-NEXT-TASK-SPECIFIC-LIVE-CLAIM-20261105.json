@@ -1,0 +1,15 @@
+{
+  "task_id": "BUGFIX-NEXT-TASK-SPECIFIC-LIVE-CLAIM-20261105",
+  "agent_id": "codex-video-enrichment-repair-20261105",
+  "claimed_at": "2026-11-05T11:43:56Z",
+  "base_commit": "49d203c9c50f4669c99b74713489eda476c71240",
+  "status": "in_progress",
+  "entry_mode": "ordinary_chat",
+  "continue_after_finish": true,
+  "kind": "workflow_bugfix",
+  "scope": "Allow a specifically requested eligible non-candidate task to be claimed even when unrelated candidate-promotion reviews are also eligible; preserve fixed-batch enforcement when the requested task itself is a candidate review.",
+  "natural_boundary": "scripts/next_task.py candidate review dispatch",
+  "workflow_mode": "continuous-worker-v2",
+  "claim_protocol": "claim-protocol-v2",
+  "reclaimed_expired_claim": false
+}
