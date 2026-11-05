@@ -1724,12 +1724,20 @@ def main() -> None:
     candidate_work = [
         task for task in eligible if task.get("kind") == "candidate_promotion_review"
     ]
-    if candidate_work:
-        if args.task:
-            raise SystemExit(
-                "Candidate reviews must be claimed as one fixed Work-mode batch; "
-                "do not use --task for a single candidate."
-            )
+    requested_candidate_review = bool(
+        args.task
+        and any(
+            task.get("id") == args.task
+            and task.get("kind") == "candidate_promotion_review"
+            for task in eligible
+        )
+    )
+    if requested_candidate_review:
+        raise SystemExit(
+            "Candidate reviews must be claimed as one fixed Work-mode batch; "
+            "do not use --task for a single candidate."
+        )
+    if candidate_work and not args.task:
         batch = claim_candidate_review_batch(eligible, args.agent_id)
         if not batch.get("batch_id"):
             raise SystemExit("No candidate review batch could be claimed.")

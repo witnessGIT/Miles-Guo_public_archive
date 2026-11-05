@@ -1,0 +1,22 @@
+{
+  "task_id": "BUGFIX-NEXT-TASK-SPECIFIC-LIVE-CLAIM-20261105",
+  "agent_id": "codex-video-enrichment-repair-20261105",
+  "status": "completed",
+  "completed_at": "2026-11-05T12:10:31Z",
+  "workflow_mode": "continuous-worker-v2",
+  "claim_protocol": "claim-protocol-v2",
+  "kind": "workflow_bugfix",
+  "natural_boundary": "scripts/next_task.py candidate review dispatch",
+  "outputs": [
+    "scripts/next_task.py"
+  ],
+  "validation": {
+    "failure_run": 42010051501,
+    "root_cause": "Any eligible candidate review incorrectly blocked --task claims for unrelated eligible live work items.",
+    "fix": "Fixed-batch enforcement now applies only when the requested task itself is a candidate review, or when no specific task is requested.",
+    "next_task_tests": "29 passed",
+    "database_validation": "OK with 31 existing warnings",
+    "full_tests": "148 passed"
+  },
+  "continue_after_finish": true
+}
