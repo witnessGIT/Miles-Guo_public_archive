@@ -1,9 +1,9 @@
 {
   "task_id": "WI_LIVE_20211120_001_transcript_import",
-  "agent_id": "github-actions-cloud-asr-41766522028",
-  "claimed_at": "2026-11-04T03:23:16.123538+00:00",
-  "base_commit": "77967f27d65c15440d9bb9253e4a66d518dc01b2",
-  "status": "released",
+  "agent_id": "codex-discord-human-transcripts-20261105",
+  "claimed_at": "2026-11-05T05:38:21.954953+00:00",
+  "base_commit": "40a7537c97962a3136006d6d5f2c49da2072810c",
+  "status": "in_progress",
   "workflow_mode": "continuous-worker-v2",
   "claim_protocol": "claim-protocol-v2",
   "entry_mode": "work",
@@ -22,7 +22,5 @@
   ],
   "scope": "Import source transcript or ASR text without overwriting original text.",
   "reclaimed_expired_claim": true,
-  "static_claim_lease_hours": 24,
-  "released_at": "2026-11-04T04:17:37.589462+00:00",
-  "release_reason": "GitHub-hosted runner could not complete media access or ASR; retained for retry"
+  "static_claim_lease_hours": 24
 }
