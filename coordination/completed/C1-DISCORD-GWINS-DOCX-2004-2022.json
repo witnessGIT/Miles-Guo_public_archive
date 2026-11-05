@@ -1,0 +1,35 @@
+{
+  "task_id": "C1-DISCORD-GWINS-DOCX-2004-2022",
+  "agent_id": "codex-discord-live-index-20261105",
+  "status": "completed",
+  "completed_at": "2026-11-05T08:04:20Z",
+  "workflow_mode": "continuous-worker-v2",
+  "claim_protocol": "claim-protocol-v2",
+  "natural_boundary": "User-provided 1.docx plus Discord server 821933739307040799 livestream-link rooms and attachments",
+  "outputs": [
+    "data/current/source_candidates/C1-DISCORD-GWINS-DOCX-2004-2022.jsonl",
+    "data/current/source_candidates/C1-DISCORD-SUPPLEMENTAL-LINKS-2017.jsonl",
+    "data/source_page_evidence/discord/discord_gwins_title_link_index_2004_2022.json",
+    "data/source_page_evidence/discord/discord_live_links_2017.json",
+    "data/source_page_evidence/discord/discord_project_live_master_by_date.jsonl",
+    "data/source_page_evidence/discord/discord_supplemental_links_by_date.json",
+    "docs/DISCORD_LIVE_LINK_AUDIT.md",
+    "docs/DISCORD_TRANSCRIPT_AUDIT.md"
+  ],
+  "candidate_count": 367,
+  "canonical_promotion_performed": false,
+  "validation": {
+    "master_records": 2785,
+    "canonical_live_records": 1750,
+    "source_candidate_records": 1035,
+    "exact_dates": 1668,
+    "user_docx_records_checked": 2476,
+    "user_docx_pages_reachable": 2476,
+    "supplemental_records_reconciled": 266,
+    "unresolved_ambiguous_records": 4,
+    "database_validation": "OK with existing review warnings",
+    "tests": "148 passed"
+  },
+  "notes": "Date-first source inventory completed. Four ambiguous Excel rows remain unresolved with no guessed link. Restricted links are preserved as evidence but are not treated as active or permanently dead.",
+  "continue_after_finish": true
+}

@@ -1,0 +1,2492 @@
+{
+  "schema_version": "discord-live-link-evidence-v2",
+  "audit_id": "DISCORD_LIVE_LINK_AUDIT_20261105",
+  "server_id": "821933739307040799",
+  "channel_id": "821933739307040801",
+  "channel_name": "直播链接补充",
+  "scope": "Ten attached monthly/supplemental TXT link lists. Binaries are not stored in Git. Adjacent repeated date lines are treated as titles or multipart markers rather than empty records. Records remain discovery evidence until identity review.",
+  "extracted_at": "2026-11-05T07:45:00Z",
+  "source_files": [
+    {
+      "filename": "2017.10.txt",
+      "sha256": "d004a09d46bfd7943cd902cd1d9c07004206f38dba681255639518ecb42100db",
+      "bytes": 2161,
+      "line_count": 57
+    },
+    {
+      "filename": "2017.11.txt",
+      "sha256": "a579232fc7c63878513047500b212a46be0daa71a4518d1ef78810f7d79038bd",
+      "bytes": 2850,
+      "line_count": 66
+    },
+    {
+      "filename": "2017.12.txt",
+      "sha256": "4dfc2ca4270c644a2db644d4a45e9dd68b5106c568d4584186e18aa26fa67617",
+      "bytes": 1411,
+      "line_count": 31
+    },
+    {
+      "filename": "2017.4.txt",
+      "sha256": "2a991d965d55f62f0a8ad73cff84f81dba3e6ffef2536052ebb894e87d5f8069",
+      "bytes": 1859,
+      "line_count": 51
+    },
+    {
+      "filename": "2017.5.txt",
+      "sha256": "2f450c69b5a419fe279787e877c27742a6705ad0912f1ffb6599695c79bdbecf",
+      "bytes": 5230,
+      "line_count": 115
+    },
+    {
+      "filename": "2017.6.txt",
+      "sha256": "fbe42299d4f92d732741c190eeaebf1c6959bb33241aa9e131bc5d71bd724e78",
+      "bytes": 2738,
+      "line_count": 59
+    },
+    {
+      "filename": "2017.7.txt",
+      "sha256": "d34a37d9c28f117825571374f39360a0dc94b60619ac7c44ff8329a1e4c19d16",
+      "bytes": 4237,
+      "line_count": 80
+    },
+    {
+      "filename": "2017.8.txt",
+      "sha256": "fa436b9115edde5078ff458491b1eedf23304e131cbe692cc9d99929ef7be323",
+      "bytes": 3074,
+      "line_count": 92
+    },
+    {
+      "filename": "2017.9.txt",
+      "sha256": "620acdef68edc4813c8f89438aecc16922ff316ee6ef87356581f6092dfce386",
+      "bytes": 2139,
+      "line_count": 51
+    },
+    {
+      "filename": "2017.txt",
+      "sha256": "cb4db566751f72706aad327399dddcf41389af749d3d6c7a8871819f0f5fa6cc",
+      "bytes": 403,
+      "line_count": 10
+    }
+  ],
+  "summary": {
+    "raw_date_blocks": 121,
+    "deduplicated_records": 120,
+    "records_with_video_urls": 120,
+    "records_without_video_urls": 0,
+    "distinct_dates": 111,
+    "distinct_video_keys": 121,
+    "distinct_text_keys": 119
+  },
+  "duplicates_removed": [
+    {
+      "duplicate_source_file": "2017.4.txt",
+      "date": "2017-04-26",
+      "title": "4.26文贵推友过十万感谢视频",
+      "duplicate_of_record_id": "DISCORD_LIVE_LINK_2017_030"
+    }
+  ],
+  "records": [
+    {
+      "source_file": "2017.10.txt",
+      "date": "2017-10-04",
+      "date_as_recorded": "2017-10-04",
+      "date_correction": null,
+      "video_urls": [
+        "https://www.youtube.com/watch?v=MBUlcVlJ5xk"
+      ],
+      "text_urls": [
+        "https://s.vog.media/Detail.htm?w=b1180703-4b90-49d7-b233-0e65bffd4591"
+      ],
+      "title": "郭文贵先生在哈德森演讲延期事件后直播",
+      "video_keys": [
+        "youtube:MBUlcVlJ5xk"
+      ],
+      "text_keys": [
+        "vog:b1180703-4b90-49d7-b233-0e65bffd4591"
+      ],
+      "record_id": "DISCORD_LIVE_LINK_2017_001"
+    },
+    {
+      "source_file": "2017.10.txt",
+      "date": "2017-10-08",
+      "date_as_recorded": "2017-10-08",
+      "date_correction": null,
+      "video_urls": [
+        "https://www.youtube.com/watch?v=CXmlv3-PVaY"
+      ],
+      "text_urls": [
+        "https://s.vog.media/Detail.htm?w=7d2e8ff4-fa7a-4e02-a220-e95a0d95f2b8"
+      ],
+      "title": "郭文贵先生10月8日报平安直播：因吴征杨澜即将爆发的中美巨大政治丑闻！",
+      "video_keys": [
+        "youtube:CXmlv3-PVaY"
+      ],
+      "text_keys": [
+        "vog:7d2e8ff4-fa7a-4e02-a220-e95a0d95f2b8"
+      ],
+      "record_id": "DISCORD_LIVE_LINK_2017_002"
+    },
+    {
+      "source_file": "2017.10.txt",
+      "date": "2017-10-12",
+      "date_as_recorded": "2017-10-12",
+      "date_correction": null,
+      "video_urls": [
+        "https://www.youtube.com/watch?v=y3r2IoGbSpo",
+        "https://www.youtube.com/watch?v=PBLfDu0wtUI"
+      ],
+      "text_urls": [
+        "https://s.vog.media/Detail.htm?w=1edc314c-92da-46d5-a814-59595b555d0c",
+        "https://gwins.org/cn/milesguo/699.html"
+      ],
+      "title": "郭文贵先生分享纽约城市天际线，想大家了没有爆料即兴直播 2017年郭文贵爆料盗国贼全球发“不”会第四集（完整）",
+      "video_keys": [
+        "youtube:y3r2IoGbSpo",
+        "youtube:PBLfDu0wtUI"
+      ],
+      "text_keys": [
+        "vog:1edc314c-92da-46d5-a814-59595b555d0c",
+        "gwins:699"
+      ],
+      "record_id": "DISCORD_LIVE_LINK_2017_003"
+    },
+    {
+      "source_file": "2017.10.txt",
+      "date": "2017-10-14",
+      "date_as_recorded": "2019-10-14",
+      "date_correction": "Corrected from 2019-10-14 because the record is inside 2017.10.txt and the matching Discord message explicitly says 2017-10-14.",
+      "video_urls": [
+        "https://www.youtube.com/watch?v=2q7wzCZ1_Oc"
+      ],
+      "text_urls": [
+        "https://s.vog.media/Detail.htm?w=9e30a982-b0ad-42a5-a23e-60a71b00ecb1"
+      ],
+      "title": "郭文贵先生在游艇机舱报平安直播45分钟版",
+      "video_keys": [
+        "youtube:2q7wzCZ1_Oc"
+      ],
+      "text_keys": [
+        "vog:9e30a982-b0ad-42a5-a23e-60a71b00ecb1"
+      ],
+      "record_id": "DISCORD_LIVE_LINK_2017_004"
+    },
+    {
+      "source_file": "2017.10.txt",
+      "date": "2017-10-26",
+      "date_as_recorded": "2017-10-26",
+      "date_correction": null,
+      "video_urls": [
+        "https://www.youtube.com/watch?v=uT-WsV7eThU"
+      ],
+      "text_urls": [
+        "https://s.vog.media/Detail.htm?w=1c49174a-3879-4184-a06d-d95516dec584"
+      ],
+      "title": "郭文贵先生直播十九大后爆料计划",
+      "video_keys": [
+        "youtube:uT-WsV7eThU"
+      ],
+      "text_keys": [
+        "vog:1c49174a-3879-4184-a06d-d95516dec584"
+      ],
+      "record_id": "DISCORD_LIVE_LINK_2017_005"
+    },
+    {
+      "source_file": "2017.10.txt",
+      "date": "2017-10-27",
+      "date_as_recorded": "2017-10-27",
+      "date_correction": null,
+      "video_urls": [
+        "https://www.youtube.com/watch?feature=youtu.be&v=ryBala76EzY&app=desktop"
+      ],
+      "text_urls": [
+        "https://s.vog.media/Detail.htm?w=fa58c6e8-5fd3-4121-9827-80398292e6fa"
+      ],
+      "title": "郭先生10月27报平安",
+      "video_keys": [
+        "youtube:ryBala76EzY"
+      ],
+      "text_keys": [
+        "vog:fa58c6e8-5fd3-4121-9827-80398292e6fa"
+      ],
+      "record_id": "DISCORD_LIVE_LINK_2017_006"
+    },
+    {
+      "source_file": "2017.10.txt",
+      "date": "2017-10-31",
+      "date_as_recorded": "2017-10-31",
+      "date_correction": null,
+      "video_urls": [
+        "https://www.youtube.com/watch?t=7s&v=EApAH39UMlA&app=desktop"
+      ],
+      "text_urls": [
+        "https://s.vog.media/Detail.htm?w=bec97f90-4ec0-4378-aa32-ea8d18f8951b"
+      ],
+      "title": "2017年10月31日赵岩先生采访郭先生（1）（赵岩的频道）",
+      "video_keys": [
+        "youtube:EApAH39UMlA"
+      ],
+      "text_keys": [
+        "vog:bec97f90-4ec0-4378-aa32-ea8d18f8951b"
+      ],
+      "record_id": "DISCORD_LIVE_LINK_2017_007"
+    },
+    {
+      "source_file": "2017.10.txt",
+      "date": "2017-10-31",
+      "date_as_recorded": "2017-10-31",
+      "date_correction": null,
+      "video_urls": [
+        "https://www.youtube.com/watch?t=7s&v=EApAH39UMlA&app=desktop"
+      ],
+      "text_urls": [
+        "https://s.vog.media/Detail.htm?w=92d6051-1516-4768-88ed-b18887576a31"
+      ],
+      "title": "2017年10月31日赵岩先生采访郭先生（2）（视频同上）",
+      "video_keys": [
+        "youtube:EApAH39UMlA"
+      ],
+      "text_keys": [
+        "vog:92d6051-1516-4768-88ed-b18887576a31"
+      ],
+      "record_id": "DISCORD_LIVE_LINK_2017_008"
+    },
+    {
+      "source_file": "2017.11.txt",
+      "date": "2017-11-01",
+      "date_as_recorded": "2017-11-01",
+      "date_correction": null,
+      "video_urls": [
+        "https://www.youtube.com/watch?v=YF7Mgr6oMnc"
+      ],
+      "text_urls": [
+        "https://s.vog.media/Detail.htm?w=00f6a211-d1e7-431e-80c6-a621362c06"
+      ],
+      "title": "郭文贵11月1日报平安直播：“谁抓判文贵的家人？”什么时候报下两个常委的料！✊️✊️✊️",
+      "video_keys": [
+        "youtube:YF7Mgr6oMnc"
+      ],
+      "text_keys": [
+        "vog:00f6a211-d1e7-431e-80c6-a621362c06"
+      ],
+      "record_id": "DISCORD_LIVE_LINK_2017_009"
+    },
+    {
+      "source_file": "2017.11.txt",
+      "date": "2017-11-02",
+      "date_as_recorded": "2017-11-02",
+      "date_correction": null,
+      "video_urls": [
+        "https://www.youtube.com/watch?v=iqetv_UYkmA"
+      ],
+      "text_urls": [
+        "https://s.vog.media/Detail.htm?w=bc6120c3-315e-407d-af11-6de7c2e17e5a"
+      ],
+      "title": "",
+      "video_keys": [
+        "youtube:iqetv_UYkmA"
+      ],
+      "text_keys": [
+        "vog:bc6120c3-315e-407d-af11-6de7c2e17e5a"
+      ],
+      "record_id": "DISCORD_LIVE_LINK_2017_010"
+    },
+    {
+      "source_file": "2017.11.txt",
+      "date": "2017-11-07",
+      "date_as_recorded": "2017-11-07",
+      "date_correction": null,
+      "video_urls": [
+        "https://www.youtube.com/watch?v=Tolo7yDmLNg&app=desktop（无法播放",
+        "https://www.youtube.com/watch?v=h5S3GryJzIw"
+      ],
+      "text_urls": [
+        "https://s.vog.media/Detail.htm?w=652c697b-2686-433c-977c-665bc3fc7e9c"
+      ],
+      "title": "接受郭宝胜采访",
+      "video_keys": [
+        "youtube:Tolo7yDmLNg",
+        "youtube:h5S3GryJzIw"
+      ],
+      "text_keys": [
+        "vog:652c697b-2686-433c-977c-665bc3fc7e9c"
+      ],
+      "record_id": "DISCORD_LIVE_LINK_2017_011"
+    },
+    {
+      "source_file": "2017.11.txt",
+      "date": "2017-11-08",
+      "date_as_recorded": "2017-11-08",
+      "date_correction": null,
+      "video_urls": [
+        "https://www.youtube.com/watch?v=-7IpNljrGkA&feature=youtu.be"
+      ],
+      "text_urls": [
+        "https://s.vog.media/Detail.htm?w=f0b0fe4f-70a1-4ead-9417-b93d232852f5"
+      ],
+      "title": "推特再一次被封7天后报平安直播",
+      "video_keys": [
+        "youtube:-7IpNljrGkA"
+      ],
+      "text_keys": [
+        "vog:f0b0fe4f-70a1-4ead-9417-b93d232852f5"
+      ],
+      "record_id": "DISCORD_LIVE_LINK_2017_012"
+    },
+    {
+      "source_file": "2017.11.txt",
+      "date": "2017-11-10",
+      "date_as_recorded": "2017-11-10",
+      "date_correction": null,
+      "video_urls": [
+        "https://www.youtube.com/watch?v=TpHpZ_TQJjE&feature=youtu.be"
+      ],
+      "text_urls": [
+        "https://s.vog.media/Detail.htm?w=14c0c6d-8191-4294-a47a-c66c54dd21a8"
+      ],
+      "title": "郭先生就后试试另一种方式录播",
+      "video_keys": [
+        "youtube:TpHpZ_TQJjE"
+      ],
+      "text_keys": [
+        "vog:14c0c6d-8191-4294-a47a-c66c54dd21a8"
+      ],
+      "record_id": "DISCORD_LIVE_LINK_2017_013"
+    },
+    {
+      "source_file": "2017.11.txt",
+      "date": "2017-11-12",
+      "date_as_recorded": "2017-11-12",
+      "date_correction": null,
+      "video_urls": [
+        "https://www.youtube.com/watch?v=HPeOcd437y8&feature=youtu.be"
+      ],
+      "text_urls": [
+        "https://s.vog.media/Detail.htm?w=4e3d1765-9e67-42cc-9d69-13922a1987a",
+        "https://mega.nz/file/4hwUGDKZ#O9paykEJ8ZCYq8zCZN3l4sMQxRktdno-pLyS3oIho4I"
+      ],
+      "title": "在川普总统的马阿拉哥庄园直播",
+      "video_keys": [
+        "youtube:HPeOcd437y8"
+      ],
+      "text_keys": [
+        "vog:4e3d1765-9e67-42cc-9d69-13922a1987a",
+        "mega:4hwUGDKZ"
+      ],
+      "record_id": "DISCORD_LIVE_LINK_2017_014"
+    },
+    {
+      "source_file": "2017.11.txt",
+      "date": "2017-11-15",
+      "date_as_recorded": "2017-11-15",
+      "date_correction": null,
+      "video_urls": [
+        "https://www.youtube.com/watch?v=7yUzdbxSMto&list=WL&index=1"
+      ],
+      "text_urls": [
+        "https://s.vog.media/Detail.htm?w=0366fa30-b326-41f5-9e51-768cdfaea89d"
+      ],
+      "title": "在Instagram直播",
+      "video_keys": [
+        "youtube:7yUzdbxSMto"
+      ],
+      "text_keys": [
+        "vog:0366fa30-b326-41f5-9e51-768cdfaea89d"
+      ],
+      "record_id": "DISCORD_LIVE_LINK_2017_015"
+    },
+    {
+      "source_file": "2017.11.txt",
+      "date": "2017-11-17",
+      "date_as_recorded": "2017-11-17",
+      "date_correction": null,
+      "video_urls": [
+        "https://www.youtube.com/watch?v=Lxbll7bWGIA"
+      ],
+      "text_urls": [
+        "https://gwins.org/cn/milesguo/633.html"
+      ],
+      "title": "",
+      "video_keys": [
+        "youtube:Lxbll7bWGIA"
+      ],
+      "text_keys": [
+        "gwins:633"
+      ],
+      "record_id": "DISCORD_LIVE_LINK_2017_016"
+    },
+    {
+      "source_file": "2017.11.txt",
+      "date": "2017-11-18",
+      "date_as_recorded": "2017-11-18",
+      "date_correction": null,
+      "video_urls": [
+        "https://www.youtube.com/watch?v=m3z_n3JMLxo&feature=youtu.be"
+      ],
+      "text_urls": [
+        "https://s.vog.media/Detail.htm?w=14c7b66f-3063-411-133-523f1cf3dfa8"
+      ],
+      "title": "在Instagram直播",
+      "video_keys": [
+        "youtube:m3z_n3JMLxo"
+      ],
+      "text_keys": [
+        "vog:14c7b66f-3063-411-133-523f1cf3dfa8"
+      ],
+      "record_id": "DISCORD_LIVE_LINK_2017_017"
+    },
+    {
+      "source_file": "2017.11.txt",
+      "date": "2017-11-21",
+      "date_as_recorded": "2017-11-21",
+      "date_correction": null,
+      "video_urls": [
+        "https://www.youtube.com/watch?v=9fzY7z0bgdw&feature=youtu.be"
+      ],
+      "text_urls": [
+        "https://s.vog.media/Detail.htm?w=30b83ec2-a5f5-44a0-afe1-39aaf0f5ba42"
+      ],
+      "title": "报平安直播",
+      "video_keys": [
+        "youtube:9fzY7z0bgdw"
+      ],
+      "text_keys": [
+        "vog:30b83ec2-a5f5-44a0-afe1-39aaf0f5ba42"
+      ],
+      "record_id": "DISCORD_LIVE_LINK_2017_018"
+    },
+    {
+      "source_file": "2017.11.txt",
+      "date": "2017-11-23",
+      "date_as_recorded": "2017-11-23",
+      "date_correction": null,
+      "video_urls": [
+        "https://www.youtube.com/watch?v=cRTODtnLAhE&feature=share"
+      ],
+      "text_urls": [
+        "https://s.vog.media/Detail.htm?w=f9595072-5fb8-459f-b4f6-b4bcdcc921e7"
+      ],
+      "title": "感恩节报平安直播",
+      "video_keys": [
+        "youtube:cRTODtnLAhE"
+      ],
+      "text_keys": [
+        "vog:f9595072-5fb8-459f-b4f6-b4bcdcc921e7"
+      ],
+      "record_id": "DISCORD_LIVE_LINK_2017_019"
+    },
+    {
+      "source_file": "2017.11.txt",
+      "date": "2017-11-26",
+      "date_as_recorded": "2017-11-26",
+      "date_correction": null,
+      "video_urls": [
+        "https://www.youtube.com/watch?v=EQZrTPqUQaQ"
+      ],
+      "text_urls": [
+        "https://s.vog.media/Detail.htm?w=b5a9a7a9-37fa-40c9-a0b0-e963a5351061"
+      ],
+      "title": "报平安直播",
+      "video_keys": [
+        "youtube:EQZrTPqUQaQ"
+      ],
+      "text_keys": [
+        "vog:b5a9a7a9-37fa-40c9-a0b0-e963a5351061"
+      ],
+      "record_id": "DISCORD_LIVE_LINK_2017_020"
+    },
+    {
+      "source_file": "2017.11.txt",
+      "date": "2017-11-27",
+      "date_as_recorded": "2017-11-27",
+      "date_correction": null,
+      "video_urls": [
+        "https://www.youtube.com/watch?v=2vlkgs3RKW4&feature=youtu.be"
+      ],
+      "text_urls": [
+        "https://s.vog.media/Detail.htm?w=8d5f2dd8-fc03-444c-9015-08e2ced5a5d0"
+      ],
+      "title": "",
+      "video_keys": [
+        "youtube:2vlkgs3RKW4"
+      ],
+      "text_keys": [
+        "vog:8d5f2dd8-fc03-444c-9015-08e2ced5a5d0"
+      ],
+      "record_id": "DISCORD_LIVE_LINK_2017_021"
+    },
+    {
+      "source_file": "2017.12.txt",
+      "date": "2017-12-02",
+      "date_as_recorded": "2017-12-02",
+      "date_correction": null,
+      "video_urls": [
+        "https://www.youtube.com/watch?v=HV9XRuwDdZ0"
+      ],
+      "text_urls": [
+        "https://gwins.org/cn/milesguo/640.html"
+      ],
+      "title": "文贵12月2日报平安视频😹😹😹✊️✊️✊️",
+      "video_keys": [
+        "youtube:HV9XRuwDdZ0"
+      ],
+      "text_keys": [
+        "gwins:640"
+      ],
+      "record_id": "DISCORD_LIVE_LINK_2017_022"
+    },
+    {
+      "source_file": "2017.12.txt",
+      "date": "2017-12-05",
+      "date_as_recorded": "2017-12-05",
+      "date_correction": null,
+      "video_urls": [
+        "https://youtu.be/JqImeRGqqdM"
+      ],
+      "text_urls": [
+        "https://gwins.org/cn/milesguo/641.html"
+      ],
+      "title": "尊敬的推友们你们健身了吗？✊️✊️✊️一切都是刚刚开始！",
+      "video_keys": [
+        "youtube:JqImeRGqqdM"
+      ],
+      "text_keys": [
+        "gwins:641"
+      ],
+      "record_id": "DISCORD_LIVE_LINK_2017_023"
+    },
+    {
+      "source_file": "2017.12.txt",
+      "date": "2017-12-08",
+      "date_as_recorded": "2017-12-08",
+      "date_correction": null,
+      "video_urls": [
+        "https://youtu.be/VTsLQ1e0HEs"
+      ],
+      "text_urls": [
+        "https://gwins.org/cn/milesguo/642.html"
+      ],
+      "title": "郭文贵12月8日报平安视频✊️✊️✊️一切都是刚刚开始！🙏🙏🙏",
+      "video_keys": [
+        "youtube:VTsLQ1e0HEs"
+      ],
+      "text_keys": [
+        "gwins:642"
+      ],
+      "record_id": "DISCORD_LIVE_LINK_2017_024"
+    },
+    {
+      "source_file": "2017.12.txt",
+      "date": "2017-12-09",
+      "date_as_recorded": "2017-12-09",
+      "date_correction": null,
+      "video_urls": [
+        "https://www.youtube.com/watch?v=BOU-rISM4qA"
+      ],
+      "text_urls": [
+        "https://gwins.org/cn/milesguo/643.html"
+      ],
+      "title": "郭文贵12月9日报平安✊️✊️✊️纽约下大雪了！一切都是刚刚开始！",
+      "video_keys": [
+        "youtube:BOU-rISM4qA"
+      ],
+      "text_keys": [
+        "gwins:643"
+      ],
+      "record_id": "DISCORD_LIVE_LINK_2017_025"
+    },
+    {
+      "source_file": "2017.12.txt",
+      "date": "2017-12-12",
+      "date_as_recorded": "2017-12-12",
+      "date_correction": null,
+      "video_urls": [
+        "https://www.youtube.com/watch?v=AsBoFhUW7n4"
+      ],
+      "text_urls": [
+        "https://gwins.org/cn/milesguo/644.html"
+      ],
+      "title": "12月12日：文贵给即将在大连被冤审的员工及家人的誓言；谈小平妻子失踪，法新社采访，华涌及乱运8分子",
+      "video_keys": [
+        "youtube:AsBoFhUW7n4"
+      ],
+      "text_keys": [
+        "gwins:644"
+      ],
+      "record_id": "DISCORD_LIVE_LINK_2017_026"
+    },
+    {
+      "source_file": "2017.12.txt",
+      "date": "2017-12-23",
+      "date_as_recorded": "2017-12-23",
+      "date_correction": null,
+      "video_urls": [
+        "https://www.youtube.com/watch?v=OAq2aGC3MrQ"
+      ],
+      "text_urls": [
+        "https://s.vog.media/Detail.htm?w=ddac47d0-2d92-45e5-8d90-ac8c5747fd07"
+      ],
+      "title": "2017年12月23日郭文贵直播：关于盘古被掠夺、蛆聋等8个伪类的诉讼，以及下一步的爆料计划，文贵向北京再次提出条件",
+      "video_keys": [
+        "youtube:OAq2aGC3MrQ"
+      ],
+      "text_keys": [
+        "vog:ddac47d0-2d92-45e5-8d90-ac8c5747fd07"
+      ],
+      "record_id": "DISCORD_LIVE_LINK_2017_027"
+    },
+    {
+      "source_file": "2017.4.txt",
+      "date": "2017-04-19",
+      "date_as_recorded": "2017-04-19",
+      "date_correction": null,
+      "video_urls": [
+        "https://www.youtube.com/watch?v=mKdCuSgzbKs"
+      ],
+      "text_urls": [
+        "https://mega.nz/file/Fgp2hBxT#tW3FyK0VcdGgcMp4oYvDdBwlZEOG4dRPopgoBLiaOPo"
+      ],
+      "title": "郭文贵VOA专访",
+      "video_keys": [
+        "youtube:mKdCuSgzbKs"
+      ],
+      "text_keys": [
+        "mega:Fgp2hBxT"
+      ],
+      "record_id": "DISCORD_LIVE_LINK_2017_028"
+    },
+    {
+      "source_file": "2017.4.txt",
+      "date": "2017-04-25",
+      "date_as_recorded": "2017-04-25",
+      "date_correction": null,
+      "video_urls": [
+        "https://www.youtube.com/watch?v=_LF-xygLmDg",
+        "https://www.youtube.com/watch?v=FGexmCwgYRo"
+      ],
+      "text_urls": [
+        "https://gwins.org/cn/milesguo/525.html",
+        "https://gwins.org/cn/milesguo/526.html"
+      ],
+      "title": "感谢推友过9万1、2",
+      "video_keys": [
+        "youtube:_LF-xygLmDg",
+        "youtube:FGexmCwgYRo"
+      ],
+      "text_keys": [
+        "gwins:525",
+        "gwins:526"
+      ],
+      "record_id": "DISCORD_LIVE_LINK_2017_029"
+    },
+    {
+      "source_file": "2017.4.txt",
+      "date": "2017-04-26",
+      "date_as_recorded": "2017-04-26",
+      "date_correction": null,
+      "video_urls": [
+        "https://www.youtube.com/watch?v=efyoe8UyF8c"
+      ],
+      "text_urls": [
+        "https://mega.nz/#F!iygRCDBJ!3saTbWYDyRyg_EVwUPjMIA?7jwCFarY"
+      ],
+      "title": "4.26文贵推友过十万感谢视频",
+      "video_keys": [
+        "youtube:efyoe8UyF8c"
+      ],
+      "text_keys": [
+        "https://mega.nz/#F!iygRCDBJ!3saTbWYDyRyg_EVwUPjMIA?7jwCFarY"
+      ],
+      "record_id": "DISCORD_LIVE_LINK_2017_030"
+    },
+    {
+      "source_file": "2017.4.txt",
+      "date": "2017-04-28",
+      "date_as_recorded": "2017-04-28",
+      "date_correction": null,
+      "video_urls": [
+        "https://www.youtube.com/watch?v=GYRm4L66QJI"
+      ],
+      "text_urls": [
+        "https://mega.nz/file/Qkpyzbob#uyb9sunqGp6WGNmXfOKHFXYZdZqCAYKiMtwI7FxYnco"
+      ],
+      "title": "文贵推优过十一万感谢视频",
+      "video_keys": [
+        "youtube:GYRm4L66QJI"
+      ],
+      "text_keys": [
+        "mega:Qkpyzbob"
+      ],
+      "record_id": "DISCORD_LIVE_LINK_2017_031"
+    },
+    {
+      "source_file": "2017.4.txt",
+      "date": "2017-04-28",
+      "date_as_recorded": "2017-04-28",
+      "date_correction": null,
+      "video_urls": [
+        "https://www.youtube.com/watch?v=BQkLRKUydNI"
+      ],
+      "text_urls": [
+        "https://s.vog.media/Detail.htm?w=5d9a9bae-cf56-476c-9935-0c0eb43bae12"
+      ],
+      "title": "郭先生接受BBC采访的视频",
+      "video_keys": [
+        "youtube:BQkLRKUydNI"
+      ],
+      "text_keys": [
+        "vog:5d9a9bae-cf56-476c-9935-0c0eb43bae12"
+      ],
+      "record_id": "DISCORD_LIVE_LINK_2017_032"
+    },
+    {
+      "source_file": "2017.4.txt",
+      "date": "2017-04-29",
+      "date_as_recorded": "2017-04-29",
+      "date_correction": null,
+      "video_urls": [
+        "https://www.youtube.com/watch?v=v9QnVLP14mo"
+      ],
+      "text_urls": [
+        "https://mega.nz/file/8twSibBJ#2hKxpYp1ZRpHY_BoiIZxZPZ7xxFa_mGmUQUapq9d5j0"
+      ],
+      "title": "郭文贵对13万推友的视频感谢",
+      "video_keys": [
+        "youtube:v9QnVLP14mo"
+      ],
+      "text_keys": [
+        "mega:8twSibBJ"
+      ],
+      "record_id": "DISCORD_LIVE_LINK_2017_033"
+    },
+    {
+      "source_file": "2017.4.txt",
+      "date": "2017-04-29",
+      "date_as_recorded": "2017-04-29",
+      "date_correction": null,
+      "video_urls": [
+        "https://www.youtube.com/watch?v=i9Z97iaC7V8&feature=youtu.be"
+      ],
+      "text_urls": [
+        "https://gwins.org/cn/milesguo/531.html"
+      ],
+      "title": "文贵推友超过十四万感谢视频",
+      "video_keys": [
+        "youtube:i9Z97iaC7V8"
+      ],
+      "text_keys": [
+        "gwins:531"
+      ],
+      "record_id": "DISCORD_LIVE_LINK_2017_034"
+    },
+    {
+      "source_file": "2017.4.txt",
+      "date": "2017-04-30",
+      "date_as_recorded": "2017-04-30",
+      "date_correction": null,
+      "video_urls": [
+        "https://www.youtube.com/watch?v=u7KvBFjVtSA"
+      ],
+      "text_urls": [
+        "https://mega.nz/file/9hpwAJBS#wFzWvwk8JzHCz2enhqbwNCn3_IRKglEbNJ8Sx9GhD14"
+      ],
+      "title": "郭文贵推优关注过15万感谢视频",
+      "video_keys": [
+        "youtube:u7KvBFjVtSA"
+      ],
+      "text_keys": [
+        "mega:9hpwAJBS"
+      ],
+      "record_id": "DISCORD_LIVE_LINK_2017_035"
+    },
+    {
+      "source_file": "2017.5.txt",
+      "date": "2017-05-03",
+      "date_as_recorded": "2017-05-03",
+      "date_correction": null,
+      "video_urls": [
+        "https://www.youtube.com/watch?v=mbRj5EszNXY"
+      ],
+      "text_urls": [
+        "https://mega.nz/file/ZtwDgQqI#skV9-1Qwiwy4jkP8Wp_qzE3OwhCuhMUuCDW7fFC1FXU"
+      ],
+      "title": "郭文贵5月3日报平安视频",
+      "video_keys": [
+        "youtube:mbRj5EszNXY"
+      ],
+      "text_keys": [
+        "mega:ZtwDgQqI"
+      ],
+      "record_id": "DISCORD_LIVE_LINK_2017_036"
+    },
+    {
+      "source_file": "2017.5.txt",
+      "date": "2017-05-04",
+      "date_as_recorded": "2017-05-04",
+      "date_correction": null,
+      "video_urls": [
+        "https://www.youtube.com/watch?v=s6jRA3UuIwE&feature=youtu.be"
+      ],
+      "text_urls": [
+        "https://s.vog.media/Detail.htm?w=ec2af4a6-551b-4e5f-a528-f0e3c584a99d"
+      ],
+      "title": "郭文贵5月4日报平安视频",
+      "video_keys": [
+        "youtube:s6jRA3UuIwE"
+      ],
+      "text_keys": [
+        "vog:ec2af4a6-551b-4e5f-a528-f0e3c584a99d"
+      ],
+      "record_id": "DISCORD_LIVE_LINK_2017_037"
+    },
+    {
+      "source_file": "2017.5.txt",
+      "date": "2017-05-05",
+      "date_as_recorded": "2017-05-05",
+      "date_correction": null,
+      "video_urls": [
+        "https://www.youtube.com/watch?v=CT9Q4GHQ5sY"
+      ],
+      "text_urls": [
+        "https://s.vog.media/Detail.htm?w=d0461471-80e0-4bbf-bb04-825599716221"
+      ],
+      "title": "郭文贵5月5日报平安视频",
+      "video_keys": [
+        "youtube:CT9Q4GHQ5sY"
+      ],
+      "text_keys": [
+        "vog:d0461471-80e0-4bbf-bb04-825599716221"
+      ],
+      "record_id": "DISCORD_LIVE_LINK_2017_038"
+    },
+    {
+      "source_file": "2017.5.txt",
+      "date": "2017-05-06",
+      "date_as_recorded": "2017-05-06",
+      "date_correction": null,
+      "video_urls": [
+        "https://youtu.be/RaA6DVaXFwg"
+      ],
+      "text_urls": [
+        "https://mega.nz/file/th5GVI7R#rePXEoFYJuFH5SDvCY7fSbH21vgJuRL9ClQSSheDn6Q"
+      ],
+      "title": "郭文贵5月6日报平安视频",
+      "video_keys": [
+        "youtube:RaA6DVaXFwg"
+      ],
+      "text_keys": [
+        "mega:th5GVI7R"
+      ],
+      "record_id": "DISCORD_LIVE_LINK_2017_039"
+    },
+    {
+      "source_file": "2017.5.txt",
+      "date": "2017-05-07",
+      "date_as_recorded": "2017-05-07",
+      "date_correction": null,
+      "video_urls": [
+        "https://www.youtube.com/watch?v=ANavUfD2isM",
+        "https://www.youtube.com/watch?v=EFYHh-T9VTw"
+      ],
+      "text_urls": [
+        "https://gwins.org/cn/milesguo/538.html"
+      ],
+      "title": "郭文贵5月7日想大家报平安小视频1、2 视频2没有说话",
+      "video_keys": [
+        "youtube:ANavUfD2isM",
+        "youtube:EFYHh-T9VTw"
+      ],
+      "text_keys": [
+        "gwins:538"
+      ],
+      "record_id": "DISCORD_LIVE_LINK_2017_040"
+    },
+    {
+      "source_file": "2017.5.txt",
+      "date": "2017-05-09",
+      "date_as_recorded": "2017-05-09",
+      "date_correction": null,
+      "video_urls": [
+        "https://www.youtube.com/watch?v=qUNteNSEwmA&feature=youtu.be"
+      ],
+      "text_urls": [
+        "https://s.vog.media/Detail.htm?w=ac563a01-cffb-4f2d-9c9a-d4d535656d24"
+      ],
+      "title": "郭文贵5月9日报平安直播视频",
+      "video_keys": [
+        "youtube:qUNteNSEwmA"
+      ],
+      "text_keys": [
+        "vog:ac563a01-cffb-4f2d-9c9a-d4d535656d24"
+      ],
+      "record_id": "DISCORD_LIVE_LINK_2017_041"
+    },
+    {
+      "source_file": "2017.5.txt",
+      "date": "2017-05-10",
+      "date_as_recorded": "2017-05-10",
+      "date_correction": null,
+      "video_urls": [
+        "https://youtu.be/OtlATL_AqDo"
+      ],
+      "text_urls": [
+        "https://mega.nz/file/J1gkFChb#VdFRTqt2qgQUCkYZXZEbXQjh4jX_9UIDnIbfYkn5HwI"
+      ],
+      "title": "郭文贵5月10日报平安直播视频",
+      "video_keys": [
+        "youtube:OtlATL_AqDo"
+      ],
+      "text_keys": [
+        "mega:J1gkFChb"
+      ],
+      "record_id": "DISCORD_LIVE_LINK_2017_042"
+    },
+    {
+      "source_file": "2017.5.txt",
+      "date": "2017-05-11",
+      "date_as_recorded": "2017-05-11",
+      "date_correction": null,
+      "video_urls": [
+        "https://mega.nz/file/M05HQKJK#sWxbgIwXhPqh9EBxMbtGloUXRaocgT-j0svzeZtCSMM"
+      ],
+      "text_urls": [
+        "https://mega.nz/file/Nk4mnQxS#HYFruEWD8DRfRjticCWIQDmYif2umwBAJeqHAYhFCVA"
+      ],
+      "title": "",
+      "video_keys": [
+        "mega:M05HQKJK"
+      ],
+      "text_keys": [
+        "mega:Nk4mnQxS"
+      ],
+      "record_id": "DISCORD_LIVE_LINK_2017_043"
+    },
+    {
+      "source_file": "2017.5.txt",
+      "date": "2017-05-13",
+      "date_as_recorded": "2017-05-13",
+      "date_correction": null,
+      "video_urls": [
+        "https://youtu.be/IaX9oLXi7z0"
+      ],
+      "text_urls": [
+        "https://mega.nz/file/855GCaiK#up-kS84EK8XHgCNCiDjsdWhYOj0YBIdp0woVtqpyFmg"
+      ],
+      "title": "",
+      "video_keys": [
+        "youtube:IaX9oLXi7z0"
+      ],
+      "text_keys": [
+        "mega:855GCaiK"
+      ],
+      "record_id": "DISCORD_LIVE_LINK_2017_044"
+    },
+    {
+      "source_file": "2017.5.txt",
+      "date": "2017-05-15",
+      "date_as_recorded": "2017-05-15",
+      "date_correction": null,
+      "video_urls": [
+        "https://www.youtube.com/watch?v=ME1eWwopmEg"
+      ],
+      "text_urls": [
+        "https://s.vog.media/Detail.htm?w=e20dd251-9674-44db-b4cb-8218af647ef0"
+      ],
+      "title": "",
+      "video_keys": [
+        "youtube:ME1eWwopmEg"
+      ],
+      "text_keys": [
+        "vog:e20dd251-9674-44db-b4cb-8218af647ef0"
+      ],
+      "record_id": "DISCORD_LIVE_LINK_2017_045"
+    },
+    {
+      "source_file": "2017.5.txt",
+      "date": "2017-05-15",
+      "date_as_recorded": "2017-05-15",
+      "date_correction": null,
+      "video_urls": [
+        "https://www.youtube.com/watch?v=DM8SsqQDf-Q"
+      ],
+      "text_urls": [
+        "https://mega.nz/file/9g5ggQDZ#Wb9tcaYILwHT0BNEkWS8XA65Aq3Gdex2ipcG2L9qy_A"
+      ],
+      "title": "郭文贵5月15日报平安直播视频 被骇后再开！",
+      "video_keys": [
+        "youtube:DM8SsqQDf-Q"
+      ],
+      "text_keys": [
+        "mega:9g5ggQDZ"
+      ],
+      "record_id": "DISCORD_LIVE_LINK_2017_046"
+    },
+    {
+      "source_file": "2017.5.txt",
+      "date": "2017-05-16",
+      "date_as_recorded": "2017-05-16",
+      "date_correction": null,
+      "video_urls": [
+        "https://www.youtube.com/watch?v=VlsMSGdy-i8"
+      ],
+      "text_urls": [
+        "https://mega.nz/file/EwhCHbJI#NT6qicthKQhtEtJfmTBn8XmgKcqQ-n3WaJMx2fDpMwE"
+      ],
+      "title": "郭文贵5月16日报平安直播视频（完整版）",
+      "video_keys": [
+        "youtube:VlsMSGdy-i8"
+      ],
+      "text_keys": [
+        "mega:EwhCHbJI"
+      ],
+      "record_id": "DISCORD_LIVE_LINK_2017_047"
+    },
+    {
+      "source_file": "2017.5.txt",
+      "date": "2017-05-17",
+      "date_as_recorded": "2017-05-17",
+      "date_correction": null,
+      "video_urls": [
+        "https://youtu.be/0wIIzTi0bdc"
+      ],
+      "text_urls": [
+        "https://mega.nz/file/o5g2kAyL#l-UuasbMEjxQBF0vvSatjtSbhtqqItfUyIZAZHWzp08"
+      ],
+      "title": "郭文贵5月17日报平安视频直播 家庭国家和社会的关系",
+      "video_keys": [
+        "youtube:0wIIzTi0bdc"
+      ],
+      "text_keys": [
+        "mega:o5g2kAyL"
+      ],
+      "record_id": "DISCORD_LIVE_LINK_2017_048"
+    },
+    {
+      "source_file": "2017.5.txt",
+      "date": "2017-05-18",
+      "date_as_recorded": "2017-05-18",
+      "date_correction": null,
+      "video_urls": [
+        "https://youtu.be/dDTvNQ4WzPE"
+      ],
+      "text_urls": [
+        "https://mega.nz/file/IgoWjYzA#I6LPXynbR1rVIo9fzk-r_C4VJZu3TNKoAI6fgoc3vi0"
+      ],
+      "title": "郭文贵5月18日报平安视频直播 意外状况下的沟通方式",
+      "video_keys": [
+        "youtube:dDTvNQ4WzPE"
+      ],
+      "text_keys": [
+        "mega:IgoWjYzA"
+      ],
+      "record_id": "DISCORD_LIVE_LINK_2017_049"
+    },
+    {
+      "source_file": "2017.5.txt",
+      "date": "2017-05-19",
+      "date_as_recorded": "2017-05-19",
+      "date_correction": null,
+      "video_urls": [
+        "https://youtu.be/bZ1wPp-iliw"
+      ],
+      "text_urls": [
+        "https://hqsbnet.wordpress.com/2017/05/22/5%E6%9C%8819%E6%97%A5%E9%83%AD%E6%96%87%E8%B4%B5%E6%8A%A5%E5%B9%B3%E5%AE%89%E7%9B%B4%E6%92%AD%E8%A7%86%E9%A2%91-%E6%84%9F%E6%81%A9%E6%8E%A8%E5%8F%8B%E5%85%B3%E5%BF%83%E5%91%BC/"
+      ],
+      "title": "郭文贵5月19日报平安视频直播 感恩推友关心 呼吁推友冷静",
+      "video_keys": [
+        "youtube:bZ1wPp-iliw"
+      ],
+      "text_keys": [
+        "https://hqsbnet.wordpress.com/2017/05/22/5%E6%9C%8819%E6%97%A5%E9%83%AD%E6%96%87%E8%B4%B5%E6%8A%A5%E5%B9%B3%E5%AE%89%E7%9B%B4%E6%92%AD%E8%A7%86%E9%A2%91-%E6%84%9F%E6%81%A9%E6%8E%A8%E5%8F%8B%E5%85%B3%E5%BF%83%E5%91%BC/"
+      ],
+      "record_id": "DISCORD_LIVE_LINK_2017_050"
+    },
+    {
+      "source_file": "2017.5.txt",
+      "date": "2017-05-20",
+      "date_as_recorded": "2017-05-20",
+      "date_correction": null,
+      "video_urls": [
+        "https://youtu.be/hTc86sS0_bw"
+      ],
+      "text_urls": [
+        "https://mega.nz/file/xxhEnJBB#JU7dzMBjm6kU4kbrStsC-Q5fPqbt2c4bHpjGCnkwmGc"
+      ],
+      "title": "郭文贵5月20日报平安视频 在香港是否存在执法黑屋✊️✊️✊️",
+      "video_keys": [
+        "youtube:hTc86sS0_bw"
+      ],
+      "text_keys": [
+        "mega:xxhEnJBB"
+      ],
+      "record_id": "DISCORD_LIVE_LINK_2017_051"
+    },
+    {
+      "source_file": "2017.5.txt",
+      "date": "2017-05-21",
+      "date_as_recorded": "2017-05-21",
+      "date_correction": null,
+      "video_urls": [
+        "https://www.youtube.com/watch?v=3oda61nt2v0&feature=youtu.be"
+      ],
+      "text_urls": [
+        "https://s.vog.media/Detail.htm?w=e9120179-4c1e-4f92-9097-abd2643d0255&K=%E8%AF%95%E8%AF%95%E5%90%84%E7%A7%8D%E7%BD%91%E7%BB%9C"
+      ],
+      "title": "郭文贵5月21日第二次视频直播再试",
+      "video_keys": [
+        "youtube:3oda61nt2v0"
+      ],
+      "text_keys": [
+        "vog:e9120179-4c1e-4f92-9097-abd2643d0255"
+      ],
+      "record_id": "DISCORD_LIVE_LINK_2017_052"
+    },
+    {
+      "source_file": "2017.5.txt",
+      "date": "2017-05-21",
+      "date_as_recorded": "2017-05-21",
+      "date_correction": null,
+      "video_urls": [
+        "https://www.youtube.com/watch?v=GLJmJga1Dck&feature=youtu.be"
+      ],
+      "text_urls": [
+        "https://s.vog.media/Detail.htm?w=732019e9-705b-4994-ac2b-f31ee111f257"
+      ],
+      "title": "郭文贵5月21日第三次直播试錄",
+      "video_keys": [
+        "youtube:GLJmJga1Dck"
+      ],
+      "text_keys": [
+        "vog:732019e9-705b-4994-ac2b-f31ee111f257"
+      ],
+      "record_id": "DISCORD_LIVE_LINK_2017_053"
+    },
+    {
+      "source_file": "2017.5.txt",
+      "date": "2017-05-22",
+      "date_as_recorded": "2017-05-22",
+      "date_correction": null,
+      "video_urls": [
+        "https://www.youtube.com/watch?v=7HH9VmqrUh4"
+      ],
+      "text_urls": [
+        "https://mega.nz/file/VlJBzQ6L#u1SvQvl2LCKd3BF3otWcbvRfkcHBotOo6Teufv6Hyqw"
+      ],
+      "title": "郭文贵5月22号报平安直播视频 回覆潘石屹",
+      "video_keys": [
+        "youtube:7HH9VmqrUh4"
+      ],
+      "text_keys": [
+        "mega:VlJBzQ6L"
+      ],
+      "record_id": "DISCORD_LIVE_LINK_2017_054"
+    },
+    {
+      "source_file": "2017.5.txt",
+      "date": "2017-05-23",
+      "date_as_recorded": "2017-05-23",
+      "date_correction": null,
+      "video_urls": [
+        "https://www.youtube.com/watch?v=WwrBT5tncdo&feature=youtu.be"
+      ],
+      "text_urls": [
+        "https://s.vog.media/Detail.htm?w=73c8857f-5080-49c8-8c1d-15d6109da36d"
+      ],
+      "title": "郭文贵5月23日报平安直播视频",
+      "video_keys": [
+        "youtube:WwrBT5tncdo"
+      ],
+      "text_keys": [
+        "vog:73c8857f-5080-49c8-8c1d-15d6109da36d"
+      ],
+      "record_id": "DISCORD_LIVE_LINK_2017_055"
+    },
+    {
+      "source_file": "2017.5.txt",
+      "date": "2017-05-24",
+      "date_as_recorded": "2017-05-24",
+      "date_correction": null,
+      "video_urls": [
+        "https://www.youtube.com/watch?v=C1h0vHUqEp0&feature=youtu.be"
+      ],
+      "text_urls": [
+        "https://s.vog.media/Detail.htm?w=4f1a02ae-7d23-4407-9530-5bdc96c70970"
+      ],
+      "title": "郭文贵5月24日报平安直播视频 呼吁推友不要冲动",
+      "video_keys": [
+        "youtube:C1h0vHUqEp0"
+      ],
+      "text_keys": [
+        "vog:4f1a02ae-7d23-4407-9530-5bdc96c70970"
+      ],
+      "record_id": "DISCORD_LIVE_LINK_2017_056"
+    },
+    {
+      "source_file": "2017.5.txt",
+      "date": "2017-05-25",
+      "date_as_recorded": "2017-05-25",
+      "date_correction": null,
+      "video_urls": [
+        "https://www.youtube.com/watch?v=0CJC9iyvnbo"
+      ],
+      "text_urls": [
+        "https://mega.nz/file/t0gCTDhT#zHlt-OQ41nI9rLd_0hN6nw9K1vZFFs7_WLvXCoTHNgA"
+      ],
+      "title": "郭文贵5月25日报平安直播视频 回应胡舒立报道 托尼 布萊尔",
+      "video_keys": [
+        "youtube:0CJC9iyvnbo"
+      ],
+      "text_keys": [
+        "mega:t0gCTDhT"
+      ],
+      "record_id": "DISCORD_LIVE_LINK_2017_057"
+    },
+    {
+      "source_file": "2017.5.txt",
+      "date": "2017-05-29",
+      "date_as_recorded": "2017-05-29",
+      "date_correction": null,
+      "video_urls": [
+        "https://www.youtube.com/watch?v=uoMlhusFIkY"
+      ],
+      "text_urls": [
+        "https://mega.nz/file/J9wyHLSA#UjetI0QwllGxk8EledQXKUoSrps_hOhUqlcw5Cqj6MY"
+      ],
+      "title": "郭文贵5月29日报平安直播视频 关于王歧山",
+      "video_keys": [
+        "youtube:uoMlhusFIkY"
+      ],
+      "text_keys": [
+        "mega:J9wyHLSA"
+      ],
+      "record_id": "DISCORD_LIVE_LINK_2017_058"
+    },
+    {
+      "source_file": "2017.6.txt",
+      "date": "2017-06-01",
+      "date_as_recorded": "2017-06-01",
+      "date_correction": null,
+      "video_urls": [
+        "https://www.youtube.com/watch?v=m33mzFORonQ"
+      ],
+      "text_urls": [
+        "https://mega.nz/file/gh5QiBha#APeLXTL3O2gJkM9LGeoMfJfSMJa-2-dD_2eEgJsMdtQ"
+      ],
+      "title": "郭文贵6月1日报平安直播视频",
+      "video_keys": [
+        "youtube:m33mzFORonQ"
+      ],
+      "text_keys": [
+        "mega:gh5QiBha"
+      ],
+      "record_id": "DISCORD_LIVE_LINK_2017_059"
+    },
+    {
+      "source_file": "2017.6.txt",
+      "date": "2017-06-03",
+      "date_as_recorded": "2017-06-03",
+      "date_correction": null,
+      "video_urls": [
+        "https://www.youtube.com/watch?v=C1h0vHUqEp0&feature=youtu.be"
+      ],
+      "text_urls": [
+        "https://s.vog.media/Detail.htm?w=29b0a09f-e64b-4b40-b6c9-3409620dc2e4"
+      ],
+      "title": "郭文贵6月3日报平安直播视频盗国贼与国家的关系",
+      "video_keys": [
+        "youtube:C1h0vHUqEp0"
+      ],
+      "text_keys": [
+        "vog:29b0a09f-e64b-4b40-b6c9-3409620dc2e4"
+      ],
+      "record_id": "DISCORD_LIVE_LINK_2017_060"
+    },
+    {
+      "source_file": "2017.6.txt",
+      "date": "2017-06-06",
+      "date_as_recorded": "2017-06-06",
+      "date_correction": null,
+      "video_urls": [
+        "https://www.youtube.com/watch?v=jnlvSdrlmcA"
+      ],
+      "text_urls": [
+        "https://mega.nz/file/d94UnBZb#E7ntNjOSvFE9COG6meQB03JZLz4VYyoaviFLuixcvbE"
+      ],
+      "title": "郭文贵6月6日报平安直播视频关于王岐山2 完整版",
+      "video_keys": [
+        "youtube:jnlvSdrlmcA"
+      ],
+      "text_keys": [
+        "mega:d94UnBZb"
+      ],
+      "record_id": "DISCORD_LIVE_LINK_2017_061"
+    },
+    {
+      "source_file": "2017.6.txt",
+      "date": "2017-06-10",
+      "date_as_recorded": "2017-06-10",
+      "date_correction": null,
+      "video_urls": [
+        "https://youtu.be/gkufm-IM0-U"
+      ],
+      "text_urls": [
+        "https://mega.nz/file/J1gkFChb#VdFRTqt2qgQUCkYZXZEbXQjh4jX_9UIDnIbfYkn5HwI"
+      ],
+      "title": "郭文贵6月10日报平安直播视频",
+      "video_keys": [
+        "youtube:gkufm-IM0-U"
+      ],
+      "text_keys": [
+        "mega:J1gkFChb"
+      ],
+      "record_id": "DISCORD_LIVE_LINK_2017_062"
+    },
+    {
+      "source_file": "2017.6.txt",
+      "date": "2017-06-10",
+      "date_as_recorded": "2017-06-10",
+      "date_correction": null,
+      "video_urls": [
+        "https://www.youtube.com/watch?v=U4B9KiiqwPg"
+      ],
+      "text_urls": [
+        "https://mega.nz/file/I44UwTwZ#V3gjMBhsw29WXnX8F2VeqUFkCC2BmPyycnXJEIxrOO8"
+      ],
+      "title": "6月10日郭文贵有关海南航空的公告的回复",
+      "video_keys": [
+        "youtube:U4B9KiiqwPg"
+      ],
+      "text_keys": [
+        "mega:I44UwTwZ"
+      ],
+      "record_id": "DISCORD_LIVE_LINK_2017_063"
+    },
+    {
+      "source_file": "2017.6.txt",
+      "date": "2017-06-11",
+      "date_as_recorded": "2017-06-11",
+      "date_correction": null,
+      "video_urls": [
+        "https://www.youtube.com/watch?v=1z02sYtzuTY"
+      ],
+      "text_urls": [
+        "https://mega.nz/file/0lhmFTIQ#13-PriJPPaKpkfkmQBd8KIUHVLLF_FsaMChPv092wvo"
+      ],
+      "title": "郭文贵6月11日报平安直播视频",
+      "video_keys": [
+        "youtube:1z02sYtzuTY"
+      ],
+      "text_keys": [
+        "mega:0lhmFTIQ"
+      ],
+      "record_id": "DISCORD_LIVE_LINK_2017_064"
+    },
+    {
+      "source_file": "2017.6.txt",
+      "date": "2017-06-13",
+      "date_as_recorded": "2017-06-13",
+      "date_correction": null,
+      "video_urls": [
+        "https://www.youtube.com/watch?v=Qr-dwUcGtHY"
+      ],
+      "text_urls": [
+        "https://mega.nz/file/Ng5GmBQR#uACGpACuEDRgyb8DiIYCBGDqA9oINkmfd12Z_RgD97o"
+      ],
+      "title": "郭文贵6月13日报平安直播视频：关于章立凡与胡平先生在VOA节目中对文贵的诬陷",
+      "video_keys": [
+        "youtube:Qr-dwUcGtHY"
+      ],
+      "text_keys": [
+        "mega:Ng5GmBQR"
+      ],
+      "record_id": "DISCORD_LIVE_LINK_2017_065"
+    },
+    {
+      "source_file": "2017.6.txt",
+      "date": "2017-06-19",
+      "date_as_recorded": "2017-06-19",
+      "date_correction": null,
+      "video_urls": [
+        "https://www.youtube.com/watch?v=879M_r-kze0"
+      ],
+      "text_urls": [
+        "https://mega.nz/file/15hEERAK#ZhbnnaTsXAoxZzEUAgFJPnUAzd_XOuusHodM0-TA7jI"
+      ],
+      "title": "郭文贵6月19日报平安视频 再让子弹飞一会儿！",
+      "video_keys": [
+        "youtube:879M_r-kze0"
+      ],
+      "text_keys": [
+        "mega:15hEERAK"
+      ],
+      "record_id": "DISCORD_LIVE_LINK_2017_066"
+    },
+    {
+      "source_file": "2017.6.txt",
+      "date": "2017-06-26",
+      "date_as_recorded": "2017-06-26",
+      "date_correction": null,
+      "video_urls": [
+        "https://www.youtube.com/watch?v=HdAyJW2umjU&feature=youtu.be"
+      ],
+      "text_urls": [
+        "https://s.vog.media/Detail.htm?w=e39faaf3-f54b-4d3c-aacf-4e150a3d4668"
+      ],
+      "title": "郭文贵6月26日的分享",
+      "video_keys": [
+        "youtube:HdAyJW2umjU"
+      ],
+      "text_keys": [
+        "vog:e39faaf3-f54b-4d3c-aacf-4e150a3d4668"
+      ],
+      "record_id": "DISCORD_LIVE_LINK_2017_067"
+    },
+    {
+      "source_file": "2017.6.txt",
+      "date": "2017-06-27",
+      "date_as_recorded": "2017-06-27",
+      "date_correction": null,
+      "video_urls": [
+        "https://www.youtube.com/watch?v=CuqWuXr5nEY"
+      ],
+      "text_urls": [
+        "https://gwins.org/cn/milesguo/580.html"
+      ],
+      "title": "郭文贵6月27日 应推友们的要求和狗狗snow的视频",
+      "video_keys": [
+        "youtube:CuqWuXr5nEY"
+      ],
+      "text_keys": [
+        "gwins:580"
+      ],
+      "record_id": "DISCORD_LIVE_LINK_2017_068"
+    },
+    {
+      "source_file": "2017.6.txt",
+      "date": "2017-06-28",
+      "date_as_recorded": "2017-06-28",
+      "date_correction": null,
+      "video_urls": [
+        "https://www.youtube.com/watch?v=j0QUsKJ8jLM"
+      ],
+      "text_urls": [
+        "https://mega.nz/file/sshnUSxT#pj2ssux8GLVELgkn36XMDG79HTl3Ki8-GBeL37NKEXI"
+      ],
+      "title": "郭文贵6月28日报平安直播视频（完整版）",
+      "video_keys": [
+        "youtube:j0QUsKJ8jLM"
+      ],
+      "text_keys": [
+        "mega:sshnUSxT"
+      ],
+      "record_id": "DISCORD_LIVE_LINK_2017_069"
+    },
+    {
+      "source_file": "2017.6.txt",
+      "date": "2017-06-30",
+      "date_as_recorded": "2017-06-30",
+      "date_correction": null,
+      "video_urls": [
+        "https://www.youtube.com/watch?v=NpvGGOQBvI4"
+      ],
+      "text_urls": [
+        "https://mega.nz/file/o1xCSbrb#dLAkAAb7aG5LCd9601Cfh1Ccxewk5jKYuWQYiV4ppiQ"
+      ],
+      "title": "郭文贵6月30日报平安直播视频---关于王岐山与范冰冰的关系(完整版)",
+      "video_keys": [
+        "youtube:NpvGGOQBvI4"
+      ],
+      "text_keys": [
+        "mega:o1xCSbrb"
+      ],
+      "record_id": "DISCORD_LIVE_LINK_2017_070"
+    },
+    {
+      "source_file": "2017.7.txt",
+      "date": "2017-07-01",
+      "date_as_recorded": "2017-07-01",
+      "date_correction": null,
+      "video_urls": [
+        "https://www.youtube.com/watch?v=4hqD4sH7_Ig"
+      ],
+      "text_urls": [
+        "https://s.vog.media/Detail.htm?w=a9ceded1-b5ca-4a6b-b618-82e62985be5d"
+      ],
+      "title": "文贵试网络 关于王岐山和范冰冰在1808房",
+      "video_keys": [
+        "youtube:4hqD4sH7_Ig"
+      ],
+      "text_keys": [
+        "vog:a9ceded1-b5ca-4a6b-b618-82e62985be5d"
+      ],
+      "record_id": "DISCORD_LIVE_LINK_2017_071"
+    },
+    {
+      "source_file": "2017.7.txt",
+      "date": "2017-07-03",
+      "date_as_recorded": "2017-07-03",
+      "date_correction": null,
+      "video_urls": [
+        "https://www.youtube.com/watch?v=77hzy6MftnE&feature=youtu.be"
+      ],
+      "text_urls": [
+        "https://s.vog.media/Detail.htm?w=90166789-4d0a-4ce1-b4e1-ff529a9118d2"
+      ],
+      "title": "郭文贵7月3日报平安直播视频---王岐山和傅政华将如何毁掉中国",
+      "video_keys": [
+        "youtube:77hzy6MftnE"
+      ],
+      "text_keys": [
+        "vog:90166789-4d0a-4ce1-b4e1-ff529a9118d2"
+      ],
+      "record_id": "DISCORD_LIVE_LINK_2017_072"
+    },
+    {
+      "source_file": "2017.7.txt",
+      "date": "2017-07-03",
+      "date_as_recorded": "2017-07-03",
+      "date_correction": null,
+      "video_urls": [
+        "https://www.youtube.com/watch?v=Jjy07W73brc&feature=youtu.be"
+      ],
+      "text_urls": [
+        "https://chinadigitaltimes.net/chinese/564684.html"
+      ],
+      "title": "郭文贵7月3日第二次讲述王岐山和傅政华的威胁",
+      "video_keys": [
+        "youtube:Jjy07W73brc"
+      ],
+      "text_keys": [
+        "https://chinadigitaltimes.net/chinese/564684.html"
+      ],
+      "record_id": "DISCORD_LIVE_LINK_2017_073"
+    },
+    {
+      "source_file": "2017.7.txt",
+      "date": "2017-07-05",
+      "date_as_recorded": "2017-07-05",
+      "date_correction": null,
+      "video_urls": [
+        "https://www.youtube.com/watch?v=4IiryEX8x_g"
+      ],
+      "text_urls": [
+        "https://mega.nz/file/4o502AKS#3crSnQV4UUWFq0Pp4Z_XxMosDtWw-YDB48Mn_vSFfWI"
+      ],
+      "title": "美国独立日：文贵个人如何看美国与中国不同！美国为什么没有王岐山傅政华这样的盗国贼？",
+      "video_keys": [
+        "youtube:4IiryEX8x_g"
+      ],
+      "text_keys": [
+        "mega:4o502AKS"
+      ],
+      "record_id": "DISCORD_LIVE_LINK_2017_074"
+    },
+    {
+      "source_file": "2017.7.txt",
+      "date": "2017-07-06",
+      "date_as_recorded": "2017-07-06",
+      "date_correction": null,
+      "video_urls": [
+        "https://www.youtube.com/watch?v=3Yd19QapTQw&feature=youtu.be"
+      ],
+      "text_urls": [
+        "https://s.vog.media/Detail.htm?w=ed9a7bd2-5e61-42b5-aaad-d337a9b814be"
+      ],
+      "title": "文贵又要试试网络了！谈谈王岐山．孟建柱．傅政华．在十九大到底想要什么？✊️✊️✊️",
+      "video_keys": [
+        "youtube:3Yd19QapTQw"
+      ],
+      "text_keys": [
+        "vog:ed9a7bd2-5e61-42b5-aaad-d337a9b814be"
+      ],
+      "record_id": "DISCORD_LIVE_LINK_2017_075"
+    },
+    {
+      "source_file": "2017.7.txt",
+      "date": "2017-07-06",
+      "date_as_recorded": "2017-07-06",
+      "date_correction": null,
+      "video_urls": [
+        "https://www.youtube.com/watch?v=ArfS2AuYjqA"
+      ],
+      "text_urls": [
+        "https://mega.nz/file/A8JjjaxT#ezxcksP1anHpsqF0OQUHqjMtsrLTmX5FAQPDkF0eMG0"
+      ],
+      "title": "郭文贵7月6日报平安视频：王岐山的新豪宅．及孟建柱傅政华的真实关系与丰富多彩的性生活！",
+      "video_keys": [
+        "youtube:ArfS2AuYjqA"
+      ],
+      "text_keys": [
+        "mega:A8JjjaxT"
+      ],
+      "record_id": "DISCORD_LIVE_LINK_2017_076"
+    },
+    {
+      "source_file": "2017.7.txt",
+      "date": "2017-07-08",
+      "date_as_recorded": "2017-07-08",
+      "date_correction": null,
+      "video_urls": [
+        "https://www.youtube.com/watch?v=UMImhzaD7Og"
+      ],
+      "text_urls": [
+        "https://mega.nz/file/MxA3jIiQ#URlXbzDBNOk2nTqrQPZzOdAJvGwAHEEyo41_bEM85vk"
+      ],
+      "title": "文贵7月8号直播谈．文贵与王岐山的啪啪啪的能力比较！😹😹😹",
+      "video_keys": [
+        "youtube:UMImhzaD7Og"
+      ],
+      "text_keys": [
+        "mega:MxA3jIiQ"
+      ],
+      "record_id": "DISCORD_LIVE_LINK_2017_077"
+    },
+    {
+      "source_file": "2017.7.txt",
+      "date": "2017-07-09",
+      "date_as_recorded": "2017-07-09",
+      "date_correction": null,
+      "video_urls": [
+        "https://www.youtube.com/watch?v=JpTFppOYU0Q"
+      ],
+      "text_urls": [
+        "https://mega.nz/file/81JjlaQT#k91KFQuSU15AyiNOwaGbWoI0izj982Msh5697BNNc6Y"
+      ],
+      "title": "郭文贵7月9日直播试网络。文贵爆的王岐山傅政华盗国贼们的事情大陆人的真实感受 ✊️✊️✊️✊️",
+      "video_keys": [
+        "youtube:JpTFppOYU0Q"
+      ],
+      "text_keys": [
+        "mega:81JjlaQT"
+      ],
+      "record_id": "DISCORD_LIVE_LINK_2017_078"
+    },
+    {
+      "source_file": "2017.7.txt",
+      "date": "2017-07-10",
+      "date_as_recorded": "2017-07-10",
+      "date_correction": null,
+      "video_urls": [
+        "https://www.youtube.com/watch?v=J1-epeht1oA"
+      ],
+      "text_urls": [
+        "https://gwins.org/cn/milesguo/719.html"
+      ],
+      "title": "",
+      "video_keys": [
+        "youtube:J1-epeht1oA"
+      ],
+      "text_keys": [
+        "gwins:719"
+      ],
+      "record_id": "DISCORD_LIVE_LINK_2017_079"
+    },
+    {
+      "source_file": "2017.7.txt",
+      "date": "2017-07-15",
+      "date_as_recorded": "2017-07-15",
+      "date_correction": null,
+      "video_urls": [
+        "https://www.youtube.com/watch?v=eDhL2za0d3k"
+      ],
+      "text_urls": [
+        "https://mega.nz/file/AkB3HIrC#9Jn5Z0Gf7FahS8wgSwMvMm99IWfDu1wK9MMlDlAkJfU"
+      ],
+      "title": "郭文贵7月15日报平安直播---关于范冰冰起诉．海航20万亿线索的来源及美国灯塔报纸采访的回复✊️✊️✊️✊️",
+      "video_keys": [
+        "youtube:eDhL2za0d3k"
+      ],
+      "text_keys": [
+        "mega:AkB3HIrC"
+      ],
+      "record_id": "DISCORD_LIVE_LINK_2017_080"
+    },
+    {
+      "source_file": "2017.7.txt",
+      "date": "2017-07-17",
+      "date_as_recorded": "2017-07-17",
+      "date_correction": null,
+      "video_urls": [
+        "https://www.youtube.com/watch?v=UFQ4mwGE2mE&feature=youtu.be"
+      ],
+      "text_urls": [
+        "https://mega.nz/file/0kIXlaLY#9ogdNkD7zUZQQYsd8b6DVr-ZIM_8nG-h1kdzP8ZlDm0"
+      ],
+      "title": "直播：717明鏡專訪郭文貴第四期（高清完整版）",
+      "video_keys": [
+        "youtube:UFQ4mwGE2mE"
+      ],
+      "text_keys": [
+        "mega:0kIXlaLY"
+      ],
+      "record_id": "DISCORD_LIVE_LINK_2017_081"
+    },
+    {
+      "source_file": "2017.7.txt",
+      "date": "2017-07-22",
+      "date_as_recorded": "2017-07-22",
+      "date_correction": null,
+      "video_urls": [
+        "https://www.youtube.com/watch?v=Jjy07W73brc&feature=youtu.be"
+      ],
+      "text_urls": [
+        "https://mega.nz/file/F8RHVCpQ#Sw_s7rLyuZMD80c8UvlLDDBXIZwcOsjJ1biRjNRq0no"
+      ],
+      "title": "郭文貴：自由女神與劉曉波（《明鏡專訪》）",
+      "video_keys": [
+        "youtube:Jjy07W73brc"
+      ],
+      "text_keys": [
+        "mega:F8RHVCpQ"
+      ],
+      "record_id": "DISCORD_LIVE_LINK_2017_082"
+    },
+    {
+      "source_file": "2017.7.txt",
+      "date": "2017-07-24",
+      "date_as_recorded": "2017-07-24",
+      "date_correction": null,
+      "video_urls": [
+        "https://www.youtube.com/watch?v=YAmQgr_CCpg"
+      ],
+      "text_urls": [
+        "https://mega.nz/file/w5JjxKaI#jj1Nw692ATeV2BTqGMss4vii3s7UvZ1IIPySkstQsyI"
+      ],
+      "title": "郭文贵7月24日报平安直播---关于王岐山盗国贼们的恐惧与龌龊 及回应黄艳女士的官司",
+      "video_keys": [
+        "youtube:YAmQgr_CCpg"
+      ],
+      "text_keys": [
+        "mega:w5JjxKaI"
+      ],
+      "record_id": "DISCORD_LIVE_LINK_2017_083"
+    },
+    {
+      "source_file": "2017.7.txt",
+      "date": "2017-07-25",
+      "date_as_recorded": "2017-07-25",
+      "date_correction": null,
+      "video_urls": [
+        "https://www.youtube.com/watch?v=UGzT9-00H8Y"
+      ],
+      "text_urls": [
+        "https://mega.nz/file/Y9Y1mKiI#QhjfY_-vDQexlLxyhY828kz8ZZYT2lKmJn_qk7hN8-4"
+      ],
+      "title": "郭文贵7月25日报平安直播：王岐山、贯君的6000亿海航股权去哪了？",
+      "video_keys": [
+        "youtube:UGzT9-00H8Y"
+      ],
+      "text_keys": [
+        "mega:Y9Y1mKiI"
+      ],
+      "record_id": "DISCORD_LIVE_LINK_2017_084"
+    },
+    {
+      "source_file": "2017.7.txt",
+      "date": "2017-07-26",
+      "date_as_recorded": "2017-07-26",
+      "date_correction": null,
+      "video_urls": [
+        "https://www.youtube.com/watch?v=8uBfzTUl0OE"
+      ],
+      "text_urls": [
+        "https://mega.nz/file/xwJ1jKbB#XVfqjAeFhat5ls0Cgp_FZsRXG0J6sBACqDmNp19scQY"
+      ],
+      "title": "郭文贵7月26日报平安直播视频：贯君的6000亿原来去了这里！刘呈杰他爹原来是他！",
+      "video_keys": [
+        "youtube:8uBfzTUl0OE"
+      ],
+      "text_keys": [
+        "mega:xwJ1jKbB"
+      ],
+      "record_id": "DISCORD_LIVE_LINK_2017_085"
+    },
+    {
+      "source_file": "2017.7.txt",
+      "date": "2017-07-27",
+      "date_as_recorded": "2017-07-27",
+      "date_correction": null,
+      "video_urls": [
+        "https://www.youtube.com/watch?v=OlUnE09XUSo&feature=youtu.be"
+      ],
+      "text_urls": [
+        "https://s.vog.media/Detail.htm?w=c5551293-cf50-4079-8dc3-7992478b5571"
+      ],
+      "title": "郭文贵7月27日报平安直播视频：王岐山的真姚庆到底怕什么？",
+      "video_keys": [
+        "youtube:OlUnE09XUSo"
+      ],
+      "text_keys": [
+        "vog:c5551293-cf50-4079-8dc3-7992478b5571"
+      ],
+      "record_id": "DISCORD_LIVE_LINK_2017_086"
+    },
+    {
+      "source_file": "2017.8.txt",
+      "date": "2017-08-02",
+      "date_as_recorded": "2017-08-02",
+      "date_correction": null,
+      "video_urls": [
+        "https://www.youtube.com/watch?v=hU-iBdFA1TM&t=162s"
+      ],
+      "text_urls": [
+        "https://gwins.org/cn/milesguo/727.html"
+      ],
+      "title": "",
+      "video_keys": [
+        "youtube:hU-iBdFA1TM"
+      ],
+      "text_keys": [
+        "gwins:727"
+      ],
+      "record_id": "DISCORD_LIVE_LINK_2017_087"
+    },
+    {
+      "source_file": "2017.8.txt",
+      "date": "2017-08-03",
+      "date_as_recorded": "2017-08-03",
+      "date_correction": null,
+      "video_urls": [
+        "https://www.youtube.com/watch?v=gc_Pgwd6N9U&t=1295s"
+      ],
+      "text_urls": [
+        "https://gwins.org/cn/milesguo/601.html"
+      ],
+      "title": "",
+      "video_keys": [
+        "youtube:gc_Pgwd6N9U"
+      ],
+      "text_keys": [
+        "gwins:601"
+      ],
+      "record_id": "DISCORD_LIVE_LINK_2017_088"
+    },
+    {
+      "source_file": "2017.8.txt",
+      "date": "2017-08-04",
+      "date_as_recorded": "2017-08-04",
+      "date_correction": null,
+      "video_urls": [
+        "https://www.youtube.com/watch?v=_JuyxpVGuMo&t=13s"
+      ],
+      "text_urls": [
+        "https://gwins.org/cn/milesguo/602.html"
+      ],
+      "title": "",
+      "video_keys": [
+        "youtube:_JuyxpVGuMo"
+      ],
+      "text_keys": [
+        "gwins:602"
+      ],
+      "record_id": "DISCORD_LIVE_LINK_2017_089"
+    },
+    {
+      "source_file": "2017.8.txt",
+      "date": "2017-08-05",
+      "date_as_recorded": "2017-08-05",
+      "date_correction": null,
+      "video_urls": [
+        "https://www.youtube.com/watch?v=AfUIP8_B9A4"
+      ],
+      "text_urls": [
+        "https://gwins.org/cn/milesguo/603.html"
+      ],
+      "title": "",
+      "video_keys": [
+        "youtube:AfUIP8_B9A4"
+      ],
+      "text_keys": [
+        "gwins:603"
+      ],
+      "record_id": "DISCORD_LIVE_LINK_2017_090"
+    },
+    {
+      "source_file": "2017.8.txt",
+      "date": "2017-08-07",
+      "date_as_recorded": "2017-08-07",
+      "date_correction": null,
+      "video_urls": [
+        "https://www.youtube.com/watch?v=lsyXYGGaAMI"
+      ],
+      "text_urls": [
+        "https://gwins.org/cn/milesguo/604.html"
+      ],
+      "title": "",
+      "video_keys": [
+        "youtube:lsyXYGGaAMI"
+      ],
+      "text_keys": [
+        "gwins:604"
+      ],
+      "record_id": "DISCORD_LIVE_LINK_2017_091"
+    },
+    {
+      "source_file": "2017.8.txt",
+      "date": "2017-08-09",
+      "date_as_recorded": "2017-08-09",
+      "date_correction": null,
+      "video_urls": [
+        "https://www.youtube.com/watch?v=76HdGobyFsc"
+      ],
+      "text_urls": [
+        "https://gwins.org/cn/milesguo/607.html"
+      ],
+      "title": "",
+      "video_keys": [
+        "youtube:76HdGobyFsc"
+      ],
+      "text_keys": [
+        "gwins:607"
+      ],
+      "record_id": "DISCORD_LIVE_LINK_2017_092"
+    },
+    {
+      "source_file": "2017.8.txt",
+      "date": "2017-08-13",
+      "date_as_recorded": "2017-08-13",
+      "date_correction": null,
+      "video_urls": [
+        "https://www.youtube.com/watch?v=gRbc6HlfZTY&t=12s"
+      ],
+      "text_urls": [
+        "https://gwins.org/cn/milesguo/21736.html"
+      ],
+      "title": "文贵先生喝多了说说心里话",
+      "video_keys": [
+        "youtube:gRbc6HlfZTY"
+      ],
+      "text_keys": [
+        "gwins:21736"
+      ],
+      "record_id": "DISCORD_LIVE_LINK_2017_093"
+    },
+    {
+      "source_file": "2017.8.txt",
+      "date": "2017-08-15",
+      "date_as_recorded": "2017-08-15",
+      "date_correction": null,
+      "video_urls": [
+        "https://www.youtube.com/watch?v=fhZ1ZPSkI4E"
+      ],
+      "text_urls": [
+        "https://gwins.org/cn/milesguo/605.html"
+      ],
+      "title": "文贵先生讲述盗国贼的黑司法侵吞财产的流氓手段",
+      "video_keys": [
+        "youtube:fhZ1ZPSkI4E"
+      ],
+      "text_keys": [
+        "gwins:605"
+      ],
+      "record_id": "DISCORD_LIVE_LINK_2017_094"
+    },
+    {
+      "source_file": "2017.8.txt",
+      "date": "2017-08-17",
+      "date_as_recorded": "2017-08-17",
+      "date_correction": null,
+      "video_urls": [
+        "https://www.youtube.com/watch?v=ekfcL587TSs"
+      ],
+      "text_urls": [],
+      "title": "一分钟短视频",
+      "video_keys": [
+        "youtube:ekfcL587TSs"
+      ],
+      "text_keys": [],
+      "record_id": "DISCORD_LIVE_LINK_2017_095"
+    },
+    {
+      "source_file": "2017.8.txt",
+      "date": "2017-08-18",
+      "date_as_recorded": "2017-08-18",
+      "date_correction": null,
+      "video_urls": [
+        "https://www.youtube.com/watch?v=rSPeoWHfKl8"
+      ],
+      "text_urls": [
+        "https://gwins.org/cn/milesguo/733.html"
+      ],
+      "title": "",
+      "video_keys": [
+        "youtube:rSPeoWHfKl8"
+      ],
+      "text_keys": [
+        "gwins:733"
+      ],
+      "record_id": "DISCORD_LIVE_LINK_2017_096"
+    },
+    {
+      "source_file": "2017.8.txt",
+      "date": "2017-08-20",
+      "date_as_recorded": "2017-08-20",
+      "date_correction": null,
+      "video_urls": [
+        "https://www.youtube.com/watch?v=xY0tTi8vM_w"
+      ],
+      "text_urls": [
+        "https://gwins.org/cn/milesguo/21737.html"
+      ],
+      "title": "",
+      "video_keys": [
+        "youtube:xY0tTi8vM_w"
+      ],
+      "text_keys": [
+        "gwins:21737"
+      ],
+      "record_id": "DISCORD_LIVE_LINK_2017_097"
+    },
+    {
+      "source_file": "2017.8.txt",
+      "date": "2017-08-21",
+      "date_as_recorded": "2017-08-21",
+      "date_correction": null,
+      "video_urls": [
+        "https://mega.nz/file/lh4kEQJL#cwyQmfKOFCKTEdgxLIFOvTsVcWTiZzQUGfNZBksFRBM"
+      ],
+      "text_urls": [
+        "https://gwins.org/cn/milesguo/735.html"
+      ],
+      "title": "",
+      "video_keys": [
+        "mega:lh4kEQJL"
+      ],
+      "text_keys": [
+        "gwins:735"
+      ],
+      "record_id": "DISCORD_LIVE_LINK_2017_098"
+    },
+    {
+      "source_file": "2017.8.txt",
+      "date": "2017-08-22",
+      "date_as_recorded": "2017-08-22",
+      "date_correction": null,
+      "video_urls": [
+        "https://www.youtube.com/watch?v=nWLng_-sjzk&feature=youtu.be"
+      ],
+      "text_urls": [
+        "https://gwins.org/cn/milesguo/740.html"
+      ],
+      "title": "第二次报平安 5分钟视频",
+      "video_keys": [
+        "youtube:nWLng_-sjzk"
+      ],
+      "text_keys": [
+        "gwins:740"
+      ],
+      "record_id": "DISCORD_LIVE_LINK_2017_099"
+    },
+    {
+      "source_file": "2017.8.txt",
+      "date": "2017-08-23",
+      "date_as_recorded": "2017-08-23",
+      "date_correction": null,
+      "video_urls": [
+        "https://www.youtube.com/watch?v=pWMyIRgbrrA"
+      ],
+      "text_urls": [],
+      "title": "5分钟视频无大事件",
+      "video_keys": [
+        "youtube:pWMyIRgbrrA"
+      ],
+      "text_keys": [],
+      "record_id": "DISCORD_LIVE_LINK_2017_100"
+    },
+    {
+      "source_file": "2017.8.txt",
+      "date": "2017-08-24",
+      "date_as_recorded": "2017-08-24",
+      "date_correction": null,
+      "video_urls": [
+        "https://www.youtube.com/watch?v=RoMToiKBoJE"
+      ],
+      "text_urls": [
+        "https://gwins.org/cn/milesguo/608.html"
+      ],
+      "title": "",
+      "video_keys": [
+        "youtube:RoMToiKBoJE"
+      ],
+      "text_keys": [
+        "gwins:608"
+      ],
+      "record_id": "DISCORD_LIVE_LINK_2017_101"
+    },
+    {
+      "source_file": "2017.8.txt",
+      "date": "2017-08-25",
+      "date_as_recorded": "2017-08-25",
+      "date_correction": null,
+      "video_urls": [
+        "https://www.youtube.com/watch?v=feERKrxcrOA"
+      ],
+      "text_urls": [
+        "https://gwins.org/cn/milesguo/742.html"
+      ],
+      "title": "郭先生谈宗教与中国政治及社会关系",
+      "video_keys": [
+        "youtube:feERKrxcrOA"
+      ],
+      "text_keys": [
+        "gwins:742"
+      ],
+      "record_id": "DISCORD_LIVE_LINK_2017_102"
+    },
+    {
+      "source_file": "2017.8.txt",
+      "date": "2017-08-27",
+      "date_as_recorded": "2017-08-27",
+      "date_correction": null,
+      "video_urls": [
+        "https://www.youtube.com/watch?v=C0TLB1bw8sk"
+      ],
+      "text_urls": [
+        "https://gwins.org/cn/milesguo/21739.html"
+      ],
+      "title": "郭先生澄清几条伪类造谣的内容",
+      "video_keys": [
+        "youtube:C0TLB1bw8sk"
+      ],
+      "text_keys": [
+        "gwins:21739"
+      ],
+      "record_id": "DISCORD_LIVE_LINK_2017_103"
+    },
+    {
+      "source_file": "2017.8.txt",
+      "date": "2017-08-28",
+      "date_as_recorded": "2017-08-28",
+      "date_correction": null,
+      "video_urls": [
+        "https://www.youtube.com/watch?v=IHrAtCTmqGA"
+      ],
+      "text_urls": [
+        "https://gwins.org/cn/milesguo/609.html"
+      ],
+      "title": "郭先生怒斥伪类们造谣！",
+      "video_keys": [
+        "youtube:IHrAtCTmqGA"
+      ],
+      "text_keys": [
+        "gwins:609"
+      ],
+      "record_id": "DISCORD_LIVE_LINK_2017_104"
+    },
+    {
+      "source_file": "2017.8.txt",
+      "date": "2017-08-30",
+      "date_as_recorded": "2017-08-30",
+      "date_correction": null,
+      "video_urls": [
+        "https://www.youtube.com/watch?v=iVN4XuSDdG0"
+      ],
+      "text_urls": [
+        "https://gwins.org/cn/milesguo/610.html"
+      ],
+      "title": "",
+      "video_keys": [
+        "youtube:iVN4XuSDdG0"
+      ],
+      "text_keys": [
+        "gwins:610"
+      ],
+      "record_id": "DISCORD_LIVE_LINK_2017_105"
+    },
+    {
+      "source_file": "2017.8.txt",
+      "date": "2017-08-31",
+      "date_as_recorded": "2017-08-31",
+      "date_correction": null,
+      "video_urls": [
+        "https://www.youtube.com/watch?v=hJYuR4pfh-g"
+      ],
+      "text_urls": [],
+      "title": "一分多短视频",
+      "video_keys": [
+        "youtube:hJYuR4pfh-g"
+      ],
+      "text_keys": [],
+      "record_id": "DISCORD_LIVE_LINK_2017_106"
+    },
+    {
+      "source_file": "2017.9.txt",
+      "date": "2017-09-01",
+      "date_as_recorded": "2017-09-01",
+      "date_correction": null,
+      "video_urls": [
+        "https://www.youtube.com/watch?v=Wi_xYWvULDY"
+      ],
+      "text_urls": [
+        "https://hqsbonline.wordpress.com/2017/09/10/%E9%83%AD%E6%96%87%E8%B4%B5%E4%B8%8E%E5%88%98%E5%BD%A6%E5%B9%B3%E9%80%9A%E8%AF%9D%E7%AC%AC%E4%BA%8C%E9%83%A8%E5%88%86%E5%BD%95%E9%9F%B3%E6%96%87%E7%A8%BF1-10/",
+        "https://gwins.org/cn/milesguo/611.html"
+      ],
+      "title": "",
+      "video_keys": [
+        "youtube:Wi_xYWvULDY"
+      ],
+      "text_keys": [
+        "https://hqsbonline.wordpress.com/2017/09/10/%E9%83%AD%E6%96%87%E8%B4%B5%E4%B8%8E%E5%88%98%E5%BD%A6%E5%B9%B3%E9%80%9A%E8%AF%9D%E7%AC%AC%E4%BA%8C%E9%83%A8%E5%88%86%E5%BD%95%E9%9F%B3%E6%96%87%E7%A8%BF1-10/",
+        "gwins:611"
+      ],
+      "record_id": "DISCORD_LIVE_LINK_2017_107"
+    },
+    {
+      "source_file": "2017.9.txt",
+      "date": "2017-09-02",
+      "date_as_recorded": "2017-09-02",
+      "date_correction": null,
+      "video_urls": [
+        "https://www.youtube.com/watch?v=JSSRGaMH1ho"
+      ],
+      "text_urls": [
+        "https://gwins.org/cn/milesguo/612.html"
+      ],
+      "title": "",
+      "video_keys": [
+        "youtube:JSSRGaMH1ho"
+      ],
+      "text_keys": [
+        "gwins:612"
+      ],
+      "record_id": "DISCORD_LIVE_LINK_2017_108"
+    },
+    {
+      "source_file": "2017.9.txt",
+      "date": "2017-09-04",
+      "date_as_recorded": "2017-09-04",
+      "date_correction": null,
+      "video_urls": [
+        "https://www.youtube.com/watch?v=E9GeTXTw7rM"
+      ],
+      "text_urls": [
+        "https://s.vog.media/Detail.htm?w=c0062256-a1bf-4b21-87a1-bb797fa665e2"
+      ],
+      "title": "",
+      "video_keys": [
+        "youtube:E9GeTXTw7rM"
+      ],
+      "text_keys": [
+        "vog:c0062256-a1bf-4b21-87a1-bb797fa665e2"
+      ],
+      "record_id": "DISCORD_LIVE_LINK_2017_109"
+    },
+    {
+      "source_file": "2017.9.txt",
+      "date": "2017-09-06",
+      "date_as_recorded": "2017-09-06",
+      "date_correction": null,
+      "video_urls": [
+        "https://www.youtube.com/watch?v=A9qtW5QLmLE"
+      ],
+      "text_urls": [
+        "https://s.vog.media/Detail.htm?w=d4b57681-b3da-445b-16b-fb77132f0985"
+      ],
+      "title": "",
+      "video_keys": [
+        "youtube:A9qtW5QLmLE"
+      ],
+      "text_keys": [
+        "vog:d4b57681-b3da-445b-16b-fb77132f0985"
+      ],
+      "record_id": "DISCORD_LIVE_LINK_2017_110"
+    },
+    {
+      "source_file": "2017.9.txt",
+      "date": "2017-09-07",
+      "date_as_recorded": "2017-09-07",
+      "date_correction": null,
+      "video_urls": [
+        "https://www.youtube.com/watch?v=A9qtW5QLmLE"
+      ],
+      "text_urls": [
+        "https://s.vog.media/Detail.htm?w=bb7ad8d3-3d46-4133-83a1-fe2c1d9ded91"
+      ],
+      "title": "",
+      "video_keys": [
+        "youtube:A9qtW5QLmLE"
+      ],
+      "text_keys": [
+        "vog:bb7ad8d3-3d46-4133-83a1-fe2c1d9ded91"
+      ],
+      "record_id": "DISCORD_LIVE_LINK_2017_111"
+    },
+    {
+      "source_file": "2017.9.txt",
+      "date": "2017-09-07",
+      "date_as_recorded": "2017-09-07",
+      "date_correction": null,
+      "video_urls": [
+        "https://www.youtube.com/watch?v=xW5TzUkUjrw"
+      ],
+      "text_urls": [
+        "https://s.vog.media/Detail.htm?w=65bb2477-9b2d-4371-a39f-bf162afcb664"
+      ],
+      "title": "",
+      "video_keys": [
+        "youtube:xW5TzUkUjrw"
+      ],
+      "text_keys": [
+        "vog:65bb2477-9b2d-4371-a39f-bf162afcb664"
+      ],
+      "record_id": "DISCORD_LIVE_LINK_2017_112"
+    },
+    {
+      "source_file": "2017.9.txt",
+      "date": "2017-09-08",
+      "date_as_recorded": "2017-09-08",
+      "date_correction": null,
+      "video_urls": [
+        "https://www.youtube.com/watch?v=RzoGHbjQ8Fc"
+      ],
+      "text_urls": [
+        "https://www.bannedbook.org/bnews/cbnews/20171125/838644.html"
+      ],
+      "title": "",
+      "video_keys": [
+        "youtube:RzoGHbjQ8Fc"
+      ],
+      "text_keys": [
+        "https://www.bannedbook.org/bnews/cbnews/20171125/838644.html"
+      ],
+      "record_id": "DISCORD_LIVE_LINK_2017_113"
+    },
+    {
+      "source_file": "2017.9.txt",
+      "date": "2017-09-09",
+      "date_as_recorded": "2017-09-09",
+      "date_correction": null,
+      "video_urls": [
+        "https://www.youtube.com/watch?v=BvbQaWcQVFQ"
+      ],
+      "text_urls": [
+        "https://s.vog.media/Detail.htm?w=2ddc91fb-475a-4221-87ee-2bf373307a79"
+      ],
+      "title": "",
+      "video_keys": [
+        "youtube:BvbQaWcQVFQ"
+      ],
+      "text_keys": [
+        "vog:2ddc91fb-475a-4221-87ee-2bf373307a79"
+      ],
+      "record_id": "DISCORD_LIVE_LINK_2017_114"
+    },
+    {
+      "source_file": "2017.9.txt",
+      "date": "2017-09-10",
+      "date_as_recorded": "2017-09-10",
+      "date_correction": null,
+      "video_urls": [
+        "https://www.youtube.com/watch?v=EOk2QpE4aAU"
+      ],
+      "text_urls": [
+        "https://s.vog.media/Detail.htm?w=8e3e1cd3-38d9-491f-a1c1-44145bc80b5e"
+      ],
+      "title": "",
+      "video_keys": [
+        "youtube:EOk2QpE4aAU"
+      ],
+      "text_keys": [
+        "vog:8e3e1cd3-38d9-491f-a1c1-44145bc80b5e"
+      ],
+      "record_id": "DISCORD_LIVE_LINK_2017_115"
+    },
+    {
+      "source_file": "2017.9.txt",
+      "date": "2017-09-13",
+      "date_as_recorded": "2017-09-13",
+      "date_correction": null,
+      "video_urls": [
+        "https://www.youtube.com/watch?v=q3Ed2mwFsjs"
+      ],
+      "text_urls": [
+        "https://s.vog.media/Detail.htm?w=d5c54c14-e3e2-4382-8ac3-2885afaa6ade"
+      ],
+      "title": "",
+      "video_keys": [
+        "youtube:q3Ed2mwFsjs"
+      ],
+      "text_keys": [
+        "vog:d5c54c14-e3e2-4382-8ac3-2885afaa6ade"
+      ],
+      "record_id": "DISCORD_LIVE_LINK_2017_116"
+    },
+    {
+      "source_file": "2017.9.txt",
+      "date": "2017-09-15",
+      "date_as_recorded": "2017-09-15",
+      "date_correction": null,
+      "video_urls": [
+        "https://www.youtube.com/watch?v=EZ798Cm2SbM"
+      ],
+      "text_urls": [
+        "https://s.vog.media/Detail.htm?w=e2131b-5e6e-4460-9d48-9084e9b4e76f"
+      ],
+      "title": "",
+      "video_keys": [
+        "youtube:EZ798Cm2SbM"
+      ],
+      "text_keys": [
+        "vog:e2131b-5e6e-4460-9d48-9084e9b4e76f"
+      ],
+      "record_id": "DISCORD_LIVE_LINK_2017_117"
+    },
+    {
+      "source_file": "2017.9.txt",
+      "date": "2017-09-19",
+      "date_as_recorded": "2017-09-19",
+      "date_correction": null,
+      "video_urls": [
+        "https://www.youtube.com/watch?v=mxCoZLCM0us",
+        "https://gwins.org/cn/milesguo/693.html"
+      ],
+      "text_urls": [],
+      "title": "明镜专访第六期",
+      "video_keys": [
+        "youtube:mxCoZLCM0us",
+        "gwins:693"
+      ],
+      "text_keys": [],
+      "record_id": "DISCORD_LIVE_LINK_2017_118"
+    },
+    {
+      "source_file": "2017.txt",
+      "date": "2017-01-27",
+      "date_as_recorded": "2017-01-27",
+      "date_correction": null,
+      "video_urls": [
+        "https://www.youtube.com/watch?v=izKtmxr7LrA"
+      ],
+      "text_urls": [
+        "https://gwins.org/cn/milesguo/744.html"
+      ],
+      "title": "明镜电视专访郭文贵（第一集）",
+      "video_keys": [
+        "youtube:izKtmxr7LrA"
+      ],
+      "text_keys": [
+        "gwins:744"
+      ],
+      "record_id": "DISCORD_LIVE_LINK_2017_119"
+    },
+    {
+      "source_file": "2017.txt",
+      "date": "2017-03-08",
+      "date_as_recorded": "2017-03-08",
+      "date_correction": null,
+      "video_urls": [
+        "https://www.youtube.com/watch?v=lNKPfv59KYo&list=PLPtqXDazFwi0f8ojKTVYZEEZPdACciAE2&index=1"
+      ],
+      "text_urls": [
+        "https://gwins.org/cn/milesguo/743.html"
+      ],
+      "title": "明镜电视专访郭文贵（第二集）",
+      "video_keys": [
+        "youtube:lNKPfv59KYo"
+      ],
+      "text_keys": [
+        "gwins:743"
+      ],
+      "record_id": "DISCORD_LIVE_LINK_2017_120"
+    }
+  ]
+}
