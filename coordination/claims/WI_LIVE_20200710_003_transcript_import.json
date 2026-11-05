@@ -3,7 +3,7 @@
   "agent_id": "gpt-agent-hard-asr-b-20261105",
   "claimed_at": "2026-11-05T04:07:41.883135+00:00",
   "base_commit": "d105f873c45950aad16e32f41452f48a21e9d9bb",
-  "status": "in_progress",
+  "status": "released",
   "workflow_mode": "continuous-worker-v2",
   "claim_protocol": "claim-protocol-v2",
   "entry_mode": "work",
@@ -28,5 +28,7 @@
     "authorized_at": "2026-11-05T04:06:00Z",
     "scope": "immediate retry of hardest remaining transcript items",
     "method_constraint": "manual playback and human transcription only; no MLX, ASR model, paid API, or synthetic timestamps"
-  }
+  },
+  "released_at": "2026-11-05T04:09:33.401921+00:00",
+  "release_reason": "User-authorized cooldown override; public playable mirror https://www.youtube.com/watch?v=smd2X1csRoI was located and downloaded to ephemeral storage, but this GPT agent runtime explicitly reports that audio input is unsupported, so it cannot actually hear or manually transcribe the recording. MLX/ASR use is forbidden; no transcript or timestamps were fabricated. Claim released for an audio-capable human/GPT runtime."
 }
