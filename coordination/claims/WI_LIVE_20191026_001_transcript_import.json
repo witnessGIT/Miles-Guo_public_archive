@@ -1,9 +1,9 @@
 {
   "task_id": "WI_LIVE_20191026_001_transcript_import",
-  "agent_id": "github-actions-cloud-asr-41829998341",
-  "claimed_at": "2026-11-04T12:34:45.618844+00:00",
-  "base_commit": "f51ccf360359b4f97b28a1bd009ec8dc941ba55e",
-  "status": "released",
+  "agent_id": "codex-hard-asr-sources-a-20261105",
+  "claimed_at": "2026-11-05T04:09:15.783059+00:00",
+  "base_commit": "c98a39fd695422aab0bc3be8c47193c7a4467d5b",
+  "status": "in_progress",
   "workflow_mode": "continuous-worker-v2",
   "claim_protocol": "claim-protocol-v2",
   "entry_mode": "work",
@@ -21,8 +21,10 @@
     "WI_LIVE_20191026_001_metadata_fill"
   ],
   "scope": "Import source transcript or ASR text without overwriting original text.",
+  "retry_cooldown_override": true,
+  "retry_cooldown_hours": 0,
+  "retry_cooldown_override_basis": "Explicit user authorization on 2026-11-05 to immediately waive retry cooldown for GPT-agent handling of the 28 hardest remaining transcripts.",
+  "processing_method": "verified_source_original_import_no_asr",
   "reclaimed_expired_claim": true,
-  "static_claim_lease_hours": 24,
-  "released_at": "2026-11-04T12:41:12.139731+00:00",
-  "release_reason": "GitHub-hosted runner could not complete media access or ASR; retained for retry"
+  "static_claim_lease_hours": 24
 }
