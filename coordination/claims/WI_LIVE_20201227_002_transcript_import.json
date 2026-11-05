@@ -3,7 +3,7 @@
   "agent_id": "codex-gpt-manual-listen-tail-c",
   "claimed_at": "2026-11-05T04:07:48.012652+00:00",
   "base_commit": "d105f873c45950aad16e32f41452f48a21e9d9bb",
-  "status": "in_progress",
+  "status": "released",
   "workflow_mode": "continuous-worker-v2",
   "claim_protocol": "claim-protocol-v2",
   "entry_mode": "work",
@@ -25,5 +25,7 @@
   "retry_cooldown_override_authority": "explicit_user_instruction_2026-11-05",
   "execution_method": "actual_media_playback_and_manual_dictation_only_no_asr",
   "reclaimed_expired_claim": true,
-  "static_claim_lease_hours": 24
+  "static_claim_lease_hours": 24,
+  "released_at": "2026-11-05T04:08:34.292249+00:00",
+  "release_reason": "Manual-listening source search found only editorial transcript pages and no actual playable media; MEGA asset not mounted; retry when playable source is available"
 }

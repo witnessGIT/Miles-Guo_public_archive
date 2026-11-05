@@ -1,0 +1,39 @@
+{
+  "schema_version": "manual-transcript-attempt-v1",
+  "live_id": "LIVE_20201227_002",
+  "generated_at": "2026-11-05T04:10:00Z",
+  "agent_id": "codex-gpt-manual-listen-tail-c",
+  "status": "manual_media_source_not_found",
+  "retry_queue": "normal",
+  "paid_api_used": false,
+  "asr_used": false,
+  "model_output_used": false,
+  "manual_dictation_started": false,
+  "media_committed_to_git": false,
+  "retry_cooldown_override": true,
+  "retry_cooldown_override_authority": "explicit_user_instruction_2026-11-05",
+  "source_checks": [
+    {
+      "url": "https://gwins.org/cn/milesguo/22353.html",
+      "result": "reachable_text_page_only",
+      "evidence": "HTTP page contains a full editorial text transcript, but its 视频链接 anchor is empty and subtitle links resolve from empty filenames; no playable audio/video URL is present. The editorial text was not used as manual dictation."
+    },
+    {
+      "url": "https://miles.md/en/adm",
+      "result": "reachable_text_page_only",
+      "evidence": "Mirrored editorial transcript is reachable, but page inspection found no audio, video, mp3, m4a, mp4 or m3u8 source. The text was not used as manual dictation."
+    },
+    {
+      "query": "exact title and source id 20201227_2 with mp3/mp4/YouTube/Rumble/Odysee terms",
+      "result": "no_playable_source_found",
+      "evidence": "Public results resolved only to GWINS/miles.md transcript or index pages; no independently playable media result was found."
+    },
+    {
+      "source": "user-designated MEGA cloud drive",
+      "result": "not_available_in_attached_filesystem",
+      "evidence": "No mounted MEGA path or user-provided per-item MEGA link is available to this worker."
+    }
+  ],
+  "error": "No actual playable media source was available for required listen-and-manually-dictate processing; existing web transcripts were deliberately not substituted for listening.",
+  "next_action": "Retry only when a verifiable playable media URL or mounted user MEGA asset is available; do not mark media nonexistent."
+}
