@@ -1,9 +1,9 @@
 {
   "task_id": "WI_LIVE_20220419_001_entity_pass",
-  "agent_id": "github-actions-cloud-entity-41764991235",
-  "claimed_at": "2026-11-04T03:08:35.812169+00:00",
-  "base_commit": "16fdcd646352fb9652064157ff7ece8054309a78",
-  "status": "released",
+  "agent_id": "github-actions-cloud-entity-42025070644",
+  "claimed_at": "2026-11-05T13:01:19.299447+00:00",
+  "base_commit": "6ac9c83e67f9a287c6ed7a9ece69a04bf0182397",
+  "status": "in_progress",
   "workflow_mode": "continuous-worker-v2",
   "claim_protocol": "claim-protocol-v2",
   "entry_mode": "work",
@@ -22,7 +22,5 @@
   ],
   "scope": "Extract speakers, people, organizations, places and mentioned entities.",
   "reclaimed_expired_claim": true,
-  "static_claim_lease_hours": 24,
-  "released_at": "2026-11-04T03:55:50.693318+00:00",
-  "release_reason": "Cloud entity inference timed out after 2700 seconds; retained for retry"
+  "static_claim_lease_hours": 24
 }
