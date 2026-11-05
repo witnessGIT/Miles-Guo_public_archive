@@ -24,6 +24,7 @@ DATASETS: tuple[tuple[str, str], ...] = (
     ("source_candidates", "source_candidates"),
     ("source_boundaries", "source_boundaries"),
     ("live_videos", "live_videos"),
+    ("video_catalog", "video_catalog"),
     ("sources", "live_sources"),
     ("live_work_items", "live_work_items"),
     ("live_segments", "live_segments"),

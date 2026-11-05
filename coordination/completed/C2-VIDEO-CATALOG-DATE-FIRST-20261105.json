@@ -1,0 +1,45 @@
+{
+  "task_id": "C2-VIDEO-CATALOG-DATE-FIRST-20261105",
+  "agent_id": "codex-date-first-video-catalog-20261105",
+  "status": "completed",
+  "completed_at": "2026-11-05T08:18:28Z",
+  "workflow_mode": "continuous-worker-v2",
+  "claim_protocol": "claim-protocol-v2",
+  "kind": "catalog_normalization",
+  "natural_boundary": "data/source_page_evidence/discord/discord_project_live_master_by_date.jsonl",
+  "outputs": [
+    "data/current/video_catalog/date_first_video_catalog.jsonl",
+    "data/source_page_evidence/discord/date_first_video_catalog_summary.json",
+    "docs/VIDEO_CATALOG_AND_KEY_POINTS_POLICY.md",
+    "docs/DISCORD_LIVE_LINK_AUDIT.md",
+    "docs/FIELD_DICTIONARY.md",
+    "schema/schema.sql",
+    "scripts/build_db.py",
+    "scripts/validate_db.py"
+  ],
+  "video_count": 2785,
+  "existing_canonical_livestream_links": 1750,
+  "candidate_provenance_links": 1035,
+  "duplicate_video_ids": 0,
+  "active_url_collisions": 0,
+  "terminology": {
+    "preferred": "video_key_points",
+    "legacy_internal": "key_points_topics"
+  },
+  "classification_counts": {
+    "livestream": 1903,
+    "standalone_video": 466,
+    "platform_update": 291,
+    "other_video": 66,
+    "interview": 31,
+    "call_or_linkup": 21,
+    "short_video": 7
+  },
+  "validation": {
+    "database_build": "video_catalog: 2785",
+    "database_validation": "OK with 31 pre-existing review warnings",
+    "tests": "148 passed"
+  },
+  "notes": "Every reconciled non-duplicate item is now a canonical standalone video. Existing LIVE identities remain unchanged. Generic standalone/other classifications remain eligible for finer transcript- or playback-backed classification.",
+  "continue_after_finish": true
+}

@@ -1,0 +1,44 @@
+{
+  "generated_at": "2026-11-05T08:12:09Z",
+  "policy": "Every reconciled non-duplicate item is a standalone canonical video. Mirrors remain sources of one video. Livestream is one content classification, not the catalog boundary.",
+  "terminology": {
+    "preferred": "video_key_points",
+    "legacy_internal": "key_points_topics"
+  },
+  "total_videos": 2785,
+  "canonical_livestream_links": 1750,
+  "candidate_provenance_links": 1035,
+  "exact_date_count": 1668,
+  "date_span": [
+    "2004-08-01",
+    "2023-03-14"
+  ],
+  "video_type_counts": {
+    "call_or_linkup": 21,
+    "interview": 31,
+    "livestream": 1903,
+    "other_video": 66,
+    "platform_update": 291,
+    "short_video": 7,
+    "standalone_video": 466
+  },
+  "classification_status_counts": {
+    "confirmed_canonical": 1750,
+    "explicit_title_label": 7,
+    "needs_content_review": 532,
+    "platform_and_title_metadata": 291,
+    "source_labeled": 153,
+    "title_and_source_metadata": 52
+  },
+  "deduplication_checks": {
+    "duplicate_video_ids": 0,
+    "duplicate_canonical_live_ids": 0,
+    "duplicate_source_candidate_ids": 0,
+    "duplicate_source_video_ids": 0,
+    "active_url_collisions": 0
+  },
+  "limitations": [
+    "Generic standalone_video and other_video entries require transcript or playback review before finer classification.",
+    "The 2015 record has year precision only; no day was fabricated."
+  ]
+}

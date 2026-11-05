@@ -103,6 +103,30 @@ is complete; agents should append newly discovered adjacent boundaries as new ro
 | `depends_on` | text | no | Optional dependency task ID or JSON text. |
 | `metadata_json` | JSON text | no | Raw navigation/search metadata. |
 
+### `video_catalog`
+
+The date-first catalog of every independently identified, non-duplicate video. A mirror is a
+source of the same video, not another video. The catalog includes livestreams, short videos,
+interviews, calls/link-ups, platform updates, standalone videos, and other videos.
+
+| Field | Type | Required | How to fill |
+|---|---:|---:|---|
+| `video_id` | text | yes | Stable `VIDEO_YYYYMMDD_NNN`; use `YYYY0000` when only the year is known rather than fabricating a day. |
+| `date`, `date_precision`, `date_sequence` | text/integer | yes | Known date, its precision, and ordering among videos on the same exact date. |
+| `title` | text | yes | Best source-backed title. |
+| `video_type` | enum | yes | `livestream`, `short_video`, `interview`, `call_or_linkup`, `platform_update`, `standalone_video`, or `other_video`. |
+| `classification_status` | enum/text | yes | Evidence level such as `confirmed_canonical`, `source_labeled`, or `needs_content_review`. |
+| `content_tags` | JSON array | yes | Additional non-exclusive content signals from the title and source metadata. |
+| `canonical_live_id` | text | no | Existing `LIVE_...` identity when the video is an established livestream. |
+| `source_candidate_id` | text | no | Preserved discovery provenance for videos not previously in `live_videos`. |
+| `catalog_status` | enum/text | yes | `canonical_video` for a reconciled independent video. |
+| `active_sources` | JSON array | yes | Verified active source and mirror links. |
+| `inactive_or_restricted_sources` | JSON array | yes | Dead, unavailable, or access-restricted links retained only as evidence. |
+
+User-facing summaries and future content work call the output **video key points**
+(`video_key_points`). The legacy internal stage/table name `key_points_topics` remains for
+backward compatibility and must not be presented as a livestream-only boundary.
+
 ### `live_videos`
 
 One canonical livestream record.

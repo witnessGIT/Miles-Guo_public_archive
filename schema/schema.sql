@@ -65,6 +65,30 @@ CREATE TABLE IF NOT EXISTS source_candidates (
     metadata_json TEXT
 );
 
+CREATE TABLE IF NOT EXISTS video_catalog (
+    video_id TEXT PRIMARY KEY,
+    date TEXT NOT NULL,
+    date_precision TEXT NOT NULL CHECK (date_precision IN ('day','year')),
+    date_sequence INTEGER,
+    title TEXT NOT NULL,
+    video_type TEXT NOT NULL CHECK (video_type IN (
+        'livestream','short_video','interview','call_or_linkup',
+        'platform_update','standalone_video','other_video'
+    )),
+    classification_status TEXT NOT NULL,
+    content_tags TEXT NOT NULL,
+    canonical_live_id TEXT REFERENCES live_videos(id) ON DELETE SET NULL,
+    source_candidate_id TEXT REFERENCES source_candidates(id) ON DELETE SET NULL,
+    source_video_id TEXT,
+    catalog_status TEXT NOT NULL CHECK (catalog_status IN ('canonical_video')),
+    video_key_points_term TEXT NOT NULL DEFAULT 'video_key_points',
+    active_sources TEXT NOT NULL,
+    inactive_or_restricted_sources TEXT NOT NULL,
+    evidence_origins TEXT NOT NULL,
+    deduplication_basis TEXT NOT NULL,
+    review_note TEXT
+);
+
 CREATE TABLE IF NOT EXISTS source_boundaries (
     id TEXT PRIMARY KEY,
     source_site TEXT NOT NULL,

@@ -16,6 +16,7 @@ from build_db import (
 PROJECT_NAME = "Miles-Guo_public_archive"
 
 LIVE_ID_RE = re.compile(r"^LIVE_\d{8}_\d{3}$")
+VIDEO_ID_RE = re.compile(r"^VIDEO_\d{8}_\d{3}$")
 SEGMENT_ID_RE = re.compile(r"^LIVE_\d{8}_\d{3}_SEG_\d{6}$")
 SOURCE_ID_RE = re.compile(r"^SRC_[A-Za-z0-9_.-]+$")
 SHA256_RE = re.compile(r"^[0-9a-f]{64}$")
@@ -24,6 +25,7 @@ REQUIRED_TABLES = {
     "source_candidates",
     "source_boundaries",
     "live_videos",
+    "video_catalog",
     "live_sources",
     "live_work_items",
     "live_segments",
@@ -133,6 +135,32 @@ def validate() -> tuple[list[str], list[str], dict[str, int]]:
             live_id = str(row["id"])
             if not LIVE_ID_RE.fullmatch(live_id):
                 add_error(errors, f"invalid live_id format: {live_id}")
+
+        # Every reconciled non-duplicate item is a standalone video. Livestream
+        # remains a content classification and an optional canonical relationship.
+        for row in conn.execute(
+            """
+            SELECT video_id, date, date_precision, video_type, catalog_status,
+                   video_key_points_term
+            FROM video_catalog
+            ORDER BY date, date_sequence, video_id
+            """
+        ):
+            video_id = str(row["video_id"])
+            if not VIDEO_ID_RE.fullmatch(video_id):
+                add_error(errors, f"invalid video_id format: {video_id}")
+            if row["date_precision"] == "day" and not re.fullmatch(
+                r"\d{4}-\d{2}-\d{2}", str(row["date"])
+            ):
+                add_error(errors, f"day-precision video has invalid date: {video_id}")
+            if row["date_precision"] == "year" and not re.fullmatch(
+                r"\d{4}", str(row["date"])
+            ):
+                add_error(errors, f"year-precision video has invalid date: {video_id}")
+            if row["catalog_status"] != "canonical_video":
+                add_error(errors, f"video is not canonical_video: {video_id}")
+            if row["video_key_points_term"] != "video_key_points":
+                add_error(errors, f"video key-points terminology mismatch: {video_id}")
 
         # Source candidates are the safe first-stage inventory unit.
         for row in conn.execute(
