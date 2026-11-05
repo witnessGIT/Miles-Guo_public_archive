@@ -1,0 +1,15 @@
+{
+  "task_id": "C2-VIDEO-CATALOG-DATE-FIRST-20261105",
+  "agent_id": "codex-date-first-video-catalog-20261105",
+  "claimed_at": "2026-11-05T08:12:09Z",
+  "base_commit": "3b4ffea229784cdff75dd760b1907f0f8f78a863",
+  "status": "in_progress",
+  "entry_mode": "ordinary_chat",
+  "continue_after_finish": true,
+  "kind": "catalog_normalization",
+  "scope": "Create a canonical date-first standalone-video catalog from the reconciled 2,785-row inventory. Preserve all non-duplicate items as separate videos regardless of livestream/interview/short-video/GETTR classification; attach confirmed mirrors to one video; retain the existing 1,750 livestream identities without relabeling non-livestream videos as livestreams.",
+  "natural_boundary": "data/source_page_evidence/discord/discord_project_live_master_by_date.jsonl",
+  "workflow_mode": "continuous-worker-v2",
+  "claim_protocol": "claim-protocol-v2",
+  "reclaimed_expired_claim": false
+}
