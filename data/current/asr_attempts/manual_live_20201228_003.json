@@ -1,0 +1,34 @@
+{
+  "schema_version": "manual-transcript-attempt-v1",
+  "live_id": "LIVE_20201228_003",
+  "generated_at": "2026-11-05T04:15:00Z",
+  "agent_id": "codex-gpt-manual-listen-tail-c",
+  "status": "manual_media_source_not_found",
+  "retry_queue": "normal",
+  "paid_api_used": false,
+  "asr_used": false,
+  "model_output_used": false,
+  "manual_dictation_started": false,
+  "media_committed_to_git": false,
+  "retry_cooldown_override": true,
+  "retry_cooldown_override_authority": "explicit_user_instruction_2026-11-05",
+  "source_checks": [
+    {
+      "url": "https://gwins.org/cn/milesguo/22356.html",
+      "result": "reachable_text_page_only",
+      "evidence": "Page contains an editorial text transcript, but no playable audio/video source; its video link is empty and subtitle links use empty filenames. The editorial text was not used as dictation."
+    },
+    {
+      "query": "exact title and source id 20201228_3 with mp3/mp4/YouTube/Rumble/Odysee terms",
+      "result": "no_playable_source_found",
+      "evidence": "Public results resolved only to GWINS transcript/index pages and unrelated filename collisions; no independently playable media was found."
+    },
+    {
+      "source": "user-designated MEGA cloud drive",
+      "result": "not_available_in_attached_filesystem",
+      "evidence": "No mounted MEGA path or user-provided per-item MEGA link is available to this worker."
+    }
+  ],
+  "error": "No actual playable media source was available for listen-and-manually-dictate processing; web transcript was not substituted.",
+  "next_action": "Retry when a verifiable playable media URL or mounted user MEGA asset is available; do not mark media nonexistent."
+}
