@@ -1,0 +1,15 @@
+{
+  "task_id": "C1-DISCORD-GWINS-DOCX-2004-2022",
+  "agent_id": "codex-discord-live-index-20261105",
+  "claimed_at": "2026-11-05T07:29:29Z",
+  "base_commit": "f27384376f2ffff918cf87d7625492ee80cd420a",
+  "status": "in_progress",
+  "entry_mode": "work",
+  "continue_after_finish": true,
+  "kind": "source_discovery",
+  "scope": "Reconcile the user-provided linked-title DOCX and Discord livestream-link material by date; verify URLs; add only previously absent GWINS detail-page source candidates; preserve noncanonical and ambiguous records for later identity review.",
+  "natural_boundary": "User-provided 1.docx (SHA-256 fb326ab6f181318a73a501c132ab0f4f4d77ab73250a1b140934598681486676) plus Discord server 821933739307040799 livestream-link rooms and attachments",
+  "workflow_mode": "continuous-worker-v2",
+  "claim_protocol": "claim-protocol-v2",
+  "reclaimed_expired_claim": false
+}
