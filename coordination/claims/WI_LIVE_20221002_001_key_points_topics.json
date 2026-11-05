@@ -1,9 +1,9 @@
 {
   "task_id": "WI_LIVE_20221002_001_key_points_topics",
   "agent_id": "codex-local-asr-agent50-20261031",
-  "claimed_at": "2026-11-02T20:33:23.516036+00:00",
-  "base_commit": "35df198c216f85908c1ce9cf3ffd85e0fc166073",
-  "status": "released",
+  "claimed_at": "2026-11-05T00:23:31.879033+00:00",
+  "base_commit": "a35e97a81e68cc0eec32d82244857fb2de2821b5",
+  "status": "in_progress",
   "workflow_mode": "continuous-worker-v2",
   "claim_protocol": "claim-protocol-v2",
   "entry_mode": "work",
@@ -22,7 +22,5 @@
   ],
   "scope": "Create evidence-grounded neutral key points and controlled topic assignments.",
   "reclaimed_expired_claim": true,
-  "static_claim_lease_hours": 24,
-  "released_at": "2026-11-03T23:46:46.065120+00:00",
-  "release_reason": "Local MLX key-point retry exceeded 7200-second item timeout and remained blocked for more than 27 hours; process interrupted, no complete result published, retained for later retry"
+  "static_claim_lease_hours": 24
 }
