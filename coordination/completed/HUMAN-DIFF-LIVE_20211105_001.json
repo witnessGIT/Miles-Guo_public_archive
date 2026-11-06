@@ -1,0 +1,19 @@
+{
+  "task_id": "HUMAN-DIFF-LIVE_20211105_001",
+  "agent_id": "codex-discord-human-diff-20261106",
+  "completed_at": "2026-11-06T01:30:00Z",
+  "result_commit": "c1215a9b91bec43401d14df72ff8f4954b56c69b",
+  "outputs": [
+    "data/current/sources/discord_gtv_human_transcripts_2021.jsonl",
+    "data/current/transcript_versions/corrected_live_20211105_001_discord_gtv.jsonl",
+    "data/current/verification_checks/discord_human_transcript_diffs_2021.jsonl",
+    "docs/DISCORD_TRANSCRIPT_AUDIT.md"
+  ],
+  "validation": "Discord T-prefixed human-proofread document matched by date, title, duration, opening and closing; DOCX and extracted-text SHA-256 recorded; prior ASR retained; no synthetic cue timing; build_db and validate_db passed; 148 tests passed.",
+  "workflow_mode": "continuous-worker-v2",
+  "claim_protocol": "claim-protocol-v2",
+  "entry_mode": "work",
+  "continue_after_finish": true,
+  "finish_prerequisites_revalidated": true,
+  "notes": "Imported as an independent corrected human transcript. Sparse document time marks remain locator evidence only and do not constitute playback verification."
+}
