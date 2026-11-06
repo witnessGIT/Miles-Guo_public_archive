@@ -4,14 +4,24 @@ This audit records human transcript material found in the Discord server `821933
 
 ## Quality order
 
-The server instructions define these filename stages:
+The server workflow document defines these filename stages. The archive owner further clarified
+that every `T`-prefixed file in this Discord collection has already received human proofreading,
+so `T` is imported as `human_proofread` / `corrected`, never as an unproofread draft:
 
 1. `TZ...-J` re-edited and proofread
 2. `TZ...` re-edited
-3. `T...-J` proofread transcript
-4. `T...` transcript
+3. `T...-J` additionally proofread transcript
+4. `T...` human-proofread transcript
 
 When several versions map to the same live, the highest available stage is preferred. Earlier versions remain provenance and are not used to overwrite a better human version. Human transcripts remain separate from machine ASR.
+
+The server's six-page workflow document describes `TZ` as “听写再编辑文本”: the human transcript
+is re-edited while preserving the video's meaning, removing filler words, and smoothing sentence
+logic. `TZ...-J` is the further proofread form of that re-edited text. Across the 590 attachment
+occurrences in the fully loaded channel audit, no actual `TZ`-prefixed attachment was found:
+attachment occurrences `0`, unique original filenames `0`, unique file SHA-256 values `0`, and
+distinct dates/lives `0` (`TZ` `0`, `TZ-J` `0`, other `TZ` variants `0`). The stage therefore
+remains a documented workflow convention rather than discovered transcript coverage.
 
 ## Channel inventory
 
@@ -25,7 +35,7 @@ Counts below were obtained by loading each channel's full virtualized history in
 | archived 听写原文 | `821935829668593674` | 19 attachments | Earlier 2017 human transcript archive. |
 | 工作分享 | `831782777434538024` | 1 DOCX plus external bundle | `20181.docx` contains January 2018 material. A MEGA/GNEWS bundle contains February 2018 human-edited material. |
 | GTV 听写文本 | `896946673807401041` | 245 attachments | 242 DOCX and 3 XLSX files: 95 filenames dated in 2020 and 150 in 2021. They cover 222 distinct filename dates from April 4, 2020 through December 26, 2021. |
-| GTV 要点初稿 | `892756248179654717` | 315 attachments | Mostly derived XLSX key-point sheets, but also 9 DOCX files. Three full human transcripts absent from the GTV transcript-room filename set were confirmed: `T2021.10.29` (74,778 characters, 780 paragraphs, time marks through 03:55:51), `T2021.11.05` (73,247 characters, 806 paragraphs, time marks through 04:16:50), and `T2021.11.07` (88,171 characters, 900 paragraphs, time marks through 04:55:38). `Y2021.09.17`, `Y2021.09.21`, and `Y2021.09.26` are derived summaries, but each records a public GNEWS URL for its human source transcript. |
+| GTV 要点初稿 | `892756248179654717` | 315 attachments | Mostly derived XLSX key-point sheets, but also 9 DOCX files. Three full human-proofread transcripts absent from the GTV transcript-room filename set were confirmed: `T2021.10.29` (74,778 characters, 780 paragraphs, source locator lines through 04:02:49), `T2021.11.05` (73,247 characters, 806 paragraphs, locator lines through 04:16:50), and `T2021.11.07` (88,171 characters, 900 paragraphs, locator lines through 04:55:38). `Y2021.09.17`, `Y2021.09.21`, and `Y2021.09.26` are derived summaries, but each records a public GNEWS URL for its human source transcript. |
 | 聊天室 | `821933739307040804` | 20 attachments | Contains 11 DOC/DOCX transcript candidates from 2020 through January 2022, four XLSX files, one executable, and other miscellaneous documents. The transcript candidates must be compared with GTV-room versions before import. |
 | 报名区 | `822474486581690408` | 1 DOCX attachment | `Y2021.09.26.docx`, probably a derived key-point file; retain for comparison with the same-date GTV files. |
 | 直播链接补充 | `821933739307040801` | 44 DOCX drafts, 10 TXT link indexes, and later link messages | The ten TXT indexes contain 120 deduplicated curated records on 111 dates, all with at least one playback link. Later messages repeat some entries and add unique mirrors. See `docs/DISCORD_LIVE_LINK_AUDIT.md`. Attached AI drafts are lower priority than human or public edited text. |
@@ -52,11 +62,12 @@ Counts below were obtained by loading each channel's full virtualized history in
 - Twelve additional human documents were imported in commit `0b0828b31`.
 - The January 2018 compilation was imported in commit `bbf098e78`.
 - Twenty-nine February 2018 human-edited GWINS transcripts were imported in commit `40a7537c9`.
-- `T2021.11.20.docx` was imported as a separate human `source_original` version in commit `457d45127`; its transcript-import completion was published in `fd52084bc`.
+- `T2021.11.20.docx` was initially imported as a separate human version in commit `457d45127`; its transcript-import completion was published in `fd52084bc`. Its metadata was later corrected from the legacy `source_original` classification to `human_proofread` / `corrected` after the archive owner clarified the meaning of all `T`-prefixed files. The legacy path name is retained only for stable history.
+- `T2021.10.29.docx`, `T2021.11.05.docx`, and `T2021.11.07.docx` were identity-checked against their canonical long-form videos and imported as separate human `corrected` versions. Their machine ASR versions remain unchanged and linked as parent versions for comparison.
 
 ## 2021-11-20 verification
 
-The Discord file is a complete long-form event transcript rather than a short excerpt:
+The Discord file is a complete long-form, human-proofread event transcript rather than a short excerpt:
 
 - original filename: `T2021.11.20.docx`
 - Discord channel: `896946673807401041`
@@ -66,7 +77,7 @@ The Discord file is a complete long-form event transcript rather than a short ex
 - document time marks extend through `09:26:50`
 - exact date and event heading match `LIVE_20211120_001`
 
-The DOCX binary remains outside Git. The repository stores only the structured transcript and provenance record.
+The DOCX binary remains outside Git. The repository stores only the structured corrected transcript and provenance record. The `T` prefix is marked `human_proofread` / `corrected` according to the archive owner's clarification.
 
 ## Remaining search gap
 
