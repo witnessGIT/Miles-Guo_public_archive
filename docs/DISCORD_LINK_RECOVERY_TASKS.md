@@ -1,12 +1,12 @@
 # Discord Direct Playback Link Recovery Queue
 
-Generated from the date-first Discord/project master at `2026-11-10T08:04:59+00:00`.
+Generated from the date-first Discord/project master at `2026-11-10T09:00:54+00:00`.
 A reachable archive or detail page is not counted as a direct playback URL.
 
 ## Queue summary
 
-- Open tasks: **689**
-- Legacy canonical LIVE_ tasks (process first): **17**
+- Open tasks: **687**
+- Legacy canonical LIVE_ tasks (process first): **15**
 - VIDEO/source-candidate tasks (deferred until legacy completion): **672**
 - Every task preserves its current archive/detail links and requires exact identity evidence.
 - An exhaustive search with no result stays `unresolved`; it is not labelled media-missing.
@@ -30,8 +30,6 @@ A reachable archive or detail page is not counted as a direct playback URL.
 | `LINKREC_LIVE_20201230_002_direct_playback` | 2020-12-30 | `LIVE_20201230_002` | 郭文贵2020年12月30日音频聊天 20201230_2 郭先生喜马拉雅大使馆discord群答疑录音 | https://gwins.org/cn/milesguo/22362.html |
 | `LINKREC_LIVE_20201231_003_direct_playback` | 2020-12-31 | `LIVE_20201231_003` | 郭文贵2020年12月31日音频聊天 20201231_3 郭先生喜马拉雅大使馆discord群答疑录音 | https://gwins.org/cn/milesguo/22379.html |
 | `LINKREC_LIVE_20210102_002_direct_playback` | 2021-01-02 | `LIVE_20210102_002` | 郭文贵2021年1月2日音频聊天 20210102_2 郭先生喜马拉雅大使馆discord群答疑录音 | https://gwins.org/cn/milesguo/22385.html |
-| `LINKREC_LIVE_20210812_001_direct_playback` | 2021-08-12 | `LIVE_20210812_001` | 郭文贵2021年8月12日盖特 20210812_1 尊敬的战友好！你们健身了吗？你传播C C P病毒，香港危机郑州人祸真相了吗？一切都已经开始！ | https://gwins.org/cn/milesguo/23243.html |
-| `LINKREC_LIVE_20210812_002_direct_playback` | 2021-08-12 | `LIVE_20210812_002` | 郭文贵2021年8月12日盖特 20210812_2 尊敬的战友们好。我们新中国联邦所有的战友们……都应该认真的看一看，珍惜．我们的面临着什么样前所未有的国际形势．天助新中国联邦…… | https://gwins.org/cn/country/NewChina.html |
 
 ## Deferred queue by year
 
