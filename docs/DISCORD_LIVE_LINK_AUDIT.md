@@ -89,3 +89,14 @@ Discord 和文档主要补强 2022 年以前资料；项目既有正式表继续
 - 原链接失效时优先使用同一证据中已验证的替代镜像；找不到可靠替代时留空；
 - 同日多场、上下集、采访、短视频和直播必须按标题与来源身份分别去重；
 - 下载的 DOCX、TXT、XLSX、媒体和缓存不进入 Git，Git 只保存结构化结果、来源 URL、校验和与处理证据。
+
+## 独立播放源恢复任务
+
+对按日期主目录重新逐条检查后，所有记录均有可访问的来源页，但其中 689 条没有独立验证的直接播放平台地址。它们已写入
+`data/current/link_recovery_tasks/discord_direct_playback_recovery.jsonl`，并在
+`docs/DISCORD_LINK_RECOVERY_TASKS.md` 中生成便于人工查看的队列摘要：
+
+- 旧有 canonical LIVE_ 记录 17 条，标为 `legacy_first`，必须优先处理；
+- 新增 VIDEO/source-candidate 记录 672 条，标为 `deferred_after_legacy`；
+- 每条任务保留已有档案页、搜索顺序、精确身份匹配要求和无结果处置规则；
+- 找不到播放源时必须记录检查证据并保持 `unresolved`，不得误标媒体不存在。

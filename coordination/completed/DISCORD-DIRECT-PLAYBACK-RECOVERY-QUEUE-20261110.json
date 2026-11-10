@@ -1,0 +1,21 @@
+{
+  "task_id": "DISCORD-DIRECT-PLAYBACK-RECOVERY-QUEUE-20261110",
+  "agent_id": "codex-discord-link-queue-20261110",
+  "status": "completed",
+  "completed_at": "2026-11-10T08:05:00Z",
+  "entry_mode": "user_directed_admin",
+  "natural_boundary": "Reclassify every date-first Discord/project master record that has a source page but no direct playback URL into an explicit recovery task.",
+  "outputs": [
+    "data/current/link_recovery_tasks/discord_direct_playback_recovery.jsonl",
+    "docs/DISCORD_LINK_RECOVERY_TASKS.md",
+    "docs/DISCORD_LIVE_LINK_AUDIT.md",
+    "scripts/build_discord_link_recovery_tasks.py"
+  ],
+  "counts": {
+    "open_tasks": 689,
+    "legacy_first": 17,
+    "deferred_after_legacy": 672
+  },
+  "validation": "build_db passed; validate_db passed with existing warnings; 148 tests passed",
+  "notes": "Administrative queue generation only. No live-work claim, media availability state, or historical source evidence was overwritten."
+}
