@@ -1,0 +1,33 @@
+{
+  "task_id": "DISCORD-FILE-LEDGER-BATCH-006",
+  "agent_id": "codex-discord-file-ledger-agent50",
+  "claimed_at": "2026-11-11T04:36:00Z",
+  "base_commit": "56fcb11e6",
+  "status": "in_progress",
+  "workflow_mode": "continuous-worker-v2",
+  "claim_protocol": "claim-protocol-v2",
+  "entry_mode": "work",
+  "continue_after_finish": true,
+  "stage": "discord_file_ledger_review",
+  "kind": "discord_file_audit",
+  "static_claim_lease_hours": 24,
+  "attachment_ids": [
+    "827189550379958312",
+    "827190235297087528",
+    "827190558538727444",
+    "827190868326481960",
+    "827452252644966410",
+    "827452594124750898",
+    "828641780974092288",
+    "828642538654531654",
+    "828642854695862303",
+    "828643188951482368",
+    "829012069926961201",
+    "829022067148062830",
+    "830457386941808650",
+    "830821535332696064",
+    "831187815491567696",
+    "831534081136525342"
+  ],
+  "scope": "Checksum, classify, and ledger sixteen previously unledgered human-proofread Discord transcripts from 2017-05-04 through 2017-06-06. Preserve the old-canonical-LIVE-first restriction and do not import VIDEO_-only candidates. Reuse already downloaded local copies and download only genuinely missing attachments."
+}
