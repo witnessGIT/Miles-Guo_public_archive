@@ -6,14 +6,14 @@ This ledger records per-file decisions for attachments discovered in Discord ser
 
 - Fully scanned attachment occurrences reported by the channel audit: **590**
 - Unique normalized filenames reported by the channel audit: **505**
-- Unique files now represented in the structured ledger: **75**
+- Unique files now represented in the structured ledger: **91**
 - Ledger entries marked `imported_corrected`: **33**
 - Ledger entries marked `imported_source_original`: **0**
-- Ledger entries marked `pending_review`: **31**
+- Ledger entries marked `pending_review`: **47**
 - Ledger entries marked `alternate_version_preserved`: **1**
 - Ledger entries marked `duplicate_exact`: **10**
 - Entries still missing one historical checksum in repository provenance: **2**
-- Remaining unique filenames not yet backfilled into this ledger: **430**
+- Remaining unique filenames not yet backfilled into this ledger: **414**
 
 The remaining count is a backlog estimate from the completed server inventory, not fabricated placeholder rows. Each future run adds only files whose channel, attachment identity, filename, type, stage, checksum state, mapping, and final decision can be evidenced.
 
@@ -35,6 +35,12 @@ Ten are byte-identical duplicates of archived-channel copies already represented
 the five old-canonical-LIVE copies were already imported as corrected versions and were not
 re-imported. `T2017.07.22.docx` is the only new unique file and remains pending because its exact
 media identity maps only to `VIDEO_20170722_001` under the old-LIVE-first restriction.
+
+Batch 006 added 16 previously unledgered proofread transcripts covering 2017-05-04 through
+2017-06-06. All sixteen map to independent `VIDEO_` identities rather than the old canonical
+`LIVE_` set, so they remain `pending_review` under the old-LIVE-first restriction. The apparent
+`T2021.06.01.docx` filename is documented as 2017-06-01 from its internal heading, content and
+media locator. Existing local downloads were reused; only genuinely missing files were fetched.
 
 ## Decision rules
 
