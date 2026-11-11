@@ -1,0 +1,16 @@
+{
+  "task_id": "LINKREC_SC_GWINS_LIST2_72_20170504_1_direct_playback",
+  "agent_id": "codex-discord-link-recovery-00-2",
+  "claimed_at": "2026-11-11T03:02:00Z",
+  "base_commit": "7cdcb3512",
+  "status": "in_progress",
+  "workflow_mode": "continuous-worker-v2",
+  "claim_protocol": "claim-protocol-v2",
+  "entry_mode": "work",
+  "continue_after_finish": true,
+  "stage": "direct_playback_source_recovery",
+  "kind": "link_recovery_task",
+  "record_id": "SC_GWINS_LIST2_72_20170504_1",
+  "static_claim_lease_hours": 24,
+  "scope": "Recover and verify exact direct playback sources for the 2017-05-04 first video."
+}
