@@ -1,0 +1,26 @@
+{
+  "task_id": "DISCORD-FILE-LEDGER-BATCH-004",
+  "agent_id": "codex-discord-file-ledger-agent50",
+  "completed_at": "2026-11-11T03:55:00Z",
+  "result_commit": "e113431ef",
+  "outputs": [
+    "data/source_page_evidence/discord/discord_file_ledger.jsonl",
+    "docs/DISCORD_FILE_LEDGER.md"
+  ],
+  "batch_statistics": {
+    "checked": 15,
+    "imported": 0,
+    "duplicate_exact": 0,
+    "alternate_version_preserved": 1,
+    "non_fulltext_excluded": 0,
+    "unreachable": 0,
+    "pending_review_added": 14,
+    "remaining_unledgered_estimate": 441
+  },
+  "validation": "All 15 binary and extracted-text SHA-256 values recorded; document dates, headings, opening/closing text and embedded media identities reviewed; paragraph-level comparison performed for the two 2017-07-01 versions; filename-year correction for T2021.07.06-1 documented; build_db OK; validate_db OK with 31 existing warnings; 148 tests OK.",
+  "workflow_mode": "continuous-worker-v2",
+  "claim_protocol": "claim-protocol-v2",
+  "entry_mode": "work",
+  "finish_prerequisites_revalidated": true,
+  "notes": "Fourteen complete human-proofread VIDEO_ candidates remain pending under the old-LIVE-first restriction. One earlier 2017-07-01 attachment was preserved as an alternate because it differs from the preferred later attachment only by omission of the explicit YouTube source line. No binary document was committed and no cue timeline was fabricated."
+}
