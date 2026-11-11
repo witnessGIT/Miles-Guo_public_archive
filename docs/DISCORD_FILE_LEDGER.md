@@ -6,14 +6,15 @@ This ledger records per-file decisions for attachments discovered in Discord ser
 
 - Fully scanned attachment occurrences reported by the channel audit: **590**
 - Unique normalized filenames reported by the channel audit: **505**
-- Unique files now represented in the structured ledger: **95**
-- Ledger entries marked `imported_corrected`: **36**
+- Unique files now represented in the structured ledger: **101**
+- Ledger entries marked `imported_corrected`: **39**
 - Ledger entries marked `imported_source_original`: **0**
-- Ledger entries marked `pending_review`: **48**
+- Ledger entries marked `pending_review`: **50**
 - Ledger entries marked `alternate_version_preserved`: **1**
 - Ledger entries marked `duplicate_exact`: **10**
+- Ledger entries marked `key_points_or_clip`: **1**
 - Entries still missing one historical checksum in repository provenance: **2**
-- Remaining unique filenames not yet backfilled into this ledger: **410**
+- Remaining unique filenames not yet backfilled into this ledger: **404**
 
 The remaining count is a backlog estimate from the completed server inventory, not fabricated placeholder rows. Each future run adds only files whose channel, attachment identity, filename, type, stage, checksum state, mapping, and final decision can be evidenced.
 
@@ -51,6 +52,14 @@ same-day canonical puppy live, and remains pending under the old-LIVE-first rest
 The April 29 full-text batch added `T2017.04.29-1.docx` and `T2017.04.29-2.docx`. Their embedded
 YouTube identifiers map exactly to `LIVE_20170429_001` and `LIVE_20170429_002`; both were imported
 as independent human-corrected versions while preserving their machine transcripts as parents.
+
+Batch 008 checked six previously downloaded T-prefixed documents from `听写任务发放`, without
+downloading any file again. `T2017.08.03.docx`, `T2017.08.04.docx`, and `T2017.08.07.docx`
+were matched to old canonical `LIVE_20170803_001`, `LIVE_20170804_001`, and
+`LIVE_20170807_001`, then imported as separate corrected versions. `T2017.08.02.docx` and
+`T2017.08.05.docx` map to deferred `VIDEO_` identities and remain pending. The short
+`T2017.08.09.docx` file is a highlights-only list that cannot distinguish the two same-date
+canonical lives, so it is retained as `key_points_or_clip` rather than promoted to a transcript.
 
 ## Decision rules
 
