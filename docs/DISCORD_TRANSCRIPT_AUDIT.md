@@ -91,6 +91,12 @@ The Discord server contains `2019.docx`, but inspection shows that it is a 299-p
 
 ## Deduplication state
 
+Fifteen T-prefixed assignment-room attachments dated 2017-05-15 through 2017-08-02 were compared
+with their preferred proofread or archived counterparts. Their extracted texts are materially
+different rather than exact duplicates, so the earlier assignment copies are retained in the
+per-file ledger as `alternate_version_preserved`; no preferred human transcript was overwritten.
+All fifteen local downloads were reused without downloading them again.
+
 The proofread-room copies dated 2017-08-15, 2017-08-22, 2017-08-24, 2017-08-27, and
 2017-08-28 are byte-identical to archived-channel documents already imported for their old
 canonical `LIVE_` identities. Five additional proofread-room files dated 2017-08-17 through

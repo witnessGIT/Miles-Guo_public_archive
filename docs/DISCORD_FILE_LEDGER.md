@@ -6,15 +6,15 @@ This ledger records per-file decisions for attachments discovered in Discord ser
 
 - Fully scanned attachment occurrences reported by the channel audit: **590**
 - Unique normalized filenames reported by the channel audit: **505**
-- Unique files now represented in the structured ledger: **102**
+- Unique files now represented in the structured ledger: **117**
 - Ledger entries marked `imported_corrected`: **40**
 - Ledger entries marked `imported_source_original`: **0**
 - Ledger entries marked `pending_review`: **50**
-- Ledger entries marked `alternate_version_preserved`: **1**
+- Ledger entries marked `alternate_version_preserved`: **16**
 - Ledger entries marked `duplicate_exact`: **10**
 - Ledger entries marked `key_points_or_clip`: **1**
 - Entries still missing one historical checksum in repository provenance: **2**
-- Remaining unique filenames not yet backfilled into this ledger: **403**
+- Remaining unique filenames not yet backfilled into this ledger: **388**
 
 The remaining count is a backlog estimate from the completed server inventory, not fabricated placeholder rows. Each future run adds only files whose channel, attachment identity, filename, type, stage, checksum state, mapping, and final decision can be evidenced.
 
@@ -66,6 +66,13 @@ full-live structure, 97,336 characters in 1,134 non-empty paragraphs, and time l
 `05:26:03` match the unique old canonical `LIVE_20211203_001`. It was imported as a separate
 human-corrected version while preserving the machine ASR as parent. The attachment was fetched
 directly to a temporary directory without a browser save prompt and was not added to Git.
+
+The assignment-copy audit added 15 already-downloaded T-prefixed attachments from `听写任务发放`
+covering 2017-05-15 through 2017-08-02. Each was checksummed and compared with the later preferred
+copy already represented from `听写原文校对` or the archived transcript channels. None was
+byte-identical or text-identical; all are preserved as materially different alternate versions,
+and none overwrote or duplicated an imported corrected transcript. Existing local files were
+reused, so this batch caused no browser download or save confirmation.
 
 ## Decision rules
 
