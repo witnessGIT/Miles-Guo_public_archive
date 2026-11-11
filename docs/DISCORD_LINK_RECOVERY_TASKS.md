@@ -5,15 +5,17 @@ A reachable archive or detail page is not counted as a direct playback URL.
 
 ## Queue summary
 
-- Open tasks: **687**
-- Legacy canonical LIVE_ tasks (process first): **15**
+- Open tasks: **672**
+- Legacy canonical LIVE_ tasks: **15 concluded unresolved; 0 open**
 - VIDEO/source-candidate tasks (deferred until legacy completion): **672**
 - Every task preserves its current archive/detail links and requires exact identity evidence.
 - An exhaustive search with no result stays `unresolved`; it is not labelled media-missing.
 
-## Legacy-first tasks
+## Legacy-first conclusions
 
 | Task | Date | Record | Title | Existing source page |
+
+All 15 rows below are concluded `unresolved` after the required source checks; no exact-identity replacement playback URL was found.
 | --- | --- | --- | --- | --- |
 | `LINKREC_LIVE_20191208_001_direct_playback` | 2019-12-08 | `LIVE_20191208_001` | 郭文贵2019年12月8日第一次直播 20191208_1 审判郭宝胜的最后一天 | https://gwins.org/cn/milesguo/481.html |
 | `LINKREC_LIVE_20200331_002_direct_playback` | 2020-03-31 | `LIVE_20200331_002` | 郭文贵2020年3月31日gtv 20200331_2 乱聊直播 | https://gwins.org/cn/milesguo/23693.html |
