@@ -6,15 +6,15 @@ This ledger records per-file decisions for attachments discovered in Discord ser
 
 - Fully scanned attachment occurrences reported by the channel audit: **590**
 - Unique normalized filenames reported by the channel audit: **505**
-- Unique files now represented in the structured ledger: **101**
-- Ledger entries marked `imported_corrected`: **39**
+- Unique files now represented in the structured ledger: **102**
+- Ledger entries marked `imported_corrected`: **40**
 - Ledger entries marked `imported_source_original`: **0**
 - Ledger entries marked `pending_review`: **50**
 - Ledger entries marked `alternate_version_preserved`: **1**
 - Ledger entries marked `duplicate_exact`: **10**
 - Ledger entries marked `key_points_or_clip`: **1**
 - Entries still missing one historical checksum in repository provenance: **2**
-- Remaining unique filenames not yet backfilled into this ledger: **404**
+- Remaining unique filenames not yet backfilled into this ledger: **403**
 
 The remaining count is a backlog estimate from the completed server inventory, not fabricated placeholder rows. Each future run adds only files whose channel, attachment identity, filename, type, stage, checksum state, mapping, and final decision can be evidenced.
 
@@ -60,6 +60,12 @@ were matched to old canonical `LIVE_20170803_001`, `LIVE_20170804_001`, and
 `T2017.08.05.docx` map to deferred `VIDEO_` identities and remain pending. The short
 `T2017.08.09.docx` file is a highlights-only list that cannot distinguish the two same-date
 canonical lives, so it is retained as `key_points_or_clip` rather than promoted to a transcript.
+
+Batch 009 checked `T2021.12.03.docx` from `GTV 听写文本`. Its explicit heading, continuous
+full-live structure, 97,336 characters in 1,134 non-empty paragraphs, and time locators through
+`05:26:03` match the unique old canonical `LIVE_20211203_001`. It was imported as a separate
+human-corrected version while preserving the machine ASR as parent. The attachment was fetched
+directly to a temporary directory without a browser save prompt and was not added to Git.
 
 ## Decision rules
 
