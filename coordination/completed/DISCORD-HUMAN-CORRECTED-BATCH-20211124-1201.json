@@ -1,0 +1,30 @@
+{
+  "task_id": "DISCORD-HUMAN-CORRECTED-BATCH-20211124-1201",
+  "agent_id": "codex-discord-human-transcript-asr",
+  "completed_at": "2026-11-11T08:39:00Z",
+  "result_commit": "0adf5d16ec087dd9a5ef05dfd8dc5616705a5595",
+  "live_ids": [
+    "LIVE_20211124_001",
+    "LIVE_20211126_001",
+    "LIVE_20211128_001",
+    "LIVE_20211130_001",
+    "LIVE_20211201_001"
+  ],
+  "outputs": [
+    "data/current/sources/discord_human_transcripts_201709_202112.jsonl",
+    "data/current/transcript_versions/corrected_live_20211124_001.jsonl",
+    "data/current/transcript_versions/corrected_live_20211126_001.jsonl",
+    "data/current/transcript_versions/corrected_live_20211128_001.jsonl",
+    "data/current/transcript_versions/corrected_live_20211130_001.jsonl",
+    "data/current/transcript_versions/corrected_live_20211201_001.jsonl",
+    "data/source_page_evidence/discord/discord_file_ledger.jsonl",
+    "docs/DISCORD_FILE_LEDGER.md",
+    "docs/DISCORD_TRANSCRIPT_AUDIT.md"
+  ],
+  "validation": "Five T-prefixed human-proofread documents were checked by heading, date, opening, closing, structure, length and time markers. LIVE_20211126_001 was disambiguated from the same-date short platform update; LIVE_20211130_001 was confirmed as a complete short fitness live. DOCX and extracted-text SHA-256 values were recorded; no cues were fabricated; build_db OK; validate_db OK with 31 existing warnings; 148 tests OK.",
+  "workflow_mode": "discord-human-transcript-v1",
+  "claim_protocol": "claim-protocol-v2",
+  "entry_mode": "work",
+  "finish_prerequisites_revalidated": true,
+  "notes": "All five transcripts were imported as separate human-corrected versions while preserving existing machine transcripts as parents. Attachments were downloaded directly once to a temporary directory without browser save prompts and were not committed."
+}
