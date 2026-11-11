@@ -6,12 +6,12 @@ This ledger records per-file decisions for attachments discovered in Discord ser
 
 - Fully scanned attachment occurrences reported by the channel audit: **590**
 - Unique normalized filenames reported by the channel audit: **505**
-- Unique files now represented in the structured ledger: **36**
-- Ledger entries marked `imported_corrected`: **24**
+- Unique files now represented in the structured ledger: **42**
+- Ledger entries marked `imported_corrected`: **30**
 - Ledger entries marked `imported_source_original`: **0**
 - Ledger entries marked `pending_review`: **12**
 - Entries still missing one historical checksum in repository provenance: **2**
-- Remaining unique filenames not yet backfilled into this ledger: **469**
+- Remaining unique filenames not yet backfilled into this ledger: **463**
 
 The remaining count is a backlog estimate from the completed server inventory, not fabricated placeholder rows. Each future run adds only files whose channel, attachment identity, filename, type, stage, checksum state, mapping, and final decision can be evidenced.
 
