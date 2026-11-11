@@ -1,0 +1,26 @@
+{
+  "task_id": "DISCORD-FILE-LEDGER-BATCH-003",
+  "agent_id": "codex-discord-file-ledger-agent50",
+  "completed_at": "2026-11-11T02:24:00Z",
+  "result_commit": "44a90cc37",
+  "outputs": [
+    "data/source_page_evidence/discord/discord_file_ledger.jsonl",
+    "docs/DISCORD_FILE_LEDGER.md"
+  ],
+  "batch_statistics": {
+    "checked": 4,
+    "imported": 0,
+    "duplicate_exact": 0,
+    "alternate_version_preserved": 0,
+    "non_fulltext_excluded": 0,
+    "unreachable": 0,
+    "pending_review_added": 4,
+    "remaining_unledgered_estimate": 459
+  },
+  "validation": "All four DOCX and extracted-text SHA-256 values recorded; exact embedded media identifiers mapped to VIDEO_ catalog identities; build_db OK; validate_db OK with existing warnings; 148 tests OK.",
+  "workflow_mode": "continuous-worker-v2",
+  "claim_protocol": "claim-protocol-v2",
+  "entry_mode": "work",
+  "finish_prerequisites_revalidated": true,
+  "notes": "The four complete human transcript candidates map only to the newer VIDEO_ inventory and were therefore retained as pending_review under the old-LIVE-first restriction. No binary document was committed."
+}
