@@ -1,0 +1,16 @@
+{
+  "task_id": "DISCORD-FILE-LEDGER-BATCH-002",
+  "agent_id": "codex-discord-file-worker-agent-50",
+  "completed_at": "2026-11-11T00:48:00Z",
+  "result_commit": "e5a226fd7",
+  "outputs": [
+    "data/source_page_evidence/discord/discord_file_ledger.jsonl",
+    "docs/DISCORD_FILE_LEDGER.md"
+  ],
+  "validation": "Audited 12 unique archived-channel DOCX files; 12 downloads and 12 extracted-text checksums completed; 0 imported, 0 exact duplicates, 0 alternate versions, 0 non-fulltext exclusions, 0 unreachable, 12 pending_review because all map to the newer VIDEO_ inventory rather than the old 1,750 canonical LIVE_ scope; 469 unique normalized filenames remain outside the per-file ledger. build_db passed; validate_db passed with 31 existing warnings; 148 tests passed.",
+  "workflow_mode": "discord-file-ledger-v1",
+  "claim_protocol": "claim-protocol-v2",
+  "entry_mode": "work",
+  "finish_prerequisites_revalidated": true,
+  "notes": "The batch preserves exact Discord channel/message/attachment identifiers, filenames, binary and extracted-text SHA-256 values, human stage, completeness, mapped VIDEO_ identities and date-discrepancy evidence. No DOCX binary was committed. T20170901 maps by exact media identity and content to VIDEO_20170501_001 despite its filename date; 2021.8.21.docx is evidenced as a 2017-08-21 transcript."
+}
