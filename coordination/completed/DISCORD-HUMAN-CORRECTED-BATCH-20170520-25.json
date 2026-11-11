@@ -1,0 +1,22 @@
+{
+  "task_id": "DISCORD-HUMAN-CORRECTED-BATCH-20170520-25",
+  "agent_id": "codex-discord-human-fulltext-asr-automation",
+  "completed_at": "2026-11-11T01:31:00Z",
+  "result_commit": "bf39aca4c",
+  "outputs": [
+    "data/current/sources/discord_human_transcripts_201705.jsonl",
+    "data/current/transcript_versions/corrected_live_20170520_001_discord_829022796646187008.jsonl",
+    "data/current/transcript_versions/corrected_live_20170521_002_discord_829380789254094858.jsonl",
+    "data/current/transcript_versions/corrected_live_20170522_001_discord_829382578795970560.jsonl",
+    "data/current/transcript_versions/corrected_live_20170523_001_discord_829383513786417182.jsonl",
+    "data/current/transcript_versions/corrected_live_20170524_001_discord_829735185108434954.jsonl",
+    "data/current/transcript_versions/corrected_live_20170525_001_discord_829735822688911382.jsonl",
+    "data/source_page_evidence/discord/discord_file_ledger.jsonl"
+  ],
+  "validation": "Exact embedded YouTube identity, date, title, opening and closing reviewed; DOCX and extracted-text SHA-256 recorded; no cue timestamps fabricated; build_db OK; validate_db OK with existing warnings; 148 tests OK.",
+  "workflow_mode": "continuous-worker-v2",
+  "claim_protocol": "claim-protocol-v2",
+  "entry_mode": "work",
+  "finish_prerequisites_revalidated": true,
+  "notes": "Six T-prefixed human-proofread Discord documents were imported as separate corrected versions for old canonical LIVE_ videos. Existing machine transcript versions were preserved."
+}
