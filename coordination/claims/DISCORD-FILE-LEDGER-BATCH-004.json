@@ -1,0 +1,32 @@
+{
+  "task_id": "DISCORD-FILE-LEDGER-BATCH-004",
+  "agent_id": "codex-discord-file-ledger-agent50",
+  "claimed_at": "2026-11-11T03:30:00Z",
+  "base_commit": "8036835f5",
+  "status": "claimed",
+  "workflow_mode": "continuous-worker-v2",
+  "claim_protocol": "claim-protocol-v2",
+  "entry_mode": "work",
+  "continue_after_finish": true,
+  "stage": "discord_file_ledger_review",
+  "kind": "discord_file_audit",
+  "static_claim_lease_hours": 24,
+  "attachment_ids": [
+    "833001795973808138",
+    "833002934404382781",
+    "833731281581637662",
+    "834082776088576051",
+    "834083483327791124",
+    "834472241273241601",
+    "835901904152166470",
+    "836626530520006676",
+    "836627836365570129",
+    "836631407341076520",
+    "836980890164396042",
+    "837692561736073276",
+    "837692628119846922",
+    "839520005573050372",
+    "840252081452351488"
+  ],
+  "scope": "Checksum, classify, and ledger fifteen proofread Discord transcript attachments from 2017-06-11 through 2017-07-10. Preserve the old-canonical-LIVE-first restriction; do not import VIDEO_-only candidates. Compare the two 2017-07-01 attachments and retain exact or alternate-version evidence."
+}
