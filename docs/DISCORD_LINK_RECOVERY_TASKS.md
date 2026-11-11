@@ -5,9 +5,9 @@ A reachable archive or detail page is not counted as a direct playback URL.
 
 ## Queue summary
 
-- Open tasks: **652**
+- Open tasks: **649**
 - Legacy canonical LIVE_ tasks: **15 concluded unresolved; 0 open**
-- VIDEO/source-candidate tasks: **652 open; processing after legacy completion; 10 recovered in the current deferred phase**
+- VIDEO/source-candidate tasks: **649 open; processing after legacy completion; 13 recovered in the current deferred phase**
 - Every task preserves its current archive/detail links and requires exact identity evidence.
 - An exhaustive search with no result stays `unresolved`; it is not labelled media-missing.
 
@@ -37,7 +37,7 @@ All 15 rows below are concluded `unresolved` after the required source checks; n
 
 - 2004: 0
 - 2015: 0
-- 2017: 91
+- 2017: 88
 - 2018: 138
 - 2019: 72
 - 2020: 42
