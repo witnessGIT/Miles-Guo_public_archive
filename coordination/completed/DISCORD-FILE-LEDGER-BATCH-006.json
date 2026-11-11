@@ -1,0 +1,26 @@
+{
+  "task_id": "DISCORD-FILE-LEDGER-BATCH-006",
+  "agent_id": "codex-discord-file-ledger-agent50",
+  "completed_at": "2026-11-11T04:38:00Z",
+  "result_commit": "812316d9d",
+  "outputs": [
+    "data/source_page_evidence/discord/discord_file_ledger.jsonl",
+    "docs/DISCORD_FILE_LEDGER.md"
+  ],
+  "batch_statistics": {
+    "checked": 16,
+    "imported": 0,
+    "duplicate_exact": 0,
+    "alternate_version_preserved": 0,
+    "non_fulltext_excluded": 0,
+    "unreachable": 0,
+    "pending_review_added": 16,
+    "remaining_unledgered_estimate": 414
+  },
+  "validation": "All sixteen DOCX and extracted-text SHA-256 values recorded; internal date, heading, opening/closing and media identity reviewed; existing local downloads reused; build_db OK; validate_db OK with 31 existing warnings; 148 tests OK.",
+  "workflow_mode": "continuous-worker-v2",
+  "claim_protocol": "claim-protocol-v2",
+  "entry_mode": "work",
+  "finish_prerequisites_revalidated": true,
+  "notes": "All sixteen human-proofread transcript candidates map only to the newer VIDEO_ inventory and remain pending under the old-LIVE-first restriction. T2021.06.01.docx is evidenced as a 2017-06-01 transcript. No binary document was committed and no cue timeline was fabricated. Previously downloaded local copies were reused; only four genuinely missing attachments were fetched directly without save dialogs."
+}
