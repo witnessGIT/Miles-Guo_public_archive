@@ -1,0 +1,25 @@
+{
+  "task_id": "DISCORD-FULLTEXT-DUPLICATE-BATCH-001",
+  "agent_id": "codex-discord-human-fulltext-asr-automation",
+  "completed_at": "2026-11-11T04:29:00Z",
+  "result_commit": "a9d7ba40b",
+  "outputs": [
+    "data/source_page_evidence/discord/discord_file_ledger.jsonl",
+    "docs/DISCORD_FILE_LEDGER.md",
+    "docs/DISCORD_TRANSCRIPT_AUDIT.md"
+  ],
+  "batch_statistics": {
+    "checked": 11,
+    "imported": 0,
+    "duplicate_exact": 10,
+    "pending_review_added": 1,
+    "unreachable": 0,
+    "remaining_unledgered_estimate": 430
+  },
+  "validation": "All eleven binary and extracted-text SHA-256 values recorded; ten byte-identical cross-channel duplicates confirmed; one new VIDEO_-only proofread transcript retained as pending_review; build_db OK; validate_db OK with 31 existing warnings; 148 tests OK.",
+  "workflow_mode": "continuous-worker-v2",
+  "claim_protocol": "claim-protocol-v2",
+  "entry_mode": "work",
+  "finish_prerequisites_revalidated": true,
+  "notes": "Five old canonical LIVE_ files were already imported from byte-identical archived-channel copies and were not imported twice. Five VIDEO_ files duplicate previously audited pending candidates. T2017.07.22.docx is new but deferred under the old-LIVE-first restriction. No binary document was committed and no cue timeline was fabricated."
+}
