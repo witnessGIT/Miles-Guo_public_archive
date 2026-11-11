@@ -1,0 +1,28 @@
+{
+  "task_id": "DISCORD-FULLTEXT-DUPLICATE-BATCH-001",
+  "agent_id": "codex-discord-human-fulltext-asr-automation",
+  "claimed_at": "2026-11-11T04:18:00Z",
+  "base_commit": "bdaf9356c",
+  "status": "in_progress",
+  "workflow_mode": "continuous-worker-v2",
+  "claim_protocol": "claim-protocol-v2",
+  "entry_mode": "work",
+  "continue_after_finish": true,
+  "stage": "human_transcript_version_comparison",
+  "kind": "discord_human_transcript_audit",
+  "static_claim_lease_hours": 24,
+  "attachment_ids": [
+    "841040022936223764",
+    "870030660142776330",
+    "870319905348681768",
+    "871893151592382554",
+    "872265213859225670",
+    "872603155479805982",
+    "874154280137945098",
+    "875306967340552194",
+    "877442930594439168",
+    "879529825897971782",
+    "884366369095819284"
+  ],
+  "scope": "Compare eleven proofread-channel Discord full-transcript attachments against already audited archived-channel copies. Record exact duplicate evidence without re-importing any human transcript or fabricating cue timelines."
+}
