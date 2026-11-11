@@ -87,6 +87,13 @@ The Discord server contains `2019.docx`, but inspection shows that it is a 299-p
 
 ## Deduplication state
 
+The proofread-room copies dated 2017-08-15, 2017-08-22, 2017-08-24, 2017-08-27, and
+2017-08-28 are byte-identical to archived-channel documents already imported for their old
+canonical `LIVE_` identities. Five additional proofread-room files dated 2017-08-17 through
+2017-08-25 are byte-identical to archived-channel `VIDEO_` candidates already retained for later
+review. All ten occurrences remain in the per-file ledger as `duplicate_exact`; none was imported
+twice.
+
 Across the transcript-relevant and adjacent channels scanned so far, 590 attachment occurrences produced 505 unique normalized filenames. This is a discovery count, not a completion count: it includes 482 DOCX files as well as indexes, translations, derived summaries, machine drafts, and unrelated attachments. There are 74 filenames repeated across two or more channels. Final import decisions must use file checksums and content comparison, not filenames alone.
 
 ## Import policy
