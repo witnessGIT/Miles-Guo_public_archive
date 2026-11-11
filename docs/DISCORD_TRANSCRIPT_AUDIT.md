@@ -58,6 +58,12 @@ Counts below were obtained by loading each channel's full virtualized history in
 
 ## Confirmed imports
 
+- Five T-prefixed GTV documents dated 2021-11-24, 2021-11-26, 2021-11-28, 2021-11-30, and
+  2021-12-01 were verified and imported as separate human-corrected versions. The November 26
+  transcript's 75,213 characters and explicit 04:27:40 ending identify the long-form
+  `LIVE_20211126_001`, not the same-date platform update. The November 30 document is a complete
+  short fitness live with opening, closing, four genuine locators, and an END marker. All five
+  machine versions remain unchanged as parents.
 - `T2021.12.03.docx` from `GTV 听写文本` was verified as a complete 97,336-character human-proofread transcript with 1,134 non-empty paragraphs and in-text locators through `05:26:03`. Its heading, opening sequence, full-live structure, and closing match `LIVE_20211203_001`; it was imported as a separate corrected version while preserving the machine parent.
 - Three T-prefixed documents from `听写任务发放` were matched by date, opening content, event identity, and same-day disambiguation to `LIVE_20170803_001`, `LIVE_20170804_001`, and the long-form `LIVE_20170807_001`, then imported as separate corrected versions. `T2017.08.09.docx` was excluded as an ambiguous highlights-only list, and the August 2 and August 5 documents remain deferred `VIDEO_` candidates.
 - Three T-prefixed, human-proofread July 2017 documents from `听写原文校对` were matched by embedded YouTube identifiers to `LIVE_20170708_001`, `LIVE_20170709_001`, and `LIVE_20170715_001`, then imported as separate corrected versions without replacing machine transcripts.

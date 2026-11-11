@@ -6,15 +6,15 @@ This ledger records per-file decisions for attachments discovered in Discord ser
 
 - Fully scanned attachment occurrences reported by the channel audit: **590**
 - Unique normalized filenames reported by the channel audit: **505**
-- Unique files now represented in the structured ledger: **117**
-- Ledger entries marked `imported_corrected`: **40**
+- Unique files now represented in the structured ledger: **122**
+- Ledger entries marked `imported_corrected`: **45**
 - Ledger entries marked `imported_source_original`: **0**
 - Ledger entries marked `pending_review`: **50**
 - Ledger entries marked `alternate_version_preserved`: **16**
 - Ledger entries marked `duplicate_exact`: **10**
 - Ledger entries marked `key_points_or_clip`: **1**
 - Entries still missing one historical checksum in repository provenance: **2**
-- Remaining unique filenames not yet backfilled into this ledger: **388**
+- Remaining unique filenames not yet backfilled into this ledger: **383**
 
 The remaining count is a backlog estimate from the completed server inventory, not fabricated placeholder rows. Each future run adds only files whose channel, attachment identity, filename, type, stage, checksum state, mapping, and final decision can be evidenced.
 
@@ -73,6 +73,14 @@ copy already represented from `听写原文校对` or the archived transcript ch
 byte-identical or text-identical; all are preserved as materially different alternate versions,
 and none overwrote or duplicated an imported corrected transcript. Existing local files were
 reused, so this batch caused no browser download or save confirmation.
+
+Batch 010 checked five T-prefixed documents from `GTV 听写文本`: `T2021.11.24`,
+`T2021.11.26`, `T2021.11.28`, `T2021.11.30`, and `T2021.12.01`. All five are complete
+human-proofread transcripts matched to old canonical `LIVE_` identities and imported as separate
+corrected versions. The November 26 document is the 75,213-character, 4:27:40 long-form live,
+not the same-date short platform update; November 30 is the complete short fitness live. Machine
+parents were preserved. Files were downloaded directly once to a temporary directory, with no
+browser save prompt, repeated download, binary commit, or fabricated cue timeline.
 
 ## Decision rules
 
