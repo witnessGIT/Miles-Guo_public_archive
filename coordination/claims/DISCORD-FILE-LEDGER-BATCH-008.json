@@ -1,0 +1,15 @@
+{
+  "task_id": "DISCORD-FILE-LEDGER-BATCH-008",
+  "agent_id": "codex-discord-ledger-agent-50",
+  "claimed_at": "2026-11-11T06:28:00Z",
+  "base_commit": "00e72fa26",
+  "status": "claimed",
+  "workflow_mode": "discord-file-ledger-v1",
+  "claim_protocol": "claim-protocol-v2",
+  "entry_mode": "work",
+  "stage": "discord_file_ledger",
+  "kind": "discord_file_audit_batch",
+  "static_claim_lease_hours": 24,
+  "attachment_ids": ["856199012230365214", "856199438501281822", "856201879465099264", "856202687124996116", "856204589942046730", "856204915084623872"],
+  "scope": "Audit six previously downloaded but unledgered T-prefixed Discord documents dated 2017-08-02 through 2017-08-09 from channel 821991750901694514; reuse local files and do not re-download."
+}
