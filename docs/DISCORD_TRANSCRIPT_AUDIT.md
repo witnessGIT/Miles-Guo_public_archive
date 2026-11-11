@@ -60,6 +60,7 @@ Counts below were obtained by loading each channel's full virtualized history in
 
 - Three T-prefixed, human-proofread July 2017 documents from `听写原文校对` were matched by embedded YouTube identifiers to `LIVE_20170708_001`, `LIVE_20170709_001`, and `LIVE_20170715_001`, then imported as separate corrected versions without replacing machine transcripts.
 - Six T-prefixed, human-proofread May 2017 documents from `听写原文校对` were matched by their embedded YouTube identifiers to old canonical videos (`LIVE_20170520_001`, `LIVE_20170521_002`, `LIVE_20170522_001`, `LIVE_20170523_001`, `LIVE_20170524_001`, and `LIVE_20170525_001`) and imported as separate corrected versions. The corresponding machine transcripts remain unchanged. Same-date documents whose embedded media map only to newer `VIDEO_` identities were left pending under the old-LIVE-first rule.
+- `T2017.04.30.docx` was matched by its embedded YouTube identifier `u7KvBFjVtSA` to `LIVE_20170429_003` and imported as a separate corrected version. The exact media identity takes precedence over the document's one-day-late filename/header date; the existing machine transcript remains its parent and was not overwritten.
 - Four 2017 human transcripts were imported in commit `c637b5ea5`.
 - Twelve additional human documents were imported in commit `0b0828b31`.
 - The January 2018 compilation was imported in commit `bbf098e78`.

@@ -6,14 +6,14 @@ This ledger records per-file decisions for attachments discovered in Discord ser
 
 - Fully scanned attachment occurrences reported by the channel audit: **590**
 - Unique normalized filenames reported by the channel audit: **505**
-- Unique files now represented in the structured ledger: **91**
-- Ledger entries marked `imported_corrected`: **33**
+- Unique files now represented in the structured ledger: **93**
+- Ledger entries marked `imported_corrected`: **34**
 - Ledger entries marked `imported_source_original`: **0**
-- Ledger entries marked `pending_review`: **47**
+- Ledger entries marked `pending_review`: **48**
 - Ledger entries marked `alternate_version_preserved`: **1**
 - Ledger entries marked `duplicate_exact`: **10**
 - Entries still missing one historical checksum in repository provenance: **2**
-- Remaining unique filenames not yet backfilled into this ledger: **414**
+- Remaining unique filenames not yet backfilled into this ledger: **412**
 
 The remaining count is a backlog estimate from the completed server inventory, not fabricated placeholder rows. Each future run adds only files whose channel, attachment identity, filename, type, stage, checksum state, mapping, and final decision can be evidenced.
 
@@ -41,6 +41,12 @@ Batch 006 added 16 previously unledgered proofread transcripts covering 2017-05-
 `LIVE_` set, so they remain `pending_review` under the old-LIVE-first restriction. The apparent
 `T2021.06.01.docx` filename is documented as 2017-06-01 from its internal heading, content and
 media locator. Existing local downloads were reused; only genuinely missing files were fetched.
+
+Batch 007 checked two additional proofread transcripts. `T2017.04.30.docx` contains the exact
+YouTube identifier for `LIVE_20170429_003`; that media identity overrides its one-day-late
+filename/header date, so it was imported as a separate corrected version while preserving the
+machine parent. `T2017.05.03.docx` maps exactly to the independent `VIDEO_20170503_001`, not the
+same-day canonical puppy live, and remains pending under the old-LIVE-first restriction.
 
 ## Decision rules
 
