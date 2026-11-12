@@ -181,6 +181,13 @@ metadata, index evidence, or irrelevant auxiliary material. All 40 files were do
 once to a temporary directory without browser save prompts; no binary, media, executable, cache,
 or fabricated cue timeline entered Git.
 
+A follow-up evidence pass restored the exact Discord message IDs for both pending old-LIVE
+transcripts and corrected `T2020.5.14_.docx` from an extracted-text surrogate back to its true
+DOCX attachment identity. Both binary checksums and both extracted-text checksums were reproduced
+from the source documents. Reusable copies remain only in a local out-of-Git cache, preventing
+another download or browser save prompt; their `pending_review` status is unchanged until the
+dedicated transcript worker imports them.
+
 ## Decision rules
 
 - T-prefixed files are `human_proofread_corrected`.
