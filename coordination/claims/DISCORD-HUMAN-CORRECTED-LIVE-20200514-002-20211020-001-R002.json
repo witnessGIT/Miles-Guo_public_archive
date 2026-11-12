@@ -1,0 +1,16 @@
+{
+  "task_id": "DISCORD-HUMAN-CORRECTED-LIVE-20200514-002-20211020-001-R002",
+  "agent_id": "codex-discord-human-transcript-asr",
+  "claimed_at": "2026-11-12T08:14:00Z",
+  "base_commit": "0824169d5",
+  "status": "claimed",
+  "workflow_mode": "discord-human-transcript-v1",
+  "claim_protocol": "claim-protocol-v2",
+  "entry_mode": "work",
+  "stage": "human_corrected_transcript_import",
+  "live_ids": ["LIVE_20200514_002", "LIVE_20211020_001"],
+  "attachment_ids": ["922875516543967292", "932602070748512316"],
+  "channel_id": "821933739307040804",
+  "static_claim_lease_hours": 24,
+  "scope": "Retry the previously released Discord human-corrected import after exact source DOCX files became locally available. Import both as separate corrected versions, preserve machine parents, and do not fabricate cue timelines."
+}
