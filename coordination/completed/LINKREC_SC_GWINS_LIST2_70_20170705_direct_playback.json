@@ -1,0 +1,22 @@
+{
+  "task_id": "LINKREC_SC_GWINS_LIST2_70_20170705_direct_playback",
+  "agent_id": "codex-discord-link-worker-00-2",
+  "completed_at": "2026-11-12T07:35:00Z",
+  "result_commit": "aa3198237",
+  "result": "recovered",
+  "direct_playback_url": "https://www.youtube.com/watch?v=3Yd19QapTQw",
+  "restricted_alternate_url": "https://rumble.com/v576w22-20170705.html",
+  "outputs": [
+    "data/current/video_catalog/date_first_video_catalog.jsonl",
+    "data/source_page_evidence/discord/discord_project_live_master_by_date.jsonl",
+    "data/source_page_evidence/discord/discord_direct_playback_recovery_attempts.jsonl",
+    "data/current/link_recovery_tasks/discord_direct_playback_recovery.jsonl",
+    "docs/DISCORD_LINK_RECOVERY_TASKS.md"
+  ],
+  "validation": "Discord proofread transcript and GWINS page expose identical YouTube id; current YouTube player returned HTTP 200, status OK, exact title and 4,024-second duration; build_db and validate_db passed; 148 tests passed",
+  "workflow_mode": "discord-link-recovery-v1",
+  "claim_protocol": "claim-protocol-v2",
+  "entry_mode": "work",
+  "finish_prerequisites_revalidated": true,
+  "notes": "The exact Rumble mirror remains preserved as restricted because its current page returns a Cloudflare challenge. No media or attachment was downloaded or played."
+}
