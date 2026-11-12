@@ -1,0 +1,22 @@
+{
+  "task_id": "LINKREC_SC_GWINS_LIST2_72_20170512_direct_playback",
+  "agent_id": "codex-discord-link-worker-00-2",
+  "completed_at": "2026-11-12T03:15:00Z",
+  "result_commit": "ad2b085076b31108745165f0b876ce1b455adb2b",
+  "result": "recovered",
+  "direct_playback_url": "https://www.youtube.com/watch?v=FWfYYz1Zess",
+  "alternate_playback_url": "https://rumble.com/v576gkc-20170512.html",
+  "outputs": [
+    "data/current/video_catalog/date_first_video_catalog.jsonl",
+    "data/source_page_evidence/discord/discord_project_live_master_by_date.jsonl",
+    "data/source_page_evidence/discord/discord_direct_playback_recovery_attempts.jsonl",
+    "data/current/link_recovery_tasks/discord_direct_playback_recovery.jsonl",
+    "docs/DISCORD_LINK_RECOVERY_TASKS.md"
+  ],
+  "validation": "Exact GWINS outbound YouTube and Rumble locators verified through public oEmbed metadata with HTTP 200; date, source identifier and displayed titles match, and Rumble reports a 4,032-second duration. build_db passed; validate_db passed with 31 existing warnings; 148 tests passed.",
+  "workflow_mode": "discord-link-recovery-v1",
+  "claim_protocol": "claim-protocol-v2",
+  "entry_mode": "work",
+  "finish_prerequisites_revalidated": true,
+  "notes": "All 15 legacy-first tasks already had completed conclusions before deferred processing. No media or attachment was downloaded or played, and no save confirmation was triggered."
+}
