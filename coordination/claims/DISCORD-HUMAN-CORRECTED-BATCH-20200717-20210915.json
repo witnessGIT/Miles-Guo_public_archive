@@ -1,0 +1,16 @@
+{
+  "task_id": "DISCORD-HUMAN-CORRECTED-BATCH-20200717-20210915",
+  "agent_id": "codex-discord-human-transcript-asr",
+  "claimed_at": "2026-11-12T02:20:00Z",
+  "base_commit": "23fd77f0c",
+  "status": "claimed",
+  "workflow_mode": "discord-human-transcript-v1",
+  "claim_protocol": "claim-protocol-v2",
+  "entry_mode": "work",
+  "stage": "human_corrected_transcript_import",
+  "attachment_ids": ["922139461599522897", "922139476208267285", "926811716426301531", "926907393932140584", "926907415365046322"],
+  "candidate_live_ids": ["LIVE_20200717_001", "LIVE_20200717_002", "LIVE_20200717_003", "LIVE_20200719_001", "LIVE_20200719_002", "LIVE_20200719_003", "LIVE_20200725_001", "LIVE_20200725_002", "LIVE_20200725_003", "LIVE_20210913_001", "LIVE_20210915_001"],
+  "channel_id": "896946673807401041",
+  "static_claim_lease_hours": 24,
+  "scope": "Audit five T-prefixed GTV human-proofread documents, disambiguating the three 2020 same-date multi-video sets by internal content before importing any exact old canonical LIVE_ match as a separate corrected version."
+}
