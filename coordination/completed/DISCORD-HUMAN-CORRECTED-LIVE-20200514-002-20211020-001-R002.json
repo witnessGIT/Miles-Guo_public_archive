@@ -1,0 +1,22 @@
+{
+  "task_id": "DISCORD-HUMAN-CORRECTED-LIVE-20200514-002-20211020-001-R002",
+  "agent_id": "codex-discord-human-transcript-asr",
+  "completed_at": "2026-11-12T08:24:00Z",
+  "result_commit": "159dd6519c9c77485120f9b523b0a6c622c0f37e",
+  "workflow_mode": "discord-human-transcript-v1",
+  "claim_protocol": "claim-protocol-v2",
+  "entry_mode": "work",
+  "live_ids": ["LIVE_20200514_002", "LIVE_20211020_001"],
+  "attachment_ids": ["922875516543967292", "932602070748512316"],
+  "outputs": [
+    "data/current/sources/discord_human_transcripts_201709_202112.jsonl",
+    "data/current/transcript_versions/corrected_live_20200514_002_discord_922875516543967292.jsonl",
+    "data/current/transcript_versions/corrected_live_20211020_001_discord_932602070748512316.jsonl",
+    "data/source_page_evidence/discord/discord_file_ledger.jsonl",
+    "docs/DISCORD_FILE_LEDGER.md",
+    "docs/DISCORD_TRANSCRIPT_AUDIT.md"
+  ],
+  "validation": "Two T-prefixed human-proofread documents were reverified by exact Discord identity, binary and extracted-text checksums, heading, date, opening, closing, structure and locators. Both were imported as separate corrected versions with machine parents preserved. build_db passed; validate_db passed with 31 existing warnings; 148 tests passed.",
+  "finish_prerequisites_revalidated": true,
+  "notes": "Existing local cache copies were reused, so neither attachment was downloaded again and no save prompt appeared. No DOCX binary, media, cache or fabricated sentence-level cue timeline entered Git."
+}
