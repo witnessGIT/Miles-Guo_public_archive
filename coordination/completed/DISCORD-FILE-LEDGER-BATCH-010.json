@@ -1,0 +1,22 @@
+{
+  "task_id": "DISCORD-FILE-LEDGER-BATCH-010",
+  "agent_id": "codex-discord-file-ledger-agent50",
+  "completed_at": "2026-11-12T02:05:00Z",
+  "result_commit": "373692594213bc36b76135e9105a4a73f02102fd",
+  "attachment_ids": [
+    "940569899045117982",
+    "940569974903300147",
+    "942415102232100955",
+    "942932591248547900"
+  ],
+  "outputs": [
+    "data/source_page_evidence/discord/discord_file_ledger.jsonl",
+    "docs/DISCORD_FILE_LEDGER.md"
+  ],
+  "validation": "Four XLSX files were downloaded directly once to a temporary directory, hashed and inspected cell-by-cell. Exact old canonical LIVE_ identities were matched by date, title, same-day sequence and embedded GTV/GNEWS locators. They were classified as key_points_or_clip rather than full transcripts. build_db OK; validate_db OK with 31 existing warnings; 148 tests OK.",
+  "workflow_mode": "discord-file-ledger-v1",
+  "claim_protocol": "claim-protocol-v2",
+  "entry_mode": "work",
+  "finish_prerequisites_revalidated": true,
+  "notes": "No workbook was downloaded twice, no browser save prompt was used, and no XLSX binary entered Git."
+}
