@@ -1,0 +1,15 @@
+{
+  "task_id": "DISCORD-FILE-LEDGER-BATCH-014",
+  "agent_id": "codex-discord-file-worker-agent-50",
+  "claimed_at": "2026-11-12T04:32:00Z",
+  "base_commit": "bc708c30b",
+  "status": "claimed",
+  "workflow_mode": "discord-file-ledger-v1",
+  "claim_protocol": "claim-protocol-v2",
+  "entry_mode": "work",
+  "attachment_ids": ["885464403313557504", "887442536862453811", "890464530419834890", "890837961468411914", "890984625193775164"],
+  "filenames": ["T20170831.docx", "T20170830.pages", "T20170902.docx", "T20170901.docx", "T20170830.docx"],
+  "channel_id": "821933739307040806",
+  "static_claim_lease_hours": 24,
+  "scope": "Backfill five unledgered T-prefixed proofread-room attachments, recording checksums, exact identity, completeness and relation to archived preferred copies without overwriting transcripts."
+}
