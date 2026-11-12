@@ -1,0 +1,14 @@
+{
+  "task_id": "LINKREC_SC_GWINS_LIST2_72_20170512_direct_playback",
+  "agent_id": "codex-discord-link-worker-00-2",
+  "claimed_at": "2026-11-12T03:06:00Z",
+  "base_commit": "1b7e007f2",
+  "status": "claimed",
+  "workflow_mode": "discord-link-recovery-v1",
+  "claim_protocol": "claim-protocol-v2",
+  "entry_mode": "work",
+  "record_id": "SC_GWINS_LIST2_72_20170512",
+  "queue_phase": "deferred_after_legacy",
+  "static_claim_lease_hours": 24,
+  "scope": "Recover an exact independently verifiable direct playback URL for the 2017-05-12 video, or preserve an audited unresolved conclusion without misidentifying same-date media."
+}
