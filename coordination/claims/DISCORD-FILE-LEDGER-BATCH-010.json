@@ -1,0 +1,19 @@
+{
+  "task_id": "DISCORD-FILE-LEDGER-BATCH-010",
+  "agent_id": "codex-discord-file-ledger-agent50",
+  "claimed_at": "2026-11-12T01:58:00Z",
+  "base_commit": "c72488735",
+  "status": "claimed",
+  "workflow_mode": "discord-file-ledger-v1",
+  "claim_protocol": "claim-protocol-v2",
+  "entry_mode": "work",
+  "stage": "discord_file_ledger",
+  "static_claim_lease_hours": 24,
+  "attachment_ids": [
+    "940569899045117982",
+    "940569974903300147",
+    "942415102232100955",
+    "942932591248547900"
+  ],
+  "scope": "Audit four Y-prefixed GTV key-point spreadsheets from the Discord key-point draft channel, record hashes and workbook metadata, and classify them as derived key-point material rather than full transcripts."
+}
