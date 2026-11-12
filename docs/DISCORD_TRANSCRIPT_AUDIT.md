@@ -58,6 +58,13 @@ Counts below were obtained by loading each channel's full virtualized history in
 
 ## Confirmed imports
 
+- Five T-prefixed GTV documents dated 2020-07-17, 2020-07-19, 2020-07-25, 2021-09-13 and
+  2021-09-15 were imported as separate human-corrected versions after same-date identity checks.
+  The July 17 title and embedded locators identify `LIVE_20200717_002`; July 19 identifies the
+  main `LIVE_20200719_001`, not either David call segment; July 25 identifies the Pompeo-speech
+  `LIVE_20200725_001`, not the market clip or War Room program. The two 2021 files map to the
+  Xiaosiji call and Navarro/Bannon long-form live. Machine parents remain unchanged, and sparse
+  or absent source locators were not converted into artificial cues.
 - Five T-prefixed GTV documents dated 2021-11-12, 2021-11-14, 2021-11-17, 2021-11-19,
   and 2021-11-23 were verified and imported as separate human-corrected versions. November 17
   is the 73,628-character long-form live rather than either same-date GETTR update; November 19

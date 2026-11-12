@@ -6,15 +6,15 @@ This ledger records per-file decisions for attachments discovered in Discord ser
 
 - Fully scanned attachment occurrences reported by the channel audit: **590**
 - Unique normalized filenames reported by the channel audit: **505**
-- Unique files now represented in the structured ledger: **136**
-- Ledger entries marked `imported_corrected`: **55**
+- Unique files now represented in the structured ledger: **141**
+- Ledger entries marked `imported_corrected`: **60**
 - Ledger entries marked `imported_source_original`: **0**
 - Ledger entries marked `pending_review`: **50**
 - Ledger entries marked `alternate_version_preserved`: **16**
 - Ledger entries marked `duplicate_exact`: **10**
 - Ledger entries marked `key_points_or_clip`: **5**
 - Entries still missing one historical checksum in repository provenance: **2**
-- Remaining unique filenames not yet backfilled into this ledger: **369**
+- Remaining unique filenames not yet backfilled into this ledger: **364**
 
 The remaining count is a backlog estimate from the completed server inventory, not fabricated placeholder rows. Each future run adds only files whose channel, attachment identity, filename, type, stage, checksum state, mapping, and final decision can be evidenced.
 
@@ -103,6 +103,14 @@ sequence were matched to the exact old canonical `LIVE_` identities. All four ar
 `key_points_or_clip` evidence and are not promoted to full transcripts. The workbooks were
 downloaded directly once to a temporary directory, checksummed and inspected without a browser
 save prompt; no workbook binary entered Git.
+
+The next human-transcript batch checked T-prefixed GTV documents dated 2020-07-17,
+2020-07-19, 2020-07-25, 2021-09-13 and 2021-09-15. Internal titles, openings, closings and
+embedded GTV/GNEWS locators disambiguated all same-date video sets: July 17 maps to the
+Barr-speech live; July 19 to the main live rather than either David call segment; July 25 to the
+Pompeo-speech main live; and the two 2021 files to their old canonical long-form identities.
+All five were imported as separate corrected versions with machine parents preserved. No DOCX,
+media, repeated download or fabricated cue timeline entered Git.
 
 ## Decision rules
 
