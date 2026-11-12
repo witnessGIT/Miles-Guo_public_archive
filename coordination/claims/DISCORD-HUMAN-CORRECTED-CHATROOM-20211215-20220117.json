@@ -1,0 +1,39 @@
+{
+  "task_id": "DISCORD-HUMAN-CORRECTED-CHATROOM-20211215-20220117",
+  "agent_id": "codex-discord-human-transcript-worker-asr",
+  "claimed_at": "2026-11-12T06:22:00Z",
+  "base_commit": "7a2927860",
+  "status": "claimed",
+  "workflow_mode": "discord-human-transcript-import-v1",
+  "claim_protocol": "claim-protocol-v2",
+  "entry_mode": "work",
+  "channel_id": "821933739307040804",
+  "attachment_ids": [
+    "964285011085893732",
+    "964285011295625246",
+    "965358961270333440",
+    "965358961446514748",
+    "965778903618682972",
+    "965778903849394206",
+    "966141656426479666",
+    "966141695752294450",
+    "966141696335314975",
+    "966732935409598484",
+    "966732935690612836"
+  ],
+  "filenames": [
+    "T2022.01.17_1.docx",
+    "T2022.01.14_1.docx",
+    "T2022.01.09_1.docx",
+    "T2022.01.12_1.docx",
+    "T2022.01.05_1.docx",
+    "T2022.01.07_1.docx",
+    "T2022.01.01-1_1.docx",
+    "T2022.01.01-2_1.docx",
+    "T2022.01.01-3_1.docx",
+    "T2021.12.22_2.docx",
+    "T2021.12.15_1.docx"
+  ],
+  "static_claim_lease_hours": 24,
+  "scope": "Identity-check eleven T-prefixed human-proofread DOCX attachments from the Discord chatroom against old canonical LIVE_ videos, compare them with existing versions, and import only complete distinct corrected transcripts without fabricating cues."
+}
