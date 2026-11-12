@@ -58,6 +58,11 @@ Counts below were obtained by loading each channel's full virtualized history in
 
 ## Confirmed imports
 
+- Five T-prefixed GTV documents dated 2021-12-05, 2021-12-06, 2021-12-08, 2021-12-10,
+  and 2021-12-12 were verified and imported as separate human-corrected versions. December 6 is
+  a complete short fitness live with genuine locators and an END marker; December 10 is the sole
+  same-date long-form live, containing 114,668 characters and ending at 06:33:30. Existing machine
+  versions remain unchanged as parents.
 - Five T-prefixed GTV documents dated 2021-11-24, 2021-11-26, 2021-11-28, 2021-11-30, and
   2021-12-01 were verified and imported as separate human-corrected versions. The November 26
   transcript's 75,213 characters and explicit 04:27:40 ending identify the long-form
