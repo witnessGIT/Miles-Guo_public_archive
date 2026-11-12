@@ -7,9 +7,9 @@ This ledger records per-file decisions for attachments discovered in Discord ser
 - Fully scanned attachment occurrences reported by the channel audit: **590**
 - Unique normalized filenames reported by the channel audit: **505**
 - Unique files now represented in the structured ledger: **146**
-- Ledger entries marked `imported_corrected`: **60**
+- Ledger entries marked `imported_corrected`: **65**
 - Ledger entries marked `imported_source_original`: **0**
-- Ledger entries marked `pending_review`: **55**
+- Ledger entries marked `pending_review`: **50**
 - Ledger entries marked `alternate_version_preserved`: **16**
 - Ledger entries marked `duplicate_exact`: **10**
 - Ledger entries marked `key_points_or_clip`: **5**
@@ -120,6 +120,13 @@ closing and same-day content disambiguation map them respectively to old canonic
 for the dedicated transcript worker to import as corrected versions. Each file was fetched
 directly once to a temporary directory without a browser save prompt; no binary or fabricated
 cue timeline entered Git.
+
+The corresponding transcript-import batch promoted all five ledger batch 011 candidates to
+separate human-corrected versions for `LIVE_20200516_001`, `LIVE_20210917_002`,
+`LIVE_20211224_001`, `LIVE_20211225_002`, and `LIVE_20211226_001`. Existing machine ASR
+versions remain preserved as parents. The already-downloaded local copies were reused, so no
+file was downloaded again and no save confirmation, DOCX binary, or fabricated cue timeline
+was introduced.
 
 ## Decision rules
 

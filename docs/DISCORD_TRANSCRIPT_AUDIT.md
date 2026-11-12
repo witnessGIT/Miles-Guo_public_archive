@@ -94,6 +94,7 @@ Counts below were obtained by loading each channel's full virtualized history in
 - Twenty-nine February 2018 human-edited GWINS transcripts were imported in commit `40a7537c9`.
 - `T2021.11.20.docx` was initially imported as a separate human version in commit `457d45127`; its transcript-import completion was published in `fd52084bc`. Its metadata was later corrected from the legacy `source_original` classification to `human_proofread` / `corrected` after the archive owner clarified the meaning of all `T`-prefixed files. The legacy path name is retained only for stable history.
 - `T2021.10.29.docx`, `T2021.11.05.docx`, and `T2021.11.07.docx` were identity-checked against their canonical long-form videos and imported as separate human `corrected` versions. Their machine ASR versions remain unchanged and linked as parent versions for comparison.
+- `T2020.05.16.docx`, `T2021.09.17.docx`, `T2021.12.24.docx`, `T2021.12.25.docx`, and `T2021.12.26.docx` were matched by exact headings, same-day content, opening and closing text to five old canonical `LIVE_` identities and imported as separate human `corrected` versions. The already-downloaded files were reused without another download or save prompt; machine ASR parents remain preserved and sparse document locators were not converted into sentence cues.
 
 ## 2021-11-20 verification
 
