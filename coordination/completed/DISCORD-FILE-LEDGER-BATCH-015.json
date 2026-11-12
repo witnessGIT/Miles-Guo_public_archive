@@ -1,0 +1,14 @@
+{
+  "task_id": "DISCORD-FILE-LEDGER-BATCH-015",
+  "agent_id": "codex-discord-file-worker-agent-50",
+  "completed_at": "2026-11-12T05:45:00Z",
+  "result_commit": "3e700ca81831c32daa7bfaf7801fcb387b581974",
+  "workflow_mode": "discord-file-ledger-v1",
+  "claim_protocol": "claim-protocol-v2",
+  "entry_mode": "work",
+  "attachment_ids": ["943053012841140234", "943053013059264562", "947667736476143657"],
+  "outputs": ["data/source_page_evidence/discord/discord_file_ledger.jsonl", "docs/DISCORD_FILE_LEDGER.md"],
+  "validation": "Checked 3 files; 0 imported; 1 exact duplicate; 2 human key-point workbooks retained as key_points_or_clip; 0 unreachable. build_db passed; validate_db passed with 31 existing warnings; 148 tests passed.",
+  "finish_prerequisites_revalidated": true,
+  "notes": "Ledger coverage is now 163 of 505 unique normalized filenames, leaving 342 not yet backfilled. The duplicate DOCX exactly matches the preferred imported human-corrected transcript. Both XLSX files have complete file/extracted-text checksums and exact old-LIVE mappings; neither was promoted as a transcript. Direct temporary downloads avoided browser save prompts; no DOCX, XLSX, cache, or fabricated cue timeline entered Git."
+}
