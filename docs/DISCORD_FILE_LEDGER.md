@@ -6,15 +6,15 @@ This ledger records per-file decisions for attachments discovered in Discord ser
 
 - Fully scanned attachment occurrences reported by the channel audit: **590**
 - Unique normalized filenames reported by the channel audit: **505**
-- Unique files now represented in the structured ledger: **132**
+- Unique files now represented in the structured ledger: **136**
 - Ledger entries marked `imported_corrected`: **55**
 - Ledger entries marked `imported_source_original`: **0**
 - Ledger entries marked `pending_review`: **50**
 - Ledger entries marked `alternate_version_preserved`: **16**
 - Ledger entries marked `duplicate_exact`: **10**
-- Ledger entries marked `key_points_or_clip`: **1**
+- Ledger entries marked `key_points_or_clip`: **5**
 - Entries still missing one historical checksum in repository provenance: **2**
-- Remaining unique filenames not yet backfilled into this ledger: **373**
+- Remaining unique filenames not yet backfilled into this ledger: **369**
 
 The remaining count is a backlog estimate from the completed server inventory, not fabricated placeholder rows. Each future run adds only files whose channel, attachment identity, filename, type, stage, checksum state, mapping, and final decision can be evidenced.
 
@@ -95,6 +95,14 @@ not their same-date short platform updates or camera test; November 23 is the co
 fitness live. Machine parents were preserved. Each attachment was downloaded directly once to a
 temporary directory, without a browser save prompt, repeated download, binary commit, or
 fabricated cue timeline.
+
+Ledger batch 010 checked four Y-prefixed XLSX attachments from `GTV 要点初稿`. They are
+human-organized, first-reviewed video key-point sheets for 2021-11-05, 2021-11-07,
+2021-12-19 part two, and 2021-12-22 part one. Their date, title, GTV/GNEWS locators and same-day
+sequence were matched to the exact old canonical `LIVE_` identities. All four are retained as
+`key_points_or_clip` evidence and are not promoted to full transcripts. The workbooks were
+downloaded directly once to a temporary directory, checksummed and inspected without a browser
+save prompt; no workbook binary entered Git.
 
 ## Decision rules
 
