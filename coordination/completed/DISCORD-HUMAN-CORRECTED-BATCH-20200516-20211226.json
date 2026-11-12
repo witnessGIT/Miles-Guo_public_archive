@@ -1,0 +1,24 @@
+{
+  "task_id": "DISCORD-HUMAN-CORRECTED-BATCH-20200516-20211226",
+  "agent_id": "codex-discord-human-transcript-asr",
+  "completed_at": "2026-11-12T03:25:00Z",
+  "result_commit": "e682a275b3d4c7816e22b7a05dd3c5706db52c66",
+  "workflow_mode": "discord-human-transcript-v1",
+  "claim_protocol": "claim-protocol-v2",
+  "entry_mode": "work",
+  "live_ids": ["LIVE_20200516_001", "LIVE_20210917_002", "LIVE_20211224_001", "LIVE_20211225_002", "LIVE_20211226_001"],
+  "outputs": [
+    "data/current/sources/discord_human_transcripts_201709_202112.jsonl",
+    "data/current/transcript_versions/corrected_live_20200516_001.jsonl",
+    "data/current/transcript_versions/corrected_live_20210917_002.jsonl",
+    "data/current/transcript_versions/corrected_live_20211224_001.jsonl",
+    "data/current/transcript_versions/corrected_live_20211225_002.jsonl",
+    "data/current/transcript_versions/corrected_live_20211226_001.jsonl",
+    "data/source_page_evidence/discord/discord_file_ledger.jsonl",
+    "docs/DISCORD_FILE_LEDGER.md",
+    "docs/DISCORD_TRANSCRIPT_AUDIT.md"
+  ],
+  "validation": "All five exact old canonical LIVE_ identities were revalidated from document headings, same-day disambiguation, openings and closings. build_db passed with 5,203 live_sources and 1,828 transcript_versions; validate_db passed with 31 existing warnings; 148 tests passed.",
+  "finish_prerequisites_revalidated": true,
+  "notes": "Existing local copies from ledger batch 011 were reused, so no file was downloaded again and no save prompt appeared. Machine ASR parents remain preserved. No DOCX, media, cache or fabricated cue timeline entered Git."
+}
