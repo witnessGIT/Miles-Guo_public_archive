@@ -6,15 +6,15 @@ This ledger records per-file decisions for attachments discovered in Discord ser
 
 - Fully scanned attachment occurrences reported by the channel audit: **590**
 - Unique normalized filenames reported by the channel audit: **505**
-- Unique files now represented in the structured ledger: **155**
+- Unique files now represented in the structured ledger: **160**
 - Ledger entries marked `imported_corrected`: **65**
 - Ledger entries marked `imported_source_original`: **0**
 - Ledger entries marked `pending_review`: **50**
-- Ledger entries marked `alternate_version_preserved`: **24**
-- Ledger entries marked `duplicate_exact`: **10**
+- Ledger entries marked `alternate_version_preserved`: **25**
+- Ledger entries marked `duplicate_exact`: **14**
 - Ledger entries marked `key_points_or_clip`: **5**
-- Entries still missing one historical checksum in repository provenance: **2**
-- Remaining unique filenames not yet backfilled into this ledger: **350**
+- Entries still missing one historical checksum in repository provenance: **3**
+- Remaining unique filenames not yet backfilled into this ledger: **345**
 
 The remaining count is a backlog estimate from the completed server inventory, not fabricated placeholder rows. Each future run adds only files whose channel, attachment identity, filename, type, stage, checksum state, mapping, and final decision can be evidenced.
 
@@ -136,6 +136,14 @@ materially distinct alternate versions and none overwrote an imported transcript
 is a server terminology/name glossary and is classified as irrelevant to full-text import. Each
 file was downloaded directly once to a temporary directory without a browser save prompt; no
 DOCX binary, cache, or fabricated cue timeline entered Git.
+
+Ledger batch 014 checked five T-prefixed files from `听写原文校对`. Four DOCX files are
+byte-identical copies of already represented preferred attachments: the 2017-08-31 short video,
+the 2017-09-02 imported corrected live, the Liu Yanping call, and the 2017-08-30 video. They are
+recorded as exact duplicates and were not re-imported. The native Pages copy for 2017-08-30 is
+preserved as an alternate container; its binary checksum is complete, while direct text extraction
+was unavailable and remains an explicit provenance gap. Files were downloaded directly once with
+no save prompt, binary commit, or fabricated cue timeline.
 
 ## Decision rules
 
