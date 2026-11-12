@@ -1,0 +1,16 @@
+{
+  "task_id": "DISCORD-HUMAN-CORRECTED-BATCH-20211112-1123",
+  "agent_id": "codex-discord-human-transcript-asr",
+  "claimed_at": "2026-11-12T01:18:00Z",
+  "base_commit": "8d4181460",
+  "status": "claimed",
+  "workflow_mode": "discord-human-transcript-v1",
+  "claim_protocol": "claim-protocol-v2",
+  "entry_mode": "work",
+  "stage": "human_corrected_transcript_import",
+  "live_ids": ["LIVE_20211112_001", "LIVE_20211114_001", "LIVE_20211117_001", "LIVE_20211119_001", "LIVE_20211123_001"],
+  "attachment_ids": ["925637352913797120", "925092166626336802", "924251896825389066", "923930709377294346", "923744729894617118"],
+  "channel_id": "896946673807401041",
+  "static_claim_lease_hours": 24,
+  "scope": "Audit five T-prefixed GTV human-proofread documents as independent corrected versions, preserving existing machine transcripts and importing only after exact identity and completeness verification."
+}
