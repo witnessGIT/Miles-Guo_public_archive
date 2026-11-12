@@ -6,15 +6,15 @@ This ledger records per-file decisions for attachments discovered in Discord ser
 
 - Fully scanned attachment occurrences reported by the channel audit: **590**
 - Unique normalized filenames reported by the channel audit: **505**
-- Unique files now represented in the structured ledger: **160**
+- Unique files now represented in the structured ledger: **163**
 - Ledger entries marked `imported_corrected`: **65**
 - Ledger entries marked `imported_source_original`: **0**
 - Ledger entries marked `pending_review`: **50**
 - Ledger entries marked `alternate_version_preserved`: **25**
-- Ledger entries marked `duplicate_exact`: **14**
-- Ledger entries marked `key_points_or_clip`: **5**
+- Ledger entries marked `duplicate_exact`: **15**
+- Ledger entries marked `key_points_or_clip`: **7**
 - Entries still missing one historical checksum in repository provenance: **3**
-- Remaining unique filenames not yet backfilled into this ledger: **345**
+- Remaining unique filenames not yet backfilled into this ledger: **342**
 
 The remaining count is a backlog estimate from the completed server inventory, not fabricated placeholder rows. Each future run adds only files whose channel, attachment identity, filename, type, stage, checksum state, mapping, and final decision can be evidenced.
 
@@ -144,6 +144,15 @@ recorded as exact duplicates and were not re-imported. The native Pages copy for
 preserved as an alternate container; its binary checksum is complete, while direct text extraction
 was unavailable and remains an explicit provenance gap. Files were downloaded directly once with
 no save prompt, binary commit, or fabricated cue timeline.
+
+Ledger batch 015 checked three attachments from `GTV 要点初稿`. The T-prefixed 2021-12-17
+DOCX is byte-identical to the preferred human-corrected transcript already imported from the
+archived transcript channel, so it is recorded as an exact duplicate and was not re-imported.
+The 2021-12-17 and 2021-12-19 part-one XLSX files are human-organized, first-reviewed video
+key-point sheets with explicit dates, titles, GTV/GNEWS locators and sequence evidence. They map
+respectively to `LIVE_20211217_001` and `LIVE_20211219_001`, remain `key_points_or_clip`
+evidence, and are not promoted as full transcripts. All three files were downloaded directly once
+to a temporary directory without a browser save prompt; no binary entered Git.
 
 ## Decision rules
 
