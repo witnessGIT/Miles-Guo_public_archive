@@ -6,15 +6,15 @@ This ledger records per-file decisions for attachments discovered in Discord ser
 
 - Fully scanned attachment occurrences reported by the channel audit: **590**
 - Unique normalized filenames reported by the channel audit: **505**
-- Unique files now represented in the structured ledger: **127**
-- Ledger entries marked `imported_corrected`: **50**
+- Unique files now represented in the structured ledger: **132**
+- Ledger entries marked `imported_corrected`: **55**
 - Ledger entries marked `imported_source_original`: **0**
 - Ledger entries marked `pending_review`: **50**
 - Ledger entries marked `alternate_version_preserved`: **16**
 - Ledger entries marked `duplicate_exact`: **10**
 - Ledger entries marked `key_points_or_clip`: **1**
 - Entries still missing one historical checksum in repository provenance: **2**
-- Remaining unique filenames not yet backfilled into this ledger: **378**
+- Remaining unique filenames not yet backfilled into this ledger: **373**
 
 The remaining count is a backlog estimate from the completed server inventory, not fabricated placeholder rows. Each future run adds only files whose channel, attachment identity, filename, type, stage, checksum state, mapping, and final decision can be evidenced.
 
@@ -87,6 +87,14 @@ Batch 011 checked five additional T-prefixed GTV documents dated 2021-12-05, 12-
 imported as separate corrected versions. The December 6 file is the complete short fitness live;
 December 10 is the sole same-date 114,668-character long-form live ending at 06:33:30. Machine
 parents were preserved, and no DOCX, media, cache, or fabricated cue timeline entered Git.
+
+Batch 012 checked five T-prefixed GTV documents dated 2021-11-12, 11-14, 11-17, 11-19,
+and 11-23. All five were verified as complete human-proofread transcripts and imported as
+separate corrected versions. The November 17 and November 19 documents are the long-form lives,
+not their same-date short platform updates or camera test; November 23 is the complete short
+fitness live. Machine parents were preserved. Each attachment was downloaded directly once to a
+temporary directory, without a browser save prompt, repeated download, binary commit, or
+fabricated cue timeline.
 
 ## Decision rules
 

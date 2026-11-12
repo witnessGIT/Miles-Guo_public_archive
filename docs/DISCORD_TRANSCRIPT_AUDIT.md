@@ -58,6 +58,12 @@ Counts below were obtained by loading each channel's full virtualized history in
 
 ## Confirmed imports
 
+- Five T-prefixed GTV documents dated 2021-11-12, 2021-11-14, 2021-11-17, 2021-11-19,
+  and 2021-11-23 were verified and imported as separate human-corrected versions. November 17
+  is the 73,628-character long-form live rather than either same-date GETTR update; November 19
+  is the 70,111-character long-form live rather than the short camera test. November 23 is a
+  complete 2,260-character fitness live with an explicit END marker. Existing machine versions
+  remain unchanged as parents, and no artificial cue timeline was created from sparse locators.
 - Five T-prefixed GTV documents dated 2021-12-05, 2021-12-06, 2021-12-08, 2021-12-10,
   and 2021-12-12 were verified and imported as separate human-corrected versions. December 6 is
   a complete short fitness live with genuine locators and an END marker; December 10 is the sole
