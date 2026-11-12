@@ -1,0 +1,13 @@
+{
+  "task_id": "DISCORD-HUMAN-CORRECTED-LIVE-20200514-002-20211020-001",
+  "agent_id": "codex-discord-human-transcript-asr",
+  "claimed_at": "2026-11-12T07:45:00Z",
+  "base_commit": "3288deca5",
+  "status": "claimed",
+  "workflow_mode": "discord-human-transcript-v1",
+  "claim_protocol": "claim-protocol-v2",
+  "entry_mode": "work",
+  "live_ids": ["LIVE_20200514_002", "LIVE_20211020_001"],
+  "attachment_ids": ["922875516543967292", "932602070748512316"],
+  "scope": "Import two newly discovered T-prefixed Discord human-proofread full transcripts as separate corrected versions while preserving the already completed machine-ASR versions and all existing claims/completions."
+}
