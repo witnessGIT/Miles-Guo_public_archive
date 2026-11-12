@@ -1,0 +1,24 @@
+{
+  "task_id": "DISCORD-LEDGER-CHATROOM-AUX-202104-202403",
+  "agent_id": "codex-discord-file-ledger-agent50",
+  "completed_at": "2026-11-12T07:12:00Z",
+  "result_commit": "22c62bac0",
+  "outputs": [
+    "data/source_page_evidence/discord/discord_file_ledger.jsonl",
+    "docs/DISCORD_FILE_LEDGER.md"
+  ],
+  "validation": "40 attachments checksummed and classified; build_db OK; validate_db OK with pre-existing warnings; 148 unittest tests OK",
+  "workflow_mode": "discord-file-ledger-v1",
+  "claim_protocol": "claim-protocol-v2",
+  "entry_mode": "work",
+  "batch_counts": {
+    "checked": 40,
+    "pending_review": 2,
+    "key_points_or_clip": 14,
+    "spreadsheet_metadata": 7,
+    "title_or_link_index": 2,
+    "irrelevant": 15,
+    "remaining_unique_files": 291
+  },
+  "notes": "Two old-canonical T-prefixed full transcripts were queued for the transcript worker. Direct temporary downloads avoided browser save prompts; no binary or cache entered Git."
+}
