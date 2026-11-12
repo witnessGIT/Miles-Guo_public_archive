@@ -6,15 +6,15 @@ This ledger records per-file decisions for attachments discovered in Discord ser
 
 - Fully scanned attachment occurrences reported by the channel audit: **590**
 - Unique normalized filenames reported by the channel audit: **505**
-- Unique files now represented in the structured ledger: **163**
-- Ledger entries marked `imported_corrected`: **65**
+- Unique files now represented in the structured ledger: **174**
+- Ledger entries marked `imported_corrected`: **73**
 - Ledger entries marked `imported_source_original`: **0**
 - Ledger entries marked `pending_review`: **50**
-- Ledger entries marked `alternate_version_preserved`: **25**
+- Ledger entries marked `alternate_version_preserved`: **28**
 - Ledger entries marked `duplicate_exact`: **15**
 - Ledger entries marked `key_points_or_clip`: **7**
 - Entries still missing one historical checksum in repository provenance: **3**
-- Remaining unique filenames not yet backfilled into this ledger: **342**
+- Remaining unique filenames not yet backfilled into this ledger: **331**
 
 The remaining count is a backlog estimate from the completed server inventory, not fabricated placeholder rows. Each future run adds only files whose channel, attachment identity, filename, type, stage, checksum state, mapping, and final decision can be evidenced.
 
@@ -153,6 +153,18 @@ key-point sheets with explicit dates, titles, GTV/GNEWS locators and sequence ev
 respectively to `LIVE_20211217_001` and `LIVE_20211219_001`, remain `key_points_or_clip`
 evidence, and are not promoted as full transcripts. All three files were downloaded directly once
 to a temporary directory without a browser save prompt; no binary entered Git.
+
+Ledger batch 016 checked all 11 DOCX transcript candidates found in `聊天室`. Eight complete
+T-prefixed, human-proofread transcripts dated 2021-12-15, 2021-12-22, 2022-01-05, 01-07,
+01-09, 01-12, 01-14, and 01-17 were matched to their exact old canonical `LIVE_` identities and
+imported as separate corrected versions. The December 22 document is a materially edited alternate
+of the previously imported proofread text, so it is retained as corrected version 002 rather than
+discarded as a duplicate. The January 7 document is the long-form `LIVE_20220107_002`, not the
+same-date short item. The remaining three documents are parts one through three of the roughly
+twelve-hour 2022-01-01 live; all explicitly remain unfinished and together stop several hours before
+the media ends, so they are preserved as incomplete alternate evidence and not promoted to a full
+transcript. All files were downloaded directly once to a temporary directory without browser save
+prompts; no DOCX binary, repeated download, or fabricated cue timeline entered Git.
 
 ## Decision rules
 
