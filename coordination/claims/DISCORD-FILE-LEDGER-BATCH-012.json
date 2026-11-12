@@ -1,0 +1,15 @@
+{
+  "task_id": "DISCORD-FILE-LEDGER-BATCH-012",
+  "agent_id": "codex-discord-file-worker-agent-50",
+  "claimed_at": "2026-11-12T03:30:00Z",
+  "base_commit": "9b815e458",
+  "status": "claimed",
+  "workflow_mode": "discord-file-ledger-v1",
+  "claim_protocol": "claim-protocol-v2",
+  "entry_mode": "work",
+  "attachment_ids": ["922139461599522897", "922139476208267285", "922302770537725963", "922635416627204156", "922638771994918952", "922696966578765824", "923512161559527474", "923512161760862208", "923744729697501224", "923744729894617118", "923930709377294346", "924251896825389066", "925092166626336802", "925637352913797120", "926811716426301531", "926907393932140584", "926907415365046322"],
+  "filenames": ["T2020.07.17.docx", "T2020.07.19.docx", "T2021.12.03.docx", "T2021.12.01.docx", "T2021.11.30.docx", "T2021.11.28.docx", "T2021.11.24.docx", "T2021.11.26.docx", "T2021.11.20.docx", "T2021.11.23.docx", "T2021.11.19-1.docx", "T2021.11.17.docx", "T2021.11.14.docx", "T2021.11.12.docx", "T2020.07.25.docx", "T2021.09.13.docx", "T2021.09.15.docx"],
+  "channel_id": "896946673807401041",
+  "static_claim_lease_hours": 24,
+  "scope": "Backfill seventeen unledgered T-prefixed human-proofread full-text candidates from the GTV transcript channel, recording checksums, exact identity, completeness and version relation without importing or overwriting transcripts."
+}
