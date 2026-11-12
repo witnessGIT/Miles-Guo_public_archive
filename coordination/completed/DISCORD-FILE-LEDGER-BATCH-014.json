@@ -1,0 +1,14 @@
+{
+  "task_id": "DISCORD-FILE-LEDGER-BATCH-014",
+  "agent_id": "codex-discord-file-worker-agent-50",
+  "completed_at": "2026-11-12T04:45:00Z",
+  "result_commit": "531ea364ca42450ebc0a3ce2e74c04d67f3b5b13",
+  "workflow_mode": "discord-file-ledger-v1",
+  "claim_protocol": "claim-protocol-v2",
+  "entry_mode": "work",
+  "attachment_ids": ["885464403313557504", "887442536862453811", "890464530419834890", "890837961468411914", "890984625193775164"],
+  "outputs": ["data/source_page_evidence/discord/discord_file_ledger.jsonl", "docs/DISCORD_FILE_LEDGER.md"],
+  "validation": "Checked 5 files; 0 imported; 4 exact duplicates; 1 alternate native Pages version preserved; 0 non-fulltext exclusions; 0 unreachable. build_db passed; validate_db passed with 31 existing warnings; 148 tests passed.",
+  "finish_prerequisites_revalidated": true,
+  "notes": "Ledger coverage is now 160 of 505 unique normalized filenames, leaving 345 not yet backfilled. Four DOCX binaries exactly matched preferred ledgered copies. The Pages binary has a complete file checksum but direct text extraction remains an explicit provenance gap. No browser save prompts, binary commits, or fabricated cues."
+}
