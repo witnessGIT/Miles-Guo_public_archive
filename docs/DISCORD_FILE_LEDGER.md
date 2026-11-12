@@ -6,15 +6,15 @@ This ledger records per-file decisions for attachments discovered in Discord ser
 
 - Fully scanned attachment occurrences reported by the channel audit: **590**
 - Unique normalized filenames reported by the channel audit: **505**
-- Unique files now represented in the structured ledger: **146**
+- Unique files now represented in the structured ledger: **155**
 - Ledger entries marked `imported_corrected`: **65**
 - Ledger entries marked `imported_source_original`: **0**
 - Ledger entries marked `pending_review`: **50**
-- Ledger entries marked `alternate_version_preserved`: **16**
+- Ledger entries marked `alternate_version_preserved`: **24**
 - Ledger entries marked `duplicate_exact`: **10**
 - Ledger entries marked `key_points_or_clip`: **5**
 - Entries still missing one historical checksum in repository provenance: **2**
-- Remaining unique filenames not yet backfilled into this ledger: **359**
+- Remaining unique filenames not yet backfilled into this ledger: **350**
 
 The remaining count is a backlog estimate from the completed server inventory, not fabricated placeholder rows. Each future run adds only files whose channel, attachment identity, filename, type, stage, checksum state, mapping, and final decision can be evidenced.
 
@@ -127,6 +127,15 @@ separate human-corrected versions for `LIVE_20200516_001`, `LIVE_20210917_002`,
 versions remain preserved as parents. The already-downloaded local copies were reused, so no
 file was downloaded again and no save confirmation, DOCX binary, or fabricated cue timeline
 was introduced.
+
+Ledger batch 013 checked nine previously unledgered DOCX attachments from `听写原文`. Eight are
+workflow-stage variants for the 2017-08-28, 2017-08-30, 2017-05-01 Liu Yanping call, and
+2017-09-02 videos. Their exact embedded YouTube identities and content were compared with the
+later preferred corrected copies already represented in the ledger; all eight are preserved as
+materially distinct alternate versions and none overwrote an imported transcript. The ninth file
+is a server terminology/name glossary and is classified as irrelevant to full-text import. Each
+file was downloaded directly once to a temporary directory without a browser save prompt; no
+DOCX binary, cache, or fabricated cue timeline entered Git.
 
 ## Decision rules
 
