@@ -1,0 +1,27 @@
+{
+  "task_id": "DISCORD-HUMAN-CORRECTED-CHATROOM-20211215-20220117",
+  "agent_id": "codex-discord-human-transcript-worker-asr",
+  "completed_at": "2026-11-12T06:35:00Z",
+  "result_commit": "c8c0bd4619289c07eefe39800c1f5d54b51c4b2d",
+  "outputs": [
+    "data/current/sources/discord_chatroom_human_transcripts_202112_202201.jsonl",
+    "data/current/transcript_versions/corrected_live_20211215_001.jsonl",
+    "data/current/transcript_versions/corrected_live_20211222_001.jsonl",
+    "data/current/transcript_versions/corrected_live_20220105_001.jsonl",
+    "data/current/transcript_versions/corrected_live_20220107_002.jsonl",
+    "data/current/transcript_versions/corrected_live_20220109_001.jsonl",
+    "data/current/transcript_versions/corrected_live_20220112_001.jsonl",
+    "data/current/transcript_versions/corrected_live_20220114_001.jsonl",
+    "data/current/transcript_versions/corrected_live_20220117_001.jsonl",
+    "data/source_page_evidence/discord/discord_file_ledger.jsonl",
+    "docs/DISCORD_FILE_LEDGER.md",
+    "docs/DISCORD_TRANSCRIPT_AUDIT.md"
+  ],
+  "validation": "Eleven files identity-checked; eight complete corrected transcripts imported and three incomplete parts preserved as evidence; build_db and validate_db OK; 148 tests passed; no fabricated cues or binaries committed.",
+  "workflow_mode": "discord-human-transcript-import-v1",
+  "claim_protocol": "claim-protocol-v2",
+  "entry_mode": "work",
+  "continue_after_finish": true,
+  "finish_prerequisites_revalidated": true,
+  "notes": "All files were fetched directly once to a temporary directory without browser save prompts. Existing machine and human versions remain preserved."
+}

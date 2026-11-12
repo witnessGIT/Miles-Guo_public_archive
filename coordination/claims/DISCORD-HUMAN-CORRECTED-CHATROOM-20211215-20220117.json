@@ -3,7 +3,9 @@
   "agent_id": "codex-discord-human-transcript-worker-asr",
   "claimed_at": "2026-11-12T06:22:00Z",
   "base_commit": "7a2927860",
-  "status": "claimed",
+  "status": "completed",
+  "completed_at": "2026-11-12T06:35:00Z",
+  "result_commit": "c8c0bd4619289c07eefe39800c1f5d54b51c4b2d",
   "workflow_mode": "discord-human-transcript-import-v1",
   "claim_protocol": "claim-protocol-v2",
   "entry_mode": "work",
@@ -35,5 +37,6 @@
     "T2021.12.15_1.docx"
   ],
   "static_claim_lease_hours": 24,
-  "scope": "Identity-check eleven T-prefixed human-proofread DOCX attachments from the Discord chatroom against old canonical LIVE_ videos, compare them with existing versions, and import only complete distinct corrected transcripts without fabricating cues."
+  "scope": "Identity-check eleven T-prefixed human-proofread DOCX attachments from the Discord chatroom against old canonical LIVE_ videos, compare them with existing versions, and import only complete distinct corrected transcripts without fabricating cues.",
+  "result": "Eight complete distinct human-proofread transcripts imported as corrected versions; three incomplete 2022-01-01 parts preserved as alternate evidence without transcript promotion or cue fabrication."
 }
