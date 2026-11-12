@@ -6,15 +6,15 @@ This ledger records per-file decisions for attachments discovered in Discord ser
 
 - Fully scanned attachment occurrences reported by the channel audit: **590**
 - Unique normalized filenames reported by the channel audit: **505**
-- Unique files now represented in the structured ledger: **141**
+- Unique files now represented in the structured ledger: **146**
 - Ledger entries marked `imported_corrected`: **60**
 - Ledger entries marked `imported_source_original`: **0**
-- Ledger entries marked `pending_review`: **50**
+- Ledger entries marked `pending_review`: **55**
 - Ledger entries marked `alternate_version_preserved`: **16**
 - Ledger entries marked `duplicate_exact`: **10**
 - Ledger entries marked `key_points_or_clip`: **5**
 - Entries still missing one historical checksum in repository provenance: **2**
-- Remaining unique filenames not yet backfilled into this ledger: **364**
+- Remaining unique filenames not yet backfilled into this ledger: **359**
 
 The remaining count is a backlog estimate from the completed server inventory, not fabricated placeholder rows. Each future run adds only files whose channel, attachment identity, filename, type, stage, checksum state, mapping, and final decision can be evidenced.
 
@@ -111,6 +111,15 @@ Barr-speech live; July 19 to the main live rather than either David call segment
 Pompeo-speech main live; and the two 2021 files to their old canonical long-form identities.
 All five were imported as separate corrected versions with machine parents preserved. No DOCX,
 media, repeated download or fabricated cue timeline entered Git.
+
+Ledger batch 011 backfilled five additional T-prefixed GTV full-text documents dated
+2020-05-16, 2021-09-17, 2021-12-24, 2021-12-25, and 2021-12-26. Date, title, opening,
+closing and same-day content disambiguation map them respectively to old canonical lives
+`LIVE_20200516_001`, `LIVE_20210917_002`, `LIVE_20211224_001`, `LIVE_20211225_002`, and
+`LIVE_20211226_001`. All five have complete file/text checksums and remain `pending_review`
+for the dedicated transcript worker to import as corrected versions. Each file was fetched
+directly once to a temporary directory without a browser save prompt; no binary or fabricated
+cue timeline entered Git.
 
 ## Decision rules
 
