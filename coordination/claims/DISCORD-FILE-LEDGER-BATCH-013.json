@@ -1,0 +1,15 @@
+{
+  "task_id": "DISCORD-FILE-LEDGER-BATCH-013",
+  "agent_id": "codex-discord-file-worker-agent-50",
+  "claimed_at": "2026-11-12T03:43:00Z",
+  "base_commit": "6941d6d4b",
+  "status": "claimed",
+  "workflow_mode": "discord-file-ledger-v1",
+  "claim_protocol": "claim-protocol-v2",
+  "entry_mode": "work",
+  "attachment_ids": ["878969493576106024", "881139463995154432", "882439140199759893", "885749397923717210", "886426359394603068", "887978933650341948", "888249688439021568", "888597880506552330", "891482370501382164"],
+  "filenames": ["T2017.08.28.docx", "abd06bbfe53fb8e1.docx", "T2017.08.30.docx", "T2017.09.01.docx", "201791_.docx", "201792.docx", "20170902.docx", "T2017.09.02.docx", "61eac2e872db82f9.docx"],
+  "channel_id": "821933739307040805",
+  "static_claim_lease_hours": 24,
+  "scope": "Backfill nine unledgered DOCX attachments visible in the original-transcript channel, recording checksums, workflow stage, completeness, exact identity and relation to preferred corrected versions without overwriting transcripts."
+}
