@@ -7,9 +7,9 @@ This ledger records per-file decisions for attachments discovered in Discord ser
 - Fully scanned attachment occurrences reported by the channel audit: **590**
 - Unique normalized filenames reported by the channel audit: **505**
 - Unique files now represented in the structured ledger: **214**
-- Ledger entries marked `imported_corrected`: **73**
+- Ledger entries marked `imported_corrected`: **75**
 - Ledger entries marked `imported_source_original`: **0**
-- Ledger entries marked `pending_review`: **52**
+- Ledger entries marked `pending_review`: **50**
 - Ledger entries marked `alternate_version_preserved`: **28**
 - Ledger entries marked `duplicate_exact`: **15**
 - Ledger entries marked `key_points_or_clip`: **21**
@@ -187,6 +187,12 @@ DOCX attachment identity. Both binary checksums and both extracted-text checksum
 from the source documents. Reusable copies remain only in a local out-of-Git cache, preventing
 another download or browser save prompt; their `pending_review` status is unchanged until the
 dedicated transcript worker imports them.
+
+The dedicated transcript worker then reused those verified cache copies and imported
+`T2020.5.14_.docx` and `T2021.10.20.docx` as independent human-corrected versions for
+`LIVE_20200514_002` and `LIVE_20211020_001`. Their machine transcripts remain intact as parent
+versions. No attachment was downloaded again, no binary entered Git, and the documents' sparse
+locators were not expanded into fabricated sentence-level cues.
 
 ## Decision rules
 

@@ -103,6 +103,12 @@ Counts below were obtained by loading each channel's full virtualized history in
   January 1 documents are explicitly unfinished parts whose combined coverage stops well before the
   roughly twelve-hour media ends; they remain checksummed alternate evidence and were not presented
   as a complete transcript. No document locator was converted into fabricated sentence cues.
+- Two additional T-prefixed `聊天室` documents, `T2020.5.14_.docx` and `T2021.10.20.docx`,
+  were reverified from their exact Discord attachments and imported as separate human `corrected`
+  versions for `LIVE_20200514_002` and `LIVE_20211020_001`. The former is the restored second
+  2020-05-14 video; the latter is the unique long-form first live on 2021-10-20. Both machine ASR
+  versions remain preserved as parents, and the already cached DOCX files were reused without a
+  repeated download or save prompt.
 
 ## 2021-11-20 verification
 
