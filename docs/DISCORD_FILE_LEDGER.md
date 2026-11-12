@@ -6,15 +6,18 @@ This ledger records per-file decisions for attachments discovered in Discord ser
 
 - Fully scanned attachment occurrences reported by the channel audit: **590**
 - Unique normalized filenames reported by the channel audit: **505**
-- Unique files now represented in the structured ledger: **174**
+- Unique files now represented in the structured ledger: **214**
 - Ledger entries marked `imported_corrected`: **73**
 - Ledger entries marked `imported_source_original`: **0**
-- Ledger entries marked `pending_review`: **50**
+- Ledger entries marked `pending_review`: **52**
 - Ledger entries marked `alternate_version_preserved`: **28**
 - Ledger entries marked `duplicate_exact`: **15**
-- Ledger entries marked `key_points_or_clip`: **7**
+- Ledger entries marked `key_points_or_clip`: **21**
+- Ledger entries marked `title_or_link_index`: **2**
+- Ledger entries marked `spreadsheet_metadata`: **7**
+- Ledger entries marked `irrelevant`: **16**
 - Entries still missing one historical checksum in repository provenance: **3**
-- Remaining unique filenames not yet backfilled into this ledger: **331**
+- Remaining unique filenames not yet backfilled into this ledger: **291**
 
 The remaining count is a backlog estimate from the completed server inventory, not fabricated placeholder rows. Each future run adds only files whose channel, attachment identity, filename, type, stage, checksum state, mapping, and final decision can be evidenced.
 
@@ -165,6 +168,18 @@ twelve-hour 2022-01-01 live; all explicitly remain unfinished and together stop 
 the media ends, so they are preserved as incomplete alternate evidence and not promoted to a full
 transcript. All files were downloaded directly once to a temporary directory without browser save
 prompts; no DOCX binary, repeated download, or fabricated cue timeline entered Git.
+
+Ledger batch 017 checked the remaining 40 attachments found in the fully paged `聊天室`
+history. Two T-prefixed, human-proofread full transcripts map to old canonical videos
+`LIVE_20200514_002` and `LIVE_20211020_001` and are queued for the dedicated transcript
+worker. Four XLSX files were inspected read-only: three are dated video key-point sheets for
+`LIVE_20200514_002`, `LIVE_20211022_001`, and `LIVE_20211024_001`, while the fourth is a blank
+template. The 1.27-million-character DOC file is an alphabetic keyword and internal-anchor index,
+not a per-video transcript. The remaining screenshots, a 22.97-second chat clip, artwork, form,
+QR-code image, and installer were checksummed and classified as key-point excerpts, workflow
+metadata, index evidence, or irrelevant auxiliary material. All 40 files were downloaded directly
+once to a temporary directory without browser save prompts; no binary, media, executable, cache,
+or fabricated cue timeline entered Git.
 
 ## Decision rules
 
