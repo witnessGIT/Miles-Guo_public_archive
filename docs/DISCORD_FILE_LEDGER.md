@@ -6,7 +6,7 @@ This ledger records per-file decisions for attachments discovered in Discord ser
 
 - Fully scanned attachment occurrences reported by the channel audit: **590**
 - Unique normalized filenames reported by the channel audit: **505**
-- Unique files now represented in the structured ledger: **253**
+- Unique files now represented in the structured ledger: **255**
 - Ledger entries marked `imported_corrected`: **75**
 - Ledger entries marked `imported_source_original`: **0**
 - Ledger entries marked `pending_review`: **70**
@@ -16,9 +16,9 @@ This ledger records per-file decisions for attachments discovered in Discord ser
 - Ledger entries marked `title_or_link_index`: **4**
 - Ledger entries marked `spreadsheet_metadata`: **7**
 - Ledger entries marked `translation`: **2**
-- Ledger entries marked `irrelevant`: **16**
+- Ledger entries marked `irrelevant`: **18**
 - Entries still missing one historical checksum in repository provenance: **3**
-- Remaining unique filenames not yet backfilled into this ledger: **252**
+- Remaining unique filenames not yet backfilled into this ledger: **250**
 
 The remaining count is a backlog estimate from the completed server inventory, not fabricated placeholder rows. Each future run adds only files whose channel, attachment identity, filename, type, stage, checksum state, mapping, and final decision can be evidenced.
 
@@ -44,6 +44,15 @@ copy of `2017.05.21-2.docx`. Its content maps to deferred `VIDEO_20170521_003` a
 earlier human source-original version of the corrected-channel file already represented in the
 ledger. It is preserved as `alternate_version_preserved` without import or overwrite. The existing
 local copy and Finder origin metadata were reused, so no download or save prompt was triggered.
+
+Ledger batch 019 checked two previously unledgered PDFs from the server project room. `20.pdf`
+is the archive-production plan and documents task rooms, deliverables and the
+T/T-J/TZ/TZ-J/Y/YZ/P naming stages. `download_2.pdf` is a one-page workflow diagram covering
+link collection, transcription, proofreading, key-point extraction and clip production. Neither
+contains a per-video transcript, so both are classified as workflow documentation rather than
+promoted to full text. Existing local copies were reused, their binary and extracted-text checksums
+were recorded, and their first pages were visually inspected; no repeated download, save prompt or
+PDF binary entered Git.
 
 The `pending_review` rows are fully checksummed archived-channel transcripts that map to
 the newer `VIDEO_` inventory rather than the old 1,750 canonical `LIVE_` scope. They are retained
