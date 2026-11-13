@@ -1,0 +1,15 @@
+{
+  "task_id": "LINKREC_SC_GWINS_LIST2_70_20170718_direct_playback",
+  "agent_id": "codex-discord-link-recovery-00-2",
+  "claimed_at": "2026-11-13T03:06:00Z",
+  "base_commit": "74fc9f2a2",
+  "status": "claimed",
+  "workflow_mode": "discord-direct-playback-recovery-v1",
+  "claim_protocol": "claim-protocol-v2",
+  "entry_mode": "work",
+  "stage": "direct_playback_source_recovery",
+  "record_id": "SC_GWINS_LIST2_70_20170718",
+  "queue_phase": "deferred_after_legacy",
+  "static_claim_lease_hours": 24,
+  "scope": "Recover or conclusively audit exact-identity direct playback locators for the 2017-07-18 twenty-minute plank fitness video. Do not substitute another same-date video or compilation."
+}
