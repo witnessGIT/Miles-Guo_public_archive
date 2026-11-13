@@ -6,20 +6,29 @@ This ledger records per-file decisions for attachments discovered in Discord ser
 
 - Fully scanned attachment occurrences reported by the channel audit: **590**
 - Unique normalized filenames reported by the channel audit: **505**
-- Unique files now represented in the structured ledger: **214**
+- Unique files now represented in the structured ledger: **219**
 - Ledger entries marked `imported_corrected`: **75**
 - Ledger entries marked `imported_source_original`: **0**
 - Ledger entries marked `pending_review`: **50**
-- Ledger entries marked `alternate_version_preserved`: **28**
+- Ledger entries marked `alternate_version_preserved`: **33**
 - Ledger entries marked `duplicate_exact`: **15**
 - Ledger entries marked `key_points_or_clip`: **21**
 - Ledger entries marked `title_or_link_index`: **2**
 - Ledger entries marked `spreadsheet_metadata`: **7**
 - Ledger entries marked `irrelevant`: **16**
 - Entries still missing one historical checksum in repository provenance: **3**
-- Remaining unique filenames not yet backfilled into this ledger: **291**
+- Remaining unique filenames not yet backfilled into this ledger: **286**
 
 The remaining count is a backlog estimate from the completed server inventory, not fabricated placeholder rows. Each future run adds only files whose channel, attachment identity, filename, type, stage, checksum state, mapping, and final decision can be evidenced.
+
+The local-reuse comparison batch added five previously unledgered full-text attachments for
+`LIVE_20170429_002`, `LIVE_20170525_001`, `LIVE_20170708_001`, `LIVE_20170709_001`, and
+`LIVE_20170715_001`. File-origin metadata preserved by macOS supplied the exact Discord channel
+and attachment identities. Each document was checksummed, extracted and compared with the
+existing preferred corrected version; normalized similarities ranged from materially distinct
+to near-parallel, so all five are retained as alternate human versions without overwriting or
+re-importing the preferred transcript. Existing downloads were reused and no browser save prompt,
+binary commit or fabricated cue timeline was created.
 
 The `pending_review` rows are fully checksummed archived-channel transcripts that map to
 the newer `VIDEO_` inventory rather than the old 1,750 canonical `LIVE_` scope. They are retained
