@@ -1,0 +1,21 @@
+{
+  "task_id": "LINKREC_SC_GWINS_LIST2_70_20170801_direct_playback",
+  "agent_id": "codex-discord-link-recovery-00-2",
+  "completed_at": "2026-11-13T09:46:00Z",
+  "result_commit": "2775e06548cb29f2aefaba3ea1a21f0b792c687e",
+  "result": "recovered",
+  "direct_playback_url": "https://www.youtube.com/watch?v=R_wfkbtIDCE",
+  "alternate_restricted_playback_url": "https://rumble.com/v576zul-20170801.html",
+  "outputs": [
+    "data/current/video_catalog/date_first_video_catalog.jsonl",
+    "data/source_page_evidence/discord/discord_project_live_master_by_date.jsonl",
+    "data/source_page_evidence/discord/discord_direct_playback_recovery_attempts.jsonl",
+    "docs/DISCORD_LINK_RECOVERY_TASKS.md"
+  ],
+  "validation": "GWINS page 23549 exposes both exact locators; YouTube oEmbed returned HTTP 200 with the exact August 1 fishing/safety-update title; the exact Rumble locator was preserved as access-restricted after a 307 redirect loop; build_db passed; validate_db passed with 31 existing warnings; 148 tests passed.",
+  "workflow_mode": "discord-direct-playback-recovery-v1",
+  "claim_protocol": "claim-protocol-v2",
+  "entry_mode": "work",
+  "finish_prerequisites_revalidated": true,
+  "notes": "The previously preserved Discord XLSX YouTube locator is now independently verified. No same-date substitute or compilation was used. No media was downloaded or played, and no save confirmation was triggered."
+}
