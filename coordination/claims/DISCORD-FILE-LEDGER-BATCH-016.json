@@ -1,0 +1,26 @@
+{
+  "task_id": "DISCORD-FILE-LEDGER-BATCH-016",
+  "agent_id": "codex-discord-file-ledger-agent-50",
+  "claimed_at": "2026-11-13T00:40:00Z",
+  "base_commit": "c11f3d65c",
+  "status": "claimed",
+  "workflow_mode": "discord-file-ledger-v1",
+  "claim_protocol": "claim-protocol-v2",
+  "entry_mode": "work",
+  "stage": "discord_file_ledger_review",
+  "attachment_ids": [
+    "824654516023590953", "825380434723864607", "825382441672769607",
+    "825384314375372850", "826481779674054696", "826482612675280946",
+    "826483373760708608", "826483819498569788", "826484663085170758",
+    "826485604468523018", "826486280518631434", "826486662992494642",
+    "827191741672063026", "827192303901868033", "828644322726772777",
+    "828648713361686558", "830135159226630184", "830819437686161478",
+    "830820196633018408", "831184393707061279", "831186477928939550",
+    "831187157767028787", "834502465281851392", "834656417662107738",
+    "835042392087592960", "836835708290727956", "838478469868027944",
+    "839516266187980810", "839880913990189077", "846967681662844968",
+    "871750331153907712", "972847258385145906", "973032366211735602"
+  ],
+  "static_claim_lease_hours": 24,
+  "scope": "Ledger the remaining 33 already-downloaded Discord documents using preserved origin metadata and content inspection, without repeated downloads, binary commits, transcript imports, or overwriting other workers."
+}
