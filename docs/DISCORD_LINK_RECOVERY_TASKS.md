@@ -5,9 +5,9 @@ A reachable archive or detail page is not counted as a direct playback URL.
 
 ## Queue summary
 
-- Open tasks: **635**
+- Open tasks: **634**
 - Legacy canonical LIVE_ tasks: **15 concluded unresolved; 0 open**
-- VIDEO/source-candidate tasks: **635 open; processing after legacy completion; 27 recovered in the current deferred phase**
+- VIDEO/source-candidate tasks: **634 open; processing after legacy completion; 28 recovered in the current deferred phase**
 - Every task preserves its current archive/detail links and requires exact identity evidence.
 - An exhaustive search with no result stays `unresolved`; it is not labelled media-missing.
 
@@ -18,6 +18,8 @@ The 2017-07-12 Snow video (`SC_GWINS_LIST2_70_20170712`) now has an exact-title 
 The second 2017-07-15 live (`SC_GWINS_LIST2_70_20170715_2`) now has a 5,159-second exact-part Rumble source plus the GWINS-linked YouTube mirror, both verified through public oEmbed metadata.
 
 The 2017-07-17 fourth Mingjing interview (`SC_GWINS_LIST2_70_20170717`) now has an exact-identity 16,683-second Rumble source and a reachable exact-title YouTube mirror. A previously supplemental YouTube locator was demoted because its live metadata identifies a different June 6 video; the current GWINS-linked YouTube locator is retained as dead after returning 404.
+
+The 2017-07-18 plank fitness video (`SC_GWINS_LIST2_70_20170718`) now has a reachable exact-title YouTube source and the exact GWINS-linked 70-second Rumble mirror, both verified through public oEmbed metadata.
 
 ## Legacy-first conclusions
 
