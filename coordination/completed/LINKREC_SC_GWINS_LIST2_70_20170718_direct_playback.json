@@ -1,0 +1,21 @@
+{
+  "task_id": "LINKREC_SC_GWINS_LIST2_70_20170718_direct_playback",
+  "agent_id": "codex-discord-link-recovery-00-2",
+  "completed_at": "2026-11-13T03:12:00Z",
+  "result_commit": "679c507c6252786b843315563c97e335c2b28390",
+  "result": "recovered",
+  "direct_playback_url": "https://www.youtube.com/watch?v=SkEeFCjIjdU",
+  "alternate_playback_url": "https://rumble.com/v576y05-20170718.html",
+  "outputs": [
+    "data/current/video_catalog/date_first_video_catalog.jsonl",
+    "data/source_page_evidence/discord/discord_project_live_master_by_date.jsonl",
+    "data/source_page_evidence/discord/discord_direct_playback_recovery_attempts.jsonl",
+    "docs/DISCORD_LINK_RECOVERY_TASKS.md"
+  ],
+  "validation": "GWINS page 23550 exposes both exact locators; YouTube oEmbed returned HTTP 200 with the distinctive July 18 twenty-minute-plank title; Rumble oEmbed returned HTTP 200 with title 20170718 and duration 70 seconds; build_db passed; validate_db passed with 31 existing warnings; 148 tests passed.",
+  "workflow_mode": "discord-direct-playback-recovery-v1",
+  "claim_protocol": "claim-protocol-v2",
+  "entry_mode": "work",
+  "finish_prerequisites_revalidated": true,
+  "notes": "No same-day substitute or compilation was used. No media was downloaded or played, and no save confirmation was triggered."
+}
