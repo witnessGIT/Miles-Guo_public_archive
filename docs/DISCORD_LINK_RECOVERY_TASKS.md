@@ -5,15 +5,17 @@ A reachable archive or detail page is not counted as a direct playback URL.
 
 ## Queue summary
 
-- Open tasks: **637**
+- Open tasks: **636**
 - Legacy canonical LIVE_ tasks: **15 concluded unresolved; 0 open**
-- VIDEO/source-candidate tasks: **637 open; processing after legacy completion; 25 recovered in the current deferred phase**
+- VIDEO/source-candidate tasks: **636 open; processing after legacy completion; 26 recovered in the current deferred phase**
 - Every task preserves its current archive/detail links and requires exact identity evidence.
 - An exhaustive search with no result stays `unresolved`; it is not labelled media-missing.
 
 The 2017-07-10 video (`SC_GWINS_LIST2_70_20170710`) now has an exact-identity 6,301-second Rumble playback source and an independently verified exact-title YouTube mirror. The date, title, transcript identity, and platform metadata agree.
 
 The 2017-07-12 Snow video (`SC_GWINS_LIST2_70_20170712`) now has an exact-title YouTube playback source verified through public oEmbed metadata. Its exact GWINS outbound Rumble locator is retained as access-restricted after an HTTP 403 metadata check.
+
+The second 2017-07-15 live (`SC_GWINS_LIST2_70_20170715_2`) now has a 5,159-second exact-part Rumble source plus the GWINS-linked YouTube mirror, both verified through public oEmbed metadata.
 
 ## Legacy-first conclusions
 
