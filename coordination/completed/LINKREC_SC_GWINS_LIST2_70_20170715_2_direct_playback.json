@@ -1,0 +1,21 @@
+{
+  "task_id": "LINKREC_SC_GWINS_LIST2_70_20170715_2_direct_playback",
+  "agent_id": "codex-discord-link-recovery-00-2",
+  "completed_at": "2026-11-13T00:21:00Z",
+  "result_commit": "0f11a81021c3eaada06377277c13694203578ebd",
+  "result": "recovered",
+  "direct_playback_url": "https://rumble.com/v5c4boc-20170715-2.html",
+  "alternate_playback_url": "https://www.youtube.com/watch?v=KybaEctDodI",
+  "outputs": [
+    "data/current/video_catalog/date_first_video_catalog.jsonl",
+    "data/source_page_evidence/discord/discord_project_live_master_by_date.jsonl",
+    "data/source_page_evidence/discord/discord_direct_playback_recovery_attempts.jsonl",
+    "docs/DISCORD_LINK_RECOVERY_TASKS.md"
+  ],
+  "validation": "The exact GWINS detail page exposes both platform locators; Rumble oEmbed returned HTTP 200 with title 20170715_2 and duration 5,159 seconds; YouTube oEmbed returned HTTP 200 for the same date/network-test video; build_db passed; validate_db passed with 31 existing warnings; 148 tests passed.",
+  "workflow_mode": "discord-direct-playback-recovery-v1",
+  "claim_protocol": "claim-protocol-v2",
+  "entry_mode": "work",
+  "finish_prerequisites_revalidated": true,
+  "notes": "The first same-date video and compilations were not substituted. No media or attachment was downloaded or played, and no save confirmation was triggered."
+}
