@@ -5,9 +5,9 @@ A reachable archive or detail page is not counted as a direct playback URL.
 
 ## Queue summary
 
-- Open tasks: **633**
+- Open tasks: **632**
 - Legacy canonical LIVE_ tasks: **15 concluded unresolved; 0 open**
-- VIDEO/source-candidate tasks: **633 open; processing after legacy completion; 29 recovered in the current deferred phase**
+- VIDEO/source-candidate tasks: **632 open; processing after legacy completion; 30 recovered in the current deferred phase**
 - Every task preserves its current archive/detail links and requires exact identity evidence.
 - An exhaustive search with no result stays `unresolved`; it is not labelled media-missing.
 
@@ -22,6 +22,8 @@ The 2017-07-17 fourth Mingjing interview (`SC_GWINS_LIST2_70_20170717`) now has 
 The 2017-07-18 plank fitness video (`SC_GWINS_LIST2_70_20170718`) now has a reachable exact-title YouTube source and the exact GWINS-linked 70-second Rumble mirror, both verified through public oEmbed metadata.
 
 The 2017-08-01 fishing and safety-update video (`SC_GWINS_LIST2_70_20170801`) now has its Discord XLSX YouTube locator independently verified through public oEmbed metadata and the matching GWINS detail page. The exact GWINS-linked Rumble locator is retained as access-restricted after a 307 redirect loop prevented metadata verification.
+
+The first 2017-08-02 network-test video (`SC_GWINS_LIST2_70_20170802_1`) now has an exact-part 1,296-second Rumble source and an independently verified exact-title YouTube mirror. The `_1` identity was checked against both later same-date records, and neither was substituted.
 
 ## Legacy-first conclusions
 
