@@ -1,0 +1,14 @@
+{
+  "task_id": "DISCORD-FILE-LEDGER-BATCH-019",
+  "agent_id": "codex-discord-file-ledger-agent-50",
+  "claimed_at": "2026-11-13T03:43:00Z",
+  "base_commit": "093de9e2a",
+  "status": "claimed",
+  "workflow_mode": "discord-file-ledger-v1",
+  "claim_protocol": "claim-protocol-v2",
+  "entry_mode": "work",
+  "stage": "discord_file_ledger_review",
+  "attachment_ids": ["821954147955113984", "821954438835077140"],
+  "static_claim_lease_hours": 24,
+  "scope": "Ledger two already-downloaded PDF attachments from the target Discord server-era channel range using preserved origin metadata and read-only content inspection, without repeated download, binary commit, transcript import, or overwrite."
+}
