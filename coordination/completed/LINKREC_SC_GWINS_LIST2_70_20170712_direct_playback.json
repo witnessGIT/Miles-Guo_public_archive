@@ -1,0 +1,21 @@
+{
+  "task_id": "LINKREC_SC_GWINS_LIST2_70_20170712_direct_playback",
+  "agent_id": "codex-discord-link-recovery-00-2",
+  "completed_at": "2026-11-12T20:51:00Z",
+  "result_commit": "351787ff33d08109b35e5e137c90bf9adab35d38",
+  "result": "recovered",
+  "direct_playback_url": "https://www.youtube.com/watch?v=1mLDjW11KEI",
+  "restricted_alternate_playback_url": "https://rumble.com/v576wyt-20170712.html",
+  "outputs": [
+    "data/current/video_catalog/date_first_video_catalog.jsonl",
+    "data/source_page_evidence/discord/discord_project_live_master_by_date.jsonl",
+    "data/source_page_evidence/discord/discord_direct_playback_recovery_attempts.jsonl",
+    "docs/DISCORD_LINK_RECOVERY_TASKS.md"
+  ],
+  "validation": "The GWINS detail page exposes both platform locators; YouTube oEmbed returned HTTP 200 with the exact Snow/July-12-Twitter-video title; the exact Rumble locator is preserved as access-restricted after HTTP 403; build_db passed; validate_db passed with 31 existing warnings; 148 tests passed.",
+  "workflow_mode": "discord-direct-playback-recovery-v1",
+  "claim_protocol": "claim-protocol-v2",
+  "entry_mode": "work",
+  "finish_prerequisites_revalidated": true,
+  "notes": "No media or attachment was downloaded or played, and no save confirmation was triggered."
+}
