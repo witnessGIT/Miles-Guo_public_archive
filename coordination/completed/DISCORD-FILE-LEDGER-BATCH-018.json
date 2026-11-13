@@ -1,0 +1,17 @@
+{
+  "task_id": "DISCORD-FILE-LEDGER-BATCH-018",
+  "agent_id": "codex-discord-file-ledger-agent-50",
+  "completed_at": "2026-11-13T01:36:00Z",
+  "result_commit": "c9db84d276606f99741336b012ad5542634fc4e3",
+  "workflow_mode": "discord-file-ledger-v1",
+  "claim_protocol": "claim-protocol-v2",
+  "entry_mode": "work",
+  "attachment_count": 1,
+  "outputs": [
+    "data/source_page_evidence/discord/discord_file_ledger.jsonl",
+    "docs/DISCORD_FILE_LEDGER.md"
+  ],
+  "validation": "Checked 1 already-downloaded full-text DOCX; preserved 1 distinct earlier human source-original as alternate_version_preserved; 0 imported, 0 unreachable. build_db passed; validate_db passed with 31 existing warnings; 148 tests passed.",
+  "finish_prerequisites_revalidated": true,
+  "notes": "Ledger coverage is now 253 of 505 unique normalized filenames, leaving an estimated 252 not yet backfilled. The existing local file and preserved Discord CDN origin metadata were reused, so there was no repeat download or browser save confirmation. The file maps to deferred VIDEO_20170521_003 and does not overwrite the corrected-channel copy."
+}
