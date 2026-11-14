@@ -5,9 +5,9 @@ A reachable archive or detail page is not counted as a direct playback URL.
 
 ## Queue summary
 
-- Open tasks: **631**
+- Open tasks: **630**
 - Legacy canonical LIVE_ tasks: **15 concluded unresolved; 0 open**
-- VIDEO/source-candidate tasks: **631 open; processing after legacy completion; 31 recovered in the current deferred phase**
+- VIDEO/source-candidate tasks: **630 open; processing after legacy completion; 32 recovered in the current deferred phase**
 - Every task preserves its current archive/detail links and requires exact identity evidence.
 - An exhaustive search with no result stays `unresolved`; it is not labelled media-missing.
 
@@ -26,6 +26,8 @@ The 2017-08-01 fishing and safety-update video (`SC_GWINS_LIST2_70_20170801`) no
 The first 2017-08-02 network-test video (`SC_GWINS_LIST2_70_20170802_1`) now has an exact-part 1,296-second Rumble source and an independently verified exact-title YouTube mirror. The `_1` identity was checked against both later same-date records, and neither was substituted.
 
 The second 2017-08-02 network-test video (`SC_GWINS_LIST2_70_20170802_2`) now has an exact-part 3,198-second Rumble source and an independently verified exact-title YouTube mirror. The YouTube identity also confirms the existing Discord TXT locator; neither other same-date video nor a compilation was substituted.
+
+The third 2017-08-02 safety-update and demolition-policy video (`SC_GWINS_LIST2_70_20170802_3`) now has an exact-part 171-second Rumble source and an independently verified exact-title YouTube mirror. The `_3` identity was checked against both earlier same-date records, and neither was substituted.
 
 ## Legacy-first conclusions
 
