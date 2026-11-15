@@ -1,0 +1,24 @@
+{
+  "task_id": "LINKREC_SC_GWINS_LIST2_70_20170818_direct_playback",
+  "agent_id": "codex-discord-link-recovery-00-2",
+  "completed_at": "2026-11-15T12:58:56Z",
+  "result_commit": "bfed9a1e4e71f24c01bef9490abc9bc1cb4761f6",
+  "result": "recovered",
+  "direct_playback_url": "https://rumble.com/v5c4ba5-20170818.html",
+  "alternate_playback_urls": [
+    "https://www.youtube.com/watch?v=MEmfe2bn_p4",
+    "https://www.youtube.com/watch?v=rSPeoWHfKl8"
+  ],
+  "outputs": [
+    "data/current/video_catalog/date_first_video_catalog.jsonl",
+    "data/source_page_evidence/discord/discord_project_live_master_by_date.jsonl",
+    "data/source_page_evidence/discord/discord_direct_playback_recovery_attempts.jsonl",
+    "docs/DISCORD_LINK_RECOVERY_TASKS.md"
+  ],
+  "validation": "GWINS page 733 exposes the exact Rumble and YouTube locators; Rumble oEmbed returned HTTP 200 with the exact fifth-interview title and duration 11,938 seconds; both YouTube locators returned HTTP 200 with exact fifth-episode titles; build_db passed; validate_db passed with 31 existing warnings; 148 tests passed.",
+  "workflow_mode": "discord-direct-playback-recovery-v1",
+  "claim_protocol": "claim-protocol-v2",
+  "entry_mode": "work",
+  "finish_prerequisites_revalidated": true,
+  "notes": "The date and fifth-episode identity were checked across all three playback locators. No other interview episode or compilation was substituted. No media was downloaded or played, and no save confirmation was triggered."
+}
