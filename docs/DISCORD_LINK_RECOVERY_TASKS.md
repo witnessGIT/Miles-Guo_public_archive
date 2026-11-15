@@ -5,9 +5,9 @@ A reachable archive or detail page is not counted as a direct playback URL.
 
 ## Queue summary
 
-- Open tasks: **627**
+- Open tasks: **626**
 - Legacy canonical LIVE_ tasks: **15 concluded unresolved; 0 open**
-- VIDEO/source-candidate tasks: **627 open; processing after legacy completion; 35 recovered in the current deferred phase**
+- VIDEO/source-candidate tasks: **626 open; processing after legacy completion; 36 recovered in the current deferred phase**
 - Every task preserves its current archive/detail links and requires exact identity evidence.
 - An exhaustive search with no result stays `unresolved`; it is not labelled media-missing.
 
@@ -34,6 +34,8 @@ The first 2017-08-05 network-test and Hong Kong business video (`SC_GWINS_LIST2_
 The second 2017-08-05 video (`SC_GWINS_LIST2_70_20170805_2`) is a 149-second Twitter safety-update short video, confirmed by exact `_2` Rumble metadata and a descriptive YouTube title. The first same-date long video was not substituted.
 
 The second 2017-08-14 video (`SC_GWINS_LIST2_70_20170814_2`) is a 67-second Twitter safety-update short video, confirmed by exact `_2` Rumble metadata and an exact-title YouTube mirror. The first same-date long-form video was not substituted.
+
+The 2017-08-16 video (`SC_GWINS_LIST2_70_20170816`) is an 89-second fitness safety-update about the North-Daihe meeting, confirmed by exact Rumble metadata and an exact-title YouTube mirror. No adjacent-date video or compilation was substituted.
 
 ## Legacy-first conclusions
 
