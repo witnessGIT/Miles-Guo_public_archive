@@ -5,9 +5,9 @@ A reachable archive or detail page is not counted as a direct playback URL.
 
 ## Queue summary
 
-- Open tasks: **623**
+- Open tasks: **622**
 - Legacy canonical LIVE_ tasks: **15 concluded unresolved; 0 open**
-- VIDEO/source-candidate tasks: **623 open; processing after legacy completion; 39 recovered in the current deferred phase**
+- VIDEO/source-candidate tasks: **622 open; processing after legacy completion; 40 recovered in the current deferred phase**
 - Every task preserves its current archive/detail links and requires exact identity evidence.
 - An exhaustive search with no result stays `unresolved`; it is not labelled media-missing.
 
@@ -42,6 +42,8 @@ The 2017-08-17 video (`SC_GWINS_LIST2_70_20170817`) is a 73-second fitness safet
 The 2017-08-18 fifth Mingjing interview (`SC_GWINS_LIST2_70_20170818`) now has an exact-title 11,938-second Rumble source, the GWINS-linked full-HD YouTube source, and an independently verified existing Discord YouTube mirror. The date and fifth-episode identity agree across all three locators; no other interview episode or compilation was substituted.
 
 The 2017-08-19 fitness safety-update (`SC_GWINS_LIST2_70_20170819`) now has an exact-id 74-second Rumble source and an exact-title YouTube mirror. The date, short duration and distinctive title agree; no adjacent-date video or compilation was substituted.
+
+The first 2017-08-20 record (`SC_GWINS_LIST2_70_20170820_1`) now has an exact `_1` 296-second Rumble source and an exact-title YouTube mirror for the four-part Twitter short-video compilation. An existing Discord topic-title YouTube locator remains preserved as supplemental evidence; the second same-date record was not substituted.
 
 ## Legacy-first conclusions
 
