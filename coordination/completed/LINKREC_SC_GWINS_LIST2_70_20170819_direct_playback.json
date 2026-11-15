@@ -1,0 +1,23 @@
+{
+  "task_id": "LINKREC_SC_GWINS_LIST2_70_20170819_direct_playback",
+  "agent_id": "codex-discord-link-recovery-00-2",
+  "completed_at": "2026-11-15T18:52:56Z",
+  "result_commit": "5b0d4be550a0f18df684932f1ee7e64831c0b78d",
+  "result": "recovered",
+  "direct_playback_url": "https://rumble.com/v5773zf-20170819.html",
+  "alternate_playback_urls": [
+    "https://www.youtube.com/watch?v=eAH78WhNm4Q"
+  ],
+  "outputs": [
+    "data/current/video_catalog/date_first_video_catalog.jsonl",
+    "data/source_page_evidence/discord/discord_project_live_master_by_date.jsonl",
+    "data/source_page_evidence/discord/discord_direct_playback_recovery_attempts.jsonl",
+    "docs/DISCORD_LINK_RECOVERY_TASKS.md"
+  ],
+  "validation": "GWINS page 23538 exposes both exact locators; Rumble oEmbed returned HTTP 200 with title 20170819 and duration 74 seconds; YouTube oEmbed returned HTTP 200 with the exact fitness safety-update, excitement/sadness, imminent battle and peaceful revolution title; build_db passed; validate_db passed with 31 existing warnings; 148 tests passed.",
+  "workflow_mode": "discord-direct-playback-recovery-v1",
+  "claim_protocol": "claim-protocol-v2",
+  "entry_mode": "work",
+  "finish_prerequisites_revalidated": true,
+  "notes": "The date, source identifier, short duration and distinctive title were checked against adjacent-date videos. No substitute or compilation was used. No media was downloaded or played, and no save confirmation was triggered."
+}
