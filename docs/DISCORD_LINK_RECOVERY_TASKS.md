@@ -5,9 +5,9 @@ A reachable archive or detail page is not counted as a direct playback URL.
 
 ## Queue summary
 
-- Open tasks: **626**
+- Open tasks: **625**
 - Legacy canonical LIVE_ tasks: **15 concluded unresolved; 0 open**
-- VIDEO/source-candidate tasks: **626 open; processing after legacy completion; 36 recovered in the current deferred phase**
+- VIDEO/source-candidate tasks: **625 open; processing after legacy completion; 37 recovered in the current deferred phase**
 - Every task preserves its current archive/detail links and requires exact identity evidence.
 - An exhaustive search with no result stays `unresolved`; it is not labelled media-missing.
 
@@ -36,6 +36,8 @@ The second 2017-08-05 video (`SC_GWINS_LIST2_70_20170805_2`) is a 149-second Twi
 The second 2017-08-14 video (`SC_GWINS_LIST2_70_20170814_2`) is a 67-second Twitter safety-update short video, confirmed by exact `_2` Rumble metadata and an exact-title YouTube mirror. The first same-date long-form video was not substituted.
 
 The 2017-08-16 video (`SC_GWINS_LIST2_70_20170816`) is an 89-second fitness safety-update about the North-Daihe meeting, confirmed by exact Rumble metadata and an exact-title YouTube mirror. No adjacent-date video or compilation was substituted.
+
+The 2017-08-17 video (`SC_GWINS_LIST2_70_20170817`) is a 73-second fitness safety-update, confirmed by the exact GWINS-linked Rumble source, the exact GWINS-linked YouTube source, and an existing exact-title Discord YouTube mirror. Two earlier Discord supplemental locators were demoted because their live metadata identifies a different 2017-08-04 video.
 
 ## Legacy-first conclusions
 
