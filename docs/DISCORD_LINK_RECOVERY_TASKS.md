@@ -5,9 +5,9 @@ A reachable archive or detail page is not counted as a direct playback URL.
 
 ## Queue summary
 
-- Open tasks: **621**
+- Open tasks: **620**
 - Legacy canonical LIVE_ tasks: **15 concluded unresolved; 0 open**
-- VIDEO/source-candidate tasks: **621 open; processing after legacy completion; 41 recovered in the current deferred phase**
+- VIDEO/source-candidate tasks: **620 open; processing after legacy completion; 42 recovered in the current deferred phase**
 - Every task preserves its current archive/detail links and requires exact identity evidence.
 - An exhaustive search with no result stays `unresolved`; it is not labelled media-missing.
 
@@ -46,6 +46,8 @@ The 2017-08-19 fitness safety-update (`SC_GWINS_LIST2_70_20170819`) now has an e
 The first 2017-08-20 record (`SC_GWINS_LIST2_70_20170820_1`) now has an exact `_1` 296-second Rumble source and an exact-title YouTube mirror for the four-part Twitter short-video compilation. An existing Discord topic-title YouTube locator remains preserved as supplemental evidence; the second same-date record was not substituted.
 
 The 2017-08-21 network-test video (`SC_GWINS_LIST2_69_20170821`) now has an exact-id 835-second Rumble source and an exact-title YouTube mirror covering the fake-assistant Twitter/audio attack and ten-day pause. The Discord MEGA archive locator remains preserved; no adjacent-date video or compilation was substituted.
+
+The 2017-08-23 safety-update (`SC_GWINS_LIST2_69_20170823`) now has an exact-id 314-second Rumble source and an exact-date YouTube mirror. Two earlier Discord supplemental locators were demoted because their live metadata identifies a different 2017-08-15 video.
 
 ## Legacy-first conclusions
 
