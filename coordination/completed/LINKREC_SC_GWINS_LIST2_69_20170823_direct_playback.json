@@ -1,0 +1,27 @@
+{
+  "task_id": "LINKREC_SC_GWINS_LIST2_69_20170823_direct_playback",
+  "agent_id": "codex-discord-link-recovery-00-2",
+  "completed_at": "2026-11-16T19:05:46Z",
+  "result_commit": "77cdb16ff1d5a138d5e3a73a57dfd05f9972a7a3",
+  "result": "recovered",
+  "direct_playback_url": "https://rumble.com/v5774ed-20170823.html",
+  "alternate_playback_urls": [
+    "https://www.youtube.com/watch?v=Jt95-gKc_0c"
+  ],
+  "rejected_identity_mismatch_urls": [
+    "https://www.youtube.com/watch?v=fhZ1ZPSkI4E",
+    "https://gwins.org/cn/milesguo/605.html"
+  ],
+  "outputs": [
+    "data/current/video_catalog/date_first_video_catalog.jsonl",
+    "data/source_page_evidence/discord/discord_project_live_master_by_date.jsonl",
+    "data/source_page_evidence/discord/discord_direct_playback_recovery_attempts.jsonl",
+    "docs/DISCORD_LINK_RECOVERY_TASKS.md"
+  ],
+  "validation": "GWINS page 23554 exposes the exact Rumble and YouTube locators; Rumble oEmbed returned HTTP 200 with title 20170823 and duration 314 seconds; the GWINS-linked YouTube oEmbed title identifies the same-date safety-update; two earlier Discord locators were shown by live metadata to belong to 2017-08-15; build_db passed; validate_db passed with 31 existing warnings; 148 tests passed.",
+  "workflow_mode": "discord-direct-playback-recovery-v1",
+  "claim_protocol": "claim-protocol-v2",
+  "entry_mode": "work",
+  "finish_prerequisites_revalidated": true,
+  "notes": "Two cross-date Discord supplemental locators were demoted without deleting their evidence. No adjacent-date substitute or compilation was used. No media was downloaded or played, and no save confirmation was triggered."
+}
