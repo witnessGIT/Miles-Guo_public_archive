@@ -1,0 +1,26 @@
+{
+  "task_id": "LINKREC_SC_GWINS_LIST2_69_20170821_direct_playback",
+  "agent_id": "codex-discord-link-recovery-00-2",
+  "completed_at": "2026-11-16T10:07:21Z",
+  "result_commit": "ee5ca04ac2824734364541723a37e263d3852096",
+  "result": "recovered",
+  "direct_playback_url": "https://rumble.com/v577471-20170821.html",
+  "alternate_playback_urls": [
+    "https://www.youtube.com/watch?v=7VrMbZKlq3Q"
+  ],
+  "supplemental_archive_urls": [
+    "https://mega.nz/file/lh4kEQJL#cwyQmfKOFCKTEdgxLIFOvTsVcWTiZzQUGfNZBksFRBM"
+  ],
+  "outputs": [
+    "data/current/video_catalog/date_first_video_catalog.jsonl",
+    "data/source_page_evidence/discord/discord_project_live_master_by_date.jsonl",
+    "data/source_page_evidence/discord/discord_direct_playback_recovery_attempts.jsonl",
+    "docs/DISCORD_LINK_RECOVERY_TASKS.md"
+  ],
+  "validation": "GWINS page 735 exposes both exact locators; Rumble oEmbed returned HTTP 200 with title 20170821 and duration 835 seconds; YouTube oEmbed returned HTTP 200 with the exact network-test, fake-assistant Twitter/audio and ten-day pause title; build_db passed; validate_db passed with 31 existing warnings; 148 tests passed.",
+  "workflow_mode": "discord-direct-playback-recovery-v1",
+  "claim_protocol": "claim-protocol-v2",
+  "entry_mode": "work",
+  "finish_prerequisites_revalidated": true,
+  "notes": "The Discord MEGA archive locator was preserved without downloading it. No adjacent-date substitute or compilation was used. No media was downloaded or played, and no save confirmation was triggered."
+}
