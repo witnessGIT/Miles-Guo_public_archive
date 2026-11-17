@@ -5,9 +5,9 @@ A reachable archive or detail page is not counted as a direct playback URL.
 
 ## Queue summary
 
-- Open tasks: **620**
+- Open tasks: **619**
 - Legacy canonical LIVE_ tasks: **15 concluded unresolved; 0 open**
-- VIDEO/source-candidate tasks: **620 open; processing after legacy completion; 42 recovered in the current deferred phase**
+- VIDEO/source-candidate tasks: **619 open; processing after legacy completion; 43 recovered in the current deferred phase**
 - Every task preserves its current archive/detail links and requires exact identity evidence.
 - An exhaustive search with no result stays `unresolved`; it is not labelled media-missing.
 
@@ -48,6 +48,8 @@ The first 2017-08-20 record (`SC_GWINS_LIST2_70_20170820_1`) now has an exact `_
 The 2017-08-21 network-test video (`SC_GWINS_LIST2_69_20170821`) now has an exact-id 835-second Rumble source and an exact-title YouTube mirror covering the fake-assistant Twitter/audio attack and ten-day pause. The Discord MEGA archive locator remains preserved; no adjacent-date video or compilation was substituted.
 
 The 2017-08-23 safety-update (`SC_GWINS_LIST2_69_20170823`) now has an exact-id 314-second Rumble source and an exact-date YouTube mirror. Two earlier Discord supplemental locators were demoted because their live metadata identifies a different 2017-08-15 video.
+
+The 2017-08-25 郭文贵/郭宝胜 interview (`SC_GWINS_LIST2_69_20170825`) now has an exact-id 7,197-second Rumble source and an exact-title YouTube mirror for “宗教与中国政治及社会关系”. The separate same-date “70天的特别之旅” video was not substituted.
 
 ## Legacy-first conclusions
 
