@@ -1,0 +1,23 @@
+{
+  "task_id": "DISCORD-FILE-LEDGER-BATCH-020",
+  "agent_id": "codex-discord-file-ledger-agent-50",
+  "claimed_at": "2026-11-17T00:10:10Z",
+  "base_commit": "9c73c597f7c82c171f7b2c6dfda049acf0d6c436",
+  "status": "in_progress",
+  "workflow_mode": "discord-file-ledger-v1",
+  "claim_protocol": "claim-protocol-v2",
+  "entry_mode": "work",
+  "stage": "discord_file_ledger_review",
+  "attachment_ids": [
+    "936636546822598736", "936636547011334234", "946830105420910662", "946830105672573038",
+    "946830393712181288", "946830393875787836", "946830394089701376", "946830394244882483",
+    "946830496334225428", "946830496531374130", "946830573853343784", "946830574117617714",
+    "946830637749391420", "946830638047199262", "946830701943222393", "946830702123560990",
+    "946830780129222736", "946830780322156574", "946830848945172550", "946830849280712724",
+    "946830918457393182", "946830918696439878", "966527965536092260", "966552780468789269",
+    "966654302103937054", "966673195639914506", "966846890152984646", "967992183238045757",
+    "968010139657441280", "968306667739545600", "968379096906207232", "968499994518773800"
+  ],
+  "static_claim_lease_hours": 24,
+  "scope": "Review and ledger 32 previously unrepresented Discord attachments from the task-release and first-review rooms. Reuse any existing local files; directly download each missing attachment once without a save dialog; record checksums, workflow stage, exact video identity and final disposition; do not import transcript stages owned by the dedicated transcript worker."
+}
