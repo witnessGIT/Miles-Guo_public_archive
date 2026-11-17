@@ -1,0 +1,19 @@
+{
+  "task_id": "DISCORD-FILE-LEDGER-BATCH-021",
+  "agent_id": "codex-discord-file-ledger-agent-50",
+  "claimed_at": "2026-11-17T00:42:00Z",
+  "base_commit": "e80374f4fe264c0e7e8db4d6f98b51c3eb2d0017",
+  "status": "in_progress",
+  "workflow_mode": "discord-file-ledger-v1",
+  "claim_protocol": "claim-protocol-v2",
+  "entry_mode": "work",
+  "stage": "discord_file_ledger_review",
+  "attachment_ids": [
+    "923736150760378478", "923999579475689472", "924009607427424326",
+    "924701468609642586", "924707060208263238", "925100022750674954",
+    "925813344391295026", "926625832296906773", "928068131233099786",
+    "928073907091693608"
+  ],
+  "static_claim_lease_hours": 24,
+  "scope": "Review and ledger ten previously unrepresented Y-prefixed XLSX attachments from the Discord key-point archive room. Download each attachment directly once without a save dialog, record exact message/attachment identity and checksums, map the exact old canonical LIVE_ video, and classify as video key-point evidence rather than full transcripts."
+}
