@@ -1,0 +1,23 @@
+{
+  "task_id": "DISCORD-HUMAN-TRANSCRIPT-BATCH-024",
+  "agent_id": "codex-discord-human-transcript-asr",
+  "claimed_at": "2026-11-17T03:17:46Z",
+  "base_commit": "a86bdfc16cb782037d2864e22a7962be4e50a6c6",
+  "status": "in_progress",
+  "workflow_mode": "discord-human-transcript-v1",
+  "claim_protocol": "claim-protocol-v2",
+  "entry_mode": "work",
+  "stage": "transcript_import",
+  "channel_id": "896946673807401041",
+  "attachment_ids": [
+    "914860109019115600", "915025502878695474", "915038310844489728",
+    "915272577394544740", "915304871786315786", "915305065349251122",
+    "915362242998960188", "915372374373830696", "915379812581920838",
+    "915386078372970536", "915396874268196894", "915482738063183883",
+    "916451187446915122", "916455674467217528", "916461746447859722",
+    "917201874279600218", "917201874476757022", "917288798696640562",
+    "917619471529672844", "918689665618419732", "918689665853308938"
+  ],
+  "static_claim_lease_hours": 24,
+  "scope": "Review 21 previously unledgered T-prefixed DOCX attachment occurrences from Discord GTV 听写文本. Treat T as human_proofread/corrected, compare exact identities and existing versions, import only complete old-canonical LIVE matches, preserve machine parents, deduplicate repeated attachments, and do not fabricate cues from sparse locators."
+}
