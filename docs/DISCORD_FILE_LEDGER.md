@@ -6,21 +6,29 @@ This ledger records per-file decisions for attachments discovered in Discord ser
 
 - Fully scanned attachment occurrences reported by the channel audit: **590**
 - Unique normalized filenames reported by the channel audit: **505**
-- Unique files now represented in the structured ledger: **287**
+- Unique files now represented in the structured ledger: **297**
 - Ledger entries marked `imported_corrected`: **75**
 - Ledger entries marked `imported_source_original`: **0**
 - Ledger entries marked `pending_review`: **72**
 - Ledger entries marked `alternate_version_preserved`: **47**
 - Ledger entries marked `duplicate_exact`: **15**
-- Ledger entries marked `key_points_or_clip`: **47**
+- Ledger entries marked `key_points_or_clip`: **57**
 - Ledger entries marked `title_or_link_index`: **4**
 - Ledger entries marked `spreadsheet_metadata`: **7**
 - Ledger entries marked `translation`: **2**
 - Ledger entries marked `irrelevant`: **18**
 - Entries still missing one historical checksum in repository provenance: **3**
-- Remaining unique filenames not yet backfilled into this ledger: **218**
+- Remaining unique filenames not yet backfilled into this ledger: **208**
 
 The remaining count is a backlog estimate from the completed server inventory, not fabricated placeholder rows. Each future run adds only files whose channel, attachment identity, filename, type, stage, checksum state, mapping, and final decision can be evidenced.
+
+Ledger batch 021 checked ten previously unrepresented Y-prefixed XLSX attachments from `要点存档`.
+All ten are archived, human-organized video key-point workbooks with real timing locators, not full
+transcripts. Their dates, titles and GTV/GNEWS locators map to exact old canonical `LIVE_` identities;
+the 2021-11-17, 2021-11-19, 2021-12-24 and 2021-12-25 sheets were explicitly disambiguated from
+other same-day videos. Each attachment was downloaded directly once without a save dialog, and its
+exact Discord message/attachment IDs, binary checksum and extracted-text checksum were recorded.
+No workbook binary, cache or fabricated transcript cue entered Git.
 
 Ledger batch 020 checked 32 previously unrepresented attachments from `任务领取` and `要点一校`.
 The twelve T-prefixed DOCX files are human-proofread texts: ten are earlier corrected-stage copies
