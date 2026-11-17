@@ -1,0 +1,48 @@
+{
+  "task_id": "DISCORD-HUMAN-TRANSCRIPT-BATCH-023",
+  "agent_id": "codex-discord-human-transcript-asr",
+  "completed_at": "2026-11-17T02:52:00Z",
+  "result_commit": "b2bc4e80d",
+  "workflow_mode": "discord-human-transcript-v1",
+  "claim_protocol": "claim-protocol-v2",
+  "entry_mode": "work",
+  "stage": "transcript_import",
+  "channel_id": "896946673807401041",
+  "attachment_ids": [
+    "918689678222323742", "918705280563425311", "918706398278348810",
+    "918721675061755954", "919109645841342514", "919116168466419772",
+    "919144515917479947", "919196743982284880", "919494048643964959",
+    "920130275177005086", "920205205298106368", "920458033488879646",
+    "921750772520189982", "921750811007135784", "922139449587011634"
+  ],
+  "live_ids": [
+    "LIVE_20200404_001", "LIVE_20200404_002", "LIVE_20200405_001",
+    "LIVE_20200407_001", "LIVE_20200408_002", "LIVE_20200409_002",
+    "LIVE_20200412_001", "LIVE_20200414_001", "LIVE_20200417_001",
+    "LIVE_20200418_001", "LIVE_20200430_001", "LIVE_20200715_001",
+    "LIVE_20210521_002", "LIVE_20211013_001"
+  ],
+  "outputs": [
+    "data/current/sources/discord_human_transcripts_batch_023.jsonl",
+    "data/current/transcript_versions/corrected_live_20200404_001_discord_920130275177005086.jsonl",
+    "data/current/transcript_versions/corrected_live_20200404_002_discord_920205205298106368.jsonl",
+    "data/current/transcript_versions/corrected_live_20200405_001_discord_919196743982284880.jsonl",
+    "data/current/transcript_versions/corrected_live_20200407_001_discord_919144515917479947.jsonl",
+    "data/current/transcript_versions/corrected_live_20200408_002_discord_919116168466419772.jsonl",
+    "data/current/transcript_versions/corrected_live_20200409_002_discord_918689678222323742.jsonl",
+    "data/current/transcript_versions/corrected_live_20200412_001_discord_919109645841342514.jsonl",
+    "data/current/transcript_versions/corrected_live_20200414_001_discord_918721675061755954.jsonl",
+    "data/current/transcript_versions/corrected_live_20200417_001_discord_918706398278348810.jsonl",
+    "data/current/transcript_versions/corrected_live_20200418_001_discord_918705280563425311.jsonl",
+    "data/current/transcript_versions/corrected_live_20200430_001_discord_921750811007135784.jsonl",
+    "data/current/transcript_versions/corrected_live_20200715_001_discord_922139449587011634.jsonl",
+    "data/current/transcript_versions/corrected_live_20210521_002_discord_921750772520189982.jsonl",
+    "data/current/transcript_versions/corrected_live_20211013_001_discord_920458033488879646.jsonl",
+    "data/source_page_evidence/discord/discord_file_ledger.jsonl",
+    "docs/DISCORD_FILE_LEDGER.md",
+    "docs/DISCORD_TRANSCRIPT_AUDIT.md"
+  ],
+  "validation": "Fifteen T-prefix human-proofread DOCX files were checked by Discord identity, binary and extracted-text SHA-256, date, title, opening, closing and same-day video identity. Fourteen complete single-video texts were imported as corrected versions with machine parents preserved. One four-video compilation was preserved without unsafe splitting. build_db passed; validate_db passed with 31 existing warnings; 148 tests passed.",
+  "finish_prerequisites_revalidated": true,
+  "notes": "All 15 attachments were downloaded directly once without browser save prompts or repeated downloads. No DOCX binary, media, cache, automatic ASR, AI API output or fabricated sentence-level cue timeline entered Git."
+}
