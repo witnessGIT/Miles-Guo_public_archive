@@ -5,9 +5,9 @@ A reachable archive or detail page is not counted as a direct playback URL.
 
 ## Queue summary
 
-- Open tasks: **616**
+- Open tasks: **615**
 - Legacy canonical LIVE_ tasks: **15 concluded unresolved; 0 open**
-- VIDEO/source-candidate tasks: **616 open; processing after legacy completion; 46 recovered in the current deferred phase**
+- VIDEO/source-candidate tasks: **615 open; processing after legacy completion; 47 recovered in the current deferred phase**
 - Every task preserves its current archive/detail links and requires exact identity evidence.
 - An exhaustive search with no result stays `unresolved`; it is not labelled media-missing.
 
@@ -56,6 +56,8 @@ The second 2017-08-25 record (`SC_GWINS_LIST2_69_20170825_2`) is the independent
 The 2017-08-26 record (`SC_GWINS_LIST2_69_20170826`) is an 88-second short video about an old soldier’s Singapore video, circumvention software collecting information, and US scrutiny of HNA. Its exact-id Rumble source and exact-title YouTube mirror are both reachable; no adjacent-date video or compilation was substituted.
 
 The second 2017-08-27 record (`SC_GWINS_LIST2_69_20170827_2`) is the independent 34-second phone-hacking and military-technology short video. Its exact-title YouTube source is reachable and playable; the exact GWINS-linked Rumble locator is preserved as access-restricted after HTTP 403. The same-date livestream and separate `_3` video were not substituted.
+
+The third 2017-08-27 record (`SC_GWINS_LIST2_69_20170827_3`) is the independent 30-second video about the hacking method as evidence. Its exact-title YouTube source is reachable and playable; the exact GWINS-linked Rumble locator is preserved as access-restricted after HTTP 403. The same-date livestream and `_2` phone-hacking clip were not substituted.
 
 ## Legacy-first conclusions
 
