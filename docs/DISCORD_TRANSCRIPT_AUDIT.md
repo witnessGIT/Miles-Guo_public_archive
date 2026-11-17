@@ -230,3 +230,7 @@ versions. Source time marks are sparse program locators and were not converted i
 ## Discord pending-artifact conclusion batch 027
 
 Three already-checksummed VIDEO_-phase rows were concluded without another attachment request. `2017.8.20.docx` is only a third-segment fragment and `2017813-.docx` is a network-test/ephemeral clip; both remain `key_points_or_clip`. `17072017717.docx` is a proofread interview part retained as `alternate_version_preserved` because a complete source-original version for the same `VIDEO_20170717_001` identity is already recorded. No binary was downloaded again or committed, no transcript was overwritten, and no synthetic cue timeline was created.
+
+## Discord local-reuse comparison batch 028
+
+Four already-downloaded T-prefixed assignment-channel attachments (`T2017.05.15-1.docx`, `T2017.05.15-2.docx`, `T2017.05.16.docx`, and `T2017.05.19.docx`) were checksummed and compared against their separately ledgered archived-channel counterparts. Their exact Discord attachment identities differ, and normalized text similarities range from 67.22% to 90.87%, so they are materially distinct human-proofread versions rather than duplicate downloads. All four are retained as `alternate_version_preserved` for their existing VIDEO_ identities. Local binaries and preserved origin metadata were reused; no attachment was downloaded again, no save prompt appeared, no transcript was overwritten, and no cue timeline was fabricated.

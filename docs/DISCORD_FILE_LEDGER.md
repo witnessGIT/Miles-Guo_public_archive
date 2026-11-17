@@ -6,11 +6,11 @@ This ledger records per-file decisions for attachments discovered in Discord ser
 
 - Fully scanned attachment occurrences reported by the channel audit: **590**
 - Unique normalized filenames reported by the channel audit: **505**
-- Unique files now represented in the structured ledger: **376**
+- Unique files now represented in the structured ledger: **380**
 - Ledger entries marked `imported_corrected`: **127**
 - Ledger entries marked `imported_source_original`: **0**
 - Ledger entries marked `pending_review`: **67**
-- Ledger entries marked `alternate_version_preserved`: **50**
+- Ledger entries marked `alternate_version_preserved`: **54**
 - Ledger entries marked `duplicate_exact`: **16**
 - Ledger entries marked `key_points_or_clip`: **84**
 - Ledger entries marked `title_or_link_index`: **4**
@@ -19,11 +19,13 @@ This ledger records per-file decisions for attachments discovered in Discord ser
 - Ledger entries marked `machine_draft`: **1**
 - Ledger entries marked `irrelevant`: **18**
 - Entries still missing one historical checksum in repository provenance: **3**
-- Remaining unique filenames not yet backfilled into this ledger: **129**
+- Remaining unique filenames not yet backfilled into this ledger: **125**
 
 The remaining count is a backlog estimate from the completed server inventory, not fabricated placeholder rows. Each future run adds only files whose channel, attachment identity, filename, type, stage, checksum state, mapping, and final decision can be evidenced.
 
 Ledger batch 027 concluded three previously pending VIDEO_-phase artifacts using their existing checksums and extracted-text evidence. `2017.8.20.docx` is explicitly only the third segment of a four-video compilation and remains `key_points_or_clip`; `17072017717.docx` is a proofread interview part retained as `alternate_version_preserved` because a complete source-original transcript for the same video is already ledgered; `2017813-.docx` is a network-test/ephemeral clip and remains `key_points_or_clip`. No attachment was downloaded again, no full transcript was overwritten, and no cue was fabricated.
+
+Ledger batch 028 reused four already-downloaded T-prefixed assignment-channel documents dated 2017-05-15 through 2017-05-19. Their Discord attachment identities differ from the archived-channel copies, and file/text checksums plus normalized comparisons show materially distinct proofread versions (67.22%–90.87% similarity). All four map to existing VIDEO_ identities and are preserved as `alternate_version_preserved`; no preferred text was overwritten and no attachment was downloaded again.
 
 Ledger batch 026 checked the sole currently visible attachment in Discord channel `机听文本`:
 `jt2021.08.25.docx`. Its channel, `jt` prefix, dense one-minute time windows, and visibly noisy
