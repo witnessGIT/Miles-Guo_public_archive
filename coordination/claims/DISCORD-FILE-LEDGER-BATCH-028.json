@@ -1,0 +1,15 @@
+{
+  "task_id": "DISCORD-FILE-LEDGER-BATCH-028",
+  "agent_id": "codex-discord-ledger-agent-50",
+  "claimed_at": "2026-11-17T06:28:00Z",
+  "base_commit": "5cbdbcf9c",
+  "status": "in_progress",
+  "workflow_mode": "discord-file-ledger-v1",
+  "claim_protocol": "claim-protocol-v2",
+  "entry_mode": "work",
+  "stage": "discord_file_ledger_review",
+  "channel_id": "821933739307040806",
+  "attachment_ids": ["828642538654531654", "828642854695862303", "828643188951482368", "829022067148062830"],
+  "static_claim_lease_hours": 24,
+  "scope": "Review four already-downloaded, previously unledgered T-prefixed proofread attachments from the assignment channel. Compare them with their same-filename archived counterparts, preserve materially distinct corrected versions without importing VIDEO_-only records, and reuse local binaries without another download."
+}
