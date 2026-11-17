@@ -1,0 +1,17 @@
+{
+  "task_id": "DISCORD-FILE-LEDGER-BATCH-020",
+  "agent_id": "codex-discord-file-ledger-agent-50",
+  "completed_at": "2026-11-17T00:32:18Z",
+  "result_commit": "a0c9b69d19bd61db78b97ea7224b6fc5168ad29d",
+  "workflow_mode": "discord-file-ledger-v1",
+  "claim_protocol": "claim-protocol-v2",
+  "entry_mode": "work",
+  "attachment_count": 32,
+  "outputs": [
+    "data/source_page_evidence/discord/discord_file_ledger.jsonl",
+    "docs/DISCORD_FILE_LEDGER.md"
+  ],
+  "validation": "Checked 32 Discord attachments: 0 imported, 0 exact duplicates, 10 alternate corrected/partial versions preserved, 20 key-point sheets excluded from full-text import, 2 complete old-LIVE transcripts queued for the dedicated transcript worker, and 0 unreachable. build_db passed; validate_db passed with 31 existing warnings; 148 tests passed.",
+  "finish_prerequisites_revalidated": true,
+  "notes": "Ledger coverage is now 287 of 505 unique normalized filenames, leaving an estimated 218 not yet backfilled. All 32 files were downloaded directly once without browser save prompts; exact Discord message/attachment identities, canonical old-LIVE mappings, binary checksums and extracted-text checksums are recorded. DOCX/XLSX binaries and conversion caches remain outside Git."
+}
