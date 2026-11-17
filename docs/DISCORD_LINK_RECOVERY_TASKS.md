@@ -5,9 +5,9 @@ A reachable archive or detail page is not counted as a direct playback URL.
 
 ## Queue summary
 
-- Open tasks: **618**
+- Open tasks: **617**
 - Legacy canonical LIVE_ tasks: **15 concluded unresolved; 0 open**
-- VIDEO/source-candidate tasks: **618 open; processing after legacy completion; 44 recovered in the current deferred phase**
+- VIDEO/source-candidate tasks: **617 open; processing after legacy completion; 45 recovered in the current deferred phase**
 - Every task preserves its current archive/detail links and requires exact identity evidence.
 - An exhaustive search with no result stays `unresolved`; it is not labelled media-missing.
 
@@ -52,6 +52,8 @@ The 2017-08-23 safety-update (`SC_GWINS_LIST2_69_20170823`) now has an exact-id 
 The 2017-08-25 郭文贵/郭宝胜 interview (`SC_GWINS_LIST2_69_20170825`) now has an exact-id 7,197-second Rumble source and an exact-title YouTube mirror for “宗教与中国政治及社会关系”. The separate same-date “70天的特别之旅” video was not substituted.
 
 The second 2017-08-25 record (`SC_GWINS_LIST2_69_20170825_2`) is the independent 73-second “70天的特别之旅” short video. Its exact-title YouTube source is reachable and playable; the exact GWINS-linked Rumble locator is preserved as access-restricted after HTTP 403. The same-date long interview was not substituted.
+
+The 2017-08-26 record (`SC_GWINS_LIST2_69_20170826`) is an 88-second short video about an old soldier’s Singapore video, circumvention software collecting information, and US scrutiny of HNA. Its exact-id Rumble source and exact-title YouTube mirror are both reachable; no adjacent-date video or compilation was substituted.
 
 ## Legacy-first conclusions
 
