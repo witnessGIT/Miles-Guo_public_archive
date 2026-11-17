@@ -1,0 +1,29 @@
+{
+  "task_id": "DISCORD-FILE-LEDGER-BATCH-027",
+  "agent_id": "codex-discord-ledger-agent-50",
+  "completed_at": "2026-11-17T05:34:00Z",
+  "result_commit": "333514fcb",
+  "workflow_mode": "discord-file-ledger-v1",
+  "claim_protocol": "claim-protocol-v2",
+  "entry_mode": "work",
+  "attachment_count": 3,
+  "outputs": [
+    "data/source_page_evidence/discord/discord_file_ledger.jsonl",
+    "docs/DISCORD_FILE_LEDGER.md",
+    "docs/DISCORD_TRANSCRIPT_AUDIT.md"
+  ],
+  "counts": {
+    "checked": 3,
+    "imported": 0,
+    "duplicate_exact": 0,
+    "alternate_version_preserved": 1,
+    "key_points_or_clip": 2,
+    "non_fulltext_excluded": 3,
+    "unreachable": 0,
+    "pending_review": 67,
+    "remaining_unrepresented": 129
+  },
+  "validation": "Concluded three already-checksummed VIDEO_-phase pending rows: one third-segment fragment and one network-test/ephemeral clip remain key_points_or_clip; one proofread interview part is preserved as an alternate version because a complete source-original transcript for the same identity is already ledgered. build_db passed; validate_db passed with 31 existing warnings; 148 tests passed.",
+  "finish_prerequisites_revalidated": true,
+  "notes": "Existing local evidence and checksums were reused. No attachment was downloaded again, no browser dialog or user confirmation was triggered, and no binary, cache, ASR output, AI API output or fabricated cue entered Git."
+}
