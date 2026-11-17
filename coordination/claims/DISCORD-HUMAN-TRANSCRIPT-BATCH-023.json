@@ -1,0 +1,21 @@
+{
+  "task_id": "DISCORD-HUMAN-TRANSCRIPT-BATCH-023",
+  "agent_id": "codex-discord-human-transcript-asr",
+  "claimed_at": "2026-11-17T02:18:00Z",
+  "base_commit": "066a82ef3faa767c867520dc2f804d2d6e81ae83",
+  "status": "in_progress",
+  "workflow_mode": "discord-human-transcript-v1",
+  "claim_protocol": "claim-protocol-v2",
+  "entry_mode": "work",
+  "stage": "transcript_import",
+  "channel_id": "896946673807401041",
+  "attachment_ids": [
+    "918689678222323742", "918705280563425311", "918706398278348810",
+    "918721675061755954", "919109645841342514", "919116168466419772",
+    "919144515917479947", "919196743982284880", "919494048643964959",
+    "920130275177005086", "920205205298106368", "920458033488879646",
+    "921750772520189982", "921750811007135784", "922139449587011634"
+  ],
+  "static_claim_lease_hours": 24,
+  "scope": "Review 15 previously unledgered T-prefixed DOCX attachments from Discord GTV 听写文本. Treat T as human_proofread/corrected, compare exact identities and existing versions, import only complete old-canonical LIVE matches, preserve machine parents, and do not fabricate cues from sparse locators."
+}
