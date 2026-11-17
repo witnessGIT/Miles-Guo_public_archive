@@ -1,0 +1,30 @@
+{
+  "task_id": "DISCORD-FILE-LEDGER-BATCH-025",
+  "agent_id": "codex-discord-ledger-agent-50",
+  "completed_at": "2026-11-17T04:03:00Z",
+  "result_commit": "d5747a84e9bfe6164bfa949574b8a608f4811e4d",
+  "workflow_mode": "discord-file-ledger-v1",
+  "claim_protocol": "claim-protocol-v2",
+  "entry_mode": "work",
+  "attachment_count": 21,
+  "outputs": [
+    "data/current/sources/discord_human_transcripts_batch_025.jsonl",
+    "data/current/transcript_versions/corrected_live_*_discord_*.jsonl",
+    "data/source_page_evidence/discord/discord_file_ledger.jsonl",
+    "docs/DISCORD_FILE_LEDGER.md",
+    "docs/DISCORD_TRANSCRIPT_AUDIT.md"
+  ],
+  "counts": {
+    "checked": 21,
+    "imported": 17,
+    "duplicate_exact": 0,
+    "alternate_version_preserved": 1,
+    "non_fulltext_excluded": 3,
+    "unreachable": 0,
+    "pending_review": 70,
+    "remaining_unrepresented": 130
+  },
+  "validation": "Checked 21 previously unrepresented Discord attachments: 17 complete T-prefix human-proofread texts imported for old canonical LIVE_ identities, 1 near-parallel corrected copy preserved as alternate evidence, and 3 short-summary/key-point artifacts excluded from transcript import. Exact Discord message/attachment IDs, binary checksums and extracted-text checksums were recorded. build_db passed; validate_db passed with 31 existing warnings; 148 tests passed.",
+  "finish_prerequisites_revalidated": true,
+  "notes": "All 21 attachments were downloaded directly once with non-interactive requests into a temporary directory. No browser download, save dialog, user approval prompt, repeated download, DOCX/XLSX binary, cache, ASR, AI API output or fabricated sentence-level cue timeline entered Git."
+}
