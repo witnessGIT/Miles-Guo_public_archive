@@ -1,0 +1,22 @@
+{
+  "task_id": "LINKREC_SC_GWINS_LIST2_69_20170827_2_direct_playback",
+  "agent_id": "codex-discord-link-recovery-00-2",
+  "completed_at": "2026-11-17T05:14:00Z",
+  "result_commit": "d9d9c1aa7",
+  "result": "recovered",
+  "direct_playback_url": "https://www.youtube.com/watch?v=ArIbEwVoYfo",
+  "alternate_restricted_playback_url": "https://rumble.com/v5775oa-20170827-2.html",
+  "outputs": [
+    "data/current/link_recovery_tasks/discord_direct_playback_recovery.jsonl",
+    "data/current/video_catalog/date_first_video_catalog.jsonl",
+    "data/source_page_evidence/discord/discord_project_live_master_by_date.jsonl",
+    "data/source_page_evidence/discord/discord_direct_playback_recovery_attempts.jsonl",
+    "docs/DISCORD_LINK_RECOVERY_TASKS.md"
+  ],
+  "validation": "GWINS page 23562 publishes source id 20170827_2, the phone-hacking and military-technology title, and both platform locators. YouTube returned HTTP 200 with playability status OK, the exact descriptive title and duration 34 seconds. The exact Rumble locator returned HTTP 403 and was preserved as access-restricted. build_db passed; validate_db passed with 31 existing warnings; 148 tests passed.",
+  "workflow_mode": "discord-direct-playback-recovery-v1",
+  "claim_protocol": "claim-protocol-v2",
+  "entry_mode": "work",
+  "finish_prerequisites_revalidated": true,
+  "notes": "The same-date livestream and separate `_3` video were not substituted. No media was downloaded or played, and no save confirmation was triggered."
+}
