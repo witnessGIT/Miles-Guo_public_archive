@@ -226,3 +226,7 @@ were matched to old canonical videos and imported as separate corrected versions
 The prior local downloads were reused after checksum verification, so no attachment was downloaded
 again and no save dialog was triggered. Existing machine transcripts remain preserved as parent
 versions. Source time marks are sparse program locators and were not converted into synthetic cues.
+
+## Discord pending-artifact conclusion batch 027
+
+Three already-checksummed VIDEO_-phase rows were concluded without another attachment request. `2017.8.20.docx` is only a third-segment fragment and `2017813-.docx` is a network-test/ephemeral clip; both remain `key_points_or_clip`. `17072017717.docx` is a proofread interview part retained as `alternate_version_preserved` because a complete source-original version for the same `VIDEO_20170717_001` identity is already recorded. No binary was downloaded again or committed, no transcript was overwritten, and no synthetic cue timeline was created.
