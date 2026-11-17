@@ -6,21 +6,32 @@ This ledger records per-file decisions for attachments discovered in Discord ser
 
 - Fully scanned attachment occurrences reported by the channel audit: **590**
 - Unique normalized filenames reported by the channel audit: **505**
-- Unique files now represented in the structured ledger: **333**
-- Ledger entries marked `imported_corrected`: **91**
+- Unique files now represented in the structured ledger: **354**
+- Ledger entries marked `imported_corrected`: **110**
 - Ledger entries marked `imported_source_original`: **0**
 - Ledger entries marked `pending_review`: **70**
 - Ledger entries marked `alternate_version_preserved`: **48**
-- Ledger entries marked `duplicate_exact`: **15**
-- Ledger entries marked `key_points_or_clip`: **78**
+- Ledger entries marked `duplicate_exact`: **16**
+- Ledger entries marked `key_points_or_clip`: **79**
 - Ledger entries marked `title_or_link_index`: **4**
 - Ledger entries marked `spreadsheet_metadata`: **7**
 - Ledger entries marked `translation`: **2**
 - Ledger entries marked `irrelevant`: **18**
 - Entries still missing one historical checksum in repository provenance: **3**
-- Remaining unique filenames not yet backfilled into this ledger: **172**
+- Remaining unique filenames not yet backfilled into this ledger: **151**
 
 The remaining count is a backlog estimate from the completed server inventory, not fabricated placeholder rows. Each future run adds only files whose channel, attachment identity, filename, type, stage, checksum state, mapping, and final decision can be evidenced.
+
+Transcript batch 024 checked 21 previously unrepresented T-prefixed DOCX attachment
+occurrences from `GTV 听写文本`. Nineteen complete single-video human-proofread texts were
+matched to old canonical `LIVE_` identities and imported as separate corrected versions with
+machine parents preserved. The second `T2020.05.30.docx` upload is an exact binary and extracted-
+text duplicate and was not imported twice. `T2020.11.11-3.docx` is explicitly a short `内容梗概`
+with sparse locators rather than a full transcript, so it remains `key_points_or_clip`. All files
+were downloaded directly without a save dialog; the duplicate upload was downloaded under an
+attachment-specific temporary name for checksum comparison. Discord message snowflakes not
+exposed by the attachment URLs remain null rather than fabricated. No DOCX, cache, automatic ASR,
+AI API output, or invented cue timeline entered Git.
 
 Transcript batch 023 checked 15 previously unrepresented T-prefixed DOCX attachments from
 `GTV 听写文本`. Fourteen complete, single-video human-proofread texts were matched to old

@@ -130,6 +130,17 @@ The Discord server contains `2019.docx`, but inspection shows that it is a 299-p
 
 ## Deduplication state
 
+Transcript batch 024 reviewed 21 T-prefixed attachment occurrences from the GTV archive
+channel. Nineteen complete single-video proofread texts were imported for their exact old
+canonical `LIVE_` identities. The files cover `LIVE_20200409_001`, `LIVE_20200411_001`,
+`LIVE_20200415_001`, `LIVE_20200419_001`, `LIVE_20200422_001`, `LIVE_20200523_001` through
+`_003`, `LIVE_20200525_002`, `LIVE_20200527_001` and `_002`, `LIVE_20200529_001`,
+`LIVE_20200530_002`, `LIVE_20200602_001`, `LIVE_20200608_001`, `LIVE_20200610_001`,
+`LIVE_20200615_001`, `LIVE_20200705_001`, and `LIVE_20201114_001`. A repeated May 30 upload
+was checksum-identical and not re-imported. `T2020.11.11-3.docx` is a short timestamped content
+summary rather than full text and was excluded. Sparse source locators were retained only as text
+evidence; no sentence cues were fabricated.
+
 Transcript batch 023 reviewed 15 previously unrepresented T-prefixed documents from the GTV
 archive channel. Fourteen were verified as complete single-video human-proofread texts and
 imported for their exact old canonical `LIVE_` identities with the machine ASR retained as parent.
