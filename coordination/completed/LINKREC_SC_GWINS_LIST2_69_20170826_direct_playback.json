@@ -1,0 +1,22 @@
+{
+  "task_id": "LINKREC_SC_GWINS_LIST2_69_20170826_direct_playback",
+  "agent_id": "codex-discord-link-recovery-00-2",
+  "completed_at": "2026-11-17T03:10:00Z",
+  "result_commit": "f74479fad",
+  "result": "recovered",
+  "direct_playback_url": "https://rumble.com/v5775ch-20170826.html",
+  "alternate_verified_playback_url": "https://www.youtube.com/watch?v=twjXWOkXiWI",
+  "outputs": [
+    "data/current/link_recovery_tasks/discord_direct_playback_recovery.jsonl",
+    "data/current/video_catalog/date_first_video_catalog.jsonl",
+    "data/source_page_evidence/discord/discord_project_live_master_by_date.jsonl",
+    "data/source_page_evidence/discord/discord_direct_playback_recovery_attempts.jsonl",
+    "docs/DISCORD_LINK_RECOVERY_TASKS.md"
+  ],
+  "validation": "GWINS page 23561 publishes source id 20170826, the full old-soldier/circumvention-software/HNA title and both platform locators. Rumble oEmbed returned HTTP 200 with title 20170826 and duration 88 seconds; YouTube oEmbed returned HTTP 200 with the exact descriptive title. build_db passed; validate_db passed with 31 existing warnings; 148 tests passed.",
+  "workflow_mode": "discord-direct-playback-recovery-v1",
+  "claim_protocol": "claim-protocol-v2",
+  "entry_mode": "work",
+  "finish_prerequisites_revalidated": true,
+  "notes": "No adjacent-date video or compilation was substituted. No media was downloaded or played, and no save confirmation was triggered."
+}
