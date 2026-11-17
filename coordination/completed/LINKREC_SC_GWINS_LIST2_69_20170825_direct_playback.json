@@ -1,0 +1,23 @@
+{
+  "task_id": "LINKREC_SC_GWINS_LIST2_69_20170825_direct_playback",
+  "agent_id": "codex-discord-link-recovery-00-2",
+  "completed_at": "2026-11-17T00:39:00Z",
+  "result_commit": "4da508f5540d1a8ae2ee1c5944241333333a0f92",
+  "result": "recovered",
+  "direct_playback_url": "https://rumble.com/v577591-20170825.html",
+  "alternate_playback_urls": [
+    "https://www.youtube.com/watch?v=dKTHoD3-W74"
+  ],
+  "outputs": [
+    "data/current/video_catalog/date_first_video_catalog.jsonl",
+    "data/source_page_evidence/discord/discord_project_live_master_by_date.jsonl",
+    "data/source_page_evidence/discord/discord_direct_playback_recovery_attempts.jsonl",
+    "docs/DISCORD_LINK_RECOVERY_TASKS.md"
+  ],
+  "validation": "GWINS page 742 identifies the 2017-08-25 interview, names 郭文贵 and 郭宝胜, publishes source id 20170825, and exposes the exact Rumble and YouTube locators; Rumble oEmbed returned HTTP 200 with title 20170825 and duration 7197 seconds; YouTube oEmbed returned HTTP 200 with the exact 宗教与中国政治及社会关系 interview title; build_db passed; validate_db passed with 31 existing warnings; 148 tests passed.",
+  "workflow_mode": "discord-direct-playback-recovery-v1",
+  "claim_protocol": "claim-protocol-v2",
+  "entry_mode": "work",
+  "finish_prerequisites_revalidated": true,
+  "notes": "The separate same-date 70-day journey video was not substituted. No media was downloaded or played, and no save confirmation was triggered."
+}
