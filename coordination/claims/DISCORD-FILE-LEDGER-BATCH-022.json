@@ -1,0 +1,23 @@
+{
+  "task_id": "DISCORD-FILE-LEDGER-BATCH-022",
+  "agent_id": "codex-discord-ledger-agent-50",
+  "claimed_at": "2026-11-17T01:26:00Z",
+  "base_commit": "90d8381f5e6973dcca674d05d3f90c654b97e671",
+  "status": "in_progress",
+  "workflow_mode": "discord-file-ledger-v1",
+  "claim_protocol": "claim-protocol-v2",
+  "entry_mode": "work",
+  "stage": "discord_file_ledger_review",
+  "channel_id": "896943837526765659",
+  "attachment_ids": [
+    "919021846555426846", "919023085036908575", "920081369256833144",
+    "920081369533648976", "920083779136131102", "920085755525730324",
+    "920089941269180436", "920339972706402354", "920358527644602368",
+    "920657922755817492", "920658858576334938", "921557764671692841",
+    "921861018064388217", "921861591350251520", "922237799057457172",
+    "922519982133370910", "922591206091919390", "922862519352188928",
+    "922903939639308298", "923012893723754556", "923733336311099442"
+  ],
+  "static_claim_lease_hours": 24,
+  "scope": "Review 21 previously unledgered Y-prefixed XLSX attachments visible in the Discord 要点存档 channel. Record exact provenance and checksums; classify as key-point/archive material without treating it as full transcript text."
+}
