@@ -1,0 +1,23 @@
+{
+  "task_id": "DISCORD-FILE-LEDGER-BATCH-025",
+  "agent_id": "codex-discord-ledger-agent-50",
+  "claimed_at": "2026-11-17T03:31:00Z",
+  "base_commit": "28f5be3b46427507ea1d8e4d04460af19b9cc7fc",
+  "status": "in_progress",
+  "workflow_mode": "discord-file-ledger-v1",
+  "claim_protocol": "claim-protocol-v2",
+  "entry_mode": "work",
+  "stage": "discord_file_ledger",
+  "channel_id": "896946673807401041",
+  "attachment_ids": [
+    "912973726801342524", "912973729661849610", "912973776868745226",
+    "913026355925504051", "913313196872454224", "913313252589592626",
+    "913325761820237854", "913440890754855002", "913880503843684352",
+    "913880713663746119", "914237453454442556", "914290274174382180",
+    "914303623196979240", "914306387234943067", "914458818916810782",
+    "914724489315643452", "914734612150894642", "914771474823409694",
+    "914860065985560626", "914860091826647120", "916088344402878554"
+  ],
+  "static_claim_lease_hours": 24,
+  "scope": "Review and ledger 21 previously unrepresented Discord attachments from GTV 听写文本. Prioritize T-prefix human-proofread old canonical LIVE material, classify the two Y spreadsheets without treating them as full transcripts, record exact message and attachment identities plus checksums, and use only non-interactive command downloads."
+}
