@@ -3,7 +3,7 @@
   "agent_id": "github-actions-cloud-entity-44155493552",
   "claimed_at": "2026-11-17T21:23:47.565191+00:00",
   "base_commit": "a907e4a84daf5087fcf7e503b0c88ba2e2855f0e",
-  "status": "in_progress",
+  "status": "released",
   "workflow_mode": "continuous-worker-v2",
   "claim_protocol": "claim-protocol-v2",
   "entry_mode": "work",
@@ -22,5 +22,7 @@
   ],
   "scope": "Extract speakers, people, organizations, places and mentioned entities.",
   "reclaimed_expired_claim": false,
-  "static_claim_lease_hours": 24
+  "static_claim_lease_hours": 24,
+  "released_at": "2026-11-17T22:12:32.648267+00:00",
+  "release_reason": "Cloud entity inference timed out after 2700 seconds; retained for retry"
 }
