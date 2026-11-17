@@ -130,6 +130,12 @@ The Discord server contains `2019.docx`, but inspection shows that it is a 299-p
 
 ## Deduplication state
 
+Ledger batch 022 also checked 21 Y-prefixed archived key-point workbooks from `要点存档`.
+Their exact Discord identities, checksums, timing locators and old canonical `LIVE_` mappings are
+recorded in the per-file ledger. These are structured summaries rather than full transcripts, so
+none was imported or used to fabricate sentence cues. All attachments were downloaded directly
+once to a temporary directory without a save prompt or repeated download.
+
 Fifteen T-prefixed assignment-room attachments dated 2017-05-15 through 2017-08-02 were compared
 with their preferred proofread or archived counterparts. Their extracted texts are materially
 different rather than exact duplicates, so the earlier assignment copies are retained in the

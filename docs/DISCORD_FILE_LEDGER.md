@@ -6,19 +6,19 @@ This ledger records per-file decisions for attachments discovered in Discord ser
 
 - Fully scanned attachment occurrences reported by the channel audit: **590**
 - Unique normalized filenames reported by the channel audit: **505**
-- Unique files now represented in the structured ledger: **297**
+- Unique files now represented in the structured ledger: **318**
 - Ledger entries marked `imported_corrected`: **77**
 - Ledger entries marked `imported_source_original`: **0**
 - Ledger entries marked `pending_review`: **70**
 - Ledger entries marked `alternate_version_preserved`: **47**
 - Ledger entries marked `duplicate_exact`: **15**
-- Ledger entries marked `key_points_or_clip`: **57**
+- Ledger entries marked `key_points_or_clip`: **78**
 - Ledger entries marked `title_or_link_index`: **4**
 - Ledger entries marked `spreadsheet_metadata`: **7**
 - Ledger entries marked `translation`: **2**
 - Ledger entries marked `irrelevant`: **18**
 - Entries still missing one historical checksum in repository provenance: **3**
-- Remaining unique filenames not yet backfilled into this ledger: **208**
+- Remaining unique filenames not yet backfilled into this ledger: **187**
 
 The remaining count is a backlog estimate from the completed server inventory, not fabricated placeholder rows. Each future run adds only files whose channel, attachment identity, filename, type, stage, checksum state, mapping, and final decision can be evidenced.
 
@@ -27,6 +27,15 @@ The dedicated transcript import batch reused the already-downloaded `T2021.12.29
 separate human-corrected versions for `LIVE_20211229_001` and `LIVE_20220119_001`. The existing
 machine transcripts remain as parents. The 57 and 58 sparse source time locators remain textual
 evidence only; no sentence cues were fabricated, and no download prompt or repeated download occurred.
+
+Ledger batch 022 checked 21 previously unrepresented Y-prefixed XLSX attachments from `要点存档`.
+All 21 are archived, human-organized video key-point workbooks with real timing locators, not full
+transcripts. Exact dates, titles, durations and platform locators map them to old canonical `LIVE_`
+identities. Three workbooks cover multiple separately identified videos; their identities remain
+separate and were not merged by date. Each attachment was downloaded directly once to a temporary
+directory without a save dialog, and its Discord message/attachment IDs, binary checksum and
+extracted-text checksum were recorded. No workbook binary, cache, transcript import or fabricated
+cue timeline entered Git.
 
 Ledger batch 021 checked ten previously unrepresented Y-prefixed XLSX attachments from `要点存档`.
 All ten are archived, human-organized video key-point workbooks with real timing locators, not full
