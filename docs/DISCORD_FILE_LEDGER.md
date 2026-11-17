@@ -6,7 +6,7 @@ This ledger records per-file decisions for attachments discovered in Discord ser
 
 - Fully scanned attachment occurrences reported by the channel audit: **590**
 - Unique normalized filenames reported by the channel audit: **505**
-- Unique files now represented in the structured ledger: **375**
+- Unique files now represented in the structured ledger: **376**
 - Ledger entries marked `imported_corrected`: **127**
 - Ledger entries marked `imported_source_original`: **0**
 - Ledger entries marked `pending_review`: **70**
@@ -16,11 +16,22 @@ This ledger records per-file decisions for attachments discovered in Discord ser
 - Ledger entries marked `title_or_link_index`: **4**
 - Ledger entries marked `spreadsheet_metadata`: **7**
 - Ledger entries marked `translation`: **2**
+- Ledger entries marked `machine_draft`: **1**
 - Ledger entries marked `irrelevant`: **18**
 - Entries still missing one historical checksum in repository provenance: **3**
-- Remaining unique filenames not yet backfilled into this ledger: **130**
+- Remaining unique filenames not yet backfilled into this ledger: **129**
 
 The remaining count is a backlog estimate from the completed server inventory, not fabricated placeholder rows. Each future run adds only files whose channel, attachment identity, filename, type, stage, checksum state, mapping, and final decision can be evidenced.
+
+Ledger batch 026 checked the sole currently visible attachment in Discord channel `机听文本`:
+`jt2021.08.25.docx`. Its channel, `jt` prefix, dense one-minute time windows, and visibly noisy
+recognition errors identify it as a machine-listening draft rather than a human-proofread text.
+Its approximately 4h37m coverage and vaccine-focused content align with old canonical
+`LIVE_20210825_001`; it is retained as `machine_draft` provenance and was not imported or used to
+replace any human or machine transcript version. The file was fetched once by a non-interactive
+direct request to a temporary directory. Exact Discord message/attachment IDs and both checksums
+were recorded; no browser download, save dialog, repeated download, binary commit, ASR run, or AI
+API was involved.
 
 Ledger batch 025 checked 21 previously unrepresented Discord attachments from `GTV 听写文本`.
 Seventeen complete T-prefixed human-proofread texts were matched to old canonical `LIVE_`

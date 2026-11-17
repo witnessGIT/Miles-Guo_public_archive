@@ -181,6 +181,16 @@ Across the transcript-relevant and adjacent channels scanned so far, 590 attachm
 - Run database build, database validation, and the full test suite before completing an import.
 
 
+## Discord machine-draft ledger batch 026
+
+The sole currently visible attachment in channel `897096565339086848` (`机听文本`) was not yet
+represented in the per-file ledger. `jt2021.08.25.docx` is a 70,804-character, single-paragraph
+automatic listening draft with 578 minute-style time windows and pervasive recognition errors.
+Its duration and subject align with `LIVE_20210825_001`, but its channel and `jt` prefix explicitly
+mark it as machine material. It was classified as `machine_draft`, not imported as human text, and
+does not replace any existing transcript version. The direct attachment was fetched once without
+browser interaction; the DOCX remains outside Git.
+
 ## Discord human transcript batch 025
 
 Twenty-one previously unrepresented attachments from channel `896946673807401041` were fetched
