@@ -6,21 +6,31 @@ This ledger records per-file decisions for attachments discovered in Discord ser
 
 - Fully scanned attachment occurrences reported by the channel audit: **590**
 - Unique normalized filenames reported by the channel audit: **505**
-- Unique files now represented in the structured ledger: **255**
+- Unique files now represented in the structured ledger: **287**
 - Ledger entries marked `imported_corrected`: **75**
 - Ledger entries marked `imported_source_original`: **0**
-- Ledger entries marked `pending_review`: **70**
-- Ledger entries marked `alternate_version_preserved`: **37**
+- Ledger entries marked `pending_review`: **72**
+- Ledger entries marked `alternate_version_preserved`: **47**
 - Ledger entries marked `duplicate_exact`: **15**
-- Ledger entries marked `key_points_or_clip`: **27**
+- Ledger entries marked `key_points_or_clip`: **47**
 - Ledger entries marked `title_or_link_index`: **4**
 - Ledger entries marked `spreadsheet_metadata`: **7**
 - Ledger entries marked `translation`: **2**
 - Ledger entries marked `irrelevant`: **18**
 - Entries still missing one historical checksum in repository provenance: **3**
-- Remaining unique filenames not yet backfilled into this ledger: **250**
+- Remaining unique filenames not yet backfilled into this ledger: **218**
 
 The remaining count is a backlog estimate from the completed server inventory, not fabricated placeholder rows. Each future run adds only files whose channel, attachment identity, filename, type, stage, checksum state, mapping, and final decision can be evidenced.
+
+Ledger batch 020 checked 32 previously unrepresented attachments from `任务领取` and `要点一校`.
+The twelve T-prefixed DOCX files are human-proofread texts: ten are earlier corrected-stage copies
+or explicitly unfinished parts already superseded by separately preserved/imported versions, while
+the complete 2021-12-29 and 2022-01-19 texts remain `pending_review` for the dedicated transcript
+worker. The ten sparse Y-prefixed task-room workbooks and ten populated first-review workbooks are
+video key-point sheets rather than full transcripts. Exact Discord message and attachment IDs,
+canonical old-LIVE mappings, binary checksums and extracted-text checksums were recorded for all
+32 files. Each missing attachment was downloaded directly once without a save dialog; no binary,
+cache, transcript import or fabricated cue timeline entered Git.
 
 The local-reuse comparison batch added five previously unledgered full-text attachments for
 `LIVE_20170429_002`, `LIVE_20170525_001`, `LIVE_20170708_001`, `LIVE_20170709_001`, and
