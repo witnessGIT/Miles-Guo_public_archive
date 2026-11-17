@@ -153,3 +153,20 @@ Across the transcript-relevant and adjacent channels scanned so far, 590 attachm
 - Record the original filename, server/channel/attachment identifiers, source URL, document checksum, extracted-text checksum, and extraction path.
 - Do not commit DOCX, Pages, media, caches, models, or temporary downloads.
 - Run database build, database validation, and the full test suite before completing an import.
+
+
+## 2021-12-29 and 2022-01-19 corrected transcript import
+
+Two complete T-prefixed human-proofread documents from Discord channel `892756126041522186`
+were matched to old canonical videos and imported as separate corrected versions:
+
+- `T2021.12.29.docx` → `LIVE_20211229_001`; attachment `946830105420910662`; DOCX SHA-256
+  `9910ba3e366e0ae92f73872a24f6884c9545ee4eafa7716802e671a1ddf89216`; extracted-text
+  SHA-256 `ef8e4cdc70f132fbcee5c0ddc6008df12caf0a2759a7afda79e8ef0fbc52fee4`.
+- `T2022.01.19.docx` → `LIVE_20220119_001`; attachment `946830918457393182`; DOCX SHA-256
+  `843ac3503616c32fa7546a00f9597af9c892af3390d861a46f36acc1c3602088`; extracted-text
+  SHA-256 `49309c6de1e63b7358619d3b84796d01057d4a8716131b8d191ede26c62d35a2`.
+
+The prior local downloads were reused after checksum verification, so no attachment was downloaded
+again and no save dialog was triggered. Existing machine transcripts remain preserved as parent
+versions. Source time marks are sparse program locators and were not converted into synthetic cues.

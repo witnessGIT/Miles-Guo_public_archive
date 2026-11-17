@@ -7,9 +7,9 @@ This ledger records per-file decisions for attachments discovered in Discord ser
 - Fully scanned attachment occurrences reported by the channel audit: **590**
 - Unique normalized filenames reported by the channel audit: **505**
 - Unique files now represented in the structured ledger: **297**
-- Ledger entries marked `imported_corrected`: **75**
+- Ledger entries marked `imported_corrected`: **77**
 - Ledger entries marked `imported_source_original`: **0**
-- Ledger entries marked `pending_review`: **72**
+- Ledger entries marked `pending_review`: **70**
 - Ledger entries marked `alternate_version_preserved`: **47**
 - Ledger entries marked `duplicate_exact`: **15**
 - Ledger entries marked `key_points_or_clip`: **57**
@@ -21,6 +21,12 @@ This ledger records per-file decisions for attachments discovered in Discord ser
 - Remaining unique filenames not yet backfilled into this ledger: **208**
 
 The remaining count is a backlog estimate from the completed server inventory, not fabricated placeholder rows. Each future run adds only files whose channel, attachment identity, filename, type, stage, checksum state, mapping, and final decision can be evidenced.
+
+The dedicated transcript import batch reused the already-downloaded `T2021.12.29.docx` and
+`T2022.01.19.docx`, verified both binary and extracted-text checksums, and imported them as
+separate human-corrected versions for `LIVE_20211229_001` and `LIVE_20220119_001`. The existing
+machine transcripts remain as parents. The 57 and 58 sparse source time locators remain textual
+evidence only; no sentence cues were fabricated, and no download prompt or repeated download occurred.
 
 Ledger batch 021 checked ten previously unrepresented Y-prefixed XLSX attachments from `要点存档`.
 All ten are archived, human-organized video key-point workbooks with real timing locators, not full
