@@ -6,11 +6,11 @@ This ledger records per-file decisions for attachments discovered in Discord ser
 
 - Fully scanned attachment occurrences reported by the channel audit: **590**
 - Unique normalized filenames reported by the channel audit: **505**
-- Unique files now represented in the structured ledger: **318**
-- Ledger entries marked `imported_corrected`: **77**
+- Unique files now represented in the structured ledger: **333**
+- Ledger entries marked `imported_corrected`: **91**
 - Ledger entries marked `imported_source_original`: **0**
 - Ledger entries marked `pending_review`: **70**
-- Ledger entries marked `alternate_version_preserved`: **47**
+- Ledger entries marked `alternate_version_preserved`: **48**
 - Ledger entries marked `duplicate_exact`: **15**
 - Ledger entries marked `key_points_or_clip`: **78**
 - Ledger entries marked `title_or_link_index`: **4**
@@ -18,9 +18,21 @@ This ledger records per-file decisions for attachments discovered in Discord ser
 - Ledger entries marked `translation`: **2**
 - Ledger entries marked `irrelevant`: **18**
 - Entries still missing one historical checksum in repository provenance: **3**
-- Remaining unique filenames not yet backfilled into this ledger: **187**
+- Remaining unique filenames not yet backfilled into this ledger: **172**
 
 The remaining count is a backlog estimate from the completed server inventory, not fabricated placeholder rows. Each future run adds only files whose channel, attachment identity, filename, type, stage, checksum state, mapping, and final decision can be evidenced.
+
+Transcript batch 023 checked 15 previously unrepresented T-prefixed DOCX attachments from
+`GTV 听写文本`. Fourteen complete, single-video human-proofread texts were matched to old
+canonical `LIVE_` identities and imported as separate corrected versions. Same-date ambiguities
+were resolved from internal titles and content: the April 4 Sara/Hong Kong text maps to
+`LIVE_20200404_002`, the April 5 cooking text to `LIVE_20200405_001`, the timezone-shifted
+April 9/10 movie-theatre text to `LIVE_20200409_002`, and the May 21 Freedom Statue text to
+`LIVE_20210521_002`. The remaining April 5 document is a continuous compilation spanning
+`LIVE_20200405_002` through `_005` without reliable split boundaries; it is preserved as an
+alternate compilation and was not copied wholesale into four videos. Machine parents remain
+preserved. All 15 attachments were downloaded directly once without a save dialog or repeated
+download; no DOCX, cache, ASR, or fabricated cue timeline entered Git.
 
 The dedicated transcript import batch reused the already-downloaded `T2021.12.29.docx` and
 `T2022.01.19.docx`, verified both binary and extracted-text checksums, and imported them as

@@ -130,6 +130,15 @@ The Discord server contains `2019.docx`, but inspection shows that it is a 299-p
 
 ## Deduplication state
 
+Transcript batch 023 reviewed 15 previously unrepresented T-prefixed documents from the GTV
+archive channel. Fourteen were verified as complete single-video human-proofread texts and
+imported for their exact old canonical `LIVE_` identities with the machine ASR retained as parent.
+The other document is a continuous April 5 multi-video compilation covering four distinct videos;
+because it has no reliable per-video boundaries, it remains preserved as alternate evidence rather
+than being duplicated into individual transcript records. Sparse or absent source time marks were
+not converted into sentence cues. Each attachment was downloaded directly only once without a
+save prompt, and all DOCX binaries remain outside Git.
+
 Ledger batch 022 also checked 21 Y-prefixed archived key-point workbooks from `要点存档`.
 Their exact Discord identities, checksums, timing locators and old canonical `LIVE_` mappings are
 recorded in the per-file ledger. These are structured summaries rather than full transcripts, so
