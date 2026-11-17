@@ -1,0 +1,28 @@
+{
+  "task_id": "DISCORD-FILE-LEDGER-BATCH-022",
+  "agent_id": "codex-discord-ledger-agent-50",
+  "completed_at": "2026-11-17T01:34:00Z",
+  "result_commit": "385ec89cb9c84a9c65bbc8f93cbca35bda63adb5",
+  "workflow_mode": "discord-file-ledger-v1",
+  "claim_protocol": "claim-protocol-v2",
+  "entry_mode": "work",
+  "attachment_count": 21,
+  "outputs": [
+    "data/source_page_evidence/discord/discord_file_ledger.jsonl",
+    "docs/DISCORD_FILE_LEDGER.md",
+    "docs/DISCORD_TRANSCRIPT_AUDIT.md"
+  ],
+  "counts": {
+    "checked": 21,
+    "imported": 0,
+    "duplicate_exact": 0,
+    "alternate_version_preserved": 0,
+    "non_fulltext_excluded": 21,
+    "unreachable": 0,
+    "pending_review": 70,
+    "remaining_unrepresented": 187
+  },
+  "validation": "Checked 21 previously unrepresented Y-prefixed archived key-point workbooks: 0 transcript imports, 21 key_points_or_clip classifications, 0 duplicates and 0 unreachable. Exact old canonical LIVE_ identities, Discord message/attachment IDs, binary checksums and extracted-text checksums were recorded. build_db passed; validate_db passed with 31 existing warnings; 148 tests passed.",
+  "finish_prerequisites_revalidated": true,
+  "notes": "Ledger coverage is now 318 of 505 unique normalized filenames, leaving an estimated 187 not yet backfilled. Each workbook was downloaded directly once to a temporary directory without a save dialog or approval prompt. No repeated download, binary, cache or fabricated transcript cue entered Git."
+}
