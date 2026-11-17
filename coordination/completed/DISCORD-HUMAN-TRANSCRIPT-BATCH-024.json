@@ -1,0 +1,39 @@
+{
+  "task_id": "DISCORD-HUMAN-TRANSCRIPT-BATCH-024",
+  "agent_id": "codex-discord-human-transcript-asr",
+  "completed_at": "2026-11-17T03:38:00Z",
+  "result_commit": "20b95fd19",
+  "workflow_mode": "discord-human-transcript-v1",
+  "claim_protocol": "claim-protocol-v2",
+  "entry_mode": "work",
+  "stage": "transcript_import",
+  "channel_id": "896946673807401041",
+  "attachment_ids": [
+    "914860109019115600", "915025502878695474", "915038310844489728",
+    "915272577394544740", "915304871786315786", "915305065349251122",
+    "915362242998960188", "915372374373830696", "915379812581920838",
+    "915386078372970536", "915396874268196894", "915482738063183883",
+    "916451187446915122", "916455674467217528", "916461746447859722",
+    "917201874279600218", "917201874476757022", "917288798696640562",
+    "917619471529672844", "918689665618419732", "918689665853308938"
+  ],
+  "live_ids": [
+    "LIVE_20200409_001", "LIVE_20200411_001", "LIVE_20200415_001",
+    "LIVE_20200419_001", "LIVE_20200422_001", "LIVE_20200523_001",
+    "LIVE_20200523_002", "LIVE_20200523_003", "LIVE_20200525_002",
+    "LIVE_20200527_001", "LIVE_20200527_002", "LIVE_20200529_001",
+    "LIVE_20200530_002", "LIVE_20200602_001", "LIVE_20200608_001",
+    "LIVE_20200610_001", "LIVE_20200615_001", "LIVE_20200705_001",
+    "LIVE_20201114_001"
+  ],
+  "outputs": [
+    "data/current/sources/discord_human_transcripts_batch_024.jsonl",
+    "data/current/transcript_versions/corrected_live_*_discord_*.jsonl",
+    "data/source_page_evidence/discord/discord_file_ledger.jsonl",
+    "docs/DISCORD_FILE_LEDGER.md",
+    "docs/DISCORD_TRANSCRIPT_AUDIT.md"
+  ],
+  "validation": "Twenty-one T-prefix DOCX attachment occurrences were checked by Discord identity, binary and extracted-text SHA-256, date, title, opening, closing and old canonical video identity. Nineteen complete single-video texts were imported as corrected versions with machine parents preserved. One repeated upload was an exact duplicate and one short 内容梗概 was excluded from full-transcript import. build_db passed; validate_db passed with 31 existing warnings; 148 unittest tests passed.",
+  "finish_prerequisites_revalidated": true,
+  "notes": "All 21 attachment occurrences were downloaded directly without browser save prompts or repeated user confirmation. The repeated filename was stored under an attachment-specific temporary name only for checksum comparison. No DOCX binary, media, cache, automatic ASR, AI API output or fabricated sentence-level cue timeline entered Git. Discord message snowflakes unavailable from direct attachment URLs were left null rather than invented."
+}
