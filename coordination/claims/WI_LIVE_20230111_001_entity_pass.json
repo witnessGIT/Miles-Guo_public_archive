@@ -3,7 +3,7 @@
   "agent_id": "github-actions-cloud-entity-43971407410",
   "claimed_at": "2026-11-16T23:22:40.408296+00:00",
   "base_commit": "747ba4515ad30661c19b349a183fe863fbfb1f67",
-  "status": "in_progress",
+  "status": "released",
   "workflow_mode": "continuous-worker-v2",
   "claim_protocol": "claim-protocol-v2",
   "entry_mode": "work",
@@ -22,5 +22,7 @@
   ],
   "scope": "Extract speakers, people, organizations, places and mentioned entities.",
   "reclaimed_expired_claim": false,
-  "static_claim_lease_hours": 24
+  "static_claim_lease_hours": 24,
+  "released_at": "2026-11-17T01:56:53.577100+00:00",
+  "release_reason": "Entity pass completed successfully in GitHub Actions run 43971407410; releasing claim after validated results were committed."
 }
