@@ -181,6 +181,26 @@ Across the transcript-relevant and adjacent channels scanned so far, 590 attachm
 - Run database build, database validation, and the full test suite before completing an import.
 
 
+## Discord human transcript batch 025
+
+Twenty-one previously unrepresented attachments from channel `896946673807401041` were fetched
+directly and non-interactively to an attachment-specific temporary directory. Seventeen complete
+T-prefixed documents map by date, internal title, opening, closing, and same-day content identity
+to old canonical videos and were imported as human-corrected versions: `LIVE_20200604_003`,
+`LIVE_20200606_001`, `LIVE_20200609_001`, `LIVE_20200613_001`, `LIVE_20200615_002`,
+`LIVE_20200616_001`, `LIVE_20200617_001`, `LIVE_20200618_001`, `LIVE_20200620_001`,
+`LIVE_20200625_001`, `LIVE_20200628_001`, `LIVE_20200702_001`, `LIVE_20200727_001`,
+`LIVE_20200728_001`, `LIVE_20200802_001`, `LIVE_20201115_004`, and `LIVE_20210318_001`.
+Existing machine versions remain their parents.
+
+The `T2020.07.25.docx` occurrence maps to `LIVE_20200725_001` but is 99.95% text-similar to
+the already imported preferred corrected copy, so it is retained as an alternate checksummed
+occurrence rather than creating a redundant transcript version. `T2020.11.11-2.docx` contains
+short timestamped summaries, not full speech text. `Y2020.07.25s.xlsx` and `Y2021.03.10.xlsx`
+are populated human video key-point sheets. These three non-fulltext artifacts remain evidence
+only. No sparse time locator was converted into a fabricated sentence cue, and no DOCX/XLSX,
+media, cache, ASR output, or AI API output entered Git.
+
 ## 2021-12-29 and 2022-01-19 corrected transcript import
 
 Two complete T-prefixed human-proofread documents from Discord channel `892756126041522186`

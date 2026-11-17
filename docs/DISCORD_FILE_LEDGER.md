@@ -6,21 +6,33 @@ This ledger records per-file decisions for attachments discovered in Discord ser
 
 - Fully scanned attachment occurrences reported by the channel audit: **590**
 - Unique normalized filenames reported by the channel audit: **505**
-- Unique files now represented in the structured ledger: **354**
-- Ledger entries marked `imported_corrected`: **110**
+- Unique files now represented in the structured ledger: **375**
+- Ledger entries marked `imported_corrected`: **127**
 - Ledger entries marked `imported_source_original`: **0**
 - Ledger entries marked `pending_review`: **70**
-- Ledger entries marked `alternate_version_preserved`: **48**
+- Ledger entries marked `alternate_version_preserved`: **49**
 - Ledger entries marked `duplicate_exact`: **16**
-- Ledger entries marked `key_points_or_clip`: **79**
+- Ledger entries marked `key_points_or_clip`: **82**
 - Ledger entries marked `title_or_link_index`: **4**
 - Ledger entries marked `spreadsheet_metadata`: **7**
 - Ledger entries marked `translation`: **2**
 - Ledger entries marked `irrelevant`: **18**
 - Entries still missing one historical checksum in repository provenance: **3**
-- Remaining unique filenames not yet backfilled into this ledger: **151**
+- Remaining unique filenames not yet backfilled into this ledger: **130**
 
 The remaining count is a backlog estimate from the completed server inventory, not fabricated placeholder rows. Each future run adds only files whose channel, attachment identity, filename, type, stage, checksum state, mapping, and final decision can be evidenced.
+
+Ledger batch 025 checked 21 previously unrepresented Discord attachments from `GTV 听写文本`.
+Seventeen complete T-prefixed human-proofread texts were matched to old canonical `LIVE_`
+identities and imported as separate corrected versions with their machine parents preserved.
+The second `T2020.07.25.docx` copy is 99.95% text-similar to the already imported preferred
+corrected version and is retained as alternate evidence rather than imported redundantly.
+`T2020.11.11-2.docx` is a short timestamped summary, and the two Y-prefixed XLSX files are
+human-organized video key-point sheets; all three remain `key_points_or_clip` rather than being
+promoted to full transcripts. Exact Discord message and attachment IDs, clean CDN URLs, binary
+and extracted-text checksums were recorded for every row. All 21 attachments were fetched once
+with non-interactive direct requests into a temporary directory; no browser download, save dialog,
+repeated download, binary commit, ASR, AI API output, or invented cue timeline was used.
 
 Transcript batch 024 checked 21 previously unrepresented T-prefixed DOCX attachment
 occurrences from `GTV 听写文本`. Nineteen complete single-video human-proofread texts were
