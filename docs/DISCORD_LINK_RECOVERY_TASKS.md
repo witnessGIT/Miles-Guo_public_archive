@@ -5,9 +5,9 @@ A reachable archive or detail page is not counted as a direct playback URL.
 
 ## Queue summary
 
-- Open tasks: **613**
+- Open tasks: **612**
 - Legacy canonical LIVE_ tasks: **15 concluded unresolved; 0 open**
-- VIDEO/source-candidate tasks: **613 open; processing after legacy completion; 49 recovered in the current deferred phase**
+- VIDEO/source-candidate tasks: **612 open; processing after legacy completion; 50 recovered in the current deferred phase**
 - Every task preserves its current archive/detail links and requires exact identity evidence.
 - An exhaustive search with no result stays `unresolved`; it is not labelled media-missing.
 
@@ -62,6 +62,8 @@ The third 2017-08-27 record (`SC_GWINS_LIST2_69_20170827_3`) is the independent 
 The second 2017-08-28 record (`SC_GWINS_LIST2_69_20170828_2`) is the independent 87-second Qixi beach-afternoon video. Its exact-title YouTube source is reachable and playable; the exact GWINS-linked Rumble locator is preserved as access-restricted after HTTP 403. No other same-date video or compilation was substituted.
 
 The 2017-08-29 record (`SC_GWINS_LIST2_69_20170829`) is the independent 63-second boat workout video. Its exact-title YouTube source is reachable and playable; the exact GWINS-linked Rumble locator is preserved as access-restricted after HTTP 403. No other date, video, or compilation was substituted.
+
+The 2017-08-30 record (`SC_GWINS_LIST2_69_20170830`) is the independent 3,135-second video about identity-theft tactics and Teng Biao's motive. Its Discord-room YouTube locator is independently confirmed by GWINS page 610 and exact YouTube metadata; the exact GWINS-linked Rumble locator is preserved as access-restricted after HTTP 403. No other date, video, or compilation was substituted.
 
 ## Legacy-first conclusions
 
