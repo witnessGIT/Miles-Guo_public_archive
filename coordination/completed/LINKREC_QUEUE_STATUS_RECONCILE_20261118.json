@@ -1,0 +1,16 @@
+{
+  "task_id": "LINKREC_QUEUE_STATUS_RECONCILE_20261118",
+  "agent_id": "codex-discord-link-recovery-00-2",
+  "completed_at": "2026-11-18T01:00:04Z",
+  "result_commit": "68df294b0",
+  "result": "reconciled_20_completed_tasks",
+  "outputs": [
+    "data/current/link_recovery_tasks/discord_direct_playback_recovery.jsonl"
+  ],
+  "validation": "Twenty deferred queue rows with existing completed LINKREC claims and matching recovered attempt records were changed from open to recovered without performing new source recovery. The queue now contains 611 open and 28 recovered deferred tasks, matching the published queue summary. build_db passed; validate_db passed with 31 existing warnings; 148 tests passed.",
+  "workflow_mode": "discord-direct-playback-recovery-v1",
+  "claim_protocol": "claim-protocol-v2",
+  "entry_mode": "maintenance",
+  "finish_prerequisites_revalidated": true,
+  "notes": "Only already-published evidence was reconciled. No attachment, media, browser download, save dialog, or user confirmation was used."
+}
