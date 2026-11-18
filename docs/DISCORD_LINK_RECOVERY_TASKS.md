@@ -5,9 +5,9 @@ A reachable archive or detail page is not counted as a direct playback URL.
 
 ## Queue summary
 
-- Open tasks: **607**
+- Open tasks: **606**
 - Legacy canonical LIVE_ tasks: **15 concluded unresolved; 0 open**
-- VIDEO/source-candidate tasks: **607 open; processing after legacy completion; 55 recovered in the current deferred phase**
+- VIDEO/source-candidate tasks: **606 open; processing after legacy completion; 56 recovered in the current deferred phase**
 - Every task preserves its current archive/detail links and requires exact identity evidence.
 - An exhaustive search with no result stays `unresolved`; it is not labelled media-missing.
 
@@ -74,6 +74,8 @@ The 2017-09-01 record (`SC_GWINS_LIST2_69_20170901`) is the independent 3,600-se
 The second 2017-09-01 record (`SC_GWINS_LIST2_69_20170901_2`) is the independent 64-second short video titled 让盗国贼看看把我们当猪狗的代价是什么. Its exact `_2` Rumble source and exact-title YouTube mirror are both reachable and report the same duration. The same-date 3,600-second bilingual first episode was not substituted.
 
 The second 2017-09-02 record (`SC_GWINS_LIST2_69_20170902_2`) is the independent 50-second short video thanking supporters downstairs. Its exact `_2` Rumble source and exact-title YouTube mirror are both reachable and report the same duration. No other same-date video or compilation was substituted.
+
+The second 2017-09-09 record (`SC_GWINS_LIST2_69_20170909_2`) is the independent short video sharing the moment and apologizing for livestream technical errors. Its exact `_2` Rumble source and exact-title YouTube mirror are both reachable; their 87/88-second metadata differs only by platform rounding. No other same-date video or compilation was substituted.
 
 ## Legacy-first conclusions
 
