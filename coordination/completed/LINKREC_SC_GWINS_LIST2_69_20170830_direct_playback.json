@@ -1,0 +1,22 @@
+{
+  "task_id": "LINKREC_SC_GWINS_LIST2_69_20170830_direct_playback",
+  "agent_id": "codex-discord-link-recovery-00-2",
+  "completed_at": "2026-11-18T00:08:00Z",
+  "result_commit": "52a595cf2",
+  "result": "recovered",
+  "direct_playback_url": "https://www.youtube.com/watch?v=iVN4XuSDdG0",
+  "alternate_restricted_playback_url": "https://rumble.com/v5776b6-20170830.html",
+  "outputs": [
+    "data/current/link_recovery_tasks/discord_direct_playback_recovery.jsonl",
+    "data/current/video_catalog/date_first_video_catalog.jsonl",
+    "data/source_page_evidence/discord/discord_project_live_master_by_date.jsonl",
+    "data/source_page_evidence/discord/discord_direct_playback_recovery_attempts.jsonl",
+    "docs/DISCORD_LINK_RECOVERY_TASKS.md"
+  ],
+  "validation": "Discord room evidence and GWINS page 610 independently bind the same YouTube locator to source id 20170830 and the exact identity-theft tactics/Teng Biao motive title. YouTube returned HTTP 200 with playability status OK, exact title and duration 3,135 seconds. The exact Rumble public oEmbed returned HTTP 403 and the locator was preserved as access-restricted. build_db passed; validate_db passed with 31 existing warnings; 148 tests passed.",
+  "workflow_mode": "discord-direct-playback-recovery-v1",
+  "claim_protocol": "claim-protocol-v2",
+  "entry_mode": "work",
+  "finish_prerequisites_revalidated": true,
+  "notes": "No other date, video or compilation was substituted. No media was downloaded or played, and no save confirmation was triggered."
+}
