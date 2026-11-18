@@ -1,0 +1,26 @@
+{
+  "task_id": "WI_LIVE_20220520_001_key_points_topics",
+  "agent_id": "github-actions-cloud-key-points-44234895379",
+  "claimed_at": "2026-11-18T04:08:33.728914+00:00",
+  "base_commit": "e2439312a1a2e3f1c3d306bdbd68476efa5cd378",
+  "status": "in_progress",
+  "workflow_mode": "continuous-worker-v2",
+  "claim_protocol": "claim-protocol-v2",
+  "entry_mode": "work",
+  "continue_after_finish": true,
+  "stage": "key_points_topics",
+  "case_id": null,
+  "live_id": "LIVE_20220520_001",
+  "kind": "live_work_item",
+  "source_candidate_id": null,
+  "review_generation": null,
+  "review_claim_timeout_hours": null,
+  "review_state_before_claim": null,
+  "candidate_review_contract": null,
+  "depends_on_at_claim": [
+    "WI_LIVE_20220520_001_segment_split"
+  ],
+  "scope": "Create evidence-grounded neutral key points and controlled topic assignments.",
+  "reclaimed_expired_claim": false,
+  "static_claim_lease_hours": 24
+}
