@@ -5,9 +5,9 @@ A reachable archive or detail page is not counted as a direct playback URL.
 
 ## Queue summary
 
-- Open tasks: **609**
+- Open tasks: **608**
 - Legacy canonical LIVE_ tasks: **15 concluded unresolved; 0 open**
-- VIDEO/source-candidate tasks: **609 open; processing after legacy completion; 53 recovered in the current deferred phase**
+- VIDEO/source-candidate tasks: **608 open; processing after legacy completion; 54 recovered in the current deferred phase**
 - Every task preserves its current archive/detail links and requires exact identity evidence.
 - An exhaustive search with no result stays `unresolved`; it is not labelled media-missing.
 
@@ -70,6 +70,8 @@ The first 2017-08-31 record (`SC_GWINS_LIST2_69_20170831`) is the independent 10
 The second 2017-08-31 record (`SC_GWINS_LIST2_69_20170831_2`) is the independent 115-second preview for the next day's 政法王 episode. Its exact `_2` Rumble source and Discord/GWINS-linked YouTube mirror are both reachable and report the same duration. The same-date long Mingjing interview was not substituted.
 
 The 2017-09-01 record (`SC_GWINS_LIST2_69_20170901`) is the independent 3,600-second bilingual first episode about Meng Jianzhu, Sun Lijun, Ling Gu and organ replacement. Its exact-id Rumble source and exact-title YouTube mirror are both reachable and report the same duration. No other date, episode or compilation was substituted.
+
+The second 2017-09-01 record (`SC_GWINS_LIST2_69_20170901_2`) is the independent 64-second short video titled 让盗国贼看看把我们当猪狗的代价是什么. Its exact `_2` Rumble source and exact-title YouTube mirror are both reachable and report the same duration. The same-date 3,600-second bilingual first episode was not substituted.
 
 ## Legacy-first conclusions
 
