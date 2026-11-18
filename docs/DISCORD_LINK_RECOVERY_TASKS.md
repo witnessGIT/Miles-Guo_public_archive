@@ -5,9 +5,9 @@ A reachable archive or detail page is not counted as a direct playback URL.
 
 ## Queue summary
 
-- Open tasks: **611**
+- Open tasks: **610**
 - Legacy canonical LIVE_ tasks: **15 concluded unresolved; 0 open**
-- VIDEO/source-candidate tasks: **611 open; processing after legacy completion; 51 recovered in the current deferred phase**
+- VIDEO/source-candidate tasks: **610 open; processing after legacy completion; 52 recovered in the current deferred phase**
 - Every task preserves its current archive/detail links and requires exact identity evidence.
 - An exhaustive search with no result stays `unresolved`; it is not labelled media-missing.
 
@@ -66,6 +66,8 @@ The 2017-08-29 record (`SC_GWINS_LIST2_69_20170829`) is the independent 63-secon
 The 2017-08-30 record (`SC_GWINS_LIST2_69_20170830`) is the independent 3,135-second video about identity-theft tactics and Teng Biao's motive. Its Discord-room YouTube locator is independently confirmed by GWINS page 610 and exact YouTube metadata; the exact GWINS-linked Rumble locator is preserved as access-restricted after HTTP 403. No other date, video, or compilation was substituted.
 
 The first 2017-08-31 record (`SC_GWINS_LIST2_69_20170831`) is the independent 10,279-second Mingjing interview about current circumstances. Its exact-id Rumble source and exact-title YouTube mirror are both reachable and report the same duration. The separate same-date `20170831_2` video was not substituted.
+
+The second 2017-08-31 record (`SC_GWINS_LIST2_69_20170831_2`) is the independent 115-second preview for the next day's 政法王 episode. Its exact `_2` Rumble source and Discord/GWINS-linked YouTube mirror are both reachable and report the same duration. The same-date long Mingjing interview was not substituted.
 
 ## Legacy-first conclusions
 
