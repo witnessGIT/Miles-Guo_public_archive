@@ -1,0 +1,12 @@
+{
+  "task_id": "LINKREC_QUEUE_STATUS_RECONCILE_20261118",
+  "agent_id": "codex-discord-link-recovery-00-2",
+  "claimed_at": "2026-11-18T00:57:20Z",
+  "base_commit": "6b17c055b",
+  "status": "claimed",
+  "workflow_mode": "discord-direct-playback-recovery-v1",
+  "claim_protocol": "claim-protocol-v2",
+  "entry_mode": "maintenance",
+  "stage": "direct_playback_queue_reconciliation",
+  "scope": "Reconcile deferred queue rows whose individual LINKREC claims are already completed and whose exact playback evidence is already present in the catalog, master, and recovery-attempt ledger. Do not perform or infer new source recovery."
+}
