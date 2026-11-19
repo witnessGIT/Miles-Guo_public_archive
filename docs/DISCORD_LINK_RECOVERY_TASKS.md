@@ -5,9 +5,9 @@ A reachable archive or detail page is not counted as a direct playback URL.
 
 ## Queue summary
 
-- Open tasks: **598**
+- Open tasks: **597**
 - Legacy canonical LIVE_ tasks: **15 concluded unresolved; 0 open**
-- VIDEO/source-candidate tasks: **598 open; processing after legacy completion; 64 recovered in the current deferred phase**
+- VIDEO/source-candidate tasks: **597 open; processing after legacy completion; 65 recovered in the current deferred phase**
 - Every task preserves its current archive/detail links and requires exact identity evidence.
 - An exhaustive search with no result stays `unresolved`; it is not labelled media-missing.
 
@@ -92,6 +92,8 @@ The second 2017-09-13 record (`SC_GWINS_LIST2_69_20170913_2`) is the independent
 The 2017-09-14 record (`SC_GWINS_LIST2_69_20170914`) is the independent short video previewing an exposé within 48 hours. Its exact-id Rumble source and exact-title YouTube mirror are both reachable; their 76/77-second metadata differs only by platform rounding. No other date or compilation was substituted.
 
 The 2017-09-18 record (`SC_GWINS_LIST2_69_20170918`) is the independent short video about preparing global press-conference materials in a safe house and concern over turmoil in China. Its exact-identity Rumble source and exact-title YouTube mirror are both reachable; their 119/120-second metadata differs only by platform rounding. No other date or compilation was substituted.
+
+The 2017-09-19 record (`SC_GWINS_LIST2_68_20170919`) is the sixth Mingjing interview. Its exact-id 14,014-second Rumble source and a YouTube mirror explicitly labeled as the sixth interview are both reachable; the YouTube duration is 14,015 seconds, a one-second platform rounding difference. No other interview episode or compilation was substituted.
 
 ## Legacy-first conclusions
 
