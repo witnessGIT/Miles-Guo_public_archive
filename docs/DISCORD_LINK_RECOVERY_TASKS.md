@@ -5,9 +5,9 @@ A reachable archive or detail page is not counted as a direct playback URL.
 
 ## Queue summary
 
-- Open tasks: **599**
+- Open tasks: **598**
 - Legacy canonical LIVE_ tasks: **15 concluded unresolved; 0 open**
-- VIDEO/source-candidate tasks: **599 open; processing after legacy completion; 63 recovered in the current deferred phase**
+- VIDEO/source-candidate tasks: **598 open; processing after legacy completion; 64 recovered in the current deferred phase**
 - Every task preserves its current archive/detail links and requires exact identity evidence.
 - An exhaustive search with no result stays `unresolved`; it is not labelled media-missing.
 
@@ -90,6 +90,8 @@ The 2017-09-12 record (`SC_GWINS_LIST2_69_20170912`) is the independent 75/76-se
 The second 2017-09-13 record (`SC_GWINS_LIST2_69_20170913_2`) is the independent short video previewing an exposé one hour later. Its exact `_2` Rumble source and exact-title YouTube mirror are both reachable; their 61/62-second metadata differs only by platform rounding. No other same-date video or compilation was substituted.
 
 The 2017-09-14 record (`SC_GWINS_LIST2_69_20170914`) is the independent short video previewing an exposé within 48 hours. Its exact-id Rumble source and exact-title YouTube mirror are both reachable; their 76/77-second metadata differs only by platform rounding. No other date or compilation was substituted.
+
+The 2017-09-18 record (`SC_GWINS_LIST2_69_20170918`) is the independent short video about preparing global press-conference materials in a safe house and concern over turmoil in China. Its exact-identity Rumble source and exact-title YouTube mirror are both reachable; their 119/120-second metadata differs only by platform rounding. No other date or compilation was substituted.
 
 ## Legacy-first conclusions
 
