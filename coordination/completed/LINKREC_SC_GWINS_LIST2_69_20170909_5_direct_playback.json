@@ -1,0 +1,22 @@
+{
+  "task_id": "LINKREC_SC_GWINS_LIST2_69_20170909_5_direct_playback",
+  "agent_id": "codex-discord-link-recovery-00-2",
+  "completed_at": "2026-11-19T00:15:00Z",
+  "result_commit": "05b441fd8",
+  "result": "recovered",
+  "direct_playback_url": "https://rumble.com/v5778kl-20170909-5.html",
+  "alternate_reachable_playback_url": "https://www.youtube.com/watch?v=ZTahZG6BmHw",
+  "outputs": [
+    "data/current/link_recovery_tasks/discord_direct_playback_recovery.jsonl",
+    "data/current/video_catalog/date_first_video_catalog.jsonl",
+    "data/source_page_evidence/discord/discord_project_live_master_by_date.jsonl",
+    "data/source_page_evidence/discord/discord_direct_playback_recovery_attempts.jsonl",
+    "docs/DISCORD_LINK_RECOVERY_TASKS.md"
+  ],
+  "validation": "GWINS page 23572 binds both platform locators to the fifth 2017-09-09 short video titled 在船上. Rumble oEmbed returned title 20170909_5 and 10 seconds; YouTube returned the exact title, playability OK and 10 seconds. build_db passed; validate_db passed with 31 existing warnings; 148 tests passed.",
+  "workflow_mode": "discord-direct-playback-recovery-v1",
+  "claim_protocol": "claim-protocol-v2",
+  "entry_mode": "work",
+  "finish_prerequisites_revalidated": true,
+  "notes": "No other same-date video or compilation was substituted. No media was downloaded or played, and no save confirmation was triggered."
+}
