@@ -5,9 +5,9 @@ A reachable archive or detail page is not counted as a direct playback URL.
 
 ## Queue summary
 
-- Open tasks: **604**
+- Open tasks: **603**
 - Legacy canonical LIVE_ tasks: **15 concluded unresolved; 0 open**
-- VIDEO/source-candidate tasks: **604 open; processing after legacy completion; 58 recovered in the current deferred phase**
+- VIDEO/source-candidate tasks: **603 open; processing after legacy completion; 59 recovered in the current deferred phase**
 - Every task preserves its current archive/detail links and requires exact identity evidence.
 - An exhaustive search with no result stays `unresolved`; it is not labelled media-missing.
 
@@ -80,6 +80,8 @@ The second 2017-09-09 record (`SC_GWINS_LIST2_69_20170909_2`) is the independent
 The fourth 2017-09-09 record (`SC_GWINS_LIST2_69_20170909_4`) is the independent 108-second short video compensating for livestream technical failure and sharing the yacht interior. Its exact `_4` Rumble source and exact-title YouTube mirror are both reachable and report the same duration. No other same-date video or compilation was substituted.
 
 The fifth 2017-09-09 record (`SC_GWINS_LIST2_69_20170909_5`) is the independent 10-second short video titled 在船上. Its exact `_5` Rumble source and exact-title YouTube mirror are both reachable and report the same duration. No other same-date video or compilation was substituted.
+
+The second 2017-09-10 record (`SC_GWINS_LIST2_69_20170910_2`) is the independent long-form video addressing Jack Ma, 180 flight records and a two-million recording. Its exact `_2` Rumble source and exact-title YouTube mirror are both reachable; their 4,084/4,085-second metadata differs only by platform rounding. No other same-date video or compilation was substituted.
 
 ## Legacy-first conclusions
 
