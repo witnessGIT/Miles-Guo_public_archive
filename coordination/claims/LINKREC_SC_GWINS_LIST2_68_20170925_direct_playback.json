@@ -1,0 +1,15 @@
+{
+  "task_id": "LINKREC_SC_GWINS_LIST2_68_20170925_direct_playback",
+  "agent_id": "codex-discord-link-recovery-00-2",
+  "claimed_at": "2026-11-20T04:56:14Z",
+  "base_commit": "df3b391df",
+  "status": "in_progress",
+  "workflow_mode": "discord-direct-playback-recovery-v1",
+  "claim_protocol": "claim-protocol-v2",
+  "entry_mode": "work",
+  "stage": "direct_playback_source_recovery",
+  "record_id": "SC_GWINS_LIST2_68_20170925",
+  "queue_phase": "deferred_after_legacy",
+  "static_claim_lease_hours": 24,
+  "scope": "Recover exact-identity playback locators for the 2017-09-25 post-exposé short video."
+}
