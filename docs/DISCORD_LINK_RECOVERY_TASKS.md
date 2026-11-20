@@ -5,9 +5,9 @@ A reachable archive or detail page is not counted as a direct playback URL.
 
 ## Queue summary
 
-- Open tasks: **594**
+- Open tasks: **593**
 - Legacy canonical LIVE_ tasks: **15 concluded unresolved; 0 open**
-- VIDEO/source-candidate tasks: **594 open; processing after legacy completion; 68 recovered in the current deferred phase**
+- VIDEO/source-candidate tasks: **593 open; processing after legacy completion; 69 recovered in the current deferred phase**
 - Every task preserves its current archive/detail links and requires exact identity evidence.
 - An exhaustive search with no result stays `unresolved`; it is not labelled media-missing.
 
@@ -100,6 +100,8 @@ The 2017-09-20 record (`SC_GWINS_LIST2_68_20170920`) is the independent short vi
 The 2017-09-21 record (`SC_GWINS_LIST2_68_20170921`) is the independent short video about Wu Zheng spreading rumors in the United States and the upcoming board meeting. Its exact-id Rumble source and exact-title YouTube mirror are both reachable; their 120/121-second metadata differs only by platform rounding. No other date or compilation was substituted.
 
 The 2017-09-22 record (`SC_GWINS_LIST2_68_20170922`) is the independent short video about US officials protecting Guo like a little white rabbit. Its exact-id Rumble source and exact-title YouTube mirror are both reachable; their 119/120-second metadata differs only by platform rounding. No other date or compilation was substituted.
+
+The 2017-09-23 record (`SC_GWINS_LIST2_68_20170923`) is a 122/123-second preview of the next day's global press conference. The exact-id Rumble source and exact-title YouTube mirror are reachable; the next day's event was not substituted.
 
 ## Legacy-first conclusions
 
