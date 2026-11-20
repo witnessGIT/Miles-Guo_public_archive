@@ -5,9 +5,9 @@ A reachable archive or detail page is not counted as a direct playback URL.
 
 ## Queue summary
 
-- Open tasks: **590**
+- Open tasks: **589**
 - Legacy canonical LIVE_ tasks: **15 concluded unresolved; 0 open**
-- VIDEO/source-candidate tasks: **590 open; processing after legacy completion; 72 recovered in the current deferred phase**
+- VIDEO/source-candidate tasks: **589 open; processing after legacy completion; 73 recovered in the current deferred phase**
 - Every task preserves its current archive/detail links and requires exact identity evidence.
 - An exhaustive search with no result stays `unresolved`; it is not labelled media-missing.
 
@@ -108,6 +108,8 @@ The 2017-09-25 record (`SC_GWINS_LIST2_68_20170925`) is a 117/118-second short v
 The first 2017-09-26 record (`SC_GWINS_LIST2_68_20170926`) publishes part of a May 26 call recording. GWINS page 621 binds its Rumble and YouTube locators to this 1,878/1,879-second video; the second same-date record remains separate.
 
 The second 2017-09-26 record (`SC_GWINS_LIST2_68_20170926_2`) is the independent 122-second hotel warning and network outage video. Its exact `_2` Rumble and YouTube locators are reachable; the first same-date recording was not substituted.
+
+The 2017-09-27 record (`SC_GWINS_LIST2_68_20170927`) is the short video urging action rather than meetings or fundraising. Its exact-id Rumble and exact-title YouTube locators are reachable, with 115/116-second platform durations.
 
 ## Legacy-first conclusions
 
