@@ -5,9 +5,9 @@ A reachable archive or detail page is not counted as a direct playback URL.
 
 ## Queue summary
 
-- Open tasks: **591**
+- Open tasks: **590**
 - Legacy canonical LIVE_ tasks: **15 concluded unresolved; 0 open**
-- VIDEO/source-candidate tasks: **591 open; processing after legacy completion; 71 recovered in the current deferred phase**
+- VIDEO/source-candidate tasks: **590 open; processing after legacy completion; 72 recovered in the current deferred phase**
 - Every task preserves its current archive/detail links and requires exact identity evidence.
 - An exhaustive search with no result stays `unresolved`; it is not labelled media-missing.
 
@@ -106,6 +106,8 @@ The 2017-09-23 record (`SC_GWINS_LIST2_68_20170923`) is a 122/123-second preview
 The 2017-09-25 record (`SC_GWINS_LIST2_68_20170925`) is a 117/118-second short video about the domestic reaction after the initial exposé. Its exact-id Rumble source and exact-title YouTube mirror are reachable.
 
 The first 2017-09-26 record (`SC_GWINS_LIST2_68_20170926`) publishes part of a May 26 call recording. GWINS page 621 binds its Rumble and YouTube locators to this 1,878/1,879-second video; the second same-date record remains separate.
+
+The second 2017-09-26 record (`SC_GWINS_LIST2_68_20170926_2`) is the independent 122-second hotel warning and network outage video. Its exact `_2` Rumble and YouTube locators are reachable; the first same-date recording was not substituted.
 
 ## Legacy-first conclusions
 
