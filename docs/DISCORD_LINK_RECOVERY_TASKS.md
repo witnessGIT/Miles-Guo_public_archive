@@ -5,9 +5,9 @@ A reachable archive or detail page is not counted as a direct playback URL.
 
 ## Queue summary
 
-- Open tasks: **584**
+- Open tasks: **583**
 - Legacy canonical LIVE_ tasks: **15 concluded unresolved; 0 open**
-- VIDEO/source-candidate tasks: **584 open; processing after legacy completion; 78 recovered in the current deferred phase**
+- VIDEO/source-candidate tasks: **583 open; processing after legacy completion; 79 recovered in the current deferred phase**
 - Every task preserves its current archive/detail links and requires exact identity evidence.
 - An exhaustive search with no result stays `unresolved`; it is not labelled media-missing.
 
@@ -120,6 +120,8 @@ The 2017-09-30 record (`SC_GWINS_LIST2_68_20170930`) is the short video about th
 The 2017-10-01 record (`SC_GWINS_LIST2_68_20171001`) is the 118-second invitation for supporters to board a boat the next day. Its exact-id Rumble and exact-title YouTube locators are reachable; the later boat event was not substituted.
 
 The 2017-10-02 record (`SC_GWINS_LIST2_68_20171002`) is the short prayer for Las Vegas tragedy victims. Its exact-id Rumble and exact-title YouTube locators are reachable, with 124/125-second platform durations.
+
+The second 2017-10-04 record (`SC_GWINS_LIST2_68_20171004_2`) is the independent Washington safety update. GWINS page 23589 links its Rumble and YouTube locators; both platform records report 53 seconds and match the video identity.
 
 ## Legacy-first conclusions
 
