@@ -5,9 +5,9 @@ A reachable archive or detail page is not counted as a direct playback URL.
 
 ## Queue summary
 
-- Open tasks: **586**
+- Open tasks: **585**
 - Legacy canonical LIVE_ tasks: **15 concluded unresolved; 0 open**
-- VIDEO/source-candidate tasks: **586 open; processing after legacy completion; 76 recovered in the current deferred phase**
+- VIDEO/source-candidate tasks: **585 open; processing after legacy completion; 77 recovered in the current deferred phase**
 - Every task preserves its current archive/detail links and requires exact identity evidence.
 - An exhaustive search with no result stays `unresolved`; it is not labelled media-missing.
 
@@ -116,6 +116,8 @@ The 2017-09-28 record (`SC_GWINS_LIST2_68_20170928`) is the short video about do
 The 2017-09-29 record (`SC_GWINS_LIST2_68_20170929`) is the short video about information blockage and Wu Zheng/Yang Lan in New York. Its exact-id Rumble and exact-title YouTube locators are reachable, both reporting 119 seconds.
 
 The 2017-09-30 record (`SC_GWINS_LIST2_68_20170930`) is the short video about the Chinese embassy contacting Hudson Institute to stop Guo's speech. Its exact-id Rumble and exact-title YouTube locators are reachable, both reporting 124 seconds.
+
+The 2017-10-01 record (`SC_GWINS_LIST2_68_20171001`) is the 118-second invitation for supporters to board a boat the next day. Its exact-id Rumble and exact-title YouTube locators are reachable; the later boat event was not substituted.
 
 ## Legacy-first conclusions
 
