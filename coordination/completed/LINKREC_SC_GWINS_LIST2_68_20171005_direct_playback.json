@@ -1,0 +1,22 @@
+{
+  "task_id": "LINKREC_SC_GWINS_LIST2_68_20171005_direct_playback",
+  "agent_id": "codex-discord-link-recovery-00-2",
+  "completed_at": "2026-11-21T09:02:00Z",
+  "result_commit": "2b4aeb38f",
+  "result": "recovered",
+  "direct_playback_url": "https://rumble.com/v577eep-20171005.html",
+  "alternate_reachable_playback_url": "https://www.youtube.com/watch?v=rCA3wlbCwdk",
+  "outputs": [
+    "data/current/link_recovery_tasks/discord_direct_playback_recovery.jsonl",
+    "data/current/video_catalog/date_first_video_catalog.jsonl",
+    "data/source_page_evidence/discord/discord_project_live_master_by_date.jsonl",
+    "data/source_page_evidence/discord/discord_direct_playback_recovery_attempts.jsonl",
+    "docs/DISCORD_LINK_RECOVERY_TASKS.md"
+  ],
+  "validation": "Discord XLSX row 0098 and GWINS page 696 bind the locators to the edited English official video of the second Washington press conference. Both platforms report 3736 seconds, with YouTube playability OK and exact title. build_db and validate_db passed with 31 existing warnings; complete tests passed.",
+  "workflow_mode": "discord-direct-playback-recovery-v1",
+  "claim_protocol": "claim-protocol-v2",
+  "entry_mode": "work",
+  "finish_prerequisites_revalidated": true,
+  "notes": "No same-date alternate or compilation was substituted. No media was downloaded or played."
+}
