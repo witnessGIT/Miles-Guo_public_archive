@@ -5,9 +5,9 @@ A reachable archive or detail page is not counted as a direct playback URL.
 
 ## Queue summary
 
-- Open tasks: **578**
+- Open tasks: **577**
 - Legacy canonical LIVE_ tasks: **15 concluded unresolved; 0 open**
-- VIDEO/source-candidate tasks: **578 open; processing after legacy completion; 84 recovered in the current deferred phase**
+- VIDEO/source-candidate tasks: **577 open; processing after legacy completion; 85 recovered in the current deferred phase**
 - Every task preserves its current archive/detail links and requires exact identity evidence.
 - An exhaustive search with no result stays `unresolved`; it is not labelled media-missing.
 
@@ -132,6 +132,8 @@ The 2017-10-10 record (`SC_GWINS_LIST2_68_20171010`) is the short about Bo Xun c
 The second 2017-10-12 record (`SC_GWINS_LIST2_68_20171012_2`) concerns preparations around Guo's seven principles. GWINS page 23592 exposes Rumble and YouTube locators; both report 116 seconds and match the independent `_2` identity.
 
 The 2017-10-13 record (`SC_GWINS_LIST2_68_20171013`) shows the New York skyline and says there will be no revelations. GWINS page 23555 exposes Rumble and YouTube locators; both titles match, with 3000/3001-second platform durations.
+
+The second 2017-10-13 record (`SC_GWINS_LIST2_68_20171013_2`) concerns preparations for the next day's global press conference. GWINS page 23593 exposes Rumble and YouTube locators; they match the `_2` identity and report 117/118 seconds, distinct from the same-date skyline video.
 
 ## Legacy-first conclusions
 
