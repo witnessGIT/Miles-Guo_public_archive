@@ -5,9 +5,9 @@ A reachable archive or detail page is not counted as a direct playback URL.
 
 ## Queue summary
 
-- Open tasks: **588**
+- Open tasks: **587**
 - Legacy canonical LIVE_ tasks: **15 concluded unresolved; 0 open**
-- VIDEO/source-candidate tasks: **588 open; processing after legacy completion; 74 recovered in the current deferred phase**
+- VIDEO/source-candidate tasks: **587 open; processing after legacy completion; 75 recovered in the current deferred phase**
 - Every task preserves its current archive/detail links and requires exact identity evidence.
 - An exhaustive search with no result stays `unresolved`; it is not labelled media-missing.
 
@@ -112,6 +112,8 @@ The second 2017-09-26 record (`SC_GWINS_LIST2_68_20170926_2`) is the independent
 The 2017-09-27 record (`SC_GWINS_LIST2_68_20170927`) is the short video urging action rather than meetings or fundraising. Its exact-id Rumble and exact-title YouTube locators are reachable, with 115/116-second platform durations.
 
 The 2017-09-28 record (`SC_GWINS_LIST2_68_20170928`) is the short video about domestic internet blocking and Qu Long. Its exact-id Rumble and exact-title YouTube locators are reachable, with 119/120-second platform durations.
+
+The 2017-09-29 record (`SC_GWINS_LIST2_68_20170929`) is the short video about information blockage and Wu Zheng/Yang Lan in New York. Its exact-id Rumble and exact-title YouTube locators are reachable, both reporting 119 seconds.
 
 ## Legacy-first conclusions
 
