@@ -5,9 +5,9 @@ A reachable archive or detail page is not counted as a direct playback URL.
 
 ## Queue summary
 
-- Open tasks: **582**
+- Open tasks: **581**
 - Legacy canonical LIVE_ tasks: **15 concluded unresolved; 0 open**
-- VIDEO/source-candidate tasks: **582 open; processing after legacy completion; 80 recovered in the current deferred phase**
+- VIDEO/source-candidate tasks: **581 open; processing after legacy completion; 81 recovered in the current deferred phase**
 - Every task preserves its current archive/detail links and requires exact identity evidence.
 - An exhaustive search with no result stays `unresolved`; it is not labelled media-missing.
 
@@ -124,6 +124,8 @@ The 2017-10-02 record (`SC_GWINS_LIST2_68_20171002`) is the short prayer for Las
 The second 2017-10-04 record (`SC_GWINS_LIST2_68_20171004_2`) is the independent Washington safety update. GWINS page 23589 links its Rumble and YouTube locators; both platform records report 53 seconds and match the video identity.
 
 The 2017-10-05 record (`SC_GWINS_LIST2_68_20171005`) is the edited English official version of the second Washington press conference. Discord XLSX row 0098 binds the GWINS page and YouTube ID; GWINS page 696 exposes Rumble and YouTube locators, and both platforms report 3736 seconds.
+
+The 2017-10-07 record (`SC_GWINS_LIST2_68_20171007`) is the short video in which Snow appears. GWINS page 23590 exposes Rumble and YouTube locators; their metadata match the date and title, with 55/56-second platform durations.
 
 ## Legacy-first conclusions
 
