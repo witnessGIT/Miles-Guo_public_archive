@@ -3,7 +3,7 @@
   "agent_id": "github-actions-cloud-key-points-44912044015",
   "claimed_at": "2026-11-21T14:07:31.965405+00:00",
   "base_commit": "eac6e6bc61d3255fe5e1895dbf2daefe81c47869",
-  "status": "in_progress",
+  "status": "released",
   "workflow_mode": "continuous-worker-v2",
   "claim_protocol": "claim-protocol-v2",
   "entry_mode": "work",
@@ -22,5 +22,7 @@
   ],
   "scope": "Create evidence-grounded neutral key points and controlled topic assignments.",
   "reclaimed_expired_claim": false,
-  "static_claim_lease_hours": 24
+  "static_claim_lease_hours": 24,
+  "released_at": "2026-11-21T14:54:51.603876+00:00",
+  "release_reason": "Cloud key-point inference timed out after 2700 seconds; retained for retry"
 }
