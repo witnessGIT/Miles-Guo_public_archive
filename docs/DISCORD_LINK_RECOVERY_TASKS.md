@@ -5,9 +5,9 @@ A reachable archive or detail page is not counted as a direct playback URL.
 
 ## Queue summary
 
-- Open tasks: **583**
+- Open tasks: **582**
 - Legacy canonical LIVE_ tasks: **15 concluded unresolved; 0 open**
-- VIDEO/source-candidate tasks: **583 open; processing after legacy completion; 79 recovered in the current deferred phase**
+- VIDEO/source-candidate tasks: **582 open; processing after legacy completion; 80 recovered in the current deferred phase**
 - Every task preserves its current archive/detail links and requires exact identity evidence.
 - An exhaustive search with no result stays `unresolved`; it is not labelled media-missing.
 
@@ -122,6 +122,8 @@ The 2017-10-01 record (`SC_GWINS_LIST2_68_20171001`) is the 118-second invitatio
 The 2017-10-02 record (`SC_GWINS_LIST2_68_20171002`) is the short prayer for Las Vegas tragedy victims. Its exact-id Rumble and exact-title YouTube locators are reachable, with 124/125-second platform durations.
 
 The second 2017-10-04 record (`SC_GWINS_LIST2_68_20171004_2`) is the independent Washington safety update. GWINS page 23589 links its Rumble and YouTube locators; both platform records report 53 seconds and match the video identity.
+
+The 2017-10-05 record (`SC_GWINS_LIST2_68_20171005`) is the edited English official version of the second Washington press conference. Discord XLSX row 0098 binds the GWINS page and YouTube ID; GWINS page 696 exposes Rumble and YouTube locators, and both platforms report 3736 seconds.
 
 ## Legacy-first conclusions
 
