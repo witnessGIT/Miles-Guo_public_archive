@@ -5,9 +5,9 @@ A reachable archive or detail page is not counted as a direct playback URL.
 
 ## Queue summary
 
-- Open tasks: **574**
+- Open tasks: **571**
 - Legacy canonical LIVE_ tasks: **15 concluded unresolved; 0 open**
-- VIDEO/source-candidate tasks: **574 open; processing after legacy completion; 88 recovered in the current deferred phase**
+- VIDEO/source-candidate tasks: **571 open; processing after legacy completion; 91 recovered in the current deferred phase**
 - Every task preserves its current archive/detail links and requires exact identity evidence.
 - An exhaustive search with no result stays `unresolved`; it is not labelled media-missing.
 
@@ -136,6 +136,8 @@ The 2017-10-13 record (`SC_GWINS_LIST2_68_20171013`) shows the New York skyline 
 The second 2017-10-13 record (`SC_GWINS_LIST2_68_20171013_2`) concerns preparations for the next day's global press conference. GWINS page 23593 exposes Rumble and YouTube locators; they match the `_2` identity and report 117/118 seconds, distinct from the same-date skyline video.
 
 Three subsequent records were recovered separately. The second 2017-10-14 video (`SC_GWINS_LIST2_68_20171014_2`) discusses Wu Zheng and Ma Yun; GWINS page 23594 exposes exact `_2` Rumble and matching-title YouTube locators with 123/124-second durations. The 2017-10-15 video (`SC_GWINS_LIST2_68_20171015`) concerns representatives discussing Guo's disclosures; GWINS page 23595 exposes matching locators with 119/120-second durations. The 2017-10-21 video (`SC_GWINS_LIST2_68_20171021`) addresses European supporters after the 19th Party Congress pause; GWINS page 23596 exposes matching locators with 852/853-second durations.
+
+The third 2017-10-26 video (`SC_GWINS_LIST2_68_20171026_3`) is a live announcement; GWINS page 23597 and both platform records match `_3` at 104 seconds. The 2017-10-27 record (`SC_GWINS_LIST2_68_20171027`) has a YouTube ID independently present in Discord TXT evidence; GWINS page 624 and both platforms identify the dated safety update at 1619 seconds. The second 2017-11-01 record (`SC_GWINS_LIST2_68_20171101_2`) is a 60-second life-and-work message; GWINS page 23598 and both platforms distinguish it from the first same-date video.
 
 ## Legacy-first conclusions
 
