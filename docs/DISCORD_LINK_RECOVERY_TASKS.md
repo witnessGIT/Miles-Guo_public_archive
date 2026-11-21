@@ -5,9 +5,9 @@ A reachable archive or detail page is not counted as a direct playback URL.
 
 ## Queue summary
 
-- Open tasks: **579**
+- Open tasks: **578**
 - Legacy canonical LIVE_ tasks: **15 concluded unresolved; 0 open**
-- VIDEO/source-candidate tasks: **579 open; processing after legacy completion; 83 recovered in the current deferred phase**
+- VIDEO/source-candidate tasks: **578 open; processing after legacy completion; 84 recovered in the current deferred phase**
 - Every task preserves its current archive/detail links and requires exact identity evidence.
 - An exhaustive search with no result stays `unresolved`; it is not labelled media-missing.
 
@@ -130,6 +130,8 @@ The 2017-10-07 record (`SC_GWINS_LIST2_68_20171007`) is the short video in which
 The 2017-10-10 record (`SC_GWINS_LIST2_68_20171010`) is the short about Bo Xun claims and the Wu Zheng inquiry. GWINS page 23591 exposes Rumble and YouTube locators; both report 118 seconds, and YouTube's title matches the full subject.
 
 The second 2017-10-12 record (`SC_GWINS_LIST2_68_20171012_2`) concerns preparations around Guo's seven principles. GWINS page 23592 exposes Rumble and YouTube locators; both report 116 seconds and match the independent `_2` identity.
+
+The 2017-10-13 record (`SC_GWINS_LIST2_68_20171013`) shows the New York skyline and says there will be no revelations. GWINS page 23555 exposes Rumble and YouTube locators; both titles match, with 3000/3001-second platform durations.
 
 ## Legacy-first conclusions
 
