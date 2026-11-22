@@ -5,9 +5,9 @@ A reachable archive or detail page is not counted as a direct playback URL.
 
 ## Queue summary
 
-- Open tasks: **556**
+- Open tasks: **553**
 - Legacy canonical LIVE_ tasks: **15 concluded unresolved; 0 open**
-- VIDEO/source-candidate tasks: **556 open; processing after legacy completion; 106 recovered in the current deferred phase**
+- VIDEO/source-candidate tasks: **553 open; processing after legacy completion; 109 recovered in the current deferred phase**
 - Every task preserves its current archive/detail links and requires exact identity evidence.
 - An exhaustive search with no result stays `unresolved`; it is not labelled media-missing.
 
@@ -201,3 +201,9 @@ The 20180113 Canadian supporters gathering part two video now has exact-id Rumbl
 The 20180118 Snow pet growth record video now has exact-id Rumble and GWINS-linked YouTube playback sources. Metadata reports 1548/1548 seconds and the YouTube page reports playability OK.
 
 The 20180119_1 law firm explanation short video now has exact-id Rumble and GWINS-linked YouTube playback sources. Metadata reports 199/199 seconds and the YouTube page reports playability OK.
+
+The 20180119_2 Spring Gala plan short video now has an exact-id Rumble playback source (201 seconds). The GWINS-linked YouTube mirror is playable (202 seconds).
+
+The 20180127 fitness check-in video now has an exact-id Rumble playback source (59 seconds). The GWINS-linked YouTube locator returned HTTP 404 and remains historical.
+
+The 20180128_1 Guo Media thief-bait test full version video now has an exact-id Rumble playback source (315 seconds). The GWINS-linked YouTube mirror is playable (315 seconds).
