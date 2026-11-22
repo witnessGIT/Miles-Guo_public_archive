@@ -5,9 +5,9 @@ A reachable archive or detail page is not counted as a direct playback URL.
 
 ## Queue summary
 
-- Open tasks: **547**
+- Open tasks: **544**
 - Legacy canonical LIVE_ tasks: **15 concluded unresolved; 0 open**
-- VIDEO/source-candidate tasks: **547 open; processing after legacy completion; 115 recovered in the current deferred phase**
+- VIDEO/source-candidate tasks: **544 open; processing after legacy completion; 118 recovered in the current deferred phase**
 - Every task preserves its current archive/detail links and requires exact identity evidence.
 - An exhaustive search with no result stays `unresolved`; it is not labelled media-missing.
 
@@ -219,3 +219,9 @@ The 20180204 Chen Jun and Mingjing relationship video video now has an exact-id 
 The 20180211_2 security leak question short video now has an exact-id Rumble playback source (174 seconds). The GWINS-linked YouTube mirror is playable (174 seconds).
 
 The 20180215_2 Chen Jun debate preparation video video now has an exact-id Rumble playback source (882 seconds). The GWINS-linked YouTube mirror is playable (882 seconds).
+
+The 20180225_1 president bridge boat short video now has an exact-id Rumble playback source (212 seconds). The GWINS-linked YouTube title labels a same-day compilation, so its identity remains unverified and it is kept inactive.
+
+The 20180303 supporters meetup video now has an exact-id Rumble playback source (411 seconds). The GWINS-linked YouTube mirror is playable (411 seconds).
+
+The 20180304_1 second recording on March 4 video now has an exact-id Rumble playback source (396 seconds). The GWINS-linked YouTube mirror is playable (396 seconds).
