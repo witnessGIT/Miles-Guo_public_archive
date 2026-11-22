@@ -5,9 +5,9 @@ A reachable archive or detail page is not counted as a direct playback URL.
 
 ## Queue summary
 
-- Open tasks: **562**
+- Open tasks: **559**
 - Legacy canonical LIVE_ tasks: **15 concluded unresolved; 0 open**
-- VIDEO/source-candidate tasks: **562 open; processing after legacy completion; 100 recovered in the current deferred phase**
+- VIDEO/source-candidate tasks: **559 open; processing after legacy completion; 103 recovered in the current deferred phase**
 - Every task preserves its current archive/detail links and requires exact identity evidence.
 - An exhaustive search with no result stays `unresolved`; it is not labelled media-missing.
 
@@ -189,3 +189,9 @@ The 2017-12-05 fitness check-in video now has exact-id Rumble and Discord/GWINS-
 The 2017-12-08 safety update video now has exact-id Rumble and Discord/GWINS-linked YouTube playback sources. Both report 60 seconds and the YouTube page reports playability OK.
 
 The 2017-12-09 New York snow safety update video now has exact-id Rumble and Discord/GWINS-linked YouTube playback sources. Both report 44 seconds and the YouTube page reports playability OK.
+
+The 20171212 Dalian employees and family vow video now has exact-id Rumble and GWINS-linked YouTube playback sources. Metadata reports 3782/3783 seconds and the YouTube page reports playability OK.
+
+The 20180103 Australian supporters New Year message video now has exact-id Rumble and GWINS-linked YouTube playback sources. Metadata reports 877/877 seconds and the YouTube page reports playability OK.
+
+The 20180103_2 Japanese-language media interview short video now has exact-id Rumble and GWINS-linked YouTube playback sources. Metadata reports 13/14 seconds and the YouTube page reports playability OK.
