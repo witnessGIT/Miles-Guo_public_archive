@@ -5,9 +5,9 @@ A reachable archive or detail page is not counted as a direct playback URL.
 
 ## Queue summary
 
-- Open tasks: **550**
+- Open tasks: **547**
 - Legacy canonical LIVE_ tasks: **15 concluded unresolved; 0 open**
-- VIDEO/source-candidate tasks: **550 open; processing after legacy completion; 112 recovered in the current deferred phase**
+- VIDEO/source-candidate tasks: **547 open; processing after legacy completion; 115 recovered in the current deferred phase**
 - Every task preserves its current archive/detail links and requires exact identity evidence.
 - An exhaustive search with no result stays `unresolved`; it is not labelled media-missing.
 
@@ -213,3 +213,9 @@ The 20180128_2 Snow short video now has an exact-id Rumble playback source (60 s
 The 20180131 Spring Gala participation answer video now has an exact-id Rumble playback source (105 seconds). The GWINS-linked YouTube mirror is playable (106 seconds).
 
 The 20180203 Chen Jun and Yuan Jianbin safety update video now has an exact-id Rumble playback source (1148 seconds). The GWINS-linked YouTube mirror is playable (1149 seconds).
+
+The 20180204 Chen Jun and Mingjing relationship video video now has an exact-id Rumble playback source (653 seconds). The GWINS-linked YouTube locator returned HTTP 404 and remains historical.
+
+The 20180211_2 security leak question short video now has an exact-id Rumble playback source (174 seconds). The GWINS-linked YouTube mirror is playable (174 seconds).
+
+The 20180215_2 Chen Jun debate preparation video video now has an exact-id Rumble playback source (882 seconds). The GWINS-linked YouTube mirror is playable (882 seconds).
