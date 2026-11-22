@@ -5,9 +5,9 @@ A reachable archive or detail page is not counted as a direct playback URL.
 
 ## Queue summary
 
-- Open tasks: **568**
+- Open tasks: **565**
 - Legacy canonical LIVE_ tasks: **15 concluded unresolved; 0 open**
-- VIDEO/source-candidate tasks: **568 open; processing after legacy completion; 94 recovered in the current deferred phase**
+- VIDEO/source-candidate tasks: **565 open; processing after legacy completion; 97 recovered in the current deferred phase**
 - Every task preserves its current archive/detail links and requires exact identity evidence.
 - An exhaustive search with no result stays `unresolved`; it is not labelled media-missing.
 
@@ -140,6 +140,8 @@ Three subsequent records were recovered separately. The second 2017-10-14 video 
 The third 2017-10-26 video (`SC_GWINS_LIST2_68_20171026_3`) is a live announcement; GWINS page 23597 and both platform records match `_3` at 104 seconds. The 2017-10-27 record (`SC_GWINS_LIST2_68_20171027`) has a YouTube ID independently present in Discord TXT evidence; GWINS page 624 and both platforms identify the dated safety update at 1619 seconds. The second 2017-11-01 record (`SC_GWINS_LIST2_68_20171101_2`) is a 60-second life-and-work message; GWINS page 23598 and both platforms distinguish it from the first same-date video.
 
 Three November records were recovered separately. The 2017-11-07 Guo Baosheng interview (`SC_GWINS_LIST2_68_20171107`) appears in a Discord room message and GWINS page 702, with 4226/4227-second Rumble/YouTube durations. The 2017-11-08 Twitter suspension safety update (`SC_GWINS_LIST2_67_20171108`) appears in Discord TXT evidence and GWINS page 628, with matching 1102-second durations. The 2017-11-10 recorded message (`SC_GWINS_LIST2_67_20171110`) appears in a Discord room message and GWINS page 629, with 641/642-second durations.
+
+The fourth 2017-11-15 video (`SC_GWINS_LIST2_67_20171115_4`) is the HBO interview excerpt; GWINS page 23634 and both platforms match the `_4` identity with 478/479-second durations. The 2017-11-17 Bentley/BMW video (`SC_GWINS_LIST2_67_20171117`) appears in a Discord room message and GWINS page 633, with matching 93-second durations. The 2017-12-02 safety update (`SC_GWINS_LIST2_67_20171202`) appears in Discord TXT evidence and GWINS page 640, with matching 41-second durations.
 
 ## Legacy-first conclusions
 
