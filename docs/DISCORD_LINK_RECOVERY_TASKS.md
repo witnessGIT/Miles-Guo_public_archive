@@ -5,9 +5,9 @@ A reachable archive or detail page is not counted as a direct playback URL.
 
 ## Queue summary
 
-- Open tasks: **565**
+- Open tasks: **562**
 - Legacy canonical LIVE_ tasks: **15 concluded unresolved; 0 open**
-- VIDEO/source-candidate tasks: **565 open; processing after legacy completion; 97 recovered in the current deferred phase**
+- VIDEO/source-candidate tasks: **562 open; processing after legacy completion; 100 recovered in the current deferred phase**
 - Every task preserves its current archive/detail links and requires exact identity evidence.
 - An exhaustive search with no result stays `unresolved`; it is not labelled media-missing.
 
@@ -183,3 +183,9 @@ All 15 rows below are concluded `unresolved` after the required source checks; n
 3. Verify identity independently; same-day or similar-title matches are insufficient.
 4. Record restricted, dead, and retryable links separately from active playback links.
 5. Run database build, validation, and the complete test suite before completion.
+
+The 2017-12-05 fitness check-in video now has exact-id Rumble and Discord/GWINS-linked YouTube playback sources. Both report 60 seconds and the YouTube page reports playability OK.
+
+The 2017-12-08 safety update video now has exact-id Rumble and Discord/GWINS-linked YouTube playback sources. Both report 60 seconds and the YouTube page reports playability OK.
+
+The 2017-12-09 New York snow safety update video now has exact-id Rumble and Discord/GWINS-linked YouTube playback sources. Both report 44 seconds and the YouTube page reports playability OK.
