@@ -5,9 +5,9 @@ A reachable archive or detail page is not counted as a direct playback URL.
 
 ## Queue summary
 
-- Open tasks: **505**
+- Open tasks: **500**
 - Legacy canonical LIVE_ tasks: **15 concluded unresolved; 0 open**
-- VIDEO/source-candidate tasks: **505 open; processing after legacy completion; 157 recovered in the current deferred phase**
+- VIDEO/source-candidate tasks: **500 open; processing after legacy completion; 162 recovered in the current deferred phase**
 - Every task preserves its current archive/detail links and requires exact identity evidence.
 - An exhaustive search with no result stays `unresolved`; it is not labelled media-missing.
 
@@ -303,3 +303,13 @@ The 20180422_1 April 22 first Mingjing questions video now has an exact-id Rumbl
 The 20180422_2 April 22 second new-action update video now has an exact-id Rumble playback source (498 seconds). The GWINS-linked YouTube mirror is playable (499 seconds).
 
 The 20180422_3 April 22 third East Coast gathering microclip video now has an exact-id Rumble playback source (2 seconds). The GWINS-linked YouTube mirror is playable (3 seconds).
+
+The 20180423 call recording plus two short videos in one archived compilation has an exact-id Rumble playback locator (605 seconds). Its GWINS-linked YouTube mirror is playable (606 seconds). The archived compilation does not supply separate playback identities for its three components.
+
+The 20180424 first April 24 Chongqing statement has an exact-id Rumble playback locator (550 seconds). Its GWINS-linked YouTube mirror is playable (550 seconds).
+
+The 20180424_2 second April 24 English statement has an exact-id Rumble playback locator (31 seconds).
+
+The 20180424_3 third April 24 false-document short video has an exact-id Rumble playback locator (60 seconds).
+
+The 20180424_4 fourth April 24 boat-race short video has an exact-id Rumble playback locator (60 seconds).
