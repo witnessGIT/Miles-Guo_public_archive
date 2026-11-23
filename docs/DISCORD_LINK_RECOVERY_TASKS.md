@@ -5,9 +5,9 @@ A reachable archive or detail page is not counted as a direct playback URL.
 
 ## Queue summary
 
-- Open tasks: **532**
+- Open tasks: **529**
 - Legacy canonical LIVE_ tasks: **15 concluded unresolved; 0 open**
-- VIDEO/source-candidate tasks: **532 open; processing after legacy completion; 130 recovered in the current deferred phase**
+- VIDEO/source-candidate tasks: **529 open; processing after legacy completion; 133 recovered in the current deferred phase**
 - Every task preserves its current archive/detail links and requires exact identity evidence.
 - An exhaustive search with no result stays `unresolved`; it is not labelled media-missing.
 
@@ -249,3 +249,9 @@ The 20180312_4 March 12 fourth part about Wu Zheng and others video now has an e
 The 20180314_1 March 14 first part on May 1 resonance video now has an exact-id Rumble playback source (478 seconds). The GWINS-linked YouTube mirror is playable (479 seconds).
 
 The 20180314_2 March 14 second part on Mingjing and Chen Jun video now has an exact-id Rumble playback source (606 seconds). The GWINS-linked YouTube mirror is playable (607 seconds).
+
+The 20180315 March 15 first video on Chen Jun video now has an exact-id Rumble playback source (664 seconds). The GWINS-linked YouTube mirror is playable (664 seconds).
+
+The 20180315_2 March 15 second house-demolition short video now has an exact-id Rumble playback source (60 seconds). The GWINS-linked YouTube locator returned HTTP 404 and remains historical.
+
+The 20180317 March 17 Wang Qishan vice-presidency comments video now has an exact-id Rumble playback source (461 seconds). The GWINS-linked YouTube mirror is playable (461 seconds).
