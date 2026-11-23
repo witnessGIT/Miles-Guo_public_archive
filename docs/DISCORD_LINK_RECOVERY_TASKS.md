@@ -5,9 +5,9 @@ A reachable archive or detail page is not counted as a direct playback URL.
 
 ## Queue summary
 
-- Open tasks: **511**
+- Open tasks: **508**
 - Legacy canonical LIVE_ tasks: **15 concluded unresolved; 0 open**
-- VIDEO/source-candidate tasks: **511 open; processing after legacy completion; 151 recovered in the current deferred phase**
+- VIDEO/source-candidate tasks: **508 open; processing after legacy completion; 154 recovered in the current deferred phase**
 - Every task preserves its current archive/detail links and requires exact identity evidence.
 - An exhaustive search with no result stays `unresolved`; it is not labelled media-missing.
 
@@ -291,3 +291,9 @@ The 20180410 April 10 Bao Sheng and Xi question video video now has an exact-id 
 The 20180413_1 April 13 first part on Yang Jiechi video now has an exact-id Rumble playback source (555 seconds). The GWINS-linked YouTube mirror is playable (556 seconds).
 
 The 20180414 April 14 Syria strikes commentary video now has an exact-id Rumble playback source (688 seconds). The GWINS-linked YouTube mirror is playable (689 seconds).
+
+The 20180416_2 April 16 second video off Mar-a-Lago video now has an exact-id Rumble playback source (60 seconds). The GWINS-linked YouTube mirror is playable (60 seconds).
+
+The 20180420 April 20 planned allegations video video now has an exact-id Rumble playback source (604 seconds). The GWINS-linked YouTube mirror is playable (604 seconds).
+
+The 20180421 April 21 public apology video video now has an exact-id Rumble playback source (785 seconds). The GWINS-linked YouTube mirror is playable (785 seconds).
