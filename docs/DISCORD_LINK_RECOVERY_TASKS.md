@@ -5,9 +5,9 @@ A reachable archive or detail page is not counted as a direct playback URL.
 
 ## Queue summary
 
-- Open tasks: **514**
+- Open tasks: **511**
 - Legacy canonical LIVE_ tasks: **15 concluded unresolved; 0 open**
-- VIDEO/source-candidate tasks: **514 open; processing after legacy completion; 148 recovered in the current deferred phase**
+- VIDEO/source-candidate tasks: **511 open; processing after legacy completion; 151 recovered in the current deferred phase**
 - Every task preserves its current archive/detail links and requires exact identity evidence.
 - An exhaustive search with no result stays `unresolved`; it is not labelled media-missing.
 
@@ -285,3 +285,9 @@ The 20180405 April 5 Wu Xiaohui airplane passenger video video now has an exact-
 The 20180406 April 6 Wang Qishan and Wu Xiaohui video video now has an exact-id Rumble playback source (878 seconds). The GWINS-linked YouTube mirror is playable (878 seconds).
 
 The 20180409 April 9 Washington update video now has an exact-id Rumble playback source (360 seconds). The GWINS-linked YouTube mirror is playable (360 seconds).
+
+The 20180410 April 10 Bao Sheng and Xi question video video now has an exact-id Rumble playback source (489 seconds). The GWINS-linked YouTube mirror is playable (490 seconds).
+
+The 20180413_1 April 13 first part on Yang Jiechi video now has an exact-id Rumble playback source (555 seconds). The GWINS-linked YouTube mirror is playable (556 seconds).
+
+The 20180414 April 14 Syria strikes commentary video now has an exact-id Rumble playback source (688 seconds). The GWINS-linked YouTube mirror is playable (689 seconds).
