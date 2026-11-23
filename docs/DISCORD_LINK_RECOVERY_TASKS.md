@@ -5,9 +5,9 @@ A reachable archive or detail page is not counted as a direct playback URL.
 
 ## Queue summary
 
-- Open tasks: **520**
+- Open tasks: **517**
 - Legacy canonical LIVE_ tasks: **15 concluded unresolved; 0 open**
-- VIDEO/source-candidate tasks: **520 open; processing after legacy completion; 142 recovered in the current deferred phase**
+- VIDEO/source-candidate tasks: **517 open; processing after legacy completion; 145 recovered in the current deferred phase**
 - Every task preserves its current archive/detail links and requires exact identity evidence.
 - An exhaustive search with no result stays `unresolved`; it is not labelled media-missing.
 
@@ -273,3 +273,9 @@ The 20180329_3 March 29 third car-show short video now has an exact-id Rumble pl
 The 20180330 March 30 Hong Kong police and banking video video now has an exact-id Rumble playback source (481 seconds). The GWINS-linked YouTube mirror is playable (482 seconds).
 
 The 20180331 March 31 Guoyou interview video now has an exact-id Rumble playback source (8880 seconds). The GWINS-linked YouTube mirror is playable (8881 seconds).
+
+The 20180402 April 2 first Wu Xiaohui video video now has an exact-id Rumble playback source (397 seconds). The GWINS-linked YouTube mirror is playable (397 seconds).
+
+The 20180402_2 April 2 second Wu Xiaohui and Xiang Junbo short video now has an exact-id Rumble playback source (57 seconds). The GWINS-linked YouTube mirror is playable (58 seconds).
+
+The 20180404 April 4 Wu Xiaohui airplane video video now has an exact-id Rumble playback source (849 seconds). The GWINS-linked YouTube mirror is playable (849 seconds).
