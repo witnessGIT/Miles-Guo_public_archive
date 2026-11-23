@@ -5,9 +5,9 @@ A reachable archive or detail page is not counted as a direct playback URL.
 
 ## Queue summary
 
-- Open tasks: **508**
+- Open tasks: **505**
 - Legacy canonical LIVE_ tasks: **15 concluded unresolved; 0 open**
-- VIDEO/source-candidate tasks: **508 open; processing after legacy completion; 154 recovered in the current deferred phase**
+- VIDEO/source-candidate tasks: **505 open; processing after legacy completion; 157 recovered in the current deferred phase**
 - Every task preserves its current archive/detail links and requires exact identity evidence.
 - An exhaustive search with no result stays `unresolved`; it is not labelled media-missing.
 
@@ -297,3 +297,9 @@ The 20180416_2 April 16 second video off Mar-a-Lago video now has an exact-id Ru
 The 20180420 April 20 planned allegations video video now has an exact-id Rumble playback source (604 seconds). The GWINS-linked YouTube mirror is playable (604 seconds).
 
 The 20180421 April 21 public apology video video now has an exact-id Rumble playback source (785 seconds). The GWINS-linked YouTube mirror is playable (785 seconds).
+
+The 20180422_1 April 22 first Mingjing questions video now has an exact-id Rumble playback source (380 seconds). The GWINS-linked YouTube mirror is playable (380 seconds).
+
+The 20180422_2 April 22 second new-action update video now has an exact-id Rumble playback source (498 seconds). The GWINS-linked YouTube mirror is playable (499 seconds).
+
+The 20180422_3 April 22 third East Coast gathering microclip video now has an exact-id Rumble playback source (2 seconds). The GWINS-linked YouTube mirror is playable (3 seconds).
