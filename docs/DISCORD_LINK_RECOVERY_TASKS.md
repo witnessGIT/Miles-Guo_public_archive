@@ -5,9 +5,9 @@ A reachable archive or detail page is not counted as a direct playback URL.
 
 ## Queue summary
 
-- Open tasks: **523**
+- Open tasks: **520**
 - Legacy canonical LIVE_ tasks: **15 concluded unresolved; 0 open**
-- VIDEO/source-candidate tasks: **523 open; processing after legacy completion; 139 recovered in the current deferred phase**
+- VIDEO/source-candidate tasks: **520 open; processing after legacy completion; 142 recovered in the current deferred phase**
 - Every task preserves its current archive/detail links and requires exact identity evidence.
 - An exhaustive search with no result stays `unresolved`; it is not labelled media-missing.
 
@@ -267,3 +267,9 @@ The 20180324 March 24 safety update video now has an exact-id Rumble playback so
 The 20180329_1 March 29 first part on Hong Kong account seizures video now has an exact-id Rumble playback source (194 seconds). The GWINS-linked YouTube mirror is playable (195 seconds).
 
 The 20180329_2 March 29 second part on Western governments and Hong Kong police video now has an exact-id Rumble playback source (579 seconds). The GWINS-linked YouTube mirror is playable (579 seconds).
+
+The 20180329_3 March 29 third car-show short video now has an exact-id Rumble playback source (8 seconds). The GWINS-linked YouTube locator returned HTTP 404 and remains historical.
+
+The 20180330 March 30 Hong Kong police and banking video video now has an exact-id Rumble playback source (481 seconds). The GWINS-linked YouTube mirror is playable (482 seconds).
+
+The 20180331 March 31 Guoyou interview video now has an exact-id Rumble playback source (8880 seconds). The GWINS-linked YouTube mirror is playable (8881 seconds).
