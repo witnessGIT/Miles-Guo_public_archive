@@ -5,9 +5,9 @@ A reachable archive or detail page is not counted as a direct playback URL.
 
 ## Queue summary
 
-- Open tasks: **535**
+- Open tasks: **532**
 - Legacy canonical LIVE_ tasks: **15 concluded unresolved; 0 open**
-- VIDEO/source-candidate tasks: **535 open; processing after legacy completion; 127 recovered in the current deferred phase**
+- VIDEO/source-candidate tasks: **532 open; processing after legacy completion; 130 recovered in the current deferred phase**
 - Every task preserves its current archive/detail links and requires exact identity evidence.
 - An exhaustive search with no result stays `unresolved`; it is not labelled media-missing.
 
@@ -243,3 +243,9 @@ The 20180312_1 March 12 first part thanking source-material senders video now ha
 The 20180312_2 March 12 second part calling for social-media action video now has an exact-id Rumble playback source (135 seconds). The GWINS-linked YouTube mirror is playable (136 seconds).
 
 The 20180312_3 March 12 third part warning about rumors video now has an exact-id Rumble playback source (480 seconds). The GWINS-linked YouTube mirror is playable (481 seconds).
+
+The 20180312_4 March 12 fourth part about Wu Zheng and others video now has an exact-id Rumble playback source (438 seconds). The GWINS-linked YouTube mirror is playable (439 seconds).
+
+The 20180314_1 March 14 first part on May 1 resonance video now has an exact-id Rumble playback source (478 seconds). The GWINS-linked YouTube mirror is playable (479 seconds).
+
+The 20180314_2 March 14 second part on Mingjing and Chen Jun video now has an exact-id Rumble playback source (606 seconds). The GWINS-linked YouTube mirror is playable (607 seconds).
