@@ -5,9 +5,9 @@ A reachable archive or detail page is not counted as a direct playback URL.
 
 ## Queue summary
 
-- Open tasks: **526**
+- Open tasks: **523**
 - Legacy canonical LIVE_ tasks: **15 concluded unresolved; 0 open**
-- VIDEO/source-candidate tasks: **526 open; processing after legacy completion; 136 recovered in the current deferred phase**
+- VIDEO/source-candidate tasks: **523 open; processing after legacy completion; 139 recovered in the current deferred phase**
 - Every task preserves its current archive/detail links and requires exact identity evidence.
 - An exhaustive search with no result stays `unresolved`; it is not labelled media-missing.
 
@@ -261,3 +261,9 @@ The 20180318 March 18 video on state thieves video now has an exact-id Rumble pl
 The 20180321 March 21 lending-interest video video now has an exact-id Rumble playback source (435 seconds). The GWINS-linked YouTube mirror is playable (436 seconds).
 
 The 20180321_2 March 21 second safety-update short video now has an exact-id Rumble playback source (53 seconds). The GWINS-linked YouTube mirror is playable (53 seconds).
+
+The 20180324 March 24 safety update video now has an exact-id Rumble playback source (600 seconds). The GWINS-linked YouTube page is playable but untitled, so its identity remains unverified and it stays inactive.
+
+The 20180329_1 March 29 first part on Hong Kong account seizures video now has an exact-id Rumble playback source (194 seconds). The GWINS-linked YouTube mirror is playable (195 seconds).
+
+The 20180329_2 March 29 second part on Western governments and Hong Kong police video now has an exact-id Rumble playback source (579 seconds). The GWINS-linked YouTube mirror is playable (579 seconds).
