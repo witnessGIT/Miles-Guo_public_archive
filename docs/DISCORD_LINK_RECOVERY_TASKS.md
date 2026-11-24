@@ -5,9 +5,9 @@ A reachable archive or detail page is not counted as a direct playback URL.
 
 ## Queue summary
 
-- Open tasks: **497**
+- Open tasks: **493**
 - Legacy canonical LIVE_ tasks: **15 concluded unresolved; 0 open**
-- VIDEO/source-candidate tasks: **497 open; processing after legacy completion; 165 recovered in the current deferred phase**
+- VIDEO/source-candidate tasks: **493 open; processing after legacy completion; 169 recovered in the current deferred phase**
 - Every task preserves its current archive/detail links and requires exact identity evidence.
 - An exhaustive search with no result stays `unresolved`; it is not labelled media-missing.
 
@@ -319,3 +319,11 @@ The 20180426 April 26 West Shangri-La hotel allegation video has an exact-id Rum
 The 20180428 April 28 Kim Jong-un commentary video has an exact-id Rumble playback locator (608 seconds). Its GWINS-linked YouTube mirror is playable (608 seconds).
 
 The 20180503 May 3 wall-satellite announcement video has an exact-id Rumble playback locator (7922 seconds).
+
+The 20180505_1 first May 5 disclosure live has an exact-id Rumble playback locator (5476 seconds). Its GWINS-linked YouTube mirror is playable (5476 seconds).
+
+The 20180505_2 second May 5 disclosure live has an exact-id Rumble playback locator (3767 seconds). Its GWINS-linked YouTube mirror is playable (3768 seconds).
+
+The 20180505_3 third May 5 disclosure live has an exact-id Rumble playback locator (3899 seconds).
+
+The 20180505_4 fourth May 5 Lude interview has an exact-id Rumble playback locator (7833 seconds). Its GWINS-linked YouTube mirror is playable (7834 seconds).
