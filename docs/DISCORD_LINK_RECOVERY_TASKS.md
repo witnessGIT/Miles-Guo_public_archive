@@ -5,9 +5,9 @@ A reachable archive or detail page is not counted as a direct playback URL.
 
 ## Queue summary
 
-- Open tasks: **493**
+- Open tasks: **490**
 - Legacy canonical LIVE_ tasks: **15 concluded unresolved; 0 open**
-- VIDEO/source-candidate tasks: **493 open; processing after legacy completion; 169 recovered in the current deferred phase**
+- VIDEO/source-candidate tasks: **490 open; processing after legacy completion; 172 recovered in the current deferred phase**
 - Every task preserves its current archive/detail links and requires exact identity evidence.
 - An exhaustive search with no result stays `unresolved`; it is not labelled media-missing.
 
@@ -327,3 +327,9 @@ The 20180505_2 second May 5 disclosure live has an exact-id Rumble playback loca
 The 20180505_3 third May 5 disclosure live has an exact-id Rumble playback locator (3899 seconds).
 
 The 20180505_4 fourth May 5 Lude interview has an exact-id Rumble playback locator (7833 seconds). Its GWINS-linked YouTube mirror is playable (7834 seconds).
+
+The 20180511_2 May 11 Liu Yanping call-recording video has an exact-id Rumble playback locator (1462 seconds). Its GWINS-linked YouTube mirror is playable (1463 seconds).
+
+The 20180512 May 12 Lude interview with a former marine has an exact-id Rumble playback locator (646 seconds).
+
+The 20180517 May 17 Malaysia and Venezuela commentary video has an exact-id Rumble playback locator (3299 seconds).
