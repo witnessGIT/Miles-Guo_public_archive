@@ -5,9 +5,9 @@ A reachable archive or detail page is not counted as a direct playback URL.
 
 ## Queue summary
 
-- Open tasks: **490**
+- Open tasks: **487**
 - Legacy canonical LIVE_ tasks: **15 concluded unresolved; 0 open**
-- VIDEO/source-candidate tasks: **490 open; processing after legacy completion; 172 recovered in the current deferred phase**
+- VIDEO/source-candidate tasks: **487 open; processing after legacy completion; 175 recovered in the current deferred phase**
 - Every task preserves its current archive/detail links and requires exact identity evidence.
 - An exhaustive search with no result stays `unresolved`; it is not labelled media-missing.
 
@@ -333,3 +333,9 @@ The 20180511_2 May 11 Liu Yanping call-recording video has an exact-id Rumble pl
 The 20180512 May 12 Lude interview with a former marine has an exact-id Rumble playback locator (646 seconds).
 
 The 20180517 May 17 Malaysia and Venezuela commentary video has an exact-id Rumble playback locator (3299 seconds).
+
+The 20180522_1 May 22 first session on fighting alongside Wang Qishan and Liu Zhihua has an exact-id Rumble playback locator (3600 seconds). Its GWINS-linked YouTube mirror returned HTTP 200 oEmbed metadata with the matching title.
+
+The 20180522_2 May 22 second session on Venezuela, Malaysia and Yue Wenhai has an exact-id Rumble playback locator (2005 seconds). Its GWINS-linked YouTube mirror returned HTTP 200 oEmbed metadata with the matching title.
+
+The 20180524 May 24 Li Zhanshu secretary, Dong Wenbiao, Qu Long and Wang Qishan video has an exact-id Rumble playback locator (594 seconds). Its GWINS-linked YouTube mirror returned HTTP 200 oEmbed metadata with the matching title.
