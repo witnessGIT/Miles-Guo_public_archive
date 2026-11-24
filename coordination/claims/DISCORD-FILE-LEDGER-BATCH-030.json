@@ -1,0 +1,18 @@
+{
+  "task_id": "DISCORD-FILE-LEDGER-BATCH-030",
+  "agent_id": "codex-discord-ledger-agent-50",
+  "claimed_at": "2026-11-24T01:47:40Z",
+  "base_commit": "5a942774",
+  "status": "active",
+  "workflow_mode": "discord-file-ledger-v1",
+  "claim_protocol": "claim-protocol-v2",
+  "entry_mode": "work",
+  "stage": "discord_file_ledger_review",
+  "channel_id": "844771010771157053",
+  "attachment_ids": [
+    "846545041798725642",
+    "846846984773566525"
+  ],
+  "static_claim_lease_hours": 24,
+  "scope": "Review two previously unledgered English translation DOCX attachments from the translation channel, record checksums and precise stage, and exclude them from Chinese full-transcript import."
+}
