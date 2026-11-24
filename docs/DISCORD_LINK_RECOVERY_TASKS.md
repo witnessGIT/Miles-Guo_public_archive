@@ -5,9 +5,9 @@ A reachable archive or detail page is not counted as a direct playback URL.
 
 ## Queue summary
 
-- Open tasks: **487**
+- Open tasks: **484**
 - Legacy canonical LIVE_ tasks: **15 concluded unresolved; 0 open**
-- VIDEO/source-candidate tasks: **487 open; processing after legacy completion; 175 recovered in the current deferred phase**
+- VIDEO/source-candidate tasks: **484 open; processing after legacy completion; 178 recovered in the current deferred phase**
 - Every task preserves its current archive/detail links and requires exact identity evidence.
 - An exhaustive search with no result stays `unresolved`; it is not labelled media-missing.
 
@@ -339,3 +339,9 @@ The 20180522_1 May 22 first session on fighting alongside Wang Qishan and Liu Zh
 The 20180522_2 May 22 second session on Venezuela, Malaysia and Yue Wenhai has an exact-id Rumble playback locator (2005 seconds). Its GWINS-linked YouTube mirror returned HTTP 200 oEmbed metadata with the matching title.
 
 The 20180524 May 24 Li Zhanshu secretary, Dong Wenbiao, Qu Long and Wang Qishan video has an exact-id Rumble playback locator (594 seconds). Its GWINS-linked YouTube mirror returned HTTP 200 oEmbed metadata with the matching title.
+
+The 20180527 May 27 rebuttal of overseas pressure and dissident conspiracy claims has an exact-id Rumble playback locator (2046 seconds) and a matching-title GWINS-linked YouTube mirror with public oEmbed metadata.
+
+The 20180530 May 30 reassurance video has an exact-id Rumble playback locator (60 seconds) and a matching-title GWINS-linked YouTube mirror with public oEmbed metadata.
+
+The 20180531 May 31 June 4 and Malaysia Airlines commentary has an exact-id Rumble playback locator (595 seconds) and a matching-title GWINS-linked YouTube mirror with public oEmbed metadata.
