@@ -1,0 +1,27 @@
+{
+  "task_id": "DISCORD-FILE-LEDGER-BATCH-029",
+  "agent_id": "codex-discord-ledger-agent-50",
+  "completed_at": "2026-11-24T01:07:47Z",
+  "result_commit": "60bf14ee",
+  "workflow_mode": "discord-file-ledger-v1",
+  "claim_protocol": "claim-protocol-v2",
+  "entry_mode": "work",
+  "attachment_count": 1,
+  "outputs": [
+    "data/source_page_evidence/discord/discord_file_ledger.jsonl",
+    "docs/DISCORD_FILE_LEDGER.md"
+  ],
+  "counts": {
+    "checked": 1,
+    "imported": 0,
+    "duplicate_exact": 0,
+    "alternate_version_preserved": 0,
+    "non_fulltext_excluded": 1,
+    "unreachable": 0,
+    "pending_review": 67,
+    "remaining_unrepresented": 124
+  },
+  "validation": "One VOG cross-video reference document was directly fetched without interaction, extracted, hashed, and classified as non_fulltext_summary. build_db passed; validate_db passed with 31 existing warnings; 148 tests passed.",
+  "finish_prerequisites_revalidated": true,
+  "notes": "No binary, temporary extracted text, cache, ASR, AI API output, or fabricated cue entered Git."
+}
