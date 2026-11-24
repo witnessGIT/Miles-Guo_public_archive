@@ -5,9 +5,9 @@ A reachable archive or detail page is not counted as a direct playback URL.
 
 ## Queue summary
 
-- Open tasks: **475**
+- Open tasks: **470**
 - Legacy canonical LIVE_ tasks: **15 concluded unresolved; 0 open**
-- VIDEO/source-candidate tasks: **475 open; processing after legacy completion; 187 recovered in the current deferred phase**
+- VIDEO/source-candidate tasks: **470 open; processing after legacy completion; 192 recovered in the current deferred phase**
 - Every task preserves its current archive/detail links and requires exact identity evidence.
 - An exhaustive search with no result stays `unresolved`; it is not labelled media-missing.
 
@@ -359,3 +359,5 @@ The 20180623 June 23 Zhenjiang veterans and Guo Baosheng commentary, with a YouT
 The 20180625 June 25 Fang Fenghui and military compensation commentary has an exact-id Rumble playback locator (484 seconds) and a matching-title GWINS-linked YouTube mirror with public oEmbed metadata.
 
 The 2018-06-27 long session (6,893 seconds) and its separate fourth Manhattan boat clip (60 seconds) each have distinct exact-id Rumble locators; only the fourth clip has an independently matching-title YouTube mirror. The generic 6/27/18 YouTube title remains unverified for the long session. The 2018-07-06 Wang Jian commentary has an exact-id 1,853-second Rumble locator; the GWINS-linked Odysee URL remains unverified.
+
+Five July–August 2018 records now have exact-id Rumble locators: July 8 (22 seconds), July 9 (2,708 seconds), August 12 second-part composite (120 seconds), August 13 third part (60 seconds), and August 15 second part (60 seconds). Four have matching-title GWINS-linked YouTube mirrors. The July 9 Odysee link remains unverified; the August 12 composite was not split into invented component videos.
