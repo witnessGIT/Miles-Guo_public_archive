@@ -6,10 +6,11 @@ This ledger records per-file decisions for attachments discovered in Discord ser
 
 - Fully scanned attachment occurrences reported by the channel audit: **590**
 - Unique normalized filenames reported by the channel audit: **505**
-- Unique files now represented in the structured ledger: **380**
+- Unique files now represented in the structured ledger: **381**
 - Ledger entries marked `imported_corrected`: **127**
 - Ledger entries marked `imported_source_original`: **0**
 - Ledger entries marked `pending_review`: **67**
+- Ledger entries marked `non_fulltext_summary`: **1**
 - Ledger entries marked `alternate_version_preserved`: **54**
 - Ledger entries marked `duplicate_exact`: **16**
 - Ledger entries marked `key_points_or_clip`: **84**
@@ -19,9 +20,11 @@ This ledger records per-file decisions for attachments discovered in Discord ser
 - Ledger entries marked `machine_draft`: **1**
 - Ledger entries marked `irrelevant`: **18**
 - Entries still missing one historical checksum in repository provenance: **3**
-- Remaining unique filenames not yet backfilled into this ledger: **125**
+- Remaining unique filenames not yet backfilled into this ledger: **124**
 
 The remaining count is a backlog estimate from the completed server inventory, not fabricated placeholder rows. Each future run adds only files whose channel, attachment identity, filename, type, stage, checksum state, mapping, and final decision can be evidenced.
+
+Ledger batch 029 checked the previously unrepresented 5.24 MB VOG big-events DOC from `服务器说明`. Its alphabetic topic links and dated curated excerpts span multiple videos, so it is recorded as `non_fulltext_summary`, with no individual LIVE_ mapping or transcript import. The Discord message/attachment IDs, direct CDN source, binary SHA-256, extracted-text SHA-256, and document structure are recorded; the binary and temporary text stay outside Git.
 
 Ledger batch 027 concluded three previously pending VIDEO_-phase artifacts using their existing checksums and extracted-text evidence. `2017.8.20.docx` is explicitly only the third segment of a four-video compilation and remains `key_points_or_clip`; `17072017717.docx` is a proofread interview part retained as `alternate_version_preserved` because a complete source-original transcript for the same video is already ledgered; `2017813-.docx` is a network-test/ephemeral clip and remains `key_points_or_clip`. No attachment was downloaded again, no full transcript was overwritten, and no cue was fabricated.
 
