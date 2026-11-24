@@ -6,7 +6,7 @@ This ledger records per-file decisions for attachments discovered in Discord ser
 
 - Fully scanned attachment occurrences reported by the channel audit: **590**
 - Unique normalized filenames reported by the channel audit: **505**
-- Unique files now represented in the structured ledger: **381**
+- Unique files now represented in the structured ledger: **383**
 - Ledger entries marked `imported_corrected`: **127**
 - Ledger entries marked `imported_source_original`: **0**
 - Ledger entries marked `pending_review`: **67**
@@ -16,13 +16,15 @@ This ledger records per-file decisions for attachments discovered in Discord ser
 - Ledger entries marked `key_points_or_clip`: **84**
 - Ledger entries marked `title_or_link_index`: **4**
 - Ledger entries marked `spreadsheet_metadata`: **7**
-- Ledger entries marked `translation`: **2**
+- Ledger entries marked `translation`: **4**
 - Ledger entries marked `machine_draft`: **1**
 - Ledger entries marked `irrelevant`: **18**
 - Entries still missing one historical checksum in repository provenance: **3**
-- Remaining unique filenames not yet backfilled into this ledger: **124**
+- Remaining unique filenames not yet backfilled into this ledger: **122**
 
 The remaining count is a backlog estimate from the completed server inventory, not fabricated placeholder rows. Each future run adds only files whose channel, attachment identity, filename, type, stage, checksum state, mapping, and final decision can be evidenced.
+
+Ledger batch 030 checked two previously unrepresented bilingual DOCX files in `翻译` for parts two and three of the 2017-04-19 VOA interview. Each contains selected Chinese key points with English translation, not a complete original-language transcript. Both are recorded as `translation` with precise attachment origin and binary/extracted-text checksums. They were fetched directly without interaction into a temporary directory; no DOCX, extracted text, or cue entered Git.
 
 Ledger batch 029 checked the previously unrepresented 5.24 MB VOG big-events DOC from `服务器说明`. Its alphabetic topic links and dated curated excerpts span multiple videos, so it is recorded as `non_fulltext_summary`, with no individual LIVE_ mapping or transcript import. The Discord message/attachment IDs, direct CDN source, binary SHA-256, extracted-text SHA-256, and document structure are recorded; the binary and temporary text stay outside Git.
 
