@@ -5,9 +5,9 @@ A reachable archive or detail page is not counted as a direct playback URL.
 
 ## Queue summary
 
-- Open tasks: **484**
+- Open tasks: **481**
 - Legacy canonical LIVE_ tasks: **15 concluded unresolved; 0 open**
-- VIDEO/source-candidate tasks: **484 open; processing after legacy completion; 178 recovered in the current deferred phase**
+- VIDEO/source-candidate tasks: **481 open; processing after legacy completion; 181 recovered in the current deferred phase**
 - Every task preserves its current archive/detail links and requires exact identity evidence.
 - An exhaustive search with no result stays `unresolved`; it is not labelled media-missing.
 
@@ -345,3 +345,9 @@ The 20180527 May 27 rebuttal of overseas pressure and dissident conspiracy claim
 The 20180530 May 30 reassurance video has an exact-id Rumble playback locator (60 seconds) and a matching-title GWINS-linked YouTube mirror with public oEmbed metadata.
 
 The 20180531 May 31 June 4 and Malaysia Airlines commentary has an exact-id Rumble playback locator (595 seconds) and a matching-title GWINS-linked YouTube mirror with public oEmbed metadata.
+
+The 20180601 June 1 commentary on propaganda attacks has an exact-id Rumble playback locator (487 seconds) and a matching-title GWINS-linked YouTube mirror with public oEmbed metadata.
+
+The 20180602 June 2 An Hong and Qiu Yue interview commemorating June 4 has an exact-id Rumble playback locator (5850 seconds) and a matching-title GWINS-linked YouTube mirror with public oEmbed metadata.
+
+The 20180617 June 17 Fathers Day call with a former political and legal affairs leader has an exact-id Rumble playback locator (2735 seconds) and a matching-title GWINS-linked YouTube mirror with public oEmbed metadata.
