@@ -1,0 +1,27 @@
+{
+  "task_id": "DISCORD-FILE-LEDGER-BATCH-030",
+  "agent_id": "codex-discord-ledger-agent-50",
+  "completed_at": "2026-11-24T03:09:02Z",
+  "result_commit": "bdef4476",
+  "workflow_mode": "discord-file-ledger-v1",
+  "claim_protocol": "claim-protocol-v2",
+  "entry_mode": "work",
+  "attachment_count": 2,
+  "outputs": [
+    "data/source_page_evidence/discord/discord_file_ledger.jsonl",
+    "docs/DISCORD_FILE_LEDGER.md"
+  ],
+  "counts": {
+    "checked": 2,
+    "imported": 0,
+    "duplicate_exact": 0,
+    "alternate_version_preserved": 0,
+    "non_fulltext_excluded": 2,
+    "unreachable": 0,
+    "pending_review": 67,
+    "remaining_unrepresented": 122
+  },
+  "validation": "Two bilingual key-point translations directly fetched without interaction, extracted, hashed, and classified as translation. build_db passed; validate_db passed with 31 existing warnings; 148 tests passed.",
+  "finish_prerequisites_revalidated": true,
+  "notes": "No DOCX, temporary extracted text, cache, ASR, AI API output, or fabricated cue entered Git."
+}
