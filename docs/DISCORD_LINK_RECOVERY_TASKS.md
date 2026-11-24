@@ -5,9 +5,9 @@ A reachable archive or detail page is not counted as a direct playback URL.
 
 ## Queue summary
 
-- Open tasks: **481**
+- Open tasks: **478**
 - Legacy canonical LIVE_ tasks: **15 concluded unresolved; 0 open**
-- VIDEO/source-candidate tasks: **481 open; processing after legacy completion; 181 recovered in the current deferred phase**
+- VIDEO/source-candidate tasks: **478 open; processing after legacy completion; 184 recovered in the current deferred phase**
 - Every task preserves its current archive/detail links and requires exact identity evidence.
 - An exhaustive search with no result stays `unresolved`; it is not labelled media-missing.
 
@@ -351,3 +351,9 @@ The 20180601 June 1 commentary on propaganda attacks has an exact-id Rumble play
 The 20180602 June 2 An Hong and Qiu Yue interview commemorating June 4 has an exact-id Rumble playback locator (5850 seconds) and a matching-title GWINS-linked YouTube mirror with public oEmbed metadata.
 
 The 20180617 June 17 Fathers Day call with a former political and legal affairs leader has an exact-id Rumble playback locator (2735 seconds) and a matching-title GWINS-linked YouTube mirror with public oEmbed metadata.
+
+The 20180621 June 21 world-trend commentary, with a YouTube audio-labelled mirror has an exact-id Rumble playback locator (292 seconds) and a matching-title GWINS-linked YouTube mirror with public oEmbed metadata.
+
+The 20180623 June 23 Zhenjiang veterans and Guo Baosheng commentary, with a YouTube audio-labelled mirror has an exact-id Rumble playback locator (267 seconds) and a matching-title GWINS-linked YouTube mirror with public oEmbed metadata.
+
+The 20180625 June 25 Fang Fenghui and military compensation commentary has an exact-id Rumble playback locator (484 seconds) and a matching-title GWINS-linked YouTube mirror with public oEmbed metadata.
