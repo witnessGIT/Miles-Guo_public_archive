@@ -5,9 +5,9 @@ A reachable archive or detail page is not counted as a direct playback URL.
 
 ## Queue summary
 
-- Open tasks: **444**
+- Open tasks: **439**
 - Legacy canonical LIVE_ tasks: **15 concluded unresolved; 0 open**
-- VIDEO/source-candidate tasks: **444 open; processing after legacy completion; 218 recovered in the current deferred phase**
+- VIDEO/source-candidate tasks: **439 open; processing after legacy completion; 223 recovered in the current deferred phase**
 - Every task preserves its current archive/detail links and requires exact identity evidence.
 - An exhaustive search with no result stays `unresolved`; it is not labelled media-missing.
 
@@ -371,3 +371,5 @@ Five October 9–18, 2018 records now have exact-id Rumble playback locators (81
 Five October 21–22, 2018 short parts now have distinct exact-id Rumble playback locators (60, 60, 60, 42, and 44 seconds) and GWINS-linked YouTube mirrors whose public oEmbed titles match the date, part number, and distinctive content. The three October 21 Zheng Xiaosong clips and two October 22 shooting clips remain separate records.
 
 Five October 23–26, 2018 records now have exact-id Rumble playback locators (60, 3,423, 583, 60, and 602 seconds). Three GWINS-linked YouTube mirrors have matching part or distinctive titles. The October 25 second-part outbound YouTube upload labels itself part one and remains unverified; the October 24 Odysee locator is also unverified.
+
+Five October 27–30, 2018 records now have exact-id Rumble playback locators (60, 3,267, 60, 559, and 60 seconds). The October 27 and October 28 second-part YouTube mirrors have distinctive matching titles; the October 30 first-part YouTube locator lacks a part number and remains unverified. The October 28 and 29 Odysee locators also remain unverified.
