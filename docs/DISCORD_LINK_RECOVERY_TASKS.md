@@ -5,9 +5,9 @@ A reachable archive or detail page is not counted as a direct playback URL.
 
 ## Queue summary
 
-- Open tasks: **454**
+- Open tasks: **449**
 - Legacy canonical LIVE_ tasks: **15 concluded unresolved; 0 open**
-- VIDEO/source-candidate tasks: **454 open; processing after legacy completion; 208 recovered in the current deferred phase**
+- VIDEO/source-candidate tasks: **449 open; processing after legacy completion; 213 recovered in the current deferred phase**
 - Every task preserves its current archive/detail links and requires exact identity evidence.
 - An exhaustive search with no result stays `unresolved`; it is not labelled media-missing.
 
@@ -367,3 +367,5 @@ Six September 2018 records now have exact-part Rumble locators: September 16 thi
 Five October 2018 records now have exact-id Rumble locators: the October 6 interview and two distinct short parts, plus October 8 shooting parts one and two. The October 6 interview has a matching-title YouTube rebroadcast. The two October 6 short-part YouTube titles use conflicting part numbers and remain unverified; an unrelated October 3 YouTube link was rejected. The October 8 Odysee locators remain unverified.
 
 Five October 9–18, 2018 records now have exact-id Rumble playback locators (819, 60, 60, 5,756, and 60 seconds respectively). Each GWINS-linked YouTube mirror returned HTTP 200 public oEmbed metadata matching its date, part where applicable, or distinctive title. The October 17 Lude interview remains its own long-form record.
+
+Five October 21–22, 2018 short parts now have distinct exact-id Rumble playback locators (60, 60, 60, 42, and 44 seconds) and GWINS-linked YouTube mirrors whose public oEmbed titles match the date, part number, and distinctive content. The three October 21 Zheng Xiaosong clips and two October 22 shooting clips remain separate records.
