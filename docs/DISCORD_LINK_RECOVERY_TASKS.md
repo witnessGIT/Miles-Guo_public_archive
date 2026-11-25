@@ -5,9 +5,9 @@ A reachable archive or detail page is not counted as a direct playback URL.
 
 ## Queue summary
 
-- Open tasks: **459**
+- Open tasks: **454**
 - Legacy canonical LIVE_ tasks: **15 concluded unresolved; 0 open**
-- VIDEO/source-candidate tasks: **459 open; processing after legacy completion; 203 recovered in the current deferred phase**
+- VIDEO/source-candidate tasks: **454 open; processing after legacy completion; 208 recovered in the current deferred phase**
 - Every task preserves its current archive/detail links and requires exact identity evidence.
 - An exhaustive search with no result stays `unresolved`; it is not labelled media-missing.
 
@@ -365,3 +365,5 @@ Five July–August 2018 records now have exact-id Rumble locators: July 8 (22 se
 Six September 2018 records now have exact-part Rumble locators: September 16 third part (6,119 seconds), September 22 parts two through four (60, 29, and 34 seconds), and September 23 parts one and two (both 60 seconds). Four GWINS-linked YouTube mirrors have matching part titles. The September 23 second-part outbound YouTube title calls itself part three, so it remains unverified; the September 16 Odysee link is also unverified.
 
 Five October 2018 records now have exact-id Rumble locators: the October 6 interview and two distinct short parts, plus October 8 shooting parts one and two. The October 6 interview has a matching-title YouTube rebroadcast. The two October 6 short-part YouTube titles use conflicting part numbers and remain unverified; an unrelated October 3 YouTube link was rejected. The October 8 Odysee locators remain unverified.
+
+Five October 9–18, 2018 records now have exact-id Rumble playback locators (819, 60, 60, 5,756, and 60 seconds respectively). Each GWINS-linked YouTube mirror returned HTTP 200 public oEmbed metadata matching its date, part where applicable, or distinctive title. The October 17 Lude interview remains its own long-form record.
