@@ -1,0 +1,13 @@
+{
+  "task_id": "DISCORD-FILE-LEDGER-COVERAGE-AUDIT-031",
+  "agent_id": "codex-discord-ledger-agent-50",
+  "claimed_at": "2026-11-25T02:08:52Z",
+  "base_commit": "2210fc76",
+  "status": "active",
+  "workflow_mode": "discord-file-ledger-v1",
+  "claim_protocol": "claim-protocol-v2",
+  "entry_mode": "work",
+  "stage": "discord_file_ledger_coverage_audit",
+  "static_claim_lease_hours": 24,
+  "scope": "Reconcile ledger rows, distinct attachment IDs, and normalized filenames against the reported 505-name scan; correct audit arithmetic without altering per-file decisions."
+}
