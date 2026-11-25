@@ -6,7 +6,9 @@ This ledger records per-file decisions for attachments discovered in Discord ser
 
 - Fully scanned attachment occurrences reported by the channel audit: **590**
 - Unique normalized filenames reported by the channel audit: **505**
-- Unique files now represented in the structured ledger: **383**
+- Ledger rows: **383**
+- Distinct Discord attachment IDs in those rows: **379**
+- Distinct normalized filenames in those rows: **326**
 - Ledger entries marked `imported_corrected`: **127**
 - Ledger entries marked `imported_source_original`: **0**
 - Ledger entries marked `pending_review`: **67**
@@ -20,9 +22,9 @@ This ledger records per-file decisions for attachments discovered in Discord ser
 - Ledger entries marked `machine_draft`: **1**
 - Ledger entries marked `irrelevant`: **18**
 - Entries still missing one historical checksum in repository provenance: **3**
-- Remaining unique filenames not yet backfilled into this ledger: **122**
+- Estimated normalized filenames not yet represented in this ledger: **179** (`505 - 326`)
 
-The remaining count is a backlog estimate from the completed server inventory, not fabricated placeholder rows. Each future run adds only files whose channel, attachment identity, filename, type, stage, checksum state, mapping, and final decision can be evidenced.
+The previous estimate of 122 subtracted ledger rows from unique filenames, mixing two different counting units. The ledger has 57 rows beyond its 326 distinct normalized filenames, including alternate uploads and exact duplicates. Four attachment IDs also appear in two ledger rows each; their provenance and differing extracted-text checksums need reconciliation before those rows can be treated as distinct attachments. The 179 remaining names are a backlog estimate from the completed server inventory, not fabricated placeholder rows. The original 505-name scan is not stored as a complete itemized manifest, so the currently missing names cannot yet be enumerated individually. Each future run adds only files whose channel, attachment identity, filename, type, stage, checksum state, mapping, and final decision can be evidenced.
 
 Ledger batch 030 checked two previously unrepresented bilingual DOCX files in `翻译` for parts two and three of the 2017-04-19 VOA interview. Each contains selected Chinese key points with English translation, not a complete original-language transcript. Both are recorded as `translation` with precise attachment origin and binary/extracted-text checksums. They were fetched directly without interaction into a temporary directory; no DOCX, extracted text, or cue entered Git.
 
