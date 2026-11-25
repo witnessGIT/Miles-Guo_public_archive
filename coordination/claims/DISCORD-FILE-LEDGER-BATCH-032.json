@@ -1,0 +1,19 @@
+{
+  "task_id": "DISCORD-FILE-LEDGER-BATCH-032",
+  "agent_id": "codex-discord-ledger-agent-50",
+  "claimed_at": "2026-11-25T02:25:06Z",
+  "base_commit": "c910b8f3",
+  "status": "active",
+  "workflow_mode": "discord-file-ledger-v1",
+  "claim_protocol": "claim-protocol-v2",
+  "entry_mode": "work",
+  "stage": "discord_file_ledger_review",
+  "attachment_ids": [
+    "828642538654531654",
+    "828642854695862303",
+    "828643188951482368",
+    "829022067148062830"
+  ],
+  "static_claim_lease_hours": 24,
+  "scope": "Reconcile four duplicated attachment identities with contradictory extracted-text hashes, preserve valid proofread and assignment versions, and correct ledger counts with audit evidence."
+}
