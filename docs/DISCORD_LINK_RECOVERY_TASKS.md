@@ -5,9 +5,9 @@ A reachable archive or detail page is not counted as a direct playback URL.
 
 ## Queue summary
 
-- Open tasks: **464**
+- Open tasks: **459**
 - Legacy canonical LIVE_ tasks: **15 concluded unresolved; 0 open**
-- VIDEO/source-candidate tasks: **464 open; processing after legacy completion; 198 recovered in the current deferred phase**
+- VIDEO/source-candidate tasks: **459 open; processing after legacy completion; 203 recovered in the current deferred phase**
 - Every task preserves its current archive/detail links and requires exact identity evidence.
 - An exhaustive search with no result stays `unresolved`; it is not labelled media-missing.
 
@@ -363,3 +363,5 @@ The 2018-06-27 long session (6,893 seconds) and its separate fourth Manhattan bo
 Five July–August 2018 records now have exact-id Rumble locators: July 8 (22 seconds), July 9 (2,708 seconds), August 12 second-part composite (120 seconds), August 13 third part (60 seconds), and August 15 second part (60 seconds). Four have matching-title GWINS-linked YouTube mirrors. The July 9 Odysee link remains unverified; the August 12 composite was not split into invented component videos.
 
 Six September 2018 records now have exact-part Rumble locators: September 16 third part (6,119 seconds), September 22 parts two through four (60, 29, and 34 seconds), and September 23 parts one and two (both 60 seconds). Four GWINS-linked YouTube mirrors have matching part titles. The September 23 second-part outbound YouTube title calls itself part three, so it remains unverified; the September 16 Odysee link is also unverified.
+
+Five October 2018 records now have exact-id Rumble locators: the October 6 interview and two distinct short parts, plus October 8 shooting parts one and two. The October 6 interview has a matching-title YouTube rebroadcast. The two October 6 short-part YouTube titles use conflicting part numbers and remain unverified; an unrelated October 3 YouTube link was rejected. The October 8 Odysee locators remain unverified.
