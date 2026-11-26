@@ -6,25 +6,27 @@ This ledger records per-file decisions for attachments discovered in Discord ser
 
 - Fully scanned attachment occurrences reported by the channel audit: **590**
 - Unique normalized filenames reported by the channel audit: **505**
-- Ledger rows: **379**
-- Distinct Discord attachment IDs in those rows: **379**
-- Distinct normalized filenames in those rows: **326**
+- Ledger rows: **384**
+- Distinct Discord attachment IDs in those rows: **384**
+- Distinct normalized filenames in those rows: **331**
 - Ledger entries marked `imported_corrected`: **127**
 - Ledger entries marked `imported_source_original`: **0**
 - Ledger entries marked `pending_review`: **67**
 - Ledger entries marked `non_fulltext_summary`: **1**
 - Ledger entries marked `alternate_version_preserved`: **50**
 - Ledger entries marked `duplicate_exact`: **16**
-- Ledger entries marked `key_points_or_clip`: **84**
+- Ledger entries marked `key_points_or_clip`: **89**
 - Ledger entries marked `title_or_link_index`: **4**
 - Ledger entries marked `spreadsheet_metadata`: **7**
 - Ledger entries marked `translation`: **4**
 - Ledger entries marked `machine_draft`: **1**
 - Ledger entries marked `irrelevant`: **18**
 - Entries still missing one historical checksum in repository provenance: **3**
-- Estimated normalized filenames not yet represented in this ledger: **179** (`505 - 326`)
+- Estimated normalized filenames not yet represented in this ledger: **174** (`505 - 331`)
 
-The previous estimate of 122 subtracted ledger rows from unique filenames, mixing two different counting units. The ledger has 53 rows beyond its 326 distinct normalized filenames, including alternate uploads and exact duplicates. Four contradictory duplicate rows that reused existing attachment IDs and binary checksums were removed in batch 032; the genuine distinct assignment-channel versions remain separately recorded. See `data/source_page_evidence/discord/discord_ledger_duplicate_attachment_audit.jsonl` for each retained and removed ID and checksum. The 179 remaining names are a backlog estimate from the completed server inventory, not fabricated placeholder rows. The original 505-name scan is not stored as a complete itemized manifest, so the currently missing names cannot yet be enumerated individually. Each future run adds only files whose channel, attachment identity, filename, type, stage, checksum state, mapping, and final decision can be evidenced.
+The previous estimate of 122 subtracted ledger rows from unique filenames, mixing two different counting units. The ledger has 53 rows beyond its 331 distinct normalized filenames, including alternate uploads and exact duplicates. Four contradictory duplicate rows that reused existing attachment IDs and binary checksums were removed in batch 032; the genuine distinct assignment-channel versions remain separately recorded. See `data/source_page_evidence/discord/discord_ledger_duplicate_attachment_audit.jsonl` for each retained and removed ID and checksum. The 174 remaining names are a backlog estimate from the completed server inventory, not fabricated placeholder rows. The original 505-name scan is not stored as a complete itemized manifest, so the currently missing names cannot yet be enumerated individually. Each future run adds only files whose channel, attachment identity, filename, type, stage, checksum state, mapping, and final decision can be evidenced.
+
+Ledger batch 033 checked five previously unrepresented DOCX attachments in `要点整理` (2017-05-04, 05-21 part two, 07-01, 08-21 and 08-22). Their contents are edited key-point outlines, not complete transcripts, so all five are recorded as `key_points_or_clip` with exact channel/message/attachment IDs and file/text checksums. The files were fetched through signed Discord CDN URLs by non-interactive requests to a temporary directory. This batch checked 5, imported 0, found 0 exact duplicates, preserved 0 alternate versions, excluded 5 non-fulltext files, found 0 unreachable files, and left 67 pending reviews and an estimated 174 unrepresented normalized filenames.
 
 Ledger batch 032 reconciled four repeated attachment IDs for 2017-05-15, 2017-05-16, and 2017-05-19. Each duplicate row reused the proofread-channel attachment ID, CDN URL, and binary checksum but had a conflicting extracted-text checksum and no message ID. The genuine assignment-channel alternate versions had separate IDs and checksums and remain intact. The four contradictory duplicate rows were removed with an itemized audit record. This batch checked four attachment identities, imported 0, found 4 duplicate ledger rows, preserved 4 valid alternate versions, excluded 0 non-fulltext files, found 0 newly unreachable files, and left 67 pending reviews and an estimated 179 unrepresented normalized filenames.
 
