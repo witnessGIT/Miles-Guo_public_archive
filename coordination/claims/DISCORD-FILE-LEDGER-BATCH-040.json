@@ -1,0 +1,28 @@
+{
+  "task_id": "DISCORD-FILE-LEDGER-BATCH-040",
+  "agent_id": "codex-discord-ledger-agent-50",
+  "claimed_at": "2026-11-26T06:26:06Z",
+  "base_commit": "9c385339",
+  "status": "active",
+  "workflow_mode": "discord-file-ledger-v1",
+  "claim_protocol": "claim-protocol-v2",
+  "entry_mode": "work",
+  "stage": "discord_file_ledger_review",
+  "channel_ids": [
+    "821935980939313162"
+  ],
+  "attachment_ids": [
+    "868325583136903208",
+    "868325585687031808",
+    "868325588128116776",
+    "869012435116363886",
+    "869031787580489768",
+    "871240333151838208",
+    "873741831790272512",
+    "873741834562715668",
+    "890964626311884902",
+    "892072019242397736"
+  ],
+  "static_claim_lease_hours": 24,
+  "scope": "Check ten unledgered Y/YZ edited key-point DOCX files, including same-name revision comparisons, without treating summaries as full transcripts."
+}
