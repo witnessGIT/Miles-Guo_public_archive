@@ -1,0 +1,19 @@
+{
+  "task_id": "DISCORD-FILE-LEDGER-BATCH-038",
+  "agent_id": "codex-discord-ledger-agent-50",
+  "completed_at": "2026-11-26T04:29:00Z",
+  "claim_protocol": "claim-protocol-v2",
+  "workflow_mode": "discord-file-ledger-v1",
+  "stage": "discord_file_ledger_checksum_repair",
+  "channel_ids": [
+    "821933739307040805",
+    "821933739307040806"
+  ],
+  "attachment_ids": [
+    "893065060409303080",
+    "887442536862453811"
+  ],
+  "outcome": "Two historical T attachments checked: 2017-09-04 DOCX raw and text SHA-256 confirmed; 2017-08-30 Pages raw SHA-256 confirmed but text extraction unsupported and a contemporary reply indicates incorrect upload, so relation revised to pending_review. 0 imported, 0 exact duplicate, 0 confirmed alternate version, 0 non-fulltext exclusion, 0 unreachable; 69 pending_review and 157 estimated unrepresented normalized names remain. build_db and validate_db passed; 148 tests passed.",
+  "result_commit": "8e6819a7",
+  "evidence_ref": "data/source_page_evidence/discord/discord_file_ledger.jsonl"
+}
