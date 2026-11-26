@@ -5,11 +5,13 @@ A reachable archive or detail page is not counted as a direct playback URL.
 
 ## Queue summary
 
-- Open tasks: **407**
+- Open tasks: **405**
 - Legacy canonical LIVE_ tasks: **15 concluded unresolved; 0 open**
-- VIDEO/source-candidate tasks: **407 open; processing after legacy completion; 232 recovered in the current deferred phase**
+- VIDEO/source-candidate tasks: **405 open; processing after legacy completion; 234 recovered in the current deferred phase**
 - Every task preserves its current archive/detail links and requires exact identity evidence.
 - An exhaustive search with no result stays `unresolved`; it is not labelled media-missing.
+
+The 2019-02-02 Venezuela/Vatican video (`SC_GWINS_LIST2_55_20190202_1`) now has an exact-id 345-second Rumble playback locator. GWINS page 21961 binds the date, title, source id and outbound URL; Rumble public oEmbed confirms a video iframe. The GWINS-linked Odysee page returned HTML but no independently readable media metadata, so that locator remains unverified.
 
 The 2019-01-24 Venezuela video (`SC_GWINS_LIST2_56_20190124`) now has an exact-id 1,599-second Rumble playback locator. GWINS page 261 binds the date, title, source id and outbound URL; Rumble public oEmbed confirms a video iframe. The GWINS-linked Odysee URL remains unverified.
 
