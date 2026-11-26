@@ -5,9 +5,9 @@ A reachable archive or detail page is not counted as a direct playback URL.
 
 ## Queue summary
 
-- Open tasks: **414**
+- Open tasks: **409**
 - Legacy canonical LIVE_ tasks: **15 concluded unresolved; 0 open**
-- VIDEO/source-candidate tasks: **414 open; processing after legacy completion; 248 recovered in the current deferred phase**
+- VIDEO/source-candidate tasks: **409 open; processing after legacy completion; 253 recovered in the current deferred phase**
 - Every task preserves its current archive/detail links and requires exact identity evidence.
 - An exhaustive search with no result stays `unresolved`; it is not labelled media-missing.
 
@@ -383,3 +383,5 @@ Five December 23–30, 2018 records now have exact-id Rumble playback locators (
 Five December 31, 2018–January 2, 2019 records now have exact-id Rumble playback locators (183, 9,552, 73, 120, and 50 seconds). The January 1 interview also has a matching GWINS-linked YouTube mirror. Four Odysee mirrors remain unverified.
 
 Five January 6–9, 2019 records now have GWINS-linked Rumble playback locators (3,564, 1,817, 4,887, 1,371, and 65 seconds). January 6 and 7 YouTube mirrors have matching date and topic; three Odysee mirrors remain unverified. The January 8 Rumble metadata uses a filename with .mp4 suffix; the GWINS page binds it to the exact titled record.
+
+Five January 15–22, 2019 records now have exact-id Rumble playback locators (129, 846, 1,487, 1,220, and 35 seconds). Three GWINS-linked YouTube mirrors have matching date and topic; January 15 and 22 Odysee mirrors remain unverified. The January 16 second-part identity remains separate from other same-day material.
