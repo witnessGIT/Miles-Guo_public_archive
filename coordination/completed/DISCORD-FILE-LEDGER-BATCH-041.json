@@ -1,0 +1,34 @@
+{
+  "task_id": "DISCORD-FILE-LEDGER-BATCH-041",
+  "agent_id": "codex-discord-ledger-agent-50",
+  "completed_at": "2026-11-26T08:32:10Z",
+  "claim_protocol": "claim-protocol-v2",
+  "workflow_mode": "discord-file-ledger-v1",
+  "stage": "discord_file_ledger_review",
+  "channel_ids": [
+    "821935331875356693",
+    "821935440105177119"
+  ],
+  "attachment_ids": [
+    "870564997925859378",
+    "873213691699548200",
+    "873219866184785940",
+    "876475026793193512",
+    "877632993869586502",
+    "880792471259463710",
+    "882474288031080468",
+    "866503063316856852",
+    "866503103342444574",
+    "866507685376688158",
+    "866522532941135902",
+    "868325244652371988",
+    "869012510232150026",
+    "869031696979329064",
+    "871240390487969822",
+    "873741758234759188",
+    "873741761275641856"
+  ],
+  "outcome": "17 key-point DOCX files reviewed; 0 fulltext imports, 9 exact binary duplicates, 8 distinct non-fulltext key-point files, 0 unreachable. Ledger has 446 rows / 374 normalized names; 69 pending_review and 131 estimated unrepresented normalized names remain. build_db and validate_db passed; 148 tests passed.",
+  "result_commit": "6fa6e894",
+  "evidence_ref": "data/source_page_evidence/discord/discord_file_ledger.jsonl"
+}
