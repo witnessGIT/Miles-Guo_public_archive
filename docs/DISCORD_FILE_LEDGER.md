@@ -6,23 +6,23 @@ This ledger records per-file decisions for attachments discovered in Discord ser
 
 - Fully scanned attachment occurrences reported by the channel audit: **590**
 - Unique normalized filenames reported by the channel audit: **505**
-- Ledger rows: **429**
-- Distinct Discord attachment IDs in those rows: **429**
-- Distinct normalized filenames in those rows: **366**
+- Ledger rows: **446**
+- Distinct Discord attachment IDs in those rows: **446**
+- Distinct normalized filenames in those rows: **374**
 - Ledger entries marked `imported_corrected`: **130**
 - Ledger entries marked `imported_source_original`: **0**
 - Ledger entries marked `pending_review`: **69**
 - Ledger entries marked `non_fulltext_summary`: **1**
 - Ledger entries marked `alternate_version_preserved`: **51**
-- Ledger entries marked `duplicate_exact`: **18**
-- Ledger entries marked `key_points_or_clip`: **126**
+- Ledger entries marked `duplicate_exact`: **27**
+- Ledger entries marked `key_points_or_clip`: **134**
 - Ledger entries marked `title_or_link_index`: **4**
 - Ledger entries marked `spreadsheet_metadata`: **7**
 - Ledger entries marked `translation`: **4**
 - Ledger entries marked `machine_draft`: **1**
 - Ledger entries marked `irrelevant`: **18**
 - Entries still missing one historical checksum in repository provenance: **1**
-- Estimated normalized filenames not yet represented in this ledger: **139** (`505 - 366`)
+- Estimated normalized filenames not yet represented in this ledger: **131** (`505 - 374`)
 
 The previous estimate of 122 subtracted ledger rows from unique filenames, mixing two different counting units. The ledger has 63 rows beyond its 366 distinct normalized filenames, including alternate uploads and exact duplicates. Four contradictory duplicate rows that reused existing attachment IDs and binary checksums were removed in batch 032; the genuine distinct assignment-channel versions remain separately recorded. See `data/source_page_evidence/discord/discord_ledger_duplicate_attachment_audit.jsonl` for each retained and removed ID and checksum. The 157 remaining names are a backlog estimate from the completed server inventory, not fabricated placeholder rows. The original 505-name scan is not stored as a complete itemized manifest, so the currently missing names cannot yet be enumerated individually. Each future run adds only files whose channel, attachment identity, filename, type, stage, checksum state, mapping, and final decision can be evidenced.
 
@@ -31,6 +31,8 @@ Ledger batch 037 rechecked the existing 2018 January multi-video DOCX compilatio
 Ledger batch 038 rechecked two earlier T-prefixed attachments using signed Discord CDN URLs and reproduced both binary SHA-256 values. The September 4, 2017 DOCX second part yielded a 10,442-character text extraction and a complete extracted-text checksum; its Discord message ID was restored. The August 30 Pages package remained text-inaccessible with the available local converters. A contemporary channel reply says that Pages upload was the wrong file and a DOCX replacement followed, so its former alternate-version conclusion was revised to `pending_review` and its completeness is undetermined. This batch checked 2 previously decided files, imported 0, found 0 exact duplicates, confirmed 0 alternate versions, excluded 0 non-fulltext files, found 0 unreachable files, and left 69 pending reviews and an estimated 157 unrepresented normalized filenames. The Pages text checksum remains an explicit gap.
 
 Ledger batch 039 inspected ten previously unrepresented Y-prefixed DOCX attachments in archived 要点原文. Each downloaded noninteractively from its signed CDN URL, and each binary and text extraction received its own SHA-256. The documents are edited key points with source quotations, not certified continuous full transcripts, even where the quotation text is long. The April 29 second video is tied to `LIVE_20170429_002`; April 26 remains date-only because same-day part identity is not proven. This batch checked 10 unique files, imported 0, found 0 exact duplicates and 0 confirmed alternate versions, excluded 10 from fulltext import, found 0 unreachable files, and left 69 pending reviews and an estimated 147 unrepresented normalized filenames. No DOCX or cache was committed.
+
+Ledger batch 041 checked 17 previously unledgered Y/YZ DOCX attachments in the hidden 要点原文校对 and 要点整理校对 channels. All were obtained noninteractively through signed Discord CDN URLs, with binary and extracted-text SHA-256 values recorded individually. Nine are exact binary reuploads of key-point files already in the ledger; eight are additional edited key-point versions. The 2017-08-22 file's title was checked against the catalog's second-broadcast identity, avoiding a filename-based swap with another same-day video. This batch checked 17 unique attachment IDs, imported 0 full transcripts, found 9 exact duplicates, preserved 8 distinct key-point versions, excluded all 17 from fulltext import, found 0 unreachable files, and left 69 pending reviews and an estimated 131 unrepresented normalized filenames. No DOCX or cache was committed.
 
 Ledger batch 040 checked ten Y/YZ DOCX attachments in archived 要点整理文本. Eight are distinct key-point editorial files and two are byte-identical reuploads of already ledgered same-name files; different text extraction methods explain differing extracted-text digests for those binary duplicates. Every attachment received its own binary and extracted-text SHA-256. The `YZ-J2017.08.22-2.docx` filename suffix conflicts with its embedded media URL; the URL maps to the first 2017-08-22 catalog entry, so the second same-day video was not substituted. This batch checked 10 files, imported 0, found 2 exact duplicates, found 0 alternate versions, excluded all 10 from fulltext import, found 0 unreachable files, and left 69 pending reviews and an estimated 139 unrepresented normalized filenames. No DOCX or cache was committed.
 
