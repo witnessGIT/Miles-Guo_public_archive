@@ -1,0 +1,15 @@
+{
+  "task_id": "DISCORD-FILE-LEDGER-BATCH-036",
+  "agent_id": "codex-discord-ledger-agent-50",
+  "claimed_at": "2026-11-26T02:22:00Z",
+  "base_commit": "05c313a3",
+  "status": "active",
+  "workflow_mode": "discord-file-ledger-v1",
+  "claim_protocol": "claim-protocol-v2",
+  "entry_mode": "work",
+  "stage": "discord_file_ledger_review",
+  "channel_ids": ["929299305490169866"],
+  "attachment_ids": ["933668970219855893", "933669350903263262", "933715199775621150", "934351980258795520", "934897188885135450", "935481109821669436", "936536427917897738", "939718587936038932"],
+  "static_claim_lease_hours": 24,
+  "scope": "Review eight previously unledgered GTV discussion room XLSX key-point candidates, preserving per-attachment checksums and distinguishing editorial versions from full transcripts."
+}
