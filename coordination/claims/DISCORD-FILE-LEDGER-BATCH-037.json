@@ -1,0 +1,15 @@
+{
+  "task_id": "DISCORD-FILE-LEDGER-BATCH-037",
+  "agent_id": "codex-discord-ledger-agent-50",
+  "claimed_at": "2026-11-26T03:22:00Z",
+  "base_commit": "e81c5e0b",
+  "status": "active",
+  "workflow_mode": "discord-file-ledger-v1",
+  "claim_protocol": "claim-protocol-v2",
+  "entry_mode": "work",
+  "stage": "discord_file_ledger_checksum_repair",
+  "channel_ids": ["831782777434538024"],
+  "attachment_ids": ["867669521560109076"],
+  "static_claim_lease_hours": 24,
+  "scope": "Verify the historical 2018 compilation attachment and fill its missing extracted-text checksum without changing its per-video imports."
+}
