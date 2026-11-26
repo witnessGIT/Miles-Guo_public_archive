@@ -1,0 +1,36 @@
+{
+  "task_id": "DISCORD-FILE-LEDGER-BATCH-041",
+  "agent_id": "codex-discord-ledger-agent-50",
+  "claimed_at": "2026-11-26T08:26:41Z",
+  "base_commit": "6581a3ceb0650b7b78eb7c4bcee2856859b6048e",
+  "status": "in_progress",
+  "workflow_mode": "discord-file-ledger-v1",
+  "claim_protocol": "claim-protocol-v2",
+  "entry_mode": "work",
+  "stage": "discord_file_ledger_review",
+  "channel_ids": [
+    "821935331875356693",
+    "821935440105177119"
+  ],
+  "attachment_ids": [
+    "870564997925859378",
+    "873213691699548200",
+    "873219866184785940",
+    "876475026793193512",
+    "877632993869586502",
+    "880792471259463710",
+    "882474288031080468",
+    "866503063316856852",
+    "866503103342444574",
+    "866507685376688158",
+    "866522532941135902",
+    "868325244652371988",
+    "869012510232150026",
+    "869031696979329064",
+    "871240390487969822",
+    "873741758234759188",
+    "873741761275641856"
+  ],
+  "static_claim_lease_hours": 24,
+  "scope": "Review 17 unledgered Y/YZ edited key-point DOCX files; no fulltext import."
+}
