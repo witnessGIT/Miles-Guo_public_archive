@@ -3,7 +3,7 @@
   "agent_id": "codex-discord-ledger-agent-50",
   "claimed_at": "2026-11-26T00:21:08Z",
   "base_commit": "ecf623b4",
-  "status": "active",
+  "status": "completed",
   "workflow_mode": "discord-file-ledger-v1",
   "claim_protocol": "claim-protocol-v2",
   "entry_mode": "work",
@@ -17,5 +17,7 @@
     "873907324690006036"
   ],
   "static_claim_lease_hours": 24,
-  "scope": "Review five previously unledgered DOCX attachments from 要点整理, record exact origin and checksums, and classify without promoting key points to full transcript."
+  "scope": "Review five previously unledgered DOCX attachments from 要点整理, record exact origin and checksums, and classify without promoting key points to full transcript.",
+  "completed_at": "2026-11-26T00:25:18Z",
+  "result_commit": "29e99bb0"
 }
