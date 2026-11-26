@@ -1,0 +1,27 @@
+{
+  "task_id": "DISCORD-FILE-LEDGER-BATCH-035",
+  "agent_id": "codex-discord-ledger-agent-50",
+  "claimed_at": "2026-11-26T01:26:51Z",
+  "base_commit": "e8eba652",
+  "status": "active",
+  "workflow_mode": "discord-file-ledger-v1",
+  "claim_protocol": "claim-protocol-v2",
+  "entry_mode": "work",
+  "stage": "discord_file_ledger_review",
+  "channel_ids": [
+    "827664259793944607",
+    "821990158646771723",
+    "929299305490169866"
+  ],
+  "attachment_ids": [
+    "828708695541153853",
+    "829399702273130506",
+    "848829105771774012",
+    "933693122532245504",
+    "933715142296883292",
+    "936536428106645524",
+    "939718587604668426"
+  ],
+  "static_claim_lease_hours": 24,
+  "scope": "Review four previously unledgered T-prefixed proofread documents and three other DOCX attachments; record exact origin and checksums, compare existing versions, and keep summaries separate from full transcripts."
+}
