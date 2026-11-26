@@ -3,7 +3,7 @@
   "agent_id": "codex-discord-ledger-agent-50",
   "claimed_at": "2026-11-26T01:26:51Z",
   "base_commit": "e8eba652",
-  "status": "active",
+  "status": "completed",
   "workflow_mode": "discord-file-ledger-v1",
   "claim_protocol": "claim-protocol-v2",
   "entry_mode": "work",
@@ -23,5 +23,7 @@
     "939718587604668426"
   ],
   "static_claim_lease_hours": 24,
-  "scope": "Review four previously unledgered T-prefixed proofread documents and three other DOCX attachments; record exact origin and checksums, compare existing versions, and keep summaries separate from full transcripts."
+  "scope": "Review four previously unledgered T-prefixed proofread documents and three other DOCX attachments; record exact origin and checksums, compare existing versions, and keep summaries separate from full transcripts.",
+  "completed_at": "2026-11-26T01:32:50Z",
+  "result_commit": "93636f52"
 }
