@@ -1,0 +1,26 @@
+{
+  "task_id": "DISCORD-FILE-LEDGER-BATCH-034",
+  "agent_id": "codex-discord-ledger-agent-50",
+  "claimed_at": "2026-11-26T00:26:14Z",
+  "base_commit": "c0cb3c12",
+  "status": "active",
+  "workflow_mode": "discord-file-ledger-v1",
+  "claim_protocol": "claim-protocol-v2",
+  "entry_mode": "work",
+  "stage": "discord_file_ledger_review",
+  "channel_id": "821935386808156170",
+  "attachment_ids": [
+    "873907428780048444",
+    "873907481460473876",
+    "873907530999414804",
+    "873907564587409459",
+    "873907716043714600",
+    "873907737644371989",
+    "873907768254423110",
+    "890262196326654002",
+    "890963965738352640",
+    "892401199272325190"
+  ],
+  "static_claim_lease_hours": 24,
+  "scope": "Review ten previously unledgered DOCX attachments from 要点整理, record exact origin and checksums, and classify without promoting key points to full transcript."
+}
