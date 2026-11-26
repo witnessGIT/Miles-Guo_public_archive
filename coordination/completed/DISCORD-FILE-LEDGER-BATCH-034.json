@@ -1,0 +1,24 @@
+{
+  "task_id": "DISCORD-FILE-LEDGER-BATCH-034",
+  "agent_id": "codex-discord-ledger-agent-50",
+  "completed_at": "2026-11-26T00:30:15Z",
+  "claim_protocol": "claim-protocol-v2",
+  "workflow_mode": "discord-file-ledger-v1",
+  "stage": "discord_file_ledger_review",
+  "channel_id": "821935386808156170",
+  "attachment_ids": [
+    "873907428780048444",
+    "873907481460473876",
+    "873907530999414804",
+    "873907564587409459",
+    "873907716043714600",
+    "873907737644371989",
+    "873907768254423110",
+    "890262196326654002",
+    "890963965738352640",
+    "892401199272325190"
+  ],
+  "outcome": "10 key-point documents classified; no fulltext import",
+  "result_commit": "a7350d03",
+  "evidence_ref": "data/source_page_evidence/discord/discord_file_ledger.jsonl"
+}
