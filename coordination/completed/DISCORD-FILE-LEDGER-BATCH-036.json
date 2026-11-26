@@ -1,0 +1,13 @@
+{
+  "task_id": "DISCORD-FILE-LEDGER-BATCH-036",
+  "agent_id": "codex-discord-ledger-agent-50",
+  "completed_at": "2026-11-26T02:27:00Z",
+  "claim_protocol": "claim-protocol-v2",
+  "workflow_mode": "discord-file-ledger-v1",
+  "stage": "discord_file_ledger_review",
+  "channel_ids": ["929299305490169866"],
+  "attachment_ids": ["933668970219855893", "933669350903263262", "933715199775621150", "934351980258795520", "934897188885135450", "935481109821669436", "936536427917897738", "939718587936038932"],
+  "outcome": "8 GTV discussion XLSX key-point sheets reviewed; 0 imports, 0 exact duplicates, 6 alternate same-name editorial versions documented, 8 non-fulltext exclusions, 0 unreachable, 68 pending_review and 157 estimated unrepresented normalized names remain. build_db and validate_db passed; 148 tests passed.",
+  "result_commit": "0e915b11",
+  "evidence_ref": "data/source_page_evidence/discord/discord_file_ledger.jsonl"
+}
