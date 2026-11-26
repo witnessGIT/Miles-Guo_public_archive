@@ -5,11 +5,13 @@ A reachable archive or detail page is not counted as a direct playback URL.
 
 ## Queue summary
 
-- Open tasks: **409**
+- Open tasks: **408**
 - Legacy canonical LIVE_ tasks: **15 concluded unresolved; 0 open**
-- VIDEO/source-candidate tasks: **409 open; processing after legacy completion; 253 recovered in the current deferred phase**
+- VIDEO/source-candidate tasks: **408 open; processing after legacy completion; 254 recovered in the current deferred phase**
 - Every task preserves its current archive/detail links and requires exact identity evidence.
 - An exhaustive search with no result stays `unresolved`; it is not labelled media-missing.
+
+The 2019-01-23 Washington anti-CCP video (`SC_GWINS_LIST2_56_20190123`) now has an exact-id 651-second Rumble playback locator. GWINS page 260 binds the date, title, source id and outbound URL, and Rumble public oEmbed confirms a video iframe. The GWINS-linked Odysee URL remains unverified.
 
 The 2017-07-10 video (`SC_GWINS_LIST2_70_20170710`) now has an exact-identity 6,301-second Rumble playback source and an independently verified exact-title YouTube mirror. The date, title, transcript identity, and platform metadata agree.
 
