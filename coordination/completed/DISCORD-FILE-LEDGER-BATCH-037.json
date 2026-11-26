@@ -1,0 +1,17 @@
+{
+  "task_id": "DISCORD-FILE-LEDGER-BATCH-037",
+  "agent_id": "codex-discord-ledger-agent-50",
+  "completed_at": "2026-11-26T03:25:54Z",
+  "claim_protocol": "claim-protocol-v2",
+  "workflow_mode": "discord-file-ledger-v1",
+  "stage": "discord_file_ledger_checksum_repair",
+  "channel_ids": [
+    "831782777434538024"
+  ],
+  "attachment_ids": [
+    "867669521560109076"
+  ],
+  "outcome": "Verified one historical Discord DOCX compilation by noninteractive CDN retrieval; raw file checksum matched and extracted-text SHA-256 was filled. Existing nine per-video imports were unchanged; separately dated sections were flagged for exact identity audit. 0 new imports, 0 exact duplicates, 0 alternate versions, 0 non-fulltext exclusions, 0 unreachable; 68 pending_review, 2 historical checksum gaps, and 157 estimated unrepresented normalized names remain. build_db and validate_db passed; 148 tests passed.",
+  "result_commit": "80c7649c",
+  "evidence_ref": "data/source_page_evidence/discord/discord_file_ledger.jsonl"
+}
