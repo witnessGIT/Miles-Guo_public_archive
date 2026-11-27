@@ -3,7 +3,7 @@
   "agent_id": "codex-discord-link-recovery-00-2",
   "claimed_at": "2026-11-27T09:19:45Z",
   "base_commit": "f55ae674a6a69435b8ed4621837ce5aa56cb3e5c",
-  "status": "in_progress",
+  "status": "completed",
   "workflow_mode": "discord-direct-playback-recovery-v1",
   "claim_protocol": "claim-protocol-v2",
   "entry_mode": "work",
@@ -11,5 +11,7 @@
   "record_id": "SC_GWINS_LIST2_54_20190420",
   "queue_phase": "deferred_after_legacy",
   "static_claim_lease_hours": 24,
-  "scope": "Recover exact-identity playback locator for this independent source candidate; preserve failed locators."
+  "scope": "Recover exact-identity playback locator for this independent source candidate; preserve failed locators.",
+  "completed_at": "2026-11-27T11:41:34Z",
+  "result_commit": "d004dab68e18d7ffda747884b2add954a306ed38"
 }
