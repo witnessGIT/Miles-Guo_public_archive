@@ -5,11 +5,13 @@ A reachable archive or detail page is not counted as a direct playback URL.
 
 ## Queue summary
 
-- Open tasks: **398**
+- Open tasks: **397**
 - Legacy canonical LIVE_ tasks: **15 concluded unresolved; 0 open**
-- VIDEO/source-candidate tasks: **398 open; processing after legacy completion; 241 recovered in the current deferred phase**
+- VIDEO/source-candidate tasks: **397 open; processing after legacy completion; 242 recovered in the current deferred phase**
 - Every task preserves its current archive/detail links and requires exact identity evidence.
 - An exhaustive search with no result stays `unresolved`; it is not labelled media-missing.
+
+The 2019-04-23 New York meetings video (`SC_GWINS_LIST2_54_20190423_1`) now has an exact-id 120-second Rumble playback locator. GWINS page 21991 binds the date, title, source id and outbound URL; Rumble public oEmbed confirms a video iframe. The alternate Odysee request timed out and remains unverified.
 
 The 2019-04-21 Li Ka-shing/Jack Ma/Terry Gou/Jiang Zhicheng video (`SC_GWINS_LIST2_54_20190421`) now has an exact-id 711-second Rumble playback locator. GWINS page 304 binds the date, title, source id and outbound URL; Rumble public oEmbed confirms a video iframe.
 
