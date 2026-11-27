@@ -5,11 +5,13 @@ A reachable archive or detail page is not counted as a direct playback URL.
 
 ## Queue summary
 
-- Open tasks: **401**
+- Open tasks: **400**
 - Legacy canonical LIVE_ tasks: **15 concluded unresolved; 0 open**
-- VIDEO/source-candidate tasks: **401 open; processing after legacy completion; 238 recovered in the current deferred phase**
+- VIDEO/source-candidate tasks: **400 open; processing after legacy completion; 239 recovered in the current deferred phase**
 - Every task preserves its current archive/detail links and requires exact identity evidence.
 - An exhaustive search with no result stays `unresolved`; it is not labelled media-missing.
+
+The 2019-04-18 VOA interview-anniversary reflection (`SC_GWINS_LIST2_54_20190418_1`) now has an exact-id 1,868-second Rumble playback locator. GWINS page 302 binds the date, title, source id and outbound URL; Rumble public oEmbed confirms a video iframe.
 
 The 2019-04-17 embassy satellite WiFi video (`SC_GWINS_LIST2_54_20190417_1`) now has an exact-id 1,407-second Rumble playback locator. GWINS page 21985 binds the date, title, source id and outbound URL; Rumble public oEmbed confirms a video iframe. The alternate Odysee URL is retained as unverified.
 
