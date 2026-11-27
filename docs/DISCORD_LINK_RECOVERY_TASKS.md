@@ -5,11 +5,13 @@ A reachable archive or detail page is not counted as a direct playback URL.
 
 ## Queue summary
 
-- Open tasks: **404**
+- Open tasks: **403**
 - Legacy canonical LIVE_ tasks: **15 concluded unresolved; 0 open**
-- VIDEO/source-candidate tasks: **404 open; processing after legacy completion; 235 recovered in the current deferred phase**
+- VIDEO/source-candidate tasks: **403 open; processing after legacy completion; 236 recovered in the current deferred phase**
 - Every task preserves its current archive/detail links and requires exact identity evidence.
 - An exhaustive search with no result stays `unresolved`; it is not labelled media-missing.
+
+The 2019-02-04 English New Year/Dalai Lama video (`SC_GWINS_LIST2_55_20190204_1`) now has an exact-id 18,066-second Rumble playback locator. GWINS page 270 binds the date, title, source id and outbound URL; Rumble public oEmbed confirms a video iframe.
 
 The 2019-02-03 pre-New-Year safety-update video (`SC_GWINS_LIST2_55_20190203_1`) now has an exact-id 1,291-second Rumble playback locator. GWINS page 21962 binds the date, title, source id and outbound URL; Rumble public oEmbed confirms a video iframe. The GWINS-linked Odysee page returned HTML but no independently readable media metadata, so that locator remains unverified.
 
