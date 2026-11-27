@@ -5,11 +5,13 @@ A reachable archive or detail page is not counted as a direct playback URL.
 
 ## Queue summary
 
-- Open tasks: **400**
+- Open tasks: **399**
 - Legacy canonical LIVE_ tasks: **15 concluded unresolved; 0 open**
-- VIDEO/source-candidate tasks: **400 open; processing after legacy completion; 239 recovered in the current deferred phase**
+- VIDEO/source-candidate tasks: **399 open; processing after legacy completion; 240 recovered in the current deferred phase**
 - Every task preserves its current archive/detail links and requires exact identity evidence.
 - An exhaustive search with no result stays `unresolved`; it is not labelled media-missing.
+
+The 2019-04-20 Bannon/Guo dialogue on Terry Gou (`SC_GWINS_LIST2_54_20190420`) now has an exact-id 10,138-second Rumble playback locator. GWINS page 303 binds the date, title, source id and outbound URL; Rumble public oEmbed confirms a video iframe. The alternate Odysee URL is retained as unverified.
 
 The 2019-04-18 VOA interview-anniversary reflection (`SC_GWINS_LIST2_54_20190418_1`) now has an exact-id 1,868-second Rumble playback locator. GWINS page 302 binds the date, title, source id and outbound URL; Rumble public oEmbed confirms a video iframe.
 
