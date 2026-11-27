@@ -1,0 +1,15 @@
+{
+  "task_id": "LINKREC_SC_GWINS_LIST2_54_20190424_direct_playback",
+  "agent_id": "codex-discord-link-recovery-00-2",
+  "claimed_at": "2026-11-27T16:09:11Z",
+  "base_commit": "095d232738e9a584901fe9181fe924ff7d724848",
+  "status": "in_progress",
+  "workflow_mode": "discord-direct-playback-recovery-v1",
+  "claim_protocol": "claim-protocol-v2",
+  "entry_mode": "work",
+  "stage": "direct_playback_source_recovery",
+  "record_id": "SC_GWINS_LIST2_54_20190424",
+  "queue_phase": "deferred_after_legacy",
+  "static_claim_lease_hours": 24,
+  "scope": "Recover exact-identity playback locator for this independent source candidate; preserve failed locators."
+}
