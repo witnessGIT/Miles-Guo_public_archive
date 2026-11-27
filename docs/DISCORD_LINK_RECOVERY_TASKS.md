@@ -5,11 +5,17 @@ A reachable archive or detail page is not counted as a direct playback URL.
 
 ## Queue summary
 
-- Open tasks: **397**
+- Open tasks: **394**
 - Legacy canonical LIVE_ tasks: **15 concluded unresolved; 0 open**
-- VIDEO/source-candidate tasks: **397 open; processing after legacy completion; 242 recovered in the current deferred phase**
+- VIDEO/source-candidate tasks: **394 open; processing after legacy completion; 245 recovered in the current deferred phase**
 - Every task preserves its current archive/detail links and requires exact identity evidence.
 - An exhaustive search with no result stays `unresolved`; it is not labelled media-missing.
+
+The 2019-04-24 report on three New York meetings and prayer for Zhang Jian video (`SC_GWINS_LIST2_54_20190424`) now has an exact-id 2,280-second Rumble playback locator. GWINS page 306 binds the date, title, source id and outbound URL; Rumble public oEmbed confirms a video iframe.
+
+The 2019-04-29 Taiwan and Hong Kong anti-CCP remarks video (`SC_GWINS_LIST2_53_20190429`) now has an exact-id 451-second Rumble playback locator. GWINS page 308 binds the date, title, source id and outbound URL; Rumble public oEmbed confirms a video iframe. The alternate Odysee locator connection reset during non-interactive read and remains unverified.
+
+The 2019-04-30 safety report and ROL Foundation iPhone incident video (`SC_GWINS_LIST2_53_20190430`) now has an exact-id 1,255-second Rumble playback locator. GWINS page 309 binds the date, title, source id and outbound URL; Rumble public oEmbed confirms a video iframe. The alternate Odysee locator HTTP 200 HTML without independently readable media metadata and remains unverified.
 
 The 2019-04-23 New York meetings video (`SC_GWINS_LIST2_54_20190423_1`) now has an exact-id 120-second Rumble playback locator. GWINS page 21991 binds the date, title, source id and outbound URL; Rumble public oEmbed confirms a video iframe. The alternate Odysee request timed out and remains unverified.
 
